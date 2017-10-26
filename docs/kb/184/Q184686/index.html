@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184686/","publisher":null,"image":null,"headline":"Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184686-howto-disable-the-close-option-on-control-menu-of-a-vb-form">Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184686
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To modify an item in the Visual Basic Control menu (also known as the System
+menu), you need to use the SetMenuItemInfo API function. This article describes
+how to enable/disable or check/uncheck the Close menu item in the Control menu.
+
+MORE INFORMATION
+================
+
+If you do not want the user to close a window via the Control menu or the Close
+box on your Form's title bar, you can disable the Close menu item on the Control
+menu. This method also disables double-clicking the Control box and disables the
+Close button on the Form's title bar.
+
+The following code sample enables/disables and checks/unchecks the Close command
+in the Visual Basic Control menu.
+
+Example
+-------
+
+1. Start a new standard EXE project. Form1 is added by default.
+
+2. Add three CommandButtons to Form1.
+
+3. Add the following code to Form1:
+
+        Option Explicit
+
+        'Menu item constants.
+        Private Const SC_CLOSE       As Long = &amp;HF060&amp;
+
+        'SetMenuItemInfo fMask constants.
+        Private Const MIIM_STATE     As Long = &amp;H1&amp;
+        Private Const MIIM_ID        As Long = &amp;H2&amp;
+
+        'SetMenuItemInfo fState constants.
+        Private Const MFS_GRAYED     As Long = &amp;H3&amp;
+        Private Const MFS_CHECKED    As Long = &amp;H8&amp;
+
+        'SendMessage constants.
+        Private Const WM_NCACTIVATE  As Long = &amp;H86
+
+        'User-defined Types.
+        Private Type MENUITEMINFO
+            cbSize        As Long
+            fMask         As Long
+            fType         As Long
+            fState        As Long
+            wID           As Long
+            hSubMenu      As Long
+            hbmpChecked   As Long
+            hbmpUnchecked As Long
+            dwItemData    As Long
+            dwTypeData    As String
+            cch           As Long
+        End Type
+
+        'Declarations.
+        Private Declare Function GetSystemMenu Lib "user32" ( _
+            ByVal hwnd As Long, ByVal bRevert As Long) As Long
+
+        Private Declare Function GetMenuItemInfo Lib "user32" Alias _
+            "GetMenuItemInfoA" (ByVal hMenu As Long, ByVal un As Long, _
+            ByVal b As Boolean, lpMenuItemInfo As MENUITEMINFO) As Long
+
+        Private Declare Function SetMenuItemInfo Lib "user32" Alias _
+            "SetMenuItemInfoA" (ByVal hMenu As Long, ByVal un As Long, _
+            ByVal bool As Boolean, lpcMenuItemInfo As MENUITEMINFO) As Long
+
+        Private Declare Function SendMessage Lib "user32" Alias _
+            "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, _
+            ByVal wParam As Long, lParam As Any) As Long
+
+        'Application-specific constants and variables.
+        Private Const xSC_CLOSE  As Long = -10
+        Private Const SwapID     As Long = 1
+        Private Const ResetID    As Long = 2
+
+        Private hMenu  As Long
+        Private MII    As MENUITEMINFO
+
+        Private Sub Command1_Click()
+            Dim Ret As Long
+
+            Ret = SetId(SwapID)
+            If Ret &lt;&gt; 0 Then
+
+                If MII.fState = (MII.fState Or MFS_GRAYED) Then
+                    MII.fState = MII.fState - MFS_GRAYED
+                Else
+                    MII.fState = (MII.fState Or MFS_GRAYED)
+                End If
+
+                MII.fMask = MIIM_STATE
+                Ret = SetMenuItemInfo(hMenu, MII.wID, False, MII)
+                If Ret = 0 Then
+                    Ret = SetId(ResetID)
+                End If
+
+                Ret = SendMessage(Me.hwnd, WM_NCACTIVATE, True, 0)
+                SetButtons
+            End If
+        End Sub
+
+        Private Sub Command2_Click()
+            Dim Ret As Long
+
+            If MII.fState = (MII.fState Or MFS_CHECKED) Then
+                MII.fState = MII.fState - MFS_CHECKED
+            Else
+                MII.fState = (MII.fState Or MFS_CHECKED)
+            End If
+
+            MII.fMask = MIIM_STATE
+            Ret = SetMenuItemInfo(hMenu, MII.wID, False, MII)
+            SetButtons
+        End Sub
+
+        Private Sub Command3_Click()
+            Unload Me
+        End Sub
+
+        Private Function SetId(Action As Long) As Long
+            Dim MenuID As Long
+            Dim Ret As Long
+
+            MenuID = MII.wID
+            If MII.fState = (MII.fState Or MFS_GRAYED) Then
+                If Action = SwapID Then
+                    MII.wID = SC_CLOSE
+                Else
+                    MII.wID = xSC_CLOSE
+                End If
+            Else
+                If Action = SwapID Then
+                    MII.wID = xSC_CLOSE
+                Else
+                    MII.wID = SC_CLOSE
+                End If
+            End If
+
+            MII.fMask = MIIM_ID
+            Ret = SetMenuItemInfo(hMenu, MenuID, False, MII)
+            If Ret = 0 Then
+                MII.wID = MenuID
+            End If
+            SetId = Ret
+        End Function
+
+        Private Sub SetButtons()
+            If MII.fState = (MII.fState Or MFS_GRAYED) Then
+                Command1.Caption = "Enable"
+            Else
+                Command1.Caption = "Disable"
+            End If
+            If MII.fState = (MII.fState Or MFS_CHECKED) Then
+                Command2.Caption = "Uncheck"
+            Else
+                Command2.Caption = "Check"
+            End If
+        End Sub
+
+        Private Sub Form_Load()
+            Dim Ret As Long
+
+            hMenu = GetSystemMenu(Me.hwnd, 0)
+            MII.cbSize = Len(MII)
+            MII.dwTypeData = String(80, 0)
+            MII.cch = Len(MII.dwTypeData)
+            MII.fMask = MIIM_STATE
+            MII.wID = SC_CLOSE
+            Ret = GetMenuItemInfo(hMenu, MII.wID, False, MII)
+            SetButtons
+            Command3.Caption = "Exit"
+        End Sub
+
+4. Press the F5 key to run the program.
+
+Additional Notes
+----------------
+
+Visual Basic handles enabling and disabling the standard Control menu items,
+including Restore, Size, Move, Minimize, and Maximize (the Close menu is always
+enabled). Generally, Visual Basic enables/disables the menu items depending on
+the window's state (minimized, maximized, or normal) by referencing these menu
+items by their menu item IDs.
+
+As a result, if we merely add or remove MFS_GRAYED from a menu's fState, Visual
+Basic immediately resets it. The workaround is to change the menu item's ID
+(which also renders the item inoperable).
+
+Using this workaround, we can effectively disable a menu item that Visual Basic
+intends to be enabled, but we cannot enable a menu item Visual Basic intends to
+be disabled (the menu item must have its regular ID to be operable).
+
+Enabling a menu item that Visual Basic intends to be disabled requires removing
+the item and replacing it with a menu item of our own (this is not covered in
+this article).
+
+When the Close menu item is enabled or disabled, the Close box on the title bar
+should also be normal or grayed, respectively. Sending the message WM_NCACTIVATE
+(nonclient activate) notifies the window to refresh its title bar so the Close
+box is updated to appear normal or grayed.
+
+Additional Constants
+--------------------
+
+     'Menu item constants
+         Const SC_SIZE         As Long = &amp;HF000&amp;
+         Const SC_SEPARATOR    As Long = &amp;HF00F&amp;
+         Const SC_MOVE         As Long = &amp;HF010&amp;
+         Const SC_MINIMIZE     As Long = &amp;HF020&amp;
+         Const SC_MAXIMIZE     As Long = &amp;HF030&amp;
+         Const SC_CLOSE        As Long = &amp;HF060&amp;
+         Const SC_RESTORE      As Long = &amp;HF120&amp;
+
+     'SetMenuItemInfo fMask Constants
+         Const MIIM_STATE      As Long = &amp;H1&amp;
+         Const MIIM_ID         As Long = &amp;H2&amp;
+         Const MIIM_SUBMENU    As Long = &amp;H4&amp;
+         Const MIIM_CHECKMARKS As Long = &amp;H8&amp;
+         Const MIIM_TYPE       As Long = &amp;H10&amp;
+         Const MIIM_DATA       As Long = &amp;H20&amp;
+
+
+Related APIs
+------------
+
+  SetMenuDefaultItem -- You must disable Close to use this in Visual Basic
+  HiliteMenuItem
+
+REFERENCES
+==========
+
+For the 16-bit equivalent, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q82876 : How to Disable Close Command in VB Control Menu (System Menu)
+
+Additional query words: kbVBp500 kbVBp400 kbSDKWin32 kbAPI kbMenu kbVBp kbDSupport kbDSD 
+kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

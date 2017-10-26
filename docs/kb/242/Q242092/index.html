@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242092: How to Use System Policies to Hide Drives | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242092: How to Use System Policies to Hide Drives" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242092/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242092/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242092/","publisher":null,"image":null,"headline":"Q242092: How to Use System Policies to Hide Drives","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242092-how-to-use-system-policies-to-hide-drives">Q242092: How to Use System Policies to Hide Drives</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242092
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how a system administrator can restrict use of drives by
+'hiding' one or more drives on a Windows NT-based computer. The System Policy
+Editor in Microsoft Windows NT Server 4.0 has an "Hide drives in My Computer"
+feature that hides all drives from the user. However, you may want to hide only
+selected drives, while retaining use of other drives.
+
+MORE INFORMATION
+================
+
+To use system policies to hide drives, follow these steps:
+
+1. Obtain the decimal value for the drives you want to restrict.
+
+  NOTE: The registry key that this policy affects uses a decimal number that
+  corresponds to a 26-bit binary string, with each bit representing a drive
+  letter:
+
+ 11111111111111111111111111
+ ZYXWVUTSRQPONMLKJIHGFEDCBA
+
+  This configuration corresponds to 67108863 (in decimal) and hides all drives.
+  If you want to hide drive C, you would make the third lowest bit 0 and then
+  convert the binary string to decimal. The following are sample values that
+  correspond to various drive letters:
+
+  Hide all drive letters (default): 67108863
+  Hide all drive letters but C: 67108859
+  Hide all drive letters but U: 66060287
+  Hide all drive letters but C: and U: 66060283
+  Hide all drive letters but C,O, and U: 66043899
+
+2. Edit the Common.adm file:
+
+  a. Open the Common.adm file in a text editor such as Notepad.
+
+  b. Locate the HideDrives section in the Common.adm file. Note that it should
+     look like the following:
+
+    CATEGORY !!Shell
+    CATEGORY !!Restrictions
+    POLICY !!HideDrives
+    VALUENAME ''NoDrives''
+    VALUEON NUMERIC 67108863	; low 26 bits on (1 bit per drive)
+    END POLICY
+
+  c. Replace the VALUEON NUMERIC value with your new value.
+
+  d. Save and then close the file.
+
+3. Edit the system policy:
+
+  a. Click Start, point to Programs, point to Administrative Tools (Common),
+     and then click System Policy Editor.
+
+  b. On the File menu, click Open Registry.
+
+  c. Double-click the Local User policy.
+
+  d. Open the policy to the following location:
+
+  Local User\Shell\Restrictions
+
+  e. Click to select the Hide drives in My Computer check box, and then click
+     OK.
+
+     NOTE: Only the drives that you specified in the VALUEON NUMERIC value in
+     the Common.adm file are hidden.
+
+  f. On the File menu, click Save.
+
+4. Log off and then log on to the computer for the changes to take effect.
+
+You can also use the Microsoft Zero Administration Kit (ZAK) for Windows NT
+Server 4.0 to selectively hide files. However, the ZAK method requires modifying
+the Zakwinnt.adm file to add other drive letter options beyond the five built-in
+selections. The ZAK method can be implemented using only a Windows NT
+Server-based computer and the original policy template files (Common.adm and
+Winnt.adm).
+
+Additional query words: policy
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

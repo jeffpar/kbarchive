@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q51074: May Be LINK Error If Separate Source Files Have Same Root Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q51074: May Be LINK Error If Separate Source Files Have Same Root Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/051/Q51074/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/051/Q51074/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/051/Q51074/","publisher":null,"image":null,"headline":"Q51074: May Be LINK Error If Separate Source Files Have Same Root Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q51074-may-be-link-error-if-separate-source-files-have-same-root-name">Q51074: May Be LINK Error If Separate Source Files Have Same Root Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q51074
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 15-MAR-1990
+
+LINK.EXE puts the code of separate BASIC OBJect files into the same
+code segment when the base filenames of the source code are the same
+but the filename extensions are different. This procedure will lead to
+the normal code-size-limitation linker error messages, such as the
+following, if the resulting code segment becomes too large:
+
+   L1070      "SEGMENT SIZE EXCEEDS 64K"
+   L2002      "FIXUP OVERFLOW NEAR ..."
+
+If the combined code segment is smaller than the 64K limit, then no
+LINK error occurs and the program should run correctly.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS 7.00 for
+MS-DOS and MS OS/2.
+
+A related issue in QBX.EXE which is supplied with BASIC PDS 7.00 is if
+a module and an $INCLUDE file are loaded into QBX.EXE at the same time
+and have the same base name, QBX.EXE will not let you run the program
+and gives the message "Duplicate module base name loaded. Can't
+compile." To work around this problem, unload the include file or use
+a different base name for your include file.
+
+Code Example
+------------
+
+The two modules (MAIN.BAS and MAIN.1) in the following example
+generate object files (MAIN.OBJ and MAIN1.OBJ), which are small enough
+to link successfully, but they show that the LINKer combines them into
+one code segment, MAIN_CODE.
+
+Compile two programs, MAIN.BAS and MAIN.1, where MAIN.BAS is the main
+module and MAIN.1 is a module of subroutines.
+
+The following is MAIN.BAS:
+
+   DECLARE SUS SUB1()
+   CALL SUB1
+   PRINT "I'M BACK"
+
+The following is MAIN.1:
+
+   SUB SUB1()
+      PRINT "IN SUB"
+   END SUB
+
+Compile as follows, renaming the object file for MAIN.1 to MAIN1.OBJ
+to distinguish it from the other module, MAIN.OBJ:
+
+   BC MAIN.BAS;
+   BC MAIN.1,MAIN1.OBJ;
+
+Then LINK and create a LINKer .MAP file:
+
+   LINK MAIN MAIN1,,MAIN.MAP;
+
+If the subroutine module MAIN.1 is named MAIN1.BAS, the resulting
+.EXE file will have two code segments (two BC_CODE entries listed
+under "Class" in the LINKer .MAP file). But the .EXE program resulting
+from the above instructions will have only one code segment, as shown
+in the following link map (from MAIN.1 and MAIN.BAS compiled in
+QuickBASIC 4.50):
+
+ Start  Stop   Length Name                   Class
+ 00000H 000A0H 000A1H MAIN_CODE              BC_CODE
+ 000B0H 002F5H 00246H _TEXT                  CODE
+ 002F6H 00977H 00682H LOADRTM                CODE
+ 00980H 0173FH 00DC0H BR_DATA                BLANK
+ 01740H 01740H 00000H BR_SKYS                BLANK
+ 01740H 01740H 00000H COMMON                 BLANK
+ 01740H 0174BH 0000CH BC_DATA                BC_VARS
+ 0174CH 01751H 00006H NMALLOC                BC_VARS
+ 01752H 01752H 00000H ENMALLOC               BC_VARS
+ 01752H 01752H 00000H BC_FT                  BC_SEGS
+ 01760H 01779H 0001AH BC_CN                  BC_SEGS
+ 01780H 01792H 00013H BC_DS                  BC_SEGS
+ 01794H 01794H 00000H BC_SAB                 BC_SEGS
+ 01794H 0179FH 0000CH BC_SA                  BC_SEGS
+ 017A0H 017A0H 00000H _DATA                  DATA
+ 017A0H 017BBH 0001CH CDATA                  DATA
+ 017BCH 017BCH 00000H XCB                    DATA
+ 017BCH 017BFH 00004H XC                     DATA
+ 017C0H 017C0H 00000H XCE                    DATA
+ 017C0H 017C0H 00000H XIFB                   DATA
+ 017C0H 017C0H 00000H XIF                    DATA
+ 017C0H 017C0H 00000H XIFE                   DATA
+ 017C0H 017C0H 00000H XIB                    DATA
+ 017C0H 017C0H 00000H XI                     DATA
+ 017C0H 017C0H 00000H XIE                    DATA
+ 017C0H 017C0H 00000H XPB                    DATA
+ 017C0H 017C0H 00000H XP                     DATA
+ 017C0H 017C0H 00000H XPE                    DATA
+ 017C0H 017C0H 00000H XCFB                   DATA
+ 017C0H 017C0H 00000H XCF                    DATA
+ 017C0H 017C0H 00000H XCFE                   DATA
+ 017C0H 017CBH 0000CH DBDATA                 DATA
+ 017CCH 017CCH 00000H XOB                    BSS
+ 017CCH 017CCH 00000H XO                     BSS
+ 017CCH 017CCH 00000H XOE                    BSS
+ 017D0H 01FCFH 00800H STACK                  STACK
+
+ Origin   Group
+ 0098:0   DGROUP
+
+Program entry point at 002F:00CE
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

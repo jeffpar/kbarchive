@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q77322: Err Msg: Cannot Load COMMAND, System Halted (with Novell) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q77322: Err Msg: Cannot Load COMMAND, System Halted (with Novell)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/077/Q77322/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/077/Q77322/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/077/Q77322/","publisher":null,"image":null,"headline":"Q77322: Err Msg: Cannot Load COMMAND, System Halted (with Novell)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q77322-err-msg-cannot-load-command-system-halted-with-novell">Q77322: Err Msg: Cannot Load COMMAND, System Halted (with Novell)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q77322
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you quit an application or log off a Novell network, you see the following
+message:
+
+  Cannot load COMMAND, system halted
+
+CAUSE
+=====
+
+Some versions of the Novell login program prevent the resident part of
+COMMAND.COM from reloading the transient part, if the SHELL command refers to a
+copy of COMMAND.COM in the DOS directory. MS-DOS then displays the "Cannot load
+COMMAND, system halted" message.
+
+RESOLUTION
+==========
+
+You can correct this problem by obtaining an updated version of the Novell login
+program from Novell. Or, you can do the following:
+
+1. Use a text editor, such as MS-DOS Editor, to open your CONFIG.SYS file. If
+  you want to use MS-DOS Editor, type the following command:
+
+  " edit c:\config.sys " (without the quotation marks)
+
+2. Find the command line that begins with the word "shell."
+
+3. Make sure the SHELL command refers to C:\COMMAND.COM rather than
+  C:\DOS\COMMAND.COM. For example, suppose your SHELL command looks like the
+  following:
+
+         shell=c:\dos\command.com /p /e:512
+
+  Modify the command (by deleting "\dos"), so it looks like the following:
+
+         shell=c:\command.com /p /e:512
+
+4. Save your CONFIG.SYS file. If you're using MS-DOS Editor, choose Save from
+  the File menu. When MS-DOS Editor displays a dialog box prompting you to save
+  your file, choose Yes or press ENTER.
+
+5. Use the text editor to open your AUTOEXEC.BAT file.
+
+6. Look for a command line that begins with "set comspec=." If you find this
+  command, delete it.
+
+7. Save your AUTOEXEC.BAT file and quit your text editor.
+
+8. Make sure there is a copy of the COMMAND.COM file in your root directory. To
+  do this, type the following command:
+
+  " dir c:\command.com " (without the quotation marks)
+
+  If MS-DOS displays the "File not found" message, there is no COMMAND.COM file
+  in your root directory.
+
+9. If there is no COMMAND.COM in your root directory, copy the file from your
+  DOS directory. If your MS-DOS files are in the C:\DOS directory, type the
+  following command:
+
+  " copy c:\dos\command.com c:\ " (without the quotation marks)
+
+10. Restart your computer by pressing CTRL+ALT+DEL.
+
+REFERENCES
+==========
+
+For more information about COMMAND.COM (the COMMAND command) and the SHELL
+command, see Chapter 14 of the "User's Guide and Reference."
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 Win30 windows win31
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

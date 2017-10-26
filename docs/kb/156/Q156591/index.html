@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156591: STL Sample for deque::begin and deque::end Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156591: STL Sample for deque::begin and deque::end Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156591/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156591/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156591/","publisher":null,"image":null,"headline":"Q156591: STL Sample for deque::begin and deque::end Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156591-stl-sample-for-dequebegin-and-dequeend-functions">Q156591: STL Sample for deque::begin and deque::end Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156591
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 26-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the deque::begin and deque::end STL
+functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt; deque&gt;
+
+Prototype
+---------
+
+     const_iterator begin() const;
+     iterator begin();
+
+     const_iterator end() const;
+     iterator end();
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The begin member function returns a random-access iterator that points at the
+first element of the sequence, or just beyond the end of an empty sequence.
+
+The end member function returns a random-access iterator that points just beyond
+the end of the sequence.
+
+Sample Code
+-----------
+
+NOTE: In the first line of the sample code section, /GX is equivalent to /EHsc in
+VC++ .NET and is set by default.
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: -GX
+  // 
+  // deque.cpp :
+  // 
+  // Functions:
+  // 
+  //    begin()
+  //    end()
+  // 
+  // Written by Bobby Mattappally
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  /* Compile options needed:-GX
+  */ 
+  #include &lt;iostream&gt;
+  #include &lt;deque&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef deque&lt;int, allocator&lt;int&gt; &gt;  INTDEQUE;
+
+  void main()
+
+  {
+
+      // Create A and fill it with elements 1,2,3,4 and 5
+      // using push_back function
+
+      INTDEQUE  A;
+      A.push_back(1);
+      A.push_back(2);
+      A.push_back(3);
+      A.push_back(4);
+      A.push_back(5);
+
+      // Print the contents of A using iterator
+      // and functions begin() and end()
+
+       INTDEQUE::iterator pi;
+
+      for(pi= A.begin();  pi !=A.end(); pi++)
+      {
+          cout &lt;&lt; *pi &lt;&lt;" " ;
+      }
+          cout&lt;&lt;endl;
+
+  }
+
+Program Output is:
+
+1 2 3 4 5
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample begin end iterator
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCNET kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

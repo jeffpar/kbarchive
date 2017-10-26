@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125693: HOWTO: AngleArc in Windows 3.1, Win32s, and Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125693: HOWTO: AngleArc in Windows 3.1, Win32s, and Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125693/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125693/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125693/","publisher":null,"image":null,"headline":"Q125693: HOWTO: AngleArc in Windows 3.1, Win32s, and Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125693-howto-anglearc-in-windows-31-win32s-and-windows-95">Q125693: HOWTO: AngleArc in Windows 3.1, Win32s, and Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125693
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:1.3,3.1,95; winnt:
+Operating System(s): 
+Keyword(s): kbOSWin2000 kbSDKWin32 kbOSWin95 kbDSupport
+Last Modified: 11-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+- Microsoft Win32 Application Programming Interface (API), used with:
+   - Microsoft Win32s version 1.3 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Windows version 3.1, Win32s, and Windows 95, you may want to use the
+functionality provided by the Win32 API AngleArc(). AngleArc() is only supported
+on Windows NT.
+
+MORE INFORMATION
+================
+
+The AngleArc() function draws a line segment and an arc. The line segment is
+drawn from the current position to the beginning of the arc. The arc is drawn
+along the perimeter of a circle with the given radius and center. The length of
+the arc is defined by the given start and sweep angles. The starting point of
+the sweep is determined by measuring counterclockwise from the x-axis of the
+circle by the number of degrees in the start angle. The ending point is
+similarly located by measuring counterclockwise from the starting point by the
+number of degrees in the sweep angle.
+
+The code below provides two possible ways of getting functionality similar to
+that of the AngleArc() function. While both of these methods will work on any
+Windows platform, the second (AngleArc2) will be substantially faster due to the
+fact that it uses the Arc() function to draw the sweep rather than calculating
+each of the segments on the perimeter of the arc.
+
+NOTE: One limitation of the second method is that if the sweep angle is greater
+than 360 degrees, the arc will not be swept multiple times. In most cases this
+will not be a problem but in certain cases (constructing paths, for example)
+this can be a problem.
+
+Sample Code #1
+--------------
+
+     BOOL AngleArc1(HDC hdc, int X, int Y, DWORD dwRadius,
+
+                 float fStartDegrees, float fSweepDegrees)
+
+     {
+
+     float fCurrentAngle;       // Current angle in radians
+     float fStepAngle = 0.03f;  // The sweep increment value in radians
+     float fStartRadians;       // Start angle in radians
+     float fEndRadians;         // End angle in radians
+     int ix, iy;                // Current point on arc
+     float fTwoPi = 2.0f * 3.141592f;
+
+     /* Get the starting and ending angle in radians */ 
+     if (fSweepDegrees &gt; 0.0f) {
+       fStartRadians = ((fStartDegrees / 360.0f) * fTwoPi);
+       fEndRadians = (((fStartDegrees + fSweepDegrees) / 360.0f) *
+              fTwoPi);
+     } else {
+       fStartRadians = (((fStartDegrees + fSweepDegrees)  / 360.0f) *
+             fTwoPi);
+       fEndRadians =  ((fStartDegrees / 360.0f) * fTwoPi);
+     }
+
+     /* Calculate the starting point for the sweep via */ 
+     /* polar -&gt; cartesian conversion */ 
+      ix = X + (int)((float)dwRadius * (float)cos(fStartRadians));
+     iy = Y - (int)((float)dwRadius * (float)sin(fStartRadians));
+
+     /* Draw a line to the starting point */ 
+     LineTo(hdc, ix, iy);
+
+     /* Calculate and draw the sweep */ 
+     for (fCurrentAngle = fStartRadians;
+          fCurrentAngle &lt;= fEndRadians;
+          fCurrentAngle += fStepAngle) {
+
+      /* Calculate the current point in the sweep via */ 
+      /* polar -&gt; cartesian conversion */ 
+      ix = X + (int)((float)dwRadius * (float)cos(fCurrentAngle));
+      iy = Y - (int)((float)dwRadius * (float)sin(fCurrentAngle));
+
+      /* Draw a line segment to current point */ 
+      LineTo(hdc, ix, iy);
+       }
+
+     return TRUE;
+
+     }
+
+Sample Code 2
+-------------
+
+     BOOL AngleArc2(HDC hdc, int X, int Y, DWORD dwRadius,
+
+                    float fStartDegrees, float fSweepDegrees)
+
+     {
+
+     int iXStart, iYStart;   // End point of starting radial line.
+     int iXEnd, iYEnd;       // End point of ending radial line.
+     float fStartRadians;    // Start angle in radians.
+     float fEndRadians;      // End angle in radians.
+     BOOL bResult;           // Function result.
+     float fTwoPi = 2.0f * 3.141592f;
+
+     /* Get the starting and ending angle in radians. */ 
+     if (fSweepDegrees &gt; 0.0f) {
+       fStartRadians = ((fStartDegrees / 360.0f) * fTwoPi);
+       fEndRadians = (((fStartDegrees + fSweepDegrees) / 360.0f) * fTwoPi);
+     }   else {
+       fStartRadians = (((fStartDegrees + fSweepDegrees)  / 360.0f) *
+                          fTwoPi);
+       fEndRadians =  ((fStartDegrees / 360.0f) * fTwoPi);
+     }
+
+     /* Calculate a point on the starting radial line via */ 
+     /* polar -&gt; cartesian conversion. */ 
+     iXStart = X + (int)((float)dwRadius * (float)cos(fStartRadians));
+     iYStart = Y - (int)((float)dwRadius * (float)sin(fStartRadians));
+
+     /* Calculate a point on the ending radial line via */ 
+     /* polar -&gt; cartesian conversion. */ 
+     iXEnd = X + (int)((float)dwRadius * (float)cos(fEndRadians));
+     iYEnd = Y - (int)((float)dwRadius * (float)sin(fEndRadians));
+
+     /* Draw a line to the starting point. */ 
+     if (fSweepDegrees &gt; 0.0f)
+      LineTo(hdc, iXStart, iYStart);
+     else
+      LineTo(hdc, iXEnd, iYEnd);
+
+     /* Draw the arc. */ 
+     bResult = Arc(hdc, X - dwRadius, Y - dwRadius,
+                        X + dwRadius, Y + dwRadius,
+                        iXStart, iYStart,
+                        iXEnd, iYEnd);
+
+     /* Move to the ending point. Arc() will not do this and ArcTo() */ 
+     /* will not work on Win32s or Win16. */ 
+     if (fSweepDegrees &lt; 0.0f)
+      MoveToEx(hdc, iXStart, iYStart, NULL);
+     else
+      MoveToEx(hdc, iXEnd, iYEnd, NULL);
+
+     return bResult;
+
+     }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbSDKWin32 kbOSWin95 kbDSupport 
+Technology        : kbAudDeveloper kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch
+Version           : WINDOWS:1.3,3.1,95; winnt:
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

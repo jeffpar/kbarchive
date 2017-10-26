@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85109: VB3 How to Edit Grid Cells in VB Using Overlapped Text Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85109: VB3 How to Edit Grid Cells in VB Using Overlapped Text Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85109/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85109/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85109/","publisher":null,"image":null,"headline":"Q85109: VB3 How to Edit Grid Cells in VB Using Overlapped Text Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85109-vb3-how-to-edit-grid-cells-in-vb-using-overlapped-text-box">Q85109: VB3 How to Edit Grid Cells in VB Using Overlapped Text Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85109
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Grid custom control does not provide any text editing capability. The
+example program below shows how you can use a text box to perform text editing
+in the current cell of a grid.
+
+MORE INFORMATION
+================
+
+The example program shown below enables you to edit the contents of a grid cell.
+When you press a key, the grid moves a text box to the position of the current
+cell and sets the focus to the text box. When you press the ENTER key or change
+focus away from the current cell, the program transfers the text in the text box
+back to the grid.
+
+Steps to Create Example Program
+-------------------------------
+
+1. Start Visual Basic or from the File menu, choose New Project (ALT, F, N) if
+  Visual Basic is already running. Form1 is created by default.
+
+2. From the File menu, choose Add File. Then select the GRID.VBX file. The Grid
+  tool appears in the Toolbox.
+
+3. Place a grid (Grid1) and a text box (Text1) on Form1. Set the Grid1 Cols and
+  Rows properties both to 4. Then size the grid to show all the cells. Set the
+  Text1 BorderStyle property to None (0) and the Visible property to False (0).
+
+4. Enter the following declarations in the general Declarations section:
+
+     Const ASC_ENTER = 13        ' ASCII code of ENTER key.
+     Dim gRow As Integer
+     Dim gCol As Integer
+
+5. Enter the following code in the Grid1_KeyPress procedure:
+
+     Sub Grid1_KeyPress (KeyAscii As Integer)
+        ' Move the text box to the current grid cell:
+        Call grid_text_move(Grid1, Text1)
+
+        ' Save the position of the grids Row and Col for later:
+        gRow = Grid1.Row
+        gCol = Grid1.Col
+
+        ' Make text box same size as current grid cell:
+        Text1.Width = Grid1.ColWidth(Grid1.Col) - 2 * Screen.TwipsPerPixelX
+        Text1.Height = Grid1.RowHeight(Grid1.Row) - 2 * Screen.TwipsPerPixelY
+
+        ' Transfer the grid cell text:
+        Text1.Text = Grid1.Text
+
+        ' Show the text box:
+        Text1.Visible = True
+        Text1.ZOrder 0
+        Text1.SetFocus
+
+        ' Redirect this KeyPress event to the text box:
+        If KeyAscii &lt;&gt; ASC_ENTER Then
+           SendKeys Chr$(KeyAscii)
+        End If
+     End Sub
+
+6. Add the following code to the Text1_KeyPress procedure:
+
+     Sub Text1_KeyPress (KeyAscii As Integer)
+        If KeyAscii = ASC_ENTER Then
+           Grid1.SetFocus  ' Set focus back to grid, see Text_LostFocus.
+           KeyAscii = 0    ' Ignore this KeyPress.
+        End If
+     End Sub
+
+7. Add the following code to the Text1_LostFocus procedure:
+
+     Sub Text1_LostFocus ()
+        Dim tmpRow As Integer
+        Dim tmpCol As Integer
+
+        ' Save current settings of Grid Row and col. This is needed only if
+        ' the focus is set somewhere else in the Grid.
+        tmpRow = Grid1.Row
+        tmpCol = Grid1.Col
+
+        ' Set Row and Col back to what they were before Text1_LostFocus:
+        Grid1.Row = gRow
+        Grid1.Col = gCol
+
+        Grid1.Text = Text1.Text  ' Transfer text back to grid.
+        Text1.SelStart = 0       ' Return caret to beginning.
+        Text1.Visible = False    ' Disable text box.
+
+        ' Return row and Col contents:
+        Grid1.Row = tmpRow
+        Grid1.Col = tmpCol
+     End Sub
+
+8. In the general Declarations section or in a separate .BAS file, add the
+  following Sub routine:
+
+     Sub grid_text_move (Grid As Control, TextBox As Control)
+
+        ' Move a text box to the position of the current cell in a grid:
+        Dim X As Single   ' x position of current grid cell.
+        Dim Y As Single   ' y position of current grid cell.
+        Dim i As Integer  ' Column/row index.
+
+        ' Skip grid border:
+        X = Grid.Left
+        Y = Grid.Top
+        If Grid.BorderStyle = 1 Then
+           X = X + Screen.TwipsPerPixelX
+           Y = Y + Screen.TwipsPerPixelY
+        End If
+
+        ' Skip fixed columns and rows:
+        For i = 0 To Grid.FixedCols - 1
+           X = X + Grid.ColWidth(i)
+           If Grid.GridLines Then
+              X = X + Screen.TwipsPerPixelX
+           End If
+        Next
+        For i = 0 To Grid.FixedRows - 1
+           Y = Y + Grid.RowHeight(i)
+           If Grid.GridLines Then
+              Y = Y + Screen.TwipsPerPixelY
+           End If
+        Next
+
+        ' Find current data cell:
+        For i = Grid.LeftCol To Grid.Col - 1
+            X = X + Grid.ColWidth(i)
+            If Grid.GridLines Then
+                X = X + Screen.TwipsPerPixelX
+            End If
+        Next
+        For i = Grid.TopRow To Grid.Row - 1
+            Y = Y + Grid.RowHeight(i)
+            If Grid.GridLines Then
+                Y = Y + Screen.TwipsPerPixelY
+            End If
+        Next
+
+        ' Move the Text Box, and make small adjustments:
+        TextBox.Move X + Screen.TwipsPerPixelX, Y + Screen.TwipsPerPixelY
+     End Sub
+
+9. Press the F5 key to run the program. Press a key to begin entering text into
+  a cell. Type in some text. Press the ENTER key to finish editing the cell.
+  Use the arrow keys to move to another cell. You can press the ENTER key to
+  begin editing a cell without changing the contents of the cell.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVBSearch kbAudDeveloper kbVB300Search kbVB300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

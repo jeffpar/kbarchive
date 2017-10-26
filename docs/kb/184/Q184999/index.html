@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184999: SMS: Software Inventory Wrong After Daylight Savings Time Change | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184999: SMS: Software Inventory Wrong After Daylight Savings Time Change" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184999/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184999/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184999/","publisher":null,"image":null,"headline":"Q184999: SMS: Software Inventory Wrong After Daylight Savings Time Change","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184999-sms-software-inventory-wrong-after-daylight-savings-time-change">Q184999: SMS: Software Inventory Wrong After Daylight Savings Time Change</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184999
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbInventory smsinvkbbuglist
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you examine the Packages property within the Systems Management Server
+Administrator program for a client computer running Windows NT, you may notice
+that packages that were once reported are no longer reported.
+
+CAUSE
+=====
+
+Software inventory for a package may have been configured to use the File Time
+property, which scans for files by their "last modified time." On a Windows NT
+system, files are stored on an NTFS partition by using UTC (Universal Time
+Coordinated) for their last modified file times. The last modified time
+displayed for a file in Windows NT Explorer or File Manager shows the adjusted
+last modified time based upon the client computer's time zone setting and
+whether daylight savings time applies.
+
+When performing a software inventory scan based on the file time property, the
+Systems Management Server Inventory Agents for Windows NT (Invwin32.exe and
+Inv32cli.exe) also apply the time zone and daylight savings time setting.
+Therefore, using the File Time property in software inventory can produce a
+change in results after a daylight savings time change, because the last
+modified time for a file will change (based on the time change applied by
+daylight savings time and the time zone under which the file was first
+created).
+
+Another problem occurs when foreign package rules are used that may have been
+defined by a site further up the site hierarchy. If the site defining the
+software inventory rule is in another time zone, or daylight savings time area,
+the file's last modified time for a software package will display its own local
+last modified time based on the time zone and daylight savings time setting. A
+Windows NT client computer running the inventory agent in a different time zone
+with the foreign package rule will not find a match for the package defined
+using the file time because of the application of time zone and daylight savings
+time times to the file's last modified time.
+
+
+WORKAROUND
+==========
+
+Where possible, do not use the Time property in the software inventory rule.
+Instead, create a rule based on another property (such as the file name, date,
+size, and so on) that will produce a consistent match regardless of time or time
+zone.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. A supported fix is now available for version 1.2,
+but has not been fully regression-tested and should be applied only to systems
+experiencing this specific problem. Microsoft recommends that you wait for the
+next Service Pack that contains this fix. Contact Microsoft Technical Support
+for more information.
+
+
+Additional query words: prodsms dst timezone
+
+======================================================================
+Keywords          : kbInventory smsinv kbbuglist
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167979: XFOR: How To Add MS Mail Fax Gateway Service To Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167979: XFOR: How To Add MS Mail Fax Gateway Service To Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167979/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167979/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167979/","publisher":null,"image":null,"headline":"Q167979: XFOR: How To Add MS Mail Fax Gateway Service To Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167979-xfor-how-to-add-ms-mail-fax-gateway-service-to-exchange">Q167979: XFOR: How To Add MS Mail Fax Gateway Service To Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167979
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+------
+
+SUMMARY
+=======
+
+This article explains how to install support for the Microsoft Mail (MS Mail)
+3.x Fax Gateway on computers running Microsoft Exchange Server 4.0 or 5.x.
+
+MORE INFORMATION
+================
+
+To install support for the MS Mail 3.x Fax Gateway, follow the following steps:
+
+1. Using the Exchange Administration Import function, import the Fax.csv file
+  located on the Exchange Client CD in the TPL folder or on the Exchange Server
+  CD in \Setup\&lt;platform&gt;\Tpl\Usa\Fax.csv.
+
+2. Open the Microsoft Mail Connector's Properties page and click the Address
+  Space tab.
+
+3. Click the New General button, and add following address space to the
+  Microsoft Mail Connector:
+
+     Type: FAX
+     Address: &lt;blank&gt;
+     Cost: 1
+
+4. Install the Fax Gateway access component on the Exchange Server shadow
+  postoffice pointing toward the MS Mail Fax Gateway of choice.
+
+5. Stop and restart the MS Mail Connector Interchange service.
+
+6. Recalculate routing.
+
+7. Exit and restart the Microsoft Exchange Client.
+
+8. Go to Compose and click To.
+
+9. Click New. There should now be a Fax template available to the Exchange
+  Client(s). The mail that uses the Fax template should be forwarded through
+  the MS Mail Connector to the MS Mail postoffice where the Fax Gateway
+  software is installed and configured.
+
+For more information on importing address templates, please read "Importing
+Address Templates for Third-Party Mail Systems" in Section 7.2.7 of the Exchange
+Server 4.0 Readme.wri or Section 3.1.5 of the Exchange Server 5.0 Readme.wri.
+
+Additional query words: Fax Gateway TPL
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

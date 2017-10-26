@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q316988: PRB: &quot;Parameter Not Optional&quot; Err with Outlook 2000 Move Method | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q316988: PRB: &quot;Parameter Not Optional&quot; Err with Outlook 2000 Move Method" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/316/Q316988/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/316/Q316988/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/316/Q316988/","publisher":null,"image":null,"headline":"Q316988: PRB: &quot;Parameter Not Optional&quot; Err with Outlook 2000 Move Method","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q316988-prb-parameter-not-optional-err-with-outlook-2000-move-method">Q316988: PRB: "Parameter Not Optional" Err with Outlook 2000 Move Method</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q316988
+Product(s): Microsoft FoxPro
+Version(s): 7.0,7.0 SP1
+Operating System(s): 
+Keyword(s): kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283
+Last Modified: 14-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 7.0, 7.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are automating Microsoft Outlook 2000 from Visual FoxPro 7.0, when you
+call the Move method of a folder item, you may receive the following error
+message:
+
+  OLE error code 0x8002000f: Parameter not optional.
+
+RESOLUTION
+==========
+
+To resolve this problem in Visual FoxPro 7.0, use one of the following methods:
+
+- Preface the Move method call with an equal sign (=) character. For example:
+
+  =loFldr1.items(i).Move(loFldr2)
+
+- Upgrade to Microsoft Outlook 2002.
+
+NOTE: This problem can occur with methods other than the item Move method. Apply
+the equal sign resolution in those scenarios to resolve the problem.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Run the following code from a program (.prg) file in Visual FoxPro 7.0 or
+  Visual FoxPro 7.0 Service Pack 1 (SP1):
+
+  #DEFINE olFolderDrafts    16
+  #DEFINE olFolderInbox      6
+  loApp = CREATEOBJECT("Outlook.Application")
+  loSpace = loApp.GetNameSpace("MAPI")
+  loFldr1 = loSpace.GetDefaultFolder(olFolderInbox)
+  loFldr2 = loSpace.GetDefaultFolder(olFolderDrafts)
+  *!* Try to move 3 messages into the Drafts folder 
+  FOR i = 1 to 3
+     *!* Following line fails with the message:
+     *!* Program Error - OLE error code 0x8002000f: Parameter Not Optional
+     loFldr1.items(i).Move(loFldr2) &amp;&amp; Move to "Drafts" folder
+  ENDFOR
+  RETURN
+
+2. This program moves three messages from your Outlook Inbox to your Drafts
+  folder. When the program has completed, move the messages back manually.
+
+  Notice that you receive the error message that is listed in the "Symptoms"
+  section. This error occurs on the loFldr1.items(i).Move(loFldr2) line.
+
+3. To resolve this problem, preface the call to the Move method with an equal
+  sign (=):
+
+  =loFldr1.items(i).Move(loFldr2)
+
+Additional query words: equals automation Office
+
+======================================================================
+Keywords          : kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700 kbVFP700SP1
+Version           : :7.0,7.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

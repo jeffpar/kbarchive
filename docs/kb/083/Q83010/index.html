@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83010: SAMPLE: Navigating a Windows Help File Topic Hierarchy | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83010: SAMPLE: Navigating a Windows Help File Topic Hierarchy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83010/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83010/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83010/","publisher":null,"image":null,"headline":"Q83010: SAMPLE: Navigating a Windows Help File Topic Hierarchy","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83010-sample-navigating-a-windows-help-file-topic-hierarchy">Q83010: SAMPLE: Navigating a Windows Help File Topic Hierarchy</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83010
+Product(s): Microsoft Windows Software Development Kit
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kb16bitonly kbOSWin310
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In many cases, a Windows Help file presents its information in a hierarchy of
+topics. For example, the initial screen of a Help file is a listing of the major
+topics in the file. Selecting a major topic brings up a list of detail topics.
+Selecting a detail topic displays its corresponding screen of information. The
+following diagram illustrates a hierarchical table of contents:
+
+                         Table_of_Contents
+                                 |
+               /-----------------+-----------------\ 
+         Major_Topic_1     Major_Topic_2     Major_Topic_3
+         /     |     \        /       \         /       \ 
+   topic_1 topic_2 topic_3  topic_4 topic_5  topic_6 topic_7
+
+An "Up" button in a Windows Help file provides a convenient method for the user
+to move up the hierarchy. In a major topic, the Up button displays the table of
+contents. In a detail topic, the Up button displays the corresponding major
+topic. In the table of contents, the Up button is disabled because the table of
+contents is the highest point in the hierarchy.
+
+An Up button and a "Back" button each perform different functions. While the Up
+button displays the topic on the next higher level of the hierarchy, the Back
+button returns to the topic previously viewed. In the topic hierarchy, the
+previous topic can be above, below, or on the same level.
+
+UPHELP is a file in the Microsoft Download Center that contains the files
+required to build a Help file that implements an Up button. The file contains a
+graphic image of its title hierarchy. As the user navigates through the file
+using topic jumps and browse sequences, the graphic changes to indicate the
+position in the file.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  Uphelp.exe
+  (http://download.microsoft.com/download/platformsdk/sample81/3.1/W31/EN-US/uphelp.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+This article details the steps required to implement an Up button in a Windows
+Help file to help navigate up the topic hierarchy.
+
+There are two major steps to implementing an Up button:
+
+1. Placing a button on the button bar.
+
+2. Programming the button to perform the required jump.
+
+Placing an Up Button on the Button Bar
+--------------------------------------
+
+A Help file adds a button to the button bar with the CreateButton macro. Once a
+button is created, it will remain on the button bar until a corresponding call
+is made to the DestroyButton macro. A file can call macros in a topic footnote
+(which is described below) or in the [CONFIG] section of the Help project (.HPJ)
+file. The following code adds a button to the button bar:
+
+     [CONFIG]
+     CreateButton("Up_Button","&amp;Up","JI(`uphelp.hlp',`Table_of_Contents')")
+
+The added button has the identifier "Up_Button" and text "Up." When the user
+presses this button, Help displays the "Table_of_Contents" topic in the
+UPHELP.HLP file.
+
+For more information on the CreateButton macro and on the [CONFIG] section of the
+HPJ file, please consult the Windows Software Development Kit (SDK)
+documentation for version 3.1.
+
+Programming the Up Button
+-------------------------
+
+At the entry to each topic, it is necessary to change the topic that Help
+displays when the user presses the Up button. Author an exclamation point (!)
+footnote into each topic of the Help file. Help executes the macros of an
+exclamation point footnote before it displays a topic.
+
+The macro for the table of contents topic is different from those in the
+remainder of the Help file. Because the table of contents is the top of the
+topic hierarchy, the Up button is disabled in the table of contents topic. The
+text of the exclamation point footnote for the table of contents topic contains
+the DisableButton macro.
+
+The exclamation point footnote in the other topics in the Help file contain two
+macros:
+
+- EnableButton, which is required because the topic previously displayed might
+  have been the table of contents. (The user can use the Search feature to jump
+  directly to a topic, bypassing the topic hierarchy.)
+
+- ChangeButtonBinding, which changes the action of the button.
+
+Separate the text of the two macros with a semicolon (;).
+
+The following text provides an example of an exclamation point footnote. Note
+that in an actual Help file, the text below would not contain any line breaks.
+
+     ! EnableButton("Up_Button");
+     ChangeButtonBinding("Up_Button",
+                         "JI(`uphelp.hlp',`Table_of_Contents')")
+
+The ChangeButtonBinding macro requires two parameters:
+
+- This first parameter is the button identifier, in this case "Up_Button".
+
+- The second parameter specifies the action of the button, in this case to call
+  the JumpId (JI) macro. JumpID displays a specified topic in a specified Help
+  file.
+
+The Windows SDK documentation, version 3.1, provides additional information about
+the following Help macros:
+
+- ChangeButtonBinding
+
+- CreateButton
+
+- DisableButton
+
+- EnableButton
+
+- JumpId (JI)
+
+Additional query words: softlib UPHELP.EXE
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbOSWin310 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : :3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

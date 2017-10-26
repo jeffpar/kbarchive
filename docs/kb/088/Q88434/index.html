@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q88434: INFO: Casting Difference Between C and C++ May Cause C2105 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q88434: INFO: Casting Difference Between C and C++ May Cause C2105" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/088/Q88434/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/088/Q88434/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/088/Q88434/","publisher":null,"image":null,"headline":"Q88434: INFO: Casting Difference Between C and C++ May Cause C2105","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q88434-info-casting-difference-between-c-and-c-may-cause-c2105">Q88434: INFO: Casting Difference Between C and C++ May Cause C2105</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q88434
+Product(s): Microsoft C Compiler
+Version(s): MS-DOS:; WINDOWS:1.0,1.5; winnt:1.0,2.0,2.1,4.0,5.0
+Operating System(s): 
+Keyword(s): kbcode kbLangC kbLangCPP kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500
+Last Modified: 10-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ for MS-DOS 
+- Microsoft Visual C++, versions 1.0, 1.5, 2.0, 2.1, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In C++, the result of a cast to a reference type is an lvalue; casts to any
+other type are not lvalues. This is explicitly stated in the "C++ Annotated
+Reference Manual," by Ellis and Stroustrup, on page 69. In a .C file, explicit
+casting to any data type may result in an lvalue only if Microsoft language
+extensions are enabled. The same error is generated in a .C file if Microsoft
+extensions are disabled.
+
+This difference can cause problems in code that compiles without error using a C
+compiler. The sample code below illustrates this with a simple increment of a
+casted result. If it is compiled as a C source file, no errors are generated
+(although using warning level 4 generates "C4213: nonstandard extension used :
+cast on l-value"). However, if it is compiled as a C++ source file, the
+following error is generated:
+
+  error C2105: '++' needs lvalue
+
+Microsoft C/C++ does provide a mechanism for achieving this by implementing a
+cast to a reference that achieves the same effect:
+
+  ++(long*&amp;)p;
+
+Sample Code
+-----------
+
+  /* Compile options needed:  none
+  */ 
+
+  void main()
+  {
+     char *p;
+
+     ((long *)p)++;   // If the file is saved as a .CPP, this 
+  }                   // causes an error.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbLangC kbLangCPP kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbZNotKeyword3 kbVC500 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : MS-DOS:; WINDOWS:1.0,1.5; winnt:1.0,2.0,2.1,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

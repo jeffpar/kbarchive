@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256276: Error Message: There Is No Catalog | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256276: Error Message: There Is No Catalog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256276/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256276/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256276/","publisher":null,"image":null,"headline":"Q256276: Error Message: There Is No Catalog","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256276-error-message-there-is-no-catalog">Q256276: Error Message: There Is No Catalog</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256276
+Product(s): Internet Information Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you type in a query, and then click the Go button to execute the query, the
+query does not return. Instead, you receive a page that displays the following
+error message:
+
+  There is no catalog
+
+CAUSE
+=====
+
+The catalog specified in either the code of the query page or the default
+catalog path in the registry is invalid.
+
+RESOLUTION
+==========
+
+If you do not specify a catalog in your code, Index Server finds the path to the
+default catalog using following registry key, and then uses that catalog:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex
+
+The path is located under the IsapiDefaultCatalogDirectory value and should be
+the same as the physical path to the directory that contains the Catalog.wci
+directory.
+
+If you choose to specify your catalog in the code of your pages, the method you
+use depends on how you are doing your queries. In an IDQ file, use a command
+line similar to the following:
+
+  CiCatalog=&lt;catalogpath&gt;
+
+where &lt;catalogpath&gt; is the same as the path to the directory that contains
+the Catalog.wci directory. For example, if the physical path to your Catalog.wci
+folder is C:\Inetpub\Catalogs\Catalog.wci, then your CiCatalog line will be
+similar to the following:
+
+  CiCatalog=C:\Inetpub\Catalogs
+
+The CiCatalog variable should be located in the [Query] section of the IDQ file.
+
+In an ASP file, use the Q.Catalog line to specify the name of the catalog to be
+queried.
+
+NOTE: This example uses the IXSSO object and is based on Query.asp, which is
+installed by default with Index Server.
+
+In the Query.asp page, find the section that resembles the following:
+
+  set Q = Server.CreateObject("ixsso.Query")
+          set util = Server.CreateObject("ixsso.Util")
+      Q.Query = CompSearch
+      Q.SortBy = "rank[d]"
+      Q.Columns = "DocTitle, vpath, filename, size, write, characterization, rank"
+      Q.MaxRecords = 300
+
+To specify a catalog in the ASP page, add a Q.Catalog line so that section
+appears follows:
+
+  set Q = Server.CreateObject("ixsso.Query")
+          set util = Server.CreateObject("ixsso.Util")
+      Q.CATALOG="&lt;catalogname&gt;"
+      Q.Query = CompSearch
+      Q.SortBy = "rank[d]"
+      Q.Columns = "DocTitle, vpath, filename, size, write, characterization, rank"
+      Q.MaxRecords = 300
+
+The Q.Catalog line that you add has a value equal to the name of your catalog as
+it appears in the Microsoft Management Console (MMC) for Index Server.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q238791 Specifying a Catalog in ASP Code (IXSSO Query)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

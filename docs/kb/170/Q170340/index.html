@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170340: FIX: Debugging ActiveX Server in IDE Causes Application Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170340: FIX: Debugging ActiveX Server in IDE Causes Application Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170340/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170340/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170340/","publisher":null,"image":null,"headline":"Q170340: FIX: Debugging ActiveX Server in IDE Causes Application Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170340-fix-debugging-activex-server-in-ide-causes-application-error">Q170340: FIX: Debugging ActiveX Server in IDE Causes Application Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170340
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 10-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When debugging an ActiveX server running in the Visual Basic IDE on Windows NT
+4.0, you may receive the following error when the ActiveX server attempts to
+return control back to the Client application running in a second Visual Basic
+IDE:
+
+  "Step Into: VB5.EXE - Application Error
+  The instruction at &lt;memory address&gt; referenced memory at &lt;memory
+  address&gt;. The memory could not be "read"
+
+RESOLUTION
+==========
+
+To correct this problem, use one of the following methods.
+
+- Install Windows NT Service Pack 2 or later. The system requirements on the
+  Visual Basic Box recommend Service Pack 2 for Windows NT 4.0.
+
+-or-
+
+- Use late binding when creating the ActiveX server object.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+This problem was corrected in Windows 2000.
+
+MORE INFORMATION
+================
+
+A common method of debugging ActiveX servers is to run them in one session of
+the Visual Basic IDE while the client runs in a second session of the Visual
+Basic IDE. When using early binding to an ActiveX server on Windows NT 4.0, you
+will receive an APPLICATION ERROR when the ActiveX server tries to return
+control to the client application.
+
+NOTE: This is a problem only if Windows NT Service Pack 2 or later is not
+installed.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX EXE Project.
+
+2. Name the Class "clsTest" (without the quotation marks).
+
+3. Add the following code to the class module:
+
+        Private Sub Class_Initialize()
+           Debug.Print "Class Init"
+        End Sub
+
+4. Click Properties on the Project menu. On the General tab, set the Project
+  name to "pjxTest." On the Make tab, set the Application Title to "pjxTest."
+  On the Component Tab, set the Start Mode to ActiveX Component and click OK.
+
+5. Run the ActiveX server by pressing CTRL+F5 or, from the Run Menu, select
+  Start with Full Compile.
+
+6. Start a second session of Visual Basic and create a Standard EXE project.
+
+7. From the Project Menu, select References. Check "pjxTest" and click OK.
+
+8. Place a CommandButton on Form1.
+
+9. Add the following code to the form:
+
+        Dim obj As pjxTest.clstest
+
+        Private Sub Command1_Click()
+           Set obj = New pjxTest.clstest
+        End Sub
+
+10. From the View Menu, select Toolbars, and make sure the Debug Toolbar is
+  checked.
+
+11. Use the Step Into button on the Debug Toolbar to step through the code. You
+  will get an APPLICATION ERROR when you click the Step Into button and you
+  are on the "End Sub" line in the Class_Initialize Sub of the ActiveX server.
+  Because the APPLICATION ERROR is from the Client, the Client session of
+  Visual Basic will be terminated.
+
+Additional query words: OLE kbAutomation instance
+
+======================================================================
+Keywords          : kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbPTNotAssigned kbZNotKeyword2
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

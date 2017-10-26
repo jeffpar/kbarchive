@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253146: Tuning the Performance and Scalability of ASP Web Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253146: Tuning the Performance and Scalability of ASP Web Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253146/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253146/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253146/","publisher":null,"image":null,"headline":"Q253146: Tuning the Performance and Scalability of ASP Web Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253146-tuning-the-performance-and-scalability-of-asp-web-applications">Q253146: Tuning the Performance and Scalability of ASP Web Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253146
+Product(s): Internet Information Server
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbIIS kbiis500
+Last Modified: 23-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides some generic information about possible
+performance-enhancement settings that may be helpful to tune Internet
+Information Server (IIS) 5.0. The default settings for Internet Information
+Services 5.0 are adequate for most uses. When you host sites serving a large
+number of users, tuning the parameters listed in the "More Information" section
+of this article may help to increase performance. All changes should be verified
+on a test computer before you make changes to a production computer.
+
+MORE INFORMATION
+================
+
+AspProcessorThreadMax:
+
+The AspProcessorThreadMax metabase property specifies the maximum number of
+worker threads per processor that IIS creates. The setting can dramatically
+influence the scalability of your Web applications and the performance of your
+server in general. Because it defines the maximum number of ASP requests that
+can run simultaneously, this setting should remain at the default unless your
+ASP applications are making long-running calls to external components. By
+default, AspProcessorThreadMax is set to 25.
+
+AspRequestQueueMax:
+
+The AspRequestQueueMax metabase property specifies the maximum number of
+concurrent ASP requests that are permitted into the queue. Any client browsers
+attempting to request ASP files when the queue is full are given an HTTP 500
+"Server too busy" error message. By default, AspRequestQueueMax is set to 3000.
+
+AspQueueConnectionTestTime:
+
+IIS places all ASP requests into a queue. If the request has been queued for
+longer than the number of seconds specified by the AspQueueConnectionTestTime
+metabase property, ASP checks to determine whether the client is still connected
+before it executes the request. If the client is no longer connected, the
+request is not processed and is deleted from the queue. You can use the
+AspQueueConnectionTestTime metabase property to make sure that IIS does not
+waste time processing a request that has been abandoned by the user. By default,
+AspQueueConnectionTestTime is set to 3.
+
+AspScriptEngineCacheMax:
+
+The AspScriptEngineCacheMax property specifies the maximum number of scripting
+engines that ASP pages will keep cached in memory. By default,
+AspScriptEngineCacheMax is set to 125.
+
+AspSessionTimeOut:
+
+The AspSessionTimeOut property specifies the default amount of time (in minutes)
+that a session object is maintained after the last request associated with the
+object is made. AspSessionTimeOut can be used to tune your ASP applications.
+Because session objects consume some memory resources, limiting the lifetime of
+an individual session with this property makes your applications more scalable.
+By default, AspSessionTimeOut is set to 20.
+
+WARNING: Modifying the metabase incorrectly can cause serious problems that may
+require you to reinstall IIS 5.0. Microsoft cannot guarantee that problems
+resulting from incorrectly modifying the metabase can be resolved. Modify the
+metabase at your own risk.
+
+Run the Adsutil.vbs utility from the &lt;%SYSTEMDRIVE%&gt;\inetpub\adminScripts
+directory. For example, to reconfigure the AspRequestQueueMax metabase property,
+type the following command:
+
+  adsutil.vbs set w3svc/AspRequestQueueMax &lt;NewValue&gt;
+
+Where &lt;NewValue&gt; is the number of requests that ASP should use per
+processor.
+
+Note: For all entries, these settings change the value at the Master WWW
+Properties level, where they are inherited by all new Web applications and all
+existing applications that have not explicitly set a different value.
+
+REFERENCES
+==========
+
+  Q238583 How to Tune the ASPProcessorThreadMax
+
+  Q233477 PRB: Session.Timeout Has a Max of 24 Hours
+
+Additional query words:
+
+======================================================================
+Keywords          : kbIIS kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

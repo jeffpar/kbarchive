@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q207797: BUG: Cursor Jumps Around when Typing in Edit Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q207797: BUG: Cursor Jumps Around when Typing in Edit Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/207/Q207797/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/207/Q207797/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/207/Q207797/","publisher":null,"image":null,"headline":"Q207797: BUG: Cursor Jumps Around when Typing in Edit Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q207797-bug-cursor-jumps-around-when-typing-in-edit-box">Q207797: BUG: Cursor Jumps Around when Typing in Edit Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q207797
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbOOP kbvfp500 kbvfp500a kbvfp500aBUG kbvfp600bug kbVS600sp3 kbGrpDSFox kbDSupport kbCo
+Last Modified: 18-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are inserting text in an edit box that already has data in it, the
+insertion point jumps through the existing data in an apparently random manner
+on each press of a key.
+
+CAUSE
+=====
+
+This is caused by referencing the Value property of the edit box during the
+InteractiveChange event when there are carriage return and line feed characters
+in the edit box data. Carriage return and line feed characters can get in the
+edit box when the ENTER key is pressed when typing in data.
+
+RESOLUTION
+==========
+
+Use the Text property rather than the Value property.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The code below creates a form with an edit box on it. The Init method of the
+edit box assigns some text to the Value property, including carriage return and
+line feed characters.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Place the following code into a new program file:
+
+  PUBLIC oform1
+
+  oform1=CREATEOBJECT("form1")
+  oform1.Show
+  RETURN
+
+  	**************************************************
+  *-- Form:         form1
+  *-- ParentClass:  form
+  *-- BaseClass:    form
+  *
+  DEFINE CLASS form1 AS form
+
+          DoCreate = .T.
+          Caption = "Form1"
+          Name = "FORM1"
+
+          ADD OBJECT edit1 AS editbox WITH ;
+                  Height = 169, ;
+                  Left = 120, ;
+                  Top = 24, ;
+                  Width = 145, ;
+                  Name = "Edit1"
+
+          PROCEDURE edit1.InteractiveChange
+                  x=This.Value
+                  *x=this.Text
+          ENDPROC
+
+          PROCEDURE edit1.Init
+                  This.Value=""
+                  FOR i=1 TO 8
+                     This.Value=This.Value+"Line "+ALLTRIM(STR(i))+CHR(13)+CHR(10)
+                  ENDFOR
+          ENDPROC
+
+  ENDDEFINE
+  *
+  *-- EndDefine: form1
+  **************************************************
+
+2. Save and run the code.
+
+3. On line 4 of the edit box, click between the "e" in "Line 4" and the number
+  4. The insertion point should now be on line 4.
+
+4. Start typing the word "Hello" (without the quotation marks) and watch where
+  the letters end up.
+
+5. In Procedure Init in the code above, remove the asterisk (*) in front of the
+  x=This.Text line and place it before the x=This.Value line.
+
+6. Save and rerun the program. Repeat step 4 and note that the cursor no longer
+  jumps around.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOOP kbvfp500 kbvfp500a kbvfp500aBUG kbvfp600bug kbVS600sp3 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148969: INFO: Troubleshooting SNA Server Communication over an IP Router | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148969: INFO: Troubleshooting SNA Server Communication over an IP Router" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148969/","publisher":null,"image":null,"headline":"Q148969: INFO: Troubleshooting SNA Server Communication over an IP Router","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148969-info-troubleshooting-sna-server-communication-over-an-ip-router">Q148969: INFO: Troubleshooting SNA Server Communication over an IP Router</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148969
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.1, 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you open the SNA Server Admin from a backup SNA Server, you might receive
+the following error message:
+
+  The Primary SNA Server for the domain is not active.
+
+NOTE: The troubleshooting steps described in this article do not apply to SNA
+Server 3.0.
+
+An SNA Server 3.0 backup or member configuration server locates the primary SNA
+Server by contacting it's name (or IP address) directly, based on the primary
+server name entered during SNA Server Setup when the backup or member server was
+installed. The primary server name is saved under the following registry key:
+
+    HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/SnaBase/PrimaryServer: REG_SZ:
+
+where either the server name or IP address can be entered. If IP address, enter
+in standard notation (for example: 123.45.67.89).
+
+
+A backup SNA Server tries to open the Com.cfg file on the primary SNA Server. The
+backup learns about the location of the primary SNA Server when it receives a
+broadcast mailslot from the primary. The packet looks like the following:
+
+  Src MAC       Dst MAC   Prot    Description                          Src
+
+Other Addr   Dst Other Addr
+00AA006B4BE2   *BROADCAST  SMB     C transact, File = \MAILSLOT\SNADMOD
+157.57.15.231    157.57.15.255 IP
+
+However, when there is an IP router in between the backup and primary SNA Server,
+the SNA Server domain must be configured to send directed mailslots instead of
+broadcasts.
+
+The following outlines how to configure the SNA Server domain to send directed
+mailslots instead of broadcasts:
+
+1. In SNA Server Admin, click Server Broadcasts on the Options menu.
+
+  NOTE: When changes are made to this dialog box, it effects all SNA Servers in
+  the respective domain.
+
+2. Select the Microsoft Networking and Route Server Broadcasts Over IP Routers
+  check boxes.
+
+3. Close the dialog box.
+
+4. Save the configuration.
+
+  NOTE: You must stop and start the SNABASE service for these changes to take
+  effect.
+
+MORE INFORMATION
+================
+
+After you make the above changes, the following is a sample packet sent from the
+primary to the backup SNA Server.
+
+NOTES:
+
+- The destination address is not broadcast, but instead, a specific MAC address
+  is used.
+
+- The MAC address will be the router's MAC address if the destination server is
+  on a different segment, but the destination IP address will be the backup SNA
+  server's IP address.
+
+  Src MAC          Dst MAC     Prot  Description                          Src
+  Other Addr  Dst Other Addr
+  00AA006B4BE2   08002B314A12  SMB   C transact, File = \MAILSLOT\SNADMOD
+  157.57.15.231   157.57.13.12    IP
+
+When configured this way, the SNA Server relies on the netlogon service of
+Microsoft Windows NT to retrieve a list of all domain controllers participating
+in the domain. The SNA Server will send a directed mailslot to each domain
+controller even if it is not running SNA Server.
+
+There are two common methods that the Windows NT netlogon service uses to
+retrieve a list of all the servers in the Windows NT domain:
+
+- Queries WINS
+
+  WINS must have a registration for each computer acting as a domain controller.
+  The WINS server's database should have an entry for the domain_name followed
+  by [1Ch]. If you double-click this entry you should see a list of all the
+  domain controllers registered with this WINS server. If the SNA Server is not
+  in this list, the Windows NT computer has not properly registered with the
+  WINS server as a domain controller.
+
+  If your Windows NT domain has 25 or more domain controllers, and you use WINS
+  for name resolution, the SNA server announcements may not be sent to all of
+  the SNA Servers. WINS only keeps a list of 25 domain controllers in the [1Ch]
+  group name. As new backup domain controllers register, they replace a backup
+  domain controller entry in the list. In this case you would need to add
+  LMHOSTS files on the SNA servers or use SNA subdomains.
+
+- Uses local name cache via LMHOSTS with the #PRE #DOM switches.
+
+  LMHOSTS file must have an entry for every domain controller with the
+  extensions #PRE #DOM:domain. An example of this file can be found in
+  &lt;winntroot&gt;\System32\Drivers\Etc\Lmhosts.sam.
+
+  To reload the LMHOSTS file, use the following command:
+
+        nbtstat -r
+
+  To verify these entries have been properly cached use the following command:
+
+        nbtstat -c
+
+The following are other things to check:
+
+- The SNA Servers must be installed on a domain controller, either a backup or
+  primary, in the same Windows NT domain. It is not sufficient to install on a
+  Windows NT Server Non-domain controller.
+
+- From the primary SNA Server, using PING, confirm that the IP address of each
+  SNA Server is reachable.
+
+  NOTE: Using PING to resolve the server's name is not relevant, the packet does
+  not use the server's netbios name.
+
+- Make sure that the netlogon service on all SNA Servers in the domain is
+  started.
+
+- If the SNA Server communication is still failing after you check all of the
+  earlier, network traces of the traffic from the SNA Server should be done to
+  capture the server announcements. These will appear as SMBs, with the
+  following description:
+
+     C transact, File = \MAILSLOT\SNADMOD.
+
+  The traces can be used to verify the announcements are being generated and
+  sent to the correct IP addresses. Traces can also be captured on the other
+  side of the router to verify the messages are arriving on that segment.
+
+- Try reloading the Netbios name cache on the Windows NT computer where the
+  Primary SNA Server is running:
+
+        nbtstat -R
+
+  This will cause the name cache to be purged and reloaded.
+
+Additional query words: prodsna tcp/ip snafaq
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.1,2.11,2.11 SP1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

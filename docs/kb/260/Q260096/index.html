@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260096: Page Cannot Be Displayed When You Connect Through SSL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260096: Page Cannot Be Displayed When You Connect Through SSL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260096/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260096/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260096/","publisher":null,"image":null,"headline":"Q260096: Page Cannot Be Displayed When You Connect Through SSL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260096-page-cannot-be-displayed-when-you-connect-through-ssl">Q260096: Page Cannot Be Displayed When You Connect Through SSL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260096
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 02-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to a computer running Internet Information Services (IIS) 5.0
+by using Secure Socket Layer (SSL), the following error message may occur:
+
+  The page cannot be displayed.
+  The page you are looking for is currently unavailable. The Web site might be
+  experiencing technical difficulties, or you may need to adjust your browser
+  settings.
+
+This Web site is usually the second Web site on the server. Connecting to the Web
+site through HTTP works correctly.
+
+CAUSE
+=====
+
+This error message can occur if you have SSL set on the default Web site, and
+you remove the certificate, and then try to set it up on a second Web site.
+
+If you run a netstat -an command, you can see that a service is listening on port
+443, but you cannot connect to it. This is caused by a new implementation in IIS
+5.0 called Socket Pooling. For additional information on socket pooling and how
+to disable it, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q259349 IIS Binds To All Available IP Addresses When It Starts
+
+RESOLUTION
+==========
+
+NOTE: For the purposes of this article, two Web sites are installed: the default
+Web site and the Administration Web site. By default, SSL is enabled on the
+default Web site.
+
+1. Open the Security properties for the default Web site, and then select Server
+  Certificate.
+
+2. In the wizard, click Assign an existing certificate, and then select a
+  certificate from the list.
+
+3. When you have completed the wizard, click Web site tab, and then click
+  Advanced.
+
+4. Delete all the entries that are listed in the SSL window.
+
+5. Click Server Certificate again, click Remove the current certificate, and
+  click OK.
+
+6. Right-click the computer name in the Microsoft Management Console (MMC), and
+  then click Restart IIS.
+
+You should now be able to connect to the server by using SSL.
+
+WORKAROUND
+==========
+
+Restarting the IIS services may resolve the error message. If it does not,
+follow the steps in the "Resolution" section of this article.
+
+MORE INFORMATION
+================
+
+After SSL is enabled on an IIS Web server, the IIS service begins to listen on
+all used and unused IP addresses on ports 80 and 443. For multi-IP address
+servers, you may want to disable this feature. This feature was added the
+product for performance gain.
+
+This problem usually occurs when you try to set up SSL on the administration Web
+site. IIS finds the SSL settings for the default Web site and listens on port
+443. However, the default Web site does not have a certificate to correspond to
+that site. Therefore, no connection can be made, which is why you can see a
+server listening on port 443, but you cannot connect to the site.
+
+
+Additional query words: certsrv ssl administration
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

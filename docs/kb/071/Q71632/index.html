@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q71632: Programs to Turn NUM LOCK On and Off | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q71632: Programs to Turn NUM LOCK On and Off" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/071/Q71632/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/071/Q71632/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/071/Q71632/","publisher":null,"image":null,"headline":"Q71632: Programs to Turn NUM LOCK On and Off","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q71632-programs-to-turn-num-lock-on-and-off">Q71632: Programs to Turn NUM LOCK On and Off</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q71632
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:3.x,4.x,5.x,6.x
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During the power on self test (POST), the ROM BIOS on some computers will
+activate the keyboard's NUM LOCK key. As a result, each time you reboot the
+system, the NUM LOCK key must be manually turned off before you can access the
+editing keys (the arrow keys, and so forth) on the numeric keypad. This behavior
+is a function of the computer's hardware, rather than of MS-DOS.
+
+MORE INFORMATION
+================
+
+
+In MS-DOS version 6.x adding
+
+  NUMLOCK=OFF
+
+to the CONFIG.SYS file will turn off the NUM LOCK key.
+
+The program described below (NUM_OFF.COM) can be called from your AUTOEXEC.BAT to
+turn off the NUM LOCK key automatically each time the system is booted.
+
+You can use the MS-DOS DEBUG command to create a program (NUM_OFF.COM) that will
+turn the NUM LOCK key off. To create NUM_OFF.COM, do the following:
+
+1. Create a DEBUG script file (NUM_OFF.SCR) using a text editor such as the
+  MS-DOS Edlin line editor (see the "MS-DOS User's Guide" for more information
+  on Edlin.) The NUM_OFF.SCR file should contain the following lines exactly
+  (where &lt;ENTER&gt; means to press the ENTER key on the keyboard):
+
+    a 100&lt;ENTER&gt;
+     mov ax,0040&lt;ENTER&gt;
+     mov ds,ax&lt;ENTER&gt;
+     and byte ptr [0017],df&lt;ENTER&gt;
+     mov ax,4c00&lt;ENTER&gt;
+     int 21&lt;ENTER&gt;
+     &lt;ENTER&gt;
+     r cx&lt;ENTER&gt;
+     000f&lt;ENTER&gt;
+     n num_off.com&lt;ENTER&gt;
+     w&lt;ENTER&gt;
+     q&lt;ENTER&gt;
+
+2. Redirect this script file into the DEBUG utility by entering the following
+  command at the DOS prompt:
+
+  " C:\&gt;debug &lt; num_off.scr" (without the quotation marks)
+
+3. The NUM_OFF.COM program has now been created. To test the program, turn the
+  NUM LOCK key on, then call the NUM_OFF.COM program by entering the following
+  command:
+
+  " C:\&gt;num_off.com" (without the quotation marks)
+
+  This procedure should result in the NUM LOCK indicator light going out just as
+  if you had pressed the NUM LOCK key.
+
+This program can be modified to turn the NUM LOCK on rather than off. To do this,
+follow the steps in the example above, replacing all instances of "NUM_OFF" with
+"NUM_ON" and substituting the following line for the fourth line of the DEBUG
+script file:
+
+  or byte ptr [0017],20&lt;ENTER&gt;
+
+Additional query words: 3.20 3.21 3.30 3.30a 4.00 4.01 4.01a 5.00 win95
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:3.x,4.x,5.x,6.x
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

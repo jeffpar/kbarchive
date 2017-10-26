@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q300189: PRB: Paradox ISAM Does Not Support Some Paradox 4.x Types | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q300189: PRB: Paradox ISAM Does Not Support Some Paradox 4.x Types" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/300/Q300189/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/300/Q300189/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/300/Q300189/","publisher":null,"image":null,"headline":"Q300189: PRB: Paradox ISAM Does Not Support Some Paradox 4.x Types","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q300189-prb-paradox-isam-does-not-support-some-paradox-4x-types">Q300189: PRB: Paradox ISAM Does Not Support Some Paradox 4.x Types</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q300189
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.51,3.6,5.0,6.0,6.0 SP3,6.0 SP4,6.0 SP5
+Operating System(s): 
+Keyword(s): kbJET kbGrpDSVB kbDSupport
+Last Modified: 27-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, 6.0 SP3, 6.0 SP4, 6.0 SP5 
+- The DAO SDK, versions 3.51, 3.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Jet versions 3.51 and 4.0 provide a Paradox ISAM driver that allows
+access to Paradox 4.x tables. However, the Paradox ISAM driver does not support
+the BINARY BLOB (type B) Paradox 4.x data type. Thus, fields that use this data
+type will not be available in Visual Basic.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If you try to open a Data Access Objects (DAO) recordset against Paradox 4.x
+table that contains a field that has an unsupported data type, that field will
+be ignored. The field will not appear in the fields collection of any DAO object
+(TableDef, Table, dynaset, or snapshot).
+
+NOTE: Although DAO does not recognize or work with Paradox BINARY BLOB fields,
+DAO does recognize and work with Paradox OLE BLOB fields.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbJET kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbDAOsearch kbZNotKeyword6 kbSDKDAOSearch kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbSDKSearch kbSDKDAO360 kbSDKDAO351 kbVB600SP3 kbVB600SP4 kbVB600SP5
+Version           : :3.51,3.6,5.0,6.0,6.0 SP3,6.0 SP4,6.0 SP5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

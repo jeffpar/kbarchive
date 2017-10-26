@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145894: How to Protect Properties and Methods in a Class | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145894: How to Protect Properties and Methods in a Class" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145894/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145894/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145894/","publisher":null,"image":null,"headline":"Q145894: How to Protect Properties and Methods in a Class","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145894-how-to-protect-properties-and-methods-in-a-class">Q145894: How to Protect Properties and Methods in a Class</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145894
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows how to use the PROTECT option of a class to hide properties
+and methods that are used only in the specific object class.
+
+MORE INFORMATION
+================
+
+Within Visual FoxPro, the PROTECTED keyword in the class definition prevents
+access to these properties by any methods outside of its class. Therefore, the
+PROTECTED properties are invisible to outside methods. The ability to hide
+properties or methods when using an object-oriented programming approach in
+Visual FoxPro is a form of encapsulation.
+
+The following example demonstrates the concept by creating a class called
+Protect_Globals. The PROTECTED keyword limits the scope of the property
+gd_sysdate to the Protect_Globals class. The property gc_day is not protected
+and can be accessed outside the class.
+
+Create a Class with Protected and Unprotected Properties
+--------------------------------------------------------
+
+1. On the File menu, click New, select Class, and then click the New File
+  button.
+
+2. For the Class Name, enter Protect_Globals. This will be Based On Custom and
+  Store In g_class.
+
+3. Within the Class Designer, click the Class menu, and select New Property. For
+  the Name, type gd_sysdate, and select the Protected check box. Then click the
+  OK button.
+
+4. On the Properties sheet, locate the gd_sysdate property, and change its value
+  to:
+
+     =DATE()
+
+5. On the Class menu, click New Property. For the Name, type gc_day. Leave the
+  Protected check box unchecked, and click the OK button.
+
+6. On the Properties sheet, locate the gc_day property, and change its value
+  to:
+
+     =CDOW(DATE())
+
+7. On the Class menu, click New Method. For the Name, type getsysdate. Leave the
+  Protected check box unchecked, and click the OK button.
+
+8. On the Properties sheet, locate the getsysdate method, and enter the
+  following code:
+
+     WAIT WINDOW DTOC(This.gd_sysdate) NOWAIT
+
+9. Close the Class Designer, and save changes to the Protect_Globals class.
+
+Place the Class within a Form
+-----------------------------
+
+1. On the File menu, click New, and select Form, and then click the New File
+  button.
+
+2. Select the View Classes tool from the Form Controls, and Add the g_class that
+  was created previously.
+
+3. Locate and select the Protect_Globals tool, and then click any place on the
+  form. This will create an instance of the Protect_Globals class with the name
+  Protect_Globals1.
+
+4. Select the View Classes tool from the Form Controls, and select Standard.
+
+5. Add three command buttons (Command1, Command2, and Command3) to the new form.
+
+6. Change the Caption of Command1 to GC_DAY. Within its Click event, enter the
+  following:
+
+     WAIT WINDOW ThisForm.Protect_Globals1.gc_day NOWAIT
+
+7. Change the Caption of Command2 to GETSYSDATE. Within its Click event, enter
+  the following:
+
+     ThisForm.Protect_Globals1.getsysdate
+
+8. Change the Caption of Command3 to GD_SYSDATE. Within its Click event, enter
+  the following:
+
+     WAIT WINDOW DTOC(ThisForm.Protect_Globals1.gd_sysdate) NOWAIT
+
+9. Save the form as g_form, and close the Form Designer.
+
+Run the Form
+------------
+
+1. Use the DO FORM command to run the g_form you just created.
+
+2. Click the GC_DAY command button, and note that a WAIT WINDOW appears and
+  displays the gd_day property of the Protect_Globals class.
+
+3. Click the GETSYSDATE command button, and note that the gd_sysdate property of
+  the Protect_Globals class is displayed by calling the getsysday method of
+  that class.
+
+4. Click the GD_SYSDATE command button. This results in a Program Error
+  indicating that the gd_sysdate property cannot be found. This is because the
+  gd_sysdate property is hidden to the form.
+
+5. Select Ignore, and close the form.
+
+In Step 3 it was possible for the value to be displayed by calling a method of
+the Protect_Globals class that passed the data contained within the gd_sysdate
+property. But because that property is protected, it is completely hidden from
+the command button of the form that attempted to call the gd_sysdate property
+directly.
+
+Additional query words: Encapsulation VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

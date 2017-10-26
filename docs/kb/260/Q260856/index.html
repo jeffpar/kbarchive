@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260856: PRB: File Access Denied Opening Table Accessed by Using ADO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260856: PRB: File Access Denied Opening Table Accessed by Using ADO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260856/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260856/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260856/","publisher":null,"image":null,"headline":"Q260856: PRB: File Access Denied Opening Table Accessed by Using ADO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260856-prb-file-access-denied-opening-table-accessed-by-using--ado">Q260856: PRB: File Access Denied Opening Table Accessed by Using  ADO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260856
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbADO kbDatabase kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbGr
+Last Modified: 21-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a Visual FoxPro table for exclusive use after the table
+has been accessed by using an ActiveX Data Object (ADO), the following error
+message appears:
+
+  File access is denied
+
+This error message may continue to occur for up to 60 seconds after the table has
+been released from the ADO connection.
+
+CAUSE
+=====
+
+When an application creates an OLE DB data source object (through ADO or an OLE
+DB consumer), OLE DB services query the data provider for supported information
+and provide a proxy data source object to the application. To the consuming
+application, this proxy data source object looks like any other data source
+object, but, in this case, setting properties merely caches the information in
+the local proxy. When the application opens a connection in ADO, the proxy data
+source object checks whether any unused connections already exist that match the
+specified connection information. If a matching unused connection is found,
+rather than creating a new object, setting properties, and establishing a new
+connection to the database, the proxy data source object uses the existing
+initialized data source object. When the application releases the data source
+object, it is returned to the pool. Any data source object that is released by
+the application and not reused after 60 seconds is automatically released from
+the pool.
+
+RESOLUTION
+==========
+
+Disable ADO Resource pooling in the ADO Connection string.
+
+Resource pooling can be controlled in the connection string used to connect to a
+data source by adding one of the following OLE DB Services clauses, as
+appropriate:
+
+  lcConnectString="DRIVER=Microsoft Visual FoxPro Driver;" + ;
+     "SourceType=DBF;SourceDB="+SYS(5)+SYS(2003) + ";" + ;
+     "Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE;" + ;
+     "OLE DB Services = 0") 
+
+  -or-
+
+  lcConnectString="DRIVER=Microsoft Visual FoxPro Driver;" + ;
+     "SourceType=DBF;SourceDB="+SYS(5)+SYS(2003) + ";" + ;
+     "Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE;" + ;
+     "OLE DB Services = -2") 
+
+  -or-
+
+  lcConnectString="DRIVER=Microsoft Visual FoxPro Driver;" + ;
+     "SourceType=DBF;SourceDB="+SYS(5)+SYS(2003) + ";" + ;
+     "Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE;" + ;
+     "OLE DB Services = -4") 
+
+  -or-
+
+  lcConnectString="DRIVER=Microsoft Visual FoxPro Driver;" + ;
+     "SourceType=DBF;SourceDB="+SYS(5)+SYS(2003) + ";" + ;
+     "Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE;" + ;
+     "OLE DB Services = -6")
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+By default, service components are enabled for all Microsoft OLE DB providers.
+This is because Resource pooling provides high performance in an environment
+that exhibits frequent connects and disconnects from a backend database. The
+following table indicates valid connection string values and the OLE DB Services
+associated with each connection string:
+
++------------------------------------------------------------------------------+
+| Value in Connection String | Services Enabled                                | 
++------------------------------------------------------------------------------+
+| "OLE DB Services = 0"      | No Services                                     | 
++------------------------------------------------------------------------------+
+| "OLE DB Services = -1"     | All Services (default)                          | 
++------------------------------------------------------------------------------+
+| "OLE DB Services = -2"     | All Services Except Pooling                     | 
++------------------------------------------------------------------------------+
+| "OLE DB Services = -4"     | All Services Except Pooling and Auto-Enlistment | 
++------------------------------------------------------------------------------+
+| "OLE DB Services = -5"     | All Services Except Client Cursor               | 
++------------------------------------------------------------------------------+
+| "OLE DB Services = -6"     | All Services Except Client Cursor and Pooling   | 
++------------------------------------------------------------------------------+
+
+Note that Resource pooling is disabled when OLE DB Services is set to a value of
+0, -2, -4, or -6.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program (.prg) file named Adodemo.prg using the following code:
+
+  PUBLIC myconn, myrs
+  CREATE TABLE adodemo (charfld1 c(10), charfld2 c(10))
+  FOR i=1 TO 3
+     INSERT INTO adodemo VALUES (REPLICATE(CHR(i+64),10),REPLICATE(CHR(i+65),10))
+  ENDFOR
+  CLOSE ALL
+  *!* Create an ADO Connection to the FoxPro Samples
+  myconn=CREATEOBJECT('ADODB.CONNECTION')
+  *!* Need a Client Side Cursor for this so that we get a recordcount
+  myconn.cursorlocation=3 &amp;&amp; adUseClient
+  *!* Open the data source
+  myconn.OPEN("DRIVER=Microsoft Visual FoxPro Driver;" + ;
+     "SourceType=DBF;SourceDB="+SYS(5)+SYS(2003) + ";" + ;
+     "Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE")
+  *!* Create an ADO Recordset to be used as the datasource for the DataCombo control
+  myrs=CREATEOBJECT('ADODB.RECORDSET')
+  *!* Set the connection property of the recordset
+  myrs.activeconnection=myconn
+  *!* The recordset inherits the cursorlocation of the connection
+  myrs.locktype=3 &amp;&amp; adLockOptimistic
+  myrs.OPEN("SELECT * FROM ADODEMO",,,,1)
+  FOR i=0 TO myrs.recordcount-1
+     FOR j=0 TO myrs.FIELDS.COUNT-1
+        ?? myrs.FIELDS(j).VALUE + " "
+     ENDFOR
+     myrs.movenext 
+     ?
+  ENDFOR
+  myrs.CLOSE
+  myconn.CLOSE
+  USE adodemo EXCLUSIVE
+
+2. Save and run the program. Note that when the USE adodemo EXCLUSIVE line is
+  encountered, the following error message appears:
+
+  File access is denied
+
+3. Open the Adodemo.prg file and change the line that opens the ADO connection
+  from
+
+  myconn.OPEN("DRIVER=Microsoft Visual FoxPro Driver;" + ;
+     "SourceType=DBF;SourceDB="+SYS(5)+SYS(2003) + ";" + ;
+     "Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE")
+
+to:
+
+  myconn.OPEN("DRIVER=Microsoft Visual FoxPro Driver;" + ;
+     "SourceType=DBF;SourceDB="+SYS(5)+SYS(2003) + ";" + ;
+     "Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE;" + ;
+     "OLE DB Services = -4")
+
+4. Save and run the program. Note that the error message that appears in the
+  "Symptoms" no longer appears.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+For additional information on ADO Resource Pooling, please see the following Web
+site:
+
+  http://msdn.microsoft.com/library/techart/pooling2.htm
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q245267 DOC: 'OLEDB_SERVICES = -2' Does Not Disable Autoenlistment
+
+  Q176056 INFO: ADO/ASP Scalability FAQ
+
+Additional query words: OLEDB
+
+======================================================================
+Keywords          : kbActiveX kbADO kbDatabase kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

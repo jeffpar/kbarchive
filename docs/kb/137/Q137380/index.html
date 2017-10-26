@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137380: How Windows 95 Setup Handles SUBST, JOIN, APPEND, and ASSIGN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137380: How Windows 95 Setup Handles SUBST, JOIN, APPEND, and ASSIGN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137380/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137380/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137380/","publisher":null,"image":null,"headline":"Q137380: How Windows 95 Setup Handles SUBST, JOIN, APPEND, and ASSIGN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137380-how-windows-95-setup-handles-subst-join-append-and-assign">Q137380: How Windows 95 Setup Handles SUBST, JOIN, APPEND, and ASSIGN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137380
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 95 Setup may not be able to finish successfully if any of the following
+commands are used in the Config.sys or Autoexec.bat file:
+
+  SUBST
+  JOIN
+  APPEND
+  ASSIGN
+
+Setup attempts to continue when these commands are used. However, it may be
+necessary to remove them to install Windows 95 successfully.
+
+MORE INFORMATION
+================
+
+Setup attempts to work with these MS-DOS-based terminate-and-stay-resident
+programs (TSRs) loaded. Although these TSRs may not cause problems, you may have
+to remove them.
+
+APPEND and ASSIGN
+-----------------
+
+Setup does not halt or remove these TSRs.
+
+These programs are not provided in MS-DOS versions later than 5.0. You must
+expand these programs from your MS-DOS 5.0 disks to regain their functionality,
+and then run Setver.exe to set them to MS-DOS version 5.0.
+
+The Append.exe file is also available on the Windows 95 CD-ROM in the
+&lt;drive&gt;:\other\oldmsdos directory.
+
+NOTE: These commands can be run only in MS-DOS mode.
+
+JOIN
+----
+
+If this TSR is detected, Setup halts and warns you that there are cross- linked
+files on the hard disk. Remove Join.exe from the Autoexec.bat file to finish
+Setup.
+
+Using the JOIN command may cause additional problems. For example, running an
+MS-DOS session while Windows Explorer is open may result in the following error
+message:
+
+  Cannot find command.com
+
+SUBST
+-----
+
+Setup does not halt or remove this TSR. Setup replaces any references to
+Subst.exe in the Autoexec.bat file with the location of the Windows 95 version
+of the file.
+
+Using Setver.exe
+----------------
+
+You can use the SETVER command to enable programs and device drivers that require
+an earlier version of MS-DOS to run in Windows 95.
+
+You must use the SETVER command to enable Assign.exe, Append.exe, and Join.exe to
+run in Windows 95.
+
+For example, to add Append.exe to the version table, use the following command:
+
+  setver c:\dos append.exe 5.00
+
+REFERENCES
+==========
+
+For information about using Setver.exe, type "Setver /?" at a command prompt, or
+see the following article in the Microsoft Knowledge Base:
+
+  Q96767 Using the SETVER Command
+
+For information about using the SUBST, JOIN, and APPEND commands, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q71667 SUBST, JOIN, and APPEND Commands with Windows
+
+Additional query words: substitute
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

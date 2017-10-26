@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97499: Ensure User Permissions Are Retained During Transfer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97499: Ensure User Permissions Are Retained During Transfer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97499/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97499/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97499/","publisher":null,"image":null,"headline":"Q97499: Ensure User Permissions Are Retained During Transfer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97499-ensure-user-permissions-are-retained-during-transfer">Q97499: Ensure User Permissions Are Retained During Transfer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97499
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+When you use PORTACC.EXE in LAN Manager 2.1 to transfer file permissions between
+servers, there are ways to ensure that you correctly transfer the permissions.
+
+In one reported instance that occurred while servers were being migrated, file
+access permissions disappeared after the server, which had been booted as a
+standalone, was promoted to membership in the domain. Reinstalling the driver
+and running PORTACC.EXE again generated no errors of permissions already
+existing and the problem was cleared.
+
+This problem is easily avoidable if you understand access control lists (ACLs),
+global user IDs (GUIDs), and how the information they contain is transferred by
+PORTACC.EXE and the BACKACC/RESTACC utilities used for this sort of
+administrative work.
+
+MORE INFORMATION
+================
+
+PORTACC and BACKACC/RESTACC call the NETAPIs such as NetAccessGetInfo and
+NetAccessSetInfo. FAT And HPFS386 file systems differ, however, in how they
+store the information associated with these APIs. To increase transfer speed in
+HPFS386 file systems, the API NetAccessSetInfo attaches the access control list
+(ACL) directly to the file; in FAT file systems, the ACL is stored in the
+NET.ACC, and LAN Manager has to open NET.ACC to get user file permissions.
+
+Unlike the ACL, the GUID is a unique representation based on the username but
+never assigned more than once. For example, if you add user SteveHi to the
+NET.ACC, and then delete it, and then re-add it, you get a different GUID each
+time.
+
+In the case cited above, the GUIDs on the running domain no longer matched the
+numbers stored on the standalone server, so the permissions were "lost" in that
+they were no longer considered current. They differed because GUIDs are changed
+for each issuance (even for the same username) so that they are always unique.
+
+To update ACLs and make sure all necessary user information is preserved after a
+server migration, make a backup from all partitions using the following syntax:
+
+  backacc &lt;partition&gt; /f:&lt;filename&gt; /s
+
+and then restore the backups using the command:
+
+  restacc &lt;partition&gt; /f:&lt;filename&gt; /s
+
+In the instance cited in the Summary, the server was started as a standalone, and
+PORTACC.EXE was used to port the ACLs to the partition. When the server was
+promoted to backup status, an examination showed that the new NET.ACC and one on
+a different backup domain controller did not match. The tape-installed 3SCSI.BID
+was used to run PORTACC again, and this time no errors were reported that the
+permissions already existed; the problem seemed to have been cleared.
+
+PORTACC.EXE probably "worked" the second time because it was run after the server
+was promoted to membership in the domain. The RESTACC utility stores the actual
+text of the name, not the GUID. So, when the ACLs were applied the second time,
+each user got the "correct" GUID.
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

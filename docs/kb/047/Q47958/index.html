@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47958: Patching malloc() to Reuse Memory within an Allocated Block | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47958: Patching malloc() to Reuse Memory within an Allocated Block" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47958/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47958/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47958/","publisher":null,"image":null,"headline":"Q47958: Patching malloc() to Reuse Memory within an Allocated Block","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47958-patching-malloc-to-reuse-memory-within-an-allocated-block">Q47958: Patching malloc() to Reuse Memory within an Allocated Block</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47958
+Product(s): See article
+Version(s): 5.00 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 16-JAN-1990
+
+The malloc() family of functions properly reuse the blocks of memory
+that they allocate from DOS. The size of a block that malloc()
+allocates is 8K bytes by default, but can be modified by assigning a
+different block size in bytes to the C run-time library variable
+"_amblksiz", as noted on Page 33 of the "Microsoft C 5.1 Optimizing
+Compiler Run-Time Library Reference."
+
+However, for small suballocations of "chunks" (author's terminology)
+within an 8K block, previously freed chunks will not be immediately
+reused and fragmentation within blocks can occur; this can cause DOS
+programs that make many small (e.g. 10-byte) allocations to
+prematurely run out of memory. This problem occurs because the "rover"
+pointer that points to the next chunk of memory to be allocated points
+to the memory after the last chunk allocated without being set to
+point to the beginning of chunks that were freed.
+
+Reducing the size of allocated blocks by declaring _amblksiz as above
+and assigning values under 8096 to it may help reduce fragmentation
+within blocks in some cases simply because there is less memory to
+lose to fragmentation per block and your allocations and frees are
+more likely to be on reusable block boundaries.
+
+A better alternative would be to allocate large blocks yourself, then
+perform your own memory management within them to prevent
+fragmentation within blocks.
+
+For those who purchase the C run-time library source code for C 5.10
+available through our Sales department at (800) 426-9400, you can
+force the rover pointer to point at the bottom of the block prior to a
+memory request as noted below, so that any adequately large freed
+chunks will be reused. This technique will result in executable speed
+degradation, but will more fully allocate the last bytes of memory.
+
+To change the behavior of the rover pointer to reallocate freed chunks
+of memory within a block, make the following change to line 83 of
+AMALLOC.ASM, the workhorse module called by malloc() functions:
+
+1. Delete or comment out line 83 with a semicolon (;), as follows:
+
+    ;   mov     si,[bx].roveroff; si = starting rover offset
+
+2. Replace the line above with the following two lines:
+
+        mov     si,[bx].bottom
+        mov     [bx].roveroff,si ;*** put rover at bottom each time
+
+3. Reassemble AMALLOC.ASM with MASM, as follows
+
+        masm /Mx /Dmem_L amalloc;
+
+   where the /Mx option preserves symbol name case sensitivity, and
+   /Dmem_L defines the constant to indicate large memory model for
+   pointers defined by macros in AMALLOC.ASM and other .ASM files used
+   for the C library. The constant "mem_L" is for large model, "mem_S"
+   for small, "mem_C" for compact, and "mem_M" is for medium model.
+
+4. Either link with the new AMALLOC.OBJ (and /NOE), or use lib to
+   replace the module in the appropriate memory model library, as
+   follows:
+
+        lib llibcer.lib -+amalloc;
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

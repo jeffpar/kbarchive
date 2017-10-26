@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178698: XADM: Calendar Reminders Not Functioning After Move Mailbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178698: XADM: Calendar Reminders Not Functioning After Move Mailbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178698/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178698/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178698/","publisher":null,"image":null,"headline":"Q178698: XADM: Calendar Reminders Not Functioning After Move Mailbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178698-xadm-calendar-reminders-not-functioning-after-move-mailbox">Q178698: XADM: Calendar Reminders Not Functioning After Move Mailbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178698
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 22-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+After you use the Move Mailbox command in the Microsoft Exchange Administrator
+program, the Reminders dialog box for scheduled appointments fails to display
+using Outlook 97 clients.
+
+CAUSE
+=====
+
+Outlook 97 introduced some new MAPI properties. These properties were not being
+correctly mapped to the older properties that actually contained the Reminder
+information after the mailbox was moved to the new server.
+
+
+WORKAROUND
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+To clean your reminders so they are displayed when they normally should be,
+follow these steps:
+
+1. Apply the latest service pack for Microsoft Exchange Server version 5.0 on an
+  Exchange Server 5.0 computer. For information on obtaining the service pack,
+  query on the following word in the Microsoft Knowledge Base (without the
+  spaces):
+
+  S E R V P A C K
+
+  NOTE: The fix that allows you to clean your reminders has been implemented
+  only in the Administrator program for Exchange Server 5.0. However, the
+  Exchange Server 5.0 Administrator program can be used to clean your reminders
+  on an Exchange Server 4.0 computer.
+
+
+
+2. Start the Registry Editor (Regedt32.exe).
+
+3. Locate the following key in the registry:
+
+     HKEY_CURRENT_USER\Software\Microsoft\Exchange\MSExchangeAdminCommon
+
+4. On the Edit menu, click Add Value, and then add the following registry
+  value:
+
+     Value name: CleanReminders
+     Value type: REG_DWORD
+     Value data: 1
+
+5. Quit the Registry Editor.
+
+6. Start the Administrator program. To do so, click Start, point to Programs,
+  point to Microsoft Exchange, and then click Microsoft Exchange Administrator.
+
+7. In the left pane, select the appropriate Recipients object. In the right
+  pane, select the desired mailboxes.
+
+  NOTE: The users should not be logged on to the server when you perform these
+  steps.
+
+8. On the Tools menu, click Clean Mailbox. Click OK, and then click OK again.
+
+9. When Clean Mailbox finishes, start Outlook and log on to the server using the
+  mailbox that was experiencing this problem. When you do so, the Reminders
+  folder is rebuilt and your reminders should be displayed.
+
+NOTE: When the CleanReminders registry value is set to 1, the Clean Mailbox
+command only cleans the Reminders folder for the selected mailboxes. The Clean
+Mailbox command does not delete any messages.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 4.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+To cause the Clean Mailbox command to return to its normal behavior, you must do
+one of the following:
+
+- Set the CleanReminders registry value to 0.
+
+  -OR-
+
+- Delete the CleanReminders registry value.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

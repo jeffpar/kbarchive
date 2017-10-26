@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141810: BUG: pcbValue Shows 1022 Even if Size of Available Data &gt; 1022 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141810: BUG: pcbValue Shows 1022 Even if Size of Available Data &gt; 1022" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141810/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141810/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141810/","publisher":null,"image":null,"headline":"Q141810: BUG: pcbValue Shows 1022 Even if Size of Available Data &gt; 1022","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141810-bug-pcbvalue-shows-1022-even-if-size-of-available-data--1022">Q141810: BUG: pcbValue Shows 1022 Even if Size of Available Data &gt; 1022</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141810
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG#: 2400 (QJET)
+
+SYMPTOMS
+========
+
+When fetching an OLE object from a Microsoft Access 2.0 database (*.MDB) using
+the 16-bit ODBC Access driver, SQLFetch always returns a pcbValue of 1022 bytes
+even though the actual size of the data is greater than 1022.
+
+WORKAROUND
+==========
+
+Microsoft recommends moving to the 32-bit ODBC Access driver, because this
+behavior is not seen in the 32-bit version.
+
+MORE INFORMATION
+================
+
+To reproduce this problem:
+
+Create a table (mytable) in Access 2.0 with two fields: Col1 text, Col2 OLE
+Object.
+Insert some text data into col1.
+Open Paintbrush. Scribble, cut and paste the picture into Col2 (actual size &gt;
+1022 bytes).
+
+Create a 16-bit datasource to this Access database.
+
+Then, from ODBC Test:
+
+Full connect to the Access database.
+
+  SQLExecdirect ( Select * from mytable)
+
+  SQLBindCol(icol=2, fCType=SQL_C_CHAR=1, cbValueMax=1023)
+
+  SQLFetch:
+     Return:   SQL_SUCCESS_WITH_INFO=1
+                  icol, fCType, cbValueMax, pcbValue, rgbValue
+                  2, SQL_C_CHAR=1, 1023, 1022, "151C2E00020...."
+
+NOTE: Even though the number of bytes of available data to return for the column
+is 40K, the pcbValue shows 1022. pcbValue returns the correct number of bytes if
+the cbValueMax is set to 1022 or less. This behavior is not seen in the 32-bit
+ODBC Access driver version 3.x.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in 16-bit Access ODBC driver
+version 2.00.2317. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00.2317 Access ODBC Driver
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

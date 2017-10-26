@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90708: WIN.INI Programs= Line, File Extensions, and Execution Order | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90708: WIN.INI Programs= Line, File Extensions, and Execution Order" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90708/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90708/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90708/","publisher":null,"image":null,"headline":"Q90708: WIN.INI Programs= Line, File Extensions, and Execution Order","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90708-winini-programs-line-file-extensions-and-execution-order">Q90708: WIN.INI Programs= Line, File Extensions, and Execution Order</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90708
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows looks at file extensions and filenames when searching for and running
+executable files specified on the command line accessed by choosing Run from the
+File. This is slightly different than the method used by MS- DOS, and can affect
+processing order.
+
+MORE INFORMATION
+================
+
+The MS-DOS command processor ignores filename extensions at first and looks in
+itself for a string matching the command to be processed. If it finds none, it
+looks in the current directory and then along the PATH for filenames matching
+the issued command and having, in this order, the .COM, .EXE, or .BAT extension.
+This is a search order only -- MS-DOS always executes .COM files before .EXE
+files, regardless of any extension you specify on the command line. If, for
+instance, it finds a MYPROG.COM and a MYPROG.EXE in the same place, MS-DOS
+always runs MYPROG.COM first. However, the processor runs MYPROG.EXE before
+MYPROG.COM if MYPROG.EXE is found first during the PATH search.
+
+Windows behaves differently, using the executable file extension defined in the
+Programs= line of WIN.INI. The typical listing order for executable extensions
+is COM, EXE, BAT, and PIF. If you choose Run from the File menu in File Manager
+or Program Manager, and enter the string MYPROG without an extension in the
+command line, Windows executes MYPROG.COM before MYPROG.EXE. If you specify the
+full name and extension in the command line, Windows uses the extension to
+determine which file to load. While this also is true of MS-DOS, Windows allows
+you to change the search order.
+
+If you run only Windows executable files and do not specify an extension, you may
+be able to boost system performance slightly by listing .EXE files before .COM
+files.
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide," version 3.0, pages 52-53
+
+WININI.TXT file included with Windows 3.0
+
+"Microsoft Windows User's Guide," version 3.1, page 134
+
+WININI.WRI file included with Windows 3.1
+
+Additional query words: 3.00 3.00a 3.10 3.11 executables
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

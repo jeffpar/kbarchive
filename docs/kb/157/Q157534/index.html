@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157534: XCLN: Memory Valet Utility to Correct &quot;Out of Memory&quot; Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157534: XCLN: Memory Valet Utility to Correct &quot;Out of Memory&quot; Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157534/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157534/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157534/","publisher":null,"image":null,"headline":"Q157534: XCLN: Memory Valet Utility to Correct &quot;Out of Memory&quot; Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157534-xcln-memory-valet-utility-to-correct-out-of-memory-errors">Q157534: XCLN: Memory Valet Utility to Correct "Out of Memory" Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157534
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 13-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Microsoft Exchange on 16-bit Windows platforms (Windows 3.x Windows
+for Workgroups 3.1x) you may receive unexplained "Out of Memory" and
+"Insufficient Memory" error messages. In some circumstances, a utility called
+"Memory Valet" can prevent these errors.
+
+This utility is available from Microsoft and should only be used after normal
+troubleshooting steps have failed. See the following Microsoft Knowledge Base
+articles for initial client troubleshooting:
+
+  Q151359 XCLN: Out of Memory Errors Starting Schedule+ After Exchange
+
+  Q150156 XCLN: Cannot Send from Word When Exchange Client Not Running
+
+  Q112676 Troubleshooting Insufficient Memory Errors
+
+MORE INFORMATION
+================
+
+The utility Memory Valet 2.0 is included in Application Note WG1137. This
+utility is available from Microsoft Product Support and can be mailed to
+customers who continue to have problems with out of memory errors after
+following the troubleshooting steps listed in the articles above.
+
+This application note is not available through electronic services.
+
+
+Memory Valet can help in situations in which there is not enough memory below
+640K in the Windows system virtual machine to create a task database (TDB). In
+such a situation, the following problems can occur:
+
+- When you try to run an application, you receive the message "Out of memory.
+  Close one or more applications and try again."
+
+- An application calls WinExec to launch a component of itself and then fails.
+
+- An OLE or dynamic data exchange (DDE) session fails to start the server
+  application.
+
+- When you try to run an application, you receive the message "Too many files
+  open, please close one or more files," and increasing file handles does not
+  correct the problem. (This is a rare occurrence and should only affect
+  applications that require more than 20 open file handles.)
+
+Memory Valet contains two components: the executable file (Memvalet.exe) and the
+Control Panel utility (Memval.cpl). Memval.cpl lets you configure Memory Valet
+and then displays the current state of the low-memory area. By using Memval.cpl,
+you can determine how much low-memory space is available, the size of the
+largest free block, and how many TDBs can fit in low memory given its current
+state.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

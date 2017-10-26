@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108812: BackColor Erases Existing Graphics on Form or Picture Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108812: BackColor Erases Existing Graphics on Form or Picture Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108812/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108812/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108812/","publisher":null,"image":null,"headline":"Q108812: BackColor Erases Existing Graphics on Form or Picture Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108812-backcolor-erases-existing-graphics-on-form-or-picture-control">Q108812: BackColor Erases Existing Graphics on Form or Picture Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108812
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.0,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, versions 2.0, 3.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Setting the BackColor property on forms or picture boxes at run time erases all
+previous printed graphics and output, including a persistent bitmap. This
+behavior is by design. Setting the ForeColor property does not affect the
+graphics or print output that are already drawn.
+
+Setting the BackColor property on other controls, such as list boxes, text boxes,
+or combo boxes, does not erase previously added items.
+
+MORE INFORMATION
+================
+
+NOTE: A persistent bitmap is a bitmap, accessed with the Image property, that
+stores output from graphics methods in memory. For more information, see the
+following items in the Visual Basic Help menu:
+
+- AutoRedraw property
+
+- persistent bitmap
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add a list box and a picture box to Form1.
+
+3. Double-click the form to open the code window. Add the following code to the
+  Form Load event:
+
+     Sub Form_Load ()
+        form1.Show 'In Load event, must show form before Print works
+
+        picture1.ForeColor = QBColor(1)
+        picture1.BackColor = QBColor(11)
+        picture1.Print "color1"
+        form1.ForeColor = QBColor(1)
+        form1.BackColor = QBColor(12)
+        form1.Print "color1"
+        list1.ForeColor = QBColor(1)
+        list1.BackColor = QBColor(11)
+        list1.AddItem "color1"
+
+        MsgBox "click to see next color"
+        picture1.ForeColor = QBColor(2)
+        picture1.BackColor = QBColor(10)  'This BackColor erases picture1
+        picture1.Print "color1"
+        form1.ForeColor = QBColor(2)
+        form1.BackColor = QBColor(13)  'This BackColor erases form1
+        form1.Print "color1"
+        list1.ForeColor = QBColor(2)
+        list1.BackColor = QBColor(10)  'This BackColor doesn't erase List1
+        list1.AddItem "color2"
+
+        MsgBox "click to see next color"
+        picture1.ForeColor = QBColor(4)
+        picture1.BackColor = QBColor(14)  'This BackColor erases picture1
+        picture1.Print "color1"
+        form1.ForeColor = QBColor(4)
+        form1.BackColor = QBColor(8)  'This BackColor erases form1
+        form1.Print "color1"
+        list1.ForeColor = QBColor(4)
+        list1.BackColor = QBColor(14)  'This BackColor doesn't erase List1
+        list1.AddItem "color3"
+
+     End Sub
+
+4. Start the program or press the F5 key. Click OK to see the next color. To end
+  the program, close the form.
+
+Here are the results:
+
+- Changing the Form1.BackColor property erases the text that you previously
+  printed on Form1.
+
+- Changing the Picture1.BackColor property erases the text that you previously
+  printed on Picture1.
+
+- Changing the List1.BackColor property does not erase the text that you
+  previously added to the List1 list box.
+
+All of this behavior is by design.
+
+Additional query words: 2.00 3.00 delete remove blank out
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300 kbVB200
+Version           : :2.0,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

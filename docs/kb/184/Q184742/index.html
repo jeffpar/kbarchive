@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184742: HOWTO: Use the Script Control Error Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184742: HOWTO: Use the Script Control Error Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184742/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184742/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184742/","publisher":null,"image":null,"headline":"Q184742: HOWTO: Use the Script Control Error Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184742-howto-use-the-script-control-error-object">Q184742: HOWTO: Use the Script Control Error Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184742
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbScript kbVBp kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic for Applications version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the Script control Error object properties and provides
+sample code that illustrates its use.
+
+MORE INFORMATION
+================
+
+The script control Error object provides rich information to the host
+application regarding script errors. The following properties are supported:
+
+  Property         Description
+  -----------------------------------------------------------------
+  Number           Error number.
+  Description      Error message.
+  Line             The line number the error occurred on (1 based).
+  Column           The column number the error occurred on (0 based).
+  Text*            The text of the line that caused the error.
+  Source**         What component caused the error.
+  HelpFile***      Help file name provided by the error source.
+  HelpContext***   Help context provided by the error source.
+
+* The Text property is blank for run-time errors, but contains data for
+compilation errors.
+
+** The Source property for VBScript is either Microsoft VBScript compilation
+error or Microsoft VBScript run-time error. If a different scripting language is
+used, the Source may be different.
+
+*** The HelpFile and HelpContext properties are blank except for user raised
+errors.
+
+IMPORTANT: Microsoft provides programming examples for illustration only, without
+warranty either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures.
+
+Step-by-Step Example
+--------------------
+
+1. In Visual Basic, create a new project (Form1 is created by default).
+
+2. Click Components on the Project menu, and then select the "Microsoft Script
+  Control 1.0" check box.
+
+3. Add the Script control (ScriptControl1), a text box (Text1), and a command
+  button (Command1) to Form1. Set the MultiLine property of the text box to
+  TRUE. For ease of use, change the size of Text1 so that it accommodates 5
+  lines with 60 character each.
+
+4. Add the following code to Form1:
+
+        Private Sub Command1_Click()
+          On Error Resume Next
+          With ScriptControl1
+            .Language = "VBScript"
+            .AllowUI = True
+            .AddCode Text1.Text
+            .Run "Test"
+          End With
+          If Err Then
+            MsgBox Err &amp; " " &amp; Error
+            ListErrors ScriptControl1
+          End If
+        End Sub
+
+        Private Sub ListErrors(S As ScriptControl)
+          With S.Error
+            Debug.Print "Number:", .Number
+            Debug.Print "Source:", .Source
+            Debug.Print "Desc:", .Description
+            Debug.Print "Line: " &amp; .Line, "Column: " &amp; .Column
+            Debug.Print "Text:", .Text
+            Debug.Print "Help File:", .HelpFile
+            Debug.Print "Help Context:", .HelpContext
+            Debug.Print
+          End With
+        End Sub
+
+5. Run Form1 and open the Debug window.
+
+6. Type the following script in the text box:
+
+        Sub Test
+          MsgBox == "Hello World"
+          Err.Raise 555, "Test", "Custom Error", "test.hlp", 5
+        End Sub
+
+7. Click the command button. As a result, the following error appears in the
+  Debug window (the actual output may vary depending on the version of the
+  script control you are using):
+
+     Number:       1002
+     Source:       Microsoft VBScript compilation error
+     Desc:         Syntax error
+     Line: 2       Column: 16
+     Text:         MsgBox == "Hello World"
+     Help File:
+
+     Help Context:  0
+
+8. Remove the == from the MsgBox line and click the command button again.
+
+9. The MsgBox appears and then error "555 Custom Error". The Debug Window
+  displays the following:
+
+     Number:       555
+     Source:       Test
+     Desc:         Custom Error
+     Line: 3       Column: 8
+     Text:
+     Help File:    test.hlp
+     Help Context: 5
+
+  NOTE: The column number may vary depending on whether you cut-and-paste the
+  code or type it in manually without all the leading spaces.
+
+REFERENCES
+==========
+
+Script control Help topic: Error object
+
+For information about obtaining the Script control, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q184739 : INFO: Where to Obtain the Script Control
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Malcolm
+Stewart, Microsoft Corporation
+
+
+Additional query words: kbScript kbCtrl kbVBA500 kbVBp400 kbVBp500 kbVBp600 kbVBp kbdsd 
+kbDSupport
+
+======================================================================
+Keywords          : kbScript kbVBp kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVBASearch kbZNotKeyword3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

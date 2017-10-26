@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201164: XADM: Knowledge Consistency Checker Returns Events 2024, 1124 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201164: XADM: Knowledge Consistency Checker Returns Events 2024, 1124" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201164/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201164/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201164/","publisher":null,"image":null,"headline":"Q201164: XADM: Knowledge Consistency Checker Returns Events 2024, 1124","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201164-xadm--knowledge-consistency-checker-returns-events-2024-1124">Q201164: XADM:  Knowledge Consistency Checker Returns Events 2024, 1124</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201164
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Knowledge Consistency Checker, one of the following pop-up
+error messages may be displayed:
+
+  Knowledge consistency has been successfully verified.
+
+  An internal error has occurred during directory replication. Stop and then
+  restart the directory service. Then try directory replication again.
+
+  Microsoft Exchange Administrator ID no: c1030b0d
+
+  -or-
+
+  Knowledge consistency has been successfully verified.
+
+  The Knowledge Consistency Checker could not connect to the local directory
+  server to start the check. Verify that the directory service is started.
+
+  Microsoft Exchange Administrator ID no: c1030b1f
+
+The following events may also be logged in the Windows NT Application Event log:
+
+  Event ID: 1124
+  Source: MSExchangeDS
+  Type: Error
+  Category: Knowledge Consistency
+  Text: The consistency checker encountered an
+  internal error and can't continue checking the
+  consistency of this directory. Stop and restart
+  this Microsoft Exchange Server computer.
+
+  Event ID: 2024
+  Source: MSExchangeAdmin
+  Type: Warning
+  Category: Replication Configuration
+  Text: An error was encountered by the knowledge
+  consistency checker on server '&lt;server name&gt;'.
+  &lt;&lt;0xc1030b0d - An internal error has occurred during
+  directory replication. Stop and then restart the
+  directory service. Then try directory replication again.&gt;&gt;
+
+CAUSE
+=====
+
+The following registry entries do not contain the correct Organization, Site, or
+Server Name, respectively:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeSA
+  \Parameters\Enterprise
+
+  NOTE: The above registry key is all one path; it has been wrapped for
+  readablilty.
+
+  -or-
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeSA
+  \Parameters\Site
+
+  NOTE: The above registry key is all one path; it has been wrapped for
+  readablilty.
+
+  -or-
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeSA
+  \Parameters\Server
+
+NOTE: The above registry key is all one path; it has been wrapped for
+readablilty.
+
+WORKAROUND
+==========
+
+To work around this behavior, change the registry entries to match the correct
+Organization, Site, and Server Names specified in the Microsoft Exchange
+Directory and restart the server. To verify the correct Directory Name for the
+Organization, Site, and Server, run the Microsoft Exchange Administrator program
+in Raw Mode and note the "Directory-Name" attribute in Raw Properties for each
+of the three objects.
+
+MORE INFORMATION
+================
+
+This behavior can occur if a server is reinstalled with an incorrect
+Organization, Site, or Server name, and only the following registry entry has
+been corrected rather than performing a reinstallation of the server:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMTA\Parameters\X500DN
+
+The System Attendant may still start, and this behavior may not be otherwise
+noticeable.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

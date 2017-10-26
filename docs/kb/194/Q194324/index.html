@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194324: Data not Compressed from SNA Server to Host | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194324: Data not Compressed from SNA Server to Host" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194324/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194324/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194324/","publisher":null,"image":null,"headline":"Q194324: Data not Compressed from SNA Server to Host","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194324-data-not-compressed-from-sna-server-to-host">Q194324: Data not Compressed from SNA Server to Host</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194324
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): kbbuglist kbfixlist
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Data sent to the host by SNA Server may not be compressed, even though the
+compression parameters for SNA Server have been configured. Data received from
+the host by SNA Server is compressed. An SNA node message trace shows the bind
+sent by SNA Server with the Length-Checked Compression Control Vector (0x66)
+included, but the bind response does not contain this vector. A VTAM trace taken
+simultaneously shows that the compression vector was included when the bind
+response was sent by VTAM.
+
+CAUSE
+=====
+
+The compression vector is used to define compression in extended binds. An
+extended bind is one that also includes a Fully Qualified PCID control vector
+(0x60). The bind being sent by SNA Server did not include a Fully Qualified PCID
+Vector, so the compression vector was being stripped out by VTAM.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in SNA Server versions 4.0 and 4.0
+Service Pack 1. This problem was corrected in the latest SNA Server version 4.0
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Sample bind request and response from a trace in which compression was
+negotiated successfully. Start of PCID (0x60) and Compression (0x66) vectors are
+indicated by ^^:
+
+   DLC   ----------------------------------------------- 13:17:45.0557
+   DLC   01020101-&gt;05160000 DLC DATA
+   DLC                      DAF:01 OAF:02 ODAI:on  Exp.
+   DLC                      BIND   RQD SC  FI BC EC DR1
+   DLC
+   DLC   ---- Header  at address 01304550, 1 elements ----
+   DLC   00000000 00002F00 01020000 0100A801     &lt;....../.......y.&gt;
+   DLC
+   DLC   ---- Element at address 01CF2C84, start 10, end 154 ----
+   DLC   6B800031 001307B0 B050B300 008B8B80     &lt;k..1.....P......&gt;
+   DLC   00060200 00000000 00001643 00000FE2     &lt;...........C...S&gt;
+   DLC   C7D7C8D3 F14BD3F1 F1F6F0F5 F0F03100     &lt;GPHL1KL11605001.&gt;
+   DLC   0902D7C1 F6F2E3D2 D5E40903 00000000     &lt;..PA62TKNU......&gt;
+   DLC   00000016 1004E2C7 D7C8D3F1 4BD3F1F1     &lt;......SGPHL1KL11&gt;
+   DLC   F6F0F5F0 F00A1300 A0634006 2B37394B     &lt;60500....c@.+79K&gt;
+   DLC   000FE2C7 D7C8D3F1 4BE6D5E6 C3C9F5F1     &lt;..SGPHL1KWNWCI51&gt;
+   DLC   C4601707 CE08030D 112D370E E2C7D7C8     &lt;D`.......-7.SGPH&gt;
+           ^^
+   DLC   D3F14BD5 C5E3C3D6 D4F16605 0581C022     &lt;L1KNETCOM1f..a."&gt;
+   DLC   22                    ^^                &lt;"               &gt;
+   DLC   ----------------------------------------------- 13:17:46.0639
+   DLC   05160000-&gt;01020101 DLC DATA
+   DLC                      DAF:02 OAF:01 ODAI:on  Exp.
+   DLC                      BIND   +RSP SC  FI BC EC DR1
+   DLC
+   DLC   ---- Header  at address 01304278, 1 elements ----
+   DLC   00000000 00002F00 02010000 01009501     &lt;....../.......n.&gt;
+   DLC
+   DLC   ---- Element at address 01CF459C, start 10, end 112 ----
+   DLC   EB800031 001307B0 B050B300 00868680     &lt;...1.....P...ff.&gt;
+   DLC   00060200 00000000 00000043 00000026     &lt;...........C...&amp;&gt;
+   DLC   000902D7 C1F6F2E3 D2D5E409 03000000     &lt;...PA62TKNU.....&gt;
+   DLC   00000000 161005E2 C7D7C8D3 F14BE6D5     &lt;.......SGPHL1KWN&gt;
+   DLC   E6C3C9F5 F1C40000 601707CE 08030D11     &lt;WCI51D..`.......&gt;
+                           ^^
+   DLC   2D370EE2 C7D7C8D3 F14BD5C5 E3C3D6D4     &lt;-7.SGPHL1KNETCOM&gt;
+   DLC   F1660404 828022                         &lt;1f..b."         &gt;
+           ^^
+
+Sample bind request &amp; response from a trace in which compression negotiation
+failed. Note that there is no PCID vector in the bind request, and no
+Compression vector in the bind response. Compression vector (0x66) indicated by
+^^:
+
+   DLC   ----------------------------------------------- 13:57:17.0613
+   DLC   01020101-&gt;05160000 DLC DATA
+   DLC                      DAF:02 OAF:02 ODAI:on  Exp.
+   DLC                      BIND   RQD SC  FI BC EC DR1
+   DLC
+   DLC   ---- Header  at address 0131437C, 1 elements ----
+   DLC   00000000 00002F00 02020000 0100A800     &lt;....../.......y.&gt;
+   DLC
+   DLC   ---- Element at address 01D04354, start 10, end 123 ----
+   DLC   6B800031 001307B0 B050B307 07878787     &lt;k..1.....P...ggg&gt;
+   DLC   07060200 00000000 00001643 00000DD6     &lt;...........C...O&gt;
+   DLC   C8E2E34B E3F0F3F9 F7C9F0F1 2F000902     &lt;HSTKT0397I01/...&gt;
+   DLC   C1D7D7C3 D4D6C4F3 0903F000 00000000     &lt;APPCMOD3..0.....&gt;
+   DLC   00030E04 D6C8E2E3 4BE3F0F3 F9F7C9F0     &lt;....OHSTKT0397I0&gt;
+   DLC   F10A1300 35678221 293A7E2F 000DD6C8     &lt;1...5gb!):~/..OH&gt;
+   DLC   E2E34BC4 C5E5D7C3 C9C3E266 050581C0     &lt;STKDEVPCICSf..a.&gt;
+   DLC   2222                    ^^ ^^^^^^^^     &lt;""              &gt;
+         ^^^^
+   DLC   ----------------------------------------------- 13:57:18.0294
+   DLC   05160000-&gt;01020101 DLC DATA
+   DLC                      DAF:02 OAF:02 ODAI:on  Exp.
+   DLC                      BIND   +RSP SC  FI BC EC DR1
+   DLC
+   DLC   ---- Header  at address 0131437C, 1 elements ----
+   DLC   00000000 00002F00 02020000 01009701     &lt;....../.......p.&gt;
+   DLC
+   DLC   ---- Element at address 01D04354, start 10, end 79 ----
+   DLC   EB800031 001307B0 B050B107 07878787     &lt;...1.....P...ggg&gt;
+   DLC   07060200 00000000 00000043 00000024     &lt;...........C...$&gt;
+   DLC   000902C1 D7D7C3D4 D6C4F309 03F00000     &lt;...APPCMOD3..0..&gt;
+   DLC   00000000 030E05D6 C8E2E34B C4C5E5D7     &lt;.......OHSTKDEVP&gt;
+   DLC   C3C9C3E2 0000                           &lt;CICS..          &gt;
+
+Compression works fine both to and from an AS/400, even though the PCID vector is
+not in the bind.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+Version           : WINDOWS:4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

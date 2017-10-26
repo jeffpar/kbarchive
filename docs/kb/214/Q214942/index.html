@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q214942: SMS: WQL Queries Fail When Using Datetime in the Format 19981201 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q214942: SMS: WQL Queries Fail When Using Datetime in the Format 19981201" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/214/Q214942/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/214/Q214942/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/214/Q214942/","publisher":null,"image":null,"headline":"Q214942: SMS: WQL Queries Fail When Using Datetime in the Format 19981201","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q214942-sms-wql-queries-fail-when-using-datetime-in-the-format-19981201">Q214942: SMS: WQL Queries Fail When Using Datetime in the Format 19981201</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q214942
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2,2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms120 kbsms120bug
+Last Modified: 24-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running a WQL query using datetime as a criteria in the format
+19981201000000.000000+000, the query fails with the error:
+
+  Generic Failure
+
+To view detailed error information, click the More Information button and look
+under Properties. The detailed error information for this problem is:
+
+  Query Failed. SQL Err &gt;&gt; #241 Sev 16: Syntax error converting datetime
+  from character string
+
+CAUSE
+=====
+
+WQL datetime format is not converted to Transact-SQL datetime format. Any WQL
+query against datetime fails. WQL requires the datepart keyword for this type of
+query.
+
+WORKAROUND
+==========
+
+A query using the standard WQL datetime format, such as below, would fail:
+
+  select * from sms_statusmessage where time="19981201000000.000000+000"
+
+Instead, use datepart to build a successful query:
+
+  select * from sms_statusmessage where datepart(mm, time) = 12 and datepart(dd, time) = 1 and datepart(yy, time) = 1998
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+Although using datepart produces the most consistent results, you can query
+using other datetime formats. Several example queries are listed below. Because
+SQL stores (and returns) milliseconds, queries that do not anticipate the
+milliseconds returned by SQL will produce unpredictable results.
+
+Examples of unsuccessful queries:
+
+  select * from sms_statusmessage where time="12/01/98"
+  select * from sms_statusmessage where time="12/01/98 00:00"
+
+Examples of similar queries that are successful:
+
+  select * from sms_statusmessage where time &gt;"12/01/98"
+  select * from sms_statusmessage where time &gt;"12/01/98 00:00"
+  select * from sms_statusmessage where time between "12/01/1998 0:00" and "12/2/1998 23:59"
+
+NOTE: The order of the datetime format is language dependent; the examples given
+above are based on US English.
+
+For additional information about the Systems Management Server Web-Based
+Enterprise Management Query Language see the Microsoft Systems Management Server
+Toolkit.
+
+Additional query words: prodsms wbem tsql t-sql tran-sql trans-sql
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

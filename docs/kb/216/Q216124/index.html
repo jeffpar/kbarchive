@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216124: BUG: Reinstalling App Fails To Replace Text File With Same Date | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216124: BUG: Reinstalling App Fails To Replace Text File With Same Date" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216124/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216124/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216124/","publisher":null,"image":null,"headline":"Q216124: BUG: Reinstalling App Fails To Replace Text File With Same Date","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216124-bug-reinstalling-app-fails-to-replace-text-file-with-same-date">Q216124: BUG: Reinstalling App Fails To Replace Text File With Same Date</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216124
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbVBp600bug kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install a Visual Basic 6.0 application that includes a text file (or any
+file that does not have a version number) in the distribution set, and reinstall
+the application without removing it first, the following warning message is
+displayed:
+
+  A file being copied is older than the file currently on your system. It is
+  recommended that you keep your existing file.
+
+CAUSE
+=====
+
+The Visual Basic 6.0 application setup program incorrectly assumes that the text
+file on the system is newer than the one in the distribution set, even though
+the files have the exact same date.
+
+RESOLUTION
+==========
+
+The warning message is caused by the following statement in the CopySection Sub
+in the basSetup1 module of the Setup Toolkit project (Setup1.vbp):
+
+  If sFile.varDate &lt;= FileDateTime(strDestDir &amp; strDestName) Then
+
+Because text files do not have version numbers, the dates are being compared. For
+the file to be installed, setup checks the date of that file in Setup.lst and
+sees if it is less than (&lt;) or equal to (=) the date of the destination file
+(that is being overwritten in this case). If this statement is TRUE, it warns
+the user that the file being copied is older than the file on the system. As can
+be seen, the equal sign (=) causes the problem. If we change the "&lt;=" to just
+"&lt;" as in the following code segment, the error message will not be shown:
+
+  If sFile.varDate &lt; FileDateTime(strDestDir &amp; strDestName) Then
+
+NOTE: You will need to recompile the Setup1.exe file after making the
+modification to the Setup Toolkit project (Setup1.vbp), and then you need to
+re-run the Project and Deployment Wizard (PDW) to recreate the application setup
+files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Select Make Project1.exe from the File menu to compile the project.
+
+3. Use Notepad to create a text file called test1.txt.
+
+4. Click the Start button, and then point to Programs. Select Microsoft Visual
+  Basic 6.0, and choose Package and Deployment Wizard from Microsoft Visual
+  Basic 6.0 Tools.
+
+5. Browse to Project1 and select Package to build the distribution set for the
+  project.
+
+6. In the "Included File" screen, click Add to activate the Add Files dialog.
+  Browse to test1.txt and add it to the set. Click Next for the following
+  screens to finish building the set.
+
+7. Install the distribution set onto a target computer twice, without removing
+  the application between installations. The above error message will be
+  displayed the second time the setup program is run.
+
+REFERENCES
+==========
+
+For more information, please search the MSDN Library included within Visual
+Studio 6.0 on the phrase "Setup Toolkit" for features of the wizard.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVBp600bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

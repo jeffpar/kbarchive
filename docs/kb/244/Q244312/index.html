@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244312: HOWTO: Add Keyboard Functionality to MDI form Scrollbars | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244312: HOWTO: Add Keyboard Functionality to MDI form Scrollbars" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244312/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244312/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244312/","publisher":null,"image":null,"headline":"Q244312: HOWTO: Add Keyboard Functionality to MDI form Scrollbars","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244312-howto-add-keyboard-functionality-to-mdi-form-scrollbars">Q244312: HOWTO: Add Keyboard Functionality to MDI form Scrollbars</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244312
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbCtrl kbHook kbKeyAccel kbScrollBar kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbWndwMsg
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An MDI form displays scrollbars when a portion of an MDI child form is moved out
+of the view of the client area of the MDI parent form. In Visual Basic these
+scrollbars support mouse clicks but not the keyboard navigation keys. This
+article shows how to add keyboard support to these scrollbars. The MDIForm can
+also be made to scroll to the bottom automatically when it loads so that hidden
+forms are visible. This functionality is added by sending messages to the
+MDIForm window.
+
+MORE INFORMATION
+================
+
+Two API calls are needed to achieve this functionality:
+
+- GetWindow to obtain the Window Handle of the MDI form's client window so that
+  it can be sent a message telling it to scroll.
+
+- SendMessage to actually send the message.
+
+Step-by-Step Example::
+
+1. Start a new Standard EXE project. Form1 is created by default. Set the
+  MDIChild property of Form1 to True.
+
+2. Add the following code to the General Declarations section of Form1:
+
+  Option Explicit
+
+  ' The child window in the client area generates the scrollbars, sends a
+  ' message to the MDI client to scroll to the bottom of the window, and
+  ' traps the key pressed.
+
+  Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
+     processKey KeyCode
+  End Sub
+
+  Private Sub Form_Load()
+     Move 2500, 2500
+  End Sub
+
+3. On the Project menu, click Add MDI Form to add an MDI form to the project.
+
+4. On the Project menu click Add Module to add a BAS module to the project.
+
+5. Add the following code to the General Declarations section of Module1:
+
+  Option Explicit
+
+  Declare Function SendMessage Lib "user32" Alias "SendMessageA" _
+        (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, _
+         lParam As Any) As Long
+
+  Declare Function GetWindow Lib "user32" (ByVal hwnd As Long, _
+         ByVal wCmd As Long) As Long
+
+  Public Const SB_BOTTOM = 7
+  Public Const SB_LEFT = 6
+  Public Const SB_LINEDOWN = 1
+  Public Const SB_LINELEFT = 0
+  Public Const SB_LINERIGHT = 1
+  Public Const SB_LINEUP = 0
+  Public Const SB_PAGEDOWN = 3
+  Public Const SB_PAGELEFT = 2
+  Public Const SB_PAGERIGHT = 3
+  Public Const SB_PAGEUP = 2
+  Public Const SB_RIGHT = 7
+  Public Const SB_THUMBPOSITION = 4
+  Public Const SB_THUMBTRACK = 5
+  Public Const SB_TOP = 6
+  Public Const SB_ENDSCROLL = 8
+
+  Public Const WM_HSCROLL = &amp;H114
+  Public Const WM_VSCROLL = &amp;H115
+
+  Public Const GW_CHILD = 5
+
+  Public Sub processKey(KeyCode As Integer)
+     Dim mdiclientwin As Long
+
+     Select Case KeyCode
+      Case vbKeyDown
+        mdiclientwin = GetWindow(MDIForm1.hwnd, GW_CHILD)
+        SendMessage mdiclientwin, WM_VSCROLL, SB_LINEDOWN, ByVal 0&amp;
+
+      Case vbKeyUp
+        mdiclientwin = GetWindow(MDIForm1.hwnd, GW_CHILD)
+        SendMessage mdiclientwin, WM_VSCROLL, SB_LINEUP, ByVal 0&amp;
+
+      Case vbKeyPageUp
+        mdiclientwin = GetWindow(MDIForm1.hwnd, GW_CHILD)
+        SendMessage mdiclientwin, WM_VSCROLL, SB_PAGEUP, ByVal 0&amp;
+
+      Case vbKeyPageDown
+        mdiclientwin = GetWindow(MDIForm1.hwnd, GW_CHILD)
+        SendMessage mdiclientwin, WM_VSCROLL, SB_PAGEDOWN, ByVal 0&amp;
+
+      Case vbKeyRight
+        mdiclientwin = GetWindow(MDIForm1.hwnd, GW_CHILD)
+        SendMessage mdiclientwin, WM_HSCROLL, SB_LINERIGHT, ByVal 0&amp;
+
+      Case vbKeyLeft
+        mdiclientwin = GetWindow(MDIForm1.hwnd, GW_CHILD)
+        SendMessage mdiclientwin, WM_HSCROLL, SB_LINELEFT, ByVal 0&amp;
+
+     End Select
+
+  End Sub
+
+6. Run the project. The MDIForm scrolls down to the end. The UP, DOWN, PAGEUP,
+  PAGEDOWN, LEFT and RIGHT keys are now functional.
+
+REFERENCES
+==========
+
+For additional information on accelerator keys and ScrollBars in MDI
+applications, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q192183 PRB: Accelerator Keys Fail to Work in MDI Child Forms
+
+Additional query words: hot key
+
+======================================================================
+Keywords          : kbAPI kbCtrl kbHook kbKeyAccel kbScrollBar kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbWndwMsg kbGrpDSVB kbDSupport kbAcceleratorKey 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244676: HOWTO: Map, Delete, Enumerate Network Drives w/Scripting Host | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244676: HOWTO: Map, Delete, Enumerate Network Drives w/Scripting Host" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244676/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244676/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244676/","publisher":null,"image":null,"headline":"Q244676: HOWTO: Map, Delete, Enumerate Network Drives w/Scripting Host","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244676-howto-map-delete-enumerate-network-drives-wscripting-host">Q244676: HOWTO: Map, Delete, Enumerate Network Drives w/Scripting Host</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244676
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbMiscTools kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbWSH kbGrpDSFox kbDSupport
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows Script Host is a language-independent scripting host for
+32-bit Windows operating system platforms. Windows Script Host is integrated
+into Microsoft Windows 98, Microsoft Windows 2000, and Microsoft Internet
+Information Server 4.0. It is included with Microsoft Windows NT 4 Option Pack
+and is also available for download at:
+
+http://msdn.microsoft.com/scripting.
+
+MORE INFORMATION
+================
+
+This program demonstrates how to map a network drive and then enumerate through
+the mapped drives. The program deletes a mapped drive if it exists. To run this
+example, copy the code below into a new program file, change the third #DEFINE
+to a valid network share on your network, and then run the program.
+
+  #DEFINE CRLF	       CHR(13)+CHR(10)
+  #DEFINE TAB	       CHR(9)
+  #DEFINE lcNetworkShare   '\\Servr\Share'
+
+  ON ERROR DO errorhandler WITH ERROR(),LINENO(),MESSAGE()
+  LOCAL  colDrives, strMsg
+  PRIVATE strDrive,strShare,WSHNetwork
+  WSHNetwork = CREATEOBJECT("WScript.Network")
+  colDrives = WSHNetwork.EnumNetworkDrives
+  strMsg = ''
+
+  IF colDrives.COUNT &gt; 0
+      FOR i = 0 TO colDrives.COUNT - 1 STEP 2
+  *!* Windows 2000 adds "Network Places" to list
+          IF !EMPTY(colDrives.ITEM[i])  &amp;&amp; drive letter is mapped
+              strMsg = strMsg + CRLF + colDrives.ITEM[i] + TAB + colDrives.ITEM[i + 1]
+          ENDIF
+      ENDFOR
+      =MESSAGEBOX(strMsg)
+  ENDIF
+
+  strDrive = 'Z:'
+  strShare = lcNetworkShare
+  *!*	Note:  If drive letter is already mapped, or cannot find the path, it will throw first error
+  WSHNetwork.MapNetworkDrive( strDrive, strShare)
+  *!*  There are 3 other parameters that are Optional- bUpdateProfile,strUser,strPassword
+  *!*  bUpdateProfile-Update the user profile
+  *!*  strUser and strPassword-If you need credentials of another user for the share, specify strUser and StrPassword
+
+  PROCEDURE errorhandler
+      LPARAMETERS nError, nLine, cmessage
+      IF nError=1429  &amp;&amp;error mapping drive?
+          DO CASE
+              CASE "network path was not found" $ cmessage  &amp;&amp;common error so handle it if you want
+                  MESSAGEBOX( "Network path not found" )
+              CASE "local device name is already in use" $ cmessage  &amp;&amp;common error so handle it if you want
+                  MESSAGEBOX( "Local device name is already in use - I am going to delete it!" )
+                  lforce = .T.  &amp;&amp; force removal even if resource is in use
+                  lupdateprofile = .T.  &amp;&amp; Update the profile
+                  WSHNetwork.RemoveNetworkDrive(strDrive,lforce,lupdateprofile)
+              OTHERWISE
+                  MESSAGEBOX(MESSAGE())
+          ENDCASE
+      ENDIF
+
+REFERENCES
+==========
+
+For the latest information on the Windows Script Host, see the following page on
+the Microsoft Technical Support site:
+
+http://msdn.microsoft.com/scripting
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMiscTools kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbWSH kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

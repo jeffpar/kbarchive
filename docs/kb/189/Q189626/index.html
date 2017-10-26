@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189626: HOWTO: Use the Winsock Control Through a Serial Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189626: HOWTO: Use the Winsock Control Through a Serial Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189626/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189626/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189626/","publisher":null,"image":null,"headline":"Q189626: HOWTO: Use the Winsock Control Through a Serial Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189626-howto-use-the-winsock-control-through-a-serial-connection">Q189626: HOWTO: Use the Winsock Control Through a Serial Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189626
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0 SP3
+Operating System(s): 
+Keyword(s): kbnetwork kbAPI _IK12469 kbSDKPlatform kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbWinso
+Last Modified: 16-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0, used with:
+   - the operating system: Microsoft Windows NT 4.0 SP3 
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To use the Windows CE Toolkit for Visual Basic 6.0 (VBCE) Winsock control in a
+VBCE application using a serial connection with a desktop machine, the Remote
+Access Server on the desktop must be configured to allow remote TCP/IP clients
+to access the entire network.
+
+MORE INFORMATION
+================
+
+When the handheld device is connected via a serial connection to a host desktop
+machine, the desktop machine assigns a pre-defined TCP/IP address to the
+handheld device from a pool of static addresses. Additionally, by default, the
+desktop's TCP/IP clients are only given access to the local machine, not the
+entire network. This means that when a VBCE Winsock application tries to get a
+RemoteHostIP address from a pre-defined remote host, it is unable to do so
+because the handheld device's LocalIP address is known only to the host desktop
+machine and not to the network.
+
+Without the right Remote Access Server configuration settings, the error 10050
+"Network Subsystem Failed" occurs when the VBCE Winsock application tries to
+connect to a remote host.
+
+The following steps describe how to configure the desktop machine to allow
+dynamic assignment of IP addresses and access to remote hosts that will allow
+the handheld device to connect to a remote host on the network. Note that this
+will require a reboot of the machine when completed.
+
+Step-by-Step Example
+--------------------
+
+1. From the Control Panel, click Network.
+
+2. In the Network dialog box, click the Services tab.
+
+3. Click Remote Access Server, and click Properties.
+
+4. Select the COM port that your device is connected to (presumably, COM1), and
+  click Network.
+
+5. In Server Settings, make sure that the TCP/IP check box is selected and click
+  Configure.
+
+6. In Allow remote TCP/IP clients to access:, make sure that Entire network is
+  selected.
+
+7. Ensure that "Use DHCP to assign remote TCP/IP client addresses" is selected.
+
+8. Click OK to dismiss the RAS Server TCP/IP Configuration dialog box.
+
+9. Click OK to dismiss the Network Configuration dialog box.
+
+10. Click Continue in the Remote Access Setup dialog box.
+
+11. Click Close to dismiss the Network utility. The computer will restart.
+
+Additional query words: VBCE WCE wince vbce6
+
+======================================================================
+Keywords          : kbnetwork kbAPI _IK12469 kbSDKPlatform kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbWinsock kbGrpDSVB kbGrpDSNet 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch
+Version           : :4.0 SP3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

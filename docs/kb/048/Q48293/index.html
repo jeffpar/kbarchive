@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q48293: QuickC Message: &quot;Cannot Edit Binary File&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q48293: QuickC Message: &quot;Cannot Edit Binary File&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/048/Q48293/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/048/Q48293/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/048/Q48293/","publisher":null,"image":null,"headline":"Q48293: QuickC Message: &quot;Cannot Edit Binary File&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q48293-quickc-message-cannot-edit-binary-file">Q48293: QuickC Message: "Cannot Edit Binary File"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q48293
+Product(s): See article
+Version(s): 1.00 1.01 2.00 2.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 10-OCT-1989
+
+Question:
+
+When I compile my program, the compiler gives me an error message that
+says "Cannot edit binary files" or "Cannot load binary file." My
+source file loads correctly, so why do I get this error message when I
+compile it?
+
+Response:
+
+These error messages indicate that either one of the include files is
+bad, or you have a bad file on the program list. To correct this
+error, you must identify the bad file and replace it.
+
+If You Are Using QuickC Version 1.00 or 1.01
+--------------------------------------------
+
+1. Locate the bad file. After you press ENTER at the error message,
+   QuickC will do one of the following two things:
+
+   a. Return you to the source window and report "no errors." This
+      indicates that the bad file is one of the include files. To
+      determine which include file is bad, remove them from your
+      source file, one at a time, until the error goes away.
+
+   b. Continue to compile and link the program, then return to the
+      source window reporting "error L1101: invalid object module"
+      This indicates that the bad file is one of the files in the
+      program list. To determine which file is bad, remove the files
+      from the program list, one at a time, until the error goes away.
+
+2. If the file was originally from one of the distribution disks,
+   replace it with a fresh copy from your backup copy of the
+   distribution disk.
+
+If You Are Using QuickC Version 2.00 or 2.01
+--------------------------------------------
+
+1. Locate the bad file. After you press ENTER at the error message,
+   QuickC will do one of the following two things:
+
+   a. Return you to the source window and display "error C2059: syntax
+      error 'int constant'." This indicates that the bad file is one
+      of the include files. The error message will report the name of
+      the bad file.
+
+   b. Return you to the source window and display "error C2018:
+      unknown character '0x...'." This indicates that the bad file is
+      one of the files on the program list. The error message will
+      report the name of the bad file.
+
+2. If the file is originally from one of the distribution disks,
+   replace it with a fresh copy from your backup copy of the
+   distribution disks.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247618: XCON: No Mail Flow from Exchange to MSMail, Events 2556 and 2369 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247618: XCON: No Mail Flow from Exchange to MSMail, Events 2556 and 2369" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247618/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247618/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247618/","publisher":null,"image":null,"headline":"Q247618: XCON: No Mail Flow from Exchange to MSMail, Events 2556 and 2369","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247618-xcon-no-mail-flow-from-exchange-to-msmail-events-2556-and-2369">Q247618: XCON: No Mail Flow from Exchange to MSMail, Events 2556 and 2369</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247618
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Exchange Server 4.0 or 5.0, when you check the queue for messages
+that are to go out to Microsoft Mail for PC Networks, you may discover that the
+messages are not being delivered. Also, you cannot delete the oldest message.
+Event Viewer may register the following events in the application log:
+
+  Event ID 2556: The thread in MS Mail Connector that delivers to MS Mail has
+  detected an error in the MS Exchange MTA.
+
+  Event ID 2369: MS Mail Connector Interchange has failed to bind the Exchange
+  Message Transport. Check to see if Exchange Message Transport is running.
+
+CAUSE
+=====
+
+This behavior can occur when a corrupted message is preventing mail flow.
+
+RESOLUTION
+==========
+
+To resolve this behavior, find the oldest message, stop the MTA service, and
+then run the Mtacheck utility. Follow these steps:
+
+1. Find the oldest message in the queue, and note the date and time.
+
+2. Stop the Microsoft Exchange Message Transfer Agent (MTA) service.
+
+3. Make a backup copy of the Mtadata folder so you can restore it if the wrong
+  file is removed.
+
+4. In the Mtadata folder, find the .dat file that has the time and date stamp
+  closest to that of the oldest message in the queue, and then move it out of
+  the folder.
+
+5. Run the Mtacheck utility.
+
+6. Restart all Microsoft Exchange Server services that were running previously,
+  and then check the queue.
+
+7. Verify that the oldest message is not in the queue and that messages are
+  being transferred normally.
+
+MORE INFORMATION
+================
+
+For additional information about using Mtacheck, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q148284 XCON: When and How to Use the Mtacheck Utility
+
+Additional query words: PO connector MTA backlog
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

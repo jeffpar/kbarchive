@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123109: Macintosh Clients Not Able to Use Downloaded Fonts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123109: Macintosh Clients Not Able to Use Downloaded Fonts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123109/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123109/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123109/","publisher":null,"image":null,"headline":"Q123109: Macintosh Clients Not Able to Use Downloaded Fonts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123109-macintosh-clients-not-able-to-use-downloaded-fonts">Q123109: Macintosh Clients Not Able to Use Downloaded Fonts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123109
+Product(s): Microsoft Windows NT
+Version(s): 3.50
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+3.50
+
+WINDOWS
+
+kbprint
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Macintosh clients are not able to use downloaded fonts on a PostScript printer
+when printing through a Windows NT Server.
+
+CAUSE
+=====
+
+The PostScript driver on Macintosh queries the printer to discover what fonts
+are available on the printer. Windows and Windows NT do not query the printer
+for fonts. Windows and Windows NT use a file called a PostScript Printer
+Description (PPD) file to determine the capabilities of the printer. This file
+includes information such as resolution, number of trays and the types of fonts.
+When the Macintosh client sends the query to the print queue of a Windows NT
+Server, the Windows NT Server only reports back the fonts listed in the PPD file
+installed on the server.
+
+RESOLUTION
+==========
+
+In order for Windows NT Server to report downloaded printer fonts for Macintosh
+client computers, you need to modify the PPD file. The PPD files are found in
+several locations depending on the version of Windows NT and the type of
+computer (that is, x86, Alpha or MIPS).
+
+For Windows NT version 3.1, the location of the PPD file is at the following:
+
+  \WINNT\SYSTEM32\SPOOL\DRIVERS\W32X86\&lt;PPD filename&gt;.PPD (For
+  Intel-based computers)
+
+For Windows NT version 3.5, the location of the PPD file is at the following:
+
+  \WINNT\SYSTEM32\SPOOL\DRIVERS\W32X86\1\&lt;PPD filename&gt;.PPD (For
+  Intel-based computers)
+
+NOTE: To determine which PPD file is being used, search for the printer driver
+name in PRINTER.INF using a text editor such as Notepad. The file, PRINTER.INF,
+is located in the %SYSTEMROOT%\SYSTEM32 subdirectory. Only one PPD per printer
+driver is available. If a particular PPD driver is modified to include the
+additional fonts, all printer drivers using the PPD file has access to these
+fonts.
+
+MORE INFORMATION
+================
+
+When you modify the PPD file to specify additional fonts, modify only the
+section under the following heading and use the format specified for each font:
+
+*% Font Information =============================
+
+* Font [fontname: coding] "(version)"
+
+where: fontname = the PostScript language name of the font
+
+  coding = the type of coding for the font (Standard, Special and ISOLatin1 are
+  typical values for coding)
+  version = the version number of the font.
+
+As an example, the following lists the default Times family fonts found in an
+Apple LaserWriter II NTX:
+
+*Font Times-Bold: Standard "(001.001)"
+*Font Times-BoldItalic: Standard "(001.001)"
+*Font Times-Italic: Standard "(001.001)"
+*Font Times-Roman: Standard "(001.001)"
+
+For information about font names, codings and version numbers of your fonts,
+refer to your font manual(s).
+
+The third-party products discussed here are manufactured by Apple Computer, Inc.,
+a vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+Additional query words: prodnt 3.10
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNT310Search
+Version           : 3.50
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

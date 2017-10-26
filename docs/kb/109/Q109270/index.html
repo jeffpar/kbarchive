@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109270: PRB: CK1024 Error May Be Caused by Modules in Library | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109270: PRB: CK1024 Error May Be Caused by Modules in Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109270/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109270/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109270/","publisher":null,"image":null,"headline":"Q109270: PRB: CK1024 Error May Be Caused by Modules in Library","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109270-prb-ck1024-error-may-be-caused-by-modules-in-library">Q109270: PRB: CK1024 Error May Be Caused by Modules in Library</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109270
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:5.5,5.6; winnt:1.0,2.5,2.55
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft LINK for MS-DOS, versions 5.5, 5.6 
+- Microsoft LINK for Windows NT, versions 1.0, 2.5, 2.55 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a project, the following error occurs during the link stage:
+
+  CVPACK Fatal Error CK1024
+  &lt;modulename&gt; cannot use program database &lt;pdbfile&gt; : signatures do
+  not match
+
+  -or-
+
+  LINK: error LNK1202: "&lt;path&gt;\vc20.pdb" is missing debugging information
+  for referencing module.
+
+RESOLUTION
+==========
+
+The online help states the following:
+
+  The .OBJ file modulename uses the .PDB file pdbfile, but the internal
+  signature in pdbfile does not match the internal signature in modulename.
+  Delete modulename, recompile, and relink. If a makefile is used, check the
+  makefile dependencies.
+
+The error can occur when a library contains debug information. When a library is
+generated and built with debug information using the /Zi compiler option, the
+debug information contained in the library references a .PDB file (by default
+MSVC.PDB) on the computer where the library is built. A project that uses the
+library on another computer has its own .PDB file. During the linking phase when
+modules from the library are linked into the application, the linker checks to
+make sure that the PDB file it finds is the same one that was used when the
+library was built. Because the PDB file for the project is not the same one used
+when building the library, the error occurs.
+
+To resolve the problem, re-build the library using the /Z7 compiler option. This
+will place all debugging information for the library modules into the modules
+themselves. A .PDB file will not be referenced.
+
+For additional information on the CK1024 error, please see the following
+article(s) in the Microsoft Knowledge Base:
+
+  Q109269 PRB: Cause of Error CK1024
+
+Additional query words: 1.00 5.50 5.60
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbZNotKeyword3 kbLINKSearch kbLINK550DOS kbLINK560DOS kbLINK100NT kbLINK250NT kbLINK255NT
+Version           : MS-DOS:5.5,5.6; winnt:1.0,2.5,2.55
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

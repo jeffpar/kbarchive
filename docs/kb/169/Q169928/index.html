@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169928: HOWTO: Open a SourceSafe Database with OLE Automation in C++ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169928: HOWTO: Open a SourceSafe Database with OLE Automation in C++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169928/","publisher":null,"image":null,"headline":"Q169928: HOWTO: Open a SourceSafe Database with OLE Automation in C++","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169928-howto-open-a-sourcesafe-database-with-ole-automation-in-c">Q169928: HOWTO: Open a SourceSafe Database with OLE Automation in C++</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169928
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): _IK kbSSafe500 kbSSafe600
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains sample C++ code along with an explanation of how to get a
+pointer to a SourceSafe database object and execute the Open method to start a
+session with a SourceSafe database.
+
+MORE INFORMATION
+================
+
+Visual SourceSafe must be registered before you can use its OLE Automation
+Model. The following CLSID should be found in HKEY_CLASSES_ROOT/CLSID:
+{783CD4E4-9D54-11CF-B8EE-00608CC9A71F}. Registration occurs by default when you
+install the SourceSafe Client.
+
+To work with the objects in the SourceSafe OLE Model, first you must have access
+to a VSSDatabase object, and call its Open method.
+
+1. Use the CLSIDFromProgID function to obtain the CLSID from the registry as
+  shown in the example below.
+
+2. Call CoGetClassObject with the CLSID obtained in Step 1 asking for a pointer
+  to the IClassFactory Interface.
+
+3. Use the CreateInstance Method from the IClassFactory interface to obtain a
+  pointer to an IVSSDatabase object.
+
+4. Call the open method of the IVSSDatabase object passing in the path to the
+  srcsafe.ini, a valid User Name and password as BSTRs.
+
+NOTE: You can use the SysAllocString function to convert an OLECHAR* to a BSTR.
+
+Use the MultiByteToWide function to convert an LPSTR to OLECHAR* as shown in the
+following code fragment:
+
+     if((x=MultiByteToWideChar(CP_ACP,0,path,-1,svalue,0)) != 1)
+     {
+
+       svalue = (OLECHAR*)malloc( x*sizeof(wchar_t) );
+       if(MultiByteToWideChar(CP_ACP, 0, path, -1, svalue, x ) == 0)
+         MessageBox( NULL, "Error in Conversion", "Multibytetowide", MB_OK );
+
+     }
+     else
+
+       svalue = L"";
+
+MultiByteToWide counts the characters and determines the size of the buffer
+needed to hold the BSTR. The appropriate size buffer is then allocated and the
+conversion is done. In the example above svalue is an OLECHAR*, and path is an
+LPSTR.
+
+Sample Code
+-----------
+
+The following sample code demonstrates how to open a SourceSafe database as
+described above:
+
+     // Be sure to link with the following libraries:
+     // user32.lib uuid.lib oleaut32.lib ole32.lib
+     #define INITGUID
+     #include &lt;windows.h&gt;
+     #include &lt;ocidl.h&gt;
+     #include "ssauto.h"
+
+     int main () {
+       CLSID clsid;
+       IClassFactory *pClf;
+       IVSSDatabase *pVdb;
+       BSTR bstrPath = SysAllocString(L"c:\\VSSclient\\srcsafe.ini");
+       BSTR bstrUName = SysAllocString(L"guest");
+       BSTR bstrUPass = SysAllocString(L"");
+
+       CoInitialize(0);
+       if(S_OK == CLSIDFromProgID(L"SourceSafe", &amp;clsid ))
+       {
+         if(S_OK == CoGetClassObject( clsid, CLSCTX_ALL, NULL,
+           IID_IClassFactory, (void**)&amp;pClf ))
+         {
+           if(S_OK == pClf-&gt;CreateInstance( NULL, IID_IVSSDatabase,
+             (void **) &amp;pVdb ))
+           {
+             if(S_OK == pVdb-&gt;Open(bstrPath, bstrUName, bstrUPass))
+             {
+               //Database Successfully Opened!
+               //Add code here to use the open database.
+             }
+             pVdb-&gt;Release();
+           }
+           pClf-&gt;Release();
+         }
+       }
+       CoUninitialize();
+
+       SysFreeString(bstrPath);
+       SysFreeString(bstrUName);
+       SysFreeString(bstrUPass);
+       return 0;
+
+     }
+
+REFERENCES
+==========
+
+MSDN Library: SysAllocString; SysFreeString; CLSIDFromProgID; IClassFactory;
+CoGetClassObject; Visual SourceSafe OLE Automation
+
+The header file ssauto.h can be downloaded from the following Web site:
+
+  http://www.msdn.microsoft.com/SSAFE
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

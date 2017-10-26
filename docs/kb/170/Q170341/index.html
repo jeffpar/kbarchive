@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170341: FIX: LoadPicture Displays 16 x 16 Icons as 32 x 32 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170341: FIX: LoadPicture Displays 16 x 16 Icons as 32 x 32" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170341/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170341/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170341/","publisher":null,"image":null,"headline":"Q170341: FIX: LoadPicture Displays 16 x 16 Icons as 32 x 32","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170341-fix-loadpicture-displays-16-x-16-icons-as-32-x-32">Q170341: FIX: LoadPicture Displays 16 x 16 Icons as 32 x 32</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170341
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 4.0, 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the LoadPicture Function to display a 16 x 16 icon in an Image
+control, or any other control that uses the LoadPicture function to store images
+into the Picture object, the icon will display at 32 x 32.
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following methods.
+
+- Use a 16 x 16 bitmap instead of an icon.
+
+-or-
+
+- Use an Image Control and set the Height and Width to be the same as the
+  icons. For example:
+
+        Image1.Picture = LoadPicture(&lt;path to your icon&gt;)
+        Image1.Stretch = True 'Needed so the image does not get clipped
+        'The next two lines assume that the form's ScaleMode is Twips
+        'It changes the Image control to be 16 x 16 Pixels
+        Image1.Width = (Screen.TwipsPerPixelX * 16)
+        Image1.Height = (Screen.TwipsPerPixelY * 16)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+LoadPicture always loads a 32 x 32 icon. If the icon file being loaded contains
+a single 16 x 16 image, LoadPicture stretches it to 32 x 32 before storing it in
+the Picture object of a control.
+
+Steps to Reproduce Behavior
+---------------------------
+
+The steps below illustrate an example that displays a 16 x 16 icon in an Image
+control.
+
+NOTE: You can use IMAGEDIT.EXE that ships on the Visual Basic 5.0 CD-ROM to
+create icons. This tool is located in the Tools\Imagedit directory on the Visual
+Basic 5.0 CD-ROM.
+
+1. Create a new project. Form1 is created by default.
+
+2. Place an Image control on Form1.
+
+3. Add the following code to Form1:
+
+        Private Sub Form_Load()
+            Image1.Picture = LoadPicture(&lt;Path to your 16 x 16 icon&gt;)
+        End Sub
+
+4. Run the form by choosing Start from the Run menu. Note that the icon is
+  displayed as a 32 x 32 icon.
+
+REFERENCES
+==========
+
+"HardCore Visual Basic", Microsoft Press, pg. 535
+
+Additional query words: kbVBp500bug kbVBp400bug kbVBp600fix kbVBp kbdsd kbDSupport kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB400
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

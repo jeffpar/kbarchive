@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161020: Implementing Windows 95 Updates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161020: Implementing Windows 95 Updates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161020/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161020/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161020/","publisher":null,"image":null,"headline":"Q161020: Implementing Windows 95 Updates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161020-implementing-windows-95-updates">Q161020: Implementing Windows 95 Updates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q161020</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">95.</span><span class="n">x</span> <span class="n">Retail</span> <span class="n">Product</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">95</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">osr2</span> <span class="n">win95</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">31</span><span class="p">-</span><span class="n">OCT</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">95</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">OEM</span> <span class="n">Service</span> <span class="n">Release</span><span class="p">,</span> <span class="n">versions</span> <span class="m">1.0</span><span class="p">,</span> <span class="m">2.0</span><span class="p">,</span> <span class="m">2.1</span><span class="p">,</span> <span class="m">2.5</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">Microsoft</span> <span class="n">stands</span> <span class="n">behind</span> <span class="n">its</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">product</span><span class="p">,</span> <span class="k">and</span> <span class="n">develops</span> <span class="n">updates</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="m">95</span> <span class="k">as</span> <span class="n">needed</span> <span class="k">to</span> <span class="n">resolve</span> <span class="n">critical</span> <span class="n">customer</span> <span class="n">situations</span><span class="p">.</span> <span class="n">This</span> <span class="n">article</span> <span class="n">provides</span>
+<span class="n">general</span> <span class="n">information</span> <span class="n">about</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">updates</span><span class="p">.</span> <span class="n">Topics</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="k">include</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Update</span> <span class="k">Version</span> <span class="n">Information</span>
+
+<span class="p">-</span> <span class="n">Identifying</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Update</span> <span class="n">Information</span> <span class="n">Tool</span> <span class="p">(</span><span class="n">Qfecheck</span><span class="p">.</span><span class="n">exe</span><span class="p">)</span>
+
+<span class="p">-</span> <span class="n">Installing</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Single</span> <span class="n">Computer</span>
+
+<span class="p">-</span> <span class="n">Uninstalling</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Single</span> <span class="n">Computer</span>
+
+<span class="p">-</span> <span class="n">Installing</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span> <span class="n">Using</span> <span class="n">Server</span><span class="p">-</span><span class="n">Based</span> <span class="n">Setup</span>
+
+<span class="p">-</span> <span class="n">Obtaining</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span>
+
+<span class="p">-</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="n">Query</span> <span class="n">Tips</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Windows</span> <span class="m">95</span> <span class="n">Update</span> <span class="k">Version</span> <span class="n">Information</span>
+<span class="p">-------------------------------------</span>
+
+<span class="n">The</span> <span class="k">version</span> <span class="n">numbers</span> <span class="k">of</span> <span class="n">the</span> <span class="n">original</span> <span class="n">retail</span> <span class="k">and</span> <span class="n">OEM</span> <span class="n">release</span> <span class="k">of</span> <span class="n">Windows</span> <span class="m">95</span> <span class="k">and</span> <span class="n">the</span>
+<span class="n">OEM</span> <span class="n">Service</span> <span class="n">Releases</span> <span class="n">are</span> <span class="n">listed</span> <span class="n">below</span><span class="p">.</span> <span class="k">In</span> <span class="n">general</span><span class="p">,</span> <span class="n">files</span> <span class="n">included</span> <span class="k">with</span> <span class="n">the</span>
+<span class="n">indicated</span> <span class="n">release</span> <span class="k">of</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">have</span> <span class="n">the</span> <span class="n">indicated</span> <span class="k">version</span> <span class="n">stamp</span><span class="p">.</span>
+
+  <span class="n">Release</span>                   <span class="k">Version</span>          <span class="n">File</span> <span class="n">dates</span>
+  <span class="p">----------------------------------------------------------</span>
+  <span class="n">Windows</span> <span class="m">95</span> <span class="n">retail</span><span class="p">,</span> <span class="n">OEM</span>    <span class="m">4.00.950</span>         <span class="m">7</span><span class="p">/</span><span class="m">11</span><span class="p">/</span><span class="m">95</span>
+  <span class="n">Windows</span> <span class="m">95</span> <span class="n">retail</span> <span class="n">SP1</span>     <span class="m">4.00.950</span>  <span class="m">0</span><span class="n">A</span>     <span class="m">7</span><span class="p">/</span><span class="m">11</span><span class="p">/</span><span class="m">95</span>
+  <span class="n">OEM</span> <span class="n">Service</span> <span class="n">Release</span> <span class="m">1</span>     <span class="m">4.00.950</span><span class="n">A</span>         <span class="m">12</span><span class="p">/</span><span class="m">31</span><span class="p">/</span><span class="m">95</span>
+  <span class="n">OEM</span> <span class="n">Service</span> <span class="n">Release</span> <span class="m">2</span>     <span class="m">4.00.1111</span><span class="p">*</span>       <span class="m">8</span><span class="p">/</span><span class="m">24</span><span class="p">/</span><span class="m">96</span>
+  <span class="n">OEM</span> <span class="n">Service</span> <span class="n">Release</span> <span class="m">2.1</span>   <span class="m">4.03.1212</span><span class="p">-</span><span class="m">1214</span><span class="p">*</span>  <span class="m">8</span><span class="p">/</span><span class="m">24</span><span class="p">/</span><span class="m">96</span><span class="p">-</span><span class="m">8</span><span class="p">/</span><span class="m">27</span><span class="p">/</span><span class="m">97</span>
+  <span class="n">OEM</span> <span class="n">Service</span> <span class="n">Release</span> <span class="m">2.5</span>   <span class="m">4.03.1214</span><span class="p">*</span>       <span class="m">8</span><span class="p">/</span><span class="m">24</span><span class="p">/</span><span class="m">96</span><span class="p">-</span><span class="m">11</span><span class="p">/</span><span class="m">18</span><span class="p">/</span><span class="m">97</span>
+
+<span class="n">NOTE</span>
+
+<span class="p">-</span> <span class="k">In</span> <span class="n">the</span> <span class="k">case</span> <span class="k">of</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">OEM</span> <span class="n">Service</span> <span class="n">Release</span> <span class="m">2</span> <span class="p">(</span><span class="n">OSR2</span><span class="p">),</span> <span class="m">2.1</span> <span class="p">(</span><span class="n">OSR</span> <span class="m">2.1</span><span class="p">)</span> <span class="k">and</span> <span class="m">2.5</span>
+  <span class="p">(</span><span class="n">OSR</span> <span class="m">2.5</span><span class="p">),</span> <span class="k">not</span> <span class="n">all</span> <span class="n">files</span> <span class="n">have</span> <span class="n">this</span> <span class="k">version</span> <span class="n">stamp</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="k">case</span> <span class="k">of</span> <span class="n">OSR</span> <span class="m">2.1</span> <span class="k">and</span>
+  <span class="n">OSR</span> <span class="m">2.5</span><span class="p">,</span> <span class="n">only</span> <span class="n">files</span> <span class="n">updated</span> <span class="k">to</span> <span class="n">provide</span> <span class="n">support</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Win32</span> <span class="n">Driver</span> <span class="k">Model</span>
+  <span class="p">(</span><span class="n">WDM</span><span class="p">)</span> <span class="k">and</span> <span class="n">Universal</span> <span class="n">Serial</span> <span class="n">Bus</span> <span class="p">(</span><span class="n">USB</span><span class="p">)</span> <span class="n">may</span> <span class="n">have</span> <span class="n">this</span> <span class="k">version</span> <span class="n">stamp</span> <span class="p">(</span><span class="n">the</span>
+  <span class="n">remainder</span> <span class="n">maintain</span> <span class="n">the</span> <span class="n">same</span> <span class="k">version</span> <span class="n">stamps</span> <span class="k">as</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="n">OSR2</span> <span class="n">files</span><span class="p">).</span>
+
+<span class="p">-</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">OEM</span> <span class="n">Service</span> <span class="n">Releases</span> <span class="n">are</span> <span class="k">not</span> <span class="n">available</span> <span class="n">for</span> <span class="n">download</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">view</span> <span class="n">a</span> <span class="n">file</span><span class="s1">'s version information by using the right mouse button to
+click a file in Windows Explorer, clicking Properties on the menu that appears,
+and clicking the Version tab. If the property sheet for the file does not show a
+Version tab, there is no version information available for that file.
+
+With few exceptions, Windows 95 updates are stamped with a version number of
+4.00.951 or greater, indicating that the file is a newer version than originally
+included with Windows 95. Updates to Windows 95 OEM Service Release 2 (OSR2)
+generally have a version of 4.00.1112 or greater.
+
+It is possible that multiple fixes would be applied to the same component. With a
+few rare exceptions, these fixes are always cumulative. A change implemented in
+a given version of a particular component is also included in later versions of
+that component, along with any additional change implemented in the later
+versions. (For example, version 4.00.952 would contain the change implemented in
+version 4.00.951, as well as the new change.)
+
+The cumulative nature of these changes, combined with the incremented version
+numbers, means that, with very few exceptions, there is always one "current"
+version of a given component, containing all fixes made to that component to
+date.
+
+
+Identifying Windows 95 Updates
+------------------------------
+
+Nearly all Windows 95 update files can be positively identified by the following
+two characteristics, which can be viewed on the Version tab of the property
+sheet for the file:
+
+- A version number greater than the product release version.
+
+- An additional string resource named "Special Build Description" that is set
+  to the value "QFE."
+
+Some Windows 95 files do not contain version information to identify the file. In
+such cases, the modified date and size of the file can be examined and compared
+to the original release version of the file. These are not conclusive
+indicators, however, because the modified date can be affected by various
+conditions, and changes in a file may not result in a change in the file'</span><span class="n">s</span>
+<span class="n">size</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Update</span> <span class="n">Information</span> <span class="n">Tool</span> <span class="p">(</span><span class="n">Qfecheck</span><span class="p">.</span><span class="n">exe</span><span class="p">)</span>
+<span class="p">-----------------------------------------------------</span>
+
+<span class="n">The</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Update</span> <span class="n">Information</span> <span class="n">tool</span> <span class="p">(</span><span class="n">Qfecheck</span><span class="p">.</span><span class="n">exe</span><span class="p">)</span> <span class="n">is</span> <span class="n">installed</span> <span class="k">with</span> <span class="n">each</span>
+<span class="n">Windows</span> <span class="m">95</span> <span class="n">update</span><span class="p">.</span> <span class="n">This</span> <span class="n">tool</span> <span class="k">uses</span> <span class="n">information</span> <span class="n">stored</span> <span class="k">in</span> <span class="n">the</span> <span class="n">registry</span><span class="p">,</span> <span class="k">and</span>
+<span class="k">version</span> <span class="k">and</span> <span class="n">special</span> <span class="n">build</span> <span class="n">information</span> <span class="k">in</span> <span class="n">the</span> <span class="n">files</span> <span class="n">themselves</span><span class="p">,</span> <span class="k">to</span> <span class="n">identify</span>
+<span class="n">installed</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">updates</span><span class="p">.</span> <span class="n">This</span> <span class="n">tool</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">identify</span> <span class="n">which</span> <span class="n">Windows</span> <span class="m">95</span>
+<span class="n">updates</span> <span class="n">have</span> <span class="n">been</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">a</span> <span class="n">given</span> <span class="n">computer</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">Qfecheck</span> <span class="n">tool</span><span class="p">,</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">Qfecheck</span><span class="p">.</span><span class="n">exe</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">folder</span> <span class="p">(</span><span class="k">or</span> <span class="k">in</span>
+<span class="n">some</span> <span class="n">rare</span> <span class="n">cases</span><span class="p">,</span> <span class="n">the</span> <span class="n">Windows</span><span class="p">\</span><span class="nf">System</span> <span class="n">folder</span><span class="p">).</span> <span class="n">The</span> <span class="n">tool</span> <span class="n">contains</span> <span class="n">online</span> <span class="n">help</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Update</span> <span class="n">Information</span> <span class="n">tool</span><span class="p">,</span> <span class="n">click</span>
+<span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q145990</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Update</span> <span class="n">Information</span> <span class="n">Tool</span> <span class="p">(</span><span class="n">Qfecheck</span><span class="p">.</span><span class="n">exe</span><span class="p">)</span>
+
+<span class="n">Installing</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Single</span> <span class="n">Computer</span>
+<span class="p">--------------------------------------------------</span>
+
+<span class="k">To</span> <span class="n">install</span> <span class="n">a</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Update</span> <span class="n">on</span> <span class="n">a</span> <span class="n">single</span> <span class="n">computer</span><span class="p">,</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">self</span><span class="p">-</span> <span class="n">extracting</span>
+<span class="n">installer</span><span class="p">.</span> <span class="n">This</span> <span class="n">performs</span> <span class="n">the</span> <span class="n">following</span> <span class="n">actions</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Unpack</span> <span class="n">the</span> <span class="n">files</span> <span class="n">that</span> <span class="n">are</span> <span class="n">needed</span> <span class="n">for</span> <span class="n">installation</span> <span class="n">into</span> <span class="n">a</span> <span class="n">temporary</span> <span class="n">folder</span><span class="p">.</span>
+  <span class="n">These</span> <span class="n">files</span> <span class="n">typically</span> <span class="k">include</span><span class="p">:</span>
+
+   <span class="p">-</span> <span class="n">The</span> <span class="n">updated</span> <span class="n">component</span> <span class="n">file</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+   <span class="p">-</span> <span class="n">The</span> <span class="n">QFECHECK</span> <span class="n">tool</span> <span class="p">(</span><span class="n">Qfecheck</span><span class="p">.</span><span class="n">exe</span> <span class="k">and</span> <span class="n">Qfecheck</span><span class="p">.</span><span class="n">hlp</span><span class="p">)</span>
+
+   <span class="p">-</span> <span class="n">An</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">used</span> <span class="k">to</span> <span class="n">uninstall</span> <span class="n">the</span> <span class="n">update</span>
+
+   <span class="p">-</span> <span class="n">An</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">used</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">installation</span> <span class="p">(</span><span class="n">W95upd</span><span class="p">.</span><span class="n">inf</span><span class="p">)</span>
+
+   <span class="p">-</span> <span class="k">In</span> <span class="n">some</span> <span class="n">cases</span><span class="p">,</span> <span class="n">Advpack</span><span class="p">.</span><span class="n">dll</span><span class="p">,</span> <span class="n">W95inf16</span><span class="p">.</span><span class="n">dll</span><span class="p">,</span> <span class="k">and</span> <span class="n">W95inf32</span><span class="p">.</span><span class="n">dll</span> <span class="n">files</span>
+
+<span class="m">2.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">built</span><span class="p">-</span><span class="k">in</span> <span class="n">Setup</span> <span class="n">library</span> <span class="p">(</span><span class="n">Setupx</span><span class="p">.</span><span class="n">dll</span><span class="p">)</span> <span class="k">or</span> <span class="n">an</span> <span class="n">external</span> <span class="n">setup</span>
+  <span class="n">library</span> <span class="p">(</span><span class="n">Advpack</span><span class="p">.</span><span class="n">dll</span><span class="p">)</span> <span class="k">to</span> <span class="n">install</span> <span class="n">the</span> <span class="n">specified</span> <span class="n">update</span> <span class="n">according</span> <span class="k">to</span> <span class="n">the</span>
+  <span class="n">directives</span> <span class="k">in</span> <span class="n">the</span> <span class="n">provided</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="p">(</span><span class="n">W95upd</span><span class="p">.</span><span class="n">inf</span><span class="p">).</span> <span class="n">This</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">contains</span>
+  <span class="n">directives</span> <span class="k">to</span> <span class="n">copy</span> <span class="n">files</span> <span class="k">to</span> <span class="n">their</span> <span class="n">appropriate</span> <span class="n">locations</span><span class="p">,</span> <span class="k">and</span> <span class="n">add</span> <span class="n">registry</span>
+  <span class="n">settings</span> <span class="k">as</span> <span class="n">appropriate</span><span class="p">.</span> <span class="n">Some</span> <span class="n">later</span> <span class="n">installer</span> <span class="n">packages</span> <span class="n">may</span> <span class="n">use</span> <span class="n">multiple</span> <span class="p">.</span><span class="n">inf</span>
+  <span class="n">files</span> <span class="k">to</span> <span class="n">allow</span> <span class="n">a</span> <span class="n">single</span> <span class="k">package</span> <span class="k">to</span> <span class="n">install</span> <span class="n">one</span> <span class="k">of</span> <span class="n">several</span> <span class="n">different</span> <span class="n">versions</span>
+  <span class="k">of</span> <span class="n">an</span> <span class="n">updated</span> <span class="n">file</span><span class="p">,</span> <span class="n">depending</span> <span class="n">on</span> <span class="n">the</span> <span class="k">version</span> <span class="k">of</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">that</span> <span class="n">is</span>
+  <span class="n">installed</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">a</span> <span class="n">newer</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="n">updated</span> <span class="n">component</span> <span class="n">has</span> <span class="n">already</span> <span class="n">been</span> <span class="n">installed</span><span class="p">,</span> <span class="n">the</span>
+  <span class="n">older</span> <span class="k">version</span> <span class="n">is</span> <span class="k">not</span> <span class="n">installed</span><span class="p">.</span> <span class="k">In</span> <span class="n">most</span> <span class="n">cases</span><span class="p">,</span> <span class="n">this</span> <span class="n">occurs</span> <span class="n">silently</span><span class="p">.</span> <span class="n">For</span> <span class="n">some</span>
+  <span class="n">older</span> <span class="n">installer</span> <span class="n">packages</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">be</span> <span class="n">prompted</span> <span class="k">to</span> <span class="n">keep</span> <span class="k">or</span> <span class="n">overwrite</span> <span class="n">the</span>
+  <span class="n">existing</span> <span class="n">component</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Inform</span> <span class="n">you</span> <span class="n">when</span> <span class="n">the</span> <span class="n">update</span> <span class="n">is</span> <span class="n">complete</span> <span class="k">and</span> <span class="n">prompt</span> <span class="n">you</span> <span class="k">to</span> <span class="n">restart</span> <span class="n">the</span>
+  <span class="n">computer</span><span class="p">.</span> <span class="n">When</span> <span class="n">you</span> <span class="n">click</span> <span class="n">OK</span><span class="p">,</span> <span class="n">the</span> <span class="n">temporary</span> <span class="n">files</span> <span class="k">from</span> <span class="n">step</span> <span class="m">1</span> <span class="n">are</span> <span class="n">removed</span> <span class="k">and</span>
+  <span class="n">the</span> <span class="n">installation</span> <span class="n">program</span> <span class="n">terminates</span><span class="p">.</span>
+
+<span class="n">Uninstalling</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Single</span> <span class="n">Computer</span>
+<span class="p">----------------------------------------------------</span>
+
+<span class="k">In</span> <span class="n">most</span> <span class="n">cases</span><span class="p">,</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">updates</span> <span class="n">can</span> <span class="n">be</span> <span class="n">safely</span> <span class="k">and</span> <span class="n">easily</span> <span class="n">uninstalled</span> <span class="k">and</span>
+<span class="n">replaced</span> <span class="k">with</span> <span class="n">the</span> <span class="n">original</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">the</span> <span class="n">updated</span> <span class="n">components</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">typically</span>
+<span class="n">facilitated</span> <span class="n">by</span> <span class="n">an</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">copied</span> <span class="k">to</span> <span class="n">either</span> <span class="n">the</span> <span class="n">Windows</span><span class="p">\</span><span class="n">INF</span><span class="p">\</span><span class="n">QFE</span> <span class="n">folder</span> <span class="p">(</span><span class="k">in</span> <span class="n">most</span>
+<span class="n">cases</span><span class="p">),</span> <span class="k">or</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">folder</span> <span class="p">(</span><span class="n">for</span> <span class="n">some</span> <span class="n">older</span> <span class="n">installer</span> <span class="n">packages</span><span class="p">),</span> <span class="n">during</span>
+<span class="n">installation</span> <span class="k">of</span> <span class="n">the</span> <span class="n">update</span><span class="p">.</span> <span class="n">This</span> <span class="n">file</span> <span class="n">typically</span> <span class="n">has</span> <span class="n">a</span> <span class="n">name</span> <span class="k">of</span> <span class="n">the</span> <span class="n">form</span>
+<span class="p">&lt;</span><span class="n">xxxxx</span><span class="p">&gt;</span><span class="n">_UN</span><span class="p">.</span><span class="n">INF</span><span class="p">.</span> <span class="n">This</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">uninstall</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span>
+<span class="n">update</span> <span class="n">by</span> <span class="n">right</span><span class="p">-</span><span class="n">clicking</span> <span class="n">the</span> <span class="n">file</span> <span class="k">in</span> <span class="n">Windows</span> <span class="n">Explorer</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">clicking</span>
+<span class="n">Install</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">a</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">update</span> <span class="n">is</span> <span class="n">uninstalled</span><span class="p">,</span> <span class="n">you</span> <span class="n">are</span> <span class="n">prompted</span> <span class="n">for</span> <span class="n">the</span> <span class="n">original</span>
+<span class="n">Windows</span> <span class="m">95</span> <span class="n">installation</span> <span class="n">disks</span> <span class="k">or</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span> <span class="n">The</span> <span class="n">original</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="n">files</span> <span class="n">are</span>
+<span class="n">copied</span> <span class="k">and</span> <span class="n">overwrite</span> <span class="n">the</span> <span class="n">updated</span> <span class="n">versions</span><span class="p">.</span> <span class="n">An</span> <span class="n">alternate</span> <span class="n">file</span> <span class="n">location</span> <span class="n">may</span> <span class="n">also</span>
+<span class="n">be</span> <span class="n">specified</span> <span class="n">at</span> <span class="n">this</span> <span class="n">time</span><span class="p">.</span> <span class="n">When</span> <span class="n">uninstallation</span> <span class="n">is</span> <span class="n">complete</span><span class="p">,</span> <span class="n">you</span> <span class="n">typically</span> <span class="n">need</span>
+<span class="k">to</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">for</span> <span class="n">the</span> <span class="n">change</span> <span class="k">to</span> <span class="n">take</span> <span class="n">effect</span><span class="p">.</span>
+
+<span class="n">Installing</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span> <span class="n">Using</span> <span class="n">Server</span><span class="p">-</span><span class="n">Based</span> <span class="n">Setup</span>
+<span class="p">------------------------------------------------------</span>
+
+<span class="n">Extracting</span> <span class="k">Package</span> <span class="n">Contents</span><span class="p">:</span>
+
+<span class="n">Most</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">update</span> <span class="n">installer</span> <span class="n">packages</span> <span class="n">now</span> <span class="n">support</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span> <span class="n">that</span>
+<span class="n">allow</span> <span class="n">the</span> <span class="n">contents</span> <span class="k">of</span> <span class="n">the</span> <span class="k">package</span> <span class="k">to</span> <span class="n">be</span> <span class="n">extracted</span> <span class="k">to</span> <span class="n">a</span> <span class="n">specified</span> <span class="n">directory</span><span class="p">,</span>
+<span class="n">without</span> <span class="n">launching</span> <span class="n">the</span> <span class="n">INF</span><span class="p">-</span><span class="n">driven</span> <span class="n">installation</span> <span class="n">routine</span><span class="p">.</span> <span class="n">The</span> <span class="nf">command</span> <span class="k">to</span> <span class="n">perform</span>
+<span class="n">this</span> <span class="n">operation</span> <span class="n">would</span> <span class="n">be</span><span class="p">:</span>
+
+<span class="s2">"&lt;path to update file&gt;\&lt;update filename&gt;.EXE /C /T:&lt;destination
+folder&gt;"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">)</span>
+
+<span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">to</span> <span class="n">extract</span> <span class="n">the</span> <span class="n">contents</span> <span class="k">of</span> <span class="n">XXXXXUPD</span><span class="p">.</span><span class="n">EXE</span><span class="p">,</span> <span class="n">located</span> <span class="k">in</span> <span class="n">C</span><span class="p">:\</span><span class="n">DOWNLOAD</span><span class="p">,</span> <span class="k">to</span>
+<span class="n">the</span> <span class="n">C</span><span class="p">:\</span><span class="n">UPDATE</span> <span class="n">destination</span> <span class="n">folder</span><span class="p">,</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">would</span> <span class="n">be</span><span class="p">:</span>
+
+<span class="s2">"C:\DOWNLOAD\XXXXXUPD.EXE /C /T:C:\UPDATE"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">)</span>
+
+<span class="n">This</span> <span class="n">functionality</span> <span class="n">is</span> <span class="n">available</span> <span class="k">in</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">update</span> <span class="n">installer</span> <span class="n">packages</span> <span class="n">created</span>
+<span class="n">after</span> <span class="n">October</span> <span class="m">1996.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="k">not</span> <span class="n">certain</span> <span class="n">whether</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">installer</span>
+<span class="k">package</span> <span class="n">supports</span> <span class="n">this</span> <span class="n">functionality</span><span class="p">,</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">installer</span> <span class="k">with</span> <span class="n">a</span> <span class="s2">"/?"</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span>
+<span class="n">switch</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">type</span> <span class="n">the</span> <span class="n">following</span> <span class="nf">command</span><span class="p">:</span>
+
+<span class="s2">"C:\DOWNLOAD\XXXXXUPD.EXE /?"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">)</span>
+
+<span class="k">If</span> <span class="n">a</span> <span class="n">window</span> <span class="n">appears</span> <span class="n">listing</span> <span class="n">the</span> <span class="n">available</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span> <span class="n">for</span> <span class="n">the</span> <span class="k">package</span><span class="p">,</span>
+<span class="n">you</span> <span class="n">may</span> <span class="n">use</span> <span class="n">this</span> <span class="nf">command</span> <span class="k">to</span> <span class="n">extract</span> <span class="n">the</span> <span class="n">contents</span> <span class="k">of</span> <span class="n">the</span> <span class="k">package</span> <span class="k">to</span> <span class="n">the</span> <span class="n">desired</span>
+<span class="n">destination</span> <span class="n">folder</span><span class="p">.</span> <span class="k">If</span><span class="p">,</span> <span class="n">instead</span><span class="p">,</span> <span class="n">a</span> <span class="n">window</span> <span class="n">appears</span> <span class="n">prompting</span> <span class="n">you</span> <span class="k">to</span> <span class="n">install</span> <span class="n">the</span>
+<span class="n">update</span><span class="p">,</span> <span class="n">the</span> <span class="n">installer</span> <span class="k">package</span> <span class="n">does</span> <span class="k">not</span> <span class="n">support</span> <span class="n">these</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span><span class="p">,</span> <span class="k">and</span>
+<span class="n">the</span> <span class="n">alternate</span> <span class="n">method</span> <span class="n">described</span> <span class="n">below</span> <span class="n">must</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">extract</span> <span class="n">the</span> <span class="n">contents</span> <span class="k">of</span> <span class="n">the</span>
+<span class="k">package</span><span class="p">.</span>
+
+<span class="n">Referring</span> <span class="k">to</span> <span class="n">the</span> <span class="n">steps</span> <span class="n">above</span> <span class="n">for</span> <span class="n">installing</span> <span class="n">onto</span> <span class="n">a</span> <span class="n">single</span> <span class="n">computer</span><span class="p">,</span> <span class="n">note</span> <span class="n">that</span> <span class="n">the</span>
+<span class="n">files</span> <span class="n">used</span> <span class="k">in</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">are</span> <span class="n">located</span> <span class="k">in</span> <span class="n">a</span> <span class="n">temporary</span> <span class="n">folder</span> <span class="k">until</span> <span class="n">you</span> <span class="n">click</span>
+<span class="n">OK</span> <span class="k">in</span> <span class="n">the</span> <span class="n">final</span> <span class="n">prompt</span> <span class="n">window</span><span class="p">.</span> <span class="n">During</span> <span class="n">this</span> <span class="n">time</span><span class="p">,</span> <span class="n">the</span> <span class="n">files</span> <span class="n">can</span> <span class="n">be</span> <span class="n">copied</span> <span class="n">into</span> <span class="n">a</span>
+<span class="n">different</span> <span class="n">folder</span> <span class="k">and</span> <span class="n">saved</span> <span class="n">for</span> <span class="n">further</span> <span class="n">use</span><span class="p">.</span> <span class="n">Depending</span> <span class="n">on</span> <span class="n">the</span> <span class="n">specific</span> <span class="n">Windows</span> <span class="m">95</span>
+<span class="n">update</span> <span class="n">being</span> <span class="n">installed</span><span class="p">,</span> <span class="n">this</span> <span class="n">temporary</span> <span class="n">folder</span> <span class="n">may</span> <span class="n">be</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span>
+<span class="n">folders</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Windows</span><span class="p">\</span><span class="n">Temp</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="p">&lt;</span><span class="n">temp</span><span class="p">&gt;</span> <span class="n">folder</span> <span class="p">(</span><span class="k">as</span> <span class="n">specified</span> <span class="n">by</span> <span class="n">the</span> <span class="n">TEMP</span> <span class="n">environment</span> <span class="n">variable</span><span class="p">)</span>
+
+<span class="p">-</span> <span class="p">&lt;</span><span class="n">temp</span><span class="p">&gt;\</span><span class="n">Ixp000</span><span class="p">.</span><span class="n">tmp</span> <span class="p">(</span><span class="k">as</span> <span class="n">specified</span> <span class="n">by</span> <span class="n">the</span> <span class="n">TEMP</span> <span class="n">environment</span> <span class="n">variable</span><span class="p">)</span>
+
+<span class="n">Copying</span> <span class="n">the</span> <span class="n">Files</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Network</span> <span class="n">Share</span><span class="p">:</span>
+
+<span class="k">If</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">workstations</span> <span class="n">are</span> <span class="n">being</span> <span class="k">set</span> <span class="n">up</span> <span class="k">from</span> <span class="n">a</span> <span class="n">network</span> <span class="n">share</span><span class="p">,</span> <span class="n">the</span> <span class="n">updated</span>
+<span class="n">component</span> <span class="n">files</span> <span class="n">can</span> <span class="n">be</span> <span class="n">copied</span> <span class="n">into</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="n">folder</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">on</span> <span class="n">the</span> <span class="n">network</span>
+<span class="n">share</span> <span class="n">before</span> <span class="n">installing</span> <span class="n">Windows</span> <span class="m">95</span> <span class="k">from</span> <span class="n">this</span> <span class="n">share</span><span class="p">.</span> <span class="k">In</span> <span class="n">this</span> <span class="n">way</span><span class="p">,</span> <span class="n">new</span>
+<span class="n">workstations</span> <span class="n">can</span> <span class="n">be</span> <span class="n">configured</span> <span class="k">with</span> <span class="n">the</span> <span class="n">updated</span> <span class="n">components</span> <span class="k">from</span> <span class="n">the</span> <span class="n">very</span>
+<span class="n">beginning</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">appropriate</span> <span class="n">folder</span> <span class="n">into</span> <span class="n">which</span> <span class="k">to</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">updated</span> <span class="n">component</span> <span class="n">files</span> <span class="n">depends</span>
+<span class="n">upon</span> <span class="n">the</span> <span class="n">type</span> <span class="k">of</span> <span class="n">installation</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">If</span> <span class="n">the</span> <span class="n">network</span> <span class="n">installation</span> <span class="n">share</span> <span class="n">contains</span> <span class="n">only</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span> <span class="p">.</span><span class="n">cab</span> <span class="n">files</span><span class="p">,</span>
+  <span class="n">the</span> <span class="n">updated</span> <span class="n">component</span> <span class="n">files</span> <span class="n">should</span> <span class="n">be</span> <span class="n">copied</span> <span class="n">into</span> <span class="n">the</span> <span class="n">same</span> <span class="n">folder</span> <span class="k">as</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span>
+  <span class="n">files</span><span class="p">.</span> <span class="n">When</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Setup</span> <span class="n">copies</span> <span class="n">the</span> <span class="n">file</span> <span class="k">from</span> <span class="n">this</span> <span class="n">source</span> <span class="k">to</span> <span class="n">the</span>
+  <span class="n">destination</span><span class="p">,</span> <span class="n">it</span> <span class="n">will</span> <span class="n">copy</span> <span class="n">standalone</span> <span class="n">files</span> <span class="k">from</span> <span class="n">that</span> <span class="n">folder</span><span class="p">,</span> <span class="k">if</span> <span class="n">they</span> <span class="n">exist</span><span class="p">,</span>
+  <span class="n">instead</span> <span class="k">of</span> <span class="n">the</span> <span class="n">same</span> <span class="n">files</span> <span class="k">from</span> <span class="n">within</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">If</span> <span class="n">the</span> <span class="n">network</span> <span class="n">installation</span> <span class="n">share</span> <span class="n">is</span> <span class="n">a</span> <span class="n">server</span><span class="p">-</span><span class="n">based</span><span class="p">-</span><span class="n">Setup</span> <span class="n">share</span> <span class="n">point</span> <span class="n">created</span>
+  <span class="n">using</span> <span class="n">the</span> <span class="n">Netsetup</span> <span class="n">tool</span> <span class="p">(</span><span class="k">from</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">),</span> <span class="n">the</span> <span class="n">updated</span> <span class="n">component</span>
+  <span class="n">files</span> <span class="n">should</span> <span class="n">be</span> <span class="n">copied</span> <span class="n">into</span> <span class="n">the</span> <span class="n">same</span> <span class="n">folder</span> <span class="k">as</span> <span class="n">the</span> <span class="n">components</span> <span class="n">they</span> <span class="n">replace</span><span class="p">,</span>
+  <span class="n">overwriting</span> <span class="n">the</span> <span class="n">original</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">those</span> <span class="n">files</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">a</span> <span class="n">given</span> <span class="n">file</span> <span class="n">may</span>
+  <span class="n">appear</span> <span class="k">in</span> <span class="n">more</span> <span class="n">than</span> <span class="n">one</span> <span class="n">folder</span><span class="p">,</span> <span class="n">so</span> <span class="n">be</span> <span class="n">sure</span> <span class="k">to</span> <span class="n">update</span> <span class="n">all</span> <span class="n">instances</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">original</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">used</span> <span class="k">to</span> <span class="n">install</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">updates</span> <span class="p">(</span><span class="n">W95upd</span><span class="p">.</span><span class="n">inf</span><span class="p">)</span> <span class="n">includes</span> <span class="n">registry</span>
+<span class="n">information</span> <span class="n">that</span> <span class="n">is</span> <span class="n">either</span> <span class="n">necessary</span> <span class="n">for</span> <span class="n">the</span> <span class="n">update</span> <span class="k">to</span> <span class="n">provide</span> <span class="n">the</span> <span class="n">intended</span>
+<span class="n">functionality</span><span class="p">,</span> <span class="k">or</span> <span class="n">is</span> <span class="n">simply</span> <span class="n">useful</span> <span class="k">in</span> <span class="n">tracking</span> <span class="n">which</span> <span class="n">updates</span> <span class="n">have</span> <span class="n">been</span>
+<span class="n">installed</span><span class="p">.</span> <span class="n">We</span> <span class="n">recommend</span> <span class="n">that</span> <span class="n">this</span> <span class="n">file</span> <span class="n">be</span> <span class="n">examined</span> <span class="n">by</span> <span class="n">the</span> <span class="n">administrator</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span>
+<span class="n">appropriate</span> <span class="n">sections</span> <span class="n">merged</span> <span class="n">into</span> <span class="n">the</span> <span class="n">Msbatch</span><span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">used</span> <span class="n">during</span> <span class="n">Setup</span><span class="p">,</span> <span class="k">to</span>
+<span class="n">ensure</span> <span class="n">that</span> <span class="n">this</span> <span class="n">registry</span> <span class="n">information</span> <span class="n">is</span> <span class="n">incorporated</span> <span class="n">when</span> <span class="n">the</span> <span class="n">update</span> <span class="n">is</span>
+<span class="n">installed</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">install</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">updates</span> <span class="n">on</span> <span class="n">existing</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">workstations</span> <span class="n">that</span> <span class="n">are</span>
+<span class="n">running</span> <span class="n">a</span> <span class="n">shared</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">Windows</span> <span class="m">95</span> <span class="k">from</span> <span class="n">a</span> <span class="n">server</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="n">normally</span>
+<span class="n">sufficient</span> <span class="k">to</span> <span class="n">update</span> <span class="n">the</span> <span class="n">component</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="n">shared</span> <span class="n">folder</span><span class="p">.</span> <span class="k">In</span> <span class="n">very</span> <span class="n">rare</span>
+<span class="n">cases</span><span class="p">,</span> <span class="n">updates</span> <span class="k">to</span> <span class="k">real</span><span class="p">-</span><span class="n">mode</span> <span class="n">components</span> <span class="n">will</span> <span class="n">require</span> <span class="n">the</span> <span class="n">files</span> <span class="k">to</span> <span class="n">be</span> <span class="n">copied</span> <span class="k">to</span>
+<span class="n">the</span> <span class="n">individual</span> <span class="n">computers</span><span class="p">,</span> <span class="n">either</span> <span class="n">on</span> <span class="n">the</span> <span class="n">server</span> <span class="k">or</span> <span class="n">on</span> <span class="n">the</span> <span class="n">workstation</span><span class="s1">'s local
+hard disk or boot floppy disk.
+
+To install Windows 95 updates on existing Windows 95 workstations that are
+running local, standalone installations of Windows 95, one of the following
+methods can be used:
+
+- Network Systems-Management software. Products such as Microsoft'</span><span class="n">s</span> <span class="nf">System</span>
+  <span class="n">Management</span> <span class="n">Server</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">automate</span> <span class="n">software</span> <span class="n">updates</span><span class="p">.</span> <span class="n">Once</span> <span class="n">the</span> <span class="n">updated</span>
+  <span class="n">component</span> <span class="n">files</span> <span class="n">are</span> <span class="n">extracted</span> <span class="k">and</span> <span class="n">registry</span> <span class="n">updates</span> <span class="n">identified</span><span class="p">,</span> <span class="n">these</span> <span class="n">can</span> <span class="n">be</span>
+  <span class="n">distributed</span> <span class="n">according</span> <span class="k">to</span> <span class="n">the</span> <span class="n">functionality</span> <span class="n">provided</span> <span class="n">by</span> <span class="n">such</span> <span class="n">products</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Logon</span> <span class="n">scripts</span><span class="p">.</span> <span class="k">If</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">or</span> <span class="n">NetWare</span> <span class="n">logon</span> <span class="n">scripts</span> <span class="n">are</span> <span class="k">in</span> <span class="n">use</span><span class="p">,</span> <span class="n">a</span> <span class="nf">command</span>
+  <span class="n">can</span> <span class="n">be</span> <span class="n">added</span> <span class="k">to</span> <span class="n">check</span> <span class="n">whether</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">update</span> <span class="n">has</span> <span class="n">been</span> <span class="n">installed</span><span class="p">,</span> <span class="k">and</span>
+  <span class="n">launch</span> <span class="n">the</span> <span class="n">installer</span> <span class="k">if</span> <span class="n">needed</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">:</span>
+
+        <span class="k">IF</span> <span class="k">NOT</span> <span class="n">EXIST</span> <span class="p">%</span><span class="n">WINDIR</span><span class="p">%\</span><span class="n">xxxxx_UN</span><span class="p">.</span><span class="n">INF</span> <span class="n">START</span> <span class="n">xxxxxUPD</span><span class="p">.</span><span class="n">EXE</span>
+
+<span class="p">-</span> <span class="n">E</span><span class="p">-</span><span class="n">mail</span><span class="p">.</span> <span class="n">The</span> <span class="n">self</span><span class="p">-</span><span class="n">extracting</span> <span class="n">installer</span> <span class="n">can</span> <span class="n">be</span> <span class="n">distributed</span> <span class="k">in</span> <span class="n">an</span> <span class="n">e</span><span class="p">-</span><span class="n">mail</span>
+  <span class="n">attachment</span><span class="p">.</span> <span class="n">Upon</span> <span class="n">receiving</span> <span class="n">the</span> <span class="n">e</span><span class="p">-</span><span class="n">mail</span><span class="p">,</span> <span class="n">users</span> <span class="n">would</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">attached</span> <span class="n">installer</span>
+  <span class="k">to</span> <span class="n">install</span> <span class="n">the</span> <span class="n">update</span><span class="p">.</span> <span class="n">The</span> <span class="n">e</span><span class="p">-</span><span class="n">mail</span> <span class="n">attachment</span> <span class="n">could</span> <span class="n">also</span> <span class="n">consist</span> <span class="k">of</span> <span class="n">a</span> <span class="n">shortcut</span>
+  <span class="k">to</span> <span class="n">the</span> <span class="n">installer</span> <span class="k">in</span> <span class="n">a</span> <span class="n">shared</span> <span class="n">folder</span> <span class="n">on</span> <span class="n">the</span> <span class="n">network</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Intranet</span> <span class="n">Web</span> <span class="n">site</span><span class="p">.</span> <span class="n">The</span> <span class="n">self</span><span class="p">-</span><span class="n">extracting</span> <span class="n">installer</span> <span class="n">can</span> <span class="n">be</span> <span class="n">placed</span> <span class="n">on</span> <span class="n">an</span> <span class="n">internal</span>
+  <span class="n">Web</span> <span class="n">site</span><span class="p">,</span> <span class="n">where</span> <span class="n">users</span> <span class="n">could</span> <span class="n">go</span> <span class="k">to</span> <span class="n">install</span> <span class="n">the</span> <span class="n">update</span><span class="p">.</span>
+
+<span class="n">These</span> <span class="n">methods</span> <span class="n">are</span> <span class="n">suggestions</span><span class="p">.</span> <span class="n">There</span> <span class="n">may</span> <span class="n">be</span> <span class="n">other</span> <span class="n">methods</span> <span class="k">not</span> <span class="n">listed</span> <span class="n">here</span> <span class="n">that</span>
+<span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">distribute</span> <span class="n">these</span> <span class="n">software</span> <span class="n">updates</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">When</span> <span class="n">the</span> <span class="n">self</span><span class="p">-</span><span class="n">extracting</span> <span class="n">installer</span> <span class="n">is</span> <span class="n">used</span> <span class="k">to</span> <span class="n">install</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span>
+<span class="n">update</span><span class="p">,</span> <span class="n">a</span> <span class="n">check</span> <span class="n">is</span> <span class="n">made</span> <span class="k">to</span> <span class="n">ensure</span> <span class="n">that</span> <span class="n">a</span> <span class="n">newer</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="n">component</span> <span class="n">is</span> <span class="k">not</span>
+<span class="n">inadvertently</span> <span class="n">overwritten</span> <span class="k">with</span> <span class="n">the</span> <span class="k">version</span> <span class="n">being</span> <span class="n">installed</span><span class="p">.</span> <span class="k">If</span> <span class="n">an</span> <span class="n">alternate</span>
+<span class="n">installation</span> <span class="n">method</span> <span class="n">is</span> <span class="n">used</span><span class="p">,</span> <span class="n">care</span> <span class="n">must</span> <span class="n">be</span> <span class="n">taken</span> <span class="k">to</span> <span class="n">prevent</span> <span class="n">replacing</span> <span class="n">a</span> <span class="n">newer</span>
+<span class="n">component</span> <span class="k">with</span> <span class="n">an</span> <span class="n">older</span> <span class="n">one</span><span class="p">.</span> <span class="k">In</span> <span class="n">some</span> <span class="n">cases</span><span class="p">,</span> <span class="n">replacing</span> <span class="n">a</span> <span class="n">newer</span> <span class="n">component</span> <span class="k">with</span> <span class="n">an</span>
+<span class="n">older</span> <span class="n">one</span> <span class="n">could</span> <span class="n">render</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">unable</span> <span class="k">to</span> <span class="n">boot</span><span class="p">.</span>
+
+<span class="n">Obtaining</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Updates</span>
+<span class="p">----------------------------</span>
+
+<span class="n">Categorized</span> <span class="n">by</span> <span class="n">availability</span> <span class="k">and</span> <span class="n">distribution</span> <span class="n">methods</span><span class="p">,</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">updates</span> <span class="n">fall</span>
+<span class="n">into</span> <span class="n">two</span> <span class="n">primary</span> <span class="n">categories</span><span class="p">:</span> <span class="n">those</span> <span class="n">available</span> <span class="n">publicly</span> <span class="k">from</span> <span class="n">online</span> <span class="n">sources</span><span class="p">,</span> <span class="k">and</span>
+<span class="n">those</span> <span class="k">not</span> <span class="n">available</span> <span class="n">publicly</span><span class="p">,</span> <span class="n">but</span> <span class="n">only</span> <span class="n">available</span> <span class="n">by</span> <span class="n">contacting</span> <span class="n">Microsoft</span>
+<span class="n">Technical</span> <span class="n">Support</span><span class="p">.</span>
+
+
+<span class="n">Publicly</span><span class="p">-</span><span class="n">distributed</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">updates</span> <span class="n">are</span> <span class="n">available</span> <span class="k">to</span> <span class="n">be</span> <span class="n">downloaded</span> <span class="k">from</span> <span class="n">the</span>
+<span class="n">Microsoft</span> <span class="n">Download</span> <span class="n">Center</span><span class="p">.</span> <span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">how</span> <span class="k">to</span> <span class="n">download</span>
+<span class="n">Microsoft</span> <span class="n">Support</span> <span class="n">files</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span>
+<span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q119591</span> <span class="n">How</span> <span class="k">to</span> <span class="n">Obtain</span> <span class="n">Microsoft</span> <span class="n">Support</span> <span class="n">Files</span> <span class="k">from</span> <span class="n">Online</span> <span class="n">Services</span>
+
+<span class="n">Microsoft</span> <span class="n">used</span> <span class="n">the</span> <span class="n">most</span> <span class="n">current</span> <span class="n">virus</span> <span class="n">detection</span> <span class="n">software</span> <span class="n">available</span> <span class="n">on</span> <span class="n">the</span> <span class="n">date</span> <span class="k">of</span>
+<span class="n">posting</span> <span class="k">to</span> <span class="n">scan</span> <span class="n">this</span> <span class="n">file</span> <span class="n">for</span> <span class="n">viruses</span><span class="p">.</span> <span class="n">Once</span> <span class="n">posted</span><span class="p">,</span> <span class="n">the</span> <span class="n">file</span> <span class="n">is</span> <span class="n">housed</span> <span class="n">on</span> <span class="n">secure</span>
+<span class="n">servers</span> <span class="n">that</span> <span class="n">prevent</span> <span class="n">any</span> <span class="n">unauthorized</span> <span class="n">changes</span> <span class="k">to</span> <span class="n">the</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">determine</span> <span class="n">which</span> <span class="n">file</span> <span class="k">to</span> <span class="n">download</span><span class="p">,</span> <span class="n">query</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="k">to</span> <span class="n">find</span>
+<span class="n">the</span> <span class="n">article</span> <span class="n">that</span> <span class="n">references</span> <span class="n">the</span> <span class="n">issue</span><span class="p">.</span> <span class="n">Specific</span> <span class="n">instructions</span> <span class="n">are</span> <span class="n">included</span> <span class="k">in</span>
+<span class="n">each</span> <span class="n">article</span><span class="p">.</span>
+
+<span class="n">Windows</span> <span class="m">95</span> <span class="n">updates</span> <span class="n">that</span> <span class="n">are</span> <span class="k">not</span> <span class="n">publicly</span> <span class="n">distributed</span> <span class="n">can</span> <span class="n">be</span> <span class="n">obtained</span> <span class="n">by</span>
+<span class="n">contacting</span> <span class="n">Microsoft</span> <span class="n">Technical</span> <span class="n">Support</span><span class="p">,</span> <span class="n">through</span> <span class="n">any</span> <span class="k">of</span> <span class="n">our</span> <span class="n">direct</span> <span class="n">support</span>
+<span class="n">offerings</span><span class="p">,</span> <span class="n">including</span> <span class="n">telephone</span><span class="p">.</span>
+
+
+
+<span class="n">Note</span> <span class="n">that</span> <span class="n">server</span><span class="p">-</span><span class="n">based</span> <span class="n">Setup</span> <span class="p">(</span><span class="n">using</span> <span class="n">Netsetup</span><span class="p">)</span> <span class="k">of</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">OEM</span> <span class="n">Service</span> <span class="n">release</span> <span class="m">2</span>
+<span class="k">and</span> <span class="m">2.1</span> <span class="p">(</span><span class="n">OSR2</span><span class="p">)</span> <span class="n">is</span> <span class="k">not</span> <span class="n">supported</span><span class="p">.</span> <span class="n">OSR2</span> <span class="n">was</span> <span class="n">designed</span> <span class="k">to</span> <span class="n">be</span> <span class="n">preinstalled</span> <span class="n">on</span> <span class="n">new</span>
+<span class="n">computers</span> <span class="n">by</span> <span class="n">computer</span> <span class="n">manufacturers</span><span class="p">.</span> <span class="n">One</span> <span class="k">of</span> <span class="n">the</span> <span class="n">main</span> <span class="n">components</span><span class="p">,</span> <span class="n">the</span> <span class="n">FAT32</span> <span class="n">file</span>
+<span class="nf">system</span><span class="p">,</span> <span class="n">requires</span> <span class="n">that</span> <span class="n">the</span> <span class="n">computer</span><span class="s1">'s hard disk be repartitioned. For this
+reason, OSR2 is not distributed to resellers.
+
+Attempts to distribute OSR2 using Netsetup result in users being prompted for a
+Product ID number. This number is usually listed on the Microsoft Certificate of
+Authenticity. Modifying the Msbatch.inf file does not prevent this prompt.
+
+Knowledge Base Query Tips
+-------------------------
+
+Information about specific Windows 95 updates and issues resolved by these
+updates can be found in the Microsoft Knowledge Base by querying on the issue'</span><span class="n">s</span>
+<span class="n">symptoms</span><span class="p">.</span>
+
+
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">osr2</span> <span class="n">win95</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbWin95search</span> <span class="n">kbOPKSearch</span> <span class="n">kbZNotKeyword3</span> <span class="n">kbWin95OPKOSR25</span> <span class="n">kbWin95OPKOSR210</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">95</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

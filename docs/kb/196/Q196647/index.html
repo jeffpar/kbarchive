@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196647: PRB: SUBSTR(SYS(2015),3,10) as Alias Name Causes Syntax Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196647: PRB: SUBSTR(SYS(2015),3,10) as Alias Name Causes Syntax Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196647/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196647/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196647/","publisher":null,"image":null,"headline":"Q196647: PRB: SUBSTR(SYS(2015),3,10) as Alias Name Causes Syntax Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196647-prb-substrsys2015310-as-alias-name-causes-syntax-error">Q196647: PRB: SUBSTR(SYS(2015),3,10) as Alias Name Causes Syntax Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196647
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5
+Operating System(s): 
+Keyword(s): kbDatabase kbvfp kbvfp300 kbvfp500 kbvfp500a kbvfp600 kbXBase kbXPlatform KbDBFDBC
+Last Modified: 08-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+- Microsoft FoxPro for UNIX, version 2.6 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Programs that have been working properly using the SUBSTR() and SYS(2015)
+functions suddenly produce a syntax error.
+
+CAUSE
+=====
+
+The assignment of an illegal value, or memory variable containing an illegal
+value, to a table, alias or array name.
+
+RESOLUTION
+==========
+
+The solution to the problem is to make sure that the result of the SUBSTR() and
+SYS(2015) functions do in fact begin with a letter or an underscore as required.
+
+- Use the entire result of the SYS(2015) function, without truncating through
+  the SUBSTR() function. This gives a leading character of an underscore '_'.
+
+        x = SYS(2015)
+
+  -or-
+
+- Use a concatenated string that adds a character letter to the beginning of
+  the desired string. For example:
+
+        x = SUBSTR(SYS(2015), 3, 10)
+        x = "A" + x
+
+On operating systems that are limited to eight character file names, you can use
+the following code:
+
+     x = "_" + SUBSTR(SYS(2015), 4)
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Depending upon the character string length and logic you use to obtain it, the
+syntax error may start occurring on computers with a system date of November 18,
+1998.
+
+For example, for computer system dates between 11/17/1998 and 11/10/1999 the
+leading character of a value assigned to variable 'x' will be a numeric digit:
+
+     x = SUBSTR(SYS(2015), 3, 10)
+
+NOTE: Future date periods may also cause a similar problem.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Important: Remember to change your computer system clock to the correct date and
+time after completing the following tests.
+
+Set the computer system date to any date between November 18, 1998 and November
+10, 1999, using the Date/Time Properties in Windows Control Panel.
+
+Note that the leading character of the value assigned to the memory variable is a
+numeric digit.
+
+Alias Names
+-----------
+
+In the specific case of November 18th, 1998 run the following code:
+
+     ? DATE()
+     x=SYS(2015)
+     ? x
+     y=SUBSTR(x,3,10)
+     ? y
+     CREATE CURSOR (y) (field1 c(10))
+
+Note that the leading character of the value assigned to the memory variable 'y'
+is a numeric digit, depending upon the computer system date. Observe that the
+command to create a cursor with that name produces a syntax error.
+
+Array Names
+-----------
+
+    x=SUBSTR(SYS(2015), 3, 10)
+     DIMENSION &amp;x(1,2)
+
+Running the preceding code returns the following error message:
+
+  Command contains unrecognized phrase/keyword.
+
+REFERENCES
+==========
+
+For additional information about the ALIAS parameter of the USE command, the
+SYS(3) or SYS(2015) functions, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q97633 PRB: Alias Problems with Table Name Starting with Number
+
+Microsoft FoxPro Help: search on: "USE command"; "ALIAS argument"; "SYS(3) Legal
+File Name"; "SYS(2015) - Unique Procedure Name"
+
+(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Perry
+Newton, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbvfp kbvfp300 kbvfp500 kbvfp500a kbvfp600 kbXBase kbXPlatform KbDBFDBC 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260UNIX kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:2.5b,2.5c,2.6a,3.0b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192099: FIX: STATIC_DOWNCAST and DYNAMIC_DOWNCAST | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192099: FIX: STATIC_DOWNCAST and DYNAMIC_DOWNCAST" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192099/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192099/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192099/","publisher":null,"image":null,"headline":"Q192099: FIX: STATIC_DOWNCAST and DYNAMIC_DOWNCAST","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192099-fix-static_downcast-and-dynamic_downcast">Q192099: FIX: STATIC_DOWNCAST and DYNAMIC_DOWNCAST</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192099
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbdocerr kbLangCPP kbMFC kbDocs kbVC400bug kbVC500bug kbVC600fix kbBug kbGrpDS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following provides supplemental information to the documentation on
+STATIC_DOWNCAST:
+
+     STATIC_DOWNCAST( class_name, pobject )
+
+Parameters:
+
+  
+
+     class_name
+   
+
+  The name of the class you want to cast to.
+
+   
+     pobject
+   
+
+  The pointer to be cast to a pointer to a class_name object.
+
+Remarks:
+
+  This macro casts pobject to a pointer to a class_name object. pobject must
+  either be NULL, or point to an object of a class which is derived directly,
+  or indirectly, from class_name. In builds of your application with the _DEBUG
+  preprocessor symbol defined, the macro will ASSERT if pobject is not NULL and
+  if it points to an object that is not a "kind of" the class_name (see
+  definition for the CObject::IsKindOf). In non- _DEBUG builds, the macro
+  performs the cast without any type checking.
+
+  class_name must be derived from CObject and use the DECLARE_DYNAMIC and
+  IMPLEMENT_DYNAMIC, the DECLARE_DYNCREATE and IMPLEMENT_DYNCREATE, or the
+  DECLARE_SERIAL and IMPLEMENT_SERIAL macros explained in the Help topic
+  "CObject Class: Deriving a Class from Cobject."
+
+  For example, you might cast a pointer to CYourDocument, called pYourDoc, to a
+  pointer to CDocument using the following expression:
+
+        CDocument* pDoc = STATIC_DOWNCAST(CDocument, pYourDoc);
+
+  If pYourDoc does not point to an object derived directly or indirectly from
+  CDocument, the macro will ASSERT.
+
+  Similarly, the documentation on DYNAMIC_DOWNCAST should be supplemented by
+  saying that class_name must be derived from CObject and use the
+  DECLARE_DYNAMIC and IMPLEMENT_DYNAMIC, the DECLARE_DYNCREATE and
+  IMPLEMENT_DYNCREATE, or the DECLARE_SERIAL and IMPLEMENT_SERIAL macros.
+
+  If you leave out the pair of DECLARE_... and IMPLEMENT_... macros from your
+  code, trying to cast the class pointer using STATIC_DOWNCAST or
+  DYNAMIC_DOWNCAST gives compiler errors like the following:
+
+  error C2039: 'classCMyClass' : is not a member of 'CMyClass'
+
+  error C2065: 'classCMyClass' : undeclared identifier
+
+STATUS
+======
+
+
+
+MORE INFORMATION
+================
+
+Following is additional information on related subjects:
+
+1. The documentation on CObject::IsKindOf should also include:
+
+  This function works only for classes declared with the
+  DECLARE_DYNAMIC, DECLARE_DYNCREATE, or DECLARE_SERIAL macros.
+
+2. The documentation on DECLARE_DYNCREATE should also include:
+
+  The DECLARE_DYNCREATE macro includes all the functionality of
+  DECLARE_DYNAMIC.
+
+3. You may also want to see the topics on the static_cast and dynamic_cast
+  operators in the Visual C++ documentation. Please note that the
+  STATIC_DOWNCAST and DYNAMIC_DOWNCAST macros suggest an action that is
+  contrary to the common usage of the term "downcast". The term "downcast" is
+  commonly used to signify the movement of an object down a class hierarchy,
+  from a given class to a class derived from it. This may be confusing when you
+  consider that the STATIC_DOWNCAST and DYNAMIC_DOWNCAST macros perform the
+  action of "upcasting". The term "upcast" is commonly used to signify the
+  movement of an object up the class hierarchy, from a derived class to a class
+  it is derived from.
+
+REFERENCES
+==========
+
+  Q151070 FIX: DYNAMIC_DOWNCAST &amp; STATIC_DOWNCAST Causes Stack Overflow
+
+Additional query words: DECLARE_DYNAMIC IMPLEMENT_DYNAMIC DECLARE_DYNCREATE IMPLEMENT_DYNCREATE DECLARE_SERIAL IMPLEMENT_SERIAL IsKindOf
+
+======================================================================
+Keywords          : kberrmsg kbdocerr kbLangCPP kbMFC kbDocs kbVC400bug kbVC500bug kbVC600fix kbBug kbGrpDSMFCATL kbISS 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175173: HOWTO: Use Word to Print General Fields in Report Designer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175173: HOWTO: Use Word to Print General Fields in Report Designer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175173/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175173/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175173/","publisher":null,"image":null,"headline":"Q175173: HOWTO: Use Word to Print General Fields in Report Designer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175173-howto-use-word-to-print-general-fields-in-report-designer">Q175173: HOWTO: Use Word to Print General Fields in Report Designer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175173
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbinterop kbAutomation kbDesigner kbvfp300 kbvfp500 kbvfp600 kbWord
+Last Modified: 10-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the Report Designer to print a general field that has text inserted
+into it with a word processor, the OLE bound Control object of the Report
+Designer has to be sized to be as large as the largest amount of text in the
+general fields. This can present problems if there are multiple pages of text in
+the general field. The OLE Bound control can be enlarged only to the height of a
+single page in the Report Designer, which is usually not large enough to print a
+general field that has more than a page of data.
+
+MORE INFORMATION
+================
+
+Using a memo field would be one way to store the data and have it print
+correctly in the Report Designer. The problem with this method is that any
+formatting such as underlining, bolding, or different font sizes of the text is
+not allowed in a memo field. A word processor is needed to format data in this
+way and storing it into a general field is the only way to keep the formatting
+of the data intact. Instead of using the Report Designer to print the general
+field, sending it to a word processor like Word for Windows will allow all of
+the data in a general field to be printed correctly.
+
+Below are two examples of code that use OLE Automation to call Word and then use
+WordBasic or Visual Basic for Applications (VBA) commands to pass the data to
+Word. The first example works only with Word 6.0 or Word 95 with any version of
+Visual FoxPro. The second example works only with Word 97 and Visual FoxPro
+versions 5.0 with Service Pack 2 and 6.0. If the error "OLE error code
+0x80020005: Type Mismatch." occurs, then look at the following article in the
+Microsoft Knowledge Base:
+
+  Q169565 Type Mismatch Using OLE Automation to Word 97
+
+If using the example that works with Word 6.0 or Word 95 and the following error
+occurs, then the data in the general field of the table was inserted with Word
+97:
+
+  OLE Idispatch exception code 269 from Microsoft Word: Microsoft Word Err=1269
+  - Word cannot edit the object...
+
+Change to the second example using Visual FoxPro 5.0 SP 2 and Word 97 to pass the
+data to Word.
+
+To use the code as is, you need to create a table with field names like those
+below:
+
+  Field Name      Type                    Width
+  ----------      ---------               -----
+  FIRST           Character                15
+  LAST            Character                15
+  ADDRESS         Character                25
+  CITY            Character                15
+  STATE           Character                 2
+  ZIPCODE         Character                 5
+  GEN             General                   4
+
+After building the table and adding some data to each character field, make sure
+that each general field has been populated by double-clicking on the general
+field to open it and selecting the EDIT - INSERT OBJECT menu options. With the
+"Create New" button selected, select "Microsoft Word Document" in the "Object
+Type" list box and type some data into Word. Close Word to save the data into
+the general field.
+
+The following code works with Visual FoxPro 3.x, 5.x, and 6.0 when using Word 6.0
+or Word 95. Place the following code into a program (.prg) file and run it.
+
+     ************* Beginning of code. ****************
+
+     PUBLIC oWord
+      oWord = CREATEOBJECT("Word.Basic")
+      WITH oWord
+         .AppShow        &amp;&amp; Makes Word Visible
+         .FileNewDefault &amp;&amp; Opens up blank Word document
+
+         * The following Insert commands place the FoxPro fields into
+         * the Word document. You can change these commands to place
+         * any text in the document.
+         * Ensure that the table is already open. If only a portion
+         * of records are to be printed, change the EOF() to a certain
+         * number so that all of the records do not get processed.
+         * Example: DO WHILE RECNO() &lt; 10
+
+         GO TOP
+
+         DO WHILE NOT EOF()
+            .Insert("Record: "+ALLTRIM(STR(RECNO())))
+              &amp;&amp; The above line shows the record number.
+            .InsertPara
+            .InsertPara
+            .Insert(ALLTRIM(first)+" "+last)   &amp;&amp; Field in the table.
+            .InsertPara
+            .Insert(address)
+            .InsertPara
+            .Insert(ALLTRIM(city)+", "+state+"  "+zipcode)
+            .InsertPara
+            .InsertPara
+            .Insert("Contents of the General Field:")
+            .InsertPara
+            .InsertPara
+             KEYBOARD "{ctrl+c} {ctrl+w}" &amp;&amp; Copies and closes the general
+                                          &amp;&amp; field to the clipboard.
+             MODIFY GENERAL gen           &amp;&amp; This has to be after the
+                                          &amp;&amp; KEYBOARD command.
+            .EditPaste
+            .WordLeft(1,1)
+            .EditObject("0")
+            .EditSelectAll
+            .Editcopy
+            .FileClose
+            .EditClear
+            .EditPaste
+            .InsertPara
+            .InsertPara
+            .InsertPara
+             SKIP                     &amp;&amp; Move the record pointer to
+                                      &amp;&amp; the next record.
+         ENDDO
+         .FileSaveAs("c:\mydoc.doc")  &amp;&amp; Saves the Word document as
+                                      &amp;&amp; Mydoc.doc.
+         .FilePrint
+      ENDWITH
+     .AppClose
+
+  **************** End of code. ****************
+
+If you are using Word 97, Visual FoxPro 5.0 Service Pack 2 and Visual FoxPro 6.0
+are the only versions that run this code correctly. Place the following code
+into a program (.prg) file and run it.
+
+     **************** Beginning of code. **********
+     PUBLIC oWord
+     oWord = CREATEOBJECT("Word.Application")
+     WITH oWord
+        .visible=.t.       &amp;&amp; Makes Word Visible
+      .documents.add     &amp;&amp; Opens up blank Word document
+
+        * The following Insert commands place the FoxPro fields into
+        * the Word document. You can change these commands to place
+        * any text in the document.
+        * Ensure that the table is already open. If only a portion
+        * of records are to be printed, change the EOF() to a certain
+        * number so that all of the records do not get processed.
+        * Example: DO WHILE RECNO() &lt; 10
+        GO TOP
+        DO WHILE NOT EOF()
+
+           .Selection.TypeText("Record: "+ALLTRIM(STR(RECNO())))
+             &amp;&amp; The above line shows the record number.
+           .Selection.TypeParagraph
+           .Selection.TypeParagraph
+           .Selection.TypeText(ALLTRIM(first)+" "+last)&amp;&amp; Field in the table.
+           .Selection.TypeParagraph
+           .Selection.TypeText(address)
+           .Selection.TypeParagraph
+           .Selection.TypeText(ALLTRIM(city)+", "+state+"  "+zipcode)
+           .Selection.TypeParagraph
+           .Selection.TypeParagraph
+           .Selection.TypeText("Contents of the General Field:")
+           .Selection.TypeParagraph
+           .Selection.TypeParagraph
+            KEYBOARD "{ctrl+c} {ctrl+w}" &amp;&amp; Copies and closes the general
+                                         &amp;&amp; field to the clipboard.
+           MODIFY GENERAL gen           &amp;&amp; This has to be after the
+                                         &amp;&amp; KEYBOARD command.
+           .Selection.Paste
+           .Selection.MoveLeft
+           x = .ActiveDocument.Shapes.Count
+           .ActiveDocument.Shapes(x).OLEFormat.Edit
+           .Selection.Wholestory
+           .Selection.Copy
+           .ActiveDocument.Close
+           .Selection.Delete
+           .Selection.EndKey(6)
+           .Selection.Paste
+           .Selection.TypeParagraph
+           .Selection.TypeParagraph
+           .Selection.TypeParagraph
+            SKIP                     &amp;&amp; Move the record pointer to
+        ENDDO
+           .ActiveDocument.SaveAs("Mydoc.doc")  &amp;&amp; Saves the Word document as
+                                                &amp;&amp; Mydoc.doc.
+           .Application.PrintOut
+     ENDWITH
+
+           .Quit
+
+  **************** End of code ****************
+
+REFERENCES
+==========
+
+For more information on Word Basic and Visual Basic Applications (VBA), look in
+the Word Help file.
+
+Additional query words: OLE Word
+
+======================================================================
+Keywords          : kbcode kbinterop kbAutomation kbDesigner kbvfp300 kbvfp500 kbvfp600 kbWord 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

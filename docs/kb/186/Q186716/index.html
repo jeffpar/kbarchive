@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186716: WD97: Not Asked to Save Data Source Closing Mail Merge Document | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186716: WD97: Not Asked to Save Data Source Closing Mail Merge Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186716/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186716/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186716/","publisher":null,"image":null,"headline":"Q186716: WD97: Not Asked to Save Data Source Closing Mail Merge Document","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186716-wd97-not-asked-to-save-data-source-closing-mail-merge-document">Q186716: WD97: Not Asked to Save Data Source Closing Mail Merge Document</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186716
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbmm kbdta word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word 97, if you save and then close your main document during a
+mail merge, Word does not prompt you to save your data source. If you have made
+any changes to your data source during the mail merge, those changes are not
+saved.
+
+NOTE: This problem does not occur if you try to close the main document and it is
+"dirty" (that is, contains unsaved changes); it only happens if you close the
+main document and it does not need to be saved. If you try to close a dirty main
+document, Word prompts you to save both documents.
+
+CAUSE
+=====
+
+This problem occurs if the default save format is Word 6.0/95 (on the Tools
+menu, click Options, click the Save tab, and then look under Save Word Files
+As).
+
+This problem does not occur if the default save format is Word Document. In this
+case, Word will always prompt you to save the data source, whether you have
+already saved the document or not.
+
+WORKAROUND
+==========
+
+To work around this problem, make a change to the main document, and close it
+without first saving it. Word will prompt you to save both documents.
+
+  -or-
+
+View the data source, make your changes, and save the data source manually. To do
+this, follow these steps:
+
+NOTE: The following workaround assumes that you are already viewing the mail
+merge main document on the screen.
+
+1. On the Tools menu, click Mail Merge.
+
+2. Under step 2 (Data Source), click Edit and then click the name of your data
+  source file.
+
+3. Click View Source.
+
+4. Make your changes to the data source.
+
+5. On the File menu, click Save to save your data source.
+
+MORE INFORMATION
+================
+
+There are two ways to change the contents of your data source:
+
+- Edit the record in the Data Form.
+
+  -or-
+
+- Click View Source in the Data Form dialog box. However, this is the only way
+  you can save the data source manually.
+
+
+For more information about mail merges, please see the following articles in the
+Microsoft Knowledge Base:
+
+  Q114483 WD: Data Records Deleted Closing Mail Merge Data Document
+
+  Q162602 WD: Questions About Saving in the Word 6.0/95 File Format
+
+  Q142756 WD: How to Design and Set Up Mail Merge Data Sources
+
+  Q141922 WD: How to Start a Mail Merge
+
+Additional query words: gone missing deleted
+
+======================================================================
+Keywords          : kbmm kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

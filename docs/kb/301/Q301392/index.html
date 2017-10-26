@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301392: HOW TO: Create a Virtual Folder (Subweb) in IIS 4.0 or IIS 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301392: HOW TO: Create a Virtual Folder (Subweb) in IIS 4.0 or IIS 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301392/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301392/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301392/","publisher":null,"image":null,"headline":"Q301392: HOW TO: Create a Virtual Folder (Subweb) in IIS 4.0 or IIS 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301392-how-to-create-a-virtual-folder-subweb-in-iis-40-or-iis-50">Q301392: HOW TO: Create a Virtual Folder (Subweb) in IIS 4.0 or IIS 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301392
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbAudDeveloper kbAudITPro kbHOWTOmaster
+Last Modified: 28-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Requirements
+- Create the Content Folder
+- Create the Virtual Website
+
+SUMMARY
+=======
+
+This step-by-step article explains how to use Internet Services Manager to
+create a new virtual Web site with its own IP address.
+
+Requirements
+------------
+
+The following list outlines the recommended hardware, software, network
+infrastructure, and service packs that you will need:
+
+- A Windows Web server that is running either Internet Information Server (IIS)
+  4.0 or IIS 5.0.
+
+- A root Web site (in this example, the default Web site).
+
+- Administrative rights on the server computer.
+
+Create the Content Folder
+-------------------------
+
+NOTE: If you have already created a content folder, skip this section and proceed
+directly to section 3.
+
+1. Right-click Start and click Explore to open Windows Explorer.
+
+2. Select the drive in which you want to place the content folder for the new
+  Web site.
+
+3. Click File, point to New and click Folder.
+
+4. When the folder is created, the title area will be highlighted. Type the name
+  that you want to give the folder (such as Webcontent). Press ENTER.
+
+5. Click File and click Close to close Windows Explorer.
+
+Create the Virtual Website
+--------------------------
+
+- For IIS 4.0:
+
+  1. Click Start, point to Programs, select Windows NT 4.0 Option Pack, point
+     to Microsoft Internet Information Services and click Internet Services
+     Manager.
+
+     NOTE: Do not click HTML.
+
+  2. In the left pane, right-click Default Web Site, point to New, and then
+     click Virtual Directory.
+
+  3. In the first screen of the Virtual Directory Creation Wizard, type a name
+     for the site (such as Mywebsite) and click Next.
+
+  4. In the second screen, click Browse. Browse to the content folder that you
+     created in section 2 (in this example, it is Webcontent). Click Next.
+
+  5. In the third screen, select Read and Run scripts (such as ASP). Make sure
+     that the other check boxes are cleared. Click Finish to complete the
+     wizard.
+
+  6. Right-click the new virtual folder and click Properties.
+
+  7. Click Virtual Directory and make sure that the Web site name is listed in
+     the Application Name edit box under Application Settings. If it is not,
+     click Create.
+
+  8. Close the Properties dialog box and close IIS.
+
+- FOR IIS 5.0
+
+  1. Click Start, point to Programs, select Administrative Tools, and then
+     click Internet Services Manager.
+
+  2. In the left pane, right-click Default Web Site, point to New, and then
+     click Virtual Directory.
+
+  3. In the first screen of the Virtual Directory Creation Wizard, type a name
+     for the site (such as Mywebsite) and click Next.
+
+  4. In the second screen, click Browse. Browse to the content folder that you
+     created in section 2 (in this example, it is Webcontent). Click Next.
+
+  5. In the third screen, select Read and Run scripts (such as ASP). Make sure
+     that the other check boxes are cleared. Click Finish to complete the
+     wizard.
+
+  6. Right-click the new virtual folder and click Properties.
+
+  7. Click Virtual Directory and make sure that the Web site name is listed in
+     the Application Name edit box under Application Settings. If it is not,
+     click Create.
+
+  8. Close the Properties dialog box and close IIS.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudDeveloper kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288202: &quot;SSCP Connection Already Open&quot; Error Starting 257th 3270 Session | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288202: &quot;SSCP Connection Already Open&quot; Error Starting 257th 3270 Session" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288202/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288202/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288202/","publisher":null,"image":null,"headline":"Q288202: &quot;SSCP Connection Already Open&quot; Error Starting 257th 3270 Session","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288202-sscp-connection-already-open-error-starting-257th-3270-session">Q288202: "SSCP Connection Already Open" Error Starting 257th 3270 Session</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288202
+Product(s): Microsoft SNA Server
+Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 kbsna400sp4
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SNA Server or Host Integration Server 2000 sends an "Open SSCP RSP Error"
+response to an emulator's request to start the 257th 3270 session that is
+configured to use any available resource. For example:
+
+FMI   ----------------------------------------------- 17:54:55.0328
+FMI   01020000-&gt;16120100 OPEN  SSCP RSP ERROR
+FMI                      FMI  Err1:0055 Err2:0003
+FMI
+FMI   ---- Header  at address 01194EA8, 2 elements ----
+FMI   03010203 00010055 00030200 01000000     &lt;.......U........&gt;
+FMI
+FMI   ---- Element at address 01B85228, start 1, end 20 ----
+FMI   4D324C55 30303320 00002020 20202020     &lt;M2LU003 ..      &gt;
+FMI   20202020                                &lt;                &gt;
+FMI
+FMI   ---- Element at address 01B8C438, start 1, end 18 ----
+FMI   45585452 41212066 6F722057 696E646F     &lt;EXTRA! for Windo&gt;
+FMI   7773                                    &lt;ws              &gt;
+
+NOTE: Err1:0055 indicates "SSCP Connection Already Open" and Err2:0003 indicates
+"Control Block / Resource Shortage".
+
+CAUSE
+=====
+
+This occurs because all 3270 logical units (LUs) are assigned to user groups
+under "configured users" rather than LU pools on the SNA Server or Host
+Integration Server.
+
+Users can specify an LU and receive active sessions beyond the 256 active LUs in
+the group. This is because the emulator is not asking for a list of LUs for that
+group, but instead is asking for permission to use that particular LU.
+
+MORE INFORMATION
+================
+
+The following illustrates the problem:
+
+1. One user group assigns more than 1,000 LUs.
+
+2. A client requests all available LUs for the user record (or, in some
+  emulators, requests only those LUs that are explicitly configured).
+
+3. The server sends back all 1,000-plus LUs.
+
+4. The client processes all the LUs (even ones in use) and either picks the last
+  LU not in use and attempts to use it or stops at some predetermined number
+  because its internal cache cannot handle any more than what was assigned to
+  it.
+
+5. The client stops processing the list of LUs when the limit is reached.
+
+The following illustrates what would normally happen when a client requests an LU
+from a pool:
+
+1. The client sends a request to the server to see what LUs are assigned to the
+  user.
+
+2. The server sends back the pool name.
+
+3. The client sends back the pool name, requesting an LU.
+
+4. Server acknowledges the pool name and sends an LU from the pool that is free.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 kbsna400sp4 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

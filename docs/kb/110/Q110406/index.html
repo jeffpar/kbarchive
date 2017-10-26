@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q110406: MS-DOS 6.2 Step-Up Fails with McAfee V-Scan | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q110406: MS-DOS 6.2 Step-Up Fails with McAfee V-Scan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/110/Q110406/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/110/Q110406/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/110/Q110406/","publisher":null,"image":null,"headline":"Q110406: MS-DOS 6.2 Step-Up Fails with McAfee V-Scan","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q110406-ms-dos-62-step-up-fails-with-mcafee-v-scan">Q110406: MS-DOS 6.2 Step-Up Fails with McAfee V-Scan</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q110406
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MS-DOS 6.2 Step-Up may generate one of the following messages and fail if you
+try to run it on a system on which the McAfee V-Scan Checksum option /ag or /av
+has been used:
+
+  In order to run the MS-DOS 6.2 single-disk upgrade, you must already have
+  MS-DOS 6.0 installed on your system.
+
+  -or-
+
+  Cannot Update File. Setup could not update the following file to MS-DOS 6.2:
+
+  &lt;filename&gt;
+
+CAUSE
+=====
+
+The Checksum feature adds either 10 or 52 extra bytes to the size of executable
+files. The /ag switch adds 52 bytes to executable files and allows validation
+and recovery of infected files. The /av switch adds 10 bytes to the files and
+allows a validation check only. Either Checksum option may cause MS-DOS 6.2
+Step-Up to fail because Step-Up does not recognize the system and executable
+files it attempts to update.
+
+RESOLUTION
+==========
+
+The /ag option can be reversed by running the following command:
+
+  scan /rg
+
+The /av option can be reversed by running the following command:
+
+  scan /rv
+
+Disabling Checksum by using the above switches should return the files to their
+original sizes and allow MS-DOS Step-Up to upgrade the necessary files. If
+MS-DOS Step-Up still fails, recopy the MS-DOS 6.0 system files from the original
+MS-DOS 6.0 disks to the bootable partition of the hard disk drive. If this is
+not successful, a reinstallation of MS-DOS 6.0 may be necessary.
+
+MORE INFORMATION
+================
+
+For more information, contact McAfee Associates.
+
+The McAfee V-Scan is manufactured by McAfee Associates, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance and reliability.
+
+Additional query words: 6.20 Macafee mcaffee v-shield
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

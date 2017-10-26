@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140473: Observed Versus Described Behavior of P-NODE Name Resolution | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140473: Observed Versus Described Behavior of P-NODE Name Resolution" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140473/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140473/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140473/","publisher":null,"image":null,"headline":"Q140473: Observed Versus Described Behavior of P-NODE Name Resolution","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140473-observed-versus-described-behavior-of-p-node-name-resolution">Q140473: Observed Versus Described Behavior of P-NODE Name Resolution</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140473
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): winnt:3.5,3.51; :2.2c,3.11,3.11a,3.11b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft LAN Manager, version 2.2c 
+- Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Network Monitor to determine Node type, you may come to an invalid
+conclusion, if the assumption is made that any P-NODE client will not issue a
+broadcast for NetBIOS name resolution. This also applies to H- NODE detection in
+some cases.
+
+MORE INFORMATION
+================
+
+The following is an excerpt from a White Paper on TCP/IP implementation,
+TCPIPIMP.DOC, available for download from CIS or the Microsoft FTP server.
+
+
+NodeType
+Key: Netbt\Parameters
+Value Type: REG_DWORD - Number
+Valid Range: 1,2,4,8 (b-node, p-node, m-node, h-node)
+Default: 1 or 8 based on the WINS server configuration
+
+Description: This parameter determines what methods NetBT will use to
+register and resolve names. A b-node system uses broadcasts. A p-node
+system uses only point-to-point name queries to a name server (WINS). An m-
+node system broadcasts first, then queries the name server. An h-node
+system queries the name server first, then broadcasts. Resolution via
+LMHOSTS and/or DNS, if enabled, will follow these methods. If this key is
+present it will override the DhcpNodeType key. If neither key is present,
+the system defaults to b-node if there are no WINS servers configured for
+the client. The system defaults to h-node if there is at least one WINS
+server configured.
+
+The described behavior of the p-node client is correct unless the internet
+group name associated with type 1C is returned from the WINS server or if a
+LMHOSTS file has a 0 (zero) entry for broadcast. In these cases a single
+broadcast will be observed from the client. This does not effect network
+operation and causes no problems. A single broadcast from a client will not
+adversely affect network operations.
+
+This is expected behavior as an internet address of all zeros is used to
+address the network as a whole.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbTCPIPSearch kbLanManSearch kbZNotKeyword3 kbLanMan220c kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : winnt:3.5,3.51; :2.2c,3.11,3.11a,3.11b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216149: How to Install ODBC or MDAC on Terminal Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216149: How to Install ODBC or MDAC on Terminal Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216149/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216149/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216149/","publisher":null,"image":null,"headline":"Q216149: How to Install ODBC or MDAC on Terminal Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216149-how-to-install-odbc-or-mdac-on-terminal-server">Q216149: How to Install ODBC or MDAC on Terminal Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216149
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The installation of Microsoft Data Access Components (MDAC) presents special
+challenges when installing on Terminal Server. Also, as the Terminal Service
+Licensing service uses Open Database Connectivity (ODBC), an incorrect
+installation of MDAC renders the service inoperable.
+
+Both programs and system services use ODBC, and some manual steps may have to be
+used to ensure that nonprivileged services can access the components.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+The first set of steps is necessary to ensure the MDAC service installation will
+finish. The last steps will ensure that MDAC will run on the terminal server and
+all users will be able to take advantage of the updates.
+
+NOTE: The person performing the installation must be in the local Administrators
+group.
+
+1. Stop all ODBC-dependant services including, but not limited to, Internet
+  Information Services (IIS), Structure Query Language (SQL) Server, SQL Server
+  Enterprise Manager, Terminal Server (TS) licensing service, and ODBC
+  Administrator itself, and so on.
+
+2. Remove all users who are logged on.
+
+3. Create a temporary folder in the System32 folder named "Oldodbc" (or any
+  folder not in the computer's path), and then move the following files into
+  that folder:
+
+  Ds16gt.dll
+  Ds32gt.dll
+  Odbc16gt.dll
+  Odbc32.dll
+  Odbc32gt.dll
+  Odbcad32.exe
+  Odbcconf.dll
+  Odbcconf.exe
+  Odbccp32.cpl
+  Odbccp32.dll
+  Odbccr32.dll
+  Odbcinst.cnt
+  Odbcinst.hlp
+  Odbcint.dll
+
+If a webdata package has ever been installed, then all values need to be removed
+under the following registry key. Do not remove the key. Save the key to a file
+before removing the values.
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\ExceptionComponents
+
+
+4. At a command prompt, type "change user /install" (without the quotation
+  marks), and then close the command window.
+
+5. Now you are ready to start the installation. Download MDAC from the following
+  Microsoft Web site and install it with the "complete" option:
+
+  http://www.microsoft.com/data
+
+IMPORTANT: Before closing the Setup screen or restarting, you must run the
+program compatibility script, Odbc.cmd, which is located in the following
+folder:
+
+  &lt;SystemRoot&gt;\Application Compatibility Scripts\Install
+
+6. Shutdown and restart the computer. This will automatically return the
+  computer to Execute mode.
+
+NOTE: Once you have verified that MDAC has installed properly, you may delete the
+folder created in Step 3 and all of its contents.
+
+Access to some components located in &lt;Systemroot&gt;\System32 is limited to
+the person who performed the installation, the Administrator group, and System.
+The generic Everyone group needs Read and Execute rights to the following ODBC
+files. The current rights on these files will vary depending on the version of
+MDAC that is installed.
+
+  Msvcirt.dll
+  Msvcrt.dll
+  Odbc32.dll
+  Odbc32gt.dll
+  Odbccp32.cpl
+  Odbccp32.dll
+  Odbccr32.dll
+  Odbccu32.dll
+  Odbcint.dll
+  Odbcjet.*
+  Odbcji32.dll
+  Odbcjt32.dll
+  Odbctl32.dll
+
+NOTE: If you are installing MDAC 2.6 and higher, the Jet 4.0 database also needs
+to be installed for Terminal Server to operate properly. This is a separate
+installation from MDAC. This is not needed for MDAC 2.6 or earlier. You can
+download the Jet 4.0 Service Pack 3 Release from the following Microsoft Web
+site:
+
+  http://www.microsoft.com/data/download.htm#Jet4SP3info
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q216159 Dr Watson Starting TS License Service with Error 3221487623
+
+  Q232060 HOWTO: MDAC Setup Troubleshooting Guide
+
+  Q307255 INFO: Component Checker: Diagnose Problems and Reconfigure MDAC
+
+  Q243069 INFO: List of Useful MDAC Setup Related Articles
+
+
+Additional query words: com dcom sdk mdac odbc
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

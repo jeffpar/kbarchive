@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q28040: Problems with VGA Modes on COMPAQ VGC Board &amp; Video Seven VGA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q28040: Problems with VGA Modes on COMPAQ VGC Board &amp; Video Seven VGA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/028/Q28040/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/028/Q28040/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/028/Q28040/","publisher":null,"image":null,"headline":"Q28040: Problems with VGA Modes on COMPAQ VGC Board &amp; Video Seven VGA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q28040-problems-with-vga-modes-on-compaq-vgc-board--video-seven-vga">Q28040: Problems with VGA Modes on COMPAQ VGC Board &amp; Video Seven VGA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q28040
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom Video-7 Video 7 | mspl13_basic
+Last Modified: 8-NOV-1990
+
+When using a COMPAQ VGC VGA or Video Seven VGA graphics card, you
+might receive only a blue foreground in QuickBASIC SCREEN mode 11.
+This behavior occurs because the COMPAQ VGC VGA and Video Seven VGA
+emulate SCREEN mode 11 by using SCREEN mode 12. This differs from the
+IBM VGA card's implementation of SCREEN 11 for which QuickBASIC is
+designed.
+
+The following versions of BASIC are not designed to work around this
+nonstandard case: Microsoft QuickBASIC versions 4.00, 4.00b, and 4.50
+for MS-DOS, Microsoft BASIC Compiler versions 6.00 and 6.00b for
+MS-DOS, and Microsoft BASIC Professional Development System (PDS)
+version 7.00 for MS-DOS.
+
+BASIC PDS 7.10 compensates for this case and the colors will come up
+correctly.
+
+The following sample program is a work around for BASIC versions 7.00
+and earlier and QuickBASIC versions 4.x. By changing the Palette
+registers for SCREENs 12 and 13, this program changes the palette for
+SCREEN 11 for the video cards that perform this form of emulation.
+Interrupt 10 hex with function 10 hex and subfunction 12 hex changes a
+block of palette registers. The following program shows how to perform
+this interrupt call:
+
+Sample Code
+-----------
+
+' In BASIC PDS 7.00, use the following $INCLUDE:
+REM $INCLUDE: 'QBX.BI'
+' but if you are using QuickBASIC 4.x or BASIC compiler 6.00x, use:
+'         REM $INCLUDE: 'QB.BI' instead
+TYPE PaletteRegisterType
+  Red AS STRING * 1
+  Green AS STRING * 1
+  Blue AS STRING * 1
+END TYPE
+
+DIM inregs AS regtypex
+DIM outregs AS regtypex
+DIM PaletteArray(0 TO 1) AS PaletteRegisterType
+
+SCREEN 11
+PALETTE 0, 63 * 256              'Try to change the colors to
+PALETTE 1, 63                    '  green on red.
+PRINT "THIS IS IN THE WRONG COLOR(blue on green)"
+PRINT "HIT ANY KEY TO CONTINUE"
+WHILE INKEY$ = "": WEND          'pause for keypress
+
+'Set up the palette for the right colors: Each palette entry ranges
+'  from 0 to 63
+
+'Set up the Background: Bright green
+
+PaletteArray(0).Red = CHR$(0)    'Set the amount of red  : 0
+PaletteArray(0).Green = CHR$(63) 'Set the amount of green: 63
+PaletteArray(0).Blue = CHR$(0)   'Set the amount of blue : 0
+
+'Set up the Foreground: bright red
+
+PaletteArray(1).Red = CHR$(63)   'Set the amount of red  : 63
+PaletteArray(1).Green = CHR$(0)  'Set the amount of green: 0
+PaletteArray(1).Blue = CHR$(0)   'Set the amount of blue : 0
+
+'Set up the registers for the interrupt call.
+
+inregs.ax = &amp;H1012               ' Function &amp;H10, Subfunction &amp;H12
+inregs.bx = 0                    ' Starting Color register
+inregs.cx = 2                    ' Number of Color registers
+inregs.dx = VARPTR(PaletteArray(0))
+inregs.es = VARSEG(PaletteArray(0))
+
+CALL interruptx(&amp;H10, inregs, outregs)
+PRINT "THE COLORS ARE NOW CORRECT (red on green)"
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

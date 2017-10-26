@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136328: How to Determine the Coordinates of an Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136328: How to Determine the Coordinates of an Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136328/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136328/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136328/","publisher":null,"image":null,"headline":"Q136328: How to Determine the Coordinates of an Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136328-how-to-determine-the-coordinates-of-an-object">Q136328: How to Determine the Coordinates of an Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136328
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to determine the coordinates of an object on a
+form in Visual FoxPro. This could be useful when you want to position the mouse
+pointer over an object programmatically, and then fire that object's Click
+event.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+You can use the Top, Left, Height, and Width properties to determine the exact
+area occupied by an object. Then position the mouse pointer in that area, and
+fire the object's Click event. The following procedure gives an example.
+
+1. Create a new form.
+
+2. Place a command button (Command1) on the form.
+
+3. Place the following five lines of code in the Debug window:
+
+     _SCREEN.ActiveForm.Command1.Top
+     _SCREEN.ActiveForm.Command1.Left
+     _SCREEN.ActiveForm.Command1.Height
+     _SCREEN.ActiveForm.Command1.Width
+     _SCREEN.ActiveForm.Command1.ScaleMode
+
+  These commands return numeric values indicating the coordinates of the
+  Command1 button relative to the form on which it is located. The Top property
+  indicates the distance between the top edge of the control and the top edge
+  of its parent object. (For form objects, Top give the distance between the
+  top edge of the form and the main Visual FoxPro window.)
+
+  The Left property indicates the left-most edge of an object relative to its
+  parent object. (For form objects, Left gives the distance between the left
+  edge of the form and the main Visual FoxPro window.)
+
+  The Height property indicates the height of the object on the screen.
+
+  The Width property indicates the width of the object.
+
+  The ScaleMode property indicates the unit of measurement for coordinates of an
+  object when using graphics methods or when positioning controls. The two
+  measurements Visual FoxPro uses are pixels and foxels. The ScaleMode property
+  uses foxels if set to 0 and pixels if set to 3.
+
+4. Run the form, and make a note of the values returned in the Debug window.
+  Knowing what these values represent, you can simulate clicking the Command1
+  button on this form by using this code:
+
+     tRow = _screen.activeform.command1.top
+     tCol = _screen.activeform.command1.left
+     MOUSE CLICK AT tRow, tCol PIXELS WINDOW (_SCREEN.ACTIVEFORM.Name)
+
+NOTE: This code fires the Command1 Click event. For more information on the
+syntax of the MOUSE CLICK command, please see the MOUSE Command topic in the
+Help file.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

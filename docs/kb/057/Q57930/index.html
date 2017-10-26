@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57930: BREAK Status Always Reports OFF Using BASIC CALL INTERRUPT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57930: BREAK Status Always Reports OFF Using BASIC CALL INTERRUPT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57930/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57930/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57930/","publisher":null,"image":null,"headline":"Q57930: BREAK Status Always Reports OFF Using BASIC CALL INTERRUPT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57930-break-status-always-reports-off-using-basic-call-interrupt">Q57930: BREAK Status Always Reports OFF Using BASIC CALL INTERRUPT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57930
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900119-105 B_BasicCom | mspl13_basic
+Last Modified: 8-FEB-1990
+
+The status of the BREAK flag cannot be detected from within a BASIC
+program, and a DOS interrupt from BASIC always reports that it is OFF.
+This is true even if a BREAK ON command has been issued from DOS.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b
+and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS, and to Microsoft BASIC Professional Development
+System (PDS) Version 7.00 for MS-DOS.
+
+The status of the BREAK flag can be detected from some languages by
+using interrupt 21 Hex with function 33 Hex. However, when calling
+this interrupt from a BASIC program, the interrupt always reports that
+BREAK is OFF.
+
+During initialization, BASIC records the current setting of BREAK and
+then turns it OFF. Upon termination, BASIC restores the setting of
+BREAK to its entry value.
+
+This is done because when BREAK is enabled, pressing CTRL+C causes a
+^C to be printed to the screen on the next DOS call. This is also
+printed before DOS invokes the CTRL+C handler.
+
+In BASICs prior to BASIC PDS Version 7.00, BREAK has to be OFF because
+these BASICs do not have a CTRL+C handler. In BASIC PDS 7.00, a CTRL+C
+handler was added to better trap CTRL+C conditions in certain
+situations (such as between resetting the BREAK state and termination,
+or during a Make EXE File command). It was decided to continue
+clearing the BREAK state to eliminate ^C on the screen.
+
+To demonstrate this, run the following program. (If running within the
+QuickBASIC environment, start with the /L option to load in the Quick
+library with support for the CALL INTERRUPT statement).
+
+Code Example
+------------
+
+   REM $INCLUDE: 'QB.BI'
+   ' Note: Must change the above file to 'QBX.BI' in BASIC PDS 7.00
+
+   DIM INREGS AS REGTYPE
+   DIM OUTREGS AS REGTYPE
+
+   INREGS.AX = &amp;H3300
+   CALL INTERRUPT(&amp;H21, INREGS, OUTREGS)
+   PRINT OUTREGS.DX  ' IF 0 THEN BREAK OFF
+
+Even if BREAK ON is previously set in DOS, the program reports that
+BREAK is OFF. After the program ends, issuing the BREAK command in DOS
+shows BREAK as still ON.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

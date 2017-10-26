@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q307742: Exchange SDK HrCreateDirEntryID Does Not Work w/Outlook 2002 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q307742: Exchange SDK HrCreateDirEntryID Does Not Work w/Outlook 2002" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/307/Q307742/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/307/Q307742/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/307/Q307742/","publisher":null,"image":null,"headline":"Q307742: Exchange SDK HrCreateDirEntryID Does Not Work w/Outlook 2002","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q307742-exchange-sdk-hrcreatedirentryid-does-not-work-woutlook-2002">Q307742: Exchange SDK HrCreateDirEntryID Does Not Work w/Outlook 2002</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q307742
+Product(s): Microsoft Exchange
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 11-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The call to the HrCreateDirEntryID function in the Exchange SDK March 2001 or
+earlier no longer works correctly after you upgrade to Microsoft Outlook 2002.
+This call works if you are using Microsoft Outlook 2000.
+
+CAUSE
+=====
+
+This behavior occurs because of a problem in the Exchange SDK. In HrSearchGAL,
+in Edkutils\Edkutils.c, the following call is incorrect:
+
+      hr = MAPICALL(lpAdrBook)-&gt;OpenEntry(
+  		        lpAdrBook, 
+  		        cbGALEntryID, 
+  		        lpGALEntryID, 
+  		        &amp;IID_IMAPIContainer, 
+  		        MAPI_BEST_ACCESS | MAPI_DEFERRED_ERRORS, 
+  		        &amp;ulGALObjectType, 
+  		        (LPUNKNOWN *) &amp;lpGAL);
+
+The problem is that the IID that is requested is IID_IMAPIContainer, but the code
+treats the returned interface pointer as a pointer to an IABContainer interface.
+(IABContainer is derived from IMAPIContainer.) In Outlook 2000, the interface
+that is returned from the OpenEntry call is an IABContainer interface, which
+works. In Outlook 2002, the interface that is returned is actually an
+IMAPIContainer interface, not an IABContainer interface. Therefore, when the
+code later tries to call IABContainer::ResolveNames, the vtable entry is not
+present, and the application stops unexpectedly (crashes).
+
+RESOLUTION
+==========
+
+Change the IID_IMAPIContainer to IID_IABContainer in the following call:
+
+      hr = MAPICALL(lpAdrBook)-&gt;OpenEntry(
+  		        lpAdrBook, 
+  		        cbGALEntryID, 
+  		        lpGALEntryID, 
+  		        &amp;IID_IMAPIContainer, 
+  		        MAPI_BEST_ACCESS | MAPI_DEFERRED_ERRORS, 
+  		        &amp;ulGALObjectType, 
+  		        (LPUNKNOWN *) &amp;lpGAL);
+
+The Exchange SDK includes full source code, so it is possible to fix the call.
+After you fix the call, you must perform a full rebuild of the Exchange SDK
+library.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words: OFFXP
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbAudDeveloper kbExchangeSearch kbSDKSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

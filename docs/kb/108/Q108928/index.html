@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108928: Setting Baud Rates in Windows 3.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108928: Setting Baud Rates in Windows 3.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108928/","publisher":null,"image":null,"headline":"Q108928: Setting Baud Rates in Windows 3.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108928-setting-baud-rates-in-windows-31">Q108928: Setting Baud Rates in Windows 3.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108928
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbprogramming kb16bitonly
+Last Modified: 04-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under Windows 3.1, baud rates are specified in the BaudRate field of the
+communications port's DCB structure, and are set using SetCommState(). Baud
+rates can be specified by using the CBR_ constants listed in WINDOWS.H, or by
+using the actual baud rate.
+
+MORE INFORMATION
+================
+
+OpenComm(), by default, sets the baud rate of a communications port to
+BuildCommDCB() can be used to set the baud rate; however, BuildCommDCB() accepts
+only the following baud rates: 110, 150, 300, 600, 1200, 2400, 4800, 9600, and
+19200. If none of these baud rates are used, BuildCommDCB() returns an error.
+
+The SetCommState() function can be used to set the baud rate to values between 2
+and 115,200. The following CBR_ constants are defined in WINDOWS.H:
+
+  CBR_110        CBR_14400
+  CBR_300        CBR_19200
+  CBR_600        CBR_38400
+  CBR_1200       CBR_56000
+  CBR_2400       CBR_128000
+  CBR_4800       CBR_256000
+  CBR_9600
+
+NOTE: These are not the same constants as a listed in the Windows 3.1 SDK
+documentation for the DCB structure.
+
+NOTE: The CBR_56000 constant actually corresponds to a baud rate of 57,600.
+
+NOTE: The baud rate divisor is incorrect for CBR_14400.
+
+
+SetCommState() allows either the CBR_ constant or the actual baud rate in the
+BaudRate field of the DCB. SetCommState() calls into COMM.DRV to apply the DCB
+settings to the communications port. Although CBR_128000 and CBR_256000 are
+defined, they are not used in the communications driver (COMM.DRV).
+
+When setting the baud rate, COMM.DRV first determines if the baud rate is a CBR_
+constant; if so, COMM.DRV looks up the baud rate divisor in a table.
+
+If the baud rate is not in the CBR_ constant table and the UART is 8250, 16540,
+or 16550, the baud rate is set using 115,200 as the divisor and is divided by
+the user specified baud rate. The subsequent integer value from this division is
+used to set the baud rate (the remainder from the division is not used). For
+example, if the user specified a baud rate of 60000, the calculation would be
+115200/60000, which is 1.
+
+Therefore, the baud rate can be set to 115,200 by placing any value in BaudRate
+that is greater than CBR_56000 (57,600) and less than CBR_110, because this will
+always equal a baud rate of 1 (using the above formula) and signal the UART to
+operate at it's highest possible speed (115,200). A 115,200 baud rate cannot be
+specified directly in the DCB structure because the baud rate variable is an
+unsigned integer and cannot be larger than 64k in the 16 bit world.
+
+Third-party replacement communications drivers may set baud rates differently. If
+using a replacement, check with the software manufacturer to determine how to
+correctly set the baud rate.
+
+Additional query words: CBR_128000 CBR_256000 COMM.DRV
+
+======================================================================
+Keywords          : kbprogramming kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

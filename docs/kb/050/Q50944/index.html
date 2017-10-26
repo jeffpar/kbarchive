@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50944: Using CALL INTERRUPT to Push Characters into Keyboard Buffer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50944: Using CALL INTERRUPT to Push Characters into Keyboard Buffer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50944/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50944/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50944/","publisher":null,"image":null,"headline":"Q50944: Using CALL INTERRUPT to Push Characters into Keyboard Buffer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50944-using-call-interrupt-to-push-characters-into-keyboard-buffer">Q50944: Using CALL INTERRUPT to Push Characters into Keyboard Buffer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50944
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891113-111 B_BasicCom | mspl13_basic
+Last Modified: 21-FEB-1991
+
+It is possible in compiled BASIC to push keys into the keyboard buffer
+on IBM AT and PS/2 class computers using the CALL INTERRUPT statement.
+(This technique will not work on IBM PC class computers.) This can
+allow you to create keyboard macros, such as for training and
+demonstration sequences in a program. Therefore, if you were to write
+a program that required a lot of input from and interaction with a
+user, you could also write a training or demonstration sequence that
+would show the user what kind of input your program required, using
+the method demonstrated below. This would require filling in the
+required responses for the user by pushing the keystrokes into the
+keyboard buffer.
+
+This information applies to Microsoft QuickBASIC versions 4.00, 4.00b,
+and 4.50 for MS-DOS; to Microsoft BASIC Compiler versions 6.00 and
+6.00b for MS-DOS; and to Microsoft BASIC PDS versions 7.00 and 7.10
+for MS-DOS.
+
+The interrupt for the key push routine requires both the scan code for
+the key and the ASCII value of the character to be pushed. A maximum
+of 15 characters can be pushed into the keyboard buffer at one time.
+
+The program shown below, KEYPSH.BAS, sets up a table containing all of
+the scan codes for ASCII character values 32 (a space) through 126
+(~), and defines the routine PUSHSTRING that will push the passed
+string of characters into the keyboard buffer.
+
+Code Example: KEYPSH.BAS
+------------------------
+
+' This program works on IBM AT and PS/2 class computers, but not on
+' IBM PC class computers.
+DECLARE SUB pushstring (thestring$)
+REM $INCLUDE: 'qb.bi'   ' User-defined TYPEs for CALL INTERRUPT
+' For BC.EXE and QBX.EXE in BASIC 7.00, use the include file 'QBX.BI'
+DIM SHARED scanarray(1 TO 93) AS INTEGER
+FOR i% = 1 TO 93  ' initialize scan code array
+        READ scanarray(i%)
+NEXT
+CALL pushstring("&lt;Key Push!&gt;")
+INPUT a$
+PRINT a$
+' Define Scan Codes for ASCII characters 32 (space) through 126 (~):
+
+REM      !   "  #  $  %  &amp;   '   (   )  *   +   ,   -   .   /
+DATA 57, 2, 40, 4, 5, 6, 8, 40, 10, 11, 9, 13, 51, 12, 52, 53
+
+REM    0  1  2  3  4  5  6  7  8   9
+DATA  11, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+REM   :   ;   &lt;   =   &gt;   ?  @
+DATA 39, 39, 51, 13, 52, 53, 3
+
+REM   A   B   C   D   E   F   G   H   I   J   K   L   M
+DATA 30, 48, 46, 32, 18, 33, 34, 35, 23, 36, 37, 38, 50
+
+REM   N   O   P   Q   R   S   T   U   V   W   X   Y   Z
+DATA 49, 24, 25, 16, 19, 31, 20, 22, 47, 17, 45, 21, 44
+
+REM   [   \   ]  ^   _   `
+DATA 26, 43, 27, 7, 12, 41
+
+REM   a   b   c   d   e   f   g   h   i   j   k   l   m
+DATA 30, 48, 46, 32, 18, 33, 34, 35, 23, 36, 37, 38, 50
+
+REM   n   o   p   q   r   s   t   u   v   w   x   y   z
+DATA 49, 24, 25, 16, 19, 31, 20, 22, 47, 17, 45, 21, 44
+
+REM   {   |   }   ~
+DATA 26, 43, 27, 41
+
+SUB pushstring (thestring$)   ' pushes string into keyboard buffer
+   DIM inregs AS regtype
+   DIM outregs AS regtype
+   stringlen = LEN(thestring$)
+   IF stringlen &gt; 15 THEN stringlen = 15  ' max buffer size = 15
+   FOR i% = 1 TO stringlen
+      inregs.ax = &amp;H500    ' subfunction to push character
+      ascvalue = ASC(MID$(thestring$, i%, 1))
+      IF ascvalue &gt;= 32 AND ascvalue &lt;= 126 THEN
+         'assign scan code to high byte
+         inregs.cx = scanarray(ascvalue - 31) * 256
+         inregs.cx = inregs.cx + ascvalue   ' add ASCII code
+         CALL interrupt(&amp;H16, inregs, outregs) ' keyboard interrupt
+      END IF
+   NEXT
+END SUB
+
+To compile and link with Microsoft QuickBASIC versions 4.00, 4.00b,
+and 4.50, or with Microsoft BASIC Compiler versions 6.00 and 6.00b,
+perform the following:
+
+   BC KeyPSH.bas;
+   LINK KeyPSH.bas,,,BRUNxx.Lib+QB.Lib;
+
+The "xx" in the library name is for the current version of the product
+you are using (40, 41, 45, 60, or 61). For BASIC compiler 6.00 and
+6.00b, use BRUNxxER.LIB (emulation math package) or BRUNxxAR.LIB
+(alternate math package). For the alternate math library, you must
+compile with the BC /FPa switch. If you compile with BC /O, link with
+BCOMxx.LIB instead of BRUNxx.LIB.
+
+To run this program in the QB.EXE environment, you must load the Quick
+library QB.QLB as follows:
+
+   QB /L QB.QLB
+
+For BASIC PDS 7.00, compile and link as follows:
+
+   BC KeyPSH.bas;
+   LINK KeyPSH.bas,,,BRT70ENR.Lib+QBX.Lib;
+
+The above example is for the math emulation, near strings, and real
+mode run-time library. The other possible run-time libraries and their
+corresponding compiler switches are as follows:
+
+   Library Name   Compiler Switches    Comments
+   ------------   -----------------    --------
+
+   BRT70ENR.LIB   [default in MS-DOS]   Emulation math, near strings
+   BRT70ANR.LIB   /FPa                  Alternate math, near strings
+   BRT70EFR.LIB   /Fs                   Emulation math, far strings
+   BRT70AFR.LIB   /FPa /Fs              Alternate math, far strings
+
+To use stand-alone libraries, use BCL70xxx.LIB instead of BRT70xxx.LIB
+and add the compiler switch BC /O.
+
+For the QBX.EXE 7.00 environment, use QBX.QLB as follows:
+
+   QBX /L QBX.QLB
+
+References:
+
+For more articles about reading from and writing to the keyboard
+buffer, query on the following words:
+
+   interrupt and keyboard and buffer
+
+Keyboard scan codes and ASCII codes are documented in Appendix D of
+"Microsoft QuickBASIC 4.5: Programming in BASIC"; in Appendix A of
+"Microsoft QuickBASIC 4.0: Language Reference" for 4.00 and 4.00b; in
+Appendix A of "Microsoft BASIC Compiler 6.0: Language Reference" for
+6.00 and 6.00b; and in Appendix A of "Microsoft BASIC 7.0: Language
+Reference" manual for BASIC PDS versions 7.00 and 7.10.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

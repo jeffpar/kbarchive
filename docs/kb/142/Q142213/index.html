@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142213: WD97: How to Create an Automated Form with Fill-in Fields | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142213: WD97: How to Create an Automated Form with Fill-in Fields" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142213/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142213/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142213/","publisher":null,"image":null,"headline":"Q142213: WD97: How to Create an Automated Form with Fill-in Fields","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142213-wd97-how-to-create-an-automated-form-with-fill-in-fields">Q142213: WD97: How to Create an Automated Form with Fill-in Fields</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142213
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta kbfield word97kbfaq
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to create a simple form that automatically prompts a
+user to fill in information.
+
+MORE INFORMATION
+================
+
+Follow these steps to create a template with automatic fill-in fields:
+
+1. On the File menu, click New.
+
+2. Select Blank Document.
+
+3. Under Create New, select Template. Click OK.
+
+4. Create the Fill-in Fields.
+
+  There are two methods you can use to create fill-in fields: menus and
+  keystrokes. Select the method best suited for you.
+
+  Method 1: Creating a Field Using the Menus:
+
+  a. Position the insertion point where you want to insert the text field.
+
+  b. On the Insert menu, click Field.
+
+  c. In the Categories list, select Mail Merge.
+
+  d. In the Field Names list, select Fill-in.
+
+  e. The FILLIN field is displayed in the Field Codes text box below the
+     Categories list. Click inside of the text box to the right of the word
+     FILLIN and type quotation marks around the prompt you want to display. For
+     example, use the following syntax to display a prompt asking the user to
+     enter their name:
+
+  FILLIN "Please enter your first and last name."
+
+  f. Click OK. You will see a sample of the prompt. Click OK to return to your
+     document.
+
+     NOTE: To view the field code you just inserted, press ALT+F9.
+
+  g. Repeat steps a-f for every place in the document where you want a fill-in
+     field.
+
+Method 2: Creating a Field Using Keystrokes.
+
+  a. Position the insertion point where you want to insert the field.
+
+  b. Press CTRL+F9. Field braces, { }, appear in the document.
+
+  c. Position the insertion point inside the field braces.
+
+  d. Type the following, where &lt;prompt&gt; is what Word asks the user to
+     type:
+
+  FILLIN "&lt;prompt&gt;"
+
+     NOTE: If you press F9 while the insertion point is still on the field, you
+     can see a sample of the prompt that will be displayed. This step is not
+     necessary to create the fill-in.
+
+5. On the File menu, click Save As.
+
+6. Name the template appropriately.
+
+Using the Template
+------------------
+
+To create new documents based on the new template, follow these steps.
+
+1. On the File menu, click New.
+
+2. Click to select your template.
+
+3. Click OK.
+
+Word creates a new document, automatically searches for all fill-in fields in the
+document and begins to prompt the user for input.
+
+Additional Information
+----------------------
+
+For additional information about creating online forms with form fields, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q141990 WD97: How to Create an Online Form Using Form Fields
+
+You can also use SET and ASK fields in conjunction with fill-in fields.
+
+REFERENCES
+==========
+
+For more information about SET fields, click Contents And Index on the Help
+menu, click the Index tab in Word Help, type the following text
+
+  SET (bookmark) field
+
+and then double-click the selected text to go to the "SET field" topic. If you
+are unable to find the information you need, ask the Office Assistant.
+
+For more information about ASK fields, click Contents And Index on the Help menu,
+click the Index tab in Word Help, type the following text
+
+  ASK field
+
+and then click Show Topics. Select the "Examples of ASK and FILLIN fields" topic,
+and click Go To. If you are unable to find the information you need, ask the
+Office Assistant.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: fillin field fields forms auto keyboard merge automatic automatically vba
+
+======================================================================
+Keywords          : kbdta kbfield word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

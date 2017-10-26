@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101521: INF: When and How an ODBC Driver DLL Gets Unloaded | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101521: INF: When and How an ODBC Driver DLL Gets Unloaded" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101521/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101521/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101521/","publisher":null,"image":null,"headline":"Q101521: INF: When and How an ODBC Driver DLL Gets Unloaded","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101521-inf-when-and-how-an-odbc-driver-dll-gets-unloaded">Q101521: INF: When and How an ODBC Driver DLL Gets Unloaded</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101521
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+A driver gets unloaded by the ODBC Driver Manager when an application calls the
+ODBC SQLDisconnect() function by passing the handle to the database connection
+made by that driver. This article discusses how the driver is unloaded.
+
+MORE INFORMATION
+================
+
+All ODBC calls by an application are intercepted and routed by the ODBC Driver
+Manager (DM). When an application calls the SQLDisconnect() function on a
+particular connection, the DM calls the driver's SQLDisconnect() function.
+
+When the driver returns a status of SQL_SUCCESS or SQL_SUCCESS_WITH_INFO on this
+call, the DM then calls the driver's SQLFreeConnect() and SQLFreeEnv() in quick
+succession. Also, since the driver has made a successful disconnect on the call
+to SQLDisconnect(), the DM calls the FreeLibrary() function in the Windows API
+to reduce the reference count of the driver DLL by one. When the reference count
+of the Driver DLL gets to zero (0) after repeated calls to SQLDisconnect() by
+the application for all connections made by that driver, Windows will unload the
+driver DLL.
+
+Driver developers may note minor implications arising out of the above. Note that
+every time an application calls SQLDisconnect(), the DM, besides calling the
+driver's SQLDisconnect(), also calls the Driver's SQLFreeConnect() and
+SQLFreeEnv() immediately. Thus SQLFreeEnv() is called on every SQLDisconnect().
+When the application calls SQLFreeConnect() and SQLFreeEnv(), the DM does its
+own cleanup and does not make the same calls to the Driver because these calls
+would have been made at the time of SQLDisconnect().
+
+If an ODBC application terminates without calling SQLDisconnect on all open
+connections, Windows will unload the Driver Manager if its reference count is
+reduced to zero. However, the Driver Manager cannot unload the driver DLL
+because the WEP of the Driver Manager (or any Windows DLL) cannot call the
+FreeLibrary function.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

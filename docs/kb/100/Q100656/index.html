@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100656: &quot;Error Writing to LPT1:&quot; with Lexmark 4037/4039 Under WFWG | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100656: &quot;Error Writing to LPT1:&quot; with Lexmark 4037/4039 Under WFWG" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100656/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100656/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100656/","publisher":null,"image":null,"headline":"Q100656: &quot;Error Writing to LPT1:&quot; with Lexmark 4037/4039 Under WFWG","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100656-error-writing-to-lpt1-with-lexmark-40374039-under-wfwg">Q100656: "Error Writing to LPT1:" with Lexmark 4037/4039 Under WFWG</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100656
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 01-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+The following article contains information on the use of Windows for
+Workgroups with third-party products or configurations that have not been
+tested and are not supported by Microsoft.
+
+If the steps or procedures described in this article do not function
+properly, contact the manufacturer of the third-party product for more
+information.
+
+SYMPTOMS
+========
+
+When you print to a remote Lexmark IBM 4037 or 4039 printer from a Windows for
+Workgroups machine using the PCL 5 language driver that comes with the printer,
+you receive one of the following error messages:
+
+- Error writing to LPT1
+
+  -or-
+
+- Printer port is offline or disconnected
+
+WORKAROUND
+==========
+
+To eliminate either of these error messages, change the driver settings.
+
+NOTE: The 4039 PostScript printer drivers do not require any changes.
+
+The Lexmark IBM 4039 line of printers ship with an accelerated printer driver (a
+PCL 5 driver specific to the 4039 printers) and a PostScript driver. To use the
+accelerated driver to print to a Lexmark IBM 4039 printer over a Windows for
+Workgroups network, you must disable the Fast Printing Direct To Port option on
+the client machine. To do this, use the following steps:
+
+1. In Control Panel, choose the Printers icon.
+
+2. Select the IBM 4039 Print Accelerator Driver. (This is the PCL 5 language
+  driver that comes with the printer.)
+
+3. Choose the Setup button and then the Options button.
+
+4. Clear the Fast Printing Direct To Port check box.
+
+
+NOTES:
+
+- This change does not need to be made on the system that is sharing the
+  Lexmark 4039 printer.
+
+- According to the "Software Application Driver Information Manual" from IBM,
+  the 4019 and 4029 printer drivers do not work with the 4039 printer.
+
+MORE INFORMATION
+================
+
+For more information, call Lexmark Customer Support.
+
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this products' performance
+or reliability.
+
+Additional query words: 3rdparty err msg 3.10 IBM LEXMARK POSTSCRIPT HPPCL5 10R 12R 16R
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

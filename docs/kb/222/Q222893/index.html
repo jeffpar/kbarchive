@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q222893: XFOR: Troubleshooting Calendar Connector for Lotus Notes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q222893: XFOR: Troubleshooting Calendar Connector for Lotus Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/222/Q222893/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/222/Q222893/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/222/Q222893/","publisher":null,"image":null,"headline":"Q222893: XFOR: Troubleshooting Calendar Connector for Lotus Notes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q222893-xfor-troubleshooting-calendar-connector-for-lotus-notes">Q222893: XFOR: Troubleshooting Calendar Connector for Lotus Notes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q222893
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes some of the steps that can be used to troubleshoot the
+Calendar Connector for Lotus Notes.
+
+MORE INFORMATION
+================
+
+The Free/Busy (F/B) process between Lotus Notes and Exchange Server is very
+different depending on the direction of the F/B request. This does mean that
+although an F/B transaction is successful in one direction, it does not
+correlate to the same result in the other direction.
+
+General Troubleshooting Steps
+-----------------------------
+
+- Run the Calendar Connector in console mode. For additional information, refer
+  to the following article in the Microsoft Knowledge Base:
+
+  Q197372 XFOR: How to Run Calendar Connector in Console Mode
+
+- Enable debug-level calendaring transactions on the Notes server. For
+  additional information, refer to the following article in the Microsoft
+  Knowledge Base:
+
+  Q199705 XFOR: How to Enable Detailed Logging for the Excalcon Task on Lotus
+  Notes
+
+F/B Query from Exchange Server to Lotus Notes
+---------------------------------------------
+
+- Ensure that the Lotus Notes client can successfully open a connection to the
+  Notes server. A good test is to start up the Notes client, and attempt to
+  open the Name and Address book on the Notes server. If there are more than
+  one Notes client workspaces on the server, make sure that the correct
+  Notes.ini file is being used for the test.
+
+- Make sure that Notes users do not explicitly exclude the user ID used by the
+  Calendar Connector. This can be ascertained by opening each person's Calendar
+  profile, and checking the Calendar Access option. Note that in some cases,
+  this user ID will be the same one used by the Microsoft Exchange Lotus Notes
+  Connector.
+
+- If Notes users have not modified their Calendar profile or entered any
+  Calendar data, there will be no F/B information returned by the Notes server.
+
+F/B Query from Lotus Notes to Exchange Server
+---------------------------------------------
+
+- Several changes have to be made to the mapping files used in directory
+  synchronization (dirsync) between Exchange Server and Lotus Notes. The
+  Amap.tbl file specifies which directory attributes of Exchange Server are
+  synchronized with the Lotus Notes directory. The Amap.tbl is located in the
+  Exchsrvr\Connect\Exchconn\Dxanotes directory.
+
+  1. Open the file with a text editor such as Notepad, and replace the tab stop
+     between CALDOM and 32 with a space.
+
+  2. Add the MailServer attribute to the end of the Amap.tbl file, and ensure
+     that only spaces are used to separate words. The resulting Amap.tbl should
+     look similar to the following:
+
+     FULLNAME    220 FullName 1
+     MAILDOMAIN  31  MailDomain 2
+     COMPANY     64  CompanyName NULL
+     DEPARTMENT  64  Department NULL
+     FIRSTNAME   64  FirstName NULL
+     LASTNAME    64  LastName NULL
+     LOCATION    128 Location NULL
+     SHORTNAME   64  ShortName NULL
+     UNID        64  $$UNID NULL
+     DN          256 $$DN NULL
+     USNCreated  16  $$USN
+     Initials    6   MiddleInitial NULL
+     Title       32  JobTitle NULL
+     Phone       20  OfficePhoneNumber
+     MobilePhn   20  CellPhoneNumber
+     Fax         20  OfficeFAXPhoneNumber
+     Resource    20  ResourceFlag
+     CALDOM      32  CalendarDomain
+     MAILSRV     32  MailServer
+
+     There will be a delay after dirsync from Exchange Server to Notes while the
+     Notes server reindexes some of the calendar information for Exchange
+     Server users. An immediate Free/Busy query might still fail until this
+     reindex process has completed.
+
+- The Calendar Connector for Lotus Notes also requires that the Exchange
+  Calendar Connector task be added to the Notes server. In general, this add-in
+  server task should be included in the Notes server's Notes.ini file,
+  otherwise this task will have to be started manually after a restart of the
+  Notes server.
+
+  You can check to see that the add-in has loaded properly by typing "show task"
+  (without the quotation marks) in the Notes Server Console. The task name is
+  Excalcon, and the status line will provide the information in the following
+  syntax:
+
+  Exchange Cal conn &lt;status&gt; to &lt;exchange server name&gt; for
+  &lt;calendar system name&gt;. Stats=&lt;a&gt; &lt;b/c&gt; &lt;d&gt;
+
+  +------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | Status Line Field      | Contents                                                                                                                          | 
+  +------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | &lt;status&gt;               | Connected or Not Connected, depending on whether or not the task is currently connected to the Calendar Connector.                | 
+  +------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | &lt;exchange server name&gt; | The name of the Exchange Server computer on which the Calendar Connector that this task is communicating with is installed.       | 
+  +------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | &lt;calendar system name&gt; | The name of the Calendar System, in most cases, Exchange.box.                                                                     | 
+  +------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | &lt;a&gt;                    | Total number of Exchange Server calendar requests made from Notes.                                                                | 
+  +------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | &lt;b/c&gt;                  | Average number of invitees over the average response time, in seconds, for each Exchange Server calendar request made from Notes. | 
+  +------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | &lt;d&gt;                    | Maximum response time for all calendar requests.                                                                                  | 
+  +------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+  Communication between this add-on task and Exchange Server is remote procedure
+  call (RPC)-based. If there are network communication problems, this would
+  also prevent the F/B information from reaching the Exchange Server computer.
+  For more information on testing RPC connectivity, refer to the following
+  article in the Microsoft Knowledge Base:
+
+  Q167260 XCLN: How to Use RPCPing to Test RPC Communication
+
+- Make sure that the Calendar fields in the Notes document for the "Foreign
+  Domain for Exchange" has been updated as well. In general, the information
+  for the Calendar fields should match up with the existing information in the
+  Mail fields.
+
+- When performing an F/B query for an Exchange Server user, do not include the
+  @EXCHANGE at the end of the address. This is contrary to how messaging works
+  between Lotus Notes and Exchange Server. For example, the following might be
+  used as a typical address for an Exchange Server user:
+
+  John Smith/Central/Microsoft@EXCHANGE
+
+  When entering the list of users to find F/B time, the address will be:
+
+  John Smith/Central/Microsoft
+
+- If multiple Notes users simultaneously request F/B information for Exchange
+  Server users, it may cause corruption to the Exchange.box file.
+
+- Notes users may also notice timeouts when attempting to query F/B information
+  for Exchange Server users. Further investigation might show that the F/B
+  transaction was sent successfully from Notes using the Exchange Calendar
+  Connector Add-on task to the Calendar Connector, but the response will fail
+  to come back to Notes. This might be due to a misconfiguration in the
+  Calendar Connector for the Lotus Notes connection.
+
+
+Additional query words: calcon; RTDS; notes calendar connection; tips; help
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

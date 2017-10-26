@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141274: PRB: COleControl::Serialize Not Called with VB as Container | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141274: PRB: COleControl::Serialize Not Called with VB as Container" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141274/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141274/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141274/","publisher":null,"image":null,"headline":"Q141274: PRB: COleControl::Serialize Not Called with VB as Container","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141274-prb-colecontrolserialize-not-called-with-vb-as-container">Q141274: PRB: COleControl::Serialize Not Called with VB as Container</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141274
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:4.0; winnt:2.0,2.1,2.2,4.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCOMt kbCtrlCreate kbMFC kbPersistSt kbVBp400 kbVC200 kbVC400 kbGrpDSMFCATL
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+   - Microsoft OLE Control Developer's Kit (CDK) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Although OLE controls are used with certain control containers (such as
+Microsoft Visual Basic version 4.0), the Serialize function for the control-
+derived class is not called. These containers allow the control to store its
+persistent information either by using the property sets or by using the
+IPersistPropertyBag interface. Both these methods call
+COleControl::DoPropExchange directly without calling the control's Serialize
+function.
+
+The resolution section of this article discusses a technique that you can use in
+the DoPropExchange method to store CObject-derived objects.
+
+CAUSE
+=====
+
+COleControl::Serialize is called by the framework when an OLE control container
+uses one of the following persistent storage interfaces for loading and saving
+the control: IPersistStorage, IPersistStreamInit, or IPersistMemory.
+
+If a control container uses any other method to store the control's persistent
+information, then Serialize for the control-derived class will not be called.
+Microsoft Visual Basic, for example, uses either IPersistPropertyBag or property
+sets to store the persistent information for an OLE control; therefore, the
+Serialize function for a control is not called when Visual Basic is used as the
+control container.
+
+RESOLUTION
+==========
+
+Although there is no direct support for serializing CObject-derived objects in
+COleControl::DoPropExchange, you might want to use the following technique to
+store objects in an OLE control:
+
+1. Allocate a block of memory with GlobalAlloc.
+
+     // cbGuess is a guess of how much memory will be needed.
+     // If more is needed, CSharedFile will reallocate.
+     HGLOBAL hMem = GlobalAlloc(GPTR, cbGuess);
+     BYTE *pbMem = (BYTE *)hMem;
+
+2. Construct an instance of CSharedFile and attach it to the memory block,
+  starting four bytes in. Because the CSharedFile class is not yet documented,
+  include afxpriv.h:
+
+     CSharedFile file;
+     file.Attach(pMem + sizeof(DWORD), cbGuess - sizeof(DWORD));
+
+3. Construct an instance of CArchive on the file:
+
+     CArchive ar(&amp;file, CArchive::store);
+
+4. Write the CObject-derived objects into the archive:
+
+     // store data in the archive
+     // for example, if m_myObject is a CObject-derived object, then
+     m_myObject.Serialize(ar);
+
+5. Get the length of the file and write it into the first DWORD of the memory
+  block:
+
+     *(DWORD*)pbMem = file.GetLength();
+
+6. Pass the memory block to PX_Blob:
+
+     PX_Blob(pPX, _T("MyObjects"), hMem);
+
+This code could be used for loading the objects back out of the blob. For more
+information about how to use PX_Blob to serialize/de-serialize data, Please see
+the following article in the Microsoft Knowledge Base:
+
+  Q137333 DOCERR: How to Use the PX_Blob Function
+
+To get optimal performance in IPersistStreamInit, ensure that the OLE control
+maintains a separate Serialize method that writes the CObjects directly to its
+archive. Care should be taken to save all of the control's persistent data in
+both Serialize and DoPropExchange.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+An OLE control generated using ControlWizard can read and write its persistent
+state using one of the following interfaces: IPersistMemory, IPersistStorage,
+IPersistStreamInit, IPersistPropertyBag (not implemented in versions before
+Visual C++ 4.x), and IDataObject through the property sets implementation. Each
+of these interfaces with the exception of IPersistPropertyBag and IDataObject
+call COleControl::Serialize passing in a CArchive. This archive could be used to
+store CObject-derived objects as part of the control's persistence.
+
+Some OLE control containers (like Microsoft Visual Basic) use the "save as text"
+mechanism in order to allow as much of the OLE control's state to be represented
+in a human-readable format. For optimizing this mechanism, the interfaces
+IPropertyBag and IPersistPropertyBag are used and therefore are recommended for
+containers like Visual Basic. IPropertyBag is implemented by the container and
+is roughly analogous to IStream. IPersistPropertyBag is implemented by controls
+and is roughly analogous to IPersistStream(Init).
+
+Visual Basic uses the control's IPersistPropertyBag interface, if one is
+implemented by the control, or it uses the property sets. Property sets are
+communicated from and to the control through IDataObject::GetData and
+IDataObject::SetData, implemented by the control. Note that OLE controls
+generated using earlier versions of Visual C++ don't provide an implementation
+for IPersistPropertyBag.
+
+The implementation provided by the MFC framework for IPersistPropertyBag and
+property sets directly call COleControl::DoPropExchange passing in an instance
+of either CPropbagPropExchange or CPropsetPropExchange respectively.
+
+REFERENCES
+==========
+
+OLE Controls Inside Out - by Adam Denning
+
+Additional query words: 2.00 2.10 2.20 3.00 3.10 3.20 4.00
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbCtrlCreate kbMFC kbPersistSt kbVBp400 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbVBSearch kbAudDeveloper kbPTNotAssigned kbMFC kbZNotKeyword2
+Version           : WINDOWS:4.0; winnt:2.0,2.1,2.2,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

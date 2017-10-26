@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40867: BC 6.00 Example of OS/2 API Calls DosError, DosErrClass | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40867: BC 6.00 Example of OS/2 API Calls DosError, DosErrClass" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40867/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40867/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40867/","publisher":null,"image":null,"headline":"Q40867: BC 6.00 Example of OS/2 API Calls DosError, DosErrClass","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40867-bc-600-example-of-os2-api-calls-doserror-doserrclass">Q40867: BC 6.00 Example of OS/2 API Calls DosError, DosErrClass</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40867
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | SR# S890125-55 | mspl13_basic
+Last Modified: 1-FEB-1990
+
+Below is an example of using the MS OS/2 API function DosError and
+DosErrClass. This program must be compiled with Microsoft BASIC
+Compiler Version 6.00 and 6.00b for MS OS/2 and Microsoft BASIC
+Professional Development System (PDS) Version 7.00 for MS OS/2.
+
+The following is the sample program:
+
+DEFINT a-z
+REM $include: 'bsedosfl.bi'
+REM $include: 'bsedospc.bi'
+PRINT "Note: This only affects OS/2 API calls you call"
+PRINT "      BASIC handles its own errors"
+PRINT
+PRINT "Enter (0) to SUSPEND system hard-error processing"
+INPUT "or (1) to RESUME system hard-error processing : ";y%
+PRINT
+x=DOSERROR%(y%)
+
+IF (x) THEN
+   Print "An error occurred.  The number is : ";x
+ELSE
+   Print "Hard-Error Processing Suspended"
+   Print "Open Drive Door A and Enter any Key..."
+   PRINT
+   WHILE INKEY$="" : WEND
+END IF
+fl$="A:\ABC.EXE"+chr$(0)
+
+code%=DosQFileMode(varseg(fl$),sadd(fl$),attribute%,0&amp;)
+if (code%) then
+   Print "Error Returned from DosQFileMode: " code%
+   x% = DosErrClass(code%,class%,action%,locus%)
+   IF (x%) THEN
+      PRINT "An error was received determining class"
+   ELSE
+      CALL DetermineError(class%,action%,locus%)
+   END IF
+END IF
+END
+
+SUB DetermineError(class%,action%,locus%) STATIC
+PRINT "Error Class: ";
+SELECT CASE class%
+       CASE 1
+         PRINT "ERRCLASS_OUTRES ==&gt; Out of Resource"
+       CASE 2
+         PRINT "ERRCLASS_TEMPSIT ==&gt; This is a Temporary Situation"
+       CASE 3
+         PRINT "ERRCLASS_AUTH ==&gt; Authorization has failed"
+       CASE 4
+         PRINT "ERRCLASS_INTRN ==&gt; An Internal Error has Occurred"
+       CASE 5
+         PRINT "ERRCLASS_HRDFAIL ==&gt; A Device Hardware Failure"
+       CASE 6
+         PRINT "ERRCLASS_SYSFAIL ==&gt; A System Failure has Occurred"
+       CASE 7
+PRINT "ERRCLASS_APPERR ==&gt; A Probable Application Error has Occurred"
+       CASE 8
+         PRINT "ERRCLASS_NOTFND ==&gt; The Item was not Located"
+       CASE 9
+         PRINT "ERRCLASS_BADFMT ==&gt; Bad Format"
+       CASE 10
+         PRINT "ERRCLASS_LOCKED ==&gt; Locked"
+       CASE 11
+PRINT "ERRCLASS_MEDIA ==&gt; Incorrect Media; a CRC Error has Occurred"
+       CASE 12
+         PRINT "ERRCLASS_ALREADY ==&gt; Everything is Ready"
+       CASE 13
+         PRINT "ERRCLASS_UNK ==&gt; Error is Unclassified"
+       CASE 14
+         PRINT "ERRCLASS_CANT ==&gt; Cannot perform Requested Action"
+       CASE 15
+         PRINT "ERRCLASS_TIME ==&gt; Time-out has Occurred"
+       CASE ELSE
+         PRINT "UnKnown Class"
+END SELECT
+Print "Recommended Action: ";
+SELECT CASE action%
+       CASE 1
+         PRINT "ERRACT_RETRY ==&gt; Retry Immediately"
+       CASE 2
+         PRINT "ERRACT_DLYRET ==&gt; Delay and Retry"
+       CASE 3
+         PRINT "ERRACT_USER ==&gt; Bad User Input; Get New values"
+       CASE 4
+         PRINT "ERRACT_ABORT ==&gt; Terminate in an Orderly Manner"
+       CASE 5
+         PRINT "ERRACT_PANIC ==&gt; Terminate Immediately"
+       CASE 6
+         PRINT "ERRACT_IGNORE ==&gt; Ignore the Error"
+       CASE 7
+         PRINT "ERRACT_INTRET ==&gt; Retry After User Intervention"
+       CASE ELSE
+         PRINT "UnKnown Class"
+END SELECT
+PRINT "Location: ";
+SELECT CASE locus%
+       CASE 1
+         PRINT "ERRLOC_UNK ==&gt; The Origin of the Error is Unknown"
+       CASE 2
+         PRINT "ERRLOC_DISK ==&gt; The Error Occurred in a Random-Access"
+         PRINT "                Device, such as a Disk Drive"
+       CASE 3
+         PRINT "ERRLOC_NET ==&gt; This is a Network Error"
+       CASE 4
+         PRINT "ERRLOC_SERDEV ==&gt; This is a Serial-Device Error"
+       CASE 5
+         PRINT "ERRLOC_MEM ==&gt; This is a Memory Parameter Error"
+       CASE ELSE
+         PRINT "Unknown Location Error"
+END SELECT
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

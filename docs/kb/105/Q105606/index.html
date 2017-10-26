@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105606: MS-DOS 6.2 DBLSPACE.INF File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105606: MS-DOS 6.2 DBLSPACE.INF File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105606/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105606/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105606/","publisher":null,"image":null,"headline":"Q105606: MS-DOS 6.2 DBLSPACE.INF File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105606-ms-dos-62-dblspaceinf-file">Q105606: MS-DOS 6.2 DBLSPACE.INF File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105606
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a complete listing of the MS-DOS 6.2 DBLSPACE.INF file.
+
+MORE INFORMATION
+================
+
+  ; Microsoft DoubleSpace Setup Information File
+  ;
+  ; This file customizes the behavior of DoubleSpace when it is compressing
+  ; existing drives or creating new drives.
+
+  ;
+  ; Commands under [SpecialFiles] indicate actions to be taken for specific
+  ; files; the options are COPY=filename, IGNORE=filename, and
+  ; MOVE=filename. Without a path, any file of that name will match;
+  ; wildcards (?, *) are acceptable.
+  ;
+  ;   COPY=
+  ;     Specified file(s) are copied to compresed drive, and left behind on
+  ;     the uncompressed drive.
+  ;
+  ;   IGNORE=
+  ;     Specified file(s) are left behind on the uncompressed drive.
+  ;
+  ;   MOVE=
+  ;     Specified file(s) are moved to the compressed drive.  This is the
+  ;     default behavior for all files, except those with the SYSTEM
+  ;     attribute.
+  ;
+  [SpecialFiles]
+  ;
+  ;  The following two exceptions are for Microsoft Chart, French version:
+
+     MOVE=MC.COM
+     MOVE=MCA
+
+  ;
+  ;  The following two exceptions are for Microsoft Multiplan, French
+  ; version:
+  ;
+
+     MOVE=PLAN.COM
+     MOVE=MPA
+
+  ;
+  ;  The following two exceptions are for Microsoft Word, French version:
+  ;
+
+     MOVE=MW.COM
+     MOVE=MWA
+
+  ;
+  ;  The following exception is for Norton Anti-Virus:
+  ;
+
+     COPY=NAV_.SYS
+  ;
+  ;  The next two are for drivers required to access the hard disk, whose
+  ;  absence could cause data loss [rather than refused access]
+  ;  if they were not loaded during recovery from an unexpected reboot
+  ;  while compressing a drive.
+  ;
+     COPY=ASPI4DOS.SYS
+     COPY=USPI14.SYS
+
+  ;
+  ; Programs under [CopyFiles] are optional utilities that will be left on
+  ; the original boot drive if there is enough space.
+  ;
+  [CopyFiles]
+     MSD.EXE
+     MEM.EXE
+
+  ;
+  ; Programs under [dangerous] will be REM'ed out of config.sys during
+  ; DoubleSpace Setup, and will be restored when Setup is complete.
+  ;
+  [Dangerous]
+     PROTMAN
+     WORKGRP
+     UBNEI
+     UBXPS
+     ELNKII
+     INTERLNK
+     MC.SYS
+     FASTOPEN
+
+  ;
+  ; Programs under [prior] will have DEVICEHIGH=DBLSPACE.SYS placed -
+  ; before- them in config.sys.  This is done to avoid memory
+  ; incompatibilities. Note that it is okay to have multiple DBLSPACE.SYS
+  ; lines in config.sys; any redundant loads are ignored.
+  ;
+  [Prior]
+     PROTMAN
+
+  ;
+  ; [Fragments] accepts two lines:  Initial=#### and Addition=#### .
+  ; Initial is the number of fragments which will be allowed during SETUP
+  ; Addition is the number of fragments we allow, above that which is
+  ; currently in use, at all other times with DoubleSpace.
+  ;
+  [Fragments]
+     Initial=10000
+     Addition=110
+
+  [UncompressSpecial]
+   DONTCOPY=DBLSPACE.INI
+   DONTCOPY=DBLSPACE.BIN
+
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

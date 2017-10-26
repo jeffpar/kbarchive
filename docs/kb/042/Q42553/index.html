@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42553: &quot;Illegal Function Call&quot; Using VIEW, WINDOW, GET, or PUT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42553: &quot;Illegal Function Call&quot; Using VIEW, WINDOW, GET, or PUT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42553/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42553/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42553/","publisher":null,"image":null,"headline":"Q42553: &quot;Illegal Function Call&quot; Using VIEW, WINDOW, GET, or PUT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42553-illegal-function-call-using-view-window-get-or-put">Q42553: "Illegal Function Call" Using VIEW, WINDOW, GET, or PUT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42553
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890130-51 B_BasicCom | mspl13_basic
+Last Modified: 16-DEC-1989
+
+When using the QuickBASIC graphics functions GET, PUT, VIEW, and
+WINDOW, it is very easy to encounter the error "Illegal Function
+Call." The error can be generated for many reasons.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS Version 7.00
+for MS-DOS and MS OS/2.
+
+If you encounter the above error, the following are some suggestions
+for determining where the error occurs:
+
+1. If "Illegal Function Call" occurs on a GET statement, do the
+   following:
+
+   a. Make sure you are actually GETting part of the screen or VIEW.
+
+   b. Make sure your array is large enough to hold the image. There is
+      a formula in the "Microsoft QuickBASIC: Programming in BASIC"
+      manual for Version 4.50 on Page 194 that calculates the size of
+      the array:
+
+      sizeinbytes=4+height*planes*INT((width*bitsperpixel/planes+7)/8)
+
+2. If "Illegal Function Call" occurs on the PUT statement, do the
+   following:
+
+   a. Make sure you are PUTting the image within the boundary of your
+      WINDOW or VIEW statement.
+
+   b. Certain problems that occur with the WINDOW statement may not
+      occur with the WINDOW SCREEN statement. The use of this
+      statement is discussed in the "Microsoft QuickBASIC 4.0: BASIC
+      Language Reference" manual for Versions 4.00 and 4.00b.
+
+3. If you use the following code example, when run under QuickBASIC
+   Version 4.50, you will get an "Illegal Function Call" when trying
+   to execute the PUT statement:
+
+   DEFINT A-Z
+   DIM image(40) AS LONG
+   SCREEN 9
+   VIEW (0,0)-(300,95)     ' Sets the view for the screen
+   WINDOW (0,0)-(300,190)  ' Sets screen coordinates
+   LINE (0,0)-(300,190),,B ' Draws a box around the vie
+   GET (0,1)-(0,189),Image ' Gets vertical image
+   SLEEP       10                ' Pause
+   PUT (0,1),Image,PSET    ' Put image back to screen
+   SLEEP 10                ' Pause
+
+   This error can be corrected in one of two ways:
+
+   a. The VIEW statement can be enlarged, from 95 to 96 or more.
+
+   b. The WINDOW statement can be changed to a WINDOW SCREEN.
+
+   The current program will not accept values of 95 or less with the
+   current WINDOW statement, but it will if a WINDOW SCREEN is used.
+   This WINDOW SCREEN statement alters the coordinates of the screen
+   to create a right-hand coordinate system.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

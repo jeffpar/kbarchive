@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161053: FIX: CALCULATE SUM() on Currency Field Gives Illegal Operation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161053: FIX: CALCULATE SUM() on Currency Field Gives Illegal Operation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161053/","publisher":null,"image":null,"headline":"Q161053: FIX: CALCULATE SUM() on Currency Field Gives Illegal Operation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161053-fix-calculate-sum-on-currency-field-gives-illegal-operation">Q161053: FIX: CALCULATE SUM() on Currency Field Gives Illegal Operation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161053
+Product(s): Microsoft FoxPro
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbprogramming kbvfp kbvfp500aFIX kbvfp500bugkbbuglist kbfixlist
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Performing a comparison on a value created with the CALCULATE SUM() function
+causes and illegal operation error. In Windows 95, the error message states the
+following:
+
+  This program performed an illegal operation and will be shut down.
+
+After pressing the Details push button, the following message appears:
+
+  VFP caused and invalid pagefault in module VFP .EXE at &lt;register
+  address&gt;.
+
+In Windows NT 4.0, the following error appears:
+
+  An application error had occurred and an application error log is being
+  generated.
+  VFP.EXE
+  Exception: access violation.
+
+This behavior does not occur in Visual FoxPro 3.0a.
+
+RESOLUTION
+==========
+
+The use of the STR() and VAL() functions may prevent this error. The modified
+code example below shows the implementation of this resolution:
+
+     SET TALK OFF
+     CREATE TABLE junk (amt y)
+     INSERT INTO junk (amt) VALUE(1.00)
+     INSERT INTO junk (amt) VALUE(0.20)
+     CALCULATE SUM(amt) TO mx
+     mx=STR(mx)  &amp;&amp; Converts the value from numeric to character type.
+     mz = (VAL(mx) &lt; 0)  &amp;&amp; Converts mx back to numeric data type.
+     ? mz
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro
+5.0a.
+
+MORE INFORMATION
+================
+
+The following code illustrates this behavior. The use of other aggregate
+functions, such as AVG(), in the CALCULATE function produces similar results.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Enter the following code in a program and execute:
+
+     SET TALK OFF
+     CREATE TABLE junk (amt y)
+     INSERT INTO junk (amt) VALUE(1.00)
+     INSERT INTO junk (amt) VALUE(0.20)
+     CALCULATE SUM(amt) TO mx
+     mz = (mx &lt; 0)
+     ? mz
+
+The error occurs during the comparison of the variable created with the CALCULATE
+SUM() function and another value. In the example above, initially declaring the
+variable mx numeric does not prevent the error.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aFIX kbvfp500bug kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149333: XADM: The Basics of Advanced Security | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149333: XADM: The Basics of Advanced Security" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149333/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149333/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149333/","publisher":null,"image":null,"headline":"Q149333: XADM: The Basics of Advanced Security","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149333-xadm-the-basics-of-advanced-security">Q149333: XADM: The Basics of Advanced Security</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149333
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 22-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Advanced Security is enabled on a user's mailbox, they can enable the
+Advanced Security features of Microsoft Exchange by using either the Microsoft
+Exchange Administrator program or a Microsoft Exchange client. To do this, they
+will need to check the Message Encryption and Digital Signatures options
+available by choosing Tools, Options, and the Security tab.
+
+If these features are enabled and another user also has these features enabled,
+messages sent between those users are encrypted and they cannot be "sniffed" on
+the network. These features prevents potential security breaches such as reading
+or modifying the messages on the network. However, the message cannot be sent in
+encrypted format if the recipient has not enabled the Advanced Security
+features.
+
+Once the encrypted message arrives at the recipient's mailbox, the message can be
+opened by typing in a password. The message is then decrypted and appears as a
+normal message to the recipient. The message can be modified and forwarded to
+other users. As long as the message is sent to users that have the Advanced
+Security features turned on, the message will be encrypted again on the network
+each time it is sent.
+
+MORE INFORMATION
+================
+
+Advanced Security features can be enabled by installing the Microsoft Exchange
+Key Management server from the Microsoft Exchange Server CD in the
+SETUP\&lt;platform&gt;\EXCHKM directory. Once installed, a new service will be
+available in Control Panel-Services. This is the Microsoft Exchange Key Manager
+service.
+
+The following processes must occur for these features to work:
+
+1. The Key Manager service must be running on a single server in the
+  organization.
+
+2. Each individual mailbox must have the Advanced Security features enabled
+  using the Microsoft Exchange Administrator program.
+
+3. The client must receive a special token from the administrator so they can
+  enable the Advanced Security features for their mailbox (a local.EPF file is
+  created containing the security information of the client).
+
+4. The client must turn on Message Encryption and Digital Signature features in
+  the Microsoft Exchange Client by choosing the Tools menu, Options, and the
+  Security tab.
+
+There are three different encryption formats are available in the North American
+version of Microsoft Exchange:
+
+- CAST-64
+
+- DES
+
+- CAST-40
+
+Only CAST-40 is available for localized versions of Microsoft Exchange.
+
+If there is a potential breach of security occurring with the Microsoft Exchange
+messaging system, the format can be changed at any point.
+
+There will be no limitations on what can be done to the messages once they are
+opened.
+
+The following are the changes noticeable by the clients:
+
+1. If the message sender has Advanced Security enabled and is sending to other
+  users with the features enabled, the sender will be prompted for a password
+  when sending the message.
+
+2. If message recipients have the Advanced Security features disabled, the
+  sender has to send the message unencrypted or Cancel the message.
+
+3. If the message sender has Advanced Security enabled and sends a message to
+  some users with Advanced Security enabled and other users with this feature
+  disabled, the sender has three options:
+
+   - The sender can remove the recipients without the Advanced Security
+     features enabled from the list.
+
+   - Send the message unencrypted to all recipients on the list.
+
+   - Cancel sending the message.
+
+4. If the message sender has the Advanced Security features disabled, messages
+  are sent unencrypted. The recipient of the message can open the message,
+  whether Advanced Security is enabled or disabled.
+
+REFERENCES
+==========
+
+Microsoft Exchange Administrator's Guide, Microsoft Exchange Concepts and
+Planning Guide (Chapter 4).
+
+Additional query words: KM Server
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

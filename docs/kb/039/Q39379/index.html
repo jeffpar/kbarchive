@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q39379: QB.EXE 4.50 &quot;Binding…&quot; then Hang If SWAP User-TYPE Strings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q39379: QB.EXE 4.50 &quot;Binding…&quot; then Hang If SWAP User-TYPE Strings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/039/Q39379/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/039/Q39379/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/039/Q39379/","publisher":null,"image":null,"headline":"Q39379: QB.EXE 4.50 &quot;Binding…&quot; then Hang If SWAP User-TYPE Strings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q39379-qbexe-450-binding-then-hang-if-swap-user-type-strings">Q39379: QB.EXE 4.50 "Binding…" then Hang If SWAP User-TYPE Strings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q39379
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist4.50 SR# S881206-72 | mspl13_basic
+Last Modified: 24-MAR-1989
+
+SWAPping two string variables that are fields of a user-defined type
+can display the "Binding..." message and then hang the QuickBASIC
+QB.EXE Version 4.50 editor. Hanging does not happen SWAPping
+non-user-defined type strings or other types of variables. The hanging
+does not occur in programs compiled with BC.EXE Version 4.50, it is
+just a QB.EXE editor problem.
+
+Microsoft has confirmed this to be a problem in Version 4.50. We are
+researching this problem and will post new information as it becomes
+available.
+
+QB.EXE Versions 4.00 and 4.00b do not have this problem.
+
+Putting the TYPE variables in either $DYNAMIC or $STATIC arrays still
+hangs. If an INTEGER or DOUBLE appears in the record before the string
+field that is being swapped, then you can usually warm reboot,
+otherwise it usually requires a cold reboot. Other variables such as
+floating point or other TYPES do not prevent the cold reboot. Which
+String is swapped (1-5) in the following record makes no difference.
+
+Swapping any non-string type of field in a user-defined record does
+not hang the computer. Swapping both variable- and fixed-length
+strings as single variables (not in record) also does not hang the
+computer.
+
+The following code demonstrates the problem:
+
+   TYPE rectype
+      num1 AS INTEGER
+      string1 AS STRING * 16
+      string2 AS STRING * 16
+      string3 AS STRING * 16
+      string4 AS STRING * 16
+      string5 AS STRING * 16
+   END TYPE
+   DIM var1  AS rectype, var2 AS rectype
+   var1.string1 = "String1"
+   var2.string1 = "String2"
+   SWAP var1.string1, var2.string1
+   ' The QB.EXE environment will freeze up at this SWAP statement.
+
+To work around the problem, use a standard swapping technique with two
+variables and a temporary variable:
+
+   DIM var1 as rectype, var2 as rectype, temp as rectype
+   temp.string1 = var1.string1      ' 1. a -&gt; temp
+   var1.string1 = var2.string1      ' 2. b -&gt; a
+   var2.string1 = temp.string1      ' 3. temp -&gt; b
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

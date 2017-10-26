@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199977/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199977/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199977/","publisher":null,"image":null,"headline":"Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199977-xfor-common-linkage-v32-exchange-notes-connector-problem">Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199977
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): exc4 exc5
+Last Modified: 22-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This articles provides a guide to common LinkAge V3.2 Exchange-Notes Connector
+problems.
+
+Most common Exchange-Notes Connector problems can be easily solved if their
+causes are narrowed down. In most cases, the automatically generated LinkAge
+logs will contain the information needed to find the problem. Use the following
+points to further investigate and possibly solve the problem:
+
+- What versions of Windows NT, Microsoft Exchange and Lotus Notes (build and
+  language) are you using? Make sure the LinkAge Connector is certified against
+  the foreign language products, if other than English.
+
+- The Notes Connector should be set as Admin Service Account in Exchange
+  Server.
+
+- The Connector's user ID (as created in Notes) should be the one used to
+  establish a session to the Notes server. Check this user ID by quiting any
+  Notes clients on the Connector computer. Use Task Manager to stop the
+  Nlnotes.exe process (if it is running). Then launch the Notes client and
+  verify the userid.
+
+- Verify that you only have one NNOTES.DLL file in the \NOTES\DATA directory
+  and nowhere else on the Connector box. The \NOTES\DATA directory may need to
+  be added to the system path. You can modify the system path through Control
+  Panel-System-Environment. The machine might need to be rebooted for the new
+  path to take effect.
+
+- The Connector's Access Control on Exchange.box and Exchange.bad databases in
+Notes should be set to MANAGER with DELETE permission. The Access Control should
+be set to DEPOSITOR on Mail.box. ith older version of Notes (earlier than
+Release 4.5.1), setting the access control on Mail.box to MANAGER with DELETE
+permissions will solve mail delivery/routing problems.
+
+- Have you applied the latest patch- Check the patches.txt file found in the
+LINKAGE directory.
+
+- Confirm that you have the driver RPCDCE4.DLL in your system path. If not, copy
+this DLL from any NT 3.51 machine or from the LINKAGE directory to the
+\WINNT\SYSTEM32 directory (or any other one in the path).
+
+- In case you see MAPI-related errors in the LinkAge log. Delete the MAPI profile
+for the connector by logging into the NT account that is used to run the LinkAge
+Connector, run REGEDT32 and delete the following hive:
+
+  HKEY_CURRENT_USER\Software\Microsoft\Windows NT\Current Version \Windows
+  Messaging Subsystem\Profiles\&lt;servername&gt;-LME-NOTES V3.
+
+Recycle all MAPI-based services (i.e. Exchange Server) and Connector. MAPI
+profiles are not deleted on a machine until all MAPI clients are stopped. That
+is, stop the LinkAge services, then stop Exchange services. Now start Exchange,
+then LinkAge.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

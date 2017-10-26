@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q311766: HOW TO: Troubleshoot &quot;HTTP 500 - Internal Server Error&quot; Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q311766: HOW TO: Troubleshoot &quot;HTTP 500 - Internal Server Error&quot; Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/311/Q311766/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/311/Q311766/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/311/Q311766/","publisher":null,"image":null,"headline":"Q311766: HOW TO: Troubleshoot &quot;HTTP 500 - Internal Server Error&quot; Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q311766-how-to-troubleshoot-http-500---internal-server-error-message">Q311766: HOW TO: Troubleshoot "HTTP 500 - Internal Server Error" Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q311766</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">4.0</span><span class="p">,</span><span class="m">5.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbAudITPro</span> <span class="n">kbHOWTOmaster</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">29</span><span class="p">-</span><span class="n">APR</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">4.0</span><span class="p">,</span> <span class="m">5.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="k">IN</span> <span class="n">THIS</span> <span class="n">TASK</span>
+
+<span class="p">-</span> <span class="n">SUMMARY</span>
+
+   <span class="p">-</span> <span class="n">When</span> <span class="n">You</span> <span class="n">Try</span> <span class="k">to</span> <span class="nf">Load</span> <span class="n">the</span> <span class="n">Localstart</span><span class="p">.</span><span class="n">asp</span> <span class="n">File</span>
+<span class="p">-</span> <span class="n">When</span> <span class="n">You</span> <span class="n">Browse</span> <span class="n">an</span> <span class="n">ASP</span> <span class="n">Page</span>
+<span class="p">-</span> <span class="n">When</span> <span class="n">IIS</span> <span class="m">5.0</span> <span class="n">Returns</span> <span class="n">a</span> <span class="n">Server</span><span class="p">.</span><span class="n">GetLastError</span> <span class="n">Error</span> <span class="n">Message</span>
+<span class="p">-</span> <span class="n">When</span> <span class="n">You</span> <span class="n">Assign</span> <span class="n">a</span> <span class="n">Category</span> <span class="k">to</span> <span class="n">a</span> <span class="n">File</span> <span class="n">on</span> <span class="n">Alpha</span> <span class="k">or</span> <span class="n">UNIX</span>
+<span class="p">-</span> <span class="n">When</span> <span class="n">You</span> <span class="n">Use</span> <span class="n">the</span> <span class="m">500</span><span class="p">-</span><span class="m">100.</span><span class="n">asp</span> <span class="n">File</span> <span class="n">for</span> <span class="n">Error</span> <span class="n">Handling</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Non</span><span class="p">-</span><span class="n">Default</span> <span class="n">Web</span>
+  <span class="n">Site</span>
+<span class="p">-</span> <span class="n">When</span> <span class="n">You</span> <span class="n">Execute</span> <span class="n">a</span> <span class="n">Query</span> <span class="k">in</span> <span class="n">Index</span> <span class="n">Server</span>
+<span class="p">-</span> <span class="n">When</span> <span class="n">You</span> <span class="n">Access</span> <span class="n">a</span> <span class="n">Provider</span> <span class="k">from</span> <span class="n">Within</span> <span class="n">an</span> <span class="n">ASP</span> <span class="n">Page</span>
+<span class="p">-</span> <span class="n">When</span> <span class="n">You</span> <span class="k">Set</span> <span class="n">the</span> <span class="n">COM</span><span class="p">+</span> <span class="n">Application</span> <span class="n">Identity</span> <span class="n">on</span> <span class="n">IIS</span> <span class="m">5.0</span>
+<span class="p">-</span> <span class="n">When</span> <span class="n">You</span> <span class="k">Set</span> <span class="n">the</span> <span class="n">MTS</span> <span class="n">Application</span> <span class="n">Identity</span> <span class="n">on</span> <span class="n">IIS</span> <span class="m">4.0</span>
+
+<span class="p">-</span> <span class="n">When</span> <span class="n">IIS</span> <span class="m">4.0</span> <span class="n">Runs</span> <span class="k">in</span> <span class="n">its</span> <span class="n">Own</span> <span class="n">Memory</span> <span class="n">Space</span>
+
+<span class="p">-</span> <span class="n">REFERENCES</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">how</span> <span class="k">to</span> <span class="n">troubleshoot</span> <span class="s2">"HTTP 500 - Internal server error"</span>
+<span class="n">errors</span><span class="p">.</span> <span class="n">These</span> <span class="n">errors</span> <span class="n">have</span> <span class="n">a</span> <span class="n">number</span> <span class="k">of</span> <span class="n">causes</span> <span class="k">and</span> <span class="n">can</span> <span class="n">affect</span> <span class="n">many</span> <span class="n">different</span>
+<span class="nf">system</span> <span class="n">configurations</span><span class="p">.</span> <span class="n">The</span> <span class="n">procedures</span> <span class="n">are</span> <span class="n">classified</span> <span class="n">by</span> <span class="n">the</span> <span class="n">situation</span> <span class="k">in</span> <span class="n">which</span>
+<span class="n">the</span> <span class="n">problem</span> <span class="n">occurs</span><span class="p">.</span> <span class="n">A</span> <span class="n">member</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Administrators</span> <span class="n">group</span> <span class="n">must</span> <span class="n">perform</span> <span class="n">all</span> <span class="k">of</span> <span class="n">the</span>
+<span class="n">procedures</span> <span class="n">that</span> <span class="n">this</span> <span class="n">article</span> <span class="n">describes</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">You</span> <span class="n">Try</span> <span class="k">to</span> <span class="nf">Load</span> <span class="n">the</span> <span class="n">Localstart</span><span class="p">.</span><span class="n">asp</span> <span class="n">File</span>
+<span class="p">--------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">default</span> <span class="n">documents</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">site</span><span class="p">,</span> <span class="n">Iisstart</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">tries</span> <span class="k">to</span> <span class="nf">load</span>
+<span class="n">the</span> <span class="n">Localstart</span><span class="p">.</span><span class="n">asp</span> <span class="n">file</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">user</span> <span class="n">who</span> <span class="n">tries</span> <span class="k">to</span> <span class="n">access</span> <span class="n">the</span> <span class="n">page</span> <span class="n">does</span> <span class="k">not</span> <span class="n">have</span>
+<span class="n">the</span> <span class="n">correct</span> <span class="n">permissions</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">script</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Localstart</span><span class="p">.</span><span class="n">asp</span> <span class="n">file</span> <span class="n">contains</span><span class="p">,</span>
+<span class="n">you</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">HTTP</span> <span class="m">500</span> <span class="n">error</span> <span class="n">message</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">clear</span> <span class="n">the</span> <span class="n">Show</span> <span class="n">Friendly</span> <span class="n">HTTP</span> <span class="n">Error</span>
+<span class="n">Messages</span> <span class="n">check</span> <span class="n">box</span><span class="p">,</span> <span class="n">you</span> <span class="n">see</span> <span class="n">information</span> <span class="n">similar</span> <span class="k">to</span> <span class="n">the</span> <span class="n">following</span> <span class="k">with</span> <span class="n">the</span> <span class="n">HTTP</span>
+<span class="m">500</span> <span class="n">error</span> <span class="n">message</span><span class="p">:</span>
+
+  <span class="n">Error</span> <span class="n">Type</span><span class="p">:</span>
+  <span class="n">Microsoft</span> <span class="n">VBScript</span> <span class="n">runtime</span> <span class="p">(</span><span class="m">0x800A0046</span><span class="p">)</span>
+  <span class="n">Permission</span> <span class="n">denied</span><span class="p">:</span> <span class="s1">'GetObject'</span>
+  <span class="p">/</span><span class="n">localstart</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">line</span> <span class="m">19</span>
+
+<span class="n">This</span> <span class="n">problem</span> <span class="n">occurs</span> <span class="n">because</span> <span class="n">the</span> <span class="n">Localstart</span><span class="p">.</span><span class="n">asp</span> <span class="n">file</span> <span class="n">contains</span> <span class="n">Active</span> <span class="n">Directory</span>
+<span class="n">Service</span> <span class="n">Interfaces</span> <span class="p">(</span><span class="n">ADSI</span><span class="p">)</span> <span class="k">and</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Scripting</span> <span class="n">Edition</span> <span class="p">(</span><span class="n">VBScript</span><span class="p">)</span> <span class="n">code</span>
+<span class="n">that</span> <span class="k">uses</span> <span class="n">the</span> <span class="n">IIS</span> <span class="n">Admin</span> <span class="n">Objects</span> <span class="k">to</span> <span class="n">access</span> <span class="n">the</span> <span class="n">metabase</span><span class="p">.</span> <span class="n">For</span> <span class="n">security</span> <span class="n">reasons</span><span class="p">,</span>
+<span class="n">access</span> <span class="k">to</span> <span class="n">the</span> <span class="n">metabase</span> <span class="n">is</span> <span class="n">restricted</span> <span class="k">to</span> <span class="n">members</span> <span class="k">of</span> <span class="n">the</span> <span class="n">local</span> <span class="n">Administrators</span>
+<span class="n">group</span><span class="p">.</span> <span class="n">This</span> <span class="n">behavior</span> <span class="n">is</span> <span class="n">by</span> <span class="n">design</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Click</span> <span class="n">Start</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Programs</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Administrative</span> <span class="n">Tools</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span>
+  <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Services</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">console</span> <span class="n">tree</span><span class="p">,</span> <span class="n">click</span> <span class="n">Default</span> <span class="n">Web</span> <span class="n">Site</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">display</span> <span class="n">pane</span><span class="p">,</span> <span class="n">right</span><span class="p">-</span><span class="n">click</span>
+  <span class="n">Localstart</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">File</span> <span class="n">Security</span> <span class="n">tab</span><span class="p">,</span> <span class="n">click</span> <span class="n">Edit</span> <span class="n">under</span> <span class="n">Anonymous</span> <span class="n">access</span> <span class="k">and</span>
+  <span class="n">authentication</span> <span class="n">control</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Authentication</span> <span class="n">Methods</span> <span class="n">property</span> <span class="n">page</span><span class="p">,</span> <span class="n">click</span> <span class="k">to</span> <span class="n">clear</span> <span class="n">Anonymous</span> <span class="n">access</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">You</span> <span class="n">Browse</span> <span class="n">an</span> <span class="n">ASP</span> <span class="n">Page</span>
+<span class="p">---------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">browse</span> <span class="n">an</span> <span class="n">Active</span> <span class="n">Server</span> <span class="n">Pages</span> <span class="p">(</span><span class="n">ASP</span><span class="p">)</span> <span class="n">Web</span> <span class="n">page</span><span class="p">,</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">an</span> <span class="s2">"HTTP
+500.100 - Internal Server Error - ASP error"</span> <span class="n">error</span> <span class="n">message</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">clear</span> <span class="n">the</span>
+<span class="n">Show</span> <span class="n">Friendly</span> <span class="n">HTTP</span> <span class="n">Error</span> <span class="n">Messages</span> <span class="n">check</span> <span class="n">box</span><span class="p">,</span> <span class="n">you</span> <span class="n">see</span> <span class="n">information</span> <span class="n">similar</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">following</span> <span class="k">in</span> <span class="n">the</span> <span class="s2">"Technical Information (for support personnel)"</span> <span class="n">section</span><span class="p">:</span>
+
+  <span class="n">Error</span> <span class="n">Type</span><span class="p">:</span>
+  <span class="n">Microsoft</span> <span class="n">VBScript</span> <span class="n">runtime</span> <span class="p">(</span><span class="m">0x800A01F4</span><span class="p">)</span>
+  <span class="n">Variable</span> <span class="n">is</span> <span class="n">undefined</span><span class="p">:</span> <span class="s1">'x'</span>
+  <span class="p">/</span><span class="n">OptionExplicitError</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">line</span> <span class="m">9</span>
+
+  <span class="n">Page</span><span class="p">:</span>
+  <span class="n">GET</span> <span class="p">/</span><span class="n">OptionExplicitError</span><span class="p">.</span><span class="n">asp</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">either</span> <span class="n">remove</span> <span class="n">the</span> <span class="n">Option</span> <span class="n">Explicit</span> <span class="n">statement</span> <span class="k">or</span> <span class="n">use</span> <span class="n">the</span>
+<span class="n">DIM</span> <span class="n">keyword</span> <span class="k">to</span> <span class="n">declare</span> <span class="n">the</span> <span class="n">variable</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">reproduce</span> <span class="n">this</span> <span class="n">behavior</span><span class="p">,</span> <span class="nf">run</span> <span class="n">an</span> <span class="n">ASP</span> <span class="n">file</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">following</span> <span class="n">code</span> <span class="k">in</span> <span class="n">a</span>
+<span class="n">virtual</span> <span class="n">directory</span> <span class="n">that</span> <span class="n">permits</span> <span class="n">script</span> <span class="n">execution</span><span class="p">:</span>
+
+  <span class="p">&lt;%</span> <span class="n">Option</span> <span class="n">Explicit</span> <span class="p">%&gt;</span>
+     <span class="p">&lt;</span><span class="n">HTML</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="n">HEAD</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="n">TITLE</span><span class="p">&gt;</span><span class="m">500</span><span class="p">-</span><span class="m">100</span> <span class="n">Undeclared</span> <span class="n">Variable</span><span class="p">&lt;/</span><span class="n">TITLE</span><span class="p">&gt;</span>
+     <span class="p">&lt;/</span><span class="n">HEAD</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="n">BODY</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="n">P</span><span class="p">&gt;</span><span class="n">About</span> <span class="k">to</span> <span class="n">use</span> <span class="n">an</span> <span class="n">undeclared</span> <span class="n">variable</span><span class="p">&lt;/</span><span class="n">P</span><span class="p">&gt;</span>
+     <span class="p">&lt;%</span> 
+       <span class="n">x</span> <span class="p">=</span> <span class="m">5</span>
+     <span class="p">%&gt;</span>
+     <span class="p">&lt;/</span><span class="n">B</span><span class="p">&gt;&lt;/</span><span class="n">P</span><span class="p">&gt;</span>
+     <span class="p">&lt;/</span><span class="n">BODY</span><span class="p">&gt;</span>
+     <span class="p">&lt;/</span><span class="n">HTML</span><span class="p">&gt;</span>
+
+<span class="k">To</span> <span class="n">fix</span> <span class="n">this</span> <span class="n">example</span><span class="p">,</span> <span class="n">use</span> <span class="n">the</span> <span class="n">DIM</span> <span class="n">statement</span> <span class="k">to</span> <span class="n">declare</span> <span class="n">the</span> <span class="n">X</span> <span class="n">variable</span><span class="p">,</span> <span class="k">as</span>
+<span class="n">follows</span><span class="p">:</span>
+
+  <span class="p">&lt;%</span> <span class="n">Option</span> <span class="n">Explicit</span> <span class="p">%&gt;</span>
+     <span class="p">&lt;</span><span class="n">HTML</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="n">HEAD</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="n">TITLE</span><span class="p">&gt;</span><span class="m">500</span><span class="p">-</span><span class="m">100</span> <span class="n">Undeclared</span> <span class="n">Variable</span><span class="p">&lt;/</span><span class="n">TITLE</span><span class="p">&gt;</span>
+     <span class="p">&lt;/</span><span class="n">HEAD</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="n">BODY</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="n">P</span><span class="p">&gt;</span><span class="n">About</span> <span class="k">to</span> <span class="n">use</span> <span class="n">an</span> <span class="n">undeclared</span> <span class="n">variable</span><span class="p">&lt;/</span><span class="n">P</span><span class="p">&gt;</span>
+     <span class="p">&lt;%</span> 
+       <span class="n">DIM</span> <span class="n">x</span>
+       <span class="n">x</span> <span class="p">=</span> <span class="m">5</span>
+     <span class="p">%&gt;</span>
+     <span class="p">&lt;/</span><span class="n">B</span><span class="p">&gt;&lt;/</span><span class="n">P</span><span class="p">&gt;</span>
+     <span class="p">&lt;/</span><span class="n">BODY</span><span class="p">&gt;</span>
+     <span class="p">&lt;/</span><span class="n">HTML</span><span class="p">&gt;</span>
+
+<span class="n">When</span> <span class="n">IIS</span> <span class="m">5.0</span> <span class="n">Returns</span> <span class="n">a</span> <span class="n">Server</span><span class="p">.</span><span class="n">GetLastError</span> <span class="n">Error</span> <span class="n">Message</span>
+<span class="p">--------------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">a</span> <span class="n">Web</span> <span class="n">application</span> <span class="k">or</span> <span class="n">page</span> <span class="n">is</span> <span class="k">not</span> <span class="n">available</span><span class="p">,</span> <span class="n">IIS</span> <span class="n">returns</span> <span class="n">an</span> <span class="n">error</span> <span class="n">message</span><span class="p">.</span> <span class="k">As</span>
+<span class="n">a</span> <span class="n">result</span><span class="p">,</span> <span class="n">a</span> <span class="n">customized</span> <span class="n">ASP</span> <span class="n">page</span> <span class="n">handles</span> <span class="n">the</span> <span class="n">response</span> <span class="n">for</span> <span class="n">server</span><span class="p">-</span><span class="n">side</span> <span class="n">script</span>
+<span class="n">errors</span><span class="p">.</span> <span class="n">This</span> <span class="n">page</span> <span class="n">returns</span> <span class="n">a</span> <span class="n">status</span> <span class="k">of</span> <span class="s2">"500 Internal Server Error"</span><span class="p">,</span> <span class="n">which</span> <span class="n">causes</span>
+<span class="n">the</span> <span class="n">client</span><span class="p">-</span><span class="n">side</span> <span class="n">remote</span> <span class="n">scripting</span> <span class="n">applet</span> <span class="k">to</span> <span class="n">return</span> <span class="n">no</span> <span class="n">data</span> <span class="k">to</span> <span class="n">the</span> <span class="n">remote</span>
+<span class="n">scripting</span> <span class="n">object</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">custom</span> <span class="n">error</span> <span class="n">page</span> <span class="n">that</span> <span class="n">returns</span> <span class="n">a</span> <span class="n">status</span> <span class="k">of</span> <span class="s2">"200
+OK"</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">reference</span> <span class="n">this</span> <span class="n">page</span> <span class="k">in</span> <span class="n">the</span> <span class="s2">"Custom Errors"</span> <span class="n">section</span> <span class="k">of</span> <span class="n">your</span> <span class="n">remote</span>
+<span class="n">scripting</span> <span class="n">server</span> <span class="n">page</span> <span class="k">or</span> <span class="n">application</span><span class="p">.</span> <span class="k">To</span> <span class="k">do</span> <span class="n">this</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">You</span> <span class="n">can</span> <span class="k">set</span> <span class="n">this</span> <span class="n">custom</span> <span class="n">error</span> <span class="n">page</span> <span class="n">for</span> <span class="n">individual</span> <span class="n">pages</span><span class="p">,</span> <span class="n">for</span> <span class="n">a</span> <span class="n">whole</span>
+<span class="n">application</span><span class="p">,</span> <span class="k">or</span> <span class="n">for</span> <span class="n">the</span> <span class="n">whole</span> <span class="n">Web</span> <span class="n">site</span> <span class="k">or</span> <span class="n">Web</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="m">1.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">copy</span> <span class="k">of</span> <span class="p">%</span><span class="n">SystemRoot</span><span class="p">%\</span><span class="n">WinNT</span><span class="p">\</span><span class="n">Help</span><span class="p">\</span><span class="n">IISHelp</span><span class="p">\</span><span class="n">Common</span><span class="p">\</span><span class="m">500</span><span class="p">-</span><span class="m">100.</span><span class="n">asp</span><span class="p">,</span> <span class="k">and</span>
+  <span class="n">store</span> <span class="n">it</span> <span class="k">in</span> <span class="n">the</span> <span class="n">same</span> <span class="n">folder</span> <span class="k">as</span> <span class="n">the</span> <span class="n">original</span> <span class="n">file</span><span class="p">.</span> <span class="n">Name</span> <span class="n">the</span> <span class="n">new</span> <span class="n">file</span>
+  <span class="m">500</span><span class="p">-</span><span class="m">100</span><span class="p">-</span><span class="n">OK</span><span class="p">.</span><span class="n">asp</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Click</span> <span class="n">Start</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Programs</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Accessories</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Notepad</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="k">In</span> <span class="n">Notepad</span><span class="p">,</span> <span class="n">click</span> <span class="n">Open</span> <span class="n">on</span> <span class="n">the</span> <span class="n">File</span> <span class="n">menu</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Look</span> <span class="k">in</span> <span class="n">drop</span><span class="p">-</span><span class="n">down</span> <span class="n">box</span><span class="p">,</span> <span class="n">browse</span>
+  <span class="k">to</span> <span class="n">the</span> <span class="m">500</span><span class="p">-</span><span class="m">100</span><span class="p">-</span><span class="n">OK</span><span class="p">.</span><span class="n">asp</span> <span class="n">file</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Open</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Replace</span> <span class="n">the</span> <span class="n">following</span> <span class="n">code</span>
+
+  <span class="n">Response</span><span class="p">.</span><span class="n">Status</span> <span class="p">=</span> <span class="s2">"500 Internal Server Error"</span>
+
+<span class="k">with</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+     <span class="n">Response</span><span class="p">.</span><span class="n">Status</span> <span class="p">=</span> <span class="s2">"200 OK"</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="k">If</span> <span class="n">the</span> <span class="n">error</span> <span class="n">message</span> <span class="n">was</span> <span class="k">not</span> <span class="n">modified</span> <span class="n">previously</span><span class="p">,</span> <span class="n">the</span> <span class="n">original</span> <span class="n">line</span> <span class="k">of</span> <span class="n">code</span>
+<span class="n">is</span> <span class="n">line</span> <span class="m">12.</span>
+
+<span class="m">5.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">File</span> <span class="n">menu</span><span class="p">,</span> <span class="n">click</span> <span class="n">Save</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="k">In</span> <span class="n">Internet</span> <span class="n">Services</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">click</span> <span class="n">your</span> <span class="n">Web</span> <span class="n">server</span> <span class="k">in</span> <span class="n">the</span> <span class="n">console</span> <span class="n">tree</span><span class="p">.</span> <span class="k">If</span>
+  <span class="n">your</span> <span class="n">remote</span> <span class="n">scripting</span> <span class="n">ASP</span> <span class="n">page</span> <span class="n">resides</span> <span class="k">in</span> <span class="n">a</span> <span class="n">Web</span> <span class="n">application</span> <span class="n">under</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">Web</span> <span class="n">sites</span><span class="p">,</span> <span class="n">expand</span> <span class="n">your</span> <span class="n">Web</span> <span class="n">application</span><span class="p">.</span>
+
+<span class="m">7.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Details</span> <span class="n">pane</span><span class="p">,</span> <span class="n">right</span><span class="p">-</span><span class="n">click</span> <span class="n">your</span> <span class="n">remote</span> <span class="n">scripting</span> <span class="n">server</span> <span class="n">ASP</span> <span class="n">page</span><span class="p">,</span> <span class="k">and</span>
+  <span class="k">then</span> <span class="n">click</span> <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">8.</span> <span class="n">Click</span> <span class="n">Custom</span> <span class="n">Errors</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="k">list</span><span class="p">,</span> <span class="n">locate</span> <span class="n">the</span> <span class="n">entry</span> <span class="n">for</span> <span class="m">500</span><span class="p">;</span><span class="m">100.</span> <span class="n">By</span> <span class="n">default</span><span class="p">,</span>
+  <span class="n">this</span> <span class="n">is</span> <span class="k">set</span> <span class="k">to</span> <span class="n">a</span> <span class="n">URL</span> <span class="k">and</span> <span class="n">refers</span> <span class="k">to</span> <span class="n">Help</span><span class="p">/</span><span class="n">Common</span><span class="p">/</span><span class="m">500</span><span class="p">-</span><span class="m">100.</span><span class="n">asp</span><span class="p">.</span> <span class="n">Click</span> <span class="n">Edit</span>
+  <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">9.</span> <span class="n">Modify</span> <span class="n">the</span> <span class="n">path</span> <span class="k">to</span> <span class="n">point</span> <span class="k">to</span> <span class="p">/</span><span class="n">IISHelp</span><span class="p">/</span><span class="n">Common</span><span class="p">/</span><span class="m">500</span><span class="p">-</span><span class="m">100</span><span class="p">-</span><span class="n">OK</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">click</span> <span class="n">OK</span><span class="p">,</span> <span class="k">and</span>
+  <span class="k">then</span> <span class="n">click</span> <span class="n">OK</span> <span class="n">again</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">You</span> <span class="n">Assign</span> <span class="n">a</span> <span class="n">Category</span> <span class="k">to</span> <span class="n">a</span> <span class="n">File</span> <span class="n">on</span> <span class="n">Alpha</span> <span class="k">or</span> <span class="n">UNIX</span>
+<span class="p">-----------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">assign</span> <span class="n">a</span> <span class="n">category</span> <span class="k">to</span> <span class="n">a</span> <span class="n">file</span> <span class="n">on</span> <span class="n">Alpha</span> <span class="k">or</span> <span class="n">UNIX</span><span class="p">,</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">HTTP</span> <span class="m">500</span>
+<span class="n">error</span> <span class="n">message</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">install</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="m">2000</span> <span class="n">Service</span> <span class="n">Release</span> <span class="m">1</span> <span class="p">(</span><span class="n">SR</span><span class="p">-</span><span class="m">1</span><span class="p">)</span>
+<span class="k">or</span> <span class="n">Service</span> <span class="n">Release</span> <span class="m">1</span><span class="n">a</span> <span class="p">(</span><span class="n">SR</span><span class="p">-</span><span class="m">1</span><span class="n">a</span><span class="p">).</span> <span class="k">To</span> <span class="n">download</span> <span class="n">Office</span> <span class="m">2000</span> <span class="n">SR</span><span class="p">-</span><span class="m">1</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">following</span>
+<span class="n">Microsoft</span> <span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">office</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">downloads</span><span class="p">/</span><span class="m">2000</span><span class="p">/</span><span class="n">O2kSR1DDL</span><span class="p">.</span><span class="n">aspx</span>
+
+<span class="n">When</span> <span class="n">You</span> <span class="n">Use</span> <span class="n">the</span> <span class="m">500</span><span class="p">-</span><span class="m">100.</span><span class="n">asp</span> <span class="n">File</span> <span class="n">for</span> <span class="n">Error</span> <span class="n">Handling</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Non</span><span class="p">-</span><span class="n">Default</span> <span class="n">Web</span> <span class="n">Site</span>
+<span class="p">------------------------------------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">use</span> <span class="n">the</span> <span class="m">500</span><span class="p">-</span><span class="m">100.</span><span class="n">asp</span> <span class="n">file</span> <span class="n">for</span> <span class="n">error</span> <span class="n">handling</span> <span class="n">on</span> <span class="n">a</span> <span class="n">non</span><span class="p">-</span><span class="n">default</span> <span class="n">Web</span> <span class="n">site</span><span class="p">,</span>
+<span class="n">you</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">HTTP</span> <span class="m">500</span> <span class="n">error</span> <span class="n">message</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">console</span> <span class="n">tree</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Services</span> <span class="n">snap</span><span class="p">-</span><span class="k">in</span><span class="p">,</span> <span class="n">right</span><span class="p">-</span><span class="n">click</span>
+  <span class="n">the</span> <span class="n">appropriate</span> <span class="n">Web</span> <span class="n">site</span><span class="p">,</span> <span class="n">click</span> <span class="n">New</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Virtual</span> <span class="n">Directory</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Virtual</span> <span class="n">Directory</span> <span class="n">Creation</span> <span class="n">Wizard</span><span class="p">,</span> <span class="n">click</span> <span class="k">Next</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Alias</span> <span class="n">text</span> <span class="n">box</span><span class="p">,</span>
+  <span class="n">type</span> <span class="s2">"IISHelp"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">),</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="k">Next</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">When</span> <span class="n">you</span> <span class="n">are</span> <span class="n">prompted</span> <span class="n">for</span> <span class="n">the</span> <span class="n">path</span> <span class="k">to</span> <span class="n">the</span> <span class="n">content</span> <span class="n">folder</span><span class="p">,</span> <span class="n">click</span> <span class="n">Browse</span><span class="p">,</span>
+  <span class="n">select</span> <span class="n">the</span> <span class="n">WINNT</span><span class="p">\</span><span class="n">Help</span><span class="p">\</span><span class="n">IisHelp</span> <span class="n">folder</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="k">Next</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Access</span> <span class="n">Permissions</span> <span class="n">page</span><span class="p">,</span> <span class="n">accept</span> <span class="n">all</span> <span class="n">defaults</span><span class="p">,</span> <span class="n">click</span> <span class="k">Next</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span>
+  <span class="n">click</span> <span class="n">Finish</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Right</span><span class="p">-</span><span class="n">click</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">site</span> <span class="n">again</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Custom</span> <span class="n">Errors</span> <span class="n">tab</span><span class="p">,</span> <span class="n">select</span> <span class="n">the</span> <span class="s2">"500;100"</span> <span class="n">error</span> <span class="n">line</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span>
+  <span class="n">Edit</span> <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">7.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Message</span> <span class="n">Type</span> <span class="k">list</span> <span class="n">box</span><span class="p">,</span> <span class="n">type</span> <span class="s2">"/iisHelp/common/500-100.asp"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span>
+  <span class="n">quotation</span> <span class="n">marks</span><span class="p">)</span> <span class="k">in</span> <span class="n">the</span> <span class="n">URL</span> <span class="n">text</span> <span class="n">box</span><span class="p">.</span>
+
+<span class="m">8.</span> <span class="n">Click</span> <span class="n">OK</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">OK</span> <span class="n">again</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">You</span> <span class="n">Execute</span> <span class="n">a</span> <span class="n">Query</span> <span class="k">in</span> <span class="n">Index</span> <span class="n">Server</span>
+<span class="p">----------------------------------------</span>
+
+<span class="n">After</span> <span class="n">you</span> <span class="n">click</span> <span class="n">Go</span> <span class="k">to</span> <span class="n">execute</span> <span class="n">a</span> <span class="n">query</span> <span class="k">in</span> <span class="n">Index</span> <span class="n">Server</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">HTTP</span>
+<span class="m">500</span> <span class="n">error</span> <span class="n">message</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">error</span> <span class="n">occurs</span> <span class="n">because</span> <span class="n">no</span> <span class="n">default</span> <span class="n">application</span> <span class="n">starting</span> <span class="n">point</span> <span class="n">is</span> <span class="n">defined</span> <span class="n">for</span>
+<span class="n">the</span> <span class="n">folder</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">query</span> <span class="n">pages</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Services</span> <span class="n">snap</span><span class="p">-</span><span class="k">in</span><span class="p">,</span> <span class="n">right</span><span class="p">-</span><span class="n">click</span> <span class="n">the</span> <span class="n">root</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">site</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">query</span> <span class="n">pages</span> <span class="k">in</span> <span class="n">the</span> <span class="n">console</span> <span class="n">tree</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span>
+  <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Home</span> <span class="n">Directory</span> <span class="n">tab</span><span class="p">,</span> <span class="n">click</span> <span class="n">Create</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Click</span> <span class="n">OK</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">retry</span> <span class="n">the</span> <span class="n">query</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">You</span> <span class="n">Access</span> <span class="n">a</span> <span class="n">Provider</span> <span class="k">from</span> <span class="n">Within</span> <span class="n">an</span> <span class="n">ASP</span> <span class="n">Page</span>
+<span class="p">--------------------------------------------------</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">clear</span> <span class="n">the</span> <span class="n">Show</span> <span class="n">Friendly</span> <span class="n">HTTP</span> <span class="n">Error</span> <span class="n">Messages</span> <span class="n">check</span> <span class="n">box</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">receive</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">error</span> <span class="n">message</span> <span class="n">when</span> <span class="n">you</span> <span class="n">try</span> <span class="k">to</span> <span class="n">access</span> <span class="n">a</span> <span class="n">provider</span> <span class="k">from</span> <span class="n">within</span> <span class="n">the</span> <span class="n">ASP</span>
+<span class="n">page</span><span class="p">:</span>
+
+  <span class="n">ADODB</span><span class="p">.</span><span class="n">Connection</span> <span class="p">(</span><span class="m">0x800A0E7A</span><span class="p">)</span> <span class="n">Provider</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">found</span><span class="p">.</span> <span class="n">It</span> <span class="n">may</span> <span class="k">not</span> <span class="n">be</span>
+  <span class="n">properly</span> <span class="n">installed</span><span class="p">.</span> <span class="p">/</span><span class="n">Nwind</span><span class="p">.</span><span class="n">asp</span><span class="p">,</span> <span class="n">line</span> <span class="m">10</span>
+
+<span class="n">This</span> <span class="n">error</span> <span class="n">occurs</span> <span class="n">because</span> <span class="n">a</span> <span class="k">dynamic</span><span class="p">-</span><span class="n">link</span> <span class="n">library</span> <span class="p">(</span><span class="n">DLL</span><span class="p">)</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Data</span>
+<span class="n">Access</span> <span class="n">Components</span> <span class="p">(</span><span class="n">MDAC</span><span class="p">)</span> <span class="n">requires</span> <span class="n">is</span> <span class="k">not</span> <span class="n">registered</span><span class="p">.</span>
+
+<span class="m">1.</span> <span class="n">Click</span> <span class="n">Start</span><span class="p">,</span> <span class="n">click</span> <span class="nf">Run</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">type</span> <span class="n">cmd</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">At</span> <span class="n">a</span> <span class="nf">command</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">type</span> <span class="s2">"cd %systemroot%:\Program Files\Common
+  Files\System\Ole"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">).</span>
+
+<span class="m">3.</span> <span class="n">At</span> <span class="n">a</span> <span class="nf">command</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">type</span> <span class="s2">"regsvr32 sqloledb.dll"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span>
+  <span class="n">marks</span><span class="p">).</span>
+
+<span class="m">4.</span> <span class="n">When</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">confirmation</span> <span class="n">that</span> <span class="n">the</span> <span class="n">DLL</span> <span class="n">is</span> <span class="n">registered</span> <span class="n">successfully</span><span class="p">,</span> <span class="n">click</span>
+  <span class="n">OK</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">This</span> <span class="n">resolution</span> <span class="k">uses</span> <span class="n">a</span> <span class="n">Microsoft</span> <span class="n">SQL</span> <span class="n">Server</span> <span class="n">OLE</span> <span class="n">Provider</span> <span class="n">DLL</span><span class="p">,</span> <span class="n">Sqloledb</span><span class="p">.</span><span class="n">dll</span><span class="p">,</span>
+<span class="k">as</span> <span class="n">an</span> <span class="n">example</span><span class="p">.</span> <span class="n">Because</span> <span class="n">the</span> <span class="n">unregistered</span> <span class="n">DLL</span> <span class="n">may</span> <span class="n">vary</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">OLE</span> <span class="n">DB</span>
+<span class="n">provider</span> <span class="n">that</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">modify</span> <span class="n">step</span> <span class="m">2</span> <span class="n">according</span> <span class="k">to</span> <span class="n">your</span>
+<span class="n">situation</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">You</span> <span class="k">Set</span> <span class="n">the</span> <span class="n">COM</span><span class="p">+</span> <span class="n">Application</span> <span class="n">Identity</span> <span class="n">on</span> <span class="n">IIS</span> <span class="m">5.0</span>
+<span class="p">-----------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">try</span> <span class="k">to</span> <span class="k">set</span> <span class="n">the</span> <span class="n">COM</span><span class="p">+</span> <span class="n">application</span> <span class="n">identity</span> <span class="n">on</span> <span class="n">IIS</span> <span class="m">5.0</span><span class="p">,</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">HTTP</span>
+<span class="m">500</span> <span class="n">error</span> <span class="n">message</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">problem</span> <span class="n">occurs</span> <span class="n">when</span> <span class="n">the</span> <span class="n">identity</span> <span class="n">for</span> <span class="n">the</span> <span class="n">COM</span><span class="p">+</span> <span class="n">application</span> <span class="k">or</span> <span class="n">the</span> <span class="n">Microsoft</span>
+<span class="n">Transaction</span> <span class="n">Server</span> <span class="p">(</span><span class="n">MTS</span><span class="p">)</span> <span class="k">package</span> <span class="n">is</span> <span class="n">configured</span> <span class="n">for</span> <span class="n">Interactive</span> <span class="n">user</span> <span class="p">-</span> <span class="n">the</span>
+<span class="n">current</span> <span class="n">logged</span> <span class="n">on</span> <span class="n">user</span><span class="p">.</span> <span class="n">Because</span> <span class="n">no</span> <span class="n">user</span> <span class="n">is</span> <span class="n">currently</span> <span class="n">logged</span> <span class="n">on</span> <span class="k">to</span> <span class="n">the</span> <span class="n">IIS</span>
+<span class="n">console</span><span class="p">,</span> <span class="n">the</span> <span class="n">application</span> <span class="n">cannot</span> <span class="nf">run</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="k">set</span> <span class="n">the</span> <span class="n">identity</span> <span class="n">for</span> <span class="n">the</span> <span class="n">COM</span><span class="p">+</span> <span class="n">application</span> <span class="k">or</span> <span class="n">the</span> <span class="n">MTS</span>
+<span class="k">package</span> <span class="k">to</span> <span class="n">This</span> <span class="n">User</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">specify</span> <span class="n">a</span> <span class="n">user</span> <span class="n">account</span><span class="p">.</span> <span class="k">To</span> <span class="k">do</span> <span class="n">this</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span>
+<span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Click</span> <span class="n">Start</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Programs</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Administrative</span> <span class="n">Tools</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span>
+  <span class="n">Component</span> <span class="n">Services</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">console</span> <span class="n">tree</span><span class="p">,</span> <span class="n">expand</span> <span class="n">Component</span> <span class="n">Services</span><span class="p">,</span> <span class="n">expand</span> <span class="n">Computers</span><span class="p">,</span> <span class="n">expand</span> <span class="n">My</span>
+  <span class="n">Computer</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">expand</span> <span class="n">COM</span><span class="p">+</span> <span class="n">Applications</span><span class="p">.</span> <span class="n">Locate</span> <span class="n">the</span> <span class="n">application</span> <span class="n">whose</span>
+  <span class="n">identity</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">change</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Right</span><span class="p">-</span><span class="n">click</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="n">COM</span><span class="p">+</span> <span class="n">application</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Identity</span> <span class="n">tab</span><span class="p">,</span> <span class="n">click</span> <span class="n">This</span> <span class="n">User</span><span class="p">,</span> <span class="n">type</span> <span class="n">a</span> <span class="n">valid</span> <span class="n">account</span> <span class="n">for</span> <span class="n">the</span> <span class="n">computer</span><span class="p">,</span>
+  <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">You</span> <span class="k">Set</span> <span class="n">the</span> <span class="n">MTS</span> <span class="n">Application</span> <span class="n">Identity</span> <span class="n">on</span> <span class="n">IIS</span> <span class="m">4.0</span>
+<span class="p">----------------------------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="k">set</span> <span class="n">the</span> <span class="n">MTS</span> <span class="n">application</span> <span class="n">identity</span> <span class="n">on</span> <span class="n">IIS</span> <span class="m">4.0</span><span class="p">,</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">HTTP</span> <span class="m">500</span>
+<span class="n">error</span> <span class="n">message</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Services</span> <span class="n">snap</span><span class="p">-</span><span class="k">in</span><span class="p">,</span> <span class="n">expand</span> <span class="n">Computers</span><span class="p">,</span> <span class="n">expand</span> <span class="n">My</span>
+  <span class="n">Computer</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">expand</span> <span class="n">Microsoft</span> <span class="n">Transaction</span> <span class="n">Server</span><span class="p">.</span> <span class="n">Locate</span> <span class="n">the</span> <span class="k">package</span>
+  <span class="n">whose</span> <span class="n">identity</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">change</span><span class="p">.</span> <span class="n">The</span> <span class="n">application</span> <span class="n">is</span> <span class="n">listed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Packages</span>
+  <span class="n">Installed</span> <span class="n">folder</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Right</span><span class="p">-</span><span class="n">click</span> <span class="n">the</span> <span class="k">package</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Identity</span> <span class="n">tab</span><span class="p">,</span> <span class="n">click</span> <span class="n">This</span> <span class="n">User</span><span class="p">,</span> <span class="n">type</span> <span class="n">a</span> <span class="n">valid</span> <span class="n">account</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span>
+  <span class="n">Apply</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">IIS</span> <span class="m">4.0</span> <span class="n">Runs</span> <span class="k">in</span> <span class="n">its</span> <span class="n">Own</span> <span class="n">Memory</span> <span class="n">Space</span>
+<span class="p">-----------------------------------------</span>
+
+<span class="n">You</span> <span class="n">may</span> <span class="n">receive</span> <span class="n">an</span> <span class="n">HTTP</span> <span class="m">500</span> <span class="n">error</span> <span class="n">message</span> <span class="n">when</span> <span class="n">any</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">is</span> <span class="nb">true</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="n">default</span> <span class="n">Web</span> <span class="n">site</span> <span class="k">of</span> <span class="n">IIS</span> <span class="k">version</span> <span class="m">4.0</span> <span class="n">is</span> <span class="n">running</span> <span class="k">as</span> <span class="n">an</span> <span class="n">isolated</span> <span class="n">process</span> <span class="k">in</span>
+  <span class="n">its</span> <span class="n">own</span> <span class="n">memory</span> <span class="n">space</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Internet</span> <span class="n">Explorer</span> <span class="n">is</span> <span class="n">configured</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">proxy</span> <span class="n">on</span> <span class="n">Proxy</span>
+  <span class="n">Server</span> <span class="m">2.0</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Internet</span> <span class="n">Explorer</span> <span class="n">on</span> <span class="n">BackOffice</span> <span class="n">Small</span> <span class="n">Business</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">4.5</span> <span class="n">is</span>
+  <span class="n">configured</span> <span class="k">to</span> <span class="n">use</span> <span class="n">a</span> <span class="n">proxy</span> <span class="n">server</span><span class="p">,</span> <span class="k">and</span> <span class="n">proxy</span> <span class="n">server</span> <span class="n">packet</span> <span class="n">filtering</span> <span class="n">is</span>
+  <span class="n">enabled</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">follow</span> <span class="n">these</span> <span class="n">steps</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Click</span> <span class="n">Start</span><span class="p">,</span> <span class="n">point</span> <span class="k">to</span> <span class="n">Programs</span><span class="p">,</span> <span class="n">click</span> <span class="n">Microsoft</span> <span class="n">Proxy</span> <span class="n">Server</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span>
+  <span class="n">Microsoft</span> <span class="n">Management</span> <span class="n">Console</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">console</span> <span class="n">tree</span><span class="p">,</span> <span class="n">expand</span> <span class="n">the</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="n">folder</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span>
+  <span class="n">expand</span> <span class="n">the</span> <span class="n">server</span> <span class="n">object</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Right</span><span class="p">-</span><span class="n">click</span> <span class="n">Default</span> <span class="n">Web</span> <span class="n">Site</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Properties</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">Home</span> <span class="n">Directory</span> <span class="n">tab</span><span class="p">,</span> <span class="n">locate</span> <span class="n">the</span> <span class="n">Application</span> <span class="n">Settings</span> <span class="n">area</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span>
+  <span class="n">click</span> <span class="k">to</span> <span class="n">clear</span> <span class="nf">Run</span> <span class="k">in</span> <span class="n">separate</span> <span class="n">memory</span> <span class="n">space</span> <span class="p">(</span><span class="n">isolated</span> <span class="n">process</span><span class="p">).</span>
+
+<span class="m">5.</span> <span class="n">Click</span> <span class="n">Apply</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Right</span><span class="p">-</span><span class="n">click</span> <span class="n">Default</span> <span class="n">Web</span> <span class="n">Site</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="nf">Stop</span><span class="p">.</span>
+
+<span class="m">7.</span> <span class="n">Right</span><span class="p">-</span><span class="n">click</span> <span class="n">Default</span> <span class="n">Web</span> <span class="n">Site</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Start</span><span class="p">.</span>
+
+<span class="n">REFERENCES</span>
+<span class="p">==========</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">Show</span> <span class="n">Friendly</span> <span class="n">HTTP</span> <span class="n">Error</span> <span class="n">Messages</span> <span class="n">option</span><span class="p">,</span>
+<span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span>
+<span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q218155</span> <span class="n">Description</span> <span class="k">of</span> <span class="n">Hypertext</span> <span class="n">Transport</span> <span class="n">Protocol</span> <span class="n">Error</span> <span class="n">Messages</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span>
+<span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q245025</span> <span class="n">OFF2000</span><span class="p">:</span> <span class="n">How</span> <span class="k">to</span> <span class="n">Obtain</span> <span class="k">and</span> <span class="n">Install</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="m">2000</span>
+  <span class="n">SR</span><span class="p">-</span><span class="m">1</span><span class="p">/</span><span class="n">SR</span><span class="p">-</span><span class="m">1</span><span class="n">a</span> <span class="n">Update</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbAudITPro</span> <span class="n">kbHOWTOmaster</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbiisSearch</span> <span class="n">kbiis500</span> <span class="n">kbiis400</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">4.0</span><span class="p">,</span><span class="m">5.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbhowto</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

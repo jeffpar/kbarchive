@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43144: C: Using the _dos_findfirst and _dosfindnext Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43144: C: Using the _dos_findfirst and _dosfindnext Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43144/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43144/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43144/","publisher":null,"image":null,"headline":"Q43144: C: Using the _dos_findfirst and _dosfindnext Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43144-c-using-the-_dos_findfirst-and-_dosfindnext-functions">Q43144: C: Using the _dos_findfirst and _dosfindnext Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43144
+Product(s): See article
+Version(s): 5.00 5.10 | 5.10
+Operating System(s): MS_DOS | OS/2
+Keyword(s): ENDUSER | s_quickc | mspl13_c
+Last Modified: 17-MAY-1989
+
+Question:
+
+Why do all my files show up in addition to the subdirectories when
+using the _dos_findfirst and _dos_findnext functions to find all the
+subdirectories in my working directory?
+
+Response:
+
+When the attribute argument to the _dos_findfirst and _dos_findnext
+functions is either _A_RDONLY, _A_HIDDEN, _A_SYSTEM, or _A_SUBDIR, the
+functions will return all normal-attribute files.  A normal-attribute
+file is any file that does not have a read-only, hidden, system, or
+directory attribute.
+
+Thus, the following function call will return either a normal file or
+a subdirectory:
+
+   _dos_findfirst( "*.*", _A_SUBDIR, &amp;c_file )
+
+To verify that the returned c_file is a subdirectory, check the
+attribute field of the c_file to determine whether the _A_SUBDIR bit
+is set. If so, then it is a subdirectory. This process may be
+accomplished by bitwise-ANDing c_file.attrib with _A_SUBDIR and
+checking for a nonzero result.
+
+The following program illustrates the use of these functions:
+
+#include &lt;dos.h&gt;
+#include &lt;stdio.h&gt;
+
+main()
+{
+        struct find_t c_file;
+
+        _dos_findfirst( "*.*", _A_SUBDIR, &amp;c_file );
+
+        if( c_file.attrib &amp; _A_SUBDIR )
+        printf( "Directory listing %s\n", c_file.name );
+
+        while (_dos_findnext(&amp;c_file) == 0)
+            if( c_file.attrib &amp; _A_SUBDIR )
+            printf( "Directory listing %s\n", c_file.name );
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151723: How to Re-create Default Icons Deleted from Desktop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151723: How to Re-create Default Icons Deleted from Desktop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151723/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151723/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151723/","publisher":null,"image":null,"headline":"Q151723: How to Re-create Default Icons Deleted from Desktop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151723-how-to-re-create-default-icons-deleted-from-desktop">Q151723: How to Re-create Default Icons Deleted from Desktop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151723
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbui
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the default icons are deleted from a Windows NT desktop, they can be
+recreated with the Registry.
+
+MORE INFORMATION
+================
+
+When a desktop icon is deleted, the registry entry for that icon is also deleted
+in one section of the Registry (details below). However, the icon information is
+maintained elsewhere in the Registry (details below) and this information can be
+copied back to the original location to restore the icons.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT. Microsoft cannot
+guarantee that problems resulting from the incorrect use of Registry Editor can
+be solved. Use Registry Editor at your own risk.
+
+1. Use Regedit.exe to search the HKEY_CLASSES_ROOT\CLSID portion of the registry
+  for the string associated with the icon you want to recreate.
+
+2. Right-click on the 32-character number and choose Rename. With the ID number
+  highlighted, press CTRL+INSERT to copy the text to the Clipboard.
+
+3. Locate Hkey_local_machine\software\microsoft\windows\currentversion
+  \explorer\desktop\namespace in the registry and choose Edit\Add Key.
+
+4. Press SHIFT+INSERT to paste in the 32-character identifier.
+
+5. In the right-hand pane of REGEDIT, double-click on the default icon and type
+  the title to be associated with the desktop icon in the Value data field.
+
+6. Log off to make the changes take effect.
+
+This procedure works for these desktop icons:
+
+  Icon name               Key value
+  --------------------------------------------------------------
+  Inbox                   {00020D76-0000-0000-C000-000000000046}
+  Recycle Bin             {645FF040-5081-101B-9F08-00AA002F954E}
+  The Internet            {FBF23B42-E3F0-101B-8488-00AA003E56F8}
+  The Microsoft Network   {00028B00-0000-0000-C000-000000000046}
+======================================================================
+Keywords          : kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

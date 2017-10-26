@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190878: HOWTO: Get Visual FoxPro Options Registry Settings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190878: HOWTO: Get Visual FoxPro Options Registry Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190878/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190878/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190878/","publisher":null,"image":null,"headline":"Q190878: HOWTO: Get Visual FoxPro Options Registry Settings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190878-howto-get-visual-foxpro-options-registry-settings">Q190878: HOWTO: Get Visual FoxPro Options Registry Settings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190878
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbRegistry kbvfp500 kbvfp500a kbvfp600 kbDSupport
+Last Modified: 10-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Knowledge Base article Q130578, "How to Customize the Visual
+FoxPro Environment" describes how to echo the Visual FoxPro environment settings
+by opening the Options dialog box from the Tools menu, holding the SHIFT key and
+clicking OK. However, this method does not show all of the Options settings,
+such as the setting for Asynchronous execution under the Remote Data tab. This
+article shows how to get all of the settings for Visual FoxPro that are listed
+in the registry.
+
+MORE INFORMATION
+================
+
+1. In order for values to display, you must first save the settings to the
+  registry. This task can be accomplished by selecting Options from the Tools
+  menu. Click the Set as Default button, and then click OK to close the dialog
+  box.
+
+2. Save the following code and run it with the syntax DO &lt;program name&gt;
+  WITH &lt;file name in which to save settings&gt;. For example, if the program
+  file were saved to Readsettings.prg, run the program by typing the following
+  in the Command window to save the settings to a text file called
+  MySettings.Txt: DO READSETTINGS.PRG WITH "MySettings.Txt". After the program
+  runs, it displays an edit window that shows the current settings:
+
+        *-- Code begins here.
+        PARAMETER lsOutput
+
+        *-- Defines from Winreg.h
+
+        #define KEY_QUERY_VALUE      0x0001
+        #define HKEY_CURRENT_USER    0x80000001
+
+        lnKeyHandle = 0
+        liValue = 0
+        lpszValue = SPACE(255)
+        lpcchValue = 255
+        lpdwType = SPACE(255)
+        lpbData=SPACE(255)
+        lpcbData=255
+
+        DECLARE RegOpenKeyEx IN WIN32API INTEGER, STRING, INTEGER, ;
+          INTEGER, INTEGER @nKeyHandle
+
+        DECLARE RegEnumValue IN WIN32API INTEGER lnKeyHandle, INTEGER ;
+         liValue;
+         STRING @lpszValue, INTEGER @lpcchValue, INTEGER, STRING @lpdwType, ;
+         STRING @lpbData, INTEGER @lpcbData
+
+        *-- Get a handle for the Visual FoxPro Options key.
+        lnResult=RegOpenKeyEx(;
+          HKEY_CURRENT_USER, "Software\Microsoft\VisualFoxPro\6.0\Options", ;
+          0, KEY_QUERY_VALUE, @LnKeyHandle)
+
+        *-- Get a file handle for output file.
+        IF FILE(lsOutput)
+           ERASE(lsOutput)
+        ENDIF
+        lhFile = FCREATE(lsOutput)
+        lnReturn = .T.
+
+        DO WHILE lnReturn = .T.
+
+           *-- Clear the buffers through each loop.
+           lpszValue  = SPACE(255)
+           lpcchValue = 255
+           lpdwType   = SPACE(255)
+           lpbData    = SPACE(255)
+           lpcbData   = 255
+
+           *-- Walk through the values for the key.
+        lnReturn=RegEnumValue(lnKeyHandle,liValue,@lpszValue,@lpcchValue,0,;
+          @lpdwType,@lpbData,@lpcbData)
+
+          *-- Quit when we start getting empty strings.
+          IF LEN(ALLTRIM(lpbData)) = 0 AND LEN(ALLTRIM(lpszValue)) = 0
+             lnReturn = .F.
+             LOOP
+          ENDIF
+
+          *-- Strip anything after the first null character.
+          lpszValue = SUBSTR(lpszValue, 1, AT(CHR(0),lpszValue) - 1)
+          lpbData = SUBSTR(lpbData, 1, AT(CHR(0),lpbData) - 1)
+
+          *-- Write it out to the file.
+          lFresult=FPUTS(lhFile,ALLTRIM(lpszValue) + " " + ALLTRIM(lpbData))
+
+          *-- Increment the value index to move to the next value.
+          liValue = liValue + 1
+        ENDDO
+
+        *-- Close our file handle and open an edit window.
+        FCLOSE(lhFile)
+        MODIFY FILE (lsOutput)
+        *-- Code ends here.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q130578 HOWTO: Customize the Visual FoxPro Environment
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Mike Stewart, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbRegistry kbvfp500 kbvfp500a kbvfp600 kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

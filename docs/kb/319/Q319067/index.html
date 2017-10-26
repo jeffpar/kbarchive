@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q319067: HOW TO: Run Applications Not in the Context of the System Accoun | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q319067: HOW TO: Run Applications Not in the Context of the System Accoun" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/319/Q319067/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/319/Q319067/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/319/Q319067/","publisher":null,"image":null,"headline":"Q319067: HOW TO: Run Applications Not in the Context of the System Accoun","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q319067-how-to-run-applications-not-in-the-context-of-the-system-accoun">Q319067: HOW TO: Run Applications Not in the Context of the System Accoun</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q319067
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 25-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Default Installation
+- Security Context
+- Configure and Run Out-of-Process
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article explains how to run a process under another identity
+other than the SYSTEM account.
+
+Default Installation
+--------------------
+
+By default, on a computer that is running Windows NT 4.0 Server, or on a Windows
+NT 4.0 computer that has Internet Information Server 4.0 installed, Web sites
+are set to run in-process or under the SYSTEM account. You can set a Web site or
+virtual directory and its associated applications to run in separate memory
+space and, therefore, run under the IWAM_machine account.
+
+By default, on computers that run the following, Web sites are set to run in
+medium pooled or under the IWAM_machine account:
+
+- Windows 2000 Server
+- Windows 2000 Professional with Internet Information Services 5.0
+- Windows XP Professional with Internet Information Services 5.1
+
+You can set a Web site or virtual directory and its associated applications to
+run in either of the following ways:
+
+- Medium pooled or high isolation and, therefore, run under the IWAM_machine
+  account.
+
+- Low (IIS Process) and, therefore, run under the SYSTEM account.
+
+Security Context
+----------------
+
+Processes are always executed in the context of an account. For example,
+Inetinfo.exe runs as a process that is launched by the SYSTEM account,
+therefore, Inetinfo.exe runs in the context of the SYSTEM account.
+
+The SYSTEM account is not a typical user account: it does not have network
+access, therefore, applications that are running as SYSTEM cannot access network
+resources. For additional information about security context, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q248187 HOWTO: Impersonate a User from Active Server Pages
+
+NOTE: It is possible to run the IIS services (Inetinfo.exe) to run as a specified
+user account, however, that is an unsupported configuration.
+
+For the application to access resources from a remote server, you can configure
+your Web site or application to run out-of-process and configure that process to
+run under a domain user account (by default, it is run under the IWAM_machine
+account context). Therefore, you can assign the appropriate NTFS file system
+permissions for that domain account to the remote server.
+
+Configure and Run Out-of-Process
+--------------------------------
+
+To configure an application to run out-of-process and then set that process to
+run under the identify of another account, follow the appropriate steps for your
+system:
+
+Internet Information Services 5.0 and 5.1:
+
+1. Click Start, point to Programs, select Administrative Tools, and then click
+  Internet Services Manager.
+
+2. Expand the &lt;Server Name&gt;.
+
+3. Select and right-click the Web site that you want, and then click Properties.
+
+4. On the Home Directory tab, see the Application Protection drop-down list. By
+  default, this is Medium (Pooled). Select Medium (Pooled), or select High if
+  you want.
+  NOTE: You can select Low(IIS Process) if you want to run it under the SYSTEM
+  account.
+
+5. Click Apply.
+
+6. Close all the Properties dialog boxes, and then close Internet Services
+  Manager.
+
+7. Open the Component Services console:
+  Click Start, point to Programs , point to Administrative Tools, and then click
+  Component Services.
+
+8. Expand the Component Service, expand Computers, expand My Computer, and then
+  expand COM+ Applications folders.
+
+9. Locate the corresponding COM+ application that you have set to run in Medium
+  or High Application Protection earlier for the Web application (for example,
+  IIS-default Web site//Root/AppName), right-click that COM+ application, and
+  then click Properties.
+
+10. On the Identity tab, click This user.
+
+11. Locate or type the domain\user ID and password that has the appropriate
+  domain access to your network resource, and then click OK.
+
+Internet Information Services 4.0:
+
+1. Click Start, point to Programs, select Windows NT 4.0 Option Pack, point to
+  Microsoft Internet Information Services, and then click Internet Services
+  Manager.
+  NOTE: Do not click HTML.
+
+2. Expand the &lt;Server Name&gt;.
+
+3. Select and right-click the Web site that you want, and then click Properties.
+
+4. On the Home Directory tab, see a check box for you to set Run in separate
+  memory space (isolated process). By default, this is cleared (not checked).
+
+5. Click Apply.
+
+6. Close all the Properties dialog boxes, and then close Internet Services
+  Manager.
+
+7. Click Start, point to Programs, click Windows NT 4.0 Option Pack, point to
+  Microsoft Transaction Server, and then click Transaction Server Explorer.
+
+8. Expand the Microsoft Transaction Server, expand Computers, expand My
+  Computer, and then expand Packages Installed folders.
+
+9. Locate the corresponding MTS package for your Web application that you have
+  set to Run in separate memory space earlier in these steps (for example,
+  IIS-default Web site//Root/AppName), right-click the MTS package, and then
+  click Properties.
+
+10. On the Identity tab, click This user, locate or type the domain\user ID and
+  password that has the appropriate domain access to your network resource,
+  and then click OK.
+
+11. Stop and start IIS Services.
+
+
+REFERENCES
+==========
+
+For more information, see the following books:
+
+- Designing Secure Web-Based Applications for Microsoft Windows 2000, by
+  Microsoft Press.
+
+- Programming Windows Security, by Addison Wesley.
+
+
+  Q248187 HOWTO: Impersonate a User from Active Server Pages
+
+  Q277329 Cannot Access Network Resources in Application_OnEnd or Session_OnEnd
+  Events
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis510
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

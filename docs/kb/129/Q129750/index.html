@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129750: Using the 3C501 Network Adapter with WFWG | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129750: Using the 3C501 Network Adapter with WFWG" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129750/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129750/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129750/","publisher":null,"image":null,"headline":"Q129750: Using the 3C501 Network Adapter with WFWG","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129750-using-the-3c501-network-adapter-with-wfwg">Q129750: Using the 3C501 Network Adapter with WFWG</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129750
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.1,3.11; :1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+- Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The 3COM Etherlink 3C501 network interface card NDIS driver (ELNK.DOS) is
+supported with Windows for Workgroups (WFWG) only when sharing is disabled.
+However, Workgroup Connections version 1.0 does support this adapter and
+includes an appropriate driver.
+
+MORE INFORMATION
+================
+
+To disable sharing when you are using WFWG version 3.1, use either of the
+following methods:
+
+- Start WFWG in standard mode by typing the following line at the MS-DOS
+  command prompt:
+
+  win /s
+
+- Start WFWG in 386 enhanced mode and disable sharing. To disable sharing,
+  double-click the Network icon in Control Panel and then clear the Enable
+  Sharing check box.
+
+  You can also disable sharing by adding the following line to the [network]
+  section of the SYSTEM.INI file:
+
+  NoSharingControl=1
+
+  Setting this value to 1 causes the Enable Sharing section of the Microsoft
+  Windows Network dialog box to be unavailable. Setting this value to 0 causes
+  the Enable Sharing section to be available so that you can select or clear
+  the Enable Sharing check box. The default value for this entry is 0.
+
+When you use the 3COM Etherlink 3C501 network interface card NDIS driver
+(ELNK.DOS) with WFWG version 3.11, WFWG either will not start successfully with
+the network loaded or will not allow you to create any network connections once
+WFWG starts. However, WFWG will load correctly with a real- mode redirector
+installed.
+
+To use the 3C501 network adapter with the WFWG protected-mode redirector, add the
+following line to the AUTOEXEC.BAT file
+
+  C:\&lt;windows&gt;\NET START NETBEUI
+
+where &lt;windows&gt; is the WFWG directory.
+
+The 3COM 3C501 driver (ELNK.DOS) is not compatible with any NDIS 3 protocols.
+Using the 3C501 network adapter in a WFWG network server in 386 enhanced mode
+may cause data corruption on certain computers. We do not recommend or support
+this configuration. The 3C501 network adapter is supported with Workgroup
+Connections and LAN Manager.
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 3.10 3.11 elnk1 elnki
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11; :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

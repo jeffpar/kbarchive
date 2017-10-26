@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113341: PC WRmt: Mail Remote MSRMTSU.DLL Version 3.2.0.4013 Update | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113341: PC WRmt: Mail Remote MSRMTSU.DLL Version 3.2.0.4013 Update" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113341/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113341/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113341/","publisher":null,"image":null,"headline":"Q113341: PC WRmt: Mail Remote MSRMTSU.DLL Version 3.2.0.4013 Update","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113341-pc-wrmt-mail-remote-msrmtsudll-version-3204013-update">Q113341: PC WRmt: Mail Remote MSRMTSU.DLL Version 3.2.0.4013 Update</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113341
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): kbgraphxlinkcritical
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft provides a replacement for the MSRMTSU.DLL that is included with
+version 3.2 of Microsoft Mail Remote for Windows.
+
+For complete information about obtaining and installing the MSRMTSU.DLL file, see
+the following sections:
+
+- To download the updated file
+
+- To update your MSRMTSU.DLL file
+
+MORE INFORMATION
+================
+
+This update contains MSRMTSU.DLL, a replacement for the MMSRMTSU.DLL file that
+is included with version 3.2 of Microsoft Mail Remote for Windows. This
+replacement file provides additional enhancements to the original MSRMTSU.DLL
+file, correcting the following problems:
+
+- When you use Microsoft Mail Remote for Windows to connect to a postoffice and
+  you attempt to switch to the Mail Remote driver with MAILDRV.EXE, the
+  following error message may occur:
+
+  Mailbox ID not Found: &lt;userid&gt;
+
+- A message remaining in the Outbox could be misdirected if the remote address
+  book was updated without uploading messages. The client will now check for
+  the outbound messages prior to updating the address book. To ensure this fix
+  works correctly, the following DLLs must be upgraded in conjunction with this
+  DLL:
+
+     MSRMT.DLL    version 3.2.4013
+     MSRMTCN.DLL  version 3.2.4013
+     MSRMTTR.DLL  version 3.2.4013
+     MSRMTUI.DLL  version 3.2.4013
+
+
+To download the updated file
+----------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+  DownloadDownload Msrmtsu.exe now
+  (http://download.microsoft.com/download/pcmail/Update/10/WIN/EN-US/Msrmtsu.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+After you download MSRMTSU.EXE to a clean directory, run it (by typing "msrmtsu"
+(without the quotation marks) at the MS-DOS prompt) to extract the contents of
+the file. You should receive the following files:
+
+  MSRMTSU.DLL (34,816 bytes, dated 6-15-95, 6:36 P.M.)
+  README.TXT
+
+To replace your MSRMTSU.DLL file
+--------------------------------
+
+1. Verify that the Microsoft Mail Remote driver (MSRMT.DLL) is the current
+  driver in the Mail System Selector (MAILDRV.EXE) by running the Mail System
+  Selector from the Windows Program Manager, choosing Microsoft Mail Remote,
+  and then selecting Set As Current Mail Driver.
+
+2. At the MS-DOS command prompt, type the following and press ENTER
+
+  " copy &lt;path&gt;:\msrmtsu.dll &lt;destination&gt; " (without the quotation
+  marks)
+
+  where &lt;path&gt; is the drive and directory where you ran the self-
+  extracting MSRMTSU.EXE file and &lt;destination&gt; is the drive and
+  directory where your MSRMTSU.DLL file currently resides. For example, if you
+  ran the self-extracting file from the TEST directory on drive D, and your
+  MSRMTSU.DLL file is located in the Windows SYSTEM subdirectory on drive C,
+  type the following command:
+
+  " copy d:\test\msrmtsu.dll c:\windows\system " (without the quotation marks)
+
+Additional query words: 3.20 wga mail ID not found
+
+======================================================================
+Keywords          : kbgraphxlinkcritical 
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

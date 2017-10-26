@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122158: Configuring Sound in Visual C++ Development Environment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122158: Configuring Sound in Visual C++ Development Environment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122158/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122158/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122158/","publisher":null,"image":null,"headline":"Q122158: Configuring Sound in Visual C++ Development Environment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122158-configuring-sound-in-visual-c-development-environment">Q122158: Configuring Sound in Visual C++ Development Environment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122158
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Visual C++ will play different sounds at the end of a build, depending on the
+success of the build. Without a sound system installed, Visual C++ calls
+MessageBeep().
+
+If there is a sound system installed in the computer, Visual C++ calls
+sndPlaySound(), using the Multimedia API, with specific sound names. If the
+sound names listed below are not in the system's registry, Visual C++ does not
+make any sound at all.
+
+  Build State            sndPlaySound()      MessageBeep()
+                         Sound Name          Beep Type
+  -----------------------------------------------------------
+  Build is up to date    BuildUpToDate       MB_ICONASTERISK
+  Build has errors       BuildError          MB_ICONEXCLAMATION
+  Build has warnings     BuildWarning        MB_ICONQUESTION
+  Build complete         BuildComplete       MB_ICONASTERISK
+  Build cancelled        &lt;nothing&gt;           &lt;nothing&gt;
+
+In addition, Visual C++ version 4.0 supports the following sound states:
+
+  State                  sndPlaySound()      MessageBeep()
+                         Sound Name          Beep Type
+  -----------------------------------------------------------
+  Breakpoint Hit         MSVC_HitBP         &lt;nothing&gt;
+  Error in Output        MSVC_OutputError   &lt;nothing&gt;
+  Warning in Output      MSVC_OutputWarning &lt;nothing&gt;
+
+If a sound card is not installed, you can modify the system sounds by choosing
+the Sound icon from the Control Panel. If you have a sound card installed, you
+need to modify the registry to add the sndPlaySound() sound names to enable
+sound before you change the sounds in the Control Panel.
+
+MORE INFORMATION
+================
+
+Under Windows NT registry, the sounds need to be placed in:
+
+  HKEY_CURRENT_USER\Control Panel\Sounds
+
+You can use the following sample C program to automatically add these sounds, or
+you can use REGEDT32.EXE to directly modify the registry. After the
+modifications, your registry should contain the following lines for Visual C++
+2.x:
+
+  BuildComplete:REG_SZ:tada.wav,Build Complete
+  BuildUpToDate:REG_SZ:ding.wav,Build Up To Date
+  BuildError:REG_SZ:ding.wav,Build Error
+  BuildWarning:REG_SZ:ding.wav,Build Warning
+
+After the modifications, your registry should contain the following lines for
+Visual C++ 4.0:
+
+  BuildComplete : REG_SZ : tada.wav,MSDev: Build Complete
+  BuildUpToDate : REG_SZ : ding.wav,MSDev: Build Up To Date
+  BuildError : REG_SZ : ding.wav,MSDev: Build Error
+  BuildWarning : REG_SZ : ding.wav,MSDev: Build Warning
+
+
+Sample Code
+-----------
+
+  /* Compile options needed: Default build options for a console
+                    application.
+  */ 
+
+  #include &lt;windows.h&gt;
+  #include &lt;stdio.h&gt;
+  #include &lt;string.h&gt;
+
+  char *sound[4] = { "BuildComplete", "BuildUpToDate",
+                     "BuildError", "BuildWarning" };
+  #if _MSC_VER == 1000  // using Visual C++ 4.0
+  char *soundValue[4] = { "tada.wav,MSDev: Build Complete",
+                          "ding.wav,MSDev: Build Up To Date",
+                          "ding.wav,MSDev: Build Error",
+                          "ding.wav,MSDev: Build Warning" };
+  #else  // using Visual C++ 2.x
+  char *soundValue[4] = { "tada.wav,Build Complete",
+                          "ding.wav,Build Up To Date",
+                          "ding.wav,Build Error",
+                          "ding.wav,Build Warning" };
+  #endif
+
+  void main( void )
+  {
+  int i;
+  HKEY hCPanel;
+  HKEY hSounds;
+
+  if ((ERROR_SUCCESS != RegOpenKeyEx(HKEY_CURRENT_USER, "Control Panel",
+                         0, KEY_SET_VALUE, &amp;hCPanel)) ||
+                  (ERROR_SUCCESS != RegOpenKeyEx(hCPanel, "Sounds",
+                   0, KEY_SET_VALUE, &amp;hSounds)))
+     {
+      printf("Error opening HKEY_CURRENT_USER\\Control Panel\\Sounds\n");
+      exit(-1);
+     }
+
+  for (i=0; i&lt;4; i++)
+         if (ERROR_SUCCESS != RegSetValueEx(hSounds, sound[i], 0, REG_SZ,
+          (unsigned char*) soundValue[i], strlen(soundValue[i]) + 1))
+         printf("Could not set sound: %s\n", sound[i]);
+
+  RegCloseKey(hSounds);
+  RegCloseKey(hCPanel);
+
+  printf("Sounds were successfully added\n");
+  exit(0);
+  }
+
+Additional query words: kbsound 2.00 2.10 4.00 beep sound blaster vwb visual workbench ide
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC200 kbVC210
+Version           : :2.0,2.1,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

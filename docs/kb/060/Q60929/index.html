@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60929: Windows 3.0 SYSTEM.INI Settings for MS Network Software | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60929: Windows 3.0 SYSTEM.INI Settings for MS Network Software" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60929/","publisher":null,"image":null,"headline":"Q60929: Windows 3.0 SYSTEM.INI Settings for MS Network Software","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60929-windows-30-systemini-settings-for-ms-network-software">Q60929: Windows 3.0 SYSTEM.INI Settings for MS Network Software</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q60929
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+Microsoft Windows version 3.0 provides integrated support for the following
+networks:
+
+  3Com 3+Open LAN Manager
+  3Com 3+Share
+  Banyon VINES 4.0
+  LAN Manager 1.x (or 100 percent compatible)
+  LAN Manager 2.0 Basic (or 100 percent compatible)
+  LAN Manager 2.0 Enhanced (or 100 percent compatible)
+  Microsoft Network (or 100 percent compatible)
+  Novell NetWare 2.1 or above, or Novell NetWare 386
+  IBM PC-LAN Program
+  Others, as supported by manufacturers' installation disks
+
+Windows 3.0 retains information regarding what network it is currently configured
+for in the SYSTEM.INI file, which should be located in the \WINDOWS directory.
+The information below attempts to give guidance regarding the settings in that
+file that directly affect network support and performance. Windows 3.0 provides
+different levels of support (different features) for different networks. The
+sample settings provided below are characteristic of an 80386 system with
+extended memory, capable of running in 386 enhanced mode.
+
+MORE INFORMATION
+================
+
+The sections and settings that describe the network configuration in SYSTEM.INI
+are:
+
+    [boot]
+       network.drv
+    [boot.description]
+       network.drv=
+    [386Enh]
+       network=
+
+If LAN Manager version 1.0 or 1.01 is installed, the settings are:
+
+    [boot]
+      network.drv=msnet.drv
+    [boot.description]
+      network.drv=LAN Manager 1.x (or 100 percent compatible)
+    [386Enh]
+      networks=*vnetbios, *dosnet, lanman10.386
+
+If LAN Manager version 2.0 Basic is installed, the settings are:
+
+     [boot]
+       network.drv=msnet.drv
+     [boot.description]
+       network.drv=LAN Manager 2.00 BASIC (or 100 percent compatible)
+     [386Enh]
+       network=*vnetbios, *dosnet
+
+If LAN Manager version 2.0 Enhanced is installed, the settings are:
+
+      [boot]
+        network.drv=lanman.drv
+      [boot.description]
+         network.drv=LAN Manager 2.00 Enhanced (or 100 percent compatible)
+      [386Enh]
+         network=*vnetbios,*dosnet
+
+If MS-NET is installed, the settings are:
+
+       [boot]
+         network.drv=msnet.drv
+       [boot.description]
+         network.drv=Microsoft Network (or 100 percent compatible)
+       [386Enh]
+         network=*vnetbios,*dosnet
+
+Although checking the settings may give you an indication of what might be wrong,
+simply running the Windows Setup utility is an easy way to ensure that the
+customer has actually installed the package for the correct network software. It
+takes less than a minute to load Setup and reconfigure, as the network options
+are available on the first screen, and it exits to DOS immediately upon the user
+confirming his or her choice.
+
+Additional query words: 1.00 2.00 3.00
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

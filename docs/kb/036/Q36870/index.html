@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q36870: INFO: C2106 Error Assigning a String Literal to a char Array | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q36870: INFO: C2106 Error Assigning a String Literal to a char Array" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/036/Q36870/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/036/Q36870/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/036/Q36870/","publisher":null,"image":null,"headline":"Q36870: INFO: C2106 Error Assigning a String Literal to a char Array","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q36870-info-c2106-error-assigning-a-string-literal-to-a-char-array">Q36870: INFO: C2106 Error Assigning a String Literal to a char Array</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q36870
+Product(s): Microsoft Programming Utilities
+Version(s): 1.0,1.5,6.0,6.0a,6.0ax; MS-DOS:7.0; winnt:1.0,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbLangC kbVC kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+Last Modified: 15-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+- Microsoft C/C++ for MS-DOS, version 7.0 
+- Microsoft Visual C++, version 1.5 
+- Microsoft Visual C++, versions 1.0, 2.0, 2.1, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A common programming error in C involves an attempt to fill a character array,
+declared as "char arrayname[somelength]," with a string constant by using the
+simple-assignment operator (the equal sign, "="). This attempt fails and the
+compiler generates the following message:
+
+  error C2106: '=' : left operand must be lvalue
+
+Simple assignment works to fill non-auto (global) character arrays and character
+pointers (in C version 5.0 and later) with static text. The required
+declarations are as follows:
+
+     char string1[10] = "String1";
+     char *string2 = "String2";
+
+The text below presents two code examples to demonstrate correct and incorrect
+methods to initialize strings.
+
+MORE INFORMATION
+================
+
+The following code example does not compile correctly and produces the C2106
+error.
+
+Sample Code
+-----------
+
+  /*
+   * Compile options needed: None
+   */ 
+
+  #include &lt;string.h&gt;
+  char string1[10];
+
+  void main(void);
+  void main(void)
+  {
+     string1 = "String1";
+  }
+
+The following example demonstrates various methods to copy strings.
+
+Sample Code
+-----------
+
+  /*
+   * Compile options needed: None
+   */ 
+
+  /* This example demonstrates some string usage principles. */ 
+  #include &lt;stdio.h&gt;
+  #include &lt;string.h&gt;
+  #include &lt;malloc.h&gt;
+
+  char string1[40];       /* string1 is an array of char  */ 
+  char *string2;          /* string2 is a pointer to char */ 
+          /* Important: Know when to malloc space for string2. */ 
+
+  void main(void);
+  void main(void)
+  {
+     /* This shows the correct way to achieve the   */ 
+     /* assignment intended by string1 = "String1"; */ 
+     strcpy(string1, "Contents of string1");
+     printf("1:%s\n\n", string1);
+
+     /* These two assignments show two ways to     */ 
+     /* use a char pointer with a string literal.  */ 
+     string2 = "Contents of string2"; /* point to the literal */ 
+     printf("2:%s\n", string2);
+
+     /* allocate memory for char *string2 to point at */ 
+     string2 = (char *)malloc(sizeof(string1));
+     strcpy(string2, "Contents of string2, again");
+     printf("3:%s\n\n", string2);
+     free(string2);
+
+     /* This shows a failed attempt to fill a char  */ 
+     /* array by assignment through a char pointer. */ 
+     string2 = string1;
+     string2 = "Contents of string2, but not string1";
+     printf("4:%s\n", string1);
+     printf("5:%s\n\n", string2);
+
+     /* This shows how correctly to use a pointer   */ 
+     /* to fill a char array with a string literal. */ 
+     string2 = string1;
+     strcpy(string2, "Contents of string2, and also string1");
+     printf("6:%s\n", string1);
+     printf("7:%s\n\n", string2);
+  }
+
+This code generates the following output:
+
+  1:Contents of string1
+
+  2:Contents of string2
+
+  3:Contents of string2, again
+
+  4:Contents of string1
+  5:Contents of string2, but not string1
+
+  6:Contents of string2, and also string1
+  7:Contents of string2, and also string1
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbLangC kbVC kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbCComp600DOS kbCComp600aDOS kbCComp600axDOS kbCVC700DOS kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :1.0,1.5,6.0,6.0a,6.0ax; MS-DOS:7.0; winnt:1.0,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

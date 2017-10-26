@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87135: Large Drive Translation Under Microsoft OS/2 1.3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87135: Large Drive Translation Under Microsoft OS/2 1.3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87135/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87135/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87135/","publisher":null,"image":null,"headline":"Q87135: Large Drive Translation Under Microsoft OS/2 1.3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87135-large-drive-translation-under-microsoft-os2-13">Q87135: Large Drive Translation Under Microsoft OS/2 1.3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87135
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+This article discusses large drive support for Microsoft OS/2 version 1.3.
+
+MORE INFORMATION
+================
+
+1. Q. What is a large drive?
+
+  A. A large drive is any disk drive with more than 1024 cylinders, 256 heads,
+  or 63 sectors per track. "Large" does not refer to the capacity of the drive,
+  but rather these parameters. The combination of cylinders, heads, and sectors
+  per track is referred to as the actual geometry of the disk.
+
+  These particular capacities were chosen to offer compatibility with IBM ROM
+  BIOS and MS-DOS. Because OS/2 machines can be dual booted, or booted from an
+  MS-DOS floppy disk, it is necessary to maintain the same use of partition
+  tables as that employed by MS-DOS. Because these limits exist in MS-DOS, they
+  are inherited in OS/2.
+
+2. Q. Why does this affect booting OS/2?
+
+  A. OS/2 employs the ROM BIOS during boot. Until the OS/2 kernel, loader, and
+  disk drivers have loaded, OS/2 must go through the ROM BIOS. After these have
+  loaded, OS/2 goes into protect mode disk operation, eliminating the need to
+  interface with the ROM BIOS. However, as the kernel, loader, and disk drivers
+  are loaded, it is imperative that these files lie within the boundaries the
+  ROM BIOS can access. If any of them lies outside these boundaries, that file
+  cannot be accessed as OS/2 boots, and therefore the system will hang.
+
+3. Q. How is disk capacity computed?
+
+  A. Disk drive capacity is computed by the following formula:
+
+  cylinders * heads * sectors per track * sector size = disk capacity
+
+  The IBM ROM BIOS standard dictates that the cylinder addressing is limited to
+  10 bits (maximum of 1024), head addressing to 8 bits (maximum of 256), and
+  sector addressing to 6 bits (maximum of 63, because sector addressing is
+  1-based). OS/2 uses a sector size of 512 bytes.
+
+4. Q. What can we do with drives that exceed the maximum geometry?
+
+  A. Two choices are available when a drive exceeds any of the above parameters:
+  truncation or translation.
+
+  If the truncation method is chosen, the offending parameter will simply be
+  truncated to the maximum allowable for that field. For example, suppose the
+  drive in question has 1740 cylinders (c), 14 heads (h), and 54 sectors per
+  track (spt). If truncation were employed, OS/2 would use an apparent geometry
+  of 1024 cylinders, 14 heads, and 54 sectors per track. The other 716
+  cylinders would be lost. In this case, the truncated drive would lose about
+  41 percent of the available drive space.
+
+  If translation were used, no drive space would be lost. Translation requires
+  decreasing the offending parameter until it is within acceptable bounds, and
+  increasing another parameter a corresponding amount. Using the above example,
+  the drive could be translated to have 870 cylinders, 28 heads, and 54 sectors
+  per track. In this way, no drive space is lost.
+
+5. Q. Which method does Microsoft OS/2 version 1.3 employ?
+
+  A. Microsoft OS/2 1.3 employs both methods under different circumstances.
+
+  In the case of a boot drive, truncation is used. This is because of the
+  limitations stated above (the OS/2 kernel, loader, and disk driver can be
+  located on a disk partition that is accessible by the ROM BIOS). If
+  translation were done, one or more of these files could reside on a disk
+  location outside of the addressable geometry, resulting in an unbootable
+  system. Therefore, for boot drives, disk truncation is used. This may result
+  in some available drive space being lost; however, it does ensure that the
+  machine will be bootable.
+
+  For non-boot drives, however, translation is employed. This can be done safely
+  because the operating system is already loaded. Therefore, translation can be
+  done safely and no disk space should be lost.
+
+How Translation Is Done
+-----------------------
+
+Translation can be done in one of several ways: via hardware, hardware with
+software support, or software only. For hardware incapable of doing translation
+at a hardware level, MS OS/2 1.3 supports software translation. Because all disk
+activity goes through the disk drivers as provided by the LADDR architecture,
+translation can be done at this level. For hardware with software support
+translation, the bus interface driver (BID) is responsible. For software-only
+support, the DISK.TSD (type specific driver) does all of the work.
+
+The DISK.TSD does the translation in the following manner:
+
+If there are more than 1024 cylinders, and if this is the boot drive, set the
+apparent geometry to have 1024 cylinders, and the actual number of heads and
+sectors per track. If it is not the boot drive, halve the number of cylinders,
+and double either the heads, or sectors per track. Repeat the last step until
+the number of cylinders is less than 1024, or until the heads and sectors per
+track no longer can be doubled. Sectors per track are increased before the
+number of heads.
+
+For example, a Seagate ST 4769E (691 MB ESDI drive) will generate the following
+translation table:
+
+  Actual Physical          Translation If           Translation If
+  Drive Parameters         Boot Drive               Not Boot Drive
+  ----------------         --------------           ---------------
+
+  1552  cylinders          1024 cylinders           776 cylinders
+    15  heads                15 heads                30 heads
+    53  sectors per track    53 sectors per track    53 sectors per track
+
+To determine which method has been employed, use the LOGSHOW.EXE utility, which
+is shipped with MS OS/2 1.3. This utility reports what the operating system
+determines your actual and apparent geometry to be.
+
+If you are Running LOGSHOW from an OS/2 command prompt, press F1 to examine the
+existing log files, and then select the latest log file from the list. A screen
+showing a variety of information will be displayed. The area of interest is the
+DISK01 header, approximately midpoint of the screen. For example:
+
+DISK01 ffff 04/10/92   14:12:47 - Informational: configure physical disk
+AOK
+               Apparent geometry: 00512 000391200 000815 0015 0032 3700
+               Actual geometry: 00000 000000000 000815 0015 0032 65535
+
+The fields are the same for the both the Actual and Apparent geometry, with the
+exception of the last field in each. The fields are as follows (from left to
+right):
+
+- Sector size (in BYTES)
+
+- Number of sectors on disk
+
+- Number of cylinders on the disk
+
+- Number of heads on the disk
+
+- Number of sectors per track
+
+- For the apparent geometry record, the last field is a set of flags that
+  detail how the geometry was determined.
+
+- For the actual geometry record, the last field is the write precompensation
+  cylinder
+
+Using this information, it is easy to see what, if any, translation or truncation
+has been performed on the disk drive.
+
+Known Problems with MS OS/2 1.3 Drive Translation
+-------------------------------------------------
+
+There are two problems with disk translation and the released version of MS OS/2
+1.3. These problems deal with doing the translation incorrectly, and affect the
+following files:
+
+  DISK.TSD
+  ESDI-506.BID
+
+The ESDI-506.BID is needed for any ESDI/IDE/ST-506 (MFM, RLL) drives for which
+translation is required, while DISK.TSD is required for all drives doing
+translation. These corrections are available from Microsoft Product Support
+Services. Note that these corrections only affect systems doing translation.
+
+Additional query words: 2.10 1.30 disk.tsd esdi.bid translate hard disk drive
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

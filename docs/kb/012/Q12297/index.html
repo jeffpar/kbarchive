@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q12297: PRB: Rounding Error Casting Double to Long | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q12297: PRB: Rounding Error Casting Double to Long" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/012/Q12297/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/012/Q12297/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/012/Q12297/","publisher":null,"image":null,"headline":"Q12297: PRB: Rounding Error Casting Double to Long","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q12297-prb-rounding-error-casting-double-to-long">Q12297: PRB: Rounding Error Casting Double to Long</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q12297
+Product(s): Microsoft Programming Utilities
+Version(s): 5.1,6.0,6.0a,6.0ax; MS-DOS:7.0; WINDOWS:1.0,1.5,1.51,1.52
+Operating System(s): 
+Keyword(s): kb16bitonly kbprb
+Last Modified: 09-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C for MS-DOS, versions 5.1, 6.0, 6.0a, 6.0ax 
+- Microsoft C for OS/2, versions 5.1, 6.0, 6.0a 
+- Microsoft C/C++ for MS-DOS, version 7.0 
+- Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application produces incorrect results when it casts an expression of type
+double to type long.
+
+CAUSE
+=====
+
+The error is caused by differences in arithmetic precision.
+
+STATUS
+======
+
+The C and C++ standards specify that when an application converts a
+floating-point number to an integer, the number is truncated toward zero. When
+rounding is the preferred behavior, the application can add or subtract 0.5 as
+appropriate so truncation provides the correct result. The text below presents a
+macro for this purpose.
+
+MORE INFORMATION
+================
+
+The following code example demonstrates this behavior when compiled with any
+floating point math option other than /FPa. The application displays -4049 as
+the value for Long2 and Long4, which is incorrect. The application displays the
+correct value -4050 for Long1 and Long3.
+
+Sample Code
+-----------
+
+  /*
+   * Compile options needed: /FPc or /FPc87 or /FPi or /FPi87
+   */ 
+
+  #include "stdio.h"
+  main()
+  {
+     long    val1, val2, val3;
+     double  mul1, mul2;
+     val1 = 45000;
+     mul1 = 0.09;
+     mul2 = (double)val1 * mul1 * -1.00;
+     printf("%7ld Long1 ", (long)mul2);
+     val2 = (long)mul2;
+     printf("%7ld Long2 ", (long)((double)val1 * mul1 * -1.00));
+     printf("%7ld Long3 ", val2);
+     val3 =(long)((double)val1 * mul1 * -1.00);
+     printf("%ld Long4 \n", val3);
+  }
+
+The application produces the incorrect results by converting a 10-byte real value
+to a long; the application produces correct results by converting a 10-byte real
+to an 8-byte real and converting that value to a long.
+
+According to the type conversion rules, the conversion from a 10-byte real to an
+8-byte real rounds the number from -4049.99999999999985 to -4050.0. When the
+application converts this value to a long, the value -4050 results. However,
+when the application directly converts the double value to a long, the
+application truncates toward zero. In this example, -4049.99999999999985 becomes
+-4049.
+
+Many numbers (such as .01) are repeating fractions in the binary numbering system
+which cannot be represented exactly. Any representation of these numbers is
+slightly more or less than the "true" value. When a calculation involves one of
+these values, the representation error propagates and can be magnified. Because
+the error is present only in the least significant part of the number, errors
+occur only when a calculation loses precision in an intermediate value.
+
+The conversions always truncate toward zero. The following macro effectively
+rounds the number by increasing the magnitude of the number by 0.5 then
+converting the number to an integer.
+
+     #define ROUNDL( d ) ((long)((d) + ((d) &gt; 0 ? 0.5 : -0.5)))
+
+The problem does not occur with the Microsoft Visual C++ 32-bit Editions as Win32
+does not support the long double data type for compatibility reasons.
+
+For more information on converting floating-point numbers to integers, see the
+type conversions section of the "C Language Reference" manual.
+
+Additional query words: 1.00 1.50 5.10 6.00 6.00a 6.00ax 7.00
+
+======================================================================
+Keywords          : kb16bitonly kbprb 
+Technology        : kbVCsearch kbAudDeveloper kbPTProdChange kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbCComp510DOS kbCComp600DOS kbCComp600aDOS kbCComp600axDOS kbCComp510OS2 kbCComp600OS2 kbCComp600aOS2 kbCVC700DOS kbVC151 kbVC152
+Version           : :5.1,6.0,6.0a,6.0ax; MS-DOS:7.0; WINDOWS:1.0,1.5,1.51,1.52
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q46217: QuickC Does Not Always Deallocate Memory Given to Video Buffer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q46217: QuickC Does Not Always Deallocate Memory Given to Video Buffer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/046/Q46217/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/046/Q46217/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/046/Q46217/","publisher":null,"image":null,"headline":"Q46217: QuickC Does Not Always Deallocate Memory Given to Video Buffer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q46217-quickc-does-not-always-deallocate-memory-given-to-video-buffer">Q46217: QuickC Does Not Always Deallocate Memory Given to Video Buffer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q46217
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_QuickAsm | mspl13_c
+Last Modified: 18-SEP-1989
+
+When a graphics mode program is run from within the QuickC
+environment, screen swapping is used as the method of screen exchange.
+Thus, a buffer is dynamically allocated for holding the contents of
+the graphics-mode output screen. If the video mode is not reset to a
+text mode at the end of the program [i.e.,
+_setvideomode(_DEFAULTMODE);],  this buffer will not be deallocated
+properly, and the available memory will be decreased accordingly. A
+program that is constructed in this manner will eventually fail due to
+lack of memory, either at start-up or in the body of the code, when an
+attempt is made to allocate memory for use by the program.
+
+The following program demonstrates the problem. If the
+_setvideomode(_DEFAULTMODE); line is uncommented at the end of the
+program, it will run properly inside of the QuickC environment an
+unlimited number of times. However, if the program is allowed to
+terminate without resetting the video mode, it will fail the second,
+third, or fourth try, depending upon the initial amount of free memory
+in the system. This program will run properly from a DOS prompt any
+number of times. Another solution is simply to shell out of QuickC and
+reset the mode to a text mode. The program will then run one more
+time. However, the best solution is to change the program.
+
+Sample Program
+--------------
+
+#include &lt;stddef.h&gt;
+#include &lt;malloc.h&gt;
+#include &lt;process.h&gt;
+#include &lt;graph.h&gt;
+#include &lt;conio.h&gt;
+
+void main (void)
+ { long size;
+   char huge *image;
+
+   /* Put the display in a EGA mode and allocate a buffer. */
+   if (_setvideomode(_ERESCOLOR)==0)
+       { _outtext ("Video mode not supported!\n");
+         exit (0);
+       }
+
+   /* In _VRES16COLOR, size is 153604. */
+   size = _imagesize(0,0,639,349);
+
+   if ( (image=(char huge *)halloc(size,1)) == NULL)
+        {
+         _outtext ("Not enough memory for buffer!\n");
+         exit (1);
+       }
+   /* Draw a couple of shapes and capture the screen. */
+   _ellipse (_GBORDER,0,0,639,349);
+   _rectangle (_GBORDER,0,0,639,349);
+   _getimage (0,0,639,349,image);
+
+   /* Clear the screen and redraw the image. */
+   _clearscreen (_GCLEARSCREEN);
+   _putimage (0,0,image,_GOR);
+   getch();
+   hfree ((char huge *)image);       /* carefully free the image buffer */
+   /* _setvideomode (_DEFAULTMODE); */
+   /* uncomment the line above, and the program works every time */
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

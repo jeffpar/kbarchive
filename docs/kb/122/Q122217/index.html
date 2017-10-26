@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122217: PRB: offsetof() Macro Fails with Virtual Base Class | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122217: PRB: offsetof() Macro Fails with Virtual Base Class" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122217/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122217/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122217/","publisher":null,"image":null,"headline":"Q122217: PRB: offsetof() Macro Fails with Virtual Base Class","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122217-prb-offsetof-macro-fails-with-virtual-base-class">Q122217: PRB: offsetof() Macro Fails with Virtual Base Class</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122217
+Product(s): Microsoft C Compiler
+Version(s): 1.0,2.0,4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbCodeGen kbCompiler kbCPPonly kbVC
+Last Modified: 14-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Use of the offsetof() macro may cause the compiler to generate incorrect code
+when used with classes that have virtual base classes. This incorrect code
+results in a null pointer access, which causes an access violation when the
+application is executed.
+
+This problem occurs only for members declared in the virtual base class.
+
+Note that according to the ANSI C++ Draft Working Papers, clause 18.1.5, the
+offsetof macro is restricted to POD union and POD structure types. POD types may
+not have base classes. Using the macro contrary to this restriction results in
+undefined behavior.
+
+RESOLUTION
+==========
+
+The offsetof() macro returns the offset in bytes of a member from the beginning
+of a class by casing NULL to a pointer of class/struct type. To work around this
+problem, cast the address of the object to a char *, cast the address of the
+member to a char *, and subtract the address of the object from the address of
+the member. Please see the Sample Code in the MORE INFORMATION section for an
+example.
+
+While this workaround generates code that is as efficient as the offsetof()
+macro, it does require that the class/struct be instanced, while offsetof() does
+not.
+
+STATUS
+======
+
+This is by design.
+
+MORE INFORMATION
+================
+
+The following code demonstrates the problem and the workaround.
+
+Sample Code
+-----------
+
+     /* Compile options needed: none
+     */ 
+
+     #include &lt;stdio.h&gt;
+     #include &lt;iostream.h&gt;
+     #include &lt;stddef.h&gt;
+
+     class A { public: int a; };
+     class B : virtual public A { public: int v_a; };
+     class C : virtual public A { public: int v_b; };
+     class D : virtual public B, virtual public C { public: int b; };
+
+     int main()
+     {
+
+        D xD;
+
+        xD.b   = 16;
+        xD.v_a = 8;
+        xD.v_b = 4;
+        xD.a   = 2;
+
+        cout &lt;&lt; "sizeof(D) == " &lt;&lt; sizeof(D)   &lt;&lt; endl;
+        cout &lt;&lt; "sizeof(C) == " &lt;&lt; sizeof(C)   &lt;&lt; endl;
+        cout &lt;&lt; "sizeof(B) == " &lt;&lt; sizeof(B)   &lt;&lt; endl;
+        cout &lt;&lt; "sizeof(A) == " &lt;&lt; sizeof(A)   &lt;&lt; endl &lt;&lt; endl;
+
+     // The following code section works around the offsetof() problem
+        cout &lt;&lt; "offsetof(D.b)   == " &lt;&lt; (char *)&amp;xD.b - (char *)&amp;xD &lt;&lt; endl;
+        cout &lt;&lt; "offsetof(D.v_a) == " &lt;&lt; (char *)&amp;xD.v_a - (char *)&amp;xD &lt;&lt;
+        endl;
+        cout &lt;&lt; "offsetof(D.v_b) == " &lt;&lt; (char *)&amp;xD.v_b - (char *)&amp;xD &lt;&lt;
+        endl;
+        cout &lt;&lt; "offsetof(D.a)   == " &lt;&lt; (char *)&amp;xD.a - (char *)&amp;xD &lt;&lt; endl;
+        cout &lt;&lt; endl;
+
+     // The following statement is generated correctly
+        cout &lt;&lt; "offsetof(D.b)   == " &lt;&lt; offsetof(D, b)   &lt;&lt; endl;
+
+     // The following three statements cause access violations when executed
+        cout &lt;&lt; "offsetof(D.v_a) == " &lt;&lt; offsetof(D, v_a) &lt;&lt; endl;
+        cout &lt;&lt; "offsetof(D.v_b) == " &lt;&lt; offsetof(D, v_b) &lt;&lt; endl;
+        cout &lt;&lt; "offsetof(D.a)   == " &lt;&lt; offsetof(D, a)   &lt;&lt; endl &lt;&lt; endl;
+
+        cout &lt;&lt; "Press Enter...";
+        cin.get();
+
+        return 0;
+     }
+
+Additional query words: kbVC400bug 8.00 9.00 buglist1.00 buglist2.00 10.00 10.10 10.20
+
+======================================================================
+Keywords          : kbCodeGen kbCompiler kbCPPonly kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,2.0,4.0,4.1,4.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

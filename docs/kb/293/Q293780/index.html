@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q293780: Type-Ahead Disabled in Upgrading to SNA Server 4.0 SP3 or Later | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q293780: Type-Ahead Disabled in Upgrading to SNA Server 4.0 SP3 or Later" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/293/Q293780/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/293/Q293780/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/293/Q293780/","publisher":null,"image":null,"headline":"Q293780: Type-Ahead Disabled in Upgrading to SNA Server 4.0 SP3 or Later","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q293780-type-ahead-disabled-in-upgrading-to-sna-server-40-sp3-or-later">Q293780: Type-Ahead Disabled in Upgrading to SNA Server 4.0 SP3 or Later</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q293780
+Product(s): Microsoft SNA Server
+Version(s): 4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbDSupport sna4 kbsna400sp3
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When utilizing the SNA Server 3270 Applet, the user's keystrokes are ignored
+when the keyboard is in an inhibited state (also known as an "X clock"). Users
+are unable to type keystrokes until the keyboard-inhibited state has been
+cleared.
+
+CAUSE
+=====
+
+During an upgrade of SNA Server to either SNA version 4.0 Service Pack (SP) 3,
+version 4.0 SP4, or Host Integration Server (HIS) 2000, the 3270 Applet creates
+a Win3270.ini. file from the [SnaServerWin3270] section of the Win.ini file. The
+problem occurs if type-ahead is not explicitly defined in the Win.ini file. The
+3270 Applet adds a "typeahead=" setting to the Win3270.ini file, which disables
+the type-ahead feature.
+
+Sample Win3270.ini File
+-----------------------
+
+[SnaServerWin3270]
+AutoConnect=
+LUHostCountry=United States (037)
+LinkType=MS SNA Server
+LUOrPoolName=DEMOPOOL
+TNHostAddr=TESTSNASERVER
+TNHostPort=23
+TNModel=IBM-3278-2-E
+TNDevice=
+FTSHostProgram=
+FTSParams=
+XFRParams=
+WindowLeft=167
+WindowTop=118
+WindowRight=935
+WindowBottom=655
+ShowWindow=1
+WindowMaxX=-1
+WindowMaxY=-1
+ScriptName=Logon.lsc
+AutoLogonScript=
+Typeahead=
+ConfigBufferSize=3643
+
+WORKAROUND
+==========
+
+To work around the problem, edit the Win3270.ini file. Change the blank value of
+the "typeahead=" line to "typeahead=1" or remove the entire "typeahead=" line.
+
+The default locations for the Win3270.ini file are:
+
+SNA Server 4.0, SNA Server 4.0 Service Pack 1, and SNA Server 4.0 Service Pack 2
+
+  Only the settings in the WIN.ini file (which is located in the Windows
+  directory) are used.
+
+SNA Server 4.0 Service Pack 3
+
+  Windows 95/Windows 98 = C:\Windows\Application Data\Microsoft\SNA Server
+  Windows NT = C:\WINNT\Profiles\user name\Application Data\Microsoft\SNA
+  Server
+  Windows 2000 C:\Documents and Setting\user name\Application Data\Microsoft\SNA
+  Server
+
+Host Integration Server 2000
+
+  Windows 95/Windows 98 = C:\Windows\Application Data\Microsoft\Host
+  Integration Server
+  Windows NT = C:\Profiles\&lt;user name&gt;\Application Data\Microsoft\Host
+  Integration Server
+  Windows 2000 C:\Documents and Setting\&lt;user name&gt;\Application
+  Data\Microsoft\Host Integration Server
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 4.0 SP3, SNA Server
+4.0 SP4, and Host Integration Server 2000.
+
+
+MORE INFORMATION
+================
+
+In SNA Server 4.0 SP3 and later, the Applet settings were moved from the Win.ini
+file to the Win3270.ini file (for the 3270 Applet) and Win5250.ini (for the 5250
+Applet) into the user's profile directory. NOTE: By default, type-ahead is
+internally set to "enabled" and is not defined in the Win.ini file.
+
+If Win3270.ini does not exist when the Applet is started, the Applet will read
+any existing settings from Win.ini to create a new Win3270.ini file. If the
+type-ahead setting is not defined in the Win.ini file, the Applet will write a
+"typeahead=" blank parameter into the Win3270.ini file.
+
+If the type-ahead parameter is explicitly defined in Win.ini, this same value is
+correctly added to Win3270.ini.
+
+If the Win.ini file does not have the [SnaServerwin3270] section, the 3270 Applet
+correctly writes a default Win3270.ini file that does not have "typeahead"
+explicitly defined. In this case, type-ahead is enabled and will work
+correctly.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q165851 Support SNA Server 3270 Applet Keyboard Type-Ahead
+
+Additional query words: typeahead, type ahead, type-ahead
+
+======================================================================
+Keywords          : kbDSupport sna4 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400SP3 kbSNAServ400SP4
+Version           : :4.0 SP3,4.0 SP4
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

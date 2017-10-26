@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120478: Schubert: Manual Installation Instructions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120478: Schubert: Manual Installation Instructions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120478/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120478/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120478/","publisher":null,"image":null,"headline":"Q120478: Schubert: Manual Installation Instructions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120478-schubert-manual-installation-instructions">Q120478: Schubert: Manual Installation Instructions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120478
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Multimedia Schubert for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following describes how to manually set up Multimedia Schubert.
+
+These directions assume the following:
+
+- The hard disk drive is drive C.
+
+- Windows is installed in C:\WINDOWS.
+
+- The CD-ROM drive is drive X.
+
+MORE INFORMATION
+================
+
+1. Create a directory called C:\SCHUBERT on your hard disk (drive C).
+
+2. Copy the following files from the X:\SCHUBERT directory on the CD-ROM to the
+  C:\SCHUBERT directory on your hard disk:
+
+  BTNDWN.AVI
+  BTNUP.AVI
+  GLOSSARY.IDX
+  INDEX.DAT
+  INDEX.MAP
+  INDEX.NAM
+  MUSIC.TXT
+  PAGEDWN.AVI
+  PAGEUP.AVI
+  POCKET1.TXT
+  README.TXT
+  SCHUBERT MAP
+  SCHUBERT.MPF
+  SCHUBERT.MXE
+
+3. Rename the file SCHUBERT.MXE in the C:\SCHUBERT directory to SCHUBERT.EXE.
+
+4. Create a subdirectory in C:\SCHUBERT called either ILLUS.
+
+5. Determine if Windows in running in 16 colors or 256 colors. If you are
+  running Windows in 16 colors, copy all of the files from the
+  X:\SCHUBERT\ILLUS16\HD directory on the CD-ROM to the C:\SCHUBERT\ILLUS
+  directory on the hard drive. If you are running Windows in 256 colors, copy
+  all of the files from the X:\SCHUBERT\ILLUS256\HD directory on the CD-ROM to
+  the C:\SCHUBERT\ILLUS directory on the hard drive.
+
+6. If you are using Windows 3.x, copy all the files from the
+  X:\SCHUBERT\MSSTP\SYSTEM directory on the CD-ROM into the C:\WINDOWS\SYSTEM
+  directory on the hard drive.
+
+  If you are using Windows 95, copy only the following files from the
+  X:\SCHUBERT\MSSTP\SYSTEM directory on the CD-ROM into the C:\WINDOWS\SYSTEM
+  directory on the hard drive:
+
+  ACMCMPRS.DLL MSVIDC.DRV
+
+7. Copy all the files from the x:\SCHUBERT\MSSTP\SHARED directory into the
+  C:\WINDOWS\SYSTEM directory.
+
+8. Install the fonts through Control Panel using the following steps:
+  a. Double-click on the Fonts icon.
+
+  b. If you are using Windows 3.x, choose the Add Font button.
+
+     If you are using Windows 95, click Install New Font on the File menu.
+
+  c. From the Windows SYSTEM subdirectory, select the following fonts:
+
+  Millicent 10,12,14,16
+  Millicent Bold 12,14
+  Millicent SmallCaps 9,14
+
+9. Using a text editor such as Notepad, modify and/or add the following sections
+  to the SYSTEM.INI file:
+
+  (NOTE: Do not delete any information from these sections.)
+
+         [Drivers]
+         WAVEMAPPER=MSACM.DRV
+
+         [MSACM]
+         INSTALL=MSADPCM.ACM
+
+         [MCI]
+         CDAUDIO=MCICDA.DRV
+         WAVEAUDIO=MCIWAVE.DRV
+
+10. Using a text editor such as Notepad, modify and/or add the following
+  sections to the WIN.INI file:
+
+         [MCI EXTENSIONS]
+         wav=waveaudio
+
+11. Using a text editor such as Notepad, create a file named SCHUBERT.INI in the
+  WINDOWS directory with the following entries:
+
+         [schubert]
+         HDPath=C:\SCHUBERT
+         InstalledColors=256
+
+12. Create a new program group called "Microsoft Multimedia."
+
+  If you are using Windows 3.x, do the following:
+  a. From the File menu in Program Manager, choose New.
+
+  b. Select Program Group and choose OK.
+
+  c. Enter "Microsoft Multimedia" (without the quotation marks) in the
+     Description box and choose OK.
+
+  If you are using Windows 95, do the following:
+  a. In Explorer, click the Windows folder, click the Start Menu folder, and
+     then click the Programs folder.
+
+  b. On the File menu, click New, then click Folder.
+
+  c. Rename the new folder "Microsoft Multimedia."
+
+13. Add the following new program item to this group.
+
+  If you are using Windows 3.x, do the following:
+  a. From the File menu in Program Manager, choose New.
+
+  b. Select Program Item and choose OK.
+
+  c. Enter the following description and command line for the program item:
+
+  Description: Microsoft Schubert
+  Command Line: C:\SCHUBERT\SCHUBERT.EXE
+  Working Directory: C:\SCHUBERT
+
+  If you are using Windows 95, do the following
+  a. Open the Microsoft Multimedia folder.
+
+  b. On the File menu, click New, then click Shortcut.
+
+  c. Enter the following description and command line for the program item:
+
+  Description: Microsoft Schubert
+  Command Line: C:\SCHUBERT\SCHUBERT.EXE
+  Working Directory: C:\SCHUBERT
+
+  d. Click OK to accept the information.
+
+14. Restart Windows for the system changes to take effect.
+
+Additional query words: kbhowto Version 1.0 multi media multimedia multi-media man install set up setup
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbMMSchubert
+Version           : WINDOWS:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

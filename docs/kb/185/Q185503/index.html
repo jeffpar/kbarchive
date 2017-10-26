@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185503: APPC Security Information Sent Even If Host Doesn’t Support It | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185503: APPC Security Information Sent Even If Host Doesn’t Support It" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185503/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185503/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185503/","publisher":null,"image":null,"headline":"Q185503: APPC Security Information Sent Even If Host Doesn’t Support It","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185503-appc-security-information-sent-even-if-host-doesnt-support-it">Q185503: APPC Security Information Sent Even If Host Doesn’t Support It</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185503
+Product(s): Microsoft SNA Server
+Version(s): 3.0 SP2,3.0 SP3,4.0
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 24-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An APPC/CPI-C application that has been used to successfully connect to a host
+system (mainframe computer or AS/400) with previous versions of Microsoft SNA
+Server may fail when the host system returns an UNBIND message with SNA Server
+versions 3.0, SP2, 3.0 SP3, and 4.0.
+
+This problem has been reported by customers using the following programs, but may
+occur with other APPC/CPI-C applications.
+
+- Microsoft COM Transaction Integrator for CICS and IMS version 1.0 included
+  with SNA Server version 4.0
+
+- IBM CICS for Windows NT
+
+SNA Server Data Link Control (DLC) message tracing shows that the UNBIND message
+received from the host system indicates a session failure (UNBIND Type 0x'FE')
+that includes IBM Sense Data 0x'10086040'.
+
+In addition, the following messages may be logged in the Windows NT Application
+Event Log on the computer where SNA Server is running:
+
+  Event ID: 90
+  Source: SNA APPC Application
+  Description: APPC protocol violation:
+
+     Sense data   = 0C001110
+     TP_ID        = 0000000080197900
+     Conv_ID      = 00792100
+
+  EXPLANATION: A protocol violation was detected on an APPC conversation.
+  The TP_ID and Conv_ID in this message were shown on a previous message.
+  The conversation failure is reported to the local TP with a return code
+  of AP_CONV_FAILURE_NO_RETRY. The SNA sense data provides detail about
+  the error type.
+
+  Event ID: 38
+  Source: SNA Server
+  Description: APPC session deactivated abnormally
+
+     Qualifier      = 0003
+     Connection     = &lt;Connection Name&gt;
+     LU alias       = &lt;Local LU Alias&gt;
+     PLU alias      = &lt;Partner LU Alias&gt;
+     Mode name      = &lt;APPC Mode Name&gt;
+
+  &lt;..data omitted...&gt;
+
+  EXPLANATION: An APPC session has been deactivated abnormally. The
+  qualifier listed above corresponds to one of the following:
+
+  &lt;..data omitted...&gt;
+
+  0003 The session was deactivated because of a permanent (No retry)
+  error, such as a parameter mismatch. Contact the administrator of
+  the partner LU's system to determine which parameters are mismatched.
+
+Because Events 90 and 38 may be caused by other problems, these events alone are
+not sufficient to indicate whether the specific problem described here is being
+encountered.
+
+For additional information about Event 38 messages and their common causes,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q139113 SNA Server Event 38, Qualifier 0004 and 0005 Not Documented
+
+CAUSE
+=====
+
+The SNA Server APPC library is adding the Access Security Information (User ID
+and Password) fields to the FMH-5 Attach message that is being sent to the host
+even though the host system indicated that it does not support the inclusion of
+these fields in the BIND +RSP that is sent to SNA Server.
+
+Bit 3 of byte 23 of the BIND is used to indicate whether the Access Security
+Information fields will be accepted on incoming FMH-5 Attaches. Please refer to
+the "IBM SNA Formats Guide" (GA27-3136), Chapter 6 for more details on the
+structure of the BIND.
+
+
+RESOLUTION
+==========
+
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+
+SNA Server 4.0
+--------------
+
+This problem has been corrected in the latest U.S. Service Pack for SNA Server
+version 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server, versions 3.0 SP2,
+3.0 SP3, and 4.0. This problem was first corrected in SNA Server 3.0 Service
+Pack 4.
+
+
+MORE INFORMATION
+================
+
+SNA Server DLC message traces that capture the problem will appear similar to
+the annotated traces shown here:
+
+  DLC   01020101-&gt;04160000 DLC DATA
+  DLC                      DAF:04 OAF:02 ODAI:on  Exp.
+  DLC                      BIND   RQD SC  FI BC EC DR1
+  DLC
+  DLC   ---- Header  at address 01214480, 1 elements ----
+  DLC   00000000 00002F00 04020000 01001401
+&lt;....../.........&gt;
+  DLC
+  DLC   ---- Element at address 0170BED4, start 10, end 126 ----
+  DLC   6B800031 001307B0 B050B107 07898987
+&lt;k..1.....P...iig&gt;
+  DLC   07060200 00000000 00001623 000010E4
+&lt;...........#...U&gt;
+  DLC   E2D4E4E3 D3F0F14B D4E2E2D3 E4F1F632
+&lt;SMUTL01KMSSLU162&gt;
+  DLC   000902C4 E2C9D3F6 D4D6C409 03F00000
+&lt;...DSIL6MOD..0..&gt;
+  DLC   00000000 051104E4 E2D4E4E3 D3F0F14B
+&lt;.......USMUTL01K&gt;
+  DLC   D4E2E2D3 E4F1F60A 13001714 5F7F7341
+&lt;MSSLU16....._[ASCII
+        166]sA&gt;
+  DLC   E14B0011 E4E2D4E4 E3D3F0F1 4BC3C9C3
+&lt;.K..USMUTL01KCIC&gt;
+  DLC   E2C3E5F3 F1                             &lt;SCV31
+&gt;
+
+BIND sent to the host system when the APPC application is started.
+
+Byte 23 (where '0x31' is Byte 00) is the Security Support Indicators and is set
+to '0x16' in this example. SNA Server indicates that Access Security Information
+will be accepted on incoming FMH-5 Attach messages (Bit 3 of byte 23 = 1).
+
+  DLC   -----------------------------------------------
+13:56:20.0
+  DLC   04160000-&gt;01020101 DLC DATA
+  DLC                      DAF:02 OAF:04 ODAI:on  Exp.
+  DLC                      BIND   +RSP SC  FI BC EC DR1
+  DLC
+  DLC   ---- Header  at address 012144B4, 1 elements ----
+  DLC   04010004 10112F00 02040000 01002E01
+&lt;....../.........&gt;
+  DLC
+  DLC   ---- Element at address 0170BA44, start 10, end 83 ----
+  DLC   EB800031 001307B0 B050B107 03898983
+&lt;...1.....P...iic&gt;
+  DLC   07060200 00000000 00000023 00000028
+&lt;...........#...(&gt;
+  DLC   000902C4 E2C9D3F6 D4D6C409 03F00000
+&lt;...DSIL6MOD..0..&gt;
+  DLC   00000000 051205E4 E2D4E4E3 D3F0F14B
+&lt;.......USMUTL01K&gt;
+  DLC   C3C9C3E2 C3E5F3F1 0000                  &lt;CICSCV31..
+&gt;
+
+The host system sends a BIND +RSP back to SNA Server and sets Byte 23 to '0x00'.
+The host system indicates that it will not accept Access Security Information
+fields on incoming FMH-5 Attach messages by setting Bit 3 of Byte 23 to 0.
+
+SNA Server accepts this BIND +RSP, so the APPC library should not be putting the
+Access Security Information in the Attach, even if the APPC/CPI- C application
+indicates that these fields should be set. An APPC/CPI-C application can specify
+that conversation security requiring a User ID and Password is required by
+setting the security parameter in the MC_ALLOCATE verb to AP_PGM.
+
+  DLC   -----------------------------------------------
+13:56:50.0359
+  DLC   01020101-&gt;04160000 DLC DATA
+  DLC                      DAF:04 OAF:02 ODAI:on  Normal
+  DLC                      RQE FMD FI BC EC DR1 BB CD
+  DLC
+  DLC   ---- Header  at address 012144B4, 1 elements ----
+  DLC   0B050000 17002E00 04020002 01004A01
+&lt;..............J.&gt;
+  DLC
+  DLC   ---- Element at address 0170C240, start 10, end 103 ----
+  DLC   0B90A02E 0502FF00 03D10040 04C3C3C9
+&lt;.........J.@.CCI&gt;
+  DLC   D5040102 01011910 E4E2D4E4 E3D3F0F1
+&lt;N.......USMUTL01&gt;
+  DLC   4BD4E2E2 D3E4F1F6 07CE0306 0D380001
+&lt;KMSSLU16.....8..&gt;
+  DLC   00002D12 FF000000 0C010100 00000000     &lt;..-
+.............&gt;
+  DLC   03000000 0D01D4E2 E2D3E4F1 F6400000
+&lt;......MSSLU16@..&gt;
+  DLC   000803F4 F3F70000 00080401 0000
+&lt;...437........  &gt;
+
+The FMH-5 Attach message shown here includes the Access Security Information
+fields for User ID and Password although they are blank in this example. For
+additional information about how to interpret an FMH- 5 Attach message, please
+see the following article in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q169575 TITLE : Interpreting an FMH-5 Attach for Independent LU
+  6.2
+
+Continuation of the trace:
+
+  DLC   -----------------------------------------------
+13:56:50.0437
+  DLC   04160000-&gt;01020101 DLC DATA
+  DLC                      DAF:02 OAF:04 ODAI:on  Exp.
+  DLC                      UNBIND RQD SC  FI BC EC DR1
+  DLC
+  DLC   ---- Header  at address 012145B8, 1 elements ----
+  DLC   0B050000 17002F00 02042224 01002E01
+&lt;....../..."$....&gt;
+
+  DLC
+  DLC   ---- Element at address 0170BED4, start 10, end 18 ----
+  DLC   6B800032 FE100860 40                    &lt;k..2...`@
+&gt;
+
+The host system responds to this FMH-5 Attach message with an UNBIND Type '0xFE'
+(session failure) message shown here. The UNBIND message can be broken out as
+follows:
+
+  32 - UNBIND
+  FE - UNBIND Type 'FE': Session Failure
+     10086040 - IBM Sense Data
+
+The IBM SNA Formats Guide defines this sense data as follows:
+
+  1008 - Invalid FM Header
+  6040 - Invalid Attach Parameter: A parameter in the FMH-5
+  Attach command conflicts with the statement of LU capability
+  Previously provided in the BIND statement.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP2
+Version           : :3.0 SP2,3.0 SP3,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

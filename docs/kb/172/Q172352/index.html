@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172352: Windows 95 PostScript Driver May Not Download Properly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172352: Windows 95 PostScript Driver May Not Download Properly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172352/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172352/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172352/","publisher":null,"image":null,"headline":"Q172352: Windows 95 PostScript Driver May Not Download Properly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172352-windows-95-postscript-driver-may-not-download-properly">Q172352: Windows 95 PostScript Driver May Not Download Properly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172352
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbprint
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you download a Windows 95 PostScript driver from a server running Windows
+NT through point and print, printing options for the printer may not match what
+the printer should have.
+
+Another symptom is that 600 dpi resolution printers are only printing at 300 dpi
+resolution.
+
+Windows 95 printer driver details may show that the wrong PPD is in use. The
+wrong driver in use is Apple380.ppd.
+
+If the printer driver is loaded without the use of point and print (the printer
+driver is loaded by means of a compact disc, disks, or a share point), the
+proper PPD file is used.
+
+CAUSE
+=====
+
+When Windows 95 downloads a PostScript printer driver from the server running
+Windows NT, it parses the .spd file for the printer capabilities and creates a
+.ppd from the .spd. Under certain conditions, the parse determines that a
+default .ppd must be used instead. That default .ppd is the Apple380.ppd.
+
+Differences between the Windows NT Ntprint.inf and the Windows 95 Printer.inf
+files can also cause this symptom to occur.
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods below:
+
+Method 1
+--------
+
+Load the printer driver without the use of point and print. If the driver needs
+to be distributed to many workstations, place all of the necessary files in a
+shared network directory.
+
+For more information about how to remove the Windows 95 driver from the Windows
+NT print server, please see the following Microsoft Knowledge Base article:
+
+  Q162258 How to Remove Cross-Platform Printer Drivers on Windows NT
+
+Method 2
+--------
+
+Use the following steps to install the PostScript driver on the server running
+Windows NT:
+
+1. In Explorer, navigate to the %SystemRoot%\INF folder, and then copy the
+  Ntprint.inf file to another location or name.
+
+  NOTE: The INF directory is hidden by default.
+
+2. Edit the Ntprint.inf file in Notepad and remove everything between the
+  printer name and the last quote. For example:
+
+     original line: "QMS-PS 2200 v51.0 or 52.3" = Q2200523.PPD
+     change to:     "QMS-PS 2200 "              = Q2200523.PPD
+
+3. Install the printer on the server running Windows NT 4.0 and share it with
+  Windows 95 alternate drivers.
+
+4. Connect to the printer from the Windows 95 client.
+
+After the printer is installed, right-click the printer properties and verify
+that the correct driver is associated with the printer.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+During the installation of the networked printer, the Windows 95 workstation is
+provided information on the files that should be copied for the printer being
+connected to, and then the file copy takes place. Next, the Windows 95
+workstation finds the driver name installed by the host computer, in this case
+the server running Windows NT 4.0, and tries to match the driver to install.
+Because the Windows NT host driver name is in the form of &lt;printer&gt; &lt;ps
+version&gt; and Windows 95 sometimes only uses &lt;printer&gt;, there may not be
+an exact match and it will default to the generic postscript driver
+(Apple380.spd).
+
+Additional query words: cross platform win95 win95x point
+
+======================================================================
+Keywords          : kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

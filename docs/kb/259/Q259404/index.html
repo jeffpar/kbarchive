@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259404: BUG: MFC OLE Container May Merge Server Menus Incorrectly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259404: BUG: MFC OLE Container May Merge Server Menus Incorrectly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259404/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259404/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259404/","publisher":null,"image":null,"headline":"Q259404: BUG: MFC OLE Container May Merge Server Menus Incorrectly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259404-bug-mfc-ole-container-may-merge-server-menus-incorrectly">Q259404: BUG: MFC OLE Container May Merge Server Menus Incorrectly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259404
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbole kbContainer kbMFC kbVC600bug kbDSupport kbGrpDSMFCATLkbbuglist
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Foundation Class Library (MFC) Active Document Container programs may
+improperly merge server menus when in-place activating an Active Document
+object. Top-level menu items may not appear in the expected order.
+
+CAUSE
+=====
+
+Some Active Document Servers (such as Microsoft Excel) do not always pass a
+zero-initialized array of OLEMENUGROUPWIDTHS to the container's
+IOleInPlaceFrame::SetMenus function. The way in which MFC implements
+IOleInPlaceFrame::SetMenus makes use of the AfxMergeMenus function, which is
+used by both MFC containers and servers. When the OLEMENUGROUPWIDTHS array
+contains non-zeros, the AfxMergeMenus call runs the server code path instead of
+the code path for containers, which causes the menus to be merged in the wrong
+order.
+
+RESOLUTION
+==========
+
+To work around this problem, override the container's COleDocObjectItem-derived
+class's OnInsertMenus function, initialize the OLEMENUGROUPWIDTHS structure with
+zeros, and then call the base COleDocObjectItem::OnInsertMenus. For example:
+
+  void CTestAppCntrItem::OnInsertMenus(CMenu* pMenuShared, LPOLEMENUGROUPWIDTHS lpMenuWidths)
+  {
+     memset(lpMenuWidths,0,sizeof(OLEMENUGROUPWIDTHS));
+     COleDocObjectItem::OnInsertMenus(pMenuShared,lpMenuWidths);	
+  }
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a generic MFC (MDI) Active Document Container with the MFC AppWizard.
+
+2. Build and run the application, and then insert an Excel Chart object into the
+  document. Note that the menu items are merged properly.
+
+3. Switch from the Chart tab to the Sheet tab, and note that the menus are no
+  longer in the proper order.
+
+When you click the Sheet tab, a different view of the object is displayed, which
+causes a different set of menus to be displayed. This problem occurs for any MFC
+container that supports more than just the File group of menu items. A
+wizard-generated MDI application contains both the File and Window groups of
+menus. You can also have a Window group if you add it manually. If you only have
+a File group, however, the menus merge properly.
+
+This problem does not occur in a generic SDI application, because the AppWizard
+only adds the File menu group to your menu resource.
+
+REFERENCES
+==========
+
+Chapter 22, Inside OLE 2nd Edition. Kraig Brockschmidt, Microsoft Press.
+
+Additional query words: OLEMENUGROUPWIDTHS COleDocObjectItem codepath
+
+======================================================================
+Keywords          : kbole kbContainer kbMFC kbVC600bug kbDSupport kbGrpDSMFCATL kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

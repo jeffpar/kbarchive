@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86924: DOCERR: HELPWININFO Data Structure Documented Incorrectly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86924: DOCERR: HELPWININFO Data Structure Documented Incorrectly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86924/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86924/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86924/","publisher":null,"image":null,"headline":"Q86924: DOCERR: HELPWININFO Data Structure Documented Incorrectly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86924-docerr-helpwininfo-data-structure-documented-incorrectly">Q86924: DOCERR: HELPWININFO Data Structure Documented Incorrectly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86924
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "Microsoft Windows Software Development Kit: Programmer's Reference, Volume
+3: Messages, Structures and Macros" manual for version 3.1 incorrectly documents
+the HELPWININFO data structure on pages 299 and 300.
+
+According to the documentation, the wMax member of the HELPWININFO structure has
+the value 0 (zero) to specify a normal-size window or 1 to specify a maximized
+window. This information is incorrect; the wMax member can assume any one of ten
+different values, as follows:
+
+        Corresponding
+  Value  Windows Constant    Action
+  -----  ----------------    ------
+
+    0    SW_HIDE             Hides the window and passes activation to
+                             another window.
+
+    1    SW_SHOWNORMAL       Activates and displays a window. If the
+                             window is minimized or maximized, Windows
+                             restores it to its original size and
+                             position.
+
+    2    SW_SHOWMINIMIZED    Activates the window and displays it as
+                             an icon.
+
+    3    SW_SHOWMAXIMIZED    Activates the window and displays it as a
+                             maximized window.
+
+    4    SW_SHOWNOACTIVATE   Displays a window in its most recent size
+                             and position. The window that is currently
+                             active remains active.
+
+    5    SW_SHOW             Activates a window and displays it in its
+                             current size and position.
+
+    6    SW_MINIMIZE         Minimizes the specified window and
+                             activates the top-level window in the
+                             window manager's list.
+
+    7    SW_SHOWMINNOACTIVE  Displays the window as an icon. The
+                             window that is currently active remains
+                             active.
+
+    8    SW_SHOWNA           Displays the window in its current state.
+                             The window that is currently active
+                             remains active.
+
+    9    SW_RESTORE          Same as SW_SHOWNORMAL.
+
+Note that these constants are valid only for Windows Help running with Microsoft
+Windows. These constants may change if Help is ported to another platform.
+
+Additional query words: no32bit 3.10 docerr
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301357: PRB: DLLs Not Unloaded After Calling CoFreeUnusedLibraries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301357: PRB: DLLs Not Unloaded After Calling CoFreeUnusedLibraries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301357/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301357/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301357/","publisher":null,"image":null,"headline":"Q301357: PRB: DLLs Not Unloaded After Calling CoFreeUnusedLibraries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301357-prb-dlls-not-unloaded-after-calling-cofreeunusedlibraries">Q301357: PRB: DLLs Not Unloaded After Calling CoFreeUnusedLibraries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301357
+Product(s): Microsoft Programming Utilities
+Version(s): (all versions and editions),4.0
+Operating System(s): 
+Keyword(s): kbCOMt kbGrpDSVCDB kbDSupport
+Last Modified: 26-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft COM, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows Millennium Edition 
+   - the operating system: Microsoft Windows 2000 
+   - the operating system: Microsoft Windows NT, versions (all versions and editions), 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Dynamic-link libraries (DLLs) that are not in use may not be unloaded from the
+process space after calling the CoFreeUnusedLibraries function.
+
+CAUSE
+=====
+
+This problem occurs when the application still has references to the components
+in the DLL, or when the application releases all the references to a DLL but
+does not make a subsequent call to CoFreeUnusedLibraries.
+
+RESOLUTION
+==========
+
+CoFreeUnusedLibraries does not immediately release DLLs that have no active
+object. There is a ten minute delay for multithreaded apartments (MTAs) and
+neutral apartments (NAs). For single-threaded apartments (STAs), there is no
+delay. The ten minute delay for CoFreeUnusedLibraries is to avoid multithread
+race conditions caused by unloading a component DLL.
+
+To work around the problem, make a second call to CoFreeUnusedLibraries after ten
+minutes, or make periodic calls to CoFreeUnusedLibraries. For applications that
+run for long periods, such as Windows NT Service applications, calling
+CoFreeUnusedLibraries periodically ensures that DLLs that are not being used are
+unloaded.
+
+Another workaround is to call CoUninitialize, which closes the COM library and
+releases all resources used by the current thread.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following example uses the Microsoft XML Parser version 3 to demonstrate this
+behavior. This parser can be downloaded and installed from the following
+Microsoft Developer Network (MSDN) Web site:
+
+  http://msdn.microsoft.com/xml (http://msdn.microsoft.com/xml)
+
+1. Create an empty Win32 Console Application in Microsoft Visual C++ 6.0.
+
+2. Save the following code as main.cpp and add it to the project:
+
+  #include &lt;stdio.h&gt;
+  #include &lt;conio.h&gt;
+
+  #import "msxml3.dll" named_guids raw_interfaces_only
+  using namespace MSXML2;
+
+  // Global instance to force load/unload of OLE.
+  struct InitOle {
+      InitOle()  { ::CoInitialize(NULL); }
+      ~InitOle() { ::CoUninitialize();   }
+  } _init_InitOle_;			
+
+  // Function declarations.
+  inline void TESTHR(HRESULT x) {if FAILED(x) _com_issue_error(x);};
+
+  void main()
+  {
+
+  	try
+  	{
+  		printf( "Note that the msxml3.dll is not loaded yet. Press any key to start the test.\n\n" );
+  		_getch();
+
+  		// Create an instance of DOMDocument.  This will load Msxml3.dll into the process.
+  		IXMLDOMDocument *pDoc = NULL;
+  		HRESULT hr = CoCreateInstance(CLSID_DOMDocument, NULL, CLSCTX_INPROC_SERVER,
+  			IID_IXMLDOMDocument, (LPVOID*)&amp;pDoc);
+
+  		TESTHR(hr);
+
+  		// Release the reference.
+  		if (pDoc) pDoc-&gt;Release();
+  		
+  		// Free unused resources.
+  		CoFreeUnusedLibraries();
+  		
+  		printf( "Now the DLL is loaded into the process. Monitor the process and note that the DLL will not be released even after 10 minutes. Then press any key to continue..\n\n" );
+  		_getch();
+
+  		// Second call.
+  		CoFreeUnusedLibraries();
+  		
+  		printf( "Now the DLL should have been unloaded. Press any key to finish.\n\n" );
+  		_getch();
+
+  	}
+  	catch(_com_error &amp;e)
+  	{
+  		printf("Com Error:\n");
+  		printf("Code = %08lx\n", e.Error());
+  		printf("Code meaning = %s\n", (char*) e.ErrorMessage());
+  		printf("Source = %s\n", (char*) e.Source());
+  		printf("Error Description = %s\n", (char*) e.Description());
+  	}
+  }
+
+3. Run the application and use a utility, such as Process Explorer from
+  Sysinternals (see "References"), to monitor the loading and unloading of
+  Msxml3.dll.
+
+REFERENCES
+==========
+
+Process Explorer is available from the following Web site:
+
+  http://www.sysinternals.com/ntw2k/freeware/procexp.shtml
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbGrpDSVCDB kbDSupport 
+Technology        : kbAudDeveloper kbCOM kbCOMPlusSearch
+Version           : :(all versions and editions),4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

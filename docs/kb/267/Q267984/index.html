@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q267984: HOWTO: Create and Use Custom Styles with Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q267984: HOWTO: Create and Use Custom Styles with Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/267/Q267984/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/267/Q267984/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/267/Q267984/","publisher":null,"image":null,"headline":"Q267984: HOWTO: Create and Use Custom Styles with Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q267984-howto-create-and-use-custom-styles-with-automation">Q267984: HOWTO: Create and Use Custom Styles with Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q267984
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2000,2000, Service Release 1 (SR-1),6.0,97
+Operating System(s): 
+Keyword(s): kbole kbAutomation kbvfp600 kbGrpDSFox kbDSupport kbWord97 kbword2000
+Last Modified: 06-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0, used with:
+   - Microsoft Word 2000 Service Release 1 (SR-1) 
+   - Microsoft Word for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+Styles in Word make it easy to apply the same formatting to different parts of a
+document. A style contains information about the font, paragraph formatting,
+borders, shading, tabs, and more. There are a number of styles built into Word,
+but it's also possible to define custom styles.
+
+Every style is based on another style (the "base style") and inherits its
+characteristics from that style. To customize the new style, change its
+properties.
+
+Once you create a custom style, any changes to the base style are reflected in
+it.
+
+MORE INFORMATION
+================
+
+To create a new style:
+
+1. Create an instance of the Word application server:
+
+  oWord = CreateObject("Word.Application")
+
+2. Create a new document:
+
+  oDocument = oWord.Documents.Add()
+
+Alternatively, you can open an existing document using the Open method, passing
+the full path to the document:
+
+  oDocument = oWord.Documents.Open(&lt;full path&gt;)
+
+3. Use the Add method of the Document's Styles collection, passing the name for
+  the new style and a constant that indicates whether the new style is a
+  paragraph style (wdStyleTypeParagraph = 1) or a character style
+  (wdStyleTypeParagraph = 2):
+
+  oStyle = oDocument.Styles.Add(&lt;style name&gt;, &lt;style type&gt;)
+
+4. Set the base style for the new style to an existing style:
+
+  oStyle.BaseStyle = oDocument.Styles[ &lt;style name&gt; | &lt;built-in style constant&gt; ]
+
+5. Set properties of the new style that are different than those of the base
+  style.
+
+6. To apply the new style to a range in the document, refer to it by the name
+  assigned when it was created or by using an existing object reference:
+
+  oRange.Style = oDocument.Styles[ &lt;style name&gt; ]
+
+-or-
+
+  oRange.Style = oStyle
+
+7. When the document is saved, the new style is saved with it.
+
+This example creates a new paragraph style based on the built-in Normal style.
+The new style is identical to the Normal style, except that it is italic and
+centered. Then, the new style is used.
+
+  #DEFINE wdStyleTypeParagraph 1
+  #DEFINE wdStyleNormal -1
+  #DEFINE wdAlignParagraphCenter 1
+  #DEFINE wdCollapseEnd 0
+
+  LOCAL oWord, oDocument, oItalicStyle
+
+  * Instantiate Word and create a document
+  oWord = CreateObject("Word.Application")
+  oWord.Visible = .T.
+
+  oDocument = oWord.Documents.Add()
+
+  * Create a new style
+  oItalicStyle = ;
+     oDocument.Styles.Add("CenteredItalic", wdStyleTypeParagraph)
+
+  * Set style properties
+  WITH oItalicStyle
+     .BaseStyle = oDocument.Styles[ wdStyleNormal ]
+     .Font.Italic = .T.
+     .ParagraphFormat.Alignment = wdAlignParagraphCenter
+  ENDWITH
+
+  * Add some text in the new style
+  oRange = oDocument.Range(0, 0)
+  oRange.Style = oItalicStyle
+  oRange.InsertAfter("This uses the CenteredItalic style")
+  oRange.InsertParagraphAfter()
+  oRange.Collapse( wdCollapseEnd )
+
+  * Now add some text in the Normal style
+  oRange.End = oRange.End + 1 &amp;&amp; so Style change won't affect previous text
+  oRange.Style = oDocument.Styles[ wdStyleNormal ]
+  oRange.InsertAfter("This uses the Normal style")
+  oRange.InsertParagraphAfter()
+
+  RETURN 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbAutomation kbvfp600 kbGrpDSFox kbDSupport kbWord97 kbword2000 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : WINDOWS:2000,2000, Service Release 1 (SR-1),6.0,97
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

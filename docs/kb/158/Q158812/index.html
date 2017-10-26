@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158812: XFOR: ErrMsg: Postoffice NETWORK/PO Could Not Be Modified | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158812: XFOR: ErrMsg: Postoffice NETWORK/PO Could Not Be Modified" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158812/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158812/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158812/","publisher":null,"image":null,"headline":"Q158812: XFOR: ErrMsg: Postoffice NETWORK/PO Could Not Be Modified","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158812-xfor-errmsg-postoffice-networkpo-could-not-be-modified">Q158812: XFOR: ErrMsg: Postoffice NETWORK/PO Could Not Be Modified</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158812
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt to modify a Microsoft Mail postoffice connection from the
+Microsoft Exchange Server Administrator program (Admin.exe), you may receive the
+following stop error message:
+
+  The postoffice NETWORK/PO could not be modified because either the MS Mail
+  Connector server is unavailable or there is insufficient memory available to
+  perform this operation.
+
+MORE INFORMATION
+================
+
+The registry entry for the postoffice is missing. Restore the registry key from
+backup or manually restore the registry value for the postoffice in question
+using the Registry Editor.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Under the HKEY_LOCAL_MACHINE subtree, go to the following subkey:
+
+     SYSTEM/CurrentControlSet/Services/MSExchangeMSMI/Parameters/Admin
+
+3. Select this key to highlight it, click Edit, and click Add Value.
+
+4. Create the registry value with the following parameters:
+
+     Value Name: NETWORK/PO
+     Data Type: REG_SZ
+     String: \\Machine_name\Share /Z
+
+NOTE: For "NETWORK/PO" use the Network and Postoffice name for the postoffice in
+question. This data will be displayed in the Microsoft Mail Connector
+properties' Connections tab. For the String data, the example above is for
+Windows NT Server and LanManager compatible networks. For NetWare networks the
+path would be in the following format:
+
+  \\Server_name\Volume\Path_to_Maildata
+
+
+For more information on configuring the Microsoft Mail Connector for Microsoft
+Exchange Server refer to the Microsoft Exchange Server Administrator's Guide,
+Chapter 14. This information is also available on Books Online included with
+Microsoft Exchange Server.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

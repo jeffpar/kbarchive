@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q116239: BUG: Function that Inherits Through Dominance Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q116239: BUG: Function that Inherits Through Dominance Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/116/Q116239/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/116/Q116239/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/116/Q116239/","publisher":null,"image":null,"headline":"Q116239: BUG: Function that Inherits Through Dominance Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q116239-bug-function-that-inherits-through-dominance-fails">Q116239: BUG: Function that Inherits Through Dominance Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q116239
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC42
+Last Modified: 17-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), used with:
+   - Microsoft C/C++ for MS-DOS 
+   - Microsoft Visual C++, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Code that makes use of the C++ implicit invocation of a user-defined conversion
+causes the C/C++ compiler to generate the following error message:
+
+  error C2594: '=' : ambiguous conversions from 'class ::E ' to 'int '
+
+C/C++ 9.00 gives the following level 2 warning and errors from the implicit cast
+and only the warning from the explicit call:
+
+  warning C4250: 'E' : inherits 'B::operator`int'' via dominance error C2679:
+  binary '=' : no operator defined which takes a right- hand operand of type
+  'class E' (or there is no acceptable conversion)
+  error C2594: '=' : ambiguous conversions from 'class E' to 'int'
+
+NOTE: In Visual Studio .NET, the error message is:
+
+  warning C4250: 'E' : inherits 'B::B::operator`int'' via dominance. error
+  C2679: binary '=' : no operator found which takes a right-hand operand of
+  type 'E' (or there is no acceptable conversion)
+
+RESOLUTION
+==========
+
+Explicitly invoke the user-defined conversion, as demonstrated in the sample
+code in the "MORE INFORMATION" section below, rather then depending on the
+implicit invocation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Suppose a virtual-base class A is defined and classes B and C inherit from class
+A. Furthermore, a class E inherits from both B and C. The two classes, A and B,
+each provide a virtual user-defined conversion function to "int". The
+relationship may be represented by the following directed acyclic graph:
+
+                        A int () }
+                         ^      ^
+                        /        \ 
+                       /          \ 
+                 B { int () }    C {}
+                      ^           ^
+                        \        / 
+                         \      / 
+                          E { }
+
+The dominance rule requires that when you invoke the virtual user-defined
+conversion function to int from an instance of an object of type E, the version
+provided by B should be used. This conversion function may be invoked implicitly
+by assigning an instance of an object of type E to an int. It may also be
+invoked explicitly through the use of the "operator int" function.
+
+As demonstrated by the following sample code, the compiler accurately identifies
+and invokes the correct user-defined conversion function when using the explicit
+call syntax. However, when attempting to make use of the implicit conversion,
+the compiler produces an error, citing an ambiguity in its search for the
+correct user-defined conversion function.
+
+Sample Code
+-----------
+
+  /* Compile options needed: /W3
+  */ 
+  #include &lt;iostream.h&gt;
+
+  class A
+  {
+  public:
+      virtual operator int () { return 2; }
+  };
+
+  class B : virtual public A
+  {
+  public:
+      virtual operator int () { return 3; }
+  };
+
+  class C : virtual public A {};
+
+  class E : public B, public C {};
+
+  void main(void)
+  {
+     int i;
+     int error=0;
+
+     E eObject;
+
+     // Both of the invocations below should call B's
+     // operator int ().
+
+     if ((i = eObject) != 3)                // Fails to compile
+        error = 1;
+
+     if ((i = eObject.operator int()) != 3) // Compiles OK
+        error = 1;
+
+     if (!error)
+        cout &lt;&lt; "PASSED" &lt;&lt; endl;
+     else
+        cout &lt;&lt; "FAILED" &lt;&lt; endl;
+  }
+
+REFERENCES
+==========
+
+The Annotated C++ Reference Manual (ARM), Ellis and Stroustrup, section 10.1.1,
+"Ambiguities," section 10.2, "Virtual Functions," and section 12.3,
+"Conversions."
+
+Additional query words: kbVC400bug 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

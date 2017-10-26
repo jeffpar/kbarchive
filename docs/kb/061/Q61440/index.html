@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61440: DIMension in a FOR-NEXT Loop Is Possible | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61440: DIMension in a FOR-NEXT Loop Is Possible" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61440/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61440/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61440/","publisher":null,"image":null,"headline":"Q61440: DIMension in a FOR-NEXT Loop Is Possible","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61440-dimension-in-a-for-next-loop-is-possible">Q61440: DIMension in a FOR-NEXT Loop Is Possible</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61440
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900412-54 B_BasicCom | mspl13_basic
+Last Modified: 10-MAY-1990
+
+Microsoft QuickBASIC allows you to correctly DIMension a static array
+within a loop (FOR, WHILE, or DO). This is possible because a DIM of a
+static array happens as the program is being compiled (or during the
+binding phase in the interpreter). DIM on a static array is not an
+executable statement. Even though the DIM appears in a loop, it is not
+being executed over and over as the loop iterates. Each time the loop
+executes, the array is not being redimensioned. Therefore, any values
+inserted into the array are not lost.
+
+This information applies to Microsoft QuickBASIC versions 4.00, 4.00b,
+and 4.50, to Microsoft BASIC Compiler versions 6.00 and 6.00b, and to
+Microsoft BASIC Professional Development System (PDS) version 7.00.
+
+The situation is different for dynamic arrays. QuickBASIC will give
+you an error on a DIMension of a dynamic array in a loop. If an array
+needs to be redimensioned as a loop executes, the program should REDIM
+the array in the loop. REDIM is an executable statement, and
+therefore, will be executed over and over as the loop repeats. As the
+loop executes, REDIM will reallocate the memory for that array and
+erase its previous contents.
+
+The following code example demonstrates this feature of BASIC:
+
+c% = 100
+FOR i% = 1 TO 20
+'  DIM a%(c%)   ' will generate an error.
+'  REDIM a%(c%) ' will redim the array and erase its contents.
+   DIM a%(20)
+   a%(i%)=i%
+   PRINT a%(i%)
+NEXT i%
+
+FOR j% = 1 TO 20
+   PRINT a%(j%)
+NEXT j%
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

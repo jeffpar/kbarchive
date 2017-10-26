@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q27134: The Purpose of Module Definition Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q27134: The Purpose of Module Definition Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/027/Q27134/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/027/Q27134/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/027/Q27134/","publisher":null,"image":null,"headline":"Q27134: The Purpose of Module Definition Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q27134-the-purpose-of-module-definition-files">Q27134: The Purpose of Module Definition Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q27134
+Product(s): See article
+Version(s): 5.01.21 5.02 5.03 5.05 5.10 5.13 | 5.01.21 5.02 5.03 5.05
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 17-DEC-1990
+
+Module-definition files (.DEF) are used by LINK when building Windows
+and OS/2 programs and dynamic-link libraries (DLLs). A .DEF file
+describes the name, size, format, functions, and segments of an
+application or DLL.
+
+A module-definition file contains one or more module statements. Each
+module statement defines an attribute of the executable file. The
+module statements and the attributes they define are listed below:
+
+Statement         Attribute
+---------         ---------
+
+NAME              Name and type of application
+LIBRARY           Name of dynamic-link library
+DESCRIPTION       One-line description of the module
+CODE              Default attributes for code segments
+DATA              Default attributes for data segments
+SEGMENTS          Attributes for specific segments
+STACKSIZE         Local-stack size, in bytes
+EXPORTS           Exported functions
+IMPORTS           Imported functions
+STUB              Adds a DOS Version 3.x executable file to the beginning
+                  of the module, usually to terminate the program when
+                  run in real mode
+HEAPSIZE          Local-heap size, in bytes
+PROTMODE          Specifies that the module runs only in OS/2 protected
+                  mode
+REALMODE          Specifies that the module is for real-mode Windows.
+OLD               Preserves export ordinal information from a previous
+                  version of the library
+
+The following rules govern the use of these statements in a module-
+definitions file:
+
+1. If you use either a NAME or a LIBRARY statement, it must precede
+   all other statements in the module-definition file.
+
+2. You can include source-level comments in the module-definition
+   file, by beginning a line with a semicolon (;). The OS/2 utilities
+   ignore each such comment line.
+
+3. Module-definition keywords (such as NAME, LIBRARY, and SEGMENTS)
+   must be entered in uppercase letters.
+
+For more information, refer to the utility reference or online help
+that accompanied your particular compiler or assembler.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

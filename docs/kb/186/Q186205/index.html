@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186205: XADM: CPU Utilization for Information Store Is at 100% | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186205: XADM: CPU Utilization for Information Store Is at 100%" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186205/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186205/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186205/","publisher":null,"image":null,"headline":"Q186205: XADM: CPU Utilization for Information Store Is at 100%","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186205-xadm-cpu-utilization-for-information-store-is-at-100">Q186205: XADM: CPU Utilization for Information Store Is at 100%</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186205
+Product(s): Microsoft Exchange
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An Internet Mail conversion thread is caught in a loop due to an incorrectly
+formatted MIME message.
+
+If your are experiencing this bug, the call stack shown in the Dr. Watson dump
+(and log) will look like the one below (with thousands of calls to
+EcCommitStream and EcCommitStreamOp):
+
+FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+062ef89c  004700d2  00000023 00000004 00000001 STORE!EcCommitStreamOp+0x88
+062ef8ac  004044c6  00000001 00000023 062ef948 STORE!EcCommitStream+0x46
+062ef90c  00403928  062ef928 00005a00 062ef92c STORE!EcRpc+0xb6a
+062ef928  77e11841  00171330 00f8db6c 00176ec0 STORE!EcDoRpc+0x3e
+062ef948  77e52265  004038ea 062efb3c 00000004 RPCRT4!Invoke+0x28
+062ef964  77e52236  004038ea 062efb3c 00000004
+ RPCRT4!NdrCallServerManager+0x15
+062efc28  77e51f9e  00000000 00000000 062efe08 0x77e52236
+062efc40  77e1134f  062efe08 062efe08 00163380 RPCRT4!NdrServerCall+0x19
+062efc7c  77e11122  00404af4 062efe08 062efdc4
+ RPCRT4!DispatchToStubInC+0x34
+062efcd0  77e112fb  062efe08 00000000 062efdc4
+RPCRT4!?DispatchToStubWorker@RPC_INTERFACE@@AAEJPAU_RPC_MESSAGE@@IPAJ@Z+0xb
+0
+062efcf0  77e119cf  062efe08 00000000 062efdc4
+ RPCRT4!?DispatchToStub@RPC_INTERFACE@@QAEJPAU_RPC_MESSAGE@@IPAJ@Z+0x41
+062efdc8  77e12b98  00144360 062efe68 062efe08
+RPCRT4!?DealWithRequestMessage@WMSG_SASSOCIATION@@QAEXPAT_WMSG_MESSAGE@@0PA
+U_RPC_MESSAGE@@PAPAVWMSG_SBINDING@@IHH@Z+0x182
+062efe40  77e15fff  00144360 062efe68 00000000
+RPCRT4!?DealWithLRPCRequest@WMSG_ADDRESS@@AAEPAT_WMSG_MESSAGE@@PAT2@0HPAVWM
+SG_ASSOCIATION@@@Z+0xab
+062eff90  77e162f0  77e163e5 001545f0 062effec
+ RPCRT4!?ReceiveLotsaCalls@WMSG_ADDRESS@@AAEXXZ+0x38
+
+CAUSE
+=====
+
+The Thread handling this message is caught between commit operations for two
+converters. A commit operation is issued, and the HRESULT returned is 80040c11.
+According to the comments before IsIMAILRewindError, these errors indicated that
+the message should be reconverted. This error is IMAIL_E_REWIND_STREAM_822,
+which is supposed to cause a rewind and then process as 822. This is passed into
+the Clean up function, which should set the rewriter to Convert to 822. It does.
+Internet Mail continually sets the rewind error to be rewind and convert as 822,
+but it never succeeds or changes.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

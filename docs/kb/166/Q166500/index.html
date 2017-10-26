@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166500: XCLN: Windows 3.x Client Can’t Fully Display or Save Large Msgs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166500: XCLN: Windows 3.x Client Can’t Fully Display or Save Large Msgs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166500/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166500/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166500/","publisher":null,"image":null,"headline":"Q166500: XCLN: Windows 3.x Client Can’t Fully Display or Save Large Msgs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166500-xcln-windows-3x-client-cant-fully-display-or-save-large-msgs">Q166500: XCLN: Windows 3.x Client Can’t Fully Display or Save Large Msgs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166500
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 08-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Windows 3.x client cannot fully display, or save to a
+disk file, messages containing large bodies of text. When you attempt to read
+such a message, the following error message appears:
+
+  You've exceeded the maximum amount of text.
+
+Attempts to forward or reply to the message will result in a truncated message
+being delivered to the recipient, and when sending, produces the following error
+messages:
+
+  The object could not be inserted. The action could not be completed.
+
+  The object could not be inserted. The message body is full. To avoid
+  overwriting the original text, the original message header may be only
+  partially added.
+
+When you select the message to highlight it, click Save As, and specify "text"
+and a target filename, the process is completed without error. However, the
+message content in the target file is truncated.
+
+CAUSE
+=====
+
+The Microsoft Exchange Windows 3.x client uses a 16-bit implementation of the
+RichEdit control (Riched.dll) for manipulating the contents of the MAPI
+property, PR_BODY, which includes the body text of the message. The Windows 3.x
+client RichEdit control has a limit of holding a maximum of 65,535 hard line
+breaks.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+- Use the Microsoft Exchange Windows 95 client, the Microsoft Exchange Windows
+  NT client, or the Microsoft Outlook client to view messages with large text
+  bodies.
+
+  -or-
+
+- Use a POP3 client accessing a computer running Microsoft Exchange Server 5.0
+  configured to support POP3 mail retrieval. The POP3 client can retrieve the
+  message in full. This is true of the POP3 mail client included with Microsoft
+  Internet Explorer 3.0 for Windows 3.x.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Windows 3.x
+client version 4.0. We are currently researching this problem and will post more
+information here in the Microsoft Knowledge base as it becomes available.
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Windows 3.x
+client version 5.0. This problem has been corrected in the latest U.S. Service
+Pack for Microsoft Exchange Server version 5.0. For information on obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+With the fix applied, a modification is made to WMSUI.DLL so that it reports the
+following error Microsoft when you a Save a message as text and the message has
+a large text body that exceeds the RICHEDIT limit:
+
+  The item(s) could not be saved. You've exceeded the maximum amount of text.
+
+Although this doesn't address the core problem, it does ensure that you are
+informed of the problem when you save a large message as text.
+
+
+Additional query words: Win16
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

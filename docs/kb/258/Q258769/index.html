@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258769: XCLN: Outlook 2000 Err. Mssg.: &quot;Error While Archiving Folder…&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258769: XCLN: Outlook 2000 Err. Mssg.: &quot;Error While Archiving Folder…&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258769/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258769/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258769/","publisher":null,"image":null,"headline":"Q258769: XCLN: Outlook 2000 Err. Mssg.: &quot;Error While Archiving Folder…&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258769-xcln-outlook-2000-err-mssg-error-while-archiving-folder">Q258769: XCLN: Outlook 2000 Err. Mssg.: "Error While Archiving Folder…"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258769
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:2000
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 2000, on platform(s):
+   - the operating system: Microsoft Windows 2000 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When AutoArchiving begins, you may receive the following error message:
+
+  Error while archiving folder &lt;folder_name&gt; in store &lt;store_name&gt;.
+  The path specified for the file C:\Windows\Profiles\&lt;user_name&gt;\Local
+  Settings\Application Data\Microsoft\Outlook\Archive.pst is not valid.
+
+CAUSE
+=====
+
+This issue can occur because when you upgrade from Microsoft Windows 95 or
+Microsoft Windows 98 to Windows 2000, the default path for the AutoArchive
+feature of Outlook 2000 becomes invalid. This occurs because the upgrade process
+moves the user information that is located in the C:\Windows\Profiles folder in
+Windows 95 and Windows 98 to the C:\Documents and Settings folder in Windows
+2000. Since Outlook 2000 stores the AutoArchive settings on your Exchange Server
+computer, Windows 2000 Setup cannot modify them.
+
+RESOLUTION
+==========
+
+To resolve this issue, manually change the path to the new location of the user
+information file (Archive.pst):
+
+1. In the Folder List view in Outlook, right-click the folder that is scheduled
+  to be AutoArchived, and then click Properties.
+
+2. Click the AutoArchive tab.
+
+3. Under Move old items to, click Browse.
+
+4. Navigate to and select the following file:
+
+  C:\Documents and Settings\&lt;user_name&gt;\Local Settings\Application
+  Data\Microsoft\Outlook\Archive.pst
+
+5. Click OK, and then click OK again.
+
+MORE INFORMATION
+================
+
+This error message only occurs if you initially select the default folder to
+store the Archive.pst file. If you select a folder other than the default
+C:\Windows\Profiles folder, you do not need to make any changes after you
+upgrade to Windows 2000.
+
+Additional query words: OL2000
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbZNotKeyword3
+Version           : WINDOWS:2000
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

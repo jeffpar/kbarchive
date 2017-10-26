@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192105: HOWTO: Programmatically Creating and Building a Project | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192105: HOWTO: Programmatically Creating and Building a Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192105/","publisher":null,"image":null,"headline":"Q192105: HOWTO: Programmatically Creating and Building a Project","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192105-howto-programmatically-creating-and-building-a-project">Q192105: HOWTO: Programmatically Creating and Building a Project</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192105
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how you can use the Project Object to programmatically
+create and build a project.
+
+MORE INFORMATION
+================
+
+Occasionally there is a need to create a project for files that already exist.
+You can now use the Project Object methods to programmatically create and build
+a project. The following steps describe how to accomplish this.
+
+Steps to Programmatically Create and Build a Project
+----------------------------------------------------
+
+1. Create a Project directory, C:\MyProj, and the sub-directories under this
+  directory, for example data, forms, reports, classes, and programs.
+
+2. Create and populate a table, that contains the names of the sub- directories
+  and type of files in them, as following:
+
+        CREATE TABLE ProjInf (DirName c(10), extName c(3))
+        INSERT INTO ProjInf VALUES ('data','dbc')
+        INSERT INTO ProjInf VALUES ('data','dbf')
+        INSERT INTO ProjInf VALUES ('forms','scx')
+        INSERT INTO ProjInf VALUES ('reports','frx')
+        INSERT INTO ProjInf VALUES ('classes','vcx')
+        INSERT INTO ProjInf VALUES ('prgs', 'prg')
+
+  Save the table to the project directory. The table fields can be changed to
+  reflect the project directory tree and the type of files in the respective
+  sub-directories.
+
+3. Copy or create all the project files, like data files, forms, reports, and
+  classes, and place them in their respective sub-directories.
+
+4. Create and save a program, in the project directory, with the following
+  code:
+
+        ********Top of Code********
+        ***************************
+        #DEFINE PROJROOT 'c:\myproj'   &amp;&amp; Specify Project root directory.
+        &amp;&amp; The preceding can be changed to reflect the actual root directory.
+
+        SET DEFAULT TO PROJROOT     &amp;&amp; Select Project root directory.
+        defdir = SYS(5) + CURDIR()  &amp;&amp; Save Project directory information.
+
+        CREATE PROJECT myproj NOSHOW NOWAIT  &amp;&amp; Create the project.
+        curProj=_VFP.ACTIVEPROJECT   &amp;&amp; Get ActiveProject Object reference.
+
+        use ProjInf  &amp;&amp; Open Table with directory and extension information.
+        scan         &amp;&amp; Scan the table.
+        AddFile(defDir, DirName,extName)   &amp;&amp; Add files.
+        endscan
+
+       **Set the Main program.
+        msgrtrn=messagebox("Select the Main Project File",4)
+        if msgrtrn=6
+           curProj.SETMAIN(getfile( "*","File Name","Select",1,;
+                       "Select Main File"))
+        endif
+
+        curProj.CLOSE
+
+        **Function that adds files to the project.
+        FUNCTION addfile
+           PARAMETERS dDir, fDir, fExt
+
+           SET DEFAULT TO (dDir+fDir)   &amp;&amp; Select the file directory.
+           DirStat = ADIR(dAry,'*.'+fExt)   &amp;&amp; Get all files in directory.
+           IF DirStat != 0
+              FOR i = 1 TO ALEN(dAry,1)
+                 curProj.FILES.ADD(dAry(i,1)) &amp;&amp; Add files to Project.
+              ENDFOR
+           ELSE
+               WAIT WIND fext+"Specified Files Not in "+;
+                  (upper(fDir)+" Directory"
+           ENDIF
+           SET DEFAULT TO (dDir)   &amp;&amp; Select Project directory.
+        RETURN
+        ********End of Code********
+        ***************************
+
+5. Running the code in the previous step creates and populates a new project.
+
+Additional query words: kbVFp600 kbProjManager
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

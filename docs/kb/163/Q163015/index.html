@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163015: Use of &quot;Already Verified&quot; APPC Security from Invoking TPs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163015: Use of &quot;Already Verified&quot; APPC Security from Invoking TPs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163015/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163015/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163015/","publisher":null,"image":null,"headline":"Q163015: Use of &quot;Already Verified&quot; APPC Security from Invoking TPs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163015-use-of-already-verified-appc-security-from-invoking-tps">Q163015: Use of "Already Verified" APPC Security from Invoking TPs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163015
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+Operating System(s): 
+Keyword(s): kbnetwork kbprogrammingkbbuglist
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Customers have often requested a capability for an invoking APPC transaction
+program (TP) to use security option "Already Verified", even in cases where the
+invoking TP was not invoked by some other APPC TP. This capability was always
+available in SNA Server, but somewhat inefficient in implementation. In SNA
+Server and other industry standard implementations of APPC, it is possible to
+implement a "pass through" TP, which could be invoked by the real invoking TP,
+and merely passes on the messages from the original invoking TP.
+
+For a trusted APPC application, it is inefficient to issue originating (that is,
+invoking) APPC conversations on behalf of multiple users using APPC "Already
+Verified" security.
+
+The direct approach would be to issue an [MC_]ALLOCATE APPC verb specifying both
+security=AP_SAME and an arbitrary username in the verb control block (VCB). The
+corresponding action in CPI-C would be to call cmscst(, CM_SECURITY_SAME,) and
+cmscsu( , &lt;someUser&gt; . . .), or provide this information in the symbolic
+destination definition. However, actually doing either of these results in an
+APPC conversation that ignores the value of the username parameter.
+
+CAUSE
+=====
+
+This limitation is behavior specified in version 1.2 of the WOSA WinAPPC and
+WinCPIC specifications. It has been implemented in other APPC libraries, such as
+Communications Manager 1.0.
+
+RESOLUTION
+==========
+
+The SNA Server WinAPPC and WinCPIC APIs will support an extension as follows:
+
+- A TP was invoked by another TP, and now initiates a conversation specifying
+  security type SAME: Any username that might be be specified in the VCB is
+  ignored, and the system will provide the already verified username under
+  which the TP was invoked, and set the "already verified" indicator in the
+  outgoing conversation request. This behavior is unchanged.
+
+- The TP was not invoked by another TP, issues a conversation startup request
+  with security type SAME, and provides a user name: The system will copy the
+  specified username into the outgoing conversation request and set the
+  "already verified" indicator.
+
+- The TP was not invoked by another TP, issues a conversation startup request
+  with security type SAME, but does not provide a user name: The system will
+  check for environment value: AP_SAMENOSUser. If this has a value starting
+  with Y, the system will provide the current logged- on user name in the
+  outgoing conversation request. If the environment value is not defined, or
+  has some other value, the system will provide *no* username in the outgoing
+  conversation request.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.10,
+2.11 and 2.11 Service Pack 1 (SP1).
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+This is a hotfix, and distribution requires manager approval. To receive the
+hotfix, customers must be encountering the bug as described above. You must
+track the customers you send this to and supply them with the next Service Pack
+when it becomes available.
+
+REFERENCES
+==========
+
+For more information on the UnverifiedAP_SAME registry entry (which has been
+replaced with the AP_SAMENOSUser registry entry in SNA Server version 3.0),
+please see the following article in the Microsoft Knowledge Base:
+
+  Q135316 Support for sending User ID on Attach when AP_SAME specified [sna]
+
+Additional query words: SNA APPC CPI-C Already Verified AP_SAME prodsna
+
+======================================================================
+Keywords          : kbnetwork kbprogramming kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

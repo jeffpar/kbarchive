@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97809: FIX: C1024 or C1083 Error When INCLUDE Set to Root Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97809: FIX: C1024 or C1083 Error When INCLUDE Set to Root Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97809/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97809/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97809/","publisher":null,"image":null,"headline":"Q97809: FIX: C1024 or C1083 Error When INCLUDE Set to Root Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97809-fix-c1024-or-c1083-error-when-include-set-to-root-directory">Q97809: FIX: C1024 or C1083 Error When INCLUDE Set to Root Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97809
+Product(s): Microsoft C Compiler
+Version(s): 7.00 | 1.00 1.50 | 1.00
+Operating System(s): 
+Keyword(s): kbCompilerkbbuglist kbfixlist
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to compile an application fails and Microsoft C/C++ generates one of
+the following messages. For version 8.0:
+
+  fatal error C1083: Cannot open include file: 'stdio.h':
+  Permission denied
+
+For version 7.0:
+
+  fatal error C1024: cannot open include file 'stdio.h'
+
+The application compiles correctly in Microsoft C version 6.0 for MS-DOS.
+
+CAUSE
+=====
+
+The INCLUDE environment variable specifies the root directory of a drive and a
+required header file is located in the root directory. This occurs most often
+when the MS-DOS SUBST command creates a drive letter for a subdirectory on a
+drive.
+
+RESOLUTION
+==========
+
+To work around this problem, edit your AUTOEXEC.BAT file to replace the
+backslash character (\) in the directory specification with a forward slash
+character (/). For example, the modified SET statement would appear as follows:
+
+     set INCLUDE=C:/ 
+
+For a drive letter created with the SUBST command, omitting the backslash
+character entirely also works. For example:
+
+     set INCLUDE=M:
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This bug was corrected in C/C++ version 9.0, included with
+Visual C++ 32-bit Edition, version 2.0.
+
+MORE INFORMATION
+================
+
+Perform the following two steps to demonstrate this problem.
+
+1. Copy STDIO.H to the root directory on your C drive.
+
+2. Enter the following at the MS-DOS command prompt:
+
+     set INCLUDE=C:\ 
+     cl TEST.C
+
+If your C/C++ INCLUDE directory is C:\C700\INCLUDE, the error also occurs if you
+enter the following at the MS-DOS command prompt:
+
+     subst M: C:\C700\INCLUDE
+     set INCLUDE=M:\ 
+     cl TEST.C
+
+The compiler uses the INCLUDE environment variable to specify the directories it
+searches for header files listed in the #include statement.
+
+The MS-DOS SUBST command can be used to substitute a drive letter for a directory
+path. For more information on the SUBST command, please refer to your "MS-DOS
+User's Guide and Reference" manual. Also note that the online help for MS-DOS
+version 6.0 states "Do not use the SUBST command when you are running Windows."
+
+Sample Code
+-----------
+
+  /*
+   * Compile options needed: none
+   */ 
+
+  #include &lt;stdio.h&gt;
+
+  void main (void)
+  {
+     printf("Hello World\n");
+  }
+
+Additional query words: 1.00 1.50 7.00 8.00 8.00c
+
+======================================================================
+Keywords          : kbCompiler kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 7.00 | 1.00 1.50 | 1.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

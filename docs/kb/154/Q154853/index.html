@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154853: Intel MMX Technology Support in Visual C++ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154853: Intel MMX Technology Support in Visual C++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154853/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154853/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154853/","publisher":null,"image":null,"headline":"Q154853: Intel MMX Technology Support in Visual C++","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154853-intel-mmx-technology-support-in-visual-c">Q154853: Intel MMX Technology Support in Visual C++</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154853
+Product(s): Microsoft C Compiler
+Version(s): 4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbVC kbVC410 kbVC420 kbVC500 kbVC600 kbHWx86
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.1, 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Beginning with Microsoft Visual C++ version 4.1 for Intel, support of Intel's
+MMX Technology is available in the Microsoft C/C++ compiler Cl.exe. This
+capability is enabled with the /GM compiler switch and is only available within
+inline assembly.
+
+NOTE: The /GM switch is not necessary in Visual C++ versions 5.0 and 6.0.
+
+MORE INFORMATION
+================
+
+Microsoft provides MMX Technology compiler support but does not provide
+programming support.
+
+Included here is a trivial sample using the PAND instruction with the two MMX
+registers MM0 and MM1. This sample just illustrates MMX Technology support. For
+information on MMX programming, refer to Intel documentation.
+
+Note that running a program that uses MMX instructions on a standard Pentium (P5)
+processor will generate an invalid instruction exception. This is the expected
+behavior because the P5C processor is required. Again, for more information,
+refer to the Intel web site.
+
+
+Sample Code
+-----------
+
+     /* Compile options needed: /GM
+     */ 
+
+     void main(void)
+     {
+         _asm {
+             pand mm0, mm1  ; packed and
+             emms           ; empty MMX state
+         }
+     }
+
+Additional query words: Pentium P5C Pro illegal instruction
+
+======================================================================
+Keywords          : kbCompiler kbVC kbVC410 kbVC420 kbVC500 kbVC600 kbHWx86 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :4.1,4.2,5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

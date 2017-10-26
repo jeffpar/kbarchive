@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232035: AS/400 Password Change Using Host Security May Not Complete | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232035: AS/400 Password Change Using Host Security May Not Complete" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232035/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232035/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232035/","publisher":null,"image":null,"headline":"Q232035: AS/400 Password Change Using Host Security May Not Complete","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232035-as400-password-change-using-host-security-may-not-complete">Q232035: AS/400 Password Change Using Host Security May Not Complete</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232035
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Operating System(s): 
+Keyword(s): kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 kbsna400sp2kbfaq
+Last Modified: 11-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft's SNA Server Host Security Integration (HSI) to make a
+password change on an AS/400 system, the request will be sent to the AS/400
+system, however, the password change may never reach the AS/400 User Database.
+
+If a password change request doesn't work, end users have no way of knowing this
+until the next time they try logging onto the AS/400 using the "new" AS/400
+password. If using the 5250 applet that is included with Microsoft's SNA Server,
+the following error message is displayed:
+
+  The host system rejected the connection due to a security validation error.
+  Please check your session configuration.
+
+  [0003] [080F6051]
+
+Here is the primary and secondary return code information:
+
+  PRC = [0003] AP_ALLOCATION ERROR
+  APPC has failed to allocate a conversation. The conversation state is set to
+  RESET.
+
+  SRC = [080F6051] AP_SECURITY_NOT_VALID
+  The user ID or password specified in the allocation request was not accepted
+  by the partner LU.
+
+NOTE: Other third-party emulators may report a different error message.
+
+ADDITIONAL INFORMATION
+----------------------
+
+During the time of a password change failure, the following entries are recorded
+in the Event Viewer application log on the SNA Server:
+
+- Event 6005 Source: AS400MDSI
+
+  The SNA APPC service returned the following error when attempting an operation
+  for [userid_name] in the [Host_Security_Domain_Name]:
+
+  Receive and Wait verb has completed with primary return code Allocation Error.
+
+- Event 1506 Source: SNA Host Security
+
+  Security DLL could not establish network connection to host side components.
+
+If an SNA Server DLC trace (nodemsg) is taken when the password request leaves
+the SNA Server (node), the AS/400 rejects the Attach (02FF) with a 0846 0000
+sense code promising the SNA Server the real error in a later message.
+
+DLC   ----------------------------------------------- 12:39:53.0859
+DLC   01020501-&gt;04160001 DLC DATA
+DLC                      DAF:01 OAF:01 ODAI:off Normal
+DLC                      RQE FMD FI BC EC DR1 PI CD
+DLC
+DLC   ---- Header  at address 011946F0, 1 elements ----
+DLC   0B050000 1D002C00 01010001 01009300     &lt;......,.......l.&gt;
+DLC
+DLC   ---- Element at address 01B83480, start 10, end 136 ----
+DLC   0B912040 0502FF10 03D10000 0406F3F0     &lt;.j @.....J....30&gt;
+DLC   F1120702 D4D6D5E3 C5C20901 36D18DB1     &lt;1...MONTEB..6J..&gt;
+DLC   FE4EE330 140BC1D7 D7D54BD3 D6C3C2C9     &lt;.NT0..APPNKLOCBI&gt;
+DLC   C707CF05 0C0C2700 01000800 00000000     &lt;G.....'.........&gt;
+DLC   00000100 3C12FF00 38122100 34FF0408     &lt;....&lt;...8.!.4...&gt;
+DLC   01D4D6D5 E3C5C20A 07000000 00000000     &lt;.MONTEB.........&gt;
+DLC   020A035A 2F306BE7 AD90A60A 05909504     &lt;...Z/0kX..w...n.&gt;
+DLC   FE1D27EC 550A04C8 82A03363 31B53D       &lt;..'.U..Hb.3c1.= &gt;
+DLC   ----------------------------------------------- 12:39:53.0869
+DLC   04160001-&gt;01020501 DLC DATA
+DLC                      DAF:01 OAF:01 ODAI:off Normal
+DLC                      +RSP FMD BC EC PI
+DLC
+DLC   ---- Header  at address 011946F0, 1 elements ----
+DLC   0B050000 1D002C00 01010000 01004301     &lt;......,.......C.&gt;
+DLC
+DLC   ---- Element at address 01B83480, start 10, end 12 ----
+DLC   830100                                  &lt;c..             &gt;
+DLC   ----------------------------------------------- 12:39:53.0869
+DLC   04160001-&gt;01020501 DLC DATA
+DLC                      DAF:01 OAF:01 ODAI:off Normal
+DLC                      -RSP FMD SD BC EC DR1
+DLC
+DLC   ---- Header  at address 011946F0, 1 elements ----
+DLC   0B050000 1D002C00 01018000 01004301     &lt;......,.......C.&gt;
+DLC
+DLC   ---- Element at address 01B83480, start 10, end 16 ----
+DLC   87900008 460000                         &lt;g...F..         &gt;
+           ^^ ^^^^^^  
+----------------------------------------------- 12:39:53.0869
+
+The 0846 0000 sense code means ERP Message Forthcoming.
+
+Here is the actual error from the AS/400:
+
+DLC   ----------------------------------------------- 12:39:53.0869
+DLC   04160001-&gt;01020501 DLC DATA
+DLC                      DAF:01 OAF:01 ODAI:off Normal
+DLC                      RQE FMD FI BC EC DR1 PI CEB
+DLC
+DLC   ---- Header  at address 01194890, 1 elements ----
+DLC   0B050000 1D002C00 01010001 01004301     &lt;......,.......C.&gt;
+DLC
+DLC   ---- Element at address 01B83A34, start 10, end 49 ----
+DLC   0B910107 07084B60 3180001E 12E10018     &lt;.j....K`1.......&gt;
+                ^^^^^^ ^^  
+
+  Primary Sense Code: 084B - Requested Resources Not Available
+  Secondary Sense Code: 6031 - Transaction Program Not Available
+
+CAUSE
+=====
+
+The subsystem or job where this transaction program (TP) runs on the AS/400 is
+not active.
+
+RESOLUTION
+==========
+
+The transaction program to which SNA Server's Host Security talks is named
+QACSOTP. This TP normally runs as a job under a particular subsystem on the
+AS/400. For example, the AS/400 subsystem may be called QBASE, which is part of
+a library called QSYS where the program job TP QACSOTP runs. If either the
+subsystem QBASE, or the TP QACSOTP is not "active," password changes do not
+work.
+
+MORE INFORMATION
+================
+
+Microsoft's Host Security Integration components provides out of the box one-way
+(unidirectional) password synchronization from Windows NT to IBM AS/400 systems
+(V3R1 or later) without any additional host code being needed. This is made
+possible by means of the Sec400.dll that gets installed with HSI and used after
+configuring and setting up a Host Security Domain.
+
+For two-way (bi-directional) password changes (AS/400 to Window NT), third-party
+solutions are required. For a list of third-party independent software vendors
+(ISVs), please see the Companion Product Catalog (Isvcatal.doc) on the SNA
+Server CD.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 kbsna400sp2 kbfaq
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

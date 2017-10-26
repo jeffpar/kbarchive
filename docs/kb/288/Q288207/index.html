@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288207: IISSYNC May Fail If SSL Is Enabled on IIS5/Windows 2000 Cluster | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288207: IISSYNC May Fail If SSL Is Enabled on IIS5/Windows 2000 Cluster" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288207/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288207/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288207/","publisher":null,"image":null,"headline":"Q288207: IISSYNC May Fail If SSL Is Enabled on IIS5/Windows 2000 Cluster","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288207-iissync-may-fail-if-ssl-is-enabled-on-iis5windows-2000-cluster">Q288207: IISSYNC May Fail If SSL Is Enabled on IIS5/Windows 2000 Cluster</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288207
+Product(s): Internet Information Server
+Version(s): 2000,2000 SP1,5.0
+Operating System(s): 
+Keyword(s): kbDSupport kbiis500
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Windows versions 2000, 2000 SP1 Advanced Server 
+- Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you add a server certificate to Internet Information Services (IIS) to use
+Secure Sockets Layer (SSL) encryption, the IISSYNC utility may stop responding
+(hang) and fail to complete the synchronization of the two nodes.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+NOTE: All of the following steps are performed on Node A unless otherwise
+specified.
+
+1. Create a certificate request.
+
+2. Fill the certificate requests (for example, use Microsoft Certificate Server
+  or a certificate authority such as VeriSign).
+
+  NOTE: If Microsoft Certificate Server creates the certificate, make sure that
+  the root certificate authority (CA) is a trusted root CA, and then install
+  the root CA into the Local Store if necessary.
+
+  For more information, see the "References" section.
+
+3. After you download the new certificate to Node A and before you install it,
+  make a copy of the certificate, and place the copy on Node B.
+
+4. Install the certificate on Node A through the Internet Service Administrator
+  (ISM), and set the appropriate configurations (for example, using the Server
+  Certificate Wizard, click Process pending certificate).
+
+5. On Node B, double-click the certificate that you copied earlier, and then
+  click Install Certificate. Complete the wizard, accepting all of the
+  defaults.
+
+6. On Node A, run IISSYNC. The status should now return as "Successful".
+
+If you still do not receive a "Successful" status, you may want to contact
+Microsoft Support Services for additional assistance. To contact Microsoft
+Support Services, see the following Microsoft Web site:
+
+  http://support.microsoft.com
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q290625 HOWTO: IIS5: How to Configure SSL in a Windows 2000 IIS 5 Test
+  Environment Using Certificate Server 2.0
+
+This article includes the following topics:
+
+- Create a Certificate Request
+- Fill the Certificate Requests
+- Installing the Certificate/Configuring SSL in IIS5
+- Install a Root CA
+- Process Pending Certificates
+
+Additional query words: iis 5 hang 0.0
+
+======================================================================
+Keywords          : kbDSupport kbiis500 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Search kbiisSearch kbAudDeveloper kbClustServSearch kbiis500 kbWinAdvServSearch kbWin2000AdvServSP1
+Version           : :2000,2000 SP1,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

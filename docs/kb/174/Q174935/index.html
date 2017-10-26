@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174935: SMS: &quot;Error 5 Access Is Denied&quot; When Using Rservice.exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174935: SMS: &quot;Error 5 Access Is Denied&quot; When Using Rservice.exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174935/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174935/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174935/","publisher":null,"image":null,"headline":"Q174935: SMS: &quot;Error 5 Access Is Denied&quot; When Using Rservice.exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174935-sms-error-5-access-is-denied-when-using-rserviceexe">Q174935: SMS: "Error 5 Access Is Denied" When Using Rservice.exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174935
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kberrmsg kbPCM smspcm
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Rservice.exe in a master domain model, you may receive the
+following error message:
+
+  Error 5 Access is denied
+
+This error occurs when you run RSERVICE on a Windows NT computer that is a member
+of one resource domain and the target computer is a member of a different
+resource domain. In this situation, RSERVICE uses the incorrect account to
+connect to the target computer. If RSERVICE is executed without the /c switch,
+it should connect to the target system with the account of user who is logged
+on. Instead of using the account of the user who is logged on, it uses the
+account specified in the Rservice.ini file.
+
+WORKAROUND
+==========
+
+Run RSERVICE from a computer that belongs to the master domain or the same
+resource domain that the target computer is located in.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem was corrected in the latest Microsoft Systems
+Management Server 1.2 U.S. Service Pack. For information on obtaining the
+service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+For example, you have domains R1, R2, and ACCTS in a master domain model where
+domain R1 and domain R2 trust domain ACCTS (the master domain). An administrator
+running RSERVICE on a Windows NT Server system belonging to R1, is logged on to
+the ACCTS domain as ACCTS\MikeT and has specified ACCTS\Smspcmsvc account in the
+Rservice.ini file.
+
+The test target computer is in R2 and the ACCTS\Smspcmsvc account does not have
+local administrative privileges to this client computer. As per the
+documentation, the administrator is relying on RSERVICE to give this
+ACCTS\Smspcmsvc account "Log on as a Service" rights and add this account to the
+target computer's local Administrators group.
+
+This fails and the "Error 5 Access is denied" error message is displayed.
+RSERVICE incorrectly tries to use the ACCTS\Smspcmsvc account to install the
+service instead of using the ACCTS\MikeT account which has administrator
+privileges on the client computer. If you give the ACCTS\Smspcmsvc account local
+administrator privileges to the target computer, it will successfully install
+the service.
+
+Additional query words: prodsms rc
+
+======================================================================
+Keywords          : kberrmsg kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

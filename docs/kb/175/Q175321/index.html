@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175321: SNA Client Sessions Hang Until SNA Server Is Restarted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175321: SNA Client Sessions Hang Until SNA Server Is Restarted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175321/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175321/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175321/","publisher":null,"image":null,"headline":"Q175321: SNA Client Sessions Hang Until SNA Server Is Restarted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175321-sna-client-sessions-hang-until-sna-server-is-restarted">Q175321: SNA Client Sessions Hang Until SNA Server Is Restarted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175321
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2; winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork kbWinNT400sp4fix kbDriver
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When connecting SNA Server to a host system over 802.2 through an IBM 3174
+(though this does not require a 3174 to occur), all SNA clients suddenly stop
+receiving any responses to user requests. If 3270 emulation is being used, 3270
+users may get stuck in a perpetual XCLOCK state and never receive a host
+response. This problem may also occur with TN3270 clients that connect through
+the SNA Server TN3270 server.
+
+CAUSE
+=====
+
+A portion of the problem was related to a previous Windows NT Dlc.sys problem.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+ARTICLE-ID: Q168662
+TITLE : DLC May Fail When Connecting Through an IBM 2210 Router
+
+
+RESOLUTION
+==========
+
+Windows NT 3.51
+---------------
+
+The Windows NT 3.51 fix should have the following time stamp:
+
++-----------------------------------------------+
+| 10/29/97 | 04:23p | 58,192  | Dlc.sys | Intel | 
++-----------------------------------------------+
+| 10/29/97 | 04:21p | 100,752 | Dlc.sys | Alpha | 
++-----------------------------------------------+
+| 10/29/97 | 04:20p | 88,016  | Dlc.sys | MIPS  | 
++-----------------------------------------------+
+
+Windows NT 4.0
+--------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. A
+supported fix is now available, but has not been fully regression tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next service pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+MORE INFORMATION
+================
+
+This problem has been observed when using SNA Server on top of Windows NT 4.0
+Service Pack 3 Dlc.sys driver, although it may occur with previous Windows NT
+4.0 service pack levels and also with Windows NT 3.51. If the SNA Server is
+stopped and restarted, the 802.2 connection stays in a Pending state and does
+not reactivate. The only way to recover the 802.2 connection is to restart the
+server running both Windows NT and SNA Server.
+
+SNA Server 802.2 link service Level 2 traces will show that the link service has
+several outstanding calls to the Windows NT Dlc.sys TRANSMIT.I.FRAME function
+that never complete. A network monitor LAN trace shows that Windows NT stops
+sending any DLC I-frames to the remote SNA system, although I-frames continue to
+be accepted from the remote system. The problem starts to occur after Windows NT
+DLC receives a REJ response to a retransmitted I-frame. The following network
+monitor trace illustrates the problem:
+
+Src Addr  Dst Addr  Description
+--------  --------  -----------
+
+SNASRV    HOST      I DSAP=0x04 SSAP=0x04 C N(S) = 0x0B, N(R) = 0x10
+SNASRV    HOST      I DSAP=0x04 SSAP=0x04 C N(S) = 0x0C, N(R) = 0x10 POLL
+HOST      SNASRV    RR DSAP=0x04 SSAP=0x05 R N(R) = 0x0B FINAL
+SNASRV    HOST      I DSAP=0x04 SSAP=0x04 C N(S) = 0x0B, N(R) = 0x10 POLL
+HOST      SNASRV    I DSAP=0x04 SSAP=0x04 C N(S) = 0x10, N(R) = 0x0B
+HOST      SNASRV    I DSAP=0x04 SSAP=0x04 C N(S) = 0x11, N(R) = 0x0B
+SNASRV    HOST      RR DSAP=0x04 SSAP=0x05 R N(R) = 0x11
+HOST      SNASRV    I DSAP=0x04 SSAP=0x04 C N(S) = 0x12, N(R) = 0x0B
+HOST      SNASRV    RR DSAP=0x04 SSAP=0x05 R N(R) = 0x0C
+SNASRV    HOST      RR DSAP=0x04 SSAP=0x05 R N(R) = 0x13
+HOST      SNASRV    RR DSAP=0x04 SSAP=0x05 R N(R) = 0x0D FINAL
+HOST      SNASRV    REJ DSAP=0x04 SSAP=0x05 R N(R) = 0x0D FINAL
+HOST      SNASRV    I DSAP=0x04 SSAP=0x04 C N(S) = 0x13, N(R) = 0x0D
+HOST      SNASRV    I DSAP=0x04 SSAP=0x04 C N(S) = 0x14, N(R) = 0x0D
+SNASRV    HOST      RR DSAP=0x04 SSAP=0x05 R N(R) = 0x15
+HOST      SNASRV    I DSAP=0x04 SSAP=0x04 C N(S) = 0x15, N(R) = 0x0D
+SNASRV    HOST      RR DSAP=0x04 SSAP=0x05 R N(R) = 0x16
+SNASRV    HOST      RR DSAP=0x04 SSAP=0x04 C N(R) = 0x16 POLL
+
+In the above trace, Windows NT (SNASRV) sends I-frames 0x0B and 0x0C, setting the
+POLL bit after sending I-frame 0x0C. The host does not ack these I-frames,
+causing Windows NT (SNASRV) to resend I-frame 0x0B in line 4 above. The host
+eventually acks the I-frame 0x0C, but it then REJects the resend of I-frame
+0x0B. After Windows NT DLC receives the host REJ (to the retransmitted I-frame
+0x0B), Windows NT DLC never sends any more I-frames to the host. As this occurs,
+the SNA Server 802.2 link service's calls to TRANSMIT.I.FRAME stop responding
+(hang) and never complete.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbWinNT400sp4fix kbDriver 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbNTTermServ400 kbNTTermServSearch kbWinNTS351search kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2; winnt:3.51,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

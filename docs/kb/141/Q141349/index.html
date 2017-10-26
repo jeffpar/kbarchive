@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141349: Error Message: MMSYSTEM281 This File Could Not Be Played | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141349: Error Message: MMSYSTEM281 This File Could Not Be Played" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141349/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141349/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141349/","publisher":null,"image":null,"headline":"Q141349: Error Message: MMSYSTEM281 This File Could Not Be Played","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141349-error-message-mmsystem281-this-file-could-not-be-played">Q141349: Error Message: MMSYSTEM281 This File Could Not Be Played</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141349
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to play a MIDI (.mid) file, .avi file, or .wav file, you may
+receive the following error message:
+
+  MMSYSTEM281 This file could not be played. Check the filename or install a
+  driver that supports this type of file.
+
+CAUSE
+=====
+
+This behavior can occur for either of the following reasons:
+
+- The proper entry is not present in the [mci extensions] section of the
+  Win.ini file for the type of file you are trying to play.
+
+- There is an incorrect Media Control Device association for the file type you
+  are trying to play.
+
+RESOLUTION
+==========
+
+Proper Entry Not Present in the Win.ini File
+--------------------------------------------
+
+Make sure that the [mci extensions] section exists in the Win.ini file, and that
+the proper entries are present. For example, .avi files are played using the
+AVIVideo MCI device.
+
+The following is a sample [mci extensions] section:
+
+  [mci extensions]
+  mid=Sequencer
+  rmi=Sequencer
+  wav=waveaudio
+  avi=AVIVideo
+
+
+Incorrect Media Control Device Association
+------------------------------------------
+
+To correct this error, remove and then reinstall any devices that are not working
+correctly. To do so, follow these steps:
+
+1. In Control Panel, double-click Multimedia.
+
+2. On the Advanced tab, double-click the Media Control Devices branch to expand
+  it.
+
+3. Click the device that is not working properly, click Properties, and then
+  click Remove.
+
+4. When you are prompted to verify that you want to remove the device, click
+  Yes. Click OK when you are notified that the device has been removed and when
+  you are notified that the changes will take effect when you restart Windows
+  95.
+
+5. Repeat steps 3-4 to remove any other devices that are not working correctly.
+  When you are done removing devices, click OK to close the Multimedia
+  Properties dialog box.
+
+6. In Control Panel, double-click Add New Hardware.
+
+7. Click Next, click No, and then click Next.
+
+8. In the Hardware Types box, click Sound, Video, And Game Controllers, and then
+  click Next.
+
+9. In the Manufacturers box, click Microsoft MCI.
+
+10. In the Models box, click one of the drivers you removed in step 3, and then
+  click Next.
+
+11. Click Finish.
+
+12. If you need to install another device, click No when you are prompted to
+  restart your computer, and then repeat steps 6-11.
+
+13. When you are done installing devices, click Yes when you are prompted to
+  restart your computer.
+
+MORE INFORMATION
+================
+
+This behavior usually occurs with files associated with Media Player. Because
+several file types are associated with Media Player, the [mci extensions]
+section of the Win.ini file is used to determine which MCI device Media Player
+should be used.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60430: Security Issues with LAN Manager 2.0 and 2.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60430: Security Issues with LAN Manager 2.0 and 2.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60430/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60430/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60430/","publisher":null,"image":null,"headline":"Q60430: Security Issues with LAN Manager 2.0 and 2.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60430-security-issues-with-lan-manager-20-and-21">Q60430: Security Issues with LAN Manager 2.0 and 2.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q60430
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+The following are questions and answers about security issues that pertain to
+OS/2 LAN Manager versions 2.0, 2.1, 2.1a, and 2.2.
+
+1. Q. What security is available for LAN Manager API calls? For example, I am
+  able to modify a user's full name through an OS/2 server script issuing a
+  NetUserSetInfo() call without being logged on either at the workstation or by
+  issuing a NetWkstaSetUID() prior to (or even after) executing
+  NetUserSetInfo(). When I tried to do this, however, through the NET USER
+  command at the OS/2 prompt, I received a "system access denied" error. If
+  this is the case, couldn't someone who knows C and the APIs wreak havoc upon
+  the system?
+
+  A. When a remote call is made to change any user account information, remote
+  users must have admin privileges to make changes in any account other than
+  their own, so user account information is protected from unwarranted access
+  by remote users.
+
+  On the (local) server, any user can make a NetUserSetInfo() call and make
+  changes to a user account. If you need to secure your server's user account
+  system (UAS), you need to use local security (run SECURESH.EXE).
+  Alternatively, you can run "NET CONSOLE", which does not let anyone other
+  than the administrator change the screen group, thereby securing the user
+  account system.
+
+  The Net Admin interface checks the privilege for you before you can change any
+  user account system.
+
+2. Q. On an OS/2 server running LAN Manager 2.0, 2.1, 2.1a, or 2.20 with local
+  security (SECURESH.EXE), will a background process that modifies the UAS,
+  without the process first issuing a NetWkstaSetUID2() in order to log on
+  (nobody is currently logged on the workstation), be able to modify the UAS?
+
+  A. When nobody is currently logged on, the user/process has LOCAL security.
+  Therefore, if the LOCAL group has been granted RWX privileges (as opposed to
+  RX or R only privilege), the program will modify the UAS.
+
+  The only way to stop a person or process from changing the UAS is by not
+  granting that person or process the W privilege. To do this, give the USERS
+  group (default group when you add a user account) only the RX privilege for
+  the LAN Manager tree (for example, C:\LANMAN), and grant the W privilege only
+  to limited people for the LAN Manager tree as well.
+
+3. Q. On an OS/2 server running LAN Manager 2.0, 2.1, 2.1a, or 2.20 with no
+  local security, but with NET CONSOLE running, will a background process that
+  modifies the UAS, without the process first issuing a NetWkstaSetUID2() in
+  order to log on (nobody is currently logged on the workstation), be able to
+  modify the UAS?
+
+  A. Yes, a background process can change the UAS even when NET CONSOLE is
+  running.
+
+4. Q. On an OS/2 server running LAN Manager 2.0, 2.1, 2.1A, or 2.20 with local
+  security (SECURESH.EXE), will a background process that modifies items
+  outside the scope of the UAS (servers, shared resources, print jobs, and so
+  on) without the process first issuing a NetWkstaSetUID2() in order to log on
+  (nobody is currently logged on the workstation), be able to modify these
+  items?
+
+  A. You must prevent the person from launching a background process. The
+  following scenario explains why.
+
+  Suppose ADMIN is logged off. At this time, if a person named TEST wants to log
+  on, the RX privilege must be granted to the LOCAL group for the LAN Manager
+  and OS/2 tree (to be able to run NET LOGON). After logging on, TEST launches
+  a background process that checks to see if it can change the UAS. TEST
+  receives error 2199 at this time, as the LOCAL group has only RX privileges
+  and no W privilege. Therefore, TEST may (Dos)Sleep() for a while and try
+  again later.
+
+  Suppose that in the meantime, ADMIN returns and logs on (NET LOGON). Now the
+  background process can change the UAS. The current local user is ADMIN, who
+  has all privileges.
+
+  The only way to prevent this from happening is to avoid giving any privileges
+  to the LOCAL group so that once ADMIN logs off NOBODY can access or run any
+  programs, including NET LOGON. In such a system, PRIVINIT.CMD (which is
+  executed when the system is booted) must look like this:
+
+  net start server
+  net logoff
+
+  The administrator can put NET ADMIN in this command file as well, but should
+  set up the UAS once, and from then on just use the server over the network.
+  Should the administrator later decide to change the UAS for accessing the
+  server locally or for some other reason, the best method is to change the UAS
+  over the network by remote command (NET ADMIN \\&lt;remote computer
+  name&gt;).
+
+  Such a server, then, becomes completely secure against any local intrusion.
+
+5. Q. On an OS/2 server running LAN Manager 2.0, 2.1, 2.1a, or 2.20 with no
+  local security, but with NET CONSOLE running, will a background process that
+  modifies items outside the scope of the UAS (that is, servers, shared
+  resources, print jobs, and so on) without the process first issuing a
+  NetWkstaSetUID2() in order to log on (nobody is currently logged on the
+  workstation), be able to modify these items?
+
+  A. You must look at specific APIs. However, in any case, the background
+  process can just wait until someone with ADMIN privilege logs on. At this
+  time, the background process can execute any ADMIN level API as well as any
+  other API.
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

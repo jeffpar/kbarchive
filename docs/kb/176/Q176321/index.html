@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176321: Unable to Resolve NetBIOS Names Through PPTP Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176321: Unable to Resolve NetBIOS Names Through PPTP Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176321/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176321/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176321/","publisher":null,"image":null,"headline":"Q176321: Unable to Resolve NetBIOS Names Through PPTP Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176321-unable-to-resolve-netbios-names-through-pptp-connection">Q176321: Unable to Resolve NetBIOS Names Through PPTP Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176321
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Windows Internet Name Service (WINS) server is on the same computer as
+the Point-to-Point Tunneling Protocol (PPTP) server, and you attempt to connect
+to a computer using a PPTP client, either or both of the following symptoms may
+occur:
+
+- The NetBIOS name of the computer to which you are attempting to connect is
+  not resolved.
+
+- You receive an error message similar to the following error message: System
+  error 53 has occurred. The network path was not found.
+
+If the WINS server is not on the same computer as the PPTP server and you attempt
+to connect to a computer using a PPTP client, you may be able to connect to
+computers on your local area network (LAN), but you may be unable to connect to
+network shares or resources on the PPTP server.
+
+CAUSE
+=====
+
+This issue can occur if there is a host route added to the PPTP client that
+routes all Internet Protocol (IP) traffic destined for the PPTP server through
+your original dial-up connection to your Internet service provider (ISP). This
+path may contain routers or firewalls that block User Datagram Protocol (UDP)
+ports 137 or 138, or Transmission Control Protocol (TCP) port 139. These ports
+must be open for NetBIOS traffic to pass.
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+Method 1
+--------
+
+Use the NetBEUI protocol for your PPTP tunnel instead of, or in addition to,
+TCP/IP.
+
+Method 2
+--------
+
+Enable unicast traffic through UDP ports 137 and 138 and TCP port 139 across all
+routers and firewalls between the PPTP client and PPTP server.
+
+NOTE: If you use this method, your PPTP client and server may be susceptible to
+unwanted traffic from other hosts. Please ensure that you enable the proper
+permissions and rights to secure your computers.
+
+Method 3
+--------
+
+If the WINS server is on the same computer as the PPTP server, move the WINS
+server to a different computer.
+
+NOTE: If UDP ports 137 and 138 and TCP port 139 are not enabled, you may be able
+to resolve the NetBIOS name of the PPTP server, but you may be unable to connect
+to its resources.
+
+Method 4
+--------
+
+Create an additional IP interface on the PPTP server. To do so, use any of the
+following methods:
+
+- Add a second network adapter to your PPTP server so that your PPTP clients
+  can gain access to resources on the PPTP server using an IP address different
+  from that of the PPTP server adapter. Be sure to disable the WINS client on
+  the PPTP network adapter.
+
+- Add a Microsoft Loopback adapter to the PPTP server. Make sure it registers
+  with WINS.
+
+- Add a second IP address to the existing network adapter in the Advanced
+  TCP/IP Properties dialog box on the PPTP server. Make PPTP connection to the
+  second IP address.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+ARTICLE-ID: Q133241
+TITLE : Browsing Domain Master Browsers w/ Multiple NICs and Protocols
+
+ARTICLE-ID: Q135404
+TITLE : Multihomed Master Browser May Cause Event ID 8021 and 8032
+
+
+Additional query words: ntnetserv NTPROTOCOL NTSrv nttcp kberrmsg kbinterop kbnetwork
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

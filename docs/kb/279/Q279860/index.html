@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q279860: XFOR: How to Stop IMS from Relaying Junk E-mail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q279860: XFOR: How to Stop IMS from Relaying Junk E-mail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/279/Q279860/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/279/Q279860/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/279/Q279860/","publisher":null,"image":null,"headline":"Q279860: XFOR: How to Stop IMS from Relaying Junk E-mail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q279860-xfor-how-to-stop-ims-from-relaying-junk-e-mail">Q279860: XFOR: How to Stop IMS from Relaying Junk E-mail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q279860
+Product(s): Microsoft Exchange
+Version(s): 5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2 exc55sp3
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure the Microsoft Exchange Server Internet
+Mail Service to stop relaying junk e-mail (spam). This procedure does not
+prevent Post Office Protocol version 3 (POP3) clients and Internet Message
+Access Protocol 4 (IMAP4) clients from sending SMTP messages.
+
+MORE INFORMATION
+================
+
+To configure the Microsoft Exchange Server Internet Mail Service to stop
+relaying unwanted mail, follow the instructions in the following Microsoft
+Knowledge Base article:
+
+  Q196626 XFOR: Restricting Routing in the Internet Mail Service
+
+This article describes how to enable specific Internet Protocol (IP) addresses or
+users to relay SMTP messages by using the Routing Restrictions tab. When you
+follow the procedure in this article, you may inadvertently configure the
+Internet Mail Service so that POP3 and IMAP4 users are prevented from sending
+messages to the Internet.
+
+If all POP3 and IMAP4 users connect from the same IP addresses or IP subnets,
+click to select the "Hosts and clients with these IP addresses" check box on the
+Routing Restrictions tab. If you add the respective IP addresses or subnets, the
+clients are able to send Internet messages.
+
+If you click to select the "Hosts and clients that authenticate" check box, you
+must configure clients that connect to this service to send Internet messages.
+Each client profile must be set up to log on to the outgoing mail server.
+
+To enable outgoing server authentication in Microsoft Outlook Express, follow
+these steps:
+
+1. Open the properties of the default Internet account, and then click the
+  Servers tab.
+
+2. In the Incoming Mail Server box, verify that the user account information is
+  in this format: &lt;domain&gt;\&lt;accountname&gt;. This information should
+  be followed by the domain account password.
+
+3. In the Outgoing Mail Server box, click to select the "My server requires
+  authentication" check box, and then click the Settings button.
+
+4. Click either the "Use same settings as my incoming mail server" check box, or
+  specify an additional account and password to use that is different from the
+  incoming mail server's account and password.
+
+5. Click OK to save the settings.
+
+POP3 and IMAP4 users are now able to send Internet messages, and the security
+settings to prevent junk e-mail remain intact.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q193922 XFOR: Preventing the Internet Mail Service From Relaying Unsolicited
+  Commercial E-Mail Messages
+
+  Q255695 XCON: Do Not Reroute Incoming SMTP Mail Option Still Allows Relay as
+  a Non-Delivery Report
+
+Additional query words: IMS spam
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : :5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

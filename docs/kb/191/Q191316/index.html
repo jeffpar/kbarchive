@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191316: PRB: SET DATASESSION TO Fails From a Method of _Screen | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191316: PRB: SET DATASESSION TO Fails From a Method of _Screen" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191316/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191316/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191316/","publisher":null,"image":null,"headline":"Q191316: PRB: SET DATASESSION TO Fails From a Method of _Screen","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191316-prb-set-datasession-to-fails-from-a-method-of-_screen">Q191316: PRB: SET DATASESSION TO Fails From a Method of _Screen</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191316
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to set the data session of a form by calling the SET DATASESSION TO
+command from a method of _SCREEN fails.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program that contains the following code:
+
+        CLEAR ALL
+        PUBLIC yy,Y,zz
+
+        * The target session we are trying to SET TO:
+        Y = CREATEOBJECT("zform")
+
+        * A separate custom object, which can set to that session:
+        zz = CREATEOBJECT("myobj")
+
+        * A form in another session, which can set to that session:
+        yy = CREATEOBJECT("zform2")
+
+        * A member of screen, which will show the problem:
+        _SCREEN.ADDOBJECT("z","myobj")
+
+        Y.SHOW()
+        yy.SHOW()
+
+        RETURN
+
+        DEFINE CLASS myobj AS CUSTOM
+
+           PROCEDURE SetToActiveSession
+              WAIT WINDOW TIMEOUT 1 ;
+              "current ;
+              session: "+STR(SET("datasession"))
+              SET DATASESSION TO ;
+              (_SCREEN.ACTIVEFORM.DATASESSIONID)
+              WAIT WINDOW "session we want: "+;
+              ALLTR(STR(_SCREEN.ACTIVEFORM.DATASESSIONID))+ ;
+              ", "+ CHR(13)+ ;
+              "session we got: "+ ;
+              ALLTR(STR(SET("DATASESSION"))) TIMEOUT 3
+           ENDPROC
+
+        ENDDEFINE
+
+        DEFINE CLASS zform AS FORM
+           DATASESSION = 2
+        ENDDEFINE
+
+        DEFINE CLASS zform2 AS zform
+           AUTOCENTER = .T.
+           ADD OBJECT z AS COMMANDBUTTON WITH ;
+           CAPTION="Push Me"
+           PROCEDURE  z.CLICK
+           WAIT WINDOW TIMEOUT 1 "current session: "+STR(SET("datasession"))
+           SET DATASESSION TO (Y.DATASESSIONID)
+           WAIT WINDOW "session we want: "+ ;
+           ALLTR(STR(Y.DATASESSIONID))+ ;
+           ", "+CHR(13)+ ;
+           "session we got: "+ ;
+           ALLTR(STR(SET("DATASESSION"))) TIMEOUT 1
+           ENDPROC
+        ENDDEFINE
+
+2. Run the program and press the command button. Notice the data session starts
+  out with a value of three (3) and changes to a value of two (2).
+
+3. Change the data session from the Command window by typing the following
+  command:
+
+  " zz.SetToActiveSession()" (without the quotation marks)
+
+  Notice the data session starts with a value of one (1) and successfully
+  changes to two (2).
+
+4. Attempt to change the data session from the Command window using a method of
+  the _SCREEN object by typing the following:
+
+  " _Screen.z.SetToActiveSession()" (without the quotation marks)
+
+  Calling the _SCREEN object does not allow you to change the data session to a
+  value of two (2). It remains a value of one (1).
+
+Additional query words: kbVFp500a kbVFp600 kbOOP
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

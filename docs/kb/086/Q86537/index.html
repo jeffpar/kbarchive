@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86537: PC Adm: How to Move Mail User from One Postoffice to Another | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86537: PC Adm: How to Move Mail User from One Postoffice to Another" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86537/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86537/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86537/","publisher":null,"image":null,"headline":"Q86537: PC Adm: How to Move Mail User from One Postoffice to Another","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86537-pc-adm-how-to-move-mail-user-from-one-postoffice-to-another">Q86537: PC Adm: How to Move Mail User from One Postoffice to Another</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86537
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article outlines the procedure to move a version 3.0 Microsoft Mail for PC
+Networks user from one postoffice to another. Follow the steps below, based on
+the type of user you are moving.
+
+User Runs MS-DOS and/or Macintosh Client Only
+---------------------------------------------
+
+1. Move all mail in the user's inbox that the user wants to retain into folders.
+
+2. Archive the folders using the MS-DOS client. This can be done by choosing
+  Options, Folders, Folders, Archive.
+
+3. If the user owns any shared or group folders, archive the folder, then delete
+  it. The user can then pass the archived folders over to another user on the
+  postoffice to own them.
+
+4. Delete the user from the postoffice.
+
+5. Add the user to the new postoffice.
+
+6. De-archive the folders using the MS-DOS client.
+
+7. Promptly re-export both address lists.
+
+User Runs Windows and/or PM Client Only
+---------------------------------------
+
+1. Move the Mail message file (MMF) to local storage. This can be done by
+  choosing Options from the Mail menu and selecting the Server button.
+
+2. Make a backup of the MMF. This can be done by choosing Backup from the Mail
+  menu.
+
+3. If the user owns any shared folders, they should be archived using the MS-DOS
+  client, and then deleted. The user then can pass the archived folders over to
+  another user on the postoffice to own them.
+
+4. Delete the user on the postoffice.
+
+5. Create the user on the new postoffice, using the same alias.
+
+6. Have the user run Mail on the new postoffice and move the MMF to local
+  storage. This can be done by choosing Options from the Mail menu and
+  selecting the Server button.
+
+7. Copy the backup MMF to the name and location of the new locally stored MMF.
+
+8. Promptly re-export both address lists.
+
+For Microsoft Schedule+ users, because a copy of the user's calendar file is kept
+on both the server and the user's local workstation, nothing need be done. The
+next time the user logs on to Schedule+, a copy of the local calendar file will
+be uploaded to the server.
+
+User Runs a Combination of Both MS-DOS/Macintosh and Windows/PM Clients
+-----------------------------------------------------------------------
+
+1. Using the MS-DOS client, move all mail in the inbox that you want to save
+  into folders.
+
+2. Archive the folders using the MS-DOS client. This can be done by choosing
+  Options, Folders, Folders, Archive.
+
+3. If the user owns any shared or group folders, the user should archive the
+  folder and then delete it. The user then can pass the archived folders to
+  another user on the postoffice to own them.
+
+4. Using the Windows or PM client, move the Mail message file (MMF) to local
+  storage. This can be done by choosing Options from the Mail menu and
+  selecting the Server button.
+
+5. Make a backup of the MMF. This can be done by choosing Backup from the Mail
+  menu.
+
+6. Delete the user on the postoffice.
+
+7. Create the user on the new postoffice, using the same alias.
+
+8. De-archive the folders using the MS-DOS client.
+
+9. Have the user run the Windows or PM client on the new postoffice and move the
+  MMF to local storage. This can be done by choosing Options from the Mail menu
+  and selecting the Server button.
+
+10. Copy the backup MMF to the name and location of the new locally stored MMF.
+
+11. Promptly re-export both address lists.
+
+For Microsoft Schedule+ users, because a copy of the user's calendar file is kept
+on both the server and the user's local workstation, nothing need be done. The
+next time the user logs on to Schedule+, a copy of the local calendar file will
+be uploaded to the server.
+
+Additional query words: 3.00 moving admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

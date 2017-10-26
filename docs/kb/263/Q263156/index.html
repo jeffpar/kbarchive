@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q263156: SNA Server Event IDs 4, 13, and 38 Message Sequence Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q263156: SNA Server Event IDs 4, 13, and 38 Message Sequence Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/263/Q263156/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/263/Q263156/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/263/Q263156/","publisher":null,"image":null,"headline":"Q263156: SNA Server Event IDs 4, 13, and 38 Message Sequence Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q263156-sna-server-event-ids-4-13-and-38-message-sequence-errors">Q263156: SNA Server Event IDs 4, 13, and 38 Message Sequence Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q263156
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Operating System(s): 
+Keyword(s): kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11 SP1, 2.11 SP2, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A computer running SNA Server that has the Data Link Control (DLC) bound to
+teamed IBM Netfinity 10/100 Ethernet adapters to communicate with the host may
+experience dropped LU-LU sessions. The following events may appear in the
+Application event log.
+
+  Event Source: SNA Server
+  Event ID: 4
+  Description:
+  (1133) Message Sequence Error
+
+  Event Source: SNA Server
+  Event ID: 13
+  Description:
+  (1141) Message Sequence Error (SENSE = 0)
+
+  Event Source: SNA Server
+  Event ID: 38
+  Description:
+  APPC session deactivated abnormally
+
+CAUSE
+=====
+
+A packet arrives at the SNA Server link service that is corrupt, causing a
+sequence number to be skipped. Because the next packet that arrives has a
+sequence number that is not one greater than the previous, SNA Server sends an
+UNBIND to the host with sense code 2001, which means there is a sequence error.
+
+RESOLUTION
+==========
+
+The teaming function for the adapters that are bound to the DLC must be
+configured for Fault Tolerance mode, rather than Fast Ether Channel.
+
+WORKAROUND
+==========
+
+Disable teaming for the DLC, and use a single NIC for the SNA Server-to-host
+link.
+
+MORE INFORMATION
+================
+
+An SNA Server trace of this problem contains the following messages (data is
+truncated for simplicity). The sequence numbers, noted by ^^^^ in each RU, are
+009B, 009C, and 009E:
+
+  
+
+  ----------------------------------------------- 11:41:17.0878
+  04160000-&gt;01020101 DLC DATA
+                  DAF:01 OAF:02 ODAI:off Normal
+                  RQE FMD MC DR1
+
+  ---- Header  at address 012054F4, 2 elements ----
+  0B050000 00002C00 0102009B 01009000     &lt;......,.........&gt;
+                     ^^^^
+  ---- Element at address 01BF7460, start 10, end 268 ----
+  009000F0 A140F0F0 F0F0F0F0 F0F0F04B     &lt;...0.@000000000K&gt;
+  F0F0A140 F0F0F0F0 F0F0F0F0 F04BF0F0     &lt;00.@000000000K00&gt;
+  ----------------------------------------------- 11:41:17.0878
+  04160000-&gt;01020101 DLC DATA
+                  DAF:01 OAF:02 ODAI:off Normal
+                  RQE FMD MC DR1
+
+  ---- Header  at address 012049FC, 2 elements ----
+  0B050000 00002C00 0102009C 01009000     &lt;......,.........&gt;
+                     ^^^^
+  ---- Element at address 01BF6468, start 10, end 268 ----
+  009000F0 F0F0F0F0 F04BF0F0 A140F0F0     &lt;...000000K00.@00&gt;
+  F0F0F0F0 F0F0F04B F0F0A140 F0F0F0F0     &lt;0000000K00.@0000&gt;&lt;BR/&gt;
+  ----------------------------------------------- 11:41:17.0894
+  04160000-&gt;01020101 DLC DATA
+                  DAF:01 OAF:02 ODAI:off Normal
+                  RQE FMD MC DR1
+
+  ---- Header  at address 012043B0, 2 elements ----
+  1E040000 00002C00 0102009E 01009000     &lt;......,.........&gt;
+                     ^^^^
+  ---- Element at address 01BF7460, start 10, end 268 ----
+  009000F0 F0A14F40 A1404040 4040A140     &lt;...00.O@.@@@@@.@&gt;
+  F0F0F0F0 F0F0F0F0 F04BF0F0 A140F0F0     &lt;000000000K00.@00&gt;
+
+The following message appears in the trace where the RU with sequence number 009D
+needs to be:
+
+  
+
+  ----------------------------------------------- 11:41:17.0894
+  04160000-&gt;01020101 DLC DATA
+                  INVALID TH !!
+
+  ---- Header  at address 012054F4, 1 elements ----
+  1E040000 00000000 00000000 01009000     &lt;................&gt;
+
+  ---- Element at address 01BF3EC4, start 10, end 45 ----
+  00000000 00000000 00000000 00000000     &lt;................&gt;
+  00000000 00000000 00000000 00000000     &lt;................&gt;
+
+A network trace captured on an independent computer displayed a good RU with
+sequence 009D arriving at the Ethernet switch to which SNA Server was
+connected.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

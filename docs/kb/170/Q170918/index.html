@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170918: HOWTO: Use ShellExecute to Launch Associated File (32-bit) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170918: HOWTO: Use ShellExecute to Launch Associated File (32-bit)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170918/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170918/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170918/","publisher":null,"image":null,"headline":"Q170918: HOWTO: Use ShellExecute to Launch Associated File (32-bit)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170918-howto-use-shellexecute-to-launch-associated-file-32-bit">Q170918: HOWTO: Use ShellExecute to Launch Associated File (32-bit)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170918
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Windows API ShellExecute() function to start the application
+associated with a given document extension without knowing the name of the
+associated application. For example, you could start the Paintbrush program by
+passing the filename ARCADE.BMP to the ShellExecute() function.
+
+MORE INFORMATION
+================
+
+The ShellExecute function opens or prints the specified file. Following is the
+declaration to use when calling this function from Visual Basic:
+
+     Declare Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" _
+                     (ByVal hwnd As Long, ByVal lpszOp As String, _
+                      ByVal lpszFile As String, ByVal lpszParams As String, _
+                      ByVal LpszDir As String, ByVal FsShowCmd As Long) _
+                      As Long
+
+The following table provides descriptions for each parameter:
+
+Parameter     Description
+----------------------------------------------------------------------------
+hwnd          Identifies the parent window. This window receives any
+             message boxes an application produces (for example, for error
+             reporting).
+
+lpszOp        Points to a null-terminated string specifying the operation
+             to perform. This string can be "open" or "print." If this
+             parameter is NULL, "open" is the default value.
+
+lpszFile      Points to a null-terminated string specifying the file
+             to open.
+
+lpszParams    Points to a null-terminated string specifying parameters
+             passed to the application when the lpszFile parameter
+             specifies an executable file. If lpszFile points to a string
+             specifying a document file, this parameter is NULL.
+
+LpszDir       Points to a null-terminated string specifying the default
+             directory.
+
+FsShowCmd     Specifies whether the application window is to be shown when
+             the application is opened.
+
+Step-by-Step Example
+--------------------
+
+The following example demonstrates how to start an application or load a document
+into its associated application. The Windows API ShellExecute() function is
+different from the Visual Basic Shell() function in that you can pass the
+ShellExecute() function the name of a document and it will launch the associated
+application, and then pass the filename to the application.
+
+1. Start a New project in Visual Basic. Form1 is created by default.
+
+2. Add the following code to the General Declarations section of Form1:
+
+        Option Explicit
+
+        Private Declare Function ShellExecute Lib "shell32.dll" Alias _
+        "ShellExecuteA" (ByVal hwnd As Long, ByVal lpszOp As _
+        String, ByVal lpszFile As String, ByVal lpszParams As String, _
+        ByVal lpszDir As String, ByVal FsShowCmd As Long) As Long
+
+        Private Declare Function GetDesktopWindow Lib "user32" () As Long
+
+        Const SW_SHOWNORMAL = 1
+
+        Const SE_ERR_FNF = 2&amp;
+        Const SE_ERR_PNF = 3&amp;
+        Const SE_ERR_ACCESSDENIED = 5&amp;
+        Const SE_ERR_OOM = 8&amp;
+        Const SE_ERR_DLLNOTFOUND = 32&amp;
+        Const SE_ERR_SHARE = 26&amp;
+        Const SE_ERR_ASSOCINCOMPLETE = 27&amp;
+        Const SE_ERR_DDETIMEOUT = 28&amp;
+        Const SE_ERR_DDEFAIL = 29&amp;
+        Const SE_ERR_DDEBUSY = 30&amp;
+        Const SE_ERR_NOASSOC = 31&amp;
+        Const ERROR_BAD_FORMAT = 11&amp;
+
+        Function StartDoc(DocName As String) As Long
+            Dim Scr_hDC As Long
+            Scr_hDC = GetDesktopWindow()
+            StartDoc = ShellExecute(Scr_hDC, "Open", DocName, _
+            "", "C:\", SW_SHOWNORMAL)
+        End Function
+
+        Private Sub Form_Click()
+            Dim r As Long, msg As String
+            r = StartDoc("C:\WINDOWS\ARCADE.BMP")
+            If r &lt;= 32 Then
+                'There was an error
+                Select Case r
+                    Case SE_ERR_FNF
+                        msg = "File not found"
+                    Case SE_ERR_PNF
+                        msg = "Path not found"
+                    Case SE_ERR_ACCESSDENIED
+                        msg = "Access denied"
+                    Case SE_ERR_OOM
+                        msg = "Out of memory"
+                    Case SE_ERR_DLLNOTFOUND
+                        msg = "DLL not found"
+                    Case SE_ERR_SHARE
+                        msg = "A sharing violation occurred"
+                    Case SE_ERR_ASSOCINCOMPLETE
+                        msg = "Incomplete or invalid file association"
+                    Case SE_ERR_DDETIMEOUT
+                        msg = "DDE Time out"
+                    Case SE_ERR_DDEFAIL
+                        msg = "DDE transaction failed"
+                    Case SE_ERR_DDEBUSY
+                        msg = "DDE busy"
+                    Case SE_ERR_NOASSOC
+                        msg = "No association for file extension"
+                    Case ERROR_BAD_FORMAT
+                        msg = "Invalid EXE file or error in EXE image"
+                    Case Else
+                        msg = "Unknown error"
+                End Select
+                MsgBox msg
+            End If
+        End Sub
+
+3. Run the project and click the form.
+
+General Information About the Process
+-------------------------------------
+
+If the function succeeds, the return value is the instance handle of the
+application that was run. If there was an error, the return value is less than
+or equal to 32.
+
+The file specified by the lpszFile parameter can be a document file or an
+executable file. If it is a document file, this function opens or prints it
+depending on the value of the lpszOp parameter. If it is an executable file,
+this function opens it even if the lpszOp specifies "PRINT."
+
+REFERENCES
+==========
+
+"Programmer's Reference, Volume 2: Functions" of the Microsoft Windows Software
+Development Kit (SDK), pages 901-904
+
+Additional query words: kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbVBp400 KBWIN32SDK KBAPI
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

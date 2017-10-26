@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q177901: Age of Empires: Cannot See Multiplayer Game After Modem Connects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q177901: Age of Empires: Cannot See Multiplayer Game After Modem Connects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/177/Q177901/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/177/Q177901/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/177/Q177901/","publisher":null,"image":null,"headline":"Q177901: Age of Empires: Cannot See Multiplayer Game After Modem Connects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q177901-age-of-empires-cannot-see-multiplayer-game-after-modem-connects">Q177901: Age of Empires: Cannot See Multiplayer Game After Modem Connects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q177901
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbenv aoe
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Age of Empires, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a multiplayer game using a modem connection, you may be able to
+connect with the modem, but you may not be able to see the game.
+
+CAUSE
+=====
+
+This behavior can occur if you have only the Transport Control Protocol/Internet
+Protocol (TCP/IP) installed in the Network tool in Control Panel, and the Obtain
+An IP Address Automatically option is enabled.
+
+RESOLUTION
+==========
+
+To resolve this behavior, install the NetBios Enhanced User Interface protocol
+(NetBEUI), and select the NetBEUI check box in the game connection properties.
+To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Network.
+
+3. Click Add, click Protocol, and then click Add.
+
+4. In the Manufacturers box, click Microsoft.
+
+5. In the Network Protocols box, click NetBEUI, and then click OK.
+
+6. Click OK. When you are prompted to restart the computer, click Yes.
+
+7. Click Start, point to Programs, point to Accessories, and then click Dial-Up
+  Networking.
+
+8. Right-click the Age of Empires game connection, and then click Properties.
+
+9. Click the Server Types tab, and then click the NetBEUI check box to select
+  it.
+
+10. Click OK, and then close the Dial-Up Networking window.
+
+NOTE: All players participating in the multiplayer Age of Empires game should
+install the NetBEUI protocol, and modify their game connection properties to
+include NetBEUI as an allowed network protocol.
+
+MORE INFORMATION
+================
+
+If the Obtain An IP Address Automatically option is enabled in the TCP/IP
+properties, the computer waits for an IP address from a server. If both players
+participating in the game have only TCP/IP installed and have the Obtain An IP
+Address Automatically option enabled, both computers wait for an IP address.
+Because neither computer is connected to a server, the computers wait
+indefinitely.
+
+Additional query words: 1.00 rise of rome expansion pack age aoe multi-player multiple head-to-head
+
+======================================================================
+Keywords          : kbenv aoe 
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbZNotKeyword kbAOESearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

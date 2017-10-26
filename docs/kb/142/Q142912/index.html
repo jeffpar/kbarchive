@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142912: IBM Token Ring 16/4 Network Adapter II Switch Settings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142912: IBM Token Ring 16/4 Network Adapter II Switch Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142912/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142912/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142912/","publisher":null,"image":null,"headline":"Q142912: IBM Token Ring 16/4 Network Adapter II Switch Settings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142912-ibm-token-ring-164-network-adapter-ii-switch-settings">Q142912: IBM Token Ring 16/4 Network Adapter II Switch Settings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142912
+Product(s): Microsoft Windows NT
+Version(s): kb3rdparty kbhw
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following lists switch settings for the IBM Token Ring 16/4 Adapter II ISA
+network adapter:
+
+ROM ADDRESS (SW1-SW3):
+
+SW1   SW2   SW3   RPL ROM ADDRESS   I/O BASE ADDRESS
+---   ---   ---   ---------------   ----------------
+ON    ON    ON        C0000             86A0
+OFF   ON    ON        C4000             96A0
+ON    OFF   ON        C8000             A6A0
+OFF   OFF   ON        CC000             B6A0
+ON    ON    OFF       D0000             C6A0
+OFF   ON    OFF       D4000             D6A0
+ON    OFF   OFF       D8000             E6A0
+OFF   OFF   OFF       DC000             F6A0
+
+INTERRUPT LEVEL (SW4-SW5):
+
+SW4   SW5   Interrupt Requests (IRQ)
+---   ---   ------------------------
+ON    ON        IRQ  9
+OFF   ON        IRQ 10
+ON    OFF       IRQ 11
+OFF   OFF       IRQ 15
+
+WAIT STATE (SW6):
+
+SW6   State
+---   -----
+ON    Normal
+OFF   Fast
+
+ADAPTER MODE (SW7):
+
+SW7   Mode
+---   ----
+ON    Normal
+OFF   Reserved
+
+RPL (SW8):
+
+SW8   Enable/Disable
+---   --------------
+ON    RPL DISABLE
+OFF   RPL ENABLE
+
+DMA CHANNEL (SW9-SW10):
+
+SW9   SW10   Channel
+---   ----   -------
+ON    ON       5
+OFF   ON       6
+ON    OFF      7
+OFF   OFF    Not Used
+
+RING SPEED (SW11):
+
+SW11  Speed
+----  -----
+ON    4 Mbps
+OFF   16 Mbps
+
+CABLE TYPE (SW12):
+
+SW12  Type
+----  ----
+ON    STP
+OFF   UTP
+
+For additional information on the IBM Token Ring 16/4 Adapter II network adapter,
+refer to the Installation and Test Instructions guide provided with the network
+adapter.
+
+Additional query words: dip
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : kb3rdparty kbhw
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236281: FIX: An Error Occurs While Registering the File Expsrv.dll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236281: FIX: An Error Occurs While Registering the File Expsrv.dll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236281/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236281/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236281/","publisher":null,"image":null,"headline":"Q236281: FIX: An Error Occurs While Registering the File Expsrv.dll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236281-fix-an-error-occurs-while-registering-the-file-expsrvdll">Q236281: FIX: An Error Occurs While Registering the File Expsrv.dll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q236281</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbwizard</span> <span class="n">kbDeployment</span> <span class="n">kbVBp</span> <span class="n">kbVBp600bug</span> <span class="n">kbGrpDSVB</span> <span class="n">kbVS600sp3fix</span> <span class="n">kbDSupport</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">25</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Professional</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">A</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">project</span> <span class="n">using</span> <span class="n">the</span> <span class="n">Data</span> <span class="n">control</span> <span class="k">or</span> <span class="n">otherwise</span> <span class="n">has</span> <span class="n">a</span> <span class="n">Reference</span> <span class="k">to</span>
+<span class="n">the</span> <span class="n">Microsoft</span> <span class="n">DAO</span> <span class="n">Object</span> <span class="n">Library</span><span class="p">,</span> <span class="n">is</span> <span class="n">compiled</span> <span class="n">into</span> <span class="n">an</span> <span class="n">executable</span> <span class="n">file</span><span class="p">.</span> <span class="n">The</span>
+<span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="n">is</span> <span class="n">used</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">deployment</span> <span class="k">package</span><span class="p">.</span> <span class="n">When</span> <span class="n">this</span>
+<span class="k">package</span> <span class="n">is</span> <span class="nf">run</span> <span class="n">on</span> <span class="n">another</span> <span class="n">computer</span><span class="p">,</span> <span class="n">the</span> <span class="n">following</span> <span class="n">error</span> <span class="n">message</span> <span class="n">appears</span><span class="p">:</span>
+
+  <span class="n">An</span> <span class="n">error</span> <span class="n">occurred</span> <span class="k">while</span> <span class="n">registering</span> <span class="n">the</span> <span class="n">file</span> <span class="n">expsrv</span><span class="p">.</span><span class="n">dll</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">Your</span> <span class="n">setup</span> <span class="k">package</span> <span class="n">contains</span> <span class="n">Expsrv</span><span class="p">.</span><span class="n">dll</span> <span class="k">version</span> <span class="m">6.0.0.8268</span> <span class="k">or</span> <span class="n">earlier</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">setup</span> <span class="k">package</span> <span class="n">is</span> <span class="n">attempting</span> <span class="k">to</span> <span class="n">register</span> <span class="n">Expsrv</span><span class="p">.</span><span class="n">dll</span><span class="p">.</span> <span class="k">Version</span> <span class="m">6.0.0.8268</span> <span class="n">is</span> <span class="k">not</span>
+<span class="n">a</span> <span class="n">self</span><span class="p">-</span><span class="n">registering</span> <span class="n">file</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">it</span> <span class="n">includes</span> <span class="n">the</span> <span class="n">resource</span> <span class="n">tag</span> <span class="n">OLESelfRegister</span><span class="p">,</span>
+<span class="n">which</span> <span class="n">indicates</span> <span class="n">that</span> <span class="n">it</span> <span class="n">is</span> <span class="n">a</span> <span class="n">self</span><span class="p">-</span><span class="n">registering</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">this</span> <span class="k">to</span> <span class="n">be</span> <span class="n">a</span> <span class="n">bug</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">products</span> <span class="n">listed</span> <span class="n">at</span> <span class="n">the</span>
+<span class="n">beginning</span> <span class="k">of</span> <span class="n">this</span> <span class="n">article</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">problem</span> <span class="n">was</span> <span class="n">first</span> <span class="n">corrected</span> <span class="k">in</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="m">6.0</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">3.</span> <span class="n">However</span><span class="p">,</span> <span class="n">we</span>
+<span class="n">recommend</span> <span class="n">that</span> <span class="n">you</span> <span class="n">install</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">service</span> <span class="n">pack</span> <span class="k">and</span> <span class="nb">create</span> <span class="n">a</span>
+<span class="n">new</span> <span class="n">deployment</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">service</span> <span class="n">packs</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span>
+<span class="n">numbers</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">articles</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q194022</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="m">6.0</span> <span class="n">Service</span> <span class="n">Packs</span><span class="p">,</span> <span class="n">What</span><span class="p">,</span> <span class="n">Where</span><span class="p">,</span> <span class="n">Why</span>
+
+  <span class="n">Q194295</span> <span class="n">HOWTO</span><span class="p">:</span> <span class="n">Tell</span> <span class="n">That</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="n">Is</span> <span class="n">Installed</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">download</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">service</span> <span class="n">pack</span> <span class="k">from</span> <span class="n">the</span> <span class="n">following</span>
+<span class="n">Microsoft</span> <span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">Visual</span> <span class="n">Studio</span> <span class="n">Product</span> <span class="n">Updates</span>
+  <span class="p">(</span><span class="n">http</span><span class="p">://</span><span class="n">msdn</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">vstudio</span><span class="p">/</span><span class="n">downloads</span><span class="p">/</span><span class="n">updates</span><span class="p">.</span><span class="n">asp</span><span class="p">)</span>
+
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Steps</span> <span class="k">to</span> <span class="n">Reproduce</span> <span class="n">Behavior</span>
+<span class="p">---------------------------</span>
+
+<span class="m">1.</span> <span class="n">Start</span> <span class="n">a</span> <span class="n">new</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Standard</span> <span class="n">EXE</span> <span class="n">project</span><span class="p">.</span> <span class="n">Form1</span> <span class="n">is</span> <span class="n">created</span> <span class="n">by</span> <span class="n">default</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Add</span> <span class="n">a</span> <span class="n">data</span> <span class="n">control</span> <span class="k">to</span> <span class="n">Form1</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Save</span> <span class="k">and</span> <span class="nf">compile</span> <span class="n">the</span> <span class="n">project</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Use</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">deployment</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="nf">Run</span> <span class="n">the</span> <span class="n">deployment</span> <span class="k">package</span> <span class="n">on</span> <span class="n">another</span> <span class="nf">system</span><span class="p">.</span> <span class="n">The</span> <span class="n">error</span> <span class="n">message</span> <span class="n">appears</span> <span class="n">when</span>
+  <span class="n">the</span> <span class="n">deployment</span> <span class="k">package</span> <span class="n">attempts</span> <span class="k">to</span> <span class="n">register</span> <span class="n">the</span> <span class="n">file</span> <span class="n">Expsrv</span><span class="p">.</span><span class="n">dll</span><span class="p">.</span>
+
+<span class="n">REFERENCES</span>
+<span class="p">==========</span>
+
+<span class="n">For</span> <span class="n">related</span> <span class="n">information</span> <span class="n">on</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span>
+<span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q196057</span> <span class="n">PRB</span><span class="p">:</span> <span class="n">The</span> <span class="n">Jet</span> <span class="n">VBA</span> <span class="n">File</span> <span class="n">VBAJet32</span><span class="p">.</span><span class="n">dll</span> <span class="n">Failed</span> <span class="k">to</span> <span class="n">Initialize</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbwizard</span> <span class="n">kbDeployment</span> <span class="n">kbVBp</span> <span class="n">kbVBp600bug</span> <span class="n">kbGrpDSVB</span> <span class="n">kbVS600sp3fix</span> <span class="n">kbDSupport</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbVBSearch</span> <span class="n">kbAudDeveloper</span> <span class="n">kbZNotKeyword6</span> <span class="n">kbZNotKeyword2</span> <span class="n">kbVB600Search</span> <span class="n">kbVB600</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">6.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbbug</span>
+<span class="n">Solution</span> <span class="n">Type</span>     <span class="p">:</span> <span class="n">kbfix</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

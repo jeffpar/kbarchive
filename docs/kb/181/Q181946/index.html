@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181946: HOWTO: Create a NetDDE Client and Server in Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181946: HOWTO: Create a NetDDE Client and Server in Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181946/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181946/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181946/","publisher":null,"image":null,"headline":"Q181946: HOWTO: Create a NetDDE Client and Server in Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181946-howto-create-a-netdde-client-and-server-in-visual-basic">Q181946: HOWTO: Create a NetDDE Client and Server in Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181946
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbVBp kbVBp400 kbVBp500 kbOSWin95 kbOSWin98 kbGrpDSVB kbDSupport kbOSWinME
+Last Modified: 27-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to use NetDDE to communicate with a Microsoft
+Visual Basic application on a remote computer. This article assumes that you are
+familiar with DDE communications and demonstrates creating both the client and
+server applications in Visual Basic.
+
+MORE INFORMATION
+================
+
+In order to establish a link to a remote application, a DDE share must be
+created on the remote computer. A DDE share consists of a Share Name,
+Application name, and a Topic. Shares may be created and edited using the DDE
+Share Manager (DDESHARE.EXE), which may be found in the &lt;WINNT\SYSTEM32&gt;
+directory on NT 4.0. For Windows 95, Windows 98, Windows Me, and Windows For
+Workgroups, the Network DDE Share Manager can be found in the Windows for
+Workgroups Resource Kit.
+
+Creating the Visual Basic NetDDE Server
+---------------------------------------
+
+1. Start Visual Basic and create a new Standard EXE application. Form1 is
+  created by default.
+
+2. Place a Textbox (Text1) on Form1 and set the Text Property to "The DDE Server
+  is Running."
+
+3. Change the LinkMode Property of Form1 to "1 - Source."
+
+4. Select Project1 Properties from the Project menu, select the Make tab, and
+  then change the application title to DDESRV.
+
+5. Compile and save the application and name it DDESRV.EXE.
+
+6. Install the application on a computer on your network that you want to use as
+  the Server.
+
+Creating the DDE Share on the Server
+------------------------------------
+
+1. Start the DDE Share Manager Application on the Computer designated as the
+  Server. Select Run from the Windows Start menu, and then run DDESHARE.
+
+2. Select "DDE Shares" from the "Shares" menu. A list of shares that have
+  previously been set up will be displayed in the list box.
+
+3. Click the "Add a Share" button.
+
+4. Enter "DDETEST$" in the "Share Name" textbox.
+
+  NOTE: When creating the share name it is not necessary to place a trailing
+  "$," although it is conventional to do so.
+
+5. Enter the following values in the corresponding Application and Topic Text
+  boxes:
+
+                     Application Name              Topic Name
+                    -------------------          ---------------
+  oldstyle             DDESRV.DDE                    Form1
+  newsytle             DDESRV.OLE                    Form1
+  static               DDESRV                        Form1
+
+  NOTE: The DDESHARE utility for WFW/WIN95/WIN98 only supports defining one
+  Application and Topic name each. Use the static Application and Topic names
+  from the list above.
+
+6. Click OK to close the DDE Share Properties dialog.
+
+  IMPORTANT: Due to a bug in the DDE Share Utility, when exiting the DDE Share
+  application, a new serial number is created for the Share but is not updated
+  in the Trusted DDE Shares section of the registry; therefore, the next two
+  steps are very important.
+
+7. Select the DDETEST$ share in the list and click on the "Trust Share" button.
+
+8. Make sure that "Initiate to Application Enable" is selected and then click
+  the "SET" button.
+
+9. Press OK on both open dialogs and then exit the DDE Share Utility.
+
+Creating and Testing the Visual Basic NetDDE Client
+---------------------------------------------------
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Add a CommandButton to Form1. Change the following properties:
+
+  Name:     cmdConnect
+  Caption:  Connect
+
+3. Add a Text box to Form1 and name it txtData.
+
+4. Paste the following code into the Declarations Section of Form1:
+
+  NOTE: Replace the &lt;MACHINE NAME&gt; with the appropriate computer name
+  where the DDE SRV application will be running.
+
+        Private Sub cmdConnect_Click()
+           txtData.linkMode = vbLinkNone
+           txtData.linkTopic = "\\&lt;MACHINE NAME&gt;\NDDE$|DDETEST$
+           txtData.LinkItem = "Text1"
+           txtData.LinkMode = vbLinkManual
+           txtData.LinkRequest
+        End Sub
+
+5. Start the DDESRV application on the Network computer acting as the DDE
+  Server.
+
+6. Press the F5 key to run this client within the Visual Basic 5.0 IDE.
+
+7. Click the Command button labeled "Connect" and note that the string "The DDE
+  Server is Running" appears within the txtData Text Box.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q114089 : Using the Windows NT NetDDE Share Manager
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbVBp kbVBp400 kbVBp500 kbOSWin95 kbOSWin98 kbGrpDSVB kbDSupport kbOSWinME 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

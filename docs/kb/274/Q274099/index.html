@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274099: PRB: Page Size of Embedded Word File Changes When Edited | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274099: PRB: Page Size of Embedded Word File Changes When Edited" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274099/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274099/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274099/","publisher":null,"image":null,"headline":"Q274099: PRB: Page Size of Embedded Word File Changes When Edited","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274099-prb-page-size-of-embedded-word-file-changes-when-edited">Q274099: PRB: Page Size of Embedded Word File Changes When Edited</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274099
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbole kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippe
+Last Modified: 31-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you embed a Microsoft Word file in a general field and then edit it, the
+document may resize to fit the window.
+
+RESOLUTION
+==========
+
+To avoid this problem, use a Linked document instead of an Embedded document. To
+do so, follow the steps in the "More Information" section, but add the LINK
+keyword to the APPEND GENERAL statement.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Type the following code into the Command window, and when prompted, choose a
+  Word document:
+
+  CREATE TABLE wordTable (gWordDoc G)
+  APPEND BLANK
+  APPEND GENERAL gWordDoc FROM GETFILE("doc") CLASS "Word.Application"
+  BROWSE
+
+2. Double-click the "Gen" record.
+
+3. Resize the window to a different width than the displayed document.
+
+4. Close the window, and then reopen it.
+
+5. Double-click the document.
+
+The document appears with new margins, matching the width of the window. If you
+are working in Visual FoxPro version 3, the size changes to a consistent value,
+instead of being dependent on the window width.
+
+If you edit the general field in an OLEBoundControl instead, and use the
+DoVerb(-2) method, it will open in Word. If you then click Page Setup from the
+File menu, you can determine whether the paper size is different from the
+original size.
+
+REFERENCES
+==========
+
+For additional information about the same problem in Word 6.0, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q121049 Wrong Page Size for Word 6.0 Document Object Opened to Edit
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256123: SMSLogonSvc account cannot reliably remain unlocked if password | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256123: SMSLogonSvc account cannot reliably remain unlocked if password" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256123/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256123/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256123/","publisher":null,"image":null,"headline":"Q256123: SMSLogonSvc account cannot reliably remain unlocked if password","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256123-smslogonsvc-account-cannot-reliably-remain-unlocked-if-password">Q256123: SMSLogonSvc account cannot reliably remain unlocked if password</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256123
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms200sp2fix
+Last Modified: 25-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In System Manager Server versions 2.0, and 2.0 SP1, the Logon Data Discovery
+Records (DDRs) are not copied from the logon points to the site server.
+
+Each Domain Controller in the site will then log numerous NT Event Log errors
+that report failure to start the SMS Logon Discovery Agent service:
+
+  Service Failed to start due to a logon failure: Error 1069
+
+CAUSE
+=====
+
+If account lockout is enabled on the domain for X number of failed logon
+attempts and an administrator manually changes the SMSLogonSvc account password
+the SMSLogonSvc account will be locked out whenever X instances of the
+SMS_LOGON_DISCOVERY_AGENT (LDA) is restarted.
+
+Currently, there is no reliable way to ensure the SMSLogonSvc account will not be
+subsequently locked out unless all logon points are uninstalled then
+reinstalled. Even running a senior site update after changing the password will
+not prevent the potential lockout. This behaviour occurs regardless of whether
+or not the password is ever manually changed again.
+
+The SMS_LOGON_DISCOVERY_AGENT service startup properties are not updated on logon
+points whose SMS_LOGON_DISCOVERY_AGENT service is already running when the
+senior site runs its update. At any point from then on, if X number of Logon
+Point servers (Domain Controllers) are rebooted or their
+SMS_LOGON_DISCOVERY_AGENT service is restarted within the "lockout reset count"
+timeout window then the account will be locked out again.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+WORKAROUND
+==========
+
+To work around this problem, follow these steps:
+
+1. Once the SMSLogonSvc account is locked out, an Administrator needs to disable
+  Windows Networking Logon Discovery for all sites that share the NT domain
+  containing the SMSLogonSvc account that keeps getting locked out.
+
+2. Wait for the NT Logon Server Manager to uninstall the NT Logon Discovery
+  Agent from all Domain Controllers. Once each site has updated the PDC and
+  then the senior site has run a full update, the Logon Discovery Agent (LDA)
+  and the SMSLogonSvc service will be removed completely from all DCs in the
+  domain.
+
+3. Re-enable Windows Networking Logon Discovery. When logon discovery is
+  re-enabled the SMSLogonSvc account will be recreated with a new random
+  password and the LDA service will be installed and started on each DC using
+  this new password.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+After each site has updated the PDC and then the senior site has run a full
+Logon Point update, the SMS_LOGON_DISCOVERY_AGENT service will be removed
+completely from all DCs in the domain.
+
+When Logon Discovery is re-enabled the SMSLogonSvc account will be recreated with
+a new random password and the SMS_LOGON_DISCOVERY_AGENT service will be
+installed and started on each Domain Controller using this new password and the
+SMSLogonSvc account will no longer be subject to lockouts.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

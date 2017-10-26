@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140337: PC MAPI: Sample C++ Code to Read Mail Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140337: PC MAPI: Sample C++ Code to Read Mail Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140337/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140337/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140337/","publisher":null,"image":null,"headline":"Q140337: PC MAPI: Sample C++ Code to Read Mail Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140337-pc-mapi-sample-c-code-to-read-mail-messages">Q140337: PC MAPI: Sample C++ Code to Read Mail Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140337
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The simple Messaging Application Programming Interface (MAPI) includes a
+function that allows developers to access a user's mail messages
+programmatically. The following code illustrates one way that this can be done
+using Microsoft Visual C++ version 1.5 or another C compiler.
+
+MORE INFORMATION
+================
+
+NOTE: The following code implements MAPI.DLL as a static library.
+
+  /* readmail.c  */ 
+
+  #include &lt;stdio.h&gt;
+  #include &lt;stdlib.h&gt;
+  #include &lt;windows.h&gt;
+  #include &lt;mapi.h&gt;
+  #include &lt;string.h&gt;
+
+  int readmail();
+
+  long err;
+  LHANDLE lhSession;
+  lpMapiMessage FAR *lppMessage;
+  lpMapiMessage lpMessage;
+  char szSeedMessageID[512];
+  char szMessageID[512];
+  char szTmp[4096];
+  char szTmp2[50];
+
+  LPSTR lpszSeedMessageID=&amp;szSeedMessageID[0];
+  LPSTR lpszMessageID=&amp;szMessageID[0];
+
+  int main()
+  {
+   readmail();
+   return(0);
+  }
+
+  int readmail()
+  {
+
+    /************  Logon  **********************/ 
+    err = MAPILogon(0L, "", "", MAPI_LOGON_UI, 0L,
+    &amp;lhSession);
+    if(err != SUCCESS_SUCCESS)
+    {
+       MessageBox(0, "Error logging on", "Error", MB_OK);
+       return(0);
+    }
+
+   /********* Find Messages ********************/ 
+   *lpszSeedMessageID = '\0';
+
+    // reset MAPIFindNext back to the top again
+    err = MAPIFindNext(lhSession, 0L, "IPM.Microsoft Mail.Note",
+    lpszSeedMessageID, 0L, 0L, lpszMessageID);
+       if(err != SUCCESS_SUCCESS)
+      {
+        MessageBox(0, "Error finding first message", "Error",
+        MB_OK);
+        err = MAPILogoff(lhSession, 0L, 0L, 0L);
+        return(0);
+
+      }
+
+    do
+    {
+      lppMessage=(lpMapiMessage FAR *) &amp;lpMessage;
+      /******** Read Message *************/ 
+      err = MAPIReadMail(lhSession, 0L, lpszMessageID,
+      MAPI_PEEK, 0L, lppMessage);
+      if(err != SUCCESS_SUCCESS)
+      {
+        MessageBox(0, "Error during message read", "Error",
+        MB_OK);
+        err = MAPILogoff(lhSession, 0L, 0L, 0L);
+        return(0);
+      }
+        /******* copy Subject and NoteText into string *************/ 
+        if((lpMessage-&gt;lpszSubject) != NULL){
+          _fstrcpy(szTmp2, lpMessage-&gt;lpszSubject);     //  Check for NULL
+   strings
+        }
+        else _fstrcpy(szTmp2,"No subject text");
+        if((lpMessage-&gt;lpszNoteText) != NULL){
+          if(_fstrlen(lpMessage-&gt;lpszNoteText)&gt;4096){   // Check for large
+   message body
+            MessageBox(0, "Message body to large", "MAPI2.C", MB_OK);
+          }
+         _fstrcpy(szTmp, lpMessage-&gt;lpszNoteText);
+        }
+        else _fstrcpy(szTmp, "No message body");
+        printf("\nSUBJECT: %s\n", szTmp2);
+        printf("\nNOTETEXT: \n%s\n", szTmp);
+        /****** free memory used by MAPI *********************/ 
+        err = MAPIFreeBuffer(lpMessage);
+        if(err != SUCCESS_SUCCESS)
+        {
+          MessageBox(0, "Error freeing memory", "Error",MB_OK);
+        }
+      //get next message ID.
+      lstrcpy(lpszSeedMessageID, lpszMessageID);
+      err = MAPIFindNext(lhSession, 0L, "IPM.Microsoft Mail.Note",
+   lpszSeedMessageID, 0L, 0L, lpszMessageID);
+      if(err != SUCCESS_SUCCESS)
+      {
+        MessageBox(0, "No more messages", "Warning",
+        MB_OK);
+        err = MAPILogoff(lhSession, 0L, 0L, 0L);
+        return(0);
+      }
+      lppMessage=(lpMapiMessage FAR *) &amp;lpMessage;
+
+    }while(err == SUCCESS_SUCCESS);
+
+   /************** Logoff  ***************/ 
+    err = MAPILogoff(lhSession, 0L, 0L, 0L);
+    return(0);
+    }
+
+Additional query words: 3.00 3.20 3.50 visual basic read mail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN350
+Version           : WINDOWS:3.0,3.2,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

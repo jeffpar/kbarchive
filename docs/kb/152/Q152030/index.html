@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152030: FIX: Port I/O Functions Not in DLL Version of CRT for VC++ 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152030: FIX: Port I/O Functions Not in DLL Version of CRT for VC++ 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152030/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152030/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152030/","publisher":null,"image":null,"headline":"Q152030: FIX: Port I/O Functions Not in DLL Version of CRT for VC++ 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152030-fix-port-io-functions-not-in-dll-version-of-crt-for-vc-40">Q152030: FIX: Port I/O Functions Not in DLL Version of CRT for VC++ 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152030
+Product(s): Microsoft C Compiler
+Version(s): 4.00
+Operating System(s): 
+Keyword(s): kbCRT kbVCkbbuglist kbfixlist
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling a program that uses the _inp and _outp instructions and links
+with the DLL version of the CRT, you will see one or more of the following
+errors:
+
+  test.obj : error LNK2001: unresolved external symbol __inp
+
+  test.obj : error LNK2001: unresolved external symbol __inpw
+
+  test.obj : error LNK2001: unresolved external symbol __inpd
+
+  test.obj : error LNK2001: unresolved external symbol __outp
+
+  test.obj : error LNK2001: unresolved external symbol __outpw
+
+  test.obj : error LNK2001: unresolved external symbol __outpd
+
+  test.exe : fatal error LNK1120: 6 unresolved externals
+
+CAUSE
+=====
+
+The _inp and _outp functions are not exported from the DLL versions of the C
+Run-time Library (CRT), and do not exist in those versions of the CRT. If you
+try to use these functions with the DLL version of the CRT, you will get LNK2001
+errors.
+
+RESOLUTION
+==========
+
+There are several ways to get around the LNK2001 errors:
+
+- Use a #pragma intrinsic instruction.
+
+- Turn on Instrinsic Optimizations.
+
+- Link with one of the static versions of the CRT.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+32-bit Edition, version 4.1.
+
+MORE INFORMATION
+================
+
+You can avoid the linker errors by using a #pragma intrinsic instruction that
+will replace the _inp and _outp function calls with their assembly equivalents.
+In each file that refers to the _inp or _outp instruction, add the following
+line:
+
+     #pragma intrinsic(_inp,_inpw,_inpd,_outp,_outpw,_outpd)
+
+A similar method that can be used to avoid the link errors is to turn on
+intrinsic function optimizations for all intrinsic functions. If you are using
+the Command Line compiler, adding the /Oi switch to the compile options will
+enable intrinsic function optimizations. To turn on this optimization within
+Developer Studio, perform the following steps:
+
+1. From the Build menu, choose the Settings option to display the Project
+  Settings dialog box.
+
+2. In the Settings For pane, select the Project that is getting the link errors.
+
+3. Choose the C/C++ tab.
+
+4. Select Optimizations for the Category.
+
+5. Choose Customize for the optimizations, then check the Generate Intrinsic
+  Functions optimization.
+
+An additional method to avoid the linker errors is to use the static version of
+the CRT because the _inp and _outp functions are implemented in this version of
+the CRT. For more information on determining which static library to use, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q140584 How to Link with the Correct C Run-Time (CRT) Library
+
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbCRT kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : 4.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

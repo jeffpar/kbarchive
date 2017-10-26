@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156186: XCLN: Shared Install of Microsoft Exchange NT Client with SMS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156186: XCLN: Shared Install of Microsoft Exchange NT Client with SMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156186/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156186/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156186/","publisher":null,"image":null,"headline":"Q156186: XCLN: Shared Install of Microsoft Exchange NT Client with SMS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156186-xcln-shared-install-of-microsoft-exchange-nt-client-with-sms">Q156186: XCLN: Shared Install of Microsoft Exchange NT Client with SMS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q156186</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Exchange</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">4.0</span><span class="p">;</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsetup</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">04</span><span class="p">-</span><span class="n">APR</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">client</span><span class="p">,</span> <span class="k">version</span> <span class="m">4.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">1.0</span><span class="p">,</span> <span class="m">1.1</span><span class="p">,</span> <span class="m">1.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">explains</span> <span class="n">how</span> <span class="k">to</span> <span class="k">set</span> <span class="n">up</span> <span class="n">a</span> <span class="n">shared</span> <span class="k">package</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span>
+<span class="n">Windows</span> <span class="n">NT</span> <span class="n">client</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="m">1.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">source</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">client</span> <span class="n">Setup</span>
+  <span class="n">files</span><span class="p">,</span> <span class="n">for</span> <span class="n">example</span> <span class="n">C</span><span class="p">:\</span><span class="n">XNTFlat</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">directory</span> <span class="n">called</span> <span class="n">Msapps</span> <span class="n">below</span> <span class="n">the</span> <span class="n">XNTFlat</span> <span class="n">directory</span><span class="p">,</span> <span class="n">for</span> <span class="n">example</span>
+  <span class="n">C</span><span class="p">:\</span><span class="n">XNTFlat</span><span class="p">\</span><span class="n">MSAPPS</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="nf">Run</span> <span class="n">SETUP</span> <span class="p">/</span><span class="n">A</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">client</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">client</span>
+  <span class="n">compact</span> <span class="n">disc</span> <span class="k">to</span> <span class="n">the</span> <span class="n">above</span> <span class="n">directories</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="k">From</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Administrator</span> <span class="n">program</span><span class="p">,</span> <span class="nf">run</span> <span class="n">Microsoft</span> <span class="n">Exchange</span>
+  <span class="n">Setup</span> <span class="n">Editor</span><span class="p">.</span> <span class="n">Point</span> <span class="n">the</span> <span class="n">Setup</span> <span class="n">Editor</span> <span class="k">to</span> <span class="n">C</span><span class="p">:\</span><span class="n">XNTFlat</span> <span class="n">directory</span><span class="p">.</span> <span class="n">Modify</span> <span class="n">whatever</span>
+  <span class="n">entries</span> <span class="n">necessary</span> <span class="n">for</span> <span class="n">your</span> <span class="n">installation</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">Remove</span> <span class="n">Personal</span> <span class="n">Folders</span> <span class="k">if</span> <span class="n">you</span> <span class="n">want</span> <span class="n">all</span> <span class="n">clients</span> <span class="k">to</span> <span class="n">store</span> <span class="n">their</span> <span class="n">mail</span> <span class="n">on</span>
+  <span class="n">the</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="k">To</span> <span class="n">perform</span> <span class="n">a</span> <span class="n">totally</span> <span class="n">unattended</span> <span class="n">workstation</span> <span class="n">setup</span><span class="p">,</span> <span class="n">edit</span> <span class="n">the</span> <span class="n">Setup</span><span class="p">.</span><span class="n">stf</span> <span class="n">file</span> <span class="k">in</span>
+  <span class="n">C</span><span class="p">:\</span><span class="n">XNTFlat</span> <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
+
+  <span class="n">Change</span> <span class="n">line</span> <span class="m">14</span> <span class="k">from</span><span class="p">:</span>
+
+     <span class="m">14</span>    <span class="n">Network</span>    <span class="n">AppMainDlg</span>    <span class="m">21</span> <span class="m">22</span> <span class="m">23</span> <span class="m">24</span> <span class="p">:</span> <span class="m">25</span>  <span class="m">382</span>  <span class="m">17</span> <span class="p">...</span>
+
+  <span class="k">to</span><span class="p">:</span>
+
+     <span class="m">14</span>    <span class="n">Network</span>    <span class="n">AppMainDlg</span>    <span class="m">24</span> <span class="p">:</span> <span class="m">25</span>  <span class="m">382</span>  <span class="m">17</span> <span class="p">...</span>
+
+  <span class="n">Line</span> <span class="m">14</span> <span class="n">tells</span> <span class="n">the</span> <span class="n">setup</span> <span class="n">program</span> <span class="n">which</span> <span class="k">options</span> <span class="k">to</span> <span class="n">present</span> <span class="k">to</span> <span class="n">the</span> <span class="n">user</span> <span class="n">when</span>
+  <span class="n">doing</span> <span class="n">a</span> <span class="n">network</span> <span class="n">install</span><span class="p">.</span> <span class="n">This</span> <span class="n">change</span> <span class="n">limits</span> <span class="n">the</span> <span class="n">installation</span> <span class="k">to</span> <span class="n">a</span> <span class="n">workstation</span>
+  <span class="n">install</span><span class="p">,</span> <span class="n">which</span> <span class="n">is</span> <span class="n">located</span> <span class="n">on</span> <span class="n">line</span> <span class="m">24.</span> <span class="n">Below</span> <span class="n">is</span> <span class="n">a</span> <span class="k">list</span> <span class="k">of</span> <span class="n">the</span> <span class="n">lines</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="n">Setup</span><span class="p">.</span><span class="n">stf</span> <span class="n">file</span> <span class="k">and</span> <span class="n">the</span> <span class="k">options</span> <span class="n">they</span> <span class="n">represent</span><span class="p">.</span>
+
+     <span class="m">21</span> <span class="p">-</span> <span class="n">Typical</span>
+     <span class="m">22</span> <span class="p">-</span> <span class="n">Custom</span>
+     <span class="m">23</span> <span class="p">-</span> <span class="n">Laptop</span>
+     <span class="m">24</span> <span class="p">-</span> <span class="n">Workstation</span>
+
+<span class="m">6.</span> <span class="n">Copy</span> <span class="n">the</span> <span class="n">Exwinnt</span><span class="p">.</span><span class="n">pdf</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">client</span> <span class="n">compact</span>
+  <span class="n">disc</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">directory</span> <span class="k">to</span> <span class="n">your</span> <span class="n">hard</span> <span class="n">disk</span> <span class="n">drive</span><span class="p">.</span> <span class="n">Edit</span> <span class="n">the</span> <span class="n">file</span> <span class="n">using</span>
+  <span class="n">Notepad</span> <span class="k">and</span> <span class="n">add</span> <span class="n">the</span> <span class="n">following</span> <span class="n">section</span> <span class="n">under</span> <span class="n">the</span> <span class="p">[</span><span class="n">Setup</span> <span class="k">Package</span> <span class="n">for</span> <span class="n">Sharing</span><span class="p">]</span>
+  <span class="n">section</span><span class="p">.</span>
+
+         <span class="p">[</span><span class="n">Program</span> <span class="n">Item</span> <span class="n">Properties</span> <span class="m">1</span><span class="p">]</span>
+         <span class="n">CommandLine</span><span class="p">=</span><span class="n">exchng32</span><span class="p">.</span><span class="n">exe</span>
+         <span class="n">Description</span><span class="p">=</span><span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">NT</span> <span class="n">Client</span>
+         <span class="n">ConfigurationScript</span><span class="p">=</span><span class="n">dosetup</span><span class="p">.</span><span class="n">exe</span> <span class="n">exchange</span> <span class="n">setup</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">Q1</span>
+         <span class="n">RegistryName</span><span class="p">=</span><span class="n">exchange</span>
+         <span class="n">DefaultINIFile</span><span class="p">=</span>
+         <span class="n">RunMinimized</span><span class="p">=</span><span class="nb">FALSE</span>
+         <span class="n">RunLocalCopyIfPresent</span><span class="p">=</span><span class="nb">FALSE</span>
+         <span class="n">DriveMode</span><span class="p">=</span><span class="n">ANY_DRIVE_LETTER</span>
+         <span class="n">SupportedPlatforms</span><span class="p">=</span><span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.1</span> <span class="p">(</span><span class="n">x86</span><span class="p">)</span>
+         <span class="n">SetupIcon</span><span class="p">=</span>
+         <span class="n">DisplayIconInProgGroup</span><span class="p">=</span><span class="nb">TRUE</span>
+
+<span class="m">7.</span> <span class="n">Save</span> <span class="n">this</span> <span class="n">file</span> <span class="k">and</span> <span class="n">use</span> <span class="n">it</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">shared</span> <span class="k">package</span><span class="p">.</span> <span class="n">When</span> <span class="n">creating</span> <span class="n">the</span>
+  <span class="k">package</span> <span class="n">you</span> <span class="n">will</span> <span class="n">still</span> <span class="n">have</span> <span class="k">to</span> <span class="n">designate</span> <span class="n">the</span> <span class="n">source</span> <span class="n">directory</span><span class="p">,</span> <span class="n">share</span> <span class="n">point</span>
+  <span class="k">and</span> <span class="n">change</span> <span class="n">the</span> <span class="n">icon</span><span class="p">.</span>
+
+<span class="m">8.</span> <span class="n">Create</span> <span class="n">the</span> <span class="n">Program</span> <span class="n">Group</span> <span class="k">and</span> <span class="n">Job</span> <span class="k">to</span> <span class="n">distribute</span> <span class="n">the</span> <span class="n">file</span><span class="p">.</span>
+
+  <span class="n">The</span> <span class="n">quiet</span> <span class="n">mode</span> <span class="n">install</span> <span class="n">used</span> <span class="k">in</span> <span class="n">this</span> <span class="k">package</span> <span class="n">definition</span> <span class="n">file</span> <span class="p">(</span><span class="n">PDF</span><span class="p">)</span> <span class="k">uses</span> <span class="n">the</span>
+  <span class="n">registry</span> <span class="n">key</span> <span class="n">below</span> <span class="n">for</span> <span class="n">the</span> <span class="n">user</span><span class="s1">'s name. If this is incorrect or somehow
+  different from the Microsoft Exchange mailbox, the user will have to open
+  Control Panel Mail and Fax to edit the profile. The registry key is:
+
+     HKEY_CURRENT_USER\Software\Microsoft\MS Setup(ACME)\User Info
+
+  The above registry key has two values: DefName and DefCompany, for the user
+  name and company name, respectively.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbSMSSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbSMS100 kbSMS110 kbSMS120 kbExchange400NT
+Version           : WINDOWS:4.0; winnt:1.0,1.1,1.2
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

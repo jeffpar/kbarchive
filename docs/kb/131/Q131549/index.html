@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131549: INFO: Use Place-Holder Commas in Calls with Missing Parameters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131549: INFO: Use Place-Holder Commas in Calls with Missing Parameters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131549/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131549/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131549/","publisher":null,"image":null,"headline":"Q131549: INFO: Use Place-Holder Commas in Calls with Missing Parameters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131549-info-use-place-holder-commas-in-calls-with-missing-parameters">Q131549: INFO: Use Place-Holder Commas in Calls with Missing Parameters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131549
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbvfp300 kbvfp500 kbvfp600
+Last Modified: 29-DEC-1999
+
+3.00
+WINDOWS
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to pass parameters to functions, procedures,
+or methods by using place-holder commas for empty values that will take a
+default value. When you pass nothing, the function receives false (.F.) as the
+value for that argument.
+
+This Visual FoxPro behavior is different from the behavior of FoxPro version 2.6.
+In FoxPro version 2.6, you could pass fewer arguments than total number of
+parameters only if the blank arguments came after the valid (full) arguments.
+
+MORE INFORMATION
+================
+
+In Visual FoxPro version 3.0, you can pass fewer arguments than are requested by
+a function, method, or procedure by using place-holder commas when you call it.
+
+Code Sample
+-----------
+
+To demonstrate passing blank parameters, copy the following code into a program
+file called FOXTEST.PRG and run it:
+
+  *** BEGINNING OF SAMPLE CODE ***
+
+  *****************************************************************
+  *                         FOXTEST.PRG                           *
+  *   Demonstrates How Visual FoxPro Allows Passing Blank Values  *
+  *         For Parameters Anywhere In the Parameter List         *
+  *                                                               *
+  *****************************************************************
+
+  SomeDate = mydate(3,4,95) &amp;&amp; Pass values for all parameters
+  WAIT WINDOW SomeDate
+
+  SomeDate = mydate(4,,94) &amp;&amp; Pass blank values for 2nd parameter
+  WAIT WINDOW SomeDate
+
+  SomeDate = mydate(,4,)   &amp;&amp; Pass blank values for 1st and 3rd
+  WAIT WINDOW SomeDate     &amp;&amp; parameters
+
+  SomeDate = mydate(,,94)  &amp;&amp; Pass blank values for 1st and 2nd
+  WAIT WINDOW SomeDate     &amp;&amp; parameters
+
+  SomeDate = mydate(4,,)   &amp;&amp; Pass blank values for 2nd and 3rd
+  WAIT WINDOW SomeDate     &amp;&amp; parameters (This is the only way FoxPro
+
+  &amp;&amp; 2.x allowed blank values to be passed, &amp;&amp; at the end of
+  the parameter list only.)
+
+  PROCEDURE MyDate
+  PARAMETERS Month,Day,Year
+
+  * Give each variable a default value for the missing parameters.
+
+  DO CASE
+
+  CASE TYPE("Day")="L" lcday="01" CASE TYPE("Day")="N" lcday=ALLTRIM(STR(DAY))
+
+  ENDCASE
+
+  DO CASE
+
+  CASE TYPE("Year")="L" lcyear="95" CASE TYPE("Year")="N"
+  lcyear=ALLTRIM(STR(Year))
+
+  ENDCASE
+
+  DO CASE
+
+  CASE TYPE("Month")="L" lcmonth="01" CASE TYPE("Month")="N"
+  lcmonth=ALLTRIM(STR(Month))
+
+  ENDCASE
+
+  RETURN lcmonth+"/"+lcday+"/"+lcyear
+
+  *** End Of Sample Code ***
+
+REFERENCES
+==========
+
+For more information about passing parameters in a parameter list, refer to the
+Visual FoxPro Help file, "Parameters Command" topic.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

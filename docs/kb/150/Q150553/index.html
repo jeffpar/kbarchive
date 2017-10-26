@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150553: Weitekp9 Video Driver Collides with Media Vision Sound Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150553: Weitekp9 Video Driver Collides with Media Vision Sound Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150553/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150553/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150553/","publisher":null,"image":null,"headline":"Q150553: Weitekp9 Video Driver Collides with Media Vision Sound Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150553-weitekp9-video-driver-collides-with-media-vision-sound-driver">Q150553: Weitekp9 Video Driver Collides with Media Vision Sound Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150553
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to use the Media Vision Proaudio Spectrum 16 driver (Mvaudio.sys)
+in conjunction with any of these Diamond Viper video cards:
+
+  Diamond Viper PCI
+  Diamond Viper PRO PCI
+  Diamond Viper PRO VLB
+  Diamond Viper VLB
+  Diamond Viper SE PCI
+  Diamond Viper SE VLB
+
+you may receive a combination of the following event messages (the messages
+received depends on which driver was loaded first):
+
+  Event id: 22
+  source: Weitekp9
+  type: error
+
+     Description: A conflict has been detected between two drivers which
+     claimed two overlapping Io port regions. Driver weitekp9, with device
+     &lt;\Device\Video1.Translated&gt;, claimed an IO port range with starting
+     address in data address 0x28 and 0x2c, and length in data address
+     0x30.
+
+     0000: 000c0000 005e0003 00000000 c0040016
+     0010: 00000000 00000000 00000000 00000000
+     0020: 00000000 00000000 0000f000 00000000
+     0030: 00000c04
+
+  Eventid: 22
+  source: Weitekp9
+  type: error
+
+     Description: A conflict has been detected between two drivers which
+     claimed two overlapping Io port regions. Driver mvaudio, with device
+     &lt;\Device\PASWaveOut0.Translated&gt;, claimed an IO port range with
+     starting address in data address 0x28 and 0x2c, and length in data
+     address 0x30.
+
+     0000: 000c0000 005e0003 00000000 c0040016
+     0010: 00000000 00000000 00000000 00000000
+     0020: 00000000 00000000 0000f388 00000000
+     0030: 00000004
+
+  Event id: 22
+  source: mvaudio
+  type: error
+
+     Description: The description for Event ID (22) in Source ( mvaudio )
+     could not be found. It contains the following insertion string(s): ,
+     weitekp9, \Device\Video0.Translated.
+     
+     0000: 000c0000 005c0003 00000000 c0040016
+     0010: 00000000 00000000 00000000 00000000
+     0020: 00000000 00000000 0000f000 00000000
+     0030: 00001000
+
+  Event id: 22
+  source: mvaudio
+  type: error
+
+     Description: The description for Event ID (22) in Source ( mvaudio )
+     could not be found. It contains the following insertion string(s): ,
+     mvaudio, \Device\PASWaveOut0.Translated.
+     
+     0000: 000c0000 005c0003 00000000 c0040016
+     0010: 00000000 00000000 00000000 00000000
+     0020: 00000000 00000000 0000f388 00000000
+     0030: 00000004
+
+  Event id: 7000
+  source: Service control manager
+  type: error
+
+     Description: The mvaudio service failed to start due to the following
+     error: The parameter is incorrect.
+
+CAUSE
+=====
+
+All of the Diamond Viper video cards listed above use the Weitekp9 video chip
+set. The Weitekp9.sys and the Mvaudio.sys drivers try to use overlapping I/O
+resources.
+
+RESOLUTION
+==========
+
+Replace the Weitekp9-based video card with another video card that is on the
+Hardware Compatibility List (HCL) but doesn't use the Weitekp9 chip set.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.5 and
+3.51. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187710: IIS 4.0 Installation Error: CoGetClassObject, 0x80080005 Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187710: IIS 4.0 Installation Error: CoGetClassObject, 0x80080005 Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187710/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187710/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187710/","publisher":null,"image":null,"headline":"Q187710: IIS 4.0 Installation Error: CoGetClassObject, 0x80080005 Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187710-iis-40-installation-error-cogetclassobject-0x80080005-server">Q187710: IIS 4.0 Installation Error: CoGetClassObject, 0x80080005 Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187710
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT version 4.0 Option Pack 
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Setup program for the Windows NT Option Pack, you may receive
+the following error message:
+
+  CoGetClassObject, 0x80080005 Server Execution Failed.
+
+Also, the event viewer may contain these logs:
+
+  Service Control Manager. Event ID 7003
+  The IIS Admin Service depends on the following non-existent service:
+  Protected Storage
+
+  DCOM Event ID 10005
+  DCOM got error "The Dependency Service does not exist or has been
+  marked for deletion" Attempting to start the service IIS Admin with
+  arguments " " in order to run the server:
+  (a9e69610-b80d-11d0-b9b9-00a0c922e750)
+
+CAUSE
+=====
+
+This problem can occur when the Protected Storage, RPC Configuration, or Windows
+NT LM Security Support Provider is not started, is not installed, or has become
+corrupt.
+
+RESOLUTION
+==========
+
+To resolve the problem, use one of the following methods:
+
+- Start the service that is not started.
+
+  1. In Control Panel, click Services.
+
+  2. Start the Remote Procedure Call (RPC) service.
+
+-or-
+
+- If you cannot start the RPC Service through Control Panel, install and add
+  the RPC Configuration service.
+
+  1. In Control Panel, click Network, and then click Services.
+
+  2. In Services, add the RPC Configuration service.
+
+     NOTE: You will need to use the Windows NT 4.0 compact disc to perform this
+     step.
+
+  3. Reapply the current or latest service pack.
+
+-or-
+
+- Remove and reinstall the corrupted RPC Configuration service.
+
+CAUTION: The Protected Storage service is installed by Internet Explorer 4.01.
+Before reinstalling Internet Explorer 4.01, make the necessary backups to
+services that are dependent on Internet Explorer, such as Internet Information
+Server (IIS), Proxy Server, and Site Server. After reinstalling Internet
+Explorer, reinstall the services that are dependent on Internet Explorer.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q187870 : How to Remove and Reinstall the Windows NT 4.0 Option Pack
+
+Additional query words: IE
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbiisSearch kbiis400 kbWinNT400OptionPack
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

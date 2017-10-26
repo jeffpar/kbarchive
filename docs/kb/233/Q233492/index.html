@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q233492: The Major Differences Between NFS Versions 2 and 3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q233492: The Major Differences Between NFS Versions 2 and 3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/233/Q233492/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/233/Q233492/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/233/Q233492/","publisher":null,"image":null,"headline":"Q233492: The Major Differences Between NFS Versions 2 and 3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q233492-the-major-differences-between-nfs-versions-2-and-3">Q233492: The Major Differences Between NFS Versions 2 and 3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q233492
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:2000; winnt:4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 4.0 SP3, 4.0 SP4, used with:
+   - Microsoft Windows Services for UNIX, version 2.0 
+- Microsoft Windows 2000 Professional, used with:
+   - Microsoft Windows Services for UNIX, version 2.0 
+- Microsoft Windows 2000 Server, used with:
+   - Microsoft Windows Services for UNIX, version 2.0 
+- Microsoft Windows 2000 Advanced Server, used with:
+   - Microsoft Windows Services for UNIX, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This articles discusses some major differences between Network File System (NFS)
+version 2 and version 3.
+
+NFS Version 2 is documented in RFC 1094 and was published in March 1989. NFS
+Version 3 is documented in RFC 1813 and was published in June 1995.
+
+MORE INFORMATION
+================
+
+NOTE: Services for Unix 2.0 supports both NFS versions 2 and 3.
+
+The major differences between the NFS versions 2 and 3 are:
+
+- Version 2 of the NFS protocol limited file offsets to a 32-bit quantity,
+  which limited the size of files accessible by clients to 4.2 GB. For users
+  who regularly gain access to larger files, this was a severe limitation. NFS
+  version 3 extended the file offsets and a number of other fields to 64-bits.
+
+- NFS Version 2 limited the data transfer size to 8 KB. No single read or write
+  request could exceed 8 KB. This limits performance on high-bandwidth networks
+  because it artificially increases the number of NFS requests to transfer a
+  given amount of data. NFS version 3 removed that limitation and allows the
+  client and server to negotiate a maximum transfer size.
+
+- Version 2 NFS servers must commit data written by a client to stable storage
+  (a disk or NVRAM) before responding affirmatively to the client.
+
+- NFS version 3 provides a new COMMIT operation that allows a client to perform
+  unstable writes to a server followed by a COMMIT request. The server is
+  required to verify that client data is on stable storage only when it
+  receives the COMMIT operation. A mechanism is provided that allows the client
+  to detect server loss of uncommitted data and recover.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : WINDOWS:2000; winnt:4.0 SP3,4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

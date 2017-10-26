@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139524: How to Create a Builder to Add Tables to the Data Environment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139524: How to Create a Builder to Add Tables to the Data Environment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139524/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139524/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139524/","publisher":null,"image":null,"headline":"Q139524: How to Create a Builder to Add Tables to the Data Environment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139524-how-to-create-a-builder-to-add-tables-to-the-data-environment">Q139524: How to Create a Builder to Add Tables to the Data Environment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139524
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Often several tables must be added to the data environment of a form. It is
+possible to create a builder that allows you to select and add multiple tables
+at one time.
+
+MORE INFORMATION
+================
+
+The following steps create a builder that allows the developer to select a
+single .dbc file. Then a form appears containing two multiple-select list boxes.
+The first list contains the names of the tables in the .dbc file, and the second
+list contains the names of the views in the .dbc file.
+
+When you click the Add to DE button, each table selected is added to the data
+environment of the form.
+
+Steps to Create Builder
+-----------------------
+
+1. Create a new form.
+
+2. Add the following new properties to the form:
+
+     dbcName
+     dbcTables[1]
+     dbcViews[1]
+     gaDataEnvironment[1]
+
+3. Add the following code to the Init event of the form:
+
+     *   Obtain an object reference to the data environment of the form in
+     *   the Forms Designer
+     =ASELOBJ(ThisForm.gaDataEnvironment,2)
+
+     *   Ask the user which .dbc file should be used, cancel builder if none
+     ThisForm.dbcname = GETFILE("DBC", "Select Database", "Open")
+     IF EMPTY(thisForm.dbcName)
+        RETURN .F.
+     ENDIF
+
+     *  Populate arrays with the names of tables and views
+     OPEN DATABASE (thisForm.DBCName)
+     lnTables=ADBOBJECTS(thisform.dbcTables,"TABLE")
+     ThisForm.LstTables.Requery
+     IF lnTables = 0
+        thisform.dbcTables(1,1) = "No Tables found"
+        thisform.LstTables.Enabled = .F.
+     ENDIF
+     lnViews=ADBOBJECTS(thisform.dbcViews,"VIEW")
+     ThisForm.LstViews.Requery
+      IF lnViews = 0
+        thisform.dbcViews(1,1) = "No Views found"
+        thisform.LstViews.Enabled = .F.
+     ENDIF
+
+4. Add two list boxes to the form. Set the following properties for the first
+  list box:
+
+     MultiSelect   = .T.
+     Name          = LstTables
+     RowSourceType = 5 (Array)
+     RowSource     = Thisform.dbcTables
+
+5. Set the following properties for the second list box.
+
+     MultiSelect   = .T.
+     Name          = LstViews
+     RowSourceType = 5 (Array)
+     RowSource     = Thisform.dbcViews
+
+6. Add a command button to the form. Change the caption to Add to DE. Place the
+  following code in its Click event:
+
+     FOR iCnt = 1 TO THISForm.LstTables.ListCount
+     IF ThisForm.LstTables.Selected(iCnt)
+        lcName = PROPER(ThisForm.LstTables.ListItem(iCnt))
+        IF TYPE('ThisForm.aDataEnvironment(1).&amp;lcname') != 'O'
+           ThisForm.gaDataEnvironment(1).AddObject(lcname, "Cursor")
+           WITH ThisForm.gaDataEnvironment(1).&amp;lcname.
+              .Alias = lcname
+              .CursorSource = lcname
+              .Database = ThisForm.dbcName
+           ENDWITH
+        ENDIF
+     ENDIF
+     ENDFOR
+     FOR iCnt = 1 TO THISForm.LstViews.ListCount
+     IF ThisForm.LstViews.Selected(iCnt)
+        lcName = PROPER(ThisForm.LstViews.ListItem(iCnt))
+        IF TYPE('ThisForm.aDataEnvironment(1).&amp;lcname') != 'O'
+           ThisForm.gaDataEnvironment(1).AddObject(lcname, "Cursor")
+           WITH ThisForm.gaDataEnvironment(1).&amp;lcname.
+              .Alias = lcname
+              .CursorSource = lcname
+              .Database = ThisForm.dbcName
+           ENDWITH
+        ENDIF
+     ENDIF
+     ENDFOR
+     ThisForm.Release
+
+7. Add a Cancel command button that contains the following line of code in its
+  Click event:
+
+     ThisForm.Release
+
+8. Save the form as Deblder.
+
+9. Register the builder by using one of the methods described in the Visual
+  FoxPro Help file or by adding a record to the Builder.dbf file.
+
+
+Because the builder is based on a form, it can easily be customized. You may want
+your builder to include several common sets of data.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

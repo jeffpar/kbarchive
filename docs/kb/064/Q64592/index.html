@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q64592: &quot;Overflow&quot; from &quot;&amp;H nn&quot; or &quot;&amp;O nn&quot; with Illegal Embedded Space | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q64592: &quot;Overflow&quot; from &quot;&amp;H nn&quot; or &quot;&amp;O nn&quot; with Illegal Embedded Space" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/064/Q64592/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/064/Q64592/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/064/Q64592/","publisher":null,"image":null,"headline":"Q64592: &quot;Overflow&quot; from &quot;&amp;H nn&quot; or &quot;&amp;O nn&quot; with Illegal Embedded Space","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q64592-overflow-from-h-nn-or-o-nn-with-illegal-embedded-space">Q64592: "Overflow" from "&amp;H nn" or "&amp;O nn" with Illegal Embedded Space</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q64592
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 10-AUG-1990
+
+The ampersand character, when used to signify Hexadecimal (&amp;H) or
+Octal (&amp;O) values, can give an "Overflow" error if a space is embedded
+in the number.
+
+This information applies to QuickBASIC versions 4.00, 4.00b, and 4.50,
+to Microsoft BASIC Compiler versions 6.00 and 6.00b, and to Microsoft
+BASIC Professional Development System (PDS) versions 7.00 and 7.10 for
+MS-DOS and MS OS/2.
+
+The following code examples cause an "Overflow" error (in the QB.EXE
+or QBX.EXE environment or in the BC.EXE compiler):
+
+   AnyVarName = &amp;H 80
+
+   AnyVarName = &amp; 80
+
+   AnyVarName = &amp;O 80
+
+   PRINT &amp;H 80
+
+The QBX.EXE environment immediately displays this error message
+because of the syntax checker, while the QB.EXE environment only
+catches the error upon execution.
+
+QuickBASIC compiler versions 3.00 and earlier ignore this syntax error
+and interpret the faulty information as a zero (0).
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q314762: MSN Broadband Customer Unable to Complete CPE Setup after Using | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q314762: MSN Broadband Customer Unable to Complete CPE Setup after Using" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/314/Q314762/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/314/Q314762/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/314/Q314762/","publisher":null,"image":null,"headline":"Q314762: MSN Broadband Customer Unable to Complete CPE Setup after Using","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q314762-msn-broadband-customer-unable-to-complete-cpe-setup-after-using">Q314762: MSN Broadband Customer Unable to Complete CPE Setup after Using</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q314762
+Product(s): The Microsoft Network
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network Version 7.0 
+- the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you previously used MSN Explorer with a dial-up service and you are now
+trying to install a DSL connection, you may be unable to complete the setup of
+CPE. After several minutes of "Checking DSL Modem", you may be given a choice to
+"Cancel" or "Retry". If you choose to "Retry", you will experience a repeating
+loop.
+
+CAUSE
+=====
+
+The code used in the installation program is interacting with wininet, the
+object that controls the Online/Offline status in Windows XP.
+
+RESOLUTION
+==========
+
+This issue will be resolved in the next release of the installation CD. Until
+that time, please use the following steps during installation.
+
+To install MSN Broadband
+------------------------
+
+1. Launch the MSN Broadband setup as detailed in the Welcome Kit.
+
+2. When the status changes to Checking DSL Modem, launch Internet Explorer.
+  Note: Do not launch MSN Explorer at this time.
+
+3. When prompted to Connect or Stay Offline, choose Connect. When Internet
+  Explorer launches, minimize it.
+
+4. Continue with Setup.
+
+Additional query words: kbimu; MSN Broadband Setup
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWinSearch _IKkbbogus kbOSWinXP kbMSNSearch kbMSNExplorer kbOSWinXPSearch kbMSN700
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

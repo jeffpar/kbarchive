@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169620: Err Msg: Accessing CD-ROM Drive: D:\ Is Not Accessible | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169620: Err Msg: Accessing CD-ROM Drive: D:\ Is Not Accessible" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169620/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169620/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169620/","publisher":null,"image":null,"headline":"Q169620: Err Msg: Accessing CD-ROM Drive: D:\\ Is Not Accessible","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169620-err-msg-accessing-cd-rom-drive-d-is-not-accessible">Q169620: Err Msg: Accessing CD-ROM Drive: D:\ Is Not Accessible</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169620
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbhw kbsetup kbHardware
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT is installed using WINNT /B on a computer using either EIDE
+controllers and IDE drives, or a SCSI controller and IDE or SCSI drives, without
+an attached IDE CD-ROM drive. At a later time, an ATAPI 1.2- compliant IDE
+CD-ROM drive is attached to the system, and Windows NT recognizes the CD-ROM
+drive in both Disk Administrator and Windows Explorer with an assigned drive
+letter. When the user tries to access the CD-ROM drive using Windows Explorer,
+the user receives one of two error messages:
+
+  D:\ is not accessible.
+
+  The volume does not contain a recognized file system. Please make sure that
+  all required file system drivers are loaded and that the volume is not
+  corrupt.
+
+-or-
+
+From a Windows NT MS-DOS command prompt:
+
+  The System cannot find the drive specified.
+
+
+CAUSE
+=====
+
+This problem occurs because the CD-ROM file system (CDFS) registry entries are
+not properly initialized during Setup when a CD-ROM drive is not attached.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Go to
+
+     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\Root
+     \Legacy_Cdrom\0000.
+
+3. On the Registry menu, click Save key and call it 000.reg.
+
+4. Go to
+
+     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum
+        \Root\Legacy_Cdfs\0000.
+
+5. Click the 0000 key, and then click Permissions on the Security menu.
+
+6. Change the 0000 key permissions to Everyone : Full Control, and then click
+  OK.
+
+7. On the Registry menu, click Restore, and restore the 000.reg key saved from
+  step 3 on top of the current 0000 key under Legacy_cdfs.
+
+8. Under the restored 000 key, modify the following two entries:
+
+  a. Change DeviceDesc:REG_SZ:Cdrom Device to Cdfs Device.
+
+  b. Change Service:REG_SZ:Cdrom to Cdfs.
+
+9. Exit Regedt32.exe and then restart Windows NT. The CD-ROM drive should now
+  work normally.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+======================================================================
+Keywords          : kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

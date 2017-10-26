@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58987: Pointer Arithmetic Wraps Around Segment Ends | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58987: Pointer Arithmetic Wraps Around Segment Ends" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58987/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58987/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58987/","publisher":null,"image":null,"headline":"Q58987: Pointer Arithmetic Wraps Around Segment Ends","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58987-pointer-arithmetic-wraps-around-segment-ends">Q58987: Pointer Arithmetic Wraps Around Segment Ends</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58987
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 1-MAR-1990
+
+When you increment or decrement a pointer beyond a segment boundary,
+the offset of the pointer will wrap around the end. For example, if
+the pointer is sitting at FFFF and you increment it by 1 (one), the
+resulting value of the offset is 0000. This wraparound behavior is
+expected behavior in all memory models except huge. The example below
+demonstrates the "hidden" wraparound.
+
+The C language permits writing beyond array boundaries and heap
+allocations. Consequently, C compilers do not generate warning or
+error messages if an index or pointer goes out of bounds. It is up to
+the programmer to monitor indices and pointers.
+
+If you have an array that is larger than 64K, use the huge keyword or
+compile in the huge memory model. Pointer arithmetic for huge data is
+performed on the full 32 bits of segment and offset address. For
+complete information on huge model programming, refer to Chapter 6 in
+the "Microsoft C Optimizing Compiler User's Guide."
+
+Sample Code:
+
+/* wrap.c */
+#include &lt;stdio.h&gt;
+#include &lt;dos.h&gt;
+#include &lt;malloc.h&gt;
+
+void main (void)
+{
+ char *ptr;
+
+ ptr = (char*) malloc (100);
+ printf ("\nSegment is %u, offset is %u\n", FP_SEG(ptr), FP_OFF(ptr));
+
+ FP_OFF(ptr) = 0x0000;
+ printf ("\nSegment is %u, offset is %u\n", FP_SEG(ptr), FP_OFF(ptr));
+ ptr--;
+ printf ("\nSegment is %u, offset is %u\n", FP_SEG(ptr), FP_OFF(ptr));
+
+ FP_OFF(ptr) = 0xFFFF;
+ printf ("\nSegment is %u, offset is %u\n", FP_SEG(ptr), FP_OFF(ptr));
+ ptr++;
+ printf ("\nSegment is %u, offset is %u\n", FP_SEG(ptr), FP_OFF(ptr));
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

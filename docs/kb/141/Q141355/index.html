@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141355: FIX: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141355: FIX: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141355/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141355/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141355/","publisher":null,"image":null,"headline":"Q141355: FIX: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141355-fix-copypaste-causes-gp-fault-wworksheet-created-by-copy-to">Q141355: FIX: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141355
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A general protection (GP) fault may occur when you try to paste a range of cells
+copied from a worksheet that you originally created from a table in Visual
+FoxPro. The error states:
+
+  This program has performed an illegal operation and will be shut down. If the
+  problem persists, contact the program vendor.
+
+The details state:
+
+  EXCEL caused an invalid page fault in module EXCEL.EXE at 01737:5014a2f8.
+
+CAUSE
+=====
+
+This error occurs when the following conditions exist:
+
+- You created a Microsoft Excel version 5.0 .xls file.
+
+- You are using Microsoft Excel version 7.0 to edit the file.
+
+WORKAROUND
+==========
+
+There are two workarounds for this problem.
+
+Method 1
+--------
+
+To create the .xls file in Visual FoxPro, use the COPY TO command in the
+following form:
+
+       COPY TO filename TYPE XLS
+
+rather than:
+
+       COPY TO filename TYPE XL5
+
+Method 2
+--------
+
+After using the COPY TO command with the TYPE XL5 clause to create a Microsoft
+Excel worksheet, use only Microsoft Excel version 5.0 to open the resulting
+worksheet.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Microsoft Excel version 7.0 for Windows was not available when Visual FoxPro for
+Windows was released.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open or switch to Microsoft Visual FoxPro.
+
+2. Open (with the USE command) the Customer table from \Vfp\Samples\Data.
+
+3. In the Command window, enter the following line of code:
+
+     COPY TO C:\TEST.XLS TYPE XL5
+
+4. Start Microsoft Excel version 7. Then locate and open Test.xls.
+
+5. Select some range of cells (can be one).
+
+6. On the Edit menu, click Copy. Then on the File menu, click New.
+
+7. Click the General tab, select Workbook, and click OK.
+
+8. On the Edit menu, click Paste. At this point, the error occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

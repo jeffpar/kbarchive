@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247148: XADM: Slow Response When Searching on Custom Attributes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247148: XADM: Slow Response When Searching on Custom Attributes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247148/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247148/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247148/","publisher":null,"image":null,"headline":"Q247148: XADM: Slow Response When Searching on Custom Attributes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247148-xadm-slow-response-when-searching-on-custom-attributes">Q247148: XADM: Slow Response When Searching on Custom Attributes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247148
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55kbfaq
+Last Modified: 19-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you perform a search, either by using the Exchange Server Administrator
+program or by clicking Find on the Tools menu of the Address Book in Microsoft
+Outlook, searches against custom attributes may be very slow. These searches may
+be especially slow in large organizations when you search against the global
+address list.
+
+CAUSE
+=====
+
+This issue can occur because custom attributes are not indexed in the Exchange
+Server directory by default, which causes a search for custom attributes to run
+very slowly compared to a search against built-in searchable attributes.
+
+RESOLUTION
+==========
+
+To resolve this issue, index the custom attribute that you want to search
+against by using the Exchange Server Administrator program in raw mode:
+
+WARNING: Using the raw mode of the Exchange Server Administrator program (admin
+/r) incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at your own risk.
+
+1. Start the Microsoft Exchange Server Administrator program in raw mode by
+  typing the following at a command prompt:
+
+  "c:\exchsrvr\bin\admin /r" (without the quotation marks)
+
+2. On the View menu, click Raw Directory. This adds the Schema container in the
+  left pane.
+
+3. Double-click the Schema object, and then press the F5 key to refresh the
+  display.
+
+4. Find the custom attribute in the list, and then open the custom attribute's
+  properties, either by double-clicking the attribute or by clicking the
+  attribute and then clicking Properties on the File menu.
+
+5. When a message box is displayed, click Yes to view the raw properties of the
+  object.
+
+6. From the "Object attributes" list, click the Search-Flags attribute.
+
+7. In the "Edit value" box, type a value of either "1" (without the quotation
+  marks) or "2" (without the quotation marks) (as applicable), and then click
+  Set. If you set the value to 1, the attribute is indexed, which makes the
+  attribute more readily available to a query and therefore much faster to
+  query against. If you set the value to 2, the attribute is indexed and made
+  available for use in Ambiguous Name Resolution (ANR). For a detailed
+  explanation of ANR, refer to the "More Information" section of this article.
+
+8. Click OK to close the properties.
+
+MORE INFORMATION
+================
+
+The Search-Flags object attribute can be set to one of the following values:
+
+- 0 (No index)
+
+- 1 (Index)
+
+- 2 (ANR and index)
+
+Explanation of Ambiguous Name Resolution
+----------------------------------------
+
+ANR is an efficient search algorithm that is associated with Lightweight
+Directory Access Protocol (LDAP) clients that allows for objects to be bound
+without complex search filters. ANR is useful when you want to locate objects
+and attributes that have full names that you do not know. In this case, you can
+present a search for partial matches. For example, in a situation in which the
+requesting client knows a building name but not the associated number for the
+building, a client can query on just the building name. A full list of all of
+the buildings that have that building name are displayed, and the client can
+choose the appropriate building name and number at that point. For example, the
+client may see a list of the following buildings: Campus1, Campus2, and
+Campus3.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q151198 XADM: How to Set Up a Search for a Custom Attribute
+
+  Q146024 XCLN: Ambiguous Name Resolution Methods
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbfaq
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Hardware          : ALPHA MIPS PPC x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

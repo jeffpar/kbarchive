@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96686: 3Com 3Server &quot;NO OS/2&quot; Error Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96686: 3Com 3Server &quot;NO OS/2&quot; Error Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96686/","publisher":null,"image":null,"headline":"Q96686: 3Com 3Server &quot;NO OS/2&quot; Error Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96686-3com-3server-no-os2-error-message">Q96686: 3Com 3Server "NO OS/2" Error Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96686
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SYMPTOMS
+========
+
+When booting a 3Com 3Server, the LCD displays "NO OS/2".
+
+CAUSE
+=====
+
+A possible reason for this error is that the settings are not being read
+correctly from CMOS. According to the 3S500 "Technical Reference":
+
+  If the initial SETUP display does not reflect what you believe to be the
+  actual configuration, you can run the program in a way that allows you to
+  change the configuration values.
+
+CAUTION: Do not use SETUP to change configuration values unless you have specific
+information on which to base these values. If you are uncertain about the values
+in the SETUP display, check with your network supplier before altering the
+configuration.
+
+Another possible cause of the error is that the boot sector has an error. The
+procedure to follow in this instance is to repartition and reformat the drive
+with 3FDISK from the 3Server Utility disk.
+
+RESOLUTION
+==========
+
+1. Establish a 3Com connection.
+
+2. Type "setup/f" (without the quotation marks) at the active-console prompt
+  after placing the 3Server Utility disk in drive A, as follows:
+
+        a: setup /f
+
+  You will get a CMOS display. Press Y or N or ENTER at the prompt to verify
+  settings. It may not be necessary to actually change any settings, but you
+  may want to simply verify that the settings are correct.
+
+3. Press ENTER to exit SETUP and restart the server after checking the servers'
+  MODE and BOOT switch settings. If, after running SETUP, the LCD displays a
+  configuration error, check the 3Server "Technical Reference" manual for
+  possible corrective actions.
+
+Additional query words: 2.10 3SERVER 3FDISK
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

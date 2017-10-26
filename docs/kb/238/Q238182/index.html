@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238182: BUG: GET on a Pinned and Labeled File Gets Wrong Version | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238182: BUG: GET on a Pinned and Labeled File Gets Wrong Version" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238182/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238182/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238182/","publisher":null,"image":null,"headline":"Q238182: BUG: GET on a Pinned and Labeled File Gets Wrong Version","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238182-bug-get-on-a-pinned-and-labeled-file-gets-wrong-version">Q238182: BUG: GET on a Pinned and Labeled File Gets Wrong Version</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238182
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbSSafe500bug kbSSafe600bug kbDSupport kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a file was pinned when a label was applied to its parent project, and you GET
+the file at that label after it has been unpinned, you will not get the pinned
+version.
+
+RESOLUTION
+==========
+
+If you GET the parent project at the label, the correct version of the file is
+retrieved.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+1. Create a new project. (for example, $/myproj).
+
+2. Set a working folder for the project. (for example, C:\Myproj)
+
+3. Add a file to the project. (for example, Myfile.txt)
+
+4. Check out, modify, and check in the Myfile.txt so that there are two
+  versions.
+
+5. Pin Myfile.txt at version one.
+
+6. Select the $/myproj project.
+
+7. Label $/myproj with the label "test".
+
+8. Unpin Myfile.txt
+
+9. Show the history of Myfile.txt and select the version that displays the label
+
+10. Get the labeled version.
+
+Note that you will get a copy of version two of the file, where you might have
+expected version one, which was the the version it was pinned to when the label
+was applied.
+If you perform a GET on the same label from the command line:
+
+     ss get $/myproj/myfile.txt -VLtest
+
+- If the database has been updated to the Visual SourceSafe 6.0 format, you
+  will see the behavior described in the SYMPTOMS section.
+
+- If the database has not been updated to the Visual SourceSafe 6.0 format,
+  version one will be retrieved.
+
+REFERENCES
+==========
+
+Additional information can be found in the Visual SourceSafe product
+documentation by searching for these titles:
+
+-pin, how-to
+-get latest version command
+
+Additional query words: pin unpin
+
+======================================================================
+Keywords          : kbSSafe500bug kbSSafe600bug kbDSupport kbBug kbISS 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

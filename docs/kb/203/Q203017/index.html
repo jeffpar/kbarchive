@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q203017: PRB: &quot;Only one database connection is supported at one time&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q203017: PRB: &quot;Only one database connection is supported at one time&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/203/Q203017/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/203/Q203017/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/203/Q203017/","publisher":null,"image":null,"headline":"Q203017: PRB: &quot;Only one database connection is supported at one time&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q203017-prb-only-one-database-connection-is-supported-at-one-time">Q203017: PRB: "Only one database connection is supported at one time"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q203017
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbSSafe400 kbSSafe500 kbSSafe600 kbVBp _IK kbGrpDSSSafe
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When saving or opening a Visual Basic Group file (.vbg) that contains two or
+more Visual Basic projects (.vbp) that are under source control, you receive the
+following message even though all Visual Basic projects are in the same Visual
+SourceSafe database:
+
+  "Only one database connection at a time is supported."
+
+The following error message appears:
+
+  "The database is unavailable. Would you like to disable source control
+  integration?"
+
+CAUSE
+=====
+
+There are different SCC_Aux_Path values in the Mssccprj.scc file for the
+different .vbp's.
+
+RESOLUTION
+==========
+
+This resolution is valid only when all Visual Basic projects are actually in the
+same SourceSafe database and this message still appears.
+
+Manually edit the SCC_Aux_Path setting in the Mssccprj.scc file. This file is
+located in the same folder as the .vbp file. Make sure that the identical
+SCC_Aux_Path setting appears in all the Visual Basic projects' Mssccprj.scc, and
+that this is a valid path to the desired Srcsafe.ini file.
+
+The Mssccprj.scc is read only, so you should make it writable, then reset the
+read-only attribute after editing it.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The SCC_Aux_Path is the path to the Srcsafe.ini file that Visual Basic uses to
+connect to the Visual SafeSource database.
+This error can occur if multiple SCC_Aux_Path's are pointing to different
+Srcsafe.ini files or to the same Srcsafe.ini, but using a different path.
+
+Two possible scenarios of the same Srcsafe.ini are:
+
+1. The Srcsafe.ini is on a network share, where one SCC_Aux_Path is pointing to
+  a UNC, and another is pointing to the same share using a mapped drive letter.
+2. The Srcsafe.ini is in a directory that does not comply to the DOS 8.3 naming
+  convention, where one SCC_Aux_Path has the full path name, and another has a
+  truncated (DOS-style) path.
+
+The Mssccprj.scc file will look like the following:
+
+  SCC = This is a Source Code Control file
+
+  [Project1.vbp]
+  SCC_Aux_Path =C:\Program Files\Microsoft Visual Studio\Common\VSS,
+  SCC_Project_Name ="$/Project1", PCAAAAAA
+
+NOTE: Do not edit the SCC_Project_Name, only change the SCC_Aux_Path entry to use
+the same path in each project.
+
+REFERENCES
+==========
+
+For additional information, please click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q147585 INFO: The Mssccprj.scc File and How Is It Used
+
+Additional query words: kbDSupport scc
+
+======================================================================
+Keywords          : kbinterop kbSSafe400 kbSSafe500 kbSSafe600 kbVBp _IK kbGrpDSSSafe 
+Technology        : kbVBSearch kbSSafeSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbSSafe600 kbSSafe400 kbSSafe500
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

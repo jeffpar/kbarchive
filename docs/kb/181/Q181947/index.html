@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181947: XCON: PRMD Value in Numeric-OR-Address Won’t Downgrade to 84 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181947: XCON: PRMD Value in Numeric-OR-Address Won’t Downgrade to 84" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181947/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181947/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181947/","publisher":null,"image":null,"headline":"Q181947: XCON: PRMD Value in Numeric-OR-Address Won’t Downgrade to 84","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181947-xcon-prmd-value-in-numeric-or-address-wont-downgrade-to-84">Q181947: XCON: PRMD Value in Numeric-OR-Address Won’t Downgrade to 84</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181947
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 02-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a message to an X.400 custom recipient over a 1984 mode X.400
+Connector, the following non-delivery report (NDR) may be generated:
+
+  Your message did not reach some or all of the intended recipients.
+
+     Subject:   Test
+     Sent:   1/1/80 1:00 AM
+
+  The following recipient(s) could not be reached:
+
+     User, Mail on 1/1/80 2:00 AM
+     The recipient could not be transferred because it could not be
+     downgraded MSEXCH:MSExchangeMTA:Sitename:SERVERNAME
+
+Additionally, the following event will be generated in the Windows NT Application
+Log:
+
+  Event ID 175    MSExchangeMTA    X400 Service
+  An error occurred while transferring message C=US;A=
+  ;P=PRMD;L=SERVERNAME-971223150130Z-132, because per-receipt information
+  could not be downgraded. An X.400 API Association (XAPIA) unable-to-
+  transfer reason code and unable-to-downgrade diagnostic code were
+  returned. [MTA DISP:FANOUT 12 147] (14)
+
+CAUSE
+=====
+
+The custom recipient was created using a numeric-OR-address and also contains a
+private management domain (PRMD) value. This prevents the X.400 address from
+downgrading from the X.400 88 version to the 84 version. Consequently, the
+message is rejected, an NDR is produced, and the above error is logged.
+
+WORKAROUND
+==========
+
+To work around this problem, remove the PRMD value from the custom recipient
+mail address. This allows the message to be properly downgraded from X.400 1988
+mode to 1984.
+
+MORE INFORMATION
+================
+
+This problem occurs when you send, over a 1984 mode X.400 Connector, a message
+that is addressed to a recipient that contains both a numeric address, such as
+X.121 or User Agent numeric ID, and a PRMD value.
+
+In accordance with X.419 Annex B section B 2.8, a numeric-OR-address containing a
+PRMD value cannot be downgraded from 1988 to 1984.
+
+Additional query words: p2 p22 red book blue
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

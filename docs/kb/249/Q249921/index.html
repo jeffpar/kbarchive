@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249921: Terminal Server Programs Do Not Run, Files32.vxd Cannot Be Found | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249921: Terminal Server Programs Do Not Run, Files32.vxd Cannot Be Found" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249921/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249921/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249921/","publisher":null,"image":null,"headline":"Q249921: Terminal Server Programs Do Not Run, Files32.vxd Cannot Be Found","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249921-terminal-server-programs-do-not-run-files32vxd-cannot-be-found">Q249921: Terminal Server Programs Do Not Run, Files32.vxd Cannot Be Found</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249921
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:95; winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+- Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When clients of Terminal Server attempt to run any program, they may be unable
+to do so and they may receive an error message stating that the system cannot
+find the Files32.vxd file.
+
+CAUSE
+=====
+
+This behavior can occur because of a virus named Pretty Park, which inserts the
+'Files32.vxd' statement at the beginning of the string value of the following
+registry key:
+
+  HKEY_LOCAL_MACHINE\Software\Classes\Exefile\Shell\Open\Command
+
+RESOLUTION
+==========
+
+To resolve this behavior, remove the 'files32.vxd' statement from the beginning
+of the registry string value on the computer running Terminal Server. Follow
+these steps:
+
+1. Start Registry Editor (Regedt32).
+
+2. In the registry, locate the following key:
+
+HKEY_LOCAL_MACHINE\Software\Classes\Exefile\Shell\Open\Command
+
+3. In the right pane of the Registry Editor window, double-click the following
+  unnamed registry string value:
+
+&lt;NO NAME&gt;: REG_SZ: "files32.vxd" "%1"%*
+
+4. In the String box, remove the files32.vxd statement from the string. The
+  correct string for this key is:
+
+"%1"%*
+
+5. Click OK, and then quit Registry Editor.
+
+6. Restart the Terminal Server computer.
+
+NOTE: When you run the Regedit.exe file, you may experience the symptoms
+described earlier in this article. To work around this issue, rename the
+Regedit.exe file to Regedit.com, and then follow the instructions in this
+article. After you are finished, rename the Regedit.com file back to
+Regedit.exe.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : WINDOWS:95; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153480: XADM: Exchange Stops Responding; Event 7200 1711 1025 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153480: XADM: Exchange Stops Responding; Event 7200 1711 1025" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153480/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153480/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153480/","publisher":null,"image":null,"headline":"Q153480: XADM: Exchange Stops Responding; Event 7200 1711 1025","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153480-xadm-exchange-stops-responding-event-7200-1711-1025">Q153480: XADM: Exchange Stops Responding; Event 7200 1711 1025</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153480
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 4.0 5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 12-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Exchange Client or Microsoft Exchange Server stops responding and/or
+events similar to the following are reported in the Application Log of Event
+Viewer:
+
+  7200
+  MSExchangeIS Private
+  Error
+  Background thread FDoMaintenance halted due to error code 4015.
+
+  7200
+  MSExchangeIS Private
+  Error
+  Background thread FDoQuotaCheck halted due to error code 4015.
+
+  1171
+  MSExchangeDS
+  Error
+  Exception c0000005 has occured with parameters 404762 and 0 (Internal ID
+  1101093). Please contact Microsoft Product Support Services for
+  assistance.
+
+  1025
+  MSExchangeIS Private
+  Warning
+  An error occurred. Function name or description of problem:
+  EcGenerateReadReport: Error: 1244
+
+CAUSE
+=====
+
+These problems occur when the maximum size paged of non-paged pool that can be
+allocated by one process has been limited on the Microsoft Exchange Server
+computer.
+
+The non-paged pool is an area of system memory reserved for objects that must
+remain in physical memory as long as they are active. The paged pool is an area
+of system memory reserved for objects that can be paged to disk when they are
+not being used.
+
+The maximum amount of space that can be allocated by one process in the paged and
+non-paged pools is controlled with the following registry keys:
+
+  PagedPoolQuota
+  NonPagedPoolQuota
+
+These registry keys are located in the following registry path:
+
+  HKEY_LocalMachine\SYSTEM\CurrentControlSet\Control\Session
+  Manager\Memory Management
+
+The default value of these registry keys is 0. If a nonzero value between 1 and
+128 has been specified, no single process can allocate more space in the pool
+than the specified amount.
+
+When value of these registry keys is set to 0, there are no pool quotas.
+
+RESOLUTION
+==========
+
+Make sure these registry keys are set to the default value of 0.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : 4.0 5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

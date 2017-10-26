@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178393: SQL Server Hangs When Sending a Message Using SQLMail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178393: SQL Server Hangs When Sending a Message Using SQLMail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178393/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178393/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178393/","publisher":null,"image":null,"headline":"Q178393: SQL Server Hangs When Sending a Message Using SQLMail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178393-sql-server-hangs-when-sending-a-message-using-sqlmail">Q178393: SQL Server Hangs When Sending a Message Using SQLMail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178393
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): winnt:4.0,6.5
+Operating System(s): 
+Keyword(s): kbWinNT400sp4fix
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- the operating system: Microsoft Windows NT 4.0 
+- Microsoft SQL Server version 6.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a computer running Windows NT Server 4.0 with Service Pack 3 (SP3) and
+Microsoft SQL Server 6.5 installed, when you send a message using xp_sendmail,
+SQLMail and the SQL Server service may stop responding (hang). You cannot stop
+the SQL Server service using SQL Enterprise Manager, SQL Service Manager, or the
+NET STOP MSSQLSERVER command.
+
+CAUSE
+=====
+
+This problem, originating in the Windows NT SP3 build of Mapi32.dll, is known to
+occur when your Windows Messaging mail profile is configured to connect to the
+Internet (for example, a POP3 mail server) and the SQL Server "priority boost"
+configuration parameter is set to 1. This may not occur with the first message
+sent, but may occur on subsequent attempts to send a message.
+
+
+RESOLUTION
+==========
+
+To workaround this problem, set the SQL Server "priority boost" configuration
+parameter to 0.
+
+If, for other reasons, you require this configuration parameter to be set to 1,
+obtain the latest service pack for Windows NT version 4.0.
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+NOTE: Returning to the previous build of Mapi32.dll (which is the base build of
+this file, installed with Windows NT 4.0) is not recommended, because fixes were
+made to this file for Windows NT SP3 to correct other SQLMail problems. Please
+see the following Microsoft Knowledge Base article for more information:
+
+  Q159425 PRB: Messages Blocked with SQLMail and Exchange Client
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+Additional query words: sqlmapi mapi
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbSQLServSearch kbAudDeveloper kbOSWinSearch kbOSWinNT400 kbSQLServ650 kbOSWinNTSearch
+Version           : winnt:4.0,6.5
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

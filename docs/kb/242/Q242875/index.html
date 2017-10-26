@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242875: How to Use WinWord to Convert RTF Files to Windows DOC Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242875: How to Use WinWord to Convert RTF Files to Windows DOC Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242875/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242875/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242875/","publisher":null,"image":null,"headline":"Q242875: How to Use WinWord to Convert RTF Files to Windows DOC Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242875-how-to-use-winword-to-convert-rtf-files-to-windows-doc-files">Q242875: How to Use WinWord to Convert RTF Files to Windows DOC Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242875
+Product(s): Internet Information Server
+Version(s): winnt:2.0,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server version 2.0 
+- Microsoft Site Server version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Office documents are not indexed.
+
+CAUSE
+=====
+
+The Microsoft Office filter used by Microsoft Site Server Search and Microsoft
+Index Server only supports indexing HTML, plain text, and Microsoft Office
+documents (.doc, .dot, .ppt, .pot, .xlb, .xls, .xlc, .obd, .opt). Rich Text
+Format (RTF) files are not supported by the Microsoft Office filter because
+there are too many different RTF formats.
+
+RESOLUTION
+==========
+
+A Microsoft Word macro can be written to automatically convert the files to the
+Word for Windows DOC format. A sample is provided below. Modify as needed.
+
+  Sub convert()
+
+   Dim strFile As String
+   Dim X As String
+   Dim Y As String
+   Dim Z As Object
+  'Collect Drive and directory to convert Word Docs in.
+   X = InputBox("Please enter the drive the documents are on.", "Drive Letter", "C")
+   Y = InputBox("Please enter the path to the directory the files are in.", "Path to files", "My Documents")
+  'seed the string to the first file in the directory
+   strFile = Dir(X &amp; ":\" &amp; (Y) &amp; "\" &amp; "*.rtf")
+  ' Start looping through files opening and saving as current version of Word.
+   On Error Resume Next
+   Do While strFile &lt;&gt; ""
+      Documents.Open X &amp; ":\" &amp; (Y) &amp; "\" &amp; strFile, Format:=wdOpenFormatRTF
+      ActiveDocument.SaveAs (X &amp; ":\" &amp; Y &amp; "\" &amp; strFile), FileFormat = wdFormatDocument
+      ActiveDocument.Close
+      strFile = Dir
+      
+   Loop
+  'Alert user operation is complete
+   MsgBox "done"
+
+  End Sub
+
+MORE INFORMATION
+================
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSiteServSearch kbIdxServSearch kbAudDeveloper kbIdxServ200 kbSiteServ300
+Version           : winnt:2.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

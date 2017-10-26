@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90243: Workgroup Connection SYSTEM.INI Settings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90243: Workgroup Connection SYSTEM.INI Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90243/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90243/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90243/","publisher":null,"image":null,"headline":"Q90243: Workgroup Connection SYSTEM.INI Settings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90243-workgroup-connection-systemini-settings">Q90243: Workgroup Connection SYSTEM.INI Settings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90243
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 1.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+- Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Workgroup Connections SYSTEM.INI file contains switches used to control the
+behavior of various Workgroup Connections network components.
+
+The switches control such things as where to find certain files, sizes of some
+buffers used by the redirector, and flags that alter default behavior of
+Workgroup Connections features and default parameters used by the NET command.
+
+Most switches are found in the [Network] section, which is analogous to the
+[network] section in the Windows for Workgroups SYSTEM.INI file.
+
+MORE INFORMATION
+================
+
+Some of the more common switches:
+
+The [Password Lists] section contains the username and the location and name of
+the users password cache file.
+
+The [Network] Section
+---------------------
+
+autostart=FULL or BASIC
+
+  This will determine which redirector is loaded by default when you type "net
+  logon" (without the quotation marks), "net start workstation" (without the
+  quotation marks) or "net start" (without the quotation marks).
+
+username=
+
+  The default username when you type "net logon".
+
+workgroup=
+
+  The default domain you will view.
+
+reconnect=no or yes
+
+  This determines whether to save the connections you make as a persistent
+  connection.
+
+passwordcaching=no or yes
+
+  This enable/disable password caching.
+
+computername=
+
+  This is the name for the computer (node). It must be unique.
+
+lanroot=path
+
+  This is the path to the Workgroup connection files.
+
+dospophotkey=N
+
+  This is the key that triggers the Workgroup Connections network pop-up
+  utility if it is started. (The default is CTRL+N).
+
+Additional query words: 1.00 3.10 wc
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : :1.0,3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

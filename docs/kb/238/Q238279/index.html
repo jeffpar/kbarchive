@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238279: PRB: Refresh Method Causes Syntax and Method Refresh Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238279: PRB: Refresh Method Causes Syntax and Method Refresh Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238279/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238279/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238279/","publisher":null,"image":null,"headline":"Q238279: PRB: Refresh Method Causes Syntax and Method Refresh Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238279-prb-refresh-method-causes-syntax-and-method-refresh-errors">Q238279: PRB: Refresh Method Causes Syntax and Method Refresh Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238279
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.0,2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC250 kbADO250 k
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Data Access Components versions 2.0, 2.1, 2.1 (GA), 2.1 SP1, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you set the RecordSource property of an ADO Data Control to a different SQL
+SELECT statement and then try to execute the Refresh method, the following error
+is returned:
+
+  Syntax error in FROM clause.
+
+which is followed by:
+
+  Run-time error '-2147217900(80040e14)':
+  Method 'Refresh' of object 'IAdodc' failed
+
+or:
+
+  Method 'Refresh' of object 'IAdodc' failed when attempting to refresh an
+  ADODC after setting the recordsource property to another value.
+
+The errors occur if the CommandType property of the ADO Data Control is set to
+adCmdTable.
+
+CAUSE
+=====
+
+When the CommandType of the ADO Data Control is set to adCmdTable, "SELECT *
+From" is automatically prepended to the RecordSource value.
+
+Setting the RecordSource to a table name results in a valid SQL statement, such
+as SELECT * FROM Tablename.
+
+Setting the RecordSource to a SQL SELECT statement, such as Select * From
+Tablename, results in a SQL statement of Select * From Select * From Tablename,
+which is an invalid SQL statement.
+
+RESOLUTION
+==========
+
+There are several possible workarounds:
+
+1. Use a table name instead of a SQL SELECT statement for the RecordSource
+  property, so that SELECT * FROM Tablename is generated
+
+2. At design time, use a CommandType value of adCmdUnknown. You could then use a
+  table name at design time, and a SQL SELECT statement at run time
+
+3. At run time, explicitly specify a CommandType of adCmdText or adCmdUnknown,
+  so that SELECT * FROM is not automatically prepended.
+
+4. Certain providers accept SELECT * FROM (SELECT * FROM Tablename) as a valid
+  SELECT statement, so you could try enclosing the SQL SELECT in parentheses.
+  For example, the Jet OLE DB Provider 4.0 accepts this syntax.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Microsoft Visual Basic 6.0, create a new Standard EXE project. Form1 is
+  created by default.
+
+2. From the Project menu, choose Components, and select Microsoft ADO Data
+  Control 6.0 (OLEDB).
+
+3. Place an ADO Data Control and a CommandButton onto Form1.
+
+4. Set the ConnectionString property of the ADO Data Control to use the
+  Nwind.MDB that comes with Visual Basic.
+
+5. Set the RecordSource property to the Customers table. Confirm that the
+  CommandType is type 2 - adCmdTable.
+
+6. Add the following code to the click event for the CommandButton:
+
+  ' Adodc1.CommandType = adCmdText
+  Adodc1.RecordSource = "Select * from Employees"
+  Adodc1.Refresh
+
+7. Press the F5 key to execute the code. Click on the CommandButton, and note
+  that the errors are returned on the ADODC1.Refresh line of code. Return to
+  design mode.
+
+8. Uncomment the line that explicitly sets the ADO Data Control'sCommandType to
+  adCmdUnknown. Press the F5 key to execute the code, and note that no error is
+  returned.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC250 kbADO250 kbADO260 kbATM 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbMDACSearch kbMDAC200 kbMDAC210 kbMDAC210SP1 kbMDAC210SP2 kbMDAC250 kbMDAC260 kbMDAC270
+Version           : :2.0,2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

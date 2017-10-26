@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143247: FIX: Scrolling Edit Window Causes Incorrect Highlighting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143247: FIX: Scrolling Edit Window Causes Incorrect Highlighting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143247/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143247/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143247/","publisher":null,"image":null,"headline":"Q143247: FIX: Scrolling Edit Window Causes Incorrect Highlighting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143247-fix-scrolling-edit-window-causes-incorrect-highlighting">Q143247: FIX: Scrolling Edit Window Causes Incorrect Highlighting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143247
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the EDIT command to add or modify data in a table, the field may
+highlight incorrectly. This causes data entry problems if the DOWNARROW key is
+pressed to go to the next field instead of the ENTER key. This affects numeric,
+double, integer and currency fields. All other field types are processed
+correctly even though the highlight doesn't seem to cover the entire field.
+
+WORKAROUND
+==========
+
+When using the EDIT command, you need to use a :W= and the FIELDS clause to
+properly highlight the numeric, double, currency, and integer fields when the
+user presses the DOWNARROW key. For example:
+
+     EDIT FIELDS field1, field2 :W = numwhen()
+
+     FUNCTION numwhen
+     KEYBOARD '{CTRL+A}'
+
+NOTE: The CTRL+A or select all functionality will only work if the system menu is
+active in the application or in Visual FoxPro.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+
+In numeric fields, because they are right justified, the numbers aren't selected,
+so any numbers entered are appended to the front of existing numbers as long as
+the DOWNARROW key is used to move to the next field. The only workaround found
+was to use the FIELDS clause, list all fields, use a :W=, and use the following
+in the WHEN function to select the entire field.
+
+     KEYBOARD '{CTRL-A}'
+
+The currency field behaves differently from the other fields. If the currency
+field has 0.0000 as its value, the problem will not occur. If the currency field
+already has data in it, the problem will occur. The additional data is
+preappended to the current data. For example, if the current data is 20.0000 and
+you want to change it to 30, the new value will be 3020.0000 unless you use :W=
+to highlight the entire field.
+
+Also, if the last field in the EDIT window is a currency field and you try to
+change that value for the last record in the table, the value will change to
+zero - not the value you typed in. To work around this problem, use the FIELDS
+list to make sure that the currency field is not the last field in the table or
+permanently change the structure of the table.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Issue the following commands in the Command Window:
+
+     USE SAMPLES\DATA\CUSTOMER
+     EDIT
+
+2. Make your EDIT window show the first record and only part of the second
+  record.
+
+3. Use the arrow keys to move down through each field.
+
+4. Once you start scrolling, you will notice that the highlight is no longer
+  highlighting the entire field.
+
+5. Change the amount in the MaxOrdAmt field to something different, and then
+  press the DOWNARROW key.
+
+Additional query words: data corruption incorrect
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b
+Version           : WINDOWS:3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

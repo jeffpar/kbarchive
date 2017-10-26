@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157159: STL Sample for map::insert, map::find, and map::end Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157159: STL Sample for map::insert, map::find, and map::end Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157159/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157159/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157159/","publisher":null,"image":null,"headline":"Q157159: STL Sample for map::insert, map::find, and map::end Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157159-stl-sample-for-mapinsert-mapfind-and-mapend-functions">Q157159: STL Sample for map::insert, map::find, and map::end Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157159
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the map::end, map::find,
+map::insert, map::iterator, and map::value_type STL symbols in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;map&gt;
+
+Prototypes
+
+     iterator map::end();
+
+     // Key is the data type of template argument #1 for map
+     iterator map::find(const Key&amp; key);
+     pair&lt;iterator, bool&gt; map::insert(const value_type&amp; x);
+
+NOTE: The class/parameter names in the prototypes may not match the version in
+the header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The end() function returns an iterator that points one past the end of a
+sequence.
+
+Find returns an iterator that designates the first element whose sort key equals
+key. If no such element exists, the iterator equals end().
+
+If the key does not already exist, insert will add it to the sequence and return
+pair&lt;iterator, true&gt;. If the key already exists, insert does not add it to
+the sequence and returns pair &lt;iterator, false&gt;.
+
+The following sample creates a map of ints to strings. In this case, the mapping
+is from digits to their string equivalents (1 -&gt; "One", 2 -&gt; "Two",
+etc.).
+
+The program reads a number from the user, finds the word equivalent for each
+digit (using the map), and prints the number back as a series of words. For
+example, if the user enters 25463, the program responds with: Two Five Four Six
+Three.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: None
+  // 
+  // &lt;filename&gt; :  main.cpp
+  // 
+  // Functions:
+  // 
+  //      end
+  //      find
+  //      insert
+  // 
+  // Written by Rick Troemel
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+  // disable warning C4018: '&lt;' : signed/unsigned mismatch
+  // okay to ignore
+
+  #pragma warning(disable: 4018)
+
+  #pragma warning(disable:4786)
+  #include &lt;iostream&gt;
+  #include &lt;string&gt;
+  #include &lt;map&gt;
+  using namespace std;
+
+  typedef map&lt;int, string, less&lt;int&gt;, allocator&lt;string&gt; &gt; INT2STRING;
+  void main()
+  {
+  // 1. Create a map of ints to strings
+      INT2STRING theMap;
+      INT2STRING::iterator theIterator;
+      string theString = "";
+      int index;
+  // Fill it with the digits 0 - 9, each mapped to its string counterpart
+  // Note: value_type is a pair for maps...
+      theMap.insert(INT2STRING::value_type(0,"Zero"));
+      theMap.insert(INT2STRING::value_type(1,"One"));
+      theMap.insert(INT2STRING::value_type(2,"Two"));
+      theMap.insert(INT2STRING::value_type(3,"Three"));
+      theMap.insert(INT2STRING::value_type(4,"Four"));
+      theMap.insert(INT2STRING::value_type(5,"Five"));
+      theMap.insert(INT2STRING::value_type(6,"Six"));
+      theMap.insert(INT2STRING::value_type(7,"Seven"));
+      theMap.insert(INT2STRING::value_type(8,"Eight"));
+      theMap.insert(INT2STRING::value_type(9,"Nine"));
+  // Read a Number from the user and print it back as words
+      for( ; ; )
+      {
+          cout &lt;&lt; "Enter \"q\" to quit, or enter a Number: ";
+          cin &gt;&gt; theString;
+          if(theString == "q")
+              break;
+          // extract each digit from the string, find its corresponding
+          // entry in the map (the word equivalent) and print it
+          for(index = 0; index &lt; theString.length(); index++){
+              theIterator = theMap.find(theString[index] - '0');
+              if(theIterator != theMap.end() )    // is 0 - 9
+                  cout &lt;&lt; (*theIterator).second &lt;&lt; " ";
+              else    // some character other than 0 - 9
+                  cout &lt;&lt; "[err] ";
+          }
+          cout &lt;&lt; endl;
+      }
+  }
+
+Program Output is:
+
+Enter "q" to quit, or enter a Number: 22
+Two Two
+Enter "q" to quit, or enter a Number: 33
+Three Three
+Enter "q" to quit, or enter a Number: 456
+Four Five Six
+Enter "q" to quit, or enter a Number: q
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample insert end find iterator pair
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

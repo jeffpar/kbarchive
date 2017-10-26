@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q45195: Run-Time Library FP Signal Handler Assumes SS=DS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q45195: Run-Time Library FP Signal Handler Assumes SS=DS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/045/Q45195/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/045/Q45195/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/045/Q45195/","publisher":null,"image":null,"headline":"Q45195: Run-Time Library FP Signal Handler Assumes SS=DS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q45195-run-time-library-fp-signal-handler-assumes-ssds">Q45195: Run-Time Library FP Signal Handler Assumes SS=DS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q45195
+Product(s): See article
+Version(s): 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | softlib CFPLIBS.ARC S12318.EXE | mspl13_c
+Last Modified: 25-JUL-1989
+
+Note that the Microsoft Run-Time Library Exception handler will call
+another routine that calls the task's SIGFPE signal handler, if one
+exists.
+
+However, this intervening routine assumes that the stack segment is
+that of the program that caused the 8087 exception. It is known that
+certain 8087 instructions can take a (relatively) long time to
+execute. It is also known that other interrupt routines, such as the
+timer or the disk interrupt or one belonging to a TSR, may in fact be
+running when the 8087 interrupt occurs.
+
+As the NMI, it will nest, and the run-time library routine's
+assumption about the stack segment may not be valid.
+
+This problem is very rare; however, it is a valid concern. Instead of
+sacrificing speed, the decision was made to take the small chance that
+SS=DS. Checking for SS=DS would slow the floating-point libraries
+considerably.
+
+There is a file in the OnLine Software/Data Library that contains two
+floating-point libraries. These libraries should protect you from the
+unlikely event of SS!=DS. These libraries are approximately 10%
+slower than the retail floating-point libraries.
+
+This file can be found in the Software/Data Library by searching on
+the keyword CFPLIBS, the Q number of this article, or S12318. CFPLIBS
+was archived using the PKware file-compression utility.
+
+These libraries eliminate the possibility of SS!=DS within a
+floating-point signal handler. However, these libraries are about 10%
+slower than the original floating-point libraries. To include these
+files in your combined libraries, first make backup copies of the
+original floating-point libraries, rename these new libraries to
+EM.LIB and 87.LIB, and then run SETUP with the /L option to rebuild
+libraries. This will rebuild the combined libraries with these new
+floating-point components.
+
+The libraries provided with this archived file are fully tested.
+However, they are not regularly released with Microsoft C 5.10.
+Consequently, they will not be maintained, and any problem reported
+with them will not result in a patch or any other immediate fix.
+Please report all problems experienced with these libraries.
+
+The archived file contains the following files:
+
+   README.DOC
+   PIEM.LIB
+   PI87.LIB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

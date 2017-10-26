@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158037: STL Sample for the stack::operator== Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158037: STL Sample for the stack::operator== Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158037/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158037/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158037/","publisher":null,"image":null,"headline":"Q158037: STL Sample for the stack::operator== Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158037-stl-sample-for-the-stackoperator-function">Q158037: STL Sample for the stack::operator== Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158037
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 17-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the stack::operator== STL function
+in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;stack&gt;
+
+Prototype
+---------
+
+     template&lt;class _TYPE, class _C, class _A&gt;
+     bool stack::bool operator==(const stack&lt;_TYPE, _C, _A&gt;&amp; _X) const;
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The stack::operator== function returns true if both stacks have equal elements
+arranged in the same sequence. The stack::operator== function always returns
+false if the two stacks are of different size.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // StackEqual.cpp :  Illustrates how to use the stack::operator==
+  //                   function to determine if two stacks are equal.
+  // 
+  // Functions:
+  // 
+  //    operator== :  Returns true if both stacks are the same.
+  // 
+  // Written by Derek Jamison
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  #pragma warning(disable:4786)
+
+  #include &lt;stack&gt;
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef stack&lt;double, deque&lt;double, allocator&lt;double&gt; &gt;,
+
+             allocator&lt;double&gt; &gt; STACK_DOUBLE;
+
+  void main()
+
+  {
+
+     STACK_DOUBLE stack1,stack2;
+
+     // Add item 4.0 to Stack1.
+     cout &lt;&lt; "stack1.push(4.0)  s1=[4.0]" &lt;&lt; endl;
+     stack1.push(4.0);
+
+     // Add item 3.0 to Stack1. Current Stack1 contains items 3.0 (top)
+     // 4.0 (bottom).
+     cout &lt;&lt; "stack1.push(3.0)  s1=[3.0 4.0]" &lt;&lt; endl;
+     stack1.push(3.0);
+
+     // Add item 4.0 to Stack2.
+     cout &lt;&lt; "stack2.push(4.0)  s2=[4.0]" &lt;&lt; endl;
+     stack2.push(4.0);
+
+     // Compare Stack1 and Stack2. Should return False.
+     cout &lt;&lt; "stack1==stack2 is " &lt;&lt;
+        ((stack1==stack2)? "True": "False") &lt;&lt; endl &lt;&lt; endl;
+
+     // Add item 6.0 to Stack2. Current Stack2 contains items 6.0 (top)
+     // 4.0 (bottom)
+     cout &lt;&lt; "stack2.push(6.0)  s2=[6.0 4.0]" &lt;&lt; endl;
+     stack2.push(6.0);
+
+     // Compare Stack1 and Stack2. Should return False.
+     cout &lt;&lt; "stack1==stack2 is " &lt;&lt;
+        ((stack1==stack2)? "True": "False") &lt;&lt; endl &lt;&lt; endl;
+
+     // Keep adding item 8.0 to Stack2. Current Stack2 contains items
+     // 8.0 (top), 6.0 and 4.0 (bottom).
+     cout &lt;&lt; "stack2.push(8.0)  s2=[8.0 6.0 4.0]" &lt;&lt; endl;
+     stack2.push(8.0);
+
+     // Compare Stack1 and Stack2. Should return False.
+     cout &lt;&lt; "stack1==stack2 is " &lt;&lt;
+        ((stack1==stack2)? "True": "False") &lt;&lt; endl &lt;&lt; endl;
+
+     // Delete the top item from Stack2. Current Stack2 contains items
+     // 6.0 (top) and 4.0 (bottom).
+     cout &lt;&lt; "stack2.pop()      s2=[6.0 4.0]" &lt;&lt; endl;
+     stack2.pop();
+
+     // Delete another item from Stack2. Current Stack2 contains item 4.0.
+     cout &lt;&lt; "stack2.pop()      s2=[4.0]" &lt;&lt; endl;
+     stack2.pop();
+
+     // Add item 3.0 to Stack2. Current Stack2 contains item 3.0 (top) and
+     // 4.0 (bottom).
+     cout &lt;&lt; "stack2.push(3.0)  s2=[3.0 4.0]" &lt;&lt; endl;
+     stack2.push(3.0);
+
+     // Compare Stack2 and Stack2. Should return True.
+     cout &lt;&lt; "stack1==stack2 is " &lt;&lt;
+        ((stack1==stack2)? "True": "False") &lt;&lt; endl &lt;&lt; endl;
+
+     // Delete the top item from Stack2. Current Stack2 contains 4.0.
+     cout &lt;&lt; "stack2.pop()      s2=[4.0]" &lt;&lt; endl;
+     stack2.pop();
+
+     // Delete another item from Stack2. Stack2 should be empty.
+     cout &lt;&lt; "stack2.pop()      s2=[]" &lt;&lt; endl;
+     stack2.pop();
+
+     // Push item 8.0 to Stack2.
+     cout &lt;&lt; "stack2.push(8.0)  s2=[8.0]" &lt;&lt; endl;
+     stack2.push(8.0);
+
+     // Compare Stack1 and Stack2. Should return False.
+     cout &lt;&lt; "stack1==stack2 is " &lt;&lt;
+        ((stack1==stack2)? "True": "False") &lt;&lt; endl &lt;&lt; endl;
+
+  }
+
+Program Output
+--------------
+
+  stack1.push(4.0)  s1=[4.0]
+  stack1.push(3.0)  s1=[3.0 4.0]
+  stack2.push(4.0)  s2=[4.0]
+  stack1==stack2 is False
+
+  stack2.push(6.0)  s2=[6.0 4.0]
+  stack1==stack2 is False
+
+  stack2.push(8.0)  s2=[8.0 6.0 4.0]
+  stack1==stack2 is False
+
+  stack2.pop()      s2=[6.0 4.0]
+  stack2.pop()      s2=[4.0]
+  stack2.push(3.0)  s2=[3.0 4.0]
+  stack1==stack2 is True
+
+  stack2.pop()      s2=[4.0]
+  stack2.pop()      s2=[]
+  stack2.push(8.0)  s2=[8.0]
+  stack1==stack2 is False
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample operator==
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

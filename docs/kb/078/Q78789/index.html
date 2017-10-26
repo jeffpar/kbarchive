@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q78789: Windows Err Msg: Could Not Print Page &lt;x&gt; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q78789: Windows Err Msg: Could Not Print Page &lt;x&gt;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/078/Q78789/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/078/Q78789/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/078/Q78789/","publisher":null,"image":null,"headline":"Q78789: Windows Err Msg: Could Not Print Page &lt;x&gt;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q78789-windows-err-msg-could-not-print-page-x">Q78789: Windows Err Msg: Could Not Print Page &lt;x&gt;</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q78789
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive a printing error message when you try to print from a Windows
+application under Windows 3.0 or 3.0a. For example, you may receive the
+following error message in the Write:
+
+  Could not print page - Error:-1.
+
+This problem does not occur with later versions of Windows.
+
+CAUSE
+=====
+
+This may be caused by the file DOSSHELL.SWP being in the directory pointed to by
+the SET TEMP= setting in the AUTOEXEC.BAT file. The DOSSHELL.SWP file is created
+in this directory if the following statements are both true:
+
+- DOSSHELL has been executed and then shelled out by pressing SHIFT+F9.
+
+- Multiple instances of the DOSSHELL program have been entered and are running.
+
+RESOLUTION
+==========
+
+If multiple instances of DOSSHELL are started while Windows is running, use the
+following procedure to close the multiple instances of DOSSHELL to remove the
+DOSSHELL.SWP file from the temporary directory:
+
+1. Close Windows.
+
+2. At the command prompt, type
+
+  exit
+
+  to go into the DOSSHELL program.
+
+3. Close the DOSSHELL by pressing ALT+F to open the File menu, and press X to
+  exit.
+
+4. Repeat steps 2 and 3 above until you do not go into the DOSSHELL program when
+  you type:
+
+  exit
+
+This should remove the DOSSHELL.SWP file from the temporary directory.
+
+NOTE: If the computer has been turned off while the DOSSHELL.SWP file was in the
+temporary directory, the above procedure may not remove the file.
+
+The DOSSHELL.SWP file is created with a read-only attribute. The file can not be
+deleted until you clear the read-only attribute. The following command can be
+used to clear the read-only attribute of the file so that it can be deleted:
+
+  Attrib -r dosshell.swp
+
+Additional query words: shell Dos 5.0 Windows 3.00 3.00a dosshell err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

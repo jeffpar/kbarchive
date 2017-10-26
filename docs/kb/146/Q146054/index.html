@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q146054: STOP 0xC0000263 When Upgrading to WinNT 3.51 On Compaq Computers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q146054: STOP 0xC0000263 When Upgrading to WinNT 3.51 On Compaq Computers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/146/Q146054/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/146/Q146054/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/146/Q146054/","publisher":null,"image":null,"headline":"Q146054: STOP 0xC0000263 When Upgrading to WinNT 3.51 On Compaq Computers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q146054-stop-0xc0000263-when-upgrading-to-winnt-351-on-compaq-computers">Q146054: STOP 0xC0000263 When Upgrading to WinNT 3.51 On Compaq Computers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q146054
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51
+Operating System(s): 
+Keyword(s): kb3rdparty
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade a Compaq computer with Microsoft Windows NT 3.51 and restart
+the computer, the following STOP error message appears:
+
+  STOP: 0xC0000263 {Driver Entry Point Not Found}
+  The \SystemRoot\system32\drivers\Sysmgmt.sys device driver could not locate
+  the entry point HalCPQShareInt13 in driver hal.dll.
+
+CAUSE
+=====
+
+This problem occurs if the Compaq Insight Management Agent is not disabled
+before you perform the upgrade.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Restart your computer with another installation of Windows NT 3.51 or another
+  operating system. The Compaq Insight Management Agent file SMSMGMT.SYS is
+  located in the %SystemRoot%\System32\Drivers directory. If this directory is
+  in the NTFS partition, you must use another installation of Windows NT.
+
+2. Rename SYSMGMT.SYS to another file name.
+
+3. Restart the upgraded version of Windows NT. The Insight Management Agent
+  fails to load and an error message appears.
+
+4. Load the Compaq Hardware Abstraction Layer (HAL) with the entry point for
+  SYSMGMT.SYS from the latest Compaq Support Software Diskette (SSD), or enable
+  the the Insight Management Agent by renaming the agent file back to
+  SYSMGMT.SYS. The Compaq SSD loads a newer version of the SYSMGMT.SYS.
+
+For more information, contact Compaq Technical Support at (800) 652-6672. In
+addition, obtain the "Migrating to Microsoft Windows NT Server 3.51 on Compaq
+Servers" from Compaq (Compaq part number 185026-001).
+
+The Compaq products discussed here are manufactured by Compaq Computer Corp., a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

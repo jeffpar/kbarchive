@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187684: BUG: Assert When Calling AfxFreeLibrary from ExitInstance | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187684: BUG: Assert When Calling AfxFreeLibrary from ExitInstance" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187684/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187684/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187684/","publisher":null,"image":null,"headline":"Q187684: BUG: Assert When Calling AfxFreeLibrary from ExitInstance","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187684-bug-assert-when-calling-afxfreelibrary-from-exitinstance">Q187684: BUG: Assert When Calling AfxFreeLibrary from ExitInstance</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187684
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
+Operating System(s): 
+Keyword(s): kbDLL kbMFC kbVC200bug kbVC400bug kbVC500bug kbOSWin95 kbDSupport kbGrpDSMFCATL
+Last Modified: 19-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0, 4.1, 4.2, 5.0, on platform(s):
+   - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following assertion in Afxcrit.cpp line 73 can fail when you call the
+AfxFreeLibrary function from the ExitInstance function of an MFC DLL:
+
+     ASSERT(!_afxResourceLocked[i]);
+
+Similarly, an access violation or an unhandled exception may occur when you call
+FreeLibrary from ExitInstance or the DllMain function during DLL_PROCESS_DETACH.
+
+CAUSE
+=====
+
+The Windows 95 loader is not reentrant. Causing a DLL to be freed while in the
+process of freeing another DLL can cause a dependent DLL to be freed
+unexpectedly.
+
+For example, if a DLL (A) with a dependant DLL (B) and a reference count of 0
+calls FreeLibrary from DLL_PROCESS_DETACH on another DLL (C), the Windows 95
+unloader rescans the dependent DLL list and prematurely releases the dependent
+DLL (B). The DLL (A) that calls FreeLibrary is protected because it is marked.
+Upon returning from FreeLibrary, DLL (A) might make further calls into DLL (B)
+and cause the assertion or access violation.
+
+RESOLUTION
+==========
+
+Don't call AfxFreeLibrary from ExitInstance. Likewise, don't call FreeLibrary
+from either ExitInstance or from DLL_PROCESS_DETACH of the DllMain function.
+
+You can work around this bug by providing initialization and uninitialization
+functions that are not called from within DllMain. For example, if you use an
+ActiveX DLL, you can call AfxLoadLibrary and AfxFreeLibrary from the COM
+object's constructor and OnFinalRelease function. Calling AfxFreeLibrary from a
+destructor of a static object does not work because the static object
+constructors and destructors are called from DllMain.
+
+An alternative workaround is to increment the reference count of the DLL with a 0
+reference by calling (Afx)LoadLibrary again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows 95. We are researching this
+bug and will post new information here in the Microsoft Knowledge Base as it
+becomes available.
+
+MORE INFORMATION
+================
+
+In MFC, DLLs are dynamically loaded and unloaded using AfxLoadLibrary and
+AfxFreeLibrary, respectively. A common mistake when using AfxFreeLibrary (or
+FreeLibrary) is to call it from ExitInstance of an MFC DLL. A similar problem
+occurs when you call FreeLibrary from DllMain with DLL_PROCESS_DETACH.
+
+When you call FreeLibrary from DllMain during DLL_PROCESS_DETACH under Windows
+95, the entire dependency tree is reevaluated. If any DLL other than the one
+currently calling FreeLibrary has a reference count of 0, it will be unloaded.
+In some cases, this can cause problems if there are still calls to the unloaded
+DLL.
+
+A common example is when the CRT libraries are prematurely unloaded. To work
+around this problem, you can make an additional call to LoadLibrary for the CRT
+libraries before you call FreeLibrary.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDLL kbMFC kbVC200bug kbVC400bug kbVC500bug kbOSWin95 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper
+Version           : winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

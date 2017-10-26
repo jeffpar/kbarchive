@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q321372: SMS: SMS SP3 Support of Windows XP Professional | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q321372: SMS: SMS SP3 Support of Windows XP Professional" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/321/Q321372/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/321/Q321372/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/321/Q321372/","publisher":null,"image":null,"headline":"Q321372: SMS: SMS SP3 Support of Windows XP Professional","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q321372-sms-sms-sp3-support-of--windows-xp-professional">Q321372: SMS: SMS SP3 Support of  Windows XP Professional</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q321372
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0 SP3
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug
+Last Modified: 14-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server (SMS) 2.0 Service Pack 3 (SP3) supports the Microsoft
+Windows XP Professional operating system. This article describes issues to
+consider if you want deploy Windows XP in your existing SMS site.
+
+MORE INFORMATION
+================
+
+SMS 2.0 SP3 is the minimum requirement for supporting Windows XP Professional as
+a client computer. You may also require additional Quick Fix Engineering (QFE)
+updates or "hotfixes." QFE hotfixes will be integrated into future services
+packs.
+
+NOTE: You can request SMS 2.0 SP3 QFE updates for 60 days after the release of
+service pack 4 (SP4). After this date, SP4 is required for additional QFE
+support for Windows XP (if you require additional support).
+
+Exclusions
+----------
+
+Not all versions of Windows XP are supported by SMS, and not all versions of SMS
+support Windows XP. Note the following exceptions:
+
+- Earlier service pack releases of SMS 2.0, including SP2, do not support
+  Windows XP Professional as a client.
+
+- SMS 1.2 does not support Windows XP as a client.
+
+- No version of SMS supports Windows XP Home Edition as a client.
+
+- 64-bit versions of Windows XP are not currently supported as SMS 2.0 clients
+  in either 32-bit or 64-bit mode.
+
+- Currently, no version of SMS supports Windows XP Embedded as a client.
+
+The following list describes the SMS features that are available to SMS-based
+clients that are running Windows XP Professional.
+
+- Feature: Client installation
+  Level of support: Fully supported
+
+- Feature: Hardware inventory
+  Level of support: Qualified support
+
+For additional information about hardware inventory and Windows XP, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q310615 Hardware Inventory from Japanese Clients Is Not Added to the SMS
+  Database
+
+- Feature: Software inventory
+  Level of support: Fully supported
+
+- Feature: Network Monitor
+  Level of support: Fully supported
+
+- Feature: Software distribution
+  Level of Support: Qualified support
+  Description: When you initially install SMS SP3 software distribution, you
+  cannot target Windows XP-based clients. This is because Windows XP is not
+  known to Windows Management Instrumentation (WMI).
+
+  To add Windows XP to the list of specified platforms that SMS uses to target
+  software distribution, apply the SP3 hotfix that is described in the
+  following Microsoft Knowledge Base article:
+
+  Q308271 How to Add Windows XP Professional as a Target Platform to SMS 2.0
+  SP3
+
+- Feature: Remote tools
+  Level of support: Qualified support
+  Description: This feature is supported on SMS-based clients that are running
+  Windows XP that have a new accelerated video driver. This driver is delivered
+  when you either upgrade the client to SP3 or when you initially install an
+  SP3 client.
+
+  Remote tools are supported by using the Run Length Encoding (RLE) compression
+  method instead of the default LZH compression method. An SP3 QFE hotfix that
+  addresses this problem is included in SP4.
+
+- Feature: Software metering
+  Level of support: Qualified support
+  Description: There is limited support for software metering of Windows XP. SMS
+  cannot perform software metering of 16-bit programs on a Windows XP-based
+  client.
+
+NOTE: The SMS 2.0 SP3 Remote Administrators Console (a server role) is also
+supported on Windows XP Professional.
+
+REFERENCES
+==========
+
+If you are not sure of the service pack that is applied to your SMS site, visit
+the following Microsoft Web site:
+
+  http://www.microsoft.com/smserver/downloads/20/servicepacks/versions.asp
+
+For information about support for new operating systems and programs, visit the
+following Microsoft Web site:
+
+  http://www.microsoft.com/smserver/techinfo/deployment/20/deployosapps/newsupport.asp
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200SP3
+Version           : :2.0 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

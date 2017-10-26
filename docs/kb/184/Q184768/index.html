@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184768: XADM: c1030b37 and 2034 Errors When Editing Mailboxes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184768: XADM: c1030b37 and 2034 Errors When Editing Mailboxes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184768/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184768/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184768/","publisher":null,"image":null,"headline":"Q184768: XADM: c1030b37 and 2034 Errors When Editing Mailboxes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184768-xadm-c1030b37-and-2034-errors-when-editing-mailboxes">Q184768: XADM: c1030b37 and 2034 Errors When Editing Mailboxes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184768
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 10-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After installing the first Exchange Server 5.x computer in a 4.0 site, an
+administrator may receive the following error message when trying to create a
+mailbox or access e-mail properties:
+
+"An error occurred while processing an e-mail address. To view details of the
+error, see the application event log in the Windows NT Event Viewer on the
+Microsoft Exchange Server computer. Microsoft Exchange Administrator ID no:
+c1030b37."
+
+This error message can occur in all versions of the Exchange Administrator
+program.
+
+In the Event viewer, the following 2034 error may occur twice in succession:
+
+  Event ID: 2034
+  Source: MSExchangeSA
+  Description: Unable to generate an E-mail address. The 'CCMail - General
+  Error (Code 1)' address type was returned by address generation dll
+  c:\exchsrvr\address\CCMAIL\i386\ccmproxy.dll.
+
+Inspection of the site will probably show that cc:Mail proxy generators have been
+replicated throughout the site (view under &lt;Site&gt;, Configuration,
+Addressing, E-Mail Address Generators), but that the cc:Mail proxy address type
+(view under &lt;Site&gt;, Configuration, Site Addressing) no longer exists on
+any server.
+
+NOTE: The Microsoft Exchange Connector for Lotus cc:Mail is a feature first added
+in Exchange Server version 5.0. When the first server running version 5.0 or
+later is added to an Exchange Server 4.0 site, the cc:Mail address proxy type
+and cc:Mail address generators should be replicated throughout the 4.0 site,
+even if you do not install the cc:Mail connector itself. Until the connector is
+installed, the address type is simply disabled.
+
+CAUSE
+=====
+
+Routing Recalculation is set to Always for the site. Whenever routing is
+recalculated, the Site Addressing object on the routing recalculation server is
+updated and replicated to all other servers in the site.
+
+If routing recalculation occurs near the time of the new installation, the Site
+Addressing object on the routing recalculation server may appear to be "newer"
+than the version on the just-installed server. Thus it will overwrite the 5.5
+version of Site Addressing, effectively deleting the cc:Mail proxy address type
+throughout the site.
+
+WORKAROUND
+==========
+
+There are three ways to work around this problem:
+
+WORKAROUND 1:
+
+Set Routing Recalculation to Selected Times, and select a time far away from the
+time at which you are installing the new server. It is seldom desirable to set
+Routing Recalculation to Always.
+
+WORKAROUND 2:
+
+Connect to the routing recalculation server to join the site, thus ensuring that
+replication is in synchronization between the two servers.
+
+WORKAROUND 3:
+
+1. Immediately after installation finishes, go to the Site Addressing object on
+  the new server and verify that the cc:Mail proxy type still exists.
+
+2. Go then to the Routing Calculation Schedule page of the Site Addressing
+  object. Change the schedule from Selected Times to Always, and choose Apply.
+  Then change the schedule back to Selected Times and choose Apply. Repeat this
+  procedure several times.
+
+  Each time you do this, you increment the Object-Version attribute of the Site
+  Addressing object by one. The replica with the highest Object- Version
+  attribute wins in a replication conflict, even if the change has an older
+  time stamp than another change. Do not unintentionally leave the schedule at
+  Always after completing this.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 5.0 and 5.5. Microsoft is researching this problem and will post new
+information here in the Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+NOTE: To be sure you have changed the Object-Version to a large enough number,
+you can use the Exchange Administrator's raw mode.
+
+To do this:
+
+WARNING: Using the raw mode of the Exchange Administrator program (admin /r)
+incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at your own risk. Do not make changes to raw mode
+properties unless you fully understand their implications. You could make your
+entire site unusable or cause other problems by making some changes. Use raw
+mode only for viewing the effects of changes made through the normal Property
+pages.
+
+1. Start Exchange Server Administrator program in raw mode
+  (\exchsrvr\bin\admin.exe /r).
+
+2. Connect to the routing recalculation server, and select its Site Addressing
+  object.
+
+3. Choose File, Raw Properties, or press SHIFT+ENTER to view the raw properties
+  of the Site Addressing object.
+
+4. Select the Object-Version attribute and note its value.
+
+5. Connect to the newly installed server, and perform steps 2 through 4.
+
+The value on the newly installed server should be larger by a dozen or so than
+the value on the routing recalculation server. Follow the procedure outlined
+above in Workaround 3 until the Object-Version is high enough on the new
+server.
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

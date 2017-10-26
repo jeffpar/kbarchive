@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150544: DHCP Manager Scope Properties | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150544: DHCP Manager Scope Properties" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150544/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150544/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150544/","publisher":null,"image":null,"headline":"Q150544: DHCP Manager Scope Properties","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150544-dhcp-manager-scope-properties">Q150544: DHCP Manager Scope Properties</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150544
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+The following information describes the general properties and maintenance
+activities performed on Microsoft DHCP scopes.
+
+MORE INFORMATION
+================
+
+The subnet identifiers and address pool make up the properties of scopes. You
+can change the properties of an existing scope by selecting the scope for which
+you want to change properties and then clicking Properties on the Scope menu.
+You can also double-click the scope to access its properties.
+
+Modifying a Scope
+-----------------
+
+After a scope has been created, you can extend the address range of the scope,
+but you cannot reduce it.
+
+Removing a Scope
+----------------
+
+No leases can be active when a user wants to remove a scope. This task can be
+accomplished by deactivating the scope until all client leases expire or all
+client lease extension requests are denied. Once there are no more active leases
+contained in the scope, you can remove the scope by selecting the scope under
+DHCP Servers and choosing Delete on the Scope menu.
+
+Add Reservations
+----------------
+
+You can configure DHCP so that a DHCP server always assigns the same IP address
+to a client. This is called a client reservation. This may be necessary because
+you may need to assign a DHCP client the same IP address every time it makes a
+request.
+
+To configure a reservation, select the Scope under DHCP Servers and choose Add
+Reservations on the Scope menu. Type the appropriate IP address and the Unique
+Identifier/MAC address of the client. The unique identifier can be displayed by
+typing NET CONFIG RDR or IPCONFIG /ALL (WINIPCFG on Windows 95) from a command
+prompt.
+
+One advantage of a reservation over an exclusion is that with a reservation, the
+clients can still be administered using the Active Leases option on the Scope
+menu. If you statically assign an address and exclude it from the scope, the
+client will not show up in the Active Leases list.
+
+In addition, a reservation still requires that the client register with the DHCP
+server. This forces the client to accept the DHCP options that may be configured
+for the subnet. An exclusion will NOT receive DHCP options for that scope
+dynamically; they must be hardcoded on the client.
+
+Active Leases
+-------------
+
+The Active Leases option allows a graphical display of current leased IPs as well
+as client reservation. If the computer symbol includes a phone, it is a lease
+owned by the RAS service (NDISWANx wrapper).
+
+Although a client lease can be deleted from within this graphical display, the
+client may still receive the same address following an IPCONFIG /RENEW command
+because the client also has a copy of its address information locally. Until a
+client receives a different address or a negative acknowledgment (NACK) for a
+request to have the same address, it will ask for the same IP.
+
+Additional query words: prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

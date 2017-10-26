@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231439: XADM: Error 1276 Starting Information Store | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231439: XADM: Error 1276 Starting Information Store" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231439/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231439/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231439/","publisher":null,"image":null,"headline":"Q231439: XADM: Error 1276 Starting Information Store","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231439-xadm-error-1276-starting-information-store">Q231439: XADM: Error 1276 Starting Information Store</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q231439
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 01-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you completely remove and reinstall Exchange Server and then restore the
+Exchange Server directory and information store from an online backup, the
+information store may not start because of error 1276. The following event is
+logged in the Microsoft Windows NT Event Viewer application event log:
+
+  Event ID: 1005
+  Type: Error
+  Source: MSexchangeIS Private
+  Category: General
+  Description: Unable to start the Microsoft information store error 0x4fc
+
+The following event is logged in the Event Viewer System log:
+
+  Event ID 7024
+  Type: Error
+  Source: Service Control Manager
+  Category: None
+  Server specific error 1276
+
+NOTE: Error 1276 (0x4fc) refers to ecDomainError.
+
+CAUSE
+=====
+
+This issue can occur when you reinstall Exchange Server if you use the display
+name instead of the directory name that is used during a clean installation of
+Exchange Server. This issue can also occur if you use a different organization
+or site name instead of the names that were used in the original installation of
+Exchange Server.
+
+RESOLUTION
+==========
+
+To resolve this issue, completely uninstall Exchange Server and then reinstall
+Exchange Server by using the original directory name instead of the display name
+for the organization and site. For additional information about how to remove
+Exchange Server completely, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q259158 XADM: How to Manually Remove Exchange Server 5.5 Completely
+
+When you reinstall Exchange Server, always use the directory name instead of the
+display name that is listed in the properties of the organization and site that
+were used in the original installation of Exchange Server. In most cases, the
+directory name and display name are the same. If they are different and you use
+the display name, event ID 1088 is logged.
+
+To verify the directory name if there is more than one server in the site or
+organization, use the Exchange Server Administrator program to connect to one of
+the Exchange Server computers and check the directory name for the organization
+and site by clicking Properties on the File menu for both the Organization and
+Site objects. Use these names to reinstall Exchange Server. Log on by using the
+Exchange Server service account to reinstall Exchange Server.
+
+To verify the directory name if there is only one server in the site or
+organization, use the Exchange_Server_Setup.log file. This file is always
+located in the root folder in which Exchange Server was originally installed and
+is appended each time that Exchange Server is reinstalled or an Exchange Server
+service pack is applied. If the logical drive for Exchange Server reinstallation
+has changed, a new Exchange_Server_Setup.log file is created. Also, if the
+entire logical folder or hard disk has been rebuilt, the
+Exchange_Server_Setup.log file contains only the new information.
+
+Use Notepad or another text editor to search the Exchange_Server_Setup.log file
+for the first occurrence of the word "Creating." This section contains the
+original organization, site, and computer name. Because the file is appended
+each time that Setup is run, there may be multiple Setup details in the file.
+For additional information about how to use Exchange_Server_Setup.log files to
+determine the original name, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q158545 XADM: How to Determine the Organization, Site, and Computer Name
+
+MORE INFORMATION
+================
+
+For additional information about error 1276, click the article numbers below to
+view the articles in the Microsoft Knowledge Base:
+
+  Q155509 XADM: Restore Exchange When Site or Organization Name Is Unknown
+
+  Q264437 XADM: Event ID 1088 and Error 1276 Occur Even After Reinstalling with
+  the Distinguished Name Listed in the Event 1088
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

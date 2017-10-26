@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150969: XFOR: All Messages Sent Over IMC Result in NDRs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150969: XFOR: All Messages Sent Over IMC Result in NDRs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150969/","publisher":null,"image":null,"headline":"Q150969: XFOR: All Messages Sent Over IMC Result in NDRs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150969-xfor-all-messages-sent-over-imc-result-in-ndrs">Q150969: XFOR: All Messages Sent Over IMC Result in NDRs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150969
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 26-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Microsoft Exchange Internet Mail Connector (IMC) to send SMTP
+mail the IMC may try to send messages to itself. When this happens, users will
+receive non-delivery reports (NDRs).
+
+MORE INFORMATION
+================
+
+The following is an NDR that a user might receive:
+
+  FROM: System Administrator [postmaster@Org.Site.Com]
+  DATE: Monday, May 13, 1996 9:29 AM
+  TO: Test User
+  SUBJECT: Undeliverable:
+
+  Your message did not reach some or all of the intended recipients.
+
+  To: user@microsoft.com
+  Subject: Subject of message
+  Sent: 5/13/96 9:29:16 AM
+
+  The following recipients(s) could not be reached:
+
+  user@microsoft.com on 5/13/96 9:29:16 AM
+  Recipient Not Found
+  [MSEXCH:IMC:Organization:Site:SERVER]
+
+This problem occurs if the IMC is using DNS for the host name resolution. When
+the IMC attempts to resolve a host, it will attempt to query the DNS server for
+the host's IP address. If a site uses an MX wildcard record, it will direct all
+mail to that site. This could mean that the IMC will try to send mail to it's
+own IP address. The following scenario could help explain this:
+
+The computer running the IMC is located in the a.com domain and there's an MX
+wildcard record of *.a.com in the DNS.
+
+The IMC will add a.com to any address except ones ending in a.com. Any address
+that ends in a.com will use the address expressed through the MX wildcard
+record.
+
+Since every address the Microsoft Exchange Message Transfer Agent (MTA) tries to
+resolve will end in a.com, all mail will go to the same Microsoft Exchange
+Server. This may be the Microsoft Exchange Server that the IMC is running on.
+
+RESOLUTION
+==========
+
+If you are experiencing this problem with the IMC, you can add a registry value
+to prevent it. The registry key is:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\ 
+  Services\MSExchangeIMC\PARAMETERS
+
+From the Registry Editor menu, click on Edit, then the Add Value option from
+there.
+
+  Value Name: DisableResolverSearchList
+  Data Type: REG_DWORD
+  Value: 1 (or any non-zero value)
+
+This is case sensitive and should be typed exactly as show above. You will need
+to restart the IMC for the registry key to take effect. Then you can use
+Restest.exe to see if it worked. This utility can be found on the Microsoft
+Exchange Server CD-ROM in the Support\Utils\I386 directory.
+
+
+Additional query words: loop looping resolve
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

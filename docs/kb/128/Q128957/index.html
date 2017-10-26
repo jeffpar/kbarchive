@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128957: Optional Components Unavailable When User Profiles Are Enabled | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128957: Optional Components Unavailable When User Profiles Are Enabled" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128957/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128957/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128957/","publisher":null,"image":null,"headline":"Q128957: Optional Components Unavailable When User Profiles Are Enabled","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128957-optional-components-unavailable-when-user-profiles-are-enabled">Q128957: Optional Components Unavailable When User Profiles Are Enabled</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128957
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95 appscomp kbAppCompatibility
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows Setup tab in the Add/Remove Programs tool may show that a component
+is installed, even though the component is not available to the current user.
+
+For example, the The Microsoft Network check box may be selected in the
+Add/Remove Programs tool even though The Microsoft Network is not available to
+the current user.
+
+CAUSE
+=====
+
+When user profiles are enabled and neither "Include desktop icons and Network
+Neighborhood contents in user settings" nor "Include Start menu and Program
+groups in user settings" is selected, components are available only to the user
+who was logged on when the component was installed.
+
+However, once a component has been installed by one user, the component shows as
+being installed on the Windows Setup tab regardless of which user is logged on.
+
+RESOLUTION
+==========
+
+To make a Windows 95 component that was installed by another user available to
+the current user, follow these steps:
+
+1. Double-click My Computer.
+
+2. Double-click Control Panel.
+
+3. Double-click the Add/Remove Programs icon.
+
+4. On the Windows Setup tab, click the component's check box to clear it.
+
+5. Click the Apply button. If you are prompted to restart the computer, click
+  Yes. After the computer restarts, repeat steps 1-3 to return to the
+  Add/Remove Programs Properties window if necessary.
+
+6. Click the component's check box to select it.
+
+7. Click the Apply button. If you are prompted to restart your computer, click
+  Yes.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem occurs with Windows 95 components that do not have Control Panel
+extensions. When these components are installed, Windows 95 updates the Start
+menu and registry only for the current user profile. When a different user logs
+on, the registry entries and Start menu shortcuts do not exist and the
+components are not available.
+
+The status of components on the Windows Setup tab is not user-specific, however,
+so components are reported as installed no matter which user is logged on.
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

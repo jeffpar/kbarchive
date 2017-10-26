@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115492: SMTP: Troubleshooting the TCP/IP Layer of the Mail Gateway | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115492: SMTP: Troubleshooting the TCP/IP Layer of the Mail Gateway" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115492/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115492/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115492/","publisher":null,"image":null,"headline":"Q115492: SMTP: Troubleshooting the TCP/IP Layer of the Mail Gateway","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115492-smtp-troubleshooting-the-tcpip-layer-of-the-mail-gateway">Q115492: SMTP: Troubleshooting the TCP/IP Layer of the Mail Gateway</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115492
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the SMTP gateway cannot connect to the mail routing host or receive incoming
+mail, the TCP/IP layer may not be working properly. This article describes how
+to troubleshoot the IP and TCP layers.
+
+MORE INFORMATION
+================
+
+Testing the IP Layer
+--------------------
+
+To test the IP layer, use the PING command from the gateway computer up to the
+host and from the host down to the gateway computer:
+
+1. Test the network adapter with the loopback IP address:
+
+  ping 127.0.0.1
+
+  If this test fails, then the problem is related to the network interface card
+  (NIC).
+
+2. Test the connection on the local subnet:
+
+  ping &lt;ip address&gt;
+
+  where &lt;ip address&gt; is the IP address of a host on the same subnetwork.
+  If this fails, then the subnet mask is configured incorrectly.
+
+3. Test the connection to the default gateway:
+
+  ping &lt;gateway ip address&gt;
+
+  where &lt;gateway ip address&gt; is the IP address of the default gateway,
+  also known as a router. If this test fails, then you have an incorrect IP
+  address for the default gateway, or the gateway is down.
+
+4. Test the connection to a remote subnet:
+
+  ping &lt;remote ip address&gt;
+
+  where &lt;remote ip address&gt; is the IP address of a host on another subnet.
+  If this fails, then the connectivity problem is most likely on the remote
+  side.
+
+5. Test the DNS name resolution:
+
+  ping &lt;host.domain&gt;
+
+  where &lt;host.domain&gt; is something like smarthost.microsoft.com If this
+  fails, then either the DNS entry in the TCP/IP configuration is incorrect or
+  the DNS server is having problems providing name service at this time.
+
+If this works, you receive a response indicating how many packets were bounced
+off the destination host. Successful completion of these commands means the IP
+layer is working correctly.
+
+Testing the TCP Layer
+---------------------
+
+To test the TCP layer, use the TELNET command with a "25" after the host ID or IP
+address to specify the mail socket. Run it from the gateway computer up to the
+host and from the host down to the gateway computer:
+
+  telnet tcpiphost.company.com 25 telnet msmailgwy.company.com 25
+
+NOTE: You can't run the second command unless the gateway is running.
+
+If this succeeds, you receive the response "220 ...." from the destination host.
+Type "quit" (without the quotation marks) to end the test. Successful completion
+means the TCP layer is working.
+
+NOTE: If you use -cd (debug) and -lacsy (full logging) the 220 response is
+recorded in the LOG file.
+
+Additional query words: 3.00 errors
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

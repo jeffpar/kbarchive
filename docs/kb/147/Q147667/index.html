@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147667: PRB: ‘Invalid Picture’ Error When Setting Metafile (WMF) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147667: PRB: ‘Invalid Picture’ Error When Setting Metafile (WMF)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147667/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147667/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147667/","publisher":null,"image":null,"headline":"Q147667: PRB: ‘Invalid Picture’ Error When Setting Metafile (WMF)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147667-prb-invalid-picture-error-when-setting-metafile-wmf">Q147667: PRB: ‘Invalid Picture’ Error When Setting Metafile (WMF)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147667
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Setting the Picture property of picture box control to a metafile (.wmf) format
+file can cause Visual Basic to raise the following error:
+
+  Invalid Picture.
+
+Sample code as well as compiled executables for utilities to convert between
+these metafile formats exist in the articles listed in the REFERENCES section.
+
+CAUSE
+=====
+
+This error may occur if you attempt to set the picture property to an image type
+that the control does not understand. If the file or other source of the image
+is corrupt then the control may not be able to interpret the image well enough
+to determine what kind of image it is, let alone display and manipulate it.
+
+With .wmf (metafile) image formats, an additional wrinkle is relevant. Visual
+Basic 4.0, and other Microsoft products such as Microsoft Word and Microsoft
+Excel, do not use the 'standard' metafile format. Instead, these applications
+use an 'Aldus Placeable Format' metafile. The formats differ in that placeable
+metafiles include a 22-byte 'metafileheader' data structure at the beginning of
+the file. The placeable metafile format is incompatible with such Windows API
+functions as CreateMetaFile, GetMetaFile, CopyMetaFile, and PlayMetaFile.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+The following article provides a 16-bit utility that can convert between normal
+Windows metafiles and the corresponding Aldus Placeable Format metafiles:
+
+  Q129658 SAMPLE: Reading and Writing Aldus Placeable Metafiles
+
+The following article contains a sample that provides a 32-bit utility to work
+with the 32-bit enhanced metafile format. The utility can also convert between
+normal (16-bit) metafiles and Aldus Placeable Format metafiles:
+
+  Q145999 SAMPLE: How to Create &amp; Play Enhanced Metafiles in Win32
+
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

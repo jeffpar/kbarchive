@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103527: Setup Reports Less Free Space than MS-DOS (DoubleSpace Drive) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103527: Setup Reports Less Free Space than MS-DOS (DoubleSpace Drive)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103527/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103527/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103527/","publisher":null,"image":null,"headline":"Q103527: Setup Reports Less Free Space than MS-DOS (DoubleSpace Drive)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103527-setup-reports-less-free-space-than-ms-dos-doublespace-drive">Q103527: Setup Reports Less Free Space than MS-DOS (DoubleSpace Drive)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103527
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+SYMPTOMS
+========
+
+You are running Microsoft MS-DOS 6.2 DoubleSpace, drive C is compressed, and you
+receive the following message when attempting to install MS-DOS 6.2 Upgrade or
+Step-Up:
+
+  There is not enough free space on drive C to install MS-DOS. You cannot
+  install MS-DOS unless your computer has at least 4,200,000 bytes of free disk
+  space on drive C. Exit Setup, and move or delete unneeded files from the
+  drive. For more information about freeing disk space, see 'Diagnosing and
+  Solving Problems.'
+
+  Press ENTER to exit Setup.
+
+CAUSE
+=====
+
+MS-DOS 6.2 Setup may display this error message if the DoubleSpace compressed
+volume file (CVF) does not contain a minimum of 4,200,000 bytes of free
+contiguous hard disk space (even though sufficient hard disk space is reported
+by CHKDSK or DIR).
+
+RESOLUTION
+==========
+
+To work around this problem, defragment the DoubleSpace-compressed drive using
+the DoubleSpace Defrag utility. For example, type "dblspace /defrag" (without
+the quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+DoubleSpace Defrag optimizes the DoubleSpace CVF and creates a contiguous block
+of free space in the CVF. You should then be able to successfully run the MS-DOS
+6.2 Setup program.
+
+If Setup still reports there is insufficient space, free some space by moving or
+deleting files from the drive.
+
+IMPORTANT: If you are installing MS-DOS 6.2 Step-Up, do not delete MS-DOS files
+from your hard disk to free space. Step-Up requires these files to update your
+system.
+
+MORE INFORMATION
+================
+
+MS-DOS 6.2 Setup uses a new DoubleSpace application program interface (API)
+function when you install over MS-DOS 6.2. The new API call provides Setup with
+the amount of contiguous free space in the compressed volume file's "sector
+heap" (data area).
+
+Additional query words: 6.20 BBS MS-BBS dummies stepup
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155053: Black Screen on Boot | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155053: Black Screen on Boot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155053/","publisher":null,"image":null,"headline":"Q155053: Black Screen on Boot","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155053-black-screen-on-boot">Q155053: Black Screen on Boot</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155053
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): kbusagekbfaq
+Last Modified: 12-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation 
+- Microsoft Windows NT Server 
+-------------------------------------------------------------------------------
+
+For a Microsoft  Windows XP version of this article, see Q314503.
+
+
+
+SYMPTOMS
+========
+
+When you restart a Microsoft Windows x86-based computer, the computer stops with
+an empty, black screen immediately after the power-on self test (POST) is
+completed.
+
+CAUSE
+=====
+
+The master boot record (MBR), partition tables, boot sector, or NTLDR file is
+corrupted.
+
+RESOLUTION
+==========
+
+1. Create a Microsoft Windows boot disk to start the computer. For additional
+  information, please see the following article in the Microsoft Knowledge
+  Base:
+
+  Q119467 How to Create a Bootable Disk for an NTFS or FAT Partition
+
+  If you can start the computer without errors, the damage is limited to the
+  master boot record (MBR), boot sector, or the NTLDR file. After Windows is
+  running, immediately back up any data of value. Use Disk Administrator to
+  verify that partitions on the boot drive are the correct size. If there are
+  invalid partitions, the best solution is to re-create those partitions and
+  reformat the affected drives, then restore the data from the most recent back
+  up tape. If the system cannot be started from a Windows boot disk, you will
+  most likely have to reinstall Windows and restore from tape.
+
+2. Run the latest virus scanning software to verify no virus is present.
+  MS-DOS-based virus software is sufficient for this purpose, even if the file
+  system is NTFS. MS-DOS-based virus programs can be run from an MS-DOS boot
+  disk.
+
+3. Ensure the master boot record (MBR) is valid. Boot from a virus-free MS-DOS
+  version 5.0 or later boot disk with FDISK on it. Run the following command:
+
+  FDISK /MBR
+
+  WARNING: If your computer is infected virus, using the FDISK /MBR switch may
+  prevent you from being able to start your computer. Before using the FDISK
+  /MBR command, you should be certain that your computer is not infected with a
+  virus.
+
+  Before you perform this step, see the following Microsoft Knowledge Base
+  article:
+
+  Q166454 Using FDISK /MBR for Troubleshooting Windows NT Boot Problems
+
+4. If the primary boot partition is a file allocation table (FAT) partition,
+  boot from an MS-DOS disk, perform a SYS C: command to make the drive MS-DOS
+  bootable, and then perform step 5 to replace the Windows boot sector.
+
+5. Run Windows Setup and choose the Repair option. Choose the Inspect boot
+  Sector and Restore Startup Environment options. If the boot sector on the
+  boot drive is corrupted, this should repair it.
+
+6. If the system still fails to boot correctly, use Attrib.exe or File Manager
+  to remove the file attributes from the NTLDR file located in the root of the
+  system partition. Copy a new NTLDR file from the i386 directory of the
+  Windows CD-ROM to replace the existing one.
+
+7. If you are running Windows and the system partition is NTFS, you may have a
+  fragmented MFT that prevents the system from booting.
+
+For additional information, click the article number about updating the boot
+sector below to view the article about updating the boot sector in the Microsoft
+Knowledge Base:
+
+  Q228734 Windows NT Does Not Boot with Highly Fragmented MFT
+
+Additional query words: 4.00 tshoot troubleshoot repair
+
+======================================================================
+Keywords          : kbusage kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch kbWinDataServSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

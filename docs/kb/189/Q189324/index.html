@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189324: SNA Server Manager Shows Incorrect DLC t1 Timer Value | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189324: SNA Server Manager Shows Incorrect DLC t1 Timer Value" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189324/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189324/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189324/","publisher":null,"image":null,"headline":"Q189324: SNA Server Manager Shows Incorrect DLC t1 Timer Value","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189324-sna-server-manager-shows-incorrect-dlc-t1-timer-value">Q189324: SNA Server Manager Shows Incorrect DLC t1 Timer Value</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189324
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0 SP3,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 24-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In SNA Server Manager, the 802.2 DLC tab of the DLC Connection Properties dialog
+box reports incorrect values for T1 timer ticks.
+
+The drop-down list box reports the following:
+
+  Ticks    T1       T2      Ti
+  ------------------------------
+     1    200 ms    40 ms    1 s
+     2    400 ms    80 ms    2 s
+     3    600 ms    120 ms   3 s
+     4    800 ms    160 ms   4 s
+     5      1 s     200 ms   5 s
+     6      1 s     400 ms   5 s
+     7      2 s     800 ms  10 s
+     8      3 s    1200 ms  15 s
+     9      4 s    1600 ms  20 s
+    10   2000 ms   2000 ms  25 s
+
+The drop-down list box should report the following:
+
+  Ticks    T1       T2      Ti
+  ------------------------------
+    1    200 ms     40 ms    1 s
+    2    400 ms     80 ms    2 s
+    3    600 ms    120 ms    3 s
+    4    800 ms    160 ms    4 s
+    5      1 s     200 ms    5 s
+    6      1 s     400 ms    5 s
+    7      2 s     800 ms   10 s
+    8      3 s    1200 ms   15 s
+    9      4 s    1600 ms   20 s
+   10      5 s    2000 ms   25 s
+
+(T1 timer 10 should be "5 s" instead of "2000 ms").
+
+CAUSE
+=====
+
+This error happens because of a mismatch on the table where timer tick values
+are associated with a text string indicating the corresponding amount of time.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 SP3,
+4.0, and 4.0 SP1. We are researching this problem in SNA Server version 3.0 and
+will post more information here in the Knowledge Base as it becomes available.
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+NOTE: A similar problem existed in SNA Server 3.0 and 3.0 SP1. It was corrected
+in SNA Server 3.0 SP2.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+- Use the Snacfg.exe command line tool
+
+MORE INFORMATION
+================
+
+With the fix applied, the table is updated so the text strings now indicate the
+real amount of time for each of the 10 T1, T2, and Ti timer Ticks, as shown on
+the second table above.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q172434 Manager Displays Wrong Values for 802.2 T1 and Ti Timer Ticks
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ300SP3 kbSNAServ400SP1
+Version           : WINDOWS:3.0 SP3,4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

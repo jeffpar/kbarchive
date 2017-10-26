@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125749: PRB: Cause of the R6025 Run-Time Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125749: PRB: Cause of the R6025 Run-Time Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125749/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125749/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125749/","publisher":null,"image":null,"headline":"Q125749: PRB: Cause of the R6025 Run-Time Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125749-prb-cause-of-the-r6025-run-time-error">Q125749: PRB: Cause of the R6025 Run-Time Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125749
+Product(s): Microsoft C Compiler
+Version(s): 1.0 1.5 1.51 1.52 2.0 2.1 4.0 5.
+Operating System(s): 
+Keyword(s): kberrmsg kbCompiler kbCPPonly kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52, 2.0, 2.1, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The C++ program fails, and reports the following run-time error:
+
+  runtime error R6025
+  - pure virtual function call
+
+CAUSE
+=====
+
+This error occurs when your application indirectly calls a pure virtual member
+function in a context where a call to the function is not valid. In most cases,
+the compiler detects this and reports the error when building the application.
+But depending on how your code is written, sometimes the problem is detected
+only at run-time.
+
+The error occurs when you indirectly call a pure virtual function within the
+context of a call to the constructor or destructor of an abstract base class.
+This is illustrated in the sample code below, along with some more description.
+
+RESOLUTION
+==========
+
+Calling a pure virtual function is a programming error, so you need to find the
+call to the pure virtual function and rewrite the code so it is not called.
+
+One way to find a call to a pure virtual function is to replace the pure virtual
+function with an implementation that calls the Windows API function
+DebugBreak(). When using the debugger, DebugBreak() will cause a hard-coded
+breakpoint. When the code stops running at this breakpoint, you can view the
+callstack to see where the function was called.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+For more information, refer to the "C Run-Time Errors R6002 through R6025"
+chapter of the "Build Errors" book included with Visual C++ 32-bit Edition,
+version 4.0, Books Online or search the Books Online for "R6025."
+
+NOTE: The R6025 error is not documented in the manuals or online help included
+with Visual C++, versions 2.x or below. However, it is briefly discussed in Part
+3 of the README.WRI file shipped with Visual C++ version 2.0.
+
+Sample Code
+-----------
+
+     /* Compile options needed: none
+     */ 
+
+     class A;
+
+     void fcn( A* );
+
+     class A
+     {
+     public:
+         virtual void f() = 0;
+         A() { fcn( this ); }
+     };
+
+     class B : A
+     {
+         void f() { }
+     };
+
+     void fcn( A* p )
+     {
+         p-&gt;f();
+     }
+
+     // The declaration below invokes class B's constructor, which
+     // first calls class A's constructor, which calls fcn. Then
+     // fcn calls A::f, which is a pure virtual function, and
+     // this causes the run-time error. B has not been constructed
+     // at this point, so the B::f cannot be called. You would not
+     // want it to be called because it could depend on something
+     // in B that has not been initialized yet.
+
+     B b;
+
+     void main()
+     {
+     }
+
+Additional query words: 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kberrmsg kbCompiler kbCPPonly kbVC kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC500 kbVC600 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC152 kbVC500Search
+Version           : 1.0 1.5 1.51 1.52 2.0 2.1 4.0 5.
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

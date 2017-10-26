@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217183: FIX: GetPropertyInfo Not Returning Correct Values for Default Ca | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217183: FIX: GetPropertyInfo Not Returning Correct Values for Default Ca" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217183/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217183/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217183/","publisher":null,"image":null,"headline":"Q217183: FIX: GetPropertyInfo Not Returning Correct Values for Default Ca","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217183-fix-getpropertyinfo-not-returning-correct-values-for-default-ca">Q217183: FIX: GetPropertyInfo Not Returning Correct Values for Default Ca</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217183
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:6.0,6.0 SP3; winnt:6.0
+Operating System(s): 
+Keyword(s): kbservicepack kbDatabase kbProvider kbVC600bug kbATL300bug kbVS600sp2bug kbVS600sp3fix
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual Studio, Enterprise Edition versions 6.0, 6.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After creating an OLE DB Provider with the ATL Wizard in Visual C++ 6.0, the
+IDBProperties::GetPropertyInfo returns all of the DATASOURCEINFO properties
+rather than the initialization properties; also, the GUID returned in the
+DBPROPINFOSET structure is DBPROPSET_DBINITALL.
+
+CAUSE
+=====
+
+This problem is caused by a bug in IDBPropertiesImpl::GetPropertyInfo(),
+implemented in the ATL OLE DB header file Atldb.h.
+
+RESOLUTION
+==========
+
+Install Visual Studio Service Pack 3 to get a corrected version of Atldb.h.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+According to the OLE DB documentation:
+
+  If cPropertyIDSets is zero, the provider ignores rgPropertyIDSets. When
+  called on the enumerator, the provider returns information about all
+  properties in the Initialization property group. When called on the data
+  source object, if the data source object has not been initialized, the
+  provider returns information about all properties in the Initialization
+  property group.
+
+  Also regarding the GUID returned in DBPROPINFOSET and the special GUIDs like
+  DBPROPSET_DBINITALL:
+
+  These GUIDs are not returned in the guidPropertySet element of the
+  DBPROPINFOSET structures returned in rgPropertyInfoSets. Instead, the GUID of
+  the property set to which the property belongs is returned.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ATL COM project using the ATL COM AppWizard, and accept all
+  default settings.
+
+2. From the Insert menu, click New ATL Object.
+
+3. Select Data Access in the left pane, then Provider in the list of objects.
+
+4. Give the object a name.
+
+5. Save and compile the project.
+
+6. Debug the project and when asked for an executable, specify ITest.exe from
+  the MS Data Access SDK (MSDASDK). If you need to install the MSDASDK, it can
+  be found on CD 2 of Visual C++ or Visual Studio, under the DASDK directory.
+
+7. Once ITest is running, right-click Win32[oledb Providers] and select
+  CoCreateInstance.
+
+8. Double-click the Value column of the first row to activate a drop down list
+  of providers.
+
+9. Select your provider from the list.
+
+10. Select the ICW menu and then Execute.
+
+11. Right-click your provider in the Object window and select IDBProperties and
+  then GetPropertInfo from the sub-menu.
+
+12. Ensure that cPropertyIDSets is set to 0 (zero).
+
+13. Allocate memory for pcPropertyInfoSets by right-clicking the Value column
+  and selecting AllocateMemory from the context menu.
+
+14. Ensure prgPropertInfoSets and ppDescBuffer have memory allocated; you should
+  see &amp;NULL rather than NULL.
+
+15. Select the ICW menu and then Execute.
+
+16. Look at the results in the Output window.
+
+RESULTS: You will get back all of the DATASOURCEINFO properties rather than the
+initialization properties; also, the GUID returned in the DBPROPINFOSET
+structure is DBPROPSET_DBINITALL.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbDatabase kbProvider kbVC600bug kbATL300bug kbVS600sp2bug kbVS600sp3fix kbGrpDSVCDB kbVS600SP1bug 
+Technology        : kbVCsearch kbVSsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVS600SP3 kbVS600 kbVS600Search
+Version           : WINDOWS:6.0,6.0 SP3; winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

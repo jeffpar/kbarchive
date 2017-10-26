@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191336: SMS: How to Create a Custom Remote Control Group in SMS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191336: SMS: How to Create a Custom Remote Control Group in SMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191336/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191336/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191336/","publisher":null,"image":null,"headline":"Q191336: SMS: How to Create a Custom Remote Control Group in SMS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191336-sms-how-to-create-a-custom-remote-control-group-in-sms">Q191336: SMS: How to Create a Custom Remote Control Group in SMS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191336
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbtshoot smsremtshoot kbRemoteProg
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+The information in this article is intended to help set up a group that will be
+primarily responsible for performing the Remote Control functions of a
+production help desk. This article will cover how to set up the IDs in SQL
+Server and Systems Management Server as well as how to update the clients in the
+site so that the newly created group can take remote control of the computers.
+
+MORE INFORMATION
+================
+
+The first task in this process is the creation of the ID in the SQL Enterprise
+Manager. With SQL Server in Standard security, the steps in creating this ID
+are:
+
+1. Open the SQL Enterprise Manager.
+
+2. Open the Databases folder and expand the SMS database so that the folders
+  Groups/Users and Objects appear.
+
+3. Under the SMS database, right-click the Groups/Users folder and then click
+  New Group on the shortcut menu to create a new group for the users that will
+  have the Remote Control responsibilities.
+
+4. Type the name of the group, click Add to create it, and then click Close.
+
+5. Right-click the Logins folder at the bottom of the SQL Server tree and then
+  click New Login on the shortcut menu.
+
+6. Add the name of the login and give it a password. Give this new user the
+  Permit right to the SMS database. Click the Group field for the SMS database
+  to reveal the Group drop-down menu. Specify the group that you created in
+  steps 4 and 5 and then click Add. Repeat steps 5 and 6 for each user you want
+  to create.
+
+7. Open and log in to the SMS Security Manager. This may take a few minutes.
+
+8. In the ID drop down box in the upper left, you should see "dbo" by default.
+  Change this to the new login ID that you just created in the SQL Enterprise
+  Manager. All of the Objects listed should show "NO ACCESS" in both Proposed
+  and Current Rights.
+
+9. Give the following objects these rights:
+
+     Alerts                No Access
+     Architectures         View
+     Diagnostics           Full
+     Events                No Access
+     Helpdesk              Full
+     Jobs                  No Access
+     Machine Groups        No Access
+     Network Monitor       No Access
+     Packages              No Access
+     Program Groups        No Access
+     Queries               No Access
+     Site Groups           View
+     Sites                 View
+     SNMP Traps            No Access
+
+  NOTE: View permissions is the minimum for the Architectures object because
+  this is required to be able to see the Sites window.
+
+10. Click Security at the top menu and then click Save User. Repeat steps 8-10
+  for each user that you had created in SQL Enterprise Manager. Close SMS
+  Security Manager when you are finished.
+
+To notify the clients of this new group, you must perform the steps below. these
+steps involve making a change to the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+1. On the servers that you DO NOT want the help desk group to have access to, go
+  to HKLM\SOFTWARE\MICROSOFT\SMS\CLIENT SERVICE\REMOTE CONTROL and change the
+  Override Site Permitted Viewer List option to 1.
+
+2. In the Systems Management Server Administrator program, open the Site
+  Properties by selecting the site in the Sites window, clicking File menu, and
+  then clicking Properties.
+
+3. Click Clients and select the Proposed Properties radio button, followed by
+  the now-enabled Options button.
+
+4. In the Allow Access For These Users box, add the new Remote Control group to
+  the list.
+
+5. Click OK until you have closed out of the Site Properties. Then click Yes to
+  update the site.
+
+6. Using a text editor such as Notepad, open and save the System.map file
+  WITHOUT making any changes. Doing this causes all clients to begin the
+  Upgrade process upon the next client logon. For more information, see the
+  following article in the Microsoft Knowledge Base:
+
+  Q166771 SMS: How to Force Site-Wide Client Updates
+
+This procedure allows a system administrator to off-load the remote control
+responsibilities to the help desk or other group if the SQL Server is using
+Standard security.
+
+Additional query words: smsremctrl smsrc RC prodsms helpdesk SEM
+
+======================================================================
+Keywords          : kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

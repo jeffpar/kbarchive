@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87622: PC WSPlus: Running Schedule+ for Windows 1.0 from the Network | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87622: PC WSPlus: Running Schedule+ for Windows 1.0 from the Network" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87622/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87622/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87622/","publisher":null,"image":null,"headline":"Q87622: PC WSPlus: Running Schedule+ for Windows 1.0 from the Network","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87622-pc-wsplus-running-schedule-for-windows-10-from-the-network">Q87622: PC WSPlus: Running Schedule+ for Windows 1.0 from the Network</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87622
+Product(s): Microsoft Schedule+ for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-FEB-2002
+
+1.00
+WINDOWS
+kbnetwork kbtlc
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+This article is addressed to the network administrator and outlines the
+procedure for setting up Microsoft Schedule+ when Schedule+ is run from the
+network, and no Schedule+ files are stored locally on the users'
+workstations. The first section tells how to set up Schedule+ when
+Microsoft Windows and Schedule+ are run entirely from the network. The
+second section tells how to set up Schedule+ when Windows is run locally
+and Schedule+ is run from the network.
+
+NOTE: Schedule+ version 1.0 was not designed to be run directly from the
+network. Because the file I/O that normally occurs on the local workstation
+is being handled by the network, running Schedule+ from the network may
+decrease Schedule+'s performance.
+
+RUNNING WINDOWS AND SCHEDULE+ FROM THE NETWORK
+----------------------------------------------
+
+Definitions:
+
+- &lt;WINSHARE&gt; refers to the shared location of the network installation of
+  Windows.
+
+- &lt;WINTEMP&gt; refers to a temporary directory for a temporary installation
+  of Windows.
+
+- &lt;MYDIR&gt; refers to the user's network directory where the user stores
+  his or her own Windows files (this will include the *.INI and *.GRP files).
+
+INSTALLATION STEPS:
+
+To set up the Schedule+ 1.0 shared files
+
+1. Create the &lt;WINTEMP&gt; directory on the server or a local workstation,
+  and run "setup /n" (without the quotation marks) from the &lt;WINSHARE&gt;
+  directory to create a new installation of Windows in the &lt;WINTEMP&gt;
+  directory.
+
+2. Run Windows from &lt;WINTEMP&gt; Use the Windows File Manager to start Setup
+  by double-clicking SETUP.EXE on the Schedule+ Program Setup Disk #2.
+
+  During setup:
+
+  a. Choose Custom Setup.
+
+  b. When Setup prompts for the Schedule+ directory, type "WINSHARE" (without
+     the quotation marks) as the location. For example, type "L:\WINDOWS"
+     (without the quotation marks) if this is the location of the network
+     version of Windows.
+
+  c. When Setup asks if you want to install the Schedule+ Reminder program to
+     load automatically, choose the No button.
+
+  d. When Setup is complete and it asks if you want to Run Schedule+, Run
+     Demos, or Exit To Windows, choose Exit To Windows.
+
+  This process will install all the Schedule+ for Windows program files in the
+  same directory as Windows and create a clean SCHDPLUS.INI file.
+
+3. Set all files in &lt;WINSHARE&gt; to Read-Only. For Novell(R) networks, set
+  the files to Shareable and Read-Only.
+
+4. Copy SCHDPLUS.INI from &lt;WINTEMP&gt; to &lt;WINSHARE&gt;.
+
+5. Remove &lt;WINTEMP&gt; (including all files and the directory).
+
+To set up a user for Schedule+ 1.0
+
+1. Copy SCHDPLUS.INI from &lt;WINSHARE&gt;to &lt;MYDIR&gt;.
+
+2. In a group in the Windows Program Manager create a Microsoft Schedule+ 1.0
+  icon with the following properties:
+
+     Description:       Microsoft Schedule+
+     Command Line:      &lt;WINSHARE&gt;\SCHDPLUS.EXE
+     Working Directory: &lt;WINSHARE&gt;
+     Shortcut Key:      None
+     Run Minimized      Not checked
+
+3. Modify each user's WIN.INI file to include the following setting:
+
+     [Sounds]
+     SchdplusReminder=&lt;WINSHARE&gt;\MSREMIND.WAV,Schedule+ Reminders
+
+4. If a user wants to be automatically reminded of scheduling messages, create
+  an icon in the Startup group to start the file MSREMIND.EXE.
+
+5. Verify that the &lt;WINSHARE&gt; directory is in the MS-DOS search path for
+  each user.
+
+RUNNING WINDOWS LOCALLY AND SCHEDULE+ FROM THE NETWORK
+------------------------------------------------------
+
+Definitions:
+
+- &lt;WINDIR&gt; refers to an individual user's locally installed Windows
+  directory.
+
+- &lt;SCHDPLUS&gt; refers to the Microsoft Schedule+ directory on the network
+  server.
+
+INSTALLATION STEPS:
+
+To set up the Schedule+ 1.0 shared files and the first user
+
+1. Run Windows from the first user's workstation. Use the Windows File Manager
+  to start Setup by double-clicking SETUP.EXE on the Schedule+ Program Setup
+  Disk #2. During setup:
+
+  a. Choose Custom Setup.
+
+  b. When Setup prompts for the Schedule+ directory, type "SCHDPLUS" (without
+     the quotation marks) as the location. For example, type "L:\SCHEDULE"
+     (without the quotation marks) if this is the location of the
+     network-shared copy of Schedule+.
+
+  c. When Setup asks if you want to install the Schedule+ Reminder program to
+     load automatically, choose the No button.
+
+  d. When Setup is complete and it asks if you want to Run Schedule+, Run
+     Demos, or Exit To Windows, choose Exit To Windows.
+
+  This process will install all the Schedule+ program files and create a clean
+  SCHDPLUS.INI file.
+
+2. Copy the following files from the first user's workstation to
+  &lt;SCHDPLUS&gt;:
+
+     &lt;WINDIR&gt;\SCHDPLUS.INI
+     &lt;WINDIR&gt;\WINHELP.EXE
+     &lt;WINDIR&gt;\SYSTEM\SHELL.DLL
+     &lt;WINDIR&gt;\SYSTEM\COMMDLG.DLL
+
+     (Schedule+-specific DLL files:)
+
+     &lt;WINDIR&gt;\SYSTEM\NVCONN.DLL
+     &lt;WINDIR&gt;\SYSTEM\TRNSCHED.DLL
+     &lt;WINDIR&gt;\SYSTEM\PABNSP.DLL
+     &lt;WINDIR&gt;\SYSTEM\MAILMGR.DLL
+     &lt;WINDIR&gt;\SYSTEM\MAILSPL.EXE
+     &lt;WINDIR&gt;\SYSTEM\DEMILAYR.DLL
+     &lt;WINDIR&gt;\SYSTEM\AB.DLL
+     &lt;WINDIR&gt;\SYSTEM\STORE.DLL
+     &lt;WINDIR&gt;\SYSTEM\FRAMEWRK.DLL
+     &lt;WINDIR&gt;\SYSTEM\MSSFS.DLL
+
+3. Remove all the above "Schedule+-specific DLL files" from
+  &lt;WINDIR&gt;\SYSTEM.
+
+To set up additional users for Schedule+ 1.0
+
+1. Copy SCHDPLUS.INI from &lt;SCHDPLUS&gt; to &lt;WINDIR&gt;.
+
+2. In a group in the Windows Program Manager create a Microsoft Schedule+ 1.0
+  icon with the following properties:
+
+     Description:       Microsoft Schedule+
+     Command Line:      &lt;SCHDPLUS&gt;\SCHDPLUS.EXE
+     Working Directory: &lt;SCHDPLUS&gt;
+     Shortcut Key:      None
+     Run Minimized      Not checked
+
+3. Modify each user's WIN.INI file to include the following setting:
+
+     [Sounds]
+     SchdplusReminder=&lt;SCHDPLUS&gt;\MSREMIND.WAV,Schedule+ Reminders
+
+4. If a user wants to be automatically reminded of scheduling messages, create
+  an icon in the Startup group to start the file MSREMIND.EXE.
+
+5. Place the &lt;SCHDPLUS&gt; directory in the MS-DOS search path for each
+  user.
+
+  NOTE: If you are using Windows version 3.0, you must replace the following
+  file in your &lt;WINDIR&gt; directory with the copy found in the
+  &lt;SCHDPLUS&gt; directory for the Schedule+ Help to operate properly:
+
+     WINHELP.EXE   Windows 3.1 Help engine
+
+Additional query words: 1.00 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

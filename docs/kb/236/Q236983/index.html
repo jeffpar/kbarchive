@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236983: XADM: Using Directory Import to Modify the Internet Protocol | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236983: XADM: Using Directory Import to Modify the Internet Protocol" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236983/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236983/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236983/","publisher":null,"image":null,"headline":"Q236983: XADM: Using Directory Import to Modify the Internet Protocol","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236983-xadm-using-directory-import-to-modify-the-internet-protocol">Q236983: XADM: Using Directory Import to Modify the Internet Protocol</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236983
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 22-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use directory export and import to enable or
+disable all of the mailboxes from using Hypertext Transfer Protocol (HTTP) when
+HTTP is enabled for the site and server.
+
+MORE INFORMATION
+================
+
+NOTE: The &lt;A7&gt; symbol is the ALT+0167 ASCII character.
+
+To use directory export and import to enable or disable all of the mailboxes from
+using HTTP:
+
+1. Perform a directory export, and then add the following heading (column) to
+  the .csv file that you created:
+
+  Protocol-Settings
+
+2. Populate this column with one of the following settings to either turn on the
+  HTTP protocol for the mailboxes or turn off the HTTP protocol for the
+  mailboxes, as applicable:
+
+   - HTTP on:
+
+  HTTP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%IMAP4&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;ISO-8859-1&lt;A7&gt;0&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;0%LDAP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%NNTP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;3&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%POP3&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;ISO-8859-1&lt;A7&gt;0&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;
+
+   - HTTP off:
+
+  HTTP&lt;A7&gt;0&lt;A7&gt;1&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%IMAP4&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;ISO-8859-1&lt;A7&gt;0&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;0%LDAP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%NNTP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;3&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%POP3&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;ISO-8859-1&lt;A7&gt;0&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;
+
+3. Save the .csv file. Make sure that you do not change the format to an .xls
+  file format.
+
+4. Perform a directory import with the modified .csv file. Microsoft recommends
+  that you remove all of the columns except the following columns from the .csv
+  file before you import it:
+
+   - Obj-Class
+
+   - Alias Name
+
+   - Directory Name
+
+   - Home-Server
+
+   - Obj-Container
+
+   - Protocol-Settings
+
+  When you click Directory Import on the Tools menu, make sure that you click
+  Multivalued Properties Overwrite, instead of clicking Append, or the change
+  to the .csv file is not made.
+
+Each mailbox that is listed in the .csv file is modified according to the HTTP
+setting that you added to the .csv file.
+
+You can also use this method to enable or disable Internet Message Access
+Protocol Version 4rev1 (IMAP4), Lightweight Directory Access Protocol (LDAP),
+Network News Transfer Protocol (NNTP), and Post Office Protocol version 3
+(POP3).
+
+The string is comprised of each protocol setting and the percent symbol (%)
+separating the protocols, as applicable:
+
+  HTTP&lt;A7&gt;0&lt;A7&gt;1&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%
+  IMAP4&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;ISO-8859-1&lt;A7&gt;0&lt;A7&gt;1&lt;A7&gt;0&lt;A7&gt;0%
+  LDAP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%
+  NNTP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;3&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%
+  POP3&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;ISO-8859-1&lt;A7&gt;0&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;
+
+The number that follows the first &lt;A7&gt; symbol disables or enables that protocol for
+the mailbox, as follows:
+
+- 1=on
+
+- 0=off
+
+The number that follows the second &lt;A7&gt; symbol disables or enables that protocol for
+the server.
+
+For example, if you wanted to disable POP3 and leave all of the other protocols
+enabled, use the following entry in your .csv file under the Protocol-Settings
+heading:
+
+  HTTP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%IMAP4&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;ISO-8859-1&lt;A7&gt;0&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;0%LDAP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%NNTP&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;3&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;%POP3&lt;A7&gt;0&lt;A7&gt;1&lt;A7&gt;1&lt;A7&gt;ISO-8859-1&lt;A7&gt;0&lt;A7&gt;&lt;A7&gt;&lt;A7&gt;
+
+NOTE: If you disable NNTP, HTTP, POP3, and IMAP4 on the server, support for these
+protocols is also disabled for individual mailboxes or custom recipients. The
+protocol may be displayed as enabled on the Protocol tab of the mailbox
+properties even though the protocol is disabled on the server, but an error
+message is displayed when the user tries to use this protocol.
+
+For example, if you disable HTTP on the server, the HTTP protocol is displayed as
+enabled on the user's mailbox. If this user attempts to open Outlook Web Access
+(OWA), the following error message is displayed:
+
+  HTTP access for this account has been disabled by an administrator.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

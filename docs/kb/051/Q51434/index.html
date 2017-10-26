@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q51434: HOWTO: Calculate Available File Handles at Run Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q51434: HOWTO: Calculate Available File Handles at Run Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/051/Q51434/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/051/Q51434/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/051/Q51434/","publisher":null,"image":null,"headline":"Q51434: HOWTO: Calculate Available File Handles at Run Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q51434-howto-calculate-available-file-handles-at-run-time">Q51434: HOWTO: Calculate Available File Handles at Run Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q51434
+Product(s): Microsoft C Compiler
+Version(s): MS- DOS:6.0,6.00a,6.00ax,7.0;OS/2:6.0,6.00a;WIN3X:1.0,1.5;WINNT:1.0,2.0;
+Operating System(s): 
+Keyword(s): kbCRT kbVC
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft C for MS-DOS, versions 5.1, 6.0, 6.0a, 6.0ax 
+   - Microsoft C for OS/2, versions 5.1, 6.0, 6.0a 
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following code sample allows you to determine how many CRT file handles are
+available at run time for a particular process. The function makes use of the
+predefined pointers _iob and _lastiob, which are set to point to the first and
+the last input/output information blocks, respectively. The I/O blocks are
+examined to determine whether they are in use, and a total number of available
+file handles is produced. There is no equivalent C library function currently
+available.
+
+NOTE: This is not necessarily an indication of the maximum number of physical
+files that can be opened. The system-wide limit is set in MS-DOS by FILES= in
+the CONFIG.SYS file. In OS/2, this limit is arbitrarily governed by system
+resources and is modified for each process by DosSetMaxFH().
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+     /*
+     Compile options needed: /DNO_EXT_KEYS under Windows NT, none otherwise
+
+     NOTE: This code will not compile unless it is compiled as a .C file
+           and not a .CPP.
+     */ 
+
+     #define FILE struct _iobuf
+     #ifndef NO_EXT_KEYS           /* Extensions enabled */ 
+         #define _CDECL  cdecl
+         #define _NEAR   near
+     #else                         /* Extensions not enabled */ 
+         #define _CDECL
+         #define _NEAR
+     #endif                        /* NO_EXT_KEYS */ 
+
+     #define _IOREAD 0x01          /* Open for read bit */ 
+     #define _IOWRT  0x02          /* Open for write bit */ 
+     #define _IORW   0x80          /* Open for read/write bit */ 
+
+     FILE                          /* File handle table entry */ 
+     {
+         char *_ptr;
+         int   _cnt;
+         char *_base;
+         char  _flag;
+         char  _file;
+      }_NEAR _CDECL _iob[], /*Set to first I/O block at run time*/ 
+                    *_lastiob;   /* Set to last I/O block */ 
+
+     /*
+        All of the above definitions were taken from the STDIO.H header
+        file except for _lastiob[], which is not defined. This information
+        was extracted to make the example more clear.
+     */ 
+
+     /*
+      - The following macro will check the availability of a file handle
+        by examining the _flag member of the I/O block
+     */ 
+
+     #define inuse(s) ((s)-&gt;_flag &amp; (_IOREAD|_IOWRT|_IORW))
+
+     /*
+      - The following routine loops through the total number of I/O blocks
+        and checks the flags to see if it is used or not. The number of
+        unused handles is returned, which can be 1 to the maximum number of
+        file handles as set by the operating system or the FILES= command
+        in the CONFIG.SYS file.
+     */ 
+
+     int Number_Of_Handles(void)
+     {
+        FILE *stream = _iob;
+        int count;
+
+        count = 0;
+        do
+           if (inuse(stream)) count++;
+        while(stream++ &lt; _lastiob);
+
+        return(((_lastiob - _iob)+1)-count);
+     }
+
+     void main(void)
+     {
+        int i;
+
+        i = Number_Of_Handles();
+     /* i is now set to the number of available file handles */ 
+     }
+
+The table of I/O blocks that is being checked here was allocated at run time
+according to the maximum number of file handles allowed per process.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : MS- DOS:6.0,6.00a,6.00ax,7.0;OS/2:6.0,6.00a;WIN3X:1.0,1.5;WINNT:1.0,2.0;
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

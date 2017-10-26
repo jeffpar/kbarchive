@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156179/","publisher":null,"image":null,"headline":"Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156179-howto-use-the-boundto-property-to-store-numeric-values">Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156179
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbDesigner kbvfp500 kbvfp600
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual FoxPro 3.0, when the ControlSource property of a combo box or list box
+evaluates to a numeric value, the ControlSource property stores the index number
+(position) in the list instead of the actual numeric value that is displayed.
+However, a new property named BoundTo has been introduced in Visual FoxPro 5.0
+to solve this problem.
+
+MORE INFORMATION
+================
+
+The RowSource property of a combo box or list box specifies the source of the
+values; that is, it indicates where the data is coming from.
+
+The ControlSource property of a combo box specifies the data that is modified
+when a selection is made. It indicates where the data is going to.
+
+When a combo box or a list box is bound to a ControlSource property with
+character data type, the character value is stored to the ControlSource property
+as it shows in the list. However, if it is bound to a ControlSource property
+with numeric data, the numeric value stores differently, depending on the
+setting of the BoundTo property. Below is a step-by-step example that shows you
+how to store the actual numeric value to the ControlSource property of a combo
+box or a list box:
+
+1. Create a new form.
+
+2. On the View menu, click Data Environment and add the \Samples\Data\Orditems
+  table to the DataEnvironment object. In Visual FoxPro 6.0, the Orditems table
+  can be found in home(2)+"Data".
+
+3. Add a combo box control to the new form, then set combo box properties as
+  follows:
+
+        RowSource = 10,20,30,40,50,60,70,80,90,100
+        RowSourceType = 1-Value
+        ControlSource = orditems.quantity
+        BoundTo = .T.
+
+4. Save and Run the form.
+
+Now, when you click any item in the combo box, the actual numeric value stores to
+the quantity field. You can verify this by browsing the orditems table while you
+are making changes to the combo box.
+
+However, if you set the BoundTo property to .F., the index number (position) of
+the list is stored to the quantity field instead.
+
+Additional query words: combobox listbox
+
+======================================================================
+Keywords          : kbDesigner kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

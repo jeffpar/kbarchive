@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108788: How to Return to MS-DOS After Installing PC DOS 6.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108788: How to Return to MS-DOS After Installing PC DOS 6.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108788/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108788/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108788/","publisher":null,"image":null,"headline":"Q108788: How to Return to MS-DOS After Installing PC DOS 6.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108788-how-to-return-to-ms-dos-after-installing-pc-dos-61">Q108788: How to Return to MS-DOS After Installing PC DOS 6.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108788
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+and filenames.
+
+SUMMARY
+=======
+
+To upgrade from IBM PC DOS 6.1 to MS-DOS 6.2, or to return to your previous
+version of MS-DOS, follow the appropriate procedure (based on your system
+configuration and the options you chose when you installed IBM PC DOS 6.1)
+below.
+
+MORE INFORMATION
+================
+
+Your Hard Disk Drive Is Not Compressed and You Want to Install
+
+MS-DOS 6.2 Upgrade
+------------------
+
+Run MS-DOS 6.2 Upgrade Setup. For example, put MS-DOS 6.2 Upgrade Setup Disk 1 in
+drive A, type "a:setup" (without the quotation marks) at the IBM PC DOS command
+prompt, and then press ENTER.
+
+You Did Not Create an Uninstall Disk, Your Hard Disk Drive Is Not
+
+Compressed, and You Want to Return to MS-DOS 6.0
+------------------------------------------------
+
+1. Use the MOVE command to change the C:\DOS directory to another name. For
+  example, type "move c:\dos c:\pcdos" (without the quotation marks) at the
+  MS-DOS command prompt and then press ENTER.
+
+2. Run MS-DOS 6 Upgrade Setup. For example, put MS-DOS 6 Upgrade Setup Disk 1 in
+  drive A, and type "a:setup" (without the quotation marks) at the MS-DOS
+  command prompt and then press ENTER.
+
+3. After Setup is finished and has rebooted your system, delete the IBM PC DOS
+  6.1 files and directory. For example, type "deltree /y c:\pcdos" (without the
+  quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+You Did Not Create an Uninstall Disk, Your Hard Disk Drive Is Not
+
+Compressed, and You Want to Install MS-DOS 6.2 Upgrade
+------------------------------------------------------
+
+Put the MS-DOS 6.2 Upgrade Setup Disk 1 in drive A and type "a:setup" (without
+the quotation marks) at the IBM PC DOS 6.1 command prompt.
+
+You Did Not Create an Uninstall Disk, Your Hard Disk Drive Is Not Compressed, and
+You Want to Return to MS-DOS 6 Upgrade So That You Can Then Install MS-DOS 6.2
+Step-Up)
+
+1. Move the C:\DOS directory to another name. For example, type "move c:\dos
+  c:\pcdos" (without the quotation marks) at the MS-DOS command prompt and then
+  press ENTER.
+
+2. Run MS-DOS 6 Upgrade Setup. For example, put MS-DOS 6 Upgrade Setup Disk 1 in
+  drive A, and type "a:setup" (without the quotation marks) at the MS-DOS
+  command prompt and then press ENTER.
+
+3. After Setup is finished and has rebooted your system, delete the IBM PC DOS
+  6.1 files and directory. For example, type "deltree /y c:\pcdos" (without the
+  quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+4. Run MS-DOS 6.2 Step-Up Setup. For example, put MS-DOS 6.2 Step-Up Disk 1 in
+  drive A, and type "a:setup" (without the quotation marks) at the MS-DOS
+  command prompt and then press ENTER.
+
+Your Hard Disk Drive Is Compressed, Your System Does Not Have a Partition
+
+Less Than 32 Megabytes, and You Want to Return to MS-DOS 6.0
+------------------------------------------------------------
+
+1. If you have enough free space, run SSUNCOMPRESS.EXE to remove the IBM PC DOS
+  6.1 compression software.
+
+  If you do not have enough free space, refer to the section of this article
+  titled "Your Hard Drive Is Compressed, Your System Has a Partition Less Than
+  32 Megabytes or Insufficient Free Space to Run SSUNCOMPRESS.EXE, and You Want
+  to Return to MS-DOS 6.0."
+
+2. Use the MOVE command to change the C:\DOS directory to another name. For
+  example, type "move c:\dos c:\pcdos" (without the quotation marks) at the
+  MS-DOS command prompt and then press ENTER. EX.
+
+3. Run MS-DOS 6 Upgrade Setup. For example, put MS-DOS 6 Upgrade Setup Disk 1 in
+  drive A, and type "a:setup" (without the quotation marks) at the MS-DOS
+  command prompt and then press ENTER.
+
+4. After Setup is finished and has rebooted your system, delete the IBM PC DOS
+  6.1 files and directory. For example, type "deltree /y c:\pcdos" (without the
+  quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+NOTE: If you try to use your Uninstall disk and one or your drives is compressed,
+your system will be left with an unusual configuration (that is, it will contain
+two DOS systems). Your compressed volume file (CVF) gets modified whether or not
+you chose to install SuperStor during the IBM PC DOS 6.1 installation. For this
+reason, you must remove the compression software before returning to MS-DOS 6.0,
+even if you have an Uninstall disk.
+
+You Did Not Create an Uninstall Disk, Your Hard Disk Drive Is Compressed, Your
+System Has a Partition Less Than 32 Megabytes or Insufficient Free
+
+Space to Run SSUNCOMPRESS.EXE, and You Want to Return to MS-DOS 6.0.
+--------------------------------------------------------------------
+
+You must use the following procedure because the IBM PC DOS 6.1 SSUNCOMPRESS.EXE
+fails (in the middle of the uncompress process) on a partition with less than 32
+megabytes.
+
+1. Back up your data on all the compressed drives.
+
+2. Run SSTOR to determine which drives are compressed and which are not. Write
+  this information down.
+
+3. Restart your computer using your MS-DOS 6 Upgrade Setup Disk 1.
+
+4. Press F5 when you see the "Starting MS-DOS..." prompt.
+
+5. Type "format &lt;drive&gt;: /s" (without the quotation marks), where
+  &lt;drive&gt; is the startup host drive. For example, "format h: /s."
+
+6. Type "format &lt;drive&gt;:" (without the quotation marks) on all host
+  drives, where &lt;drive&gt; is the host drive.
+
+7. Run MS-DOS 6 Upgrade Setup. For example, put MS-DOS 6 Upgrade Setup Disk 1 in
+  drive A, type "a:setup" (without the quotation marks) at the MS-DOS command
+  prompt, and then press ENTER.
+
+8. Type "dblspace" (without the quotation marks) to run DoubleSpace and compress
+  drive C.
+
+9. Run DoubleSpace again.
+
+10. From the Tools menu, choose Compress.
+
+11. Select the drives that were compressed under IBM PC DOS 6.1 and compress
+  them.
+
+12. Install the program you used to back up your data.
+
+13. Restore your data.
+
+Additional query words: stepup 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

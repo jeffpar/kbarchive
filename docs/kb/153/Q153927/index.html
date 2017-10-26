@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153927: HOWTO: Create Pie Charts Using the Circle Method in VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153927: HOWTO: Create Pie Charts Using the Circle Method in VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153927/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153927/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153927/","publisher":null,"image":null,"headline":"Q153927: HOWTO: Create Pie Charts Using the Circle Method in VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153927-howto-create-pie-charts-using-the-circle-method-in-vb">Q153927: HOWTO: Create Pie Charts Using the Circle Method in VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153927
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbgraphic kbprogramming kbVBp400
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Pinnacle-BPS Graph control shipping with Visual Basic gives users the
+ability to create pie charts. The Pinnacle-BPS is a relatively large control and
+uses a large amount of disk space on distribution disks. Therefore, the custom
+effects available are limited to the features of the control. The Circle method
+in the VBA language provides functionality to draw arcs and segments. By drawing
+segments, you can easily create a pie chart and add custom features as you
+require. Below is a code sample demonstrating how to do this.
+
+MORE INFORMATION
+================
+
+1. Start a new Visual Basic project. Form1 is created by default.
+
+2. Place a Command button on the form.
+
+3. Place a 200x200 pixel Picture box on the form.
+
+4. Add the following code to the Form1 code window:
+
+        Option Explicit
+
+        Public Sub DrawPiePiece(lColor As Long, fStart As Double, fEnd As
+        Double)
+          Const PI As Double = 3.14159265359
+          Const CircleEnd As Double = -2 * PI
+          Dim dStart As Double
+          Dim dEnd As Double
+          Picture1.FillColor = lColor
+          Picture1.FillStyle = 0
+          dStart = fStart * (CircleEnd / 100)
+          dEnd = fEnd * (CircleEnd / 100)
+          Picture1.Circle (100, 100), 60, , dStart, dEnd
+        End Sub
+
+        Private Sub Command1_Click()
+          Picture1.ScaleMode = vbPixels
+          Call DrawPiePiece(QBColor(1), 0.001, 36)
+          Call DrawPiePiece(QBColor(2), 36, 55)
+          Call DrawPiePiece(QBColor(3), 55, 75)
+          Call DrawPiePiece(QBColor(4), 75, 99.999)
+        End Sub
+
+5. Press the F5 key to run the project. You should see a pie chart being drawn
+  with four sections mirroring the four times that the DrawPiece routine was
+  called in the Command1_Click event.
+
+
+REFERENCES
+==========
+
+For more information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q83906 How to Draw an Ellipse with Circle Statement in VB
+
+  Q73280 Overflow in VB Drawing Circle Segment w/ Radius of Zero
+
+Instead of using the Circle method in the VBA language, you can also use the
+Win16/Win32 API Call to achieve the same result.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbgraphic kbprogramming kbVBp400 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

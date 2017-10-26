@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130456: Comparing Visual FoxPro to Other Programming Languages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130456: Comparing Visual FoxPro to Other Programming Languages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130456/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130456/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130456/","publisher":null,"image":null,"headline":"Q130456: Comparing Visual FoxPro to Other Programming Languages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130456-comparing-visual-foxpro-to-other-programming-languages">Q130456: Comparing Visual FoxPro to Other Programming Languages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130456
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Most programming languages have similar features. If you are familiar with one
+programming language, you can easily translate this knowledge to another
+language. This article compares how BASIC, C/C++, Pascal and Visual FoxPro
+implement the basic programming constructs in the following areas:
+
+- Dealing with case sensitivity.
+
+- Declarating variables.
+
+- Adding comments.
+
+- Storing values to variables (assignment statements).
+
+- Structuring IF, CASE, FOR and WHILE statements.
+
+- Passing parameters by value and by reference.
+
+MORE INFORMATION
+================
+
+Dealing with Case Sensitivity
+-----------------------------
+
+Only C/C++ is a case-sensitive programming language.
+
+- BASIC          not case sensitive
+- C/C++          case sensitive
+- Pascal         not case sensitive
+- Visual FoxPro  not case sensitive
+
+Declaring Variables
+-------------------
+
+When you assign a value to a variable (other than an array) that does not exist,
+Visual FoxPro implicitly declares it. (Arrays must be declared using the
+DIMENSION command). Languages that require explicit declaration of variables
+return an error.
+
+- BASIC          Variables can be implicitly declared
+- C/C++          Variables must be explicitly declared
+- Pascal         Variables must be explicitly declared
+- Visual FoxPro  Variables are implicitly declared
+
+Adding Comments
+---------------
+
+Each language has its own format for adding comments to programs. Visual FoxPro
+has different formats for whole line comments and for comments on partial
+lines.
+
+- BASIC          ' comment
+- C/C++          // comment
+                 /* comment block */ 
+- Pascal         { comment block }
+- Visual FoxPro  * full-line comment
+- Visual FoxPro  &amp;&amp; partial-line comment
+
+Storing Values to Variables (Assignment Statements)
+---------------------------------------------------
+
+Pascal requires a colon in the assignment statement.
+
+- BASIC          nVal = 7
+- C/C++          nVal = 7
+- Pascal         nVal := 7
+- Visual FoxPro  nVal = 7
+                 STORE 7 TO nVal
+
+NOTE: In Visual FoxPro, you can also assign values to fields in a table by using
+the REPLACE command.
+
+Structuring IF Statements
+-------------------------
+
+Each language offers equivalent IF functionality.
+
+- BASIC          If nCnt &lt; nMax Then
+                    nTot = nTot * nCnt
+                    nCnt = nCnt + 1
+                 End If
+
+- C/C++          if(nCnt &lt; nMax) {
+                    nTot *= nCnt;
+                    nCnt++;
+                 }
+
+- Pascal         if nCnt &lt; nMax then
+                    begin
+                    nTot:=nTot * nCnt;
+                    nCnt:=nCnt   + 1;
+                 end
+
+- Visual FoxPro  IF nCnt &lt; nMax
+                    nTot = nTot * nCnt
+                    nCnt = nCnt + 1
+                 ENDIF
+
+Structuring CASE Statements
+---------------------------
+
+Only Pascal does not offer ranges in CASE statements.
+
+- BASIC          Select Case n
+                    Case 0
+                       Print 'Zero'
+                    Case Is &gt; 0
+                       Print 'Pos'
+                    Case Else
+                       Print 'Neg'
+                 End Select
+
+- C/C++          switch(n) {
+                    case 0:
+                       printf("Zero\n");
+                       break;
+                    case 1:
+                       printf("One\n");
+                       break;
+                    default:
+                       printf("?\n");}
+
+- Pascal         case n of
+                    0: writeln("Zero");
+                    1: writeln("One");
+                 end
+
+- Visual FoxPro  DO CASE
+                    CASE n = 0
+                       ? 'Zero'
+                    CASE n &gt; 0
+                       ? 'Pos'
+                    OTHERWISE
+                       ? 'Neg'
+                  ENDCASE
+
+Structuring FOR Loops
+---------------------
+
+Each language offers a FOR statement. C/C++ has the most flexibility for
+expressions.
+
+- BASIC          For n = 1 to 10
+                    Print n
+                 Next n
+
+- C/C++          for(n=1; n&lt;11; n++)
+                    printf("%d\n",n);
+
+- Pascal         for n := 1 to 10 do
+                    writeln(n);
+
+- Visual FoxPro  FOR n = 1 TO 10
+                    ? n
+                 ENDFOR | NEXT
+
+Structuring WHILE Loops
+-----------------------
+
+Each language offers equivalent WHILE loop functionality.
+
+- BASIC          While n &lt; 100
+                    n = n + n
+                 Wend
+
+- C/C++          while(n &lt; 100)
+                    n += n;
+
+- Pascal         while n &lt; 100 do
+                    n := n + n;
+
+- Visual FoxPro  DO WHILE n &lt; 100
+                    n = n + n
+                 ENDDO
+
+Passing Parameters by Value
+---------------------------
+
+Each language permits passing parameters by value.
+
+- BASIC          ABC ByVal X
+- C/C++          ABC(X);
+- Pascal         procedure ABC (x:integer);
+- Visual FoxPro  =ABC(X)
+
+Passing Arguments by Reference
+------------------------------
+
+You can pass parameters by reference two ways in Visual FoxPro.
+
+- BASIC            ABC X
+
+- C/C++            ABC(&amp;VAR);
+
+- Pascal           procedure ABC
+                   var x:integer);
+
+- Visual FoxPro    =ABC(@X)
+                   DO ABC WITH X
+
+NOTE: By default, Visual FoxPro passes variables by value. However, you may use
+the SET UDFPARMS command to specify whether FoxPro passes parameters by value or
+by reference.
+
+Syntax: SET UDFPARMS TO &lt;VALUE&gt; or &lt;REFERENCE&gt;
+
+For more information on the SET UDFPARMS command, please see the "SET UDFPARMS"
+topic in Visual FoxPro Help file.
+
+For more programming language comparisons, please see the "Visual FoxPro and
+Other Programming Lauguages" topic in the Visual FoxPro Help file.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : 3.00 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

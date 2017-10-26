@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240753: XWEB: How to Change the TCP/IP Port for Outlook Web Access | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240753: XWEB: How to Change the TCP/IP Port for Outlook Web Access" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240753/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240753/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240753/","publisher":null,"image":null,"headline":"Q240753: XWEB: How to Change the TCP/IP Port for Outlook Web Access","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240753-xweb-how-to-change-the-tcpip-port-for-outlook-web-access">Q240753: XWEB: How to Change the TCP/IP Port for Outlook Web Access</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240753
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.5; winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook Web Access, version 5.5 
+- Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may need to set up Internet Information Server (IIS) to allow access to
+Outlook Web Access (OWA) on a TCP/IP port other than the default port of 80.
+
+MORE INFORMATION
+================
+
+With IIS 4.0, you can set the TCP/IP port used for HTTP connections to the
+server. You can only change this setting on the Web site itself, not in a
+particular virtual folder (such as Exchange). Therefore, if this is set up, all
+access to the Web site and its virtual folders must take place over the new
+designated TCP/IP port. After this change is made, users must reference the new
+port number in the site's URL address, as in the following example:
+
+  http://&lt;iisservername&gt;:1010/exchange
+
+The new port number is 1010 in this example.
+
+If Microsoft Proxy Server 2.0 is installed between the IIS server and the
+Internet, you may prefer to have OWA installed on a server behind the Proxy
+Server (on the internal LAN), instead of on the Proxy Server itself. If this
+configuration is set on an IIS/OWA server that is also the Proxy Server, you
+must also set all internal browser clients to connect to the new Proxy Server
+over the newly designated port.
+
+Steps to Change the Port Address for HTTP
+-----------------------------------------
+
+1. Open the Management Console for IIS 4.0.
+
+2. Expand the tree view of the server on which OWA is installed.
+
+3. Right-click the Web site on which OWA is installed, and then click
+  Properties.
+
+4. Click the Web Site tab.
+
+5. Change the TCP Port field from 80 to the port you want to use.
+
+6. Apply the changes, close, and save.
+
+If you are using Proxy Server 2.0, proceed to the next step.
+
+7. Open the new port for inbound and outbound traffic on the Proxy Server.
+
+Additional query words: xcln, mmc,
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbiisSearch kbExchangeSearch kbExchange550 kbiis400 kbZNotKeyword2 kbOWASearch kbOWA550 kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : WINDOWS:5.5; winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

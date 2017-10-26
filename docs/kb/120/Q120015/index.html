@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120015: Windows NT RAS: X.25 Script for Sita Group Network Services | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120015: Windows NT RAS: X.25 Script for Sita Group Network Services" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120015/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120015/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120015/","publisher":null,"image":null,"headline":"Q120015: Windows NT RAS: X.25 Script for Sita Group Network Services","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120015-windows-nt-ras-x25-script-for-sita-group-network-services">Q120015: Windows NT RAS: X.25 Script for Sita Group Network Services</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120015
+Product(s): Microsoft Windows NT
+Version(s): 3.10
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+3.10
+
+WINDOWS
+
+kbnetwork kb3rdparty
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes a script that allows Windows NT Remote Access Service
+(RAS) clients to connect to a Microsoft Windows NT RAS server equipped with an
+Eicon card over the Sita Group Network X.25 service. Sita Group Network is also
+known as Scitor, Inc.
+
+NOTES:
+
+  This script has only been tested at 9600 baud without compression
+  enabled.
+
+  This script does NOT work with RAS for Windows for Workgroups (WfWG)
+  version 3.11. However, there is a SWITCH.INF script available for RAS
+  for WfWG. For information on that, please see the following article in
+  the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q120014
+  TITLE : WFW 3.11 RAS: X.25 Script for Sita Group Network Services
+
+
+MORE INFORMATION
+================
+
+Follow these steps to build and install the new script:
+
+1. Make a backup copy of your existing PAD.INF file in your
+  %SYSTEMROOT%\SYSTEM32\RAS subdirectory by copying it to a new filename.
+
+2. Load the existing PAD.INF into Notepad and append the script below to the
+  file and save it. Quit Notepad.
+
+3. Start RAS, select the entry for the Sita X.25 provider in the phonebook list.
+
+4. Choose the Edit button.
+
+5. If you don't see an X.25 button, choose the Advanced button, and then choose
+  the X.25 button.
+
+6. In the PAD Type field, select Sita Group Network.
+
+7. Contact your system administrator if you don't know any of the following
+  information:
+
+  a. In the X.121 Address field, enter the x.121 address of your RAS server.
+
+  b. In the User Data field, enter the NUI number (usually in the format of "NUI
+  xxxxxxxx" where the "xxxxxxxx" needs to be replaced by numbers).
+
+  c. In the "Facilities" field, enter the user's password.
+
+8. Choose the OK button.
+
+9. Choose the Modem button. Select the appropriate baud rate up to 9600 bps and
+  select Enable Hardware Flow Control and Enable Modem Error Control.
+
+  NOTE: Modem compression is not recommended unless software compression is not
+  available, however, this script has not been tested with any kind of
+  compression enabled. Leave the Enter Modem Commands Manually check box clear
+  and choose OK and then choose OK again to return to the Remote Access
+  program.
+
+Remote Access is now ready to use this script and dial the server.
+
+Following is the script to be appended to the PAD.INF file:
+
+-------------------------- Beginning of Script ---------------------------
+
+;---------------------------------------------------------------------
+[SITA Group Network]
+
+; Disclaimer:
+; This script has been provided for customer convenience, but has NOT been
+; fully verified to work under all circumstances. Microsoft makes NO
+; guarantees as to the performance of this script. Please contact Microsoft
+; PSS Windows NT support if you have problems or questions.
+;
+; PLEASE SEE COMMENTS BELOW REGARDING USAGE OF THE "User Data:"
+; and "Facilities:" FIELDS IN RAS WHEN USING THIS SITA SCRIPT.
+
+DEFAULTOFF=
+MAXCARRIERBPS=9600
+MAXCONNECTBPS=9600
+
+COMMAND=...&lt;cr&gt;
+OK=&lt;match&gt;"SITA NETWORK:"
+
+; Enter your NUI number in the Remote Access program's X.25 Settings
+"User Data:" field.
+COMMAND=&lt;UserData&gt;&lt;cr&gt;
+OK=&lt;ignore&gt;
+
+; Enter your x.25 password in the Remote Access program's X.25
+Settings "Facilities:" field.
+COMMAND=&lt;Facilities&gt;&lt;cr&gt;
+OK=&lt;match&gt;"active"
+ERROR_DIAGNOSTICS=&lt;cr&gt;&lt;lf&gt;&lt;cr&gt;&lt;lf&gt;&lt;lf&gt;&lt;Diagnostics&gt;
+ERROR_DIAGNOSTICS=&lt;lf&gt;&lt;cr&gt;&lt;lf&gt;&lt;Diagnostics&gt;
+
+COMMAND=PROF 6&lt;cr&gt;
+NoResponse
+
+COMMAND=
+NoResponse
+
+COMMAND=SET 2:1&lt;cr&gt;
+OK=&lt;ignore&gt;
+
+COMMAND=
+NoResponse
+
+COMMAND=SET 4:1,6:1,16:0,17:0,18:0,19:0,21:0&lt;cr&gt;
+OK=&lt;ignore&gt;
+
+COMMAND=
+NoResponse
+
+COMMAND=SET 118:0,119:0,120:0&lt;cr&gt;
+OK=&lt;ignore&gt;
+
+COMMAND=PAR?&lt;cr&gt;
+OK=&lt;ignore&gt;
+
+COMMAND=SET 2:0&lt;cr&gt;
+NoResponse
+
+COMMAND=
+NoResponse
+
+COMMAND=&lt;x25address&gt;&lt;cr&gt;
+CONNECT=&lt;match&gt;"connected"
+;CONNECT=&lt;ignore&gt;
+ERROR_DIAGNOSTICS=&lt;cr&gt;&lt;lf&gt;&lt;cr&gt;&lt;lf&gt;&lt;lf&gt;&lt;Diagnostics&gt;
+ERROR_DIAGNOSTICS=&lt;lf&gt;&lt;cr&gt;&lt;lf&gt;&lt;Diagnostics&gt;
+
+----------------------------- End of Script ------------------------------
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: prodnt 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.10
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

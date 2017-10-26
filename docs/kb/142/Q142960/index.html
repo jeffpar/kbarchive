@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142960: FIX: CCheckListBox Fails with Style LBS_MULTICOLUMN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142960: FIX: CCheckListBox Fails with Style LBS_MULTICOLUMN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142960/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142960/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142960/","publisher":null,"image":null,"headline":"Q142960: FIX: CCheckListBox Fails with Style LBS_MULTICOLUMN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142960-fix-cchecklistbox-fails-with-style-lbs_multicolumn">Q142960: FIX: CCheckListBox Fails with Style LBS_MULTICOLUMN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142960
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1
+Operating System(s): 
+Keyword(s): kbcode kbListBox kbMFC KbUIDesign kbVC400bug kbVC410bug kbVC420fix kbGrpDSMFCATL kbNoUp
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the CCheckListBox class and specifying a style of LBS_MULTICOLUMN,
+the user will be unable to check or uncheck items that are not displayed in the
+first column.
+
+CAUSE
+=====
+
+The hit-testing that is done in CCheckListBox::OnLButtonDown does not take into
+consideration which column the user is clicking.
+
+RESOLUTION
+==========
+
+Derive a class from CCheckListBox and override OnLButtonDown to do proper
+hit-testing. It will also be necessary to override OnLButtonDblClk and the
+constructor.
+
+Step-by-Step Example
+--------------------
+
+1. Bring up ClassWizard. Use "Add Class" to add a new class called
+  CMyCheckListBox derived from CListBox. In the .h and .cpp files generated for
+  the new class, change all occurrences of CListBox to CCheckListBox.
+
+2. Add a protected member variable of type int called m_nCheckWidth to the new
+  class.
+
+3. Modify the default constructor for CMyCheckListBox to look like this:
+
+      CMyCheckListBox::CMyCheckListBox()
+      {
+          // the following code initializes the member variable
+          // m_nCheckWidth to be the width of a check box.
+
+      CBitmap bitmap;
+      BOOL bWin4 = (BYTE)GetVersion() &gt;= 4;
+      HINSTANCE hInst = bWin4 ? NULL : LoadLibraryA("CTL3D32.DLL");
+      FARPROC pfnProc = (NULL == hInst) ? NULL : GetProcAddress(hInst,
+                                                     (LPCSTR)21);
+
+      if (bWin4 || pfnProc != NULL)
+         VERIFY(bitmap.LoadBitmap(AFX_IDB_CHECKLISTBOX_95));
+      else
+         VERIFY(bitmap.LoadBitmap(AFX_IDB_CHECKLISTBOX_NT));
+
+      BITMAP bm;
+      bitmap.GetObject(sizeof (BITMAP), &amp;bm);
+      m_nCheckWidth = bm.bmWidth / 3;
+
+      if (hInst)
+         FreeLibrary(hInst);
+      }
+
+4. Use ClassWizard to add a handler for WM_LBUTTONDOWN, and implement it as
+  follows:
+
+      void CMyCheckListBox::OnLButtonDown(UINT nFlags, CPoint point)
+      {
+          CRect itemRect;
+          CRect clientRect;
+
+          GetClientRect(clientRect);
+          for(int nIndex = GetTopIndex(); nIndex &lt; GetCount(); nIndex++)
+          {
+              GetItemRect(nIndex, &amp;itemRect);
+              if (!clientRect.PtInRect(itemRect.TopLeft()))
+                  break;
+              if (itemRect.PtInRect(point) &amp;&amp; IsEnabled(nIndex))
+              {
+                  if (m_nStyle != BS_CHECKBOX &amp;&amp; m_nStyle != BS_3STATE)
+                  {
+                      if (point.x - itemRect.left &lt; m_nCheckWidth + 2)
+                      {
+                          CWnd* pParent = GetParent();
+                          ASSERT_VALID(pParent);
+                          int nModulo = (m_nStyle == BS_AUTO3STATE) ? 3 : 2;
+                          int nCheck = GetCheck(nIndex);
+                          nCheck = (nCheck == nModulo) ? nCheck - 1 : nCheck;
+                          SetCheck(nIndex, (nCheck + 1) % nModulo);
+                          InvalidateCheck(nIndex);
+                          CListBox::OnLButtonDown(nFlags, point);
+                          // Inform of check
+                          pParent-&gt;SendMessage(WM_COMMAND,
+                              MAKEWPARAM(GetDlgCtrlID(), CLBN_CHKCHANGE),
+                              (LPARAM)m_hWnd);
+                          return;
+
+                      }
+                  }
+                  else
+                      return; // Swallow LButtons for disabled items
+              }
+          }
+          // call CListBox::OnLButtonDown
+          // DO NOT call CCheckListBox::OnLButtonDown
+          CListBox::OnLButtonDown(nFlags, point);
+      }
+
+5. Use ClassWizard to add a handler for WM_LBUTTONDDBLCLK and just call
+  CMyCheckListBox::OnLButtonDown:
+
+      void CMyCheckListBox::OnLButtonDblClk(UINT nFlags, CPoint point)
+      {
+          OnLButtonDown(nFlags, point);
+      }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++, 32-bit
+Edition, version 4.2.
+
+Additional query words: kbVC400bug 4.00 4.10 vcfixlist420
+
+======================================================================
+Keywords          : kbcode kbListBox kbMFC KbUIDesign kbVC400bug kbVC410bug kbVC420fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

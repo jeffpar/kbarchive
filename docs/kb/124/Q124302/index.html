@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124302/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124302/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124302/","publisher":null,"image":null,"headline":"Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124302-bug-setup-of-data-source-in-use-causes-sharing-violation-err">Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124302
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# QJET: 1845 (2.00.2316)
+
+SYMPTOMS
+========
+
+Setting up a Microsoft Access data source to point to an .MDB file on the
+network that is already being accessed by another application causes a sharing
+violation. The sharing violation does not occur if the application using the
+.MDB file is on the same machine as the .MDB file and the data source setup is
+also being run on the same machine.
+
+For the purposes of this description, WS1 and WS2 are two workstations and FS is
+a file server. Suppose an .MDB file is on FS, and WS1 has a data source setup to
+point to this .MDB file. App1 running on WS1 is connected to the .MDB file and
+is using it in non-exclusive mode. Now, a user on WS2 tried to setup a data
+source and points the data source to the .MDB file on FS. When the user clicks
+OK on the ODBC Microsoft Access 2.0 Setup dialog box, the following error
+occurs,
+
+  Sharing Violation on Driver &lt;x&gt;
+
+where &lt;x&gt; is the driver letter on WS2 connected to FS.
+
+The problem also occurs when WS1 and FS are the same machine. For example, App1
+is accessing a local .MDB file, and WS2 is trying to set up a data source to
+point to it.
+
+The problem does not occur if the data source setup is being run on the same
+machine that App1 is being run on. That is, if App1 and the setup are running on
+WS1, then no problems occur, regardless of whether the data source is local or
+on the network.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in ODBC Access Driver versions
+2.00.2316 and 2.00.2318. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00.2316 ODBC MFC VISUAL C++ MSVC SETUP DATA SOURCE
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q293293: PRB: Cannot Update SCC Status From ProjectHook.Init() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q293293: PRB: Cannot Update SCC Status From ProjectHook.Init()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/293/Q293293/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/293/Q293293/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/293/Q293293/","publisher":null,"image":null,"headline":"Q293293: PRB: Cannot Update SCC Status From ProjectHook.Init()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q293293-prb-cannot-update-scc-status-from-projecthookinit">Q293293: PRB: Cannot Update SCC Status From ProjectHook.Init()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q293293
+Product(s): Microsoft FoxPro
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbProjManager kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 13-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Article idea submitted by: Ted Roche
+
+
+When you try to update files that are under Source Code Control (that is, Visual
+SourceSafe) from the ProjectHook's Init event, the Source Code Control methods
+that are associated with the File objects fail.
+
+CAUSE
+=====
+
+The Visual FoxPro (VFP) documentation states, "Note that the project object and
+its properties and methods are not available in the ProjectHook object Init
+event." Because the project object logs on to the Source Code Control database,
+any attempt to operate on the files at this time fails.
+
+RESOLUTION
+==========
+
+Use a different method to operate on the files, For example, set a flag so that
+the first operation on any file causes the latest version of all the files to be
+brought down to the working folder.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Project Hook class in the class designer.
+
+2. Add the following code to the Init event:
+
+  This.oProject = _VFP.ActiveProject
+  WAIT WINDOW NOWAIT "Project Hook Enabled"
+  This.GetLatestAll()
+
+3. Create a class method called GetLatestAll, and add the following code to it:
+
+  LOCAL oFile, m.i
+
+  FOR m.i = 1 TO This.oProject.Files.Count
+     oFile = This.oProject.Files[m.i]
+     ? oFile.Name
+     ? oFile.SCCStatus
+     IF NOT oFile.SCCStatus = 0    &amp;&amp; SCCFILE_NOTCONTROLLED
+        ? oFile.GetLatestVersion()
+     ENDif
+  ENDfor  &amp;&amp; each file
+
+4. Add the following code to the class's Destroy event:
+
+  This.oProject = NULL
+
+5. Save the class, and add it to a project that is under Source Control.
+
+6. Open the project, and note that although each file and its SCCStatus are
+  listed, each call to GetLatestVersion fails.
+
+REFERENCES
+==========
+
+For more information on ProjectHooks, see chapter 32, "Application Development
+and Developer Productivity," in the Visual FoxPro Programmer's Guide.
+
+For more information about Source Code Control, see chapter 29, "Developing in
+Teams," in the Visual FoxPro Programmer's Guide.
+
+(c) Microsoft Corporation 2001, All Rights Reserved.
+Contributions by Garrett Fitzgerald, Microsoft Corporation
+
+
+Additional query words: Source Safe Project Hook
+
+======================================================================
+Keywords          : kbProjManager kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

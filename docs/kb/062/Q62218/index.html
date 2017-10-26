@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62218: OS/2 API Function to Get Current Drive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62218: OS/2 API Function to Get Current Drive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62218/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62218/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62218/","publisher":null,"image":null,"headline":"Q62218: OS/2 API Function to Get Current Drive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62218-os2-api-function-to-get-current-drive">Q62218: OS/2 API Function to Get Current Drive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62218
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | SR# S900517-70 | mspl13_basic
+Last Modified: 7-JUN-1990
+
+Microsoft BASIC Compiler versions 6.00 and 6.00b and Microsoft BASIC
+Professional Development System (PDS) version 7.00 protected mode
+programs can call the OS/2 API function DosQCurDisk() to get the
+currently selected drive. DosQCurDisk() requires the following
+parameters:
+
+   Parameter   Description
+   ---------   -----------
+
+   PTR WORD    Receives current drive code (1 = A, 2 = B, etc.)
+
+   PTR DWORD   Receives logical drive bitmap (logical drives A-Z
+               correspond to bits 0-25; a bit is set if a
+               logical drive exists)
+
+The second parameter is not important in getting the current drive,
+but it is worthy to note that for API functions a DWORD (4 bytes) has
+a BASIC type of LONG. Likewise, a WORD (2 bytes) has a BASIC type of
+INTEGER. Since the specification requires pointers to these data
+items, the DECLARE statement for DosQCurDisk() uses the SEG keyword for
+each of the parameters. This causes 4-byte addresses of the parameters
+to be passed instead of 2-byte addresses, which is the default because
+BASIC uses the medium-memory model. Also, API functions return an
+error code; therefore, for BASIC to retrieve this code, it must
+declare DosQCurDisk() as a FUNCTION.
+
+The DECLARE statements for almost every API function are located in
+include files that come with BASIC 6.00 and 6.00b and BASIC PDS 7.00.
+To modify the DECLARE statement, you just have to include the right
+file. See the PACKING.LST file included with the product for a
+description of these include files.
+
+This information applies to Microsoft BASIC Compiler versions 6.00 and
+6.00b for MS OS/2 and Microsoft BASIC PDS version 7.00 for MS OS/2.
+
+For more information on calling OS/2 API functions from Microsoft
+BASIC Compiler versions 6.00 and 6.00b, see Page 21 of the "Microsoft
+BASIC Compiler 6.0: User's Guide" included with the product.
+
+For more information on calling OS/2 API functions from BASIC PDS
+version 7.00, see Page 523 of the "Microsoft BASIC 7.0: Programmer's
+Guide" included with the product.
+
+For more information on DosQCurDisk(), see Page 547 of "Advanced OS/2
+Programming," by Ray Duncan (Microsoft Press, 1989).
+
+Note that BASIC PDS version 7.00 supports the function "CURDIR$",
+which can also be used to get the currently selected drive. However,
+using this method requires some string parsing, so although the code
+is smaller, it may be slower.
+
+The sample program below (GETDRIVE.BAS) reports the currently selected
+drive.
+
+To compile the program, use the following:
+
+   bc getdrive /lp;
+
+To link the program for BASIC 6.00 and 6.00b, use the following:
+
+   link /nop getdrive,,,doscalls;
+
+To link the program for BASIC 7.00, use the following:
+
+   link /nop getdrive,,,os2;
+
+Code Example
+------------
+
+' This declaration was taken from the include file
+' BSEDOSFL.BI
+
+DECLARE FUNCTION DosQCurDisk% (SEG CurrentDrive AS INTEGER,_
+                               SEG DriveBitmap  AS LONG)
+
+' CurrentDrive receives the current drive code (A=1, B=2,
+' etc.)
+' DriveBitmap receives a bitmap of each logical drive's
+' availability
+
+ErrorCode% = DosQCurDisk% (CurrentDrive%, DriveBitmap&amp;)
+
+IF ErrorCode% THEN
+   PRINT "An error occurred, the code is";ErrorCode%
+ELSE
+   PRINT "The current drive is "; CHR$(CurrentDrive% + 64)
+END IF
+
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

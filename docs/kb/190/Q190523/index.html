@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190523: PRB: Automation Error (-2147417843) When You Use the Taskbar Not | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190523: PRB: Automation Error (-2147417843) When You Use the Taskbar Not" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190523/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190523/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190523/","publisher":null,"image":null,"headline":"Q190523: PRB: Automation Error (-2147417843) When You Use the Taskbar Not","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190523-prb-automation-error--2147417843-when-you-use-the-taskbar-not">Q190523: PRB: Automation Error (-2147417843) When You Use the Taskbar Not</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190523
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbprogramming kbAutomation kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbofficeprog
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Shell_NotifyIcon function or the SysTray control sample from
+the Visual Basic CD-ROM, you may receive the following error message:
+
+  Run-time error: -2147417843 (8001010d)
+  Automation Error
+
+CAUSE
+=====
+
+The run-time error occurs because you are trying to make an Automation call to
+an out-of-process (ActiveX) EXE from within the event notification of the
+Taskbar Notification Area callback. The value -2147417843 translates to the
+following error message:
+
+  An outgoing call cannot be made since the application is dispatching an
+  input-synchronous call.
+
+Automation clients are required by COM to process input-synchronous calls without
+interruption, and therefore are prevented from making outgoing Automation calls
+while processing such messages.
+
+RESOLUTION
+==========
+
+Avoid making outgoing Automation calls during the Taskbar Notification Area
+callback. If an Automation method needs to be called in response to a user event
+involving the Taskbar Notification Area, use a simple Timer to post yourself a
+message, and then let the callback function complete. When the Timer event
+fires, you can safely call your Automation method.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the SysTray control sample from the Tools\Unsupprt folder of the Visual
+  Basic 5.0 CD-ROM, or the Common\Tools\VB\Unsupprt folder of the Visual Basic
+  6.0 CD-ROM, to your hard drive.
+
+2. Open the project and compile the control. When complete, close the project.
+
+3. Create a new Standard EXE project. Form1 is created by default.
+
+4. From the Project menu, click Components, and check System Tray Icon Control.
+  Click OK.
+
+5. Select the SysTray control in the toolbox and add an instance to Form1.
+
+6. Add the following code into Form1's code window:
+
+  Option Explicit
+  Private oWord As Object
+
+  Private Sub Form_Load()
+     Set oWord = CreateObject("Word.Application")
+     Set cSysTray1.TrayIcon = Me.Icon
+     cSysTray1.InTray = True
+  End Sub
+
+  Private Sub Form_Unload(Cancel As Integer)
+     cSysTray1.InTray = False
+     Set oWord = Nothing
+  End Sub
+
+  Private Sub cSysTray1_MouseDblClick(Button As Integer, Id As Long)
+     oWord.Visible = True
+  End Sub
+
+7. Run the application by pressing the F5 key. The error occurs when you
+  double-click the application's icon in the System Tray. Press the END key to
+  stop the debugger.
+
+8. To avoid the error, add a Timer to Form1.
+
+9. Replace the code in Form1 with the following:
+
+  Option Explicit
+  Private oWord As Object
+
+  Private Sub Form_Load()
+     Set oWord = CreateObject("Word.Application")
+     Set cSysTray1.TrayIcon = Me.Icon
+     cSysTray1.InTray = True
+     Timer1.Enabled = False
+     Timer1.Interval = 10
+  End Sub
+
+  Private Sub Form_Unload(Cancel As Integer)
+     cSysTray1.InTray = False
+     Set oWord = Nothing
+  End Sub
+
+  Private Sub cSysTray1_MouseDblClick(Button As Integer, Id As Long)
+     Timer1.Enabled = True
+  End Sub
+
+  Private Sub Timer1_Timer()
+     Timer1.Enabled = False
+     oWord.Visible = True
+  End Sub
+
+10. Re-run the application by pressing the F5 key. This time no error should
+  occur.
+
+REFERENCES
+==========
+
+For additional information about input-synchronous calls in COM and this
+Automation error, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q131056 PRB: Synch OLE Call Fails in Inter-Process/Thread SendMessage
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q176085 HOWTO: Use the Taskbar Notification Area Directly from Visual Basic
+  5.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbAutomation kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbofficeprog 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

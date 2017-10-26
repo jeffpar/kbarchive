@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191955: PRB: NOWAIT Breaks Filter Printing Report from Preview Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191955: PRB: NOWAIT Breaks Filter Printing Report from Preview Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191955/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191955/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191955/","publisher":null,"image":null,"headline":"Q191955: PRB: NOWAIT Breaks Filter Printing Report from Preview Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191955-prb-nowait-breaks-filter-printing-report-from-preview-window">Q191955: PRB: NOWAIT Breaks Filter Printing Report from Preview Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191955
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the NOWAIT clause is present in the REPORT FORM command, printing a report
+by clicking the printer icon in the report preview window will not print
+according to the filter setting, rather, it prints all the records.
+
+CAUSE
+=====
+
+The filter setting is not retained due to the NOWAIT keyword.
+
+RESOLUTION
+==========
+
+- Remove the NOWAIT clause from the end of the REPORT FORM command.
+
+-or-
+
+- Create a cursor with the filter setting before calling the REPORT FORM
+  command.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a table by running the following code:
+
+        CREATE TABLE cust ( Name C(10), State C(2))
+        INSERT INTO cust VALUES ("Smith", "MA")
+        INSERT INTO cust VALUES ("Mary", "AL")
+        INSERT INTO cust VALUES ("Tom", "MA")
+        INSERT INTO cust VALUES ("Joe", "MA")
+        INSERT INTO cust VALUES ("Tomi", "CA")
+        INSERT INTO cust VALUES ("John", "CA")
+        INSERT INTO cust VALUES ("Linda", "MA")
+
+2. Create a quick report based on the preceding table. Save the report as
+  Cust.frx.
+
+3. Create a program (.prg) and place the following code in the .prg file:
+
+        DEFINE WINDOW wShowInq ;
+           FROM 0,0 TO 10,10 ;
+           SYSTEM ;
+           ZOOM ;
+           TITLE [&amp;tcTitle.]
+
+        ZOOM WINDOW wShowInq MAX
+        USE cust
+
+        *-- Comment the NOWAIT clause to obtain the expected results.
+        REPORT FORM cust FOR State = "MA"  PREVIEW NOWAIT
+
+4. Save the program and run it.
+
+When the Print Preview appears, only all the "MA" records are in the print
+preview.
+
+1. Click the Printer button on the Report Preview toolbar to print the report.
+
+You will see all the records are printed in the hard copy of the report.
+
+Additional query words: kbPrinting kbReportWriter kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

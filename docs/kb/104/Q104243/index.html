@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104243: PRB: Unexpected C2440 Error in C++ Typecast | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104243: PRB: Unexpected C2440 Error in C++ Typecast" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104243/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104243/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104243/","publisher":null,"image":null,"headline":"Q104243: PRB: Unexpected C2440 Error in C++ Typecast","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104243-prb-unexpected-c2440-error-in-c-typecast">Q104243: PRB: Unexpected C2440 Error in C++ Typecast</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104243
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): kbprb
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error
+
+  Error C2440 : 'Conversion': cannot convert from 'type1' to 'type2'
+
+is generated when a statement of the form
+
+     TYPE ( identifier ) ( expression );
+
+is used to type cast a function pointer and make a call simultaneously.
+
+CAUSE
+=====
+
+This is expected C++ compiler behavior. The sample code below explains the
+problem in a more understandable way.
+
+If the following three statements taken from the sample code are compiled
+
+     typedef void (* funcptr) (int);
+
+...
+
+     void f(int){...};
+
+...
+
+     funcptr (f)(1); // Error C2440
+
+the following error message is generated:
+
+  
+
+  error C2440: 'initializing' : cannot convert from 'const int' to
+  'void (__cdecl *) (int)'
+
+Although the last statement appears to be typecasting the function "f" to
+funcptr, the compiler thinks it is declaring an object of name "f" of type
+funcptr and initializing it with the integer constant "1" equivalent to having
+
+     funcptr f = 1;
+
+-or-
+
+     void (*f) (int) = 1;
+
+which makes the error message much more understandable.
+
+RESOLUTION
+==========
+
+The way to the achieve the desired typecast is to add another set of
+parenthesis, for example
+
+     ((funcptr)f)(1);
+
+which resolves the confusion for the compiler, which thus treats the typecast in
+the way it should.
+
+NOTE: Using a C++ style cast, such as (funcptr(f))(1), produces a syntax error.
+You must use C-style casting.
+
+Another method is to have a pointer explicitly bind a new name to the function,
+for example
+
+     void (*f1)(int) = f;
+
+and use: "
+
+     f1(1);     // OK
+
+" (without the quotation marks)
+
+MORE INFORMATION
+================
+
+The sample below demonstrates the error and workarounds.
+
+Sample Code
+-----------
+
+  typedef void (*funcptr) (int);
+
+  void f(int);
+
+  void main()
+  {
+      ((void (*) (int)) f)(1);
+      funcptr (f) (1);             // Gives error C2440
+      ((funcptr)f)(1);
+      void (*f1) (int) = f;
+      f1(1);
+  }
+
+Additional query words: 1.00 1.50 2.00 2.10 4.00 7.00 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbprb 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

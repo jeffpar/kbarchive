@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170070: SNA Client Allocate Requests May Hang After AS/400 IPL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170070: SNA Client Allocate Requests May Hang After AS/400 IPL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170070/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170070/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170070/","publisher":null,"image":null,"headline":"Q170070: SNA Client Allocate Requests May Hang After AS/400 IPL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170070-sna-client-allocate-requests-may-hang-after-as400-ipl">Q170070: SNA Client Allocate Requests May Hang After AS/400 IPL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170070
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If an APPC or CPIC application issues several conversation startup requests
+(that is, [MC_]ALLOCATE or CMALLC) immediately after an AS/400 IPL, some
+allocates may fail to complete, or complete after further client ALLOCATEs are
+issued.
+
+This problem occurs after SNA Server renegotiates session limits for an LU/LU
+pair, where some pending client ALLOCATE requests are queued incorrectly and
+fail to be processed.
+
+The symptoms of the problem may vary, based on the application being used. This
+problem would occur most commonly with an APPC or CPIC application which
+initiates many conversations concurrently to the same remote system (say, an
+AS/400 or CICS). It would be unlikely to occur when starting a single
+conversation (for example, 5250 emulation) on multiple client computers.
+
+
+CAUSE
+=====
+
+After the remote system is stopped and started (the AS/400 in this example), the
+existing session limits on all LU6.2 pairs have not been reset. If one or more
+users attempt to activate a new LU6.2 session at the same time, after the remote
+system has been reactivated, the remote system rejects the BIND request with
+sense code 08050000 (session limit exceeded), which causes SNA Server to
+reinitiate change-number-of-sessions (CNOS) renegotiation with the remote
+system.
+
+The problem is that SNA Server was incorrectly queueing the user's initial
+activation requests after CNOS renegotiation had taken place, causing the client
+application to hang on the ALLOCATE request (for an APPC application) or CMALLC
+request (for a CPIC application).
+
+RESOLUTION
+==========
+
+An update to SNA Server 3.0 Service Pack 1 is available to correct this problem.
+The updated module is Snaservr.exe.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11
+(including SP1 and SP2) and SNA Server 3.0 (including SP1). This problem was
+corrected in the latest SNA Server version 3.0 U.S. Service Pack. For
+information on obtaining this Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP1
+Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

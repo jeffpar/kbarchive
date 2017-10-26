@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181036: INFO: Suitable Applications for Exchange Server Event Scripting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181036: INFO: Suitable Applications for Exchange Server Event Scripting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181036/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181036/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181036/","publisher":null,"image":null,"headline":"Q181036: INFO: Suitable Applications for Exchange Server Event Scripting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181036-info-suitable-applications-for-exchange-server-event-scripting">Q181036: INFO: Suitable Applications for Exchange Server Event Scripting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181036
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 29-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Exchange Server 5.5 Scripting Agent provides the ability to run
+server-side scripts in response to events that occur in folders, including
+private mailboxes. This article will explain why the proper application of Event
+Scripting is limited to medium-volume workflow and administrative applications.
+
+MORE INFORMATION
+================
+
+Because the Microsoft Exchange Server 5.5 Scripting Agent permits scripts to run
+against individual mailboxes, many developers have attempted to write Inbox
+Agents in VBScript. These attempts have yielded poor results, because the Event
+Scripting Agent is not designed to replace traditional mailbox agents written in
+C/C++. Such agents are normally used to scan every piece of mail in or out of
+the system for viruses, or to archive every message for government
+record-keeping purposes.
+
+There are several vital limitations to the Microsoft Exchange Event Service that
+render it unsuitable for such applications:
+
+- There is no guarantee that a script will see every message. The Event Service
+  fires events asynchronously with respect to the Microsoft Exchange
+  information store. This means that the information store does not block an
+  event script (wait for it to run) before letting other processes or users
+  access the folder or message. Consequently, that message could be moved,
+  copied, deleted, or modified before a script has a chance to run. For
+  example, a script to process all outgoing messages, applied to the
+  OnMessageCreated event in the Outbox folder, may not react to the event
+  before the new message has been delivered and deleted from your Outbox.
+
+- Some of these types of scripting applications may face problems of scale.
+  Depending on the application's purpose, either the script would have to be
+  manually installed in every folder for every user, or event volume would
+  simply be too high to process with an interpreted language like VBScript.
+
+- The Event Service is single-threaded. No matter how many scripts are
+  registered, only one can run at a time. The performance consequences are
+  substantial. For example, a script that requires two seconds to execute, only
+  allows one script to execute every two seconds, for a maximum of 30 scripts
+  per minute. At that rate, 600 scripts would require 20 minutes to process.
+
+- Event Scripts run in a privileged Windows NT security context, that of the
+  Exchange Server service account. One grave consequence of this arrangement is
+  the possibility that a script can open any mailbox on the server and make
+  changes to the contents, without the owner's knowledge. The Exchange 5.5
+  Release Notes state: "The Scripting Agent is not a safe, general purpose
+  replacement for the Inbox Assistant rules because it allows new code to be
+  installed and run on your servers."
+
+REFERENCES
+==========
+
+  Microsoft Exchange Scripting Agent Help File
+  Microsoft Exchange Server 5.5 Release Notes
+  Microsoft Exchange Server Product Group
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

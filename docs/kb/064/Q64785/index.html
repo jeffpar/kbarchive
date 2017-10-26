@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q64785: ON KEY Key Trap with INKEY$ Loop Requires Additional Key Press | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q64785: ON KEY Key Trap with INKEY$ Loop Requires Additional Key Press" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/064/Q64785/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/064/Q64785/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/064/Q64785/","publisher":null,"image":null,"headline":"Q64785: ON KEY Key Trap with INKEY$ Loop Requires Additional Key Press","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q64785-on-key-key-trap-with-inkey-loop-requires-additional-key-press">Q64785: ON KEY Key Trap with INKEY$ Loop Requires Additional Key Press</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q64785
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900731-96 B_BasicCom | mspl13_basic
+Last Modified: 13-AUG-1990
+
+A commonly used key-trapping strategy relies on using an INKEY$ loop
+to wait for a key press that is then handled by an ON KEY GOSUB
+handler. Using this strategy requires two key presses: one that
+triggers the ON KEY trap and another to exit the INKEY$ loop upon
+returning from the key handler. When making use of a key handler that
+performs a process transparent to the user, the key trap may appear to
+require two keystrokes for processing to continue. This behavior may
+be problematic for those who want processing to resume after one
+keystroke. This article contains a code example demonstrating this
+behavior and three other code examples illustrating alternate
+key-trapping strategies that require only one key press for processing
+to continue.
+
+This information applies to Microsoft QuickBASIC versions 4.00, 4.00b,
+and 4.50, to Microsoft BASIC Compiler versions 6.00 and 6.00b for
+MS-DOS and MS OS/2, and to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+When an INKEY$ loop is used in conjunction with the ON KEY statement
+to wait for a key press, control is passed to the ON KEY handler when
+a trappable key press occurs. Because the ON KEY GOSUB statement
+clears the keyboard buffer, the INKEY$ loop will still be waiting for
+a key press when control is returned from the ON KEY GOSUB handler.
+Therefore, a second key press is required to exit the INKEY$ loop.
+
+This behavior can be overcome either by using the SLEEP statement in
+place of the INKEY$ loop, by setting a flag within the ON KEY handler
+that will cause the INKEY$ loop to abort after a key trap, or by
+RETURNing from the key handler to a line number or label outside of
+the INKEY$ loop.
+
+The following code example demonstrates the requirement for a second
+key press:
+
+   CLS
+   ON KEY(1) GOSUB handler:
+   KEY(1) ON
+   PRINT "Press the F1 key"
+   WHILE INKEY$ = ""
+   WEND
+   END
+   handler:
+           PRINT "In key handler"
+           RETURN
+
+The following strategies can be used to allow processing to continue
+after one key press:
+
+Sample 1: Using The SLEEP Statement
+-----------------------------------
+
+   CLS
+   ON KEY(1) GOSUB handler:
+   KEY(1) ON
+   PRINT "Press the F1 key"
+   SLEEP                    'Note: The SLEEP statement was not supported
+   END                      '      until QuickBASIC version 4.00b. This
+                            '      example will fail in earlier versions.
+   handler:
+           PRINT "In key handler"
+           RETURN
+
+Sample 2: Using Flag to Exit Out of INKEY$ Loop
+-----------------------------------------------
+
+   CONST TRUE = -1
+   CONST FALSE = NOT TRUE
+
+   CLS
+   TrappedFlag% = FALSE
+   ON KEY(1) GOSUB handler:
+   KEY(1) ON
+   PRINT "Press the F1 key"
+   WHILE INKEY$ = "" AND NOT TrappedFlag%
+   WEND
+   END
+
+   handler:
+           TrappedFlag% = TRUE
+           PRINT "In key handler"
+           RETURN
+
+Sample 3: RETURN to a Fixed Line Label or Line Number
+-----------------------------------------------------
+
+   CLS
+   ON KEY(1) GOSUB handler:
+   KEY(1) ON
+   PRINT "Press the F1 key"
+   WHILE INKEY$ = ""
+   WEND
+
+   OutOfLoop:
+   END
+
+   handler:
+           PRINT "In key handler"
+           RETURN OutOfLoop:
+
+WARNING: Do not use the RETURN &lt;line&gt; statement if the ON KEY() GOSUB
+statement at the main-level code traps a key pressed within a SUB or
+FUNCTION procedure, since RETURN &lt;line&gt; would then leave unrecoverable
+return addresses on the stack, which eventually leads to an "Out of
+Stack Space" error after many key-trapping GOSUB iterations. RETURN
+&lt;line&gt; should only be used in the handler for keys trapped at the main
+program level.
+
+Sample 3 above works without producing the "Out of Stack Space" error
+because no keys are pressed or trapped in SUB or FUNCTION procedures.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

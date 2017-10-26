@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q45451: CLEAR Resets ON ERROR GOTO and Turns Off Error Trapping | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q45451: CLEAR Resets ON ERROR GOTO and Turns Off Error Trapping" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/045/Q45451/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/045/Q45451/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/045/Q45451/","publisher":null,"image":null,"headline":"Q45451: CLEAR Resets ON ERROR GOTO and Turns Off Error Trapping","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q45451-clear-resets-on-error-goto-and-turns-off-error-trapping">Q45451: CLEAR Resets ON ERROR GOTO and Turns Off Error Trapping</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q45451
+Product(s): See article
+Version(s): 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890224-103 B_BasicCom | mspl13_basic
+Last Modified: 13-DEC-1989
+
+The CLEAR statement in a QuickBASIC program turns off error handling
+routines. Any error that happens after a CLEAR statement is not
+trapped by an error handling routine that was initiated before the
+CLEAR statement. To trap errors after a CLEAR statement, you must
+reinstate the error handling routine with a new ON ERROR GOTO clause.
+
+This applies to Microsoft QuickBASIC Versions 3.00, 4.00, 4.00b, and
+4.50, and Microsoft BASIC Compiler Versions 6.00, 6.00b for MS-DOS and
+MS OS/2, and Microsoft BASIC PDS 7.00 for MS-DOS and MS OS/2.
+
+The following two programs show an error trapping routine that does
+not work correctly and an error trapping routine that does work:
+
+Program 1
+---------
+
+REM  This error handling routine will not trap the error.
+  ON ERROR GOTO Handler
+  CLEAR
+REM The ERROR handling routine is now turned off
+  ERROR 1
+END
+Handler: Print "In the ERROR Handler"
+         RESUME
+
+The output for this program is only an error message from QuickBASIC.
+
+Program 2
+---------
+
+REM This ERROR Handling routine will trap the error.
+  ON ERROR GOTO Handler
+  CLEAR
+REM The ERROR Handling routine is now turned off.
+  ON ERROR GOTO Handler
+REM The ERROR Handling routine is now turned back on.
+  ERROR 1
+END
+Handler : Print "In the ERROR Handler"
+          RESUME
+
+The output for this program is as follows:
+
+   In the ERROR Handler
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

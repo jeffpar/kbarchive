@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138913: How to Activate and Use the Record Marker of a Grid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138913: How to Activate and Use the Record Marker of a Grid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138913/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138913/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138913/","publisher":null,"image":null,"headline":"Q138913: How to Activate and Use the Record Marker of a Grid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138913-how-to-activate-and-use-the-record-marker-of-a-grid">Q138913: How to Activate and Use the Record Marker of a Grid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138913
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The record marker is the small box on the leftmost side of each record in the
+grid. There will be a black arrow in the record marker of the current record if
+the grid has the focus. The record marker of a grid does not move when scrolling
+though a table if the grid does not have the focus as the record pointer is
+being moved.
+
+If the grid does not have focus, then the record marker will not appear beside
+the current record until the grid receives the focus. The record marker box is
+available only if the RecordMark property of the grid is set to true. Use the
+SetFocus property to make the record marker of the grid refresh every time a
+record is moved.
+
+MORE INFORMATION
+================
+
+Step-by-Step Demonstration
+--------------------------
+
+1. Create a new form and place a grid on it. While the mouse pointer is over the
+  grid, click the right mouse button, and then click the Builder to place
+  fields in the grid easily.
+
+2. Place a command button on the form and add the following code to its Click
+  event:
+
+     SKIP
+
+3. Run the form and note that the record marker doesn't appear in the grid until
+  the grid is clicked.
+
+4. Close the form, and then modify it, adding the following line of code after
+  the SKIP command in the Click event of the command button:
+
+     THISFORM.GRID1.SETFOCUS()
+
+5. Run the form and click the command button. Note that the record marker moves
+  as the record pointer of the table is moved with the command button.
+
+Adding the Next and Previous Buttons
+------------------------------------
+
+If you are using command buttons created by the Form Wizard, place the following
+code in the Next button of the command button group:
+
+     TXTBTNS.CMDNEXT::CLICK
+     THISFORM.GRID1.SETFOCUS()
+
+This will call the code in the Click event of the base class of the Next button.
+To make the Prior button work, change the CMDNEXT to CMDPRIOR in the above
+code.
+
+Setting the focus to the grid each time that the record pointer is moved allows
+the record marker to be updated. If another object on the form is clicked, the
+record marker will disappear until the grid receives the focus again.
+
+Additional query words: VFoxwin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

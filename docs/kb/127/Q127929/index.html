@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127929: Systems Management Server: Error 5016 When Running INVMac | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127929: Systems Management Server: Error 5016 When Running INVMac" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127929/","publisher":null,"image":null,"headline":"Q127929: Systems Management Server: Error 5016 When Running INVMac","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127929-systems-management-server-error-5016-when-running-invmac">Q127929: Systems Management Server: Error 5016 When Running INVMac</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127929
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbInventory smsinv
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run INVMac (Inventory Agent program for Macintosh client computers) for
+Microsoft Systems Management Server, the following error message appears:
+
+  Error 5016 in file shicsetting.cp
+
+CAUSE
+=====
+
+This error occurs when INVMac on the Macintosh client computer is not able to
+find the server.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Ensure the information in the [AppleServers] section of the SMS.INI file on
+  the Macintosh client computer is correct as follows:
+
+     [AppleServers]
+     CurrentLogonServer=&lt;zone&gt;@&lt;server name&gt;
+     Server1=&lt;zone&gt;@&lt;server name&gt;
+
+2. Ensure that the DOMAIN.INI file contains the correct server information.
+
+  If the SMS.INI file does not exist and the DOMAIN.INI file is located in
+  Microsoft SMS system folder, then the Macintosh client computer was installed
+  before the server updated the DOMAIN.INI file.
+
+3. If a Macintosh client computer is not using Microsoft authentication, ensure
+  that the properties of the SMS_SHR Macintosh volume allows Guest access. To
+  do this, select "View/Modify Volumes" from the MacFile menu of the Windows NT
+  File Manager. Select SMS_SHR and choose Properties. Ensure that the "Guest
+  can use this volume" option is selected.
+
+4. Ensure that the SMS Server is operational.
+
+5. Ensure the network is operational.
+
+6. Reset the Macintosh network connection in the Network Control Panel of the
+  Macintosh client computer.
+
+7. Ensure that the SMS Logon Server is running Services for Macintosh.
+
+Additional query words: prodsms sfm mac SMS "No Server" System
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

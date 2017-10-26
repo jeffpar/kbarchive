@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234062: INF: Determine Conversation State in CICS After SYNCPOINT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234062: INF: Determine Conversation State in CICS After SYNCPOINT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234062/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234062/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234062/","publisher":null,"image":null,"headline":"Q234062: INF: Determine Conversation State in CICS After SYNCPOINT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234062-inf-determine-conversation-state-in-cics-after-syncpoint">Q234062: INF: Determine Conversation State in CICS After SYNCPOINT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234062
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0 SP2,4.0SP2
+Operating System(s): 
+Keyword(s): kbsna400sp2
+Last Modified: 05-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft COM Transaction Integrator for CICS and IMS, version 4.0 SP2 
+- Microsoft SNA Server, version 4.0SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article deals with sample application code for a host Customer Information
+Control System (CICS) TP monitor.
+
+The sample program, SyncLev2.txt, is installed with the COM Transaction
+Integrator for CICS and IMS feature of SNA Server. It is found in the following
+directory:
+
+  SNA\COMTI\SampleCode\SyncLev2
+
+MORE INFORMATION
+================
+
+The following code snippet from it is not correct.
+
+********************************************************
+     ** CHECK THE EIB FIELDS TO DETERMINE WHAT ACTION COMTI
+     ** HAS REQUESTED, THEN ISSUE EITHER A SYNCPOINT OR     
+     ** ROLLBACK.
+     ********************************************************
+      NORMAL-TX-SYNCPOINT.
+          IF EIBSYNC = X'FF'
+             EXEC CICS SYNCPOINT END-EXEC
+             EXEC CICS RECEIV
+                       RESP(CMD-RESP)
+                       STATE(CONV-STATE)
+                       END-EXEC
+
+After the CICS syncpoint command is issued (EXEC CICS SYNCPOINT), the LU6.2
+conversation may be in either a receive state (code: 88) or in a free state
+(code: 85). If it is in a receive state, you need to issue an EXEC CICS RECEIVE
+command in the program, as follows, otherwise, just quit the program.
+
+*FIRST, DETERMINE THE CONVERSATION STATE.
+EXEC CICS EXTRACT ATTRIBUTES
+  STATE (CONV-STATE)
+  END-EXEC
+
+*THEN, ACT ACCORDINGLY.
+IF CONV-STATE = 88
+  EXEC CICS RECEIVE
+    RESP(CMD-RESP)
+    STATE(CONV-STATE)
+    END-EXEC
+  END-IF
+
+Similar logic should also be executed if the EXEC CICS SYNCPOINT ROLLBACK command
+is issued.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI400SP2
+Version           : WINDOWS:4.0 SP2,4.0SP2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

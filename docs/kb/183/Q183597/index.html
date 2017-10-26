@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183597: XCLN: Outbound Mail Stuck In Client Outbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183597: XCLN: Outbound Mail Stuck In Client Outbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183597/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183597/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183597/","publisher":null,"image":null,"headline":"Q183597: XCLN: Outbound Mail Stuck In Client Outbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183597-xcln-outbound-mail-stuck-in-client-outbox">Q183597: XCLN: Outbound Mail Stuck In Client Outbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183597
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you have more than one information service in your user profile that
+supports the same address type and the highest listed information service is
+either offline or not functioning, outbound messages may appear to be stuck in
+the outbox.
+
+This problem is usually seen with Internet (SMTP) messages.
+
+CAUSE
+=====
+
+Recipient addresses for outbound messages are processed by information services
+that are stored in the client profile and listed under Tools/Services/Delivery.
+When an e-mail message is addressed, the client checks the Delivery list to see
+which services match the address type of the message.
+
+For Internet (SMTP) messages, there are three possible information services that
+could be matched for sending mail. They are:
+
+- Microsoft Exchange Transport (and Microsoft Exchange Remote Transport)
+
+- Microsoft Mail if there is an SMTP or AT&amp;T mail gateway installed on the
+  Mail server.
+
+- Internet Mail if the client is used to connect to a POP3 server to read mail
+  and an SMTP server to send mail.
+
+WORKAROUND
+==========
+
+If you have a profile that has more than one information service that can
+process the same message, you need to confirm that the service is functioning
+properly or change the order in which the service is chosen.
+
+Example:
+
+You have a profile that has both Microsoft Exchange Server and Microsoft Mail
+information services and you want outbound Internet mail to go through Exchange
+Server and not the Microsoft Mail SMTP Gateway.
+
+1. From the Tools menu, choose Services and then Delivery.
+
+2. Use the up and down arrows to move the Microsoft Exchange Transport so that
+  it is higher than the Microsoft Mail service.
+
+Outbound SMTP mail should now default to the Exchange server and not Microsoft
+Mail.
+
+Note: This behavior is not limited only to SMTP. Other protocols such as X.400
+can also have multiple paths.
+
+If you have a need to use two different information services at different times
+you can create additional profiles for each service that you wish to use.
+
+Additional query words: xclnt, xfor, xcon, xadm, migration wizard, migrate
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

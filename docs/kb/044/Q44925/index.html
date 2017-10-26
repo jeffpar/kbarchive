@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44925: Status Line Input with a Blinking Cursor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44925: Status Line Input with a Blinking Cursor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44925/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44925/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44925/","publisher":null,"image":null,"headline":"Q44925: Status Line Input with a Blinking Cursor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44925-status-line-input-with-a-blinking-cursor">Q44925: Status Line Input with a Blinking Cursor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44925
+Product(s): See article
+Version(s): 1.00   | 1.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | GETINPUT.ARC S12311.EXE | mspl13_basic
+Last Modified: 13-SEP-1989
+
+Question:
+
+Is it possible in the Microsoft Editor to write an extension that will
+accept a line of input from the user, preferably from the status line?
+
+Response:
+
+Version 1.02 of the Microsoft Editor offers a very convenient way to
+do this. The GetString() callback function performs exactly this type
+of input. Version 1.00 of the Editor, however, does not have such a
+callback. It is possible to put together a routine that reads user
+input using the ReadChar() function in M Version 1.00. However, since
+ReadChar() waits for the next available character, there is no
+convenient way to flash a cursor during input when using this
+approach.
+
+The function provided below is a status-line input routine that does
+provide a flashing cursor. It uses the KbHook() and KbUnHook()
+functions to prevent the editor from scanning the keyboard and then
+reads the keyboard directly using the kbhit() and getch() functions
+from the C run-time library.
+
+An example C extension that demonstrates this function is available
+in the Software\Data Library. This file can be found by searching on
+the keyword GETINPUT, the Q number of this article, or S12311.
+GETINPUT was archived using the PKware file-compression utility.
+
+Status-Line Input Routine
+-------------------------
+
+#include "ext.h"
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;conio.h&gt;
+
+#define TRUE            1
+#define FALSE           0
+
+typedef unsigned        BOOL;
+
+char *GetInput( int BufLen, char *theBuffer );
+
+/* GetInput provides a means of getting user input from the status line
+ * with a blinking cursor in a manner similar to M 1.02's GetString().
+ * KbUnHook is used to capture keyboard input. KbHook restores normal
+ * keyboard reading to the editor.
+ *
+ * Receives:    BufLen - Length of input buffer
+ *              theBuffer - Pointer to input buffer
+ *
+ * Returns:     A pointer to the modified buffer, or NULL if ESC was
+ *              used to cancel input.
+ */
+char *GetInput(
+    int             BufLen,
+    char            *theBuffer )
+{
+    char            Key;                        /* ASCII code of key */
+    int             i = 0;                      /* Position in buffer */
+    BOOL            CursorOn = TRUE;            /* State of cursor */
+    int             FlashCount = 0;             /* Cursor state counter */
+    int             CursorToggleCount = 100;    /* Iterations between changes
+                                                   in cursor state */
+    char            *r;                         /* Return pointer */
+
+    /* Unhook the keyboard so that the editor no longer intercepts
+     * keystrokes.
+     */
+    KbUnHook();
+
+    /* Get keyboard input from user, stopping when ESC or ENTER is hit.
+     * Characters not in the range of 32 to 127 are ignored.  Backspace
+     * will work properly.  No more than (BufLen - 2) characters may
+     * be entered.
+     */
+    do
+    {
+        /* Flash a cursor while waiting for the next keypress.
+         */
+        while( !kbhit() )
+        {
+            if( ++FlashCount == CursorToggleCount )
+            {
+                FlashCount = 0;
+                CursorOn = !CursorOn;
+                if( CursorOn )
+                {
+                    strcat( theBuffer, "_" );
+                    DoMessage( theBuffer );
+                }
+                else
+                {
+                    theBuffer[i] = '\0';
+                    DoMessage( theBuffer );
+                }
+            }
+        }
+
+        /* Snarf the key
+         */
+        Key = (char)getch();
+
+        /* Handle backspace.
+         */
+        if( (Key == 8) &amp;&amp; (i &gt; 0) )
+        {
+            theBuffer[--i] = '\0';
+            DoMessage( theBuffer );
+        }
+
+        /* Handle normal character.
+         */
+        if( (Key &gt;=32) &amp;&amp; (Key &lt;= 127) &amp;&amp; (i &lt; BufLen - 2) )
+        {
+            theBuffer[i++] = Key;
+            theBuffer[i] = '\0';
+            DoMessage( theBuffer );
+        }
+    } while( (Key != 13) &amp;&amp; (Key != 27) );
+
+    /* If ESC was pressed, toss the input and NULL the input buffer,
+     * else perform a little cleanup.
+     */
+    if( Key == 27 )
+    {
+        theBuffer[0] = '\0';
+        DoMessage( theBuffer );
+        r = NULL;
+    }
+    else
+    {
+        if( CursorOn )
+            theBuffer[i] = '\0';
+        DoMessage( theBuffer );
+        r = theBuffer;
+    }
+
+    /* Restore normal keyboard input.
+     */
+    KbHook();
+
+    return( r );
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

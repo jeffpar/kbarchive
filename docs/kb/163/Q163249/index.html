@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163249: HOWTO: Use Usercontrolmode with Wizstyle Button Classes in VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163249: HOWTO: Use Usercontrolmode with Wizstyle Button Classes in VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163249/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163249/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163249/","publisher":null,"image":null,"headline":"Q163249: HOWTO: Use Usercontrolmode with Wizstyle Button Classes in VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163249-howto-use-usercontrolmode-with-wizstyle-button-classes-in-vfp">Q163249: HOWTO: Use Usercontrolmode with Wizstyle Button Classes in VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163249
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbDesigner kbOOP kbvfp500 kbvfp600
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The txtbtns and pictbtns classes contained in the Wizstyle.vcx library of
+Microsoft Visual FoxPro for Windows version 5.0 have a new custom property that
+controls the enabled/disabled property of a ComboBox, ListBox, or Spinner
+control placed on the same form.
+
+The Form wizard automatically drops a txtbtns object named "BUTTONSET1" on any
+form it builds. All TextBox controls populated from fields in tables are
+disabled until the Edit button of the BUTTONSET1 collection is clicked. Clicking
+Save or Revert again disables those controls.
+
+In Visual FoxPro 3.0 and 3.0b the developer had to add code to the click methods
+of those buttons to control the enabled/disabled status of an additional
+ComboBox, ListBox, or Spinner control in order to control whether event methods
+of those would be allowed to modify values elsewhere in a table or property.
+
+When set to .F. the new "Usercontrolmode" property of the txtbtns and pictbtns
+classes let the affected controls (ComboBox, ListBox, or Spinner) work the same
+as they did in Visual FoxPro 3.0.
+
+When Usercontrolmode is set to .T. the "Edit," "Save," and "Revert" buttons
+enable and disable those controls the same way they enable/disable the TextBox
+controls on that form.
+
+MORE INFORMATION
+================
+
+Steps to Demonstrate the Usercontrolmode Property
+-------------------------------------------------
+
+1. Issue the following command in the Command window:
+
+        SET DEFAULT TO HOME()+"\samples\data"
+
+  In Visual FoxPro 6.0, issue the following command:
+
+        SET DEFAULT TO HOME(3)+"samples\data"
+
+2. Open the Testdata database.
+
+3. Select Wizards and then Form from the Tools menu.
+
+4. In the Wizard Selection dialog box, click OK for the Form Wizard.
+
+5. In the Form Wizard dialog box, click the double arrow button to select all
+  fields from the customer table, then click Finish.
+
+6. Select the "Save form and modify it in the Form Designer" option, then click
+  Finish. (The form is saved as Customer.scx by default.)
+
+7. Click Save in the Save As dialog box.
+
+8. Size the form so that you can see the buttons at the bottom.
+
+9. From the Form Controls toolbar select a ComboBox, and place it on the form.
+
+10. In the property sheet for the ComboBox set RowSourceType to "5 - Array."
+
+11. Set RowSource to Thisform.myarray.
+
+12. Click New Property from the Form menu. Define a new property by typing
+  "myarray(20)" (without the quotes) into Name field and click "Add." Then
+  click Close.
+
+13. In the Init event method of the ComboBox enter the following:
+
+         SELECT DISTINCT country FROM customer ;
+            INTO ARRAY thisform.myarray NOCONSOLE
+         This.DisplayValue = Thisform.country1.value  &amp;&amp; the textbox
+         This.refresh
+
+14. Run the form. Note that the ComboBox is enabled. Click Exit.
+
+15. Back in the development mode, select the BUTTONSET1 control.
+
+16. In the property sheet for BUTTONSET1 scroll down to the custom properties
+  and find "Usercontrolmode." Set that to .T. (True). (It is not a toggled
+  property, so type the string ".T." without quotes in the property setting
+  combo box at the top of the sheet.)
+
+17. Run the form. Note that the combo box is disabled. Click Edit and notice
+  that the combo box, and all of the text boxes, are enabled. Click Revert and
+  notice that the controls are disabled.
+
+Using this feature in a project, the developer may want to change the
+DisabledBackColor property to white to match the backcolor of all of the other
+controls on the form.
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Chris Jensen, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDesigner kbOOP kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

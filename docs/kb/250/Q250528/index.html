@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250528: Using Account Joiner Utility in Microsoft Metadirectory Services | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250528: Using Account Joiner Utility in Microsoft Metadirectory Services" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250528/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250528/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250528/","publisher":null,"image":null,"headline":"Q250528: Using Account Joiner Utility in Microsoft Metadirectory Services","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250528-using-account-joiner-utility-in-microsoft-metadirectory-services">Q250528: Using Account Joiner Utility in Microsoft Metadirectory Services</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250528
+Product(s): Microsoft Windows NT
+Version(s): 2.1
+Operating System(s): 
+Keyword(s): kbinterop kbtool
+Last Modified: 27-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides information about using the Account Joiner utility.
+
+MORE INFORMATION
+================
+
+Account Joiner is a Lightweight Directory Access Protocol (LDAP) client you can
+use to help manage and control the join process. Account Joiner is used to
+process those connector space entries that could not be joined through the
+standard join rules of the Management Agent (MA). Account Joiner enables you
+to:
+
+- View all the MAs on your server and any disconnected entries in each MA.
+
+- Build ad-hoc queries to propose joins to the metaverse.
+
+- Manually join problem entries that will not join using the inclusion rules
+  specified.
+
+- Disconnect accounts that have been joined in error.
+
+NOTE: Account Joiner is installed automatically when you install Microsoft VIA
+Compass. Also, you are prompted to log on with the Zoomit Metadirectory Login
+prompt before loading Account Joiner.
+
+Normally you would use Account Joiner after an automated join operation by the
+Management Agent was complete, and there are some entries that remain
+disconnected.
+
+The Account Joiner utility permits you to select entries under a particular MA
+and join them to the metaverse object. However, if there are several entries
+listed in the metadirectory results, and you find there is a 1 to 1 mapping
+between the connector space and metadirectory results using the full name query,
+you should modify your join criteria to reduce the number of results requiring
+specific attention.
+
+The following examples are based on the default values associated with a
+predefined MA. Each MA will be unique and can be customized through the Account
+Joiner utility. For additional information about using Account Joiner, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q251297 How to customize the Account Joiner Utility for a Particular MA
+
+Using Account Joiner to Join Disconnected Objects on a Windows NT 4.0 Domain MA
+-------------------------------------------------------------------------------
+
+1. Log on to the Microsoft Metadirectory Services (MMS) server using Compass.
+
+2. Click Start, point to Programs, and then click Zoomit Directory Service V2.
+
+3. Click Account Joiner, and then click the appropriate MA tab.
+
+4. Click the appropriate entry, and then click Full Name.
+
+5. Under Metadirectory Results, click Join.
+
+NOTE: When you join a connector space object to the metaverse, the object icon
+changes from green to red. A red icon indicates the connector space object is
+assigned to the metaverse, and there is no need to join this object. A green
+icon indicates you need to do something with this metaverse object.
+
+Disconnect an Account that Has Been Joined in Error
+---------------------------------------------------
+
+1. Log on to Compass
+
+2. Click Start, point to Programs, and then click Zoomit Directory Service V2.
+
+3. Click Account Joiner, and then click the appropriate MA tab.
+
+4. In the Search Content box, click First And Last, and then type the name of
+  the user that you would like to disconnect.
+
+5. Click Search.
+
+6. Right-click the user name, click Connectors, click the appropriate entry in
+  the Connected Objects box, and then click Disconnect.
+
+7. Click Close.
+
+For additional information about joining accounts, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+  Q250584 Understanding a Join in Microsoft Metadirectory Services
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

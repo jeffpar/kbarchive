@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170199: HOWTO: STL Sample for slice::(length, start, stride) Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170199: HOWTO: STL Sample for slice::(length, start, stride) Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170199/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170199/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170199/","publisher":null,"image":null,"headline":"Q170199: HOWTO: STL Sample for slice::(length, start, stride) Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170199-howto-stl-sample-for-slicelength-start-stride-functions">Q170199: HOWTO: STL Sample for slice::(length, start, stride) Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170199
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): _IK kbVC500 kbVC600
+Last Modified: 05-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the slice::length, slice::start,
+and slice::stride STL functions in Visual C++.
+
+Note that there are some differences in the implementation of the Standard C++
+Library components in Visual C++ version 4.2 versus later revisions. The
+relevant sections of code below compile conditionally based upon the value of
+_MSC_VER.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;valarray&gt;
+
+Prototype
+---------
+
+     class slice
+     {
+     public:
+
+        slice();
+        slice(size_t st, size_t len, size_t str);
+        size_t start() const;
+
+     #if _MSC_VER == 1020 // version 4.2 - declare length()
+
+        size_t length() const;
+
+     #else // later than version 4.2, length changed to size()
+
+        size_t size() const;
+
+     #endif
+
+        size_t stride() const;
+
+     };
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+This sample demonstrates the use of STL slice array to change "Hello World!"
+string to "Hello There." string.
+
+Sample Code
+-----------
+
+      ////////////////////////////////////////////////////////////////////// 
+      // 
+      // Compile options needed: None
+      // 
+      // &lt;filename&gt; :  main.cpp
+      // 
+      // Functions:
+      // 
+      //  slice::length, slice::start, slice::stride
+      // 
+      // Written by Yeong-Kah Tam
+      // of Microsoft Product Support Services,
+      // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+      ////////////////////////////////////////////////////////////////////// 
+
+      #include &lt;iostream&gt;             // for i/o functions
+      #include &lt;valarray&gt;             // for valarray
+      using namespace std;
+
+     #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+      void main()
+      {
+         // Initialize string 1 to contain "Hello World!",
+         // and string 2 to contain "There".
+         valarray&lt;char&gt; string1("Hello World!", 12);
+         valarray&lt;char&gt; string2("There.", 6);
+
+         // Display both strings.
+         cout &lt;&lt; "String 1 = ";
+         int strlen;
+      #if _MSC_VER == 1020   // version 4.2 - call length
+         strlen = string1.length();
+      #else   // later than 4.2 - call size
+         strlen = string1.size();
+      #endif
+         for (int i = 0; i &lt; strlen; i++)
+            cout &lt;&lt; string1[i];
+         cout &lt;&lt; "\r\n";
+
+         cout &lt;&lt; "String 2 = ";
+      #if _MSC_VER == 1020   // version 4.2 - call length
+         strlen = string2.length();
+      #else   // later than 4.2 - call size
+         strlen = string2.size();
+      #endif
+         for (i = 0; i &lt; strlen; i++)
+            cout &lt;&lt; string2[i];
+         cout &lt;&lt; "\r\n\r\n";
+
+         // slice(6, 6, 1) creates a slice array of
+         //{6, 7, 8, 9, 10, 11} which is used to select
+         // the elements of string1. "World!" it is. In
+         // turn, these elements are replaced by the corresponding
+         // element in string2.
+         slice slice_obj(6, 6, 1);
+         string1[slice_obj] = string2;
+
+         // Display starting index, length,
+         // and stride of the slice object.
+         cout &lt;&lt; "slice - starting index = " &lt;&lt; slice_obj.start();
+              cout &lt;&lt; "\r\n";
+      #if _MSC_VER == 1020   // version 4.2 - call length
+         cout &lt;&lt; "slice - length = " &lt;&lt; slice_obj.length() &lt;&lt; "\r\n";
+      #else   // later than 4.2 - call size
+         cout &lt;&lt; "slice - length = " &lt;&lt; slice_obj.size() &lt;&lt; "\r\n";
+      #endif
+         cout &lt;&lt; "slice - stride = " &lt;&lt; slice_obj.stride() &lt;&lt; "\r\n";
+         cout &lt;&lt; "\r\n";
+
+         // Now print out the result.
+         cout &lt;&lt; "After the change, String 1 = ";
+      #if _MSC_VER == 1020   // version 4.2 - call length
+         strlen = string1.length();
+      #else   // later than 4.2 - call size
+         strlen = string1.size();
+      #endif
+         for(i = 0; i &lt; strlen; i++)
+            cout &lt;&lt; string1[i];
+         cout &lt;&lt; "\r\n";
+      }
+
+Program Output
+--------------
+
+  String 1 = Hello World!
+  String 2 = There.
+
+  slice - starting index = 6
+  slice - length = 6
+  slice - stride = 1
+
+After the change, String 1 = Hello There.
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample length start stride (c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Yeong-Kah Tam,
+
+======================================================================
+Keywords          : _IK kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

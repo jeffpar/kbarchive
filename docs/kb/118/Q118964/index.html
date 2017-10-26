@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118964: PC WFW: Upgrade from WGPO to Microsoft Mail 3.2 PO Hangs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118964: PC WFW: Upgrade from WGPO to Microsoft Mail 3.2 PO Hangs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118964/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118964/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118964/","publisher":null,"image":null,"headline":"Q118964: PC WFW: Upgrade from WGPO to Microsoft Mail 3.2 PO Hangs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118964-pc-wfw-upgrade-from-wgpo-to-microsoft-mail-32-po-hangs">Q118964: PC WFW: Upgrade from WGPO to Microsoft Mail 3.2 PO Hangs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118964
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail and Schedule+ Extensions for Microsoft Windows for Workgroups, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade from a Microsoft Windows for Workgroups Mail postoffice to
+version 3.2x or 3.5 of Microsoft Mail for PC Networks, the setup will fail if
+the mailbox name of the postoffice creator is exactly 10 characters.
+
+When you run SETUP.EXE from the Mail Extensions package or the Postoffice/Server
+Upgrade disk that ships with version 3.5 of Microsoft Mail for PC Networks, you
+will get one of the following errors, depending on the operating system:
+
+From Microsoft Windows:
+
+  This application has violated system integrity due to execution of an invalid
+  instruction and will be terminated. Quit all applications, quit Windows and
+  then restart your computer
+
+From Microsoft Windows NT:
+
+  The NTVDM CPU has encountered an illegal instruction. CS:&lt;location&gt;
+
+CAUSE
+=====
+
+The setup will hang if you supply a mailbox name for the administrator account
+that is 10 characters in length. For example, if you use "POSTMASTER" as the
+administrator account name, setup will hang.
+
+RESOLUTION
+==========
+
+You must change the administrator's mailbox to be under 10 characters.
+
+NOTE: The administrator of the workgroup postoffice (WGPO) is the only user that
+can make changes to mailbox names.
+
+To change postoffice administrator mailbox name
+-----------------------------------------------
+
+1. Sign into Mail as the Postoffice Manager.
+
+2. From the Mail menu, choose Postoffice Manager.
+
+3. In the Postoffice Manager dialog box, select the name of the current
+  administrator, and click the details button.
+
+4. Change the name in the mailbox field to a new name of less than 10
+  characters, and click the OK button.
+
+For additional information, please see the Microsoft Windows for Workgroups Mail
+"User's Guide," pages 42-45.
+
+Additional query words: 3.20 3.11 3.1 WFWG PO WGPO workgroup extension extensions upgrade
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3 kbMailScheduleX320
+Version           : :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

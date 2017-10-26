@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129280: HOWTO: Change the Color of the Active Cell in a Grid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129280: HOWTO: Change the Color of the Active Cell in a Grid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129280/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129280/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129280/","publisher":null,"image":null,"headline":"Q129280: HOWTO: Change the Color of the Active Cell in a Grid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129280-howto-change-the-color-of-the-active-cell-in-a-grid">Q129280: HOWTO: Change the Color of the Active Cell in a Grid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129280
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbvfp300 kbvfp500 kbvfp600
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Grid control is more flexible than the BROWSE command. A Grid contains
+columns that in turn contain controls, it is possible to manipulate data at the
+control, or cell, level. The example provided in this article shows how to
+modify the color of an active cell when you access it with the keyboard or the
+mouse.
+
+MORE INFORMATION
+================
+
+You can add any control to the column of a grid, and can access its properties,
+events, and methods. The ACTIVECONTROL property returns the name of the control
+displayed in a column, and by default, a column of a grid contains a text box
+with the name Text1.
+
+Step-by-Step Example
+--------------------
+
+This example provides a generic way to control the background color of the active
+control for any column in the Grid by using the Form Designer. It changes the
+value of the BACKCOLOR and SELECTEDBACKCOLOR properties.:
+
+1. Create a Form.
+
+2. Right-click the form, and select Data Environment. Select the
+  SAMPLES\DATA\CUSTOMER table.
+
+3. Place a Grid on the form. In the property sheet, select Grid1 from the Object
+  dropdown. Select the Init event handler, and type the following code:
+
+     nColumncount=this.columncount
+     * The color of the current control is changed to red for every column
+     * in the grid.
+     FOR I=1 to nColumnCount
+        * Objref  returns a reference to the current control
+        objref=EVAL('this.columns(i).'+this.column1.currentcontrol)
+        * Modifies the backcolor property of the control. Any property of
+        * the control can be manipulated this way.
+        objref.BackColor=RGB(255,0,0)
+        objref.SelectedBackcolor=RGB(255,0,0)
+     ENDFOR
+
+4. Save and run the form. When you access any cell on the grid, the background
+  color changes to red.
+
+This example will need a special case if the current control is a command button
+because the COMMANDBUTTON class does not have a BACKCOLOR or SELECTEDBACKCOLOR
+property.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : WINDOWS:3.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

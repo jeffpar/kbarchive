@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128583: MS ACCESS 2 FOR WIN SBS: 2ED Corrections and Comments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128583: MS ACCESS 2 FOR WIN SBS: 2ED Corrections and Comments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128583/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128583/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128583/","publisher":null,"image":null,"headline":"Q128583: MS ACCESS 2 FOR WIN SBS: 2ED Corrections and Comments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128583-ms-access-2-for-win-sbs-2ed-corrections-and-comments">Q128583: MS ACCESS 2 FOR WIN SBS: 2ED Corrections and Comments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128583
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Access 2 for Windows Step by Step ISBN 1-55615-593-X 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Microsoft Access 2 for Windows Step by
+Step."
+
+The following topics are covered:
+
+- Page 95: Step 3 Error "Couldn't find net path or user name"
+
+- Page 95: No data sources available for Paradox.
+
+- Page 95: error "Could not open PARADOX.NET"
+
+- Page 232: Entering New Order to Orders Subform Causes Error
+
+- DISK: Setup error "Insert DISK1"
+
+MORE INFORMATION
+================
+
+In addition to a description of the book's problems, this document might also
+include sections labeled "Correction" and "Comments." Please note that the
+"Correction" section is worded for correcting the book and does not necessarily
+address the problem introduced by the book error. The "Comments" section
+contains specific information for working around problems.
+
+Page 95: Step 3 Error "Couldn't find net path or user name"
+-----------------------------------------------------------
+
+The following issue is caused by Microsoft Access 2.0, and is not a problem
+caused by the Practice Files disk provided with "Microsoft Access 2.0 Step by
+Step."
+
+Under certain rare circumstances, Microsoft Access 2.0 does not properly update
+the MSACC20.INI to allow you to import and attach Paradox files. When this
+occurs, you receive the following error message:
+
+  Could not find Paradox Net Path or User Name.
+
+This error may occur when you try to attach or import SHIPPING.DB. (You will
+first attempt this on page 95.)
+
+Correction:
+
+This is not a problem caused by an error in the book. See the "Comments" section
+below for the proper method of correcting the Access 2 initialization file,
+MSACC20.INI.
+
+Comments:
+
+To solve this problem, you will need to add the following line in the [Paradox
+ISAM] section of the file MSACC20.INI:
+
+  Add ParadoxUserName=&lt;your name&gt;
+
+To modify the MSACC20.INI, do the following:
+
+1. Close Microsoft Access 2.0 (if you currently have it open).
+
+2. In Program Manager, open Notepad.
+
+3. From the File menu, choose Open, and type the following path:
+
+  " C:\WINDOWS\MSACC20.INI" (without the quotation marks)
+
+4. Choose OK to open MSACC20.INI.
+
+5. Scroll through the MSACC20.INI file to the [Paradox ISAM] section, which is
+  about two-thirds of the way down. Q126498Q126498 NOTE: Do not mistake this
+  section for either the [Paradox 3.X] or [Installable ISAMs] section.
+
+6. Add the following as a new line in this section:
+
+  " ParadoxUserName=&lt;any user name or other unique identifier&gt;" (without
+  the quotation marks)
+
+7. Save changes to this file and quit Notepad.
+
+When Access is restarted, this setting will allow proper attachment to the
+Paradox database. The following is an example of a properly defined [Paradox
+ISAM] section:
+
+        [Paradox ISAM]
+        ParadoxUserName=Zephan Schroeder
+        ParadoxNetPath=C:\MSOFFICE\ACCESS
+        ParadoxNetStyle=3.x
+        CollatingSequence=Ascii
+
+Page 95: No data sources available for Paradox
+----------------------------------------------
+
+The default installation of Microsoft Access 2 provides several importing filters
+for other database files such as Paradox, FoxPro, dBASE, and Btrieve. However,
+custom installations can omit these importing filters.
+
+If the Paradox file format filter is not installed with Microsoft Access 2,
+lesson 7 will not make sense because the Paradox data source is not available.
+
+Correction:
+
+Add a margin note left of Step 1:
+
+"If Paradox does not appear in the list of data sources, you may need to run the
+Access setup program to install the Paradox importing filters. These are
+included as part of the standard Access 2 installation. Please refer to the
+Microsoft Access 2 Getting Started manual or the Microsoft Access 2 User's Guide
+for more information."
+
+Page 95:  error "Could not open PARADOX.NET"
+--------------------------------------------
+
+The following error might occur while trying to attach a Paradox table as
+instructed on page 95:
+
+  Could not open PARADOX.NET
+
+Comments:
+
+This error is typically caused by not having permission to write to the directory
+in which Microsoft Access is located. Microsoft Access 2.0 creates a PARADOX.NET
+file in the Microsoft Access program directory the first time you try to access
+Paradox data. An entry is made in the MSACC20.INI file in the [Paradox ISAM]
+section pointing to the location of the file. The MSACC20.INI file should be in
+your Windows directory. The entry will be similar to:
+
+     [Paradox ISAM]
+     ParadoxNetPath=C:\MSOFFICE\ACCESS\ 
+
+A network installation of Microsoft Access will typically have a read-only server
+directory that contains the primary shared files necessary to run Access,
+including PARADOX.NET. Unfortunately the shared directory is typically read-only
+for users, which causes Access to fail when trying to open the PARADOX.NET
+file.
+
+There are three methods of resolving this issue: Grant users write access to the
+server share, reinstall Access on the local hard disk (typical Access
+installation), or change the MSACC20.INI to refer to PARADOX.NET on the local
+drive.
+
+Method #1: Grant users write access to the server share. For several lessons in
+this book you must have permission to write to the server directory in which
+Microsoft Access is located in order to open the shared file named PARADOX.NET.
+
+Note: A system administrator is typically the only person with the permission to
+change your access rights to a network directory.
+
+Method #2: Reinstall Access on the local hard disk (typical Access installation).
+That is, have Microsoft Access installed completely on your computer such that
+you do not need to access a network to run Microsoft Access. You always have
+permission to read, write, and change files that are located on your computer's
+hard drive, so once Microsoft Access is installed completely on your computer
+you will have permission to open (and write to) the PARADOX.NET file.
+
+Method #3: Change the MSACC20.INI to refer to PARADOX.NET on the local drive. The
+following steps should resolve the problem:
+
+1. Open Microsoft Notepad (in the Accessories group)
+
+2. Click File, then click Open, and then type in the filename:
+
+  " C:\WINDOWS\MSACC20.INI" (without the quotation marks)
+
+3. Scroll down to the [Paradox ISAM] section (about two thirds of the way down
+  the file), and locate the ParadoxUserName entry
+
+4. Change the ParadoxNetPath entry to refer to a local directory.
+
+  For example:
+
+  ParadoxNetPath=C:\MSOFFICE\ACCESS
+
+  or ParadoxNetPath=C:\WINDOWS\TEMP
+
+5. Exit Notepad and save changes to MSACC20.INI.
+
+Please contact your system administrator or Microsoft Access Technical Support if
+you require assistance configuring Microsoft Access on your computer.
+
+
+For information regarding resolving this problem in Microsoft Access for Windows
+95, please refer to the following Knowledge Base article:
+
+  Q142479 PRB: "Couldn't Open Paradox.Net" Error Message (7.0)
+
+Page 232 : Entering New Order to Orders Subform Causes Error
+------------------------------------------------------------
+
+When you attempt to add a new order, you cannot add any boxes in the Orders
+Subform without causing the following error:
+
+  Current field must match join key '?' on 'one' side of outer join.
+
+Correction:
+
+In the SWEET.MDB file, the details section of the Orders Subform must have the
+Default Value property removed from the following text boxes:
+
+- Size
+
+- Box Price
+
+Comments:
+
+To correct the problem, do the following:
+
+1. Open the Orders Subform in Design view.
+
+2. Double-click the Size text box in the details section to bring up the
+  property sheet for this control.
+
+3. In the property sheet, delete the Default Value property, which is set to 0.
+
+4. Repeat steps 2 and 3 for the Box Price text box.
+
+5. Close the Orders Subform and save changes.
+
+Once these corrections are made, the Orders Subform will no longer cause this
+error.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q116062 PRB: Adding Records to AutoLookup Form Generates Error
+
+
+DISK: Setup error "Insert DISK1"
+--------------------------------
+
+If the Setup program requests that you enter the disk labeled "DISK1" and refuses
+to continue, please exit the setup and perform the following steps:
+
+1. (Windows 3.x) From the program manager, click the File menu and then
+
+click Run.
+
+(Windows 95) Click the Start menu, and then click Run.
+
+1. Insert the Practice Files disk in drive A and then type the following
+
+command:
+
+  " LABEL A: DISK1" (without the quotation marks)
+
+Once these steps are completed, the setup program will recognize the disk and
+continue the installation.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: mspress ms_press press bookbug sbs
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

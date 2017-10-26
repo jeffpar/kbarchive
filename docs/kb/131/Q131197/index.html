@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131197: PRB: Can’t Edit/Select Converted Screen Objects by Clicking | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131197: PRB: Can’t Edit/Select Converted Screen Objects by Clicking" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131197/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131197/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131197/","publisher":null,"image":null,"headline":"Q131197: PRB: Can’t Edit/Select Converted Screen Objects by Clicking","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131197-prb-cant-editselect-converted-screen-objects-by-clicking">Q131197: PRB: Can’t Edit/Select Converted Screen Objects by Clicking</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131197
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When, after doing a functional conversion of a FoxPro screen in Visual FoxPro
+version 3.0, the objects in that screen cannot be selected by clicking them in
+the Visual FoxPro form.
+
+CAUSE
+=====
+
+Doing a functional conversion causes Visual FoxPro to add a Page frame to the
+form. All of the objects in the form are put into the page frame instead of
+directly onto the form.
+
+By clicking the form, you are selecting the page frame object instead of each
+individual object.
+
+WORKAROUND
+==========
+
+To be able to edit an individual object, click the page frame using the
+secondary (right) mouse button. Then select Edit from the control menu. Or you
+can select page1 from the object menu in the property box for the form. Then you
+can click any item to change or view its properties and methods.
+
+STATUS
+======
+
+This Behavior is by design.
+
+MORE INFORMATION
+================
+
+When creating a new form in Visual FoxPro version 3.0, you can click the object
+to view or change its properties and methods. In FoxPro version 2.x, you can
+edit an object by double-clicking it.
+
+When you convert a screen from FoxPro version 2.x to Visual FoxPro version 3.0,
+Visual FoxPro adds a page frame to the form. The addition of a page frame was
+necessary to emulate the FoxPro version 2.x READ model; the page frame is a
+container that holds the converted objects. Clicking an object in the form lists
+the properties and methods of the page frame instead of the converted object.
+
+NOTE: Performing a visual conversion instead of the functional conversion
+prevents the page frame from being added to the form. The converted objects are
+placed directly on the form. However, the properties and methods of the objects
+must be manually added to the form.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open a FoxPro version 2.x screen by choosing Open from the File menu or by
+  using the MODIFY FORM command in the Command Window.
+
+2. When the Visual FoxPro Converter dialog box appears, choose Functional
+  Conversion, and click Continue.
+
+3. When the form designer window appears, notice that the properties sheet has
+  Formset as the default object.
+
+4. Click any object on the form to list the properties and methods for the page
+  frame. Double-Click to bring up the PageFrame.AddObject edit window.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

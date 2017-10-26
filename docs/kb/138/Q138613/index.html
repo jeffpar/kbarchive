@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138613: How to Use the SYS(3052) Function to Avoid Scrolling Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138613: How to Use the SYS(3052) Function to Avoid Scrolling Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138613/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138613/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138613/","publisher":null,"image":null,"headline":"Q138613: How to Use the SYS(3052) Function to Avoid Scrolling Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138613-how-to-use-the-sys3052-function-to-avoid-scrolling-error">Q138613: How to Use the SYS(3052) Function to Avoid Scrolling Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138613
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SYS(3052) function helps prevent the scrolling error message "Record Not
+Available, please wait" by specifying whether or not Visual FoxPro uses the SET
+REPROCESS settings when attempting to lock an index or a memo file. This article
+explains how to use the SYS(3052) function in multiuser applications.
+
+MORE INFORMATION
+================
+
+The "Record not available, please wait" message is displayed when a table is
+updated but the index or memo file cannot be locked. There is not a way to
+escape or cancel this warning message until the contention has been resolved. By
+modifying the locking order of files, the SYS(3052) function can help suppress
+the scrolling message.
+
+Currently, for performance optimization, Visual FoxPro performs record locks on a
+table and file locks on a memo and index file in the following order:
+
+  Lock table record
+  Write table record
+  Lock memo file
+  Write memo file
+  Lock index file
+  Write index file
+
+When the index and memo attributes of the SYS(3052) function are set to True
+(.T.), the locking and updating order is as follows:
+
+  Lock table record
+  Lock memo file
+  Lock index file
+  Write table record
+  Write memo file
+  Write index file
+
+As a result of using the SYS(3052) function, the scrolling "Record not available,
+please wait" message is less likely to occur. If this message is displayed, an
+abnormal shutdown would cause less discrepancy because neither the table nor the
+memo or index files have been updated.
+
+The following example illustrates how to use the SYS(3052) function. To run it:
+
+1. Copy and paste the two sample programs into two program files, Server.prg and
+  Client.prg.
+
+2. Start two instances of Visual FoxPro and run Server.prg.
+
+3. When the programs have run, issue an END TRANSACTION command in the instance
+  of Visual FoxPro that ran Server.prg.
+
+Sample Programs
+---------------
+
+  *:*************************************************************************
+  *:*: Procedure File Server.prg
+  *:*************************************************************************
+  *:   SERVER
+     SET SAFETY OFF
+     SET EXCLUSIVE OFF
+
+     CLOSE DATA ALL
+     IF FILE('TSTSRVER.dbc')
+         DELETE DATA TSTSRVER DELETETABLES
+     ENDIF
+
+     =SYS(3052,1,.T.)
+     =SYS(3052,2,.T.)
+
+     CREATE DATA TSTSRVER  &amp;&amp; Creates a database and a table
+     CREATE TABLE xxx (dbkey i PRIMARY KEY, field2 c(5), field3 m)
+
+     INSERT INTO xxx VALUES (1, 'aaaaa', 'long string 1')
+     INSERT INTO xxx VALUES (2, 'bbbbb', 'long string 2')
+     INSERT INTO xxx VALUES (3, 'ccccc', 'long string 3')
+     INSERT INTO xxx VALUES (4, 'ddddd', 'long string 4')
+     INSERT INTO xxx VALUES (5, 'eeeee', 'long string 5')
+
+     CLOSE DATA ALL
+     OPEN DATA TSTSRVER SHARED
+     =MESSAGEBOX('Start the Client program on the second instance now.')
+     USE xxx SHARED  &amp;&amp; Executes after the Client program is started
+
+     BEGIN TRANSACTION
+     GOTO 2
+     REPLACE field3 WITH 'Changed String'
+     SKIP
+     ?'Return to client and press ok.'
+
+  *:*************************************************************************
+  *: Procedure File Client.prg
+  *:*************************************************************************
+  *: CLIENT
+     SET SAFETY OFF
+     SET EXCLUSIVE OFF
+     CLOSE DATA ALL
+
+     =SYS(3052,1,.T.)  &amp;&amp; Changes the lock and write order
+     =SYS(3052,2,.T.)
+
+     USE XXX SHARED
+     =MESSAGEBOX('Switch to server and press OK')
+
+     GOTO 1
+     REPLACE field3 WITH 'Changed String from client'
+     SKIP
+
+When these programs are run, the message "Attempting To Lock. Press Cancel" is
+displayed. When you press the ESC key, the error "Record is in Use by another
+user" appears, or your ON ERROR routine is triggered.
+
+If you change the settings of SYS(3052) to false (.F.) in Client.prg, the
+scrolling message "Record not available, please wait" is displayed.
+
+Additional query words: VFoxWin rlock flock locking
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

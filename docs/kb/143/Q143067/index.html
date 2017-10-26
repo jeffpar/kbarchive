@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143067: Mac Multimedia: Movies Freeze or Quit with QuickTime 1.6.x | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143067: Mac Multimedia: Movies Freeze or Quit with QuickTime 1.6.x" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143067/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143067/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143067/","publisher":null,"image":null,"headline":"Q143067: Mac Multimedia: Movies Freeze or Quit with QuickTime 1.6.x","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143067-mac-multimedia-movies-freeze-or-quit-with-quicktime-16x">Q143067: Mac Multimedia: Movies Freeze or Quit with QuickTime 1.6.x</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143067
+Product(s): Microsoft Home Multimedia Titles
+Version(s): MACINTOSH:1.0,1.0a,2.0; :1994 edition,1995 edition,1995, 1996, 1997 editions,1997 editi
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Ancient Lands for the Macintosh, version 1.0 
+- Microsoft Bookshelf 1996-97 for Macintosh 
+- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+- Microsoft Encarta 97 Encyclopedia for Macintosh 
+- Microsoft Cinemania for the Macintosh 1995, 1996, 1997 editions 
+- Microsoft Music Central for the Macintosh, 1996, 1997 editions 
+- Microsoft Dangerous Creatures for the Macintosh, version 1.0 
+- Microsoft Wine Guide for the Macintosh, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play a video clip in Dinosaurs, Encarta 95, or Cinemania 95,
+the computer either stops responding (hangs), or you receive the following error
+message:
+
+  The application "unknown" has unexpectedly quit, because and error of type 1
+  occurred.
+
+In Cinemania 96 and Music Central, you receive the following error message:
+
+  &lt;Application Name&gt; requires QuickTime 2.0 or later. To install
+  QuickTime, please run the &lt;Application Name&gt; Installer.
+
+In Dangerous Creatures, Wine Guide, or Ancient Lands, you receive the following
+error message:
+
+  &lt;Application Name&gt; requires QuickTime 2.0 or later, which is not
+  present on this Macintosh. Run the installer on the &lt;Application Name&gt;
+  CD to add QuickTime to your system. If you choose to continue, movies may not
+  work."
+
+In Bookshelf 1996-97:
+
+  Currently, no videos or animations will play. QuickTime or QuickTime
+  PowerPlug may not be installed properly. Please run the installer from your
+  Bookshelf 1996-97 Compact Disc.
+
+  (With or without QuickTime PowerPlug)
+
+In Cinemania 97:
+
+  &lt;Application Name&gt; requires QuickTime 2.0 or later. To install
+  QuickTime, please run the &lt;Application Name&gt; Installer. (With or
+  without QuickTime PowerPlug)
+
+In Encarta 97:
+
+  Encarta requires QuickTime 2.0 or Later (including QuickTime Musical
+  Instruments and PowerPlug) Please reinstall from Encarta 97 Disc 1. An
+  unknown error has occurred while initializing Encarta Encyclopedia. Please
+  restart your Macintosh and try again. If you still have a problem, reinstall
+  from Encarta 97 Disc 1.
+
+  (With or without QuickTime PowerPlug and QuickTime Musical Instruments)
+
+In Music Central 97:
+
+  &lt;Application Name&gt; requires QuickTime 2.0 or later. To install
+  QuickTime, please run the &lt;Application Name&gt; Installer. (With or
+  without QuickTime PowerPlug)
+
+In Wine Guide 2.0:
+
+  Microsoft Wine Guide requires QuickTime (TM) 2.0 or later, which is not
+  installed on this Macintosh. Run the installer on the Microsoft Wine Guide CD
+  to add QuickTime to you system. If you continue to run Microsoft Wine Guide
+  without QuickTime (TM) 2.0 or later, movies may not work.
+
+where &lt;application name&gt; is the name of the program you are trying to run.
+
+CAUSE
+=====
+
+These problems may occur if the QuickTime (version 1.6.x) extension is in the
+extensions folder.
+
+Microsoft Dinosaurs, Encarta 95 and Cinemania 95 only display the error message
+if both QuickTime (version 1.6.x) and QuickTime PowerPlug (version 2.x) are in
+the extensions folder.
+
+RESOLUTION
+==========
+
+For Ancient Lands, Music Central 1996, Dangerous Creatures, and Wine Guide for
+the Macintosh, use Method 1 to resolve the problem. To resolve the problem for
+Encarta 95, Cinemania 95, or Dinosaurs use either of the following methods.
+
+Method 1
+--------
+
+Replace QuickTime (version 1.6.x) with QuickTime (version 2.0).
+
+Method 2
+--------
+
+Remove QuickTime PowerPlug (version 2.0) and replace the program with QuickTime
+PowerPlug (version 1.0).
+
+MORE INFORMATION
+================
+
+To install a different version of QuickTime or PowerPlug, use the system
+software installation disks or compact disc included with your computer.
+
+For more information about removing and installing extensions, see your computer
+system software documentation.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm hangs hanging hanged crashed crash crashes freeze frozen locked locked-up lock hang bombed bomb down
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword kbBookshelfSearch kbEncartaEncycSearch kbCineManiaSearch kbAncientLandsMac kbBookShelf1996Mac kbBookShelf1997Mac kbDangerousCreaturesMac kbMusicCentralMacSearch kbWine100Mac kbWine100aMac kbWine200Mac kbEncartaEnCyc1994 kbEncartaEnCyc1995Mac kbEncartaEnCyc1997Mac kbMusicCentralMac1996
+Version           : MACINTOSH:1.0,1.0a,2.0; :1994 edition,1995 edition,1995, 1996, 1997 editions,1997 edition
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

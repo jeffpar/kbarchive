@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130055: Character Sets Supported by Hangeul (Korean) Windows Versions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130055: Character Sets Supported by Hangeul (Korean) Windows Versions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130055/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130055/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130055/","publisher":null,"image":null,"headline":"Q130055: Character Sets Supported by Hangeul (Korean) Windows Versions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130055-character-sets-supported-by-hangeul-korean-windows-versions">Q130055: Character Sets Supported by Hangeul (Korean) Windows Versions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130055
+Product(s): Miscellaneous Software Development Kits
+Version(s): 3.1; WINDOWS:1.2,3.5
+Operating System(s): 
+Keyword(s): kbIntl kbSDKWin32 kbOSWin32s kbIntlDev
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) for Windows version 3.1 
+- Microsoft Win32 Software Development Kit (SDK), version 3.5 
+- Microsoft Win32s version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Hangeul (Korean) Windows version 3.1 supports the Wansung code set only. However
+Hangeul Windows 95 will support the XWansung code set.
+
+MORE INFORMATION
+================
+
+Two different Hangeul character standards exist in Korea. One is Wansung, and
+the other is Johap. The Korean government issued a Korean standard code set
+(KSC5601-1987), which is Wansung code set. Hangeul Windows version 3.1 supports
+this character set only.
+
+Later, the Korean government amended and added to the standard and issued a new
+one (KSC5601-1992), which contains both Wansung and Johap code sets.
+
+Hangeul Windows version 3.1 and Hangeul Windows 95 will not support the
+KSC5601-1992 standard. Instead, Hangeul Windows 95 will support the XWansung
+(Microsoft Extended Wansung) standard, which is an extended version of the
+KSC5601-1987 standard.
+
+The XWansung Code system contains some Johab characters (not all the Johap
+codes). Johab characters were added into the vacant Range of old Wansung Code of
+Hangeul Windows version 3.1. Here are the details on the XWansung code set:
+
+Number of characters:
+
+    Exisitng Wansung    = 8,836
+    Additional Assigned = 8,822 (Johab)
+    Additional Reserved = 4,770
+    ------------------------------
+    Total characters    = 22,428
+
+Leading byte range:    0x81-0xFE
+Trailing byte range:   0x41-5A,0x61-0x7A,0x81-0xFE
+
+Additional query words: 1.20 3.10 4.00 3.50 Hangul Chohap kbinf
+
+======================================================================
+Keywords          : kbIntl kbSDKWin32 kbOSWin32s kbIntlDev 
+Technology        : kbWin32SDKSearch kbAudDeveloper kbWin3xSearch kbSDKSearch kbWin32sSearch kbWin32SDK350 kbWin32s120 kbWinSDKSearch kbWinSDK310
+Version           : :3.1; WINDOWS:1.2,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130158: PPT: Double-Clicking File Opens Wrong Version of PowerPoint | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130158: PPT: Double-Clicking File Opens Wrong Version of PowerPoint" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130158/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130158/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130158/","publisher":null,"image":null,"headline":"Q130158: PPT: Double-Clicking File Opens Wrong Version of PowerPoint","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130158-ppt-double-clicking-file-opens-wrong-version-of-powerpoint">Q130158: PPT: Double-Clicking File Opens Wrong Version of PowerPoint</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130158
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:4.0,4.0a,4.0c,7.0,95
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 11-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+- Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c 
+- the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click a file to open it, a different version of PowerPoint than
+you expect starts.
+
+CAUSE
+=====
+
+This behavior occurs if you have multiple versions of PowerPoint installed on
+your computer. When you run a version of PowerPoint, it registers itself in the
+Windows registry and takes ownership of files that have the .ppt extension and
+certain system registration entries. If you then run a different version of
+PowerPoint, it registers itself. It owns the files having the .ppt extension and
+system registration entries until you run another version of PowerPoint. This
+means that if you double-click a file with a .ppt extension, the most recently
+run version of PowerPoint tries to open the file.
+
+WORKAROUND
+==========
+
+If you want to open the PowerPoint presentation in a specific version of
+PowerPoint, follow these steps:
+
+1. On the Windows Start menu, point to Programs and then click Windows Explorer.
+
+2. Open the \Windows\SendTo folder.
+
+3. Create three shortcuts--one for each version of PowerPoint you have installed
+  on your computer. To do this, follow these steps:
+  a. On the File menu, point to New, and then click Shortcut.
+
+  b. In the Command Line box in the Create Shortcut Wizard, type the path and
+     file name for the Powerpnt.exe file you want to use. Or, click Browse,
+     select the Powerpnt.exe file you want to use, and click Open.
+
+  c. Click Next.
+
+  d. On the "Select a Title for the Program" panel, type the description you
+     want to use, and then click Finish.
+
+  e. Repeat steps a through d for each version of PowerPoint.
+
+After creating the shortcuts, you can select the version of PowerPoint you want
+to open the file by following these steps:
+
+1. Right-click a presentation file, and then click Send To on the menu that
+  appears.
+
+2. Select the version of PowerPoint you want to open the file.
+
+Additional query words: 4.00 4.00a 4.00c 7.00 Win95 right-click mouse step on properties ppt95
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbOSWin95 kbOSWinSearch kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbPowerPt400 kbPowerPt400c kbPowerPt400a
+Version           : WINDOWS:4.0,4.0a,4.0c,7.0,95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

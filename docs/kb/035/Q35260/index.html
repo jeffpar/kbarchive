@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q35260: How to Write Selected Text to a File in M Editor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q35260: How to Write Selected Text to a File in M Editor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/035/Q35260/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/035/Q35260/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/035/Q35260/","publisher":null,"image":null,"headline":"Q35260: How to Write Selected Text to a File in M Editor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q35260-how-to-write-selected-text-to-a-file-in-m-editor">Q35260: How to Write Selected Text to a File in M Editor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q35260
+Product(s): See article
+Version(s): 1.00   | 1.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 1-NOV-1988
+
+To write a block or stream of text from a file currently being edited
+to another file (either new or currently existing), do the following:
+
+1. Select text by using Arg (ALT+A) and the cursor movement keys.
+
+2. Put the text block or stream into the Clipboard by using the
+   functions Copy (CTRL+INSERT, or + on the keypad) or Ldelete
+   (CTRL+Y) or Sdelete (DELETE).
+
+3. Load the desired new file (see the "Working with Multiple Files"
+   section of the "Microsoft Editor" manual).
+
+4. Paste (SHIFT+INSERT) the contents of the Clipboard into the new
+   file.
+
+When writing to a file that does not yet exist, another procedure can
+be used, as follows:
+
+1. Write the selected text to the Clipboard as described above.
+
+2. Use Setfile to load the &lt;clipboard&gt; pseudofile the same way that
+   other files are loaded.
+
+3. When the Clipboard contents appear on the screen, save the file to
+   the desired new filename with Arg Arg textarg Setfile (ALT+A ALT+A
+   filename F2). If a file by that name already exists, it will be
+   overwritten.
+
+4. Return to the originally edited file with Setfile (F2).
+
+The second method can be put into a macro in one of the following two
+ways:
+
+1. Create a macro definition for copying to a file of prespecified name
+   by using, for example, the following:
+
+sendtofil:=copy arg "&lt;clipboard&gt;" setfile arg arg "foo.txt" setfile
+setfile
+
+Assign the macro to a keystroke with an argument of the following
+form, for example:
+
+sendtofil:alt+s.
+
+This macro can be placed in TOOLS.INI, or can be the textarg in the
+command to enter a macro, as follows:
+
+Arg textarg Assign (ALT+A textarg ALT+=).
+
+2. Create a macro definition for copying to a file of any name by
+   using two macros in sequence, for example, as follows:
+
+send1:=copy arg "&lt;clipboard&gt;" setfile arg arg
+send2:=setfile setfile
+
+Enter and assign them as described above. To execute this set of
+macros, select the text block or stream, execute the first macro, type
+the desired filename, then execute the second macro.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

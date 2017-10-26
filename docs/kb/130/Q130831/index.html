@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130831: Converter: How the Position of Screens Is Converted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130831: Converter: How the Position of Screens Is Converted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130831/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130831/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130831/","publisher":null,"image":null,"headline":"Q130831: Converter: How the Position of Screens Is Converted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130831-converter-how-the-position-of-screens-is-converted">Q130831: Converter: How the Position of Screens Is Converted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130831
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article addresses the issue of positioning converted screens. It explains
+how window position is calculated in FoxPro version 2.x for Windows and in
+Visual FoxPro. It also describes how the converter converts screen position. The
+source code to the CONVERT.APP application is included with the Professional
+Edition of Visual FoxPro, and is installed in the TOOLS\CONVERT directory.
+
+MORE INFORMATION
+================
+
+FoxPro version 2.x for Windows uses foxels to calculate window and object
+location. A foxel is a unit of measure unique to FoxPro that is equivalent to
+the average height and width of a character. In FoxPro versions 2.x for Windows,
+a window position is based on the font of its container. In other words, if a
+user window is defined on the desktop, the font of the main FoxPro window
+determines the top and left position of the screen. Developers often place a
+MODIFY WINDOW SCREEN FONT &lt;fontname&gt;,&lt;fontsize&gt; statement in the
+Setup code of a FoxPro version 2.x screen to ensure that windows are
+consistently displayed at the same location on different systems.
+
+A screen added to a FoxPro version 2.x project can be positioned by using the
+Arrange button. The window's coordinates are saved in foxels in the Project
+Manager (ARRANGED field of the PJX table). The information relative to the
+position of the window is not stored anywhere if the screen is not included in a
+project.
+
+A Visual FoxPro form can use pixels or foxels. A pixel is the smallest element
+that can be displayed on a screen. It is resolution dependent but is not
+affected by font information.
+
+Visual FoxPro provides an application (CONVERT.APP) that converts FoxPro 2.x
+projects to a Visual FoxPro format. The converter dialog is displayed when you
+open a FoxPro version 2.x project in Visual FoxPro. Screen sets are converted to
+form sets, and each screen contained in a screen set is converted to a form. The
+SCALEMODE property of a converted form is set to 3- Pixels.
+
+During the conversion process, CONVERT.APP converts the window position from
+foxels to pixels. The calculation is defined in the AddPos method of the
+FP25FORM class in the CONVERT.PRG file. CONVERT.APP uses the font of the desktop
+in the current Visual FoxPro session as a basis for the conversion.
+
+For example, if the desktop font is MSSansSerif 10, the converter uses the
+fontmetrics of MSSansSerif 10 to convert the position of the form window. On the
+other hand, if the desktop font is MSSansSerif 12, MSSansSerif 12 is the basis
+for the conversion from foxel to pixel, and the resulting window appears at a
+lower position than it was previously located.
+
+Therefore, to ensure that windows are located at the same absolute position in a
+converted screen, verify that the font of the main FoxPro window is the same as
+the one used by FoxPro version 2.6 screens.
+
+NOTE: When the SCALEMODE property of a form is set to 0-Foxels, the window
+position is based on the font it uses. As opposed to windows defined with a
+DEFINE WINDOW command used in FoxPro version 2.x screen definition, the top and
+left positions of a Visual FoxPro form are not set by the font of the container
+window. Thus, in Visual FoxPro, the MODIFY WINDOW SCREEN FONT &lt;FontName&gt;
+command does not alter the position of a form.
+
+The following example code illustrates the fact that the position of a window is
+based on its font:
+
+     omyform1=CREATEOBJECT('myform')
+     omyform1.show
+
+     oMyform2=CREATEOBJECT('myform2')
+     omyform2.show
+
+     suspend
+
+     DEFINE CLASS MyForm2 AS Form
+        caption = "Arial, 18"
+        scalemode = 0
+        fontname="Arial"
+        fontsize=18
+        top = 1
+        left = 1
+        height = 10
+        width = 20
+     ENDDEFINE
+
+     DEFINE CLASS MyForm AS Form
+        caption= "Arial,10"
+        scalemode = 0
+        fontname="Arial"
+        fontsize=10
+        top = 1
+        left = 1
+        height = 10
+        width = 20
+     ENDDEFINE
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151206: Err Msg: …Problem w/ Mail System. Messages Could Not Be Read | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151206: Err Msg: …Problem w/ Mail System. Messages Could Not Be Read" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151206/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151206/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151206/","publisher":null,"image":null,"headline":"Q151206: Err Msg: …Problem w/ Mail System. Messages Could Not Be Read","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151206-err-msg-problem-w-mail-system-messages-could-not-be-read">Q151206: Err Msg: …Problem w/ Mail System. Messages Could Not Be Read</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151206
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0,3.2,3.2a,3.5,7.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, versions 1.0, 7.0 
+- Microsoft Mail for Windows, versions 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Schedule+ version 1.0, and you try to view a meeting request sent
+from Schedule+ version 7.0, you may get the following error message:
+
+  There is a problem with the mail system. Messages could not be read.
+
+In addition, if you use version 3.x of Mail for Windows, you may get the
+following error message when you try to open the meeting request in the Inbox:
+
+  STOP: The message could not be opened.
+
+CAUSE
+=====
+
+The above errors will occur if the Microsoft Exchange Mail Connector Maximize MS
+Mail 3.x Compatibility option is cleared (not selected).
+
+RESOLUTION
+==========
+
+1. Start the Microsoft Exchange Administration program.
+
+2. Open the Microsoft Mail Connector object.
+
+3. On the Interchange tab, select the Maximize MS Mail 3.x Compatibility check
+  box.
+
+4. Click the Apply button and the OK button.
+
+5. Click Services in the Control Panel.
+
+6. Stop the Microsoft Exchange Message Transfer Agent service.
+
+7. Start the service.
+
+Additional query words: 1.00 7.00 3.20 3.20a 3.50 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbSchedule700 kbZNotKeyword3 kbSchedule100 kbMail350 kbMail320 kbMail320a
+Version           : WINDOWS:1.0,3.2,3.2a,3.5,7.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

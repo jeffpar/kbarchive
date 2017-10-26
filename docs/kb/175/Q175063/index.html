@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175063: Host Security Integration Setup and Architectural Overview | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175063: Host Security Integration Setup and Architectural Overview" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175063/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175063/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175063/","publisher":null,"image":null,"headline":"Q175063: Host Security Integration Setup and Architectural Overview","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175063-host-security-integration-setup-and-architectural-overview">Q175063: Host Security Integration Setup and Architectural Overview</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175063
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Host Security Integration contains three installable components which are not
+installed by default when installing SNA Server. They include:
+
+- SNA Host Account Synchronization Service: SNAHOSTPROCESS
+
+- Windows NT Password Synchronization Service: SNAPMP
+
+- Host Account Cache Service: SNADATABASE
+
+All three components work together providing features such as Account Mapping,
+Password Synchronization, and Automatic Logon which is also referred to as
+Single Sign-On (SSO) support. The implementation of your Windows NT Domains
+determines where each component (service) resides. Certain components must be
+installed on certain systems as indicated below. Microsoft recommends that all
+three components be installed regardless of if you don't plan on using a
+particular component, due to the way these services register themselves with the
+other components. It is also recommended that all services are installed in the
+same user security administrator's account.
+
+MORE INFORMATION
+================
+
+SNAHOSTPROCESS
+
+The SNA Host Account Synchronization Service, also known as SNAHOSTPROCESS, is
+responsible for automatic password synchronization and security between Windows
+NT and IBM host or AS/400 systems. Although this service is not dependent on the
+SNA protocol, it is recommended that this service be installed on SNA Server
+computers. SNAHOSTPROCESS is installed if the Host Security Integration option
+is selected while installing SNA Server.
+
+SNAHOSTPROCESS is responsible for propagating password changes to the host and
+for receiving password changes from it. When a Windows NT password changes,
+SNAPMP coordinates with SNAHOSTPROCESS to apply these changes to the Host.
+Similarly, password changes received from the Host by SNAHOSTPROCESS are
+forwarded to SNAPMP for appropriate distribution. The SEC400.DLL included with
+SNA Server 3.0 applies Windows NT password changes to AS/400 systems running
+OS/400 V3R1 or later. For password changes coming from an AS/400, Host Code is
+required from a third-party vendor such as ExecuSoft, Inc. The SNAHOSTPROCESS
+also supports RACF V2R2, Computer Associates International CA-Top Secret (MVS,
+VM, VSE) and ACF2 (MVS) Security systems on IBM Mainframes. The Security
+Integration DLLs and Host Code for those security systems are available from
+Proginet Inc. Proginet supports automatic password synchronization using LU6.2
+protocol to communicate with IBM Mainframe systems. See the Companion Products
+Catalog on the SNA Server CD for additional references.
+
+
+SNAPMP
+
+The Windows NT Password Synchronization Service is responsible for synchronizing
+passwords between a host and the Windows NT domain. It then coordinates all
+updates to the Host Account Cache (SNADATABASE). The Snapwchg.dll is responsible
+for intercepting password changes made to Windows NT accounts in its Windows NT
+Domain and passing them on to SNAPMP. The Master Windows NT Password
+Synchronization Service must be installed on the primary domain controller of
+the Windows NT domain in which the user accounts are defined. At any given time
+there should be only 1 Master PMP in the whole Host Security Setup (across
+multiple domains).
+
+The Windows NT Password Synchronization Service is installed using the Setup
+program located in the \HOSTSEC directory on the SNA Server CD.
+
+
+SNADATABASE
+
+The Host Account Cache implements a database of host accounts associated with
+Windows NT Domain Accounts. The SNADATABASE receives updates from SNAPMP by
+using RPC calls which are then sent to any backup SNADATABASE's that are running
+in the Host Security Domain.
+
+The SNADATABASE service must be installed on a Primary Domain Controller and a
+Backup Role can be chosen which would be installed on Windows NT Backup Domain
+Controllers that belong to the same SNA Server Windows NT Domain.
+
+The SNAPMP and SNADATABASE components must be installed on computers running
+Windows NT Domain Controllers, but unlike Security Integration Service
+(SNAHOSTPROCESS), these components can be installed on computers not running SNA
+Server. For this reason, these components are installed using a separate setup
+program located in the HOSTSEC folder of each Windows NT platform on the SNA
+Server CD.
+
+
+Creating a Host Security Domain (HSD)
+
+After all three services are installed; a Host Security Domain must be
+configured. Although this process can be completed by using the Insert menu in
+Manager, using the Host Security Domain Wizard from the Tools menu is a much
+simpler process, since multiple configuration steps are performed automatically.
+Using the Host Security Domain Wizard:
+
+1. Provide a name for the host security domain.
+
+  For simplicity, the name should reflect the name of the remote system where
+  the user accounts reside. For example, if the AS/400 name is "RAINIER", use
+  the name "RAINIER". If the remote system is a RACF on host system MVS1, then
+  use the name "MVS1RACF".
+
+  Using the wizard, the name given during this process creates a Local Group in
+  the Windows NT Domain, which by default will contain the Domain Users global
+  group. The Domain Users group must be added in order for users to participate
+  in a Security Domain.
+
+2. Provide the connection name and account mapping method to be used.
+
+  Enter the connection name that will be used for this Host Security Domain,
+  followed by the "User Name Mapping". Enable automatic password
+  synchronization is the next option that can be selected. Automatic password
+  synchronization requires a Security Integration DLL which must be chosen from
+  the drop down box.
+
+3. Choose the Local and Remote APPC LU's to use on this connection.
+
+  You will then go on to select your Local and Remote APPC LU pairings used for
+  this defined connection.
+
+4. Configure users in the host account cache.
+
+  The last and final step of this process is to configure the Host Account
+  Cache. This is done by going into the Tools menu in SNA Server Manager and
+  selecting Host Account Manager. The Host Account Configuration dialog is
+  displayed and you can then configure your users appropriately. You must first
+  select a User Account from the Windows NT Database. Select Use Windows NT
+  User Name or Use This User ID. Use Windows NT Password or Use This Password
+  also must be selected.
+
+Single-Signon Support
+
+Sample operation of single-signon with an APPC or CPIC application:
+
+- APPC application calls [MC_]ALLOCATE and requests security=AP_PGM or AP_SAME,
+  and sets the user_id=MS$SAME, and pwd=MS$SAME. The SNA Server APPC DLL then
+  forwards the Allocate request to SNA Server.
+
+- If a CPIC application is used, the conversation security, userid and password
+  fields must be set using the Set_Conversation_Security_Type (cmscst, setting
+  conversation_security_type = CM_SECURITY_PROGRAM or CM_SECURITY_SAME),
+  Set_Conversation_Security_Password (cmscsp, setting security_password =
+  MS$SAME), and Set_Conversation_Security_User_ID (cmscsu, setting
+  security_user_ID = MS$SAME), before calling Allocate_Conversation (cmallc).
+
+- The SNA Server checks if the Windows NT user making this request is a member
+  of the host security domain. If so, the host security account information is
+  looked up for the user and replaced in the userid and password fields in the
+  FMH-5 Attach message, and then is sent to the remote system.
+
+Sample operation of single-signon with a 3270 application (supported with SNA 3.0
+SP1 and later):
+
+- First, the 3270 emulator must support "scripting" of user input.
+
+- The user or administrator must record a script for the user, capturing the
+  host logon process. At the host logon screen, the user or administrator must
+  enter the following values for the host user id = MS$SAMEU and password =
+  MS$SAMEP.
+
+- When the 3270 emulator starts up (configured to automaticaly run the scripted
+  logon), the above MS$SAMEU and MS$SAMEP is passed to the SNA Server.
+
+- The SNA Server checks if the Windows NT user making this request is a member
+  of the host security domain. If so, the host security account information is
+  looked up for the user and replaced in the userid and password fields in the
+  host signon screen, and then is sent to the remote system.
+
+Additional query words: snafaq
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102332: How to Show a Custom Common Dialog using CFileDialog | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102332: How to Show a Custom Common Dialog using CFileDialog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102332/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102332/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102332/","publisher":null,"image":null,"headline":"Q102332: How to Show a Custom Common Dialog using CFileDialog","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102332-how-to-show-a-custom-common-dialog-using-cfiledialog">Q102332: How to Show a Custom Common Dialog using CFileDialog</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102332
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft C/C++ for MS-DOS, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+
+If an application specifies a custom dialog box template for a
+CFileDialog object and calls the DoModal() member function, DoModal()
+may return immediately without displaying the dialog box.
+
+Verify that you assign the correct dialog box template and application
+instance handle to the CFileDialog data members m_ofn.lpTemplateName
+and m_ofn.hInstance, respectively. Verify that each control in your
+customized dialog box template is valid and that the dialog box
+resource is compiled into the .RES file. If either data member is
+incorrect or if it is unable to create a control in the dialog box,
+the DoModal() member function returns immediately without displaying
+the dialog box.
+
+The Microsoft Foundation Classes library defines a CFileDialog class
+that encapsulates the OPENFILENAME structure and the GetOpenFileName()
+and GetSaveFileName() functions of the Microsoft Windows application
+programming interface (API). For more information about this class,
+please refer to Technical Note 13 (TN013.TXT) which the C/C++ version
+7.0 Setup program installs, by default, into the C:\C700\MFC\DOC
+directory. For more information about the Common Dialog Boxes library
+COMMDLG.DLL, please refer to Chapter 4 of the Microsoft Windows
+Software Development Kit (SDK) "Programmer's Reference, Volume 4:
+Resources" manual for version 3.1.
+
+To modify the dialog box that CFileDialog displays, perform the
+following five steps:
+
+1. Modify the dialog box template for the CFileDialog dialog box by changing the
+  FILEOPEN.DLG resource. By default, this file is located in the
+  C:\MSVC\SAMPLES\COMMDLG or C:\WINDEV\SAMPLES\COMMDLG directory. Be sure to
+  include the &lt;DLGS.H&gt; file in your RESOURCE.H file and use the
+  predefined controls in the common dialog box template.
+
+2. Initialize the CFileDialog with the OFN_ENABLETEMPLATE flag, as follows:
+
+        CFileDialog fileDialog(TRUE, szFileDialogExt, NULL,
+           OFN_HIDEREADONLY | OFN_ENABLETEMPLATE, szFileDialogFilter);
+
+3. Assign the m_ofn.lpTemplateName member of the CFileDialog object to the
+  dialog box template name in the FILEOPEN.DLG file modified in Step 1 above.
+  For example:
+
+        fileDialog.m_ofn.lpTemplateName = "MYFILEOPEN";
+
+4. Assign the m_ofn.hInstance member of the CFileDialog object to the value of
+  the current instance of your application, as follows:
+
+        fileDialog.m_ofn.hInstance = AfxGetInstanceHandle();
+
+5. Call the DoModal() member function of the CFileDialog class, as follows:
+
+        if (fileDialog.DoModal() == IDOK)
+           ReadFile(fileDialog.GetPathName());
+
+Additional query words: kbinf 7.00 1.00 1.50 2.00 2.50
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMFC
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

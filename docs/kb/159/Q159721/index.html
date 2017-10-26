@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159721: XADM: How to Add Templates for Different Language Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159721: XADM: How to Add Templates for Different Language Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159721/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159721/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159721/","publisher":null,"image":null,"headline":"Q159721: XADM: How to Add Templates for Different Language Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159721-xadm-how-to-add-templates-for-different-language-clients">Q159721: XADM: How to Add Templates for Different Language Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159721
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbsetup exc4 exc5 exc55
+Last Modified: 30-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The English version of Microsoft Exchange Server can support non-English
+Microsoft Exchange Clients.
+
+To see details on mailboxes, custom recipients, or distribution lists from a
+non-English client, the corresponding details templates in the same language as
+the client need to be installed on the computer running Exchange Server. This
+article describes how to add the localized templates to Microsoft Exchange
+Server.
+
+MORE INFORMATION
+================
+
+Microsoft Exchange Server, version 4.0
+--------------------------------------
+
+The location of the Template.csv file is on the Microsoft Exchange Server,
+version 4.0 compact disk. This location will vary depending on the platform and
+language needed. The directory structure of the compact disk is as follows:
+
+  \SETUP
+     \ALPHA
+        \TPL
+           \FRN
+           \GER
+           \JPN
+           \USA
+     \I386
+        \TPL
+           \FRN
+           \GER
+           \JPN
+           \USA
+     \MIPS
+        \TPL
+           \FRN
+           \GER
+           \JPN
+           \USA
+     \PPC
+        \TPL
+           \FRN
+           \GER
+           \JPN
+           \USA
+
+Select the platform type; Alpha, I386, or MIPS. Under this directory, change to
+the TPL directory. Under the TPL directory, you will have the choice of FRN,
+GER, JPN, and USA. Within these subdirectories you will find a file called
+Template.csv in each directory.
+
+Microsoft Exchange Server, version 5.0 and 5.5
+----------------------------------------------
+
+In Microsoft Exchange Server, versions 5.0 and 5.5, the location of the
+Template.csv files changed. These files are now located on the Client compact
+disk that comes with the Microsoft Exchange Server. The exact location of the
+Template.csv file will vary, depending on the language of the clients, but
+should be located in a location similar to this:
+
+  \ENG
+     \SUPPORT
+        \TPL
+  \FRN
+     \SUPPORT
+        \TPL
+
+The files are also available on the Exchange 5.5 SP3 CDROM under the path
+Drive:\Client\Template.
+
+The Template.csv file is located in the TPL subdirectory. If the language needed
+is not on the Client compact that came with the Microsoft Exchange Server, it
+will be located on the Client compact disk that has the appropriate language of
+the client.
+
+Steps to Import the Template.csv
+--------------------------------
+
+To import the localized templates, from the Microsoft Exchange Administrator
+program select the Directory Import command from the Tools menu. This should
+bring up the Directory Import dialog. Select the Template.csv file described
+above as the Import File and click OK.
+
+This should import all the required templates. After the import has completed,
+from the Administrator program the localized templates should be visible under
+Addressing, Details Templates and Addressing, One-Off Address Templates.
+
+The localized clients should now be able to bring up details on mailboxes, custom
+recipients, or distribution lists.
+
+Users of non-English clients should now be able to bring up details on mailboxes,
+custom recipients, or distribution lists.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

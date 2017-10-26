@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239060: WD97: Problems Opening or Locating Files Using UNC Path | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239060: WD97: Problems Opening or Locating Files Using UNC Path" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239060/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239060/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239060/","publisher":null,"image":null,"headline":"Q239060: WD97: Problems Opening or Locating Files Using UNC Path","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239060-wd97-problems-opening-or-locating-files-using-unc-path">Q239060: WD97: Problems Opening or Locating Files Using UNC Path</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239060
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word8 word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to connect to, open, or locate a file with a long file name
+(UNC), one of the following problems may occur:
+
+Case 1: Advanced Search fails
+-----------------------------
+
+When you choose Find Now in the Advanced Find dialog box (on the File menu, click
+Open and then click Advanced), Word finds no files, even though the files
+actually exist in the location indicated. You can view the files in Windows
+Explorer, and you can open the files in Word.
+
+Case 2: Error with INCLUDE or INCLUDETEXT Field
+-----------------------------------------------
+
+The result of an INCLUDE or INCLUDETEXT field may display the following error
+message:
+
+  Error! Not a valid filename.
+
+Case 3: Error with Modify Location dialog box
+---------------------------------------------
+
+The following error message appears when you select a folder on a UNC drive that
+contains a space in the Modify Location dialog box:
+
+  Not a valid directory.
+
+NOTE: To open the Modify Location dialog box, click Options on the Tools menu,
+click to select the File Locations tab, and then click Modify.
+
+Case 4: Attaching data source to a mail merge main document fails
+-----------------------------------------------------------------
+
+When you try to attach a data source to a mail merge main document, no error
+message appears, but the data file does not appear in the Mail Merge Helper
+dialog box.
+
+CAUSE
+=====
+
+This problem may occur when there is a space in the path or in the name of a
+file.
+
+WORKAROUND
+==========
+
+To work around this problem, turn off the use of Universal Naming Convention
+(UNC) in Microsoft Word 97 by using the DontUseUNC switch.
+
+For additional information about the DontUseUNC switch, please click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q171406 WD97: How to Disable the Use of UNC
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.&lt;A0&gt;This problem was corrected in Microsoft
+Word 2000.
+
+MORE INFORMATION
+================
+
+For additional information about problems you may encounter when trying to
+access files using a Universal Naming Convention (UNC) path, please click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q138418 WD97: Can't Use UNC Drive for Document Path on Some Networks
+
+  Q122379 WD97: Error Saving Document: "Network or File Permission Error..."
+
+  Q192447 WD97: Errors Opening Files in a Map Root of a Novell 4.11 Server
+
+Additional query words: nolongnetnames dontuseunc
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

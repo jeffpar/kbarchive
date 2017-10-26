@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126632: Mouse Detected as PS/2-Style or Bus Does Not Work During Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126632: Mouse Detected as PS/2-Style or Bus Does Not Work During Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126632/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126632/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126632/","publisher":null,"image":null,"headline":"Q126632: Mouse Detected as PS/2-Style or Bus Does Not Work During Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126632-mouse-detected-as-ps2-style-or-bus-does-not-work-during-setup">Q126632: Mouse Detected as PS/2-Style or Bus Does Not Work During Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126632
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are setting up Windows, the mouse attached to your computer is
+incorrectly identified as a PS/2-style or an Inport (bus) mouse and the mouse
+does not work.
+
+CAUSE
+=====
+
+Setup detects mouse ports in the following order: Inport, PS/2, serial. When the
+detection routine finds the mouse port, it stops searching. For example, if
+Setup finds an Inport card, it stops searching for the mouse.
+
+Inport Card
+-----------
+
+If an Inport-style mouse card is installed in the computer, the detection routine
+sees this card first and uses it, even if the mouse is not attached to it. This
+occurs because the Inport card is the circuit board for the mouse. Detaching the
+mouse from the card does not disable the card.
+
+PS/2-Style Mouse
+----------------
+
+If a PS/2-style mouse is installed, the 0x04 bit is set in the equipment flags.
+In some computers, the BIOS mistakenly sets this bit when a second hard disk is
+installed and no PS/2-style mouse exists. When Setup issues an INT 11 (get
+equipment flags) and sees that this bit is set, it determines that there is a
+PS/2-style mouse attached to your computer.
+
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods:
+
+- For an Inport card, remove the card from the computer before you run Setup.
+
+- For a PS/2-style mouse port, contact your computer vendor about a possible
+  BIOS upgrade.
+
+- For either type of mouse, run Setup with the /ID switch and choose the proper
+  mouse type when you are prompted.
+
+- For either type of mouse, set the correct type in the "MouseType=" line in
+  the MOUSE.INI file before you run Setup. Note that the mouse driver you are
+  using must support the use of a MOUSE.INI file for this method to work. For
+  additional information about the "MouseType=" setting, please see the
+  following article in the Microsoft Knowledge Base:
+
+  Q73370 Correct Entries for "MouseType=" in MOUSE.INI
+
+Additional query words: 3.10 3.11 hangs
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWin95search kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : :3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

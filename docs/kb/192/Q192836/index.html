@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192836: XADM: Admin.exe Stops When Viewing Properties of Remote Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192836: XADM: Admin.exe Stops When Viewing Properties of Remote Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192836/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192836/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192836/","publisher":null,"image":null,"headline":"Q192836: XADM: Admin.exe Stops When Viewing Properties of Remote Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192836-xadm-adminexe-stops-when-viewing-properties-of-remote-server">Q192836: XADM: Admin.exe Stops When Viewing Properties of Remote Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192836
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55sp2fix
+Last Modified: 17-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Exchange Server Administrator program to view the
+properties of a server in a remote site and the remote server has a server
+location specified (subsite), Admin.exe stops responding. If Windows NT and
+Exchange Server debug symbols are installed correctly, the resulting Dr. Watson
+log may have a stack dump similar to the following:
+
+   function: LDOB::FContains
+          004fa8b9 33ed             xor     ebp,ebp
+          004fa8bb 57               push    edi
+          004fa8bc 8bd9             mov     ebx,ecx
+          004fa8be 55               push    ebp
+          004fa8bf 8d442434         lea     eax,[esp+0x34]
+           ss:011c9407=????????
+          004fa8c3 687a020000       push    0x27a
+          004fa8c8 50               push    eax
+          004fa8c9 8d4c242c         lea     ecx,[esp+0x2c]
+           ss:011c9407=????????
+          004fa8cd 896c241c         mov     [esp+0x1c],ebp
+           ss:011c9407=????????
+          004fa8d1 e88a5a0100       call    CStr::CStr (00510360)
+  FAULT -&gt;004fa8d6 8b4308           mov     eax,[ebx+0x8]
+           ds:0109ea06=????????
+          004fa8d9 896c2414         mov     [esp+0x14],ebp
+           ss:011c9407=????????
+          004fa8dd 3bc5             cmp     eax,ebp
+          004fa8df 0f8e21010000     jle     LDOB::FContains+0x156
+           (004faa06)
+          004fa8e5 8b8c24b8020000   mov     ecx,[esp+0x2b8]
+           ss:0012acb8=00000005
+          004fa8ec 8d79fd           lea     edi,[ecx-0x3]
+           ds:0109ea06=????????
+          004fa8ef 897c241c         mov     [esp+0x1c],edi
+           ss:011c9407=????????
+          004fa8f3 83ff08           cmp     edi,0x8
+          004fa8f6 0f87f4000000     jnbe    LDOB::FContains+0x140
+           (004fa9f0)
+          004fa8fc ff24bd3caa4f00
+           ds:0012cd60=00408248
+                                 jmp dword ptr [LDOB::FContains+0x18c
+                                  (004faa3c)+edi*4]
+          004fa903 8b5304           mov     edx,[ebx+0x4]
+           ds:0109ea06=????????
+          004fa906 8b0caa           mov     ecx,[edx+ebp*4]
+           ds:00000000=????????
+
+  *----&gt; Stack Back Trace &lt;----*
+
+  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+  0012aca8 0046718a 0012acc4 00000041 00000005 0012acd0
+   admin!LDOB::FContains [omap]  (FPO: [EBP 0x0012cd60] [4,167,4])
+  0012b0ec 0051812f 00000000 0012cd60 00518315 0012b550
+   admin!CServerInfoMisc::FKillActive  (FPO: [0,267,1])
+  0012b0f8 00518315 0012b550 0012cd60 0012b550 004b0a4b
+   admin!CBaseSheet::FNotify  (FPO: [1,0,2])
+  0012b108 004b0a4b 0000004e 00000000 0012b550 000b042c
+   admin!CBaseSheet::LDlgProc  (FPO: [3,0,2])
+  0012b3b4 00513c54 0000004e 00000000 0012b550 007708ec
+   admin!CAttrDialog::LDlgProc  (FPO: [EBP 0x000b042c] [3,163,4])
+  0012b3d0 00518231 000b042c 0000004e 00000000 0012b550
+   admin!CBaseDialog::LDlgProcStatic  (FPO: [4,0,3])
+  0012b41c 71044841 000b042c 00000000 0012b45c 77e7202c
+   admin!CBaseSheet::LDlgProcPageStatic  (FPO: [4,0,2])
+  000b042c 00000000 00000000 00000000 00000000 00000000
+   COMCTL32!ImageList_DrawIndirect
+
+CAUSE
+=====
+
+The Microsoft Exchange Server Administrator program fails to initialize a memory
+pointer. When this uninitialized pointer is being referenced, the Admin.exe
+process causes an access violation and terminates.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+The English version of this fix should have the following file attributes or
+later:
+
+  File Name   Version
+  ----------------------
+  Admin.exe   5.5.2402.0
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 2.
+
+Additional query words: crash hang AV
+
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

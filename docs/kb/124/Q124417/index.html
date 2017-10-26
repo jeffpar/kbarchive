@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124417: Display Problems or Computer Hangs When You Play Video Clips | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124417: Display Problems or Computer Hangs When You Play Video Clips" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124417/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124417/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124417/","publisher":null,"image":null,"headline":"Q124417: Display Problems or Computer Hangs When You Play Video Clips","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124417-display-problems-or-computer-hangs-when-you-play-video-clips">Q124417: Display Problems or Computer Hangs When You Play Video Clips</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124417
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.0,1995 edition,3.11
+Operating System(s): 
+Keyword(s): kbmm kbprbkbfaq
+Last Modified: 09-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Ancient Lands for Windows, version 1.0 
+- Microsoft Bookshelf '95 for Windows 95 
+- Microsoft Bookshelf 1996-97 for Windows 
+- Microsoft Cinemania 1995 edition 
+- Microsoft Complete Baseball for Windows, 1994 edition (see below) 
+- Microsoft Dangerous Creatures for Windows, version 1.0 
+- Microsoft Dinosaurs for Windows, version 1.0 
+- Microsoft Encarta 96 Encyclopedia for Windows 
+- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+- Microsoft Encarta 97 Encyclopedia for Windows 
+- Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+- Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+- Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+- Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+- Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+- the operating system: Microsoft Windows 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play a video clip, you may experience any of the following symptoms:
+
+- The system may hang (stop responding).
+- The video may flash.
+- Distortion is observed in the video playback area.
+- The video may just show a blank window, a white window, or a black window,
+  even though the sound plays correctly.
+- Some computers may experience hesitation problems with the video, where it
+  continually starts and stops instead of playing smoothly.
+- Videos only play in the large or expanded mode. The normal mode videos do not
+  play.
+
+This problem has been reported on the following systems:
+
+- Compaq Prolinea and Compaq Presario computers using the Compaq/ET4000-W32 640
+  x 480 256-color display driver
+- Cardinal VGA 732 with the TSENG ET Turbo 4000 driver
+- Cardinal with Tseng Laboratories 988/ET4 Turbo driver
+- Diamond Stealth 64 video driver
+- IBM ThinkPad
+- Diamond Speedstar 64 (non-PCI)
+- Orchid Kelvin 64 w/ version 1.4 driver
+- STB Vision Meta driver
+- Gateway P5-100 with STB Vision Display Meta Driver
+- STB PowerGraph VLB 24 video adapter
+- STB Vision Meta Driver
+
+
+RESOLUTION
+==========
+
+To solve this problem, add the following line to the [drawdib] section of the
+Win.ini file:
+
+  dva=0
+
+
+MORE INFORMATION
+================
+
+The "dva=0" entry turns off direct video access (DVA) and DCI, components of
+Microsoft Video For Windows. DVA and DCI allow video images to be sent directly
+to the screen. If an application detects the display type incorrectly, problems
+can occur using DVA and DCI. Some of these problems can be severe (such as
+general protection (GP) faults in Gdi.exe). When you turn off DVA and DCI, video
+images must be drawn through GDI. Although using GDI can be slower than direct
+access, it is safer. This problem does not occur when using Microsoft Video for
+Windows version 1.1d or later.
+
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: multi-mediamm movie corruption distorted distortion jump blink avi vfw msbsolar msb-ss schoolbus mskids magic errors gpf blank black
+
+======================================================================
+Keywords          : kbmm kbprb kbfaq
+Technology        : kbOSWinSearch kbHomeProdSearch kbHomeMMsearch kbZNotKeyword6 kbEncartaSearch kbGamesSearch kbZNotKeyword kbKidsSearch kbBookshelfSearch kbBaseballSearch kbEncartaEncycSearch kbCineManiaSearch kbAncientLands kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbCinemania1995 kbCompleteBaseball1994 kbDangerousCreatures kbDinosaurs100 kbJuliaChild kbScholasticHuman kbScholasticOcean kbScholasticSolar kbScholasticEarth kbEncartaEnCyc1996 kbEncartaEnCyc1997 kbEncartaEnCyc1994 kbOSWin311 kbMSBSearch
+Version           : :1.0,1995 edition,3.11
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

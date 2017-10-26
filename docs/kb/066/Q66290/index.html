@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66290: Reference to _pgmptr in CRTEXE.OBJ Is Invalid | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66290: Reference to _pgmptr in CRTEXE.OBJ Is Invalid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66290/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66290/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66290/","publisher":null,"image":null,"headline":"Q66290: Reference to _pgmptr in CRTEXE.OBJ Is Invalid","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66290-reference-to-_pgmptr-in-crtexeobj-is-invalid">Q66290: Reference to _pgmptr in CRTEXE.OBJ Is Invalid</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66290
+Product(s): See article
+Version(s): 6.00 6.00a
+Operating System(s): OS/2
+Keyword(s): ENDUSER | buglist6.00 | mspl13_c
+Last Modified: 24-OCT-1990
+
+Problem:
+
+My program uses _pgmptr to find the pathname of the executable
+program. When I change my Build Options to "PM multithreaded EXE
+with runtime in DLL," _pgmptr contains all zeros.
+
+Response:
+
+This problem stems from the fact that while _pgmptr exists in
+CDLLOBJS.DLL, there is no reference to _pgmptr in CDLLOBJS.DEF and
+there is an invalid reference to it in CRTEXE.OBJ. Because of this,
+you are unable to access it from your program. The first problem is
+easily corrected by adding _pgmptr to the .DEF file. The second is not
+possible to correct because Microsoft does not release the source code
+to CRTEXE.OBJ.
+
+Workaround
+----------
+
+However, there is a workaround if a DLL is used to access _pgmptr.
+Fortunately the .OBJ file that links the start-up code into the DLL
+does have the correct code to perform the function. The following code
+fragment is an example of how this is done:
+
+Code Example
+------------
+
+In your main application, prototype a function to take the place of
+_pgmptr. For instance:
+
+char *DLLpgmptr(void);          // returns _pgmptr from DLL
+
+The function itself will be defined as follows:
+
+/* foo.c */
+
+extern char *_pgmptr;
+char *_export _loadds DLLpgmptr(void);
+
+char *_export _loadds DLLpgmptr(void)
+{
+        return(_pgmptr);
+}
+
+There is also a required .DEF file that may be defined as follows:
+
+; foo.def
+
+LIBRARY FOO INITINSTANCE
+PROTMODE
+DESCRIPTION    '_pgmptr replacement  function'
+HEAPSIZE  8192
+STACKSIZE 2048
+DATA MULTIPLE
+
+The compile line to make this into a DLL is as follows:
+
+cl /c /MD /Gs /W4 foo.c
+
+The link line is as follows:
+
+link crtdll foo.obj, foo.dll ceexample os2, foo.def;
+implib foo.lib f.dll
+
+Move the resulting DLL to your LIBPATH and call DLLpgmptr() wherever
+you would normally use _pgmptr, and link the library that results from
+running IMPLIB into the final .EXE.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163123: Setup Error Message: Unable to Copy a File … | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163123: Setup Error Message: Unable to Copy a File …" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163123/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163123/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163123/","publisher":null,"image":null,"headline":"Q163123: Setup Error Message: Unable to Copy a File …","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163123-setup-error-message-unable-to-copy-a-file-">Q163123: Setup Error Message: Unable to Copy a File …</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163123
+Product(s): Microsoft Home Kids Products
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbsetupkbfaq
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Beyond the Limit: Ultimate Climb 
+- the operating system: Microsoft Windows 95 
+- the operating system: Microsoft Windows 98 
+- the operating system: Microsoft Windows NT 4.0 
+- Microsoft Encarta Virtual Globe 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install Microsoft Beyond the Limit: Ultimate Climb or Encarta
+Virtual Globe 99, you may receive one of the following error messages:
+
+  Unable to copy a file to the computer.
+
+  - or -
+
+  d:\setup
+  Cannot find the file 'd:\setup' (or one of its components). Make
+  sure that path and filename are correct and that all required
+  libraries are available.
+
+  - or -
+
+  Program Not Found
+  Windows cannot find SETUP.EXE
+  This program is needed for opening files of type 'Application'.
+  Location of SETUP.EXE:
+
+  - or -
+
+  Program Not Found
+  Cannot find file 'D:\SETUP.EXE'.
+
+  - or -
+
+  Browse
+  D:\Setup.exe
+  This file cannot be found.
+  Make sure that the correct path and filename are given.
+
+Also, if you are using real-mode CD-ROM drivers and you view the contents of the
+compact disc in Explorer, you will see the following folders:
+
+  Ap~00001
+  Sp~00002
+
+These folders should be seen as:
+
+  App
+  Support
+
+CAUSE
+=====
+
+The symptoms described above may occur if your computer is using real-mode
+CD-ROM drivers to access the compact disc.
+
+When Setup attempts to copy files from a folder that uses both upper and
+lowercase letters, setup fails. This happens because only protected mode CD-ROM
+drivers support this type of file name. Real-mode CD-ROM drivers support only
+filenames with all uppercase letters.
+
+Therefore, if the Setup program is looking for Setup.exe, the only file the
+CD-ROM driver reports is SETUP.EXE. Since this is not an exact match, the Setup
+program reports that the file does not exist on the compact disc.
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain the most recent version of protected mode CD-ROM
+drivers available for your CD-ROM drive from your hardware manufacturer.
+
+If you are having difficulty accessing your CD-ROM drive from a Command prompt,
+please see the following article in the Microsoft Knowledge Base:
+
+Cannot Access CD-ROM Drive from MS-DOS Mode or Command Prompt
+
+Additional query words: summit btl 1.00 1.00a CD-ROM CD ROM NT4 compact disc disk kbimu MS-DOS driver ms dos msdos 16-bit
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbfaq
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch kbHomeProdSearch kbOSWinNT400 kbHomeMMsearch kbEncartaSearch kbOSWinNTSearch
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

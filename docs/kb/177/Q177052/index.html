@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q177052: WD97: Application Error Printing from Shortcut Menu in Explorer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q177052: WD97: Application Error Printing from Shortcut Menu in Explorer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/177/Q177052/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/177/Q177052/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/177/Q177052/","publisher":null,"image":null,"headline":"Q177052: WD97: Application Error Printing from Shortcut Menu in Explorer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q177052-wd97-application-error-printing-from-shortcut-menu-in-explorer">Q177052: WD97: Application Error Printing from Shortcut Menu in Explorer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q177052
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbcode kbProgramming kbprint kbdta
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Standard Edition for Windows 
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a Microsoft Word 97 document from Windows Explorer by right-
+clicking the document and clicking Print on the shortcut menu, the following
+error message appears:
+
+  The instruction at "0x3000A7C6" referenced memory at "0xFFFFFFFF". The memory
+  could not be "read".
+
+CAUSE
+=====
+
+This type of error can occur when the Word document contains code in the
+Document_Open event or AutoOpen macro that changes the Visible property of a
+menu or toolbar.
+
+Example:
+
+     Application.CommandBars("standard").Controls("&amp;open...").Visible = False
+
+RESOLUTION
+==========
+
+To correct this problem, obtain Microsoft Word 97 Service Release 2 (SR-2).
+
+To temporarily work around this problem, use the Delete method rather than
+setting the Visible property to False.
+
+For example, you can replace a statement like the following
+
+     Application.CommandBars("standard").Controls("&amp;open...").Visible = False
+
+with:
+
+     CommandBars("standard").Controls(3).Delete
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft Office 97
+Service Release 2 (SR-2).
+
+For additional information about SR-2, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q151261 OFF97: How to Obtain and Install MS Office 97 SR-2
+
+
+REFERENCES
+==========
+
+For more information about the Delete method or setting the Visible property,
+click the Office Assistant in the Visual Basic Editor, type "Delete Method"
+(without the quotation marks) or "Visible Property" (without the quotation
+marks), click Search, and then click to view "Delete Method (Microsoft Office
+Reference) or "Visible Property (Microsoft Office Reference)."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If the Assistant is not able to answer your query, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q176476 OFF: Office Assistant Not Answering Visual Basic Questions
+
+For additional information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+
+Additional query words: wordcon WD97 WORD97 SR2
+======================================================================
+Keywords          : kbcode kbProgramming kbprint kbdta 
+Technology        : kbWordSearch kbOfficeSearch kbWord97 kbWord97Search kbZNotKeyword2 kbOffice97Search kbOffice97
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

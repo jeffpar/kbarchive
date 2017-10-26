@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179185: WD97: Text Disappears Behind Floating Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179185: WD97: Text Disappears Behind Floating Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179185/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179185/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179185/","publisher":null,"image":null,"headline":"Q179185: WD97: Text Disappears Behind Floating Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179185-wd97-text-disappears-behind-floating-object">Q179185: WD97: Text Disappears Behind Floating Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179185
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a floating object is placed over a single line of text, the text may
+disappear.
+
+CAUSE
+=====
+
+This problem occurs when the following conditions are true:
+
+- The floating object has a Tight or Through wrapping style applied to it.
+
+  -and-
+
+- The floating object is placed over a single-line paragraph that has Space
+  After formatting applied to it.
+
+NOTE: This problem may occur with a drawing object, AutoShape, text box, or
+picture.
+
+WORKAROUND
+==========
+
+To work around this problem, use the method appropriate to your situation.
+
+Method 1: Remove the Space After Paragraph Formatting
+-----------------------------------------------------
+
+If Space After formatting is applied to the paragraph, follow these steps to
+remove it:
+
+1. In page layout view, move the object away from the text that disappeared.
+
+  The text should reappear.
+
+2. Select the text.
+
+3. On the Format menu, click Paragraph.
+
+4. On the Indents And Spacing tab, under Spacing, change the After box to 0 pt,
+  and then click OK.
+
+5. Move the object back over the text as appropriate.
+
+Method 2: Remove the Tight or Through Wrapping Style from the Object
+--------------------------------------------------------------------
+
+If a Tight or Through Wrapping Style is applied to the object, follow these steps
+to remove the style:
+
+1. In page layout view, select the object.
+
+2. On the Format menu, click one of the following:
+
+   - Text Box
+   - Picture
+   - AutoShape
+   - Object
+
+  NOTE: Depending on the object selected, one of these object types will appear
+  at the bottom of the Format menu.
+
+3. On the Wrapping tab, click to select either Square, None, or Top &amp; Bottom
+  under Wrapping Style, and then click OK.
+
+NOTE: When you remove the Tight or Through wrapping style, the text should
+reappear.
+
+Method 3: Convert the Text Box to a Frame
+-----------------------------------------
+
+If the object is in a text box, convert the text box to a frame. To do this,
+follow these steps:
+
+1. In page layout view, select the text box.
+
+2. On the Format menu, click Text Box, and then click the Text Box tab.
+
+3. Click Convert To Frame.
+
+4. Click OK.
+
+NOTE: You can use the Frame command on the Format menu to size, position, and
+wrap text around the contents of the frame.
+
+Method 4: Move or Resize the Object
+-----------------------------------
+
+Move the object to a different position on the page, or change the size of the
+object. This may allow the text to appear.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: gone missing disappear hidden
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

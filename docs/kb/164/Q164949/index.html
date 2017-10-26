@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164949: FIX: Visual C++ Debugger Crashes on Very Long Symbols | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164949: FIX: Visual C++ Debugger Crashes on Very Long Symbols" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164949/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164949/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164949/","publisher":null,"image":null,"headline":"Q164949: FIX: Visual C++ Debugger Crashes on Very Long Symbols","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164949-fix-visual-c-debugger-crashes-on-very-long-symbols">Q164949: FIX: Visual C++ Debugger Crashes on Very Long Symbols</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164949
+Product(s): Microsoft C Compiler
+Version(s): 4.2
+Operating System(s): 
+Keyword(s): kbDebug kbide kbVC500fix
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you place the caret on a line that contains a very long symbol name while
+you are debugging an application using Visual C++ in disassembly view, the
+debugger may crash.
+
+A possible error message is:
+
+  
+
+  [ASCII 147]MSDEV caused an invalid page fault in module &lt;unknown&gt; at
+  00de:676e6972[ASCII 148]
+
+CAUSE
+=====
+
+This behavior occurs because the debugger currently has a limit of 255
+characters for symbols.
+
+RESOLUTION
+==========
+
+1. Do not use the disassembly view to step through sections of code where very
+  long symbol names are present.
+
+-or-
+
+2. Do not let the caret land on a line with a very long symbol name. Use the
+  mouse to place the caret on a line following the one with the long symbol
+  name, and select Run to Cursor from the Debug menu.
+
+-or-
+
+3. Reduce the size of the mangled symbol names. You can do this by shortening
+  the names of classes and class members. You can also shorten class names of
+  classes that you have not written by using a #define before the #include for
+  the header declaring the class. If the class name is basic_string and you
+  want to shorten it to BS, then insert "#define basic_string BS" before the
+  #include for the header declaring basic_string.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0. The
+limit is now (256+128).
+
+REFERENCES
+==========
+
+Sample Code
+-----------
+
+        /* Compile options needed: /GX
+        */ 
+
+        #pragma warning(disable:4786)
+        #include &lt;string&gt;
+        #include &lt;map&gt;
+        struct ThreeString
+        {
+            string s1,s2,s3;
+            ThreeString(string i1,string i2,string i3) {
+                s1 = i1;
+                s2 = i2;
+                s3 = i3;
+            }
+            ThreeString() {}
+        };
+        typedef map&lt;string, ThreeString, less&lt;string&gt;,
+        allocator&lt;ThreeString&gt; &gt; MapType;
+
+        void main()
+        {
+            MapType themap;
+
+            themap["Zero"] = ThreeString("Zero","Zero","Zero");
+            themap["One"] = ThreeString("One","One","One");
+        }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDebug kbide kbVC500fix 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : 4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

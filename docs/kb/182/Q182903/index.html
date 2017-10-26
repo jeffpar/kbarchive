@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182903: XADM: ESEUTIL Command Line Parameters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182903: XADM: ESEUTIL Command Line Parameters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182903/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182903/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182903/","publisher":null,"image":null,"headline":"Q182903: XADM: ESEUTIL Command Line Parameters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182903-xadm-eseutil-command-line-parameters">Q182903: XADM: ESEUTIL Command Line Parameters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182903
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 16-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Exchange Server 5.5 includes a utility called Eseutil that replaces
+the Edbutil from earlier versions.
+
+MORE INFORMATION
+================
+
+The following command will output the information below:
+
+  C:\&gt;ESEUTIL /?
+
+Microsoft(R) Exchange Server Database Utilities
+Version 5.5
+Copyright (C) Microsoft Corporation 1991-1997. All Rights Reserved.
+
+DESCRIPTION: Maintenance utilities for Microsoft(R) Exchange Server
+databases.
+
+MODES OF OPERATION:
+  Defragmentation:  ESEUTIL /d &lt;database name&gt; [options]
+         Recovery:  ESEUTIL /r [options]
+        Integrity:  ESEUTIL /g &lt;database name&gt; [options]
+          Upgrade:  ESEUTIL /u &lt;database name&gt; /d&lt;previous .DLL&gt; [options]
+        File Dump:  ESEUTIL /m[mode-modifier] &lt;filename&gt;
+           Repair:  ESEUTIL /p &lt;database name&gt; [options]
+
+  Note log file path must be specified explicitly
+  unless using /IS or /DS options.
+
+&lt;&lt;&lt;&lt;&lt;  Press a key for more help  &gt;&gt;&gt;&gt;&gt;
+D=Defragmentation, R=Recovery, G=Integrity, U=Upgrade, M=File Dump,
+P=Repair
+=&gt;
+
+DEFRAGMENTATION (D)
+
+DEFRAGMENTATION/COMPACTION:
+DESCRIPTION:  Performs off-line compaction of a database.
+     SYNTAX:  ESEUTIL /d &lt;database name&gt; [options]
+ PARAMETERS:  &lt;database name&gt; - filename of database to compact, or one of
+                               /ispriv, /ispub, or /ds (see NOTES below)
+   OPTIONS:  zero or more of the following switches, separated by a space:
+             /l&lt;path&gt; - location of log files (default: current directory)
+             /s&lt;path&gt; - location of system files (e.g., checkpoint file)
+                        (default: current directory)
+             /b&lt;db&gt;   - make backup copy under the specified name
+             /t&lt;db&gt;   - set temp. database name (default: TEMPDFRG.EDB)
+             /p       - preserve temporary database (i.e., don't instate)
+             /o       - suppress logo
+     NOTES:  1) The switches /ispriv, /ispub, and /ds use the Registry
+                to automatically set the database name, log file path,
+                and system file path for the appropriate Exchange store.
+             2) Before defragmentation begins, soft recovery is always
+                performed to ensure the database is in a consistent state.
+             3) If instating is disabled (i.e., /p), the original database
+                is preserved uncompacted, and the temporary database will
+                contain the defragmented version of the database.
+
+RECOVERY (R)
+
+RECOVERY:
+DESCRIPTION:  Performs recovery, bringing all databases to a
+              consistent state.
+    SYNTAX:  ESEUTIL /r [options]
+   OPTIONS:  zero or more of the following switches, separated by a space:
+             /is or /ds - see NOTES below
+             /l&lt;path&gt;   - location of log files
+                          (default: current directory)
+             /s&lt;path&gt;   - location of system files (e.g., checkpoint file)
+                          (default: current directory)
+             /o         - suppress logo
+     NOTES:  1) The special switches /is and /ds use the Registry to
+                automatically set the log file path and system file path
+                for recovery of the appropriate Exchange store(s).
+
+INTEGRITY (G)
+
+INTEGRITY:
+DESCRIPTION:  Verifies integrity of a database.
+     SYNTAX:  ESEUTIL /g &lt;database name&gt; [options]
+ PARAMETERS:  &lt;database name&gt; - filename of database to verify, or one of
+                                /ispriv, /ispub, or /ds (see NOTES below)
+   OPTIONS:  zero or more of the following switches, separated by a space:
+             /t&lt;db&gt;   - set temp. database name (default: INTEG.EDB)
+             /v       - verbose
+             /x       - give detailed error messages
+             /o       - suppress logo
+     NOTES:  1) The consistency checker performs no recovery and always
+                assumes that the database is in a consistent state,
+                returning an error if this is not the case.
+             2) The special switches /ispriv, /ispub, and /ds use the
+                registry to automatically set the database name for the
+                appropriate Exchange store.
+
+UPGRADE (U)
+
+UPGRADE:
+DESCRIPTION:  Upgrades a database (created using a previous release of
+              Microsoft(R) Exchange Server) to the current version.
+     SYNTAX:  ESEUTIL /u &lt;database name&gt; /d&lt;previous .DLL&gt; [options]
+ PARAMETERS:  &lt;database name&gt;   - filename of the database to upgrade.
+             /d&lt;previous .DLL&gt; - pathed filename of the .DLL that came
+                                 with the release of Microsoft(R) Exchange
+                                 Server from which you're upgrading.
+   OPTIONS:  zero or more of the following switches, separated by a space:
+             /b&lt;db&gt; - make backup copy under the specified name
+             /t&lt;db&gt; - set temporary database name (default: TEMPUPGD.EDB)
+             /p     - preserve temporary database (i.e., don't instate)
+             /o     - suppress logo
+     NOTES:  1) This utility should only be used to upgrade a database
+                after an internal database format change has taken place.
+                If necessary, this will usually only coincide with the
+                release of a major, new revision of Microsoft(R)
+                Exchange Server.
+             2) Before upgrading, the database should be in a consistent
+                state. An error will be returned if otherwise.
+             3) If instating is disabled (i.e., /p), the original database
+                is preserved unchanged, and the temporary database will
+                contain the upgraded version of the database.
+
+FILE DUMP (M)
+
+FILE DUMP:
+DESCRIPTION:  Generates formatted output of various database file types.
+     SYNTAX:  ESEUTIL /m[mode-modifier] &lt;filename&gt; [options]
+ PARAMETERS:  [mode-modifier] - an optional letter designating the type of
+                                file dump to perform. Valid values are:
+                                h - dump database header (default)
+                                k - dump checkpoint file
+              &lt;filename&gt;      - name of file to dump. The type of the
+                             specified file should match the dump type
+                             being requested (e.g., if using /mh, then
+                             &lt;filename&gt; must be the name of a database).
+
+REPAIR (P)
+
+REPAIR:
+DESCRIPTION:  Repairs a corrupted or damaged database.
+     SYNTAX:  ESEUTIL /p &lt;database name&gt; [options]
+ PARAMETERS:  &lt;database name&gt; - filename of database to compact, or one of
+                                /ispriv, /ispub, or /ds (see NOTES below)
+  OPTIONS:  zero or more of the following switches, separated by a space:
+           /t&lt;db&gt;       - set temp. database name (default: REPAIR.EDB)
+           /d           - don't repair the database, just scan for errors
+           /v           - verbose output
+           /x           - give detailed error messages
+           /o           - suppress logo
+  NOTES:  1) The switches /ispriv, /ispub, and /ds use the registry
+             to automatically set the database name for the
+             appropriate Exchange store.
+          2) Recovery will not be run.
+
+NOTE: The "Upgrade" section, under "Parameters", refers to the Edb.dll from the
+Exchange 5.5 CD. To find this file, locate the Server\Setup\&lt;Platform&gt;
+folder on the Exchange 5.5 CD.
+
+For additional information about using ESEUTIL /U, click the article numbers
+below to view the articles in the Microsoft Knowledge Base:
+
+  Q196693 XADM: How To Use ESEUTIL /U to Upgrade a Database
+
+  Q259851 XADM: Ramifications of Running the ESEUTIL /P or EDBUTIL /D /R
+  Command
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

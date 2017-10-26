@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158256: BUG: AFIELDS() Array Causes Error in CREATE…FROM ARRAY | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158256: BUG: AFIELDS() Array Causes Error in CREATE…FROM ARRAY" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158256/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158256/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158256/","publisher":null,"image":null,"headline":"Q158256: BUG: AFIELDS() Array Causes Error in CREATE…FROM ARRAY","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158256-bug-afields-array-causes-error-in-createfrom-array">Q158256: BUG: AFIELDS() Array Causes Error in CREATE…FROM ARRAY</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158256
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbprogramming kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a table from the table structure contained in an array built by
+Visual FoxPro 5.0 or 6.0's AFIELDS() function, a message dialog box informs you
+that the table name you specified for that new table is already used for another
+object. The dialog box asks you to choose another table name.
+
+The dialog box options are OK and HELP. When you click OK, the new table is
+created with the name you originally specified. However, the new table contains
+a back-link to the database containing the source table, which you will discover
+the next time you "USE" the new table.
+
+CAUSE
+=====
+
+New to Visual FoxPro 5.0 are the 12th through 16th columns of the AFIELDS()
+array. The 12th column contains the long file name of the table. The CREATE ...
+FROM ARRAY command sees this value and interprets it to mean the new table
+should have the same value. This triggers the message dialog box to the user.
+
+When the user responds, other functionality in the CREATE ...FROM ARRAY command
+proceeds to create the desired table with the name the user specified.
+
+Erroneously, the CREATE ... FROM ARRAY command then includes the back link from
+the original table, based on the (long) file name value in column 12 of the
+array.
+
+When the new table is being opened in a work area, a dialog box states that
+"&lt;the database in the back-link&gt; cannot link table &lt;the table to be
+opened&gt; to the database: duplicate or missing fields. Would you like to try
+to locate the owning database or delete the link (and free the table)?"
+
+WORKAROUND
+==========
+
+The problem is two-fold. When the first dialog box appears, click OK to create
+the table.
+
+When the second dialog box appears, choose the Delete option to delete the
+back-link and free the table. If you then want the new table to belong to a
+database, you need to deliberately add it to that database.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Command window enter the following commands:
+
+        CREATE DATABASE mydata
+        CREATE TABLE mytable (mychar c(1))
+        =AFIELDS(laStru)
+        CREATE TABLE another_table FROM ARRAY laStru
+
+2. When the following dialog box appears, click the OK button.
+
+  The name mytable is already used for another object. Please choose a
+  different name.
+
+  Then enter the following command:
+
+  " USE another_table " (without the quotation marks)
+
+3. When the following dialog box appears, click Delete:
+
+  C:\Vfp50\mydata.dbc cannot link table C:\Vfp50\another_table.dbf to this
+  database: duplicate or missing fields. Would you like to try to locate the
+  owning database or delete the link (and free the table)?
+
+  (The path shown above is different to reflect the actual path to the
+  database.dbc and table.dbf on your system.)
+
+The empty table "another_table" can now be seen in a work area.
+
+Additional query words: kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

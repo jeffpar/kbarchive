@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q265407: Motocross Madness 2: Certain Sounds Are Not Played in the Game | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q265407: Motocross Madness 2: Certain Sounds Are Not Played in the Game" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/265/Q265407/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/265/Q265407/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/265/Q265407/","publisher":null,"image":null,"headline":"Q265407: Motocross Madness 2: Certain Sounds Are Not Played in the Game","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q265407-motocross-madness-2-certain-sounds-are-not-played-in-the-game">Q265407: Motocross Madness 2: Certain Sounds Are Not Played in the Game</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q265407
+Product(s): Microsoft Home Games
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbsound kbimu msgame
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Motocross Madness 2, certain sounds in the game, such as
+the sound of motorcycle engines, may not be played.
+
+CAUSE
+=====
+
+This problem can occur if either of the following conditions is true:
+
+- The sound driver for your sound card is outdated.
+
+- Your sound card does not support the necessary hardware features that are
+  needed to play the game.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact the manufacturer of your sound card to inquire
+about how to obtain and install the latest version of the sound driver for your
+sound card.
+
+For information about how to contact the manufacturer of your sound card, click
+the appropriate article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+If the issue continues to occur, use the following methods in the order in which
+they are presented.
+
+Turn Off Hardware Sound Acceleration
+------------------------------------
+
+To turn off hardware sound acceleration:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag" (without the quotation marks), and then click
+  OK.
+
+3. Click the Sound tab.
+
+4. Under DirectX Features, move the Hardware Sound Acceleration Level slider all
+  the way to the left (to the "No acceleration" setting).
+
+5. Click Exit.
+
+NOTE: These steps require that Microsoft DirectX 7.0 or later be installed on the
+computer. Motocross Madness cannot function unless DirectX 7.0a is installed on
+the computer.
+
+Change the Preferred Playback Device to the Game Compatible Device
+------------------------------------------------------------------
+
+To do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia.
+
+3. Under Playback on the Audio tab, click Game Compatible Device in the
+  "Preferred device" box.
+
+  NOTE: If Game Compatible Device is not listed in the "Preferred device" box,
+  please see the "More Information" section of this article for information
+  about how to install it.
+
+4. Click to select the "Use only preferred devices" check box, and then click
+  OK.
+
+5. Close Control Panel.
+
+6. Restart the computer.
+
+MORE INFORMATION
+================
+
+To install the Game Compatible Device:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Modems.
+
+3. If a modem is not already installed in your computer, proceed to step 4.
+
+  If a modem is installed in your computer, click Add in the Modems Properties
+  dialog box.
+
+4. Click to select the "Don't detect my modem; I will select it from a list"
+  check box, and then click Next.
+
+5. In the Manufacturers box, click 3X.
+
+  NOTE: 3X is not included with some versions of Microsoft Windows.
+
+6. In the Models box, click 3X 14.4 Data Fax Modem Voice.
+
+7. Click Next.
+
+8. Click any port, and then click Next.
+
+9. Follow the instructions on the screen to finish installing the Game
+  Compatible Device.
+
+10. Click Finish, and then click Close.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 2.00 msgame mcm2 motorcross silent background noise
+
+======================================================================
+Keywords          : kb3rdparty kbsound kbimu msgame 
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM2
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

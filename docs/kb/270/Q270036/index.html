@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q270036: SMS: Multiple TCP/IP Addresses Cause Incorrect Discovery Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q270036: SMS: Multiple TCP/IP Addresses Cause Incorrect Discovery Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/270/Q270036/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/270/Q270036/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/270/Q270036/","publisher":null,"image":null,"headline":"Q270036: SMS: Multiple TCP/IP Addresses Cause Incorrect Discovery Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q270036-sms-multiple-tcpip-addresses-cause-incorrect-discovery-data">Q270036: SMS: Multiple TCP/IP Addresses Cause Incorrect Discovery Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q270036
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms120 kbsms120bug kbsms200preSP4fix
+Last Modified: 12-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When multiple Transmission Control Protocol/Internet Protocol (TCP/IP) addresses
+are bound to one network adapter, the discovery data collected from the client
+only reports one of the TCP/IP addresses.
+
+When viewing the client properties in the Systems Management Server Administrator
+console the Client or AgentSite attributes will not show the expected data. The
+Client property may be set to 0 (not installed) when it should be set to 1
+(installed), and AgentSite property may be blank. Additionally, only the first
+TCP/IP address of the client is listed. If the first TCP/IP address is 0.0.0.0
+there will be no TCP/IP address listed.
+
+CAUSE
+=====
+
+The Systems Management Server discovery process only captures one TCP/IP address
+per network adapter.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+WORKAROUND
+==========
+
+Make sure that the client's TCP/IP address that is within the Systems Management
+Server site boundaries is the first address bound to the client's network
+adapter. This address is listed first when you look at the Ipconfig, or Winipcfg
+command-line tools on the client.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+This limitation of reporting only one TCP/IP per network adapter applies to all
+forms of discovery with the exception of Network Discovery using SNMP.
+
+Hotfix Installation Instructions
+--------------------------------
+
+Since this is a hotfix to the SMS Client base components, it should be applied to
+all primary and secondary sites in the SMS hierarchy. To install the fix, use
+the appropriate method.
+
+Method 1: Using the Hotfix Installer:
+
+NOTE: You can use this method only for I386-based computers.
+
+1. Copy the hotfix folder structure to a share on your network. Q270036.exe is a
+  Microsoft SMS Installer file that updates specific files on your site server.
+
+2. Log on to your site server using an account with administrative privileges.
+
+3. On the site server, close the SMS Administrator console.
+
+4. Run Q270036.exe and follow the directions in the wizard. You can run the file
+  in Quiet mode using the /s switch.
+
+Method 2: Manual Installation:
+
+NOTE: The post SP3 version of the hotfix does not include Abnwcli.dll and
+Falclin.dll as these files are included with SMS 2.0 Service Pack 3. Also, some
+of the files listed above are contained within CCMCore.exe and Clicore.exe.
+Those files are handled automatically and do not need to be manually copied.
+
+1. Create a folder in a location that is accessible to your SMS site servers.
+
+2. Copy the platform folders that contain the hotfixed files to the new folder.
+
+3. From each of the primary and secondary SMS site servers in your environment,
+  log on to your site server by using an account with administrative
+  privileges.
+
+4. Quit the SMS Administrator console if it is running.
+
+5. Stop all SMS services.
+
+6. Replace the Abnwcli.dll file in the Sms_root_folder\Bin\Platform folder with
+  the version obtained from the hotfix.
+
+7. Replace the BindCliN.dll file in the Sms_root_folder\Bin\Platform folder with
+  the version obtained from the hotfix.
+
+8. Replace the Falclin.dll file in the Sms_root_folder\Bin\Platform folder with
+  the version obtained from the hotfix.
+
+9. Replace the Mslmclin.dll file in the Sms_root_folder\Bin\Platform folder with
+  the version obtained from the hotfix.
+
+10. Replace the NdsCliN.dll file in the Sms_root_folder\Bin\Platform folder with
+  the version obtained from the hotfix.
+
+11. Replace the Ntsvrdis.dll file in the Sms_root_folder\Bin\Platform folder
+  with the version obtained from the hotfix.
+
+12. Replace the Clicore.exe file in the
+  Sms_root_folder\Inboxes\Clicomp.src\Base\Platform folder with the version
+  obtained from the hotfix.
+
+13. Replace the Compver.ini file in the Sms_root_folder\Inboxes\Clicomp.src\Base
+  folder with the Compverbase.ini file obtained from the hotfix. Note that you
+  must rename the Compverbase.ini file to Compver.ini.
+
+14. Restart all SMS services.
+
+NOTE: An NT_Logon_Server_Manager (LSM) polling cycle is necessary to cause the
+hotfixed Clicore.exe file to be propagated to all the logon points so that new
+clients will be installed by using the hotfixed files. In Systems Management
+Server (SMS) 2.0 Service Pack 2 (SP2), LSM was changed so that it does not
+perform a polling cycle when the SMS Executive service is stopped and restarted.
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base: Q249333 SMS: Logon Server Manager Performs a
+Full Work Cycle on Each SMS Executive Restart.
+15. Force the Logon Server Manager to perform a polling cycle by creating a file
+  named NT_LOGON.NOT in the following folder:
+  Sms_root_folder\Inboxes\NT_Logon.box\Notify
+
+All logon points must be updated before you attempt to install new clients.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

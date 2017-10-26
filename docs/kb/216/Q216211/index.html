@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216211: PRB: Extended ASCII Characters Displayed as &quot;?&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216211: PRB: Extended ASCII Characters Displayed as &quot;?&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216211/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216211/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216211/","publisher":null,"image":null,"headline":"Q216211: PRB: Extended ASCII Characters Displayed as &quot;?&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216211-prb-extended-ascii-characters-displayed-as-">Q216211: PRB: Extended ASCII Characters Displayed as "?"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216211
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbString kbUnicode kbVBp kbVBp500 kbVBp600 kbOSWin95 kbOSWin98 kbOSWinNT400sp4 kbGrpDSV
+Last Modified: 28-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use extended ASCII characters in a Visual Basic project and build the
+project under Windows 95 or Windows NT (pre-SP4), some of the characters become
+"?" when the application is run under Windows 98, Windows Me, Windows NT SP4, or
+Windows 2000. The same application works correctly under Windows 95 or Windows
+NT (pre-SP4).
+
+CAUSE
+=====
+
+The problem is caused by the UNICODE to ANSI conversion. The code page 1252
+(ANSI) used by Windows 98, Windows Me, Windows NT 4.0 SP4, and Windows 2000 is
+different than the one used by Windows 95 and Windows NT 4.0 (pre-SP4), so the
+transformation for extended ASCII characters is different. For example, the
+following code will display 128 in Windows 95 but 8364 in Windows 98, Windows
+Me, and Windows 2000:
+
+  Dim str as String
+  str = Chr$(&amp;H80)
+  MsgBox AscW(str)
+
+When you store a string containing Chr$(&amp;H80) in a property bag, a file, or
+declare it as a const value on a Windows 95 computer, a two-byte value of 128
+will be stored for Chr$(&amp;H80). If you then read the information on a Windows
+98, Windows Me, or Windows 2000 computer, the operating system will be unable to
+find a match between the UNICODE value 128 and an ANSI character. As a result,
+"?" will be used to represent that character.
+
+RESOLUTION
+==========
+
+Use a byte array instead of a string to store the extended ASCII characters if
+you need to use them. You can use either the CopyMemory API or the StrConv
+function to convert the string to a byte array.
+
+MORE INFORMATION
+================
+
+The following samples use a property bag to demonstrate the problem.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Visual Basic Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, click Add Usercontrol. Select User Control in the Add
+  User Control dialog box and click Open.
+
+3. Paste the following code in the General Declarations section of UserControl1:
+
+  Option Explicit
+
+  Dim m_Test As String
+
+  Public Property Get Test() As String
+     Test = m_Test
+  End Property
+
+  Public Property Let Test(ByVal New_Test As String)
+     m_Test = New_Test
+     PropertyChanged "Test"
+  End Property
+
+  Private Sub UserControl_ReadProperties(PropBag As PropertyBag)
+     m_Test = PropBag.ReadProperty("Test", "")
+  End Sub
+
+  Private Sub UserControl_WriteProperties(PropBag As PropertyBag)
+     MsgBox "Writing Test..."
+     Dim a As String
+     a = "bad" &amp; Chr(128) &amp; "bad"
+     Call PropBag.WriteProperty("Test", a, "")
+  End Sub
+
+4. Close the Usercontrol's design window and add a UserControl1 to Form1.
+
+5. Paste the following code in the General Declarations section of Form1:
+
+  Option Explicit
+
+  Private Sub Form_Load()
+     MsgBox UserControl11.Test &amp; vbCrLf &amp; "Asc for bad Char:" &amp; Asc(Mid(UserControl11.Test, 4, 1))
+  End Sub
+
+6. On the File menu, click Make Project1.exe on a Windows 95 system. Save your
+  project.
+
+7. Run Project1.exe and note that it displays a message box showing that the bad
+  character's ASCII value is 128.
+
+8. Copy Project1.exe to a Windows 98 or Windows 2000 system and run it. The
+  ASCII value displayed changes to 63 (which is the "?" character).
+
+Steps To Correct the Problem in Visual Basic 6.0
+------------------------------------------------
+
+1. Use Visual Basic 6.0 to open the project you created earlier.
+
+2. Open the code window of UserControl1 and replace the code there with the
+  following:
+
+  Option Explicit
+
+  Dim m_Test() As Byte
+
+  Public Property Get Test() As String
+     Test = StrConv(m_Test, vbUnicode, 1033)
+  End Property
+
+  Public Property Let Test(ByVal New_Test As String)
+     m_Test = StrConv(New_Test, vbFromUnicode, 1033)
+     PropertyChanged "Test"
+  End Property
+
+  Private Sub UserControl_ReadProperties(PropBag As PropertyBag)
+     m_Test = PropBag.ReadProperty("Test", "")
+  End Sub
+
+  Private Sub UserControl_WriteProperties(PropBag As PropertyBag)
+     MsgBox "Writing Test..."
+     Dim a As String
+     Dim b() As Byte
+     a = "bad" &amp; Chr(128) &amp; "bad"
+     b = StrConv(a, vbFromUnicode, 1033)
+     Call PropBag.WriteProperty("Test", b, "")
+  End Sub
+
+3. Select the Properties Window for UserControl11. Set the Test property to
+  "abcdefg," forcing the update of the call to the write properties.
+
+4. Build the project again under Windows 95. Run it under Windows 95 and note
+  that the correct information is displayed. Copy the EXE file to a Windows 98,
+  Windows Me, or Windows 2000 system and run it there. The correct value is
+  displayed.
+
+REFERENCES
+==========
+
+For additional information about the new code page 1252 (ANSI) and why it is
+changed, please see the following article in the Microsoft Knowledge Base:
+
+  Q197368 Code Page 1252 Includes New Characters
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbString kbUnicode kbVBp kbVBp500 kbVBp600 kbOSWin95 kbOSWin98 kbOSWinNT400sp4 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

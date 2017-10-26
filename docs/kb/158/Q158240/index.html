@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158240: BUG: Inconsistant Results with SET RELATION TO Command | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158240: BUG: Inconsistant Results with SET RELATION TO Command" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158240/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158240/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158240/","publisher":null,"image":null,"headline":"Q158240: BUG: Inconsistant Results with SET RELATION TO Command","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158240-bug-inconsistant-results-with-set-relation-to-command">Q158240: BUG: Inconsistant Results with SET RELATION TO Command</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158240
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b 5.00
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp500 kbvfp600
+Last Modified: 14-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing the SET RELATION TO command repeated times within a program causes
+inconsistent results to appear in Browse windows and in Grids. While cycling
+through the program, some iterations do not show the proper one-to- many
+relationships between records in the Browse window or Grid object. The
+placeholder characters (asterisks) in the child record appear in different
+columns when you repeatedly executes the program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The code example below illustrates this behavior.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program called Test that contains the following code:
+
+        IF !(FILE('custfree.dbf') AND FILE('ordfree.dbf');
+           AND FILE('ordifree.dbf'))
+        CLOSE ALL
+        SET DEFAULT TO c:\vfp5\samples\DATA
+        USE customer
+        COPY TO custfree
+        USE orders
+        COPY TO ordfree
+        USE orditems
+        COPY TO ordifree
+        USE ordifree
+        INDEX ON order_id TAG order_id
+        USE ordfree
+        INDEX ON cust_id TAG cust_id
+        USE custfree
+        INDEX ON cust_id TAG cust_id
+        ENDIF
+
+        CLOSE ALL
+
+        ON KEY LABEL f2 CLEAR EVENTS
+        FOR i=1 TO 10
+
+        CLOSE ALL
+
+        OPEN DATABASE testdata
+
+        USE customer
+
+        SELECT 0
+        USE ordifree
+        SET ORDER TO TAG order_id
+
+        SELECT 0
+        USE ordfree
+        SET ORDER TO TAG cust_id
+        SET RELATION TO order_id INTO ordifree
+
+        SET SKIP TO ordifree
+
+        SELECT 0
+        USE custfree
+        SET RELATION TO cust_id INTO ordfree
+
+        SET SKIP TO ordfree,ordifree
+        BROW LAST FIELDS custfree.cust_id,ordfree.order_id, ;
+           ordifree.line_no NOWAIT TITLE 'two'
+        READ EVENTS
+
+        NEXT
+        ON KEY LABEL f2
+        CLOSE ALL
+        CLEAR ALL
+
+2. Execute the program and note that asterisk characters appear in the Order_id
+  field and data appears in the Line_no field.
+
+3. Press F2 and note that the display reverses. The Line_no field now contains
+  asterisk characters and the Order_id field contains data. As you continue to
+  press F2 to reissue the SET RELATION TO command, these fields continue to
+  alternate their contents.
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : 3.00 3.00b 5.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

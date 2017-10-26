@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q321262: How to Upgrade Previous Versions of SNA Server to HIS 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q321262: How to Upgrade Previous Versions of SNA Server to HIS 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/321/Q321262/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/321/Q321262/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/321/Q321262/","publisher":null,"image":null,"headline":"Q321262: How to Upgrade Previous Versions of SNA Server to HIS 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q321262-how-to-upgrade-previous-versions-of-sna-server-to-his-2000">Q321262: How to Upgrade Previous Versions of SNA Server to HIS 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q321262
+Product(s): Microsoft SNA Server
+Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains the proper order by which to upgrade SNA Server (primary,
+backup, and member SNA Server computers) version 3.0 (all service packs) and
+version 4.0 (all service packs) to Host Integration Server 2000.
+
+Before you start the upgrade, note the following:
+
+- Setup upgrades SNA Server versions 3.0 or later (including clients). It does
+  not upgrade versions of SNA Server earlier than 3.0, nor does it upgrade
+  components that have been installed in directories other than the default SNA
+  directory.
+
+- Microsoft recommends that you make a backup copy of the primary's SNA Server
+  configuration file (Com.cfg).
+
+- The primary Host Integration Server computer is the last server upgraded.
+
+
+MORE INFORMATION
+================
+
+You can upgrade any version of SNA Server 3.0 or later to Host Integration
+Server 2000 without removing the existing version. When you upgrade an SNA
+Server subdomain to a Host Integration Server subdomain, follow these steps (in
+the order presented):
+
+1. Upgrade any member SNA Server computers.
+
+2. Upgrade any backup SNA Server computers.
+
+3. Upgrade the primary SNA Server computer.
+
+NOTE:
+
+- In Host Integration Server 2000, the member server role has been removed. Any
+  member SNA Servers will become backup Host Integration Server 2000 servers.
+
+- Host Integration Server 2000 now requires a service account for the Host
+  Integration Server 2000 services to run under. You cannot install Host
+  Integration Server 2000 in the Local System Account as in previous versions
+  of SNA Server.
+
+After the configurations are verified, the Host Integration Server 2000 Manager
+can be used to administer the subdomain, and Host Integration Server 2000
+release-specific features can be configured.
+
+For special case upgrade information (such as SNA Remote Access Services [SNARAS]
+and DB2 packages), see the Host Integration Server 2000 README.doc file.
+
+Mixing SNA Server 3.0 or SNA Server 4.0 with Host Integration Server 2000 in the Same Subdomain
+-----------------------------------------------------------------------------------------------
+
+If you cannot upgrade all SNA Server computers to Host Integration Server 2000 at
+the same time, you will be running in a mixed subdomain mode. Therefore, you
+must manage the servers from the oldest primary SNA Server computer. This is
+because you do not want the configuration file (Com.cfg) updated (or saved) to
+the Host Integration Server 2000 installation, because the SNA Server systems
+cannot read it. If you use a mixed subdomain environment, note the following:
+
+- Do not save an SNA Server configuration file (Com.cfg) by using SNA Manager
+  from a Host Integration Server 2000 Server or Admin client. If you save the
+  configuration file in mixed environments, this may cause configuration
+  corruption.
+
+- When you view the connection and LU status, they may be listed as Inactive,
+  even though the actual status is Active.
+
+- TN3270 user status information may not appear.
+
+- If multiple SNA Services are configured on a server, the SNA Server 3.0 or
+  SNA Server 4.0 Manager may display the Microsoft Windows NT or Microsoft
+  Windows 2000 computer name for each instance. For example, if Host
+  Integration Server 2000 is installed on a computer whose name is "SNA1", and
+  two SNA Services are configured, the SNA Server 3.0 or SNA Server 4.0 Manager
+  may display two SNA Services named "SNA1" and "SNA1".
+
+Any features that are new to Host Integration Server are not available until the
+whole SNA Server 3.0 or SNA Server 4.0 subdomain is running Host Integration
+Server and the configuration file has been upgraded.
+
+NOTE: Microsoft does not support the use of SNA Server 3.0 or SNA Server 4.0
+Manager to administer a Host Integration Server 2000 subdomain.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

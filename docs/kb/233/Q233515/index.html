@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q233515: PRB: Error &quot;String Literal Too Long&quot; w/ Update/Insert on Oracle | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q233515: PRB: Error &quot;String Literal Too Long&quot; w/ Update/Insert on Oracle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/233/Q233515/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/233/Q233515/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/233/Q233515/","publisher":null,"image":null,"headline":"Q233515: PRB: Error &quot;String Literal Too Long&quot; w/ Update/Insert on Oracle","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q233515-prb-error-string-literal-too-long-w-updateinsert-on-oracle">Q233515: PRB: Error "String Literal Too Long" w/ Update/Insert on Oracle</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q233515
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbATM kbDriver kbODBC kbOLEDB kbOracle kbVBp500 kbVBp600 kbVC500 kbVC600 kbGrpDSVBDB kb
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the "Microsoft OLE DB Provider for Oracle" to Execute an action query
+(Update or Insert) on a connection opened to an Oracle 7 or 8 server and a table
+that has LONG datatype field, you might receive the following error message:
+
+  ORA-01704: String literal too long
+
+If using the "Microsoft OLE DB Provider for ODBC Drivers," the error message
+might look like:
+
+  [Microsoft][ODBC driver for Oracle][Oracle] ORA-01704: String literal too
+  long.
+
+CAUSE
+=====
+
+There is an Oracle limitation of 2000 characters for literal strings on all
+flavors of Oracle 7 and 4000 characters on Oracle 8.
+
+RESOLUTION
+==========
+
+Use a string literal of up to 2000 or 4000 characters only. Longer values might
+only be entered using straight code to edit or add new records.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This limitation is an Oracle limitation and the error might occur using any Data
+Access method including DAO/RDO and ADO. Also, it is independent of the type of
+Provider or the ODBC driver used.
+
+For more information on this error, please refer to Oracle Documentation.
+
+The following sample code demonstrates how to reproduce this error and how to
+avoid it using Visual Basic and ADO using the OLEDB provider for Oracle. It
+assumes that the user is familiar with Oracle servers and has fair knowledge of
+ADO.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an Oracle table using the following script:
+
+           CREATE TABLE Account (
+                 AccountNo    NUMBER(3) PRIMARY KEY,
+                 TestStr      LONG);
+
+2. Start a new project in Visual Basic and add a Reference to the "Microsoft
+  ActiveX Data Objects library" 1.5, 2.0, or 2.1, depending on the installed
+  version.
+
+3. Place two CommandButtons on the form:
+
+ Control       Name       Caption
+--------------------------------------
+
+ Button1      cmdAction   Action Query
+  
+ Button2      cmdCode     ADO Code
+
+4. Paste the following code into your code window:
+
+     Private Sub cmdAction_Click()
+        Dim cn As New ADODB.Connection
+        Dim str As String
+        Dim i As integer
+
+        cn.CursorLocation = adUseClient
+        cn.Open "Provider=MSDAORA.1;Password=demo;User ID=demo;Data Source=dseoracle;Persist Security Info=True"
+
+        str = ""
+        For i = 1 To 2001
+          str = str + "A"
+        Next
+
+        ' Uncomment the next line to use Update and comment the one after
+        ' cn.Execute "Update Account set TestStr = '" &amp; str &amp; "' where AccountNo=1"
+        cn.Execute "Insert into Account(AccountNo, TestStr) values(5,'" &amp; str &amp; "')"
+        MsgBox "successful Operation"
+        cn.close
+        set cn = Nothing 
+     End Sub
+
+     Private Sub cmdCode_Click()
+        Dim cn As New ADODB.Connection
+        Dim rs As New ADODB.Recordset
+        Dim str As String
+
+        cn.CursorLocation = adUseClient
+        cn.Open "Provider=MSDAORA.1;Password=demo;User ID=demo;Data Source=dseoracle;Persist Security Info=True"
+
+        str = ""
+        For i = 1 To 2001
+           str = str + "A"
+        Next
+
+        rs.Open "select * from Account", cn, adOpenStatic, adLockBatchOptimistic
+
+        rs.AddNew
+        rs("AccountNo") = 8
+        rs("TestStr") = str
+
+        rs.UpdateBatch
+
+        MsgBox "successful Operation"
+        cn.close
+        set cn = Nothing 
+     End Sub
+
+5. Run the project and click on any CommandButton.
+
+If you click on "Action Query" button, you will get the error message. However,
+if you click on "ADO Code" no error occurs.
+
+REFERENCES
+==========
+
+For additional information about LONG character datatypes and how to deal with
+them using Visual Basic, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q178875 FILE: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes
+
+For additional information about on how to use ADO with Oracle, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q176936 INFO: Visual Basic 5.0 Accessing an Oracle Database Using ADO
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Hussein Abuthuraya, Microsoft Corporation
+
+
+Additional query words: oracle long raw
+
+======================================================================
+Keywords          : kbATM kbDriver kbODBC kbOLEDB kbOracle kbVBp500 kbVBp600 kbVC500 kbVC600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

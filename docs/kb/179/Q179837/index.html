@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179837: XCON: NDR from Malformed Message Not Received | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179837: XCON: NDR from Malformed Message Not Received" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179837/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179837/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179837/","publisher":null,"image":null,"headline":"Q179837: XCON: NDR from Malformed Message Not Received","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179837-xcon-ndr-from-malformed-message-not-received">Q179837: XCON: NDR from Malformed Message Not Received</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179837
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you send a message to an X.400 recipient, or reply to a message sent from
+an X.400 recipient, the message might not be successfully delivered and you
+might not receive a Non-Delivery Report (NDR). This can occur if an organization
+has a second X.400 connector with an overlapping address space and if the
+message cannot be converted to X.400 successfully. The Windows NT Event Viewer
+Application log on the Exchange Server with the X.400 Connector will have events
+logged such as:
+
+  Event 210: X.400 Service Event, severity 14
+  (MTA DISP:FANOUT(12) Proc 112) 01-23-98 10:24:31am
+  Content conversion failed
+  Object at fault     0600002D
+  Conversion error    258
+  MTS Identifier      C=US;A= ;P=LAB;L=LAB_RED-980123152503Z-601
+  Old content type    2A864886F7140501
+  New content type    56010A01
+  PDU dump reference  2
+
+  Event 62: X.400 Service Event, severity 12
+  (MTA DISP:FANOUT(12) Proc 112) 01-23-98 10:24:31am
+  Delivery failure
+  X.400 reason code     unable-to-transfer
+  X.400 diagnostic code content-syntax-error
+  Internal qualifier    0
+  MTS Identifier C=US;A= ;P=LAB;L=LAB_RED-980123152503Z-601
+
+  Event 287: X.400 Service Event, severity 12
+  (MTA DISP:RESULT(17) Proc 436) 01-23-98 10:24:31am
+  Successful rerouting
+  MTS Identifier    C=US;A= ;P=LAB;L=LAB_RED-980123152503Z-601
+  New Connector
+/O=LAB/OU=GREEN2/CN=CONFIGURATION/CN=CONNECTIONS/CN=SITE CONNECTOR (RED)
+  New Target entity
+/O=LAB/OU=RED/CN=CONFIGURATION/CN=SERVERS/CN=LAB_RED/CN=MICROSOFT MTA
+  Old Connector
+/O=LAB/OU=GREEN2/CN=CONFIGURATION/CN=CONNECTIONS/CN=X400 TO BECTOGO
+  Old Target entity
+/O=LAB/OU=GREEN2/CN=CONFIGURATION/CN=CONNECTIONS/CN=X400 TO BECTOGO
+
+Note: The connector names and target entity names will be different for servers.
+
+The Event 287 shows the message is being re-routed to another server that also
+has an X.400 connector on it. Further events will show the message is
+successfully transfered to the server with the second X.400 connector. At this
+point the message is corrupted by the unsuccessful conversion attempt. The
+second server cannot process it, so it logs an event and prevents further
+processing of the message. The event you will see on the second server is:
+
+  Event 200: X.400 Service Event, severity 14
+  (MTA XFER-IN(12) Proc 98) 01-21-98 02:32:39pm
+  Transfer-In failure, error in received APDU
+  Syntax server error code mandatory absent
+  Error detected at offset 892
+  Internal qualifier       2913
+  Node label               1msgt
+  PDU dump reference       3
+
+From looking at the Protocol Data Units (PDUs) saved in the BF*.log files, (in
+this case PDU reference 3), you will notice that the data is cut off at offset
+892. The sending server's PDU is exactly the same. This is the message after it
+has been corrupted by an unsuccessful conversion attempt.
+
+CAUSE
+=====
+
+The initial message is mal-formed, causing the content conversion failure. The
+Exchange Server doing the content conversion then realizes it has a second X.400
+connector available, and routes the message to it. The message routed is the
+data that failed the conversion, and is no longer a valid message.
+
+WORKAROUND
+==========
+
+One possible workaround is to remove the second X.400 connector from your
+organization.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange server,
+version 5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

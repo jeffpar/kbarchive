@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156878/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156878/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156878/","publisher":null,"image":null,"headline":"Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156878-fix-checking-out-vbp-overwrites-unsaved-changes-in-project">Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156878
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop kbSSafe400bug kbSSafe500bug kbSSafe600fix kbVBp400
+Last Modified: 08-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 4.0a, 5.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 4.0a, 5.0 
+- Microsoft Visual SourceSafe for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have checked out and modified files from a project that is under
+SourceSafe control without checking out the .vbp file, unsaved changes to those
+files will be erased without warning if you then check out the .VBP.
+
+WORKAROUND
+==========
+
+Either checkout the VBP file before modifying any file in the project or save
+all modified files in the project before checking out the VBP file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual SourceSafe
+version 6.0 for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Steps one through five can be omitted if you already have a Visual Basic project
+under SourceSafe control with all files checked in.
+
+1. Start Visual Basic 4.0. A default project is created.
+
+2. Save the project, form1.frm &amp; project1.vbp, in a new directory such as
+  C:\temp\testme.
+
+3. Click Yes in the messagebox asking you if the project should be added to
+  SourceCode control.
+
+4. Click Create in the Add SourceSafe Project dialog, then click Yes when
+  prompted to create the project. The default name is Project1.
+
+5. Add both files to the SourceSafe project in the Add to SourceSafe dialog. By
+  default, both files are now checked in. In the Visual Basic 4.0 project
+  window, form1.frm is now correctly marked as read-only.
+
+6. In the Visual Basic 4.0 project window, right-click the line containing
+  form1.frm, and invoke the Check Out command.
+
+7. In the Check Out File(s) from SourceSafe dialog, only form1.frm is selected.
+  Click OK to check out only form1.frm. Do not check out project1.vbp. The
+  bitmap in the Visual Basic 4.0 project window now shows that form1.frm is
+  checked out.
+
+8. Click View Form in the Visual Basic project window and make some changes to
+  the form, such as placing a Command button on the form.
+
+9. Right-click again on form1.frm in the Visual Basic 4.0 project window, and
+  choose the Check Out command. You will find only project1.vbp in the list of
+  Files to be checked out. Select the file and check it out. Note that
+  Form1.frm is replaced by its previous version without any warning.
+
+The same behavior, such as unsaved changes being overwritten, will happen to any
+component in the project when the VBP file is checked out.
+
+Additional query words: module
+
+======================================================================
+Keywords          : kbinterop kbSSafe400bug kbSSafe500bug kbSSafe600fix kbVBp400 
+Technology        : kbVBSearch kbSSafeSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

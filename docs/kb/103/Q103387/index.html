@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103387: Intersvr Does Not List Available COM Ports for Printing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103387: Intersvr Does Not List Available COM Ports for Printing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103387/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103387/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103387/","publisher":null,"image":null,"headline":"Q103387: Intersvr Does Not List Available COM Ports for Printing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103387-intersvr-does-not-list-available-com-ports-for-printing">Q103387: Intersvr Does Not List Available COM Ports for Printing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103387
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Intersvr does not list the COM port(s) available for remote printing from the
+Interlnk client.
+
+WORKAROUND
+==========
+
+If you are printing remotely from the client to the Intersvr's COM1 port (using
+LPT1 as the data channel), you must perform the following steps before invoking
+INTERSVR and INTERLNK:
+
+1. You MUST have an extra LPT port on the server.
+
+2. Set COM1 parameters on the server at the command prompt. For example
+
+  c:\&gt;mode com1: &lt;b&gt;,&lt;p&gt;,&lt;d&gt;,&lt;s&gt;
+
+  where &lt;b&gt; is the bit rate (for example, 9600 bits per second [BPS]),
+  &lt;p&gt; is the parity (for example, none), &lt;d&gt; is the data bits value
+  (for example, 8), and &lt;s&gt; is the stop bits value (for example, 1).
+
+3. Redirect the open Intersvr LPT2 port (not being used as channel) to COM1 by
+  typing the following at the server's (Intersvr) command prompt:
+
+  c:\&gt;mode lpt2:=com1:
+
+4. Start up Interlnk (with Intersvr invoked) and print to the Intersvr's
+  redirected LPT2 port to print on Intersvr's COM1 port.
+
+NOTE: The above steps also apply to using a null modem cable as the data channel
+and printing to the Intersvr's physical COM2 port. Your server must have two COM
+ports and the LPT1 port must be redirected to the COM2 port for printing.
+
+MORE INFORMATION
+================
+
+Many users want to use a customized parallel cable as a data access channel
+between the client and server because it transfers at a rate of 8 bits compared
+to customized serial null modem cable's rate of 1 bit.
+
+You can print to another LPT port (LPT2) if you have two physical LPT ports on
+the server (Intersvr), or you can print to another COM port on the server. The
+Intersvr's user interface, however, only lists the LPT ports available for
+printing.
+
+Additional query words: 6.22 6.00 redirect mode print 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q303495: Train Simulator: Error Message When Winter or Snow in Activity | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q303495: Train Simulator: Error Message When Winter or Snow in Activity" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/303/Q303495/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/303/Q303495/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/303/Q303495/","publisher":null,"image":null,"headline":"Q303495: Train Simulator: Error Message When Winter or Snow in Activity","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q303495-train-simulator-error-message-when-winter-or-snow-in-activity">Q303495: Train Simulator: Error Message When Winter or Snow in Activity</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q303495
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kberrmsg kbimu
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Train Simulator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Train Simulator, and choose an activity that contains
+snow or if you change the weather in your activity to snow then you may receive
+one of the following error messages when starting the activity or when the
+activity displays snow:
+
+  AppName: Train.exe
+  AppVer: 1.16.5.912
+  ModName: D3Dim700.dll
+  ModVer: 4.8.0.400
+  Offset: 00089ce4
+
+  AppName: Train.exe
+  AppVer: 1.16.5.912
+  ModName: D3Dim700.dll
+  ModVer: 5.0.2180.1 Offset: 0004DC50
+
+  App Name: Train.exe
+  App Ver: 1.16.5.912
+  Mod Name: D3Dim700.dll
+  Mod Ver: 4.8.1.881
+  OffSet: 0008E2C6
+
+CAUSE
+=====
+
+This behavior can occur if there are issues with your computer's video card.
+This behavior has been known to occur with the following video chip sets:
+
+- Intel i740
+
+- Intel 810 (82810e)
+
+- ATI Rage Fury Maxx
+
+- Elsa Victory II
+
+- SiS 530/630/730
+
+This behavior can also occur if you are using one of the Marias Pass activities
+that features snow -- for example, the "Grain Train Through the Night" scenario.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Method 1: Update Video Drivers
+------------------------------
+
+For information about how to contact your video card manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+To identify the manufacturer and model of your video adapter, follow these
+steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. If you are using Microsoft Windows 95, Microsoft Windows 98, or Microsoft
+  Windows Millennium Edition (Me), click the Device Manager tab.
+
+  -or-
+
+  If you are using Microsoft Windows 2000, click Device Manager on the Hardware
+  tab.
+
+4. Click the plus sign (+) next to "Display adapters" to expand the branch.
+
+5. Under the "Display adapters" branch, note the manufacturer and the model of
+  your video adapter, and then click OK.
+
+6. Close all of the open windows on the desktop.
+
+After updating your video card drivers, follow these steps to refresh the video
+settings in Train Simulator:
+
+1. Quit Train Simulator.
+
+2. Click Start, point to Programs, point to Microsoft Games, point to Train
+  Simulator, and then click Train Simulator Troubleshooter.
+
+3. Click Change Video Driver.
+
+4. Quit Train Simulator Troubleshooter.
+
+If this issue continues to occur, proceed to the next method.
+
+Method 2: Install Update
+------------------------
+
+An update has been created to resolve some compatibility problems with several
+video cards. To download and install the update, browse to the following
+Microsoft Web site:
+
+  http://www.microsoft.com/games/trainsim
+
+If this issue continues to occur, proceed to the next method.
+
+Method 3 Disable Snow
+---------------------
+
+You may be able to work around this issue by using the disable-snow option in
+Train Simulator Troubleshooter. To do this, follow these steps:
+
+1. Quit Train Simulator.
+
+2. Click Start, point to Programs, point to Microsoft Games, point to Train
+  Simulator, and then click Train Simulator Troubleshooter.
+
+3. Click Troubleshooting.
+
+4. Click to select the "Snow causes game to crash or does not display" check
+  box.
+
+5. Quit Train Simulator Troubleshooter.
+
+MORE INFORMATION
+================
+
+For additional information about the Error Reporting tool in Train Simulator,
+click the article numbers below to view the articles in the Microsoft Knowledge
+Base:
+
+  Q300963 Train Simulator: Description and Availability of Error Reporting Tool
+
+  Q299760 Train Simulator: How to Use the Troubleshooter
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: msgame trainsim
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbTrainSim
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

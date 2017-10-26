@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83726: INT 12h and Windows Enhanced Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83726: INT 12h and Windows Enhanced Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83726/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83726/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83726/","publisher":null,"image":null,"headline":"Q83726: INT 12h and Windows Enhanced Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83726-int-12h-and-windows-enhanced-mode">Q83726: INT 12h and Windows Enhanced Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83726
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A well-known method of providing security features for MS-DOS is to install an
+interrupt handler into the upper area of conventional memory. INT 12h is used to
+inform MS-DOS that this portion of memory is no longer available for use with
+MS-DOS applications. For this technique to work with Windows enhanced mode, it
+is necessary to write a virtual device (VxD) to map the affected memory pages
+into virtual machines.
+
+MORE INFORMATION
+================
+
+When the value in location 40:13 of the BIOS data segment is decreased, MS- DOS
+will reserve memory immediately below the 384 kilobyte adapter segment. The
+return value from issuing an INT 12h is the new amount of available memory.
+Several manufacturers of security software use this technique to install
+software prior to starting MS-DOS.
+
+This technique fails with Windows in enhanced mode because Windows does not map
+the corresponding pages in virtual machines onto the physical locations of those
+pages. If any interrupt handlers reside in the affected area, the missing
+mapping will keep the handlers from being invoked properly.
+
+The EBIOS virtual device, provided with the Windows Device Development Kit (DDK),
+demonstrates using the VxD services PhysIntoV86 and Assign_Device_V86_Pages to
+add page mappings to Windows. These techniques have been incorporated into the
+RIPLMEM VxD, which was originally designed to address a problem related to
+starting Windows on diskless workstations. RIPLMEM is distributed as an
+application note and is in the Software/Data Library. For more information on
+RIPLMEM, query on the following words in the Microsoft Knowledge Base:
+
+  " prod(win3) and riplmem " (without the quotation marks)
+
+Additional query words: 3.0 boot
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

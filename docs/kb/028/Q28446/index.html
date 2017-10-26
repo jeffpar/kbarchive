@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q28446: Example of Calling OS/2 Function DosGetEnv | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q28446: Example of Calling OS/2 Function DosGetEnv" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/028/Q28446/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/028/Q28446/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/028/Q28446/","publisher":null,"image":null,"headline":"Q28446: Example of Calling OS/2 Function DosGetEnv","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q28446-example-of-calling-os2-function-dosgetenv">Q28446: Example of Calling OS/2 Function DosGetEnv</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q28446
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 2-FEB-1990
+
+Below is a sample program that invokes the OS/2 function DosGetEnv.
+
+' The function declarations are found in file BSEDOSPC.BI
+
+DECLARE FUNCTION DosGetEnv%(_
+        SEG P1 AS INTEGER,_
+        SEG P2 AS INTEGER)
+cls
+x=DosGetEnv(y%,z%)
+
+IF (x) then
+  Print "An error occurred.  The error number is ";x
+ELSE
+  Print "Address to Place Segment Handle : ";y%
+  Print "Address to Place Command Line Start : ",z%
+END IF
+
+def seg = y%
+
+PRINT "THE INFORMATION IN THE ENVIRONMENT TABLE :" : PRINT
+
+For i = 0 to z%-20
+  t%=peek(i)
+  IF t%=42 THEN
+     hold%=i
+  END IF
+
+  IF t% = 0 THEN
+    print " "
+  ELSE
+    print chr$(t%);
+  END IF
+next i
+print
+i = 0
+PRINT "The Command Line Argument is : ";
+
+DO
+ t%=peek(z%+i)
+ print chr$(t%);
+ i = i + 1
+LOOP WHILE t% &lt;&gt; 0
+PRINT " "
+
+print
+PRINT "POKING SOME INFORMATION INTO THE ENVIRONMENT TABLE... " : print
+PRINT
+
+IF hold%&lt;&gt;0 THEN
+   for i = 0 to 9
+     poke hold%-i, 74-i
+   next i
+   def seg
+   PRINT "The information was poked into the environment variable FOO;"
+   PRINT "which was previously set to **********"
+
+   print "The NEW contents of FOO  : ";environ$("FOO") : print
+   Print "When the program is exited, notice the environment table";
+   Print "isn't changed."
+   PRINT "BASCOM uses only a copy of the actual DOS environment table"
+   print
+ELSE
+   print "The FOO environment variable is not set. "
+   print "To have the complete demo, set the FOO=**********"
+END IF
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

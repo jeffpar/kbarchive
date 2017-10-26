@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94247: WSS Err Msg: Cannot Find the SNDSYS Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94247: WSS Err Msg: Cannot Find the SNDSYS Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94247/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94247/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94247/","publisher":null,"image":null,"headline":"Q94247: WSS Err Msg: Cannot Find the SNDSYS Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94247-wss-err-msg-cannot-find-the-sndsys-driver">Q94247: WSS Err Msg: Cannot Find the SNDSYS Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94247
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, versions 1.0, 1.0a, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are using Windows Sound System and a SNDSYS.DRV entry is not present in
+the [DRIVERS] section of the SYSTEM.INI file, the following error may occur:
+
+  Cannot find the SNDSYS Driver
+
+Correctly setting up the [DRIVERS] section in the SYSTEM.INI file may correct
+this problem.
+
+MORE INFORMATION
+================
+
+This problem can be caused if the [Drivers] section in the SYSTEM.INI file is
+not set up correctly.
+
+This section should be configured in the following manner:
+
+  [DRIVERS]
+  MIDIMAPPER=MIDIMAP.DRV
+  TIMER=TIMER.DRV
+  WAVE=SNDSYS.DRV
+  AUX=SNDSYS.DRV
+  MIDI=SNDSYS.DRV
+  WAVEMAPPER=MSACM.DRV
+
+If WAVE=SNDSYS.DRV is not present, Volume Control, Recording Control, Voice
+Pilot, Quick Recorder, and Sound Finder will not load. Also, if AUX=SNDSYS.DRV
+is not present, Volume Control, Recording Control, Voice Pilot, and Sound Finder
+will also not load.
+
+NOTE: This message can also occur if in the "drivers=" line is missing from the
+[boot] section of the SYSTEM.INI, This line usually reads as follows:
+
+  drivers=mmsystem.dll
+
+If this line is missing, use a text editor (such as Notepad) to edit your
+SYSTEM.INI file, and re-enter the line.
+
+Additional query words: 1.00 1.00a 2.00 setup
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a kbWinSoundSys200
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

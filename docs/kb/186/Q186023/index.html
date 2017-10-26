@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186023: FIX: Set Collate Causes Display Problems for Related Tables | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186023: FIX: Set Collate Causes Display Problems for Related Tables" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186023/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186023/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186023/","publisher":null,"image":null,"headline":"Q186023: FIX: Set Collate Causes Display Problems for Related Tables","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186023-fix-set-collate-causes-display-problems-for-related-tables">Q186023: FIX: Set Collate Causes Display Problems for Related Tables</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186023
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Creating indexes with the Collate command set to anything other than "Machine"
+causes display problems for related tables.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+When creating indexes with the Collate command set to anything other than
+"Machine" and you use a child table that does not have any related records, the
+child table's Browse window updates incorrectly. The Browse window shows the
+related records for the previously selected parent record.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create two tables as shown below:
+
+        CREATE TABLE tbl1(a1 c(1), b1 c(1))
+        INSERT INTO tbl1 VALUES('1','2')
+        INSERT INTO tbl1 VALUES('1','3')
+        INSERT INTO tbl1 VALUES('2','2')
+        INSERT INTO tbl1 VALUES('2','3')
+        INSERT INTO tbl1 VALUES('6','3')
+
+        CREATE TABLE tbl2(c2 c(1),d2 c(1))
+        INSERT INTO tbl2 VALUES('1','1')
+        INSERT INTO tbl2 VALUES('3','')
+        INSERT INTO tbl2 VALUES('2','6')
+        INSERT INTO tbl2 VALUES('4','')
+        INSERT INTO tbl2 VALUES('5','2')
+
+2. Create a program and place the following commands in the program:
+
+        SET EXACT OFF
+
+        SET COLLATE TO "general"
+        ** To get the correct behavior comment previous line **
+        ** and un-Comment the following line:                **
+        * SET COLLATE TO "machine"
+
+        CLOSE DATABASE ALL
+        USE tbl1 IN 0
+        INDEX ON a1 + b1 TAG indtab1
+        USE tbl2 IN 0
+        SELECT tbl2
+        SET RELATION TO tbl2.d2 INTO tbl1
+        SELECT tbl1
+        DEFINE WINDOW win1 FROM 20,10 to 30,40 CLOSE FLOAT GROW
+        BROWSE WINDOW win1 NOWAIT
+        RELEASE WINDOW win1
+        SELECT tbl2
+        DEFINE WINDOW win2 FROM 10,10 to 20,40 CLOSE FLOAT GROW
+        BROWSE WINDOW win2 NOWAIT
+        RELEASE WINDOW win2
+
+3. Run the program created in step 2.
+
+4. When the Browse windows open, the parent table (TBL2) window should get the
+  focus. The record pointer is located on the first record for the parent table
+  (TBL2). The Browse window for TBL1 displays two records (1,2) and (1,3).
+
+5. In the parent table (TBL2) window move the cursor from the first record (1,1)
+  to the second record (3, '').
+
+  The child table window (TBL1) should not display any records. However, note
+  that the same records (1,2 and 1,3) are displayed in the child table, as when
+  record number one of parent table (TBL2) was selected.
+
+6. Move the cursor in the parent table (TBL2) to the third record and then back
+  to the second record.
+
+  The child table window should not display any records. However, note that the
+  same record is displayed (6,3), as when record number three of the parent
+  table (TBL2) was selected.
+
+  If the Collate command is set to "Machine" when you run the program, the
+  Browse window for the child table (TBL1) updates correctly.
+
+NOTE: The same behavior occurs if the tables are in a database. You may use the
+same sample program to reproduce this behavior, except that the related parent
+field has to be primary or candidate so that only one record in the parent table
+can be blank.
+
+Additional query words: kbvfp600fix
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

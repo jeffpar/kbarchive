@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184201: The File &lt;Filename&gt; Could Not Be Found… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184201: The File &lt;Filename&gt; Could Not Be Found…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184201/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184201/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184201/","publisher":null,"image":null,"headline":"Q184201: The File &lt;Filename&gt; Could Not Be Found…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184201-the-file-filename-could-not-be-found">Q184201: The File &lt;Filename&gt; Could Not Be Found…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184201
+Product(s): The Microsoft Network
+Version(s): WINDOWS:2.0,2.5
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbhw kbsetup kbmsn kbHardware
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install MSN, The Microsoft Network, you may receive an error
+message similar to the following:
+
+  The file &lt;filename&gt; could not be found on the installation disc.
+
+CAUSE
+=====
+
+This behavior can occur if any of the following conditions exist:
+
+- The CD-ROM is dirty or damaged.
+
+- The CD-ROM drive is not properly configured.
+
+- The CD-ROM drive hardware may be damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Confirm that the CD-ROM drive is double-speed or faster. The MSN software
+  does not support single-speed CD-ROM drives.
+
+2. Verify that the MSN CD-ROM is clean and free of scratches. To do so, inspect
+  the shiny side of the CD-ROM. Use a CD-ROM cleaning kit or a soft, lint-free
+  cloth to clean the CD-ROM, and then run the MSN Setup program again. If the
+  issue continues to occur, proceed to the next step.
+
+3. Determine if the CD-ROM is damaged. To do so, attempt to install MSN on a
+  different computer using the same CD-ROM. If the issue does not occur on the
+  other computer, continue to the next step. If the issue does occur on the
+  other computer, the MSN CD-ROM is damaged. You can request a replacement MSN
+  CD-ROM by calling the Microsoft Order Desk at (800) 360-7561. If you are
+  outside the United States, contact the Microsoft subsidiary for your area. To
+  obtain contact information for your Microsoft subsidiary, visit the following
+  Microsoft Web page:
+
+  http://www.microsoft.com/worldwide/default.htm
+
+
+4. Use a CD-ROM lens cleaning kit to clean the CD-ROM drive. If the issue
+  continues to occur, proceed to the next step.
+
+5. To decrease the likelihood of CD-ROM read errors, try reducing data caching
+  on the CD-ROM drive.
+
+  To reduce CD-ROM data caching, you must first determine whether you are using
+  real-mode or protected-mode drivers to access your CD-ROM drive. To determine
+  this, follow these steps:
+  a. Click Start, point to Settings, and then click Control Panel.
+
+  b. Double-click System.
+
+  c. Click the Device Manager tab.
+
+     If a CD-ROM device is listed, you are using protected-mode drivers. Follow
+     the steps in the "Reducing Protected-Mode CD-ROM Drive Caching" section
+     later in this article. If a CD-ROM device is not listed, use the steps in
+     the "Reducing Real-Mode CD-ROM Drive Caching" section.
+
+  Reducing Real-Mode CD-ROM Drive Caching
+  ---------------------------------------
+
+  To reduce CD-ROM data caching if you are using real-mode drivers, follow these
+  steps:
+  a. Click Start, point to Settings, and then click Control Panel.
+
+  b. Double-click System.
+
+  c. On the Performance tab, click File System.
+
+  d. Click the CD-ROM tab.
+
+  e. In the Optimize Access Pattern For box, click No Read-Ahead.
+
+  f. Click OK, and then click Close.
+
+  g. If you are prompted to restart the computer, click Yes.
+
+  Reducing Protected-Mode CD-ROM Drive Caching
+  --------------------------------------------
+
+  To reduce CD-ROM data caching if you are using protected-mode drivers, follow
+  these steps:
+  a. Click Start, point to Settings, and then click Control Panel.
+
+  b. Double-click System.
+
+  c. On the Performance tab, click File System.
+
+  d. Click the CD-ROM tab.
+
+  e. In the Optimize Access Pattern For box, click No Read-Ahead.
+
+     NOTE: Selecting a faster speed than is appropriate for your CD-ROM drive
+     does not necessarily increase performance.
+
+  f. Make sure the Supplemental Cache Size slider is set all the way to the
+     left (the Small setting), and then click OK.
+
+  g. Click OK, and then click Close.
+
+  h. If you are prompted to restart the computer, click Yes.
+
+  For additional information about how to adjust CD-ROM cache settings, please
+  see the following articles in the Microsoft Knowledge Base:
+
+  Q184410 How to Use Msinfo32.exe to Optimize CD-ROM Cache Settings
+
+  Q154883 Home Products Containing Multimedia Version of Msinfo32.exe
+
+  Q140583 How to Configure CD-ROM Caching for Windows 95
+
+  Q132882 Computer Hangs Copying Data from CD-ROM Drive
+
+
+6. If the issue continues to occur, contact your hardware manufacturer to
+  inquire about obtaining the most recent BIOS updates and drivers for your
+  CD-ROM drive.
+
+MORE INFORMATION
+================
+
+For information about how to contact your hardware manufacturer, query in the
+Microsoft Knowledge Base for one of the following articles:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbenv kberrmsg kbhw kbsetup kbmsn kbHardware 
+Technology        : kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

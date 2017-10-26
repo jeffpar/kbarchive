@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234805: XWEB: How to Install OWA and IIS on a Stand-Alone Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234805: XWEB: How to Install OWA and IIS on a Stand-Alone Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234805/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234805/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234805/","publisher":null,"image":null,"headline":"Q234805: XWEB: How to Install OWA and IIS on a Stand-Alone Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234805-xweb-how-to-install-owa-and-iis-on-a-stand-alone-server">Q234805: XWEB: How to Install OWA and IIS on a Stand-Alone Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234805
+Product(s): Microsoft Exchange
+Version(s): 2000,3.0,4.0,5.0,5.5,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 18-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP3 
+- Microsoft Outlook Web Access, version 5.5 
+- Microsoft Internet Information Server versions 3.0, 4.0, 5.0 
+- the operating system: Microsoft Windows NT 4.0 
+- the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For reasons of scalability, performance, and security, you can install Outlook
+Web Access (OWA) on a server that is not running Microsoft Exchange Server. The
+following article describes how to install OWA in this configuration.
+
+MORE INFORMATION
+================
+
+Before you install Outlook Web Access, ensure that Microsoft Internet
+Information Server (IIS) and Active Server Pages are installed on your Windows
+NT Server. Exchange Server 5.5 can be used with either IIS 4.0 or IIS 3.0;
+Exchange Server 5.5 SP3 is required for proper Exchange 5.5 Server operation on
+Windows 2000 Servers, so its OWA components are needed with IIS 5.0.
+
+NOTE: To sucessfully install OWA components from Exchange Server 5.5, install
+Windows NT 4.0 Service Pack 3 with hotfixes or upgrade your computer to Windows
+NT 4.0 Server SP4. For additional information, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q179796 Setup Error Installing Exchange 5.5 OWA Components
+
+NOTE: You do not have to install Windows NT 4.0 SP3 to install Active Server
+Pages from the SP3 CD.
+
+1. Run the Exchange Server Setup program.
+
+2. When you select components to install, click to clear all check boxes apart
+  from OWA.
+
+3. Continue with Setup. You are prompted for the name of the Exchange Server
+  computer that OWA will use to look up directory information for mailboxes.
+
+  IMPORTANT: The server that you install OWA on must be able to verify the
+  service account on the Exchange Server computer that you indicated. For this
+  to succeed, the IIS and OWA server must either be in the same Windows NT
+  domain as the Exchange Server computer, or have a trust relationship
+  established with the domain that the Exchange Server computer resides in.
+  Failure to satisfy one of these conditions results in system attendant errors
+  during setup.
+
+In this configuration, the NTLM authentication protocol does not work because
+NTLM only propagates over one network hop (that is, the hop between the browser
+and the IIS/OWA server). Use Basic/Clear Text authentication as an alternative;
+this allows browsers to access all resources regardless of the location of their
+Exchange Server computer.
+
+After Setup is finished, users can log on to their mailbox by using OWA, and the
+requests will be forwarded to the Exchange Server computer appropriately.
+
+Additional query words: SEPERATE DIFFERENT
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbWinNTsearch kbwin2000AdvServSearch kbwin2000DataServSearch kbWinNTSsearch kbwin2000Ssearch kbOutlookSearch kbiisSearch kbExchangeSearch kbExchange550 kbExchange400 kbZNotKeyword2 kbOWASearch kbWinAdvServSearch kbWinDataServSearch kbGraph500
+Version           : :2000,3.0,4.0,5.0,5.5,5.5 SP3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108706: Common Q&amp;A for Visual C++ 32-bit edition, ver 1.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108706: Common Q&amp;A for Visual C++ 32-bit edition, ver 1.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108706/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108706/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108706/","publisher":null,"image":null,"headline":"Q108706: Common Q&amp;A for Visual C++ 32-bit edition, ver 1.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108706-common-qa-for-visual-c-32-bit-edition-ver-10">Q108706: Common Q&amp;A for Visual C++ 32-bit edition, ver 1.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108706
+Product(s): Microsoft C Compiler
+Version(s): 1.00
+Operating System(s): 
+Keyword(s): kbGenInfo kbVC kbArtTypeINF
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Common Q&amp;A for Microsoft Visual C++, 32-Bit Edition
+---------------------------------------------------
+
+You can find the answers to more common questions by choosing "Technical Support"
+from the Help menu in the Visual Workbench. The README.WRI file, located in the
+\MSVCNT\HELP directory, also addresses many common issues.
+
+1. Q. When I build my application, I get the warning, "LNK4016: unresolved
+  external symbol `__doserrno'". What is causing this warning?
+
+  A. The most likely cause of this error is using /MT (multithreaded run time)
+  or /MD [run time in a DLL (dynamic-link library)] when building your
+  application and linking with the supplied versions of the Microsoft
+  Foundation Class (MFC) Libraries. To resolve this problem, you must rebuild
+  the MFC libraries to use the same version of the run-time library as your
+  application. Please see the README.WRI file located in \MSVCNT\HELP for more
+  details.
+
+2. Q. Can I use the Microsoft Foundation Class (MFC) Libraries in a
+  multithreaded program?
+
+  A. Yes. However, all use of the Microsoft Foundation Classes must be in the
+  same thread. Please see TechNote #37 for more detailed information.
+
+3. Q. I copied a sample project from the Visual C++ CD to my hard drive. Visual
+  C++ is treating the sample as a read-only project. What's wrong?
+
+  A. When files are copied from a CD to a hard drive, the files are given the
+  read-only attribute. You can change the attribute by using the ATTRIB command
+  in MS-DOS, or by choosing Properties from the File menu in the File Manager.
+  Note that if you change the attribute of the file, you should also change the
+  attribute of its directory.
+
+4. Q. Where is the MFC200.DLL file located?
+
+  A. MFC 2.0 does not support AFXDLLs (MFC in a DLL and extension DLLs) in this
+  version of the Visual C++ development system for Windows NT. For more
+  information, see the "Microsoft Foundation Class Library Update" at the
+  beginning of the Class Library Reference.
+
+5. Q. Can I use .VBX controls with App Studio and MFC 2.0?
+
+  A. .VBX controls are 16-bit DLLs and are not supported in the 32-bit Visual
+  C++ environment.
+
+6. Q. I rebuilt my program with the 32-bit version of Visual C++, but now I get
+  heap errors when I run my program. What is wrong?
+
+  A. If you were using the Win32 Software Development Kit (SDK) before, it's
+  very possible that you were writing past the memory block and not being
+  caught. The Win32 SDK run-time libraries often allocate more space than is
+  requested. The Visual C++ run time is more strict with heap allocations.
+
+7. Q. In Windows 3.1, I could send my diagnostic output (OutputDebugString
+  messages and MFC TRACE output) to the communications (com) port or my
+  monochrome monitor. How do I do that in the Visual C++ development system for
+  Windows NT?
+
+  A. Under Windows NT, debug output is available only to the debugger of the
+  process that issues the message. If you want to see the debug output of a
+  program, run it under Visual Workbench integrated debugger or use the DEB
+  (Debug Event Browser) sample in MSVCNT\SAMPLES\DEB.
+
+Additional query words: kbinf 1.00
+======================================================================
+Keywords          : kbGenInfo kbVC kbArtTypeINF 
+Technology        : kbVCsearch kbAudDeveloper kbvc100
+Version           : 1.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

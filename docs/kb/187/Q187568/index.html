@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187568: HOWTO: Create Your Own Bitmap Object Class | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187568: HOWTO: Create Your Own Bitmap Object Class" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187568/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187568/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187568/","publisher":null,"image":null,"headline":"Q187568: HOWTO: Create Your Own Bitmap Object Class","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187568-howto-create-your-own-bitmap-object-class">Q187568: HOWTO: Create Your Own Bitmap Object Class</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187568
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbBitmap kbVBp kbVBp500 kbGrpDSVB kbDSupport
+Last Modified: 22-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows how to create a simple Bitmap Object class that will store
+both an image and its mask. This object may be used to blit images quickly
+within a Visual Basic 5.0 application with built-in ability to perform
+transparency.
+
+MORE INFORMATION
+================
+
+This example shows how to build a simple Bitmap Object class, which allows you
+to load an image into the object, and use that image with the Bitblt API or any
+other drawing API which requires a Device Context. These objects are low in
+resource use and very fast. This example also shows how to create a Mask bitmap
+of an image (a Mask image can be used to perform transparency effects with
+bitmaps). Using an image Mask, you can easily perform fast transparent
+blitting.
+
+The bitmap class has five properties and one function as listed below:
+
+  Property GetImageDC    - Returns a DC to the actual image
+  Property GetInvertedDC - Returns a DC to an inverted copy of the image
+  Property GetMaskDC     - Returns a DC to a masked copy of the image
+  Property Width         - Returns width (in pixels) of image
+  Property Height        - Returns height (in pixels) of image
+  Function SetBitmap     - Loads image, return TRUE if successful
+
+Step-by-Step Example
+--------------------
+
+1. Start a new Standard EXE project in Visual Basic 5.0. Form1 is created by
+  default.
+
+2. Add a module (Module1) and a class (Class1) to the project.
+
+3. Add the following controls to Form1:
+
+  1 Picturebox (make this control pretty large)
+  1 Textbox
+  4 CommandButtons
+
+4. Copy and paste the following code into the Module code window:
+
+      Option Explicit
+
+      ' constants used in this example are declared here
+      Public Const SRCAND = &amp;H8800C6 ' used to determine how a blit will
+                                     ' turn out
+      Public Const SRCCOPY = &amp;HCC0020  ' used to determine how a blit
+                                       ' will turn out
+      Public Const SRCERASE = &amp;H440328 ' used to determine how a blit
+                                       ' will turn out
+      Public Const SRCINVERT = &amp;H660046  ' used to determine how a blit
+                                         ' will turn out
+      Public Const SRCPAINT = &amp;HEE0086   ' used to determine how a blit
+                                         ' will turn out
+      Public Const IMAGE_BITMAP = &amp;O0    ' used with LoadImage to load a
+                                         ' bitmap
+      Public Const LR_LOADFROMFILE = 16  ' used with LoadImage
+
+      ' structures used in this example
+      Type BITMAP
+         bmType As Long
+         bmWidth As Long
+         bmHeight As Long
+         bmWidthBytes As Long
+         bmPlanes As Integer
+         bmBitsPixel As Integer
+         bmBits As Long
+      End Type
+
+      ' API's used in this example
+      Declare Function GetObject Lib "gdi32" Alias "GetObjectA" _
+         (ByVal hObject As Long, ByVal nCount As Long, lpObject As Any) _
+         As Long
+      Declare Function DeleteObject Lib "gdi32" (ByVal hObject As Long) _
+         As Long
+      Declare Function CreateCompatibleDC Lib "gdi32" (ByVal hdc As Long) _
+         As Long
+      Declare Function DeleteDC Lib "gdi32" (ByVal hdc As Long) As Long
+      Declare Function SelectObject Lib "gdi32" _
+         (ByVal hdc As Long, ByVal hObject As Long) As Long
+      Declare Function BitBlt Lib "gdi32" _
+         (ByVal hDestDC As Long, ByVal x As Long, ByVal y As Long, _
+         ByVal nWidth As Long, ByVal nHeight As Long, ByVal hSrcDC As Long, _
+         ByVal xSrc As Long, ByVal ySrc As Long, ByVal dwRop As Long) As Long
+      Declare Function SetBkColor Lib "gdi32" _
+         (ByVal hdc As Long, ByVal crColor As Long) As Long
+      Declare Function SetTextColor Lib "gdi32" _
+         (ByVal hdc As Long, ByVal crColor As Long) As Long
+      Declare Function LoadImage Lib "user32" Alias "LoadImageA" _
+         (ByVal hInst As Long, ByVal lpsz As String, ByVal un1 As Long, _
+         ByVal n1 As Long, ByVal n2 As Long, ByVal un2 As Long) As Long
+      Declare Function CreateCompatibleBitmap Lib "gdi32" _
+         (ByVal hdc As Long, ByVal nWidth As Long, ByVal nHeight As Long) _
+         As Long
+
+5. Rename Class1 to "clsBitmap", then copy and paste the following code in
+  clsBitmap's code window:
+
+  Option Explicit
+
+         Private Const CLR_INVALID = &amp;HFFFF ' used to test results of color
+                                            ' API calls
+
+         Private iImageDC As Long        ' DC to the Image bitmap
+         Private iInvertImageDC As Long  ' DC to the Inverted Image bitmap
+         Private iMaskDC As Long         ' DC to the Mask bitmap
+         
+         Private hbmImageOld As Long       'used to remove bitmaps
+         Private hbmInvertImageOld As Long 'used to remove bitmaps
+         Private hbmMaskOld As Long        'used to remove bitmaps
+         
+         Private iWidth As Long          ' Size of Bitmap - X
+         Private iHeight As Long         ' Size of Bitmap - Y
+         Private iInvertImage As Long    ' temp bitmap used in creating the
+                                         ' invert image
+         Private iMask As Long           ' temp bitmap used in creating mask
+      
+         ' For this object class, 5 properties are exposed (read only) and one
+         ' function
+
+         ' Get ImageDC           - returns a DC that contains the original
+         '                         image
+         ' Get InvertImageDC     - returns a DC that contains an invert of the
+         '                         image's background
+         ' Get MaskDC            - returns a DC that contains an invert of the
+         '                         original image
+         ' Fnc SetBitmap         - returns TRUE/FALSE when attempting to load
+         '                         image into bitmap object
+
+         Property Get ImageDC() As Long
+            ImageDC = iImageDC              ' return the DC that contains the
+                                            ' regular image
+         End Property
+
+         Property Get InvertImageDC() As Long
+            InvertImageDC = iInvertImageDC  ' return the DC that contains the
+                                            ' inverted image
+         End Property
+
+         Property Get MaskDC() As Long
+            MaskDC = iMaskDC                ' return the DC that contains the
+                                            ' mask image
+         End Property
+
+         Property Get Width() As Long
+            Width = iWidth                  ' return the width of the bitmap
+         End Property
+
+         Property Get Height() As Long
+            Height = iHeight                ' return the height of the bitmap
+         End Property
+
+         Public Function SetBitmap(NewBitmap As Long) As Boolean
+
+         ' The NewBitmap argument is a handle to a bitmap. This is used to
+         ' grab the bitmap info, place the data into a bitmap structure, and
+         ' use the structure to build a bitmap/mask grab the bitmap
+         ' information.
+
+            Dim lresult As Long         ' lResults of our API calls
+            Dim BitmapData As BITMAP    ' data on the incoming bitmap
+            
+            SetBitmap = True
+            
+            lresult = GetObject(NewBitmap, Len(BitmapData), BitmapData)
+
+           ' Verify the bitmap data
+              If (lresult = 0) Then
+                 SetBitmap = False
+              End If
+
+            ' Persist the height/width of the bitmap image
+
+            iWidth = BitmapData.bmWidth     ' Determine the bitmaps width
+            iHeight = BitmapData.bmHeight    ' Determine the bitmaps height
+
+         ' Three Device Contexts (DC) are created. One is temporary (for
+         ' the incoming bitmap that will be copied. The second is for the
+         ' bitmap image that will be contained with this bitmap object class,
+         ' and the third is for the image mask that will also be contained
+         ' within this bitmap object class.
+
+         iImageDC = CreateCompatibleDC(0)
+         iInvertImageDC = CreateCompatibleDC(0)
+         iMaskDC = CreateCompatibleDC(0)
+
+            ' Ensure that there are three new DCs to use in this bitmap object.
+            If (iImageDC = 0) Or (iInvertImageDC = 0) Or (iMaskDC = 0) Then
+               SetBitmap = False
+            End If
+
+         ' Save the actual bitmap within this bitmap object.
+         hbmImageOld = SelectObject(iImageDC, NewBitmap)
+
+         ' Make sure that the object is selected.
+            If (lresult = 0) Then
+               SetBitmap = False
+            End If
+
+         ' Create the bitmap to hold the inverted image, and connect it to a DC.
+         iInvertImage = CreateCompatibleBitmap(iImageDC, iWidth, iHeight)
+
+         ' Make sure that a bitmap can be created.
+            If (iMask = 0) Then
+               SetBitmap = False
+            End If
+
+         ' Copy the image into the bitmap that was just created.
+            hbmInvertImageOld = SelectObject(iInvertImageDC, iInvertImage)
+
+         ' Make sure that the object is selected.
+            If (lresult = 0) Then
+               SetBitmap = False
+            End If
+
+         ' Create the bitmap to hold the mask, and connect it to a DC.
+            iMask = CreateCompatibleBitmap(iMaskDC, iWidth, iHeight)
+
+         ' Make sure that a bitmap can be created.
+            If (iMask = 0) Then
+               SetBitmap = False
+            End If
+
+            ' The bitmap is now in memory. Attach it to the DC created for the Mask.
+               hbmMaskOld = SelectObject(iMaskDC, iMask)
+
+            ' Make sure that the object is selected.
+               If (lresult = 0) Then
+                  SetBitmap = False
+               End If
+
+            ' Blit the incoming image into the ImageDC created. Now there is a
+            ' permanent copy of the original image.
+            lresult = BitBlt(iInvertImageDC, 0, 0, iWidth, iHeight, iImageDC, _
+                           0, 0, SRCCOPY)
+
+            ' If the first blit fails, SetBitmap = False.
+               If (lresult = 0) Then
+                  SetBitmap = False
+               End If
+
+            ' Create the Mask image first.
+              lresult = BitBlt(iMaskDC, 0, 0, iWidth, iHeight, iImageDC, 0, 0, _
+                    SRCCOPY)
+
+            ' If the first blit fails, SetBitmap = False.
+               If (lresult = 0) Then
+                  SetBitmap = False
+               End If
+
+            ' Next, change the background of the real bitmap. This is done to
+            ' create the Mask image.
+               lresult = SetBkColor(iInvertImageDC, vbBlack)
+
+            ' Make sure that the background color is set successfully.
+               If (lresult = CLR_INVALID) Then
+                  SetBitmap = False
+               End If
+
+            ' Change the textcolor of the real bitmap. This is done to create
+            ' the mask image.
+            lresult = SetTextColor(iInvertImageDC, vbWhite)
+
+            ' Make sure that the text color is set successfully.
+               If (lresult = CLR_INVALID) Then
+                  SetBitmap = False
+               End If
+
+            ' Invert the white background to black on the real bitmap by
+            ' blitting the Mask that is created over the slightly modified 
+            ' original bitmap. The background color becomes black -
+            ' perfect for transparent blitting.
+            lresult = BitBlt(iInvertImageDC, 0, 0, iWidth, iHeight, iMaskDC, _
+                       0, 0, SRCAND)
+
+            ' Make sure that the blit succeeded.
+               If (lresult = 0) Then
+                  SetBitmap = False
+               End If
+
+              lresult = DeleteObject(NewBitmap)
+              
+              ' Make sure that the temporary bitmap is deleted.
+              If (lresult = 0) Then
+                  SetBitmap = False
+              End If
+              
+            ' The bitmap image has been loaded into the bitmap object,
+            ' return a successful attempt.
+
+         End Function
+
+         Private Sub Class_Terminate()
+          Dim lresult As Long
+          
+          lresult = DeleteObject(SelectObject(iImageDC, hbmImageOld))
+          lresult = DeleteObject(SelectObject(iInvertImageDC, hbmInvertImageOld))
+          lresult = DeleteObject(SelectObject(iMaskDC, hbmMaskOld))
+          
+          ' When this object is destroyed, destroy the Device Contexts that
+          ' are being used.
+          
+          Call DeleteDC(iImageDC)         ' delete the image DC
+          Call DeleteDC(iInvertImageDC)   ' delete the inverted image DC
+          Call DeleteDC(iMaskDC)          ' delete the mask DC
+
+         End Sub
+
+6. Copy and paste the following code into the Form1 code window:
+
+      Option Explicit
+
+      Private oTestBitmap As clsBitmap    ' sample bitmap object
+
+      Private Sub Command1_Click()
+         Dim hBitmap As Long     ' handle to bitmap being loaded
+         Dim sFileName As String ' path + name of bitmap file to be loaded
+         Dim bResult As Boolean  ' result of loading bitmap into bitmap
+                                 ' object
+      ' use the LoadImage API to load in a bitmap image. The name of the
+      ' image file will be retrieved from the textbox control sited on the
+      ' form.
+
+      sFileName = Text1.Text
+
+      ' call the LoadImage API to attempt to load in the test bitmap.
+      hBitmap = LoadImage(0, sFileName, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE)
+
+      ' if LoadImage fails, the return result is a zero, test for this
+      ' before attempting to create our bitmap object.
+
+        If (hBitmap = 0) Then
+          MsgBox "Error : Unable To Load Bitmap Image : " &amp; sFileName, _
+              vbOKOnly, "Bitmap Load Error"
+           Exit Sub
+        End If
+
+      ' create a new bitmap object for testing purposes
+      Set oTestBitmap = New clsBitmap
+
+      ' attempt to load the bitmap into to into the bitmap object using its
+      ' handle
+
+      bResult = oTestBitmap.SetBitmap(hBitmap)
+
+      ' verify the image was successfully loaded into the bitmap object.
+      ' SetBitmap returns true if successful.
+
+         If (bResult = False) Then
+           MsgBox "Error : Unable To Load Image Into Bitmap Object", _
+               vbOKOnly, "Bitmap Object Error"
+            Set oTestBitmap = Nothing
+            Exit Sub
+         End If
+
+       ' test the bitmap object with the loaded image
+       Command2.Enabled = True
+       Command3.Enabled = True
+       Command4.Enabled = True
+
+      End Sub
+
+      Private Sub Command2_Click()
+
+         ' blit the bitmap object's image onto the picturebox
+         Call BitBlt(Picture1.hdc, 10, 10, oTestBitmap.Width, _
+         oTestBitmap.Height, oTestBitmap.ImageDC, 0, 0, SRCCOPY)
+
+         ' refresh the picturebox to show the blit
+         Picture1.Refresh
+
+      End Sub
+
+      Private Sub Command3_Click()
+
+      ' blit the bitmap object's mask onto the picturebox
+         Call BitBlt(Picture1.hdc, 10, 10, oTestBitmap.Width, _
+         oTestBitmap.Height, oTestBitmap.MaskDC, 0, 0, SRCCOPY)
+
+      ' refresh the picturebox to show the blit
+         Picture1.Refresh
+
+      End Sub
+
+      Private Sub Command4_Click()
+
+         ' demonstrate the transparency capabilities of the Bitmap Object
+         ' class
+
+         ' first, blit the mask to the Picture Box Control
+           Call BitBlt(Picture1.hdc, 50, 10, oTestBitmap.Width, _
+              oTestBitmap.Height, oTestBitmap.MaskDC, 0, 0, SRCAND)
+
+         ' next blit the actual bitmap, which will fill in the black hole
+         ' that the Mask image created in the Picturebox.
+           Call BitBlt(Picture1.hdc, 50, 10, oTestBitmap.Width, _
+              oTestBitmap.Height, oTestBitmap.InvertImageDC, 0, 0, SRCPAINT)
+
+         ' refresh the Picturebox Control to show the effects
+         Picture1.Refresh
+
+      End Sub
+
+      Private Sub Form_Load()
+
+         ' disable the test buttons
+         Command2.Enabled = False
+         Command3.Enabled = False
+         Command4.Enabled = False
+
+         ' get the path of the test bitmap
+         Text1.Text = App.Path &amp; "\test.bmp"
+
+         ' set the picturebox to autoredraw so the blits will show up
+         Picture1.AutoRedraw = True
+
+      End Sub
+
+7. Save and compile the project.
+
+Creating a Test Bitmap
+----------------------
+
+Use Microsoft Paint (MSPAINT.EXE) to create a bitmap with white (default)
+background and save it in the project's directory as TEST.BMP. Under Image menu,
+select Attributes to size the bitmap.
+
+Running The Example
+-------------------
+
+1. Press the F5 key while in the Visual Basic 5.0 to run the project.
+
+2. Click "Command1" to load the bitmap.
+
+3. Click "Command2" to blit the bitmap image to the picturebox.
+
+4. Click "Command3" to blit the mask image to the picturebox.
+
+5. Click "Command4" to show the transparent effect using both the mask image and
+  the inverted image.
+
+NOTE: The test bitmap must have all the "Transparent" pixels set to white. These
+white pixels will become the transparent part of the mask, and all the other
+pixels will be black when the mask is blitted.
+
+Additional query words: blitting animation sprites
+
+======================================================================
+Keywords          : kbBitmap kbVBp kbVBp500 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVB500 kbZNotKeyword3
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

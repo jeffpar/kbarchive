@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138438: HOWTO: Display Child Records Based on a Parent Record | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138438: HOWTO: Display Child Records Based on a Parent Record" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138438/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138438/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138438/","publisher":null,"image":null,"headline":"Q138438: HOWTO: Display Child Records Based on a Parent Record","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138438-howto-display-child-records-based-on-a-parent-record">Q138438: HOWTO: Display Child Records Based on a Parent Record</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138438
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbDesigner kbvfp300 kbvfp500 kbvfp600
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can display child records based on the selection of a specific parent record
+by using two forms with both a parameter and a custom property in the child
+form. This article shows you how to do it.
+
+MORE INFORMATION
+================
+
+The following steps create two forms namded Parent and Child and use the
+Customer and Orders tables from the Tastrade database.
+
+Create the Parent Form
+----------------------
+
+1. Open the Tastrade database by typing the following in the Command window:
+
+        OPEN DATA C:\VFP\SAMPLES\MAINSAMP\DATA\TASTRADE
+
+  In Visual FoxPro 6.0, type the following:
+
+        OPEN DATA HOME(2)+"TASTRADE\DATA\TASTRADE"
+
+2. Create a new form called Parent.
+
+3. In the data environment for the Parent form, add the Customer table from
+  Tastrade.
+
+4. Drag the Customer table from the data environment to the form to create a
+  grid.
+
+5. Click the grid. Right-click the grid, and then click Properties.
+
+6. Set the ColumnCount property to 15.
+
+7. Place the following code in the Header1 DblClick event:
+
+        DO FORM child WITH customer.customer_id
+
+8. Close and save the Parent form.
+
+Create the Child Form
+---------------------
+
+1. Create a new form called Child.
+
+2. Add the Orders table to the data environment of the Child form.
+
+3. On the Form menu, click New Property. Type in the new property name of
+  Parent_Key.
+
+4. Drag Order_Id, Customer_Id, Order_Number, and Order_Date fields individually
+  from the data environment to the form to create text boxes for each field.
+
+5. In the Child form's Init event, enter this code:
+
+     PARAMETER PARENT_KEY
+     SELECT ORDERS
+     SET FILTER TO customer.customer_id = orders.customer_id
+     GO TOP
+
+6. Save the Child form.
+
+7. Type the following in the Command window:
+
+     DO FORM PARENT.
+
+When the record pointer in the Customer table moves to a Customer_Id of BLAUS,
+for example, double-click the header for the Customer_Id field (called Header1).
+The Child form brings up information for order #103 dated 10/28/92.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDesigner kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

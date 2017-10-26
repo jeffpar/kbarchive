@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194948: HOWTO: Create a Child Console Process from a CGI Process | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194948: HOWTO: Create a Child Console Process from a CGI Process" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194948/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194948/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194948/","publisher":null,"image":null,"headline":"Q194948: HOWTO: Create a Child Console Process from a CGI Process","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194948-howto-create-a-child-console-process-from-a-cgi-process">Q194948: HOWTO: Create a Child Console Process from a CGI Process</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194948
+Product(s): Internet Information Server
+Version(s): WINNT:3.0,4.0
+Operating System(s): 
+Keyword(s): kbCGI kbInternet kbWebServer
+Last Modified: 06-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the C-runtime routine _popen() to create a child process from within
+a CGI process, there are several issues regarding the mapping of STDIN and
+STDOUT (also STDERR) handles. By default Internet Information Server (IIS) 3.0
+and 4.0 will not create a console when a CGI process is created. The STDIN and
+STDOUT of the CGI process and that of the child process (created from the CGI
+process) will not be mapped correctly.
+
+MORE INFORMATION
+================
+
+When you have code such as below:
+
+     /* Parent.c -- This is the CGI process created by IIS */ 
+
+     int main(int argc, char *argv[])
+     {
+        FILE  *pFile = _popen("c:\\inetput\\scripts\\child.exe", "rt");
+        char  cBuf[256];
+
+        printf("HTTP/1.0 200 Ok\r\nContent-Type: test/html\r\n\r\n");
+        printf("&lt;H1&gt;I'm the Parent...&lt;/H1&gt;");
+
+        while(!feof(pFile))
+        {
+           fgets(cBuf, 256, pFile);
+           printf("%s", cBuf);
+        }
+        _pclose (pFile);
+        return 0;
+     }
+
+     /* Child.c -- This is the child process created by Parent */ 
+
+     int main(int argc, char *argv[])
+     {
+        printf("&lt;H1&gt;Hello, I'm the child.&lt;/H1&gt;");
+        return 0;
+     }
+
+The browser will not receive the message from the child process. This is because
+at the time that _popen() is called, the parent process does not have a console.
+Therefore, the STDIN, STDOUT, and STDERR are invalid (or more precisely are
+pseudo standard handles provided to the parent process by IIS). Therefore, the
+FILE pointer is created with STDIN/STDOUT, which do not map the child process.
+
+There are two ways to work around this default behavior.
+
+- Force IIS to launch all CGI application with their own console. Under IIS 3.0
+  this is done through the CreateProcessWithNewConsole DWORD registry entry
+  under HKLM\CurrentControlSet\Services\W3SVC\Parameters to 1. Under IIS 4.0,
+  this is done by setting the MD_CREATE_PROC_NEW_CONSOLE entry in the metabase
+  with IIS Admin Base Objects or corresponding CreateCGIWithNewConsole property
+  with IIS Admin Objects to TRUE (see IIS 4.0 online documentation).
+
+- If altering the configuration of IIS is not an option, you can
+  programmatically guarantee that the parent process will have a console by
+  issuing the AllocConsole() call. This call will fail if the parent already
+  has a console. But if the console does not exist, it will allocate one and
+  attach the parent process to this console. NOTE: AllocConsole() call must be
+  issued before the _popen() call is made; Otherwise, the resulting allocated
+  console's standard I/O handles will not have been picked up by the _popen()
+  routine.
+
+REFERENCES
+==========
+
+IIS 3.0 Product Documentation
+
+IIS 4.0 On Line Documentation
+
+======================================================================
+Keywords          : kbCGI kbInternet kbWebServer 
+Technology        : kbiisSearch kbiis400 kbiis300
+Version           : WINNT:3.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

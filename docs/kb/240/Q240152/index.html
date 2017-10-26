@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240152: XADM: What Determines a Limited Store in Exchange Server 5.5 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240152: XADM: What Determines a Limited Store in Exchange Server 5.5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240152/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240152/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240152/","publisher":null,"image":null,"headline":"Q240152: XADM: What Determines a Limited Store in Exchange Server 5.5","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240152-xadm-what-determines-a-limited-store-in-exchange-server-55">Q240152: XADM: What Determines a Limited Store in Exchange Server 5.5</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240152
+Product(s): Microsoft Exchange
+Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2 exc55sp3
+Last Modified: 09-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Whether or not an Exchange Server 5.5 information store is unlimited is
+determined by a new non-editable directory attribute called Type, which is
+encoded.
+
+
+
+MORE INFORMATION
+================
+
+How to Determine Whether the Information Store Is Limited or Unlimited
+----------------------------------------------------------------------
+
+To distinguish between Exchange Server Standard Edition (limited information
+store) and Exchange Server Enterprise Edition (unlimited information store),
+check the Windows NT Server Event Viewer application log upon startup.
+
+The following event is logged in the application log when the information store
+starts on a computer running the Standard Edition:
+
+Event ID  1216&lt;BR/&gt;
+Source:   MSExchangeIS Private&lt;BR/&gt;
+Type:     Information&lt;BR/&gt;
+Category: General&lt;BR/&gt;
+Description: Information store with limited storage capacity enabled.
+
+The following event is logged in the application log when the information store
+starts on a computer running the Enterprise Edition:
+
+Event Id:  1217&lt;BR/&gt;
+Source:    MSExchangeIS&lt;BR/&gt;
+Type:      Information&lt;BR/&gt;
+Category:  General&lt;BR/&gt;
+Description: "Information store with unlimited capacity started"&lt;BR/&gt;
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q173889 XADM: Determining if Exchange Server Enterprise or Standard Version
+  Is Installed
+
+NOTE: When the 16-gigabyte (GB) limit is reached on an Exchange Server 5.5
+Standard version computer, the user may receive the following Event ID:
+
+  Event ID:1112
+  Source: MSExchangeIS
+  Description:
+  The database has reached the maximum allowed size. Attempting to stop the
+  Microsoft Exchange Information Store.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q185457 XADM: Information Store Shuts Down; Database at Maximum Size
+
+How to Change the Type Attribute
+--------------------------------
+
+The Type attribute can only be changed by running Setup.exe from an Enterprise
+Edition CD (SrvRmax.exe if using Select CDs), and clicking Reinstall. This
+changes the Type attribute within the Dir.edb file, giving you an unlimited
+store.
+
+NOTE: You need to reapply the last Exchange Server service pack that had been
+applied to the server before the reinstallation, after the reinstallation is
+finished.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

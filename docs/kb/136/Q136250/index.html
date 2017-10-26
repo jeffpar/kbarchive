@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136250: HOWTO: Determine Visual Basic Trappable Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136250: HOWTO: Determine Visual Basic Trappable Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136250/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136250/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136250/","publisher":null,"image":null,"headline":"Q136250: HOWTO: Determine Visual Basic Trappable Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136250-howto-determine-visual-basic-trappable-errors">Q136250: HOWTO: Determine Visual Basic Trappable Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136250
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbref kbDocs kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how you can determine if an error you are receiving
+from a Visual Basic program is a Visual Basic trappable error or if it coming
+from another source.
+
+MORE INFORMATION
+================
+
+When you run Visual Basic, follow these steps to get more information on a
+specific error:
+
+1. Stop your program if it is currently running.
+
+2. Press the F8 key to go from design mode to break mode.
+
+3. Press CTRL+G to activate the debug window.
+
+4. Enter the following statement and wait for the error message to appear:
+
+  "Error &lt;error-number&gt;" (without the quotation marks)
+
+For example, type "Error 70" (without the quotation marks) and the following
+error message appears:
+
+  Run-time error '70':
+  Permission denied
+
+5. Press the F1 key to get information from online Help on that specific error.
+
+  For example, in Visual Basic 4.0, pressing F1 on "Error 70" (without the
+  quotation marks) displays the Permission denied (Error 70) page from Visual
+  Basic Help.
+
+  In Visual Basic 6.0, pressing F1 on "Error 70" (without the quotation marks)
+  displays the Permission denied (Error 70) page from the Visual Basic for
+  Applications Reference.
+
+If the error description is: Application-defined or object-defined error, then
+the error number does not correspond to an error defined by Visual Basic for
+Applications (VBA). Such errors may be defined by the host application (for
+example, Microsoft Excel or Visual Basic), but if you want to generate them from
+code, you must use the Raise method, and fill in all relevant arguments.
+
+
+REFERENCES
+==========
+
+The Visual Basic 6.0 Reference Documentation has a section on Trappable Errors.
+This section includes documentation on the core Visual Basic language errors,
+miscellaneous Visual Basic errors, OLE Container Control errors, RDO errors, and
+ActiveX Control errors.
+
+For additional information on trappable errors for Visual Basic 3.0, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q108340 HOWTO: Determine Visual Basic 3.0 Trappable Errors
+
+Additional query words: 70
+
+======================================================================
+Keywords          : kbref kbDocs kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

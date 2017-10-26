@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q84300: How to Use the STACKS= Setting in the CONFIG.SYS File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q84300: How to Use the STACKS= Setting in the CONFIG.SYS File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/084/Q84300/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/084/Q84300/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/084/Q84300/","publisher":null,"image":null,"headline":"Q84300: How to Use the STACKS= Setting in the CONFIG.SYS File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q84300-how-to-use-the-stacks-setting-in-the-configsys-file">Q84300: How to Use the STACKS= Setting in the CONFIG.SYS File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q84300
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Mysterious hangs or failures can occur when a hardware routine does not have
+enough storage space to perform its job. To avoid this problem, MS-DOS versions
+3.2 and later provide additional storage space for the interrupt-handling code
+whenever a hardware interrupt occurs. This is done by changing the current
+storage area (called a "stack," because it is a place to stack information
+temporarily) to a new storage area provided by MS-DOS.
+
+By default, nine of these stacks, each 128 bytes in size, are provided. The
+number and size of stacks can be increased using the CONFIG.SYS STACKS=n,m
+command, where n is the number of stacks and m is the size of each stack in
+bytes.
+
+Changing the current stack takes time. It was discovered that changing the stack
+can slow the system enough that some programs, particularly high-speed
+communications programs, will fail. To avoid this problem, MS-DOS versions 3.3
+and later allow disabling the stack swapping by specifying 0 stacks of 0 bytes
+in size (STACKS=0,0).
+
+Because the STACKS= command affects hardware- and configuration-dependent code,
+it can have unpredictable effects.
+
+Troubleshooting
+---------------
+
+- If a "stack overflow" or "exception error 12" (stack exception) error occurs,
+  increasing the number and size of stacks specified in CONFIG.SYS may solve
+  the problem (for example, STACKS=18,256).
+
+  Note: STACKS= only affects hardware interrupts. If the stack being overflowed
+  (trying to store too much information) is internal to an application, this
+  will probably not solve the problem.
+
+- If the command STACKS=0,0 is in the CONFIG.SYS file and any instability
+  occurs (including, but not limited to, printing problems and system hangs),
+  remove the STACKS= command temporarily and test.
+
+- If the command STACKS=n,m is in CONFIG.SYS and problems occur (including, but
+  not limited to, serial port problems), remove it temporarily and test. If
+  problems continue and the system is an AT class machine, set STACKS=0,0; if
+  the system is a PC, PC XT, or PC Convertible, set STACKS=9,128.
+
+MORE INFORMATION
+================
+
+Beginning in MS-DOS version 3.2, MS-DOS added code to swap the stack whenever an
+asynchronous hardware interrupt occurs, before passing control to the original
+interrupt handler. (Interrupt vectors 02H, 08-0EH, 70H, and 72-77H,
+corresponding to IRQs 0-15.) Before MS-DOS 3.2, interrupt handlers received
+control with the stack set to that of whatever program or device driver was
+executing when the interrupt occurred. Thus, if a program stack is nearly full
+and a hardware interrupt occurs, random and unpredictable behavior will result
+(typically a system hang).
+
+Beginning in MS-DOS 3.3, the STACKS=0,0 line was added. This setting disables
+MS-DOS stack switching (thus returning MS-DOS stack behavior to that of MS-DOS
+versions 3.1 and earlier). That is, interrupts are processed using whichever
+stack happens to be loaded at the time of the interrupt. Because MS-DOS doesn't
+manage any stacks, less memory is required when 0,0 is specified. In addition,
+less time is required to handle interrupts because no code to swap stacks is
+executed. A negative aspect is that the same behavior that motivated support for
+stack swapping can occur (that is, system hangs and other random behavior as the
+stack overflows).
+
+If stack switching is enabled, MS-DOS ensures nested interrupts do not get the
+same stack. Upon completion of the interrupt processing, the stack is released
+so that MS-DOS may use it for a future interrupt.
+
+Ranges for n and m in STACKS=n,m
+--------------------------------
+
+- MS-DOS 3.1 and earlier have no support for swapping of stacks
+
+- MS-DOS 3.2 and later support values in range N=8-64, M=32-512
+
+- MS-DOS 3.3 added support for 0,0, which is equivalent to behavior in 3.1 and
+  earlier.
+
+Default Values for STACKS
+-------------------------
+
+- MS-DOS versions earlier than 3.2 do not support STACKS; behavior is
+  equivalent to STACKS=0,0 on MS-DOS 3.3 and later.
+
+- MS-DOS 3.2 always defaults to STACKS=9,128.
+
+- MS-DOS 3.3 and later use special case codes that check for PC, PC XT, and PC
+  Convertible. If any of these is detected, STACKS defaults to 0,0. Otherwise,
+  STACKS defaults to 9,128.
+
+Troubleshooting Notes
+---------------------
+
+If a system is experiencing random hangs or strange behavior and STACKS=0,0 is in
+the CONFIG.SYS file, this should be considered a prime suspect and removed.
+Conversely, some hardware that requires extremely fast interrupt processing may
+require STACKS=0,0 to operate properly. If you are having trouble with a
+high-speed communications or real-time program, try setting STACKS=0,0. If you
+have a program that worked correctly with MS-DOS 3.1 or earlier and you cannot
+get it to work with MS-DOS 3.2 or later, set STACKS=0,0.
+
+Error Messages
+--------------
+
+If stack switching is enabled and MS-DOS runs out of free stacks, the following
+message will be displayed:
+
+  FATAL : Internal Stack Failure, System Halted.
+
+If the above message is displayed, try a higher number for n in STACKS=n,m. If
+you experience random hangs or other strange behavior, try increasing the m
+value in STACKS=n,m.
+
+Programming Notes
+-----------------
+
+If you are hooking interrupts with the MS-DOS get/set interrupt vector services,
+stack switching will not be done before your interrupt handler gets control. Any
+stack switching necessary must be done by your interrupt handler.
+
+Reference(s):
+
+"Microsoft MS-DOS Encyclopedia," page 805
+
+"Microsoft MS-DOS User's Guide and Reference," version 5.0 pages 250, 284, and
+570
+
+"Microsoft Systems Journal," July 1991; Vol. 6, No 4; pages 25-26
+
+"Microsoft MS-DOS Programmer's Reference," version 5.0, pages 109-110
+
+Additional query words: 3.0 3.00 3.0a 3.00a 3.1 3.10 3.2 3.20 3.21 3.22 3.3 3.30 3.3a 3.30a 4.0 4.00 4.0a 4.00a 5.00 5.00a 6.00 6.20 6.21 6.22 overview 9,256 explanation swap swapping switch switching tshoot printing printscreen
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

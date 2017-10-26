@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156573: WD97: How to Recover Text from Any File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156573: WD97: How to Recover Text from Any File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156573/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156573/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156573/","publisher":null,"image":null,"headline":"Q156573: WD97: How to Recover Text from Any File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156573-wd97-how-to-recover-text-from-any-file">Q156573: WD97: How to Recover Text from Any File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156573
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbtshoot kbualink97 word97kbfaq
+Last Modified: 07-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+This article explains what the Recover Text From Any File converter is and how to
+use it to recover damaged documents.
+
+MORE INFORMATION
+================
+
+What Is the Recover Text From Any File Converter?
+-------------------------------------------------
+
+The Recover Text From Any File converter allows you to extract the text from any
+file. The file does not have to be a Word file.
+
+What Will I Lose Using the Recover Text From Any File Converter?
+----------------------------------------------------------------
+
+Using the Recover Text From Any File converter does have its limitations.
+Document formatting will be lost, along with anything that is not of a text
+nature. Graphics, fields, drawing objects, and so on, will not be converted.
+However, headers, footers, footnotes, endnotes, and field text, will be retained
+as simple text.
+
+My Document Is Damaged: How Can I Recover the Information?
+----------------------------------------------------------
+
+Word 97 for Windows provides a converter for recovering the text from any file.
+
+NOTE: When you change the Files of type box to "Recover Text from any File" in
+the Open dialog box (on the File menu, click Open), Word will 'remember' this
+setting and will use it the next time you open a document. To avoid this
+problem, reset the Files of type box back to Word Document (*.doc) after you
+have completed recovering your document.
+
+To use the converter on a Word file:
+
+1. On the File menu, click Open, and select the document.
+
+2. In the Files Of Type box, select "Recover Text from Any File," and click
+  Open.
+
+NOTE: If Word is unable to open the file, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q156577 WD97: Why You Are Unable to Recover a Lost Document
+
+To use the converter on any non-Word file:
+
+1. On the Tools menu, click Options.
+
+2. Select the General tab.
+
+3. Select the "Confirm conversion at open" check box, and click OK.
+
+4. On the File menu, click Open.
+
+5. Select the File you want to recover, and click OK.
+
+  You will be presented with the Convert File dialog box.
+
+6. In the Convert File dialog box, select the Recover Text From Any File
+  converter, and click OK.
+
+Word will convert the damaged document and recover any text from the document.
+
+What Does the "...Attempt recovery now" Message Mean?
+-----------------------------------------------------
+
+When Word detects that there is a damaged document to be recovered, Word displays
+the following message:
+
+  Word encountered file corruption while opening &lt;filename&gt;. Part of this
+  document may be recoverable. Attempt recovery now?
+
+This message is displayed when an automatically recovered file is present but
+Word is unable to recover it. When you start Word, Word finds the document and
+asks if you want Word to try to recover it.
+
+If you click No, Word will not attempt to recover the document, and the document
+will be permanently lost.
+
+If you click Yes, Word will attempt to recover the document. If Word is
+successful in recovering the file, save the document as a normal Word document.
+
+"Recover Text from Any File" Doesn't Appear in the Convert File Dialog Box
+--------------------------------------------------------------------------
+
+The Recover Text From Any File converter is not installed. You will need to
+re-run Setup to install this converter.
+
+1. Run Word Setup (it should automatically start in maintenance mode). Click the
+  Add/Remove button.
+
+2. Select the Converters And Filters entry (do not clear the check box) and
+  click Change Option.
+
+3. Select the Text Converters entry (again do not clear the check box) and click
+  Change Option.
+
+4. Select the Recover Text Converter check box, and click OK.
+
+5. Click OK to exit the Converters And Filters dialog box.
+
+6. Click Continue to proceed with the installation of the Recover Text
+  converter.
+
+  The Setup program will prompt you for the required disks as needed.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q156577 WD97: Why You Are Unable to Recover a Lost Document
+
+  Q87856 WDW97: Troubleshooting Damaged Documents in Word for Windows
+
+Additional query words: corrupt crashed frozen nothing stop stopped tshoot locked hung hangs garbage trashed 8.0 8.00 howto
+
+======================================================================
+Keywords          : kbtshoot kbualink97 word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188541: INFO: Visual Basic Requirements for Using Exported DLLs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188541: INFO: Visual Basic Requirements for Using Exported DLLs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188541/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188541/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188541/","publisher":null,"image":null,"headline":"Q188541: INFO: Visual Basic Requirements for Using Exported DLLs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188541-info-visual-basic-requirements-for-using-exported-dlls">Q188541: INFO: Visual Basic Requirements for Using Exported DLLs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188541
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 08-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Certain requirements must be met for Visual Basic to successfully use a function
+exported from a DLL. These requirements include rules for declaring and calling
+exported functions, as well as rules for creating exported functions in a DLL.
+This article summarizes these requirements.
+
+MORE INFORMATION
+================
+
+An important feature of a Visual Basic program is its ability to use
+dynamically-linked libraries (DLLs) of functions and resources. Because these
+exported functions are frequently written in other programming languages, care
+must be taken that both syntax and data types are in the form needed by Visual
+Basic.
+
+Visual Basic Syntax Requirements
+--------------------------------
+
+To declare a DLL procedure, add a Declare statement to the Declarations section
+of the code window. Visual Basic assumes that exported DLL functions have the
+same attributes as a Windows API function. The correct syntax for a Declare
+statement is shown below, followed by a list of Visual Basic syntax rules.
+
+     Declare Function publicname Lib "libname" [Alias "alias"] _
+        [([[ByVal] var [As type] [,[ByVal] var [As type]]...])] As Type
+
+- Public or private: DLL procedures declared in standard modules (.bas) are
+  public by default and can be called from anywhere in your application. DLL
+  procedures declared in any other type of module are private to that module,
+  and must be identified by preceding the declaration with the Private keyword.
+
+- Sub or function: DLL procedures may be defined as either a Function or Sub.
+  If a procedure does not return a value, write the declare as a Sub. If the
+  procedure returns a value, write the declare as a Function.
+
+- Using an alias: It is sometimes necessary to define a substitute name for an
+  exported procedure in a Declare statement. Examples of where this can occur
+  are:
+
+   - Where an exported procedure uses strings. This is usually due to the DLL
+     containing both ANSI and UNICODE versions of the procedures.
+
+   - Where an exported function has a name that is not a valid Visual Basic
+     identifier, such as a name that matches a Visual Basic keyword or that
+     begins with an underscore.
+
+- Case sensitivity: Procedure names are case-sensitive in 32-bit versions of
+  Visual Basic. In 16-bit versions, procedure names are not case-sensitive.
+
+- Passing arguments by value or by reference: By default, Visual Basic passes
+  all arguments by reference. Many DLL procedures expect an argument to be
+  passed by value. To pass an argument by value, place the ByVal keyword in
+  front of the argument declaration in the Declare statement.
+
+- Empty argument list: Empty parentheses indicate that the Sub or Function
+  procedure has no arguments and that Visual Basic should ensure that none are
+  passed.
+
+For additional syntax information, see the following topics in Visual Basic
+Help:
+
+- Declaring a DLL Procedure
+
+- Declare Statement
+
+- Call Statement
+
+- Function Statement
+
+Visual Basic Data-Type Requirements
+-----------------------------------
+
+Data type definitions vary between programming languages, and some parameters
+used in other languages are not supported in Visual Basic. To ensure that your
+exported procedures behave in the way you expect, you may need to append Visual
+Basic keywords to procedure parameters or convert parameters to those data types
+supported by Visual Basic.
+
+Common Visual Basic keywords are listed below:
+
+- Passing a parameter by value or by reference: As discussed above, Visual
+  Basic passes all arguments by reference. To pass a parameter by value, place
+  the ByVal keyword in front of the argument declaration.
+
+- Passing a function pointer as a parameter: To pass the address of a
+  user-defined procedure as an argument to an exported procedure, precede the
+  name of the user-defined procedure with the AddressOf keyword. For important
+  additional information on this, see the "Passing Function Pointers to DLL
+  Procedures and Type Libraries" Visual Basic Help topic.
+
+- Modifying data types: Use an As clause following the argument list to specify
+  the return type of the procedure. Use an As clause within the argument list
+  to specify the data type of any of the arguments passed to the procedure. In
+  addition to specifying any of the standard data types, you can specify As Any
+  to inhibit type checking and allow any data type to be passed to the
+  procedure.
+
+Common conversions to Visual Basic data types are listed below:
+
+- 8- to 16-bit numeric parameters: Pass 8- to 16-bit numeric parameters (int,
+  short, unsigned int, unsigned short, BOOL, and WORD) as Integer.
+
+- 32-bit numeric parameters: Pass 32-bit numeric parameters (long, unsigned
+  long, and DWORD) as LONG.
+
+- Object handles: All handles are unique 32-bit integer values associated with
+  a Window and are passed by value, so pass these parameters as Long.
+
+- Strings: Strings include the LPSTR and LPBYTE data types (pointer to
+  characters or pointer to unsigned characters). Pass these parameters as
+  (ByVal param As String) because Visual Basic passes a pointer to the
+  beginning of the string.
+
+- Pointers to numeric values: Pass pointers to numeric values by not using the
+  ByVal keyword.
+
+- Structures: If the Visual Basic user-defined type matches the structure
+  expected by the DLL, the structure can be passed by reference. NOTE:
+  Structures cannot be passed by value.
+
+- Pointers to arrays: Pass the first element of the array by reference.
+
+- Null pointers: If a DLL expects a Null pointer, pass it as (ByVal paramname
+  As Any) or (ByVal paramname as Long). You can use 0&amp; as the value of
+  paramname when calling the DLL.
+
+Visual Basic Requirements for Creating Exported DLL Functions
+-------------------------------------------------------------
+
+This section provides some information for creating an exported DLL that meets
+the Visual Basic requirements using Microsoft Visual C++. Other C++ compilers
+may or may not support the keywords used in this section.
+
+- Maintain the Stack: Visual Basic requires that the function receiving the
+  arguments also maintain the stack. The Visual C++ keyword that can perform
+  the correct stack maintenance is _stdcall. The _stdcall keyword decorates the
+  function name with a preceding underscore and appends "@n" where n is the
+  number of bytes required to contain the function's arguments and the return
+  value. For example, if you create a function called GetWindowSize and use the
+  _stdcall keyword to provide stack maintenance, the function is defined as
+  follows:
+
+        int GetWindowSize (int nIndex)
+
+  The following is the exported name result:
+
+        _GetWindowSize@4
+
+  Note the preceding underscore that is added by the _stdcall keyword.
+
+- Export the file: To export the file, you must use a .def file with an EXPORTS
+  section. The _declspec(dllexport) keyword exports the function but maintains
+  the name decoration.
+
+  A .def file also exports the function names while removing the name
+  decoration. The following example shows how the EXPORTS section of a .def
+  file is implemented for a function called DisplayMessage:
+
+     EXPORTS
+        DisplayMessage           @1
+
+REFERENCES
+==========
+
+See Vb5dll.doc, "Notes for Developing DLLs for Use with Microsoft Visual Basic,"
+included with Visual Basic.
+
+Additional query words: kbDSupport kbdss kbVBp600 kbMSMQ kbAPI kbvbp500
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

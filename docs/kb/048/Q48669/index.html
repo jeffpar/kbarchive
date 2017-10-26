@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q48669: QB 4.50 .EXE Program Might Print DYNAMIC Arrays Incorrectly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q48669: QB 4.50 .EXE Program Might Print DYNAMIC Arrays Incorrectly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/048/Q48669/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/048/Q48669/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/048/Q48669/","publisher":null,"image":null,"headline":"Q48669: QB 4.50 .EXE Program Might Print DYNAMIC Arrays Incorrectly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q48669-qb-450-exe-program-might-print-dynamic-arrays-incorrectly">Q48669: QB 4.50 .EXE Program Might Print DYNAMIC Arrays Incorrectly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q48669
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890809-44 buglist4.50 | mspl13_basic
+Last Modified: 17-JAN-1991
+
+DYNAMIC arrays might not PRINT correctly when using the PRINT TAB(nn),
+SPC(nn), or SPACE$(nn) statement in .EXE programs compiled with BC.EXE
+in Microsoft QuickBASIC version 4.50. The problem does not occur in
+the QB.EXE editor environment.
+
+This problem can occur when PRINTing any DYNAMIC array, and compiling
+the program without the /D (DEBUG), /X (RESUME), or /AH (HUGE ARRAYS)
+switch. STATIC arrays print correctly regardless of the compiler
+switches used.
+
+Microsoft has confirmed this to be a problem in version 4.50. This
+problem is corrected in Microsoft BASIC Professional Development
+System (PDS) version 7.00 (fixlist7.00).
+
+This problem does not occur in Microsoft QuickBASIC version 4.00 or
+4.00b or in Microsoft BASIC Compiler version 6.00 or 6.00b.
+
+To work around the problem in 4.50, compile with one or all of the
+following compiler switches: /d /x /ah. For example:
+
+   BC filename /d /x /ah;
+
+The problem can also be corrected by using STATIC arrays rather than
+DYNAMIC arrays.
+
+Code Example
+------------
+
+' $STATIC
+
+DIM SVarStr$(3)
+DIM SFixStr(3) AS STRING * 4
+DIM SInt%(3)
+DIM SSgl!(3)
+
+' $DYNAMIC
+
+DIM DVarStr$(3)
+DIM DFixStr(3) AS STRING * 4
+DIM DInt%(3)
+DIM DSgl!(3)
+
+CLS
+
+FOR A% = 1 TO 3
+    SVarStr$(A%) = STR$(A%)
+    DVarStr$(A%) = STR$(A%)
+
+    SFixStr(A%) = STR$(A%)
+    DFixStr(A%) = STR$(A%)
+
+    SInt%(A%) = A%
+    DInt%(A%) = A%
+
+    SSgl!(A%) = A%
+    DSgl!(A%) = A%
+NEXT A%
+
+PRINT "STATIC AND DYNAMIC ARRAYS USING TAB(nn)"
+PRINT
+PRINT TAB(5); SVarStr$(1); TAB(12); SVarStr$(2); TAB(18); SVarStr$(3)
+PRINT TAB(5); DVarStr$(1); TAB(12); DVarStr$(2); TAB(18); DVarStr$(3)
+PRINT
+PRINT TAB(5); SFixStr(1); TAB(12); SFixStr(2); TAB(18); SFixStr(3)
+PRINT TAB(5); DFixStr(1); TAB(12); DFixStr(2); TAB(18); DFixStr(3)
+PRINT
+PRINT TAB(5); SInt%(1); TAB(12); SInt%(2); TAB(18); SInt%(3)
+PRINT TAB(5); DInt%(1); TAB(12); DInt%(2); TAB(18); SInt%(3)
+PRINT
+PRINT TAB(5); SSgl!(1); TAB(12); SSgl!(2); TAB(18); SSgl!(3)
+PRINT TAB(5); DSgl!(1); TAB(12); DSgl!(2); TAB(18); SSgl!(3)
+PRINT
+PRINT "STATIC AND DYNAMIC ARRAYS USING SPACE(nn)"
+PRINT
+PRINT SPACE$(5); SVarStr$(1); SPACE$(5); SVarStr$(2);
+PRINT SPACE$(5); SVarStr$(3)
+PRINT SPACE$(5); DVarStr$(1); SPACE$(5); DVarStr$(2);
+PRINT SPACE$(5); DVarStr$(3)
+PRINT
+PRINT SPACE$(5); SFixStr(1); SPACE$(5); SFixStr(2);
+PRINT SPACE$(5); SFixStr(3)
+PRINT SPACE$(5); DFixStr(1); SPACE$(5); DFixStr(2);
+PRINT SPACE$(5); DFixStr(3)
+PRINT
+PRINT SPACE$(5); SInt%(1); SPACE$(5); SInt%(2); SPACE$(5); SInt%(3)
+PRINT SPACE$(5); DInt%(1); SPACE$(5); DInt%(2); SPACE$(5); DInt%(3)
+PRINT
+PRINT SPACE$(5); SSgl!(1); SPACE$(5); SSgl!(2); SPACE$(5); SSgl!(3)
+PRINT SPACE$(5); DSgl!(1); SPACE$(5); DSgl!(2); SPACE$(5); DSgl!(3)
+PRINT
+PRINT "STATIC AND DYNAMIC ARRAYS USING SPC(nn)"
+PRINT
+PRINT SPC(5); SVarStr$(1); SPC(5); SVarStr$(2); SPC(5); SVarStr$(3)
+PRINT SPC(5); DVarStr$(1); SPC(5); DVarStr$(2); SPC(5); DVarStr$(3)
+PRINT
+PRINT SPC(5); SFixStr(1); SPC(5); SFixStr(2); SPC(5); SFixStr(3)
+PRINT SPC(5); DFixStr(1); SPC(5); DFixStr(2); SPC(5); DFixStr(3)
+PRINT
+PRINT SPC(5); SInt%(1); SPC(5); SInt%(2); SPC(5); SInt%(3)
+PRINT SPC(5); DInt%(1); SPC(5); DInt%(2); SPC(5); DInt%(3)
+PRINT
+PRINT SPC(5); SSgl!(1); SPC(5); SSgl!(2); SPC(5); SSgl!(3)
+PRINT SPC(5); DSgl!(1); SPC(5); DSgl!(2); SPC(5); DSgl!(3)
+PRINT
+END
+
+The values in the DYNAMIC arrays in the above program will PRINT
+unpredictably on all machines -- the values can vary depending on the
+hardware configuration.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

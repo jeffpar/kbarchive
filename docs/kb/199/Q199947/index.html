@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199947: TCP/IP: Windows NT 4.0 Does Not Support TCP Scale Option | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199947: TCP/IP: Windows NT 4.0 Does Not Support TCP Scale Option" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199947/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199947/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199947/","publisher":null,"image":null,"headline":"Q199947: TCP/IP: Windows NT 4.0 Does Not Support TCP Scale Option","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199947-tcpip-windows-nt-40-does-not-support-tcp-scale-option">Q199947: TCP/IP: Windows NT 4.0 Does Not Support TCP Scale Option</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199947
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 TCP/IP does not support the TCP Window Scale Option specified in
+RFC 1323 for TCPWindowSize. Therefore, the maximum TCP receive window size,
+TCPWindowSize, of Windows NT 4.0 TCP/IP is 64 KB (65,535 bytes) because the
+field in the TCP header is 16 bits in length.
+
+MORE INFORMATION
+================
+
+The TCP receive window size is the amount of receive data (in bytes) that can be
+buffered at one time on a connection. The sending host can send only that amount
+of data before waiting for an acknowledgment (ACK) and window update from the
+receiving host.
+
+The TcpWindowSize registry parameter determines the maximum TCP receive window
+size offered by the computer. The receive window specifies the number of bytes a
+sender can transmit without receiving an acknowledgment (an ACK); in other
+words, it indicates the amount of receive data (in bytes) that can be buffered
+at one time on a connection. The sending host can send only the amount of data
+indicated by the receive window before waiting for an acknowledgment and window
+update from the receiving host.
+
+In general, larger receive windows improve performance over high delay, high
+bandwidth networks. For greatest efficiency, the receive window should be an
+even multiple of the TCP maximum segment size (MSS).
+
+However, if your clients experience connectivity problems because they time out
+before data transmission reaches them, you can change the value of the
+TcpWindowSize parameter. Reducing the value of TcpWindowSize causes an
+acknowledgment for data received to be sent to the sender sooner. Earlier
+acknowledgment lowers the possibility that the sender will time out while
+waiting for an acknowledgment. However, it also increases the amount of network
+traffic and causes slower throughput.
+
+The TCP/IP stack is designed to self-tune in most environments. Instead of using
+a hard-coded default receive window size, TCP adjusts the window size to even
+increments of the MSS negotiated during connection setup. Matching the receive
+window to even increments of the MSS increases the percentage of full-sized TCP
+segments used during bulk data transmission. By default, TcpWindowSize is set to
+8 KB, rounded up to the nearest MSS increment for the connection. If that
+increment is not at least four times the MSS, it is adjusted to four times the
+MSS, with a maximum size of 64 KB. The maximum window size is 64 KB because the
+field in the TCP header is 16 bits in length.
+
+For Ethernet, the receive window is usually set to 8,760 bytes (that is, 8,192
+rounded up to six 1,460-byte segments). For 16/4 Token Ring or FDDI, it is set
+to around 16 KB. These are default values, and it is not generally advisable to
+alter them. However, if necessary, you can either change TcpWindowSize to
+globally change the setting for the computer, or use the setsockopt Windows
+Sockets call to change the setting on a per-socket basis.
+
+Request for Comments (RFC) 1323 describes a TCP window scale option that can be
+used to obtain larger receive windows; however, Windows NT-based TCP/IP does not
+yet implement that option.
+
+Additional query words: NT TCPIP TCPWindowSize RFC Scale
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

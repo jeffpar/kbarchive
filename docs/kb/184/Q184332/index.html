@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184332: FIX: UserControl in VB4 or VC++ 5.0 Container Causes IPF on Exit | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184332: FIX: UserControl in VB4 or VC++ 5.0 Container Causes IPF on Exit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184332/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184332/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184332/","publisher":null,"image":null,"headline":"Q184332: FIX: UserControl in VB4 or VC++ 5.0 Container Causes IPF on Exit","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184332-fix-usercontrol-in-vb4-or-vc-50-container-causes-ipf-on-exit">Q184332: FIX: UserControl in VB4 or VC++ 5.0 Container Causes IPF on Exit</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184332
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbCRT kbCtrlCreate kbVBp kbVBp400bug kbVBp500bug kbVC500bug kbGrpDSVB
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application compiled in Visual Basic 4.0 or Visual C++ 5.0 generates an
+"Invalid Page Fault in MSVBVM50.DLL" error when the application is closed.
+
+CAUSE
+=====
+
+This error can occur in the following situation:
+
+- The Visual Basic 4.0 or Visual C++ 5.0 application contains a UserControl
+  created in Visual Basic 5.0.
+
+  -and-
+
+- The UserControl contains a Class that creates a reference to the UserControl.
+
+  -and-
+
+- You are running Windows 95 or Windows 98.
+
+RESOLUTION
+==========
+
+To work around this problem, use the ObjPtr function in combination with the
+CopyMemory API call to create the UserControl reference in the Class Module. The
+steps to complete the workaround are listed in the MORE INFORMATION section of
+this article.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+This problem was corrected in Windows 2000.
+
+MORE INFORMATION
+================
+
+WARNING: One or more of the following functions are discussed in this article;
+VarPtr, VarPtrArray, VarPtrStringArray, StrPtr, ObjPtr. These functions are not
+supported by Microsoft Technical Support. They are not documented in the Visual
+Basic documentation and are provided in this Knowledge Base article "as is."
+Microsoft does not guarantee that they will be available in future releases of
+Visual Basic.
+
+Steps to Reproduce Behavior
+
+1. Start a new ActiveX Control project in Visual Basic 5.0.
+
+2. Name the project "passcontrol."
+
+3. Add a Class Module to the project.
+
+4. Add the following code to Class1:
+
+        Private mycontrol As passcontrol.UserControl1
+
+        Friend Sub passSelf(obj As passcontrol.UserControl1)
+          Set mycontrol = obj
+          mycontrol.SayHello
+
+        End Sub
+
+        Private Sub Class_Terminate()
+          Set mycontrol = Nothing
+        End Sub
+
+5. Add the following code to UserControl1:
+
+        Private myclass As New passcontrol.Class1
+
+        Private Sub UserControl_Initialize()
+          myclass.passSelf Me
+        End Sub
+
+        Friend Sub SayHello()
+          MsgBox "Hello!"
+        End Sub
+
+6. On the File menu, click "Make Passcontrol.ocx" to build the control.
+
+7. Create a new project in Visual Basic 4.0 (32-bit) or Visual C++ 5.0.
+
+8. Add Passcontrol.ocx to your project's form.
+
+9. Compile (or build) the Visual Basic or Visual C++ application.
+
+10. Run the application on a computer running Windows 95, Windows 98, or Windows
+  Me.
+
+11. Exit the application. You should receive the error "&lt;application&gt;
+  caused an Invalid Page Fault in Module MSVBVM50.DLL."
+
+WARNING: If you reproduce this problem, it is advisable to restart the computer
+you are testing on after you receive the error. Passcontrol.ocx is locked by the
+system, and any attempt to manipulate this file causes your computer to freeze.
+
+Workaround
+
+In the Class Module, substitute the following code:
+
+     Private Declare Sub CopyMemory _
+           Lib "kernel32" Alias "RtlMoveMemory" _
+              (pDest As Any, _
+              pSrc As Any, _
+              ByVal ByteLen As Long)
+
+     Private mycontrol As passcontrol.UserControl1
+     Friend Sub passSelf(ByVal ptrobj As Long)
+        CopyMemory mycontrol, ptrobj, 4
+        mycontrol.SayHello
+     End Sub
+
+     Private Sub Class_Terminate()
+        Set mycontrol = Nothing
+     End Sub
+
+In the UserControl, substitute the following code:
+
+     Private myclass As New passcontrol.Class1
+     Private Sub UserControl_Initialize()
+        myclass.passSelf ObjPtr(Me)
+     End Sub
+
+     Friend Sub SayHello()
+        MsgBox "Hello!"
+     End Sub
+
+Additional query words: VC++ C++ user control activex ocx
+
+======================================================================
+Keywords          : kbCRT kbCtrlCreate kbVBp kbVBp400bug kbVBp500bug kbVC500bug kbGrpDSVB 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500 kbVB400Search kbVB400 kbVC500 kbVC32bitSearch kbVC500Search
+Version           : :4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

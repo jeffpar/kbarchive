@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179696: PRB: Focus and Tab Issues with ATL Subclassed Edit Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179696: PRB: Focus and Tab Issues with ATL Subclassed Edit Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179696/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179696/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179696/","publisher":null,"image":null,"headline":"Q179696: PRB: Focus and Tab Issues with ATL Subclassed Edit Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179696-prb-focus-and-tab-issues-with-atl-subclassed-edit-control">Q179696: PRB: Focus and Tab Issues with ATL Subclassed Edit Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179696
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,5.0
+Operating System(s): 
+Keyword(s): kbActiveX kbATL200 kbATL210 kbCOMt kbCtrlCreate kbEditCtrl kbKeyAccel kbVC500 kbVC600 M
+Last Modified: 17-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL), versions 2.0, 2.1, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the ATL Wizards to create an ActiveX control that subclasses the Edit
+common control, you may see one or both of the following problems depending on
+where you use the control:
+
+- You cannot use the TAB key to set focus to the ActiveX Edit control. You must
+  use the mouse to set focus and activate the ActiveX Edit control.
+
+- Once the ActiveX Edit control has the focus, you will hear a beep if you try
+  to use the TAB key to change the focus away from it.
+
+CAUSE
+=====
+
+When an ATL-based ActiveX control subclasses a Windows common control, it
+creates a contained window object to subclass the control. When you use the TAB
+key to move around an application, the ActiveX control window gets the focus but
+never shifts the focus to the Edit window within the ActiveX control. As a
+result, you must click the Edit control to activate it.
+
+The second issue results from the way an ATL-based control and its ActiveX
+control container handle messages. Because of the way some control containers
+handle messages, they do not get the opportunity to process the TAB keystroke,
+even if the control itself does not process it.
+
+RESOLUTION
+==========
+
+To activate the ATL-based ActiveX Edit control with the TAB key, you can
+override the OnSetFocus method and set the focus to the contained Edit window
+before returning.
+
+To use the TAB key to shift the focus away from the ATL-based control, you can
+override the TranslateAccelerator method. If the message is WM_KEYDOWN and the
+key is the TAB key, give the IOleControlSite TranslateAccelerator a chance to
+process the message first.
+
+STATUS
+======
+
+This problem was corrected in Visual C++ version 6.0 for Windows.
+
+MORE INFORMATION
+================
+
+To work around these issues, add the following code to your ATL-based control
+class:
+
+Sample Code
+-----------
+
+  typedef enum tagKEYMODIFIERS
+    {
+       KEYMOD_NONE    = 0X00000000,
+       KEYMOD_SHIFT   = 0x00000001,
+       KEYMOD_CONTROL = 0x00000002,
+       KEYMOD_ALT     = 0x00000004
+    } KEYMODIFIERS;
+
+   class ATL_NO_VTABLE Csc_ctrl2 :
+       ...
+    {
+       ...
+
+    BEGIN_MSG_MAP(CAtlEdit)
+  MESSAGE_HANDLER(WM_PAINT, OnPaint)
+  MESSAGE_HANDLER(WM_CREATE, OnCreate)
+  MESSAGE_HANDLER(WM_CTLCOLOREDIT, OnCtlColorEdit)
+  MESSAGE_HANDLER(WM_SETFOCUS, OnSetFocus)
+  MESSAGE_HANDLER(WM_KILLFOCUS, OnKillFocus)
+  MESSAGE_HANDLER(WM_MOUSEACTIVATE, OnMouseActivate)
+    ALT_MSG_MAP(1)
+  MESSAGE_HANDLER(WM_SETFOCUS, OnChildSetFocus)
+  MESSAGE_HANDLER(WM_KILLFOCUS, OnChildKillFocus)
+    END_MSG_MAP()
+
+    ...
+
+    STDMETHOD(TranslateAccelerator)(LPMSG lpmsg)
+       {
+       CComQIPtr&lt;IOleControlSite,&amp;IID_IOleControlSite&gt;
+             spCtrlSite(m_spClientSite);
+       if (spCtrlSite)
+       {
+
+  if ((lpmsg-&gt;message == WM_KEYDOWN) &amp;&amp; (
+  (LOWORD(lpmsg-&gt;wParam) == VK_RETURN) ||
+              (LOWORD(lpmsg-&gt;wParam) == VK_TAB) ))
+          {
+             DWORD keymods = 0;
+             keymods += (GetKeyState(VK_SHIFT) &lt; 0) ? KEYMOD_SHIFT
+                                                    : KEYMOD_NONE;
+             keymods +=
+                (GetKeyState(VK_CONTROL) &lt; 0) ? KEYMOD_CONTROL
+                                              : KEYMOD_NONE;
+             keymods += (GetKeyState(VK_MENU) &lt; 0) ? KEYMOD_ALT
+                                                   : KEYMOD_NONE;
+
+             return spCtrlSite-&gt;TranslateAccelerator(lpmsg,keymods);
+          }
+       }
+
+       return S_FALSE;
+     }
+
+       LRESULT OnSetFocus(UINT   /* nMsg */,
+                          WPARAM /* wParam */,
+                          LPARAM /* lParam */,
+                          BOOL&amp; bHandled /* bHandled */)
+       {
+       ::SetFocus(m_EditCtrl.m_hWnd);
+          bHandled = TRUE;
+          return 0;
+       }
+
+       LRESULT OnChildSetFocus(UINT   /* nMsg */,
+                          WPARAM /* wParam */,
+                          LPARAM /* lParam */,
+                          BOOL&amp;  /* bHandled */)
+       {
+          CComQIPtr &lt;IOleControlSite, &amp;IID_IOleControlSite&gt;
+             spSite(m_spClientSite);
+          if (m_bInPlaceActive &amp;&amp; spSite)
+             spSite-&gt;OnFocus(TRUE);
+
+          return 0;
+       }
+
+       LRESULT OnKillFocus(UINT   /* nMsg */,
+                          WPARAM /* wParam */,
+                          LPARAM /* lParam */,
+                          BOOL&amp;  /* bHandled */)
+       {
+          return 0;
+       }
+
+       LRESULT OnChildKillFocus(UINT   /* nMsg */,
+                          WPARAM /* wParam */,
+                          LPARAM /* lParam */,
+                          BOOL&amp;  /* bHandled */)
+       {
+
+          CComQIPtr &lt;IOleControlSite, &amp;IID_IOleControlSite&gt;
+             spSite(m_spClientSite);
+   if (m_bInPlaceActive &amp;&amp; spSite)
+     spSite-&gt;OnFocus(FALSE);
+  return 0;
+       }
+
+       LRESULT OnMouseActivate(UINT   /* nMsg */,
+                          WPARAM /* wParam */,
+                          LPARAM /* lParam */,
+                          BOOL&amp;  /* bHandled */)
+       {
+  InPlaceActivate(OLEIVERB_UIACTIVATE);
+          return 0;
+       }
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the ATL Wizards to create an ActiveX control project that subclasses an
+  Edit control.
+
+2. Build the control and place it in different containers with several other
+  controls.
+
+3. Use the TAB key to move between the controls.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Shawn
+William Karr, Microsoft Corporation
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Shawn William Karr, Microsoft Corporation
+
+
+Additional query words: Visual Studio C++ Basic subedit
+
+======================================================================
+Keywords          : kbActiveX kbATL200 kbATL210 kbCOMt kbCtrlCreate kbEditCtrl kbKeyAccel kbVC500 kbVC600 MSGRAPH kbGrpDSMFCATL kbAcceleratorKey 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :2.0,2.1,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104570: Reading and Writing Icons from ExtractIcon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104570: Reading and Writing Icons from ExtractIcon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104570/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104570/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104570/","publisher":null,"image":null,"headline":"Q104570: Reading and Writing Icons from ExtractIcon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104570-reading-and-writing-icons-from-extracticon">Q104570: Reading and Writing Icons from ExtractIcon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104570
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is specifically about device dependent icons. The ExtractIcon()
+function does not save the contents of the icon to a file. The programmer needs
+to implement this in his or her application. Below are code samples that allow
+you to read and write the data to a file so that DrawIcon() can be used.
+
+MORE INFORMATION
+================
+
+The following is a summary of the steps needed to save the hIcon to a file:
+
+1. Get the desired handle to the icon by using ExtractIcon().
+
+2. Find the size of the global memory by using GlobalSize().
+
+3. Lock the handle of the icon using GlobalLock().
+
+4. Open a new file by using OpenFile().
+
+5. Write the contents out to the file by using _lwrite().
+
+6. Close the file.
+
+  // -----------------------------------------------
+  //   Parameters: hIcon - passed in
+  //   Returns:    TRUE on success, FALSE on failure
+  // -----------------------------------------------
+  int NEAR _pascal SaveMyIcon( HICON hIcon)
+  {
+    int       fh, i, iResult;
+    UINT      uiSize;
+    DWORD     dwSize;
+    OFSTRUCT  of;
+
+      if (!hIcon)
+        return FALSE;
+
+      dwSize  = GlobalSize(hIcon);
+      lpGMem  = GlobalLock(hIcon);
+      fh = OpenFile ("myicon.bin", &amp;of, OF_WRITE | OF_CREATE);
+
+      if (fh == -1)  // If NOT opened successfully.
+      {
+       MessageBox(NULL, "Unable to create file", NULL, MB_OK );
+       return FALSE;
+      }
+
+      uiSize = _lwrite(fh, (LPSTR)lpGMem, (UINT)dwSize);
+      _lclose(fh);
+
+      if (uiSize == -1 || uiSize &lt; (UINT)dwSize)
+      {
+         MessageBox(NULL, "Unable to read file", NULL, MB_OK );
+         return FALSE;
+      }
+      else // Everything worked, return hGMem.
+      {
+        return (HICON)hGMem;
+      }
+  }
+
+The following is a summary of the steps needed to read the hIcon from a file:
+
+1. Open the file with OpenFile.
+
+2. Get the size of the file with _fstat.
+
+3. Make a chunk of memory, hMem, for the file by using GlobalAlloc.
+
+4. Lock the memory by using GlobalLock.
+
+5. Read the file into memory by using _lread.
+
+6. Close the file by using _lclose.
+
+7. Unlock the memory by using GlobalUnlock.
+
+8. Pass the hMem to DrawIcon.
+
+  // --------------------------------------
+  // Read in the binary icon data from disk
+  // --------------------------------------
+  HICON NEAR _pascal LoadMyIcon()
+  {
+    int       iResult, fh;
+    UINT      nBytesRead;
+    struct    _stat   buf;
+    OFSTRUCT  ofFileInfo;
+
+    nBytesRead = 0;
+    if ( OpenFile((LPSTR)"myicon.bin",(LPOFSTRUCT)&amp;ofFileInfo,OF_EXIST) != -1
+  )
+    {
+      // Open the file. Its existence has already been checked.
+      fh = _lopen("myicon.bin", OF_READ);
+      if (fh == -1)  // if NOT opened successfully
+        return FALSE;
+
+      // File the file structure to get the file size.
+      iResult = _fstat(fh, &amp;buf);
+      if ( !iResult)
+      {
+        hGMem = GlobalAlloc(GHND, (DWORD)buf.st_size);
+        if (0==hGMem)
+        {
+          _lclose(fh);
+          return(FALSE);
+        }
+
+        // Lock the memory.
+        if (!(lpGMem = GlobalLock(hGMem)))
+        {
+          GlobalFree(hGMem);
+          _lclose(fh);
+          return(FALSE);
+        }
+
+        // Seek to the beginning of the file.
+        _llseek(fh, 0, 0);
+        nBytesRead = _lread(fh, (LPSTR)lpGMem, buf.st_size );
+      }
+      _lclose(fh);
+
+      if (nBytesRead == -1 || nBytesRead &lt; buf.st_size)
+      {
+        MessageBox(NULL, "Unable to read file", NULL, MB_OK );
+        return FALSE;
+      }
+      else // Everything worked, return hGMem.
+      {
+        return (HICON)hGMem;
+      }
+    }
+    else
+    {
+      MessageBox( NULL, "File not found", NULL, MB_OK );
+      return FALSE;
+    }
+  }
+
+WARNING: This will work correctly until the user changes his or her
+display-driver type to a different resolution, or from mono to color, or from
+color to mono.
+
+Additional query words: no32bit 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

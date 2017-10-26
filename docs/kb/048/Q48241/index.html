@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q48241: Relationship Between Map File and Physical Memory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q48241: Relationship Between Map File and Physical Memory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/048/Q48241/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/048/Q48241/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/048/Q48241/","publisher":null,"image":null,"headline":"Q48241: Relationship Between Map File and Physical Memory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q48241-relationship-between-map-file-and-physical-memory">Q48241: Relationship Between Map File and Physical Memory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q48241
+Product(s): Microsoft Programming Utilities
+Version(s): 3.x,4.x,5.x
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 23-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft LINK for MS-DOS, versions 3.x, 4.x, 5.x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In situations where memory is very short or where CodeView interacts with your
+program, it is sometimes necessary to use the DEBUG.COM program supplied with
+DOS.
+
+Using DEBUG is more difficult than using SYMDEB or CodeView because DEBUG has no
+symbolic features. You must use the map produced by the /M option when you link
+with a standard DOS overlay linker (i.e., not a segmented executable linker) to
+locate specific parts of your program.
+
+However, since DOS relocates programs when it loads them, the addresses given in
+the map need conversion before you can use them.
+
+This conversion is simple: DOS adds the address of the start segment (defined
+below) to each segment address in the load map. The offsets never change from
+the values shown in the link map -- only the segments change.
+
+MORE INFORMATION
+================
+
+The start segment is the base address of the Program Segment Prefix (PSP) plus
+the size of the PSP in paragraphs. Since the PSP is always 100h (256) bytes
+long, the size of the PSP is 10h paragraphs.
+
+Note: DOS puts the base segment address of the PSP in DS and in ES when a program
+begins execution.
+
+For example, assume that the link map says that the function _funct is at
+0004:05A0 (all values in hex) and that the global variable _errno is at
+0192:00E3. Suppose further that when the program is loaded into DEBUG, the DS
+and ES registers contain 2BA5 -- the segment address of the PSP. (Use the R
+command to display the values of the registers.)
+
+The start segment for loading the program will be 2BB5 -- the value of the PSP
+base address (2BA5) + 10h to allow for the 10h paragraph length of the PSP (100h
+bytes).
+
+Thus, the function _funct will be located as follows:
+
+  0004:05A0   -- address of _funct in the link map
+  2BB5        -- start segment address (PSP + 10h)
+  ---------
+  2BB9:05A0
+
+And _errno will be located as follows:
+
+  0192:00E3   -- address of _funct in the link map
+  2BB5        -- start segment address (PSP + 10h)
+  ---------
+  2D47:00E3
+
+Use this calculation on any address in the link map to find where the symbol is
+located in memory when actually loaded.
+
+The H (Hex Arithmetic) command in DEBUG can be helpful when performing these
+calculations, as can a hex calculator with constant feature.
+
+Additional query words: no32bit kbinf LinkIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK3xDOSSearch kbLINK4xDOSSearch kbLINK5xDOSSearch
+Version           : :3.x,4.x,5.x
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

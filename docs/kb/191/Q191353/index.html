@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191353: SMS: SMS SQL View Generator Not Completely Silent in Unattended | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191353: SMS: SMS SQL View Generator Not Completely Silent in Unattended" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191353/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191353/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191353/","publisher":null,"image":null,"headline":"Q191353: SMS: SMS SQL View Generator Not Completely Silent in Unattended","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191353-sms-sms-sql-view-generator-not-completely-silent-in-unattended">Q191353: SMS: SMS SQL View Generator Not Completely Silent in Unattended</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191353
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbsmsUtil smsutil
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the SMS SQL View Generator (Smsview.exe), you can create database views on
+the Systems Management Server database. The SMS SQL View Generator creates views
+for all personal computer groups that exist in the database at the time it is
+run.
+
+The Systems Management Server Books Online describes that utility as follows:
+
+  From the SMS\SITE.SRV\platform directory, you can run the SMS SQL
+  View Generator from the command line using the following syntax:
+
+     smsview &lt;options&gt;
+
+Options are any of the following:
+
+     /s:&lt;servername&gt;
+        Specifies the name of the computer running the instance of SQL
+        Server containing the database.
+
+     /l:&lt;loginname&gt;
+        Specifies a login ID on SQL Server that has database owner (dbo)
+        permissions on the database.
+
+     /p:&lt;password&gt;
+        Specifies the password for the login ID you specified with the
+        /l:&lt;loginname&gt; option.
+
+     /d:&lt;database&gt;
+        Specifies the name of the site database.
+
+For example:
+
+  smsview /s:smsdbsrv /l:smsdbo /p:alpha /d:sms
+
+The command line allows you to use the SMS SQL View Generator in a batch file or
+other scheduled process. No messages are displayed on the console. When the SMS
+SQL View Generator is run as a command, success or failure of the command is
+logged to the application log of the Windows NT event log. If the SMS SQL View
+Generator fails, the event provides a brief explanation of the cause (for
+example, if one of the command line arguments is invalid). All SMS SQL View
+Generator events have a source of SMS View.
+
+Note that the documentation states:
+
+  No messages are displayed on the console.
+
+However, when the SMSVIEW executable is run from a command line, a dialog box is
+displayed stating that the Views were successfully created.
+
+The documentation also states:
+
+  When the SMS SQL View Generator is run as a command, success or failure
+  of the command is logged to the application log of the Windows NT event
+  log. If the SMS SQL View Generator fails, the event provides a brief
+  explanation of the cause (for example, if one of the command line
+  arguments is invalid). All SMS SQL View Generator events have a source
+  of SMS View.
+
+This is also incorrect. It does not log any information in the Windows NT event
+log.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. For additional information about related issues, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q192439 SMS: Command Line Smsview.exe Leaves Open Window in Background
+
+SMS: Command Line Smsview.exe Leaves Open Window in Background
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsmsUtil smsutil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

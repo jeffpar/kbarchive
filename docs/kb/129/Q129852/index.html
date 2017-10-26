@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129852: PRB: GetActiveWindow Behaves Differently Under Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129852: PRB: GetActiveWindow Behaves Differently Under Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129852/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129852/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129852/","publisher":null,"image":null,"headline":"Q129852: PRB: GetActiveWindow Behaves Differently Under Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129852-prb-getactivewindow-behaves-differently-under-windows-nt">Q129852: PRB: GetActiveWindow Behaves Differently Under Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129852
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.00
+Operating System(s): 
+Keyword(s): kbWndw
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Visual Basic version 4.0 application running under a 32-bit operating
+system such as Windows NT calls the GetActiveWindow() API function and a window
+of some other application currently has the focus, the handle of that window is
+not returned; instead, a NULL is returned.
+
+CAUSE
+=====
+
+In Windows NT, each thread of execution can set or get the focus for only those
+windows created by the current thread. This prevents applications from
+interfering with each other. One application's delay in responding cannot cause
+other applications to suspend their response to user actions, as often happens
+in Windows 3.x. Consequently, the following API functions also work differently
+under Windows NT:
+
+  GetCapture (VOID)
+  GetFocus (VOID)
+  ReleaseCapture (VOID)
+  SetActiveWindow (HWND)
+  SetCapture(HWND)
+  SetFocus (HWND)
+
+These functions now return NULL when the target window is owned by an application
+other than the one that calls the function. Therefore, it is important to test
+the return value of these functions before using it.
+
+For example, if you call GetFocus and another thread's window has the input
+focus, then instead of returning the handle of a window that belongs to another
+thread, the function returns NULL. Similar considerations apply to GetCapture
+and GetActiveWindow.
+
+The Set functions can only specify a window created by the current thread. If you
+attempt to pass a window handle created by another thread, the call to the Set
+function fails.
+
+RESOLUTION
+==========
+
+You can use the functions GetForegroundWindow and SetForegroundWindow instead of
+GetActiveWindow and SetActiveWindow respectively, to manipulate windows created
+by another thread. Note that these are "32-bit only" API functions.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add the following code to the General Declarations portion of Form1:
+
+     Private Declare Function GetActiveWindow Lib "user32" () As Long
+     Private Declare Function GetWindowTextA Lib "user32" (ByVal hwnd _
+        As Long, ByVal lpString As String, ByVal aint As Long) As Long
+     Private Declare Function GetForegroundWindow Lib "user32" () As Long
+
+3. Add a Command Button (Command1) to Form1.
+
+4. Add the following code to the Command1_Click event:
+
+     Dim myhwnd As Long
+     Dim s As String
+     Dim iret As Long
+     Dim nullhwnd As Long
+
+     s = Space(256)
+
+     myhwnd = GetActiveWindow()
+     iret = GetWindowTextA(myhwnd, s, 256)
+     Debug.Print myhwnd, s
+
+     Shell "Calc.exe", 1
+
+     ' Wait for CALC.EXE to launch under Windows NT:
+     DoEvents
+
+     nullhwnd = GetActiveWindow()
+     myhwnd = GetForegroundWindow()
+
+     s = Space(256)
+     iret = GetWindowTextA(nullhwnd, s, 256)
+     Debug.Print nullhwnd, s
+
+     s = Space(256)
+     iret = GetWindowTextA(myhwnd, s, 256)
+     Debug.Print myhwnd, s
+
+5. Press the F5 key to run the program. Click the Command1 button, and view the
+  Debug Window. The first print statement will print Form1's hWnd and its
+  Caption. The second print statement will merely print 0, because
+  GetActiveWindow returns a null window handle. The third print statement will
+  correctly print Calulator's hWnd and Caption.
+
+Additional query words: 4.00 vb4win vb432
+
+======================================================================
+Keywords          : kbWndw 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : 4.00
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

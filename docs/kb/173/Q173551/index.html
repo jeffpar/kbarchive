@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173551: PPT7: &quot;Part of File is Missing&quot; Error Attempting to Open File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173551: PPT7: &quot;Part of File is Missing&quot; Error Attempting to Open File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173551/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173551/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173551/","publisher":null,"image":null,"headline":"Q173551: PPT7: &quot;Part of File is Missing&quot; Error Attempting to Open File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173551-ppt7-part-of-file-is-missing-error-attempting-to-open-file">Q173551: PPT7: "Part of File is Missing" Error Attempting to Open File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173551
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a file, you receive the following error message:
+
+  Sorry, the file cannot be opened because part of the file is missing.
+
+This error may occur when accessing files that were directly saved on removable
+media.
+
+
+CAUSE
+=====
+
+This error may result from any of the following conditions:
+
+- Improperly handling the disk while working with the presentation. For
+  example, you removed the disk, such as a floppy disk, Zip disk, Jazz disk, or
+  Bernouli disk, from the drive or you exchanged the disk with another disk
+  while the presentation was open.
+
+- A network interruption, such as a lost connection, occurred while saving,
+  closing, or working in a file that you opened from a network drive.
+
+- A power outage, spike, or brownout occurred while PowerPoint was attempting
+  to access the disk.
+
+- A virus scanner or other disk utility locked the disk while the file was
+  opened in PowerPoint.
+
+- You have a damaged disk or the disk drive is not functioning properly.
+
+- The presentation was too large to fit on the disk. Hence, only part of the
+  presentation was saved.
+
+WORKAROUND
+==========
+
+In most cases, this error message indicates that the file you are attempting to
+open is damaged and you will not be able to recover the file. However, in some
+cases you may be able to recover the file using one of the following methods.
+
+Method 1: Open the File on a Different Computer
+-----------------------------------------------
+
+Attempt to open the file on another computer that is running the same version of
+PowerPoint. Or, if you have a Macintosh computer on which you installed
+PowerPoint version 4.0, attempt to open the file on that computer. You must have
+the PowerPoint 95 converter for PowerPoint 4.0 for the Macintosh. Currently
+there is no converter available for PowerPoint 97 files.
+
+Method 2: Run ScanDisk
+----------------------
+
+Run ScanDisk to determine if the file has become cross-linked with other files or
+folders and repair any errors.
+
+1. On the Windows Start menu, point to Programs, point to Accessories, and then
+  click ScanDisk.
+
+  NOTE: If ScanDisk does not appear on the submenu, it may not be installed.
+  Rerun Windows Setup in maintenance mode to install ScanDisk.
+
+2. Select the drive you want to check and click Start.
+
+Method 3: Open the File Using a Different Method
+------------------------------------------------
+
+Open the file using one of the following methods:
+
+- In Windows Explorer, double-click the file.
+
+- Start PowerPoint. Drag the file from Windows Explorer to PowerPoint.
+
+- In PowerPoint, click Slide From File on the Insert menu.
+
+
+MORE INFORMATION
+================
+
+Keep the following in mind when you work with files that are stored on removable
+media:
+
+- Do not remove the disk from the drive when the file is open in PowerPoint.
+
+- Make sure the disk has enough free space to store your presentation.
+
+- If the computer's power supply is unreliable, repair or replace the power
+  supply or purchase an uninterruptible power supply (UPS).
+
+- Copy the file to the hard disk, make the changes you want, save the file, and
+  then copy the file to the removable media or network drive.
+
+Additional query words: ppt95 ppt7 error save opening opened miss corrupt corrupted corrupting
+
+======================================================================
+Keywords          :  
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

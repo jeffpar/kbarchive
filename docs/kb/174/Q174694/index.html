@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174694: XFOR: OV/VM Connector &quot;Waiting for NJE Signon&quot; After BIND | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174694: XFOR: OV/VM Connector &quot;Waiting for NJE Signon&quot; After BIND" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174694/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174694/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174694/","publisher":null,"image":null,"headline":"Q174694: XFOR: OV/VM Connector &quot;Waiting for NJE Signon&quot; After BIND","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174694-xfor-ovvm-connector-waiting-for-nje-signon-after-bind">Q174694: XFOR: OV/VM Connector "Waiting for NJE Signon" After BIND</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174694
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): exc4
+Last Modified: 26-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During initial set up of the LinkAge Exchange-OV/VM Connector (also referred to
+as the Exchange PROFS Connector), the connector appears to BIND properly to the
+Remote Spooling Communications Subsystem (RSCS) application, but no mail is
+exchanged. The last line in the LinkAge Exchange-OV/VM Connector logs for the
+LME-PROFS-NJE process is:
+
+  1997/10/01 12:02:07- LME-PROFS-NJE(01b7) 2 23353:SNA connection to the
+     host has been established
+  &lt;&lt; NJESNA(3402)
+  1997/10/01 12:02:07- LME-PROFS-NJE(01b7) 4 23224:NJE Connection opened
+  &lt;&lt; njeconn(459)
+  1997/10/01 12:02:07- LME-PROFS-NJE(01b7) 4 23230:Waiting for initial
+     contact (FMH-4) from NJE partner application
+  &lt;&lt; njeconn(883)
+  1997/10/01 12:02:08- LME-PROFS-NJE(01b7) 4 23204:FMH4: optimized fanout
+     supported
+  &lt;&lt; njeconn(831)
+  1997/10/01 12:02:08- LME-PROFS-NJE(01b7) 4 23205:FMH4: signon supported
+  &lt;&lt; njeconn(837)
+  1997/10/01 12:02:08- LME-PROFS-NJE(01b7) 3 23229:Waiting for NJE Signon
+     from host
+  &lt;&lt; njeconn(1119)
+
+After five minutes the following errors are logged:
+
+  1997/10/01 12:07:08- LME-PROFS-NJE(01b7) 1 23356:Timeout occurred when
+     waiting for an LUA verb to complete
+  &lt;&lt; NJESNA(631)
+  1997/10/01 12:07:08- LME-PROFS-NJE(01b7) 1 23349:Error {Session timeout
+     occurred} occurred when reading SNA data from the host
+  &lt;&lt; NJESNA(3599)
+  1997/10/01 12:07:08- LME-PROFS-NJE(01b7) 1 23217:Error occurred when
+     waiting for the signon record from the host
+  &lt;&lt; njeconn(1126)
+  1997/10/01 12:07:08- LME-PROFS-NJE(01b7) 1 00510:Error {Session timeout
+     occurred}: The application failed to initialize.
+  &lt;&lt; stdmain(858)
+
+CAUSE
+=====
+
+The connector and RSCS are supposed to exchange a node signon, and the
+initiating partner is the one with the alphabetically higher node name. The logs
+above indicate that neither side is initiating the node signon because the
+LinkAge Exchange-OV/VM Connector is not configured properly. The LOCALNODE=
+parameter in the Linkage.ini file located in C:\Linkage has to match the LINKID
+parameter in the RSCS LINK or the LINKDEF statement in the RSCS configuration
+file, and the PARTNERNODE= parameter has to match the RSCS node ID.
+
+If the RSCS node ID is alphabetically lower than the LINKID name for the
+connector, then RSCS does not initiate the node signon. And if the LinkAge
+Exchange-OV/VM Connector is configured so that its LOCALNODE= parameter is
+alphabetically lower than the PARTNERNODE= parameter, the connector will not
+initiate either, and you will see the above logged errors as a result.
+
+RESOLUTION
+==========
+
+Correct the LOCALNODE= and PARTNERNODE= parameters to match the values specified
+in the RSCS configuration file. The LOCALNODE= parameter should match the LINKID
+parameter in the RSCS LINK or LINKDEF statement, and the PARTNERNODE= parameter
+should match the LOCALID parameter (both definitions are located in the RSCS
+configuration file).
+
+Additional query words: SEND RECEIVE
+
+======================================================================
+Keywords          : exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

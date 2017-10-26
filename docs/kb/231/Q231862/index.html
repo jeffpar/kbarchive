@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231862: INF: Configuring COMTI to use TCP/IP Link to CICS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231862: INF: Configuring COMTI to use TCP/IP Link to CICS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231862/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231862/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231862/","publisher":null,"image":null,"headline":"Q231862: INF: Configuring COMTI to use TCP/IP Link to CICS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231862-inf-configuring-comti-to-use-tcpip-link-to-cics">Q231862: INF: Configuring COMTI to use TCP/IP Link to CICS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q231862</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">4.0</span> <span class="n">SP2</span><span class="p">,</span><span class="m">4.0</span><span class="n">SP2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsna400sp2</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">COM</span> <span class="n">Transaction</span> <span class="n">Integrator</span> <span class="n">for</span> <span class="n">CICS</span> <span class="k">and</span> <span class="n">IMS</span><span class="p">,</span> <span class="k">version</span> <span class="m">4.0</span> <span class="n">SP2</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span><span class="p">,</span> <span class="k">version</span> <span class="m">4.0</span><span class="n">SP2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">how</span> <span class="k">to</span> <span class="n">configure</span> <span class="n">a</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">link</span> <span class="k">to</span> <span class="n">CICS</span><span class="p">,</span> <span class="n">using</span> <span class="n">the</span> <span class="n">Cedar</span>
+<span class="n">Bank</span> <span class="n">sample</span> <span class="n">provided</span> <span class="k">with</span> <span class="n">COM</span> <span class="n">Transaction</span> <span class="n">Integrator</span> <span class="n">for</span> <span class="n">CICS</span> <span class="k">and</span> <span class="n">IMS</span> <span class="p">(</span><span class="n">COMTI</span><span class="p">).</span>
+<span class="n">You</span> <span class="n">need</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">3</span> <span class="k">or</span> <span class="n">greater</span><span class="p">,</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="m">4.0</span> <span class="n">Service</span> <span class="n">Pack</span>
+<span class="m">2</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">host</span> <span class="n">requires</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">V3R2</span> <span class="k">and</span> <span class="n">CICS</span> <span class="m">3.1</span> <span class="k">or</span> <span class="n">greater</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="m">1.</span> <span class="n">Verify</span> <span class="n">that</span> <span class="n">the</span> <span class="n">CICS</span> <span class="n">region</span> <span class="n">supports</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span><span class="p">,</span> <span class="k">and</span> <span class="n">that</span> <span class="n">the</span> <span class="n">IBM</span><span class="p">-</span><span class="n">supplied</span>
+  <span class="n">listener</span> <span class="p">(</span><span class="n">program</span> <span class="n">EZACIC02</span><span class="p">,</span> <span class="n">tranID</span> <span class="n">CSKL</span><span class="p">)</span> <span class="n">is</span> <span class="n">defined</span><span class="p">.</span> <span class="n">You</span> <span class="n">will</span> <span class="n">need</span> <span class="k">to</span>
+  <span class="n">determine</span> <span class="n">the</span> <span class="n">IP</span> <span class="n">address</span> <span class="n">on</span> <span class="n">the</span> <span class="n">mainframe</span> <span class="k">and</span> <span class="n">the</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">port</span> <span class="n">number</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">listener</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">verify</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">port</span> <span class="n">number</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="n">following</span> <span class="n">CICS</span>
+  <span class="nf">command</span><span class="p">:</span> <span class="n">EZAC</span> <span class="n">DISPLAY</span> <span class="n">LISTENER</span><span class="p">.</span> <span class="n">Both</span> <span class="n">IP</span> <span class="n">address</span> <span class="k">and</span> <span class="n">TCP</span> <span class="n">port</span> <span class="n">number</span> <span class="n">must</span> <span class="n">be</span>
+  <span class="n">entered</span> <span class="k">in</span> <span class="n">the</span> <span class="n">COMTI</span> <span class="n">CICS</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">Remote</span> <span class="n">Environment</span> <span class="p">(</span><span class="n">RE</span><span class="p">).</span> <span class="n">The</span> <span class="n">following</span>
+  <span class="n">information</span> <span class="n">describes</span> <span class="n">the</span> <span class="n">process</span> <span class="k">of</span> <span class="n">configuring</span> <span class="n">the</span> <span class="n">host</span> <span class="n">for</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="k">to</span> <span class="n">CICS</span>
+  <span class="k">and</span> <span class="n">CICS</span> <span class="k">to</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span>
+
+   <span class="p">-</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="k">to</span> <span class="n">CICS</span> <span class="n">Configuration</span>
+
+     <span class="n">A</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">port</span> <span class="n">number</span> <span class="n">is</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">a</span> <span class="n">CICS</span> <span class="n">region</span> <span class="k">in</span> <span class="n">the</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">profile</span>
+     <span class="n">data</span> <span class="k">set</span> <span class="p">(</span><span class="n">hlq</span><span class="p">.</span><span class="n">PROFILE</span><span class="p">.</span><span class="n">TCPIP</span><span class="p">).</span> <span class="n">The</span> <span class="n">port</span> <span class="n">statement</span> <span class="n">is</span> <span class="n">used</span> <span class="k">to</span> <span class="n">define</span> <span class="n">this</span>
+     <span class="n">relationship</span><span class="p">.</span> <span class="n">An</span> <span class="n">example</span> <span class="k">of</span> <span class="n">a</span> <span class="n">port</span> <span class="n">statement</span> <span class="n">that</span> <span class="n">associates</span> <span class="n">port</span> <span class="m">3000</span>
+     <span class="k">with</span> <span class="n">CICS</span> <span class="n">region</span> <span class="n">CICSRG</span> <span class="n">is</span><span class="p">:</span>
+
+  <span class="m">3000</span> <span class="n">TCP</span> <span class="n">CICSRG</span>
+
+   <span class="p">-</span> <span class="n">CICS</span> <span class="k">to</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">Configuration</span>
+
+      <span class="p">-</span> <span class="n">Defining</span> <span class="n">CICS</span> <span class="k">to</span> <span class="n">TCP</span> <span class="n">Using</span> <span class="n">the</span> <span class="n">EZAC</span> <span class="n">Transaction</span>
+
+        <span class="n">The</span> <span class="n">following</span> <span class="n">is</span> <span class="n">a</span> <span class="n">sample</span> <span class="n">host</span> <span class="n">definition</span><span class="p">:</span>
+
+<span class="n">EZAC</span><span class="p">,</span><span class="n">DEFINE</span>                                                                    
+<span class="n">ENTER</span> <span class="n">ONE</span> <span class="k">OF</span> <span class="n">THE</span> <span class="n">FOLLOWING</span>                                                     
+                                                                               
+<span class="n">CICS</span>         <span class="p">===&gt;</span> <span class="n">yes</span>                   <span class="n">Enter</span> <span class="n">Yes</span><span class="p">|</span><span class="n">No</span>                            
+<span class="n">LISTENER</span>     <span class="p">===&gt;</span>                       <span class="n">Enter</span> <span class="n">Yes</span><span class="p">|</span><span class="n">No</span>
+
+<span class="n">EZAC</span><span class="p">,</span><span class="n">DEFINE</span><span class="p">,</span><span class="n">CICS</span>                                                               
+<span class="n">ENTER</span> <span class="n">ALL</span> <span class="n">FIELDS</span>                                                              
+                                                                               
+<span class="n">APPLID</span>       <span class="p">===&gt;</span> <span class="n">CICSRG</span>                <span class="n">APPLID</span> <span class="k">of</span> <span class="n">CICS</span> <span class="nf">System</span>
+
+<span class="n">EZAC</span><span class="p">,</span><span class="n">DEFINE</span><span class="p">,</span><span class="n">CICS</span>                                                               
+<span class="n">OVERTYPE</span> <span class="k">TO</span> <span class="n">ENTER</span>                                                              
+                                                                               
+<span class="n">APPLID</span>       <span class="p">===&gt;</span> <span class="n">CICSRG</span>                <span class="n">APPLID</span> <span class="k">of</span> <span class="n">CICS</span> <span class="nf">System</span>                   
+<span class="n">TCPADDR</span>      <span class="p">===&gt;</span> <span class="n">TCPIP</span>                 <span class="n">Name</span> <span class="k">of</span> <span class="n">TCP</span> <span class="n">Address</span> <span class="n">Space</span>               
+<span class="n">NTASKS</span>       <span class="p">===&gt;</span> <span class="m">020</span>                   <span class="n">Number</span> <span class="k">of</span> <span class="n">Reusable</span> <span class="n">Tasks</span>                
+<span class="n">DPRTY</span>        <span class="p">===&gt;</span> <span class="m">000</span>                   <span class="n">DPRTY</span> <span class="n">value</span> <span class="n">for</span> <span class="n">ATTACH</span>                  
+<span class="n">CACHMIN</span>      <span class="p">===&gt;</span> <span class="m">015</span>                   <span class="n">Minimum</span> <span class="n">Refresh</span> <span class="n">Time</span> <span class="n">for</span> <span class="n">Cache</span>          
+<span class="n">CACHMAX</span>      <span class="p">===&gt;</span> <span class="m">030</span>                   <span class="n">Maximum</span> <span class="n">Refresh</span> <span class="n">Time</span> <span class="n">for</span> <span class="n">Cache</span>          
+<span class="n">CACHRES</span>      <span class="p">===&gt;</span> <span class="m">010</span>                   <span class="n">Maximum</span> <span class="n">number</span> <span class="k">of</span> <span class="n">Resolvers</span>             
+<span class="n">ERRORTD</span>      <span class="p">===&gt;</span> <span class="n">CSMT</span>                  <span class="n">TD</span> <span class="n">Queue</span> <span class="n">for</span> <span class="n">Error</span> <span class="n">Messages</span>
+
+      <span class="p">-</span> <span class="n">Defining</span> <span class="n">CICS</span> <span class="n">Listener</span> <span class="k">Parameters</span> <span class="n">Using</span> <span class="n">the</span> <span class="n">EZAC</span> <span class="n">Transaction</span>
+
+        <span class="n">The</span> <span class="n">following</span> <span class="n">is</span> <span class="n">a</span> <span class="n">sample</span> <span class="n">host</span> <span class="n">definition</span><span class="p">:</span>
+
+<span class="n">EZAC</span><span class="p">,</span><span class="n">DEFINE</span>                                                                    
+<span class="n">ENTER</span> <span class="n">ONE</span> <span class="k">OF</span> <span class="n">THE</span> <span class="n">FOLLOWING</span>                                                     
+                                                           
+<span class="n">CICS</span>         <span class="p">===&gt;</span>                       <span class="n">Enter</span> <span class="n">Yes</span><span class="p">|</span><span class="n">No</span>                            
+<span class="n">LISTENER</span>     <span class="p">===&gt;</span> <span class="n">yes</span>                   <span class="n">Enter</span> <span class="n">Yes</span><span class="p">|</span><span class="n">No</span>
+
+<span class="n">EZAC</span><span class="p">,</span><span class="n">DEFINE</span><span class="p">,</span><span class="n">LISTENER</span>                                                           
+<span class="n">ENTER</span> <span class="n">ALL</span> <span class="n">FIELDS</span>                                                              
+                                                                               
+<span class="n">APPLID</span>       <span class="p">===&gt;</span> <span class="n">CICSRG</span>                <span class="n">APPLID</span> <span class="k">of</span> <span class="n">CICS</span> <span class="nf">System</span>                   
+<span class="n">NAME</span>         <span class="p">===&gt;</span> <span class="n">CSKL</span>                  <span class="n">TRANSACTION</span> <span class="n">NAME</span> <span class="k">OF</span> <span class="n">LISTENER</span>
+
+<span class="n">EZAC</span><span class="p">,</span><span class="n">defiNE</span><span class="p">,</span><span class="n">LISTENER</span>                                                           
+<span class="n">OVERTYPE</span> <span class="k">TO</span> <span class="n">ENTER</span>                                                              
+                                                                               
+<span class="n">APPLID</span>       <span class="p">===&gt;</span> <span class="n">CICSRG</span>                <span class="n">APPLID</span> <span class="k">of</span> <span class="n">CICS</span> <span class="nf">System</span>                   
+<span class="n">TRANID</span>       <span class="p">===&gt;</span> <span class="n">CSKL</span>                  <span class="n">Transaction</span> <span class="n">Name</span> <span class="k">of</span> <span class="n">Listener</span>            
+<span class="n">PORT</span>         <span class="p">===&gt;</span> <span class="m">03000</span>                 <span class="n">Port</span> <span class="n">Number</span> <span class="k">of</span> <span class="n">Listener</span>                 
+<span class="n">IMMEDIATE</span>    <span class="p">===&gt;</span> <span class="n">YES</span>                   <span class="n">Immediate</span> <span class="n">Startup</span>   <span class="n">Yes</span><span class="p">|</span><span class="n">No</span>              
+<span class="n">BACKLOG</span>      <span class="p">===&gt;</span> <span class="m">010</span>                   <span class="n">Backlog</span> <span class="n">Value</span> <span class="n">for</span> <span class="n">Listener</span>              
+<span class="n">NUMSOCK</span>      <span class="p">===&gt;</span> <span class="m">050</span>                   <span class="n">Number</span> <span class="k">of</span> <span class="n">Sockets</span> <span class="k">in</span> <span class="n">Listener</span>           
+<span class="n">MINMSGL</span>      <span class="p">===&gt;</span> <span class="m">004</span>                   <span class="n">Minimum</span> <span class="n">Message</span> <span class="n">Length</span>                  
+<span class="n">ACCTIME</span>      <span class="p">===&gt;</span> <span class="m">060</span>                   <span class="n">Timeout</span> <span class="n">Value</span> <span class="n">for</span> <span class="n">ACCEPT</span>                
+<span class="n">GIVTIME</span>      <span class="p">===&gt;</span> <span class="m">030</span>                   <span class="n">Timeout</span> <span class="n">Value</span> <span class="n">for</span> <span class="n">GIVESOCKET</span>            
+<span class="n">REATIME</span>      <span class="p">===&gt;</span> <span class="m">000</span>                   <span class="n">Timeout</span> <span class="n">Value</span> <span class="n">for</span> <span class="n">READ</span>                  
+<span class="n">FASTRD</span>       <span class="p">===&gt;</span> <span class="n">YES</span>                   <span class="n">Read</span> <span class="n">Immediately</span>    <span class="n">Yes</span><span class="p">|</span><span class="n">No</span>              
+<span class="n">TRANTRN</span>      <span class="p">===&gt;</span> <span class="n">YES</span>                   <span class="n">Translate</span> <span class="n">TRNID</span>     <span class="n">Yes</span><span class="p">|</span><span class="n">No</span>              
+<span class="n">TRANUSR</span>      <span class="p">===&gt;</span> <span class="n">YES</span>                   <span class="n">Translate</span> <span class="n">User</span> <span class="n">Data</span> <span class="n">Yes</span><span class="p">|</span><span class="n">No</span>              
+<span class="n">SECEXIT</span>      <span class="p">===&gt;</span>                       <span class="n">Name</span> <span class="k">of</span> <span class="n">Security</span> <span class="k">Exit</span>
+
+   <span class="p">-</span> <span class="n">For</span> <span class="n">further</span> <span class="n">information</span><span class="p">,</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">IBM</span> <span class="n">document</span> <span class="p">#</span><span class="n">SC31</span><span class="p">-</span><span class="m">7131</span><span class="p">,</span> <span class="s2">"TCP/IP V3R2
+     for MVS: CICS TCP/IP Socket Interface Guide."</span>
+
+<span class="m">2.</span> <span class="n">Start</span> <span class="n">the</span> <span class="n">IBM</span><span class="p">-</span><span class="n">supplied</span> <span class="n">listener</span> <span class="n">using</span> <span class="n">the</span> <span class="n">following</span> <span class="nf">command</span><span class="p">:</span> <span class="n">EZAO</span> <span class="n">START</span><span class="p">.</span> <span class="n">You</span>
+  <span class="n">can</span> <span class="n">view</span> <span class="n">the</span> <span class="n">status</span> <span class="k">of</span> <span class="n">the</span> <span class="n">listener</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="n">following</span> <span class="n">CICS</span> <span class="nf">command</span><span class="p">:</span> <span class="n">CEMT</span>
+  <span class="n">INQUIRE</span> <span class="n">TASK</span><span class="p">,</span> <span class="n">look</span> <span class="n">for</span> <span class="n">CSKL</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="nf">Compile</span> <span class="n">the</span> <span class="n">MS</span><span class="p">-</span><span class="n">provided</span> <span class="n">sample</span> <span class="n">server</span> <span class="n">for</span> <span class="n">the</span> <span class="n">IBM</span><span class="p">-</span><span class="n">provided</span> <span class="n">listener</span><span class="p">.</span> <span class="n">IBM</span> <span class="n">does</span>
+  <span class="k">not</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">child</span> <span class="n">server</span> <span class="n">for</span> <span class="n">its</span> <span class="n">listener</span><span class="p">,</span> <span class="n">but</span> <span class="n">IBM</span> <span class="n">does</span> <span class="n">provide</span> <span class="n">samples</span><span class="p">,</span>
+  <span class="n">documented</span> <span class="k">in</span> <span class="n">Appendix</span> <span class="n">F</span> <span class="k">of</span> <span class="n">the</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">Socket</span> <span class="n">Guide</span><span class="p">.</span> <span class="n">Microsoft</span> <span class="n">also</span> <span class="n">provides</span>
+  <span class="n">a</span> <span class="n">sample</span> <span class="p">(</span><span class="n">MSCMTICS</span><span class="p">),</span> <span class="n">which</span> <span class="n">invokes</span> <span class="n">link</span> <span class="k">model</span> <span class="n">transactions</span><span class="p">.</span>
+
+  <span class="n">DISCLAIMER</span><span class="p">:</span> <span class="n">The</span> <span class="n">COMTI</span> <span class="n">sample</span> <span class="n">program</span> <span class="n">is</span> <span class="k">not</span> <span class="n">intended</span> <span class="n">for</span> <span class="n">use</span> <span class="k">in</span> <span class="n">production</span>
+  <span class="n">environments</span><span class="p">.</span> <span class="n">It</span> <span class="n">is</span> <span class="n">provided</span> <span class="k">to</span> <span class="n">you</span> <span class="k">to</span> <span class="n">demonstrate</span> <span class="n">the</span> <span class="n">techniques</span> <span class="n">you</span> <span class="n">can</span> <span class="n">use</span>
+  <span class="k">to</span> <span class="n">develop</span> <span class="n">your</span> <span class="n">own</span> <span class="n">server</span> <span class="n">for</span> <span class="n">production</span> <span class="n">use</span><span class="p">.</span>
+
+  <span class="n">Sources</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">sample</span> <span class="n">are</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="p">&lt;</span><span class="n">snaroot</span><span class="p">&gt;\</span><span class="n">COMTI</span><span class="p">\</span><span class="n">SampleCode</span><span class="p">\</span><span class="n">ProgrammingSpecifics</span><span class="p">\</span><span class="n">TCP</span><span class="p">\</span><span class="n">Mscmtics</span><span class="p">.</span><span class="n">cbl</span> <span class="n">file</span><span class="p">.</span>
+  <span class="n">This</span> <span class="n">file</span> <span class="n">implements</span> <span class="n">the</span> <span class="s2">"child server"</span> <span class="k">function</span> <span class="n">described</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="s2">"Client-listener, child server"</span> <span class="n">application</span> <span class="k">set</span> <span class="n">documented</span> <span class="k">as</span> <span class="n">item</span> <span class="m">1</span> <span class="k">of</span>
+  <span class="n">chapter</span> <span class="m">6.2</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Socket</span> <span class="n">Interface</span> <span class="n">Guide</span><span class="p">.</span> <span class="n">The</span> <span class="n">other</span> <span class="n">sample</span> <span class="n">source</span> <span class="n">files</span> <span class="k">in</span>
+  <span class="n">this</span> <span class="n">folder</span> <span class="n">are</span> <span class="n">for</span> <span class="n">the</span> <span class="n">other</span> <span class="n">sub</span><span class="p">-</span><span class="n">modes</span> <span class="k">of</span> <span class="n">TCP</span> <span class="n">connectivity</span> <span class="n">for</span> <span class="n">CICS</span> <span class="k">and</span> <span class="n">IMS</span><span class="p">.</span>
+  <span class="n">MSCMTICS</span> <span class="n">should</span> <span class="n">be</span> <span class="n">compiled</span> <span class="k">and</span> <span class="n">linked</span> <span class="k">as</span> <span class="n">a</span> <span class="n">standard</span> <span class="n">CICS</span> <span class="n">transaction</span><span class="p">,</span> <span class="k">and</span>
+  <span class="n">should</span> <span class="n">be</span> <span class="n">installed</span> <span class="n">by</span> <span class="n">means</span> <span class="k">of</span> <span class="n">CEDA</span> <span class="n">DEF</span> <span class="n">TRANSACTION</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">the</span> <span class="n">default</span>
+  <span class="n">name</span> <span class="s2">"MSCM"</span> <span class="n">for</span> <span class="n">this</span> <span class="n">transaction</span> <span class="k">or</span> <span class="n">you</span> <span class="n">can</span> <span class="nb">create</span> <span class="n">another</span> <span class="n">transaction</span> <span class="n">ID</span><span class="p">.</span>
+
+  <span class="n">The</span> <span class="n">remaining</span> <span class="n">steps</span> <span class="n">are</span> <span class="n">performed</span> <span class="n">on</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span><span class="p">.</span>
+  <span class="n">Using</span> <span class="n">the</span> <span class="n">COMTI</span> <span class="n">administrative</span> <span class="n">snap</span><span class="p">-</span><span class="k">in</span> <span class="n">for</span> <span class="n">MMC</span><span class="p">,</span> <span class="n">you</span> <span class="n">will</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span>
+  <span class="n">Remote</span> <span class="n">Environment</span><span class="p">.</span> <span class="k">Then</span><span class="p">,</span> <span class="n">using</span> <span class="n">Component</span> <span class="n">Builder</span><span class="p">,</span> <span class="n">you</span> <span class="n">will</span> <span class="nb">create</span> <span class="k">and</span> <span class="n">deploy</span>
+  <span class="n">a</span> <span class="n">Cedar</span> <span class="n">Bank</span> <span class="n">component</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">MS</span> <span class="n">Link</span> <span class="k">model</span> <span class="n">rather</span> <span class="n">than</span> <span class="n">the</span>
+  <span class="n">APPC</span><span class="p">-</span><span class="n">based</span> <span class="n">CICS</span> <span class="n">Link</span> <span class="n">component</span> <span class="n">included</span> <span class="k">with</span> <span class="n">SNA</span> <span class="n">Server</span><span class="p">.</span> <span class="n">The</span> <span class="n">new</span> <span class="n">component</span>
+  <span class="n">will</span> <span class="n">have</span> <span class="n">exactly</span> <span class="n">the</span> <span class="n">same</span> <span class="n">COM</span> <span class="n">interface</span> <span class="k">as</span> <span class="n">the</span> <span class="n">original</span> <span class="n">APPC</span><span class="p">-</span><span class="n">based</span>
+  <span class="n">component</span><span class="p">,</span> <span class="n">but</span> <span class="k">uses</span> <span class="n">TCP</span> <span class="k">and</span> <span class="n">the</span> <span class="n">MS</span> <span class="n">Link</span> <span class="k">model</span> <span class="k">to</span> <span class="n">communicate</span> <span class="k">with</span> <span class="n">the</span> <span class="n">host</span>
+  <span class="n">programs</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">New</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">Remote</span> <span class="n">Environment</span> <span class="k">in</span> <span class="n">COMTI</span> <span class="n">Manager</span><span class="p">.</span>
+
+  <span class="n">a</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">COMTI</span> <span class="n">MMC</span> <span class="n">Console</span><span class="p">,</span> <span class="n">open</span> <span class="n">the</span> <span class="n">COM</span> <span class="n">Transaction</span> <span class="n">Integrator</span> <span class="n">snap</span><span class="p">-</span><span class="k">in</span><span class="p">,</span>
+     <span class="n">select</span> <span class="n">the</span> <span class="n">Remote</span> <span class="n">Environments</span> <span class="n">folder</span><span class="p">,</span> <span class="n">right</span><span class="p">-</span><span class="n">click</span><span class="p">,</span> <span class="k">and</span> <span class="n">choose</span> <span class="n">N</span><span class="p">)</span><span class="n">ew</span>
+     <span class="n">R</span><span class="p">)</span><span class="n">emote</span> <span class="n">Environment</span><span class="p">.</span>
+
+  <span class="n">b</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Add</span> <span class="n">Remote</span> <span class="n">Environment</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">select</span> <span class="s2">"CICS and IMS using
+     TCP/IP"</span><span class="p">,</span> <span class="k">and</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+  <span class="n">c</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Remote</span> <span class="n">Environment</span> <span class="n">Wizard</span><span class="p">,</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">IP</span> <span class="n">address</span> <span class="k">of</span> <span class="n">the</span> <span class="n">host</span> <span class="n">noted</span>
+     <span class="k">in</span> <span class="n">step</span> <span class="m">1</span> <span class="n">above</span><span class="p">,</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">port</span> <span class="n">number</span><span class="p">,</span> <span class="n">also</span> <span class="n">noted</span> <span class="k">in</span> <span class="n">step</span> <span class="m">1</span><span class="p">,</span> <span class="k">and</span>
+     <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Because</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">Cedar</span> <span class="n">Bank</span> <span class="n">component</span> <span class="n">has</span> <span class="n">the</span> <span class="n">same</span> <span class="n">interface</span> <span class="k">and</span> <span class="n">class</span> <span class="n">ID</span> <span class="k">as</span>
+  <span class="n">the</span> <span class="n">APPC</span> <span class="k">model</span><span class="p">,</span> <span class="n">before</span> <span class="n">you</span> <span class="n">deploy</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">component</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">unregister</span> <span class="n">any</span>
+  <span class="n">existing</span> <span class="n">APPC</span> <span class="n">Cedar</span> <span class="n">Bank</span> <span class="n">component</span> <span class="n">you</span> <span class="n">might</span> <span class="n">have</span> <span class="n">defined</span> <span class="k">in</span> <span class="n">Microsoft</span>
+  <span class="n">Transaction</span> <span class="n">Services</span><span class="p">.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">following</span> <span class="n">steps</span> <span class="k">to</span> <span class="n">remove</span> <span class="n">the</span> <span class="n">APPC</span> <span class="n">Cedar</span> <span class="n">Bank</span>
+  <span class="n">component</span><span class="p">:</span>
+
+  <span class="n">a</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">COMTI</span> <span class="n">MMC</span> <span class="n">console</span> <span class="p">(</span><span class="k">or</span> <span class="n">any</span> <span class="n">other</span> <span class="n">MMC</span> <span class="n">console</span> <span class="k">with</span> <span class="n">the</span> <span class="n">Microsoft</span>
+     <span class="n">Transaction</span> <span class="n">Services</span> <span class="n">snap</span><span class="p">-</span><span class="k">in</span> <span class="n">installed</span><span class="p">),</span> <span class="n">open</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Transaction</span>
+     <span class="n">Server</span> <span class="n">snap</span><span class="p">-</span><span class="k">in</span><span class="p">,</span> <span class="k">then</span> <span class="n">open</span> <span class="n">the</span> <span class="n">Installed</span> <span class="n">Packages</span> <span class="n">folder</span><span class="p">,</span> <span class="n">browse</span> <span class="k">to</span> <span class="n">the</span>
+     <span class="k">package</span> <span class="k">in</span> <span class="n">which</span> <span class="n">you</span> <span class="n">deployed</span> <span class="n">Cedar</span> <span class="n">Bank</span><span class="p">,</span> <span class="k">and</span> <span class="n">delete</span> <span class="n">that</span> <span class="n">component</span> <span class="k">from</span>
+     <span class="n">the</span> <span class="k">package</span><span class="p">.</span>
+
+  <span class="n">b</span><span class="p">.</span> <span class="k">To</span> <span class="n">ensure</span> <span class="n">the</span> <span class="k">package</span> <span class="n">process</span> <span class="n">notices</span> <span class="n">the</span> <span class="n">configuration</span> <span class="n">change</span><span class="p">,</span> <span class="n">select</span> <span class="n">the</span>
+     <span class="k">package</span><span class="p">,</span> <span class="n">right</span><span class="p">-</span><span class="n">click</span><span class="p">,</span> <span class="k">and</span> <span class="n">select</span> <span class="nf">Stop</span> <span class="n">Process</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Create</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">CedarBank</span> <span class="n">Component</span><span class="p">.</span>
+
+  <span class="n">a</span><span class="p">.</span> <span class="n">Open</span> <span class="n">Component</span> <span class="n">Builder</span><span class="p">,</span> <span class="k">and</span> <span class="n">select</span> <span class="n">F</span><span class="p">)</span><span class="n">ile</span> <span class="n">N</span><span class="p">)</span><span class="n">ew</span><span class="p">.</span>
+
+  <span class="n">b</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">New</span> <span class="n">Component</span> <span class="n">Library</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">type</span> <span class="n">a</span> <span class="n">library</span> <span class="n">name</span> <span class="k">of</span> <span class="s2">"Cedar"</span>
+     <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">)</span> <span class="k">and</span> <span class="n">an</span> <span class="n">interface</span> <span class="n">name</span> <span class="k">of</span> <span class="s2">"Bank"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span>
+     <span class="n">quotation</span> <span class="n">marks</span><span class="p">).</span> <span class="n">Also</span><span class="p">,</span> <span class="n">under</span> <span class="n">Remote</span> <span class="n">Environment</span> <span class="n">Type</span><span class="p">,</span> <span class="n">select</span> <span class="s2">"CICS and
+     IMS via TCP/IP"</span><span class="p">,</span> <span class="n">under</span> <span class="n">Target</span> <span class="n">Environment</span><span class="p">,</span> <span class="n">select</span> <span class="n">CICS</span><span class="p">,</span> <span class="k">and</span> <span class="n">under</span> <span class="n">Server</span>
+     <span class="n">Type</span><span class="p">,</span> <span class="n">select</span> <span class="n">MS</span> <span class="n">Link</span><span class="p">.</span> <span class="n">Click</span> <span class="n">OK</span><span class="p">.</span>
+
+  <span class="n">c</span><span class="p">.</span> <span class="n">Select</span> <span class="n">F</span><span class="p">)</span><span class="n">ile</span> <span class="n">I</span><span class="p">)</span><span class="n">mport</span> <span class="n">Component</span> <span class="n">L</span><span class="p">)</span><span class="n">ibrary</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Insert</span> <span class="n">Component</span> <span class="n">Library</span>
+     <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">browse</span> <span class="k">to</span> <span class="p">&lt;</span><span class="n">snaroot</span><span class="p">&gt;\</span><span class="n">COMTI</span><span class="p">\</span><span class="n">Tutorials</span><span class="p">\</span><span class="n">CedarBank</span><span class="p">\</span><span class="n">CICSLink</span><span class="p">,</span>
+     <span class="n">select</span> <span class="n">Cedar</span><span class="p">.</span><span class="n">tlb</span><span class="p">,</span> <span class="k">and</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span> <span class="n">The</span> <span class="n">Cedar</span> <span class="n">Bank</span> <span class="n">component</span> <span class="n">will</span> <span class="n">now</span> <span class="n">appear</span>
+     <span class="k">in</span> <span class="n">the</span> <span class="n">Component</span> <span class="n">Builder</span> <span class="n">screen</span><span class="p">.</span>
+
+  <span class="n">d</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">the</span> <span class="n">name</span> <span class="k">of</span> <span class="n">the</span> <span class="n">CICS</span> <span class="n">server</span> <span class="n">transaction</span> <span class="k">as</span> <span class="n">the</span> <span class="n">TP</span> <span class="n">Name</span> <span class="n">property</span>
+     <span class="n">for</span> <span class="n">the</span> <span class="n">GETACCTS</span> <span class="k">and</span> <span class="n">CEDRBANK</span> <span class="n">methods</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">left</span><span class="p">-</span><span class="n">hand</span> <span class="n">pane</span><span class="p">,</span> <span class="n">select</span> <span class="n">the</span>
+     <span class="n">root</span> <span class="n">component</span> <span class="p">(</span><span class="n">interface</span> <span class="s2">"Bank"</span><span class="p">)</span> <span class="k">and</span> <span class="n">right</span><span class="p">-</span><span class="n">click</span><span class="p">,</span> <span class="k">then</span> <span class="n">select</span> <span class="n">Unlock</span> <span class="k">from</span>
+     <span class="n">the</span> <span class="n">pop</span><span class="p">-</span><span class="n">up</span> <span class="n">menu</span><span class="p">.</span> <span class="n">Select</span> <span class="n">each</span> <span class="n">method</span><span class="p">,</span> <span class="n">right</span><span class="p">-</span><span class="n">click</span> <span class="k">and</span> <span class="n">select</span> <span class="n">Pr</span><span class="p">)</span><span class="n">operties</span><span class="p">.</span>
+     <span class="k">In</span> <span class="n">the</span> <span class="n">Properties</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">select</span> <span class="n">the</span> <span class="n">Host</span> <span class="n">Names</span> <span class="n">tab</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">TP</span> <span class="n">Name</span>
+     <span class="n">field</span><span class="p">,</span> <span class="n">enter</span> <span class="n">MSCM</span> <span class="p">(</span><span class="k">or</span> <span class="n">whatever</span> <span class="n">CICS</span> <span class="n">transaction</span> <span class="n">ID</span> <span class="n">you</span> <span class="n">used</span> <span class="n">when</span> <span class="n">defining</span>
+     <span class="n">the</span> <span class="n">MSCMTICS</span> <span class="n">program</span> <span class="k">in</span> <span class="n">step</span> <span class="m">3</span><span class="p">).</span> <span class="n">Click</span> <span class="n">OK</span><span class="p">.</span>
+
+  <span class="n">e</span><span class="p">.</span> <span class="k">In</span> <span class="n">Component</span> <span class="n">Builder</span><span class="p">,</span> <span class="n">on</span> <span class="n">the</span> <span class="n">File</span> <span class="n">menu</span><span class="p">,</span> <span class="n">click</span> <span class="n">Save</span> <span class="k">to</span> <span class="n">save</span> <span class="n">this</span> <span class="n">type</span>
+     <span class="n">library</span> <span class="k">to</span> <span class="n">disk</span> <span class="k">with</span> <span class="n">file</span> <span class="n">name</span> <span class="n">CedarBankTcp</span><span class="p">.</span><span class="n">tlb</span> <span class="p">(</span><span class="k">or</span> <span class="n">any</span> <span class="n">name</span> <span class="n">other</span> <span class="n">than</span>
+     <span class="n">CedarBank</span><span class="p">).</span>
+
+<span class="m">7.</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">Cedar</span> <span class="n">Bank</span> <span class="n">component</span> <span class="k">in</span> <span class="n">MTS</span> <span class="k">and</span> <span class="n">assign</span> <span class="n">it</span> <span class="k">to</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">Remote</span>
+  <span class="n">Environment</span> <span class="n">created</span> <span class="k">in</span> <span class="n">step</span> <span class="m">4.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">the</span> <span class="n">deployment</span> <span class="n">wizard</span> <span class="k">in</span> <span class="n">Component</span>
+  <span class="n">Builder</span><span class="p">:</span>
+
+  <span class="n">a</span><span class="p">.</span> <span class="n">At</span> <span class="n">the</span> <span class="n">Component</span> <span class="n">Builder</span> <span class="n">main</span> <span class="n">menu</span><span class="p">,</span> <span class="n">select</span> <span class="n">T</span><span class="p">)</span><span class="n">ools</span> <span class="n">A</span><span class="p">)</span><span class="n">dd</span> <span class="k">to</span> <span class="k">Package</span><span class="p">.</span>
+
+  <span class="n">b</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Add</span> <span class="k">to</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="k">Package</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">select</span> <span class="n">the</span> <span class="n">MTS</span>
+     <span class="k">package</span> <span class="n">you</span> <span class="n">want</span> <span class="k">from</span> <span class="n">the</span> <span class="n">left</span><span class="p">-</span><span class="n">hand</span> <span class="n">panel</span><span class="p">,</span> <span class="k">and</span> <span class="n">select</span> <span class="n">the</span> <span class="n">TCP</span> <span class="n">Remote</span>
+     <span class="n">Environment</span> <span class="n">you</span> <span class="n">configured</span> <span class="k">in</span> <span class="n">step</span> <span class="m">4</span> <span class="k">in</span> <span class="n">the</span> <span class="n">right</span><span class="p">-</span><span class="n">hand</span> <span class="n">panel</span><span class="p">.</span> <span class="n">Click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">8.</span> <span class="n">The</span> <span class="n">Cedar</span> <span class="n">Bank</span> <span class="n">Sample</span> <span class="n">Application</span> <span class="n">is</span> <span class="n">ready</span> <span class="k">to</span> <span class="n">be</span> <span class="n">invoked</span><span class="p">.</span> <span class="n">Open</span> <span class="n">the</span> <span class="n">Cedar</span> <span class="n">Bank</span>
+  <span class="n">Sample</span><span class="p">,</span> <span class="k">and</span> <span class="n">invoke</span> <span class="n">each</span> <span class="k">of</span> <span class="n">the</span> <span class="n">methods</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbsna400sp2</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbAudDeveloper</span> <span class="n">kbSNAServSearch</span> <span class="n">kbCOMTISearch</span> <span class="n">kbCOMTI400SP2</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">4.0</span> <span class="n">SP2</span><span class="p">,</span><span class="m">4.0</span><span class="n">SP2</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

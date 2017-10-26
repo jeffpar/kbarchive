@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171730: WD97: How to Retain the Template View in the New Dialog Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171730: WD97: How to Retain the Template View in the New Dialog Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171730/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171730/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171730/","publisher":null,"image":null,"headline":"Q171730: WD97: How to Retain the Template View in the New Dialog Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171730-wd97-how-to-retain-the-template-view-in-the-new-dialog-box">Q171730: WD97: How to Retain the Template View in the New Dialog Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171730
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbwordvba
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the template view (large icons, list, or details) in the New
+dialog box (on the File menu, click New), the selected view will be retained for
+the current session of Microsoft Word. When you close Word, the view reverts to
+large icons.
+
+CAUSE
+=====
+
+By default, the New dialog box for all Microsoft Office 97 programs uses the
+large icon view.
+
+WORKAROUND
+==========
+
+Microsoft provides examples of Visual Basic for Applications procedures for
+illustration only, without warranty either expressed or implied, including, but
+not limited to the implied warranties of merchantability and/or fitness for a
+particular purpose. The Visual Basic procedures in this article are provided 'as
+is' and Microsoft does not guarantee that they can be used in all situations.
+While Microsoft support professionals can help explain the functionality of a
+particular macro, they will not modify these examples to provide added
+functionality, nor will they help you construct macros to meet your specific
+needs. If you have limited programming experience, you may want to consult one
+of the Microsoft Solution Providers. Solution Providers offer a wide range of
+fee-based services, including creating custom macros. For more information about
+Microsoft Solution Providers, call Microsoft Customer Information Service at
+(800) 426-9400.
+
+The following sample Visual Basic for Applications macro provides a method you
+can use to set the view automatically each time you access the New dialog box.
+
+The example macro uses the SendKeys statement to send the required keystroke
+combination for switching views. The keystrokes for changing the view in the New
+dialog box are listed in the following table.
+
+  Press this       To display the files this way
+  -----------------------------------------------
+
+  ALT+1            Large Icons
+  ALT+2            List
+  Alt+3            Details
+
+Sample Macro
+------------
+
+     Sub FileNew()
+        SendKeys ("%3") ' To change the type of view, change this number.
+        Dialogs(wdDialogFileNew).Show
+     End Sub
+
+In this example, the New dialog box will be displayed with details (ALT+3)
+selected for the template view. To change the macro so that the dialog box
+displays the templates in list view, change the number 3 to the number 2.
+
+NOTE: The macro MUST be called FileNew for this example to work when you click
+New on the File menu.
+
+Additional query words: wordcon
+
+======================================================================
+Keywords          : kbwordvba 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

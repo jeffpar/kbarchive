@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135487: PC Ext: Running External and WAN Drives | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135487: PC Ext: Running External and WAN Drives" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135487/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135487/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135487/","publisher":null,"image":null,"headline":"Q135487: PC Ext: Running External and WAN Drives","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135487-pc-ext-running-external-and-wan-drives">Q135487: PC Ext: Running External and WAN Drives</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135487
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.2a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the External Mail program (any version) over a wide area network
+(WAN) using an integrated service digital (ISDN) line, the following error may
+occur in the SESSION.LOG when you use the DrivesDynamic and DrivesWAN options
+together in the EXTERNAL.INI file:
+
+  Network name not found: Drive in error: &lt;drive letter&gt;
+
+CAUSE
+=====
+
+If the postoffices are using routers to establish the connection, they may not
+be able to connect fast enough when the External Mail program tries to
+dynamically connect to a WAN postoffice. In this case, External thinks the
+postoffice no longer exists and marks the postoffice as being in error, even if
+mail is waiting to be sent to it. The External Mail program will wait a minimum
+of whatever the IntervalUpdate option is set to, the default is five minutes,
+before trying to resend mail to that postoffice.
+
+The Mail External program will wait a minimum period equal to the IntervalUpdate
+value (default=5 minutes) before you try to resend mail to that postoffice.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  File Name      Version
+  ----------------------
+  External.exe   3.5.23
+
+This hotfix has been posted to the following Internet location as Exty2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+
+
+WORKAROUND
+==========
+
+Either remove the DrivesDynamic option from the EXTERNAL.INI file, or lower the
+IntervalUpdate option so the External Mail program will not wait so long to
+recheck the postoffice before delivering mail.
+
+IntervalUpdate must be set to a value greater than zero in order for the second
+attempt to send mail to occur.
+
+MORE INFORMATION
+================
+
+With the DrivesWAN option in effect, checking for updates is the only
+opportunity the External Mail program has to re-establish the connection.
+Network traffic should be negligible, because it only checks FLAG.GLB to see if
+it has been updated.
+
+For additional information about the DrivesDynamic and DrivesWAN options, please
+see Chapter 12 of the "Administrator's Guide" for version 3.2 of Microsoft Mail
+for PC Networks.
+
+Additional query words: 3.20 3.20a parameter
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : WINDOWS:3.2,3.2a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

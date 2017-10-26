@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42802: DOS Redirection and QuickC Environment Command Line | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42802: DOS Redirection and QuickC Environment Command Line" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42802/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42802/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42802/","publisher":null,"image":null,"headline":"Q42802: DOS Redirection and QuickC Environment Command Line","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42802-dos-redirection-and-quickc-environment-command-line">Q42802: DOS Redirection and QuickC Environment Command Line</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42802
+Product(s): See article
+Version(s): 1.00 1.01 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 2-MAY-1989
+
+In Microsoft QuickC Versions 1.00 and 1.01, the command line can be
+entered from the RUN menu, "Set Runtime Options" screen. Version 2.00
+has the command-line screen on the OPTIONS menu, "Run / Debug" screen.
+
+The Microsoft Quick C Versions 1.00, 1.01, and 2.00 integrated
+environments do not allow DOS's "&lt;input.fil &gt;output.fil" redirection
+commands when they are entered in the "enter command line" portion of
+QuickC. They become normal arguments to the application program.
+
+In QuickC 2.00, you can achieve redirection of input and output by
+entering their commands in the "Run DOS command..." screen in the
+UTILITY menu. The disadvantage is the loss of the debugger.
+
+For redirection to be initiated, a new command process must be
+invoked. Since QuickC spawns the application program directly, no new
+COMMAND.COM is loaded. Thus, the redirection commands become arguments
+to the application.
+
+Input and output can be redirected at the execution of QuickC.
+
+For input redirection, the following command will use the contents of
+PROG.IN as the input data for the application:
+
+   qc prog.c &lt;prog.in
+
+The input will be consumed as the program requests input. When the
+input is depleted, subsequent requests for input will not be
+satisfied. Thus, the program waits forever. CTRL+BREAK or CTRL+C will
+take you back to the environment in Versions 1.00 and 1.01. Version
+2.00 does not return control back to the environment.
+
+For Version 2.00, if output is redirected on the invocation of Quick
+C, as in the following example, all of the output from the application
+program, including PROG.EXE, is sent to the file PROG.OUT at the
+beginning; and "Elapsed time 00:00:08.97. Program returned (-1). Press
+any key." is sent at the end:
+
+   qc prog.c &gt;prog.out
+
+Quick C Versions 1.00 and 1.01 will send the string "Program returned
+(-1). Press any key." to the output file after your application has
+completed.
+
+Note: DOS redirection will affect the DOS shell. If input was
+redirected, you will not be able to type "exit" in order to get back to
+QuickC.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50221: How to Resize and Turn On/Off the Text Mode (SCREEN 0) Cursor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50221: How to Resize and Turn On/Off the Text Mode (SCREEN 0) Cursor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50221/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50221/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50221/","publisher":null,"image":null,"headline":"Q50221: How to Resize and Turn On/Off the Text Mode (SCREEN 0) Cursor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50221-how-to-resize-and-turn-onoff-the-text-mode-screen-0-cursor">Q50221: How to Resize and Turn On/Off the Text Mode (SCREEN 0) Cursor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50221
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891018-112 B_BasicCom | mspl13_basic
+Last Modified: 13-DEC-1989
+
+This article demonstrates how to control the text mode cursor by
+directly accessing the BIOS with CALL INTERRUPT. There are two ways to
+control the text mode cursor. The BASIC LOCATE statement enables a
+program to position the cursor, size the cursor, and turn the cursor
+on and off. This article describes how this can be done by CALLing the
+BIOS INTERRUPT 10 hex, with function 12 hex, with subfunction 34 hex,
+which allows a program to turn the cursor on or off. BIOS INTERRUPT 10
+hex with function 1 allows a program to set the cursor size.
+
+This information applies to Microsoft QuickBASIC 4.00, 4.00b, and 4.50
+for MS-DOS and to Microsoft BASIC Compiler 6.00, and 6.00b for MS-DOS
+and Microsoft BASIC PDS 7.00 for MS-DOS.
+
+The text mode cursor and its size, blinking, and position are all
+controlled by the video hardware. The text mode cursor is not created
+by the QuickBASIC editor, compiler, or its applications. Because the
+hardware supports cursor emulation only in text mode (that is, SCREEN
+0 in BASIC) there is no graphics mode cursor. This is not a problem or
+limitation of QuickBASIC.
+
+Even though there is no hardware-generated blinking cursor in a
+graphics mode, the BIOS does keep track of the current text position.
+The program can call BIOS INTERRUPT &amp;H10 functions &amp;H2 and &amp;H3 to get
+and set the current position of the cursor. If desired, a graphics
+mode cursor can be placed on the screen by the program itself. BASIC
+uses a solid, nonblinking block cursor in graphics mode. This graphics
+mode cursor is placed there by the QuickBASIC editor and compiler.
+
+The cursor is controlled by CALLing BIOS service routines that allow
+the cursor to be enabled, disabled, and resized. The largest possible
+cursor fills one entire character box. Depending on the graphics
+adapter, one character box can have a different number of scan lines.
+For the BIOS routines to work regardless of the video adapter, the
+BIOS routines assume that there is an 8-pixel by 8-scan-line format
+for the cursor. This means that you can set the cursor to eight
+different sizes by CALLing the BIOS.
+
+For more information on CALLing both BIOS and DOS INTERRUPTs query
+on the word QB4INT.
+
+The following code example demonstrates how to use the BIOS service
+routines to turn the cursor off, turn it back on, and how to resize
+the cursor to each of the possible sizes.
+
+Code Example
+------------
+
+REM $INCLUDE: 'qb.bi'
+' FOR QBX.EXE editor the include file is 'QBX.BI'
+
+DIM inregs AS regtype, outregs AS regtype
+CLS
+' Set up the parameters to disable the cursor emulation.
+inregs.ax = &amp;H1201  ' AH = 12H for function 12H
+                    ' AL = 1 to disable the cursor.
+inregs.bx = &amp;H34    ' Subfunction 34
+' Disable the cursor:
+' For QB.EXE : run QB /L QB.QLB, or LINK to QB.LIB, to enable
+'    CALL INTERRUPT.
+' For QBX.EXE: run QBX/L QBX.QLB, or LINK to QBX.LIB, to enable
+'    CALL INTERRUPT.
+CALL interrupt(&amp;H10, inregs, outregs)
+PRINT "The cursor should be off. Hit ENTER to bring it back "
+WHILE INKEY$ = "": WEND
+
+' Set up parameters to enable cursor emulation.
+inregs.ax = &amp;H1200 ' AH = 12H for function 12H
+                   ' AL = 0 to enable the cursor.
+inregs.bx = &amp;H34   ' BX = 34H for subfunction 34H.
+
+'Enable cursor emulation.
+CALL interrupt(&amp;H10, inregs, outregs)
+
+' Even though the cursor has been enabled, it will not show.
+' This is because we need to set the size.  The following
+' loop cycles through the sizes.
+
+FOR i = 1 TO 8 ' 0 - 8 is the maximum size.
+
+   inregs.ax = &amp;H100 ' AH = 1 for function 1.
+   inregs.cx = i     ' CH = 0 for starting line.
+                     ' CL = ending line.
+   CALL interrupt(&amp;H10, inregs, outregs)
+   PRINT "Hit return to increase the cursor size: "
+   WHILE INKEY$ = "": WEND
+NEXT
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

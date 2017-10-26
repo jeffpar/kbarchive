@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34470: MASM 5.10 MACRO.DOC: File Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34470: MASM 5.10 MACRO.DOC: File Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34470/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34470/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34470/","publisher":null,"image":null,"headline":"Q34470: MASM 5.10 MACRO.DOC: File Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34470-masm-510-macrodoc-file-control">Q34470: MASM 5.10 MACRO.DOC: File Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34470
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_masm
+Last Modified: 12-JAN-1989
+
+The following information was taken from the MASM 5.10 MACRO.DOC
+file.
+
+FILE CONTROL
+
+@MakeFil (3Ch, 5Ah, 5Bh)
+
+Creates a file
+
+Syntax:         @MakeFil &amp;path [,[attrib] [,[segment] [,#kind]]]
+
+Arguments:      path        = ASCIIZ string of file
+                attrib      = File atrribute (0 is default if none
+                              given)
+                segment     = Segment of address string (DS if not
+                              given)
+                kind        = If none given, a file is always
+                              created even if one already exists. Under
+                              DOS 3+ "tmp" can be given to create a
+                              unique file or "new" to create file only
+                              if one doesn't already exist.
+Return:         If carrry clear, file handle in AX
+Registers used: Always AX, DX, and CX; DS if segment changed
+
+@OpenFil (3Dh)
+
+Opens a file for input or output
+
+Syntax:         @OpenFil &amp;path, #access [,segment]
+
+Arguments:      path        = ASCIIZ string of file
+                access      = File access code
+                segment     = Segment of address string (DS if not
+given)
+Return:         If carrry set, error code in AX
+Registers used: Always AX and DX; DS if segment changed
+
+@ClosFil (3Eh)
+
+Closes an open file handle
+
+Syntax:         @ClosFil handle
+
+Arguments:      handle      = Previously opened file handle
+Return:         If carrry set, error code in AX
+Registers used: AX and BX
+
+@DelFil (41h)
+
+Deletes a specified file
+
+Syntax:         @DelFil &amp;path [,segment]
+
+Arguments:      path        = Offset of ASCIIZ filespec
+                segment     = Segment of path (DS if none given)
+Return:         If carrry set, error code in AX
+Registers used: AX and DX; DS if segment changed
+
+@MoveFil (56h)
+
+Moves or renames a file by changing its path specification.
+
+Syntax:         @MoveFil &amp;old, &amp;new [,[segold] [,segnew]]
+
+Arguments:      old         = Offset of file spec to be renamed
+                new         = Offset of new file spec
+                segold      = Segment of old name (DS if none given)
+                segnew      = Segment of new name (ES if none given)
+Return:         If carry set, error code in AX
+Registers used: AX, DX, and DI; DS and ES if corresponding
+segments changed
+
+@GetFirst (4Eh) and @GetNext (4Fh)
+
+Parses file specifications (optionally including wild cards)
+into file names
+
+Syntax:         @GetFirst &amp;path [,[attribute] [,segment]]
+                @GetNext
+
+Arguments:      path        = Offset of ASCIIZ filespec (can
+                              have wild cards)
+                attribute   = File attribute to search for (0 for
+                              normal if none given)
+                segment     = Segment of path (DS if none given)
+Return:         If carrry set, error code in AX
+Registers used: @GetFirst   = AX, CX, and DX; DS if segment
+changed
+                @GetNext    = AX only
+
+@GetDTA (1Ah) and @SetDTA (2Fh)
+
+Gets or sets the Disk Transfer Address (DTA)
+
+Syntax:         @GetDTA
+                @SetDTA &amp;buffer [,segment]
+
+Arguments:      buffer      = Offset of new DTA buffer
+                segment     = Segment of new DTA buffer (DS if none
+given)
+Return:         @GetDTA     = ES:BX points to DTA
+                @SetDTA     = None
+Registers used: AX for both; DS and DX for @SetDTA; ES and
+BX for @GetDTA
+
+@GetFilSz (42h)
+
+Gets the file size by moving the file pointer to end of the
+file. Note that the file pointer is reset to zero. Thus this macro
+should not be called during operations that move the pointer.
+
+Syntax:         @GetFilSz handle
+
+Arguments:      handle      = Previously opened file handle
+Return:         If carrry clear, file length in DX:AX
+Registers used: AX, BX, CX, and DX
+
+@MovePrtAbs and @MovePtrRel (42h)
+
+Moves the file pointer in an open file. The pointer can be
+moved to an absolute position, or relative to its current position.
+
+Syntax:         @MovePrtAbs handle [,distance]
+                @MovePrtRel handle [,distance]
+
+Arguments:      handle      = Previously opened file handle
+                distance    = Distance to move pointer - must be a
+                              16-bit constant or a 16- or 32-bit variable;
+                              or leave blank and set distance in CX:DX
+                              before macro call
+Return:         If carrry clear, file pointer position in DX:AX
+Registers used: AX, BX, CX, and DX
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

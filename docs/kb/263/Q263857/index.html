@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q263857: Items in the ISM Are Missing or Appear Dimmed on Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q263857: Items in the ISM Are Missing or Appear Dimmed on Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/263/Q263857/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/263/Q263857/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/263/Q263857/","publisher":null,"image":null,"headline":"Q263857: Items in the ISM Are Missing or Appear Dimmed on Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q263857-items-in-the-ism-are-missing-or-appear-dimmed-on-windows">Q263857: Items in the ISM Are Missing or Appear Dimmed on Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q263857
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 28-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Internet Service Manager (ISM), which loads the Internet Information
+Server snap-in for the Microsoft Management Console (MMC), the following
+features are not available when you run Internet Information Services (IIS) 5.0
+on Microsoft Windows 2000 Professional and IIS 5.1 on Microsoft Windows XP:
+
+- The Operators tab is not listed on the property sheet of the Web site.
+- On the Directory Security tab, the Edit button in the IP address and domain
+  name restrictions section appears dimmed.
+- On the Performance tab, the Enable bandwidth throttling, Enable process
+  throttling, and Enforce limits check boxes appear dimmed on a Windows 2000
+  Professional-based computer. The Performance tab is not listed on the
+  property sheet of a Web site that is running on a Microsoft Windows XP
+  Professional-based computer.
+
+CAUSE
+=====
+
+These features are not supported in IIS 5.0 running on a Windows 2000
+Professional-based computer and IIS 5.1 running on a Windows XP
+Professional-based computer.
+
+WORKAROUND
+==========
+
+To use any of the features that are outlined in the "Symptoms" section, IIS must
+be installed on a server-based computer such as Windows 2000 Server.
+
+MORE INFORMATION
+================
+
+For additional information about running IIS on Windows 2000 Professional, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q262632 Run IIS 5.0 Instead of PWS on Windows 2000 Professional
+
+Steps to Reproduce Behavior:
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+  Information Server snap-in for the Microsoft Management Console (MMC).
+
+2. Right-click the default Web site, and then click Properties.
+
+3. Note that the Operators tab is not listed.
+
+4. Click the Directory Security tab. Note that the Edit button in the IP address
+  and domain name restrictions section appears dimmed.
+
+5. Click the Performance tab. Note that the Enable bandwidth throttling, Enable
+  process throttling, and Enforce limits check boxes appear dimmed.
+
+For additional information about starting the ISM, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+  Q263121 The Internet Services Manager MMC is Not Added to the Windows Start
+  Menu
+
+Additional query words: iis 5 pws peer personal web server services gray grayed grey greyed disabled akz
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500 kbiis510
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

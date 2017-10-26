@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89738: INFO: Handling WM_QUIT While Not in Primary GetMessage() Loop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89738: INFO: Handling WM_QUIT While Not in Primary GetMessage() Loop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89738/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89738/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89738/","publisher":null,"image":null,"headline":"Q89738: INFO: Handling WM_QUIT While Not in Primary GetMessage() Loop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89738-info-handling-wm_quit-while-not-in-primary-getmessage-loop">Q89738: INFO: Handling WM_QUIT While Not in Primary GetMessage() Loop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89738
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbSDKPlatform kbGrpDSUser kbWndw kbWndwMsg
+Last Modified: 12-JUN-1999
+
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An application can terminate while in a message loop that is different from the
+primary GetMessage() loop. If this secondary message loop retrieves the WM_QUIT
+message from the message queue, the message must be reposted so that the primary
+GetMessage() loop can exit.
+
+MORE INFORMATION
+================
+
+An application can get into a secondary message loop that is different from the
+primary GetMessage() loop in order to track drag messages, yield periodically
+during lengthy processing, and so on. The user may be able to terminate the
+application while the secondary message loop is being used to retrieve messages
+from the message queue.
+
+If the GetMessage()/PeekMessage() call used in the secondary loop specifies a
+message filter that does not include WM_QUIT, WM_QUIT will not be retrieved from
+the message queue. When the loop terminates, control will be returned to the
+primary GetMessage() loop, which retrieves the WM_QUIT message.
+
+If the GetMessage()/PeekMessage() call in the secondary loop retrieves all
+messages or specifies a message filter that includes the WM_QUIT message, the
+WM_QUIT message that is retrieved must be reposted and control must be returned
+to the primary message loop. The primary message loop will then retrieve the
+reposted WM_QUIT message and exit.
+
+     while (bNotDone)
+     {
+
+     // Secondary message loop
+     while (PeekMessage(&amp;msg, NULL, 0, 0, PM_REMOVE))
+     {
+        if (msg.message == WM_QUIT)
+        {
+           // Repost the QUIT message so that it will be retrieved by the
+           // primary GetMessage() loop.
+           PostQuitMessage(msg.wParam);
+           return FALSE;
+        }
+        // Pre-process message if required (TranslateAccelerator etc.)
+        TranslateMessage(&amp;msg);
+        DispatchMessage(&amp;msg);
+        :
+        :
+     }
+     :
+
+  }
+
+The primary message loop will not exit if the secondary message loop does not
+repost the WM_QUIT message. Consequently, the application will remain in memory
+even though all its windows are destroyed.
+
+An alternative solution is to prevent the user from terminating the application
+while the application is in the secondary message loop.
+
+Additional query words: 3.00 3.10 close
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbGrpDSUser kbWndw kbWndwMsg 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

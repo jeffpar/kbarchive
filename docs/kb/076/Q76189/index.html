@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q76189: PPT: Cannot Run Workstation Setup from a Floppy Disk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q76189: PPT: Cannot Run Workstation Setup from a Floppy Disk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/076/Q76189/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/076/Q76189/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/076/Q76189/","publisher":null,"image":null,"headline":"Q76189: PPT: Cannot Run Workstation Setup from a Floppy Disk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q76189-ppt-cannot-run-workstation-setup-from-a-floppy-disk">Q76189: PPT: Cannot Run Workstation Setup from a Floppy Disk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q76189
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:2.0e,3.0,4.0,4.0a,4.0c,7.0
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork kbsetup kbdta
+Last Modified: 15-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+- Microsoft PowerPoint for Windows, versions 2.0e, 3.0, 4.0, 4.0a, 4.0c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot run a workstation installation of PowerPoint from the floppy disks.
+In PowerPoint for Windows, versions 2.0e and 3.0, the /N parameter is for
+running PowerPoint Setup from a shared network installation of PowerPoint. In
+PowerPoint 4.0, and 7.0, the /N parameter for Setup has an entirely different
+meaning; however, you still cannot run a workstation installation from the
+floppy disks.
+
+MORE INFORMATION
+================
+
+In Program Manager, if you choose Run from the File menu and enter "a:setup /n"
+(without the quotation marks) while attempting to run a workstation installation
+of PowerPoint from the floppy disks, you receive the following error message in
+PowerPoint 2.0e:
+
+  The "/N" option is not available for this version of PowerPoint Setup. To run
+  "Setup /N", make sure that your network administrator has installed
+  PowerPoint onto the network using the "Setup /Expand" option.
+
+You receive the following error message in PowerPoint 3.0:
+
+  This shared installation of PowerPoint has not been properly installed.
+  Please contact your System Administrator
+
+You receive the following error message in PowerPoint 4.0, and 7.0:
+
+  The command line user name option (/N) must provide a double quoted string of
+  no more than 52 characters.
+
+To correctly run a workstation installation of PowerPoint versions 2.0 and 3.0,
+run Setup from the shared network administrative installation of PowerPoint
+(using the /N parameter).
+
+Note that for PowerPoint 4.0, and 7.0, the /N option does not specify an
+installation of a shared version of a product to be run from a network location.
+To install a shared version of this product, run Setup from the shared network
+administrative installation of PowerPoint 4.0, or 7.0 and select Workstation
+from the four installation options in the Setup dialog box.
+
+
+Additional query words: 2.00e 3.00 4.00 4.00a 4.00c 7.00 ppt20 ppt30 ppt40 powerpt winppt ppt95 unable
+
+======================================================================
+Keywords          : kberrmsg kbnetwork kbsetup kbdta 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbPowerPt400 kbPowerPt300 kbPowerPt200e kbPowerPt400c kbPowerPt400a
+Version           : WINDOWS:2.0e,3.0,4.0,4.0a,4.0c,7.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

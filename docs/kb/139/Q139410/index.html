@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139410: Err Msg: There are Currently No Logon Servers Available… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139410: Err Msg: There are Currently No Logon Servers Available…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139410/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139410/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139410/","publisher":null,"image":null,"headline":"Q139410: Err Msg: There are Currently No Logon Servers Available…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139410-err-msg-there-are-currently-no-logon-servers-available">Q139410: Err Msg: There are Currently No Logon Servers Available…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139410
+Product(s): Microsoft Windows NT
+Version(s): 3.5 3.51 4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an environment that relies on Windows Internet Name Service (WINS) to resolve
+NetBIOS names, the error message "There are no logon servers available to
+service the logon request" appears if you are an administrator and you do one or
+more of the following:
+
+- You attempt to remotely administer a trusted domain. For example, you use
+  File Manager to assign share permissions to users from the trusted domain.
+
+- You attempt to select the trusted domain in User Manager for Domains.
+
+CAUSE
+=====
+
+The WINS database does not have the proper domain registrations for pass-
+through authentication. See the more information section below for more
+details.
+
+This problem occurs most often in environments where the administrator has
+created a two-way trust between two previously independent domains. Most often,
+there are WINS servers in each domain and the WINS servers do not replicate
+their databases to each other.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+- Allow WINS dynamic registration.
+
+  This ensures that Domain Controllers register their DOMAIN&lt;1C&gt; NetBIOS
+  names with the WINS Server.
+
+- Make certain that WINS database replication is successful between WINS
+  Servers. Missing database entries for domain names may indicate Problems with
+  the WINS Servers and replication.
+
+To work around this problem:
+
+  NOTE: Microsoft does not recommend using static mappings in the WINS database
+  for WINS enabled computers.
+
+1. Run the WINS Administration Utility to add static mappings for the
+  Domain&lt;1C&gt; registrations (of the trusted domain) that are not listed in
+  the WINS database:
+
+     Name:        Master DOMAIN Name
+     IP Address:  Address of the Primary Domain Controller (PDC) of the
+                   domain
+     Type:        Domain Name
+ 
+
+If you are logged on as an administrator at a Domain Controller, remote
+administration works now successfully. If you are attempting to remotely
+administer the domain while logged on to a Server (not a domain controller) or
+Windows NT Workstation, you must add DOMAIN&lt;1C&gt; entries for both the
+trusted and trusting domains.
+
+MORE INFORMATION
+================
+
+To remotely administer a trusted domain, several pass-through authentication
+steps must take place. If the WINS database does not have the proper domain
+registrations, the pass-through authentication fails.
+
+For example, a trust is established between DOMAIN_A and DOMAIN_B. Server PDC_A
+is in DOMAIN_A and PDC_B is in DOMAIN_B. DOMAIN_A is the trusted (master)
+domain, and DOMAIN_B is the resource (trusting) domain. To establish this trust
+relationship, the following NetBIOS names must be resolved to IP addresses,
+either through WINS or broadcast:
+
+  NetBIOS Name      Description of Use of Name
+  ---------------------------------------------------------------------
+  DOMAIN_A&lt;1B&gt;      PDC_B uses this to query the PDC of DOMAIN_A
+  PDC_A&lt;00&gt;         PDC_B uses this to set up a session with the PDC of
+                    DOMAIN_A
+  DOMAIN_A&lt;1C&gt;      PDC_B uses this to get DC list of DOMAIN_A
+
+With these three names being registered, and if your account has administrator
+priviledges, the trust can be established and the message "The trust
+relationship was established successfully" appears. When you reboot the
+computer, or the first time you attempt remote administration, another NetBIOS
+name is needed:
+
+  NetBIOS Name   Description of Use of Name
+  ---------------------------------------------------------------------
+  DOMAIN_A&lt;1C&gt;   Each Domain Controller in DOMAIN_B uses this name to
+                 establish a secure channel with a Domain Controller in
+                 the trusted domain.
+
+The Domain Controller (DC) in the trusting domain attempts to create a secure
+channel with any DC in the trusted domain by making a multicast logon request to
+the NetBIOS name DOMAIN_A&lt;1C&gt;. This logon request is part of a process
+that creates a Secure Channel between the two DCs. The logon ID in this logon
+request is the inter-domain trust account for the trusting domain, DOMAIN_B$. If
+there is no registration for DOMAIN_A&lt;1C&gt; in the WINS database the error
+message STATUS_NO_LOGON_SERVERS is returned to the call. The message "There are
+currently no logon servers available" is then returned to the user.
+
+For additional information about special NetBIOS name registrations in WINS,
+please see the following article(s) in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q119495
+  TITLE : List of Names Registered with WINS Service
+
+Additional query words: prodnt winfile netlogon trusts access denied
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

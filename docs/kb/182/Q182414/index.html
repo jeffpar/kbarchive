@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182414: SMS: Despooler Force Disconnect Setting Alters Directory Rights | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182414: SMS: Despooler Force Disconnect Setting Alters Directory Rights" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182414/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182414/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182414/","publisher":null,"image":null,"headline":"Q182414: SMS: Despooler Force Disconnect Setting Alters Directory Rights","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182414-sms-despooler-force-disconnect-setting-alters-directory-rights">Q182414: SMS: Despooler Force Disconnect Setting Alters Directory Rights</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182414
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbDespooler smsdespooler
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In earlier versions of Systems Management Server, if a file which is contained
+in a package is being used during a package refresh, when the file is copied to
+the distribution servers, the copy operation may fail.
+
+Systems Management Server retries the package installation 100 times over a
+period of a week. If the file is still open during this time, the delivery of
+the package fails.
+
+CAUSE
+=====
+
+The Systems Management Server Despooler force disconnect logic requires that it
+removes the users access and rights to the directory to prevent users from
+accessing the package. However, because the share already exists, it does not
+restore the directory rights after updating the files.
+
+WORKAROUND
+==========
+
+The only workaround at this time is to manually change the NTFS file permissions
+on each distribution server for that shared package directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 1.2. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+To enable guaranteed package delivery, the Systems Management Server
+administrator must change the value in the following registry key to 1:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Components\SMS_DESPOOLER
+  \Use Forced Disconnect
+
+NOTE: The above registry key is one path; it has been wrapped for readability.
+
+This is a site-wide property. You cannot enable this setting per package
+distribution. You can also change the "Forced Disconnection Delay In Minutes"
+and "Number of Retries Before Forced Disconnection" registry values.
+
+However, when using the "Use Force Disconnect" setting, Systems Management Server
+Despooler will not preserve the NTFS file permissions for the shared package
+directory. It will be changed to:
+
+  &lt;SMS Service Account&gt; - Full Control.
+
+Domain Users will no longer have access to that share and will, therefore, be
+unable to run the application.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDespooler smsdespooler 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

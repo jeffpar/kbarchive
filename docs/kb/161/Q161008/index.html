@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161008: HOWTO: Add an About Box to an ActiveX Control (UserControl) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161008: HOWTO: Add an About Box to an ActiveX Control (UserControl)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161008/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161008/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161008/","publisher":null,"image":null,"headline":"Q161008: HOWTO: Add an About Box to an ActiveX Control (UserControl)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161008-howto-add-an-about-box-to-an-activex-control-usercontrol">Q161008: HOWTO: Add an About Box to an ActiveX Control (UserControl)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161008
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An ActiveX control typically exposes an About property to allow developers to
+see extra information concerning the author of the control. Microsoft Visual
+Basic allows the creation of this About property for ActiveX controls
+(UserControls).
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Open your ActiveX Control project or start a new ActiveX Control project.
+
+2. In the Project window, right-click your ActiveX control (UserControl) object.
+  Click Add, and then click Form.
+
+3. In the Professional and Enterprise Editions, double-click "About Dialog" in
+  the list of form templates. In the Control Creation Edition, there is no
+  "About Dialog" form template. Use the following steps instead:
+
+  a. Double-click "Form" in the list of form templates.
+
+  b. Change the Name of the form to "frmAbout" and the Caption to "About
+     MyApp," where MyApp is the name of your application.
+
+  c. Add a CommandButton control to the form and change its Caption to "OK" and
+     its Default property to "True".
+
+  d. Add the following code to the CommandButton control's Click event
+     procedure:
+
+        Private Sub Command1_Click()
+           Unload Me
+        End Sub
+
+  e. Add other controls to the form to give it the appearance you desire. Label
+     controls with the application's title, version, description, and
+     disclaimers are common, as is a PictureBox control for displaying the
+     application's icon and a CommandButton control for displaying "System
+     Information."
+
+4. In the Project window, right-click your ActiveX control (UserControl) object.
+  Click View Code and add the following code to your ActiveX control
+  (UserControl):
+
+        Sub ShowAboutBox()
+           frmAbout.Show vbModal
+           Unload frmAbout
+           Set frmAbout = Nothing
+        End Sub
+
+5. From the Tools menu, click Procedure Attributes.
+
+6. Select the ShowAboutBox procedure in the Name field, and then click
+  "Advanced&gt;&gt;."
+
+7. Select AboutBox from the Procedure ID field and click OK.
+
+8. Close all of the windows for the ActiveX control (UserControl) project. This
+  will put the control in run mode.
+
+9. Add a "Standard EXE" project (using Add Project in the File menu) and place
+  the ActiveX control (UserControl) on the form. The About property is shown in
+  the control's property list. If you click on the ellipses for this property,
+  the frmAbout dialog box appears.
+
+Additional query words: AboutBox kbControl kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kb ActiveX
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

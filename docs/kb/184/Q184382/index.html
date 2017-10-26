@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184382: INFO: Information Available on Using RDS in Visual C++ | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184382: INFO: Information Available on Using RDS in Visual C++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184382/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184382/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184382/","publisher":null,"image":null,"headline":"Q184382: INFO: Information Available on Using RDS in Visual C++","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184382-info-information-available-on-using-rds-in-visual-c">Q184382: INFO: Information Available on Using RDS in Visual C++</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184382
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.1,1.5,2.0,2.1,2.5,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbole kbADO100 kbADO150 kbDatabase kbMDAC _IK12479 _IK12481 _IK12483 _IK12485 _IK12491
+Last Modified: 23-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Remote Data Service for ADO versions 1.0, 1.1, 1.5, 2.0, 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article presents useful information for anyone wanting to make use of the
+Remote Data Service (RDS) of ADO within Visual C++. The following are topics
+covered in this article:
+
+- How to Obtain the Remote Data Service
+
+- RDS Resources/Points of Information
+
+- How to Find RDS Knowledge Base Articles
+
+- General Guidelines for RDS in VC++
+
+
+
+MORE INFORMATION
+================
+
+How to Obtain the Remote Data Service
+-------------------------------------
+
+The Remote Data Service (RDS) consists of two sets of components; client side and
+server side. The client-side components ship with all the Microsoft products
+which ship full or subsets of Microsoft Data Access Components (MDAC), and
+Windows 2000, where MDAC is part of the operating system. Some of these products
+are:
+
+- Internet Explorer 4.0 (contains RDS Client 1.5)
+
+- Internet Information Server 4.0
+
+- Microsoft Data Access Components (the prefered method)
+
+- Data Access SDK
+
+- Platform SDK
+
+- Windows 2000
+
+RDS components are shipped with MDAC. The latest version of both client-side and
+server-side components can be obtained with the Microsoft Data Access Components
+(MDAC), available free for download at:
+
+  http://www.microsoft.com/data/ado/rds/
+
+RDS Resources/Points of Information
+-----------------------------------
+
+The RDS Web Site, which contains the RDS components, is located at:
+
+  http://www.microsoft.com/data/ado/rds
+
+How to Find RDS Knowledge Base Articles
+---------------------------------------
+
+To find RDS articles in the Microsoft Knowledge Base on the Web, connect to:
+
+  http://msdn.microsoft.com/
+
+On this site, select "ActiveX Data Objects" as the product; the Remote Data
+Service is a feature of ADO.
+
+For the MSDN or other non-Web-based Knowledge Base search mechanisms, use the
+keyword RDS, which is included in all RDS articles.
+
+
+
+General Guidelines for RDS in VC++
+----------------------------------
+
+The best way to get RDS into your VC++ applicatin is to use the #import command
+method After you #import a DLL, there will be a .tli and a .tlh file, such as
+msadco.tli and msadco.tlh, in the build directory. Looking through these files
+will provide the objects exposed, their methods, and the syntax.
+
+  #import "c:\program files\common files\system\msadc\msadco.dll" 
+  \\for the RDS Data Control.
+
+  #import "c:\program files\common files\system\msadc\msadcf.dll" 
+ \\for the Data Factory.
+
+Of course, you also need to #import Msador15.dll to get the recordset object used
+by RDS.
+
+REFERENCES
+==========
+
+  Q189997 SRVRS.exe Uses VC++ to Get &amp; Manipulate RDS Recordset
+
+  Q190473 SAMPLE: CreateRS.exe Uses the CreateRecordset Function in VC++
+
+Additional query words: MDAC ADC data factory business objects
+
+======================================================================
+Keywords          : kbole kbADO100 kbADO150 kbDatabase kbMDAC _IK12479 _IK12481 _IK12483 _IK12485 _IK12491 kbVC420 kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport _IK955 
+Technology        : kbVCsearch kbAudDeveloper kbADOsearch kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search kbRDSSearch kbRDS110 kbRDS150 kbRDS210 kbRDS200 kbRDS250 kbRDS100
+Version           : :1.0,1.1,1.5,2.0,2.1,2.5,4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241964: HOWTO: Localize a Windows 2000 Migration DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241964: HOWTO: Localize a Windows 2000 Migration DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241964/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241964/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241964/","publisher":null,"image":null,"headline":"Q241964: HOWTO: Localize a Windows 2000 Migration DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241964-howto-localize-a-windows-2000-migration-dll">Q241964: HOWTO: Localize a Windows 2000 Migration DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241964
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kbsetup kbmigrate kbOSWin2000 kbSDKWin32 kbMigWin9xtoWin2k kbMigrationDLL kbFAQ kbDSupp
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+- Microsoft Win32 Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes two methods for localizing a Windows 2000 migration DLL
+file. It also describes using Microsoft Visual C++ to localize string tables in
+the Resource Editor.
+
+MORE INFORMATION
+================
+
+If there are many differences between multiple language versions of an
+application, a separate migration DLL file can be created to migrate each
+language version. In the QueryVersion() function, the migration DLL file should
+check whether that specific language version of the application is installed on
+the system. It should only return ERROR_SUCCESS if the targeted application is
+installed.
+
+The second method involves one migration DLL that detects and migrates multiple
+language versions of an application. It is important to consider the use of the
+CodePageArray parameter in the QueryVersion function. The CodePageArray
+parameter points to an array that contains all of the code pages supported by
+the migration DLL. The following example specifies that the migration DLL only
+supports languages that fall into the US (ANSI) code page 1252:
+
+  INT g_CodePageArray[] = {1252,-1};
+
+  LONG CALLBACK QueryVersion(LPCSTR *ProductID, LPUINT DllVersion,
+     LPINT *CodePageArray, LPCSTR *ExeNamesBuf, PVENDORINFO *VendorInfo)
+  {
+     ...
+     *CodePageArray  = g_CodePageArray;
+     ...
+  }
+
+When using the CodePageArray parameter, consider whether your application might
+be installed on a system with a different-language operating system. For
+example, is it likely that the English version of the application could be
+installed on a computer running Russian Windows 95 or 98? If so, using the
+CodePageArray parameter as shown above might prevent this valid English
+installation from being migrated, since the Cyrillic code page has not been
+specified.
+
+An alternative is to return NULL for CodePageArray. This causes Windows 2000
+Setup to call your migration DLL regardless of the user's language setting. It
+is then the responsibility of the migration DLL to determine at run time whether
+any of the targeted language versions of the application are installed.
+
+Using Visual C++ and Multiple Language Resource Scripts
+-------------------------------------------------------
+
+String tables are an excellent way to store localized strings. The Resource
+Editor in Visual C++ versions 5.0 and 6.0 allows you to maintain multiple
+language copies of the same string table. You can then let the operating system
+select a string that matches the current regional settings by using the
+LoadString API. Or you can choose to use the following low-level APIs:
+FindResourceEx, LoadResource, and LockResource.
+
+To localize a string table in Visual C++ 5.0 or 6.0, use the following steps:
+
+1. Open the resource script (.RC) containing the string tables that you want to
+  localize.
+
+2. Select the string table in the resource tree.
+
+3. On the Insert menu, click Resource Copy.
+
+4. In the Insert Resource Copy dialog box, select the desired language.
+
+5. Localize the strings for this new string table.
+
+REFERENCES
+==========
+
+For more information on Migration DLLs, see following in the MSDN Online Library
+(http://msdn.microsoft.com/library/default.htm):
+
+  Platform SDK; Management Services; Setup; Migration-Extension Interface
+
+For a list of code page identifiers, see following in the MSDN Online Library
+(http://msdn.microsoft.com/library/default.htm):
+
+  Platform SDK; Base Services; International Features; Unicode and Character
+  Sets; Unicode and Character Set Reference; Unicode and Character Set
+  Constants; Code-Page Identifiers
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbmigrate kbOSWin2000 kbSDKWin32 kbMigWin9xtoWin2k kbMigrationDLL kbFAQ kbDSupport kbGrpDSTools kbMigrationDLLFAQ 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin32SDKSearch kbAudDeveloper kbSDKSearch kbWinAdvServSearch kbWin32sSearch
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

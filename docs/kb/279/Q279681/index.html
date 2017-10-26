@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q279681: How to Force SSL Encryption for an OWA 2000 Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q279681: How to Force SSL Encryption for an OWA 2000 Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/279/Q279681/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/279/Q279681/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/279/Q279681/","publisher":null,"image":null,"headline":"Q279681: How to Force SSL Encryption for an OWA 2000 Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q279681-how-to-force-ssl-encryption-for-an-owa-2000-client">Q279681: How to Force SSL Encryption for an OWA 2000 Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q279681
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Exchange 2000 Enterprise Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Outlook Web Access 2000 (OWA), Microsoft recommends that you
+require Secure Sockets Layer (SSL) to encrypt or secure the data to ensure that
+all data is hidden from malicious users. However, when you configure Internet
+Information Services (IIS) 5.0 to require SSL for all incoming requests that are
+destined for OWA 2000, and a request comes in using non-SSL (http://), IIS
+responds with the following error message:
+
+  HTTP 403.4 - Forbidden: SSL required Internet Information Services
+
+This in turn forces the incoming client to manually type in HTTPS:// instead of
+HTTP:// to complete the SSL connection. Some administrators may want to have
+this accomplished automatically for the user so that any time a request comes in
+using HTTP://, it is redirected to HTTPS:// automatically. This eliminates any
+user interaction for the client and verifies that all incoming connections are
+SSL enabled.
+
+This article explains how to implement this solution with IIS 5.0 and OWA 2000
+with little to no impact on the user experience and server.
+
+MORE INFORMATION
+================
+
+To implement this solution, perform the following steps:
+
+1. Create an ASP page named Owahttps.asp that contains the following data, and
+  then save it in the Inetpub\Wwwroot\Owaasp directory:
+
+  NOTE: The SERVER_PORT and SERVER_NAME in the code should not be replaced with
+  an actual server port or server name. They are variables and the code snippet
+  should be copy/pasted as it is shown without modification.
+
+  &lt;%
+        If Request.ServerVariables("SERVER_PORT")=80 Then
+           Dim strSecureURL
+           strSecureURL = "https://"
+           strSecureURL = strSecureURL &amp; Request.ServerVariables("SERVER_NAME")
+           strSecureURL = strSecureURL &amp; "/exchange"
+           Response.Redirect strSecureURL
+        End If
+     %&gt;
+
+2. Open Internet Service Manager.
+
+3. Expand (double-click) Computer Name.
+
+4. Expand Default Web Site.
+
+5. Right-click the Exchange folder, and then click Properties.
+
+6. Click the Custom Errors tab.
+
+7. Double-click on the 403.4 error code.
+
+8. In the Message Type drop-down list, select URL.
+
+9. In the URL field, type "/owaasp/owahttps.asp" (without the quotation marks).
+
+10. Click OK.
+
+11. Click the Directory Security tab.
+
+12. In the Secure Communications section, click Edit.
+
+13. Click to check the Require secure channel (SSL) check box. (Click Require
+  128-bit encryption if you need to require 128-bit clients.)
+
+  NOTE: The Exchange folder is the only folder that needs to have the Required
+  setting selected for OWA to require SSL. If you have other folders that need
+  to be required, to allow for the HTTP request, verify that the OWAasp folder
+  does not have the requirement set.
+
+14. Click OK.
+
+15. Click OK.
+
+16. Type the following at a command prompt (or you can restart the server):
+
+  "net stop iisadmin /y " (without the quotation marks)
+
+  NOTE: Make a note of what services were stopped. When you use Exchange Server
+  2000, all Exchange Services stop when you stop IIS.
+
+17. Restart all stopped services.
+
+18. Test for functionality.
+
+Additional query words: iis 5 owa ssl redirect
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbExchangeSearch kbiis500 kbExchange2000Search kbExchange2000EntServ
+Version           : :5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

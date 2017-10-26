@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264976: Client Computer Is Slow to Respond After Running Boot32wn.exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264976: Client Computer Is Slow to Respond After Running Boot32wn.exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264976/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264976/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264976/","publisher":null,"image":null,"headline":"Q264976: Client Computer Is Slow to Respond After Running Boot32wn.exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264976-client-computer-is-slow-to-respond-after-running-boot32wnexe">Q264976: Client Computer Is Slow to Respond After Running Boot32wn.exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264976
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Boot32wn.exe tool or another process on a Systems Management
+Server (SMS)-based client computer, the computer service may be very slow. The
+following errors may be reported in the Wn_logon.log file:
+
+  Writing local TCF file C:\WINDOWS\MS\SMS\CORE\DATA\temp.tcf
+  $$&lt;C:\WINDOWS\MS\SMS\CORE\BIN\BOOT32WN.EXE&gt;
+  &lt;Wed May 10 09:15:12.360 2000 &gt;
+  &lt;thread=4294758987 (0xFFFCD24B)&gt;
+
+  Couldn't find line in the FILE SOURCE section of
+  \\MY_MACHINE\SMSLOGON\config\CopyLog.tcf
+  $$&lt;C:\WINDOWS\MS\SMS\CORE\BIN\BOOT32WN.EXE&gt;
+  &lt;Wed May 10 09:15:12.470 2000&gt;
+  &lt;thread=4294758987 (0xFFFCD24B)&gt;
+
+  Retry in 10 mins...
+  &lt;$$C:\WINDOWS\MS\SMS\CORE\BIN\BOOT32WN.EXE&gt;
+  &lt;Wed May 10 09:15:12.470 2000&gt;
+  &lt;thread=4294758987 (0xFFFCD24B)&gt;
+
+CAUSE
+=====
+
+This issue can occur if the client belongs to a site where the logon script has
+been modified to run Smsls.bat during the logon process. According to the log
+file, the computer attempts to connect again after 10 minutes. It continues to
+attempt to connect seven times. This process causes the client to run slowly for
+the first 70 minutes that it is logged on to the site.
+
+The error may result from a corrupt Copylog.tcf file on the primary domain
+controller (PDC) or another domain controller. You can find the .tcf file on any
+SMSLOGON share in the Config folder. If possible, check the domain controller
+that authenticated the client during its last logon attempt.
+
+A normal Copylog.tcf file contains the following entries in the File Source
+section:
+
+  [FILE SOURCE]
+  x86.bin\smsboot1.exe=ZZZ
+  x86.bin\boot32wn.exe=ZZZ
+  X86.BIN\CLICORE.EXE=ZZZ
+  x86.bin\00000409\SMSMan.exe=ZZZ
+  x86.bin\boot16wn.exe=ZZZ
+  x86.bin\00000409\SMSMan16.exe=ZZZ
+  x86.bin\CLICOR16.EXE=ZZZ
+  x86.bin\bootdwn.exe=ZZZ
+  x86.bin\00000409\Manboot.exe=ZZZ
+  x86.bin\Slwnt16.exe=ZZZ
+  x86.bin\Slwnt32.exe=ZZZ
+  alpha.bin\smsboot1.exe=ZZZ
+  alpha.bin\boot32wn.exe=ZZZ
+  alpha.BIN\CLICORE.EXE=ZZZ
+  alpha.bin\00000409\SMSMan.exe=ZZZ
+  alpha.bin\Slwnt32.exe=ZZZ
+  SITES\ZZZ\cli_inst.cfg=ZZZ
+  i386\NTLGDSCA.EXE=ZZZ
+  i386\BASEUTIL.DLL=ZZZ
+  i386\BASEOBJ.DLL=ZZZ
+  i386\SMSPERF.DLL=ZZZ
+  i386\MFC42.DLL=ZZZ
+  i386\MSVCRT.DLL=ZZZ
+  ALPHA\NTLGDSCA.EXE=ZZZ
+  ALPHA\BASEUTIL.DLL=ZZZ
+  ALPHA\BASEOBJ.DLL=ZZZ
+  ALPHA\SMSPERF.DLL=ZZZ
+  ALPHA\MFC42.DLL=ZZZ
+  ALPHA\MSVCRT.DLL=ZZZ
+  SITES\ZZZ\NETCONF.NCF=ZZZ
+  SITES\ZZZ\caplist.ini=ZZZ
+  x86.bin\00000409\RegNec98.exe=ZZZ
+
+The following text is from the File Source section in a corrupt Copylog.tcf
+file:
+
+  [FILE SOURCE]
+  SITES\ZZZ\cli_inst.cfg=ZZZ
+  SITES\ZZZ\NETCONF.NCF=ZZZ
+  SITES\ZZZ\caplist.ini=ZZZ
+
+RESOLUTION
+==========
+
+To resolve this issue, use either of the following methods:
+
+Method One
+----------
+
+1. Copy the Copylog.tcf file to another folder and open the file with a text
+  editor such as Microsoft Notepad.
+
+  NOTE: If you have an existing logon point that has not been written over or if
+  you have a copy from a good backup, then you should be able to restore the
+  file easily.
+
+2. Revise the file so that the entries match the entries that are listed in a
+  normal Copylog.tcf file.
+
+3. Set all of the site code entries to that of the senior site.
+
+4. Save the revised Copylog.tcf file in the Config folder in the SMSLOGON share
+  on the PDC.
+
+5. Start the Logon Server Manager's update cycle. The correct file then
+  overwrites the corrupt .tcf files in the domain.
+
+Method Two
+----------
+
+1. Delete the files that are referenced in the .tcf file from the PDC's SMSLOGON
+  share.
+
+2. Force the Logon Server Manager cycle to run on the senior site. The deleted
+  files are then replaced and the entries are written back to the .tcf file
+  again.
+
+The .tcf file is not generated by the senior site, rather it is generated by the
+Logon Server Manager cycle from each site. The Logon Server Manager from each
+site builds a list of files that it needs on the PDC's logon point and then
+writes this list to its unique .lcf file. The Logon Server Manager then writes
+the .lcf file to the Smslogon\Sitescfg folder. First, the PDC is updated on the
+senior site, and then each logon point is updated.
+
+MORE INFORMATION
+================
+
+This issue can be caused by different versions of the Nt_logon.dll file that
+exist among sites installed in the same domain. This situation may occur if you
+apply any fix on a site that includes an updated Nt_logon.dll file. Until SMS
+Service Pack 2 (SP2), the Logon Server Manager did not check to verify the
+entries in the .tcf file. Currently, the entries are verified by the Logon
+Server Manager and under certain conditions, for example, if there is a line
+missing from the .tcf file, incorrect syntax, a missing file, newer files being
+written, or a different site code, the line is updated by the Logon Server
+Manager.
+
+For additional information about setting or determining the senior site, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q235726 Specifying Senior Site for Windows NT Logon Point Management
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

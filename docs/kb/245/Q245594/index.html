@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245594: How to Reinstall BackOffice 4.5 Suite Components | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245594: How to Reinstall BackOffice 4.5 Suite Components" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245594/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245594/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245594/","publisher":null,"image":null,"headline":"Q245594: How to Reinstall BackOffice 4.5 Suite Components","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245594-how-to-reinstall-backoffice-45-suite-components">Q245594: How to Reinstall BackOffice 4.5 Suite Components</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245594
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.5
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 15-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can only reinstall BackOffice 4.5 Suite components by running BackOffice
+Setup. When you run BackOffice Setup, the SOFTWARE registry hive is queried to
+determine which components are already installed. If Setup detects the registry
+keys for the components, it marks the component as already installed and does
+not allow it to be reinstalled.
+
+MORE INFORMATION
+================
+
+To reinstall components, you must manually remove the registry key for a
+specific component.
+
+The following table shows the registry key that BackOffice Setup looks for to
+detect the component. These registry keys are all located under the
+HKEY_LOCAL_MACHINE\Software\Microsoft registry key.
+
+  
+  +-----------------------------------------------------------+
+  | Registry Key                 | BackOffice Suite Component | 
+  +-----------------------------------------------------------+
+  | Inetkit1                     | Intranet Publishing Kit    | 
+  +-----------------------------------------------------------+
+  | Inetkit2                     | Intranet Collaboration Kit | 
+  +-----------------------------------------------------------+
+  | BackOffice Web Administrator | Web Administration         | 
+  +-----------------------------------------------------------+
+  | BackOffice Administrator     | BackOffice Administration  | 
+  +-----------------------------------------------------------+
+  | BackOffice\Help              | BackOffice Help Files      | 
+  +-----------------------------------------------------------+
+
+The Intranet Collaboration Kit includes the Intranet Publishing Kit, so either
+Inetkit1 or Inetkit2 exists (but not both). For example, to reinstall the
+Intranet Publishing Kit on a computer that has the Intranet Collaboration Kit
+installed:
+
+1. Remove the following registry key:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Inetkit2
+
+2. Re-run BackOffice Setup and select to install the Intranet Publishing Kit and
+  the Intranet Collaboration Kit.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : winnt:4.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

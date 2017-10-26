@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37343: How to Define Your Own Font in Graphics Mode for EGA or VGA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37343: How to Define Your Own Font in Graphics Mode for EGA or VGA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37343/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37343/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37343/","publisher":null,"image":null,"headline":"Q37343: How to Define Your Own Font in Graphics Mode for EGA or VGA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37343-how-to-define-your-own-font-in-graphics-mode-for-ega-or-vga">Q37343: How to Define Your Own Font in Graphics Mode for EGA or VGA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37343
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 31-OCT-1988
+
+A programmer can create a specialized graphics font for use with the
+EGA or VGA graphics systems. The new font is installed by making a
+BIOS interrupt call. When you install your own font, none of the
+original graphics characters are available until they are reinstated.
+
+The code example below creates and installs a new user font. This font
+consists of the following four characters:
+
+   triangle
+   capital Sigma
+   the fraction 1/3 (one third)
+   a space
+
+The program displays the characters and then reinstates the original
+font and displays the original characters.
+
+This information applies to QuickBASIC Versions 4.00, 4.00b, 4.50 and
+to Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS and
+OS/2.
+
+The following is a code example:
+
+' $INCLUDE: 'q:qb.bi'
+DIM RegS AS regtype, RegL AS Regtypex
+DIM table(100)
+DATA 0,0,0,2,6,14,30,62,126,254,0,0,0,0
+DATA 0,0,0,254,64,32,16,32,64,254,0,0,0,0
+DATA 0,0,0,132,,136,158,162,70,130,14,0,0,0,0
+DATA 0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CLS
+DEF SEG = VARSEG(table(0))
+FOR i = 1 TO 56
+   READ A%      'Place the created characters into the new
+   POKE VARPTR(table(0)) + i, A%    'graphics table
+NEXT i
+DEF SEG
+
+SCREEN 9
+' set user defined font
+RegL.AX = &amp;H1121
+RegL.BX = &amp;H0
+RegL.CX = &amp;HE
+RegL.DX = 0
+RegL.DS = -1
+RegL.ES = VARSEG(table(0))
+RegL.BP = VARPTR(table(0))
+CALL InterruptX(&amp;H10, RegL, RegL)
+
+LOCATE 10, 10
+FOR i = 0 TO 3
+   PRINT CHR$(i) + CHR$(4); 'prints new user font
+NEXT
+
+'  switch back
+RegL.AX = &amp;H1122
+RegL.BX = 0
+CALL InterruptX(&amp;H10, RegL, RegL)
+
+LOCATE 12, 10
+FOR i = 0 TO 3
+   PRINT CHR$(i); " "; 'prints normal characters
+NEXT
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

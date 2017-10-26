@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191355: FIX: ATL Doesn’t Call InitCommonControls in ActiveX Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191355: FIX: ATL Doesn’t Call InitCommonControls in ActiveX Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191355/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191355/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191355/","publisher":null,"image":null,"headline":"Q191355: FIX: ATL Doesn’t Call InitCommonControls in ActiveX Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191355-fix-atl-doesnt-call-initcommoncontrols-in-activex-control">Q191355: FIX: ATL Doesn’t Call InitCommonControls in ActiveX Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191355
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:2.0,2.1
+Operating System(s): 
+Keyword(s): kbwizard kbActiveX kbATL210 kbATL210bug kbCOMt kbCtrlCreate kbVC500bug kbVC600fix kbATL
+Last Modified: 28-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL), versions 2.0, 2.1, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An ATL ActiveX control based on one of the common controls may not appear in an
+ActiveX control container.
+
+CAUSE
+=====
+
+The ATL Object Wizard doesn't add a call to InitCommonControls() when you insert
+an ActiveX control based on a common control. The call to InitCommonControls()
+is required if you use any of the common controls in your ATL ActiveX control.
+
+NOTE: If you didn't select "Support MFC" in the ATL Object Wizard when creating
+your project, then you must link with Comctl32.lib in order to call
+InitCommonControls(). Otherwise, an LNK2001 linker error may occur when calling
+InitCommonControls().
+
+Among the common controls, the richedit control is an exception. Instead of
+calling InitCommonControls(), you need to do a LoadLibrary() on Riched32.dll.
+
+RESOLUTION
+==========
+
+This problem has been fixed in Visual C++ 6.0. The ATL Object Wizard adds a call
+to InitCommonControls() for you. For richedit controls, you have to call
+LoadLibrary() and FreeLibrary() on Riched32.dll. If you're using Visual C++ 5.0
+or earlier, just add the call to InitCommonControls() before calling Create()
+for the common control. The Wizard usually calls Create() in OnCreate():
+
+     LRESULT OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam,
+                      BOOL&amp; bHandled)
+     {
+        RECT rc;
+        GetWindowRect(&amp;rc);
+        rc.right -= rc.left;
+        rc.bottom -= rc.top;
+        rc.top = rc.left = 0;
+        ::InitCommonControls();                // ADD THIS LINE
+        m_ctlSysListView32.Create(m_hWnd, rc);
+        return 0;
+     }
+
+For the richedit control, you'll need to load Riched32.dll and unload it:
+
+     BEGIN_MSG_MAP(CRichEdit6)
+        MESSAGE_HANDLER(WM_DESTROY, OnDestroy) // Add this line.
+        // ...
+     END_MSG_MAP()
+
+     HINSTANCE m_hLibRichEdit;                 // Add this line.
+
+     LRESULT OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam,
+                      BOOL&amp; bHandled)
+     {
+        RECT rc;
+        GetWindowRect(&amp;rc);
+        rc.right -= rc.left;
+        rc.bottom -= rc.top;
+        rc.top = rc.left = 0;
+        m_hLibRichEdit =
+           LoadLibrary(_T("RICHED32.DLL"));    // Add this line.
+        m_ctlRichEdit.Create(m_hWnd, rc);
+        return 0;
+     }
+
+     // Add this function.
+     LRESULT OnDestroy(UINT, WPARAM, LPARAM, BOOL&amp;)
+     {
+        m_ctlRichEdit.DestroyWindow();
+        FreeLibrary(m_hLibRichEdit);
+        return 0;
+     }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Microsoft Visual C++,
+6.0.
+
+MORE INFORMATION
+================
+
+Containers such as ActiveX Control Test Container in MFC 4.2 already call
+InitCommonControls() so this problem does not occur.
+
+Additional query words: ocx RichEdit SysListView32 SysTreeView32 SysAnimate32 SysTabControl32 rich edit listview treeview animate tab tabcontrol tooltip header hotkey image list progress slider spin buttton
+
+======================================================================
+Keywords          : kbwizard kbActiveX kbATL210 kbATL210bug kbCOMt kbCtrlCreate kbVC500bug kbVC600fix kbATL300 kbATL300fix kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : WINDOWS:2.0,2.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

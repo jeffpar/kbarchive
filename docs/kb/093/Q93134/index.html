@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93134: PC Win: Mail Message File (MMF) Compression | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93134: PC Win: Mail Message File (MMF) Compression" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93134/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93134/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93134/","publisher":null,"image":null,"headline":"Q93134: PC Win: Mail Message File (MMF) Compression","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93134-pc-win-mail-message-file-mmf-compression">Q93134: PC Win: Mail Message File (MMF) Compression</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93134
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.0 of Microsoft Mail for Windows does not compress the data in the Mail
+message file (MMF); however, it does eliminate free space left behind when
+messages are deleted. As a result, Mail keeps the MMF file as small as
+possible.
+
+Although Mail does not do data compression, some people refer to the cleanup
+process as "compression" or "background compression" and ask about "compression
+ratios." This article explains exactly what Mail does to clean up the MMF file
+after you delete objects. It also gives the amount of space used in the MMF file
+by various objects.
+
+MORE INFORMATION
+================
+
+An empty MMF file is about 32K in size. The MMF file grows as you add objects
+(messages, attachments, folders, personal addresses, linked objects, or embedded
+objects) to the MMF file. Each message requires about 128 bytes of overhead
+space and about 256 bytes for each attachment or OLE object.
+
+Because Mail does not do data compression, a 100K text file takes 100K to store
+in the MMF file.
+
+When you delete an object, Mail reuses that space in the MMF file whenever
+possible rather than constantly shrinking the MMF file because the freed space
+is usually in the middle of the MMF file. To shrink the MMF file, Mail uses a
+background process to move objects around in the MMF file, filling the holes
+left by deleted objects. By default, Mail doesn't start the background process
+until there is 300K of free space in the MMF file. It stops when there is 100K
+free. Entries can be placed in the MSMAIL.INI file to change both of these
+values.
+
+MMF File Space Used by Various Objects
+--------------------------------------
+
+1. Folders -- use anywhere from 42 to 300 bytes per entry. A quick survey of a
+  few folders in a few MMF files shows that the average is about 75 to 80 bytes
+  per entry. In addition, each folder uses about 30 bytes in the folder list
+  (the list you see to the left of a message center viewer.
+
+2. 5000K text file -- uses 5000K plus 256 bytes plus the size of the icon if the
+  text file is an attachment.
+
+3. 100K binary attachment -- uses 100K plus 256 bytes plus the size of the icon.
+
+4. Address directory with 10,000 name entries of 500 characters per entry --
+  only Personal Address Book (PAB) entries are kept in the MMF file. A PAB
+  entry of 500 characters would use about 720 bytes in the MMF file. It is
+  unlikely that anyone would have 10,000 names in their PAB. Address
+  directories other than PABs take up space in the postoffice, not in the MMF
+  file.
+
+Additional query words: 3.00 store
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

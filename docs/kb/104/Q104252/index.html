@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104252: Running MS-DOS 6.2 Step-Up over an OEM Version of MS-DOS 6.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104252: Running MS-DOS 6.2 Step-Up over an OEM Version of MS-DOS 6.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104252/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104252/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104252/","publisher":null,"image":null,"headline":"Q104252: Running MS-DOS 6.2 Step-Up over an OEM Version of MS-DOS 6.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104252-running-ms-dos-62-step-up-over-an-oem-version-of-ms-dos-60">Q104252: Running MS-DOS 6.2 Step-Up over an OEM Version of MS-DOS 6.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q104252</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Disk</span> <span class="n">Operating</span> <span class="nf">System</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">:</span><span class="m">6.2</span><span class="p">,</span><span class="m">6.22</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">18</span><span class="p">-</span><span class="n">NOV</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="n">operating</span> <span class="nf">system</span> <span class="n">versions</span> <span class="m">6.2</span><span class="p">,</span> <span class="m">6.22</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+
+<span class="n">This</span> <span class="n">information</span> <span class="n">applies</span> <span class="k">to</span> <span class="n">both</span> <span class="n">Microsoft</span> <span class="n">DoubleSpace</span> <span class="k">and</span> <span class="n">Microsoft</span> <span class="n">DriveSpace</span><span class="p">.</span>
+<span class="n">For</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.22</span><span class="p">,</span> <span class="n">use</span> <span class="n">DRVSPACE</span> <span class="k">in</span> <span class="n">place</span> <span class="k">of</span> <span class="n">DBLSPACE</span> <span class="n">for</span> <span class="n">commands</span> <span class="k">and</span> <span class="n">filenames</span><span class="p">.</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">try</span> <span class="k">to</span> <span class="n">install</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.2</span> <span class="n">Step</span><span class="p">-</span><span class="n">Up</span> <span class="n">over</span> <span class="n">an</span> <span class="n">original</span> <span class="n">equipment</span>
+<span class="n">manufacturer</span> <span class="p">(</span><span class="n">OEM</span><span class="p">)</span> <span class="k">version</span> <span class="k">of</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.0</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">receive</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span>
+<span class="n">error</span> <span class="n">messages</span><span class="p">:</span>
+
+  <span class="k">In</span> <span class="n">order</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.2</span> <span class="n">single</span><span class="p">-</span><span class="n">disk</span> <span class="n">upgrade</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">already</span> <span class="n">have</span>
+  <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.0</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">your</span> <span class="nf">system</span><span class="p">.</span>
+
+  <span class="p">-</span><span class="k">or</span><span class="p">-</span>
+
+  <span class="n">Cannot</span> <span class="n">Update</span> <span class="n">File</span><span class="p">.</span> <span class="n">Setup</span> <span class="n">could</span> <span class="k">not</span> <span class="n">update</span> <span class="n">the</span> <span class="n">following</span> <span class="n">file</span> <span class="k">to</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.2</span><span class="p">:</span>
+
+  <span class="p">&lt;</span><span class="n">filename</span><span class="p">&gt;</span>
+
+  <span class="n">Although</span> <span class="n">Setup</span> <span class="n">can</span> <span class="n">continue</span> <span class="n">without</span> <span class="n">updating</span> <span class="n">this</span> <span class="n">file</span><span class="p">,</span> <span class="n">your</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.2</span>
+  <span class="n">installation</span> <span class="n">will</span> <span class="n">be</span> <span class="n">incomplete</span><span class="p">.</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">the</span> <span class="n">first</span> <span class="n">error</span> <span class="n">message</span> <span class="n">noted</span> <span class="n">above</span><span class="p">,</span> <span class="n">you</span> <span class="n">either</span> <span class="n">have</span> <span class="n">the</span> <span class="n">OEM</span>
+<span class="s2">"base version"</span> <span class="k">of</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.0</span><span class="p">,</span> <span class="k">or</span> <span class="n">your</span> <span class="n">OEM</span> <span class="n">has</span> <span class="n">modified</span> <span class="n">the</span> <span class="n">core</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="m">6.2</span>
+<span class="nf">system</span> <span class="n">files</span> <span class="p">(</span><span class="n">IO</span><span class="p">.</span><span class="n">SYS</span><span class="p">,</span> <span class="n">MSDOS</span><span class="p">.</span><span class="n">SYS</span><span class="p">,</span> <span class="k">and</span> <span class="n">COMMAND</span><span class="p">.</span><span class="n">COM</span><span class="p">).</span> <span class="k">If</span> <span class="n">your</span> <span class="n">OEM</span> <span class="k">version</span> <span class="k">of</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span>
+<span class="m">6.2</span> <span class="n">falls</span> <span class="n">into</span> <span class="n">either</span> <span class="k">of</span> <span class="n">these</span> <span class="n">categories</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">either</span> <span class="n">obtain</span> <span class="n">your</span> <span class="n">OEM</span><span class="s1">'s
+version of MS-DOS 6.2 or obtain the MS-DOS 6.2 Upgrade. If you choose to obtain
+the MS-DOS 6.2 Upgrade, you may lose some MS-DOS functionality or features added
+to MS-DOS 6.0 by your OEM.
+
+NOTE: Step-Up cannot upgrade the OEM base version of MS-DOS 6.0 because the OEM
+base version does not include DoubleSpace, Microsoft Backup, Microsoft
+Anti-Virus, and Microsoft Undelete.
+
+If you receive the second error message noted above, your OEM has modified one or
+more of the MS-DOS 6.2 files but has not modified the core system files. In this
+case, you can successfully install MS-DOS 6.2, but some files will not be
+updated. You may be able to work around this situation by copying the MS-DOS 6.0
+OEM version of the files that were not updated from the C:\OLD_DOS.1 directory
+to the C:\DOS directory and then using SETVER.EXE to report MS-DOS as version
+6.0 to the program files that were not updated. Before doing so, contact your
+OEM to determine if this would be a safe and practical workaround.
+
+The following OEMs have modified MS-DOS 6.0 in some manner:
+
+
+- Compaq
+
+- Dell
+
+- Texas Instruments
+
+- Toshiba
+
+MORE INFORMATION
+================
+
+
+Dell
+----
+
+MS-DOS 6.2 Step-Up installs successfully, but you lose OEM-added functionality
+with the following programs:
+
+  KEYB.COM
+  POWER.EXE
+
+Texas Instruments (TI)
+----------------------
+
+TI modified core MS-DOS system files. You must either obtain the OEM version of
+MS-DOS 6.2 or the MS-DOS 6.2 Upgrade. With the MS-DOS 6.2 Upgrade, you may lose
+functionality added by TI. Texas Instruments modified the following MS-DOS 6.0
+files:
+
+  COMMAND.COM
+  DOSSETUP.INI
+  FORMAT.COM
+  IO.SYS
+  PRINT.EXE
+  SETUP.OEM
+  SYS.COM
+
+
+Toshiba
+-------
+
+Toshiba has released the Toshiba Special Enhancements Package (TSEP)for MS-DOS
+6.2. This release updates an installation of MS-DOS 6.2, adding Toshiba'</span><span class="n">s</span>
+<span class="n">special</span> <span class="n">enhancements</span> <span class="n">for</span> <span class="n">complete</span> <span class="n">compatibility</span> <span class="k">with</span> <span class="n">Toshiba</span><span class="s1">'s proprietary
+features. To use TSEP, your specific Toshiba model must be compatible with this
+release of TSEP and must already have MS-DOS 6.2 or the MS-DOS 6.2 Step-Up
+package installed on it.
+
+To obtain TSEP, download TSEP62.EXE from the Toshiba bulletin board at (714)
+837-4408. For more information, contact Toshiba Technical Support.
+
+Toshiba replaces the following MS-DOS 6.2 files:
+
+  IO.SYS
+  ANSI.SYS
+  DISPLAY.SYS
+  KEYBOARD.SYS
+  EGA.SYS
+  GRAPHICS.COM
+  GRAPHICS.PRO
+  KEYB.COM
+  MODE.COM
+  EGA.CPI
+  CGA.GRB
+  EGA.GRB
+  EGAMONO.GRB
+  MONO.GRB
+  VGA.GRB
+  VGAMONO.GRB
+  EMM386.EXE
+  FDISK.EXE
+  SMARTDRV.EXE
+  FORMAT.COM
+
+Additional query words: 6.20 "incorrect msdos.sys or io.sys"
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

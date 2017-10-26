@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83798: Paradox 3.5 Will Run Under Microsoft Windows 3.0 and 3.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83798: Paradox 3.5 Will Run Under Microsoft Windows 3.0 and 3.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83798/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83798/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83798/","publisher":null,"image":null,"headline":"Q83798: Paradox 3.5 Will Run Under Microsoft Windows 3.0 and 3.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83798-paradox-35-will-run-under-microsoft-windows-30-and-31">Q83798: Paradox 3.5 Will Run Under Microsoft Windows 3.0 and 3.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83798
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Borland's Paradox version 3.5 runs in any mode of the Microsoft Windows
+operating system version 3.0 or 3.1.
+
+The line VCPIWarning=FALSE needs to be inserted in the [386ENH] section of the
+SYSTEM.INI file. This line prevents the following error message:
+
+  ERROR: you have attempted to run a protected mode application in 386 enhanced
+  mode.
+
+Paradox normally runs in real mode or protected mode. When you run Windows 3.0 or
+3.1 in standard or 386 enhanced mode, Paradox can only be run in real mode.
+
+MORE INFORMATION
+================
+
+PIF Settings
+------------
+
+Some default program information file (PIF) settings for Paradox 3.5 may lead to
+problems in the Microsoft Windows operating system version 3.1. Depending on the
+circumstances, the -SHARE and -REAL parameters may or may not be desirable. In
+addition, the KB Required default setting is set too low in the PIF.
+
+The Windows 3.1 PIF for Paradox 3.5 uses the following optional parameters:
+
+  Standard mode: -REAL -SHARE -WIN&lt;BR/&gt;
+  Enhanced mode: -WIN
+
+The -REAL parameter slows down execution and limits the program. It is required
+for Paradox to run on a network.
+
+The -SHARE parameter allows file sharing. It also requires that SHARE.EXE be
+loaded. If SHARE.EXE is not loaded, Paradox will fail to load and will state
+that you do not have access to a required directory. This message may not be
+visible to you because the PIF is set to close on exit. Paradox will start
+loading and then return to Windows. To see the message, clear the Close Window
+On Exit check box in the PIF.
+
+The default KB Required PIF setting for Paradox under Windows 3.1 is set too low.
+To determine the best setting, experiment with higher settings in relation to
+the amount of memory available on the system.
+
+64K Contiguous Page Frame Requirement
+-------------------------------------
+
+Paradox uses expanded memory. It requires a 64K contiguous page frame but does
+not check if a contiguous page frame is available. If expanded memory is
+available, but the page frame is not 64K contiguous, Paradox will attempt to use
+expanded memory and it will crash. To work around the problem, do one of the
+following:
+
+- Rearrange hardware adapters in the machine to free up a 64K contiguous area
+  in the adapter segment (the area from A000 to EFFF hexadecimal).
+
+  -or-
+
+- Disable expanded memory support in the Paradox PIF. (This applies to enhanced
+  mode only; if you are using real or standard mode, you must disable the
+  external expanded memory manager.)
+
+Running Paradox with Other Applications that Use Expanded Memory
+----------------------------------------------------------------
+
+Under Windows 3.0 enhanced mode, expanded memory handles are global. Paradox
+assumes that no other applications are using expanded memory at the same time.
+If you want to use expanded memory with Paradox, you must ensure that no other
+application that also uses expanded memory is run simultaneously. If another
+program uses expanded memory along with Paradox, Paradox may crash. Paradox
+installs its own expanded memory manager, even under Windows.
+
+Paradox is manufactured by Borland, vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+REFERENCES
+==========
+
+"Paradox User's Guide," version 3.5, pages 266-275
+
+Additional query words: 3.0a 3.00 3.00a 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310
+Version           : WINDOWS:3.0,3.0a,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

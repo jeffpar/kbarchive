@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q324201: PRB: Object Browser Generates Incorrect Interface Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q324201: PRB: Object Browser Generates Incorrect Interface Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/324/Q324201/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/324/Q324201/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/324/Q324201/","publisher":null,"image":null,"headline":"Q324201: PRB: Object Browser Generates Incorrect Interface Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q324201-prb-object-browser-generates-incorrect-interface-code">Q324201: PRB: Object Browser Generates Incorrect Interface Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q324201
+Product(s): Microsoft FoxPro
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbAutomation kbCOMt kbXBase kbGrpDSFox kbDSupport kbvfp700
+Last Modified: 23-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Visual FoxPro 7.0 includes a new tool that is named the Object
+Browser. You can use the Object Browser to automatically generate class code
+when your class definition inherits the interface (class definition) of another
+Component Object Model (COM) component through the IMPLEMENTS statement. To do
+this, select a specific interface from the Classes and Members pane of the
+Object Browser, and then drag the interface into an empty program (.prg) file.
+
+Depending on the class that is referenced, the code that the Object Browser
+generates when it performs this operation may be code for an interface other
+than the interface that you selected.
+
+RESOLUTION
+==========
+
+The source code for the Object Browser application is included with Visual
+FoxPro 7.0. The source code is included in a file that is named Xsource.zip. By
+default, Xsource.zip is installed in the Tools\Xsource subdirectory of the
+Visual FoxPro root directory.
+
+To resolve this problem, you must extract, modify, and then rebuild the Object
+Browser application. To do this, follow these steps:
+
+1. Use WinZip, Windows Compressed Folders (in Microsoft Windows XP), or another
+  archive reader that can read .zip files to extract the OBrowser directory
+  from the Xsource.zip file.
+
+2. Right-click the OBrowser directory in Windows Explorer, click Properties, and
+  then click to clear the Read-only check box. You can also use the attrib
+  command to do this from a command prompt.
+
+3. Start Visual FoxPro, and then use the cd command to change the directory to
+  the expanded OBrowser directory.
+
+4. Run the following command from the Visual FoxPro 7.0 Command window:
+
+  modify command patchobrowser
+
+5. Paste the following code into the program window that appears:
+
+  *-----------------------------------
+  * PatchOBrowser.prg
+  * ABSTRACT: Updates the Visual FoxPro Object Browser application to
+  *           resolve problem that is outlined in Microsoft Knowledge Base *           article Q324201.
+  *-----------------------------------
+  #DEFINE CR CHR(13) + CHR(10)
+
+  CD JUSTPATH(SYS(16))
+  *~ Verify the correct location. If not, exit.
+  IF !FILE("OBJECTBROWSER.PJX")
+      MESSAGEBOX("The update .prg does not appear to be in the correct DIR." + CR + ;
+      "See the Microsoft Knowledge Base article Q324201 for details." + CR + CR + ;
+      "Exiting.",0,"MSKB Q324201")
+      RETURN .F.
+  ENDIF
+
+  CLOSE DATABASES ALL
+  RELEASE ALL
+  CLEAR ALL
+
+  WAIT WINDOW "Q324201 is patching the Object Browser. Please wait..." NOWAIT NOCLEAR
+
+  LOCAL lcNewCode AS STRING, ;
+  	lcOriginalLoop1 AS STRING, ;
+  	lcOriginalLoop1 AS STRING, ;
+  	lcNewLoop1 AS STRING, ;
+  	lcNewLoop2 AS STRING
+
+  lcNewCode = ""
+
+  *~~ First loop that needs replacing in objectbrowser::createinterfacecode
+  lcOriginalLoop1 = ;
+  	'FOR i = 1 TO loTli.CoClasses.Count' + CR + ;
+  	'	IF loTli.CoClasses(m.i).DefaultInterface.Name = ALLTRIM(lcIntName)' + CR + ;
+  	'		lcProgID = loTli.Name + "." + loTli.CoClasses(m.i).Name' + CR + ;
+  	'	ENDIF' + CR + ;
+  	'ENDFOR'
+
+  *~~ Second loop that needs replacing in objectbrowser::createinterfacecode
+  lcOriginalLoop2 = ;
+  	'lnIntCount = loTli.Interfaces.Count' + CR + ;
+  	'FOR i = 1 TO lnIntCount ' + CR + ;
+  	'	IF UPPER(loTli.Interfaces(m.i).Name) = UPPER(loNode.Text)' + CR + ;
+  	'		lnIntRef = m.i' + CR + ;
+  	'		EXIT' + CR + ;
+  	'	ENDIF' + CR + ;
+  	'ENDFOR'
+
+  *~~ Update First loop
+  TEXT TO lcNewLoop1 NOSHOW TEXTMERGE
+  *~~~ CODE INSERTED BY Microsoft Knowledge Base Article Q324201
+  LOCAL lcExact
+  lcExact = Set("Exact")
+  Set Exact On
+  *~~~~~~~
+  &lt;&lt;lcOriginalLoop1&gt;&gt;
+  *~~~ CODE INSERTED BY Microsoft Knowledge Base Article Q324201
+  Set Exact &amp;lcExact
+  *~~~~~~~
+  ENDTEXT
+
+  *~~ Update Second loop
+  TEXT TO lcNewLoop2 NOSHOW TEXTMERGE
+  *~~~ CODE INSERTED BY MSKB Article Q324201
+  LOCAL lcExact
+  lcExact = Set("Exact")
+  Set Exact On
+  *~~~~~~~
+  &lt;&lt;lcOriginalLoop2&gt;&gt;
+  *~~~ CODE INSERTED BY Microsoft Knowledge Base Article Q324201
+  Set Exact &amp;lcExact
+  *~~~~~~~
+  ENDTEXT
+
+  *~ Open the ObjectBrowser class library as a table.
+  USE objectbrowser.VCX IN 0 ALIAS "LIB"
+  SELECT LIB
+  GO TOP
+  *~ See if this program previously patched the .vcx file.
+  *~ If so, exit.
+  IF "PATCHED BY Q324201" $ UPPER(LIB.USER)
+  	WAIT CLEAR
+  	MESSAGEBOX("It appears OBJECTBROWSER.VCX has already been patched." + CR + ;
+  		"Expand a fresh copy of the Object Browser source before you try to patch it again." + CR + ;
+  		"See Microsoft Knowledge Base article Q324201 for details." + CR + CR + "Exiting.",0,"Microsoft Knowledge Base Q324201")
+  	RELEASE ALL
+  	CLOSE DATABASES ALL
+  	RETURN .F.
+  ENDIF
+
+  *~ Locate the correct record. The shipped version of this library had some deleted 
+  *~ records that were not cleaned out, therefore, the DELETED() clause in the LOCATE command.
+  LOCATE FOR ("objectbrowser" $ objname AND "createinterfacecode" $ methods) AND !DELETED()
+
+  *~ Update the code, and then write the update back to the table.
+  lcNewCode = STRTRAN(LIB.methods, lcOriginalLoop1, lcNewLoop1)
+  lcNewCode = STRTRAN(lcNewCode, lcOriginalLoop2, lcNewLoop2)
+  REPLACE LIB.methods WITH lcNewCode
+
+  *~ Update the USER field of the first record to indicate that the the .vcx file has been patched.
+  *~ Read this at the start of THIS program to make sure that it is not patched
+  *~ more than one time.
+  GO TOP IN LIB
+  REPLACE LIB.USER WITH LIB.USER + ;
+  	CR + CR + "PATCHED BY Q324201 - " + TRANSFORM(DATETIME())
+  USE IN LIB
+
+  *~ Recompile the ClassLib to make sure that the changes take effect.
+  COMPILE CLASSLIB objectbrowser.VCX
+
+  *~ Rebuild ObjectBrowser.app
+  *~
+  *~ A file that is named Vssver.scc is included in the project, but the
+  *~ physical file does not exist. This is a Microsoft Visual SourceSafe file
+  *~ and is not part of the Object Browser code. Manipulating the PJX as a table
+  *~ here removes the reference to prevent an error when the project opens and
+  *~ cannot find this file. The Home Directory project property is also updated.
+  USE objectbrowser.PJX IN 0 ALIAS "OBPJX"
+  SELECT OBPJX
+  GO TOP
+  REPLACE OBPJX.HOMEDIR WITH ADDBS(JUSTPATH(SYS(16))) + CHR(13)
+  LOCATE FOR "vssver.scc" $ OBPJX.name
+  IF !RECCOUNT("OBPJX") = RECNO("OBPJX")
+  	DELETE
+  ENDIF	
+  USE IN OBPJX
+  MODIFY PROJECT OBJECTBROWSER NOWAIT
+
+  *~ Rename the old (original) ObjectBrowser.app file, replace this file, and then cleanup.
+  RENAME HOME() + "OBJECTBROWSER.APP" TO HOME() +"OBJECTBROWSER.APP.ORIGIONAL"
+  _VFP.ACTIVEPROJECT.BUILD(HOME() + "OBJECTBROWSER.APP",2,.T.,.T.)
+  CLOSE ALL
+  WAIT CLEAR
+  MESSAGEBOX("Object Browser Updated!",0,"Microsoft Knowledge Base Q324201")
+
+6. Save the program, and then run the program:
+
+  NOTE: This program must be located in the OBrowser root directory to run
+  correctly.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+NOTE: You must install The Microsoft SOAP Toolkit before you follow these steps.
+The Microsoft SOAP Toolkit is included with the Visual FoxPro 7.0 CD. To
+download an updated version of the Microsoft SOAP Toolkit, visit the following
+Microsoft Web site:
+
+  Microsoft SOAP Toolkit
+
+1. Start Visual FoxPro 7.0.
+
+2. Clean up the Object Browser cache by deleting its working table. To do this,
+  run the following command from the Visual FoxPro 7.0 Command window:
+
+  erase home() + "wizards\objectbrowser.*" recycle
+
+A fresh copy of the cache is created the next time that the Object Browser is
+started.
+
+3. On the Tools menu, click Object Browser, and then click Open Type Library.
+
+4. Click the COM Libraries tab, click Microsoft SOAP Type Library, and then
+  click OK.
+
+5. In the left pane, click the MSSOAPLib drop-down list box, click Interfaces,
+  and then click the ISOAPTypeMapper interface.
+
+6. In the right pane, click the Methods drop-down list. Note that there are four
+  methods:
+
+   - INIT
+   - READ
+   - WRITE
+   - VARTYPE
+
+7. Run the following command in the Command window to open a new .prg file.
+
+  modify command test
+
+8. Drag the ISOAPTypeMapper interface to the Code Editor window.
+
+Notice that the methods that are listed in the right pane of the Object Browser
+for the interface that you selected do not match the code in the editor. The
+interface code is for the ISoapTypeMapperFactory interface instead.
+
+REFERENCES
+==========
+
+For additional information about the Microsoft SOAP Toolkit, visit the following
+Microsoft Developer Network (MSDN) Web site:
+
+  Microsoft SOAP Toolkit
+  (http://msdn.Microsoft.com/downloads/default.asp?URL=/code/sample.asp?url=/msdn-files/027/001/580/msdncompositedoc.xml)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbCOMt kbXBase kbGrpDSFox kbDSupport kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

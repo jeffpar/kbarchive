@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80751: MS-DOS EXPAND.EXE Functionality | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80751: MS-DOS EXPAND.EXE Functionality" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80751/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80751/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80751/","publisher":null,"image":null,"headline":"Q80751: MS-DOS EXPAND.EXE Functionality","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80751-ms-dos-expandexe-functionality">Q80751: MS-DOS EXPAND.EXE Functionality</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80751
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Most of the Microsoft MS-DOS operating system files are compressed on disk. The
+MS-DOS Setup program decompresses these files when you install MS-DOS.
+
+The MS-DOS EXPAND command is available to decompress and copy files individually.
+EXPAND is described in the "Microsoft MS-DOS User's Guide and Reference" for
+versions 5.x and in online help for MS-DOS versions 6.0 and later.
+
+The following increased functionality was added to the EXPAND command beginning
+with MS-DOS version 5.0a:
+
+- Displays two status messages
+
+- Allows multiple source file arguments
+
+- Has interactive user input
+
+- Wildcard capability for the last character of an extension
+
+MORE INFORMATION
+================
+
+When you decompress a file in MS-DOS 5.0a or later, EXPAND prints two status
+messages: one that details the full path of the source and target files, and one
+that details how many files were expanded.
+
+In MS-DOS 5.0, if you enter the command "EXPAND" (without the quotation marks)
+with no parameters, it displays the same help information as if you had entered
+the command "EXPAND /?" (without the quotation marks). However, in versions 5.0a
+and later, EXPAND is interactive. It prompts for the name of the compressed file
+and the name it should have in expanded form. For example:
+
+  c:\&gt;EXPAND
+  Type the location and name of the
+  compressed file you want to expand.
+  (Example: A:\EGA.SY_)
+
+  Compressed file: a:\himem.sy_
+
+  Type the location and/or name you
+  want to give the expanded file.
+  (Example: C:\DOS\EGA.SYS)
+
+  Expanded file: c:\dos\himem.sys
+
+  A:\HIMEM.SY_  -&gt;  C:\DOS\HIMEM.SYS
+     1 file expanded
+
+Although the MS-DOS asterisk (*) and question mark (?) wildcards are not
+supported by the EXPAND command, a limited but useful form of wildcards has been
+introduced. If the specified source file does not exist, EXPAND attempts to find
+a file with the same name and extension, except that it changes the last
+character of the extension to an underscore (_). For example, if the file
+A:\EXAMPLE.BIN does not exist, the command
+
+  expand a:\example.bi_ c:\example.bin
+
+has the same effect as:
+
+  expand a:\example.bin c:\example.bin
+
+  -or-
+
+  expand a:\example.bin c:\ 
+
+If the target file is not specified, the EXPAND command in versions 5.0a and
+later uses the same name as the source.
+
+Multiple source parameters are allowed. If multiple source parameters are used,
+the target must specify a single drive or directory. You can still use the
+following commands to re-expand the entire Shell for a VGA system in MS-DOS
+5.0:
+
+  a:\&gt;expand dosshell.co_         c:\dos\dosshell.com
+  a:\&gt;expand dosshell.ex_         c:\dos\dosshell.exe
+  a:\&gt;expand dosswap.ex_          c:\dos\dosswap.exe
+  a:\&gt;expand vga.vi_              c:\dos\dosshell.vid
+  a:\&gt;expand vga.gr_              c:\dos\dosshell.grb
+  a:\&gt;expand ega.in_              c:\dos\dosshell.ini
+
+However, you can also use the following sequence with 5.0a and later as follows:
+
+1. At the A: prompt, enter the following command on a single line:
+
+  " expand dosshell.com dosshell.exe dosswap.exe vga.vid vga.grb
+  ega.ini c:\dos " (without the quotation marks)
+
+  The following is displayed:
+
+       DOSSHELL.CO_  -&gt;  C:\DOS\DOSSHELL.COM
+     DOSSHELL.EX_  -&gt; C:\DOS\DOSSHELL.EXE
+     DOSSWAP.EX_  -&gt;  C:\DOS\DOSSWAP.EXE
+     VGA.VI_  -&gt;  C:\DOS\VGA.VID
+     VGA.GR_  -&gt;  C:\DOS\VGA.GRB
+     EGA.IN_  -&gt;  C:\DOS\EGA.INI
+             6 files expanded
+
+2. At the A: prompt, enter the following command
+
+  " copy c:\dos\?ga.* c:\dos\dosshell.* " (without the quotation marks)
+
+  and the following is displayed:
+
+     C:\DOS\VGA.VID
+     C:\DOS\VGA.GRB
+     C:\DOS\EGA.INI
+        3 file(s) copied
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 uncompress
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

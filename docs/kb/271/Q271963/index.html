@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271963: Services Do Not Start, Event ID 7023 Generates Message, ‘Duplica | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271963: Services Do Not Start, Event ID 7023 Generates Message, ‘Duplica" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271963/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271963/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271963/","publisher":null,"image":null,"headline":"Q271963: Services Do Not Start, Event ID 7023 Generates Message, ‘Duplica","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271963-services-do-not-start-event-id-7023-generates-message-duplica">Q271963: Services Do Not Start, Event ID 7023 Generates Message, ‘Duplica</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271963
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer, some services (including but not limited to the
+Workstation, Server, WWW, and FTP services) may not start, and Event Viewer may
+record the following error message:
+
+  Event ID: 7023 A Duplicate Name Exists on the Network.
+
+CAUSE
+=====
+
+This behavior can occur for the following reasons:
+
+- A multihomed computer has the WINS Client [TCP/IP] protocol or the NetBEUI
+  protocol enabled on both network adapters.
+
+- Multiple Windows Internet Naming Service (WINS) servers are present in the
+  network environment, but replication between them is not configured.
+
+- WINS clients are registering with more than one WINS server ("split
+  registration").
+
+RESOLUTION
+==========
+
+To resolve this behavior, follow these steps:
+
+1. Disable the NetBEUI protocol and the WINS Client [TCP/IP] protocol on the
+  external network adapter on the multihomed server.
+
+2. Configure the WINS servers to replicate between themselves.
+
+3. Configure the WINS servers to point to themselves on the WINS Address tab in
+  Microsoft TCP/IP Properties.
+
+MORE INFORMATION
+================
+
+For more information about disabling the NetBEUI protocol and the WINS Client
+[TCP/IP] protocol on one of your network adapters, please refer to the following
+article in the Microsoft Knowledge Base:
+
+  Q197157 Workstation Service Does Not Start
+
+For more information about configuring the WINS Address tab, please refer to the
+following article in the Microsoft Knowledge Base:
+
+  Q150737 Setting Primary and Secondary WINS Server Options
+
+For more information about configuring WINS replication, please refer to the
+following white paper, which is available on the Microsoft anonymous FTP server
+at the following location:
+
+ftp://ftp.microsoft.com/bussys/winnt/winnt-docs/papers/Winswp.doc
+
+File Name: Winswp.doc
+Title : "Windows Internet Naming Service (WINS)"
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

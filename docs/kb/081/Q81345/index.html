@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81345: Mac Fax: Fax Gateway and Fax Modem ROM Incompatibilities | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81345: Mac Fax: Fax Gateway and Fax Modem ROM Incompatibilities" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81345/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81345/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81345/","publisher":null,"image":null,"headline":"Q81345: Mac Fax: Fax Gateway and Fax Modem ROM Incompatibilities","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81345-mac-fax-fax-gateway-and-fax-modem-rom-incompatibilities">Q81345: Mac Fax: Fax Gateway and Fax Modem ROM Incompatibilities</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81345
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): WINDOWS:2.x,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, versions 2.x, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the Microsoft Mail for AppleTalk Networks Gateway to Fax, you may
+experience some problems based on ROM incompatibilities with the Orchid and
+FlexFAX fax modems.
+
+MORE INFORMATION
+================
+
+Following are some of the known problems:
+
+Orchid - ROM versions 1.07 and 1.04
+-----------------------------------
+
+- Modem dials the fax number and disconnects soon after the receiving fax
+  machine answers.
+
+-or-
+
+- Modem hangs during transmission.
+
+To verify the ROM version, use a terminal emulation program and type "ATI9
+(ATi9)" (without the quotation marks) followed by a RETURN. The modem will
+respond with the ROM version of the modem. If the version is other than 1.06,
+contact Orchid Technologies at (415) 683-0300 to ask about changing the ROM
+version to 1.06.
+
+FlexFAX
+-------
+
+- Modem disconnects during transmission.
+
+-or-
+
+- Modem hangs during transmission.
+
+To verify the ROM version, use a terminal emulation program and type "ATI0
+(ATi0)" (without the quotation marks) followed by a RETURN. The modem will
+respond with the ROM version of the modem. Contact Circuit Research at (603)
+880-4000 about obtaining the latest ROM version.
+
+Additional query words: 2.0 2.00 2.0a 2.00a 2.0b 2.00b 3.00 faxgate
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN2xSearch
+Version           : WINDOWS:2.x,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

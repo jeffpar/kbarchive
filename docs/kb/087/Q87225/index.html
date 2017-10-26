@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87225: SYSTEM.INI Settings Required for Windows Pen Extensions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87225: SYSTEM.INI Settings Required for Windows Pen Extensions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87225/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87225/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87225/","publisher":null,"image":null,"headline":"Q87225: SYSTEM.INI Settings Required for Windows Pen Extensions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87225-systemini-settings-required-for-windows-pen-extensions">Q87225: SYSTEM.INI Settings Required for Windows Pen Extensions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87225
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The text below provides a quick reference for the most important SYSTEM.INI
+configuration file settings used by version 1.0 of Microsoft Windows for Pen
+Computing (Pen Windows). This information should be useful to someone manually
+installing Pen Windows or troubleshooting a Pen Windows installation.
+
+MORE INFORMATION
+================
+
+The [boot] section
+------------------
+
+mouse.drv=    Set this field to either YESMOUSE.DRV or MOUSE.DRV. If a
+             machine has both mouse and tablet hardware installed,
+             use MOUSE.DRV. If a machine has only tablet hardware
+             installed, use YESMOUSE.DRV. YESMOUSE.DRV is a stub
+             mouse driver that merely instructs Windows to display a
+             mouse cursor. It has no other functionality.
+
+display.drv=  Set this field to the filename of a pen-enhanced
+             display driver. The names of display drivers that have
+             been modified by the Pen Windows development team end in
+             the letter "P." For example, the pen-enhanced VGA.DRV
+             file is named VGAP.DRV. Only the pen-enhanced display
+             drivers support inking.
+
+drivers=      This line lists the drivers Windows loads into memory at
+             boot time. By default, the Windows Setup program lists
+             the MMSYSTEM.DLL driver on this line. Pen Windows
+             requires two additional drivers on this line: pen and
+             penwindows (must be in lowercase letters). Each driver
+             listed on this line must also be found in the [drivers]
+             section of the SYSTEM.INI file.
+
+The [drivers] section
+---------------------
+
+pen=          Specify the name of the tablet driver in this field. If
+             the system uses the Microsoft mouse as its input device,
+             the tablet driver is MSMOUSE.DRV. Alternatively, this
+             line may list an OEM-specific driver such as NCR.DRV or
+             WACOM.DRV.
+
+penwindows=   Set this field to PENWINDOWS.DLL, which contains the
+             Pen Windows-based application programming interface (API).
+
+The [Pen Driver] section
+------------------------
+
+Com2=         Specify 0 if the tablet is connected to the COM1 port;
+             specify 1 if the tablet is connected to COM2 port. The
+             tablet works only on the COM1 or COM2 port.
+
+The [386Enh] section
+--------------------
+
+device=       If the system uses an OEM-specific tablet driver,
+             specify the name of the virtual tablet driver on this
+             line.
+
+For each of the settings listed above, if the driver is not installed in the
+Windows system directory (by default, C:\WINDOWS\SYSTEM), the fully qualified
+path to the file must be listed.
+
+For more information about the SYSTEM.INI file settings that affect Windows for
+Pen Computing, see Appendix A of the "Microsoft Windows for Pen Computing:
+Programmer's Reference" manual. Note that while the manual shows all SYSTEM.INI
+file entries, the path to the devices may not be correct.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

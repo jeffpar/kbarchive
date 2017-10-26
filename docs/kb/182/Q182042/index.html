@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182042: FIX: time() Function Overcompensates for Daylight Savings Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182042: FIX: time() Function Overcompensates for Daylight Savings Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182042/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182042/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182042/","publisher":null,"image":null,"headline":"Q182042: FIX: time() Function Overcompensates for Daylight Savings Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182042-fix-time-function-overcompensates-for-daylight-savings-time">Q182042: FIX: time() Function Overcompensates for Daylight Savings Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182042
+Product(s): Microsoft C Compiler
+Version(s): WINNT:4.0,4.0a,4.1,4.2,4.2b
+Operating System(s): 
+Keyword(s): kbcode kbCRT kbVC400fix
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.0a, 4.1, 4.2b 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The C run-time library time() function may, in some geographic locations and at
+certain times, return a time that is off by one hour to the actual time. This
+problem is specific to areas that do not use Daylight Savings Time (Japan, for
+example, or in parts of Indiana in the United States), and the problem occurs
+only at times at the beginning or end of Daylight Savings Time.
+
+CAUSE
+=====
+
+The time() function calls GetLocalTime, which returns the exact time,
+compensated for time zones and Daylight Savings Time. However, before the
+function ends it also calls the isindst() function. This function uses a
+standard formula for determining if the current date and time are part of
+Daylight Savings Time. If isindst() returns TRUE, the time is altered by 3600
+seconds (one hour).
+
+RESOLUTION
+==========
+
+This problem has been corrected in Microsoft Visual C++ versions 5.0 and later.
+If you cannot upgrade to Visual C++ 5.0, there are two workarounds to this
+problem:
+
+- Workaround 1. Call GetLocalTime() instead of time(). This method is
+  documented in the following article in the Microsoft Knowledge Base:
+
+  Q99456 Win32 Equivalents to C Run-Time Functions
+
+- Workaround 2. If possible, start the Date/Time application and clear the
+  check box to "Automatically adjust clock for daylight saving changes" (please
+  note that this workaround may not be available in all areas). When time() is
+  called, GetLocalTime will return the time adjusted for the local time zone,
+  and isindst will cause time() to adjust the time for Daylight Savings Time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Microsoft Visual C++,
+32-bit edition, versions 5.0 and later.
+
+MORE INFORMATION
+================
+
+To reproduce this problem:
+
+1. Compile the sample code below using Visual C++ 4.x.
+
+2. Open the Date/Time application and make the following changes:
+
+   - Set the time zone to GMT + 9:00 (Tokyo, Osaka, Sapporo, Seoul, Yakutsk).
+
+   - Set the time to October 25, 11:55 PM.
+
+3. Start running the application on Windows NT before the clock changes to
+  midnight, and stop running the application several seconds after midnight.
+
+4. Open the output file generated by the program. Here is a brief section of the
+  output you should see:
+
+     877849195
+     877849196
+     877849197
+     877849198
+     877849199
+     877852800  &lt;&lt; this time is 3600 seconds, or 1 hour off
+     877849201
+            .
+            .
+            .
+
+The following is sample code:
+
+  /* Compiler options needed: none */ 
+
+  #include &lt;time.h&gt;
+  #include &lt;stdio.h&gt;
+  #include &lt;fstream.h&gt;
+  #include &lt;windows.h&gt;
+
+  int main(void)
+  {
+    time_t t1;
+    ofstream ostr("timebug.txt");
+
+    for (;;)
+    {
+      time(&amp;t1);
+      ostr &lt;&lt; t1 &lt;&lt; endl;
+      Sleep(1000);
+    }
+    ostr.close();
+    return 0;
+  }
+
+Additional query words: time mktime asctime _ftime gmtime tzset
+
+======================================================================
+Keywords          : kbcode kbCRT kbVC400fix 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : WINNT:4.0,4.0a,4.1,4.2,4.2b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138065: HOWTO: Enforce Initialization of a VB OLE Class Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138065: HOWTO: Enforce Initialization of a VB OLE Class Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138065/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138065/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138065/","publisher":null,"image":null,"headline":"Q138065: HOWTO: Enforce Initialization of a VB OLE Class Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138065-howto-enforce-initialization-of-a-vb-ole-class-object">Q138065: HOWTO: Enforce Initialization of a VB OLE Class Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138065
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbcode kbVBp400
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article suggests a way to enforce the proper initialization of a Visual
+Basic OLE object that is instantiated from a class module. The class module has
+an Initialize event that is invoked each time an object of that class is
+instantiated.
+
+However, it is not possible to pass any parameters to the Initialize event of a
+class module. To implement an object constructor that takes parameters to
+properly initialize the object's members, you can define a Public method (called
+Create for example) in the class module and call it with parameters immediately
+after instantiating the object.
+
+MORE INFORMATION
+================
+
+The following step-by-step example shows how to implement a Create Method that
+enforces proper object instantiation. Note that the following statement must be
+the first statement in each method or property procedure in the class module:
+
+     If blnNotCreated Then Err.Raise vbObjectError, "MyServer", _
+        "Object Not Yet Created! Please Call the Create Method First"
+
+This will raise an error that is returned back to the client in case the Create
+Method is not called. Note also that the flag blnNotCreated is the only member
+that is set in the Initialize event. This is done to avoid the following action,
+which would result in the unnecessary overhead of the Not operator:
+
+     If Not blnCreated then Err.Raise
+
+Step-by-Step Example for Creating the Server
+--------------------------------------------
+
+1. Start a new project in Visual Basic. Insert a Class Module (Class1), and set
+  its instancing property to 1 - Creatable SingleUse and its Public property to
+  True.
+
+2. Add the following code to the Class Module:
+
+        Private intData As Integer
+        Private strData As String
+        Private blnNotCreated
+     
+        Public Function Create(param1 As Integer, param2 As _
+                     String) As Boolean
+            blnNotCreated = False
+            intData = param1
+            strData = param2
+        End Function
+     
+        Public Sub MyMethod()
+            If blnNotCreated Then Err.Raise vbObjectError, _
+             "MyServer", "Object Not Yet Created! Please Call _
+             the Create Method First"
+     
+            MsgBox strData
+        End Sub
+     
+        Private Sub Class_Initialize()
+            blnNotCreated = True
+        End Sub
+
+3. On the Tools menu, click Options, then click the Project tab, and set the
+  Project Name to MyServer.
+
+4. On the File menu, click Make EXE file to create an OLE server.
+
+Step-by-Step Example for Creating the Client
+--------------------------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. On the Tools menu, click References to add a reference to MyServer.
+
+3. Add the following code to the Form_Click event of Form1:
+
+        Private Sub Form_Click()
+           Dim x As New MyServer.Class1
+           x.Create 7, "hello"
+           x.MyMethod
+        End Sub
+
+4. Press the F5 key to run the program.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbVBp400 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

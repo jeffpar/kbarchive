@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192187: PRB: TabStrip MultiRow Only True When Placement Not Top | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192187: PRB: TabStrip MultiRow Only True When Placement Not Top" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192187/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192187/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192187/","publisher":null,"image":null,"headline":"Q192187: PRB: TabStrip MultiRow Only True When Placement Not Top","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192187-prb-tabstrip-multirow-only-true-when-placement-not-top">Q192187: PRB: TabStrip MultiRow Only True When Placement Not Top</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192187
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When setting the Placement property of the TabStrip control to any setting other
+then 0-tabPlacmentTop, the MultiRow property will always be True. You can only
+set the MultiRow property to False if the Placement property is set to
+0-tabPlacmentTop.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When you set the TabStrip control's Placement property to any value other then
+0-tabPlacmentTop, the MultiRow property will change to True. If you have the
+Placement property set to a value other then 0-tabPlacmentTop and you then
+change the MultiRow property to False, the Placement property will reset to
+0-tabPlacmentTop.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. From the Project menu, select Components, check "Microsoft Windows Common
+  Controls 6.0," and then click OK.
+
+3. Add a TabStrip Control and two CommandButtons to Form1.
+
+4. Add the following to the code window of Form1:
+
+        Private Sub Command1_Click()
+          TabStrip1.Placement = tabPlacementLeft
+          Debug.Print "Tab placement is", TabStrip1.Placement
+          Debug.Print "Tab MultiRow is", TabStrip1.MultiRow
+        End Sub
+
+        Private Sub Command2_Click()
+          TabStrip1.MultiRow = False
+          Debug.Print "Tab placement is", TabStrip1.Placement
+          Debug.Print "Tab MultiRow is", TabStrip1.MultiRow
+        End Sub
+
+        Private Sub Form_Load()
+          Dim i As Integer
+          ' add some tabs
+          TabStrip1.Tabs.Add
+          TabStrip1.Tabs.Add
+          ' place some long captions on the tabs
+          For i = 1 To TabStrip1.Tabs.Count
+            TabStrip1.Tabs(i).Caption = "This is a long caption number " _
+              &amp; Str(i)
+          Next i
+          ' set the tabs to be on top and MultiLine to False
+          TabStrip1.Placement = tabPlacementTop
+          TabStrip1.MultiRow = False
+          Command1.Caption = "Change Placement"
+          Command2.Caption = "Change MultiRow"
+        End Sub
+
+5. Save and run the Project. Click on the Change Placement button. You will see
+  the tab placement on the left but you will see more then one row of tabs.
+  Click on Change MultiRow and you will see that the tab placement goes back to
+  the top, but you only have one line of tabs.
+
+Additional query words: kbDSupport kbDSD kbVBp kbVBp600 kbCtrl kbCmnCtrls
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

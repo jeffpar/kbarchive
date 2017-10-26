@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q214756: &quot;Path Not Found&quot; When Connecting to a Novell NetWare Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q214756: &quot;Path Not Found&quot; When Connecting to a Novell NetWare Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/214/Q214756/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/214/Q214756/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/214/Q214756/","publisher":null,"image":null,"headline":"Q214756: &quot;Path Not Found&quot; When Connecting to a Novell NetWare Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q214756-path-not-found-when-connecting-to-a-novell-netware-server">Q214756: "Path Not Found" When Connecting to a Novell NetWare Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q214756
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork 3rdpartynet kb3rdPartyNetClient
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to a Novell NetWare server with a computer running
+Microsoft Windows NT 4.0 using Gateway (and Client) Services for NetWare (GSNW),
+you may receive the following error message:
+
+  Error 53 - The network path is not found
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Verify that the GSNW software is properly installed. Click Start, point to
+  Settings, click Control Panel, and then double-click Network.
+
+2. Click the Services tab, click Gateway Service for NetWare, click Remove, and
+  then click Yes.
+
+3. Click the Protocols tab, click NWLink IPX/SPX Compatible Transport, click
+  Remove, click Yes, click Close, and then restart the computer when you are
+  prompted.
+
+4. After the computer restarts and you log on, click Start, point to Settings,
+  click Control Panel, and then double-click Network.
+
+5. Click the Protocols tab, click Add, and then double-click NWLink IPX/SPX
+  Compatible Transport. When you are prompted, type the full path to the
+  installation files folder (for example, D:\I386), and then click Continue.
+
+6. When you are prompted to restart the computer, click Do Not Restart Windows.
+
+7. Reapply the latest Windows NT 4.0 service pack. For information about
+  obtaining and installing the latest service pack for Windows NT 4.0, see the
+  following article in the Microsoft Knowledge Base:
+
+  Q152734How to Obtain the Latest Windows NT 4.0 Service Pack
+
+8. Restart the computer when the service pack installation is complete.
+
+9. Verify that you have properly configured a preferred NetWare server when you
+  log on. Click Start, point to Settings, click Control Panel, and then
+  double-click GSNW.
+
+10. In the list of available NetWare servers, click the appropriate server name,
+  and then click OK.
+
+11. Verify that the NWLINK IPX/SPX protocol is configured correctly. For
+  information on how to do this, please refer to the following article in the
+  Microsoft Knowledge Base:
+
+  Q166963Cannot Communicate with Computer Running NWLink IPX/SPX
+
+  NOTE: You can obtain the correct values for your network installation by
+  typing "config" (without the quotation marks) at a NetWare server console
+  command line.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 3rdpartynet kb3rdPartyNetClient 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

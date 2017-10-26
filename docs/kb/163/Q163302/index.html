@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163302: PPT: Sample VB Code to Retrieve the Title of a Graph | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163302: PPT: Sample VB Code to Retrieve the Title of a Graph" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163302/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163302/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163302/","publisher":null,"image":null,"headline":"Q163302: PPT: Sample VB Code to Retrieve the Title of a Graph","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163302-ppt-sample-vb-code-to-retrieve-the-title-of-a-graph">Q163302: PPT: Sample VB Code to Retrieve the Title of a Graph</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163302
+Product(s): Microsoft PowerPoint for Windows
+Version(s): MACINTOSH:98; WINDOWS:97
+Operating System(s): 
+Keyword(s): kbcode kbmacro kbProgramming kbdta kbdtacode KbVBA _IK11573
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint 98 Macintosh Edition 
+- Microsoft PowerPoint 97 for Windows 
+- Microsoft Visual Basic for Applications 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains two sample Microsoft Visual Basic for Applications macros
+(Sub procedures) that retrieve the title of a Microsoft Graph version 8.0
+object. The second example detects whether more than one Microsoft Graph version
+8.0 object is selected.
+
+MORE INFORMATION
+================
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+Example 1
+---------
+
+    Sub GetGraphTitle()
+
+       ' Used for error trapping.
+       On Error Resume Next
+
+       ' Clear the error object.
+       Err.Clear
+
+       ' A reference to an object.
+       Dim oGraph As Object
+
+       ' Check if an OLE object is selected.
+       Set oGraph = ActiveWindow.Selection.ShapeRange(1).OLEFormat.Object
+       If Err.Number &lt;&gt; 0 Then
+
+        ' A run-time error is generated if the selection is not an OLE
+        ' object. This code traps the run-time error and prevents it from
+        ' appearing.
+        MsgBox "Select one graph and run the macro again.", vbExclamation
+        End
+       End If
+
+       ' Check to see whether the graph has a title.
+       If oGraph.HasTitle Then
+
+        ' A run-time error is generated if the selection if not a
+        ' Graph object. This code traps the run-time error and prevents it
+        ' from appearing.
+        If Err.Number &lt;&gt; 0 Then
+           MsgBox "Select one graph and run the macro again.", vbExclamation
+           End
+        End If
+
+        ' The graph has a title.
+        MsgBox oGraph.ChartTitle.Text, vbInformation, "Graph Title"
+       Else
+
+        ' The graph does not have a title.
+        MsgBox "The selected graph has no title.", vbInformation, "No Title"
+       End If
+
+     End Sub
+
+Example 2
+---------
+
+   Sub GetGraphTitle()
+
+       ' Declare the variables.
+       Dim strErrorPrompt As String
+       Dim strErrorTitle As String
+       Dim shapeGraph As Shape
+       Dim oGraph As Object
+
+       ' Check to see whether the selection is a shape.
+       If ActiveWindow.Selection.Type &lt;&gt; ppSelectionShapes Then
+
+        ' The selection is not a shape.
+        ' Set up the message box.
+        strErrorPrompt = "The selection is not a graph." _
+           &amp; " Please select a graph and run the macro again."
+        strErrorTitle = "No Graph Selected"
+
+        ' Display the message.
+        MsgBox strErrorPrompt, vbExclamation, strErrorTitle
+
+        ' Stop the macro.
+        End
+       End If
+
+       ' Check to see whether more than one object is selected.
+       If ActiveWindow.Selection.ShapeRange.Count &gt; 1 Then
+
+        ' Set up the message box.
+        strErrorPrompt = "More than one object is selected." _
+           &amp; " Please select one graph and run the macro again."
+        strErrorTitle = "Too Many Objects Selected."
+
+        ' Display the message box.
+        MsgBox strErrorPrompt, vbExclamation, strErrorTitle
+
+        ' Stop the macro.
+        End
+       End If
+
+       ' Check to see whether the selection is an OLE object.
+       Set shapeGraph = ActiveWindow.Selection.ShapeRange(1)
+       If shapeGraph.Type &lt;&gt; msoEmbeddedOLEObject Then
+
+        ' The selection is not a graph.
+        strErrorPrompt = "The selection is not a graph." _
+        &amp; " Please select a graph and run the macro again."
+        strErrorTitle = "No Graph Selected."
+
+        ' Display the message.
+        MsgBox strErrorPrompt, vbExclamation, strErrorTitle
+
+        ' Stop the macro.
+        End
+
+       End If
+
+       ' Check to see whether the selection is a graph object.
+       If shapeGraph.OLEFormat.ProgID &lt;&gt; "MSGraph.Chart.8" Then
+
+        ' The selection is not a graph.
+        strErrorPrompt = "The selection is not a graph." _
+        &amp; " Please select a graph and run the macro again."
+        strErrorTitle = "No Graph Selected"
+
+        ' Display the message.
+        MsgBox strErrorPrompt, vbExclamation, strErrorTitle
+
+        ' Stop the macro.
+        End
+
+       End If
+
+       ' A graph is selected.
+       Set oGraph = shapeGraph.OLEFormat.Object
+
+       If oGraph.HasTitle Then
+
+        ' Get the title and display a message box.
+        MsgBox oGraph.ChartTitle.Text, vbInformation, "Graph Title"
+
+       Else
+        ' The graph has no title.
+        MsgBox "The selected graph has no title.", vbInformation, "No Title"
+
+       End If
+
+     End Sub
+
+REFERENCES
+==========
+
+For more information about creating Visual Basic for Applications macros, click
+the Office Assistant in Microsoft PowerPoint, type "how to create a macro"
+(without the quotation marks) click Search, and then click to view "Create a
+macro in Visual Basic Editor."
+
+For more information about running Visual Basic for Applications macros, click
+the Office Assistant in Microsoft PowerPoint, type "how to run a macro" (without
+the quotation marks) click Search, and then click to view "Run a macro."
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If the Assistant is not able to answer your query, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q176476 OFF: Office Assistant Not Answering Visual Basic Questions
+
+For more information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: 8.00 ppt8 vba vbe macppt mac_ppt ppt98 powerpt
+
+======================================================================
+Keywords          : kbcode kbmacro kbProgramming kbdta kbdtacode KbVBA _IK11573 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbZNotKeyword6 kbPowerPt97 kbPowerPt97Search kbPowerPt98Search kbPowerPt98 kbVBASearch kbZNotKeyword3
+Version           : MACINTOSH:98; WINDOWS:97
+Hardware          : MAC x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107571: Running SNA Server Win16, OS/2, or MS-DOS Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107571: Running SNA Server Win16, OS/2, or MS-DOS Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107571/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107571/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107571/","publisher":null,"image":null,"headline":"Q107571: Running SNA Server Win16, OS/2, or MS-DOS Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107571-running-sna-server-win16-os2-or-ms-dos-applications">Q107571: Running SNA Server Win16, OS/2, or MS-DOS Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107571
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11; :2.0,2.1,2.11,3.0,4.0
+Operating System(s): 
+Keyword(s): kbnetwork sna4
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+- Microsoft SNA Workstation for Windows NT, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While Windows NT or Windows NT Advanced Server supports Windows 3.x, MS- DOS,
+and character-based OS/2 applications, SNA Application Programming Interface
+(API) support on Windows NT varies depending on the SNA Server version being
+used.
+
+MORE INFORMATION
+================
+
+SNA Server Version 2.0
+----------------------
+
+The SNA Server version 2.x CD-ROM includes SNA client software for Windows NT,
+Windows 3.x, MS-DOS, and OS/2 clients. However, only 32-bit Windows SNA
+applications are designed to work with the SNA Server Windows NT client
+software. Any SNA application designed to run on these other client platforms
+are only supported on their native platform type. To summarize:
+
+- Windows 3.x., MS-DOS or OS/2-based SNA applications are not supported on the
+  SNA Server Windows NT client.
+
+- Windows 3.x SNA applications are not supported with the SNA Server Windows
+  3.x client software when run on a Windows NT machine.
+
+- OS/2 SNA applications are not supported with the SNA Server OS/2 client
+  software when run from a Windows NT machine.
+
+- MS-DOS SNA applications are not supported with the SNA Server MS-DOS client
+  software when run from a Windows NT machine.
+
+NOTE: SNA Workstation 2.0, the standalone Windows NT version of SNA Server 2.0,
+includes Win32 SNA API support for all APIs (APPC, CPIC, LUA, CSV, and 3270
+EIS), though no SNA API support for Win16, MS-DOS or OS/2.
+
+SNA Server Version 2.1
+----------------------
+
+The SNA Server version 2.x CD-ROM includes SNA client software for Windows NT,
+Windows 3.x, MS-DOS, and OS/2 clients.. Under Windows NT, you can install either
+the SNA Server Windows NT client or the SNA Server Windows 3.x client, but not
+both. Only 32-bit Windows SNA applications are designed to work with the SNA
+Server Windows NT client software. Any SNA application designed to run on other
+client platforms are supported only on their native platform type. To
+summarize:
+
+- Windows 3.x, MS-DOS, and OS/2-based SNA applications are not supported on the
+  SNA Server Windows NT client.
+
+- Windows 3.x SNA applications are supported with the SNA Server Windows 3.x
+  client software when run on a computer running Windows NT.
+
+- OS/2 SNA applications are not supported with the SNA Server OS/2 client
+  software when run from a computer running Windows NT.
+
+- MS-DOS SNA applications are not supported with the SNA Server MS-DOS client
+  software when run from a computer running Windows NT.
+
+NOTE: SNA Workstation 2.0, the standalone Windows NT version of SNA Server 2.0,
+includes Win32 SNA API support for all APIs (APPC, CPIC, LUA, CSV, and 3270
+EIS), though no SNA API support for Win16, MS-DOS or OS/2.
+
+SNA Server Version 2.11
+-----------------------
+
+SNA Server 2.11 supports "thunking" of many of the Windows 3.x SNA APIs on the
+SNA Server Windows NT client software. This applies to APPC, CPIC, CSV, LUA, and
+EHNAPPC interfaces. This will allow many Windows 3.x SNA applications to run on
+the SNA Server Windows NT client software. However, the SNA Server Windows 3.x
+Emulator Interface Specification (or "EIS", used by many 3270 emulation
+products) is not supported on the SNA Server 2.11 Windows NT client software.
+For more information about the 3270 EIS interface, see the SNA Server 3270
+Emulator Interface Specification included in softcopy form on the SNA Server
+CD-ROM.
+
+NOTE: To support the Win16 SNA APIs on the SNA Server Win32 SNA client software,
+the special thunking versions of the Win16 client DLLs must be manually
+installed into the &lt;SNAROOT&gt;\SYSTEM directory. These DLLs can be found on
+the SNA Server 2.11 compact disc in the \CLIENTS\WINNT\I386\SYSTEM\THUNK
+directory.
+
+NOTE: SNA Workstation 2.11, the standalone Windows NT version of SNA Server 2.11,
+includes Win32 SNA API support for all APIs (APPC, CPIC, LUA, CSV and 3270 EIS),
+as well as Win16 SNA API support for APPC, CPIC, LUA, and CSV (but not 3270 EIS)
+by applying the thunk version of the DLL's as described above.
+
+SNA Server Versions 3.0 and 4.0
+-------------------------------
+
+The SNA Server version 3.0 and 4.0 CD-ROM includes client software for Windows
+NT, Windows 3.x, MS-DOS and OS/2 clients. The SNA Server 3.0 and 4.0 Windows NT
+client software support is unchanged from 2.11, where the Win32 SNA APIs are
+supported, as well as most of the Win16 SNA APIs are supported (by applying the
+thunk DLLs).
+
+NOTE: SNA Workstation Version 3.0 and 4.0 support is the same as SNA Workstation
+Version 2.11 in this area.
+
+Microsoft is interested in customer requests for such cross-platform SNA
+application support on Windows NT. Please let us know the specific SNA
+application (and platform it was written for) so that we can consider this in a
+future release.
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork sna4 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11; :2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

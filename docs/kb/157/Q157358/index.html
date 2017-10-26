@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157358: XCON: Per-Domain-Bilateral-Info and Third Party Systems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157358: XCON: Per-Domain-Bilateral-Info and Third Party Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157358/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157358/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157358/","publisher":null,"image":null,"headline":"Q157358: XCON: Per-Domain-Bilateral-Info and Third Party Systems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157358-xcon-per-domain-bilateral-info-and-third-party-systems">Q157358: XCON: Per-Domain-Bilateral-Info and Third Party Systems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157358
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbusage
+Last Modified: 04-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, Microsoft Exchange Server sends Per-Domain-Bilateral- Info as an
+argument in each message that it submits for delivery via the Microsoft Exchange
+X.400 Connector.
+
+Interoperability between Microsoft Exchange and certain foreign X.400 systems
+(some ISODE-based Message Transfer Agents in particular) might require Microsoft
+Exchange to be configured so that bilateral information is not sent with
+messages.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in Microsoft Exchange Service Pack 3.
+For information on obtaining the Service Pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+This ability can be configured via the Windows NT Registry as follows:
+
+1. Start Regedt32.exe.
+
+2. Go to HKEY_LOCAL_MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES
+  \MSExchangeMTA\Parameters
+
+3. Add a value name (i.e. click on Edit-Add Value with the Parameters folder
+  highlighted) called "Do not generate Bilateral Info" as type REG_DWORD and a
+  hex value of 1. Important: This is case-sensitive and must be typed exactly
+  as it is printed here:
+
+  value 0x1 (0 is the default).
+
+To avoid the loop detection, when a message enters new Microsoft Exchange Site,
+the MTA adds Per Domain Bilateral Information to the P1 Envelope to indicate the
+names of the Sites the message has passed through. During the loop detection, if
+the message reenters a Site, we check this mandatory Bilateral info to generate
+an NDR. Some 3rd party MTAs do not understand the mandatory Bilateral
+information, hence the registry key.
+
+For additional information regarding the Per-domain-bilateral-information
+argument, please refer to the CCITT Blue Book, Rec. x.411, Clause 12.2.1.1.1.2.
+
+Additional query words: BIlateral domain registry
+
+======================================================================
+Keywords          : kb3rdparty kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

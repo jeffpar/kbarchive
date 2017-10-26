@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271777: Distributed Applications with Visual C++ 6.0 Training Kit Commen | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271777: Distributed Applications with Visual C++ 6.0 Training Kit Commen" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271777/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271777/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271777/","publisher":null,"image":null,"headline":"Q271777: Distributed Applications with Visual C++ 6.0 Training Kit Commen","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271777-distributed-applications-with-visual-c-60-training-kit-commen">Q271777: Distributed Applications with Visual C++ 6.0 Training Kit Commen</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271777
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Distributed Applications with Microsoft Visual C++ 6.0 MCSD Training Kit ISBN 0-7356-0926-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Distributed Applications with Microsoft
+Visual C++ 6.0 MCSD Training Kit, ISBN 0-7356-0926-8.
+
+The following topics are covered:
+
+- CD-ROM: Duwamish Files Are Not Included
+
+- CD-ROM: Missing Code Sample Files For Chapter 4 Exercise 2
+
+- CD-ROM: CreatePHTable.sql and PHImportData.txt Files Are Not Included
+
+- Page 212: Replace Parentheses With Brackets
+
+- Pages 281 and 282: Code Errors
+
+- Pages 298 and 776: Incorrect Question And Answer
+
+MORE INFORMATION
+================
+
+CD-ROM: Duwamish Files Are Not Included
+---------------------------------------
+
+The Duwamish files mentioned on pages 51-56 are not included on the companion
+CD-ROM. These files are available for download from the Microsoft Developer
+Network (MSDN) web site at:
+
+  http://msdn.microsoft.com/default.asp.
+
+
+CD-ROM: Missing Code Sample Files For Chapter 4 Exercise 2
+----------------------------------------------------------
+
+The files in C:\DISV\Labs\Ch04\Ex02 do not match the exercise in the book as
+outlined on pages 201-210. The DISVCh4X2.EXE self-extracting executable file
+contains the correct sample files for this exercise.
+
+The following file is available for download from the Microsoft Download Center:
+
+  DISVCh4X2.exe
+  (http://download.microsoft.com/download/vc60pro/DISVC4X2/1.0/WIN98/EN-US/DISVCh4X2.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+CD-ROM: CreatePHTable.sql and PHImportData.txt Files Are Not Included
+---------------------------------------------------------------------
+
+The CreatePHTable.sql and PHImportData.txt files mentioned on page 475 are not
+included on the companion CD-ROM. We have included the two files in a
+self-extracting file available for download in the Microsoft Download Center.
+The following file is available for download from the Microsoft Download
+Center:
+
+  DISVDB.EXE
+  (http://download.microsoft.com/download/vc60ent/mspress/1.0/WIN98Me/EN-US/DISVDB.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Page 212: Replace Parentheses With Brackets
+-------------------------------------------
+
+On page 212, Steps 4 and 5 should have brackets after the code statement rather
+than parentheses. Change:
+
+  if(Dib.Load(&amp;DibFile))
+  )
+
+To:
+
+  if(Dib.Load(&amp;DibFile))
+  {
+
+Also change:
+
+  CDIBPal* pTemp = new CDIBPal;
+  ASSERT(pTemp != NULL);
+  if(pTemp-&gt;Create(&amp;Dib))
+  )
+
+To:
+
+  CDIBPal* pTemp = new CDIBPal;
+  ASSERT(pTemp != NULL);
+  if(pTemp-&gt;Create(&amp;Dib))
+  {
+
+
+Pages 281 and 282: Code Errors
+------------------------------
+
+On page 281, in the second line from the bottom,
+
+Change:
+
+  return m_pParent-&gt;QueryInterface(riid,ppv);
+
+To:
+
+  return m_pParent-&gt;InternalQueryInterface(riid,ppv);
+
+On page 282, in the third line
+
+Change:
+
+  return m_pParent-&gt;AddRef();
+
+To:
+
+  return m_pParent-&gt;InternalAddRef();
+
+On page 282, in the seventh line,
+
+Change:
+
+  return m_pParent-&gt;Release();
+
+To:
+
+  return m_pParent-&gt;InternalRelease();
+
+
+Pages 298 and 776: Incorrect Question And Answer
+------------------------------------------------
+
+On pages 298 and 776, change question 4, and its answer, as follows.
+
+On page 298 change the question from:
+4. What are the four interfaces that every COM class must implement?
+
+To:
+4. What is the interface that all COM classes must support?
+
+On page 776, change the question and corresponding answer from:
+4. What are the four interfaces that every COM class must implement?
+IUnknown, QueryInterface, AddRef, and Release are the standard interfaces
+developed by Microsoft for use with COM, as opposed to any custom interfaces
+that you develop within your own code.
+
+To:
+4 What is the interface that all COM classes must support?
+IUnknown is the interface that all COM classes must support. All interfaces
+inherit from IUnknown. The methods of IUnknown are QueryInterface, AddRef, and
+Release."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: TKBOOK DEVBOOK VSTUDIO VC 0-7356-0926-8
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

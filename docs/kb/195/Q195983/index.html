@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195983: PRB: DataGrid Control Does Not Return Contents of Edited Cell | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195983: PRB: DataGrid Control Does Not Return Contents of Edited Cell" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195983/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195983/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195983/","publisher":null,"image":null,"headline":"Q195983: PRB: DataGrid Control Does Not Return Contents of Edited Cell","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195983-prb-datagrid-control-does-not-return-contents-of-edited-cell">Q195983: PRB: DataGrid Control Does Not Return Contents of Edited Cell</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195983
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.5,2.6,6.0
+Operating System(s): 
+Keyword(s): kbcode kbCtrl kbDatabase kbMDAC kbVBp600 kbGrpDSVBDB kbDSupport kbCodeSam kbMDAC260
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Data Access Components versions 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft DataGrid Control 6.0 (OLEDB) does not return the contents of an
+edited cell.
+
+Using the CellText properties of the Column object returns the original value of
+the text currently in the cell and not the text the user has edited. This
+behavior differs from the Data Bound Grid Control that returns the value of the
+user-edited text.
+
+This scenario may be problematic for a developer who would like to validate the
+contents of the cell before the contents are placed in the recordset.
+
+RESOLUTION
+==========
+
+The DataGrid control provides a window handle to the cell being edited. Using
+this handle and the GetWindowText API, the developer can get the contents of the
+edited cell before the contents are saved in the recordset.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open a new Visual Basic project and add a reference to the "Microsoft ActiveX
+  Data Objects Library." Also add the "Microsoft ADO Data Control" and the
+  "Microsoft DataGrid control" to the project's component list.
+
+2. Add a DataGrid (DataGrid1) and an ADO Data Control (ADODC1) to the default
+  Visual Basic form (Form1).
+
+3. Set the ConnectionString property of the ADO Data Control (ADODC1) to the
+  following (make sure to modify the path to reflect the location of the Biblio
+  sample database):
+
+        Provider=Microsoft.Jet.OLEDB.3.51;Persist Security Info=False;Data
+        Source=C:\Program Files\Microsoft Visual Studio\VB98\Biblio.mdb
+
+4. Set the CommandType property of the ADO Data Control (ADODC1) to:
+
+        2 - adCmdTable
+
+5. Set the RecordSource property of the ADO Data Control (ADODC1) to:
+
+        Authors
+
+6. Set the DataSource property of the Microsoft DataGrid Control (DataGrid1) to:
+
+        ADODC1
+
+7. Cut and paste the following code into the code window of the form (Form1):
+
+        Private Declare Function GetWindowText&amp; Lib "user32" _
+            Alias "GetWindowTextA" _
+            (ByVal hwnd As Long, ByVal lpString As String, ByVal cch As Long)
+
+        Private Declare Function GetWindowTextLength&amp; Lib "user32" _
+            Alias "GetWindowTextLengthA" _
+            (ByVal hwnd As Long)
+
+        Private Function GetCellText(GridControl As DataGrid) As String
+        'This function takes a DataGrid control and checks its
+        'edit status. The hWndEditor property is only valid
+        'when the grid is being edited.
+
+        Dim st As String
+        Dim ch As Long
+
+        If GridControl.EditActive Then
+            ch = GetWindowTextLength(GridControl.hWndEditor) + 1
+            st = Space(ch)
+
+            ch = GetWindowText(GridControl.hWndEditor, st, ch)
+
+            GetCellText = Trim(st)
+
+        End If
+
+        End Function
+
+        Private Sub DataGrid1_BeforeColUpdate _
+        (ByVal ColIndex As Integer, OldValue As Variant, Cancel As Integer)
+
+        MsgBox "Cell contents according to CellText property: " &amp; _
+          DataGrid1.Columns(ColIndex).CellText(DataGrid1.Bookmark)
+
+        MsgBox "Cell contents according to Text property: " &amp; _
+          DataGrid1.Text
+
+        MsgBox "Cell contents according to API Calls: " &amp; _
+          DataGrid1.Tag
+
+        End Sub
+
+        Private Sub DataGrid1_Change()
+        ' Change is the easiest event to tap into.
+        ' It is fired every time the cell text changes.
+
+        ' Because you can only save the text when the cell is being edited,
+        ' you have to store the value in another variable if you want
+        ' to use that value in other events.
+
+        ' Place the contents of the cell into the TAG property as a buffer.
+        ' You could also use a variable to store the information.
+
+        DataGrid1.Tag = GetCellText(DataGrid1)
+        End Sub
+
+8. Run the program and modify some text. Notice how both the Text property and
+  the CellText property do not reflect the modified data.
+
+(c) Microsoft Corporation 1998. All Rights Reserved.
+Contributions by Jonathan Johnson, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbCtrl kbDatabase kbMDAC kbVBp600 kbGrpDSVBDB kbDSupport kbCodeSam kbMDAC260 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbMDACSearch kbMDAC250 kbMDAC260
+Version           : :2.5,2.6,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

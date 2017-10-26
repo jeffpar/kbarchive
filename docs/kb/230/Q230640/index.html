@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q230640: SMS: Setup Sets &quot;Restrict filegrowth&quot; on SQL 7.0 Databases | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q230640: SMS: Setup Sets &quot;Restrict filegrowth&quot; on SQL 7.0 Databases" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/230/Q230640/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/230/Q230640/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/230/Q230640/","publisher":null,"image":null,"headline":"Q230640: SMS: Setup Sets &quot;Restrict filegrowth&quot; on SQL 7.0 Databases","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q230640-sms-setup-sets-restrict-filegrowth-on-sql-70-databases">Q230640: SMS: Setup Sets "Restrict filegrowth" on SQL 7.0 Databases</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q230640
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0,7.0
+Operating System(s): 
+Keyword(s): kbsms200
+Last Modified: 21-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SQL 7.0 automatically grows a file when more space is needed. SMS 2.0 Setup
+creates the SMS Database with this grow feature turned on, but it also sets a
+restriction on the size of the file. This restriction can cause problems when
+the database has grown to this size and cannot grow more. If the administrator
+is not aware of this setting then this could be perceived as some other problem
+and take time to diagnose and correct.
+
+CAUSE
+=====
+
+SMS 2.0 Setup creates the SMS Database with File Properties:
+
+- Automatically grow file
+
+- Restrict filegrowth (MB)
+
+"Automatically grow file" tells SQL to increase the database size as needed;
+however, "Restrict filegrowth" keeps the file from growing larger then the size
+entered.
+
+This is a problem if the SQL Administrator is not aware that this limitation has
+been set. The assumption is the database will grow as needed.
+
+WORKAROUND
+==========
+
+There are two options for correcting this problem:
+
+- Increase the maximum file size.
+
+-or-
+
+- Remove the file size restriction.
+
+The maximum file size setting can be set in SQL Server Enterprise Manager using
+the following steps:
+
+1. Select the SQL Server containing your SMS Database.
+
+2. Open the Database folder.
+
+3. Click the SMS Database.
+
+4. On the General tab, click database properties.
+
+5. At the bottom of the Properties box, locate the Maximum file size.
+
+6. Remove the restriction by selecting Unrestricted filegrowth.
+
+7. Increase the Maximum file size by selecting Restrict filegrowth (MB), and
+  entering the maximum size to allow.
+
+STATUS
+------
+
+Microsoft has confirmed this to be a problem in Systems Management Server version
+2.0. This problem has been corrected in the latest U.S. service pack for Systems
+Management Server version 2.0. For information on obtaining the service pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+Additional query words: prodsms file growth
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSQLServSearch kbSMSSearch kbAudDeveloper kbSQLServ700 kbFunImagination200
+Version           : winnt:2.0,7.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

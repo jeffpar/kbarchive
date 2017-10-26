@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241319: INDEX: Certain files not showing up in results | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241319: INDEX: Certain files not showing up in results" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241319/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241319/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241319/","publisher":null,"image":null,"headline":"Q241319: INDEX: Certain files not showing up in results","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241319-index-certain-files-not-showing-up-in-results">Q241319: INDEX: Certain files not showing up in results</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241319
+Product(s): Internet Information Server
+Version(s): winnt:1.1,2.0
+Operating System(s): 
+Keyword(s): kbprb
+Last Modified: 19-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server versions 1.1, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you do a query, you notice that some files do not show up in the results
+page, and when you look at the catalog's statistics you may notice that the
+value in the "Docs to Filter" column is not zero, and never reaches zero.
+
+CAUSE
+=====
+
+There are three reasons that the "Docs to Filter" column would not reach zero or
+that certain files would not be indexed:
+
+- There are so many changes occurring on the site that Index Server is
+  constantly trying to catch up.
+- You are running an anti-virus package on the server, and it is holding open
+  files and preventing them from being indexed.
+- The System account doesn't have at least Read permission to the files.
+
+RESOLUTION
+==========
+
+There is no workaround for this issue. When a file is added to the Web site,
+both the Index Server and the anti-virus software attempt to access the Web site
+in order to complete their tasks. The Index Server will see that the anti-virus
+is there, and will back off the indexing process, unless the anti-virus releases
+the file correctly after scanning the file, it may not get indexed.
+
+- Monitor the server during a more quiet time to determine whether or not Index
+  Server catches up, and the "Docs to Filter" column goes to zero.
+- Disable the anti-virus package to determine whether it is effecting the
+  indexing process. Some anti-virus packages may require uninstallation before
+  Index Server will begin to work correctly.
+- Add the System account specifically to the access control list on the data
+  files. Do not count on the Everyone group containing the System, to make sure
+  to add the System specifically.
+
+MORE INFORMATION
+================
+
+To check the statistics of the catalog and view the "Docs to Filter" column in
+Index Server 2.0 simply open the Microsoft Management Console that contains the
+Index Server snap-in. If you select Index Server on Local Machine (or the
+computer name you are connecting to) you will see in the right-pane of the MMC a
+series of columns one of which is "Docs to Filter".
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprb 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ110 kbIdxServ200
+Version           : winnt:1.1,2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

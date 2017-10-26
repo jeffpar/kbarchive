@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q22019: XON/XOFF Communications Protocol Not Supported in QuickBASIC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q22019: XON/XOFF Communications Protocol Not Supported in QuickBASIC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/022/Q22019/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/022/Q22019/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/022/Q22019/","publisher":null,"image":null,"headline":"Q22019: XON/XOFF Communications Protocol Not Supported in QuickBASIC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q22019-xonxoff-communications-protocol-not-supported-in-quickbasic">Q22019: XON/XOFF Communications Protocol Not Supported in QuickBASIC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q22019
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | docerr B_BasicCom | mspl13_basic
+Last Modified: 17-JAN-1991
+
+The XON/XOFF handshaking protocol of the ASC option of the OPEN COM
+statement is not implemented in any version of QuickBASIC (including
+versions 2.00, 2.01, 3.00, 4.00, 4.00b, and 4.50), in Microsoft BASIC
+Compiler version 6.00 or 6.00b for MS-DOS, or in Microsoft BASIC
+Professional Development System (PDS) version 7.00 or 7.10 for MS-DOS.
+
+Except for XON/XOFF protocol, the other features of the ASC option of
+the OPEN COM statement work properly. During communications, the ASC
+option expands tabs to spaces, forces carriage returns at the
+end-of-line, treats CTRL+Z (ASCII value 26) as the end-of-file flag,
+and transmits CTRL+Z when you CLOSE the communications channel.
+
+When you OPEN the COM1 or COM2 communications port and specify the ASC
+option, XON and XOFF bytes have no effect. A program will continue to
+transmit and pass all received XON and XOFF characters to the program
+without halting or resuming transmission. This behavior occurs because
+the XON/XOFF handshaking protocol of the ASC option of the OPEN COM
+statement is not implemented.
+
+The sentence saying "XON/XOFF protocol is enabled" should be deleted
+in the documentation for the ASC option of the OPEN COM statement in
+the following manuals:
+
+1. Page 375 of the "Microsoft QuickBASIC Compiler" manual for
+   QuickBASIC versions 2.x and 3.00
+
+2. Page 297 of the "Microsoft QuickBASIC 4.0: BASIC Language
+   Reference" manual for QuickBASIC versions 4.00 and 4.00b
+
+3. Page 297 of the "Microsoft BASIC Compiler 6.0: BASIC Language
+   Reference" manual for versions 6.00 and 6.00b
+
+This documentation error has been corrected in the documentation for
+Microsoft QuickBASIC 4.50 and the BASIC Professional Development
+System (PDS) for MS-DOS and MS OS/2.
+
+Additional Background Information
+---------------------------------
+
+XOFF is also known as CTRL+S, which is a character with an ASCII
+value of 19. CTRL+S tells a device or program that knows XON/XOFF
+protocol to stop transmission.
+
+XON is also known as CTRL+Q, which is a character with an ASCII value
+of 17. CTRL+Q tells a device or program that knows XON/XOFF protocol
+to continue transmission.
+
+The CTRL+S (XOFF) and CTRL+Q (XON) bytes pass without special handling
+through devices or programs that do not support the XON/XOFF
+communications protocol. While it is possible to write a BASIC program
+that checks every character for XON or XOFF and then programmatically
+starts or stops communications, such a program is unlikely to be as
+reliable as the XON/XOFF handshaking that is built into dedicated
+commercial communications software or hardware packages.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

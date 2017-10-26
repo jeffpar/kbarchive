@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224788: BUG: MFC Active Document Container Hangs When Invoking About Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224788: BUG: MFC Active Document Container Hangs When Invoking About Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224788/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224788/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224788/","publisher":null,"image":null,"headline":"Q224788: BUG: MFC Active Document Container Hangs When Invoking About Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224788-bug-mfc-active-document-container-hangs-when-invoking-about-box">Q224788: BUG: MFC Active Document Container Hangs When Invoking About Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224788
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbole kbActiveDocs kbActiveX kbCOMt kbContainer kbLocalSvr kbMFC kbVC600bug kbBug kbGrp
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Invoking the About box of a DocObject, from an MFC DocObject container, can
+cause a deadlock that will cause both container and server to lock up.
+
+DocObject containers display a merged Help menu that contains About box menu
+items for both the DocObject container and the current in-place active DocObject
+server. When a user attempts to invoke the About box of the DocObject server
+from this merged Help menu, the server's About box will be displayed as
+expected. But if the user moves input focus to another window, and then attempts
+to dismiss the server's About box, the About box will become disabled, and both
+the container and server will be hung.
+
+CAUSE
+=====
+
+This deadlock condition is a result of the MFC DocObject container forwarding
+the WM_COMMAND message for the server's About box via the SendMessage API. The
+MFC DocObject container is the first to receive the WM_COMMAND message to invoke
+the About box. When the container receives the message, it needs to forward the
+message to the server, so the server can invoke its About box.
+
+This is done in an undocumented function called
+COleFrameHook::OnPreTranslateMessage. COleFrameHook::OnPreTranslateMessage is
+called by the container's main frame window when the container is currently
+hosting an in-place active embedding or DocObject.
+
+Because SendMessage is synchronous, the MFC DocObject container stops pumping
+messages and waits for the server to completely process the WM_COMMAND message,
+which is what introduces the deadlock condition.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+COleFrameHook::OnPreTranslateMessage should call SendNotifyMessage instead of
+SendMessage, to forward the WM_COMMAND message to the DocObject server.
+SendNotifyMessage will post the WM_COMMAND message to the server's message
+queue, when the server is an .exe file, and send it directly, when the server is
+a .dll file.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a generic MFC Active Document Container application with the MFC
+  AppWizard.
+
+2. Build and run the application.
+
+3. Insert a Microsoft Word or Microsoft Excel document into the container by
+  using the Insert New Object menu item on the container's Edit menu.
+
+4. Invoke the Word (or Excel) About box from the container's Help menu.
+
+5. While the About box is displayed, click the container's main window, or click
+  a window in another application.
+
+6. Try to dismiss the About box.
+
+Additional query words: Active Document Container
+
+======================================================================
+Keywords          : kbole kbActiveDocs kbActiveX kbCOMt kbContainer kbLocalSvr kbMFC kbVC600bug kbBug kbGrpDSMFCATL kbISS kbbuglist
+Technology        : kbAudDeveloper kbMFC
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

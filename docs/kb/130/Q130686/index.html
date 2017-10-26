@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130686: Visual FoxPro File Extensions and File Types | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130686: Visual FoxPro File Extensions and File Types" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130686/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130686/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130686/","publisher":null,"image":null,"headline":"Q130686: Visual FoxPro File Extensions and File Types","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130686-visual-foxpro-file-extensions-and-file-types">Q130686: Visual FoxPro File Extensions and File Types</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130686
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbvfp
+Last Modified: 07-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the extensions and their associated file types that are used
+with Visual FoxPro. This article also discusses the table structures for FoxPro
+version 2.6 and Visual FoxPro version 3.0 of the following files: .dbc, .frx,
+.lbx, .mnx, .pjx, .scx, and .vcx files.
+
+NOTE: This information is also available in the graphical online Help, in the
+File Extensions topic.
+
+MORE INFORMATION
+================
+
+File Extensions and File Types used by Visual FoxPro
+----------------------------------------------------
+
+Extension   File type
+----------------------------------------------
+.act        Documenting Wizard action diagram
+.app        Generated application
+.cdx        Compound index
+.dbc        Database
+.dbf        Table
+.dct        Database memo
+.dcx        Database index
+.dll        Windows Dynamic Link Library
+.err        Compilation error
+.exe        Executable program
+.fky        Macro
+.fll        FoxPro Dynamic Link Library
+.fmt        Format File
+.fpt        Table memo
+.frt        Report memo
+.frx        Report
+.fxp        Compiled program
+.hlp        Graphical Help
+.idx        Index, compact index
+.krt        Used in the recreation of a .dbc file
+           NOTE: The .KRT extension is not listed in the online Help.
+.lbt        Label memo
+.lbx        Label
+.lst        Documenting Wizard list
+.mem        Memory variable saveDoslives
+.mnt        Menu memo
+.mnx        Menu
+.mpr        Generated menu program
+.mpx        Compiled menu program
+.ocx        OLE control
+.pjt        Project memo
+.pjx        Project
+.prg        Program
+.qpr        Generated query program
+.qpx        Compiled query program
+.sct        Form memo
+.scx        Form
+.spr        Generated Screen Program (previous versions of FoxPro only)
+.spx        Compiled Screen Program (previous versions of FoxPro only)
+.tbk        Memo backup
+.txt        Text
+.vct        Visual class library memo
+.vcx        Visual class library
+.vue        FoxPro 2.x view
+.win        Window file
+
+Table Structures of .dbc, .frx, .lbx, .mnx, .pjx, .scx, and .vcx Files
+----------------------------------------------------------------------
+
+The descriptions of the table structures are stored in files located in the
+FILESPEC directory. The FILESPEC directory contains two projects: 30spec.pjx and
+26spec.pjx:
+
+- 30spec.pjx contains tables and reports that document Visual FoxPro version
+  3.0 table files.
+
+- 26spec.pjx contains tables and reports that document FoxPro version 2.6 table
+  files.
+
+To see the descriptions for any table structure, print the appropriate report.
+The following two tables list the file types and their associated reports. Some
+file types require more than one report because there are too many columns to
+fit across a single page.
+
+NOTE: All the reports are formatted for landscape printing.
+
+To see this Visual FoxPro      Print
+3.0 table structure:           this report:    Which uses:
+----------------------------------------------------------
+Database                       30dbc.frx       30dbc.dbf
+Database Properties            30dbcpro.frx
+
+Form &amp; Visual Class Library    30scx1.frx      30scx.dbf
+                              30scx2.frx
+                              30scx3.frx
+
+Menu                           30mnx.frx       30mnx.dbf
+
+Project                        30pjx1.frx      30pjx.dbf
+                              30pjx2.frx
+
+Report &amp; Label                 30frx1.frx      30frx.dbf
+                              30frx2.frx
+
+To see this FoxPro             print
+2.6 table structure:           this report:    which uses:
+----------------------------------------------------------
+Screen                         26scx1.frx      26scx.dbf
+                              26scx2.frx
+
+Menu                           26mnx.frx       26mnx.dbf
+
+Project                        26pjx1.frx      26pjx.dbf
+                              26pjx2.frx
+
+Report and Label               26frx1.frx      26frx.dbf
+                              26frx2.frx
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

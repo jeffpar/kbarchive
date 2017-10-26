@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156733: PRB: Error Message with BROWSE and SET FILTER Commands in Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156733: PRB: Error Message with BROWSE and SET FILTER Commands in Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156733/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156733/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156733/","publisher":null,"image":null,"headline":"Q156733: PRB: Error Message with BROWSE and SET FILTER Commands in Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156733-prb-error-message-with-browse-and-set-filter-commands-in-form">Q156733: PRB: Error Message with BROWSE and SET FILTER Commands in Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156733
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using a SET FILTER or BROWSE FOR commands to filter and display records in
+a form, the following error may appear:
+
+  "Object is not contained in a form."
+
+The Debug window normally points to the BROWSE command as the line causing the
+error condition.
+
+WORKAROUND
+==========
+
+Use the following syntax to browse the desired records in the example created in
+the Steps to Reproduce Behavior section of this article:
+
+     x='"' + ALLTRIM(ThisForm.Text2.Value) + '"'
+     SET FILTER TO &amp;x $ Test.cfield1
+     BROWSE
+
+  - or-
+
+     x='"' + ALLTRIM(ThisForm.Text2.Value) + '"'
+     BROWSE FOR &amp;x $ Test.cfield1
+
+When you define the variable x in this example, a pair of single quotation mark
+characters (') enclose a double quotation mark character (").
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Sometimes the SET FILTER and the BROWSE FOR commands encounter difficulty
+resolving object references. Therefore, you need to create a memory variable to
+hold the object reference as a string. Then use macro substitution to place the
+memory variable in the command.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a table called test and add four records with the following commands:
+
+     CREATE TABLE test (cfield1 c(10))
+     INSERT INTO test (cfield1) VALUES ("a")
+     INSERT INTO test (cfield1) VALUES ("a")
+     INSERT INTO test (cfield1) VALUES ("b")
+     INSERT INTO test (cfield1) VALUES ("b")
+
+2. Create a form called test.
+
+3. Add Test.dbf to the Data Environment of the form.
+
+4. Drag cfield1 to the form creating a Text field, and close the Data
+  Environment window.
+
+5. Add another Text box, Text2, to the form. This control should have no
+  ControlSource.
+
+6. In the LostFocus event of Text2, add the following code:
+
+     SET FILTER TO ALLTRIM(Thisform.Text2.Value) $ Test.cfield1
+     BROWSE
+
+  You could also use the following line of code:
+
+     BROWSE FOR ALLTRIM(ThisForm.Text2.Value) $ Test.cfield1
+
+7. Run the form, enter the letter "b" (without the quotation marks) in the Text2
+  field, and press the TAB key to trigger the LostFocus event. Note that the
+  error "Object is not contained in a form" appears.
+
+Additional query words: kbdsd VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221636: FIX: FFCs -_therm.vxc Classes Have Color Problems with Bars | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221636: FIX: FFCs -_therm.vxc Classes Have Color Problems with Bars" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221636/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221636/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221636/","publisher":null,"image":null,"headline":"Q221636: FIX: FFCs -_therm.vxc Classes Have Color Problems with Bars","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221636-fix-ffcs--_thermvxc-classes-have-color-problems-with-bars">Q221636: FIX: FFCs -_therm.vxc Classes Have Color Problems with Bars</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221636
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbvfp600 kbvfp600bug kbFFC kbVS600sp3fix kbGrpDSFox
+Last Modified: 22-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The classes from the _therm.vcx FoxPro Foundation Class appear with the wrong
+colors. The progress bar indicator should use the color of selected text, and
+the back color should inherit the back color of the form. However, the progress
+bar itself appears dark gray and the back color is light gray.
+
+RESOLUTION
+==========
+
+There are two resolutions to this problem:
+
+- Uncomment the Init code of the progress bar found in the example below. This
+  code uses the GetSysColor API and the FillColor property of the _therm.vcx to
+  assign the proper colors.
+
+- Upgrade to Visual Studio 6.0 Service Pack 3.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file containing the following code:
+
+  PUBLIC oform1
+  SET CLASSLIB TO HOME(1)+"ffc\_therm.vcx" ADDITIVE
+  oform1=NEWOBJECT("form1")
+  oform1.SHOW
+  RETURN
+
+  DEFINE CLASS form1 AS FORM
+
+  	CAPTION = "Form1"
+  	NAME = "Form1"
+  	BACKCOLOR = RGB(136,192,184)
+
+  	ADD OBJECT _progressbar1 AS _progressbar WITH ;
+  		TOP = 47, ;
+  		LEFT = 24, ;
+  		BORDERWIDTH = 0
+
+  	ADD OBJECT timer1 AS TIMER WITH ;
+  		TOP = 180, ;
+  		LEFT = 72, ;
+  		HEIGHT = 23, ;
+  		WIDTH = 23, ;
+  		INTERVAL = 30, ;
+  		NAME = "Timer1"
+
+  *!*		PROCEDURE _progressbar1.INIT
+  *!*		#DEFINE COLOR_HIGHLIGHT 	13
+  *!*		DECLARE INTEGER GetSysColor IN win32api INTEGER
+  *!*		THIS.shpThermBar.FILLCOLOR = GetSysColor(COLOR_HIGHLIGHT)
+  *!*		THIS.shape5.FILLCOLOR = THIS.PARENT.BACKCOLOR
+  *!*	ENDPROC
+
+  	PROCEDURE timer1.TIMER
+  	IF THISFORM._progressbar1.ipercentage = 100
+  		THISFORM.RELEASE()
+  	ENDIF
+  	THISFORM._progressbar1.UPDATE(1+THISFORM._progressbar1.ipercentage)
+  	THISFORM.REFRESH
+  ENDPROC
+
+  ENDDEFINE
+
+2. Run the program.
+
+Notice that the progress bar indicator is dark gray and the progress bar back
+color is light gray. To see the workaround, uncomment the Init code in the
+progress bar.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600 kbvfp600bug kbFFC kbVS600sp3fix kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

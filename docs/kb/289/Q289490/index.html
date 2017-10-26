@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q289490: SMS: Contents of the SMS Site Backup Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q289490: SMS: Contents of the SMS Site Backup Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/289/Q289490/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/289/Q289490/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/289/Q289490/","publisher":null,"image":null,"headline":"Q289490: SMS: Contents of the SMS Site Backup Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q289490-sms-contents-of-the-sms-site-backup-utility">Q289490: SMS: Contents of the SMS Site Backup Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q289490
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Operating System(s): 
+Keyword(s): kbConfig kbDatabase kbMMC kbServer kbsms200 kbsmsAdmin kbsmsUtil
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The key to a successful disaster recovery effort is to back up the Systems
+Management Server (SMS) database and registry keys.
+
+MORE INFORMATION
+================
+
+The SMS Backup utility is not enabled by default. To enable, click Database
+Maintenance, and then click Task under Site Settings in the SMS Administrator
+Console.
+
+SMS Backup backs up the following information to the designated location:
+
+SMS Backup first creates the Smsbkup folder, and then under that, the &lt;site
+code&gt; folder. Under the &lt;site code&gt; folder, it creates the Smsbkup.log
+file, and the following four folders:
+
+- MeteringDBServer
+
+- ProviderServer
+
+- SiteDBServer
+
+- SiteServer
+
+SiteDBServer:
+
+The SiteDBServer contains the following folder
+
+- SQLLog folder: Content of MSSQL7\log\Errorlog
+
+and the following 15 files:
+
+- SMSbkSQLconfigNTData.txt: server configuration information
+- SMSbkSQLConfigNTWinMSD.txt: WinMSD report
+- SMSbkSQLConfigSQLdata.txt: SQL configuration report from Smssqlinfo.sql
+- SMSbkSQLConfigSQLdboption.txt: SQL database options selected
+- SMSbkSQLconfigSQLhelpdb.txt: result of sp_helpdb against SMS database
+- SMSbkSQLConfigSQLrevdatabase.txt: result of sp_help_revdatabase
+- SMSbkSQLDBmaster.dat: dump of the Master database
+- SMSbkSQLDBmodel.dat: dump of the DBmodel database
+- SMSbkSQLmsdb.dat: dump of the MSDB database
+- SMSbkSQLDBsite.dat: dump of the SMS database
+- SMSbkSQLRegMSSQLServer.dat: MSSQLServer registry key
+- SMSbkSQLRegNAL.dat: NAL registry key
+- SMSbkSQLRegSMS.dat: SMS registry key
+- SMSbkSQLRegSNMPEvents.dat: SNMP_Events registry key
+- SMSbkSQLRegWBEM.dat: WBEM key
+
+SiteServer:
+
+The SiteServer folder contains the following two folders
+
+- SMSServer folder: copy of the entire SMS directory
+- WBEM folder: copy of the Systemdir\System32\WBEM folder
+
+and the following 11 files if Crystal Info, Network Monitor, and SNMPEvents are
+all installed:
+
+- SMSbkSiteConfigNTData.txt: results of Srvinfo.exe
+- SMSbkSiteConfigNTWinMSD.txt: WInMSD report
+- SMSbkSiteRegCryForSMS.dat: Segate Crytal Info for SMS registry key
+- SMSbkSiteRegCryinfo.dat: Crystal Info registry key
+- SMSbkSiteRegCryMMC.dat: Crystal MMC Snap-in registry key
+- SMSbkSiteRegMMC.dat: MMC registry key
+- SMSbkSiteRegNAL.dat: NAL registry key; this is one of the most important
+  registry keys when the SMS server is restored
+- SMSbkSiteRegNetworkMonitor.dat: Network Monitor registry key
+- SMSbkSiteRegSMS.dat: SMS registry key; this is one of the most important
+  registry keys when the SMS server is restored
+- SMSbkSiteRegSNMPEvents.dat: SNMP_Events registry key
+- SMSbkSiteRegWBEM.dat: WBEM registry key
+
+MeteringDBServer:
+
+The MeteringDBServer folder contains the SMSbkMeterDBmeter.dat file, which is the
+dump of the Software Metering Database.
+
+ProviderServer:
+
+The ProviderServer folder contains the SMSbkProvRegSMS.dat file, which is the SMS
+Provider registry key.
+
+
+Additional query words: prodsms backup restore recovery
+
+======================================================================
+Keywords          : kbConfig kbDatabase kbMMC kbServer kbsms200 kbsmsAdmin kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q92635: Windows Temporary Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q92635: Windows Temporary Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/092/Q92635/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/092/Q92635/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/092/Q92635/","publisher":null,"image":null,"headline":"Q92635: Windows Temporary Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q92635-windows-temporary-files">Q92635: Windows Temporary Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q92635
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-DEC-2000
+
+2.X 3.00 3.00a 3.10 3.11
+
+WINDOWS
+
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 2.03, 2.1, 2.11, 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses Windows temporary files and is organized into the
+following two sections:
+
+- Definition of Windows Temporary Files
+
+- What to Do with Temporary Files
+
+MORE INFORMATION
+================
+
+Definition of Windows Temporary Files
+-------------------------------------
+
+A Windows temporary file is created under the following three circumstances:
+
+1. Windows Desktop applications, such as Write, and multiple document interface
+  (MDI) applications, such as Excel, create temporary files to handle necessary
+  user editing.
+
+  Because a Desktop application cannot have multiple documents open at once, it
+  must immediately create a temporary file that allows you to undo any editing.
+  MDI applications create temporary files only when necessary (for related
+  editing), rather than for every worksheet that is open.
+
+2. When you run an MS-DOS-based standard application with Windows/286,
+  Windows/286 creates a temporary file (for example, ~PIFCHFA.TMP) so that it
+  can swap to disk to make room for other applications to use memory.
+
+3. When you print from Windows or any Windows-based application with the spooler
+  enabled, Windows creates temporary files on the hard disk. Windows spools the
+  print job to the temporary file and then sends it to the appropriate printer
+  as a background operation.
+
+Note: Microsoft recommends that you have approximately 2 megabytes (MB) of free
+disk space available for the creation of temporary files.
+
+What to Do with Temporary Files
+-------------------------------
+
+A number of files may appear on the hard drive in various directories beginning
+with a tilde character (~) and ending with a .TMP extension. These may be
+temporary files created by Windows that remain on the hard drive due to an
+irregular exit from a Windows session.
+
+Under normal conditions, these files are closed and deleted by Windows when you
+quit a Windows session. However, if you quit Windows in an irregular way (for
+example, restarting the computer or turning it off during an active Windows
+session) the files are not closed or deleted.
+
+The temporary files should be located in a designated subdirectory of their own.
+If temporary files appear in the root directory, you may have an invalid SET
+TEMP statement. Check for the following conditions:
+
+1. Using a text editor, such as Microsoft Windows Notepad, open the AUTOEXEC.BAT
+  file and make sure it includes a valid SET TEMP statement. This statement
+  should be similar to the following:
+
+  SET TEMP=C:\WINDOWS\TEMP
+
+2. Note the path that the SET TEMP statement points to and check to ensure that
+  such a subdirectory does exist. If not, create a subdirectory to match the
+  SET TEMP statement.
+
+3. If the SET TEMP statement is pointing to a RAM drive, make sure the RAM drive
+  is large enough to hold the temporary files being created.
+
+By ensuring that there is a valid SET TEMP statement and a separate subdirectory
+for temporary files, these files can easily be deleted on a regular basis.
+
+To delete a temporary file, use the following steps:
+
+1. Close Windows.
+
+2. From the MS-DOS command prompt, change to the TEMP directory.
+
+3. Delete any existing .TMP files. Make sure Windows is not running at the time
+  these files are deleted. Some of these .TMP files may be files that Windows
+  is using.
+
+Additional query words: 2.0 2.03 2.10 2.11 3.00 3.00a 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:2.x,3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

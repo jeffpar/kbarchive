@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162084: PRB: Non-Standard RETURN TO MASTER Behavior After LOCATE Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162084: PRB: Non-Standard RETURN TO MASTER Behavior After LOCATE Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162084/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162084/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162084/","publisher":null,"image":null,"headline":"Q162084: PRB: Non-Standard RETURN TO MASTER Behavior After LOCATE Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162084-prb-non-standard-return-to-master-behavior-after-locate-error">Q162084: PRB: Non-Standard RETURN TO MASTER Behavior After LOCATE Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162084
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an error-handling routine of a sub-program, a RETURN TO MASTER command
+returns processing to the highest level running program.
+
+An error caused by a faulty LOCATE FOR command does not result in a successful
+RETURN TO MASTER until after first returning to the command immediately
+following the line that caused the error.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Copy the following two programs, and paste them into appropriately named program
+(.prg) files:
+
+1. Copy the following into a program named ReturnFail:
+
+     ** Returnfail.prg - demonstrates failure of
+     ** RETURN TO MASTER in a class error method
+     DEFINE CLASS returntest AS custom
+        PROCEDURE init
+           CLEAR
+           USE HOME()+"samples\data\customer"
+           ERROR 12, "MyError"
+           *LOCATE FOR CustHeight="Steve" &amp;&amp; No such column in table
+           =MESSAGEBOX("It didn't return to master")
+        ENDPROC
+
+        PROCEDURE error
+           LPARAMTERS  nError, cMethod, nLine
+           =MESSAGEBOX("The error is " + STR(nError,2,0) + ;
+               " in " + cMethod +" method.")
+           RETURN TO MASTER
+        ENDPROC
+     ENDDEFINE
+
+2. Copy the following into a program named TryFail:
+
+     ** Tryfail.prg - program to test the failure of
+     ** RETURN TO MASTER in a class where the error is
+     ** caused by a LOCATE FOR fault.
+     CLEAR
+     CLOSE ALL
+     SET PROCEDURE TO returnfail
+     oRef = CREATEOBJECT("returntest")
+     =MESSAGEBOX("It did return to master")
+
+3. Run TryFail with the command "Do tryfail" (without the quotation marks).
+  Observe that the only message is "It did return to master."
+
+4. Edit the program "ReturnFail" by issuing the following command:
+
+  " MODIFY COMMAND returnfail " (without the quotation marks)
+
+  Find the following two lines of code:
+
+        ERROR 12, "MyError"
+        *LOCATE FOR CustHeight="Steve" &amp;&amp; No such column in table
+
+  Remove the asterisk from the second line, and place an asterisk to the left of
+  the first so that the lines look like:
+
+        *ERROR 12, "MyError"
+        LOCATE FOR CustHeight="Steve" &amp;&amp; No such column in table
+
+  Save that program.
+
+5. Run tryfail again and observe the second and third messages.
+
+An error caused by the ERROR command causes an error, and the error method
+successfully issues a RETURN TO MASTER command, which successfully returns to
+the highest level running program.
+
+An error caused by a faulty LOCATE FOR command does not result in a successful
+RETURN TO MASTER until after first returning to the command immediately
+following the line that caused the error.
+
+Additional query words: vfoxwin kbdsd
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

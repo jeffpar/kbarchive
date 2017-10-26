@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197206: PRB: Slight Memory Leak Calling VFP COM DLL Repeatedly from VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197206: PRB: Slight Memory Leak Calling VFP COM DLL Repeatedly from VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197206/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197206/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197206/","publisher":null,"image":null,"headline":"Q197206: PRB: Slight Memory Leak Calling VFP COM DLL Repeatedly from VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197206-prb-slight-memory-leak-calling-vfp-com-dll-repeatedly-from-vfp">Q197206: PRB: Slight Memory Leak Calling VFP COM DLL Repeatedly from VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197206
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbOOP kbvfp500 kbvfp500a kbvfp600
+Last Modified: 03-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you repeatedly call a COM DLL created in Visual FoxPro, the memory usage of
+Visual FoxPro increases slightly.
+
+CAUSE
+=====
+
+The memory usage increase between calls to the COM DLL is greater in Visual
+FoxPro 5.x than in Visual FoxPro 6.0. In Visual FoxPro 5.x, increases of 100K or
+more are common. In Visual FoxPro 6.0, the memory increases normally range from
+4K to 16k.
+
+The problem appears to be related to returning long character strings back from
+the COM DLL.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The Steps to Reproduce Behavior require that you use a Windows NT computer.
+
+NOTE: If you run this on a different computer (not the one where you built the
+COM DLL), then you need to register it using Regsvr32.exe.
+
+1. Create a new project. Name it Test.
+
+2. Add a new program to the project. Name this Test.prg.
+
+3. Place the following code in Test.prg and save it:
+
+  
+
+        DEFINE CLASS ObjectTest AS CUSTOM OLEPUBLIC
+           FUNCTION MyGetObject()
+              RETURN REPLICATE( "D", 65000 )
+           ENDFUNC
+        ENDDEFINE
+
+4. Build the project into a COM DLL.
+
+5. Create another new program. Name it Dotest.prg. Do not include it in the
+  project.
+
+6. Place the following code in Dotest.prg and save it:
+
+  
+
+        x = CreateObject("test.ObjectTest")
+        FOR i = 1 TO 10
+           x.MyGetObject()
+        NEXT i
+        x = .NULL.
+
+7. Keep the Dotest.prg file open in Visual FoxPro.
+
+8. Open the Windows NT Task Manager. Click the Process tab. Make sure the Mem
+  Usage column is displayed. Find the Visual FoxPro executable file - VFP6.exe
+  or VFP.exe. Note the Mem Usage number.
+
+9. Run the Dotest.prg program repeatedly by clicking on the Run ToolButton on
+  the Standard toolbar.
+
+RESULT: Note that the Mem Usage number jumps up and then comes back down each
+time. However, each time it comes back down, it is higher than it was
+previously. With Visual FoxPro 6.0, it is normally about 4k higher each time.
+This might vary between 2k and 16k higher. In Visual FoxPro 5.x, the Mem Usage
+increases by 100k or more each time you run the program.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbOOP kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

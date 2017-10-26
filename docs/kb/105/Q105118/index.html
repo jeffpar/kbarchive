@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105118: PRB: CodeView Displays &quot;Bad DLL Format in ‘Filename’&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105118: PRB: CodeView Displays &quot;Bad DLL Format in ‘Filename’&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105118/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105118/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105118/","publisher":null,"image":null,"headline":"Q105118: PRB: CodeView Displays &quot;Bad DLL Format in ‘Filename’&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105118-prb-codeview-displays-bad-dll-format-in-filename">Q105118: PRB: CodeView Displays "Bad DLL Format in ‘Filename’"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105118
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbCodeView kbDebug kbVC kbprb
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft CodeView for MS-DOS 
+- Microsoft CodeView for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When starting CodeView, or when CodeView loads a program to debug, the following
+message is displayed:
+
+  Bad DLL Format in 'path\filename'
+
+CAUSE
+=====
+
+Here are four of the most common reasons for this message (resolutions to each
+of the causes is shown below):
+
+1. There are not enough free file handles.
+
+2. There is not enough available memory.
+
+3. A dynamic-link library (DLL) from a previous version of CodeView is being
+  loaded.
+
+4. CodeView is trying to load an expression evaluator for a different operating
+  system.
+
+RESOLUTION
+==========
+
+To work around each problem:
+
+1. Check available file handles, using STRESS.EXE. There should be a minimum of
+  six available file handles. If there are too few handles, shut down an
+  application and retry, or increase the "FILES=" entry in the CONFIG.SYS file.
+
+2. CodeView can be run with as little as 2 megabytes (MB)of memory, although
+  more is recommended. Use STRESS for Windows, MEM for MS-DOS, or some other
+  memory utility to find out how much memory is available. Shut down other
+  applications and remove any unnecessary terminate-and- stay-resident (TSR)
+  programs.
+
+3. This happens most commonly when upgrading from C/C++ 7.0 to Visual C++ 1.0,
+  without removing C/C++ 7.0. The CodeView DLLs are still in the path. Unlike
+  CodeView for Windows, CodeView for MS-DOS looks for DLLs in the path first.
+  So, for example, CodeView 4.1 might find a 4.0 DLL and try to load it,
+  resulting in an error. To eliminate this problem, remove the path entry
+  pointing to the C700 directory, remove C700, or rename the offending DLL to
+  something else.
+
+4. Attempting to have CodeView for Windows load one of the MS-DOS expression
+  evaluators through an Eval statement in the [CVW] section of the TOOLS.INI
+  file will also cause the "Bad DLL format in 'filename'" error to be
+  displayed. "Filename" is the name of the expression evaluator that CodeView
+  for Windows is trying to load, and will be either EED1CAN.DLL or EED1CXX.DLL.
+  The message is issued immediately after the file to be debugged has been
+  specified. This is discussed in more detail in the Knowledge Base (KB)
+  article Q87922.
+
+MORE INFORMATION
+================
+
+CodeView version 4.0 introduces a new, flexible architecture for the debugger.
+CodeView is composed of a main executable program, CV.EXE (CodeView for MS-DOS)
+or CVW.EXE (CodeView for Windows) and a collection of dynamic-link libraries.
+Each DLL implements an aspect of the debugging process. For more information on
+this architecture, see the CodeView documentation.
+
+Additional query words: 4.00 4.10
+
+======================================================================
+Keywords          : kberrmsg kbCodeView kbDebug kbVC kbprb 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q316647: PRB: Merge Module (.msm) Files Not Updated by VFP 7.0 SP1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q316647: PRB: Merge Module (.msm) Files Not Updated by VFP 7.0 SP1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/316/Q316647/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/316/Q316647/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/316/Q316647/","publisher":null,"image":null,"headline":"Q316647: PRB: Merge Module (.msm) Files Not Updated by VFP 7.0 SP1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q316647-prb-merge-module-msm-files-not-updated-by-vfp-70-sp1">Q316647: PRB: Merge Module (.msm) Files Not Updated by VFP 7.0 SP1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q316647
+Product(s): Microsoft FoxPro
+Version(s): 7.0,7.0 SP1
+Operating System(s): 
+Keyword(s): kbAppSetup kbGrpDSFox kbDSupport kbvfp700
+Last Modified: 28-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 7.0, 7.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro 7.0 Service Pack 1 (SP1) ships with updated merge module files,
+Vfp7runtime.msm and Vfpoledb.msm. These files facilitate the distribution of
+your Visual FoxPro 7.0 applications. Under certain circumstances, the
+installation of Visual FoxPro 7.0 SP1 may not update these merge modules.
+
+CAUSE
+=====
+
+This problem can occur if the timestamp of a .msm file to be updated is later
+than that of the file shipped with Visual FoxPro 7.0 SP1.
+
+RESOLUTION
+==========
+
+To resolve this problem, delete any .msm files that were not successfully
+updated and install Visual FoxPro SP1 again.
+
+MORE INFORMATION
+================
+
+The Microsoft Windows Installer SDK includes an .msm/.msi database editor named
+Orca. You can use this table-editing tool to edit your .msm files.
+Unfortunately, Orca changes the timestamp on existing .msm files even if no
+changes are made.
+
+Any .msm files installed by Visual FoxPro 7.0 which are edited with Orca may have
+a file date later than that of the files included in Visual FoxPro 7.0 SP1.
+(Other tools, of course, may also update the timestamp.) Because there is no
+version stamping on the .msm files, Visual FoxPro 7.0 SP1 must use the datetime
+stamp as a basis of comparison when updating these files. When Visual FoxPro 7.0
+SP1 sees a later datetime stamp, it does not update the file.
+
+The merge modules are installed by default in the C:\Program Files\Common
+Files\Microsoft Shared\Merge Modules folder. The RTM files are dated 6/14/2001.
+If you updated your installation with the Runtime Hotfix, the files will be
+dated 7/5/2001. The SP1 versions of the files are dated 1/4/2002.
+
+REFERENCES
+==========
+
+  Q255905 HOWTO: Use Orca to Edit Windows Installer Files
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAppSetup kbGrpDSFox kbDSupport kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700 kbVFP700SP1
+Version           : :7.0,7.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

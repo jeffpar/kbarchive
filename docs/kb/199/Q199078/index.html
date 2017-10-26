@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199078: SMS: How to Remove a Systems Management Server 2.0 Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199078: SMS: How to Remove a Systems Management Server 2.0 Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199078/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199078/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199078/","publisher":null,"image":null,"headline":"Q199078: SMS: How to Remove a Systems Management Server 2.0 Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199078-sms-how-to-remove-a-systems-management-server-20-client">Q199078: SMS: How to Remove a Systems Management Server 2.0 Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199078
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbClient kbsms200kbfaq
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+There are four methods for initiating the removal of the Systems Management
+Server client software from a client:
+
+1. Run the SMSMAN wizard, and select the Remove Systems Management Components
+  check box.
+
+2. Modify the client's registry to add a removal value.
+
+3. Change the site's boundary to exclude the Internet Protocol (IP) subnet or
+  Internetwork Packet Exchange (IPX) network number used by a client or
+  clients.
+
+4. Run the 20clicln.bat utility from the support tools included on the SMS
+  service pack cd or available by download from
+
+  Http://www.microsoft.com/smsmgmt/downloads/default.asp
+  (Http://www.microsoft.com/smsmgmt/downloads/default.asp)
+
+These options are discussed further in the MORE INFORMATION section of this
+article.
+
+NOTE: Each of these options requires an administrative equivalent account on the
+client computer to remove the SMS client software.
+
+MORE INFORMATION
+================
+
+Using the SMSMAN Wizard
+-----------------------
+
+1. Run SMSMAN from the following path:
+
+  \\server\smslogon\x86.bin\00000409
+
+2. Click Next.
+
+3. Select Remove Systems Management Components and then click Next.
+
+Setting a Registry Key
+----------------------
+
+To use the registry method, perform the steps below corresponding to the
+operating system you are using.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Windows 95:
+
+1. Use Regedit.exe to add the string value "SMS Client Deinstall" to the client
+  registry under the following key and set it to TRUE:
+
+     HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Configuration\Client Properties
+
+2. Restart the client to launch Clisvc95.exe to start a CCIM maintenance cycle.
+
+  NOTE: A restart is not required; the CCIM polling interval is 23 hours, so if
+  you do not restart the computer, the CCIM maintenance cycle will occur later.
+
+Windows NT:
+
+1. Use Regedit.exe to add the string value "SMS Client Deinstall" to the client
+  registry under the following key and set it to TRUE:
+
+     HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Client\Configuration\Client Properties
+
+2. Stop and start the SMS Client Service to start a CCIM maintenance cycle.
+
+Removing Client's Subnet or Network Number From the Site Boundary
+-----------------------------------------------------------------
+
+You can remove Systems Management Server software from clients by removing the
+client's subnet/network number from the site boundaries (so that the client is
+no longer assigned to a Systems Management Server site). The Systems Management
+Server client software is removed from that client during the next maintenance
+interval, or by restarting the client.
+
+To remove the subnet or network number from the site boundary, perform the
+following steps from in the Systems Management Server Administrator console:
+
+1. Expand the Site Database property.
+
+2. Expand the Site Hierarchy property.
+
+3. Right-click the site and click Properties on the shortcut menu.
+
+4. Click the Boundaries tab.
+
+5. Right-click the subnet/network number to remove and click Delete on the
+  shortcut menu.
+
+You can remove the client from all x86 based operating systems by using the
+20clicln.bat utility provided in the support tools:
+
+- Map a drive to the location of the 20clicln.bat file ( this location must
+  include the 20clicln.bat, hammer.exe, kill.exe, and setevnt.exe files).
+
+- Then execute the 20clicln.bat and wait for it to complete. (This could take
+  15 to 20 minutes depending on degree of traffic and bandwidth in the
+  network.)
+
+Notes
+-----
+
+All of these methods of removing the SMS 2.0 client software except the
+20clicln.bat assume that you still have the SMS site server working and
+available on the network. Updated support tools are available as they are
+released from the following Microsoft Web site:
+http://www.microsoft.com/smsmgmt.
+
+The 20clicln.bat utility removes almost all traces of the SMS client software
+from the computer. Only the GUID (unique SMS ID) stays. This means that the next
+time this computer becomes assigned to an SMS site and installs the SMS client,
+all client software files will once again be downloaded across the network
+before the SMS client install process can begin.
+
+Additional query words: prodsms cli32 uninstall deinstall flag
+
+======================================================================
+Keywords          : kbClient kbsms200 kbfaq
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129710: PRB: Visual FoxPro Setup Problems with Disk 2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129710: PRB: Visual FoxPro Setup Problems with Disk 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129710/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129710/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129710/","publisher":null,"image":null,"headline":"Q129710: PRB: Visual FoxPro Setup Problems with Disk 2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129710-prb-visual-foxpro-setup-problems-with-disk-2">Q129710: PRB: Visual FoxPro Setup Problems with Disk 2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129710
+Product(s): Microsoft FoxPro
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+NOTE: Some products mentioned in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+SYMPTOMS
+========
+
+When you run the Setup program for Visual FoxPro version 3.0 from floppy disks,
+after removing Disk 1, inserting Disk 2, and pressing ENTER, you receive the
+"Insert Disk 2" message continuously, or you might receive any of the following
+error messages:
+
+- Could not read from the file named &lt;drive&gt;:\VFP2.CAB.
+
+- Unable to expand VFP2.CAB.
+
+- The compressed file '&lt;drive&gt;\VFP2.CAB' cannot be decompressed and may
+  be corrupted.
+
+- System Error: cannot read from drive A:
+
+- Setup: Could not read from file named A:\VFP2.CAB"
+
+
+CAUSE
+=====
+
+There are several possible causes for these errors:
+
+- Software virus.
+
+- Hardware failure.
+
+- Bad floppy disk.
+
+- Compatibility problem with the Distribution Media Format (DMF) used on disk 2
+  (and subsequent disks in the series).
+
+WORKAROUND
+==========
+
+To isolate the cause of this problem, perform the following checks, and apply
+the indicated solution.
+
+1. Test for viruses. Use an up-to-date virus checking program to verify that you
+  do not have a virus on your system. Do this first. If you have a virus on
+  your system, any further tests on the diskettes may give you false results.
+  Moreover, if the Visual FoxPro installation disks have been infected by a
+  virus on your system, you risk infecting other machines on which you attempt
+  to install Visual FoxPro.
+
+
+  SOLUTION: If you have a virus, disinfect your computer system using an
+  up-to-date anti-virus program. An anti-virus program may not work on the
+  DMF-formatted disk. If you cannot disinfect disk 2, request a set of
+  replacement disks. Replacement disks are not DMF-formatted and are available
+  in 1.44 MB media only.
+
+2. Test the floppy drive. If you have diagnostics software that will check the
+  functioning of your floppy drive, use it to verify that your floppy drive is
+  working properly. If you have had no problems reading and writing to standard
+  floppy disks, your floppy drive is probably not the cause of the problem.
+
+3. Test for a bad disk. If you have another computer available, try to install
+  the disks on that machine. If you have the same problem on the other
+  computer(s), that does not necessarily mean that the disks are bad. Both
+  machines may have a problem reading DMF-formatted disks.
+
+  CAUTION: Disk 2 (and subsequent disks in the installation series) uses DMF.
+  DMF is a new format. Many existing disk utilities such as Norton Disk Doctor,
+  Central Point's PC Tools, and Microsoft's ScanDisk do not recognize DMF and
+  may try to write over the file on the installation disks. Therefore, you
+  should NOT attempt to use disk utilities to diagnose, or even examine
+  DMF-formatted disks.
+
+  NOTE: You cannot copy DMF-formatted disks using the MS-DOS COPY or DISKCOPY
+  commands. Instead, use the copy switch (/C) with EXTRACT.EXE utility, located
+  on disk 1.
+
+  SOLUTION: If you have a bad disk, request a set of replacement disks.
+  Replacement disks are not DMF-formatted and are available in 1.44 MB media
+  only.
+
+4. Check for problems related to the DMF format. (For a description of DMF, see
+  the MORE INFORMATION section, below.) The four known DMF issues and their
+  solutions are outlined below:
+
+  a. Incompatible floppy drives.
+
+     You may have problems if your floppy drive is one of the following types:
+
+      - SCSI floppy drives, including Flopticals.
+
+      - Floppy drives attached via older MicroSolutions Compaticards.
+
+      - Apple Macintosh floppy drives (even via SoftPC).
+
+      - Early Gateway 2000 Handbook or Colorbook notebooks.
+
+
+     SOLUTION: Request a set of replacement disks. Replacement disks are not
+     DMF-formatted and are available in 1.44 MB media only.
+
+
+  b. Incompatible operating systems.
+
+     Operating systems other than Windows version 3.1 (or later) may not have
+     the correct floppy drive system files to support DMF. Problems have been
+     reported on the following:
+
+      - OS/2 Warp Version 3.0.
+
+        DMF was developed before OS/2 Warp was released so there was no
+        opportunity for compatibility testing. These errors have also been
+        reported on OS/2 versions 2.0 and 2.1. Microsoft has been unable to
+        reproduce these problems under OS/2 2.0 or 2.1 in testing.
+
+
+        For more information about the DMF and OS/2 Warp Version 3.0, please see
+        the following article in the Microsoft Knowledge Base:
+
+  Q122280 Error Running Setup from DMF Disks Under OS/2
+
+
+  c. MS-DOS does not recognize that the disk format on disk 2 is different from
+     the disk format on disk 1.
+
+     Change-line support on the floppy drive informs MS-DOS when a disk and/or
+     the format of a disk has changed. If MS-DOS determines the format of the
+     first disk but does not realize that the formatting of the second disk is
+     different, the second disk cannot be read.
+
+
+     Use the DIR command on disk 2. If you see a screenful of spurious
+     characters, this is probably a changeline problem. If you receive disk
+     read errors, a flawed disk cache may be involved.
+
+
+     SOLUTION: Choose one of the following four methods to work around this
+     problem:
+
+      - Method One: Add the MS-DOS DRIVPARM command to your CONFIG.SYS file
+        using the following syntax:
+
+         For a 1.44-MB A: drive      For a 1.44-MB B: drive
+         --------------------------------------------------
+         DRIVPARM=/d:0 /f:7          DRIVPARM=/d:1 /f:7
+
+
+     -or-
+
+      - Method Two: Remove Setup Disk 2 from the floppy disk drive and press
+        ENTER. Then insert the disk in the drive again and press ENTER.
+
+     -or-
+
+      - Method three: With Setup Disk 2 in the floppy disk drive, follow these
+        steps:
+
+        a. Bring up the Windows File Manager.
+
+        b. Select the drive that contains the Setup disk (for example, A:) and
+           press the F5 key to update the directory window. If this doesn't
+           work, you may need to select another drive, and then switch back to
+           the drive that contains the Setup disk.
+
+        c. Press ALT+TAB to switch back to the Setup program, and continue
+           installing the application.
+
+     -or-
+
+      - Method four: If none of the previous methods work, you can force the
+        tree to be re-read by following these steps:
+
+        a. Press ALT+TAB to switch to the Windows Program Manager.
+
+        b. Shell to MS-DOS.
+
+        c. At the MS-DOS prompt, change to the installation drive.
+
+        d. Press CTRL+C to clear the cache and force MS-DOS to re-read the
+           tree.
+
+        e. Type "exit" (without the quotation marks) to exit MS-DOS and return
+           to Windows.
+
+        f. Press ALT+TAB to return to the Setup program, and continue
+           installing the application.
+
+        NOTE: You may have to repeat this process between each disk change.
+
+  d. Helix Multimedia Cloaking is running during installation.
+
+     SOLUTION: Disable Helix Multimedia Cloaking during installation. For more
+     information about the DMF and Helix Multimedia Cloaking, please see the
+     following article in the Microsoft Knowledge Base:
+
+  Q128333 OFF4: "File Cannot be Decompressed" with Helix Multimedia Cloaking
+
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Besides a virus or hardware problem, the other major causes of disk 2 failures
+relate to the new Distribution Media Format (DMF) used for the installation
+disks.
+
+The root of DMF-related problems is not DMF itself. The two underlying causes
+are:
+
+- DMF is a new technology that some operating systems or utilities cannot
+  handle reliably.
+
+- Some disk controllers may not recognize the disk change when disk 1 (standard
+  floppy format) is removed and disk 2 (DMF format) is inserted in the drive.
+
+What is DMF?
+------------
+
+DMF is a special read-only format for 3.5-inch floppy disks that permits storing
+1.7 MB of data (a 17.7% increase over the standard 1.44 MB format).
+
+This is achieved by reducing the inter-sector gap, and adding three sectors per
+track. This does not affect the ability of arbitrary floppy drives to read the
+disk, because we have not changed the magnetic recording density. With this
+reduced inter-sector gap, however, there is not enough room between sectors to
+allow a floppy drive to reliably write to a DMF disk.
+
+Disks formatted with DMF cannot be copied to a standard high density 3.5-inch
+disk using the MS-DOS DISKCOPY or Windows COPY commands.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q120006 XL5C: How to Copy Files from Cabinets on DMF-Formatted Disks
+
+
+  Q122209 Error Message Occurs When Using Extract Utility
+
+
+  Q121802 OFF: "Could Not Read From File..." Running Maintenance Mode Setup
+
+
+  Q79207 WinWord Setup Fails on Disk 2; DRIVPARM Solution
+
+
+OS/2 Warp Version 3.0 is manufactured by International Business Machines, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+Additional query words: VFoxWin tshoot t-shoot trouble-shoot installation set up
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

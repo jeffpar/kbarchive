@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129224: HOWTO: Remove the System Menu from an Iconized Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129224: HOWTO: Remove the System Menu from an Iconized Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129224/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129224/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129224/","publisher":null,"image":null,"headline":"Q129224: HOWTO: Remove the System Menu from an Iconized Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129224-howto-remove-the-system-menu-from-an-iconized-application">Q129224: HOWTO: Remove the System Menu from an Iconized Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129224
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbMenu kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSM
+Last Modified: 26-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two ways to remove the system menu of an application when a user
+clicks an iconized application:
+
+1. Override the main frame window's PreCreateWindow function to remove the
+  WS_SYSMENU from the window's style field. However, this method removes the
+  system menu altogether from the application.
+
+2. Override the main frame window's OnSize method, and change the window style
+  of the mainframe to either include or exclude the WS_SYSMENU style bit
+  depending on user action. Use this technique if the user wants to remove the
+  system menu when the application is iconized and add the system menu back to
+  the application when the application is restored.
+
+MORE INFORMATION
+================
+
+Method One
+----------
+
+To remove the system menu completely from the application, override the main
+frame window's PreCreateWindow method as follows:
+
+     BOOL CMainFrame::PreCreateWindow(CREATESTRUCT &amp; cs)
+     {
+             // Call the base class version of PreCreateWindow, replace
+            //  CMDIFrameWnd with CFrameWnd in the following line
+            //  for an SDI application
+
+             if (!CMDIFrameWnd::PreCreateWindow(cs))
+                  return FALSE;
+
+            // Remove the system menu style bit from the window
+
+             cs.style &amp;= ~WS_SYSMENU;
+             return TRUE;
+     }
+
+Method Two
+----------
+
+The following steps and code fragments show how to remove the system menu when a
+user clicks an iconized application. The system menu is restored when the
+application is not iconized.
+
+1. Declare a BOOLEAN public data member in the class declaration of CMainFrame.
+  This data member determines if the system menu is enabled or not:
+
+        // In an SDI application CMainFrame will be derived from CFrameWnd
+
+        class CMainFrame : public CMDIFrameWnd
+        {
+        public:
+           BOOL sys_menu_enabled;
+               .
+               .  // Existing class declarations
+               .
+        }
+
+2. Modify the CMainFrame constructor to initialize the sys_menu_enabled data
+  member function to TRUE:
+
+        CMainFrame::CMainFrame()
+        {
+          //default the system menu to be enabled
+          sys_menu_enabled = TRUE;
+               .
+               .  // Continue with normal constructor code, if any
+               .
+        }
+
+3. Create a message handler for the WM_SIZE message for the CMainFrame class,
+  and add the following code to the CMainFrame::OnSize message handler:
+
+        void CMainFrame::OnSize(UINT nType, int cx, int cy)
+        {
+          // declare a local variable to hold the window style
+
+             long window_style;
+
+          //call base class's OnSize function,
+          //If SDI application call CFrameWnd::OnSize()
+
+          CMDIFrameWnd::OnSize(nType, cx, cy);
+
+          //if user is minimizing or iconizing the application
+
+          if (nType == SIZE_MINIMIZED)
+          {
+               // Get the main frame window's style
+                window_style = GetWindowLong(m_hWnd, GWL_STYLE);
+
+               //Remove the system menu from the window's style
+                window_style &amp;= ~WS_SYSMENU;
+
+               //toggle the boolean data member to show sys menu disabled
+                sys_menu_enabled = FALSE;
+
+               //set the style attribute of the main frame window
+               SetWindowLong(m_hWnd, GWL_STYLE, window_style);
+          }
+          else
+          {
+               //if user is restoring the application and his system menu
+               //is disabled,
+               if ((nType == SIZE_RESTORED) || nType == SIZE_MAXIMIZED) &amp;&amp;
+                  (!sys_menu_enabled))
+               {
+                   window_style = GetWindowLong(m_hWnd, GWL_STYLE);
+
+                 //Add the system menu to the window's style
+                   window_style |= WS_SYSMENU;
+
+                //toggle the boolean data member to show sys menu enabled
+                  sys_menu_enabled = TRUE;
+
+                  SetWindowLong(m_hWnd, GWL_STYLE, window_style);
+                  SendMessage(WM_NCACTIVATE,TRUE);
+               }
+           }
+        }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbMenu kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

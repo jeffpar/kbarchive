@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134981: PRB: Directories &amp; Registry Entries Left After Deinstall | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134981: PRB: Directories &amp; Registry Entries Left After Deinstall" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134981/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134981/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134981/","publisher":null,"image":null,"headline":"Q134981: PRB: Directories &amp; Registry Entries Left After Deinstall","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134981-prb-directories--registry-entries-left-after-deinstall">Q134981: PRB: Directories &amp; Registry Entries Left After Deinstall</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134981
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Windows NT, Windows version 3.1, and Windows for Workgroups, removing all
+Visual FoxPro files by using the Visual FoxPro Setup program does not remove the
+main Visual FoxPro directories and related subdirectories. Also, in Windows NT
+and Windows 95, registry information is not removed.
+
+CAUSE
+=====
+
+This is by design. The Visual FoxPro directory tree is not removed for safety
+reasons. Removing the directory tree could also delete user files and adding in
+the algorithm to check for user files versus FoxPro files would have added an
+additional level of complexity to the removal option.
+
+RESOLUTION
+==========
+
+After the removal process has completed, you can delete the directory where
+Visual FoxPro was installed by using File Manager.
+
+To remove the Registry entries in Windows 95 and Windows NT, you need to delete
+the Visual FoxPro key and all its subkeys by using the Registry Editor.
+Microsoft does not support the use of the Registry Editor, so you are urged to
+exercise extreme caution when working with the registry files. The Visual FoxPro
+registry entries are found in HKEY_CURRENT_USER on Local Machine in the
+Microsoft folder.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The README help file distributed with Visual FoxPro provides the following
+information. Note that the last sentence of the first paragraph is incorrect:
+
+  To remove Visual FoxPro from a hard disk in Windows for Workgroups or Windows
+  NT, double-click the Setup icon in the Visual FoxPro program group. Then
+  choose Remove All from the Visual FoxPro Setup dialog box. This process does
+  not remove user files.
+
+  CAUTION: Though the removal procedure offers several opportunities to keep
+  files or shared components, it offers no final warning before it starts to
+  delete all Visual FoxPro files. Press ESC to stop the removal process.
+
+Any user-created files stored in the Visual FoxPro installation directory are
+removed. To preserve these files, you must move them to a different directory
+location before running Setup.
+
+In Windows 95, this behavior is somewhat different in that the removal process
+does prompt for the deletion of the directory tree. This is done as part of the
+requirements for Windows 95 certification.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the Visual FoxPro Setup program contained in the Visual FoxPro program group,
+and choose Remove all. When the software has been removed, start the File
+Manager and verify that the directory where Visual FoxPro was installed is still
+present.
+
+Additional query words: 3.00 VFoxWin install deinstall
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

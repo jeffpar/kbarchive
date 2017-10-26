@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139835: FIX: TTOD() Returns Incorrect Date with Time of 12:00:00 AM | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139835: FIX: TTOD() Returns Incorrect Date with Time of 12:00:00 AM" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139835/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139835/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139835/","publisher":null,"image":null,"headline":"Q139835: FIX: TTOD() Returns Incorrect Date with Time of 12:00:00 AM","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139835-fix-ttod-returns-incorrect-date-with-time-of-120000-am">Q139835: FIX: TTOD() Returns Incorrect Date with Time of 12:00:00 AM</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139835
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use TTOD() on a variable containing a time of 12:00:00 AM, TTOD()
+returns an incorrect date. If one second is added to the date value, TTOD()
+returns the correct date.
+
+CAUSE
+=====
+
+12 AM is considered to be the start of a new day, so at 12 AM, TTOD() should
+display the date for the next day. However, TTOD() miscalculates and incorrectly
+displays the date for the previous day.
+
+STATUS
+======
+
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+The TTOD() function returns a date value from a datetime function or value.
+
+Steps to Reproduce Problem
+--------------------------
+
+In the following example, a variable is set to 10/24/95 at 10 PM. Two hours are
+added to the value, one at a time. Then the date is checked to make sure it has
+switched to 10/25/95 12:00:00 AM.
+
+In the Command window, type the following commands:
+
+  x = {10/24/95 22:00:00} &amp;&amp; Initialize date variable to 10 PM Oct 24, 1995
+  ? type("x")             &amp;&amp; Should return 'T' for DateTime
+  ?x                      &amp;&amp; Should return 10/24/95
+  x=x+3600                &amp;&amp; Add one hour to the time
+  ?x                      &amp;&amp; Should display 11 PM on Oct 24, 1995
+  x=x+3600                &amp;&amp; Add another hour to the time
+  ?x                      &amp;&amp; Should display 12 AM Oct 25, 1995
+  ?ttod(x)                &amp;&amp; Will display 10/24/95 when you expect 10/25/95
+
+The following two lines show that adding one second to 10/25/95 12:00:00 AM does
+allow TTOD() to return 10/25/95 as expected:
+
+  x=x+1                   &amp;&amp; Add one second for 12:00:01 AM Oct 25, 1995
+  ?ttod(x)                &amp;&amp; Should return 10/25/95
+
+Additional query words: date
+
+======================================================================
+Keywords          : kbvfp kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

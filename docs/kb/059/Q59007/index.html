@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q59007: How BASIC Can Display Multiple Text Colors at Once on SCREEN 1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q59007: How BASIC Can Display Multiple Text Colors at Once on SCREEN 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/059/Q59007/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/059/Q59007/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/059/Q59007/","publisher":null,"image":null,"headline":"Q59007: How BASIC Can Display Multiple Text Colors at Once on SCREEN 1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q59007-how-basic-can-display-multiple-text-colors-at-once-on-screen-1">Q59007: How BASIC Can Display Multiple Text Colors at Once on SCREEN 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q59007
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900202-98 B_BasicCom | mspl13_basic
+Last Modified: 26-FEB-1990
+
+In SCREEN 1, the COLOR statement cannot be used to put text of more
+than one color on the screen at one time. However, this can be done by
+using the ROM BIOS INTERRUPT hex 10, function 9, which displays a
+character with a specified attribute at the current cursor position.
+
+This information applies to Microsoft QuickBASIC Versions 2.00, 2.01,
+3.00, 4.00, 4.00b, 4.50 for MS-DOS, to Microsoft BASIC Compiler
+Versions 6.00 and 6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC
+Professional Development System (PDS) Version 7.00 for MS-DOS and MS
+OS/2.
+
+The specified attribute of a character can be 0, 1, 2, or 3. This
+attribute and the COLOR statement determine the color of the
+character. When an even expression (0 to 254) is the value for the
+palette in the COLOR statement, the default colors are 1 (green), 2
+(red), and 3 (yellow on CGA, or brown on EGA). When an odd expression
+(1 to 255) is the value for the palette in the COLOR statement, the
+default colors are 1 (cyan), 2 (magenta), and 3 (white). When the
+attribute is 0, the character is the background color specified by the
+COLOR statement. Attribute 0 can be used to erase a character. If no
+COLOR statement is used, the default is COLOR 0,1.
+
+The following program CALLs INTERRUPT 10 Hex (16 decimal), with
+function 9, to display a character of a certain color on the screen.
+To use this program, do the following:
+
+1. Invoke QuickBASIC by typing the following:
+
+      QB /L QB.QLB       [for QuickBASIC 4.00, 4.00b, or 4.50]
+   or
+      QBX /L QBX.QLB     [for BASIC PDS Version 7.00]
+
+   (The /L option above loads the QB.QLB or QBX.QLB Quick library,
+   which contains the CALL INTERRUPT routine.)
+
+2. QB.BI must be used in the $INCLUDE metacommand (see below). QB.BI
+   contains the user-defined TYPEs RegTypeX and RegType. Refer to the
+   QB.BI text file for more information. For BASIC PDS 7.00, this file
+   is called QBX.BI.
+
+3. If you are compiling and linking outside the environment, QB.LIB
+   must be linked in. For BASIC PDS 7.00, you must link in QBX.LIB.
+
+This program allows text to be printed to the screen at the location
+of the cursor by CALLing a subprogram named PrintColors. The text,
+attribute, and row and column position of the cursor are passed.
+
+DECLARE SUB PrintColors (text$, attribute, col, row)
+' $INCLUDE: 'qb.bi'
+' For BASIC PDS you must include 'qbx.bi'
+DIM SHARED inregs AS RegType, outregs AS RegType
+CLS
+SCREEN 1
+COLOR 0, 0                   'black background and even palette
+col = 1: row = 1             'current position of the cursor
+attribute = 1
+CALL PrintColors("green text ", attribute, col, row)
+attribute = 2
+
+CALL PrintColors("red text ", attribute, col, row)
+attribute = 3
+
+CALL PrintColors("yellow/brown text", attribute, col, row)
+PRINT "Default is yellow on CGA, brown on EGA"
+END
+
+REM Subprogram PrintColors prints text to the screen at position col
+REM and row in a color determined by the attribute passed and the
+REM palette selected by the COLOR statement. The cursor is updated.
+
+SUB PrintColors (text$, attribute, col, row)
+  FOR i = 1 TO LEN(text$)
+    inregs.ax = &amp;H900 + ASC(MID$(text$, i, 1)) 'function 09 in the
+                              'high part of the register and the ASCII
+                              'code of a character in the low part
+    inregs.bx = attribute 'display page (0 is the current page) in the
+                          'high part and the attribute in the low part
+    inregs.cx = &amp;H1         'number of times to display the character
+    CALL Interrupt(&amp;H10, inregs, outregs)
+    col = col + 1        'relocate the cursor one place to the right
+    LOCATE row, col      'for every character written to the screen
+  NEXT
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

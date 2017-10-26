@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67312: Keywords Limited to 9 Characters When Adding to QB 4.50 Help | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67312: Keywords Limited to 9 Characters When Adding to QB 4.50 Help" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67312/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67312/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67312/","publisher":null,"image":null,"headline":"Q67312: Keywords Limited to 9 Characters When Adding to QB 4.50 Help","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67312-keywords-limited-to-9-characters-when-adding-to-qb-450-help">Q67312: Keywords Limited to 9 Characters When Adding to QB 4.50 Help</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67312
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist4.50 | mspl13_basic
+Last Modified: 5-DEC-1990
+
+This article describes a specific problem encountered when adding to
+the online help file (QB45QCK.HLP) for QuickBASIC version 4.50 using
+HELPMAKE.EXE. The problem occurs only if you add a keyword that is
+larger than 9 characters.
+
+When the cursor is on a keyword larger than 9 characters and you press
+the F1 key (context-sensitive help), the QuickBASIC environment
+mistakenly displays QuickBASIC's "Symbol Help" screen for that
+keyword, instead of the context-sensitive help that you added to the
+help file. (The "Symbol Help" screen describes one of the symbols in
+your program, such as a variable, SUB, or FUNCTION description.) This
+behavior only occurs when you add keywords larger than 9 characters
+and attempt to make them "context sensitive." However, you can still
+access the help for the keyword you have added by choosing
+QuickBASIC's Help menu, selecting Index, and then selecting the
+correct topic in the index help screen.
+
+This limitation applies only to Microsoft QuickBASIC version 4.50.
+This limitation does not apply to the QuickBASIC extended environment
+(QBX.EXE), which comes with the BASIC Professional Development System
+(PDS) 7.00 and 7.10 for MS-DOS.
+
+You can easily work around this problem. To select a customized
+keyword from the QuickBASIC 4.50 environment, you should only add the
+first 9 characters of the intended keyword to QuickBASIC's online help
+file. For example, if you want to add AddMenuItem (an 11-character
+keyword) to the help file, truncate AddMenuItem to AddMenuIt (9
+characters). This lets you use the F1 key for context-sensitive help
+in the environment. The side effect of this strategy is that pressing
+F1 for a variable, such as AddMenuItemIndex% (or any other variable
+where the first 9 characters are "AddMenuIt"), always gives the
+context-sensitive help (Topic Help) that you added for AddMenuItem,
+instead of QuickBASIC's Symbol Help.
+
+For more information on how to modify QuickBASIC's online help file,
+please refer to the HELPMAKE.DOC file distributed on disk with the
+"HELPMAKE Utility Version 1.00 for QB 4.50" application note available
+from Microsoft Product Support Services. The HELPMAKE utility is also
+documented in Chapter 8, "HELPMAKE," in the "Microsoft QuickC Version
+2.0: Toolkit" manual.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

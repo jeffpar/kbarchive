@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305007: XCON: You Cannot Send SMTP Mail Through a Firewall | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305007: XCON: You Cannot Send SMTP Mail Through a Firewall" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305007/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305007/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305007/","publisher":null,"image":null,"headline":"Q305007: XCON: You Cannot Send SMTP Mail Through a Firewall","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305007-xcon-you-cannot-send-smtp-mail-through-a-firewall">Q305007: XCON: You Cannot Send SMTP Mail Through a Firewall</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305007
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you send a message to a Simple Mail Transfer Protocol (SMTP) recipient over
+the Internet Mail Service by using Microsoft Outlook Express or any other Post
+Office Protocol version 3 (POP3) or Internet Message Access Protocol Version
+4rev1 (IMAP4) client, you may receive a non-delivery report (NDR) that is
+similar to:
+
+  The message could not be sent because one of the recipients was rejected by
+  the server. The rejected e-mail address was 'XXX@XXX.XXX'. Subject 'XXXX',
+  Account: 'XXX', Server: 'XXX.XXX.XXX.XXX', Protocol: SMTP, Server Response:
+  '550 Requested action not taken: mailbox unavailable', Port: 25, Secure(SSL):
+  No, Server Error: 550, Error Number: 0x800CCC79
+
+CAUSE
+=====
+
+This issue may occur if:
+
+- Rerouting is selected on the Routing tab of the Internet Mail Service.
+
+-and-
+
+- The "Hosts and clients that successfully authenticate" routing restriction is
+  selected.
+
+-and-
+
+- A Watchguard Firebox firewall is being used.
+
+The Watchguard Firebox firewall can be configured to strip SMTP commands. To use
+authentication, the following command verbs must be turned on:
+
+- Auth
+
+- Auth-logon
+
+If the authentication headers are denied on the firewall, the mail flow is
+stopped externally.
+
+RESOLUTION
+==========
+
+To resolve this issue, configure the firewall to allow all of the Exchange
+Server SMTP command verbs to pass through. If you have to, turn off the headers
+that are being stripped one by one.
+
+MORE INFORMATION
+================
+
+Determine whether or not you can successfully send mail from a POP3 or IMAP4
+client if you connect directly to the Exchange Server computer, instead of
+connecting through the firewall.
+
+Additional query words: IMS
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127096: INF: Implementation of Searched Updates in the Access Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127096: INF: Implementation of Searched Updates in the Access Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127096/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127096/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127096/","publisher":null,"image":null,"headline":"Q127096: INF: Implementation of Searched Updates in the Access Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127096-inf-implementation-of-searched-updates-in-the-access-driver">Q127096: INF: Implementation of Searched Updates in the Access Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127096
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how the Microsoft Access ODBC driver implements the SQL
+UPDATE statement and the implications of this in a concurrent multi- user
+situation.
+
+MORE INFORMATION
+================
+
+The Microsoft Access ODBC driver relies on the Jet engine for data processing.
+Jet is Microsoft's relational database engine that handles the database
+processing for Microsoft Access and Microsoft Visual Basic.
+
+A lost update is a typical concurrency problem and can occur when two processes
+read the same data from the database, and try to update the data based on what
+they read before either of the updates succeeds. With the Access ODBC driver
+(Jet), there is no guaranteed way of preventing lost updates. This is primarily
+because the Jet engine does not support a Read or Intent-to-Update type lock. It
+only supports Write locks, which conflict only with the other writers.
+
+To understand why a lost update happens, you need to know how the following SQL
+statement is executed:
+
+  Update &lt;table name&gt; Set &lt;column values&gt; Where
+  &lt;searchcondition&gt;
+
+Even though this is a single SQL statement, it is implemented in roughly two
+steps:
+
+1. Get a bookmark for all rows in the table that match the WHERE clause. A
+  bookmark is the unique key value of a row.
+
+2. For each bookmarked row, update it with the new values in the SET clause.
+
+Now, consider two instances of an application running simultaneously. There are
+several combinations of possible executions in the two processor update case. If
+both processors attempt to do step 2 at the same time, one processor would get a
+lock conflict error. The lock conflict error tells you that the record is locked
+by another user on another machine.
+
+If both processors do step 1 at the same time and processor #1 completes
+(finishes and releases the lock) the update before processor #2 attempts the
+update, processor #1's update will be lost. No error will be generated. This is
+a classic lost update problem without transactions.
+
+Transactions can help. A transaction ensures that the write lock obtained by the
+first processor is held, which would mean that the second processor would notice
+the lock. However, through the Jet driver, there is no way to ensure that at any
+given time some other processor is not in the step 1 phase of the update. Hence,
+even with transactions, a lost update might occur in a multi-machine update
+scenario.
+
+The same reasoning applies to the combination of the DELETE and UPDATE statements
+in a multi-user situation. You should note that this problem is encountered very
+rarely.
+
+Also, using the SQLSetPos, an ODBC API call, to do the UPDATEs or DELETEs is
+faster and minimizes the chance of any lost updates or deletes.
+
+Additional query words: 2.00.2317 concurrency locking VISUAL C++
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

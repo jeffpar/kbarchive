@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137382: Client RPC Call for Remote APPC LU List Causes SNABASE Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137382: Client RPC Call for Remote APPC LU List Causes SNABASE Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137382/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137382/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137382/","publisher":null,"image":null,"headline":"Q137382: Client RPC Call for Remote APPC LU List Causes SNABASE Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137382-client-rpc-call-for-remote-appc-lu-list-causes-snabase-error">Q137382: Client RPC Call for Remote APPC LU List Causes SNABASE Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137382
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.1,2.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.1, 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+SNA Server generates a Dr. Watson error in SNABASE.EXE when a client does a RPC
+call to get a list of Remote APPC LUs which are paired with a Local APPC LU. The
+SNA Server logs an Event ID 624 in the Windows NT Application Log (as shown in
+the Event Viewer) indicating that a SNADUMP.LOG was created for SNABASE.EXE. The
+error also generates a DRWTSN32.LOG when it occurs. The following is an excerpt
+from a DRWTSN32.LOG that was created following one of the SNABASE errors:
+
+  Application exception occurred:
+  App: C:\SNA\system\snabase.exe (pid=139)
+  When: 8/7/1995 @ 10:38:21.884
+  Exception number: c0000005 (access violation)
+
+Your DRWTSN32.LOG file will appear somewhat different than this example.
+
+NOTE: If using Windows NT Server 3.5, you will have to load the Windows NT
+Symbols to get a proper Dr. Watson log when using SNA Server.
+
+After the SNABASE error occurs, the SNA Server stops accepting sessions from SNA
+Server clients until the SNA Server is shutdown and restarted.
+
+CAUSE
+=====
+
+This error is caused when SNA Server tries to copy (read) a larger range of
+memory than is in a memory buffer. This happens when a client makes an RPC call
+to get the list of Remote APPC LUs partnered with a particular Local APPC LU and
+the number of Remote APPC LUs exceed the size of the client's buffer. The error
+only occurs if the memory buffer is located at the end of a 4K page and the
+extra memory that SNA Server attempts to read is located on the next uncommitted
+page. The buffer size is usually less than one hundred bytes so the probability
+of this error is quite small.
+
+RESOLUTION
+==========
+
+Microsoft has modified the files, SNABASE.EXE and SNADMOD.DLL, to correct this
+problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server for Windows NT. This
+problem was corrected in the latest SNA Server for Windows NT, 2.11 U.S. Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: 2.10 2.11 prodsna DRWTSN32.LOG SNADUMP.LOG trap
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126642: SMS: Troubleshooting Inventory Collection Problems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126642: SMS: Troubleshooting Inventory Collection Problems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126642/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126642/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126642/","publisher":null,"image":null,"headline":"Q126642: SMS: Troubleshooting Inventory Collection Problems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126642-sms-troubleshooting-inventory-collection-problems">Q126642: SMS: Troubleshooting Inventory Collection Problems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q126642</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbInventory</span> <span class="n">kbMaintMan</span> <span class="n">kbsmsAdmin</span> <span class="n">smsadmin</span> <span class="n">smsinv</span> <span class="n">smshowto</span> <span class="n">smsmaintman</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">31</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">1.0</span><span class="p">,</span> <span class="m">1.1</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">several</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">inventory</span> <span class="n">collection</span>
+<span class="n">problems</span><span class="p">,</span> <span class="k">and</span> <span class="n">what</span> <span class="n">you</span> <span class="n">can</span> <span class="k">do</span> <span class="k">to</span> <span class="n">resolve</span> <span class="n">them</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">The</span> <span class="n">Client</span> <span class="n">Stops</span> <span class="n">Responding</span> <span class="n">When</span> <span class="n">You</span> <span class="nf">Run</span> <span class="n">Inventory</span> <span class="n">Agent</span>
+<span class="p">--------------------------------------------------------</span>
+
+<span class="m">1.</span> <span class="n">See</span> <span class="k">if</span> <span class="n">you</span> <span class="n">have</span> <span class="n">a</span> <span class="n">Smssafe</span><span class="p">.</span><span class="n">tmp</span> <span class="n">file</span><span class="p">.</span> <span class="n">This</span> <span class="n">file</span> <span class="n">lists</span> <span class="n">each</span> <span class="n">test</span> <span class="n">that</span> <span class="n">was</span> <span class="nf">run</span><span class="p">.</span>
+  <span class="n">The</span> <span class="n">last</span> <span class="n">test</span> <span class="n">listed</span> <span class="n">indicates</span> <span class="n">which</span> <span class="n">test</span> <span class="n">caused</span> <span class="n">the</span> <span class="n">client</span> <span class="k">to</span> <span class="nf">stop</span>
+  <span class="n">responding</span><span class="p">.</span> <span class="n">Inventory</span> <span class="n">Agent</span> <span class="n">deletes</span> <span class="n">this</span> <span class="n">file</span> <span class="k">if</span> <span class="n">it</span> <span class="n">completes</span> <span class="n">normally</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">running</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">1.1</span><span class="p">,</span> <span class="n">the</span> <span class="n">Smssafe</span><span class="p">.</span><span class="n">tmp</span> <span class="n">file</span>
+  <span class="n">is</span> <span class="n">located</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Ms</span><span class="p">\</span><span class="n">Sms</span><span class="p">\</span><span class="n">Data</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">Set</span> <span class="n">the</span> <span class="n">SMSLS</span><span class="p">=</span><span class="m">1</span> <span class="n">environment</span> <span class="n">variable</span><span class="p">.</span> <span class="n">This</span> <span class="n">variable</span> <span class="n">enables</span> <span class="n">the</span> <span class="n">Smsls</span><span class="p">.</span><span class="n">bat</span>
+  <span class="n">file</span><span class="s1">'s verbose mode, to help you determine where the Inventory Agent caused
+  the client to stop responding. verbose mode echoes all output to the screen.
+
+3. Once you determine where the Inventory Agent is stopping, remove or
+  reconfigure the suspect component and run the inventory again. Once the
+  problem has been narrowed down to a particular configuration, report the
+  results to Microsoft Technical Support.
+
+You Run Inventory Agent on a New Client but the Inventory Doesn'</span><span class="n">t</span> <span class="n">Appear</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Database</span>
+<span class="p">----------------------------------------------------------------------------------------</span>
+
+<span class="m">1.</span> <span class="n">Look</span> <span class="n">at</span> <span class="n">the</span> <span class="n">CurrentLogonServer</span> <span class="n">entry</span> <span class="k">in</span> <span class="n">the</span> <span class="n">hidden</span> <span class="n">Sms</span><span class="p">.</span><span class="n">ini</span> <span class="n">file</span><span class="p">,</span> <span class="k">to</span> <span class="n">determine</span>
+  <span class="n">what</span> <span class="n">logon</span> <span class="n">server</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">is</span> <span class="n">reporting</span> <span class="n">the</span> <span class="n">inventory</span> <span class="k">to</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">For</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">,</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">Windows</span> <span class="n">for</span> <span class="n">Workgroups</span><span class="p">,</span> <span class="k">and</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">clients</span><span class="p">,</span> <span class="n">check</span>
+  <span class="n">the</span> <span class="p">\\&lt;</span><span class="n">logon</span> <span class="n">server</span><span class="p">&gt;\</span><span class="n">Sms_Shr</span><span class="p">\</span><span class="n">Inventry</span><span class="p">.</span><span class="n">box</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">a</span> <span class="p">.</span><span class="n">raw</span> <span class="n">file</span>
+  <span class="n">generated</span> <span class="n">by</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span> <span class="n">For</span> <span class="n">Macintosh</span> <span class="k">and</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span> <span class="n">clients</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span>
+  <span class="p">\\&lt;</span><span class="n">logon</span> <span class="n">server</span><span class="p">&gt;\</span><span class="n">Sms_Shr</span><span class="p">\</span><span class="n">Isvmif</span><span class="p">.</span><span class="n">box</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">a</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span><span class="p">.</span> <span class="k">If</span>
+  <span class="n">multiple</span> <span class="n">files</span> <span class="n">exist</span><span class="p">,</span> <span class="n">look</span> <span class="n">for</span> <span class="n">one</span> <span class="k">with</span> <span class="n">a</span> <span class="n">recent</span> <span class="n">time</span> <span class="n">stamp</span><span class="p">.</span> <span class="n">Display</span> <span class="n">the</span> <span class="n">text</span>
+  <span class="n">contents</span> <span class="k">of</span> <span class="n">the</span> <span class="n">file</span><span class="p">,</span> <span class="k">and</span> <span class="n">look</span> <span class="n">for</span> <span class="n">a</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">ID</span> <span class="n">that</span>
+  <span class="n">matches</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Unique</span> <span class="n">ID</span> <span class="n">entry</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Sms</span><span class="p">.</span><span class="n">ini</span> <span class="n">file</span><span class="p">.</span>
+  <span class="n">Confirm</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Inventory</span> <span class="n">Agent</span> <span class="n">did</span> <span class="nb">write</span> <span class="n">this</span> <span class="n">file</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="p">.</span><span class="n">raw</span> <span class="n">file</span> <span class="n">has</span> <span class="n">a</span> <span class="n">binary</span> <span class="n">header</span> <span class="k">and</span> <span class="n">a</span> <span class="n">text</span> <span class="n">detail</span> <span class="n">area</span><span class="p">.</span> <span class="n">The</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span>
+  <span class="n">is</span> <span class="n">a</span> <span class="n">text</span> <span class="n">file</span><span class="p">.</span> <span class="n">A</span> <span class="n">first</span><span class="p">-</span><span class="n">time</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span> <span class="n">is</span> <span class="n">about</span> <span class="m">40</span><span class="p">-</span><span class="m">60</span><span class="n">K</span> <span class="k">in</span> <span class="n">size</span><span class="p">.</span> <span class="n">Delta</span> <span class="p">.</span><span class="n">mif</span>
+  <span class="n">files</span> <span class="n">are</span> <span class="n">usually</span> <span class="n">less</span> <span class="n">than</span> <span class="m">5</span><span class="n">K</span> <span class="k">in</span> <span class="n">size</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="k">If</span> <span class="n">the</span> <span class="p">.</span><span class="n">raw</span> <span class="k">or</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span> <span class="n">does</span> <span class="k">not</span> <span class="n">exist</span><span class="p">,</span> <span class="n">check</span> <span class="n">for</span> <span class="n">a</span> <span class="n">permission</span> <span class="k">or</span> <span class="n">connection</span>
+  <span class="n">problem</span><span class="p">.</span> <span class="n">The</span> <span class="n">client</span><span class="s1">'s Inventory Agent may not be able to connect and write to
+  this location.
+
+  If this file does exist, then Inventory Agent is working properly. See the
+  next section to determine if one of the Systems Management Server Site
+  services is suspect.
+
+Inventory Agent Runs Normally on the
+Client but the Hardware Inventory Is Not Updated
+-------------------------------------------------------------------------------------
+
+1. Confirm that the hardware inventory collection interval has expired for the
+  client. Check the current LastHardwareScan value in the Sms.ini file, add the
+  inventory collection interval configured for the Systems Management Server
+  site, and compare the resulting date against the client'</span><span class="n">s</span> <span class="n">current</span> <span class="nf">system</span>
+  <span class="n">clock</span> <span class="n">date</span><span class="p">.</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">uses</span> <span class="n">this</span> <span class="k">procedure</span> <span class="k">to</span> <span class="n">determine</span> <span class="n">when</span>
+  <span class="n">it</span> <span class="n">needs</span> <span class="k">to</span> <span class="n">collect</span> <span class="n">hardware</span> <span class="k">or</span> <span class="n">software</span> <span class="n">inventory</span><span class="p">.</span>
+
+  <span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">on</span> <span class="n">the</span> <span class="n">inventory</span> <span class="n">process</span><span class="p">,</span> <span class="n">see</span> <span class="n">Appendix</span> <span class="n">C</span> <span class="k">of</span> <span class="n">the</span> <span class="s2">"Systems
+  Management Server Administrator's Guide version 1.1"</span> <span class="k">or</span> <span class="n">chapter</span> <span class="m">3</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="s2">"Systems Management Server Resource Guide."</span>
+
+<span class="m">2.</span> <span class="n">The</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Maintenance</span> <span class="n">Manager</span> <span class="n">service</span> <span class="n">is</span> <span class="n">responsible</span> <span class="n">for</span>
+  <span class="n">collecting</span> <span class="n">the</span> <span class="p">.</span><span class="n">raw</span> <span class="k">and</span> <span class="p">.</span><span class="n">mif</span> <span class="n">files</span> <span class="k">from</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">servers</span><span class="p">,</span> <span class="k">and</span> <span class="n">transferring</span>
+  <span class="n">them</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Site</span> <span class="n">server</span><span class="p">.</span> <span class="n">These</span> <span class="n">files</span> <span class="n">are</span> <span class="n">placed</span> <span class="k">in</span>
+  <span class="n">the</span> <span class="p">\</span><span class="n">Sms</span><span class="p">\</span><span class="n">Site</span><span class="p">.</span><span class="n">srv</span><span class="p">\</span><span class="n">Inventry</span><span class="p">.</span><span class="n">box</span> <span class="k">or</span> <span class="n">Isvmif</span><span class="p">.</span><span class="n">box</span> <span class="n">directory</span><span class="p">,</span> <span class="n">depending</span> <span class="n">on</span> <span class="n">the</span>
+  <span class="n">client</span> <span class="n">type</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="n">files</span> <span class="k">do</span> <span class="k">not</span> <span class="n">arrive</span> <span class="n">during</span> <span class="n">the</span> <span class="n">Maintenance</span> <span class="n">Manager</span>
+  <span class="n">watchdog</span> <span class="n">cycle</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">Sms</span><span class="p">\</span><span class="n">Logs</span><span class="p">\</span><span class="n">Maintman</span><span class="p">.</span><span class="nb">log</span> <span class="n">file</span> <span class="n">for</span> <span class="n">errors</span> <span class="n">that</span> <span class="n">occurred</span>
+  <span class="k">while</span> <span class="n">either</span> <span class="n">attempting</span> <span class="k">to</span> <span class="nf">connect</span> <span class="k">to</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">server</span> <span class="k">or</span> <span class="n">transferring</span> <span class="n">files</span>
+  <span class="k">to</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">After</span> <span class="n">these</span> <span class="n">files</span> <span class="n">reach</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">,</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+  <span class="n">Inventory</span> <span class="n">Data</span> <span class="n">Processor</span> <span class="n">service</span> <span class="n">processes</span> <span class="n">them</span> <span class="k">and</span> <span class="n">places</span> <span class="n">the</span> <span class="n">output</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="n">Sms</span><span class="p">\</span><span class="n">Site</span><span class="p">.</span><span class="n">srv</span><span class="p">\</span><span class="n">Dataload</span><span class="p">.</span><span class="n">box</span><span class="p">\</span><span class="n">Deltamif</span><span class="p">.</span><span class="n">col</span> <span class="n">directory</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="n">files</span> <span class="n">are</span> <span class="k">not</span>
+  <span class="n">removed</span> <span class="k">from</span> <span class="n">the</span> <span class="n">source</span> <span class="n">directories</span><span class="p">,</span> <span class="k">or</span> <span class="k">do</span> <span class="k">not</span> <span class="n">appear</span> <span class="k">in</span> <span class="n">the</span> <span class="n">destination</span>
+  <span class="n">directory</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">Sms</span><span class="p">\</span><span class="n">Logs</span><span class="p">\</span><span class="n">Invproc</span><span class="p">.</span><span class="nb">log</span> <span class="n">file</span> <span class="n">for</span> <span class="n">errors</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">After</span> <span class="n">the</span> <span class="n">output</span> <span class="n">is</span> <span class="n">written</span> <span class="k">to</span> <span class="n">the</span> <span class="p">...\</span><span class="n">Deltamif</span><span class="p">.</span><span class="n">col</span> <span class="n">directory</span><span class="p">,</span> <span class="n">the</span> <span class="n">Systems</span>
+  <span class="n">Management</span> <span class="n">Server</span> <span class="n">Inventory</span> <span class="n">Data</span> <span class="n">Loader</span> <span class="n">copies</span> <span class="n">the</span> <span class="n">data</span> <span class="k">in</span> <span class="n">these</span> <span class="n">files</span> <span class="k">to</span> <span class="n">the</span>
+  <span class="n">SQL</span> <span class="n">database</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="n">files</span> <span class="n">are</span> <span class="k">not</span> <span class="n">removed</span> <span class="k">from</span> <span class="n">this</span> <span class="n">directory</span><span class="p">,</span> <span class="k">or</span> <span class="n">the</span> <span class="n">data</span>
+  <span class="n">does</span> <span class="k">not</span> <span class="n">appear</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SQL</span> <span class="n">database</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">Sms</span><span class="p">\</span><span class="n">Logs</span><span class="p">\</span><span class="n">Datalodr</span><span class="p">.</span><span class="nb">log</span> <span class="n">file</span> <span class="n">for</span>
+  <span class="n">errors</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Services</span> <span class="n">Manager</span> <span class="k">to</span> <span class="nf">stop</span> <span class="n">the</span> <span class="n">services</span> <span class="k">while</span>
+  <span class="n">you</span> <span class="n">troubleshoot</span> <span class="n">this</span> <span class="n">problem</span><span class="p">.</span> <span class="n">After</span> <span class="n">you</span> <span class="n">examine</span> <span class="n">a</span> <span class="n">file</span> <span class="n">at</span> <span class="n">one</span> <span class="n">point</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="n">process</span><span class="p">,</span> <span class="n">start</span> <span class="n">the</span> <span class="n">service</span> <span class="n">that</span> <span class="n">will</span> <span class="n">process</span> <span class="n">that</span> <span class="n">file</span><span class="p">.</span> <span class="n">This</span> <span class="n">allows</span> <span class="n">you</span> <span class="p">(</span><span class="n">the</span>
+  <span class="n">administrator</span><span class="p">)</span> <span class="n">time</span> <span class="k">to</span> <span class="n">look</span> <span class="n">at</span> <span class="n">the</span> <span class="n">file</span> <span class="n">before</span> <span class="n">it</span> <span class="n">is</span> <span class="n">deleted</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">results</span>
+  <span class="n">are</span> <span class="n">sent</span> <span class="k">to</span> <span class="n">the</span> <span class="k">next</span> <span class="n">point</span> <span class="k">in</span> <span class="n">the</span> <span class="nf">system</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Log</span> <span class="n">file</span> <span class="n">entries</span> <span class="n">report</span> <span class="n">both</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">event</span> <span class="n">ID</span> <span class="k">and</span> <span class="n">the</span>
+  <span class="n">Windows</span> <span class="n">NT</span> <span class="n">error</span> <span class="n">code</span><span class="p">.</span> <span class="n">Convert</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">error</span> <span class="n">code</span> <span class="k">to</span> <span class="n">text</span><span class="p">,</span> <span class="n">using</span>
+  <span class="n">Error32</span><span class="p">,</span> <span class="k">to</span> <span class="n">determine</span> <span class="n">what</span> <span class="n">the</span> <span class="n">actual</span> <span class="n">error</span> <span class="n">is</span><span class="p">.</span>
+
+  <span class="n">Error32</span> <span class="n">can</span> <span class="n">be</span> <span class="n">copied</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Psstools</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span>
+  <span class="n">Server</span> <span class="n">compact</span> <span class="n">disc</span><span class="p">.</span>
+
+<span class="n">Inventory</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Database</span> <span class="n">Is</span> <span class="n">Corrupt</span> <span class="k">or</span> <span class="n">Incorrect</span>
+<span class="p">-------------------------------------------------</span>
+
+<span class="m">1.</span> <span class="nf">Run</span> <span class="n">Inventory</span> <span class="n">Agent</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span> <span class="k">and</span> <span class="n">check</span> <span class="n">the</span> <span class="p">.</span><span class="n">raw</span> <span class="k">or</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span> <span class="p">(</span><span class="n">at</span> <span class="n">the</span>
+  <span class="n">locations</span> <span class="n">mentioned</span> <span class="n">above</span><span class="p">)</span> <span class="n">generated</span> <span class="n">by</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span> <span class="n">Compare</span> <span class="n">the</span> <span class="n">inventory</span>
+  <span class="n">reported</span> <span class="k">with</span> <span class="n">the</span> <span class="n">known</span> <span class="n">configuration</span> <span class="k">of</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="p">.</span><span class="n">raw</span> <span class="k">or</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span>
+  <span class="n">is</span> <span class="n">correct</span> <span class="n">on</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">server</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">file</span> <span class="n">again</span> <span class="n">after</span> <span class="n">it</span> <span class="n">is</span> <span class="n">moved</span> <span class="k">to</span> <span class="n">the</span>
+  <span class="n">site</span> <span class="n">server</span><span class="p">,</span> <span class="k">and</span> <span class="n">once</span> <span class="n">again</span> <span class="n">after</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Inventory</span>
+  <span class="n">Processor</span> <span class="n">has</span> <span class="n">created</span> <span class="n">the</span> <span class="n">delta</span> <span class="p">.</span><span class="n">mif</span> <span class="k">in</span> <span class="n">the</span> <span class="p">...\</span><span class="n">Deltamif</span><span class="p">.</span><span class="n">col</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">If</span> <span class="n">corruption</span> <span class="n">occurs</span> <span class="k">in</span> <span class="n">the</span> <span class="p">.</span><span class="n">raw</span> <span class="k">or</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">server</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span>
+  <span class="n">usually</span> <span class="n">caused</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Inventory</span> <span class="n">Agent</span><span class="p">.</span> <span class="k">If</span> <span class="n">this</span> <span class="n">happens</span><span class="p">,</span> <span class="n">enable</span> <span class="n">the</span> <span class="n">Inventory</span>
+  <span class="n">Agent</span> <span class="n">verbose</span> <span class="n">mode</span><span class="p">,</span> <span class="k">and</span> <span class="n">watch</span> <span class="n">the</span> <span class="n">output</span><span class="p">,</span> <span class="k">to</span> <span class="n">determine</span> <span class="n">where</span> <span class="n">the</span> <span class="n">problem</span>
+  <span class="n">occurs</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="k">If</span> <span class="n">the</span> <span class="p">.</span><span class="n">raw</span> <span class="k">or</span> <span class="p">.</span><span class="n">mif</span> <span class="n">files</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Site</span> <span class="n">server</span> <span class="n">are</span>
+  <span class="n">corrupted</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">associated</span> <span class="n">service</span> <span class="nb">log</span> <span class="n">files</span> <span class="n">for</span> <span class="n">error</span> <span class="k">or</span> <span class="n">warning</span>
+  <span class="n">messages</span><span class="p">.</span> <span class="n">These</span> <span class="n">messages</span> <span class="n">may</span> <span class="n">indicate</span> <span class="n">network</span> <span class="k">or</span> <span class="n">file</span> <span class="nf">system</span> <span class="n">problems</span> <span class="n">that</span>
+  <span class="n">are</span> <span class="n">causing</span> <span class="n">the</span> <span class="n">corruption</span><span class="p">.</span> <span class="n">The</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Data</span> <span class="n">Loader</span> <span class="n">service</span>
+  <span class="n">does</span> <span class="k">not</span> <span class="n">usually</span> <span class="n">parse</span> <span class="n">the</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span> <span class="k">or</span> <span class="n">put</span> <span class="n">the</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="n">Datalodr</span><span class="p">.</span><span class="n">box</span><span class="p">\</span><span class="n">badmifs</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">the</span> <span class="n">administrator</span> <span class="k">to</span> <span class="n">review</span><span class="p">.</span>
+
+<span class="n">Software</span> <span class="n">Inventory</span> <span class="n">Is</span> <span class="k">Not</span> <span class="n">Collected</span> <span class="k">or</span> <span class="n">Updated</span>
+<span class="p">----------------------------------------------</span>
+
+<span class="m">1.</span> <span class="n">Confirm</span> <span class="n">that</span> <span class="n">the</span> <span class="n">software</span> <span class="n">inventory</span> <span class="n">collection</span> <span class="n">interval</span> <span class="n">has</span> <span class="n">expired</span><span class="p">.</span> <span class="n">Use</span> <span class="n">the</span>
+  <span class="n">same</span> <span class="k">procedure</span> <span class="k">as</span> <span class="n">above</span> <span class="p">(</span><span class="s2">"Inventory Agent Runs Normally on the Client but the
+  Hardware Inventory Is Not Updated,"</span> <span class="n">step</span> <span class="n">one</span><span class="p">),</span> <span class="n">but</span> <span class="n">use</span> <span class="n">the</span> <span class="n">value</span> <span class="k">in</span>
+  <span class="n">LastSoftwareScan</span> <span class="k">to</span> <span class="n">confirm</span> <span class="n">the</span> <span class="n">software</span> <span class="n">collection</span> <span class="n">interval</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Confirm</span> <span class="n">that</span> <span class="n">a</span> <span class="n">compiled</span> <span class="n">software</span> <span class="k">package</span> <span class="n">rules</span> <span class="n">file</span> <span class="p">(</span><span class="n">Pkg_16</span><span class="p">.</span><span class="n">cfg</span><span class="p">)</span> <span class="nb">exists</span> <span class="n">on</span>
+  <span class="n">the</span> <span class="n">logon</span> <span class="n">servers</span><span class="p">.</span> <span class="n">This</span> <span class="n">file</span> <span class="n">specifies</span> <span class="n">what</span> <span class="n">software</span> <span class="n">inventory</span> <span class="n">is</span> <span class="n">supposed</span> <span class="k">to</span>
+  <span class="n">be</span> <span class="n">collected</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">client</span> <span class="n">by</span> <span class="n">Inventory</span> <span class="n">Agent</span><span class="p">.</span>
+  <span class="n">Check</span> <span class="n">Appendix</span> <span class="n">C</span> <span class="k">of</span> <span class="n">the</span> <span class="s2">"Systems Management Server Administrator's Guide"</span> <span class="n">for</span>
+  <span class="n">details</span> <span class="n">on</span> <span class="n">how</span> <span class="n">Pkg_16</span><span class="p">.</span><span class="n">cfg</span> <span class="n">is</span> <span class="n">created</span> <span class="k">and</span> <span class="n">placed</span> <span class="n">on</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">servers</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Check</span> <span class="n">the</span> <span class="k">Package</span><span class="p">.</span><span class="n">rul</span> <span class="n">file</span> <span class="k">and</span> <span class="n">confirm</span> <span class="n">that</span> <span class="n">it</span> <span class="n">has</span> <span class="n">the</span> <span class="n">proper</span> <span class="n">software</span>
+  <span class="k">package</span> <span class="n">rules</span><span class="p">.</span> <span class="n">This</span> <span class="n">file</span> <span class="n">is</span> <span class="n">compiled</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">the</span> <span class="n">Pkg_16</span><span class="p">.</span><span class="n">cfg</span> <span class="n">file</span><span class="p">.</span> <span class="n">Refer</span> <span class="k">to</span>
+  <span class="n">Appendix</span> <span class="n">C</span> <span class="n">for</span> <span class="n">the</span> <span class="n">location</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Check</span> <span class="n">the</span> <span class="n">resulting</span> <span class="p">.</span><span class="n">raw</span> <span class="k">or</span> <span class="p">.</span><span class="n">mif</span> <span class="n">file</span> <span class="n">created</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Inventory</span> <span class="n">Agent</span><span class="p">.</span>
+  <span class="n">Software</span> <span class="n">inventory</span> <span class="k">and</span> <span class="n">collected</span> <span class="n">files</span> <span class="n">are</span> <span class="n">appended</span> <span class="k">to</span> <span class="n">the</span> <span class="k">end</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">hardware</span> <span class="n">inventory</span> <span class="n">section</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Carefully</span> <span class="n">check</span> <span class="n">your</span> <span class="n">Software</span> <span class="k">Package</span> <span class="n">inventory</span> <span class="n">rule</span> <span class="n">properties</span> <span class="p">(</span><span class="n">created</span>
+  <span class="n">using</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Administrator</span><span class="p">).</span> <span class="n">Many</span> <span class="n">software</span> <span class="n">inventory</span>
+  <span class="n">problems</span> <span class="n">occur</span> <span class="n">due</span> <span class="k">to</span> <span class="n">a</span> <span class="n">bad</span> <span class="n">rules</span> <span class="n">configuration</span><span class="p">.</span>
+
+<span class="n">Machine</span> <span class="n">Inventory</span> <span class="n">Appears</span> <span class="k">to</span> <span class="n">Change</span> <span class="k">and</span> <span class="n">Contains</span> <span class="n">Entries</span> <span class="k">from</span> <span class="n">Another</span> <span class="nf">System</span>
+<span class="p">----------------------------------------------------------------------------</span>
+
+<span class="n">This</span> <span class="n">problem</span> <span class="n">usually</span> <span class="n">occurs</span> <span class="n">when</span> <span class="n">two</span> <span class="n">clients</span> <span class="n">have</span> <span class="n">mistakenly</span> <span class="n">been</span> <span class="n">configured</span> <span class="k">with</span>
+<span class="n">the</span> <span class="n">same</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">ID</span><span class="p">.</span> <span class="n">Check</span> <span class="n">the</span> <span class="n">machine</span> <span class="n">name</span><span class="p">,</span> <span class="n">logon</span> <span class="n">name</span><span class="p">,</span> <span class="k">or</span>
+<span class="n">other</span> <span class="n">unique</span> <span class="n">identifier</span><span class="p">.</span> <span class="k">If</span> <span class="n">any</span> <span class="k">of</span> <span class="n">these</span> <span class="n">items</span> <span class="n">change</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">be</span> <span class="n">able</span> <span class="k">to</span>
+<span class="n">track</span> <span class="n">down</span> <span class="n">which</span> <span class="n">computers</span> <span class="n">have</span> <span class="n">the</span> <span class="n">same</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">ID</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">correct</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">delete</span> <span class="n">the</span> <span class="n">Sms</span><span class="p">.</span><span class="n">ini</span> <span class="n">file</span> <span class="k">from</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">systems</span> <span class="k">and</span> <span class="nf">run</span>
+<span class="n">Smsls</span><span class="p">.</span><span class="n">bat</span> <span class="n">again</span> <span class="n">on</span> <span class="n">that</span> <span class="nf">system</span><span class="p">.</span> <span class="n">This</span> <span class="n">process</span> <span class="n">assigns</span> <span class="n">a</span> <span class="n">new</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span> <span class="n">ID</span> <span class="k">to</span> <span class="n">the</span> <span class="n">affected</span> <span class="nf">system</span><span class="p">,</span> <span class="k">and</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">new</span> <span class="n">entry</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SQL</span> <span class="n">database</span><span class="p">.</span>
+<span class="k">If</span> <span class="n">this</span> <span class="n">problem</span> <span class="n">occurs</span> <span class="n">on</span> <span class="n">several</span> <span class="n">systems</span><span class="p">,</span> <span class="n">check</span> <span class="n">all</span> <span class="n">the</span> <span class="p">\\&lt;</span><span class="n">logon</span>
+<span class="n">server</span><span class="p">&gt;\</span><span class="n">Sms_shr</span><span class="p">\</span><span class="n">Smsid</span> <span class="n">directories</span> <span class="n">for</span> <span class="n">the</span> <span class="n">site</span><span class="p">,</span> <span class="k">and</span> <span class="n">confirm</span> <span class="n">that</span> <span class="n">the</span> <span class="n">current</span>
+<span class="p">.</span><span class="n">uid</span> <span class="n">file</span> <span class="n">contains</span> <span class="n">a</span> <span class="n">unique</span> <span class="n">ID</span> <span class="k">to</span> <span class="n">be</span> <span class="n">assigned</span> <span class="k">to</span> <span class="n">the</span> <span class="k">next</span> <span class="n">new</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span> <span class="n">client</span> <span class="n">configured</span> <span class="n">by</span> <span class="n">the</span> <span class="nf">system</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbInventory</span> <span class="n">kbMaintMan</span> <span class="n">kbsmsAdmin</span> <span class="n">smsadmin</span> <span class="n">smsinv</span> <span class="n">smshowto</span> <span class="n">smsmaintman</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS100</span> <span class="n">kbSMS110</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

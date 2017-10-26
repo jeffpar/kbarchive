@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137413: BUG: Report Writer Creates Child Records in One-to-Many Report | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137413: BUG: Report Writer Creates Child Records in One-to-Many Report" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137413/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137413/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137413/","publisher":null,"image":null,"headline":"Q137413: BUG: Report Writer Creates Child Records in One-to-Many Report","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137413-bug-report-writer-creates-child-records-in-one-to-many-report">Q137413: BUG: Report Writer Creates Child Records in One-to-Many Report</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137413
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 13-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a one-to-many report by using the Visual FoxPro Report Writer,
+blank child records are created for parent records without matching children.
+Numeric fields are represented by zeroes, character fields are represented by
+spaces, date fields are represented by a blank date separated by slashes, and
+logical fields are represented by a false (.F.) value. This behavior occurs if
+data from the child table is placed in the Detail band of the report.
+
+WORKAROUND
+==========
+
+For each data type, the workaround is slightly different. The Report Expression
+for each field in the Detail band linked to the child table must be modified.
+
+For Character fields
+--------------------
+
+In the Print When clause, click Remove Line If Blank.
+
+For Any Numeric Data type
+-------------------------
+
+In the Format dialog box, click Blank if Zero. Then in the Print When dialog box,
+click Remove Line If Blank.
+
+For Date or DateTime Fields
+---------------------------
+
+In the Print When dialog box, click Remove Line if Blank. Type the following in
+the "Print Only When Expression is True" box:
+
+     !EMPTY(child.date_field)
+
+Here date_field is the name of your date field.
+
+For Logical Fields
+------------------
+
+In the Print When dialog box, click Remove Line if Blank. Type the following in
+the "Print Only When Expression is True" box:
+
+     !EMPTY(child.key_Field)
+
+In this expression, use the child table's key field that links it to the parent
+table to see if it is empty. If the child table's key field is empty, you know
+there is no child record. The Report Writer automatically assigns logical fields
+a value of false (.F.), therefore the Remove Line if Blank option will not work
+on its own.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open the Testdata.dbc database located in the Samples\Data subdirectory under
+  the main Visual FoxPro directory.
+
+2. Create a Report using the one-to-many Report Wizard.
+
+3. In Step 1 of the Wizard, select Orders as the parent table, and select the
+  Order_id field as an output field.
+
+4. In Step 2, select Orditems as the child table, and select the Line_no,
+  Product_id, and Quantity fields for output.
+
+5. In Step 3, establish the relationship between the Order_id fields of the
+  parent and child tables.
+
+6. In Step 4, set the sort order to Order_id. Then click Finish, and save the
+  report for later use.
+
+7. Browse the Orditems.dbf table, mark the record with an Order_id of 10000 for
+  deletion.
+
+8. In the Command window, type:
+
+  " SET DELETED ON " (without the quotation marks)
+
+9. Open the report in the Report Designer, and preview the report. A blank child
+  record is created for Order_id 10000.
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

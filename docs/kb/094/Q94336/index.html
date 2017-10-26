@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94336: How DoubleSpace Assigns the Host Drive Letter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94336: How DoubleSpace Assigns the Host Drive Letter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94336/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94336/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94336/","publisher":null,"image":null,"headline":"Q94336: How DoubleSpace Assigns the Host Drive Letter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94336-how-doublespace-assigns-the-host-drive-letter">Q94336: How DoubleSpace Assigns the Host Drive Letter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94336
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands
+and filenames.
+
+SUMMARY
+=======
+
+When you install Microsoft DoubleSpace, the installation program normally leaves
+four unassigned drive letters between the last drive and the host drive. For
+example, if you have two drives (C and D), a RAM drive (E) and a network
+connection (F), DoubleSpace skips G, H, I, and J, and uses drive K for the host
+drive.
+
+If DoubleSpace detects Novell NetWare in memory, the host drive is assigned one
+letter less than the LASTDRIVE command in the CONFIG.SYS file. If that drive
+letter is unavailable, the host drive is assigned the next available drive
+letter.
+
+If you install DoubleSpace when device drivers that use drive letters (CD-ROM
+drivers or RAMDrives) are not loaded or your network software is not loaded, you
+may need to change the host drive letter.
+
+MORE INFORMATION
+================
+
+If you are using MS-DOS 6.2, you can change the host drive letter with the
+DBLSPACE /HOST command. If you are using Windows and have set up a permanent
+swap file (PSF) on your host drive, you need to remove the PSF before you change
+your host drive and then re-create it after you change the host drive. To do
+this, run Control Panel and choose the 386 Enhanced icon. For more information
+on re-creating the Windows PSF, see the text in step 10 below. For more
+information on using the DBLSPACE /HOST command, type "help dblspace /host"
+(without the quotation marks) at the MS-DOS command prompt and then press
+ENTER.
+
+If you are running MS-DOS 6.0, you can change the host drive letter by following
+these steps:
+
+1. If you use Microsoft Windows and have a permanent swap file (PSF), run
+  Windows, note the current size of your PSF and change your PSF to None. (You
+  will undo this change later in this procedure.)
+
+2. Change to the host drive (for example H).
+
+3. Use the ATTRIB command to change the file attribute on the DBLSPACE.INI file.
+  For example:
+
+  attrib h:\dblspace.ini -s -h -r
+
+4. Edit the DBLSPACE.INI file with a text editor, such as MS-DOS Editor.
+
+5. Change the LastDrive setting to the letter you want to be the host drive.
+
+6. Change the first parameter in the ActivateDrive line to the same letter you
+  used in step 5.
+
+  WARNING: Do not change the second parameter (represented by &lt;xx&gt;) in the
+  following example:
+
+      Before change:     ActivateDrive=H,xx
+      After change:      ActivateDrive=D,xx
+
+  WARNING: If you use a drive letter that is used by a physical device (such as
+  drive A), for the N value, the system may stop responding (hang) or
+  continually reboot when you restart it.
+
+7. Save your changes and quit the text editor.
+
+8. Reset the system, hidden, and read-only attributes on the DBLSPACE.INI file.
+  For example:
+
+  attrib h:\dblspace.ini +s +h +r
+
+9. Restart your computer (press CTRL+ALT+DEL).
+
+10. If you removed your PSF in step 1, run Microsoft Windows and re-create the
+  PSF on your host drive. Do not attempt to create the PSF on your
+  DoubleSpace-compressed drive. You may receive the following message if you
+  re-create your PSF at its previous size:
+
+  Windows will not use more than the virtual memory specified by the
+  Recommended Size. Are you sure you want to create a larger swap file?
+
+  You can ignore this error message; it is likely incorrect. As long as the PSF
+  is not larger than four times your physical memory, Windows can use a swap
+  file that is larger than the recommended size.
+
+Additional query words: 6.00 6.20 dblspace double space designate
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175985: FIX: Installing DAO SDK Outside of \DEVSTUDIO May Cause Problems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175985: FIX: Installing DAO SDK Outside of \DEVSTUDIO May Cause Problems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175985/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175985/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175985/","publisher":null,"image":null,"headline":"Q175985: FIX: Installing DAO SDK Outside of \\DEVSTUDIO May Cause Problems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175985-fix-installing-dao-sdk-outside-of-devstudio-may-cause-problems">Q175985: FIX: Installing DAO SDK Outside of \DEVSTUDIO May Cause Problems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175985
+Product(s): Microsoft C Compiler
+Version(s): winnt:3.5,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDAOsearch kbDatabase kbVC500fix kbVC600fix
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The DAO SDK, version 3.5, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install the DAO 3.5 SDK in a directory path outside of the default for
+DevStudio and give the name of that directory an extension, that is, \Daosdk.00,
+then the settings for both the Include and Lib paths within Visual C++ are
+cleared.
+
+This bug is reproducible only if the new destination directory name includes an
+extension (".00" for example) AND is outside the DevStudio directory.
+
+CAUSE
+=====
+
+This bug is caused by a problem with an InstallShield registry function where a
+period (.) in the path causes the function to truncate the string it's supposed
+to be writing.
+
+RESOLUTION
+==========
+
+Uninstall the DAO SDK using Control Panel/Add Remove Programs. The default
+directories for Visual C++ will be restored. Reinstall the DAO SDK within the
+DevStudio directory, or without using an extension in the target installation
+directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install Visual C++ 5.0. Verify that the default Include and Library
+  directories are listed in the Tools\Options dialog box, Directories Tab. Then
+  close Visual C++ 5.0.
+
+2. Execute Daosdk.35\....\Retail\Disk1\Setup.
+
+3. In the second screen, change the destination directory to C:\DataAcc.00.
+  Click Yes to the "Create new dir?" prompt.
+
+4. Click Custom Install, then all options in the last two dialog boxes. Allow
+  setup to complete.
+
+5. Restart Visual C++ 5.0, and recheck the Include and Library directories in
+  the Tools\Options dialog box, Directories Tab.
+
+RESULT: All original directories confirmed in step 1 are gone, with the new
+directory specified in step 3 in their place.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDAOsearch kbDatabase kbVC500fix kbVC600fix 
+Technology        : kbAudDeveloper kbDAOsearch kbSDKDAOSearch kbSDKSearch
+Version           : winnt:3.5,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

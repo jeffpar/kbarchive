@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184536: XADM: Removing E-mail Addresses Through Directory Import | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184536: XADM: Removing E-mail Addresses Through Directory Import" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184536/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184536/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184536/","publisher":null,"image":null,"headline":"Q184536: XADM: Removing E-mail Addresses Through Directory Import","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184536-xadm-removing-e-mail-addresses-through-directory-import">Q184536: XADM: Removing E-mail Addresses Through Directory Import</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184536
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+It is not possible to use ~DEL during directory import to remove a single value
+from a multi-valued field.
+
+Example:
+
+You want to remove a value from the E-Mail Addresses field for all users for a
+connector that has been removed. You can remove them individually through the
+Exchange Server Administrator program, but you cannot accomplish this in bulk
+through directory import.
+
+CAUSE
+=====
+
+The ~DEL value is available as part of the Bulk Import functionality. ~DEL is
+used to remove data from specific fields in the user properties. However, ~DEL
+will not remove a single value from a multi-valued field such as E-Mail
+Addresses.
+
+Example from an import file:
+
+Obj-Class,Directory Name,Home-Server,E-mail addresses
+Mailbox,Someone,SERVER,CCMAIL:Someone at SITE
+%MS:MSMAILSERVER/MSMAILSITE/SOMEONE%SMTP:Someone@SITE.microsoft.com
+%TEST:someone@microsoft%X400:c=US;a= ;p=Org;o=SITE;s=Someone;
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0.
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.5. This problem has been corrected in the latest U.S. service pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+An updated version of Dapi.dll enhances the functionality of ~DEL to allow
+removal of a single value from a multi-value field.
+
+Using the above import example, you can remove the "TEST:" address type that
+currently has a value of "someone@microsoft" by using the following syntax in
+the import file:
+
+     Obj-Class,Directory Name,Home-Server,E-mail addresses
+
+     Mailbox,Someone,SERVER,~del&lt;TEST:someone@microsoft&gt;
+
+NOTE: For this method to work, you can ONLY include the value you want to delete
+in the multi-valued property. If you include any other values, ~DEL does not
+remove the value.
+
+Example that does not work:
+
+     Obj-Class,Directory Name,Home-Server,E-mail addresses
+
+     Obj-Class,Directory Name,Home-Server,E-mail addresses
+     Mailbox,Someone,SERVER,CCMAIL:Someone at SITE
+     %MS:MSMAILSERVER/MSMAILSITE/SOMEONE%SMTP:Someone@SITE.microsoft.com
+     %~&lt;TEST:someone@microsoft&gt;%X400:c=US;a= ;p=Org;o=SITE;s=Someone;
+
+The sample e-mail address depicted herein is fictitious. No association with any
+real company, organization, product, person or event is intended or should be
+inferred.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

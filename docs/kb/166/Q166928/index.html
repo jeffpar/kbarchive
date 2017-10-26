@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166928: FIX: Public Properties of VB4 Class Are Passed by Reference | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166928: FIX: Public Properties of VB4 Class Are Passed by Reference" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166928/","publisher":null,"image":null,"headline":"Q166928: FIX: Public Properties of VB4 Class Are Passed by Reference","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166928-fix-public-properties-of-vb4-class-are-passed-by-reference">Q166928: FIX: Public Properties of VB4 Class Are Passed by Reference</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166928
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0 5.0
+Operating System(s): 
+Keyword(s): kbVBp500 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a Visual Basic 4.0 class with a public property implemented like the
+following:
+
+    Public MyProp As Integer
+
+Visual Basic 4.0 passes the property by reference (ByRef).
+
+However, if your property is implemented in Visual Basic 4.0 using property
+procedures (Property Get, Property Let, Property Set), it will be passed by
+value (ByVal).
+
+STATUS
+======
+
+This problem has been fixed in Visual Basic 5.0. All properties are now passed
+by value (ByVal) for consistency.
+
+In addition, all code internal to the class still has direct access to member
+variable data:
+
+    MyClass.CLS
+    ===========
+    Public MyProp As Integer
+
+    Public Sub MyMethod()
+      MyProp = 5  '// This has direct access to the class data
+    End Sub
+    ===========
+
+MORE INFORMATION
+================
+
+Microsoft has acknowledged that this change in behavior may be an issue for some
+developers porting Visual Basic 4.0 code to Visual Basic 5.0. Code that relies
+on the ByRef functionality stated above will need to be modified.
+
+One possible way to modify the Visual Basic 4.0 for porting to Visual Basic 5.0
+is shown below:
+
+Original Visual Basic 4.0 code:
+
+     MyClass.CLS
+     ===========
+     Public MyProp As Integer
+     ===========
+
+     MyBas.BAS
+     =========
+     Sub Compute(ByRef iTarget As Integer)
+       Dim iTemp as Integer
+       '// implementation code
+       iTarget = iTemp
+     End Sub
+
+     Sub Main()
+       Dim MyObject As MyClass
+       MyObject.MyProp = 97
+       Call Compute(MyObject.MyProp)
+     End Sub
+     =========
+
+Modified Sub Main() for Visual Basic 5.0:
+
+     Sub Main()
+       Dim MyObject As MyClass
+       Dim iTtemp1 As Integer
+       Dim iTemp2 As Integer
+       MyObject.MyProp = 97
+       iTemp1 = MyObject.MyProp
+       iTemp2 = iTemp1
+       Call Compute(iTemp2)
+       If iTemp1 &lt;&gt; iTemp2 Then
+         MyObject.MyProp = iTemp2
+         iTemp1 = iTemp2
+       End If
+     End Sub
+
+Exposing public variables is not a recommended programming technique. The
+following demonstrates possible modifications to MyClass.CLS, illustrating a
+data-hiding technique to preserve class member data:
+
+     MyClass.CLS
+     ===========
+     Private m_MyProp As Integer
+
+     Public Property Let MyProp(NewValue As Integer)
+       '// implement validation code and data formatting
+       m_MyProp = NewValue
+     End Property
+
+     Public Property Get MyProp() As Integer
+       MyProp = m_MyProp
+     End Property
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : 4.0 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

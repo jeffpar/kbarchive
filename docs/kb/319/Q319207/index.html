@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q319207: SMS: Retrying a Package Update May Create Many Jobs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q319207: SMS: Retrying a Package Update May Create Many Jobs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/319/Q319207/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/319/Q319207/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/319/Q319207/","publisher":null,"image":null,"headline":"Q319207: SMS: Retrying a Package Update May Create Many Jobs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q319207-sms-retrying-a-package-update-may-create-many-jobs">Q319207: SMS: Retrying a Package Update May Create Many Jobs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q319207
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbPackage kbSoftwareDist
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+If Systems Management Server (SMS) Distribution Manager does not update any of
+the local distribution points for a package, the package-update process is
+retried at least once an hour. If Distribution Manager is also working on other
+packages, Distribution Manager retries the unsuccessful package more frequently.
+If this problem occurs on the central site in a large hierarchy, Distribution
+Manager also sends the package information to every site in the hierarchy ever
+time it retries the package. This can significantly increase the number of site
+communication jobs on the central site, and a backlog of job files may occur in
+the \SMS\Inboxes\Schedule.box folder.
+
+CAUSE
+=====
+
+The package-update process does not distinguish between updating local
+distribution points and sending updated package data to lower-level sites in the
+hierarchy. Therefore, when a package is retried but a local distribution point
+is repeatedly not updated, the package information is repeatedly sent to the
+lower-level sites.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Only apply it to systems
+that are experiencing this specific problem. This fix may receive additional
+testing. Therefore, if you are not severely affected by this problem, Microsoft
+recommends that you wait for the next Systems Management Server service pack
+that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English post-Service Pack 3 version of this fix should have the following
+file attributes or later:
+
+  Date        Time   Version         Size     File name     Platform
+  ------------------------------------------------------------------
+  1-Mar-2001  17:25  2.00.1493.3253  811,792  Baseutil.dll  Alpha
+  1-Mar-2001  17:45  2.00.1493.3257  360,720  Distmgr.dll   Alpha
+  1-Mar-2001  17:25  2.00.1493.3253  527,296  Baseutil.dll  I386
+  1-Mar-2001  17:45  2.00.1493.3257  231,312  Distmgr.dll   I386
+
+NOTE: Because of file dependencies, the most recent hotfix or feature that
+contains the above files may also contain additional files.
+
+
+
+WORKAROUND
+==========
+
+You can avoid this problem if you do not have any local distribution points at
+the site where the package is created. This typically requires that no SMS
+client be directly assigned to that particular site.
+
+If SMS Distribution Manager reports a problem in trying to reach a local
+distribution point, resolve the problem as soon as possible. If the distribution
+point has been permanently removed from the network, use the SMS Administrator
+console to modify the properties of any packages that still have this computer
+defined as a valid distribution point.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+the Systems Management Server 2.0 Service Pack 4 Hotfix Rollup Package (HRP).
+
+For additional information about the SMS 2.0 SP4 HRP, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q323206 SMS: List of Bugs Fixed in the Systems Management Server 2.0 SP4 HRP
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To determine whether the SMS Distribution Manager component is having difficulty
+in updating a local distribution point, examine the SMS status messages for the
+component at the site where the package was created. The following status
+messages are generated when the distribution point is not updated successfully:
+
+  Message ID: 2328 - SMS Distribution Manager failed to copy package
+  &lt;package ID&gt; from &lt;package source&gt; to &lt;Distribution Point
+  location&gt;.
+
+  Message ID: 2302 - SMS Distribution Manager failed to process package
+  &lt;package name&gt; (package ID = &lt;package ID&gt;).
+
+The following status message is generated every time that SMS Distribution
+Manager sends a package update to a lower-level site:
+
+  Message ID: 2339 - SMS Distribution Manager instructed SMS Scheduler and
+  Sender to send the package information for package &lt;package ID&gt; to
+  child site &lt;site code&gt;.
+
+Additionally, the following registry key shows whether SMS Distribution Manager
+is currently retrying any packages at the local site:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Components\SMS_DISTRIBUTION_MANAGER\Retry
+  History\&lt;package ID&gt;
+
+You can delete the &lt;package ID&gt; registry key and the values in it to stop
+Distribution Manager from retrying the package update. This does not prevent the
+problem from occurring again if the cause of the problem still exists.
+
+Hotfix Installation Instructions
+--------------------------------
+
+Apply this hotfix to all of the sites in the SMS hierarchy. After you install the
+fix, update any collection that is affected by the problem at the site where the
+collection was created. To install the fix, use one of the following methods.
+
+How to Use the Hotfix Installer:
+
+NOTE: You can use this method only on Intel-based computers.
+
+1. Copy the hotfix folder structure to a share on your network. Note that
+  Q319207.exe is a Microsoft SMS Installer file that updates specific files on
+  your site server.
+
+2. Log on to the site server by using an account with administrator permissions.
+
+3. On the site server, quit the SMS Administrator console.
+
+4. Run the Q319207.exe tool and then follow the instructions in the wizard. You
+  can run the file in Quiet mode by using the /s switch.
+
+How to Manually Install the Hotfix:
+
+1. On the site server, quit the SMS Administrator console.
+
+2. Stop the SMS Site Component Manager, SMS Executive, Windows Management, and
+  SMS SQL Monitor services on the site server.
+
+3. Replace the Baseutil.dll file in the
+  &lt;Sms_root_folder&gt;\Bin\&lt;Platform&gt; folder with the version of the
+  file from the hotfix.
+
+4. Replace the Distmgr.dll file in the
+  &lt;Sms_root_folder&gt;\Bin\&lt;Platform&gt; folder with the version of the
+  file from the hotfix.
+
+5. Restart the SMS Site Component Manager, SMS Executive, Windows Management,
+  and SMS SQL Monitor services.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbPackage kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

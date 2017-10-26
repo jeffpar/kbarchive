@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q51414: Internal Format of CURRENCY Data Type in BASIC PDS 7.00 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q51414: Internal Format of CURRENCY Data Type in BASIC PDS 7.00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/051/Q51414/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/051/Q51414/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/051/Q51414/","publisher":null,"image":null,"headline":"Q51414: Internal Format of CURRENCY Data Type in BASIC PDS 7.00","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q51414-internal-format-of-currency-data-type-in-basic-pds-700">Q51414: Internal Format of CURRENCY Data Type in BASIC PDS 7.00</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q51414
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 21-FEB-1991
+
+The CURRENCY data type available in Microsoft BASIC Compiler versions
+7.00 and 7.10 for MS-DOS and OS/2 is an 8-byte signed integer scaled
+by 10,000. This allows a variable of the CURRENCY type to have a range
+of
+
+   (2 ^ 63 -1) / 10,000  =  +922337203685477.5807
+
+to
+
+   (2 ^ 63) / 10,000   =  -922337203685477.5808
+
+Up to 19 digits are allowed, with no more than 4 digits to the right
+of the decimal point.
+
+Because the CURRENCY type is scaled by 10,000, its internal
+representation is the actual value multiplied by 10,000. For instance,
+a CURRENCY variable holding the value 0.0001 will be stored as
+follows:
+
+   HIGH BYTE                                                     LOW BYTE
+   00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+
+As with ordinary INTEGERs, the higher byte is stored at the higher
+memory address so that once you find the address of the variable, you
+will find the low byte there, the second byte stored above, the third
+byte above that, etc. The example program below displays the
+hexadecimal machine representation for a CURRENCY data type variable
+whose value is INPUT from the keyboard.
+
+Sample Code:
+
+'******************************************************************
+'     Sample program to display machine representation of the     *
+'     CURRENCY data type (8-byte scaled INTEGER)                  *
+'******************************************************************
+CLS
+DO UNTIL INKEY$ = CHR$(27)
+  PRINT "Enter a CURRENCY value.  The machine representation will be "
+  PRINT "displayed in Hex"
+  INPUT a@                   ' "@" is the CURRENCY data type suffix.
+  address% = VARPTR(a@)      ' Get the address of the variable a@
+
+  FOR i% = 7 TO 0 STEP -1
+     PRINT HEX$(PEEK(address% + i%)); "  ";  ' Display representation
+  NEXT i%                                    ' in normal Low-Byte to
+                                             ' the right form.
+  PRINT
+  PRINT "press a key to continue, Esc to EXIT"
+  SLEEP
+LOOP
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

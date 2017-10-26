@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190966: BUG: IntelliSense Limitations with Templates | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190966: BUG: IntelliSense Limitations with Templates" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190966/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190966/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190966/","publisher":null,"image":null,"headline":"Q190966: BUG: IntelliSense Limitations with Templates","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190966-bug-intellisense-limitations-with-templates">Q190966: BUG: IntelliSense Limitations with Templates</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190966
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbVC600bug
+Last Modified: 05-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This article focuses on the limitations of IntelliSense when working with
+templates.
+
+- IntelliSense does not recognize template member functions defined outside of
+  the template class.
+
+  When a template member function is defined outside of the template class, it
+  does not appear in an instantiated template object's Member list, and does
+  not provide Parameter and Type Info. It also does not appear in the ClassView
+  pane. With Visual C++ 6.0, the only way to have IntelliSense work correctly
+  with template member functions is to define all member functions inside of
+  the template class declaration.
+
+
+- Coding inside of nonclass template functions does not fully utilize
+  IntelliSense.
+
+  IntelliSense does not parse the bodies of template functions that are not
+  member functions of a class. As a result, most IntelliSense features do not
+  work inside of a template function definition.
+
+
+- Template class specializations are not properly interpreted by IntelliSense.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Consider the following code sample. Comments that are examples are marked with
+\\EXAMPLE. The code directly below needs to be uncommented in order to reproduce
+the problem. The comments following the code explain the problem:
+
+Sample Code
+-----------
+
+     //Test.cpp
+     #include &lt;stdio.h&gt;
+
+     // A Template Class
+     // 
+     template &lt;class T, int i&gt;
+     class TempClass
+     {
+     public:
+         TempClass(void){}
+         ~TempClass(void){}
+         int MemberSet(T a, int b);
+         int GetSize()
+         {
+     return arraysize;
+         }
+     private:
+         T Tarray[i];
+         int arraysize;
+     };
+
+     // A Simple Class
+     // 
+     class TestClass
+     {
+     public:
+        TestClass(void){}
+        ~TestClass(void){}
+        int m;
+        int n;
+     };
+
+     // Template Member Function Defined outside of the template class
+     // 
+     template &lt;class T, int i&gt;
+     int TempClass&lt;T, i&gt;::MemberSet(T a, int b)
+     {
+        if( ( b &gt;= 0 ) &amp;&amp; (b &lt; i) )
+        {
+          Tarray[b++] = a;
+          return sizeof( a );
+        }
+        else
+          return -1;
+     };
+
+     // Template Class
+     // 
+     template &lt;class T&gt;
+     class Print
+     {
+     public:
+        // Declare an instance of TestClass
+        TestClass te;
+
+        // EXAMPLE
+        //te.
+        // #2 No members displayed
+        // all types but char
+
+        void f(int, double)
+        {
+           printf("Print&lt;T&gt;\n");
+        }
+     };
+
+     // Specialization of Print&lt;class T&gt;
+     // 
+     template &lt;&gt;
+     class Print&lt;char&gt;
+     {
+     public:
+        // just for chars
+        void f(char*)
+        {
+           printf("Print&lt;char&gt;\n");
+        }
+     };
+
+     void main()
+     {
+     TempClass&lt;char,10&gt; t;
+
+     // EXAMPLE
+     //t.
+     // #1 MemberSet is absent from the member list
+     // MemberSet does not appear in the ClassView pane
+     // Define MemberSet in the TempClass declaration
+     // to correct this problem
+
+     Print&lt;char&gt; pc;
+
+     // EXAMPLE
+     //pc.f(
+     // #3
+     // pc.f  Tool tip shows all types but char
+     // pc.f( Parameter list is int, double
+     }
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q153284 Limitations of IntelliSense in Visual C++ 6.0
+
+"Template Topics"; Visual C++ Documentation, Using Visual C++, Visual C++
+Programmers Guide, Adding Program Functionality, Details, Template Topics.
+
+"About Automatic Statement Completion;" Visual C++ Documentation, Using Visual
+C++, Visual C++ Users Guide, Text Editor, Overview: Text Editor, About Automatic
+Statement Completion.
+
+"Automatically Completing Statements;" Visual C++ Documentation, Using Visual
+C++, Visual C++ Users Guide, Text Editor, How do I ... Topics: Text Editor,
+Automatically completing Statements.
+
+Additional query words: kbvc600bug
+
+======================================================================
+Keywords          : kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVCNET
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

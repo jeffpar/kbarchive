@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q323698: PRB: &quot;There Is a Diff Chain Size Mismatch in File&quot; Error Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q323698: PRB: &quot;There Is a Diff Chain Size Mismatch in File&quot; Error Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/323/Q323698/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/323/Q323698/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/323/Q323698/","publisher":null,"image":null,"headline":"Q323698: PRB: &quot;There Is a Diff Chain Size Mismatch in File&quot; Error Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q323698-prb-there-is-a-diff-chain-size-mismatch-in-file-error-message">Q323698: PRB: "There Is a Diff Chain Size Mismatch in File" Error Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q323698
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe 6.0c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run the Analyze tool against a Visual SourceSafe database, you may
+receive an error message that is similar to the following in the Analyze.log
+output:
+
+  There is a diff chain size mismatch in file "MyFile.txt" (FYIAAAAA) at
+  version 12(versions earlier than that version can no longer be retrieved from
+  the database).
+
+If you try to retrieve an earlier version of the file (that is, versions that are
+earlier than the version that is listed in the error message), you receive the
+following error message:
+
+  Unable to finish writing to the file
+
+CAUSE
+=====
+
+This problem occurs because of an error in a log entry record that causes the
+difference chain (or delta) to be unusable. The delta is calculated each time a
+file is checked in. The delta is used to properly regenerate older versions of
+the file.
+
+This error occurs when the file delta is not properly calculated or when the
+calculation cannot complete. The following conditions can cause this error to
+occur:
+
+- Loss of network connectivity.
+
+- Not enough disk space on the Visual SourceSafe server computer.
+
+- Client ends the check-in operation prematurely.
+
+RESOLUTION
+==========
+
+Use one of the following methods to resolve this problem:
+
+- Restore the file pairs from backup. For example, if you use the information
+  in the error message that is listed in the "Symptoms" section, you must
+  restore the FYIAAAAA file and its matching .a or .b file (FYIAAAAA.A or
+  FYIAAAAA.B).
+
+  NOTE: Any changes that are made to the file since the last backup are lost.
+
+- Archive and delete the history from the file at the version that is listed in
+  the error message. To do this, use the Ssarc.exe command-line utility. For
+  example, if you use the information in the error message that is listed in
+  the "Symptoms" section, run the following command at a command prompt:
+
+  ssarc -d -v12 archive1.ssa $/Apps/Source/MyFile.txt
+
+  After you archive the history from the file, you can safely delete the
+  Archive1.ssa file that is created.
+
+  NOTE: You cannot access any history that is earlier than the version that is
+  archived.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For additional information about errors that the Analyze tool reports, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q152807 INFO: Error Messages from Analyze Tool of Visual SourceSafe
+
+Additional query words: Diff Chain Analyze utility
+
+======================================================================
+Keywords          :  
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600C
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221681: FIX: Locals Window Not Refreshed with SUSPEND or SET STEP ON | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221681: FIX: Locals Window Not Refreshed with SUSPEND or SET STEP ON" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221681/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221681/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221681/","publisher":null,"image":null,"headline":"Q221681: FIX: Locals Window Not Refreshed with SUSPEND or SET STEP ON","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221681-fix-locals-window-not-refreshed-with-suspend-or-set-step-on">Q221681: FIX: Locals Window Not Refreshed with SUSPEND or SET STEP ON</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221681
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbMiscTools kbvfp600 kbvfp600bug kbVS600sp3fix kbGrpDSFox kbDSupport
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Locals window of the Debugger does not refresh properly when a program
+contains either the SUSPEND or the SET STEP ON commands.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open Visual FoxPro and the Debugger. Arrange the windows so that Visual
+  FoxPro is on the right half of the screen, and the Debugger is on the left
+  half. The screens should not overlap.
+
+2. Create a program called Test containing the following code:
+
+  CLEAR ALL
+  DEBUG
+  PUBLIC x
+
+  x = PROGRAM()
+  DO proc1 WITH x
+
+  PROCEDURE proc1
+  LPARAMETERS tx
+  LOCAL x
+  x = tx+' '+PROGRAM()
+  SET STEP ON
+  DO proc2 WITH x
+  ENDPROC
+
+  PROCEDURE proc2
+
+  LPARAMETERS tx
+  LOCAL x
+  x = tx +' '+ PROGRAM()
+  SET STEP ON
+  ?x
+
+3. Leave the Test program open and run the code.
+
+4. Press the Resume [&gt;] toolbar button in the Debugger twice.
+
+5. Press the ALT+TAB keys to go back to Visual FoxPro and run the program again
+  by pressing the CTRL+E keys.
+
+Call Stack window correctly says:
+
+Proc1
+Test.prg
+
+The Locals dropdown correctly says: Proc1. Value of x in Locals window is TEST;
+this is correct value for x in Test, not Proc1, and tx does not appear. If you
+move the Visual FoxPro window over the Debugger Locals window to make it
+repaint, you will see the correct value for x ("TEST PROC1"), but the letters tx
+still do not appear.
+
+6. Press the Resume [&gt;] button in Debugger toolbar.
+
+Observed: Call Stack window correctly says:
+
+Proc2
+Proc1
+Test.prg
+
+The Locals dropdown correctly says Proc2. Value of x in Locals window is TEST or
+TEST PROC1 depending on if you forced a repaint above in observed after step 3.
+This is correct value for x in Test or Proc1, and the letters tx still do not
+appear.
+
+At any time, if you click a program in the Call Stack window, or click on the
+locals dropdown to select a procedure, the Locals Window displays the correct
+values.
+
+To see the behavior with the SUSPEND command, follow these steps:
+
+1. Create and run the following code from a program (.PRG) file:
+
+  DEBUG
+  x = 1
+  SUSPEND
+  x = 3
+
+2. Look at the Locals window.
+
+Notice that x is not visible. If you click on the program name in the Call Stack
+window, x will appear in the Locals window.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMiscTools kbvfp600 kbvfp600bug kbVS600sp3fix kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

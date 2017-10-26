@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156672: PRB: &quot;Variable &lt;variable&gt; is not found&quot; Using #INCLUDE Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156672: PRB: &quot;Variable &lt;variable&gt; is not found&quot; Using #INCLUDE Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156672/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156672/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156672/","publisher":null,"image":null,"headline":"Q156672: PRB: &quot;Variable &lt;variable&gt; is not found&quot; Using #INCLUDE Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156672-prb-variable-variable-is-not-found-using-include-files">Q156672: PRB: "Variable &lt;variable&gt; is not found" Using #INCLUDE Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156672
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b 5.00
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp500 kbvfp600
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a predefined constant is referenced in a class or form, the following error
+message may be displayed:
+
+  Variable "&lt;variable&gt;" is not found..
+  &lt;Cancel&gt; &lt;Suspend&gt; &lt;Ignore&gt; &lt;Help&gt;
+
+CAUSE
+=====
+
+The header file of predefined compile-time constants has not been properly
+included in the class or form.
+
+WORKAROUND
+==========
+
+Method 1
+--------
+
+Include the header file in class or form using the following steps:
+
+1. Open the class or form.
+
+2. From the Class or Form menu, choose Include File.
+
+3. In the Include File dialog box, specify the header file in the Include File
+  text box or choose the three-dot button to open the Include dialog box and
+  choose the file.
+
+Method 2
+--------
+
+Insert the #INCLUDE in the application menu's general options, in the menu setup
+snippet.
+
+Method 3
+--------
+
+In every event or method on the class or form that references the predefined
+constant, reissue the #INCLUDE "&lt;filename&gt;".
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Predefined constants are defined by the #DEFINE directive. Generally, a series
+of #DEFINEs is included in a header file. In turn, this header file is
+referenced by a #INCLUDE in the class or form. This error usually occurs because
+the #INCLUDE is issued in the Load event of the class or form. By the time the
+event or method is called on the class or form that references the predefined
+constants, the constant is out of scope.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. In the Load event of the form, enter the following code:
+
+     #INCLUDE C:\VFP\SAMPLES\MAINSAMP\INCLUDE\TASTRADE.H
+
+3. Add a Command button to the form. In the Click event of the Command button,
+  add the following MessageBox that references a constant in the Tastrade.H
+  file:
+
+     =MessageBox(inifile)
+
+4. Run the form, and click the Command button.
+
+REFERENCES
+==========
+
+Developer's Guide, page 228.
+
+Visual FoxPro Help file: search on: "#INCLUDE preprocessor directive" and
+"#DEFINE ... #UNDEF preprocessor directive."
+
+Additional query words: kbdsd VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : 3.00 3.00b 5.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

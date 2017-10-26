@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239899: SMS: Administrator Console Cannot Connect After Reinstallation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239899: SMS: Administrator Console Cannot Connect After Reinstallation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239899/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239899/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239899/","publisher":null,"image":null,"headline":"Q239899: SMS: Administrator Console Cannot Connect After Reinstallation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239899-sms-administrator-console-cannot-connect-after-reinstallation">Q239899: SMS: Administrator Console Cannot Connect After Reinstallation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239899
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After fully removing and reinstalling Microsoft Systems Management Server (SMS)
+2.0 on a server that is running Microsoft Windows NT or Microsoft Windows 2000
+with a new site code that is alphanumerically greater than a previously
+installed site, SMS Administrator consoles cannot connect to the new site
+server.
+
+Whether the SMS Administrator Console is excuted locally or remotely, the SMS
+Administrator Console is unable to connect to the SMS Site Database. The SMS
+Administrator Console displays the following message:
+
+  Connection Failed
+
+Also, SMSprov.log contains the following error message:
+
+  11A][Mon 10/02/2000 19:50:57]:CSspClassManager::Initialize, Reading SQL db
+  info from registry for sitecode WWW... [11A][Mon 10/02/2000 19:50:57]:NOTE:If
+  the site has just been installed, the registry may not yet be set up and the
+  follwing may be normal: [11A][Mon 10/02/2000 19:50:57]:
+  *
+  E:\OPALSP2\sdk_provider\nt\smsprov\SspClassManager.cpp(437) : Failed to find
+  specific provider config, failing INIT this time around, will try again.
+
+SMSProv.log is located on the server where the SMS Provider is installed. During
+SMS primary site installation, the SMS administrator can choose the location of
+the SMS Provider. It can be installed on the SMS site server, or a remote SQL
+server. After it is installed, it cannot be relocated unless SMS is reinstalled.
+
+CAUSE
+=====
+
+When you remove a site server, its namespace is not removed from the Windows
+Management Instrumentation (WMI) repository (previously known as WBEM) for the
+server.
+
+WORKAROUND
+==========
+
+To work around this behavior, on the site server provider perform the following
+steps:
+
+1. Run the C:\Winnt\System32\Wbem\Wbemtest.exe utility locally.
+
+2. Click Connect.
+
+3. In the Server/Namespace box, type "root\sms" (without the quotation marks),
+  and then click Login.
+
+4. After you are connected, click Enum Classes.
+
+5. Click Recursive, and then click OK.
+
+6. Scroll down and double-click SMS_ProviderLocation().
+
+7. Click Instances.
+
+8. You should see two "SMS__ProviderLocation.SiteCode='&lt;XXX&gt;'" entries.
+  Select the old site's site code, and then click Delete.
+
+9. Double-click the __Namespace object.
+
+10. Click Instances.
+
+11. You should see two "__Namespace.name='site_XXX'" entries. Select the old
+  site's site code, and then click Delete.
+
+12. Close Wbemtest.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

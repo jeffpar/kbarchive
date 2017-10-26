@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q251052: XADM: Move Server Wizard Stops After Information Store Fix | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q251052: XADM: Move Server Wizard Stops After Information Store Fix" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/251/Q251052/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/251/Q251052/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/251/Q251052/","publisher":null,"image":null,"headline":"Q251052: XADM: Move Server Wizard Stops After Information Store Fix","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q251052-xadm-move-server-wizard-stops-after-information-store-fix">Q251052: XADM: Move Server Wizard Stops After Information Store Fix</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q251052
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP3
+Operating System(s): 
+Keyword(s): exc55sp3 kbgraphxlinkcritical
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the Exchange Server Move Server Wizard on an Exchange Server version
+5.5 Service Pack 3 computer to which a Store.exe fix version 5.5.2651.32 or
+later has been applied, the following error message may be displayed when the
+wizard tries to upgrade the private information store database:
+
+  Microsoft Exchange Move Server Wizard
+  An unexpected error has occurred while updating the Microsoft Exchange
+  Private Information Store
+  ID no: c1070451
+  &lt;OK&gt;
+
+CAUSE
+=====
+
+This error message can occur if you upgrade the database by using a Store.exe
+program version 5.5.2651.32 or later. Earlier versions of the Move Server Wizard
+cannot process the extra data in the information store.
+
+If the Store.exe program is version 5.5.2651.32 or later, and the Mvstore.dll
+file is not version 5.5.2651.73 or later, the Move Server Wizard stops
+responding.
+
+RESOLUTION
+==========
+
+If the error message in the "Symptoms" section of this article is displayed, you
+must install the latest information store fix after you restore the system from
+a tape backup and before you run the Move Server Wizard again.
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Exchange Server version 5.5 service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Move Server Wizard
+
++---------------------------+
+| File name   | Version     | 
++---------------------------+
+| Mvstore.dll | 5.5.2651.73 | 
++---------------------------+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 Service Pack 3.
+
+MORE INFORMATION
+================
+
+The fix described in this article will only update the Mvstore.dll if Move
+Server Wizard has been installed.
+
+The new Store.exe fixes are available for download from the Microsoft Download
+Center.
+
+NOTE: One of the files is for the x86 platform and the other is for the Alpha
+platform; you only need both if you have both platforms.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+For x86:
+
+  DownloadDownload Q248838engi.exe now
+
+For Alpha:
+
+  DownloadDownload Q248838enga.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+NOTE: When you start this version of the information store, the information store
+databases are automatically upgraded to a new format. After you upgrade the
+databases, you can restore an earlier version of the Store.exe file on the
+server, but only if it is version 5.5.2651.32 or later. If you restore a
+Store.exe file earlier than version 5.5.2651.32 after you upgrade the database,
+you are no longer able to start the information store. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q244976 XADM: Event ID 1197 and 1005 When Starting the Information Store
+
+Additional query words: Q248838
+
+======================================================================
+Keywords          : exc55sp3 kbgraphxlinkcritical 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

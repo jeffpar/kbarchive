@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173796: ODE97: Print Command Not Available in Run-Time Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173796: ODE97: Print Command Not Available in Run-Time Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173796/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173796/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173796/","publisher":null,"image":null,"headline":"Q173796: ODE97: Print Command Not Available in Run-Time Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173796-ode97-print-command-not-available-in-run-time-applications">Q173796: ODE97: Print Command Not Available in Run-Time Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173796
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 23-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+When you build a custom menu bar in Microsoft Access 97 and include the built-in
+File menu, some commands do not appear on the menu in the run-time environment.
+For example, the Print command does not appear on the menu; as a result, you
+cannot modify the printer settings or properties.
+
+CAUSE
+=====
+
+Some menu commands, such as the Print command from the default File menu, are
+disabled in the run-time environment.
+
+RESOLUTION
+==========
+
+Use either of the following two methods.
+
+Method 1: Use the Command Bar Wizard
+------------------------------------
+
+You can use the Command Bar Wizard to replace the default menu bar with a custom
+menu bar. For more information about obtaining the Command Bar Wizard, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q172300 ACC97: Command Bar Wizard Available in Download Center
+
+Follow these steps to create a custom menu bar using the Command Bar Wizard:
+
+1. Open your database in Microsoft Access 97.
+
+2. On the Tools menu, point to Add-ins, and then click Command Bar Wizard.
+
+3. Under Select Type in the Command Bar Wizard dialog box, click New, and then
+  click Next.
+
+4. In the Select Template list, click Database, and then click Next.
+
+5. Click Next, and then type a name for the menu in the Menu Name box.
+
+6. Click Build.
+
+  NOTE: The Command Bar Wizard will create a new menu and close any existing
+  menus. You can dock the custom menu bar or move it to any location on the
+  screen.
+
+7. On the Tools menu, click Startup.
+
+8. In the Startup dialog box, type or select your menu in the Menu Bar box.
+
+9. Click OK.
+
+Note that the Print command is available when you open this database in the
+run-time environment, either by running a Microsoft Access application installed
+from disk images created with the Microsoft Office 97 Developer Edition or by
+running Microsoft Access using the /runtime switch. When you click Print, the
+Print dialog box appears.
+
+Method 2: Call a Custom Print Function
+--------------------------------------
+
+You can create a Microsoft Visual Basic for Applications function that displays
+the Print dialog box and attach that function to a custom Menu Bar. To do so,
+follow these steps:
+
+1. Open your database in Microsoft Access 97.
+
+2. In the Database window, click the Modules tab, and then click New.
+
+3. Type the following code in the module that you just created:
+
+        Public Function PrintOut()
+           ' Attached to a custom Print command on a custom menu bar.
+           ' Use the RunCommand method to display the print dialog box.
+
+           On Error GoTo ErrorTrap
+
+           DoCmd.RunCommand acCmdPrint
+           Exit Function
+
+           ErrorTrap:
+              ' Check whether the RunCommand method was canceled.
+              ' If RunCommand is canceled, it generates a trappable
+              ' run-time error (2501).
+              If Err.Number = 2501 Then
+                 Exit Function
+              Else
+                 MsgBox Err.Number &amp; vbCRLF &amp; Err.Description
+              End If
+
+        End Function
+
+4. On the Debug menu, click Compile Loaded Modules.
+
+5. Save the module as basPrintFunction.
+
+Follow these steps to create the custom menu bar:
+
+1. On the View menu, point to Toolbars, and then click Customize.
+
+2. Click the Toolbars tab, and then click New.
+
+3. In the New Toolbar dialog box, type a name in the Toolbar name box, and then
+  click OK.
+
+4. In the Customize dialog box, click Properties.
+
+5. In the Toolbar Properties dialog box, click Menu Bar in the Type list, and
+  then click Close.
+
+6. In the Customize dialog box, click the Commands tab, and then click New Menu
+  in the Categories list.
+
+7. Drag New Menu from the Commands box to your custom menu bar.
+
+8. On your custom menu bar, right-click New Menu and type a name for the menu in
+  the Name box. Press ENTER.
+
+9. In the Customize dialog box, click File in the Categories box, and drag
+  Custom from the Commands box to your new menu.
+
+  NOTE: When you drag the Custom command over the name of your new menu, it will
+  create a blank menu. It is on this blank menu that you should place the
+  Custom command.
+
+10. On your custom menu bar, right-click the Custom command from step 9 and type
+  a command name, such as Print, in the Name box, and then click Properties.
+
+11. In the &lt;menu name&gt; Control Properties dialog box, type "=PrintOut()"
+  (without the quotation marks) in the On Action box, and then click Close.
+
+12. Add any additional menu commands that you need in the same manner.
+
+13. In the Customize dialog box, click Close.
+
+14. On the Tools menu, click Startup.
+
+15. In the Startup dialog box, type or select your menu in the Menu Bar box.
+
+16. Click OK.
+
+When you open your database in the run-time environment, either by running a
+Microsoft Access application installed from disk images created with the
+Microsoft Office 97 Developer Edition Tools or by running Microsoft Access using
+the /runtime switch, note that the Print command is now available. When you
+click Print, the Print dialog box appears.
+
+MORE INFORMATION
+================
+
+WARNING: The following steps change the StartUpMenuBar property of the Northwind
+sample database. You may want to back up the Northwind.mdb file and perform
+these steps on a copy of the database.
+
+Steps To Reproduce Behavior
+---------------------------
+
+1. Start Microsoft Access 97 and open the sample database Northwind.mdb.
+
+2. On the View menu, point to Toolbars, and then click Customize.
+
+3. In the Customize dialog box, click the Toolbars tab, and then click New.
+
+4. In the New Toolbar dialog box, type a name in the Toolbar Name box, and then
+  click OK.
+
+5. In the Toolbars list, click the new toolbar, and then click Properties.
+
+6. In the Toolbar Properties dialog box, click Menu Bar in the Type list, and
+  then click Close.
+
+7. In the Customize dialog box, click the Commands tab.
+
+8. In the Categories list, click Built-in Menus.
+
+9. Drag the File Menu from the Commands box, to the toolbar created in step 4.
+
+10. In the Customize dialog box, click Close.
+
+11. On the Tools menu, click Startup.
+
+12. In the Startup dialog box, type or select your custom toolbar in the Menu
+  Bar box, and then click OK.
+
+13. Quit Microsoft Access and restart Northwind using the /runtime switch.
+
+  For example, click Start on the taskbar, and then click Run. In the Open box,
+  type the following command on a single line:
+
+  "c:\Program Files\Microsoft Office\Office\msaccess.exe" "c:\Program
+  Files\Microsoft Office\Office\Samples\Northwind.mdb" /runtime
+
+  Note that the custom menu bar appears when Northwind opens, but it does not
+  show the Print command.
+
+REFERENCES
+==========
+
+For more information about changes in the run-time environment, search the
+Microsoft ODE Tools Help Index for "disabled" or "disabled features in run- time
+environment."
+
+For additional information about differences between the retail and run- time
+versions of Microsoft Access, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q162521 ACC97: Differences Between Retail and Run-Time Microsoft Access
+
+For additional information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: prb print dialog menubar runtime
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Version           : WINDOWS:97
+Issue type        : kbhowto kbprb kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

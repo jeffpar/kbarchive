@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140694: How to Restart the Macintosh from Within FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140694: How to Restart the Macintosh from Within FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140694/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140694/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140694/","publisher":null,"image":null,"headline":"Q140694: How to Restart the Macintosh from Within FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140694-how-to-restart-the-macintosh-from-within-foxpro">Q140694: How to Restart the Macintosh from Within FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140694
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In some cases, you may need to provide a FoxPro application with the ability to
+restart the computer. FoxPro doesn't have the capability to do this directly, so
+it needs to call functions at the operating system level.
+
+On the Macintosh, this can be done with either Apple Script commands or by using
+C code in a shared library (MLB) or external command (XCMD).
+
+MORE INFORMATION
+================
+
+Method One
+----------
+
+1. Launch the Script Editor, which is an Apple application used to create
+  scripts. Type the following in the script:
+
+     Tell application "Finder"
+        restart
+     End tell
+
+2. Save the script in your Microsoft FoxPro folder as RestartMe.
+
+3. Call the script from within FoxPro with this command:
+
+     RUNSCRIPT "MyHardDrive:Microsoft FoxPro 2.6:restartme"
+
+  This does the same thing as clicking Restart on the Special menu.
+
+4. To turn off the Macintosh from within FoxPro, use these commands:
+
+     Tell application "Finder"
+        shutdown
+     End tell
+
+Method Two
+----------
+
+You can get similar performance from an XCMD or from an MLB that calls routines
+in the Shutdown Manager (in particular ShutDwnStart() to restart, and
+ShutDwnPower() to shut down the machine).
+
+The following C code can be used to create an MLB that can be called from within
+FoxPro:
+
+  #include &lt;pro_ext.h&gt;
+  #include &lt;shutdown.h&gt;
+  void FAR goodbye( ParamBlk FAR *parm )
+
+  {
+
+       ShutDwnStart();
+
+  }
+
+  FoxInfo myFoxInfo[]={
+
+       {"GOODBYE", (FPFI) goodbye, 0, ""}
+
+  };
+
+  FoxTable _FoxTable={
+
+       (FoxTable FAR *) 0,
+       sizeof(myFoxInfo) / sizeof(FoxInfo),
+       myFoxInfo
+
+  };
+
+Once this is created, placed in a Shared Library such as Restart.mlb, and saved
+to the Extensions Folder in the System Folder, it can be called with the
+following code in FoxPro:
+
+     SET LIBRARY TO restart.mlb
+     =goodbye()
+
+NOTE: Under Windows, you can co this with the ExitWindows API as referenced in
+the the following articles in the Microsoft Knowledge Base:
+
+  Q109607 How to Reboot the System from Within FoxPro
+
+  Q110254 How to Restart Windows from Within FoxPro
+
+Additional query words: VFoxMac FoxMac MAC shutdown shut down
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,2.6a,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

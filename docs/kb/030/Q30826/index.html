@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q30826: How to Load a C Extension that Is Not in Current Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q30826: How to Load a C Extension that Is Not in Current Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/030/Q30826/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/030/Q30826/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/030/Q30826/","publisher":null,"image":null,"headline":"Q30826: How to Load a C Extension that Is Not in Current Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q30826-how-to-load-a-c-extension-that-is-not-in-current-directory">Q30826: How to Load a C Extension that Is Not in Current Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q30826
+Product(s): See article
+Version(s): 1.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | TAR75933 docerr | mspl13_basic
+Last Modified: 8-JUN-1988
+
+Page 84 of the "Microsoft Editor for OS/2 and MS-DOS User's Guide"
+incorrectly infers that the M.EXE editor will search for a C-extension
+module along the DOS PATH under MS-DOS or OS/2 real mode when you
+place the following statement in the TOOLS.INI file:
+
+   load:myext.exe
+
+   To search for a C-extension module along the DOS PATH, you must
+instead use the following load switch syntax in the TOOLS.INI file:
+
+   load:{$ENVAR: | dos path}filename.ext
+
+where you have the option of using $ENVAR: (a DOS environment
+variable) or an explicit directory path specification.
+   You can prefix your filename with $PATH: or $INIT:. For example,
+"$PATH:filename.ext" means the "filename.ext" is to be found in the
+directories in the DOS PATH. This format is valid in any filename
+context. The following example will go to the STDIO.H file that
+actually is being used by the compiler:
+
+   &lt;arg&gt; "$INCLUDE:stdio.h" &lt;setfile&gt;
+
+   Also, when operating under OS/2, $ENVAR:, the explicit DOS path,
+and the extension on the filename are ignored. Instead, filename.DLL
+is searched for in your LIBPATH. Please note that LIBPATH under OS/2
+is not an environment variable. LIBPATH is a directive in the
+CONFIG.OS2 file.
+   The following are examples of using the load switch in TOOLS.INI:
+
+   ; load 'my.ext' from the current directory.
+   ; Under OS/2, load my.dll from LIBPATH.
+   load:my.ext
+
+   ; load 'your.ext' from either the current directory or one
+   ; of the directories on path
+   ; Under OS/2, load 'your.dll' from LIBPATH
+   load:$PATH:your.ext
+
+   ; load 'c:\init\ourext'.
+   ; Under OS/2, load 'ourext.dll' from LIBPATH
+   load:c:\init\ourext
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

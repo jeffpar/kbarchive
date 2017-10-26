@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194514: PRB: Cannot Pass Array Property of Form by Reference to OLE DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194514: PRB: Cannot Pass Array Property of Form by Reference to OLE DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194514/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194514/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194514/","publisher":null,"image":null,"headline":"Q194514: PRB: Cannot Pass Array Property of Form by Reference to OLE DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194514-prb-cannot-pass-array-property-of-form-by-reference-to-ole-dll">Q194514: PRB: Cannot Pass Array Property of Form by Reference to OLE DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194514
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbvfp600
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Trying to pass an array property of a form by reference to a COM server results
+in the following error:
+
+  "Alias 'THISFORM' is not found"
+
+RESOLUTION
+==========
+
+There are two methods of working around this limitation:
+
+1. Use the ACOPY() function to copy all the data from the array property to an
+  array variable, then pass the array variable by reference.
+
+  -or-
+
+2. If having the array be a property is not a necessity, eliminate the array
+  property, and dimension an array variable in the Init of the form. Pass that
+  array by reference to the object.
+
+  Example 1:
+
+  Modify the btnOne.Click Method to the following:
+
+           ***************Start Code Workaround 1****************
+           PROCEDURE btnOne.CLICK
+              THISFORM.oArrTest=CREATEOBJECT('frmArray.ArrTest')
+              IF TYPE('thisform.oArrTest')#'O' then
+                  WAIT WINDOW 'Did not instantiate'
+                 RETURN
+              ENDIF
+              COMARRAY(thisform.oArrTest,11)
+              ACOPY(THISFORM.MyArray,aTemp)
+              THISFORM.oArrTest.modarray(@aTemp)
+              DISPLAY MEMORY LIKE aTemp
+           ENDPROC
+           PROCEDURE btnClose.CLICK
+              CLEAR EVENTS
+              RELEASE THISFORM
+           ENDPROC
+           **********End Code Workaround 1********************
+
+  Example 2:
+
+  Replace the Client code with the following:
+
+        ***************Start Code Workaround 2********************
+        x=CREATEOBJECT("Test1")
+        x.VISIBLE=.T.
+        x.SHOW
+        READ EVENTS
+
+        DEFINE CLASS Test1 AS FORM OLEPUBLIC
+           oArrTest=.NULL.
+           ADD OBJECT btnOne AS COMMANDBUTTON WITH TOP = 1, ;
+              CAPTION = 'Test Array'
+           ADD OBJECT btnClose AS COMMANDBUTTON WITH TOP = 25, ;
+              CAPTION = 'Close'
+           PROCEDURE INIT
+           DIMENSION aMyArray(5,1)
+              I=1
+              FOR I = 1 TO 5
+                 aMyArray(I)='Form'
+              ENDFOR
+           ENDPROC
+
+           PROCEDURE btnOne.CLICK
+              THISFORM.oArrTest=CREATEOBJECT('frmArray.ArrTest')
+              IF TYPE('thisform.oArrTest')#'O' then
+                  WAIT WINDOW 'Did not instantiate'
+                 RETURN
+              ENDIF
+              COMARRAY(thisform.oArrTest,11)
+              THISFORM.oArrTest.modarray(@aMyArray)
+              DISPLAY MEMORY LIKE aMyArray
+           ENDPROC
+           PROCEDURE btnClose.CLICK
+              CLEAR EVENTS
+              RELEASE THISFORM
+           ENDPROC
+        ENDDEFINE
+        *************End Code Workaround 2*************************
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Place the following Class Definition code in a program file attached to a
+  project called frmArray:
+
+        ****************Begin Class Definition*********
+        DEFINE CLASS ArrTest AS CUSTOM OLEPUBLIC
+           PROCEDURE modarray
+              PARAMETERS MyArray
+              EXTERNAL ARRAY MyArray
+              FOR I = 1 TO 5
+                 MyArray(I)="COM"
+               ENDFOR
+           ENDPROC
+        ENDDEFINE
+        **************End Class Definition************
+
+2. Build the project into a COM DLL.
+
+3. Place the following Client Code in a program file and run it:
+
+        ***************Client Code Start*******************
+        x=CREATEOBJECT("Test1")
+        x.VISIBLE=.T.
+        x.SHOW
+        READ EVENTS
+
+        DEFINE CLASS Test1 AS FORM OLEPUBLIC
+           DIMENSION MyArray(5)
+           oArrTest=.NULL.
+           ADD OBJECT btnOne AS COMMANDBUTTON WITH TOP = 1, ;
+              CAPTION = 'Test Array'
+           ADD OBJECT btnClose AS COMMANDBUTTON WITH TOP = 25, ;
+              CAPTION = 'Close'
+           PROCEDURE INIT
+              I=1
+              FOR I = 1 TO 5
+                 MyArray(I)='Form'
+              ENDFOR
+           ENDPROC
+
+           PROCEDURE btnOne.CLICK
+              THISFORM.oArrTest=CREATEOBJECT('frmArray.ArrTest')
+              IF TYPE('thisform.oArrTest')#'O' then
+                  WAIT WINDOW 'Did not instantiate'
+                 RETURN
+              ENDIF
+              COMARRAY(thisform.oArrTest,11)
+              THISFORM.oArrTest.modarray(@THISFORM.MyArray)
+              DISPLAY MEMORY LIKE THISFORM.MyArray
+           ENDPROC
+           PROCEDURE btnClose.CLICK
+              CLEAR EVENTS
+              RELEASE THISFORM
+           ENDPROC
+        ENDDEFINE
+        *****************Client Code End************************
+
+4. When the form appears, press the "btnOne" button, and note the error message.
+
+Additional query words: kbVFP600 kbComt
+
+======================================================================
+Keywords          : kbCOMt kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

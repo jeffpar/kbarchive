@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248194: BUG: get_Version Returns S_OK Even if the Version Does Not Exist | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248194: BUG: get_Version Returns S_OK Even if the Version Does Not Exist" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248194/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248194/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248194/","publisher":null,"image":null,"headline":"Q248194: BUG: get_Version Returns S_OK Even if the Version Does Not Exist","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248194-bug-get_version-returns-s_ok-even-if-the-version-does-not-exist">Q248194: BUG: get_Version Returns S_OK Even if the Version Does Not Exist</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248194
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbAutomation kbSSafe500bug kbSSafe600bug _IK kbGrpDSSSafe
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to get a specific version of a file or project, the get_Version
+function returns successfully and has a valid item even if that item does not
+exist in the database.
+
+RESOLUTION
+==========
+
+Instead of checking the HRESULT or whether the IVSSItem is not null, check the
+get_VersionNumber after calling get_Version. Compare the version numbers to make
+sure the version is valid. For example, place the following code inside the
+pVdb-&gt;get_VSSItem if statement:
+
+  // Used to store the latest version number of the item
+  long originalnumber, num;
+
+  // Store the latest version number of the item
+  vssi-&gt;get_VersionNumber(&amp;originalnumber);
+
+  // Get the version at the label (this label will fail)
+  CComVariant varLabel = -51;
+  vssi-&gt;get_Version(varLabel, &amp;vx);
+
+  // Get the version number of the returned item
+  vx-&gt;get_VersionNumber(&amp;num);
+
+  // Compare the versions and see if the item is valid
+  if ( num &gt; 0 &amp;&amp; num &lt;= originalnumber )
+     printf("Valid label.");
+
+  // Release the item
+  vx-&gt;Release();
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Win32 Console Application in Microsoft Visual C++.
+
+2. Add the following code to the project.
+
+NOTE: This is the same code as in the following Microsoft Knowledge Base
+Article:
+
+  Q169927 HOWTO: Get History Using SourceSafe OLE Automation in C++
+
+
+  #include &lt;atlbase.h&gt;
+  #include &lt;comdef.h&gt;
+  #include &lt;initguid.h&gt;
+  #include "ssauto.h"
+
+  int main ()
+  {
+     CLSID clsid;
+     IClassFactory *pClf;
+     IVSSDatabase *pVdb;
+     BSTR bstrPath = SysAllocString(L"c:\\Program Files\\Microsoft Visual Studio\\Common\\VSS\\srcsafe.ini");
+     BSTR bstrUName = SysAllocString(L"guest");
+     BSTR bstrUPass = SysAllocString(L"");
+
+     CoInitialize(0);
+     if(S_OK == CLSIDFromProgID(L"SourceSafe", &amp;clsid ))
+     {
+        if(S_OK == CoGetClassObject( clsid, CLSCTX_ALL, NULL,
+           IID_IClassFactory, (void**)&amp;pClf ))
+        {
+           if(S_OK == pClf-&gt;CreateInstance( NULL, IID_IVSSDatabase,
+              (void **) &amp;pVdb ))
+           {
+              if(S_OK == pVdb-&gt;Open(bstrPath, bstrUName, bstrUPass))
+              {
+                 // Get the root project
+                 BSTR bstrName = SysAllocString(L"$/");
+                 IVSSItem *vx;
+                 IVSSItem *vssi;
+
+                 if( S_OK == pVdb-&gt;get_VSSItem(bstrName, FALSE, &amp;vssi) )
+                 {
+                    // Get the version at the label (this label should fail)
+                    CComVariant varLabel = -51;
+                    if( S_OK == vssi-&gt;get_Version(varLabel, &amp;vx) )
+                    {
+                       // This prints out even though the label in invalid
+                       printf("Should not be here.");
+
+                       vx-&gt;Release();
+                    }
+
+                    vssi-&gt;Release();
+                 }
+
+                 SysFreeString(bstrName);
+              }
+
+              pVdb-&gt;Release();
+           }
+
+           pClf-&gt;Release();
+        }
+     }
+
+     CoUninitialize();
+
+     SysFreeString(bstrPath);
+     SysFreeString(bstrUName);
+     SysFreeString(bstrUPass);
+     return 0;
+  }
+
+3. Download and add the ssauto.h header file that is used to integrate with
+  Visual SourceSafe from the following Microsoft Web site:
+
+  Microsoft Visual SourceSafe Home Page
+
+4. Run the program.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q196197 PRB: Getting a File from Project Label Using OLE Automation
+
+Additional query words: ssauto
+
+======================================================================
+Keywords          : kbAutomation kbSSafe500bug kbSSafe600bug _IK kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

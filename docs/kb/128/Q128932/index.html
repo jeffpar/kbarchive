@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128932: How Windows 95 Resolves Shortcut Links | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128932: How Windows 95 Resolves Shortcut Links" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128932/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128932/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128932/","publisher":null,"image":null,"headline":"Q128932: How Windows 95 Resolves Shortcut Links","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128932-how-windows-95-resolves-shortcut-links">Q128932: How Windows 95 Resolves Shortcut Links</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128932
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A shortcut is a link to a Windows Explorer shell object that is used to access
+that shell object without creating an actual copy of the object. You can create
+shortcuts for any items that you use often, including files, folders, disk
+drives, other computers, or printers.
+
+If you create a shortcut to an object and the name or location of that object
+then changes, Windows 95 automatically attempts to update, or resolve, the
+shortcut the next time you try to use it. The process of resolving a shortcut
+works for shortcuts that reference an object on your local computer, as well as
+for shortcuts that reference an object on another computer on the network,
+although resolution of a network shortcut may be restricted by the access rights
+that you have on the remote computer.
+
+This article describes the process that Windows 95 uses to resolve local and
+network shortcuts.
+
+MORE INFORMATION
+================
+
+Local Shortcuts
+---------------
+
+Windows 95 uses the following process to resolve local shortcuts:
+
+1. Windows 95 looks for the object in the static location specified in the
+  shortcut. This location, along with all the other properties for that
+  shortcut, are stored in a corresponding .LNK file and can be viewed by using
+  the right mouse button to click the shortcut and then clicking Properties on
+  the menu that appears.
+
+  The static location is specified using the standard drive and directory path
+  naming convention. For example,
+
+  C:\WINDOWS\FILENAME.EXT
+
+2. If the object is not found in the static location, Windows 95 looks in the
+  same target directory for an object that has the same creation time and
+  attributes as the original object, but a different name. This logic allows
+  Windows 95 to find the object if it is in the same location as it was
+  originally, but has been renamed.
+
+3. Windows 95 then searches the subdirectories of the original target directory
+  for an object with the same name or creation time as the original object. If
+  no such object is found, Windows 95 proceeds with a recursive search of the
+  original target drive for an object that meets one of these criteria. If a
+  matching object is found, a dialog box is displayed, allowing you to verify
+  that the found object is in fact the correct object.
+
+  NOTE: Only the original target drive is searched. For example, if the shortcut
+  originally referenced an object on local drive C, only drive C is searched
+  for an object with the same name or creation time as the original object. No
+  other local drives are searched.
+
+4. Finally, if Windows 95 is unable to find the object using the methods
+  described above, a dialog box is displayed in which you must enter the
+  correct location and name of the object.
+
+Network Shortcuts
+-----------------
+
+If you attempt to open a shortcut that references an object on another computer
+on the network, and that object cannot be found at the static location specified
+in the shortcut, Windows 95 attempts to resolve that shortcut using a process
+similar to that described above. However, the following additional
+considerations should be taken into account when Windows 95 attempts to resolve
+a network shortcut:
+
+
+- For network shortcuts, the static location may be specified using a Universal
+  Naming Convention (UNC) name, rather than the standard drive and directory
+  path naming convention. For example, the location might look like
+  "\\REMOTE_COMPUTER\WINDOWS\FILENAME.EXT."
+
+- Windows 95 searches the subdirectories of the original target directory only
+  if you have access to those subdirectories. If the target computer uses
+  share-level security, you have access to all the subdirectories of the target
+  directory, assuming that you have access to the target directory itself. If
+  the target computer uses user-level security, you may not have access to
+  subdirectories of the target directory.
+
+- When it is performing a recursive search of the original target drive,
+  Windows 95 starts from the original target directory and moves up the
+  directory tree to the highest parent directory that it has access to. This
+  parent directory essentially becomes the root directory of the recursive
+  search, as Windows 95 searches all subdirectories of this directory that you
+  have access to.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

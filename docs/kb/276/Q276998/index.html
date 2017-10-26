@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q276998: Cannot Populate Certain User Attributes in Connected Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q276998: Cannot Populate Certain User Attributes in Connected Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/276/Q276998/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/276/Q276998/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/276/Q276998/","publisher":null,"image":null,"headline":"Q276998: Cannot Populate Certain User Attributes in Connected Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q276998-cannot-populate-certain-user-attributes-in-connected-directory">Q276998: Cannot Populate Certain User Attributes in Connected Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q276998
+Product(s): Microsoft Windows NT
+Version(s): 2.1
+Operating System(s): 
+Keyword(s): kbtool
+Last Modified: 27-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the attributes that cannot be pushed out to Microsoft
+Windows NT 4.0 by means of the Windows NT Management Agent (MA).
+
+MORE INFORMATION
+================
+
+The following attributes and their values may be populated in an export file,
+but they are not updated in the connected directory:
+
+- user_id: It can specify a number that contains the relative ID (the Routing
+  Information Daemon or RID) of the user. The RID is determined by the Security
+  Account Manager (SAM) when the user is created. It uniquely defines the user
+  account to SAM in the domain. Any values that are set in an export file are
+  ignored.
+
+- primary_group_id: It has a number value that contains the RID of the Primary
+  Global group for the user. Do not set this attribute on new object creations.
+  When you modify the user's settings, this member must be the RID of the
+  Global group in which the user is enrolled. Any values that are set in the
+  export file are ignored.
+
+- profile: It has a string that specifies a path to the user's profile. This
+  value can be a local absolute path, or a universal naming convention (UNC)
+  path. Any values that are set in the export file are ignored.
+
+- Home_dir_drive: It has a string that specifies the drive letter assigned to
+  the user's home directory for logon purposes. Any values that are set in the
+  export file are ignored.
+
+- password_expired: It can specify if a user must change a password at the next
+  logon session. Microsoft Metadirectory Services (MMS) version 2.1 does not
+  set this attribute.
+
+NOTE: The Cdir_nt program in MMS 2.1 is not designed to manage the preceding
+Windows NT attributes. A limitation of the MMS 2.1 Cdir_nt.exe program is its
+inability to support sending the preceding attributes out to the connected
+directory as values in either new or pre-existing objects.
+
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

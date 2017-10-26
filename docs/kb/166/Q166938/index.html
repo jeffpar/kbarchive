@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166938: HOWTO: Find Users Connected to an Access 7.0 Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166938: HOWTO: Find Users Connected to an Access 7.0 Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166938/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166938/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166938/","publisher":null,"image":null,"headline":"Q166938: HOWTO: Find Users Connected to an Access 7.0 Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166938-howto-find-users-connected-to-an-access-70-database">Q166938: HOWTO: Find Users Connected to an Access 7.0 Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166938
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbinterop kbDAOsearch kbDatabase kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Use Msldbusr.dll to determine which users are connected to an Access 7.0
+Database.
+
+MORE INFORMATION
+================
+
+Download Msldbusr.dll using the instructions in the following article in the
+Microsoft Knowledge Base:
+
+  Q176670 ACC: Microsoft Jet Utilities Available on MSL
+
+
+Then follow the instructions below to use this DLL from Visual C++.
+
+
+Use the Msldbusr.dll to find out who is connected to a Jet database.
+
+The Msldbusr.dll Functions
+--------------------------
+
+- LDBUser_GetUsers - After being called, this function returns two key pieces
+  of information, the list of users and the number of users connected (if
+  successful, otherwise returns an error number).
+
+- LDBUser_GetError - Returns a string error message stating what the return
+  value from LDBUser_GetUsers was.
+
+Function Declarations
+---------------------
+
+To use the functions from within C/C++, they should be declared in the following
+way:
+
+     #include &lt;WINDOWS.H&gt;
+
+     typedef INT (WINAPI *PFNLDBUSERGETUSER)(LPSAFEARRAY FAR *, LPCSTR,
+     INT);
+     PFNLDBUSERGETUSER lpfnLdbUser_GetUsers;
+
+     typedef BSTR (WINAPI *PFNLDBUSERGETERR)(INT);
+     PFNLDBUSERGETERR lpfnLdbUser_GetError;
+
+Function Parameters for C/C++
+-----------------------------
+
+     INT LDBUser_GetUsers
+     (
+         LPSAFEARRAY FAR * lpsaUserList,         // Returned list of users
+          LPCSTR            lpcstrMdbFilename,    // The name of the MDB file
+          INT               nOptions              // Specifies return options
+      )
+
+  lpsaUserList - This is an array of BSTRs that contains a list of users when
+  the function returns. This BSTR array in C/C++ should initially be allocated
+  with a lower bound equal to 1 (however, this is not required) and the count
+  of elements set to 1. The Msldbusr.dll will redimension the count of elements
+  for the BSTR array if the number of elements is less than the number of
+  users.
+
+  For example:
+
+     SAFEARRAY FAR*    psaUserList;
+     SAFEARRAYBOUND    sabUserList[1];
+     sabUserList[0].lLbound = 1;
+     sabUserList[0].cElements = 1;
+     psaUserList = SafeArrayCreate(VT_BSTR, 1, sabUserList);
+
+  lpcstrMdbFilename - This is the name of the filename with its associated
+  database extension (MDB, MDW, MDA, etc.). A corresponding LDB file must
+  exist, otherwise LDBUser_GetUsers will return an error.
+
+  nOptions - Specifies the type of users that are returned into lpsaUserList.
+
+   - 1 = All users who have logged in since the LDB file was created.
+   - 2 = Only users who are currently logged in.
+   - 4 = Only users who are causing the database file to be corrupt.
+   - 8 = Just returns the count of users. No users are returned in the
+         BSTR array.
+
+     BSTR LDBUser_GetError
+     (
+         INT nError // The error number returned by LDBUser_GetUsers
+     )
+
+  nError - This is the error value returned when LDBUser_GetUsers returns a
+  negative value. This should normally be in the range of -1 to -14. The error
+  values are:
+
+     -1 = Can't open the LDB file
+     -2 = No user connected
+     -3 = Can't create an array
+     -4 = Can't redimension array
+     -5 = Invalid argument passed
+     -6 = Memory allocation error
+     -7 = Bad index
+     -8 = Out of memory
+     -9 = Invalid Argument
+    -10 = LDB is suspected as corrupted
+    -11 = Invalid argument
+    -12 = Unable to read MDB file
+    -13 = Can't open the MDB file
+    -14 = Can't find the LDB file
+
+Sample Code
+-----------
+
+     #include &lt;windows.h&gt;
+     #include &lt;stdio.h&gt;
+
+     typedef INT (WINAPI *PFNLDBUSER)(LPSAFEARRAY FAR *, PCSTR, INT );
+     PFNLDBUSER lpfnLdbUser_GetUsers;
+
+     typedef BSTR (WINAPI *PFNLDBUSERGETERR)(INT);
+     PFNLDBUSERGETERR lpfnLdbUser_GetError;
+
+     BOOL ShowUsers(char *);
+
+     void main( int argc, char* argv[] )
+     {
+         if (argc != 2)
+         return;
+
+         ShowUsers(argv[1]);
+     }
+
+     // 
+     // Display a list of JET users to the console screen.
+     // 
+     BOOL ShowUsers( char* pszDatabase )
+     {
+         HINSTANCE       hLdbUserInstance;
+         SAFEARRAY FAR*  psaUserList = NULL;
+         SAFEARRAYBOUND  sabUserList[1];
+         int             cUsers;
+         LONG            iLoop;
+         HRESULT         hr;
+         char*           szBuff;
+         BOOL            fRetVal = TRUE;
+         BSTR            bstrError = NULL;
+
+     // Get the library instance handle.
+         hLdbUserInstance = LoadLibrary("MSLDBUSR.DLL");
+         if (!hLdbUserInstance)
+             return FALSE;
+
+     // Get a pointer to the main function in the library.
+         lpfnLdbUser_GetUsers = (PFNLDBUSER)GetProcAddress(hLdbUserInstance,
+             "LDBUser_GetUsers");
+         if (!lpfnLdbUser_GetUsers)
+     {
+         fRetVal = FALSE;
+         goto Exit;
+     }
+
+     // Get a pointer to the error function in case an error occurs.
+     lpfnLdbUser_GetError = (PFNLDBUSERGETERR)GetProcAddress(
+         hLdbUserInstance, "LDBUser_GetError");
+     if (!lpfnLdbUser_GetError)
+     {
+         fRetVal = FALSE;
+         goto Exit;
+     }
+
+     // Create a SAFEARRAY to hold the list of users.
+     // NOTE: We'll only create a 1 element array because the
+     // LDBUser_GetUsers will adjust the size if needed.
+     sabUserList[0].lLbound    = 1;
+     sabUserList[0].cElements  = 1;
+     psaUserList = SafeArrayCreate(VT_BSTR, 1, sabUserList);
+
+     // Make the function call and obtain the list of users.
+     cUsers = lpfnLdbUser_GetUsers(&amp;psaUserList, pszDatabase, 0x1);
+
+     if (!cUsers )
+     {
+         printf("No users\n");
+         goto Exit;
+     }
+
+     // Display error messages if any occurred.
+     if (cUsers &lt; 0)
+     {
+         bstrError = SysAllocString( lpfnLdbUser_GetError( cUsers ) );
+         printf("Error #:%d -- %s\n",cUsers, bstrError);
+         goto Exit;
+     }
+
+     // Display the list of users.
+     for(iLoop=1;iLoop &lt;= cUsers; iLoop++)
+     {
+         hr = SafeArrayGetElement(psaUserList, &amp;iLoop, &amp;szBuff);
+         if (SUCCEEDED(hr))
+             printf("User %d:%s\n",iLoop , szBuff);
+         else
+             printf("Failed on User %d\n",iLoop );
+     }
+
+     // Cleanup.
+     Exit:
+         if (bstrError)
+             SysFreeString(bstrError);
+
+         if (psaUserList)
+             SafeArrayDestroy(psaUserList);
+
+     // Free up the Msldbusr.dll.
+         FreeLibrary(hLdbUserInstance);
+
+         return TRUE;
+     }
+
+Additional query words: Jet
+
+======================================================================
+Keywords          : kbcode kbinterop kbDAOsearch kbDatabase kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC32bitSearch kbVC500Search
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135720: PRB: Moving Project in SourceSafe Explorer Causes Error in VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135720: PRB: Moving Project in SourceSafe Explorer Causes Error in VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135720/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135720/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135720/","publisher":null,"image":null,"headline":"Q135720: PRB: Moving Project in SourceSafe Explorer Causes Error in VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135720-prb-moving-project-in-sourcesafe-explorer-causes-error-in-vb">Q135720: PRB: Moving Project in SourceSafe Explorer Causes Error in VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135720
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbVBp400
+Last Modified: 07-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual Basic, when you run the SourceSafe CheckOut Command, the following
+error message displays in Visual Basic:
+
+  All available files have already been checked out.
+
+CAUSE
+=====
+
+The project was open in Visual Basic when it was moved or renamed in the Visual
+SourceSafe Explorer. Because the project was moved or renamed, the SourceSafe
+Add-In in Visual Basic can no longer can find it.
+
+
+RESOLUTION
+==========
+
+In the Visual SourceSafe Explorer, when you run SourceSafe commands that impact
+a project open in Visual Basic, click Refresh File Status on the Add- Ins /
+SourceSafe menu. By refreshing the project file status, Visual Basic is able to
+get in sync with Visual SourceSafe.
+
+If you run Refresh File Status after the series of steps listed in the "Steps to
+Reproduce Behavior" section of this article, this message appears:
+
+  Project &lt;old VSS project location&gt; has been moved or renamed to
+  &lt;found VSS project location&gt;. Would you like to connect to this
+  project?
+
+This project location may or may not be the project you want. In most cases, it
+probably is, so you can click OK and you continue on with your work.
+
+If you click Cancel, the following error message displays:
+
+  Project &lt;old VSS project location&gt; was not found. Would you like to
+  browse for the project?
+
+If you know the new location or new name for the file, click Yes, and select the
+new project location or name. If you click No, the following error message
+displays:
+
+  The project "&lt;old VSS project location&gt;", &lt;VSS Database File&gt; no
+  longer exists in SourceSafe. You must either recover or re-create the project
+  before you can use this project with source code control.
+
+At this point, there is no longer any link between any Visual SourceSafe project
+and the project you currently have open in Visual Basic.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual Basic, open a sample project, and add it to Source Code control.
+
+2. In Visual Basic, run the SourceSafe Explorer. (On the Add-Ins menu, click
+  SourceSafe and then Run SourceSafe.
+
+3. In the Visual SourceSafe Explorer, move the project to another location, such
+  as into a subdirectory.
+
+4. In Visual Basic, check out the files. The following error message displays:
+
+  All available files have already been checked out.
+
+Of course, you know the files are not checked out, neither in Visual Basic nor
+the Visual SourceSafe Explorer.
+
+REFERENCES
+==========
+
+For more information on synchronizing Visual SourceSafe with Visual Basic,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q135357 PRB: Sync Between Visual SourceSafe and VB Is Delayed
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbVBp400 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe500
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

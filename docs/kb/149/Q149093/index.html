@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149093: BUG: Property Page of Remote Data Control Causes an Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149093: BUG: Property Page of Remote Data Control Causes an Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149093/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149093/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149093/","publisher":null,"image":null,"headline":"Q149093: BUG: Property Page of Remote Data Control Causes an Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149093-bug-property-page-of-remote-data-control-causes-an-error">Q149093: BUG: Property Page of Remote Data Control Causes an Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149093
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,95,98
+Operating System(s): 
+Keyword(s): kbVBp400 kbOSWin95 kbOSWin98 kbGrpDSVBDB
+Last Modified: 05-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+- the operating system: Microsoft Windows 98 
+- the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+Pressing the ESC key while the cursor is in the SQL text box of the General Tab
+in the property page of the Remote Data Control causes a blank General tab. When
+you click the Colors tab and then click the General tab again, an application
+error occurs and Visual Basic ends. The SQL text box can be empty or contain
+characters. Clicking the Cancel button on the window correctly closes the
+window. This behavior only occurs under the Windows 95 operating system. To work
+around this behavior, programmatically set the properties of remote data control
+or use the Properties window of the Remote Data Object to set the properties.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this issue and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the 32-bit version of Visual Basic 4.0. If it is already running, on
+  the File menu, click New Project.
+
+2. Add a remote data control to the Form1 form. Right-click the remote data
+  control and click properties. The Remote Data Controls dialog box appears.
+
+3. Place the cursor in the SQL text box of the General tab and press the Esc
+  key. The contents of the General tab disappears.
+
+4. Click the Colors tab and then click the General tab. An application error
+  occurs. The message "VB32 caused an invalid page fault in module USER.EXE at
+  0008:0000419b" appears and Visual Basic ends. The message can also contain
+  this memory address: 0008:000042a6.
+
+Additional query words: kbVBp400bug kbWinOS98 kbVBp kbDSupport kbdse
+
+======================================================================
+Keywords          : kbVBp400 kbOSWin95 kbOSWin98 kbGrpDSVBDB 
+Technology        : kbOSWin98 kbOSWin95 kbVBSearch kbAudDeveloper kbOSWinSearch kbVB400Search kbVB400
+Version           : WINDOWS:4.0,95,98
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

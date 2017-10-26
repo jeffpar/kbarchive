@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259032: Understanding Attribute Flow in Microsoft Metadirectory Services | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259032: Understanding Attribute Flow in Microsoft Metadirectory Services" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259032/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259032/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259032/","publisher":null,"image":null,"headline":"Q259032: Understanding Attribute Flow in Microsoft Metadirectory Services","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259032-understanding-attribute-flow-in-microsoft-metadirectory-services">Q259032: Understanding Attribute Flow in Microsoft Metadirectory Services</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259032
+Product(s): Microsoft Windows NT
+Version(s): 2.1
+Operating System(s): 
+Keyword(s): kbtool MMS
+Last Modified: 02-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Attribute flow is utilized in Microsoft Metadirectory Services (MMS) to flow
+attributes between the connector space, the hologram, and the metaverse.
+Attribute flow scripts have five vectors available. These vectors provide MMS
+with the ability to co-manage attributes from different source directories to a
+single joined metaverse object.
+
+The following list contains the five vectors that are available in attribute flow
+scripts:
+
+- CD: Used to specify the Connected Directory.
+
+- CSP: Used to specify the potential value for the Connector Space built by the
+  connector space construction template.
+
+- MVP: Used to specify the potential value for the metaverse built by the
+  metaverse construction template.
+
+- CS: Used to specify the Connector Space.
+
+- MV: Used to specify the metaverse.
+
+Also, there are four kinds of assignments available in the attribute flow
+scripts:
+
+   
+    =    This assignment replaces the attribute.
+   +=    This assignment appends additional values to a multivalued attribute.
+   -=    This assignment removes a specific value from the attribute.
+   &lt;&lt;    This assignment merges all values in one multivalued attribute.  
+
+MORE INFORMATION
+================
+
+These operators are especially important for managing multivalued attribute
+ownership, for example:
+
+John Doe's $mv.colors has 4 values:
+
+- Purple
+
+- Red
+
+- Orange
+
+- Green
+
+John Doe's $cd.colors has 3 values:
+
+- Blue
+
+- Yellow
+
+- Purple
+
++------------------------------------------------------------------------------------+
+| Flow Rules                | Result                                                 | 
++------------------------------------------------------------------------------------+
+| 
+$mv.colors += $cd.colors | 
+$mv.colors = Purple, Red, Orange, Green, Blue, Yellow | 
++------------------------------------------------------------------------------------+
+| 
+$mv.colors -= $cd.colors | 
+$mv.colors = Red, Orange, Green                       | 
++------------------------------------------------------------------------------------+
+| 
+$cd.Colors = $mv.Colors  | 
+$cd.colors = Blue, Yellow, Purple                     | 
++------------------------------------------------------------------------------------+
+| 
+$mv.colors &lt;&lt; $cd.colors | 
+$cd.colors = Purple, Red, Orange, Green, Blue, Yellow | 
++------------------------------------------------------------------------------------+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool MMS 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

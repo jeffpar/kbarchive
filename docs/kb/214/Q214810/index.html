@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q214810: STOP 0x0000007B INACCESSIBLE_BOOT_DEVICE After Applying SP4 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q214810: STOP 0x0000007B INACCESSIBLE_BOOT_DEVICE After Applying SP4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/214/Q214810/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/214/Q214810/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/214/Q214810/","publisher":null,"image":null,"headline":"Q214810: STOP 0x0000007B INACCESSIBLE_BOOT_DEVICE After Applying SP4","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q214810-stop-0x0000007b-inaccessible_boot_device-after-applying-sp4">Q214810: STOP 0x0000007B INACCESSIBLE_BOOT_DEVICE After Applying SP4</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q214810
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In some instances, after the application of Service Pack 4, when the computer is
+restarted, it will do either of the following:
+
+- The system will fail to boot and will display the following error:
+
+  Stop 0x0000007B INACCESSIBLE_BOOT_DEVICE
+
+- The system will boot, but some devices will not be recognized on the SCSI
+  bus.
+
+CAUSE
+=====
+
+This problem occurs because the Aic78xx.sys driver chosen during the application
+of Service Pack 4 is not compatible with the computer's Adaptec SCSI controller.
+
+RESOLUTION
+==========
+
+This problem can be corrected by replacing the existing Aic78xx.sys driver,
+located in the &lt;%systemroot%&gt;\Winnt\System32\Drivers folder, with the
+Aic78xx.sys driver from the i386 directory within Service Pack 4.
+
+Windows NT 4.0 Service Pack 4 contains the following Aic78xx drivers:
+
+  Aic78xx.sys 26,704 bytes
+  Aic78xx.001 56,272 bytes
+
+To determine which Aic78xx.sys driver is in use, and to copy the correct driver,
+depends upon the file system on the Windows NT boot partition (where
+%SystemRoot%\Winnt resides).
+
+If Windows NT resides on a FAT formatted partition, perform the following steps:
+
+1. Boot to MS-DOS by using an MS-DOS 6.x boot floppy disk.
+
+2. Change to the &lt;%systemroot%&gt;\Winnt\System32\Drivers folder.
+
+3. Compare the size of AIC78xx.sys with the table above.
+
+4. Replace the existing AIC78xx.sys file in
+  &lt;%systemroot%&gt;\Winnt\System32\Drivers with the other AIC78xx file in
+  the i386 directory within Serivce Pack 4.
+
+5. If AIC78xx.001 is copied, be sure to rename it AIC78xx.sys.
+
+If Windows NT resides on an NTFS formatted partition, perform the following
+steps:
+
+1. Either boot to a parallel installation of Windows NT or create a parallel
+  installation of Windows NT. To create a parallel copy of Windows NT, perform
+  a fresh installation of Windows NT to a different folder.
+
+2. From the parallel installation, look in the
+  &lt;%systemroot%&gt;\Winnt\System32\Drivers of the failing copy of Windows
+  NT.
+
+3. Compare the size of AIC78xx.sys with the table above.
+
+4. Replace the existing AIC78xx.sys file in
+  &lt;%systemroot%&gt;\Winnt\System32\Drivers with the other AIC78xx file in
+  the i386 directory within Serivce Pack 4.
+
+5. If AIC78xx.001 is copied, be sure to rename it AIC78xx.sys.
+
+MORE INFORMATION
+================
+
+There are two different versions of the AIC78XX driver for the Adaptec 2940 and
+7800 family of SCSI controllers included in Service Pack 4. The Aic78xx.sys file
+in Service Pack 4 is the same file that is in Service Pack 3. The Aic78xx.001
+file of Service Pack 4 is only placed on the computer if
+&lt;%systemroot%&gt;\Winnt\System32\Drivers\AIC78xx.sys has a revision between
+x.x.1382.x and x.x.1420.x.
+
+Additional query words: Stop 0x0000007B AHA-2940 nt 4.00 sp4
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

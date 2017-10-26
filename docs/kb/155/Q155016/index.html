@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155016: XFOR: MIME Inbound Mail Failure on ISO-2022-JP Character Set | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155016: XFOR: MIME Inbound Mail Failure on ISO-2022-JP Character Set" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155016/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155016/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155016/","publisher":null,"image":null,"headline":"Q155016: XFOR: MIME Inbound Mail Failure on ISO-2022-JP Character Set","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155016-xfor-mime-inbound-mail-failure-on-iso-2022-jp-character-set">Q155016: XFOR: MIME Inbound Mail Failure on ISO-2022-JP Character Set</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155016
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you upgrade Microsoft Exchange Server version 4.0 to Service Pack 2 (SP2),
+SMTP messages that use ISO-2022-JP as the character set might cause the
+following error:
+
+  From: System Administrator
+  Subject: Notification: Inbound Mail Failure - Message could not be processed
+
+The notice will include the original message as an attachment. The message might
+have been sent in English but it will have originated from a Japanese based
+client. The administrator can forward the message on to the original recipient
+with no further difficulty.
+
+In order to prevent this error, you will need to install the Japanese Code Page
+on the NT server where the Microsoft Exchange Internet Mail Connector is
+running.
+
+NOTE: The Japanese Code Page can be obtained from the Japanese version of Windows
+NT 3.51 CDROM. Also, it can be obtained from the Microsoft Developer Network
+CDs.
+
+MORE INFORMATION
+================
+
+The SP2 upgrade includes Double-byte Character Set (DBCS) Support. This means
+that all versions of Microsoft Exchange Server accept and can administer all
+other versions, including full support of Far East and Eastern European
+character sets. However, if the associated code page for that language is not
+installed on the server, messages from those other versions will result in the
+inbound failure error.
+
+
+For additional information on how to add code pages for languages not included in
+this list, please see the following article in the Microsoft Knowledge Base:
+
+  Q151701
+
+A brief example showing the use of these steps is included here for clarification
+only.
+
+The following example would be for the ANSI code page adding the Japanese
+character set (932):
+
+1. Copy the code page file to the Winnt/System32 directory. In other words, copy
+  C_932.nls to c:\winnt\system32.
+
+2. Start the registry editor, Regedt32.exe.
+
+3. Add a new value for Japanese under the key:
+
+  \\ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Nls\CodePage
+  Value Name: 932
+  Data Type: REG_SZ
+  String: c_932.nls
+
+4. Add a new value for the Locale Specific key:
+
+  \\ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Nls\Language
+  Value Name: 0411
+  Data Type: REG_SZ
+  String: l_intl.nls
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

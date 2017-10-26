@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129168: How to Recover Corrupt DataBase Container Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129168: How to Recover Corrupt DataBase Container Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129168/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129168/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129168/","publisher":null,"image":null,"headline":"Q129168: How to Recover Corrupt DataBase Container Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129168-how-to-recover-corrupt-database-container-files">Q129168: How to Recover Corrupt DataBase Container Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129168
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The best way to ensure that you will be able to recover corrupt DBC files is to
+use proactive measures, such as frequently backing up the Database files (both
+the .DBC and .DCT files). The next best method is to use the GENDBC.PRG tool
+located in the VFP\TOOLS\GENDBC subdirectory.
+
+GENDBC.PRG is a utility that generates a custom .PRG file that can then be
+executed to re-build the DataBase Container that GENDBC was run against. The
+resulting .PRG file, when run, will recreate the DataBase Container to the state
+prior to when GENDBC was run against it. Thus it may be necessary to run GENDBC
+many times during the development life cycle to prevent loss of work if the
+files are damaged.
+
+MORE INFORMATION
+================
+
+When GENDBC.PRG is run, it creates a "generation" program file for the current
+Database container. If no Database is open it will prompt for one.
+
+To use GENDBC, execute it from the Command window. For example:
+
+     DO C:\VFP\TOOLS\GENDBC\GENDBC.PRG WITH 'GD_MYDBC'
+
+When GENDBC.PRG is finished, a program file with the same name as the database
+will be created in the current directory. This program can then be executed to
+recreate damaged Database (.DBC) files. For instance, in the example above, a
+program named "GD_MYDBC.PRG" would be created.
+
+If the Database (.DBC) file is corrupt or damaged at the table level (in other
+words, the .DBC is a FoxPro Table (.DBF)) and it is not usable as a FoxPro
+table, GENDBC will not correct the matter. The error generated in this case is:
+
+  UNRECOVERABLE ERROR...FILE &lt;path&gt;\dbc_name.dbc
+  IS NOT A DATABASE AT LINE &lt;line_no&gt;
+
+If this is the case, a third-party database repair utility will be required to
+repair the DBC at the table level. However, once the file is corrected in this
+manner, there is still no guarantee that the .DBC file will be recoverable with
+GENDBC.PRG. Thus the importance of using GENDBC.PRG prior to using the Database
+or immediately following any changes to the Database Container.
+
+For additional information on repairing a corrupt database, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q129400 Free Table Command Removes Table From Corrupted Database
+
+Additional query words: VFoxWin remove free damage corrupted
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

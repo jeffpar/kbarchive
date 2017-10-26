@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q287537: Using Basic Authentication to Generate Kerberos Tokens | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q287537: Using Basic Authentication to Generate Kerberos Tokens" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/287/Q287537/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/287/Q287537/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/287/Q287537/","publisher":null,"image":null,"headline":"Q287537: Using Basic Authentication to Generate Kerberos Tokens","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q287537-using-basic-authentication-to-generate-kerberos-tokens">Q287537: Using Basic Authentication to Generate Kerberos Tokens</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q287537
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Basic authentication to connect to a Web site that is hosted by
+Internet Information Services (IIS), you can take advantage of the delegation
+features of Kerberos to authenticate on multiple back-end servers, such as a
+Microsoft SQL Server that is called from Active Server Pages (ASP) running on
+IIS. To generate a Kerberos token, IIS must be a member of a Windows 2000 domain
+and have access to that domain's active directory.
+
+MORE INFORMATION
+================
+
+When IIS authenticates users it does so by calling the LsaLogonUser function,
+which in turn calls an authentication package
+(MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 for Basic authentication). When Basic
+authentication occurs, the following event is written to the security log IIS
+5.0 server, assuming the Audit Logon Events policy is enabled:
+
+  Event Type:	Success Audit
+  Event Source:	Security
+  Event Category:	Logon/Logoff 
+  Event ID:	528
+  Date:		1/5/2001
+  Time:		6:11:04 PM
+  User:		Win2kDomain\rvittal
+  Computer:	IIS5server
+  Description:
+  Successful Logon:
+   	User Name:       	rvittal
+   	Domain:		Win2kDomain
+   	Logon ID:		(0x0,0x148D0AC)
+   	Logon Type:	             2
+   	Logon Process:	IIS     
+   	Authentication Package:	MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+   	Workstation Name:	IIS5server&lt;BR/&gt;
+
+After a user has logged into IIS with Basic authentication, IIS has that user's
+credentials (username:password), and can use those credentials to generate a
+token that can be used to impersonate the user on other computers. When a user
+requests a Web page that references resources on another Windows 2000 server,
+the IIS server generates a Kerberos security token and an event similar to the
+following is written in the security log on the remote server:
+
+  Event Type:	Success Audit
+  Event Source:	Security
+  Event Category:	Logon/Logoff 
+  Event ID:	540
+  Date:		1/5/2001
+  Time:		1:16:06 PM
+  User:		Win2kDomain\rvittal
+  Computer:	SQLbox
+  Description:
+  Successful Network Logon:
+   	User Name:	             rvittal
+   	Domain:		Win2kDomain
+   	Logon ID:		(0x0,0x13A667F)
+   	Logon Type:	             3
+   	Logon Process:	             Kerberos
+   	Authentication Package: Kerberos
+   	Workstation Name:	
+
+Note that using Kerberos is not limited to Basic authentication. By default, if a
+Windows 2000 client attaches to an IIS5 server that is configured with
+Integrated authentication, Kerberos authentication is used.
+
+REFERENCES
+==========
+
+This article is based on the information provided on page 109 of the following
+book:
+
+Howard, Michael, Richard Waymire, and Marc Levy. Designing Secure Web-Based
+Applications for Microsoft&lt;AE&gt; Windows 2000 (Redmond: Microsoft Press, July 2000),
+p. 109.
+
+For additional information on authentication methods in IIS, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q264921 INFO: How IIS Authenticates Browser Clients
+
+  Q229694 How to Use the IIS Security 'What If' Tool
+
+For more information on Kerberos, see the following articles in the Microsoft
+Knowledge Base:
+
+  Q217098 Basic Overview of Kerberos User Authentication Protocol in Windows
+  2000
+
+  Q266080 Answers to Frequently Asked Kerberos Questions
+
+  Q231789 Local Logon Process for Windows 2000
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

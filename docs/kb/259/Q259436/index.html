@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259436: Log Off all Terminal Server Session Users from a Command Prompt | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259436: Log Off all Terminal Server Session Users from a Command Prompt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259436/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259436/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259436/","publisher":null,"image":null,"headline":"Q259436: Log Off all Terminal Server Session Users from a Command Prompt","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259436-log-off-all-terminal-server-session-users-from-a-command-prompt">Q259436: Log Off all Terminal Server Session Users from a Command Prompt</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259436
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbtool
+Last Modified: 11-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under some conditions, an administrator may want to force a logoff of all users
+currently logged onto a Windows NT 4.0 Server, Terminal Server Edition-based
+computer. You can do so by creating a batch file that calls two Terminal Server
+specific commands, QUERY and LOGOFF.
+
+WARNING: Performing the following procedure logs off all users currently logged
+onto the Terminal Server. This may result in a loss of unsaved data. Because of
+this, extreme caution is advised.
+
+MORE INFORMATION
+================
+
+To create a batch file that calls these two Terminal Server specific commands,
+place the following information into a batch (.bat) file:
+
+query session &gt;session.txt
+for /f "skip=1 tokens=3," %%i in (session.txt) DO logoff %%i
+del session.txt
+
+This batch file may be run at any time the Administrator desires to force the
+logoff of all users that are not logged onto the Terminal Server console.
+
+Query is a multi-purpose command found within the Terminal Server environment. In
+this case, Query Session creates a list of all sessions running on the Terminal
+Server, complete with Session ID numbers. Within the batch file, this output is
+redirected to a text file. The FOR statement then parses each line of the text
+file, skipping the first line, and looking for the Session ID number found in
+the third column. It then places this variable into Logoff, resulting in that
+session being logged off.
+
+It is not uncommon to receive an error message when you run this batch file. If a
+user is logged onto the Terminal Server console, the following error message is
+generated:
+
+  Could not logoff session ID 0 from session Console, Error code 5
+  Error [5]: Access is denied.
+
+This is due to a limitation of the Logoff command. It cannot force the logoff of
+the console session. A work around to this issue would be to modify the batch
+file to read:
+
+query session &gt;session.txt
+for /f "skip=2 tokens=3," %%i in (session.txt) DO logoff %%i
+del session.txt
+
+This causes the first two lines of the Session.txt file to be skipped, avoiding
+the error.
+
+REFERENCES
+==========
+
+For additional information about the Query command, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q186592 TERMINAL SERVER COMMANDS: QUERY
+
+Additional query words: logoff script
+
+======================================================================
+Keywords          : kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

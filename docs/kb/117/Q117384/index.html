@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117384: BUG: Unable to Hit Breakpoint on ELSE IF Statement | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117384: BUG: Unable to Hit Breakpoint on ELSE IF Statement" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117384/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117384/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117384/","publisher":null,"image":null,"headline":"Q117384: BUG: Unable to Hit Breakpoint on ELSE IF Statement","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117384-bug-unable-to-hit-breakpoint-on-else-if-statement">Q117384: BUG: Unable to Hit Breakpoint on ELSE IF Statement</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117384
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbtool kbCompiler kbVC100bug kbVC200bug kbVC210bug kbVC400bug kbVC410bug kbVC420 kbVC50
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), used with:
+   - Microsoft C/C++ for MS-DOS 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 4.1, 4.2, 5.0, 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the sample code in the "MORE INFORMATION" section, below, is compiled for
+debugging (/Zi), the debugger (either CodeView or the Visual Workbench) does not
+stop at a breakpoint that is placed on the ELSE IF statement.
+
+CAUSE
+=====
+
+The compiler does not generate the correct symbolic information for the line of
+code containing the ELSE IF statement.
+
+RESOLUTION
+==========
+
+To work around the problem, place the "else" and "if" statements on separate
+lines. For example:
+
+  else
+     if (i==7)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+To reproduce this problem with the sample code below:
+
+1. Set a breakpoint on the line with the ELSE IF statement
+
+2. Press F5 (GO) to start debugging the program.
+
+Neither debugger stops running until the program is finished, unless you set a
+breakpoint on a different line of code.
+
+In CodeView, if you switch into mixed source/assembly mode, you can verify that
+there is executable code associated with the ELSE IF statement. If a breakpoint
+is placed on one of the lines of assembly code for the ELSE IF statement and the
+application is debugged, the code stops running at the breakpoint. With the
+Visual Workbench debugger, step through the code at the ELSE IF statement to set
+the breakpoint.
+
+Sample Code
+-----------
+
+  /* Compile options needed: /Zi /Od
+  */ 
+
+     void main(void)
+     {
+        int i=100;
+        if (i==2);
+        else if(i==7);  /* cannot stop on this line */ 
+     }
+
+Additional query words: kbVC400bug 6.00 8.00 8.00c 9.00 10.00 10.10 10.20
+
+======================================================================
+Keywords          : kbtool kbCompiler kbVC100bug kbVC200bug kbVC210bug kbVC400bug kbVC410bug kbVC420 kbVC500bug kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,2.0,2.1,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

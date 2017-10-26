@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124589: How to Create a Left-Right Outer Join in FoxPro for Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124589: How to Create a Left-Right Outer Join in FoxPro for Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124589/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124589/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124589/","publisher":null,"image":null,"headline":"Q124589: How to Create a Left-Right Outer Join in FoxPro for Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124589-how-to-create-a-left-right-outer-join-in-foxpro-for-windows">Q124589: How to Create a Left-Right Outer Join in FoxPro for Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124589
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS: 2.6a, 3.0
+Operating System(s): 
+Keyword(s): kbprogramming kbvfp
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, version 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use a left outer join to find all occurrences of a key value whether or
+not a matching record exists in the joined table. However, this article shows by
+example how to find records from both tables without matching records in the
+corresponding table. The code in this article illustrates a method to produce a
+complete (left-right) outer join.
+
+MORE INFORMATION
+================
+
+The following code uses two sample tables to:
+
+- Determine the number of subscribers who ordered each of several publications
+  per month.
+
+- Display the number of issues per publication generated each month.
+
+The tables have been simplified in this example to contain only the fields
+necessary for this demonstration. A zero indicates that either no magazines of a
+particular type were produced or no subscriptions were placed for a particular
+magazine during the month.
+
+The first table (SUBSCRIB) contains subscription information consisting of the
+subscription month, the magazine ID, and the subscription count. The second
+table (PRODUX) contains the subscription month, magazine ID, and number of
+magazines produced.
+
+Sample Code
+-----------
+
+  ******************************************************
+  *  LR_JOIN.PRG   Left-Right Outer Join Program
+  *
+  *  table structures:     SUBSCRIB         PRODUX
+  *                      -------------   -------------
+  *                      Month     N 3   Month     N 3
+  *                      MagID     C 3   MagID     C 3
+  *                      Sub       N 4   Prod      N 5
+  *
+  * Eliminate blanks from the SUBSCRIB table
+
+      SELECT * FROM subscrib ;
+      WHERE !EMPTY(sub) ;
+      INTO CURSOR temp1
+
+  * Eliminate blanks from the PRODUX table
+
+      SELECT * FROM produx ;
+      WHERE !EMPTY(prod) ;
+      INTO CURSOR temp2
+
+  * Only records containing data in the count fields for either table
+  * are valid. The month and magID fields are assumed to be valid.
+
+  * Create the left outer join
+
+      SELECT a.*, b.prod FROM temp1 a, temp2 b ;
+      WHERE ALLTRIM(STR(a.Month)) + a.MagID = ;
+            ALLTRIM(STR(b.Month)) + b.MagID ;
+      UNION ;
+      SELECT *, 00000 FROM temp1 ;
+      WHERE ALLTRIM(STR(Month))+MagID NOT IN ;
+      (SELECT ALLTRIM(STR(Month))+MagID FROM temp2) ;
+      ORDER BY 1, 2 INTO CURSOR left
+
+  * Create the right outer join
+
+      SELECT a.*, b.sub FROM temp2 a, temp1 b ;
+      WHERE ALLTRIM(STR(a.Month)) + a.MagID = ;
+            ALLTRIM(STR(b.Month)) + b.MagID ;
+      UNION ;
+      SELECT *, 0000 FROM temp2 ;
+      WHERE ALLTRIM(STR(Month))+MagID NOT IN ;
+      (SELECT ALLTRIM(STR(Month))+MagID FROM temp1) ;
+      ORDER BY 1, 2 INTO CURSOR right
+
+  * Combine both joins into the final result
+
+      SELECT Month, MagID, Sub, Prod FROM right ;
+      UNION ;
+      SELECT * FROM left INTO CURSOR result
+
+How the Join Works
+------------------
+
+As the UNION clause expects the structures to be identical, the first part of the
+combined joins declares the output field list from the RIGHT cursor (which has
+the structure of Month, MagID, Prod, Sub) in the same order as found in the LEFT
+cursor (Month, MagID, Sub, Prod).
+
+Additional query words: kbvfp260a kbvfp300
+
+======================================================================
+Keywords          : kbprogramming kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300
+Version           : WINDOWS: 2.6a, 3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

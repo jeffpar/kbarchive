@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132245: SNA Server Version 2.11 - New Features | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132245: SNA Server Version 2.11 - New Features" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132245/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132245/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132245/","publisher":null,"image":null,"headline":"Q132245: SNA Server Version 2.11 - New Features","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132245-sna-server-version-211---new-features">Q132245: SNA Server Version 2.11 - New Features</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q132245</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">2.11</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">13</span><span class="p">-</span><span class="n">JUN</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span><span class="p">,</span> <span class="k">version</span> <span class="m">2.11</span><span class="p">,</span> <span class="n">on</span> <span class="n">platform</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+   <span class="p">-</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">the</span> <span class="n">major</span> <span class="n">new</span> <span class="n">features</span> <span class="k">of</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="m">2.11</span><span class="p">,</span> <span class="k">as</span> <span class="n">included</span> <span class="k">in</span>
+<span class="n">the</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="m">2.11</span> <span class="n">Enhancements</span> <span class="n">Guide</span><span class="p">,</span> <span class="n">along</span> <span class="k">with</span> <span class="n">some</span> <span class="n">updated</span> <span class="n">technical</span>
+<span class="n">information</span> <span class="n">on</span> <span class="n">some</span> <span class="k">of</span> <span class="n">the</span> <span class="n">features</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">information</span> <span class="n">contained</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span> <span class="n">an</span> <span class="n">outdated</span> <span class="k">version</span> <span class="k">of</span>
+<span class="n">SNA</span> <span class="n">Server</span><span class="p">.</span> <span class="n">For</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">information</span> <span class="n">on</span> <span class="n">Microsoft</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="k">and</span> <span class="n">Product</span>
+<span class="n">Companion</span> <span class="n">Catalog</span><span class="p">,</span> <span class="n">go</span> <span class="k">to</span> <span class="n">the</span> <span class="n">following</span> <span class="n">location</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">sna</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">PowerPC</span> <span class="n">Platform</span> <span class="n">Support</span>
+<span class="p">------------------------</span>
+
+<span class="k">To</span> <span class="nf">run</span> <span class="n">on</span> <span class="n">a</span> <span class="n">PowerPC</span><span class="p">,</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.51</span> <span class="n">is</span> <span class="n">required</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="m">2.11</span> <span class="n">is</span>
+<span class="n">also</span> <span class="n">supported</span> <span class="n">on</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.5</span><span class="p">.</span>
+
+<span class="n">SNA</span> <span class="n">Server</span> <span class="m">2.11</span> <span class="n">adds</span> <span class="n">support</span> <span class="n">for</span> <span class="n">the</span> <span class="n">PowerPC</span> <span class="n">architecture</span><span class="p">.</span> <span class="n">This</span> <span class="n">allows</span> <span class="n">you</span> <span class="k">to</span> <span class="nf">run</span>
+<span class="n">SNA</span> <span class="n">Server</span> <span class="n">on</span> <span class="n">new</span> <span class="n">computers</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">PowerPC</span> <span class="n">processors</span> <span class="k">from</span> <span class="n">IBM</span><span class="p">,</span> <span class="n">Motorola</span>
+<span class="k">and</span> <span class="n">others</span><span class="p">.</span> <span class="n">Combined</span> <span class="k">with</span> <span class="n">the</span> <span class="n">current</span> <span class="n">support</span> <span class="n">for</span> <span class="n">Intel</span><span class="p">,</span> <span class="n">MIPS</span><span class="p">-</span> <span class="k">and</span> <span class="n">Alpha</span><span class="p">-</span><span class="n">based</span>
+<span class="n">systems</span><span class="p">,</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="n">now</span> <span class="n">supports</span> <span class="n">the</span> <span class="n">widest</span> <span class="n">variety</span> <span class="k">and</span> <span class="n">the</span> <span class="n">most</span> <span class="n">scalable</span> <span class="k">set</span> <span class="k">of</span>
+<span class="n">hardware</span> <span class="n">platforms</span> <span class="k">of</span> <span class="n">all</span> <span class="n">the</span> <span class="n">SNA</span> <span class="n">gateways</span> <span class="n">on</span> <span class="n">the</span> <span class="n">market</span> <span class="n">today</span><span class="p">.</span>
+
+<span class="n">Support</span> <span class="n">for</span> <span class="n">TN3270</span> <span class="n">Clients</span>
+<span class="p">--------------------------</span>
+
+<span class="n">SNA</span> <span class="n">Server</span> <span class="m">2.11</span> <span class="n">includes</span> <span class="n">a</span> <span class="n">TN3270</span> <span class="n">Service</span> <span class="n">which</span> <span class="n">runs</span> <span class="n">on</span> <span class="n">the</span> <span class="n">same</span> <span class="n">computer</span> <span class="k">as</span> <span class="n">SNA</span>
+<span class="n">Server</span> <span class="k">and</span> <span class="n">allows</span> <span class="n">any</span> <span class="n">client</span> <span class="n">running</span> <span class="n">a</span> <span class="n">TN3270</span> <span class="n">emulator</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">a</span> <span class="n">UNIX</span><span class="p">-</span><span class="n">based</span>
+<span class="n">workstation</span><span class="p">,</span> <span class="k">to</span> <span class="nf">connect</span> <span class="k">to</span> <span class="n">the</span> <span class="n">IBM</span> <span class="n">mainframe</span> <span class="n">through</span> <span class="n">SNA</span> <span class="n">Server</span><span class="p">.</span> <span class="n">This</span> <span class="n">feature</span>
+<span class="n">allows</span> <span class="n">customers</span> <span class="k">to</span> <span class="n">use</span> <span class="n">TN3270</span> <span class="n">emulators</span> <span class="n">on</span> <span class="n">their</span> <span class="n">desktops</span><span class="p">,</span> <span class="n">yet</span> <span class="n">keep</span> <span class="n">the</span> <span class="n">hosts</span>
+<span class="n">running</span> <span class="n">the</span> <span class="n">native</span> <span class="k">and</span> <span class="n">optimized</span> <span class="n">SNA</span> <span class="n">protocols</span><span class="p">,</span> <span class="n">saving</span> <span class="n">the</span> <span class="n">cost</span> <span class="k">and</span> <span class="n">the</span>
+<span class="n">performance</span> <span class="n">penalty</span> <span class="k">of</span> <span class="n">installing</span> <span class="k">and</span> <span class="n">running</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">on</span> <span class="n">the</span> <span class="n">mainframe</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">TN3270</span> <span class="n">Service</span> <span class="n">supports</span> <span class="m">10</span><span class="p">,</span><span class="m">000</span> <span class="n">sessions</span> <span class="p">(</span><span class="n">up</span> <span class="k">to</span> <span class="m">2000</span> <span class="n">users</span> <span class="n">running</span> <span class="n">multiple</span>
+<span class="n">sessions</span><span class="p">),</span> <span class="n">making</span> <span class="n">this</span> <span class="n">the</span> <span class="n">highest</span> <span class="n">capacity</span> <span class="n">TN3270</span> <span class="n">gateway</span> <span class="n">on</span> <span class="n">the</span> <span class="n">market</span><span class="p">.</span> <span class="n">The</span>
+<span class="n">TN3270</span> <span class="n">Service</span> <span class="n">allows</span> <span class="n">TN3270</span> <span class="n">clients</span> <span class="k">to</span> <span class="nf">connect</span> <span class="k">to</span> <span class="n">a</span> <span class="n">host</span> <span class="n">through</span> <span class="n">any</span> <span class="k">of</span> <span class="n">the</span>
+<span class="n">connections</span> <span class="n">supported</span> <span class="n">by</span> <span class="n">SNA</span> <span class="n">Server</span><span class="p">.</span> <span class="n">It</span> <span class="n">communicates</span> <span class="k">with</span> <span class="n">TN3270</span> <span class="n">clients</span> <span class="n">via</span>
+<span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">sessions</span> <span class="n">running</span> <span class="n">the</span> <span class="n">TN3270</span> <span class="n">option</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Telnet</span> <span class="n">protocol</span> <span class="k">and</span> <span class="n">does</span> <span class="k">not</span>
+<span class="n">require</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">an</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="n">client</span> <span class="n">on</span> <span class="n">the</span> <span class="n">user</span><span class="s1">'s workstation. The
+TN3270 Service gives administrators more control over resources by allowing
+specific IP addresses to be assigned to LUs. The TN3270 Service supports any
+third-party TN3270 emulator that uses the DO TERMTYPE option of Telnet, for any
+client operating system.
+
+ODBC/DRDA Drivers
+-----------------
+
+SNA Server 2.11 includes Open Database Connectivity/Distributed Relational
+Database Architecture (ODBC/DRDA) drivers for Windows operating system- and
+Windows NT-based clients, enabling standard desktop applications that support
+database connectivity via ODBC, such as Microsoft Excel and Microsoft Access, to
+access IBM host databases without an expensive host- based database gateway.
+These drivers support connectivity to the following IBM host databases: DB2 for
+MVS, SQL/DS for VM, and DB2/400 for OS/400. A single-user ODBC/DRDA license is
+included with SNA Server 2.11. See the enclosed license card for instructions on
+obtaining additional licensing.
+
+SNA Remote Access Service
+-------------------------
+
+Prior versions of SNA Server already support the full SNA client functionality
+for remote clients dialing into the LAN using the Remote Access Service (RAS) of
+Windows NT Server. SNA Server version 2.11 adds a feature that allows
+administrators to create virtual LAN connections between Windows NT systems
+across an existing SNA network. This is achieved by integrating SNA Server'</span><span class="n">s</span>
+<span class="n">LU6</span><span class="m">.2</span> <span class="n">transport</span> <span class="k">with</span> <span class="n">the</span> <span class="n">RAS</span> <span class="n">architecture</span><span class="p">,</span> <span class="n">allowing</span> <span class="n">the</span> <span class="n">use</span> <span class="k">of</span> <span class="n">familiar</span> <span class="n">RAS</span>
+<span class="n">tools</span> <span class="k">to</span> <span class="n">initiate</span> <span class="n">remote</span> <span class="n">network</span> <span class="n">connections</span> <span class="n">across</span> <span class="n">the</span> <span class="n">SNA</span> <span class="n">network</span> <span class="k">and</span> <span class="k">to</span>
+<span class="n">benefit</span> <span class="k">from</span> <span class="n">the</span> <span class="n">data</span> <span class="n">compression</span><span class="p">,</span> <span class="n">administration</span><span class="p">,</span> <span class="k">and</span> <span class="n">security</span> <span class="n">features</span> <span class="n">built</span>
+<span class="n">into</span> <span class="n">RAS</span><span class="p">.</span> <span class="n">Customers</span> <span class="k">with</span> <span class="n">large</span> <span class="n">SNA</span> <span class="n">wide</span><span class="p">-</span><span class="n">area</span> <span class="n">backbones</span> <span class="n">now</span> <span class="n">can</span> <span class="n">access</span> <span class="n">remote</span>
+<span class="n">LANs</span> <span class="k">and</span> <span class="n">servers</span> <span class="n">without</span> <span class="n">setting</span> <span class="n">up</span> <span class="n">redundant</span> <span class="n">LAN</span><span class="p">-</span><span class="k">to</span><span class="p">-</span><span class="n">LAN</span> <span class="n">networks</span> <span class="k">or</span> <span class="n">having</span> <span class="k">to</span>
+<span class="n">install</span> <span class="n">a</span> <span class="n">dial</span><span class="p">-</span><span class="n">up</span> <span class="n">modem</span> <span class="k">in</span> <span class="n">each</span> <span class="n">remote</span> <span class="n">branch</span> <span class="n">office</span><span class="p">.</span> <span class="n">This</span> <span class="n">feature</span> <span class="n">is</span>
+<span class="n">particularly</span> <span class="n">useful</span> <span class="n">for</span> <span class="n">network</span> <span class="n">administrators</span> <span class="n">who</span> <span class="n">need</span> <span class="k">to</span> <span class="n">manage</span> <span class="n">remote</span> <span class="n">branch</span>
+<span class="n">offices</span> <span class="n">connected</span> <span class="k">to</span> <span class="n">the</span> <span class="n">corporation</span><span class="s1">'s mainframe or AS/400 only through
+low-speed synchronous data-link control (SDLC) lines.
+
+The SNA Server Remote Access Service is supported on top of Windows NT 3.5 or
+3.51 client machines. This feature is not available from Windows 3.x or WFW
+clients.
+
+Support for IBM'</span><span class="n">s</span> <span class="n">New</span> <span class="n">Client</span> <span class="n">Access</span><span class="p">/</span><span class="m">400</span> <span class="n">Product</span>
+<span class="p">-----------------------------------------------</span>
+
+<span class="n">SNA</span> <span class="n">Server</span> <span class="m">2.11</span> <span class="n">adds</span> <span class="n">support</span> <span class="n">for</span> <span class="n">IBM</span><span class="s1">'s new CA/400 product, which is a
+Windows-based front-end package to access AS/400 applications and data. The
+Windows-based client component of SNA Server 2.11 is enhanced to be compatible
+with the CA/400 router, allowing users to replace the CA/400 router and connect
+to the AS/400 via an SNA Server. Users benefit from using an IBM-endorsed client
+package to access the new OS/400 V3R1 operating system for the AS/400, while
+getting the benefits of the leading SNA gateway to offload communications
+processing from the AS/400, saving CPU and memory resources on the host. When
+using Windows for Workgroups or the upcoming Windows 95 operating system, SNA
+Server allows the Windows- based desktops to run protected-mode LAN protocols
+only, saving precious MS- DOS operating system-based memory and making the
+overall Windows environment more stable. Network administrators will benefit
+from the reduced administration requirements for both the AS/400 and the
+Windows- based desktops.
+
+EHNAPPC API Support
+-------------------
+
+SNA Server 2.11 adds support for the EHNAPPC application programming interface
+(API) which is the Windows-based APPC API supported by IBM'</span><span class="n">s</span> <span class="n">PC</span> <span class="n">Support</span> <span class="k">and</span>
+<span class="n">Client</span> <span class="n">Access</span><span class="p">/</span><span class="m">400</span> <span class="p">(</span><span class="n">CA</span><span class="p">/</span><span class="m">400</span><span class="p">)</span> <span class="n">products</span><span class="p">.</span> <span class="n">IBM</span> <span class="n">has</span> <span class="n">presented</span> <span class="n">EHNAPPC</span> <span class="n">API</span> <span class="k">to</span> <span class="n">its</span>
+<span class="n">independent</span> <span class="n">software</span> <span class="n">vendor</span> <span class="p">(</span><span class="n">ISV</span><span class="p">)</span> <span class="n">community</span> <span class="k">as</span> <span class="n">the</span> <span class="n">way</span> <span class="k">to</span> <span class="nb">write</span> <span class="n">Windows</span><span class="p">-</span><span class="n">based</span>
+<span class="n">applications</span> <span class="n">that</span> <span class="n">integrate</span> <span class="k">with</span> <span class="n">the</span> <span class="k">AS</span><span class="p">/</span><span class="m">400.</span> <span class="n">There</span> <span class="n">are</span> <span class="n">estimated</span> <span class="k">to</span> <span class="n">be</span> <span class="n">more</span> <span class="n">than</span>
+<span class="m">60</span> <span class="n">applications</span> <span class="n">that</span> <span class="n">utilize</span> <span class="n">this</span> <span class="n">API</span> <span class="k">as</span> <span class="n">a</span> <span class="n">way</span> <span class="k">to</span> <span class="nf">connect</span> <span class="k">to</span> <span class="n">the</span> <span class="k">AS</span><span class="p">/</span><span class="m">400</span> <span class="n">data</span> <span class="k">and</span>
+<span class="n">applications</span><span class="p">.</span> <span class="n">These</span> <span class="n">ISV</span> <span class="n">applications</span> <span class="n">will</span> <span class="n">work</span> <span class="n">unchanged</span> <span class="k">with</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="m">2.11</span><span class="p">.</span>
+
+<span class="n">Support</span> <span class="n">for</span> <span class="m">16</span><span class="p">-</span><span class="n">bit</span> <span class="n">SNA</span> <span class="n">Applications</span> <span class="n">on</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="p">-------------------------------------------------</span>
+
+<span class="n">A</span> <span class="k">set</span> <span class="k">of</span> <span class="n">new</span> <span class="k">Dynamic</span><span class="p">-</span><span class="n">Link</span> <span class="n">Libraries</span> <span class="p">(</span><span class="n">DLLs</span><span class="p">)</span> <span class="n">included</span> <span class="k">with</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">2.11</span>
+<span class="n">maps</span> <span class="n">the</span> <span class="m">16</span><span class="p">-</span><span class="n">bit</span> <span class="n">SNA</span> <span class="n">API</span> <span class="k">to</span> <span class="n">native</span> <span class="m">32</span><span class="p">-</span><span class="n">bit</span> <span class="n">SNA</span> <span class="n">APIs</span><span class="p">,</span> <span class="n">allowing</span> <span class="n">users</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">all</span> <span class="n">the</span>
+<span class="m">16</span><span class="p">-</span><span class="n">bit</span> <span class="n">Windows</span><span class="p">-</span><span class="n">based</span> <span class="n">applications</span> <span class="n">that</span> <span class="n">work</span> <span class="k">with</span> <span class="n">SNA</span> <span class="n">Server</span> <span class="k">in</span> <span class="n">the</span> <span class="m">32</span><span class="p">-</span><span class="n">bit</span>
+<span class="n">Windows</span> <span class="n">NT</span> <span class="n">environment</span><span class="p">.</span> <span class="n">This</span> <span class="n">feature</span> <span class="n">brings</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">-</span><span class="n">based</span> <span class="n">clients</span> <span class="k">to</span>
+<span class="n">parity</span> <span class="k">with</span> <span class="n">Windows</span><span class="p">-</span><span class="n">based</span> <span class="n">clients</span> <span class="n">for</span> <span class="n">running</span> <span class="n">SNA</span> <span class="n">applications</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="m">16</span><span class="p">-</span><span class="n">bit</span> <span class="n">SNA</span> <span class="n">API</span><span class="s1">'s which are now supported on Windows NT running the 32-bit SNA
+Server client software include APPC, CPIC, LUA and Common Service Verbs. The
+16-bit Emulator Interface Specification (EIS) API, used by 16-bit 3270
+applications, is not supported on top of the 32-bit SNA Server client software.
+
+Drivers for IBM and Andrew Twinaxial Adapters
+---------------------------------------------
+
+New drivers included with SNA Server 2.11 allow SNA Servers to be connected to
+AS/400s using twinaxial cabling, the native way to connect to an AS/400. These
+drivers, developed for Microsoft by Andrew Corp., provide a cost- effective
+option to connect the PC LANs to the AS/400s for the estimated 70 percent of the
+300,000 AS/400s installed worldwide that do not yet have LAN adapters. Instead
+of spending as much as $3,200 for a token ring adapter for the AS/400, a $350
+twinaxial adapter can be installed on the SNA Server computer, providing up to
+512 host sessions for the LAN clients attached to the SNA Server.
+
+The Andrew Twinax link service supports the Andrew 3xTwin Adapter, and is
+available for the Intel platform. The IBM Twinax link service supports the IBM
+5250 Enhanced Adapter, or compatible, and is available for the Intel platform.
+(There are register-compatible cards from independent hardware vendors, such as
+DCI.)
+
+For a full list of and contact information for third-party vendors providing
+adapters, see the SNA Server Companion Product Catalog, ISVCATAL.DOC, in the
+\COLLATRL\GENERAL directory on the SNA Server CD-ROM. Updates to this catalog
+are distributed on the Microsoft TechNet CD-ROM and posted on the MSSNA
+Compuserve Forum, the latest third party companion guide can be found on Lib #1,
+called ISVCAT.EXE, which self-extracts to a Word for Windows document.
+
+Drivers for Barr Systems and Bus-Tech Channel Adapters
+------------------------------------------------------
+
+SNA Server 2.11 includes drivers for Barr Systems and Bus-Tech channel adapters,
+which allow the SNA Server to be directly connected to an IBM mainframe channel.
+The direct channel attachment can provide a significant improvement in
+performance compared to other ways of attaching SNA Servers to the host. An SNA
+Server running on a multiprocessor Pentium* or RISC system with two LAN and two
+channel adapters installed can challenge the overall performance and capacity of
+some of the fastest IBM controllers and front-end processors. The Barr channel
+link service supports the Barr S/370 Channel adapter, available for the Intel,
+MIPS, and Alpha AXP platforms. The Bus-Tech channel link service supports the
+BTI Channel adapter, available for the Intel platform.
+
+Additional SDLC Driver Support
+------------------------------
+
+Link services have been added for Attachmate SDLC and Attachmate Advanced SDLC
+cards for the Intel platform, and for a Barr SDLC card for the MIPS and Alpha
+AXP platforms.
+
+AFTP Client and Server utilities
+--------------------------------
+
+SNA Server version 2.11 includes a set of utilities that enable high-speed file
+transfer between Windows NT-based systems and IBM hosts. APPC File Transfer
+Protocol (AFTP) is an IBM-developed protocol that duplicates for the SNA
+environment the function of the popular FTP utility in the TCP/IP environment.
+IBM now is offering the host component of AFTP at a nominal cost for most of the
+host operating systems. AFTP allows customers to perform multi-megabyte file
+transfers between the host and the Windows NT- based system quickly using native
+SNA protocols, eliminating the need to install the expensive and CPU-intensive
+TCP/IP stack for the host in order to perform FTP file transfers. The AFTP
+feature is based on IBM source code that Microsoft recently licensed as part of
+the APPC Application Suite from IBM.
+
+The AFTP Client and Server programs will be installed automatically during setup
+of an SNA Server version 2.11 client or server on a computer running Windows NT
+version 3.5x. SNA Server AFTP Client will work on a Windows NT client or server
+as a command-line utility, which can be used to create batch jobs. SNA Server
+AFTP Server is a Windows NT service that will allow AFTP clients to initiate
+file transfer (for example, from a host computer). AFTP provides generic
+filename mapping support for consistency between different operating systems'</span>
+<span class="n">file</span> <span class="n">systems</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">information</span> <span class="n">on</span> <span class="n">AFTP</span> <span class="n">availability</span> <span class="n">for</span> <span class="n">other</span> <span class="n">IBM</span> <span class="n">platforms</span> <span class="n">including</span> <span class="n">host</span>
+<span class="n">systems</span> <span class="k">and</span> <span class="n">the</span> <span class="k">AS</span><span class="p">/</span><span class="m">400</span><span class="p">,</span> <span class="n">contact</span> <span class="n">IBM</span> <span class="n">directly</span><span class="p">,</span> <span class="k">and</span><span class="p">/</span><span class="k">or</span> <span class="n">contact</span> <span class="n">IBM</span> <span class="n">through</span> <span class="n">IBM</span><span class="s1">'s
+APPC compuserve forum (or "GO APPC" on Compuserve).
+
+Demo Host Facility
+------------------
+
+This new software feature, included with SNA Server 2.11, allows resellers,
+trainers, consultants, and customers to evaluate and demonstrate nearly all SNA
+Server features and capabilities without a live host connection or any special
+hardware. Previously, resellers had to purchase expensive access time from host
+service providers in order to train their own personnel on the features of a
+given SNA gateway product, or had to purchase a separate hardware-based host
+simulator at a significant cost. The demo host facility included with SNA Server
+can act both as a mainframe host and an AS/400 host and exercises the core
+functionality of SNA Server, including 3270 and 5250 sessions with multiple host
+connections, in an identical fashion to the live host environment.
+
+For detailed information, see the "DEMO SDLC Link Service" section later in this
+guide.
+
+SNA Monitor
+-----------
+
+This new monitor, which is similar to the monitor in Remote Access Service, can
+be used to monitor the status of an SDLC connection. The SNA Server 2.11 Setup
+program will create an icon for this utility in the Microsoft SNA Server program
+group. From the SNA Monitor Setting menu, you can specify options such as sound,
+update interval, and which link service to monitor.
+
+Default APPC LUs
+----------------
+
+SNA Server 2.11 will create default Local and Remote APPC LUs. During Setup of an
+SNA Server 2.11, a Local APPC LU will be created on the server node with
+suggested default values. When you configure a new link service, if the
+connection is configured as a peer connection, and if a remote APPC LU is not
+detected, the New APPC Remote LU Properties dialog box will appear with
+suggested default values when the OK button is chosen. Remember to change the
+default values if they do not match your needs.
+
+Planning Guide
+--------------
+
+A new document, called the SNA Server Planning Guide, is provided at no charge
+with SNA Server version 2.11. This document contains information to help
+resellers and users implement SNA Server in existing networks such as NetWare,
+Banyan and TCP/IP environments. Among the topics covered are server sizing
+recommendations for CPU types, and memory for various usage patterns,
+preinstallation guidelines, enterprise rollout information, and maintenance and
+troubleshooting tips collected from current users of SNA Server.
+
+Concurrent Licensing Option
+---------------------------
+
+Customers will continue to be able to license SNA Server on a per-client and
+per-server basis, which allows any client to access any SNA Server on the
+network. This is the most affordable licensing option when deploying multiple
+SNA Servers for extra capacity, load balancing and hot backup, because each
+extra server only costs approximately $409. SNA Server 2.11 adds the option to
+license SNA Server for concurrent use, which the user can choose at the time of
+installation. With this option, customers are required to purchase only as many
+client licenses as there are simultaneous users accessing a given SNA Server.
+This option is suitable for single- server installations or when only infrequent
+access to the host resources is required. Licensing is a Windows NT Server-only
+application located in Control Panel. Licensing allows you to manage licensing
+for Microsoft server products installed on your networks.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products'</span> <span class="n">performance</span>
+<span class="k">or</span> <span class="n">reliability</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsna</span> <span class="m">2.11</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span>  
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbAudDeveloper</span> <span class="n">kbSNAServSearch</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">2.11</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

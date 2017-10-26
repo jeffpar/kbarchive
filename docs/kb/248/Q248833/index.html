@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248833: PRB: Data Control Only Displays Updated Data When Single-Step | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248833: PRB: Data Control Only Displays Updated Data When Single-Step" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248833/","publisher":null,"image":null,"headline":"Q248833: PRB: Data Control Only Displays Updated Data When Single-Step","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248833-prb-data-control-only-displays-updated-data-when-single-step">Q248833: PRB: Data Control Only Displays Updated Data When Single-Step</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248833
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbJET kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDACNoSweep
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an application, updates made to an .mdb file are not visible when
+you refresh the intrinsic Visual Basic DAO Data Control. When you single-step
+through the code, the changes show up in the Data Control.
+
+CAUSE
+=====
+
+Your code and the data control are instantiating two different versions of the
+Microsoft Jet database engine and you experience symptoms similar to those
+described in the following Knowledge Base article: For additional information,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q216925 PRB: Single-User Concurrency Problems With ADO and Jet
+
+With DAO and the DAO data control, this is caused by having the Microsoft DAO 3.5
+(or 3.51 or 2.5/3.5 Compatibility) library lower in the list of type library
+references than another type library that defines a Database and recordset
+object for a different version of Microsoft Jet database engine. The effect of
+this is to cause two different versions of Microsoft Jet database engine to be
+loaded.
+
+RESOLUTION
+==========
+
+Move the Microsoft DAO 3.51 type library up in priority to just under the Visual
+Basic type libraries.
+
+You should also be able to work around the problem by declaring an unambiguous
+variable type, such as DAO.Database and DAO.Recordset instead of database and
+recordset:
+
+  Dim db As DAO.Database, rs As DAO.Recordset
+
+
+STATUS
+======
+
+This behavior is by design.
+
+Starting with Microsoft Data Access Components (MDAC) version 2.6, MDAC no longer
+contains the following Jet components:
+
+- Microsoft Jet
+- Microsoft Jet OLE DB Provider
+- ODBC Desktop Database Drivers
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q239114 ACC2000: Updated Version of Microsoft Jet 4.0 Available in Download
+  Center
+
+The "MDAC 2.5 Stack and Windows File Protection" white paper contains a full list
+of the components that are shipped with MDAC 2.5, along with a discussion of
+Windows File Protection. Refer to this white paper for more information about
+the Jet dynamic-link libraries (DLLs) that are included in MDAC 2.5, which are
+no longer a part of MDAC 2.6.
+
+For more information about MDAC 2.5 and Windows File Protection, see the
+following Microsoft Web site:
+
+  http://www.microsoft.com/data/mdacwfp.htm
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbJET kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDACNoSweep 
+Component         : dao JET
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

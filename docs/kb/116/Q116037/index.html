@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q116037: How to Perform REPLACE for Two Databases w/ Common Field | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q116037: How to Perform REPLACE for Two Databases w/ Common Field" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/116/Q116037/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/116/Q116037/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/116/Q116037/","publisher":null,"image":null,"headline":"Q116037: How to Perform REPLACE for Two Databases w/ Common Field","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q116037-how-to-perform-replace-for-two-databases-w-common-field">Q116037: How to Perform REPLACE for Two Databases w/ Common Field</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q116037
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for MS-DOS, versions 2.5x, 2.6x 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To update more than one record in a database from another, similar database, you
+may need to check for an end-of-file (EOF) marker during each iteration of the
+REPLACE operation. This is best accomplished with a DO ... WHILE loop, as
+demonstrated below.
+
+NOTE: In order for this process to work, the two databases must have a common key
+field.
+
+MORE INFORMATION
+================
+
+To demonstrate this process, we'll use the CUSTOMER database in the FoxPro
+TUTORIAL subdirectory. First, we'll copy CUSTOMER to a new database called
+NEWCUST, then we'll delete the contents of the COMPANY field, and then we'll
+restore the contents of the COMPANY field using the COMPANY field information in
+CUSTOMER.
+
+1. Set the default directory to the location of CUSTOMER.DBF. For example, in
+  FoxPro 2.x, issue the following command in the Command window:
+
+        SET DEFAULT TO C:\&lt;FoxPro_directory&gt;\TUTORIAL.
+
+  In Visual FoxPro, Issue the following:
+
+        SET DEFAULT TO C:\&lt;FoxPro_directory&gt;\SAMPLES\DATA
+
+  NOTE: In Visual FoxPro, you will also need to change all references below from
+  from CNO to CUST_ID.
+
+2. In the Command window, issue the following commands:
+
+        USE customer
+        COPY TO newcust
+        SELECT 0
+        USE newcust
+        ** the following command has no spaces between the quotation marks
+        REPLACE ALL company WITH ""
+        ** BROWSE the table with the empty COMPANY field contents
+        BROWSE
+        CLEAR ALL
+        CLOSE ALL
+        ** open a new program file called TEST
+        ** if a program called TEST already exists, choose another name
+        MODIFY COMMAND test
+
+3. In the edit window for the TEST program, type the following commands:
+
+        SELECT 0
+        USE customer
+        SELECT 0
+        USE newcust
+
+        SELECT customer
+
+        ** while not at end of file of CUSTOMER, do some actions
+        DO WHILE !EOF()
+           ** select the destination table
+           SELECT newcust
+           ** replace the empty COMPANY field with data from CUSTOMER where
+           **   the common key field is the same
+           REPLACE newcust.company WITH customer.company;
+              FOR newcust.cno = customer.cno
+           ** select the source table again to go to next record
+           SELECT customer
+           SKIP
+        ENDDO
+        SELECT newcust
+        ** BROWSE the table with the newly filled COMPANY data
+        BROWSE
+
+  NOTE: If the first database (that is, CUSTOMER) is indexed on the common key
+  field between the two tables, replace the commands in step 3 with the
+  following:
+
+        SELECT 0
+        USE customer ORDER TAG cno
+        SELECT 0
+        USE newcust
+        REPLACE ALL newcust.company WITH customer.company FOR ;
+           seek(cno,"customer")
+
+4. Save TEST.PRG and then run it.
+
+REFERENCES
+==========
+
+"Language Reference," (Windows and MS-DOS) pages L3-312, L3-470, L3-480, L3-
+816, L3-861, L3-1040, L3-1108
+
+"Language Reference," (Macintosh) pages 271, 396, 404, 651, 685, 827, 884
+
+Additional query words: FoxMac FoxDos FoxWin VFoxWin 2.50 2.50a 2.50b 2.50c 2.60
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbVFP300
+Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164221: INFO: How to Enable Connection Pooling in an ODBC Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164221: INFO: How to Enable Connection Pooling in an ODBC Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164221/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164221/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164221/","publisher":null,"image":null,"headline":"Q164221: INFO: How to Enable Connection Pooling in an ODBC Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164221-info-how-to-enable-connection-pooling-in-an-odbc-application">Q164221: INFO: How to Enable Connection Pooling in an ODBC Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164221
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbprogramming
+Last Modified: 07-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to enable connection pooling in an ODBC application.
+
+MORE INFORMATION
+================
+
+Microsoft ODBC version 3.0 introduced the concept of connection pooling.
+Connection pooling enables an ODBC application to reuse an existing
+connection from a pool, so the ODBC application does not have to go
+through the complete connection process for any subsequent connection.
+
+When an ODBC application disconnects a connection, the connection is saved
+into a pool instead of actually disconnected. How long this connection remains
+in the pool depends on the CPTimeout property of the ODBC driver. When the
+timeout expires, the connection is closed and removed from the pool. The ODBC
+application can use SQLConfigDriver to change the value of CPTimeout, and this
+value applies to all the ODBC applications that are using the specified ODBC
+driver.
+
+The default value for the CPTimeout is 60 seconds.
+
+
+Connection pooling is very useful when an ODBC application like Microsoft
+Internet
+Information Server (for example) connects and disconnects frequently. Microsoft
+Internet Information Server (IIS) version 3.0 with Active Server Pages (ASP)
+takes advantage of connection pooling. You can enable connection pooling for
+IIS users by changing the value of StartConnectionPool to 1. StartConnectionPool
+is located under:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3SVC\ASP\Parameters
+
+An ODBC application can use SQLSetEnvAttr to enable connection pooling. Following
+is an example of how to enable connection pooling in an ODBC application:
+
+     #include &lt;windows.h&gt;
+     #include &lt;stdio.h&gt;
+     #include &lt;sql.h&gt;
+     #include &lt;sqlext.h&gt;
+
+     void main()
+     {
+     SQLHENV   henv;
+     SQLHDBC   hdbc;
+     int       i=0;
+
+     if (!SQL_SUCCEEDED(SQLSetEnvAttr(
+        NULL,  // make process level cursor pooling
+        SQL_ATTR_CONNECTION_POOLING,
+        (SQLPOINTER)SQL_CP_ONE_PER_DRIVER,
+        SQL_IS_INTEGER)))
+     printf("SQLSetEnvAttr/SQL_ATTR_CONNECTION_POOLING error\n");
+
+     if (!SQL_SUCCEEDED(SQLAllocHandle(SQL_HANDLE_ENV, NULL, &amp;henv)))
+        printf("SQLAllocHandle error\n");
+
+     // set the ODBC behavior version.
+     if (!SQL_SUCCEEDED(SQLSetEnvAttr(henv, SQL_ATTR_ODBC_VERSION,
+     (SQLPOINTER) SQL_OV_ODBC2, SQL_IS_INTEGER)))
+        printf("SQLSetEnvAttr/SQL_ATTR_ODBC_VERSION error\n");
+
+     //set the matching condition for using an existing connection in the
+     pool
+     if (!SQL_SUCCEEDED(SQLSetEnvAttr(henv, SQL_ATTR_CP_MATCH,
+     (SQLPOINTER) SQL_CP_RELAXED_MATCH, SQL_IS_INTEGER)))
+     printf("SQLSetEnvAttr/SQL_ATTR_CP_MATCH error\n");
+
+  while (i &lt; 10) {
+     if (!SQL_SUCCEEDED(SQLAllocHandle(SQL_HANDLE_DBC,
+        henv, &amp;hdbc)))
+        printf("SQLAllocHandle error\n");
+        if (!SQL_SUCCEEDED(SQLConnect(hdbc,
+     (unsigned char*)"testing\0", SQL_NTS,
+        (unsigned char*)"sa\0", SQL_NTS,
+     (unsigned char*)"\0", SQL_NTS)))
+        printf("SQLConnect error\n");
+     else
+        printf("Connect successfully %d times\n", i);
+     //the first time, the application calls SQLDisconenct, it will return
+                   //the connection to the //pool
+     SQLDisconnect(hdbc);
+
+     if (!SQL_SUCCEEDED(SQLFreeHandle(SQL_HANDLE_DBC, hdbc)))
+        printf("SQLFreeHandle error\n");
+     i++;
+     }
+     SQLFreeHandle(SQL_HANDLE_ENV, henv);
+     }
+
+When the ODBC application calls SQLDisconnect the first time, the connection is
+saved to the pool. Any subsequent SQLConnect/SQLDisconnect that matches the
+required condition will reuse the first connection.
+
+
+Additional query words: viper asp
+
+======================================================================
+Keywords          : kbprogramming 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

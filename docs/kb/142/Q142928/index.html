@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142928: PRB: Bound ListBox Doesn’t Show List Item When MultiSelect = 2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142928: PRB: Bound ListBox Doesn’t Show List Item When MultiSelect = 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142928/","publisher":null,"image":null,"headline":"Q142928: PRB: Bound ListBox Doesn’t Show List Item When MultiSelect = 2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142928-prb-bound-listbox-doesnt-show-list-item-when-multiselect--2">Q142928: PRB: Bound ListBox Doesn’t Show List Item When MultiSelect = 2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142928
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+- Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set the MultiSelect property of a bound Standard ListBox control at
+design time to 2-Extended, and then run the application, you can MultiSelect
+with CTRL+Click but the control is not bound to the Data control at this time.
+When you go back into design mode, the MultiSelect property is reset to 0-None,
+then when you run again, you get the correct behavior.
+
+CAUSE
+=====
+
+This is a behavior of Visual Basic. It is not practical to select multiple items
+from a listbox that is bound to only a single column of a data control. If you
+set the MultiSelect property of the control to 2-Extended, Visual Basic should
+reset it back to 0-None before going into run mode, not after it returns from
+the first run. This way it will not appear that you can almost get MultiSelect
+to work with a bound listbox.
+
+RESOLUTION
+==========
+
+Do not set the MultiSelect Property of a bound standard ListBox control to
+2-Extended as it will cause this misleading behavior.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem in Visual Basic Version 4.0
+------------------------------------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add a Data control to Form1.
+
+3. Connect Data1 on Form1 to a table in a database as follows: Select the Data
+  control and press the F4 key to display the Properties window. Set the
+  DatabaseName property to BIBLIO.MDB, and set the RecordSource property to the
+  source table name Publishers.
+
+4. Add a Standard ListBox control to Form1. Select the ListBox control and press
+  the F4 key to display the Properties window. Set the DataSource property to
+  Data1, the DataField property to State, and the MultiSelect property to
+  2-Extended.
+
+5. Add the following to the Form Load event code:
+
+     Private Sub Form_Load()
+       List1.AddItem "CA"
+       List1.AddItem "WA"
+       List1.AddItem "PA"
+       List1.AddItem "MA"
+       List1.AddItem "IL"
+       List1.AddItem "FL"
+     End Sub
+
+6. Start the program, or press the F5 key. Click next and previous on the data
+  control and notice how the selection on the listbox does not change even
+  though it is bound to the Data control. You can MultiSelect with CTRL+Click.
+  When you go back into design mode the MultiSelect property is reset to
+  0-None, then when you run again, you get the correct behavior.
+
+Additional query words: kbVBp400 kbVBp600 kbdse kbDSupport kbVBp kbControl
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbVB400Search kbVB400
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

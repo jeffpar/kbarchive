@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186123: BUG: The Coolbar ActiveX Control Does Not Work in VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186123: BUG: The Coolbar ActiveX Control Does Not Work in VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186123/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186123/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186123/","publisher":null,"image":null,"headline":"Q186123: BUG: The Coolbar ActiveX Control Does Not Work in VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186123-bug-the-coolbar-activex-control-does-not-work-in-vfp">Q186123: BUG: The Coolbar ActiveX Control Does Not Work in VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186123
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Coolbar ActiveX control works with products such as Microsoft Internet
+Explorer, Visual C++, and Visual Basic. Unfortunately, this ActiveX control does
+not work in Visual FoxPro.
+
+RESOLUTION
+==========
+
+Do not use the Coolbar ActiveX control in Visual FoxPro.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The Coolbar ActiveX control is a container control that consists of a collection
+of "Band" objects used to create a configurable toolbar that is associated with
+a form. A Coolbar control typically contains two or more Bands, which the user
+may resize and rearrange. Each of these Bands contains a single child control.
+The problems occur because Visual FoxPro can not process the messages from these
+child controls in the Band; therefore, erratic responses occur. In fact, Visual
+FoxPro cannot handle any ActiveX controls that support containership.
+
+Some symptoms of the erratic behavior exhibited by the Coolbar control when used
+in Visual FoxPro are:
+
+1. The Coolbar control appears on a form at design time but is invisible at
+  run-time. Although the Coolbar control is invisible at run-time, any FoxPro
+  controls that you place in the Coolbar control appear on the form at
+  run-time.
+
+2. Dropping a FoxPro control that contains "white space", such as a text box,
+  combo box, or spinner, onto the Coolbar control while the control is in Edit
+  mode, causes the FoxPro control to flash in design mode. The flashing does
+  not occur at run-time.
+
+3. Dropping a FoxPro control that has a caption on it, such as a command button,
+  check box, or option group, results in the caption becoming invisible at both
+  design time and run-time. You must access the Coolbar control's Property
+  sheet at least once to see this behavior. If you have never opened the
+  Coolbar control's property sheet, the captions will be visible.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form in Visual FoxPro and add the FoxPro OLE Container control.
+
+2. In the Insert Object dialog box, select the "Create Control" option button,
+  choose the Microsoft Coolbar control from the list and then press OK.
+
+3. Select the FoxPro check box control located on the Form Control's toolbar.
+  Next, click inside the Coolbar control's body to add the check box to the
+  Coolbar control. Note that the check box flashes inside the Coolbar control
+  while you are modifying the form.
+
+4. Run the form. Note that the check box control does not flash at run- time and
+  that the Coolbar control is invisible at run-time.
+
+5. Modify the form and right-click the Coolbar control. From the shortcut menu
+  select "Microsoft Coolbar control properties". Click OK to close the Property
+  sheet. Note that the caption of the check box is not visible in either design
+  or run-time.
+
+Additional query words: kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

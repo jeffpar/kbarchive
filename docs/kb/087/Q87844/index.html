@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87844: Creating a Bitmap to Be Tiled on the Windows Desktop | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87844: Creating a Bitmap to Be Tiled on the Windows Desktop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87844/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87844/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87844/","publisher":null,"image":null,"headline":"Q87844: Creating a Bitmap to Be Tiled on the Windows Desktop","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87844-creating-a-bitmap-to-be-tiled-on-the-windows-desktop">Q87844: Creating a Bitmap to Be Tiled on the Windows Desktop</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87844
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A bitmap (.BMP) file created in Windows Paintbrush does not appear to tile if
+the image attributes are not set to the desired size before the image is
+created. It is possible, however, to take an image that was incorrectly created
+in a full canvas, and make a new image that has the correct image attributes to
+be tiled on the Windows desktop.
+
+MORE INFORMATION
+================
+
+If you attempt to change the image attributes of an existing drawing, nothing
+will happen with Windows version 3.0. With Windows version 3.1 you will receive
+the following message:
+
+  Resetting image attributes will clear the current image and start a new
+  editing session.
+
+  Do you want to start a new session with the new image attributes?
+
+Choosing Yes will start a new session with the desired size (image attributes);
+however, the new session will not contain the old loaded image.
+
+Creating a Bitmap Tile Image from Scratch
+-----------------------------------------
+
+If you want to create a bitmap image to be tiled on the Windows Desktop:
+
+1. From the Options menu, choose Image Attributes.
+
+2. Select the correct width and height for your tile image.
+
+3. From the File menu, choose New. The image attributes (the drawing area) will
+  be the size you specified. The image then will be tiled on the Windows
+  Desktop as much as possible, depending upon the ratio of the image attributes
+  size, verses the total screen size.
+
+Creating Bitmap Tile Image From a Previously Created Full-Screen Bitmap
+-----------------------------------------------------------------------
+
+1. Start Paintbrush.
+
+2. From the File menu, choose Open to open the image in Paintbrush.
+
+3. From the View menu, choose Cursor Position. This will display the x, y
+  coordinates of the mouse cursor position from the top-left corner. The
+  coordinates in pixels are displayed on the Paintbrush menu bar towards the
+  right.
+
+4. Select the Pick tool (scissors with a dotted box over them). Then draw a
+  rectangle selecting ONLY the part of the image you want to be your tile
+  image.
+
+5. From the Edit menu, choose Copy.
+
+6. You should still have the Pick tool selected. While the Pick tool is the
+  active tool, the mouse cursor looks like a large plus sign when the cursor is
+  inside the drawing area.
+
+7. There are two possible cases for this next step:
+
+   - The desired tile image is in the top-left corner of the Paintbrush drawing
+     region. If this is the case, then put the center of the cursor (the point
+     where the lines cross) at the bottom right corner of the rectangular box
+     you have drawn around your image to be tiled. Write down the numbers being
+     displayed on the menu bar in the upper-left corner for the x, y
+     coordinates in pixels.
+
+   - The desired tile image is somewhere in the Paintbrush canvas other then
+     the top-left corner. If this is the case, then put the center of the
+     cursor (point where the lines cross) at the top-left corner of the
+     rectangular box you have drawn around your image and then write down the
+     coordinate numbers displayed on the menu bar.
+
+     Next, place the center of the cursor on the bottom-right corner of the
+     rectangle, and then write down the numbers displayed on the menu bar.
+     Subtract the first pair of numbers from their corresponding second numbers
+     you have written down.
+
+8. From the Options menu, choose Image Attributes.
+
+9. Change the Units to pels .
+
+10. Change the numbers for the width and height to match those you determined in
+  step 7. Choose OK.
+
+11. You will now have a blank drawing area the size you specified, which should
+  match your desired tile bitmap image. From the Edit menu, choose Paste.
+
+12. Save this new image with a filename that is different from the filename of
+  the original bitmap image. Make sure the file is saved to the Windows
+  directory.
+
+13. Run Control Panel and choose the Desktop icon. Change the Wallpaper
+  selection the filename indicated in step 12 and select the Tile option.
+
+14. Exit Control Panel, and you should now have your image tiled on the desktop.
+
+Additional query words: 3.00 3.00a 3.10 3.11 pbrush pcx background logo pattern picture
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

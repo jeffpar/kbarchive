@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246307: BUG: EXE Crashes on Windows NT when Icon has More Than 256 color | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246307: BUG: EXE Crashes on Windows NT when Icon has More Than 256 color" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246307/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246307/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246307/","publisher":null,"image":null,"headline":"Q246307: BUG: EXE Crashes on Windows NT when Icon has More Than 256 color","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246307-bug-exe-crashes-on-windows-nt-when-icon-has-more-than-256-color">Q246307: BUG: EXE Crashes on Windows NT when Icon has More Than 256 color</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246307
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbAppSetup kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnip
+Last Modified: 24-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a Microsoft Visual FoxPro (VFP) executable, it is common practice
+to attach a custom icon to it. Usually, the custom icon contains two or more
+resources. This allows the icon to be displayed in various Windows views (small
+icons, large icons, details, and so forth). If the custom icon contains a 16x16
+resource with more than 256 colors, the resulting .exe file does not run on
+Microsoft Windows NT 4. When the .exe file is started, it immediately exits with
+a memory error.
+
+
+RESOLUTION
+==========
+
+Build the 16x16 resource in the custom icon with 256 colors or fewer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Using Microangelo (manufactured by Impact Software:
+  http://www.impactsoft.com/muangelo/muangelo.html) or some other icon editor,
+  create an icon. Include a 32x32 resource with 256 colors, and a 16x16
+  resource with more than 256 colors.
+
+2. Open Visual FoxPro 6.0 and create a new project.
+
+3. Add a new program to the project with one line of code:
+
+  MESSAGEBOX("HELLO!")
+
+4. With the project selected, press the CTRL+J key combination to bring up the
+  Project Information window.
+
+5. Use the Attach Icon checkbox to attach the icon created in step 1 to the
+  project.
+
+6. Build the project into an executable.
+
+7. Run the .exe file on a computer running Microsoft Windows NT 4, and note that
+  one of the following error messages appears:
+
+  APPLICATION ERROR. The instruction at &lt;memory address&gt; referenced
+  memory at &lt;memory address&gt;. The memory could not be "read".
+
+  An application error has occurred and an application error log is being
+  generated. &lt;exe name&gt;
+  Exception: access violation:&lt;memory address&gt;, Address:&lt;memory
+  address&gt;
+
+  Fatal error: Exception code: C0000005
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Trevor
+Hancock, Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+  For additional information about creating icons for use with Visual FoxPro
+  executables, click the article numbers below to view the articles in the
+  Microsoft Knowledge Base:
+
+  Q136044 How to Make ImagEdit Create 16X16 Icons
+
+  
+
+  Q149589 How to Ensure that Custom Icons Show Up in Windows 95 Explorer
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAppSetup kbvfp500a kbvfp500aBUG kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

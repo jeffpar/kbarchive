@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122219: INFO: CWnd::OnCommand() Parameters Documented Incorrectly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122219: INFO: CWnd::OnCommand() Parameters Documented Incorrectly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122219/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122219/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122219/","publisher":null,"image":null,"headline":"Q122219: INFO: CWnd::OnCommand() Parameters Documented Incorrectly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122219-info-cwndoncommand-parameters-documented-incorrectly">Q122219: INFO: CWnd::OnCommand() Parameters Documented Incorrectly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122219
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr kbMFC KbUIDesign kbVC500bug kbGrpDSMFCATL
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ 32-bit Edition, version 2.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The online help and the "Class Library Reference" incorrectly describe the
+CWnd::OnCommand() wParam and lParam as follows:
+
+In Visual C++ 2.0
+-----------------
+
+wParam Identifies the command ID of the menu item or control.
+
+lParam The low-order word of lParam identifies the control that sends the message
+if the message is from a control. Otherwise the low-order word is 0. The
+high-order word of lParam specifies the notification message if the message is
+from a control. If the message is from an accelerator, the high-order word is 1.
+If the message is from a menu, the high-order word is 0.
+
+In Visual C++ 5.0
+-----------------
+
+wParam The low-order word of wParam identifies the command ID of the menu item or
+control. The high-order word of wParam specifies the notification message if the
+message is from a control. If the message is from an accelerator, the high-order
+word is 1. If the message is from a menu, the high-order word is 0.
+
+MORE INFORMATION
+================
+
+The description above is valid for Windows-based Applications, but it is invalid
+for Win32-based Applications. The Win32 API widens the WPARAM type to 32 bits
+and changes the packing of many of the messages. The parameters for
+CWnd::OnCommand() should be documented as follows:
+
+  wParam The low-order word of wParam specifies the identifier of the menu
+  item, control, or accelerator. The high-order word specifies the notification
+  code if the message is from a control. If the message is from an accelerator,
+  the high-order word is 1. If the message is from a menu, the high-order word
+  is 0.
+
+  lParam Handle (HWND) of the control sending the message if the message is from
+  a control. Otherwise, this parameter is NULL.
+
+REFERENCES
+==========
+
+For additional information concerning this issue, please consult the following
+topics in the Online Help: "WM_COMMAND" and "MFC: Porting Tips".
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbMFC KbUIDesign kbVC500bug kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

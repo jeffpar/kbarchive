@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185588: Guide To Windows NT 4.0 Profiles and Policies (Part 3 of 6) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185588: Guide To Windows NT 4.0 Profiles and Policies (Part 3 of 6)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185588/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185588/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185588/","publisher":null,"image":null,"headline":"Q185588: Guide To Windows NT 4.0 Profiles and Policies (Part 3 of 6)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185588-guide-to-windows-nt-40-profiles-and-policies-part-3-of-6">Q185588: Guide To Windows NT 4.0 Profiles and Policies (Part 3 of 6)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185588
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is the third in a series of articles that provides information and
+procedures for implementing Microsoft Windows NT 4.0 Profiles and Policies on
+client workstations and servers.
+
+A whitepaper is available that contains all of this information and additional
+flowcharts, diagrams and examples and can be downloaded from the following web
+page:
+
+  http://www.microsoft.com/ntserver/techresources/management/prof_policies.asp
+
+  prof_policies.asp
+
+NOTE: The above link is one path; it has been wrapped for readability.
+
+For the other sections of this guide, please see the following article(s) in the
+Microsoft Knowledge Base:
+
+  Q161334 Guide to Windows NT 4.0 Profiles &amp; Policies Part 1 of 6
+
+  Q185587 Guide to Windows NT 4.0 Profiles &amp; Policies Part 2 of 6
+
+  Q185589 Guide to Windows NT 4.0 Profiles &amp; Policies Part 4 of 6
+
+  Q185590 Guide to Windows NT 4.0 Profiles &amp; Policies Part 5 of 6
+
+  Q185591 Guide to Windows NT 4.0 Profiles &amp; Policies Part 6 of 6
+
+MORE INFORMATION
+================
+
+                  Windows NT Server Operating System
+                            White Paper
+        Guide to Microsoft Windows NT 4.0 Profiles and Policies
+
+Copyright 1997 Microsoft Corporation. All rights reserved.
+
+The information contained in this document represents the current view of
+Microsoft Corporation on the issues discussed as of the date of
+publication. Because Microsoft must respond to changing market conditions,
+it should not be interpreted to be a commitment on the part of Microsoft,
+and Microsoft cannot guarantee the accuracy of any information presented
+after the date of publication.
+
+This White Paper is for informational purposes only. MICROSOFT MAKES NO
+WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
+
+Microsoft, the BackOffice logo, MS-DOS, Windows, and Windows NT are
+registered trademarks of Microsoft Corporation.
+
+Other product or company names mentioned herein may be the trademarks of
+their respective owners.
+
+Microsoft Corporation
+One Microsoft Way
+Redmond, WA 98052-6399
+USA
+0997
+
+DEFAULT USER TEMPLATE PROFILES
+==============================
+
+During Windows NT 4.0 Workstation installation, the setup program creates a
+generic User Profile, the Default User, and saves it in a folder in the
+profiles directory. These default settings define an environment for new
+users who log on to the computer locally or who log on to a domain that
+does not contain a network Default User profile. When a new user logs on, a
+profile directory is created for that user, and the default settings are
+written to the new user's directory. (The profile may or may not then be
+customizable, depending upon how the administrator has configured
+profiles.)
+
+In Windows NT 4.0, administrators have the option of generating a network
+Default User profile that, if present, will be used before the local
+Default User profile is used. With the original retail release of Windows
+NT 4.0, workstations downloaded this network Default User profile and the
+most recent NTconfig.pol file, and cached them in the local Default User
+(Network) and Policy folders, respectively. Then, instead of automatically
+downloading these from the server whenever they were needed, the logon
+process compared the time/date/size stamps of the two versions, and if they
+were the same, used the cached versions without performing another
+download. With Windows NT 4.0 Service Pack 2, however, the System Policy
+file, NTconfig.pol, is downloaded during each logon. (The profile
+functionality remains unchanged-the profile is downloaded only if the local
+copy is out of date.)
+
+PROFILE NAMES AND STORAGE IN THE REGISTRY
+=========================================
+
+Windows NT 4.0 records which profile should be used by which user by
+placing registry keys for the user's security ID (SID) in the registry in:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+  \ProfileList
+
+Each user who has logged on to the local machine will have a SID recorded
+here in a subkey, with a value that contains the path to that user's local
+profile, ProfileImagePath. Should multiple users with the same account name
+log on to the network, separate distinct profiles are created for each. For
+example, if multiple users with the account name John Smith log on to the
+computer, the first John Smith is assigned a folder named JohnSmith.
+Subsequent users with the same name are assigned folders named JohnSmith
+with a numerical suffix appended, for example JohnSmith.000, JohnSmith.001,
+and so forth.
+
+MANUALLY ADMINISTERING A USER PROFILE THROUGH THE REGISTRY
+==========================================================
+
+As system administrator, you may need to change a given setting to avoid
+unnecessary user interaction, to make modifications before setting the
+profile to mandatory, or to add custom registry entries. In addition, you
+may need to modify the Default User Profile on a computer before new users
+log on and use it as the template. You can open a specific user's profile
+or the Default User Profile and customize it manually as explained in the
+procedure below.
+
+NOTE: Make sure that the user is not logged on before using this procedure.
+If the user is logged on while changes are made, the changes will be
+overwritten by the user's preferences because profile settings are saved at
+log off.
+
+As discussed earlier, the NTuser.dat file contains all of the registry
+settings located in HKEY_CURRENT_USER. As system administrator, you can
+modify the data contained in the NTuser.dat portion of the profile by
+loading the hive into the registry.
+
+To manually customize a User Profile:
+
+1. Locate the profile to be modified.
+
+   - If the profile is a server-based profile, locate the
+     \\server\share\username and determine the extension on the NTuser.xxx
+     file.
+
+   - If the profile is a local profile, locate the
+     %systemroot%\Profiles\username directory, and determine the extension
+     on the Ntuser.xxx file.
+
+   - If you need to edit the Default User Profile, locate the
+     %systemroot%\Profiles\Default User directory, and determine the
+     extension on the Ntuser.xxx file.
+
+   - If you need to edit the Network Default User Profile, locate the
+     Default User folder in the NETLOGON share of the domain controllers
+     that are doing user authentication, and determine the extension on
+     the Ntuser.xxx file. If there is more than one domain controller and
+     directory replication is ensuring that the "Default User" profile is
+     the same on all domain controllers, open only the profile on the
+     domain controller which is the export server.
+
+2. Start Regedt32.exe, and select the HKEY_USERS on Local Machine window.
+  Highlight the root key of HKEY_USERS.
+
+3. From the Registry menu, select Load Hive.
+
+4. Browse for the directory identified in Step 1, and select the NTuser.xxx
+  file located in that directory.
+
+5. A dialog will prompt you to enter a Key Name. You can use any value, but
+  you must remember this value so that you can select it during the unload
+  process. For this reason, we recommend that you use the user name.
+
+6. Click Enter. This adds the profile registry hive as a subkey to
+  HKEY_USERS, as shown in the illustration below.
+
+7. Edit the existing values as necessary.
+
+8. After completing the changes, highlight the root of the user's profile
+  registry key, and from the Registry menu, select Unload Hive. This saves
+  the changes to the user's profile. (When you first selected Load Hive,
+  the key was mapped to the file selected in the Open dialog. A Save As
+  option is therefore unnecessary.)
+
+MODIFYING THE DEFAULT USER PROFILE
+==================================
+
+To modify a Windows NT-based workstation's Default User Profile settings or
+to modify the Network Default User Profile, load the NTuser.xxx hive into
+the registry as outlined above, make the necessary changes, and unload the
+hive (this automatically saves the changes).
+
+- The workstation Default User Profile is located in the
+  \%systemroot%\Profiles\Default User directory.
+
+- To make changes to the Network Default User Profile, use the Ntuser.xxx
+  file from the scripts export directory
+  (%systemroot%\system32\repl\export\scripts) of the domain controller
+  that is the export server for the domain. Any changes that you make to
+  this file will be replicated to the other domain controllers (which are
+  import servers).
+
+To provide users with a Default User Profile that contains custom
+shortcuts, folders, and files that are not centrally managed, place the
+icons in the appropriate folder within the Default User Profile. New users
+will receive the shortcuts, folders, and files as part of their new
+profiles. For example, if you want each new user that logs on to a given
+computer to receive a folder called "My Storage" on the desktop, just
+create this folder in the path:
+
+  \%systemroot%\Profiles\Default User\Desktop
+
+UPGRADING WINDOWS NT 3.5X SERVER-BASED
+PROFILES TO WINDOWS NT 4.0 ROAMING PROFILES
+===========================================
+
+When you upgrade Windows NT 3.5x roaming profiles (.usr profiles), you do
+not need to change anything in the profile path configured in the user
+account. When the user logs on to a Windows NT 4.0-based machine and the
+profile is found to be a Windows NT 3.5x profile, a process automatically
+looks for the equivalent Windows NT 4.0 profile. If the profile isn't
+found, a conversion process creates a new Windows NT 4.0 profile using the
+settings established in the Windows NT 3.5x profile.
+
+During the conversion process, Windows NT 4.0 creates a directory for the
+new profile in the same location as the existing Windows NT 3.5x profile.
+The resulting directory has a .pds extension, which stands for Profile
+Directory Structure, rather than the previous Windows NT 3.5x .usr
+extension. For example, if the User Profile path for the Windows NT 3.5x
+user mydomainuser is \\myserver\myshare\mydomainuser.usr, and the user logs
+on to a Windows NT 4.0-based machine, the profile directory
+mydomainuser.pds would be created within \\myserver\myshare.
+
+This approach allows the user to log on to the network from either a
+Windows NT 3.5x or 4.0-based workstation. If the user were to log on from a
+Windows NT 3.5x-based computer, the profile path would direct the Windows
+NT 3.5x-based machine to the User Profile used prior to the Windows NT 4.0
+upgrade. If the user then moved to a Windows NT 4.0-based computer, the
+user's Windows NT-based workstation would recognize that the profile
+contained Windows NT 3.5x syntax, would replace the .usr with .pds, and
+would then use that string to locate the Windows NT 4.0 profile. The
+resulting Windows NT 4.0 structure will be the Windows NT 3.51 profile (now
+NTuser.xxx) and the Default User Profile folders.
+
+It is important to emphasize that the Windows NT 3.5x profile is not
+deleted-it is still available to the user should they ever log on from a
+Windows NT 3.5x-based computer. It is also important to note that the
+settings for these two profiles are completely independent; changes made to
+the Windows NT 3.5x profile will not be reflected in the Windows NT 4.0
+profile, and vice versa.
+
+NOTE: As an administrator, if you review the directory structures in the
+share where users' roaming profiles are stored, and no .pds or .pdm
+extensions are appended, this is normal. No extension is appended to
+roaming profile directories that are new to Windows NT 4.0. These
+extensions are only added when profiles are migrated from Windows NT 3.5x
+to 4.0, or when the administrator creates a new Windows NT 4.0 mandatory
+profile that requires a successful logon.
+
+UPGRADING WINDOWS NT 3.5X MANDATORY
+PROFILES TO WINDOWS NT 4.0 MANDATORY PROFILES
+=============================================
+
+Upgrades of Windows NT 3.5x mandatory profiles to Windows NT 4.0 cannot be
+done automatically. This is because the same restrictions that prevent a
+user from saving any changes to his or her profile also restricts the
+system's ability to generate a new Windows NT 4.0 mandatory profile from an
+existing profile.
+
+When you upgrade a Windows NT 3.5x mandatory profile, the profile path does
+not need to be modified. However, you will need to create a new mandatory
+profile with the same desired settings. To create the mandatory profile,
+you can remove the mandatory extension from the old profile and force a
+conversion, or you can create the new profile from a template. Both
+procedures are explained below.
+
+To create a mandatory profile from the old profile:
+
+1. Replace the .man extension on the existing mandatory profile with the
+  extension .usr.
+
+2. Change the extension on the user's profile path from .man to .usr.
+
+3. Allow the user to log on. This permits the conversion to take place.
+
+4. Have the user log off. This creates a directory with the name of the
+  profile and a .pds extension.
+
+5. Change the .pds folder extension to .pdm and change the user's profile
+  path back to .man.
+
+6. Rename the NTuser.dat file to NTuser.man.
+
+To create the profile from an existing template profile:
+
+1. In the \\server\share specified in the User Profile path, create a
+  folder with the directory name of the location where the profile is
+  stored. Use the .pdm extension for this directory name. For example, if
+  the user name is domainuser, the directory name would be
+  \\server\share\domainuser.pdm.
+
+2. On the Windows NT-based computer hosting the profile, log on as an
+  administrator and map a drive to the \\server\share where the profile
+  will be stored.
+
+3. From the Control Panel, click System.
+
+4. On the User Profiles page, select the profile to be copied. Use the Copy
+  To option to select the user's folder created in Step 1, modify the
+  permissions to reflect the proper account, and click OK.
+
+  The profile is now written to the designated location, including the
+  folder trees and the NTuser.xxx file originally included with the
+  profile. The permissions are also encoded into the binary NTuser.xxx
+  file.
+
+5. In the directory that the profile was copied to, check the NTuser.xxx
+  file for the .man extension. If the extension is .dat, the profile will
+  still be modifiable. Change the extension to .man, if necessary.
+
+Note that because the User Profile was saved into a directory with a .pdm
+extension, both the Windows NT 3.5x and Windows NT 4.0 profiles exist on
+the server. A user can log on from either a Windows NT 3.5x or Windows NT
+4.0-based computer, and the appropriate profile will be used.
+
+EXTRACTING A USER PROFILE FOR USE ON ANOTHER DOMAIN OR MACHINE
+==============================================================
+
+As explained previously in this document, a user is given explicit
+permissions to use a profile, and these permissions can be created and
+controlled by an administrator or generated automatically by the system
+when the user first logs on.
+
+If a profile has permissions that differ from those needed by the user (for
+example, if the profile was created for a user on a different domain), the
+profile permissions must be changed to function correctly. As an example,
+suppose you have a Windows NT-based workstation that you would like to have
+join the domain, but you want the user to be able to retain his or her
+profile settings. The Windows NT-based workstation is currently a part of
+the WORKER workgroup and will be joining the domain BIGDOMAIN.
+
+To change the profile:
+
+1. Log on to the computer as an administrator, and create a local account
+  that will be used only temporarily to house the profile during the
+  conversion process.
+
+2. Log on as a temporary user and immediately log off. This will create a
+  subdirectory underneath the %systemroot%\Profiles directory with the
+  name of the account that logged on.
+
+3. Log back on as an administrator, and configure the workstation to join
+  the domain.
+
+4. After the workstation has joined the domain, reboot the computer.
+
+5. After the machine restarts, log on as the user from the domain that will
+  need the converted profile, and then log off. This sets up the directory
+  structure needed to complete the conversion process.
+
+6. Log back on as an administrator, and copy the profile structure,
+  including the Ntuser.xxx file and all subdirectories, from the directory
+  that stored the workgroup user's profile to the subdirectory created for
+  the temporary user in Step 2.
+
+7. From the Control Panel, click System.
+
+8. On the User Profiles property page, select the temporary user profile,
+  and click Copy To. Browse under %systemroot%\Profiles to locate the
+  subdirectory that contains the profile for the domain user that logged
+  on in Step 5. Click OK and then click the Change button for the
+  permissions.
+
+9. Select the domain user who will use the profile. Click OK to copy the
+  profile.
+
+10. Log off and log on as the domain user. The profile settings should now
+   be available to that user.
+
+NOTE: Alternatively, you can copy the profile and use the instructions from
+the section "Encoding Permissions in the User Profile" to change the
+permissions. However, this requires that you manually edit the registry.
+
+CREATING PROFILES WITHOUT USER-SPECIFIC CONNECTIONS
+===================================================
+
+In some cases, you may want to create profiles that include preconfigured
+persistent connections. However, if you need to supply alternate
+credentials when you create the template profile, this can cause problems
+for users later when the profile is used.
+
+Information about persistent connections is stored in the registry location
+HKEY_CURRENT_USER\Network. This key has subkeys that list the persistent
+drive connections by drive letter. For each of these subkeys, there is a
+value of UserName. If alternate credentials must be supplied to make the
+connection, those credentials are also stored here. Note that this includes
+only the domain and user account name; the password is not included. When
+the user receives this profile and logs on, Windows NT attempts to
+reconnect the drive, but the alternate credentials are sent rather than
+those of the logged on user.. Note that if the UserName value contains a
+blank string, the credentials of the logged on user are sent (which is the
+desired behavior in this case).
+
+To avoid inadequate credentials or wrong credentials being sent, use one of
+the following approaches:
+
+- Avoid having to supply alternate credentials when you create the
+  connections to network resources in the shared profile by granting the
+  user creating the template profile sufficient permissions in advance.
+
+- Before modifying the profile to be a mandatory profile, run a REGINI
+  script that removes the credentials from the UserName value. Do not
+  delete the value, only the string data.
+
+TROUBLESHOOTING USER PROFILES WITH THE USERENV.LOG FILE
+=======================================================
+
+The Userenv.log is an invaluable tool for troubleshooting the process of
+loading and unloading User Profiles. Each step in the User Profile process
+is recorded in the log, including informational and error-related messages.
+
+The checked version of the UserEnv.dll is the same dynamic link library
+(.dll) as the retail version, except that it contains debug flags that you
+can set and use with the kernel debugger.
+This file, which is included in both the Windows NT Device Driver Kit (DDK)
+and the Windows NT Software Development Kit (SDK), when used in conjunction
+with a registry entry, generates a log file that can be used in
+troubleshooting and debugging problems with roaming profiles and system
+policies on Windows NT 4.0 clients.
+
+To enable logging:
+
+1. Rename the file UserEnv.dll in the %systemroot%\SYSTEM32 directory to
+  Userenv.old or to a unique name of your choice.
+
+2. Copy the checked version of UserEnv.dll to the %systemroot%\SYSTEM32
+  directory of the client machine that you want to debug. The checked
+  version of the UserEnv file must match the version of the operating
+  system and Service Pack installed on the client computer.
+
+3. Start REGEDT32 and locate the following path:
+
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion
+     \Winlogon
+
+4. Create a new value called UserEnvDebugLevel as a REG_DWORD type. Assign
+  the hex value 10002.
+
+5. Reboot the computer.
+
+Logging information will be recorded in the root directory of the C drive
+as UserEnv.log. You can use Notepad to view the log file. A sample log is
+provided next.
+
+Sample Log
+----------
+
+LoadUserProfile. : Entering, hToken = &lt;0xac&gt;, lpProfileInfo = 0x12f4f4
+LoadUserProfile: lpProfileInfo-&gt;dwFlags = &lt;0x2&gt;
+LoadUserProfile: lpProfileInfo-&gt;lpUserName = &lt;administrator&gt;
+LoadUserProfile: NULL central profile path
+LoadUserProfile: lpProfileInfo-&gt;lpDefaultPath = &lt;\\DfsES\netlogon\Default
+User&gt;
+LoadUserProfile: lpProfileInfo-&gt;lpServerName = &lt;\\DfsES&gt;
+LoadUserProfile: lpProfileInfo-&gt;lpPolicyPath =
+&lt;\\DfsES\netlogon\ntconfig.pol&gt;
+RestoreUserProfile: Entering
+RestoreUserProfile: Profile path = &lt;&gt;
+RestoreUserProfile: User is a Admin
+IsCentralProfileReachable: Entering
+IsCentralProfileReachable: Null path. Leaving
+GetLocalProfileImage: Found entry in profile list for existing local
+profile
+GetLocalProfileImage: Local profile image filename =
+&lt;%SystemRoot%\Profiles\Administrator&gt;
+GetLocalProfileImage: Expanded local profile image filename =
+&lt;D:\WINNTDfs\Profiles\Administrator&gt;
+GetLocalProfileImage: Found local profile image file ok
+&lt;D:\WINNTDfs\Profiles\Administrator\ntuser.dat&gt;
+Local profile is reachable
+Local profile name is &lt;D:\WINNTDfs\Profiles\Administrator&gt;
+RestoreUserProfile: No central profile. Attempting to load local profile.
+RestoreUserProfile: About to Leave. Final Information follows:
+Profile was successfully loaded.
+lpProfile-&gt;szCentralProfile = &lt;&gt;
+lpProfile-&gt;szLocalProfile = &lt;D:\WINNTDfs\Profiles\Administrator&gt;
+lpProfile-&gt;dwInternalFlags = 0x102
+RestoreUserProfile: Leaving.
+UpgradeProfile: Entering
+UpgradeProfile: Build numbers match
+UpgradeProfile: Leaving Successfully
+ApplyPolicy: Entering
+ApplyPolicy: Policy is turned off on this machine.
+LoadUserProfile: Leaving with a value of 1. hProfile = &lt;0x60&gt;
+
+Additional query words: wpaper
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

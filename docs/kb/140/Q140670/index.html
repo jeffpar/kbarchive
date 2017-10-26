@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140670: FIX: Using Run-Time Type Info May Cause Memory Leak Report | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140670: FIX: Using Run-Time Type Info May Cause Memory Leak Report" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140670/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140670/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140670/","publisher":null,"image":null,"headline":"Q140670: FIX: Using Run-Time Type Info May Cause Memory Leak Report","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140670-fix-using-run-time-type-info-may-cause-memory-leak-report">Q140670: FIX: Using Run-Time Type Info May Cause Memory Leak Report</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140670
+Product(s): Microsoft C Compiler
+Version(s): 4.00 4.10
+Operating System(s): 
+Keyword(s): kbCRT kbVC
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When exiting a debug application that uses run-time type information (RTTI) and
+calls the 'name' member function of the type_info class, Visual C++ reports
+"Detected memory leaks!" in the output window.
+
+CAUSE
+=====
+
+When you call the 'name' member function of the type_info class, it incorrectly
+allocates a _NORMAL_BLOCK buffer to hold the type name. This can cause a memory
+leak to be reported incorrectly when you run a debug version of the program.
+
+RESOLUTION
+==========
+
+The reported memory leak can be ignored.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++, 32-bit
+Edition, version 4.2.
+
+MORE INFORMATION
+================
+
+When you call the 'name' member function of the type_info and then later call
+_CrtDumpMemoryLeaks, memory leaks are incorrectly reported. The following sample
+code demonstrates the problem.
+
+Sample Code
+-----------
+
+  /* Compile options needed: /D_DEBUG
+  */ 
+
+  #include &lt;typeinfo.h&gt;
+  #include &lt;iostream.h&gt;
+  #include &lt;crtdbg.h&gt;
+
+  struct test {};
+
+  void main()
+  {
+      test t;
+      typeid(t).name();
+      _CrtDumpMemoryLeaks();
+  }
+
+You would see messages similar to the following in the debug tab of the output
+window:
+
+  
+
+  Loaded symbols for 'E:\WINNT35\system32\MSVCR40D.DLL'
+  Detected memory leaks!
+  Dumping objects -&gt;
+  {44} normal block at 0x002D2390, 12 bytes long.
+  Data: &lt;struct test &gt; 73 74 72 75 63 74 20 74 65 73 74 00
+  Object dump complete.
+  The program 'E:\temp\Text1.exe' has exited with code 1 (0x1).
+
+NOTE: If you are using the 'name' member function within an MFC application, the
+leaks will be reported even if you do not explicitly call _CrtDumpMemoryLeaks.
+MFC calls this function automatically when the application terminates.
+
+Additional query words: kbVC400bug 4.00 4.10 vcfixlist420
+
+======================================================================
+Keywords          : kbCRT kbVC 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410
+Version           : 4.00 4.10
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

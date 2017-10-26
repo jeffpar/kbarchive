@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118328: Multimedia Viewer Title Limits | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118328: Multimedia Viewer Title Limits" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118328/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118328/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118328/","publisher":null,"image":null,"headline":"Q118328: Multimedia Viewer Title Limits","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118328-multimedia-viewer-title-limits">Q118328: Multimedia Viewer Title Limits</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118328
+Product(s): Miscellaneous Software Development Kits
+Version(s): 2.0,2.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Multimedia Viewer Publishing Toolkit, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+The table below is a collection of the limits for titles developed using
+the Microsoft Multimedia Viewer Publishing Toolkit. Each of the limits
+below mentions where the information was found in the Viewer documentation.
+
+  AG = Microsoft Multimedia Viewer 2.0 Authoring Guide
+  TR = Microsoft Multimedia Viewer 2.0 Technical Reference
+
+Element                               Limit                    Source
+----------------------------------------------------------------------
+context string                        255 characters           AG
+                                     128 is incorrect         TR 1-27
+
+title                                 128                      TR 1-28
+                                     50 for Sony              AG
+                                     127 characters incorrect AG
+
+footnote text                         1,023                    TR 2-25
+
+build tag                             32 characters            AG 3-9
+
+topic paragraph                       32K (8K for Sony)
+
+commands                              512 chars
+
+group entry or exit command script    512 chars                AG, TR 4-13
+
+topic entry command script            512 chars                AG 4-17
+
+keyword index title                   50 chars                 AG 7-4
+(defined in [KEYINDEX] in .MVP)                                TR 4-15
+
+keyword footnote text                 1,023 chars              AG 7-6
+
+keywords                              255                      AG 7-6
+                                                              TR 1-30
+
+characters in a vfld                  127                      AG 8-12
+
+alias text                            16,383                   AG 8-17
+                                                              TR 4-31
+
+characters to alias (i.e. characters  255 chars                AG 8-18
+to highlight when alias text matched                           TR 2-2
+in search)                                                     TR 4-31
+
+largest alias number                  4,294,967,295            TR 4-31
+
+max length of embedded pane statement 1023                     TR 1-35
+(including braces)                                             TR 2-17
+
+Topic-entry commands for a topic      512 characters           README.TXT
+(combined limit) The Authoring Guide
+incorrectly states that the limit is
+512 characters per footnote.
+
+topic group names                     127 chars                TR 4-12
+
+topic group titles                    127 chars (only about 40 TR 4-12
+                                     chars will display in
+                                     Search dialog box)
+
+title for edit box title for vfld     50 chars                 TR 4-22
+in Search dialog box
+
+Word wheel subfile name               24                       TR 4-22
+                                                              TR 4-29
+
+Window caption length                 50 chars                 TR 4-24
+
+ROOT option                           1,024 chars              TR 4-41
+
+Viewer Title                          50 chars                 TR 4-41
+
+nonscrolling regions, scrolling       256                      TR 1-31
+regions, panes and popups (per topic)                          TR 2-29
+                                                              TR 4-17,23
+
+topics per RTF source file            32,767
+
+build tags                            32                       AG 3-9
+                                                              TR 4-6
+
+total groups (including browse        200 (10 topic groups for AG 8-15, 21
+sequences) and word wheels            Sony)                    AG 8-26
+                                                              TR 1-28
+                                                              TR 4-11, 22
+                                                              TR 4-28, 29
+
+data types                            16 (numbered 0-15,       AG 8-6
+                                     including defaults)      TR 4-9
+                                     range -32,767 to 32,768  TR 2-16
+
+alias file entries                    4 billion                AG 8-17
+
+stop words per stop word file         1,024                    AG 8-23
+                                                              TR 4-10
+
+files in baggage                      10,000 (actually can     AG 2-13
+                                     have 16,000 files, but   TR 4-5
+                                     performance degrades)
+
+Citation                              2,000 chars              AG 2-18
+                                                              TR 4-34
+
+Copyright                             50 chars                 TR 4-36
+
+Total group entry and exit scripts    32,768 chars             TR 4-13
+for title
+
+Titles with topic groups cannot have more than 512,000 topics indexed for
+the search index. (TR 1-29, TR 4-11)
+
+The maximum number of windows, panes, and popups that Project Editor allows
+you to define is approximately 153 total (windows, panes, and popups
+combined). However, the actual Viewer limit is 255 for each type: 255
+windows, 255 panes, and 255 popups. If you wish to define more windows,
+panes, and popups than Project Editor will allow, edit the .MVP file
+without using Project Editor. (README.TXT)
+
+The largest legal value for the NEAR operator in the [SEARCHDLG] section of
+the project file is 32,768. (README.TXT)
+
+Section names specified in an MCI [sections] option or section file should
+have no more than 40 characters to ensure the section name fits when the
+title is viewed on a low-resolution display. (README.TXT)
+
+Additional query words: 2.00 capacity
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200 kbMMViewer200a
+Version           : :2.0,2.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

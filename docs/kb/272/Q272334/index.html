@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272334: Inside Microsoft Windows 2000, Third Edition Comments and Correc | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272334: Inside Microsoft Windows 2000, Third Edition Comments and Correc" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272334/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272334/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272334/","publisher":null,"image":null,"headline":"Q272334: Inside Microsoft Windows 2000, Third Edition Comments and Correc","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272334-inside-microsoft-windows-2000-third-edition-comments-and-correc">Q272334: Inside Microsoft Windows 2000, Third Edition Comments and Correc</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272334
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 05-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Inside Microsoft Windows 2000, Third Edition ISBN 0-7356-1021-5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Inside Microsoft Windows 2000, Third
+Edition, ISBN 0-7356-1021-5.
+
+The following topics are covered:
+
+- Page xiv: Index Page Number Is Incorrect
+
+- Pages 18 &amp; 19: Quantum Tool Not Included
+
+- Page 95: Incorrect Information Regarding PIC and APIC
+
+- Page 109: Incorrect Caption In Figure 3-5
+
+- Page 180: SYS Command Does Not Write MS-DOS Boot Sectors
+
+- Page 203: Recovery Console Does Not Use RC4
+
+- Page 305: Error In Stage 1 In Figure 6-5
+
+- Page 334: Error In Point 3D Of CreateThread Flow
+
+- Page 335: Error In Point 6E Of CreateThread Flow
+
+- Page 347: Cross Reference Is Missing Page Number
+
+- Page 842: Applications Can Manage QoS, Not Use
+
+- CD-ROM: LiveKd Will Not Run From The CD
+
+MORE INFORMATION
+================
+
+Page xiv: Index Page Number Is Incorrect
+----------------------------------------
+
+On page xiv, change the Index page number from 873 to 871.
+
+
+Pages 18 &amp; 19: Quantum Tool Not Included
+----------------------------------------
+
+Table 1-2 on pages 18 and 19 shows a list of tools for viewing Windows 2000
+internals. A tool named Quantum is incorrectly listed as being included on the
+CD. The Quantum tool was not included on the CD, and is not available at this
+time.
+
+
+Page 95: Incorrect Information Regarding PIC and APIC
+-----------------------------------------------------
+
+The experiment on page 95 contains incorrect information about viewing PIC and
+APIC configurations. In the second paragraph, change:
+
+"... so this is the I/O APIC for processor 0:"
+
+To:
+"... so this is the local APIC for processor 0:"
+
+
+Page 109: Incorrect Caption In Figure 3-5
+-----------------------------------------
+
+On page 109, in Figure 3-5,
+
+Change:
+"Interrupt dispatch table"
+
+To:
+"Interrupt Request Level"
+
+
+Page 180: SYS Command Does Not Write MS-DOS Boot Sectors
+--------------------------------------------------------
+
+On page 180, in the third sentence of the first full paragraph, change:
+
+"You might have used the MS-DOS sys command to manually write MS-DOS boot sectors
+to disks."
+
+To:
+
+"In MS-DOS, you used the format command to write boot sectors to disks."
+
+
+Page 203: Recovery Console Does Not Use RC4
+-------------------------------------------
+
+The last paragraph on page 203 states that the Recovery Console (RC) uses RC4 to
+hash the password a user enters and compares it with a hash in the SAM. This is
+incorrect. RC hashes the password with MD5, uses the system key to encrypt the
+hash with RC4, then compares the encrypted hash with the encrypted hash stored
+in the SAM.
+
+Change:
+"Next, the Recovery Console (Spcmdcon.sys) locates the Administrator account
+password in the SAM, and in the final authentication step, the Recovery Console
+uses the RC4 hash algorithm--the same algorithm that the Windows 2000 logon
+process uses--to hash the password entered and compares the hash against the
+hashed password that the SAM stores."
+
+To:
+"Next, the Recovery Console (Spcmdcon.sys) takes the entered password, hashes it
+with the MD5 hash algorithm (the same algorithm that the Windows 2000 logon
+process uses), encrypts the hash with RC4 (Windows 2000 uses syskey encryption
+to encrypt the SAM), and compares the result with the encrypted password hash
+stored in the SAM."
+
+
+Page 305: Error In Stage 1 In Figure 6-5
+----------------------------------------
+
+On page 305, in Figure 6-5, in the Stage 1 box,
+
+Change:
+"Open EXE and create selection object"
+
+To:
+"Open EXE and create section object"
+
+
+Page 334: Error In Point 3D Of CreateThread Flow
+------------------------------------------------
+
+There is an error on page 334 in point 3D of the CreateThread flow.
+
+Change:
+"The thread's kernel stack is allocated from the nonpaged pool."
+
+To:
+"The thread's kernel stack is allocated,"
+
+
+Page 335: Error In Point 6E Of CreateThread Flow
+------------------------------------------------
+
+There is an error on page 335 in point 6E of the CreateThread flow.
+
+Change:
+"Finally, the main thread begins execution in user mode at the entry point to the
+image being run."
+
+To:
+"Finally, the main thread begins execution in user mode,"
+
+
+Page 347: Cross Reference Is Missing Page Number
+------------------------------------------------
+
+On page 347, in the section titled "Interrupt Level vs. Priority Levels," in the
+2nd sentence the cross reference "For a description of how Windows 2000 uses
+interrupt levels" should refer to page 96.
+
+Change:
+"For a description of how Windows 2000 uses interrupt levels, see page 000 in
+Chapter 3."
+
+To:
+"For a description of how Windows 2000 uses interrupt levels, see page 96 in
+Chapter 3."
+
+
+Page 842: Applications Can Manage QoS, Not Use
+----------------------------------------------
+
+The third paragraph on page 842 states that applications with administrator
+privileges can use QoS (Quality of Service). This is incorrect.
+
+Change:
+"(Only applications with administrative privileges can use QoS.)"
+
+To:
+"(Only applications with administrative privileges can manage QoS.)"
+
+
+CD-ROM: LiveKd Will Not Run From The CD
+---------------------------------------
+
+The Readme.txt included on the CD-ROM that accompanies this book indicates that
+the LiveKd program will run from the CD. However, it will not.
+
+You will need to copy the program to your hard drive for it to work properly.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: DEVBOOK WIN2000 W2K 0-7356-1021-5
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

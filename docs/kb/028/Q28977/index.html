@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q28977: /MBF Fails When Variable x Used in Random file PUT#1,,x | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q28977: /MBF Fails When Variable x Used in Random file PUT#1,,x" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/028/Q28977/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/028/Q28977/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/028/Q28977/","publisher":null,"image":null,"headline":"Q28977: /MBF Fails When Variable x Used in Random file PUT#1,,x","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q28977-mbf-fails-when-variable-x-used-in-random-file-put1x">Q28977: /MBF Fails When Variable x Used in Random file PUT#1,,x</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q28977
+Product(s): See article
+Version(s): 4.00 4.00b
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom buglist4.00 buglist4.00b fixlist4.50 | mspl13_basic
+Last Modified: 31-JAN-1990
+
+Programs compiled with the /MBF switch are not compatible with the new
+PUT syntax where a variable can be specified as the third parameter
+(PUT#n,,x).
+
+When a program compiled with the /MBF switch creates a random access
+file using the PUT statement with a variable in the third argument,
+the data file is not correctly read by subsequent programs which are
+also compiled with /MBF.
+
+Microsoft has confirmed this to be a problem in QuickBASIC Versions
+4.00 and 4.00b, and in Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS and MS OS/2 (buglist6.00 buglist6.00b). This problem
+was corrected in QuickBASIC Version 4.50 and in Microsoft BASIC
+Professional Development System (PDS) Version 7.00 for MS-DOS and MS
+OS/2 (fixlist7.00).
+
+This problem can be re-created by doing the following:
+
+1. Create a random access file with the following program:
+
+      ' MKTEST.BAS - Compiled with /MBF option
+
+      OPEN "r", 1, "test.dat"
+      FOR n = 1 TO 5
+      PUT #1, n, n
+      NEXT
+      CLOSE #1
+
+2. Read the data file TEST.DAT with the following program:
+
+       ' RDTEST.BAS - Compiled with /MBF option
+
+       OPEN "r", 1, "test.dat"
+       FIELD #1, 4 AS a$
+       FOR n = 1 TO 5
+       GET #1, n
+       PRINT CVS(a$)
+       NEXT
+       CLOSE #1
+
+If the following printed output does not appear from RDTEST.BAS, the
+output is incorrect:
+
+   1 2 3 4 5
+
+However, if RDTEST.BAS is not compiled with the /MBF option (while
+MKTEST.BAS is still compiled with /MBF), the output is correct.
+
+One workaround is to avoid using the new variable (third) parameter
+with the PUT statement. This implies that a FIELD statement must be
+used in conjunction with the older two-argument PUT syntax. The above
+MKTEST.BAS would be modified in the following manner (it must be
+compiled with the /MBF switch):
+
+   OPEN "r", 1, "test.dat"
+   FIELD #1, 4 AS a$
+   FOR i = 1 TO 5
+   LSET a$ = MKS$(i)
+   PUT #1, i
+   NEXT i
+   CLOSE #1
+   END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182958: PRB: RDO RowsAffected Property Does Not Return Correct Value | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182958: PRB: RDO RowsAffected Property Does Not Return Correct Value" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182958/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182958/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182958/","publisher":null,"image":null,"headline":"Q182958: PRB: RDO RowsAffected Property Does Not Return Correct Value","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182958-prb-rdo-rowsaffected-property-does-not-return-correct-value">Q182958: PRB: RDO RowsAffected Property Does Not Return Correct Value</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182958
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The RowsAffected property of RDO does not return the correct number of rows
+affected when using a stored procedure. Instead the RowsAffected property
+returns a zero or 1.
+
+CAUSE
+=====
+
+This behavior occurs when using Microsoft SQL Server driver (SQLSRV32.DLL)
+version 3.xx. In earlier versions of the SQL Server driver, the RDO RowsAffected
+property correctly returned the numbers of rows that were affected by the stored
+procedure.
+
+RESOLUTION
+==========
+
+To work around the problem described below, it is necessary to return the
+@@ROWCOUNT value manually at the end of the stored procedure and change the
+Visual Basic code so that it captures this value. To do this in the code below,
+comment out the SQL = "{Call RowsAffectedTest}" line. Then uncomment both the
+line SQL = "{? = Call RowsAffectedTest}" and the last line of the code. Run the
+program again to see that the correct number of rows affected is returned by the
+stored procedure's return value.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To reproduce this problem you will first need to run the stored procedure given
+below against the pubs database. Once that has been completed, follow the steps
+under Visual Basic Code.
+
+Stored Procedure:
+
+1. Run the following stored procedure against the Pubs database in SQL Server:
+
+        DROP PROCEDURE RowsAffectedTest
+        go
+
+        CREATE PROCEDURE RowsAffectedTest
+
+        AS
+
+        UPDATE AUTHORS SET ZIP = '99998'
+        RETURN @@ROWCOUNT
+
+        go
+
+Visual Basic Code:
+
+1. Start a new Visual Basic Standard EXE Project. Form1 is created by default.
+  Add a reference to Microsoft Remote Data Object 2.0.
+
+2. Add a CommandButton to the default form.
+
+3. Add the following code to the CommandButton's click event. You will need to
+  modify the connect string here to point to your SQL Server:
+
+        Dim SQL As String
+        Dim cn As rdoConnection
+        Dim qd As rdoQuery
+        Dim numberchanged As Integer
+
+        Set cn = rdoEnvironments(0).OpenConnection( _
+        dsname:="", _
+        Prompt:=rdDriverNoPrompt, _
+        Connect:="driver={SQL " &amp; _
+         "server};server=YourServerName;uid=sa;pwd=;database=pubs")
+
+        'Comment out this line when un-commenting the other
+        SQL = "{Call RowsAffectedTest}"
+
+        'Uncomment this line to get the return value
+        'SQL = "{? = Call RowsAffectedTest}"
+
+        Set qd = cn.CreateQuery("MyTest", SQL)
+
+        qd.Execute
+
+        Debug.Print "RDO RowsAffected Property Value: " &amp; qd.RowsAffected
+
+        'Uncomment this line to see the returned value
+        'Debug.Print "Returned Value From SP: " &amp; qd(0).Value
+
+4. Run the code and look at the RDO RowsAffected value. Note that it does not
+  return the correct value.
+
+Additional query words: kbrdo kbVBp400 kbVBp500 kbVBp600 kbdse kbDSupport kbVBp
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

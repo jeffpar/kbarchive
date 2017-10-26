@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119581: PC Win: Using Mail Over RAS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119581: PC Win: Using Mail Over RAS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119581/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119581/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119581/","publisher":null,"image":null,"headline":"Q119581: PC Win: Using Mail Over RAS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119581-pc-win-using-mail-over-ras">Q119581: PC Win: Using Mail Over RAS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119581
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+Version 3.2 of Microsoft Mail for Windows is supported over a Remote Access
+Service (RAS), although it will be much slower than if you access mail
+directly over a network. (Version 3.2 of Microsoft Mail Remote for Windows
+provides faster access.) If you need to use Mail for Windows over RAS, you
+should compose and read messages offline.
+
+To start Mail offline
+---------------------
+
+To start Mail offline, double-click the MMF file referred to in the
+OfflineMessages line of the MSMAIL.INI file (located in the Windows
+subdirectory).
+
+NOTE: With the Microsoft Mail for Windows NT, MSMAIL32.EXE, the command
+line option will work. However, if you double-click on the MMF in File
+Manager, the wrong name appears for the Mailbox only after trying to find
+the postoffice. If you are on the network, this should not take long. If
+you are using RAS, as this article indicates, this may take several
+minutes.
+
+Another method is to create a second icon for offline Mail by copying the
+Mail icon and changing the properties to include /f &lt;MMF name&gt;. For
+example:
+
+  c:\msmail\msmail.exe /f myname.mmf
+
+You can compose messages while working offline. Only the Personal Address
+Book (PAB) will be available while you work offline. To send and receive
+messages, exit and sign out and then double-click the (online) Mail icon to
+start Mail.
+
+To improve performance
+----------------------
+
+1. Move the mail message file (MMF) to your local computer. You can do this from
+  the Windows client by choosing Options from the Mail menu, then choosing
+  Server. Moving the MMF to your local machine requires SHARE.EXE to be loaded
+  on the machine. When the MMF is local, you are responsible for making regular
+  and frequent backups.
+
+2. If the Global Address List (GAL) is available at the postoffice, use
+  GALOnly=1 option in the MSMAIL section of the MSMAIL.INI file. If this entry
+  is set to 1, the Mail address book will display only the GAL and the PAB. If
+  this entry is set to 0, the Mail address book will display all possible
+  address lists and the PAB.
+
+3. Turn AutoCompress off by using No_Compress=1 in the MMF section of the
+  MSMAIL.INI file. This will disable background compression of the message
+  store. You can compress your MMF when you are working offline by holding down
+  the F5 key while you log in to Mail.
+
+4. Turn off Inbox Shadowing if you do not use other Mail clients such as the
+  MS-DOS or Remote client to read your mail. You can do this from the Windows
+  client by choosing Options from the Mail menu, choosing Server, and checking
+  the Keep Copy Of Inbox For Dialin Access option.
+
+5. Keep the number of messages in the Inbox to a minimum.
+
+6. Perform any message manipulation, such as moving a message to a different
+  folder or deleting a message, while you are working offline.
+
+7. Turn off the option to empty the wastebasket on exit by choosing Options from
+  the Mail menu and unchecking the Empty Wastebasket When Exiting option. To
+  empty the Wastebasket when you are working offline, select the Wastebasket
+  folder, select the first message and press CTRL+SHIFT+END to highlight all
+  the messages, and then press the DELETE key.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

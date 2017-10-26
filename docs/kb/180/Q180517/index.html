@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180517: XFOR: Customizing Dirsync Between Exchange and Notes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180517: XFOR: Customizing Dirsync Between Exchange and Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180517/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180517/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180517/","publisher":null,"image":null,"headline":"Q180517: XFOR: Customizing Dirsync Between Exchange and Notes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180517-xfor-customizing-dirsync-between-exchange-and-notes">Q180517: XFOR: Customizing Dirsync Between Exchange and Notes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180517
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 30-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The article includes earlier material from LinkAge Software Inc. Help files that
+are not shipped with the product.
+
+MORE INFORMATION
+================
+
+The Exchange Connector for Lotus Notes, new with Exchange 5.5, provides a
+component that synchronizes one or more Notes Name &amp; Address books with the
+Exchange directory. Synchronization is bi-directional and can include custom
+recipients as well as mailboxes. The names and addresses of distribution lists
+(Notes "groups") can be synchronized; however, the membership of the DL or group
+is not carried in the shadow entry, and all mail routing must be done on the
+system where the DL or group is maintained.
+
+As delivered, the product synchronizes a useful subset of the many attributes
+supported by the two directories. The purpose of this article is to explain how
+attributes are synchronized, and how you can customize the process to meet local
+requirements. Through customization, you can do either of the following:
+
+- Change the list of attributes that are synchronized between Notes and
+  Exchange, adding or removing attributes.
+
+- Change the way attributes are mapped between the systems.
+
+The synchronization process uses four control files, which are located in two
+subdirectories of the Connector's root directory. The UNC for the Notes
+Connector's root directory is:
+
+  \\&lt;servername&gt;\connect$\exchconn
+
+Important Note: If you edit these files using NotePad or another text editor,
+ensure that you save backup copies of the shipped files. In addition, do not use
+the [tab] key when making changes. All whitespace characters should be entered
+using the space key.
+
+Also, before you edit these files, ensure that directory synchronization is not
+active (for example, by shutting down the Notes Connector). If you add
+attributes to the synchronized schema or change any mapping rules for existing
+attributes, you will most likely need to do a full directory reload in one or
+both directions.
+
+Schema definition files determine the subset of the native directory schemas that
+are synchronized. Each line in the file that is not blank or a comment defines a
+single attribute. The first column is a short name or tag for a directory
+attribute used in the mapping rules (see below). The second column has the
+maximum field length for the purpose of directory synchronization. The total of
+all field lengths must not exceed approximately 9500. The third column contains
+the internal name for the attribute in the directory. See Appendix A for how to
+determine these names for Exchange and Notes. For the Notes Address Book, the
+schema definition includes a fourth column, which should be present but is not
+used by the Connector.
+
+The following definition of the Exchange directory schema is shipped in
+Dxamex\amap.tbl:
+
+  ACCOUNT     32 Assoc-NT-Account
+  COMPANY     64 Company
+  DEPARTMENT  64 Department
+  FULLNAME   128 Display-Name
+  FIRSTNAME   64 Given-Name
+  ALIAS       64 Mail-nickname
+  OFFICE      64 Physical-Delivery-Office-Name
+  LASTNAME    64 Surname
+  NOTESADDR  128 Proxy-Addresses(NOTES:)
+  USNCreated  12 USN-Created
+  Initials     5 Initials
+  Title       32 Title
+  Phone       20 Telephone-Office1
+  MobilePhn   20 Telephone-Mobile
+  Fax         20 Telephone-Fax
+
+The following definition of the Notes address book schema is shipped in
+Dxanotes\amap.tbl:
+
+  FULLNAME   220 FullName 1
+  MAILDOMAIN  31 MailDomain 2
+  COMPANY     64 CompanyName NULL
+  DEPARTMENT  64 Department NULL
+  FIRSTNAME   64 FirstName NULL
+  LASTNAME    64 LastName NULL
+  LOCATION   128 Location NULL
+  SHORTNAME    8 ShortName NULL
+  Initials     5 MiddleInitial NULL
+  Title       32 JobTitle NULL
+  Phone       20 OfficePhoneNumber NULL
+  MobilePhn   20 CellPhoneNumber NULL
+  Fax         20 OfficeFAXPhoneNumber NULL
+  ; do not change the following definitions
+  UNID        64 $$UNID NULL
+  DN         256 $$DN NULL
+  USNCreated  16 $$USN NULL
+
+Mapping rule files define how attributes from one schema are mapped to attributes
+in the other schema. Each non-blank, non-comment line is a rule that assigns a
+value to a single attribute in an entry in the target directory. The right-hand
+side of the rule is a string expression made up of string constants, numeric
+constants, references to attributes in the source directory, and built-in string
+manipulation functions.
+
+The following rules for mapping Notes attributes to Exchange attributes are
+shipped in Dxamex\mapnotes.tbl:
+
+  Alias = ISEQUAL( ShortName, "", SUBSTR( FullName, 1, 64 ), ShortName )
+  FullName = X500( FullName, "CN" )
+  FirstName = FirstName
+  LastName = LastName
+  Company = Company
+  Department = Department
+  Office = Location
+  Initials = Initials
+  ; change the following rule only with care
+  TA = "NOTES:" Strip( FullName, ";", "L", "R" ) "@" MailDomain
+  ; do not change the following rule
+  DN = UNID
+
+Note that the DN and TA attributes were not defined explicitly in the Exchange
+schema. These attributes are required for directory synchronization and are
+always synchronized. The TA (Target-Address) attribute is the Notes user's
+e-mail address and must be unique within the Exchange directory. Although Notes
+does not enforce the uniqueness of this name, for all practical purposes the
+name must be unique to allow the Notes router to reliably deliver mail to the
+right mailbox. The DN (Distinguished Name) mapping rule actually provides only a
+portion of the eventual full DN created for the Notes entry in Exchange. The
+full DN is constructed by concatenating the DN of the Import Container where
+Notes custom recipient entries are stored, with the DN fragment created by the
+mapping rule.
+
+The TA rule provides a good example of how the string expressions work. For
+example, if the Notes user's full name and mail domain are "Denise
+Graham/Sales/Acme Corp; Denise Graham; Graham" and "Acme-HQ", then this rule
+will result in an Exchange TA field containing "NOTES:Denise Graham/Sales/Acme
+Corp@Acme-HQ". See below for a full description of the built-in mapping
+functions that are available.
+
+The following rules for mapping Exchange attributes to Notes attributes are
+shipped in Dxanotes\mapmex.tbl:
+
+  FullName = Trim( Strip( NotesAddr, "@", "R" ), "B" )
+  MailDomain = Trim( Strip( NotesAddr, "@", "L" ), "B" )
+  ShortName = Alias
+  LastName = ISEQUAL( LastName, "", FullName, LastName )
+  FirstName = FirstName
+  Company = Company
+  Department = Department
+  Location = Office
+  Initials = Initials
+  ; do not change the following rules
+  UNID = "00000000-00000000-00000000-00000000"
+  USN = USNCreated
+  DN = DN
+
+Mapping Rules use a simple macro language that allows you to define how to create
+entries in different directory systems. An important part of this macro language
+is the mapping functions that manipulate a series of arguments you supply and
+return a result in the form of a string. Your mapping rules can combine this
+result with other constant strings and function calls to build up the overall
+result of the rule.
+
+Mapping functions operate on strings and numeric constants. Strings can be either
+attribute tags (the short names defined in the schema definition file) from the
+source directory, or string literals. A string literal is an actual sequence of
+characters enclosed in quotation marks, such as "Star Mart", ".", or even " "
+(three spaces). Note that you cannot use the real internal attribute names in
+mapping rules. You must use the attribute tags defined in the schema definition
+files.
+
+  FUNCTION_NAME( arguments )
+
+For example:
+
+     LEFT (Fullname, 4)
+
+If this function is coded in a mapping rule, it will return the left-most four
+characters of the contents of the Fullname field in the source directory.
+
+Functions can be combined with each other or with string literals, allowing you
+to create arbitrarily complex result strings. A rule and the resulting string it
+returns can be as long as 2,048 characters.
+
+The list below represents all the built-in mapping functions; more complete
+explanations and examples are provided later in this document.
+
+  AND()
+
+  Returns the concatenation of two non-null strings, or the null string if
+  either of the two strings specified is null.
+
+  CFGPARM()
+
+  Returns a value from the connector's INI file.
+
+  ISEQUAL()
+
+  Returns a configurable value, depending on whether or not two expressions are
+  equal.
+
+  LEFT()
+
+  Returns the left n characters of an expression, padded on the right if
+  necessary.
+
+  LOWER()
+
+  Converts a field to lower-case characters.
+
+  NAMEF()
+
+  Returns a person's first name or initial from a pre-formatted string.
+
+  NAMEL()
+
+  Returns a person's last name or initial from a pre-formatted string.
+
+  NAMEM()
+
+  Returns a person's middle name or initial from a pre-formatted string.
+
+  POS()
+
+  Determines the position of a particular string within an attribute.
+
+  PROPER()
+
+  Converts a name field to proper-name format.
+
+  REPLACE()
+
+  Converts a name field to proper-name format.
+
+  RIGHT()
+
+  Returns the right n characters of an expression, padded on the left if
+  necessary.
+
+  SUBSTR()
+
+  Returns a specified sub-string of a string, padded with extra characters if
+  necessary.
+
+  STRIP()
+
+  Locates the left-most or right-most occurrence of one string in another and
+  removes characters.
+
+  TRIM()
+
+  Returns a field with leading and/or trailing blanks removed.
+
+  UPPER()
+
+  Converts a field to upper-case characters.
+
+  WORD()
+
+  Returns a specified number of words from a string.
+
+  X500()
+
+  Extracts an attribute from an X.500-style hierarchical address.
+
+Mapping Functions: Detailed Descriptions
+
+  Notational conventions:
+
+  UPPERCASE type
+
+  used for function names
+
+  [ ]
+
+  used to indicate optional arguments. If an optional argument is omitted, its
+  default value is assumed.
+
+In the examples, each sample call is followed by the result it produces. Although
+the examples use only string literals as arguments, remember that each argument
+can itself be an arbitrarily complex string expression, including nested
+function calls.
+
+Syntax:
+
+  AND(exp1,exp2)
+
+Description:
+
+Returns the concatenation of two non-null strings, or the null string if either
+of the strings involved is null.
+
+Examples:
+
+  AND("A", "B" )  "AB"
+  AND ("", "B")  ""
+  AND("A", "")  ""
+
+Syntax:
+
+  CFGPARM( exp1[,exp2] )
+
+Description:
+
+CFGPARM returns the value of a parameter in the Exchconn.ini file. Exp1 specifies
+the parameter whose value is to be returned; exp2 specifies the section within
+the INI file. If the section is omitted, then the DXA's home section is used. If
+neither the section nor the parameter is found, the result is an empty string.
+
+Examples:
+
+  CFGPARM( "executable")  "lsdxamex.exe"
+  CFGPARM( "locale", "dxm")  "English"
+
+Syntax:
+
+  ISEQUAL( exp1, exp2, val1, val2 )
+
+Description:
+
+ISEQUAL returns the value of val1 if exp1 equals exp2, otherwise it returns the
+value of val2. ISEQUAL is not case-sensitive.
+
+Examples:
+
+  ISEQUAL( "remote", "remote", "R", "L")  "R"
+  ISEQUAL( "remote", "local", "R", "L")  "L"
+  ISEQUAL( "remote", "REMOTE", "R", "L")  "R"
+
+Syntax:
+
+  LEFT ( field, length, [, pad] )
+
+Description:
+
+LEFT returns the left-most length characters of field. If field has fewer than
+length characters, the result is padded on the right with the pad character. The
+default pad character is a blank.
+
+Examples:
+
+  LEFT ( "416-862-7148", "3" )  "416"
+  LEFT ( "triple", "9" )  "triple   "
+  LEFT ( "triple", "9", "x" )  "triplexxx"
+
+Syntax:
+
+  LOWER ( field )
+
+Description:
+
+LOWER returns the value of field with any upper-case letters converted to
+lower-case.
+
+Examples:
+
+  LOWER ( "LinkAge" )  "linkage"
+  LOWER ( "Bonnie" )  "bonnie"
+
+Syntax:
+
+  NAMEF ( field, [, style] )
+
+Description:
+
+If field contains a person's name in a specified format, NAMEF returns the
+person's first name or initial. Two styles are supported:
+
+1. The name is in the form "First Middle Last".
+
+2. The name is in the form "Last, First Middle".
+
+The default style is 1 if field does not contain a comma, 2 if it does.
+
+Initials or strings of initials are treated as first or middle names. If a name
+has only one part, it is considered both first and last name, regardless of the
+style.
+
+Examples:
+
+  NAMEF ( "Sarah Elizabeth Turner" )  "Sarah"
+  NAMEF ( "S. E. Turner" )  "S."
+  NAMEF ( "SE Turner" )  "SE"
+  NAMEF ( "Turner, Sarah E.", "2" )  "Sarah"
+  NAMEF ( "Madonna", "2" )  "Madonna"
+
+Syntax:
+
+  NAMEL ( field, [, style] )
+
+Description:
+
+If field contains a person's name in a specified format, NAMEF returns the
+person's last name. Two styles are supported:
+
+1. The name is in the form "First Middle Last".
+
+2. The name is in the form "Last, First Middle".
+
+The default style is 1 if field does not contain a comma, 2 if it does.
+
+Initials or strings of initials are treated as first or middle names. If a name
+has only one part, it is considered both first and last name, regardless of the
+style.
+
+Examples:
+
+  NAMEL ( "Sarah Elizabeth Turner" )  "Turner"
+  NAMEL ( "S. E. Turner" )  "Turner"
+  NAMEL ( "Sarah Turner" )  "Turner"
+  NAMEL ( "Turner, Sarah E.", "2" )  "Turner"
+  NAMEL ( "Madonna")  "Madonna"
+
+Syntax:
+
+  NAMEM( field, [, style] )
+
+Description:
+
+If field contains a person's name in a specified format, NAMEF returns the
+person's middle name or initial. Two styles are supported:
+
+1. The name is in the form "First Middle Last".
+
+2. The name is in the form "Last, First Middle".
+
+The default style is 1 if field does not contain a comma, 2 if it does.
+
+Initials or strings of initials are treated as first or middle names. If a name
+has only one part, it is considered both first and last name, regardless of the
+style. Anything that is not identified as a first or last name is considered a
+middle name.
+
+Examples:
+
+  NAMEM ( "Sarah Elizabeth Turner" )  "Elizabeth "
+  NAMEM ( "S. E. Turner" )  "E. "
+  NAMEM ( "Turner, Sarah E." )  "E. "
+  NAMEM ( "Turner, Sarah", "2" )  ""
+  NAMEM ( "Turner, Sarah E.", "2" )  "E."
+  NAMEM ( "Turner, Sarah E. M", "2" )  "E. M."
+
+Syntax:
+
+  POS ( field, target )
+
+Description:
+
+POS returns the position of the string target within field. If the target is not
+in the field, POS returns zero.
+
+Examples:
+
+  POS ( "Title: President", "Ti" )  "1"
+  POS ( "Title: President", ":" )  "6"
+  POS ( "Title: President", "Manager" )  "0"
+
+Syntax:
+
+  PROPER ( field )
+
+Description:
+
+PROPER returns the value of field with lower-case and upper-case letters
+converted to mixed-case, as if field were a proper name.
+
+Examples:
+
+  PROPER ( "linkage" )  "Linkage"
+  PROPER ( "john")  "John"
+  PROPER ( "o'malley" )  "O'Malley"
+
+Syntax:
+
+  REPLACE ( field, what [,with] )
+
+Description:
+
+This mapping function enables you to remove specific characters from an ID or
+replace selected characters with substitute characters. It scans field for any
+characters in the what string and replaces them with the corresponding character
+from the with string. If the with string is shorter or is not provided (meaning
+that one or more characters in what have no corresponding characters in with),
+those characters are elided (removed) from field.
+
+Examples:
+
+  REPLACE ("James Martin"," ","_")  "James_Martin"
+
+  REPLACE ("Sales &amp; Marketing Email Group"," ",".")
+  "Sales.&amp;.Marketing.Email.Group"
+  REPLACE ("Constantine Ra[circumflex i]ch'al", " [circumflex i]'", ".i")  "Constantine.Raichal"
+
+Syntax:
+
+  RIGHT ( field, length [,pad] )
+
+Description:
+
+RIGHT returns the right-most length characters of field. If field has fewer than
+length characters, the result is padded on the left with the pad character. The
+default pad character is a blank.
+
+Examples:
+
+  RIGHT ( "416-862-7148", "7" )  "62-7148"
+  RIGHT ( "416-862-7148", "8" )  "862-7148"
+  RIGHT ( "node", "5", "@" )  "@node"
+
+Syntax:
+
+  STRIP ( string1, string2, [scan-from-direction] , [strip-toward-
+  direction]),
+
+  where
+  [scan-from-direction] = "L" | "R"
+  [strip-toward-direction] = "L" | "R"
+
+Description:
+
+STRIP locates the left-most or right-most occurrence of string2 in string1 and
+removes characters from the right or left, including string2. The value for
+scan-from-direction determines whether STRIP looks for the left-most or
+right-most occurrence of string 2 in string 1; the value for strip-toward-
+direction determines whether characters are removed from the left or right of
+where string2 starts.
+
+If the either the scan-from-direction or the strip-toward-direction parameter is
+omitted, the value for the missing parameter is assumed to be the same as the
+one that is specified. If both these parameters are omitted, the default for
+both is assumed to be "R" (right).
+
+Examples:
+
+  STRIP ( "Senior Vice President", "Vice", "L" )  " President"   (Note the
+  leading space)
+  STRIP ( "Senior Vice President", "Vice", "R" )  "Senior "   (Note the
+  trailing space)
+  STRIP ( "Senior Vice President", " " , "L")  "Vice President"
+  STRIP ( "Senior Vice President", " ", "R" )  "Senior Vice"
+  STRIP ( "Senior Vice President", " ", "R", "L" )  "President"
+
+Syntax:
+
+  SUBSTR ( field, start [,length [, pad] ] )
+
+Description:
+
+SUBSTR returns the portion of field starting at position start, with length
+characters, padded with the pad character if necessary.
+
+The default for length is (length of string - start + 1). The default pad
+character is a blank.
+
+Examples:
+
+  SUBSTR( "Vice-President", "6" )  "President"
+  SUBSTR( "Vice-President", "2", "3" )  "ice"
+  SUBSTR( "Vice-President", "7", "9", "s" )  "residents"
+  SUBSTR( "Vice-President", "11", "4" )  "dent"
+
+Syntax:
+
+  TRIM ( field [,option] )
+
+Description:
+
+TRIM returns field with leading or trailing blanks removed. Option specifies
+whether to remove leading blanks (L) trailing blanks (R), or both (B).
+
+Examples:
+
+  TRIM ( "   Title   ", "B" )  "Title"
+  TRIM ( "   Title   ", "L" )  "Title   "
+  TRIM ( "   Title   ", "R" )  "   Title"
+
+Syntax:
+
+  UPPER ( field )
+
+Description:
+
+UPPER returns the value of field with any lower-case letters converted to
+upper-case.
+
+Examples:
+
+  UPPER ( "LinkAge" )  "LINKAGE"
+  UPPER ( "Bonnie" )  "BONNIE"
+
+Syntax:
+
+  WORD ( field, n [, m] )
+
+Description:
+
+WORD returns m blank-delimited words starting with the nth word in field. WORD
+returns an empty string if field contains fewer than n words. The default value
+for m is 1.
+
+Examples:
+
+  WORD ( "one of a kind", "1" )  "one"
+  WORD ( "one of a kind", "1", "2" )  "one of"
+  WORD ( "one of a kind", "3", "2" )  "a kind"
+  WORD ( "one of a kind", "5" )  ""
+  WORD ( "Sarah E. Turner", "3" )  "Turner"
+
+Syntax:
+
+  X500 ( address, field name [,index] )
+
+Description:
+
+X500 returns the contents of the named field for the specified address. If the
+address has two or more components with the same field name, the index value is
+used to specify the correct one.
+
+The following X.500-type addresses are supported:
+
+- Microsoft Exchange Canonical (for example, /o=org/ou=site[/cn=container])
+
+- Lotus Notes Canonical (for example, cn=name/ou=site./o=org/c=country)
+
+- Lotus Notes Abbreviated Canonical (for example, name/site/org/country)
+
+For example, suppose the value of the DN field is that provided in the sample
+X500 address below:
+
+  /o=StarMart/ou=Sales Office/cn=Recipients/cn=Notes_Users
+
+The function would provide the following result:
+
+  X500 ( DN, "ou")  "Sales Office"
+  X500 ( DN, "o")  "StarMart"
+  X500 ( DN, "cn", 2)  "Notes_Users"
+
+Appendix: How to determine the internal name of directory attributes
+--------------------------------------------------------------------
+
+Both Exchange and Notes allow you to inspect internal names of directory
+attributes and inspect detailed schema and content information for specific
+attributes of a directory entry.
+
+For the Exchange directory, run the Exchange Administrator with the /raw option.
+Use shift-enter to view the attributes of a recipient object. You will be able
+to view the detailed schema for recipients, including the internal directory
+names for recipient attributes.
+
+For the Notes address book, right-click the mouse on an address book entry that
+contains the attributes of interest, and select Document Properties. Select the
+Fields tab, and you will see a list box that shows you the internal directory
+names for the attributes of the selected entry. You can also display the
+contents of each attribute using this tab.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

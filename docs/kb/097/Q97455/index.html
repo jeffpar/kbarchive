@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97455: MS-DOS: Making a Bootable DoubleSpace Floppy Disk | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97455: MS-DOS: Making a Bootable DoubleSpace Floppy Disk" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97455/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97455/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97455/","publisher":null,"image":null,"headline":"Q97455: MS-DOS: Making a Bootable DoubleSpace Floppy Disk","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97455-ms-dos-making-a-bootable-doublespace-floppy-disk">Q97455: MS-DOS: Making a Bootable DoubleSpace Floppy Disk</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97455
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the steps necessary to make a bootable DoubleSpace-
+compressed floppy disk.
+
+NOTE: This procedure works on 720K, 1.2-MB, and 1.44-MB disks only.
+
+MORE INFORMATION
+================
+
+Steps to Create a Bootable Floppy Disk with DoubleSpace
+-------------------------------------------------------
+
+1. Format a floppy disk in drive A using the following command:
+
+     format a: /s
+
+2. Run DoubleSpace and compress the floppy disk in drive A. For example, type
+  "dblspace /compress a:" (without the quotation marks) at the MS-DOS command
+  prompt, and then press ENTER.
+
+3. After DoubleSpace finishes compressing the disk, it mounts the disk. Run
+  DBLSPACE /LIST to determine which drive is the host drive.
+
+4. Delete the READTHIS.TXT from the host drive. For example, type "del
+  h:\readthis.txt" (without the quotation marks) at the MS-DOS command prompt
+  and then press ENTER.
+
+5. Copy COMMAND.COM to the host drive. For example, type "copy c:\command.com
+  h:\" (without the quotation marks) at the MS-DOS command prompt and then
+  press ENTER.
+
+6. Using MS-DOS Editor, create a DBLSPACE.INI file on the host drive with the
+  following lines in it:
+
+      MaxRemovableDrives=&lt;number of floppy drive on your system&gt;
+     FirstDrive=&lt;one letter greater than the last drive letter used&gt;
+     LastDrive=&lt;five letters greater than the last drive letter used&gt;
+     MaxFileFragments=120
+     ActivateDrive=&lt;host drive&gt;,A0
+
+  For example:
+
+     MaxRemovableDrives=2
+     FirstDrive=D
+     LastDrive=H
+     MaxFileFragments=120
+     ActivateDrive=G,A0
+
+  NOTE: DBLSPACE.BIN reads the DBLSPACE.INI file from the floppy disk, and
+  ignores any DBLSPACE.INI files on the hard disk drive. Therefore, any
+  ACTIVATEDRIVE= lines in the DBLSPACE.INI file on the hard disk drive aren't
+  processed, and the corresponding compressed volume file (CVF) on the hard
+  disk drive isn't mounted. Thus, data stored in that CVF is inaccessible. To
+  work around this situation and ensure access to other compressed drives, add
+  an additional ACTIVATEDRIVE= line for each compressed drive to the
+  DBLSPACE.INI file on the floppy disk. For example:
+
+     MaxRemovableDrives=2
+     FirstDrive=D
+     LastDrive=H
+     MaxFileFragments=120
+     ActivateDrive=G,A0
+     ActivateDrive=H,C0
+
+  WARNING: If you edit the DBLSPACE.INI file, be sure you do not have
+  FirstDrive= set to a letter used by a physical or logical drive (such as
+  drive C). Also, do not set the LastDrive= and FirstDrive= statements to drive
+  letters that are more than 13 letters apart.
+
+7. Delete the MS-DOS system files on drive A. (These files are not required on
+  the compressed volume.) To do this, type the following at the MS-DOS command
+  prompt, pressing ENTER after each line:
+
+  " deltree a:\dblspace.bin
+  deltree a:\msdos.sys
+  deltree a:\io.sys " (without the quotation marks)
+
+  The disk is now bootable. The CVF on the floppy disk now mounts automatically
+  when you restart your computer with this disk in drive A.
+
+Additional query words: 6.00 double space
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

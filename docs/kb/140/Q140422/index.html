@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140422: Domain Synchronization Over a Slow WAN Link | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140422: Domain Synchronization Over a Slow WAN Link" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140422/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140422/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140422/","publisher":null,"image":null,"headline":"Q140422: Domain Synchronization Over a Slow WAN Link","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140422-domain-synchronization-over-a-slow-wan-link">Q140422: Domain Synchronization Over a Slow WAN Link</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140422
+Product(s): Microsoft Windows NT
+Version(s): 3.5 3.51 4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT Server has a parameter that can be used to increase performance of
+replication across slow links. The parameter is called the ReplicationGovernor.
+
+A backup domain controller (BDC) uses the ReplicationGovernor registry value to
+increase the performance of domain synchronization over a slow WAN link.
+
+IMPORTANT: The ReplicationGovernor parameter is supported only on Windows NT
+Server 3.5 or later.
+
+MORE INFORMATION
+================
+
+The ReplicationGovernor defines both the size of the data transferred on each
+call to the primary domain controller (PDC) and the frequency of those calls.
+Adjusting the ReplicationGovernor parameter works in two ways:
+
+- It reduces the size of the buffer used on each call from the BDC to the PDC,
+  ensuring that a single call does not occupy the WAN link for too long.
+
+- It causes NetLogon essentially to "sleep" between calls, allowing other
+  applications to access the WAN link between calls to the PDC.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system- wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+You can add the ReplicationGovernor parameter to the registry of a BDC under
+\HKEY_LOCAL_MACHINE subtree under the following subkey:
+
+  \SYSTEM\CurrentControlSet\Services\Netlogon\Parameters
+
+To add this parameter, assign a type of REG_DWORD and a value from zero to 100
+(the default is 100). This value defines a percentage for both the amount of
+data transferred on each call to the PDC and the frequency of those calls.
+
+For example, if you set the ReplicationGovernor value to 50 percent, it will use
+a 64KB buffer rather than the default 128 KB buffer. In addition, the BDC will
+have an outstanding synchronization call on the net for only a maximum of 50
+percent of the time.
+
+CAUTION: Care must be taken in setting this value, because if the
+ReplicationGovernor is set too low, synchronization might never complete. A
+value of zero will cause NetLogon never to synchronize, and the user account
+database can become completely out of sync.
+
+IMPORTANT: This parameter must be set individually on each BDC and should only be
+used when the PDC is a computer running Windows NT Server 3.5 or later.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

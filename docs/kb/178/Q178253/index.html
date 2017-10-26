@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178253: SNA Server Access Violation in function s1pcsgm. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178253: SNA Server Access Violation in function s1pcsgm." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178253/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178253/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178253/","publisher":null,"image":null,"headline":"Q178253: SNA Server Access Violation in function s1pcsgm.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178253-sna-server-access-violation-in-function-s1pcsgm">Q178253: SNA Server Access Violation in function s1pcsgm.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178253
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If one or more SNA Server connections are configured with "Supports Dynamic
+Remote APPC LU Definition", the SNA Server may encounter an unexpected access
+violation. This will cause the following symptoms:
+
+- The SNA Server service will end, coinciding with the following event logged
+  to the Windows NT application event log:
+
+  Event ID: 624
+  Source: SNA Server
+  Description: Creating dump file SNADUMP.LOG for SNASERVR.EXE.
+
+- The following log entry will be created in the &lt;ntroot&gt;\drwtsn32.log
+  file, indicating an access violation in snaservr.exe, in function s1pcsgm:
+
+  
+
+  Application exception occurred:
+       App: snaservr.DBG (&lt;process ID&gt;)
+       Exception number: c0000005 (access violation)
+
+  State Dump for Thread Id 0x8d
+
+  eax=00f50000 ebx=00000207 ecx=00000000 edx=00000009 esi=00e40000 edi=00000000
+  eip=002b7879 esp=00e4fe98 ebp=001d0008 iopl=0 nv up ei pl nz na po nc
+  cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000 efl=00000206
+
+  function: s1pcsgm
+       002b7860 668b4c2404       mov     cx,[esp+0x4]  ss:0149e7bc=????
+       002b7865 56               push    esi
+       002b7866 6633f6           xor     si,si
+       002b7869 57               push    edi
+       002b786a 0fbfc1           movsx   eax,cx
+       002b786d 8d0440           lea     eax,[eax+eax*2] 
+                   ds:00f50000=01110100
+       002b7870 c1e003           shl     eax,0x3
+       002b7873 0305a8043400     add     eax,[sct (003404a8)]
+                   ds:003404a8=00f50000
+  FAULT -&gt;002b7879 8a50ea           mov     dl,[eax-0x16] ds:0159e922=??
+
+  *----&gt; Stack Back Trace &lt;----*
+
+  FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+  00e4fe9c 002b232a 00000000 00e4feca 001defe0 001dbbb0 snaservr!s1pcsgm  
+  00e4ff04 002b9ff1 00000000 00000000 00010018 00000000 snaservr!s1pcprlu  
+  00e4ff54 002ba58f 000000ff 00000004 0000003d 00000000 snaservr!s1practs  
+  00e4ff68 002d8bcc 0030d042 0000001e 00e4ffec 00143248 snaservr!s1prmrcv  
+  00e4ff6c 0030d042 0000001e 00e4ffec 00143248 00000002 snaservr!s1pgdisp  
+  00e4ff88 0030d7f5 009811c0 00000002 00143248 77fac8a0 snaservr!sbpsched  
+  00e4ff8c 009811c0 00000002 00143248 77fac8a0 00143240 snaservr!sbpgmain  
+  00e4ffa8 77e3167a 00000002 00143248 77e50000 77f46c2e snasvc!ServiceMainFunction
+
+CAUSE
+=====
+
+The SNA Server was attempting to access an invalid array element which caused
+the access violation.
+
+
+WORKAROUND
+==========
+
+Obtain the hotfix described below, or reconfigure the connection so that it no
+longer supports dynamic definition of Remote APPC LU's.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0
+(including SP1 and SP2).
+
+This problem was corrected in the latest SNA Server version 3.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

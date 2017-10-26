@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q28981: Compiled with BC, SHARED Long Integer Arrays Are Wrong in SUB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q28981: Compiled with BC, SHARED Long Integer Arrays Are Wrong in SUB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/028/Q28981/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/028/Q28981/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/028/Q28981/","publisher":null,"image":null,"headline":"Q28981: Compiled with BC, SHARED Long Integer Arrays Are Wrong in SUB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q28981-compiled-with-bc-shared-long-integer-arrays-are-wrong-in-sub">Q28981: Compiled with BC, SHARED Long Integer Arrays Are Wrong in SUB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q28981
+Product(s): See article
+Version(s): 4.00 4.00b
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom buglist4.00 buglist4.00b fixlist4.50 | mspl13_basic
+Last Modified: 31-JAN-1990
+
+In the programs below, which are compiled with BC /o/d or BC, using
+SHARED long integer arrays in a subprogram causes variables or array
+elements to be set at zero (0) or incorrect negative values.
+
+Microsoft has confirmed this to be a problem in QuickBASIC Versions
+4.00 and 4.00b, and in Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS and OS/2 (buglist6.00, buglist6.00b). This problem
+was corrected in QuickBASIC Version 4.50 and in Microsoft BASIC
+Professional Development System (PDS) Version 7.00 for MS-DOS and MS
+OS/2 (fixlist7.00).
+
+You can work around this problem by placing line numbers in the
+program.
+
+Note: This problem does not occur in QuickBASIC Versions 1.x, 2.x, and
+3.x because these versions do not support long integers.
+
+The following two programs demonstrate this problem:
+
+Example 1
+---------
+
+DECLARE SUB tvf (j%, tm$, w&amp;)  'Order of arguments does not alter results.
+DEFLNG T
+'Declaring the array to be $STATIC or $DYNAMIC makes no difference.
+DIM SHARED te6(2), te5(2), te4(2), te2(2)
+te2(2) = 100&amp;: te4(2) = 10000&amp;: te5(2) = 100000: te6(2) = 1000000
+DO
+  PRINT "Enter up to 8 digits"
+  LINE INPUT a$
+  CALL tvf(2, a$, w&amp;)            'If the 2 is not passed, then it works.
+  PRINT "Value of that is "; w&amp;
+  LOOP UNTIL a$ = ""
+END
+
+SUB tvf (j%, tm$, w&amp;) STATIC            'Same problems if this is a function.
+    PRINT te6(j%), te5(j%), te4(j%), te2(j%)     'This line always prints OK.
+    q$ = RIGHT$("00000000" + tm$, 8)
+    t = VAL(MID$(q$, 1, 2)) * te6(j%)  'If these lines are divided up, it
+    t = t + VAL(MID$(q$, 3, 1)) * te5(j%)  'makes no difference, but if there
+    t = t + VAL(MID$(q$, 4, 1)) * te4(j%)  'are line numbers on these lines,
+    t = t + VAL(MID$(q$, 5, 2)) * te2(j%)  'IT WILL WORK!
+    PRINT te6(j%), te5(j%), te4(j%), te2(j%)
+    w&amp; = t + VAL(MID$(q$, 7, 2))
+END SUB
+
+Example 2
+---------
+
+'-------The program includes 1 subprogram
+DECLARE SUB logtran (ntn!)
+OPTION BASE 1
+COMMON SHARED cashp&amp;, D&amp;(), cash$, d1$
+DIM d&amp;(1)
+OPEN "dt.dat" FOR RANDOM AS #1
+FIELD #1, 8 AS cash$, 4 AS d1$
+d&amp;(1)=0
+cashp&amp; = 0
+ntn! =1
+CALL logtran (ntn!)
+END
+
+SUB logtran (ntn!) STATIC
+PRINT "ntn!:";ntn!
+LSET cash$ = MKD$(CDBL(cashp&amp;))
+PRINT "ntn!:";ntn!
+LSET d1$=MKS$(CSNG(d&amp;(1)))
+PRINT "ntn!";ntn!
+CLOSE
+END SUB
+
+Output for the example 2:
+
+ntn! 1
+ntn! 1
+ntn! -5.965761E-30
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

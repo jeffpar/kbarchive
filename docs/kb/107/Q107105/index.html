@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107105: PROFS: File Format of Message Sent from PROFS to MS Mail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107105: PROFS: File Format of Message Sent from PROFS to MS Mail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107105/","publisher":null,"image":null,"headline":"Q107105: PROFS: File Format of Message Sent from PROFS to MS Mail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107105-profs-file-format-of-message-sent-from-profs-to-ms-mail">Q107105: PROFS: File Format of Message Sent from PROFS to MS Mail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107105
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.1,3.2,3.3,3.4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to IBM PROFS and OfficeVision, versions 3.1, 3.2, 3.3, 3.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Messages sent from Microsoft Mail Gateway to IBM PROFS and OfficeVision to
+Microsoft Mail for PC Networks are routed through the RSCS and secondary RSCS
+machines to the MSGATE VMID's reader.
+
+The format of the received message is:
+
+========================================================================
+MSG:FROM: JOHNDOE --VMSP6    TO: ADMIN   --PROFS30  05/13/93  22:27:06
+To: ADMIN   --PROFS30
+
+FROM:
+Subject: Testing rdr file
+This is a test of the reader file
+This is a test.
+
+     Testing rdr file
+
+MORE INFORMATION
+================
+
+The sender's and recipient's addresses are in the first two lines.
+
+To examine a message in this format, extract it from the VM side of the PROFS
+gateway using these steps:
+
+1. Stop host access by typing "HX" (without the quotation marks).
+
+2. Send a message from a PROFS/OV account.
+
+3. Check the MSGATE ID's reader and receive the file.
+
+This is a normal text file and can be examined for any problems.
+
+
+Additional query words: 3.10 3.1 3.20 3.2 3.30 3.3 3.40 3.4
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320 kbMailGateIBMPROFS310 kbMailGateIBMPROFS330 kbMailGateIBMPROFS340
+Version           : :3.1,3.2,3.3,3.4
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

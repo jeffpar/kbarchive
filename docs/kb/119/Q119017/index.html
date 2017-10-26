@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119017: PC DirSync: Err Msg: Possible Database Corruption Detected… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119017: PC DirSync: Err Msg: Possible Database Corruption Detected…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119017/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119017/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119017/","publisher":null,"image":null,"headline":"Q119017: PC DirSync: Err Msg: Possible Database Corruption Detected…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119017-pc-dirsync-err-msg-possible-database-corruption-detected">Q119017: PC DirSync: Err Msg: Possible Database Corruption Detected…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119017
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the T1 phase of automatic directory synchronization (Dir-Sync), or when
+you manually run the requestor transmit process REQMAIN -T, the following error
+messages may be displayed in the DIRSYNC.LOG file:
+
+  Status Microsoft (R) Mail DirSync Requestor V3.2
+  Warning[ 2] Error opening file: REQTRANS
+  Fatal [ 40] Possible database corruption detected: REQTRANS
+  Warning[152] Failure to transmit requestor updates
+  Status Requestor process failed.
+
+CAUSE
+=====
+
+This error occurs when the REQTRANS.GLB transaction file is missing from the GLB
+subdirectory on the postoffice.
+
+RESOLUTION
+==========
+
+You can create a zero-byte REQTRANS.GLB file; however, this is not a complete
+resolution to this problem. The resolution depends on whether the postoffice is
+a Dir-Sync server postoffice or a requestor postoffice. For additional
+information, please see the following article in the Microsoft Knowledge Base:
+
+  Q119014 How to Recover from Missing REQTRANS.GLB File
+
+MORE INFORMATION
+================
+
+Other Symptoms Associated with a Missing REQTRANS.GLB File
+----------------------------------------------------------
+
+With REQTRANS.GLB missing from the GLB subdirectory on the postoffice, if you try
+to add a user via the Mail Administrator program by selecting Local- Admin,
+Create, the following error message will result:
+
+  Notice 40-Error in sending updated users and groups
+
+Also, if you try to use the IMPORT utility (IMPORT.EXE) to add a user while
+REQTRANS.GLB is missing, the following error message results:
+
+  Warning[ 2] Error opening file: REQTRANS
+
+When you run the Mail Administrator program and select Config, Dir-Sync,
+Requestor, Export with REQTRANS.GLB missing, NO error message will be displayed
+and the transactions will not be placed in the transaction file. The REQCONF.GLB
+file is modified and will reflect this date as the last export date, even
+through the export was not successful.
+
+Additional query words: 3.20 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN350
+Version           : WINDOWS:3.2,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

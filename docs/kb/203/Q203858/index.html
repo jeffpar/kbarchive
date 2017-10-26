@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q203858: HOWTO: Use the HrMailboxLogon Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q203858: HOWTO: Use the HrMailboxLogon Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/203/Q203858/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/203/Q203858/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/203/Q203858/","publisher":null,"image":null,"headline":"Q203858: HOWTO: Use the HrMailboxLogon Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q203858-howto-use-the-hrmailboxlogon-function">Q203858: HOWTO: Use the HrMailboxLogon Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q203858
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): kbdocfix kbEDK kbMsg kbVC kbEDK550 kbGrpDSMsg kbDSupport
+Last Modified: 26-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Exchange Development Kit (EDK) HrMailboxLogon function takes a pair of
+parameters for both the server name and the mailbox name. The documentation on
+the HrMailboxLogon function is misleading.
+
+According to the documentation on the HrMailboxLogon function, both the message
+store (lpszMsgStoreDN) and the mailbox (lpszMailboxDN) parameters are
+distinguished names, in the form of the following:
+
+  /O=Organization/OU=Site/CN=Servers/CN=ServerName/CN=NULL
+  /O=Organization/OU=Site/CN=Container/CN=MailboxName
+
+However, the last leaf of the message store name parameter cannot be a NULL
+value. If the HrMailboxLogon function is executed as the documentation suggests,
+it fails with the following error message:
+
+  0x80004005: Unspecified Error
+
+MORE INFORMATION
+================
+
+To work around this behavior, the last leaf of the message store must have a
+string that identifies the store name to be used (for example, "Microsoft
+Private MDB" or "Microsoft Public MDB"). The lpszMsgStoreDn must be in the
+following form:
+
+  /O=Organization/OU=Site/CN=Servers/CN=ServerName/CN=Microsoft Private MDB
+  or
+  /O=Organization/OU=Site/CN=Servers/CN=ServerName/CN=Microsoft Public MDB
+
+The following code demonstrates how to use the HrMailboxLogon to log on a user's
+mailbox, and then return a pointer to this store.
+
+Sample Code
+-----------
+
+In the following code, it is assumed that you have a valid lpSession and pointer
+to the default message store lpmdbDefault (the user's inbox), and that
+szMailboxDN is already set.
+
+     (...)
+     // Gets server distinguished name from current session - from edkutils.h
+     hr = HrGetServerDN( lpSession, &amp;lpszServerDN );
+     if ( hr != S_OK ) {
+         goto CleanUp;
+     }
+     strcpy(szServerDN, lpszServerDN);
+     strcat(szServerDN, "/cn=Microsoft Private MDB");
+     // Open user's mailbox using distinguished names
+     hr = HrMailboxLogon(
+             lpSession,
+             lpmdbDefault,
+             szServerDN,
+             szMailboxDN,
+             &amp;lpmdbMailbox);
+     if ( hr != S_OK ) {
+         goto CleanUp;
+     }
+     (...)
+
+REFERENCES
+==========
+
+For additional information about HrMailboxLogon code samples, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q194627 HOWTO: Open Mailboxes with Privileged Access
+
+  Q200160 HOWTO: Loop Through Mailboxes on Exchange Using GetMailboxTable
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbEDK kbMsg kbVC kbEDK550 kbGrpDSMsg kbDSupport 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

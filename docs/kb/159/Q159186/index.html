@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159186: XCON: Mail Sent Outside Site via X.400 Takes Illogical Route | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159186: XCON: Mail Sent Outside Site via X.400 Takes Illogical Route" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159186/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159186/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159186/","publisher":null,"image":null,"headline":"Q159186: XCON: Mail Sent Outside Site via X.400 Takes Illogical Route","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159186-xcon-mail-sent-outside-site-via-x400-takes-illogical-route">Q159186: XCON: Mail Sent Outside Site via X.400 Takes Illogical Route</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159186
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Mail destined outside of the site via X.400 Connector may be rerouted out to
+another seemingly "illogical" and higher cost site, and then routed back into
+the site with the X.400 Connector to the target site. The message then routes
+out the appropriate connector.
+
+Additionally, the GWART0.MTA within a site will list a redundant, "circular"
+route back into itself similar to the following:
+
+  c=&lt;US&gt;
+   a=&lt;SOME-NAME&gt;
+    p=&lt;COMPANY&gt;
+          ROUTE1, 0001
+          /O=SOME-NAME/OU=NEW-YORK/../CN=ROUTE1
+
+          SITE CONNECTOR (UNITED KINGDOM), 0002
+          /O=SOME-NAME/OU=NEW-YORK/../CN=SITE CONNECTOR (UNITED KINGDOM)
+          /O=SOME-NAME/OU=UNITED KINGDOM/../CN=SITE CONNECTOR (NEW-YORK)
+
+According to the above GWART taken from a server in the NEW-YORK site, messages
+addressed to the address space "c=US;a=SOME-NAME;p=COMPANY;..." have two
+possible routes: the lowest cost is via ROUTE1, with a cost of 0001; the second
+route is a site connector to the United Kingdom, but it is a circular route that
+routes out to UNITED KINGDOM, and returns back into the NEW-YORK site.
+
+In extreme cases, this may contribute to slow mail delivery, MTA queue backlogs,
+and possibly non-delivery reports (NDRs).
+
+CAUSE
+=====
+
+The routing calculation logic calculates all possible routes, including circular
+routes. The algorithm then filters out the circular routes, removing them from
+the routing information database (RID). There was a bug in the filtering process
+that resulted in a failure to remove the last circular route.
+
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. On the Configuration menu, click Site Addressing.
+
+2. Clear the "Share address space with other X.400 systems" check box.
+
+NOTE: If Microsoft Exchange Server is deployed in a messaging environment where
+it must coexist with an existing X.400 message handling system (MHS) and share
+the same address space, the "Share address space" check box must be selected. If
+Microsoft Exchange Server must share an existing address space, there is no
+workaround.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 4.0.
+This problem was corrected in the latest Microsoft Exchange 4.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+One server in a site is "responsible" for rebuilding the RID for the site. The
+server maintaining this responsibility will have its Distinguished Name (DN)
+listed under raw properties for "Configure, Site Addressing, Rid- Server".
+
+MTAs within the site use an image of this routing table in memory and maintain
+two copies of it in text files on disk
+
+NOTE: Do not modify these files. Editing the following files will not affect
+routing):
+
+  \EXCHSRVR\MTADATA\GWART0.MTA and GWART1.MTA.
+
+GWART0 is a copy of what is currently in use, and GWART1 is a copy of the RID
+prior to the current one. The RID is automatically rebuilt approximately 10
+minutes after any change affecting routing replicates within the site.
+Additionally, it is rebuilt according to the schedule specified under
+"Configuration, Site Addressing, Routing Calculation Schedule" and can be forced
+to rebuild under: "Configuration, Site Addressing, Routing, Recalculate Routing"
+or "&lt;servername&gt;, Message Transfer Agent, Recalculate Routing."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

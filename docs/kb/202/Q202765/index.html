@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q202765: XIMS: Using IMS Mail: &quot;503 Sender Already Specied&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q202765: XIMS: Using IMS Mail: &quot;503 Sender Already Specied&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/202/Q202765/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/202/Q202765/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/202/Q202765/","publisher":null,"image":null,"headline":"Q202765: XIMS: Using IMS Mail: &quot;503 Sender Already Specied&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q202765-xims-using-ims-mail-503-sender-already-specied">Q202765: XIMS: Using IMS Mail: "503 Sender Already Specied"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q202765
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Occasionally, messages from Exchange Server through the Internet Mail Service
+(Internet Mail Connector in version 4.0) to a remote SMTP e-mail domain are
+rejected. A non-delivery report (NDR) is returned to the sender with the
+following error message:
+
+  503 Sender already specified.
+
+CAUSE
+=====
+
+Exchange Server makes connections to remote SMTP mailers or relay hosts to
+deliver SMTP mail. If more than one message is queued to a remote domain,
+Exchange Server can send multiple messages during a single connection. If the
+remote SMTP server is not RFC-compliant, it improperly rejects the delivery of a
+second message from the Internet Mail Service during the course of a single
+connection. Then it sends the NDR mentioned above.
+
+The sequence of events is as follows:
+
+- Exchange Server's Internet Mail Service finishes the first message and
+  receives a "250 OK" acknowledgement that the message was accepted.
+
+- The Internet Mail Service then attempts to send the second message in this
+  same connection by sending the MAIL FROM command.
+
+- The remote host improperly rejects the message with the "503 Sender already
+  specified" error message. This is not RFC 821 compliant according to section
+  4.1.1.
+
+WORKAROUND
+==========
+
+Although this is a problem with the remote system, you can correct the problem
+by setting the Internet Mail Service to send only one message for each
+connection. This is a global setting that affects the performance of the
+Internet Mail Service because it no longer sends multiple messages during a
+single connection to any remote domain. This may be a minor issue for some
+e-mail networks and a preferable option to the above problem.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q218617: How to Troubleshoot CD-ROM or DVD-ROM Read Issues | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q218617: How to Troubleshoot CD-ROM or DVD-ROM Read Issues" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/218/Q218617/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/218/Q218617/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/218/Q218617/","publisher":null,"image":null,"headline":"Q218617: How to Troubleshoot CD-ROM or DVD-ROM Read Issues","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q218617-how-to-troubleshoot-cd-rom-or-dvd-rom-read-issues">Q218617: How to Troubleshoot CD-ROM or DVD-ROM Read Issues</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q218617
+Product(s): Microsoft Home Miscellaneous Products
+Version(s): 
+Operating System(s): 
+Keyword(s): kbenv kbhw kbimu kbHardware
+Last Modified: 08-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- the operating system: Microsoft Windows 95 
+- the operating system: Microsoft Windows 98 
+- the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can troubleshoot CD-ROM or DVD-ROM optical disc
+read issues. The steps in this article generally apply to compact disc
+recordable (CD-R) and compact disc re-writable (CD-RW) drives. Often a drive can
+read most but not all discs, but this alone does not indicate that a disc is
+bad. The drive could be having a marginal problem.
+
+You may encounter various disc read errors when you attempt to setup or start a
+program, when you switch discs while using programs with multiple discs, or when
+a program attempts to read data from another area on the disc. You may receive a
+variety of errors indicating problems reading the disc or copying specific
+files. You may receive messages similar to the following:
+
+  &lt;program&gt; is not a valid win32 application.
+
+  -or-
+
+  A device attached to the system is not functioning.
+
+  -or-
+
+  A required file kernl32.dll was not found.
+
+  -or-
+
+  Not enough memory to run this application.
+
+  -or-
+
+  Cannot find the file(s) needed to start this application.
+
+  -or-
+
+  Error Reading From File [Installer Error 1305]
+
+  -or-
+
+  Unable to find Setup.exe
+
+  -or-
+
+  CDR-101
+
+  -or-
+
+  Unable to read drive D:
+
+  -or-
+
+  Insufficient Memory
+
+A Disc read problem may also trigger Illegal Operations, including General
+Protection Faults, Invalid Page Faults or "encountered a problem" messages
+(Watson errors). You may receive messages similar to the following:
+
+  Disc label does not appear in My Computer or the contents of the disc will
+  not display.
+
+  -or-
+
+  Inserting or reading a disc causes the computer to stop responding.
+
+  -or-
+
+  The disc will not eject.
+
+  -or-
+
+  Takes an exceptionally long time to install or initialize the disc.
+
+MORE INFORMATION
+================
+
+To troubleshoot disc read errors, use the following methods in the order in
+which they are presented.
+
+Inspect the Disc
+----------------
+
+Inspect the disc for visible deformation or substantial scratches. If the disc is
+damaged, see the section "Obtaining a Replacement Disc" below.
+
+If you experience problems with a DVD disc, make sure that you insert the DVD
+into a DVD drive instead of a CD-ROM drive.
+
+If the issue continues to occur, proceed to the next method.
+
+Clean the Disc
+--------------
+
+Clean the CD-ROM or DVD-ROM. To do this, use a disc cleaning kit, or gently wipe
+the silver side of the disc with a soft, lint-free cotton cloth. Do not use
+paper cloth which can scratch the plastic and leave streaks. When you clean the
+disc, wipe from the center of the disc outward. Do not use a circular motion.
+
+If the issue continues to occur, clean the disc with a damp cloth or a commercial
+CD or DVD cleaning solution. Dry the disc thoroughly before you insert it into
+the drive.
+
+
+If the issue continues to occur, proceed to the next method.
+
+Test the Disk in another Drive
+------------------------------
+
+Try the CD-ROM or DVD disk in another drive. For DVDs, ensure the drive has a DVD
+logo on the front of the drive. If the disc works in this test, then the problem
+may be with the original drive not properly reading the disc. Please seek help
+from your computer or disc drive manufacturer. If your computer has multiple
+CD-ROM, CD-R, CD/RW or DVD drives, test the disc in the other drive.
+
+If after cleaning the disc, it does not work on another computer then it is
+likely bad and needs replacing. See the section "Obtaining a Replacement Disc"
+below. If you see the same issues with a replacement disc as with the original
+disc, proceed to the next method.
+
+If the issue continues to occur, proceed to the next method.
+
+Clean the Drive
+---------------
+
+If cleaning the CD-ROM or DVD does not resolve the issue, clean the disc drive
+using a CD-ROM or DVD drive cleaning disc if you have one. If you do not have
+one, obtain one after all other steps in this article have failed to resolve the
+issue. Drive cleaning discs are available in most computer or home electronics
+stores.
+
+If the issue continues to occur, proceed to the next method.
+
+Quit Unnecessary Software
+-------------------------
+
+Other applications may interfere with the reading of the disc, for example,
+anti-virus, firewall or anti-crash software.
+
+1. Quit all visible programs.
+
+2. Right-click each icon in the Taskbar area (near the Windows clock), then
+  click Exit, Quit, Close, Disable, etc if available.
+
+3. Press CTRL+ALT+DEL to display the Close Program window. If any program other
+  than Explorer is listed, click it, then click Remove. Repeat this step until
+  all programs except Explorer have been removed. Explorer is the Windows user
+  interface.
+
+
+If the issue continues to occur, proceed to the next method.
+
+Look for Known Issues with the Drive or Recording Software
+----------------------------------------------------------
+
+Search the Microsoft Knowledge Base for your brand and model of CD-ROM or DVD
+drive. Known issues with specific drives may be found in the Knowledge Base.
+
+If your computer includes CD-R or CD/RW recording (burning) software or
+packet-writing software, search the Microsoft Knowledge Base for known issues
+with the software. Occasionally there are conflicts depending on the version of
+the software or with specific drives.
+
+
+The Microsoft Knowledge Base is available at the following Microsoft Web site:
+
+  http://support.microsoft.com
+
+Check for Drive Firmware Updates
+--------------------------------
+
+Check with the manufacturer of your computer or disc drive to see if software
+updates for your drive are available. Often these are called "firmware" updates.
+Occasionally updates are issued that can resolve problems where the drive can
+read most but not all discs.
+
+Make Sure You Are Using Protected Mode Drivers
+----------------------------------------------
+
+If you have Windows 95 or Windows 98, ensure that you are using protected mode
+(32-bit) drivers for your CD-ROM or DVD drive. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Performance tab, confirm that the File System entry is 32-bit. If the
+  File System entry is "Some drives are using MS-DOS compatibility" you are
+  using MS-DOS disc drivers (real mode or 16-bit drivers). If this is the case,
+  you may not be able to read certain files on the CD-ROM as some programs only
+  work correctly with protected-mode drivers. To obtain protected-mode drivers
+  for CD or DVD drives, please see the following article in the Microsoft
+  Knowledge Base:
+
+  Q151634 Protected-Mode CD-ROM Drive Support in Windows
+
+4. Click OK, and then close Control Panel.
+
+If the issue continues to occur, proceed to the next method.
+
+Enable/Disable UDF Support
+--------------------------
+
+If you are using Windows 98 or Windows Me, change the UDF setting. To do this,
+follow these steps:
+
+1. Click Start, click Run, type "msconfig" (without the quotation marks) in the
+  Open box, and then click OK.
+
+2. Click Advanced.
+
+3. Click the "Disable UDF File System" option, and then click OK.
+
+4. When you are prompted to restart your computer, click OK, and then click Yes.
+
+When your computer restarts, UDF support has changed. If this makes no
+difference, change the setting back.
+
+NOTE: Generally, UDF should be enabled. However, some drives do not support UDF.
+For these drives, UDF should be left disabled. These drives will not be able to
+be read discs that only use the UDF file system.
+
+NOTE: DVD-ROMs require the UDF file system, unless they are a UDF Bridge disc
+(mastered for both ISO 9660 and UDF).
+
+
+Disable DMA for the Drive
+-------------------------
+
+To disable DMA for the CD-ROM or DVD drive, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Device Manager tab, click View Devices By Type.
+
+4. Click the plus sign (+) next to CDROM to expand the branch.
+
+5. Click the CD-ROM or DVD drive that you want to change, and then click
+  Properties.
+
+6. Click the Settings tab.
+
+7. Click to clear the DMA check box, and then click Close.
+
+8. Close Control Panel, and then restart the computer.
+
+
+If the issue continues to occur, proceed to the next method.
+
+Reduce Drive Caching
+--------------------
+
+To reduce CD-ROM or DVD drive caching, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Performance tab, click File System.
+
+4. On the CD-ROM or DVD tab, move the Supplemental Cache Size slider to the
+  Small position.
+
+5. In the Optimize Access Pattern For box, click NoRead-Ahead.
+
+6. Click OK, and then click Close.
+
+7. When you are prompted to restart your computer, click Yes.
+
+If the issue continues to occur, proceed to the next method.
+
+Disable Auto-Insert Notification
+--------------------------------
+
+NOTE: If you disable Auto-Insert Notification, your programs can no longer start
+automatically.
+
+To disable Auto-Insert Notification:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click System.
+
+3. On the Device Manager tab, click the PLUS SIGN (+) next to CDROM to expand
+  the branch.
+
+4. Click your CD-ROM or DVD drive, and then click Properties.
+
+5. On the Settings tab, click to clear the Auto Insert Notification check box.
+
+6. Click OK, and then click OK again.
+
+7. Close Control Panel, and then restart the computer.
+
+Remove Duplicate Drives
+-----------------------
+
+Remove any duplicate CD-ROM or DVD drives being loaded by Windows. To do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Device Manager tab, click View Devices By Type.
+
+4. Double-click the CDROM or DVD branch to expand it.
+
+5. Note the properties for each device listed in the branch. To do this:
+
+  a. Click a device, and then click Properties.
+
+  b. Click each tab in the device properties dialog box, and then record the
+     device information and settings.
+
+  c. Click OK.
+
+6. Click OK, and then close Control Panel.
+
+7. Restart Windows in Safe mode. To do this, use the appropriate method for your
+  version of Microsoft Windows.
+
+  Windows 95:
+
+  Restart the computer. When you see the "Starting Windows 95" message, press
+  the F8 key, and then select Safe Mode on the Startup menu.
+
+  Windows 98 and Windows Millennium Edition:
+
+  Restart your computer, press and hold down the CTRL key when your computer
+  completes the Power On Self Test (POST), and then select Safe Mode on the
+  Startup menu.
+
+8. When Windows starts in Safe mode, click OK.
+
+9. Click Start, point to Settings, and then click Control Panel.
+
+10. Double-click System.
+
+11. On the Device Manager tab, click View Devices By Type.
+
+12. Double-click the CDROM branch to expand it.
+
+13. Verify that there are no changes in the list of devices in the branch. If
+  you see a device that is not in the list of devices you noted in step 5,
+  click the new device, and then click Remove. Repeat this step for each
+  device in the branch that is not in the list of devices you noted in step
+  5.
+
+  NOTE: If you see new copies of a device that is in the list of devices you
+  noted in step 5, check the properties of each copy of the device. If the
+  properties for the device match the properties you recorded, keep the
+  device. If the properties for the device do not match the properties you
+  recorded, remove the device.
+
+14. Click OK.
+
+15. When you are prompted to restart the computer, click OK.
+
+Obtaining a Replacement Disc
+----------------------------
+
+If you bought the program in the last 30 days, you may be able to return it to
+the store where you bought it to obtain a replacement under the Microsoft 30-Day
+Money Back Guarantee. Check the packaging for information on the 30-Day Money
+Back Guarantee.
+
+Alternatively, to obtain a replacement disc call the Microsoft Order Desk at
+(800) 360-7561 and request a replacement for your damaged disc. If you are
+outside the United States, contact the Microsoft subsidiary for your area. To
+locate your subsidiary, see the Microsoft World Wide Offices Web page at:
+
+  http://www.microsoft.com/worldwide/default.htm
+
+
+REFERENCES
+==========
+
+For additional information about troubleshooting CD ROM issues in Windows 2000,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q126380 Troubleshooting CD-ROM Problems in Windows NT
+
+For additional information about troubleshooting CD ROM issues in Windows XP,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q314096 Troubleshooting CD-ROM Problems in Windows XP
+
+Additional query words: compact disc disk cannot cdr101 warped dirty
+
+======================================================================
+Keywords          : kbenv kbhw kbimu kbHardware 
+Technology        : kbOSWin98 kbOSWin95 kbOSWinME kbOSWinSearch
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

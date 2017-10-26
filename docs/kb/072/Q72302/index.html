@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72302: Specifying A20 Handlers with HIMEM.SYS /M in MS-DOS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72302: Specifying A20 Handlers with HIMEM.SYS /M in MS-DOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72302/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72302/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72302/","publisher":null,"image":null,"headline":"Q72302: Specifying A20 Handlers with HIMEM.SYS /M in MS-DOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72302-specifying-a20-handlers-with-himemsys-m-in-ms-dos">Q72302: Specifying A20 Handlers with HIMEM.SYS /M in MS-DOS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q72302
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MS-DOS version 5.0 includes HIMEM.SYS version 2.77. MS-DOS version 6.0 includes
+HIMEM.SYS version 3.07. MS-DOS versions 6.2, 6.21, and 6.22 include HIMEM.SYS
+version 3.10. These versions include an A20 handler for the following computers
+that can be used with the /M: or /MACHINE switch:
+
+  CODE            Number          A20 Handler
+  ----            ------          -----------
+  at              1               IBM PC/AT
+  ps2             2               IBM PS/2
+  pt1cascade      3               Phoenix Cascade BIOS
+  hpvectra        4               HP Vectra (A and A+)
+  att6300plus     5               AT&amp;T 6300 Plus
+  acer1100        6               Acer 1100
+  toshiba         7               Toshiba 1600 and 1200XE
+  wyse            8               Wyse 12.5 MHz 286
+  tulip           9               Tulip SX
+  zenith          10              Zenith ZBIOS
+  at1             11              IBM PC/AT
+  at2             12              IBM PC/AT (alternative delay)
+  css             12              CSS Labs
+  at3             13              IBM PC/AT (alternative delay)
+  philips         13              Philips
+  fasthp          14              HP Vectra
+  ibm7552         15              IBM 7552 Industrial Computer
+  bullmicral      16              Bull Micral 60
+  dell            17              Dell XBIOS
+
+There are two values that are considered defaults. /M:1 is the standard default
+for IBM AT-class machines, and t/M:2 is the standard default for IBM PS/2
+machines. For most 100-percent-compatible machines, the /M:1, /M:11, /M:12, and
+/M:13 A-20 handler switches should work. Although the other switches are
+hardware specific, one may be required for proper operation on certain
+machines.
+
+NOTE: In the above list, the device driver should detect the correct handler to
+use. The following computers may need the corresponding switch added to the
+CONFIG.SYS file:
+
+  System                    Switch
+  ------                    ------
+  Bull Micral 60            /machine:16
+  COMPUADD 386 systems      /machine:1 or /machine:8
+  Datamedia 386/486         /machine:2
+  Hitachi HL500C            /machine:8
+  Intel 301z or 302         /machine:8
+  JDR 386/33                /machine:1
+  Toshiba 5100              /machine:7
+  UNISYS PowerPort          /machine:2
+
+MORE INFORMATION
+================
+
+The /M switch specifies which hardware the computer is using. If the wrong
+switch is used, HIMEM.SYS may not load properly or the system may hang. For more
+information, query on the following words:
+
+  HIMEM and /M
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

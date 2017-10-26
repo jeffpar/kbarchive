@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196952: WD97: Word Could Not Re-Establish DDE Connection to MS Excel | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196952: WD97: Word Could Not Re-Establish DDE Connection to MS Excel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196952/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196952/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196952/","publisher":null,"image":null,"headline":"Q196952: WD97: Word Could Not Re-Establish DDE Connection to MS Excel","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196952-wd97-word-could-not-re-establish-dde-connection-to-ms-excel">Q196952: WD97: Word Could Not Re-Establish DDE Connection to MS Excel</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196952
+Product(s): Word 97 for Windows
+Version(s): 5.0,7.0,7.0a
+Operating System(s): 
+Keyword(s): kbdta word97 kbmerge
+Last Modified: 04-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+- Microsoft Excel for Windows, version 5.0 
+- Microsoft Excel for Windows 95, versions 7.0, 7.0a 
+- Microsoft Excel 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you specify a range when you attach a Microsoft Excel spreadsheet as a mail
+merge data source using dynamic data exchange (DDE), the following error
+messages may occur
+
+  This task is taking longer than expected.
+  Do you want to continue waiting?
+
+followed by:
+
+  Word could not re-establish a DDE connection to Microsoft Excel to complete
+  the current task.
+
+CAUSE
+=====
+
+Case 1: Selecting Ignore Other Applications
+-------------------------------------------
+
+This error occurs if the Ignore Other Applications check box in Microsoft Excel
+is selected. To locate this option in Microsoft Excel, click Options on the
+Tools menu, and then click the General tab.
+
+Case 2: Using a Colon to Specify a Range of Cells
+-------------------------------------------------
+
+This error also occurs if you use a colon to specify a range of cells. For
+example, if you specify a range by typing "A1:G6" or "R1C1:R6C7" in the
+Microsoft Excel dialog box that appears after you select a spreadsheet, this
+error occurs. If you use a different separator (such as a comma, period, or
+semicolon) the data source opens as expected.
+
+WORKAROUND
+==========
+
+Case 1: Selecting Ignore Other Applications
+-------------------------------------------
+
+In Microsoft Excel, clear the Ignore Other Applications check box and use a name
+to define the range of data you want to use as the mail merge data source. In
+Word, when the Microsoft Excel dialog box appears, select that name in the Named
+or Cell Range list. This method works whether you open the spreadsheet using DDE
+or the Microsoft Excel converter.
+
+Case 2: Using a colon to specify a range of cells
+-------------------------------------------------
+
+On the Tools menu, click Mail Merge, click the Get Data button, and click Open
+Data Source. Ensure that the Select Method check box is selected. When Word
+prompts you to confirm the data source, select Microsoft Excel Worksheet Via
+Converter (*.xls) from the Open Data Source list. When you use the converter,
+the error does not occur, even if you specify a range using a colon as the
+separator.
+
+MORE INFORMATION
+================
+
+Word Help contains incorrect information in the Microsoft Excel Dialog Box Help
+topic. This Help topic states the following:
+
+  Select a named range of cells or type the row and column references
+  you want to use from the worksheet. For example, A1:C5 includes the
+  information in cells A1 through C5.
+
+Typing the row and column references will not produce the results you expect.
+
+Additional query words: mail DDE delimiter winword cell range separator colon comma semicolon semi-colon officeinterop excel97 merge mailmerge excel reestablish
+
+======================================================================
+Keywords          : kbdta word97 kbmerge 
+Technology        : kbWordSearch kbExcelSearch kbWord97 kbWord97Search kbExcel95 kbExcel500 kbZNotKeyword2 kbExcel95Search kbExcel97Search kbZNotKeyword3 kbExcel95a kbExcelWinSearch
+Version           : :5.0,7.0,7.0a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

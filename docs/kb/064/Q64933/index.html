@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q64933: How to Emulate INKEY$ Function by CALLing MS-DOS INTERRUPT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q64933: How to Emulate INKEY$ Function by CALLing MS-DOS INTERRUPT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/064/Q64933/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/064/Q64933/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/064/Q64933/","publisher":null,"image":null,"headline":"Q64933: How to Emulate INKEY$ Function by CALLing MS-DOS INTERRUPT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q64933-how-to-emulate-inkey-function-by-calling-ms-dos-interrupt">Q64933: How to Emulate INKEY$ Function by CALLing MS-DOS INTERRUPT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q64933
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900803-74 B_BasicCom | mspl13_basic
+Last Modified: 16-AUG-1990
+
+The INKEY$ function in QuickBASIC can be replaced by the following
+code example that uses two MS-DOS interrupt service routines. These
+interrupt routines allow NEWINKEY$ to function the same way that
+INKEY$ works and return the same results for any given keystroke.
+
+This information applies to Microsoft QuickBASIC 4.00, 4.00b, and 4.50
+for MS-DOS; to Microsoft BASIC Compiler 6.00 and 6.00b for MS-DOS; and
+to Microsoft BASIC Professional Development System (PDS) versions 7.00
+and 7.10 for MS-DOS.
+
+The following code contains the NEWINKEY$ function, which must be
+called from BASIC in the same manner that INKEY$ is called.
+
+'********************************************************************
+'
+'   Written for Microsoft QuickBASIC 4.00, 4.00b, and 4.50; Microsoft
+'   BASIC Compiler 6.00 and 6.00b; and Microsoft BASIC PDS 7.00 and
+'   7.10 for MS-DOS.
+'
+'   This code contains a function (NEWINKEY$) that can be used instead
+'   of the built-in INKEY$ function.
+'
+'   NEWINKEY$ uses two interrupt calls to retrieve information from
+'   the keyboard buffer.
+'
+'   The interrupt (INT) service routines are :
+'   Hexadecimal: INT 16 with Function 11 and INT 16 with Function 10
+'   (Decimal   : INT 22 with Function 17 and INT 22 with Function 16)
+'
+'   For more information regarding the functionality of these and
+'   other interrupts, see "Advanced MS-DOS Programming," second edition,
+'   by Ray Duncan (Microsoft Press, 1988).
+' *********************************************************************
+
+DECLARE FUNCTION NewInkey$ ()
+
+' Use (uncomment) one of the following two INCLUDE statements:
+'
+' The following is the include statement for Microsoft QuickBASIC
+' 4.00, 4.00b, 4.50 or for Microsoft BASIC Compiler 6.00 or 6.00b:
+'
+' REM $INCLUDE: 'QB.BI'
+'
+' The following is the include statement for Microsoft BASIC PDS 7.00
+' or 7.10:
+'
+' REM $INCLUDE: 'QBX.BI'
+
+FUNCTION NewInkey$
+
+   ' RegType is defined in the QB.BI (or QBX.BI) include file
+
+   DIM Regs AS RegType
+
+   ' Register AX will contain 1100 Hexadecimal to specify
+   ' the interrupt function to execute.
+   '
+   ' Function 11 Hexadecimal will get the enhanced keyboard status.
+
+   Regs.ax = &amp;H1100
+   CALL Interrupt(&amp;H16, Regs, Regs)
+
+   KeyCode$ = ""
+
+   ' If the zero flag is clear, then a key was pressed (Bit 6).
+
+   IF (Regs.flags AND 2 ^ 6) = 0 THEN
+
+      ' Call Function 10 Hexadecimal to remove the key from the
+      ' keyboard buffer.
+
+      Regs.ax = &amp;H1000
+      CALL Interrupt(&amp;H16, Regs, Regs)
+
+      Scan% = (Regs.ax AND &amp;HFF00) \ 256 AND &amp;HFF
+      Char% = Regs.ax AND &amp;HFF
+
+      ' Character code of zero is for the special keys (such as
+      ' function keys F1 through F12.
+      ' Character code of 224 is for the Enhanced Keyboard keys (such
+      ' as HOME and END keys)
+
+      IF Char% = 0 OR Char% = 224 THEN
+           KeyCode$ = CHR$(0) + CHR$(Scan%)
+      ELSE
+           KeyCode$ = CHR$(Char%)
+      END IF
+   END IF
+   NewInkey$ = KeyCode$
+END FUNCTION
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

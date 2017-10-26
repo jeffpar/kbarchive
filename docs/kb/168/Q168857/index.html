@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168857: XFOR: Err Msg: MSMI Service Returned Service-Specific Error 105 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168857: XFOR: Err Msg: MSMI Service Returned Service-Specific Error 105" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168857/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168857/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168857/","publisher":null,"image":null,"headline":"Q168857: XFOR: Err Msg: MSMI Service Returned Service-Specific Error 105","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168857-xfor-err-msg-msmi-service-returned-service-specific-error-105">Q168857: XFOR: Err Msg: MSMI Service Returned Service-Specific Error 105</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168857
+Product(s): Microsoft Exchange
+Version(s): WinNT: 4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 02-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the Microsoft Mail Connector Interchange (MSMI) service, the
+following error message may appear:
+
+  The MS Mail Connector Interchange service returned service-specific
+  error 105.
+
+The following event appears in the Event Viewer Application log:
+
+  Event ID: 2302
+  Source: Service Control Manager
+  Category: None
+  Type: Error
+  Description:
+  MS Mail Connector Interchange has failed to start the mailer component.
+  Return code from mailer is 0x2 and the return code Win32 is 0x20.
+
+The description may also state:
+
+  The MS Mail Connector Interchange service terminated with service-
+  specific error 105.
+
+  Check that MSMI Service Account has access permission on the Microsoft
+  Mail Connector postoffice share.
+
+CAUSE
+=====
+
+The files Inqueue3.key and/or Inqueue3.mbg may be locked.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+1. Verify that the file Inqueue3.key or Inqueue3.mbg (or both) is locked. Shut
+  down the Microsoft Mail Connector Interchange (MSMI) and all other PCMTA
+  services (PCMTA and AppleTalk or ATMTA). Check the files Inqueue3.key and
+  Inqueue3.mbg on the shadow postoffice located at
+  &lt;drive&gt;:\Exchsrvr\Connect\Msmcon\Maildata in the Key and Mbg
+  subdirectories respectively, to see if the file or files can be copied or
+  renamed.
+
+  NOTE: If the files cannot be copied or renamed, proceed to the next step.
+
+2. Set the MSMI and all PCMTA services to manual, and restart the server.
+
+3. Verify that the files Inqueue3.key and/or Inqueue3.mbg are not locked.
+
+4. Start the MSMI and all other PCMTA services, and set the Startup Type on
+  these services to Automatic.
+
+NOTE: The MS Mail PCMTA services are named by the Exchange Server Administrator
+operator. To determine what the PCMTA services were named, in the Exchange
+Server Administrator program open the MS Mail Connector properties and select
+the Connector MTAs tab. The PCMTA services are located in the MS Mail Connector
+(PC) MTA Services field.
+
+MORE INFORMATION
+================
+
+Recycling or restarting the server will unlock the Inqueue3.key and Inqueue3.mbg
+files.
+
+
+Additional query words: terminated service-specific
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : WinNT: 4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

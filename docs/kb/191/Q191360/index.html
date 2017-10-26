@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191360: SMS: Despooler Retry Count Increments by 2 and Not by 1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191360: SMS: Despooler Retry Count Increments by 2 and Not by 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191360/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191360/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191360/","publisher":null,"image":null,"headline":"Q191360: SMS: Despooler Retry Count Increments by 2 and Not by 1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191360-sms-despooler-retry-count-increments-by-2-and-not-by-1">Q191360: SMS: Despooler Retry Count Increments by 2 and Not by 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191360
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2 SP1,1.2 SP2
+Operating System(s): 
+Keyword(s): kbDespooler smsdespooler
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.2 SP1, 1.2 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the System Management Server Despooler service repeatedly creates retry
+instruction for a job that is not able to complete, the Despooler retry count
+decreases by 2 each time instead of 1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2 Service Pack 1 and Service Pack 2. This problem has been corrected
+in the latest U.S. service pack for Systems Management Server version 1.2. For
+information on obtaining the service pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+To reproduce this behavior, perform the following steps:
+
+1. Send a Program Group Control (PGC) job (Test.bat) and wait for it to
+  complete.
+
+2. Use Microsoft Word for Windows or Microsoft Excel to open a file on the PGC
+  share so that despooler cannot update it. Verify that PGC cannot update the
+  files by trying to delete one of the files manually. A "file in use" error
+  should be generated.
+
+3. Change the "Use Forced Disconnect" Despooler registry setting to "1".
+
+4. Stop and restart the Systems Management Server Executive service to use the
+  new settings.
+
+5. Change the contents of the existing file in the PGC source directory.
+
+6. Create a new PGC job to update the share with changed source file.
+
+After this has been completed, search for the phrase "retry count is now" in the
+Despoolr.log file. These retry statements will not appear in the log if the site
+server is not experiencing the problem.
+
+Additional query words: prodsms SP SP4
+
+======================================================================
+Keywords          : kbDespooler smsdespooler 
+Technology        : kbSMSSearch kbSMS120SP2 kbSMS120SP1
+Version           : :1.2 SP1,1.2 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

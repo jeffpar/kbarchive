@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161738: BUG: Large Memo Field Forces Undesired New Report Page | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161738: BUG: Large Memo Field Forces Undesired New Report Page" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161738/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161738/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161738/","publisher":null,"image":null,"headline":"Q161738: BUG: Large Memo Field Forces Undesired New Report Page","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161738-bug-large-memo-field-forces-undesired-new-report-page">Q161738: BUG: Large Memo Field Forces Undesired New Report Page</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161738
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,6.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300BUG kbvfp500bug kbvfp600bug kbDSupport
+Last Modified: 16-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a large memo field is included in a report where the detail band is wide
+(long from top to bottom), the Visual FoxPro Report Designer prints that memo
+field, then forces the remainder of the detail band to the next page, even
+though there is adequate space to print more detail on the current page.
+
+RESOLUTION
+==========
+
+If the report can be so designed, keep the detail band narrower, from top to
+bottom, than approximately four inches. This measurement in not exact as
+different reports work correctly at different band sizes. There are reports of
+bands six inches deep printing correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a table using the following commands:
+
+        CREATE TABLE Test (first c(5),  firstmemo m, second c(5))
+        INSERT INTO Test (first, firstmemo, second) ;
+           VALUES ('abcde', REPLICATE("This is a wordy expression. ",30), ;
+           'zyxwv')
+
+2. Leave that table open in a workarea.
+
+3. Create a quick report based on the table you just created. To do this, click
+  New on the File menu and then select Report from the list of options. Click
+  the large New File command button at the top-right of the New dialog box.
+
+4. When the "Microsoft Visual FoxPro Report Designer" appears, click the Report
+  pad on the menu bar, then the Quick Report item from the pop-up menu.
+
+5. When the Quick Report dialog box appears, there are two large command buttons
+  in the area labeled "Field Layout." The right-hand button illustrates
+  vertical field alignment. Click it. Then click OK.
+
+6. The three fields of the table now appear in the "Detail" band of the report
+  being designed.
+
+  The format of the report is as follows:
+
+  a. The fields and labels are arranged vertically, the label for each field is
+     to the left of the field.
+
+     Below the detail band is the bar labeled "Detail." Move the cursor to that
+     bar. The cursor changes to a double-headed arrow. Click and drag the bar
+     down until the ruler at the left shows the detail band to be eight inches
+     in depth. This requires repeatedly scrolling down in order to see
+     drag-space at the bottom of the Report Designer's window.
+
+     An alternative to clicking and dragging the "Detail" band is to
+     double-click the Detail band to open up the Detail dialog box and change
+     the Height to 8 inches using the Spinner control.
+
+  b. All the fields and labels float, all the fields can stretch.
+
+     Those properties are set by default. To verify this one-by-one, position
+     the cursor over each field and label. Right-click to bring up the context
+     menu for that item. On the context menu click Properties. The Report
+     Expression dialog box appears. It shows the name of the field or label,
+     and that item's Field position. Be sure Float is the selected option. The
+     fields also show a check box labeled "Stretch with overflow." Be sure that
+     is checked. Labels do not have the "Stretch . . ." check box.
+
+  c. The memo field is narrow.
+
+     Click the memo field's text box to make it the "selected" control. It now
+     has handles (small black squares.) Click the center handle on the right
+     edge of the memo field, and drag that edge to the right to open the memo
+     field to nearly the full width of the page.
+
+7. Preview the report. (On the View menu, click Preview.)
+
+  You will see the following behavior:
+
+   - The label for the First field, and the field show where they would be
+     expected.
+
+   - The label for the Firstmemo field and the field show where they would be
+     expected.
+
+   - The label for the "Second" field is immediately beneath the label for the
+     "Firstmemo field.
+
+   - The rest of the page is blank.
+
+   - The field contents for the Second field is pushed to the next page.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300BUG kbvfp500bug kbvfp600bug kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : :3.0,3.0b,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

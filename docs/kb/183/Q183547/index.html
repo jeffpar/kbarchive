@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183547: Friendship Tutorial: Runtime Error 1738 Using Playback | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183547: Friendship Tutorial: Runtime Error 1738 Using Playback" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183547/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183547/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183547/","publisher":null,"image":null,"headline":"Q183547: Friendship Tutorial: Runtime Error 1738 Using Playback","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183547-friendship-tutorial-runtime-error-1738-using-playback">Q183547: Friendship Tutorial: Runtime Error 1738 Using Playback</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183547
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:1.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft COM Transaction Integrator for CICS and IMS, version 1.0, used with:
+   - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Friendship Demo while using a Diagnostic Playback Remote
+Environment (RE) and the recording file included with COMTI, the following
+runtime error message may appear:
+
+  (1738) The Method and/or parameters of the request could not be matched in
+  the current recording file.
+
+You will see this error message if your Control Panel settings for Date and
+Currency formats are not the US Default (Currency Decimal Separator ".", and
+Date Format M/d/yy, with Date Separator "/").
+
+CAUSE
+=====
+
+Friendship Demo Visual Basic and ASP code use hard-coded date and currency
+formats, which are converted to actual Dates and Currencies based on the
+Regional Settings in Control Panel for Date and Currency. For example, if your
+Decimal Separator is set to "," then the 150.00 amount will actually be sent to
+COMTI as 15000. This is not what the recording file is expecting.
+
+WORKAROUND
+==========
+
+To work around this problem, you can manually edit the dollar amount and date
+fields when you run the Friendship Demo to match those of your Regional Settings
+via Control Panel. For example, using the Web client, if you use DD/MM/YY for a
+date format, change Service Date from 6/1/89 to 1/6/89 and Date of Birth from
+2/22/48 to 22/2/48.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft COM Transaction
+Integrator for CICS and IMS version 1.0 included with SNA Server version 4.0. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch
+Version           : WINDOWS:1.0,4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

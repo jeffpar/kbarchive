@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141675: HOWTO: How to Save and Restore State of Dockable Toolbars | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141675: HOWTO: How to Save and Restore State of Dockable Toolbars" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141675/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141675/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141675/","publisher":null,"image":null,"headline":"Q141675: HOWTO: How to Save and Restore State of Dockable Toolbars","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141675-howto-how-to-save-and-restore-state-of-dockable-toolbars">Q141675: HOWTO: How to Save and Restore State of Dockable Toolbars</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141675
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0
+Operating System(s): 
+Keyword(s): kbMFC kbToolbar KbUIDesign kbVC kbGrpDSMFCATL kbMFCCtrlBar
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MFC's CToolBar class makes it easy to create floating toolbars that can dock to
+your window. Each time you run your application, these toolbars will be
+re-created in the default locations. This article shows how to override this
+behavior to save the toolbar positions and docking state and restore them the
+next time the application is executed.
+
+MORE INFORMATION
+================
+
+When you create a SDI or MDI MFC application with the AppWizard, you can choose
+the Docking Toolbar option (default is selected). This option creates a default
+toolbar that can float and has tooltips. It adds a CToolBar member m_wndToolBar
+to the CMainFrame Class. It also adds code to CMainFrame::OnCreate to create the
+toolbar and set its attributes.
+
+CFrameWnd has member functions that can save and restore the state of all control
+bars. The functions are SaveBarState and LoadBarState. There are two other
+helper functions, GetDockState and SetDockState.
+
+To save the state of your control bars, you need to add a handler for
+CMainFrame::OnClose():
+
+     void CMainFrame::OnClose()
+     {
+                  SaveBarState( "MyDockState" );
+
+                  CFrameWnd::OnClose();
+     }
+
+This saves the docking state in the registry or .ini file under the MyDockState
+profile entry.
+
+LoadBarState must be called to reload the information and set the position of the
+controlbars next time the program is executed. This call has to be added to
+CMainFrame::OnCreate(). The following code illustrates this in the context of
+OnCreate:
+
+     int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
+     {
+
+             ...
+
+             //Add this line...
+             LoadBarState( "MyDockState" );
+     }
+
+REFERENCES
+==========
+
+DOCKTOOL sample.
+
+Online help for:
+
+  CFrameWnd::LoadBarState,
+  CFrameWnd::SaveBarState,
+  CFrameWnd::GetDockState,
+  CFrameWnd::SetDockState.
+
+Additional query words: 2.00 2.10 2.20 3.00 3.10 3.20 4.00 kbinf
+
+======================================================================
+Keywords          : kbMFC kbToolbar KbUIDesign kbVC kbGrpDSMFCATL kbMFCCtrlBar 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

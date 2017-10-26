@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166721: FIX: Compiler Error C2784 o | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166721: FIX: Compiler Error C2784 o" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166721/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166721/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166721/","publisher":null,"image":null,"headline":"Q166721: FIX: Compiler Error C2784 o","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166721-fix-compiler-error-c2784-o">Q166721: FIX: Compiler Error C2784 o</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166721
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbcode kbtool kbCompiler kbCPPonly kbLangCPP kbVC kbVC500bug kbVS97sp1fix
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to instantiate an STL container such as vector or list, you
+receive compiler error C2784 if the class type of the objects contained do not
+have operator &lt; and operator == defined to take the class type as both
+arguments:
+
+  xutility(45) : error C2784: 'bool __cdecl std::operator&lt;(const class
+  std::reverse_iterator&lt;`template-parameter-1',`template-parameter-2
+  ',`template-parameter-3',`template-parameter-4',`template-parameter-5'&gt;
+  &amp;,const class std::reverse_iterator&lt;`template-parameter-1', `template-
+  parameter-2',`template-parameter-3',`template-parameter-4',
+  `template-parameter-5'&gt; &amp;)' : could not deduce template argument for
+  'const class std::reverse_iterator&lt;`template-parameter-1',
+  `template-parameter-2',`template-parameter-3',`template-parameter-4',
+  `template-parameter-5'&gt; &amp;' from 'const struct P'
+
+  xutility(45) : error C2676: binary '&lt;' : 'const struct MyClass' does not
+  define this operator or a conversion to a type acceptable to the
+  predefined operator
+
+CAUSE
+=====
+
+The Visual C++ 5.0 compiler forces the instantiation of inline template member
+functions regardless of whether they are referenced. The member function
+generated is later discarded if it is not referenced.
+
+RESOLUTION
+==========
+
+Declare a global operator &lt; and a global operator == that take the given
+class type in both arguments. Note that the operators don't need to have bodies
+because they aren't actually used and will be discarded by the linker anyway.
+
+     #if (_MSC_VER == 1100)
+     #define GLOBAL_OPS(Type) \ 
+       bool operator &lt; (const Type&amp; lhs, const Type&amp; rhs);
+       bool operator == (const Type&amp; lhs, const Type&amp; rhs);
+
+     GLOBAL_OPS(MyClass)
+     GLOBAL_OPS(MyOtherClass)
+     #endif
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+Note that if you use functions such as find() or sort() or compare containers
+(using one of the logical operators), you must define less than and equality
+operators for the class type being contained in the STL container.
+
+Steps to Reproduce Behavior
+---------------------------
+
+      /*
+      Compile options needed to reproduce:   -GX
+      Compile options needed for workaround: -GX -D"WORKAROUND"
+      */ 
+
+      #include &lt;vector&gt;
+      using namespace std;
+
+      struct MyClass {
+              // members here
+      };
+      struct MyOtherClass {
+              // members here
+      };
+
+      #ifdef WORKAROUND
+      #if (_MSC_VER == 1100)
+      #define GLOBAL_OPS(Type) \ 
+        bool operator &lt; (const Type&amp; lhs, const Type&amp; rhs) {return true;} \ 
+        bool operator == (const Type&amp; lhs, const Type&amp; rhs) {return true;}
+
+      GLOBAL_OPS(MyClass)
+      GLOBAL_OPS(MyOtherClass)
+      #endif //_MSC_VER
+      #endif //WORKAROUND
+
+      void main () {
+              vector&lt;MyClass&gt; a;
+      }
+
+======================================================================
+Keywords          : kbcode kbtool kbCompiler kbCPPonly kbLangCPP kbVC kbVC500bug kbVS97sp1fix 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

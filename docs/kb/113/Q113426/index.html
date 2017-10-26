@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113426: BUG: DX1020 or Application Error from H2INC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113426: BUG: DX1020 or Application Error from H2INC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113426/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113426/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113426/","publisher":null,"image":null,"headline":"Q113426: BUG: DX1020 or Application Error from H2INC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113426-bug-dx1020-or-application-error-from-h2inc">Q113426: BUG: DX1020 or Application Error from H2INC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113426
+Product(s): Microsoft Macro Assembler
+Version(s): 6.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), version 6.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The H2INC utility versions 1.11 and 1.12, as shipped with MASM 6.11, may give an
+error similar to the following when run on the MS-DOS operating system:
+
+  DOSXNT : fatal error DX1020: unhandled exception: Page fault;
+  contact Microsoft Support Services
+  ProcessId=1337 ThreadId=1338
+  User Registers:
+  EAX=00000000h EBX=00000001h ECX=00000000h EDX=00000000h
+  ESI=00079963h EDI=00186F00h EBP=00186F5Ch ErrorCode = 00000004h
+  DS=0017h ES=0017h FS=005Fh GS=0017h FLG=00013246h
+  CS:EIP=000Fh:00068473h SS:ESP=0017h:00186ED4h
+
+When run in a console session under Windows NT, the following error may occur (in
+a Windows message box):
+
+  H2INC.EXE - Application Error
+  The instruction at "0x00039473" referenced memory at "0x00000000".
+  The memory could not be "read".
+
+CAUSE
+=====
+
+This error occurs only if an MS-DOS INCLUDE variable is not set. The error does
+not occur in an MS-DOS virtual session under Windows 3.1.
+
+RESOLUTION
+==========
+
+To prevent this error, set an INCLUDE variable. The normal setting for MASM is:
+
+  SET INCLUDE=C:\MASM611\INCLUDE
+
+The drive and directory may be different depending on how MASM was installed. If
+other languages are being used, there may be other paths added to the INCLUDE
+variable. The file NEW-VARS.BAT installed by the MASM Setup program contains a
+correct setting for use with MASM.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in H2INC versions 1.11 and 1.12. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 6.11 buglist6.11
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM611
+Version           : :6.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

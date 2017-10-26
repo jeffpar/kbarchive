@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132715: HOWTO: How to Enable the Help Button on a Modal Property Sheet | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132715: HOWTO: How to Enable the Help Button on a Modal Property Sheet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132715/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132715/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132715/","publisher":null,"image":null,"headline":"Q132715: HOWTO: How to Enable the Help Button on a Modal Property Sheet","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132715-howto-how-to-enable-the-help-button-on-a-modal-property-sheet">Q132715: HOWTO: How to Enable the Help Button on a Modal Property Sheet</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132715
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,4.0
+Operating System(s): 
+Keyword(s): kbcode kbnokeyword kbMFC kbPropSheet kbVC152 kbVC200 kbVC210 kbVC400 kbGrpDSMFCATL
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, version 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The F1-key help functionality and the Help button on a Modal Property sheet can
+be enabled by choosing Context-Sensitive Help while generating an
+AppWizard-generated application. In a standard AppWizard-generated application,
+clicking the Help button on the property sheet has no effect because there is no
+default handler for the Help button. This article shows by example how to obtain
+F1-key functionality with the Help button.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+The default implementation of a modal property sheet has no handler for the Help
+button. To obtain F1-key functionality with the Help button, follow these
+steps:
+
+1. Derive a class from CPropertySheet.
+
+2. Add an OnHelp handler for ID_HELP to the property sheet. For more information
+  on how to add a handler, please see MFC Technical Note #6.
+
+3. In the OnHelp handler, send a WM_COMMANDHELP message to the property sheet
+  window by using SendMessage(WM_COMMANDHELP).
+
+4. Implement the following code to provide the Help button with
+  context-sensitive help functionality of the F1 function key:
+
+     // Derive a class CMyPropertySheet from CPropertySheet.
+     // Include the file afxpriv.h to obtain the id for
+     // WM_COMMANDHELP in the implementation file for CMyPropertySheet
+
+     #include "afxpriv.h"
+
+     // add this handler in the implementation file for CMyPropertySheet
+
+     void CMyPropertySheet::OnHelp( )
+     {
+          SendMessage(WM_COMMANDHELP);
+     }
+
+NOTE: The WM_COMMANDHELP message, when sent to the Property Sheet window, invokes
+the OnCommandHelp handler for the CPropertySheet class, which in turn sends a
+WM_COMMANDHELP message to the active page.
+
+REFERENCES
+==========
+
+Please see the DLGPROP.CPP file in the MFC\SRC subdirectory of the Visual C++
+installation or distribution CD directory. This source file includes source code
+for CPropertySheet and CPropertyPage.
+
+Additional query words: kbinf 2.00 2.10 2.52 3.00 3.10 4.00
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbMFC kbPropSheet kbVC152 kbVC200 kbVC210 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

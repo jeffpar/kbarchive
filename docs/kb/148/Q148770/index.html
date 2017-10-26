@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148770: PC DirSync: IMPORT -S Hangs Computer During Dir-Sync | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148770: PC DirSync: IMPORT -S Hangs Computer During Dir-Sync" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148770/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148770/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148770/","publisher":null,"image":null,"headline":"Q148770: PC DirSync: IMPORT -S Hangs Computer During Dir-Sync","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148770-pc-dirsync-import--s-hangs-computer-during-dir-sync">Q148770: PC DirSync: IMPORT -S Hangs Computer During Dir-Sync</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148770
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When IMPORT -S is run on an MS-DOS based-computer, the system may hang if the
+templates that Import is trying to process are larger than usual (that is 50-150
+lines). On a computer other than MS-DOS, such as Microsoft Windows NT, IMPORT -S
+may cause a General Protection (GP) Fault.
+
+Also, if a Requestor Import response is being generated during the Directory
+Synchronization (Dir-Sync) cycle, the same symptoms may occur during the SRVMAIN
+process. That is, the computer running DISPATCH.EXE may hang or GP Fault.
+
+CAUSE
+=====
+
+The buffer used to store the template information read from the ADMIN.TPL file
+is not large enough. There is no allowance for the extra spaces being inserted
+to separate the template fields. The problem can occur when more requestors are
+added to the Dir-Sync Server (DSS), and those requestors try to get a full
+Import, including templates. In this case, SRVMAIN -T will hang an MS-DOS
+computer.
+
+This issue also affects ADMIN.EXE, SRVMAIN.EXE, and REQMAIN.EXE.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  File Name     Version
+  ---------------------
+  Admin.exe     3.5.22
+  Import.exe    3.5.22
+  Reqmain.exe   3.5.22
+  Srvmain.exe   3.5.22
+
+The Administrator program hotfix has been posted to the following Internet
+location as Admy2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+
+The directory synchronization (dirsync) hotfix has been posted to the above
+Internet location as Dirsy2k.exe.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail for PC Networks
+version 3.5.
+
+MORE INFORMATION
+================
+
+An allowance for extra spaces between template fields has been added to
+IMPORT.EXE. This will allow up to 256 template fields.
+
+
+Additional query words: 3.50 post35fix
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

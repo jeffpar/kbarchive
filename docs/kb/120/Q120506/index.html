@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120506: How Virtual Memory Works on a Power Macintosh | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120506: How Virtual Memory Works on a Power Macintosh" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120506/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120506/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120506/","publisher":null,"image":null,"headline":"Q120506: How Virtual Memory Works on a Power Macintosh","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120506-how-virtual-memory-works-on-a-power-macintosh">Q120506: How Virtual Memory Works on a Power Macintosh</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120506
+Product(s): Microsoft Tips for the Macintosh System
+Version(s): 5.0,98
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Excel for the Power Macintosh, version 5.0 
+- Microsoft Word for the Power Macintosh 
+- Microsoft Excel 98 Macintosh Edition 
+- Microsoft Word 98 Macintosh Edition 
+- Microsoft PowerPoint 98 Macintosh Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Enabling Virtual Memory on an Apple Power Macintosh allows the Macintosh
+Operating System to reduce the memory requirements for Power Macintosh native
+applications. Installing version 1.5.2 (or later) of RAM Doubler from Connectix
+Software also reduces application memory requirements.
+
+The reason for this behavior lies in how the Power Macintosh loads an application
+into memory.
+
+A 680x0-based application stores executable code in the CODE resource and uses
+the Resource Manager to load CODE resources into memory. A Power Macintosh
+application, on the other hand, stores executable code in the data fork of an
+application. This way, a single program can run on a 680x0-based Macintosh and a
+Power Macintosh.
+
+With the Virtual Memory option enabled (or with RAM Doubler 1.5 or higher
+installed), the Virtual Memory Manager on the Power Macintosh reuses the data
+fork of the application as a paging file to help improve performance. As a
+result, only the needed portions of code are loaded into memory, thus reducing
+the memory requirements of an application.
+
+MORE INFORMATION
+================
+
+The following article was originally posted on the Internet newsgroup
+COMP.SYS.MAC.APPS. This article discusses how the Power Macintosh uses virtual
+memory. It also discusses how Microsoft Applications make use of virtual memory
+and how they use shared libraries.
+
+USING VIRTUAL MEMORY WITH THE POWER MACINTOSH
+---------------------------------------------
+
+The Power Macintosh runtime architecture was designed with virtual memory in
+mind; therefore, when you use a Power Macintosh, you should usually have virtual
+memory turned on.
+
+NOTE: Apple shipped the Power Macintosh with the Virtual Memory option turned off
+by default with System 7.1.2. With System 7.5x, the Virtual Memory option is
+turned on by default.
+
+How Applications Are Stored and Loaded on a 68K (Non-Power) Macintosh:
+
+On a 68K Macintosh, you give every application a partition size. This partition
+is used to hold the application's stack and heap. The heap is used to hold the
+following:
+
+- Memory that is dynamically allocated by the application (that is, to hold the
+  contents of the cells in a spreadsheet, or the text in a Word document).
+- Application resources (icons, dialogs, alerts, some strings).
+- Application code (note that code is actually just another resource, and Word
+  and Microsoft Excel, for example, each have several hundred code resources).
+
+Breaking up the application's code into resources means that the application's
+code can be loaded into memory in small chunks, and it's loaded only when
+needed. For example, when you start the application, only a very few code
+resources get loaded. Then, when functions are called that are located in
+segments that are not yet loaded into memory, those segments get loaded. When
+segments are not used, they can be kicked out of memory to make room for other
+code segments. What this means is that the partition can be considerably smaller
+than the total size of the application's code.
+
+NOTE: The above is true for all Macintosh 68K applications, not just Microsoft
+applications.
+
+Microsoft applications go one step further and use technology developed
+especially for our Macintosh applications. This technology allows a Microsoft
+application to swap out more code that it would normally be able to. Basically,
+most applications cannot swap out any segment that contains code that's on the
+current call chain, because the code returning to that segment would crash if
+the code was unloaded; the Microsoft swapper unloads the segments, and fixes up
+the stack to point to code that reloads the segment. The result of this is that
+we can run in even smaller partitions than we would be able to otherwise.
+
+How Applications Are Stored and Loaded on a Power Macintosh:
+
+On the Power Macintosh, things are quite a bit different. Power Macintosh code is
+not segmented into resources. Instead, the code sits in one large chunk (called
+a "fragment") in the application's data fork. (Macintosh files have two pieces:
+a data fork and a resource fork.)
+
+Note that this configuration is what makes fat binaries possible: in a fat
+binary, all the 68K code sits in code segments in the resource fork, and the
+Power Macintosh code sits in the data fork. A 68K Macintosh knows only about the
+resource fork, but a Power Macintosh knows to look in the data fork (there's a
+special resource that says to look in the data fork that only the Power
+Macintosh loader knows about).
+
+How Applications Are Loaded to Memory on a Power Macintosh:
+
+So the question is, with all the code sitting in one big chunk, how is the system
+going to load it?
+
+When Virtual Memory Is Off:
+
+If virtual memory is off, the system has no choice but to load the ENTIRE chunk
+of code that's in the data fork [in the case of Microsoft Excel, this means
+about 7 megabytes (MB) of code] into memory. That's right, no code resources, no
+fragmentation, no swapping--the whole thing goes into memory. To do this, the
+system increases the partition size you've allocated by the full amount of the
+code size.
+
+Why does the system add the full amount of the code (after all, on the 68K
+Macintosh, the code goes in the partition anyway)? The system has to add the
+full amount of code for the following two reasons:
+
+1. The code doesn't go in the heap with the other resources, it goes in a
+  separate area of the partition.
+
+2. On a Power Macintosh, you would typically need a bigger partition because
+  stack frames are larger, but since there's no code, things roughly balance
+  out.
+
+So, if virtual memory is off, the system looks at your partition size (which is
+used for stack and heap, but not code), adds the complete size of the
+application code, and uses that for a new partition.
+
+When Virtual Memory Is On:
+
+When virtual memory is on, however, the system does not have to load all the
+application's code at once. Instead, it "demand pages" the code from the disk
+using a technique called "file mapping." What this means is that when code is
+needed, it is brought in from the disk, and it can also be kicked out of memory
+to make room when needed. While there is no explicit segmentation of the code
+into resources, the virtual memory system divides a file into 4K chunks, and
+brings in and kicks out those chunks as needed. So, the system adds nothing to
+the partition size, and then it is smart about loading in code as needed. You
+might even say that when virtual memory is on, the system can pretty much do
+what it does on a 68K machine: that is, it can bring in code in chunks, and kick
+them out to make room for other chunks.
+
+POWER MACINTOSH SHARED LIBRARIES
+--------------------------------
+
+On a 68K Macintosh, it's very difficult to share code between applications. What
+this means is that if two applications want to share code in any non- trivial
+way, they typically must each include a copy of the code. That means that two
+copies of the code sit on your hard disk (and in memory if the programs are
+running).
+
+The Power Macintosh makes things a lot better by adding shared libraries.
+Applications can share code by putting this code in a shared library. A shared
+library is loaded into memory only once, no matter how many applications are
+using it. Another benefit of a shared library is that if there is a bug in it,
+it can be replaced without replacing the entire application.
+
+Microsoft applications take full advantage of this new feature of the Power
+Macintosh. We put the pieces of code that our applications may share in shared
+libraries. These libraries include the following:
+
+- A dialog manager that is shared between Microsoft Excel and Word
+- A toolbar button editor that is shared between Word, Microsoft Excel,
+  PowerPoint, and Microsoft Project
+- Support for Microsoft Mail in Word, Excel, PowerPoint, and Project,
+- OLE
+- The Visual Basic, Applications Edition, macro language
+
+Where the Libraries Are Loaded in Memory:
+
+If virtual memory is on, the libraries are "demand paged" as needed (the same way
+that applications are loaded).
+
+If virtual memory is off, however, the system needs to load all the code in all
+these libraries when you start up the application. And, because these are shared
+libraries, potentially used by other applications, these can't go in an
+application partition; they have to go in the system heap. In the case of
+Microsoft Excel there are about 6MB of code in these libraries. Note that when
+you load other applications that use these libraries, they don't get loaded
+again (because they're shared).
+
+REFERENCES
+==========
+
+More information section taken from Internet newsgroup comp.sys.mac.apps on
+10/6/94.
+
+"Additional Tips and Troubleshooting," (supplied with every Power Macintosh),
+Chapter 1, pages 1-5
+
+"Power Macintosh Native Environment Description," Tech Info Library, AppleLink
+
+"Macintosh Reference," (supplied with every Power Macintosh), Chapter 5, "Using
+Hard Disk Space as Memory"
+
+Additional query words: 1.00 1.00a 2.00 2.10 4.00b 4.00c 5.00 6.00 PMAC PPC PowerPC m_works m_powerpt foxpro foxpro/mac excel setup office PowerMac
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHWMAC kbOSMAC kbWordSearch kbWordMacSearch kbExcelSearch kbPowerPtSearch kbWord98Search kbExcel98 kbExcel98Search kbExcelMacsearch kbPowerPt98Search kbPowerPt98 kbZNotKeyword3 kbExcel500Mac kbWord98
+Version           : :5.0,98
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q326952: XADM: &quot;Permission Problem&quot; Err Msg with Directory Replication | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q326952: XADM: &quot;Permission Problem&quot; Err Msg with Directory Replication" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/326/Q326952/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/326/Q326952/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/326/Q326952/","publisher":null,"image":null,"headline":"Q326952: XADM: &quot;Permission Problem&quot; Err Msg with Directory Replication","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q326952-xadm-permission-problem-err-msg-with-directory-replication">Q326952: XADM: "Permission Problem" Err Msg with Directory Replication</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q326952
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you manually force Intrasite Directory Replication (update the directory
+from within the site), you may receive the following error message:
+
+  The requested operation failed due to a permission problem encountered while
+  accessing a remote directory. Check that your account has permission to
+  perform this operation. Then check that the directory service on this server
+  has permission to set up replication on a remote directory. Both directory
+  services must be running under the same service account, and the service
+  account must have the Service Account Admin role on the site object.
+  0xc1030b22
+
+Additionally, the following event ID message is logged in the Application event
+log:
+
+  Event Type: Warning
+  Event Source: MSExchangeAdmin
+  Event Category: (4)
+  Event ID: 2019
+  Description:
+  An error occurred updating the replica of naming context '/o=ORGANIZATION' on
+  server 'SERVER'. The replica will be updated on server 'SERVER' during the
+  course of any normal replication updates. 0xc1030b22 - The requested
+  operation failed due to a permissions problem encountered while accessing a
+  remote directory. Check that your account has permission to perform this
+  operation. Then check that the directory service on this server has
+  permission to set up replication on a remote directory. Both directory
+  services must be running under the same service account, and the service
+  account must have the Service Account Admin role on the site object.
+
+CAUSE
+=====
+
+This behavior can occur if the account that you use to run the Microsoft
+Exchange Server Administrator program does not have "Modify Admin Attributes"
+permission on the Configuration container.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Start the Exchange Server Administrator program.
+
+2. Make sure the Permissions tab is visible for all objects.
+
+  a. On the Tools menu, click Options, and then click the Permissions tab.
+
+  b. Click to select the "Show Permissions page for all objects" and "Display
+     rights for roles on Permissions page" check boxes.
+
+  c. Click OK.
+
+3. Right-click the Configuration container, click Properties, and then click the
+  Permissions tab.
+
+4. Click the user account that manually forces Intrasite Directory Replication,
+  and then click to select the "Modify Admin Attributes" permission check box.
+
+NOTE: Instead of editing the permissions, you can directly grant the user account
+the Administrator Role, which automatically has the following permissions:
+
+- Add Child
+- Modify User Attributes
+- Modify Administrator
+- Attributes
+- Delete
+
+MORE INFORMATION
+================
+
+The Access Category property of an attribute determines the permissions that a
+user must have to modify the attribute. The Access Category property value
+definitions are as follows:
+
+- 0: Only the system can modify the attribute
+
+- 1: Users with Modify Admin Attributes permission can modify the attribute
+
+- 2: Users with Modify User Attributes permission can modify the attribute
+
+- 3: Users with Modify Permissions rights can modify the attribute
+
+For example, the Exchange Phone Number attribute, which is mapped to the
+Lightweight Directory Access Protocol (LDAP) telephoneNumber attribute, has an
+Access Category value of 2, which means that users with "Modify Users
+Attributes" permission on the object can change the value.
+
+To discover all of the properties you can modify according to a permission,
+follow the procedure described in this section. WARNING: If you use the raw mode
+of the Exchange Server Administrator program (admin /r) incorrectly, serious
+problems may occur that may require you to reinstall Microsoft Windows NT
+Server, Microsoft Exchange Server, or both. Microsoft cannot guarantee that
+problems that result from using raw mode incorrectly can be solved. Use raw mode
+at your own risk.
+
+1. Start the Exchange Server Administrator program in raw mode by typing the
+  following at a command prompt:
+
+  "c:\exchsrvr\bin\admin /r" (without the quotation marks)
+
+2. On the View menu, click Raw Directory.
+
+3. In the right pane, double-click Schema.
+
+4. Double-click the attribute that you want to modify.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q168753 XADM: Microsoft Exchange Roles, Rights, and Permissions
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

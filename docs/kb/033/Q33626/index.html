@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q33626: Assembly Routine Using STD Works in QB 3.00, Not 4.00 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q33626: Assembly Routine Using STD Works in QB 3.00, Not 4.00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/033/Q33626/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/033/Q33626/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/033/Q33626/","publisher":null,"image":null,"headline":"Q33626: Assembly Routine Using STD Works in QB 3.00, Not 4.00","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q33626-assembly-routine-using-std-works-in-qb-300-not-400">Q33626: Assembly Routine Using STD Works in QB 3.00, Not 4.00</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q33626
+Product(s): See article
+Version(s): 3.00 4.00 4.00B 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 6-DEC-1989
+
+An assembly-language subprogram that uses the STD instruction (sets
+the direction flag to indicate that strings will process down from
+high addresses to low addresses) may not print the string correctly in
+QuickBASIC Version 4.00 unless the flag is first cleared before
+returning, using the CLD instruction. Although this is the recommended
+way to program the assembly language subprogram, QuickBASIC Version
+3.00 prints the string correctly even if the flag was not cleared.
+
+The following is a code example:
+
+'This BASIC program calls the MASM subprogram RTrim, with a string variable
+'and an integer as variables. Rtrim looks at the given string and returns
+'the string's length, minus any trailing blank characters.
+
+DEFINT A-Z
+length = 0
+INPUT "String: ", x$         'Take a string, any string....
+x$ = x$ + STRING$(2, 32)     'Add two trailing blank characters.
+PRINT x$; LEN(x$)            'Print the string and its length.
+CALL RTrim(x$, length)
+x$ = LEFT$(x$, length)       'Chop off any trailing blanks.
+PRINT x$; LEN(x$)            'Print the new string and its new length.
+END
+
+.MODEL  MEDIUM
+.CODE
+        PUBLIC RTrim
+RTrim   PROC
+        push    bp
+        mov     bp,sp
+        push    es
+        push    ds              ;Be sure ES and DS match.
+        pop     es
+        mov     bx,[bp+8]       ;Get the string's descriptor.
+        mov     di,[bx+2]       ;DI points to the string.
+        mov     cx,[bx]         ;Get the string's length in CX.
+        jcxz    exit            ;Length = 0?  If it is, then exit.
+        add     di,cx           ;DI points past the string.
+        dec     di              ;DI now points to the last character in
+                                ;the string.
+        std                     ;Direction: High to Low.
+        mov     al,20h          ;Blank to look for.
+        repe    scasb           ;Repeat until a character other than
+                                ;a blank is found.
+        mov     bx,[bp+6]       ;Now get the word to store the length.
+        jnz     go_on           ;If found then go ahead,
+        mov     word ptr [bx],0 ;else store 0 in the word pushed as 2nd
+        jmp     short exit      ;parameter, then exit.
+go_on:  inc     cx
+        mov     [bx],cx         ;Store it in Arg1.
+exit:   cld                     ;****Need this to run with QuickBASIC 4.00.
+        pop     es              ;Restore the initial values for ES and
+        pop     bp              ;BP as required.
+        ret     4               ;Pop off the two parameters before
+RTrim   ENDP                    ;returning to caller.
+        END
+
+   The following are the results without the CLD instruction in
+QuickBASIC Version 4.00:
+
+   String: abcdefghijklmnopqrstuvwxyz
+   abcdefghijklmnopqrstuvwxyz   28
+   a8   zyxwvutsrqponmlkjif 26
+
+   The following are the results in QuickBASIC Version 3.00, or with
+the CLD instruction in QuickBASIC Version 4.00:
+
+   String: abcdefghijklmnopqrstuvwxyz
+   abcdefghijklmnopqrstuvwxyz   28
+   abcdefghijklmnopqrstuvwxyz 26
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

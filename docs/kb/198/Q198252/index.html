@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198252: PRB: Installation Error with Setup Wizard in Visual Basic 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198252: PRB: Installation Error with Setup Wizard in Visual Basic 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198252/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198252/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198252/","publisher":null,"image":null,"headline":"Q198252: PRB: Installation Error with Setup Wizard in Visual Basic 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198252-prb-installation-error-with-setup-wizard-in-visual-basic-50">Q198252: PRB: Installation Error with Setup Wizard in Visual Basic 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198252
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbVBp kbVBp500 kbVBp500bug kbGrpDSVB
+Last Modified: 10-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a setup program for your Visual Basic application using the setup
+wizard in Visual Basic 5.0 and then install it on a target computer, which uses
+either Windows NT 4.0 SP3, Windows NT 4.0 SP4, or Windows 95 as the operating
+system, the following errors may occur:
+
+  The ordinal 401 could not be located in the dynamic link library
+  OLEAUT32.dll.
+
+  -or-
+
+  Invalid procedure call or argument, An unexpected setup error has occurred!
+
+CAUSE
+=====
+
+There is a version mismatch with the Msvbvm50.dll file. The following version of
+the Msvbvm50.dll file causes this error:
+
+  File Name        Date         Version       Size
+  -----------------------------------------------------
+  Msvbvm50.dll     11/18/97     6.0.73.22     1340688
+
+This version of the Msvbvm50.dll file ships with the following book by Sybex:
+
+  MCSD: SQL Server 6.5 Database Design Study Guide
+  By Kevin Hough
+  ISBN: 0-7821-2269-8
+
+The Sybex software contains a non-release beta version of the Visual Basic
+run-time DLL, Msvbvm50.dll (version 6.00.73.22). Because the version number is
+higher than any other released versions of the Msvbvm50.dll file, it will
+replace any existing Msvbvm50.dll file on the target computer.
+
+RESOLUTION
+==========
+
+1. Unregister the Msvbvm50.dll file and remove it on both the development
+  computer and the target computer.
+
+  To unregister the Msvbvm50.dll file, use the Regsvr32.exe utility. The
+  Msvbvm50.dll file resides in the Windows system directory. For example, on
+  Windows NT enter the following line using the Start/Run menu option:
+
+  regsvr32 /u C:\WINNT\SYSTEM32\MSVBVM50.DLL
+
+  When the Msvbvm50.dll file is successfully unregistered, delete or rename it
+  from the Windows system directory.
+
+2. Download the Msvbvm50.exe file from the Microsoft Web site as specified in
+  the following Microsoft Knowledge Base article:
+
+  Q180071 : FILE: Msvbvm50.exe Installs Visual Basic 5.0 Run-Time Files
+
+3. Run the Msvbvm50.exe file on the development computer.
+
+4. Recreate the setup program for your application.
+
+REFERENCES
+==========
+
+For more information on problems relating to this version of the Msvbvm50.dll
+file, please see the following article in the Microsoft Knowledge Base:
+
+  Q193358 PRB: Books Online Causes an IPF at 00DE:00000003
+
+For more information about downloading Microsoft Support files, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp kbVBp500 kbVBp500bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

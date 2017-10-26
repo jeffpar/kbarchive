@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62562: DOS LAN Manager NetBIOS Sample Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62562: DOS LAN Manager NetBIOS Sample Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62562/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62562/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62562/","publisher":null,"image":null,"headline":"Q62562: DOS LAN Manager NetBIOS Sample Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62562-dos-lan-manager-netbios-sample-program">Q62562: DOS LAN Manager NetBIOS Sample Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62562
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+The following program demonstrates the usage of the NetBIOS post processing
+routine for asynchronous network control block (NCB). submission and processing
+in the MS-DOS LAN Manager environment.
+
+  /*
+      Compile option: CL -C -W3 -Zi ncbpost.c
+      Link    option: Link /CO ncbpost,,,slibcer;
+      Usage         :
+                      ncbpost
+
+     This software is provided for demonstration purposes only.
+     Microsoft makes no warranty, implied or otherwise, regarding
+     its usability in any given situation.
+
+   */ 
+
+  #define FALSE 0
+  #define TRUE  1
+
+  #include &lt;stdio.h&gt;
+  #include &lt;dos.h&gt;
+  #include &lt;string.h&gt;
+
+  #include &lt;netcons.h&gt;
+  #include &lt;ncb.h&gt;
+  #include &lt;netbios.h&gt;
+
+  void NetBiosRequest(NCB far *);
+
+  //PostRoutine() declaration.
+
+  extern void  cdecl interrupt far  PostRoutine(
+                              unsigned int es, unsigned int ds,
+                              unsigned int di, unsigned int si,
+                              unsigned int bp, unsigned int sp,
+                              unsigned int bx, unsigned int dx,
+                              unsigned int cx, unsigned int ax,
+                              unsigned int ip, unsigned int cs,
+                              unsigned int flags);
+
+  // Boolean signal between main() and PostRoutine(). Main() sets this
+  // signal to FALSE before submitting an asynchronous NCB.
+  // Subsequently, PostRoutine() sets this flag to TRUE upon
+  // completion of the NCB.
+
+  int  PostRoutineDriven;
+
+  void main()
+  {
+      NCB tstNCB;
+      ASTAT AStatBuf;
+      register int i,j;
+      unsigned short *usPtr;
+
+      // Assign a pointer to PostRoutine().
+      void  (far *PostRoutinePtr)() = (void (far *)()) PostRoutine;
+
+                      // ADD A NAME.
+
+      tstNCB.ncb_command = NCBADDNAME | ASYNCH;
+      strcpy(tstNCB.ncb_name,"aa");
+      tstNCB.ncb_lana_num = 0;
+
+      usPtr = (unsigned short *) &amp;tstNCB.ncb_post;
+      *usPtr  = FP_OFF( PostRoutinePtr);
+      usPtr++;
+      *usPtr  = FP_SEG( PostRoutinePtr);
+
+      printf("\nsubmitting NCBADDNAME   \n");
+      NetBiosRequest((NCB far *)&amp;tstNCB);
+      do {
+
+              // We will come out once PostRoutine() is done.
+
+      } while (PostRoutineDriven == FALSE );
+      PostRoutineDriven = FALSE;
+
+      printf("cmd cplt code: %d\n",tstNCB.ncb_cmd_cplt);
+      printf("ret code: %d\n",tstNCB.ncb_retcode);
+
+                  // NOW DELETE THE NAME.
+
+      tstNCB.ncb_command = NCBDELNAME | ASYNCH;
+      strcpy(tstNCB.ncb_name,"aa");
+      tstNCB.ncb_lana_num = 0;
+
+      usPtr = (unsigned short *) &amp;tstNCB.ncb_post;
+      *usPtr  = FP_OFF( PostRoutinePtr);
+      usPtr++;
+      *usPtr  = FP_SEG( PostRoutinePtr);
+
+      printf("\nsubmitting NCBDELNAME   \n");
+      NetBiosRequest((NCB far *)&amp;tstNCB);
+      do {
+
+              // We will come out once PostRoutine() is done.
+
+      } while (PostRoutineDriven == FALSE );
+      PostRoutineDriven = FALSE;
+
+      printf("cmd cplt code: %d\n",tstNCB.ncb_cmd_cplt);
+      printf("ret code: %d\n",tstNCB.ncb_retcode);
+
+                  // ADD A GROUP NAME.
+
+      tstNCB.ncb_command = NCBADDGRNAME | ASYNCH;
+      strcpy(tstNCB.ncb_name,"aa");
+      tstNCB.ncb_lana_num = 0;
+
+      usPtr = (unsigned short *) &amp;tstNCB.ncb_post;
+      *usPtr  = FP_OFF( PostRoutinePtr);
+      usPtr++;
+      *usPtr  = FP_SEG( PostRoutinePtr);
+
+      printf("\nsubmitting NCBADDGRNAME  \n");
+      NetBiosRequest((NCB far *)&amp;tstNCB);
+      do {
+
+              // We will come out once PostRoutine() is done.
+
+      } while (PostRoutineDriven == FALSE );
+      PostRoutineDriven = FALSE;
+
+      printf("cmd cplt code: %d\n",tstNCB.ncb_cmd_cplt);
+      printf("ret code: %d\n",tstNCB.ncb_retcode);
+
+                  // NOW DELETE THE GROUP NAME.
+
+      tstNCB.ncb_command = NCBDELNAME | ASYNCH;
+      strcpy(tstNCB.ncb_name,"aa");
+      tstNCB.ncb_lana_num = 0;
+
+      usPtr = (unsigned short *) &amp;tstNCB.ncb_post;
+      *usPtr  = FP_OFF( PostRoutinePtr);
+      usPtr++;
+      *usPtr  = FP_SEG( PostRoutinePtr);
+
+      printf("\nsubmitting NCBDELNAME   \n");
+      NetBiosRequest((NCB far *)&amp;tstNCB);
+      do {
+
+              // We will come out once PostRoutine() is done.
+
+      } while (PostRoutineDriven == FALSE );
+      PostRoutineDriven = FALSE;
+
+      printf("cmd cplt code: %d\n",tstNCB.ncb_cmd_cplt);
+      printf("ret code: %d\n",tstNCB.ncb_retcode);
+
+      printf("\n All is well!!!\n");
+
+  }
+
+  void NetBiosRequest(NcbPtr)
+  NCB *NcbPtr;
+  {
+      union REGS InRegs,OutRegs;
+      struct SREGS SegRegs;
+
+      InRegs.x.bx = FP_OFF(NcbPtr);
+      SegRegs.es  = FP_SEG(NcbPtr);
+
+      int86x(0x5C,&amp;InRegs,&amp;OutRegs,&amp;SegRegs);
+  }
+
+  void  cdecl interrupt far  PostRoutine(
+                                   es,      ds,
+                                   di,      si,
+                                   bp,      sp,
+                                   bx,      dx,
+                                   cx,      ax,
+                                   ip,      cs,
+                                   flags)
+  unsigned es, ds, di, si, bp, sp, bx, dx, cx, ax, ip, cs, flags;
+
+    {
+
+      PostRoutineDriven = TRUE;
+
+      /* MS-DOS CALLS AREN'T ALLOWED HERE SINCE MS-DOS IS
+         NON-REENTRANT. */ 
+
+      /*  ES:BX point to completed ncb */ 
+
+     }
+
+Additional query words: 2.00 2.0 2.10 2.1 2.1A 2.20 netbios
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

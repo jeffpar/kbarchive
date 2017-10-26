@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262949: SMS: During 1.2 Upgrade, RC Won’t Complete if Sms.ini Deleted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262949: SMS: During 1.2 Upgrade, RC Won’t Complete if Sms.ini Deleted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262949/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262949/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262949/","publisher":null,"image":null,"headline":"Q262949: SMS: During 1.2 Upgrade, RC Won’t Complete if Sms.ini Deleted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262949-sms-during-12-upgrade-rc-wont-complete-if-smsini-deleted">Q262949: SMS: During 1.2 Upgrade, RC Won’t Complete if Sms.ini Deleted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262949
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbClient kbConfig _IK964 kbsms200 kbHelpDesk kbUpgrade kbRemoteProg
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+When you upgrade a Systems Management Server (SMS) 1.2 client to SMS 2.0 without
+removing the old SMS client software, but you delete the Sms.ini file on the
+client, the Remote Control service may log messages in the Remctrl.log, noting
+that it is in an install pending state.
+
+After you restart the client, none of the SMS 1.2 services are running.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+SMS 2.0 uses three markers to determine if a client is an SMS 1.2 client:
+
+1. The Sms.ini file.
+
+2. In the SMS registry entry, it checks the load key under
+  HKCU\Software\Microsoft \WindowsNT\CurrentVersion\Windows to see if it
+  contains Smsrun32.
+
+3. It checks the load line in the Win.ini file to see if it contains
+  Smsrun16.exe.
+
+The upgrade from the SMS 1.2 Remote Control components to the SMS 2.0 Remctrl.exe
+(the SMS 2.0 remote control bundle) consists of two parts: One that depends on
+migration (Migrat1x.exe) to complete, and another test that it performs
+separately from the migration.
+
+Migrat1x.exe can only remove the SMS 1.2 components that it knows about. It uses
+the Sms.ini file as the key to the SMS 1.2 components that are present, and
+where a component can be found to remove it. If the Sms.ini file is not present,
+a number of SMS 1.2 components will remain on that client (including Remote
+Control), because the key to the entire cleanup, or migration process has been
+removed.
+
+As a result, other client components may not be upgraded either.
+
+The Remctrl.log file generates the following message every time the computer
+starts:
+
+  Remote Control Installation starting
+  Looking for conflicting products on an NT system
+  SMS 1.2 Client Migration is not yet complete.
+  Migration status is 'Failed'
+  Abandoning installation until after next reboot
+  Successfully notified SMS that installation has not completed
+  Installation abandoned at &lt;date&gt;
+
+The Install.log for the Remote Control component generates the following
+message:
+
+  *** Installation Started &lt;date&gt; ***
+  Title: SMS Remote Control Installation
+  Source: \\SCHULZ\CAP_MFS\clicomp.box\remctrl\i386\remctrl.exe
+  SMS 1.2 Remote Control client on workstation.
+  Abandoning installation until after next reboot.
+
+There is an SMS Client Installation State registry key in the registry that is
+located in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Client\Client
+Components\Remote Control\Installation Properties. Until migration is completed,
+and until this key is set to Done (which Migrat1x.exe was unable to set upon
+completion), SMS 2.0 Remctrl.exe does not try to install Remote Control
+components. If it were to do so, Migrat1x.exe might unknowingly clean up
+incoming SMS 2.0 Remote Control components.
+
+If you experience this condition, the migration can be continued by replacing the
+contents of this registry key with "Done" (without the quotation marks), and
+then restarting the computer, at which point the migration continues.
+
+After the migration is complete, the Remctrl bundle scans all local hard drives
+for copies of Wuser.exe, and Wuser32.exe. If it finds either of these files, it
+assumes a third-party Remote Control agent is resident, chooses not to replace
+it, logs an error in the Remctrl.log file, stops gracefully, and then waits for
+someone to read the log and make the necessary adjustments so that it can
+install SMS 2.0 Remote Control at some point in the future.
+
+REFERENCES
+==========
+
+For additional information about the functions of Migrat1x.exe, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q199227 Functions of Migrat1x.exe
+
+For additional information about migrating SMS 1.2 clients to SMS 2.0, refer to
+Chapter 12, in the Microsoft Systems Management Server 2.0 Resource Guide.
+
+Additional query words: prodsms remote control upgrade Remctrl log Sms ini SMSRUN32 Win Smsrun16 exe Migrat1x Wuser Wuser32
+
+======================================================================
+Keywords          : kbClient kbConfig _IK964 kbsms200 kbHelpDesk kbUpgrade kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

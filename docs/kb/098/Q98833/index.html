@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98833: Interpreting LAN Manager’s Audit Log | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98833: Interpreting LAN Manager’s Audit Log" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98833/","publisher":null,"image":null,"headline":"Q98833: Interpreting LAN Manager’s Audit Log","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98833-interpreting-lan-managers-audit-log">Q98833: Interpreting LAN Manager’s Audit Log</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98833
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+This article answers these questions related to the LAN Manager audit log
+output:
+
+- What is the difference between an Audit log entry of type "Session" with text
+  of "Logoff Normal" versus the type "Audit" with text of "Log off Network"?
+
+- What is the difference between the audit log entries "Log on to Network" with
+  text of "Logon User, Duration..." compared to "Session" with text of "Logon
+  User, Duration..."?
+
+- Why are there so many entries of "Logon User - with a duration time of less
+  than 1 second"? Usually users are logged on for a longer duration right after
+  that. Why this short time?
+
+Briefly, these are server transactions that occur during the startup phase of a
+LAN Manager workstation, server, and server services. A more detailed
+explanation is provided below. The explanation works through an extended
+example; it does not address these three questions under separate headings.
+
+MORE INFORMATION
+================
+
+Here is a typical audit output viewing a server startup logon pattern:
+
+Username                 Type                 Date
+--------------------------------------------------
+
+1 ***                    Service              12-01-92 05:01pm
+2   NETLOGON Installed
+
+3 ***                    Service              12-01-92 05:02pm
+4   ALERTER Installed
+
+5 ***                    Service              12-01-92 05:02pm
+6   REPLICATOR Installed
+
+7 ***                    Service              12-01-92 05:02pm
+8    SERVER Installed
+
+9 ***                    Server               12-01-92 05:02pm
+10   Server started
+
+11  BILLG                Session              12-01-92 05:02pm
+12   Logon Admin
+
+13  BILLG                Log on to network    12-01-92 05:02pm
+14   Logon Admin
+
+15  BILLG                Session              12-01-92 05:02pm
+16   Logoff normal, Duration: Less than one second
+
+17  BILLG                Session              12-01-92 05:02pm
+18   Logon Admin
+ The command completed successfully.
+
+The 18 lines of this audit record were generated from a STARTUP.CMD file
+containing the following lines:
+
+  net start server /auditing:yes
+  net logon billg password /y
+
+Note: Lines have been inserted in the audit log (shown above) to provide a
+logical grouping of transaction information with two transaction lines per
+grouping.
+
+The first command executed in the STARTUP.CMD (shown above) is "NET START SERVER
+/AUDITING:YES". This generates lines 1-10 of the audit log output.
+
+As noted above, all entries may be logically paired to show:
+
+- Who did an activity (at what time)
+
+- What activity occurred
+
+Example
+-------
+
+1 ***  Service          12-01-92 05:01pm      &lt;Who performed&gt;
+2   NETLOGON Installed                        &lt;What activity&gt;
+
+The *** on lines 1, 3, 5, 7, and 9 further above indicate the server performed
+the activity. After the services and server start, the audit log contains lines
+1-10.
+
+The second command executed in the STARTUP.CMD file is "net logon Billg password
+/y".
+
+The "successful session logon" transaction is one that can be audited. (See page
+43 of the Microsoft LAN Manager "Installation and Configuration Guide," version
+2.2 for other auditing transactions).
+
+Associated with a NET LOGON (even executed from the server) is first a broadcast
+by the workstation services routines to find the server. This broadcast results
+in a session establishment between the workstation and server to receive a
+request (in this case, to handle a NET LOGON request). In the course of session
+establishment (similar to a NET USE), a user validation occurs. This results in
+an audit entry for "successful session logon" as shown below.
+
+11  BILLG             Session              12-01-92 05:02pm
+12   Logon Admin
+
+Note: At this point we have done nothing related to the NET LOGON service,
+although the user account database is used for a user/password validation.
+
+Next, the workstation sends a Server Message Block (SMB) request to the server
+service to "logon to the network". This request is received by the server and
+processed by the NET LOGON service. This includes validation by the NET LOGON
+service of the user's username and password. This is the "successful network
+logon".
+
+13  BILLG               Log on to network    12-01-92 05:02pm
+14   Logon Admin
+
+After this, the NET LOGON session is disconnected from the server. This is
+displayed in the audit log as a logoff (actually, this is a session disconnect).
+For NET LOGON, this pattern of broadcast, session establishment, NET LOGON, and
+disconnect is normal because NET LOGON is session based. After the NET LOGON
+occurs, the session is disconnected because no permanent session is required
+after the NET LOGON completes.
+
+15  BILLG               Session              12-01-92 05:02pm
+16   Logoff normal, Duration: Less than one second
+
+This reveals the following pattern (*) for NET LOGON transactions:
+
+ * session connect   -&gt;  [session logon]
+ 11  BILLG              Session              12-01-92 05:02pm
+ 12   Logon Admin
+
+ * logon validation   -&gt; [network logon]
+ 13  BILLG               Log on to network    12-01-92 05:02pm
+ 14   Logon Admin
+
+ * session disconnect -&gt; [session disconnect]
+ 15  BILLG               Session              12-01-92 05:02pm
+ 16   Logoff normal, Duration: Less than one second
+
+Finally, if persistent connections are enabled (as in this case), a NET USE may
+occur, resulting in session establishment of a more permanent session logon
+(depending on the autodisconnect value).
+
+17   BILLG              Session              12-01-92 05:02pm
+18   Logon Admin
+
+REFERENCES
+==========
+
+Microsoft LAN Manager "Installation and Configuration Guide," page 43.
+
+Additional query words: 2.10 2.1 2.1a 2.2
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q260352: PRB: Delay in Receiving Final Report Using Routing Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q260352: PRB: Delay in Receiving Final Report Using Routing Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/260/Q260352/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/260/Q260352/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/260/Q260352/","publisher":null,"image":null,"headline":"Q260352: PRB: Delay in Receiving Final Report Using Routing Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q260352-prb-delay-in-receiving-final-report-using-routing-wizard">Q260352: PRB: Delay in Receiving Final Report Using Routing Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q260352
+Product(s): Microsoft Exchange
+Version(s): 5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
+Operating System(s): 
+Keyword(s): kbMsg kbGrpDSMsg kbDSupport
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5 SP1, 5.5 SP2, 5.5 SP3, 5.5 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Routing Wizard for parallel routing, you may not receive the
+final report for several days, even though the posted message is approved or
+rejected immediately by all the recipients.
+
+CAUSE
+=====
+
+The Routing Wizard uses the following map for the routing process:
+
+  ......
+
+  1010   Wait              0     10080
+  1012   Goto              0     1020
+  1014   Wait              0     0 
+  1020   ORSplit           0     IsTimeout            
+  ......
+
+  5000   ORSplit           0     IsApprovedTable
+  ......
+
+  10000  FinalizeReport    2     False                False
+  ......
+
+  20000  FinalizeReport    2     True                 False
+  ......
+
+  20020  Terminate         0     0
+  20030  Goto              0     20020
+  30000  Terminate         0     1
+  ......
+
+You can only reach the ORSplit action at 5000 and create the final report when
+the IsTimeout action returns True. However, the following action indicates that
+the routing process will use the waiting time that was used by the previous Wait
+action, which is 10080 minutes (7 days):
+
+  Wait    0      0   
+
+RESOLUTION
+==========
+
+Routing Wizard is a sample tool that is used to illustrate some of the
+capabilities of the Exchange Server Routing objects. You can and should use the
+ideas that are provided by the Routing Wizard to write your own tools. If you
+want your tools to behave differently, you can modify the script source code or
+change the routing map.
+
+To speed up the routing process, modify the routing map as follows:
+
+- Reduce 10080 (7 days) to a smaller number, such as 1440 (1 day).
+
+To do this, replace the following code
+
+  1010   Wait    0     10080
+
+with:
+
+  1010   Wait    0     1440
+
+- Specify the wait time instead of using the existing waiting time.
+
+To do this, replace the following code
+
+  1014   Wait    0      0   
+
+with:
+
+  1014   Wait    0      60    'one hour
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Microsoft Exchange Server 5.5 Service Pack 1 provides the Routing Wizard routing
+tool. The Routing Wizard sample application illustrates the type of routing
+tools that can be built easily with Microsoft Exchange Routing. With the Routing
+Wizard, you can define and install simple sequential or parallel routing and
+approval logic into Exchange Server folders.
+
+REFERENCES
+==========
+
+For more information on how to use the Routing Wizard, see the Microsoft
+Developer Network (MSDN).
+
+Additional query words: Event Scripting Agent, Routing Wizard
+
+======================================================================
+Keywords          : kbMsg kbGrpDSMsg kbDSupport 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3 kbExchange550SP4
+Version           : :5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

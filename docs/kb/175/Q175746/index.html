@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175746: XFOR: Specifying the Container for Propagated Users | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175746: XFOR: Specifying the Container for Propagated Users" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175746/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175746/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175746/","publisher":null,"image":null,"headline":"Q175746: XFOR: Specifying the Container for Propagated Users","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175746-xfor-specifying-the-container-for-propagated-users">Q175746: XFOR: Specifying the Container for Propagated Users</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175746
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0,5.0,5,5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 12-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to specify the container in which directory updates
+propagated to Exchange are placed.
+
+MORE INFORMATION
+================
+
+By default, when user information is propagated to Exchange, the Distinguished
+Name (DN) mapping rule determines what object is created within the Exchange
+hierarchy and where the custom recipients are located. By default, Lotus Notes
+users being propagated to Exchange will have a container created for them under
+the Recipients container whose DN is that of the Notes organization name. This
+container will contain custom recipient objects that represent all the Lotus
+Notes person documents propagated to Exchange.
+
+To modify the default mapping rule and place the users in a container called
+Runningman, modify the default rule listed below using the LinkAge
+Administrator:
+
+1. Shut down the Directory Exchange processes. To do this, in the LinkAge
+  Administrator, expand Directory Exchange Manager, Directory Exchange Manager
+  Server, and Status. Suspend all three processes. If these services are
+  enabled, you cannot modify the mapping rules.
+
+2. To edit the mapping rules, in the LinkAge Administrator user interface,
+  expand Directory Exchange Manager, Directory Classes, Exchange, and Mapping
+  Rules.
+
+3. Change the source class to Notes in the drop-down box, and double-click DN
+  Rule to modify the mapping rule. Click OK when prompted.
+
+Default mapping rule:
+"/O=&lt;Exchange Org. Name&gt;/OU=&lt;Exchange Site Name&gt;/CN=Recipients"
+AND("/CN=",X500(fullname,"O")) AND("/CN=",X500(fullname,"OU"))
+AND("/CN=",X500(fullname,"CN")) ISEQUAL(X500(fullname,"CN"),"","/CN="
+STRIP(fullname,";","L","R"),"")
+
+With no modifications, the above default mapping rule will create a new container
+in the Recipients container whose DN and Display Name is that of the Notes
+organization. All Notes person documents will have a corresponding custom
+recipient created and placed in this container. If you want to create the
+container at the same level as the Recipient container, assign CN the value of
+the new container, for example, Runningman.
+
+"/O=&lt;Org. Name&gt;/OU=&lt;Site Name&gt;/CN=Runningman"
+AND("/CN=",X500(fullname,"O")) AND("/CN=",X500(fullname,"OU"))
+AND("/CN=",X500(fullname,"CN")) ISEQUAL(X500(fullname,"CN"),"","/CN="
+STRIP(fullname,";","L","R"),"")
+
+The above mapping rule will create a new container called Runningman at the same
+level as the Recipients container and create a container within this new
+container whose directory name is that of the Notes organization. All Notes
+custom recipients will be placed within this container.
+
+A mapping rule of:
+"/O=&lt;Org. Name&gt;/OU=&lt;Site Name&gt;/CN=Runningman"
+
+would create a container called Runningman at the same level as the Recipients
+container and place all Notes person documents within this container.
+
+Each change of the mapping rules requires a remap of entries in the Master
+Mapping Directory (MMD). To do this, enable the three processes suspended
+earlier, and then click the Remap button. Wait until the process has completed
+before attempting further directory synchronization.
+
+For Exchange 5.5, the DN attribute is used to store the UNID value from Notes. By
+default, in version 5.5 the Notes custom recipients are stored in the Recipients
+container. To have them stored in another container, do the following:
+
+1. Create the required container in the Exchange Administrator.
+
+2. Using the property pages for the Notes connector, click the Import Container
+  tab and choose the desired container.
+
+Additional query words: object
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0,5,5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

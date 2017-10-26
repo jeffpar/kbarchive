@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115482: SET VOLUME Provides Support for MS-DOS-Style Paths | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115482: SET VOLUME Provides Support for MS-DOS-Style Paths" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115482/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115482/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115482/","publisher":null,"image":null,"headline":"Q115482: SET VOLUME Provides Support for MS-DOS-Style Paths","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115482-set-volume-provides-support-for-ms-dos-style-paths">Q115482: SET VOLUME Provides Support for MS-DOS-Style Paths</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115482
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To assign a drive letter to the Macintosh volume (hard disk), use the SET VOLUME
+command.
+
+MORE INFORMATION
+================
+
+After a drive letter has been assigned to the hard disk, you can use normal
+MS-DOS-style path conventions, with the exception of folders (directories) whose
+names contain spaces. If a folder name contains spaces, the entire path must be
+enclosed in quotation marks.
+
+For more information about Macintosh paths, volumes, folders, and files, see page
+17 of the "Installation and Macintosh Features Guide."
+
+Steps to Assign a Drive Letter to the Hard Disk
+-----------------------------------------------
+
+1. Determine the name of the hard disk. Using the Macintosh Finder, view the
+  name displayed below the hard disk icon, or type the following in the FoxPro
+  Command window:
+
+        SET VOLUME C: TO  &amp;&amp; Clears VOLUME setting, if any
+        SET DEFAULT TO    &amp;&amp; Makes the volume's root the current directory
+        ?SYS(5)           &amp;&amp; Displays volume name
+
+2. In this example, assume the hard disk is called "Macintosh HD:" (without the
+  quotation marks). Type one of the following commands in the Command window:
+
+        SET VOLUME C: TO "Macintosh HD:"
+
+  -or-
+
+        SET VOLUME C: TO SYS(5)
+
+NOTE: To set the drive letter each time FoxPro starts, add the following line to
+the CONFIG.FPM file:
+
+     VOLUME C: = "Macintosh HD:"
+
+Referencing a Folder Name with Spaces
+-------------------------------------
+
+Assume the SET VOLUME command has been issued, and a folder called Test Folder
+exists in the hard disk window.
+
+To set the default to this folder, type the following in the Command window:
+
+     SET DEFAULT TO "C:\Test Folder"
+
+NOTE: In this example, do not use a folder that resides on the desktop itself.
+You should see the folder in the hard disk window. If the hard disk window is
+not open, double-click the hard disk icon, usually located in the upper-right
+corner of the desktop.
+
+For information about referencing folders on the desktop, please see the
+following article(s) in the Microsoft Knowledge Base:
+
+  Q114806 Path to the Macintosh Desktop
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: VFoxMac FoxMac pathing akz
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

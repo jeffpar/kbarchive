@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72701: Writing Macro Functions and Using the EXITM Directive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72701: Writing Macro Functions and Using the EXITM Directive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72701/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72701/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72701/","publisher":null,"image":null,"headline":"Q72701: Writing Macro Functions and Using the EXITM Directive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72701-writing-macro-functions-and-using-the-exitm-directive">Q72701: Writing Macro Functions and Using the EXITM Directive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q72701
+Product(s): Microsoft Macro Assembler
+Version(s): 6.0,6.0a,6.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Beginning with the Microsoft Macro Assembler (MASM) version 6.0, a macro can be
+written that will return either a text or numeric value. This is called a "Macro
+Function" and is implemented with the EXITM directive.
+
+In MASM versions earlier than 6.0, the EXITM directive was used to exit a macro
+immediately. There were no arguments or parameters. With versions 6.0 and later,
+the EXITM directive takes an optional argument that specifies the return value.
+This argument must be either text, a text equate name, or the result of another
+macro function. In addition, the EXITM directive must be at the end of a macro
+block if it is to be used to return a value.
+
+MORE INFORMATION
+================
+
+The two examples below illustrate a couple of ways to use a macro function. In
+the first example, a macro function is used to concatenate a text string to
+create unique labels for a procedure definition. The example code is followed by
+an extract from the list file showing the concatenated names for the
+procedures.
+
+The second example illustrates how a numeric value may be returned by using the
+expansion operator (%). This example is followed by a preprocessor listing
+showing the resultant code.
+
+Sample Code 1
+-------------
+
+  ; Assemble options needed: /c /Fl
+
+          .model small
+
+  prefix  TEXTEQU &lt;mycode_&gt;
+
+  paste   MACRO   arg1,arg2       ;Macro function that concatenates
+          EXITM   &lt;arg1&amp;&amp;arg2&gt;    ;  strings arg1 and arg2
+  ENDM
+
+  n_proc  MACRO new_name          ;Macro that calls the paste
+          paste   (%prefix,&amp;new_name) PROC ;  macro function.
+          paste   (%prefix,&amp;new_name) ENDP ; The % expansion operator
+  ENDM                            ;  evaluates the expression
+                                  ;  associated with prefix.
+          .code
+
+          n_proc   fun_1
+          n_proc   fun_2
+
+          END
+
+  =================== EXTRACT FROM LIST FILE =========================
+
+  Macros:
+         N a m e         Type
+
+  n_proc .............   Proc
+  paste  .............   Func
+
+  Procedures,  parameters and locals:
+         N a m e            Type    Value   Attr
+
+  mycode_fun_1 ..........  P Near   0000    _TEXT  Length= 0000 Public
+  mycode_fun_2 ..........  P Near   0000    _TEXT  Length= 0000 Public
+
+  ====================================================================
+
+Sample Code 2
+-------------
+
+  ; Assemble options needed: /c /EP
+
+           .model small
+
+  get_rate MACRO val              ; macro function that accepts a
+           LOCAL thin             ;   value and returns the results of
+           thin TEXTEQU &lt;val*300&gt; ;   an expression.
+           EXITM %thin
+  ENDM
+
+  baudrate MACRO
+           FOR b_rate, &lt;1, 4, 8&gt;     ; Equivalent to IRP with MASM 5.1a.
+              BYTE b_rate
+              WORD get_rate(b_rate)  ; Call to Macro Function.
+           ENDM
+  ENDM
+
+           .code
+
+           baudrate
+
+           END
+
+  ====================== PREPROCESSOR LISTING =========================
+
+     .model small
+
+     .code
+           BYTE 1
+        ??0000 TEXTEQU &lt;1*300&gt;  ; An expression
+           WORD 300             ; Call to Macro Function
+           BYTE 4
+        ??0001 TEXTEQU &lt;4*300&gt;  ; An expression
+           WORD 1200            ; Call to Macro Function
+           BYTE 8
+        ??0002 TEXTEQU &lt;8*300&gt;  ; An expression
+           WORD 2400            ; Call to Macro Function
+     end
+  =====================================================================
+
+Additional query words: kbinf 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : :6.0,6.0a,6.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

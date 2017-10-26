@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112389: The Unexpected QuickWin Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112389: The Unexpected QuickWin Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112389/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112389/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112389/","publisher":null,"image":null,"headline":"Q112389: The Unexpected QuickWin Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112389-the-unexpected-quickwin-error">Q112389: The Unexpected QuickWin Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q112389</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Software</span> <span class="n">Development</span> <span class="n">Kit</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">3.1</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kb16bitonly</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">NOV</span><span class="p">-</span><span class="m">1999</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Software</span> <span class="n">Development</span> <span class="n">Kit</span> <span class="p">(</span><span class="n">SDK</span><span class="p">)</span> <span class="m">3.1</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">Applications</span> <span class="n">for</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">developed</span> <span class="k">with</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">SDK</span> <span class="n">may</span> <span class="n">display</span> <span class="n">an</span>
+<span class="n">error</span> <span class="n">message</span> <span class="n">box</span> <span class="k">with</span> <span class="n">the</span> <span class="n">error</span><span class="p">:</span>
+
+  <span class="s2">"Unexpected QuickWin Error"</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">There</span> <span class="n">are</span> <span class="n">several</span> <span class="n">possible</span> <span class="n">causes</span> <span class="n">for</span> <span class="n">this</span> <span class="n">error</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">QuickWin</span> <span class="n">application</span> <span class="n">caused</span> <span class="n">an</span> <span class="n">unexpected</span> <span class="n">application</span> <span class="n">error</span> <span class="p">(</span><span class="n">UAE</span><span class="p">)</span> <span class="k">or</span>
+  <span class="n">general</span> <span class="n">protect</span> <span class="p">(</span><span class="n">GP</span><span class="p">)</span> <span class="n">fault</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">or</span> <span class="p">-</span>
+
+<span class="p">-</span> <span class="n">A</span> <span class="n">Microsoft</span> <span class="n">Windows</span><span class="p">-</span><span class="n">based</span> <span class="n">application</span> <span class="n">that</span> <span class="n">is</span> <span class="k">not</span> <span class="n">a</span> <span class="n">QuickWin</span> <span class="n">application</span>
+  <span class="n">called</span> <span class="n">a</span> <span class="n">QuickWin</span> <span class="k">function</span><span class="p">.</span> <span class="k">If</span> <span class="n">execution</span> <span class="k">of</span> <span class="n">a</span> <span class="n">non</span><span class="p">-</span><span class="n">QuickWin</span> <span class="n">application</span> <span class="n">for</span>
+  <span class="n">Windows</span> <span class="n">results</span> <span class="k">in</span> <span class="n">this</span> <span class="n">error</span><span class="p">,</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">QuickWin</span> <span class="n">functions</span> <span class="n">was</span> <span class="n">linked</span> <span class="k">and</span>
+  <span class="n">executed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">application</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">or</span> <span class="p">-</span>
+
+<span class="p">-</span> <span class="n">Possible</span> <span class="n">mismatch</span> <span class="k">of</span> <span class="n">memory</span> <span class="k">model</span> <span class="n">libraries</span> <span class="p">(</span><span class="n">for</span> <span class="n">example</span><span class="p">,</span> <span class="n">building</span> <span class="n">a</span> <span class="n">large</span>
+  <span class="k">model</span> <span class="n">application</span> <span class="n">but</span> <span class="n">using</span> <span class="n">SLIBCEW</span><span class="p">,</span> <span class="n">the</span> <span class="n">small</span> <span class="k">model</span> <span class="n">library</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">.)</span>
+
+<span class="p">-</span> <span class="k">or</span> <span class="p">-</span>
+
+<span class="p">-</span> <span class="n">Possible</span> <span class="n">stray</span> <span class="k">function</span> <span class="n">pointers</span> <span class="n">that</span> <span class="n">accidentally</span> <span class="n">call</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">QuickWin</span>
+  <span class="n">stubs</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="k">or</span> <span class="p">-</span>
+
+<span class="p">-</span> <span class="n">You</span> <span class="n">may</span> <span class="n">have</span> <span class="n">attempted</span> <span class="k">to</span> <span class="n">use</span> <span class="n">an</span> <span class="n">invalid</span> <span class="n">file</span> <span class="n">handle</span> <span class="k">with</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">I</span><span class="p">/</span><span class="n">O</span>
+  <span class="n">functions</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="nf">run</span><span class="p">-</span><span class="n">time</span> <span class="n">libraries</span> <span class="n">for</span> <span class="n">Windows</span> <span class="p">(</span><span class="n">SLIBCEW</span><span class="p">,</span> <span class="n">MLIBCEW</span><span class="p">,</span> <span class="n">CLIBCEW</span><span class="p">,</span> <span class="k">and</span> <span class="n">LLIBCEW</span><span class="p">)</span>
+<span class="n">contain</span> <span class="n">stubs</span> <span class="k">to</span> <span class="n">the</span> <span class="n">QuickWin</span> <span class="n">functions</span><span class="p">.</span> <span class="n">Therefore</span><span class="p">,</span> <span class="n">the</span> <span class="n">linker</span> <span class="n">will</span> <span class="k">not</span> <span class="n">give</span> <span class="n">an</span>
+<span class="n">error</span> <span class="n">when</span> <span class="n">linking</span> <span class="k">with</span> <span class="n">a</span> <span class="n">QuickWin</span> <span class="k">function</span> <span class="k">from</span> <span class="n">a</span> <span class="n">non</span><span class="p">-</span><span class="n">QuickWin</span> <span class="n">application</span> <span class="n">for</span>
+<span class="n">Windows</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">when</span> <span class="n">the</span> <span class="k">function</span> <span class="n">executes</span><span class="p">,</span> <span class="n">an</span> <span class="n">error</span> <span class="n">message</span> <span class="n">box</span> <span class="k">with</span> <span class="n">the</span>
+<span class="n">error</span> <span class="s2">"Unexpected QuickWin Error"</span> <span class="n">will</span> <span class="n">be</span> <span class="n">displayed</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">functions</span> <span class="n">are</span> <span class="k">in</span> <span class="n">the</span> <span class="n">QuickWin</span> <span class="n">library</span><span class="p">:</span>
+
+  <span class="n">_fwopen</span>                    <span class="n">_wgopen</span>
+  <span class="n">_inchar</span>                    <span class="n">_wgsetactive</span>
+  <span class="n">_wabout</span>                    <span class="n">_wmenuclick</span>
+  <span class="n">_wclose</span>                    <span class="n">_wopen</span>
+  <span class="n">_wgclose</span>                   <span class="n">_wsetexit</span>
+  <span class="n">_wgetexit</span>                  <span class="n">_wsetfocus</span>
+  <span class="n">_wgetfocus</span>                 <span class="n">_wsetscreenbuf</span>
+  <span class="n">_wgetscreenbuf</span>             <span class="n">_wsetsize</span>
+  <span class="n">_wgetsize</span>                  <span class="n">_wyield</span>
+  <span class="n">_wggetactive</span>
+
+<span class="n">For</span> <span class="n">further</span> <span class="n">information</span> <span class="n">regarding</span> <span class="n">QuickWin</span> <span class="n">applications</span> <span class="k">and</span> <span class="n">the</span> <span class="n">QuickWin</span>
+<span class="n">routines</span><span class="p">,</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Language</span> <span class="n">Help</span> <span class="n">file</span> <span class="k">of</span> <span class="n">Visual</span> <span class="n">C</span><span class="p">++</span> <span class="k">or</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Visual</span>
+<span class="n">C</span><span class="p">++</span> <span class="s2">"Run-Time Library Reference"</span> <span class="n">manual</span><span class="p">.</span>
+
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="m">3.10</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kb16bitonly</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbAudDeveloper</span> <span class="n">kbWin3xSearch</span> <span class="n">kbSDKSearch</span> <span class="n">kbWinSDKSearch</span> <span class="n">kbWinSDK310</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">3.1</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194835: PRB: Custom AppWizard Creates Defective 2nd-Generation Project | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194835: PRB: Custom AppWizard Creates Defective 2nd-Generation Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194835/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194835/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194835/","publisher":null,"image":null,"headline":"Q194835: PRB: Custom AppWizard Creates Defective 2nd-Generation Project","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194835-prb-custom-appwizard-creates-defective-2nd-generation-project">Q194835: PRB: Custom AppWizard Creates Defective 2nd-Generation Project</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194835
+Product(s): Microsoft C Compiler
+Version(s): WINNT:5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbwizard kbVC500 kbVC600 kbAppWizard kbCustomWizard kbGrpDSTools
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build a project created with a Custom AppWizard that was based on
+another project, the following link errors might occur:
+
+  
+
+  mfcs42d.lib(dllmodul.obj) : error LNK2005: _DllMain@12 already defined
+  in &lt;projname&gt;.obj
+
+  
+
+  mfcs42d.lib(dllmodul.obj) : error LNK2005: __pRawDllMain already defined
+  in &lt;projname&gt;.obj
+
+  
+
+  Debug/&lt;projname&gt;.dll : fatal error LNK1169: one or more multiply defined
+  symbols found
+
+  
+
+  LINK : fatal error LNK1104: cannot open file "mfcapwzd.lib"
+
+CAUSE
+=====
+
+The Custom AppWizard project creation wizard does not carry over build
+configurations of base projects. Instead, it generates standard Release and
+Debug configurations. It ignores any custom settings in the original project,
+such as preprocessor defines, additional libraries, custom build steps, and so
+on.
+
+RESOLUTION
+==========
+
+Modify the project settings in the CustomizeProject function of your Custom
+AppWizard.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Starting with Visual C++ 6.0, the object model supports adding new
+configurations and modifying build settings for single files. Use these methods
+to create appropriate configurations during the CustomizeProject phase of your
+custom AppWizard. For more information, please see the following topics in the
+Visual C++ Documentation:
+
+  Visual C++ Documentation: What's New in Visual C++ 6.0 ?;
+  What's New in Visual C++ Version 6.0 ?; Object Model
+
+  Visual C++ Documentation: Using Visual C++; Visual C++ Programmer's
+  Guide; Beginning Your Program; Details; AppWizard Programming Reference;
+  CCustomAppWiz; CCustomAppWiz::CustomizeProject
+
+In Visual C++ 5.0, you may create custom build steps for an entire project, and
+modify project settings for the two standard configurations the Custom AppWizard
+generates. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q181503 PRB: Custom AppWizards Can't Make Per-File Settings/Build Steps
+
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual C++ 6.0, on the File menu, click New, and then click the Projects
+  tab.
+
+2. Select Custom AppWizard from the Projects list; give it a name and click OK.
+  In this example, the name is Cstm1.
+
+3. Click Finish on the next dialog box, Step 1, then click OK on the
+  confirmation dialog box.
+
+4. Press F7 to build Cstm1. It should build without errors.
+
+5. Now, follow steps 1 through 4 again, with the following changes:
+
+  a. Name the Custom AppWizard Cstm2.
+
+  b. In step 3, click Next instead of Finish, browse for Cstm1.dsp as the base
+     project, then click Finish.
+
+Continue with the following steps:
+
+6. From the File menu, click New, and then click the Projects tab.
+
+7. Select Cstm2 AppWizard from the Projects list; give it a name and click OK.
+  In this example, the name is Cstm2Proj.
+
+8. Click OK on the confirmation dialog box. The Cstm2Proj project loads.
+
+9. Press F7 to build Cstm2Proj.
+
+RESULT: The results are as described in SYMPTOMS. The Cstm2Proj project does not
+build a Custom AppWizard identical to Cstm1, as you might expect.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbwizard kbVC500 kbVC600 kbAppWizard kbCustomWizard kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch kbVCPE500 kbVCPE600 kbVCEE500 kbVCEE600 kbVCLE600
+Version           : WINNT:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155012: HOWTO: Error Codes in Windows NT Part 2 of 2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155012: HOWTO: Error Codes in Windows NT Part 2 of 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155012/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155012/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155012/","publisher":null,"image":null,"headline":"Q155012: HOWTO: Error Codes in Windows NT Part 2 of 2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155012-howto-error-codes-in-windows-nt-part-2-of-2">Q155012: HOWTO: Error Codes in Windows NT Part 2 of 2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q155012</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kberrmsg</span> <span class="n">kbOPK</span> <span class="n">kbSBK</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">13</span><span class="p">-</span><span class="n">FEB</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Workstation</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">lists</span> <span class="n">the</span> <span class="n">error</span> <span class="n">codes</span> <span class="n">you</span> <span class="n">may</span> <span class="n">encounter</span> <span class="k">in</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">.</span> <span class="n">For</span> <span class="n">the</span>
+<span class="n">remaining</span> <span class="n">error</span> <span class="n">codes</span><span class="p">,</span> <span class="n">please</span> <span class="n">see</span> <span class="n">the</span> <span class="n">following</span> <span class="n">article</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span>
+<span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q155011</span> <span class="n">Error</span> <span class="n">Codes</span> <span class="k">in</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Part</span> <span class="m">1</span> <span class="k">of</span> <span class="m">2</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Code</span>  <span class="n">Name</span>                                  <span class="n">Description</span>
+<span class="p">--------------------------------------------------------------------------</span>
+<span class="m">1300L</span> <span class="n">ERROR_NOT_ALL_ASSIGNED</span>                <span class="n">Indicates</span> <span class="k">not</span> <span class="n">all</span> <span class="n">privileges</span>
+                                           <span class="n">referenced</span> <span class="n">are</span> <span class="n">assigned</span> <span class="k">to</span> <span class="n">the</span>
+                                           <span class="n">caller</span><span class="p">.</span> <span class="n">This</span> <span class="n">allows</span><span class="p">,</span> <span class="n">for</span>
+                                           <span class="n">example</span><span class="p">,</span> <span class="n">all</span> <span class="n">privileges</span> <span class="k">to</span> <span class="n">be</span>
+                                           <span class="n">disabled</span> <span class="n">without</span> <span class="n">having</span> <span class="k">to</span>
+                                           <span class="n">know</span> <span class="n">exactly</span> <span class="n">which</span> <span class="n">privileges</span>
+                                           <span class="n">are</span> <span class="n">assigned</span><span class="p">.</span>
+<span class="m">1301L</span> <span class="n">ERROR_SOME_NOT_MAPPED</span>                 <span class="n">Some</span> <span class="k">of</span> <span class="n">the</span> <span class="n">information</span> <span class="k">to</span> <span class="n">be</span>
+                                           <span class="n">mapped</span> <span class="n">has</span> <span class="k">not</span> <span class="n">been</span>
+                                           <span class="n">translated</span><span class="p">.</span>
+<span class="m">1302L</span> <span class="n">ERROR_NO_QUOTAS_FOR_ACCOUNT</span>           <span class="n">No</span> <span class="nf">system</span> <span class="n">quota</span> <span class="n">limits</span> <span class="n">are</span>
+                                           <span class="n">specifically</span> <span class="k">set</span> <span class="n">for</span> <span class="n">this</span>
+                                           <span class="n">account</span><span class="p">.</span>
+<span class="m">1303L</span> <span class="n">ERROR_LOCAL_USER_SESSION_KEY</span>          <span class="n">A</span> <span class="n">user</span> <span class="n">session</span> <span class="n">key</span> <span class="n">was</span>
+                                           <span class="n">requested</span> <span class="n">for</span> <span class="n">a</span> <span class="n">local</span> <span class="n">RPC</span>
+                                           <span class="n">connection</span><span class="p">.</span> <span class="n">The</span> <span class="n">session</span> <span class="n">key</span>
+                                           <span class="n">returned</span> <span class="n">is</span> <span class="n">a</span> <span class="n">constant</span> <span class="n">value</span>
+                                           <span class="k">and</span> <span class="k">not</span> <span class="n">unique</span> <span class="k">to</span> <span class="n">this</span>
+                                           <span class="n">connection</span><span class="p">.</span>
+<span class="m">1304L</span> <span class="n">ERROR_NULL_LM_PASSWORD</span>                <span class="n">The</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">password</span> <span class="n">is</span> <span class="n">too</span>
+                                           <span class="n">complex</span> <span class="k">to</span> <span class="n">be</span> <span class="n">converted</span> <span class="k">to</span> <span class="n">a</span>
+                                           <span class="n">Windows</span><span class="p">-</span><span class="n">networking</span> <span class="n">password</span><span class="p">.</span>
+                                           <span class="n">The</span> <span class="n">Windows</span><span class="p">-</span><span class="n">networking</span>
+                                           <span class="n">password</span> <span class="n">returned</span> <span class="n">is</span> <span class="n">a</span> <span class="n">NULL</span>
+                                           <span class="k">string</span><span class="p">.</span>
+<span class="m">1305L</span> <span class="n">ERROR_UNKNOWN_REVISION</span>                <span class="n">Indicates</span> <span class="n">an</span> <span class="n">encountered</span> <span class="k">or</span>
+                                           <span class="n">specified</span> <span class="n">revision</span> <span class="n">number</span> <span class="n">is</span>
+                                           <span class="k">not</span> <span class="n">one</span> <span class="n">known</span> <span class="n">by</span> <span class="n">the</span> <span class="n">service</span><span class="p">.</span>
+                                           <span class="n">The</span> <span class="n">service</span> <span class="n">may</span> <span class="k">not</span> <span class="n">be</span> <span class="n">aware</span>
+                                           <span class="k">of</span> <span class="n">a</span> <span class="n">more</span> <span class="n">recent</span> <span class="n">revision</span><span class="p">.</span>
+<span class="m">1306L</span> <span class="n">ERROR_REVISION_MISMATCH</span>               <span class="n">Indicates</span> <span class="n">two</span> <span class="n">revision</span> <span class="n">levels</span>
+                                           <span class="n">are</span> <span class="n">incompatible</span><span class="p">.</span>
+<span class="m">1307L</span> <span class="n">ERROR_INVALID_OWNER</span>                   <span class="n">Indicates</span> <span class="n">a</span> <span class="n">particular</span>
+                                           <span class="n">Security</span> <span class="n">ID</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">assigned</span>
+                                           <span class="k">as</span> <span class="n">the</span> <span class="n">owner</span> <span class="k">of</span> <span class="n">an</span> <span class="n">object</span><span class="p">.</span>
+<span class="m">1308L</span> <span class="n">ERROR_INVALID_PRIMARY_GROUP</span>           <span class="n">Indicates</span> <span class="n">a</span> <span class="n">particular</span>
+                                           <span class="n">Security</span> <span class="n">ID</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">assigned</span>
+                                           <span class="k">as</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">group</span> <span class="k">of</span> <span class="n">an</span>
+                                           <span class="n">object</span><span class="p">.</span>
+<span class="m">1309L</span> <span class="n">ERROR_NO_IMPERSONATION_TOKEN</span>          <span class="n">An</span> <span class="n">attempt</span> <span class="n">was</span> <span class="n">made</span> <span class="k">to</span> <span class="n">operate</span>
+                                           <span class="n">on</span> <span class="n">an</span> <span class="n">impersonation</span> <span class="n">token</span> <span class="n">by</span> <span class="n">a</span>
+                                           <span class="n">thread</span> <span class="n">was</span> <span class="k">not</span> <span class="n">currently</span>
+                                           <span class="n">impersonating</span> <span class="n">a</span> <span class="n">client</span><span class="p">.</span>
+<span class="m">1310L</span> <span class="n">ERROR_CANT_DISABLE_MANDATORY</span>          <span class="n">A</span> <span class="n">mandatory</span> <span class="n">group</span> <span class="n">cannot</span> <span class="n">be</span>
+                                           <span class="n">disabled</span><span class="p">.</span>
+<span class="m">1311L</span> <span class="n">ERROR_NO_LOGON_SERVERS</span>                <span class="n">There</span> <span class="n">are</span> <span class="n">currently</span> <span class="n">no</span> <span class="n">logon</span>
+                                           <span class="n">servers</span> <span class="n">available</span> <span class="k">to</span> <span class="n">service</span>
+                                           <span class="n">the</span> <span class="n">logon</span> <span class="n">request</span><span class="p">.</span>
+<span class="m">1312L</span> <span class="n">ERROR_NO_SUCH_LOGON_SESSION</span>           <span class="n">A</span> <span class="n">specified</span> <span class="n">logon</span> <span class="n">session</span> <span class="n">does</span>
+                                           <span class="k">not</span> <span class="n">exist</span><span class="p">.</span> <span class="n">It</span> <span class="n">may</span> <span class="n">already</span> <span class="n">have</span>
+                                           <span class="n">been</span> <span class="n">terminated</span><span class="p">.</span>
+<span class="m">1313L</span> <span class="n">ERROR_NO_SUCH_PRIVILEGE</span>               <span class="n">A</span> <span class="n">specified</span> <span class="n">privilege</span> <span class="n">does</span> <span class="k">not</span>
+                                           <span class="n">exist</span><span class="p">.</span>
+<span class="m">1314L</span> <span class="n">ERROR_PRIVILEGE_NOT_HELD</span>              <span class="n">A</span> <span class="n">required</span> <span class="n">privilege</span> <span class="n">is</span> <span class="k">not</span>
+                                           <span class="n">held</span> <span class="n">by</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span>
+<span class="m">1315L</span> <span class="n">ERROR_INVALID_ACCOUNT_NAME</span>            <span class="n">The</span> <span class="n">name</span> <span class="n">provided</span> <span class="n">is</span> <span class="k">not</span> <span class="n">a</span>
+                                           <span class="n">properly</span> <span class="n">formed</span> <span class="n">account</span> <span class="n">name</span><span class="p">.</span>
+<span class="m">1316L</span> <span class="n">ERROR_USER_EXISTS</span>                     <span class="n">The</span> <span class="n">specified</span> <span class="n">user</span> <span class="n">already</span>
+                                           <span class="nb">exists</span><span class="p">.</span>
+<span class="m">1317L</span> <span class="n">ERROR_NO_SUCH_USER</span>                    <span class="n">The</span> <span class="n">specified</span> <span class="n">user</span> <span class="n">does</span> <span class="k">not</span>
+                                           <span class="n">exist</span><span class="p">.</span>
+<span class="m">1318L</span> <span class="n">ERROR_GROUP_EXISTS</span>                    <span class="n">The</span> <span class="n">specified</span> <span class="n">group</span> <span class="n">already</span>
+                                           <span class="nb">exists</span><span class="p">.</span>
+
+<span class="m">1319L</span> <span class="n">ERROR_NO_SUCH_GROUP</span>                   <span class="n">The</span> <span class="n">specified</span> <span class="n">group</span> <span class="n">does</span> <span class="k">not</span>
+                                           <span class="n">exist</span><span class="p">.</span>
+<span class="m">1320L</span> <span class="n">ERROR_MEMBER_IN_GROUP</span>                 <span class="n">The</span> <span class="n">specified</span> <span class="n">user</span> <span class="n">account</span> <span class="n">is</span>
+                                           <span class="n">already</span> <span class="k">in</span> <span class="n">the</span> <span class="n">specified</span> <span class="n">group</span>
+                                           <span class="n">account</span><span class="p">.</span> <span class="n">Also</span> <span class="n">used</span> <span class="k">to</span> <span class="n">indicate</span>
+                                           <span class="n">a</span> <span class="n">group</span> <span class="n">can</span> <span class="k">not</span> <span class="n">be</span> <span class="n">deleted</span>
+                                           <span class="n">because</span> <span class="n">it</span> <span class="n">contains</span> <span class="n">a</span> <span class="n">member</span><span class="p">.</span>
+<span class="m">1321L</span> <span class="n">ERROR_MEMBER_NOT_IN_GROUP</span>             <span class="n">The</span> <span class="n">specified</span> <span class="n">user</span> <span class="n">account</span> <span class="n">is</span>
+                                           <span class="k">not</span> <span class="n">a</span> <span class="n">member</span> <span class="k">of</span> <span class="n">the</span> <span class="n">specified</span>
+                                           <span class="n">group</span> <span class="n">account</span><span class="p">.</span>
+<span class="m">1322L</span> <span class="n">ERROR_LAST_ADMIN</span>                      <span class="n">Indicates</span> <span class="n">the</span> <span class="n">requested</span>
+                                           <span class="n">operation</span> <span class="n">would</span> <span class="n">disable</span> <span class="k">or</span>
+                                           <span class="n">delete</span> <span class="n">the</span> <span class="n">last</span> <span class="n">remaining</span>
+                                           <span class="n">administration</span> <span class="n">account</span><span class="p">.</span> <span class="n">This</span>
+                                           <span class="n">is</span> <span class="k">not</span> <span class="n">allowed</span> <span class="k">to</span> <span class="n">prevent</span>
+                                           <span class="n">creating</span> <span class="n">a</span> <span class="n">situation</span> <span class="n">where</span> <span class="n">the</span>
+                                           <span class="nf">system</span> <span class="n">will</span> <span class="k">not</span> <span class="n">be</span>
+                                           <span class="n">administrable</span><span class="p">.</span>
+<span class="m">1323L</span> <span class="n">ERROR_WRONG_PASSWORD</span>                  <span class="n">When</span> <span class="n">trying</span> <span class="k">to</span> <span class="n">update</span> <span class="n">a</span>
+                                           <span class="n">password</span><span class="p">,</span> <span class="n">this</span> <span class="n">return</span> <span class="n">status</span>
+                                           <span class="n">indicates</span> <span class="n">the</span> <span class="n">value</span> <span class="n">provided</span>
+                                           <span class="k">as</span> <span class="n">the</span> <span class="n">current</span> <span class="n">password</span> <span class="n">is</span>
+                                           <span class="n">incorrect</span><span class="p">.</span>
+<span class="m">1324L</span> <span class="n">ERROR_ILL_FORMED_PASSWORD</span>             <span class="n">When</span> <span class="n">trying</span> <span class="k">to</span> <span class="n">update</span> <span class="n">a</span>
+                                           <span class="n">password</span><span class="p">,</span> <span class="n">this</span> <span class="n">return</span> <span class="n">status</span>
+                                           <span class="n">indicates</span> <span class="n">the</span> <span class="n">value</span> <span class="n">provided</span>
+                                           <span class="n">for</span> <span class="n">the</span> <span class="n">new</span> <span class="n">password</span> <span class="n">contains</span>
+                                           <span class="n">values</span> <span class="k">not</span> <span class="n">allowed</span> <span class="k">in</span>
+                                           <span class="n">passwords</span><span class="p">.</span>
+<span class="m">1325L</span> <span class="n">ERROR_PASSWORD_RESTRICTION</span>            <span class="n">When</span> <span class="n">trying</span> <span class="k">to</span> <span class="n">update</span> <span class="n">a</span>
+                                           <span class="n">password</span><span class="p">,</span> <span class="n">this</span> <span class="n">status</span>
+                                           <span class="n">indicates</span> <span class="n">that</span> <span class="n">some</span> <span class="n">password</span>
+                                           <span class="n">update</span> <span class="n">rule</span> <span class="n">was</span> <span class="n">violated</span><span class="p">.</span> <span class="n">For</span>
+                                           <span class="n">example</span><span class="p">,</span> <span class="n">the</span> <span class="n">password</span> <span class="n">may</span> <span class="k">not</span>
+                                           <span class="n">meet</span> <span class="n">length</span> <span class="n">criteria</span><span class="p">.</span>
+<span class="m">1326L</span> <span class="n">ERROR_LOGON_FAILURE</span>                   <span class="n">The</span> <span class="n">attempted</span> <span class="n">logon</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">due</span> <span class="k">to</span> <span class="n">either</span>
+                                           <span class="n">a</span> <span class="n">bad</span> <span class="n">user</span> <span class="n">name</span> <span class="k">or</span>
+                                           <span class="n">authentication</span> <span class="n">information</span><span class="p">.</span>
+<span class="m">1327L</span> <span class="n">ERROR_ACCOUNT_RESTRICTION</span>             <span class="n">Indicates</span> <span class="n">a</span> <span class="n">referenced</span> <span class="n">user</span>
+                                           <span class="n">name</span> <span class="k">and</span> <span class="n">authentication</span>
+                                           <span class="n">information</span> <span class="n">are</span> <span class="n">valid</span><span class="p">,</span> <span class="n">but</span>
+                                           <span class="n">some</span> <span class="n">user</span> <span class="n">account</span> <span class="n">restriction</span>
+                                           <span class="n">has</span> <span class="n">prevented</span> <span class="n">successful</span>
+                                           <span class="n">authentication</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span> <span class="n">time</span><span class="p">-</span>
+                                           <span class="k">of</span><span class="p">-</span><span class="n">day</span> <span class="n">restrictions</span><span class="p">).</span>
+<span class="m">1328L</span> <span class="n">ERROR_INVALID_LOGON_HOURS</span>             <span class="n">The</span> <span class="n">user</span> <span class="n">account</span> <span class="n">has</span> <span class="n">time</span>
+                                           <span class="n">restrictions</span> <span class="k">and</span> <span class="n">cannot</span> <span class="n">be</span>
+                                           <span class="n">logged</span> <span class="n">onto</span> <span class="n">at</span> <span class="n">this</span> <span class="n">time</span><span class="p">.</span>
+<span class="m">1329L</span> <span class="n">ERROR_INVALID_WORKSTATION</span>             <span class="n">The</span> <span class="n">user</span> <span class="n">account</span> <span class="n">is</span> <span class="n">restricted</span>
+                                           <span class="k">and</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="nb">log</span> <span class="n">on</span>
+                                           <span class="k">from</span> <span class="n">the</span> <span class="n">source</span> <span class="n">workstation</span><span class="p">.</span>
+<span class="m">1330L</span> <span class="n">ERROR_PASSWORD_EXPIRED</span>                <span class="n">The</span> <span class="n">user</span> <span class="n">account</span><span class="s1">'s password
+                                           has expired.
+1331L ERROR_ACCOUNT_DISABLED                The referenced account is
+                                           currently disabled and cannot
+                                           be logged on to.
+1332L ERROR_NONE_MAPPED                     None of the information to be
+                                           mapped has been translated.
+1333L ERROR_TOO_MANY_LUIDS_REQUESTED        The number of LUID requested
+                                           cannot be allocated with a
+                                           single allocation.
+1334L ERROR_LUIDS_EXHAUSTED                 Indicates there are no more
+                                           LUID to allocate.
+1335L ERROR_INVALID_SUB_AUTHORITY           Indicates the sub-authority
+                                           value is invalid for the
+                                           particular use.
+1336L ERROR_INVALID_ACL                     Indicates the ACL structure is
+                                           not valid.
+1337L ERROR_INVALID_SID                     Indicates the SID structure is
+                                           invalid.
+1338L ERROR_INVALID_SECURITY_DESCR          Indicates the
+                                           SECURITY_DESCRIPTOR structure
+                                           is invalid.
+1340L ERROR_BAD_INHERITANCE_ACL             Indicates that an attempt to
+                                           build either an inherited ACL
+                                           or ACE did not succeed. One of
+                                           the more probable causes is
+                                           the replacement of a CreatorId
+                                           with an SID that didn'</span><span class="n">t</span> <span class="n">fit</span>
+                                           <span class="n">into</span> <span class="n">the</span> <span class="n">ACE</span> <span class="k">or</span> <span class="n">ACL</span><span class="p">.</span>
+<span class="m">1341L</span> <span class="n">ERROR_SERVER_DISABLED</span>                 <span class="n">The</span> <span class="n">GUID</span> <span class="n">allocation</span> <span class="n">server</span> <span class="n">is</span>
+                                           <span class="n">already</span> <span class="n">disabled</span> <span class="n">at</span> <span class="n">the</span>
+                                           <span class="n">moment</span><span class="p">.</span>
+<span class="m">1342L</span> <span class="n">ERROR_SERVER_NOT_DISABLED</span>             <span class="n">The</span> <span class="n">GUID</span> <span class="n">allocation</span> <span class="n">server</span> <span class="n">is</span>
+                                           <span class="n">already</span> <span class="n">enabled</span> <span class="n">at</span> <span class="n">the</span> <span class="n">moment</span><span class="p">.</span>
+<span class="m">1343L</span> <span class="n">ERROR_INVALID_ID_AUTHORITY</span>            <span class="n">The</span> <span class="n">value</span> <span class="n">provided</span> <span class="n">is</span> <span class="n">an</span>
+                                           <span class="n">invalid</span> <span class="n">value</span> <span class="n">for</span> <span class="n">an</span>
+                                           <span class="n">identifier</span> <span class="n">authority</span><span class="p">.</span>
+<span class="m">1344L</span> <span class="n">ERROR_ALLOTTED_SPACE_EXCEEDED</span>         <span class="n">When</span> <span class="n">a</span> <span class="n">block</span> <span class="k">of</span> <span class="n">memory</span> <span class="n">is</span>
+                                           <span class="n">allotted</span> <span class="n">for</span> <span class="n">future</span> <span class="n">updates</span><span class="p">,</span>
+                                           <span class="n">such</span> <span class="k">as</span> <span class="n">the</span> <span class="n">memory</span> <span class="n">allocated</span>
+                                           <span class="k">to</span> <span class="n">hold</span> <span class="n">discretionary</span> <span class="n">access</span>
+                                           <span class="n">control</span> <span class="k">and</span> <span class="n">primary</span> <span class="n">group</span>
+                                           <span class="n">information</span><span class="p">,</span> <span class="n">successive</span>
+                                           <span class="n">updates</span> <span class="n">may</span> <span class="n">exceed</span> <span class="n">the</span> <span class="n">amount</span>
+                                           <span class="k">of</span> <span class="n">memory</span> <span class="n">originally</span> <span class="n">allotted</span><span class="p">.</span>
+                                           <span class="n">Since</span> <span class="n">quota</span> <span class="n">may</span> <span class="n">already</span> <span class="n">have</span>
+                                           <span class="n">been</span> <span class="n">charged</span> <span class="k">to</span> <span class="n">several</span>
+                                           <span class="n">processes</span> <span class="n">that</span> <span class="n">have</span> <span class="n">handles</span> <span class="k">of</span>
+                                           <span class="n">the</span> <span class="n">object</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="k">not</span>
+                                           <span class="n">reasonable</span> <span class="k">to</span> <span class="n">alter</span> <span class="n">the</span> <span class="n">size</span>
+                                           <span class="k">of</span> <span class="n">the</span> <span class="n">allocated</span> <span class="n">memory</span><span class="p">.</span>
+                                           <span class="n">Instead</span><span class="p">,</span> <span class="n">a</span> <span class="n">request</span> <span class="n">that</span>
+                                           <span class="n">requires</span> <span class="n">more</span> <span class="n">memory</span> <span class="n">than</span> <span class="n">has</span>
+                                           <span class="n">been</span> <span class="n">allotted</span> <span class="n">must</span> <span class="n">fail</span> <span class="k">and</span>
+                                           <span class="n">the</span>
+                                           <span class="n">ERROR_ALLOTTED_SPACE_EXCEEDED</span>
+                                           <span class="n">error</span> <span class="n">returned</span><span class="p">.</span>
+<span class="m">1345L</span> <span class="n">ERROR_INVALID_GROUP_ATTRIBUTES</span>        <span class="n">The</span> <span class="n">specified</span> <span class="n">attributes</span> <span class="n">are</span>
+                                           <span class="n">invalid</span><span class="p">,</span> <span class="k">or</span> <span class="n">incompatible</span> <span class="k">with</span>
+                                           <span class="n">the</span> <span class="n">attributes</span> <span class="n">for</span> <span class="n">the</span> <span class="n">group</span>
+                                           <span class="k">as</span> <span class="n">a</span> <span class="n">whole</span><span class="p">.</span>
+<span class="m">1346L</span> <span class="n">ERROR_BAD_IMPERSONATION_LEVEL</span>         <span class="n">A</span> <span class="n">specified</span> <span class="n">impersonation</span>
+                                           <span class="n">level</span> <span class="n">is</span> <span class="n">invalid</span><span class="p">.</span> <span class="n">Also</span> <span class="n">used</span> <span class="k">to</span>
+                                           <span class="n">indicate</span> <span class="n">a</span> <span class="n">required</span>
+                                           <span class="n">impersonation</span> <span class="n">level</span> <span class="n">was</span> <span class="k">not</span>
+                                           <span class="n">provided</span><span class="p">.</span>
+<span class="m">1347L</span> <span class="n">ERROR_CANT_OPEN_ANONYMOUS</span>             <span class="n">An</span> <span class="n">attempt</span> <span class="n">was</span> <span class="n">made</span> <span class="k">to</span> <span class="n">open</span> <span class="n">an</span>
+                                           <span class="n">anonymous</span> <span class="n">level</span> <span class="n">token</span><span class="p">.</span>
+                                           <span class="n">Anonymous</span> <span class="n">tokens</span> <span class="n">cannot</span> <span class="n">be</span>
+                                           <span class="n">opened</span><span class="p">.</span>
+<span class="m">1348L</span> <span class="n">ERROR_BAD_VALIDATION_CLASS</span>            <span class="n">The</span> <span class="n">requested</span> <span class="n">validation</span>
+                                           <span class="n">information</span> <span class="n">class</span> <span class="n">is</span> <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1349L</span> <span class="n">ERROR_BAD_TOKEN_TYPE</span>                  <span class="n">The</span> <span class="n">type</span> <span class="k">of</span> <span class="n">token</span> <span class="n">object</span> <span class="n">is</span>
+                                           <span class="n">inappropriate</span> <span class="n">for</span> <span class="n">its</span>
+                                           <span class="n">attempted</span> <span class="n">use</span><span class="p">.</span>
+<span class="m">1350L</span> <span class="n">ERROR_NO_SECURITY_ON_OBJECT</span>           <span class="n">Indicates</span> <span class="n">an</span> <span class="n">attempt</span> <span class="n">was</span> <span class="n">made</span>
+                                           <span class="k">to</span> <span class="n">operate</span> <span class="n">on</span> <span class="n">the</span> <span class="n">security</span> <span class="k">of</span>
+                                           <span class="n">an</span> <span class="n">object</span> <span class="n">that</span> <span class="n">does</span> <span class="k">not</span> <span class="n">have</span>
+                                           <span class="n">security</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">it</span><span class="p">.</span>
+<span class="m">1351L</span> <span class="n">ERROR_CANT_ACCESS_DOMAIN_INFO</span>         <span class="n">Indicates</span> <span class="n">a</span> <span class="n">domain</span> <span class="n">controller</span>
+                                           <span class="n">could</span> <span class="k">not</span> <span class="n">be</span> <span class="n">contacted</span> <span class="k">or</span> <span class="n">that</span>
+                                           <span class="n">objects</span> <span class="n">within</span> <span class="n">the</span> <span class="n">domain</span> <span class="n">are</span>
+                                           <span class="n">protected</span> <span class="k">and</span> <span class="n">necessary</span>
+                                           <span class="n">information</span> <span class="n">could</span> <span class="k">not</span> <span class="n">be</span>
+                                           <span class="n">retrieved</span><span class="p">.</span>
+<span class="m">1352L</span> <span class="n">ERROR_INVALID_SERVER_STATE</span>            <span class="n">Indicates</span> <span class="n">the</span> <span class="n">Sam</span> <span class="n">Server</span> <span class="n">was</span>
+                                           <span class="k">in</span> <span class="n">the</span> <span class="n">wrong</span> <span class="n">state</span> <span class="k">to</span> <span class="n">perform</span>
+                                           <span class="n">the</span> <span class="n">desired</span> <span class="n">operation</span><span class="p">.</span>
+<span class="m">1353L</span> <span class="n">ERROR_INVALID_DOMAIN_STATE</span>            <span class="n">Indicates</span> <span class="n">the</span> <span class="n">domain</span> <span class="n">is</span> <span class="k">in</span> <span class="n">the</span>
+                                           <span class="n">wrong</span> <span class="n">state</span> <span class="k">to</span> <span class="n">perform</span> <span class="n">the</span>
+                                           <span class="n">desired</span> <span class="n">operation</span><span class="p">.</span>
+<span class="m">1354L</span> <span class="n">ERROR_INVALID_DOMAIN_ROLE</span>             <span class="n">Indicates</span> <span class="n">the</span> <span class="n">requested</span>
+                                           <span class="n">operation</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">completed</span>
+                                           <span class="k">with</span> <span class="n">the</span> <span class="n">domain</span> <span class="k">in</span> <span class="n">its</span> <span class="n">present</span>
+                                           <span class="n">role</span><span class="p">.</span>
+<span class="m">1355L</span> <span class="n">ERROR_NO_SUCH_DOMAIN</span>                  <span class="n">The</span> <span class="n">specified</span> <span class="n">domain</span> <span class="n">does</span> <span class="k">not</span>
+                                           <span class="n">exist</span><span class="p">.</span>
+<span class="m">1356L</span> <span class="n">ERROR_DOMAIN_EXISTS</span>                   <span class="n">The</span> <span class="n">specified</span> <span class="n">domain</span> <span class="n">already</span>
+                                           <span class="nb">exists</span><span class="p">.</span>
+<span class="m">1357L</span> <span class="n">ERROR_DOMAIN_LIMIT_EXCEEDED</span>           <span class="n">An</span> <span class="n">attempt</span> <span class="k">to</span> <span class="n">exceed</span> <span class="n">the</span> <span class="n">limit</span>
+                                           <span class="n">on</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">domains</span> <span class="n">per</span>
+                                           <span class="n">server</span> <span class="n">for</span> <span class="n">this</span> <span class="n">release</span><span class="p">.</span>
+<span class="m">1358L</span> <span class="n">ERROR_INTERNAL_DB_CORRUPTION</span>          <span class="n">This</span> <span class="n">error</span> <span class="n">indicates</span> <span class="n">the</span>
+                                           <span class="n">requested</span> <span class="n">operation</span> <span class="n">cannot</span> <span class="n">be</span>
+                                           <span class="n">completed</span> <span class="n">due</span> <span class="k">to</span> <span class="n">a</span>
+                                           <span class="n">catastrophic</span> <span class="n">media</span> <span class="n">failure</span> <span class="k">or</span>
+                                           <span class="n">on</span><span class="p">-</span><span class="n">disk</span> <span class="n">data</span> <span class="n">structure</span>
+                                           <span class="n">corruption</span><span class="p">.</span>
+<span class="m">1359L</span> <span class="n">ERROR_INTERNAL_ERROR</span>                  <span class="n">This</span> <span class="n">error</span> <span class="n">indicates</span> <span class="n">the</span> <span class="n">SAM</span>
+                                           <span class="n">server</span> <span class="n">has</span> <span class="n">encounterred</span> <span class="n">an</span>
+                                           <span class="n">internal</span> <span class="n">consistency</span> <span class="n">error</span> <span class="k">in</span>
+                                           <span class="n">its</span> <span class="n">database</span><span class="p">.</span> <span class="n">This</span>
+                                           <span class="n">catastrophic</span> <span class="n">failure</span> <span class="n">prevents</span>
+                                           <span class="n">further</span> <span class="n">operation</span> <span class="k">of</span> <span class="n">SAM</span><span class="p">.</span>
+<span class="m">1360L</span> <span class="n">ERROR_GENERIC_NOT_MAPPED</span>              <span class="n">Indicates</span> <span class="n">generic</span> <span class="n">access</span> <span class="n">types</span>
+                                           <span class="n">were</span> <span class="n">contained</span> <span class="k">in</span> <span class="n">an</span> <span class="n">access</span>
+                                           <span class="n">mask</span> <span class="n">that</span> <span class="n">should</span> <span class="n">already</span> <span class="n">be</span>
+                                           <span class="n">mapped</span> <span class="k">to</span> <span class="n">non</span><span class="p">-</span><span class="n">generic</span> <span class="n">access</span>
+                                           <span class="n">types</span><span class="p">.</span>
+<span class="m">1361L</span> <span class="n">ERROR_BAD_DESCRIPTOR_FORMAT</span>           <span class="n">Indicates</span> <span class="n">a</span> <span class="n">security</span>
+                                           <span class="n">descriptor</span> <span class="n">is</span> <span class="k">not</span> <span class="k">in</span> <span class="n">the</span>
+                                           <span class="n">required</span> <span class="n">format</span> <span class="p">(</span><span class="n">absolute</span> <span class="k">or</span>
+                                           <span class="n">self</span><span class="p">-</span><span class="n">relative</span><span class="p">).</span>
+<span class="m">1362L</span> <span class="n">ERROR_NOT_LOGON_PROCESS</span>               <span class="n">The</span> <span class="n">requested</span> <span class="n">action</span> <span class="n">is</span>
+                                           <span class="n">restricted</span> <span class="n">for</span> <span class="n">use</span> <span class="n">by</span> <span class="n">logon</span>
+                                           <span class="n">processes</span> <span class="n">only</span><span class="p">.</span> <span class="n">The</span> <span class="n">calling</span>
+                                           <span class="n">process</span> <span class="n">has</span> <span class="k">not</span> <span class="n">registered</span> <span class="k">as</span>
+                                           <span class="n">a</span> <span class="n">logon</span> <span class="n">process</span><span class="p">.</span>
+<span class="m">1363L</span> <span class="n">ERROR_LOGON_SESSION_EXISTS</span>            <span class="n">An</span> <span class="n">attempt</span> <span class="n">was</span> <span class="n">made</span> <span class="k">to</span> <span class="n">start</span> <span class="n">a</span>
+                                           <span class="n">new</span> <span class="n">session</span> <span class="n">manager</span> <span class="k">or</span> <span class="n">LSA</span>
+                                           <span class="n">logon</span> <span class="n">session</span> <span class="k">with</span> <span class="n">an</span> <span class="n">ID</span>
+                                           <span class="n">already</span> <span class="k">in</span> <span class="n">use</span><span class="p">.</span>
+<span class="m">1364L</span> <span class="n">ERROR_NO_SUCH_PACKAGE</span>                 <span class="n">A</span> <span class="n">specified</span> <span class="n">authentication</span>
+                                           <span class="k">package</span> <span class="n">is</span> <span class="n">unknown</span><span class="p">.</span>
+<span class="m">1365L</span> <span class="n">ERROR_BAD_LOGON_SESSION_STATE</span>         <span class="n">The</span> <span class="n">logon</span> <span class="n">session</span> <span class="n">is</span> <span class="k">not</span> <span class="k">in</span> <span class="n">a</span>
+                                           <span class="n">state</span> <span class="n">consistent</span> <span class="k">with</span> <span class="n">the</span>
+                                           <span class="n">requested</span> <span class="n">operation</span><span class="p">.</span>
+<span class="m">1366L</span> <span class="n">ERROR_LOGON_SESSION_COLLISION</span>         <span class="n">The</span> <span class="n">logon</span> <span class="n">session</span> <span class="n">ID</span> <span class="n">is</span>
+                                           <span class="n">already</span> <span class="k">in</span> <span class="n">use</span><span class="p">.</span>
+<span class="m">1367L</span> <span class="n">ERROR_INVALID_LOGON_TYPE</span>              <span class="n">Indicates</span> <span class="n">an</span> <span class="n">invalid</span> <span class="n">value</span> <span class="n">has</span>
+                                           <span class="n">been</span> <span class="n">provided</span> <span class="n">for</span> <span class="n">LogonType</span>
+                                           <span class="n">has</span> <span class="n">been</span> <span class="n">requested</span><span class="p">.</span>
+<span class="m">1368L</span> <span class="n">ERROR_CANNOT_IMPERSONATE</span>              <span class="n">Indicates</span> <span class="n">that</span> <span class="n">an</span> <span class="n">attempt</span> <span class="n">was</span>
+                                           <span class="n">made</span> <span class="k">to</span> <span class="n">impersonate</span> <span class="n">via</span> <span class="n">a</span>
+                                           <span class="n">named</span> <span class="n">pipe</span> <span class="n">was</span> <span class="k">not</span> <span class="n">yet</span> <span class="nb">read</span>
+                                           <span class="k">from</span><span class="p">.</span>
+<span class="m">1369L</span> <span class="n">ERROR_RXACT_INVALID_STATE</span>             <span class="n">Indicates</span> <span class="n">that</span> <span class="n">the</span> <span class="n">transaction</span>
+                                           <span class="n">state</span> <span class="k">of</span> <span class="n">a</span> <span class="n">registry</span> <span class="n">sub</span><span class="p">-</span><span class="n">tree</span>
+                                           <span class="n">is</span> <span class="n">incompatible</span> <span class="k">with</span> <span class="n">the</span>
+                                           <span class="n">requested</span> <span class="n">operation</span><span class="p">.</span> <span class="n">For</span>
+                                           <span class="n">example</span><span class="p">,</span> <span class="n">a</span> <span class="n">request</span> <span class="n">has</span> <span class="n">been</span>
+                                           <span class="n">made</span> <span class="k">to</span> <span class="n">start</span> <span class="n">a</span> <span class="n">new</span>
+                                           <span class="n">transaction</span> <span class="k">with</span> <span class="n">one</span> <span class="n">already</span>
+                                           <span class="k">in</span> <span class="n">progress</span><span class="p">,</span> <span class="k">or</span> <span class="n">a</span> <span class="n">request</span> <span class="k">to</span>
+                                           <span class="n">apply</span> <span class="n">a</span> <span class="n">transaction</span> <span class="n">when</span> <span class="n">one</span>
+                                           <span class="n">is</span> <span class="k">not</span> <span class="n">currently</span> <span class="k">in</span> <span class="n">progress</span><span class="p">.</span>
+                                           <span class="n">This</span> <span class="n">status</span> <span class="n">value</span> <span class="n">is</span> <span class="n">returned</span>
+                                           <span class="n">by</span> <span class="n">the</span> <span class="n">runtime</span> <span class="n">library</span> <span class="p">(</span><span class="n">RTL</span><span class="p">)</span>
+                                           <span class="n">registry</span> <span class="n">transaction</span> <span class="k">package</span>
+                                           <span class="p">(</span><span class="n">RXact</span><span class="p">).</span>
+<span class="m">1370L</span> <span class="n">ERROR_RXACT_COMMIT_FAILURE</span>            <span class="n">Indicates</span> <span class="n">an</span> <span class="n">error</span> <span class="n">occurred</span>
+                                           <span class="n">during</span> <span class="n">a</span> <span class="n">registry</span> <span class="n">transaction</span>
+                                           <span class="n">commit</span><span class="p">.</span> <span class="n">The</span> <span class="n">database</span> <span class="n">has</span> <span class="n">been</span>
+                                           <span class="n">left</span> <span class="k">in</span> <span class="n">an</span> <span class="n">unknown</span> <span class="n">state</span><span class="p">.</span> <span class="n">The</span>
+                                           <span class="n">state</span> <span class="k">of</span> <span class="n">the</span> <span class="n">registry</span>
+                                           <span class="n">transaction</span> <span class="n">is</span> <span class="n">left</span> <span class="k">as</span>
+                                           <span class="n">COMMITTING</span><span class="p">.</span> <span class="n">This</span> <span class="n">status</span> <span class="n">value</span>
+                                           <span class="n">is</span> <span class="n">returned</span> <span class="n">by</span> <span class="n">the</span> <span class="n">runtime</span>
+                                           <span class="n">library</span> <span class="p">(</span><span class="n">RTL</span><span class="p">)</span> <span class="n">registry</span>
+                                           <span class="n">transaction</span> <span class="k">package</span> <span class="p">(</span><span class="n">RXact</span><span class="p">).</span>
+<span class="m">1371L</span> <span class="n">ERROR_SPECIAL_ACCOUNT</span>                 <span class="n">Indicates</span> <span class="n">an</span> <span class="n">operation</span> <span class="n">was</span>
+                                           <span class="n">attempted</span> <span class="n">on</span> <span class="n">a</span> <span class="n">built</span><span class="p">-</span><span class="k">in</span>
+                                           <span class="p">(</span><span class="n">special</span><span class="p">)</span> <span class="n">SAM</span> <span class="n">account</span> <span class="n">that</span> <span class="n">is</span>
+                                           <span class="n">incompatible</span> <span class="k">with</span> <span class="n">built</span><span class="p">-</span><span class="k">in</span>
+                                           <span class="n">accounts</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">built</span><span class="p">-</span>
+                                           <span class="k">in</span> <span class="n">accounts</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">renamed</span>
+                                           <span class="k">or</span> <span class="n">deleted</span><span class="p">.</span>
+<span class="m">1372L</span> <span class="n">ERROR_SPECIAL_GROUP</span>                   <span class="n">The</span> <span class="n">requested</span> <span class="n">operation</span> <span class="n">cannot</span>
+                                           <span class="n">be</span> <span class="n">performed</span> <span class="n">on</span> <span class="n">the</span> <span class="n">specified</span>
+                                           <span class="n">group</span> <span class="n">because</span> <span class="n">it</span> <span class="n">is</span> <span class="n">a</span> <span class="n">built</span><span class="p">-</span><span class="k">in</span>
+                                           <span class="n">special</span> <span class="n">group</span><span class="p">.</span>
+<span class="m">1373L</span> <span class="n">ERROR_SPECIAL_USER</span>                    <span class="n">The</span> <span class="n">requested</span> <span class="n">operation</span> <span class="n">cannot</span>
+                                           <span class="n">be</span> <span class="n">performed</span> <span class="n">on</span> <span class="n">the</span> <span class="n">specified</span>
+                                           <span class="n">user</span> <span class="n">because</span> <span class="n">it</span> <span class="n">is</span> <span class="n">a</span> <span class="n">built</span><span class="p">-</span><span class="k">in</span>
+                                           <span class="n">special</span> <span class="n">user</span><span class="p">.</span>
+<span class="m">1374L</span> <span class="n">ERROR_MEMBERS_PRIMARY_GROUP</span>           <span class="n">Indicates</span> <span class="n">a</span> <span class="n">member</span> <span class="n">cannot</span> <span class="n">be</span>
+                                           <span class="n">removed</span> <span class="k">from</span> <span class="n">a</span> <span class="n">group</span> <span class="n">because</span>
+                                           <span class="n">the</span> <span class="n">group</span> <span class="n">is</span> <span class="n">currently</span> <span class="n">the</span>
+                                           <span class="n">member</span><span class="s1">'s primary group.
+1375L ERROR_TOKEN_ALREADY_IN_USE            An attempt was made to
+                                           establish a token for use as a
+                                           primary token but the token is
+                                           already in use. A token can
+                                           only be the primary token of
+                                           one process at a time.
+1376L ERROR_NO_SUCH_ALIAS                   The specified alias does not
+                                           exist.
+1377L ERROR_MEMBER_NOT_IN_ALIAS             The specified account name is
+                                           not a member of the alias.
+1378L ERROR_MEMBER_IN_ALIAS                 The specified account name is
+                                           not a member of the alias.
+1379L ERROR_ALIAS_EXISTS                    The specified alias already
+                                           exists.
+1380L ERROR_LOGON_NOT_GRANTED               A requested type of logon,
+                                           such as Interactive, Network,
+                                           or Service, is not granted by
+                                           the target system'</span><span class="n">s</span> <span class="n">local</span>
+                                           <span class="n">security</span> <span class="n">policy</span><span class="p">.</span> <span class="n">The</span> <span class="nf">system</span>
+                                           <span class="n">administrator</span> <span class="n">can</span> <span class="n">grant</span> <span class="n">the</span>
+                                           <span class="n">required</span> <span class="n">form</span> <span class="k">of</span> <span class="n">logon</span><span class="p">.</span>
+<span class="m">1381L</span> <span class="n">ERROR_TOO_MANY_SECRETS</span>                <span class="n">The</span> <span class="n">maximum</span> <span class="n">number</span> <span class="k">of</span> <span class="n">secrets</span>
+                                           <span class="n">that</span> <span class="n">can</span> <span class="n">be</span> <span class="n">stored</span> <span class="k">in</span> <span class="n">a</span> <span class="n">single</span>
+                                           <span class="nf">system</span> <span class="n">was</span> <span class="n">exceeded</span><span class="p">.</span> 
+<span class="m">1382L</span> <span class="n">ERROR_SECRET_TOO_LONG</span>                 <span class="n">The</span> <span class="n">length</span> <span class="k">of</span> <span class="n">a</span> <span class="n">secret</span> <span class="n">exceeds</span>
+                                           <span class="n">the</span> <span class="n">maximum</span> <span class="n">length</span> <span class="n">allowed</span><span class="p">.</span>    <span class="m">1383L</span> <span class="n">ERROR_INTERNAL_DB_ERROR</span>               <span class="n">The</span> <span class="n">Local</span> <span class="n">Security</span> <span class="n">Authority</span>
+                                           <span class="p">(</span><span class="n">LSA</span><span class="p">)</span> <span class="n">database</span> <span class="n">contains</span> <span class="k">in</span>
+                                           <span class="n">internal</span> <span class="n">inconsistency</span><span class="p">.</span>
+<span class="m">1384L</span> <span class="n">ERROR_TOO_MANY_CONTEXT_IDS</span>            <span class="n">During</span> <span class="n">a</span> <span class="n">logon</span> <span class="n">attempt</span><span class="p">,</span> <span class="n">the</span>
+                                           <span class="n">user</span><span class="s1">'s security context
+                                           accumulated too many security
+                                           IDs. Remove the user from some
+                                           groups or aliases to reduce
+                                           the number of security ids to
+                                           incorporate into the security
+                                           context.
+1385L ERROR_LOGON_TYPE_NOT_GRANTED          A user has requested a type of
+                                           logon, such as interactive or
+                                           network, that was not granted.
+                                           An administrator has control
+                                           over who may logon
+                                           interactively and through the
+                                           network.
+1386L ERROR_NT_CROSS_ENCRYPTION_REQUIRED    An attempt was made to change
+                                           a user password in the
+                                           security account manager
+                                           without providing the
+                                           necessary NT cross-encrypted
+                                           password.
+1387L ERROR_NO_SUCH_MEMBER                  A new member cannot be added
+                                           to an alias because the member
+                                           does not exist.
+1388L ERROR_INVALID_MEMBER                  A new member could not be
+                                           added to an alias because the
+                                           member has the wrong account
+                                           type.
+1389L ERROR_TOO_MANY_SIDS                   Too many SIDs specified.
+1390L ERROR_LM_CROSS_ENCRYPTION_REQUIRED    An attempt was made to change
+                                           a user password in the
+                                           security account manager
+                                           without providing the required
+                                           LM cross-encrypted password.
+1391L ERROR_NO_INHERITANCE                  Indicates an ACL contains no
+                                           inheritable components.
+1392L ERROR_FILE_CORRUPT                    The file or directory is
+                                           damaged and nonreadable.
+1393L ERROR_DISK_CORRUPT                    The disk structure is damaged
+                                           and nonreadable.
+1394L ERROR_NO_USER_SESSION_KEY             There is no user session key
+                                           for the specified logon
+                                           session.
+1395L ERROR_LICENSE_QUOTA_EXCEEDED          The service being accessed is
+                                           licensed for a particular
+                                           number of connections. No more
+                                           connections can be made to the
+                                           service at this time because
+                                           there are already as many
+                                           connections as the service can
+                                           accept.
+1400L ERROR_INVALID_WINDOW_HANDLE           The window handle invalid.
+1401L ERROR_INVALID_MENU_HANDLE             The menu handle is invalid.
+1402L ERROR_INVALID_CURSOR_HANDLE           The cursor handle is invalid.
+1403L ERROR_INVALID_ACCEL_HANDLE            Invalid accelerator-table
+                                           handle.
+1404L ERROR_INVALID_HOOK_HANDLE             The hook handle is invalid.
+1405L ERROR_INVALID_DWP_HANDLE              The DeferWindowPos handle is
+                                           invalid.
+1406L ERROR_TLW_WITH_WSCHILD                CreateWindow failed, creating
+                                           top-level window with WS_CHILD
+                                           style.
+1407L ERROR_CANNOT_FIND_WND_CLASS           Cannot find window class.
+1408L ERROR_WINDOW_OF_OTHER_THREAD          Invalid window, belongs to
+                                           other thread.
+1409L ERROR_HOTKEY_ALREADY_REGISTERED       Hotkey is already registered.
+1410L ERROR_CLASS_ALREADY_EXISTS            Class already exists.
+1411L ERROR_CLASS_DOES_NOT_EXIST            Class does not exist.
+1412L ERROR_CLASS_HAS_WINDOWS               Class still has open windows.
+1413L ERROR_INVALID_INDEX                   The index is invalid.
+1414L ERROR_INVALID_ICON_HANDLE             The icon handle is invalid.
+1415L ERROR_PRIVATE_DIALOG_INDEX            Using private DIALOG window
+                                           words.
+1416L ERROR_LISTBOX_ID_NOT_FOUND            List box ID not found.
+1417L ERROR_NO_WILDCARD_CHARACTERS          No wildcard characters found.
+1418L ERROR_CLIPBOARD_NOT_OPEN              Thread doesn'</span><span class="n">t</span> <span class="n">have</span> <span class="n">clipboard</span>
+                                           <span class="n">open</span><span class="p">.</span>
+<span class="m">1419L</span> <span class="n">ERROR_HOTKEY_NOT_REGISTERED</span>           <span class="n">Hotkey</span> <span class="n">is</span> <span class="k">not</span> <span class="n">registered</span><span class="p">.</span>
+<span class="m">1420L</span> <span class="n">ERROR_WINDOW_NOT_DIALOG</span>               <span class="n">The</span> <span class="n">window</span> <span class="n">is</span> <span class="k">not</span> <span class="n">a</span> <span class="n">valid</span>
+                                           <span class="n">dialog</span> <span class="n">window</span><span class="p">.</span>
+<span class="m">1421L</span> <span class="n">ERROR_CONTROL_ID_NOT_FOUND</span>            <span class="n">Control</span> <span class="n">ID</span> <span class="k">not</span> <span class="n">found</span><span class="p">.</span>
+<span class="m">1422L</span> <span class="n">ERROR_INVALID_COMBOBOX_MESSAGE</span>        <span class="n">Invalid</span> <span class="n">Message</span><span class="p">,</span> <span class="n">combo</span> <span class="n">box</span>
+                                           <span class="n">doesn</span><span class="s1">'t have an edit control.
+1423L ERROR_WINDOW_NOT_COMBOBOX             The window is not a combo box.
+1424L ERROR_INVALID_EDIT_HEIGHT             Height must be less than 256.
+1425L ERROR_DC_NOT_FOUND                    Invalid HDC passed to
+                                           ReleaseDC.
+1426L ERROR_INVALID_HOOK_FILTER             The hook filter type is
+                                           invalid.
+1427L ERROR_INVALID_FILTER_PROC             The filter proc is invalid.
+1428L ERROR_HOOK_NEEDS_HMOD                 Cannot set non-local hook
+                                           without an module handle.
+1429L ERROR_GLOBAL_ONLY_HOOK                This hook can only be set
+                                           globally.
+1430L ERROR_JOURNAL_HOOK_SET                The journal hook is already
+                                           installed.
+1431L ERROR_HOOK_NOT_INSTALLED              Hook is not installed.
+1432L ERROR_INVALID_LB_MESSAGE              The message for single-
+                                           selection list box is invalid.
+1433L ERROR_SETCOUNT_ON_BAD_LB              LB_SETCOUNT sent to non-lazy
+                                           list box.
+1434L ERROR_LB_WITHOUT_TABSTOPS             This list box doesn'</span><span class="n">t</span> <span class="n">support</span>
+                                           <span class="n">tab</span> <span class="n">stops</span><span class="p">.</span>
+<span class="m">1435L</span> <span class="n">ERROR_DESTROY_OBJECT_OF_OTHER_THREAD</span>  <span class="n">Cannot</span> <span class="n">destroy</span> <span class="n">object</span> <span class="n">created</span>
+                                           <span class="n">by</span> <span class="n">another</span> <span class="n">thread</span><span class="p">.</span>
+<span class="m">1436L</span> <span class="n">ERROR_CHILD_WINDOW_MENU</span>               <span class="n">Child</span> <span class="n">windows</span> <span class="n">can</span><span class="s1">'t have
+                                           menus.
+1437L ERROR_NO_SYSTEM_MENU                  Window does not have system
+                                           menu.
+1438L ERROR_INVALID_MSGBOX_STYLE            The message box style is
+                                           invalid.
+1439L ERROR_INVALID_SPI_VALUE               The SPI_* parameter is
+                                           invalid.
+1440L ERROR_SCREEN_ALREADY_LOCKED           Screen already locked.
+1441L ERROR_HWNDS_HAVE_DIFFERENT_PARENT     All DeferWindowPos HWNDs must
+                                           have same parent.
+1442L ERROR_NOT_CHILD_WINDOW                Window is not a child window.
+1443L ERROR_INVALID_GW_COMMAND              The GW_* command is invalid.
+1444L ERROR_INVALID_THREAD_ID               The thread ID is invalid.
+1445L ERROR_NON_MDICHILD_WINDOW             DefMDIChildProc called with a
+                                           non-MDI child window.
+1446L ERROR_POPUP_ALREADY_ACTIVE            Pop-up menu already active.
+1447L ERROR_NO_SCROLLBARS                   Window does not have scroll
+                                           bars.
+1448L ERROR_INVALID_SCROLLBAR_RANGE         Scrollbar range greater than
+                                           0x7FFF.
+1449L ERROR_INVALID_SHOWWIN_COMMAND         The ShowWindow command is
+                                           invalid.
+1450L ERROR_NO_SYSTEM_RESOURCES             Insufficient system resources
+                                           exist to complete the
+                                           requested service.
+1451L ERROR_NONPAGED_SYSTEM_RESOURCES       Insufficient system resources
+                                           exist to complete the
+                                           requested service.
+1452L ERROR_PAGED_SYSTEM_RESOURCES          Insufficient system resources
+                                           exist to complete the
+                                           requested service.
+1453L ERROR_WORKING_SET_QUOTA               Insufficient quota to complete
+                                           the requested service.
+1454L ERROR_PAGEFILE_QUOTA                  Insufficient quota to complete
+                                           the requested service.
+1455L ERROR_COMMITMENT_LIMIT                The paging file is too small
+                                           for this operation to
+                                           complete.
+1456L ERROR_MENU_ITEM_NOT_FOUND             A menu item was not found.
+1457L ERROR_INVALID_KEYBOARD_HANDLE         Invalid keyboard layout
+                                           handle.
+1458L ERROR_HOOK_TYPE_NOT_ALLOWED           Hook type not allowed.
+1500L ERROR_EVENTLOG_FILE_CORRUPT           One of the Eventlog logfiles
+                                           is damaged.
+1501L ERROR_EVENTLOG_CANT_START             No event log file could be
+                                           opened, so the event logging
+                                           service did not start.
+1502L ERROR_LOG_FILE_FULL                   The event log file is full.
+1503L ERROR_EVENTLOG_FILE_CHANGED           The event log file has changed
+                                           between reads.
+1700L RPC_S_INVALID_STRING_BINDING          The string binding is invalid.
+1701L RPC_S_WRONG_KIND_OF_BINDING           The binding handle is the
+                                           incorrect type.
+1702L RPC_S_INVALID_BINDING                 The binding handle is invalid.
+1703L RPC_S_PROTSEQ_NOT_SUPPORTED           The RPC protocol sequence is
+                                           not supported.
+1704L RPC_S_INVALID_RPC_PROTSEQ             The RPC protocol sequence is
+                                           invalid.
+1705L RPC_S_INVALID_STRING_UUID             The string UUID is invalid.
+1706L RPC_S_INVALID_ENDPOINT_FORMAT         The endpoint format is
+                                           invalid.
+1707L RPC_S_INVALID_NET_ADDR                The network address is
+                                           invalid.
+1708L RPC_S_NO_ENDPOINT_FOUND               No endpoint was found.
+1709L RPC_S_INVALID_TIMEOUT                 The timeout value is invalid.
+1710L RPC_S_OBJECT_NOT_FOUND                The object UUID was not found.
+1711L RPC_S_ALREADY_REGISTERED              The object UUID already
+                                           registered.
+1712L RPC_S_TYPE_ALREADY_REGISTERED         The type UUID is already
+                                           registered.
+1713L RPC_S_ALREADY_LISTENING               The server is already
+                                           listening.
+1714L RPC_S_NO_PROTSEQS_REGISTERED          No protocol sequences were
+                                           registered.
+1715L RPC_S_NOT_LISTENING                   The server is not listening.
+1716L RPC_S_UNKNOWN_MGR_TYPE                The manager type is unknown.
+1717L RPC_S_UNKNOWN_IF                      The interface is unknown.
+1718L RPC_S_NO_BINDINGS                     There are no bindings.
+1719L RPC_S_NO_PROTSEQS                     There are no protocol
+                                           sequences.
+1720L RPC_S_CANT_CREATE_ENDPOINT            The endpoint cannot be
+                                           created.
+1721L RPC_S_OUT_OF_RESOURCES                Not enough resources are
+                                           available to complete this
+                                           operation.
+1722L RPC_S_SERVER_UNAVAILABLE              The server is unavailable.
+1723L RPC_S_SERVER_TOO_BUSY                 The server is too busy to
+                                           complete this operation.
+1724L RPC_S_INVALID_NETWORK_OPTIONS         The network options are
+                                           invalid.
+1725L RPC_S_NO_CALL_ACTIVE                  There is not a remote
+                                           procedure call active in this
+                                           thread.
+1726L RPC_S_CALL_FAILED                     The remote procedure call
+                                           failed.
+1727L RPC_S_CALL_FAILED_DNE                 The remote procedure call
+                                           failed and did not execute.
+1728L RPC_S_PROTOCOL_ERROR                  An RPC protocol error
+                                           occurred.
+1730L RPC_S_UNSUPPORTED_TRANS_SYN           The transfer syntax is not
+                                           supported by the server.
+1731L RPC_S_SERVER_OUT_OF_MEMORY            The server has insufficient
+                                           memory to complete this
+                                           operation.
+1732L RPC_S_UNSUPPORTED_TYPE                The type UUID is not
+                                           supported.
+1733L RPC_S_INVALID_TAG                     The tag is invalid.
+1734L RPC_S_INVALID_BOUND                   The array bounds are invalid.
+1735L RPC_S_NO_ENTRY_NAME                   The binding does not contain
+                                           an entry name.
+1736L RPC_S_INVALID_NAME_SYNTAX             The name syntax is invalid.
+1737L RPC_S_UNSUPPORTED_NAME_SYNTAX         The name syntax is not
+                                           supported.
+1739L RPC_S_UUID_NO_ADDRESS                 No network address is
+                                           available to use to construct
+                                           a UUID.
+1740L RPC_S_DUPLICATE_ENDPOINT              The endpoint is a duplicate.
+1741L RPC_S_UNKNOWN_AUTHN_TYPE              The authentication type is
+                                           unknown.
+1742L RPC_S_MAX_CALLS_TOO_SMALL             The maximum number of calls is
+                                           too small.
+1743L RPC_S_STRING_TOO_LONG                 The string is too long.
+1744L RPC_S_PROTSEQ_NOT_FOUND               The RPC protocol sequence was
+                                           not found.
+1745L RPC_S_PROCNUM_OUT_OF_RANGE            The procedure number is out of
+                                           range.
+1746L RPC_S_BINDING_HAS_NO_AUTH             The binding does not contain
+                                           any authentication
+                                           information.
+1747L RPC_S_UNKNOWN_AUTHN_SERVICE           The authentication service is
+                                           unknown.
+1748L RPC_S_UNKNOWN_AUTHN_LEVEL             The authentication level is
+                                           unknown.
+1749L RPC_S_INVALID_AUTH_IDENTITY           The security context is
+                                           invalid.
+1750L RPC_S_UNKNOWN_AUTHZ_SERVICE           The authorization service is
+                                           unknown.
+1751L EPT_S_INVALID_ENTRY                   The entry is invalid.
+1752L EPT_S_CANT_PERFORM_OP                 The operation cannot be
+                                           performed.
+1753L EPT_S_NOT_REGISTERED                  There are no more endpoints
+                                           available from the endpoint
+                                           mapper.
+1755L RPC_S_INCOMPLETE_NAME                 The entry name is incomplete.
+1756L RPC_S_INVALID_VERS_OPTION             The version option is invalid.
+1757L RPC_S_NO_MORE_MEMBERS                 There are no more members.
+1758L RPC_S_NOT_ALL_OBJS_UNEXPORTED         There is nothing to unexport.
+1759L RPC_S_INTERFACE_NOT_FOUND             The interface was not found.
+1760L RPC_S_ENTRY_ALREADY_EXISTS            The entry already exists.
+1761L RPC_S_ENTRY_NOT_FOUND                 The entry is not found.
+1762L RPC_S_NAME_SERVICE_UNAVAILABLE        The name service is
+                                           unavailable.
+1764L RPC_S_CANNOT_SUPPORT                  The requested operation is not
+                                           supported.
+1765L RPC_S_NO_CONTEXT_AVAILABLE            No security context is
+                                           available to allow
+                                           impersonation.
+1766L RPC_S_INTERNAL_ERROR                  An internal error occurred in
+                                           RPC.
+1767L RPC_S_ZERO_DIVIDE                     The server attempted an
+                                           integer divide by zero.
+1768L RPC_S_ADDRESS_ERROR                   An addressing error occurred
+                                           in the server.
+1769L RPC_S_FP_DIV_ZERO                     A floating point operation at
+                                           the server caused a divide by
+                                           zero.
+1770L RPC_S_FP_UNDERFLOW                    A floating point underflow
+                                           occurred at the server.
+1771L RPC_S_FP_OVERFLOW                     A floating point overflow
+                                           occurred at the server.
+1772L RPC_X_NO_MORE_ENTRIES                 The list of servers available
+                                           for auto_handle binding was
+                                           exhausted.
+1773L RPC_X_SS_CHAR_TRANS_OPEN_FAIL         The file designated by
+                                           DCERPCCHARTRANS cannot be
+                                           opened.
+1774L RPC_X_SS_CHAR_TRANS_SHORT_FILE        The file containing the
+                                           character translation table
+                                           has fewer than 512 bytes.
+1775L RPC_X_SS_IN_NULL_CONTEXT              A null context handle is
+                                           passed as an [in] parameter.
+1776L RPC_X_SS_CONTEXT_MISMATCH             The context handle does not
+                                           match any known context
+                                           handles.
+1777L RPC_X_SS_CONTEXT_DAMAGED              The context handle changed
+                                           during a call.
+1778L RPC_X_SS_HANDLES_MISMATCH             The binding handles passed to
+                                           a remote procedure call do not
+                                           match.
+1779L RPC_X_SS_CANNOT_GET_CALL_HANDLE       The stub is unable to get the
+                                           call handle.
+1780L RPC_X_NULL_REF_POINTER                A null reference pointer was
+                                           passed to the stub.
+1781L RPC_X_ENUM_VALUE_OUT_OF_RANGE         The enumeration value is out
+                                           of range.
+1782L RPC_X_BYTE_COUNT_TOO_SMALL            The byte count is too small.
+1783L RPC_X_BAD_STUB_DATA                   The stub received bad data.
+1784L ERROR_INVALID_USER_BUFFER             The supplied user buffer is
+                                           invalid for the requested
+                                           operation.
+1785L ERROR_UNRECOGNIZED_MEDIA              The disk media is not
+                                           recognized. It may not be
+                                           formatted.
+1786L ERROR_NO_TRUST_LSA_SECRET             The workstation does not have
+                                           a trust secret.
+1787L ERROR_NO_TRUST_SAM_ACCOUNT            The domain controller does not
+                                           have an account for this
+                                           workstation.
+1788L ERROR_TRUSTED_DOMAIN_FAILURE          The trust relationship between
+                                           the primary domain and the
+                                           trusted domain failed.
+1789L ERROR_TRUSTED_RELATIONSHIP_FAILURE    The trust relationship between
+                                           this workstation and the
+                                           primary domain failed.
+1790L ERROR_TRUST_FAILURE                   The network logon failed.
+1791L RPC_S_CALL_IN_PROGRESS                A remote procedure call is
+                                           already in progress for this
+                                           thread.
+1792L ERROR_NETLOGON_NOT_STARTED            An attempt was made to logon,
+                                           but the network logon service
+                                           was not started.
+1793L ERROR_ACCOUNT_EXPIRED                 The user'</span><span class="n">s</span> <span class="n">account</span> <span class="n">has</span>
+                                           <span class="n">expired</span><span class="p">.</span>
+<span class="m">1794L</span> <span class="n">ERROR_REDIRECTOR_HAS_OPEN_HANDLES</span>     <span class="n">The</span> <span class="n">redirector</span> <span class="n">is</span> <span class="k">in</span> <span class="n">use</span> <span class="k">and</span>
+                                           <span class="n">cannot</span> <span class="n">be</span> <span class="n">unloaded</span><span class="p">.</span>
+<span class="m">1795L</span> <span class="n">ERROR_PRINTER_DRIVER_ALREADY_INSTALLED</span>  <span class="n">The</span> <span class="n">specified</span> <span class="n">printer</span> <span class="n">driver</span>
+                                           <span class="n">is</span> <span class="n">already</span> <span class="n">installed</span><span class="p">.</span>
+<span class="m">1796L</span> <span class="n">ERROR_UNKNOWN_PORT</span>                    <span class="n">The</span> <span class="n">specified</span> <span class="n">port</span> <span class="n">is</span> <span class="n">unknown</span><span class="p">.</span>
+<span class="m">1797L</span> <span class="n">ERROR_UNKNOWN_PRINTER_DRIVER</span>          <span class="n">The</span> <span class="n">printer</span> <span class="n">driver</span> <span class="n">is</span> <span class="n">unknown</span><span class="p">.</span>
+<span class="m">1798L</span> <span class="n">ERROR_UNKNOWN_PRINTPROCESSOR</span>          <span class="n">The</span> <span class="n">print</span> <span class="n">processor</span> <span class="n">is</span>
+                                           <span class="n">unknown</span><span class="p">.</span>
+<span class="m">1799L</span> <span class="n">ERROR_INVALID_SEPARATOR_FILE</span>          <span class="n">The</span> <span class="n">specified</span> <span class="n">separator</span> <span class="n">file</span>
+                                           <span class="n">is</span> <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1800L</span> <span class="n">ERROR_INVALID_PRIORITY</span>                <span class="n">The</span> <span class="n">specified</span> <span class="n">priority</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1801L</span> <span class="n">ERROR_INVALID_PRINTER_NAME</span>            <span class="n">The</span> <span class="n">printer</span> <span class="n">name</span> <span class="n">is</span> <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1802L</span> <span class="n">ERROR_PRINTER_ALREADY_EXISTS</span>          <span class="n">The</span> <span class="n">printer</span> <span class="n">already</span> <span class="nb">exists</span><span class="p">.</span>
+<span class="m">1803L</span> <span class="n">ERROR_INVALID_PRINTER_COMMAND</span>         <span class="n">The</span> <span class="n">printer</span> <span class="nf">command</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1804L</span> <span class="n">ERROR_INVALID_DATATYPE</span>                <span class="n">The</span> <span class="n">specified</span> <span class="n">datatype</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1805L</span> <span class="n">ERROR_INVALID_ENVIRONMENT</span>             <span class="n">The</span> <span class="n">Environment</span> <span class="n">specified</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1806L</span> <span class="n">RPC_S_NO_MORE_BINDINGS</span>                <span class="n">There</span> <span class="n">are</span> <span class="n">no</span> <span class="n">more</span> <span class="n">bindings</span><span class="p">.</span>
+<span class="m">1807L</span> <span class="n">ERROR_NOLOGON_INTERDOMAIN_TRUST_ACCOUNT</span>  <span class="n">The</span> <span class="n">account</span> <span class="n">used</span> <span class="n">is</span> <span class="n">an</span>
+                                           <span class="n">interdomain</span> <span class="n">trust</span> <span class="n">account</span><span class="p">.</span> <span class="n">Use</span>
+                                           <span class="n">your</span> <span class="n">normal</span> <span class="n">user</span> <span class="n">account</span> <span class="k">or</span>
+                                           <span class="n">remote</span> <span class="n">user</span> <span class="n">account</span> <span class="k">to</span> <span class="n">access</span>
+                                           <span class="n">this</span> <span class="n">server</span><span class="p">.</span>
+<span class="m">1808L</span> <span class="n">ERROR_NOLOGON_WORKSTATION_TRUST_ACCOUNT</span>  <span class="n">The</span> <span class="n">account</span> <span class="n">used</span> <span class="n">is</span> <span class="n">a</span>
+                                           <span class="n">workstation</span> <span class="n">trust</span> <span class="n">account</span><span class="p">.</span> <span class="n">Use</span>
+                                           <span class="n">your</span> <span class="n">normal</span> <span class="n">user</span> <span class="n">account</span> <span class="k">or</span>
+                                           <span class="n">remote</span> <span class="n">user</span> <span class="n">account</span> <span class="k">to</span> <span class="n">access</span>
+                                           <span class="n">this</span> <span class="n">server</span><span class="p">.</span>
+<span class="m">1809L</span> <span class="n">ERROR_NOLOGON_SERVER_TRUST_ACCOUNT</span>    <span class="n">The</span> <span class="n">account</span> <span class="n">used</span> <span class="n">is</span> <span class="n">an</span> <span class="n">server</span>
+                                           <span class="n">trust</span> <span class="n">account</span><span class="p">.</span> <span class="n">Use</span> <span class="n">your</span> <span class="n">normal</span>
+                                           <span class="n">user</span> <span class="n">account</span> <span class="k">or</span> <span class="n">remote</span> <span class="n">user</span>
+                                           <span class="n">account</span> <span class="k">to</span> <span class="n">access</span> <span class="n">this</span> <span class="n">server</span><span class="p">.</span>
+<span class="m">1810L</span> <span class="n">ERROR_DOMAIN_TRUST_INCONSISTENT</span>       <span class="n">The</span> <span class="n">name</span> <span class="k">or</span> <span class="n">security</span> <span class="n">ID</span> <span class="p">(</span><span class="n">SID</span><span class="p">)</span>
+                                           <span class="k">of</span> <span class="n">the</span> <span class="n">domain</span> <span class="n">specified</span> <span class="n">is</span>
+                                           <span class="n">inconsistent</span> <span class="k">with</span> <span class="n">the</span> <span class="n">trust</span>
+                                           <span class="n">information</span> <span class="n">for</span> <span class="n">that</span> <span class="n">domain</span><span class="p">.</span>
+<span class="m">1811L</span> <span class="n">ERROR_SERVER_HAS_OPEN_HANDLES</span>         <span class="n">The</span> <span class="n">server</span> <span class="n">is</span> <span class="k">in</span> <span class="n">use</span> <span class="k">and</span>
+                                           <span class="n">cannot</span> <span class="n">be</span> <span class="n">unloaded</span><span class="p">.</span>
+<span class="m">1812L</span> <span class="n">ERROR_RESOURCE_DATA_NOT_FOUND</span>         <span class="n">The</span> <span class="n">specified</span> <span class="n">image</span> <span class="n">file</span> <span class="n">did</span>
+                                           <span class="k">not</span> <span class="n">contain</span> <span class="n">a</span> <span class="n">resource</span>
+                                           <span class="n">section</span><span class="p">.</span>
+<span class="m">1813L</span> <span class="n">ERROR_RESOURCE_TYPE_NOT_FOUND</span>         <span class="n">The</span> <span class="n">specified</span> <span class="n">resource</span> <span class="n">type</span>
+                                           <span class="n">can</span> <span class="k">not</span> <span class="n">be</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span> <span class="n">image</span>
+                                           <span class="n">file</span><span class="p">.</span>
+<span class="m">1814L</span> <span class="n">ERROR_RESOURCE_NAME_NOT_FOUND</span>         <span class="n">The</span> <span class="n">specified</span> <span class="n">resource</span> <span class="n">name</span>
+                                           <span class="n">can</span> <span class="k">not</span> <span class="n">be</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span> <span class="n">image</span>
+                                           <span class="n">file</span><span class="p">.</span>
+<span class="m">1815L</span> <span class="n">ERROR_RESOURCE_LANG_NOT_FOUND</span>         <span class="n">The</span> <span class="n">specified</span> <span class="n">resource</span>
+                                           <span class="n">language</span> <span class="n">ID</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">found</span> <span class="k">in</span>
+                                           <span class="n">the</span> <span class="n">image</span> <span class="n">file</span><span class="p">.</span>
+<span class="m">1816L</span> <span class="n">ERROR_NOT_ENOUGH_QUOTA</span>                <span class="k">Not</span> <span class="n">enough</span> <span class="n">quota</span> <span class="n">is</span> <span class="n">available</span>
+                                           <span class="k">to</span> <span class="n">process</span> <span class="n">this</span> <span class="nf">command</span><span class="p">.</span>
+<span class="m">1817L</span> <span class="n">RPC_S_NO_INTERFACES</span>
+<span class="m">1818L</span> <span class="n">RPC_S_CALL_CANCELLED</span>                  <span class="n">The</span> <span class="n">server</span> <span class="n">was</span> <span class="n">altered</span> <span class="k">while</span>
+                                           <span class="n">processing</span> <span class="n">this</span> <span class="n">call</span><span class="p">.</span>
+<span class="m">1819L</span> <span class="n">RPC_S_BINDING_INCOMPLETE</span>              <span class="n">The</span> <span class="n">binding</span> <span class="n">handle</span> <span class="n">does</span> <span class="k">not</span>
+                                           <span class="n">contain</span> <span class="n">all</span> <span class="n">required</span>
+                                           <span class="n">information</span><span class="p">.</span>
+<span class="m">1820L</span> <span class="n">RPC_S_COMM_FAILURE</span>                    <span class="n">Communications</span> <span class="n">failure</span><span class="p">.</span>
+<span class="m">1821L</span> <span class="n">RPC_S_UNSUPPORTED_AUTHN_LEVEL</span>         <span class="n">The</span> <span class="n">requested</span> <span class="n">authentication</span>
+                                           <span class="n">level</span> <span class="n">is</span> <span class="k">not</span> <span class="n">supported</span><span class="p">.</span>
+<span class="m">1822L</span> <span class="n">RPC_S_NO_PRINC_NAME</span>                   <span class="n">No</span> <span class="n">principal</span> <span class="n">name</span> <span class="n">registered</span><span class="p">.</span>
+<span class="m">1823L</span> <span class="n">RPC_S_NOT_RPC_ERROR</span>                   <span class="n">The</span> <span class="n">error</span> <span class="n">specified</span> <span class="n">is</span> <span class="k">not</span> <span class="n">a</span>
+                                           <span class="n">valid</span> <span class="n">Windows</span> <span class="n">RPC</span> <span class="n">error</span> <span class="n">code</span><span class="p">.</span>
+<span class="m">1824L</span> <span class="n">RPC_S_UUID_LOCAL_ONLY</span>                 <span class="n">A</span> <span class="n">UUID</span> <span class="n">that</span> <span class="n">is</span> <span class="n">valid</span> <span class="n">only</span> <span class="n">on</span>
+                                           <span class="n">this</span> <span class="n">computer</span> <span class="n">has</span> <span class="n">been</span>
+                                           <span class="n">allocated</span><span class="p">.</span>
+<span class="m">1825L</span> <span class="n">RPC_S_SEC_PKG_ERROR</span>                   <span class="n">A</span> <span class="n">security</span> <span class="k">package</span> <span class="n">specific</span>
+                                           <span class="n">error</span> <span class="n">occurred</span><span class="p">.</span>
+<span class="m">1826L</span> <span class="n">RPC_S_NOT_CANCELLED</span>                   <span class="n">Thread</span> <span class="n">is</span> <span class="k">not</span> <span class="n">cancelled</span><span class="p">.</span>
+<span class="m">1827L</span> <span class="n">RPC_X_INVALID_ES_ACTION</span>               <span class="n">Invalid</span> <span class="n">operation</span> <span class="n">on</span> <span class="n">the</span>
+                                           <span class="n">encoding</span><span class="p">/</span><span class="n">decoding</span> <span class="n">handle</span><span class="p">.</span>
+<span class="m">1828L</span> <span class="n">RPC_X_WRONG_ES_VERSION</span>                <span class="n">Incompatible</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span>
+                                           <span class="n">serializing</span> <span class="k">package</span><span class="p">.</span>
+<span class="m">1829L</span> <span class="n">RPC_X_WRONG_STUB_VERSION</span>              <span class="n">Incompatible</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span>
+                                           <span class="n">RPC</span> <span class="n">stub</span><span class="p">.</span>
+<span class="m">1830L</span> <span class="n">RPC_X_INVALID_PIPE_OBJECT</span>             <span class="n">The</span> <span class="n">idl</span> <span class="n">pipe</span> <span class="n">object</span> <span class="n">is</span> <span class="n">invalid</span>
+                                           <span class="k">or</span> <span class="n">corrupted</span><span class="p">.</span>
+<span class="m">1831L</span> <span class="n">RPC_X_INVALID_PIPE_OPERATION</span>          <span class="n">The</span> <span class="n">operation</span> <span class="n">is</span> <span class="n">invalid</span> <span class="n">for</span> <span class="n">a</span>
+                                           <span class="n">given</span> <span class="n">idl</span> <span class="n">pipe</span> <span class="n">object</span><span class="p">.</span>
+<span class="m">1832L</span> <span class="n">RPC_X_WRONG_PIPE_VERSION</span>              <span class="n">The</span> <span class="n">idl</span> <span class="n">pipe</span> <span class="k">version</span> <span class="n">is</span> <span class="k">not</span>
+                                           <span class="n">supported</span><span class="p">.</span>
+<span class="m">1898L</span> <span class="n">RPC_S_GROUP_MEMBER_NOT_FOUND</span>          <span class="n">The</span> <span class="n">group</span> <span class="n">member</span> <span class="n">was</span> <span class="k">not</span>
+                                           <span class="n">found</span><span class="p">.</span>
+<span class="m">1899L</span> <span class="n">EPT_S_CANT_CREATE</span>                     <span class="n">The</span> <span class="n">endpoint</span> <span class="n">mapper</span> <span class="n">database</span>
+                                           <span class="n">could</span> <span class="k">not</span> <span class="n">be</span> <span class="n">created</span><span class="p">.</span>
+<span class="m">1900L</span> <span class="n">RPC_S_INVALID_OBJECT</span>                  <span class="n">The</span> <span class="n">object</span> <span class="n">universal</span> <span class="n">unique</span>
+                                           <span class="n">identifier</span> <span class="p">(</span><span class="n">UUID</span><span class="p">)</span> <span class="n">is</span> <span class="n">the</span> <span class="n">nil</span>
+                                           <span class="n">UUID</span><span class="p">.</span>
+<span class="m">1901L</span> <span class="n">ERROR_INVALID_TIME</span>                    <span class="n">The</span> <span class="n">specified</span> <span class="n">time</span> <span class="n">is</span> <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1902L</span> <span class="n">ERROR_INVALID_FORM_NAME</span>               <span class="n">The</span> <span class="n">specified</span> <span class="n">Form</span> <span class="n">name</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1903L</span> <span class="n">ERROR_INVALID_FORM_SIZE</span>               <span class="n">The</span> <span class="n">specified</span> <span class="n">Form</span> <span class="n">size</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1904L</span> <span class="n">ERROR_ALREADY_WAITING</span>                 <span class="n">The</span> <span class="n">specified</span> <span class="n">Printer</span> <span class="n">handle</span>
+                                           <span class="n">is</span> <span class="n">already</span> <span class="n">being</span> <span class="n">waited</span> <span class="n">on</span><span class="p">.</span>
+<span class="m">1905L</span> <span class="n">ERROR_PRINTER_DELETED</span>                 <span class="n">The</span> <span class="n">specified</span> <span class="n">Printer</span> <span class="n">has</span> <span class="n">been</span>
+                                           <span class="n">deleted</span><span class="p">.</span>
+<span class="m">1906L</span> <span class="n">ERROR_INVALID_PRINTER_STATE</span>           <span class="n">The</span> <span class="n">state</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Printer</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">1907L</span> <span class="n">ERROR_PASSWORD_MUST_CHANGE</span>            <span class="n">The</span> <span class="n">user</span> <span class="n">must</span> <span class="n">change</span> <span class="n">his</span>
+                                           <span class="n">password</span> <span class="n">before</span> <span class="n">he</span> <span class="n">logs</span> <span class="n">on</span> <span class="n">the</span>
+                                           <span class="n">first</span> <span class="n">time</span><span class="p">.</span>
+<span class="m">1908L</span> <span class="n">ERROR_DOMAIN_CONTROLLER_NOT_FOUND</span>     <span class="n">Could</span> <span class="k">not</span> <span class="n">find</span> <span class="n">the</span> <span class="n">domain</span>
+                                           <span class="n">controller</span> <span class="n">for</span> <span class="n">this</span> <span class="n">domain</span><span class="p">.</span>
+<span class="m">1909L</span> <span class="n">ERROR_ACCOUNT_LOCKED_OUT</span>              <span class="n">The</span> <span class="n">referenced</span> <span class="n">account</span> <span class="n">is</span>
+                                           <span class="n">currently</span> <span class="n">locked</span> <span class="n">out</span> <span class="k">and</span> <span class="n">may</span>
+                                           <span class="k">not</span> <span class="n">be</span> <span class="n">logged</span> <span class="n">on</span> <span class="k">to</span><span class="p">.</span>
+<span class="m">1910L</span> <span class="n">OR_INVALID_OXID</span>                       <span class="n">The</span> <span class="n">object</span> <span class="n">exporter</span> <span class="n">specified</span>
+                                           <span class="n">was</span> <span class="k">not</span> <span class="n">found</span><span class="p">.</span>
+<span class="m">1911L</span> <span class="n">OR_INVALID_OID</span>                        <span class="n">The</span> <span class="n">object</span> <span class="n">specified</span> <span class="n">was</span> <span class="k">not</span>
+                                           <span class="n">found</span><span class="p">.</span>
+<span class="m">1912L</span> <span class="n">OR_INVALID_SET</span>                        <span class="n">The</span> <span class="n">object</span> <span class="n">resolver</span> <span class="k">set</span>
+                                           <span class="n">specified</span> <span class="n">was</span> <span class="k">not</span> <span class="n">found</span><span class="p">.</span>
+<span class="m">1913L</span> <span class="n">RPC_S_SEND_INCOMPLETE</span>                 <span class="n">Some</span> <span class="n">data</span> <span class="n">remains</span> <span class="k">to</span> <span class="n">be</span> <span class="n">sent</span>
+                                           <span class="k">in</span> <span class="n">the</span> <span class="n">request</span> <span class="n">buffer</span><span class="p">.</span>
+<span class="m">2000L</span> <span class="n">ERROR_INVALID_PIXEL_FORMAT</span>            <span class="n">The</span> <span class="n">pixel</span> <span class="n">format</span> <span class="n">is</span> <span class="n">invalid</span><span class="p">.</span>
+<span class="m">2001L</span> <span class="n">ERROR_BAD_DRIVER</span>                      <span class="n">The</span> <span class="n">specified</span> <span class="n">driver</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">2002L</span> <span class="n">ERROR_INVALID_WINDOW_STYLE</span>            <span class="n">The</span> <span class="n">window</span> <span class="n">style</span> <span class="k">or</span> <span class="n">class</span>
+                                           <span class="n">attribute</span> <span class="n">is</span> <span class="n">invalid</span> <span class="n">for</span> <span class="n">this</span>
+                                           <span class="n">operation</span><span class="p">.</span>
+<span class="m">2003L</span> <span class="n">ERROR_METAFILE_NOT_SUPPORTED</span>          <span class="n">The</span> <span class="n">requested</span> <span class="n">metafile</span>
+                                           <span class="n">operation</span> <span class="n">is</span> <span class="k">not</span> <span class="n">supported</span><span class="p">.</span>
+<span class="m">2004L</span> <span class="n">ERROR_TRANSFORM_NOT_SUPPORTED</span>         <span class="n">The</span> <span class="n">requested</span> <span class="n">transformation</span>
+                                           <span class="n">operation</span> <span class="n">is</span> <span class="k">not</span> <span class="n">supported</span><span class="p">.</span>
+<span class="m">2005L</span> <span class="n">ERROR_CLIPPING_NOT_SUPPORTED</span>          <span class="n">The</span> <span class="n">requested</span> <span class="n">clipping</span>
+                                           <span class="n">operation</span> <span class="n">is</span> <span class="k">not</span> <span class="n">supported</span><span class="p">.</span>
+<span class="m">2138L</span> <span class="n">ERROR_NO_NETWORK</span>                      <span class="n">The</span> <span class="n">network</span> <span class="n">is</span> <span class="k">not</span> <span class="n">present</span> <span class="k">or</span>
+                                           <span class="k">not</span> <span class="n">started</span><span class="p">.</span>
+<span class="m">2202L</span> <span class="n">ERROR_BAD_USERNAME</span>                    <span class="n">The</span> <span class="n">specified</span> <span class="n">user</span> <span class="n">name</span> <span class="n">is</span>
+                                           <span class="n">invalid</span><span class="p">.</span>
+<span class="m">2250L</span> <span class="n">ERROR_NOT_CONNECTED</span>                   <span class="n">This</span> <span class="n">network</span> <span class="n">connection</span> <span class="n">does</span>
+                                           <span class="k">not</span> <span class="n">exist</span><span class="p">.</span>
+<span class="m">2401L</span> <span class="n">ERROR_OPEN_FILES</span>                      <span class="n">There</span> <span class="n">are</span> <span class="n">open</span> <span class="n">files</span> <span class="k">or</span>
+                                           <span class="n">requests</span> <span class="n">pending</span> <span class="n">on</span> <span class="n">this</span>
+                                           <span class="n">connection</span><span class="p">.</span>
+<span class="m">2402L</span> <span class="n">ERROR_ACTIVE_CONNECTIONS</span>              <span class="n">Active</span> <span class="n">connections</span> <span class="n">still</span>
+                                           <span class="n">exist</span><span class="p">.</span>
+<span class="m">2404L</span> <span class="n">ERROR_DEVICE_IN_USE</span>                   <span class="n">The</span> <span class="n">device</span> <span class="n">is</span> <span class="k">in</span> <span class="n">use</span> <span class="n">by</span> <span class="n">an</span>
+                                           <span class="n">active</span> <span class="n">process</span> <span class="k">and</span> <span class="n">cannot</span> <span class="n">be</span>
+                                           <span class="n">disconnected</span><span class="p">.</span>
+<span class="m">3000L</span> <span class="n">ERROR_UNKNOWN_PRINT_MONITOR</span>           <span class="n">The</span> <span class="n">specified</span> <span class="n">print</span> <span class="n">monitor</span> <span class="n">is</span>
+                                           <span class="n">unknown</span><span class="p">.</span>
+<span class="m">3001L</span> <span class="n">ERROR_PRINTER_DRIVER_IN_USE</span>           <span class="n">The</span> <span class="n">specified</span> <span class="n">printer</span> <span class="n">driver</span>
+                                           <span class="n">is</span> <span class="n">currently</span> <span class="k">in</span> <span class="n">use</span><span class="p">.</span>
+<span class="m">3002L</span> <span class="n">ERROR_SPOOL_FILE_NOT_FOUND</span>            <span class="n">The</span> <span class="n">spool</span> <span class="n">file</span> <span class="n">was</span> <span class="k">not</span> <span class="n">found</span><span class="p">.</span>
+<span class="m">3003L</span> <span class="n">ERROR_SPL_NO_STARTDOC</span>                 <span class="n">A</span> <span class="n">StartDocPrinter</span> <span class="n">call</span> <span class="n">was</span> <span class="k">not</span>
+                                           <span class="n">issued</span><span class="p">.</span>
+<span class="m">3004L</span> <span class="n">ERROR_SPL_NO_ADDJOB</span>                   <span class="n">An</span> <span class="n">AddJob</span> <span class="n">call</span> <span class="n">was</span> <span class="k">not</span> <span class="n">issued</span><span class="p">.</span>
+<span class="m">3005L</span> <span class="n">ERROR_PRINT_PROCESSOR_ALREADY_INSTALLED</span>  <span class="n">The</span> <span class="n">specified</span> <span class="n">print</span>
+                                           <span class="n">processor</span> <span class="n">has</span> <span class="n">already</span> <span class="n">been</span>
+                                           <span class="n">installed</span><span class="p">.</span>
+<span class="m">3006L</span> <span class="n">ERROR_PRINT_MONITOR_ALREADY_INSTALLED</span> <span class="n">The</span> <span class="n">specified</span> <span class="n">print</span> <span class="n">monitor</span>
+                                           <span class="n">has</span> <span class="n">already</span> <span class="n">been</span> <span class="n">installed</span><span class="p">.</span>
+<span class="m">3007L</span> <span class="n">ERROR_INVALID_PRINT_MONITOR</span>           <span class="n">The</span> <span class="n">specified</span> <span class="n">print</span> <span class="n">monitor</span>
+                                           <span class="n">does</span> <span class="k">not</span> <span class="n">have</span> <span class="n">the</span> <span class="n">required</span>
+                                           <span class="n">functions</span><span class="p">.</span>
+<span class="m">3008L</span> <span class="n">ERROR_PRINT_MONITOR_IN_USE</span>            <span class="n">The</span> <span class="n">specified</span> <span class="n">print</span> <span class="n">monitor</span> <span class="n">is</span>
+                                           <span class="n">currently</span> <span class="k">in</span> <span class="n">use</span><span class="p">.</span>
+<span class="m">3009L</span> <span class="n">ERROR_PRINTER_HAS_JOBS_QUEUED</span>         <span class="n">The</span> <span class="n">requested</span> <span class="n">operation</span> <span class="n">is</span> <span class="k">not</span>
+                                           <span class="n">allowed</span> <span class="n">when</span> <span class="n">there</span> <span class="n">are</span> <span class="n">jobs</span>
+                                           <span class="n">queued</span> <span class="k">to</span> <span class="n">the</span> <span class="n">printer</span><span class="p">.</span>
+<span class="m">3010L</span> <span class="n">ERROR_SUCCESS_REBOOT_REQUIRED</span>         <span class="n">The</span> <span class="n">requested</span> <span class="n">operation</span> <span class="n">is</span>
+                                           <span class="n">successful</span><span class="p">.</span> <span class="n">Changes</span> <span class="n">will</span> <span class="k">not</span>
+                                           <span class="n">be</span> <span class="n">effective</span> <span class="k">until</span> <span class="n">the</span> <span class="nf">system</span>
+                                           <span class="n">is</span> <span class="n">rebooted</span><span class="p">.</span>
+<span class="m">3011L</span> <span class="n">ERROR_SUCCESS_RESTART_REQUIRED</span>        <span class="n">The</span> <span class="n">requested</span> <span class="n">operation</span> <span class="n">is</span>
+                                           <span class="n">successful</span><span class="p">.</span> <span class="n">Changes</span> <span class="n">will</span> <span class="k">not</span>
+                                           <span class="n">be</span> <span class="n">effective</span> <span class="k">until</span> <span class="n">the</span> <span class="n">service</span>
+                                           <span class="n">is</span> <span class="n">restarted</span><span class="p">.</span>
+<span class="m">4000L</span> <span class="n">ERROR_WINS_INTERNAL</span>                   <span class="n">WINS</span> <span class="n">encountered</span> <span class="n">an</span> <span class="n">error</span>
+                                           <span class="k">while</span> <span class="n">processing</span> <span class="n">the</span> <span class="nf">command</span><span class="p">.</span>
+<span class="m">4001L</span> <span class="n">ERROR_CAN_NOT_DEL_LOCAL_WINS</span>          <span class="n">The</span> <span class="n">local</span> <span class="n">WINS</span> <span class="n">can</span> <span class="k">not</span> <span class="n">be</span>
+                                           <span class="n">deleted</span><span class="p">.</span>
+<span class="m">4002L</span> <span class="n">ERROR_STATIC_INIT</span>                     <span class="n">The</span> <span class="n">importation</span> <span class="k">from</span> <span class="n">the</span> <span class="n">file</span>
+                                           <span class="n">failed</span><span class="p">.</span>
+<span class="m">4003L</span> <span class="n">ERROR_INC_BACKUP</span>                      <span class="n">The</span> <span class="n">backup</span> <span class="n">failed</span><span class="p">.</span> <span class="n">Was</span> <span class="n">a</span> <span class="n">full</span>
+                                           <span class="n">backup</span> <span class="n">done</span> <span class="n">before</span><span class="p">?</span>
+<span class="m">4004L</span> <span class="n">ERROR_FULL_BACKUP</span>                     <span class="n">The</span> <span class="n">backup</span> <span class="n">failed</span><span class="p">.</span> <span class="n">Check</span> <span class="n">the</span>
+                                           <span class="n">directory</span> <span class="n">that</span> <span class="n">you</span> <span class="n">are</span> <span class="n">backing</span>
+                                           <span class="n">the</span> <span class="n">database</span> <span class="k">to</span><span class="p">.</span>
+<span class="m">4005L</span> <span class="n">ERROR_REC_NON_EXISTENT</span>                <span class="n">The</span> <span class="n">name</span> <span class="n">does</span> <span class="k">not</span> <span class="n">exist</span> <span class="k">in</span> <span class="n">the</span>
+                                           <span class="n">WINS</span> <span class="n">database</span><span class="p">.</span>
+<span class="m">4006L</span> <span class="n">ERROR_RPL_NOT_ALLOWED</span>                 <span class="n">Replication</span> <span class="k">with</span> <span class="n">a</span> <span class="n">non</span><span class="p">-</span>
+                                           <span class="n">configured</span> <span class="n">partner</span> <span class="n">is</span> <span class="k">not</span>
+                                           <span class="n">allowed</span><span class="p">.</span>
+<span class="m">6118L</span> <span class="n">ERROR_NO_BROWSER_SERVERS_FOUND</span>        <span class="n">The</span> <span class="k">list</span> <span class="k">of</span> <span class="n">servers</span> <span class="n">for</span> <span class="n">this</span>
+                                           <span class="n">workgroup</span> <span class="n">is</span> <span class="k">not</span> <span class="n">currently</span>
+                                           <span class="n">available</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodnt</span> <span class="n">sysdiff</span><span class="p">.</span><span class="n">exe</span> <span class="n">unattended</span> <span class="n">setup</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kberrmsg</span> <span class="n">kbOPK</span> <span class="n">kbSBK</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbWinNTsearch</span> <span class="n">kbWinNTWsearch</span> <span class="n">kbWinNTSsearch</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbhowto</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

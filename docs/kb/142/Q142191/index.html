@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142191: PRB: Special Character Causes ODBC Update Syntax Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142191: PRB: Special Character Causes ODBC Update Syntax Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142191/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142191/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142191/","publisher":null,"image":null,"headline":"Q142191: PRB: Special Character Causes ODBC Update Syntax Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142191-prb-special-character-causes-odbc-update-syntax-error">Q142191: PRB: Special Character Causes ODBC Update Syntax Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142191
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using Visual FoxPro with ODBC to update a remote view designed visually with a
+Microsoft Access 2.0 or Microsoft Access 7.0 table with a tilde (~) character as
+the first character in a field name may generate either of the two following
+error messages:
+
+  [Microsoft][ODBC Microsoft Access 7.0 Driver] Syntax error in update
+  statement.
+
+  -or-
+
+  Connectivity Error: [Microsoft][ODBC Microsoft Access 7.0 Driver] Syntax
+  error in query expression '&lt;tablename&gt;.~&lt;fieldname&gt;'.
+
+CAUSE
+=====
+
+The updatable field contains a tilde (~) character, which Visual FoxPro converts
+to an underscore.
+
+
+WORKAROUND
+==========
+
+The following code demonstrates how to use SQL passthrough to accomplish the
+update to the Microsoft Access table. This example uses a Microsoft Access table
+named Family that contains these two fields:
+
+     Field 1 = ~first
+     Field 2 = ~last
+
+Also, ~first is the primary key of the table. Add one record where ~first =
+"Adam" and ~last = "Smith."
+
+1. Create a datasource to a Microsoft Access database.
+
+2. Establish a connection.
+
+     chandle=SQLCONNECT()
+     * Select available datasources. Select datasource for Microsoft Access.
+     IF chandle &lt; 0
+        WAIT WINDOW "Bad connection"
+        RETURN
+     ENDIF
+
+3. Process the update statement, and display a wait window with result.
+
+     x=SQLEXEC(chandle,;
+        "Update family set [~first]='Eve' where [~first]='Adam'")
+     IF x &gt; 0
+        WAIT WINDOW "Successful update"
+     ELSE
+        WAIT WINDOW "Update failed"
+        =SQLDISCONNECT(chandle)
+        RETURN
+     ENDIF
+
+4. View changes, if the update was successful.
+
+     x=SQLEXEC(chandle,"SELECT * FROM family")
+     IF x &gt; 0
+        BROWSE
+     ELSE
+        WAIT WINDOW "Select statement failed"
+        =SQLDISCONNECT(chandle)
+        RETURN
+     ENDIF
+
+5. Disconnect the connection handle
+
+     =SQLDISCONNECT(chandle)
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In Visual FoxPro the tilde (~) is not a valid character for a field name,
+although this is acceptable in Microsoft Access. Therefore, use of a Visual
+FoxPro ODBC Remote View to Microsoft Access, converts this special character to
+an underscore (_) character. The update using the Remote View then fails because
+Visual FoxPro sends an underscore instead of the tilde that Microsoft Access is
+expecting.
+
+For more information about Remote View Syntax, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q138501 Modifying a Remote View Results in a Syntax Error
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : 3.00 3.00b
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

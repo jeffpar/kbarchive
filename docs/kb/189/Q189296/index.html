@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189296: Inside DirectX Comments and Corrections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189296: Inside DirectX Comments and Corrections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189296/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189296/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189296/","publisher":null,"image":null,"headline":"Q189296: Inside DirectX Comments and Corrections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189296-inside-directx-comments-and-corrections">Q189296: Inside DirectX Comments and Corrections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189296
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbnetwork kbdocerr kbAPI kbDirectPlay kbSDKPlatform kbGrpDSNet
+Last Modified: 07-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Inside DirectX ISBN 1-57231-696-9 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Inside DirectX," ISBN 1- 57231-696-9.
+
+Contents:
+
+- Table 14-2: Result type of DirectSoundEnumerate is HRESULT
+
+- Page 291: Clarification
+
+- Table 20-11: "Parameter" Column Heading Should Be "Method"
+
+- Page 331: Text Errors
+
+- Table 20-19: Text Correction
+
+- Table 20-22: Text Correction
+
+- Table 21-8: Text Error
+
+- Table 28-9: Text Error
+
+- Table 28-14: Comment
+
+- Figure 29-2: Screenshot Correction
+
+MORE INFORMATION
+================
+
+Table 14-2: Result type of DirectSoundEnumerate is HRESULT
+----------------------------------------------------------
+
+Page 207, Table 14-2:
+Change: "BOOL DirectSoundEnumerate"
+To: "HRESULT DirectSoundEnumerate"
+
+
+Page 291: Clarification
+-----------------------
+
+Page 291, paragraph 1, sentence 1:
+Change: "If you keep the DirectPlay tab open while a windowed DirectPlay
+application is running on the desktop..."
+
+To: "If you open the DirectPlay tab before starting a windowed DirectPlay
+application on the desktop..."
+
+
+Table 20-11: "Parameter" Column Heading Should Be "Method"
+----------------------------------------------------------
+
+Page 327, Table 20-11:
+Change: "Parameter"
+To: "Method"
+
+
+Page 331: Text Errors
+---------------------
+
+Page 331, paragraph 1, sentence 3:
+Change: "A DPSYS_ADDGROUPTOGROUP message is sent to the other players."
+To: "A DPSYS_ADDGROUPTOGROUP message is sent to all players."
+
+Page 331, paragraph 3, sentence 4:
+Change: "A DPSYS_DELETEGROUPFROMGROUP message is sent to all other players."
+To: "A DPSYS_DELETEGROUPFROMGROUP message is sent to all players."
+
+
+Table 20-19: Text Correction
+----------------------------
+
+Page 333, Table 20-19:
+Change: "Either NULL to enumerate players..."
+To: "Either NULL to enumerate groups..."
+
+
+Table 20-22: Text Correction
+----------------------------
+
+Page 334, Table 20-22:
+Change: "Control flags, as summarized in Table 20-20."
+To: "Control flags, as summarized in Table 20-6."
+
+
+Table 20-30: Clarification
+--------------------------
+
+Page 347, Table 20-30:
+Change: "This session is the new host."
+To: "The local DirectPlay object is the new host."
+
+
+Table 21-8: Text Error
+----------------------
+
+Page 372, Table 21-8:
+Change: "The address of a pointer to be initialized to a new IDirectPlayA or
+IDirectPlay2A interface."
+To: "The address of a pointer to be initialized to a new IDirectPlay2 or
+IDirectPlay2A interface."
+
+
+Table 28-9: Text Error
+----------------------
+
+Page 503, Table 28-9:
+Change: "INT WINAPI DirectXSetupSetCallBack"
+To: "int WINAPI DirectXSetupSetCallBack"
+
+
+Table 28-14: Comment
+--------------------
+
+Page 507, Table 28-14:
+Change: "The driver being upgraded is currently in use."
+To: "The driver being upgraded is currently in use. DirectXSetup can upgrade this
+driver anyway but will need a system restart after installation is complete."
+
+
+Figure 29-2: Screenshot Correction
+----------------------------------
+
+Page 516, Figure 29-2:
+Remove the "Format" command from the context menu.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of the book, it may already
+contain the above corrections.
+
+Additional query words: ms_press dx 5.0 50
+
+======================================================================
+Keywords          : kbnetwork kbdocerr kbAPI kbDirectPlay kbSDKPlatform kbGrpDSNet 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

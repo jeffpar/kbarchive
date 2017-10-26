@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176909: HOWTO: Move a VSS Database or Project to New Location | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176909: HOWTO: Move a VSS Database or Project to New Location" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176909/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176909/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176909/","publisher":null,"image":null,"headline":"Q176909: HOWTO: Move a VSS Database or Project to New Location","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176909-howto-move-a-vss-database-or-project-to-new-location">Q176909: HOWTO: Move a VSS Database or Project to New Location</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176909
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,4.0a,5.0,6.0
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbSsafe600FAQ
+Last Modified: 18-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes three common scenarios for moving Visual SourceSafe
+projects or databases to a new location. The steps necessary to successfully
+accomplish this are detailed in the MORE INFORMATION section below.
+
+Scenario 1
+----------
+
+Moving the entire Visual SourceSafe server installation from one machine to
+another.
+
+Scenario 2
+----------
+
+Moving a project or projects from one database to another, while preserving the
+project's history.
+
+Scenario 3
+----------
+
+Moving only the DATA directory to a machine other than the Visual SourceSafe
+server. This scenario eliminates the need to modify clients accessing the
+database.
+
+IMPORTANT: Whichever method you use, make sure to do a full backup of your data
+first.
+
+MORE INFORMATION
+================
+
+The procedures within each scenario may vary depending on the version of Visual
+SourceSafe you are running.
+
+Scenario 1
+----------
+
+Moving the entire VSS server installation from one machine to another.
+
+1. Copy the entire &lt;server&gt;\VSS installation directory to the new server
+  location.
+
+2. Make sure that the Visual SourceSafe clients can still access the data from
+  the new location.
+
+3. Step 3 varies according to what version of Visual SourceSafe you are using:
+
+  For Visual SourceSafe 4.x clients:
+
+  a. Locate the local copy of the Srcsafe.ini file (for example, &lt;local
+     drive&gt;\vssclient\Srcsafe.ini) and open it in a text editor.
+
+  b. Edit the line containing the #include statement so that it points to the
+     new location of the server's Srcsafe.ini. For example:
+
+     Change:
+
+  #include \\oldserver\oldshare\vss\srcsafe.ini
+
+     To:
+
+  #include \\newserver\newshare\vss\srcsafe.ini
+
+  For Visual SourceSafe 5.x or later clients:
+
+  a. Open the Visual SourceSafe Explorer. Click OK if you get the following
+     error:
+
+  File '\\oldserver\oldshare\srcsafe.ini' not found.
+
+  b. From the Visual SourceSafe Login dialog box, click Browse.
+
+  c. Click Browse from the Open SourceSafe Database dialog box.
+
+  d. Type in the UNC path to the new location of the Visual SourceSafe server
+     directory and open the srcsafe.ini. This will add a new entry in the
+     Available Databases list for the newly located database.
+
+  e. The old database reference can now be removed from this dialog box.
+
+IMPORTANT: Be sure to add the correct operating system level privileges to the
+new server directory.
+
+For additional information about required network privileges, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q131022 INFO: Required Network Rights for the SourceSafe Directories
+
+NOTE: If you have any shortcuts to this database, be sure to modify the shortcut
+Target on the client that pointed to ssadmin.exe on the old server.
+
+Scenario 2
+----------
+
+Moving a project or projects from one database to another, while preserving the
+project's history.
+
+NOTE: This process is for Visual SourceSafe 5.0 or greater only.
+
+Use the SSARC and SSRESTOR utilities included in Visual SourceSafe 5.0. With
+these utilities, you can archive projects, preserve their histories, and restore
+them to a new database.
+
+NOTE: You must have SourceSafe Admin privileges to use these utilities. For more
+information on the use of SSARC and SSRESTORE, see the Visual SourceSafe,
+version 5.0, "Visual SourceSafe User's Guide," Appendix B, pages 216-220 or
+under the SSAdmin Online Help topic "Basic Administrator Operations".
+
+NOTE: In order to restore a project successfully your archive must include the
+latest versions all the files in the project. If you use the -v switch with
+SSARC to archive off earlier versions of your files, you will not be able to
+restore that archive to a different database because it needs the later
+versions.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q173387 PRB: Restoring an Archive of an Entire Database
+
+
+
+NOTE: Because the physical file names get renamed when you restore a project to a
+new database, it may be necessary to reconnect projects that are integrated with
+Visual SourceSafe. Please refer to the following article in the Microsoft
+Knowledge Base for additional information:
+
+  Q166305 HOWTO: Reconnecting a Visual C++ Project to Source Control
+
+Scenario 3
+----------
+
+Moving only the DATA directory to a machine other than the Visual SourceSafe
+server:
+
+1. Copy only the &lt;VSS server&gt;\DATA directory to its new location.
+
+2. Edit the &lt;VSS server&gt;\srcsafe.ini file's data_path variable. For
+  example:
+
+  Change:
+
+  data_path = data
+
+  To:
+
+  data_path = \\&lt;new server path&gt;\data
+
+Clients accessing this database do not need to be modified since the server's
+Srcsafe.ini has not moved.
+
+Additional Tips
+---------------
+
+1. Remove permissions for all users at the operating system level for the old
+  Visual SourceSafe installation to prevent them from checking their work in
+  and out of the wrong database.
+
+2. Once you are confident that the process is complete, delete the old Visual
+  SourceSafe installation.
+
+3. If there are shadow folders, journal files, or web deploy locations set up in
+  the old installation, you need to make sure that all the paths correctly
+  reference the new server location. These settings are in the srcsafe.ini file
+  on the server copy of Visual SourceSafe.
+
+4. When you start Visual SourceSafe from a client install, you might see the
+  following errors:
+
+  Invalid DOS path: "&lt;path&gt;\scrsafe.ini"
+
+  Indicates an incorrect path in the #include line of the client's srcsafe.ini.
+
+-or-
+
+  Invalid filename: "&lt;path&gt;\scrsafe.ini"
+
+Indicates insufficient operating system rights.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q175950 HOWTO: Change the Name of a Visual SourceSafe Database
+
+Additional query words: relocate
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbSsafe600FAQ 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0,4.0a,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

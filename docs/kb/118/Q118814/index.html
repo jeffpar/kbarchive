@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118814: DOCERR: Win32 APIs Callable from a QuickWin Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118814: DOCERR: Win32 APIs Callable from a QuickWin Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118814/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118814/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118814/","publisher":null,"image":null,"headline":"Q118814: DOCERR: Win32 APIs Callable from a QuickWin Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118814-docerr-win32-apis-callable-from-a-quickwin-application">Q118814: DOCERR: Win32 APIs Callable from a QuickWin Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118814
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0,4.0
+Operating System(s): 
+Keyword(s): kbFortranPS kbLangFortran
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fortran Powerstation 32 for Windows NT, versions 1.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On page 166 of the PowerStation 32 "Programmer's Guide," the first paragraph
+implies that you cannot call Win32 APIs from a QuickWin application; however,
+you actually can call Win32 APIs that do not require a window handle.
+
+MORE INFORMATION
+================
+
+To call a Win32 API, you must create a proper INTERFACE TO statement and link
+with the proper import library.
+
+You can determine the proper INTERFACE TO statement by reading the "Win32
+Programmer's Reference". The STDCALL attribute is required for the function
+declaration.
+
+The sample code below calls the MessageBox() API, contained in the import
+library, USER32.LIB, which is already linked into the program for a QuickWin
+application by default. The first parameter of MessageBox() is a window handle
+or 0 (NULL). You must use 0, because the window handle is not available in a
+QuickWin application.
+
+NOTE: When you pass a string to an API, make sure that you use the C convention,
+so that the string is NULL terminated. See page 53 of the "Programmer's Guide"
+for a discussion of C strings.
+
+Sample Code
+-----------
+
+  C Compile options needed: /MW
+
+        INTERFACE TO FUNCTION
+       +MESSAGEBOX  (hwnd, text, title, icon)
+        INTEGER*4 MESSAGEBOX [STDCALL, ALIAS:'_MessageBoxA@16']
+        INTEGER*4 hwnd [VALUE]
+        CHARACTER*(*) text [REFERENCE]
+        CHARACTER*(*) title [REFERENCE]
+        INTEGER*4 icon [VALUE]
+        END
+
+        CHARACTER text*34, title*21
+
+        text = 'This API was called from FORTRAN.'C
+        title = 'QuickWin Application'C
+
+        PRINT*, "Enter any character to continue: "
+        READ(*, '(A)')
+
+        i = MESSAGEBOX(0, text, title, 1)
+
+        PRINT*, "MessageBox called"
+
+        END
+
+Additional query words: 1.00 4.00 docerr
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT kbFORTRANPower32400NT
+Version           : :1.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149047: How to Specify Informational Text for VB4 OLE Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149047: How to Specify Informational Text for VB4 OLE Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149047/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149047/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149047/","publisher":null,"image":null,"headline":"Q149047: How to Specify Informational Text for VB4 OLE Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149047-how-to-specify-informational-text-for-vb4-ole-servers">Q149047: How to Specify Informational Text for VB4 OLE Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149047
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.00 | 4.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+OLE automation servers created with Visual Basic 4.0 can expose informational
+text in various places to enable OLE automation clients to identify and use them
+easily. The actual strings that are viewable from an OLE automation client can
+be set within the Visual Basic OLE server project. This article outlines the
+places that the information should be entered and modified, as well as where it
+will appear in external locations.
+
+MORE INFORMATION
+================
+
+The two locations within Visual Basic where these settings can be changed are
+the Project tab of the Options dialog box and the Member Options dialog box
+available from the Object Browser. The Project tab contains both Project Name
+and Application Description text boxes. If a class module is selected in the
+Object Browser, pressing the Options button will display a dialog box containing
+a Description text box.
+
+Project Name in Options
+-----------------------
+
+The Project Name field in the Options dialog box contains the first part of what
+is known as the programmatic ID or ProgID of any class exposed by the OLE
+server. The class name (as specified in the Properties window for the class
+module) provides the second part of the ProgID.
+
+For example, assuming the string MyOLEServerProj was entered in the Project Name
+field, and a public class module existed in that project with the name
+MyPublicClass, then the ProgID for that class would be:
+
+     MyOLEServerProj.MyPublicClass
+
+A key with this entry will be made in the HKEY_CLASSES_ROOT predefined key in the
+registry when the project is compiled to an executable or run in the design
+environment. OLE uses this registry key to determine what server to use when
+anyone attempts to create an object from an OLE automation client. If multiple
+public classes exist in a project, there will be multiple entries made to the
+registry containing the same initial identifier. For example, given
+MyPublicClass1, MyPublicClass2, and MyPublicClass3, the following three keys
+would be created in the registry:
+
+     MyOLEServerProj.MyPublicClass1
+     MyOLEServerProj.MyPublicClass2
+     MyOLEServerProj.MyPublicClass3
+
+The Project Name string is also used as the name of the library or project in the
+Libraries/Projects drop-down combo box displayed by the Object Browser.
+
+Application Description in Options
+----------------------------------
+
+The Application Description field in the Options dialog box provides a location
+to specify a single string identifying the OLE server. The string entered in the
+Application Description text box will be displayed in the References dialog box
+by Visual Basic 4.0 (and other VBA clients). This string will be displayed as an
+entry in the Available References list box and as the title of the frame below
+the list box that shows location and language information for the selected OLE
+server. If the Application Description text box has been left blank, Visual
+Basic will use the string in the Project Name field as a replacement. The
+Application Description string will also be used by the Object Browser as the
+description for the OLE server in the Libraries/Projects drop-down combo box.
+
+The application description information is compiled into the type library that is
+part of each server EXE or DLL generated by Visual Basic 4.0. Any client that is
+written to query type libraries for this information will be able to retrieve
+and display it. When the References dialog box is opened, Visual Basic is doing
+exactly that: its running through all registered classes and retrieving this
+information for display in the References dialog box.
+
+Example Application Description Strings
+---------------------------------------
+
+  Microsoft DAO 3.0 Object Library
+  Microsoft Visual Basic 4.0 Development Environment
+  OLE/Messaging 1.0 Object Library
+
+Additional examples can be seen by simply viewing the entries in the References
+dialog box.
+
+Description in Object Browser Options Dialog Box
+------------------------------------------------
+
+After displaying the Object Browser and selecting a class module in the
+Classes/Modules list box, the button on the Object Browser labeled Options is
+enabled. Pressing this button displays the Member Options dialog box. This
+dialog box can be used to set and modify the descriptions for both a class
+module in general and also specifically for each public member (function,
+subroutine, or property) of the class module.
+
+This information will be used by the Object Browser to display a help string for
+the selected class or the selected member of a class. This string is displayed
+at the bottom of the Object Browser dialog box.
+
+Follow these steps to see an example of this behavior:
+
+1. In an existing OLE server project, press F2 to display the Object Browser.
+
+2. In the Libraries/Projects drop-down combo box, select a public class module.
+  If no previous description has been entered, the area to the right of the
+  question mark button at the bottom of the Object Browser will be blank.
+
+3. With the class module selected, press the Options button.
+
+4. Enter a suitable text string in the Description text box of the Member
+  Options dialog box. Notice that the Member Name is listed as the name of the
+  public class. If a class module AND a public function, subroutine, or
+  property, had been selected in step 2, Member Name would be the name of this
+  public member. In this case the description entered would apply only to the
+  selected member.
+
+5. Choose OK to return to the Object Browser. Notice that the string entered in
+  step 4 now appears next to the question mark button at the bottom of the
+  Object Browser dialog box. Any OLE automation client can access and display
+  this information.
+
+Additionally, where Visual Basic 4.0 add-ins are concerned, the description for a
+public class module entered in the Member Options dialog box is the description
+that will be displayed in the Available Add-Ins list box displayed by the Add-In
+Manager.
+
+
+The Help Context ID field in the Member options dialog box can be utilized to
+link a specific part of a help file to each class module and public member. The
+entry listed in the Help File label is whatever help file has been specified in
+the Help File section of the Project Tab of the Options dialog box. For more
+information on how to provide help in this manner, see the online help and the
+Visual Basic 4.0 manuals.
+
+Additional query words: 4.00 vb4win vb4all listbox combobox dropdown
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : 4.00 | 4.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

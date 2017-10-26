@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q218439: XADM: PerfMon Counters for Monitoring Exchange DB Sessions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q218439: XADM: PerfMon Counters for Monitoring Exchange DB Sessions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/218/Q218439/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/218/Q218439/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/218/Q218439/","publisher":null,"image":null,"headline":"Q218439: XADM: PerfMon Counters for Monitoring Exchange DB Sessions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q218439-xadm-perfmon-counters-for-monitoring-exchange-db-sessions">Q218439: XADM: PerfMon Counters for Monitoring Exchange DB Sessions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q218439
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): kbFEA exc55 EXC55SP3Fea
+Last Modified: 16-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is sometimes possible on a very active Exchange Server computer that the
+information store or directory process will surpass the allocated amount of
+database sessions configured in the registry. When this happens an event log
+message is recorded in the Windows NT Event Viewer application log similar to
+the following:
+
+  Event ID: 9037
+  Source: MSExchangeIS Private
+  Type: Error
+  Category: None
+  Description: No database session was available to satisfy a request. The
+  registry value
+  "SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersPrivate\Sessions"
+  may be set too low for the level of activity on this server.
+
+and/or
+
+  Event ID: 1164
+  Source: MSExchangeIS Private
+  Type: Error
+  Category: None
+  Description: No database session was available to satisfy a request. The
+  registry value
+  "SYSTEM\CurrentControlSet\Services\MSExchangeIS\ParametersPrivate\Sessions"
+  may be set too low for the level of activity on this server. The current
+  value for this parameter is %1.
+
+In accordance with the information in Microsoft Knowledge Base article Q148961,
+there is a way by using the registry to increase the amount of Exchange Server
+database sessions, however, there is no way to determine the exact or optimal
+number of sessions to set this value to.
+
+MORE INFORMATION
+================
+
+In an effort to provide a method of monitoring the number of sessions being used
+either by the information store or directory service, two new Performance
+Monitor counters have been added under the database object. The counters are:
+
+- "Session % Used"
+- "Sessions In Use"
+
+The counters can be used to to effectively monitor Sessions and alert
+administrators when the configured value may be too low.
+
+
+This feature is available in the latest service pack for Exchange Server version
+5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+The English version of this feature should have the following file attributes or
+later:
+
+Component: Exchange Database Engine
+
++------------------------+
+| File name   | Version  | 
++------------------------+
+| Ese.dll     | 5.5.2560 | 
++------------------------+
+| Eseperf.dll | 5.5.2560 | 
++------------------------+
+
+This hotfix has been posted to the following Internet location as Psp2esei.exe
+(x86) and Psp2esea.exe (Alpha):
+
+  ftp://ftp.microsoft.com/bussys/exchange/exchange-public/fixes/Eng/Exchg5.5/PostSP2/ESE-fix/
+
+This feature was first included in Exchange Server 5.5 Service Pack 3.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbFEA exc55 EXC55SP3Fea 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

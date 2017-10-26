@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178051: FIX: Dialog Box Appears Many Times When Changing Alias Property | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178051: FIX: Dialog Box Appears Many Times When Changing Alias Property" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178051/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178051/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178051/","publisher":null,"image":null,"headline":"Q178051: FIX: Dialog Box Appears Many Times When Changing Alias Property","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178051-fix-dialog-box-appears-many-times-when-changing-alias-property">Q178051: FIX: Dialog Box Appears Many Times When Changing Alias Property</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178051
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): kbvfp
+Last Modified: 23-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change the Alias property of a cursor in the Data Environment of a
+report or form that was created with the Quick Report or Quick Form command, a
+dialog box appears many times with the following:
+
+  Outstanding references to &lt;old alias name&gt; exist.
+  Would you like them automatically changed to &lt;new alias name&gt;.
+
+  &lt;Yes&gt; &lt;No&gt; &lt;Cancel&gt;
+
+Unless the dialog box is moved, it may appear that the command buttons are not
+functioning since multiple dialog boxes appear one on top of the other.
+
+RESOLUTION
+==========
+
+Continue to click the command button until the dialog box closes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The problem occurs in both forms and reports, but the dialog box appears more
+times in reports. The instructions below are for reproducing the problem in a
+report. The steps for reproducing the behavior in a form are basically the
+same.
+
+1. Run the following lines of code from the Visual FoxPro Command window to open
+  a table and create a new report:
+
+        USE HOME()+"samples\data\employee"
+        CREATE REPORT
+
+2. From the Report menu, select the Quick Report command. After verifying that
+  the Add alias and Add table to data environment check boxes are selected,
+  click OK.
+
+3. Open the Data Environment for the report. To do this, select Data Environment
+  from the View menu or right-click the report and select Data Environment.
+
+4. In the Data Environment, select the employee table. Right-click the table and
+  select Properties.
+
+5. The Alias property should be selected when the Properties sheet appears, with
+  Employee as the value. Change the Alias property to TEST or anything else
+  reasonable and press Enter.
+
+6. The dialog box described above in the SYMPTOMS section should appear. Click
+  the title bar and move it. Another copy of the title bar should be visible
+  underneath the first copy. Click Cancel in the active copy of the dialog box.
+  Repeat the selection until the dialog box closes. The number of times the
+  dialog box appears varies. Similar behavior happens if either Yes or No is
+  clicked instead of Cancel.
+
+Additional query words: kbvfp600fix
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

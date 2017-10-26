@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161988: WD97: Full Screen View Toolbar Is Hidden | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161988: WD97: Full Screen View Toolbar Is Hidden" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161988/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161988/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161988/","publisher":null,"image":null,"headline":"Q161988: WD97: Full Screen View Toolbar Is Hidden","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161988-wd97-full-screen-view-toolbar-is-hidden">Q161988: WD97: Full Screen View Toolbar Is Hidden</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161988
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbualink97 kbdta kbdtacode kbmacroexample word97
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you view Full Screen (on the View menu, click Full Screen), the Full Screen
+toolbar is missing.
+
+CAUSE
+=====
+
+By design, Word does not provide a menu command to turn off the Full Screen
+toolbar. The only way to hide the Full Screen toolbar is to run a Visual Basic
+for Applications command.
+
+If the Full Screen toolbar is hidden, you may have a macro or add-in that has set
+the visible property for the Full Screen toolbar to False.
+
+WORKAROUND
+==========
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+If you are in Full Screen view and the Full Screen toolbar is not appearing, you
+can use the following methods to return from Full Screen view or to redisplay
+the Full Screen toolbar.
+
+Method 1: To Return from Full Screen View
+-----------------------------------------
+
+1. Press the ESC key on your keyboard.
+
+  -or-
+
+  Press ALT+V+U.
+
+  -or-
+
+2. Press ALT+T+M+M.
+
+3. In the Macro Name box, type "ToggleFull" (without the quotation marks).
+
+4. Click Run.
+
+If this does not work, it is possible that the ToggleFull macro has been altered
+from its default functionality.
+
+The following steps will restore the ToggleFull macro functionality:
+
+IMPORTANT: These steps involve deleting a macro. If you are unsure as to the
+source of the macro in question, you may want to investigate the source before
+proceeding. For example, if you are part of an administrative group in a network
+environment, check with your network administrator prior to deleting this
+macro.
+
+1. On the Tools menu, point to Macro, and then click Macros.
+
+2. From the "Macros in" box, select "All active templates and documents." If
+  ToggleFull appears as an available macro in the list of macros, select it.
+
+3. Click Delete.
+
+Method 2: To Redisplay the Full Screen Toolbar
+----------------------------------------------
+
+The following Visual Basic for Applications macro will redisplay the Full Screen
+toolbar.
+
+     Sub ShowFullScrToolBar()
+        If ActiveWindow.View.FullScreen Then
+           CommandBars("full screen").Visible = True
+        End If
+     End Sub
+
+NOTE: Before you run this macro, you must be in Full Screen view.
+
+To run this macro while in Full Screen view, follow these steps:
+
+1. Press ALT+T+M+M.
+
+2. In the Macro Name box, type "ShowFullScrToolBar" (without the quotation
+  marks).
+
+3. Click OK.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q173707 OFF97: How to Run Sample Code from Knowledge Base Articles
+
+
+MORE INFORMATION
+================
+
+In Word 97, the Full Screen toolbar does not appear in the list of toolbars when
+you point to Toolbars on the View menu.
+
+REFERENCES
+==========
+
+For more information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: vb vba vbe
+
+======================================================================
+Keywords          : kbualink97 kbdta kbdtacode kbmacroexample word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

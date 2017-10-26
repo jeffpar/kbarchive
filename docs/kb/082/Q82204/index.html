@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q82204: Windows Err Msg: Group File Error… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q82204: Windows Err Msg: Group File Error…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/082/Q82204/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/082/Q82204/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/082/Q82204/","publisher":null,"image":null,"headline":"Q82204: Windows Err Msg: Group File Error…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q82204-windows-err-msg-group-file-error">Q82204: Windows Err Msg: Group File Error…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q82204
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows version 3.1 or 3.11 may return the following error message:
+
+  Group File Error
+  Cannot Open Program Group File &lt;xxxx&gt;.GRP
+  Do you want Program Manager to try and load it in the future?
+
+At this point, a Yes/No option box appears.
+
+In Windows 3.0, the error message appears as follows:
+
+  Group File Error
+  Cannot Open Program Group File
+
+With both versions, the message occurs if a program group listed in the [Groups]
+section of the PROGMAN.INI does not have a corresponding *.GRP in the specified
+path, or if the file is corrupted.
+
+MORE INFORMATION
+================
+
+Windows 3.1
+-----------
+
+If you choose Yes, Windows attempts to load the .GRP file during the next boot.
+
+If you select the No option, Windows modifies the PROGMAN.INI file by deleting
+the line that referenced the corrupt .GRP file.
+
+NOTE: If you prefer, you can use any text editor to edit the PROGMAN.INI file,
+rather than allowing Windows to modify it automatically.
+
+If you have moved the group, you should be sure to add a correct reference to
+PROGMAN.INI.
+
+For example, if the PROGMAN.INI reads as follows
+
+     [Groups]
+     Group1=D:\WIN31\NONWINDO.GRP
+     Group2=D:\WIN31\GAMES.GRP
+     Group3=D:\WIN31\ACCESSOR.GRP
+     Group4=D:\WIN31\MAIN.GRP
+     Group5=D:\WIN31\WindowsA.GRP
+     Group6=D:\WIN31\OTHER.GRP
+
+and you have moved the OTHER.GRP file to E:\WIN31, Windows displays the following
+error message:
+
+  Cannot Open Program Group File D:\WIN31\OTHER.GRP
+
+To correct the problem, add the following line to the PROGMAN.INI:
+
+       Group6=E:\WIN31\OTHER.GRP
+
+Windows 3.0
+-----------
+
+In Windows 3.0, the automatic update option is unavailable. You must manually
+update PROGMAN.INI to change or eliminate any erroneous .GRP references.
+
+Additional query words: 3.00 3.00a 3.10 3.1 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

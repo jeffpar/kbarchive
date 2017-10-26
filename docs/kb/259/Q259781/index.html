@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259781: SMS: SMS Site Server Upgrade Resets Registry Permissions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259781: SMS: SMS Site Server Upgrade Resets Registry Permissions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259781/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259781/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259781/","publisher":null,"image":null,"headline":"Q259781: SMS: SMS Site Server Upgrade Resets Registry Permissions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259781-sms-sms-site-server-upgrade-resets-registry-permissions">Q259781: SMS: SMS Site Server Upgrade Resets Registry Permissions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259781
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0 SP2
+Operating System(s): 
+Keyword(s): kbenv kbtool kbsms200 kbsms200bug kbCAP kbInboxMgr kbsms200preSP3
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+After you upgrade a Microsoft Windows NT 4.0-based server running Systems
+Management Server (SMS) 2.0 site server to Microsoft Windows 2000, the
+permissions on the HKEY_LOCAL_MACHINE hive of the registry are reset to a
+default setting. This default setting includes removing access for individual
+accounts that have been granted specific permissions. This can affect the
+ability of remote SMS site system computers to connect to the site server.
+
+Services and/or processes on remote site computers (such as Inbox Manager
+Assistant on Client Access Point (CAP) servers and the SMS_SQL_Monitor service
+on remote SQL Server) use the SMS Server Connection Account,
+SMSServer_&lt;xxx&gt; (where &lt;xxx&gt; is the site code) to connect to the
+site server. When the registry permissions are reset during the site server
+upgrade to Windows 2000, the explicit permissions that the SMSServer_&lt;xxx&gt;
+account has been granted to the registry of the site server are removed. This
+results in the inability of this account to connect and can cause slow
+processing of or possibly failures in:
+
+- Collection updates
+- Hierarchy updates
+- Software distributions
+- Other failures
+
+CAUSE
+=====
+
+This problem can occur because the Windows 2000 upgrade program resets some
+registry permissions to default under the HKEY_LOCAL_MACHINE hive as part of the
+enhanced security features in Windows 2000. Because of this, any custom
+permissions that were added to the registry (such as the SMSServer_&lt;xxx&gt;
+account by SMS) are removed.
+
+WORKAROUND
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To work around this issue, manually add the permissions to the registry of the
+site server using the following steps:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the Machine value under the following registry key:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg\AllowedPaths
+
+3. On the Edit menu, click Multi String, add "Software\Microsoft\SMS" (without
+  the quotation marks) to the existing data, and then click OK.
+
+4. Locate the following registry key:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Inbox Source
+
+5. On the Security menu, click Permissions, and then click Add.
+
+6. Click the SMSServer_&lt;xxx&gt; account from the list of objects in the
+  domain, click Add, click OK, grant the SMSServer_&lt;xxx&gt; account Full
+  Control permissions, and then click OK.
+
+7. Quit Registry Editor.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0 Service Pack 2.
+
+Additional query words: prodsms smsdbmon inboxast remote
+
+======================================================================
+Keywords          : kbenv kbtool kbsms200 kbsms200bug kbCAP kbInboxMgr kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : winnt:2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

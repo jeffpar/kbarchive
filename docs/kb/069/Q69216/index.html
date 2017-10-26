@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69216: How to Change Attributes of Subdirectories in a C Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69216: How to Change Attributes of Subdirectories in a C Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69216/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69216/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69216/","publisher":null,"image":null,"headline":"Q69216: How to Change Attributes of Subdirectories in a C Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69216-how-to-change-attributes-of-subdirectories-in-a-c-program">Q69216: How to Change Attributes of Subdirectories in a C Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69216
+Product(s): See article
+Version(s): 3.x 4.x 5.x 6.00 6.00a | 5.10 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 25-FEB-1991
+
+The C run-time functions _dos_setfileattr() and _dos_getfileattr(), or
+the OS/2 API calls DosSetFileMode() and DosQFileMode(), respectively,
+allow you to set and check the attributes of files. When using the
+same functions on subdirectories, the operating system does not allow
+attributes to be set, and no error codes are returned. However,
+because a subdirectory is a special instance of a file, the system can
+be fooled into thinking that a subdirectory is a file, which will
+allow you to set the attributes of a subdirectory.
+
+Below is a listing of available attribute settings:
+
+   C Run-Time   OS/2            Description                  Value
+   ----------   ----            -----------                  -----
+
+   _A_NORMAL    FILE_NORMAL     A file with no attributes    0x00
+   _A_RDONLY    FILE_READONLY   A read-only file             0x01
+   _A_HIDDEN    FILE_HIDDEN     A hidden file                0x02
+   _A_SYSTEM    FILE_SYSTEM     A system file                0x04
+   _A_VOLID     *               Volume label (special case)  0x08
+   _A_SUBDIR    FILE_DIRECTORY  Subdirectory (special case)  0x10
+   _A_ARCH      FILE_ARCHIVED   An archived file             0x20
+
+ * A drive's volume label is another special-case file; there is only
+   one per (logical) drive, and it is only in the root directory.
+   Under OS/2, volume labels can be changed with DosSetFSInfo. Under
+   DOS, there are no C run-time functions to change drive volumes. For
+   more information, query on the following words:
+
+      volume and attribute and 5.10
+
+From the list above, the only attributes that can be dynamically set
+are FILE_READONLY, FILE_HIDDEN, and FILE_SYSTEM (all files,
+subdirectories, and volumes entail FILE_NORMAL), and this process
+cannot be done on a directory entry that is flagged as a subdirectory
+or volume label. To change the attributes of a subdirectory, the
+attribute flag _A_SUBDIR (or FILE_DIRECTORY) should not be included.
+The code below demonstrates how to do this using either C run-time
+calls (DOS only) or OS/2 API functions (DOS and OS/2 if bound).
+
+Sample Code
+-----------
+
+#define INCL_DOSFILEMGR
+#include &lt;os2.h&gt;
+
+#include &lt;dos.h&gt;
+#include &lt;stdlib.h&gt;
+
+unsigned attr, newattr;
+
+void main(void)
+{
+   if (DOS_MODE == _osmode)
+      {
+      // First get the current attribute of subdirectory '\foo'
+      // If successful, 'attr' will contain at least the
+      // _A_SUBDIR bit mask
+
+      _dos_getfileattr( "\\foo", &amp;attr );
+
+      // Mask in new attributes and remove _A_SUBDIR from the old
+      // attribute
+
+      newattr = (attr | _A_HIDDEN | _A_SYSTEM | _A_RDONLY)
+                  &amp; ~_A_SUBDIR;
+
+      // Set new attribute for 'foo'
+
+      _dos_setfileattr( "\\foo", newattr );
+      }
+   else     // Here is the same using OS/2 APIs
+      {
+      DosQFileMode( "\\foo", &amp;attr, 0L );
+
+      newattr = (attr | FILE_HIDDEN | FILE_SYSTEM | FILE_READONLY)
+                  &amp; ~FILE_DIRECTORY;
+
+      DosSetFileMode( "\\foo", newattr, 0L );
+      }
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98562: Multimedia Err Msg: Unexpected Error [MCI602]. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98562: Multimedia Err Msg: Unexpected Error [MCI602]." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98562/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98562/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98562/","publisher":null,"image":null,"headline":"Q98562: Multimedia Err Msg: Unexpected Error [MCI602].","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98562-multimedia-err-msg-unexpected-error-mci602">Q98562: Multimedia Err Msg: Unexpected Error [MCI602].</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98562
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Musical Instruments for Windows, version 1.0 
+- Microsoft Dinosaurs for Windows, version 1.0 
+- Microsoft Dangerous Creatures for Windows, version 1.0 
+- Microsoft Art Gallery for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the applications listed at the top of this article, you
+may receive the following error message:
+
+  Unexpected error [MCI602]. Cannot play sounds. Would you like to continue
+  using &lt;program Name&gt; without sound?
+
+If you choose Yes, the application will continue running, but you will not have
+sounds.
+
+If you choose No, you will receive the following error message:
+
+  Not enough memory to run. Exiting now.
+
+CAUSE
+=====
+
+These error messages occur when the Windows 3.1x [MCI] Sound driver is not
+installed.
+
+Or when the Windows 95 Wave Audio Device (Media Control) is not installed.
+Windows 95 needs drivers but you don't see the same error message.
+
+
+In Windows 95, verify that the Wave Audio Device (Media Control) driver is
+installed and enabled (see below).
+
+To Install the Wave Audio Device (Media Control) driver
+-------------------------------------------------------
+
+1. Double-click the Add New Hardware icon in the Windows 95 Control Panel.
+
+2. Choose the Next button.
+
+3. Select the No radio button from the Add New Hardware Wizard dialog box, then
+  choose the Next button.
+
+4. From the Hardware types list box, choose Sound, Video and Game Controllers.
+  Choose the Next button.
+
+5. Select Microsoft MCI from the Manufacturers list box.
+
+6. Select Wave Audio Device (Media Control) from the Models list box, and choose
+  the Next button.
+
+7. Choose the Finish button.
+
+The Wave Audio Device (Media Control) driver should now be installed.
+
+To Verify that the Wave Audio Device (Media Control) driver is
+
+enabled
+-------
+
+1. Double-click the Multimedia icon in the Windows 95 Control Panel.
+
+2. Select the Advanced tab.
+
+3. Click the plus (+) symbol next to the Media Control Devices entry.
+
+4. Select Wave Audio Device (Media Control).
+
+5. Choose the Properties button.
+
+6. Make sure the Use This Media Control Device button is selected.
+
+7. Choose OK.
+
+Under Windows 3.1x, install the [MCI] Sound driver in the Windows 3.1x Control
+Panel to solve this problem:
+
+To Install the [MCI] Sound Driver
+---------------------------------
+
+1. Double-click the Drivers icon in Windows Control Panel.
+
+2. Choose the Add button.
+
+3. From the displayed list of drivers, select [MCI] Sound.
+
+4. Choose OK.
+
+[MCI] Sound should now be installed and listed in the Installed Drivers box.
+
+
+Additional query words: multimedia multi media multi-media waveform wave .WAV WAV start run audio won't start kbmm dinos dev/drv sound bits win95
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbZNotKeyword kbDangerousCreatures kbDinosaurs100 kbMusicalInst kbArtGallery
+Version           : 1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247327: Cannot Start Cluster Administrator After Adding Resources | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247327: Cannot Start Cluster Administrator After Adding Resources" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247327/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247327/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247327/","publisher":null,"image":null,"headline":"Q247327: Cannot Start Cluster Administrator After Adding Resources","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247327-cannot-start-cluster-administrator-after-adding-resources">Q247327: Cannot Start Cluster Administrator After Adding Resources</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247327
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Operating System(s): 
+Keyword(s): kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you add resources to a cluster server with many resources (close to 1,600
+or more), the Cluster service may start and appear to function but you may be
+unable to start Cluster Administrator. You may still be able to ping cluster IP
+addresses, connect to some virtual servers, and so on. Virtual servers other
+than the server with the cluster name may be available to connect to by using
+UNC paths, but not the cluster name itself. Attempting to connect to Cluster
+Administrator by using the "." option may or may not start Cluster
+administrator. If Cluster Administrator does start this way, it will likely stop
+responding (hang).
+
+CAUSE
+=====
+
+There is a "functional" limitation to the number of resources Cluster Server can
+support. For additional information, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q185212 Cluster Server Does Not Support More than 900 Shares
+
+Cluster Server can only support 1,600 resources. However, it does not prevent you
+from adding more resources when you reach the resource limit. By adding more
+resources, you run the risk of unpredictable behavior, including but not limited
+to: resources stopping and coming back online for no reason, virtual servers
+suddenly not starting, virtual servers stopping for no reason, and the inability
+to administer the cluster by using Cluster Administrator.
+
+RESOLUTION
+==========
+
+There are two methods to work around this behavior.
+
+Method 1
+--------
+
+Shut down one node and stop the Cluster service on the other (running) node.
+Then, recover the Clusdb file from a tape backup that was created when you were
+able to use Cluster Administrator. Note that all changes to the cluster that
+have been made since that point are lost. You should restart the Cluster service
+with the -fixquorum option or rename the current Chkpoint files from the MSCS
+folder on the quorum drive.
+
+Method 2
+--------
+
+Manually remove resources until you can once again administer the cluster by
+using Cluster Administrator. This may require a few deletions or several
+hundred. To manually remove resources from the command line, you need to first
+stop the resource and then delete it. There is no wildcard for deleting
+resources; you must delete them one at a time. The commands to stop and delete
+resources are:
+
+  cluster [&lt;cluster_name&gt;] res [&lt;resource_name&gt;] /off
+
+  cluster [&lt;cluster_name&gt;] res [&lt;resource_name&gt;] /del
+
+STATUS
+======
+
+This behavior is a side-effect of putting too many resources on a cluster
+server. There is no resolution other than to stay below the 1,600-resource
+limit.
+
+MORE INFORMATION
+================
+
+This behavior is a direct result of having a functional limit to the maximum
+possible resources instead of a physical limit. The most common occurrence of
+this behavior occurs on cluster servers that have many file shares (possibly for
+user home folders and roaming profiles). Instead of having hundreds or thousands
+of individual resources for all the file shares, use the advanced sharing option
+that was introduced in Service Pack 4. For additional information, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q194831 SP4 Cluster Shares Must Be Reset to Recognize Added Subdirectories
+
+Additional query words: mscs
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400search kbWinNTSEnt400SP6a
+Version           : winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

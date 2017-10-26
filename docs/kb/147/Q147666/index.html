@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147666: HOWTO: Set the Column Width of Columns in a ListView Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147666: HOWTO: Set the Column Width of Columns in a ListView Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147666/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147666/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147666/","publisher":null,"image":null,"headline":"Q147666: HOWTO: Set the Column Width of Columns in a ListView Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147666-howto-set-the-column-width-of-columns-in-a-listview-control">Q147666: HOWTO: Set the Column Width of Columns in a ListView Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147666
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The width of a column in a ListView control cannot be set by using a property
+and/or method when the View property is set to List. This article provides a
+generic procedure that can be used to set the width of a column in a ListView
+control when in List view. This function can also be used to set the column
+width when in Report view, although this is unnecessary because the column width
+can be set via the Width property of the ColumnHeader object when in Report
+view.
+
+MORE INFORMATION
+================
+
+The ListView_SetColumnWidth procedure sets the column width by sending a
+LVM_SETCOLUMNWIDTH message to the ListView control that is passed as its first
+argument. The comment section preceding the function body in step 5 explains the
+required and optional parameters.
+
+To use this procedure, follow these steps:
+
+1. Start Visual Basic. Form1 is created by default.
+
+2. Add a single ListView control and one command button to the form.
+
+3. Add this declaration to the General Declarations section of the form:
+
+        Private Declare Function
+           SendMessage Lib "USER32" Alias "SendMessageA" ( _
+                  ByVal hwnd As Long, _
+                  ByVal Msg As Long, ByVal wParam As Long, _
+                  ByVal lParam As Long) As Long
+
+4. Add the following code to the command button's Click event. This demonstrates
+  a sample call to the ListView_SetColumnWidth procedure and the addition of
+  items that demonstrate the change in width:
+
+        Private Sub Command1_Click()
+           Dim Item As ListItem
+           ListView1.View = lvwList
+           Set Item = ListView1.ListItems.Add
+           Item.Text = "This is a very long line of text"
+           Doevents
+           ListView_SetColumnWidth ListView1
+
+           ' To Run this in Visual Basic 4.0, comment out the above lines
+           ' and uncomment the following lines
+           '
+           ' Dim Item As ListItem
+           ' ListView1.View = lvwList
+           ' ListView_SetColumnWidth ListView1
+           ' Set Item = ListView1.ListItems.Add
+           ' Item.Text = "This is a very long line of text"
+        End Sub
+
+5. Add the following ListView_SetColumnWidth procedure to the form:
+
+  '=====================================================================
+  ' Title: ListView_SetColumnWidth
+  '
+  ' Purpose: Sends a LVM_SETCOLUMNWIDTH message to the listview control to
+  ' set its column width
+  ' for List and Report views
+  '
+  ' Parameters:
+  '      lvw  - ListView control object where the column width will be set
+  '
+  '     [iCol] - Specifies the column for which the width will be set
+  '              only valid in Report view. Ignored for List view.
+  '
+  '     [vTxt] - Optional variant containing either a numeric value
+  '              representing the desired column width (in pixels) or a text
+  '              string where the column width will be set to match the width
+  '              of the passed in text string.
+  '
+  '              If in List view this parameter is not provided, then the
+  '              column width is set to the width of the ListView (lvw)
+  '              control.
+  '
+  '              If in Report view this parameter is not provided, the column
+  '              width is not set.
+  '=====================================================================
+
+     Sub ListView_SetColumnWidth(ByVal lvw As ListView, _
+                                 Optional ByVal iCol As Variant, _
+                                 Optional ByVal vTxt As Variant)
+
+     Const LVSCW_AUTOSIZE = -1
+     Const LVSCW_AUTOSIZE_USEHEADER = -2
+
+     Const LVM_FIRST = &amp;H1000
+     Const LVM_GETCOLUMNWIDTH = LVM_FIRST + 29
+     Const LVM_SETCOLUMNWIDTH = LVM_FIRST + 30
+
+     Dim sm As Integer
+     Dim lWidth As Long
+
+     '
+     ' Abort if the control's hWnd isn't set or if is not in
+     ' the List or Report views.
+
+     If lvw.hwnd = 0&amp; Or (lvw.View &lt;&gt; lvwList And lvw.View &lt;&gt; lvwReport) Then
+     Exit Sub
+     End If
+
+     '
+     ' Remember the ScaleMode of the Form
+     ' and set Form.ScaleMode to Pixels to match the ListView's intrinsic
+     ' ScaleMode
+     '
+     sm = lvw.Parent.ScaleMode
+     lvw.Parent.ScaleMode = vbPixels
+
+     If IsMissing(iCol) Then
+     If lvw.View = lvwList Then
+           iCol = 0
+          ElseIf lvw.View = lvwReport Then
+               '
+               'iCol must be provided in report view
+               '
+               lvw.Parent.ScaleMode = sm
+               Exit Sub
+           End If
+     End If
+
+     '
+     ' Set the desired column width
+     ' If a text string is provided set the column width
+     ' based on the text
+     '
+     If IsMissing(vTxt) Then
+
+     vTxt = ""
+          If lvw.View = lvwList Then
+               '
+               ' 5 millimeters (via the ScaleX statement) is tacked on to
+               ' compensate for the 5 millimeter border that the parent
+               ' class applies to the column width.
+               '
+               lWidth = lvw.Width + ScaleX(5, vbMillimeters, vbPixels)
+          ElseIf lvw.View = lvwReport Then
+               '
+               ' The vTxt parameter must be provided in Report view
+               '
+               lvw.Parent.ScaleMode = sm
+               Exit Sub
+          End If
+     Else
+     '
+          ' 5 millimeters (via the ScaleX statement) is tacked on
+          ' to compensate for the 5 millimeter border that the parent class
+          ' applies to the column width
+          '
+          If IsNumeric(vTxt) Then
+           '
+           ' Numeric width is provided
+           '
+               lWidth = vTxt + ScaleX(5, vbMillimeters, vbPixels)
+          Else
+               lWidth = TextWidth(vTxt) + ScaleX(5, vbMillimeters, vbPixels)
+          End If
+     End If
+
+     SendMessage ListView1.hwnd, LVM_SETCOLUMNWIDTH, CLng(iCol), lWidth
+     lvw.Parent.ScaleMode = sm
+
+     End Sub
+
+6. Press the F5 key or select Start from the Run menu to run the application.
+  Click the command button to execute the ListView_SetColumnWidth subroutine.
+
+Additional query words: kbVBp400 kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport KBWIN32SDK KBAPI
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

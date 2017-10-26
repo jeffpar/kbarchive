@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193685: Sending E-mail from a Command Prompt Using IIS SMTP Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193685: Sending E-mail from a Command Prompt Using IIS SMTP Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193685/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193685/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193685/","publisher":null,"image":null,"headline":"Q193685: Sending E-mail from a Command Prompt Using IIS SMTP Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193685-sending-e-mail-from-a-command-prompt-using-iis-smtp-service">Q193685: Sending E-mail from a Command Prompt Using IIS SMTP Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193685
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT Option Pack (NTOP) includes a Simple Mail Transfer Protocol
+(SMTP) service for Internet Information Server (IIS). Also included in the
+Option Pack is the Windows Script Host (WSH), which is a powerful batch
+processing language interpreter, allowing administrators to write scripts in
+Visual Basic Script (VBS) or JScript (JS). Together the SMTP service and WSH can
+be used to send e-mail from a command line.
+
+MORE INFORMATION
+================
+
+With the SMTP service installed, a new system object named "CDONTS.NewMail" can
+be used to send mail with a few lines of code.
+
+The following example using VBS and WSH demonstrates how to send -email from a
+command prompt. Save the code shown below as SENDMAIL.VBS, open a command prompt
+session. and call the code using the following syntax:
+
+  CSCRIPT.EXE SENDMAIL.VBS -?
+
+This will return the Help screen that shows the syntax for using the script. This
+script can be used inside batch files, or for other purposes such as sending
+alerts from Performance Monitor.
+
+Save the following VBS code as SENDMAIL.VBS:
+
+     '--------------------------------------------------
+     '
+     ' Sends email from the local SMTP service using CDONTS objects
+     '
+     ' Usage:
+     '   sendmail -t &lt;to&gt; -f &lt;from&gt; -s "&lt;subject&gt;" -b "&lt;message&gt;"
+     '   sendmail [-help|-?]
+     '
+     '--------------------------------------------------
+
+     Option Explicit
+     On Error Resume Next
+
+     Dim objSendMail, oArgs, ArgNum
+     Dim strTo, strFrom, strSubject, strBody
+
+     Set oArgs = WScript.Arguments
+     ArgNum = 0
+
+     While ArgNum &lt; oArgs.Count
+        Select Case LCase(oArgs(ArgNum))
+           Case "-to","-t":
+              ArgNum = ArgNum + 1
+              strTo = oArgs(ArgNum)
+           Case "-from","-f":
+              ArgNum = ArgNum + 1
+              strFrom = oArgs(ArgNum)
+           Case "-subject","-s":
+              ArgNum = ArgNum + 1
+              strSubject = oArgs(ArgNum)
+           Case "-body","-b":
+              ArgNum = ArgNum + 1
+              strBody = oArgs(ArgNum)
+           Case "-help","-?":
+              Call DisplayUsage
+           Case Else:
+              Call DisplayUsage
+        End Select
+        ArgNum = ArgNum + 1
+     Wend
+
+     If oArgs.Count=0 Or strTo="" Or strFrom="" Or _
+           strSubject="" Or strBody="" Then
+        Call DisplayUsage
+     Else
+        Set objSendMail = CreateObject("CDONTS.NewMail")
+           objSendMail.From = strFrom
+           objSendMail.To = strTo
+           objSendMail.Subject = strSubject
+           objSendMail.Body = strBody
+           objSendMail.Send
+        Set objSendMail = Nothing
+     End If
+
+     ' Display the usage for this script
+     Sub DisplayUsage
+        WScript.Echo "Usage:"
+        WScript.Echo "  sendmail -t &lt;to address&gt; -f &lt;from address&gt; -s " &amp; _
+           Chr(34) &amp; "&lt;subject&gt;" &amp; Chr(34) &amp; " -b " &amp; Chr(34) &amp; _
+           "&lt;message body&gt;" &amp; Chr(34)
+        WScript.Echo "  sendmail [-help|-?]"
+        WScript.Echo ""
+        WSCript.Quit
+     End Sub
+
+Additional query words: IIS SMTP VBS JS CDONTS
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

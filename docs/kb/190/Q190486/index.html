@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190486: DOC: Missing Styles for CToolbar::SetButtonStyles | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190486: DOC: Missing Styles for CToolbar::SetButtonStyles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190486/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190486/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190486/","publisher":null,"image":null,"headline":"Q190486: DOC: Missing Styles for CToolbar::SetButtonStyles","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190486-doc-missing-styles-for-ctoolbarsetbuttonstyles">Q190486: DOC: Missing Styles for CToolbar::SetButtonStyles</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190486
+Product(s): Microsoft C Compiler
+Version(s): WINNT:6.0
+Operating System(s): 
+Keyword(s): kbdocerr kbref kbVC600
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for CToolBar::SetButtonStyle includes the following styles:
+TBBS_BUTTON, TBBS_SEPARATOR, TBBS_CHECKBOX, TBBS_GROUP, and, TBBS_CHECKGROUP.
+
+The following styles are missing: TBBS_DROPDOWN, TBBS_AUTOSIZE, TBBS_NOPREFIX.
+
+MORE INFORMATION
+================
+
+Following is the information for the missing styles:
+
+TBBS_DROPDOWN
+-------------
+
+Creates a drop-down list button.
+
+TBBS_AUTOSIZE
+-------------
+
+The button's width is calculated based on the text of the button, not on the size
+of the image.
+
+TBBS_NOPREFIX
+-------------
+
+The button text does not have an accelerator prefix associated with it.
+
+NOTE: CToolBar uses the underlying CToolBarCtrl common control. These styles have
+the same effect for CToolBar as the TBSTYLE flags have for the toolbar common
+control. More information about these styles can be found in the toolbar common
+control documentation.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Yeong- Kah
+Tam, Microsoft Corporation.
+
+
+Additional query words: kbdocerr kbvc600
+
+======================================================================
+Keywords          : kbdocerr kbref kbVC600 
+Technology        : kbAudDeveloper kbMFC
+Version           : WINNT:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

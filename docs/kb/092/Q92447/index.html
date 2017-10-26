@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q92447: Windows 3.1 and Serial Communications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q92447: Windows 3.1 and Serial Communications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/092/Q92447/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/092/Q92447/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/092/Q92447/","publisher":null,"image":null,"headline":"Q92447: Windows 3.1 and Serial Communications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q92447-windows-31-and-serial-communications">Q92447: Windows 3.1 and Serial Communications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q92447
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): kbfile win31 kbgraphxlinkcritical
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This document provides information about serial communications
+in the Microsoft Windows version 3.1 operating system environment. The
+first section, "What's New in Windows Version 3.1," gives an overview
+of improvements in Windows 3.1. The section "Conceptual Overview"
+explains basic and advanced concepts in serial communications,
+including port addresses, device contention, and so forth. The section
+"Why Conflicts Occur" discusses the most common reasons why you may
+experience difficulties with serial communications, and the section
+"How to Resolve Conflicts" explains what to do once you have
+identified the problem.
+
+If you need help with a specific problem, you may want to start by
+reading the "Troubleshooting" section.
+
+WHAT'S NEW IN WINDOWS VERSION 3.1
+=================================
+
+Here are some highlights about improvements in how Windows 3.1 handles
+serial communications.
+
+Performance Improvements
+------------------------
+
+- Windows 3.1 supports the high-speed 16550AFN UART buffer; Windows
+  3.0 does not. (The 16550AFN buffer is supported for Windows-based
+  applications only.)
+
+- Windows 3.1 supports baud rates of up to 57.6K. (You may need to
+  update your application to take advantage of these higher baud
+  rates.) Some users experienced lockups during high-speed, full-
+  duplex transfers while using Windows 3.0. These problems are
+  resolved in Windows 3.1.
+
+- Windows 3.1 has a new serial driver interface that allows data to
+  be passed in blocks, instead of one character at a time. (Each
+  block is treated as a single character.) This means faster data
+  throughput and fewer transmission errors. Windows 3.0 passes data
+  one character at a time.
+
+- Windows 3.0 uses a "constant polling" method to determine when
+  serial ports are occupied. Windows 3.1 uses the
+  EnableCommNotification API; this enables applications to directly
+  notify Windows of serial events, thereby increasing overall system
+  performance.
+
+Better Support for Your Ports
+-----------------------------
+
+- Windows 3.1 provides better support for COM ports 3 and 4. You can
+  now configure these ports by using Windows Control Panel.
+
+- Windows 3.1 fully supports IRQ sharing; Windows 3.0 does not. (To
+  take advantage of this feature, your PC must have Extended Industry
+  Standard Architecture (EISA) or Micro Channel(R) Architecture
+  (MCA), or you must have a serial I/O card that supports IRQ
+  sharing.)
+
+                         CONCEPTUAL OVERVIEW
+                         ===================
+
+This section provides a general introduction to the subject of serial
+communications and explains many of the concepts and issues that are
+discussed throughout the "Windows 3.1 and Serial Communications"
+Application Note.
+
+SERIAL VS. PARALLEL PORTS
+=========================
+
+Input/output (I/O) ports provide the means for your PC to send or
+receive data through external devices such as modems, printers, fax
+machines, and so forth. Virtually all PCs have both parallel and
+serial ports. There are several distinctions between serial and
+parallel I/O ports.
+
+Parallel ports are generally used only for printers, which is where
+the name LPT, for line printer, originates. Parallel ports transmit
+data in complete bytes, and in most cases they handle outgoing data
+only; they cannot receive information. (The IBM[R] PS/2[R] parallel
+ports are bidirectional; in addition, you can use certain peripherals,
+such as network card adapters, to enable your ports to transmit data
+bidirectionally.) You do not configure parallel ports; they are
+preconfigured for your machine.
+
+Serial ports are generally used for communications, or COM devices,
+which include serial printers, modems, fax machines, and so forth.
+Serial ports are capable of both sending and receiving data. You can
+configure settings--such as parity, stop bits, and data length--for
+your serial ports. (In Windows, you can specify these settings by
+using Control Panel.) Serial ports transmit data one bit at a time,
+sequentially (or serially).
+
+PORT ADDRESSES AND IRQS
+=======================
+
+Every time you start your PC, your system BIOS checks your COM ports
+to see what serial devices are installed on your PC and posts this
+information to the system BIOS data area (BDA). Windows "reads" the
+BDA, and uses the default interrupt request line (IRQ) for each device
+that is registered there. Usually, each COM port requires a unique IRQ
+to communicate with your PC. Certain PCs and some I/O cards support
+IRQ sharing.
+
+ NOTE: Some earlier BIOS versions may not check for devices on COM
+ ports 3 and 4. If you have devices installed on COM port 3 or 4 and
+ your system BIOS does not recognize these ports, you need to
+ register the addresses for COM3 and COM4 by using Windows Control
+ Panel. This is explained in the procedure "To register a serial
+ device" later in this Application Note.
+
+How Should My COM Ports Be Configured?
+--------------------------------------
+
+Generally, PCs come with built-in ports COM1 and COM2 preset to the
+following values:
+
+ Port       Address       IRQ
+ ----------------------------
+ COM1        03F8          4
+ COM2        02F8          3
+
+In most cases, the default values for COM ports 1 and 2 should work
+for your system. You can view your COM port settings by using Windows
+Control Panel.
+
+Most PCs do not have built-in ports for COM3 and COM4. The default
+settings for these additional ports are listed here:
+
+ Port              Address        IRQ
+ ------------------------------------
+ COM3               03E8           4
+ COM3 (PS/2)        3220           3
+ COM4               02E8           3
+
+Because COM1 and COM3 both use IRQ4 as the default, and COM2 and COM4
+both use IRQ3, you may need to reassign the IRQ if you use serial
+devices (such as a fax card or modem) on COM ports 3 or 4. You can
+reassign IRQs by using Control Panel. For more information, see the
+procedure "To reassign the IRQ" later in this Application Note. (You
+do not need to reassign the IRQ if you have an MCA or EISA machine, or
+a serial I/O card that supports IRQ sharing.)
+
+16550AFN UART CHIP SUPPORT
+==========================
+
+Every serial port uses a Universal Asynchronous Receiver-Transmitter
+(UART) chip to send and receive data. Inside your PC, data travels in
+parallel form. When you send or receive data by means of a serial
+device, the UART chip converts the data to a serial format so that
+your port can read it.
+
+Many machines still use either the 8520 or the 16450 UART chip. The
+main advantage of the 16550AFN UART chip is its first in, first out
+(FIFO) buffering scheme, which can dramatically improve performance
+for modem transfer speeds of 9600 baud or higher. If you usually set
+your modem to 2400 or 1200 baud, chances are you don't need the
+16550AFN UART.
+
+ NOTE: The 16550, an earlier version of the chip, was used in IBM
+ PS/2 computers, models 50, 60, and 80, and replaced by the 16550AFN
+ in the PS/2 model 70. You may want to check with your manufacturer
+ to determine which version of the 16550 chip is installed in your
+ machine. The 16550 chip does not support FIFO buffering.
+
+MS-DOS-BASED VS. WINDOWS-BASED APPLICATIONS
+===========================================
+
+Windows-based applications share a single time slice; each MS-DOS-
+based application running under Windows receives its own time slice. A
+time slice is the amount of processor time allocated to an
+application, usually measured in milliseconds. The smaller the time
+slice, the more efficiently Windows can run multiple tasks; therefore,
+in general, you will notice better performance with Windows-based
+applications running under Windows. You can also use "Windows-aware"
+software to emulate timeslice sharing for MS-DOS-based applications
+and thereby improve performance.
+
+You run MS-DOS-based applications under Windows by writing PIF files
+that specify how you want Windows to schedule processor time for these
+applications. (For more information about PIF files, refer to Chapter
+8, "PIF Editor," in the version 3.1 "Microsoft Windows User's Guide.")
+
+                         WHY CONFLICTS OCCUR
+                         ===================
+
+For serial communications to be successful, three settings must match:
+the port addresses in the BIOS data area, the COM port entries in the
+SYSTEM.INI file, and the switches on your serial hardware (if you have
+any installed). This section discusses the situations that can occur
+if these settings do not match, as well as other situations that can
+cause conflicts.
+
+Determining whether these settings match, and changing them if they do
+not, is discussed in the section "How to Resolve Conflicts" later in
+this Application Note.
+
+IRQ SHARING
+===========
+
+Many serial communications problems result from two devices attempting
+to use the same IRQ. For example, if you install a serial mouse on
+COM1 and a modem on COM3, both devices could attempt to use IRQ4 (the
+default setting) at the same time. Unless your PC supports IRQ sharing
+(the ability to have multiple ports using the same IRQ), this could
+cause your mouse or modem to lose functionality.
+
+MCA and EISA machines support IRQ sharing. In addition, some
+serial I/O cards support IRQ sharing even if your machine is not
+specifically configured to do so. Windows 3.1 fully supports such
+serial I/O cards.
+
+For more information, see the "IRQ Sharing" section under "How to
+Resolve Conflicts" later in this Application Note.
+
+BIOS DATA AREA AND ADDRESS PACKING
+==================================
+
+There are four sequential spaces in the BDA for COM port addresses 1
+through 4. The BIOS lists port addresses so that no blank spaces occur
+between addresses. Windows reads the BDA sequentially and actually
+expects a blank address where there is no COM port. This can cause
+conflicts when Windows assigns IRQs.
+
+For example, if you have a mouse on COM1, a printer on COM2, and a
+modem on COM4, Windows expects the BDA to look something like this:
+
+               (COM1)        (COM2)        (COM3)        (COM4)
+ 0040:0000     F8  03        F8  02        00  00        E8  02
+
+Because the BIOS does not use zeros as placeholders, however, the BDA
+actually looks something like this:
+
+               (COM1)        (COM2)        (COM3)        (COM4)
+ 0040:0000     F8  03        F8  02        E8  02        00  00
+
+This behavior is known as address packing, or address shifting.
+Windows assigns IRQs in the order that it finds a COM port address. In
+this situation, Windows would assign IRQ4 (the default for COM3) to
+the device that is actually on COM4. This could cause loss of
+functionality on COM4 because IRQ4 is already being used by COM1.
+
+BIOS packing can affect COM ports 1 and 2 as well. For instance if you
+have no device on COM1, your COM2 address may register in the COM1
+BIOS area.
+
+Whether or not you experience problems as a result of address packing
+may depend on what COM ports you are using, what type of hardware you
+have, and whether you are using MS-DOS-based communications software.
+
+To correct this type of situation, you write a Debug script. A Debug
+script records the correct port addresses in your system memory. This
+procedure is described in the section "How to Resolve Conflicts" under
+'"Address Packing."
+
+MS-DOS-BASED COMMUNICATIONS SOFTWARE AND WINDOWS 3.1
+====================================================
+
+MS-DOS-based applications and Windows-based applications handle serial
+communications in different ways. This section discusses guidelines
+for using your MS-DOS-based communications programs under Windows 3.1.
+For more information, see chapters 7, "Non-Windows Applications," and
+8, "PIF Editor," in the version 3.1 "Microsoft Windows User's Guide."
+
+General Guidelines
+------------------
+
+You use 386 enhanced mode Windows, and PIF files, to give Windows
+control of your MS-DOS-based communications applications. We don't
+recommend running MS-DOS-based communications applications in standard
+mode Windows, as this may cause data loss or other problems.
+
+For better performance, run your MS-DOS-based applications in full-
+screen mode rather than in a window. If you run an MS-DOS-based
+communications application in the background during a data transfer,
+run it minimized as an icon rather than in a window.
+
+PIF File Guidelines
+-------------------
+
+- Select the Background check box (under Execution in the main PIF
+  Editor dialog box), or your MS-DOS-based application will stop
+  running when you switch away from it.
+
+- Select the Lock Application Memory check box (in the PIF Editor
+  Advanced Options dialog box), or you may receive an error message.
+  (This setting applies only if you have a permanent swap file and 32-
+  bit disk access is enabled.)
+
+- If you encounter errors during data transfers, specify a larger
+  Background Priority or Foreground Priority setting (in the
+  Multitasking Options area of the Advanced Options dialog box).
+
+Device Contention
+-----------------
+
+In the Windows multitasking environment, two applications sometimes
+simultaneously request the use of a device (such as a COM port or
+modem). This is known as device contention. When you are running MS-
+DOS-based communications applications under Windows in 386 enhanced
+mode, you need to set device contention options in Control Panel.
+Doing so specifies how you want Windows to handle device requests from
+your MS-DOS-based applications.
+
+Problems that can occur as a result of serial device contention
+include the inability to access a COM port. For more information, see
+the procedure "To set device contention options" later in this
+Application Note.
+
+UART Support for MS-DOS-Based Applications
+------------------------------------------
+
+Windows 3.1 provides application support for the new 16550AFN UART
+buffer (see the section on the UART earlier in this Application Note).
+However, MS-DOS-based applications may not recognize the 16550AFN
+UART, treating it instead like the earlier 8250 version. This, in
+turn, may result in data loss. Whether you experience these problems
+also depends to a certain extent on your hardware manufacturer.
+
+Pacific Commware's TurboCom is an advanced serial port communications
+driver for Windows that provides UART support for MS-DOS-based
+applications running under Windows. TurboCom also supports IRQ sharing
+and baud rate speeds of up to 57.6K. If you regularly use MS-DOS-based
+communications software or software that requires a baud rate of 9600
+bits per second (bps) or higher, you may want to use the TurboCom
+driver. For additional information, contact your local dealer, or call
+Pacific Commware at (510) 540-8080.
+
+ NOTE: If your communications software runs at 2400 baud or lower,
+ using the 16550AFN UART probably won't noticeably improve your
+ system's performance.
+
+
+Address Packing and MS-DOS-Based Applications
+---------------------------------------------
+
+If Windows assigns an IRQ that is being used by an MS-DOS-based
+program, you may receive the message "The COM port is currently
+assigned to a DOS application. Do you want to reassign the port to
+Windows?"
+
+The problem occurs when your machine BIOS packs addresses before
+posting them to the BDA. Windows reads the BDA sequentially, assigning
+the default IRQ for COM1 to the first entry it finds, the IRQ for COM2
+to the second entry, and so forth. For example, if you have a device
+on COM2 but not on COM1, and your system BIOS packs addresses, the
+COM2 address "shifts" into the BDA slot for COM1. Consequently,
+Windows assigns IRQ4 (the default for COM1) to the device that is
+actually on COM2.
+
+MS-DOS-based communications programs access the COM ports directly,
+without posting their port address to the BDA. Using the same example,
+if you have no serial device on COM1, and your MS-DOS-based
+communication program is using COM2, the MS-DOS-based program still
+uses the default IRQ for COM2.
+
+You can remedy this situation by writing a Debug script. For more
+information, see the procedure "To write a Debug script" later in this
+Application Note.
+
+THIRD-PARTY COMMUNICATIONS DRIVERS
+==================================
+
+Some Windows-based third-party programs install their own drivers to
+replace the drivers provided by Windows. If these third-party drivers
+are installed in your system when you upgrade from Windows 3.0 to
+Windows 3.1, Setup does not install the Windows communications driver
+(COMM.DRV). In most instances, it is best to use the Windows 3.1
+driver, rather than a driver designed for Windows 3.0.
+
+If you are experiencing driver problems (such as an inability to use
+higher baud rates, or problems accessing the modem), you can reinstall
+COMM.DRV or contact the manufacturer of your third-party driver for an
+update.
+
+You can tell whether you have the Windows communications driver, or
+whether it has been replaced by the driver(s) that came with your
+communications software, by looking in your SYSTEM.INI file. See the
+procedure "To check for third-party drivers" later in this application
+note.
+
+                      HOW TO RESOLVE CONFLICTS
+                      ========================
+
+You should now be familiar with the most common reasons for serial
+communications problems in Windows 3.1. This section describes a few
+simple procedures you can follow to correct these problems.
+
+RESOLVING IRQ CONFLICTS
+=======================
+
+If you have serial devices on both COM1 and COM3, or COM2 and COM4,
+and your machine architecture does not support IRQ sharing, you need
+to reassign the IRQ for COM3 or COM4. (If you are using a serial card
+that supports IRQ sharing, read the section that follows this
+procedure.)
+
+To properly reassign the IRQ:
+
+1. Determine the valid IRQ settings for the serial device by referring
+  to the manufacturer's documentation.
+
+  Most serial devices such as I/O cards or internal modems can use
+  either of several valid IRQs. For example, a modem on COM3 may be
+  able to use IRQ5 if IRQ4 is not available.
+
+2. Determine which IRQs are available on your PC.
+
+  You can do this by referring to the table provided below, or you
+  can use the Microsoft Diagnostic (MSD) utility. (Refer to the
+  procedure, "To use MSD to determine available IRQs" later in this
+  Application Note.) MSD is included with Windows version 3.1.
+
+3. Point both your serial device and Windows to the IRQ that you have
+  determined is valid and available.
+
+  Set your serial device to the alternate IRQ by following the
+  directions in the manufacturer's documentation. Point Windows to
+  the alternate IRQ by using Control Panel to place an entry in your
+  SYSTEM.INI file.
+
+   NOTE: Your serial device setting MUST match the COMxIRQ setting in
+   your SYSTEM.INI file. If these two settings do not match, the COM
+   port will not function properly.
+
+Standard IRQ Settings (Table)
+-----------------------------
+
+The following table shows the most common IRQ settings. You can use
+Control Panel to specify an IRQ from this table if it matches your
+hardware requirements. Or, if you'd like to view a table similar to
+this that lists the current settings in your PC, you can use MSD.
+
+      IRQ Number       Description
+      ---------------------------------------
+           0           Timer
+           1           Keyboard
+           2           Link to IRQs 9-15
+           3           COM2, COM4
+           4           COM1, COM3
+           5           LPT2, or Reserved
+           6           Floppy disk controller
+           7           LPT1, LPT3
+           8           Real time clock
+           9           Redirected IRQ2
+          10           Reserved
+          11           Reserved
+          12           PS/2 mouse
+          13           Math coprocessor
+          14           Hard disk controller
+          15           Reserved
+
+The IRQs with "Reserved" entries in the corresponding Description
+column are often available. (This does not guarantee they are
+currently available on your PC.) You can use Control Panel to choose
+one of the "Reserved" IRQs, such as IRQ10, and then restart your
+system to see whether the COM port now works.
+
+ NOTE: You must also change the hardware setting to the same IRQ. To
+ do this, follow the manufacturer's instructions.
+
+If the first IRQ you choose does not work, you can try the next IRQ
+from this table, and so forth. If you do not have a PS/2 mouse port,
+you may be able to use IRQ12. Or, you can use MSD to view the IRQs
+that are actually available on your PC.
+
+To Use MSD to Determine Available IRQs
+--------------------------------------
+
+1. Quit Windows.
+
+2. At the MS-DOS command prompt, type "msd"(without the quotation
+  marks).
+
+  An initial screen appears, providing information about MSD. Choose
+  the OK button to view the MSD main menu.
+
+3. From the MSD main menu screen, choose the IRQ Status button.
+
+  The IRQ Status screen shows which IRQs are currently assigned (not
+  available).
+
+4. Make a note of each IRQ number where the entry in the corresponding
+  Detected column reads No.
+
+  A No entry in the Detected column indicates that the corresponding
+  IRQ is available. If you do not find a "No" entry in the Detected
+  column, there are no available IRQs, and you should not attempt to
+  reassign IRQs.
+
+5. Use Control Panel to assign one of the available IRQs to the COM
+  port whose IRQ you want to change.
+
+  See the next procedure. You must also change the hardware setting
+  to the same IRQ. Follow the manufacturer's instructions.
+
+ NOTE: Windows 3.1 does not support nonstandard IRQ settings. If your
+ serial communications device requires an IRQ that is different than
+ what is described in the MSD listing, we cannot guarantee the
+ results.
+
+To Reassign the IRQ from Control Panel
+--------------------------------------
+
+1. In the Main group, choose the Control Panel icon.
+
+2. In the Control Panel window, choose the Ports icon.
+
+3. In the Ports dialog box, select the COM port for the device whose
+  IRQ you want to change, and then choose the Settings Button.
+
+4. In the Settings dialog box, choose the Advanced button.
+
+5. Open the Interrupt Request Line (IRQ) list box, and select a
+  number.
+
+  This number must match your hardware setting.
+
+6. Choose the OK button twice to exit the settings dialog boxes, and
+  then choose the Close button to exit the Ports dialog box.
+
+IRQ-Sharing Serial I/O Cards
+----------------------------
+
+If you are using an IRQ-sharing I/O card on a machine that does not
+have MCA or EISA architecture, you need to add the following line to
+the [386Enh] section of the SYSTEM.INI file:
+
+  COMIrqSharing=TRUE
+
+ NOTE: This setting does not, by itself, provide your system with IRQ-
+ sharing support. You must have the correct hardware configuration,
+ and the hardware must be installed according to the manufacturer's
+ specifications.
+
+ADDRESS PACKING
+===============
+
+If you are using an MS-DOS-based communications program, Windows may
+assign an IRQ to a Windows serial device that is already in use by
+your MS-DOS-based program. If this happens, you may receive the error
+message "The COMx port is currently assigned to an MS-DOS application.
+Do you want to reassign the port to Windows?"
+
+To remedy this situation, you need to familiarize yourself with the
+BDA. (This error message may also occur if you have a BIOS that does
+not search for serial devices on COM ports 3 or 4. If this is the
+case, you can use Control Panel to register the devices.)
+
+To View the BDA by Using Debug
+------------------------------
+
+1. Quit Windows.
+
+2. At the MS-DOS command prompt, type "debug" (without the quotation
+  marks), then press ENTER.
+
+  A hyphen (-) prompt appears.
+
+3. Type "d40:0" (without the quotation marks), then press ENTER.
+
+  This returns a listing of the BIOS data area (BDA). The first row
+  of the BDA shows the COM port and LPT port addresses, divided by a
+  center hyphen. COM ports are listed to the left of the hyphen; LPT
+  ports are listed to the right.
+
+4. Once you have interpreted the BDA (see the following procedure),
+  type "q" (without the quotation marks) to quit Debug.
+
+To Interpret the BDA COM Address Entries
+----------------------------------------
+
+This table shows the four standard COM addresses as they should be
+listed in the BDA. (The COMx headings do not appear in the BDA.)
+
+               (COM1)        (COM2)        (COM3)        (COM4)
+ 0040:000      F8  03        F8  02        E8  03        E8  02
+
+If you have a serial device on COM port 3 or 4, and the BDA does not
+show an entry for the device, you can use Control Panel to register
+the device in the BDA. However, if the BDA shows any of the standard
+addresses in a location other than what is shown here (for example,
+address F8  02 in the space for COM1, or address E8  02 in the space
+for COM3), then you need to write a Debug script.
+
+ NOTE: If you see an address in your BDA that is not shown here, your
+ hardware may use nonstandard serial port addresses. In this case you
+ need to register the nonstandard address by using Control Panel. See
+ the procedure "To register a serial device."
+
+To Write a Debug Script
+-----------------------
+
+1. Open any standard text editor, such as Windows Notepad.
+
+2. Type the following three lines:
+
+     E40:0
+     F8 03 F8 02 E8 03 E8 02
+     q
+
+  You must press ENTER after typing "q" (without the quotation
+  marks). If you do not, the Debug script will cause your system to
+  remain indefinitely in Debug mode.
+
+3. Save the file as FIXCOM.DEB, or any filename with a .DEB extension.
+
+4. Add the following line to the end of your AUTOEXEC.BAT file:
+
+     DEBUG &lt; FIXCOM.DEB &gt; NUL
+
+  The "&gt; NUL" ending keeps the Debug script from echoing to the
+  screen.
+
+ NOTE: Do not place this entry after a program execution line, such
+ as WIN. If you do, the Debug script will not execute.
+
+5. Save your AUTOEXEC.BAT file and reboot your PC.
+
+You can view the BDA again to see whether the address changes have
+  taken effect.
+
+ NOTE: The port address setting on your physical serial device must
+ match what you specify in the Debug script. If your hardware
+ requires a nonstandard address, you can specify that address in the
+ Debug script.
+
+SERIAL DEVICES ON COM3 AND COM4 DO NOT REGISTER
+===============================================
+
+Some earlier BIOS versions only recognize devices installed on COM
+ports 1 and 2. If your system BIOS does not recognize serial devices
+on COM ports 3 and 4, you can use Control Panel to notify Windows that
+you have devices installed at these locations. However, if your BIOS
+registers such devices but incorrectly records them at different
+addresses in the BDA (due to address shifting or packing), you cannot
+use Control Panel to correct this situation. Instead, you need to
+write a Debug script. Refer to the previous procedure.
+
+To determine whether your system BIOS registers devices on COM port 3
+or 4, you need to read the BDA. Refer to the procedure "To view the
+BDA by using Debug."
+
+ CAUTION: Setting the port address by using Control Panel does not
+ override a BDA value. What the BIOS reads replaces any entries you
+ make by using Control Panel, if there is a discrepancy between the
+ two. This procedure is not a substitute for writing a Debug script
+ if your BIOS incorrectly registers COM addresses.
+
+To Register a Serial Device
+---------------------------
+
+1. In the Main group, choose the Control Panel icon.
+
+2. In the Control Panel window, choose the Ports icon.
+
+3. In the Ports dialog box, select the port you want to identify to
+  Windows, and then choose the Settings button.
+
+4. In the Settings dialog box, choose the Advanced button.
+
+5. Open the Base I/O Port Address list box and select an address.
+  Check your hardware documentation for the appropriate value.
+
+6. Open the Interrupt Request Line (IRQ) list box, and select an IRQ.
+  Check your hardware documentation for the appropriate value.
+
+Selecting values in this dialog box places COMxBase and COMxIRQ
+entries in your SYSTEM.INI file.
+
+For more information on COMxBase and other SYSTEM.INI file entries,
+refer to the SYSINI.WRI file in your Windows directory.
+
+DEVICE CONTENTION
+=================
+
+You need to specify the device contention options for each MS-DOS-
+based communications application you are running under Windows.
+
+To Set Device Contention Options
+--------------------------------
+
+1. In the Main group, choose the Control Panel icon.
+
+2. In the Control Panel window, choose the 386 Enhanced icon.
+
+3. Select the port that is connected to the device you want to
+  control.
+
+4. In the Device Contention group, select the option you prefer. Each
+  option is described below.
+
+  Always Warn
+
+  Select this option to have Windows display a dialog box whenever
+  more than one application requests use of a COM port at the same
+  time. The dialog box lets you specify which MS-DOS-based
+  application should receive control of the COM port. In most cases,
+  you should select Always Warn.
+
+   NOTE: The Always Warn option does not replace IRQ sharing. When
+   you specify that one application receive control of a COM port,
+   the other application requesting to use the port is interrupted.
+   Optimally, once the first application completes its operation (for
+   example, a fax transmission), the COM port becomes available again
+   and the other application can resume. However, sometimes giving
+   control of a COM port to one application over another can
+   indefinitely hang the application that is required to wait.
+
+  Never Warn
+
+  When you select this option, Windows provides COM port access to MS-
+  DOS-based applications even if it detects that the requested port
+  may already be in use by another application.
+
+  Selecting this option may cause unexpected problems, such as data
+  loss or an interruption during application processing.
+
+  Idle (in sec.)
+
+  Select this option to specify the number of seconds Windows should
+  wait before giving port access to an application without notifying
+  you. For instance, if you specify 10 seconds, Windows displays a
+  dialog box when any application requests the use of a port that was
+  occupied within the last 10 seconds. The dialog box lets you
+  specify which MS-DOS-based application should receive control of
+  the COM port. Otherwise, Windows provides COM port access without a
+  warning.
+
+For more information about these options, see page 247 of Chapter 7,
+"Non-Windows Applications," in the version 3.1 "Microsoft Windows
+User's Guide."
+
+THIRD-PARTY DRIVERS
+===================
+
+The Windows 3.1 Setup program updates many drivers that were included
+in Windows 3.0. Setup cannot update third-party drivers, however. You
+should obtain updates from the manufacturer for any third-party
+drivers that you are using under Windows 3.1.
+
+To Check for Third-Party Communications Drivers
+-----------------------------------------------
+
+1. Open your SYSTEM.INI file by using any text editor, such as Windows
+  Notepad.
+
+2. Under the [boot] section, look for the following entry:
+
+     comm.drv=comm.drv
+
+  If this entry reads differently, then your system is using a third-
+  party Windows-level driver.
+
+3. Under the [386Enh] section, look for the following entries:
+
+     device=*vcd
+     device=*combuff
+
+  If either of these entries reads differently, or if there is an
+  additional entry, then your system is using third-party
+  communications drivers.
+
+To determine whether you need an update, contact your manufacturer.
+
+To use third-party drivers that have not been updated, you need to add
+the following line to the [386Enh] section of your SYSTEM.INI file:
+
+  COMMdrv30=TRUE
+
+Once you obtain an update for your third-party driver, you can remove
+this entry from your SYSTEM.INI file.
+
+             TROUBLESHOOTING COMMUNICATIONS PORT PROBLEMS
+             ============================================
+
+This section can help you to identify what is causing a problem and
+then point you to the appropriate section in this Application Note for
+an explanation of how to resolve the problem.
+
+COMMUNICATIONS APPLICATION CANNOT ACCESS A SERIAL PORT
+======================================================
+
+Are you using MS-DOS-based communications software? Refer to the "MS-
+DOS-Based Communications Software and Windows 3.1" section in this
+Application Note.
+
+Related procedure:
+"To set device contention options"
+
+Is the serial device using an available IRQ? Refer to the "Resolving
+IRQ Conflicts" section in this Application Note.
+
+Related procedures:
+"To use MSD to determine available IRQs"
+"To reassign the IRQ from Control Panel"
+
+PC LOCKS UP WHEN ACCESSING SERIAL PORT
+======================================
+
+Is the serial device using a unique IRQ? Refer to the "Resolving IRQ
+Conflicts" section in this Application Note.
+
+Related procedures:
+"To use MSD to determine available IRQs"
+"To reassign the IRQ from Control Panel"
+
+Is the serial device on COM4? Refer to the "Serial Devices on COM3 and
+COM4 Do Not Register" section.
+
+Related procedure:
+"To register a serial device"
+
+ERROR MESSAGES
+==============
+
+"The COM Port is Currently Assigned to a DOS Application..."
+------------------------------------------------------------
+
+If you receive this error message, refer to the procedure "To write a
+Debug script."
+
+MODEM PROBLEMS
+==============
+
+Does your system BIOS recognize your internal modem? Refer to the
+"Address Packing and MS-DOS-Based Applications" section for
+information about reading the BDA.
+
+Related Procedures
+"To view the BDA by using Debug"
+"To interpret the BDA COM address entries"
+"To register a serial device"
+
+Do you have a modem on COM3 and a mouse on COM1, or a modem on COM4
+and a mouse on COM2? Unless your machine or serial I/O card supports
+IRQ sharing, this configuration is not recommended. Refer to the
+"Resolving IRQ Conflicts" section in this Application Note.
+
+Related Procedure:
+"To reassign the IRQ from Control Panel"
+
+Do you have an internal modem and a serial I/O card? Have you observed
+any of the following symptoms:
+
+  The modem dials and rings but does not connect.
+  The system reboots when the modem attempts to dial out.
+  The system reboots when the modem should have connected.
+  The cursor does not work in Window Terminal.
+
+If your internal modem uses a COM port that is addressed by your
+serial I/O card, you may experience IRQ conflicts. To correct this
+problem, disable the COM port setting on the serial I/O card. For
+example, if your internal modem is set to use COM2, and you have a
+serial I/O card that recognizes COM2, you may need to disable COM2 on
+the serial I/O card for the modem to work correctly.
+
+MOUSE PROBLEMS
+==============
+
+General Guidelines
+------------------
+
+The mouse uses a different driver for MS-DOS-based applications than
+it does for Windows-based applications. In general, all mouse drivers
+should come from the same vendor. For example, do not use a Microsoft
+driver as the Windows mouse driver and a third-party driver as the MS-
+DOS mouse driver.
+
+Do not install a modem on COM3 if you have a mouse on COM1, or a modem
+on COM4 if you have a mouse on COM2, unless your machine or serial I/O
+card supports IRQ sharing. Refer to the "Resolving IRQ Conflicts"
+section in this Application Note.
+
+Mouse Doesn't Work in Enhanced Mode
+-----------------------------------
+
+If your PC has no COM1 or if you have disabled COM1 and you have a
+mouse installed on COM2, you may experience problems using the mouse
+in 386 enhanced mode. Refer to the "BIOS Data Area and Address
+Packing" section in this Application Note.
+
+Logitech(TM) Mouse
+------------------
+
+The Logitech virtual mouse driver (LVMD.386) is hard coded for the
+standard base port addresses and IRQs. If you use the Logitech mouse
+with a nondefault port address or IRQ, it may fail to work in 386
+enhanced mode.
+
+100%-Microsoft-Compatible Mouse
+-------------------------------
+
+Any "100% Microsoft compatible" mouse that you purchase from your
+dealer is not interchangeable with the Microsoft mouse. If your 100%-
+Microsoft-compatible mouse comes with a driver disk that contains both
+Windows and MS-DOS mouse drivers, install these in place of the
+Microsoft mouse drivers. Installing such drivers places a new setting
+in the Mouse section of Windows Setup. After you install a 100%-
+Microsoft-compatible mouse, use Windows Setup to select your mouse
+type.
+
+Microsoft Mouse
+---------------
+
+If you are using the Microsoft Mouse with Windows 3.1, make sure each
+of the following is true:
+
+- You are using version 8.2 or 8.2a of MOUSE.COM and MOUSE.SYS (the
+  mouse drivers for MS-DOS-based applications). Version 8.2 or 8.2a
+  of the driver is included with Windows 3.1.
+
+- MOUSE.DRV (the mouse driver for Windows-based applications) is in
+  the Windows SYSTEM subdirectory, is the only copy of this file on
+  your system, and is the most current version of the driver.
+
+- The mouse is assigned a unique IRQ (unless the serial port supports
+  IRQ sharing). For more information, see the "IRQ Sharing" section
+  in this Application Note.
+
+- The mouse is not installed on COM3 or COM4.
+
+To see what version of the MS-DOS mouse driver you have
+
+At the MS-DOS command line from the MS-DOS mouse directory (usually,
+MSMOUSE), type:
+
+  mouse /?
+
+To see what Windows mouse driver you are using
+
+&gt;From the Main group, choose the Windows Setup icon. The mouse type
+should be "Microsoft, or IBM PS/2."
+
+To change your Windows mouse driver
+
+1. In the Main group, choose the Windows Setup icon.
+2. From the Options menu, choose Change System Settings.
+3. Open the Mouse list box and select the type of mouse that you are
+  using.
+4. Choose the OK button to close the dialog box.
+
+COM4 PROBLEMS
+=============
+
+If your communications software doesn't recognize a serial device on
+COM port 3 or 4, you may have a system BIOS that was manufactured
+before those COM ports became standard. Refer to the "Serial Devices
+on COM3 and COM4 Do Not Register" section earlier in this application
+note.
+
+The COM4 default address of 02E8 conflicts with some peripheral
+devices, including the 8514/A, Ultra (ATI), and S3 (Orchid Fahrenheit
+1280 STB WIND/X, Diamond Stealth VRAM) display adapters, and certain
+network adapters. Do not readdress COM4 in this situation. Contact
+your hardware manufacturer for information about how to reset the
+adapter's default address.
+
+PROBLEMS RUNNING WINDOWS IN 386 ENHANCED MODE
+=============================================
+
+Problems of this type may be related to a number of causes, including
+outdated driver files or IRQ conflicts. You can try the
+troubleshooting steps outlined below if you experience any of the
+following problems when trying to run Windows in 386 enhanced mode:
+
+-Windows stops running or returns to the MS-DOS prompt
+-General protection (GP) fault
+-Windows defaults to standard mode
+
+If the steps outlined below do not help, then the problem is probably
+not caused by a serial communications conflict. Refer to the Windows
+Resource Kit for more information about problems running Windows in
+386 enhanced mode.
+
+To Check for Outdated Driver Files
+----------------------------------
+
+Before starting Windows from the MS-DOS prompt, change to the Windows
+directory, and then start Windows.
+
+If Windows runs in 386 enhanced mode only when you start it from the
+Windows directory, you may have an outdated driver file in some other
+directory. When Windows starts, it looks for the files it needs in the
+following order:
+
+  The current directory
+  The Windows directory
+  The Windows SYSTEM subdirectory
+  All the directories listed in the PATH statement in the
+  AUTOEXEC.BAT file
+  All the directories in a network path
+
+If you suspect that you have outdated driver files, you need to delete
+them from your system.
+
+To Delete Outdated Driver Files
+-------------------------------
+
+1. Use File Manager to find all versions of the driver file(s) on your
+  system. Compare each version by date.
+
+2. Delete all other versions of the driver file(s) except the most
+  current version. Retain a single copy of the most current version
+  in the Windows SYSTEM subdirectory.
+
+To Identify an IRQ Conflict
+---------------------------
+
+1. Remove any serial hardware you have installed on your system
+  (mouse, network card, fax board, modem, and so forth) and then
+  restart Windows.
+
+  If Windows now runs in 386 enhanced mode with no problems, the
+  problem may be caused by an IRQ conflict.
+
+2. Reinstall each separate piece of serial hardware, one at a time,
+  restarting Windows between each addition.
+
+  This isolates the hardware that is causing the IRQ conflict. When
+  the problem recurs, you can assume it is caused by the hardware you
+  have just reinstalled.
+
+3. Reassign the IRQ for the piece of hardware in question.
+
+  Refer to the procedure in this Application Note on "To reassign the
+  IRQ from Control Panel."
+
+--------------------------------------------------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+  Download Ww0654.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words: gpf 3.10 comm port lpt 1.0
+
+======================================================================
+Keywords          : kbfile win31 kbgraphxlinkcritical 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

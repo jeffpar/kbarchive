@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187529: HOWTO: Use ADO to Access Objects Through an ADSI LDAP Provider | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187529: HOWTO: Use ADO to Access Objects Through an ADSI LDAP Provider" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187529/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187529/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187529/","publisher":null,"image":null,"headline":"Q187529: HOWTO: Use ADO to Access Objects Through an ADSI LDAP Provider","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187529-howto-use-ado-to-access-objects-through-an-adsi-ldap-provider">Q187529: HOWTO: Use ADO to Access Objects Through an ADSI LDAP Provider</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187529
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.5,2.0,2.1 SP2,2.5,5.0,6.0
+Operating System(s): 
+Keyword(s): kbtophit kbADO150 kbADO200 kbADSI kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbADO210sp2
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Active Directory Service Interfaces, version 2.0 
+- ActiveX Data Objects (ADO), versions 1.5, 2.0, 2.1 SP2, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Active Directory Service Interfaces (ADSI) Lightweight Directory Access
+Protocol (LDAP) provider implements OLE DB interfaces that allow you to use
+ActiveX Data Objects (ADO) to access objects in LDAP compliant directories. You
+must create an ADO connection object and set its Provider property to
+"ADsDSOObject". You can specify any string, including "", as the connection
+string (first argument) of the ADO connection object's open method.
+
+The connection object Execute method's CommandText (first object) is an LDAP
+query composed of four elements separated by semicolons, in the following
+format:
+
+     &lt;LDAP://server/adsidn&gt;;ldapfilter;attributescsv;scope
+
+where:
+
+- server is the name (or IP address) of the server hosting the directory.
+
+- adsidn is the distinguished name (DN) of the starting point for your query
+  expressed ADsPath format with "/" separators and the root of the namespace to
+  the left. You can also use an X.500 style attributed name format with the
+  relative distinguished names separated by commas and the root of the name
+  space to the right.
+
+- 1dap filter is the LDAP filter string (see rfc2254).
+
+- attributescsv is a comma separated list of names of the attributes to be
+  returned for each row in the recordset.
+
+- scope is either: base, onelevel, or subtree.
+
+NOTE: rfc2253 specifies the LDAP syntaxes on which the ADSI LDAP syntax is
+based.
+
+To return the ADsPath, class, and cn attributes of all the objects in all the
+recipient containers in an Exchange server, you can use the following
+CommandText (in URL format):
+
+        LDAP:&lt;//server/o=organization/ou=site/cn=recipients&gt;;
+           (objectClass=*);ADsPath,objectClass,cn;subtree"
+
+or (in attributed name format):
+
+       &lt;LDAP://server/cn=recipients,ou=site,o=organization&gt;, _
+           (objectClass=*);ADsPath,objectClass;subtree
+
+MORE INFORMATION
+================
+
+The following Visual Basic sample code illustrates this query:
+
+Sample Code
+-----------
+
+    Dim conn As ADODB.Connection
+        Dim rs As ADODB.Recordset
+
+        Set conn = New ADODB.Connection
+        conn.Provider = "ADSDSOObject"
+        conn.Open "ADs Provider"
+
+        Set rs = conn.Execute( _ 
+              "&lt;LDAP://server/o=organization/ou=site/cn=recipients&gt;; _
+              (objectClass=*);ADsPath,objectClass,cn;subtree")
+
+        While Not rs.EOF
+           Debug.Print rs.Fields(0).Value, rs.Fields(1).Value, _
+                 rs.Fields(2).Value
+           rs.MoveNext
+        Wend
+
+        conn.Close
+
+REFERENCES
+==========
+
+For a listing and explanation of common LDAP RFCs, including RFC 2253 and RFC
+2254, please see the following article in the Microsoft Knowledge Base:
+
+  Q221606 Common LDAP RFCs
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q275917 PRB: ADSI 2.5 and MDAC 2.6 Compatibility Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtophit kbADO150 kbADO200 kbADSI kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbADO210sp2 kbADO250 kbMDACNoSweep kbATM 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO150 kbADO200 kbADO210sp2 kbADO250 kbZNotKeyword6 kbADSISearch kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbADSI200
+Version           : :1.5,2.0,2.1 SP2,2.5,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

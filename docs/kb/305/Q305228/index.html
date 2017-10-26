@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305228: &quot;STOP 0xA&quot; Occurs After Applying Windows NT 4.0 SRP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305228: &quot;STOP 0xA&quot; Occurs After Applying Windows NT 4.0 SRP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305228/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305228/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305228/","publisher":null,"image":null,"headline":"Q305228: &quot;STOP 0xA&quot; Occurs After Applying Windows NT 4.0 SRP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305228-stop-0xa-occurs-after-applying-windows-nt-40-srp">Q305228: "STOP 0xA" Occurs After Applying Windows NT 4.0 SRP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305228
+Product(s): Microsoft Windows NT
+Version(s): 4.0 SP6a
+Operating System(s): 
+Keyword(s): kb3rdparty kbenv kberrmsg
+Last Modified: 11-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 SP6a 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 SP6a 
+- Microsoft Windows NT Workstation version 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply the Windows NT 4.0 Security Rollup Package (SRP) and restart a
+computer that has one of the following Compaq Smart Array controllers, you may
+receive an error message on a blue screen:
+
+- Compaq SMART Array controller
+- Compaq SMART-2/E Array controller
+- Compaq SMART-2/P Array controller
+- Compaq SMART-2DH Array controller
+- Compaq SMART-2SL Array controller
+- Compaq Smart Array 3200 controller
+- Compaq Smart Array 3100ES controller
+- Compaq Smart Array 221 controller
+
+This is the error message that you may receive:
+
+  STOP 0x0000000A (0xfcc35000, 0xa, 0x00000001, 0x801e092a)
+  IRQL_NOT_LESS_OR_EQUAL
+
+In this error message, the memory that is referenced is 0xfcc35000. The IRQL is
+0xa (IRQ 10). Value 0 is a read operation; 1 is a write operation. The address
+that referenced memory is 0x801e092a.
+
+CAUSE
+=====
+
+The Windows NT 4.0 SRP exposes an issue with versions earlier than 4.24.0.0 of
+the Compaq Array Controller device driver (Cpqarray.sys) that is available from
+any of the following sources:
+
+- Compaq Web site: Compaq Server Support (SSD) for Microsoft Windows NT 4.0
+- Compaq SmartStart and Support Software CD-ROM
+- Compaq SmartStart for Servers
+
+For additional information about these packages, visit the Compaq Web site:
+
+  http://www.compaq.com/
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain the updated version of the Cpqarray.sys driver
+from the following Compaq Web site:
+
+  ftp://ftp.compaq.com/pub/products/servers/supportsoftware/cp001001-001500/cp001095.exe
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+To prevent this problem from occurring, install the updated Cpqarray.sys driver
+before you install the SRP.
+
+WORKAROUND
+==========
+
+If you cannot obtain the updated Cpqarray.sys driver that is described earlier
+in this article, you can work around this issue by replacing the existing
+Cpqarray.sys file with the version from Microsoft Windows NT 4.0 Service Pack 6a
+(SP6a):
+
+1. If the partition uses the NTFS file system, install Windows NT in a different
+  folder so that the files in the partition are accessible.
+
+  If the partition uses the FAT file system, start the computer by using an
+  MS-DOS boot disk, and then skip to step 3.
+
+2. Boot the computer to the new installation of Windows NT.
+
+3. Copy the Cpqarray.sys file from Windows NT 4.0 SP6a to the original Windows
+  NT 4.0 folder (%SystemRoot%\System32\Drivers).
+
+4. You may also use the Recovery Console from Windows 2000 to rename the
+  offending driver and replace it with CPQARRAY.SYS from SP6a.
+
+
+As an alternative, you can use the Scsiport.sys file from Windows NT 4.0 SP6a to
+start your computer. This causes several fixes that are included with the
+Windows NT 4.0 Security Rollup Package to be removed. The advantage to using
+this method is that any additional functionality that is included in the Compaq
+version of the Cpqarray.sys driver is available. To replace the Scsiport.sys
+file, use the preceding steps, but copy the Scsiport.sys file instead of the
+Cpqarray.sys file.
+
+MORE INFORMATION
+================
+
+For additional information about the Windows NT 4.0 Security Rollup Package,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+
+
+Additional query words: srp windows update stop 0x0000000a sbs critical updates compaq
+
+======================================================================
+Keywords          : kb3rdparty kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTS400sp6 kbWinNTS400search kbWinNTSEnt400SP6a kbWinNTW400SP6a
+Version           : :4.0 SP6a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

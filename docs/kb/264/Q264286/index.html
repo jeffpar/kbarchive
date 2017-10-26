@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264286: PC DirSync: Exch. Postoffice Not in MS Mail Global Address List | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264286: PC DirSync: Exch. Postoffice Not in MS Mail Global Address List" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264286/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264286/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264286/","publisher":null,"image":null,"headline":"Q264286: PC DirSync: Exch. Postoffice Not in MS Mail Global Address List","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264286-pc-dirsync-exch-postoffice-not-in-ms-mail-global-address-list">Q264286: PC DirSync: Exch. Postoffice Not in MS Mail Global Address List</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264286
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:3.2,3.2a,3.5; winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): exc55 exc55sp1 exc55sp2 exc55sp3
+Last Modified: 25-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an MS Mail postoffice is converted to an Exchange Server postoffice, the
+converted Exchange Server postoffice may not be displayed in the global address
+list of other MS Mail postoffices. The recipients in the converted Exchange
+Server postoffice are displayed in the Exchange Server Administrator program.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. In the Exchange Server Administrator program, click the requestor object for
+  an MS Mail postoffice that has a global address list in which the converted
+  (from MS Mail) Exchange Server posoffice is not displayed.
+
+2. Open the requestor object properties, click the Export Containers tab, and
+  then select the appropriate site in the Site list.
+
+3. On the Export Containers tab, select the Recipients container under Recipient
+  Containers, and then click Add to add it under "Export these recipients".
+
+  NOTE: If multiple MS Mail postoffices have a global address list in which the
+  converted (from MS Mail) Exchange Server posoffice is not displayed, perform
+  steps 1 through 3 for the requestor objects for all of these MS Mail
+  postoffices.
+
+4. In MS Mail, check the System.mbg file to make sure that it is updating.
+
+5. On the Exchange Server hub postoffice, check the Recipients container. Make
+  sure that the Recipients container contains addresses for the converted
+  Exchange Server postoffice and that the Recipients container is displayed
+  under "Export these recipients" on the Export Containers tab (to be exported
+  to MS Mail).
+
+6. In MS Mail, run the Netdump utility to make sure that the Exchange Server
+  postoffice .usr file exists.
+
+  The following is a sample of the netdump command line:
+
+  NETDUMP admin [-D[d|path]] [-Ffilename] [-Llogfile] -Ppassword
+
+  Check the third column from the left for the postoffice Mailbag, which has the
+  same hexadecimal ID (hexid) as the .usr file. Check for the same hexid in the
+  Usr directory on the MS Mail postoffices.
+
+7. Empty the Dxadata directory.
+
+8. Stop and restart the Directory Synchronization Service (DXA).
+
+9. Make sure that the amount of disk space available on the hard disk is equal
+  to or greater than the size of the Xdir.edb file multiplied by 4.
+
+10. Manually synchronize the directories.
+
+For additional information about how to manually synchronize the directories,
+click the article numbers below to view the articles in the Microsoft Knowledge
+Base:
+
+  Q147464 XFOR: Manual Dirsync with Exchange Server as Dirsync Server
+
+  Q148309 XFOR: Manual Dir-Sync with Exchange as Dir-Sync Requestor
+
+Additional query words: GAL
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : WINDOWS:3.2,3.2a,3.5; winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

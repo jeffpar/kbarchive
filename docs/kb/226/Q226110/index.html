@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q226110: FIX: Internal Compiler Error Creating Copy of Temporary Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q226110: FIX: Internal Compiler Error Creating Copy of Temporary Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/226/Q226110/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/226/Q226110/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/226/Q226110/","publisher":null,"image":null,"headline":"Q226110: FIX: Internal Compiler Error Creating Copy of Temporary Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q226110-fix-internal-compiler-error-creating-copy-of-temporary-object">Q226110: FIX: Internal Compiler Error Creating Copy of Temporary Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q226110
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbVC600bug kbNoUpdate
+Last Modified: 10-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When creating an object that is a copy of a virtual function return value (a
+temporary object) using the compiler-supplied copy constructor, you may get the
+following error:
+
+  test.cpp(22) : fatal error C1001: INTERNAL COMPILER ERROR
+  (compiler file 'msc1.cpp', line 1794)
+  Please choose the Technical Support command on the Visual C++
+  Help menu, or open the Technical Support help file for more information
+
+Please see the steps to reproduce in the More Information section below.
+
+RESOLUTION
+==========
+
+There are four ways to get around the problem:
+
+1. Explicitly Define a Copy Constructor. (See Workaround #1 in sample code
+  below).
+
+2. Remove the virtual keyword from the function which returns the value. (See
+  Workaround #2 in sample code below).
+
+3. Introduce a temporary variable to store the return value. (See Workaround #3
+  in the sample code below).
+
+4. Remove compiler support for synchronous (C++) exception handling. This is
+  accomplished by removing /GX (the Visual Studio default) from your compile
+  options. (See Workaround #4 in sample code below).
+
+Workaround #1 is the recommended workaround whenever possible.
+
+NOTE: If you define a copy constructor, you should also define an assignment
+operator (operator=).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+  ////////////////////////////////////////////////////////////////////// 
+  // cl /c /GX test.cpp
+  // test.cpp(22) : fatal error C1001: INTERNAL COMPILER ERROR
+  //  (compiler file 'msc1.cpp', line 1794) 
+  //  Please choose the Technical Support command on the Visual C++ 
+  //  Help menu, or open the Technical Support help file for more information
+  ////////////////////////////////////////////////////////////////////// 
+  class A
+  {
+    public:
+      /* workaround #1, add an explicit copy constructor to class A */ 
+      // A(A&amp; a) {};
+      ~A() {}; 
+  };
+  class B
+  {
+    public:
+   /* workaround #2, remove virtual keyword from B::GetA */ 
+      virtual A&amp; GetA(void);
+      void Func (void);
+  };
+  void B::Func (void)
+  {
+    A *att;
+    att=new A(GetA());
+    /* workaround #3, substitute the above line with the following two lines */ 
+    //A tmp = GetA();
+    //att=new A(tmp);
+  }
+  /* workaround #4, remove /GX compiler option */ 
+
+Additional query words: Internal Compiler Error ICE C1001
+
+======================================================================
+Keywords          : kbCompiler kbVC600bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

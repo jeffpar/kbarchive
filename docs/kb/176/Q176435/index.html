@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176435: PRB: Compiling to Native Code Can Be Slow | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176435: PRB: Compiling to Native Code Can Be Slow" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176435/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176435/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176435/","publisher":null,"image":null,"headline":"Q176435: PRB: Compiling to Native Code Can Be Slow","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176435-prb-compiling-to-native-code-can-be-slow">Q176435: PRB: Compiling to Native Code Can Be Slow</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176435
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling a large project to native code, especially with optimizations
+selected, the compile time may be so long as to give the appearance of having
+"hung" the machine. Because there is no status bar to indicate the progress of
+the compiler, the only indicator available is to watch for hard drive activity,
+which may only occur once or twice a minute as this is a CPU intensive activity.
+
+CAUSE
+=====
+
+This is by design. Compiling to native code takes more time than compiling to
+p-code. There are some techniques suggested below for taking advantage of some
+Visual Basic language features to speed up compile time.
+
+MORE INFORMATION
+================
+
+Using the techniques outlined below can result in significantly faster compile
+time. In some cases it has reduced compile time for large projects from over an
+hour to less than 10 minutes.
+
+Minimize the Dots
+-----------------
+
+When referencing objects in Visual Basic, you use the dot syntax '.' to navigate
+an object's hierarchy of collections, objects, properties, and methods. It is
+not uncommon to create very lengthy navigation strings. For example:
+
+     ' Refers to cell A1 on Sheet1 in the first workbook
+     ' of an Microsoft Excel spreadsheet.
+     Application.Workbooks.Item(1).Worksheets.Item_
+     ("Sheet1").Cells.Item(1,1)
+
+In addition to being a rather lengthy string to type, this line of code is fairly
+difficult to read and it is extremely inefficient.
+
+The compiler must resolve each dot every time a dot is encountered. To write
+applications that compile quickly, minimize the use of dots when referencing an
+object.
+
+You can usually minimize the dots by analyzing the objects and methods available
+to you. For example, the above line of code can be shortened by removing the
+Item method (this is the default method for collections anyway, so you'll rarely
+use it in code) and by using the more efficient Range method:
+
+     ' Refers to cell A1 on Sheet1 in the first workbook
+     ' of an Microsoft Excel spreadsheet.
+     Application.Workbooks(1).Worksheets("Sheet1").Range("A1")
+
+You can shorten this even further by rewriting the code so that it refers to the
+active sheet in the active workbook, instead of a specific sheet in a specific
+workbook:
+
+     ' Refers to cell A1 on the active sheet in the
+     ' active workbook.
+     Range("A1")
+
+Of course, the above example assumes it's OK to refer to cell A1 of any sheet
+that happens to be active.
+
+Use Set and With...End With
+---------------------------
+
+Using the Set statement also allows you to shorten navigation strings and gives
+you a bit more control over your code. The following example uses the Dim and
+Set statements to create variables that refer to frequently-used objects:
+
+     Dim xlRange As Object
+     Set xlRange = Application.ActiveSheet.Cells(1,1)
+     xlRange.Font.Bold = True
+     xlRange.Width = 40
+
+Visual Basic provides the With...End With construct to set an implied object
+within code:
+
+     With Application.ActiveSheet.Cells(1,1)
+        .Font.Bold = True
+        .Width = 40
+     End With
+
+REFERENCES
+==========
+
+Books Online, Programmer's Guide, Optimizing Objects
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

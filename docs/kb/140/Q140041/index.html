@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140041: PATCH: Visual C++ 4.0 Crash Fixes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140041: PATCH: Visual C++ 4.0 Crash Fixes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140041/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140041/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140041/","publisher":null,"image":null,"headline":"Q140041: PATCH: Visual C++ 4.0 Crash Fixes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140041-patch-visual-c-40-crash-fixes">Q140041: PATCH: Visual C++ 4.0 Crash Fixes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140041
+Product(s): Microsoft C Compiler
+Version(s): WINNT:4.0;
+Operating System(s): 
+Keyword(s): kbide kbVC kbGrpDSTools
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to get a patch to fix the problems discussed below in
+the SYMPTOMS section.
+
+The following file is available for download from the Microsoft Software
+Library:
+
+  ~ Vcpatch.exe
+  (http://support.microsoft.com/download/support/mslfiles/Vcpatch.exe)
+
+For more information about downloading files from the Microsoft Software Library,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+SYMPTOMS
+========
+
+This patch fixes three different types of Visual C++ 4.0 Developer Studio
+crashing problems. The scenarios are described below:
+
+1. When the current project has sub-projects and the create browser file option
+  is turned on, the Developer Studio may randomly generate an access violation.
+  This can happen in response to one of the following actions:
+
+  a. Building the project.
+
+  b. Closing the project, including closing MSDEV.
+
+  c. Opening a different project or creating a new project.
+
+  d. Saving all the files using the Save All command.
+
+2. When stopping a debugging session then restarting a new debugging session
+  with a project loaded, the Developer Studio fails with an access violation.
+  The error message could be something like :
+
+  
+
+  msdev.exe -  Application Error.
+  The instruction at "0x77f85064" referenced memory at "0x00000010".
+       The memory could not be "read".
+
+  Restarting a new debugging session, the Developer Studio will crash with the
+  following error message :
+
+  Microsoft Developer Studio
+  (NTDLL.DLL): OxC0000005: Access Violation.
+
+3. When deleting sub-projects from a main project, the Developer Studio may
+  sometimes crash with an access violation.
+
+RESOLUTION
+==========
+
+1. Download the self-extracting patch file to a temporary directory.
+
+2. Run VCPATCH.EXE. This will create three files : patch.exe, patch.rtp, and
+  readme.txt.
+
+3. Copy patch.exe and patch.rtp to the \msdev\bin directory.
+
+4. Run patch.exe. The patch will modify the MSVCBLD.PKG file in the
+  \msdev\bin\ide directory. It will also modify the MSVCCLS.PKG file in the
+  \msdev\bin\ide directory and the MSVCSRC.DLL in the \msdev\bin directory.
+
+5. Delete patch.exe and patch.rtp from \msdev\bin directory.
+
+Note: You need to close the Developer Studio when applying the patch. Otherwise
+the files will not be modified.
+
+This patch should be applied to the English version of Visual C++ 4.0 only.
+
+These problems were fixed in Visual C++ 4.1.
+
+======================================================================
+Keywords          : kbide kbVC kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC32bitSearch
+Version           : WINNT:4.0;
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

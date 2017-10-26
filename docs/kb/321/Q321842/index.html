@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q321842: ODBC Call Fail on SQL Query with Parameter Markers in Subquery | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q321842: ODBC Call Fail on SQL Query with Parameter Markers in Subquery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/321/Q321842/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/321/Q321842/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/321/Q321842/","publisher":null,"image":null,"headline":"Q321842: ODBC Call Fail on SQL Query with Parameter Markers in Subquery","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q321842-odbc-call-fail-on-sql-query-with-parameter-markers-in-subquery">Q321842: ODBC Call Fail on SQL Query with Parameter Markers in Subquery</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q321842
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 1.0,2.0,2.5,2.65,2.65.0212,2000.80.194,3.0,3.5,3.6,3.7
+Operating System(s): 
+Keyword(s): kbProgramming kbDatabase
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for SQL Server, versions 1.0, 2.0, 2.5, 2.65, 2.65.0212, 2000.80.194, 3.0, 3.5, 3.6, 3.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ODBC application programming interface (API) calls such as SQLDescribeCol,
+SQLDescribeParam, and SQLNumResultCols, that retrieve meta data, fail when an
+application tries to use the calls with Microsoft ODBC Driver for SQL Server on
+parameters that are part of the subqueries.
+
+CAUSE
+=====
+
+The driver does not retrieve information for parameters that are not bound in
+subqueries.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+SQLNumResultCols returns an incorrect column count, and SQLDescribeCol returns
+an error similar to the following:
+
+  [Microsoft][ODBC SQL Server Driver]Prepared statement is not a
+  cursor-specification
+
+If the parameters have been bound by the application through the SQLBindParameter
+API, the driver uses that information and the meta data calls do not fail.
+
+To reproduce this behavior from the ODBC Test tool, follow these steps:
+
+1. Connect to the NorthWind database in SQL Server.
+
+2. Call SQLPrepare on the following line of code:
+
+  select T1.EmployeeID as c1 from (select * from EMPLOYEES where EMPLOYEES.EmployeeID   = ?) T1
+
+Note that SQLNumResultCols returns 0 instead of 1. If SQLBindParameter was called
+before SQLNumResultCols, the correct column count is retrieved.
+
+REFERENCES
+==========
+
+
+
+Additional query words: SQLSRV32.DLL ODBC32.DLL CATALOG
+
+======================================================================
+Keywords          : kbProgramming kbDatabase 
+Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch kbODBCSQLServ100 kbODBCSQLServ200 kbODBCSQLServ250 kbODBCSQLServ265 kbODBCSQLServ2650212 kbODBCSQLServ200080194 kbODBCSQLServ300 kbODBCSQLServ350 kbODBCSQLServ360 kbODBCSQLServ370
+Version           : :1.0,2.0,2.5,2.65,2.65.0212,2000.80.194,3.0,3.5,3.6,3.7
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

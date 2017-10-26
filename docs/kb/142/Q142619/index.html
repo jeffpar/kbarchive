@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142619: Unattended Setup of Network Cards from Drvlib | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142619: Unattended Setup of Network Cards from Drvlib" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142619/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142619/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142619/","publisher":null,"image":null,"headline":"Q142619: Unattended Setup of Network Cards from Drvlib","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142619-unattended-setup-of-network-cards-from-drvlib">Q142619: Unattended Setup of Network Cards from Drvlib</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142619
+Product(s): Microsoft Windows NT
+Version(s): 3.51
+Operating System(s): 
+Keyword(s): kbnetwork kbsetup
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Unattended setup of network cards from the Drvlib directory of the Windows NT
+compact discs requires that you copy the network adapter setup files to a
+separate directory and specify the path to Oemsetup.inf in the unattended setup
+answer file.
+
+This article describes a method for including network cards from the Drvlib
+directory in the Windows NT distribution files on a network share so that they
+are part of the default available network adapters at setup time.
+
+WORKAROUND
+==========
+
+WARNING: Modification of Setup files can cause serious, system-wide problems
+before and after Setup and may require you to reinstall Windows NT to correct
+them. Microsoft cannot guarantee that any problems resulting from the
+modification of the Setup files can be solved. Make Setup file modifications at
+your own risk.
+
+In the following procedure, assume that drive D is the CD-ROM drive and drive X
+is a network share from which you run unattended installations:
+
+1. At a command prompt, type the following to copy the Windows NT distribution
+  files to a network share:
+
+  "copy d:\i386\*.* x:\ " (without the quotation marks)
+
+2. At a command prompt, type the following commands to copy the network adapter
+  related files:
+
+  " d:
+  cd \drvlib\netcard\x86\&lt;nicname&gt;
+  copy *.* x:\
+  x:
+  cd \
+  rename oemsetup.inf oemnadxx.inf " (without the quotation marks)
+
+  Note that &lt;nicname&gt; is the name of the subdirectory of the Drvlib
+  directory that matches the network adapter.
+
+  Because all network adapter setup script files are called Oemnad*.inf, you
+  need to choose a name Oemnadxx.inf that does not already exist in the Windows
+  NT compact disc distribution files (for example, Oemnad3c.inf for a 3Com
+  adapter).
+
+  Oemnadxx.inf will refer to this file and xx.sys will refer to the driver file
+  name.
+
+3. During the first phase of unattended setup, all system files are temporarily
+  copied to C:\$Win_nt$.~LS and C:\$Win_nt$.~BT. Dosnet.inf describes the files
+  that have to be copied. You must modify Dosnet.inf so that all the necessary
+  files are included.
+
+  Edit X:\Dosnet.inf at the end of the [Files] section, and add one line for the
+  INF file and one line per existing file under
+  Drvlib\netcard\x86\&lt;nicname&gt;
+
+     d1,OEMNADxx.INF
+     d1,&lt;nicdrv&gt;.SYS        &lt;replace with the proper file name&gt;
+     d1,file1
+
+  and so on for all other existing files under the subdirectory described above.
+
+4. Txtsetup.sif is used during the text mode phase of the unattended setup. It
+  tells the setup process which files have to be copied to the hard disk. You
+  must modify the Txtsetup.sif file: at the end of the [Files] section, add the
+  following line for the setup information file:
+
+  Oemnadxx.inf = dx,d7,,2,0,0
+
+  Add a line for the network adapter driver so that it will be copied to
+  System32\drivers directory:
+
+  xxDRV.sys = dx,d19,,4,1
+
+  For all other files xx.xxx in the Drvlib\Netcard\x86\&lt;nicname&gt;
+  directory, add a line:
+
+  xx.xxx = dx,d4,,2,0,0
+
+  These files will be copied to the System32 directory.
+
+5. Oemnadzz.inf is a global setup script file that includes the definition of
+  all network adapters from Drvlib directory. Because you want to use the
+  OemnadXX.inf file that was copied on the flat distribution files, not the
+  Oemsetup.inf file from Drvlib\netcard directory, the matching option in
+  Oemnadzz.inf must be disabled. To do this, run the following batch commands
+  at the command prompt:
+
+  x:
+  cd \
+  attrib -r oemnadzz.in_
+  expand -r oemnadzz.in_
+  del oemnadzz.in_
+
+  Edit Oemnadzz.inf and comment out all lines including a network adapter option
+  defined in the Oemsetup.inf [Options] section. To comment a line, place a
+  semicolon (;) in front of it.
+
+  For example, 3C595 and 3C590 are the options to disable for the 3Com PCI
+  adapter defined in the Drvlib\Netcard\x86\el59x directory.
+
+6. The Oemsetup.inf setup script files in the Drvlib directory do not support
+  the unattended setup mode. During an unattended setup, the global variable
+  !STF_GUI_UNATTENDED is set to yes and setup script files test its value to
+  determine whether the network adapter information has to be retrieved from
+  Unattend.txt.
+
+  To prevent user interaction during Setup, modify the OemnadXX.inf file. For
+  additional information, please see the following article in the Microsoft
+  Knowledge Base:
+
+  ARTICLE-ID: Q143134
+  TITLE : OEMSETUP.INF Modifications for Automated Windows NT Setup
+
+7. The unattended setup answer file (Unattend.txt) includes a line to refer to
+  the right network adapter option:
+
+  [NetworkAdapterData]
+  !AutoNetOption = "&lt;OEMNIC&gt;"
+
+  You can also use the [AdapterParameters] section if you follow the
+  instructions provided in the Knowledge Base article referenced in step 6.
+
+  You are now able to run X:\Winnt32 /U:X:\Unattend.txt.
+
+MORE INFORMATION
+================
+
+The unattended setup answer file (Unattend.txt) includes a section for the
+network adapter information. (Please refer to the default Unattend.txt file for
+more details.)
+
+To install a network adapter from the Drvlib directory, you must copy all the
+related network adapter files from the Drvlib directory to a directory C:\Oem.
+Then Unattend.txt includes a section similar to the following:
+
+  [NetworkAdapterData]
+  !AutoNetOption = "&lt;OEMNIC&gt;"
+  !OEMNetOption = YES
+  !OEMNetDrive = C:\OEM\
+  !OEMNetInfFile = C:\OEM\oemsetup.inf
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  ARTICLE-ID: Q141519
+  TITLE : Unattended and Computer Profile Setup Fails to Install OEM NIC
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbnetwork kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301499: HOW TO: Use Windows Backup to Make a Data Backup of IIS 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301499: HOW TO: Use Windows Backup to Make a Data Backup of IIS 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301499/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301499/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301499/","publisher":null,"image":null,"headline":"Q301499: HOW TO: Use Windows Backup to Make a Data Backup of IIS 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301499-how-to-use-windows-backup-to-make-a-data-backup-of-iis-40">Q301499: HOW TO: Use Windows Backup to Make a Data Backup of IIS 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301499
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbAudITPro kbHOWTOmaster
+Last Modified: 10-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Terminal Server Edition 
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Requirements
+- How to Create the Backup
+- Best Practices
+- Troubleshooting
+
+SUMMARY
+=======
+
+This step-by-step article describes how to use the Windows NT 4.0 backup tool
+(NTbackup.exe) to backup Internet Information Server (IIS) 4.0 content. By
+performing these steps, you are not actually backing up the IIS program, but you
+are safeguarding the Web content.
+
+
+Requirements
+------------
+
+- A tape storage device that is attached to the computer from which you wish to
+  make the backup.
+
+- You must be an administrator or a backup operator to back up files and
+  folders.
+
+How to Create the Backup
+------------------------
+
+1. Insert a tape into your tape storage device.
+
+2. From the desktop, click Start, point to Programs, point to Administrative
+  Tools (Common), and then click Backup.
+
+3. At the bottom of the Backup screen, expand the Drives folder.
+
+4. Double-click to expand the drive letter that contains your content. The
+  default content location for IIS is c:\InetPub\wwwroot, so you would double
+  click the C drive in the My Computer folder. You may have content on other
+  drives or in other folders as well.
+
+5. Click the X next to the drive letter to clear all check boxes below it.
+
+6. Select the check box next to the InetPub folder. Select the check boxes next
+  to any other virtual Web content folders that you may have.
+
+7. Click Backup.
+
+8. You will see a progress dialog box. When the backup is complete, remove the
+  media and close the Windows Backup window. Please see the "Best Practices"
+  section in this article for information about how to use backups most
+  effectively.
+
+Best Practices
+--------------
+
+- Creating a backup log: Always create and print a backup log for each backup.
+  Keep a book of logs to make it easier to locate specific files. The backup
+  log is helpful when restoring data; you can print it or read it from any text
+  editor. Also, if the tape that contains the backup set catalog is corrupt,
+  the printed log can help you locate a file.
+
+- Retaining copies: Keep three copies of the media; keep at least one copy
+  offsite in a properly controlled environment.
+
+- Performing trial restorations: Perform a trial restoration periodically to
+  verify that your files were properly backed up. A trial restoration can
+  uncover hardware problems that do not show up with software verifications.
+
+- Securing devices and media: Secure both the storage device and the backup
+  media. It is possible for someone to access the data from a stolen medium by
+  restoring the data to another server for which they are an administrator.
+
+Troubleshooting
+---------------
+
+If you receive a message telling you that the media is invalid, insert a
+different tape into the drive.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServSearch kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

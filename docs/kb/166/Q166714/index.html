@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166714: XCLN: Using AppleScript for Drag-and-Drop Support on Macintosh | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166714: XCLN: Using AppleScript for Drag-and-Drop Support on Macintosh" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166714/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166714/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166714/","publisher":null,"image":null,"headline":"Q166714: XCLN: Using AppleScript for Drag-and-Drop Support on Macintosh","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166714-xcln-using-applescript-for-drag-and-drop-support-on-macintosh">Q166714: XCLN: Using AppleScript for Drag-and-Drop Support on Macintosh</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166714
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbcode kbusage
+Last Modified: 23-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Macintosh client does not support drag-and-drop
+functionality from the operating system to an Open Compose message or folder.
+However, there is limited support for attaching files to a New Compose message.
+Using AppleScript, you can create a script that prompts for a file and allows
+you to open the Exchange Macintosh client, open the New Compose message window,
+and attach the selected file.
+
+NOTE: AppleScript is included with the Macintosh operating system; if it is not
+present, re-install the operating system to add AppleScript.
+
+MORE INFORMATION
+================
+
+NOTE: This AppleScript requires System 7.5 or later to function correctly.
+
+Apple Events allows you to automate certain actions and save them as scripts.
+These AppleScripts (similar to a macro) work with any application that is
+scriptable. The Exchange Macintosh client is ONLY scriptable in the following
+manner.
+
+To create the script:
+
+1. Open the Apple Script Editor, usually located on the computer's local hard
+  disk drive, in the AppleScript folder within the Apple Extras folder.
+
+2. In the script window at the bottom of the Apple Script Editor, type the
+  following:
+
+        on run
+           set file1 to choose file
+           tell application "Microsoft Exchange &amp; Schedule+"
+              open file1
+           end tell
+        end run
+
+  The script above applies to Microsoft Exchange Macintosh client version 5.0.
+  For Microsoft Exchange Macintosh client version 4.0, change the third line
+  to:
+
+           tell application "Microsoft Exchange"
+
+3. Click Check Syntax; there should be no errors reported. You must correct any
+  syntax errors before you continue.
+
+4. On the File menu, click Save As. Select a location for the script to be
+  saved; remember this location. Under Kind, select Application, and then
+  select Never Show Startup Screen.
+
+5. Save the script with the following name, Exchopendoc, in your chosen
+  location.
+
+You can now double-click the saved script to test it. A Chooser window is
+displayed that allows you to select a file to attach.
+
+The Exchange Macintosh client starts using the default profile; you are prompted
+for your user name and password information. After this information is
+validated, Exchange Macintosh client opens a new message window and attaches the
+selected file. Upon sending or closing the new message, Exchange Macintosh
+client closes and the script finishes.
+
+NOTE: Use this script when Exchange Server is running. If Exchange Server is not
+running, nothing happens and no errors are reported.
+
+NOTE: If the Exchange application is hidden, the new compose message also appears
+hidden. The new compose message only appears if you unhide the Exchange
+application.
+
+You can use this script to create a macro in Microsoft Word to call the script.
+After you create the macro it can appear as a toolbar button or menu command.
+Here is an example of a Word macro:
+
+           Sub MAIN
+     MacScript("exchopendoc")
+     End Sub
+
+NOTE: The macro does not attach the current open Word document. You must save and
+then select the current document when you use the macro with Word.
+
+You can also use this script to make an alias to the AppleScript file and place
+the alias file in your Apple Menu Items folder in the System folder. This allows
+the script to be called from anywhere within the Macintosh operating system.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac kbExchange400Mac
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

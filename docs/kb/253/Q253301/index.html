@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253301: FIX: Regular Users Cannot Open VSS Database on W2K Computers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253301: FIX: Regular Users Cannot Open VSS Database on W2K Computers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253301/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253301/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253301/","publisher":null,"image":null,"headline":"Q253301: FIX: Regular Users Cannot Open VSS Database on W2K Computers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253301-fix-regular-users-cannot-open-vss-database-on-w2k-computers">Q253301: FIX: Regular Users Cannot Open VSS Database on W2K Computers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253301
+Product(s): Microsoft SourceSafe
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbsetup kbOSWin2000 kbSSafe600bug kbDSupport kbGrpDSSSafe kbVS600sp5fix
+Last Modified: 20-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you log in to Visual SourceSafe on a Microsoft Windows 2000-based computer,
+the following error message appears:
+
+  The database does not exist. Please select another.
+
+If you browse to the location of the srcsafe.ini file, select the file, and then
+click OK, you return to a blank list of available SourceSafe databases.
+
+CAUSE
+=====
+
+This behavior occurs because users who are not in the administrator's group have
+read-only permission to the registry key
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe.
+
+RESOLUTION
+==========
+
+To resolve this problem, use Regedt32 to grant full control or special access to
+the registry key.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug has been fixed in Microsoft Visual Studio 6.0 Service Pack 5 (SP5).
+
+To download service pack 5, see the Visual Studio Product Updates page on the
+following Microsoft Web site at:
+
+  http://support.microsoft.com/support/servicepacks/VS/6.0/default.asp?sd=msdn
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Install Visual SourceSafe on a Windows 2000-based computer.
+
+2. Create a regular user with no administrative privileges.
+
+3. Log in to the Windows 2000-based computer as the user you created in step 2.
+
+4. Open the Visual SourceSafe explorer and log in as Admin with no password.
+  Note that you receive the error message listed in the "Symptoms" section.
+
+Additional query words: srcsafe
+
+======================================================================
+Keywords          : kbsetup kbOSWin2000 kbSSafe600bug kbDSupport kbGrpDSSSafe kbVS600sp5fix 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

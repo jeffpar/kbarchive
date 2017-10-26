@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q82650: OLE: SETUP.REG Can Be Used to Repair REG.DAT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q82650: OLE: SETUP.REG Can Be Used to Repair REG.DAT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/082/Q82650/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/082/Q82650/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/082/Q82650/","publisher":null,"image":null,"headline":"Q82650: OLE: SETUP.REG Can Be Used to Repair REG.DAT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q82650-ole-setupreg-can-be-used-to-repair-regdat">Q82650: OLE: SETUP.REG Can Be Used to Repair REG.DAT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q82650
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some object-linking-and-embedding (OLE) servers may provide a text file called
+SETUP.REG, or a similarly-named file. This file contains information about the
+particular server application and can be used to repair an application's entry
+in the Windows REG.DAT file. This is necessary only if you think the entry is
+incorrect or the REG.DAT file is corrupted.
+
+MORE INFORMATION
+================
+
+The REG.DAT file is the registration database. The database is a source of
+information about server applications in a binary format. Information in REG.DAT
+includes:
+
+1. Class name - This describes the type of information contained within an
+  object.
+
+2. The path to the server
+
+3. Any verbs supported by the server - This includes actions the server can take
+  on the object.
+
+The information in REG.DAT is used when you open or print a file from File
+Manager. This information is also used by applications that support OLE. The
+registration database (REG.DAT) is set up and maintained by Windows and Windows
+applications. It is located in the WINDOWS directory. This file should not be
+moved or deleted. Doing so may result in loss of functionality in File Manager,
+Program Manager, and applications that support OLE.
+
+SETUP.REG is a text file that contains the same information as REG.DAT except its
+format is ASCII instead of binary. SETUP.REG can be merged with an existing
+REG.DAT file to repair or update an individual entry in the REG.DAT file. If
+REG.DAT or OLESVR.DLL is damaged or corrupted you may get the following error
+message.
+
+  Failed to register server.
+
+Sample SETUP.REG Entries for PaintBrush
+---------------------------------------
+
+Note: PaintBrush can only act as a server application.
+
+  HKEY_CLASSES_ROOT\.bmp = PBrush
+  HKEY_CLASSES_ROOT\.msp = PBrush
+  HKEY_CLASSES_ROOT\.pcx = PBrush
+  HKEY_CLASSES_ROOT\PBrush = Paintbrush Picture
+  HKEY_CLASSES_ROOT\PBrush\shell\print\command = PBRUSH.EXE /P %1
+  HKEY_CLASSES_ROOT\PBrush\shell\open\command = PBRUSH.EXE %1
+  HKEY_CLASSES_ROOT\PBrush\protocol\StdFileEditing\verb\0 = Edit
+  HKEY_CLASSES_ROOT\PBrush\protocol\StdFileEditing\server = PBRUSH.EXE
+
+Steps to repair REG.DAT with an application's SETUP.REG file:
+
+1. Open Program Manager. From the File menu, choose Run.
+
+2. Type REGEDIT .
+
+3. Choose the OK button.
+
+4. From the File menu, choose Merge Registration File.
+
+5. Select the .REG file that needs to be merged into the existing REG.DAT file.
+
+The Merge Registration File command merges the selected registration (SETUP.REG)
+file with the currently displayed database (REG.DAT). The merged information is
+not written to the REG.DAT file until you choose the Save Changes command.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

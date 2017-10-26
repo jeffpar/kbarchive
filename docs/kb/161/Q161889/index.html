@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161889: XCLN: OST and PST Quick Reference | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161889: XCLN: OST and PST Quick Reference" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161889/","publisher":null,"image":null,"headline":"Q161889: XCLN: OST and PST Quick Reference","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161889-xcln-ost-and-pst-quick-reference">Q161889: XCLN: OST and PST Quick Reference</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161889
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 18-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a quick reference for troubleshooting Microsoft Exchange
+client offline folders (.ost files).
+
+MORE INFORMATION
+================
+
+Definitions
+-----------
+
+OST - Offline Folder Storage - A file that contains a local replica of a user's
+Microsoft Exchange Server-based folders (private and public) and forms. The OST
+is synchronized with the Microsoft Exchange Server copy for use while working
+offline. An OST is specific to a particular mailbox and cannot be accessed by
+other users of Microsoft Exchange Server.
+
+PST - Personal Folder Storage - A file that may contain folders, messages, forms,
+files and other items. You can create any number of PSTs for use with a single
+profile. You can also designate a PST as the delivery location for incoming
+mail.
+
+New Client Installation - If you are installing the Microsoft Exchange client for
+the first time, during the profile creation you will be asked if you travel with
+the computer. If you answer yes, an Offline Store provider is set up for you and
+a file, Exchange.ost, is created. The OST is where the offline folders will be
+stored.
+
+Existing Client Installation - If this is an existing installation of the
+Microsoft Exchange client, you can create an offline store using the Offline
+Folder File Setting button in the Advanced tab of the Microsoft Exchange Server
+driver property page. If multiple users will be using a single computer, each
+user needs his or her own OST file.
+
+Creating an OST
+---------------
+
+How to make a server-based folder available for offline use:
+
+1. Open the folder property sheet; click the folder and on the File menu, click
+  Properties.
+
+2. Click the Synchronization tab and click Available Offline or Online.
+
+After you make a folder available offline, you can easily synchronize that folder
+by using the commands found under Synchronize in the Tools menu.
+
+How to disable an OST:
+
+1. Open the Mail Control Panel.
+
+2. Click the Microsoft Exchange Server service and click Properties.
+
+3. Click the Advanced tab, and then click Offline Folder Settings.
+
+4. Click Disable Offline Use. You may also want to rename the OST file on the
+  local computer.
+
+How to compress an OST:
+
+1. In Control Panel, double-click Mail.
+
+2. Click the Microsoft Exchange Server service and click Properties.
+
+3. Click the Advanced tab, and then click Offline Folder Settings.
+
+4. Click Compact Now.
+
+How to compress a PST:
+
+1. In Control Panel, double-click Mail.
+
+2. Click the Personal Folders service and click Properties.
+
+3. Click Compact Now.
+
+When to use an OST or a PST:
+
+An OST is the preferred method for offline storage, because it allows you to use
+public folders and organizational forms while you work offline. Because an OST
+acts as a copy of Microsoft Exchange Server-based folders, the data is backed up
+during the standard Microsoft Exchange Server backup procedures.
+
+NOTE: The OST is a replica. It is not a backup, and cannot be restored.
+
+A local PST must be backed up by the individual owner. One advantage a PST has is
+the ability to use the remote e-mail features of the Microsoft Exchange Client,
+download headers, move or copy messages, delete unwanted messages before
+downloading, and read new messages while others are downloading. When you use an
+OST, the synchronization process is not multi-threaded.
+
+OST Sync Log:
+
+During the OST synchronization process, a log file is kept, and it is placed in
+the Deleted Items folder at the completion of synchronization. This log file is
+very useful in determining synchronization details and error messages. The
+following are some of the error messages and possible causes:
+
+8004010f - This error message may be caused by any of the following reasons:
+
+- You have changed the language of the Organization Forms registry after the
+  OST was created.
+
+- You have two Microsoft Exchange Server sites, where the first has an
+  Organization Forms registry and the second does not. Unless public folder
+  affinity is set correctly, users in the second site is not able to open the
+  Organization Forms registry and receives this error message.
+
+- You added an Organization Forms registry, but it was later removed. You need
+  to recreate an Organization Forms Library, and then restart the Exchange
+  Server services for the server hosting the mailbox, and synchronize the
+  client again twice.
+
+80030070 - This error message is returned when there is no space left on the
+disk. Free up hard disk space and try again. You may be trying to synchronize
+some large attachments.
+
+80040115 - A network error prevented successful completion of the operation.
+Complete some basic remote procedure call (RPC) network troubleshooting.
+
+User's mailbox deleted from Microsoft Exchange Server:
+
+Because an OST is stamped with a mailbox's unique ID, if a user's mailbox is
+deleted and re-created on the computer running Microsoft Exchange Server, the
+OST file does not synchronize with the new mailbox. The only way to recover the
+data in the OST is to use the following steps exactly before starting the client
+online:
+
+1. Start the Microsoft Exchange Client in offline mode, using the same profile
+  that was used before with the OST.
+
+2. Add a PST to the profile.
+
+3. Copy the messages to the PST.
+
+4. Create a new profile that connects to the new mailbox.
+
+5. Move the messages from the PST to the new mailbox.
+
+
+Additional query words: exfaqclnt exclnfaq
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

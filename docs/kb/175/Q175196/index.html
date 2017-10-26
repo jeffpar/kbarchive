@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175196: FS/CFS: Runway is Not Visible or Game Screen is Black | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175196: FS/CFS: Runway is Not Visible or Game Screen is Black" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175196/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175196/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175196/","publisher":null,"image":null,"headline":"Q175196: FS/CFS: Runway is Not Visible or Game Screen is Black","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175196-fscfs-runway-is-not-visible-or-game-screen-is-black">Q175196: FS/CFS: Runway is Not Visible or Game Screen is Black</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175196
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbui fs98 kbimu msgame
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Flight Simulator 2000 
+- Microsoft Flight Simulator 2000 Professional Edition 
+- Microsoft Flight Simulator 98 
+- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a flight in any of the programs listed at the beginning of this
+article, you may be unable to see the runway.
+
+NOTE: When you press the ALT key or switch to Windows mode, you may be able to
+see the game menus at the top of the screen.
+
+CAUSE
+=====
+
+This behavior can occur if you are not in Cockpit view.
+
+RESOLUTION
+==========
+
+To resolve this behavior, on the Views menu in Flight Simulator, point to View
+Mode and then click Cockpit.
+
+If you are still unable to see the runway when you start a flight, manually edit
+the Fltsim98.cfg, Fs2000.cfg, or Cfs2.cfg file to change the default view to
+Cockpit. To do this:
+
+1. Quit Flight Simulator if it is running.
+
+2. Click Start, point to Find, and then click "Files or Folders".
+
+3. In the Named box, type the appropriate following line for your version of
+  Flight Simulator:
+
+  Combat Flight Simulator 2:
+
+  cfs2.cfg
+
+  Flight Simulator 98:
+
+  fltsim98.cfg
+
+  Flight Simulator 2000:
+
+  fs2000.cfg
+
+4. In the "Look in" box, click My Computer, and then click Find Now.
+
+5. In the list of found files, double-click the Cfs2.cfg, Fltsim98.cfg, or the
+  Fs2000.cfg file.
+
+  If you are prompted to select the program you want to use to open the
+  Cfs2.cfg, Fltsim98.cfg, or Fs2000.cfg file, click Notepad in the "Choose the
+  program you want to use box", and then click OK.
+
+6. On the Search menu in Notepad, click Find.
+
+7. In the Find What box, type "loadwindow" (without the quotation marks), and
+  then click Find Next.
+
+8. When the LOADWINDOW line is highlighted, click Cancel to close the Find
+  dialog box.
+
+  NOTE: If the LOADWINDOW line is not found, you must add it to the [PREFS]
+  section of the file.
+
+9. Change the LOADWINDOW line to match the following line:
+
+  LOADWINDOW=1
+
+NOTE: If the LOADWINDOW= has a value other than 1, the screen is completely black
+when you play the game.
+
+10. On the File menu, click Exit. If you are prompted to save the changes, click
+  Yes.
+
+11. Restart Flight Simulator.
+
+Additional query words: flightsim fltsim flt sim fs98 fs2000 fs2k black dark night view Cockpit scenery cfs2 combatfs
+
+======================================================================
+Keywords          : kbui fs98 kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbCombatFlightSim2 kbCombatFlightSimSearch kbFlightSim2000 kbFlightSim98 kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

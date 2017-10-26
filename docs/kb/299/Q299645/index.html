@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299645: BUG: Error &quot;Unable to Register MSADO15.TLB&quot; If You Use PDW Pkg. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299645: BUG: Error &quot;Unable to Register MSADO15.TLB&quot; If You Use PDW Pkg." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299645/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299645/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299645/","publisher":null,"image":null,"headline":"Q299645: BUG: Error &quot;Unable to Register MSADO15.TLB&quot; If You Use PDW Pkg.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299645-bug-error-unable-to-register-msado15tlb-if-you-use-pdw-pkg">Q299645: BUG: Error "Unable to Register MSADO15.TLB" If You Use PDW Pkg.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q299645</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbwizard</span> <span class="n">kbADO</span> <span class="n">kbAppSetup</span> <span class="n">kbDeployment</span> <span class="n">kbMDAC</span> <span class="n">kbVBp</span> <span class="n">kbVBp600bug</span> <span class="n">kbGrpDSVB</span> <span class="n">kbDSupport</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">12</span><span class="p">-</span><span class="n">JUN</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Professional</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">use</span> <span class="n">a</span> <span class="k">package</span> <span class="n">that</span> <span class="n">you</span> <span class="n">created</span> <span class="k">with</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span>
+<span class="p">(</span><span class="n">PDW</span><span class="p">)</span> <span class="k">to</span> <span class="n">install</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">application</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">receive</span> <span class="n">the</span> <span class="n">following</span> <span class="n">error</span>
+<span class="n">message</span> <span class="p">(</span><span class="k">or</span> <span class="n">similar</span><span class="p">)</span> <span class="n">during</span> <span class="n">the</span> <span class="n">installation</span><span class="p">:</span>
+
+  <span class="n">Unable</span> <span class="k">to</span> <span class="n">register</span> <span class="n">MSADO15</span><span class="p">.</span><span class="n">TLB</span>
+
+<span class="n">This</span> <span class="n">error</span> <span class="n">message</span> <span class="n">may</span> <span class="n">reference</span> <span class="n">any</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">files</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">MSADO15</span><span class="p">.</span><span class="n">TLB</span>
+<span class="p">-</span> <span class="n">MSADO20</span><span class="p">.</span><span class="n">TLB</span>
+<span class="p">-</span> <span class="n">MSADO21</span><span class="p">.</span><span class="n">TLB</span>
+<span class="p">-</span> <span class="n">MSADO25</span><span class="p">.</span><span class="n">TLB</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">The</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="n">adds</span> <span class="n">the</span> <span class="n">type</span> <span class="n">library</span> <span class="p">(.</span><span class="n">tlb</span><span class="p">)</span> <span class="n">file</span> <span class="k">to</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">because</span> <span class="n">the</span> <span class="n">type</span> <span class="n">library</span> <span class="n">is</span> <span class="n">referenced</span> <span class="k">in</span> <span class="n">your</span> <span class="n">project</span><span class="p">.</span> <span class="n">The</span> <span class="n">PDW</span> <span class="n">also</span>
+<span class="n">erroneously</span> <span class="n">assigns</span> <span class="n">the</span> <span class="p">$(</span><span class="n">DLLSelfRegister</span><span class="p">)</span> <span class="n">registration</span> <span class="n">macro</span> <span class="k">to</span> <span class="n">the</span> <span class="n">type</span>
+<span class="n">library</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">file</span> <span class="n">that</span> <span class="n">is</span> <span class="n">created</span> <span class="n">for</span> <span class="n">your</span> <span class="n">installation</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="n">Most</span> <span class="n">commonly</span><span class="p">,</span> <span class="n">this</span> <span class="n">problem</span> <span class="n">occurs</span> <span class="n">when</span> <span class="n">your</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">project</span> <span class="n">contains</span> <span class="n">a</span>
+<span class="n">reference</span> <span class="k">to</span> <span class="n">a</span> <span class="k">version</span> <span class="k">of</span> <span class="n">ActiveX</span> <span class="n">Data</span> <span class="n">Objects</span> <span class="p">(</span><span class="n">ADO</span><span class="p">)</span> <span class="n">that</span> <span class="n">is</span> <span class="n">earlier</span> <span class="n">than</span> <span class="n">the</span>
+<span class="n">latest</span> <span class="n">installed</span> <span class="k">version</span><span class="p">.</span> <span class="n">The</span> <span class="n">reference</span> <span class="n">for</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">installed</span> <span class="k">version</span> <span class="k">of</span> <span class="n">ADO</span>
+<span class="n">points</span> <span class="k">to</span> <span class="n">MSADO15</span><span class="p">.</span><span class="n">DLL</span><span class="p">.</span> <span class="n">Earlier</span> <span class="k">version</span> <span class="n">references</span> <span class="n">point</span> <span class="k">to</span> <span class="n">the</span> <span class="n">above</span><span class="p">-</span><span class="n">mentioned</span>
+<span class="n">ADO</span> <span class="n">type</span> <span class="n">library</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="n">RESOLUTION</span>
+<span class="p">==========</span>
+
+<span class="n">This</span> <span class="n">file</span> <span class="n">does</span> <span class="k">not</span> <span class="n">need</span> <span class="k">to</span> <span class="n">be</span> <span class="n">explicitly</span> <span class="n">included</span> <span class="k">in</span> <span class="n">your</span> <span class="k">package</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">have</span> <span class="n">a</span>
+<span class="n">reference</span> <span class="k">to</span> <span class="n">an</span> <span class="n">ADO</span> <span class="n">type</span> <span class="n">library</span> <span class="k">in</span> <span class="n">your</span> <span class="n">project</span><span class="p">,</span> <span class="n">you</span> <span class="n">are</span> <span class="n">utilizing</span> <span class="n">ADO</span> <span class="k">in</span> <span class="n">your</span>
+<span class="n">application</span> <span class="k">and</span> <span class="n">must</span> <span class="n">distribute</span> <span class="n">Microsoft</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">Components</span> <span class="p">(</span><span class="n">MDAC_TYP</span><span class="p">.</span><span class="n">EXE</span><span class="p">).</span>
+<span class="n">The</span> <span class="n">only</span> <span class="n">exception</span> <span class="n">is</span> <span class="k">if</span> <span class="n">you</span> <span class="n">can</span> <span class="n">guarantee</span> <span class="n">that</span> <span class="n">the</span> <span class="n">correct</span> <span class="k">version</span> <span class="k">of</span> <span class="n">MDAC</span> <span class="n">will</span>
+<span class="n">already</span> <span class="n">be</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">your</span> <span class="n">target</span> <span class="n">computers</span><span class="p">.</span> <span class="n">Because</span> <span class="n">the</span> <span class="n">MDAC</span> <span class="n">installer</span>
+<span class="n">includes</span> <span class="n">the</span> <span class="n">type</span> <span class="n">library</span><span class="p">,</span> <span class="n">there</span> <span class="n">is</span> <span class="n">no</span> <span class="n">reason</span> <span class="k">to</span> <span class="k">include</span> <span class="n">it</span> <span class="n">specifically</span><span class="p">.</span>
+
+<span class="n">There</span> <span class="n">are</span> <span class="n">several</span> <span class="n">ways</span> <span class="k">to</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span><span class="p">.</span> <span class="n">Which</span> <span class="n">method</span> <span class="n">you</span> <span class="n">use</span> <span class="n">depends</span> <span class="n">on</span>
+<span class="n">your</span> <span class="n">circumstances</span> <span class="k">and</span> <span class="n">whether</span> <span class="n">it</span> <span class="n">is</span> <span class="n">convenient</span> <span class="n">for</span> <span class="n">you</span> <span class="k">to</span> <span class="n">repackage</span> <span class="n">the</span>
+<span class="n">application</span><span class="p">.</span> <span class="k">In</span> <span class="n">Resolutions</span> <span class="m">1</span> <span class="k">and</span> <span class="m">2</span><span class="p">,</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">have</span> <span class="k">to</span> <span class="n">repackage</span> <span class="n">the</span>
+<span class="n">application</span><span class="p">.</span> <span class="n">Resolutions</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="k">and</span> <span class="m">5</span> <span class="n">require</span> <span class="n">repackaging</span><span class="p">.</span> <span class="n">Resolutions</span> <span class="m">4</span> <span class="k">and</span> <span class="m">5</span>
+<span class="n">are</span> <span class="n">the</span> <span class="n">only</span> <span class="n">long</span><span class="p">-</span><span class="n">term</span> <span class="n">fixes</span> <span class="k">and</span> <span class="n">are</span> <span class="n">recommended</span><span class="p">.</span>
+
+<span class="n">Resolution</span> <span class="m">1</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Locate</span> <span class="n">the</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">file</span> <span class="n">for</span> <span class="n">your</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">any</span> <span class="n">text</span> <span class="n">editor</span><span class="p">,</span> <span class="n">open</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="k">In</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span><span class="p">,</span> <span class="n">locate</span> <span class="n">the</span> <span class="n">line</span> <span class="n">that</span> <span class="n">references</span> <span class="n">the</span> <span class="n">ADO</span> <span class="n">type</span> <span class="n">library</span> <span class="n">that</span> <span class="n">is</span>
+  <span class="n">referenced</span> <span class="k">in</span> <span class="n">the</span> <span class="n">error</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span> <span class="n">Notepad</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">search</span> <span class="n">for</span> <span class="n">the</span>
+  <span class="n">file</span> <span class="n">name</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Change</span> <span class="p">$(</span><span class="n">DLLSelfRegister</span><span class="p">)</span> <span class="k">to</span> <span class="p">$(</span><span class="n">TLBRegister</span><span class="p">).</span>
+
+<span class="m">5.</span> <span class="n">Save</span> <span class="n">the</span> <span class="n">file</span><span class="p">,</span> <span class="k">and</span> <span class="n">try</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">again</span><span class="p">.</span>
+
+<span class="n">Resolution</span> <span class="m">2</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Locate</span> <span class="n">the</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span> <span class="n">file</span> <span class="n">for</span> <span class="n">your</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">any</span> <span class="n">text</span> <span class="n">editor</span><span class="p">,</span> <span class="n">open</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="k">In</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span><span class="p">,</span> <span class="n">locate</span> <span class="n">the</span> <span class="n">line</span> <span class="n">that</span> <span class="n">references</span> <span class="n">the</span> <span class="n">ADO</span> <span class="n">type</span> <span class="n">library</span> <span class="n">that</span> <span class="n">is</span>
+  <span class="n">referenced</span> <span class="k">in</span> <span class="n">the</span> <span class="n">error</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span> <span class="n">Notepad</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">search</span> <span class="n">for</span> <span class="n">the</span>
+  <span class="n">file</span> <span class="n">name</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Delete</span> <span class="n">this</span> <span class="n">line</span> <span class="k">from</span> <span class="n">Setup</span><span class="p">.</span><span class="n">lst</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">the</span> <span class="n">File</span><span class="p">##=</span> <span class="n">statements</span> <span class="n">are</span> <span class="n">sequential</span><span class="p">,</span> <span class="k">and</span><span class="p">,</span> <span class="k">if</span> <span class="n">necessary</span><span class="p">,</span>
+  <span class="n">renumber</span> <span class="n">the</span> <span class="n">lines</span> <span class="n">after</span> <span class="n">the</span> <span class="n">line</span> <span class="n">that</span> <span class="n">you</span> <span class="n">deleted</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Save</span> <span class="n">the</span> <span class="n">file</span><span class="p">,</span> <span class="k">and</span> <span class="n">try</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">again</span><span class="p">.</span>
+
+<span class="n">Resolution</span> <span class="m">3</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Start</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">,</span> <span class="k">and</span> <span class="n">open</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">script</span> <span class="k">if</span> <span class="n">it</span>
+  <span class="n">was</span> <span class="n">saved</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Complete</span> <span class="n">the</span> <span class="n">steps</span> <span class="k">in</span> <span class="n">the</span> <span class="n">wizard</span> <span class="k">until</span> <span class="n">you</span> <span class="n">reach</span> <span class="n">the</span> <span class="s2">"Package and Deployment
+  Wizard - Included Files"</span> <span class="n">page</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Clear</span> <span class="n">the</span> <span class="n">check</span> <span class="n">box</span> <span class="k">next</span> <span class="k">to</span> <span class="n">the</span> <span class="n">ADO</span> <span class="n">type</span> <span class="n">library</span> <span class="n">that</span> <span class="n">is</span> <span class="n">referenced</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="n">error</span> <span class="n">message</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Complete</span> <span class="n">the</span> <span class="n">steps</span> <span class="k">to</span> <span class="n">repackage</span> <span class="n">the</span> <span class="n">application</span><span class="p">,</span> <span class="k">and</span> <span class="n">try</span> <span class="n">the</span> <span class="n">installation</span>
+  <span class="n">again</span><span class="p">.</span>
+
+<span class="n">Resolution</span> <span class="m">4</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Locate</span> <span class="n">the</span> <span class="n">VB6DEP</span><span class="p">.</span><span class="n">ini</span> <span class="n">file</span><span class="p">.</span> <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">this</span> <span class="n">file</span> <span class="n">is</span> <span class="n">located</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="n">C</span><span class="p">:\</span><span class="n">Program</span> <span class="n">Files</span><span class="p">\</span><span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Studio</span><span class="p">\</span><span class="n">VB98</span><span class="p">\</span><span class="n">Wizards</span><span class="p">\</span><span class="n">PDWizard</span><span class="p">\</span> <span class="n">folder</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">any</span> <span class="n">text</span> <span class="n">editor</span><span class="p">,</span> <span class="n">open</span> <span class="n">VB6DEP</span><span class="p">.</span><span class="n">ini</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Locate</span> <span class="n">the</span> <span class="p">[</span><span class="k">Do</span> <span class="k">Not</span> <span class="n">Redistribute</span><span class="p">]</span> <span class="n">section</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Add</span> <span class="n">the</span> <span class="n">following</span> <span class="n">lines</span> <span class="k">to</span> <span class="n">the</span> <span class="p">[</span><span class="k">Do</span> <span class="k">Not</span> <span class="n">Redistribute</span><span class="p">]</span> <span class="n">section</span><span class="p">:</span>
+
+  
+
+  <span class="n">MSADO15</span><span class="p">.</span><span class="n">TLB</span><span class="p">=</span>
+  <span class="n">MSADO20</span><span class="p">.</span><span class="n">TLB</span><span class="p">=</span>
+  <span class="n">MSADO21</span><span class="p">.</span><span class="n">TLB</span><span class="p">=</span>
+  <span class="n">MSADO25</span><span class="p">.</span><span class="n">TLB</span><span class="p">=</span>
+
+<span class="m">5.</span> <span class="n">Save</span> <span class="n">the</span> <span class="n">file</span><span class="p">,</span> <span class="k">and</span> <span class="n">close</span> <span class="n">the</span> <span class="n">text</span> <span class="n">editor</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Repackage</span> <span class="n">your</span> <span class="n">application</span><span class="p">,</span> <span class="k">and</span> <span class="n">try</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">again</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">This</span> <span class="n">method</span> <span class="n">prevents</span> <span class="n">the</span> <span class="n">problem</span> <span class="k">from</span> <span class="n">reoccurring</span><span class="p">.</span>
+
+<span class="n">Resolution</span> <span class="m">5</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Open</span> <span class="n">your</span> <span class="n">project</span> <span class="k">in</span> <span class="n">Visual</span> <span class="n">Basic</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">From</span> <span class="n">the</span> <span class="n">Project</span> <span class="n">menu</span><span class="p">,</span> <span class="n">click</span> <span class="n">References</span><span class="p">.</span> <span class="n">Note</span> <span class="n">the</span> <span class="k">version</span> <span class="k">of</span> <span class="n">Microsoft</span>
+  <span class="n">ActiveX</span> <span class="n">Data</span> <span class="n">Objects</span> <span class="n">Library</span> <span class="n">that</span> <span class="n">is</span> <span class="n">selected</span><span class="p">,</span> <span class="k">and</span> <span class="n">select</span> <span class="n">the</span> <span class="n">check</span> <span class="n">box</span> <span class="n">for</span>
+  <span class="n">the</span> <span class="n">ADO</span> <span class="n">reference</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="n">reference</span> <span class="n">points</span> <span class="k">to</span> <span class="n">a</span> <span class="p">.</span><span class="n">tlb</span> <span class="n">file</span><span class="p">,</span> <span class="n">clear</span> <span class="n">the</span> <span class="n">check</span>
+  <span class="n">box</span><span class="p">.</span> <span class="n">Scroll</span> <span class="n">the</span> <span class="k">list</span> <span class="k">to</span> <span class="n">find</span> <span class="n">the</span> <span class="n">other</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">ADO</span><span class="p">,</span> <span class="n">select</span> <span class="n">the</span> <span class="n">latest</span>
+  <span class="k">version</span> <span class="n">that</span> <span class="n">points</span> <span class="k">to</span> <span class="n">MSADO15</span><span class="p">.</span><span class="n">DLL</span><span class="p">,</span> <span class="k">and</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Test</span> <span class="n">the</span> <span class="n">project</span> <span class="k">to</span> <span class="n">confirm</span> <span class="n">that</span> <span class="n">the</span> <span class="n">ADO</span> <span class="n">features</span> <span class="n">still</span> <span class="n">work</span> <span class="n">properly</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Save</span> <span class="n">the</span> <span class="n">project</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">build</span> <span class="n">the</span> <span class="n">EXE</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Repackage</span> <span class="n">your</span> <span class="n">application</span><span class="p">,</span> <span class="k">and</span> <span class="n">try</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">again</span><span class="p">.</span>
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">this</span> <span class="k">to</span> <span class="n">be</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span>
+<span class="n">Wizard</span> <span class="n">for</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="m">6.0</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">The</span> <span class="n">error</span> <span class="n">is</span> <span class="n">raised</span> <span class="n">because</span> <span class="n">the</span> <span class="n">PDW</span> <span class="n">attempts</span> <span class="k">to</span> <span class="n">use</span> <span class="p">$(</span><span class="n">DLLSelfRegister</span><span class="p">)</span> <span class="n">for</span> <span class="n">type</span>
+<span class="n">libraries</span> <span class="n">rather</span> <span class="n">than</span> <span class="p">$(</span><span class="n">TLBRegister</span><span class="p">).</span> <span class="n">However</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">receive</span> <span class="n">this</span> <span class="n">error</span> <span class="n">during</span>
+<span class="n">installation</span><span class="p">,</span> <span class="n">it</span> <span class="n">does</span> <span class="k">not</span> <span class="n">necessarily</span> <span class="n">mean</span> <span class="n">that</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">will</span> <span class="n">fail</span><span class="p">.</span> <span class="n">It</span>
+<span class="n">also</span> <span class="n">does</span> <span class="k">not</span> <span class="n">mean</span> <span class="n">that</span> <span class="n">the</span> <span class="n">application</span> <span class="n">will</span> <span class="k">not</span> <span class="nf">run</span> <span class="n">after</span> <span class="n">installation</span><span class="p">.</span> <span class="n">This</span>
+<span class="n">error</span> <span class="n">does</span> <span class="n">indicate</span> <span class="n">that</span> <span class="n">you</span> <span class="n">may</span> <span class="n">have</span> <span class="n">a</span> <span class="n">different</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="n">ADO</span> <span class="n">type</span>
+<span class="n">library</span> <span class="n">referenced</span> <span class="k">in</span> <span class="n">your</span> <span class="n">project</span> <span class="n">than</span> <span class="n">you</span> <span class="n">are</span> <span class="n">distributing</span> <span class="k">with</span> <span class="n">your</span>
+<span class="n">application</span><span class="p">.</span> <span class="n">This</span> <span class="n">can</span> <span class="n">potentially</span> <span class="n">cause</span> <span class="n">other</span> <span class="n">problems</span><span class="p">,</span> <span class="n">so</span> <span class="n">Microsoft</span> <span class="n">recommends</span>
+<span class="n">that</span> <span class="n">you</span> <span class="n">verify</span> <span class="n">the</span> <span class="k">version</span> <span class="n">information</span><span class="p">.</span> <span class="n">See</span> <span class="n">the</span> <span class="s2">"References"</span> <span class="n">section</span> <span class="n">for</span>
+<span class="n">additional</span> <span class="n">information</span><span class="p">.</span>
+
+<span class="n">REFERENCES</span>
+<span class="p">==========</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">numbers</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">articles</span>
+<span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q217754</span> <span class="n">HOWTO</span><span class="p">:</span> <span class="n">Control</span> <span class="n">Which</span> <span class="n">MDAC</span> <span class="k">Version</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span>
+  <span class="p">(</span><span class="n">PDW</span><span class="p">)</span> <span class="n">Distributes</span>
+
+  <span class="n">Q213846</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">Deploy</span> <span class="n">Database</span> <span class="n">Applications</span> <span class="k">with</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span>
+  <span class="n">Wizard</span> <span class="p">(</span><span class="n">PDW</span><span class="p">)</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">MSADO15</span> <span class="n">MSADO20</span> <span class="n">MSADO21</span> <span class="n">MSADO25</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbwizard</span> <span class="n">kbADO</span> <span class="n">kbAppSetup</span> <span class="n">kbDeployment</span> <span class="n">kbMDAC</span> <span class="n">kbVBp</span> <span class="n">kbVBp600bug</span> <span class="n">kbGrpDSVB</span> <span class="n">kbDSupport</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbVBSearch</span> <span class="n">kbAudDeveloper</span> <span class="n">kbZNotKeyword6</span> <span class="n">kbZNotKeyword2</span> <span class="n">kbVB600Search</span> <span class="n">kbVBA600</span> <span class="n">kbVB600</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">6.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbbug</span>
+<span class="n">Solution</span> <span class="n">Type</span>     <span class="p">:</span> <span class="n">kbpending</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

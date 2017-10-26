@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248055: BUG: Run-Time Error 713 Opening Data Report in Distributed App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248055: BUG: Run-Time Error 713 Opening Data Report in Distributed App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248055/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248055/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248055/","publisher":null,"image":null,"headline":"Q248055: BUG: Run-Time Error 713 Opening Data Report in Distributed App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248055-bug-run-time-error-713-opening-data-report-in-distributed-app">Q248055: BUG: Run-Time Error 713 Opening Data Report in Distributed App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248055
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbwizard kbAppSetup kbDatabase kbDataBinding kbDeployment kbReportWriter kbVBp kbVBp600
+Last Modified: 30-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are distributing a Visual Basic application that includes a data report.
+After installation, you receive the following error when you attempt to open the
+data report from your application:
+
+  Run-time error '713': Application-defined or object defined error
+
+CAUSE
+=====
+
+The Data Report run-time file (Msdbrptr.dll) was not included in your setup
+package.
+
+RESOLUTION
+==========
+
+To resolve this problem, use one of the following methods:
+
+- Open your project, and include a reference to the Msdbrptr.dll file. This
+  file is listed as Microsoft Data Report Designer v6.0 in the References
+  dialog box. You may see Microsoft Data Report Designer v6.0 listed more than
+  once. Make certain that the file associated with the reference is
+  Msdbrptr.dll. Once the reference has been verified, rebuild your setup
+  package.
+
+  -or-
+
+- Manually include the Msdbrptr.dll file in the Package and Deployment Wizard
+  (PDW). You can add the file manually in the Included Files dialog box window
+  when you run the PDW and then rebuild your setup package.
+
+After the installation, the following files should be present on the target
+system in the indicated folders:
+
+  &lt;windows system&gt;\Msdbrptr.dll
+  &lt;program files&gt;\Common Files\Designers\Msderun.dll
+  &lt;windows system&gt;\Msstdfmt.dll
+
+The inclusion of Msdbrptr.dll (and its dependent files) typically corrects this
+problem. If you are still experiencing problems, make sure that the following
+files are included in your package:
+
+  Msdatrep.ocx
+  Msbind.dll
+
+Data Reports do not directly depend on these files. However, if the files are
+missing, this can affect the Data Environment that is used by your report.
+
+NOTE: If your application must have the Msdatsrc.tlb file, do not explicitly
+include this file because Msdatsrc.tlb is installed as part of the Microsoft
+Data Access Components (MDAC) upgrade.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Visual Basic installs two files, Msdbrpt.dll and MSdbrptr.dll, that are very
+similar. Both files are listed in the References dialog box as Microsoft Data
+Report Designer v6.0. The Msdbrpt.dll file is the Data Report designer, and the
+Msdbrptr.dll file is the Data Report designer runtime. You must distribute the
+run-time version of this file with your application. There is no dependency file
+for Msdbrpt.dll. If Msdbrpt.dll is installed with your application, a data
+report does not function correctly.
+
+There are several ways in which to add a data report to a Visual Basic project.
+With two known exceptions, Visual Basic adds the correct reference. If you add
+this reference manually, the similarity between these two files makes it easy to
+reference the wrong file. The other way to get an incorrect reference is to add
+the data report component through the Add Components dialog box. This adds a
+reference to the data report instead of the data report runtime file. Under
+these circumstances, the data report works only in the development environment
+or when the data report is installed to a computer that has Visual Basic
+installed.
+
+Additional query words: DataReport
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbDatabase kbDataBinding kbDeployment kbReportWriter kbVBp kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

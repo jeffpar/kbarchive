@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148882: PRB: Visual C++ 4.0 or 4.1 Setup Fails to Copy Shared DLLs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148882: PRB: Visual C++ 4.0 or 4.1 Setup Fails to Copy Shared DLLs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148882/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148882/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148882/","publisher":null,"image":null,"headline":"Q148882: PRB: Visual C++ 4.0 or 4.1 Setup Fails to Copy Shared DLLs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148882-prb-visual-c-40-or-41-setup-fails-to-copy-shared-dlls">Q148882: PRB: Visual C++ 4.0 or 4.1 Setup Fails to Copy Shared DLLs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148882
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbenv kbsetup
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Visual C++ 4.x in either Windows 95 or Windows NT, it is
+possible for setup to fail while copying certain shared DLLs. The DLLs that
+don't copy successfully will most likely be one of these:
+
+  MSVCRT20.DLL   MSVCRT40.DLL
+  ODBCCP32.DLL   ODBC32.DLL    ODBCINT.DLL
+
+When setup fails, it displays a dialog box that looks similar to this:
+
+  
+
+  Setup cannot open the destination file
+  'C:\Windows\System\Msvcrt20.dll'. The file may be in use by
+  another application, or marked read-only. Close the application
+  or change the file's read-only attribute and try again.
+
+-or-
+
+  
+
+  Cannot install file C:\Windows\System\Odbc32.dll. It might be
+  in use. Try closing all applications and choosing Retry.
+
+Both dialog boxes offer a chance to Abort, Retry, or Ignore.
+
+CAUSE
+=====
+
+Many applications use shared DLLs. If the setup program tries to copy a DLL over
+another DLL that has the same name while that DLL is in use by another program,
+the setup program will fail.
+
+For example, the Windows 95 Explorer uses Msvcrt20.dll, so if the Explorer is not
+closed before running Visual C++ 4.x setup, you could see the problem. You may
+also see the problem when running The Internet Information Server as it also
+uses some of these DLLs.
+
+RESOLUTION
+==========
+
+
+Here are several possible resolutions:
+
+1. The best resolution is to make sure no other applications are running when
+  you install Visual C++ 4.x. To do this, close all applications, and check the
+  task list to make sure nothing is running. Under Windows 95, you can make
+  sure other processes are not running by restarting your computer; hold down
+  the SHIFT key as Windows 95 restarts to bypass the startup group.
+
+2. An additional workaround is to start Visual C++ Setup in the following
+  manner:
+
+   - Under Windows 95:
+
+     Close all applications including Explorer. Run setup from an MS-DOS window.
+     If you are installing from the network, map to that drive.
+
+   - Under Windows NT 3.51:
+
+     Close all applications. Run setup from File Manager or a DOS window.
+
+3. If all applications are closed, but the error still occurs, make sure that
+  you close the Master Setup window; it uses Msvcrt20.dll.
+
+4. If the problem persists, it is generally safe to click Ignore, and continue
+  with the installation. However, remember to manually copy the files from the
+  Visual C++ CD-ROM that failed to copy during the setup.
+
+5. Another slightly riskier way to work around the problem is to rename the
+  offending DLL from the system directory. Once the installation completes,
+  restart your computer to cause the new version to be loaded.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

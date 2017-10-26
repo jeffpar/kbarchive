@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165282: Err Msg: This Version of Msvcrt40.dll Is Intended for Win32s… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165282: Err Msg: This Version of Msvcrt40.dll Is Intended for Win32s…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165282/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165282/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165282/","publisher":null,"image":null,"headline":"Q165282: Err Msg: This Version of Msvcrt40.dll Is Intended for Win32s…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165282-err-msg-this-version-of-msvcrt40dll-is-intended-for-win32s">Q165282: Err Msg: This Version of Msvcrt40.dll Is Intended for Win32s…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165282
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 2,2.1
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup osr1 osr2 win95
+Last Modified: 26-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Setup for a Windows-based program, you may receive the following
+error message:
+
+  This version of MSVCRT40.DLL is intended for Win32s only.
+
+Setup then quits and the program does not run. Or, you may receive the error
+message after you upgrade from Windows 3.x to Windows 95.
+
+CAUSE
+=====
+
+The Msvcrt40.dll file in the Windows\System folder is not the version required
+by the program.
+
+RESOLUTION
+==========
+
+If you receive this message when you are installing Microsoft Publisher 97, see
+the following article in the Microsoft Knowledge Base:
+
+  Q165642 PUB97: Publisher Setup Quits after Msvcrt40.dll Error Message
+
+Otherwise, you need to find and rename all occurrences of the Msvcrt40.dll file
+by following these steps:
+
+1. Click the Start button, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "msvcrt40.dll" (without the quotation marks).
+
+3. Select the Include Subfolders check box, and then click Find Now. At least
+  one copy of the Msvcrt40.dll file should be found in the Windows\System
+  folder. There may be other copies of the file.
+
+4. Click the copy of the Msvcrt40.dll file in the Windows\System folder, and
+  then click Rename on the File menu.
+
+5. Type a new name (such as Msvcrt40.old).
+
+6. Repeat steps 4-5 for each copy of the file found.
+
+7. On the File menu, click Close.
+
+8. Run the program's Setup program again. This should restore the correct file.
+
+  NOTE: If you are using Microsoft Internet Explorer version 4.0, or 4.01 you
+  may now need to extract the Msvcrt40.dll file from the Ie4mfc40.cab file. For
+  information about using the Extract command, please see the following article
+  in the Microsoft Knowledge Base:
+
+  Q129605 How to Extract Original Compressed Windows Files
+
+Note that if any of the Msvcrt40.dll files are in use by Windows, it may be
+necessary to restart the computer to an MS-DOS prompt to rename the file. To do
+so, follow these steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+  F8, and then select "Safe Mode Command Prompt Only".
+
+2. Rename all copies of the Msvcrt40.dll file to Msvcrt40.old.
+
+3. Restart your computer normally.
+
+NOTE: This error does not occur if you are running Microsoft Windows NT
+Workstation version 4.0. If you have Windows NT 4.0, do not replace
+Msvcrt40.dll.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup osr1 osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

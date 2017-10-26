@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q315579: &quot;HTTP Error 403&quot;Err Msg When Password Changed w/OWA or Iisadmpwd | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q315579: &quot;HTTP Error 403&quot;Err Msg When Password Changed w/OWA or Iisadmpwd" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/315/Q315579/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/315/Q315579/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/315/Q315579/","publisher":null,"image":null,"headline":"Q315579: &quot;HTTP Error 403&quot;Err Msg When Password Changed w/OWA or Iisadmpwd","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q315579-http-error-403err-msg-when-password-changed-wowa-or-iisadmpwd">Q315579: "HTTP Error 403"Err Msg When Password Changed w/OWA or Iisadmpwd</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q315579
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to change a password in Outlook Web Access (OWA) or browse one
+of the .htr files directly, or if you try to execute a Common Gateway Interface
+(CGI), Internet Server Application Programming Interface (ISAPI), or other
+executable program from a directory that does not allow programs to be executed,
+you may receive the following error message in the Web browser:
+
+  HTTP Error 403
+
+  403.1 Forbidden: Execute Access Forbidden
+
+CAUSE
+=====
+
+The Iisadmpwd virtual directory in the Internet Service Manager does not have
+script permissions.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Open the Internet Service Manager Microsoft Management Console (MMC).
+
+2. Right-click the Iisadmpwd virtual directory and then click Properties.
+
+3. On the Virtual Directory tab, change the permissions from none to script.
+
+NOTE: By default, IISADMPWD is installed as a physical folder under Microsoft
+Windows 2000, but not as a virtual directory under Internet Information Services
+(IIS) version 5.0. Because of this, IIS does not recognize that the directory
+exists. For additional information, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q268419 HOWTO: Enable Password Change Functionality for OWA
+
+If the problem persists, contact the administrator of the Web server.
+
+MORE INFORMATION
+================
+
+IIS 4.0 includes the capability that allows a Microsoft Windows NT 4.0 user to
+change passwords and to receive notification when a password is about to expire.
+IIS installs this functionality in the IISADMPWD virtual directory of the
+default Web site. This feature is implemented as a set of .htr files that are
+located in the %system%\System32\Inetsrv\Iisadmpwd directory and the ISAPI
+Ism.dll extension file.
+
+For more information about how to configure IIS to support password changes, view
+the "Notifying Clients of Password Status" topic in the Windows NT 4.0 Option
+Pack documentation.
+
+For more information, see the following Knowledge Base article:
+
+  Q184058 Unable to Change Password Using the IIS 4.0 Change Password Feature
+
+Additional query words: IIS4 IIS5 HTR
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169014: How to Setup for a Remote Debug | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169014: How to Setup for a Remote Debug" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169014/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169014/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169014/","publisher":null,"image":null,"headline":"Q169014: How to Setup for a Remote Debug","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169014-how-to-setup-for-a-remote-debug">Q169014: How to Setup for a Remote Debug</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169014
+Product(s): Internet Information Server
+Version(s): 2.0,3.0
+Operating System(s): 
+Keyword(s): kbother
+Last Modified: 10-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to setup a remote debug for troubleshooting problems
+with your Internet Information Server (IIS). These steps should be followed
+after you consult a Microsoft Support Professional and you agree that a debug is
+necessary.
+
+MORE INFORMATION
+================
+
+Process 1 - To install the symbol files
+---------------------------------------
+
+This process should be used to enhance the output log of a Dr. Watson file. It
+should also be used in conjunction with Process 2 for a remote debug.
+
+1. Make sure you are running the latest Service Pack (SP) update to Microsoft
+  Windows NT Server.
+
+2. Obtain the latest Service Pack symbols file from the Service Pack compact
+  disc.
+
+3. If you install from the downloaded symbols file, type in the following
+  command to install them:
+
+      Filename -d Install Path
+
+
+  where Filename is the downloaded file, and Install Path is the path to your
+  Windows NT Server directory with \Symbols appended. For example, Sym_400I.exe
+  -d C:\Winnt\Symbols.
+
+4. If you install from the SP compact disc, copy all subdirectories from the
+  Support\Debug\Symbols directory to the Winnt\Symbols directory.
+
+Process 2 - To set up for a debug
+---------------------------------
+
+1. Create a directory called Debug under your Windows NT directory.
+
+2. Unzip and copy the following files (from the Windows NT Resource Kit) to the
+  debug directory you created:
+
+      Tlist.exe (in the \Compdiag directory)
+      Remote.exe (in the \Netadmin directory)
+
+
+  If you do not have the resource kit, you can obtain these files from your
+  Microsoft Support Professional.
+
+3. Copy the .Exe and .Dll files located on the Windows NT compact disc
+  (\Support\Debug\) to the Debug directory.
+
+4. Start a command window and change into your debug directory.
+
+5. Use Tlist.exe file to list the processes. Make a note of the ID for the
+  Inetinfo.exe process. It is the number to the left of the process.
+
+6. Type in the following command (leaving quotes in place):
+
+      Remote /s "cdb -p " debug
+
+
+7. At the debug prompt, type the following:
+
+      .logopen c:\debug.txt
+
+
+8. Press g and ENTER to restart the inet service.
+
+9. Minimize the command window and wait for the server to stop. Contact your
+  Support Professional, and then start the remote session.
+
+Process 3 - To set up RAS
+-------------------------
+
+1. Make sure you have RAS service installed on a Windows NT Server on the
+  network.
+
+2. Make sure that the RAS is set up to receive incoming calls.
+
+3. Create a user account that is a member of the administrators group. Ensure
+  that the user has dial-in privileges.
+
+Process 4 - To create a debug file
+----------------------------------
+
+These steps can be used in case you get a crash, and you need to restart the
+computer before a Debug engineer can get back in touch with you.
+
+1. In the debug window, type the following:
+
+     kv
+
+2. Type the following:
+
+     .logclose
+
+3. Type q
+
+4. You can now restart the server and mail the log file to the Support Engineer
+  you are working with.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : :2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

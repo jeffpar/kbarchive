@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q292296: &quot;Cannot find server&quot; or &quot;DNS&quot; Errors When Using SSL (Q &amp; A) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q292296: &quot;Cannot find server&quot; or &quot;DNS&quot; Errors When Using SSL (Q &amp; A)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/292/Q292296/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/292/Q292296/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/292/Q292296/","publisher":null,"image":null,"headline":"Q292296: &quot;Cannot find server&quot; or &quot;DNS&quot; Errors When Using SSL (Q &amp; A)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q292296-cannot-find-server-or-dns-errors-when-using-ssl-q--a">Q292296: "Cannot find server" or "DNS" Errors When Using SSL (Q &amp; A)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q292296
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 16-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "Cannot find server" or "DNS error" browser error messages are symptoms of
+several different problems. This article lists some of the more common reasons
+this error may occur when the Web site is using Secure Sockets Layer (SSL) and
+is therefore accessed by using https://.
+
+MORE INFORMATION
+================
+
+- Was the Web server certificate part of an export or import process?
+
+There is a known problem during the import process in which the wrong
+cryptographic service provider (CSP) is chosen. You may also see an Schannel
+Event ID: 36871 message. For additional information, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q261655 Cannot Make an SSL Connection After Exporting and Importing an Server
+  Certificate
+
+- Is the Web Server running Windows 2000, and has the Web server certificate
+  recently renewed? The usual renewal process involves sending a renewal
+  request to the Web server certificate issuer (that is, a Certificate
+  Authority such as VeriSign, Netscape, or Microsoft.)
+
+A fix has been developed that ensures that a standard PKCS10-formatted renewal
+request is created. For more information, see the following Knowledge Base
+article:
+
+  Q262979 Cannot Renew Verisign Certificates in IIS 5.0
+
+- Is the Sspifilt.dll file loaded on the IIS master properties ISAPI Filter
+  tab?
+
+If not, add the Sspifilt.dll name and the \Winnt\System32\Inetsrv\Sspifilt.dll
+execution path to the IIS master properties ISAPI Filter tab.
+
+- Were any changes made to the IIS computer or Web site while a certificate
+  request was pending? (For example, a certificate request was generated and
+  sent to VeriSign. Before the certificate was installed, a service pack was
+  applied, the high encryption pack was installed, or the Web site bindings
+  were changed.)
+
+If so, you must generate a new certificate request. It is important that you do
+not change anything while a certificate request is pending.
+
+- Does the Web site have a secure identity?
+
+To confirm this, follow these steps:
+
+  1. Make sure that the Web site is bound to a secure port.
+
+     a. From the Microsoft Management Console (MMC), right-click the Web site
+        and click Properties.
+
+     b. On the Web Site tab, note the IP address (this may be All Unassigned)
+        and SSL port.
+
+NOTE: If the SSL port is blank, type "443" (without the quotation marks) and
+restart the IIS service. If the port is dimmed, a server certificate has not
+been successfully installed. For more information, see the following Knowledge
+Base article:
+
+  Q228836 Installing a New Certificate with Certificate Wizard for Use in
+  SSL/TLS
+
+  2. Confirm that the Web site is correctly bound to the network card.
+
+     a. From a command prompt, type "netstat -an" (without the quotation
+        marks).
+
+     b. If the Web site was bound to the All Unassigned IP address and SSL port
+        443, verify that the Local Address entry is 0.0.0.0:443.
+
+        If the Web site was bound to a specific IP address (for example,
+        172.26.207.120) and SSL port 443, verify that the Local Address entry
+        is IPaddress:443 (for example, 172.26.207.120:443).
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

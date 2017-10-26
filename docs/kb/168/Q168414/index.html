@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168414: BUG: Binary Compatibility Leaves Source File in Open State | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168414: BUG: Binary Compatibility Leaves Source File in Open State" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168414/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168414/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168414/","publisher":null,"image":null,"headline":"Q168414: BUG: Binary Compatibility Leaves Source File in Open State","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168414-bug-binary-compatibility-leaves-source-file-in-open-state">Q168414: BUG: Binary Compatibility Leaves Source File in Open State</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168414
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kberrmsg kbVBp500 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling an ActiveX Server (EXE or DLL), you may get the following error
+at the end of compiling:
+
+  "An unexpected error occurred during compiling or linking"
+
+If you choose to view the error details, the following message will be
+displayed:
+
+  "LINK : fatal error LNK1104: cannot open file &lt;filename&gt;"
+
+CAUSE
+=====
+
+When the Binary Compatibility property is set for an ActiveX Server component
+(.EXE or .DLL), Microsoft Visual Basic 5.0 leaves the compatible source file in
+an open state until the Visual Basic 5.0 environment is closed.
+
+NOTE: The behavior can also surface randomly with other types of Visual Basic
+projects when Binary Compatibility is used.
+
+RESOLUTION
+==========
+
+There are a few workarounds to this behavior:
+
+- When using the Binary Compatibility property, do not set the compatible
+  source file to the same filename and location as the compiled component's
+  destination file.
+
+-or-
+
+- Use the Project Compatibility option or the No Compatibility option whenever
+  possible.
+
+-or-
+
+- Close and re-open the Microsoft Visual Basic environment when it is necessary
+  to delete and/or overwrite the file which is locked in the open state.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In Microsoft Visual Basic 5.0's development environment, the user has the option
+to select the following compatible component options:
+
+- No Compatibility
+
+- Project Compatibility
+
+- Binary Compatibility
+
+This is done from the Component Tab of the Project Properties Dialog. The set of
+options on the dialog box determines how the project is to be compiled. (For
+more details on Compatibility, select the Component Tab and then press the Help
+button on the dialog.)
+
+Selecting Project Compatibility or Binary Compatibility enables the file location
+textbox. The user can then select the source file for the compatibility during
+the compile process.
+
+During compilation of the project, Visual Basic opens the compatible source file,
+reads specific information, and then writes the compiled compatible file to the
+destination specified on the Make Project dialog.
+
+If the user selects Binary Compatibility, Visual Basic does not close the source
+file for an ActiveX EXE Server until Visual Basic itself is closed. This is not
+the case for the Project Compatibility option, nor is it the case for ActiveX
+Control projects.
+
+The result of leaving the file open is not an issue for the user unless the user
+selects the same filename and location for the destination file. If they are the
+same, the user will encounter an error.
+
+REFERENCES
+==========
+
+For more information on this problem, please refer to the ReadMe.TXT file
+enclosed on the Microsoft Visual Basic 5.0 CD-ROM.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : 5.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

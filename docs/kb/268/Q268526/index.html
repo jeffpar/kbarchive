@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q268526: Buffer Limit Exceeded Importing Exchange Groups in Metadirectory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q268526: Buffer Limit Exceeded Importing Exchange Groups in Metadirectory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/268/Q268526/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/268/Q268526/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/268/Q268526/","publisher":null,"image":null,"headline":"Q268526: Buffer Limit Exceeded Importing Exchange Groups in Metadirectory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q268526-buffer-limit-exceeded-importing-exchange-groups-in-metadirectory">Q268526: Buffer Limit Exceeded Importing Exchange Groups in Metadirectory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q268526
+Product(s): Microsoft Windows NT
+Version(s): 2.1
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Lightweight Directory Access Protocol (LDAP) Microsoft Exchange
+Management Agent (MA) and import groups into the metadirectory, its buffer limit
+may be exceeded and you may receive the following error messages in the
+Zscript.log file on log level four:
+
+  Checking connector space for obsolete records at 13:17:23...
+  update $cs.zcDsCdHandle [&lt;binary&gt;] with [&lt;binary&gt;]
+  0001-CONNECTOR MODIFIED[00]:
+  IST=dlmmsATCEXCH4,cn=Dlists,ou=DIRSYNCH,o=ICL,ma=Wayne,DsaName=minimi,
+  ou=Applications,o=PSS,dc=Microsoft,dc=com
+  0001-META UNCHANGED[00]:
+  LIST=dlmmsATCEXCH4,CN=Dlists,OU=DIRSYNCH,o=ICL,o=PSS,dc=Microsoft,dc=com in
+  template [zcDscConstruction] in the statement starting at line 105
+
+-or-
+
+  ERROR 19008: DS_RC_BUFFER_TOO_SMALL
+
+CAUSE
+=====
+
+This behavior can occur when a variable assignment has a statement that
+encounters a hard-coded limit. The following list must be processed separately:
+
+  $v_lm = ($list_member("(+uniquemember:+$v_ldapDn)"))
+
+RESOLUTION
+==========
+
+To resolve this behavior, you must make changes to the templates, by following
+these steps:
+
+1. Click Design MA.
+
+2. Click the Control Connected Directory tab.
+
+3. Click the Output Templates tab
+
+4. In the Add and Modify tabs, make the following changes :
+
+  ($list_member($v_member))
+  Comment out: #($v_lm)
+
+Then make further changes to the template, by following these steps:
+
+1. Click Design MA.
+
+2. Click the Control Connected Directory tab.
+
+3. Click Output Construction Template.
+
+4. Click CD Lists from Connectors and make the following change:
+
+  if $EXIST ( $v_ldapDn ) = T
+  then
+  if $CS.zcLdapGroupType = groupOfUniqueNames
+  then
+  $v_member = +uniquemember:+$v_ldapDn
+  else
+  $v_member = +member:+$v_ldapDn
+  endif
+  endif
+
+Then use the following steps to comment out (disable) lines from the templates:
+
+1. Click Design MA.
+
+2. Click the Control Connected Directory tab.
+
+3. Click Output Construction Template.
+
+4. Click CD Accounts from Connectors.
+
+5. Comment out the following statements:
+
+  # if $AT.zcLdapGroupType = groupOfUniqueNames
+  # then
+  # $v_lm = ($list_member("(+uniquemember:+$v_ldapDn)"))
+  # else
+  # $v_lm = ($list_member("(+member:+$v_ldapDn)"))
+  # endif
+
+STATUS
+======
+
+The preceding behavior has been resolved in Microsoft Metadirectory Services
+version 2.2 with the same template modifications.
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

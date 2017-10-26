@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148414: FP: How to Add Subwebs and Create Links to Subwebs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148414: FP: How to Add Subwebs and Create Links to Subwebs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148414/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148414/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148414/","publisher":null,"image":null,"headline":"Q148414: FP: How to Add Subwebs and Create Links to Subwebs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148414-fp-how-to-add-subwebs-and-create-links-to-subwebs">Q148414: FP: How to Add Subwebs and Create Links to Subwebs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148414
+Product(s): Word Front Page
+Version(s): windows:1.0,1.1,97
+Operating System(s): 
+Keyword(s): kbusage kbdta
+Last Modified: 04-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194210.
+
+SUMMARY
+=======
+
+This article describes how to add subwebs to a Web and how to create links to
+files within those subwebs.
+
+MORE INFORMATION
+================
+
+Creating a SubWeb
+-----------------
+
+FrontPage 97 and FrontPage 1.1:
+
+1. Start FrontPage Explorer.
+
+2. On the File menu, point to New and then click FrontPage Web.
+
+3. In the create Wizards Or Template dialog box, click Normal Web, and then
+  click OK.
+
+4. In the New FrontPage Web dialog box, type the host location of the web. For
+  example, type "localhost" or "c:\webs" (without the quotation marks). By
+  entering a name in the "Name of Destination FrontPage Web" box, you are
+  creating a subWeb with that name. Click OK.
+
+FrontPage 1.0:
+
+1. From Windows File Manager or Windows Explorer, create a folder in the
+  c:\Content folder. For example, if you created a Web called Main, you should
+  have a folder called C:\Content\Main. If you then add a folder in Main called
+  Subweb, you will have a folder called C:\Content\Main\SubWeb. After you
+  create this folder, move or copy your files to this folder.
+
+Creating Links to Files within the Subwebs
+------------------------------------------
+
+FrontPage 97:
+
+1. In FrontPage Explorer, select the page on which you want to create a link.
+
+2. On the Edit menu, click Open.
+
+3. With the page open in FrontPage Editor, position the insertion point where
+  you want to create your link.
+
+4. Type "Hyperlink" (without the quotation marks).
+
+5. Select the text you typed in step 4.
+
+6. On the Insert menu, click Hyperlink.
+
+7. Click the Current FrontPage Web tab.
+
+8. In the Page box, type the following
+
+  "../&lt;subweb name&gt;/&lt;filename&gt;" (without the quotation marks)
+
+  where &lt;subweb name&gt; represents the subweb you are linking to and
+  &lt;filename&gt; represents the page you are linking to.
+
+9. Click OK.
+
+FrontPage 1.1:
+
+1. In FrontPage Explorer, select the page on which you want to create a link.
+
+2. On the Edit menu, click Open.
+
+3. With the page open in FrontPage Editor, position the insertion point where
+  you want to create your link.
+
+4. Type "Hyperlink" (without the quotation marks).
+
+5. Select the text that you typed in step 4.
+
+6. On the Edit menu, click Link.
+
+7. Click the Current Web tab.
+
+8. In the Page box, type the following
+
+  "../&lt;subweb name&gt;/&lt;filename&gt;" (without the quotation marks)
+
+  where &lt;subweb name&gt; represents the subweb you are linking to and
+  &lt;filename&gt; represents the page you are linking to.
+
+9. Click OK.
+
+FrontPage 1.0:
+
+1. In FrontPage Explorer, select the page on which you want to create a link.
+
+2. On the Edit menu, click Open.
+
+3. With the page open in the FrontPage Editor, position the insertion point
+  where you want to create your link.
+
+4. On the Insert menu, click Bot.
+
+5. In the Select A Bot list, click HTML Markup, and then click OK.
+
+6. In the "HTML Markup To Insert" box, type the HTML markup that specifies your
+  link. For example, type the following:
+
+  &lt;A HREF=/SubWeb/filename.htm&gt;hypertext&lt;/A&gt;
+
+7. Click OK.
+
+8. Save and close the page.
+
+Additional query words: front page explorer front page vermeer technologies inc. pws sub Web
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : windows:1.0,1.1,97
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

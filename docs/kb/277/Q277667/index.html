@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q277667: PRB: SELECT DISTINCT Fails with Microsoft ODBC for Oracle | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q277667: PRB: SELECT DISTINCT Fails with Microsoft ODBC for Oracle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/277/Q277667/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/277/Q277667/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/277/Q277667/","publisher":null,"image":null,"headline":"Q277667: PRB: SELECT DISTINCT Fails with Microsoft ODBC for Oracle","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q277667-prb-select-distinct-fails-with-microsoft-odbc-for-oracle">Q277667: PRB: SELECT DISTINCT Fails with Microsoft ODBC for Oracle</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q277667
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Bu
+Operating System(s): 
+Keyword(s): kbMDAC kbODBC kbOracle kbGrpDSVCDB kbGrpDSMDAC kbmdac270
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.5, versions Build 2.573.2927, Build 2.573.3513, Build 2.573.3711, Build 2.573.4202, Build 2.573.4403, Build 2.573.5303, Build 2.573.6019, Build 2.573.6526, Build 2.573.7326, Build 2.573.7626, Build 2.573.7713.2 
+- Microsoft Data Access Components versions 2.1, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a SELECT DISTINCT statement is used with the Microsoft ODBC for Oracle
+driver, the following error may occur:
+
+  DIAG [HYC00] [Microsoft][ODBC driver for Oracle]Cannot use Keyset-driven
+  cursor on join, with distinct clause, union, intersect or minus or on read
+  only result set (0)
+
+CAUSE
+=====
+
+The Microsoft ODBC for Oracle driver uses the hidden Oracle column ROWID, which
+assigns a unique ID for each row. Because this negates the uniqueness constraint
+imposed by the DISTINCT keyword, the driver issues the above error rather than
+bring back multiple copies of the same data.
+
+RESOLUTION
+==========
+
+If you require the use of the DISTINCT keyword, you can use the Microsoft OLE DB
+Provider for Oracle, because the provider doesn't use the ROWID column when
+DISTINCT is used. For additional information, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q258997 INFO: Oracle OLE DB Provider and ROWID Use
+
+There is no workaround for this behavior with the Microsoft ODBC for Oracle
+driver.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a table to test with:
+
+  
+
+  CREATE TABLE FOO (C1 CHAR(20))
+
+2. Insert some data into the table:
+
+  
+
+  INSERT INTO FOO VALUES('aaa')
+  INSERT INTO FOO VALUES('bbb')
+
+3. Using the ODBC API SQLSetConnectAttr, set the connection attribute
+  SQL_CURSOR_TYPE to the value SQL_CURSOR_KEYSET_DRIVEN. This ensures that you
+  get a keyset cursor, which uses the hidden ROWID column.
+
+4. Execute the following SQL statement:
+
+  
+
+  SELECT DISTINCT * FROM FOO
+
+The ODBC call returns SQL_ERROR, and the associated error text will be the error
+shown in the "Symptoms" section of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbMDAC kbODBC kbOracle kbGrpDSVCDB kbGrpDSMDAC kbmdac270 
+Technology        : kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC210 kbMDAC250 kbMDAC260 kbODBCOracle25732927 kbODBCOracle25733513 kbODBCOracle25733711 kbODBCOracle25734202 kbODBCOracle25734403 kbODBCOracle25736526 kbMDAC270 kbodbcOracle25737626 kbodbcoracle25735303 kbODBCOracle25736019 kbODBCOracle25737326 kbODBCOracle257377132 kbODBCOracle250Search
+Version           : :2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build 2.573.4403,Build 2.573.5303,Build 2.573.6019,Build 2.573.6526,Build 2.573.7326,Build 2.573.7626,Build 2.573.7713.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

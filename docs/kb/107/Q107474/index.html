@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107474: Setting Up a Shared Copy of WFWG on LAN Manager-Based Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107474: Setting Up a Shared Copy of WFWG on LAN Manager-Based Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107474/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107474/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107474/","publisher":null,"image":null,"headline":"Q107474: Setting Up a Shared Copy of WFWG on LAN Manager-Based Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107474-setting-up-a-shared-copy-of-wfwg-on-lan-manager-based-servers">Q107474: Setting Up a Shared Copy of WFWG on LAN Manager-Based Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107474
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Windows for Workgroups 3.11 may not install properly when you use the SETUP /N
+command from a shared copy that is located on a Microsoft LAN Manager- or
+Windows NT-based server. This article explains how to correctly set up a shared
+copy of Windows for Workgroups on a LAN Manager-based network.
+
+Please note that when Windows for Workgroups is set up this way, Windows for
+Workgroups server capabilities are not available because users must start the
+real-mode network redirector to access the shared files on the server. The
+Windows for Workgroups server cannot run when the real-mode redirector is
+started. This behavior is different from that of Windows for Workgroups 3.1
+(because of changes made in 3.11 to facilitate use of the Installable File
+System [IFS] Manager).
+
+MORE INFORMATION
+================
+
+Users wanting to set up a shared copy of Windows for Workgroups must first have
+a real-mode networking client installed that is able to connect to the file
+server where the shared copy of Windows for Workgroups had been installed. This
+article describes how to set up Windows for Workgroups with either Workgroups
+Connections 1.0 or the Microsoft LAN Manager client, which is included in the
+Microsoft Network client. This article assumes that SETUP /A has already been
+completed and the shared files are already located on the file server.
+
+Workgroup Connections
+---------------------
+
+Workgroup Connections is a real-mode networking client that is normally used to
+connect to Windows for Workgroups servers. Use the following steps to set up a
+shared copy of Windows for Workgroups with Workgroup Connections:
+
+1. Install Workgroup Connections in a clean directory. The Setup program
+  defaults to the DOS directory; do NOT install to this directory. If you do
+  so, you install Windows for Workgroups user files over the top of this
+  directory.
+
+2. Use the Workgroup Connections network to connect to the file server's Windows
+  for Workgroups share with drive &lt;W&gt;. (It does not matter which drive
+  you use, but you must remember the drive letter because the same drive must
+  be used after Windows for Workgroups has been set up.)
+
+3. Run the Windows for Workgroups SETUP /N command and let Windows for
+  Workgroups install to the same directory in which you installed Workgroup
+  Connections. Setup should automatically choose the Microsoft Windows Network,
+  and you should verify that your network card driver is set up properly. Be
+  sure to let Setup configure your CONFIG.SYS and AUTOEXEC.BAT files.
+
+4. Once Setup is complete, reboot the machine. The real-mode network should
+  start and log you on to the network. Use the NET USE command to connect drive
+  &lt;W&gt; to the file server's Windows for Workgroups share. (This drive
+  letter should be the same one you used in step 2.)
+
+5. Use the WIN command to start Windows for Workgroups. The first time you start
+  Windows for Workgroups, a warning message states that you do not have sharing
+  capabilities (because the real-mode network is started). You can ignore this
+  message and choose the NO button to prevent it from coming up again.
+
+Microsoft Network Client (LAN Manager Client)
+---------------------------------------------
+
+The Microsoft Network Client is a real-mode LAN Manager client that is available
+for download from the Internet server [type "GOWINNT ! AdvSys\MSClient" (without
+the quotation marks)]. If you can't access these services, the Microsoft Network
+client is available for sale from Microsoft Sales and Service at (800)
+426-9400.
+Use the following steps to set up a shared copy of Windows for Workgroups with
+the LAN Manager client:
+
+1. Use the LAN Manager client to connect to the file server's Windows for
+  Workgroups share with drive &lt;W&gt;. (It doesn't matter which drive you
+  use, but you must remember the drive letter because the same drive must be
+  used after Windows for Workgroups has been set up.)
+
+2. Run the Windows for Workgroups SETUP /N command and direct Windows for
+  Workgroups to a clean directory. Do not set up Windows for Workgroups in the
+  directory that LAN Manager is in. (If you do, the PROTOCOL.INI file is not
+  set up correctly.) Setup should automatically choose the Microsoft Windows
+  Network, and you should verify that your network card driver is set up
+  properly. Be sure to let Setup configure your CONFIG.SYS and AUTOEXEC.BAT
+  files, and make sure that all references to LAN Manager are removed from both
+  files.
+
+3. Once Setup is complete, reboot the machine. The real-mode network should
+  start and log you on to the network. Use the NET USE command to connect drive
+  &lt;W&gt; to the file server's Windows for Workgroups share. This drive
+  letter should be the same drive letter you used in step 1.
+
+4. Use the WIN command to start Windows for Workgroups. The first time you start
+  Windows for Workgroups, a warning message states you do not have sharing
+  capabilities (because the real-mode network is started). You can ignore this
+  message and choose the NO button to prevent it from coming up again.
+
+Additional query words: WC 3.11 setup
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

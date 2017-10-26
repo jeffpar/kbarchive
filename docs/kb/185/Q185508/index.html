@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185508: Error Message: Service Pack Setup Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185508: Error Message: Service Pack Setup Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185508/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185508/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185508/","publisher":null,"image":null,"headline":"Q185508: Error Message: Service Pack Setup Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185508-error-message-service-pack-setup-error">Q185508: Error Message: Service Pack Setup Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185508
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup kbFEA kbWinNT400sp4fea
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+- Microsoft Windows NT Server versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Service Pack 4 for Windows NT 4.0, you may receive
+the following error message:
+
+  Service Pack Setup Error. You do not have permission to update Windows
+  NT. Please contact your system administrator.
+
+CAUSE
+=====
+
+This behavior can occur if you run the Update.exe file from a folder other than
+the Update folder. The Update.exe file must be run from the Update folder.
+
+RESOLUTION
+==========
+
+To resolve this issue, run the Update.exe file from the Update folder.
+
+The affected files are Update.exe and Update.inf. These files must be in the
+Update folder or the error messages will occur.
+
+MORE INFORMATION
+================
+
+The Update folder is located in the folder to which you extracted the Service
+Pack files, and contains the following files:
+
+  Update.exe
+  Update.inf
+  Update.nvt
+
+
+This error only applies when the registry's RunOnce key is used to run a batch
+file.
+
+The batch file maps a network drive back to a server location where the Service
+Pack 4 files are located (not under the $oem$ directory on the distribution
+server) and then runs Update.exe. For more information concerning deployment
+configurations, see the "Guide to Automating Windows NT Setup" deployment guide
+located under Deployment Tools at the following Web site:
+
+  http://www.microsoft.com/ntworkstation/
+
+The other method most commonly used is to run the Update.exe program from the
+Cmdlines.txt file. This will not work with Service Pack 4 because it contains
+long file names that would be truncated during the text mode copy phase of
+setup.
+
+For additional information, see the following article in the Microsoft Knowledge
+Base:
+
+  ARTICLE-ID: Q194986
+  TITLE : File Copy Error Using Update.exe With Service Pack 4
+
+
+Additional query words: sp4 4.00
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbFEA kbWinNT400sp4fea 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp5 kbWinNTW400sp4 kbWinNTSsearch kbWinNTS400sp6 kbWinNTS400sp5 kbWinNTS400sp4 kbWinNTS400search kbWinNTW400sp6 kbWinNTW400SP6a
+Version           : winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

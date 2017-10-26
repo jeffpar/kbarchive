@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147836: FIX: Debugger Hangs with Huge Executable with Embedded Symbols | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147836: FIX: Debugger Hangs with Huge Executable with Embedded Symbols" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147836/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147836/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147836/","publisher":null,"image":null,"headline":"Q147836: FIX: Debugger Hangs with Huge Executable with Embedded Symbols","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147836-fix-debugger-hangs-with-huge-executable-with-embedded-symbols">Q147836: FIX: Debugger Hangs with Huge Executable with Embedded Symbols</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147836
+Product(s): Microsoft C Compiler
+Version(s): 4.00
+Operating System(s): 
+Keyword(s): kbDebug kbide
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Integrated Debugger, included with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When debugging a large executable with embedded symbolic information (linked
+with /PDB:NONE), the debugger may hang (stop responding) before loading symbols.
+
+RESOLUTION
+==========
+
+Make the executable smaller by doing one of the following:
+
+- Reduce the amount of embedded symbolic information. You can do this by:
+
+  1. In Build Settings, select the files for which you do not need debug
+     information, and set Debug info to None in the C/C++ tab, General
+     category. For a command-line equivalent, compile these files without the
+     /Zi or /Zd options.
+
+  2. In Build Settings, select the files for which you only need line number
+     information, and set Debug info to Line Numbers Only in the C/C++ tab,
+     General category. For a command-line equivalent, compile these files with
+     the /Zd instead of /Zi option.
+
+-or-
+
+- Use a program database (.pdb) file instead of embedding the debugging
+  information in the executable. On the Build Settings menu, click the Link
+  tab, Click Customize category, and click Use program database. For a
+  command-line equivalent, link the application with the /DEBUG and /PDB
+  options. Only use the /PDB option if you want to specify the .pdb file name
+  that will be created. Do not use /PDB:NONE.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++, 32-bit
+Edition, version 4.1.
+
+Additional query words: kbVC400bug 4.00 vcfixlist410
+
+======================================================================
+Keywords          : kbDebug kbide 
+Technology        : kbVCsearch kbAudDeveloper kbIntegratedDebugger
+Version           : 4.00
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

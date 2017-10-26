@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q312487: Error Message: Cannot Read Port Name from Registry | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q312487: Error Message: Cannot Read Port Name from Registry" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/312/Q312487/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/312/Q312487/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/312/Q312487/","publisher":null,"image":null,"headline":"Q312487: Error Message: Cannot Read Port Name from Registry","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q312487-error-message-cannot-read-port-name-from-registry">Q312487: Error Message: Cannot Read Port Name from Registry</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q312487
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg win98 win98se
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Millennium Edition 
+- Microsoft Windows 98 Second Edition 
+- Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to view the modem properties on the Device Manager tab in the
+System Properties dialog box, or when you double-click the Modems icon in
+Control Panel, you may receive the following error message:
+
+  Cannot read port name from registry.
+
+CAUSE
+=====
+
+This behavior can occur in the following situation:
+
+- You have a Windows only modem (Winmodem).
+
+  -and-
+
+- The drivers for that modem are damaged or of an incorrect version.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove and then reinstall the modem. To do this, follow
+these steps.
+
+Step 1: Remove the Modem
+------------------------
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  System.
+
+2. Click the Device Manager tab, and then expand Modem.
+
+3. Click the modem that you want, and then click Remove.
+
+4. On the Confirm Device Removal message that appears, click OK.
+
+5. Click Close.
+
+Step 2: Remove the Modem Registry Keys
+--------------------------------------
+
+Microsoft Windows 98 Second Edition or Windows 98:
+
+Run the Wmregdel.exe utility to completely remove the modem registry keys. To do
+this, follow these steps:
+
+1. Quit all running programs.
+
+2. Insert your Windows compact disc (CD) into the CD-ROM or DVD-ROM drive.
+
+3. Start Windows Explorer, and then navigate to the following folder, where
+  &lt;drive&gt; is the letter of the drive that contains the Windows CD:
+
+  &lt;drive&gt;:\drivers\modem\3com-usr\winmodem
+
+4. In the right pane of the Windows Explorer window, double-click Wmregdel.
+
+5. On the Winmodem Uninstaller 1.12 dialog box that appears, click Continue.
+
+6. Click OK, and then restart the computer.
+
+Microsoft Windows Millennium Edition:
+
+1. Quit all running programs.
+
+2. Insert your Windows compact disc (CD) into the CD-ROM or DVD-ROM drive.
+
+3. Start Windows Explorer, and then navigate to the following folder, where
+  &lt;drive&gt; is the letter of the drive that contains the Windows CD:
+
+  &lt;drive&gt;:\TOOLS\PSSUTIL
+
+4. In the right pane of the Windows Explorer window, right-click WMREMOVE, and
+  then click Install on the shortcut menu that appears.
+
+  The Winmodem registry keys are removed.
+
+5. Restart the computer.
+
+Step 3: Reinstall the Modem Drivers
+-----------------------------------
+
+When Windows restarts, the modem is detected and you are prompted to install the
+drivers. Direct Windows to the location of the drivers for the brand of modem
+that you have.
+
+If you do not have drivers for your modem, contact the manufacturer of the modem
+for the latest drivers. For information about how to contact computer hardware
+manufacturers, click the appropriate article number in the following list to
+view the article in the Microsoft Knowledge Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+If you are unable to determine the model or type of modem that is installed in
+your computer, view the modem information in the Windows registry to identify
+it. For additional information about identifying an unknown PCI device, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q298837 How to Use Registry Editor to Identify an Unknown PCI Device
+
+MORE INFORMATION
+================
+
+For additional information about troubleshooting modem issues, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q190554 How to Troubleshoot Modem Problems in Windows 98/98 Second Edition
+
+  Q190363 Additional Modem Drivers Included on the Windows 98 CD-ROM
+
+  Q188601 Err Msg: There Is No WinModem Found in Your Computer, But...
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg win98 win98se 
+Technology        : kbWinMEsearch kbWin98search kbWin98SEsearch kbWin98 kbWinME kbWin98SE
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

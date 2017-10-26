@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q71693: File Managing Functions in Shell Not Found at Command Line | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q71693: File Managing Functions in Shell Not Found at Command Line" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/071/Q71693/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/071/Q71693/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/071/Q71693/","publisher":null,"image":null,"headline":"Q71693: File Managing Functions in Shell Not Found at Command Line","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q71693-file-managing-functions-in-shell-not-found-at-command-line">Q71693: File Managing Functions in Shell Not Found at Command Line</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q71693
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:4.0,4.01,4.01a,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 4.0, 4.01, 4.01a, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are a number of file management functions available in MS-DOS Shell that
+are not available at the DOS prompt. These functions include viewing, moving,
+and toggling attributes on hidden files, and the renaming of directories.
+
+In MS-DOS version 5.0, the Shell interface has been greatly altered. To view
+hidden files, you must enable that option by choosing File Display Options from
+the Options menu in Shell. The other functions maintain the same command
+sequences as in MS-DOS 4.01 Shell. It should also be noted that MS-DOS version
+5.0 allows the manipulation of hidden and system files using the ATTRIB command.
+Renaming directories is still not directly possible from the command prompt
+within DOS 5.0.
+
+MORE INFORMATION
+================
+
+To find hidden files at the DOS prompt, you must first know the name of the file
+being searched for. The same is true for copying, deleting, or moving hidden
+files. You cannot toggle the hidden file attribute at the command prompt alone.
+
+These functions are simple within Shell. Hidden files are included in the file
+listing in the File System portion of Shell. Hidden files can be manipulated in
+the same manner as all other files. Toggling file attributes (including the
+hidden attributes) requires selecting the file, and from the File menu, choosing
+Change Attributes.
+
+You cannot rename directories from the DOS prompt without a third-party utility.
+Instead, you must create a new directory with the desired name, copy the files
+to that directory, delete those files in the old directory, and remove the old
+directory.
+
+Within Shell, all that is required is to select the directory within the File
+System portion of the shell, and choose Rename from the File menu.
+
+Additional query words: 4.00 4.01 4.01a 5.00 noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS500 kbMSDOS401
+Version           : MS-DOS:4.0,4.01,4.01a,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

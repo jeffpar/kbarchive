@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168891: Err Msg: Hotfix Internal Consistency Error: Invalid Tree Pointer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168891: Err Msg: Hotfix Internal Consistency Error: Invalid Tree Pointer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168891/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168891/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168891/","publisher":null,"image":null,"headline":"Q168891: Err Msg: Hotfix Internal Consistency Error: Invalid Tree Pointer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168891-err-msg-hotfix-internal-consistency-error-invalid-tree-pointer">Q168891: Err Msg: Hotfix Internal Consistency Error: Invalid Tree Pointer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168891
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbtool
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install a hotfix for Windows NT version 4.0 using the Hotfix.exe tool,
+the following error message may occur:
+
+  Hotfix:The fix is already installed. Hotfix:Internal consistency error:
+  Invalid Tree pointer = &lt;xxx&gt;
+
+CAUSE
+=====
+
+This error message occurs when the hotfix has already been applied or a hotfix
+with an identical name has been installed. The Hotfix.exe tool cannot write the
+information in the registry because the key already exists.
+
+RESOLUTION
+==========
+
+Remove the previous installation before reapplying a hotfix. To remove the
+previous installation, follow these steps:
+
+1. Click the Start button, point to Programs, and then click Command Prompt.
+
+2. Change to the folder in which the hotfix you want to remove is located.
+
+3. Type either of the following lines:
+
+   - hotfix.exe /remove
+
+   - hotfix.exe /r
+
+
+MORE INFORMATION
+================
+
+The Hotfix.exe tool creates a Hotfix folder in the Winnt folder. In that folder,
+each hotfix has its own folder containing the replaced file or files.
+
+Hotfix.exe is a tool that makes the installation, tracking, and maintenance of
+hotfixes easier.
+
+The command syntax for Hotfix.exe is:
+
+Hotfix [ /H /R /V ] [&lt;hotfix name&gt;]
+Hotfix /I  [source dir]
+Hotfix [\\computername] [ /L /F ] [&lt;hotfix name&gt;]
+
+  /Full    or /F  Specifies a full listing. Default is brief.
+  /Help /H or /?  Displays this message.
+  /Install or /I  Installs the hotfix identified by the Hotfix.ini file
+                  in the &lt;source dir&gt;, or the current directory in the
+                  &lt;source dir&gt; was not specified. The fix is installed
+                  on the local computer.
+  /List    or /L  Displays a list of all installed hotfixes. If a
+                  hotfix name is specified, a detailed listing of the
+                  specific hotfix is displayed.
+  /Remove  or /R  Removes the specified hotfix from the local computer.
+  /Verify  or /V  Verifies that the specified hotfix is correctly
+                  installed on the local computer. If no hotfix name is
+                  specified, all installed hotfixes will be checked.
+  \\computername  The name of a remote Windows NT computer that will be
+                  the target of the command.  This can only be used with
+                  the /LIST command option.
+  &lt;hotfix name&gt;   The name of the hotfix.
+  &lt;source dir&gt;    Source directory containing the corrected files
+                  and the Hotfix.ini file for the hotfix.
+
+Additional query words: hot fix
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

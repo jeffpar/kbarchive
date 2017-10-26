@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q71585: Disk Space Needed to Save UNFORMAT Information | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q71585: Disk Space Needed to Save UNFORMAT Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/071/Q71585/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/071/Q71585/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/071/Q71585/","publisher":null,"image":null,"headline":"Q71585: Disk Space Needed to Save UNFORMAT Information","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q71585-disk-space-needed-to-save-unformat-information">Q71585: Disk Space Needed to Save UNFORMAT Information</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q71585
+Product(s): Microsoft Disk Operating System
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+The following error message is displayed when the FORMAT command cannot find
+enough free space on the disk to save the UNFORMAT information:
+
+  Drive &lt;x&gt; error. Insufficient space for the MIRROR image file.
+  There was an error creating the format recovery file.
+  This disk cannot be unformatted.
+  Proceed (y/n)
+
+Note: &lt;x&gt; refers to either drive A or B or any other external drive.
+
+When the FORMAT command is used without the "/U" option, it tries to save the
+UNFORMAT information when reformatting a disk to the same density. The following
+is the minimum space required in the last 25 percent of the disk space for the
+FORMAT command to create a MIRROR image file:
+
+  Disk Size       Capacity      Free Space Needed
+  ---------       --------      -----------------
+
+  5.25 inches     360K           7,168 bytes
+  5.25 inches     1.2 MB        12,800 bytes
+  3.5 inches      720K           8,192 bytes
+  3.5 inches      1.44 MB       13,824 bytes
+
+MORE INFORMATION
+================
+
+The FORMAT command in MS-DOS version 5.0 examines the disk to determine if it
+has already been formatted. If the disk has been formatted, the FORMAT command
+attempts to create a MIRROR image file before reformatting the disk. When FORMAT
+finds that there is not enough room on the disk to create a MIRROR image file,
+it displays the error message and gives you an option to continue with FORMAT.
+If you choose to continue, the MIRROR image file is not created, and the
+UNFORMAT command will not be able to recover the old information from the newly
+formatted disk.
+
+A MIRROR image file contains the information that the UNFORMAT command needs to
+unformat the disk. MIRROR image files can also be created with the MIRROR
+command. For more information on MIRROR, FORMAT, and UNFORMAT, query on the
+following words:
+
+  "mirror" (without the quotation marks) and "unformat" (without the quotation
+  marks)
+
+The UNFORMAT information consists of Boot Sector, File Allocation Table, and Root
+Directory, which is stored in the MIRROR image file.
+
+The requirement of free space in the last 25 percent of the disk space is imposed
+to prevent UNFORMAT from taking an extensive amount of time when trying to find
+the control file anywhere on the disk.
+
+Additional query words: 5.00 noupd
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

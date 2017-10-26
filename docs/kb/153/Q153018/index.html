@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153018: BUG: CreateDynaset Holds Lock on Index if No Records Return | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153018: BUG: CreateDynaset Holds Lock on Index if No Records Return" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153018/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153018/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153018/","publisher":null,"image":null,"headline":"Q153018: BUG: CreateDynaset Holds Lock on Index if No Records Return","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153018-bug-createdynaset-holds-lock-on-index-if-no-records-return">Q153018: BUG: CreateDynaset Holds Lock on Index if No Records Return</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153018
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbDatabase kbVBp400 kbGrpDSVBDB kbDSupportkbbuglist
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After opening a Dynaset that contains no records with a SQL statement that
+refers to an indexed field, attempting to access that table from another
+application can cause the following error:
+
+  Couldn't save; currently locked by &lt;User_Name&gt; on machine
+  &lt;Machine_Name&gt;
+
+To work around this problem, add a call to the Idle method of the DBEngine object
+immediately after the call to OpenRecordset. Add the following line of code:
+
+     DBEngine.Idle dbFreeLocks
+
+CAUSE
+=====
+
+The error occurs because the Jet engine is not, by default, releasing the lock
+on the index page after opening the Recordset. This behavior only occurs when
+the Recordset returned contains no records. It occurs with Jet 2.5 and Jet 3.0,
+but doesn't occur with Jet 1.1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce Problem
+--------------------------
+
+1. Start Visual Basic 4.0. Form1 is created by default.
+
+2. Open the References dialog (Tools Reference), and add a reference to either
+  DAO 2.5 (16-bit) or DAO 3.0 (32-bit).
+
+3. Add a single Command button to Form1.
+
+4. Add the following code to the form:
+
+     Private Sub Command1_Click()
+        Set db = OpenDatabase("BIBLIO.MDB")
+        Set rs = db.OpenRecordset("Select * From Authors Where AU_ID &gt; _
+                 200", dbOpenDynaset)
+     End Sub
+
+5. From the Insert menu, choose Module, and insert a single code module.
+
+6. Add the following code to the module:
+
+     Global rs As Recordset
+     Global db As Database
+
+7. Press the F5 key or select Start from the Run menu to run the application.
+  Click on the Command button to open the database, and create a Recordset.
+
+8. Start another instance of Visual Basic. From the Add-Ins menu, choose Data
+  Manager, and start the Data Manager application.
+
+9. In Data Manager, open the same BIBLIO database that was opened in step 4.
+  Open the Authors table and attempt to add a new record. When the update is
+  attempted, Data Manager will give the error mentioned above.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbVBp400 kbGrpDSVBDB kbDSupport kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

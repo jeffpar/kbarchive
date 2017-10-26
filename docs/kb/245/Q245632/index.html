@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245632: Dial-Up AutoSync2 Link Service Support for SNA Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245632: Dial-Up AutoSync2 Link Service Support for SNA Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245632/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245632/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245632/","publisher":null,"image":null,"headline":"Q245632: Dial-Up AutoSync2 Link Service Support for SNA Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245632-dial-up-autosync2-link-service-support-for-sna-server">Q245632: Dial-Up AutoSync2 Link Service Support for SNA Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245632
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 U.S. SP1
+Operating System(s): 
+Keyword(s): sna4
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11 SP1, 2.11 SP2, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 U.S. SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Serengeti Systems Incorporated offers a Hayes AutoSync2 compatible link service
+for SNA Server that allows an SDLC connection through an asynchronous
+communication port. It is specific to Hayes AutoSync2 and does not support
+earlier versions of Hayes AutoSync.
+
+MORE INFORMATION
+================
+
+The Link Service requires a Hayes Optima 33.6 or 56kb modem with AutoSync2
+support. The part number for the 33.6 modem is 08-02688 and the 56kb modem is
+08-02892. These are the only two modems that this link service works with.
+
+To install the link service, do the following:
+
+1. Run the setup routine provided with the software. You will be prompted for a
+  password, which must be entered.
+
+2. Install the Link Service in SNA Server by choosing Insert, and then selecting
+  Link Service.
+
+3. Open the property sheet for the link service and choose Run License Manager.
+
+4. Choose First Run Authorization. This provides a 7-day window of activation.
+  After 7 days, it is necessary to contact Serengeti Systems Incorporated to
+  obtain a Full License Authorization.
+
+5. The Link service is SSIAUTOx and is configured with the necessary
+  initialization strings, COM port settings, and dial mode settings. The
+  default initialization strings should work without modification. The phone
+  number to dial is configured in the Connection Properties. COM1 through
+  COM256 are supported, as well as tone or pulse dial.
+
+To configure a connection, do the following:
+
+1. Choose Insert Connection, and then choose SDLC.
+
+2. On the general sheet of the Connection Properties, select SSIAUTOx.
+
+3. Select the Address sheet, and then enter the phone number to dial in the Dial
+  Data field.
+
+All other settings are configured as with any other SDLC connection.
+Tracing is accomplished through the trace utility or a built-in trace function
+that has the capability to trace the Link Service and/or the Device Driver, and
+is enabled thorough the Link Service Properties sheet.
+
+The Link Service Software is removed using the Add/Remove program in Control
+Panel.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+REFERENCES
+==========
+
+www.serengeti.com
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words:
+
+======================================================================
+Keywords          : sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 U.S. SP1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

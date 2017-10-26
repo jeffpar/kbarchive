@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72700: FIX: MASM 6.0 May Parse a Comment as a Conditional Directive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72700: FIX: MASM 6.0 May Parse a Comment as a Conditional Directive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72700/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72700/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72700/","publisher":null,"image":null,"headline":"Q72700: FIX: MASM 6.0 May Parse a Comment as a Conditional Directive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72700-fix-masm-60-may-parse-a-comment-as-a-conditional-directive">Q72700: FIX: MASM 6.0 May Parse a Comment as a Conditional Directive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q72700
+Product(s): Microsoft Macro Assembler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Macro Assembler (MASM) version 6.0 will incorrectly parse a
+comment as if it were a conditional-assembly directive if the following
+conditions are met:
+
+1. There is a conditional-assembly directive (or word that is the same as a
+  conditional directive) inside a comment block that does not directly follow
+  the delimiter character and is the first thing on the line.
+
+2. The comment block itself is contained in a conditional-assembly block, which
+  will NOT be evaluated by the assembler.
+
+CAUSE
+=====
+
+When both of these conditions are true, the conditional-assembly directive is
+given precedence over the comment block. The conditional directive is treated as
+a keyword although it was not meant to be treated as such.
+
+RESOLUTION
+==========
+
+To work around the problem, make sure that the first word on the line inside the
+comment block is not the same as a conditional directive. For example, in the
+sample code, one solution is to change the line "If should be ignored in a
+comment" to "An if should be ignored in a comment."
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+was corrected in MASM version 6.0a.
+
+MORE INFORMATION
+================
+
+If the conditional-assembly directive is either IF, IFE, IFB, IFNB, IFDEF,
+IFNDEF, IFIDN, or IFDIF and there is no associated ENDIF at the beginning of
+another line, then the following errors will be generated:
+
+  error A2088 : END directive required at end of file
+  fatal error : A1010 : unmatched block nesting : if-else
+
+If the conditional-assembly directive is ELSE, then the following error is
+generated:
+
+  error A2008 : syntax error : &lt;the text following the ELSE&gt;
+
+If the conditional-assembly directive is ELSEIF, then the following errors are
+generated:
+
+  error A2008 : syntax error
+  error A2081 : missing operand after unary operator
+
+If the conditional-assembly directive is ENDIF, then the following errors are
+generated
+
+  error A2008 : syntax error
+  error A2044 : invalid character in file
+
+where the invalid character referred to is the closing delimiter.
+
+The sample code below illustrates this problem. It meets the above conditions, so
+it is parsed incorrectly and the following errors are generated:
+
+  error A2088 : END directive required at end of file
+  fatal error : A1010 : unmatched block nesting : if-else
+
+Sample Code
+-----------
+
+  ; Assemble options needed: none
+
+  .MODEL small
+
+  .STACK 4096
+  .CODE
+      .startup
+
+  IFDEF   xyz                ; xyz is not defined
+
+  COMMENT ^
+          If should be ignored in this comment.
+     ^
+  ENDIF
+
+      .exit 0
+  END
+
+Additional query words: 6.00 buglist6.00 fixlist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : :6.0
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

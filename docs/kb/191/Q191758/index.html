@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191758: HOWTO: Convert FoxPro Cursor into XML Data Format | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191758: HOWTO: Convert FoxPro Cursor into XML Data Format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191758/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191758/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191758/","publisher":null,"image":null,"headline":"Q191758: HOWTO: Convert FoxPro Cursor into XML Data Format","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191758-howto-convert-foxpro-cursor-into-xml-data-format">Q191758: HOWTO: Convert FoxPro Cursor into XML Data Format</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191758
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbInternet kbvfp600 kbXML kbGrpDSFox kbDSupport
+Last Modified: 21-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to create an Extensible Markup Language (XML) data
+file from a cursor in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Extensible Markup Language (XML) is the universal format for data on the Web.
+XML is a text-based format that lets developers describe, deliver and exchange
+structured data between a range of applications to clients for local display and
+manipulation. XML does not replace HTML, rather, it is a complementary format.
+
+To create an XML file from a filtered .dbf table follow these steps:
+
+1. Create a program (.prg) file named Callxml.prg and place the following code
+  in the file:
+
+  LOCAL lcFileName,lcXMLFile,lcFilter
+
+  lcDBFName = HOME(2) + "data\orders.dbf"
+  lcXMLFile = LOWER(SYS(2023)) + "\orders.xml"
+  lcFilter = "FOR To_Region='WA'"
+
+  STRTOFILE(DBF2XML(lcDBFName, lcFilter, .T.), ;
+  lcXMLFile)
+  MODIFY FILE (lcXMLFile) NOWAIT
+
+  RETURN
+
+2. Create another .prg file named Dbf2xml.prg, and put the following code into
+  this .prg file:
+
+  * Dbf2xml.prg
+
+  *-- ASCII codes
+  #DEFINE TAB     CHR(9)
+  #DEFINE LF      CHR(10)
+  #DEFINE CR      CHR(13)
+  #DEFINE CR_LF   CR+LF
+
+  LPARAMETERS tcTable, tcScope, tnTabIndents
+  LOCAL lcTable, lcAlias, lcScope, lcDBFName, lcIndentText, lcDBF, lcRootName
+  LOCAL lcValue, lcField, lnFieldCount, lnCount, lnLastSelect, lnLastRecNo
+  LOCAL lcXMLText
+  DIMENSION laFields[1]
+
+  IF NOT INLIST(VARTYPE(tcTable), "C", "L") OR NOT ;
+         INLIST(VARTYPE(tcScope), "C", "L")
+     RETURN ""
+  ENDIF
+
+  lcIndentText = IIF(VARTYPE(tnTabIndents) == "N", ;
+                     REPLICATE(TAB, tnTabIndents), "")
+  lcTable = LOWER(IIF(EMPTY(tcTable), ALIAS(), ALLTRIM(tcTable)))
+  lnLastSelect=SELECT()
+
+  IF "." $ lcTable
+     lcDBF = lcTable
+     IF NOT FILE(lcDBF)
+        RETURN ""
+     ENDIF
+     
+     SELECT 0
+     lcAlias = LOWER(SYS(2015))
+     USE (lcDBF) ALIAS (lcAlias) AGAIN SHARED
+     lcDBFName = LOWER(FORCEEXT(JUSTFNAME(DBF()), ""))
+  ELSE
+     lcDBF = ""
+     lcAlias = lcTable
+     lcDBFName = lcAlias
+  ENDIF
+
+  IF NOT USED(lcAlias)
+     SELECT (lnLastSelect)
+     RETURN ""
+  ENDIF
+
+  lcScope = IIF(EMPTY(tcScope), "ALL", ALLTRIM(tcScope))
+
+  SELECT (lcAlias)
+
+  lnLastRecNo = IIF(EOF(), 0, RECNO())
+  lcXMLText = "&lt;"+ lcDBFName + "_table&gt;" + CR_LF
+
+  lnFieldCount = AFIELDS(laFields)
+  IF lnFieldCount = 0
+     SELECT (lnLastSelect)
+     RETURN ""
+  ENDIF
+
+  lcRootName = lcDBFName
+  DO WHILE TYPE(lcRootName) != "U"
+     lcRootName = lcRootName + "1"
+  ENDDO
+
+  SCAN &amp;lcScope
+     lcXMLText = lcXMLText + lcIndentText + ;
+        "&lt;" + lcRootName + "&gt;" + CR_LF
+        
+     FOR lnCount = 1 TO lnFieldCount
+        lcField = LOWER(laFields[lnCount, 1])
+        lcValue = ALLTRIM(TRANSFORM(EVALUATE(lcField)))
+        IF EMPTY(lcValue)
+           LOOP
+        ENDIF
+        
+        lcXMLText=lcXMLText + lcIndentText + TAB + ;
+           "&lt;" + lcField + "&gt;" + lcValue + "&lt;/" + lcField + "&gt;" + CR_LF
+     ENDFOR
+     
+     lcXMLText = lcXMLText + lcIndentText + ;
+        "&lt;/" + lcRootName + "&gt;" + CR_LF
+  ENDSCAN
+
+  IF EMPTY(lcDBF)
+     IF lnLastRecNo &gt; 0
+        GO lnLastRecNo
+     ENDIF
+  ELSE
+      USE
+  ENDIF
+
+  SELECT (lnLastSelect)
+
+  lcXMLText = lcXMLText + CR_LF + "&lt;/"+ lcDBFName + "_table&gt;"
+
+  RETURN lcXMLText
+
+3. In the Visual FoxPro Command window, run the Callxml.prg file. This results
+  in the creation of a file named Orders.xml, which is a text file subset of
+  the Orders.dbf table. The program places the file in the folder pointed to by
+  the operating system environment SET TEMP setting.
+
+REFERENCES
+==========
+
+For more information about XML, please see the following Microsoft Web site:
+
+  http://msdn.microsoft.com/xml/
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbvfp600 kbXML kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

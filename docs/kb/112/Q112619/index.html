@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112619: Microsoft At Work PC Fax Does Not Display a Time/Date Stamp | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112619: Microsoft At Work PC Fax Does Not Display a Time/Date Stamp" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112619/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112619/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112619/","publisher":null,"image":null,"headline":"Q112619: Microsoft At Work PC Fax Does Not Display a Time/Date Stamp","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112619-microsoft-at-work-pc-fax-does-not-display-a-timedate-stamp">Q112619: Microsoft At Work PC Fax Does Not Display a Time/Date Stamp</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112619
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the cover sheet option with Microsoft At Work PC Fax, the date may
+not appear on the Date: line of a sent fax.
+
+CAUSE
+=====
+
+The date of the sent fax does not appear on the Date: line of the cover sheet if
+the sShortDate= line of the [Intl] section in the WIN.INI file is not present or
+is invalid.
+
+RESOLUTION
+==========
+
+In Control Panel, choose the International icon and choose OK. This adds the
+sShortDate= line to the [Intl] section of the WIN.INI file. If the date still
+does not appear on a sent fax, the WIN.INI file should be checked for possible
+invalid or corrupted entries that would prevent Windows from reading the [Intl]
+section properly.
+
+Below is an example of a valid setting for [Intl] section of the WIN.INI file.
+
+     [Intl]
+     sLanguage=enu
+     sCountry=United States
+     iCountry=1
+     iDate=0
+     iTime=0
+     iTLZero=0
+     iCurrency=0
+     iCurrDigits=2
+     iNegCurr=0
+     iLzero=1
+     iDigits=2
+     iMeasure=1
+     s1159=AM
+     s2359=PM
+     sCurrency=$
+     sThousand=,
+     sDecimal=.
+     sDate=/ 
+     sTime=:
+     sList=,
+     sShortDate=M/d/yy
+     sLongDate=dddd, MMMM dd, yyyy
+
+Additional query words: 3.11 3.11a msfax efax pcfax gone facsimile removed missing fax date time
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132512: Selecting a Computer Type Before Windows NT Setup Begins | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132512: Selecting a Computer Type Before Windows NT Setup Begins" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132512/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132512/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132512/","publisher":null,"image":null,"headline":"Q132512: Selecting a Computer Type Before Windows NT Setup Begins","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132512-selecting-a-computer-type-before-windows-nt-setup-begins">Q132512: Selecting a Computer Type Before Windows NT Setup Begins</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132512
+Product(s): Microsoft Windows NT
+Version(s): 3.5 3.51 4.0
+Operating System(s): 
+Keyword(s): kbsetup kbusage
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5x, 4.0 
+- Microsoft Windows NT Server versions 3.5x, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you boot from the Setup disks, Windows NT Setup loads a reduced version of
+the operating system, including a symmetric multiprocessing (SMP) kernel and the
+generic multiprocessor version of the hardware abstraction layer (HAL). This
+articles explains how to select a different kernel and HAL.
+
+MORE INFORMATION
+================
+
+To force setup to load a specific HAL and kernel, follow one of these two
+procedures:
+
+- Floppy Disk Setup Procedure
+
+  -or-
+
+- WINNT32 /B or WINNT /B Setup Procedure
+
+Floppy Disk Setup Procedure
+---------------------------
+
+1. Boot Windows NT Setup from the Setup floppy disks and wait for the Computer's
+  BIOS information to appear.
+
+2. Press the F5 key when you are at the black screen that states:
+
+  Setup is inspecting your computers hardware configuration
+
+3. Wait for Setup to display a blue screen with text at the top and the bottom
+  that states:
+
+  Windows NT Setup
+  ================
+
+  Setup is loading files (Windows NT Executive)
+
+4. Wait for Setup to display a dialog box with a list of computer models.
+
+  This is the list of computer models that appears:
+
+  AST Manhatten SMP
+  Compaq SystemPro MultiProcesor or 100% compatible
+  Corollary C-bus Architecture
+  IBM PS/2 or other Microchannel-based PC
+  MPS Uniprocessor PC
+  MPS Multiprocessor PC
+  NCR System3000 model 3360/3450/3550
+  Olivetti LSX5030/40
+  Standard PC
+  Standard PC With c-step i486
+  Wyse series 7000i model 740mp/760mp
+  Other
+
+5. Select your computer from the list, including Standard PC or, if your
+  computer is not listed, select the option called Other, which prompts you to
+  insert a disk with a HAL provided by your computer manufacturer.
+
+WINNT32 /B or WINNT /B Setup Procedure
+--------------------------------------
+
+1. Start Setup with the command WINNT32 /B or WINNT /B, whichever applies, and
+  wait for the OSLOADER screen to appear.
+
+2. Press the F5 key when you are at the black screen that states:
+
+  Setup is inspecting your computers hardware configuration
+
+3. Wait for Setup to display a blue screen with text at the top and the bottom
+  that states:
+
+  Windows NT Setup
+  ================
+
+  Setup is loading files (Windows NT Executive)
+
+4. Wait for Setup to display a dialog box with a list of computer models.
+
+  This is the list of computer models that appears:
+
+  AST Manhatten SMP
+  Compaq SystemPro MultiProcesor or 100% compatible
+  Corollary C-bus Architecture
+  IBM PS/2 or other Microchannel-based PC
+  MPS Uniprocessor PC
+  MPS Multiprocessor PC
+  NCR System3000 model 3360/3450/3550
+  Olivetti LSX5030/40
+  Standard PC
+  Standard PC With c-step i486
+  Wyse series 7000i model 740mp/760mp
+  Other
+
+5. Select your computer from the list, including Standard PC or, if your
+  computer is not listed, select the option called Other, which prompts you to
+  insert a disk with a HAL provided by your computer manufacturer.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbsetup kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q263090: How to Install Win2K Print Driver in NT4 for Point and Print | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q263090: How to Install Win2K Print Driver in NT4 for Point and Print" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/263/Q263090/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/263/Q263090/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/263/Q263090/","publisher":null,"image":null,"headline":"Q263090: How to Install Win2K Print Driver in NT4 for Point and Print","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q263090-how-to-install-win2k-print-driver-in-nt4-for-point-and-print">Q263090: How to Install Win2K Print Driver in NT4 for Point and Print</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q263090
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbprint
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to install a Microsoft Windows 2000 print driver on a
+Microsoft Windows NT 4.0 print server for point and print functionality.
+
+MORE INFORMATION
+================
+
+Section 1: Installing a Windows 2000 Print Driver
+-------------------------------------------------
+
+To install a Windows 2000 print driver on a Windows NT server, follow these steps
+from a Windows 2000-based computer on your network:
+
+NOTE: If you are using either a Windows NT 4.0 driver or a Windows 2000 driver
+that is supplied by a third party, these steps may not work due to differences
+in design or driver names.
+
+You may also encounter errors when you are managing drivers on a Windows NT
+4.0-based printer server from a Windows 2000-based computer. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q318577 You Receive an Error Message When You Manage a Windows NT 4.0 Printer
+  Server from Windows 2000
+
+1. Click Start, click Run, and then type the Uniform Naming Convention (UNC)
+  path for the Windows NT 4.0 print server (for example: \\Nt4srvname).
+
+  This action displays the shares on the remote computer.
+
+2. Open the Printers folder. This action takes you into the printers folder on
+  the remote computer.
+
+3. Right-click the icon for the printer for which you want to add the Windows
+  2000 driver, and then click Sharing.
+
+4. From the Sharing tab, click Additional Drivers, click the "Intel/Windows
+  2000" option, and then click OK.
+
+Section 2: Verifying That the Drivers Are Installed
+---------------------------------------------------
+
+To verify that the drivers are installed, do one of the following:
+
+From a Windows 2000-based computer:
+
+1. While you are still viewing the Printers folder of the remote, Windows NT
+  4.0-based computer, click File.
+
+2. Select Server Properties, and then click the Drivers tab.
+
+3. A list of installed printer drivers is displayed with the following
+  properties:
+
+  &lt;Printer_Name&gt; Intel Windows 2000 (Windows 2000 drivers)
+  &lt;Printer_Name &gt; Intel Windows NT 4.0 or 2000 (Windows NT 4.0 drivers)
+
+From a Windows NT 4.0-based computer:
+
+1. Run Regedt32.exe and navigate to the registry of the Windows NT 4.0 computer.
+  Open the following key:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Environments\Windows
+  NT x86\Drivers
+
+2. Under this key, you should see the following two subkeys that list the
+  drivers currently installed:
+
+  Version-2 is for NT 4.0 drivers
+  Version-3 is for 2000 drivers
+
+NOTE: Windows 2000 print drivers can be installed simultaneously for all drivers
+on a Windows NT 4.0 system using the Fixprnsv.exe file from the Windows 2000
+Server CD-ROM.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q247196 Overview of Fixprnsv.exe
+
+  Q246855 Managing Network Printing in a Windows 2000 Environment
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

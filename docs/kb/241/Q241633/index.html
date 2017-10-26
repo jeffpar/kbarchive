@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241633: PRB: Windows 2000 Migration DLLs Time Out and Are Unloaded | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241633: PRB: Windows 2000 Migration DLLs Time Out and Are Unloaded" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241633/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241633/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241633/","publisher":null,"image":null,"headline":"Q241633: PRB: Windows 2000 Migration DLLs Time Out and Are Unloaded","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241633-prb-windows-2000-migration-dlls-time-out-and-are-unloaded">Q241633: PRB: Windows 2000 Migration DLLs Time Out and Are Unloaded</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241633
+Product(s): Microsoft Windows NT
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kbsetup kbmigrate kbOSWin2000 kbSDKPlatform kbMigWin9xtoWin2k kbMigrationDLL kbFAQ kbDS
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+- Microsoft Win32 Software Development Kit (SDK) 
+-------------------------------------------------------------------------------
+
+This article discusses a Beta release of a Microsoft product. The 
+information in this article is provided as-is and is subject to change
+without notice.
+
+No formal product support is available from Microsoft for this Beta 
+product. For information about obtaining support for a Beta release, 
+please see the documentation included with the Beta product files, or 
+check the Web location from which you downloaded the release.
+
+SYMPTOMS
+========
+
+While the Windows 2000 Setup program processes a Migration Dynamic-Link Library
+(DLL) during GUI-mode setup, the following error occurs unexpectedly:
+
+  Error: Setup cannot process the [Product Name] upgrade pack from [Company
+  Name].
+
+CAUSE
+=====
+
+Any fatal errors in the Migration DLL cause this message.
+
+A less obvious cause is a time out. On the Windows 2000 side of setup, each
+Migration DLL has 60 seconds to process. If processing takes longer than 60
+seconds, Setup will unload the DLL and report that an error has occurred. This
+is especially undesirable when debugging, because stepping through the code
+almost always takes longer than the time-out period.
+
+RESOLUTION
+==========
+
+When debugging a Migration DLL, the time out can be avoided by starting Windows
+2000 Setup from the command line, as follows:
+
+  winnt32.exe /#u:testdlls
+
+In addition to eliminating the time out, the /#u:testdlls parameter causes the
+Migration DLL to load into the Windows 2000 Setup program's process space. Both
+of these features are necessary for successful debugging of the Migration DLL on
+the Windows 2000 side of setup.
+
+Note that the /#u:testdlls parameter should only be used for debugging. A
+Migration DLL should not take longer than one minute to process on the Windows
+2000 side of setup. Efficiency is required, because multiple Migration DLLs may
+need to be processed during the upgrade.
+
+If it is necessary to perform tasks that take longer than one minute, consider
+placing a patch that will do this work on the computer after the upgrade. Use
+the [MOVED] section of the Migrate.inf file to indicate that your application's
+executable is being renamed to the name of your patch. Setup will change all
+shortcut links on the Start menu and Desktop that point to your application's
+executable to now point to the patch. By using this method, when the user
+launches your application after upgrading, they will be presented with a utility
+that will update the application for Windows 2000.
+
+An alternative is to have the stub executable initiate an uninstall of the
+product if it is not possible to update it for Windows 2000.
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For more information on Migration DLLs, see following in the MSDN Library:
+
+  Platform SDK; Management Services; Setup; Migration-Extension Interface
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbmigrate kbOSWin2000 kbSDKPlatform kbMigWin9xtoWin2k kbMigrationDLL kbFAQ kbDSupport kbGrpDSTools kbMigrationDLLFAQ 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWin32SDKSearch kbAudDeveloper kbSDKSearch kbWinAdvServSearch kbWin32sSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

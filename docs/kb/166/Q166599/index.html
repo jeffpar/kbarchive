@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166599: XWEB: MMP files Created by MAPI and CDO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166599: XWEB: MMP files Created by MAPI and CDO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166599/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166599/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166599/","publisher":null,"image":null,"headline":"Q166599: XWEB: MMP files Created by MAPI and CDO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166599-xweb-mmp-files-created-by-mapi-and-cdo">Q166599: XWEB: MMP files Created by MAPI and CDO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166599
+Product(s): Microsoft Exchange
+Version(s): 3.0,5.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+- Microsoft Internet Information Server version 3.0 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you use Collaboration Data Objects (CDO) or Messaging Application
+Programming Interface (MAPI) in an ASP page to access information on Microsoft
+Exchange Server 5.5 or Microsoft Exchange 2000 Server, files with an .mmp
+extension are created in your %windir% directory by default.
+
+CAUSE
+=====
+
+The .mmp file is a temporary file used by Extended MAPI (and hence CDO) to store
+certain profile information during the active session. This file should be
+deleted after the user logs off and the session is closed.
+
+Because these files are created dynamically, the account running the ASP page
+(usually the Microsoft Internet Information Server (IIS) Anonymous Logon
+account: IUSR_Server) needs to have change permissions on the %windir%
+directory.
+
+Also, a registry key exists that you may use to control which directory creates
+the .mmp files.
+
+MORE INFORMATION
+----------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+If the following registry key is present, the .mmp files will be created there
+instead of the \Winnt directory:
+
+  HKEY_LOCAL_MACHINE/Software/Microsoft/Windows Messaging Subsystem
+
+To create the registry entry, do the following:
+
+1. Start Registry Editor (Regedt32.exe) and go to the following key:
+
+  HKEY_LOCAL_MACHINE/Software/Microsoft/Windows Messaging Subsystem
+
+2. On the Edit menu, click Add Value.
+
+3. Type the following values:
+
+String Value: ProfileDirectory 
+Value Data: Path to the directory you want the temporary files to be created in.
+Example: C:\MyComputer\Temporary.
+
+If the registry key/value is not present, the .mmp files are created in the Winnt
+directory as before.
+
+NOTES
+
+- The IIS Anonymous Logon account (IUSR_Server by default) must have change
+  permissions for the directory that you specified as the value for
+  ProfileDirectory.
+
+- MAPI will only check this registry key once per process, so if a process
+  using MAPI is already running when the registry key is set, the process may
+  continue to use the old location to store MMP file. In order to force MAPI to
+  read the registry key, stop and restart the process which uses MAPI.
+
+  For example, if IIS is running an asp page under DLLHost.exe, then DLLHost.exe
+  must be restarted to use this registry key.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbExchangeSearch kbExchange500 kbiis300 kbZNotKeyword2
+Version           : :3.0,5.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

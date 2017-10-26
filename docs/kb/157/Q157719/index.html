@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157719: INFO: VSS 5.0 Readme: Sec. 4 &amp; 5, VSS 4.0/VSS Home Page Users | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157719: INFO: VSS 5.0 Readme: Sec. 4 &amp; 5, VSS 4.0/VSS Home Page Users" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157719/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157719/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157719/","publisher":null,"image":null,"headline":"Q157719: INFO: VSS 5.0 Readme: Sec. 4 &amp; 5, VSS 4.0/VSS Home Page Users","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157719-info-vss-50-readme-sec-4--5-vss-40vss-home-page-users">Q157719: INFO: VSS 5.0 Readme: Sec. 4 &amp; 5, VSS 4.0/VSS Home Page Users</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157719
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual SourceSafe Readme.wri file should be located in the SourceSafe root
+directory. It contains important information, some of which is not available in
+the printed documentation or the Help files. This article covers Sections 4 and
+5, NOTES FOR USERS OF VISUAL SOURCESAFE 4.0 and VISUAL SOURCESAFE HOME PAGE.
+Please see REFERENCES below for more information on the other sections.
+
+The Readme.wri includes:
+
+1.0 SOFTWARE INSTALLATION INFORMATION
+
+  1.1  (Administrator) Creating a Visual SourceSafe Installation on a
+       Server
+
+  1.2  (Each User) Using NETSETUP to Create a Personal Installation
+  1.3  Using the Custom Setup Option
+  1.4  Upgrading a Previous SourceSafe Installation
+  1.5  Using the Installation Maintenance Program
+  1.6  Uninstalling Visual SourceSafe
+  1.7  WININET and MFC DLLs
+
+2.0  GENERAL NOTES AND TIPS
+
+  2.1  Back Up Your Visual SourceSafe Database, and run ANALYZE
+  2.2  Installing Two or More Visual SourceSafe Databases on One Computer
+  2.3. Loss of Network Connection Produces Numerical Error Message
+  2.4  Canceling a Client Setup
+  2.5  System Date/Time
+
+3.0  NEW FEATURES IN VISUAL SOURCESAFE 5.0
+
+  3.1  Archive Utility
+  3.2  Visual Merge
+  3.3  Project Diff
+  3.4  "Edit" Command
+  3.5  Open Databases
+  3.6  Web Features
+
+4.0  NOTES FOR USERS OF VISUAL SOURCESAFE 4.0
+
+  4.1  No 16-bit Support
+  4.2  Get --&gt; Get Latest Version
+  4.3  Results Display
+  4.4  Multiple Project Support in Visual Basic/Visual C++ Integration
+
+5.0  VISUAL SOURCESAFE HOME PAGE
+
+MORE INFORMATION
+================
+
+4.0 NOTES FOR USERS OF VISUAL SOURCESAFE 4.0
+
+Users of Visual SourceSafe 4.x will note a number of major changes to the
+product. New features are listed separately above, but some of the important
+miscellaneous changes are listed below.
+
+4.1 No 16-bit Support
+
+Versions 4 and earlier of Visual SourceSafe came with "16-bit versions" which
+could run in MS-DOS, Microsoft Windows 3.1, and Microsoft Windows for
+Workgroups. These versions are no longer built with Visual SourceSafe 5.0, or
+with any future versions. This means that Visual SourceSafe 5.0 will not run
+under DOS or Microsoft Windows 3.x. Windows 95 (or above) or Windows NT 3.51 (or
+above) is required.
+
+Your 16-bit users can continue to use Visual SourceSafe 4.0a: the format of the
+SourceSafe database did not change between these two releases. These users will
+not have the benefit of the new 5.0 features, but they will be able to continue
+working with your code. The "SS_16Bit" subdirectory on the SourceSafe CD
+contains executables that these users can work with. Note that you must have a
+license for every user on your system, whether they use the 5.0 or 4.0 version
+of the product.
+
+If users are running SourceSafe 4.0 directly from the server, your 5.0 upgrade
+will overwrite their on-line help files. They will no longer be able to bring up
+context-sensitive help from within the SourceSafe Explorer.
+
+4.2 Get --&gt; Get Latest Version
+
+The command previously referred to as "Get" is now called "Get Latest Version."
+
+4.3 Results Display
+
+The results of a Visual SourceSafe command (which files were retrieved after a
+Get operation) used to be displayed in the "results window," a floating dialog
+that appeared, displayed information, and then disappeared. This has now been
+replaced with the "results pane," a permanent resident on the bottom of the
+Visual SourceSafe main screen (below the project tree and file list).
+
+4.4 Multiple Project Support in Visual Basic/Visual C++ Integration
+
+If you chose the "Prompt for Connect" option in Visual Basic or Visual C++
+integration with Visual SourceSafe 4.0, you were given the opportunity to choose
+a SourceSafe database whenever you added a project to SourceSafe for the first
+time, or retrieved a project from SourceSafe for the first time. (If you are not
+familiar with what this paragraph is referring to, you can skip this note.) You
+specified a database by typing in a special string which went in your
+Srcsafe.ini file after the Data_Path variable.
+
+This ability is no longer supported in Visual SourceSafe 5.0, having been
+replaced with the (much friendlier) "Open Databases" dialog. The new
+functionality is quite different from the old, because it involves choosing a
+SRCSAFE.INI file instead of a Data_Path line. Therefore, it may require some
+changes on your part to get the new system to work properly. These changes are
+described below.
+
+4.4.1. If you had different SourceSafe installations, with different Srcsafe.ini
+files for each Data_Path, you do not need to take any extra steps initially. The
+first time you are prompted for a database, you will "Browse" to find the
+alternate Srcsafe.ini file. Thereafter, you will simply be able to choose a
+database from a list whenever you add or retrieve a project for the first time.
+
+4.4.2. If you had only one Srcsafe.ini file, you will need to create more than
+one: one for each Data_Path directory. You can simply copy your existing
+Srcsafe.ini file, remove all the Data_Path entries except one, and remove the
+parentheses for that one. So each Srcsafe.ini file should have only one
+Data_Path, pointing to one data directory. Then, once again, you can browse for
+these paths in the "Open Database" dialog. The recommended place for putting the
+new Srcsafe.ini file is immediately above the DATA directory it refers to: for
+instance, for directory \\code\public\vss\data, create
+\\code\public\vss\srcsafe.ini. If the SRCSAFE.INI is not in this location, the
+"Run SourceSafe" option in your development environment may not work properly.
+
+5.0 VISUAL SOURCESAFE HOME PAGE
+
+Microsoft Visual SourceSafe has a home page on the Internet. This home page
+features a variety of information including articles on SourceSafe, a self-
+running demo that you can download and run, a collection of helpful SourceSafe
+utilities, and much more. The URL for the home page is:
+
+  http://www.msdn.microsoft.com/ssafe
+
+
+REFERENCES
+==========
+
+For more information about other sections of the SourceSafe 5.0 Readme.wri file,
+please see the following articles in the Microsoft Knowledge Base:
+
+  Q157720 INFO: VSS 5.0 Readme: Sec. 1, Software Installation Information
+
+  Q157717 INFO: VSS 5.0 Readme: Sec. 2, General Notes and Tips
+
+  Q157718 INFO: VSS 5.0 Readme: Sec. 3, New Features in VSS 5.0
+
+Additional query words: SLM
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe500
+Version           : WINDOWS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

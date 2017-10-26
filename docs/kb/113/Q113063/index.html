@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113063: FIX: Visual C++ Setup Messages for File Copying Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113063: FIX: Visual C++ Setup Messages for File Copying Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113063/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113063/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113063/","publisher":null,"image":null,"headline":"Q113063: FIX: Visual C++ Setup Messages for File Copying Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113063-fix-visual-c-setup-messages-for-file-copying-errors">Q113063: FIX: Visual C++ Setup Messages for File Copying Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113063
+Product(s): Microsoft C Compiler
+Version(s): 1.00 1.50 | 1.00
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 1.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Installing Visual C++ may cause the Setup program to display the following in a
+message box:
+
+  Internal Error
+
+This happens when the Setup program tries to copy files from the Visual C++
+CD-ROM to a hard drive, and those files are hidden or read-only.
+
+In later versions of Visual C++ you are more likely to receive a dialog box
+containing one of the messages below. You should only encounter the 'Internal
+Error' message if the destination file is corrupted.
+
+For the 32-bit edition of Visual C++ version 2.0 and later:
+
+  Setup cannot open the file C:\msvc20\somefile.exe. The file may be in use by
+  another application, or marked read-only. Close the application or change the
+  file's read-only attribute and try again.
+
+For the 16-bit version of Visual C++ for Windows, version 1.51 or later:
+
+  Setup cannot open the destination file C:\msvc\somefile.exe.
+
+The dialog boxes have three options, Abort, Retry and Ignore.
+
+- Abort will terminate the setup program.
+
+- Retry will try to copy the file again.
+
+- Ignore will cause the setup program to move on and try to copy the next file
+  to the hard disk.
+
+CAUSE
+=====
+
+The Visual C++ Setup program copies the majority of files to its own directory
+(by default, C:\MSVC). It also copies some of the files to the Windows directory
+and its subdirectories. Any hidden, read-only, or corrupted files with the same
+names in these directories may cause the Setup program to fail. These files have
+been installed by the previous installations of the Visual C++ or by other
+software packages. The Visual C++ Setup program can return the "Internal Error"
+message when its attempt to overwrite a corrupted, hidden, read-only or
+share-locked file fails.
+
+RESOLUTION
+==========
+
+When the "Internal Error" message occurs, the VC++ Setup program displays a
+filename associated with its source directory and target directory in the VC++
+Setup dialog box. In the case of a hidden or read-only file in the target
+directory, the Setup program displays the name of the file that causes the
+problem. To resolve the problem of a hidden or read-only file, follow the
+procedure below:
+
+1. Terminate the Setup program.
+
+2. Open an MS-DOS prompt under Windows.
+
+3. Change to the directory that was displayed on the target line in the VC++
+  Setup dialog box.
+
+4. Examine the attributes of the file that the Visual C++ Setup program failed
+  to install using the ATTRIB command in MS-DOS. For example, to examine the
+  attributes of TEST.DLL, type the following:
+
+        ATTRIB TEST.DLL
+
+  Typing ATTRIB without any arguments will give attribute information on all the
+  files in the directory. The output from ATTRIB will resemble the following
+
+     ARH    C:\TEST.DLL
+
+  where A stands for "archive", R stands for "read-only", and H represents
+  "hidden". Not all attributes will be shown for a given file. Consult your
+  MS-DOS documentation for more information on ATTRIB.
+
+5. If it is a hidden file, for example, change the hidden attribute on the file,
+  using the ATTRIB command:
+
+        ATTRIB -H TEST.DLL
+
+  You may also use File Manager in Windows to change the file attributes by
+  selecting Properties from the File menu after selecting the file in question.
+
+6. Reinstall Visual C++.
+
+If the file is not a hidden or read-only file, the file may be corrupted. To
+resolve the problem in this case is more complicated because the Setup program
+does not display the name of the corrupted file, but the last file the Setup
+program installed successfully. A possible solution to the problem is discussed
+in the "MORE INFORMATION" section below.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. The problem was fixed in Visual C++ for Windows 1.51 and Visual
+C++ 2.0 32-bit edition.
+
+MORE INFORMATION
+================
+
+Some of the files copied to the Windows subdirectory by the VC++ Setup program
+are related to OLE (Object Linking and Embedding) 2.0 retail dynamic-link
+libraries (DLLs) and symbol files. Any system with OLE 2.0 applications
+installed may already have some of these DLLs installed by the applications. For
+some reason, one or more of these DLLs may have hidden or read-only attributes,
+or have been corrupted. The OLE 2.0 files typically cause an "Internal Error"
+during the installation of Visual C++.
+
+OLE 2.0 retail DLL and symbol files copied by the VC++ Setup program are:
+
+  COMPOBJ.DLL     COMPOBJ.SYM     OLE2DISP.DLL    OLE2NLS.DLL
+  OLE2NLS.SYM     OLE2.DLL        OLE2.SYM        OLE2PROX.SYM
+  OLE2CONV.DLL    OLE2CONV.SYM    OLE2PROX.DLL
+  CTL3DV2.DLL     TYPELIB.DLL     TYPELIB.SYM
+  CTL3D.DLL       STORAGE.DLL     OLE2DISP.SYM
+
+These files are copied from \MSVC\NODEBUG on the Visual C++ CD-ROM into the
+\WINDOWS\SYSTEM directory if the option of installing OLE 2.0 retail DLLs is
+selected. The option of installing OLE 2.0 retail DLLs is automatically selected
+if a user selects the "Typical Installation" option during setup. This option
+can also be enabled by selecting the "Custom Installation" and having the "MFC
+OLE" check box selected. Notice that selecting the "MFC OLE" check box in the
+"Custom Installation" dialog box will not stop the Setup program from installing
+OLE 2.0 retail DLLs. The "OLE SDK" button, located next to the "MFC OLE" check
+box, needs to be chosen to enable or disable this option.
+
+In the case of a corrupted file in the \WINDOWS\SYSTEM directory, deleting all
+the files listed above and then reinstalling Visual C++ should resolve the
+problem in most cases. If not, please contact Microsoft Product Support Services
+at (425) 635-7007.
+
+It is also possible that some of the files from the previous installation of the
+VC++ may be corrupted for some reason. The following files are copied to the
+Windows directory by the VC++ Setup program. Delete them to reinstall Visual C++
+if necessary.
+
+\WINDOWS\SYSTEM Directory
+-------------------------
+
+  FTENGINE.DLL     FTUI.DLL           MVAPI.DLL
+  CIRC2.VBX        GRID.VBX           VC.LIC
+  CCAPI100.DLL     CUECARD2.DLL       QRYINTL.DLL
+  WINRFS.DLL       TECHNOTE.DLL       STDOLE.TLB
+  MFC250.DLL       MFC250D.DLL        MFCD250.DLL
+  MFCD250D.DLL     MFCO250.DLL        MFCO250D.DLL
+  MFCOLEUI.DLL
+
+\WINDOWS Directory
+------------------
+
+  CCARD100.EXE
+
+\WINDOWS\MSAPPS\MSQUERY Directory
+---------------------------------
+
+  MSQUERY.CUE       MSQUERY.EXE       MSQUERY.HLP
+
+
+Additional query words: 1.00 1.50
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVCsearch kbAudDeveloper kbvc150 kbvc100
+Version           : 1.00 1.50 | 1.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

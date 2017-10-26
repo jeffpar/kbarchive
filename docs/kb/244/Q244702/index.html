@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244702: XFOR: Exchange Server 5.5 Post-SP3 Migration Fixes Available | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244702: XFOR: Exchange Server 5.5 Post-SP3 Migration Fixes Available" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244702/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244702/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244702/","publisher":null,"image":null,"headline":"Q244702: XFOR: Exchange Server 5.5 Post-SP3 Migration Fixes Available","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244702-xfor-exchange-server-55-post-sp3-migration-fixes-available">Q244702: XFOR: Exchange Server 5.5 Post-SP3 Migration Fixes Available</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244702
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55kbfixlist
+Last Modified: 23-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the article numbers for Exchange Server 5.5 migration bugs
+that have been fixed since Exchange Server 5.5 Service Pack 3 was released. For
+information about how to obtain the fixes listed in this article, click the
+article number next to the title of the article about that issue to view the
+article in the Microsoft Knowledge Base.
+
+NOTE: Exchange Server fixes for a particular component are cumulative and contain
+all previous fixes for that component. Fixes with a particular version number
+contain all fixes with an earlier version number.
+
+MORE INFORMATION
+================
+
+Migration fixes include the following files:
+
++--------------------------------+
+| File name    | Current version | 
++--------------------------------+
+| Lsntshc.dll  | 5.5.2652.13     | 
++--------------------------------+
+| Mlmig32.dll  | 5.5.2652.39     | 
++--------------------------------+
+| Mlmignts.dll | 5.5.2652.13     | 
++--------------------------------+
+
+Fixes Released on July 7, 2000
+------------------------------
+
+The following files are modified:
+
+- Lsntshc.dll added and incremented to version 5.5.2652.13
+- Mlmig32.dll incremented to version 5.5.2652.39
+- Mlmignts.dll incremented to version 5.5.2652.13
+
+The following fixes are included:
+
+  Q247291 XFOR: Migration Is Slow to Enumerate Names from a Large Notes Address
+  Book
+
+  Q247622 XFOR: Migrating from Lotus Stops the Wizard with a Dr. Watson Event
+
+  Q249883 XFOR: Migration Wizard Reports Error Message 12024 When Migrating from
+  Notes
+
+  Q251018 XFOR: Configure Migration Wizard with Lotus cc:Mail 8.5 32-bit
+  Executables
+
+  Q254788 XFOR: Schedule+ 7.5 Users Are Always Prompted for a Password After
+  Migration from MS Mail
+
+  Q257698 XFOR: Migration Wizard Stops Responding While Migrating Calendar Data
+  from Lotus Notes
+
+  Q262989 XFOR: Lotus cc:Mail Migration Event 1030 Error Message Caused By
+  Return Receipt
+
+Fixes Released on September 15, 1999
+------------------------------------
+
+NOTE: The Lsntshc.dll file is not included with these fixes. This file is added
+later. The following files are modified:
+
+- All files incremented to version 5.5.2651.29
+
+The following fixes are included:
+
+  Q237886 XFOR: Message Attachment Name Incorrectly Changed in Migration from
+  cc:Mail DB6 Post Office
+
+  Q237993 XFOR: Users Cannot Reply to SMTP Messages in a PST After Migration
+
+  Q238756 XFOR: Migration Fails to Migrate Messages from a GroupWise 5.x PO with
+  Forwarded Appointments
+
+  Q238784 XFOR: Not All Messages Are Migrated from a Lotus cc:Mail DB8 Post
+  Office and 1032 Events Are Produced
+
+  Q238850 XFOR: Migration Fails with Error Message and Event 6003
+
+  Q240873 XFOR: Notes Migration Source Extractor Fails To Migrate Mail
+
+  Q241292 XADM: Collabra Migration Objects - File Attachments Not Visible
+
+  Q241553 XFOR: Migrated Message Returned as Not Deliverable for Migrated Lotus
+  cc: Mail User
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbfixlist
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128576: PC WSPlus: Schedule+ Access Library Error Codes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128576: PC WSPlus: Schedule+ Access Library Error Codes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128576/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128576/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128576/","publisher":null,"image":null,"headline":"Q128576: PC WSPlus: Schedule+ Access Library Error Codes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128576-pc-wsplus-schedule-access-library-error-codes">Q128576: PC WSPlus: Schedule+ Access Library Error Codes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128576
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0,1.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-SEP-1999
+
+1.00 1.00a
+WINDOWS
+kbref
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+While an application written using the Schedule+ API is running, it may return a
+numeric error code such as:
+
+  Application failed with Error #xxxxx
+
+The following are the Schedule+ API result codes, and the errors they can return.
+This information is taken from the SPLUS.DLL file included with the Schedule+
+Access Libraries:
+
+Error                                 Number
+
+SPLUS_E_INVALID_SENT_FOR            = 10000
+SPLUS_E_NOT_INSTALLED               = 10005
+SPLUS_E_NO_ITEMS                    = 10010
+SPLUS_E_NO_SCHEDULE                 = 10015
+SPLUS_E_NO_PRIVILEGE                = 10020
+SPLUS_E_INVALID_ADDRESS_FORMAT      = 10025
+SPLUS_E_INVALID_USER                = 10030
+SPLUS_E_INVALID_ITEM                = 10035
+SPLUS_E_INVALID_TYPE                = 10040
+SPLUS_E_INVALID_FLAGS               = 10045
+SPLUS_E_INVALID_ASSOC               = 10050
+SPLUS_E_INVALID_ORGANIZER           = 10055
+SPLUS_E_INVALID_ORGANIZER_ID        = 10060
+SPLUS_E_INVALID_ATTENDEES           = 10065
+SPLUS_E_INVALID_TIME                = 10070
+SPLUS_E_INVALID_PRIORITY            = 10075
+SPLUS_E_INVALID_MONTH               = 10080
+SPLUS_E_INVALID_RESTRICTION         = 10085
+SPLUS_E_ALARM_RING_IN_PAST          = 10090
+SPLUS_E_NOT_ONLINE                  = 10095
+SUCCESS_NO_SCHEDULE                 = 10100
+
+MORE INFORMATION
+================
+
+If the returned error code is other than the ones listed above, then the error
+number is a reference to the MAPI error result code. These can be found in the
+MAPI.H file, or see the following MAPI error codes article in the Microsoft
+Knowledge Base:
+
+  Q119647 PC MAPI: List of MAPI Error Codes
+
+For additional information, consult the documentation that comes with the
+Schedule+ Libraries, and the specific function call being made that is returning
+the error.
+
+Additional query words: schedule plus 1.00 1.00a SAPI
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

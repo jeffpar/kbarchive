@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98174: Setting/Checking Inherited vs. Explicit Permissions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98174: Setting/Checking Inherited vs. Explicit Permissions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98174/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98174/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98174/","publisher":null,"image":null,"headline":"Q98174: Setting/Checking Inherited vs. Explicit Permissions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98174-settingchecking-inherited-vs-explicit-permissions">Q98174: Setting/Checking Inherited vs. Explicit Permissions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98174
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+This article explains how to recognize inherited versus explicit permissions and
+discusses how each can be set.
+
+MORE INFORMATION
+================
+
+To determine if a file or directory has an ACL on it, or is just getting
+permissions from its parent, do the following:
+
+From the command line, use the "NET ACCESS d:\path" or "NET ACCESS
+d:\path\filename" command. The backslash (\) after the colon in the drive letter
+is required as a part of the proper syntax of the command. A net2222 means that
+no ACL is applied directly to that directory or file. There is a possibility
+that you will get the resource name listed but with no assigned permissions.
+This indicates that there was once an ACL associated with the resource but that
+it was removed at some point in time with the Revoke or Revoke All option under
+Zoom in the View Permissions dialog box of View, Shared Resources. The same
+result will occur if the command line "NET ACCESS /revoke username" is used for
+the only user with permissions for that resource.
+
+In NET ADMIN initial screen, choose View then Shared Resources, and select a
+sharename. Next, choose View Permissions, then select the directory or file you
+want information on and select Zoom. If the "Use default permissions" box is
+checked, the directory or file you selected is inheriting permissions from a
+higher level.
+
+If you use the Permit Tree option of the View Permissions dialog box under View,
+Shared Resources, then explicit permissions will be applied to all
+subdirectories under the Permit Tree point. These permissions will not be
+applied to the files in these directories.
+
+If you use the Revoke Tree option of the View Permissions dialog box under View,
+Shared Resources, then all implicit and explicit permissions will be removed
+from the point at which you did the Revoke Tree and the tree below it. If this
+is done, a "NET ACCESS ..." on any part of the tree will produce a net2222.
+
+If you assign an explicit permission for a user or group to a resource when
+implicit permissions already exist, then one of two changes will be made. If
+this is done by selecting Permit in the View Permissions dialog box of View,
+Shared Resources, then the implicit permissions will be converted to explicit
+permissions and the new explicit permission will be added. If "NET ACCESS
+&lt;share point&gt; /add &lt;user name&gt;:&lt;permissions&gt;" is used, then
+the implicit permissions will be removed, leaving only the permissions specified
+in the "NET ACCESS ..." command applied to the resource.
+
+Additional query words: 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

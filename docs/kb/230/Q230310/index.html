@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q230310: IIS 4.0 Online Troubleshooting Information Include with NTOP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q230310: IIS 4.0 Online Troubleshooting Information Include with NTOP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/230/Q230310/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/230/Q230310/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/230/Q230310/","publisher":null,"image":null,"headline":"Q230310: IIS 4.0 Online Troubleshooting Information Include with NTOP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q230310-iis-40-online-troubleshooting-information-include-with-ntop">Q230310: IIS 4.0 Online Troubleshooting Information Include with NTOP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q230310
+Product(s): Internet Information Server
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbDSupport kbIIS kbiis400
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The More Information section of this article contains a copy of the
+Troubleshooting Information file included with the Windows NT 4.0 Option Pack.
+
+The file containing this troubleshooting information is located at:
+
+   &lt;%SystemRoot%&gt;\Help\iis\htm\core\iitrblsh.htm
+
+NOTE: The formatting and layout of the text below may vary slightly from the
+original.
+
+MORE INFORMATION
+================
+
+Troubleshooting
+---------------
+
+If you are having difficulty with your Web server, use the following sections of
+this topic to troubleshoot your problems.
+
+- Getting Assistance While You Work
+
+- Installation
+
+- Testing Your Installation
+
+- User Rights
+
+- Anonymous Authentication
+
+- Basic Authentication
+
+Getting Assistance While You Work
+---------------------------------
+
+Peer-to-peer newsgroups are available to help you interact with other users of
+our products, including Microsoft Most Valuable Professionals (MVPs). You can
+use any newsreader software to access these newsgroups, however, we suggest
+using Internet Mail and News. Regardless of the newsreader or news client you
+are using, you may need to configure it to read the newsgroups. When prompted
+for News Server, specify "msdn.microsoft.com/support". You do not need to enter
+an account name or password. Before posting to the newsgroups, please review the
+Microsoft Newsgroup Rules of Conduct. For more information about Microsoft
+newsgroups please see http://www.msdn.microsoft.com/support/ and choose Internet
+Information Server.
+
+Installation
+------------
+
+If you are having trouble installing IIS, or operating the program following
+installation, check the following items.
+
+Uninstalling Previous Versions:
+
+IIS 4.0 does not upgrade IIS 4.0 Alpha, Beta 1, or Beta 2 automatically. If you
+have IIS 4.0 Alpha, Beta 1, or Beta 2, you must uninstall it before installing
+IIS 4.0. You can do this by using the "Add/Remove Programs" application in
+Control Panel or using the IIS setup program:
+
+1. Click "Start", point to "Programs", point to "Microsoft Internet Information
+  Server", and click "Internet Information Server Setup".
+
+2. Select "Remove All".
+
+Testing Your Installation:
+
+After installing, you can test your installation by using Internet Explorer to
+view the files in your home directory.
+
+To test a Web site connected to the Internet:
+
+1. Ensure that your Web server has HTML files in the Wwwroot folder.
+
+2. Start a Web browser, such as Internet Explorer on a computer that has an
+  active connection to the Internet. This computer can be the computer you are
+  testing, although using a different computer on the network is recommended.
+
+3. Type in the URL for the home directory of your new Web site.
+
+  The URL is "http://" followed by the name of your Web site, followed by the
+  path of the file you want to view. (Note the forward slash marks.) For
+  example, if your site is registered in DNS as "msdn.microsoft.com" and you
+  want to view the file in the root of the home directory, in the "Address" box
+  you type:
+  http://msdn.microsoft.com/
+  then press the Enter key. The home page appears on the screen.
+
+To test a Web site on your intranet:
+
+1. Ensure that your computer has an active network connection and that the WINS
+  server service (or other name resolution method) is functioning.
+
+2. Start a Web browser, such as Microsoft Internet Explorer.
+
+3. Type in the Uniform Resource Locator (URL) for the home directory of your new
+  server. The URL is "http://" followed by the Windows Networking name of your
+  server, followed by the path of the file you want to view. (Note the forward
+  slash marks.) For example, if your Web site is registered with the WINS
+  server as "Admin1" and you want to view the file Homepage.htm in the root of
+  the home directory, in the "Address" box you type:
+  http://admin1/homepage.htm
+  then press Enter. The home page appears on the screen.
+
+User Rights
+-----------
+
+If a user is having trouble viewing your published files (that is, he or she is
+receiving HTTP "403; Forbidden" or similar HTTP errors when attempting to
+request a Web page), then there is most likely a problem related to the user
+rights that are configured on your Web site. In order to give users access to
+your published files, check the following items.
+
+1. Find the specific file, directory, or virtual directory which the user cannot
+  access in Internet Service Manager.
+
+2. View the properties for that file, directory, or virtual directory.
+
+3. Select the File property sheet (if viewing properties of a file) or Directory
+  property sheet (if viewing the properties of a directory or virtual
+  directory). Ensure that the directory or file has Read access permissions
+  (the Read check box should be selected).
+
+4. Select the File Security or Directory Security property sheet.
+
+5. Ensure that the user has either anonymous access, basic authentication
+  permissions, or Windows NT Challenge/Response permissions that will allow him
+  or her to view the content by clicking the Edit button in the "Anonymous
+  Access and Authentication Control" field.
+
+6. Click the Edit button in the "TCP/IP and Domain Name Restrictions" field to
+  ensure that the client's computer, group of computers, or domain name has not
+  been restricted from accessing your resource.
+
+Anonymous Authentication
+------------------------
+
+If an anonymous user cannot access your site, check the following.
+
+Ensure that the anonymous user's password is the same in both Internet Service
+Manager and User Manager:
+
+1. In ISM, select the Web site, virtual directory, directory, or file on which
+  you need to check anonymous access and view its properties.
+
+2. Select the File Security property sheet (if viewing properties of a file) or
+  Directory Security property sheet (if viewing properties of a Web site,
+  virtual directory, or directory) and click the Edit button in the "Anonymous
+  Access and Authentication Control" field.
+
+3. In the "Authentication Methods" dialog box, make sure that the "Allow
+  Anonymous Access" check box is selected.
+
+4. Click the Edit button to view the user name and password that are used when
+  an anonymous user connects to your site. In order to enable your Web site to
+  automatically synchronize your anonymous password settings with those set in
+  Windows NT, select the "Enable Automatic Password Synchronization" check box
+  (it is selected by default for all resources that allow anonymous access).
+
+Ensure that the anonymous user has "Log on locally rights" in Windows NT User
+Manager for Domains:
+
+1. Launch User Manager from the Microsoft Management Console (MMC) toolbar.
+
+2. In User Manager, select "User Rights" in the Policies menu.
+
+3. Choose the right "Log On Locally" and make sure IUSR_ (or your anonymous
+  account) shows up in the list.
+
+If you are having trouble preventing an anonymous user from accessing your site,
+please check the following:
+
+1. Select the File Security property sheet (if viewing properties of a file) or
+  Directory Security property sheet (if viewing properties of a Web site,
+  virtual directory, or directory) and click the Edit button in the "Anonymous
+  Access and Authentication Control" field.
+
+2. In the "Authentication Methods" dialog box, make sure that the "Allow
+  Anonymous Access" check box is not selected.
+
+Basic Authentication
+--------------------
+
+If users with Basic Authentication rights are having trouble accessing your site,
+please check the following.
+
+Ensure that the login user has "Log on locally rights" in Windows NT User Manager
+for Domains:
+
+1. Launch User Manager from the Microsoft Management Console (MMC) toolbar.
+
+2. In User Manager, select "User Rights" in the Policies menu.
+
+3. Choose the right "Log On Locally" and make sure IUSR_ (or your anonymous
+  account) shows up in the list.
+
+Make sure that you specify a Default Logon Domain for the user: in the
+Authentication Methods dialog box, click Edit in the "Basic Authentication"
+field and enter the Domain Name.
+
+If you are concerned about the safety of transmitting passwords in clear text (an
+industry standard that applies to Basic Authentication), use Secure Sockets
+Layer (SSL) to secure clear text passwords. You can configure SSL Client
+authentication by launching the Secure Communications dialog box from the
+Directory Security (or File Security) property sheet. Use Key Manager to create
+Key requests and the Secure Communications dialog box to enable an SSL
+Authentication scheme.
+-------------------------------------------------------------------------------
+
+Copyright Information:
+
+(C) 1997 Microsoft Corporation These materials are provided "as-is," for
+informational purposes only.
+
+Neither Microsoft nor its suppliers makes any warranty, express or implied with
+respect to the content of these materials or the accuracy of any information
+contained herein, including, without limitation, the implied warranties of
+merchantability or fitness for a particular purpose. Because some
+states/jurisdictions do not allow exclusions of implied warranties, the above
+limitation may not apply to you.
+
+Neither Microsoft nor its suppliers shall have any liability for any damages
+whatsoever including consequential, incidental, direct, indirect, special, and
+lost profits. Because some states/jurisdictions do not allow exclusions of
+implied warranties, the above limitation may not apply to you. In any event,
+Microsoft's and its suppliers' entire liability in any manner arising out of
+these materials, whether by tort, contract, or otherwise shall not exceed the
+suggested retail price of these materials.
+
+Additional query words: tshoot trouble-shooting trouble-shoot kbreadme readme iitrblsh.htm iitrblsh akz
+
+======================================================================
+Keywords          : kbDSupport kbIIS kbiis400 
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

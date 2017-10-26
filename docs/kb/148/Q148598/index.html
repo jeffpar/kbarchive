@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148598: PPT7: Menu Text Jumbled or Out of Place in PowerPoint for Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148598: PPT7: Menu Text Jumbled or Out of Place in PowerPoint for Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148598/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148598/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148598/","publisher":null,"image":null,"headline":"Q148598: PPT7: Menu Text Jumbled or Out of Place in PowerPoint for Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148598-ppt7-menu-text-jumbled-or-out-of-place-in-powerpoint-for-window">Q148598: PPT7: Menu Text Jumbled or Out of Place in PowerPoint for Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148598
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): kbui
+Last Modified: 16-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In PowerPoint for Windows 95, the menu text or the commands on the menus may
+appear in the wrong place or may appear jumbled. For example, the order of the
+File, Edit, View, Insert, and Format menus may be changed, or they may not
+appear in English.
+
+Note that you will not experience this behavior in other Office programs.
+
+CAUSE
+=====
+
+This problem will occur if the Ppintl.dll file is corrupted. This file is
+located in the \Powerpnt or in the \Msoffice\Powerpnt folder.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Rename Ppintl.dll to Ppintl.old or Ppintl.bak.
+
+2. Run PowerPoint or Office Setup.
+
+3. In the Maintenance Mode dialog box, click Reinstall.
+
+4. Follow the instructions on your screen.
+
+
+MORE INFORMATION
+================
+
+Ppintl.dll contains the text strings that must be translated for international
+versions of PowerPoint. This driver is in part responsible for the appearance of
+menu names, commands on menus, Tip Of The Day text, alerts, and so on. Because
+of this, it may produce strange behavior if it is corrupted.
+
+Additional query words: 7.00 out of order mixed up disordered ppt ppt7 ppt95 powerpnt
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

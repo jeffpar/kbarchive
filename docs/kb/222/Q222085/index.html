@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q222085: How to Scale Microsoft Print Services Using WLBS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q222085: How to Scale Microsoft Print Services Using WLBS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/222/Q222085/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/222/Q222085/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/222/Q222085/","publisher":null,"image":null,"headline":"Q222085: How to Scale Microsoft Print Services Using WLBS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q222085-how-to-scale-microsoft-print-services-using-wlbs">Q222085: How to Scale Microsoft Print Services Using WLBS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q222085
+Product(s): Microsoft Windows NT
+Version(s): 1.0,2000,4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbprint
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Datacenter Server 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Load Balancing Service 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to use the Windows NT Load Balancing Service (WLBS) to
+scale print services across the cluster.
+
+Requirements
+------------
+
+- Printer shares to be accessed by clients are identically available on all
+  cluster hosts.
+
+- Clients must be able to resolve the cluster's NetBIOS name to the cluster's
+  virtual IP address (VIP) by using WINS or LMHOSTS. This name is the host name
+  within the fully qualified domain name (FQDN) that is typed in the WLBS Setup
+  dialog box.
+
+- Use two network interface cards (NICs) on each cluster host. One NIC is for
+  the dedicated IP address, and the other one is for the virtual IP address.
+  Two NICs are needed because NBT binds only to the first IP address in a NIC,
+  and WLBS needs the VIP listed first to provide NBT support (single NIC WLBS
+  configurations require the dedicated IP address to be listed first to retain
+  normal access to the cluster host with its dedicated IP address).
+
+- Windows 2000 clients must use the cluster VIP instead of the cluster name
+  because Windows 2000 uses Direct Hosting (SMB over TCP/IP) which checks the
+  endpoint name of the cluster as a security feature (the check does not work
+  because the cluster name is not the one configured on the Network
+  Identification tab of system properties). If you use the cluster name instead
+  of the VIP, a "duplicate name" error message is returned.
+
+
+Configuring Port Rule
+---------------------
+
+Create a port rule for port 139, TCP and UDP, with Multiple Hosts filtering mode
+and Single client affinity.
+
+Accessing Cluster Printers
+--------------------------
+
+1. Map a printer port to the cluster's printer by typing the following command
+  at the command prompt:
+
+  "net use lpt&lt;N&gt;: \\&lt;cluster&gt;\printer" (without the quotation
+  marks)
+
+  where &lt;N&gt; is the LPT port number you want to use and &lt;cluster&gt; is
+  the cluster's NetBIOS name (or the cluster VIP address if you are using
+  Windows 2000).
+
+2. Set up a local printer to use the mapped lpt&lt;N&gt; port.
+
+MORE INFORMATION
+================
+
+WLBS does not support browsing. This is why the cluster printers have to be
+accessed by mapping a printer port. The cluster's NetBIOS name does not appear
+in Network Neighborhood. The cluster hosts will not advertise the cluster's
+NetBIOS name, but they will answer requests made to it.
+
+WLBS NBT support is enabled by default. You can disable this support by changing
+the NBTSupportEnable registry parameter from 1 to 0. For additional information
+about how to modify this parameter, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q193601 Registry Parameters for Windows NT Load Balancing Service
+
+For additional information about Direct Hosting and the new endpoint name
+checking feature in Windows 2000, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q254210 Cannot Use Net View \\Localhost Command
+
+Additional query words: load balancing convoy
+
+======================================================================
+Keywords          : kbnetwork kbprint 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbwin2000Serv kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTLBS100 kbWinNTLBSSearch kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch kbWinDataServSearch
+Version           : :1.0,2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

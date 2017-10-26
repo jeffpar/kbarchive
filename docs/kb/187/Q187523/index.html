@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187523: XADM: How to Remove Duplicate EventConfig Folders | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187523: XADM: How to Remove Duplicate EventConfig Folders" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187523/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187523/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187523/","publisher":null,"image":null,"headline":"Q187523: XADM: How to Remove Duplicate EventConfig Folders","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187523-xadm-how-to-remove-duplicate-eventconfig-folders">Q187523: XADM: How to Remove Duplicate EventConfig Folders</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187523
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If a server is removed from a site with the Event Service running and then
+reinstalled in the site, duplicate copies of a Microsoft Exchange Server 5.5
+EventConfig public folder may appear in the Events Root folder. These ghosted
+folder copies cannot be deleted through raw properties in the Exchange Server
+Administrator program and must be deleted using the command line utility
+Events.exe.
+
+MORE INFORMATION
+================
+
+If you start the Exchange Server Setup program and select Remove All with the
+Event Service running, the server you are removing will appear in the drop-down
+lists of servers in the Exchange Server Administrator program. This happens when
+the deletion of the server's corresponding EventConfig public folder is not
+replicated to other servers before the process of removing the server is
+completed. When you reinstall the server in the site, duplicate or ghosted
+EventConfig_&lt;ServerName&gt; folders will appear in the Events Root folder
+beneath the Systems Folder in the Exchange Server Administrator program.
+
+If this happens, removal of the server's second EventConfig folder can be
+accomplished by completing the following steps:
+
+1. In Microsoft Windows NT, click Start, point to Programs, and then select
+  Command Prompt to open a command window.
+
+2. From the Command Prompt, type "net stop MSExchangeES" (without the quotation
+  marks) to stop the Exchange Server Event service.
+
+3. In the Exchsrvr\Bin directory (or the directory where Microsoft Exchange
+  Server is installed), run Events.exe /c:&lt;ServerName&gt;, (where
+  &lt;ServerName&gt; is the name of the server that has the duplicate
+  EventConfig folders). The command /c indicates cleanup mode. This removes the
+  EventConfig folder from the folder hierarchy so that the server no longer
+  appears in the Events Root folder.
+
+  NOTE: When you run Events.exe, the account you are logged on as must be the
+  service account, otherwise, a MAPI error is returned. Also note that each
+  time you run the events /c command, it removes only one folder. So, if you
+  have 4 event config folders for a particular server, you need to run the
+  command a total of four times to get rid of all of the folders.
+
+4. Restart the Event Service by typing "net start MSExchangeES" (without the
+  quotation marks).
+
+5. In the Microsoft Exchange Server Administrator program, press the F5 key to
+  refresh the screen. The duplicate folders should no longer appear.
+
+Additional query words: event config dupe mulitple
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

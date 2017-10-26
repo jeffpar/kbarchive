@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113933: Disk Striping And Disk Striping With Parity In Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113933: Disk Striping And Disk Striping With Parity In Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113933/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113933/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113933/","publisher":null,"image":null,"headline":"Q113933: Disk Striping And Disk Striping With Parity In Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113933-disk-striping-and-disk-striping-with-parity-in-windows-nt">Q113933: Disk Striping And Disk Striping With Parity In Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113933
+Product(s): Microsoft Windows NT
+Version(s): 3.1,4.0
+Operating System(s): 
+Keyword(s): kbother
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.1, 4.0 
+- Microsoft Windows NT Workstation versions 3.1, 4.0 
+- Microsoft Windows NT Advanced Server, versions 3.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT and Windows NT Advanced Server disk striping (RAID Level 0) creates a
+disk file system called a stripe set by dividing data into blocks and spreading
+them in a fixed order across all disks in an array. By adding data to all
+partitions in the set at the same rate, disk striping offers the best
+performance of all Windows NT disk management strategies.
+
+Windows NT Server versions allow you to establish fault tolerant disk striping
+with parity (RAID Level 5), which stores parity information along with striped
+data on different disks in the array for redundancy. Disk striping with parity
+is available only with Windows NT Advanced Server, not with Windows NT.
+
+The rest of this article describes disk striping with and without parity in
+Windows NT and Server versions.
+
+MORE INFORMATION
+================
+
+Disk Striping in General--With or Without Parity
+------------------------------------------------
+
+- Stripe sets are user-transparent: when they are created, all partitions are
+  assigned the same drive letter.
+
+- All partitions in a stripe set are the same size. If you select free disk
+  areas of different sizes when you create a stripe set, no stripe will be
+  larger than the smallest free disk area.
+
+- Stripe sets must be created from free disk space; they cannot be used on
+  existing partitions.
+
+- Stripe sets are file system independent and can be formatted with any Windows
+  NT disk file system.
+
+- Disk Administrator assigns the same color to all stripe sets. The status bar
+  in the lower left corner of the Disk Administrator window tells whether a
+  stripe set has parity or not.
+
+- Only the Windows NT Advanced Server installation that created the stripe set
+  will normally recognize it; other operating systems will not. MS-DOS
+  identifies stripe set partitions as Non-DOS. Other installations of Windows
+  NT and Windows NT Advanced Server identify stripe set partitions as being of
+  "Unknown" file system type.
+
+- An installation of Windows NT or Windows NT Advanced Server can restore disk
+  configuration information and thereby recognize a stripe set created by a
+  different installation on the same machine. See page 529 of the "Windows NT
+  Advanced Server System Guide" for more information.
+
+Disk Striping Without Parity
+----------------------------
+
+- Disk striping without parity provides no fault tolerance; if one disk in the
+  stripe is bad or damaged, the entire disk stripe is lost.
+
+- A stripe set can be created on as few as 2 and as many as 32 disks. Only one
+  stripe on a stripe set can be located on each physical disk.
+
+- Disk striping offers the best performance of all Windows NT disk management
+  strategies.
+
+- Disk Administrator assigns the same color to all stripe sets. For a stripe
+  set without parity, the status bar in the lower left corner of the Disk
+  Administrator window says simply "Stripe set #X." parity).
+
+- For information on creating and managing a stripe set, consult the "Windows
+  NT System Guide" or "Windows NT Advanced Server System Guide."
+
+Disk Striping With Parity
+-------------------------
+
+- A stripe set with parity can be created on as few as 3 and as many as 32
+  disks. Only one stripe on a stripe set with parity can be located on each
+  physical disk.
+
+- The amount of disk space used to store parity information is always equal to
+  the size of one of the partitions in the set. For example, if a stripe set
+  with parity is created on five disks, each with a 500 MB partition used for
+  the stripe, 500 MB is used for parity information and 2000 MB is available
+  for data storage.
+
+- Regardless of how many disks are used in a stripe set with parity, data is
+  recoverable only if no more than one disk is lost. If two or more disks are
+  lost, the data is unrecoverable.
+
+- The fault tolerance driver (FTDISK.SYS) makes the loss of one partition in a
+  stripe set with parity invisible--you can read and write to a set with a lost
+  partition as if it were healthy. But the stripe set is no longer fault
+  tolerant: the loss of any remaining partitions will result in an
+  unrecoverable loss of all data in the stripe set.
+
+- The status bar in Disk Administrator indicates stripe set condition. When a
+  partition in the set is selected, Disk Administrator displays information
+  about the set in the lower left corner of the window, as in: "Stripe set with
+  parity #0 [HEALTHY]" Other status indicators include:
+
+  [NEW]: this appears right after the stripe set has been created in Disk
+  Administrator, and before the shutdown of the system and the actual
+  generation of the set.
+
+  [INITIALIZING]: this appears during stripe set generation.
+
+  [RECOVERABLE]: this appears when one of the partitions in the set has been
+  lost but the other partitions are undamaged, or when one partition in the set
+  is not synchronized with the others.
+
+- Disk Administrator assigns the same color to all stripe sets. To tell which
+  have parity, look at the status bar in the lower left corner of the Disk
+  Administrator window. For a stripe set with parity, the description says
+  "Stripe set with parity #X."
+
+- For information on creating and managing a stripe set with parity, consult
+  the "Windows NT Advanced Server System Guide" and the "Windows NT Concepts
+  and Planning Guide."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ400 kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :3.1,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

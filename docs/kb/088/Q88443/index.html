@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q88443: Using Terminal VT-100 Emulation in Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q88443: Using Terminal VT-100 Emulation in Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/088/Q88443/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/088/Q88443/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/088/Q88443/","publisher":null,"image":null,"headline":"Q88443: Using Terminal VT-100 Emulation in Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q88443-using-terminal-vt-100-emulation-in-windows">Q88443: Using Terminal VT-100 Emulation in Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q88443
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses using Terminal VT-100 emulation in Microsoft Windows.
+
+MORE INFORMATION
+================
+
+Using Terminal in VT-100 Emulation in Windows 3.0, 3.0a
+-------------------------------------------------------
+
+When using Microsoft Terminal (TERMINAL.EXE) in VT-100 emulation mode, you should
+enable the SCROLL LOCK key on the keyboard. This allows proper operation of the
+arrow keys and the function keys.
+
+This is not mentioned in the "Microsoft Windows User's Guide" for version 3.0,
+but is discussed in the first screen of the Help index accessed by pressing F1
+if SCROLL LOCK is not enabled. If SCROLL LOCK is enabled, then the arrow keys
+function normally and the function keys are remapped so that F1=PF1, F2=PF2,
+F3=PF3, and F4=PF4.
+
+To access the Terminal Help Index with SCROLL LOCK enabled, press ALT+H, I or
+choose the Index command from the Help menu with your mouse.
+
+Using Terminal in VT-100 Emulation in Windows 3.1
+-------------------------------------------------
+
+In Windows 3.1, do the following to enable proper VT-100 operation:
+
+1. In Terminal, from the Settings menu, choose Terminal Preferences.
+
+2. Clear the Use Function, Arrow, And Ctrl Keys For Windows check box.
+
+The "Microsoft Windows User's Guide" for version 3.1 incorrectly states on page
+386:
+
+  To use the function keys for DEC VT-100 (ANSI) terminal emulation, SCROLL
+  LOCK must be turned on. If SCROLL LOCK is turned off, the function keys and
+  arrow keys have normal Windows (not VT-100) functionality.
+
+For correct DEC VT-100 (ANSI) emulation in Windows 3.1, SCROLL LOCK must be
+turned OFF, and Terminal Preferences must be set as previously mentioned.
+
+Additional query words: 3.00 3.00a 3.10 3.11 vt100
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

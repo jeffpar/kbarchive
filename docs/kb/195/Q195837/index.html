@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195837: PRB: Error Returned When Attempting to Modify JET Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195837: PRB: Error Returned When Attempting to Modify JET Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195837/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195837/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195837/","publisher":null,"image":null,"headline":"Q195837: PRB: Error Returned When Attempting to Modify JET Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195837-prb-error-returned-when-attempting-to-modify-jet-database">Q195837: PRB: Error Returned When Attempting to Modify JET Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195837
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbDAOsearch kbVBp500 kbVBp600 kbGrpDSVBDB
+Last Modified: 09-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to modify a JET database, the following error is returned:
+
+  "Run-time error '3211': The database engine couldn't lock table '&lt;table
+  name&gt;' because it's already in use by another person or process.".
+
+CAUSE
+=====
+
+Attempting to create a relation that involves a table that is currently open can
+cause this error.
+
+RESOLUTION
+==========
+
+The best workaround is to close the recordset that contains the table being used
+in the relation.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following example will open a database (use Nwind.MDB), open a table within
+that database, and then attempt to create a relation using the open table.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+
+2. Under Project/References, add "Microsoft DAO 3.51 Object Library."
+
+3. Add a CommandButton to Form1 and add the following code under the Click
+  event:
+
+        Dim Fld as Field
+        Dim Tbl as Recordset
+        Dim Rel as Relation
+        Dim db as Database
+
+        Set db = OpenDatabase("nwind.mdb", True)
+
+        Set Tbl = db.OpenRecordset("employees", dbOpenTable)
+        ' Note that employees table is used below in creating the relation.
+        ' Uncommenting the line below allows the code to work properly.
+        ' Tbl.Close
+
+        Set Rel = db.CreateRelation("myrel")
+        Rel.Table = "Employees"
+        Rel.ForeignTable = "Orders"
+        Set Fld = Rel.CreateField("EmployeeID")
+        Fld.ForeignName = "EmployeeId"
+        Rel.Fields.Append Fld
+
+        ' eError will occur on next line.
+        db.Relations.Append Rel
+
+4. Uncomment the line for closing the recordset and note the relation is created
+  and added to the database without error.
+
+======================================================================
+Keywords          : kberrmsg kbDAOsearch kbVBp500 kbVBp600 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

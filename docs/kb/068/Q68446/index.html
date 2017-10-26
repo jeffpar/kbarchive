@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68446: WIDTH &quot;CONS:&quot; or &quot;SCRN:&quot; Uses Only 40 or 80 in BASIC 7.00/7.10 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68446: WIDTH &quot;CONS:&quot; or &quot;SCRN:&quot; Uses Only 40 or 80 in BASIC 7.00/7.10" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68446/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68446/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68446/","publisher":null,"image":null,"headline":"Q68446: WIDTH &quot;CONS:&quot; or &quot;SCRN:&quot; Uses Only 40 or 80 in BASIC 7.00/7.10","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68446-width-cons-or-scrn-uses-only-40-or-80-in-basic-700710">Q68446: WIDTH "CONS:" or "SCRN:" Uses Only 40 or 80 in BASIC 7.00/7.10</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68446
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S901023-92 buglist7.00 buglist7.10 docerr | mspl13_basic
+Last Modified: 29-JAN-1991
+
+In BASIC PDS 7.00 and 7.10, the WIDTH for the screen device is
+restricted to 40 or 80 characters across all the different WIDTH
+syntaxes.
+
+The WIDTH statement fails to set widths other than 40 or 80 for the
+"CONS:" device name in QuickBASIC 4.50 (buglist4.50) and BASIC PDS
+7.00 and 7.10. The WIDTH statement also fails to set widths other than
+40 or 80 for the "SCRN:" device name for BASIC PDS 7.00 and 7.10, but
+succeeds in QuickBASIC 4.50. (The problem occurs both in the
+environment and in a compiled .EXE program.) The documentation does
+not explicitly say what is expected for the WIDTH dev$,wid% syntax.
+
+This may be a design restriction. Microsoft is researching this
+problem and will post new information here as it becomes available.
+
+This information applies to QuickBASIC version 4.50 and to Microsoft
+BASIC Professional Development System (PDS) versions 7.00 and 7.10 for
+MS-DOS.
+
+BASIC PDS 7.00 and 7.10 only lets you use WIDTH of 40 or 80 for the
+WIDTH dev$,wid% syntax when dev$ is the screen device name "CONS:" or
+"SCRN:". (This behavior actually matches the documented restriction
+for the separate WIDTH wid%,height% syntax for screen output.)
+
+The following code example demonstrates this behavior:
+
+Code Example
+------------
+
+CLS
+WIDTH "scrn:", 11   ' Sets screen width to 11 characters.
+OPEN "scrn:" FOR OUTPUT AS #1                ' OK in 4.50, but
+PRINT #1, "123456789012345678901234567890"   ' WIDTH ignored in BASIC
+CLOSE                                        ' 7.x in .EXE and QBX.EXE
+OPEN "scrn:" FOR OUTPUT AS #2
+WIDTH #2, 11                                 ' OK in 4.50, but WIDTH
+PRINT #2, "123456789012345678901234567890"   ' ignored in BASIC 7.x
+CLOSE
+WIDTH "cons:", 11
+OPEN "cons:" FOR OUTPUT AS #3
+PRINT #3, "123456789012345678901234567890"  ' WIDTH ignored, 7.x, 4.50
+CLOSE
+OPEN "cons:" FOR OUTPUT AS #4
+WIDTH #4, 10
+PRINT #4, "123456789012345678901234567890"  ' WIDTH ignored, 7.x, 4.50
+CLOSE
+
+' Note that the problem doesn't occur with the "LPT1:" device:
+WIDTH "lpt1:", 11   ' Sets printer width to 11 characters.
+OPEN "lpt1:" FOR OUTPUT AS #1
+PRINT #1, "123456789012345678901234567890"  ' Works find in all versions.
+CLOSE
+
+Reference:
+
+The following partial description of the WIDTH statement is taken from
+the QBX.EXE online help:
+
+   WIDTH {#filenumber% | device$}, width%
+
+WIDTH {#filenumber% | device$}, width%
+  The WIDTH #filenumber%, width% form:
+    - Sets the line width of an output device already opened as a file
+      (for example, LPT1: or CONS:).
+    - The argument filenumber% is the number associated with the
+      file in the OPEN statement.
+    - The "#" character in front of filenumber% is not optional.
+    - The width assignment takes place immediately.
+  The WIDTH device$, width% form:
+    - Sets to width% the line with of device$ (a device filename).
+      The device should be a string expression (for example, "LPT1:").
+    - The width assignment is deferred until the next OPEN statement
+      affecting the device.
+    - The assignment does not affect output for an already open file.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169613: FPNW Service Stops Suddenly in WinNT 3.51 &amp; WinNT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169613: FPNW Service Stops Suddenly in WinNT 3.51 &amp; WinNT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169613/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169613/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169613/","publisher":null,"image":null,"headline":"Q169613: FPNW Service Stops Suddenly in WinNT 3.51 &amp; WinNT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169613-fpnw-service-stops-suddenly-in-winnt-351--winnt-40">Q169613: FPNW Service Stops Suddenly in WinNT 3.51 &amp; WinNT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169613
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft File and Print Services for NetWare versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On computers running Windows NT 3.51 Service Pack 5 (SP5) with File and Print
+Services for NetWare (FPNW) or Windows NT 4.0 Service Pack 2 (SP2) with FPNW,
+the FPNW service suddenly stops. In some cases, it may take as long as a month
+to stop. The FPNW service can be restarted through the Services icon in Control
+Panel and will work again for a while.
+
+When the FPNW service stops, nothing logs in the Event Viewer, but you receive
+the following Dr. Watson pop-up message:
+
+  AN APPLICATION ERROR OCCURRED AND AN APPLICATION ERROR LOG IS BEING
+  GENERATED. THIS ACCESS VIOLATION IS NWSSVC.EXE. EXCEPTION VIOLATION
+  0xc0000005, ADDRESS 0x758821f0.
+
+CAUSE
+=====
+
+FPNW is made up of several components. The principal two are the Nwssvc.exe
+process running in user mode and Fpnwsrv.sys running in kernel mode. The user
+mode process is where Fpnw.dll, Nwslib.dll, and other necessary files are
+loaded. Most printing and administrative functions are handled in this process.
+
+Fpnwsrv.sys runs as a kernel mode driver and does most file I/O and connection
+functions.
+
+The access violation (AV) in the NWSSVC process fails to address a situation in
+which it must get a NULL ACL back from a security descriptor, yet still have the
+NULL ACL report back as valid.
+
+RESOLUTION
+==========
+
+Obtain the hotfix below or wait for the next service pack.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server version 4.0.
+This problem was corrected in the latest Windows NT Server 4.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Microsoft has confirmed this to be a problem in Windows NT Server version 3.51.
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch kbFPNW351 kbFPNW400
+Version           : winnt:3.51,4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

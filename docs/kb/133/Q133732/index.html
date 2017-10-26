@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133732: Missing TrueType Fonts in Fonts Folder or Programs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133732: Missing TrueType Fonts in Fonts Folder or Programs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133732/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133732/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133732/","publisher":null,"image":null,"headline":"Q133732: Missing TrueType Fonts in Fonts Folder or Programs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133732-missing-truetype-fonts-in-fonts-folder-or-programs">Q133732: Missing TrueType Fonts in Fonts Folder or Programs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133732
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbprint win95 win98 kbPrinting win98se
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows 98 Second Edition 
+- Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+You may notice one or more of the following symptoms:
+
+- TrueType fonts may not be present in the Fonts folder.
+
+- You may receive the following error message if you try to add a TrueType
+  font:
+
+  The &lt;fontname&gt; TrueType font is already installed. To install a new
+  version, first remove the old version.
+
+- TrueType fonts are not listed in any program.
+
+- Previously created documents are printed differently or the formatting is
+  changed when you view the document.
+
+- When you print a document, the text may appear smaller than expected.
+
+- Custom desktop settings have changed fonts.
+
+CAUSE
+=====
+
+The registry key that lists TrueType fonts may be damaged or missing.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate method:
+
+Use the Fontreg Tool
+--------------------
+
+Running Fontreg.exe adds a registry key that allows the installation of TrueType
+fonts. To run Fontreg.exe and install the fonts, follow these steps:
+
+NOTE: The Fontreg tool (Fontreg.exe) is not included with Windows NT 4.0. To use
+this tool in Windows NT 4.0, copy the Fontreg.exe file from a Windows
+95/98-based computer.
+
+1. Click the Start button, and then click Run.
+
+2. Type "fontreg" (without the quotation marks) in the Open box, and then click
+  OK.
+
+3. In Control Panel, double-click Fonts.
+
+4. On the File menu, click Install New Font.
+
+5. In the Folders box, select the folder that contains the TrueType fonts
+  (usually Windows\Fonts).
+
+6. Click Select All, and then click OK.
+
+7. If your documents are not printed as you expect, remove and reinstall the
+  appropriate printer driver.
+
+Edit the Fonts Registry Key
+---------------------------
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95/98 or Windows NT. Microsoft cannot guarantee
+that problems resulting from the incorrect use of Registry Editor can be solved.
+Use Registry Editor at your own risk.
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+To replace a missing or damaged Fonts key in the registry, follow these steps:
+
+1. Move the contents of the Fonts folder to an empty folder.
+
+2. If the Fonts key exists in the following registry setting, delete the Fonts
+  key and then add it again:
+
+  Windows 95/98:
+  --------------
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+
+  Windows NT:
+  -----------
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+
+  If the Fonts key does not exist in the registry setting listed above, add the
+  following key:
+
+  Fonts
+
+3. In Control Panel, double-click Fonts.
+
+4. On the Fonts menu, click Install New Font.
+
+5. In the Folders box, select the folder you moved the fonts to in step 1.
+
+6. Click Select All, and then click OK.
+
+7. If your documents are not printing as expected, remove and reinstall the
+  appropriate printer driver.
+
+MORE INFORMATION
+================
+
+Note that Windows 95/98 has a limit of approximately 1000 fonts.
+
+For additional information about this font limitation, see the following article
+in the Microsoft Knowledge Base:
+
+  ARTICLE-ID: Q131943
+  TITLE : TrueType Font Limits in Windows 95
+
+Additional query words: 98 ttf winnt
+
+======================================================================
+Keywords          : kberrmsg kbprint win95 win98 kbPrinting win98se 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

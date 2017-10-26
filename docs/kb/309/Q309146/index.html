@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q309146: Academic Learning Series Microsoft SQL Server 2000 System Admini | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q309146: Academic Learning Series Microsoft SQL Server 2000 System Admini" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/309/Q309146/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/309/Q309146/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/309/Q309146/","publisher":null,"image":null,"headline":"Q309146: Academic Learning Series Microsoft SQL Server 2000 System Admini","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q309146-academic-learning-series-microsoft-sql-server-2000-system-admini">Q309146: Academic Learning Series Microsoft SQL Server 2000 System Admini</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q309146
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 28-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Academic Learning Series Microsoft SQL Server 2000 System Administration ISBN 0-7356-1426-1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Academic Learning Series Microsoft SQL
+Server 2000 System Administration, ISBN 0-7356-1426-1.
+
+The following topics are covered:
+
+- CD-ROM: Updated Script Files To Accommodate 25 Users
+
+- CD-ROM: Corrections To Number Of Users In LabSetup.doc
+
+- Lab Manual, Page 1: Correction To Number Of Users
+
+- Page 56: Corrections To Steps 25 And 26
+
+- Page 139: "GET DATE()" Should Be "GETDATE()"
+
+- Page 163: Incorrect System Function
+
+MORE INFORMATION
+================
+
+CD-ROM: Updated Script Files To Accommodate 25 Users
+----------------------------------------------------
+
+On the Instructor CD, the setup script files are designed to accommodate a class
+of 12 students. We have made available updated script files that will
+accommodate a class of 25 students.
+
+These updated script files are available in the self-extracting executable file
+25script.exe. After downloading the file, double-click on 25script.exe, extract
+the files into the /Setup folder on your computer, and allow the extracted files
+to overwrite existing files of the same file names.
+
+The following file is available for download from the Microsoft Download Center:
+
+  25script.exe
+  (http://download.microsoft.com/download/MSPressPub/update/1.0/NT5/EN-US/25script.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+CD-ROM: Corrections To Number Of Users In LabSetup.doc
+------------------------------------------------------
+
+On the Instructor CD, in the file LabSetup.doc,
+
+On page 11,
+
+Change:
+"Important The Add_Users.vbs script should have created the SQLServerUsers
+Organizational Unit (OU). In this OU, 36 user accounts should have been created,
+AccountingUser01 through AccountingUser12, Student01 through Student12, and
+TestUser01 through TestUser12. In this OU, 3 security groups should have been
+created, Accounting, SQL Admins and SQL Users. The SQL Users security group
+should contain all 36 user accounts. The SQL Admins security group should
+contain user accounts Student01 through Student12. The Accounting security group
+should contain user accounts AccountingUser01 through AccountingUser12."
+
+To:
+"Important The Add_Users.vbs script should have created the SQLServerUsers
+Organizational Unit (OU). In this OU, 72 user accounts should have been created,
+AccountingUser01 through AccountingUser25, Student01 through Student25, and
+TestUser01 through TestUser25. In this OU, 3 security groups should have been
+created, Accounting, SQL Admins and SQL Users. The SQL Users security group
+should contain all 72 user accounts. The SQL Admins security group should
+contain user accounts Student01 through Student25. The Accounting security group
+should contain user accounts AccountingUser01 through AccountingUser25."
+
+On page 14, in Step 10,
+
+Change:
+"10. In the Name column, click AccountingUser01, scroll to the end of the list of
+names, and then press the Shift key and click TestUser12. The 36 users in the
+SQLServerUsers OU are selected."
+
+To:
+"10. In the Name column, click AccountingUser01, scroll to the end of the list of
+names, and then press the Shift key and click TestUser25. The 72 users in the
+SQLServerUsers OU are selected."
+
+On page 17, in step 16,
+
+Change:
+"16. Repeats steps 9 - 12 above for each student account (Student01 -
+Student12)."
+
+To:
+16. Repeat steps 9 - 12 above for each student account (Student01 - Student25).
+
+
+Lab Manual, Page 1: Correction To Number Of Users
+-------------------------------------------------
+
+In the Lab Manual, on page 1, under "Before You Begin",
+
+Change:
+"Each student computer is named Serverxx, where xx is a two-digit number between
+01 and 12."
+
+To:
+"Each student computer is named Serverxx, where xx is a two-digit number between
+01 and 25."
+
+
+Page 56: Corrections To Steps 25 And 26
+---------------------------------------
+
+On page 56, change:
+"25. Click Start and then click Run.
+The Open dialog box appears.
+
+26. In the Open drop-down combo box, type..."
+
+To:
+"25. Click Start, point to Accessories, then click Command Prompt.
+The Command Prompt window appears.
+
+26. At the command prompt, type..."
+
+
+Page 139: "GET DATE()" Should Be "GETDATE()"
+--------------------------------------------
+
+On page 139, in Table 5.4, the system function "GETDATE" should be one word, with
+no space in it.
+
+Change:
+"GET DATE()"
+
+To:
+"GETDATE()"
+
+
+Page 163: Incorrect System Function
+-----------------------------------
+
+On page 163, in the first paragraph, change:
+"DATAPROPERTYEX"
+
+To:
+"DATABASEPROPERTYEX"
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ALS 0-7356-1426-1 RABELER
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

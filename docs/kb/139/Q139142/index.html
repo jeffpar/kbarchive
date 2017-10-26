@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139142: Client Setup of Systems Management Server Alters AUTOEXEC.BAT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139142: Client Setup of Systems Management Server Alters AUTOEXEC.BAT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139142/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139142/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139142/","publisher":null,"image":null,"headline":"Q139142: Client Setup of Systems Management Server Alters AUTOEXEC.BAT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139142-client-setup-of-systems-management-server-alters-autoexecbat">Q139142: Client Setup of Systems Management Server Alters AUTOEXEC.BAT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139142
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.1,1.2
+Operating System(s): 
+Keyword(s): kbsetup smssetup
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+When you set up an MS-DOS or Windows client computer for Systems Management
+Server, a call to CLIENT.BAT is added to the client computer's AUTOEXEC.BAT
+file. This article explains how you can control where to place the call of
+CLIENT.BAT in your AUTOEXEC.BAT.
+
+MORE INFORMATION
+================
+
+Systems Management Server Client Setup reads AUTOEXEC.BAT and searches for the
+WIN (WIN.COM) statement. It does this so it can place a necessary call to
+CLIENT.BAT before Windows is started by the "WIN" command. Sometimes because of
+the need to load TSR's or other programs after CLIENT.BAT is called, but before
+Windows loads, CLIENT.BAT's call must be moved ahead in AUTOEXEC.BAT.
+
+At the point in AUTOEXEC.BAT, where you want to call CLIENT.BAT, place a call to
+an empty batch file named WIN.BAT. Create an empty batch file called WIN.BAT,
+and place it in a directory not included in the path (if the directory is in the
+path earlier than Windows, then Windows may never load). For example:
+
+1. Create the host directory:
+
+     md c:\foolit
+
+2. Create WIN.BAT:
+
+     echo exit &gt;c:\foolit\win.bat
+
+3. Place the following in AUTOEXEC.BAT:
+
+     call c:\foolit\win
+
+Systems Management Server Client Setup detects "call c:\foolit\win" as the call
+to start Windows (using WIN.COM) and automatically places the call to CLIENT.BAT
+one line before it.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup smssetup 
+Technology        : kbSMSSearch kbSMS110 kbSMS120
+Version           : winnt:1.1,1.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163189: WD97: Text in Shaded Table Missing Printing to NT Servers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163189: WD97: Text in Shaded Table Missing Printing to NT Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163189/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163189/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163189/","publisher":null,"image":null,"headline":"Q163189: WD97: Text in Shaded Table Missing Printing to NT Servers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163189-wd97-text-in-shaded-table-missing-printing-to-nt-servers">Q163189: WD97: Text in Shaded Table Missing Printing to NT Servers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163189
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbprint kbualink97 kbtable
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you print a shaded table containing text to a Windows NT 4.0 print server,
+the text may be printed incorrectly or may not print at all if the Windows NT
+4.0 print server is not updated with the Windows NT 4.0 Service Pack 2.
+
+CAUSE
+=====
+
+This problem occurs when a new write time has been detected for the font. This
+write time is incorrectly changed when daylight savings changes. If a new write
+time is detected, the font won't be used.
+
+STATUS
+======
+
+This problem was corrected in the Windows NT 4.0 U.S. Service Pack
+
+For more information on obtaining and installing the Microsoft Windows NT 4.0
+Service Pack 2, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q152734 How To Obtain Windows NT Version 4.0 U.S. Service Pack
+
+
+MORE INFORMATION
+================
+
+If you are unable to obtain the Windows NT Version 4.0 U.S. Service Pack, one of
+the following workarounds may allow you to print the document correctly.
+
+Method 1
+--------
+
+Enable the "Use printer metrics to lay out document" check box by following these
+steps:
+
+1. In Word, on the Tools menu, click Options.
+
+2. Click the Compatibility tab.
+
+3. Click the "Use printer metrics to lay out document" check box to select it.
+
+Method 2
+--------
+
+Turn of metafile spooling in the printer properties by following these steps:
+
+1. On the Windows taskbar, click Start, point to Settings, and click Printers.
+
+2. Right-click the printer you want to print to, and click Properties.
+
+3. Click the General tab.
+
+4. Click the Print Processor button.
+
+5. Change the spool data format from EMF to RAW.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbualink97 kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

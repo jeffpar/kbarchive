@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153770: ADT/ODE: &quot;Setup Error 997&quot; Installing ADT or ODE Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153770: ADT/ODE: &quot;Setup Error 997&quot; Installing ADT or ODE Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153770/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153770/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153770/","publisher":null,"image":null,"headline":"Q153770: ADT/ODE: &quot;Setup Error 997&quot; Installing ADT or ODE Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153770-adtode-setup-error-997-installing-adt-or-ode-application">Q153770: ADT/ODE: "Setup Error 997" Installing ADT or ODE Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153770
+Product(s): Microsoft Access Distribution Kit
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg
+Last Modified: 20-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Developer's Toolkit, version 7.0 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+SYMPTOMS
+========
+
+When you set up a Microsoft Office 97 Professional Edition Tools application or
+a Microsoft Access Developer's Toolkit (ADT) application on a computer running
+Windows NT version 3.51 or 4.0 Workstation or Server, you may receive the
+following error message:
+
+  Setup Error 997. Your setup files may be damaged. Try restarting the setup
+  program.
+
+The error message "Setup Error 997" will be followed by one or more references to
+Object IDs. The number of references and the Object IDs will vary, depending on
+the application.
+
+CAUSE
+=====
+
+The Application Name that you specified in the Setup Wizard exceeds 30
+characters (or 50 characters on Windows NT 4.0). Microsoft Windows NT 3.51
+Server and Workstation have a 30-character limit on the name of a Program Group.
+Microsoft Windows NT 4.0 Server and Workstation have a 50-character limit on the
+name of a Program Group.
+
+NOTE: Because the application name is used to create the program group icon, this
+problem can also occur if a backslash character (\) is used in the application
+name.
+
+NOTE: Using the backslash character (\) in the application name, can also cause
+this problem to occur in Windows 95.
+
+RESOLUTION
+==========
+
+Change the Application Name in the Microsoft Access for Windows 95 ADT Setup
+Wizard to a string that contains 30 or fewer characters (or 50 or fewer
+characters on Windows NT 4.0).
+
+NOTE: In the Microsoft Office 97 Developer Edition Tools Setup Wizard, an
+application name that exceeds 30 characters will not be accepted.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the Microsoft Access for Windows 95 ADT Setup Wizard, select "Create
+  new setup options for my applications custom setup program," and then click
+  Next.
+
+2. Add the sample database Northwind.mdb, click "Set as applications main file,"
+  and then click Next.
+
+3. Create a shortcut named SC, select the Runtime option, and then click Next.
+  Click Yes to include the run-time executable.
+
+4. Click Next on the Registry Values screen and click Next on the Components To
+  Add screen.
+
+5. On the Reorder The Components screen, change the Name to "This is my sample
+  database Northwind.mdb."
+
+6. Complete the Setup Wizard and create the disk images.
+
+7. Run Setup on a Windows NT 3.51 Workstation or Server. Note that you receive
+  the error message described in the "Symptoms" section.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbAudDeveloper kbAccessSearch kbZNotKeyword3 kbAccessDevTK700
+Version           : :7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

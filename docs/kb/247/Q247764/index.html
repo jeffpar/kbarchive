@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247764: XFOR: Testing POP3 Does Not Work, Generates Event 13003 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247764: XFOR: Testing POP3 Does Not Work, Generates Event 13003" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247764/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247764/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247764/","publisher":null,"image":null,"headline":"Q247764: XFOR: Testing POP3 Does Not Work, Generates Event 13003","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247764-xfor-testing-pop3-does-not-work-generates-event-13003">Q247764: XFOR: Testing POP3 Does Not Work, Generates Event 13003</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247764
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to test Post Office Protocol (POP3) on Microsoft Exchange
+Server 5.5 through telnet, the connection may not succeed and the following
+event may appear in the application log of Event Viewer:
+
+  Event ID: 13003
+  Source: MSExchangePOP3
+  Type: Error
+  Category: Authentication
+  Description: Hr lookup credentials () call failed with error logon failure.
+  Unknown user name or bad password.
+
+CAUSE
+=====
+
+This behavior can occur when Exchange Server services, the Exchange service
+account, or both lack the necessary permissions and rights.
+
+RESOLUTION
+==========
+
+To resolve this issue, make sure that the Exchange service account has all
+container level permissions and all necessary user rights in User Manager for
+Domains. Also, make sure that all Exchange services start by using the service
+account. Follow these steps:
+
+1. In Exchange Administrator, make sure the Exchange service account has
+  permissions at the site, configuration, and server levels.
+
+2. In Control Panel, double-click Services and make sure all Exchange services
+  start by using this account:
+
+  a. Select an Exchange service, and then click Startup.
+
+  b. Make sure that Log On As is selected, and that the Exchange service
+     account is listed.
+
+3. In User Manager for Domains, make sure that this account has the following
+  user rights:
+
+   - Act as part of the operating system
+
+   - Log on as a service
+
+   - Log on locally
+
+   - Restore files and directories
+
+4. Stop the information store, and then restart it.
+
+5. To test the new configuration, use telnet to connect to port 110.
+
+MORE INFORMATION
+================
+
+For additional information about using telnet, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q165186 XFOR: Verifying Basic POP3 Connectivity Using Telnet
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

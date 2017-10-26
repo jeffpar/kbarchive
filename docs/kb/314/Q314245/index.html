@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q314245: Flight Simulator 2002: Err Msg: Font &quot;Quartz&quot;(-22) Isn’t Found | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q314245: Flight Simulator 2002: Err Msg: Font &quot;Quartz&quot;(-22) Isn’t Found" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/314/Q314245/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/314/Q314245/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/314/Q314245/","publisher":null,"image":null,"headline":"Q314245: Flight Simulator 2002: Err Msg: Font &quot;Quartz&quot;(-22) Isn’t Found","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q314245-flight-simulator-2002-err-msg-font-quartz-22-isnt-found">Q314245: Flight Simulator 2002: Err Msg: Font "Quartz"(-22) Isn’t Found</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q314245
+Product(s): Microsoft Home Games
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbimu
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Flight Simulator 2002 Professional Edition 
+- Microsoft Flight Simulator 2002 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Flight Simulator 2002, you may receive an error message
+similar to the following:
+
+  Font "quartz"(-22) isn't found; using "Tahoma" instead.
+
+When you click OK, you receive the following error message:
+
+  Font "quartz"(-16) isn't found; using "Tahoma" instead.
+
+When you click OK, Flight Simulator 2002 starts, but with a font other than the
+Quartz font.
+
+CAUSE
+=====
+
+This behavior can occur if the Microsoft Windows Quartz font files are missing
+or damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, replace the Quartz font files in the Windows\Fonts folder
+with new copies from the Flight Simulator 2002 installation folder. To do this,
+follow these steps:
+
+1. Start Windows Explorer, and then browse to the following folder:
+
+  C:\Program Files\Microsoft Games\FS2002\fonts
+
+2. In the right pane of the Explorer window, right-click quartz.ttf, and then
+  click Copy on the shortcut menu that appears.
+
+3. Browse to the following folder:
+
+  C:\Windows\FONTS
+
+4. In the right pane of the Explorer window, right-click Quartz, and then click
+  Delete on the shortcut menu that appears. Click Yes to confirm the deletion.
+
+  NOTE: If the Quartz TrueType font is not present in the FONTS folder, skip
+  this step.
+
+5. On the Edit menu, click Paste.
+
+6. Quit Windows Explorer.
+
+MORE INFORMATION
+================
+
+For additional information about how to restore Windows fonts, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q234749 How to Restore the Windows Default Fonts
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2002 kbFlightSim2002Pro
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

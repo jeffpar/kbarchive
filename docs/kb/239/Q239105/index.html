@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239105: Jet 3.5 Text ISAM Allows User to Append Lines to System File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239105: Jet 3.5 Text ISAM Allows User to Append Lines to System File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239105/","publisher":null,"image":null,"headline":"Q239105: Jet 3.5 Text ISAM Allows User to Append Lines to System File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239105-jet-35-text-isam-allows-user-to-append-lines-to-system-file">Q239105: Jet 3.5 Text ISAM Allows User to Append Lines to System File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239105
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:3.5,97
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 23-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access 97 
+- Microsoft Office 97 Professional Edition for Windows 
+- Microsoft ODBC Driver for Access, version 3.5 
+-------------------------------------------------------------------------------
+
+
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+The Text ISAM allows you to manipulate text files without checking the file name
+extension. This creates a potential security risk because it can be used to read
+or write to a system text file.
+
+NOTE: Until you add the nonstandard text file extension to the
+HKEY_LOCAL_MACHINE\Software\Microsoft\Jet\3.5\Engines\Text\DisabledExtensions
+registry key, the error that you will receive during export/import operations
+using the updated text ISAM will be:
+
+  Can't Update. Database or object is read-only.
+
+  An error occurred trying to import file.
+  '&lt;FullPath and Filename&gt;'. The file was not imported.
+
+CAUSE
+=====
+
+The Text ISAM is able to modify the contents of text files that are formatted as
+data tables. This feature makes it easy for you to exchange data on different
+systems.
+
+RESOLUTION
+==========
+
+Install the latest update to the Microsoft Jet database engine. The following
+registry key is dynamically added when a program loads the Text ISAM. This
+registry key prevents this type of security risk.
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Jet\3.5\Engines\Text\DisabledExtensions
+
+For additional information about how to obtain the Microsoft Jet 3.51 update,
+please click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q172733 ACC97: Updated Version of Microsoft Jet 3.5 Available on MSL
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+NOTE: Jet35sp3.exe was updated on October 11, 1999. If you previously installed
+this update and would like to use the stricter security control provided in the
+updated MSText35.dll run the installed MSText35.REG file. To run the
+Mstext35.reg file, locate the file on your system and double-click it.
+
+There could be a possible security risk when someone uses the Text ISAM to modify
+any of the system text files, such as Autoexec.bat, Config.sys, System.ini, and
+so on.
+
+After you install the updated version of Jet, you will only be able to use the
+Text ISAM to update text files with the following extensions:
+
+- txt
+- csv
+- tab
+- asc
+- htm
+- html
+
+These are the default extensions that are added to the registry key listed in the
+"Resolution" section. The Value data for the registry key is:
+
+  !txt,csv,tab,asc,htm,html
+
+In the first release of Jet 3.5 SP3, you were not be able to use the Text ISAM to
+update text files with the following extensions:
+
+- bat
+- cmd
+- ini
+- sys
+- inf
+- vbs
+- js
+
+These are the default extensions that were added to the registry key listed in
+the "Resolution" section with the first release of Jet 3.5 SP3. The Value data
+for the registry key was:
+
+  bat,cmd,ini,sys,inf,vbs,js
+
+NOTE: The first release of Jet 3.5 SP3 did not provide the use of an exclamation
+mark (!). When you place an exclamation mark at the beginning of the Value data,
+you can modify only files with the extensions listed. When you do not place an
+exclamation mark at the beginning of the Value data, you cannot modify files
+with the extension listed. NOTE: Microsoft Access users may receive the
+following error when trying to import a text file that is not one of the enabled
+extensions:
+
+  Can't Update. Database is read-only.
+
+To resolve the error, either rename the file extension to one of the enabled
+extension types or modify the DisabledExtensions registry key using the methods
+in this article.
+
+
+Additional query words: pra
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbAccess97 kbOffice97Search kbODBCSearch kbAccess97Search kbOffice97 kbODBCAccess350
+Version           : WINDOWS:3.5,97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

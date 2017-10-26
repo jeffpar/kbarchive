@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40154: QB.EXE &quot;OUT OF MEMORY&quot; after SHELL to DOS PRINT, MODE, ASSIGN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40154: QB.EXE &quot;OUT OF MEMORY&quot; after SHELL to DOS PRINT, MODE, ASSIGN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40154/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40154/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40154/","publisher":null,"image":null,"headline":"Q40154: QB.EXE &quot;OUT OF MEMORY&quot; after SHELL to DOS PRINT, MODE, ASSIGN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40154-qbexe-out-of-memory-after-shell-to-dos-print-mode-assign">Q40154: QB.EXE "OUT OF MEMORY" after SHELL to DOS PRINT, MODE, ASSIGN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40154
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S881220-74 B_BasicCom | mspl13_basic
+Last Modified: 14-DEC-1989
+
+The MS-DOS PRINT, MODE, and ASSIGN commands should not be run from the
+QuickBASIC environment during a SHELL or from a SHELL statement in an
+executable program. The MS-DOS PRINT, MODE, and ASSIGN commands remain
+resident in memory after being invoked. Subsequent attempts to LOAD
+another QuickBASIC program that is larger or adds more code to an
+existing program result in the error message "OUT OF MEMORY." You must
+exit QuickBASIC and reboot to eliminate this memory-fragmentation
+problem.
+
+When the MS-DOS PRINT, MODE, and ASSIGN commands are invoked, they are
+loaded into memory above QuickBASIC and the program loaded in the
+environment. This causes memory to become fragmented. Although there
+may be more memory above the resident commands, QuickBASIC will not
+recognize this memory.
+
+A QuickBASIC program that SHELLs to an MS-DOS batch file containing
+the PRINT, MODE, or ASSIGN command usually executes correctly.
+However, if an attempt is made to unload the current program and load
+in a program that is larger than the first, the "OUT OF MEMORY" error
+message displays. If you exit QuickBASIC and then bring QuickBASIC up
+again, any attempt to load a program into the environment also
+generates the error message.
+
+If any application invoked after this is larger than QuickBASIC, the
+following error displays: "PROGRAM TOO LARGE TO FIT IN MEMORY." The
+only way to alleviate this situation is to reboot the machine. Exiting
+QuickBASIC and then running QB.EXE again does not eliminate the
+problem.
+
+This information applies to Microsoft QuickBASIC Versions 2.00, 2.01,
+3.00, 4.00, 4.00b, and 4.50 for MS-DOS and to the QBX.EXE environment
+of Microsoft BASIC PDS Version 7.00.
+
+To work around this problem, invoke the MS-DOS PRINT, MODE, or ASSIGN
+command before running QB.EXE. You should never SHELL to any
+terminate-and-stay-resident (TSR) program (such as the MS-DOS PRINT,
+MODE, or ASSIGN command).
+
+The following code example demonstrates the memory-fragmentation
+problem:
+
+   cls
+   print "start"
+   shell "test.bat"
+   print "done"
+   end
+
+The following is the batch file TEST.BAT:
+
+   mode com1:300,N,8,1,bin
+   mode lpt1:=com1:
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

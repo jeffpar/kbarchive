@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137237: Default Logon Script Timeout Limits for MS Network Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137237: Default Logon Script Timeout Limits for MS Network Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137237/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137237/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137237/","publisher":null,"image":null,"headline":"Q137237: Default Logon Script Timeout Limits for MS Network Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137237-default-logon-script-timeout-limits-for-ms-network-clients">Q137237: Default Logon Script Timeout Limits for MS Network Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137237
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 2.2b,2.2c,3.0,3.1,3.11,3.5,3.51,95
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.1, 3.5, 3.51 
+- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows 95 
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+- Microsoft LAN Manager, versions 2.2b, 2.2c 
+- Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run a LAN Manager logon script on a client computer, you encounter a
+logon script timeout limit. The logon script timeout limit varies among
+different client computers. This article lists the different logon script
+timeout limit for each Microsoft network client operating system.
+
+MORE INFORMATION
+================
+
+The default timeout limits for processing a LAN Manager logon script are as
+follows for the respective client network operating systems:
+
+- Windows NT Workstation 3.1, 3.5 and 3.51, Windows 95, Windows for Workgroups
+  3.11 and Network Client for MS-DOS 3.0 do not have logon script timeout
+  limit.
+
+- Windows for Workgroups 3.1 allows approximately 30 seconds.
+
+  Please note that the following article in the Microsoft Knowledge Base is
+  incorrect, and therefore will be removed as soon as possible:
+
+  Q90422 WFWG Err Msg: Application Has Violated System Integrity
+
+- LAN Manager 2.2b client computers allow 30 seconds.
+
+- LAN Manager 2.2c client computers allow 30 seconds. This value can be set
+  between 1 and 32,000 seconds. To change the default timeout limit, add the
+  following to the LANMAN.INI file:
+
+        [windows]
+        logontimeout=&lt;Between 1 to 32,000 seconds&gt;
+
+Additional query words: prodlm 2.20 3.10 3.11 wfw wfwg lm winnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbAudDeveloper kbWin95search kbWinNT310Search kbWinNTW310Search kbZNotKeyword kbLanManSearch kbWFWSearch kbZNotKeyword3 kbNetworkClientSearch kbWFW310 kbWFW311 kbLanMan220b kbLanMan220c kbNetworkClient300DOS
+Version           : :2.2b,2.2c,3.0,3.1,3.11,3.5,3.51,95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

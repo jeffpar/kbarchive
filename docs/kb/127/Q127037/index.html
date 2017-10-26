@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127037: Purpose of CHARACTER BINARY and MEMO BINARY Fields | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127037: Purpose of CHARACTER BINARY and MEMO BINARY Fields" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127037/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127037/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127037/","publisher":null,"image":null,"headline":"Q127037: Purpose of CHARACTER BINARY and MEMO BINARY Fields","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127037-purpose-of-character-binary-and-memo-binary-fields">Q127037: Purpose of CHARACTER BINARY and MEMO BINARY Fields</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127037
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro version 3.0 introduces several new data types including
+Character(binary) and Memo(binary). This article describes the purpose and
+implementation of these two new data types.
+
+MORE INFORMATION
+================
+
+The Character(binary) and Memo(binary) data types are provided for fields that
+should not be translated if the table is opened using a different code page. If
+the table is converted to another code page, the binary fields will not be
+translated. In all other respects, the Character(binary) and Memo(binary) fields
+are identical to the existing Character and Memo fields.
+
+You might use binary fields to store:
+
+- Unsupported graphic images. For example, SQL SERVER contains unsupported
+  graphic images that could be selected into a memo field.
+
+- Encrypted passwords that use the extended ASCII character set.
+
+- Compiled code.
+
+- FoxPro commands that contain strings that use the extended character set. For
+  example, if a memo field or character field contains FoxPro code that
+  references field names, these field names would be changed by a change in a
+  code page if they used characters from the extended character set. However,
+  the field names of the tables themselves would not be changed by a change in
+  a code page.
+
+Using the Table Designer in Visual FoxPro, the Character(binary) and Memo(binary)
+field types may be selected from the data Type drop down list.
+
+To specify that a field is going be binary with the CREATE or ALTER TABLE
+commands, use the NOCPTRANS clause, as in this example:
+
+     CREATE TABLE mytab (cLastName C(35) NOCPTRANS))
+
+This creates the cLastName field with a data type of Character(Binary).
+
+The TYPE function will return 'M' or 'C' for the binary memo or binary character
+field. This return value is the same as for a regular memo or character field.
+
+Additional query words: VFoxWin proprietary encryption non ole server
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

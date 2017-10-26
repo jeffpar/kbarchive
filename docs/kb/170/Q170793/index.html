@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170793: PPT7: Error Editing PowerPoint File Type in Windows Explorer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170793: PPT7: Error Editing PowerPoint File Type in Windows Explorer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170793/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170793/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170793/","publisher":null,"image":null,"headline":"Q170793: PPT7: Error Editing PowerPoint File Type in Windows Explorer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170793-ppt7-error-editing-powerpoint-file-type-in-windows-explorer">Q170793: PPT7: Error Editing PowerPoint File Type in Windows Explorer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170793
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Windows Explorer to view the settings for the following file types
+
+- Microsoft PowerPoint Addin
+
+- Microsoft PowerPoint Animation
+
+- Microsoft PowerPoint Presentation
+
+- Microsoft PowerPoint SlideShow
+
+- Microsoft PowerPoint Template
+
+- Microsoft PowerPoint Wizard
+
+you receive the following error message:
+
+  The specified program could not be found. Make sure the filename and path are
+  correct.
+
+This error occurs when you click OK to exit the "Editing Action for Type" dialog
+box.
+
+NOTE: To locate the "Editing Action for Type" dialog box, in Windows Explorer,
+click Options on the View menu, and click the File Types tab. In the Registered
+File Types list, click Microsoft PowerPoint Presentation, and then click Edit.
+
+CAUSE
+=====
+
+This error occurs because PowerPoint was installed in a folder with a long file
+name and the path to the executable file was not enclosed in quotation marks (")
+when the program was registered.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods:
+
+Method 1. Cancel the Error Message
+
+When you receive the error message, click Cancel rather than OK.
+
+Method 2. Enclose the Path in Quotation Marks
+
+
+Use the following procedure to add the quotation marks to the Open action for the
+Microsoft PowerPoint Presentation file type. The procedure for correcting the
+other actions for the other file types is similar.
+
+1. On the Windows Start menu, point to Programs, and then click Windows
+  Explorer.
+
+2. On the View menu, click Options, and then click the File Types tab.
+
+3. In the Registered File Types list, click Microsoft PowerPoint Presentation.
+
+4. Click Edit.
+
+5. In the Actions list, click Open. Click Edit.
+
+6. In the "Application Used to Perform Action" box change this:
+
+     C:\Program Files\Microsoft Office\Office\PowerPnt.exe "%1"
+
+  to this:
+
+     "C:\Program Files\Microsoft Office\Office\PowerPnt.exe" "%1".
+
+7. Click OK.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft PowerPoint 97 for
+Windows. This problem was corrected in Microsoft PowerPoint 97 SR-1.
+
+Additional query words: ppt95 ppt7.0 file locked can't be found netware dcl408.exe cannot kberrmsg kbnetwork
+
+======================================================================
+Keywords          :  
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

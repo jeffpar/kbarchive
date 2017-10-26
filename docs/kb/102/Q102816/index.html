@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102816: Running MemMaker on IBM PS/1 Machines | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102816: Running MemMaker on IBM PS/1 Machines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102816/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102816/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102816/","publisher":null,"image":null,"headline":"Q102816: Running MemMaker on IBM PS/1 Machines","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102816-running-memmaker-on-ibm-ps1-machines">Q102816: Running MemMaker on IBM PS/1 Machines</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102816
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+You may have difficulty running MemMaker on an IBM PS/1 machine.
+
+CAUSE
+=====
+
+This difficulty may be caused by the PS/1 System menu, which is preinstalled by
+IBM.
+
+During the execution of MemMaker, the following lines appear at the end of the
+AUTOEXEC.BAT file:
+
+  C:\DOS\SIZER.EXE /M
+  C:\DOS\MEMMAKER.EXE /SESSION:xxxxx
+
+However, these lines are never reached due to the execution of START.BAT or the
+PS/1 shell program (SHELLSTB.COM or RSSTUB.COM); therefore, MemMaker never
+finishes examining the system.
+
+RESOLUTION
+==========
+
+To correctly examine the system with MemMaker, the files C:\PSTOOLS\START.BAT
+and SHELLSTB.COM (or RSSTUB.COM) must be remarked out or removed from the
+AUTOEXEC.BAT file. After you run MemMaker, these menu programs can be replaced.
+
+MORE INFORMATION
+================
+
+IBM PS/1 machines include the following terminate-and-stay-resident (TSR)
+programs and other programs in the AUTOEXEC.BAT file:
+
+  C:\PS1TOOLS\VSTOP.COM
+  C:\PS1TOOLS\HWCHECK.EXE
+  C:\PS1TOOLS\START.BAT
+
+The TSR VSTOP.COM is a virus-protection utility. HWCHECK.EXE is a
+hardware-checking program. START.BAT launches Microsoft Windows and brings back
+the four-quadrant screen (System menu) when you quit Windows. Choices available
+on the System menu may include IBM-DOS, Information, Your Software, Prodigy,
+Promenade, and/or Microsoft Works. There are over 70 varieties of the PS/1,
+which accounts for the variety of choices on System menus.
+
+In addition to the files mentioned above, either SHELLSTB.COM or RSSTUB.COM
+launches the System menu. This should be remarked out as well for the proper
+running of MemMaker.
+
+The PS/1 is manufactured by IBM, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+For more information, call the IBM Support Center or IBM PS/1 Support.
+
+Additional query words: 6.22 6.00 ps1 quad screen 4-quad 4quad four 6.20 quadrant four-quadrant
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

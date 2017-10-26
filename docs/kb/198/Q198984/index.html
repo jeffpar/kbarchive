@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198984: SMSINST: Command Line Switches Are Not Designed to Work Together | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198984: SMSINST: Command Line Switches Are Not Designed to Work Together" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198984/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198984/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198984/","publisher":null,"image":null,"headline":"Q198984: SMSINST: Command Line Switches Are Not Designed to Work Together","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198984-smsinst-command-line-switches-are-not-designed-to-work-together">Q198984: SMSINST: Command Line Switches Are Not Designed to Work Together</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198984
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:1.0,2.0
+Operating System(s): 
+Keyword(s): kbsmsInst
+Last Modified: 10-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server Installer versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an executable file compiled using Systems Management Server Installer is
+run from the command line with two or more switches, the switches are not
+executed properly. Only the first switch is executed.
+
+The command line switches were designed to work by themselves, not in conjunction
+with any other command line switches.
+
+MORE INFORMATION
+================
+
+Command Line Switches and Their Functions
+-----------------------------------------
+
+/M:
+
+The /M option (manual) prompts you for the locations of the Windows, System, and
+Temp directories. You can specify any directories; if they do not exist, they
+will be created. Any changes to public .ini files are saved into the Windows
+directory that you specify.
+
+With this option, you can specify different directories in order to keep your
+systems directories pure or to easily detect exactly what was installed. You can
+then manually copy the files to their final destinations.
+
+/S:
+
+The /S option (silent) runs a setup program without displaying any dialog boxes,
+progress bars, messages, or user prompts. Default values are used for all
+variables. This option is useful for background installations in networked
+environments.
+
+/T:
+
+The /T option (test) runs a setup program in test mode.
+
+/X [directory_name]:
+
+The /X option (extract) lists the files installed by a setup program, allowing
+you to select some or all of those files. It enables you to specify the
+directory to which they will be written. Possible uses for this option include:
+
+- If some files have been deleted or corrupted on the destination computer, you
+  can reinstall only those files.
+
+- System operators can scan files for viruses without installing them.
+
+If you specify a directory along with the /X option, all files in the
+installation are written to that directory. If that directory does not exist, it
+is created within \Temp. For example, the following command writes all the
+installation files to \Temp\HoldingPen:
+
+  Setup /X HoldingPen
+
+/Z [directory_name]:
+
+The /Z option is the same as /X except the computer exits Windows after the files
+are extracted.
+
+Additional query words: prodsms smsinst
+
+======================================================================
+Keywords          : kbsmsInst 
+Technology        : kbSMSSearch kbSMSI100 kbSMSI200
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

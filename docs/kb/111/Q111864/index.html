@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111864: BUG: GP Fault When Drawing on a Memory-Based DC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111864: BUG: GP Fault When Drawing on a Memory-Based DC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111864/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111864/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111864/","publisher":null,"image":null,"headline":"Q111864: BUG: GP Fault When Drawing on a Memory-Based DC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111864-bug-gp-fault-when-drawing-on-a-memory-based-dc">Q111864: BUG: GP Fault When Drawing on a Memory-Based DC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111864
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A general protection (GP) fault can occur on a memory-based device context (DC)
+when a bitmap previously selected in the DC is selected out and another is
+selected in. This is a common problem when using the SaveDC() and RestoreDC()
+functions with a memory DC.
+
+CAUSE
+=====
+
+In a regular (nonmemory-based) DC, when the SaveDC() and RestoreDC() functions
+are used, the size of the window client area of the DC does not change. The size
+of the drawable area in a memory-based DC is dependent on the size of the
+current bitmap selected in the DC.
+
+For example, suppose the default 1 x 1 monochrome bitmap is selected in a memory
+DC and you call SaveDC(). Now, you select a 200 x 200 color bitmap into the DC
+and you perform some drawing commands. Then, you call RestoreDC() to restore the
+DC. This action will select the old 1 x 1 bitmap back into the DC.
+Unfortunately, GDI does not update the clipping region when this happens, and
+when you draw outside the 1 x 1 region, you can receive a GP fault.
+
+RESOLUTION
+==========
+
+After you call RestoreDC() on a memory-based DC, you need to call SelectObject()
+to select the bitmap that was selected in the DC before RestoreDC() was called.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows version 3.1. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following code exhibits the problem outlined above. When
+CreateCompatibleDC() is called, a default 1 x 1 monochrome bitmap is selected
+into the DC returned from the function. By restoring the initial 1 x 1 bitmap
+after getting a visible region of 200 x 200, GDI thinks the 1 x 1 surface has a
+clipping rectangle of 200 x 200. This is what causes the overwrite.
+
+Sample Code
+-----------
+
+     HBITMAP hbm1,hbm2;
+     HDC     hdcBits,hdcScreen;
+
+     hdcScreen = GetDC(NULL);
+     hdcBits = CreateCompatibleDC(hdcScreen);
+     hbm1 = CreateCompatibleBitmap(hdcScreen,200,200);
+     hbm2 = CreateCompatibleBitmap(hdcScreen,200,200);
+
+     SaveDC(hdcBits);
+     SelectObject(hdcBits,hbm1);
+     PatBlt(hdcBits,0,0,200,200,WHITENESS);
+     RestoreDC(hdcBits,-1);
+     SaveDC(hdcBits);
+     SelectObject(hdcBits,hbm2);
+     PatBlt(hdcBits,0,0,200,200,WHITENESS);
+     Ellipse(hdcBits,0,0,200,200);
+     RestoreDC(hdcBits,-1);
+     Rectangle(hdcBits,0,0,200,200);
+
+Additional query words: buglist3.10 3.10 gpf gp-fault 1x1 200x200
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

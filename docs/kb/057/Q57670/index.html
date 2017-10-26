@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57670: LOCATE Doesn’t Turn Off Cursor After INTERRUPT Loads User Font | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57670: LOCATE Doesn’t Turn Off Cursor After INTERRUPT Loads User Font" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57670/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57670/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57670/","publisher":null,"image":null,"headline":"Q57670: LOCATE Doesn’t Turn Off Cursor After INTERRUPT Loads User Font","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57670-locate-doesnt-turn-off-cursor-after-interrupt-loads-user-font">Q57670: LOCATE Doesn’t Turn Off Cursor After INTERRUPT Loads User Font</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57670
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom SR# S900102-68 | mspl13_basic
+Last Modified: 15-JAN-1990
+
+The LOCATE statement can be used to turn the cursor off. This is done
+by passing zero (0) as the third parameter, as in the following
+example:
+
+   LOCATE ,,0
+
+However, the ability of LOCATE to turn off the cursor is disabled when
+interrupt 10 hex, function 11 hex, subfunction 0 is called. In fact,
+the interrupt routine itself turns the cursor on. This interrupt call
+(which requires an EGA card and the use of SCREEN 0) causes the video
+card to use a block of memory in RAM for generating ASCII characters,
+rather than the ROM default ASCII characters.
+
+To turn the cursor off in this instance, interrupt 10 hex, function 1
+must be called. The program below illustrates how this is done.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS, and to Microsoft BASIC Professional Development
+System (PDS) Version 7.00 for MS-DOS.
+
+It's not just using the RAM font instead of the ROM font that causes
+the problem. Once interrupt 10 hex, function 11 hex, subfunction 0 is
+called, the LOCATE statement cannot turn the cursor off during the
+entire execution of the program. That is, even if you load the default
+ROM font back in by calling interrupt 10 hex, function 11 hex,
+subfunction 0, the LOCATE statement still will not work properly.
+
+The following code example illustrates the problem. In the comments of
+this example, the word "block" refers to the block of RAM where the
+new character definition will be. Note that, for simplicity, the
+example redefines only one character and leaves the rest in their
+default state.
+
+'This example requires an EGA card; VGA will not work.
+
+' $INCLUDE: 'qb.bi'        'Load interrupt routines and types.
+DIM Regs AS RegTypeX       'Stores values of registers.
+DIM Table AS STRING * 14   'This will hold the definition for one
+                           'character (14 rows high, 8 bits wide).
+CLS
+LOCATE ,,1   'Cursor will turn on.
+LOCATE ,,0   'Cursor will turn off.
+
+DEF SEG = VARSEG(Table)    'Make the block's segment current.
+
+FOR i = 0 TO 13                  'Load definition block.
+   POKE VARPTR(Table) + i, 255   'All 255s will appear as a solid
+NEXT i                           'rectangle.
+
+DEF SEG                     'Go back to DGROUP.
+
+Regs.AX = &amp;H1100            'Function 11 hex subfunction 0.
+Regs.BX = &amp;HE00             'There are &amp;HE points per character.
+                            'Put font at table 0.
+Regs.CX = 1                 'Block defines one character.
+Regs.DX = 0                 'First character redefined is ASCII 0.
+Regs.DS = -1                'Use old data segment.
+Regs.ES = VARSEG(Table(0))  'Segment of block.
+Regs.BP = VARPTR(Table(0))  'Offset of block.
+
+CALL InterruptX(&amp;H10, Regs, Regs)  'Call interrupt &amp;H10.
+                                   'The cursor will turn on.
+
+LOCATE ,,0   'Cursor will not turn off.
+
+'The following interrupt call will cause the video card to use the
+'default ROM font but will not re-enable LOCATE's ability to turn off
+'the cursor.
+
+Regs.AX = &amp;H1101   'Function &amp;H11, subfunction 1
+CALL InterruptX(&amp;H10, Regs, Regs)
+
+LOCATE ,,0   'Cursor will not turn off.
+
+'The following interrupt call can be used to turn the cursor off.
+
+Regs.AX = &amp;H100   'Function 1.
+Regs.CX = &amp;H2000
+CALL InterruptX(&amp;H10, Regs, Regs)   'Cursor will turn off.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

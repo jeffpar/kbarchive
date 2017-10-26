@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194893: BUG: Help System Closes After Closing Printer Properties Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194893: BUG: Help System Closes After Closing Printer Properties Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194893/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194893/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194893/","publisher":null,"image":null,"headline":"Q194893: BUG: Help System Closes After Closing Printer Properties Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194893-bug-help-system-closes-after-closing-printer-properties-window">Q194893: BUG: Help System Closes After Closing Printer Properties Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194893
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbVBp400bug kbVBp500bug kbVBp600bug kbOSWin95 kbOSWin98 kbGrpDSVB
+Last Modified: 30-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows Millennium Edition 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows Millennium Edition 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows Millennium Edition 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0, used with:
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While attempting to print a topic from the Visual Basic Help file, you access
+the Printer Properties dialog. The Help system closes unexpectedly when you
+close the Printer Properties window, and the topic is not printed. This problem
+occurs in the Visual Basic development environment or when using the ShowHelp
+method of the Common Dialog Control. This problem occurs only on Windows 95,
+Windows 98, or Windows Me.
+
+RESOLUTION
+==========
+
+The workarounds for this problem are limited. Launching Help by using the
+WinHelp function from the Win32 API results in the same problem. It is possible
+to avoid this problem by starting WinHelp32.EXE and specifying a Help file using
+the Shell() function. However, there is no way to specify a Help Topic when
+using Shell().
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Visual Basic 6.0 is listed in the "Applies to" section of this article. It is
+important to note that version 6.0 will exhibit this problem only when a Help
+file designed for the WinHelp system is opened; for example, when opening the
+Visual Basic 5.0 Help file in Visual Basic 6.0. Because Visual Basic 6.0 uses a
+different Help file system, this problem does not apply to Visual Basic 6.0 when
+using files created with the new HTML file format.
+
+The following section uses the Menu selections available in Visual Basic 5.0. The
+menu options in Visual Basic 4.0 are slightly different, although the same
+problem does occur.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual Basic on a computer running Windows 95/98.
+
+2. Click the Cancel button when the New Project window appears.
+
+3. Select Microsoft Visual Basic Help Topics from the Help menu.
+
+4. Click on any topic and then click the Display button on the Help Topics
+  window.
+
+5. With the Help topic displayed, choose Print Topic from the Options menu.
+
+6. When the Print dialog displays, click on the Printer Properties button.
+
+7. Close the Printer Properties window by clicking on OK or Cancel. The Help
+  system shuts down at this point, and the topic is not printed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbVBp400bug kbVBp500bug kbVBp600bug kbOSWin95 kbOSWin98 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :4.0,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43008: Debug Does Not Display Changes Made by _dos_setvect() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43008: Debug Does Not Display Changes Made by _dos_setvect()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43008/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43008/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43008/","publisher":null,"image":null,"headline":"Q43008: Debug Does Not Display Changes Made by _dos_setvect()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43008-debug-does-not-display-changes-made-by-_dos_setvect">Q43008: Debug Does Not Display Changes Made by _dos_setvect()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43008
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist2.00 | mspl13_c
+Last Modified: 2-MAY-1989
+
+The QuickC Version 2.00 debug window will not update the display of an
+entry in the interrupt vector table after _dos_setvect is used to
+change that entry. The program below will reproduce the problem.
+
+To demonstrate the problem, do the following:
+
+1. Start QuickC.
+
+2. Load the program below.
+
+3. Open the debug window and set watches on the following:
+
+    hptr
+    saveint
+    ptr
+    *ptr (use hex format)
+    lp (use hex format)
+
+Use the F8 key to step into the program. Saveint contains the address
+of the old interrupt handler. Hptr contains the address of the new
+interrupt handler. Ptr points to the interrupt vector, thus *ptr shows
+the address of the interrupt handler and should be different after the
+call to _dos_setvect. However, it is not. Notice that lp does contain
+the correct address, demonstrating that internally all addresses are
+being held correctly. The watch window is simply not displaying the
+altered interrupt vector properly.
+
+The following sample program will demonstrate the problem:
+
+#include &lt;stdio.h&gt;
+#include &lt;dos.h&gt;
+#define THE_INT 0x12
+
+void interrupt far handler() ;
+
+void (interrupt far *hptr)() ;
+void (interrupt far *saveint)() ;
+long far* ptr ;
+unsigned long lp ;
+
+void main ( void )
+{
+hptr = handler ;
+saveint = _dos_getvect ( THE_INT ) ;
+
+FP_SEG ( ptr ) = 0 ;
+FP_OFF ( ptr ) = 0x48 ;    /* make ptr point to where the interrupt
+                            * THE_INT is in interrupt vector table
+                            */
+
+/* following will do the same thing by searching for the address
+ * rather than setting ptr directly:
+ */
+FP_SEG ( ptr ) = 0 ;
+FP_OFF ( ptr ) = 0 ;
+while (*ptr++ != (long) saveint) ;
+ptr -- ;
+*/
+
+_dos_setvect ( THE_INT, hptr ) ;   /* set to new handler */
+lp = *ptr ;
+
+_dos_setvect ( THE_INT, saveint ) ; /* reset handler */
+}
+
+void interrupt far handler()
+{
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

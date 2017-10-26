@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61349: BASIC PDS 7.00 &quot;Program Memory Overflow&quot; with Too Many CONST | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61349: BASIC PDS 7.00 &quot;Program Memory Overflow&quot; with Too Many CONST" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61349/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61349/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61349/","publisher":null,"image":null,"headline":"Q61349: BASIC PDS 7.00 &quot;Program Memory Overflow&quot; with Too Many CONST","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61349-basic-pds-700-program-memory-overflow-with-too-many-const">Q61349: BASIC PDS 7.00 "Program Memory Overflow" with Too Many CONST</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61349
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S900329-74 | mspl13_basic
+Last Modified: 27-JUL-1990
+
+When used with the /V switch, the BC.EXE compiler that comes with
+Microsoft BASIC Professional Development System (PDS) version 7.00
+produces a "Program memory overflow" error when compiling a program
+that has approximately 680+ CONSTants. The compiler can still have up
+to 13K "bytes free" of compiler workspace when reporting this error.
+
+"Program memory overflow" also occurs when compiling the TEST1.BAS
+program generated below using 756+ CONSTants with the BC /Fs (far
+strings) option.
+
+The CONST limits are improved in BASIC PDS version 7.10, which can
+handle significantly more CONSTants than BASIC 7.00.
+
+The error message "Program memory overflow" is misleading because
+normally the compiler only gives that error when more than 64K of code
+has been generated for the module being compiled. This error
+represents a limitation of the compiler. This error is generated when
+the number of CONSTants that can be included in a BASIC module has
+been exceeded.
+
+The "Program memory overflow" error above is due to the amount of
+internal overhead that the compiler sets aside to do its work with
+CONSTants. The error message is not generated because of a lack of
+compiler workspace. In this case, 13K "bytes free" is a valid number.
+There is actually 13K of compiler workspace free. A different
+limitation has been encountered -- the number of CONSTants BC.EXE can
+handle.
+
+The BC.EXE in QuickBASIC version 4.50 and the BC.EXE compiler in BASIC
+versions 6.00b and 7.10 will successfully compile a program with over
+1000 CONSTants.
+
+Illustration
+------------
+
+To demonstrate the limitation in 7.00, use the FIRST.BAS program below
+to create the BASIC program TEST1.BAS with "n" number of CONSTants.
+For example, a TEST1.BAS program created with approximately 650
+CONSTants will compile with no errors in BASIC PDS 7.00. A program
+with 680+ CONSTants compiled with BC /V gives "Program-memory
+overflow" in BASIC PDS 7.00.
+
+As a comparison to versions earlier than 7.00, if you create a
+TEST1.BAS program with 1000 CONSTants, it will compile correctly with
+BC.EXE 4.50 and BC.EXE 6.00b (which have a greater capacity for
+CONSTants than 7.00).
+
+As a comparison to 7.10, in TEST1.BAS created below, 7.10 can handle
+1100 CONSTants when compiled BC /V (but 1200 CONSTants gives "Program
+memory overflow"). In TEST1.BAS created below, 7.10 can handle 2100
+CONSTants when compiled BC /Fs (but 2200 CONSTants gives "Compiler out
+of memory, 0 bytes free"). BASIC 7.10 can thus handle many more
+CONSTants than 7.00.
+
+FIRST.BAS
+---------
+
+FIRST.BAS prompts you for a number, and then creates another BASIC
+program, TEST1.BAS, with that many CONSTants. Compile the resulting
+TEST1.BAS with BC /V or /Fs to test for compiler limitations.
+
+   DEFINT A-Z
+   CLS
+   INPUT "How many CONSTants to you want in the file: ", Num%
+   OPEN "test1.bas" FOR OUTPUT AS #1
+   beg$ = "CONST p"
+   equals$ = " ="
+   FOR i = 1 TO Num%
+      constant$ = beg$ + LTRIM$(RTRIM$(STR$(i))) + equals$ + STR$(i)
+      PRINT #1, constant$
+   NEXT
+   CLOSE
+   PRINT "File 'test.bas' successfully created"
+   END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

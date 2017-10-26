@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262968: XADM: Distribution List Is Not Displayed in Address Book View | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262968: XADM: Distribution List Is Not Displayed in Address Book View" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262968/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262968/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262968/","publisher":null,"image":null,"headline":"Q262968: XADM: Distribution List Is Not Displayed in Address Book View","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262968-xadm-distribution-list-is-not-displayed-in-address-book-view">Q262968: XADM: Distribution List Is Not Displayed in Address Book View</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262968
+Product(s): Microsoft Exchange
+Version(s): 5.0,5.5
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 10-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you generate an Address Book view by grouping any category other than
+customer attributes, you are unable to view the distribution lists (DLs).
+
+MORE INFORMATION
+================
+
+Use one of the following methods to view the DL in an Address Book view.
+
+Method One
+----------
+
+NOTE: In the following example, the Address Book view is grouped by company
+name.
+
+1. Start the Microsoft Exchange Server Administrator program in Raw mode, click
+  the DL, and then click Raw Properties on the File menu.
+
+2. In the "List of attribute type" box, click All.
+
+3. Click the attribute that you are want to group the Address Book view by in
+  the Object attributes box (in this case Company).
+
+4. Type the attribute in the Edit Value box (in this case, the name of the
+  company).
+
+5. Click the Set button.
+
+6. Click the Apply button, and then click OK.
+
+Follow this procedure for every DL object that you want to view in the Address
+Book view.
+
+Method Two
+----------
+
+If you have a large number of DLs, use the Directory Export feature in the
+Administrator program to export the file so that you can edit it, and then
+import the file back to the Administrator program:
+
+1. Start the Administrator program.
+
+2. On the Tools menu, click Directory Export.
+
+3. Click the name of your Exchange Server computer in the MS Exchange Server
+  box.
+
+4. Click All in the Home server box.
+
+5. Enter a location for the Dl.csv file.
+
+6. Enter your site's recipient container.
+
+7. Click to select the Include sub-containers option (if you have subfolders).
+
+8. Click to clear Mailbox, and then click to select Distribution list.
+
+9. Click the Export button.
+
+Next, edit the Dl.csv file by using Microsoft Excel:
+
+1. Start Excel, and then open the Dl.csv file.
+
+2. Click column G, and then click Columns on the Insert menu.
+
+3. In row one of the column that you created, type the attribute that you want
+  to group the Address Book view by (for example, "company" (without the
+  quotation marks)).
+
+4. In every row in the column, add the proper value for the attribute for each
+  DL that you want to include in the Address Book view.
+
+5. Add a row in column B, name it "Mode," and then add a Create value in every
+  row of the Mode column.
+
+6. Add a row, name it "Object-Class", and then add a value of 0 in every row.
+
+7. Save the Dl.csv file.
+
+Next, use the Administrator program to import the edited Dl.csv file:
+
+1. Start the Administrator program.
+
+2. On the Tools menu, click Directory Export.
+
+3. Click the name of your Exchange Server computer in the MS Exchange Server
+  box.
+
+4. Click the Container button, and then enter your site recipient container.
+
+5. Click the import file that you created in the preceding section.
+
+6. Click Import.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

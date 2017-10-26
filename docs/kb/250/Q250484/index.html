@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250484: How to Use the VIA Compact Utility in MMS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250484: How to Use the VIA Compact Utility in MMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250484/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250484/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250484/","publisher":null,"image":null,"headline":"Q250484: How to Use the VIA Compact Utility in MMS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250484-how-to-use-the-via-compact-utility-in-mms">Q250484: How to Use the VIA Compact Utility in MMS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250484
+Product(s): Microsoft Windows NT
+Version(s): 2.1,2.2
+Operating System(s): 
+Keyword(s): kbtool
+Last Modified: 25-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services, versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The VIA Compact utility is used to defragment the x500.db database, provide
+analysis of ASN.1 records, rebuild the relational database from the ASN.1 store,
+and to ensure the integrity of the links between Connector Namespace and
+Metaverse objects.
+
+MORE INFORMATION
+================
+
+Microsoft Metadirectory Services (MMS) contains a metadirectory database called
+x500.db, and this is an ASN.1 database. When the VIA Compact utility is run
+against the database, the VIA service must be stopped. When the VIA Compact
+utility is started, it will make three passes through the directory data. The
+first pass ensures the integrity of your ASN.1 database, the second pass
+rebuilds the indices and hash database, and the third pass checks the
+referential integrity between connector space and metaverse entries. When this
+process is finished, the utility will have reclaimed space in the directory,
+rebuilt all of the hashed databases, and rebuilt the links between Connector
+Namespace and Metaverse objects.
+
+There are four actions available on the VIA Advanced Options tab. These options
+dictate the action that will be performed by the VIA Compact utility:
+
+- Verify ASN Database: This action verifies the ASN store (x500.db) and
+  attempts to find any invalid records.
+
+- Compact ASN Database: This action compacts the database by renaming the ASN
+  store database file x.500.db to x.500.sav, rebuilds the database, and
+  corrects any errors.
+
+- Verify Metadirectory Links: This action examines all alias-type links in the
+  directory and ensures that all links are valid.
+
+- Restart VIA Server when done: This action restarts the VIA Server when done.
+  This permits you to choose to either start VIA as a service, or as a program.
+  Select the former when you normally run the server as a Windows NT service,
+  or select the latter if you normally run VIA by clicking the server icon on
+  your desktop.
+
+The VIA service must be stopped before you run the VIA Compact utility. Also,
+prior to running the Compact utility, it may be beneficial to clear the genlog
+to accommodate space in a log file. This becomes more important as you increase
+the logging level or as the log file size approaches the specified limit.
+
+
+To Verify Directory Integrity with VIA Compact
+----------------------------------------------
+
+1. At a command prompt, type "net stop zoomit server" (without the quotation
+  marks), and then press ENTER.
+
+  NOTE: Wait at least 1 minute while MMS shuts down and releases all is
+  resources before you proceed to the next step.
+
+2. Click Start, point to Programs, point to Zoomit Directory Services V2, and
+  then click Zoomit VIA Compact Utility.
+
+3. In the VIA Compact window, click Advanced.
+
+4. Click to select the "Restart VIA Server when done" check box.
+
+5. The other three actions described above are checked by default; leave them
+  checked.
+
+  NOTE: If you are looking for a specific problem, you can enable logging and
+  increase the log file size by clicking the Logging tab. You can select a log
+  level from 0 to 9. The log file size is set for 1 megabyte (MB) or 1000000
+  bytes by default. The only time you may need to be increase the size of the
+  log file is when you are increasing the logging level.
+
+6. Click OK, and then click Start.
+
+  NOTE: Various progress messages will be displayed in the Status Messages box
+  while the utility is running. You can view the log file at any time during or
+  at the completion of the compact process by clicking View Log. If you view
+  the log during the compact process you will see only the log entries
+  generated up to that point in the process.
+
+Additional query words: viacompact
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q65177: &quot;Out of Stack Space&quot; Using RETURN &lt;linenumber&gt; for SUB Event | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q65177: &quot;Out of Stack Space&quot; Using RETURN &lt;linenumber&gt; for SUB Event" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/065/Q65177/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/065/Q65177/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/065/Q65177/","publisher":null,"image":null,"headline":"Q65177: &quot;Out of Stack Space&quot; Using RETURN &lt;linenumber&gt; for SUB Event","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q65177-out-of-stack-space-using-return-linenumber-for-sub-event">Q65177: "Out of Stack Space" Using RETURN &lt;linenumber&gt; for SUB Event</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q65177
+Product(s): See article
+Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | B_QuickBas | mspl13_basic
+Last Modified: 4-SEP-1990
+
+If an event occurs in a procedure (SUB or FUNCTION), then returning
+from event-handling with the RETURN &lt;linenumber&gt; statement always
+leaves unrecoverable information on the stack, which can lead to the
+error message "Out of Stack Space" after many trapped events.
+
+This behavior is a result of violating the following design rule: to
+correctly restore (pop) the stack after handling an event, you must
+always return to the procedure level where the event occurred. This
+applies to all events trapped with the ON &lt;event&gt; GOSUB statement
+(where &lt;event&gt; includes COM, KEY, PEN, PLAY, TIMER, STRIG, and
+others).
+
+RETURN &lt;linenumber&gt; or &lt;linelabel&gt; is only designed to return from
+events that occur at the module-level (main-level) code. This
+correctly pops the stack.
+
+You must use RETURN without the &lt;linenumber&gt; or &lt;linelabel&gt; option if
+you want to RETURN to a SUB or FUNCTION procedure where an event was
+trapped. This correctly pops the stack.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2; to
+Microsoft BASIC Compiler versions 6.00 and 6.00b for MS-DOS and MS
+OS/2; and to Microsoft QuickBASIC versions 1.00, 1.01, 1.02, 2.00,
+2.01, 3.00, 4.00, 4.00b, and 4.50 for MS-DOS.
+
+To demonstrate the "Out of stack space" message, run the following
+program and hold down the ESC key, which will be trapped in a loop
+until the error occurs. The "Out of stack space" error occurs because
+this program incorrectly allows events in the SUB to be handled by the
+RETURN &lt;linelabel&gt; instead of an ordinary RETURN.
+
+Code Example
+------------
+
+DECLARE SUB test ()
+' This is an example where the RETURN &lt;linenumber&gt;
+' statement gives you "Out of Stack Space" (after about 53 ESC key
+' trap iterations in QBX.EXE, or 118 if compiled in BC.EXE) when the
+' event (pressing the ESC key) is trapped in a SUB procedure.
+KEY 15, CHR$(0) + CHR$(1)    ' Trap ESC key
+ON KEY(15) GOSUB escape
+KEY(15) ON
+PRINT "now in main"
+again:
+  CALL test
+  PRINT "Done"
+END
+escape:
+  j = j + 1
+' The FRE(-2) function returns a value decreased at each iteration by
+' the number of bytes of stack (associated with the SUBprogram) that
+' were lost:
+  PRINT j; "ESC key was pressed. Continue in main. FRE(-2)="; FRE(-2)
+  KEY(15) ON   ' &lt;-- Must say KEY(15) ON here or else the
+               '   RETURN &lt;linelabel&gt; statement will leave the
+               '   ON KEY(15) GOSUB trap still active, which does an
+               '   implied KEY(15) STOP. If the key had been trapped
+               '   in the main program, then RETURN &lt;linelabel&gt; would
+               '   work normally, and you wouldn't have to use
+               '   KEY(15) ON here.
+  RETURN again
+
+SUB test STATIC
+PRINT "Now in SUB"
+WHILE INKEY$ = "": WEND
+PRINT "You pressed some key other than ESC."
+END SUB
+
+References:
+
+The following is taken from Page 296 (under the "RETURN Statement") of
+"Microsoft BASIC 7.0: Language Reference" for versions 7.00 and 7.10:
+
+   RETURN with a line label or line number can return control to a
+   statement in the module-level code only, not in procedure-level
+   code.
+
+The following is taken from Page 227 (under the heading "ON event
+Statement") of "Microsoft BASIC 7.0: Language Reference" for versions
+7.00 and 7.10:
+
+   The RETURN linenumber or RETURN linelabel forms of RETURN can be
+   used to return to a specific line from the trapping routine. Use
+   this type of return with care, however, because any GOSUB, WHILE,
+   or FOR statements active at the time of the trap remain active.
+   BASIC may generate error messages such as NEXT without FOR. In
+   addition, if an event occurs in a procedure, a RETURN linenumber or
+   RETURN linelabel statement cannot get back into the procedure
+   because the line number or label must be in the module-level code.
+
+The above information is accurate, but it should be added that if an
+event occurs in a procedure (SUB or FUNCTION), then returning from
+event-handling with the RETURN &lt;linenumber&gt; statement leaves
+unrecoverable information on the stack, which eventually leads to the
+error message "Out of Stack Space" after many trapped events.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

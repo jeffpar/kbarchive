@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q277910: Patch Available for &quot;Terminal Server Login Buffer Overflow&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q277910: Patch Available for &quot;Terminal Server Login Buffer Overflow&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/277/Q277910/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/277/Q277910/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/277/Q277910/","publisher":null,"image":null,"headline":"Q277910: Patch Available for &quot;Terminal Server Login Buffer Overflow&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q277910-patch-available-for-terminal-server-login-buffer-overflow">Q277910: Patch Available for "Terminal Server Login Buffer Overflow"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q277910
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbSecurity kbWinNT400PreSP7Fix kbgraphxlinkcritical KbSECVulnerability KbSECHack
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft has released a patch that eliminates a security vulnerability in
+Microsoft Windows NT Server 4.0, Terminal Server Edition.
+
+An unchecked buffer in the Terminal Server logon prompt could allow a malicious
+user to cause the Terminal Server-based server to run arbitrary code. The
+ability to run arbitrary code could allow the malicious user to add, change, or
+delete data, run code already on the server, or upload new code to the server
+and run it. The malicious user would not need to successfully log on to the
+Terminal Server-based server to initiate this attack.
+
+This vulnerability could be exploited remotely if connection requests are not
+filtered. By default, Terminal Server listens on TCP port 3389. You should block
+this port at the firewall or router if Terminal Server access from the Internet
+is not required.
+
+RESOLUTION
+==========
+
+To resolve this problem, either obtain the hotfix referenced in this section or
+the Windows NT Server 4.0, Terminal Server Edition, Security Rollup Package
+(SRP). For additional information about the SRP, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+  Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+  Package
+
+The following file is available for download from the Microsoft Download Center:
+
+  DownloadDownload Q277910i.exe now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=25565)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date        Time    Size    File name   Platform
+  ------------------------------------------------
+  10/03/2000  06:21p  42,768  Regapi.dll  Intel
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this problem could result in some degree of
+security vulnerability in Windows NT Server 4.0, Terminal Server Edition.
+
+MORE INFORMATION
+================
+
+For related information about this problem, please visit the following Microsoft
+Web site:
+
+  http://www.microsoft.com/technet/security/bulletin/ms00-087.asp
+
+Additional query words: security_patch kbtsesrp
+
+======================================================================
+Keywords          : kbSecurity kbWinNT400PreSP7Fix kbgraphxlinkcritical KbSECVulnerability KbSECHack 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

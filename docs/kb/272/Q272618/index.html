@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272618: PRB: Client-Side ADO Union Query Using Oracle OLE DB Provider Re | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272618: PRB: Client-Side ADO Union Query Using Oracle OLE DB Provider Re" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272618/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272618/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272618/","publisher":null,"image":null,"headline":"Q272618: PRB: Client-Side ADO Union Query Using Oracle OLE DB Provider Re","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272618-prb-client-side-ado-union-query-using-oracle-ole-db-provider-re">Q272618: PRB: Client-Side ADO Union Query Using Oracle OLE DB Provider Re</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272618
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.5,2.5 SP1,6.0
+Operating System(s): 
+Keyword(s): kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO250 kbOLEDB250
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Data Access Components versions 2.5, 2.5 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a recordset with ADO 2.5 that contains a Union Query,
+client-side cursors and the Microsoft Oracle OLE DB Provider return an incorrect
+number of columns.
+
+This problem does not occur if you use the OLE DB Provider for ODBC Drivers and
+the Microsoft ODBC for Oracle Drive.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. Set a Reference to Microsoft ActiveX Objects 2.5.
+
+3. Paste the following code into the Form1 code window:
+
+  Private Sub Form_Load()
+  Dim cn As New ADODB.Connection
+  Dim rs As New ADODB.Recordset
+  On Error Resume Next
+
+  cn.CursorLocation = adUseClient
+
+  'ODBC
+  'cn.Open cn.Open "Provider=MSDASQL;Driver={Microsoft ODBC for Oracle};Server=YourOracleAlias;Uid=demo;pwd=demo"
+
+  'OLEDB
+  cn.Open "Provider=MSDAORA;Data Source=YourOracleAlias;User ID=demo;Password=demo"
+
+  cn.Execute "Drop table oratest"
+  cn.Execute "CREATE TABLE ORATEST(Col1 VARCHAR2(10) NULL, Col2 VARCHAR2(10) NULL)"
+  cn.Execute "CREATE TABLE DUAL(Col1 VARCHAR2(10) NULL)"
+  rs.Open "select col1, col2 from oratest where col1 in (Select 1 from dual union select 2 from dual)", _ 
+  cn, adOpenStatic, adLockBatchOptimistic
+
+  MsgBox rs.Fields.Count
+
+  End Sub
+
+4. Make the necessary connection string changes, and then run the project.
+
+Results: The message box displays a "1."
+
+5. Stop the project, and uncomment the connect line following "'ODBC," and
+  comment the line following "'OLEDB."
+
+Results: The message box displays a "2," which is correct.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO250 kbOLEDB250 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbMDACSearch kbMDAC250SP1 kbMDAC250
+Version           : :2.5,2.5 SP1,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

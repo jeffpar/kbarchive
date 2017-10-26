@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176830: HOWTO: Create a Connection Programmatically | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176830: HOWTO: Create a Connection Programmatically" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176830/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176830/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176830/","publisher":null,"image":null,"headline":"Q176830: HOWTO: Create a Connection Programmatically","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176830-howto-create-a-connection-programmatically">Q176830: HOWTO: Create a Connection Programmatically</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176830
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): KbClientServer kbDatabase kbServer kbvfp300 kbvfp500 kbvfp600 kbMDAC250
+Last Modified: 22-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under some circumstances, you may need to modify the properties of a connection
+at run time. This article describes each of the properties and the default
+values of a connection. The sample code illustrates how to create a connection
+and use the DBSETPROP() function to set the properties of a connection
+programmatically.
+
+MORE INFORMATION
+================
+
+The following table indicates the data types and default values associated with
+each of the properties of a connection.
+
+  Property       Connection Designer Label    Data Type   Default Value
+  ---------------------------------------------------------------------
+
+  DispLogin        Display Login               Numeric        1
+  Asynchronous     Asynchronous Execution      Logical        .F.
+  DispWarnings     Display Warnings            Logical        .F.
+  BatchMode        Batch Processing            Logical        .T.
+  Transactions     Automatic Transactions      Numeric        1
+  PacketSize       Packet Size                 Numeric        4096
+  Comment                                      Character      ''
+  ConnectTimeOut   Connection (sec)            Numeric        15
+  IdleTimeOut      Idle (min)                  Numeric        3
+  QueryTimeOut     Query (sec)                 Numeric        3
+  WaitTime         Wait Time (ms)              Numeric        100
+
+The sample code below creates and modifies the properties of a connection:
+
+     *Begin code
+     LOCAL lcconnstring, lcconname, lnconnections, lbconnexists
+     lcconnstring    =  "'DSN=PUBS;DATABASE=pubs;UID=sa;PWD='"
+     lcconnname      =   "VFPCONN"
+     lnconnections   =   0
+     lbconnexists    =   .F.
+     IF !FILE('VFPCONN.DBC')
+     CLOSE DATA ALL
+     CREATE DATABASE VFPCONN
+     ELSE
+     OPEN DATABASE VFPCONN
+     ENDIF
+     lnconnections=ADBOBJECTS(CONNECTS,'CONNECTION')
+     IF lnconnections&gt;0
+     FOR i=1 TO ALEN(CONNECTS,1)
+     IF UPPER(CONNECTS[i])=lcconnname
+     lbconnexists=.T.
+     EXIT
+     ENDIF
+     NEXT
+     ENDIF
+     IF !lbconnexists
+     CREATE CONNECTION &amp;lcconnname CONNSTRING (lcconnstring)
+     ENDIF
+     * Set connection properties to custom values.
+     =DBSETPROP('VFPCONN','Connection','DispLogin', 3)
+     =DBSETPROP('VFPCONN','Connection','Asynchronous', .T.)
+     =DBSETPROP('VFPCONN','Connection','DispWarnings', .T.)
+     =DBSETPROP('VFPCONN','Connection','BatchMode', .F.)
+     =DBSETPROP('VFPCONN','Connection','Transactions', 2)
+     =DBSETPROP('VFPCONN','Connection','PacketSize',8192)
+     =DBSETPROP('VFPCONN','Connection','Comment', 'Comment Added')
+     =DBSETPROP('VFPCONN','Connection','ConnectTimeOut', 10)
+     =DBSETPROP('VFPCONN','Connection','IdleTimeOut', 0)
+     =DBSETPROP('VFPCONN','Connection','QueryTimeOut', 0)
+     =DBSETPROP('VFPCONN','Connection','WaitTime',150)
+     MODI CONNECTION VFPCONN
+     RETURN
+     *End code.
+
+After running the program code, a dialog appears titled "Connection
+Designer-VPFCONN." Click the Verify Connection button and a message indicating
+the connection was successful should appear.
+
+NOTE: In order to use the connection, an ODBC Data source matching the Data
+source name specified in the connection string must exist.
+
+If the ODBC Data source does not exist, the following ODBC error message is
+returned:
+
+  Connectivity error [Microsoft][ODBC Driver Manager] Data source name not
+  found and no default driver specified.
+
+REFERENCES
+==========
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q137445 How to Display View and Connection Properties
+
+  Q132231 Properties You can Access with SQLGETPROP()
+
+Visual FoxPro Help, version 4.00.950; search on: "DBSETPROP()"
+
+Additional query words:
+
+======================================================================
+Keywords          : KbClientServer kbDatabase kbServer kbvfp300 kbvfp500 kbvfp600 kbMDAC250 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

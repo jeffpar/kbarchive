@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q41581: More Information about BASIC’s DRAW Statement Macro Language | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q41581: More Information about BASIC’s DRAW Statement Macro Language" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/041/Q41581/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/041/Q41581/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/041/Q41581/","publisher":null,"image":null,"headline":"Q41581: More Information about BASIC’s DRAW Statement Macro Language","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q41581-more-information-about-basics-draw-statement-macro-language">Q41581: More Information about BASIC’s DRAW Statement Macro Language</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q41581
+Product(s): See article
+Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom B_GWBasicI SR# S890217-132 | mspl13_basic
+Last Modified: 12-DEC-1989
+
+This information illustrates the DRAW statement, which is supported in
+the following products:
+
+1. Microsoft QuickBASIC Compiler Versions 1.00, 1.01, 1.02, 2.00,
+   2.01, 3.00, 4.00, 4.00b, and 4.50 for the IBM PC
+
+2. Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS OS/2
+   and MS-DOS
+
+3. Microsoft BASIC PDS Version 7.00 for MS-DOS and MS OS/2.
+
+4. Microsoft GW-BASIC Interpreter Versions 3.20, 3.22, and 3.23
+
+The DRAW statement is only valid in a graphics mode (i.e., SCREEN 1,
+2, and higher). The DRAW statement is not supported in SCREEN 0.
+
+DRAW allows you to draw lines, shapes, change colors, fill in areas,
+and also perform powerful graphic functions. The DRAW statement
+combines most of the capabilities of the other graphics statements
+found in BASIC into an object-definition language called the Graphics
+Macro Language (GML).
+
+The syntax for the DRAW statement is as follows:
+
+   DRAW string-expression
+
+This syntax is documented under the BASIC statement DRAW in the
+"Microsoft GW-BASIC Interpreter: User's Reference" and the BASIC
+language reference manuals for QuickBASIC and the BASIC compiler. The
+valid options for string expressions are also documented with the DRAW
+command.
+
+The DRAW command expects a string expression that is composed of the
+following, where "x" is a reserved letter (command) and "n" is a
+numerical value, interpreted as a string:
+
+   xn
+
+You can have one or more combinations of xn's separated by a space or
+a comma. The following are examples:
+
+   DRAW "U5"         'Moves the pointer Up 5
+   DRAW "U5 L7"      'Moves the pointer Up 5 and Left 7
+   DRAW "U5,L7"      'Moves the pointer Up 5 and Left 7
+   DRAW "G5"         'Moves the pointer diagonally down and left 5
+
+The integer value of "n" can also be assigned to a string variable and
+then used as in the following example. You will have to concatenate
+the strings to build the command. The following is an example:
+
+   A$ = "200" : B$ = "120" : DRAW "M" + A$ + "," + B$
+
+The value for "n" can also be stored in an integer variable, and then
+converted to a string using the VARPTR$() or STR$() functions. If
+using VARPTR$(), you must include the extra "=" signs or else an
+"Illegal function call" error is generated. The syntax is as follows:
+
+   A% = 200 : B% = 120 : DRAW "M=" + VARPTR$(A%) + ",=" + VARPTR$(B%)
+                         DRAW "M" + STR$(A%) + "," + STR$(B%)
+
+This command moves the pointer to pixel location (200,120) on the
+screen.
+
+DRAW "X" is another powerful command. This command allows you to
+execute a substring of commands. The BASIC reference describes this as
+being a powerful tool to execute second, third, etc. strings, but does
+not give any examples.
+
+The DRAW "X" command allows you to embed draw commands within a string
+variable and then execute that string at any point. This is a nice
+concept but can be accomplished with simpler means. The following is
+an example of DRAW "X":
+
+   D$ = "F60 L120 E60 BD30 P1,2 BU30 E60 L120 F60 BU30 P1,2"
+   DRAW "X" + VARPTR$(D$)
+
+The above command draws two triangles, sitting one on top of the
+other, and fills them both in. The following two commands do the same
+thing:
+
+   DRAW "F60 L120 E60 BD30 P1,2 BU30 E60 L120 F60 BU30 P1,2"
+or
+   D$ = "F60 L120 E60 BD30 P1,2 BU30 E60 L120 F60 BU30 P1,2"
+   DRAW D$
+
+You can use whichever DRAW syntax is easiest for you.
+
+Note: Remember the following when using DRAW:
+
+1. If your "n" value is an INTEGER, use string concatenation with
+   VARPTR$() and EQUAL signs, or use STR$().
+
+2. If your "n" value is assigned as a STRING variable, use string
+   concatenation.
+
+This Graphics Macro Language (GML) is a very powerful addition to the
+BASIC language, but there are limitations. The DRAW statement just
+draws graphics, it does not have any conditional or looping
+statements. Therefore, the DRAW "X" command is not recursive.
+
+Please refer to the BASIC language reference for further details about
+the DRAW statement.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

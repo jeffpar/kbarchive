@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43217: QuickC: MATH.C Sample Program Contains Incorrect Expressions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43217: QuickC: MATH.C Sample Program Contains Incorrect Expressions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43217/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43217/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43217/","publisher":null,"image":null,"headline":"Q43217: QuickC: MATH.C Sample Program Contains Incorrect Expressions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43217-quickc-mathc-sample-program-contains-incorrect-expressions">Q43217: QuickC: MATH.C Sample Program Contains Incorrect Expressions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43217
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_c docerr | mspl13_c
+Last Modified: 6-JUN-1989
+
+The sample program MATH.C found in the QuickC Version 2.00 on-line
+help system contains the following two statements, which do
+not produce the intended results:
+
+   printf( "Mantissa: %2.2lf\tExponent: %d\n", frexp( x, &amp;n ), n );
+   printf( "Fraction: %2.2lf\tInteger: %lf\n", modf( x, &amp;y ), y );
+
+The last parameter passed to printf() in each of these statements will
+not be displayed correctly when the program is compiled under QuickC
+because "n" and "y" are pushed onto the stack before they are altered
+in the calls to frexp() and modf().
+
+This example illustrates the danger of relying upon the order of
+expression evaluation. When compiled under Microsoft C 5.10 with
+default optimizations or optimizations disabled, these statements
+function as desired; that is, n and y are altered by frexp() and
+modf() before they are pushed onto the stack and displayed by
+printf(). When compiled under C 5.10 with maximum optimization,
+however, the statements will be pushed before being changed, just as
+in QuickC.
+
+Correcting this problem is simply a matter of ensuring that frexp()
+and modf() execute prior to the use of n and y, as follows:
+
+   double r;
+
+   r = frexp( x, &amp;n );
+   printf( "Mantissa: %2.2lf\tExponent: %d\n", r, n );
+   r = modf( x, &amp;y );
+   printf( "Fraction: %2.2lf\tInteger: %lf\n", r, y );
+
+The MATH.C program is associated with the following functions:
+
+   exp     pow      sqrt     frexp     log     log10
+   ldexp   modf     ceil     floor     fabs    fmod
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

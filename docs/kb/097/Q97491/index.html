@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q97491: Duplicate LOGON Names Can Disrupt Messenger Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q97491: Duplicate LOGON Names Can Disrupt Messenger Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/097/Q97491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/097/Q97491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/097/Q97491/","publisher":null,"image":null,"headline":"Q97491: Duplicate LOGON Names Can Disrupt Messenger Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q97491-duplicate-logon-names-can-disrupt-messenger-service">Q97491: Duplicate LOGON Names Can Disrupt Messenger Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q97491
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+Duplicate names registered to the messenger service cause the lengthy error
+message shown below. The process by which duplicate names can occur and
+suggestions for avoiding the problem are discussed after the message.
+
+LAN Man 2.1a, Token Ring, NetBEUI
+
+Sample from LM Error Log:
+
+  
+
+  MESSENGER      3106     01-25-93 05:47pm
+  NET3106: An unexpected NCB was received. The NCB is the data.
+  91 19 3F 08 58 05 27 01 C8 00 2A 20 20 20 20 20   ..?.X.'...*
+  20 20 20 20 20 20 20 20 20 20 41 44 4D 49 4E 20
+  ADMIN
+  20 20 20 20 20 20 20 20 20 03 3C 28 28 00 02 00
+  .&lt;((...
+  00 19 00 00 00 00 00 00 00 00 00 00 31 03 00 00
+  ............1...
+
+  MESSENGER      3106     01-25-93 05:47pm
+  NET3106: An unexpected NCB was received. The NCB is the data.
+  92 02 3F 08 58 05 27 01 C8 00 2A 20 20 20 20 20   ..?.X.'...*
+  20 20 20 20 20 20 20 20 20 20 41 44 4D 49 4E 20
+  ADMIN
+  20 20 20 20 20 20 20 20 20 03 3C 28 28 00 02 00
+  .&lt;((...
+  00 08 00 00 00 00 00 00 00 00 00 00 31 03 00 00
+  ............1...
+
+  (1st error)
+  Byte 1:(NCB CMD)   91 = NCB Listen
+  Byte 2:(RET CODE)  19 = Name Conflict
+
+  (2nd error)
+  Byte 1:  92 = NCB Hangup
+  Byte 2:  08 = Illegal local session Number
+
+MORE INFORMATION
+================
+
+This is caused by two machines starting up with the same "unique" name. Although
+this shouldn't happen, there are certain unusual conditions when it can and
+does.
+
+In this example, the Admin logs in on one machine, replacing the machine name as
+the primary NetBIOS name and making the original machine name secondary.
+Sometime later, ADMIN logs in on the second server. When the standard login
+broadcast goes out to see if there is another system entity logged on as ADMIN,
+the first machine doesn't answer for some reason--maybe it has been disconnected
+momentarily or is using a slow link and doesn't respond in time. The second
+ADMIN thus is configured as the only ADMIN in the system, so it supersedes the
+machine name as the primary NetBIOS name just as the first ADMIN did on its
+machine. Now two machines have ADMIN as their primary NetBIOS name and when
+alerts go out to user ADMIN, messenger generates the long message above
+reporting a duplicate name on the net.
+
+If all the machines could "see" each other all the time, the first Admin to log
+on would be known as Admin and subsequent Admins would use their machine names.
+This would ensure unique NetBIOS names and alleviate the problem. But system
+characteristics such as slow links keep machines from being in constant contact
+and problems such as this one, though rare, can occur.
+
+To fix this, make sure your remote links are always there and up to standards. If
+you logon Admin at several machines in your system, get a different Admin login
+name for each server.
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130355: How to Validate Data by Using Customized Error Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130355: How to Validate Data by Using Customized Error Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130355/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130355/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130355/","publisher":null,"image":null,"headline":"Q130355: How to Validate Data by Using Customized Error Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130355-how-to-validate-data-by-using-customized-error-messages">Q130355: How to Validate Data by Using Customized Error Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130355
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When doing field-level validation on a form, you may want to use a custom error
+message and bypass the Visual FoxPro default error message such as "Invalid
+input." This article shows by example how to use custom error messages and turn
+off Visual FoxPro default error messages during field-level validation routines.
+
+MORE INFORMATION
+================
+
+When designing validation routines as one of the active methods for a form's
+text boxes, developers often return a value of false (.F.) when the entered data
+fails the validation routine. Here is an example validation routine:
+
+     If (M.Field &lt;&gt; "TEST")
+        Wait Window "Incorrect Value"
+        Return .F.
+     Endif
+
+A user who enters an invalid value sees the "Incorrect Value" Wait Window and
+also sees another Wait Window put up by Visual FoxPro that says "Invalid
+input."
+
+To suppress the Visual Foxpro message, modify the field-level validation to
+return a value of zero (0). This turns off the FoxPro default error messages.
+Here's an example:
+
+     If (M.Field &lt;&gt; "TEST")
+        Wait Window "Incorrect Value"
+        Return 0
+     Endif
+
+Code Sample
+-----------
+
+The following code example demonstrates this behavior. It uses a form and two
+text boxes. It also serves as a good example of how, in a program, you can
+define objects and add new objects to defined objects.
+
+  *--------------------------------------------------------------*
+  * Program: ValidTst - (C) 1995 - Microsoft Corporation         *
+  * This program demonstrates the difference between returning   *
+  * a value of false (.F.) when a field fails its validation     *
+  * test versus returning a value of zero (0). Note: In order to *
+  * leave the input field, you MUST enter the value of TEST.     *
+  *--------------------------------------------------------------*
+  frmMyForm = CREATEOBJECT('Form')              &amp;&amp; Create a Form.
+  frmMyForm.Closable = .F.                      &amp;&amp; Disable Control menu.
+
+  frmMyForm.AddObject('txtBox1','NewTextBox')   &amp;&amp; Add 1st text box.
+  frmMyForm.AddObject('txtBox2','OldTextBox')   &amp;&amp; Add 2nd text box.
+  frmMyForm.AddObject('cmdQuit','cmdQuitButton')&amp;&amp; Quit Cmnd button.
+
+  frmMyForm.SHOW                                &amp;&amp; Display the form.
+  READ EVENTS                                   &amp;&amp; Start event processing.
+
+  *------------------------------------------------------*
+  * The VALID clause for this text box will use a custom *
+  * error message. The only thing you will see is the    *
+  * message box showing what you typed in.               *
+  *------------------------------------------------------*
+  DEFINE CLASS NewTextBox as textbox
+    Visible = .T.
+    Left    = 125
+    Top     = 20
+
+    PROCEDURE Valid
+      IF (This.Value &lt;&gt; "TEST")
+        =MessageBox("You entered: "+Alltrim(This.Value))
+        RETURN 0                &amp;&amp; Invalid data, do NOT return .f.
+      ENDIF
+  ENDDEFINE
+
+  *------------------------------------------------------*
+  * In the second text box, if you don't type in TEST,   *
+  * You will see FoxPro's default error message (Invalid *
+  * input) as well as the message box.                   *
+  *------------------------------------------------------*
+  DEFINE CLASS OldTextBox as textbox
+    Visible = .T.
+    Left    = 125
+    Top     = 70
+
+    PROCEDURE Valid
+      IF (This.Value &lt;&gt; "TEST")
+        =MessageBox("You Entered: "+Alltrim(This.Value))
+        RETURN .F.             &amp;&amp; Returning FALSE here.
+      ENDIF
+  ENDDEFINE
+
+  DEFINE CLASS cmdQuitButton AS CommandButton  &amp;&amp; Create command button.
+      Caption = '\&lt;Quit'       &amp;&amp; Caption on the command button.
+      Cancel  = .T.            &amp;&amp; Default Cancel command button (Esc).
+      Left    = 125            &amp;&amp; command button column.
+      Top     = 150            &amp;&amp; command button row.
+      Height  = 25             &amp;&amp; command button height.
+      Visible = .T.
+
+      PROCEDURE Click
+        CLEAR EVENTS           &amp;&amp; Stop event processing, close Form.
+  ENDDEFINE
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

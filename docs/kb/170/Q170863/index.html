@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170863: Error in Event Log after Deleting the Anonymous User Account | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170863: Error in Event Log after Deleting the Anonymous User Account" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170863/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170863/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170863/","publisher":null,"image":null,"headline":"Q170863: Error in Event Log after Deleting the Anonymous User Account","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170863-error-in-event-log-after-deleting-the-anonymous-user-account">Q170863: Error in Event Log after Deleting the Anonymous User Account</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170863
+Product(s): Internet Information Server
+Version(s): WinNT:3.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 19-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you delete the IUSER_ account from User Manager for Domains because you are
+not using Anonymous authentication, but have the IUSER_ account and password in
+the WWW Service Properties, the event log may contain the following warning, if
+you use only Basic and Microsoft Windows NT Challenge Response for
+authentication:
+
+  Event id's 100 in the system log, source=w3svc. The server was unable
+  to logon the Windows NT account 'IUSER_ due to the following error:
+
+  Logon failure: Unknown user name or bad password. The data is the error code.
+
+The above warning is logged each time you request a page or image located in a
+directory other than the root directory or the directory that was originally
+authenticated.
+
+Note: The above errors can also occur if Anonymous connections are allowed in
+IIS, but Proxy Server is installed on the same computer and Anonymous is
+disabled.
+
+CAUSE
+=====
+
+The browser is unaware of the authentication method used by the Web server. The
+browser tries the first method on the list, which is the IUSER_ account in the
+Services tab of the WWW Service Properties. When the browser finds that the
+IUSER_ account has been deleted, it checks for the next method on the list,
+Allow Anonymous.
+
+If Allow Anonymous is not selected, the browser tries Basic Clear Text. If Basic
+Clear Text is also not selected, the browser tries Windows NT Challenge
+Response.
+
+If Windows NT Challenge Response is selected and valid, the browser opens the
+site or page using this authentication method. Therefore, you do not see an
+error in the browser, but only a warning in the Event Viewer.
+
+RESOLUTION
+==========
+
+To resolve this problem, use a valid account and password. To do so, follow
+these steps:
+
+1. In the WWW Service properties, click the Service tab.
+
+2. Add a user name that is a valid user account in User Manager for Domains, and
+  give the user Log On Locally permissions.
+
+Note: Do not delete the IUSER_ account, even if you are not using it.
+
+Additional query words: iis
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbiis300
+Version           : WinNT:3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

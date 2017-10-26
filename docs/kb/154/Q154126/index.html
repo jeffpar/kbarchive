@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154126: PRB: Using Extension DLL, Database/OLE/Sockets in Regular DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154126: PRB: Using Extension DLL, Database/OLE/Sockets in Regular DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154126/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154126/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154126/","publisher":null,"image":null,"headline":"Q154126: PRB: Using Extension DLL, Database/OLE/Sockets in Regular DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154126-prb-using-extension-dll-databaseolesockets-in-regular-dll">Q154126: PRB: Using Extension DLL, Database/OLE/Sockets in Regular DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154126
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbprb
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using an Extension DLL from a Regular DLL, you may run into one or more of
+a set of related problems. Note that because the MFC Database, OLE, and Sockets
+support DLLs are implemented as Extension DLLs, you might see similar problems
+if you are using these MFC features, even if you're not explicitly using any of
+your own Extension DLLs. Some symptoms are:
+
+- When attempting to de-serialize an object of a type of class defined in the
+  Extension DLL, the message appears in the TRACE debug window and the object
+  fails to serialize:
+
+  Warning: Cannot load CYourClass from archive. Class not defined.
+
+  An exception indicating 'bad class' may be thrown.
+
+- Resources stored in the Extension DLL fail to load because
+  AfxFindResourceHandle returns NULL or an incorrect resource handle.
+
+- DllGetClassObject, DllCanUnloadNow, and the UpdateRegistry, Revoke,
+  RevokeAll, and RegisterAll member functions of COleObjectFactory fail to
+  locate a class factory defined in the Extension DLL.
+
+- AfxDoForAllClasses doesn't do for any classes in the Extension DLL.
+
+- Standard MFC database, sockets, or OLE resources fail to load. For example,
+  AfxLoadString(AFX_IDP_SQL_CONNECT_FAIL) returns an empty string, even when
+  the Regular DLL is properly using the MFC Database classes.
+
+CAUSE
+=====
+
+The Extension DLL is not wired into the CDynLinkLibrary object chain of the
+Regular DLL.
+
+RESOLUTION
+==========
+
+Create and export an initialization function in the Extension DLL that creates a
+CDynLinkLibrary object. Call this initialization function exactly once from each
+Regular DLL that uses the Extension DLL. For an example of this, see the Sample
+Code section below.
+
+If you are using any MFC OLE, MFC Database (or DAO), or MFC Sockets support in
+your Regular DLL, you need to call a predefined initialization function for each
+MFCO4xD.DLL, MFCD4xD.DLL, and MFCN4xD.DLL you are using. These are the DLLs that
+are linked to automatically when using MFC OLE, MFC Database, or MFC Sockets
+support, respectively. For example, if you are using MFC OLE in an application
+or DLL, that app or DLL uses the MFCO4xD.DLL. See the References section below
+for more information.
+
+For database support, add a call to AfxDbInitModule() to your Regular DLL's
+CWinApp::InitInstance function. Make sure this call occurs before any base-
+class call or any added code that accesses the MFCD4xD.DLL. This function takes
+no parameters and returns void.
+
+For OLE support, add a call to AfxOleInitModule() to your Regular DLL's
+CWinApp::InitInstance. Note that the COleControlModule InitInstance() function
+calls AfxOleInitModule() already, so if you are building an OLE control and are
+using COleControlModule, you should not add this call to AfxOleInitModule().
+
+For Sockets support, add a call to AfxNetInitModule() to your Regular DLL's
+CWinApp::InitInstance.
+
+Note that release builds of MFC DLLs and applications do not use separate DLLs
+for database, sockets, or OLE support. It is safe to call these initialization
+functions in release mode, however.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+During each of the operations mentioned in the Symptoms section above, MFC needs
+to search for a desired value or object. For example, during de- serialization,
+MFC needs to search through all of the currently available Runtime Classes to
+match objects in the archive with their proper Runtime Class.
+
+As a part of these searches, MFC scans through all of the Extension DLLs in use
+by walking a chain of CDynLinkLibrary objects. CDynLinkLibrary objects attach
+automatically to a chain during their constructor and are created by each
+Extension DLL in turn during initialization. In addition, every module (EXE or
+Regular DLL) has its own chain of CDynLinkLibrary objects. In other words, the
+chain of Extension DLLs used by an Application is different from the chain of
+Extension DLLs used by one Regular DLL which is different from the chain of
+Extension DLLs used by another Regular DLL.
+
+This last point is one of the most common causes of the aforementioned problems
+mentioned in the Symptoms section. In order for an Extension DLL to get wired
+into a CDynLinkLibrary chain, it must create a CDynLinkLibrary object in the
+context of every module that will be using the Extension DLL. For example, if an
+Extension DLL is going to be used from Regular DLLs, it must provide an exported
+initialization function that creates a CDynLinkLibrary object. Every Regular DLL
+that uses the Extension DLL must call the exported initialization function.
+
+If an Extension DLL is only going to be used from an MFC application (EXE) and
+never from a Regular DLL, then it is sufficient to create the CDynLinkLibrary
+object in the Extension DLL's DllMain. This is what the AppWizard Extension DLL
+code does. When loading an Extension DLL implicitly, DllMain loads and executes
+before the application ever starts. Any CDynLinkLibrary creations are wired into
+a default chain that the MFC DLL reserves for an MFC application. This prevents
+any need to call the initialization function from an application. Nevertheless,
+it is safer and more recommended that all applications use the initialization
+function and that the Extension DLL not create a CDynLinkLibrary object in
+DllMain. Note that it is not a good idea to have multiple CDynLinkLibrary
+objects from one Extension DLL in any one chain, especially if the Extension DLL
+will be dynamically unloaded from memory. Don't call the initialization function
+more than once from any one module.
+
+The implementations of the AfxDbInitModule, AfxOleInitModule, and
+AfxNetInitModule functions can be found in the DLLDB.CPP, DLLOLE.CPP, and
+DLLNET.CPP files in the \MsDev\Mfc\Src directory, respectively.
+
+
+Sample Code
+-----------
+
+     static AFX_EXTENSION_MODULE extensionDLL = { NULL, NULL };
+     
+     extern "C" int APIENTRY
+     DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
+     {
+        // Remove this if you use lpReserved
+        UNREFERENCED_PARAMETER(lpReserved);
+     
+        if (dwReason == DLL_PROCESS_ATTACH)
+        {
+           TRACE0("YOUREXT.DLL Initializing!\n");
+     
+           // Extension DLL one-time initialization
+           if (!AfxInitExtensionModule(extensionDLL, hInstance))
+              return 0;
+     
+           // Insert this DLL into the resource chain.
+           // NOTE: If this Extension DLL is being implicitly linked to by
+           // an MFC Regular DLL (such as an ActiveX Control)
+           // instead of an MFC application, then you will want to
+           // remove this line from DllMain and put it in a separate
+           // function exported from this Extension DLL. The Regular DLL
+           // that uses this Extension DLL should then explicitly call that
+           // function to initialize this Extension DLL. Otherwise,
+           // the CDynLinkLibrary object will not be attached to the
+           // Regular DLL's resource chain, and serious problems will
+           // result.
+     
+           new CDynLinkLibrary(extensionDLL);
+        }
+        else if (dwReason == DLL_PROCESS_DETACH)
+        {
+           TRACE0("YOUREXT.DLL Terminating!\n");
+           // Terminate the library before destructors are called
+           AfxTermExtensionModule(extensionDLL);
+        }
+        return 1;   // ok
+     }
+
+The sample code below shows how the initialization function is written and
+assumes that the Regular DLL is implicitly linking to the Extension DLL. This is
+accomplished by linking to the Import Library (.LIB) of the Extension DLL when
+building the Regular DLL.
+
+These lines should be in the source of the Extension DLL:
+
+     ///////////////////// 
+     // YourExtDLL.cpp:
+
+     #include "afxdllx.h"    // standard MFC Extension DLL routines
+
+     static AFX_EXTENSION_MODULE NEAR extensionDLL = { NULL, NULL };
+
+     extern "C" int APIENTRY
+     DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
+     {
+         if (dwReason == DLL_PROCESS_ATTACH)
+         {
+             // Extension DLL one-time initialization.
+             if (!AfxInitExtensionModule(extensionDLL, hInstance))
+                return 0;
+         }
+         return 1;   // ok
+     }
+
+     // Exported DLL initialization is run in context of application
+     // or Regular DLL.
+     extern "C" void WINAPI InitYourExtDLL()
+     {
+         // Create a new CDynLinkLibrary for this app.
+         new CDynLinkLibrary(extensionDLL);
+
+         // Add other initialization here.
+     }
+
+Be sure to export the InitYourExtDLL function. This could be done using
+_declspec(dllexport), or in your DLL's .DEF file as follows:
+
+     ///////////////////// 
+     // YourExtDLL.Def:
+
+     LIBRARY      YOUREXTDLL
+
+     CODE         PRELOAD MOVEABLE DISCARDABLE
+     DATA         PRELOAD SINGLE
+
+     EXPORTS
+         InitYourExtDLL
+
+Add a call to the InitInstance member of the CWinApp-derived object in each
+Regular DLL using the Extension DLL:
+
+     ///////////////////////// 
+     // YourRegularDLL.cpp:
+
+     class CYourRegularDLL : public CWinApp
+     {
+     public:
+         virtual BOOL InitInstance(); // Initialization
+         virtual int ExitInstance();  // Termination
+
+         // Nothing special for the constructor.
+         CYourRegularDLL(LPCTSTR pszAppName) : CWinApp(pszAppName) { }
+     };
+
+     BOOL CYourRegularDLL::InitInstance()
+     {
+         // Any DLL initialization goes here.
+         TRACE0("YOUR Regular DLL initializing\n");
+
+         // Wire any extension DLLs into CDynLinkLibrary chain.
+         InitYourExtDLL();
+
+         return TRUE;
+     }
+
+REFERENCES
+==========
+
+For information on Regular DLLs, see MFC Technical Note 11.
+
+For information on Extension DLLs, see MFC Technical Note 33.
+
+For an example of an Extension DLL with an exported initialization function, see
+the DLLHUSK Sample on the Visual C++ CD-ROM in
+
+       Samples
+           MFC Samples
+               Advanced MFC Samples
+
+Relevant source code: in the \MsDev\Mfc\Src directory:
+
+   DLLINIT.CPP     Extension DLL code
+   DLLMODUL.CPP    Regular DLL code
+   DLLDB.CPP       MFC Database Debug DLL (MFCD) code
+   DLLOLE.CPP      MFC OLE Debug DLL (MFCO) code
+   DLLNET.CPP      MFC Sockets Debug DLL (MFCN) code
+
+For more information covering how to use AFX_MANAGE_STATE in your Regular DLL,
+and other relevant topics, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q140850 HOWTO: Converting DLLTRACE to Use MFC in Shared Library
+
+  Q150121 PRB: MFC Loads Wrong Resource in Extension DLL
+
+  Q131946 PRB: Bad Pointer from RUNTIME_CLASS with Class from _AFXDLL
+
+  Q147315 BUG: Access Violation After Unloading Extension DL
+
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Jason Strayer, Microsoft Corporation
+
+
+Additional query words: MfcDAO MfcDatabase MfcDLL MfcOLE
+
+======================================================================
+Keywords          : kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbprb 
+Technology        : kbAudDeveloper kbMFC
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

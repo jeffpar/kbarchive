@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q294393: Error &quot;No LU in LU Group Free&quot; Occurs When Starting 3270 Applet | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q294393: Error &quot;No LU in LU Group Free&quot; Occurs When Starting 3270 Applet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/294/Q294393/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/294/Q294393/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/294/Q294393/","publisher":null,"image":null,"headline":"Q294393: Error &quot;No LU in LU Group Free&quot; Occurs When Starting 3270 Applet","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q294393-error-no-lu-in-lu-group-free-occurs-when-starting-3270-applet">Q294393: Error "No LU in LU Group Free" Occurs When Starting 3270 Applet</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q294393
+Product(s): Microsoft SNA Server
+Version(s): 3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbDSupport
+Last Modified: 17-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the 3270 client is started, the error message "No LU in LU Group Free"
+appears.
+
+CAUSE
+=====
+
+In this case, SNA Server/Host Integration Server 2000 is working as designed.
+The error is caused by the application's Associated Printer LU (logical unit)
+feature. All display LUs are associated with a corresponding printer LU. Because
+all of the printer LUs are connected successfully to printer sessions, the
+associated LU feature blocks the connection to the associated display LU, and
+the "No LU in LU Group Free" message is returned.
+
+NOTE: This error message may also appear if there are no LUs available, which is
+an unrelated issue.
+
+RESOLUTION
+==========
+
+To resolve the problem, disassociate the printer LUs from the display LUs and
+save the Com.cfg file.
+
+MORE INFORMATION
+================
+
+Beginning with SNA Server 3.0 Service Pack 2 (SP2), the SNA Server does not
+allow a user to open a 3270 display LU if its associated printer is in use by
+another user. For additional information, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+  Q172637 User Able to Open Display Session If Associated Printer in Use
+
+Users who have host applications with direct relationships between display LUs
+and printer LUs can associate printers with the display LUs. The associated
+printer feature, however, was designed for 3270 print emulators only and not for
+SNA Server print service sessions.
+
+For additional information, see the following:
+
+  Chapter 3 of the Administration Guide. The Administration Guide is included
+  with the Software Development Kit (SDK), which you must select to install
+  during setup.
+
+  Q172637 User Able to Open Display Session If Associated Printer in Use
+
+  Q195063 Common User ID Problem When Using Associated Printer Feature
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ300SP3 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

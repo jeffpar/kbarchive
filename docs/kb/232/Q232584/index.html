@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232584: Zone Err Msg: Failed to Establish Server Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232584: Zone Err Msg: Failed to Establish Server Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232584/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232584/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232584/","publisher":null,"image":null,"headline":"Q232584: Zone Err Msg: Failed to Establish Server Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232584-zone-err-msg-failed-to-establish-server-connection">Q232584: Zone Err Msg: Failed to Establish Server Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232584
+Product(s): Microsoft Home Games
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbimu msgame kbFAQ
+Last Modified: 30-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to a game room on Zone.com, you may receive the
+following error message:
+
+  Failed to establish connection with Zone server.
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+- You are connecting to the Zone through a proxy server.
+
+- You are using outdated Zone.com Web pages.
+
+- Your are experiencing high Internet latency.
+
+- The True Vector service of the Zone Alarm personal firewall software is
+  running on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented. If the issue continues to occur, proceed to the next method.
+
+Configure the Proxy Server
+--------------------------
+
+For information about how to configure a proxy server for use with Zone.com,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q159031 Zone: Connecting to the Zone Through a Firewall or Proxy Server
+
+Ensure That You Are Using the Latest Zone.com Web Pages
+-------------------------------------------------------
+
+To ensure that you are using the latest Zone.com Web pages, empty the Temporary
+Internet Files folder on your computer. For information about how to empty the
+Temporary Internet Files folder on your computer, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q310731Zone: Error Message When You Attempt to Connect to a Secure Zone Web
+  Page: The Page Cannot Be Displayed
+
+Reduce Your Internet Latency
+----------------------------
+
+For information about how to reduce your Internet latency, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q232392 Zone: High Latency in Game Lobbies or When Playing Games
+
+Disable the True Vector Service of the Zone Alarm Software
+----------------------------------------------------------
+
+Consult the documentation provided with the Zone Alarm software for information
+about how to disable the True Vector service or how to configure the True Vector
+service to be started manually.
+
+If you configure the True Vector service to be started manually, do not start the
+True Vector service before you connect to a game room on Zone.com.
+
+MORE INFORMATION
+================
+
+As an alternative to simply removing the firewall software, you can try clicking
+the "allow connect for local and internet" (green checks) for the following
+items:
+
+  Client.exe (If Asheron's Call is involved)
+  Zclient
+  Zproxy
+  Zsetup
+  Zone.exe
+
+Also, Pass Lock should be set for all of these, in case you select the Internet
+Lock feature.
+
+Additional query words: msgame igz msngz
+
+======================================================================
+Keywords          : kberrmsg kbimu msgame kbFAQ 
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

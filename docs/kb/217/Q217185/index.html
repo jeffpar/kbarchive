@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217185: FIX: IRowsetImpl::GetData() Does Not Handle Nulls Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217185: FIX: IRowsetImpl::GetData() Does Not Handle Nulls Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217185/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217185/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217185/","publisher":null,"image":null,"headline":"Q217185: FIX: IRowsetImpl::GetData() Does Not Handle Nulls Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217185-fix-irowsetimplgetdata-does-not-handle-nulls-correctly">Q217185: FIX: IRowsetImpl::GetData() Does Not Handle Nulls Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217185
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbservicepack kbDatabase kbOLEDB kbProvider kbVC600bug kbVS600sp2 kbVS600SP1 kbVS600sp3
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an OLE DB Provider returns a DBSTATUS of DBSTATUS_S_ISNULL for a text field
+created using the ATL OLE DB Provider templates then the length of the field
+returned to the OLE DB consumer is not explicitly set to zero. This behavior
+follows the OLE DB specification, but can cause problems if an OLE DB consumer
+application utilizes the field length without checking the DBSTATUS of the
+column first. For example, a consumer application may assume that a non-zero
+field length means that the field is not NULL which is a common assumption when
+using text fields.
+
+
+CAUSE
+=====
+
+IRowsetImpl::GetData does not explicitly set the length for the column to zero
+if the DBSTATUS of the column is set to DBSTATUS_S_ISNULL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+When implementing an CRowsetImpl derived class using the ATL OLE DB Provider
+template class, you can override the GetDBStatus function to provide DBSTATUS
+information for each field returned by the OLE DB Provider. If you return
+DBSTATUS_S_ISNULL from the GetDBStatus function for a particular field, this
+indicates to the OLE DB consumer that the particular field is NULL.
+
+Internally, IRowsetImpl::GetData checks the DBSTATUS value you set for each field
+when returning the data to the consumer. If you set DBSTATUS to
+DBSTATUS_S_ISNULL, IRowsetImpl::GetData does not update the length indicator for
+a text field to 0. IRowsetImpl::GetData returns an unmodified length indicator
+to the client if you set the DBSTATUS of a field to DBSTATUS_S_ISNULL.
+
+Steps to reproduce
+------------------
+
+1. Create a new ATL OLE DB Provider named TESTPROV using the ATL OLE DB Provider
+  Wizard.
+
+2. Add a GetDBStatus method to the CTESTPROVRowset class as shown in the
+  following code sample:
+
+     class CTESTPROVRowset : public CRowsetImpl&lt; CTESTPROVRowset,
+     CTESTPROVWindowsFile, CTESTPROVCommand&gt;                               
+     {
+        public:
+           HRESULT Execute(DBPARAMS * pParams, LONG* pcRowsAffected)
+           {
+               // Etc....
+           }
+   //Add the following method      
+           DBSTATUS GetDBStatus( CSimpleRow* pRow , ATLCOLUMNINFO* pColInfo )
+           {
+              // Force column 4 (FileName) to null for every single row.
+              if ( 4 == pColInfo-&gt;iOrdinal )
+                 return DBSTATUS_S_ISNULL;
+              return DBSTATUS_S_OK;
+           }
+     };
+
+3. Build the project to create and register the TESTPROV OLE DB Provider DLL.
+
+4. Test the Provider using the following VB client code:
+
+     ' The following code requires a reference to Microsoft ActiveX Data
+     ' Objects library in your VB project in order to compile correctly.
+     Sub CheckTESTPROV()
+     Dim rs As New ADODB.recordset
+     Dim f As ADODB.Field
+     Dim strFieldStatus As String
+        rs.Open "c:\*.*", "Provider=TESTPROV OLE DB Provider;"
+        For Each f In rs.fields
+           If IsNull(f.Value) Then
+              strFieldStatus = "DBSTATUS_S_ISNULL"
+           Else
+              strFieldStatus = "DBSTATUS_S_OK"
+           End If
+           Debug.Print "[" &amp; f.Name &amp; "]"
+           Debug.Print "  Field Status = " &amp; strFieldStatus
+           Debug.Print "  DefinedSize  = " &amp; f.DefinedSize
+           Debug.Print "  ActualSize   = " &amp; f.ActualSize
+        Next f
+     End Sub
+
+If the Provider correctly updates the length indicator to zero when
+DBSTATUS_S_ISNULL is encountered, the following output for the FileName field
+should appear in the debug window:
+
+  [FileName]
+    Field Status = DBSTATUS_S_ISNULL
+    DefinedSize  = 260
+    ActualSize   = 0
+
+If the Provider ignores the length indicator when DBSTATUS_S_ISNULL is
+encountered, then ActualSize will report some non-zero value.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbDatabase kbOLEDB kbProvider kbVC600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSVCDB kbMDACNoSweep 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

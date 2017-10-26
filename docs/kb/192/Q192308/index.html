@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192308: PRB: View Designer Misreads Date Criteria in ODBC Date Format | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192308: PRB: View Designer Misreads Date Criteria in ODBC Date Format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192308/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192308/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192308/","publisher":null,"image":null,"headline":"Q192308: PRB: View Designer Misreads Date Criteria in ODBC Date Format","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192308-prb-view-designer-misreads-date-criteria-in-odbc-date-format">Q192308: PRB: View Designer Misreads Date Criteria in ODBC Date Format</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192308
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbDesigner kbSQL kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbMDAC250 kbSQLProg
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After saving and closing a remote view with a date criteria in the Open Database
+Connectivity (ODBC) Date Format, the View Designer does not read the criteria
+correctly. For example:
+
+  {d 'yyyy-mm-dd'}
+
+RESOLUTION
+==========
+
+Use the Create SQL View command to create and modify views. For an existing
+view, the following code can be used to capture the existing SQL statement:
+
+     MyFile=CURDIR() + 'sqltxt.txt'
+     SET ALTERNATE TO &amp;MyFile ADDITIVE
+     SET ALTERNATE ON
+     ?DBGETPROP("Test1","View","SQL")
+     SET ALTERNATE TO
+     SET ALTERNATE OFF
+     MODI FILE &amp;MyFile NOWAIT
+
+One other option is to modify the view in the View Designer. This necessitates
+entering the date criteria again before saving.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In Visual FoxPro 6.0, this problem is further exacerbated by the new setting,
+SET STRICTDATE. The default setting of SET STRICTDATE causes the following error
+when trying to open the view definition in the View Designer:
+
+  Date/DateTime contains illegal characters.
+
+To avoid this error and modify the view in the View Designer, issue the following
+command from the Command window:
+
+     SET STRICTDATE TO 0
+
+Please note that to save any changes in the View Designer to this remote view,
+the date criteria must be re-entered. This is true for all versions of Visual
+FoxPro listed in the "Applies to" section of this article.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a data source to a SQL Server Pubs database where you have
+  permissions.
+
+2. Run the following code in a program file:
+
+        CREATE DATABASE test
+        CREATE SQL VIEW Test1 REMOTE CONNECTION MyPubsDSN AS ;
+           SELECT * FROM sales WHERE ord_date &gt; {d '1993-12-30'}
+        USE Test1
+        BROWSE NOWAIT
+        *SET STRICTDATE TO 1 &amp;&amp; Uncomment For Visual FoxPro 6.0.
+        MODIFY VIEW Test1
+        MESSAGEBOX(DBGETPROP("test1","view","sql"))
+        *SET STRICTDATE TO 0 &amp;&amp; Uncomment For Visual FoxPro 6.0.
+        *MODIFY VIEW Test1 &amp;&amp; Uncomment For Visual FoxPro 6.0.
+
+  Notice that the date criteria displayed in the View Designer is:
+
+  { / / }
+
+  It should be:
+
+  {d '1993-12-30'}
+
+Note that the message box displays the correct criteria.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDesigner kbSQL kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbMDAC250 kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

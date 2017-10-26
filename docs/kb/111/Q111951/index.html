@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111951: PRB: System Errors When Using SET LIBRARY TO in FoxPro for Mac | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111951: PRB: System Errors When Using SET LIBRARY TO in FoxPro for Mac" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111951/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111951/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111951/","publisher":null,"image":null,"headline":"Q111951: PRB: System Errors When Using SET LIBRARY TO in FoxPro for Mac","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111951-prb-system-errors-when-using-set-library-to-in-foxpro-for-mac">Q111951: PRB: System Errors When Using SET LIBRARY TO in FoxPro for Mac</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111951
+Product(s): Microsoft FoxPro
+Version(s): 2.5b,2.5c,2.6a,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Installing FoxPro for Macintosh on a system that has had Apple's Internet Router
+version 3.0 installed or installing Apple's Internet Router version 3.0 after
+installing FoxPro for Macintosh can cause system errors when you use the SET
+LIBRARY TO command.
+
+CAUSE
+=====
+
+The following two situations can cause the system errors to occur:
+
+- If the router is installed on the machine prior to installing FoxPro, the
+  Shared Library Manager extension installed and used by the router may not be
+  replaced with the newer version shipped with FoxPro.
+
+- If the router is installed after FoxPro, an alert box is presented,
+  indicating that a newer version of the Shared Library Manager is already
+  installed. The alert box provides two options: click Continue to replace, or
+  Cancel to leave the installation untouched. If you click Continue, the newer
+  version of the Shared Library Manager is replaced with the older one.
+
+In both of these cases, various system errors will occur when a SET LIBRARY TO
+command is issued.
+
+2.5x RESOLUTION
+---------------
+
+To solve this problem, do the following:
+
+1. Insert the Apple Shared Library Manager installation disk (the disk icon says
+  "ASLM Installer") in the floppy disk drive.
+
+2. Click the Shared Library Manager Files folder, and then drag the Shared
+  Library Manager extension file to the System Folder on your startup volume.
+
+2.6a RESOLUTION
+---------------
+
+NOTE: In FoxPro 2.6a for Macintosh, the Apple Shared Library Manager (ASLM) is
+part of the core product within Setup.
+
+Follow these steps to remove and reinstall FoxPro, which also reinstalls the ASLM
+files.
+
+1. Run the FoxPro Setup Program, located in the Setup folder under in main
+  FoxPro folder on the hard disk.
+
+2. Select Add/Remove from the Maintenance Mode Setup screen.
+
+3. Select "FoxPro for the Macintosh", located at the top of the "Installed
+  Components" list to remove FoxPro.
+
+4. Repeat steps 1 and 2 above.
+
+5. Select "FoxPro for the Macintosh" from the "Components not installed list" to
+  reinstall FoxPro.
+
+MORE INFORMATION
+================
+
+The Shared Library Manager versions are as follows:
+
+  Shipping with Internet Router v3.0         1.0    12/7/92   108K
+  Shipping with FoxPro for Macintosh v2.5b   1.1.1  11/15/93  152K
+
+Additional query words: vFoxMac 3.00bvFoxMac FoxMac 2.50b 2.50c
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : :2.5b,2.5c,2.6a,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

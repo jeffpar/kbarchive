@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140556: Securing SNA Server to Not Require Everyone:Read Access | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140556: Securing SNA Server to Not Require Everyone:Read Access" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140556/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140556/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140556/","publisher":null,"image":null,"headline":"Q140556: Securing SNA Server to Not Require Everyone:Read Access","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140556-securing-sna-server-to-not-require-everyoneread-access">Q140556: Securing SNA Server to Not Require Everyone:Read Access</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140556
+Product(s): Microsoft SNA Server
+Version(s): 2.0,2.1,2.11
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork kbsetup
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, SNA Server requires that at least Everyone has read access on the
+COMCFG share (&lt;sna_root&gt;\SYSTEM\COMCFG) that SNA Server creates during
+Setup. Administrators may want to prevent read access so that unprivileged users
+do not copy the &lt;sna_root&gt;\SYSTEM\COMCFG\COM.CFG to view its contents;
+this article explains how to do that.
+
+NOTE: The SNA Server 3.0 setup program allows the administrator to install SNA
+Server services to run under a user account, and automatically performs all the
+steps described in this article. So, this is not an issue with SNA Server 3.0
+when this setup option is chosen.
+
+MORE INFORMATION
+================
+
+1. Create a user that is a member of the "Domain Admins" global group and
+  "Administrators" local group.
+
+2. Using User Manager for Domains, add "Domain Admins" and "Administrators" to
+  the following rights:
+
+   - Manage Auditing and security log
+
+   - Take ownership of files or other objects
+
+   - Act as Part of the Operating System
+
+   - Generate Security Audits
+
+   - logon as a service
+
+   - backup and restore
+
+3. Using the Services applet in Control Panel, configure each SNA Server service
+  to start in the context of the user that was just created in step 1. Do this
+  for every SNA Server in the subdomain.
+
+4. In File Manager, a. remove the Everyone group and b. add this newuser with
+  Full Control to the following shares:
+
+     Share:      Directory
+     ------------------------
+     snaserv      &lt;sna_root&gt;\ 
+     comlogs      &lt;sna_root&gt;\system\ 
+     COMCFG       &lt;sna_root&gt;\system\COMCFG\ 
+
+  Repeat step 4 for each SNA Server in the subdomain.
+
+5. Stop and start the SNABase service on each SNA Server in the subdomain.
+
+  Warning: Stopping the SNABase service on a particular machine will stop all
+  SNA Server services on that machine.
+
+6. Test changes.
+
+- To test whether SNA Server is still normally operating with the above changes
+  in place:
+
+   - Note the date/time of the &lt;sna_root&gt;\SYSTEM\COMCFG\COM.CFG on the
+     Primary SNA Server.
+
+   - Load SNA Admin on the primary SNA Server.
+
+   - Click the save button in SNA Admin.
+
+   - Note the change in date/time of the COM.CFG on the primary SNA Server.
+
+   - After a couple of seconds, the date/time of the
+     &lt;sna_root&gt;\SYSTEM\COMCFG\COM.CFG on one of the Backup SNA Servers
+     should match the new date/time on the primary.
+
+- To test whether SNA Server is denying access to users that are not members of
+  the Domain Administrators group:
+
+   - Logoff the backup SNA Server.
+
+   - Logon as a Domain User.
+
+   - Launch SNA Server Admin.
+
+   - The user should receive the following error message:
+
+  Error : 250
+
+     The SNA Server Base Service is not started. Unable to continue.
+
+- To test that Domain Users cannot get to the SNA Server shares to read SNA
+  Server system binaries and COM.CFG:
+
+   - Logon as a Domain User.
+
+   - Try to "net use" to the following shares:
+
+  \\Any_sna_server\snaserv
+  \\Any_sna_server\comlogs
+  \\Any_sna_server\COMCFG
+
+     The result should be that the user is able to map the drive but the
+     following should appear in File Manager:
+
+  You do not have permission to access this directory.
+
+     NOTE: If the password is changed for this user, then the administrator will
+     have to change the password with Service Control Manager for each SNA
+     Server service on each SNA Server in the subdomain. One way to prevent
+     having to do this is to select "Password Never Expires" for this user in
+     User Manager for Domains.
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbsetup 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : :2.0,2.1,2.11
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

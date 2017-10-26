@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196611: Error Code 29 After Resuming from Suspend Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196611: Error Code 29 After Resuming from Suspend Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196611/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196611/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196611/","publisher":null,"image":null,"headline":"Q196611: Error Code 29 After Resuming from Suspend Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196611-error-code-29-after-resuming-from-suspend-mode">Q196611: Error Code 29 After Resuming from Suspend Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196611
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kbenv kberrmsg osr2
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 OEM Service Release, version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you resume your computer from Suspend mode, a Peripheral Component
+Interconnect (PCI) device may appear in Device Manager with an exclamation point
+in a yellow circle. When you view the properties of the PCI device, the
+following message may be displayed under Device Status:
+
+  The device has been disabled in the hardware. In order to use this
+  device, you must re-enable the hardware. See your hardware
+  documentation for details. (Code 29.)
+
+CAUSE
+=====
+
+This problem occurs because Windows 95 OEM Service Release 2.5 does not
+rebalance interrupt request lines (IRQs) correctly.
+
+RESOLUTION
+==========
+
+To work around this problem, remove or disable an unused device in Device
+Manager to free a system IRQ. To disable a device in Device Manager, follow
+these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Device Manager tab, double-click the branch containing the device you
+  want to disable, click the device, and then click Properties.
+
+4. On the General tab, click the Disable In This Hardware Profile check box to
+  select it, and then click OK.
+
+5. Click Close, and then restart your computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 OEM Service
+Release 2.5.
+
+This problem is fixed in Microsoft Windows 98.
+
+
+MORE INFORMATION
+================
+
+When the computer is started, Windows 95 performs a PCI IRQ rebalance to free up
+system IRQs as needed. In order to accomplish this task, Windows 95 routes
+multiple PCI interrupts to a single system interrupt.
+
+Internal data structures in Windows 95 are set up to maintain information on
+which PCI IRQs are routed to which system IRQs. In cases where multiple PCI
+interrupts are routed to a single system interrupt, the pointer to this IRQ
+routing information may be lost. Windows 95 continues to function properly until
+the computer goes into Suspend mode. At that time, Configuration Manager
+attempts to remove resources for all PCI devices. It cannot do so on the device
+or devices that use the PCI interrupt controlled by the missing IRQ routing data
+structure, resulting in that PCI device having an error code 29
+(CM_PROB_HARDWARE_DISABLED).
+
+Due to the nature of PCI interrupts and IRQ routing, this problem may or may not
+be evident on a given computer based on a number of variables, including PCI
+slot design (how the PCI interrupts are routed between slots), PCI card
+interrupt usage, and system IRQ availability.
+
+For additional information about PCI bus IRQ steering, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q182604 Description of PCI Bus IRQ Steering
+
+======================================================================
+Keywords          : kbenv kberrmsg osr2 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

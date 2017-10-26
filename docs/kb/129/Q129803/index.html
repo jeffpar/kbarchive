@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129803: INFO: Variable Coercion Rules in Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129803: INFO: Variable Coercion Rules in Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129803/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129803/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129803/","publisher":null,"image":null,"headline":"Q129803: INFO: Variable Coercion Rules in Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129803-info-variable-coercion-rules-in-visual-basic">Q129803: INFO: Variable Coercion Rules in Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129803
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When two or more variables of different types are involved in an expression,
+Visual Basic uses a set of internal type coercion rules to change the different
+types into a single type. For every combination of input and result types, there
+is a specific coercion rule. (Contrary to some speculation, Variants are not
+involved.) This makes Visual Basic faster and more efficient, but it can produce
+some puzzling results if you aren't aware of what Visual Basic is doing behind
+the scenes. This article lays out some of the less obvious conversion rules,
+their benefits, and some possible scenarios where this can lead to unexpected
+results.
+
+MORE INFORMATION
+================
+
+Coercion between numeric types is pretty straightforward. Smaller types
+(integer) coerced to larger types (double) simply have their value assigned.
+Larger types (double) coerced to smaller types (integer) have their value
+assigned, but generate an Overflow error if the smaller type cannot contain the
+larger type's value. Other coercion rules are not as obvious.
+
+NOTE: Any type can be implicitly coerced to any other type (excluding objects).
+
+  Source Type    Coerced to      Apply this rule
+  --------------------------------------------------------------
+
+  Integer        Boolean         0=False, non-zero=True
+
+  Boolean        Byte            False=0, True=255
+
+  Boolean        any numeric     False=0, True=-1
+                 (except Byte)
+
+  String         Date            String is analyzed for mm/dd/yy,
+                                 and so on
+
+  Date           numeric type    Coerce to Double and use
+                                 DateSerial(Double)
+
+  numeric type   Date            Use number as serial date, check
+                                 valid date range
+
+  numeric type   Byte            Error if negative
+
+  String         numeric type    Strings are treated as a Double
+                                 when they need to represent a
+                                 number
+
+Some of these rules allow for simplified syntax when writing your code. For
+example:
+
+  ReturnCode% = FunctionThatReturnsAnInteger()
+  If (ReturnCode%) Then ...
+
+This piece of code takes advantage of the implicit Integer to Boolean coercion
+and correctly evaluates the expression in the If statement.
+
+Note on Strings as Numbers
+--------------------------
+
+Treating Strings as Doubles when they need to represent a number gives the String
+the maximum possible range and nearly the best possible precision (only Currency
+can have more precision, at a sacrifice in range). Because these coercions are
+generated by the compiler, the rule must be decided up front without regard to
+the actual content of the string.
+
+Note that "treating as Double" is not quite the same as "coercing to Double." For
+example, addition and subtraction operators treat Currency as a preferable type
+to Double. Currency plus String will be treated as Currency plus Double, which
+would use Currency addition. Thus the string will be coerced directly to
+Currency.
+
+Why Use Coercion Rules?
+-----------------------
+
+The largest reason is performance. Hard-coded coercion rules make Visual Basic
+version 4.0 faster and more efficient and provide backward compatibility to
+previous versions of Visual Basic. One of the big speed advantages comes because
+Visual Basic version 4.0 now knows the data type of control properties. Knowing
+the type of properties provides trememdous performance advantages. Without it,
+for example, setting a property required Basic to package the value in a
+Variant, and the control to unpack and coerce it to the right type. Now the
+control knows it is receiving the correct specific type, and Basic does a direct
+coercion to that type without ever involving the overhead of a Variant.
+
+Unexpected Results
+------------------
+
+The following code pieces show a few common scenarios where errors can be
+generated by Visual Basic if types and coercion rules are not carefully
+considered:
+
+     Dim I As Integer, J As Integer
+     Dim L As Long, M As Long
+     Dim S As String
+
+     I = 32767
+     L = 32767
+     M = 1
+     S = "Hello World!"
+
+     J = I + 1
+     ' Overflow. Integer upper limit = 32767. No coercion applied.
+
+     J = I + M
+     ' Overflow. I+M is coerced to a Long and the value 32768 is generated,
+     ' but when the assignment operator is resolved, this Long value is
+     ' coerced back to Integer (J's type) and overflows.
+
+     L = I + 1
+     ' Overflow. Coercion is not applied until the assignment operator is
+     ' resolved. I + 1 'Overflow's the temporary Integer variable created
+     ' to resolve the plus operator.
+
+     If I Then Print "I is True"
+     If Not I Then Print "Not I is True"
+     ' This prints both 'I is True and Not I is True', a logical
+     ' contradiction. The value of I = 32767, which is non-zero and under
+     ' the Integer to Boolean rule, is coerced to True. With 'Not I',
+     ' the NOT operator is applied first, which produces -32768 which is
+     ' also non-zero and, therefore, True.
+
+The following scenario shows how implicit conversion can generate a variety of
+unexpected results. You can add this code to a new program and run it too see
+the output.
+
+     Private Sub Form_Click()
+        Call MySub(1, 23) '&lt;-- Note: passing *numbers*!
+     End Sub
+
+     Private Sub MySub (a As String, b As String)
+        Debug.Print "a = "; a, , TypeName(a)
+        Debug.Print "b = "; b, , TypeName(b)
+        Debug.Print "a + b = "; a + b, , TypeName(a + b)
+        Debug.Print "a + b - 1 ="; a + b - 1, TypeName(a + b - 1)
+        Debug.Print "1 - a + b ="; 1 - a + b, TypeName(1 - a + b)
+        Debug.Print "a + b + 1 ="; a + b + 1, TypeName(a + b + 1)
+        Debug.Print "1 + a + b ="; 1 + a + b, TypeName(1 + a + b)
+        Debug.Print "(1 + b) / a ="; (1 + b) / a, TypeName((1 + b) / a)
+     End Sub
+
+The output is:
+
+  a = 1             String
+  b = 23            String
+  a + b = 123       String
+  a + b - 1 = 122   Double
+  1 - a + b = 23    Double
+  a + b + 1 = 124   Double
+  1 + a + b = 25    Double
+  (1 + b) / a = 24  Double
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

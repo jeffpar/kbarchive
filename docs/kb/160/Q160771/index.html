@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160771: PRB: Setup Unable to Register an .ocx File Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160771: PRB: Setup Unable to Register an .ocx File Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160771/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160771/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160771/","publisher":null,"image":null,"headline":"Q160771: PRB: Setup Unable to Register an .ocx File Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160771-prb-setup-unable-to-register-an-ocx-file-error">Q160771: PRB: Setup Unable to Register an .ocx File Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160771
+Product(s): Microsoft FoxPro
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 09-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using setup disks created by the Setup Wizard to install an executable
+file, the set up process does not complete because the following error appears:
+
+  &lt;filename.ocx&gt; was unable to register itself in the System Registry
+
+followed by the message:
+
+  Setup not completed successfully.
+
+The Setup process then terminates.
+
+CAUSE
+=====
+
+The Setup program is unable to register the .ocx file because it is corrupted or
+the incorrect version.
+
+RESOLUTION
+==========
+
+Ensure that the .ocx file is located in the same folder as the executable file
+before the Setup Wizard compresses the files.
+
+Next, check the version of the .ocx file being used with the executable file
+against the corresponding .ocx file located in the either the Windows\System or
+Windows\System32 folder. On Windows 95, the Windows\System folder contains the
+.ocx files that shipped with Visual FoxPro 5.0. On Windows NT 3.51 or 4.0, they
+reside in the Windows\System32 folder. To determine the version of an .ocx file,
+on Windows 95 or Windows NT 4.0, start Windows Explorer or My Computer,
+highlight the .ocx file, right-click (secondary click) and click Properties on
+the menu that appears, and press the Version tab. On Windows NT 3.51, highlight
+the file, and press the Alt and Enter keys.
+
+The General tab provides information on the file size in bytes. This information
+is useful if you suspect file corruption. Again, compare the file being
+compressed with the file in the appropriate Windows\System folder.
+
+MORE INFORMATION
+================
+
+The Visual FoxPro Help file provides a list of .ocx controls that shipped with
+Visual FoxPro 5.0. Type "Help ActiveX Controls Overview" (without quotations
+marks) in the Command window.
+
+NOTE: The Help documentation incorrectly refers to the Comctrl32.ocx file. The
+correct file name is Comctl32.ocx.
+
+Below is a list of the .ocx controls that ship with Visual FoxPro 5.0 and their
+corresponding version number:
+
+Control File Name             Version
+-------------------------------------
+
+Comctl32.ocx                  1.0.2908
+
+This control contains:
+
+  ImageList
+  ListView
+  ProgressBar
+  Slider
+  StatusBar
+  TabStrip
+  Toolbar
+  TreeView
+
+Comdlg32.ocx                  1.0.2415
+
+Dblist32.ocx                  1.0.2926
+This control contains:
+
+  MSDataCombo
+  MSDataList
+
+Foxhwnd.ocx                   1, 5, 0, 0
+
+Foxtlib.ocx                   5, 0, 0, 344
+
+Grid32.ocx                    1.0.2908
+
+Mci32.ocx                     1.0.2815
+
+Msacal70.ocx                  7.0
+
+Mscomm32.ocx                  1.0.2805
+
+Msmapi32.ocx                  1.0.2815
+This control contains:
+
+  Microsoft MAPI Message
+  Microsoft MAPI Session
+
+Msoutl32.ocx                  1.0.2922
+
+Picclp32.ocx                  1.0.2415
+
+Richtx32.ocx                  1.0.2922
+
+Sysinfo.ocx                   1.0.001
+
+Tabctl32.ocx                  4.01.0000
+
+Threed32.ocx                  1.0.0041
+This control contains:
+
+  3D Check box
+  3D Command button
+  3D Frame
+  3D Group Push Button
+  3D Option Button
+  3D Panel
+
+REFERENCES
+==========
+
+For more information about the ActiveX Controls Overview Help topic, please see
+the following article(s) in the Microsoft Knowledge Base:
+
+  Q157193 DOCERR: ActiveX Controls Help Topic Lists Incorrect File
+
+
+Additional query words: VFoxWin kbdsd
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : 5.00
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

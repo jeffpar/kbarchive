@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q58817: BASIC 7.00 &quot;Error Loading Run-Time Module: Incompatible&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q58817: BASIC 7.00 &quot;Error Loading Run-Time Module: Incompatible&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/058/Q58817/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/058/Q58817/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/058/Q58817/","publisher":null,"image":null,"headline":"Q58817: BASIC 7.00 &quot;Error Loading Run-Time Module: Incompatible&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q58817-basic-700-error-loading-run-time-module-incompatible">Q58817: BASIC 7.00 "Error Loading Run-Time Module: Incompatible"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q58817
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900201-67 | mspl13_basic
+Last Modified: 20-SEP-1990
+
+Microsoft BASIC Professional Development System (PDS) versions 7.00
+and 7.10 maintain a date and time stamp for each of their run-time
+modules (BRT70xxx.EXE and BRT71xxx.EXE). This time stamp is inherited
+by the compiled BASIC PDS program linked with a given BASIC PDS
+run-time module. (This information does NOT apply if you compile with
+the BC /O stand-alone option.)
+
+The result of this inheritance is that the BASIC executable .EXE
+program does not run with a run-time module other than the one it was
+linked with. Attempting to use a BASIC PDS 7.00 or 7.10 run-time
+module other than the one that the .EXE program was linked with
+results in the following error message:
+
+   Error loading run-time module &lt;runtime name&gt;.EXE: Incompatible
+   run-time module.
+
+The time stamp association between BASIC PDS 7.00/7.10 run-time
+modules and executable programs helps ensure that the run-time module
+used by the program actually contains the routines the BASIC
+executable program expects to be able to call.
+
+For example, assume that you have created the BASIC run-time module
+BRT70ENR.EXE and the run-time library BRT70ENR.LIB during setup, and
+you specify that you do not want to include VGA graphics support
+(which removes the VGA graphics routines by linking the NOVGA.OBJ stub
+file into your run-time module). If you were allowed to execute a
+program that was compiled by another person using a different
+BRT70ENR.LIB run-time library, and that program used VGA graphics
+routines, that program would try to call the graphics routines it
+expected to find at certain locations in the BASIC run-time
+BRT70ENR.EXE. Because the VGA graphics routines will not be present in
+your BRT70ENR.EXE run-time, the code at that location is not going to
+be the expected VGA routine, and the results of such a call are
+unpredictable.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

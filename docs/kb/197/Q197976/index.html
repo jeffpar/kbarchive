@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197976: XFOR: Inbound Mail Failure Error with MS Mail and IMC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197976: XFOR: Inbound Mail Failure Error with MS Mail and IMC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197976/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197976/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197976/","publisher":null,"image":null,"headline":"Q197976: XFOR: Inbound Mail Failure Error with MS Mail and IMC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197976-xfor-inbound-mail-failure-error-with-ms-mail-and-imc">Q197976: XFOR: Inbound Mail Failure Error with MS Mail and IMC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q197976
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Internet Mail Connector (IMC) administrator may receive
+inbound mail failures when trying to deliver a message to a MS Mail custom
+recipient.
+
+  -or-
+
+When you attempt to send a message to MS Mail users through an Exchange Internet
+Mail Connector you may receive a non-delivery report (NDR) similar to the
+following:
+
+  Your message did not reach some or all of the intended recipients.
+
+  The following recipient(s) could not be reached:
+
+  user@company on 6/26/97 18:58:04 PM
+  Recipient Not Found
+  [MSEXCH:IMC:ROHR:EXGATE:ROHR_EX]
+
+CAUSE
+=====
+
+This is not an Exchange Server problem. If the customer is using a UNIX "alias
+file" to resolve the names, it is a third-party issue.
+
+If the customer is not using an "alias file" then the problem is caused by an
+incorrect SMTP address in Exchange Server.
+
+RESOLUTION
+==========
+
+Confirm the MS Mail custom recipient SMTP address is the same as the address
+given by the sender. If the address is different the customer may be using alias
+files to redirect the message to an alternate address.
+
+For example:
+
+The SMTP address on the custom recipient is me@my.house.com
+The SMTP address the message is to be addressed to is me@house.com
+
+Messages to me@house.com are returned with a Non Delivery Receipt. Messages to
+me@my.house.com are sent and received.
+
+If the problem is affecting all users, then perform the following steps to change
+the default site addressing:
+
+1. In the Exchange Server Administrator program, click Organization, Site,
+  Configuration Container, and then double-click on the Site Addressing.
+
+2. Select the Site Addressing property page, highlight the SMTP address, and
+  then click Edit.
+
+3. Modify the address as needed.
+
+If the problem is affecting one recipient, then modify the SMTP address of that
+recipient as follows:
+
+1. Select the container of the recipient in the left pane.
+
+2. Double-click the recipient, and select E-mail Addresses.
+
+3. Select the SMTP address, click Edit, then modify the address as needed.
+
+NOTE: When you edit an existing partial e-mail address, you are given the
+opportunity to update addressing information for all Microsoft Exchange
+recipients with the new information.
+
+MORE INFORMATION
+================
+
+For more information regarding alias files, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q111840 SMTP: Configuring the Gateway to Use Company Domain Names
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

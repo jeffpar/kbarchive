@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q111836: WD97: Printing Envelopes from Word on the HP DeskJet 500C | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q111836: WD97: Printing Envelopes from Word on the HP DeskJet 500C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/111/Q111836/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/111/Q111836/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/111/Q111836/","publisher":null,"image":null,"headline":"Q111836: WD97: Printing Envelopes from Word on the HP DeskJet 500C","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q111836-wd97-printing-envelopes-from-word-on-the-hp-deskjet-500c">Q111836: WD97: Printing Envelopes from Word on the HP DeskJet 500C</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q111836
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kb3rdparty kbprint kbenvelope word97 kbPrinting
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to print letter-size and other size envelopes from
+Word for Windows on the Hewlett-Packard (HP) DeskJet 500 and 500C printer. There
+is a troubleshooting section at the end of the article.
+
+The information in this article assumes you have version 3.1 or later of the HP
+DeskJet printer driver (Deskjetc.drv).
+
+For information about obtaining updated HP printer drivers, contact HP. For
+information about how to contact HP, query in the Knowledge Base for one of the
+following articles:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+MORE INFORMATION
+================
+
+Printing Standard Letter-Size Envelopes (COM 10)
+------------------------------------------------
+
+Size 10 (COM 10) envelopes print correctly from Word on the HP DeskJet 500C using
+the default settings in the printer driver and in the Tools Envelopes and Labels
+dialog box. Use the following instructions to print Size 10 envelopes on the
+DeskJet 500C:
+
+1. On the Tools menu, click Envelopes And Labels.
+
+2. If necessary, type the Delivery Address and Return Address information.
+
+3. Click Options.
+
+4. Select the Printing Options tab.
+
+5. If it is available, click the Reset button. (If the button is unavailable,
+  you are already using the default printer driver settings.)
+
+6. Select the Envelope Options tab.
+
+7. From the Envelope Size list, select Size 10, and then click OK.
+
+8. Insert the envelope into the manual feed slot as shown in the diagram on the
+  manual feed tray on your printer. Insert the envelope until it presses
+  against the feed rollers. Do not preload the envelope using the Load button
+  on the printer.
+
+9. In the Envelopes and Labels dialog box, click Print. The printer pulls the
+  envelope from the manual feed tray and prints correctly.
+
+Printing Custom Envelope Sizes
+------------------------------
+
+Custom envelope sizes are not supported by the DeskJet 500 and 500C printers or
+drivers, so they do not print correctly. The HP DeskJet 500 and 500C only
+support COM 10 size envelopes.
+
+NOTE: You cannot work around this limitation by formatting a 8.5-by-11 inch
+document with large margins and printing on an envelope. This does not work
+because the printer detects when you feed non-letter-size paper. If you use this
+method, the printer ejects the blank envelope or it prints a portion of the
+address on the envelope and the remainder on a page pulled from the letter
+tray.
+
+Troubleshooting Tips
+--------------------
+
+If the text on the envelope is printed incorrectly, use the following steps to
+troubleshoot the problem:
+
+1. You may be running a video driver that conflicts with the DeskJet. Switch to
+  the standard VGA video driver supplied with Windows to resolve this problem.
+
+2. Third-party font packages sometimes cause unexpected printing results. To
+  rule out this cause, disable the font package and print the envelope again.
+
+3. To ensure that no Word macros are running that might modify your printer or
+  font settings, quit Word and restart it with the /A switch. (This switch runs
+  Word with no add-in programs.)
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 6.00 6.00a hpdj hpdj500c dj500c dj500 6.00c hewlett packard tshoot troubleshoot
+
+======================================================================
+Keywords          : kb3rdparty kbprint kbenvelope word97 kbPrinting 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

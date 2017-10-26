@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q70281: Cannot Start Run-Time ToolBook Without a Book | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q70281: Cannot Start Run-Time ToolBook Without a Book" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/070/Q70281/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/070/Q70281/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/070/Q70281/","publisher":null,"image":null,"headline":"Q70281: Cannot Start Run-Time ToolBook Without a Book","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q70281-cannot-start-run-time-toolbook-without-a-book">Q70281: Cannot Start Run-Time ToolBook Without a Book</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q70281
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error
+
+  Cannot Start Runtime ToolBook without a BOOK.
+  You must specify a ToolBook Application
+
+is generated if the TBOOK.EXE file is executed without a *.TBK file specified as
+a parameter and the ToolBook section of the WIN.INI file has been altered so
+that there is no default startup book specified.
+
+WORKAROUND
+==========
+
+Select the ToolBook icon and check the Command Line selection (choose Properties
+from the File menu) on the menu to ensure that a *.TBK file is loaded like one
+of the samples below:
+
+  C:\TOOLBOOK\TBOOK.EXE C:\TOOLBOOK\DAYBOOK.TBK
+
+  -or-
+
+  C:\TOOLBOOK\DAYBOOK.TBK
+  (Assuming *.TBK is associated to TBOOK.EXE in the WIN.INI file)
+
+MORE INFORMATION
+================
+
+ToolBook installs an entry in the WIN.INI file similar to:
+
+     [ToolBook]
+     startupUnits=inches
+     startupHeight=5760
+     startupWidth=8640
+     startupSysColors=true
+     startupSysBooks=
+     startupBook=tourbook.tbk
+
+In the sample above, the "startupBook=tourbook" line causes ToolBook to default
+to the TourBook application when TBOOK.EXE is executed.
+
+If the line reads
+
+  startupBook=
+
+no application is provided when TBOOK.EXE is executed and an error message
+results.
+
+This line may be altered to substitute any ToolBook application for:
+
+  tourbook.tbk
+
+NOTE: The full version of ToolBook, which has the executable file TOOLBOOK.EXE,
+loads without a any *.TBK or startup book specified. The full version of
+ToolBook will load a new authoring screen if it is loaded without a specified
+book or a default startup book.
+
+Additional query words: 3.00 3.0 3.00a windows daybook
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

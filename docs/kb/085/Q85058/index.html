@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85058: FFAPI: What Files FFAPI Accesses in the PC Mail Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85058: FFAPI: What Files FFAPI Accesses in the PC Mail Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85058/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85058/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85058/","publisher":null,"image":null,"headline":"Q85058: FFAPI: What Files FFAPI Accesses in the PC Mail Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85058-ffapi-what-files-ffapi-accesses-in-the-pc-mail-database">Q85058: FFAPI: What Files FFAPI Accesses in the PC Mail Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85058
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Software Development Kit: FFAPI for Gateways and Applications, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a brief outline of what files FFAPI uses to extract and
+submit mail.
+
+In the information below:
+
+- GET refers to APPGET.EXE and GTWGET.EXE.
+
+- PUT refers to APPPUT.EXE and GTWPUT.EXE.
+
+MORE INFORMATION
+================
+
+GET File Access
+---------------
+
+1. Extracting mail items from a user's mailbag:
+
+     Filename            Description
+     --------            -----------
+
+     ACCESS2.GLB         Verify user ID and get user MBG filename
+     ACCESS.GLB
+     MASTER.GLB          Determine what the network type is.
+     C850SORT.GLB        Get sort information.
+     Mail file           Creates or replaces mail file.
+     User KEY file       Gets pointers to mail items in MBG file.
+     User MBG file       Gets header and MAI filenames.
+     MAI file            Read MAI file.
+     User KEY file       Mark mail items as read.
+     MAI file            Read MAI file.
+     Mail file           Build output file from MAI file.
+
+2. Extracting mail items from a user's mailbag, with attachments:
+
+     Filename            Description
+     --------            -----------
+
+     ACCESS2.GLB         Verify user ID and get user MBG filename.
+     ACCESS.GLB
+     MASTER.GLB          Determine what the network type is.
+     C850SORT.GLB        Get sort information.
+     MAIL FILE           Creates or replaces mail file.
+     User KEY file       Gets pointers to mail items in MBG file.
+     User MBG file       Gets header and MAI and ATT filenames.
+     MAI file            Read MAI file.
+     ATT file            Read ATT file.
+     Mail file           Build output file from MAI file.
+
+PUT File Access
+---------------
+
+1. Submitting mail items to a user's mailbag:
+
+     Filename            Description
+     --------            -----------
+
+     Open mail file      Verify input file exists.
+     ACCESS2.GLB         Verify admin ID/password.
+     ACCESS.GLB
+     MASTER.GLB          Check network type.
+     C850SORT.GLB        Get sort information.
+     ACCESS2.GLB
+     GROUP.GLB           Get group information.
+     NETWORK.GLB         Get network information.
+     Read from mail file
+     CONTROL.GLB         Get unique filename.
+     Create and write
+        to MAI file      Writes mail message.
+     Create and write
+        to P1 file       Creates envelope file with address.
+     INQUEUE.KEY         Creates pointer to record in MBG file.
+     INQUEUE.MBG         Writes header for P1 file.
+     INQUEUE.KEY
+     Mail file
+     INQUEUE.MBG
+     INQUEUE.KEY         Get pointer to unprocessed mail.
+     INQUEUE.MBG         Get P1 and MAI filename.
+     P1 file
+     MAI file
+     User KEY file       Gets pointer to record in MBG file.
+     User MBG file       Writes header for MAI file.
+     User KEY file       Updates pointer.
+     Delete P1 file
+     Close INQUEUE.KEY
+     Close MAI file
+     Close INQUEUE.MBG
+     Close mail file
+     Delete mail file
+
+2. Submitting mail items to user's mailbag, with attachments:
+
+     Filename            Description
+     --------            -----------
+
+     Open mail file      Verify input file exists.
+     ACCESS2.GLB         Verify admin ID/password.
+     ACCESS.GLB
+     MASTER.GLB          Check network type.
+     C850SORT.GLB        Get sort information.
+     ACCESS2.GLB
+     GROUP.GLB           Get group information.
+     NETWORK.GLB         Get network information.
+     Read from mail file
+     CONTROL.GLB         Get unique filename.
+     Create and write
+        to MAI file      Writes mail message.
+     Create and write
+        ATT file         Create file for attachment.
+     Create and write
+        to P1 file       Creates envelope file with address.
+     INQUEUE.KEY         Creates pointer to record in MBG file.
+     INQUEUE.MBG         Writes header for P1 file.
+     INQUEUE.KEY
+     Mail file
+     INQUEUE.MBG
+     INQUEUE.KEY         Get pointer to unprocessed mail.
+     INQUEUE.MBG         Get P1 and MAI filename.
+     P1 file
+     MAI file
+     User KEY file       Gets pointer to record in MBG file.
+     User MBG file       Writes header for MAI file, adds ATT and
+                            MAI filenames.
+     User KEY file       Updates pointer.
+     Delete P1 file
+     Close INQUEUE.KEY
+     Close MAI file
+     Close INQUEUE.MBG
+     Close mail file
+     Delete mail file
+
+Remote FFAPI File Access
+------------------------
+
+1. Extracting mail items from the user's outbox.
+
+     Filename         Description
+     --------         -----------
+
+     CONNECT.GLB      Asynch connection information.
+     ACCESS.GLB       Verify user ID/password.
+     C850SORT.GLB     Get sort information.
+     Mail file        Open file.
+     INBOX.KEY        Get pointer to unread mail item.
+     INBOX.MBG        Get header and MAI filename.
+     MAI file         Open MAI file.
+     ATT file         Open attachment.
+     INBOX.KEY        Mark mail item as read.
+     MAI file
+
+2. Submitting mail items to the user's inbox.
+
+     Filename         Description
+     --------         -----------
+
+     CONNECT.GLB
+     ACCESS.GLB
+     C850SORT.GLB
+     GROUP.GLB
+     NETWORK.GLB
+     Mail file
+     CONTROL.MAI      Get unique filename.
+     Create MAI file
+     INBOX.KEY        Get pointer to MBG items.
+     INBOX.MBG        Write header and MAI filename.
+     INBOX.KEY        Update pointer to MBG items.
+
+
+Additional query words: 3.00 2.1a 2.1c pcmail files
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+Version           : MS-DOS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

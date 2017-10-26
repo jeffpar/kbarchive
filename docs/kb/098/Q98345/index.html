@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98345: DoubleSpace and R6002 Run-Time Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98345: DoubleSpace and R6002 Run-Time Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98345/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98345/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98345/","publisher":null,"image":null,"headline":"Q98345: DoubleSpace and R6002 Run-Time Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98345-doublespace-and-r6002-run-time-errors">Q98345: DoubleSpace and R6002 Run-Time Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98345
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 23-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MS-DOS 6.0 DoubleSpace disk-compression utility executes some floating point
+(non-integer math) calculations and therefore may attempt to use a math
+coprocessor (80x87 or equivalent) if one is present. If a machine's numeric
+processing system is substandard or compromised due to the presence of device
+drivers, TSRs, or faulty hardware, DoubleSpace may either report inaccurate time
+estimates for completion or fail and generate the following errors:
+
+- Run-time error R6002 - floating-point support not loaded
+
+- Run-time error R6002 - floating-point error
+
+- Error: R6101 - Floating Point Divide by Zero
+
+MS-DOS 6.2 DoubleSpace does some floating point arithmetic, but it does not
+attempt to use a math coprocessor even if one is present. This issue can occur
+in other programs that do not use the math coprocessor.
+
+NOTE: In some cases, no runtime error(s) are displayed, and DoubleSpace stops
+responding (hangs) early in the compression process.
+
+MORE INFORMATION
+================
+
+IMPORTANT: Since DoubleSpace has detected a potential problem with your system,
+perform a full system backup or make sure you can fully restore the machine from
+removable media before you proceed with these steps.
+
+Use the following steps to troubleshoot DoubleSpace R6002 errors:
+
+1. Turn the machine off, then turn it on again. Press the F5 key when the
+  "Starting MS-DOS" message appears to perform a "clean start." If your machine
+  requires that a device driver is loaded in the CONFIG.SYS file to boot
+  properly, press the F8 key to perform an "interactive start" and load ONLY
+  the device driver(s) required. If the machine is rebooted at any point in the
+  DoubleSpace process, be sure to use the EXACT same clean or interactive start
+  each time. If DoubleSpace completes successfully, one or more of the device
+  drivers or terminate-and-stay-resident (TSR) programs that were bypassed are
+  probably causing the problem.
+
+2. If DoubleSpace still fails with the R6002 error, try adding the following
+  line to the CONFIG.SYS file using MS-DOS Editor or another ASCII text editor:
+  set no87=nomath Restart your computer to make this change take effect. The
+  SET NO87 environment variable instructs DBLSPACE.EXE not to use the math
+  coprocessor for floating-point calculations. The SET statement should be
+  placed in the CONFIG.SYS file, not the AUTOEXEC.BAT file. (If DBLSPACE.EXE is
+  restarted, it may not process the AUTOEXEC.BAT file completely.) It doesn't
+  matter what you set NO87 to as long as the NO87 variable is in the MS-DOS
+  environment. For example, you could set NO87=NO or NO87=MICROSOFT, and
+  DoubleSpace would not use the math coprocessor. To remove the NO87
+  environment variable, type "set no87=" (without the quotation marks) at the
+  MS-DOS command prompt and then press ENTER.
+
+3. If DoubleSpace continues to fail, the coprocessor itself, the coprocessor
+  subsystem, or some other hardware component may be causing the problem.
+
+
+  In the case of 286, 386, and 486 SX machines, try removing the
+  coprocessor for testing purposes. If the machine is a 486 DX, verify
+  that the system's ROM BIOS is current and specifically designed for
+  use with a 486 DX, not a 386 or 486 SX.
+
+  In rare cases, incorrect CMOS or system board DIP switch settings,
+  faulty system RAM, or other hardware problems may cause R6002 errors.
+  Contact your system vendor or manufacturer to verify the CMOS and DIP
+  settings are correct. If the error persists, remove all system
+  components not absolutely required to operate the machine (optional
+  I/O adapters and so forth), use replacement parts (in the case of
+  system RAM), or have the machine inspected by a hardware repair
+  technician.
+
+
+Additional query words: 6.00 FPU NDP dblspace double space runtime stop hang clean start
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

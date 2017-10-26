@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140485: INFO: Exporting PASCAL-Like Symbols in 32-Bit DLLs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140485: INFO: Exporting PASCAL-Like Symbols in 32-Bit DLLs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140485/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140485/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140485/","publisher":null,"image":null,"headline":"Q140485: INFO: Exporting PASCAL-Like Symbols in 32-Bit DLLs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140485-info-exporting-pascal-like-symbols-in-32-bit-dlls">Q140485: INFO: Exporting PASCAL-Like Symbols in 32-Bit DLLs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140485
+Product(s): Microsoft C Compiler
+Version(s): WINNT:2.0,2.1,2.2,4.0,5.0;
+Operating System(s): 
+Keyword(s): kbCompiler kbVC200 kbVC210 kbVC220 kbVC400 kbVC500 kbVC600
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is no _pascal keyword in the 32-bit editions of Visual C++. Instead the
+Windef.h header file has PASCAL defined as __stdcall. This creates the correct
+style calling convention for the function (the called function cleans up the
+stack) but decorates the function name differently. So, when
+__declspec(dllexport) is used (in a .dll file, for example), the decorated name
+is exported instead of the desired PASCAL style name, which is undecorated and
+all uppercase.
+
+MORE INFORMATION
+================
+
+PASCAL name decoration is simply the undecorated symbol name in uppercase
+letters. __stdcall name decoration prefixes the symbol name with an underscore
+(_) and appends the symbol with an at sign (@) character followed by the number
+of bytes in the argument list (the required stack space). So, the function when
+declared as:
+
+     int  __stdcall func (int a, double b)
+
+is decorated as:
+
+     _func@12
+
+The C calling convention (__cdecl) decorates the name as _func. Whereas the
+desired PASCAL style name is FUNC.
+
+To get the decorated name set the Generate Mapfile option in the Linker General
+category setting.
+
+Use of __declspec(dllexport) does the following:
+
+- If the function is exported with C calling convention (_cdecl), it strips the
+  leading underscore (_) when the name is exported.
+
+- If the function being exported does not use the C calling convention (for
+  example, __stdcall ), it exports the decorated name.
+
+So to simulate PASCAL name decoration and calling conventions, you must have the
+"Called Function stack clean-up" provided by using __stdcall and the undecorated
+uppercase name.
+
+Because there is no way to override who does the stack clean up, you must use
+__stdcall. To undecorate names with __stdcall, you must specify them by using
+aliases in the EXPORTS section of the .def file. This is shown below for the
+following function declaration:
+
+     int  __stdcall MyFunc (int a, double b);
+     void __stdcall InitCode (void);
+
+In the .def file:
+
+     EXPORTS
+        MYFUNC=_MyFunc@12
+        INITCODE=_InitCode@0
+
+For .dll files to be called by programs written in the 32-bit versions of Visual
+Basic (versions 4.0 and above), the alias technique shown in this article is
+needed in the .def file. If alias is done in the Visual Basic program, use of
+aliasing in the .def file is not necessary. It can be done on the Visual Basic
+program by adding an Alias clause to the Declare statement as shown here:
+
+  Declare Function MyFunc Lib "dlllibname" Alias "_MyFunc@12"  (...)
+     As Integer
+
+The complete syntax for the Visual Basic Declare statement follows:
+
+     [Public | Private ] Declare Function name Lib
+     "libname" [Alias "aliasname" ] [([arglist])][As type]
+
+References
+----------
+
+For more information, query the MSDN compact disc using these keywords:
+
+  VB alias DLL
+
+NOTE: A very good discussion (with example code) of calling a C .dll file from
+Visual Basic can be found in the file Vb4dll.txt in the Visual Basic directory.
+If you can not locate the Vb4dll.txt file, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q150705 SAMPLE: Using VB4DLL.txt File to Develop .dlls for Visual Basic
+
+Additional query words: 9.00 9.10 PASCAL declspec VB DLL _stdcall
+
+======================================================================
+Keywords          : kbCompiler kbVC200 kbVC210 kbVC220 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : WINNT:2.0,2.1,2.2,4.0,5.0;
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

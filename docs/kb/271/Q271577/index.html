@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271577: Fix: CManualAccessor Does Not Work With Schema Rowsets | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271577: Fix: CManualAccessor Does Not Work With Schema Rowsets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271577/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271577/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271577/","publisher":null,"image":null,"headline":"Q271577: Fix: CManualAccessor Does Not Work With Schema Rowsets","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271577-fix-cmanualaccessor-does-not-work-with-schema-rowsets">Q271577: Fix: CManualAccessor Does Not Work With Schema Rowsets</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271577
+Product(s): Microsoft C Compiler
+Version(s): 6.0,6.0sp5
+Operating System(s): 
+Keyword(s): kbATL kbDatabase kbDTL kbATL300fix kbGrpDSVCDB kbDSupport kbVS600sp5fix
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 6.0, 6.0sp5 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 6.0, 6.0sp5 
+- Microsoft Visual C++, 32-bit Learning Edition, versions 6.0, 6.0sp5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Active Template Library (ATL) Consumer templates to get schema
+rowsets from a data store, it is impossible to use a CManualAccessor class and
+base the accessor on the metadata after retrieving the rowset. It is only
+possible to set up the accessor before opening the rowset.
+
+The ATL Consumer classes provide specialized template classes for most common
+schema rowsets based on a static CAccessor class such as CTables or CColumns.
+For this reason the problem described in this article only manifests itself when
+you retrieve non-standard schema rowsets and base them on the CManualAccessor
+class to avoid creating static accessors.
+
+An example of such schema rowsets are the multi-dimensional schema rowsets
+available with the Microsoft OLE DB Provider for OLAP Services, such as
+MDSCHEMA_MEMBERS.
+
+CAUSE
+=====
+
+The CRestrictions and CSchemaRowset classes did not have a parameter in their
+Open method that specified whether an accessor should be bound in the Open
+method call. The CSchemaRowset::Open method called the CAccessorRowset::Bind
+method automatically, which required the accessor to be set up before the Open
+method was called.
+
+RESOLUTION
+==========
+
+Install Visual Studio 6.0 Service Pack 5 and use the new parameter available in
+the CRestrictions class to indicate that the accessor should not be bound in the
+Open call. For additional information, refer to the "More Information" section.
+
+STATUS
+======
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+  Visual Studio Product Updates
+  (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+http://msdn.microsoft.com/vstudio/downloads/updates.asp
+
+MORE INFORMATION
+================
+
+A new parameter has been added to the CRestrictions::Open and
+CSchemaRowset::Open methods called bBind. bBind is the ninth parameter in the
+CRestrictions::Open call and the third parameter in the CSchemaRowset::Open
+call. Both these parameters have a default true value so existing code that does
+not use this parameter works without changes.
+
+The following code sample demonstrates how to use this new parameter with a
+CManualAccessor class. The accessor is created dynamically based on the metadata
+retrieved from a call to IColumnsInfo::GetColumnInfo. The sample connects to a
+Microsoft SQL Server 7.0 or a Microsoft SQL Server 2000 database, and retrieves
+column information for the authors table in the pubs database.
+
+To run the code, follow these steps:
+
+1. Create a console application that supports Microsoft Foundation Classes (MFC)
+  in Visual C++.
+
+2. Include the following header files:
+
+  #include &lt;oledberr.h&gt;
+  #include &lt;atldbcli.h&gt;
+  #include &lt;atldbsch.h&gt;
+
+3. Paste in the following code to replace the skeleton _tmain code.
+
+SAMPLE CODE
+
+  typedef CRestrictions&lt;CManualAccessor, 4, &amp;DBSCHEMA_COLUMNS&gt; CMyColumns;
+
+  const int DATA_LENGTH = 128;
+  struct MYBIND
+  {
+  	union tagData
+  	{
+  		OLECHAR wszData[DATA_LENGTH];
+  		ULONG ulData;
+  	} data;
+  	DBSTATUS dwStatus;
+  	ULONG ulLength;
+  	MYBIND()
+  	{
+  		memset(this,0,sizeof(MYBIND));
+  	}
+  };
+
+  int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
+  {
+  	int nRetCode = 0;
+
+  	// initialize MFC and print and error on failure
+  	if (!AfxWinInit(::GetModuleHandle(NULL), NULL, ::GetCommandLine(), 0))
+  	{
+  		// TODO: change error code to suit your needs
+  		cerr &lt;&lt; _T("Fatal Error: MFC initialization failed") &lt;&lt; endl;
+  		nRetCode = 1;
+  	}
+  	else
+  	{
+  		CDataSource DataSource;
+  		CSession Session;
+
+  		HRESULT hr;
+
+  		hr = CoInitialize(NULL);
+  		hr = DataSource.OpenFromInitializationString(
+  			L"Provider=SQLOLEDB.1;Persist Security Info=False;User ID=sa;Initial Catalog=Pubs;Data Source=(local)");
+  		hr = Session.Open(DataSource);
+
+  		CMyColumns columns;
+  		//Uncomment the following line to see the pre-SP5 behavior, comment out line after that
+  		//hr = columns.Open(Session, "pubs", NULL, "authors", NULL, NULL, NULL, NULL);
+  		hr = columns.Open(Session, "pubs", NULL, "authors", NULL, NULL, NULL, NULL, false);
+
+  		CComPtr&lt;IColumnsInfo&gt; pColumnsInfo;
+  		hr = columns.m_spRowset-&gt;QueryInterface(IID_IColumnsInfo, (void**) &amp;pColumnsInfo);
+
+  		DBORDINAL ColCount;
+  		DBCOLUMNINFO* pColInfo;
+  		OLECHAR* wszInfo;
+
+  		hr = pColumnsInfo-&gt;GetColumnInfo(&amp;ColCount,&amp;pColInfo, &amp;wszInfo);
+  		MYBIND* pData = new MYBIND[ColCount];
+  		hr = columns.CreateAccessor(ColCount,pData, ColCount * sizeof(MYBIND));		
+  		int i;
+  		
+  		for (i = 0; i &lt; ColCount; i++)
+  		{
+  			//We are only binding to two different data types, UI4 and WSTR
+  			//A more elaborate scheme can be implemented here
+  			if (pColInfo[i].wType == DBTYPE_UI4 || pColInfo[i].wType == DBTYPE_UI2)
+  			{
+  				columns.AddBindEntry(i+1, 
+  					DBTYPE_UI4,
+  					4,
+  					&amp;(pData[i].data.ulData),
+  					&amp;(pData[i].ulLength),
+  					&amp;(pData[i].dwStatus));
+  			}
+  			else
+  			{
+  				columns.AddBindEntry(i+1, 
+  					DBTYPE_WSTR,
+  					DATA_LENGTH,
+  					&amp;(pData[i].data.wszData),
+  					&amp;(pData[i].ulLength),
+  					&amp;(pData[i].dwStatus));
+  			}
+  			TRACE("%i) %S ", i, pColInfo[i].pwszName);
+  			
+  		}
+  		TRACE("\n");
+
+  		hr = columns.Bind();
+  		
+  		while (SUCCEEDED(hr = columns.MoveNext()) &amp;&amp; hr != DB_S_ENDOFROWSET )
+  		{
+  			for(i = 0; i &lt; ColCount; i++)
+  			{
+  				if (pData[i].dwStatus != DBSTATUS_S_ISNULL)
+  				{
+  					if (pColInfo[i].wType == DBTYPE_UI4 || pColInfo[i].wType == DBTYPE_UI2)
+  					{
+  						TRACE("%i) %i ", i, pData[i].data.ulData);
+  					}
+  					else
+  					{
+  						TRACE("%i) %S ", i, pData[i].data.wszData);
+  					}
+  				}
+  			}
+  			TRACE("\n");
+  		} 
+
+  		delete [] pData;
+  		CoTaskMemFree(pColInfo);
+  		CoTaskMemFree(wszInfo);
+  	}
+
+  	return nRetCode;
+  }
+
+4. Modify the connection string to reflect the name of your SQL Server server.
+
+Additional query words: DB_S_ERRORSOCCURRED DB_E_ERRORSOCCURRED
+
+======================================================================
+Keywords          : kbATL kbDatabase kbDTL kbATL300fix kbGrpDSVCDB kbDSupport kbVS600sp5fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch kbVC600SP5
+Version           : :6.0,6.0sp5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

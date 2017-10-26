@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175763: SMS: Long Inventory Package Names Cause Incomplete Inventory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175763: SMS: Long Inventory Package Names Cause Incomplete Inventory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175763/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175763/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175763/","publisher":null,"image":null,"headline":"Q175763: SMS: Long Inventory Package Names Cause Incomplete Inventory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175763-sms-long-inventory-package-names-cause-incomplete-inventory">Q175763: SMS: Long Inventory Package Names Cause Incomplete Inventory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175763
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbDataLoader smsdataloader
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An Inventory package whose name exceeds 40 characters can cause the Systems
+Management Server Inventory Dataloader service to only partially process a
+client's inventory if one of these packages is detected on the Systems
+Management Server client. When one of these MIFs is processed, the information
+contained in the MIF is ignored by SMS_Inventory_Dataloader without logging any
+errors in the Datalodr.log file.
+
+  -or-
+
+You may also see multiple incomplete inventory records when you view them from
+the Systems Management Server Administrator utility. These machine inventory
+records contain only four or five inventory groups in the Personal Computer
+Properties window of the computer.
+
+Also, you may see duplicate inventory entries.
+
+CAUSE
+=====
+
+The symptoms may occur if you have package inventory rules with names that are
+longer than 40 characters and the Software_Name0 column size in the
+Software_Comm table in the SMS database is 40 characters. You can check the
+length of your software package names in the Package.rul file to confirm whether
+these names contain more than 40 characters.
+
+The Software_Name0 column size was increased from 40 characters to 128 characters
+in Systems Management Server version 1.2 Service Pack 2. But when you upgrade to
+Service Pack 2, Dbcnv12a.exe fails to modify the Software_Name0 column size to
+128 characters.
+
+When SMS_Inventory_Dataloader processes the MIF that has a software name longer
+than 40 characters, it fails to load this attribute into SQL and truncates this
+field. It subsequently ignores the rest of the groups defined in the MIF file.
+Therefore, an incomplete inventory record appears in Systems Management Server
+Administrator for this client. It does not log any errors in the Datalodr.log.
+It also does not move the MIF to the
+Sms\Site.srv\Datalodr.box\Deltamif.col\Badmifs subdirectory.
+
+The Datalodr.log files looks like the following:
+
+  Adding group: MICROSOFT|IDENTIFICATION|1.0...
+  $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Tue Nov 04 13:07:27 1997~&gt;&lt;thread=A0&gt;
+  Adding group: MICROSOFT|MOUSE|1.0...   $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Tue
+  Nov 04 13:07:27 1997~&gt;&lt;thread=A0&gt;
+  Adding group: MICROSOFT|VIDEO|1.0...   $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Tue
+  Nov 04 13:07:27 1997~&gt;&lt;thread=A0&gt;
+  Adding group: MICROSOFT|SOFTWARE|1.0...   $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Tue
+  Nov 04 13:07:28 1997~&gt;&lt;thread=A0&gt;
+  Adding group: MICROSOFT|SOFTWARE|1.0...   $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Tue
+  Nov 04 13:07:29 1997~&gt;&lt;thread=A0&gt;
+  Adding group: MICROSOFT|SOFTWARE|1.0...   $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Tue
+  Nov 04 13:07:30 1997~&gt;&lt;thread=A0&gt;
+  finished processing current machine.   $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Tue
+  Nov 04 13:07:31 1997~&gt;&lt;thread=A0&gt;
+  ~No more machine MIFs to be processed, terminating thread
+  $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Tue Nov 04 13:07:31
+
+WORKAROUND
+==========
+
+You can use either of the following workarounds.
+
+The first is to change the names in the inventory packages to 40 characters or
+fewer. By doing this, the Package.rul and Pkg16.cfg files will be rebuilt and
+subsequent inventory from the clients will be processed correctly.
+
+The other workaround is to delete the Software group class using the Systems
+Management Server Database Manager. After deleting a group class, it is
+important to stop and restart the Systems Management Server Executive service on
+the site server. Also, in order to keep client resynchronization (resync) jobs
+from occurring, delete the history (.hms and .smh) files from
+Sms\Site.srv\Inventory.box\History directory. This will allow the Inventory Data
+Loader to recreate this table with 128 characters for the length of the
+Software_Name0 column when it processes a client's inventory.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbDataLoader smsdataloader 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

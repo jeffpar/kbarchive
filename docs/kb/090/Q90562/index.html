@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q90562: Using OpenDriver() to Communicate Data to Installable Drv | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q90562: Using OpenDriver() to Communicate Data to Installable Drv" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/090/Q90562/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/090/Q90562/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/090/Q90562/","publisher":null,"image":null,"headline":"Q90562: Using OpenDriver() to Communicate Data to Installable Drv","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q90562-using-opendriver-to-communicate-data-to-installable-drv">Q90562: Using OpenDriver() to Communicate Data to Installable Drv</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q90562
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The lParam parameter supplied to the OpenDriver() call can be used to
+communicate information from a Windows-based application or dynamic-link library
+(DLL) to an installable driver. Windows resolves the call to OpenDriver() to
+three subsequent calls to the DriverProc() of the installable device driver; the
+third call calls the driver's DriverProc() with the message set to DRV_OPEN and
+lParam2 set to the lParam supplied to OpenDriver(). Thus, the DriverProc() could
+use the lParam2 supplied to process instance-specific information.
+
+One problem with this approach is that the control panel can call OpenDriver()
+with lParam2 set to 0 (zero) if a control panel application is being provided
+for that driver; thus, the DriverProc() of the installable driver cannot expect
+this parameter to contain valid communication values at all times.
+
+MORE INFORMATION
+================
+
+To work around this problem, you should set aside a dedicated initialization
+message greater than DRV_USER and call SendDriverMessage() with that value as
+the message parameter after calling OpenDriver() to open the installable device
+driver.
+
+Note that because the hDriver parameter passed to DriverProc() is unique with
+every call to OpenDriver(), you can associate instanced data with each instance
+of the driver. Alternatively, the DRV_OPEN switch in your DriverProc() could
+check whether lParam2 is 0 (zero) and take action accordingly. This technique,
+however, bears the potential problem that any application or DLL that
+erroneously opens the driver with a nonzero lParam2 parameter can confuse the
+driver significantly.
+
+For multimedia drivers, MMSYSTEM.DLL takes a slightly different approach to work
+around this problem. Aside from DriverProc(), each multimedia driver must export
+a second message-processing function called xxxMessage (where xxx is either of
+wod, wid, mod, mid, or aux, respectively; depending on the type of driver).
+MMSYSTEM.DLL broadcasts initialization messages to these respective functions
+upon Windows boot time; the message parameters sent to the message functions are
+labeled WODM_INIT, WIDM_INIT, MODM_INIT, MIDM_INIT, and AUXM_INIT, respectively,
+and are provided for one-time initialization.
+
+The xxxMessage functions cannot fail the xxxM_INIT messages; however,
+MMSYSTEM.DLL will call the message processing functions with their respective
+GETNUMDEVS messages immediately after sending the xxxM_INIT messages; if it
+finds the return value of that call to be greater than or equal to 0x10000 (in
+other words, if the HIWORD of the return value is not equal to zero), it will
+abort loading the driver.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

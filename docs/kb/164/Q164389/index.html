@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164389: FIX: ODBC Files Get Copied to Distribution Disks in VFP 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164389: FIX: ODBC Files Get Copied to Distribution Disks in VFP 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164389/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164389/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164389/","publisher":null,"image":null,"headline":"Q164389: FIX: ODBC Files Get Copied to Distribution Disks in VFP 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164389-fix-odbc-files-get-copied-to-distribution-disks-in-vfp-30">Q164389: FIX: ODBC Files Get Copied to Distribution Disks in VFP 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164389
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,3.0,3.0b
+Operating System(s): 
+Keyword(s): kbvfp300bBUG kbMDAC250kbbuglist kbfixlist
+Last Modified: 22-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When leaving the ODBC Drivers check box blank in step 2 of the Setup Wizard in
+Visual FoxPro 3.0, the desired effect is to avoid having the ODBC files copied
+to the disk images. The problem is that some of the ODBC files get copied to the
+disk images even if the ODBC check box is clear.
+
+There are at least seven files that get copied onto the disk images. They are
+listed below:
+
+- Odbccp32.dl_
+
+- Odbcinst.dl_
+
+- Odbcint.dl_
+
+- Odbckey.dl_
+
+- Odbcstf.dl_
+
+- Odbcstp.dl_
+
+- Odbcexec.ex_
+
+RESOLUTION
+==========
+
+To ensure that these files do not get copied onto the disk images, complete the
+following steps:
+
+1. Delete the Visual FoxPro \Distrib directory.
+
+2. Open the Compress.dbf table in the Visual FoxPro \Distrib.src directory and
+  make a backup of it.
+
+3. Create an index on the DEST field. Locate Odbc.dl_ in the DEST field. Move
+  the record pointer to that record.
+
+4. Issue the following command in the Command window:
+
+     DELETE NEXT 52
+
+  Browse the table to make sure that only names that start with OD in the DEST
+  field are marked for deletion. There might be more than 52 records that start
+  with OD. If so, mark them for deletion also.
+
+5. Now that the ODBC files are marked for deletion in the Compress table, pack
+  the table and close it.
+
+6. Delete the Compress and Disk images directories under the destination
+  directory if they have been created from an earlier session of the Setup
+  Wizard. Also delete the Dkcontrl.dbf, Dkcontrl.cdx, and Wzsetup.ini files
+  located in the directory where the source files are.
+
+7. Run the Setup Wizard to rebuild the Visual FoxPro \Distrib directory and the
+  Disk images directories. Note that opening up each of the disk images shows
+  that there are no ODBC files now.
+
+8. Open the Setup.st1 file in the DISK1 directory with Notepad and place a
+  semicolon at the beginning of any line that represents an ODBC file. The
+  semicolon acts as a remark statement allowing the setup routine to bypass
+  that line. This step has to be repeated every time the Disk images are
+  re-created.
+
+To be able to change back to checking the ODBC drivers check box in the Setup
+Wizard and loading the ODBC files into the Disk images directories, replace the
+Compress.dbf file in the Visual FoxPro \Distrib.src directory with the backup
+that was created and delete the Visual FoxPro \Distrib directory. Running the
+Setup wizard re-creates the Distrib directory and add the ODBC files to the Disk
+images.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was fixed in Visual FoxPro 5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an .exe file and place it in a directory by itself.
+
+2. Run the Setup Wizard on that directory and leave the ODBC drivers check box
+  clear.
+
+3. Open each of the Disk images directories and note that the ODBC files listed
+  above are in the directories.
+
+4. Perform the steps in the WORKAROUND section to remove the ODBC files from the
+  disk images directories.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300bBUG kbMDAC250 kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b
+Version           : WINDOWS:2.5,3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

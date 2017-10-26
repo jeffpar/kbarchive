@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143045: HOWTO: Use SetCapture and WindowFromPoint to Select a Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143045: HOWTO: Use SetCapture and WindowFromPoint to Select a Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143045/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143045/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143045/","publisher":null,"image":null,"headline":"Q143045: HOWTO: Use SetCapture and WindowFromPoint to Select a Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143045-howto-use-setcapture-and-windowfrompoint-to-select-a-window">Q143045: HOWTO: Use SetCapture and WindowFromPoint to Select a Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143045
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how you can use the SetCapture and WindowFromPoint API
+functions to drag and select a Window. Using SetCapture and WindowFromPoint, you
+can create functionality similar to that of the utility SPYXX.EXE to select a
+window.
+
+MORE INFORMATION
+================
+
+The following code sample allows the user to drag an icon off of the form and
+point it to any window on the screen. As the user moves the mouse over a window,
+the application draws a rectangle around that window. When the user releases the
+mouse, the caption of the current window is inserted into Form1's titlebar.
+
+To use this code, simply insert the following code into the General Declarations
+section of Form1, and run the program.
+
+  Option Explicit
+  '--------------------------------------------------------------------------
+
+  ' API Declarations, Types, and Constants
+  '--------------------------------------------------------------------------
+
+  Private Type RECT
+          Left As Long
+          Top As Long
+          Right As Long
+          Bottom As Long
+  End Type
+
+  Private Type POINT
+      X As Long
+      Y As Long
+  End Type
+
+  Private Declare Function SetCapture Lib "user32" (ByVal hWnd As Long) _
+  As Long
+  Private Declare Function GetCapture Lib "user32" () As Long
+  Private Declare Sub ClientToScreen Lib "user32" (ByVal hWnd As Long, _
+  lpPoint As POINT)
+  Private Declare Function GetSystemMetrics Lib "user32" (ByVal nIndex&amp;) _
+  As Long
+  Private Declare Function GetWindowText&amp; Lib "user32" Alias _
+     "GetWindowTextA" (ByVal hWnd&amp;, ByVal lpString$, ByVal cb&amp;)
+                                    (ByVal hWnd&amp;, ByVal lpString$, ByVal cb&amp;)
+  Private Declare Function GetWindowRect Lib "user32" (ByVal hWnd As Long, _
+   lpRect As RECT) As Boolean
+  Private Declare Function WindowFromPoint Lib "user32" (ByVal ptY As Long, _
+    ByVal ptX As Long) As Long
+  Private Declare Function GetWindowDC Lib "user32" (ByVal hWnd As Long) _
+  As Long
+  Private Declare Function ReleaseDC Lib "user32" (ByVal hWnd As Long, _
+    ByVal hdc As Long) As Long
+  Private Declare Function SelectObject Lib "gdi32" (ByVal hdc As Long, _
+    ByVal hObject As Long) As Long
+  Private Declare Function GetStockObject Lib "gdi32" (ByVal nIndex&amp;) As Long
+  Private Declare Function CreatePen Lib "gdi32" (ByVal nPenStyle&amp;, _
+    ByVal nWidth&amp;, ByVal crColor&amp;) As Long
+  Private Declare Function DeleteObject Lib "gdi32" (ByVal hObject&amp;) As Long
+  Private Declare Function SetROP2 Lib "gdi32" (ByVal hdc As Long, _
+    ByVal nDrawMode As Long) As Long
+  Private Declare Function Rectangle Lib "gdi32" (ByVal hdc&amp;, ByVal X1&amp;, _
+    ByVal Y1&amp;, ByVal X2&amp;, ByVal Y2&amp;) As Long
+  Private Declare Sub InvalidateRect Lib "user32" (ByVal hWnd As Long, _
+    lpRect As Any, ByVal bErase As Long)
+  Private Declare Function LoadCursor Lib "user32" Alias "LoadCursorA" _
+    (ByVal hInstance&amp;, ByVal lpCursor&amp;) As Long
+  Private Declare Function DrawIcon Lib "user32" (ByVal hdc As Long, _
+     ByVal X As Long, ByVal Y As Long, ByVal hIcon As Long) _
+    As Long
+    Private Const IDC_UPARROW = 32516&amp;
+  '--------------------------------------------------------------------------
+
+  ' Module-Level variables
+  '--------------------------------------------------------------------------
+
+  Public mlngHwndCaptured As Long   ' Holds the handle to the captured window
+  '**************************************************************************
+
+  ' Purpose:  Turns on SetCapture and changes the mouse pointer when the user
+  '           clicks down on the form.
+  '**************************************************************************
+
+  Private Sub Form_MouseDown(Button%, Shift%, X As Single, Y As Single)
+      If SetCapture(hWnd) Then MousePointer = vbUpArrow
+    End Sub
+
+  '**************************************************************************
+
+  ' Purpose:  Draws a rectangle around the window currently under the mouse
+  '           pointer while the primary mouse key is being held down.
+  '**************************************************************************
+
+  Private Sub Form_MouseMove(Button%, Shift%, X As Single, Y As Single)
+      Dim pt As POINT          ' Holds the location of the window.
+      Static hWndLast As Long  ' The handle of the last window we drew a
+                               ' a rectangle on.
+      '----------------------------------------------------------------------
+
+      ' If in capture mode, then draw a rectangle around the active window.
+      '----------------------------------------------------------------------
+
+      If GetCapture() Then
+          '------------------------------------------------------------------
+
+          ' Convert the current mouse position to Screen coordinates.
+          '------------------------------------------------------------------
+
+          pt.X = CLng(X)
+          pt.Y = CLng(Y)
+          ClientToScreen Me.hWnd, pt
+          '------------------------------------------------------------------
+
+          ' Pass that value to WindowFromPoint to find out what window we are
+          ' pointing to.
+          '------------------------------------------------------------------
+
+          mlngHwndCaptured = WindowFromPoint(pt.X, pt.Y)
+          '------------------------------------------------------------------
+
+          ' If its not the last window, then erase the previous rectangle
+          ' and draw a rectangle around the window under the mouse pointer.
+          '------------------------------------------------------------------
+
+          If hWndLast &lt;&gt; mlngHwndCaptured Then
+              If hWndLast Then InvertTracker hWndLast
+              InvertTracker mlngHwndCaptured
+              hWndLast = mlngHwndCaptured
+          End If
+      End If
+    End Sub
+
+  '**************************************************************************
+
+  ' Purpose:  Puts the caption of the window under the cursor into our
+  ' caption.
+
+  '**************************************************************************
+
+  Private Sub Form_MouseUp(Button%, Shift%, X As Single, Y As Single)
+      Dim strCaption$ ' Buffer used to hold the caption.
+      '----------------------------------------------------------------------
+
+      ' If a window has been captured, then put its caption in our caption.
+      '----------------------------------------------------------------------
+
+      If mlngHwndCaptured Then
+          '------------------------------------------------------------------
+
+          ' Create a buffer to hold the caption, and call GetWindowText to
+          ' retrive it.
+          '------------------------------------------------------------------
+
+          strCaption = Space(1000)
+          Caption = Left(strCaption, _
+              GetWindowText(mlngHwndCaptured, strCaption, Len(strCaption)))
+          '------------------------------------------------------------------
+
+        ' Refresh the entire screen in case we forgot to erase a rectangle.
+          '------------------------------------------------------------------
+
+          InvalidateRect 0, 0, True
+          '------------------------------------------------------------------
+
+          ' Clear our module-level variable and restore the mouse pointer.
+          '------------------------------------------------------------------
+
+            mlngHwndCaptured = False
+            MousePointer = vbNormal
+        End If
+    End Sub
+
+  '**************************************************************************
+
+    ' Purpose:  Draws a inverted rectangle around a window on the screen.
+    ' Inputs:   A handle to a enabled and visible window.
+
+  '**************************************************************************
+
+  Private Sub InvertTracker(hwndDest As Long)
+      Dim hdcDest&amp;, hPen&amp;, hOldPen&amp;, hOldBrush&amp;
+      Dim cxBorder&amp;, cxFrame&amp;, cyFrame&amp;, cxScreen&amp;, cyScreen&amp;
+      Dim rc As RECT, cr As Long
+      Const NULL_BRUSH = 5
+      Const R2_NOT = 6
+      Const PS_INSIDEFRAME = 6
+      '----------------------------------------------------------------------
+
+      ' Get the screen, border, and frame sizes.
+      '----------------------------------------------------------------------
+
+        cxScreen = GetSystemMetrics(0)
+        cyScreen = GetSystemMetrics(1)
+        cxBorder = GetSystemMetrics(5)
+        cxFrame = GetSystemMetrics(32)
+      cyFrame = GetSystemMetrics(33)
+      '----------------------------------------------------------------------
+
+      ' Get the coordinates of the window on the screen.
+      '----------------------------------------------------------------------
+
+      GetWindowRect hwndDest, rc
+      '----------------------------------------------------------------------
+
+      ' Get a handle to the window's device context.
+      '----------------------------------------------------------------------
+
+      hdcDest = GetWindowDC(hwndDest)
+      '----------------------------------------------------------------------
+
+      ' Create an inverse pen that is the size of a window border.
+      '----------------------------------------------------------------------
+
+      SetROP2 hdcDest, R2_NOT
+      cr = RGB(0, 0, 0)
+      hPen = CreatePen(PS_INSIDEFRAME, 3 * cxBorder, cr)
+      '----------------------------------------------------------------------
+
+     ' Draw the rectangle around the window.
+     '----------------------------------------------------------------------
+
+      hOldPen = SelectObject(hdcDest, hPen)
+      hOldBrush = SelectObject(hdcDest, GetStockObject(NULL_BRUSH))
+      Rectangle hdcDest, 0, 0, rc.Right - rc.Left, rc.Bottom - rc.Top
+      SelectObject hdcDest, hOldBrush
+      SelectObject hdcDest, hOldPen
+      '----------------------------------------------------------------------
+
+     ' Give the window its device context back, and destroy our pen.
+     '----------------------------------------------------------------------
+
+     ReleaseDC hwndDest, hdcDest
+      DeleteObject hPen
+  End Sub
+  '**************************************************************************
+
+  ' Purpose:  Sets up the form, and draws a copy of vbUpArrow on the form.
+  '**************************************************************************
+
+  Private Sub Form_Load()
+      '----------------------------------------------------------------------
+
+      ' Size the form and put instructions in the caption.
+      '----------------------------------------------------------------------
+
+      Move 0, 0, 250 * Screen.TwipsPerPixelX, 75 * Screen.TwipsPerPixelY
+      Caption = "Click &amp; drag the arrow!"
+      '----------------------------------------------------------------------
+
+     ' Change the ScaleMode to pixels and turn on AutoRedraw.
+     '----------------------------------------------------------------------
+
+     ScaleMode = vbPixels
+     AutoRedraw = True
+     '----------------------------------------------------------------------
+
+     ' Draw vbUpArrow into the form's persistant bitmap.
+     '----------------------------------------------------------------------
+
+      DrawIcon hdc, (ScaleWidth / 2), 9, LoadCursor(0, IDC_UPARROW)
+  End Sub
+
+Additional query words: kbVBp400 kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport KBWIN32SDK KBAPI LOADCURSOR
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

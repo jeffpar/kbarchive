@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140069: PC Rmt: Err Msg: This Does Not Appear to be Disk 2… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140069: PC Rmt: Err Msg: This Does Not Appear to be Disk 2…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140069/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140069/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140069/","publisher":null,"image":null,"headline":"Q140069: PC Rmt: Err Msg: This Does Not Appear to be Disk 2…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140069-pc-rmt-err-msg-this-does-not-appear-to-be-disk-2">Q140069: PC Rmt: Err Msg: This Does Not Appear to be Disk 2…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140069
+Product(s): Microsoft Mail For PC Networks
+Version(s): MS-DOS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for MS-DOS, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you select a script during the setup of Mail Remote for MS-DOS, you may
+get the following error:
+
+  Please insert the disk labeled Disk 2 - Supplementary Modem Scripts in drive
+  A: and press ENTER.
+
+When you insert the Supplementary Modem Scripts disk and press the ENTER key, you
+may get the following setup error:
+
+  This does not appear to be Disk 2 - Supplementary Modem Scripts.
+  Please insert the disk labeled Disk 2 - Supplementary Modem
+  Scripts in drive A: and press ENTER.
+
+CAUSE
+=====
+
+The Supplementary Modem Scripts disk in the drive is version 3.5, not version
+3.0.
+
+RESOLUTION
+==========
+
+Insert the version 3.0 Microsoft Mail Remote Supplementary Modem Script disk in
+the appropriate drive.
+
+If the disk asked for is not available, use the following procedure to complete
+the procedure:
+
+1. Press the CTRL+X keys to exit the Setup program and return to the MS-DOS
+  prompt.
+
+2. Place the version 3.5 Supplementary Modem Scripts disk in the disk drive.
+
+3. Use the MS-DOS utility EXPAND.EXE to expand the desired script from the
+  disk.
+
+  NOTE: EXPAND.EXE can usually be found in DOS subdirectory.
+
+4. Place the disk labeled Remote MS-DOS-based Workstation Version - Disk 1-Setup
+  in the floppy drive, and run the Setup program.
+
+5. When the Script Install Selection screen appears, highlight the option
+  Location of Additional Script files..., and press the ENTER key. Then
+  continue with the Selected Options.
+
+  NOTE: Do not select scripts from the list, as this will cause the error again.
+
+6. The next screen will prompt for the directory or drive that contains
+  additional modem scripts for Mail Remote. Type the path to the previously
+  expanded script files as specified in step 4.
+
+
+MORE INFORMATION
+================
+
+For additional information regarding other scripts available on the
+Supplementary Modem Scripts disk, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q132412 Microsoft Mail 3.5 Upgrade Information
+
+
+Additional query words: 3.00 wrong disk script kbhowto
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailRemote300DOS
+Version           : MS-DOS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

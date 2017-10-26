@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137179: PRB: List from Array May Display Incorrect Number Of Elements | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137179: PRB: List from Array May Display Incorrect Number Of Elements" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137179/","publisher":null,"image":null,"headline":"Q137179: PRB: List from Array May Display Incorrect Number Of Elements","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137179-prb-list-from-array-may-display-incorrect-number-of-elements">Q137179: PRB: List from Array May Display Incorrect Number Of Elements</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137179
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an array that is the RowSource for a list box is redimensioned to a lower
+number of elements than originally displayed in the list box, there will be
+blank rows in the list representing elements from the previous array.
+
+RESOLUTION
+==========
+
+Issue one of the following (assuming the list box is placed on the form and is
+named List1) after redimensioning the array to allow the list box to display the
+correct number of elements:
+
+     Thisform.List1.NumberOfElements=_TALLY
+     * This can be used only if _TALLY is updated when the array is
+     * redimensioned, with SELECT... INTO ARRAY or COPY TO ARRAY
+
+  -or-
+
+     Thisform.List1.Requery
+
+  -or-
+
+     Thisform.List1.RowSource=Thisform.List1.RowSource
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Type OPEN DATA in the Command window and select the
+  Vfp\Samples\Data\Testdata.dbc database.
+
+2. Type the following command in the Command window:
+
+     SELECT country FROM CUSTOMER INTO ARRAY test
+
+3. Create a new form, and put a list box object as well as a command button on
+  the form.
+
+4. In the properties for the list box, set the RowSource property to test and
+  the RowSourceType to Array.
+
+5. Place the following code in the command button's Click event procedure:
+
+     SELECT country FROM CUSTOMER WHERE country="Germany" INTO ARRAY test
+     Thisform.Refresh
+
+  This code will change the size and contents of the array and allow the new
+  contents to be displayed in the list box.
+
+6. Run the form. Click the command button, and note "Germany" will appear in the
+  list box, but a number of empty rows will appear at the bottom of the list.
+  These empty rows correspond to the difference in the number of array elements
+  created by the first and second SELECT commands.
+
+Example Resolution
+------------------
+
+Modify the code in the click event of the command button, and add any one of the
+following after the SELECT command. This will allow the list box to display the
+array elements without the blank rows at the bottom of the list:
+
+- Thisform.List1.NumberOfElements=_TALLY
+
+-or-
+
+- Thisform.List1.Requery
+
+-or-
+
+- Thisform.List1.RowSource=Thisform.List1.RowSource
+
+NOTE: There may be performance differences between the above methods with large
+arrays. Use whichever technique provides the best performance.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

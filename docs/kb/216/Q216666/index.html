@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216666: PRB: DataBound Controls Not Refreshed With DataEnvironment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216666: PRB: DataBound Controls Not Refreshed With DataEnvironment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216666/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216666/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216666/","publisher":null,"image":null,"headline":"Q216666: PRB: DataBound Controls Not Refreshed With DataEnvironment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216666-prb-databound-controls-not-refreshed-with-dataenvironment">Q216666: PRB: DataBound Controls Not Refreshed With DataEnvironment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216666
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbDataBinding kbVBp600 kbDataEnv
+Last Modified: 16-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The DataCombo and DataGrid controls are not refreshed when using the Refresh
+method. This behavior is exhibited when using the DataEnvironment.
+
+RESOLUTION
+==========
+
+There are several workarounds. One is to use the ADO Data Control instead of the
+DataEnvironment. Another is to rebind the controls to the DataEnvironment.
+
+The following code rebinds the controls. Replace the code in the Refresh Click
+event in the Steps to Reproduce Behavior section with the following:
+
+  Set DataGrid1.DataSource = DataEnvironment1
+  Set DataCombo1.DataSource = DataEnvironment1
+  Set DataCombo1.RowSource = DataEnvironment1
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When running an application and then adding or updating data, the user may want
+to see the changes reflected in the DataCombo. However, when using the
+DataEnvironment, these changes are not seen without re-binding the control.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Standard EXE Project in Visual Basic. Form1 is created by default.
+
+2. From the Project menu, select Add Data Environment.
+
+3. Alternate-click Connection1 and choose Properties. Select Microsoft Jet 3.51
+  OLE DB Provider, click Next, and choose the Nwind.mdb database. Click OK.
+
+4. Alternate-click Connection1, and select Add Command. Next, alternate-click
+  Command1 and select Properties. In the Database Object drop-down box, select
+  Table, and, under Object name, select Customers. Click OK and the
+  DataEnvironment is created.
+
+5. From the Project/Components menu, add the Microsoft DataGrid Control 6.0 and
+  the Microsoft DataList Controls 6.0.
+
+6. On Form1, place a DataCombo control, a DataGrid control, and a Command
+  Button. Rename the command button Refresh.
+
+7. Set the DataSource and RowSource properties of the DataCombo to
+  DataEnvironment1. Set the RowMember to Command1, and ListField property to
+  CustomerID.
+
+8. Set the DataGrid Datasource to DataEnvironment1 and the DataMember to
+  Command1. In the Refresh command button Click event, place the following
+  code:
+
+  ' Updates the recordset with the added data.
+    DataEnvironment1.rscommand1.Requery
+
+  ' Supposed to Refresh new data in the Datagrid
+    DataGrid1.Refresh
+
+  ' Should have updated the Combobox with the new data
+    DataCombo1.ReFill
+    DataCombo1.Refresh
+
+9. Press the F5 key to run the code and look at the data in both the DataGrid
+  and DataCombo. Pause the code and open the Nwind.mdb Customers table in
+  Access and add a new CustomerID "ZZZZZ." Close the table and resume running
+  the application in Visual Basic. Click the Refresh button to update, and note
+  the DataGrid and the DataCombo do not show the new record.
+
+REFERENCES
+==========
+
+For additional information about binding data controls, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q191457 PRB: DataEnvironment Recordset Requery Does Not Refresh Controls
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDataBinding kbVBp600 kbDataEnv 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

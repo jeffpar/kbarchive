@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156102: How To Set the Cross-Tab Wizard 3 Field Variables Requirement | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156102: How To Set the Cross-Tab Wizard 3 Field Variables Requirement" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156102/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156102/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156102/","publisher":null,"image":null,"headline":"Q156102: How To Set the Cross-Tab Wizard 3 Field Variables Requirement","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156102-how-to-set-the-cross-tab-wizard-3-field-variables-requirement">Q156102: How To Set the Cross-Tab Wizard 3 Field Variables Requirement</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156102
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Cross-Tab Wizard, which is invoked from the first dialog box of the Query
+Wizard, is a class provided by Visual FoxPro. It guides you through building a
+query and displaying the results of that query in spreadsheet format. The class
+requires that you specify fields from a table as the elements of the resulting
+spreadsheet. The Cross-Tab Wizard requires field designations for "row,"
+"column," and "data."
+
+MORE INFORMATION
+================
+
+The requirement for the three field designations comes before the dialog box
+that permits specifying counts, sums, averages, minimums, or maximums. Before
+you can select any of these arithmetic functions, you must complete the sources
+for the "row," "column," and "data" designations. If the result set shows only
+one or two fields plus the results of an arithmetic function, the three-field
+designation requirement appears to be an inflexible characteristic of the
+Cross-Tab Wizard class.
+
+Visual FoxPro 5.0 for Windows lets you use one value as both the "data" field and
+either the "row" or the "column" designations.
+
+Completing the construction of the query using the Cross-Tab Wizard, then
+modifying the resulting query in the Query Designer may satisfy the Wizard while
+still giving you a useful display in spreadsheet format. The last dialog page of
+the Cross-Tab Wizard provides this step as one of the final choices.
+
+An alternative, which is not supported by Microsoft Technical Support, is to
+subclass the Cross-Tab Wizard file, Vfpxtab.vcx, so that the derived class
+provides the necessary three values when only one value and an arithmetic
+function's result are required for the spreadsheet.
+
+The following example describes a way to count the number of orders that exceed a
+certain value and have been booked at a discount. The desired result is a simple
+count by discount level:
+
+1. In Visual FoxPro for Windows, click New on the File menu, then select Query
+  and click the Wizard button.
+
+2. Select the Cross-Tab Wizard from the three options, and click OK.
+
+3. Browse for the table Samples\Data\Orders.dbf.
+
+4. Choose the fields Orders_net and Orders_dsc (discount), then click Next.
+
+5. Drag the Orders_dsc field to the Row text box. Drag the Orders_net field to
+  the Column text box. Drag the Orders_net field to the Data edit box. Click
+  Next.
+
+6. In the third step there are two columns of option buttons. The left column is
+  for Summary. Click the Count option. The right column is for Subtotals. Click
+  "Number of cells containing data." Click Next.
+
+7. In the last dialog box, click "Save cross-tab query and modify in Query
+  Designer." Clear the "Display null values" check box. Click Finish, and give
+  the query a name. ("Orders.qpr" is the default.)
+
+8. The Cross-Tab Wizard closes, and the Query Designer appears. In the lower
+  half of the Query Designer, click the Filter tab.
+
+9. In the Field drop-down list, click Orders.order_net. In the Criteria box,
+  click "&gt;" (right angle bracket), and in the Example box, type "3000"
+  (without the quotation marks). Once you have entered this selection criteria,
+  run the query.
+
+The result set is displayed with one row spread across multiple columns-- one
+cell for each order (since each order is for a unique value in the example
+table). The last column shows the intended result: the count of orders booked at
+a discount.
+
+Additional query words: kbdsd VFoxWin xtab worksheet
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

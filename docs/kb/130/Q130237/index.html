@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130237: Duplicating READ NOLOCK Functionality in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130237: Duplicating READ NOLOCK Functionality in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130237/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130237/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130237/","publisher":null,"image":null,"headline":"Q130237: Duplicating READ NOLOCK Functionality in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130237-duplicating-read-nolock-functionality-in-visual-foxpro">Q130237: Duplicating READ NOLOCK Functionality in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130237
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-APR-2000
+
+3.00
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+READ NOLOCK is no longer required in Visual FoxPro version 3.0.
+
+In version 2.x of FoxPro, all records involved in a read were automatically
+locked when the record pointer was moved. This caused contention problems in a
+multiuser situation. The most common symptom of contention problems was the
+failure of a second user to be able to load a screen without getting a "Record
+in use by another" error. To avoid problems, many developers chose to use READ
+NOLOCK to prevent FoxPro from locking records automatically.
+
+MORE INFORMATION
+================
+
+The FoxPro Version 2.x Solution
+-------------------------------
+
+READ NOLOCK actually performed two separate functions:
+
+- The record(s) involved in the read were not locked until the developer issued
+  a SHOW GETS LOCK command.
+
+- The fields on the screen were automatically disabled until the lock was
+  obtained.
+
+The Visual FoxPro Solution
+--------------------------
+
+Both functions can be duplicated through different commands in Visual FoxPro.
+
+To prevent locking a record until edits begin, use buffering. If you want to lock
+a record as soon as the edit starts, use pessimistic-row or pessimistic-table
+buffering. If you want to lock a record only when a write is attempted, use
+optimistic-row or optimistic-table buffering. You no longer need to place this
+code in a command button on the form. Buffering is usually enabled through the
+form's BUFFERMODE property, or through a CURSORSETPROP("Buffering") command
+executed in the form's INIT method.
+
+Buffering will not enable and disable fields in the same manner as a READ NOLOCK
+command. The SETALL method can be used, however, to set the ENABLED property to
+.T. or .F. as desired for all controls on a form. The following command disables
+every control on a form named frmTEST:
+
+     frmTEST.SETALL("ENABLED",.F.)
+
+This code would typically be placed in the click event of a command button to
+disable all fields when the record pointer was moved. The command button would
+be disabled, along with all fields in the form.
+
+Points to Consider
+------------------
+
+The examples in this article duplicate the functionality of one version 2.x
+command (READ NOLOCK) with new version 3.0 commands. You can still use the READ
+NOLOCK command in version 3.0; however, by continuing to use the version 2.x
+READ commands, you are limiting the functionality of your application.
+
+The READ NOLOCK command automatically disables every screen control tied directly
+to a field in your .DBF, whether it was a GET field, a list box, check box, or
+other control. Controls tied to a memory variable are not disabled. However, the
+SETALL() method in Visual FoxPro disables all controls on the form, including
+command buttons, whether they are tied to a field in your table or not. By using
+this approach, you need to enable each command button you want to have active.
+
+The opposite approach is to use the optional third parameter on the SETALL method
+to disable only controls of a certain type, such as text boxes, or to disable
+individual controls through the control's ENABLED property. You must prevent
+Visual FoxPro from locking the record automatically by using optimistic
+buffering in conjunction with disabling fields.
+
+Before deciding which technique to use, determine the desired end result. If you
+want to duplicate a version 2.x user interface using Visual FoxPro 3.0, use
+optimistic buffering and enable and disable controls as required.
+
+If you want to avoid the locking problems inherent in version 2.x, and it is
+acceptable to have all fields enabled as the user enters the form, use
+optimistic buffering alone.
+
+REFERENCES
+==========
+
+For more information on buffering, please see the Visual FoxPro "Developer's
+Guide." For more information on the SETALL method, please see the information in
+the Visual FoxPro Help file or in the Visual FoxPro "Language Reference."
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

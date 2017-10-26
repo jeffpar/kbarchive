@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193099: FIX: CDialog::Create() Returns Incorrect Value Calling EndDialog | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193099: FIX: CDialog::Create() Returns Incorrect Value Calling EndDialog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193099/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193099/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193099/","publisher":null,"image":null,"headline":"Q193099: FIX: CDialog::Create() Returns Incorrect Value Calling EndDialog","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193099-fix-cdialogcreate-returns-incorrect-value-calling-enddialog">Q193099: FIX: CDialog::Create() Returns Incorrect Value Calling EndDialog</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193099
+Product(s): Microsoft C Compiler
+Version(s): winnt:6.0
+Operating System(s): 
+Keyword(s): kbDlg kbVC600bug kbVS600SP1fix kbMFC600bug kbVC600SP1Fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a dialog box is created via the CDialog::Create() call, and the dialog box's
+OnInitDialog() (in response to WM_INITDIALOG message) ends the dialog box via
+EndDialog(), the CDialog::Create() function returns a non-zero value. The
+CDialog::Create() in this case should return zero.
+
+Because the dialog box was destroyed due to an EndDialog() call in the dialog's
+OnInitDialog(), CDialog::m_hWnd is NULL in this case.
+
+CAUSE
+=====
+
+An additional test was made in the WM_INITDIALOG code (at line 365 of
+Dlgcore.cpp), which leads to Create() succeeding even if the window handle is
+NULL.
+
+MFC code for Visual C++ 5.0:
+
+  BOOL CWnd::CreateDlgIndirect(LPCDLGTEMPLATE lpDialogTemplate,
+
+        CWnd* pParentWnd, HINSTANCE hInst)
+
+     {
+
+        // ...
+
+        if (hWnd == NULL)
+        {
+           // ...
+           // .. dump some debug information
+           return FALSE;
+        }
+
+        ASSERT(hWnd == m_hWnd);
+        return TRUE;
+     }
+
+MFC code for Visual C++ 6.0:
+
+  BOOL CWnd::CreateDlgIndirect(LPCDLGTEMPLATE lpDialogTemplate,
+
+        CWnd* pParentWnd, HINSTANCE hInst)
+
+     {
+
+        // ...
+        // Help with error diagnosis (only if WM_INITDIALOG didn't
+        // EndDialog())
+        if (hWnd == NULL &amp;&amp; (m_nFlags &amp; WF_CONTINUEMODAL)) // &lt;--- PROBLEM!!!
+
+  {
+           // ... dump some debug information.
+           return FALSE;
+        }
+
+        ASSERT(hWnd == m_hWnd);
+        return TRUE;
+
+     }
+
+RESOLUTION
+==========
+
+When calling CDialog::Create check both the return value of CDialog::Create(),
+and the value of CDialog::m_hWnd. If CDialog::m_hWnd is NULL, then the
+dialog-box creation is unsuccessful.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in the Visual Studio 6.0
+Service Pack 1.
+
+To obtain this service pack, please see:
+
+  http://msdn.microsoft.com/vstudio/sp/default.asp
+
+For more information on the Visual Studio 6.0 Service Pack 1, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q193009 INFO: Visual Studio 6.0 Service Pack 1 Readme
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs What, Where, Why
+
+  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Modify the code for displaying the dialog box so it also checks against the
+CDialog::m_hWnd variable. For instance:
+
+   
+     // Create a modeless dialog box. In this example, m_pModeless is a
+     // member variable of type CModeless where CModeless is a CDialog-
+     // derived class. IDD_MODELESS is the ID number of a dialog-box template
+     // resource.
+     m_pModeless = new CModeless;
+     if (m_pModeless-&gt;Create(IDD_MODELESS, this) &amp;&amp;
+        ::IsWindow(m_pModeless-&gt;m_hWnd))
+     {
+        // ... succeeded in dialog-box creation.
+     }
+     else
+     {
+        // ... failed in dialog-box creation.
+     }
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the MFC sample MODELESS from the MSDN CDs.
+
+2. Use ClassWizard to add an OnInitDialog() message handler (in response to
+  WM_INITDIALOG message) to the CAdderDialog class. CAdderDialog is a
+  CDialog-derived class.
+
+3. Call EndDialog() in the CAdderDialog::OnInitDialog() as follows:
+
+     BOOL CAdderDialog::OnInitDialog()
+     {
+        CDialog::OnInitDialog();
+
+        // TODO: Add extra initialization here
+        EndDialog(-1);
+        return TRUE;  // return TRUE unless you set the focus to a control
+                 // EXCEPTION: OCX Property Pages should return FALSE
+     }
+
+4. Select Win32 Release build from VC++'s Build\Set Active Configuration menu
+  command.
+
+5. Build and then run the MODELESS sample.
+
+6. Click Add in the dialog box. The m_pModeless-&gt;Create() call in
+  Modeldlg.cpp file (at line 178) returns TRUE, in this case causing the Add
+  button (for displaying the CAdderDialog modeless dialog box) to be disabled.
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Yeong-Kah
+Tam, Microsoft Corporation.
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Yeong-Kah Tam, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDlg kbVC600bug kbVS600SP1fix kbMFC600bug kbVC600SP1Fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

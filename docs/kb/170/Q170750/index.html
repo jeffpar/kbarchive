@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170750: INFO: End of Line Character Settings for Visual SourceSafe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170750: INFO: End of Line Character Settings for Visual SourceSafe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170750/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170750/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170750/","publisher":null,"image":null,"headline":"Q170750: INFO: End of Line Character Settings for Visual SourceSafe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170750-info-end-of-line-character-settings-for-visual-sourcesafe">Q170750: INFO: End of Line Character Settings for Visual SourceSafe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170750
+Product(s): Microsoft SourceSafe
+Version(s): MACINTOSH:3.01,3.02,3.04,3.1; WINDOWS:3.02,3.04,3.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310 kbSSafe304 kbSSafe302 kbSSafe301
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+- Microsoft SourceSafe for Macintosh, versions 3.01, 3.02, 3.04, 3.1 
+- Microsoft SourceSafe for UNIX, versions 3.02, 3.04, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MS-DOS (including WINDOWS), UNIX, and Macintosh operating systems all use
+different characters to designate the end of a line within a text file.
+
+- MS-DOS and WINDOWS: Use a Carriage Return/Line Feed combination (CR/LF).
+
+- UNIX: Uses a Line Feed only (LF).
+
+- MAC: Uses a Carriage Return only (CR).
+
+Visual SourceSafe always stores files internally using the CR/LF character
+combination. This means that when you are working with a Macintosh or UNIX
+operating system, SourceSafe has to translate the CR/LF combination into the
+appropriate End-Of-Line character (EOL) when you get or check out a file.
+SourceSafe also has to translate the EOL character back into the CR/LF
+combination when you check the file back in.
+
+SourceSafe is designed this way so that UNIX, Macintosh, and PC users can all
+check the same files in and out and always see the file displayed correctly.
+
+MORE INFORMATION
+================
+
+Visual SourceSafe translates the CR/LF characters into the appropriate EOL
+character when you get or check out a file. It changes the EOL character back
+into a CR/LF combination when you check the file back in.
+
+It's important to notice that in this one instance, SourceSafe alters the
+contents of your text file. While this type of change is necessary for text
+files, it would cause unpredictable results for binary files. Therefore, this
+operation is never performed on a binary file.
+
+You can change this default behavior by adding the EOL switch in the user's
+Ss.ini file. You can set the EOL variable to either an "r" (Carriage Return),
+"n" (Line Feed), or "rn" (Carriage Return/Line Feed). For example:
+
+  EOL = n
+
+This forces SourceSafe to translate the CR/LF combination into a line feed when
+you get or check out a file.
+
+You can also accomplish this by using the -g switch from the command line. The
+syntax is as follows:
+
+  ss Get -g(EOL) where EOL can be r, n, or rn
+
+For Example:
+
+  ss Get -gr &lt;Filename&gt;
+
+This forces SourceSafe to translate the CR/LF combination into a carriage return
+when you get or check out a file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe310 kbSSafe304 kbSSafe302 kbSSafe301 
+Technology        : kbHWMAC kbOSMAC kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe301Mac kbSSafe304Mac kbSSafe310Mac kbSSafe302UNIX kbSSafe304UNIX kbSSafe310UNIX kbSSafe302Mac kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : MACINTOSH:3.01,3.02,3.04,3.1; WINDOWS:3.02,3.04,3.1,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

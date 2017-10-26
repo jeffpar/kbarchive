@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185433: ERROR: Unable to Open Msvcrt40.dll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185433: ERROR: Unable to Open Msvcrt40.dll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185433/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185433/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185433/","publisher":null,"image":null,"headline":"Q185433: ERROR: Unable to Open Msvcrt40.dll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185433-error-unable-to-open-msvcrt40dll">Q185433: ERROR: Unable to Open Msvcrt40.dll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185433
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+When you trying to install the Windows 95 SNA client on a computer running
+Windows NT, it may cause the following error with Msvcrt40.dll:
+
+  Unable to open &lt;drive:&gt;\path\system\MSVCRT40.DLL.
+  File may be in use by another application.
+
+CAUSE
+=====
+
+This problem occurs after detecting mismatched versions of Msvcrt40.dll, which
+are dependent during the setup process.
+
+WORKAROUND
+==========
+
+Make sure there are no applications running that may have a lock on Msvcrt40.dll
+by doing the following:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update you Emergency Repair Disk
+(ERD).
+
+1. Start Registry Editor (REGEDIT), and go to the following subkey:
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
+
+2. Export the Run key by selecting it, then from the Registry menu, click Export
+  Registry File, and then save it to the root of your hard drive as Run.reg.
+
+3. Delete all the keys on the right-hand pane in:
+
+  HKEY_Local_Machine\Software\Microsoft\Windows\CurrentVersion\Run
+
+  except for the &lt;Default&gt; key.
+
+4. Restart the workstation, log back on to the domain, and press the Shift key
+  to bypass the Startup group entries.
+
+5. Press Ctrl+Alt+Del, and click Task Manager in the Windows NT Security dialog
+  box, and then end all tasks except Explorer.
+
+At this point, any applications that might have had a lock on Msvcrt40.dll are
+not in use. If an older version of Msvcrt40.dll is located in the system path,
+this version should be renamed and replaced with the default version of the .dll
+file included on the Windows NT 4.0 or SNA Server CD.
+
+To do this, perform the following steps:
+
+1. Run the PATH command at an MS-CMD prompt to check the current system path.
+
+2. Locate all instances of Msvcrt40.dll that exist in the system path.
+
+  NOTE: The system path may span several drives.
+
+3. Run the DEPENDS program against these .dll files and compare their versions
+  with the ones listed in this document.
+
+4. Rename any old versions of Msvcrt40.dll that may exist, and replace with the
+  one on the Windows NT or SNA Server CD. If multiple copies of the same .dll
+  file exists, in the system path, rename all duplicate copies and leave a
+  single instance in the &lt;ntroot&gt;\system32 directory.
+
+5. Proceed to install the SNA Client.
+
+6. After installation is complete, double-click on Run.reg to import key used by
+  other applications back into the registry.
+
+MORE INFORMATION
+================
+
+The following Microsoft VC++ .dll files are the ones that ship with Windows NT
+4.0, SNA Server 3.0 and 4.0. The Base and Product Version can be viewed using
+the DEPENDS program, or right-click on each .dll file and click Properties, then
+click the Version tab:
+
+  Module        Base        Product Version  Product
+
+  MSVCRT40.DLL  0x779D0000  4.20.0.6172      Windows NT 4.0
+  MSVCRT40.DLL  0x779D0000  4.20.0.6164      SNA Server 3.0 and 4.0
+
+The setup error occurred because the following Msvcrt40.dll was installed on the
+system by another application (with the other .dll files matching the versions
+listed above.
+
+  Module        Base        Product Version  Product
+
+  MSVCRT40.DLL  0x10200000  4.0.0.5270       Unknown
+
+Msvcrt40.dll supports C runtime library functions, which may be used and
+distributed by other applications developed using Microsoft Visual C++. If other
+applications happen to install MSVCRT40.DLL and replace the version installed by
+the Windows 95 SNA client, see the following articles in the Microsoft Knowledge
+Base:
+
+  Q182882 Upgrading SNA 3.0 to 4.0 May Cause Failure on File MFC42U.DLL
+
+  Q168006 TN3270 Fails with Access Violation in ntdll!RtlFreeHeap
+
+You can obtain the Dependency Walker (Depends.exe) from the Platform SDK CD-ROM
+that comes with the MSDN. It can also be downloaded from the following URL:
+
+  http://www.microsoft.com/msdownload/platformsdk/sdktools.htm
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

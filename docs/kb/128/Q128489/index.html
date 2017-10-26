@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128489: Inter-Domain Trust Account Passwords | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128489: Inter-Domain Trust Account Passwords" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128489/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128489/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128489/","publisher":null,"image":null,"headline":"Q128489: Inter-Domain Trust Account Passwords","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128489-inter-domain-trust-account-passwords">Q128489: Inter-Domain Trust Account Passwords</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128489
+Product(s): Microsoft Windows NT
+Version(s): 3.5 4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Trust relationships may be established between domains so that they may share
+user account information. A secure channel is established between a domain
+controller (DC) in the trusting domain and a domain controller in the trusted
+domain. The secure channel ensures that only servers with the proper access
+rights can send and receive privileged information. Primarily, the trusting DC
+uses the secure channel to pass validation requests to the trusted domain
+controller.
+
+This article contains information on the accounts used to create and maintain the
+secure channel.
+
+MORE INFORMATION
+================
+
+The accounts and procedures used in a trusted domain relationship are discussed
+in this article. Similar accounts and procedures are used in the trust
+relationship between a primary domain controller (PDC) and a backup domain
+controller (BDC), and between a Windows NT DC and a Windows NT Workstation in
+the domain.
+
+For simplicity, the trusted domain is referred to as MASTER and the trusting
+domain is referred to as RESOURCE. The trusted domain, MASTER, contains the user
+account information. RESOURCE is the trusting domain; it trusts MASTER to
+validate user access to its resources.
+
+On each Domain Controller in RESOURCE, the existence of the trust is represented
+by an LSA trusted domain object. It contains the name of the trusted domain and
+the domain security ID (SID). The LSA trusted domain object is replicated from
+the trusting domain PDC to each of the BDCs in the trusting domain.
+
+On each DC in RESOURCE, a password is stored in an LSA secret object
+G$$&lt;TrustedDomainName&gt; (for example, G$$MASTER). This object is stored in
+the registry key HKEY_Local_Machine\Security\Policy\Secrets. The LSA secret
+object for the trusted domain trust relationship is replicated from the trusting
+domain PDC to each of the trusting domain BDCs.
+
+On each DC in MASTER, the password is stored in a SAM user account marked as
+INTERDOMAIN_TRUST_ACCOUNT (for example, RESOURCE$). This can be viewed in the
+registry path \SAM\SAM\Domains\Account\Users\Names (HKEY_LOCAL_MACHINE subtree).
+This account is replicated from the trusted domain PDC to each of the trusted
+domain BDCs.
+
+These accounts are created when a trust is initially established. The
+administrator of the trusted domain, MASTER, uses User Manager to permit
+RESOURCE to trust MASTER's accounts. When the domain is added in the Permit to
+Trust dialog, a password is provided by the administrator. At this time, a
+hidden user account is created in the SAM for the trusting domain. The account
+contains the specified password (for example, RESOURCE$).
+
+The administrator of the trusting domain then establishes the trust. The
+administrator provides the password specified earlier. User Manager creates the
+LSA secret object. The server in RESOURCE attempts to setup a session with the
+DC in MASTER using the account RESOURCE$. The DC controller in MASTER responds
+with the error "0xc0000198, Status_Nologon_Interdomain_ Trust_Account" because
+the special Inter-Domain Trust Account cannot be used in a normal session logon.
+The session request fails because of this condition.
+
+This error is informative to the DC in the RESOURCE domain. Receiving this error
+indicates that the trust account exists and a trust is possible. Upon receiving
+that response, it establishes a null session and then uses RPC transactions to
+use remote API calls that establish the trusted domain relationship. A secure
+channel is set up later by the netlogon service in the trust domain using the
+trust information that was stored by the user manager.
+
+After the trust is established, the RESOURCE PDC changes the trusted domain
+object password. The procedure for this is detailed below. All DCs in each
+domain receive the trust account objects through normal intra-domain
+synchronization of the SAM and the LSA databases. The DCs in RESOURCE receive
+the LSA secret object during the update of the LSA database, and the DCs in
+MASTER receive the account in the SAM update. With these objects, any DC in the
+trusting domain can set up a secure channel to any DC in the trusted domain.
+
+Maintenance of these accounts consists of periodic password changes. Every seven
+days the PDC of the trusting domain changes the password of the trusted domain
+object. It does this by:
+
+1. Picking a new password.
+
+2. Setting the OldPassword field of the LSA secret object to the previous
+  NewPassword field.
+
+3. Setting the NewPassword field to the LSA secret object to the password picked
+  in step 1. This allows the DCs to always have a password around that works in
+  the event of a crash.
+
+4. Remoting an I_NetServerPasswordSet RPC call to a DC of the trusted domain
+  asking it to set the password on the SAM user trust account to the value
+  picked in step 1. The trusting PDC remotes the RPC call to whatever trusted
+  DC it has the secure channel with. That machine passes the request through to
+  the trusted PDC.
+
+The password is now changed on both PDCs. Normal replication distributes the
+objects to the BDCs.
+
+A domain controller of the trusted domain (MASTER) never initiates the password
+change; it is always initiated by the trusting domain PDC.
+
+It is possible, but not likely, that the trusting domain DC will change the
+password without updating a DC in the trusted domain. Initiating the password
+change requires that the secure channel has been set up. It is remotely possible
+that the trusted side my have gone down at some point during the process and not
+received the updated password. For this reason, both the old and new passwords
+are kept in the LSA Secret object on the trusting side. Additionally, the PDC in
+the trusting domain never changes the new password unless it has successfully
+authenticated (set up a secure channel) using the current new password.
+
+If authentication fails using the new password because the password is invalid,
+the trusting PDC tries the old password. If it authenticates successfully with
+the old password, it immediately (within 15 minutes) continues the password
+change algorithm with step 4 (above). It does not start over with step 1 because
+that might lead to problems where role changes have occurred.
+
+Additional query words: prodnt lsasecret security accounts manager (SAM)
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

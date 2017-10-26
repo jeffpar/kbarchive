@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37421: Two BASIC Methods to Save &amp; Restore Text Screens in DOS &amp; OS/2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37421: Two BASIC Methods to Save &amp; Restore Text Screens in DOS &amp; OS/2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37421/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37421/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37421/","publisher":null,"image":null,"headline":"Q37421: Two BASIC Methods to Save &amp; Restore Text Screens in DOS &amp; OS/2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37421-two-basic-methods-to-save--restore-text-screens-in-dos--os2">Q37421: Two BASIC Methods to Save &amp; Restore Text Screens in DOS &amp; OS/2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37421
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 12-JAN-1990
+
+This article explains two methods for saving and restoring text-mode
+screens (SCREEN 0). The first method uses BLOAD and BSAVE (supported
+under MS-DOS only, not under OS/2 protected mode). The second method
+uses the SCREEN function to save and restore the values of the screen
+characters to and from a numeric array (supported under both MS-DOS
+and OS/2 protected mode).
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS Version 7.00
+for MS-DOS and MS OS/2.
+
+(The October 27, 1987, issue of "PC Magazine" has a separate example
+of an assembly-language routine that saves and restores text screens;
+however, the code needs to be modified for QuickBASIC Versions 4.00,
+4.00b, and 4.50, for the BASIC compiler 6.00 and 6.00b, and for BASIC
+PDS 7.00.)
+
+First Method for Saving and Restoring Text-Mode Screens
+-------------------------------------------------------
+
+The following steps save the screen with BLOAD and BSAVE statements
+(under MS-DOS but not under OS/2 protected mode):
+
+1. Place the text on the screen using the following:
+
+   SCREEN 0  ' This is the default SCREEN mode.
+   FOR i = 1 TO 400
+     PRINT i;
+   NEXT i
+
+2. Use the following DEF SEG command to assign the current segment to
+   the correct video-memory location (not supported in OS/2 protected
+   mode):
+
+   DEF SEG=&amp;HB000   'MONOCHROME CARD
+   DEF SEG=&amp;HB800   'CGA,EGA CARD
+
+3. Use the BSAVE command below to save the screen (not supported in
+   OS/2 protected mode). In 23-line (CGA) mode, you need 4000 bytes to
+   save a complete text mode screen; (80 columns) times (25 lines)
+   times (1 character byte plus 1 color attribute byte) equals 4000
+   bytes. In EGA 43-line mode, you need 6880 bytes to save a complete
+   text mode screen (80 times 43 times 2). The BSAVE command is as
+   follows:
+
+   BSAVE "filename",0,4000  ' For CGA 23-line mode in SCREEN 0
+
+Use the following steps to restore the screen:
+
+1. Use the following DEF SEG command to assign the current segment to
+   the correct video-memory location:
+
+   DEF SEG=&amp;HB000   'MONOCHROME CARD
+   DEF SEG=&amp;HB800   'CGA,EGA CARD
+
+2. Use the following BLOAD command to reload the text:
+
+   BLOAD "filename",0
+
+Second Method for Saving and Restoring Text-Only on a Screen
+------------------------------------------------------------
+
+(Note: This method works both in MS-DOS and in OS/2 protected mode.)
+
+The second method (below) calls a BASIC routine to store the
+characters on a screen in an array, then restore them. This method
+uses the SCREEN function, which works both in MS-DOS and in OS/2
+protected mode, and in text or graphics screen modes. The SCREEN
+function returns the ASCII value of the character at a specified row
+and column (but returns the ASCII value 32, a blank, for text
+characters that are overlaid with graphics).
+
+Note: The following program is only a short sample. It doesn't include
+any error checking for coordinate validity. This and other possible
+enhancements are left up to you.
+
+DEFINT A-Z
+DECLARE SUB SaveScreen (StartCol, StartRow, ColLen, RowLen, arrar%())
+DECLARE SUB RestScreen (StartCol, StartRow, ColLen, RowLen, arrar%())
+COLOR 7, 1
+CLS
+COLOR 4
+FOR i = 1 TO 10
+    PRINT "This is a test"
+NEXT i
+COLOR 7
+INPUT "Enter the Save Starting Row : ";StartRow
+INPUT "Enter the Save Starting Column : ";StartCol
+INPUT "Enter the width (the number of columns) : "; col
+INPUT "Enter the height (the number of rows) : "; row
+DIM array%(col, row, 2)
+CALL SaveScreen(StartCol,StartRow, col, row, array%())
+PRINT "Hit any Key to continue...."
+while inkey$="" : wend
+COLOR 7,3
+CLS
+INPUT "Enter the Restore Starting Row : ";StartRow
+INPUT "Enter the Restore Starting Column : ";StartCol
+CALL RestScreen(StartCol, StartRow, col, row, array%())
+COLOR 7,3
+locate 25,10 : PRINT "Hit any key to quit..."
+WHILE INKEY$ = "": WEND
+END
+
+'============= Restore Screen =============
+SUB RestScreen (StartCol, StartRow, ColLen, RowLen, array%()) STATIC
+     FOR i = 1 TO RowLen
+        LOCATE StartRow + i, StartCol
+        FOR j = 1 TO ColLen
+           COLOR array%(j, i, 2) MOD 16, array%(j, i, 2) \ 16
+           PRINT CHR$(array%(j, i, 1));
+        NEXT j
+    NEXT i
+END SUB
+
+'============= Save Screen ===============
+SUB SaveScreen (StartCol, StartRow, ColLen, RowLen, array%()) STATIC
+    FOR i = StartCol TO (StartCol + ColLen - 1)
+        FOR j = StartRow TO (StartRow + RowLen - 1)
+            RowIndex = i - StartRow + 1
+            ColIndex = j - StartCol + 1
+            array%(RowIndex, ColIndex, 1) = SCREEN(j, i)    'character
+            array%(RowIndex, ColIndex, 2) = SCREEN(j, i, 1) 'color
+        NEXT j
+    NEXT i
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

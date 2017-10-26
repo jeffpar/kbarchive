@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168801: How to Enable Cluster Logging in Microsoft Cluster Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168801: How to Enable Cluster Logging in Microsoft Cluster Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168801/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168801/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168801/","publisher":null,"image":null,"headline":"Q168801: How to Enable Cluster Logging in Microsoft Cluster Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168801-how-to-enable-cluster-logging-in-microsoft-cluster-server">Q168801: How to Enable Cluster Logging in Microsoft Cluster Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168801
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Cluster Server, you can turn Cluster Logging on as a way of
+troubleshooting problems with the clustering software.
+
+MORE INFORMATION
+================
+
+To enable Cluster Logging, there are two variables you need to place in the
+Windows NT environment variable list. These variables are ClusterLog and
+ClusterLogLevel.
+
+To enter System environment variables, perform these steps:
+
+1. In the System tool in Control Panel, click the Environment tab.
+
+2. Click an entry in the System Environment Variable window.
+
+3. Click the Variable and Value text boxes to clear them.
+
+4. Type "ClusterLog" (without the quotation marks) in the Variable box, type
+  &lt;path&gt;\cluster.log in the Value box, and then click Set, where
+  &lt;path&gt; is the drive and folder to store the Cluster Server log file.
+
+  NOTE: The recommended path is %SystemRoot%\Cluster. For example,
+  C:\WinNT\Cluster\Cluster.log. Cluster logging is enabled by default in
+  Windows 2000, and this is the default path.
+
+5. Type "ClusterLogLevel" (without the quotation marks) in the Variable box,
+  type "0, 1, 2, or 3" (without the quotation marks) in the Value box, and then
+  click Set.
+
+  0=no logging, 1=Errors only, 2=Errors and Warnings, and 3=Everything that
+  happens.
+
+  NOTE: The ClusterLogLevel variable is only used to define the output to the
+  screen when starting the Cluster Service with the /Debug switch. It has no
+  effect on the contents of the Cluster.log.
+
+6. Click OK.
+
+7. Restart your computer for Cluster Server to read the variables correctly.
+
+You can type "SET" (without the quotation marks) at the command prompt to verify
+that you entered the variables correctly after you have restarted the computer.
+
+NOTE: You also have the ability to enter User Variables in the Environment dialog
+box.
+
+The cluster log is set by default to have a maximum size of 8 megabytes (MB).
+When the cluster log reaches its maximum size, it will be truncated by deleting
+the first half of the log file and moving the data in last half of the log file
+to the beginning of the log file. It then continues to fill the log file until
+the maximum size is reached again and then performs the same delete and move
+truncation.
+
+NOTE: Cluster log data is moved in 64KB chunks, therefore the process to truncate
+the log file works as follows:
+
+The first 64KB chunk from the log file is deleted and then the first 64KB chunk
+found after the half way point in the log file is moved to the beginning of the
+log. Then the second 64 KB chunk from the log file will be deleted and the
+second 64KB chunk found after the half way point in the log file will be moved
+to the second 64KB at the beginning of the log. This process will continue until
+the log is only half the maximum size.
+
+NOTE: During this process additional log entries will be buffered and then
+entered when the truncation procedure has completed.
+
+You can increase the maximum log size from the default of 8 MB by adding another
+system environment variable, CLUSTERLOGSIZE, where its value is designated in
+MB. If you set the value of CLUSTERLOGSIZE to 10, the maximum size of the
+cluster log is 10 MB. After you modify the maximum log size, you only have to
+restart the cluster service for the changes to take effect.
+
+Additional query words: cluster group resource mscs
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : :4.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

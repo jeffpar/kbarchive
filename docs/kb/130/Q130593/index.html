@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130593: Interpreting SNA Server API Traces: Byte Packing Considerations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130593: Interpreting SNA Server API Traces: Byte Packing Considerations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130593/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130593/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130593/","publisher":null,"image":null,"headline":"Q130593: Interpreting SNA Server API Traces: Byte Packing Considerations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130593-interpreting-sna-server-api-traces-byte-packing-considerations">Q130593: Interpreting SNA Server API Traces: Byte Packing Considerations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130593
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When interpreting Verb Control Blocks (VCB) within SNA Server API traces, the
+interpreter must consider the packing alignment of each structure. The packing
+depends on the #include file used to build the application. The standard SNA API
+include files shipped with SNA Server perform the packing of the VCB depending
+on whether the program is built using Win16 or Win32.
+
+MORE INFORMATION
+================
+
+Sample VCB STRUCTURE for TP_STARTED APPC API verb:
+
+  TP_STARTED
+    opcode         unsigned short int   (WORD (2 Bytes))
+    opext          unsigned char        (BYTE)
+    reserv2        unsigned char        (BYTE)
+    primary_rc     unsigned short int   (WORD (2 Bytes))
+    secondary_rc   unsigned long int    (DWORD (4 Bytes))
+    lu_alias       unsigned char[8]     (8 bytes)
+    tp_id          unsigned char[8]     (8 bytes)
+    tp_name        unsigned char[64]    (64 bytes)
+
+WIN32
+-----
+
+With Windows NT (32-bit) compilations, VCBs are not packed. As a result, both
+DWORDs and WORDs begin on WORD boundaries, and BYTEs begin on BYTE boundaries.
+
+The following is an excerpt from a trace taken on an SNA Server using a Win32
+APPC application:
+
+TP_STARTED response, result = PARAMETER_CHECK
+
+Type:Sync                                  VerbID:00001800
+
+---- Verb Parameter Block at address 0014CBC0 ----
+14000000 00010000 00000003 53444653     &lt;............SDFS&gt;
+44462020 00000000 F0DE1400 D9E4D4C2     &lt;DF  ....0...RUMB&gt;
+C1F4F0F0 00000000 00000000 00000000     &lt;A400............&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000              &lt;............    &gt;
+
+Referring to the "VCB STRUCTURE for TP_STARTED APPC API verb" above,
+the verb control block parameters are decoded as follows for Win32:
+
+ opcode  = 1400
+ opext   = 00
+reserv2 = 00
+ primary_rc = 0001 (the subsequent two bytes "0000" are ignored)
+ secondary_rc = 00000003
+ lu_alias     = 53 44 46 53 44 46 20 20 ("SDFSDF  ")
+ tp_id        = 00 00 00 00 F0 DE 14 00
+ tp_name      = D9 E4 D4 C2 C1 F4 F0 F0 ("RUMBA400 &lt;nulls&gt;")
+
+...
+
+WIN16
+-----
+
+With Windows 3.x (16-bit) compilations, VCBs are also not packed, but are aligned
+differently than Windows NT (32-bit) compilations. With Win16, DWORDs and WORDs
+start on WORD boundaries, and BYTEs are on BYTE boundaries.
+
+The following is an excerpt from a trace taken on a Windows for Workgroups client
+using a Win16 APPC application:
+
+...
+TP_STARTED response, result = PARAMETER_CHECK
+
+Type:Sync                                  VerbID:0000180F
+
+---- Verb Parameter Block at address 300F:0000 ----
+14000000 00010000 00035344 46202020     &lt;..........SDF   &gt;
+20200F00 01004B16 DF22D9E4 D4C2C1F4     &lt;  ....K.."RUMBA4&gt;
+F0F00000 00000000 00000000 00000000     &lt;00..............&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 00000000 00000000     &lt;................&gt;
+00000000 00000000 0000                  &lt;..........      &gt;
+...
+
+For Win16, note that the secondary return code immediately follows the primary
+return code (omitting the two NULL bytes which separate these fields in the
+Win32 trace above).
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121366: INFO: PDB and DBG Files - What They Are and How They Work | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121366: INFO: PDB and DBG Files - What They Are and How They Work" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121366/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121366/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121366/","publisher":null,"image":null,"headline":"Q121366: INFO: PDB and DBG Files - What They Are and How They Work","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121366-info-pdb-and-dbg-files---what-they-are-and-how-they-work">Q121366: INFO: PDB and DBG Files - What They Are and How They Work</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121366
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDebug kbide kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The .PDB extension stands for "program database." It holds the new format for
+storing debugging information that was introduced in Visual C++ version 1.0. In
+the future, the .PDB file will also hold other project state information. One of
+the most important motivations for the change in format was to allow incremental
+linking of debug versions of programs, a change first introduced in Visual C++
+version 2.0.
+
+The .DBG extension stands for "debug." The .DBG files created with the 32-bit NT
+toolset are in the Portable Executable (PE) file format. They contain sections
+with COFF, FPO, and in some cases Codeview information. The Visual C++
+integrated debugger can read .DBG files in this format, however it ignores the
+COFF symbol sections and looks for Codeview information.
+
+If you need to determine what symbol information is contained in a .DBG file, you
+can type the following at the command prompt:
+
+Dumpbin sample.dbg/symbol.
+
+Note: The path might need to include directories for Dumpbin.exe and
+MSdis100.dll:
+
+Path=%Path%;C:\Program Files\DevStudio\VC\bin;C:\Msssdk\bin
+
+For more information on DUMPBIN, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q177429 INFO: Examples of DUMPBIN Output
+
+MORE INFORMATION
+================
+
+The .PDB Files
+--------------
+
+While earlier, 16-bit versions of Visual C++ used .PDB files, the debugging
+information stored in them was appended to the end of the .EXE or .DLL file by
+the linker. In the versions of Visual C++ mentioned above, both the linker and
+the integrated debugger were modified to allow .PDB files to be used directly
+during the debugging process, thereby eliminating substantial amounts of work
+for the linker and also bypassing the cumbersome CVPACK limit of 64K types.
+
+For more information on CVPACK limitations, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q112335 BUG: CK1020 or CK4009 Encountered When Type Info Exceeds 64K
+
+By default, when you build projects generated by the Visual Workbench, the
+compiler switch /Fd is used to rename the .PDB file to &lt;project&gt;.PDB.
+Therefore, you will have only one .PDB file for the entire project.
+
+When you run makefiles that were not generated by the Visual Workbench, and the
+/Fd is not used with /Zi, you will end up with two .PDB files:
+
+- VCx0.PDB (where "x" refers to the major version of the corresponding Visual
+  C++, either "2" or "4"), which stores all debugging information for the
+  individual .OBJ files. It resides in the directory where the project makefile
+  resides.
+
+- &lt;project&gt;.PDB, which stores all debugging information for the resulting
+  .EXE file. It resides in the \WINDEBUG subdirectory.
+
+Why two files? When the compiler is run, it doesn't know the name of the .EXE
+file into which the .OBJ files will be linked, so the compiler can't put the
+information into &lt;project&gt;.PDB. The two files store different information.
+Each time you compile an .OBJ file, the compiler merges the debugging
+information into VCX0.PDB. It does not put in symbol information such as
+function definitions. It only puts in information concerning types. One benefit
+of this is that when every source file includes common header files such as
+&lt;windows.h&gt;, all the typedefs from these headers are only stored once,
+rather than in every .OBJ file.
+
+When you run the linker, it creates &lt;project&gt;.PDB, which holds the
+debugging information for the project's .EXE file. All debugging information,
+including function prototypes and everything else, is placed into
+&lt;project&gt;.PDB, not just the type information found in VCX0.PDB. The two
+kinds of .PDB files share the same extension because they are architecturally
+similar; they both allow incremental updates. Nevertheless, they actually store
+different information.
+
+The new Visual C++ debugger uses the &lt;project&gt;.PDB file created by the
+linker directly, and embeds the absolute path to the .PDB in the .EXE or .DLL
+file. If the debugger can't find the .PDB file at that location or if the path
+is invalid (if, for example, the project was moved to another computer), the
+debugger looks for it in the current directory.
+
+The .DBG Files
+--------------
+
+The Visual C++ integrated debugger can also use .DBG files as long as they are
+made from a binary containing Codeview format debugging output. These are useful
+for debugging when the source code is not available. Even without the source,
+.DBG files allow you to set breakpoints on functions, watch variables, and see
+the functions in the callstack. They are also required for OLE RPC debugging.
+
+One caveat needs to be pointed out: when working with symbols from a .DBG file,
+you must use the fully decorated names. For example, to set a breakpoint on a
+call to the Windows sndPlaySound function, you would specify _sndPlaySoundA@8 as
+the location.
+
+There are actually two .DBG file formats. The old format has existed for quite a
+while in the 16-bit world. For example, because the format of .COM files is a
+simple binary image loaded into memory, the Codeview debugging information could
+not be appended to the end of the file because the file size might exceed the
+64K limit for a .COM file. Therefore the symbolic information was instead put
+into a separate .DBG file, which had only Codeview information in it. The .DBG
+files could also be generated by running CVPACK on an .EXE file using the /strip
+option.
+
+For 32-bit .EXEs, the Visual C++ version 2.x and 4.x debugger's symbol handler
+does not read the old format. Instead, it reads the format used in the Windows
+NT .DBG files, supplied for use with its system .DLL files. These .DBG files are
+in the Portable Executable (PE) file format and contain sections with COFF, FPO,
+and in some cases Codeview symbolic information. The new Visual C++ debugger
+reads .DBG files in this format only. Furthermore, it only uses the Codeview
+information, ignoring the other symbol sections.
+
+It is possible to strip debug information from a PE file and store it in a .DBG
+file for use by debuggers. For this to work, the debugger needs to know whether
+to find the debug information in a separate file or not and whether the
+information has been stripped from the file or not. One method would be for the
+debugger to search through the executable file looking for debug information.
+However, to save the debugger from having to search the file, a file
+characteristic field (IMAGE_FILE_DEBUG_STRIPPED) was invented that indicates
+that the file has been stripped. Debuggers can look for this field in the PE
+file header to quickly determine whether the debug information is present in the
+file or not.
+
+To generate a .DBG file in this format, you can use REBASE.EXE, which is provided
+with the Win32 SDK. Please see the Win32 SDK documentation for more details.
+
+During the Windows NT retail builds, debug symbols are stripped from the system
+binaries and drivers and stored in separate .DBG files. This is done because the
+Windows NT kernel debugger can use these .DBG files and provide debugging
+symbols even for optimized drivers. Remember, however, that the Visual C++
+integrated debugger is not designed to debug protected mode kernel code.
+
+The Windows NT symbol files can be found in a debug subdirectory of the \SUPPORT
+directory on the Windows NT retail CD-ROM. These files must be copied from the
+CD-ROM to your hard drive. For user mode debugging on the target debugger
+machine, .DBG symbols must be present in the Windows NT \&lt;winnt&gt;\SYMBOLS
+directory of the target system (&lt;winnt&gt; is the directory where Windows NT
+is installed). The new Visual C++ setup program installs an "NT System Symbols
+Setup" icon in your program group. You can use it to automatically copy the .DBG
+files from your Windows NT Workstation CD-ROM disk to the correct directory
+structure on your hard drive. This method does not work for the Windows NT
+Server 4.0 CD-ROM because the .DBG files are stored in compressed format.
+
+For kernel debugging, place .DBG files into a symbols tree underneath the
+directory specified by the _NT_SYMBOL_PATH environment variable (for example,
+C:\DEBUG\SYMBOLS). Kernel debugging is possible with a minimal set of symbols
+consisting of symbols for all the drivers (*.SYS) in the SYMBOLS\SYS directory,
+and symbols for NTOSKRNL.EXE and HAL.DLL in the SYMBOLS\EXE and SYMBOLS\DLL
+directories, respectively. For more information on kernel debugging, refer to
+the discussion regarding kernel debugging in the Windows NT DDK Programmer's
+Guide.
+
+While it is theoretically possible to convert from a .PDB file back to a .DBG
+file, it is not a trivial task. At this time, we know of no such tool. If we
+hear of such a tool, we will update this article in the Microsoft Knowledge
+Base.
+
+Additional query words: kbDebug kbTools kbVC200 kbVC210 kbVC400 kbVC500
+
+======================================================================
+Keywords          : kbDebug kbide kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :2.0,2.1,4.0,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

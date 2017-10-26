@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q91692: FIX: H2INC Version 1.0 Ignores /G3 and /G4 Option Switches | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q91692: FIX: H2INC Version 1.0 Ignores /G3 and /G4 Option Switches" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/091/Q91692/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/091/Q91692/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/091/Q91692/","publisher":null,"image":null,"headline":"Q91692: FIX: H2INC Version 1.0 Ignores /G3 and /G4 Option Switches","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q91692-fix-h2inc-version-10-ignores-g3-and-g4-option-switches">Q91692: FIX: H2INC Version 1.0 Ignores /G3 and /G4 Option Switches</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q91692
+Product(s): Microsoft C Compiler
+Version(s): OS/2:1.0; winnt:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 1.0 of the H2INC utility, provided with Microsoft Macro Assembler
+(MASM) version 6.0, 6.0a, and 6.0b, the /G3 or /G4 option switch does not change
+the size of an int from a WORD to a DWORD.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in H2INC version 1.0. This problem
+was corrected in H2INC for MS-DOS version 1.1 which is included with MASM for
+MS-DOS version 6.1.
+
+MORE INFORMATION
+================
+
+Pages 436 and 440 of the "Microsoft Macro Assembler Programmer's Guide" for MASM
+version 6.0 document the /G3 and /G4 switches for the H2INC utility. As note
+above, H2INC version 1.0 does not implement these switches.
+
+Sample Code
+-----------
+
+  /* Command line options needed: /G3
+  */ 
+  int my_var;
+
+  ; Resulting .INC file
+  EXTERNDEF C my_var:SWORD    /* Notice it is not :SDWORD */ 
+
+Additional query words: 6.00 6.00a 6.00b 1.00 buglist1.00 fixlist1.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM100
+Version           : OS/2:1.0; winnt:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

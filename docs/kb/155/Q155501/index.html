@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155501: WINS Client Stops Querying or Renewing with WINS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155501: WINS Client Stops Querying or Renewing with WINS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155501/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155501/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155501/","publisher":null,"image":null,"headline":"Q155501: WINS Client Stops Querying or Renewing with WINS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155501-wins-client-stops-querying-or-renewing-with-wins">Q155501: WINS Client Stops Querying or Renewing with WINS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155501
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:3.11,95; winnt:3.5,3.51; :3.11b
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11b 
+- Microsoft Windows for Workgroups version 3.11 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Computer name and domain name resolution to computers on remote segments is
+failing. The more specific symptoms you may see are the inability to:
+
+- Ping a remote computer (across a router) by its computer name (NetBIOS name).
+
+- log on to a domain when the only domain controllers are on other side of
+  routers.
+
+- Net View or Net Use computers that are on the other side of routers.
+
+- retrieve the browse list of a remote domain that the client sees in its local
+  browse list.
+
+You also may discover that other remote clients can no longer Net View or Net Use
+your client, and that your client registrations in WINS have expired (as
+indicated with a hyphen "-" or a tombstone "+" character).
+
+CAUSE
+=====
+
+The client has stopped querying WINS, and instead is relying only on subnet
+broadcasts for name resolution (like a b-node client). This may happen if the
+following two conditions are met:
+
+- The primary WINS server has gone down.
+
+-and-
+
+- The client does not have a secondary WINS server listed for name resolution
+  (or the DHCP lease does not give a secondary WINS address).
+
+The reason for this behavior is in the WINS query algorithm on the client:
+
+1. When booting up, register your name with your primary WINS server. Or when
+  performing a normal name query, first send the request to your primary WINS
+  server.
+
+2. If the primary WINS server does not respond after 3 attempts, send your
+  registration or query to the secondary WINS server listed.
+
+3. If the secondary WINS server does not respond after 3 attempts, send the
+  query again to the primary WINS server, and continue alternating between
+  primary and secondary WINS server until one of them responds.
+
+The problem results if there is no secondary WINS server listed. The client
+sometimes reverts to B-Node (broadcast only) behavior and stops querying the
+WINS server completely.
+
+RESOLUTION
+==========
+
+If you only have one WINS server, you should fill in its IP address as both the
+primary and secondary WINS server on all clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.11 3.50 3.51 4.0 95 win95 wfw
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311b
+Version           : WINDOWS:3.11,95; winnt:3.5,3.51; :3.11b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123256: Enabling SNA Server Windows 3.x Client Traces | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123256: Enabling SNA Server Windows 3.x Client Traces" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123256/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123256/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123256/","publisher":null,"image":null,"headline":"Q123256: Enabling SNA Server Windows 3.x Client Traces","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123256-enabling-sna-server-windows-3x-client-traces">Q123256: Enabling SNA Server Windows 3.x Client Traces</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123256
+Product(s): Microsoft SNA Server
+Version(s): 2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+Microsoft SNA Server provides extensive tracing capabilities at both the
+server and client side to help diagnose problems. On the server side, you
+can use the SNATRACE tool to trace SNA Server and Win32 application
+activity. You can enable Windows 3.x client tracing by following the steps
+in the Enabling SNA Server Client Tracing section below. Client tracing is
+useful in diagnosing client-to-server connection problems or Windows 3.x
+SNA Server application problems. Note that client tracing cannot be used to
+capture server-to-host SNA Server or link level traffic; these types of
+traces must be captured at the server.
+
+SNA SERVER CLIENT TRACING TYPES
+-------------------------------
+
+Following are descriptions of the types of client tracing provided by SNA
+Server, along with a descriptions of each associated WIN.INI entry:
+
+Internal Tracing:
+
+Internal tracing traces code execution of SNA Server components and is
+intended for SNA Server development. This type of tracing is useful to
+diagnose:
+
+- Client connection failures in communication (546 errors for example) over any
+  client-server transport supported by SNA Server. If the SNA Server client
+  software encounters an underlying network or operating system error, the
+  error code is logged in the internal trace file.
+
+- Problems automatically loading a invokable transaction program (auto- started
+  APPC or CPIC invokable TP).
+
+- Abnormal terminations of clients (general protection (GP) faults or
+  application exceptions).
+
+WIN.INI Entries Used To Control Internal Tracing:
+
+  InternalTraceLevel: [0-8] Level of detail. The most detailed level is 0.
+
+  InternalTraceFile1, InternalTraceFile2: ASCII files that store internal
+  trace information. If only InternalTraceFile1 is specified, the trace
+  file will grow indefinitely. If both trace files are listed, each file
+  will grow to the FlipLength (see below) before wrapping to the next
+  file.
+
+  TraceFlushing: [OFF/ON] Controls whether or not trace information is
+  immediately flushed to the trace file. When debugging a problem
+  involving a hang condition, this entry should be set to ON to ensure
+  that the most recent trace event is logged to the trace file.
+
+  FlipLength: [size in bytes] Controls how large each SNA Server trace
+  file can grow (default: 250,000). If two trace file names are specified,
+  SNA Server traces wrap between two trace files so the hard disk doesn't
+  fill up.
+
+API Tracing:
+
+API tracing traces application program interfaces (APIs) supported by SNA
+Server, in call/return format. You can analyze these traces using the
+appropriate SNA Server API programmer's guide. This type of tracing is
+useful in diagnosing:
+
+- User-written applications which use the SNA Server APIs.
+
+- 5250 emulation problems (which use APPC).
+
+SNA Server Trace Entries Used To Control API Tracing:
+
+APPCTraceState: [OFF/ON] Enables APPC API tracing.
+
+CPICTraceState: [OFF/ON] Enables CPIC API tracing.
+
+CSVTraceState: [OFF/ON] Enables Common Service Verb API tracing.
+
+RUITraceState: [OFF/ON] Enables LUA/RUI API tracing.
+
+SLITraceState: [OFF/ON] Enables LUA/SLI API tracing.
+
+APITraceFile1, APITraceFile2: ASCII files that store API trace information.
+If only APITraceFile1 is specified, the trace file will grow indefinitely.
+If both trace files are listed, each file will grow to the FlipLength (see
+Internal Tracing section above) before wrapping to the next file.
+
+Message Tracing:
+
+Message tracing traces the internal message flow between the SNA Server
+client and the server. This type of trace is used by SNA Server development
+to diagnose:
+
+- 3270 emulator problems communicating with the server.
+
+- APPC or CPIC application problems communicating with the server.
+
+SNA Server Trace Entries Used To Control Message Tracing:
+
+FMITraceState: [OFF/ON] Controls 3270 Emulator Interface (EIS) message
+tracing, used by 3270 emulators.
+
+PVITraceState: [OFF/ON] Controls LU6.2 message tracing which flows between
+the client and server.
+
+MessageTraceFile1, MessageTraceFile2: ASCII files to store message trace
+information. If only MessageTraceFile1 is specified, the trace file will
+grow indefinitely. If both trace files are listed, each file will grow to
+the FlipLength (see Internal Tracing section above) before wrapping to the
+next file.
+
+ENABLING SNA SERVER CLIENT TRACING
+----------------------------------
+
+To enable SNA Server client tracing on a Windows 3.x client computer:
+
+1. Stop the SNA Server for Windows client software.
+
+2. Make backup copies of the following files on your client workstation:
+
+  &lt;snaroot&gt;\WNAP.EXE -&gt; WNAP.ORG
+  &lt;winroot&gt;\SYSTEM\WDMOD.DLL -&gt; WDMOD.ORG
+  &lt;winroot&gt;\SYSTEM\LMCLI.DLL -&gt; LMCLI.ORG (MS network/named pipes)
+  &lt;winroot&gt;\SYSTEM\NWCLI.DLL -&gt; NWCLI.ORG (Netware ipx/spx)
+  &lt;winroot&gt;\SYSTEM\BVCLI.DLL -&gt; BVCLI.ORG (Banyan IP)
+  &lt;winroot&gt;\SYSTEM\IPCLI.DLL -&gt; IPCLI.ORG (TCP/IP sockets)
+
+3. Copy the following traced versions of the client components from your SNA
+  Server CD-ROM to your client workstation:
+
+  \clients\win3x\trace\WNAP.EXE -&gt; &lt;snaroot&gt;\WNAP.EXE
+  \clients\win3x\trace\WDMOD.DLL -&gt; &lt;winroot&gt;\SYSTEM\WDMOD.DLL
+  \clients\win3x\trace\LMCLI.DLL -&gt; &lt;winroot&gt;\SYSTEM\LMCLI.DLL
+  \clients\win3x\trace\NWCLI.DLL -&gt; &lt;winroot&gt;\SYSTEM\NWCLI.DLL
+  \clients\win3x\trace\BVCLI.DLL -&gt; &lt;winroot&gt;\SYSTEM\BVCLI.DLL
+  \clients\win3x\trace\IPCLI.DLL -&gt; &lt;winroot&gt;\SYSTEM\IPCLI.DLL
+
+4. Add the following entries to your &lt;winroot&gt;\WIN.INI file, under the
+  [WNAP] section. Any combination of tracing is supported. Not all entries need
+  to be present in WIN.INI, only those necessary to capture the desired
+  traces.
+
+        [WNAP]
+        ; Entries which control Internal tracing:
+        InternalMessageTraceState=ON
+        InternalTraceFile1=C:\NAPINT1.TRC
+        InternalTraceFile2=C:\NAPINT2.TRC
+        InternalTraceLevel=2
+        ; Entries that control API tracing:
+        APPCTraceState=ON
+        CPICTraceState=ON
+        CSVTraceState=ON
+        RUITraceState=ON
+        SLITraceState=ON
+        APITraceFile1=C:\API1.TRC
+        APITraceFile2=C:\API2.TRC
+        ; Entries that control message tracing:
+        FMITraceState=ON
+        PVITraceState=ON
+        MessageTraceFile1=C:\NAPMSG1.TRC
+        MessageTraceFile2=C:\NAPMSG2.TRC
+        ; Other general tracing entries:
+        FlipLength=250000
+        TraceFlushing=ON
+
+5. Restart WNAP.EXE by choosing Run from the File menu of Program Manager.
+
+6. Once the problem occurs, stop the SNA application and close the SNA Server
+  client icon (WNAP.EXE).
+
+Be sure to rename the client files to the original versions to disable
+tracing. There is no need to remove the WIN.INI entries if you use the
+original client files; they will be ignored.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbsna211sp1 kbsna211sp2 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : :2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

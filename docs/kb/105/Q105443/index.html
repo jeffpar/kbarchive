@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105443: PRB: MetaFile Displays Incorrectly in Print Preview | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105443: PRB: MetaFile Displays Incorrectly in Print Preview" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105443/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105443/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105443/","publisher":null,"image":null,"headline":"Q105443: PRB: MetaFile Displays Incorrectly in Print Preview","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105443-prb-metafile-displays-incorrectly-in-print-preview">Q105443: PRB: MetaFile Displays Incorrectly in Print Preview</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105443
+Product(s): Microsoft C Compiler
+Version(s): winnt:1.0,2.0,2.1,2.2,4.0
+Operating System(s): 
+Keyword(s): kbprint kbMapMode kbMetafile kbMFC kbPrinting kbVC kbDSupport kbGrpDSMFCATL
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When displaying a metafile within the Microsoft Foundation Classes (MFC) Print
+and Print Preview architecture, the metafile prints correctly but is only
+partially or incorrectly displayed in the Print Preview window.
+
+CAUSE
+=====
+
+To simulate a printed page in a window, CPreviewDC modifies the mapping mode for
+the Print Preview window by changing the parameters for such calls as
+SetWindowExt() and SetMapMode() before passing them on to the attribute and
+output device contexts (DCs).
+
+However, CPreviewDC does not override CDC::PlayMetaFile(), which maps to the
+Windows application programming interface (API) ::PlayMetaFile(). If the
+metafile contains records for functions that affect the mapping mode, the
+CPreviewDC versions of these functions will not be called while the metafile is
+playing, causing the mapping mode in the Print Preview window to be set
+incorrectly (the attribute and output DCs lose synchronization).
+
+RESOLUTION
+==========
+
+Rather than PlayMetaFile(), use SaveDC(), ::EnumMetaFile(), and RestoreDC() to
+play the metafile. In the metafile enumeration callback procedure, trap the
+following functions and call the equivalent CDC functions:
+
+  SetMapMode
+  SetWindowExt, ScaleWindowExt
+  SetViewportExt, ScaleViewportExt
+  SetViewportOrg, OffsetViewportOrg
+
+(Of these, SetWindowExt occurs in metafiles more often than the rest. It is
+generally not recommended that metafiles contain records for SetMapMode or any
+of the Viewport functions, but it is common to find SetMapMode records in
+metafiles anyway.)
+
+Bracket the call to ::EnumMetaFile() between calls to SaveDC() and RestoreDC() to
+ensure that the output and attribute DCs are correctly synchronized after
+playing the metafile.
+
+MORE INFORMATION
+================
+
+The enumeration callback procedure should handle the above functions by calling
+the (virtual) CDC version of the function while passing everything else to
+PlayMetaFileRecord(). This allows CPreviewDC to keep the output DC and the
+attribute DC correctly synchronized with respect to mapping mode. For example:
+
+Sample Code
+-----------
+
+     int CALLBACK __export EnumMFProc(HDC hdc,
+                                      HANDLETABLE FAR *lpht,
+                                      METARECORD  FAR *lpmr,
+                                      int cObj,
+                                      LPARAM lParam)
+     {
+       // lParam is available for passing application-specific data to the
+       // enum proc (via the last parameter to EnumMetaFile). Let's make
+       // things easier by passing in a pointer to the CDC object.
+     
+       CDC *pDC = (CDC *)lParam;
+     
+       switch(lpmr-&gt;rdFunction)
+         {
+         // SetWindowExt and SetMapMode are the most important ones to
+         // look for.
+     
+         case META_SETWINDOWEXT:
+             pDC-&gt;SetWindowExt(lpmr-&gt;rdParm[1], lpmr-&gt;rdParm[0]);
+             break;
+     
+         case META_SETMAPMODE:
+             pDC-&gt;SetMapMode(lpmr-&gt;rdParm[0]);
+             break;
+     
+         case META_SETVIEWPORTEXT:
+             pDC-&gt;SetViewportExt(lpmr-&gt;rdParm[1], lpmr-&gt;rdParm[0]);
+             break;
+     
+         case META_SETVIEWPORTORG:
+             pDC-&gt;SetViewportOrg(lpmr-&gt;rdParm[1], lpmr-&gt;rdParm[0]);
+             break;
+     
+         // Add cases for the others if desired...
+     
+         default:
+             PlayMetaFileRecord(hdc, lpht, lpmr, cObj);
+         }
+       return 1;
+     }
+
+In addition to the functions listed above, there are other functions that will
+not affect the appearance of the metafile in the Print Preview window, but may
+affect the synchronization of the output and attribute DCs used by CPreviewDC.
+This can affect subsequent drawing. Consider that the metafile may select
+different fonts and other objects into the output DC, may change the
+foreground/background colors, the text alignment flags, and so forth.
+
+Also, it is common for applications to set a different mapping mode before
+playing a metafile (depending on the metafile) and this mapping mode may
+conflict with the mapping mode used by the rest of the view class.
+
+For these reasons, if any drawing will take place after playing the metafile
+(including playing another metafile, or even the same metafile again), the DC
+must be restored to the state it was in prior to playing the metafile. This can
+be accomplished by using SaveDC/RestoreDC, as in the following example:
+
+     pDC-&gt;SaveDC();                     // Save current state of DC
+     pDC-&gt;SetMapMode(MM_ANISOTROPIC);   // Scalable metafile
+     pDC-&gt;SetViewportExt(xExt, yExt);   // Size of picture
+     pDC-&gt;SetViewportOrg(x, y);         // Location of picture
+
+     ::EnumMetaFile(pDC-&gt;GetSafeHdc(), hmf, EnumMFProc, (LPARAM)(LPSTR)pDC);
+
+     pDC-&gt;RestoreDC(-1);                // Restore to previous saved state
+                                        // Continue with other drawing...
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbMapMode kbMetafile kbMFC kbPrinting kbVC kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,2.2,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

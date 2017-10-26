@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57368: Explanation of Critical Error Codes Returned by ERDEV | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57368: Explanation of Critical Error Codes Returned by ERDEV" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57368/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57368/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57368/","publisher":null,"image":null,"headline":"Q57368: Explanation of Critical Error Codes Returned by ERDEV","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57368-explanation-of-critical-error-codes-returned-by-erdev">Q57368: Explanation of Critical Error Codes Returned by ERDEV</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57368
+Product(s): See article
+Version(s): 2.00 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891127-3 B_BasicCom B_GWBasicI | mspl13_basic
+Last Modified: 17-OCT-1990
+
+ERDEV is an integer function that returns an error code from the last
+device to declare a critical error. ERDEV is set by the critical error
+handler, interrupt 24Hex, when DOS detects a critical DOS call error.
+
+For block and character device errors, ERDEV will contain the error
+code from interrupt 24Hex in the lower 8 bits. For block devices only,
+bit positions 9 to 16 contain device-attribute information which is
+found in the device-driver header of the device that the error is
+coming from.
+
+The above information applies to Microsoft GW-BASIC versions 3.20,
+3.22, and 3.23; to Microsoft QuickBASIC versions 2.00, 3.00, 4.00,
+4.00b, and 4.50; to Microsoft BASIC Compiler versions 6.00 and 6.00b
+for MS-DOS; and to Microsoft BASIC Professional Development System
+(PDS) versions 7.00 and 7.10 for MS-DOS.
+
+When using Microsoft BASIC PDS version 7.00 or 7.10 for MS-DOS, ERDEV
+can also be set by a time-out error on the communications port and
+indicates which option in the OPEN COM statement (CD, CS, or DS) is
+experiencing the time-out.
+
+If ERDEV returns an error from a block device (such as a floppy disk
+drive or fixed disk) or from a character device (such as a terminal or
+printer), the low byte of ERDEV will return the DOS error code, a
+value between 0 and 12. The following is a list of these errors:
+
+    0  write-protect error
+    1  unknown unit
+    2  drive not ready
+    3  unknown command
+    4  date error (CRC)
+    5  bad request structure length
+    6  seek error
+    7  unknown media type
+    8  sector not found
+    9  printer out of paper
+   10  write fault
+   11  read fault
+   12  general failure
+   13  reserved
+   14  reserved
+   15  invalid disk change (MS-DOS version 3.0 only)
+
+For more information on DOS error codes, see INT 24H on Page 481 of
+"Advanced MS-DOS Programming, 2nd Edition," by Ray Duncan (Microsoft
+Press, 1988).
+
+If the device returning an error is a block device, the high byte of
+the integer returned by ERDEV will contain device attribute
+information. This device attribute information comes from the
+device-attribute word in the device header. The only bits from this
+word returned by ERDEV are bits 15, 14, 13, XX, 3, 2, 1, and 0, in
+that order. XX indicates that bits 12 through 4 of the
+device-attribute word will always return zero. The following is a
+description of the bits in the device-attribute word that are
+meaningful to ERDEV:
+
+     Bit
+   Position   Bit     Significance
+   --------   ---     ------------
+
+      8       15      0 if block device
+      7       14      1 if IOCTL read and write supported
+      6       13      1 if BIOS parameter block in boot sector
+                        should be used to determine media
+                        characteristics
+                      0 if media ID byte should be used
+      4        3      1 if current CLOCK$ device
+      3        2      1 if current NUL device
+      2        1      1 if driver supports 32-bit sector addressing
+                        (MS-DOS 4.00)
+      1        0      1 if current standard input device (stdin)
+
+For more information on device-attribute words, see Page 264 of the
+"Advanced MS-DOS Programming" Microsoft Press book.
+
+When using BASIC PDS version 7.00, ERDEV also returns information for
+COM time-out errors in the low byte. If there is a time-out, ERDEV is
+set to a value that indicates the signal line that timed out,
+according to the following table:
+
+   ERDEV Value    Signal Line
+   -----------    -----------
+
+      128         Clear to Send (CTS) timeout
+      129         Data Set Ready (DSR) timeout
+      130         Data Carrier Detect (DCD) timeout
+
+The following program lines generate the DOS and COM time-out error
+codes (low byte) and device attribute information (high byte):
+
+   x= ERDEV
+   DosErrCode = x AND &amp;HFF            'Low byte of ERDEV
+   DevAttr = (x AND &amp;HFF00) \256      'High byte of ERDEV
+
+The following example prints the values of ERDEV after the program
+tries to OPEN a read only file for OUTPUT:
+
+Example
+-------
+
+DEFINT A-Z
+ON ERROR GOTO ErrorHandler
+OPEN "C:\TheFile.DAT" FOR OUTPUT A #1   'TheFile is a read-only
+                                        'file
+END
+
+ErrorHandler:
+   x = ERDEV
+   DosErrCode = x AND &amp;HFF              'low byte of ERDEV
+   PRINT "The DOS error code returned by ERDEV =&gt; "; x
+RESUME NEXT
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

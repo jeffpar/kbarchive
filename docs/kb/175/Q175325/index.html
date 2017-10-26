@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175325: PRB: Can’t Create VB ActiveX Control with Embedded Licensed Ctrl | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175325: PRB: Can’t Create VB ActiveX Control with Embedded Licensed Ctrl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175325/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175325/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175325/","publisher":null,"image":null,"headline":"Q175325: PRB: Can’t Create VB ActiveX Control with Embedded Licensed Ctrl","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175325-prb-cant-create-vb-activex-control-with-embedded-licensed-ctrl">Q175325: PRB: Can’t Create VB ActiveX Control with Embedded Licensed Ctrl</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175325
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you embed a licensed ActiveX control inside a Visual Basic ActiveX control
+and then attempt to use it on another machine, the Visual Basic ActiveX control
+can fail to instantiate.
+
+CAUSE
+=====
+
+By default, Visual Basic ActiveX controls do not support embedding licensed
+controls.
+
+RESOLUTION
+==========
+
+There are two possible solutions:
+
+1. If you make the outer Visual Basic control licensed, embedded licensed
+  controls will be created successfully. You can turn on licensing by selecting
+  Project/&lt;ProjectName&gt; Properties, clicking the General tab and checking
+  "Require License Key."
+
+  -or-
+
+2. For a licensed control to support being instantiated in a Visual Basic
+  control, it needs to support the following interface GUID:
+
+  {0x6e6e9780, 0x165d, 0x11d0, {0xb3, 0xe6, 0x00, 0xa0, 0xc9, 0x0f, 0x27,
+  0x31}}
+
+Visual Basic will call QueryInterface() on the embedded licensed control's
+IClassFactory for the GUID above. If the embedded control's IClassFactory
+::QueryInterface function returns S_OK and a pointer to the IUnknown interface,
+Visual Basic will create the licensed control using the cached license key.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+If the outer Visual Basic control is converted to a licensed control, and if the
+client/container creates the outer Visual Basic control dynamically (via a
+function call), as opposed to inserting it into a dialog, a license key will
+have to be passed to the function. Hosting licensed ActiveX controls in Internet
+Explorer will also require a license key. See the REFERENCES section of this
+article for more information.
+
+When you use a licensed control in a non-ActiveX Control project, Visual Basic
+caches the control's run-time license key as part of the compiled program. When
+you run the program on a machine that doesn't have a design- time license,
+Visual Basic will use the stored license key to instantiate the licensed
+control.
+
+Licensed controls that come with Visual Basic that cannot be used inside a
+UserControl include Crystal(crystl32.ocx)and DBGrid(dbgrid32.ocx).
+
+The common controls in COMCTL32.OCX are licensed but were written so you can use
+them in a Visual Basic ActiveX control.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q151771 193025 159923 : SAMPLE: LICREQST.EXE Requesting a License Key from an
+  Object
+
+  Q159923 : HOWTO: Using Licensed ActiveX Controls in Internet Explorer
+
+  Q193025 : BUG: Cannot Dynamically Add a Non-Licensed MFC Control
+
+Additional query words: kbdsi kbDSupport kbVBp kbVBp500 kbVBp600 kbActiveX KbCtrl KbInternet
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVB500 kbVB600 kbZNotKeyword3
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

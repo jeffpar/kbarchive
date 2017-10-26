@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157672: STL Sample for the basic_string::find_first_of() Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157672: STL Sample for the basic_string::find_first_of() Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157672/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157672/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157672/","publisher":null,"image":null,"headline":"Q157672: STL Sample for the basic_string::find_first_of() Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157672-stl-sample-for-the-basic_stringfind_first_of-functions">Q157672: STL Sample for the basic_string::find_first_of() Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157672
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 04-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the basic_string::find_first_of()
+STL function in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;xstring&gt;
+
+Prototype
+---------
+
+     size_type find_first_of(const basic_string&amp; _X, size_type iPos = 0);
+     size_type find_first_of(const element_type *_S, size_type iPos,
+
+                             size_type cElementsIn_S);
+
+     size_type find_first_of(const element_type *_S, size_type iPos = 0);
+     size_type find_first_of(element_type _C, size_type iPos = 0);
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The member functions each find the first (lowest position) element of the
+controlled sequence at or after position iPos that matches any of the elements
+in the operand sequence specified by the remaining operands. If it succeeds, it
+returns the position. Otherwise, the function returns npos.
+
+The position returned is 0 (zero) based. The npos return value is a special value
+indicating that none of the elements were found.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // main.cpp : Demonstrates the use of the basic_string::find_first_of().
+  // 
+  // Functions:
+  // 
+  //    basic_string::find_first_of() - find the first instance in the
+  //         controlled string of any of the elements specified by the
+  //         parameters. The search begins at an optionally-supplied
+  //         position in the controlled string.
+  // 
+  // Written by Michael Reeves
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  #include &lt;xstring&gt;
+  #include &lt;iostream&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef basic_string&lt;char, char_traits&lt;char&gt;,
+               allocator&lt;char&gt; &gt; test_string;
+
+  void main()
+
+  {
+
+      test_string str1("Heartbeat");
+      test_string str2("abcde");
+      int iPos = 0;
+
+      cout &lt;&lt; "The string to search is '" &lt;&lt; str1.c_str() &lt;&lt; "'"
+           &lt;&lt; endl;
+
+      // find the first instance in str1 of any characters in str2
+      iPos = str1.find_first_of (str2, 0);  // 0 is default position
+
+      cout &lt;&lt; "Element in '" &lt;&lt; str2.c_str() &lt;&lt; "' found at position "
+           &lt;&lt; iPos &lt;&lt; endl;
+
+      // start looking in the third position...
+      iPos = str1.find_first_of (str2, 2);
+
+      cout &lt;&lt; "Element in '" &lt;&lt; str2.c_str() &lt;&lt; "' found at position "
+           &lt;&lt; iPos &lt;&lt; endl;
+
+      // use an array of the element type as the set of elements to
+      // search for; look for anything after the fourth position
+      char achVowels[] = {'a', 'e', 'i', 'o', 'u'};
+      iPos = str1.find_first_of (achVowels, 4, sizeof(achVowels));
+
+      cout &lt;&lt; "Element in '";
+      for (int i = 0; i &lt; sizeof (achVowels); i++)
+          cout &lt;&lt; achVowels[i];
+      cout &lt;&lt; "' found at position " &lt;&lt; iPos &lt;&lt; endl;
+
+      // use a string literal to specify the set of elements
+      char szVowels[] = "aeiou";
+      iPos = str1.find_first_of (szVowels, 0);  // 0 is default position
+
+      cout &lt;&lt; "Element in '" &lt;&lt; szVowels &lt;&lt; "' found at position "
+           &lt;&lt; iPos &lt;&lt; endl;
+
+      // look for a specific character beginning in the third position
+      iPos = str1.find_first_of ('e', 2);
+
+      cout &lt;&lt; "'e' found at position " &lt;&lt; iPos &lt;&lt; endl;
+
+  }
+
+Program Output is:
+
+  The string to search is 'Heartbeat'
+  Element in 'abcde' found at position 1
+  Element in 'abcde' found at position 2
+  Element in 'aeiou' found at position 6
+  Element in 'aeiou' found at position 1
+  'e' found at position 6
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample basic_string::find_first_of
+
+======================================================================
+Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

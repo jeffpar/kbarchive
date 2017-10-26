@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q46993: C Version 5.10 Does Not Handle const Keyword Like ANSI | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q46993: C Version 5.10 Does Not Handle const Keyword Like ANSI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/046/Q46993/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/046/Q46993/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/046/Q46993/","publisher":null,"image":null,"headline":"Q46993: C Version 5.10 Does Not Handle const Keyword Like ANSI","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q46993-c-version-510-does-not-handle-const-keyword-like-ansi">Q46993: C Version 5.10 Does Not Handle const Keyword Like ANSI</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q46993
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# G890706-22068 | mspl13_c
+Last Modified: 18-AUG-1989
+
+Consider the following program "fubar.c":
+
+1:  void main(void)
+2:      {
+3:      char * const String;
+4:
+5:      *String   = 'a';
+6:      String[0] = 'a';
+7:      }
+
+Lines 5 and 6 would be expected to have the same effect. However,
+compiling
+
+   cl fubar.c
+
+produces the following error message:
+
+   fubar.c(6) : error C2166: lval specifies 'const' object
+
+If the "const" attribute is removed from the declaration of "String",
+the error message is eliminated. As per the ANSI C usage of "const",
+Lines 5 and 6 should indeed be synonymous.
+
+Response:
+
+Version 5.10's handling of const doesn't quite match the current ANSI
+draft, and works inconsistently.
+
+Microsoft is researching this problem and will post new information as
+it becomes avialable.
+
+Note: according to ANSI, to create the error on the two lines
+consistently, you need to use
+
+   const char * string = "This is a string";
+
+or (equivalently)
+
+   char const * string = "This is a string";
+
+both of which say that "string" points to a const char. The following
+line says that the pointer "string" is constant, but the char to which
+it points is not -- so no error occurs:
+
+   char * const string = "This is a string";
+
+To make both constant, use the following:
+
+   const char * const string = "This is a string";
+
+Note that the above four examples do not work correctly on Version
+5.10. This feature is under review and should be fixed in the next
+release.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q297461: PRB: Sporadic Access Violations Originate from Inetinfo.exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q297461: PRB: Sporadic Access Violations Originate from Inetinfo.exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/297/Q297461/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/297/Q297461/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/297/Q297461/","publisher":null,"image":null,"headline":"Q297461: PRB: Sporadic Access Violations Originate from Inetinfo.exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q297461-prb-sporadic-access-violations-originate-from-inetinfoexe">Q297461: PRB: Sporadic Access Violations Originate from Inetinfo.exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q297461
+Product(s): Internet Information Server
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Access violations may sporadically occur within the Inetinfo.exe process. The
+stack may resemble the following:
+
+  ChildEBP RetAddr  Args to Child&lt;BR/&gt;
+  028cf318 77f02a3a 00070000 00000000 00000001 ntdll!RtlFreeHeap+0x2a&lt;BR/&gt;
+  028cf35c 685990b7 00000001 77e12b5a 00000001 KERNEL32!LocalFree+0x3f&lt;BR/&gt;
+  028cf364 77e12b5a 00000001 028cf3a8 0007f8ce INFOCOMM!INetpMemoryFree+0xa&lt;BR/&gt;
+  028cf37c 77e1d237 028cfa9c 00000001 685ac342 RPCRT4!NdrPointerFree+0x69&lt;BR/&gt;
+  028cf3a8 77e13a1c 028cfa9c 0007fb7c 685ac342 RPCRT4!NdrpEmbeddedRepeatPointerFree+0x83&lt;BR/&gt;
+  028cf3d0 77e489a2 028cfa9c 0007f960 685ac324 RPCRT4!NdrpEmbeddedPointerFree+0x60&lt;BR/&gt;
+  028cf3e8 77e12b46 028cfa9c 0007f960 685ac31e RPCRT4!NdrConformantStructFree+0x34&lt;BR/&gt;
+  028cf408 77e139fc 028cfa9c 0007f960 685ac3a4 RPCRT4!NdrPointerFree+0x55&lt;BR/&gt;
+  028cf430 77e13a46 028cfa9c 00076c18 685ac356 RPCRT4!NdrpEmbeddedPointerFree+0x40&lt;BR/&gt;
+  028cf440 77e12b46 028cfa9c 00076c18 685ac352 RPCRT4!NdrSimpleStructFree+0x1a&lt;BR/&gt;
+  028cf460 77e4d913 028cfa9c 00076c18 685ac3c6 RPCRT4!NdrPointerFree+0x55&lt;BR/&gt;
+  028cf484 77e56129 028cfa9c 685ac146 00000000 RPCRT4!NdrServerFree+0xdc&lt;BR/&gt;
+  028cf494 77e297dd 028cf4f8 77e5276c ffffffff RPCRT4!NdrStubCall+0x1e8&lt;BR/&gt;
+  028cf4f8 77f966a1 028cfc2c 028cf6a4 77f892d0 RPCRT4!_local_unwind2_50+0x1c&lt;BR/&gt;
+  028cfc2c 77e1fc4a 77e5a8e0 ffffffff 028cfc90 ntdll!ExecuteHandler+0x61&lt;BR/&gt;
+  028cfc80 77e1fc4a 77e584d0 00000000 028cfce4 RPCRT4!_except_handler3&lt;BR/&gt;
+  028cffdc 77f3b744 77f3d238 00000000 00000000 RPCRT4!_except_handler3&lt;BR/&gt;
+  ffffffff 00000000 00000000 00000000 00000000 KERNEL32!_except_handler3&lt;BR/&gt;
+
+If the debugger cannot access the symbols for the server or the symbols are not
+installed (such as in a Dr. Watson log), the stack may resemble the following:
+
+  *** ERROR: Symbol file could not be found.  Defaulted to export symbols for kernel32.dll -&lt;BR/&gt;
+  *** ERROR: Symbol file could not be found.  Defaulted to export symbols for infocomm.dll -&lt;BR/&gt;
+  ChildEBP RetAddr  Args to Child&lt;BR/&gt;
+  028cf318 77f02a3a 00070000 00000000 00000001 ntdll!RtlFreeHeap+0x2a&lt;BR/&gt;
+  028cf35c 685990b7 00000001 77e12b5a 00000001 KERNEL32!LocalFree+0x3f&lt;BR/&gt;
+  00000001 00000000 00000000 00000000 00000000 INFOCOMM!InitCommonDlls+0x13b9&lt;BR/&gt;
+
+CAUSE
+=====
+
+The version of the Ntdll.dll file is from a service pack other than the service
+pack that is currently installed on the system. This problem may also occur on
+other system dynamic-link library (DLL) files.
+
+RESOLUTION
+==========
+
+Reapply the current service pack, or upgrade to the latest NT service pack.
+
+Additional query words: inetinfo iis access violation av nt
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147049: XCLN: Err Msg: The Print Operation Could not be Completed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147049: XCLN: Err Msg: The Print Operation Could not be Completed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147049/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147049/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147049/","publisher":null,"image":null,"headline":"Q147049: XCLN: Err Msg: The Print Operation Could not be Completed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147049-xcln-err-msg-the-print-operation-could-not-be-completed">Q147049: XCLN: Err Msg: The Print Operation Could not be Completed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147049
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, version 4.0 
+- Microsoft Exchange Windows NT client, version 4.0 
+- Microsoft Exchange Windows 95/98 client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error message listed below might occur if the Print Layouts and Paper
+Formats component of Microsoft Schedule+ was not installed when you installed
+the Microsoft Exchange client. This error message will occur when you attempt to
+print a meeting request from within the Microsoft Exchange client.
+
+  The print operation could not be completed. Cannot print because there are no
+  valid .FMT files available.
+
+RESOLUTION
+==========
+
+Run the Microsoft Exchange Client Setup program, click Add/Remove, select
+Schedule+, click Change Option, check Print Layouts and Paper Formats, and click
+OK. Once installed, you will be able to print meeting requests from the
+Microsoft Exchange client.
+
+For Microsoft Exchange Windows 3.x clients, this can also be caused by the
+following line not being present in the Schplus.ini file:
+
+  LocalPrintFileDir=&lt;Path to client install directory or directory where
+                     the FMT files are located&gt;
+
+For Microsoft Exchange Windows NT and Windows 95 clients, the following Registry
+location must be present in the registry.
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Schedule+\Application
+  String: LocalPrintFileDir
+  Value: &lt;Path to client install directory or directory where the FMT
+          files are located&gt;
+
+This can also be changed for an entire Microsoft Exchange client install point by
+running the STF Editor and making the change in the following location:
+
+1. From the File menu, click Modify Setup Program Options.
+
+2. Click the Components tab.
+
+3. Click the Schedule+ Change Option button.
+
+4. Make sure the Print Layouts and Paper Formats option is checked.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

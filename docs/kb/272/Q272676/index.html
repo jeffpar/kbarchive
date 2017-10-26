@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272676: BUG: CComContainedObject::QueryInterface() Implementation Is Inc | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272676: BUG: CComContainedObject::QueryInterface() Implementation Is Inc" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272676/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272676/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272676/","publisher":null,"image":null,"headline":"Q272676: BUG: CComContainedObject::QueryInterface() Implementation Is Inc","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272676-bug-ccomcontainedobjectqueryinterface-implementation-is-inc">Q272676: BUG: CComContainedObject::QueryInterface() Implementation Is Inc</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272676
+Product(s): Microsoft C Compiler
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbATL kbDSupport kbGrpDSMFCATL
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are writing an aggregatable COM object in Active Template Library
+(ATL), unintended inner object interfaces could be exposed because of a bug in
+the implementation of the CComContainedObject::QueryInterface function.
+
+CAUSE
+=====
+
+The CComContainedObject::QueryInterface function calls the following lines in
+AtlCom.h:
+
+  	STDMETHOD(QueryInterface)(REFIID iid, void ** ppvObject)
+  	{
+  		HRESULT hr = OuterQueryInterface(iid, ppvObject);
+
+  		if (FAILED(hr) &amp;&amp; _GetRawUnknown() != m_pOuterUnknown)
+  		 	hr = _InternalQueryInterface(iid, ppvObject);
+
+  		return hr;
+  	}
+
+If the OuterQueryInterface call fails, a "blind" _InternalQueryInterface is
+performed in the case of an aggregated object. This can cause a problem when,
+for instance, the outer object does not want to expose an interface of the inner
+object (and returns, E_FAIL, for example). The "blind" _InternalQueryInterface
+in the code returns that interface anyway.
+
+RESOLUTION
+==========
+
+To work around the problem and enable the aggregation to work correctly, comment
+out the highlighted lines in the AtlCom.h file:
+
+  	STDMETHOD(QueryInterface)(REFIID iid, void ** ppvObject)
+  	{
+  		HRESULT hr = OuterQueryInterface(iid, ppvObject);
+
+  		// Comment out the two lines below:
+  		// if (FAILED(hr) &amp;&amp; _GetRawUnknown() != m_pOuterUnknown)
+  		// 	hr = _InternalQueryInterface(iid, ppvObject);
+
+  		return hr;
+  	}
+
+Make these modifications to a copy of the AtlCom.h file (for instance,
+FixAtlCom.h). Then, in the Stdafx.h file, comment out AtlCom.h and use
+FixAtlCom.h instead:
+
+      // #include &lt;AtlCom.h&gt;
+      #include "FixAtlCom.h" 
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+ATL uses CComContainedObject in the CComAggObject, CComPolyObject, and
+CComCachedTearOffObject classes. CComContainedObject implements IUnknown by
+delegating to the owner object's IUnknown. (The owner is either the outer object
+of an aggregation or the object for which a tear-off interface is being
+created.)
+
+To prevent unintended side effects and to allow the owner object to have full
+control, CComContainedObject must not independently return its own interfaces in
+response to a QueryInterface request, if the owner object's QueryInterface
+(called through OuterQueryInterface) does not work correctly.
+
+For example, assume that an inner object has an interface IID_Moo, which an outer
+object does not want to expose. The outer object could use a
+COM_INTERFACE_ENTRY_NOINTERFACE(IID_Moo) macro in its ATL COM map, right before
+a COM_INTERFACE_ENTRY_AGGREGATE_BLIND macro.
+
+The current ATL code for CComContainedObject::QueryInterface will allow a
+QueryInterface for IID_Moo to succeed, which is not expected behavior. The
+changes given here will allow for the IID_Moo QueryInterface call to fail, as
+expected.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q181265 HOWTO: Create ATL COM Objects
+
+View the following topics in the Microsoft Developer Network (MSDN) library:
+
+  CComContainedObject
+  http://msdn.microsoft.com/library/devprods/vs6/visualc/vcmfc/_atl_ccomcontainedobject.htm
+
+  CComAggObject
+  http://msdn.microsoft.com/library/devprods/vs6/visualc/vcmfc/_atl_ccomaggobject.htm
+
+  CComPolyObject
+  http://msdn.microsoft.com/library/devprods/vs6/visualc/vcmfc/_atl_ccompolyobject.htm
+
+  ATL Macros and Global Functions
+  http://msdn.microsoft.com/library/devprods/vs6/visualc/vcmfc/_atl_atl_macros_and_global_functions.htm
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATL kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbATL300
+Version           : :3.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

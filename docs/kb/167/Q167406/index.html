@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167406/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167406/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167406/","publisher":null,"image":null,"headline":"Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167406-fix-type-function-returns-wrong-value-for-appended-records">Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167406
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbcode kbvfp kbvfp300bBUGkbbuglist kbfixlist
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The TYPE() function returns the wrong current value for appended records in a
+buffered table. The TYPE() function returns "L" for logical type for all field
+types in the table. This behavior occurs regardless of the type of data
+buffering applied to the table.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Microsoft Visual
+FoxPro version 5.0 for Windows.
+
+MORE INFORMATION
+================
+
+The following program creates a table, set the data buffering property to
+optimistic table buffering, and appends a blank record. Then a comparison
+displays the difference between the field types of the new record and the
+original table structure.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program that contains the following code:
+
+        CLEAR
+        CLOSE DATA ALL
+        SET MULTILOCKS ON
+        CREATE TABLE TheTable (;
+          Char       C(40),;
+          Date       D,;
+          DateTime   T,;
+          Numeric    N(20,9),;
+          Double     B(9),;
+          Currency   Y,;
+          Logical    L,;
+          Memo       M,;
+          General    G,;
+          Picture    P)
+
+        ? "CURSORSETPROP('Buffer', 5)"
+        = CURSORSETPROP('Buffer', 5)
+        APPEND BLANK
+        ? [TYPE("CURVAL('Char')") =], TYPE("CURVAL('Char')")
+        ? [TYPE("OLDVAL('Char')") =], TYPE("OLDVAL('Char')")
+        ? [TYPE("CURVAL('Date')") =], TYPE("CURVAL('Date')")
+        ? [TYPE("OLDVAL('Date')") =], TYPE("OLDVAL('Date')")
+        ? [TYPE("CURVAL('DateTime')") =], TYPE("CURVAL('DateTime')")
+        ? [TYPE("OLDVAL('DateTime')") =], TYPE("OLDVAL('DateTime')")
+        ? [TYPE("CURVAL('Numeric')") =], TYPE("CURVAL('Numeric')")
+        ? [TYPE("OLDVAL('Numeric')") =], TYPE("OLDVAL('Numeric')")
+        ? [TYPE("CURVAL('Double')") =], TYPE("CURVAL('Double')")
+        ? [TYPE("OLDVAL('Double')") =], TYPE("OLDVAL('Double')")
+        ? [TYPE("CURVAL('Currency')") =], TYPE("CURVAL('Currency')")
+        ? [TYPE("OLDVAL('Currency')") =], TYPE("OLDVAL('Currency')")
+        ? [TYPE("CURVAL('Logical')") =], TYPE("CURVAL('Logical')")
+        ? [TYPE("OLDVAL('Logical')") =], TYPE("OLDVAL('Logical')")
+        ? [TYPE("CURVAL('Memo')") =], TYPE("CURVAL('Memo')")
+        ? [TYPE("OLDVAL('Memo')") =], TYPE("OLDVAL('Memo')")
+        ? [TYPE("CURVAL('General')") =], TYPE("CURVAL('General')")
+        ? [TYPE("OLDVAL('General')") =], TYPE("OLDVAL('General')")
+        ? [TYPE("CURVAL('Picture')") =], TYPE("CURVAL('Picture')")
+        ? [TYPE("OLDVAL('Picture')") =], TYPE("OLDVAL('Picture')")
+        = TABLEREVERT(.T.)
+        CLOSE DATA ALL
+        DELETE FILE TheTable.DBF
+        DELETE FILE TheTable.FPT
+        SET MULTILOCKS OFF
+
+2. Run the program.
+
+3. Notice the current value of every field appears as a type logical (L). The
+  TYPE() function reports the data type of each field in the newly appended
+  record as a logical type. However, TYPE() reports the original field type
+  correctly.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbvfp kbvfp300bBUG kbbuglist kbfixlist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

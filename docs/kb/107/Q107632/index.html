@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107632: Using Novell’s ODINSUP and NETx with Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107632: Using Novell’s ODINSUP and NETx with Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107632/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107632/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107632/","publisher":null,"image":null,"headline":"Q107632: Using Novell’s ODINSUP and NETx with Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107632-using-novells-odinsup-and-netx-with-windows">Q107632: Using Novell’s ODINSUP and NETx with Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107632
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+The following article contains information on the use of Windows for
+Workgroups with third-party products or configurations that have not
+been tested and are not supported by Microsoft.
+
+If the steps or procedures described in this article do not function
+properly, contact the manufacturer of the third-party product for more
+information or use a supported configuration.
+
+SUMMARY
+=======
+
+This article provides instructions on how to install the Novell ODINSUP driver
+to work with Windows for Workgroups 3.11. Novell's ODINSUP driver allows NDIS 2
+protocols (such as MS TCP/IP) to run on top of Novell's ODI drivers. This
+behavior is similar to that of the MSODISUP driver that comes with Windows for
+Workgroups 3.11. The only difference is that the MSODISUP driver allows only
+NDIS 3 protocols to run on top of it.
+
+MORE INFORMATION
+================
+
+The following instructions assist you in setting up Windows for Workgroups 3.11
+to run on the Novell ODINSUP driver with NetWare clients that are using Novell's
+NETx redirector. By doing this, you can use NDIS 2 protocols (such as MS TCP/IP
+or MS DLC) to run on top of the Novell ODI drivers. The steps below outline
+setting up Windows for Workgroups 3.11 with the MS TCP/IP, NetBEUI, and NWLink
+protocols in addition to Novell's real-mode IPX protocol. The network card used
+throughout this article is the 3COM 3c509 Etherlink III.
+
+Before You Begin:
+
+Since this configuration requires the Novell IPXODI drivers, you must have your
+machine set up and attached to a Novell server using IPXODI.COM at MS- DOS
+before proceeding to the "Setup Instructions" section below. You should also set
+up a working NET.CFG file in the same directory from which you load LSL.COM
+
+Be sure to back up your AUTOEXEC.BAT file so that you can restore this
+configuration later if necessary.
+
+Setup Instructions:
+
+1. Install Windows for Workgroups using the Custom Setup option. In the Network
+  Setup dialog box, select the Other option button, select Novell, and then
+  choose the Drivers button. Select the network card driver for your adapter
+  along with both the NetBEUI and the IPX/SPX Compatible Transport with NetBIOS
+  protocols. (Note that for the examples in this article, we chose the
+  Etherlink III network adapter.) Next, in the same Network Drivers dialog box,
+  choose Setup and choose Real Mode NDIS Driver. This is important because even
+  though you are actually running an ODI driver with ODINSUP, Windows for
+  Workgroups thinks you are running an NDIS driver. Choose OK and continue with
+  Setup. Ignore the error messages about ODI drivers. After you finish Setup,
+  reboot your computer and start Windows by using the /N switch (WIN /N), then
+  install MS TCP/IP according to the directions that come with the MS TCP/IP
+  package.
+
+  NOTE: If there are any other NDIS 2 protocols (such as MS DLC) you want to
+  install, install those now. Also, make sure that you choose which protocol
+  you want to be the default protocol in the Network Drivers dialog box.
+
+2. After completing the MS TCP/IP installation, edit the SYSTEM.INI file and
+  remove the NDIS 2 driver, &lt;ELNK3.DOS&gt;, from the netcard= line of the
+  [Network Drivers] section.
+
+  NOTE: If you are using a different network card, the NDIS network card driver
+  (&lt;ELNK3.DOS&gt; in the above example) will be different.
+
+3. Edit the CONFIG.SYS file and set LASTDRIVE=P. This allows you to use the
+  drive letters before P to connect to other Windows for Workgroups servers and
+  driver letters after P to connect to NetWare servers. You can adjust this to
+  fit your needs; however, Windows for Workgroups drives can map only up to and
+  including the drive to which LASTDRIVE has been set.
+
+4. Edit the AUTOEXEC.BAT file so that it contains the following lines:
+
+  C:\WINDOWS\NET INIT
+           &lt;==This loads protman and NDIS protocols&gt;
+        C:\&lt;PATH&gt;\LSL.COM
+        C:\&lt;PATH&gt;\&lt;your network card's ODI MAC driver&gt;.COM
+        C:\&lt;PATH&gt;\ODINSUP.COM
+        C:\WINDOWS\NET START NETBIND (This binds the protocols to ODINSUP.)
+        C:\&lt;PATH&gt;\IPXODI.COM
+        C:\&lt;PATH&gt;\NETX.EXE
+           (The rest of these files are for MS TCP/IP.)
+        C:\WINDOWS\UMB
+        C:\WINDOWS\TCPTSR
+        C:\WINDOWS\TINYRFC
+        C:\WINDOWS\NMTSR.EXE
+        C:\WINDOWS\EMSBFR.EXE
+
+5. Edit the NET.CFG file and verify that it contains the following lines. If
+  these lines don't exist, add them to the appropriate sections of the NET.CFG
+  file. If you do not have a NET.CFG file, create one using a text editor (such
+  as Microsoft Windows Notepad), and save it in the directory from which
+  LSL.COM is executed. Note that some of the lines in the NET.CFG file are
+  indented; this indentation must be maintained.
+
+        PB BUFFERS 7
+        PROTOCOL ODINSUP
+           BIND &lt;3c509&gt; (where &lt;3C509&gt; is the filename of your network
+                         card's ODI driver.)
+           BUFFERED
+        LINK DRIVER &lt;3c509&gt; (where &lt;3C509&gt; is the filename of your network
+                             card's ODI driver.)
+           INT &lt;n&gt; (where &lt;n&gt; is the one-digit interrupt number.)
+           MEM &lt;nnnnn&gt; (where &lt;nnnnn&gt; is the five-digit memory address.)
+           PORT &lt;nnn&gt; (where &lt;nnn&gt; is the three-digit I/O port address.)
+           FRAME ETHERNET_802.2
+           FRAME ETHERNET_802.3
+           FRAME ETHERNET_II
+           FRAME ETHERNET_SNAP
+           PROTOCOL IPX 0 ETHERNET_802.3
+
+  NOTE: If you have been using ODI to attach to a Novell server at DOS and you
+  haven't specified the parameters INT, MEM, PORT, DMA, SLOT, and so forth in
+  the NET.CFG file, you probably don't need to add them now. However, depending
+  on the ODI MAC driver you are using (Novell refers to this as the "MLID"),
+  you may need to place these parameters after the FRAME lines. Additionally,
+  list your network's frame type FIRST in the list of "FRAME
+  ETHERNET_&lt;xxxx&gt;" entries (where &lt;xxxx&gt; will probably be
+  &lt;802.3&gt; or &lt;II&gt;).
+
+6. Edit the PROTOCOL.INI file by replacing the BINDINGS= lines in the [NWLINK],
+  [NETBEUI], [MS$NDISHLP], and [TCPIP] sections with the Novell ODI MAC driver
+  (MLID) as follows:
+
+     [NWLINK]
+     ;BINDINGS=&lt;MS$ELNK3&gt; (where &lt;MS$ELNK3&gt; corresponds to your NDIS MAC
+                           driver; in this case, ELINK3.DOS. The semicolon
+                           comments out this line.)
+     BINDINGS=&lt;x3c509&gt; (where &lt;x3c509&gt; corresponds to your ODI MLID;
+                        in this case, 3c509.COM. The "x" must be added if the
+                        ODI MLID filename begins with a numeral.)
+
+     [NETBEUI]
+     ;BINDINGS=&lt;MS$ELNK3&gt; (where &lt;MS$ELNK3&gt; corresponds to your NDIS MAC
+                           driver; in this case, ELINK3.DOS. The semicolon
+                           comments out this line.)
+     BINDINGS=&lt;x3c509&gt; (where &lt;x3c509&gt; corresponds to your ODI MLID;
+                        in this case, 3c509.COM. The "x" must be added if the
+                        ODI MLID filename begins with a numeral.)
+     LANABASE=0
+     SESSIONS=10
+     NCBS=12
+     DriverName=netbeui$
+
+     [MS$NDISHLP]
+     DriverName=ndishlp$
+     ;BINDINGS=&lt;MS$ELNK3&gt; (where &lt;MS$ELNK3&gt; corresponds to your NDIS MAC
+                           driver; in this case, ELINK3.DOS. The semicolon
+                           comments out this line.)
+     BINDINGS=&lt;x3c509&gt; (where &lt;x3c509&gt; corresponds to your ODI MLID;
+                        in this case, 3c509.COM. The "x" must be added if the
+                        ODI MLID filename begins with a numeral.)
+
+     [TCPIP]
+     IPAddress0=&lt;130 25 40 20&gt; (where &lt;130 25 40 20&gt; corresponds to your own
+                                IP Addresses.)
+     DefaultGateway0=130 25 0 1
+     SubNetMask0=255 255 0 0
+     NBSessions=6
+     NetFiles=C:\WINDOWS
+     DriverName=TCPIP$
+     ;BINDINGS=&lt;MS$ELNK3&gt; (where &lt;MS$ELNK3&gt; corresponds to your NDIS MAC
+                           driver; in this case, ELINK3.DOS. The semicolon
+                           comments out this line.)
+     BINDINGS=&lt;x3c509&gt; (where &lt;x3c509&gt; corresponds to your ODI MLID;
+                        in this case, 3c509.COM. The "x" must be added if the
+                        ODI MLID filename begins with a numeral.)
+     LANABASE=2
+
+  NOTE: If you are using the Microsoft 32-bit TCP/IP dated 11/21/94, you must
+  change the "bindings=" setting in the network card section of the SYSTEM.INI
+  file to match the ODI MLID name.
+
+  IMPORTANT: If the ODI MLID filename begins with a numeral, you must preface
+  the filename with an "x" (without the quotation marks) in the BINDINGS=
+  statement. For example, 3COM's 3C509 network adapter card uses an ODI MLID
+  with the filename 3C509.COM. In the PROTOCOL.INI file, the BINDINGS=
+  statements would need to be:
+
+  BINDINGS=x3C509
+
+  WARNING: After you make these modifications, do NOT make any changes in the
+  Network dialog box of Control Panel. If you do, the AUTOEXEC.BAT, SYSTEM.INI
+  and PROTOCOL.INI files will be overwritten. You should make backup copies of
+  these files in case this occurs.
+
+EXAMPLES
+--------
+
+Below are samples of what modified CONFIG.SYS, AUTOEXEC.BAT, NET.CFG, and
+PROTOCOL.INI files look like if you are using Novell's ODINSUP with Windows for
+Workgroups 3.11 Setup with the MS TCP/IP, NetBEUI and "NWLink with NetBIOS"
+protocols.
+
+CONFIG.SYS:
+
+DEVICE=C:\WINDOWS\HIMEM.SYS
+DOS=HIGH
+BUFFERS=30
+FILES=50
+DEVICE=C:\DOS\SETVER.EXE
+SHELL=C:\DOS\COMMAND.COM C:\DOS\  /p /e:2048
+STACKS=9,256
+LASTDRIVE=P
+DOS=UMB
+DEVICE=C:\WINDOWS\IFSHLP.SYS
+
+AUTOEXEC.BAT:
+
+C:\WINDOWS\NET INIT
+C:\NOVELL\LSL
+C:\NOVELL\3C509
+C:\NOVELL\ODINSUP
+C:\WINDOWS\NET START NETBIND
+C:\NOVELL\IPXODI
+C:\NOVELL\NETX
+C:\WINDOWS\UMB
+C:\WINDOWS\TCPTSR
+C:\WINDOWS\TINYRFC
+C:\WINDOWS\NMTSR.EXE
+C:\WINDOWS\EMSBFR.EXE
+PATH=C:\WINDOWS;C:\DOS;C:\ 
+SET TEMP=C:\TEMP
+C:\WINDOWS\SMARTDRV.EXE /X
+
+NET.CFG:
+
+SHOWDOTS=ON
+PB BUFFERS 7
+PROTOCOL ODINSUP
+  BIND 3c509
+  BUFFERED
+LINK DRIVER 3c509
+  port 300
+  int 5
+  frame ethernet_802.3
+  frame ethernet_802.2
+  frame ethernet_II
+  frame ethernet_SNAP
+  PROTOCOL IPX 0 ETHERNET_802.3
+
+PROTOCOL.INI:
+
+[network.setup]
+version=0x3110
+netcard=ms$elnk3,1,MS$ELNK3,1
+transport=ms$nwlinknb,NWLINK
+transport=ms$netbeui,NETBEUI
+transport=ms$ndishlp,MS$NDISHLP
+transport=tcpip,TCPIP
+lana0=ms$elnk3,1,ms$netbeui
+lana1=ms$elnk3,1,ms$nwlinknb
+lana2=ms$elnk3,1,ms$ndishlp
+lana3=ms$elnk3,1,tcpip
+
+[MS$ELNK3]
+DriverName=ELNK3$
+MAXTRANSMITS=6
+
+[NWLINK]
+BINDINGS=x3C509
+
+[NETBEUI]
+BINDINGS=x3C509
+LANABASE=0
+SESSIONS=10
+NCBS=12
+DriverName=netbeui$
+
+[protman]
+DriverName=PROTMAN$
+PRIORITY=MS$NDISHLP
+&lt;BR/&gt;&lt;BR/&gt;
+[MS$NDISHLP]
+DriverName=ndishlp$
+BINDINGS=x3C509
+&lt;BR/&gt;&lt;BR/&gt;
+[TCPIP]
+DefaultGateway0=130 25 0 1
+SubNetMask0=255 255 0 0
+IPAddress0=130 25 40 20
+NBSessions=6
+NetFiles=C:\WINDOWS
+DriverName=TCPIP$
+BINDINGS=x3C509
+LANABASE=2
+
+For additional information concerning the Novell ODINSUP.COM driver, contact
+Novell Technical Support or on the Novell CompuServe forums.
+
+The third-party products discussed here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : :3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

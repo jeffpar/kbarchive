@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190501: FIX: Resizing CToolbar with Dropdown Arrow Buttons Freezes Apps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190501: FIX: Resizing CToolbar with Dropdown Arrow Buttons Freezes Apps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190501/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190501/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190501/","publisher":null,"image":null,"headline":"Q190501: FIX: Resizing CToolbar with Dropdown Arrow Buttons Freezes Apps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190501-fix-resizing-ctoolbar-with-dropdown-arrow-buttons-freezes-apps">Q190501: FIX: Resizing CToolbar with Dropdown Arrow Buttons Freezes Apps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190501
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbVC600bug kbNoUpdate
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Resizing a toolbar (CToolBar class) with drop-down arrow buttons causes an
+infinite loop.
+
+CAUSE
+=====
+
+The application is looping in CToolBar::SizeToolBar() because neither sizeMin.cx
+nor sizeMax.cx changes its value. In other words, in CToolBar::SizeToolBar(),
+the loop hangs on the case where sizeMax == sizeMid.
+
+RESOLUTION
+==========
+
+Because CToolBar::SizeToolBar() is not a virtual function, we need to
+reimplement this function and override the virtual functions in CToolBar class
+to call our SizeToolBar() function.
+
+Below are the steps to correct this problem:
+
+1. Derive a class from CToolBar called CMyToolBar.
+
+2. Override virtual functions: CalcFixedLayout() and CalcDynamicLayout() in
+  CMyToolBar class because they both call CalcLayout(), which in turn calls
+  SizeToolBar(). Both CalcLayout() and SizeToolBar are nonvirtual functions in
+  CToolBar class.
+
+  The code for all these functions can be copied from the MFC source file
+  Bartool.cpp.
+
+3. Override CalcLayout() in CMyToolBar class. The code in CToolBar::CalcLayout()
+  requires the _AFX_CONTROLPOS structure, which should be copied from the
+  Bartool.cpp file as well.
+
+  The code in CToolBar::CalcLayout() also calls the _GetButton() and
+  _SetButton() functions. These functions have internal linkage, so we need to
+  override those to avoid the LNK2001 error.
+
+  NOTE: The first statement of _GetButton() casts the "this" pointer to
+  CToolBar*, we have to cast it to CMyToolBar* in order to call the protected
+  CWnd::DefWindowProc() function. For example:
+
+        void CMyToolBar::_GetButton(int nIndex, TBBUTTON* pButton) const
+        {
+           CMyToolBar* pBar = (CMyToolBar*) this;
+           VERIFY(pBar-&gt;DefWindowProc(TB_GETBUTTON, nIndex,
+             (LPARAM)pButton));
+           // TBSTATE_ENABLED == TBBS_DISABLED so invert it.
+           pButton-&gt;fsState ^= TBSTATE_ENABLED;
+        }
+
+4. Override SizeToolBar() in CMyToolBar class. Replace the while-loop with the
+  following fix-up code:
+
+        while (sizeMin.cx &lt; sizeMax.cx)
+        {
+           sizeMid.cx = (sizeMin.cx + sizeMax.cx) / 2;
+           WrapToolBar(pData, nCount, sizeMid.cx);
+           sizeMid = CalcSize(pData, nCount);
+
+           if (nLength &lt; sizeMid.cy)
+           {
+              if (sizeMin == sizeMid)
+              {
+                 WrapToolBar(pData, nCount, sizeMax.cx);
+                 return;
+              }
+              sizeMin = sizeMid;
+           }
+           else if (nLength &gt; sizeMid.cy &amp;&amp; sizeMax != sizeMid)
+              sizeMax = sizeMid;
+           else
+              return;
+        }
+
+5. Finally, use CMyToolBar when declaring the toolbar object in the header file
+  of the CMainFrame class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+In CToolBar::SizeToolBar(), the loop hangs on the case where sizeMax ==
+sizeMid:
+
+     while (sizeMin.cx &lt; sizeMax.cx)
+     {
+        sizeMid.cx = (sizeMin.cx + sizeMax.cx) / 2;
+        WrapToolBar(pData, nCount, sizeMid.cx);
+        sizeMid = CalcSize(pData, nCount);
+
+        if (nLength &lt; sizeMid.cy)
+        {
+           if (sizeMin == sizeMid)
+           {
+              WrapToolBar(pData, nCount, sizeMax.cx);
+              return;
+           }
+           sizeMin = sizeMid;
+        }
+        else if (nLength &gt; sizeMid.cy)
+           sizeMax = sizeMid;
+        else
+           return;
+     }
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run MFC AppWizard to create an SDI .EXE.
+
+2. Add the following code to CMainFrame::OnCreate(), to add a drop-down arrow to
+  the Open button:
+
+        // Set the drop-down buttons to have the appropriate styles.
+
+        CToolBarCtrl&amp; rCtrl = m_wndToolBar.GetToolBarCtrl();
+
+        TBBUTTONINFO tbbi;
+        tbbi.dwMask = TBIF_STYLE;
+        tbbi.cbSize = sizeof tbbi;
+
+        rCtrl.GetButtonInfo(ID_FILE_OPEN, &amp;tbbi);
+        tbbi.fsStyle |= TBSTYLE_DROPDOWN;
+
+        VERIFY(rCtrl.SetButtonInfo(ID_FILE_OPEN, &amp;tbbi));
+
+        rCtrl.SetExtendedStyle(
+           rCtrl.GetExtendedStyle() | TBSTYLE_EX_DRAWDDARROWS);
+
+3. Build and run the .EXE.
+
+4. Undock the toolbar.
+
+5. Grab the BOTTOM border and resize, making the toolbar three rows in height
+  (resizing using the right border seems to work fine).
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Yeong-Kah
+Tam, Microsoft Corporation.
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Yeong-Kah Tam, Microsoft Corporation
+
+
+Additional query words: kbvc600bug
+
+======================================================================
+Keywords          : kbVC600bug kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272656: How to Create a File Viewer By Using ASP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272656: How to Create a File Viewer By Using ASP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272656/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272656/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272656/","publisher":null,"image":null,"headline":"Q272656: How to Create a File Viewer By Using ASP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272656-how-to-create-a-file-viewer-by-using-asp">Q272656: How to Create a File Viewer By Using ASP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272656
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbIIS
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use Microsoft Active Server Pages (ASP)
+technologies to create a generic file viewer by using the
+Scripting.FileSystemObject.
+
+Important Note:
+
+If you use the code in this article improperly, the code can be used to view
+folders outside of a Web site. For additional information on preventing this,
+click the article numbers below to view the articles in the Microsoft Knowledge
+Base:
+
+  Q184717 AspEnableParentPaths MetaBase Property Should Be Set To False
+
+  Q276548 ASP Error 0131 When Browsing to Database Results Region ASP Page
+
+MORE INFORMATION
+================
+
+General Disclaimer:
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+Page Viewer Example Code:
+
+Use the following steps to create the page viewer ASP page.
+
+NOTE: You must have Basic/Clear Text, Integrated/NTLM, or Digest authentication
+enabled to use this example.
+
+1. Open Notepad on a Web server that is running Microsoft Internet Information
+  Server version 4.0 or Internet Information Services version 5.0.
+
+2. Run the following ASP code:
+
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="err">@</span><span class="na">Language=</span><span class="s">"VBScript"</span> <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>  
+    <span class="na">On</span> <span class="na">Error</span> <span class="na">Resume</span> <span class="na">Next</span> <span class="err">'</span> <span class="na">don</span><span class="err">'</span><span class="na">t</span> <span class="na">worry</span> <span class="na">about</span> <span class="na">errors</span>
+
+    <span class="err">'</span> <span class="na">turn</span> <span class="na">on</span> <span class="na">buffering</span>
+    <span class="na">Response</span><span class="err">.</span><span class="na">Buffer =</span><span class="err"> </span><span class="s">True</span>
+
+    <span class="err">'</span> <span class="na">make</span> <span class="na">sure</span> <span class="na">that</span> <span class="na">client</span> <span class="na">is</span> <span class="na">authenticated</span>
+    <span class="na">If</span> <span class="na">Len</span><span class="err">(</span><span class="na">Trim</span><span class="err">(</span><span class="na">CStr</span><span class="err">(</span><span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">LOGON_USER</span><span class="err">"))))</span> <span class="err">=</span> <span class="na">0</span> <span class="na">Then</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">Status =</span><span class="err"> </span><span class="s">"401 Access Denied"</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">End</span>
+    <span class="na">End</span> <span class="na">If</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>File Viewer<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;h2&gt;</span>File Viewer<span class="nt">&lt;/h2&gt;</span>
+
+  <span class="c">&lt;!-- show a form to allow users to specify a file --&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"&lt;%=Request.ServerVariables("</span><span class="na">URL</span><span class="err">")%</span><span class="nt">&gt;</span>" method="POST"&gt;
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"FILE"</span> <span class="na">value=</span><span class="s">"&lt;%=Request.Form("</span><span class="na">FILE</span><span class="err">")%</span><span class="nt">&gt;</span>"&gt;
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"View File"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+
+  <span class="nt">&lt;pre&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="err">'</span> <span class="na">was</span> <span class="na">it</span> <span class="na">a</span> <span class="na">POST</span> <span class="na">request</span><span class="err">?</span>
+    <span class="na">If</span> <span class="na">UCase</span><span class="err">(</span><span class="na">Request</span><span class="err">.</span><span class="na">ServerVariables</span><span class="err">("</span><span class="na">HTTP_METHOD</span><span class="err">"))</span> <span class="err">=</span> <span class="err">"</span><span class="na">POST</span><span class="err">"</span> <span class="na">Then</span>
+
+      <span class="err">'</span> <span class="na">create</span> <span class="na">object</span> <span class="na">for</span> <span class="na">file</span> <span class="na">I</span><span class="err">/</span><span class="na">O</span>
+      <span class="na">Set</span> <span class="na">objFSO =</span><span class="err"> </span><span class="s">Server.CreateObject("Scripting.FileSystemObject")</span>
+      <span class="err">'</span> <span class="na">open</span> <span class="na">the</span> <span class="na">specified</span> <span class="na">file</span>
+      <span class="na">Set</span> <span class="na">objFILE =</span><span class="err"> </span><span class="s">objFSO.OpenTextFile(Request.Form("FILE"))</span>
+      
+      <span class="err">'</span> <span class="na">output</span> <span class="na">message</span> <span class="na">if</span> <span class="na">an</span> <span class="na">error</span> <span class="na">has</span> <span class="na">occured</span>
+      <span class="na">If</span> <span class="na">Err</span><span class="err">.</span><span class="na">Number</span> <span class="err">&lt;</span><span class="nt">&gt;</span> 0 Then
+
+        Response.Write "Error trying open the file """ <span class="err">&amp;</span> _
+            Request.Form("FILE") <span class="err">&amp;</span> """" <span class="err">&amp;</span> vbCrLf <span class="err">&amp;</span> _
+            "Error Number = " <span class="err">&amp;</span> Err.Number <span class="err">&amp;</span> vbCrLf <span class="err">&amp;</span> _
+            "Error Description = " <span class="err">&amp;</span> Err.Description <span class="err">&amp;</span> vbCrLf
+
+      ' otherwise show the file
+      Else
+
+        ' show the page start
+        Response.Write "----- START OF PAGE -----" <span class="err">&amp;</span> vbCrLf
+      
+        ' loop through the page contents
+        While Not objFILE.AtEndOfStream
+          Response.Write Server.HTMLEncode(objFILE.ReadLine) <span class="err">&amp;</span> vbCrLf
+        Wend
+
+        ' show the page end
+        Response.Write "----- END OF PAGE -----" <span class="err">&amp;</span> vbCrLf
+
+        ' close the specified file
+        objFILE.Close
+        ' discard the file I/O object
+        Set objFSO = Nothing
+
+      End If
+
+    End If
+  %&gt;
+  <span class="nt">&lt;/pre&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+3. Save the page as "Viewer.asp"in the root folder of your Web site.
+
+4. Browse to the page through HTTP, and then enter the path of the directory
+  that you want to view. The folder's contents should display.
+
+REFERENCES
+----------
+
+For additional information on this topic, click the article numbers below to view
+the articles in the Microsoft Knowledge Base:
+
+  Q218606 HOWTO: ASP and Scripting FileSystemObject to Create Dynamic TOC
+
+  Q224364 Creating a Directory Browsing Page Using ASP
+
+  Q201133 Scripting Change Occurs When Upgrading from IIS 3.0
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbIIS 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

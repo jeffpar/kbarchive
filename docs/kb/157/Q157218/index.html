@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157218: Possible Data Corruption w/ SNA Windows 95 Client Using TCP/IP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157218: Possible Data Corruption w/ SNA Windows 95 Client Using TCP/IP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157218/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157218/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157218/","publisher":null,"image":null,"headline":"Q157218: Possible Data Corruption w/ SNA Windows 95 Client Using TCP/IP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157218-possible-data-corruption-w-sna-windows-95-client-using-tcpip">Q157218: Possible Data Corruption w/ SNA Windows 95 Client Using TCP/IP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157218
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kb3rdparty kbprogramming
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you transfer a large amount of data using the Microsoft SNA Server Windows
+95 client configured to use TCP/IP sockets to communicate with the server, some
+data bytes (15-20 bytes) may be corrupt when passed to the Win32 application. No
+APPC or CPIC errors will occur, though some data bytes received by the
+application may be corrupt.
+
+This problem has been observed in the following configuration:
+
+- SNA Server Windows 95 client software (from 2.11.sp1) configured to use
+  TCP/IP sockets.
+
+- Using a 32-bit Windows application that reads or receives large messages and
+  simultaneously sends data.
+
+Applications that have encountered data corruption include:
+
+- IBM Client Access/95, after retrieving a PTF download from the AS/400, which
+  is unable to run due to random DLL errors when starting.
+
+- Win32 APPC/CPIC database applications that receive large data messages. Part
+  of the received data may be corrupt (or include "garbage" characters).
+
+CAUSE
+=====
+
+The SNA Server Windows 95 TCP/IP client transport was not properly receiving
+large TCP/IP data messages for a Win32 application, when the same application
+was simultaneously trying to send data. In one case, data corruption occurred.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft SNA Server Windows
+95 client included in SNA Server 2.11 Service Pack 1. This problem was corrected
+in the latest Microsoft SNA Server 2.11 U.S. Service Pack. For information on
+obtaining the service pack, query on the following word in the Microsoft
+Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words: sp1 prodsna
+
+======================================================================
+Keywords          : kb3rdparty kbprogramming 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ211SP1
+Version           : WINDOWS:2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

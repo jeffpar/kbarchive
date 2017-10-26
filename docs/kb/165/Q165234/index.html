@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165234: PRB: CREATEOFFLINE Opens Parent Table Exclusively | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165234: PRB: CREATEOFFLINE Opens Parent Table Exclusively" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165234/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165234/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165234/","publisher":null,"image":null,"headline":"Q165234: PRB: CREATEOFFLINE Opens Parent Table Exclusively","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165234-prb-createoffline-opens-parent-table-exclusively">Q165234: PRB: CREATEOFFLINE Opens Parent Table Exclusively</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165234
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp500 kbvfp500a kbvfp600
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CREATEOFFLINE command opens the parent table exclusively regardless of the
+exclusive setting.
+
+RESOLUTION
+==========
+
+If the parent table is not currently open, open the parent table shared before
+issuing the CREATEOFFLINE command.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+In a multiuser environment where more than one work station is accessing tables,
+CREATEOFFLINE will open a table exclusively regardless of the setting of
+exclusive, and other users will not be able to open that table. They will get
+the message [ASCII 147]File Access is denied.[ASCII 148]
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code to create a new subdirectory with a new database that
+  contains a view of the customer table.
+
+        SET DEFAULT TO HOME()
+        OPEN DATABASE HOME()+"\samples\data\testdata"
+        MKDIR offview
+        SET DEFAULT TO HOME()+"offview"
+        CREATE DATABASE OFFDBC
+        CREATE SQL VIEW mycustomer AS SELECT * ;
+           FROM HOME()+"\samples\data\customer"
+
+2. Run the following code to make the view off line.
+
+        CLOSE ALL
+        CLEAR
+        SET EXCLUSIVE OFF
+        SET MULTILOCKS ON
+        OPEN DATABASE Home()+"\samples\data\testdata"
+        SET DEFAULT TO HOME()+"offview"
+        OPEN DATABASE offdbc
+        ?CREATEOFFLINE("mycustomer")
+        SET
+
+3. In the Data Session window, select customer. Notice that the status bar shows
+  that customer is opened exclusively.
+
+4. Run the following code to put mycustomer back online.
+
+        CLOSE ALL
+        CLEAR
+        SET EXCLUSIVE OFF
+        SET MULTILOCKS ON
+        SET DEFAULT TO HOME()+"offview"
+        OPEN DATABASE offdbc
+        IF DBGETPROP("mycustomer","view","offline")
+           ?DROPOFFLINE("mycustomer")
+        ENDIF
+
+REFERENCES
+==========
+
+For more information about offline views, please see the following articles in
+the Microsoft Knowledge Base:
+
+  Q156013 Possible Uses for Offline Views in Visual FoxPro
+
+  Q155528 How To Set Up an Offline View in Visual FoxPro 5.0
+
+  Q155820 HOWTO: Refreshing an Offline View in Visual FoxPro 5.0
+
+  Q156552 How To Use Offline Views in Visual FoxPro
+
+Additional query words: create ofline off view multi-user
+
+======================================================================
+Keywords          : kbvfp kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

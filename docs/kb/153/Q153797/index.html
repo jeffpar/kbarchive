@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153797: FIX: Memory Leak with ODBC Driver Manager During Connect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153797: FIX: Memory Leak with ODBC Driver Manager During Connect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153797/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153797/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153797/","publisher":null,"image":null,"headline":"Q153797: FIX: Memory Leak with ODBC Driver Manager During Connect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153797-fix-memory-leak-with-odbc-driver-manager-during-connect">Q153797: FIX: Memory Leak with ODBC Driver Manager During Connect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153797
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 2.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When an ODBC application makes a certain sequence of calls to connect to an ODBC
+driver, a memory loss on the order of a few hundred bytes may occur due to a
+memory leak in the Driver Manager. The sequence that results in the memory leak
+is as follows:
+
+     SQLAllocEnv&lt;BR/&gt;
+     SQLAllocConnect&lt;BR/&gt;
+     SQLConnect or SQLDriverConnect&lt;BR/&gt;
+     SQLDisconnect&lt;BR/&gt;
+     SQLFreeConnect&lt;BR/&gt;
+     SQLFreeEnv
+
+This leak affects only those applications that connect and disconnect frequently
+without ever exiting the application. For SQL Server replication users, this
+problem is encountered when a distribution server connects to subscription
+servers as an ODBC client.
+
+WORKAROUND
+==========
+
+An application can share connections. If an application needs to connect and
+disconnect frequently, you can shut down the application periodically. For
+example, if an application is running as a Windows NT service, you can
+periodically shut down and restart the service in order to clean up the memory
+leak.
+
+
+Under Windows NT and Windows 95, each application has its own memory address
+space. After the application is shut down, Windows NT and Windows 95 will clean
+up the application's memory space, including the memory leak.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Open Database
+Connectivity version 2.5.x. This problem has been corrected in Microsoft Open
+Database Connectivity version 3.0.x.
+
+Additional query words: 2.50 ODBC DM VC++ VB C++ MSVC FoxPro
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC250
+Version           : WINDOWS:2.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

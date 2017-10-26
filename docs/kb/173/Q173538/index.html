@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173538: SMS: NetBIOS Reset Causes Windows 95 Remote Control To Fail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173538: SMS: NetBIOS Reset Causes Windows 95 Remote Control To Fail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173538/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173538/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173538/","publisher":null,"image":null,"headline":"Q173538: SMS: NetBIOS Reset Causes Windows 95 Remote Control To Fail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173538-sms-netbios-reset-causes-windows-95-remote-control-to-fail">Q173538: SMS: NetBIOS Reset Causes Windows 95 Remote Control To Fail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173538
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2
+Operating System(s): 
+Keyword(s): kbtshoot smsremtshoot kbRemoteProg
+Last Modified: 22-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+After establishing a remote control session with a Windows 95 client using NetBT
+(NetBIOS encapsulated in TCP/IP), the remote control session may terminate
+unexpectedly when an application is opened or closed.
+
+After the remote control session terminates, the Windows 95 client may lock up
+and receive a general protection (GP) fault. If the client stops responding
+(locks up), it may be necessary to turn off the system to restore
+functionality.
+
+Applications known to cause this problem:
+
+- Microsoft Exchange Client version 4.0
+
+- Microsoft ActiveMovie 3.0 (add-on for Microsoft Internet Explorer)
+
+- Other custom applications that display embedded AVI animation as a normal
+  part of the application's execution
+
+CAUSE
+=====
+
+This problem is caused by an abnormal reset of the NetBIOS session by the
+NetBIOS interface on the Windows 95 client.
+
+
+WORKAROUND
+==========
+
+To avoid the problem, you can perform remote control over IP sockets instead of
+NetBT. This will allow the remote control session to function normally.
+
+To test IP sockets with a single Windows 95 client, do the following:
+
+1. Ensure that the Remote Control Agent is not running.
+
+2. Open the Sms.ini file located in the root of drive C.
+
+3. Change the Default Protocol statement located in the [Sight] section from
+  "NetBIOS" to "IP".
+
+4. Save the Sms.ini file and start the Remote Control Agent.
+
+A remote control session with this client will now occur over IP sockets.
+
+NOTE: If the client in the preceding section runs the Systems Management Server
+logon script (Smsls.bat) or the Runsms.bat file, the setting in the Sms.ini file
+will revert to NetBIOS.
+
+To make all clients in this domain use IP sockets (except for Windows NT, they do
+this by default), you must make a registry change at the site server.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+To make the registry change, use the following steps:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Go to the following key in the registry:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Sites\&lt;Sitecode&gt;
+\Domains\&lt;Domain&gt;
+
+3. Set the "Default RC Protocol" (REG_SZ) value to "IP".
+
+This forces all Windows 3.1, Windows for Workgroups, and Windows 95 clients that
+appear in this domain, to use IP sockets as the default remote control protocol.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms GPF
+
+======================================================================
+Keywords          : kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

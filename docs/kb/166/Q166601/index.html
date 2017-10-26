@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166601: XADM: Folder(s) Missing After Using Move Mailbox Command | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166601: XADM: Folder(s) Missing After Using Move Mailbox Command" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166601/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166601/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166601/","publisher":null,"image":null,"headline":"Q166601: XADM: Folder(s) Missing After Using Move Mailbox Command","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166601-xadm-folders-missing-after-using-move-mailbox-command">Q166601: XADM: Folder(s) Missing After Using Move Mailbox Command</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166601
+Product(s): Microsoft Exchange
+Version(s): 4.0 5.0
+Operating System(s): 
+Keyword(s): kbusage kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Move Mailbox command in the Microsoft Exchange Administrator program is used
+to move a mailbox from one server in a Microsoft Exchange Server site to another
+server in the same site. After using this command, the user may log on to the
+mailbox on the new server and find one or more folders and their contents
+missing.
+
+MORE INFORMATION
+================
+
+Each Microsoft Exchange mailbox contains the following default system folders:
+Inbox, Outbox, Sent Items, and Deleted Items. The problem mentioned in the
+Symptoms section will occur if one of these default system folders has been
+renamed and a new folder created with that default name. After moving the
+mailbox, the renamed folder and its contents will not appear in the mailbox.
+
+For example, the problem will occur if the server-based system folder "Inbox" is
+renamed "My Inbox" and a new folder called "Inbox" is created. "My Inbox" will
+remain a system folder and all new mail will be delivered to it.
+
+After using the Move Mailbox command, the default system folder will be renamed
+"Inbox" and will contain the mail from the non-system "Inbox" folder. The "My
+Inbox" folder and its contents will not be in the mailbox.
+
+This only occurs when the server-based folder is renamed and another folder
+exists with the default name of the server-based folder. For example, if "Inbox"
+is renamed "My Inbox" and there is no other folder named "Inbox," the contents
+of "My Inbox" will exist on the new server in the "Inbox" folder after the Move
+Mailbox Command has been executed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem was corrected in the latest Microsoft Exchange Server
+5.0 U.S. Service Pack. For information on obtaining the service pack, query on
+the following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+4.0. We are researching the problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+WORKAROUND
+==========
+
+To avoid this problem, rename the non-system folder and then rename the system
+folder to its original name before using the Move Mailbox Command.
+
+If you have already used the Move Mailbox Command, the folder and its contents
+will need to be recovered from the last full backup. For additional information
+about recovering a single mailbox, please see the following article(s) in the
+Microsoft Knowledge Base:
+
+  Q163713 INF: XADM: Recovering a Single Mailbox from the Online Backup
+
+After the single folder has been restored to a PST, it can be manually moved back
+up to the server.
+
+======================================================================
+Keywords          : kbusage kbBug kbISS 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : 4.0 5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

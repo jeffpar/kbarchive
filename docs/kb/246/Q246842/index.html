@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246842: SMS: Access Violation in Remote.exe When Encryption Disabled | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246842: SMS: Access Violation in Remote.exe When Encryption Disabled" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246842/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246842/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246842/","publisher":null,"image":null,"headline":"Q246842: SMS: Access Violation in Remote.exe When Encryption Disabled","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246842-sms-access-violation-in-remoteexe-when-encryption-disabled">Q246842: SMS: Access Violation in Remote.exe When Encryption Disabled</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246842
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbsms200fix kbHelpDesk kbsms200preSP3fix kbsms200SP3fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On Microsoft Windows NT-based clients that are configured with French regional
+settings (by using the Regional Settings tool in Control Panel), the Remote
+Control tool may stop working with an access violation in Remote.exe or
+Ldwmnt.dll after a few minutes.
+
+CAUSE
+=====
+
+This behavior is caused by improper negotiation of the encryption state. The
+state can be either Active or Inactive. The configuration of the regional
+settings determines the encryption level.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of the post Service Pack 1 fix should have the following file
+attributes or later:
+
+  
+  Date       Time   Version       Size       File name    Platform
+  ----------------------------------------------------------------
+  03/03/2000 8:27p 2.00.1380.1132 1,292,991  Remctrl.exe  Intel
+  03/03/2000 8:25p 2.00.1380.1132   567,280  Ldwmnt.dll   Intel
+  04/02/2000 9:22p                       67  Compver.ini  
+  03/03/2000 8:30p 2.00.1380.1132 1,657,666  Remctrl.exe  Alpha
+  03/03/2000 8:25p 2.00.1380.1132   850,704  Ldwmnt.dll   Alpha
+
+
+
+The English version of the post SP2 fix should have the following file attributes
+or later:
+
+  Date       Time   Version       Size       File name          Platform
+  -----------------------------------------------------------------------
+  06/10/2000 5:40a 2.0.92.01      1,346,654  Remctrl.exe        Intel
+  06/10/2000 5:40a 2.00.1493.2121   567,280  Ldwmnt.dll         Intel
+  06/10/2000 5:40a 2.00.1493.2121   300,576  Wuser32.exe        Intel
+  06/10/2000 5:40a                       67  CompverRemCtrl.ini  
+  06/10/2000 5:40a 2.0.92.01      1,685,097  Remctrl.exe        Alpha
+  06/10/2000 5:40a 2.00.1493.2121   850,704  Ldwmnt.dll         Alpha
+  06/10/2000 5:40a 2.00.1493.2121   424,720  Wuser32.exe        Alpha
+
+The French version of the post SP2 fix should have the following file attributes
+or later:
+
+   Date      Time   Version       Size       File name         Platform
+  --------------------------------------------------------------------
+  07/30/2000 5:40a 2.0.92.01      1,350,105  Remctrl.exe        Intel
+  07/30/2000 5:40a 2.00.1493.2121   575,984  Ldwmnt.dll         Intel
+  06/10/2000 5:40a 2.00.1493.2121   300,576  Wuser32.exe        Intel
+  06/10/2000 5:40a                       67  CompverRemCtrl.ini  
+  07/30/2000 5:40a 2.0.92.01      1,688,702  Remctrl.exe        Alpha
+  07/30/2000 5:40a 2.00.1493.2121   858,896  Ldwmnt.dll         Alpha
+  06/10/2000 5:40a 2.00.1493.2121   424,720  Wuser32.exe        Alpha
+
+The International Client Pack 1 (ICP1) version of the post SP2 fix should have
+the following file attributes or later:
+
+  Date       Time   Version       Size       File name        Platform
+  ----------------------------------------------------------------
+  07/29/2000 5:40a 2.0.92.01      1,710,884  Remctrl.exe       Intel
+  07/29/2000 5:40a 2.00.1493.2121   567,280  Ldwmnt.dll        Intel
+  06/10/2000 5:40a 2.00.1493.2121   301,056  Wuser32.exe       Intel
+  06/10/2000 5:40a                       67  CompverRemCtrl.ini  
+  07/29/2000 5:40a 2.0.92.01      2,595,906  Remctrl.exe       Alpha
+  07/29/2000 5:40a 2.00.1493.2121   850,704  Ldwmnt.dll        Alpha
+  06/10/2000 5:40a 2.00.1493.2121   424,720  Wuser32.exe       Alpha
+
+NOTE: Due to file dependencies, the most recent hotfix or feature that contains
+the above files may also contain additional files.
+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 3.
+
+
+Additional query words: prodsms remctrl exe idwmnt dll wuser32 compverremctrl ini
+
+======================================================================
+Keywords          : kbsms200fix kbHelpDesk kbsms200preSP3fix kbsms200SP3fix 
+Technology        : kbSMSSearch kbSMS200SP1 kbSMS200SP2
+Version           : :2.0 SP1,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

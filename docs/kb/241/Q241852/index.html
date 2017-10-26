@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241852: PRB: ERR C2535 When Compiling ATL Project with VC++ 6.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241852: PRB: ERR C2535 When Compiling ATL Project with VC++ 6.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241852/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241852/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241852/","publisher":null,"image":null,"headline":"Q241852: PRB: ERR C2535 When Compiling ATL Project with VC++ 6.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241852-prb-err-c2535-when-compiling-atl-project-with-vc-60">Q241852: PRB: ERR C2535 When Compiling ATL Project with VC++ 6.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241852
+Product(s): Microsoft C Compiler
+Version(s): 3.0,6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbVC600 kbATL300 kbDSupport kbGrpDSMFCATL
+Last Modified: 13-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may get compiler error C2535 on a class developed in Active Template Library
+(ATL) when compiled in ATL version 3.0. In previous versions of ATL, a compiler
+error was not generated for the same class. For example, if your class looks
+like the following, you will get the error with Visual C++ version 6.0.
+
+  //CCOMTest
+  class CCOMTest : public CComObjectRootEx&lt;CComMultiThreadModel&gt;
+  {
+  public:
+      // Constructor, Destructor
+      CCOMTest() {};
+      ~CCOMTest() {};
+      
+      // Interface Map
+      BEGIN_COM_MAP(CCOMTest)
+      END_COM_MAP()
+
+      DECLARE_NO_REGISTRY()
+          
+      // IUnknown methods
+      STDMETHODIMP QueryInterface(REFIID piid, void **ppv);
+      STDMETHODIMP_(ULONG) AddRef(void);
+      STDMETHODIMP_(ULONG) Release(void);
+
+   private:
+      LONG   mlRef;         //Reference count
+  };
+
+CAUSE
+=====
+
+The implementation of END_COM_MAP between Visual C++ version 5.0 and Visual C++
+version 6.0 has changed. In Visual C++ 5.0, END_COM_MAP was defined as the
+following:
+
+  #ifdef _ATL_DEBUG_QI
+  #define END_COM_MAP()   {NULL, 0, 0}};	return &amp;_entries[1];}
+  #else
+  #define END_COM_MAP()   {NULL, 0, 0}};	return _entries;}
+  #endif // _ATL_DEBUG_QI
+
+In Visual C++ 6.0, it is defined as this:
+
+  #define END_COM_MAP() {NULL, 0, 0}}; 
+  return _entries;} 	
+  virtual ULONG STDMETHODCALLTYPE AddRef( void) = 0; 	
+  virtual ULONG STDMETHODCALLTYPE Release( void) = 0; 	
+  STDMETHOD(QueryInterface)(REFIID, void**) = 0;
+  #endif // _ATL_DEBUG
+
+RESOLUTION
+==========
+
+In Visual C++ version 6.0, you can comment out the IUnknown methods that were
+implemented or add something like the following code sample:
+
+  #ifdef _ATL_DEBUG
+  #define END_MY_COM_MAP() {NULL, 0, 0}}; return &amp;_entries[1];} 
+  #else
+  #define END_MY_COM_MAP() {NULL, 0, 0}}; return _entries;} 
+  #endif // _ATL_DEBUG
+
+  // CCOMTest
+  class CCOMTest: public CComObjectRootEx&lt;CComMultiThreadModel&gt;
+  {
+  public:
+
+      // Constructor, Destructor
+      CCOMTest() {};
+      ~CCOMTest() {};
+
+      // Interface Map
+      BEGIN_COM_MAP(CCOMTest)
+      END_MY_COM_MAP()
+
+      DECLARE_NO_REGISTRY()
+          
+      // IUnknown methods
+      STDMETHODIMP QueryInterface(REFIID piid, void **ppv);
+      STDMETHODIMP_(ULONG) AddRef(void);
+      STDMETHODIMP_(ULONG) Release(void);
+
+  private:
+      LONG   mlRef;     //Reference count
+  };
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: C4661
+
+======================================================================
+Keywords          : kbCOMt kbVC600 kbATL300 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbVCNET
+Version           : :3.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288970: SMS: RM Can’t Process Transactions if Trans. ID Isn’t in Sync | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288970: SMS: RM Can’t Process Transactions if Trans. ID Isn’t in Sync" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288970/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288970/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288970/","publisher":null,"image":null,"headline":"Q288970: SMS: RM Can’t Process Transactions if Trans. ID Isn’t in Sync","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288970-sms-rm-cant-process-transactions-if-trans-id-isnt-in-sync">Q288970: SMS: RM Can’t Process Transactions if Trans. ID Isn’t in Sync</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288970
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbServer kbsms200 kbReplMgr
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+After you restore a site, the site control file and the status summarizers of
+Componentstatus, System_status, Offerstatus and PKGstatus are not propagated to
+the parent and child sites. Even if the Transaction ID is not synchronized,
+Replmgr.log on the restored site does not log any error messages.
+
+CAUSE
+=====
+
+This behavior occurs because every site server sends transaction-based files in
+both directions to the parent and child sites in the hierarchy. If the
+recovering site's Transaction ID is of a lower number than any .trs files on the
+parent or child sites, the files are not processed.
+
+WORKAROUND
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To work around this behavior, use the following steps in which the following
+three sample sitecodes are used:
+
+  M01 = central site
+  M02 = primary child site
+  M03 = secondary site under M02
+
+1. If the Replication Manager Transaction ID was recorded at the time of failure
+  on the restored site, multiply the number of days for which the site was down
+  by 1000, and then add this number to the current value of the Transaction ID.
+
+  a. Stop SMS_Executive and SMS_Site_Component_Manager.
+
+  b. Update this value on the recovered site (M02) server in the following
+     registry key:
+
+  HKLM\Software\Microsoft\SMS\Components\SMS_Replication_Manager\Transaction ID
+
+  c. Start SMS_Executive and SMS_Site_Component_Manager.
+
+2. If the Replication Manager Transaction ID was not recorded prior to the site
+  restoration, open the M02.trs file in the SMS\Inboxes\Replmgr.box\history
+  folder on the restored site's parent (M01) and all child sites (M03) of M02.
+
+  a. SMS\Inboxes\Replmgr.box\history on M01 site includes the file, M02.trs.
+
+  b. SMS\Inboxes\Replmgr.box\history on M02 site includes the files, M01.trs
+     and M03.trs.
+
+  c. SMS\Inboxes\Replmgr.box\history on M03 site includes the files, M01.trs
+     and M02.trs.
+
+  d. To determine the highest Transaction ID that was received from the
+     restored Primary site (M02), open the
+     \SMS\Inboxes\Replmgr.box\history\M02.trs file on the parent site (M01):
+
+  SMS_COMPONENT_STATUS_SUMMARIZER]
+  M02=7382
+  [SITECTRLCT2SRCSITE]
+  M03=7280
+  M02=7279
+  [SMS_SITE_SYSTEM_STATUS_SUMMARIZER]
+  M02=7378
+  [PKGSTATUSDATA]
+  M0100001|M02|NT4_RK|1=16
+  M0100001|M03|SMSSEC|1=17
+  M0100001|M03|["DISPLAY=\\SMSSEC\"]MSWNET:["SMS_SITE=M03"]\\SMSSEC\|2=18
+  M0100001|M02|["DISPLAY=\\NT4_RK\"]MSWNET:["SMS_SITE=M02"]\\NT4_RK\|2=18
+  M0100002|M02|["DISPLAY=\\NT4_RK\"]MSWNET:["SMS_SITE=M02"]\\NT4_RK\|2=1874
+  M0100002|M03|SMSSEC|1=1874
+  M0100002|M03|["DISPLAY=\\SMSSEC\"]MSWNET:["SMS_SITE=M03"]\\SMSSEC\|2=1874
+  M0100002|M02|NT4_RK|1=1874
+  M0100004|M03|SMSSEC|1=3350
+  M0100004|M02|NT4_RK|1=3350
+  M0100004|M02|["DISPLAY=\\NT4_RK\"]MSWNET:["SMS_SITE=M02"]\\NT4_RK\|2=3351
+  M0100004|M03|["DISPLAY=\\SMSSEC\"]MSWNET:["SMS_SITE=M03"]\\SMSSEC\|2=3351
+  M0100005|M02|NT4_RK|1=6865
+  M0100005|M02|["DISPLAY=\\NT4_RK\"]MSWNET:["SMS_SITE=M02"]\\NT4_RK\|2=6865
+  M0100005|M03|["DISPLAY=\\SMSSEC\"]MSWNET:["SMS_SITE=M03"]\\SMSSEC\|2=6866
+  M0100005|M03|SMSSEC|1=6866
+  [SMS_OFFER_STATUS_SUMMARIZER]
+  M02=6927
+  [PKGSRVREPLDATA]
+  M0100001=18
+  M0100002=1876
+  M0100004=3351
+  M0100005=6866
+
+  e. Look for the highest number, which in this case is 7382.
+
+  f. Add 20 to this number.
+
+  g. Stop SMS_Executive and SMS_Site_component_Manager.
+
+  h. Update this value on the recovered site (M02) server in the following
+     registry key:
+
+  HKLM\Software\Microsoft\SMS\Components\SMS_Replication_Manager\Transaction ID
+
+  i. Start SMS_Executive and SMS_Site_Component_Manager.
+
+MORE INFORMATION
+================
+
+Replication Manager is a thread component that handles both incoming and
+outgoing inter-site replication. Replication Manager packages the objects into
+replication files and hands them off to Scheduler as mini-jobs to be sent to the
+appropriate locations by a sender. Replication Manager also analyzes incoming
+files, and if appropriate, replicates the objects to appropriate directories on
+the server.
+
+Additional query words: prodsms recovery transaction id
+
+======================================================================
+Keywords          : kbServer kbsms200 kbReplMgr 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

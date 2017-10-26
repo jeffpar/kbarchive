@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191549: MIME Parts and Message Source for a Digitally Signed Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191549: MIME Parts and Message Source for a Digitally Signed Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191549/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191549/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191549/","publisher":null,"image":null,"headline":"Q191549: MIME Parts and Message Source for a Digitally Signed Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191549-mime-parts-and-message-source-for-a-digitally-signed-message">Q191549: MIME Parts and Message Source for a Digitally Signed Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191549
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following example describes what the MIME parts and message source will look
+like for a signed message.
+
+  X-Mailer: Microsoft Outlook Express 4.71.0729.0
+
+  From: "Ryan LaBrie" &lt;ryanl@microsoft.com&gt;
+
+  To: "steven@somecompany.com" &lt;steven@somecompany.com&gt;
+
+  Subject: signed message
+
+  Date: Wed, 30 Apr 1997 20:37:03 -0700
+
+  X-Priority: 3
+
+  X-MSMail-Priority: Normal
+
+  MIME-Version: 1.0
+
+  Content-Type: multipart/signed;
+
+  boundary="----=_NextPart_000_01BC55A9.8FA8A740";
+
+  micalg=sha1;
+
+  protocol=application/x-pkcs7-signature
+
+  X-MimeOLE: Produced By Microsoft MimeOLE Engine V4.71.0728.0
+
+  NOTE - This is a multi-part message in MIME format.
+
+  ------=_NextPart_000_01BC55A9.8FA8A740
+
+  Content-Type: multipart/alternative;
+
+  boundary="----=_NextPart_001_01BC55A9.8FAA2DE0"
+
+  ------=_NextPart_001_01BC55A9.8FAA2DE0
+
+  Content-Type: text/plain;
+
+  charset="iso-8859-1"
+
+  Content-Transfer-Encoding: quoted-printable
+
+  NOTE - This is a clear signed message.
+
+  ------=_NextPart_001_01BC55A9.8FAA2DE0
+
+  Content-Type: text/html;
+
+  charset="iso-8859-1"
+
+  Content-Transfer-Encoding: quoted-printable
+
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML 3.2//EN"&gt;&lt;HTML&gt;
+
+  &lt;HEAD&gt;
+
+  &lt;META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+
+  charset=3DUS-ASCII"&gt;
+
+  &lt;META content=3D'"Trident 4.71.0729.0"' name=3DGENERATOR&gt;
+
+  &lt;/HEAD&gt;
+
+  &lt;BODY&gt;
+
+  &lt;P&gt;&lt;FONT SIZE=3D2 FACE=3D"Arial"&gt;This is a clear signed message =
+
+  hopefully...&lt;/FONT&gt;&lt;/P&gt;
+
+  &lt;/BODY&gt;
+
+  &lt;/HTML&gt;
+
+  ------=_NextPart_001_01BC55A9.8FAA2DE0--
+
+  ------=_NextPart_000_01BC55A9.8FA8A740
+
+  Content-Type: application/x-pkcs7-signature;
+
+  name="smime.p7s"
+
+  Content-Transfer-Encoding: base64
+
+  Content-Disposition: attachment;
+
+  filename="smime.p7s"
+
+  MIIGTAYJKoZIhvcNAQcCoIIGPTCCBjkCAQExCzAJBgUrDgMCGgUAMAsGCSqGSIb3DQEHAaCC
+  BTsw
+
+  ggU3MIIEoKADAgECAhBO9j8bsMhfLRsKSiktdU5hMA0GCSqGSIb3DQEBBAUAMGIxETAPBgNV
+  BAcT
+
+  CEludGVybmV0MRcwFQYDVQQKEw5WZXJpU2lnbiwgSW5jLjE0MDIGA1UECxMrVmVyaVNpZ24g
+  Q2xh
+
+  c3MgMSBDQSAtIEluZGl2aWR1YWwgU3Vic2NyaWJlcjAeFw05NzAyMjAwMDAwMDBaFw05ODAy
+  MjAy
+
+  . (lots of content deleted)
+
+  ------=_NextPart_000_01BC55A9.8FA8A740--
+
+The last part of the message is the signed hash of the message and is sent using
+the content-transfer-encoding type of Base64 which will allow the transmission
+of 8-bit data encoded in a 7-bit format. Hence, it is quite unreadable. This
+part of the message is listed as an attachment with the filename smime.p7s. Mail
+clients that are not S/MIME aware will display this file as an attachment. If
+the message is received by an S/MIME aware client, there will not be a visible
+attachment. In addition, in the above message, the certificate was included and
+would be available for importing into the Windows Address Book.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

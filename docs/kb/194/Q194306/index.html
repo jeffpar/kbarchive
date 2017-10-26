@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194306: HOWTO: Make Word Print Duplex Using Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194306: HOWTO: Make Word Print Duplex Using Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194306/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194306/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194306/","publisher":null,"image":null,"headline":"Q194306: HOWTO: Make Word Print Duplex Using Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194306-howto-make-word-print-duplex-using-automation">Q194306: HOWTO: Make Word Print Duplex Using Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194306
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to use OLE automation from Visual FoxPro to
+Microsoft Word for Windows 97 to print a document duplex.
+
+MORE INFORMATION
+================
+
+Since the dialog box that sets duplex printing is part of the printer setup,
+there is not a direct command that you can issue that causes a document to print
+duplex. However, there are three ways that do work allowing you to print
+documents duplex.
+
+The printer used in this test is a Hewlett-Packard LaserJet printer, which
+supports duplex printing.
+
+Method 1
+--------
+
+Use the PRINT field in Word to send the printer escape code that puts the printer
+in duplex mode. The following code demonstrates this:
+
+     oWord=CREATEOBJECT("Word.Application")
+     WITH oWord
+        .Visible=.T.
+        .Documents.Add
+
+        .Activewindow.View.ShowFieldCodes=0   &amp;&amp; Don't view field codes.
+        * Insert PRINT field &amp; Hewlett-Packard escape code for duplex, long-
+        * edge binding.
+        * It is an ampersand, lower-case L, numeric 1, and upper-case S.
+        .Selection.Fields.Add(.Selection.Range,-1,"PRINT 27 &amp;l1S")
+        .Selection.Moveright
+
+        .Selection.Insertafter("Page 1")
+        .Selection.Moveright
+
+        odlog=oWord.Dialogs(159) &amp;&amp; Insert page break w/ Dialogs collection.
+        odlog.Execute
+
+        .Selection.Insertafter("Page 2")
+        .Selection.Moveright
+
+        .Printout(0)                   &amp;&amp; 0 turns off background printing.
+
+        .Application.Quit(0)           &amp;&amp; Quit, don't save &amp; don't prompt.
+     ENDWITH
+
+This code does not work if the Word document contains mixed orientation, that is
+portrait and landscape sections.
+
+NOTE: This code only works with the Service Release-1 (SR-1) for Word 97. Prior
+versions of Word 97 do not duplex print using this code.
+
+For the Word document to print correctly, it should not contain headers or
+footers on every page. However, it should print duplex if the document is setup
+to have a different first page header or footer only and the PRINT field is
+inserted on the first line of the header followed by a carriage return.
+
+Method 2
+--------
+
+Use the SendKeys command to send keystrokes to Word, which simulates using
+keystrokes to open the Print dialog box.
+
+     oWord=CREATEOBJECT("Word.Application")
+     WITH oWord
+        .Visible=.T.
+        .Documents.Add
+
+        * This code creates a two page document to print.
+        .Selection.Insertafter("Page 1 - With SendKeys")
+        .Selection.Moveright
+        odlog=oWord.Dialogs(159) &amp;&amp; Insert page break w/ Dialogs collection.
+        odlog.Execute
+        .Selection.Insertafter("Page 2 - With SendKeys")
+        .Selection.Moveright
+        * End of document creation.
+
+        .Application.Activate
+        .Wordbasic.Sendkeys("%fp%p%d{enter}{tab}{enter}", -1)
+        =INKEY(2)   &amp;&amp; May need to wait couple seconds before quitting.
+        .Application.Quit(0)           &amp;&amp; Quit, don't save &amp; don't prompt.
+     ENDWITH
+
+In the Sendkeys command, the % sign represents using the ALT key to access
+Windows menus. The INKEY() command allows Word to process the keystrokes before
+Visual FoxPro for Windows processes the Quit. This may need to be adjusted up,
+down, or removed depending on the application.
+
+To use Sendkeys, Word must be visible, not minimized, since the keystrokes must
+go to an active window. You can move Word off screen by using the AppMove
+command, so that Word does not show, but the dialog box still displays. Also,
+using Sendkeys can be disconcerting because the menus and dialog boxes open and
+process as if you were in Word and pressed the ALT+F keys to open the File
+menu.
+
+Method 3
+--------
+
+Create a Word macro that issues the Sendkeys. If the macro is named SendKey, then
+run the macro from Visual FoxPro using the following command:
+
+       oWord=CREATEOBJECT("Word.Application")
+         WITH oWord
+         .Visible=.T.
+         .Documents.Add
+         .Application.Activate
+         .Run("SendKey")
+         .Application.Quit(0)           &amp;&amp; Quit, don't save &amp; don't prompt.
+      ENDWITH
+
+The minimum code for the Word macro to send the keys for duplex printing
+follows:
+
+     Sub SendKey()
+        SendKeys "%fp%p%d{enter}{tab}{enter}"
+     End Sub
+
+NOTE: Please see the NOTE in Method 2 for problems you may encounter using
+SendKeys.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q69939 How to Use Percent, Caret, and Plus SendKeys in WinWord
+
+  Q135569 WD: PCL Escape Codes to Use with the PRINT Field
+
+
+For more information about obtaining Word for Windows 97 Service Release 1
+(SR-1), please see the following article in the Microsoft Knowledge Base:
+
+  Q172475 OFF97: How to Obtain and Install MS Office 97 SR-1
+
+
+Microsoft Word Visual Basic Help
+
+(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Dean
+Christopher, Microsoft Corporation.
+
+
+Additional query words: kbVFp600 kbole kbInterOp kbvfp500a
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

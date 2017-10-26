@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133256: HOWTO: How to Prevent Mainframe Window from Being ReSized | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133256: HOWTO: How to Prevent Mainframe Window from Being ReSized" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133256/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133256/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133256/","publisher":null,"image":null,"headline":"Q133256: HOWTO: How to Prevent Mainframe Window from Being ReSized","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133256-howto-how-to-prevent-mainframe-window-from-being-resized">Q133256: HOWTO: How to Prevent Mainframe Window from Being ReSized</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133256
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbMFC KbUIDesign kbVC kbWndw kbGrpDSMFCATL
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Adding the WS_THICKFRAME windows style allows a window to be re-sized. By
+removing this from the Mainframe window's styles, you can prevent this window
+from being resized. Further, the MINMAXINFO structure stores the maximum and
+minimum tracking size of a window. The WM_GETMINMAXINFO message is sent to a
+window when the size or position of that window is about to change. An
+application can over-ride the handler for this message to set a window's default
+minimum or maximum tracking size.
+
+MORE INFORMATION
+================
+
+You can prevent the Mainframe window of an AppWizard-generated SDI application
+from being resized by following these steps:
+
+1. Modify the IDR_MAINFRAME menu to add a top-level menu item (F&amp;reeze!)
+  with an ID of ID_FREEZE.
+
+2. Add a public Boolean data member (say, BOOL freezeState) to the CMainFrame
+  class to keep track of the current state of the application. Initialize
+  freezeState to FALSE in the constructor of the CMainFrame class.
+
+3. Provide a command handler for the 'Freeze' menu item as follows:
+
+     void CMainFrame::OnFreeze()
+     {
+        char* lpszFreeze = "F&amp;reeze!";
+        char* lpszUnFreeze = "&amp;UnFreeze!";
+        CMenu* pmenu = GetMenu();
+        if (!freezeState)
+        {
+
+            freezeState = TRUE;
+            pmenu-&gt;ModifyMenu(ID_FREEZE, MF_STRING, ID_FREEZE,
+                                                         lpszUnFreeze);
+            DWORD style = ::GetWindowLong(this-&gt;m_hWnd, GWL_STYLE);
+
+     // Remove the thick frame style and the Minimize, Maximize buttons
+          style &amp;= ~(WS_MAXIMIZEBOX|WS_MINIMIZEBOX|WS_THICKFRAME);
+          ::SetWindowLong(this-&gt;m_hWnd, GWL_STYLE, style);
+     }
+     else
+     {
+         freezeState = FALSE;
+         pmenu-&gt;ModifyMenu(ID_FREEZE, MF_STRING, ID_FREEZE,
+                                                        lpszFreeze);
+         DWORD style = ::GetWindowLong(this-&gt;m_hWnd, GWL_STYLE);
+
+     // Add the thick frame style and the Minimize, Maximize buttons
+        style |= (WS_MAXIMIZEBOX|WS_MINIMIZEBOX|WS_THICKFRAME);
+        ::SetWindowLong(this-&gt;m_hWnd, GWL_STYLE, style);
+        }
+        DrawMenuBar();
+     }
+
+4. Provide a handler for the WM_GETMINMAXINFO message as follows:
+
+     void CMainFrame::OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI)
+     {
+        if (freezeState)
+        {
+            RECT rc;
+
+            GetWindowRect(&amp;rc);
+            lpMMI-&gt;ptMaxSize.x = rc.right - rc.left;
+            lpMMI-&gt;ptMaxSize.y = rc.bottom - rc.top;
+            lpMMI-&gt;ptMaxPosition.x = rc.left;
+            lpMMI-&gt;ptMaxPosition.y = rc.top;
+            lpMMI-&gt;ptMinTrackSize.x = rc.right - rc.left;
+            lpMMI-&gt;ptMinTrackSize.y = rc.bottom - rc.top;
+            lpMMI-&gt;ptMaxTrackSize.x = rc.right - rc.left;
+            lpMMI-&gt;ptMaxTrackSize.y = rc.bottom - rc.top;
+        }
+
+        CFrameWnd::OnGetMinMaxInfo(lpMMI);
+     }
+
+5. If the mainframe is maximized, disable the Freeze menu option because there
+  is no point in making the window non-resizable because a maximized window
+  cannot be resized anyway:
+
+     void CMainFrame::OnSize(UINT nType, int cx, int cy)
+     {
+        CFrameWnd::OnSize(nType, cx, cy);
+        CMenu* pmenu = GetMenu();
+
+        if (nType == SIZE_MAXIMIZED)
+            pmenu-&gt;EnableMenuItem(ID_FREEZE, MF_DISABLED|MF_GRAYED);
+        else
+            pmenu-&gt;EnableMenuItem(ID_FREEZE, MF_ENABLED);
+
+        DrawMenuBar();
+     }
+
+NOTE: The steps to prevent the Mainframe window of an MDI application from being
+resized should be identical to the steps listed in this article. However,
+because there is more than one menu resource in an MDI application, you may want
+to design your application to add the 'Freeze' menu item to more than one menu
+resource.
+
+Additional query words: kbinf 1.50 2.00 2.10 2.20 2.50 2.51 2.52 3.00 3.0 3.10 3.1 3.20 3.2 4.00 4.10 4.20
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC kbWndw kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0,4.1,4.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

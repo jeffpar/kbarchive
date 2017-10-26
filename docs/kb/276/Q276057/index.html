@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q276057: XADM: Access Violation in Information Store | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q276057: XADM: Access Violation in Information Store" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/276/Q276057/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/276/Q276057/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/276/Q276057/","publisher":null,"image":null,"headline":"Q276057: XADM: Access Violation in Information Store","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q276057-xadm-access-violation-in-information-store">Q276057: XADM: Access Violation in Information Store</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q276057
+Product(s): Microsoft Exchange
+Version(s): 5.5 SP3
+Operating System(s): 
+Keyword(s): exc55sp3 kbExchange550preSP4fix kbExchange550preSP5fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Information Store service in Exchange Server version 5.5 may experience an
+access violation and stop responding (crash) with the following call stack:
+
+  
+
+  1180f87c 6fff1a40 bcd3d88c 6df2b4f0 00000000 KERNEL32!InterlockedCompareExchange+0xc
+  1180f89c 6fff13c4 01040588 6df2b4f8 00409444 EXCHMEM!MpHeapFree+0x50
+  1180f8a8 00409444 6df2b4f8 005d52ea 6df2b4f8 EXCHMEM!ExchMHeapFree+0x14 
+  1180f8b0 005d52ea 6df2b4f8 00000002 00000000 store!operator delete+0xd
+  1180f8c0 005c8fc3 00000002 00000000 00000002 store!ROWDATABUFFER__EcConfig+0xb9
+  1180f908 00528a89 5e289708 00000002 000004e4 store!EcGetMailboxTableOp+0x58 
+  1180f92c 77e11dc7 1180fd24 00000000 2cc6cd40 store!EcAdminGetMailboxTable20+0x39 
+  1180f95c 77e56205 00528a50 1180fb50 00000008 RPCRT4!Invoke+0x28
+  1180f978 77e561d6 00528a50 1180fb50 00000008 RPCRT4!NdrCallServerManager+0x15
+  1180fc3c 77e55f3e 00000000 00000000 1180ff28 RPCRT4!NdrStubCall+0x292
+  1180fc54 77e113a4 1180ff28 0015d778 1180ff28 RPCRT4!NdrServerCall+0x19
+  1180fc90 77e111be 0040e9cd 1180ff28 1180fdd8 RPCRT4!DispatchToStubInC+0x33
+  1180fce4 77e11403 1180ff28 00000000 1180fdd8 RPCRT4!RPC_INTERFACE__DispatchToStubWorker+0xb0
+  1180fd04 77e11903 1180ff28 00000000 1180fdd8 RPCRT4!RPC_INTERFACE__DispatchToStub+0x41
+  1180fddc 77e15af1 001392b8 1180fe10 1180ff28 RPCRT4!WMSG_SASSOCIATION__DealWithRequestMessage+0x182
+  1180ff90 77e15a1d 77e16125 00132d78 1180ffec RPCRT4!WMSG_ADDRESS__ReceiveLotsaCalls+0xd1
+  1180ff94 77e16125 00132d78 1180ffec 00000020 RPCRT4!RecvLotsaCallsWrapper+0x9
+  1180ffac 77e160bb 00152680 00000020 77f04ede RPCRT4!BaseCachedThreadRoutine+0x50
+  1180ffb8 77f04ede 001526a8 00000020 00000020 RPCRT4!ThreadStartRoutine+0x17
+  1180ffec 00000000 77e160a4 001526a8 00000000 KERNEL32!BaseThreadStart+0x51
+
+CAUSE
+=====
+
+This problem can occur if a variable is deleted twice. The second attempt
+results in the crash because the variable is no longer pointing to the valid
+data.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Exchange Server version 5.5 service pack that contains
+this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Information Store
+
++-------------------------+
+| File name | Version     | 
++-------------------------+
+| Store.exe | 5.5.2654.15 | 
++-------------------------+
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 kbExchange550preSP4fix kbExchange550preSP5fix 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : :5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

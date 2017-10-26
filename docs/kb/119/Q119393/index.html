@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119393: BUG: Invalid Extraction from istrstream Does Not Set failbit | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119393: BUG: Invalid Extraction from istrstream Does Not Set failbit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119393/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119393/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119393/","publisher":null,"image":null,"headline":"Q119393: BUG: Invalid Extraction from istrstream Does Not Set failbit","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119393-bug-invalid-extraction-from-istrstream-does-not-set-failbit">Q119393: BUG: Invalid Extraction from istrstream Does Not Set failbit</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119393
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbLangCPP kbVC kbVC100bug kbVC150bug kbVC151bug kbVC152bug kbVC200bug kbVC400bug kbVC41
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C/C++ for MS-DOS 
+- Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52, 2.0, 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you extract an integer of an invalid octal value from istrstream, 0 is
+extracted and the ios::failbit is not set. In addition, the ios::fail() function
+returns FALSE, incorrectly indicating that the istrstream is valid.
+
+
+RESOLUTION
+==========
+
+Use the manipulators (dec, hex, oct, binary, text) explicitly to set the correct
+conversion base for the characters represented by the stream.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+A scenario that produces an unexpected result, and which may also reflect this
+problem, involves using the string "08" to initialize the buffer used by the
+istrstream (or any string where the first character is 0 and one of the
+following characters is greater than 7).
+
+This string causes the istrstream extraction operator to load the int with 0
+instead of the expected value. This is because when 0 is the leading character
+in a number and it is not followed by an x or X, the number is treated as an
+octal number. Therefore, only the characters 0 through 7 after the leading 0 are
+valid.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+
+  #include &lt;strstrea.h&gt;
+
+  void main()
+  {
+     char buffer[10] = "08";
+     int i;
+     istrstream* str;
+
+     str = new istrstream( buffer, 10 );
+
+     // The following extraction is made with the expectation that
+     // the i will be set to 8. However, it will be set to 0.
+     *str &gt;&gt; i;
+
+     // To fix this, change the line to:
+     // *str &gt;&gt; dec &gt;&gt; i;
+
+     cout &lt;&lt; "i = " &lt;&lt; i &lt;&lt; endl;
+     cout &lt;&lt; "str-&gt;fail()=" &lt;&lt; str-&gt;fail() &lt;&lt; endl;
+     delete str;
+  }
+
+Additional query words: kbVC400bug 8.00 8.00c 9.00 9.10
+
+======================================================================
+Keywords          : kbLangCPP kbVC kbVC100bug kbVC150bug kbVC151bug kbVC152bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbZNotKeyword3 kbVC410 kbVC420 kbVC500 kbVC600 kbVC151 kbVC200 kbVC32bitSearch kbVC152 kbVC400 kbVCNET kbVC500Search
+Version           : :1.0,1.5,1.51,1.52,2.0,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

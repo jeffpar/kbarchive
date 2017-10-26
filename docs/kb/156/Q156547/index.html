@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156547: HOWTO: Manually Register a Custom OLE Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156547: HOWTO: Manually Register a Custom OLE Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156547/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156547/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156547/","publisher":null,"image":null,"headline":"Q156547: HOWTO: Manually Register a Custom OLE Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156547-howto-manually-register-a-custom-ole-server">Q156547: HOWTO: Manually Register a Custom OLE Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156547
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kb3rdparty kbinterop kbAutomation kbvfp500 kbvfp600
+Last Modified: 29-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can manually register an OLE server on a computer
+that has never had Visual FoxPro 5.0 installed.
+
+This article also assumes you already know how to create a custom OLE server. You
+can read Chapter 16 of the Visual FoxPro Developer's Guide, "Registering a
+Custom OLE Server," for more information.
+
+MORE INFORMATION
+================
+
+To register an .exe or a .dll custom OLE server, you need to have the following
+two files located in the \System directory for Windows 95 or the \System32
+directory for Windows NT on the computer you are installing on:
+
+For Visual FoxPro 5.0:
+
+  VFP500.DLL
+  VFP5ENU.DLL
+
+For Visual FoxPro 6.0:
+
+  Vfp6r.dll
+  Vfp6renu.dll
+
+If you do not have these files, you can obtain them from the computer on which
+you have Visual FoxPro installed.
+
+When you build a custom OLE server, the following three files are created:
+
+- The .dll or .exe file
+- A type library .tlb file (The .TLB file is optional and is not required to be
+  distributed)
+- A registry .vbr file
+
+Here is an example that shows you how to register an .exe file:
+
+When trying to register an .exe file, you must have the .exe and the .vbr files.
+The example below assumes you already have a custom OLE server built and named
+Oleserver.exe:
+
+- Oleserver.exe (This is the custom OLE server .exe file that you built from
+  your project.)
+- Oleserver.vbr (This file gets automatically created when you build your
+  custom OLE server.)
+
+Once you copy these two files into the target machine, from the directory that
+contains these two files, type the command below at the MS-DOS prompt.
+
+  
+
+  OLEServer /regserver
+
+Your .exe file should now be registered.
+
+Here is an example that shows you how to register a .dll file:
+
+When trying to register a .dll file you must have the .dll and .vbr files and
+have access to a third file, Regsvr32.exe. The example below assumes you already
+have a custom OLE server built and named Oleserver.dll:
+
+- OLEServer.DLL (This is the custom OLE server .dll file you built from your
+  project.)
+- OLEServer.VBR (This file gets automatically created when you build your
+  project.)
+- Regsvr32.exe (This file comes with Visual FoxPro 5.0 and a number of other
+  Microsoft applications.)
+
+Once you copy these two files (.dll and .vbr) into the target machine, from the
+directory that contains these two files, type the command below at the MS-DOS
+prompt
+
+  
+
+  REGSVR32 OLEServer.DLL
+
+You should get a message box that says "DllRegisterServer in OLEServer.dll
+succeeded." Your .dll file is now registered.
+
+If you do not have Regsvr32.exe in you target machine, you can obtain this file
+from the Visual FoxPro 5.0 directory. For Visual FoxPro, you can obtain
+Regsvr32.exe from the Distrib.src directory in the Visual FoxPro directory.
+
+NOTE: Manually registering these files is necessary only if you are not using the
+Visual FoxPro Setup Wizard to install your custom OLE server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbAutomation kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164586: INF: How to Use OLE DB Sample Text Provider in ADO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164586: INF: How to Use OLE DB Sample Text Provider in ADO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164586/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164586/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164586/","publisher":null,"image":null,"headline":"Q164586: INF: How to Use OLE DB Sample Text Provider in ADO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164586-inf-how-to-use-ole-db-sample-text-provider-in-ado">Q164586: INF: How to Use OLE DB Sample Text Provider in ADO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164586
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:1.1
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft OLE DB, version 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can use ADO to access the sample text OLE DB
+provider.
+
+MORE INFORMATION
+================
+
+The OLE DB SDK installs a sample text OLE DB provider that allows you to access
+text files. This sample text provider is located in the Samples\Sampprov
+directory. To use this sample text provider in ADO, you need to change the
+source code of the sample text provider, and you also need to change the ADO
+threading model. To do this, perform the following steps:
+
+1. Modify the SetProperties function in the CutilProp class. The source file
+  that contains this function is Utilprop.cpp. Change the last line of this
+  function to return DB_E_ERRORSOCCURRED instead of E_FAIL. The complete line
+  is:
+
+  return ResultFromScode( DB_E_ERRORSOCCURRED  );
+
+  ADO returns an error if the underline providers return E_FAIL when setting the
+  OLE DB properties. The sample text driver needs to return DB_E_ERRORSOCCURRED
+  instead of E_FAIL if there are any unsupported properties encountered.
+
+2. The ADO threading model needs to be either "apartment" or "both." The default
+  threading model is the apartment model. The sample text provider does not
+  register any threading model, so it defaults to a single-threaded model. The
+  threading models needs to match up in order for ADO to communicate with the
+  sample text provider. After changing the threading model, you will need to
+  restart Internet Information Server (IIS) for the changes to take effect.
+
+You can use the batch file that came with the OLE DB SDK 1.1 to change the ADO
+apartment model. These files are located in the Bin\Util OLEDBSDK directory. The
+Makeapt batch file sets ADO to be apartment model threaded. You can create a REG
+file base on the following code and merge it with the registry to change the ADO
+threading model to both:
+
+WARNING: Modifying the registry incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+  REGEDIT4
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0000022C-0000-0010-8000-
+  00AA006D2EA4}\InprocServer32]
+  "ThreadingModel"="Both"
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000231-0000-0010-8000-
+  00AA006D2EA4}\InprocServer32]
+  "ThreadingModel"="Both"
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000280-0000-0010-8000-
+  00AA006D2EA4}\InprocServer32]
+  "ThreadingModel"="Both"
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000281-0000-0010-8000-
+  00AA006D2EA4}\InprocServer32]
+  "ThreadingModel"="Both"
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{00000293-0000-0010-8000-
+  00AA006D2EA4}\InprocServer32]
+  "ThreadingModel"="Both"
+
+After you finish the two steps listed above, you can use the following Visual
+Basic code to use the sample text provider to retrieve data from a text file in
+ADO:
+
+     Private Sub myTest()
+          Dim con As New ADODB.Connection
+          Dim rs As ADODB.Recordset
+
+          ' data source specifies path that contains customer.csv
+          con.Open "provider=sampprov;data
+     source=c:\\sdks\\oledbsdk\\samples\\sampclnt\\"
+          Set rs = con.Execute("customer.csv")
+
+          For i = 0 To rs.Fields.Count - 1
+              Print rs.Fields(i).Name
+          Next i
+          While Not rs.EOF
+              Debug.Print rs(0)
+              rs.MoveNext
+          Wend
+     End Sub
+
+Additional query words: ASP
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDB110
+Version           : WINDOWS:1.1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

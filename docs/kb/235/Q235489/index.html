@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q235489: How to Use RIP over RRAS Demand-Dial and VPN Connections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q235489: How to Use RIP over RRAS Demand-Dial and VPN Connections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/235/Q235489/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/235/Q235489/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/235/Q235489/","publisher":null,"image":null,"headline":"Q235489: How to Use RIP over RRAS Demand-Dial and VPN Connections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q235489-how-to-use-rip-over-rras-demand-dial-and-vpn-connections">Q235489: How to Use RIP over RRAS Demand-Dial and VPN Connections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q235489
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to implement Routing Information Protocol (RIP) over
+Routing and Remote Access Service (RRAS) Dial On Demand (DOD) connections. The
+implementation of this protocol is the same for both direct-dial modem
+connections and Virtual Private Network (VPN) connections over the Internet.
+
+MORE INFORMATION
+================
+
+The information in this article applies to both direct connections and VPN
+connections. In the following examples, RRAS is used to provide LAN-to-LAN
+routing:
+
+  Example Direct-Dial Modem Connection
+
+  Lclient           L-RRAS === Modem() === R-RRAS           Rclient
+   |      IP      |                        |      IP      |
+    --------------                          --------------
+
+  Example VPN Connection
+
+  Lclient           L-RRAS ===== VPN ===== R-RRAS           Rclient
+   |      IP      |  |      Internet     |  |      IP      |
+    --------------    -------------------    --------------
+
+NOTE: For the purposes of this article, a DOD connection refers to either a
+direct-dial connection using a modem or a VPN tunnel connection over the
+Internet. Because RIP does not distinguish between connectivity methods, both
+are used in the same manner.
+
+Before you configure RIP for LAN-to-LAN routing (as in the two examples above),
+do the following:
+
+1. Make sure your DOD connections dial and connect successfully.
+  This is true for both modem and VPN connections. You can add temporary static
+  routes to the RRAS servers to test routing capabilities, but you should
+  remove them after testing. RIP does not work if the DOD connections do not
+  connect.
+
+2. Adding RIP from within the RRAS Management Console:
+
+  a. Start the RRAS Administration tool.
+
+  b. In the IP Routing section, right-click Summary, and then click Add Routing
+     Protocol.
+
+  c. Click "RIP version 2 for Internet Protocol", and then click OK.
+
+During RIP installation, you can configure event logging on the General tab and
+security parameters on the Security tab. You should leave these set to their
+defaults during installation and change them after RIP is installed.
+
+After you install RIP, the "RIP for Internet Protocol" icon is displayed in the
+IP Routing section of the RRAS Administration tool. Right-click "RIP for
+Internet Protocol", and then click Add. Click the DOD interface you are using
+between the two RRAS servers (you need to do this on both RRAS servers). Add the
+interfaces that RIP uses in this section (usually the DOD interfaces and the LAN
+side interfaces). In the VPN example above, it is not necessary to add the
+interface that connects to the Internet unless there are other compelling
+reasons to do so.
+
+When you add an interface, you can change the RIP configuration. Four tabs are
+available: General, Security, Neighbors, and Advanced. Typically, you can leave
+these settings at their default values and RIP functions properly. You can make
+any changes to RIP after you initially configure the added interfaces. The
+General tab is described in more detail below. For more information about these
+settings, refer to the RRAS Administrators Guide.
+
+On the General tab, you can click "Operation mode" and choose one of the
+following options to indicate whether the interface is treated as a persistent
+connection or DOD connection:
+
+- Periodic Mode: Indicates that RIP broadcasts or multicasts are sent over the
+  interface based on the periodic rate (the default setting is every 30
+  seconds).
+
+- Auto-Static Mode: Indicates that periodic updates are not sent over the
+  interface and that manual updates by an administrator are necessary.
+
+NOTE: By default, network adapters use Periodic mode, and DOD connections use
+Auto-Static mode, but you can specify the appropriate mode for your
+environment.
+
+At this point, even though RIP is installed, DOD connections do not dial and
+cannot be forced to dial. Even if you configure the DOD connection to use
+Periodic mode, the connection does not dial. However, if you manually dial the
+connection and Periodic mode is enabled, the connection does not disconnect
+after connected. For additional information, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q235492 RIP and OSPF Do Not Start Dial On Demand Connections
+
+To force RIP to start a DOD connection, make sure that a route entry exists that
+forces the DOD connection to dial. You can do this using the appropriate
+method:
+
+Using Auto-Static Mode
+----------------------
+
+On each RRAS server in the IP Routing section, right-click the DOD (either the
+modem or VPN interface), and then click Update Routes. After the connection is
+made, the DOD copies over the routes normally learned by RIP as static routes in
+the route table. After this task is finished, the DOD is forced to dial back
+based on the routing table (even if the DOD drops because of inactivity). You
+must do this on each side, unless only one side is required to dial. These
+auto-static updates are not dynamic. If there are changes to a network, then you
+must select the Update Routes option again to update the static routes in the
+route table of the RRAS server. You may also need to stop and restart the RRAS
+server to complete the configuration changes.
+
+Using Periodic Mode
+-------------------
+
+Add a default gateway static route that points to the DOD or specific network
+routes that point to the DOD. You need to do this on each side for routing
+purposes. In this example, you must manually add the static routes and RIP
+learned routes are placed in the routing table after the DOD is connected. If
+you add static routes using Periodic mode, you should also do the following:
+
+1. Give static routes a higher metric than routes that are learned by RIP. This
+  process is sometimes a matter of trial and error, but the desired result is
+  that RIP learned routes have a better metric than the static routes.
+
+2. Change the preference level of RIP routes:
+
+  a. Start the RRAS Administration tool.
+
+  b. In the IP Routing section, right-click Summary, and then click "Configure
+     IP parameters".
+
+  c. On the Preference Levels tab, click "RIP Version 2 for Internet Protocol",
+     and change the preference level from 4 to 1 (the preference level itself
+     is not as important as the fact that you should give RIP routes more
+     preference than static routes).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

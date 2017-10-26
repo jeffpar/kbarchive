@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145044: WD97: Document Corrupt After Editing Word 2.0 Document | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145044: WD97: Document Corrupt After Editing Word 2.0 Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145044/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145044/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145044/","publisher":null,"image":null,"headline":"Q145044: WD97: Document Corrupt After Editing Word 2.0 Document","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145044-wd97-document-corrupt-after-editing-word-20-document">Q145044: WD97: Document Corrupt After Editing Word 2.0 Document</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145044
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta kbconversion WordCon word97 kbconvert
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a Word 97 document, there are extra paragraph marks or boxes in
+the document. If the document contains a table, there are paragraph marks or
+boxes in front of the end of the row marker for every row within a table.
+
+CAUSE
+=====
+
+This behavior may occur when the following conditions are true:
+
+- You have opened and edited a Text Only or a Word 2.0 document in Word 97.
+
+- You have the AutoRecover save option turned on and have edited the document
+  long enough for an AutoRecover file to be created.
+
+- You save the document as a Word 97 document, close, and reopen the document.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft Office 97
+Service Release 2 (SR-2).
+
+For additional information about SR-2, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q151261 OFF97: How to Obtain and Install MS Office 97 SR-2
+
+
+MORE INFORMATION
+================
+
+To work around this problem, use one of the following methods:
+
+Method 1: Convert the Table to Text (use if your document contains a table)
+---------------------------------------------------------------------------
+
+1. Place your insertion point in the table.
+
+2. On the Table menu, click Select Table.
+
+3. On the Table menu, click Convert Table to Text, select Tabs, and click OK.
+
+4. With the text still selected, on the Table menu, click Convert Text to Table,
+  select Tabs, and click OK.
+
+5. The unwanted paragraph marks should now be gone.
+
+Method 2: Save the Document as RTF
+----------------------------------
+
+1. On the File menu, click Save As.
+
+2. In the Save As Type drop-down list, select Rich Text Format, and click OK.
+
+3. Close and reopen the file.
+
+
+Additional query words: autosave autorecover autorecovery corrupt save Saveas
+
+======================================================================
+Keywords          : kbdta kbconversion WordCon word97 kbconvert 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

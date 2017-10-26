@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43319: C: exec and spawn (P_OVERLAY) Will Fail When Bound | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43319: C: exec and spawn (P_OVERLAY) Will Fail When Bound" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43319/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43319/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43319/","publisher":null,"image":null,"headline":"Q43319: C: exec and spawn (P_OVERLAY) Will Fail When Bound","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43319-c-exec-and-spawn-p_overlay-will-fail-when-bound">Q43319: C: exec and spawn (P_OVERLAY) Will Fail When Bound</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43319
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | O_OS2SDK | mspl13_c
+Last Modified: 15-JAN-1990
+
+The Microsoft C run-time library functions exec and spawn (with a
+P_OVERLAY attribute) do not work correctly when executed in a bound
+application under DOS. This is briefly documented on Page 24 of the
+"Microsoft C for MS OS/2 and MS-DOS Operating Systems: Version 5.1
+Update" manual. The execution will fail with the program returning the
+following error message:
+
+   run-time error R6006
+   - bad format on exec
+
+This occurs only when the dual-mode program is running under DOS. A
+spawn with the P_WAIT attribute will work properly.
+
+Examining the DosExecPgm() API reveals that there is no option to
+overlay the currently executing program. OS/2's protection scheme does
+not support overwriting the code segment; therefore, to exec another
+program, it is necessary to actually spawn the program in a different
+area of memory and terminate the current process.
+
+To create a bound program that uses overlays, not only would a
+remapping of the FAPI function be necessary, but also a complete
+reprogramming to allow for loading over the current code segment. At
+this time, BIND does not support this.
+
+The following functions do not work properly when executed under DOS
+in a bound application:
+
+   execl    execle  execlp   execlpe   execv    execve   execvp
+   execvpe  spawnl  spawnl   spawnle   spawnlp  spawnlpe spawnv
+   spawnve  spawnvp spawnvpe
+
+Note: The spawn functions fail only with the P_OVERLAY attribute.
+
+The following program will fail to spawn PROG.EXE from DOS:
+
+/* Program:  spawn.c                                      */
+/*                                                        */
+/* Compile and bind from OS/2 with:                       */
+/*                                                        */
+/*         cl /Lp spawn.c                                 */
+/*         bind spawn /c/lib/api.lib /c/lib/doscalls.lib  */
+
+#include &lt;stdio.h&gt;
+#include &lt;process.h&gt;
+
+void main(void)
+{
+  spawnl(P_OVERLAY,"c:\\tmp\\prog.exe","prog",NULL);
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

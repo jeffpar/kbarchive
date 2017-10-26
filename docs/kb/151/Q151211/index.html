@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151211: Nested Batch Files in Logon Script Hangs at Execution | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151211: Nested Batch Files in Logon Script Hangs at Execution" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151211/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151211/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151211/","publisher":null,"image":null,"headline":"Q151211: Nested Batch Files in Logon Script Hangs at Execution","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151211-nested-batch-files-in-logon-script-hangs-at-execution">Q151211: Nested Batch Files in Logon Script Hangs at Execution</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151211
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.5,3.51 WFW:3.11 Win95
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft Windows for Workgroups version 3.11 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A DOS window appears on a client computer and shows the logon script executing.
+The logon script finishes, but the Windows NT logon script (in Windows 95) or
+the Lan Manager logon script (in Windows for Workgroups) dialog box appears and
+displays the following message:
+
+  Please wait while your logon script executes...
+
+The client computer stops responding until you click Cancel.
+
+CAUSE
+=====
+
+The Windows NT logon script contains a nested batch file and the current
+directory is changed in the nested batch file as shown in the following logon
+script example. Assume Test1.bat and test2.bat are located in the
+Repl\Imports\Scripts directory and Gandalf is a Windows NT Server 3.51 Primary
+Domain Controller (PDC) with no service packs installed.
+
+The logon script contains only one line:
+
+  test1.bat
+
+Test1.bat contains the following lines:
+
+NET USE K: \\Gandalf\Netlogon k:\test2.bat
+
+Test2.bat contains the following lines:
+
+  net use P: \\Gandalf\Sms_shr
+  net use y: \\Gandalf\Sms_pkgd
+  P:
+  CD\            &lt;---- line causing the logon script dialog box to hang
+                 until you click Cancel
+
+  COPY CL_Dos.txt C:\Temp
+
+WORKAROUND
+==========
+
+To work around this problem, change the nested batch file code for Test2.bat so
+that it avoids using the Change Directory (Cd) command:
+
+  net use P: \\Gandalf\Sms_shr
+  net use y: \\Gandalf\Sms_pkgd
+  COPY p:\CL_Dos.txt C:\Temp
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodnt login scripts nested batch file logon scripts
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW311
+Version           : WinNT:3.5,3.51 WFW:3.11 Win95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

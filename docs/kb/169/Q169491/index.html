@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169491: SMSINST: How Status MIFs Work with the SMS Installer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169491: SMSINST: How Status MIFs Work with the SMS Installer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169491/","publisher":null,"image":null,"headline":"Q169491: SMSINST: How Status MIFs Work with the SMS Installer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169491-smsinst-how-status-mifs-work-with-the-sms-installer">Q169491: SMSINST: How Status MIFs Work with the SMS Installer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169491
+Product(s): Microsoft Systems Management Server
+Version(s): WINDOWS:1.0; winnt:1.2
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork smsinst
+Last Modified: 03-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+- Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can have Systems Management Server Installer generate a status MIF for your
+installation by specifying a MIF file name in the Installation Expert under the
+SMS tab in the Installation Interface attribute. If a file name is specified, a
+.mif file is created in the client's Windows directory to report the success or
+failure of an installation or uninstallation of an application. Package Command
+Manager (PCM) will pick up any file in the Windows directory that has an
+extension of .mif and that was created after PCM began the installation. PCM
+sends this back to the Systems Management Server site server.
+
+MORE INFORMATION
+================
+
+Fields on the SMS Tab Under Status MIF Information
+--------------------------------------------------
+
+Install MIF Filename and UnInstall MIF Filename:
+The install and uninstall file name should be &lt;appname&gt;.mif where
+&lt;appname&gt; is the name of your application.
+
+Manufacturer:
+This field contains the name of the company who developed the product being
+installed.
+
+Product:
+This field contains the name of the product being installed.
+
+Version:
+This field contains the version number of the product being installed. If you
+want to specify the language, you can include the %LANG% variable. For example:
+1.00.0 %LANG%.
+
+Serial Number:
+This field contains the serial number of the product being installed.
+
+Tracing a Success Status MIF
+----------------------------
+
+1. A success status .mif file is written to the Windows directory (%windir%).
+
+2. PCM immediately moves the file to the Logon.srv\Despoolr.box directory,
+  renames the file, and replaces the .mif extension with .pck.
+
+3. PCM also writes a status in a .sni file to the Logon.srv\Despoolr.box
+  directory. The following is from the Pcmwin.log file:
+
+        [05/21/97 16:58:28] Package Command Manager ==&gt; Reporting on
+        completed package execution.
+        [05/21/97 16:58:28] Package Command Manager ==&gt; No error was detected
+        while attempting to run the job.
+        [05/21/97 16:58:28] Package Command Manager ==&gt; Need to report with
+        DMTF MIF: C:\WINNT\ins_note.mif
+        [05/21/97 16:58:28] Package Command Manager ==&gt; Writing status
+        information to \\MANGO\SMS_SHR\despoolr.box
+
+4. Maintenance Manager moves the two status files to the Site.srv\
+  Despoolr.box\Receive directory.
+
+5. Despooler compares the two files, and because the status .mif file has a
+  status of success, the .pck file is deleted. The following is from the
+  Despool.log file:
+
+        ~Waiting for ready instruction file....
+        $$&lt;SMS_DESPOOLER&gt;&lt;Wed May 21 17:09:02 1997~&gt;&lt;thread=DB&gt;
+        ~Found ready instruction sni00000.sni
+        $$&lt;SMS_DESPOOLER&gt;&lt;Wed May 21 17:09:27 1997~&gt;&lt;thread=DB&gt;
+        ~Executing instruction of type
+        MICROSOFT|SMS|DOMAIN_COMMISSAR_WIREMOVE
+        $$&lt;SMS_DESPOOLER&gt;&lt;Wed May 21 17:09:27 1997~&gt;&lt;thread=DB&gt;
+        ~Despooler successfully executed one instruction.
+        $$&lt;SMS_DESPOOLER&gt;&lt;Wed May 21 17:09:29 1997~&gt;&lt;thread=DB&gt;
+        ~Memory usage: blocks=0 bytes=0
+        $$&lt;SMS_DESPOOLER&gt;&lt;Wed May 21 17:09:29 1997~&gt;&lt;thread=DB&gt;
+
+  NOTE: When the VALUE assigned to the Description attribute is set to NULL (see
+  sample piece of MIF below), the despooler reports the following error:
+
+  ~Despooler failed to execute the instruction, error code = cb
+
+  If no other error message precedes this error message, the error code is
+  nothing more than a warning.
+
+        START ATTRIBUTE
+           NAME = "Description"
+           ID = 2
+           ACCESS = READ-ONLY
+           STORAGE = SPECIFIC
+           TYPE = STRING(255)
+           VALUE = ""          &lt;-- NO assignment
+        END ATTRIBUTE
+
+
+6. Despooler renames the file with a .mif extension and moves it to the
+  Dataload.box\Deltamif.col directory.
+
+7. Dataloader writes the success status to the workstation job detail record.
+  The following is from the Dataloadr.log file:
+
+        Waiting for a MIF...
+        $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Wed May 21 17:36:12 1997~&gt;&lt;thread=127&gt;
+        Processing a machine...
+        $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Wed May 21 17:36:12 1997~&gt;&lt;thread=6F&gt;
+        CMachine::FindMachine - Searching for matching Identification group
+        info
+        $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Wed May 21 17:36:12 1997~&gt;&lt;thread=6F&gt;
+        Updating group: MICROSOFT|IDENTIFICATION|1.0...
+        $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Wed May 21 17:36:13 1997~&gt;&lt;thread=6F&gt;
+        finished processing current machine.
+        $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Wed May 21 17:36:13 1997~&gt;&lt;thread=6F&gt;
+        ~No more job status MIFs to be processed, terminating thread
+        $$&lt;SMS_INVENTORY_DATA_LOADER&gt;&lt;Wed May 21 17:36:13 1997~&gt;&lt;thread=6F&gt;
+
+8. If refreshed, the Job Status Details window shows a status of Complete for
+  that workstation.
+
+Tracing a Failed Install MIF
+----------------------------
+
+1. A failure status .mif file is written to the Windows directory (%windir%),
+  and the installation is paused.
+
+2. As soon as the pause is released, PCM moves the file to the
+  Logon.srv\Despoolr.box directory, renames the file, and replaces the .mif
+  extension with .pck.
+
+3. PCM also writes a status in a .sni file to the Logon.srv\Despoolr.box
+  directory.
+
+4. Maintenance Manager moves the two status files to the Site.srv
+  \Despoolr.box\Receive directory.
+
+5. Despooler compares the two files, and because the status .mif file has a
+  status of failed, the .sni file is deleted.
+
+6. Despooler renames the .pck file to *.emf and moves it to the
+  Dataload.box\Deltamif.col directory, while dataloader writes the failed
+  status to the workstation job detail record, where it will be interpreted as
+  retrying by the system (retrying because the job may be run again, and may
+  succeed).
+
+7. Dataloader also creates an event 374 for the failure where the comment, if
+  specified in the Job Properties, contains the description of the failure (if
+  available).
+
+8. Dataloader moves the .mif file to the Siterep.box directory, where Site
+  Reporter deletes the file or forwards it to the parent site (if there is
+  one).
+
+You can run an ad hoc query on Systems Management Server events with jobid=xxxxx
+and eventid=374. The results of this query will list all workstations where the
+job failed for that jobid.
+
+If logging is enabled for PCM, the description of the failure may be noted in the
+client's Ms\Sms\Pcmwin.log (or the log name specified) file.
+
+Additional query words: prodsms smsinst jobdetail
+
+======================================================================
+Keywords          : kbinterop kbnetwork smsinst 
+Technology        : kbSMSSearch kbSMS120 kbSMSI100
+Version           : WINDOWS:1.0; winnt:1.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

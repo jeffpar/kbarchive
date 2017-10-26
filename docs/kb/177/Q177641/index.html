@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q177641: FIX: Assertion with an Insertable OLE Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q177641: FIX: Assertion with an Insertable OLE Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/177/Q177641/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/177/Q177641/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/177/Q177641/","publisher":null,"image":null,"headline":"Q177641: FIX: Assertion with an Insertable OLE Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q177641-fix-assertion-with-an-insertable-ole-control">Q177641: FIX: Assertion with an Insertable OLE Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q177641
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbole kbMFC kbVC400 kbVC410fix kbNoUpdatekbbuglist kbfixlist
+Last Modified: 05-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to handle a WM_LBUTTONDOWN message to get access to the IOleContainer
+interface for an insertable OLE Control, the following Assertion Error occurs:
+
+  
+
+  Debug Assertion Failed!
+  Program: ...
+  File: wincore.cpp
+  Line: 871
+
+CAUSE
+=====
+
+This problem is cause by COleClientItem::XOleClientSite::GetContainer not
+pushing the container's module state. As a result, the container attempts to
+assert that the container's view window is present in the control module's HWND
+map.
+
+RESOLUTION
+==========
+
+To correct this problem, include the following in the call to
+COleClientItem::XOleClientSite::GetContainer function: "
+
+     STDMETHODIMP COleClientItem::XOleClientSite::GetContainer
+       (LPOLECONTAINER **ppContainer)
+     {
+        #ifdef _DEBUG
+            METHOD_PROLOGUE_EX(COleClientItem, OleClientSite)
+        #else
+            METHOD_PROLOGUE_EX_(COleClientItem, OleClientSite)
+        #endif
+     }
+
+" (without the quotation marks)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++, 32- bit Edition
+version 4.1.
+
+MORE INFORMATION
+================
+
+The assertion error is caused by the following sequence:
+
+- GetContainer calls GetDocument on the client item.
+
+- The client item asserts that it is valid.
+
+- The client item's AssertValid asserts that its document is valid.
+
+- The document's AssertValid asserts that its view is valid.
+
+- The view's AssertValid asserts that the window is valid.
+
+- The window asserts that its HWND is in the current module's HWND map.
+
+Steps To Reproduce the Problem
+------------------------------
+
+1. Create a Control using the ControlWizard in Visual C++ 4.0. Make sure you set
+  the "Available in InsertObject Dialog" option.
+
+2. To this control, add a WM_LBUTTONDOWN handler as follows: "
+
+        void CYourCtrl::OnLButtonDown(UINT nFlags, Cpoint point)
+        {
+           LPOLECONTAINER pContainer;
+           if(SUCCEEDED(GetClientSite()-&gt;GetContainer(&amp;pContainer)))
+           {
+              AfxMessageBox("We have access to IOleContainer interface");
+           }
+           if(pContainer)pContainer-&gt;Release();
+              COleControl::OnLButtonDown(nFlags,point);
+        }
+
+  " (without the quotation marks)
+
+3. Build the control.
+
+4. Create a default MFC OLE Container application.
+
+5. Build and run the container.
+
+6. Click InsertObject on the Edit menu to insert your OLE Control.
+
+7. Click on the control. The assertion error occurs.
+
+Additional query words: 4.10
+
+======================================================================
+Keywords          : kbole kbMFC kbVC400 kbVC410fix kbNoUpdate kbbuglist kbfixlist
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

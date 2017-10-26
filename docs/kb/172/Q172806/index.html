@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172806: Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172806: Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172806/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172806/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172806/","publisher":null,"image":null,"headline":"Q172806: Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172806-creating-a-winnt-boot-floppy-for-dec-alpha-risc-computers">Q172806: Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172806
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Digital Equipment Corporation's ALPHA-based RISC computers rely on having a
+small (less than 4 GB) FAT-formatted system partition containing boot files.
+This system partition can also contain the Windows NT operating system but must
+be FAT formatted. RISC computers use the systems firmware and the ARC paths
+defined in NVRAM to read the system and osload partitions. The firmware loads
+boot files from the system partition that in turn loads the Windows NT operating
+system files from the osload partition.
+
+If your small, dedicated FAT system partition or one of the files contained in
+the \OS\WINNTxx (xx= Windows NT operating system version) directory gets
+corrupted or accidentally deleted, you will not be able to boot into Windows NT.
+It is, however, possible to make a Windows NT boot floppy disk to allow you to
+boot back into Windows NT.
+
+This floppy can be pre-made and kept available in case of emergencies and used in
+the event the Windows NT installation CD-ROM is unavailable to perform a
+repair.
+
+RISC-based systems have information equivalent to the Boot.ini file in
+nonvolatile RAM (NVRAM). The process for creating a boot disk for RISC systems
+is to copy the following files from the current working system partition or from
+the Windows NT installation CD-ROM's \ALPHA directory to the root of a DOS or
+Windows NT-formatted floppy disk:
+
+. Osloader.exe   &lt;--- This needs to be expanded if copied from CD:
+                     IE: expand osloader.ex_ a:\osloader.exe
+. Hal.dll        &lt;--- This is machine specific - see chart below.
+. A221064.PAL
+. A221066.PAL
+. A221164.PAL
+. A321064.PAL
+
+Once these files are copied to a floppy disk, you can add a new boot option entry
+in the computer's NVRAM to point to the floppy disk instead of the hard disk
+drive's system partition.
+
+MORE INFORMATION
+================
+
+Digital Equipment Corporation's RISC computers each have their own Hal.dll File
+that must be used depending on the computer model number. Use the chart below to
+determine which hardware abstraction layer (HAL) file to copy to the boot floppy
+disk. The actual HAL file copied to the floppy disk must be renamed to Hal.dll.
+
+HAL NAME        COMPUTER MODEL NUMBER
+--------        ---------------------
+
+halmikas.dll = "Digital AlphaServer 1000 Family Uniprocessor"
+hal0jens.dll = "Digital DECpc AXP 150"
+halsabmp.dll = "Digital AlphaServer 2x00 4/xxx Family"
+halsabmp.dll = "Digital AlphaServer 2100A 4/xxx"
+halavant.dll = "Digital AlphaStation 200/400 Family"
+halnonme.dll = "Digital AXPpci 33"
+halqs.dll    = "Digital Multia MultiClient Desktop"
+halalcor.dll = "Digital AlphaStation 500/600 Family"
+halgammp.dll = "Digital AlphaServer 2x00 5/xxx Family"
+halgammp.dll = "Digital AlphaServer 2100A 5/xxx"
+haleb64p.dll = "Digital AlphaPC64"
+haleb164.dll = "Digital Alpha EB164"
+halavant.dll = "Digital Alpha XL 233/266 Family"
+halxl.dll    = "Digital Alpha XL 300/366 Family"
+hallx3.dll   = "Digital AlphaStation 255"
+halflex.dll  = "DeskStation Technology UniFlex and Raptor 3 Systems"
+halrawmp.dll = "Digital AlphaServer 4x00 5/xxx Family"
+halrawmp.dll = "Digital AlphaServer 4100-5 - Multiprocessor"
+halalp.dll   = "Aspen Alpine/Telluride"
+haltimbr.dll = "Aspen Timberline/Summit"
+halpinna.dll = "Digital AlphaStation 600A 5/500"
+halpinna.dll = "Digital AlphaServer 1000 5/xxx Family"
+halpinna.dll = "Digital AlphaServer 1000a 5/xxx Family"
+hallego.dll  = "Digital Alpha 21064A PICMG SBC"
+*halmiata.dll= "Digital Personal Workstation 433a, 500a"
+
+* This model and other models not listed will require a custom HAL from Digital:
+see http://www.windows.digital.com/support/sysoft.asp.
+
+Once the Windows NT boot floppy disk is made, it will be necessary to add or
+modify a boot menu selection in the computer's NVRAM using the computer's
+built-in firmware.
+
+DEC has two different kinds of firmware - the new AlphaBios firmware and the
+original ARC multiboot firmware. Depending on the model number and age of the
+computer, you could have either kind of firmware.
+
+NOTE: The screens and menu items may vary from one firmware revision to the next.
+Use the appropriate section below for instructions on adding a boot selection to
+address the boot floppy disk.
+
+Adding a Boot Floppy Option Using AlphaBios Firmware
+----------------------------------------------------
+
+1. Start the system.
+
+2. After POST-Initialization completes, press F2 to enter SETUP.
+
+     Display System Configuration
+     Upgrade AlphaBios
+     Hard Disk Setup ...
+     CMOS Setup ...
+     Install Windows NT
+     Utilities
+     About AlphaBios
+
+3. From the main menu, select: UTILITIES --&gt; OS SELECTION SETUP...
+
+4. The previous boot selections will be displayed.
+
+  EXAMPLE:
+
+  Windows NT Server Version 4.0     Primary Operating System
+
+   ----------------------------------------------------------
+  | Boot Name: Windows NT Version 4.00                       |
+  | Boot File: Disk 0, Partition 2  \os\winnt40\osloader.exe |
+  | OS Path:   Disk 0, Partition 1  \WINNT                   |
+   ----------------------------------------------------------
+
+  Insert=new   f6=edit    ESC= discard changes
+  Del=Delete   f7=copy    f10=save changes
+
+5. Choose either Insert to make a new entry or f7 to make a copy.
+
+6. Modify the new boot entry to look like below:
+
+   ----------------------------------------------------------
+  | Boot Name: Windows NT Boot Floppy                        |
+  | Boot File: A:                   \osloader.exe            |
+  | OS Path:   Disk 0, Partition 1  \WINNT                   |
+   ----------------------------------------------------------
+
+7. Press f10=save changes, then press Enter to continue.
+
+8. Press ESC back to the boot selection menu and you should now have an
+  additional option titled "Windows NT boot floppy."
+
+9. Ensure your previously made Windows NT boot floppy disk is in drive A and
+  press Enter on that new boot menu selection.
+
+10. Windows NT should now load.
+
+Adding a Boot Floppy Option Using ARC Multiboot Firmware
+--------------------------------------------------------
+
+1. Start the system. The first menu will be the Boot menu.
+
+     Boot menu:
+     Boot Windows NT Server Vx.xx
+     Boot an alternate Operating System
+     Run A Program
+     Supplementary menu...           &lt;--- Select
+
+  a. From the Boot menu, select Supplementary menu.
+
+     Supplementary menu:
+     Install new Firmware
+     Install Windows NT from CD-ROM
+     Setup the System ...            &lt;--- Select
+     Display Hardware Configuration
+     Boot menu ...
+
+  b. From the Supplementary menu, select Setup the system.
+
+     Setup menu:
+     Set System Time
+     Set Default Environment variables
+     Set Default Configuration
+     Set System Language
+     Manage Boot Selections menu     &lt;--- Select
+
+  c. From the Setup menu, select the Manage Boot Selections menu.
+
+  d. From the Manage boot selections menu, select Add a boot selection.
+
+2. At the following prompts, type the correct information for your system.
+
+  NOTE: When a specific path is requested, this may vary from one computer to
+  another.
+
+  Select a system partition for this boot selection
+  Choose: New system partition
+
+  Enter location of the system partition for this boot selection
+  Choose: Floppy Disk
+
+  Enter floppy drive number: 0
+
+  Enter the osloader directory and name
+  Type: \osloader.exe
+
+  Is the operating system in the same partition as the osloader:
+  Choose: NO [or YES depending on your configuration]
+
+  NOTE: This may vary from one computer to another. The example here reflects
+  the most common RISC configuration. The system and OS partitions are
+  separate.
+
+  IE: System partition is usually 6 MB to 10 MB and contains the boot files.
+  OS partition is where the \winnt directory is located.
+
+  Enter the location of the OS Partition
+  Select media
+  Choose: SCSI Hard Disk
+
+  Enter SCSI bus number
+  Type in the appropriate bus number - usually zero.
+
+  Enter SCSI ID
+  Type in the appropriate SCSI ID - usually zero.
+
+  Enter partition
+  Type in the appropriate partition number - usually 2
+
+  NOTE: You can run Arcinst.exe program to display partition information. From
+  the main menu, select Run a program, then type: CD:\ALPHA\Arcinst.exe
+
+  Enter the operating system root directory
+  Type in the path. For example: \winnt
+
+  Enter the name for this boot selection
+  Type in a name. For example: Windows NT boot floppy
+
+  Do you want to initialize the debugger at boot time:
+  Choose: Yes or No
+
+After you enter the data, the Setup menu appears again. Choose Supplementary
+menu, and save changes to exit the Setup menu.
+
+The changes will be saved in NVRAM. The new boot selection will become the
+default. The Manage boot selections menu has an option to rearrange boot
+selections if you do not want the new selection to be the default.
+
+To verify your new boot selection: From the Manage boot selections menu, select
+"change a boot selection," then the new entry name.
+
+It should display your custom entry information:
+
+LOADIDENTIFIER = Windows NT Boot floppy
+SYSTEMPARTITION = EISA(0)DISK(0)FDISK(0)
+OSLOADER = EISA(0)DISK(0)FDISK(0) \OSLOADR.EXE
+OSLOADPARTITION = SCSI(0)DISK(0)RDISK(0)PARTITION(2)
+OSLOADFILENAME = WINNT
+OSLOADOPTIONS = NODEBUG
+
+Possible Error Messages Booting from Floppy
+-------------------------------------------
+
+  STOP: 0xFACEFEED (0x800BD950,00000000,00000000,00000000)
+
+The Alpha HAL generates this error when it encounters a hardware failure; this
+can be caused by using the wrong or outdated Hal.dll (see the HAL chart above).
+
+-or-
+
+  Windows NT Could not Start because the following file is missing or corrupt:
+
+  "LOAD NEEDED DLLs FOR KERNEL
+  Please Re-install a copy of the above file.
+  Press any key to continue"
+
+You have missing or corrupt .PAL files on the boot floppy disk. Be sure to copy
+ALL the *.PAL files from the Windows NT installation CD-ROM to the root of the
+boot floppy disk.
+
+Additional query words: dec alpha risc FT boot
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Hardware          : ALPHA
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

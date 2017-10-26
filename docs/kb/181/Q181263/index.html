@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181263: XCON: Exchange Sends Message Without Valid O/R Address | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181263: XCON: Exchange Sends Message Without Valid O/R Address" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181263/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181263/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181263/","publisher":null,"image":null,"headline":"Q181263: XCON: Exchange Sends Message Without Valid O/R Address","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181263-xcon-exchange-sends-message-without-valid-or-address">Q181263: XCON: Exchange Sends Message Without Valid O/R Address</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181263
+Product(s): Microsoft Exchange
+Version(s): 5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc5 exc55
+Last Modified: 27-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+There are three known symptoms:
+
+1. Users receive non-delivery-reports (NDRs) such as below:
+
+  Your message did not reach some or all of the intended recipients.
+     Subject: &lt;subject&gt;
+     Sent: &lt;date&gt; &lt;time&gt;
+  The following recipient(s) could not be reached:
+     '/O=ORG/OU=SITE/CN=RECIPIENTS/CN=USERA' on 24.11.97 18:24
+         The recipient name is not recognized
+         MSEXCH:MSExchangeMTA:Site:Server
+
+2. In rare cases, the association to a third-party X.400 system may stop
+  responding.
+
+3. In rare cases, the sending Exchange message transfer agent (MTA) may show 100
+  percent CPU usage.
+
+CAUSE
+=====
+
+In a non-replicated environment, the Exchange MTA may not be able to resolve a
+recipient's distinguished name within the Exchange directory. Non- resolvable
+distinguished names result usually from invalid recipient entries in the
+personal address book (PAB) of a user. If there is an X.400 Connector with an
+address space of 'C=*' defined, the MTA may attempt to send a message destined
+for such a recipient via this connector. In doing so, the MTA does not generate
+a valid X.400 O/R address but uses the recipient's distinguished name as an
+X.400 directory name.
+
+RESOLUTION
+==========
+
+To resolve this problem, Exchange sites connected via an X.400 Connector with an
+address space of 'C=*' defined, should be configured as Connected Sites in the
+X.400 Connector's Connected Sites property page. If this resolution is not
+possible, obtain the following fix or wait for the next Exchange service pack.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server versions 5.0.
+
+
+A supported fix for both versions is now available, but has not been fully
+regression-tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Technical Support for more information.
+
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+All occurrences of the problem described here involve two or more non-
+replicated Exchange sites. Additionally, there must be a connector defined with
+the "catch-all" address space of 'C=*'.
+
+For the above symptoms 2, association is hanging, and 3, MTA causes 100 percent
+CPU usage, an intermediate third-party X.400 system must be involved.
+
+
+There are currently three known reasons for the existence of a distinguished name
+that cannot be resolved in a user's PAB:
+
+1. A user has been moved to a different non-replicated Exchange site. During
+  this move, the user kept his or her PAB containing recipients defined in the
+  original site's directory. NOTE: Moving PABs to non-replicated sites is not
+  supported.
+
+2. A user has been deleted from the directory, but the user has the deleted
+  recipient still as an entry in his or her PAB.
+
+3. This scenario involves two Exchange Server computers, referred to as ServerA
+  and ServerB in the following. It involves three Exchange users: UserSend,
+  UserForward, and UserReceive. UserSend and UserForward are located on
+  ServerA. UserReceive is located on ServerB.
+
+  ServerA and ServerB are connected via an X.400 Connector. Both sides of the
+  X.400 Connector have an address space defined that represents the other
+  server's site addressing. ServerB has an additional X.400 Connector defined
+  to either a third Exchange Server computer or a foreign X.400 MTA. The
+  address space on that connector is defined as "C=*". The "X.400 bodypart used
+  for message text" on the connector's Advanced property page must have
+  different settings on both ends of the connector; for example, IA5 on ServerA
+  and IA5 (German) on ServerB.
+
+  UserSend sends a message to UserForward. UserForward sends a message to
+  UserReceive, inserting the message received from UserSend as attachment to
+  this message. When UserReceive opens the attached message, UserReceive will
+  be able to add UserSend to his or her PAB. Viewing the just added e-mail
+  address, it will be evident that it is a pure distinguished name. This
+  distinguished name cannot be resolved within ServerB's directory.
+
+
+
+Additional query words: hang utilization NDR invalid Address
+
+======================================================================
+Keywords          : kbusage exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

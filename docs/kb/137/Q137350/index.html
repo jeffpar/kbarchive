@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137350: PRB: Visual FoxPro Quits to MS-DOS If AWFAX Is Running | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137350: PRB: Visual FoxPro Quits to MS-DOS If AWFAX Is Running" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137350/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137350/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137350/","publisher":null,"image":null,"headline":"Q137350: PRB: Visual FoxPro Quits to MS-DOS If AWFAX Is Running","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137350-prb-visual-foxpro-quits-to-ms-dos-if-awfax-is-running">Q137350: PRB: Visual FoxPro Quits to MS-DOS If AWFAX Is Running</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137350
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 12-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro runs for about a minute or two then quits to MS-DOS, and the
+following error message may or may not appear:
+
+  EMM386 has detected error #06 in an application at memory address 00B8:0850.
+
+To minimize the chance of data loss, EMM386 has halted your computer. For more
+information, see the README.TXT file.
+
+To restart your computer, press ENTER.
+
+CAUSE
+=====
+
+This is due to a problem in the Win32s subsystem. It is not a Visual FoxPro bug.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+- Switch the Com ports for the Fax Modem and the Mouse. However, on some
+  computers this may have no effect
+
+-or-
+
+- Disable AWFAX from MSMAIL by following these steps.
+
+  1. Start MSMAIL.
+
+  2. On the Fax menu, click Mode.
+
+  3. In the Mode dialog box, selecte the Work Offline check box.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Ensure that your Fax Modem is on COM1 and your mouse on COM2. This problem is
+  more likely to occur under thse conditions.
+
+2. On a computer with Windows for Workgroups installed, ensure that Microsoft
+  mail, FAX software, and Schedule Plus are all installed.
+
+3. Using the Control Panel, verify that Comm1 is on 03F8 IRQ4 and Comm2 is on
+  02F8 IRQ3.
+
+4. Change Flow Control of both COM1 and COM2 to Hardware.
+
+5. Install Visual FoxPro selecting the Minimum install.
+
+6. Bring up Control Panel, click the Fax icon, and install FaxModem on Com1.
+
+7. Start Mail, and then minimize it. Running mail automatically starts AWFAX.
+  When it starts AWFAX, it polls COM1 for the fax modem. This doesn't seem to
+  occur if you start FAXMGR.EXE by itself.
+
+8. Start Visual FoxPro. You may find that the problem occurs sooner if a project
+  is open and dragged around the screen.
+
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61054: Erroneous 8086 Opcode for Logical AND Instruction | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61054: Erroneous 8086 Opcode for Logical AND Instruction" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61054/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61054/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61054/","publisher":null,"image":null,"headline":"Q61054: Erroneous 8086 Opcode for Logical AND Instruction","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61054-erroneous-8086-opcode-for-logical-and-instruction">Q61054: Erroneous 8086 Opcode for Logical AND Instruction</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61054
+Product(s): See article
+Version(s): m5.10 5.10a | 5.10 5.10a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist5.10 | mspl13_masm
+Last Modified: 12-JUN-1990
+
+Problem:
+
+I bought an operating system for a V25 processor that runs with the
+INTEL 8086 instruction set. The operating system source code was
+assembled with MASM 5.10 and the .8086 directive. The instruction runs
+on an 8086 machine, but the machine with the V25 processor hangs at
+the following instruction:
+
+      AND Word Ptr [S+10], -5 ; Opcode generated is
+                              ; 83 64 0A FB
+
+Response:
+
+In Appendix A-4 of the INTEL 8086/8088 programmer's reference manual
+(1986 edition), there is no opcode for AND that begins with 83. There
+is an opcode for AND that begins with 81. The opcode for AND reads as
+follows:
+
+   81 64 0A 00 FB
+
+However, there is an opcode for a sign-extended immediate instruction
+in the 80386 instruction set that has the first byte of the opcode as
+83.
+
+The V25 adheres strictly to INTEL's 8086 standard and will not accept
+an 80386 instruction rather than an 8086 instruction.
+
+Microsoft has confirmed this to be a problem in MASM Version 5.10. We
+are researching this problem and will post new information here as it
+becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

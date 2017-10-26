@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190799: PRB: Potential Errors Passing CRT Objects Across DLL Boundaries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190799: PRB: Potential Errors Passing CRT Objects Across DLL Boundaries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190799/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190799/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190799/","publisher":null,"image":null,"headline":"Q190799: PRB: Potential Errors Passing CRT Objects Across DLL Boundaries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190799-prb-potential-errors-passing-crt-objects-across-dll-boundaries">Q190799: PRB: Potential Errors Passing CRT Objects Across DLL Boundaries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190799
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbCRT kbVC500 kbVC600
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you pass C Run-time (CRT) objects such as file handles, locales, and
+environment variables into or out of a DLL (function calls across the DLL
+boundary), unexpected behavior can occur if the DLL, as well as the files
+calling into the DLL, use different copies of the CRT libraries.
+
+A related problem can occur when you allocate (explicitly with new, malloc, or
+implicitly with strdup, strstreambuf::str, and so on) and then pass a pointer
+across a DLL boundary to be freed. This can cause a memory access violation or
+heap corruption if the DLL and its users use different copies of the CRT
+libraries.
+
+Another symptom of this problem can be an error in the output window during
+debugging such as:
+
+  HEAP[]: Invalid Address specified to RtlValidateHeap(#,#)
+
+CAUSE
+=====
+
+Each copy of the CRT library has a separate and distinct state. As such, CRT
+objects such as file handles, environment variables, and locales are only valid
+for the copy of the CRT where these objects are allocated or set. When a DLL and
+its users use different copies of the CRT library, you cannot pass these CRT
+objects across the DLL boundary and expect them to be picked up correctly on the
+other side.
+
+Also, because each copy of the CRT library has its own heap manager, allocating
+memory in one CRT library and passing the pointer DLL boundary to be freed by a
+different copy of the CRT library is a potential cause for heap corruption.
+
+If you design your DLL so that it passes CRT objects across the boundary or
+allocates memory and expects it to be freed outside the DLL, you restrict the
+DLL users to use the same copy of the CRT library as the DLL. The DLL and its
+users use the same copy of the CRT library only if both are linked with the same
+version of the CRT DLL. This could be a problem if you mix applications built
+with Visual C++ 5.0 with DLLs that are built by Visual C++ 4.1 or earlier.
+Because the DLL version of the CRT library used by Visual C++ 4.1 is
+msvcrt40.dll and the one used by Visual 5.0 is msvcrt.dll, you cannot build your
+application to use the same copy of the CRT library as these DLLs.
+
+However, there is an exception. In US English version and some other localized
+versions of Windows NT 4.0 and Windows 2000, such as German, French, and Czech,
+a forwarder version of the msvcrt40.dll (version 4.20)is shipped. As a result,
+even though the DLL is linked with msvcrt40.dll and its user is linked with
+msvcrt.dll, you are still using the same copy of the CRT library because all
+calls made to msvcrt40.dll are forwarded to msvcrt.dll.
+
+However this forwarder version of msvcrt40.dll is not available in Windows 95,
+Windows 98, Windows Millennium Edition (Me), and some localized versions of
+Windows NT 4.0 and Windows 2000, such as Japanese, Korean, and Chinese. So, if
+your application targets these operating systems, you need to either obtain an
+upgraded version of the DLL that doesn't rely on msvcrt40.dll or alter your
+application to not rely on using the same copy of the CRT libraries. If you have
+developed the DLL, this means rebuilding it with Visual C++ 4.2 or later. If it
+is a third- party DLL, you need to contact your vendor for an upgrade.
+
+Please note that this forwarder DLL version of msvcrt40.dll (version 4.20) cannot
+be redistributed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Case 1. Passing a File Handle Across a DLL Boundary:
+
+Sample Code
+-----------
+
+     //testDll.cpp
+
+     #include &lt;stdio.h&gt;
+     __declspec(dllexport) void writeFile(FILE *stream)
+     {
+        char   s[] = "this is a string\n";
+        fprintf( stream, "%s", s );
+        fclose( stream );
+     }
+
+     //testMain.cpp
+     #include &lt;stdio.h&gt;
+     #include &lt;process.h&gt;
+     void writeFile(FILE *stream);
+
+     void main(void)
+     {
+       FILE  * stream;
+       stream = fopen( "fprintf.out", "w" );
+       writeFile(stream);
+       system( "type fprintf.out" );
+     }
+     /***********End of Sample code*************/ 
+
+1. Build the DLL as follows: cl /MT /LD testDll.cpp
+
+2. Build the .exe file as follows: cl /MT testMain.cpp /link testdll.lib
+
+3. Run the resulting testMain.exe. You get an access violation.
+
+4. If both the DLL and .exe file are built with /MD so that only one copy of the
+  CRT is used, you get the correct result:
+
+  this is a string
+
+Case 2. Passing Environment Variables Across a DLL Boundary:
+
+Sample Code:
+------------
+
+     //testDll.cpp
+     #include &lt;stdio.h&gt;
+     #include &lt;stdlib.h&gt;
+
+     __declspec(dllexport) void readEnv()
+     {
+     char *libvar;
+
+          /* Get the value of the MYLIB environment variable. */ 
+          libvar = getenv( "MYLIB" );
+
+          if( libvar != NULL )
+              printf( "New MYLIB variable is: %s\n", libvar);
+          else
+        printf( "MYLIB has not been set.\n");
+     }
+
+      //testMain.cpp
+      #include &lt;stdlib.h&gt;
+      #include &lt;stdio.h&gt;
+
+      void readEnv();
+
+      void main( void )
+      {
+         _putenv( "MYLIB=c:\\mylib;c:\\yourlib" );
+         readEnv();
+      }
+      /****************End of Sample Code*****************/ 
+
+1. Build the DLL as follows:
+
+  cl /MT /LD testDll.cpp
+
+2. Build the .exe file as follows:
+
+  cl /MT testMain.cpp /link testdll.lib
+
+3. Run the resulting testMain.exe. You get an access violation.
+
+4. If both the DLL and .exe file are built with /MD so that only one copy of the
+  CRT is used, you get the correct result:
+
+  New MYLIB variable is: c:\mylib;c:\yourlib
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

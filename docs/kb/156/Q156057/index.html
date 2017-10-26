@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156057: PRB: EXE with Included CONFIG.FPW Does Not Allow -C Option | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156057: PRB: EXE with Included CONFIG.FPW Does Not Allow -C Option" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156057/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156057/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156057/","publisher":null,"image":null,"headline":"Q156057: PRB: EXE with Included CONFIG.FPW Does Not Allow -C Option","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156057-prb-exe-with-included-configfpw-does-not-allow--c-option">Q156057: PRB: EXE with Included CONFIG.FPW Does Not Allow -C Option</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156057
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbenv kbvfp500 kbvfp600
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a CONFIG.FPW configuration file is marked as Included within the Project
+Manager and this project is built into an EXE file, the -C Command line cannot
+be used to override the built-in CONFIG.FPW.
+
+WORKAROUND
+==========
+
+You can work around this problem in one of two ways:
+
+- Do not add the CONFIG.FPW to the project. Or, add it to the project but mark
+  it Excluded. The CONFIG.FPW must be provided as a separate file but it can be
+  overridden with a -c or -c&lt;other config filename&gt;.
+
+-or-
+
+- Give the configuration file a name other than CONFIG.FPW. The configuration
+  file must always be specified on the Command line to be utilized but can be
+  overridden by specifying -c or -c&lt;other config filename&gt;.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project, TEST.PJX.
+
+2. Add a main program, TEST.PRG, with the following contents:
+
+     =Messagebox("Main program!")
+
+3. Create a CONFIG.FPW file with the following contents:
+
+     TITLE=Built in CONFIG was used
+
+4. Add the CONFIG.FPW file to the project as a Text File. It will be marked
+  Included by default.
+
+5. Build an executable, TEST.EXE.
+
+6. Create an alternate config file, OTHER.FPW, with the following contents:
+
+     TITLE=Alternate CONFIG
+
+7. From the Win95 RUN menu, execute:
+
+  C:\&lt;directory with EXE&gt;\TEST.EXE -cOTHER.FPW
+
+Despite the -c to override the built-in CONFIG file, the main Visual FoxPro
+window appears with the title of "Built in CONFIG was used," demonstrating that
+the built-in CONFIG.FPW file was used rather than OTHER.FPW.
+
+There are two methods to work around the problem in the above example.
+
+Method 1:
+---------
+
+Under step 4 above, add the following:
+
+  4a. In the Project Manager, right-click on the Config file and select
+      Exclude.
+
+Method 2:
+---------
+
+Change step 3 above to read:
+
+1. Create a MYCONFIG.FPW file with the following contents:
+
+        TITLE=Built in CONFIG was used
+
+Change step 4 above to read:
+
+1. Add the MYCONFIG.FPW file to the project as a Text File. It will be marked
+  Included by default.
+
+Now the built-in configuration file, MYCONFIG.FPW, can be utilized only by
+specifying the configuration file, such as C:\&lt;directory with
+EXE&gt;\TEST.EXE -cMYCONFIG.FPW. Use of -c will cause no configuration file to
+be used, and -cOTHER.FPW will allow OTHER.FPW to be used.
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          : kbenv kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

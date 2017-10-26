@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q215397: BUG: Menu Cannot be Disabled By CommandBar Controls Collection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q215397: BUG: Menu Cannot be Disabled By CommandBar Controls Collection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/215/Q215397/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/215/Q215397/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/215/Q215397/","publisher":null,"image":null,"headline":"Q215397: BUG: Menu Cannot be Disabled By CommandBar Controls Collection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q215397-bug-menu-cannot-be-disabled-by-commandbar-controls-collection">Q215397: BUG: Menu Cannot be Disabled By CommandBar Controls Collection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q215397
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0,2.0,2.11,3.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+- Microsoft eMbedded Visual Basic, version 3.0, on platform(s):
+   - Microsoft Windows CE versions 2.0, 2.11 for the Handheld PC 
+   - Microsoft Windows CE version 2.11 for the Palm-size PC 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows CE CommandBar menu is not disabled when accessing the object through
+the Controls collection of the CommandBar.
+
+RESOLUTION
+==========
+
+Enable and disable a CommandBar menu object by accessing the Enabled property of
+the CommandBarMenuBar object.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps by Step Example
+---------------------
+
+1. Start a new Windows CE H/PC Pro Project in Visual Basic. Form1 is created by
+  default.
+
+2. Add a CommandBar control, a ListBox and two CommandButtons to Form1.
+
+3. Paste the following code in to the form's code window:
+
+  Option Explicit
+  Dim cbrMnuBar As CommandBarMenuBar
+
+  Private Sub Form_Activate()
+      Set cbrMnuBar = CommandBar1.Controls.Add(cbrMenuBar)
+      cbrMnuBar.Items.Add , , "MenuBug"
+      cbrMnuBar.Items(1).SubItems.Add , , "SubMenuBug"
+      cbrMnuBar.Items.Add , , "MenuFix"
+      cbrMnuBar.Items(2).SubItems.Add , , "SubMenuFix"
+      Command1.Caption = "Disable MenuBug"
+      Command2.Caption = "Disable MenuFix"
+  End Sub
+
+  Private Sub Command1_Click()
+      CommandBar1.Controls(1).Enabled = Not CommandBar1.Controls(1).Enabled
+      List1.AddItem "MenuBug Enabled = " &amp; CommandBar1.Controls(1).Enabled
+      If CommandBar1.Controls(1).Enabled Then
+         Command1.Caption = "Disable MenuBug"
+      Else
+         Command1.Caption = "Enable MenuBug"
+      End If
+  End Sub
+
+  Private Sub Command2_Click()
+      cbrMnuBar.Items(2).Enabled = Not cbrMnuBar.Items(2).Enabled
+      List1.AddItem "MenuFix Enabled = " &amp; cbrMnuBar.Items(2).Enabled
+      If cbrMnuBar.Items(2).Enabled Then
+         Command2.Caption = "Disable MenuFix"
+      Else
+         Command2.Caption = "Enable MenuFix"
+      End If
+  End Sub
+
+  Private Sub CommandBar1_MenuClick(ByVal Item As CommandbarLib.Item)
+      MsgBox Item.Caption &amp; " click fired"
+  End Sub
+
+4. Click Command1 to disable the first menu and notice that clicking the menu
+  still fires the MenuClick event and the menu still appears enabled. The menu
+  has not been disabled.
+
+5. Click Command2 and notice that the second menu has been disabled and the
+  MenuClick event does not fire.
+
+Additional query words: vbce wce vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch
+Version           : :1.0,2.0,2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

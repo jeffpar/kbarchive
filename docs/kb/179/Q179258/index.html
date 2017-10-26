@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179258: XADM: Considerations When Upgrading to Exchange Server 5.5 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179258: XADM: Considerations When Upgrading to Exchange Server 5.5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179258/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179258/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179258/","publisher":null,"image":null,"headline":"Q179258: XADM: Considerations When Upgrading to Exchange Server 5.5","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179258-xadm-considerations-when-upgrading-to-exchange-server-55">Q179258: XADM: Considerations When Upgrading to Exchange Server 5.5</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179258
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Exchange Server, version 5.5, Japanese version 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are planning an upgrade from Microsoft Exchange Server version 4.0 or
+5.0 to Exchange Server version 5.5, many factors must be taken into
+consideration. This article emphasizes some of the more common points found in
+this transition. The following list does not contain all the factors that you
+may want to consider; however, it can be used as a guideline to help you
+evaluate your decision to upgrade to Exchange Server 5.5.
+
+The Exchange 5.5 Administrator program can be used to administer Exchange Server
+4.0 and 5.0 so that the upgrade process may be performed one server at a time.
+
+Before you upgrade to Exchange Server 5.5, review the readme document located on
+the root directory of the Exchange Server 5.5 CD. Also, be sure to make a
+complete backup of your existing Exchange Server computer before beginning the
+installation process.
+
+Things to consider when you upgrade to Exchange Server 5.5:
+
+1. Upgrade time: The time required to upgrade to Exchange Server 5.5 from
+  Exchange Server 4.0 is approximately twice as long as the time required to
+  upgrade a similar server from Exchange Server 5.0 to Exchange Server 5.5.
+
+2. The number of messages, the number of folders, and the total size of the
+  message database determine the amount of time required to upgrade. You can
+  reduce the upgrade time by having users reduce the amount of mail they keep
+  on the server.
+
+3. Microsoft Exchange Server 5.5 can coexist in the same site with Exchange
+  Server 4.0 or 5.0. You can take advantage of this compatibility to minimize
+  downtime and spread out the upgrade process by bringing up a new Exchange
+  Server 5.5 computer in the same site. This approach is useful for upgrading
+  mailbox servers. If the server also hosts public folder data, see
+  "Replicating Public Folders," in the Exchange Server 5.5 readme document for
+  more information. If you are introducing new hardware components to support
+  large information stores or clustering, moving mailboxes can significantly
+  decrease the time required to migrate to Microsoft Exchange Server 5.5.
+
+4. The key differences between Exchange Server 5.0 and Exchange Server 5.5:
+  Microsoft Exchange Server 5.5 builds on the success of Exchange Server 5.0 as
+  a robust messaging and collaboration platform. The new version provides
+  greater scalability and turnkey connectivity with more systems, including
+  Notes, PROFS, and SNADS. New features enable a wide range of collaborative
+  solutions from departmental workflow to cross-divisional line-of-business
+  applications. Management is made easier through the addition of customer
+  requested administrative features such as deleted item recovery. Exchange
+  Server 5.5 also adds support for additional Internet protocols, such as IMAP4
+  and LDAPv3, and improves support for mobile users. Full details on new
+  features may be found at the following Web address:
+
+  http://www.microsoft.com/exchange/evaluation/overview/howeval.asp
+
+5. Internet Information Server (IIS) 3.0 is supported in both the 5.0 and 5.5
+  releases of Exchange Server; however, support for IIS 4.0 will only be
+  available in the Exchange Server 5.5 release. If you plan to use IIS 4.0 for
+  Outlook Web Access components, you will need to install Exchange Server 5.5
+  on that server (all other servers can still use Exchange Server 5.0). You may
+  be able to upgrade to IIS 4.0 if IIS 3.0 is functioning correctly on the
+  Exchange Server 5.0 computer, but this configuration is not supported by
+  Microsoft.
+
+6. Exchange Server 5.5 only ships with Outlook clients (Windows 3.x, Windows 95,
+  Windows NT, and Macintosh versions). The 4.0 and 5.0 Exchange clients can
+  still be used to connect to an Exchange Server 5.5 computer, but there will
+  not be an Exchange 5.5 client.
+
+7. Exchange Server 5.5 setup offers Exchange Server 5.0 users two upgrade
+  options: an "In Place" upgrade and a "Fault Tolerant" upgrade.
+
+  An "In place" upgrade upgrades the Exchange 5.0 database to the new Jet '97
+  format in its current location. If the database upgrade process fails, the
+  database may be rendered useless and a restore will need to be done before
+  the upgrade can proceed again. A full backup of the databases is recommended
+  before beginning the upgrade process.
+
+  A "Fault Tolerant" upgrade upgrades the database in a specified temporary
+  location. When the upgrade procedure is finished on all three databases, it
+  copies the newly upgraded databases to the old database location.
+
+8. Differences between the Standard and Enterprise Editions: Microsoft Exchange
+  Server 5.5 Enterprise Edition is designed for organizations that require the
+  highest levels of scalability, interoperability, and availability. The
+  Enterprise Edition includes all of the features of the Standard Edition plus
+  an unlimited data store (constrained only by the server hardware capacity),
+  e-mail connectivity with IBM, PROFS, and SNADS messaging systems, X.400
+  connectivity, and support for Microsoft Cluster Server. These features extend
+  the core functionality of the Standard Edition, such as built in SMTP support
+  to yield the most comprehensive single product solution for corporate
+  communication and collaboration.
+
+  Note: The Standard Edition still has a limit of 16 gigabytes for the
+  Information Store. Only the Enterprise Edition allows databases to grow
+  larger than 16 gigabytes.
+
+9. Windows NT Server 4.0 Service Pack 3 is required to install Microsoft
+  Exchange Server. It is strongly recommended that you upgrade your Microsoft
+  Exchange Server computer to Windows NT Service Pack 4 when it is available.
+  Until that time, you should install the hot fixes that are currently
+  available from:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postsp3/roll-up/
+
+  If you are using Microsoft Exchange Server in a clustering environment, these
+  hot fixes are required. If you install Microsoft Outlook Web Access on your
+  Microsoft Exchange Server computer, these hot fixes are strongly
+  recommended.
+
+
+10. Before you run the Exchange Server 5.5 setup, shut down all monitors,
+  including Event Viewer, Performance Monitor, Server Monitor, and Link
+  Monitor.
+
+11. When you install Outlook Web Access, you should install the Windows NT hot
+  fix that addresses problems with Secure Sockets Layer (SSL) and memory
+  leaks. For more information, see the Microsoft Knowledge Base on the
+  Microsoft Product Support Services Web site:
+
+  http://www.microsoft.com/support
+
+  You can download the hot fix from:
+
+  ftp://ftp.microsoft.com/bussys/iis/iis-public/fixes/usa/ASP/asp-memfix/
+
+  The self-extracting zip file is called Asp-memfix.exe. For more information,
+  see the Microsoft Knowledge Base articles, Q176245 XWEB: VBScript Error when
+  Accessing Outlook Web Access Server and Q176246 XWEB: Unexpected Behavior
+  when Accessing Outlook Web Access.
+
+  NOTE: ASP-memfix.exe is for use with IIS 3.0 and NOT for IIS 4.0.
+
+  If installing Outlook Web Access with IIS 4.0, the Window NT 4.0 post Service
+  Pack 3 hotfixes should be installed. If these are not, errors will occur
+  that will prevent installation of the OWA components. The post SP3 hotfixes
+  can be obtained from the following location:
+
+  ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/hotfixes-postsp3/roll-up
+
+  NOTE: Roll-upa.exe is the hotfix for the Alpha platform. Roll-upi.exe is the
+  hotfix for the Intel platform. Both files are self-extracting executables.
+
+12. If you install Microsoft Outlook version 8.03 on a Microsoft Exchange Server
+  5.5 computer, Outlook Web Access does not perform as expected. To solve this
+  problem, run Regsvr32a.exe after you install Outlook. This utility resets
+  the affected registry settings by reregistering Cdo.dll. You can download
+  Regsvr32a.exe from the Microsoft web site at:
+
+  http://support.microsoft.com/support/downloads/dp2439.asp
+
+  Run Regsvr32.exe from the command line using the full path to Cdo.dll as the
+  argument. For example, the following command changes the registry settings
+  by re-registering Cdo.dll:
+
+  Regsvr32.exe &lt;systemroot&gt;\system32\cdo.dll (where &lt;systemroot&gt; is
+  your Windows NT directory)
+
+  For more information, see the Microsoft Knowledge Base article, Q176744 XCLN:
+  Installing Outlook on OWA Server Causes Access Failure.
+
+13. If you need to run Internet Explorer 4.0 and Microsoft Exchange Server on
+  the same computer, it is strongly recommended that you install Internet
+  Explorer 4.0 before you install Microsoft Exchange Server. If you install
+  Internet Explorer 4.0 after installing Microsoft Exchange Server, Internet
+  Explorer modifies the MIME registry database, resulting in problems for
+  international mail, especially mail with double-byte character content.
+
+14. Database files cannot reside on a Distributed File System (DFS) partition
+  because some Windows NT Server functionality used by Microsoft Exchange
+  Server does not support DFS partitions. If you locate database files on a
+  DFS partition, services will fail to start and will generate a 1022
+  (JET_errDiskIO) error message. This problem will be addressed in a future
+  release of Windows NT Server.
+
+15. You cannot run Microsoft Exchange Server setup in recovery mode (setup /R)
+  with a batch mode .ini file. If you attempt to run setup /R /Q inifile_name,
+  Setup ignores the /R command.
+
+16. If you install or upgrade Microsoft Exchange Server on a computer that
+  already has the Chat Service installed, you must stop the Chat Service
+  before running Microsoft Exchange Server setup.
+
+17. After you upgrade from Exchange Server 5.0, the first time the message
+  transfer agent (MTA) is started the MTA database files (mtadata\db*.dat) are
+  migrated to Microsoft Exchange Server version 5.5 format. This results in
+  several warning events regarding integrity verification, including warnings
+  2219, 2206, and 2207. This is expected; you can ignore these warnings.
+
+18. To start or stop Microsoft Exchange Server services on a clustered server,
+  you must use the Cluster Administrator program. Using the Services
+  application in Control Panel to start or stop Microsoft Exchange Server
+  services can result in unpredictable behavior, including initiating failover
+  of these services.
+
+19. The maximum number of characters allowed in Windows NT user accounts is
+  twenty. Therefore, if you use the Microsoft Exchange Server Administrator
+  program to create a Windows NT user account at the same time you are
+  creating a mailbox, the e-mail alias for the mailbox cannot be longer than
+  twenty characters. For double-byte languages, the e-mail alias is limited to
+  ten characters because each character takes up two conventional characters.
+
+20. For more information on Microsoft Exchange Server 5.5, please read the FAQ
+  at the following Web address:
+
+  http://www.microsoft.com/exchange/default.asp
+
+  Or Read the Exchange Support FAQ at:
+
+  http://support.microsoft.com/support/exchange
+
+Additional query words: exfaq
+
+======================================================================
+Keywords          :  
+Technology        : kbHLangJapanese kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

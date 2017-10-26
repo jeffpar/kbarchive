@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237388: PRB: 32-Bit ODBC Drivers Can’t Be Used from 16-Bit Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237388: PRB: 32-Bit ODBC Drivers Can’t Be Used from 16-Bit Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237388/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237388/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237388/","publisher":null,"image":null,"headline":"Q237388: PRB: 32-Bit ODBC Drivers Can’t Be Used from 16-Bit Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237388-prb-32-bit-odbc-drivers-cant-be-used-from-16-bit-applications">Q237388: PRB: 32-Bit ODBC Drivers Can’t Be Used from 16-Bit Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237388
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 1.5,2.0,2.1,2.5,2.6
+Operating System(s): 
+Keyword(s): kbDatabase kbMDAC kbVC kbOSWin95 kbGrpDSVCDB kbGrpDSMDAC kbDSupport
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- the operating system: Microsoft Windows 98 
+- Microsoft Data Access Components versions 1.5, 2.0, 2.1, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft 32-bit ODBC drivers fail when called from a 16-bit application
+through the ODBC thunking layer. Particularly under Windows 95 and Windows 98,
+you will not be able to connect without the application failing.
+
+
+CAUSE
+=====
+
+The Microsoft 32-bit ODBC drivers were not designed or tested to be used from
+16-bit applications. Furthermore, drivers, such as the Access and SQL server
+drivers, create multiple threads, which thunking in Windows 95 and Windows 98
+doesn't support.
+
+RESOLUTION
+==========
+
+If you need to access databases using the newer 32-bit ODBC drivers from a
+16-bit application, you cannot do it directly. You will need to take the
+database access portion out of the 16-bit application. Build a brand new 32-bit
+application that will perform the database access. Then you can re-code your
+16-bit application to use interprocess communication such as Sockets, DDE, and
+OLE Automation in order to transfer data to and from new 32-bit application.
+
+As it might turn out to be too much work, perform the above steps only if you
+have huge 16-bit application and data access is only a small part of it. If you
+have a smaller 16-bit application, it is best to reprogram and rebuild the
+application with the 32-bit version of Visual C++.
+The 16-bit SQL Server ODBC driver, which is included with SQL Server 6.5 can be
+used against SQL Server 7.0, although you will have some limitations, such not
+being able to use the new SQL 7.0 data types.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbMDAC kbVC kbOSWin95 kbGrpDSVCDB kbGrpDSMDAC kbDSupport 
+Technology        : kbOSWin98 kbAudDeveloper kbOSWinSearch kbMDACSearch kbMDAC150 kbMDAC200 kbMDAC210 kbMDAC250 kbMDAC260
+Version           : :1.5,2.0,2.1,2.5,2.6
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

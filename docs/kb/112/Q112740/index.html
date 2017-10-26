@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112740: Encarta Err Msg: Could Not Write to File Named CTL3D.DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112740: Encarta Err Msg: Could Not Write to File Named CTL3D.DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112740/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112740/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112740/","publisher":null,"image":null,"headline":"Q112740: Encarta Err Msg: Could Not Write to File Named CTL3D.DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112740-encarta-err-msg-could-not-write-to-file-named-ctl3ddll">Q112740: Encarta Err Msg: Could Not Write to File Named CTL3D.DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112740
+Product(s): Microsoft Home Kids Products
+Version(s): 1994 edition
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Ctl3d.dll file is loaded in your system, you may receive the following
+error when installing Encarta:
+
+  Could not write to the file named &lt;Windir&gt;\SYSTEM\CTL3D.DLL. The file
+  is currently being used by another application. Please shut down your other
+  applications.
+
+where &lt;Windir&gt; is your Windows folder (such as C:\Windows).
+
+The Ctl3d.dll file could have been loaded by a Windows shell other than Program
+Manager or by a terminate-and-stay-resident (TSR) program that uses the file.
+
+
+RESOLUTION
+==========
+
+If the version of the Ctl3d.dll file on the system is the same or later than the
+version on the Encarta CD, Encarta Setup will not attempt to write to it. Try
+one of the following resolutions:
+
+Install Encarta's version of the file into the &lt;Windir&gt;\System folder, as
+follows:
+
+1. Exit Windows. If you are running Windows 95:
+  a. Click Start, and then click Shut Down.
+
+  b. Click Restart The Computer In MS-DOS Mode, and then click Yes.
+
+2. At the MS-DOS command prompt, type the the following, and press the Enter key
+  at the end of the line:
+
+  "copy &lt;cd drive&gt;:\encarta\ctl3d.dll \&lt;windir&gt;\system" (without
+  the quotation marks)
+
+  where &lt;cd drive&gt; is the CD drive letter and &lt;windir&gt; is the path
+  to the Windows folder.
+
+3. Restart Windows.
+
+4. Run Encarta Setup again to complete the installation.
+
+-or-
+
+Do the following to start your system "clean":
+
+1. Edit the Win.ini file in a text editor such as Notepad.
+
+2. Place a semicolon (;) as the first character on the RUN= or LOAD= lines. For
+  example:
+
+  ";LOAD=C:\MOUSE\POINTER.EXE atikey.exe" (without the quotation marks)
+
+3. Save and close the Win.ini file.
+
+4. Edit the System.ini file in a text editor such as Notepad.
+
+5. Change the SHELL= line to read:
+
+  "SHELL=PROGMAN.EXE" (without the quotation marks)
+
+6. Save and close the System.ini file.
+
+7. Restart Windows.
+
+8. Run Encarta Setup again to complete the installation.
+
+-or-
+
+Remove Ctl3d.dll from memory and run Encarta Setup:
+
+1. Exit Windows.
+
+2. Change to the Windows\System folder.
+
+3. Rename Ctl3d.dll To Ctl3d.old. For more information about how to perform this
+  task in Windows, see your Windows printed documentation or online Help.
+
+4. Restart Windows and run the Encarta Setup again.
+
+MORE INFORMATION
+================
+
+This error occurs when Encarta Setup finds an earlier version of the Ctl3d.dll
+file on the system and tries to update the file, but cannot because another
+application is using it.
+
+Additional query words: multi media multimedia multi-media msscenes screen saver screensaver cleanboot clean boot
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+Version           : :1994 edition
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

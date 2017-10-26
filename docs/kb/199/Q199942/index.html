@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199942: FIX: Tstcon32.exe Cannot Invoke Method with BSTR* Parameter Type | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199942: FIX: Tstcon32.exe Cannot Invoke Method with BSTR* Parameter Type" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199942/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199942/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199942/","publisher":null,"image":null,"headline":"Q199942: FIX: Tstcon32.exe Cannot Invoke Method with BSTR* Parameter Type","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199942-fix-tstcon32exe-cannot-invoke-method-with-bstr-parameter-type">Q199942: FIX: Tstcon32.exe Cannot Invoke Method with BSTR* Parameter Type</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199942
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbole kbActiveX kbCOMt kbContainer kbCtrl kbMFC kbMiscTools kbVC600bug kbDSupport kbGrp
+Last Modified: 24-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ActiveX Control Test Container (version 6.0.8063) that ships with Visual C++
+6.0 and Visual C++.NET fail to invoke a method of an MFC ActiveX control that
+has BSTR* parameter type.
+
+CAUSE
+=====
+
+Microsoft has confirmed that this is a bug in Visual C++ 6.0 and Visual C++.NET
+ActiveX Control Test Container.
+
+RESOLUTION
+==========
+
+To work around this issue:
+
+- Use containers such as Visual Basic.
+
+- Use LPCTSTR as the parameter type.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the MFC ActiveX ControlWizard to create an ActiveX control project.
+
+2. Add a method to the ActiveX control as follows:
+
+  void CMyControl::Test(BSTR FAR* Par1)
+        {
+           // TODO: Add your dispatch handler code here
+           AfxMessageBox("In Test");
+           return 0;
+        }
+
+3. Build the control project.
+
+4. Insert the control to the ActiveX Control Test Container of Visual C++ 6.0 or
+  Visual C++.NET.
+
+5. Invoke the Test() method in the ActiveX Control Test Container and the
+  message box does not appear. The following error is displayed in the output
+  window of Visual C++:
+
+  First-chance exception in TSTCON32.EXE (KERNEL32.DLL): 0xE06D7363: Microsoft
+  C++ Exception. Warning: automation argument coercion failed. First-chance
+  exception in TSTCON32.EXE (KERNEL32.DLL): 0xE06D7363: Microsoft C++
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbActiveX kbCOMt kbContainer kbCtrl kbMFC kbMiscTools kbVC600bug kbDSupport kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q309007: HOW TO: Create an FTP Site in Internet Information Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q309007: HOW TO: Create an FTP Site in Internet Information Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/309/Q309007/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/309/Q309007/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/309/Q309007/","publisher":null,"image":null,"headline":"Q309007: HOW TO: Create an FTP Site in Internet Information Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q309007-how-to-create-an-ftp-site-in-internet-information-manager">Q309007: HOW TO: Create an FTP Site in Internet Information Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q309007
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbnetwork kbtool kbAudITPro kbHOWTOmaster
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Create a FTP Site
+- Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes the process of creating an FTP Site in the
+Internet Information Manager Snap-in that is running on a Windows 2000-based
+server. A member of the administrators group performs all of the procedures.
+
+Create an FTP Site
+------------------
+
+The following procedures start in the Internet Information Manager snap-in.
+
+NOTE: In order for these steps to work, FTP must be installed on your system.
+
+To start the snap-in and create ftp site:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+  Internet Information Manager.
+
+2. In the Internet Information Services snap-in, right click your server object,
+  point to New, and then click FTP Site.
+
+3. When the FTP Site Creation Wizard starts, click Next.
+
+4. On the FTP Site Description page, type your FTP site description in the
+  Description box, and then click Next.
+
+5. On the IP Address and Port Settings page, select the IP address that you are
+  using, type the TCP port you are using (if it is different than the default),
+  and then click Next.
+
+6. On the FTP Site Home Directory page, type the path to your home directory in
+  the Path box, and then click Next.
+
+7. On the FTP Site Access Permissions page, check the desired Read and/or Write
+  permissions, and then click Next.
+
+8. Click Finish, and then verify the creation of your FTP Site in the console
+  tree.
+
+Troubleshooting
+---------------
+
+- If the newly-created FTP Site does not appear in the console tree, click
+  Refresh on the Action menu.
+
+REFERENCES
+==========
+
+  Q308981 HOW TO: Administer IIS 5.0 by Using the Internet Information Manager
+  Snap-In
+
+  Q308995 HOW TO: Create a NNTP Virtual Server in the Internet Information
+  Services Snap-in
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbtool kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

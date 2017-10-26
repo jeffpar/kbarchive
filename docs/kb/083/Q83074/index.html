@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83074: During Setup, Windows 3.1 Fails to Start Standard-Mode Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83074: During Setup, Windows 3.1 Fails to Start Standard-Mode Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83074/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83074/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83074/","publisher":null,"image":null,"headline":"Q83074: During Setup, Windows 3.1 Fails to Start Standard-Mode Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83074-during-setup-windows-31-fails-to-start-standard-mode-windows">Q83074: During Setup, Windows 3.1 Fails to Start Standard-Mode Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83074
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Under the Microsoft Windows version 3.1 Setup program, when the MS-DOS section
+of Setup is completed, Setup starts Windows in standard mode. Standard mode is
+executed to complete the graphical portion of the setup process. While trying to
+enter standard mode, Windows may fail to start. The Setup program will then stop
+responding (hang).
+
+This article covers some reasons Setup may fail to start standard-mode Windows.
+
+MORE INFORMATION
+================
+
+Reasons Windows 3.1 Setup May Fail to Start Standard-Mode Windows
+-----------------------------------------------------------------
+
+1. Incorrect hardware options may have been selected. Run a custom setup and
+  ensure the descriptions of hardware and software in the System Information
+  screen match the system.
+
+2. The standard-mode (protected-mode) memory manager DOSX.EXE is incompatible
+  with an expanded-memory-specification (EMS) or upper-memory-block (UMB)
+  provider. Remove any EMS or UMB provider.
+
+3. An incorrect display driver may have been selected. The BOOTLOG.TXT file
+  should indicate that the display driver failed its initialization. Windows
+  may succeed in starting, but then show a jumbled display. This sometimes
+  indicates that the driver is working properly, but that the monitor cannot
+  synchronize to the vertical/horizontal scan rates required for that
+  particular display mode.
+
+4. Check for the existence of the following three files in the Windows SYSTEM
+  subdirectory:
+
+   - SETUP.EXE
+
+   - WIN.INI
+
+   - SYSTEM.INI.
+
+  If any of these files exist in the SYSTEM subdirectory, they should be
+  deleted.
+
+Additional query words: tshoot 3.10 lock locks up boot standard mode protected
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

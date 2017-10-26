@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183158: CPS: Phonebook Admin Does Not Start on Chinese Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183158: CPS: Phonebook Admin Does Not Start on Chinese Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183158/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183158/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183158/","publisher":null,"image":null,"headline":"Q183158: CPS: Phonebook Admin Does Not Start on Chinese Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183158-cps-phonebook-admin-does-not-start-on-chinese-windows-nt">Q183158: CPS: Phonebook Admin Does Not Start on Chinese Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183158
+Product(s): Internet Information Server
+Version(s): winnt:4.0; :1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Phone Book Administrator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Phone Book Administrator on a computer running the
+Chinese version of Windows NT Server with English versions of the Windows NT
+Server 4.0 Option Pack, you may receive the following error message:
+
+  The application has failed to start correctly. Press ENTER to continue.
+
+CAUSE
+=====
+
+The English version of the Windows NT Server 4.0 Option Pack does not contain
+the updated Pbadmin.exe files needed to support the Chinese language version of
+Windows NT Server.
+
+RESOLUTION
+==========
+
+To resolve this problem, use one of the following methods:
+
+- Remove the English version of Internet Information Server (IIS) 4.0
+  completely and then install the Chinese version of the Windows NT Server 4.0
+  Option Pack. This may result in the loss of your existing phone books, but
+  will ensure that you have all the fixes for the Chinese version of Windows NT
+  Server for all products.
+
+- If you already have the English version of IIS 4.0 installed on the computer
+  running the Chinese version of Windows NT Server 4.0 and are only concerned
+  with Phone Book Administrator, a hotfix version of Pbadmin.exe is available
+  by contacting Microsoft Technical Support and referring to this article.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Phone Book Administrator version
+1.0.
+
+
+A supported fix is now available, but has not been fully regression- tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Additional query words: Phone book Admin PBS cps phonebook cm
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbAudDeveloper kbiis400 kbMCISSearch kbPBA
+Version           : winnt:4.0; :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

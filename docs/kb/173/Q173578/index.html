@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173578: HOWTO: Change Local User WinNT 3.51 Profile to a Domain Profile | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173578: HOWTO: Change Local User WinNT 3.51 Profile to a Domain Profile" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173578/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173578/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173578/","publisher":null,"image":null,"headline":"Q173578: HOWTO: Change Local User WinNT 3.51 Profile to a Domain Profile","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173578-howto-change-local-user-winnt-351-profile-to-a-domain-profile">Q173578: HOWTO: Change Local User WinNT 3.51 Profile to a Domain Profile</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173578
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.51 
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The purpose of this article is to provide you with the information needed to
+move a Windows NT 3.5x profile from a local user to a domain user.
+
+MORE INFORMATION
+================
+
+If the profile to be edited is on a computer running Windows 3.51 Workstation,
+then the Windows NT Server 3.51 tools will need to installed on the computer
+running Windows NT Workstation in order to get access to the Profile editor
+program. Windows NT Server 3.51 tools are stored on the Windows NT Server 3.51
+CD in the client's directory.
+
+Install the programs from the MS-DOS prompt with the batch file, Setup.bat,
+located in the Clients\Srvtools\Winnt subdirectory. You will need administrative
+privileges on the local computer to complete the task.
+
+To install these programs and move the profile, perform the following steps:
+
+1. Log on to the computer as either a domain administrator or local
+  administrator at the computer running Windows NT Workstation.
+
+2. From the Windows NT Server 3.51 CD, install Server tools (they are located in
+  the Client\Srvtools\Winnt subdirectory) run the Setup.bat program in the
+  WINNT subdirectory. The system will do the rest. (Use this step if the local
+  profile is located on a computer running Windows NT Workstation 3.51
+  otherwise, ignore.)
+
+3. Add the local user to the local administrator group.
+
+4. Log off and log on to the workstation as the local user.
+
+5. Using Windows NT Setup, delete the domain users profile.
+
+6. Using Profile Editor, click Save as user default from the File menu. Ensure
+  that the local users account is listed in the Permitted to Use Profile dialog
+  box.
+
+7. Log off and log on the computer as the domain user.
+
+The domain user's profile should now be the same as the local user profile. At
+this point, you can remove the local user from the local administrators group
+and remove the Windows NT Server tools from the workstation.
+
+Additional query words: poledit roaming
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124884: FIX: ALT+D and SPACE Both Map to Key Code Value of 32 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124884: FIX: ALT+D and SPACE Both Map to Key Code Value of 32" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124884/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124884/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124884/","publisher":null,"image":null,"headline":"Q124884: FIX: ALT+D and SPACE Both Map to Key Code Value of 32","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124884-fix-altd-and-space-both-map-to-key-code-value-of-32">Q124884: FIX: ALT+D and SPACE Both Map to Key Code Value of 32</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124884
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.6a; WINDOWS:2.6a,3.0,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbvfp500aBUG kbvfp500bug kbvfp260aBUGkbbuglist
+Last Modified: 23-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a 
+- Microsoft FoxPro for Windows, version 2.6a 
+- Microsoft FoxPro for MS-DOS, version 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If code is dependent on the key combination ALT+D, the key code value returned
+by this combination maps to the ASCII value of 32, which is the equivalent of
+the Space key. Any time the space bar is pressed, code associated with ALT+D is
+run.
+
+CAUSE
+=====
+
+The ALT+D key combination is incorrectly mapped to ASCII 32.
+
+RESOLUTION
+==========
+
+The workarounds for this problem are to avoid the use of ALT+D as a key
+combination, or use CTRL+D or designate some other key combination as a hot key.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Create and run a program containing the following code:
+
+     CLEAR
+     @ 0,0 SAY "Press the key or key combination to evaluate:"
+     @ 1,0 SAY " "
+     =INKEY(20)
+     ? LASTKEY()
+
+Additional query words: access key kbvfp600fix
+
+======================================================================
+Keywords          : kbvfp500aBUG kbvfp500bug kbvfp260aBUG kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aDOS kbFoxPro260a kbVFP300 kbVFP500 kbVFP500a
+Version           : MS-DOS:2.6a; WINDOWS:2.6a,3.0,5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

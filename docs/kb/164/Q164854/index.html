@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164854: XADM: Cannot Remotely Administer IMC or MSMCON on WinNT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164854: XADM: Cannot Remotely Administer IMC or MSMCON on WinNT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164854/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164854/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164854/","publisher":null,"image":null,"headline":"Q164854: XADM: Cannot Remotely Administer IMC or MSMCON on WinNT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164854-xadm-cannot-remotely-administer-imc-or-msmcon-on-winnt-40">Q164854: XADM: Cannot Remotely Administer IMC or MSMCON on WinNT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164854
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 30-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you have computer running Windows NT 4.0, a Microsoft Exchange Server 4.0 or
+4.0a computer with Internet Mail Connector (IMC) on it, and connect with a
+remote admin to the server, when you click on the Connections\Internet Mail
+Connector to display its properties, you receive the following message:
+
+  Error message:
+  Internet Mail Connector
+  The data to be configured could not be loaded
+
+No information is loaded and clicking on every tab leads to the error:
+
+  Internet Mail Connector:
+  An error occurred while saving the changes to your settings
+
+This occurs with the correct admin rights configured on the site and on
+configuration in Microsoft Exchange.
+
+You receive the following error message when attempting to modify the MSMail
+Connector:
+
+  The MSMail Connector Registry Key
+  System\CurrentControlSet\Services\MSExchangeMSMI\Parameters\Admin
+  could not be opened because the Registry Security is not set up
+  correctly.
+
+You will not be able to view all the property sheets because the MSMail Connector
+could not initialize completely.
+
+CAUSE
+=====
+
+The admin account that is used in the remote admin is not a Windows NT
+administrator on the Microsoft Exchange 4.0 server. By default, nobody but a
+Windows NT Administrator can access remote registries in Windows NT version 4.0.
+This is a change from Windows NT version 3.51, where everyone had full access to
+remote registries.
+
+Because some Microsoft Exchange components use the registry, Microsoft Exchange
+Administrators cannot administer some components of remote Microsoft Exchange
+servers unless they are also Windows NT Administrators.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange 4.0
+U.S. Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Microsoft Exchange Server setup and System Attendant will now change the registry
+keys that a Microsoft Exchange Administrator needs write access to and grant
+that user read/write permission.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

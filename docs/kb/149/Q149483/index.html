@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149483: Redirected TREE /F Command Does Not Work in Windows 95 GUI | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149483: Redirected TREE /F Command Does Not Work in Windows 95 GUI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149483/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149483/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149483/","publisher":null,"image":null,"headline":"Q149483: Redirected TREE /F Command Does Not Work in Windows 95 GUI","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149483-redirected-tree-f-command-does-not-work-in-windows-95-gui">Q149483: Redirected TREE /F Command Does Not Work in Windows 95 GUI</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149483
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kbtool win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing a redirected MS-DOS TREE /F command at a command prompt within the
+Windows 95 graphical user interface results in incomplete output. This behavior
+occurs in both windowed and full-screen MS-DOS sessions.
+
+RESOLUTION
+==========
+
+To work around this behavior, issue the redirected TREE /F command after
+restarting the computer in MS-DOS mode, or after booting the computer to a
+command prompt.
+
+To restart the computer in MS-DOS mode, click the Start button, click Shut Down,
+click "Restart the computer in MS-DOS mode," and then click Yes.
+
+To boot the computer to a command prompt, restart the computer. When you see the
+"Starting Windows 95" message, press the F8 key, and then choose Command Prompt
+Only from the Startup menu.
+
+MORE INFORMATION
+================
+
+The TREE command is used to display the structure of a folder. The /F switch
+displays the names of the files in each folder. The following examples
+demonstrate the use of the TREE command with redirection:
+
+To display the files in all the folders on drive C one screen at a time, use the
+following command:
+
+  tree c:\ /f | more
+
+To print the list of files displayed using the previous example, use the
+following command:
+
+  tree c:\ /f &gt; prn
+
+NOTE: The TREE command (Tree.com) is an MS-DOS command. Tree.com is not installed
+by Windows 95, but is available on the Windows 95 CD-ROM or from online
+services. For information about installing the old MS-DOS tools included with
+Windows 95, please see the following article:
+
+  Q147831 How to Install Old MS-DOS Tools in Windows 95
+
+Additional query words: directory listing
+
+======================================================================
+Keywords          : kbtool win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

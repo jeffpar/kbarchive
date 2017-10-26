@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196880: WD97: How to Change the Agenda Wizard Document Formatting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196880: WD97: How to Change the Agenda Wizard Document Formatting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196880/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196880/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196880/","publisher":null,"image":null,"headline":"Q196880: WD97: How to Change the Agenda Wizard Document Formatting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196880-wd97-how-to-change-the-agenda-wizard-document-formatting">Q196880: WD97: How to Change the Agenda Wizard Document Formatting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196880
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta kbtemplate word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Microsoft Word provides an Agenda Wizard for the creation of an Agenda and
+Minutes form. The wizard does not prompt you to modify character formatting such
+as font, point size, and so forth. This article describes how you can use the
+Agenda Wizard to create your own custom wizard.
+
+NOTE: Microsoft does not support the modification of its wizards or templates.
+Modifications done by the user are at the user's risk and constitute no
+obligations or warranties, either written or expressed, by Microsoft.
+
+MORE INFORMATION
+================
+
+NOTE: The Agenda Wizard is not installed by the Word 97 for Windows Setup
+program. If you installed Word 97 from a compact disc, the Agenda Wizard and
+other wizards are located in the ValuPack\Template\Word folder. To use the
+Wizard, copy it to the Templates folder.
+
+The default locations for the Templates folder is C:\Program Files\Microsoft
+Office\Templates
+
+To use the Agenda Wizard to create your own custom wizard, follow these steps:
+
+1. On the File menu, click Open. Choose the folder where your templates are
+  stored (the default location is C:\Program Files\Microsoft Office\Templates).
+
+2. In the Files Of Type list, select All Files (*.*).
+
+3. In the Look In list, select the Agenda Wizard, and then click Open.
+
+4. On the File menu, click Save As, and type a new name for the wizard.
+
+  Any formatting changes you make will now be stored in your new wizard.
+
+5. On the Insert menu, point to AutoText, and click AutoText. Highlight the
+  AutoText entry that corresponds to the Agenda or Minutes style you want to
+  use. Click the Insert button.
+
+      Agenda style     Agenda AutoText entry     Minutes AutoText entry
+      -----------------------------------------------------------------
+
+      Boxes            Formal                    Minutes0
+      Modern           Informal                  Minutes1
+      Standard         Standard                  Minutes2
+
+6. Click the Show/Hide button so that it is enabled, display table gridlines (on
+  the Table menu, click Gridlines), and turn on Bookmarks.
+
+  NOTE: Do not delete any of the bookmarks. If these are deleted, the wizard may
+  not function properly.
+
+7. Select the text or table cell in which you want to make changes (be sure the
+  end-of-cell marker or paragraph mark is also selected). Make your formatting
+  changes, such as changing the font or point size, adding bold or italics, and
+  so forth. When you are finished, deselect the area by clicking in the margin
+  of the document.
+
+8. On the Insert menu, point to AutoText, and then click AutoText. Select the
+  AutoText entry that you previously selected in step 2. Make a note of the
+  exact name (you will need to type it again in step 7). Click the Delete
+  button to delete the old AutoText entry. Click the Close button to return to
+  the document.
+
+9. On the Edit menu, click Select All to highlight your document.
+
+10. On the Insert menu, point to AutoText, and then click AutoText. In the
+  AutoText dialog box, type the AutoText name using the same name as the
+  deleted AutoText entry from step 5. From the Look In list, select your
+  template. Click the Add button to return to the document.
+
+11. With the document still selected, click Cut on the Edit menu. You should now
+  have a blank page with a single paragraph mark at the top left of the page.
+  If you have any text or more than a single paragraph mark, delete these
+  items. On the File menu, click Save and then close the template.
+
+You can now use the Agenda Wizard with the new styles by clicking New on the File
+menu, and then choosing Agenda Wizard from the Template list and clicking OK.
+
+Additional query words: agenda minutes modify
+
+======================================================================
+Keywords          : kbdta kbtemplate word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

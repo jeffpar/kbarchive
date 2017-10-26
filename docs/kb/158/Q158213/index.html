@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158213: Improve LU6.2 Load Balancing if NOINITCNOS Is Used | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158213: Improve LU6.2 Load Balancing if NOINITCNOS Is Used" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158213/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158213/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158213/","publisher":null,"image":null,"headline":"Q158213: Improve LU6.2 Load Balancing if NOINITCNOS Is Used","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158213-improve-lu62-load-balancing-if-noinitcnos-is-used">Q158213: Improve LU6.2 Load Balancing if NOINITCNOS Is Used</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158213
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When an APPC application tries to allocate a conversation specifying an
+LU/LU/mode partnership (using independent LU6.2), the SNA client APPC interface
+may queue the request against an SNA Server that has all available LU6.2
+sessions in use. This may happen even if an SNA Server is in the domain that may
+have a suitable LU/LU/mode partnership defined, but which has not yet completed
+Change Number of Sessions (CNOS) negotiation. This can cause an application to
+wait for an available session to become free, instead of forcing another SNA
+Server to initiate a new LU/LU session to be used by the application.
+
+Under SNA Server version 2.11, the following conditions can cause an independent
+LU 6.2 partnership to not complete CNOS negotiation:
+
+- If the NOINITCNOS registry setting is enabled on the SNA Server (this setting
+  is documented in Appendix C of the SNA Server "Reference Guide".
+
+- If the SNA Server receives an error after sending a BIND request on the Local
+  APPC LU/Remote APPC LU/SNASVCMG mode. SNA Server will log an Event 18 when
+  this occurs.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q150959 Preventing Repeated APPC Session Activation Failures Event 18
+
+
+CAUSE
+=====
+
+If an LU-LU pair has not completed CNOS negotiation, the SNA Server was
+returning an Open(LU6.2) response error of Err1=0/Err2=1F04. This caused the SNA
+client APPC interface to try a different server for a conversation.
+
+RESOLUTION
+==========
+
+To workaround this problem, the NOINITCNOS setting should not be used.
+
+A hotfix is available for this problem, if you want to use the NOINITCNOS
+setting. The hotfix causes SNA Server to return an Err1=0/Err2=0004 to an
+Open(LU6.2) request if no CNOS negotiation has been completed for an independent
+LU/LU partnership. This causes the SNA client APPC interface to retry this
+server for a conversation, if no other servers have an available session.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+2.0, 2.1, 2.11, and 2.11 Service Pack 1. This problem was corrected in the
+latest Microsoft SNA Server 2.11 U.S. Service Pack. For information on obtaining
+the service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words: sp1 prodsna
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

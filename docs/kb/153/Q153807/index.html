@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153807: PRB: GetRowsEx Re-fetches Last Read Record in Subsequent Calls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153807: PRB: GetRowsEx Re-fetches Last Read Record in Subsequent Calls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153807/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153807/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153807/","publisher":null,"image":null,"headline":"Q153807: PRB: GetRowsEx Re-fetches Last Read Record in Subsequent Calls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153807-prb-getrowsex-re-fetches-last-read-record-in-subsequent-calls">Q153807: PRB: GetRowsEx Re-fetches Last Read Record in Subsequent Calls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153807
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbDAOsearch
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The DAO SDK, included with:
+   - Microsoft Visual C++, versions 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The DAO SDK defines a function called GetRowsEx() that is a method of the DAO
+recordset object. Unlike the GetRows() method, the GetRowsEx() method does not
+advance to the next unread record after calling it. Instead, it begins fetching
+with the last record fetched or the current record. For example, if you have 10
+records in a resultset and you are fetching 5 of them at a time using
+GetRowsEx(), you will see that record #5 gets fetched twice, once for each
+GetRowsEx() call. Records 1 through 5 will be fetched in the first call to
+GetRowsEx() and records 5 through 10 will be fetched in the second call to
+GetRowsEx().
+
+RESOLUTION
+==========
+
+Call MoveNext() for the recordset before executing the next call to GetRowsEx().
+The MoveNext() call will make the next unread record the current record.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Modify the DoGetRowsEx() function in GETRDLG.CPP contained in the GETROWS DAO SDK
+sample. Change the code to the following:
+
+   // Perform C++ GetRowsEx against the Employee table
+     void CGetRowsDlg::DoGetRowsEx()
+     {
+         LPEMP           pEmpRows = new EMP[MAX_EMP_REC];
+         CListBox        *pListBox =
+                          (CListBox *)GetDlgItem(IDD_GETROWSLISTEX);
+         CString         strLBRow;
+         TCHAR           szId[16];
+         LONG            lNumRecords;
+         LONG            lCount;
+         TCHAR           pBuf[MAX_EMP_REC * 15];
+
+         //Perform GetRows on Employee table
+         //This GetRows uses a specific C++ structure
+         while (!m_cEmpRecordSet.GetEOF())
+         {
+         try
+             {
+             lNumRecords = m_cEmpRecordSet.GetRowsEx(pEmpRows, sizeof(EMP),
+                   &amp;Bindings[0], sizeof(Bindings) / sizeof(DAORSETBINDING),
+                             pBuf, sizeof(pBuf),
+                             2); // fetch 2 records at a time
+             }
+         catch (CdbException e)
+             {
+          //Differentiate between GetRowsEx Errors and other CdbExceptions
+          // see defines in DAOGETRW.H
+             if( e.m_hr == E_ROWTOOSHORT ||
+                 e.m_hr == E_BADBINDINFO ||
+                 e.m_hr == E_COLUMNUNAVAILABLE )
+                 {
+                 AfxMessageBox(_T("Error in GetRowsEx call."));
+                 }
+             else
+                 {
+                 AfxMessageBox(_T("General CdbException"));
+                 }
+             delete [] pEmpRows;
+             return;
+             }
+
+         //Step through the returned rows
+         for (lCount = 0; lCount &lt; lNumRecords; lCount++)
+             {
+             strLBRow.Empty();
+             wsprintf(szId, _T("%d,  "), pEmpRows[lCount].lEmpId);
+             strLBRow += szId;
+             strLBRow += pEmpRows[lCount].strLastName;
+             strLBRow += _T(", ");
+             strLBRow += (LPCTSTR) pEmpRows[lCount].strFirstName;
+             pListBox-&gt;AddString(strLBRow);
+             }
+         }
+         delete [] pEmpRows;
+     }
+
+To fix the code above, add a MoveNext at the end of the 'while' loop.
+
+Additional query words: 4.00 4.10 4.20
+
+======================================================================
+Keywords          : kbDAOsearch 
+Technology        : kbAudDeveloper kbDAOsearch kbSDKDAOSearch kbSDKSearch
+Version           : winnt:
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

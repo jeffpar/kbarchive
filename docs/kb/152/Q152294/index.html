@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152294: HOWTO: Accessing Binary Data Using dbDao | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152294: HOWTO: Accessing Binary Data Using dbDao" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152294/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152294/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152294/","publisher":null,"image":null,"headline":"Q152294: HOWTO: Accessing Binary Data Using dbDao","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152294-howto-accessing-binary-data-using-dbdao">Q152294: HOWTO: Accessing Binary Data Using dbDao</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152294
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,4.2b,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbole kbProgramming kbDAOsearch kbMFC kbVC400 kbVC500 kbVC600
+Last Modified: 09-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 4.2b, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 4.2b, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the DAO SDK C++ classes to access binary data (such as a bitmap) you
+will find that the data is returned in a COleVariant. COleVariant is an MFC
+class that wraps the OLE VARIANT data type. Within the VARIANT, the data is
+stored as an OLE SAFEARRAY.
+
+Extracting the binary data from the COleVariant requires some knowledge of
+VARIANTs and SAFEARRAYs. The sample code below illustrates how to work with
+these data types by providing a function for extracting binary data from a
+COleVariant and a function for storing binary data in a COleVariant.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+     //Extensive error checking is left out to make the code more readable
+
+     BOOL GetBinaryFromVariant(COleVariant &amp; ovData, BYTE ** ppBuf,
+                                  unsigned long * pcBufLen)
+     {
+       BOOL fRetVal = FALSE;
+
+     //Binary data is stored in the variant as an array of unsigned char
+       if(ovData.vt == (VT_ARRAY|VT_UI1))  // (OLE SAFEARRAY)
+       {
+         //Retrieve size of array
+         *pcBufLen = ovData.parray-&gt;rgsabound[0].cElements;
+
+         *ppBuf = new BYTE[*pcBufLen]; //Allocate a buffer to store the data
+         if(*ppBuf != NULL)
+         {
+           void * pArrayData;
+
+           //Obtain safe pointer to the array
+           SafeArrayAccessData(ovData.parray,&amp;pArrayData);
+
+           //Copy the bitmap into our buffer
+           memcpy(*ppBuf, pArrayData, *pcBufLen);
+
+           //Unlock the variant data
+           SafeArrayUnaccessData(ovData.parray);
+           fRetVal = TRUE;
+         }
+       }
+       return fRetVal;
+     }
+
+     BOOL PutBinaryIntoVariant(COleVariant * ovData, BYTE * pBuf,
+                                  unsigned long cBufLen)
+     {
+       BOOL fRetVal = FALSE;
+
+       VARIANT var;
+       VariantInit(&amp;var);  //Initialize our variant
+
+       //Set the type to an array of unsigned chars (OLE SAFEARRAY)
+       var.vt = VT_ARRAY | VT_UI1;
+
+       //Set up the bounds structure
+       SAFEARRAYBOUND  rgsabound[1];
+
+       rgsabound[0].cElements = cBufLen;
+       rgsabound[0].lLbound = 0;
+
+       //Create an OLE SAFEARRAY
+       var.parray = SafeArrayCreate(VT_UI1,1,rgsabound);
+
+       if(var.parray != NULL)
+       {
+         void * pArrayData = NULL;
+
+         //Get a safe pointer to the array
+         SafeArrayAccessData(var.parray,&amp;pArrayData);
+
+         //Copy bitmap to it
+         memcpy(pArrayData, pBuf, cBufLen);
+
+         //Unlock the variant data
+         SafeArrayUnaccessData(var.parray);
+
+         *ovData = var;  // Create a COleVariant based on our variant
+         VariantClear(&amp;var);
+         fRetVal = TRUE;
+       }
+
+       return fRetVal;
+     }
+
+     //How you might call these functions
+
+     CdbRecordset rs;
+
+     //Code for initializing DAO and opening the recordset left out...
+
+     COleVariant ovData = rs.GetField(_T("MyBinaryField"));
+
+     BYTE * pBuf = NULL;
+     unsigned long cBufLen;
+
+     if(GetBinaryFromVariant(ovData,&amp;pBuf,&amp;cBufLen))
+     {
+       //Do something with binary data in pBuf...
+
+       //Write back a new record containing the binary data
+
+       COleVariant ovData2;
+       if(PutBinaryIntoVariant(&amp;ovData2,pBuf,cBufLen))
+       {
+         rs.AddNew();
+         rs.SetField(_T("MyBinaryField"), ovData2); //Write our COleVariant
+     to the table
+         rs.Update();
+       }
+       //Clean up memory allocated by GetBinaryFromVariant
+       if(pBuf)
+         delete pBuf;
+     }
+
+Additional query words: kbgrpMFCOLE
+
+======================================================================
+Keywords          : kbcode kbole kbProgramming kbDAOsearch kbMFC kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC420b kbVC500Search
+Version           : winnt:4.0,4.1,4.2,4.2b,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

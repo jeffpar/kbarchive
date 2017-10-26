@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136399: INFO: Visual Basic and Source Code Control Glyphs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136399: INFO: Visual Basic and Source Code Control Glyphs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136399/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136399/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136399/","publisher":null,"image":null,"headline":"Q136399: INFO: Visual Basic and Source Code Control Glyphs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136399-info-visual-basic-and-source-code-control-glyphs">Q136399: INFO: Visual Basic and Source Code Control Glyphs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136399
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400 kbSSafe500 kbSSafe600 kbVBp400 kbVBp600
+Last Modified: 07-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual Basic, the Project window displays a list of all the form modules,
+class modules, and standard modules in the project, as well as a single resource
+file, if one is used in the project. To the left of the file name, is a small
+icon (called a glyph) which shows the file type. There are different glyphs for
+forms, classes, modules, and resource files. In addition, if the file is read
+only, there will be a tiny red padlock on the bottom left hand corner of the VB
+glyph.
+
+There can be a second glyph to the left of the Visual Basic file glyph. This
+second glyph only appears if the file is under source code control. The Source
+Code Control glyphs are the same in Visual SourceSafe as they are in Visual
+Basic.
+
+NOTE: The forms, classes and modules should only be modified when the red check
+mark is visible. The red check mark is only visible when you have checked out
+the file.
+
+MORE INFORMATION
+================
+
+The source code control glyphs include the following:
+
+1. A sheet of paper with the corner folded and a black border indicates that the
+  file is under source code control and currently has read only status.
+
+2. A sheet of paper with the corner folded and a gray border indicates that the
+  file is under source code control and is currently checked out by another
+  user.
+
+3. A sheet of paper with a red check mark and a black border indicates that the
+  file is checked out of source code control to you and currently has
+  read/write status.
+
+4. Multiple sheets of paper with the corner folded and a gray border indicates
+  that the file is under source code control, is currently being shared with
+  another source code control project, and is currently checked out by another
+  user.
+
+5. Multiple sheets of paper with the corner folded, a red check mark, and black
+  border indicates that the file is under source code control, is currently
+  being shared with another source code control project, and is currently
+  checked out to you.
+
+IMPORTANT: Caution should be advised if the sheet of paper with the corner folded
+has a black border but neither the tiny padlock nor the red check mark are
+present. This indicates the file is under source code control, NOT checked out,
+but has read/write status. Anytime a file is not checked out, it should be
+marked read-only so you do not accidentally modify the file without it being
+checked out. To avoid possible problems, either check the file out to edit it or
+set the read-only flag from the Windows Explorer.
+
+If the Source Code Control Add-in is turned off by clearing the box in the Add-In
+Manager, all the source code control glyphs disappear. In addition, all the
+source code control menu items are disabled.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 kbVBp400 kbVBp600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

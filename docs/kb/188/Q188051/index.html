@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188051: SMS: Delmif.exe Syntax, Description, and Usage | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188051: SMS: Delmif.exe Syntax, Description, and Usage" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188051/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188051/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188051/","publisher":null,"image":null,"headline":"Q188051: SMS: Delmif.exe Syntax, Description, and Usage","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188051-sms-delmifexe-syntax-description-and-usage">Q188051: SMS: Delmif.exe Syntax, Description, and Usage</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188051
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Delmif.exe is a tool that is shipped with the BackOffice Resource Kit. The
+utility creates MIF that can delete clients both up and down a hierarchy. By
+default, DELMIF creates a delete-MIF file that deletes a client from a site
+database and all site databases above it.
+
+This file can be used in conjunction with a SQL trigger, so that DELMIF is
+invoked automatically after a client is deleted. DELMIF can also be used to
+delete clients down a hierarchy by creating command batch files and sending them
+to child sites as Package Command Manager service (PCMSVC) jobs.
+
+The problem occurs on the Alpha, MIPS, and x86 platforms.
+
+MORE INFORMATION
+================
+
+The following components can be used in the command line:
+
+  delmif SMSID [output_directory]
+
+  SMSID - The Systems Management Server ID of the client to delete.
+
+  SMSID_file - A file containing several SMSIDs to be deleted, one per line.
+
+  All characters after the first space on a line are ignored. An easy way to
+  create SMSID_file is to execute a query in the Systems Management Server
+  Administrator program (with Systems Management Server ID being the first
+  column in the query output), highlight the computer names, and paste them
+  into a Notepad file.
+
+  output_directory - The directory where the delete-MIF file is written. The
+  default is the LastLogonServerPath and ISVMIFCollectionPoint from C:\Sms.ini.
+  The output directory can be on any logon server in Logon.srv\Isvmif.box, or
+  on the site server in Site.srv\Isvmif.box. (The Site.srv directory gives a
+  slightly faster response). Specifying an output directory is recommended.
+
+Example
+-------
+
+The following command creates a delete-MIF file for the client with the SMS ID
+ABC00012:
+
+     delmif  ABC00012
+
+The following command creates a delete-MIF file for the client with the Systems
+Management Server ID ABC00345, and writes the delete-MIF file to D:\Test:
+
+     delmif  ABC00345  d:\test
+
+The following command creates a delete-MIF file for each client whose Systems
+Management Server ID is listed in Del.dat:
+
+     delmif  @del.dat
+
+Use the following syntax for a SQL trigger that will automate the execution of
+Delmif.exe when a computer's inventory is deleted from the Systems Management
+Server database. Because inventory MIFs flow up the Systems Management Server
+hierarchy, this will result in the same client inventory being deleted from all
+primary sites to the top of the Systems Management Server hierarchy.
+
+DELMIF trigger
+--------------
+
+     create trigger delmachine
+     on Machines
+     FOR DELETE
+     AS
+     DECLARE @smsid varchar(255)
+     DECLARE tIDs CURSOR FOR
+     select  SMSID0
+     from    MachineDataHistoryTable m (index = dwMachineID_idx),
+     Identification_SPEC i, deleted d
+     where   i.datakey = m.SpecificKey and
+             GroupKey = 1 and
+             m.ArchitectureKey = 5  and
+             m.dwMachineID = d.dwMachineID
+     open tIDs
+     FETCH NEXT
+     FROM tIDs
+     INTO @smsid
+     WHILE (@@fetch_status &lt;&gt; -1)
+     BEGIN
+        exec master..xp_delmif @smsid, "C:\SMS\site.srv\isvmif.box\"
+        FETCH NEXT
+        FROM tIDs
+        INTO @smsid
+     end
+     close tIDs
+     deallocate tIDs
+
+NOTE: It may be necessary to modify the output path the MIF is written to. For
+more information on this topic, refer to the Systems Management Server Resource
+Guide included in the BackOffice Resource Kit.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

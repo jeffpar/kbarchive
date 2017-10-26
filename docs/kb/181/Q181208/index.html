@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181208: FP98: How to Return Records From a Query as a Hyperlink | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181208: FP98: How to Return Records From a Query as a Hyperlink" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181208/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181208/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181208/","publisher":null,"image":null,"headline":"Q181208: FP98: How to Return Records From a Query as a Hyperlink","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181208-fp98-how-to-return-records-from-a-query-as-a-hyperlink">Q181208: FP98: How to Return Records From a Query as a Hyperlink</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181208
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 18-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to return the results from a query as a hyperlink
+using FrontPage 98 and Active Server Pages (ASP).
+
+MORE INFORMATION
+================
+
+Before you can use the ASP features in FrontPage, you must install the
+components listed in the following Microsoft Knowledge Base article:
+
+  Q312638 What You Need to Use Active Server Pages (ASP) in FrontPage
+
+Querying Information from Microsoft Access Database Using ASP
+-------------------------------------------------------------
+
+To format results of a query as a hyperlink, follow these steps:
+
+1. Start Microsoft Access 97 and follow these steps:
+
+  a. In the Microsoft Access dialog box, click Blank Database and click OK.
+
+  b. In the File name box, type Asplink.mdb and click Create.
+
+  c. Click the Tables tab. Click New.
+
+  d. Click Design View and click OK.
+
+  e. In the Field Name box, type Hyperlink.
+
+  f. On the View menu, click Datasheet View.
+
+  g. Click Yes, name the table Hyperlink, and then click OK.
+
+  h. If you are asked to create a primary key, click Yes.
+
+  i. In the Hyperlink box, type the following record into the database
+
+  &lt;a href="hyperlink"&gt;TextToDisplay&lt;/a&gt;
+
+     where "hyperlink" is the URL this record will link to and TextToDisplay is
+     the display text for the record. For example, if you are want to link to
+     the Microsoft Home Page, you can type the following:
+
+  &lt;a href="http://www.microsoft.com"&gt;Microsoft&lt;/a&gt;
+
+  j. On the File menu, click Exit.
+
+2. Start FrontPage Explorer and create a new Web.
+
+  a. On the File menu, point to New, and click FrontPage Web.
+
+  b. In Step 1, click One Page Web.
+
+  c. In Step 2, click Change.
+
+  d. In the "Please specify a location of the New FrontPage Web" box, type the
+     following:
+
+  http://localhost/ASPLink
+
+  e. In the "Choose a title for your FrontPage Web" box, type "ASPLinks"
+     (without the quotation marks) .
+
+  f. Click OK twice.
+
+3. On the View menu, click Folders.
+
+4. Import the Microsoft Access 97 database file into the current FrontPage web.
+
+  a. On the File menu, click Import.
+
+  b. Click Add file.
+
+  c. Click Browse, select the file you created in step 1, and click Open.
+
+  d. Click OK.
+
+5. Create an executable folder by following these steps:
+
+  a. On the File Menu, point to New, and click Folder.
+
+  b. Name the folder "ASP" (without the quotation marks) and press ENTER.
+
+  c. Right-click the ASP folder and click Properties on the menu that appears.
+
+  d. Click to select the "Allow scripts or programs to be run" check box and
+     click OK.
+
+6. Create a system Data Source Name (DSN).
+
+  a. On the Windows Start menu, point to Settings, and then click Control
+     Panel.
+
+  b. Double-click the 32-bit ODBC icon (Windows 95) or the ODBC icon (Windows
+     NT).
+
+  c. Click the System DSN tab.
+
+  d. Click Add.
+
+  e. Click "Microsoft Access Driver (*.mdb)" and click Finish.
+
+  f. In the Data Source Name box, type "Asplink" (without the quotation marks).
+     Note that the DSN name should not include any spaces.
+
+  g. Click Select.
+
+  h. Select the database file you created in step 1. By default, the file will
+     be located in one of the following IIS Web server locations:
+
+      - Microsoft Personal Web Server for Windows 95:
+
+  C:\Webshare\Wwwroot\Asplinks\Asplink.mdb
+
+      - Microsoft Internet Information Server for Windows NT Server:
+
+  C:\InetPub\Wwwroot\Asplinks\Asplink.mdb
+
+      - Microsoft Peer Web Services for Windows NT Workstation:
+
+  C:\InetPub\Wwwroot\Asplinks\Asplink.mdb
+
+      - Microsoft Windows NT 4.0 Option Pack
+
+  C:\InetPub\Wwwroot\Asplinks\Asplink.mdb
+
+  i. Click OK three times.
+
+7. In FrontPage Editor, create the ASP page.
+
+  a. On the File menu, click New, and then click the Page tab.
+
+  b. Double-click Normal Page.
+
+  c. On the Insert menu, point to Database, and click Database Region Wizard.
+
+  d. In the ODBC Data Source Name (DSN) box, type "ASPlink" (without the
+     quotation marks) and click Next.
+
+  e. In the "Enter the SQL string for the query" box, type the following SQL
+     statement:
+
+  SELECT * FROM Hyperlink
+
+  f. Click Next.
+
+  g. Click Add Field.
+
+  h. In the Add Field dialog box, type "Hyperlink" (without the quotation
+     marks) and click OK.
+
+  i. Click Finish.
+
+  j. Click OK.
+
+  k. On the File menu, click Save.
+
+  l. In the Save As dialog box, select the ASP folder. In the File name box,
+     type "hyperlink.asp" (without the quotation marks) and click Save.
+
+8. Start your Web browser, type the following URL in the address box and then
+  press ENTER:
+
+  http://localhost/asplink/asp/hyperlink.asp
+
+
+For more information about Active Server Pages and FrontPage, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q174015 FP98: How to Create Active Server Pages in FrontPage 98
+
+  Q175770 FP98: How to Post Information to a Database Using ASP
+
+  Q175771 FP98: How to Display Contents of a Database Using ASP
+
+Additional query words: 98 asp iis fpodbc
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch _IKkbZNotKeyword4 kbFrontPage98Search kbZNotKeyword3
+Version           : :
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

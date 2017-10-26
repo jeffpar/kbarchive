@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123730: BUG: R6000 After Many Calls to RunQQ If Linked with Defaults | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123730: BUG: R6000 After Many Calls to RunQQ If Linked with Defaults" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123730/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123730/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123730/","publisher":null,"image":null,"headline":"Q123730: BUG: R6000 After Many Calls to RunQQ If Linked with Defaults","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123730-bug-r6000-after-many-calls-to-runqq-if-linked-with-defaults">Q123730: BUG: R6000 After Many Calls to RunQQ If Linked with Defaults</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123730
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0,1.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+RunQQ fails and returns error R6000 (stack overflow) after being called many
+times. The failure occurs after less than 100 calls (the exact number depends on
+things like system memory) given the following conditions:
+
+- Stack checking is turned on when compiling the task called from RunQQ.
+
+- The application was linked using the default stack size of 1MB 'reserve' and
+  4K 'commit'.
+
+- The application is run from MS-DOS.
+
+RESOLUTION
+==========
+
+Set the linker stack option to 32K 'reserve' and 4K 'commit'. This is the
+default when compiling and linking using FL32 on the command line.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem does not occur with FORTRAN PowerStation 32.
+
+MORE INFORMATION
+================
+
+Page 168 of the User's Guide states that the default stack for the linker is 1MB
+'reserve' and 4K 'commit'. It also states that this is 0x1000000 and 0x4000
+respectively - which is inconsitent, it is actually 0x100000 (1MB) and 0x1000
+(4K). These are the values used by default in the Visual Workbench. Applications
+built this way will fail as described above.
+
+The default stack used when building from the command line with FL32 is 32K
+'reserve' and 4K 'commit'. When an application is compiled and linked using the
+default options of FL32, it does not have the problem described above.
+
+To demonstrate the problem, build both sample programs using the linker's default
+options in the Visual Workbench. The only compile option required is /Ge for
+TASK.FOR. Then exit Windows and run TEST.EXE from MS-DOS.
+
+To demonstrate the problem without using the Visual Workbench, use the following
+commands (assuming the maintenance release is installed). The linker version for
+the maintenance release is 1.0F.
+
+  FL32 /c /Ge test.for task.for
+  LINK test.obj libf.lib libc.lib
+  BINDMSF test.exe
+  LINK task.obj libf.lib libc.lib
+
+NOTE: It is not necessary to apply BINDMSF to the TASK.EXE because it is being
+run from TEST.EXE, which will have already loaded the MS-DOS extender. Feel free
+to use BINDMSF on TASK.EXE; it will have no effect on this test.
+
+Sample Code TEST.FOR
+--------------------
+
+  C Compile options required: none or /Ge (it will not affect the test)
+
+        include 'flib.fi'
+        include 'flib.fd'
+
+        character*1 answer
+        integer*4 i
+        integer*4 r
+
+        do i=1,100
+
+            write(*,*)"ready to runqq task.exe"
+            r = runqq("task.exe","/none")
+            if (r .ne. 0) then
+                write(*,*)i," task.exe failed"
+                read(*,FMT='(a1)') answer
+            else
+                write(*,*)i," task.exe was successful"
+            end if
+
+        end do
+
+        end
+
+SAMPLE CODE task.for
+--------------------
+
+  C Compile options required: /Ge (must turn on stack checking for TASK)
+
+        write(*,*)"control passed to task.exe"
+        end
+
+Additional query words: nofpsnt 1.00 1.00a docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS kbFORTRANPower100aDOS
+Version           : :1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

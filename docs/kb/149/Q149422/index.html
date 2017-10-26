@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149422: XCON: Creating Crash Dump Files when MTA Encounters Fatal Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149422: XCON: Creating Crash Dump Files when MTA Encounters Fatal Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149422/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149422/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149422/","publisher":null,"image":null,"headline":"Q149422: XCON: Creating Crash Dump Files when MTA Encounters Fatal Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149422-xcon-creating-crash-dump-files-when-mta-encounters-fatal-errors">Q149422: XCON: Creating Crash Dump Files when MTA Encounters Fatal Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149422
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbenv kbusage exc4 exc5 exc55
+Last Modified: 14-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to cause the Microsoft Exchange Server message
+transfer agent (MTA) to create a crash dump file when a fatal error occurs
+instead of stopping unexpectedly.
+
+MORE INFORMATION
+================
+
+When the message transfer agent (MTA) encounters a fatal error on a computer
+running Microsoft Exchange Server, the MTA normally stops unexpectedly. When
+this occurs, a severity 16 event appears in the event log and the Services tool
+in Control Panel indicates that the MSExchangeMTA service has stopped.
+
+For troubleshooting purposes, you may want to configure Windows NT so that the
+MTA creates a crash dump file when a fatal error occurs instead of stopping
+unexpectedly. To do so, use the following steps.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Verify that Dr. Watson for Windows NT is configured correctly. To do so,
+  follow these steps:
+
+  a. Click Start, click Run, type "drwtsn32 -i" (without the quotation marks)
+     in the Open box, and then click OK.
+
+  b. Click OK again.
+
+  c. Click Start, click Run, type "drwtsn32" (without the quotation marks) in
+     the Open box, and then click OK.
+
+  d. Verify that the Create Crash Dump File check box is selected.
+
+  e. Verify that the locations in the Log File Path and Crash Dump boxes refer
+     to the Windows NT folder. In Dr. Watson for Windows NT, the Windows NT
+     folder is typically represented by the %windir% variable.
+
+  f. Click the Visual Notification check box to clear it. This allows the MTA
+     to create the crash dump file without any input from you. If this check
+     box is selected, a dialog box is displayed when a fatal error occurs and
+     the crash dump file is not created until the dialog box is closed.
+
+  g. Click OK to close Dr. Watson for Windows NT.
+
+After you perform these steps, the following registry values exist:
+
+     Value name: Auto
+     Value type: REG_SZ
+     Value data: 1
+
+     Value name: Debugger
+     Value type: REG_SZ
+     Value data: drwtsn32.exe -p %ld -e %ld -g
+
+     Value name: UserDebuggerHotKey
+     Value type: REG_DWORD
+     Value data: 0
+
+These values are located under the following registry key:
+
+     HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\Current Version
+     \Aedebug
+
+NOTE: The above registry key is one path; it has been wrapped for readability.
+
+2. Start Registry Editor (Regedt32.exe or Regedit.exe as appropriate for your
+  version of Windows NT).
+
+3. Locate the following registry key:
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMTA
+     \Parameters
+
+  NOTE: The above registry key is one path; it has been wrapped for readability.
+
+4. On the Edit menu, click Add Value, and then add the following registry value
+  (note case sensitivity):
+
+     Value name: Raise Exception on fatal error
+     Value type: REG_DWORD
+     Value data: 1
+
+After you perform these steps, the MTA does not stop unexpectedly when a fatal
+error occurs. Instead, fatal errors generate exceptions and cause a crash dump
+file to be created. The exception generated is 0xE005&lt;xxxx&gt;, where
+&lt;xxxx&gt; is a number that represents the specific error that occurred, if
+appropriate.
+
+Additional query words: 9405
+
+======================================================================
+Keywords          : kbenv kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

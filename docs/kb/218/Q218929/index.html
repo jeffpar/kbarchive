@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q218929: FIX: UUID.LIB In VC6 Has Bad Definition for IViewFilter w/OLE DB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q218929: FIX: UUID.LIB In VC6 Has Bad Definition for IViewFilter w/OLE DB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/218/Q218929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/218/Q218929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/218/Q218929/","publisher":null,"image":null,"headline":"Q218929: FIX: UUID.LIB In VC6 Has Bad Definition for IViewFilter w/OLE DB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q218929-fix-uuidlib-in-vc6-has-bad-definition-for-iviewfilter-wole-db">Q218929: FIX: UUID.LIB In VC6 Has Bad Definition for IViewFilter w/OLE DB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q218929
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbservicepack kbATL kbDatabase kbOLEDB kbVC600bug kbVS600sp2bug kbVS600sp3fix kbGrpDSVC
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+E_NOINTERFACE is returned when you QueryInterface an OLE DB provider for the
+IViewFilter interface and the provider is known to properly support the
+IViewFilter interface. This output is received rather than the expected S_OK.
+
+CAUSE
+=====
+
+Your OLE DB consumer may have a different GUID value for IViewFilter obtained
+when linking with the Uuid.lib file. The library file Uuid.lib installed by
+Visual C++ 6.0 contains the GUID {3050F2F1-98B5-11CF-BB82-00AA00BDCE0B} for the
+IViewFilter interface. The correct GUID value for IViewFilter when used in
+conjunction with Oledb.h is {0C733A9B-2A1C-11CE-ADE5-00AA0044773D}.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+To verify that you have the correct GUID value for IViewFilter, run the
+following sample code from your consumer application:
+
+     OLECHAR wszGUID[1024];
+     ::StringFromGUID2( IID_IViewFilter, 
+                        wszGUID, 
+                        sizeof(wszGUID) / sizeof(OLECHAR) );
+     ::MessageBoxW( NULL, wszGUID, L"IViewFilter Guid Value", MB_OK );
+
+If the message box displays the GUID {0C733A9B-2A1C-11CE-ADE5-00AA0044773D}, then
+you have a valid GUID for IViewFilter when used with OLE DB.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbATL kbDatabase kbOLEDB kbVC600bug kbVS600sp2bug kbVS600sp3fix kbGrpDSVCDB kbVS600SP1bug kbMDACNoSweep 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

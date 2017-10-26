@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167839: BUG: PopupMenu on Modal Form Not Displayed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167839: BUG: PopupMenu on Modal Form Not Displayed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167839/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167839/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167839/","publisher":null,"image":null,"headline":"Q167839: BUG: PopupMenu on Modal Form Not Displayed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167839-bug-popupmenu-on-modal-form-not-displayed">Q167839: BUG: PopupMenu on Modal Form Not Displayed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167839
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an application contains at least two forms and one of those forms is
+displayed modally by using a PopupMenu on another form, a PopupMenu on the modal
+form will not be displayed.
+
+RESOLUTION
+==========
+
+A Timer control can be used to work around this problem:
+
+1. Start a new Standard EXE project. Form1 is added by default.
+
+2. Add a Timer control (Timer1) to Form1.
+
+3. Add another form (Form2) to the project.
+
+4. On Form1, create a menu (mnuFile) with a caption of "File" that has a submenu
+  (mnuOpen) with a caption of "Open." On Form2, create a menu (mnuEdit) with a
+  caption of "Edit" that has a submenu (mnuFind) with a caption of "Find."
+
+5. Add the following code to the General Declarations section of Form1:
+
+        Private Sub Form_Load()
+           Timer1.Enabled = False
+           Timer1.Interval = 1
+        End Sub
+
+        Private Sub Form_Click()
+           PopupMenu mnuFile
+        End Sub
+
+        Private Sub Timer1_Timer()
+           Form2.Show 1
+           Timer1.Enabled = False
+        End Sub
+
+        Private Sub mnuOpen_Click()
+           Timer1.Enabled = True
+        End Sub
+
+6. Add the following code to the General Declarations section of Form2:
+
+        Private Sub Form_Click()
+           PopupMenu mnuEdit
+        End Sub
+
+7. Press the F5 key to run the program. Click on Form1 and the Open PopupMenu
+  will be displayed. Click on the Open PopupMenu and Form2 is shown modally.
+  Click on Form2 and the Edit PopupMenu is displayed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce Problem
+--------------------------
+
+1. Start a new Standard EXE project. Form1 is added by default.
+
+2. Add another form (Form2) to the project.
+
+3. On Form1, create a menu (mnuFile) with a caption of "File" that has a submenu
+  (mnuOpen) with a caption of "Open." On Form2 create a menu (mnuEdit) with a
+  caption of "Edit" that has a submenu (mnuFind) with a caption of "Find."
+
+4. Add the following code to the General Declarations section of Form1:
+
+        Private Sub Form_Click()
+           PopupMenu mnuFile
+        End Sub
+
+        Private Sub mnuOpen_Click()
+           Form2.Show 1
+        End Sub
+
+5. Add the following code to the General Declarations section of Form2:
+
+        Private Sub Form_Click()
+           PopupMenu mnuEdit
+        End Sub
+
+6. Press the F5 key to run the program. Click on Form1 and the Open PopupMenu
+  will be displayed. Click on the Open PopupMenu and Form2 is shown modally.
+  Click on Form2 and the Edit PopupMenu is not displayed.
+
+Additional query words: kbVBp500bug kbVBp600bug kbVBp400bug kbVBp kbdsd kbDSupport kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3 kbVB16bitSearch
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

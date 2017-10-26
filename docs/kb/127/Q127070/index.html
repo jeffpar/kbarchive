@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127070: Unable to Play Composer Titles on Pioneer Multi-Disk CD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127070: Unable to Play Composer Titles on Pioneer Multi-Disk CD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127070/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127070/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127070/","publisher":null,"image":null,"headline":"Q127070: Unable to Play Composer Titles on Pioneer Multi-Disk CD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127070-unable-to-play-composer-titles-on-pioneer-multi-disk-cd">Q127070: Unable to Play Composer Titles on Pioneer Multi-Disk CD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127070
+Product(s): Microsoft Home Multimedia Titles
+Version(s): WINDOWS:1.0,1.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Multimedia Beethoven for Windows, versions 1.0, 1.1 
+- Microsoft Multimedia Mozart for Windows, version 1.0 
+- Microsoft Multimedia Stravinsky for Windows, version 1.0 
+- Microsoft Multimedia Schubert for Windows, version 1.0 
+- Microsoft Multimedia Strauss for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Pioneer Corporation Multi-Disk CD-ROM drive model numbers
+DRM-6OO, DRM-600A, DRM-602x, and DRM-604x with more than one of the composer CDs
+inserted in the device, the system will not be able to find the CDs, except the
+number 5 CD, and you may receive the error message:
+
+  Please place the correct disk in the drive.
+
+RESOLUTION
+==========
+
+To correct the problem, verify the following lines are present in the specified
+.INI files.
+
+NOTE: Updates can be made by opening the files in a text editor such as Notepad.
+
+SYSTEM.INI
+----------
+
+  [MCI]
+  CDAudio0=mcicda.drv 0
+  CDAudio1=mcicda.drv 1
+  CDAudio2=mcicda.drv 2
+  CDAudio3=mcicda.drv 3
+  CDAudio4=mcicda.drv 4
+  CDAudio5=mcicda.drv 5
+
+CONTROL.INI
+-----------
+
+  [Userinstallable.drivers]
+  CDAudio0=mcicda.drv 0
+  CDAudio1=mcicda.drv 1
+  CDAudio2=mcicda.drv 2
+  CDAudio3=mcicda.drv 3
+  CDAudio4=mcicda.drv 4
+  CDAudio5=mcicda.drv 5
+
+MPLAYER.INI
+-----------
+
+  [Devices]
+  CDAudio0=17, Disk 1
+  CDAudio1=17, Disk 2
+  CDAudio2=17, Disk 3
+  CDAudio3=17, Disk 4
+  CDAudio4=17, Disk 5
+  CDAudio5=17, Disk 6
+
+In addition, remove the following lines from the specified .INI files.
+
+NOTE: Updates can be made by opening the files in a text editor such as Notepad.
+
+SYSTEM.INI
+----------
+
+  [MCI]
+  CDAudio=mcicda.drv
+
+CONTROL.INI
+-----------
+
+  [Userinstallable.drivers]
+  CDAudio=mcicda.drv
+
+MPLAYER.INI
+-----------
+
+  [Devices]
+  CDAudio=17, CD Audio
+
+IMPORTANT: There are two versions of MPLAYER.EXE, and the newer version modifies
+MPLAYER.INI and removes any of the new CD Audio information. As a result, you
+must use the older version of MPLAYER.EXE with the Pioneer Multi-Disk CD-ROM
+drives listed at the top of this article.
+
+To determine which version of MPLAYER.EXE you have, compare the file size:
+
+- OLD MPLAYER.EXE size is 33,312
+
+- NEW MPLAYER.EXE size is 117,536
+
+Video for Windows, version 1.1e includes the NEWER version of MPLAYER.EXE.
+
+MORE INFORMATION
+================
+
+The error is caused by the default settings established by the Pioneer
+installation software.
+
+Do not use Control Panel to reconfigure the [MCI]CD Audio section. Control Panel
+will undo all of the above changes.
+
+For more information about the Pioneer CD-ROM drives, contact Pioneer technical
+support at (800) 872-4159.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm changer drm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbMMStrauss kbMMSchubert kbMMStravinsky kbMMMozart100 kbMMBeethoven100 kbMMBeethoven110
+Version           : WINDOWS:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

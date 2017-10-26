@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246069: Encoding Form Data for SQL Server Input and Output to HTML | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246069: Encoding Form Data for SQL Server Input and Output to HTML" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246069/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246069/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246069/","publisher":null,"image":null,"headline":"Q246069: Encoding Form Data for SQL Server Input and Output to HTML","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246069-encoding-form-data-for-sql-server-input-and-output-to-html">Q246069: Encoding Form Data for SQL Server Input and Output to HTML</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246069
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are working with records in a database using Microsoft Active Server
+Pages (ASP) for Internet Information Services (IIS), errors may occur when the
+text has not been properly formatted for creating a SQL Server clause.
+
+For example, when you create an ASP page to store information posted from an HTML
+form to a database, you may see an error message similar to the following:
+
+  Microsoft OLE DB Provider for ODBC Drivers (0x80040E14)
+  [Microsoft][ODBC Microsoft Access Driver] Syntax error (missing operator) in
+  query expression '<span class="nt">&lt;SQL</span> <span class="na">Text</span><span class="nt">&gt;</span>'.
+  /<span class="nt">&lt;path&gt;</span>/<span class="nt">&lt;filename</span><span class="err">.</span><span class="na">asp</span><span class="nt">&gt;</span>, line <span class="nt">&lt;nnn&gt;</span>
+
+MORE INFORMATION
+================
+
+The error message above occurs when you try to submit a name with an apostrophe,
+(for example "O'Malley"), and then insert that name into a SQL Server clause
+without first "escaping" it. This can result in a SQL Server clause that
+resembles the following:
+
+  INSERT INTO Table (txtName VALUES ('O'Malley')
+
+Because SQL Server uses the apostrophe as a text delimiter, the apostrophe in the
+name inadvertently signifies an end to the data, which causes the error message
+to occur. This text can be "escaped" by using two apostrophes, for example:
+
+  INSERT INTO Table (txtName VALUES ('O''Malley')
+
+Obviously, it is not ideal to mandate that all users on a Web site enter two
+apostrophes for each desired apostrophe. In addition, when text is later
+extracted from a database, certain formatting characters are ignored during HTML
+parsing on a client (for example CR-LF, TAB, and so on.)
+
+An ASP Solution:
+
+The following ASP code defines two functions that are designed to handle some
+simple parsing of information for input/output of SQL Server data, and can
+easily be expanded to incorporate more functionality:
+
+- FixForSQL() parses a string for input to SQL Server
+
+    Function FixForSQL(tmpText1)
+      ' define a working variable
+      Dim tmpText2
+      ' populate our working variable
+      tmpText2 = tmpText1
+      ' compact a CR-LF sequence as CR to save space
+      tmpText2 = Replace(tmpText1,vbCrLf,Chr(13))
+      ' replace each apostrophe with two apostrophes
+      tmpText2 = Replace(tmpText2,Chr(39),String(2,39))
+      ' return the fixed string
+      FixForSQL = tmpText2
+    End Function
+
+- FixForHTML() parses a string for output to HTML
+
+    Function FixForHTML(tmpText1)
+      ' define a working variable
+      Dim tmpText2
+      ' populate our working variable
+      tmpText2 = tmpText1
+      ' replace each CR with a line break tag and CR-LF
+      tmpText2 = Replace(tmpText2,Chr(13),"<span class="nt">&lt;br&gt;</span>" <span class="err">&amp;</span> vbCrLf)
+      ' replace each TAB character with four non-breaking space tags
+      tmpText2 = Replace(tmpText2,Chr(9),"<span class="ni">&amp;#xa0;&amp;#xa0;&amp;#xa0;&amp;#xa0;</span>")
+      ' return the fixed string
+      FixForHTML = tmpText2
+    End Function
+
+Practical Example - Guestbook Application:
+
+The following steps demonstrate how to use the above functions to create a simple
+guestbook application using ASP and a Microsoft Access database:
+
+1. Copy the following ASP code and save it to a folder in your Web site with at
+  least IIS script access enabled and Copy the following ASP code and save it
+  to a folder in your Web site with at least IIS "script" access enabled and
+  Everyone - Change NTFS permissions:
+
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="err">@</span><span class="na">Language=</span><span class="s">"VBScript"</span> <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">Option</span> <span class="na">Explicit</span>
+
+    <span class="err">'</span> <span class="na">define</span> <span class="na">our</span> <span class="na">variables</span>
+    <span class="na">Dim</span> <span class="na">strMethod</span>
+    <span class="na">Dim</span> <span class="na">strURL</span>
+    <span class="na">Dim</span> <span class="na">strTitle</span>
+    <span class="na">Dim</span> <span class="na">strSQL</span>
+    <span class="na">Dim</span> <span class="na">objCN</span>
+    <span class="na">Dim</span> <span class="na">objRS</span>
+
+    <span class="err">'</span> <span class="na">get</span> <span class="na">some</span> <span class="na">environment</span> <span class="na">variables</span>
+    <span class="na">With</span> <span class="na">Request</span>
+      <span class="na">strMethod =</span><span class="err"> </span><span class="s">UCase(.ServerVariables("REQUEST_METHOD"))</span>
+      <span class="na">strTitle =</span><span class="err"> </span><span class="s">UCase(.ServerVariables("SERVER_NAME"))</span> <span class="err">&amp;</span> <span class="err">"</span> <span class="na">Guestbook</span><span class="err">"</span>
+      <span class="na">strURL =</span><span class="err"> </span><span class="s">LCase(.ServerVariables("URL"))</span>
+    <span class="na">End</span> <span class="na">With</span>
+
+    <span class="err">'</span> <span class="na">open</span> <span class="na">our</span> <span class="na">database</span> <span class="na">connection</span>
+    <span class="na">Set</span> <span class="na">objCN =</span><span class="err"> </span><span class="s">Server.CreateObject("ADODB.Connection")</span>
+    <span class="na">objCN</span><span class="err">.</span><span class="na">Open</span> <span class="err">"</span><span class="na">driver=</span><span class="s">{Microsoft</span> <span class="na">Access</span> <span class="na">Driver</span> <span class="err">(*.</span><span class="na">mdb</span><span class="err">)};</span><span class="na">uid=</span><span class="s">admin;pwd=;"</span> <span class="err">&amp;</span> <span class="na">_</span>
+      <span class="err">"</span><span class="na">dbq=</span><span class="s">" &amp; Server.MapPath("</span><span class="err">.\</span><span class="na">guestbook</span><span class="err">.</span><span class="na">mdb</span><span class="err">")</span>
+
+    <span class="err">'</span> <span class="na">if</span> <span class="na">the</span> <span class="na">request</span> <span class="na">was</span> <span class="na">a</span> <span class="na">POST</span> <span class="na">then</span> <span class="na">a</span> <span class="na">guest</span> <span class="na">submitted</span>
+    <span class="na">If</span> <span class="na">strMethod =</span><span class="err"> </span><span class="s">"POST"</span> <span class="na">Then</span>
+      <span class="na">Dim</span> <span class="na">strName</span><span class="err">,</span> <span class="na">strComments</span>
+      <span class="err">'</span> <span class="na">get</span> <span class="na">the</span> <span class="na">form</span> <span class="na">data</span> <span class="na">and</span> <span class="na">format</span> <span class="na">it</span>
+      <span class="na">strName =</span><span class="err"> </span><span class="s">FixForSQL(Request.Form("txtName"))</span>
+      <span class="na">strComments =</span><span class="err"> </span><span class="s">FixForSQL(Request.Form("txtComments"))</span>
+      <span class="err">'</span> <span class="na">build</span> <span class="na">the</span> <span class="na">SQL</span> <span class="na">string</span>
+      <span class="na">strSQL =</span><span class="err"> </span><span class="s">"INSERT INTO tblGuestbook (txtName, txtComments)"</span>
+      <span class="na">strSQL =</span><span class="err"> </span><span class="s">strSQL</span> <span class="err">&amp;</span> <span class="err">"</span> <span class="na">VALUES</span> <span class="err">('"</span> <span class="err">&amp;</span> <span class="na">strName</span> <span class="err">&amp;</span> <span class="err">"','"</span> <span class="err">&amp;</span> <span class="na">strComments</span> <span class="err">&amp;</span> <span class="err">"')"</span>
+      <span class="err">'</span> <span class="na">execute</span> <span class="na">the</span> <span class="na">SQL</span>
+      <span class="na">objCN</span><span class="err">.</span><span class="na">Execute</span><span class="err">(</span><span class="na">strSQL</span><span class="err">)</span>
+    <span class="na">End</span> <span class="na">If</span>
+
+    <span class="err">'</span> <span class="na">create</span> <span class="na">a</span> <span class="na">SQL</span> <span class="na">string</span> <span class="na">to</span> <span class="na">read</span> <span class="na">all</span> <span class="na">guest</span> <span class="na">entries</span>
+    <span class="na">strSQL =</span><span class="err"> </span><span class="s">"SELECT * FROM tblGuestbook"</span>
+    <span class="na">Set</span> <span class="na">objRS =</span><span class="err"> </span><span class="s">objCN.Execute(strSQL)</span>
+
+  <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;&lt;title&gt;&lt;</span><span class="err">%=</span><span class="na">strTitle</span><span class="err">%</span><span class="nt">&gt;&lt;/title&gt;&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;h1&gt;&lt;</span><span class="err">%=</span><span class="na">strTitle</span><span class="err">%</span><span class="nt">&gt;&lt;/h1&gt;</span>
+
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="err">'</span> <span class="na">only</span> <span class="na">show</span> <span class="na">the</span> <span class="na">guestbook</span> <span class="na">when</span> <span class="na">there</span> <span class="na">are</span> <span class="na">entries</span>
+    <span class="na">If</span> <span class="na">Not</span> <span class="na">objRS</span><span class="err">.</span><span class="na">EOF</span> <span class="na">Then</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;table</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Comments<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="err">'</span> <span class="na">loop</span> <span class="na">through</span> <span class="na">the</span> <span class="na">database</span>
+    <span class="na">While</span> <span class="na">Not</span> <span class="na">objRS</span><span class="err">.</span><span class="na">EOF</span>
+      <span class="na">With</span> <span class="na">Response</span>
+        <span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">tr</span><span class="nt">&gt;</span>" <span class="err">&amp;</span> vbCrLf
+        .Write "<span class="nt">&lt;td&gt;</span>" <span class="err">&amp;</span> FixForHTML(objRS("txtName")) <span class="err">&amp;</span> "<span class="nt">&lt;/td&gt;</span>" <span class="err">&amp;</span> vbCrLf
+        .Write "<span class="nt">&lt;td&gt;</span>" <span class="err">&amp;</span> FixForHTML(objRS("txtComments")) <span class="err">&amp;</span> "<span class="nt">&lt;/td&gt;</span>" <span class="err">&amp;</span> vbCrLf
+        .Write "<span class="nt">&lt;/tr&gt;</span>" <span class="err">&amp;</span> vbCrLf
+      End With
+      objRS.MoveNext
+    Wend
+  %&gt;
+  <span class="nt">&lt;/table&gt;</span>
+
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="na">End</span> <span class="na">If</span> <span class="err">%</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"&lt;%=strURL%&gt;"</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;table&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Name<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"txtName"</span><span class="nt">&gt;&lt;br&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Comments<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;textarea</span> <span class="na">name=</span><span class="s">"txtComments"</span><span class="nt">&gt;&lt;/textarea&gt;&lt;br&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit Comments"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">Function</span> <span class="na">FixForSQL</span><span class="err">(</span><span class="na">tmpText1</span><span class="err">)</span>
+      <span class="na">Dim</span> <span class="na">tmpText2</span>
+      <span class="na">tmpText2 =</span><span class="err"> </span><span class="s">tmpText1</span>
+      <span class="na">tmpText2 =</span><span class="err"> </span><span class="s">Replace(tmpText1,vbCrLf,Chr(13))</span>
+      <span class="na">tmpText2 =</span><span class="err"> </span><span class="s">Replace(tmpText2,Chr(39),String(2,39))</span>
+      <span class="na">FixForSQL =</span><span class="err"> </span><span class="s">tmpText2</span>
+    <span class="na">End</span> <span class="na">Function</span>
+
+    <span class="na">Function</span> <span class="na">FixForHTML</span><span class="err">(</span><span class="na">tmpText1</span><span class="err">)</span>
+      <span class="na">Dim</span> <span class="na">tmpText2</span>
+      <span class="na">tmpText2 =</span><span class="err"> </span><span class="s">tmpText1</span>
+      <span class="na">tmpText2 =</span><span class="err"> </span><span class="s">Replace(tmpText2,Chr(13),"&lt;br</span><span class="nt">&gt;</span>" <span class="err">&amp;</span> vbCrLf)
+      tmpText2 = Replace(tmpText2,Chr(9),"<span class="ni">&amp;#xa0;&amp;#xa0;&amp;#xa0;&amp;#xa0;</span>")
+      FixForHTML = tmpText2
+    End Function
+  %&gt;
+
+2. Open Microsoft Access, create a new database, and then save it as
+  Guestbook.mdb in the same folder as the above ASP page.
+3. Create a new table in the database named TblGuestbook with the following
+  fields:
+  +--------------------------------------+
+  | Field Name  | Data Type | Field Size | 
+  +--------------------------------------+
+  | txtName     | Text      | 50         | 
+  +--------------------------------------+
+  | txtComments | Memo      | N/A        | 
+  +--------------------------------------+
+
+4. Save the table to the database, and then close Microsoft Access.
+
+Testing the Guestbook Application
+
+1. When you browse the page for the first time, no data is displayed.
+2. When information has been submitted, any guestbook entries will appear.
+3. Entering apostrophes in names (for example O'Brien, O'Sullivan, and so on) or
+  contractions (such as don't, can't, and so on) are properly formatted and
+  stored in the database.
+
+REFERENCES
+==========
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+For more information on Microsoft scripting technologies, see the Microsoft
+Developer Network web site at the following URL:
+
+  http://msdn.microsoft.com/scripting/
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

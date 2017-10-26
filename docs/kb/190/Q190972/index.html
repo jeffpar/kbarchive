@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190972: NotesDem.exe Reads and Writes the Contacts NOTES Field | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190972: NotesDem.exe Reads and Writes the Contacts NOTES Field" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190972/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190972/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190972/","publisher":null,"image":null,"headline":"Q190972: NotesDem.exe Reads and Writes the Contacts NOTES Field","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190972-notesdemexe-reads-and-writes-the-contacts-notes-field">Q190972: NotesDem.exe Reads and Writes the Contacts NOTES Field</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190972
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbfile kbSample kbMFC kbVC500 kbVC600 kbOSWinCE100 kbOSWinCE200 kbGrpDSMFCATL
+Last Modified: 26-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NotesDem.exe is an MFC sample for Windows CE that demonstrates how to read and
+write the NOTES field of the Contacts Database using the RichInk control. The
+NOTES field in the Contacts application is not the same field as HHPR_NOTES used
+in the address card structure. Actually, it is not even part of the addresscard
+structure so you must use the Windows CE Database APIs to get access to it.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+NotesDem.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The property ID of the NOTES field is 0x170041. It contains binary data in the
+RichInk control format. There is an article "\Windows CE Platform
+SDK\Support\RichInk\RichInk.doc" that describes how to use the RichInk control.
+
+Reading the NOTES field is not very difficult. The following code taken from
+NotesDemo.exe shows how you could read the field into a RichInk control:
+
+     HANDLE h_contact;
+     CEPROPVAL* propval;
+     WORD  propsrecv = 1;
+     CEPROPID ceprops[] = {0x170041};
+     DWORD buflen = 0;
+     PEGOID id = GetAddressCardOid(m_CardIndex);
+     DWORD index;
+
+     h_contact=CeOpenDatabase(&amp;contactsid,_T("Contacts Database"),0,0,NULL);
+     CeSeekDatabase(h_contact,CEDB_SEEK_CEOID,id,&amp;index);
+
+     if(!CeReadRecordProps(h_contact,CEDB_ALLOWREALLOC,&amp;propsrecv,
+                           ceprops,(unsigne d char**)&amp;propval,&amp;buflen))
+     {
+        MessageBox(_T(" Failed to read data! "));
+     }
+
+     ::SendMessage(m_hRichInkCtrl,IM_CLEARALL,0,0);
+     ::SendMessage(m_hRichInkCtrl,IM_SETDATA,
+                   (WPARAM)propval-&gt;val.blob.dwCount,
+                   (LPARAM)propval-&gt;val.blob.lpb);
+     CloseHandle(h_contact);
+
+The NotesDem.exe sample also demonstrates how to write to the NOTES field.
+
+NOTE: RichInk.h includes the calerror.h file. This file was not distributed with
+the Windows CE Toolkit for Visual C++ 5.0. This include can be commented out for
+the build. This control does not exist for the x86 emulation mode.
+
+REFERENCES
+==========
+
+Windows CE Programmers Guide: Accessing Persistent Storage
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbSample kbMFC kbVC500 kbVC600 kbOSWinCE100 kbOSWinCE200 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

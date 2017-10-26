@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140304: How to Remove Objects from a Container at Run Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140304: How to Remove Objects from a Container at Run Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140304/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140304/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140304/","publisher":null,"image":null,"headline":"Q140304: How to Remove Objects from a Container at Run Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140304-how-to-remove-objects-from-a-container-at-run-time">Q140304: How to Remove Objects from a Container at Run Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140304
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to remove objects from a form or any other
+container within a form at run time. Specifically, it shows how to create a
+toolbar that has a single command button that can remove all of the objects from
+an active form.
+
+MORE INFORMATION
+================
+
+Using the RemoveObject method, and an array created using the AMEMBERS()
+function, you can remove all of the objects from within any container object.
+
+Step-by-Step Example
+--------------------
+
+1. Create a program containing the following code:
+
+     PUBLIC oRemoveIt
+     oRemoveIt=CREATEOBJECT("RemoveIt")
+     oRemoveIt.SHOW
+     oRemoveIt.DOCK(0)      &amp;&amp; This docks the toolbar on the top
+
+     DEFINE CLASS RemoveIt AS toolbar
+        Height = 27
+        Left = 0
+        Top = 0
+        Width = 665
+        Name = "RemoveIt"
+
+        ADD OBJECT command1 AS commandbutton WITH ;
+           Top = 4, ;
+           Left = 6, ;
+           Height = 24, ;
+           Width = 24, ;
+           FontSize = 8, ;
+           Picture = "C:\VFP\Samples\Graphics\BMPs\Fox\Delete.bmp", ;
+           Caption = "", ;
+           Default = .F., ;
+           ToolTipText = "Remove Objects From Active Form", ;
+           Name = "Command1"
+
+        PROCEDURE command1.Click
+           IF TYPE('_screen.ActiveForm')=='O'
+              IF NOT ISNULL (_Screen.ActiveForm)
+                 =AMEMBERS(FormObjects,_Screen.ActiveForm,2)
+                 FOR i = 1 to ALEN(FormObjects)
+                    _Screen.ActiveForm.RemoveObject(FormObjects(i))
+                 ENDFOR
+              ENDIF
+           ELSE
+              =MESSAGEBOX("No Form is currently open.","")
+           ENDIF
+        ENDPROC
+
+     ENDDEFINE
+
+2. Save and run the program. The result should be a single tool button on a
+  toolbar that is docked at the top of the main Visual FoxPro window. If the
+  tool button is clicked while a form is open, all of the form's objects will
+  be removed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

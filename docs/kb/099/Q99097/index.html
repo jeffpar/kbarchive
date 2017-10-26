@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99097: HOWTO: Customize Common Dialog Box Parameter Blocks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99097: HOWTO: Customize Common Dialog Box Parameter Blocks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99097/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99097/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99097/","publisher":null,"image":null,"headline":"Q99097: HOWTO: Customize Common Dialog Box Parameter Blocks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99097-howto-customize-common-dialog-box-parameter-blocks">Q99097: HOWTO: Customize Common Dialog Box Parameter Blocks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99097
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,7.0
+Operating System(s): 
+Keyword(s): kbCmnDlg kbDlg kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDS
+Last Modified: 26-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft C/C++, version 7.0 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 4.0, 4.1, 4.2, 5.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Foundation Classes (MFC) Standard Dialog Classes provide
+convenient C++ wrappers for the Microsoft Windows Common Dialog Boxes
+dynamic-link library (DLL), COMMDLG.DLL. To customize one of these classes, you
+may need to modify some of the default parameter block members. The wrapper
+functions use the same parameter blocks as the corresponding common dialog
+functions because, ultimately, the code calls the Windows functions.
+
+  Microsoft
+  Foundation Classes   Windows Common Dialog   Parameter Block
+  -------------------------------------------------------------------
+  CFileDialog          GetOpenFileName and     OPENFILENAME
+                         GetSaveFileName
+  CFontDialog          ChooseFont              CHOOSEFONT
+  CColorDialog         ChooseColor             CHOOSECOLOR
+  CPrintDialog         PrintDlg                PRINTDLG
+  CFindReplaceDialog   FindText and            FINDREPLACE
+                         ReplaceText
+
+For Microsoft Foundation Classes version 1.0, distributed with Microsoft C/C++
+version 7.0, Technical Note #13 provides additional information about these
+classes and how to use them. Technical Note #13 is in the TN013.TXT file in the
+MFC\DOC directory (by default, C:\C700\MFC\DOC). For Microsoft Foundation
+Classes library versions 2.x, 3.x, and 4.x, each of these functions is listed in
+the online documentation and in the "Class Library Reference" manual by its
+class name.
+
+Even though the parameter block defaults that the Microsoft Foundation Classes
+library provides are generally adequate, there are times it may be necessary to
+customize a dialog box. For example, it may be helpful to specify the
+OFN_ALLOWMULTISELECT flag with the CFileDialog to allow the user to select more
+than one file in the GetOpenFileName dialog box.
+
+If you add a flag, however, you must be careful to provide any additional
+information as appropriate. For example, CFileDialog provides a default buffer
+m_szFileName that is _MAX_PATH characters in length. If you allow the user to
+select more than one file, this buffer capacity can be exhausted quickly.
+
+Even though the CFileDialog class was designed with a buffer to support only one
+file, it is an easy matter to provide your own buffer by setting the
+m_ofn.lpstrFile and m_ofn.nMax members of the OPENFILENAME parameter block
+yourself after constructing your CFileDialog, but before calling DoModal().
+
+The text below demonstrates this method of replacing the default CFileDialog
+buffer. However, similar techniques apply to any of the standard dialog box
+classes. In general, when you change any of the default flags, you should
+examine the Microsoft Foundation Classes library source code to determine the
+effects of the change, if any, and to take appropriate action.
+
+MORE INFORMATION
+================
+
+The following code fragment demonstrates using CFileDialog to select multiple
+files by adding the OFN_ALLOWMULTISELECT flag and using an application-supplied
+buffer:
+
+  #include &lt;afxdlgs.h&gt;
+
+  char bigBuff[2048] = "";  // maximum common dialog buffer size
+     char szFilter[] =
+        "All Files (*.*)|*.*|Text Files (*.txt)|*.txt||";
+     CFileDialog dlg(TRUE, NULL, NULL,
+        OFN_HIDEREADONLY | OFN_ALLOWMULTISELECT, szFilter);
+
+     // Modify OPENFILENAME members directly to point to bigBuff
+     dlg.m_ofn.lpstrFile = bigBuff;
+     dlg.m_ofn.nMaxFile = sizeof(bigBuff);
+
+     dlg.DoModal(); 
+
+There are a number of circumstances in which it is desirable to add a custom
+template and/or a hook function to the Windows common dialog boxes. To do so,
+modify fields in the appropriate common dialog box parameter block. When the
+application uses the Microsoft Foundation Classes library, modify these fields
+after creating the dialog object but before calling DoModal(), as illustrated
+above.
+
+For more information on using a custom template or a hook function with one of
+the common dialog boxes, please query in the Microsoft Knowledge Base on the
+following words:
+
+  steps add hook function
+
+  steps add custom template
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCmnDlg kbDlg kbMFC KbUIDesign kbVC100 kbVC150 kbVC200 kbVC400 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,7.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

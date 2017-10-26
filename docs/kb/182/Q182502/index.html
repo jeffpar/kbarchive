@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182502: XADM: Changes Made to Performance Monitor in Exchange 5.5 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182502: XADM: Changes Made to Performance Monitor in Exchange 5.5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182502/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182502/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182502/","publisher":null,"image":null,"headline":"Q182502: XADM: Changes Made to Performance Monitor in Exchange 5.5","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182502-xadm-changes-made-to-performance-monitor-in-exchange-55">Q182502: XADM: Changes Made to Performance Monitor in Exchange 5.5</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182502
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): kbusage exc55
+Last Modified: 16-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article details the changes that were made to the Performance Monitor
+counters with the release of Exchange Server 5.5. The changes reflect only the
+modifications made since Exchange Server version 5.0.
+
+MORE INFORMATION
+================
+
+A new object was added: MSExchangeES- For Event Services.
+
+The MSExchangeDB object was removed. It was replaced with the Database Object
+which contains similar information (counters) with a few changes.
+
+Besides these two changes, all other modifications were made within the existing
+object's counters.
+
+The following is a list of the existing objects and the changes made to the
+counters list under these objects:
+
+1. MSExchange Internet Protocols
+  Counter Modifications:
+
+  a. Added IMAP4.
+
+2. MSExchangeISPub
+  Counter Modifications:
+
+  a. No NNTP or Newsfeed under this object.
+
+  b. Added Number of Messages Expired from Public Folders.
+
+  c. Added Replication Receive Queue Size.
+
+  d. Added Total Count of Recoverable Items.
+
+  e. Added Total Size of Recoverable Items.
+
+3. MSExchangeISPriv
+  Counter Modifications:
+
+  a. Added Total Count of Recoverable Items.
+
+  b. Added Total Size of Recoverable Items.
+
+  c. Added Local Deliveries.
+
+  d. Added Local Delivery Rate.
+
+  e. No longer has: Messages Sent via POP3, Number of Folders, or POP3 Messages
+     Sent.
+
+4. MSExchangeIS
+  Counter Modifications:
+
+  a. Added IMAP4, Newsfeed, and NNTP items to this object.
+
+  b. Added Number of Article Index Table Rows Expired.
+
+  c. Added POP3 Commands Issued.
+
+  d. Added POP3 Commands Issued Rate.
+
+  e. Added POP3 Messages Send.
+
+  f. Added POP3 Messages Sent.
+
+5. MSExchangeIMC
+  Counter Modifications:
+
+  a. Added Total Failed Conversions.
+
+  b. Added Total Inbound Kilobytes.
+
+  c. Added Total Inbound Recipients.
+
+  d. Added Total Kilobytes Queued.
+
+  e. Added Total Loops Detected.
+
+  f. Added Total Messages Queued.
+
+  g. Added Total Outbound Kilobytes.
+
+  h. Added Total Outbound Recipients.
+
+  i. Added Total Recipients Queued.
+
+  j. Added Total Successful Conversions.
+
+6. MSExchangeMTA
+  Counter Modifications:
+
+  a. Added Deferred Delivery Messages.
+
+  b. Added Inbound Bytes Total.
+
+  c. Added Inbound Messages Total.
+
+  d. Added Outbound Bytes Total.
+
+  e. Added Outbound Messages Total.
+
+  f. Added Total Failed Conversions.
+
+  g. Added Total Loops Detected.
+
+  h. Added Total Recipients Inbound.
+
+  i. Added Total Recipients Outbound.
+
+  j. Added Total Recipients Queued.
+
+  k. Added Total Successful Conversions.
+
+  l. Added Total Work Queue Bytes.
+
+7. MSExchangeMTA Connections
+  Counter Modifications:
+
+  a. Added Connector Index.
+
+  b. Added Cumulative Inbound Associations.
+
+  c. Added Cumulative Outbound Associations.
+
+  d. Added Current Inbound Associations.
+
+  e. Added Current Outbound Associations.
+
+  f. Added Failed Outbound Associations.
+
+  g. Added Inbound Bytes Total.
+
+  h. Added Inbound Messages Total.
+
+  i. Added Inbound Reject Reason.
+
+  j. Added Inbound Rejected Total.
+
+  k. Added Last Inbound Association.
+
+  l. Added Last Outbound Association.
+
+  m. Added Next Association Retry.
+
+  n. Added Oldest Message Queued.
+
+  o. Added Outbound Bytes Total.
+
+  p. Added Outbound Failure Reason.
+
+  q. Added Outbound Messages Total.
+
+Additional query words: perfmon
+
+======================================================================
+Keywords          : kbusage exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

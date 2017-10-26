@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125328: PC Ext: Purpose of CommInOnly Option for External | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125328: PC Ext: Purpose of CommInOnly Option for External" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125328/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125328/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125328/","publisher":null,"image":null,"headline":"Q125328: PC Ext: Purpose of CommInOnly Option for External","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125328-pc-ext-purpose-of-comminonly-option-for-external">Q125328: PC Ext: Purpose of CommInOnly Option for External</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125328
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2,3.2a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two scenarios when using the CommInOnly option for the Message
+Transfer Agent (MTA), EXTERNAL.EXE, can be helpful.
+
+1. When setting up two MTAs that will be connected to each other via modem, it
+  is possible that they may try dialing each other at the same time. This will
+  happen if they both have outgoing messages queued and the dialing interval
+  time has elapsed. This will cause the modems to both be busy and not connect
+  to each other, resulting in no mail transferred on that attempt. If you add
+  the CommInOnly option to MTA1, then MTA1 will never attempt to dial out. It
+  will only accept incoming calls. Therefore, outgoing messages queued to be
+  sent from MTA1 to MTA2 will not get delivered until MTA2 dials into MTA1. The
+  External Mail program only dials out if there is outbound mail.
+
+
+2. Use the CommInOnly option when setting up an MTA that only remote users dial.
+  This will prevent that MTA from dialing out to another postoffice and keep
+  the modem free for incoming remote users. This option does not hinder the
+  remote users ability to send or receive messages.
+
+MORE INFORMATION
+================
+
+Please see page 252 in the "Administrator's Guide" for version 3.2 of Microsoft
+Mail for PC Networks.
+
+CommInOnly option
+-----------------
+
+  In .INI file : CommInOnly
+  On command line: /CommInOnly or -KI
+
+Use this option to specify that the remote communications link (CommType of
+asynchronous modem, X.25 Eicon, or X.25 Atlantis board) is to transfer incoming
+messages. Do not use this option with the CommOutOnly option. If you do not
+specify this option or the CommOutOnly option or set one-way mail for the
+postoffice with the Administrators program (ADMIN.EXE), two way mail transfer
+occurs.
+
+Additional query words: 3.20 3.20a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : :3.2,3.2a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149558: HOWTO: Create an .MDB File for Microsoft Access Databases | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149558: HOWTO: Create an .MDB File for Microsoft Access Databases" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149558/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149558/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149558/","publisher":null,"image":null,"headline":"Q149558: HOWTO: Create an .MDB File for Microsoft Access Databases","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149558-howto-create-an-mdb-file-for-microsoft-access-databases">Q149558: HOWTO: Create an .MDB File for Microsoft Access Databases</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149558
+Product(s): Microsoft C Compiler
+Version(s): 3.0,3.5,3.51,3.6
+Operating System(s): 
+Keyword(s): kbprogramming kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbGrpDSVCDB
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The DAO SDK, versions 3.0, 3.5, 3.51, 3.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Prior to the release of the Microsoft ODBC Desktop Driver Pack version 2.0,
+there was no way to programmatically create a Microsoft Access database (an .mdb
+file). For more details about this, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q118609 HOWTO: Create an .MDB File for Microsoft Access Databases
+
+With the release of the version 2.0 driver pack and higher, MFC ODBC applications
+can now create .mdb files. Additionally, with the incorporation of DAO into
+Visual C++ 4.x or higher, you have another way to create Microsoft Access
+databases programmatically.
+
+MORE INFORMATION
+================
+
+Using the Microsoft Access ODBC Driver to Create .MDB Files
+-----------------------------------------------------------
+
+Kyle Geiger's book "Inside ODBC" provides a sample program, ODBCACC, that nicely
+demonstrates how to use the ODBC installer DLL API function SQLConfigDataSource
+to create an .mdb file. The syntax of the function call is:
+
+     BOOL SQLConfigDataSource(hwndParent, fRequest, lpszDriver,
+                              lpszAttributes)
+
+Where:
+
+  hwndParent is either NULL if no dialogs are to be displayed or a valid hwnd
+  to act as parent to any driver generated dialogs.
+
+  fRequest is ODBC_ADD_DSN to specify creation of the .mdb file.
+
+  lpszDriver is Microsoft Access Driver (*.mdb).
+
+  lpszAttributes is "CREATE_DB=&lt;path&gt;&lt;filename&gt;.mdb &lt;sort
+  order&gt;\0" where the &lt;path&gt;&lt;filename&gt; combination identifies
+  where the file should be created and &lt;sort order&gt; is language sorting
+  order (for example, General). &lt;path&gt; must be specified even if the .mdb
+  is to be created in the current working directory. Use standard relative path
+  syntax.
+
+NOTE: Unlike most other ODBC API functions, SQLConfigDataSource returns a boolean
+value. This return value is TRUE if the .mdb was created, FALSE if creation
+failed.
+
+To use the installer DLL functions, you must:
+
+- Use #include &lt;ODBCINST.H&gt;.
+
+- Link with Odbcinst.lib for 16-bit applications.
+
+- Link with Odbccp32.lib for 32-bit applications.
+
+NOTE: The functionality of SQLConfigDataSource is available through the ODBC
+Administrator. If you choose to add a new Microsoft Access datasource, the
+driver dialog includes a Create button that you can use to create an .mdb file
+interactively.
+
+Using DAO to Create .MDB Files
+------------------------------
+
+DAO allows applications developed with Visual C++ 4.x to interface with the
+Microsoft Jet database engine directly. This allows more efficient manipulation
+of Microsoft Access objects than can be achieved through ODBC, including the
+creation of .mdb files. For a sample program that demonstrates how to create
+databases and other objects, search the Microsoft Knowledge Base for the
+DAOTABLE sample.
+
+Sample Code
+-----------
+
+Use of SQLConfigDataSource ODBC installer DLL API function:
+
+  BOOL fCreated;
+  fCreated = SQLConfigDataSource(NULL,
+                          ODBC_ADD_DSN,
+                         "Microsoft Access Driver (*.mdb)",
+                         "CREATE_DB=.\\ATest.mdb General\0" );
+
+This will create ATest.mdb in the application's working directory using general
+sorting.
+
+REFERENCES
+==========
+
+"Inside ODBC" by Kyle Geiger, Microsoft Press ISBN 1-55615-815-7.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base in the ODBC collection:
+
+  Q126606 INFO: Accessing CREATE_DB, REPAIR_DB, and COMPACT_DB
+
+Additional query words: data base creation creating kbvc151 kbvc152 kbvc200 kbvc210 kbvc220 kbvc400 kbvc500 kbvc600
+
+======================================================================
+Keywords          : kbprogramming kbDAOsearch kbDatabase kbMFC kbODBC kbVC kbGrpDSVCDB 
+Technology        : kbAudDeveloper kbDAOsearch kbSDKDAOSearch kbSDKSearch kbSDKDAO300 kbSDKDAO350 kbSDKDAO360 kbSDKDAO351
+Version           : :3.0,3.5,3.51,3.6
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

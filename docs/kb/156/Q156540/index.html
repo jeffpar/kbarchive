@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156540: SMS: How Systems Management Server Uses the Smsls.ini File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156540: SMS: How Systems Management Server Uses the Smsls.ini File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156540/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156540/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156540/","publisher":null,"image":null,"headline":"Q156540: SMS: How Systems Management Server Uses the Smsls.ini File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156540-sms-how-systems-management-server-uses-the-smslsini-file">Q156540: SMS: How Systems Management Server Uses the Smsls.ini File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156540
+Product(s): Microsoft Systems Management Server
+Version(s): 1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork kbsetup kbInventory smssetup smsinv
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SETLS program is run from the Smsls.bat and Smsls.cmd files. The Smsls.ini
+file is used by SETLS to determine which domain to add the current workstation
+to.
+
+The Smsls.ini file enables the administrator to map computers to a specific
+domain, regardless of which domain the computer actually logs on to. The
+Smsls.ini file is used to provide additional control over what domain and server
+the setup and inventory programs are run from.
+
+NOTE: Systems Management Server allows the creation of Systems Management Server
+domain names that may or may not correspond to Windows NT domains. When mapping
+computers to specific domains, actual Windows NT domain names must be used.
+
+
+The following sections are available for use in the Smsls.ini file:
+
+[WIN.INI]
+This section enables workstations running Windows to use the domain specified by
+the [SMS] section of the workstation's Win.ini file. The [WIN.INI] section of
+the Smsls.ini file requires no entries. To set the workstation's Systems
+Management Server domain, the administrator creates an [SMS] section in the
+Win.ini file (at the workstation running Windows), and adds the domain entry to
+that section.
+
+[other domain]
+This section enables workstations running Enhanced LAN Manager 2.x to use the
+domains in the OTHDOMAINS entry of the WORKSTATION section of the workstation's
+Lanman.ini file to map to a Systems Management Server domain. The SETLS program
+tries to map a domain in the OTHDOMAINS entry starting with the first domain in
+the OTHDOMAINS entry. In the Smsls.ini file, you add the [OTHER DOMAIN] section
+with entries that map the domain entries for the OTHDOMAINS in the Lanman.ini
+file of the workstation to Systems Management Server domains.
+
+[workgroup]
+This section enables workstations running Windows NT, Windows for Workgroups,
+Windows95, or MS-DOS Workgroup Connection to map the workgroup set on the
+workstation to a Systems Management Server domain. This section also allows
+Windows NT clients that are members of a Windows NT resource domain to be mapped
+to that domain in the Systems Management Server hierarchy.
+
+[domain]
+This section enables workstations running Windows NT, Windows for Workgroups,
+MS-DOS Workgroup Connection, or Enhanced LAN Manager 2.x to map the domain where
+the workstation user is currently logged on to a Systems Management Server
+domain.
+
+[machine]
+This section enables workstations running Windows NT, Windows for Workgroups,
+MS-DOS Workgroup Connection, or Enhanced LAN Manager 2.x to map individual
+computers to a Systems Management Server domain.
+
+MORE INFORMATION
+================
+
+There are several methods available for mapping domains, and any number or
+combination of the methods may be used. The Smsls.ini file will be searched
+sequentially from top to bottom. The first method that provides a server will be
+used; then the search stops. The administrator may organize the sections to set
+the desired priorities.
+
+SETLS will get the information for the current computer that corresponds to the
+section being examined (for example, the machine name and workgroup
+information). SETLS compares the current value to the entries in that section.
+When a match is found, the domain on the right-hand side of the equal sign ("=")
+is used.
+
+The following examples show different entries in the Smsls.ini file:
+
+- To Map a Domain to a Logon Server:
+
+        [DOMAIN]
+        PSUEDOMAIN=\\SMS1
+
+  The server name must be preceded by a double backslash (\\). In this example,
+  workstations that have logged into PSUEDOMAIN are mapped to the server SMS1.
+
+- To Map Individual Computers to a Domain:
+
+        [MACHINE]
+        TIM1=PSUEDOMAIN
+        BRIANL3=PSUEDOMAIN
+
+  In this example, the computers TIM1 and BRIANL3 are mapped to the PSUEDOMAIN
+  domain.
+
+- To Map One Domain to Another Domain:
+
+        [DOMAIN]
+        CSUEWEST=PSUEDOMAIN
+        CSUEEAST=PSUEDOMAIN
+
+  In this example, users logging on to the CSUEWEST and CSUEEAST domains will be
+  mapped to the PSUEDOMAIN.
+
+- To Map a Lan Manager Domain to a Windows NT domain:
+
+        [OTHER DOMAIN]
+        CSUESOUTH=PSUEDOMAIN
+
+  In this example, computers in the CSUESOUTH domain are mapped to the
+  PSUEDOMAIN domain.
+
+Systems Management Server 1.2 Enhancements
+------------------------------------------
+
+In Systems Management Server version 1.2, additional functionality was added to
+support mapping a client to a Systems Management Server domain and site
+combination, or to a specific logon server. There are three additional types of
+mapping available in each section.
+
+- To Map a Workgroup to a Domain:
+
+        [WORKGROUP]
+        CSUETEST=CSUECORP
+        CSUDEV=CSUECORP
+
+  In this example, the computers running Windows in the CSETEST and CSUDEV
+  workgroups are mapped to the CSUECORP domain, and Windows NT clients whose
+  machine accounts are in the CSETEST and CSUDEV domains will be mapped to the
+  CSUECORP domain.
+
+
+- To Map a Computer to a Logon Server:
+
+  [MACHINE]
+  CL7=\\SERVER1
+
+  In this example, the client CL7 is mapped to the server SERVER1.
+
+- To Map a Domain to a Site:
+
+  [DOMAIN]
+  WESTERN=CORP:S01
+
+  In this example, clients in the WESTERN domain are mapped to the CORP domain's
+  site S01.
+
+These enhancements now allow logon scripts to be used where there are multiple
+sites within a single Windows NT domain. In addition, a client can be mapped
+directly to a specified server. This allows the administrator to specify which
+Systems Management Server logon server will be used in domains where there are
+multiple domain controllers.
+
+For more information on the Smsls.ini file and its options, see Installing Sites
+in the Administrator's Guide.
+
+Additional query words: prodsms smsls
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbsetup kbInventory smssetup smsinv 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : :1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

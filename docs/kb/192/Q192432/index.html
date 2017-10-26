@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192432: Err Msg: Msimn Caused an Invalid Page Fault in Module Msimnui.dl | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192432: Err Msg: Msimn Caused an Invalid Page Fault in Module Msimnui.dl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192432/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192432/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192432/","publisher":null,"image":null,"headline":"Q192432: Err Msg: Msimn Caused an Invalid Page Fault in Module Msimnui.dl","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192432-err-msg-msimn-caused-an-invalid-page-fault-in-module-msimnuidl">Q192432: Err Msg: Msimn Caused an Invalid Page Fault in Module Msimnui.dl</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192432
+Product(s): The Microsoft Network
+Version(s): 2.5,2.51,2.52,2.6,4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbmsn
+Last Modified: 09-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+- the operating system: Microsoft Windows 95 
+- Microsoft Outlook Express version 4.0 for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to view the contents of the Inbox in Microsoft Outlook Express,
+you may receive the following error message:
+
+  Msimn caused an invalid page fault in module Msimnui.dll.
+
+CAUSE
+=====
+
+This behavior can occur if the Inbox.idx file and possibly the folders.nch file,
+used in Outlook Express 4.0 and earlier, are damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, we recommend that you first upgrade to the latest version
+of Outlook Express. Outlook Express 5.0 and later do not use the file which is
+causing this problem.
+
+Outlook Express comes as part of MSN versions 5.5 and earlier. Outlook Express
+also comes as part of Internet Explorer, which you can upgrade by going to
+http://www.microsoft.com/ie/
+
+If upgrading is not a possibility, to resolve this issue, rebuild the Inbox.idx
+and folders.nch files:
+
+1. Quit Outlook Express.
+
+2. Click Start, point to Find, and then click "Files or Folders".
+
+3. In the Named box, type inbox.idx folders.nch, and then click Find Now.
+
+4. Right-click the Inbox.idx file, click Rename, and then type inbox.idx.old and
+  press Enter.
+
+5. Right-click the folders.nch file, click Rename, and then type folders.nch.old
+  and press Enter.
+
+6. Close the Find: Files Named Inbox.idx window, and then restart your computer.
+
+The next time you start Outlook Express, the program automatically rebuilds these
+files.
+
+Note: You may also need to rename the Inbox.mbx. If the issue persists, follow
+the steps above to rename the Inbox.mbx file.
+
+See also Q172517 - OLEXP: IPF in Msimnui.dll After Upgrading Earlier version of
+Internet Explorer
+
+MORE INFORMATION
+================
+
+
+Additional query words: 4.0 msnet msnetwork microsoft-net m.s.n. outexw95 IFP 2.50 2.51 2.52 2.60 kbimu, the specified protocol is unknown
+
+======================================================================
+Keywords          : kberrmsg kbmsn 
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpress95Search kbOutlookExpress400Win95 kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : :2.5,2.51,2.52,2.6,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

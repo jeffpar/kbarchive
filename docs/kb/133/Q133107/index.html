@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133107: FIX: C1001 Error If More Than 127 Function Parameters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133107: FIX: C1001 Error If More Than 127 Function Parameters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133107/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133107/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133107/","publisher":null,"image":null,"headline":"Q133107: FIX: C1001 Error If More Than 127 Function Parameters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133107-fix-c1001-error-if-more-than-127-function-parameters">Q133107: FIX: C1001 Error If More Than 127 Function Parameters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133107
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1
+Operating System(s): 
+Keyword(s): kberrmsg kbCompiler
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling a file with a function definition that has more than 127
+parameters, the compiler generates this error message:
+
+  fatal error C1001: INTERNAL COMPILER ERROR
+  (compiler file 'd:\b_bld\c2.m2\P2\p2symtab.c', line 697)
+
+CAUSE
+=====
+
+Although the compiler message is unclear, which is a bug, the compiler limit for
+the number of parameters passed by a function is 127. This limit applies for any
+type of parameters and is by design.
+
+RESOLUTION
+==========
+
+Do not use more than 127 parameters for a function. One alternative is to use a
+structure to pass any number of variables as one parameter.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in the compiler that ships
+with Microsoft Visual C++, 32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Problem
+--------------------------------
+
+  /* Compile options needed: any */ 
+
+  int ArgBug(int XX001, int XX002, int XX003, int XX004, int XX005,
+             int XX006, int XX007, int XX008, int XX009, int XX010,
+             int XX011, int XX012, int XX013, int XX014, int XX015,
+             int XX016, int XX017, int XX018, int XX019, int XX020,
+             int XX021, int XX022, int XX023, int XX024, int XX025,
+             int XX026, int XX027, int XX028, int XX029, int XX030,
+             int XX031, int XX032, int XX033, int XX034, int XX035,
+             int XX036, int XX037, int XX038, int XX039, int XX040,
+             int XX041, int XX042, int XX043, int XX044, int XX045,
+             int XX046, int XX047, int XX048, int XX049, int XX050,
+             int XX051, int XX052, int XX053, int XX054, int XX055,
+             int XX056, int XX057, int XX058, int XX059, int XX060,
+             int XX061, int XX062, int XX063, int XX064, int XX065,
+             int XX066, int XX067, int XX068, int XX069, int XX070,
+             int XX071, int XX072, int XX073, int XX074, int XX075,
+             int XX076, int XX077, int XX078, int XX079, int XX080,
+             int XX081, int XX082, int XX083, int XX084, int XX085,
+             int XX086, int XX087, int XX088, int XX089, int XX090,
+             int XX091, int XX092, int XX093, int XX094, int XX095,
+             int XX096, int XX097, int XX098, int XX099, int XX100,
+             int XX101, int XX102, int XX103, int XX104, int XX105,
+             int XX106, int XX107, int XX108, int XX109, int XX110,
+             int XX111, int XX112, int XX113, int XX114, int XX115,
+             int XX116, int XX117, int XX118, int XX119, int XX120,
+             int XX121, int XX122, int XX123, int XX124, int XX125,
+             int XX126, int XX127, int XX128)
+  {
+     return  0;
+  }
+
+Additional query words: 2.00 2.10 4.0
+
+======================================================================
+Keywords          : kberrmsg kbCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbVC200 kbVC210
+Version           : :2.0,2.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

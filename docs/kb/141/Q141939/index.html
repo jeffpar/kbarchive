@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141939: HOWTO: Create an OLE Server to Implement &quot;Thunking&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141939: HOWTO: Create an OLE Server to Implement &quot;Thunking&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141939/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141939/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141939/","publisher":null,"image":null,"headline":"Q141939: HOWTO: Create an OLE Server to Implement &quot;Thunking&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141939-howto-create-an-ole-server-to-implement-thunking">Q141939: HOWTO: Create an OLE Server to Implement "Thunking"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141939
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbVBp400
+Last Modified: 13-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An out-of-process OLE server (that is, an EXE) may be called by either a 16- bit
+or 32-bit program. Hence, it can be used as an interface between a 16- bit
+program that requires the services of a 32-bit DLL, or a 32-bit program that
+calls functions inside a 16-bit application/DLL. This permits the OLE system
+DLLs to handle any necessary "thunking" of the 16-bit to 32-bit or 32-bit to
+16-bit translations.
+
+This article demonstrates how the functions contained in a 16-bit DLL can be
+called from a 32-bit program using an OLE server as an intermediary.
+
+MORE INFORMATION
+================
+
+A key goal of OLE is to establish a standardized way for objects to be created
+and to communicate with one another. This communication can take place between
+applications even if they are written in different languages. Because OLE
+defines the interface, it handles the communication between the two objects.
+Please see the REFERENCES section below for more details.
+
+In particular, one useful corollary of the standardized interface that OLE
+demands is that an out-of-process OLE server can act as an intermediary to
+perform the "thunking" required if a 32-bit application needs to call a function
+contained in a 16-bit DLL and vice versa.
+
+Example: A 32-Bit Program Calling a 16-Bit DLL
+----------------------------------------------
+
+This example creates a 16-bit OLE server to wrap the functions contained in a
+16-bit DLL. In this example, the Mbf2ieee.dll is used. You must have this DLL in
+order to be able to complete this example. This DLL converts floating point
+numbers in the earlier Microsoft Binary Format (MBF) into IEEE format. For
+additional information about how to download Mbf2ieee.dll, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q113439 PRB: VB3: Converting MBF to IEEE in Visual Basic for Windows
+
+
+The file can be downloaded from the Microsoft Download Center as Mbf2ieee.exe.
+This DLL is an example of a 16-bit DLL that is difficult to update to 32-bit
+because the DLL calls two C run-time functions that have not been ported over to
+32-bit.
+
+Use the steps below to create the OLE server:
+
+1. Start a new Visual Basic project in Visual Basic 16-Bit Edition.
+
+2. Add a class module to the project by clicking the Insert/Class Module menu
+  option.
+
+3. Bring up the Property window for the class module and modify the following
+  properties:
+
+     Instancing:   2-Creatable MultiUse
+     Name:         OLE2MBF2IEEE
+     Public:       True
+
+4. In the new class module, place the following code in the General Declarations
+  section:
+
+        Private Declare Function cvs Lib "mbf2ieee.dll" _
+        (x As String) As Single
+        Private Declare Function cvd Lib "mbf2ieee.dll" _
+        (x As String) As Double
+        Private Declare Function mks Lib "mbf2ieee.dll" _
+        (x As Single) As String
+        Private Declare Function mkd Lib "mbf2ieee.dll" _
+        (x As Double) As String
+
+        Public Function CvsOle(x As String) As Single
+            CvsOle = cvs(x)
+        End Function
+
+        Public Function cvdole(x As String) As Double
+            cvdole = cvd(x)
+        End Function
+
+        Public Function mksole(x As Single) As String
+            mksole = mks(x)
+        End Function
+
+        Public Function mkdole(x As Double) As String
+            mkdole = mkd(x)
+        End Function
+
+5. Add a module to the project by clicking the Insert/Module menu option. Add a
+  single, empty subroutine to the code module:
+
+        Sub Main()
+        End Sub
+
+  This is required because the OLE server must either start in a "Sub Main"
+  subroutine or in a form. Because a form is not required for this OLE server,
+  including it would not be a good use of resources.
+
+6. Add a name for the project. On the Tools/Options menu, click the Project tab,
+  and enter the following settings:
+
+     Startup Form:   Sub Main()
+     Project Name:   MBFIEEEServer
+
+  Also, in this same tab, select the OLE Server radio button in the StartMode
+  frame.
+
+7. Build the server. On the File menu, click Make EXE, name the executable
+  Mbfole.exe, and place the EXE into the \vb directory.
+
+8. Exit from Visual Basic 16-bit edition.
+
+Now, it is a simple matter to make a client that makes uses of the server.
+
+1. Create a new project in Visual Basic, using any 32-bit edition. Form1 is
+  created by default.
+
+2. On the Tools menu, click References and place an x next to the MBFIEEEServer
+  option. Click Okay to close the dialog box.
+
+3. In the Form_Click event for the Form, place the following code:
+
+        Private Sub Form_Click()
+            Dim fInput As Single
+            Dim CVSString As String
+            Dim MBF as New OLE2MBF2IEEE
+            Dim newresult As String
+
+            fInput = 1234.6789  'IEEE format
+
+        'Convert from Single to string
+            newresult = MBF.mksole(fInput)
+
+        'Convert from String to single
+            CVSString = MBF.CvsOle(newresult)
+            MsgBox CStr(CVSString)
+        End Sub
+
+Run the program by pressing the F5 key. Click on Form1, and a message box will
+appear with the original number dimensioned in the routine. The OLE server has
+successfully called the Cvs and Mks functions.
+
+REFERENCES
+==========
+
+"Microsoft OLE Today and Tomorrow: Technology Overview," created December, 1993.
+Found under Backgrounders and White Papers, Operating System Extensions,
+Microsoft Developer Network CD-ROM.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q140520 PRB: Converting MBF to IEEE in Visual Basic for Windows
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp400 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157082: FIX: Rollback of a Shared File Rolls to Unexpected Version | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157082: FIX: Rollback of a Shared File Rolls to Unexpected Version" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157082/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157082/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157082/","publisher":null,"image":null,"headline":"Q157082: FIX: Rollback of a Shared File Rolls to Unexpected Version","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157082-fix-rollback-of-a-shared-file-rolls-to-unexpected-version">Q157082: FIX: Rollback of a Shared File Rolls to Unexpected Version</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157082
+Product(s): Microsoft SourceSafe
+Version(s): 4.0,4.0a
+Operating System(s): 
+Keyword(s): kbSSafe400bug kbSSafe500fix
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you Rollback a Shared file, the resulting version number may appear to be
+incorrect. For example, if your file contains 8 versions, and you elect to
+Rollback from version 8 to version 7, the History window will indicate that you
+rolled back to version 8, not 7 as expected.
+
+CAUSE
+=====
+
+When you Rollback a Shared file, Visual SourceSafe forces a Branch to occur. The
+additional version number is a result of the Branch that takes place when a
+shared file is rolled back.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual SourceSafe
+5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open or switch to Microsoft Visual SourceSafe.
+
+2. Select a file that has several versions and share it with another project.
+
+3. Open the History Window, and select the previous version of the file. For
+  example, if there are 10 versions, select version 9.
+
+4. Select the Rollback Command Button. You will be presented with a dialog that
+  notifies you that Rollback is undoable. Click the Yes Command Button.
+
+
+5. Note that the topmost item in the History Window is still the version number
+  that you rolled back from. The Action column also indicates that you rolled
+  back to the version number that you were rolling back from. For example, if
+  you were rolling back from version 10 to version 9, after the Rollback the
+  History Window still shows 10 versions, with version 10 reading "Rolled Back
+  to Version 10."
+
+REFERENCES
+==========
+
+For more information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q157813 FIX: Branch or Rollback of Shared File May Cause Corruption
+
+  Q156717 PRB: Rollback of Shared Files Forces a Branch
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500fix 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : :4.0,4.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

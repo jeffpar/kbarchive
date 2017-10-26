@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62127: Mac Hyp: Retrieving Data from a MessageList | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62127: Mac Hyp: Retrieving Data from a MessageList" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62127/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62127/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62127/","publisher":null,"image":null,"headline":"Q62127: Mac Hyp: Retrieving Data from a MessageList","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62127-mac-hyp-retrieving-data-from-a-messagelist">Q62127: Mac Hyp: Retrieving Data from a MessageList</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62127
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Software Development Kit (SDK) for HyperCard, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following routine retrieves information from a messageList created by
+getMessageList or displayMessageCenter in Microsoft Mail version 2.00:
+
+     msmail(GetMessageListField, messageList, fieldName[,index])=&gt;data
+
+What is returned depends on the value of the "fieldName" parameter:
+
+1. "messageCount" returns the number of messages in the list.
+
+2. "type" returns the 4-character message type.
+
+3. "ID" returns the message's unique ID number.
+
+4. "read" returns true if the message has already been read; otherwise, it
+  returns false.
+
+5. "enclosure" returns true if the message contains an attached file; otherwise,
+  it returns false.
+
+6. "urgent" returns true if the message is urgent; otherwise it returns false.
+
+7. "sender" returns the sender's name.
+
+8. "subject" returns the message subject.
+
+9. "receivedDate" returns the received date in seconds since 1904.
+
+MORE INFORMATION
+================
+
+If "index" is supplied, getMessageListField returns the value of that field for
+the message indicated by "index." So, to find out whether the third message has
+been read, type the following:
+
+  " put msmail(getMessageListField, messageList, "read", 3) into isRead "
+  (without the quotation marks)
+
+If "index" is not supplied, getMessageListField returns a list of values, one for
+each message in the message list, followed by a return:
+
+  put msmail(getMessageListField, messageList, "sender") into sndr
+
+If the message list has multiple messages in it, "sndr" will contain:
+
+  sender of message 1&lt;return&gt;
+  sender of message 2&lt;return&gt;
+  ...
+
+If the message list has one message in it, "sndr" will contain:
+
+  sender of message 1&lt;return&gt;
+
+This information is taken from the "Microsoft Mail HyperCard Interface
+Documentation."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200
+Version           : :2.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

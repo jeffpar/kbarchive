@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271926: BUG: Memory Leak in ATL OLE DB Consumer Template Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271926: BUG: Memory Leak in ATL OLE DB Consumer Template Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271926/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271926/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271926/","publisher":null,"image":null,"headline":"Q271926: BUG: Memory Leak in ATL OLE DB Consumer Template Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271926-bug-memory-leak-in-atl-ole-db-consumer-template-functions">Q271926: BUG: Memory Leak in ATL OLE DB Consumer Template Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271926
+Product(s): Microsoft C Compiler
+Version(s): 3.0,6.0
+Operating System(s): 
+Keyword(s): kbATL kbDTL kbVC600bug kbATL300bug kbConsumer kbGrpDSVCDB kbDSupport MSGRAPH
+Last Modified: 28-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following Active Template Library (ATL) OLE DB consumer template methods do
+not properly release allocated memory, and therefore cause a memory leak:
+
+- OpenWithPromptFileName
+- OpenFromFileName
+- GetInitializationString
+
+These are all methods of the CDataSource class, which is defined in the
+Atldbcli.h header file.
+
+CAUSE
+=====
+
+These CDataSource methods do not release the memory for a string that was
+allocated for them. These methods call OLE DB functions that allocate the memory
+for the string and populate it. The OLE DB functions call the CoTaskMemAlloc
+function to allocate memory for the string, and the ATL OLE DB consumer caller
+gets the string back as a result.
+
+It is the caller's responsibility to free this memory. In this situation, the ATL
+code is the caller. It does not release the string after it is used, which
+causes the memory leak.
+
+RESOLUTION
+==========
+
+One workaround is to add code to free the allocated memory for the string at the
+the end of each of the methods listed above. The following code illustrates this
+workaround:
+
+  HRESULT GetInitializationString(BSTR* pInitializationString, bool bIncludePassword=false)
+  {
+          	// If the datasource isn't open, we're not going to get an init string.
+  	_ASSERTE(m_spInit != NULL);
+  	CComPtr&lt;IDataInitialize&gt; spDataInit;
+  	LPOLESTR    szInitString;
+  	HRESULT hr = CoCreateInstance(CLSID_MSDAINITIALIZE, NULL, CLSCTX_INPROC_SERVER,
+  		IID_IDataInitialize, (void**)&amp;spDataInit);
+  	if (FAILED(hr))
+  		return hr;
+  	hr = spDataInit-&gt;GetInitializationString(m_spInit, bIncludePassword, &amp;szInitString);
+
+  	if (SUCCEEDED(hr))
+  	        *pInitializationString = ::SysAllocString(szInitString);
+
+  	// Free the string here.
+  	if(szInitString) CoTaskMemFree((void*)szInitString);
+  	return hr;
+  }
+
+  HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(),
+                                 DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE,
+                                 LPCOLESTR szInitialDirectory = NULL)
+  {
+  	USES_CONVERSION;
+  	CComPtr&lt;IDBPromptInitialize&gt; spDBInit;
+
+  	HRESULT hr = CoCreateInstance(CLSID_DataLinks, NULL, CLSCTX_INPROC_SERVER,
+  		IID_IDBPromptInitialize, (void**) &amp;spDBInit);
+  	if (FAILED(hr))
+  		return hr;
+
+  	CComPtr&lt;IDBProperties&gt; spIDBProperties;
+  	LPOLESTR szSelected;
+
+  	hr = spDBInit-&gt;PromptFileName(hWnd,
+                                         dwPromptOptions,
+                                         szInitialDirectory,
+                                         L"*.udl",
+                                         &amp;szSelected);
+
+  	if (hr == S_OK)
+  		hr = OpenFromFileName(szSelected);
+  	else if (hr == S_FALSE) // The user clicked cancel.
+  		hr = MAKE_HRESULT(SEVERITY_ERROR, FACILITY_WIN32, ERROR_CANCELLED);
+
+  	// Free the string here.
+  	if(szSelected) CoTaskMemFree((void*)szSelected);
+
+  	return hr;
+  }
+
+  HRESULT OpenFromFileName(LPCOLESTR szFileName)
+  {
+  	CComPtr&lt;IDataInitialize&gt; spDataInit;
+  	LPOLESTR                 szInitString;
+
+  	HRESULT hr = CoCreateInstance(CLSID_MSDAINITIALIZE,
+                                         NULL,
+                                         CLSCTX_INPROC_SERVER,
+                                         IID_IDataInitialize,
+                                         (void**)&amp;spDataInit);
+  	if (FAILED(hr))
+  	   return hr;
+
+  	hr = spDataInit-&gt;LoadStringFromStorage(szFileName,&amp;szInitString);
+  	if (FAILED(hr))
+   	   return hr;
+
+  	hr = OpenFromInitializationString(szInitString);
+  	if (FAILED(hr))
+              return hr;
+
+  	//Done with the szInitString, so free the string here.
+  	if(szInitString) CoTaskMemFree((void*)szInitString);
+
+          return hr;
+  }
+
+To modify the header file, perform the following steps:
+
+1. Atldbcli.h is the main file that contains the implementation of ATL OLE DB
+  consumer template classes. It is best to make a copy of this header file in
+  your local project folder, and modify it directly there.
+
+2. Be sure to #include the new header file in your project, instead of the
+  original Atldbcli.h file.
+
+3. To confirm that your application is using the modified version of the header
+  file, set a breakpoint in one of the revised functions, and verify whether or
+  not the breakpoint is hit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a .udl file named Connection1.udl. For additional information on how
+  to create .udl files, click the article numbers below to view the articles in
+  the Microsoft Knowledge Base:
+
+  Q244659 MDAC 2.5 Sample How to Create a Data Link File with Windows 2000
+
+  Q195913 HOWTO: Generate ODBC and OLEDB Connection Strings with Data Links
+
+2. In Visual C++, create a new Win32 Console Application, and add the following
+  code:
+
+  #include &lt;atldbcli.h&gt;
+  void main()
+  {
+  	CoInitialize(NULL);	
+  	while(true){
+  		CDataSource db;
+  		HRESULT  hr;
+  		BSTR bstr;
+  		
+  		//hr = db.OpenWithPromptFileName();
+  		hr = db.OpenFromFileName(L"connection1.udl");
+  		if( hr != S_OK ) MessageBox(0,"Failure in OpenFromFileName","",1);
+  		
+  		hr = db.GetInitializationString(&amp;bstr);
+  		if( hr != S_OK ) MessageBox(0,"Failure in GetInitializationString","",1);
+  		if(bstr) CoTaskMemFree((void*)bstr);
+
+  		db.Close();
+  	}
+  	CoUninitialize();
+  }
+
+3. Build and run the application. As it runs, you can use the Microsoft Windows
+  NT Performance Monitor (PerfMon) to watch the memory usage increase, by
+  monitoring the Private Bytes that are used by this process.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbATL kbDTL kbVC600bug kbATL300bug kbConsumer kbGrpDSVCDB kbDSupport MSGRAPH 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :3.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

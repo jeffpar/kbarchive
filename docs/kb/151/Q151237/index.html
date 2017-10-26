@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151237: Error Message When Installing TCP/IP or Adding TCP/IP Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151237: Error Message When Installing TCP/IP or Adding TCP/IP Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151237/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151237/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151237/","publisher":null,"image":null,"headline":"Q151237: Error Message When Installing TCP/IP or Adding TCP/IP Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151237-error-message-when-installing-tcpip-or-adding-tcpip-service">Q151237: Error Message When Installing TCP/IP or Adding TCP/IP Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151237
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetworkkbfaq
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you attempt to reinstall TCP/IP or add a TCP/IP service, you may receive
+one or more of the following error messages:
+
+  - Registry service subkey already exists
+
+-or-
+
+  - Unable to remove name space provider
+
+RESOLUTION
+==========
+
+To resolve this problem, make sure that all of the components of a given TCP/IP
+Service are properly removed, and then make sure that the following registry
+subkeys are also removed before you restart the computer:
+
+IMPORTANT: If you have Windows NT 4.0 with Service Pack 2, see the following
+article in the Microsoft Knowledge Base before removing any registry keys:
+
+Q162837Replacing TCPIP after SP2 causes STOP 0x00000050
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+NOTE: You may or may not have all of the following Registry entries depending on
+your TCP/IP configuration.
+
+NOTE: CCS=CurrentControlSet
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\DhcpMibAgent
+HKEY_LOCAL_MACHINE\Software\Microsoft\DhcpServer
+HKEY_LOCAL_MACHINE\Software\Microsoft\FTPSVC
+HKEY_LOCAL_MACHINE\Software\Microsoft\LPDSVC
+HKEY_LOCAL_MACHINE\Software\Microsoft\NetBT
+HKEY_LOCAL_MACHINE\Software\Microsoft\RFC1156Agent
+HKEY_LOCAL_MACHINE\Software\Microsoft\SNMP
+HKEY_LOCAL_MACHINE\Software\Microsoft\SimpTcp
+HKEY_LOCAL_MACHINE\Software\Microsoft\Tcpip
+HKEY_LOCAL_MACHINE\Software\Microsoft\TcpipCU
+HKEY_LOCAL_MACHINE\Software\Microsoft\TcpPrint
+HKEY_LOCAL_MACHINE\Software\Microsoft\Wins
+HKEY_LOCAL_MACHINE\Software\Microsoft\WinsMibAgent
+
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\DHCP
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\DhcpServer
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\FTPSVC
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\Lmhosts
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\LPDSVC
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\NetBT
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\SimpTcp
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\SNMP
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\Tcpip
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\Wins
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\WinSock
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\WinSock2
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\&lt;NetDriver&gt;&lt;x&gt;\Parameters\Tcpip
+where &lt;NetDriver&gt; is the name of network card installed on system and
+where &lt;x&gt; is the number of the network adapter.
+
+It may also be necessary to remove the following keys:
+
+HKEY_LOCAL_MACHINE\System\CCS\Enum\Root\Legacy_DHCP
+HKEY_LOCAL_MACHINE\System\CCS\Enum\Root\Legacy_Lmhosts
+HKEY_LOCAL_MACHINE\System\CCS\Enum\Root\Legacy_LPDSVC
+HKEY_LOCAL_MACHINE\System\CCS\Enum\Root\Legacy_NetBT
+HKEY_LOCAL_MACHINE\System\CCS\Enum\Root\Legacy_TCPIP
+HKEY_LOCAL_MACHINE\System\CCS\Services\LanManServer\Linkage\Bind
+HKEY_LOCAL_MACHINE\System\CCS\Services\LanManWorkstation\Linkage\Bind
+HKEY_LOCAL_MACHINE\SYSTEM\CCS\Services\PPTP
+
+NOTE: Removing these additional keys requires manipulation of the rights on those
+keys. The default rights for Everyone is Read. This needs to be done for each
+key you wish to remove. To change the rights, log on as Administrator, run
+Regedt32.exe, and select the key you want to delete. From the menu, select
+Security, Owner, Take ownership. Then, Select Security, Permissions, and give
+full control to Everyone, selecting "Replace permission on existing subkeys."
+
+Restart the computer so that registry changes are recognized by Windows NT.
+
+If Remote Access Service (RAS) is installed, you may also need to manually delete
+the following RAS and NDISWANx registry entries:
+
+1. Locate HKEY_LOCAL_MACHINE\System\CCS\Services\NetBIOS\Linkage.
+
+2. Double-click Bind, and remove all NetBT_xxxx entries, such as:
+
+       \Device\NetBT_El59x1
+       \Device\NetBT_NdisWan1
+       \Device\NetBT_NdisWan2
+       \Device\NetBT_NdisWan3
+       \Device\NetBT_NdisWan4
+  HKEY_LOCAL_MACHINE\System\CCS\Services\RASARP
+  HKEY_LOCAL_MACHINE\System\CCS\Services\RASAUTO
+  HKEY_LOCAL_MACHINE\System\CCS\Services\RASMAN
+ HKEY_LOCAL_MACHINE\System\CCS\Services\RASACD
+ HKEY_LOCAL_MACHINE\System\CCS\Services\RASPPTPE
+ HKEY_LOCAL_MACHINE\System\CCS\Services\RASPPTPF
+ HKEY_LOCAL_MACHINE\System\CCS\Services\RASPPTPM
+ HKEY_LOCAL_MACHINE\System\CCS\Services\NDISWANx\Parameters\TCPIP
+  (where x reflects the numbers corresponding to the preceding  \Device\NetBT_NDISWANx.
+ HKEY_LOCAL_MACHINE\System\CCS\ENUM\Root\Legacy_RASARP
+ HKEY_LOCAL_MACHINE\System\CCS\ENUM\Root\Legacy_RASACD
+ HKEY_LOCAL_MACHINE\System\CCS\ENUM\Root\Legacy_RASAUTO
+ HKEY_LOCAL_MACHINE\System\CCS\ENUM\Root\Legacy_RASMAN
+ HKEY_LOCAL_MACHINE\System\CCS\ENUM\Root\Legacy_RASPPTPE
+ HKEY_LOCAL_MACHINE\System\CCS\ENUM\Root\Legacy_RASPPTPF
+ HKEY_LOCAL_MACHINE\System\CCS\ENUM\Root\Legacy_RASPPTPM
+
+Additional query words: remove manual manually regedt32 how to howto removing tcpip
+
+======================================================================
+Keywords          : kbnetwork kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

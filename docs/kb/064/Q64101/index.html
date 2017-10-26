@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q64101: Description of Expanded Memory Switches for BASIC PDS 7.10 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q64101: Description of Expanded Memory Switches for BASIC PDS 7.10" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/064/Q64101/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/064/Q64101/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/064/Q64101/","publisher":null,"image":null,"headline":"Q64101: Description of Expanded Memory Switches for BASIC PDS 7.10","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q64101-description-of-expanded-memory-switches-for-basic-pds-710">Q64101: Description of Expanded Memory Switches for BASIC PDS 7.10</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q64101
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900503-164 | mspl13_basic
+Last Modified: 15-JAN-1991
+
+This article describes the purpose and use of the switches that allow
+you to configure use of expanded memory (according to the LIM 4.0
+Expanded Memory Specification [EMS]) in BASIC PDS 7.00 and 7.10.
+Especially important is the description of the /Es switch and its
+relationship to the other expanded memory switches.
+
+This information applies to Microsoft BASIC Professional Development
+System versions 7.00 and 7.10 for MS-DOS.
+
+Saving and Restoring the Expanded Memory State
+----------------------------------------------
+
+By default, QBX.EXE and programs compiled with BC.EXE 7.00 or 7.10
+will only perform the minimum saving and restoring of the expanded
+memory state necessary to allow the program to work properly. This
+assumes that no third-party code using expanded memory is present. To
+get more than this minimal amount of expanded memory saving/restoring,
+you must specify /Es upon loading QBX or when compiling programs with
+BC.EXE. This is by design. If BASIC always saved and restored the
+state of expanded memory, the save/restore operations would have a
+significant speed impact on ISAM and on Quick library (.QLB) calling.
+The purpose of the /Es switch is to allow programs to use third-party
+code that uses expanded memory. The trade-off is a degradation in
+speed.
+
+Table of Expanded Memory Switches and Where You Can Use Them
+------------------------------------------------------------
+
+   Use With    Switch Name    Switch Purpose
+   --------    -----------    --------------
+
+   QBX only    /Ea            Arrays &gt; 512 bytes but &lt; 16K in
+                              expanded memory. Default: No arrays in
+                              expanded memory.
+
+   QBX only    /E:n           n = amount in kilobytes of expanded
+                              memory QBX will use. 0 means QBX uses no
+                              expanded memory. Default: Use all
+                              available expanded memory.
+
+   QBX and BC  /Es            Enable saving/restoring of expanded
+                              memory state.
+
+   PROISAM(D)  /Ie:n          Reserves n kilobytes of expanded memory
+                              for other applications (such as QBX).
+                              ISAM will only use 1.2 megabytes of
+                              expanded memory maximum.
+
+Examples: Use of Switches, Their Effects, and How They Interact
+---------------------------------------------------------------
+
+QBX /E:0
+--------
+
+- Causes QBX to disable use of expanded memory code storage.
+
+- If the program has ISAM using expanded memory, it is assumed there
+  is no third-party code accessing expanded memory. With /E:0, the
+  default for QBX is not to save/restore the expanded memory state on
+  ISAM use. This maximizes the speed of ISAM performance.
+
+QBX /E:0 /Es
+------------
+
+- Save/restore operations occur on any ISAM statements or QLB calls.
+  You would use this combination if you are loading QLBs that use
+  expanded memory and you are also using ISAM that is using expanded
+  memory.
+
+QBX /E:N and N Is Nonzero
+-------------------------
+
+- The expanded memory state is not saved/restored on QLB calls.
+
+- Save/restore operations occur on ISAM calls when both QBX and ISAM
+  are sharing expanded memory.
+
+- It is assumed there are no QLBs using expanded memory.
+
+QBX /Es or QBX /E:N /Es
+-----------------------
+
+- Forces save/restore operations on QLB calls and ISAM statements.
+
+- This would be used if you are using QBX and calling QLB routines that
+  access expanded memory.
+
+BC with No Expanded Memory Management Switches, No Overlays, No ISAM
+--------------------------------------------------------------------
+
+- The expanded memory state is not saved/restored.
+
+- Third-party routines accessing expanded memory should work
+  correctly.
+
+BC with Overlays That Will Load from Expanded Memory
+----------------------------------------------------
+
+- Expanded memory will be used by compiled code in the overlays.
+
+- The default is to save/restore expanded memory on all ISAM
+  statements in a program that uses overlays.
+
+- This could still cause problems if third-party library routines that
+  use expanded memory are called.
+
+BC /Es with Overlays and ISAM
+-----------------------------
+
+- Expanded memory will be saved/restored on ISAM statements.
+
+- Always use /Es when making mixed-language calls to routines that use
+  expanded memory as well.
+
+BC /Es Without Expanded Memory Overlays, but with ISAM
+------------------------------------------------------
+
+- /Es always causes save/restore operations on ISAM statements when
+  ISAM is using expanded memory.
+
+- You would use this switch if the program uses ISAM, ISAM is using
+  expanded memory, and there are mixed-language CALLs to routines
+  that use expanded memory.
+
+  Note: /Es will not cause save/restore operations on ISAM statements
+  if ISAM is NOT using expanded memory.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

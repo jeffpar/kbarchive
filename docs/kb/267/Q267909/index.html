@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q267909: HOWTO: Save TreeView Data to a Formatted File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q267909: HOWTO: Save TreeView Data to a Formatted File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/267/Q267909/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/267/Q267909/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/267/Q267909/","publisher":null,"image":null,"headline":"Q267909: HOWTO: Save TreeView Data to a Formatted File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q267909-howto-save-treeview-data-to-a-formatted-file">Q267909: HOWTO: Save TreeView Data to a Formatted File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q267909
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbCtrl kbFileIO kbTreeView kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbCodeSnippet
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The TreeView control does not offer built-in functionality to save its contents
+to a file. To generate this behavior, a routine can be used recursively to write
+the data from a TreeView control to a file and maintain the visual layout.
+
+MORE INFORMATION
+================
+
+The steps included here create a project that saves the text property of each
+node in a TreeView control to a file. The saved nodes are indented in the file
+to mimic the layout of the TreeView as displayed on the Form.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. Set the BorderStyle property of Form1 to 4 - FixedToolWindow.
+
+3. On the Project menu, click to select Components. In the Components dialog
+  box, select the Microsoft Windows Common Controls 6.0, and then click OK.
+
+4. Add one TreeView and one CommandButton control to Form1.
+
+5. Add the following code to the General Declarations section of Form1:
+
+  Option Explicit
+
+  Const strFile = "c:\tvn_tree.txt"
+  Const intIndentSpaces = 4
+
+  Dim ff As Integer
+  Dim intIndentLevel As Integer
+
+  Private Sub Command1_Click()
+      Dim objNode As Node
+      
+      ' Open up a text file to export the
+      ' indented TreeView nodes into.
+      ff = FreeFile
+      Open strFile For Output As #ff
+
+      ' Set the indent for the root node
+      intIndentLevel = 0
+      
+      ' Set the root node
+      Set objNode = TreeView1.Nodes(1)
+      
+      ' Call the print routine with the root node
+      ParseTree objNode
+
+      ' Close the text file
+      Close #ff
+  End Sub
+
+  Private Sub Form_Load()
+      ' Layout Form User Interface
+      Form1.Caption = "Export TreeView"
+      Form1.Move 0, 0, 4140, 4425
+      
+      TreeView1.Move 240, 240, 3500, 2895
+      
+      Command1.Move 240, 3350, 3500, 495
+      Command1.Caption = "Save Treeview nodes to file: " &amp; strFile
+
+      ' Add data to the TreeView control
+      TreeView1.LineStyle = tvwRootLines
+      TreeView1.Nodes.Add , , "TopLevelBranch1", "TopLevelBranch1"
+      TreeView1.Nodes.Add "TopLevelBranch1", tvwChild, "SubBranch1_1", "SubBranch1_1"
+      TreeView1.Nodes.Add "SubBranch1_1", tvwChild, "Node1_1_1", "Node1_1_1"
+      TreeView1.Nodes.Add "SubBranch1_1", tvwChild, "Node1_1_2", "Node1_1_2"
+      TreeView1.Nodes.Add "SubBranch1_1", tvwChild, "Node1_1_3", "Node1_1_3"
+      TreeView1.Nodes.Add "TopLevelBranch1", tvwChild, "SubBranch1_2", "SubBranch1_2"
+      TreeView1.Nodes.Add "SubBranch1_2", tvwChild, "Node1_2_1", "Node1_2_1"
+      TreeView1.Nodes.Add "SubBranch1_2", tvwChild, "Node1_2_2", "Node1_2_2"
+      TreeView1.Nodes.Add , , "TopLevelBranch2", "TopLevelBranch2"
+      TreeView1.Nodes.Add "TopLevelBranch2", tvwChild, "SubBranch2_1", "SubBranch2_1"
+      TreeView1.Nodes.Add "TopLevelBranch2", tvwChild, "SubBranch2_2", "SubBranch2_2"
+      TreeView1.Nodes.Add "SubBranch2_2", tvwChild, "Node2_2_1", "Node2_2_1"
+  End Sub
+
+  Sub ParseTree(objNode As Node)
+      ' Print the node that was passed in and
+      ' account for the node's level
+      Print #ff, Space(intIndentLevel * intIndentSpaces) &amp; objNode.Text
+      
+      ' Check to see if the current node has children
+      If objNode.Children &gt; 0 Then
+          ' Increase the indent if children exist
+          intIndentLevel = intIndentLevel + 1
+          ' Pass the first child node to the print routine
+          ParseTree objNode.Child
+      End If
+      ' Set the next node to print
+      Set objNode = objNode.Next
+      ' As long as we have not reached the last node in
+      ' a branch, continue to call the print routine
+      If TypeName(objNode) &lt;&gt; "Nothing" Then
+          ParseTree objNode
+      Else
+          ' If the last node of a branch was reached,
+          ' decrease the indentation counter
+          intIndentLevel = intIndentLevel - 1
+      End If
+  End Sub
+
+6. Run the project and click the button to save the TreeView data to a file
+  named tvn_tree.txt that resides in the root directory of the C: drive. If the
+  newly created file is opened in a text editor such as Notepad, note that the
+  formatting mimics the TreeView layout.
+
+REFERENCES
+==========
+
+For additional information on using the TreeView control in Visual Basic, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q172272 FILE: TREEVIEW.EXE Manipulating Nodes in a TreeView Control
+
+Additional query words: export
+
+======================================================================
+Keywords          : kbCtrl kbFileIO kbTreeView kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport kbCodeSnippet 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171348: PRB: TabStrip Control is Always on Top During Runtime | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171348: PRB: TabStrip Control is Always on Top During Runtime" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171348/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171348/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171348/","publisher":null,"image":null,"headline":"Q171348: PRB: TabStrip Control is Always on Top During Runtime","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171348-prb-tabstrip-control-is-always-on-top-during-runtime">Q171348: PRB: TabStrip Control is Always on Top During Runtime</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171348
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp500 kbvfp500a kbvfp600
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual FoxPro 5.0, the TabStrip Control can have objects placed in front of
+it during design mode but the objects go behind the TabStrip control during
+runtime. Changing the ZORDER of either the TabStrip control, or the controls
+placed on the TabStrip control, has no effect on the controls during runtime.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+A TabStrip control is an ActiveX control that is like the dividers in a notebook
+or the labels on a group of file folders. By using a TabStrip control, you can
+define multiple pages for the same area of a window or dialog box in your
+application. The TabStrip control is similar to the tabs on the PageFrame or
+Tabbed Dialog control.
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following program illustrates the behavior of the TabStrip control during
+runtime. When you execute the program, an "Insert Object" prompt appears. Select
+"Insert Control" and locate, or add, the "Microsoft TabStrip Control, version
+5.0." When the form runs, a TextBox should be on the TabStrip Control but
+actually is behind the TabStrip control. Click on the "Place Textbox on Shape"
+command button to move the TextBox to the Shape. The two command buttons on the
+form change the location of the TextBox and also changes the ZORDER. When the
+TextBox is in the area of the TabStrip control it does not appear on top of the
+TabStrip control:
+
+     **Start of Program
+     frmTabStrip = CREATEOBJECT("tabstrip")
+     frmTabStrip.SHOW(1)
+     **************************************************
+     *-- StartDefine: tabstrip
+     DEFINE CLASS tabstrip AS FORM
+         TOP = 5
+         LEFT = 51
+         HEIGHT = 338
+         WIDTH = 335
+         DOCREATE = .T.
+         CAPTION = "TabStrip Example"
+         NAME = "Form1"
+         ADD OBJECT olecontrol1 AS OLECONTROL WITH ;
+             TOP = 24, ;
+             LEFT = 24, ;
+             HEIGHT = 132, ;
+             WIDTH = 288, ;
+             NAME = "Olecontrol1"
+         ADD OBJECT txtText1 AS TEXTBOX WITH ;
+             HEIGHT = 60, ;
+             LEFT = 36, ;
+             TOP = 72, ;
+             WIDTH = 252, ;
+             NAME = "txtText1"
+         ADD OBJECT shape1 AS SHAPE WITH ;
+             TOP = 168, ;
+             LEFT = 24, ;
+             HEIGHT = 97, ;
+             WIDTH = 288, ;
+             NAME = "Shape1"
+         ADD OBJECT cmdCommand1 AS COMMANDBUTTON WITH ;
+             TOP = 288, ;
+             LEFT = 24, ;
+             HEIGHT = 25, ;
+             WIDTH = 132, ;
+             CAPTION = "Send Textbox to Front", ;
+             NAME = "cmdCommand1"
+         ADD OBJECT cmdCommand2 AS COMMANDBUTTON WITH ;
+             TOP = 288, ;
+             LEFT = 156, ;
+             HEIGHT = 25, ;
+             WIDTH = 157, ;
+             CAPTION = "Place Textbox on Shape", ;
+             NAME = "cmdCommand2"
+         ADD OBJECT label1 AS LABEL WITH ;
+             FONTBOLD = .T., ;
+             CAPTION = "Shape", ;
+             HEIGHT = 20, ;
+             LEFT = 38, ;
+             TOP = 172, ;
+             WIDTH = 61, ;
+             NAME = "Label1"
+
+         PROCEDURE cmdCommand1.CLICK
+             IF THIS.CAPTION = "Send Textbox to Front"
+                 THISFORM.txtText1.ZORDER(0) &amp;&amp; Send to front
+                 THIS.CAPTION = "Send Textbox to Back"
+             ELSE
+                 THISFORM.txtText1.ZORDER(1) &amp;&amp; Send to back
+                 THIS.CAPTION = "Send Textbox to Front"
+             ENDIF
+         ENDPROC
+         PROCEDURE cmdCommand2.CLICK
+             IF THIS.CAPTION = "Place Textbox on Shape"
+                 THISFORM.txtText1.TOP = 192
+                 THISFORM.txtText1.ZORDER(0) &amp;&amp; Send to front
+                 THIS.CAPTION = "Place Textbox on TabStrip"
+                 THISFORM.cmdCommand1.CAPTION = "Send Textbox to Back"
+             ELSE
+                 THISFORM.txtText1.TOP = 72
+                 THIS.CAPTION = "Place Textbox on Shape"
+             ENDIF
+         ENDPROC
+     ENDDEFINE
+     *-- EndDefine: tabstrip
+
+REFERENCES
+==========
+
+Visual Basic Online Help file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

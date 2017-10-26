@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85010: INFO: Multiple Document Interface Enhancements in Windows 3.1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85010: INFO: Multiple Document Interface Enhancements in Windows 3.1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85010/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85010/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85010/","publisher":null,"image":null,"headline":"Q85010: INFO: Multiple Document Interface Enhancements in Windows 3.1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85010-info-multiple-document-interface-enhancements-in-windows-31">Q85010: INFO: Multiple Document Interface Enhancements in Windows 3.1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85010
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbSDKPlatform kbWndw
+Last Modified: 11-JUN-1999
+
+3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows Multiple Document Interface (MDI) provides a way to standardize the
+user interface of applications that can process more than one "document"
+simultaneously. Applications that use MDI automatically benefit from
+improvements in the MDI user interface code within Windows.
+
+The MDI under Windows version 3.1 introduces a number of significant enhancements
+to the features provided by Windows version 3.0, and it also removes a number of
+problems. When an application that is designed to use MDI under Windows 3.0 is
+run on a system equipped with Windows 3.1, the application automatically
+receives the benefit of many of these enhancements. In addition, an application
+targeted specifically for Windows 3.1 can use additional new MDI features.
+
+MORE INFORMATION
+================
+
+The Windows 3.1 MDI corrects a number of problems found in the Windows 3.0 MDI.
+For a list of problems in Windows 3.0 that have been corrected in Windows 3.1,
+query on the following words in the Microsoft Knowledge Base:
+
+  buglist3.00 and fixlist3.10 and mdi
+
+The query above provides a list of articles describing the problems with MDI
+under Windows 3.0; the list also describes methods to work around these
+problems. Even though an application is no longer required to work around these
+problems, the methods suggested in each article are compatible with MDI under
+Windows 3.1.
+
+The "Double-Click" Controversy Finally Comes to a Close
+-------------------------------------------------------
+
+Under Windows 3.0, when the user double-clicks the mouse on the system menu
+bitmap of a maximized MDI child window, the child window does not close. This
+behavior caused many complaints when MDI was incorporated into Windows 3.0. A
+controversy arose regarding this behavior: some believed it to be a design
+choice; others saw it as a problem with the software.
+
+The design has been changed under Windows 3.1. Using the mouse to double-click
+the system menu bitmap of a maximized MDI child window closes the child window.
+The new behavior removes an inconsistency among applications that use the MDI
+functions built into Windows and two applications that perform their own MDI
+processing: Microsoft Word for Windows and Microsoft Excel for Windows.
+
+A Difference with Scroll Bars on MDI Children
+---------------------------------------------
+
+Under Windows 3.0, if an application specifies WS_HSCROLL and WS_VSCROLL in the
+style field of an MDICREATESTRUCT data structure and creates an MDI child
+window, the scroll bars do not appear. Windows automatically sets the scroll
+range to zero when it creates the scroll bars. The application must call the
+SetScrollRange function to specify a positive, non-zero, upper bound for the
+scroll range to make the scroll bars appear.
+
+Under Windows 3.1, the application behaves somewhat differently. Because Windows
+3.1 does not reset the scroll range to zero, the scroll bars appear if the
+application specifies the WS_HSCROLL and WS_VSCROLL styles. This change might
+cause problems for an application designed under Windows 3.0 that expected the
+scroll bars to be hidden until the application explicitly set the scroll range.
+
+The CS_NOCLOSE Class Style
+--------------------------
+
+Under Windows 3.0, specifying the CS_NOCLOSE window class style does not change
+the behavior of MDI child windows. This behavior has been corrected under
+Windows 3.1. For example, an application specifies CS_NOCLOSE in the style field
+of a WNDCLASS structure and registers a window class using that structure. If
+the application creates an MDI child window using the new class, Windows will
+disable the Close menu option on the child window's system menu.
+
+However, Windows makes other changes to the MDI child's system menu that are not
+correct. For more information on this problem, query on the following words in
+the Microsoft Knowledge Base:
+
+  CS_NOCLOSE and MDI
+
+MDI Child Windows No Longer Required to Use Standard Styles
+-----------------------------------------------------------
+
+One of the most requested enhancements to Windows MDI provided by Windows 3.1 is
+the ability to create MDI child windows using any window style. If an
+application specifies the MDIS_ALLCHILDSTYLES style for its MDI client window,
+Windows creates the MDI child windows using only the styles specified in the
+MDICREATESTRUCT data structure. Otherwise, Windows enforces the default MDI
+child window styles. For example, an application that uses the
+MDIS_ALLCHILDSTYLES style can create MDI child windows without maximize or
+minimize buttons.
+
+Multiple Document Interface Message Changes
+-------------------------------------------
+
+Windows 3.1 includes several enhancements to MDI system messages. The
+WM_MDICASCADE and WM_MDITILE messages have been enhanced to accept a cascade
+flag. If an application sends either of these messages with wParam set to
+MDITILE_SKIPDISABLED, Windows does not change the position of disabled MDI child
+windows.
+
+The WM_MDITILE message accepts two additional flags in wParam: MDITILE_HORIZONTAL
+and MDITILE_VERTICAL. These flags specify that the MDI child windows should be
+as wide as possible or as tall as possible, respectively.
+
+Under Windows 3.0, the WM_MDINEXT message was not accompanied by any parameters
+in lParam or wParam. Under Windows 3.1, both parameters are used. The value of
+wParam specifies the handle of the MDI child window receiving the message. The
+lParam parameter is a Boolean value specifying whether the next or previous MDI
+child window is being activated.
+
+The WM_MDISETMENU message also has new functionality. If wParam contains the
+Boolean value TRUE, the current menus are refreshed. If wParam contains the
+Boolean value FALSE, the frame menu and window menu are replaced with the menus
+specified in lParam.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbSDKPlatform kbWndw 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

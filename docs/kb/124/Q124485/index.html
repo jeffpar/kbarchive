@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124485: Pathworks 5.0 Prevents Domain Name Registration on TCP/IP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124485: Pathworks 5.0 Prevents Domain Name Registration on TCP/IP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124485/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124485/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124485/","publisher":null,"image":null,"headline":"Q124485: Pathworks 5.0 Prevents Domain Name Registration on TCP/IP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124485-pathworks-50-prevents-domain-name-registration-on-tcpip">Q124485: Pathworks 5.0 Prevents Domain Name Registration on TCP/IP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124485
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.11,3.11a,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+- Microsoft Windows for Workgroups 
+- Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Computers running the Microsoft TCP/IP dynamic host configuration protocol
+(DHCP) and Windows Internet Naming Service (WINS) compatible protocols, fail to
+register domain names when a DEC Pathworks 5.0 server has already registered
+that name. This problem occurs when the Pathworks server is part of the domain,
+or if the name is specified with the OTHDOMAINS parameter.
+
+CAUSE
+=====
+
+Computers using DHCP and WINS use the NetBIOS over TCP/IP h-node implementation
+by default. DEC Pathworks servers use b-node implementations. Following the RFC
+1001/1002 specs, only 3 node types are standardized, b-node (broadcast), p-node
+(point-to-point), and m-node (mixed) implementation. The h-node (hybrid) used by
+Microsoft uses the reserved field and follows the recommendation made in a new,
+draft RFC.
+
+Traces show that in response to the NetBIOS NAME_QUERY_REQUEST frame sent by the
+booting computer, the Pathworks server responses correctly, indicating that it
+has the domain name registered as a group name. The next step performed by the
+workstation is registering the domain name. The Pathworks server sends a
+NAME_IN_CONFLICT frame indicating that it has the domain name registered as a
+unique name. This prevents the booting machine from registering the domain name,
+and keeps the redirector and server from binding correctly to TCP/IP.
+
+The problem does not to occur using b-node implementations on computers running
+the Microsoft TCP/IP DHCP and WINS compatible protocol.
+
+
+RESOLUTION
+==========
+
+Contact your local Digital representative to obtain a newer version of Pathworks
+version 5.0C for OpenVMS, to solve the problem.
+
+
+Additional query words: prodtcp32 3.11 3.11a nttcp v5.0c v5
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a
+Version           : :3.11,3.11a,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q313289: HOW TO: Use the At.exe Command to Schedule Backup in Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q313289: HOW TO: Use the At.exe Command to Schedule Backup in Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/313/Q313289/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/313/Q313289/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/313/Q313289/","publisher":null,"image":null,"headline":"Q313289: HOW TO: Use the At.exe Command to Schedule Backup in Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q313289-how-to-use-the-atexe-command-to-schedule-backup-in-windows-nt">Q313289: HOW TO: Use the At.exe Command to Schedule Backup in Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q313289
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbhw kbtool kbAudITPro kbHOWTOmaster
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Requirements
+- Using the At.exe Command to Schedule a Backup Job on a Windows NT 4.0-Based
+  Computer
+
+   - Creating a Batch File for the Backup Job
+- Configuring the Schedule Service to Start Automatically
+- Using the At.exe Command to Schedule a Backup Job
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to schedule a tape backup job on a
+Windows NT Workstation 4.0-based or Windows NT Server 4.0-based computer. The
+three-part process involves creating a batch file that contains the appropriate
+backup commands, configuring the Schedule (or Task Scheduler) service to start
+automatically, and then using the At.exe command to schedule the Windows NT
+Backup program to run. After you have scheduled the backup job, it will run
+automatically.
+
+Requirements
+------------
+
+- A computer (that meets the requirements that are listed on the appropriate
+  Hardware Compatibility List) on which Windows NT Server 4.0 or Windows NT
+  Workstation 4.0 is installed.
+
+- A tape drive (that meets the requirements listed on the Hardware
+  Compatibility List) must be installed in the computer, and a tape must be
+  inserted in the drive.
+
+Using the At.exe Command to Schedule a Backup Job on a Windows NT 4.0-Based Computer
+------------------------------------------------------------------------------------
+
+Backup jobs are commonly run after business hours, when users do not have program
+files open and when system-resource usage is low. Using the At.exe command to
+schedule a backup job to run automatically can be a great convenience for the
+administrator, because it eliminates the need for a staff member to be present
+and manually complete this task.
+
+Creating a Batch File for the Backup Job:
+
+The first part of scheduling a backup job is creating a batch file that contains
+all of the commands that are required to complete the backup job. Windows NT
+Backup is the program that is used to create the backup job, and this program is
+included with the Windows NT 4.0 operating system. To create a batch file for
+the backup job:
+
+1. Click Start, point to Programs, point to Accessories, and then click Notepad.
+
+2. In Notepad, type the appropriate commands to complete a backup of the files
+  you want to back up, and then press ENTER. The command line utility that is
+  used to create a backup job is Ntbackup.exe. The syntax for creating a backup
+  job by using Ntbackup.exe is:
+
+  ntbackup backup path nameoptions
+
+  The following list describes the switches that you can use with Ntbackup.exe:
+
+   - /a - Appends the backup set after any existing backup sets, rather than
+     replacing it. This switch is not available for a blank tape.
+   - /b - Backs up the local registry, but only if you back up another file
+     from the same volume.
+   - /d "text" - Describes the backup set. This description appears when you
+     view the tape catalog.
+   - /e - Logs exceptions, such as a summary log. If you do not use this
+     switch, a full detail log is created.
+   - /l file name - Assigns a file name to the log file. The default file name
+     is Backup.log, and this file is located in the \Systemroot folder.
+   - /r - Limits access to the tape to administrators, backup operators, or the
+     user that created the backup. If this switch is not used, anyone with the
+     restore right can restore the backup set.
+   - /t - Specifies the backup type, either Normal, Copy, Incremental,
+     Differential or Daily, and the default backup type is normal. For example,
+     /t Copy, or /t Incremental.
+   - /v - Confirms that the files were backed up accurately.
+   - /hc: - Enables or disables hardware compression for tape drives that
+     support it, and is either on or off. For example, /hc:on, or /hc:off. The
+     default is hardware compression off.
+
+  For example, to complete a normal backup of drive C, drive D, and the registry
+  on a Windows NT 4.0-based computer, by using hardware compression and
+  verifying that the data was backed up correctly, you would use the "ntbackup
+  backup c: d: /b /hc:on /v" (without the quotation marks) command.
+
+3. On the Notepad File menu, click Save As. In the Save As dialog box, select a
+  drive and a folder in which to store the batch file. In the "Save as type"
+  box, click All Files. In the "File name" box, type a name for the batch file
+  that uses a .cmd file extension (for example, "Backup.cmd" (without the
+  quotation marks)). Click Save.
+
+4. Quit Notepad to complete the process of creating a batch file for the backup
+  job.
+
+Configuring the Schedule Service to Start Automatically:
+
+By default, the Schedule service is configured to start manually. To use the
+At.exe command to schedule an automatic backup job, you must configure the
+Schedule service to start automatically. After you complete this task, the
+schedule service starts automatically every time you start the computer.
+
+NOTE: If Internet Explorer 4.0 or later is installed on your Windows NT 4.0-based
+computer, the Schedule service is called the Task Scheduler service. Task
+Scheduler may or may not already be configured to start automatically, depending
+on the version of Internet Explorer you use. To configure the Schedule service
+to start automatically:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+  Services.
+
+2. In the Services dialog box, click Schedule (or Task Scheduler if you are
+  running Internet Explorer 4.0 or later), and then click Start. After the
+  service starts, click Startup.
+
+3. In the Service dialog box, click Automatic, and then click OK.
+
+4. In the Services dialog box, click Close.
+
+5. Close Control Panel to complete the process of configuring the Schedule
+  service to start automatically.
+
+Using the At.exe Command to Schedule a Backup Job:
+
+Now you're ready to use the At.exe command and the batch file that you created in
+the "Creating a Batch File for the Backup Job" section of this article to
+schedule an automatic tape backup job. To use the At.exe command to schedule a
+backup job:
+
+1. Click Start, click Run, type "cmd" (without the quotation marks), and then
+  click OK.
+
+2. At the command prompt, type the appropriate commands to schedule the backup
+  job to run automatically by using the batch file that you created in the
+  "Creating a Batch File for the Backup Job" section of this article, and then
+  press ENTER. The command-line utility that is used to schedule a task to run
+  is At.exe. The syntax for using the At.exe command is:
+
+  at \\computer nameid/delete time
+  /interactive/every:date[,...]/next:date[,...] "command"
+
+  The following list describes the switches that you can use with the At.exe
+  command:
+
+   - \\computer name - Specifies a remote computer. If you omit this switch,
+     the commands are scheduled on the local computer.
+   - id - Assigns an identification number to a scheduled command.
+   - /delete - Cancels a scheduled command. If you use this switch and omit an
+     id, all of the scheduled commands on the computer are canceled.
+   - time - Specifies the time that the command is to run. Time is expressed as
+     hour:minutes in 24-hour notation. It runs 00:00 (midnight) though 23:59.
+   - /interactive - Allows the backup job to interact with the desktop of the
+     user that is logged on at the time the backup job runs. If omitted, the
+     backup job runs, but is not visible on the desktop.
+   - /every:date[,...] - Specifies the weekdays or days of the month that a
+     command is to run. Specify date as one or more days of the week
+     (M,T,W,Th,F,S,Su) or one or more days of the month (by using numbers 1
+     through 31). If you omit this switch, the default is the current day of
+     the month.
+   - /next:date[,...] - Specifies the next weekdays or days of the month a
+     command is to run. If you omit this switch, the default is the current day
+     of the month.
+   - command - Specifies the program or batch file to run, such as
+     C:\Backup.cmd.
+
+  For example, to schedule a backup to run at 23:00 every weekday by using the
+  C:\Backup.cmd batch file, you would use the "at 23:00 /every:M,T,W,Th,F
+  "c:\Backup.cmd"" (without the quotation marks) At.exe command.
+
+3. At the command prompt, type "exit" (without the quotation marks), and then
+  press ENTER to complete the scheduling of an automatic tape backup job by
+  using the At.exe command. The backup will run, automatically, on the days and
+  times that you specified.
+
+REFERENCES
+==========
+
+For more information about how to schedule a backup job by using the At.exe
+command, see Module 11 of the Microsoft Official Curriculum, Course Number 803,
+Administering Microsoft Windows NT 4.0:
+
+  http://www.microsoft.com/TRAINCERT/SYLLABI/803BFINAL.ASP
+
+For additional information about how to manually create a tape backup job, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q316340 HOW TO: Back Up Files and Folders on a Windows NT 4.0 Computer by
+  Using Windows NT Backup
+
+For additional information about how to restore data from tape, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q309340 HOW TO: Use Backup to Restore Files and Folders on Your Computer
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbhw kbtool kbAudITPro kbHOWTOmaster 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

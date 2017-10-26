@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134878: BUG: Error: &quot;An errror occurred reading the index file&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134878: BUG: Error: &quot;An errror occurred reading the index file&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134878/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134878/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134878/","publisher":null,"image":null,"headline":"Q134878: BUG: Error: &quot;An errror occurred reading the index file&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134878-bug-error-an-errror-occurred-reading-the-index-file">Q134878: BUG: Error: "An errror occurred reading the index file"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134878
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbide kbVCkbbuglist
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Professional Edition, version 2.2 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 2.2 
+- Microsoft Visual C++, 32-bit Learning Edition, version 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When accessing Books Online from the Help menu you receive this error:
+
+  An errror occurred reading the index file.
+
+Note: This article does not apply to Visual C++ 4.0.
+
+CAUSE
+=====
+
+There is an error in the VC20BKS.HDX file.
+
+RESOLUTION
+==========
+
+This error can be safely ignored. The error does not occur if you access Books
+Online from the Visual C++ version 2.0 program group or by pressing the F1 key.
+
+You can work around the problem by adding a tool to your Visual Workbench Tools
+menu. To add a tool follow these steps:
+
+1. On the Tools menu, click Customize.
+
+2. Click the Tools tab.
+
+3. Click the Add button.
+
+4. In the Add Tool dialog box, browse for Contents.exe in the Visual C++ Bin
+  directory, and click OK.
+
+5. In the Menu Text field of Tools dialog box, enter:
+
+  " Books Online " (without the quotation marks)
+
+6. In the Arguments field, enter the following, and be sure to include the
+  quotation marks for these entries:
+
+  " "Visual C++ 2.0" "Books Online" " (without the quotation marks)
+
+7. Click Close to save the settings. A mew menu entry, "Books Online," is now
+  created in the Visual Workbench Tools menu, which can be used instead of
+  accessing it from the Help menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: error 2.20
+
+======================================================================
+Keywords          : kbide kbVC kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbVC220 kbVC32bitSearch
+Version           : winnt:
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

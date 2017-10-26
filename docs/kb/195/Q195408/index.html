@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195408: PRB: Specifying View KeyField Sets Other Fields Updateable | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195408: PRB: Specifying View KeyField Sets Other Fields Updateable" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195408/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195408/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195408/","publisher":null,"image":null,"headline":"Q195408: PRB: Specifying View KeyField Sets Other Fields Updateable","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195408-prb-specifying-view-keyfield-sets-other-fields-updateable">Q195408: PRB: Specifying View KeyField Sets Other Fields Updateable</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195408
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbvfp kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 KbDBFDBC
+Last Modified: 10-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Specifying the keyfield of a View sets the rest of the fields to be updateable,
+although the fields are not being set to be updateable explicitly.
+
+RESOLUTION
+==========
+
+Use a DBSETPROP() command similar to the following to clear the fields in the
+view that you do not want to be updateable:
+
+     DBSETPROP("TstVw.Fld1","Field","Updatable",.F.)
+
+Also, you can open the view in the View Designer and clear the fields that you do
+not want to be updateable, from the Update Criteria tab.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create and run a program with the following code:
+
+     CLOSE DATA ALL
+     CREATE DATA TstDBC
+     CREATE TABLE Tbl1 (Fld1 c(10),Fld2 d, Fld3 n(4))
+     FOR i = 1 TO 4
+        INSERT INTO Tbl1 VALUES (STR(i),DATE(),1234)
+     ENDFOR
+     CREATE SQL VIEW TstVw AS SELECT * FROM Tbl1
+     USE TstVw
+     =DBSETPROP("TstVw.Fld1","Field","KeyField",.T.)
+     ? DBGETPROP("TstVw.Fld2","Field","Updatable")
+     ? DBGETPROP("TstVw.Fld3","Field","Updatable")
+
+If the table for which the view is being created has a primary key, then that
+field is set as the keyfield automatically when the view is created. The
+following code reproduces this behavior:
+
+     CLOSE DATA ALL
+     CREATE DATA TstDBC
+     CREATE TABLE Tbl1 (fld1 c(10) PRIMARY KEY,fld2 d, fld3 n(4))
+     FOR i = 1 TO 4
+        INSERT INTO Tbl1 VALUES (STR(i),DATE(),1234)
+     ENDFOR
+     CREATE SQL VIEW TstVw AS SELECT * FROM tbl1
+     USE TstVw
+     ? DBGETPROP("TstVw.Fld2","Field","Updatable")
+     ? DBGETPROP("TstVw.Fld3","Field","Updatable")
+
+Note that both of the DBGETPROP() commands return .T., meaning that both of the
+fields are updateable.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbvfp kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 KbDBFDBC 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

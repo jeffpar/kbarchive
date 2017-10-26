@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305160: Incoming SDLC Connections Log Event 182 and Fail to Activate | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305160: Incoming SDLC Connections Log Event 182 and Fail to Activate" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305160/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305160/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305160/","publisher":null,"image":null,"headline":"Q305160: Incoming SDLC Connections Log Event 182 and Fail to Activate","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305160-incoming-sdlc-connections-log-event-182-and-fail-to-activate">Q305160: Incoming SDLC Connections Log Event 182 and Fail to Activate</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305160
+Product(s): Microsoft SNA Server
+Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Synchronous Data Link Control (SDLC) connection that is configured with
+Allowed Directions set to Incoming may log the following event message and fail
+to connect to the host system:
+
+  Event ID: 182
+  Source: SNA SDLC Link Service
+  Description: Connection failure, code = 11
+  Cause Data = 3601 3401 3302 f035
+  Link Role = 02
+  Remote Node Type = 03
+
+The connection failure code in the Event 182 message indicates a Data Set Ready
+(DSR) failure.
+
+The other symptom associated with this problem is that the SDLC Link Service
+sends a NULL Exchange Identifier (XID) to the host system when the SDLC
+connection is activated. This should not occur when the SDLC connection is
+configured as an incoming connection.
+
+The following Microsoft Knowledge Base article describes a similar problem that
+existed for X.25 connections:
+
+  Q180706 Incoming X.25 Host Connection Indicates Primary Link Role
+
+CAUSE
+=====
+
+The link role (that is, primary, secondary, or negotiable) is incorrectly set to
+negotiable in the internal link data record for an incoming SDLC connection. The
+internal link data record is written when the SNA configuration file (Com.cfg)
+is saved after the connection is created or modified.
+
+A link role of negotiable causes the SDLC link service to send an initial NULL
+XID to the remote system when the connection is activated. The correct link role
+for an incoming SDLC connection is secondary.
+
+RESOLUTION
+==========
+
+SNA Server 4.0
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next SNA Server version 4.0 that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
++----------------------------------+
+| Date        | Time  | File name  | 
++----------------------------------+
+| Aug-06-2001 | 14:31 | Snacfg.dll | 
++----------------------------------+
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+Host Integration Server 2000
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Host Integration Server 2000 service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
++----------------------------------+
+| Date        | Time  | File name  | 
++----------------------------------+
+| Sep-11-2001 | 15:35 | Snacfg.dll | 
++----------------------------------+
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version
+3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0
+SP4.
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration Server
+2000.
+
+MORE INFORMATION
+================
+
+Once the updated Snacfg.dll file has been applied, the SNA Server Manager
+program must be run and the configuration file must be resaved after you make a
+configuration file change. In this case, the easiest change to make is to change
+the SDLC connection's "Allowed Directions" value from "Incoming" to "Outgoing"
+and back to "Incoming".
+
+Host connections can be configured with one of the following Allowed Directions
+settings in SNA Manager:
+
+- Outgoing
+
+- Incoming
+
+- Both Directions
+
+If Outgoing is selected, SNA Server or Host Integration Server (HIS) 2000
+initiate the link-level (that is, SDLC or DLC) connection to the remote system.
+If the remote system attempts to initiate the connection, SNA Server or HIS 2000
+does not accept the connection attempt.
+
+If Incoming is selected, SNA Server or HIS 2000 do not attempt to initiate the
+link-level connection. In this case, the connection is not activated until the
+remote system initiates the link-level connection. In this case, an initial XID
+is not sent by SNA Server or HIS 2000.
+
+If Both Directions is selected, SNA Server or HIS 2000 can initiate the
+link-level connection and accept incoming connection activation requests from
+the remote system.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp1 kbsna300sp2 kbsna300sp3 kbsna300sp4 sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 kbhis2000bug kbsna400sp4 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

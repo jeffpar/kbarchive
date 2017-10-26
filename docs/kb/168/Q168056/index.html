@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168056: FIX: Mismatched pushjmp/popjmp Call Error and VFP Closes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168056: FIX: Mismatched pushjmp/popjmp Call Error and VFP Closes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168056/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168056/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168056/","publisher":null,"image":null,"headline":"Q168056: FIX: Mismatched pushjmp/popjmp Call Error and VFP Closes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168056-fix-mismatched-pushjmppopjmp-call-error-and-vfp-closes">Q168056: FIX: Mismatched pushjmp/popjmp Call Error and VFP Closes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168056
+Product(s): Microsoft FoxPro
+Version(s): 5.0 5.0a
+Operating System(s): 
+Keyword(s): kbvfp kbvfp500bugkbbuglist
+Last Modified: 23-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to create a new remote connection that has the same name as an
+existing remote connection within a database container (DBC), the following
+error will occur after choosing cancel in the Connection Designer Dialog box:
+
+  ! Mismatched pushjmp/popjmp call.
+
+After this error occurs, Visual FoxPro will close.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Issue the command SET SAFETY ON.
+
+2. Select New from the File menu.
+
+3. Select Project and choose New File. Accept the default name, proj1, and
+  choose Save.
+
+4. Expand the Data folder and select Databases. Choose Add, and add the database
+  \SAMPLES\DATA\TESTDATA.DBC.
+
+5. Expand the testdata folder and select Connections. Choose New.
+
+6. In the Connection Designer dialog box, select the Close (X) button from the
+  upper-right corner.
+
+7. In the "Do you want to save " dialog box, accept the offered default of
+  "connect1" and choose Yes.
+
+8. Select Remote Views and choose New.
+
+9. In the Select Connection dialog box, choose New.
+
+10. In the Connection Designer dialog box, choose OK.
+
+11. In the Save dialog box, change the suggested name to the name of an existing
+  connection, such as connect1, and choose OK. (NOTE: If SET SAFETY OFF is in
+  effect, then the following steps will not occur.)
+
+12. In the "Connect1 already exists, overwrite it?" dialog box, choose No.
+
+13. In the Connection Designer dialog box that you are returned to, choose
+  Cancel.
+
+14. Choose OK when you receive the "! Mismatched pushjmp/popjmp call." error.
+  Visual FoxPro will close.
+
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Perry Newton, Microsoft Corporation
+
+
+Additional query words: kbvfp600fix
+
+======================================================================
+Keywords          : kbvfp kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : 5.0 5.0a
+Issue type        : kbbug
+Solution Type     : kbfix kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

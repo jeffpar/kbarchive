@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178278: Boot Partition Using CPQArray has Limits if Using scsi() Syntax | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178278: Boot Partition Using CPQArray has Limits if Using scsi() Syntax" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178278/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178278/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178278/","publisher":null,"image":null,"headline":"Q178278: Boot Partition Using CPQArray has Limits if Using scsi() Syntax","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178278-boot-partition-using-cpqarray-has-limits-if-using-scsi-syntax">Q178278: Boot Partition Using CPQArray has Limits if Using scsi() Syntax</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178278
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kbhw kbHardware
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to install Windows NT using a Compaq Array controller whose BIOS
+is disabled or to a boot partition that extends beyond 1024 cylinders, you may
+see one of the following errors after the text mode portion of setup reboots:
+
+(NOTE: The type of error depends on if you are using a PCI Based Compaq Smart-2/P
+Array controller or an EISA based Compaq Smart-2/E Array controller)
+
+If you are using a Compaq Smart-2/P Array controller (PCI based) or Fast and
+Wide-2 controller:
+
+  The system did not load because of a computer disk hardware
+  configuration problem.
+
+  Could not read from the selected boot disk. Check the boot path
+  and disk hardware.
+
+  Please check the Windows NT documentation about hardware disk
+  configuration and your hardware reference manuals for additional
+  information. Boot failed.
+
+  -or-
+
+  boot signature aa55 not found error
+
+  -or-
+
+  If you are using a Compaq Smart-2/E Array controller (EISA based):
+
+  TRAP 0000000E ============ PAGE FAULT =============
+
+  ** at linear address 00000002
+
+  tr=0028 cr0=80000011 cr2=00000002 cr3=00300000 .
+  .
+  .
+
+CAUSE
+=====
+
+If the boot partition extends beyond 1,024 cylinders or the boot partition is
+created on a drive attached to a SCSI controller whose BIOS is disabled, use the
+scsi() syntax in the Boot.ini file.
+
+The scsi() syntax is not supported while using a Compaq Smart 2/P Array
+controller.
+
+-or-
+
+The Cpqarray.sys driver that ships with Windows NT does not support using the
+scsi() syntax for addressing a Compaq Smart 2/E Array controller.
+
+RESOLUTION
+==========
+
+1. Install Windows NT to a boot partition that does not extend beyond the 1,024
+  cylinder limitation of Interrupt 13 BIOS calls.
+
+2. Use an updated Cpqarray.sys driver for Ntbootdd.sys when using scsi() syntax
+  in the Boot.ini file and an EISA based Compaq Smart-2/E Array controller.
+
+3. Use a different SCSI Controller and driver that supports booting from a boot
+  partition that extends beyond 1,024 cylinders.
+
+4. Contact Compaq Technical Support about this limitation when using scsi()
+  syntax with the PCI based Compaq Smart-2/P Raid Controller.
+
+
+STATUS
+======
+
+The products discussed here are manufactured by Compaq Corporation, A vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+the products' performance or reliability.
+
+
+MORE INFORMATION
+================
+
+Interrupt 13 compatibility is required so the master boot record (MBR) can
+locate the boot sector. The boot sector then finds and loads the NT boot loader
+(NTLDR) and continues to load the operating system. NT uses interrupt 13 calls
+until a disk driver is loaded.
+
+If the boot partition can be accessed with Interrupt 13 BIOS calls then Windows
+NT will use the multi() syntax which does not load a driver for the disk
+controller until the Operating System starts loading from this partition.
+
+When using the scsi() syntax in the BOOT.INI, Windows NT needs to load a SCSI
+device driver and uses that driver to access the boot partition. The SCSI
+controller driver is renamed NTBOOTDD.SYS and placed in the root of the system
+partition.
+
+Two reasons for using scsi() syntax in the c:\boot.ini file:
+
+- The BIOS is disabled on the disk controller that Windows NT is installed on,
+  so Interrupt 13 Bios calls cannot be used.
+
+- The boot partition extends beyond the 1024th cylinder on the drive which is a
+  limitation of Interrupt 13 BIOS calls.
+
+For more information about ARC Path Names, see NT 4.0 Server Resource Guide or NT
+4.0 Workstation Resource Kit or refer to the following article in the Microsoft
+Knowledge Base.
+
+  ARTICLE ID: Q102873
+  TITLE : BOOT.INI and ARC Path Naming Conventions and Usage.
+
+  ARTICLE ID: Q114841
+  TITLE : Windows NT Boot Process and Hard Disk Constraints
+
+Additional query words: Smart raid Array 2E 2P cpqfs.sys
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

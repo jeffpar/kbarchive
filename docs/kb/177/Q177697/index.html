@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q177697: HOWTO: List Local Network Connections with WNetEnumResources | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q177697: HOWTO: List Local Network Connections with WNetEnumResources" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/177/Q177697/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/177/Q177697/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/177/Q177697/","publisher":null,"image":null,"headline":"Q177697: HOWTO: List Local Network Connections with WNetEnumResources","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q177697-howto-list-local-network-connections-with-wnetenumresources">Q177697: HOWTO: List Local Network Connections with WNetEnumResources</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q177697
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2000,3.51,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbOSWinNT351 kbOSWinNT400 kbOSWin2000 kbVBp400 kbVBp500 kbVBp600 kbOSWin95
+Last Modified: 06-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+- the operating system: Microsoft Windows NT, versions 3.51, 4.0 
+- the operating system: Microsoft Windows 95 
+- Microsoft Win32 Software Development Kit (SDK) 
+- the operating system: Microsoft Windows 2000 
+- the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WNetOpenEnum and WNetEnumResources can be used to list the local drives, printer
+ports that have been redirected, and any UNC connections on a machine running
+Windows 2000, Windows NT, Windows Me, Windows 98, or Windows 95.
+
+The code below demonstrates how to do this from Visual Basic by first calling
+WNetOpenEnum with the dwType parameter set to RESOURCETYPE_ANY. A valid handle
+returned via the last parameter is passed to WNetEnumResources. This function
+fills a temporary buffer with an array of NETRESOURCE structures, which includes
+information about the local network connections.
+
+Note that this functionality will not list the resources that are redirected on a
+remote machine. No such functionality exists in either operating system.
+
+MORE INFORMATION
+================
+
+The sample includes one form and one module. Follow the steps below to create
+the sample.
+
+1. Create a new project and add the following code to the form:
+
+        Option Explicit
+
+        Private Const GMEM_FIXED = &amp;H0
+        Private Const GMEM_ZEROINIT = &amp;H40
+        Private Const GPTR = (GMEM_FIXED Or GMEM_ZEROINIT)
+
+        Private Declare Function GlobalAlloc Lib "KERNEL32" ( _
+           ByVal wFlags As Long, ByVal dwBytes As Long) As Long
+        Private Declare Function GlobalFree Lib "KERNEL32" ( _
+           ByVal hMem As Long) As Long
+
+        Private Declare Sub CopyMemory Lib "KERNEL32" Alias "RtlMoveMemory" _
+          (hpvDest As Any, hpvSource As Any, ByVal cbCopy As Long)
+
+        Private Declare Function CopyPointer2String Lib "KERNEL32" _
+           Alias "lstrcpyA" ( _
+           ByVal NewString As String, ByVal OldString As Long) As Long
+
+        Private Sub Form_click()
+           Dim hEnum As Long, lpBuff As Long, nr As NETRESOURCE
+           Dim cbBuff As Long, cCount As Long
+           Dim p As Long, res As Long, i As Long
+
+           'Setup the NETRESOURCE input structure.
+           nr.dwUsage = RESOURCEUSAGE_CONTAINER
+           nr.lpRemoteName = 0
+           cbBuff = 1000
+           cCount = &amp;HFFFFFFFF
+
+           'Open a Net enumeration operation handle: hEnum.
+           res = WNetOpenEnum(RESOURCE_CONNECTED, RESOURCETYPE_ANY, _
+                              0, nr, hEnum)
+           If res = 0 Then
+              'Create a buffer large enough for the results.
+              '1000 bytes should be sufficient.
+              lpBuff = GlobalAlloc(GPTR, cbBuff)
+              'Call the enumeration function.
+              res = WNetEnumResource(hEnum, cCount, lpBuff, cbBuff)
+              If res = 0 Then
+                 p = lpBuff
+                 Cls
+                 'WNetEnumResource fills the buffer with an array of
+                 'NETRESOURCE structures. Walk through the list and print
+                 'each local and remote name.
+                 For i = 1 To cCount
+                    CopyMemory nr, ByVal p, LenB(nr)
+                    p = p + LenB(nr)
+                    Print PointerToString(nr.lpLocalName), _
+                          PointerToString(nr.lpRemoteName)
+                 Next i
+              Else
+                 MsgBox "Error: " &amp; Err.LastDllError, vbOKOnly, _
+                        "WNetEnumResources"
+              End If
+              If lpBuff &lt;&gt; 0 Then GlobalFree (lpBuff)
+              WNetCloseEnum (hEnum) 'Close the enumeration
+           Else
+              MsgBox "Error: " &amp; Err.LastDllError, vbOKOnly, "WNetOpenEnum"
+           End If
+        End Sub
+
+        Private Function PointerToString(p As Long) As String
+           'The values returned in the NETRESOURCE structures are pointers to
+           'ANSI strings so they need to be converted to Visual Basic
+     Strings.
+           Dim s As String
+           s = String(255, Chr$(0))
+           CopyPointer2String s, p
+           PointerToString = Left(s, InStr(s, Chr$(0)) - 1)
+        End Function
+
+2. Add a new module to the project and add the following code:
+
+        Option Explicit
+
+        Public Type NETRESOURCE
+                dwScope As Long
+                dwType As Long
+                dwDisplayType As Long
+                dwUsage As Long
+                lpLocalName As Long
+                lpRemoteName As Long
+                lpComment As Long
+                lpProvider As Long
+        End Type
+
+        Public Declare Function WNetOpenEnum Lib "mpr.dll" Alias _
+            "WNetOpenEnumA" ( _
+            ByVal dwScope As Long, _
+            ByVal dwType As Long, _
+            ByVal dwUsage As Long, _
+            lpNetResource As Any, _
+            lphEnum As Long) As Long
+
+        Public Declare Function WNetEnumResource Lib "mpr.dll" Alias _
+            "WNetEnumResourceA" ( _
+            ByVal hEnum As Long, _
+            lpcCount As Long, _
+            ByVal lpBuffer As Long, _
+            lpBufferSize As Long) As Long
+
+        Public Declare Function WNetCloseEnum Lib "mpr.dll" ( _
+            ByVal hEnum As Long) As Long
+
+        'RESOURCE ENUMERATION.
+        Public Const RESOURCE_CONNECTED = &amp;H1
+        Public Const RESOURCE_GLOBALNET = &amp;H2
+        Public Const RESOURCE_REMEMBERED = &amp;H3
+
+        Public Const RESOURCETYPE_ANY = &amp;H0
+        Public Const RESOURCETYPE_DISK = &amp;H1
+        Public Const RESOURCETYPE_PRINT = &amp;H2
+        Public Const RESOURCETYPE_UNKNOWN = &amp;HFFFF
+
+        Public Const RESOURCEUSAGE_CONNECTABLE = &amp;H1
+        Public Const RESOURCEUSAGE_CONTAINER = &amp;H2
+        Public Const RESOURCEUSAGE_RESERVED = &amp;H80000000
+
+3. Run the program. When you click on the form, a list of all the local network
+  connections should be displayed, along with the shares they are connected to.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbOSWinNT351 kbOSWinNT400 kbOSWin2000 kbVBp400 kbVBp500 kbVBp600 kbOSWin95 kbOSWin98 kbWNet kbGrpDSVB kbOSWinME 
+Technology        : kbOSWin2000 kbOSWin95 kbVBSearch kbWin32SDKSearch kbAudDeveloper kbOSWinME kbOSWinSearch kbOSWinNT400 kbOSWinNT351 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbSDKSearch kbVB400Search kbVB400 kbWin32sSearch kbOSWinNTSearch
+Version           : :2000,3.51,4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

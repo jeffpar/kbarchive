@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221749: FIX: Top Level Forms with Menus Allow Access to Datasession 0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221749: FIX: Top Level Forms with Menus Allow Access to Datasession 0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221749/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221749/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221749/","publisher":null,"image":null,"headline":"Q221749: FIX: Top Level Forms with Menus Allow Access to Datasession 0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221749-fix-top-level-forms-with-menus-allow-access-to-datasession-0">Q221749: FIX: Top Level Forms with Menus Allow Access to Datasession 0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221749
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbvfp500aBUG kbvfp600 kbvfp600bug KbDBFDBC kbVS600sp3fix kbGrpDSFox
+Last Modified: 09-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have an application based on a top-level form, which runs several child
+forms that are called from a menu. One of these forms contains a grid. If the
+table or cursor that is the grid's RecordSource is closed and then another form
+is instantiated, the system datasession will be selected and Visual FoxPro will
+be placed in an unstable state.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+The system datasession is used by Visual FoxPro to open the Foxuser resource
+file, form and class library files, report files, and so forth. It should not be
+accessible to the user under any circumstances. If the system datasession
+becomes selected, closing tables in it will cause Visual FoxPro to produce
+errors or terminate.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.PRG) file:
+
+  PUBLIC oGrid, oMain
+     * Make Form2 - it must be an SCX.
+     MODIFY FORM form2 NOWAIT
+     = aselobj(xx,1)
+     xx[1].ShowWindow = 1   &amp;&amp; Make it In Top-Level
+     KEYBOARD '{y}'
+     Release window 'form designer - form2.scx'
+
+     * Create a table and add some data
+     CREATE TABLE TEMP(TEMP1 C(6), TEMP2 C(6))  
+     INSERT INTO TEMP (TEMP1, TEMP2) ;
+     VALUES ("FIELD1", "FIELD2")
+
+     CLOSE DATA ALL &amp;&amp; Clean Start, no open tables open to start.
+
+     oMain = CREATEOBJECT('MAIN')  &amp;&amp; Top-level form
+     oMain.Show
+     READ events
+     WAIT window 'DataSession Number is: '+alltr(str(set('datasession')))
+     * Let's avoid problems and go back to datasession 1
+     SET DATASESSION TO  1
+     CLOSE DATA ALL
+
+     DEFINE CLASS grid1 AS form
+         ShowWindow = 1
+         Caption = "GRID1"
+         Name = "GRID1"
+         ADD OBJECT grid1 AS grid WITH ;
+             ColumnCount = 2, ;
+             Name = "Grid1"
+     ENDDEFINE
+
+     DEFINE CLASS main AS form
+         ShowWindow = 2
+         Caption = "Click on Grid Form menu item"
+         Name = "MAIN"
+
+         PROCEDURE Show
+             LPARAMETERS nStyle
+             DO MenuProc WITH thisform,.T.
+         ENDPROC
+
+         PROCEDURE queryunload
+             Clear events
+         ENDPROC
+     ENDDEFINE
+
+     PROC MenuProc
+         LPARAMETERS oFormRef, getMenuName
+        	DEFINE MENU MyMenu IN (oFormRef.name) BAR
+     	DEFINE PAD Pad1 OF MyMenu PROMPT "Grid Form" COLOR SCHEME 3 ;
+     	    KEY ALT+C, ""
+     	ON SELECTION PAD Pad1 OF MyMenu ;
+     	    DO Proc1
+     	DEFINE PAD Pad2 OF MyMenu PROMPT "Form 2" COLOR SCHEME 3 ;
+     	    KEY ALT+F, ""
+     	ON SELECTION PAD Pad2 OF MyMenu ;
+     	    DO Proc2
+     	Activate MENU MyMenu NOWAIT
+     ENDPROC
+
+     PROCEDURE Proc1
+         SELECT 0
+         USE TEMP alias TEMP
+         SELECT TEMP
+         oGrid=create('grid1')
+         oGrid.show
+         oMain.Caption = 'Click on Form2 menu item'
+     ENDPROC
+
+     PROCEDURE Proc2
+         SELECT TEMP
+         USE
+         oGrid.release
+         DO form form2
+         oMain.Caption = "Click on Close Box to close =====&gt;"
+     ENDPROC
+
+2. Click on the Grid Form menu pad.
+
+3. Click on the Form 2 menu pad.
+
+4. Click on the close box in the main form.
+
+5. A WAIT WINDOW will be displayed with the current Datasession, which will be
+  0.
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp500aBUG kbvfp600 kbvfp600bug KbDBFDBC kbVS600sp3fix kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148479: Cannot Restore DoubleSpace-Compressed Backup with MS-DOS 6.22 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148479: Cannot Restore DoubleSpace-Compressed Backup with MS-DOS 6.22" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148479/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148479/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148479/","publisher":null,"image":null,"headline":"Q148479: Cannot Restore DoubleSpace-Compressed Backup with MS-DOS 6.22","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148479-cannot-restore-doublespace-compressed-backup-with-ms-dos-622">Q148479: Cannot Restore DoubleSpace-Compressed Backup with MS-DOS 6.22</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148479
+Product(s): Microsoft Disk Operating System
+Version(s): 6.22
+Operating System(s): 
+Keyword(s): kbfile kbtool msdos kbgraphxlinkcritical
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you back up files with compression using Msbackup.exe or Mwbackup.exe using
+MS-DOS 6.0 or 6.2 and you then install MS-DOS 6.22, you may not be able to
+restore your compressed backup.
+
+CAUSE
+=====
+
+In order to restore the backup, the MS-DOS 6.0 or 6.2 Dblspace.bin file and the
+Drvspace.mr1 file must be available on your hard disk.
+
+NOTE: When you upgrade MS-DOS 6.0 or 6.2 to MS-DOS 6.22, the Dblspace.bin file
+should be left on the hard disk. However, if you install MS-DOS 6.22 to a clean
+hard disk, the version of Dblspace.bin from MS-DOS 6.0 or 6.2 is not available.
+The Drvspace.mr1 file is included with the DoubleSpace Conversion Kit. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q117806 DoubleSpace Conversion Kit: Description &amp; How to Obtain
+
+RESOLUTION
+==========
+
+To resolve this problem, Microsoft has made the Dblspace.bin file from MS-DOS
+6.2 available for download.
+
+To restore your compressed backup, follow these steps:
+
+1. Install the DoubleSpace Conversion Kit (Dblconv.exe).
+
+2. Download the DBL622.EXE file from the Microsoft Download Center to an empty
+  folder.
+
+3. Run the DBL622.EXE file you downloaded in step 2 by typing "dbl622" (without
+  the quotation marks) at the MS-DOS prompt.
+
+4. Copy the Dblspace.bin file to the MS-DOS folder.
+
+The following file is available for download from the Microsoft Download Center:
+
+  DownloadDownload Dbl622.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+MORE INFORMATION
+================
+
+The following file is created when you run Dbl622.exe:
+
+  File name      Size     Date       Version
+  ------------------------------------------
+  Dblspace.bin   64,246   09/30/93   6.20
+
+Additional query words: 6.22 drvspace drvspace.exe
+
+======================================================================
+Keywords          : kbfile kbtool msdos kbgraphxlinkcritical 
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : :6.22
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

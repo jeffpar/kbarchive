@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99536: Cross-Domain and Guest Access Between Windows NT and OS/2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99536: Cross-Domain and Guest Access Between Windows NT and OS/2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99536/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99536/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99536/","publisher":null,"image":null,"headline":"Q99536: Cross-Domain and Guest Access Between Windows NT and OS/2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99536-cross-domain-and-guest-access-between-windows-nt-and-os2">Q99536: Cross-Domain and Guest Access Between Windows NT and OS/2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99536
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-FEB-2002
+
+SUMMARY
+=======
+
+Cross-domain and guest access issues can be confusing. This article discusses
+some basic characteristics of these aliases.
+
+Consider this example: your Windows NT Advanced server is the domain controller
+for Domain\A, and you have problems seeing or using printers from LAN Manager
+Domain\B. This could be a very simple problem: you are connecting to a printer
+on a non-NT machine, so you must have the correct printer driver set up on your
+own workstation. Often, however, it is a permissions/account problem. Here are
+two possibilities:
+
+Possibility 1: There may already be an account with the same name but a a
+different password on the other domain or workstation.
+
+Possibility 2: You are logged on as DomainA\john, and have no account on
+Domain\B. Unless Domain\A is a trusted domain for DomainB you have to rely on
+guest rights or secure an account DomainB\john with the same password you have
+on your DomainA account. This is the same the way you must do things now with
+LAN Manager.
+
+Use the Administrator account to get access that is denied on other machines,
+even if you could have secured guest access.
+
+POSSIBILITY 1--PASSWORD PROBLEMS
+--------------------------------
+
+Why would the same account with different passwords cause access to be denied?
+The Domain\B server receives a request "Hi, I'm john from Domain\A, my password
+is q," and responds "You can't be john, that's not his password here--Access
+Denied." If the request comes from an account that does not exist on the
+Domain\B server, it responds "Well, I don't know you Biff, but I'll give you
+guest access" (if the server has a guest account enabled).
+
+In this regard, Windows NT and OS/2 LAN Manager are the same. There are some
+differences, however, when trusted domains are involved.
+
+POSSIBILITY 2--TRUSTED DOMAINS
+------------------------------
+
+The Domain\B controller may not recognize the request "I'm john from Domain\A, my
+password is q." If Domain\A is a trusted domain, however, the Domain\B server
+checks the password with the Domain\A controller, rather than simply deny
+access. If the Domain\A controller says the password is correct for the account,
+the Windows NT server checks the account's access privileges to the resource in
+question and grants the same privileges allowed in Domain\A.
+
+MS-DOS or OS/2 clients send the Windows NT server only their user name and
+password because they do not support the extended Server Message Block (SMB)
+protocol; Windows NT clients identify their domain as well, which the server
+checks against the list of trusted domains. If it matches, the server grants the
+requester the same privileges allowed in its own domain. If the account or
+domain is unknown to the server, it compares the requester's password against
+the guest account password (if that account is enabled) and grants guest
+privileges if it checks out.
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

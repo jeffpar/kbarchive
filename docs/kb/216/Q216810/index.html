@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216810/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216810/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216810/","publisher":null,"image":null,"headline":"Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216810-creating-packages-for-odbc-driver-for-db2--ole-db-provider">Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216810
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0 SP2
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft OLE DB Provider for DB2, version 4.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft ODBC Driver for DB2 and the Microsoft OLE DB Provider for DB2,
+which are implemented as an IBM Distributed Relational Database Architecture
+(DRDA) Application Requester, use packages to issue dynamic SQL statements.
+
+The driver and the provider will create packages dynamically in the location to
+which the user points using the Package Collection attribute. If either the user
+doesn't have the appropriate authority to create packages in designated
+"location" or the designated location does not exist, the provider or the driver
+might report the following error:
+
+  A SQL error has occurred. Please consult the documentation for your specific
+  DB2 version for a description of the associated Native Error and SQL State.
+  SQLSTATE: 51002, SQLCODE: -805.
+
+By default, the provider will automatically create one package in the target
+collection, if one does not exist, at the time the user issues the first SQL
+statement. The package is created with GRANT EXECUTE authority to a single
+&lt;AUTH_ID&gt; only, where AUTH_ID is based on the User ID value configured in
+the data source. The package is created for use by SQL statements issued under
+the same isolation level based on the Isolation Level value configured in the
+data source.
+
+Some users might specify a Package Collection value that represents a DB2
+collection used by multiple users. This can be a problem if two or more users
+with different User IDs try to access a single collection of packages. The first
+user will have access to the packages, but the second user likely will not. The
+provider includes a command line utility for the administrator to create
+packages, called Crtpkg.exe (command line) as well as a graphical user interface
+version, Crtpkgw.exe (Windows GUI). These utilities can be run using a
+privileged User ID to create packages in collections accessed by multiple users.
+These utilities will create five sets of packages and grant EXECUTE privilege to
+PUBLIC for all:
+
+- AUTOCOMMIT package (SNANC001)
+
+- READ_UNCOMMITTED package (SNACH001)
+
+- REPEATABLE_READ package (SNARR001)
+
+- READ_COMMITTED package (SNACS001)
+
+- SERIALIZABLE or REPEATABLE_READ package (SNAAL001)
+
+The driver/provider binds the right package according to the Default Isolation
+Level selected: NC, UR, RS, CS, or RR. After they are created, the packages will
+be listed in the DB2 (Mainframe) SYSIBM.SYSPACKAGE and DB2/400 QSYS.SYSPACKAGE.
+
+The following is a successful run of Crtpkg.exe from the command line:
+
+  C:\&gt;crtpkg
+  SNA or IP connection?SNA
+  SNA configuration
+  Local LU Alias?LOCAL
+  Remote LU Name?OLYMPIA
+  Mode Name?QPCSUPP
+  User ID? &lt;user_id&gt;
+  Password?
+  RDB Name? OLYMPIA
+  Package Collection? WNWBASE
+  Default Schema? WNWBASE
+  Replace existing packages? [Y/N(default)]y
+  Connecting to the host...
+  Connection established.
+  Start package creation process...
+  Creating AUTOCOMMITTED package...
+  AUTOCOMMIT package created.
+  Package creation succeeded.
+  EXECUTE privilege on SNANC001           granted to PUBLIC
+  Creating READ_UNCOMMITTED package...
+  READ_UNCOMMITTED package created.
+  Package creation succeeded.
+  EXECUTE privilege on SNACH001           granted to PUBLIC
+  Creating REPEATABLE_READ package...
+  REPEATABLE_READ package created.
+  Package creation succeeded.
+  EXECUTE privilege on SNARR001           granted to PUBLIC
+  Creating READ_COMMITTED package...
+  READ_COMMITTED package created.
+  Package creation succeeded.
+  EXECUTE privilege on SNACS001           granted to PUBLIC
+  Package creation succeeded.
+  Creating SERIALIZABLE package...
+  REPEATABLE_READ package created.
+  Package creation succeeded.
+  EXECUTE privilege on SNAAL001           granted to PUBLIC
+  Free statement handles...
+  Disconnect...
+  ...complete.
+  End of package creation.
+
+The GUI-based tool, Crtpkgw.exe, will read a Microsoft Data Link (UDL) file for
+connection configuration information. After selecting the appropriate Data Link
+file, select Create Package from the menu to create the five packages and grant
+rights to PUBLIC.
+
+Additional query words: AS/400 OS/390 MVS
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbAudDeveloper kbOLEDBSearch kbOLEDBProvDB2400SP2 kbOLEDBProvSearch
+Version           : WINDOWS:4.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

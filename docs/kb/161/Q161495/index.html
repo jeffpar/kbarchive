@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161495: XADM: Setting Up Exchange View-Only Administrators | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161495: XADM: Setting Up Exchange View-Only Administrators" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161495/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161495/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161495/","publisher":null,"image":null,"headline":"Q161495: XADM: Setting Up Exchange View-Only Administrators","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161495-xadm-setting-up-exchange-view-only-administrators">Q161495: XADM: Setting Up Exchange View-Only Administrators</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161495
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to set up Microsoft Exchange View-Only
+Administrators. This is useful if you want to include users in your organization
+who can run the Exchange Administrator program without having permission to
+modify any object in the Microsoft Exchange organization.
+
+MORE INFORMATION
+================
+
+To set up Microsoft Exchange View-Only Administrators, follow these steps:
+
+1. Determine which domain users will have View-Only rights. Anyone in the Domain
+  Users group is eligible. Permissions belonging to Domain Administrators are
+  not needed.
+
+  NOTE: If you want a user to run the Microsoft Exchange Administrator program
+  at the Microsoft Exchange Server computer itself, you need to assign the "Log
+  on locally" Windows NT user right. This user right is not granted by default
+  to the Domains Users group.
+
+2. Log on as an Administrator and run the Microsoft Exchange Administrator
+  program.
+
+3. Make sure the Permissions tab is visible for all objects. To do this:
+
+  a. From the Tools menu, click Options.
+
+  b. Click the Permissions tab.
+
+  c. Check the "Show Permissions page for all objects" and "Display rights for
+     roles on Permissions page" options.
+
+  d. Click OK.
+
+4. From the Microsoft Exchange Administrator program, click the site where you
+  want to set up the View-Only Administrator, and then select Properties from
+  the File menu.
+
+5. Click the Add button in the Permissions tab.
+
+6. In the Add Users and Groups window, add the user(s) you want to have
+  View-Only Administrative permissions. Then click OK to return to the Site
+  Properties window.
+
+  NOTE: Any regular user with a valid Windows NT account can be selected. You do
+  not need to select a user account with Exchange Administrative permissions.
+
+7. In the "Windows NT accounts with permissions" dialog box, select the user(s)
+  you added in the previous step and click "View Only Admin" in the Roles
+  dropdown list. If "View Only Admin" Does not appear in the list, unmark all
+  checked boxes except the "Logon Rights" in the Rights box. The Roles option
+  should read "View Only Admin" now.
+
+8. Click OK to close the Site Properties window.
+
+The selected Microsoft Exchange users can now run the Microsoft Exchange
+Administrator program and perform monitoring tasks, such as watching Link or
+Server Monitor Status. These users will not be able to add, delete, or modify
+any object in the Microsoft Exchange organization.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

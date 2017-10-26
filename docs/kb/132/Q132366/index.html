@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132366: PRB: Unexpected SelStart Property Behavior in Grid’s Textbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132366: PRB: Unexpected SelStart Property Behavior in Grid’s Textbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132366/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132366/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132366/","publisher":null,"image":null,"headline":"Q132366: PRB: Unexpected SelStart Property Behavior in Grid’s Textbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132366-prb-unexpected-selstart-property-behavior-in-grids-textbox">Q132366: PRB: Unexpected SelStart Property Behavior in Grid’s Textbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132366
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press the TAB key to move into a grid's text box, the insertion point
+is placed at the beginning of the field instead of at the end of the field even
+though the Grid1.Column1.SelectOnEntry property is set to false (.F.), and the
+Grid1.Column1.Text1.GotFocus event contains this code:
+
+     THIS.SelStart = LEN(ALLTRIM(THIS.Value))
+
+CAUSE
+=====
+
+The insertion point is always placed at the beginning of the text in row one,
+column one (R1C1) of the grid when you move to the grid from another object.
+This is by design.
+
+The text box in the grid column handles resetting the selection or
+select-on-entry in its default GotFocus method. The grid column tells the text
+box about its SelectOnEntry property.
+
+WORKAROUND
+==========
+
+Add the code shown in the "Example Workaround" section of this article.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Issue the following commands in the Command window:
+
+     USE SYS(2004)+"samples\data\customer"
+     CREATE FORM test
+
+2. Add a text box to the form.
+
+3. Add a grid to the form, and set the following properties:
+
+     ColumnCount = 2
+     Column1.SelectOnEntry = .F.
+
+4. In the Grid1.Column1.Text1.GotFocus event, type this code:
+
+     THIS.SelStart = LEN(ALLTRIM(THIS.Value))
+
+5. Save and run the form.
+
+6. Press the TAB key to move from the text box to the grid.
+
+The insertion point is placed at the beginning of the text in row one, column one
+(R1C1) of the grid.
+
+Example Workaround
+------------------
+
+To place the insertion point at the end of the text, do the following:
+
+1. Issue this command:
+
+     MODIFY FORM test
+
+2. In Grid1.Column1.Text1.GotFocus event, type these commands:
+
+     Textbox::GotFocus
+     NODEFAULT
+     THIS.SelStart = LEN(ALLTRIM(THIS.Value))
+
+3. Save and run the form.
+
+4. Press the TAB key to move from the text box object to the grid object. The
+  insertion point is placed at the end of the text in R1C1 of the grid.
+
+Additional query words: VFoxWin selection
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

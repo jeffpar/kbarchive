@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189710: FIX: ActiveX Control Shows Through Page After Modal Form Runs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189710: FIX: ActiveX Control Shows Through Page After Modal Form Runs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189710/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189710/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189710/","publisher":null,"image":null,"headline":"Q189710: FIX: ActiveX Control Shows Through Page After Modal Form Runs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189710-fix-activex-control-shows-through-page-after-modal-form-runs">Q189710: FIX: ActiveX Control Shows Through Page After Modal Form Runs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189710
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you display a modal form from a calling form that has an
+OleContainer/ActiveX control in an inactive Pageframe page, the ActiveX control
+bleeds through and displays on the active page.
+
+RESOLUTION
+==========
+
+After you display and then close the modal form, set the Visible property of the
+OleContainer control holding the ActiveX control to .F., then back to .T.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+        PUBLIC OFORM1
+        OFORM1=CREATEOBJECT("form1")
+        OFORM1.SHOW()
+
+        DEFINE CLASS FORM1 AS FORM
+           AUTOCENTER = .T.
+           NAME = "Form1"
+           HEIGHT = 300
+
+           ADD OBJECT PF1 AS PAGEFRAME WITH ;
+              PAGECOUNT = 2
+
+           ADD OBJECT CMD1 AS COMMANDBUTTON WITH ;
+              TOP = 275, ;
+              NAME = 'cmd1', ;
+              CAPTION = 'Do form 2', ;
+              LEFT = 140
+
+           PROC INIT
+              THIS.PF1.PAGE2.ADDOBJECT('olecls1','olecls')
+              THIS.PF1.PAGE2.OLECLS1.VISIBLE = .T.
+           ENDPROC
+
+           PROC CMD1.CLICK
+              OY = CREATEOBJECT('form')
+              OY.CAPTION = "Click on the X to close me!"
+              OY.SHOW(1)
+           ENDPROC
+
+        ENDDEFINE
+
+        DEFINE CLASS OLECLS AS OLECONTROL
+           HEIGHT = 100
+           WIDTH = 100
+           NAME = "olecls"
+           OLECLASS = 'RICHTEXT.RichtextCtrl'
+        ENDDEFINE
+
+2. Note that the ActiveX control is not visible.
+
+3. Click Page2 to display the ActiveX control, and then click Page1.
+
+4. Next, click the "Do Form 2" button.
+
+5. Close the second form by clicking the Close button in the upper right corner
+  of the screen.
+
+RESULTS:
+
+- The ActiveX control now displays on Page1.
+
+- You can hide the control by clicking Page2, then clicking back to Page1.
+
+To demonstrate the solution described in the RESOLUTION section using the
+preceding example, place the following code in the CMD1.CLICK procedure,
+immediately after the line OY.SHOW(1):
+
+     THISFORM.PF1.PAGE2.OLECLS1.VISIBLE = .F.
+     THISFORM.PF1.PAGE2.OLECLS1.VISIBLE = .T.
+
+Toggling the ActiveX control's visible property prevents the control from
+incorrectly displaying on Page1.
+
+Additional query words: kbVFp500 kbVFp500a kbVFp600fix kbActiveX kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

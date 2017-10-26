@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147227: HOWTO: Adding Legal Notice on Logon for Unattended Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147227: HOWTO: Adding Legal Notice on Logon for Unattended Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147227/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147227/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147227/","publisher":null,"image":null,"headline":"Q147227: HOWTO: Adding Legal Notice on Logon for Unattended Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147227-howto-adding-legal-notice-on-logon-for-unattended-setup">Q147227: HOWTO: Adding Legal Notice on Logon for Unattended Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147227
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbOPK kbSBK
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Adding the Legal Notice option for Unattended Setup requires modification of the
+Software Hive.
+
+MORE INFORMATION
+================
+
+From a shared copy of Windows NT on a system hard drive, expand the file,
+SOFTWARE._ to SOFTWARE. (EXPAND SOFTWARE._ SOFTWARE.). Then rename SOFTWARE._ to
+SOFTWARE.BAK.
+
+NOTE: The Windows NT version of EXPAND.EXE is required to properly expand this
+file.
+
+1. Run Registry Editor (REGEDT32.EXE).
+
+2. Select the HKEY_LOCAL_MACHINE window.
+
+3. Highlight the HKEY_LOCAL_MACHINE subtree.
+
+4. Select Registry from the menu.
+
+5. Select Load Hive.
+
+6. Go to the location of the file SOFTWARE that was expanded.
+
+7. When prompted for the Load Hive dialog box enter TEMP for the Key Name.
+
+8. A new HIVE should now be listed called TEMP.
+
+9. Double-click TEMP.
+
+10. To enable the Legal Caption modify the following entries:
+
+     HKEY_LOCAL_MACHINE\TEMP
+        \Microsoft
+           \Windows NT
+              \CurrentVersion
+                 \Winlogon
+
+     LegalNoticeCaption    REG_SZ
+     Range: String
+     Default:  (none)
+
+     Specifies a caption for a message to appear when the user presses
+     CTRL+ALT+DEL during logon. Add this value entry if you want to add
+     a warning to be displayed when a user attempts to log on to a Windows
+     NT system. The user cannot proceed with logging on without
+     acknowledging this message.
+
+     To specify text for the message, you must also specify a value for
+     LegalNoticeText.
+
+     LegalNoticeText    REG_SZ
+     Range: String
+     Default:  (none)
+
+     Specifies the message to appear when the user presses CTRL+ALT+DEL
+     during logon. Add this value entry if you want to add a warning to be
+     displayed when a user attempts to log on to a Windows NT system. The
+     user cannot proceed with logging on without acknowledging this
+     message.
+
+     To include a caption for the logon notice, you must also specify a
+     value for LegalNoticeCaption.
+
+11. To save the changes highlight TEMP.
+
+12. Select Registry from the menu.
+
+13. Select UnLoad Hive.
+
+14. The Hive is unload from the current session and is ready to be used for
+  installation purposes.
+
+Additional query words: prodnt 4.0 Unattended Setup
+
+======================================================================
+Keywords          : kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

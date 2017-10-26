@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231972: How to Set Up Your Windows NT Network File System Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231972: How to Set Up Your Windows NT Network File System Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231972/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231972/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231972/","publisher":null,"image":null,"headline":"Q231972: How to Set Up Your Windows NT Network File System Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231972-how-to-set-up-your-windows-nt-network-file-system-server">Q231972: How to Set Up Your Windows NT Network File System Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q231972
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbnetwork kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, used with:
+   - Microsoft Windows NT Services for UNIX Add-On Pack 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides an example of a simple network file system (NFS) server
+configuration that may be useful for a system administrator. Note that you can
+build on this configuration or customize it as needed. This configuration uses a
+local password file for authentication instead of the network information
+service (NIS).
+
+MORE INFORMATION
+================
+
+To create a simple network file system (NFS) server configuration:
+
+1. Choose an NTFS partition to work with.
+
+  NOTE: NTFS provides file-level security that does not exist with FAT.
+
+2. Create a new folder to share, create a file in this folder, right-click the
+  new folder, and then click Properties.
+
+3. Click the Security tab, click Permissions, and then click to select the
+  "Replace Permissions on Subdirectories" check box.
+
+4. Click to select the "Replaced Permissions on Existing Files" check box. Click
+  the individual permissions under the Name area one at a time, and then press
+  Remove to delete them.
+
+5. Click Add, click Show Users, click Everyone, click the administrators group
+  and the user named administrator, and then click Add. Change the type of
+  access to FULL CONTROL, click OK, click OK, click YES to replace permissions,
+  and then click OK.
+
+6. Click Start, point to Programs, point to "Windows NT Services for UNIX", and
+  then click "Server for NFS". Click the NFS Client Groups tab, press ALT+G to
+  add a group, type "AllowedHosts" (without the quotation marks) for the Group
+  Name, and then click OK. Press ALT+M to add a member to this group, type the
+  hostname or IP address of your NFS client, click OK, and then click Apply.
+  Note that you cannot use wildcard characters.
+
+7. Click the Share Options tab, type the full path to the folder you created in
+  step 2, and then click Share. Change the type of access to No Access, press
+  ALT+A to add the client group you previously created, click AllowedHosts, and
+  then click Add. Now decide whether to grant root privileges, or configure for
+  an anonymous user:
+
+   - Root as root: Press ALT+A to add, set the type of access to Root, click
+     OK, and then click OK.
+
+   - Root as anonymous: Press ALT+A to add, set the type of access to
+     Read-Write, click OK, and then click OK.
+
+8. On the Share Options tab, press ALT+Y, and then click Apply.
+
+9. Press ALT+O to configure user/group mappings, press ALT+E to edit your
+  password file and enter the following information:
+
+  New User Name is root
+  New User UID is 0
+  New User GID is 1 (Solaris uses 1, BSD uses 0)
+
+10. Press ALT+A to add, and then press ALT+O. Click "root(0)" under NFS Users,
+  and then click Administrator under Windows Users. Press ALT+D to add the
+  mapping, and then press ALT+A to apply your changes.
+
+11. Log on to your UNIX NFS client as root. Verify you can see the NT NFS Server
+  share by using the showmount command with the "-e &lt;NT server name&gt;"
+  parameter, where &lt;Windows NT server name&gt; is the name or IP address of
+  the Windows NT NFS Server. Your command should look like this:
+
+  #showmount -e &lt;Windows NT server name&gt;
+
+  Exports list on sfu:
+
+  /F/home/sfu , 192.168.105.80
+
+12. Mount the drive to verify functionality with syntax similar to this:
+
+  mount NTSERVER:/f/home/sfu /mnt
+
+  List the files in the export:
+
+  ls -la
+
+  total 3
+  drwxrwxrwx 3 root root 96 May 26 11:53 .
+  drwxr-xr-x 36 root root 1024 May 25 16:26 ..
+  -rwxrwxrwx 1 root root 0 May 26 11:53 testfile
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNTSsearch
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

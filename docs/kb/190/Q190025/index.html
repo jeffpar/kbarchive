@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190025: XADM: Unable to Create New Mailbox, Error 2037 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190025: XADM: Unable to Create New Mailbox, Error 2037" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190025/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190025/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190025/","publisher":null,"image":null,"headline":"Q190025: XADM: Unable to Create New Mailbox, Error 2037","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190025-xadm-unable-to-create-new-mailbox-error-2037">Q190025: XADM: Unable to Create New Mailbox, Error 2037</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190025
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to create a user in a recipient container of a Microsoft
+Exchange Server computer, which was recovered, you may get one or more of the
+following error messages:
+
+  Extension 'Wireless' could not be loaded.
+  An Error occurred during file replication.
+  Unable to find the extension.dll file with the current version number.
+  Microsoft Exchange Admin ID NO C1030AD1 [Abort], [Retry] [Ignore]
+
+Clicking Ignore then enables access to the Recipient Container Property page, but
+you still cannot create a new recipient.
+
+The following message may be found in the Event Viewer:
+
+  Event ID 2037: The file version of
+  Addins\Wireless\i386\igwadmin.dll installed on the local
+  server is not current. Unable to locate a current version on
+  any server in the site.
+
+CAUSE
+=====
+
+These errors are due, most likely, to the fact that the recovered server does
+not have the full directory structure of the original server. Consequently,
+there may be some absent files for any third-party software.
+
+WORKAROUND
+==========
+
+To work around this behavior, follow these steps:
+
+WARNING: Using the raw mode of the Exchange Server Administrator program
+(admin/r) incorrectly can cause serious problems that may require you to
+reinstall Microsoft Windows NT Server and/or Microsoft Exchange Server.
+Microsoft cannot guarantee that problems resulting from the incorrect use of raw
+mode can be solved. Use raw mode at your own risk.
+
+1. Run the Exchange Server Administrator program in raw mode. At a command
+  prompt type:
+
+  C:\exchsrvr\bin\admin.exe -r
+
+2. Select the recipients container that shows the behavior, and on the File
+  menu, select Raw Properties.
+
+3. Look under Object Attributes for Extension-Name-Inherited.
+
+4. If Extension-Name-Inherited contains a value of WIRELESS, then remove that
+  value.
+
+5. Quit the raw mode, and test the fix by attempting to create a user in the
+  same container again.
+
+Additional query words: wireless gnvuaext extension.dll
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

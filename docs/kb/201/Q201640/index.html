@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201640: SMS: Windows 9x NetWare Clients Not Running SMS Logon Script | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201640: SMS: Windows 9x NetWare Clients Not Running SMS Logon Script" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201640/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201640/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201640/","publisher":null,"image":null,"headline":"Q201640: SMS: Windows 9x NetWare Clients Not Running SMS Logon Script","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201640-sms-windows-9x-netware-clients-not-running-sms-logon-script">Q201640: SMS: Windows 9x NetWare Clients Not Running SMS Logon Script</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201640
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbBindery kbCAP kbOSNovell
+Last Modified: 12-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Windows 9x NetWare client that is using the Microsoft Client for NetWare
+logs on to a Novell NetWare server, it might not correctly run the System
+Management Server 2.0 login script (Smsls.scr). As a result, the client computer
+may not verify the System Management Server client software and report
+inventory.
+
+MORE INFORMATION
+================
+
+When the System Management Server 2.0 SMS_LOGON_MANAGER enumerates a Novell
+NetWare Bindery mode server, it adds an INCLUDE statement to the system logon
+script that calls the Smsls.scr from the SMSLOGON share, as shown here:
+
+  REM Microsoft Systems Management Server &lt;start&gt;
+  REM Important! DO NOT REMOVE THE LINES: Microsoft Systems Management Server &lt;start&gt; AND &lt;end&gt; OR ANY LINES BETWEEN THESE
+
+  REM SMS Build xxxx
+
+  Set SMS_LOGON_NW="DATA:\SMSLOGON"
+  Set SMS_LOGON="\\\&lt;servername&gt;\DATA\SMSLOGON"
+  INCLUDE %&lt;SMS_LOGON_NW&gt;\CONFIG\smsls.scr
+
+  REM Microsoft Systems Management Server &lt;end&gt;
+
+If "Enable logon script processing" is not selected in Control Panel, the client
+will not run the system logon script. On the Microsoft version of the NetWare
+redirector, this option is not enabled by default. To enable logon script
+processing:
+
+1. On the Taskbar, click the Start button, point to Settings, and then click
+  Control Panel.
+
+2. Double-click the NetWare Networks icon.
+
+3. Click the Properties tab and click to select the Enable logon script
+  processing check box.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: prodsms cli32nw
+
+======================================================================
+Keywords          : kbsms200 kbBindery kbCAP kbOSNovell 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125452: Using the SMS Tracer Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125452: Using the SMS Tracer Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125452/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125452/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125452/","publisher":null,"image":null,"headline":"Q125452: Using the SMS Tracer Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125452-using-the-sms-tracer-utility">Q125452: Using the SMS Tracer Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125452
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbInventory kbHMan kbMaintMan kbScheduler kbSCMan smsinv smshierman smsmaintm
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Systems Management Server allows you to trace the actions
+performed by the SMS services. When tracing is enabled, each service makes log
+entries for actions that it performs or errors that it receives in a log file.
+The log files are ASCII text and can be viewed with a text editor. However, SMS
+includes a Tracer utility that parses these log files and presents them in a
+clearer, more user-friendly manner than plain text viewing. Tracer also allows
+interactive viewing of the SMS log files as the services are writing to them.
+
+MORE INFORMATION
+================
+
+There are currently two versions of this utility, TRACER.EXE and SMSTRACE.EXE
+
+TRACER.EXE is a command line console-mode utility that reads changes made to a
+text file in real time. This file is located in the PSSTOOL\&lt;arch&gt;
+directory on the SMS 1.0 and 1.1 CD-ROM. For SMS 1.2 it is located in the
+SUPPORT\DEBUG\&lt;arch&gt; directory on the CD-ROM.
+
+  Usage: tracer &lt;path to one of the SMS log files&gt;
+
+SMSTRACE.EXE is a graphical user interface (GUI) multiple document interface
+(MDI) version and is included in the SITE.SRV\&lt;arch&gt;.BIN directory.
+
+SMSTRACE.EXE allows you to customize the display by selecting options such as
+columns, filtering, and ignore new lines. You can also Cut and Paste and Print
+from SMSTRACE. SMSTRACE.EXE also allows viewing of several log files
+simultaneously.
+
+To install SMSTRACE as an icon in the SMS group:
+
+1. Open the Systems Management Server group windows.
+
+2. From the Program Manager File menu, select New.
+
+3. Choose New Program Item. For the Command Line, enter:
+
+  &lt;drive&gt;:\sms\site.srv\&lt;arch&gt;.BIN\SMSTRACE.EXE
+
+  For the working directory, enter:
+
+  &lt;drive&gt;:\sms\site.srv\&lt;arch&gt;.BIN
+
+The SMS services log files are all located in the SMS\LOGS directory except for
+the Site Configuration Manager log file SCMAN.LOG and the Bootstrap log file
+BOOT.LOG.
+
+The following is a list of the log files and the names of the component that
+writes to them:
+
+SMS Alerter                   ALERTER.LOG
+Applications Manager          APPMAN.LOG
+Bootstrap                     BOOT.LOG (in SMS root directory of Secondary
+                                       Site Servers)
+Client Configuration Manager  CLICFG.LOG
+Inventory Dataloader          DATALODR.LOG
+Despooler                     DESPOOL.LOG
+Site Hierarchy Manager        HMAN.LOG
+Inventory Agent               INVAGENT.LOG
+Inventory Processor           INVPROC.LOG
+LAN Sender                    LANSEND.LOG
+RAS Sender                    RASSEND.LOG
+RAS Sender (asynchronous)     RASSYNC.LOG
+RAS Sender (ISDN)             RASISDN.LOG
+RAS Sender (X.25)             RASX25.LOG
+SNA Sender                    SNASEND.LOG
+SNA Sender (Batch)            SNABATCH.LOG
+SNA Sender (Interactive)      SNAINTER.LOG
+SNA Receiver                  SNARECV.LOG
+Maintenance Manager           MAINTMAN.LOG
+Package Command Manager       PACMAN.LOG
+SMS Scheduler                 SCHED.LOG
+Site Configuration Manager    SCMAN.LOG (in root directory of SMS drive)
+Site Reporter                 SITEREP.LOG
+SMS Executive                 SMSEXEC.LOG
+SNMPTrap Filter               TRAPFLTR.LOG
+SMS Administrator             UI.LOG
+
+For more information on tracing Systems Management Server services, please refer
+to the Systems Management Server 1.0 or 1.1 "System Guide," Appendix J. If you
+are running Systems Management Server 1.2, please refer to the Systems
+Management Server 1.2 Resource Kit.
+
+Additional query words: config sms prodsms tshoot troubleshooting
+
+======================================================================
+Keywords          : kbnetwork kbInventory kbHMan kbMaintMan kbScheduler kbSCMan smsinv smshierman smsmaintman smsscheduler smssiteconfigman 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

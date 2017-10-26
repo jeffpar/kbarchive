@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151446: FIX: Internal State of ControlBars Corrupted | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151446: FIX: Internal State of ControlBars Corrupted" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151446/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151446/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151446/","publisher":null,"image":null,"headline":"Q151446: FIX: Internal State of ControlBars Corrupted","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151446-fix-internal-state-of-controlbars-corrupted">Q151446: FIX: Internal State of ControlBars Corrupted</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151446
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1
+Operating System(s): 
+Keyword(s): kbMFC kbToolbar KbUIDesign kbVC400bug kbVC410bug kbVC420fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The internal state of the controlbars is corrupted when controlbars are docked
+and undocked. The size of the Registry key or the .INI file grows when
+SaveBarState is a result of this corruption.
+
+CAUSE
+=====
+
+The code for managing the controlbar docking and undocking has a bug which does
+not correctly remove information from the data structures. None of this code can
+be overridden to fix the bug because it is undocumented private implementation
+of the MFC.
+
+RESOLUTION
+==========
+
+The sample code at the end of this article cleans up the state of these internal
+structures. The CleanUpControlBarState function cleans up the information in the
+CDockState object passed to it. When the function returns, the CDockState object
+has the clean information.
+
+Call this function with the present state of the controlbars, and use the
+information after calling CleanUpControlBarState.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 32- bit Edition
+version 4.2.
+
+MORE INFORMATION
+================
+
+There are two ways to get information into a CDockState object:
+
+- Call the CDockState::LoadState to load the state of the controlbars from the
+  Registry or .INI file.
+
+- Use the CFrameWnd::GetDockState.
+
+To save the state to the Registry or .INI file, use CDockState::SaveState. Use
+CFrameWnd::SetDockState to set the state of the controlbars at run time.
+
+The following code was added to the Docktool sample. This code saves the
+non-corrupted controlbar information to the .INI file:
+
+     void CMainFrame::OnClose()
+     {
+         // SaveBarState saves everything but the number of Columns in
+         // the Palette we need to do that ourselves.
+         SaveBarState(_T("General"));
+
+     // Following code was added to the sample with Visual C++ 4.1
+     #if _MFC_VER == 0x0400 || _MFC_VER == 0x0410
+
+         CDockState state;
+         GetDockState(state);
+
+         CleanUpControlBarState(state);
+
+         state.SaveState(_T("General"));
+
+     #endif
+     ...
+
+Sample Code
+-----------
+
+  // In this case the function is defined as a global function.
+  // You could make it a member of one of your classes
+
+  Add the following prototype to the end of your stdafx.h:
+
+  #if _MFC_VER == 0x0400 || _MFC_VER == 0x0410
+
+  void CleanUpControlBarState(CDockState&amp; state);
+
+  #endif
+
+  and add the following code to one of your CPP files:
+
+  #if _MFC_VER == 0x0400 || _MFC_VER == 0x0410
+  void CleanUpControlBarState(CDockState&amp; state)
+  {
+
+      for (int i = 0; i &lt; state.m_arrBarInfo.GetSize(); i++)
+      {
+          CControlBarInfo* pInfo1 = (CControlBarInfo*)state.m_arrBarInfo[i];
+
+          for (int j = 0; j &lt; state.m_arrBarInfo.GetSize(); j++)
+          {
+              if (i == j)
+                  continue;
+
+              CControlBarInfo* pInfo2 =
+                  (CControlBarInfo*)state.m_arrBarInfo[j];
+
+              if (pInfo1-&gt;m_uMRUDockID == pInfo2-&gt;m_nBarID)
+                  continue;
+
+              int nSize = pInfo2-&gt;m_arrBarID.GetSize();
+              for (int k = 0; k &lt; nSize - 1; k++)
+              {
+                  if ((LONG)pInfo2-&gt;m_arrBarID[k] ==
+                      (LONG)pInfo1-&gt;m_nBarID + 0x10000)
+
+                      pInfo2-&gt;m_arrBarID[k] = NULL;
+              }
+          }
+      }
+
+      for (i = 0; i &lt; state.m_arrBarInfo.GetSize(); i++)
+      {
+          CControlBarInfo* pInfo = (CControlBarInfo*)state.m_arrBarInfo[i];
+
+          int nSize = pInfo-&gt;m_arrBarID.GetSize();
+          for (int j = 0; j &lt; nSize - 1; j++)
+          {
+              if (pInfo-&gt;m_arrBarID[j]==NULL)
+                  continue;
+
+              for (int k = j + 1; k &lt; nSize; k++)
+              {
+                  if (pInfo-&gt;m_arrBarID[k]==NULL)
+                      continue;
+
+                  if (pInfo-&gt;m_arrBarID[k]==pInfo-&gt;m_arrBarID[j])
+                      pInfo-&gt;m_arrBarID[k] = NULL;
+              }
+          }
+
+          while ((nSize!=0) &amp;&amp; (pInfo-&gt;m_arrBarID[nSize-1]==NULL))
+          {
+              nSize--;
+              pInfo-&gt;m_arrBarID.RemoveAt(nSize);
+          }
+          if (nSize)
+              pInfo-&gt;m_arrBarID.InsertAt(nSize, (void*)NULL);
+      }
+  }
+
+  #endif
+
+NOTE: The sample code above uses undocumented functionality of the MFC. To be
+compatible with future versions of MFC, enclose the code between the following
+directives:
+
+     #if _MFC_VER == 0x0400 || _MFC_VER == 0x0410
+     ...
+     ...
+     #endif
+
+Also include any call to CleanUpControlBarState between these directives.
+
+Additional query words: kbVC400bug 4.00 4.10 4.20 LoadBarState SaveBarState ini grow vcfixlist420 kbui MfcUI
+
+======================================================================
+Keywords          : kbMFC kbToolbar KbUIDesign kbVC400bug kbVC410bug kbVC420fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

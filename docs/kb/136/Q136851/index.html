@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136851: Cases Where Failed ALTER TABLE Doesn’t Revert | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136851: Cases Where Failed ALTER TABLE Doesn’t Revert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136851/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136851/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136851/","publisher":null,"image":null,"headline":"Q136851: Cases Where Failed ALTER TABLE Doesn’t Revert","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136851-cases-where-failed-alter-table-doesnt-revert">Q136851: Cases Where Failed ALTER TABLE Doesn’t Revert</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136851
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes circumstances that change the table structure even if the
+ALTER TABLE command fails.
+
+MORE INFORMATION
+================
+
+In general, any failure reported by either the ALTER TABLE command or the MODIFY
+STRUCTURE dialog box should result in the source table remaining unchanged from
+its state prior to the action.
+
+One exception to this is when a new primary key is created or an existing key is
+promoted to being a primary key. An error message is displayed if the key
+creation fails because Visual FoxPro detects a duplicate key. However, all other
+changes to the table remain intact.
+
+The SET SAFETY ON/OFF command also affects some of the validation performed by
+the ALTER TABLE and MODIFY STRUCTURE operations. The following information
+applies to the table validation rules, table validation text, field validation
+rules, field validation text, and field default values.
+
+Regardless of the setting of safety, the syntax of the information entered is
+validated. However, if SAFETY is ON, then the information is also evaluated
+before any attempt is made to alter the table. Therefore, setting SAFETY ON
+provides an extra level of validation that can occur even if the the NOVALIDATE
+clause is used to avoid a lenthgy rule verification phase.
+
+Example: For a field rule for FIELD1 where MEMVAR1 is not in scope:
+
+     ALTER TABLE Table1 ALTER Field1 CHECK Field1 !=memvar1 NOVALIDATE
+
+This succeeds if SAFETY is OFF, but fails evaluation because MEMVAR1 is not in
+scope.
+
+NOTE: If a user-defined function (UDF) is recognized during the validation phase,
+the function is not called and the validation passes.
+
+Additional query words: VFoxWin sql
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

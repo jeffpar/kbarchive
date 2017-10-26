@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34208: LINK /OV[ERLAYINTERRUPT] Option, Valid Interrupt Numbers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34208: LINK /OV[ERLAYINTERRUPT] Option, Valid Interrupt Numbers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34208/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34208/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34208/","publisher":null,"image":null,"headline":"Q34208: LINK /OV[ERLAYINTERRUPT] Option, Valid Interrupt Numbers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34208-link-overlayinterrupt-option-valid-interrupt-numbers">Q34208: LINK /OV[ERLAYINTERRUPT] Option, Valid Interrupt Numbers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34208
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:3.x,4.x,5.x
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 04-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft LINK for MS-DOS, versions 3.x, 4.x, 5.x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft LINK /OV[ERLAYINTERRUPT] option specifies the interrupt number
+used to pass control to an overlay in an application. By default, an application
+uses Interrupt 3Fh (63 decimal) for this purpose. Normally, an application uses
+the default interrupt unless one overlaid program spawns another overlaid
+program.
+
+The /OV option supports interrupts 0h through FFh (0 through 255 decimal).
+However, take care to avoid using any interrupts that conflict with MS-DOS. Such
+a conflict can be very difficult to debug. Interrupts 3Ch through 43h (60
+through 67 decimal) are available as user-defined overlay interrupts without
+conflicting with MS-DOS. Consult an MS-DOS programmer's reference for additional
+information on the available interrupts.
+
+In Microsoft LINK versions 5.3 and later, the minimum unique abbreviation for
+/OVERLAYINTERRUPT changed from /O to /OV.
+
+Additional query words: kbinf
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK3xDOSSearch kbLINK4xDOSSearch kbLINK5xDOSSearch
+Version           : MS-DOS:3.x,4.x,5.x
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

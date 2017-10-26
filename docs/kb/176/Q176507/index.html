@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176507: Unattended Installation of MSCS Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176507: Unattended Installation of MSCS Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176507/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176507/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176507/","publisher":null,"image":null,"headline":"Q176507: Unattended Installation of MSCS Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176507-unattended-installation-of-mscs-service">Q176507: Unattended Installation of MSCS Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176507
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 Enterprise Server comes with a variety of installable components.
+Each additional component is normally installed through the Microsoft Windows NT
+Server, Enterprise Edition Installer application.
+
+The following parameters can be passed to the Setup.exe file for Microsoft
+Cluster Server (MSCS) to achieve a silent or unattended installation of the MSCS
+product. MSCS is located on CD Disc 2 of the Windows NT 4.0 Enterprise Edition
+in the directory MSCS.
+
+  -uninstall
+   Removes cluster software.
+
+  -u
+   Unattended installation of MSCS.
+
+  -join CLUSTERNAME
+   Join an existing cluster.
+
+  -name CLUSTERNAME
+   Form a new cluster.
+
+  -ipaddr xxx.xxx.xxx.xxx
+   Set cluster IP Address (for Administrative use).
+
+  -subnet xxx.xxx.xxx.xxx
+   Subnet mask based on IP address used with -ipaddr.
+
+  -account ACCOUNTNAME
+   Specifies the account used to start the cluster service.
+
+  -password PASSWORD
+   Set password for the account specified with -account.
+
+  -domain DOMAINNAME
+     Domain name that owns the account specified by -account.
+
+  -excludedrive X:
+   Exclude Specified drive letter from cluster use.
+
+  -quorum X:
+  Set quorum disk to specified drive on the shared SCSI bus.
+
+  -network AdapterName NetName Role
+
+Repeat for each adapter installed in the computer.
+
+AdapterName - The ServiceName assigned to the adapter in the registry. The
+ServiceName can be located in
+
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkCards&lt;x&gt;
+
+- NetName - Specifies name that indicates the purpose of the network (private,
+  client, and so forth)
+
+- Role - 0-All, 1-Internal, 2-Client
+
+NOTE: MSCS requires that Windows NT Server Enterprise Edition version 4.0 and
+Windows NT 4.0 Service Pack 3 be installed prior to the installation of MSCS.
+
+MORE INFORMATION
+================
+
+The entire command line is contiguous and all parameters must be specified. The
+parameters -name and -join are mutually exclusive and -excludedrive is
+optional.
+
+  setup.exe -u -name &lt;Cluster_Name&gt; -ipaddr &lt;xxx.xxx.xxx.xxx&gt;
+  -subnet xxx.xxx.xxx.xxx -account &lt;Account_Name&gt; -password &lt;Password&gt;
+  -domain &lt;Domain_Name&gt; -excludedrive &lt;x:&gt; -quorum &lt;x:&gt;
+  -network &lt;Adapter_Name&gt; &lt;Network_Name&gt; &lt;Role&gt;
+
+The following example may be copied to a batch file and the required information
+modified to fit the particular environment being used.
+
+For example:
+
+  setup.exe -u -name NEWCLUSTER -ipaddr 175.3.2.1 -subnet 255.255.255.0
+  -account installer -password password -domain CLUSDOMAIN
+  excludedrive E: -quorum D: -network E100B1 PUBLICNET 0
+
+The example above will create a new cluster called NEWCLUSTER and sets the
+administrative IP address to 175.3.2.1 with a subnet of 255.255.255.0. The
+account that will start the MSCS service is INSTALLER and the password for the
+account is PASSWORD. The account INSTALLER belongs to the domain CLUSDOMAIN.
+There are two drive letters available to the Cluster Server, drives D: and E:.
+Drive E: has been excluded and D: is going to be used for the Quorum drive. The
+Network option uses the ServiceName for the Intel 10/100B adapter which, in this
+example, is E100B1. The Name for the network used by the Intel adapter is
+PUBLICNET and the role of the adapter is for both public and private
+communications.
+
+Microsoft Windows NT Server Enterprise Edition version 4.0 may be deployed using
+normal deployment/unattended methods outlined in the Windows NT 4.0 Deployment
+Guide.
+
+REFERENCES
+==========
+
+The following are suggested additional references on this topic:
+
+- Windows NT 4.0 Deployment Guide - http://www.microsoft.com/ntworkstation
+
+- Microsoft Knowledge Base article:
+
+  ARTICLE-ID: Q168814
+  TITLE : Installing WinNT 4.0 Service Packs During Unattended Install
+
+- Zero Administration Kit(ZAK): ZAK provides additional examples and concepts
+  that can be incorporated into the installation. Information about ZAK can be
+  found at:
+
+  http://www.microsoft.com/windows/zak/
+
+- More information about Microsoft Windows NT Server Enterprise Edition version
+  4.0 may be obtained from the following Microsoft Web site:
+
+To perform an unattend installation for a Windows 2000 Cluster using an
+Uttend.txt file, please consult the Windows 2000 Deployment Guide located on the
+Windows 2000 CD-ROM in the following location:
+%CDROM%\SUPPORT\TOOLS\DEPLOY.CAB\Unattend.doc
+
+Additional query words: MSCS UNATTEND UNATTENDED DEPLOYMENT AUTOMATED
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

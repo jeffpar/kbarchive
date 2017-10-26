@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175977: XADM: Install Exchange Server &amp; Client 5.0 w/ Citrix WinFrame | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175977: XADM: Install Exchange Server &amp; Client 5.0 w/ Citrix WinFrame" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175977/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175977/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175977/","publisher":null,"image":null,"headline":"Q175977: XADM: Install Exchange Server &amp; Client 5.0 w/ Citrix WinFrame","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175977-xadm-install-exchange-server--client-50-w-citrix-winframe">Q175977: XADM: Install Exchange Server &amp; Client 5.0 w/ Citrix WinFrame</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175977
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Citrix WinFrame is a multi-user Windows application server based on Windows NT
+3.51 under license from Microsoft which supports enterprise application
+deployment using a thin client architecture. This network-centric approach
+includes Citrix ICA-based universal client software that works in conjunction
+with WinFrame application server software. Thin client architecture provides the
+high-performance and universal application access needed by users while the
+application server offers I/S professionals the economic benefits of
+single-point administration.
+
+ICA (Independent Computing Architecture) is a general-purpose presentation
+services protocol for Microsoft Windows, which allows an application's user
+interface to execute with minimal resource consumption on a client device, while
+the application logic executes on ICA-servers. With the appropriate ICA client
+software, users can access standard 16- and 32-bit Windows applications running
+on a remote ICA-based server by launching them from Web-based HTML pages or from
+Windows desktops over dial-up, LAN, WAN, or Internet connections.
+
+Both Microsoft Exchange Server and Microsoft Exchange Client can be run on a
+Citrix WinFrame server. In a standard configuration, Exchange Server is
+installed and runs as a service on primary domain controller (PDC), which can be
+a WinFrame server or a computer running Microsoft Windows NT 4.0. The Exchange
+Client is installed on all other WinFrame servers. Users connect to the WinFrame
+servers and run Exchange Client, which then accesses Exchange Server.
+
+Software requirements for running Exchange Server and Exchange Client on a
+WinFrame server are:
+
+- Winframe Version 1.6 with Service Pack 5 or WinFrame version 1.7
+
+- Microsoft Exchange Server and Client version 5.0
+
+MORE INFORMATION
+================
+
+For further instructions on installing and configuring Exchange Server and
+Exchange Client 5.0, see the application note, "Microsoft Exchange Server
+(Enterprise Edition) Version 5.0 and Microsoft Exchange Client Version 5.0" on
+the following Internet site:
+
+  http://www.citrix.com/technology/msexch50_wf16.htm
+
+For more information on Citrix Winframe, see the following articles in the
+Microsoft Knowledge Base or query on the word "Citrix."
+
+  Q159563 XCLN: Citrix WinFrame FAQ
+
+  Q155001 Description of Citrix ICA Client
+
+WinFrame is manufactured by Citrix, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WINDOWS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

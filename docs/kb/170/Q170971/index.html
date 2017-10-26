@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170971: WD97: Link to Floating Picture Lost When Document Saved as 6.0/9 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170971: WD97: Link to Floating Picture Lost When Document Saved as 6.0/9" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170971/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170971/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170971/","publisher":null,"image":null,"headline":"Q170971: WD97: Link to Floating Picture Lost When Document Saved as 6.0/9","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170971-wd97-link-to-floating-picture-lost-when-document-saved-as-609">Q170971: WD97: Link to Floating Picture Lost When Document Saved as 6.0/9</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170971
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbgraphic kbusage word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you save a Word 97 document in the Word 6.0/95 file format, you may lose
+the picture link information when you open the document in an earlier version of
+Word.
+
+CAUSE
+=====
+
+The converter that saves in Word 6.0/95 format does not preserve the picture
+link information for linked floating pictures.
+
+RESOLUTION
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Link the Picture as an Inline Object
+----------------------------------------------
+
+When you insert the picture, clear the Float Over Text check box so that Word
+inserts the picture as an inline object rather than a floating object.
+
+Method 2: Insert the Picture into a Text Box
+--------------------------------------------
+
+To keep the picture as a linked floating object, first insert a text box, and
+then insert the picture as a linked inline object in the text box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Word 6.0/95 (via RTF) Export
+Converter in Microsoft Word 97 for Windows. This problem was corrected in the
+Word 6.0/95 (via RTF) Export Converter that ships with Microsoft Word 97 SR-1.
+
+For additional information about SR-1, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q172475 OFF97: How to Obtain and Install MS Office 97 SR-1
+
+MORE INFORMATION
+================
+
+NOTE: If your document contains a picture as a linked floating object, none of
+following methods will work around this problem:
+
+- Saving the document in the Microsoft Word 97 file format, and opening the
+  document in Word 6.0 or 7.0 using the Microsoft Word 97 Import Converter.
+
+- Saving the document in Rich Text Format (RTF), and then opening the document
+  in an earlier version of Word.
+
+- Saving the document in the Word 6.0/95 file format using the binary export
+  converter, and then opening the document in Word 6.0 or 7.0.
+
+REFERENCES
+==========
+
+For additional information about floating pictures, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q162579 WD97: Linked Picture Doesn't Preserve Scaling Properties
+
+  Q161692 WD97: Problems With Float Over Text Objects
+
+Additional query words: SR1 release1 8.0 8.00
+
+======================================================================
+Keywords          : kbgraphic kbusage word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

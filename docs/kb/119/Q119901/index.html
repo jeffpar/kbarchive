@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119901: How to Use the UNION Clause in a FoxPro SELECT Statement | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119901: How to Use the UNION Clause in a FoxPro SELECT Statement" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119901/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119901/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119901/","publisher":null,"image":null,"headline":"Q119901: How to Use the UNION Clause in a FoxPro SELECT Statement","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119901-how-to-use-the-union-clause-in-a-foxpro-select-statement">Q119901: How to Use the UNION Clause in a FoxPro SELECT Statement</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119901
+Product(s): Microsoft FoxPro
+Version(s): 2.00 2.5x 2.60 2.60a | 2.5x 2.60
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a 
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+- Microsoft FoxPro for UNIX, version 2.6 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The UNION clause is used to join the results of multiple queries. However, the
+UNION clause is not supported by the Relational Query By Example (RQBE) tool
+because the RQBE tool does not support multiple or nested queries. Therefore, to
+perform queries of this type, the SELECT statement must be coded by hand.
+
+MORE INFORMATION
+================
+
+The UNION clause is a very important clause in the SELECT statement because it
+allows you to append the results of a query to the results of another query. The
+syntax is:
+
+  UNION [ALL] &lt;SELECT statement&gt;
+
+The ALL clause prevents UNION from eliminating duplicate rows from the combined
+results of the tables.
+
+NOTE: There is no limit to the number of UNION clauses that can be used, except
+that the whole SELECT statement is limited to 2048 characters.
+
+There are three rules you need to follow when using a UNION clause. They are as
+follows:
+
+1. A UNION clause cannot be used to join nested SELECT statements.
+
+2. If an ORDER BY or an INTO clause is used, it must be placed in the last
+  SELECT statement.
+
+3. SELECT statements joined with a UNION clause must have identical structures
+  for the resulting tables of both statements.
+
+The last rule is very important to keep in mind because you may need to join two
+tables that have different structures. For example, one of the tables may
+contain a memo field while the other does not. In this case, you have two
+options. If the information in the field is not needed, do not include that
+particular field in the SELECT statement. If the field is needed, insert a
+placeholder in the SELECT statement for the other table. The placeholders for
+the different data types are as follows:
+
+  Numeric:   0
+  Character: " "
+  Date:      {}
+  Logical:   .F.
+  Memo:      Not available. Use workaround described below.
+
+To create a placeholder for a memo field:
+
+1. Create a database called HOLDMEMO with only one field: a memo field called
+  PLACEHOLD.
+
+2. USE the database.
+
+3. In the Command window, type:
+
+        APPEND BLANK
+
+Now that the placeholder has been created, it has to be added to the SELECT
+statement. Here is an example of using a memo field placeholder with the
+CUSTOMER.DBF file:
+
+     SELECT *,placehold FROM customer, holdmemo INTO CURSOR test
+
+The resulting query will have a blank memo field as the last field for each
+record. This behavior occurs because there is not a join condition for the
+databases, which creates a Cartesian product. In other words, each record in the
+first table is matched with each record in the second table.
+
+For another example of the UNION clause, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q89181 Outer Join Syntax Example for SELECT-SQL Statement
+
+REFERENCES
+==========
+
+FoxPro "Language Reference," see "SELECT-SQL"
+
+"Using FoxPro 2.5 for Windows," Que Publishing, pages 266-267
+
+Additional query words: VFoxWin FoxUnix FoxMac FoxDos FoxWin SQL outer join combine outerjoin 2.50 2.50a 2.50b 2.50c
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260UNIX kbFoxPro260 kbFoxPro260a kbVFP300
+Version           : 2.00 2.5x 2.60 2.60a | 2.5x 2.60
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

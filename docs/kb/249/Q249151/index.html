@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249151: SMS: Getsfwr.exe Does Not Report the File Date During Inventory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249151: SMS: Getsfwr.exe Does Not Report the File Date During Inventory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249151/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249151/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249151/","publisher":null,"image":null,"headline":"Q249151: SMS: Getsfwr.exe Does Not Report the File Date During Inventory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249151-sms-getsfwrexe-does-not-report-the-file-date-during-inventory">Q249151: SMS: Getsfwr.exe Does Not Report the File Date During Inventory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249151
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbYear2000 kbsms120 kbsms120bug kbInventory
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the properties of an inventoried software (in Properties, click
+the Packages icon), the Date attribute is empty. The verbose output of the
+inventory phase also reports the following information:
+
+  Found PACKAGE_NAME, at X:\DIR #1 Date 01/01/100 09:18 Size 256 Len = 283
+
+The date (year) is incorrect.
+
+This issue occurs when Getsfwr.exe (16-bit clients) inventories files with a date
+equal to or greater than 2000.
+
+RESOLUTION
+==========
+
+A supported software update that corrects this problem is now available from
+Microsoft, but it has not been fully regression tested and should be applied
+only to systems experiencing this specific problem. If you are not severely
+affected by this specific problem, Microsoft recommends that you wait for the
+next Systems Management Server service pack that contains this software update.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the software update. For a complete list of Microsoft Product Support
+Services phone numbers and information on support costs, please go to the
+following address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English-language version of this software update should have the following
+file attributes or later:
+
+  Date      Time   Version    Size     File name     Platform
+  -----------------------------------------------------------
+  03/09/00  xx:xx  786        33,632   Getsfwr.exe   x86
+
+NOTE: Because of file dependencies, the most recent update or feature that
+contains the above files may also contain additional files.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in Systems Management Server version
+1.2.
+
+MORE INFORMATION
+================
+
+To install this software update site-wide, replace the existing version of the
+Getsfwr.exe file on the Systems Management Server site server, in the following
+folder:
+
+  Sms\Site.srv\Maincfg.box\Client.src\X86.bin
+
+The files are replicated at the next Maintenance Manager work cycle to all
+Systems Management Server logon servers to the Sms\Logon.srv\X86.bin folder.
+After the files are replicated, the clients can be updated. Then you can open
+and save the System.map file in the Sms folder. For additional information about
+this procedure, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q166771 SMS: How to Force Site-Wide Client Updates
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbYear2000 kbsms120 kbsms120bug kbInventory 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178445: PRB: Stored Procedure with Text (BLOB) Input Returns Null Output | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178445: PRB: Stored Procedure with Text (BLOB) Input Returns Null Output" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178445/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178445/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178445/","publisher":null,"image":null,"headline":"Q178445: PRB: Stored Procedure with Text (BLOB) Input Returns Null Output","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178445-prb-stored-procedure-with-text-blob-input-returns-null-output">Q178445: PRB: Stored Procedure with Text (BLOB) Input Returns Null Output</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178445
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 18-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a stored procedure has a input text parameter (known as BLOB, Binary Large
+Object), all the output parameters get set to Null by the SQL Server on the way
+back to the client.
+
+CAUSE
+=====
+
+This is a known issue with SQL Server driver.
+
+RESOLUTION
+==========
+
+Instead of using output parameters, prepare the returned information in a
+resultset.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Besides steps to reproduce the behavior, the following sample code provides a
+workaround by returning to the Visual Basic client the identity column of the
+newly-created record as a resultset. Test table and stored procedures are
+created in Pubs database.
+
+Command1 inserts a new record to table, BLOBTest, by passing the contents in
+Text1 as an input parameter to the stored procedure, InputBLOBTest, and returns
+the Identity column as an output parameter. The return value is shown in the
+debug window as Null. Command2 provides a workaround by executing a modified
+version of the original stored procedure, which passes back the identity column
+in a resultset.
+
+1. Start a new project in Visual Basic and choose "Standard EXE." Form1 is
+  created by default.
+
+2. From the Project menu, select References, and then place a check next to
+  Microsoft Remote Data Object 2.0.
+
+3. Add 2 CommandButtons, Command1 and Command2, to Form1.
+
+4. Add a TextBox, Text1, to Form1.
+
+5. Paste the following code in the General Declarations section of Form1:
+
+     Dim cn As New rdoConnection
+
+     Private Sub Command1_Click()
+        Dim qy As New rdoQuery
+        With qy
+           Set .ActiveConnection = cn
+           .SQL = "{? = CALL InputBLOBTest(?, ?, ?) }"
+        End With
+        qy(0).Direction = rdParamReturnValue
+        qy(1).Direction = rdParamInput
+        qy(2).Direction = rdParamInput
+        qy(3).Direction = rdParamOutput
+        qy(1) = Now
+        qy(2) = Text1.Text
+        qy.Execute
+        Debug.Print qy(3)
+     End Sub
+
+     Private Sub Command2_Click()
+        Dim strSQL As String
+        Dim rs As rdoResultset
+
+        strSQL = "{CALL InputBLOBTest2('" &amp; Now &amp; "','" &amp; Text1.Text &amp; "')}"
+        Set rs = cn.OpenResultset(strSQL)
+        Debug.Print rs(0)
+     End Sub
+
+     Private Sub Form_Load()
+
+        Dim strSQL As String
+
+        cn.CursorDriver = rdUseOdbc
+        cn.Connect = "Driver={SQL server};" _
+          &amp;  "Server=MyServer;Database=Pubs;Uid=sa;Pwd="
+        cn.EstablishConnection rdDriverNoPrompt
+
+        On Error Resume Next
+        strSQL = "DROP TABLE dbo.BLOBTest"
+        cn.Execute strSQL, rdExecDirect
+        On Error GoTo 0
+
+        strSQL = "CREATE TABLE dbo.BLOBTest "
+        strSQL = strSQL &amp; "(ID int IDENTITY NOT NULL PRIMARY KEY, "
+        strSQL = strSQL &amp; "WhenEntered Varchar(30), Comment TEXT)"
+        cn.Execute strSQL, rdExecDirect
+
+        On Error Resume Next
+        strSQL = "DROP PROCEDURE dbo.InputBLOBTest"
+        cn.Execute strSQL, rdExecDirect
+        On Error GoTo 0
+
+        strSQL = "CREATE PROCEDURE dbo.InputBLOBTest "
+        strSQL = strSQL &amp; "@WhenEntered Varchar(30), _
+        @Comment TEXT, @id Int OUTPUT
+        strSQL = strSQL &amp; "AS Insert Into BLOBTest(WhenEntered, Comment) "
+        strSQL = strSQL &amp; "Values(@WhenEntered, @Comment) "
+        strSQL = strSQL &amp; "Select @id=@@Identity"
+        cn.Execute strSQL, rdExecDirect
+
+        On Error Resume Next
+        strSQL = "DROP PROCEDURE dbo.InputBLOBTest2"
+        cn.Execute strSQL, rdExecDirect
+        On Error GoTo 0
+
+        strSQL = "CREATE PROCEDURE dbo.InputBLOBTest2 "
+        strSQL = strSQL &amp; "@WhenEntered Varchar(30), @Comment TEXT "
+        strSQL = strSQL &amp; "AS Insert Into BLOBTest(WhenEntered, Comment) "
+        strSQL = strSQL &amp; "Values(@WhenEntered, @Comment) "
+        strSQL = strSQL &amp; "Select @@Identity"
+        cn.Execute strSQL, rdExecDirect
+
+        Command1.Caption = Command1.Caption &amp; "(Repro)"
+        Command2.Caption = Command2.Caption &amp; "(Workaround)"
+
+     End Sub
+
+     Private Sub Form_Unload(Cancel As Integer)
+        cn.Close
+     End Sub
+
+6. Note that you should change your Server, Uid, and Pwd parameters in the RDO
+  connection string.
+
+7. Start the program or press the F5 key. Look at immediate window for output.
+
+(c) Microsoft Corporation 1997. All Rights Reserved.
+Contributions by Adrian Chiang, Microsoft Corporation
+
+
+Additional query words: kbdse kbDSupport kbVBp kbVBp500 kbVBp600 kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169880: How to Use Group Policies with MSNDS in Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169880: How to Use Group Policies with MSNDS in Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169880/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169880/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169880/","publisher":null,"image":null,"headline":"Q169880: How to Use Group Policies with MSNDS in Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169880-how-to-use-group-policies-with-msnds-in-windows-95">Q169880: How to Use Group Policies with MSNDS in Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169880
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kbnetwork 3rdpartynet msnets win95 kb3rdPartyNetClient
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use group policies on a Novell NetWare network
+running the Novell Directory Service (NDS) with the Microsoft Client for NetWare
+Networks using the Microsoft Service for NetWare Directory Services (MSNDS).
+
+MORE INFORMATION
+================
+
+To use group policies on a Novell NetWare network running NDS with the Microsoft
+Client for NetWare Networks using MSNDS, use the following steps.
+
+NOTE: When you are creating policies for specific NetWare groups, the group
+should be named the full NDS group name (for example, group1.client.novell). If
+the full name is not used, the policy may not be downloaded from the server for
+the group, even though other policies are applied.
+
+1. Enable user profiles on the Windows 95-based computer. To do so, follow these
+  steps:
+
+  a. In Control Panel, double-click Passwords.
+
+  b. Click the User Profiles tab.
+
+  c. Click the "Users can customize their preferences and desktop settings.
+     Windows switches to your personal settings whenever you log in" option to
+     select it.
+
+2. Install group policies on the Windows 95-based computer. To do so, follow
+  these steps:
+
+  a. In Control Panel, double-click Add/Remove Programs, and then click Have
+     Disk on the Windows Setup tab.
+
+  b. Type the path to the Poledit folder in the Copy Manufacturer's Files From
+     box, and then click OK. The Poledit folder is located in the
+     Admin\Apptools folder on the Windows 95 CD-ROM. The path should look like
+     this
+
+  &lt;drive&gt;:\Admin\Apptools\Poledit
+
+     where &lt;drive&gt; is the drive letter assigned to your CD-ROM drive.
+
+  c. Click Group Policies in the Have Disk dialog box, and then click OK.
+
+3. Create the policy file and place it on the server. For information about the
+  creation and setup of user profiles and policies, see Chapter 15, "User
+  Profiles and System Policies," in the Microsoft Windows 95 Resource Kit.
+
+4. Double-click the Network Neighborhood icon, and then double-click Entire
+  Network.
+
+5. Use the right mouse button to click your NDS tree, and then click Properties.
+
+6. Click Enable System Policies on the NDS Administration Settings tab, and then
+  set the Volume and File Path for the .pol file you placed on the server in
+  step 3.
+
+  NOTE: You must be logged in with supervisor rights to view the Administration
+  tab. Also, you need to have trustee rights to the volume and have supervisor
+  privileges on the volume.
+
+7. In Control Panel, double-click Network, and then verify that the Primary
+  Network Logon setting is set to Client For NetWare Networks.
+
+8. Click Client For NetWare Networks, and then click Properties. Verify that the
+  preferred server is set to the server containing the group objects, and then
+  click OK.
+
+9. The Novell NDS must have Bindery Emulation set for every server container
+  that contains the users and groups. For information about how to set Bindery
+  Emulation, refer to your Novell documentation.
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 3rdpartynet msnets win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

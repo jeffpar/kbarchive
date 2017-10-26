@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163110: WinNT Support for Compaq Smartdesk 2855 cnt75MB21 Docking Statio | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163110: WinNT Support for Compaq Smartdesk 2855 cnt75MB21 Docking Statio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163110/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163110/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163110/","publisher":null,"image":null,"headline":"Q163110: WinNT Support for Compaq Smartdesk 2855 cnt75MB21 Docking Statio","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163110-winnt-support-for-compaq-smartdesk-2855-cnt75mb21-docking-statio">Q163110: WinNT Support for Compaq Smartdesk 2855 cnt75MB21 Docking Statio</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163110
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.5,3.51
+Operating System(s): 
+Keyword(s): kb3rdparty
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Compaq Smartdesk 2855 cnt75MB21 has a built-in Netflex-2 network card based
+on the Intel 595 chipset. This network card is not inherently supported by
+Windows NT and requires a device driver from Compaq.
+
+Currently, there is no driver support available for Windows NT version 4.0.
+
+The Compaq driver is contained in a Softpaq file called Sp1251.exe and can be
+found on Compaq's Web site.
+
+
+The Network adapter must be pre-configured using the flashset or softset2
+diagnostic disk that shipped with your laptop or docking station.
+
+The network adapter can only be configured for IRQ-11, unless a newer version
+diagnostic utility disk is used, contact Compaq Support for more detail.
+
+The Compaq Smartdesk 2855 cnt75MB21 also contains a built-in SCSI controller,
+make sure the SCSI controller is configured to use a different IRQ other than
+IRQ-11 prior to loading the NIC device driver.
+
+The SCSI controller is based on the Adaptec 151x/152x/AIC 6260/6360 and can use
+the supported device driver Sparrow.sys that ships with Windows NT by using
+Windows NT Setup\options\add remove SCSI adapter.
+
+For more information regarding this controller, please see the following
+Microsoft Knowledge Base article:
+
+  ARTICLE-ID: Q102651
+  TITLE : Required Settings for Adaptec 1510 SCSI Host Adapter
+
+MORE INFORMATION
+================
+
+The following are excerpts from the Readme.txt contained on the Compaq Softpaq
+Sp1251.exe for network card support.
+
+1. The NIC adapter should be configured prior to setting it up in NT.
+
+2. In NT, select the Control Panel choose the Network icon select "Add Adapter".
+
+3. A list of available adapters will be displayed. Choose "Other
+  &lt;Requires&gt; disk from manufacturer".
+
+4. Insert the Compaq Integrated NetFlex-2 ENET Drivers disk and press enter.
+
+5. A dialog box will come up with "A:\-". Change the path "A:\NT\35" which is
+  the path where the driver EPRONT.SYS and setup file OEMSETUP.INF are located.
+
+6. The screen will come up with four settings: Interrupt; I/O Port; I/O Channel
+  Ready; and Transceiver Type. Make sure the values that come up match the
+  actual board settings as configured with FlashSet or SoftSet2. DO NOT change
+  the I/O Channel Ready. The proper setting was already determined. Changing
+  this parameter could cause the adapter to become inoperable. Click on OK to
+  accept the adapter settings. Click on OK to exit the network configuration
+  screen.
+
+7. NT will then perform the binding process. If any additional network software
+  options were installed, you may be prompted for specific information for
+  these packages.
+
+8. Restart NT when prompted, in order for the changes to take affect.
+
+Additional query words: ProLinea Net1/25s ProLinea Net1/33s
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

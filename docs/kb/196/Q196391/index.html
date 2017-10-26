@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196391: Factors Affecting COMTI Performance. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196391: Factors Affecting COMTI Performance." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196391/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196391/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196391/","publisher":null,"image":null,"headline":"Q196391: Factors Affecting COMTI Performance.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196391-factors-affecting-comti-performance">Q196391: Factors Affecting COMTI Performance.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196391
+Product(s): Microsoft SNA Server
+Version(s): 4.0,4.0 SP1,4.0 SP2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+COM Transaction Integrator (COMTI) for Customer Information Control System
+(CICS) and Information Management System included with Microsoft SNA Server 4.0
+provides an interface between Microsoft Transaction Server and mainframe-based
+applications. This article describes the major factors affecting COMTI
+performance. These major factors include the following:
+
+- The frequency and type of client requests made against the Microsoft
+  Transaction Server package.
+
+- The Microsoft Transaction Server thread pool limit of 100 for each package.
+
+- SNA LU 6.2 session and SNA link considerations.
+
+  The following major factors affect COMTI throughput over the APPC/LU 6.2/SNA
+  transport:
+
+   - The SNA Server LU 6.2 contention winner limit.
+
+   - Preactivation of the LU 6.2 sessions.
+
+   - SNA link tuning
+
+- Host (VTAM/FEP, CICS/IMS) response time.
+
+- COMTI security method being used.
+
+- COMTI transaction method being used.
+
+Each of these factors is discussed in more detail below, along with specific
+known issues associated with each. Troubleshooting suggestions are also provided
+to help determine if a specific factor is causing performance problems.
+
+
+MORE INFORMATION
+================
+
+The major factors affecting COMTI performance are discussed below.
+
+Frequency and Type of Client Requests Made against the Microsoft Transaction Server Package
+-------------------------------------------------------------------------------------------
+
+In general, the frequency of COMTI requests through SNA Server can be determined
+by capturing an SNA Application Advanced Program-to-Program Communications
+(APPC) API trace on the computer where COMTI is running. Every MC_ALLOCATE
+request made by COMTI is associated with a new client request against the
+Microsoft Transaction Server package. The frequency of MC_ALLOCATE requests
+within the APPC API trace file indicates the transaction load generated by
+COMTI. Note that the COMTI transaction load is constrained by the Microsoft
+Transaction Server thread pool size, described in the "Microsoft Transaction
+Server Thread Pool Limit of 100 for Each Package" section.
+
+
+Microsoft Transaction Server Thread Pool Limit of 100 for Each Package
+----------------------------------------------------------------------
+
+COMTI uses an Microsoft Transaction Server thread during the duration of an LU
+6.2 conversation or transaction. Ensure that there are sufficient Microsoft
+Transaction Server threads to handle concurrent requests. By default, Microsoft
+Transaction Server 2.0 has a maximum thread pool of 100 for each package. This
+limits the number of concurrent COMTI requests to 100.
+
+If you need more than 100 concurrent requests against an Microsoft Transaction
+Server package, you need to upgrade to Windows NT 4.0 Service Pack 4 which
+allows the thread pool maximum for an Microsoft Transaction Server package to be
+increased above 100 by setting the following registry key:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Transaction Server\ 
+  Package\{your package GUID}
+
+  ThreadPoolMax: REG_DWORD: &lt;value&gt;
+  Valid values are:  0 to 0x7FFFFFFF
+
+SNA LU 6.2 Session and SNA Link Considerations
+----------------------------------------------
+
+The following major factors affect COMTI throughput over the APPC/LU 6.2 SNA
+transport:
+
+- The SNA Server LU 6.2 Contention Winner Limit.
+
+  COMTI only uses SNA Server LU 6.2 contention winner sessions. The number of
+  sessions negotiated with the host system will determine the number of
+  sessions available for concurrent COMTI client requests. The parallel session
+  limit and contention winner limit should be set to the same value within the
+  SNA Server APPC mode definition used by COMTI. Note that other APPC
+  applications may share the same Local APPC LU, Remote APPC LU, and Mode used
+  by COMTI. If so, sufficient sessions must be defined to accommodate the needs
+  of all applications. See the "Host response time" section below for
+  information on configuring the CICS region parallel session limit to match
+  the SNA Server.
+
+  Also, the Request/Response Unit (RU) size should be sufficiently large to hold
+  the standard message size sent between COMTI and the host application. For
+  example, if the host response is expected to exceed 2 KB, set the Max Send
+  and Receive RU size to 4096 within the SNA Server APPC mode definition. The
+  session level pacing values will not likely affect transaction performance
+  because a transaction involves a single request and single response. So, an
+  APPC mode send and receive window of two or more should be sufficient.
+
+  Troubleshooting Suggestions:
+
+  Capture SNA Server Data Link Control (DLC) and LU 6.2 message trace of the
+  connection startup and initial COMTI component use by enabling the traces
+  before the connection is started. Provide the traces to an SNA Support
+  Professional. This engineer can decode the DLC trace to determine the
+  parallel session limit and contention winner limits negotiated in the Change
+  Number of Sessions (CNOS) exchange for the LU/LU/mode being used by COMTI.
+
+- Preactivation of the LU 6.2 Sessions.
+
+  Automatically activating LU 6.2 sessions in advance will prevent a short delay
+  in establishing new LU 6.2 sessions as COMTI conversation allocation requests
+  are made. In addition, by preactivating sessions, SNA Server will keep these
+  sessions active instead of deactivating those sessions which are idle for the
+  SESTIMEOUT period (approximately 20 seconds).
+
+  SNA Server will honor its APPC mode automatic activation limit setting for any
+  APPC LU/LU partnership defined within the APPC mode when the connection is
+  initially activated. Partnerships are defined within the APPC-mode Partners
+  folder.
+
+  For more information about the SNA Server SESTIMEOUT registry parameter, see
+  the SNA Server Reference, Chapter 8, SnaServer Service. This guide is
+  installed with the product and is viewable through the SNA Server Help
+  program option selectable from the Start menu.
+
+- SNA Link Tuning
+
+  If you are using Token Ring, Ethernet, or FDDI to communicate with your host
+  system, investigate DLC tuning. The following 802.2 connection default
+  settings should be sufficient:
+   - Unacknowledged Send limit defaults to 8.
+
+   - Receive Ack threshold defaults to 2.
+
+   - Maximum BTU length: 1929 for Token Ring, 1493 for Ethernet. If a 16- Mbps
+     Token Ring is being used, and the COMTI request or host response will
+     exceed this BTU length, then increase the maximum BTU length to 4105
+     within the SNA Server connection.
+
+  Troubleshooting Suggestions:
+
+  Capture a Microsoft Network Monitor or Sniffer(TM) trace of SNA Server to host
+  traffic, and provide it to an SNA Support Professional. This engineer can use
+  this trace to observe the Send Window and Receive Ack threshold being used by
+  both ends by looking at the LLC traffic.
+
+Host (VTAM, CICS/IMS) Response Time
+-----------------------------------
+
+The host response time (also referred to as the "think time") for each
+transaction affects the number of transactions that can be performed given the
+number of LU 6.2 sessions being used.
+
+If CICS is being used, investigate the CICS region definitions for parallel
+session limit and contention winner limit. These values are configured in the
+Maximum parameter in the CICS region SESSION PROPERTIES:
+
+  SESSION PROPERTIES MAximum ==&gt; 100, 000
+
+The first value is the parallel session limit while the second value is the CICS
+contention winner limit. For COMTI use, SNA Server should be configured as the
+contention winner for all sessions, so the CICS contention winner limit should
+be 0. Also, the CICS region maximum tasks value should be sufficient to handle
+the concurrent client requests.
+
+If IMS is being used, ensure that IMS has sufficient message processing regions
+to handle the expected load.
+
+- Troubleshooting suggestions:
+
+  Capture an SNA Server DLC message trace of the throughput test and analyze the
+  host response time observed on the LU 6.2 sessions. The response time can be
+  measured for a given LU 6.2 session as follows:
+
+                SNA Server                 Host
+               -----------------           ------------ 
+  Start time: FMH-5 Attach (+ data)  -&gt;
+                                          &lt;- Data Response
+
+  End time (*):        (&lt;-) Conditional End Bracket (-&gt;)
+
+  Within an SNA Server DLC message trace, a unique LU 6.2 session is
+  distinguished by unique Originating Address Field (OAF), Destination Address
+  Field (DAF), and OAF/DAF Assignor Indicator (ODAI) values. The OAF and DAF
+  specified in an SNA Server session request will alternate on the host
+  response.
+
+  (*) NOTE: Either end may deallocate the conversation, though this is often
+  done by COMTI. But, it is possible for the host data response to contain the
+  CEB.
+
+
+COMTI Security Method Being Used
+--------------------------------
+
+
+The use of COMTI user or package security requires SNA Server Host Security
+Integration to be deployed. For best performance, the Host Account Cache service
+should (ideally) be running on the SNA Server computer itself, or a server on
+the same local network as the SNA Server computer. For more information about
+SNA Host Security deployment models, see the following technical white paper,
+co-authored by Proginet Corporation, available at the following URL:
+
+  Password Synchronization and Single Sign-On Between Multiple Platforms
+  http://www.microsoft.com/sna/product/progicorp.asp?A=2&amp;B=6
+
+If COMTI user security is used, there is validation to the Windows NT domain
+controller for the user domain. To support heavy stress usage from many unique
+Windows NT clients, consider placing a domain controller for the user's domain
+on the same computer or near the SNA Server computer that is supporting COMTI.
+
+COMTI Transaction Method Being Used
+-----------------------------------
+
+If the Microsoft Transaction Server component being used with COMTI is defined to
+run as a transaction, then COMTI implements two-phase commit (2PC) processing
+when communicating to the mainframe application, under direction of the
+Microsoft Transaction Server Distributed Transaction Coordinator (MS DTC)
+process.
+
+Transactional support involves additional communication overhead with the host
+application (and adds additional work for the host application), and performs
+slower than running in non-transactional mode.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2
+Version           : :4.0,4.0 SP1,4.0 SP2
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

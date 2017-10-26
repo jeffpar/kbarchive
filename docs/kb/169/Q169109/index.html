@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169109: PRB: Parse Maps Do Not Handle Multi-select List Boxes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169109: PRB: Parse Maps Do Not Handle Multi-select List Boxes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169109/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169109/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169109/","publisher":null,"image":null,"headline":"Q169109: PRB: Parse Maps Do Not Handle Multi-select List Boxes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169109-prb-parse-maps-do-not-handle-multi-select-list-boxes">Q169109: PRB: Parse Maps Do Not Handle Multi-select List Boxes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169109
+Product(s): Microsoft C Compiler
+Version(s): 4.1,4.2,5.0
+Operating System(s): 
+Keyword(s): kbcode kbProgramming kbnokeyword kbISAPI kbMFC kbVC
+Last Modified: 17-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.1, 4.2, 5.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MFC ISAPI extension cannot handle a multiple-select list box on a form. The
+following error message may appear in Internet Explorer 3.0 when multiple items
+are selected:
+
+  BAD REQUEST
+
+Your client sent a request that this server didn't understand.
+
+CAUSE
+=====
+
+MFC ISAPI parse maps are not designed to handle multiple-select list boxes.
+
+RESOLUTION
+==========
+
+One way of handling multiple selections is to override CallFunction and do the
+all the parsing in CallFunction without calling the base class. This involves
+writing the code for parsing the input from the browser.
+
+Another method involves modifying the input to a format that can be handled by
+the parse maps. The sample code in the MORE INFORMATION section of this article
+overrides CallFunction and modifies the input in a way that the parse maps can
+handle.
+
+MORE INFORMATION
+================
+
+If you select multiple items in the list box, the following is sent when you use
+the HTML in the Sample Code section:
+
+     MFCIsapiCommand=WorksOn&amp;Name=ssm&amp;Days=Monday&amp;Days=Tuesday
+
+The code in CallFunction below modifies the input as follows:
+
+     MFCIsapiCommand=WorksOn&amp;Name=ssm&amp;Days=Monday,Tuesday
+
+In the parse map function, the variable associated with the list box contains a
+string with all the selected items in the list box, delimited by ','. If a comma
+is not a good delimiter then change the line:
+
+     #define DELIMITER  ','
+
+and specify a different character. Note that &amp;, ?, =, + have special meanings
+and should not be used as delimiters.
+
+Sample Code
+-----------
+
+HTML Form that calls the sample dll:
+
+     &lt;HTML&gt;
+
+     &lt;form action="/scripts/MyIsapi.dll?" method="Post"&gt;
+     &lt;input type=hidden Name=MFCIsapiCommand Value=WorksOn&gt;
+     Name &lt;input name="Name" &gt;
+     &lt;p&gt;
+     Works on
+     &lt;SELECT MULTIPLE NAME="Days"&gt;
+     &lt;OPTION VALUE=""&gt;NONE
+     &lt;OPTION&gt;Sunday
+     &lt;OPTION&gt;Monday
+     &lt;OPTION&gt;Tuesday
+     &lt;OPTION&gt;Wednesday
+     &lt;OPTION&gt;Thursday
+     &lt;OPTION&gt;Friday
+     &lt;OPTION&gt;Saturday
+     &lt;/SELECT&gt;
+     &lt;p&gt;
+     &lt;input type=submit&gt;
+     &lt;/form&gt;
+
+     &lt;/HTML&gt;
+
+MFC ISAPI PARSE_MAP entries and function for the above:
+
+     ON_PARSE_COMMAND(WorksOn, CMyIsapiExtension, ITS_PSTR ITS_PSTR)
+     ON_PARSE_COMMAND_PARAMS("Name=~ Days=~")
+
+     void CFirstISAPIExtension::WorksOn (CHttpServerContext* pCtxt,
+         LPCTSTR Name, LPTSTR Days)
+     {
+         StartContent(pCtxt);
+         *pCtxt &lt;&lt; Name &lt;&lt; " works on the following Days : &lt;p&gt;" &lt;&lt; Days;
+         EndContent(pCtxt);
+
+     }
+
+The code above generates the error message when more than one day is selected in
+the list box.
+
+The following override of CallFunction modifies the input so that the parse maps
+can handle multiple selections:
+
+     #define DELIMITER ","
+
+     int CMyIsapiExtension::CallFunction(CHttpServerContext* pCtxt,
+         LPTSTR pszQuery, LPTSTR pszCommand)
+     {
+         LPTSTR queryIn = pszQuery;
+         LPTSTR queryOut = new TCHAR[_tcslen(queryIn) + sizeof(TCHAR)];
+         LPTSTR pOut = queryOut;
+         *pOut = NULL;
+
+         LPTSTR pIn = queryIn;
+         // Copy everything till the first ?
+         if (_tcschr(pIn, '?'))
+         {
+             pIn = _tcschr(pIn, '?');
+             pIn++;
+             memcpy(pOut, queryIn, (pIn - queryIn)); //copy till the ?
+             pOut += (pIn - queryIn);
+             *pOut = NULL;
+         }
+
+         LPTSTR lastParameter = NULL;
+         int nLastParameterLen = 0;
+
+         while (pIn &amp;&amp; *pIn)
+         {
+             // Is there a '=' in the input string
+             LPTSTR q = _tcschr(pIn, '=');
+             if (!q)
+             {
+                 // No. Copy till end of the buffer and break out
+                 // No more parameter/value pairs.
+                 _tcscpy(pOut, pIn);
+                 break;
+             }
+
+             int paramLen = (q - pIn);
+
+             // Is the last parameter name the same as the present
+             // parameter name?
+             if (paramLen &amp;&amp;
+                 nLastParameterLen == paramLen &amp;&amp;
+                 _tcsncmp(lastParameter, pIn, nLastParameterLen) == 0)
+             {
+                 // Yes! replace &amp; with , and just copy the value
+                 // of the parameter.
+                 q++;
+                 if (*q)
+                 {
+                     LPTSTR r = _tcschr(q, '&amp;');
+                     *(pOut - 1) = ',';
+                     //copy the value
+                     if (r)
+                     {
+                         _tcsncpy(pOut, q, (r - q) + 1);
+                         pOut+=(r - q) + 1;
+                         pIn = r + 1;
+                     }
+                     else
+                     {
+                         _tcscpy(pOut, q);
+                         break;
+                     }
+                 }
+                 else
+                 {
+                     *(pOut - 1) = ',';
+                     *pOut = NULL;
+                     break;
+                 }
+             }
+             else
+             {
+                 nLastParameterLen = paramLen;
+                 lastParameter = pIn;
+
+                 q = _tcschr(pIn, '&amp;');
+                 if (q)
+                 {
+                     if (paramLen)
+                     {
+                         _tcsncpy(pOut, pIn, (q - pIn) + 1);
+                         pOut += (q - pIn) + 1;
+                     }
+                     pIn = q + 1;
+                 }
+                 else
+                 {
+                     if (paramLen)
+                     {
+                         _tcscpy(pOut, pIn);
+                         break;
+                     }
+                     else
+                     {
+                         if (pOut == queryOut)
+                             *pOut = NULL;
+                         else
+                             *(pOut - 1) = NULL;
+                         break;
+                     }
+                 }
+             }
+         }
+
+         pszQuery = queryOut;
+
+         int nRet = CHttpServer::CallFunction(pCtxt,
+             pszQuery, pszCommand);
+
+         delete []queryOut;
+
+         return nRet;
+     }
+
+The following modification to the WorksOn function prints the days on different
+lines:
+
+     void CMyIsapiExtension::WorksOn (CHttpServerContext* pCtxt,
+         LPCTSTR Name, LPTSTR Days)
+     {
+         StartContent(pCtxt);
+         *pCtxt &lt;&lt; Name &lt;&lt; " works on the following Days&lt;p&gt;";
+         LPTSTR p = (LPTSTR)Days;
+         while (p)
+         {
+             LPCTSTR q = p;
+             p = _tcschr(p, ',');
+             if (p)
+                 *p++ = NULL;
+
+             *pCtxt &lt;&lt; q &lt;&lt; "&lt;p&gt;";
+         }
+
+         EndContent(pCtxt);
+
+     }
+
+Additional query words: multiple select listbox list box mfcisapi form
+
+======================================================================
+Keywords          : kbcode kbProgramming kbnokeyword kbISAPI kbMFC kbVC 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.1,4.2,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

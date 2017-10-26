@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161400: Authenticated Users Cannot Query Secured Documents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161400: Authenticated Users Cannot Query Secured Documents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161400/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161400/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161400/","publisher":null,"image":null,"headline":"Q161400: Authenticated Users Cannot Query Secured Documents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161400-authenticated-users-cannot-query-secured-documents">Q161400: Authenticated Users Cannot Query Secured Documents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161400
+Product(s): Internet Information Server
+Version(s): WINNT: 1.1,2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server versions 1.1, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Microsoft Internet Information Server (IIS) is configured to allow
+Anonymous access and either Basic authentication or Microsoft Windows NT
+Challenge Response authentication, and it contains both a secured virtual
+directory and an authentication virtual directory, one of the following may
+occur:
+
+- You can authenticate against a secure HTML query page and perform the query,
+  but only the documents in the unsecured directory are returned as a result of
+  the query.
+
+  -Or-
+
+- You can authenticate against a secure HTML query page and retrieve the
+  documents from a secured directory, but for a certain period of time, you can
+  only retrieve unsecured documents.
+
+CAUSE
+=====
+
+If the Anonymous user has access to the .IDQ file, then the browser does not
+pass the authentication header along with the GET or POST. This causes the .IDQ
+file to be run in the context of the anonymous user account. Running the .IDQ
+file in the Anonymous user's context only allows the unsecured documents to be
+retrieved.
+
+NOTE: If you are using ASP files to query in Index Server 2.0, the ASP files also
+need to be secured.
+
+WORKAROUND
+==========
+
+Create a separate .IDQ file for the authenticated users and remove the Anonymous
+user account from the Windows NT NTFS file permissions of that file. This will
+cause the browser to send the authentication header with the GET or the POST,
+ensuring that the Index Server can identify who is logged on. Once the Index
+Server knows who is logged on, then you can retrieve secured documents reliably.
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ110 kbIdxServ200
+Version           : WINNT: 1.1,2.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

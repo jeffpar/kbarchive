@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107869: CD Golf Error: There Is No Driver Installed on Your System | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107869: CD Golf Error: There Is No Driver Installed on Your System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107869/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107869/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107869/","publisher":null,"image":null,"headline":"Q107869: CD Golf Error: There Is No Driver Installed on Your System","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107869-cd-golf-error-there-is-no-driver-installed-on-your-system">Q107869: CD Golf Error: There Is No Driver Installed on Your System</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q107869
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUN-1999
+
+kbsetup
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Golf for Windows, multimedia edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under Windows 3.1, when you attempt to do a fly-by in the multimedia edition of
+Golf 1.0, one of the following errors may appear:
+
+  Undetectable error loading specified device driver.
+
+  There is no driver installed on your system. For more information, see
+  "Troubleshooting: Multimedia Questions and Answers" in the Help system.
+
+  The specified device is not open or is not recognized by MCI. For more
+  information, see "Troubleshooting: Multimedia Questions and Answers" in the
+  Help system.
+
+In addition to these errors, you may notice that except for the Club Distances
+command and About Microsoft Golf, you cannot run Help inside Golf.
+
+These errors indicate that one or more of the video drivers Golf needs are not
+installed or are not compatible.
+
+RESOLUTION
+==========
+
+To correct this problem, do the following:
+
+1. Double-click Control Panel (generally found in the Main program group) and
+  choose the Drivers icon.
+
+2. Select the following line:
+
+[MCI] Microsoft Videos for Windows
+
+3. Click Remove and click Yes to remove the driver.
+
+4. Click Restart Now.
+
+5. Reinstall the multimedia edition of Golf, making sure to click Yes when asked
+  to install the run-time version of Video For Windows.
+
+MORE INFORMATION
+================
+
+The multimedia edition of Golf ships with a run-time version of Video for
+Windows. Certain drivers are necessary to run the fly-bys and demonstration,
+which are AVI files. The error message will occur if one of these drivers is not
+installed.
+
+During the installation, Multimedia Golf only checks to see if the [MCI] Video
+for Windows driver is installed. The setup is not designed to verify the
+existence any other display driver. The conflict arises when another multimedia
+software was installed prior to Golf, and that software loaded some but not all
+of the display drivers necessary for AVI files.
+
+Additional query words: VFW 1.00 AVI multi-media cd-rom cd rom fly-bys video demo demos
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbGolfSearch kbGolf100
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

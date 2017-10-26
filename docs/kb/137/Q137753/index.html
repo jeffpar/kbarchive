@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137753: Motorola Power 14.4 PCMCIA Modem May Not Dial Twice | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137753: Motorola Power 14.4 PCMCIA Modem May Not Dial Twice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137753/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137753/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137753/","publisher":null,"image":null,"headline":"Q137753: Motorola Power 14.4 PCMCIA Modem May Not Dial Twice","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137753-motorola-power-144-pcmcia-modem-may-not-dial-twice">Q137753: Motorola Power 14.4 PCMCIA Modem May Not Dial Twice</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137753
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): dun win95 kbDialUp
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a Motorola Power 14.4 Cellular Modem with Windows 95, you may
+not be able to dial the second time you try to use the modem.
+
+CAUSE
+=====
+
+The initialization string used for this modem in Windows 95 enables a dial
+suffix. This dial suffix enables transmission of tones after the connection has
+been made without breaking the connection. One example of how this feature is
+used is in an electronic banking service. This behavior is also known as staged
+dialing.
+
+RESOLUTION
+==========
+
+Remove and reinsert the modem to dial again. You must repeat this process each
+time you want to dial again.
+
+To prevent this behavior from occurring, use the following method to disable
+staged dialing.
+
+NOTE: Microsoft does not encourage or support making changes to .inf files.
+Therefore, Microsoft Product Support Services (PSS) does not support the
+following procedure. Although we have tested this procedure and it appears to
+function as described, you should make a backup copy of the Mdmmoto.inf file in
+the Windows\Inf folder before you proceed.
+
+1. Use any text editor (such as Notepad) to open the Mdmmoto.inf file in the
+  Windows\Inf folder.
+
+  NOTE: The Inf folder is a hidden folder in the Windows folder. To view this
+  folder, start Windows Explorer, click Options on the View menu, click Show
+  All Files on the View tab, and then click OK.
+
+2. Add the following line to the end of the [Modem16.AddReg] section of the
+  file:
+
+  HKR, Settings, DialSuffix,, ""
+
+3. Save and then close the file.
+
+4. Remove the Motorola Power 14.4 modem using the Modems tool in Control Panel.
+
+5. Remove and reinsert the modem.
+
+MORE INFORMATION
+================
+
+The behavior described in this article occurs only with 32-bit communications
+programs such as HyperTerminal and Dial-Up Networking. When you use a 32-bit
+communications program, the modem works correctly the first time you dial after
+starting Windows 95 or inserting the modem, but does not respond on subsequent
+attempts to dial.
+
+======================================================================
+Keywords          : dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130518: User-Level Security Prevents Point and Print Functionality | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130518: User-Level Security Prevents Point and Print Functionality" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130518/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130518/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130518/","publisher":null,"image":null,"headline":"Q130518: User-Level Security Prevents Point and Print Functionality","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130518-user-level-security-prevents-point-and-print-functionality">Q130518: User-Level Security Prevents Point and Print Functionality</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130518
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kberrmsg kbprint kbusage win95 kbPrinting
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using file and printer sharing for Microsoft Networks with
+user-level security enabled, a client computer may not be able to use the
+Windows 95 Point and Print functionality.
+
+When you attempt to drag a shared printer to the Printers folder, or drag a
+document to the icon for a shared printer from a Windows 95 client computer, you
+may receive one of the following error messages:
+
+  The file 'DMCOLOR.DLL' on Network printer driver files could not be found.
+
+  Setup could not find a file on the specified path. Please specify a new path,
+  and then click OK.
+
+  Resource type is not correct.
+
+The Point and Print feature should locate and copy all the necessary files
+automatically.
+
+CAUSE
+=====
+
+This issue can occur if user-level security is enabled on the Windows 95 server
+and the client does not have access rights to the Windows\System folder.
+
+RESOLUTION
+==========
+
+To resolve this issue, grant the client read-only access to the Windows\System
+folder on the Windows 95 server. To do this, follow these steps:
+
+1. Click Start, point to Programs, and then click Windows Explorer.
+
+2. Double-click the Windows folder.
+
+3. Right-click the System folder, then click Sharing.
+
+4. Click Add to add the client computer with read-only access rights.
+
+  NOTE: You can add The World with read-only access rights to add all clients at
+  once.
+
+MORE INFORMATION
+================
+
+When you share a printer using file and printer sharing for Microsoft Networks,
+a hidden share called Printer$ is created. The Printer$ share is the
+Windows\System folder on the Windows 95 server. The Printer$ share provides a
+source for the printer drivers for the shared printer.
+
+When a client uses Point and Print, the client computer is directed to the
+Printer$ share to obtain the necessary printer drivers during the Point and
+Print installation of the shared printer. When the server uses user-level
+security, a lack of rights to the Windows\System folder for the client computer
+prevents Point and Print from being able to read the files from the Printer$
+share.
+
+======================================================================
+Keywords          : kberrmsg kbprint kbusage win95 kbPrinting 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

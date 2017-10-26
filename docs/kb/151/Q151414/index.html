@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151414: Windows 95/98 Partition Types Not Recognized by Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151414: Windows 95/98 Partition Types Not Recognized by Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151414/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151414/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151414/","publisher":null,"image":null,"headline":"Q151414: Windows 95/98 Partition Types Not Recognized by Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151414-windows-9598-partition-types-not-recognized-by-windows-nt">Q151414: Windows 95/98 Partition Types Not Recognized by Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151414
+Product(s): Microsoft Windows NT
+Version(s): ; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbenvkbfaq
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Windows NT does not recognize Windows 95/98 FAT32 partitions. There are
+currently no plans to create a FAT32 driver for Windows NT.
+
+MORE INFORMATION
+================
+
+OEM versions of Windows 95 support four partition types for FAT file systems
+that Windows NT does not recognize. The partition type can be identified by the
+System ID byte in the partition table. This byte is located at the following
+offsets:
+
+  0x1C2 = Partition 1
+  0x1D2 = Partition 2
+  0x1E2 = Partition 3
+  0x1F2 = Partition 4
+
+The four values used by Windows 95 that Windows NT does not recognize are as
+follows:
+
+  0x0B      Primary  Fat32 Partitions up to 2047 GB
+  0x0C      Same as 0x0B, uses Logical Block Address Int 0x13 extensions
+  0x0E      Same as 0x06, uses Logical Block Address Int 0x13 extensions
+  0x0F      Same as 0x05, uses Logical Block Address Int 0x13 extensions
+
+The FAT partition types that Windows NT version 3.X and 4.0 can recognize are:
+
+  0x01      Fat12 &lt; 10 megabytes
+  0x04      Fat16 &lt; 32 megabytes
+  0x06      Fat16 &gt; 32 megabytes
+  0x05      Extended (may be FAT, HPFS or NTFS)
+
+To work around this issue when you install Windows NT 4.0, make sure that both
+your boot partition and the partition you are installing to is either formatted
+with the FAT16 or NTFS file system, or is not formatted.
+
+For more information about the FAT32 file system or troubleshooting Windows NT
+4.0 Setup, click an article number below to view that article in the Microsoft
+Knowledge Base:
+
+  Q126690 Windows NT 4.0 Setup Troubleshooting Guide
+
+  Q154997 Description of the FAT32 File System
+
+  Q173694 Err Msg: ERROR: Setup Was Unable to Install the Boot Loader
+
+
+
+Additional query words: 3.10 3.50 3.51 4.00 prodnt
+
+======================================================================
+Keywords          : kbenv kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTAdvSerSearch kbWinNTS351search
+Version           : :; winnt:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258144: HOWTO: Get a List of All Pinned Files from OLE Automation in VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258144: HOWTO: Get a List of All Pinned Files from OLE Automation in VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258144/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258144/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258144/","publisher":null,"image":null,"headline":"Q258144: HOWTO: Get a List of All Pinned Files from OLE Automation in VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258144-howto-get-a-list-of-all-pinned-files-from-ole-automation-in-vb">Q258144: HOWTO: Get a List of All Pinned Files from OLE Automation in VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258144
+Product(s): Microsoft SourceSafe
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbAutomation kbSSafe500 kbSSafe600 kbDSupport kbGrpDSSSafe
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe OLE Automation does not expose any pinning functionality
+directly, so there is no direct way to tell if a file is pinned from OLE
+Automation. This article provides sample code to work around this problem and
+retrieve this information.
+
+MORE INFORMATION
+================
+
+The following sample assumes that you have a Microsoft Visual Basic project, and
+that when you want to get the path information, you call the CheckPaths routine.
+This sample can easily be modified to take a project as a parameter, or to do
+something other than output the results with Debug.Print.
+
+  ' Used to store VSSItem Objects.
+  Public objVSSObject As VSSItem
+  Public objVSSProject As VSSItem
+
+  ' This routine begins the printing of all items that are pinned.
+  Public Sub CheckPaths()
+      ' Set On Error routine.
+      On Error GoTo ErrHandler
+          
+      ' Used as a reference to the VSS database.
+      Dim objVSSDatabase As New VSSDatabase
+      
+      ' Used to store the VSS Username, password and SrcSafe.ini data.
+      Dim UserName As String
+      Dim SrcSafeIni As String
+      Dim Password As String
+      
+      ' Set up the username, password, database path.
+      UserName = "Admin"
+      Password = ""
+      SrcSafeIni = "C:\Program Files\Microsoft Visual Studio\Common\VSS60a\srcsafe.ini"
+      
+      ' Attempt to log into SourceSafe.
+      objVSSDatabase.Open SrcSafeIni, UserName, Password
+
+      ' Create VSS Database object and set current item to $/ (root project).
+      Set objVSSProject = objVSSDatabase.VSSItem("$/", False)
+      
+      ' Set the current project.
+      objVSSDatabase.CurrentProject = objVSSProject.Spec
+
+      ' Check for pinned files in this project.
+      Call Links(objVSSProject)
+      
+      ' Iterate through all items in current project (false means ignore deleted items).
+      For Each objVSSObject In objVSSProject.Items(False)
+          ' Check to see what type of object we have.
+          Select Case objVSSObject.Type
+                      
+              ' Current item is a project.
+              Case 0
+                  ' Call procedure to check for existing sub projects of this
+                  ' project.
+                  Call CheckSubProjects(objVSSObject)
+              
+              ' Current Object is a file.
+              Case 1
+                  ' Do nothing for files.
+
+              ' Unknown object type.
+              Case Else
+                  MsgBox ("Unknown object type encountered!")
+          End Select
+      Next
+      
+      ' Inform the user that we are finished.
+      MsgBox "All Done"
+      
+      Set objVSSProject = Nothing
+      Set objVSSObject = Nothing
+      Set objVSSDatabase = Nothing
+      Exit Sub
+
+  ErrHandler:
+          
+      Response = MsgBox(Err.Description, vbExclamation, "VSS")
+      Err.Clear
+      Set objVSSProject = Nothing
+      Set objVSSObject = Nothing
+      Set objVSSDatabase = Nothing
+  End Sub
+
+  ' This routine is passed a project item as a parameter. It checks for existing
+  ' sub projects in the passed project and calls the links function to check for
+  ' pinned files in this project.
+  Public Sub CheckSubProjects(objVSSProject As VSSItem)
+      Dim i As Integer
+
+      ' Check for pinned files in this project.
+      Call Links(objVSSProject)
+      
+      ' Iterate through each item of the project (false means ignore deleted).
+      For Each objVSSObject In objVSSProject.Items(False)
+          ' Check to see what type of object we have.
+          Select Case objVSSObject.Type
+                      
+              ' Current item is a project.
+              Case 0
+                  i = DoEvents
+                  Call CheckSubProjects(objVSSObject)
+              
+              ' Current Object is a file.
+              Case 1
+                  ' Do nothing for files
+              
+              ' Unknown object type.
+              Case Else
+                  MsgBox ("Unknown object type encountered!")
+          End Select
+      Next
+  End Sub
+
+  Private Sub Links(objVSSFile As VSSItem)
+      Dim objVSSVersion As VSSVersion
+      Dim UnpinArray() As String
+      Dim i As Integer
+      Dim j As Integer
+      Dim found As Boolean
+      
+      ' Set up array to store each time we get an unpin event.
+      ReDim UnpinArray(40)
+      i = 1
+      found = False
+      
+      ' Loop through the projects events to see if we find a pin or unpin event.
+      For Each objVSSVersion In objVSSFile.Versions
+          If Left(objVSSVersion.Action, 6) = "Pinned" Then
+              ' Check whether we already have an unpin event for this file.
+              ' Because we are going through history from most recent to oldest,
+              ' if we don't have an unpin event now, the file is pinned.
+              For j = 1 To i
+                  If InStr(1, objVSSVersion.Action, UnpinArray(j), vbTextCompare) &gt; 0 And UnpinArray(j) &lt;&gt; "" Then
+                      ' Found an unpin event; the file is not pinned.
+                      found = True
+                  End If
+              Next
+
+              ' If we didn't find an unpin event, print out the pin event that has the
+              ' filename and version it is pinned at.
+              If found = False Then
+                  Debug.Print objVSSVersion.Action
+              End If
+          ElseIf Left(objVSSVersion.Action, 8) = "Unpinned" Then
+              ' Store the unpin event in our array.
+              UnpinArray(i) = Right(objVSSVersion.Action, Len(objVSSVersion.Action) - 10)
+              i = i + 1
+          End If
+      Next
+
+      Set objVSSVersion = Nothing
+  End Sub
+
+REFERENCES
+==========
+
+  http://msdn.microsoft.com/library/default.asp?URL=/library/techart/vssauto.htm
+
+  Q257989 HOWTO: Pin and Unpin Files in SourceSafe from OLE Automation in
+  Visual C++
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbSSafe500 kbSSafe600 kbDSupport kbGrpDSSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

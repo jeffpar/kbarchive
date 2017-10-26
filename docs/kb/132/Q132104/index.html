@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132104: FIX: Background Color in Text Box Does Not Use Dithered Colors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132104: FIX: Background Color in Text Box Does Not Use Dithered Colors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132104/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132104/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132104/","publisher":null,"image":null,"headline":"Q132104: FIX: Background Color in Text Box Does Not Use Dithered Colors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132104-fix-background-color-in-text-box-does-not-use-dithered-colors">Q132104: FIX: Background Color in Text Box Does Not Use Dithered Colors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132104
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using a dithered color (other RGB color pairs may also exhibit the same
+behavior) as a background color in a text box, edit region, grid, or check box
+(other controls may exhibit the same behavior), you see only the solid side of
+the RGB color pair as your background color.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Create a program containing the following code and run it:
+
+    PUBLIC myform
+     myform = CREATEOBJECT('form')
+     myform.ADDOBJECT("mytext", "textbox")
+     WITH myform.mytext
+       .LEFT = 15
+       .TOP = 6
+       .VISIBLE = .T.
+       .BACKCOLOR = rgb(128,255,255)  &amp;&amp; Should change the back color to a
+       ** light blue
+     ENDWITH
+     myform.ADDOBJECT("mycheckbox", "checkbox")
+     WITH myform.mycheckbox
+       .LEFT = 15
+       .TOP = 50
+       .VISIBLE = .T.
+       .CAPTION = "Check 1"
+       .BACKCOLOR = RGB(128,255,255) &amp;&amp; Should change the back color to a
+       ** light blue
+     ENDWITH
+     myform.ADDOBJECT("myedit", "editbox")
+     WITH myform.myedit
+       .LEFT = 200
+       .TOP = 40
+       .VISIBLE = .T.
+       .BACKCOLOR = rgb(128,255,255) &amp;&amp; Should change the back color to a
+       ** light blue
+     ENDWITH
+     myform.ADDOBJECT("mylabel", "label")
+     WITH myform.mylabel
+       .LEFT = 200
+       .TOP = 6
+       .VISIBLE = .T.
+       .BACKCOLOR = rgb(128,255,255) &amp;&amp; Should change the back color to a
+       **light blue
+     ENDWITH
+     myform.SHOW
+
+The solid side of your RGB color pair may vary due to your video driver. To see
+what the solid and color side of your RGB color pair is, go to the Control Panel
+in Windows, and double-click the Colors icon. Click the Color Palette button,
+and then click the Define Custom Color button. Then enter 128 for Red, 255 for
+Green, and 255 for Red. You will see that the Color side of RGB(128,255,255) is
+a light blue but the solid side is Gray, White, or Blue Gray depending on your
+video driver. (You can also use the Custom Color Palette in Visual FoxPro to do
+this.)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

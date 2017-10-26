@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q72460: INFO: Baseline Shifts in Cell When Character Italicized | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q72460: INFO: Baseline Shifts in Cell When Character Italicized" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/072/Q72460/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/072/Q72460/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/072/Q72460/","publisher":null,"image":null,"headline":"Q72460: INFO: Baseline Shifts in Cell When Character Italicized","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q72460-info-baseline-shifts-in-cell-when-character-italicized">Q72460: INFO: Baseline Shifts in Cell When Character Italicized</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q72460
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbSDKWin16
+Last Modified: 26-JUN-1999
+
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+NOTE: With TrueType fonts in Windows 3.1, this process described below is not necessary. An application should do a version check to determine if it is running under version 3.0 and perform this process only if the application is indeed running under Windows 3.0 or if the application is using non TrueType fonts in Windows 3.1.
+
+SUMMARY
+=======
+
+When a font is italicized under Windows version 3.0, the dimensions of the
+character cells change because the descender of the character may require more
+space at the left edge of the character cell.
+
+Because the character cell is larger, the relative position of the baseline of
+the character within the cell changes. The baseline itself is not affected, but
+when a character is drawn italic and nonitalic with the TextOut() function at
+the same x coordinate, the baseline of the italic font is shifted a few pixels
+to the right.
+
+To account for this shift, calculate the slope of the font -- ascent divided by
+overhang -- after italicization. Using this slope, the number of pixels by which
+the character cell was expanded left is equal to descent divided by slope, or
+(descent times overhang) divided by ascent. This value can be subtracted from
+the x coordinate in the TextOut() call to align the baselines.
+
+MORE INFORMATION
+================
+
+Consider the character "f". In a normal character cell, it would appear as:
+
+         ^ ........
+         | ........
+         | ...xx...
+         | ..x..x..
+   Ascent| ..x.....
+         | ..xx....
+         | ..x.....
+         | ..x.....
+         | ..x.....
+         v .xxx....&lt;-baseline
+
+  Descent^ ........
+
+         v ........
+
+When italicized, the descent is shifted to the left and the ascent is shifted to
+the right, along a line of constant slope equal to the ascent divided by the
+overhang:
+
+         ^ ............
+         | ............
+         | .......xx...
+         | ......x..x..
+   Ascent| .....x......
+         | .....xx.....
+         | ....x.......
+         | ....x.......
+         | ...x........
+         v ..xxx.......&lt;-baseline
+
+  Descent^ ............
+
+         v ............
+                    &lt;-&gt;
+                     Overhang
+
+Because the descent of the character is shifted left according to the slope of
+the line, this particular character cell has been expanded one pixel left, which
+has the effect of shifting the baseline in the character cell one pixel right.
+
+Since the overhang represents the amount the ascent of the character is shifted
+right in the cell, the corresponding shift of the descent can be calculated and
+can be called the "underhang":
+
+               descent * overhang
+
+  underhang = --------------------
+
+                     ascent
+
+When calling the TextOut() function, use the normal x-coordinate where the text
+should be drawn, but subtract the underhang. This places the baseline of the
+character exactly where it would be if the character were not italic.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

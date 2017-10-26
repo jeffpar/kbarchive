@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167233: Windows NT Boot Error Msg: Missing Last Known Good Menu | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167233: Windows NT Boot Error Msg: Missing Last Known Good Menu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167233/","publisher":null,"image":null,"headline":"Q167233: Windows NT Boot Error Msg: Missing Last Known Good Menu","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167233-windows-nt-boot-error-msg-missing-last-known-good-menu">Q167233: Windows NT Boot Error Msg: Missing Last Known Good Menu</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167233
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0a,4.5
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft BackOffice Small Business Server versions 4.0, 4.0a, 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When your computer running Windows NT starts up, you may receive on of the
+following error messages:
+
+  Windows NT could not start because the following file is missing or corrupt:
+  \%systemroot%\SYSTEM32\CONFIG\SYSTEMHardware Profile/Last Known Good menu.
+
+  -or-
+
+  Windows NT could not start because the following are missing or corrupt:
+  \Winnt.sbs\system32\config\SYSTEMware profile/last known good menu.
+  You can attempt to repair this file by starting Windows NT setup.
+
+  -or-
+
+  Windows NT could not start because the following are missing or corrupt:
+  \Winnt\system32\config\SYSTEMware profile/last known good menu.
+  You can attempt to repair this file by starting Windows NT setup.
+
+NOTE: %systemroot% is the installation directory for Windows NT.
+
+CAUSE
+=====
+
+Both the System and System.alt registry files are corrupted or missing.
+
+RESOLUTION
+==========
+
+Use the emergency repair disk (ERD) and select "inspect registry files" on the
+first menu selection screen. On the second menu selection screen select "replace
+SYSTEM configuration." This will replace the damaged System registry hive in the
+%systemroot%\System32\Config directory with the System hive on the ERD.
+
+NOTE: Any system changes made after the ERD was last updated will be lost.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  ARTICLE-ID: Q103280
+  TITLE : Using an Emergency Repair Disk Created by Windows NT
+
+If there is no ERD, a restore from a tape that contains a backup of the registry
+will be needed.
+
+If you do not have an ERD or backup tape, you can recover the System hive by
+expanding it from the %systemroot%\repair directory using the following steps:
+
+1. Install a parallel copy of Windows NT to an NTTemp directory.
+
+2. From a command line prompt, go to the repair directory of the original
+  Windows NT installation.
+
+  For example: CD \winnt\repair
+
+3. Use Expand.exe to expand the System._ file to System.
+
+  Expand SYSTEM._ SYSTEM
+
+4. Copy the expanded SYSTEM file to the %systemroot%\System32\Config directory.
+
+  Copy System c:\winnt\system32\config
+
+5. Try to boot back into the original Windows NT installation.
+
+MORE INFORMATION
+================
+
+During the boot process, if the system hive is corrupted, Windows NT will try to
+use Last Known Good by accessing System.alt. If both the System and System.alt
+files are corrupted, Windows NT will not be able to boot.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a kbSBServ450
+Version           : :4.0,4.0a,4.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

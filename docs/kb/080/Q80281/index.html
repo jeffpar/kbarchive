@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80281: PRB: Combining Multiple Compiled Resource Files Fails | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80281: PRB: Combining Multiple Compiled Resource Files Fails" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80281/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80281/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80281/","publisher":null,"image":null,"headline":"Q80281: PRB: Combining Multiple Compiled Resource Files Fails","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80281-prb-combining-multiple-compiled-resource-files-fails">Q80281: PRB: Combining Multiple Compiled Resource Files Fails</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80281
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application is unable to load some of its resources, while other resources
+load properly.
+
+CAUSE
+=====
+
+Several small compiled resource (RES) files have been combined using the MS-DOS
+command "COPY /b".
+
+RESOLUTION
+==========
+
+Use the #include directive to combine the files at the source level.
+
+MORE INFORMATION
+================
+
+The Resource Compiler that was shipped with the Microsoft Windows Software
+Development Kit (SDK) versions 2.x ca not handle large resource files because of
+inherent memory limitations. To work around these limitations, it is recommended
+that programmers compile the resources into small RES files, and combine these
+files using the MS-DOS COPY /b command.
+
+The Resource Compiler shipped with version 3.x of the Windows SDK has been
+enhanced to handle resource files much larger than its Windows 2.x counterpart.
+The format of the compiled resource files in Windows 3.x does not support
+concatenation of RES files.
+
+If an application has a large number of resources, even the version 3.x Resource
+Compiler can run out of memory. If this occurs, modify the design of the
+application to use a resource-only dynamic-link library (DLL). The following
+three steps outline the required process to perform this type of functionality:
+
+1. Use the Resource Compiler to create a resource-only DLL that contains some of
+  the application's resources. See the note below regarding resource-only DLLs
+  under Windows 3.x.
+
+2. In the application, load the resource library using the LoadLibrary function.
+
+3. Use the LoadBitmap, LoadMenu, and so forth, functions to load resources from
+  the DLL as required.
+
+Under Windows 3.x, resource-only DLLs require a Windows exit procedure (WEP). The
+WEP must be exported in the DEF file and the export must have the RESIDENTNAME
+attribute. Place the code for the WEP into a FIXED code segment. The source code
+for a WEP follows:
+
+     int far pascal WEP(int NotUsed)
+        {
+        return 1;
+        }
+
+The "far" and "pascal" declarators are in lowercase to avoid having to include
+the WINDOWS.H header file.
+
+Additional query words: 3.00 3.10 dialog icon menu bitmap cursor font rcdata stringtable
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

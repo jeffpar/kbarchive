@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114338: Workgroup Add-On for MS-DOS: Sharing and Loading SMARTDrive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114338: Workgroup Add-On for MS-DOS: Sharing and Loading SMARTDrive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114338/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114338/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114338/","publisher":null,"image":null,"headline":"Q114338: Workgroup Add-On for MS-DOS: Sharing and Loading SMARTDrive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114338-workgroup-add-on-for-ms-dos-sharing-and-loading-smartdrive">Q114338: Workgroup Add-On for MS-DOS: Sharing and Loading SMARTDrive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114338
+Product(s): Microsoft Access Distribution Kit
+Version(s): MS-DOS:3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to load SMARTDRV.EXE from the AUTOEXEC.BAT file after installing
+the Workgroup Add-On for MS-DOS version 3.11, you may receive the following
+error message:
+
+  Unable to Use a Disk Cache on the Specified Drive
+
+Also, when you type "smartdrv" (without the quotation marks) at an MS-DOS command
+prompt, one of your hard disk drives may be missing from the SMARTDrive table
+that displays disk-caching status. For example, if drive C was shared at the
+last startup, the table may appear as follows:
+
+             Disk Caching Status
+
+  Drive   Read Cache   Write Cache   Buffering
+  --------------------------------------------
+
+  A:      Yes          No            No
+  B:      Yes          No            No
+  D:      Yes          No            No
+
+CAUSE
+=====
+
+These problems occur when you are running the Workgroup Add-On for MS-DOS and
+have shared an entire drive (or a directory on the drive) because the shared
+drive appears to SMARTDrive as a network drive. SMARTDrive does not allow you to
+cache a network resource.
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods:
+
+- Load SMARTDrive before the NET START command in the AUTOEXEC.BAT file. This
+  allows SMARTDrive to cache the drive before it appears as a network drive.
+
+-or-
+
+- Set up the shared connections so that they are not saved when you exit
+  Workgroup Add-On for MS-DOS but are shared after you log on again. To disable
+  sharing at startup, add the /saveshare:no parameter to the end of the NET
+  SHARE entry. For example, to share drive C now but not when you restart the
+  system, type the following command at the MS-DOS command prompt:
+
+  " net share cdrive=c:\ /saveshare:no " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+The aforementioned error message also appears if a DoubleSpace-compressed volume
+file or the host drive for that volume is selected; however, the host or
+compressed drive is still listed in the SMARTDrive table.
+
+Additional query words: dblspace addon add-on workgroups wgao networked
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311DOS
+Version           : MS-DOS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

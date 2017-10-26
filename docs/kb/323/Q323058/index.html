@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q323058: &quot;Unable to Obtain a Write Lock on Config File&quot; Error in SNA Mgr | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q323058: &quot;Unable to Obtain a Write Lock on Config File&quot; Error in SNA Mgr" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/323/Q323058/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/323/Q323058/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/323/Q323058/","publisher":null,"image":null,"headline":"Q323058: &quot;Unable to Obtain a Write Lock on Config File&quot; Error in SNA Mgr","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q323058-unable-to-obtain-a-write-lock-on-config-file-error-in-sna-mgr">Q323058: "Unable to Obtain a Write Lock on Config File" Error in SNA Mgr</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q323058
+Product(s): Microsoft SNA Server
+Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you make a configuration change in SNA Manager, and then you click OK to
+confirm the change, you may receive the following error message:
+
+  Unable to obtain a write lock on the config file.
+
+NOTE: The error occurs before you try to save the configuration file. Depending
+on the symptoms, the error can occur on either the Primary or Backup Host
+Integration Server (HIS) or the SNA Server.
+
+Some common causes that prevent you from obtaining a write lock on the
+configuration file are:
+
+1. Another user has the Com.cfg file open for write and has not saved the
+  changes. (A Com.lok file is in the Config directory of the Primary Host
+  Integration Server (HIS) / SNA Server.)
+
+2. The file permission or the share permission (or both) for the Everyone group
+  account is not set to full access. This can be further qualified, for
+  example, if an account such as Administrator or Administrator equivalent is
+  specified instead of the Everyone group account.
+
+3. The user who is logged on is not part of the local Administrator group.
+
+MORE INFORMATION
+================
+
+If none of the causes mentioned in the "Summary" section apply, there may be an
+issue with file creation and the virus scanning software that is running on the
+server(s). The cause of the issue may occur when SNA Manager attempts to create
+the Com.c$$ in the COMCFG share on the Primary Host Integration Server (HIS) /
+SNA Server. The Com.c$$ file is created when a configuration change is made to
+the Com.cfg, and then the user clicks OK to confirm the change in SNA Manager.
+You may resolve this issue by disabling virus-scanning software.
+
+REFERENCES
+==========
+
+For additional information about how to determine who has locked the Com.cfg
+file, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q139676 Finding Out Who Has Locked the SNA Server Configuration File
+
+Additional query words: his
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

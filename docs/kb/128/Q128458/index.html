@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128458: SMS Despooler Does Not Support Forced Installation and Upgrade | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128458: SMS Despooler Does Not Support Forced Installation and Upgrade" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128458/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128458/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128458/","publisher":null,"image":null,"headline":"Q128458: SMS Despooler Does Not Support Forced Installation and Upgrade","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128458-sms-despooler-does-not-support-forced-installation-and-upgrade">Q128458: SMS Despooler Does Not Support Forced Installation and Upgrade</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q128458</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.1</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbnetwork</span> <span class="n">kbDespooler</span> <span class="n">smsdespooler</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">02</span><span class="p">-</span><span class="n">FEB</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.1</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+
+<span class="n">SYMPTOM</span>
+<span class="p">-------</span>
+
+<span class="n">The</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Despooler</span> <span class="n">does</span> <span class="k">not</span> <span class="n">support</span> <span class="n">forced</span>
+<span class="n">installation</span> <span class="k">and</span> <span class="n">upgrade</span> <span class="k">of</span> <span class="k">package</span> <span class="n">directories</span> <span class="n">on</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">distribution</span>
+<span class="n">servers</span><span class="p">.</span>
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">this</span> <span class="k">to</span> <span class="n">be</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">version</span> <span class="m">1.1</span><span class="p">.</span> <span class="n">This</span> <span class="n">problem</span> <span class="n">has</span> <span class="n">been</span> <span class="n">corrected</span> <span class="k">in</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">version</span> <span class="m">1.2</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+
+<span class="n">The</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Despooler</span> <span class="n">now</span> <span class="n">supports</span> <span class="n">forced</span> <span class="n">installation</span> <span class="k">and</span>
+<span class="n">upgrade</span> <span class="k">of</span> <span class="k">package</span> <span class="n">directories</span> <span class="n">on</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">distribution</span> <span class="n">servers</span><span class="p">.</span>
+
+<span class="n">At</span> <span class="n">each</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">site</span><span class="p">,</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Despooler</span>
+<span class="n">installs</span> <span class="k">and</span> <span class="n">updates</span> <span class="k">package</span> <span class="n">directories</span> <span class="n">on</span> <span class="n">distribution</span> <span class="n">servers</span> <span class="n">that</span> <span class="n">are</span>
+<span class="n">specified</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Distribution</span> <span class="n">Phase</span> <span class="k">of</span> <span class="nf">Run</span> <span class="n">Command</span> <span class="n">On</span> <span class="n">Workstation</span> <span class="k">and</span> <span class="n">Share</span>
+<span class="k">Package</span> <span class="n">On</span> <span class="n">Server</span> <span class="n">jobs</span><span class="p">.</span> <span class="n">When</span> <span class="n">a</span> <span class="k">package</span> <span class="n">is</span> <span class="n">distributed</span> <span class="n">using</span> <span class="n">these</span> <span class="n">types</span> <span class="k">of</span> <span class="n">jobs</span><span class="p">,</span>
+<span class="n">the</span> <span class="n">Despooler</span> <span class="n">installs</span> <span class="n">the</span> <span class="n">files</span> <span class="n">for</span> <span class="n">the</span> <span class="k">package</span> <span class="n">on</span> <span class="n">a</span> <span class="n">shared</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">each</span>
+<span class="n">distribution</span> <span class="n">server</span> <span class="n">specified</span> <span class="n">by</span> <span class="n">the</span> <span class="n">job</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="n">some</span> <span class="k">or</span> <span class="n">all</span> <span class="k">of</span> <span class="n">the</span> <span class="n">files</span>
+<span class="n">already</span> <span class="n">exist</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="p">(</span><span class="n">that</span> <span class="n">is</span><span class="p">,</span> <span class="n">the</span> <span class="n">files</span> <span class="n">were</span> <span class="n">installed</span> <span class="n">by</span> <span class="n">the</span>
+<span class="n">Despooler</span> <span class="n">during</span> <span class="n">a</span> <span class="n">previous</span> <span class="n">job</span> <span class="k">or</span> <span class="n">the</span> <span class="n">files</span> <span class="n">simply</span> <span class="n">already</span> <span class="n">existed</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">shared</span> <span class="n">directory</span><span class="p">),</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">attempts</span> <span class="k">to</span> <span class="n">update</span> <span class="n">those</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="k">In</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">1.0</span> <span class="k">and</span> <span class="m">1.1</span><span class="p">,</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Despooler</span>
+<span class="n">copied</span> <span class="n">each</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">each</span> <span class="n">distribution</span>
+<span class="n">server</span><span class="p">.</span> <span class="k">If</span> <span class="n">any</span> <span class="k">of</span> <span class="n">the</span> <span class="n">files</span> <span class="n">within</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">were</span> <span class="n">locked</span> <span class="n">by</span> <span class="n">a</span> <span class="n">user</span>
+<span class="n">accessing</span> <span class="n">the</span> <span class="n">file</span><span class="p">,</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">would</span> <span class="nf">stop</span> <span class="n">the</span> <span class="n">file</span> <span class="n">copying</span> <span class="n">process</span> <span class="n">at</span> <span class="n">that</span>
+<span class="n">particular</span> <span class="n">file</span> <span class="k">and</span> <span class="k">then</span> <span class="n">retry</span> <span class="n">at</span> <span class="n">a</span> <span class="k">set</span> <span class="n">time</span> <span class="n">interval</span> <span class="n">for</span> <span class="n">a</span> <span class="k">set</span> <span class="n">number</span> <span class="k">of</span>
+<span class="n">retries</span><span class="p">.</span> <span class="k">In</span> <span class="n">this</span> <span class="k">case</span><span class="p">,</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">would</span> <span class="n">contain</span> <span class="n">some</span> <span class="n">files</span> <span class="n">that</span> <span class="n">have</span>
+<span class="n">been</span> <span class="n">updated</span> <span class="n">but</span> <span class="n">the</span> <span class="n">locked</span> <span class="n">file</span> <span class="n">would</span> <span class="n">block</span> <span class="n">the</span> <span class="n">rest</span> <span class="k">of</span> <span class="n">the</span> <span class="n">files</span> <span class="k">from</span> <span class="n">being</span>
+<span class="n">updated</span><span class="p">.</span> <span class="k">If</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span> <span class="n">files</span> <span class="n">continued</span> <span class="k">to</span> <span class="n">be</span> <span class="n">locked</span> <span class="n">when</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">reached</span>
+<span class="n">the</span> <span class="n">retry</span> <span class="n">limit</span><span class="p">,</span> <span class="k">then</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">would</span> <span class="k">not</span> <span class="n">be</span> <span class="n">updated</span> <span class="n">completely</span> <span class="k">and</span>
+<span class="n">the</span> <span class="n">Despooler</span> <span class="n">would</span> <span class="n">report</span> <span class="n">the</span> <span class="n">servers</span> <span class="n">installation</span> <span class="n">status</span> <span class="k">as</span> <span class="n">failed</span><span class="p">.</span> <span class="n">Even</span> <span class="k">if</span>
+<span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">was</span> <span class="n">successfully</span> <span class="n">updated</span> <span class="n">over</span> <span class="n">time</span><span class="p">,</span> <span class="n">this</span> <span class="n">delay</span> <span class="n">may</span> <span class="n">be</span>
+<span class="n">unacceptable</span><span class="p">.</span>
+
+<span class="k">With</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">1.2</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">enable</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="k">of</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">files</span> <span class="n">on</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">distribution</span> <span class="n">servers</span><span class="p">--</span><span class="n">even</span> <span class="k">if</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">directory</span> <span class="n">are</span> <span class="n">locked</span><span class="p">.</span> <span class="n">You</span> <span class="n">enable</span> <span class="n">this</span> <span class="n">feature</span> <span class="n">through</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="n">registry</span> <span class="k">of</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">.</span> <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">this</span> <span class="n">feature</span> <span class="n">is</span> <span class="n">disabled</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">the</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">feature</span> <span class="n">is</span> <span class="n">enabled</span><span class="p">,</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">checks</span> <span class="n">for</span> <span class="n">any</span> <span class="n">open</span>
+<span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="p">(</span><span class="k">as</span> <span class="n">well</span> <span class="k">as</span> <span class="n">any</span> <span class="n">subdirectories</span> <span class="n">within</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">directory</span><span class="p">)</span> <span class="n">on</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">server</span><span class="p">.</span> <span class="k">If</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span> <span class="n">files</span> <span class="n">are</span> <span class="n">open</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">Despooler</span> <span class="n">determines</span> <span class="n">whether</span> <span class="n">it</span> <span class="n">should</span> <span class="n">force</span> <span class="n">the</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">files</span><span class="p">--</span><span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Number</span> <span class="k">of</span> <span class="n">Retries</span> <span class="n">Before</span> <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">entry</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">registry</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="k">count</span> <span class="k">of</span> <span class="n">retries</span> <span class="n">is</span> <span class="n">less</span> <span class="n">than</span> <span class="n">the</span> <span class="n">Number</span> <span class="k">of</span> <span class="n">Retries</span> <span class="n">Before</span>
+<span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">entry</span><span class="p">,</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">waits</span> <span class="n">for</span> <span class="n">the</span> <span class="n">time</span> <span class="n">specified</span> <span class="n">by</span> <span class="n">the</span>
+<span class="n">retry</span> <span class="n">interval</span> <span class="p">(</span><span class="n">retry</span> <span class="n">interval</span> <span class="n">is</span> <span class="m">24</span> <span class="n">times</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">polling</span> <span class="n">interval</span><span class="p">).</span>
+
+<span class="k">If</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">detects</span> <span class="n">that</span> <span class="n">current</span> <span class="k">count</span> <span class="k">of</span> <span class="n">retries</span> <span class="n">has</span> <span class="n">exceeded</span> <span class="n">the</span> <span class="n">Number</span> <span class="k">of</span>
+<span class="n">Retries</span> <span class="n">Before</span> <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">entry</span> <span class="k">in</span> <span class="n">the</span> <span class="n">registry</span><span class="p">,</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">revokes</span>
+<span class="n">access</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="k">from</span> <span class="n">all</span> <span class="n">users</span> <span class="n">except</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span> <span class="n">service</span> <span class="n">account</span> <span class="p">(</span><span class="n">this</span> <span class="n">allows</span> <span class="n">current</span> <span class="n">users</span> <span class="n">who</span> <span class="n">are</span> <span class="n">connected</span> <span class="k">to</span> <span class="n">maintain</span>
+<span class="n">access</span> <span class="n">but</span> <span class="n">prevents</span> <span class="n">new</span> <span class="n">users</span> <span class="k">from</span> <span class="n">connecting</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span><span class="p">)</span> <span class="k">and</span>
+<span class="n">sends</span> <span class="n">a</span> <span class="n">a</span> <span class="n">disconnection</span> <span class="n">warning</span> <span class="n">message</span> <span class="k">to</span> <span class="n">all</span> <span class="n">users</span> <span class="n">who</span> <span class="n">have</span> <span class="n">files</span> <span class="n">open</span> <span class="k">in</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">message</span> <span class="n">tells</span> <span class="n">the</span> <span class="n">user</span> <span class="n">that</span> <span class="n">they</span> <span class="n">should</span> <span class="n">close</span> <span class="n">all</span> <span class="n">applications</span> <span class="n">running</span> <span class="k">from</span>
+<span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="k">and</span> <span class="n">close</span> <span class="n">all</span> <span class="n">files</span> <span class="n">open</span> <span class="n">on</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="k">and</span> <span class="n">that</span>
+<span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">will</span> <span class="n">close</span> <span class="n">access</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">after</span> <span class="n">the</span>
+<span class="n">length</span> <span class="n">time</span> <span class="n">specified</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">Delay</span> <span class="k">In</span> <span class="n">Minutes</span> <span class="n">entry</span><span class="p">.</span> <span class="n">After</span>
+<span class="n">the</span> <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">Delay</span> <span class="k">In</span> <span class="n">Minutes</span> <span class="n">time</span> <span class="n">has</span> <span class="n">elapsed</span><span class="p">,</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">closes</span>
+<span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">all</span> <span class="n">users</span> <span class="n">who</span> <span class="n">still</span> <span class="n">have</span> <span class="n">files</span> <span class="n">open</span><span class="p">.</span> <span class="n">The</span> <span class="n">Despooler</span>
+<span class="k">then</span> <span class="n">copies</span> <span class="n">the</span> <span class="k">package</span> <span class="n">files</span> <span class="k">and</span> <span class="n">restores</span> <span class="n">access</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span><span class="p">.</span>
+<span class="n">Finally</span><span class="p">,</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">sends</span> <span class="n">a</span> <span class="n">message</span> <span class="k">to</span> <span class="n">the</span> <span class="n">users</span> <span class="n">who</span> <span class="n">were</span> <span class="n">previously</span> <span class="n">sent</span> <span class="n">the</span>
+<span class="n">disconnection</span> <span class="n">warning</span> <span class="n">message</span><span class="p">.</span> <span class="n">This</span> <span class="n">message</span> <span class="n">informs</span> <span class="n">the</span> <span class="n">users</span> <span class="n">that</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">directory</span> <span class="n">is</span> <span class="n">ready</span> <span class="n">for</span> <span class="n">access</span> <span class="n">again</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">rules</span> <span class="n">apply</span> <span class="k">to</span> <span class="n">the</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">setting</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Settings</span> <span class="n">for</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">apply</span> <span class="n">only</span> <span class="k">to</span> <span class="n">the</span> <span class="n">sites</span> <span class="n">whose</span> <span class="n">site</span> <span class="n">server</span>
+  <span class="n">registries</span> <span class="n">you</span> <span class="n">have</span> <span class="n">configured</span> <span class="n">for</span> <span class="n">forced</span> <span class="n">delivery</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">have</span>
+  <span class="n">five</span> <span class="n">sites</span> <span class="k">and</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">enable</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">on</span> <span class="n">each</span> <span class="n">site</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="k">set</span>
+  <span class="n">the</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">settings</span> <span class="k">in</span> <span class="n">the</span> <span class="n">registry</span> <span class="k">of</span> <span class="n">the</span> <span class="n">site</span> <span class="n">servers</span> <span class="k">in</span> <span class="n">each</span> <span class="k">of</span>
+  <span class="n">the</span> <span class="n">five</span> <span class="n">sites</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Settings</span> <span class="n">for</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">apply</span> <span class="k">to</span> <span class="n">target</span> <span class="n">sites</span> <span class="p">(</span><span class="n">that</span> <span class="n">is</span><span class="p">,</span> <span class="n">sites</span> <span class="n">that</span>
+  <span class="n">receive</span> <span class="n">the</span> <span class="k">package</span><span class="p">).</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">created</span> <span class="n">a</span> <span class="n">job</span> <span class="n">at</span> <span class="n">Site</span> <span class="n">A</span> <span class="k">to</span>
+  <span class="n">distribute</span> <span class="n">a</span> <span class="k">package</span> <span class="k">to</span> <span class="n">Site</span> <span class="n">B</span> <span class="k">and</span> <span class="n">Site</span> <span class="n">A</span> <span class="n">had</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">enabled</span> <span class="k">and</span>
+  <span class="n">Site</span> <span class="n">B</span> <span class="n">did</span> <span class="k">not</span><span class="p">,</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">would</span> <span class="n">have</span> <span class="n">no</span> <span class="n">effect</span> <span class="n">on</span> <span class="n">that</span> <span class="n">job</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="k">if</span>
+  <span class="n">you</span> <span class="n">created</span> <span class="n">the</span> <span class="n">same</span> <span class="n">job</span> <span class="k">and</span> <span class="n">Site</span> <span class="n">A</span> <span class="n">did</span> <span class="k">not</span> <span class="n">have</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">enabled</span> <span class="k">and</span>
+  <span class="n">Site</span> <span class="n">B</span> <span class="n">did</span><span class="p">,</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">would</span> <span class="n">be</span> <span class="n">effect</span> <span class="k">in</span> <span class="n">effect</span> <span class="n">on</span> <span class="n">that</span> <span class="n">job</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Settings</span> <span class="n">for</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">apply</span> <span class="k">to</span> <span class="n">all</span> <span class="nf">Run</span> <span class="n">Command</span> <span class="n">On</span> <span class="n">Workstation</span> <span class="k">and</span>
+  <span class="n">Share</span> <span class="k">Package</span> <span class="n">On</span> <span class="n">Server</span> <span class="n">jobs</span> <span class="n">at</span> <span class="n">target</span> <span class="n">sites</span> <span class="n">where</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">is</span>
+  <span class="n">enabled</span><span class="p">.</span> <span class="n">Forced</span> <span class="n">delivery</span> <span class="n">does</span> <span class="k">not</span> <span class="n">affect</span> <span class="n">Remove</span> <span class="k">Package</span> <span class="k">From</span> <span class="n">Server</span> <span class="n">jobs</span> <span class="k">or</span>
+  <span class="nf">System</span> <span class="n">jobs</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="k">set</span> <span class="n">forced</span> <span class="n">delivery</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">At</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span> <span class="k">of</span> <span class="n">the</span> <span class="n">site</span> <span class="n">where</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="k">set</span> <span class="n">forced</span> <span class="n">delivery</span><span class="p">,</span> <span class="n">start</span>
+  <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Registry</span> <span class="n">Editor</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Open</span> <span class="n">the</span> <span class="n">following</span> <span class="n">key</span> <span class="n">under</span> <span class="n">the</span> <span class="n">HKEY_LOCAL_MACHINE</span> <span class="n">subtree</span><span class="p">:</span>
+
+     <span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">SMS</span><span class="p">\</span><span class="n">Components</span><span class="p">\</span><span class="n">SMS_Despooler</span>
+
+<span class="m">3.</span> <span class="n">Turn</span> <span class="n">on</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">by</span> <span class="n">setting</span> <span class="n">Use</span> <span class="n">Forced</span> <span class="nf">Disconnect</span> <span class="k">to</span> <span class="m">1.</span>
+
+  <span class="n">Use</span> <span class="n">Forced</span> <span class="nf">Disconnect</span> <span class="n">enables</span> <span class="n">you</span> <span class="k">to</span> <span class="n">turn</span> <span class="n">forced</span> <span class="n">delivery</span> <span class="n">on</span> <span class="k">or</span> <span class="n">off</span> <span class="n">for</span> <span class="n">the</span>
+  <span class="n">site</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="m">0</span> <span class="p">(</span><span class="n">zero</span><span class="p">)</span> <span class="n">is</span> <span class="n">off</span> <span class="k">and</span> <span class="m">1</span> <span class="p">(</span><span class="k">or</span> <span class="n">any</span> <span class="n">other</span> <span class="n">non</span><span class="p">-</span><span class="n">zero</span> <span class="n">value</span><span class="p">)</span> <span class="n">is</span> <span class="n">on</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="k">Set</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">retries</span> <span class="n">after</span> <span class="n">which</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">forces</span> <span class="n">the</span> <span class="k">package</span>
+  <span class="n">delivery</span> <span class="n">by</span> <span class="n">setting</span> <span class="n">Number</span> <span class="k">Of</span> <span class="n">Retries</span> <span class="n">Before</span> <span class="n">Forced</span> <span class="n">Disconnection</span><span class="p">.</span>
+
+  <span class="n">Number</span> <span class="k">Of</span> <span class="n">Retries</span> <span class="n">Before</span> <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">enables</span> <span class="n">you</span> <span class="k">to</span> <span class="n">specify</span> <span class="n">the</span>
+  <span class="n">number</span> <span class="k">of</span> <span class="n">times</span> <span class="n">after</span> <span class="n">which</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">will</span> <span class="n">force</span> <span class="n">user</span> <span class="k">to</span> <span class="nf">disconnect</span> <span class="k">from</span>
+  <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="k">and</span> <span class="k">then</span> <span class="n">update</span> <span class="n">the</span> <span class="k">package</span> <span class="n">files</span><span class="p">.</span> <span class="n">This</span> <span class="n">value</span> <span class="n">specifies</span>
+  <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">retries</span><span class="p">.</span> <span class="n">The</span> <span class="n">default</span> <span class="n">is</span> <span class="m">12.</span>
+
+<span class="m">5.</span> <span class="k">Set</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span> <span class="n">minutes</span> <span class="n">after</span> <span class="n">which</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">forces</span> <span class="n">all</span> <span class="n">users</span> <span class="k">to</span>
+  <span class="nf">disconnect</span> <span class="k">from</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">by</span> <span class="n">setting</span> <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">Delay</span>
+  <span class="k">In</span> <span class="n">Minutes</span><span class="p">.</span>
+
+  <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">Delay</span> <span class="k">In</span> <span class="n">Minutes</span> <span class="n">enables</span> <span class="n">you</span> <span class="k">to</span> <span class="n">specify</span> <span class="n">the</span> <span class="n">number</span> <span class="k">of</span>
+  <span class="n">minutes</span> <span class="n">after</span> <span class="n">which</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">will</span> <span class="n">force</span> <span class="n">all</span> <span class="n">users</span> <span class="k">to</span> <span class="nf">disconnect</span> <span class="k">from</span> <span class="n">the</span>
+  <span class="k">package</span> <span class="n">directory</span><span class="p">.</span> <span class="n">The</span> <span class="n">default</span> <span class="n">is</span> <span class="m">5.</span>
+
+<span class="m">6.</span> <span class="k">To</span> <span class="n">force</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">new</span> <span class="n">settings</span><span class="p">,</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span>
+  <span class="n">Server</span> <span class="n">Service</span> <span class="n">Manager</span> <span class="k">to</span> <span class="n">pause</span> <span class="k">and</span> <span class="n">continue</span> <span class="n">the</span> <span class="n">SMS_DESPOOLER</span> <span class="n">component</span><span class="p">.</span>
+
+<span class="n">Calculating</span> <span class="n">the</span> <span class="n">Forced</span> <span class="n">Delivery</span> <span class="n">Time</span>
+<span class="p">------------------------------------</span>
+
+<span class="n">Use</span> <span class="n">the</span> <span class="n">following</span> <span class="n">formula</span> <span class="k">to</span> <span class="n">calculate</span> <span class="n">how</span> <span class="n">much</span> <span class="n">time</span> <span class="n">will</span> <span class="n">elapse</span> <span class="n">after</span> <span class="n">the</span> <span class="n">first</span>
+<span class="n">failed</span> <span class="n">attempt</span> <span class="k">to</span> <span class="n">update</span> <span class="n">a</span> <span class="k">package</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">a</span> <span class="n">distribution</span> <span class="n">server</span><span class="p">:</span>
+
+  <span class="n">ForceDeliveryTime</span> <span class="p">=</span> <span class="p">(</span><span class="n">x</span> <span class="p">*</span> <span class="p">(</span><span class="n">y</span> <span class="p">+</span> <span class="m">1</span><span class="p">))+</span> <span class="n">z</span>
+  <span class="n">x</span> <span class="p">=</span> <span class="n">Despooler</span> <span class="n">Retry</span> <span class="n">Interval</span>
+  <span class="n">y</span> <span class="p">=</span> <span class="n">Number</span> <span class="k">Of</span> <span class="n">Retries</span> <span class="n">Before</span> <span class="n">Forced</span> <span class="n">Disconnection</span>
+  <span class="n">z</span> <span class="p">=</span> <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">Delay</span> <span class="k">In</span> <span class="n">Minutes</span>
+
+<span class="n">Note</span> <span class="n">that</span> <span class="n">Despooler</span> <span class="n">Retry</span> <span class="n">Interval</span> <span class="n">is</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Response</span> <span class="n">setting</span> <span class="n">for</span> <span class="n">the</span>
+<span class="n">services</span> <span class="n">at</span> <span class="n">the</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">Response</span>     <span class="n">Retry</span> <span class="n">Interval</span><span class="p">(</span><span class="n">Minutes</span><span class="p">)</span>
+  <span class="p">------------------------------------</span>
+  <span class="n">Very</span> <span class="n">Fast</span>     <span class="m">24</span>
+  <span class="n">Fast</span>         <span class="m">120</span>
+  <span class="n">Medium</span>       <span class="m">360</span>
+  <span class="n">Slow</span>         <span class="m">720</span>
+
+<span class="n">For</span> <span class="n">Example</span><span class="p">,</span> <span class="n">suppose</span> <span class="n">your</span> <span class="n">site</span> <span class="n">was</span> <span class="n">running</span> <span class="n">at</span> <span class="n">Fast</span> <span class="n">Response</span> <span class="n">mode</span> <span class="k">and</span> <span class="n">you</span> <span class="n">made</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">settings</span><span class="p">:</span>
+
+  <span class="n">Use</span> <span class="n">Forced</span> <span class="nf">Disconnect</span> <span class="n">equal</span> <span class="k">to</span> <span class="m">1.</span>
+  <span class="n">Number</span> <span class="k">Of</span> <span class="n">Retries</span> <span class="n">Before</span> <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">equal</span> <span class="k">to</span> <span class="m">10.</span>
+  <span class="n">Forced</span> <span class="n">Disconnection</span> <span class="n">Delay</span> <span class="k">In</span> <span class="n">Minutes</span> <span class="n">equal</span> <span class="k">to</span> <span class="m">5.</span>
+
+<span class="n">This</span> <span class="n">means</span> <span class="n">that</span> <span class="n">after</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">retries</span> <span class="n">updating</span> <span class="n">a</span> <span class="k">package</span> <span class="m">10</span> <span class="n">times</span><span class="p">,</span> <span class="n">it</span> <span class="n">sends</span>
+<span class="n">a</span> <span class="n">message</span> <span class="k">to</span> <span class="n">users</span> <span class="k">with</span> <span class="n">open</span> <span class="n">files</span> <span class="n">on</span> <span class="n">the</span> <span class="k">package</span> <span class="n">directory</span><span class="p">.</span> <span class="n">After</span> <span class="m">5</span> <span class="n">minutes</span><span class="p">,</span>
+<span class="n">the</span> <span class="n">Despooler</span> <span class="n">disconnects</span> <span class="n">all</span> <span class="n">users</span> <span class="k">and</span> <span class="n">updates</span> <span class="n">the</span> <span class="k">package</span><span class="p">.</span> <span class="n">The</span> <span class="n">total</span> <span class="n">time</span>
+<span class="n">elapsed</span> <span class="k">from</span> <span class="n">the</span> <span class="n">first</span> <span class="n">attempt</span> <span class="k">to</span> <span class="n">update</span> <span class="n">the</span> <span class="k">package</span> <span class="n">is</span> <span class="n">approximately</span> <span class="m">22</span> <span class="n">hours</span>
+<span class="k">and</span> <span class="m">5</span> <span class="n">minutes</span><span class="p">.</span> <span class="m">22</span> <span class="n">hours</span> <span class="k">and</span> <span class="m">5</span> <span class="n">minutes</span> <span class="p">=</span> <span class="p">(</span><span class="m">120</span> <span class="n">minutes</span> <span class="p">*</span> <span class="p">(</span><span class="m">10</span> <span class="n">retries</span> <span class="p">+</span> <span class="m">1</span><span class="p">))</span> <span class="p">+</span> <span class="m">5</span>
+<span class="n">minutes</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span> <span class="n">sms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbnetwork</span> <span class="n">kbDespooler</span> <span class="n">smsdespooler</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS110</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.1</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

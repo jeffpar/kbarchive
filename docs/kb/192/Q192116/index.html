@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192116: HOWTO: Configure Posting Acceptor to Work with the PDW | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192116: HOWTO: Configure Posting Acceptor to Work with the PDW" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192116/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192116/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192116/","publisher":null,"image":null,"headline":"Q192116: HOWTO: Configure Posting Acceptor to Work with the PDW","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192116-howto-configure-posting-acceptor-to-work-with-the-pdw">Q192116: HOWTO: Configure Posting Acceptor to Work with the PDW</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q192116</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbwizard</span> <span class="n">kbAppSetup</span> <span class="n">kbVBp</span> <span class="n">kbVBp600</span> <span class="n">kbWebClasses</span> <span class="n">kbFAQ</span> <span class="n">kbVBp600FAQ</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">27</span><span class="p">-</span><span class="n">JUN</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Learning</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Professional</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">Enterprise</span> <span class="n">Edition</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">version</span> <span class="m">6.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">The</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span> <span class="p">(</span><span class="n">PDW</span><span class="p">)</span> <span class="k">uses</span> <span class="n">a</span> <span class="n">technology</span> <span class="n">named</span> <span class="n">the</span>
+<span class="n">Posting</span> <span class="n">Acceptor</span> <span class="k">to</span> <span class="n">manage</span> <span class="n">the</span> <span class="n">transfer</span> <span class="k">of</span> <span class="n">your</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">applications</span> <span class="k">to</span> <span class="n">a</span>
+<span class="n">Web</span> <span class="n">server</span><span class="p">.</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="n">is</span> <span class="n">a</span> <span class="n">component</span> <span class="n">that</span> <span class="n">is</span> <span class="n">located</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Microsoft</span>
+<span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="p">(</span><span class="n">IIS</span><span class="p">)</span> <span class="n">Web</span> <span class="n">server</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="k">to</span>
+<span class="n">post</span> <span class="n">the</span> <span class="n">content</span> <span class="k">to</span> <span class="n">the</span> <span class="n">server</span><span class="p">.</span> <span class="n">Before</span> <span class="n">you</span> <span class="n">can</span> <span class="n">successfully</span> <span class="n">post</span> <span class="n">your</span>
+<span class="n">applications</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">install</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="k">and</span> <span class="n">configure</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">server</span>
+<span class="n">correctly</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">walks</span> <span class="n">you</span> <span class="n">through</span> <span class="n">the</span> <span class="n">basic</span> <span class="n">configuration</span> <span class="k">and</span> <span class="n">presents</span>
+<span class="n">troubleshooting</span> <span class="n">information</span> <span class="n">for</span> <span class="n">some</span> <span class="k">of</span> <span class="n">the</span> <span class="n">more</span> <span class="n">common</span> <span class="n">problems</span> <span class="n">that</span> <span class="n">you</span> <span class="n">may</span>
+<span class="n">experience</span> <span class="n">when</span> <span class="n">you</span> <span class="n">post</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">applications</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Web</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Steps</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">Deployment</span> <span class="n">Process</span>
+<span class="p">-----------------------------------</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">post</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="n">application</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Web</span> <span class="n">server</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="k">Package</span> <span class="k">and</span>
+<span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">,</span> <span class="n">you</span> <span class="n">first</span> <span class="n">use</span> <span class="n">the</span> <span class="n">packaging</span> <span class="n">portion</span> <span class="k">of</span> <span class="n">the</span> <span class="n">wizard</span> <span class="k">to</span> <span class="k">package</span>
+<span class="n">your</span> <span class="n">applications</span> <span class="n">into</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span> <span class="p">.</span><span class="n">cab</span> <span class="n">files</span><span class="p">.</span> <span class="k">Then</span><span class="p">,</span> <span class="n">you</span> <span class="n">use</span> <span class="n">the</span> <span class="n">deployment</span>
+<span class="n">portion</span> <span class="k">of</span> <span class="n">the</span> <span class="n">wizard</span> <span class="k">to</span> <span class="n">transfer</span> <span class="n">your</span> <span class="n">files</span> <span class="k">to</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="n">location</span><span class="p">.</span>
+
+<span class="n">IMPORTANT</span><span class="p">:</span> <span class="n">Make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">you</span> <span class="n">have</span> <span class="n">administrator</span><span class="p">-</span><span class="n">level</span> <span class="n">rights</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">server</span>
+<span class="k">to</span> <span class="n">which</span> <span class="n">you</span> <span class="n">are</span> <span class="n">posting</span> <span class="n">content</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">Web</span> <span class="n">server</span> <span class="n">goes</span> <span class="n">through</span> <span class="n">these</span> <span class="n">steps</span> <span class="n">during</span> <span class="n">deployment</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">It</span> <span class="n">extracts</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">file</span> <span class="n">into</span> <span class="n">a</span> <span class="n">temporary</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">It</span> <span class="n">locates</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">for</span> <span class="n">the</span> <span class="p">.</span><span class="n">cab</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">contents</span> <span class="k">of</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span><span class="p">,</span> <span class="n">it</span> <span class="n">installs</span> <span class="n">application</span> <span class="n">files</span> <span class="p">(</span><span class="n">based</span>
+  <span class="n">on</span> <span class="n">the</span> <span class="n">RInstallApplicationFiles</span> <span class="n">section</span> <span class="k">of</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span><span class="p">),</span> <span class="nf">system</span> <span class="n">files</span>
+  <span class="p">(</span><span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">RIinstallSystemFiles</span> <span class="n">section</span><span class="p">),</span> <span class="k">and</span> <span class="n">shared</span> <span class="n">files</span> <span class="p">(</span><span class="n">based</span> <span class="n">on</span> <span class="n">the</span>
+  <span class="n">RInstallSharedFiles</span> <span class="n">section</span><span class="p">).</span> <span class="k">In</span> <span class="n">the</span> <span class="n">process</span><span class="p">,</span> <span class="n">the</span> <span class="n">server</span> <span class="n">registers</span> <span class="n">any</span>
+  <span class="n">necessary</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">DefaultInstall</span> <span class="n">section</span> <span class="k">of</span> <span class="n">the</span> <span class="p">.</span><span class="n">inf</span> <span class="n">file</span> <span class="n">is</span> <span class="k">not</span> <span class="nf">run</span> <span class="n">because</span> <span class="n">the</span>
+<span class="n">instructions</span> <span class="n">it</span> <span class="n">contains</span> <span class="n">often</span> <span class="n">require</span> <span class="n">user</span> <span class="n">input</span><span class="p">.</span> <span class="n">Additionally</span><span class="p">,</span> <span class="n">the</span> <span class="n">posting</span>
+<span class="n">process</span> <span class="n">does</span> <span class="k">not</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">virtual</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">your</span> <span class="n">application</span> <span class="k">if</span> <span class="n">one</span> <span class="n">is</span>
+<span class="n">required</span><span class="p">;</span> <span class="n">directories</span> <span class="n">must</span> <span class="n">be</span> <span class="k">set</span> <span class="n">up</span> <span class="k">in</span> <span class="n">advance</span><span class="p">.</span>
+
+<span class="n">Installing</span> <span class="n">Posting</span> <span class="n">Acceptor</span>
+<span class="p">---------------------------</span>
+
+<span class="n">You</span> <span class="n">must</span> <span class="n">install</span> <span class="n">Posting</span> <span class="n">Acceptor</span> <span class="n">on</span> <span class="n">any</span> <span class="n">server</span> <span class="k">to</span> <span class="n">which</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">post</span>
+<span class="n">applications</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">Basic</span> <span class="k">Package</span> <span class="k">and</span> <span class="n">Deployment</span> <span class="n">Wizard</span><span class="p">.</span> <span class="n">There</span> <span class="n">are</span>
+<span class="n">multiple</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">Posting</span> <span class="n">Acceptor</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">you</span> <span class="n">install</span> <span class="n">the</span>
+<span class="n">correct</span> <span class="k">version</span> <span class="n">based</span> <span class="n">on</span> <span class="n">your</span> <span class="n">server</span><span class="s1">'s configuration:
+
+- Posting Acceptor 2.0 Windows NT 4.0 with Service Pack 3 (SP3) IIS 4.0 Posting
+  Acceptor 2.0 supports both content posting and the unpacking of cabinet
+  (.cab) files on the server.
+
+- Posting Acceptor 1.1 Windows NT 4.0 with SP3 IIS 3.0 You cannot unpack .cab
+  files with this version of Posting Acceptor. Use this version to post content
+  only. You can move your files to the server and then manually register any
+  necessary files that the .cab process would have registered.
+
+NOTE: Posting Acceptor does not work on any platforms that are using Personal Web
+Server or Peer Web Server. You must use IIS.
+
+Posting Acceptor is no longer available as a separate download. To obtain Posting
+Acceptor, you can install the Microsoft Windows NT 4.0 Option Pack, which is
+available from the following Microsoft Web site:
+
+  Windows NT 4.0 Option Pack
+  http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/
+
+Installing Posting Acceptor 2.0:
+
+1. Start Microsoft Visual Studio or Visual Basic setup from your installation
+  CDs.
+
+2. When you are prompted to choose options to install, click "Install Server
+  Applications and Tools", and then click Next.
+
+3. Click "Launch the BackOffice Installation Wizard", and then click Install.
+
+4. Click Custom, and then click Next.
+
+5. You will see the options to install and their sizes. Click Next.
+
+6. Click "Microsoft Posting Acceptor 2.0".
+
+NOTE: If you want to install Posting Acceptor 2.0 on a computer that already has
+the Windows NT Option Pack, you should first check to see if version 1.0 of the
+Posting Acceptor is already installed. If so, remove this version before you
+install version 2.0.
+
+Determine If Posting Acceptor 1.0 Is Installed:
+
+1. In Control Panel, click Add/Remove Programs.
+
+2. In the Install\Uninstall pane, click NT Option Pack.
+
+3. Click Add/Remove, and then look for Posting Acceptor 1.0 in the component
+  list. You may find Posting Acceptor 1.0 under Microsoft Site Server. If
+  Posting Acceptor 1.0 is installed, remove it.
+
+Configuring the Server
+----------------------
+
+You must perform the following steps on the Web server to which you want to
+deploy your packaged Visual Basic applications. To configure your IIS server,
+follow these steps:
+
+1. Install Microsoft Internet Information Server (IIS) from the NT Option Pack.
+
+2. Follow the steps in the previous procedure to install Posting Acceptor 2.0.
+
+3. Click Start, point to Programs, point to Windows NT 4.0 Options Pack, point
+  to Microsoft Internet Information Server, and then click Internet Service
+  Manager.
+
+4. In the left panel of the manager, make sure that the Console Root node is
+  expanded, and then expand the Internet Information Server node. Your IIS
+  server or servers are listed under this folder.
+
+5. Expand the IIS server that you want to configure. You will see a number of
+  nodes, including a node named Default Web Site.
+
+6. Right-click the Default Web Site node, and then click Properties.
+
+7. In the "Default Web Site Properties" dialog box, click the Home Directory
+  tab, and then make sure that the Write option is selected.
+
+8. Click Apply. The Inheritance Overrides dialog box may appear, which contains
+  a list of folders to which the setting you just made should apply. Select
+  only those folders to which you want users to be able to deploy packages, and
+  then click OK until you return to the manager.
+
+NOTE: Granting write access to a virtual directory is a security RISK. Make sure
+that you only grant write access to virtual directories that you know are
+secure.
+
+1. In the left panel, right-click the SCRIPTS node that appears under the
+  Default Web Site node, and then click Properties.
+
+2. Click the Virtual Directory tab, make sure that the "Execute (including
+  script)" button is selected, and then click OK.
+
+Configuring the Client Computer
+-------------------------------
+
+Visual Studio installs and configures all the components that you need to deploy
+applications from your development computer. However, if you are running Visual
+Studio on a computer that is on an intranet and you connect through a proxy
+server, you must configure Microsoft Internet Explorer 4.0 to bypass the proxy
+server for local addresses.
+
+To configure your development computer, follow these steps:
+
+1. On your Windows desktop, right-click the Internet Explorer icon, and then
+  click Properties.
+
+2. In the Properties dialog box, click the Connection tab.
+
+3. In the Proxy Server area, make sure that the "Bypass proxy server for local
+  (Intranet) addresses" check box is selected if the "Access the Internet using
+  a proxy server" check box is selected. Click OK.
+
+Troubleshooting Web Deployment from Visual Basic
+------------------------------------------------
+
+The following sections list some of the more common problems that you may
+encounter when you try to post applications to the server by using the Package
+and Deployment Wizard.
+
+General Tips:
+
+- You should have administrator-level rights to the Web server to which you are
+  posting content.
+
+- If you receive an error that files are busy during the posting process, you
+  should reboot your server rather than just stopping and restarting the
+  service. After you reboot, you can try to post again. In general, it is a
+  good idea to reboot the server as part of your troubleshooting process.
+
+Problem: Your Server Does Not Have Visual Basic Installed:
+
+If your Web server does not have a copy of the Visual Basic 6.0 runtime DLL
+installed and other system files such as:
+
+- Msvbvm60.dll
+- Oleaut32.dll
+- Olepro32.dll
+- Asycfilt.dll
+- Stdole2.tlb
+- Comcat.dll
+- Mswcrun.dll is needed for IIS Applications (WebClass Designer runtime)
+- Mshtmpgr.dll is needed for DHTML Applications (DHTML Page Designer run- time)
+
+You may encounter problems when you try to post an application to it the first
+time. In this case, the server may not be able to correctly install the
+necessary system files.
+
+There are several things that you can do about this:
+
+- Install a copy of Visual Basic on the server, and then use the wizard to post
+  your application again.
+
+- Create a standard setup package with the Package and Deployment Wizard
+  instead of an Internet package. You can then move the Setup.exe file to the
+  server and install the program on the server. This installs the necessary
+  system files. After the installation process, reboot your server.
+
+- You can download the .cab files for the above-needed system files from the
+  Microsoft site. You must install and register these files on the server. You
+  may need to reboot the server after this process.
+
+NOTE: This procedure only applies to the first installation of a Visual Basic
+application on such a server; all subsequent installations can be posted with
+the Web deployment feature of the wizard.
+
+Problem: Cab File Is Copied to Web Server But Is Not Unpacked:
+
+If the .cab file that you are deploying is copied to the server but is not
+unpacked, make sure that:
+
+- You included the .cab file on the Items to Deploy page of the wizard.
+
+- You used HTTP Post as the protocol on the Web Publishing Site page of the
+  wizard.
+
+- You selected the "Unpack and Install Server-Side Cab" check box on the Web
+  Publishing Site page of the wizard. If you did not, try to redeploy your
+  package with this option selected.
+
+NOTE: Only Posting Acceptor 2.0 running on IIS 4.0 supports .cab file unpacking.
+If you are running Posting Acceptor 1.0, you cannot unpack the file during
+deployment.
+
+Problem: Web Server Does Not Support the Selected Service Provider:
+
+There are several things you can do to try to fix this problem:
+
+- If you are using the HTTP Post protocol, make sure that Posting Acceptor is
+  installed on your Web server.
+
+- Make sure that your URL is correct. If you are using HTTP Post, make sure
+  that your URL begins with http://. If you are using FTP, make sure that your
+  URL begins with ftp://.
+
+- If you are uploading to a server that has Posting Acceptor 1.0 installed, you
+  cannot select the option to unpack and install your cabinet files when you
+  use the wizard to deploy your package. In this case, deploy your .cab file
+  again, and make sure that you click to clear the "Unpack and Install
+  Server-Side Cab" check box.
+
+Problem: Need Write Access to the Web Server:
+
+If you use the HTTP Post protocol and receive an error that you do not have write
+access for the Web server, you must change the access permissions for your Web
+server.
+
+To set Write access, follow these steps:
+
+1. On the server computer, click Start, point to Programs, point to Windows NT
+  4.0 Options Pack, point to Microsoft Internet Information Server, and then
+  click Internet Service Manager.
+
+2. Expand the Console Root and the Internet Information Server nodes, and then
+  expand the node for your Web server computer.
+
+3. Right-click the Default Web Site node, and then click Properties.
+
+4. Click the Home Directory tab, and then click to select the Write check box.
+
+NOTE: Granting write access to a virtual directory is a security risk. Make sure
+that you only grant write access to the virtual directories that you know are
+secure.
+
+Problem: Error c0042116, or Processing Has Stopped:
+
+If your files are read-only when you try to post, you receive an error C0042116,
+which states that processing has stopped. Use File Explorer to change your file
+attributes, and then continue with your posting process.
+
+Problem: FTP Protocol Problems:
+
+With the Package and Deployment Wizard, you can post content by using the HTTP or
+the FTP protocol. If you use FTP, you may encounter the following issues:
+
+If you receive an error that access is denied, follow these steps:
+
+1. On the server computer, click Start, point to Programs, point to Windows NT
+  4.0 Options Pack, point to Microsoft Internet Information Server, and then
+  click Internet Service Manager.
+
+2. Expand the Console Root and the Internet Information Server nodes, and then
+  expand the node for your Web server computer.
+
+3. Right-click the Default Web Site node, and then click Properties.
+
+4. Click the Home Directory tab, and then click to select the Write check box.
+
+NOTE: Granting write access to a virtual directory is a security risk. Make sure
+that you only grant write access to the virtual directories that you know are
+secure.
+
+If you use the FTP protocol and receive additional errors besides the one that is
+described in the previous bullet, make sure that you have properly configured
+your FTP service on the Web server. To do so, start the Microsoft Management
+Console (MMC), and then follow these steps:
+
+1. Right-click Default FTP Site, and then click New Virtual Directory.
+
+2. Type an alias to be used to access the virtual directory, and then click
+  Next.
+
+3. Type the physical path of the directory to which to map the virtual
+  directory. For example, C:\Inetpub\Ftproot, and then click Next.
+
+4. Select the appropriate access permissions, making sure to grant write access
+  so that your deployments can proceed without errors, and then click Finish.
+
+5. Right-click Default FTP Site, and then click Stop.
+
+6. Right-click Default FTP Site and then click Start.
+
+7. When you deploy to the FTP server by using the Package and Deployment Wizard,
+  use the site FTP://servername/alias format, where alias is the alias that you
+  assigned in step 2. Use the username "anonymous" and the password
+  "me@somewhere" for anonymous login.
+
+Problem: Incorrect Parameter:
+
+If you receive an error that states that a parameter is incorrect, you may need
+to take one of the following actions:
+
+- Make sure that you have typed a valid URL to the Web server that you have
+  chosen to use.
+
+- On the Web server, search for files named Default.asp and Default.htm in the
+  \Inetpub\wwwroot directory. Open both files, and make sure that they have the
+  following code at the top of the file:
+
+  &lt;META name="postinfo" content="/scripts/postinfo.asp"&gt;
+
+REFERENCES
+==========
+
+For additional information about the Package and Deployment Wizard, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q190046 INFO: VB 6 Readme: Part 6 Wizard Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbVBp kbVBp600 kbWebClasses kbFAQ kbVBp600FAQ 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

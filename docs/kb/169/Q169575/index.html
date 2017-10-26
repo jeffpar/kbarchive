@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169575: Interpreting an FMH-5 Attach for Independent LU 6.2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169575: Interpreting an FMH-5 Attach for Independent LU 6.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169575/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169575/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169575/","publisher":null,"image":null,"headline":"Q169575: Interpreting an FMH-5 Attach for Independent LU 6.2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169575-interpreting-an-fmh-5-attach-for-independent-lu-62">Q169575: Interpreting an FMH-5 Attach for Independent LU 6.2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169575
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An FMH-5 Attach is used to carry a request for conversation to be established
+between two transaction programs. The following is an example Attach message in
+a PVI (Peer Verb Interface) trace. This is the first SNA message that flows to
+the remote system for conversation startup:
+
+  PVI    ---------------------------------------------- 12:05:05.65
+  PVI    751F0001-&gt;0302E453 LU 6.2   
+  PVI                       MSGID:SWAT   MSGTYP:PRFLS  Sense1:0004
+  PVI                       Sense2:0000 
+  PVI    
+  PVI    ---- Header  at address 8297B0F8, 1 elements ----
+  PVI    0B050004 00000800 E1000000 0100C500     &lt;..............E.&gt;
+  PVI    
+  PVI    ---- Element at address 829935BC, start 13, end 237 ----
+  PVI    430502FF 1803D000 400430F0 F0F50F04     &lt;C.......@.0005..&gt;
+  PVI    02C1D4C9 09017B30 09E53983 81E71A11     &lt;.AMI..{0.V9caX..&gt;
+  PVI    C2C9D6D5 C5E3C6D9 4BE2D5C1 C4E5F0F2     &lt;BIONETFRKSNADV02&gt;
+  PVI    F124280E 0D1E0500 01000800 00000000     &lt;1$(.............&gt;
+  PVI    0002FF00 9E12F500 9A12E200 9612A020     &lt;......5...S.o.. &gt;
+  PVI    00051001 00000023 D7C3F2F3 F9F9E2F1     &lt;.......#PC2399S1&gt;
+  PVI    4040F3F1 F7F9F0F0 F0F24040 40404080     &lt;@@31790002@@@@@.&gt;
+  PVI    00000000 00000000 00000026 C4C6C1C2     &lt;...........&amp;DFAB&gt;
+  PVI    40F6F9F7 40F2F9F7 40404040 40404040     &lt;@697@297@@@@@@@@&gt;
+  PVI    40404040 40404040 4040C140 00000000     &lt;@@@@@@@@@@A@....&gt;
+  PVI    00000000 00000000 00000000 00000000     &lt;................&gt;
+  PVI    00000000 00000000 00000000 00000000     &lt;................&gt;
+  PVI    00000000 00000000 00000000 00000000     &lt;................&gt;
+  PVI    00000000 00000000 00000000 00000000     &lt;................&gt;
+        PVI    00                                      &lt;.               &gt;
+
+The following is the above FMH-5 Attach broken out using the IBM SNA Format
+Guide:
+
+  43 - Length
+
+  05 - FMH type
+
+  02FF - Command code: ATTACH
+
+  18 - Security indicators:  Password substitute present, PIP data present
+
+  03 - Length of fixed length parameters (always 3)
+
+  D00040 - Half duplex basic conversation, confirm sync level
+
+  Transaction Program Name field:
+     04 - Length
+     30F0F0F5 - TP Name
+  
+  Access Security Information field:
+  0F - Length
+     0402C1D4C9 - User ID field "AMI"
+     09017B3009E5398381E7 - Password field
+
+  Logical-Unit-of-Work Identifier Field:
+  1A11 C2C9D6D5 C5E3C6D9 4BE2D5C1 C4E5F0F2
+  F124  280E0D1E  050001
+
+Conversation Correlator Field:
+  00 - length field
+  0800 00000000 0002FF - Attach sequence number
+
+Pip Data (Pip data format can be found in IBM's "AS/400 5250 Display Station
+Pass-Through: Interface Specification" document. There is no order number for
+this manual. Byte 18 determines whether Pip Data is present.):
+
+  009E12F5 - GDS header for PIP data
+  009A12E2 - GDS Header for PIP subfield
+  009612A0  - GDS Header for pass-through data
+     2000 - Pass through operation flags (start-up record - no diagnostics included)
+  Start-up record:
+  0510 - Reported System ID  - ??? (AS/400 is 0560)
+  0100 - Reported Release Level
+     0000 - Fixed portion flags field
+     Source Device information:
+        23 length field
+        D7C3F2F3 F9F9E2F1 4040  &lt;Reserved&gt;#PC2399S1
+        F3F1 F7F9 Source device type "3179"
+        F0F0 F0F2 Source device model "0002"
+        4040 4040 Keyboard type
+        408000000000 00000000 0000 Reserved
+     Dynamic configuration data:
+        0026 C4
+        C6C1C240 Subfield flags  
+        F6F9F7 Keyboard ID
+        40F2F9F740 Reserved
+        40404040  Char set / code page
+        4040404040404040 WSC type /model
+        4040404040C14000 Actual device type / model
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

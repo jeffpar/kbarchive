@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154428: INFO: Visual C++ Version 4.1b | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154428: INFO: Visual C++ Version 4.1b" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154428/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154428/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154428/","publisher":null,"image":null,"headline":"Q154428: INFO: Visual C++ Version 4.1b","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154428-info-visual-c-version-41b">Q154428: INFO: Visual C++ Version 4.1b</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154428
+Product(s): Microsoft C Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbfile kbnokeyword kbMFC kbVC410 kbGrpDSMFCATL kbNoUpdate
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Foundation Classes (MFC), version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The file Vc41b.exe contains a patch to the Visual C++ versions 4.1 or 4.1a MFC
+DLL and run-time library to solve a number of Win32s problems. Below is the
+information from the Readme.txt which is included with the patch. See the
+instructions below for more information about how to download and apply the
+patch.
+
+Contents of Readme.txt file
+---------------------------
+
+Summary
+-------
+
+This patch updates MFC version 4.1 to correct several problems that occur
+when running on Win32s. If you have built an MFC application with Visual
+C++ 4.1 and are supporting Win32s you may have noticed one or more of the
+following problems, all of which are fixed in this patch:
+
+1. Problem with caching pointers to DLL entry points after final
+  FreeLibrary.
+
+2. AfxWinInit/SetCurrentHandles benign asserts.
+
+3. We load OLEPRO32.DLL, but store the instance handle in a global, not
+  process local variable. This is what is causing a failure during
+  IPersistMemory::Load after creating the control.
+
+4. On process detach of an OCX, we are not cleaning up all the module
+  process state. This causes problems if multiple instances of an OCX
+  are loaded in the same or separate processes.
+
+5. If you create a DLL that calls the AfxGetThread function and is being
+  used by multiple applications you can run into problems caused by data
+  being global and not process local.
+
+6. Problems running multiple OCX containers as described in the following
+  Microsoft Knowledge Base article have been fixed.  These problems were
+  caused by a combination of the problems described in items 4 and 5
+  above.
+
+     ARTICLE-ID: Q152792
+     TITLE: FIX: Multiple ActiveX Control Containers Under Win32s Problems
+
+This patch includes the fixes issued in the 4.1a patch to Microsoft Visual
+C++. The relevant pieces from the 4.1a Readme.txt file are appended at the
+bottom of this file for your information.
+
+How To Run the Patch, and What Gets Updated
+-------------------------------------------
+
+The following is included in the self-extracting file, Vc41b.exe:
+
+- Readme.txt  : This file.
+- Patch.exe   : The executable file which runs the patch script.
+- Msdev41b.rtp: The patch file for the \msdev tree.
+- Mfc41b.rtp  : The patch file for the MFC DLLs in the \windows\system
+                directory.
+
+Use the following steps to patch the MFC DLLs in your \windows\system
+directory:
+
+1. Close all applications using MFC, including Microsoft Developer
+  Studio.
+
+2. Copy Patch.exe and Mfc41b.rtp into your \windows\system directory on
+  Microsoft Windows 95 or Microsoft Windows versions 3.x running Win32s,
+  or into \windows\system32 directory on Microsoft Windows NT.
+
+3. Run the following command at a command prompt in the directory
+  you copied Patch.exe into:
+
+     patch mfc41b
+
+4. Mfc41b.rtp attempts to patch all the MFC files installed in the
+  Windows system directory. See below for list of files:
+
+- mfc40.dll
+  (Before)  Size: 921,872  Date: 2/28/96  Time:  6:53a  Version: 4.1.6038
+  (After Patch A) 921,872        5/13/96        11:39a           4.1.6130
+  (After Patch B) 924,432        7/11/96        12:55p           4.1.6139
+
+- mfc40.map
+  (Before)  Size: 977,461  Date: 2/27/96  Time: 11:37p
+  (After Patch B) 978,210        7/10/96         6:40p
+
+- mfc40u.dll
+  (Before)  Size: 922,384  Date: 2/28/96  Time:  3:16a  Version: 4.1.6038
+  (After Patch A) 919,824        5/13/96        11:45a           4.1.6130
+  (After Patch B) 924,432        7/10/96         8:57p           4.1.6139
+
+- mfc40u.map
+  (Before)  Size: 989,498  Date: 2/27/96  Time: 11:18p
+  (After Patch B) 993,011        7/10/96         6:26p
+
+- mfcd40d.dll
+  (Before)  Size: 247,808  Date: 2/27/96  Time: 10:40p  Version: 4.1.6038
+  (After Patch A) 247,808        5/13/96        11:46a           4.1.6130
+  (After Patch B) 247,808        7/10/96         5:59p           4.1.6139
+
+- mfcd40ud.dll
+  (Before)  Size: 255,488  Date: 2/27/96  Time: 11:05p  Version: 4.1.6038
+  (After Patch A) 255,488        5/13/96        11:46a           4.1.6130
+  (After Patch B) 255,488        7/10/96         6:16p           4.1.6139
+
+- mfcd40d.pdb
+  (Before)  Size: 1,134,592   Date: 2/27/96   Time: 10:40p
+  (After Patch A) 1,134,592          5/6/96          3:03p
+  (After Patch B) 1,134,592         7/10/96          5:59p
+
+- mfcd40ud.pdb
+  (Before)  Size: 1,159,168   Date: 2/27/96   Time: 11:05p
+  (After Patch A) 1,159,168          5/6/96          3:27p
+  (After Patch B) 1,159,168         7/10/96          6:16p
+
+- mfcn40d.dll
+  (Before)  Size: 28,160   Date: 2/27/96  Time: 10:41p  Version: 4.1.6038
+  (After Patch B) 28,160         7/10/96         5:59p           4.1.6139
+
+- mfcn40ud.dll
+  (Before)  Size: 28,160   Date: 2/27/96  Time: 11:05p  Version: 4.1.6038
+  (After Patch B) 28,160         7/10/96         6:17p           4.1.6139
+
+- mfcn40d.pdb
+  (Before)  Size: 790,528  Date: 2/27/96  Time: 10:41p
+  (After Patch B) 790,528        7/10/96         5:59p
+
+- mfco40d.dll
+  (Before)  Size: 666,112  Date: 2/27/96  Time: 10:39p  Version: 4.1.6038
+  (After Patch B) 667,136        7/10/96         5:58p           4.1.6139
+
+- mfco40d.pdb
+  (Before)  Size: 2,338,816  Date: 2/27/96  Time: 10:39p
+  (After Patch B) 2,347,008        7/10/96         5:58p
+
+- mfc40d.dll
+  (Before)  Size: 894,464  Date: 2/27/96  Time: 10:35p  Version: 4.1.6038
+  (After Patch B) 894,976        7/10/96         5:55p           4.1.6139
+
+- mfc40d.map
+  (Before)  Size: 752,302  Date: 2/27/96  Time: 10:35p
+  (After Patch B) 752,486        7/10/96         5:55p
+
+- mfc40d.pdb
+  (Before)  Size: 2,813,952  Date: 2/27/96  Time: 10:35p
+  (After Patch B) 2,813,952        7/10/96         5:55p
+
+- mfc40ud.dll
+  (Before)  Size: 906,752  Date: 2/27/96  Time: 11:00p  Version: 4.1.6038
+  (After Patch B) 907,776        7/10/96         6:13p           4.1.6139
+
+- mfc40ud.map
+  (Before)  Size: 771,290  Date: 2/27/96  Time: 11:00p
+  (After Patch B) 771,367        7/10/96         6:13p
+
+- mfc40ud.pdb
+  (Before)  Size: 2,838,528   Date: 2/27/96   Time: 11:00p
+  (After Patch B) 2,838,528         7/10/96          6:13p
+
+- mfcd40d.map
+  (Before)  Size: 213,433     Date: 2/27/96   Time: 10:40p
+  (After Patch B) 213,720           7/10/96          5:59p
+
+- mfcn40d.map
+  (Before)  Size: 49,166      Date: 2/27/96   Time: 10:41p
+  (After Patch B) 49,345            7/10/96          5:59p
+
+- mfcn40ud.map
+  (Before)  Size: 50,430      Date: 2/27/96   Time: 11:05p
+  (After Patch B) 50,598            7/10/96          6:17p
+
+- mfcn40ud.pdb
+  (Before)  Size: 798,720     Date: 2/27/96   Time: 11:05p
+  (After Patch B) 798,720           7/10/96          6:17p
+
+- mfco40d.map
+  (Before)  Size: 666,410     Date: 2/27/96   Time: 10:39p
+  (After Patch B) 668,293           7/10/96          5:58p
+
+- mfco40ud.dll
+  (Before) Size:  669,184  Date: 2/27/96  Time: 11:03p  Version: 4.1.6038
+  (After Patch B) 670,208        7/10/96         6:16pm          4.1.6139
+
+- mfco40ud.map
+  (Before)  Size: 715,044   Date: 2/27/96   Time: 11:03p
+  (After Patch B) 716,611         7/10/96          6:16p
+
+- mfco40ud.pdb
+  (Before)  Size: 2,379,776  Date: 2/27/96   Time: 11:03p
+  (After Patch B) 2,379,776        7/10/96          6:16p
+
+- msvcrt40.dll ( Should come from \win32s\redist directory on VC4.1 CD )
+  (Before) Size: 322,048  Date: 2/27/96  Time: 11:25a  Version: 4.10.6038
+  (After Patch B)322,048        6/20/96        10:28p           4.10.6087
+
+- msvcr40d.dll ( Should come from \win32s\debug directory on VC4.1 CD )
+  (Before) Size: 439,296  Date: 2/15/96  Time: 12:43a  Version: 4.10.6038
+  (After Patch B)444,928        2/20/96         1:05a           4.10.6038
+
+- msvcr40d.pdb ( Should come from \win32s\debug directory on VC4.1 CD )
+  (Before)  Size: 1,197,056   Date: 2/15/96   Time: 12:43a
+  (After Patch B) 1,262,592         2/20/96          1:05a
+
+5. Use the following steps to patch the files in the \msdev tree:
+
+  a. Close all applications using MFC, including Microsoft Developer
+     Studio.
+
+  b. Copy Patch.exe and Msdev41.rtp to your \msdev directory.
+
+  c. Run the following command at a command prompt in the directory
+     that you copied Patch.exe into:
+
+        patch msdev41b
+
+6. Msdev41b.rtp attempts to patch all the files listed below in the
+  \msdev tree:
+
+- \bin\emn0n0.dll
+  (Before) Size: 100,112 Date: 2/16/96  Time: 4:59a  Version: 4.10.6038
+  (After Patch A)103,696       4/10/96        8:56p           4.10.6038
+  (After Patch B)103,696       4/10/96        8:56p           4.10.6038
+
+- \mfc\src\dbrfx.cpp
+  (Before)  Size: 65,181  Date: 1/30/96  Time: 9:10a
+  (After Patch A) 65,183         4/8/96        4:38p
+  (After Patch B) 65,183         4/8/96        4:38p
+
+- \mfc\lib\nafxcw.lib
+  (Before)  Size: 6,652,314  Date: 2/27/96   Time: 10:12p
+  (After Patch A) 6,652,314        4/25/96          4:57p
+  (After Patch B) 6,652,292        7/10/96          5:38p
+
+- \mfc\lib\nafxcwd.lib
+  (Before)  Size: 7,405,604  Date: 2/27/96   Time: 10:03p
+  (After Patch A) 7,405,604        4/25/96          4:49p
+  (After Patch B) 7,405,674        7/10/96          5:31p
+
+- \mfc\lib\uafxcw.lib
+  (Before)  Size: 6,677,766  Date: 2/27/96   Time: 10:29p
+  (After Patch A) 6,677,730         5/6/96          2:52p
+  (After Patch B) 6,677,934         7/10/96         5:51p
+
+- \mfc\lib\uafxcwd.lib
+  (Before)  Size: 7,437,480  Date: 2/27/96   Time: 10:21p
+  (After Patch A) 7,437,480         5/6/96          2:43p
+  (After Patch B) 7,437,554        7/10/96          5:44p
+
+- \mfc\lib\nafxcw.pdb
+  (Before)  Size: 569,344    Date: 2/27/96   Time: 10:12p
+  (After Patch A) 569,344          4/25/96          4:57p
+  (After Patch B) 569,344          7/10/96          5:37p
+
+- \mfc\lib\nafxcwd.pdb
+  (Before)  Size: 577,536    Date: 2/27/96   Time: 10:03p
+  (After Patch A) 577,536          4/25/96          4:48p
+  (After Patch B) 577,536          7/10/96          5:31p
+
+- \mfc\lib\uafxcw.pdb
+  (Before)  Size: 569,344    Date: 2/27/96   Time: 10:29p
+  (After Patch A) 569,344           5/6/96          2:52p
+  (After Patch B) 569,344          7/10/96          5:51p
+
+- \mfc\lib\uafxcwd.pdb
+  (Before)  Size: 577,536    Date: 2/27/96   Time: 10:20p
+  (After Patch A) 585,728           5/6/96          2:43p
+  (After Patch B) 577,536          7/10/96          5:44p
+
+- \lib\msvcrtd.pdb (Should come from \win32s\lib directory on VC4.1 CD)
+  (Before)  Size: 159,744    Date: 2/15/96   Time: 12:43a
+  (After Patch B) 102,400          6/20/96         11:12p
+
+- \crt\src\aw_env.c
+  (Before)  Size: 8,872    Date:  1/5/96     Time: 8:51p
+  (After Patch B) 8,886          6/19/96           6:55p
+
+- \mfc\src\afximpl.h
+  (Before)  Size: 14,694   Date: 12/15/95    Time: 9:18a
+  (After Patch B) 14,865          7/16/96          3:35p
+
+- \mfc\src\appinit.cpp
+  (Before)  Size: 8,509    Date:  9/19/95    Time: 8:11a
+  (After Patch B) 8,687           7/16/96          3:35p
+
+- \mfc\src\auxdata.cpp
+  (Before)  Size: 8,056    Date:  9/19/95    Time: 8:12a
+  (After Patch B) 8,754           7/16/96          3:35p
+
+- \mfc\src\build_.h
+  (Before)  Size: 100      Date:   2/7/96    Time: 9:26a
+  (After Patch B) 100             7/16/96          3:35p
+
+- \mfc\src\ccdata.cpp
+  (Before)  Size: 21,763   Date:  9/19/95    Time: 8:12a
+  (After Patch B) 22,435          7/16/96          3:35p
+
+- \mfc\src\ctlmodul.cpp
+  (Before)  Size: 1,237    Date:   7/5/95    Time: 1:11a
+  (After Patch B) 1,203           7/16/96          3:35p
+
+- \mfc\src\dbcore.cpp
+  (Before)  Size: 94,099   Date:  1/30/96    Time: 9:10a
+  (After Patch B) 94,220          7/16/96          3:35p
+
+- \mfc\src\oledata.cpp
+  (Before)  Size: 33,304   Date: 12/15/95    Time: 9:18a
+  (After Patch B) 33,935          7/16/96          3:35p
+
+- \mfc\src\olepro32.cpp
+  (Before)  Size: 3,758    Date:  8/10/95    Time: 7:10a
+  (After Patch B) 4,461           7/16/96          3:35p
+
+- \mfc\src\sockcore.cpp
+  (Before)  Size: 31,712   Date:  1/11/96    Time: 9:08a
+  (After Patch B) 31,836          7/16/96          3:35p
+
+Caveats
+-------
+
+Several of the MFC files that can get patched are optionally installed.
+You may get a message in the patch log stating that a particular
+file was not found, and that is OK. For example, if you did not install
+the Unicode MFC libraries, the Patch program will not find them.
+
+Potential Problems and Workarounds
+----------------------------------
+
+- During any of the steps above, the Patch program may tell you that you
+  already have a copy of the newer files on disk. If it tells you this
+  information, it will not patch the files in your \windows\system
+  directory. To remedy this situation, make sure that you do not have
+  any other copies of the files listed above in your PATH.
+
+  If the above solution does not work, run the Patch commands above
+  using the /NOP switch. For example, use "Patch /NOP mfc41b." This
+  switch tells the Patch program not to search your PATH for newer
+  files.
+
+  If your files still are not being patched, copy the files listed above
+  into a temporary directory and run the Patch command with the /NOP and
+  /NOS command-line options. For example, use "Patch /NOS /NOP mfc41b."
+
+- You may get the error ept0038, indicating that a particular file
+  could not be deleted. This error can occur because the DLL is still
+  locked in memory. Be sure you have closed all applications before
+  running the patch. If this solution does not work, restart Windows and
+  run the patch before starting any other applications.
+
+-  If you run this patch on Windows NT or Windows 95, an error message
+  (see below) stating that the old version of the file could not be
+  found but one with the same name exists is displayed. No update will
+  be done.
+
+    wpt0036:old File not found: The C run-time DLL which is being
+    patched, MSVCRT40.DLL, is a Win32s specific version.
+
+Readme from Visual C++ 4.1a Patch
+---------------------------------
+
+I. Summary
+
+This patch updates MFC to fix a problem you may be seeing in an application
+that uses the Microsoft database classes. Using certain ODBC drivers you
+may get an "Out of memory" error. See below for a list of files updated and
+a more complete description of the problem.
+
+This patch also updates the debugger in the Microsoft Developer Studio to
+fix a problem where you may not be stopping at breakpoints you have set in
+a project that was built from a directory structure that contained long
+names. This problem did not exist in Visual C++ 4.0. See below for a list
+of files updated.
+
+II. Description of MFC Bug
+
+An error can occur when mapping a CString to a SQL_LONGVARCHAR,
+SQL_VARCHAR, or other SQL data type field if a driver returns a large
+precision value from SQLDescribeCol() for the column.
+
+A bug in the MFC ODBC Database classes results in MFC trying to allocate a
+large chunk of memory to store data that might have this large precision.
+
+In some cases, such as using a memo field with the FoxPro Desktop ODBC
+driver, a memory allocation of 1 gigabyte may be attempted. Or, as is the
+case with the Visual FoxPro driver, the MFC Database Classes will try to
+allocate a negative number of bytes because the return value of the driver
+is 2 gigabytes and then MFC adds 1, which causes the signed variable to
+wrap into a negative value. In this case, an assertion occurs in
+GetBufferSetLength() on line 447 of Strcore.cpp:
+
+   ASSERT(nNewLength &gt;= 0);
+
+Mapping a CString to a SQL Server text field produces the same result.
+
+The problem occurs only when mapping CString variables to
+variable-length fields using the RFX_Text() function.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Vc41b.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+NOTE: Use the -d option when running Vc41b.exe to decompress the file and
+recreate the proper directory structure.
+
+Additional query words: patch upgrade
+
+======================================================================
+Keywords          : kbfile kbnokeyword kbMFC kbVC410 kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper _IKkbbogus kbMFC
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

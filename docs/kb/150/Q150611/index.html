@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150611: Qvision 2000 and Matrox Mga Ultima Cause Access Violation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150611: Qvision 2000 and Matrox Mga Ultima Cause Access Violation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150611/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150611/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150611/","publisher":null,"image":null,"headline":"Q150611: Qvision 2000 and Matrox Mga Ultima Cause Access Violation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150611-qvision-2000-and-matrox-mga-ultima-cause-access-violation">Q150611: Qvision 2000 and Matrox Mga Ultima Cause Access Violation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150611
+Product(s): Microsoft Windows NT
+Version(s): 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article outlines a special programming case that causes an access violation
+when running the Qvision 2000 or Matrox Mga Ultima Video cards. These cards use
+the Mga.sys video driver.
+
+The problem is caused by making some bad graphics calls. (These are shown in a
+program included in the More Information section below.) The problem causes the
+following error message to be returned by NT 3.51:
+
+  access violation in ntdll.dll at 0x77fa02ad with exception 0xc0000037.
+
+
+This error is only known to occur using the Mga.sys driver. There may be other
+drivers that also produce this error.
+
+The programming problem is produced by calling BeginPath and Endpath with no
+points defined (no LineTo definitions) and calling StrokeAndFillPath (really the
+FillPath is the problem).
+
+Once this has been done there is a problem with the hdc. The failure will show up
+when MoveToEx is called (after the previous calls have messed up the device
+context - hdc).
+
+MORE INFORMATION
+================
+
+Here is a simple sample program that produces the error:
+
+#include &lt;windows.h&gt;
+
+HANDLE mainFrame;
+extern LRESULT WINAPI DrawProc (HWND, UINT, WPARAM, LPARM);
+
+int APIENTRY WinMain (HMODULE hModule, HINSTANCE hNULL, PSTR cmdLine,
+    int cmdShow)
+{
+MSG msg;
+WNDCLASS wc;
+
+       memset (&amp;wc, 0, sizeof (WNDCLASS));
+       wc.lpszClassName = "MAIN";
+       wc.hbrBackground = (void * ) (COLOR_WINDOW +1);
+       wc.style = CS_VREDRAW | CS_HREDRAW;
+       wc.lpfnWndProc = DrawProc;
+       if  (!RegisterClass (&amp;wc)) exit (-1);
+       if  ( (mainFrame = CreateWindow ("MAIN", "Mca Test",
+            WS_OVERLAPPEDWINDOW, 0, 0, 300, 200, NULL,
+             NULL, 0, NULL) ) == NULL)
+          return (FALSE);
+       ShowWindow (mainFrame, SW_SHOW);
+
+       While (GetMessage (&amp;msg, NULL, 0, 0) )
+       {
+           TranslateMessage (&amp;msg);
+           DispatchMessage(&amp;msg);
+       }
+}
+
+LRESULT  WINAPI DrawProc (HWND hwnd, UINT msg, WPARM mp1, LPARAM mp2)
+{
+PAINTSTRUCT ps;
+
+  switch (msg)
+  {
+  case  WM_CLOSE:
+       DestroyWindow (mainFrame);
+       return (0);
+  case WM_DESTROY:
+       PostQuitMessage (0);
+       return (0);
+  case WM_PAINT:
+       BeginPaint (hwnd, &amp;ps);
+       BeginPath  (ps.hdc);
+       EndPath (ps.hdc);
+       StrokeAndFillPath (ps.hdc); // Fillpath is the problem here
+                                   // since nothing has been drawn
+       BeginPath (ps.hdc);
+       MoveToEx (ps.hdc, 50, 50, NULL); //This is the failure point
+       LineTo (ps.hdc, 100, 100);
+       LineTo (ps.hdc, 150,  150);
+       EndPath (ps.hdc);
+       StrokeAndFillPath (ps.hdc);
+       MoveToEx (ps.hdc, 300, 300, NULL);
+       EndPaint (hwnd, &amp;ps);
+       return (0);
+   }
+   return (DefWindowProc (hwnd, msg, mp1, mp2));
+}
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

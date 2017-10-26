@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238776: XCLN: MAPIsend Tool Usage and Error Codes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238776: XCLN: MAPIsend Tool Usage and Error Codes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238776/","publisher":null,"image":null,"headline":"Q238776: XCLN: MAPIsend Tool Usage and Error Codes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238776-xcln-mapisend-tool-usage-and-error-codes">Q238776: XCLN: MAPIsend Tool Usage and Error Codes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238776
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:2000,97,98; winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 27-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+- Microsoft Outlook 2000 
+- Microsoft Outlook 97 
+- Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the command-line usage and error codes of the MAPIsend
+tool (Mapisend.exe) located on the Microsoft BackOffice Resource Kit, Second
+Edition. The MAPIsend tool allows a user to send Messaging Application
+Programming Interface (MAPI) messages from a command-line.
+
+MORE INFORMATION
+================
+
+The following command-line parameters can be used with the MAPIsend tool:
+
+- -u profile name of sender (user mailbox) Profile name should be exactly the
+  same as listed in the profile.
+
+- -p login password
+
+- -i interactive login (prompts for profile and password)
+
+- -r recipient(s) Multiple recipients must be separated by a semicolon (;) and
+  must not be ambiguous in default address book.
+
+NOTE: This is an important distinction. To test, open a MAPI client such as
+Microsoft Outlook, and compose a new message. Enter the recipient's name and
+click Check Names (ALT+K). If the name is resolved to a single recipient, the
+alias is not ambiguous. If Check Names returns multiple addresses, the alias is
+considered ambiguous.
+
+- -c specifies mail copy list (cc: list)
+
+- -s subject line
+
+- -m specifies contents of the mail message
+
+NOTE: This is where the message body is inserted
+
+- -t specifies text file for contents of the mail message
+
+NOTE: The MAPIsend tool can be directed to use a specific text file as the
+content of the message.
+
+- -f path and file name(s) to attach to message
+
+- -v generates verbose output
+
+- -? prints this message
+
+Examples :
+
+mapisend -u "Bill Walker-Test2" -p password
+-r wwalker -c wwalker -s Test -m Message -f c:\test.txt -v
+
+This sends a message with a subject of "Test" and a body of "Message" to the
+mailbox, wwalker. The message is sent to wwalker using the profile called "Bill
+Walker-Test2" with a password of "password" and attaches a file called
+"test.txt" from the root of drive C and displays verbose information.
+
+mapisend -i -r wwalker -s Interactive2
+
+This prompts the user for a profile, and sends a message with a subject of
+"Interactive2" to wwalker with no body text.
+
+Error Codes :
+
+The following is a list of error codes returned by MAPIsend:
+
+  1 user abort
+  2 session failure
+  3 login failure
+  4 disk full
+  5 insufficient memory
+  6 access denied
+  7 too many sessions
+  8 too many files
+  9 too many recipients
+  10 attachment not found
+  11 attachment open failure
+  12 attachment write failure
+  13 unknown recipient
+  14 bad recipient type
+  15 no messages
+  16 invalid message
+  17 text too large
+  18 invalid session
+  19 type not supported
+  20 ambiguous recipient
+  21 message in use
+  22 network failure
+  23 invalid edit fields
+  24 invalid recipients
+  25 not supported
+
+For more information on the MAPIsend tool, please refer to the Exchange Help
+files shipped with the Microsoft BackOffice Resource Kit, Second Edition.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:2000,97,98; winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

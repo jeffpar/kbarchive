@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107245: Microsoft Systems Management Server README.TXT (Part 2 of 2) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107245: Microsoft Systems Management Server README.TXT (Part 2 of 2)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107245/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107245/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107245/","publisher":null,"image":null,"headline":"Q107245: Microsoft Systems Management Server README.TXT (Part 2 of 2)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107245-microsoft-systems-management-server-readmetxt-part-2-of-2">Q107245: Microsoft Systems Management Server README.TXT (Part 2 of 2)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q107245</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">smsgeneral</span> <span class="n">kbArtTypeINF</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">27</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">text</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">version</span> <span class="m">1.0</span> <span class="n">README</span><span class="p">.</span><span class="n">TXT</span> <span class="n">file</span> <span class="p">(</span><span class="n">part</span> <span class="m">2</span> <span class="k">of</span> <span class="m">2</span><span class="p">).</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="m">20.</span> <span class="n">Using</span> <span class="n">Network</span> <span class="n">Applications</span>
+<span class="k">If</span> <span class="n">a</span> <span class="n">user</span> <span class="n">starts</span> <span class="n">an</span> <span class="n">application</span> <span class="n">shared</span> <span class="n">on</span> <span class="n">an</span> <span class="n">SMS</span> <span class="n">server</span> <span class="k">and</span> <span class="k">then</span> <span class="n">leaves</span> <span class="n">it</span>
+<span class="n">unattended</span><span class="p">,</span> <span class="n">the</span> <span class="n">application</span> <span class="n">may</span> <span class="n">fail</span> <span class="k">if</span> <span class="n">the</span> <span class="n">server</span> <span class="n">disconnects</span> <span class="n">the</span> <span class="n">client</span>
+<span class="k">while</span> <span class="n">the</span> <span class="n">application</span> <span class="n">is</span> <span class="n">left</span> <span class="n">running</span> <span class="n">unused</span><span class="p">.</span> <span class="k">To</span> <span class="n">prevent</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">can</span> <span class="n">turn</span> <span class="n">off</span> <span class="n">the</span> <span class="n">autodisconnect</span> <span class="n">feature</span> <span class="n">on</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">servers</span> <span class="n">for</span>
+<span class="n">shared</span> <span class="n">applications</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">a</span> <span class="n">client</span> <span class="n">is</span> <span class="n">configured</span> <span class="k">to</span> <span class="n">use</span> <span class="n">some</span> <span class="n">server</span> <span class="n">applications</span> <span class="p">(</span><span class="n">that</span> <span class="n">use</span> <span class="n">the</span>
+<span class="n">MSAPPS</span> <span class="n">directory</span><span class="p">)</span> <span class="n">made</span> <span class="n">available</span> <span class="n">by</span> <span class="n">SMS</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">client</span> <span class="n">also</span> <span class="n">has</span>
+<span class="n">applications</span> <span class="n">installed</span> <span class="n">directly</span> <span class="n">on</span> <span class="n">it</span> <span class="p">(</span><span class="k">not</span> <span class="n">using</span> <span class="n">SMS</span><span class="p">)</span> <span class="n">that</span> <span class="n">also</span> <span class="n">use</span> <span class="n">MSAPPS</span><span class="p">,</span>
+<span class="n">the</span> <span class="n">locally</span> <span class="n">installed</span> <span class="n">applications</span> <span class="n">will</span> <span class="k">not</span> <span class="k">function</span> <span class="n">properly</span> <span class="k">if</span> <span class="n">a</span> <span class="n">Remove</span>
+<span class="k">Package</span> <span class="k">From</span> <span class="n">Server</span> <span class="n">job</span> <span class="n">is</span> <span class="n">used</span> <span class="k">to</span> <span class="n">remove</span> <span class="n">the</span> <span class="n">MSAPPS</span> <span class="n">directory</span> <span class="k">from</span> <span class="n">the</span>
+<span class="n">server</span><span class="p">.</span> <span class="k">In</span> <span class="n">this</span> <span class="k">case</span><span class="p">,</span> <span class="n">the</span> <span class="n">client</span><span class="s1">'s references to the MSAPPS directory will
+then point to the non-existent server version.
+
+Be careful if your clients in a child site receive packages for shared
+applications from both their site and that site'</span><span class="n">s</span> <span class="n">parent</span> <span class="n">site</span><span class="p">.</span> <span class="k">If</span> <span class="n">a</span> <span class="n">client</span>
+<span class="n">receives</span> <span class="n">a</span> <span class="k">package</span> <span class="n">that</span> <span class="k">uses</span> <span class="n">MSAPPS</span> <span class="k">from</span> <span class="n">the</span> <span class="n">client</span><span class="s1">'s site (a child site),
+a Registry key is created on the client that refers to the MSAPPS
+distributed by the child site. Later, if packages using MSAPPS are
+distributed from the parent site to the client, the MSAPPS Registry key is
+not changed, and still refers to the version from the child site.
+
+If, after that, the administrator decides to make the original MSAPPS
+package (from the child site) unavailable, the privileges on the MSAPPS
+Registry entry are set to "Deny." Any packages already distributed from the
+parent site that refer to MSAPPS will no longer work correctly. Also, any
+new packages installed will generate an error saying "MSAPPS is not
+installed. Would you like to continue anyway?"
+
+To solve the problem, be sure to delete any old program groups that include
+MSAPPS after they are no longer being used.
+
+Shared applications made available by SMS cannot support shared documents.
+A user running an application shared by SMS cannot use documents shared by
+SMS with that shared application. For example, suppose you have installed
+Microsoft Word for network sharing. If you also make a package of Word
+documents for a Share Package on Server job, users of the shared Microsoft
+Word will not be able to use the shared documents.
+
+You can use the RSAPPCTL.EXE utility to fix any corruptions or out-of-date
+problems with the database of shared applications. You may be directed to
+use this utility by an error message.
+
+This utility is located in the PSSTOOLS\platform.BIN directories (such as
+X86.BIN) on the SMS CD-ROM.
+
+Usage:  RSAPPCTL {/SELF} {/ALL} {/SITE:sitecode} {/SITESERVER:servername}
+_/SELF                  __Resets database for this site (but not child
+sites).
+_/ALL                   __Resets NAD for all child sites (but not this
+site).
+_/SITE:sitecode         __Resets NAD for the specified child site.
+_/SITESERVER:server     __Specifies this site'</span><span class="n">s</span> <span class="n">site</span> <span class="n">server</span><span class="p">.</span> <span class="n">Needed</span> <span class="n">only</span> <span class="k">if</span>
+<span class="n">RSAPPCTL</span> <span class="n">is</span> <span class="k">not</span> <span class="n">being</span>
+<span class="nf">run</span> <span class="n">on</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">both</span> <span class="n">the</span> <span class="p">/</span><span class="n">SELF</span> <span class="k">and</span> <span class="p">/</span><span class="n">ALL</span> <span class="k">options</span> <span class="k">to</span> <span class="k">do</span> <span class="n">a</span> <span class="n">total</span> <span class="nb">reset</span> <span class="k">of</span> <span class="n">the</span>
+<span class="n">local</span> <span class="n">site</span> <span class="k">and</span> <span class="n">all</span> <span class="n">child</span> <span class="n">sites</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">Share</span> <span class="k">Package</span> <span class="n">On</span> <span class="n">Server</span> <span class="n">jobs</span> <span class="n">that</span> <span class="n">have</span> <span class="n">target</span> <span class="n">distribution</span> <span class="n">servers</span>
+<span class="n">running</span> <span class="n">LAN</span> <span class="n">Manager</span> <span class="k">or</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span><span class="p">,</span> <span class="n">the</span> <span class="n">Despooler</span> <span class="n">will</span> <span class="nb">create</span> <span class="n">two</span>
+<span class="n">shares</span> <span class="n">when</span> <span class="n">a</span> <span class="n">nested</span> <span class="n">share</span> <span class="n">name</span> <span class="k">and</span> <span class="n">path</span> <span class="n">is</span> <span class="n">specified</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Share</span> <span class="n">Name</span> <span class="k">in</span>
+<span class="n">the</span> <span class="k">package</span><span class="s1">'s Setup Package For Sharing dialog box. 1) The Despooler uses
+the name at the beginning of the path to share that directory (using the
+directory name as the share name). For example, if you specified
+APPS\WIN\EXCEL, the Despooler will share the APPS directory as the APPS
+share. 2) The Despooler then shares the last directory in the path as an
+administrative share. This share is used by Program Group Control to
+connect to the package server so that it can start a network application
+from that share. For example, if you specified APPS\WIN\EXCEL, the
+Despooler will share the EXCEL directory as the EXCEL$ share.
+
+The following section includes more details about troubleshooting if users
+have problems running shared applications made available by SMS.
+
+21. Troubleshooting Network Applications
+Log File First, examine the SMSLOG.TXT file in the Windows directory. When
+the SMSLOG.TXT file reaches 8 kilobytes, it is renamed to SMSLOG.BAK and a
+new SMSLOG.TXT is started. The format of a message is either:
+
+[mm/dd/yy hh:mm:ss] Program Group Control ==&gt; message.
+or
+[mm/dd/yy hh:mm:ss] Program Group Control ==&gt; An Application specific error
+occurred: Program
+Title: message.
+
+If a message includes "An Application specific error occurred: Program
+Title: message." and Program Title is the name of a proxy application:
+
+Message                                 Description
+SmsProxy is unable to
+start the SMS application APPSTART      APPSTART.EXE is missing from the
+                                       Windows directory or else it cannot
+                                       be started due to insufficient
+                                       resources.
+Proxy application has been moved
+from the SMSPROXY directory.            A proxy application must reside in
+                                       the MS\SMS\SMSPROXY\appname
+                                       directory.
+Missing or invalid registry key for
+shared application.                     The SMS registry key for the
+                                       application is missing or it
+                                       doesn'</span><span class="n">t</span> <span class="n">contain</span> <span class="n">proper</span> <span class="n">subkeys</span><span class="p">.</span>
+<span class="n">No</span> <span class="n">extension</span> <span class="n">on</span> <span class="n">filename</span><span class="p">.</span>               <span class="n">A</span> <span class="n">proxy</span> <span class="n">application</span> <span class="n">must</span> <span class="n">have</span> <span class="n">an</span>
+                                       <span class="n">EXE</span> <span class="n">file</span> <span class="n">extension</span><span class="p">.</span>
+<span class="n">Memory</span> <span class="n">allocation</span> <span class="n">failure</span><span class="p">.</span>              <span class="n">The</span> <span class="nf">system</span> <span class="n">is</span> <span class="n">low</span> <span class="n">on</span> <span class="n">memory</span>
+                                       <span class="n">resources</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">a</span> <span class="n">message</span> <span class="n">includes</span> <span class="s2">"An Application specific error occurred: Program
+Title: message."</span> <span class="k">and</span> <span class="n">Program</span> <span class="n">Title</span> <span class="n">is</span> <span class="n">SMS</span> <span class="n">Application</span> <span class="n">Deinstallation</span><span class="p">:</span>
+
+<span class="n">Message</span>                                 <span class="n">Description</span>
+<span class="n">Invalid</span> <span class="nf">command</span> <span class="n">line</span><span class="p">;</span>
+<span class="n">Usage</span><span class="p">:</span> <span class="n">DEINSTAL</span> <span class="p">/</span><span class="n">switch</span>                 <span class="n">DEINSTAL</span> <span class="n">was</span> <span class="n">invoked</span> <span class="k">with</span> <span class="n">an</span>
+                                       <span class="n">invalid</span>  <span class="nf">command</span> <span class="n">line</span> <span class="n">argument</span><span class="p">.</span>
+<span class="n">Memory</span> <span class="n">allocation</span> <span class="n">failure</span><span class="p">.</span>              <span class="n">The</span> <span class="nf">system</span> <span class="n">is</span> <span class="n">low</span> <span class="n">on</span> <span class="n">memory</span>
+                                       <span class="n">resources</span><span class="p">.</span>
+<span class="n">Failed</span> <span class="k">to</span> <span class="nb">read</span> <span class="k">or</span> <span class="nb">write</span> <span class="n">registry</span><span class="p">.</span>       <span class="n">Missing</span> <span class="n">registry</span> <span class="n">key</span>
+                                       <span class="n">SMS</span><span class="p">\</span><span class="n">Applications</span><span class="p">\</span><span class="n">appname</span>
+                                         <span class="p">\</span><span class="n">DISABLE_ENABLE</span><span class="p">.</span>
+<span class="n">Deinstall</span> <span class="n">program</span> <span class="n">must</span> <span class="n">be</span> <span class="nf">run</span>
+<span class="k">from</span> <span class="n">SMSPROXY</span><span class="p">\</span><span class="n">regName</span> <span class="n">directory</span><span class="p">.</span>        <span class="n">A</span> <span class="n">deinstall</span> <span class="n">application</span> <span class="n">must</span> <span class="n">reside</span>
+                                       <span class="k">in</span> <span class="n">the</span> <span class="n">MS</span><span class="p">\</span><span class="n">SMS</span><span class="p">\</span><span class="n">SMSPROXY</span><span class="p">\</span><span class="n">appname</span>
+                                       <span class="n">directory</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">a</span> <span class="n">message</span> <span class="n">includes</span> <span class="s2">"An Application specific error occurred: Program
+Title: message."</span> <span class="k">and</span> <span class="n">Program</span> <span class="n">Title</span> <span class="n">is</span> <span class="n">SMSSETUP</span><span class="p">:</span>
+
+<span class="n">Message</span>                                 <span class="n">Description</span>
+<span class="n">Cannot</span> <span class="nf">connect</span> <span class="k">to</span> <span class="n">an</span> <span class="n">MSAPPS</span> <span class="n">server</span><span class="p">.</span>     <span class="n">One</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">occurred</span><span class="p">:</span>
+
+                                       <span class="n">The</span> <span class="n">MSAPPS</span> <span class="k">package</span> <span class="n">was</span> <span class="k">not</span> <span class="n">defined</span><span class="p">.</span>
+                                       <span class="n">The</span> <span class="n">MSAPPS</span> <span class="k">package</span> <span class="n">was</span> <span class="k">not</span> <span class="n">placed</span>
+                                       <span class="k">in</span> <span class="n">a</span> <span class="n">program</span> <span class="n">group</span><span class="p">.</span>
+                                       <span class="n">The</span> <span class="n">user</span> <span class="n">doesn</span><span class="s1">'t belong to any user
+                                       group defined for the package.
+                                       The MSAPPS package was not sent as
+                                       a Share Package On Server job.
+                                       The MSAPPS package has not yet
+                                       completed. When it completes, the
+                                       user will have to rerun Program
+                                       Group Control.
+                                       Network failure while connecting
+                                       to the MSAPPS distribution server.
+
+MSAPPS server list is empty.
+SMS package has not been
+successfully distributed.               See preceding explanation.
+
+Cannot open the STF file.               The STF file specified on the
+                                       SMSSETUP command line cannot be
+                                       opened in the package distribution
+                                       directory.
+Cannot open the temporary STF file.     The ~SETUP~.STF file in the Windows
+                                       directory on the client cannot be
+                                       opened.
+Cannot open the INF file.               The SETUP.INF file in the package
+                                       distribution directory cannot
+                                       be opened.
+Cannot open the temporary INF file.     The ~SETUP~.INF file in the Windows
+                                       directory on the client cannot be
+                                       opened.
+ACME Setup did not complete.
+Likely cause is insufficient disk
+space on drive containing the
+Windows directory.                      The application'</span><span class="n">s</span> <span class="n">setup</span> <span class="n">program</span> <span class="n">did</span>
+                                       <span class="k">not</span> <span class="n">complete</span><span class="p">.</span> <span class="n">No</span> <span class="n">indication</span> <span class="k">of</span> <span class="n">what</span>
+                                       <span class="n">caused</span> <span class="n">this</span> <span class="n">failure</span> <span class="n">was</span> <span class="n">reported</span> <span class="n">by</span>
+                                       <span class="n">the</span> <span class="n">setup</span> <span class="n">program</span><span class="p">.</span> <span class="n">One</span> <span class="n">likely</span> <span class="n">cause</span>
+                                       <span class="n">is</span> <span class="n">insufficient</span> <span class="n">space</span> <span class="n">on</span> <span class="n">the</span> <span class="n">drive</span>
+                                       <span class="n">containing</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="n">Cannot</span> <span class="n">access</span> <span class="n">SETUP</span><span class="p">.</span><span class="n">EXE</span> <span class="n">on</span>
+<span class="n">application</span> <span class="n">server</span><span class="p">.</span>                     <span class="n">The</span> <span class="n">setup</span> <span class="n">program</span> <span class="n">on</span> <span class="n">the</span> <span class="k">package</span>
+                                       <span class="n">distribution</span> <span class="n">server</span> <span class="n">cannot</span> <span class="n">be</span>
+                                       <span class="n">accessed</span><span class="p">.</span> <span class="n">Check</span> <span class="n">the</span> <span class="n">directory</span>
+                                       <span class="n">permissions</span><span class="p">.</span>
+<span class="n">ACME</span> <span class="n">Setup</span> <span class="n">failed</span> <span class="k">to</span> <span class="n">start</span><span class="p">.</span>             <span class="n">The</span> <span class="n">setup</span> <span class="n">program</span> <span class="n">failed</span> <span class="k">to</span> <span class="n">start</span><span class="p">,</span>
+                                       <span class="n">probably</span> <span class="n">due</span> <span class="k">to</span> <span class="n">insufficient</span>
+                                       <span class="n">memory</span><span class="p">.</span>
+<span class="n">Cannot</span> <span class="n">open</span> <span class="n">local</span> <span class="n">STF</span> <span class="n">file</span><span class="p">.</span>             <span class="n">After</span> <span class="n">setup</span> <span class="n">has</span> <span class="n">succeeded</span><span class="p">,</span> <span class="n">a</span>
+                                       <span class="n">SETUP</span><span class="p">.</span><span class="n">STF</span> <span class="n">file</span> <span class="n">is</span> <span class="n">installed</span> <span class="k">in</span> <span class="n">the</span>
+                                       <span class="n">application</span><span class="s1">'s directory on the
+                                       client. SMSSETUP has detected that
+                                       this file is missing.
+Corrupted STF file.                     SMSSETUP found something corrupted
+                                       in the STF file.
+Failed to copy the SMSPROXY
+directory.                              An error occurred while copying the
+                                       SMSPROXY directory from the package
+                                       distribution directory to the
+                                       client'</span><span class="n">s</span> <span class="n">MS</span><span class="p">\</span><span class="n">SMSSMSPROXY</span> <span class="n">directory</span><span class="p">.</span>
+<span class="k">Package</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">'t contain
+an SMSPROXY subdirectory.               The package distribution directory
+                                       must contain an SMSPROXY directory.
+User aborted installation because
+application is already installed locally.       SMSSETUP allows a user to
+                                       cancel setup if the application is
+                                       already installed locally.
+Failed to load SMS_ACME.DLL.            The SMSPROXY directory is missing
+                                       or the SMS_ACME.DLL file is missing
+                                       from the SMSPROXY directory, or
+                                       some other failure prevented it
+                                       from being successfully loaded.
+Check the directory permissions.
+Failed to find '</span><span class="n">SmsAcmeRegProc</span><span class="s1">'
+in SMS_ACME.DLL.                        The SMS_ACME.DLL must contain the
+                                       SmsAcmeRegProc function.
+SMSSETUP: invalid command line.         The SMSSETUP command line was
+                                       invalid.
+WNetGetConnection failed.               Unable to translate a drive
+                                       connection to a UNC connection.
+Deinstall program failed to save
+OLE registry entries.                   The deinstall program failed to
+                                       run. It is named in the registry
+                                       key HKEY_CLASSES_ROOT
+                                       \SMS\Applications
+                                         \appname\Info\Deinstall_App.
+
+22. Installing Applications on Clients
+
+When you use a PDF to create a job to install an application on
+workstations with a Run Command on Workstation job, you must copy the
+appropriate SMSPROXY directory to the package source directory before
+distributing the package to workstations. You can find the SMSPROXY
+directory in the PRIMSITE.SRC\IMPORT.SRC\appName directory. Copying the
+SMSPROXY directory to the package source directory is required for both
+Share Package on Server and Run Command on Workstation jobs.
+
+If a computer is running a shared copy of an application and you want to
+install a local copy of that application on that computer using a PDF, you
+must first remove the shared copy of the application. The deinstall program
+for a shared application is located in a subdirectory of the SMSPROXY
+directory. For example, the deinstallation program for Microsoft Word is
+MS\SMS\SMSPROXY\WINWORD\DEINSTAL.EXE.
+
+23. Notes on Installing Specific Applications
+Microsoft Office When you create the admin installation for Microsoft
+Office version 4.2c or 4.3c, you may see a message stating "Setup cannot
+update the Proofing Tools in the shared location because the lex formats
+are incompatible." If you see this message, you can ignore it and continue
+with the installation. All components of Microsoft Office will work
+correctly.
+
+Do not remove any program items from a Microsoft Office program group,
+either before or after the package has been distributed. For example, don'</span><span class="n">t</span>
+<span class="n">remove</span> <span class="n">the</span> <span class="n">PowerPoint</span> <span class="n">program</span> <span class="n">item</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Office</span> <span class="n">program</span> <span class="n">group</span><span class="p">.</span>
+<span class="n">Otherwise</span><span class="p">,</span> <span class="n">OLE</span> <span class="n">functions</span> <span class="k">and</span> <span class="n">Registry</span> <span class="n">entries</span> <span class="n">will</span> <span class="k">not</span> <span class="n">work</span> <span class="n">properly</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="k">version</span> <span class="m">4.3</span> <span class="k">or</span> <span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Access</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="k">version</span>
+<span class="m">2.0</span> <span class="k">as</span> <span class="n">shared</span> <span class="n">applications</span><span class="p">,</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">the</span>
+<span class="n">application</span> <span class="n">allows</span> <span class="n">users</span> <span class="n">both</span> <span class="n">Read</span> <span class="k">and</span> <span class="n">Write</span> <span class="n">permissions</span><span class="p">.</span> <span class="n">This</span> <span class="n">allows</span> <span class="n">users</span>
+<span class="k">to</span> <span class="n">have</span> <span class="n">the</span> <span class="n">necessary</span> <span class="nb">write</span> <span class="n">access</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Access</span> <span class="n">file</span>
+<span class="n">ACS200</span><span class="p">\</span><span class="n">WORKDIR</span><span class="p">\</span><span class="nf">SYSTEM</span><span class="p">.</span><span class="n">MDA</span><span class="p">.</span> <span class="n">These</span> <span class="n">access</span> <span class="n">permissions</span> <span class="n">are</span> <span class="k">set</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">ACS200</span><span class="p">.</span><span class="n">PDF</span> <span class="k">and</span> <span class="n">OFP43_</span><span class="p">.</span><span class="n">PDF</span> <span class="n">files</span><span class="p">.</span> <span class="k">To</span> <span class="n">protect</span> <span class="n">other</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">directory</span> <span class="k">from</span> <span class="n">being</span> <span class="n">modified</span> <span class="n">by</span> <span class="n">clients</span><span class="p">,</span> <span class="k">set</span> <span class="n">the</span> <span class="n">permissions</span> <span class="k">to</span> <span class="nb">read</span><span class="p">-</span><span class="n">only</span>
+<span class="n">on</span> <span class="n">each</span> <span class="n">distribution</span> <span class="n">server</span> <span class="n">after</span> <span class="n">the</span> <span class="k">package</span> <span class="n">has</span> <span class="n">been</span> <span class="n">distributed</span><span class="p">.</span> <span class="n">For</span>
+<span class="n">further</span> <span class="n">information</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Access</span> <span class="n">README</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="k">as</span> <span class="n">a</span> <span class="n">shared</span> <span class="n">application</span><span class="p">,</span> <span class="n">clients</span>
+<span class="n">configured</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">shared</span> <span class="n">copy</span> <span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">configured</span>
+<span class="k">to</span> <span class="n">use</span> <span class="n">separate</span> <span class="n">shared</span> <span class="n">copies</span> <span class="k">of</span> <span class="n">any</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Office</span> <span class="n">applications</span><span class="p">.</span> <span class="k">Do</span> <span class="k">not</span>
+<span class="n">assign</span> <span class="n">a</span> <span class="n">group</span> <span class="n">the</span> <span class="n">rights</span> <span class="k">to</span> <span class="n">use</span> <span class="n">both</span> <span class="n">a</span> <span class="n">shared</span> <span class="k">version</span> <span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Office</span><span class="p">,</span>
+<span class="k">and</span> <span class="n">shared</span> <span class="n">copies</span> <span class="k">of</span> <span class="n">any</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">individual</span> <span class="n">applications</span><span class="p">:</span>
+<span class="n">Microsoft</span> <span class="n">Word</span><span class="p">,</span> <span class="n">Microsoft</span> <span class="n">Excel</span><span class="p">,</span> <span class="n">Microsoft</span> <span class="n">PowerPoint</span><span class="p">,</span> <span class="k">and</span> <span class="n">Microsoft</span>
+<span class="n">Access</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="k">as</span> <span class="n">a</span> <span class="n">shared</span> <span class="n">application</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="k">set</span> <span class="n">the</span>
+<span class="n">program</span> <span class="n">items</span> <span class="n">for</span> <span class="n">the</span> <span class="n">MSAPPS</span> <span class="n">applets</span> <span class="n">within</span> <span class="n">the</span> <span class="n">Office</span> <span class="k">package</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span>
+<span class="n">Graph</span> <span class="n">AutoConvert</span> <span class="k">and</span> <span class="n">Microsoft</span> <span class="n">Query</span><span class="p">)</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">same</span> <span class="n">Drive</span> <span class="n">Mode</span> <span class="k">as</span> <span class="n">the</span>
+<span class="n">MSAPPS</span> <span class="k">package</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">if</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Query</span> <span class="n">program</span> <span class="n">item</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">MSAPPS</span> <span class="k">package</span> <span class="n">has</span> <span class="n">Drive</span> <span class="n">Mode</span><span class="p">:</span> <span class="n">Runs</span> <span class="k">With</span> <span class="n">UNC</span> <span class="n">Name</span><span class="p">,</span> <span class="k">then</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Query</span>
+<span class="n">program</span> <span class="n">item</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Office</span> <span class="k">package</span> <span class="n">must</span> <span class="n">also</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Drive</span> <span class="n">Mode</span><span class="p">:</span> <span class="n">Runs</span> <span class="k">With</span>
+<span class="n">UNC</span> <span class="n">Name</span> <span class="n">setting</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="k">if</span> <span class="n">you</span> <span class="n">choose</span> <span class="k">to</span> <span class="n">use</span> <span class="n">a</span> <span class="n">specified</span> <span class="n">drive</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span>
+<span class="n">specify</span> <span class="n">different</span> <span class="n">drives</span> <span class="n">for</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="n">program</span> <span class="n">items</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Office</span>
+<span class="k">package</span> <span class="k">and</span> <span class="n">the</span> <span class="n">MSAPPS</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="n">Microsoft</span> <span class="n">Word</span>
+<span class="n">When</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">Microsoft</span> <span class="n">Word</span> <span class="k">version</span> <span class="m">6.0</span> <span class="k">as</span> <span class="n">a</span> <span class="n">shared</span> <span class="n">application</span><span class="p">,</span> <span class="n">it</span> <span class="n">may</span>
+<span class="n">produce</span> <span class="n">an</span> <span class="n">error</span> <span class="n">when</span> <span class="n">users</span> <span class="k">of</span> <span class="n">clients</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">version</span> <span class="m">3.1</span> <span class="k">exit</span>
+<span class="n">the</span> <span class="n">application</span><span class="p">.</span> <span class="n">This</span> <span class="n">does</span> <span class="k">not</span> <span class="n">happen</span> <span class="n">on</span> <span class="n">other</span> <span class="n">types</span> <span class="k">of</span> <span class="n">clients</span><span class="p">.</span>
+
+<span class="n">Microsoft</span> <span class="n">Access</span>
+<span class="k">If</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">Microsoft</span> <span class="n">Office</span> <span class="k">version</span> <span class="m">4.3</span> <span class="k">or</span> <span class="n">Microsoft</span> <span class="n">Access</span> <span class="k">version</span> <span class="m">2.0</span>
+<span class="k">as</span> <span class="n">shared</span> <span class="n">applications</span><span class="p">,</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">the</span> <span class="n">application</span>
+<span class="n">allows</span> <span class="n">users</span> <span class="n">both</span> <span class="n">Read</span> <span class="k">and</span> <span class="n">Write</span> <span class="n">permissions</span><span class="p">.</span> <span class="n">This</span> <span class="n">allows</span> <span class="n">users</span> <span class="k">to</span> <span class="n">have</span> <span class="n">the</span>
+<span class="n">necessary</span> <span class="nb">write</span> <span class="n">access</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Access</span> <span class="n">file</span>
+<span class="n">ACS200</span><span class="p">\</span><span class="n">WORKDIR</span><span class="p">\</span><span class="nf">SYSTEM</span><span class="p">.</span><span class="n">MDA</span><span class="p">.</span> <span class="n">These</span> <span class="n">access</span> <span class="n">permissions</span> <span class="n">are</span> <span class="k">set</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">ACS200</span><span class="p">.</span><span class="n">PDF</span> <span class="k">and</span> <span class="n">OFP43_</span><span class="p">.</span><span class="n">PDF</span> <span class="n">files</span><span class="p">.</span> <span class="k">To</span> <span class="n">protect</span> <span class="n">other</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">directory</span> <span class="k">from</span> <span class="n">being</span> <span class="n">modified</span> <span class="n">by</span> <span class="n">clients</span><span class="p">,</span> <span class="k">set</span> <span class="n">the</span> <span class="n">permissions</span> <span class="k">to</span> <span class="nb">read</span><span class="p">-</span><span class="n">only</span>
+<span class="n">on</span> <span class="n">each</span> <span class="n">distribution</span> <span class="n">server</span> <span class="n">after</span> <span class="n">the</span> <span class="k">package</span> <span class="n">has</span> <span class="n">been</span> <span class="n">distributed</span><span class="p">.</span> <span class="n">For</span>
+<span class="n">further</span> <span class="n">information</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Access</span> <span class="n">README</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="n">Microsoft</span> <span class="n">Works</span>
+<span class="n">When</span> <span class="n">you</span> <span class="n">use</span> <span class="n">SMS</span> <span class="k">to</span> <span class="n">install</span> <span class="n">Microsoft</span> <span class="n">Works</span> <span class="n">on</span> <span class="n">a</span> <span class="n">server</span> <span class="k">as</span> <span class="n">a</span> <span class="n">shared</span>
+<span class="n">application</span><span class="p">,</span> <span class="n">users</span> <span class="n">will</span> <span class="k">not</span> <span class="n">be</span> <span class="n">able</span> <span class="k">to</span> <span class="n">access</span> <span class="n">the</span> <span class="n">Works</span> <span class="n">tutorial</span><span class="p">.</span>
+
+<span class="m">24.</span> <span class="n">Using</span> <span class="n">SMS</span> <span class="k">to</span> <span class="n">Install</span> <span class="n">Operating</span> <span class="n">Systems</span> <span class="n">on</span> <span class="n">Clients</span>
+<span class="n">When</span> <span class="n">using</span> <span class="n">SMS</span> <span class="k">to</span> <span class="n">installing</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">on</span> <span class="n">a</span> <span class="n">client</span> <span class="n">previously</span> <span class="n">running</span> <span class="n">MS</span><span class="p">-</span>
+<span class="n">DOS</span><span class="p">,</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">or</span> <span class="n">Windows</span> <span class="n">for</span> <span class="n">Workgroups</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">take</span> <span class="n">the</span> <span class="n">following</span>
+<span class="n">steps</span><span class="p">:</span>
+  <span class="n">a</span><span class="p">)</span> <span class="n">Copy</span> <span class="n">the</span> <span class="n">UNATTEND</span><span class="p">.</span><span class="n">SCR</span> <span class="n">file</span> <span class="k">from</span> <span class="n">the</span> <span class="n">LOGON</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">MSTEST</span> <span class="n">directory</span> <span class="k">to</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">source</span> <span class="n">directory</span><span class="p">.</span>
+  <span class="n">b</span><span class="p">)</span> <span class="n">Edit</span> <span class="n">the</span> <span class="n">UNATTEND</span><span class="p">.</span><span class="n">SCR</span> <span class="n">file</span> <span class="k">to</span> <span class="n">make</span> <span class="n">changes</span> <span class="k">as</span> <span class="n">needed</span> <span class="n">for</span> <span class="n">unattended</span>
+<span class="n">installation</span> <span class="k">of</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">.</span>
+  <span class="n">c</span><span class="p">)</span> <span class="k">If</span> <span class="n">the</span> <span class="n">target</span> <span class="n">clients</span> <span class="nf">run</span> <span class="n">just</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">,</span> <span class="k">and</span> <span class="k">not</span> <span class="n">Windows</span> <span class="k">or</span> <span class="n">Windows</span> <span class="n">for</span>
+<span class="n">Workgroups</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">also</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">DOSNTUPG</span><span class="p">.</span><span class="n">EXE</span><span class="p">,</span> <span class="n">NAMECHGR</span><span class="p">.</span><span class="n">EXE</span><span class="p">,</span> <span class="k">and</span>
+<span class="n">AIDDOSNT</span><span class="p">.</span><span class="n">BAT</span> <span class="n">files</span> <span class="k">from</span> <span class="n">LOGON</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">MSTEST</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="n">Use</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="n">Manager</span> <span class="k">to</span> <span class="n">add</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">name</span> <span class="k">of</span> <span class="n">the</span> <span class="n">computer</span>
+<span class="n">on</span> <span class="n">which</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">is</span> <span class="n">being</span> <span class="n">installed</span> <span class="k">to</span> <span class="n">the</span> <span class="n">domain</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">upgrade</span> <span class="n">a</span> <span class="n">group</span> <span class="k">of</span> <span class="n">computers</span> <span class="k">from</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">,</span> <span class="n">Windows</span><span class="p">,</span> <span class="k">or</span> <span class="n">Windows</span> <span class="n">for</span>
+<span class="n">Workgroups</span> <span class="k">to</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">with</span> <span class="n">a</span> <span class="n">single</span> <span class="n">job</span><span class="p">.</span> <span class="n">When</span> <span class="n">you</span> <span class="k">do</span> <span class="n">so</span><span class="p">,</span> <span class="n">all</span> <span class="n">computers</span>
+<span class="n">being</span> <span class="n">upgraded</span> <span class="n">will</span> <span class="n">use</span> <span class="n">a</span> <span class="n">single</span> <span class="n">UNATTEND</span><span class="p">.</span><span class="n">SCR</span> <span class="n">file</span><span class="p">.</span> <span class="n">UNATTEND</span><span class="p">.</span><span class="n">SCR</span> <span class="n">includes</span>
+<span class="n">data</span> <span class="n">about</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span> <span class="k">and</span> <span class="n">network</span> <span class="n">card</span> <span class="n">type</span> <span class="k">and</span> <span class="n">card</span> <span class="k">parameters</span><span class="p">,</span>
+<span class="n">so</span> <span class="k">if</span> <span class="n">you</span> <span class="n">want</span> <span class="n">the</span> <span class="n">setup</span> <span class="k">to</span> <span class="n">be</span> <span class="n">automated</span><span class="p">,</span> <span class="k">then</span> <span class="n">each</span> <span class="n">job</span> <span class="n">must</span> <span class="n">target</span> <span class="n">only</span>
+<span class="n">computers</span> <span class="k">with</span> <span class="n">identical</span> <span class="n">operating</span> <span class="n">systems</span> <span class="k">and</span> <span class="n">network</span> <span class="n">card</span> <span class="n">setup</span> <span class="n">data</span><span class="p">.</span> <span class="n">You</span>
+<span class="n">can</span> <span class="n">query</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">computer</span> <span class="n">database</span> <span class="k">to</span> <span class="n">find</span> <span class="n">computers</span> <span class="k">with</span> <span class="n">identical</span>
+<span class="n">configurations</span><span class="p">.</span> <span class="n">Computers</span> <span class="n">targeted</span> <span class="n">by</span> <span class="n">a</span> <span class="n">single</span> <span class="n">upgrade</span> <span class="n">job</span> <span class="n">must</span> <span class="n">also</span> <span class="n">all</span>
+<span class="n">join</span> <span class="n">the</span> <span class="n">same</span> <span class="n">domain</span> <span class="k">or</span> <span class="n">workgroup</span><span class="p">,</span> <span class="k">as</span> <span class="n">this</span> <span class="n">is</span> <span class="n">specified</span> <span class="k">in</span> <span class="n">UNATTEND</span><span class="p">.</span><span class="n">SCR</span> <span class="k">as</span>
+<span class="n">well</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">default</span> <span class="n">UNATTEND</span><span class="p">.</span><span class="n">SCR</span> <span class="n">file</span> <span class="n">documents</span> <span class="n">the</span> <span class="n">settings</span> <span class="n">you</span> <span class="n">need</span> <span class="k">to</span> <span class="n">make</span> <span class="k">in</span>
+<span class="n">this</span> <span class="n">file</span><span class="p">.</span> <span class="n">Examine</span> <span class="n">it</span> <span class="k">if</span> <span class="n">you</span> <span class="n">want</span> <span class="n">more</span> <span class="n">information</span><span class="p">.</span> <span class="n">It</span> <span class="n">is</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">LOGON</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">MSTEST</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">cannot</span> <span class="n">use</span> <span class="n">an</span> <span class="n">automated</span> <span class="n">setup</span> <span class="k">to</span> <span class="n">upgrade</span> <span class="n">a</span> <span class="n">NetWare</span> <span class="n">client</span> <span class="k">to</span> <span class="n">Windows</span>
+<span class="n">for</span> <span class="n">Workgroups</span><span class="p">.</span> <span class="n">These</span> <span class="n">upgrades</span> <span class="n">must</span> <span class="n">be</span> <span class="n">done</span> <span class="k">as</span> <span class="n">manual</span> <span class="n">setups</span><span class="p">.</span>
+
+<span class="n">On</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">networks</span><span class="p">,</span> <span class="n">when</span> <span class="n">performing</span> <span class="n">an</span> <span class="n">automated</span> <span class="n">upgrade</span> <span class="k">of</span> <span class="n">a</span> <span class="n">client</span> <span class="k">to</span>
+<span class="n">Windows</span> <span class="n">NT</span> <span class="k">version</span> <span class="m">3.5</span> <span class="k">from</span> <span class="n">a</span> <span class="n">previous</span> <span class="k">version</span> <span class="k">of</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span>
+<span class="n">specify</span> <span class="n">an</span> <span class="n">upgrade</span> <span class="n">script</span><span class="p">.</span> <span class="k">Do</span> <span class="n">this</span> <span class="n">by</span> <span class="n">modifying</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">for</span> <span class="n">the</span>
+<span class="s2">"Automated Upgrade for (all platforms) NT Client."</span>  <span class="k">In</span> <span class="n">this</span> <span class="nf">command</span> <span class="n">line</span><span class="p">,</span>
+<span class="n">specify</span> <span class="n">the</span> <span class="n">upgrade</span> <span class="n">script</span> <span class="n">by</span> <span class="n">adding</span> <span class="n">a</span> <span class="n">colon</span> <span class="k">and</span> <span class="n">the</span> <span class="n">name</span> <span class="k">of</span> <span class="n">the</span> <span class="n">script</span> <span class="k">to</span>
+<span class="n">the</span> <span class="p">/</span><span class="n">U</span> <span class="n">option</span> <span class="n">at</span> <span class="n">the</span> <span class="k">end</span> <span class="k">of</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">line</span><span class="p">.</span> <span class="n">The</span> <span class="n">following</span> <span class="n">is</span> <span class="n">an</span> <span class="n">example</span>
+<span class="k">of</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">after</span> <span class="n">you</span> <span class="n">make</span> <span class="n">these</span> <span class="n">changes</span><span class="p">:</span>
+  <span class="n">NTENCAP</span> <span class="p">/</span><span class="n">NTW</span> <span class="n">WINNT32</span><span class="p">.</span><span class="n">EXE</span> <span class="p">/</span><span class="n">U</span><span class="p">:</span><span class="n">NTUPGRAD</span><span class="p">.</span><span class="n">SCR</span>
+
+<span class="n">The</span> <span class="n">upgrade</span> <span class="n">script</span> <span class="n">you</span> <span class="n">specify</span> <span class="n">must</span> <span class="k">include</span> <span class="n">the</span> <span class="c1">!UpgradeEnableDhcp setting,
+</span><span class="k">with</span> <span class="n">either</span> <span class="n">yes</span> <span class="k">or</span> <span class="n">no</span> <span class="k">as</span> <span class="n">the</span> <span class="n">value</span><span class="p">.</span> <span class="n">This</span> <span class="n">setting</span> <span class="n">indicates</span> <span class="n">whether</span> <span class="n">this</span>
+<span class="n">client</span> <span class="n">will</span> <span class="n">have</span> <span class="n">its</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">address</span> <span class="n">dynamically</span> <span class="n">allocated</span> <span class="n">by</span> <span class="n">DHCP</span><span class="p">.</span> <span class="n">The</span>
+<span class="n">NTUPGRAD</span><span class="p">.</span><span class="n">SCR</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="n">LOGON</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">MSTEST</span> <span class="n">is</span> <span class="n">an</span> <span class="n">example</span> <span class="n">script</span> <span class="n">file</span> <span class="n">you</span> <span class="n">can</span>
+<span class="n">use</span> <span class="n">for</span> <span class="n">this</span><span class="p">.</span>
+
+<span class="m">25.</span> <span class="n">Remote</span> <span class="n">Troubleshooting</span> <span class="n">Utilities</span>
+<span class="n">The</span> <span class="n">Remote</span> <span class="n">Chat</span> <span class="n">utility</span> <span class="n">is</span> <span class="k">not</span> <span class="n">included</span> <span class="k">in</span> <span class="n">this</span> <span class="k">version</span> <span class="k">of</span> <span class="n">SMS</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">remote</span> <span class="n">troubleshooting</span> <span class="k">of</span> <span class="n">NetWare</span> <span class="n">clients</span> <span class="n">using</span> <span class="n">IPX</span><span class="p">/</span><span class="n">SPX</span> <span class="k">and</span> <span class="n">running</span>
+<span class="n">Windows</span> <span class="m">3.</span><span class="n">x</span><span class="p">,</span> <span class="n">the</span> <span class="n">client</span>
+<span class="n">must</span> <span class="n">have</span> <span class="n">the</span> <span class="n">following</span> <span class="n">files</span><span class="p">:</span>
+<span class="n">NWNETAPI</span><span class="p">.</span><span class="n">DLL</span>
+<span class="n">NWCALLS</span><span class="p">.</span><span class="n">DLL</span>
+<span class="n">NWIPXSPX</span><span class="p">.</span><span class="n">DLL</span>
+
+<span class="n">These</span> <span class="n">files</span> <span class="n">are</span> <span class="n">normally</span> <span class="n">provided</span> <span class="k">with</span> <span class="n">your</span> <span class="n">NetWare</span> <span class="n">client</span> <span class="n">software</span><span class="p">.</span> <span class="n">They</span>
+<span class="n">are</span> <span class="n">also</span> <span class="n">available</span> <span class="k">from</span> <span class="n">Novell</span> <span class="k">or</span> <span class="k">public</span> <span class="n">forums</span> <span class="n">such</span> <span class="k">as</span> <span class="n">CompuServe</span><span class="p">.</span>
+
+<span class="n">Without</span> <span class="n">these</span> <span class="n">files</span><span class="p">,</span> <span class="n">NetWare</span> <span class="n">clients</span> <span class="n">running</span> <span class="n">Windows</span> <span class="m">3.</span><span class="n">x</span> <span class="n">will</span> <span class="n">display</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">message</span> <span class="n">when</span> <span class="n">the</span> <span class="n">user</span> <span class="n">starts</span> <span class="n">Remote</span> <span class="n">Control</span> <span class="k">from</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Client</span>
+<span class="n">program</span> <span class="n">group</span><span class="p">:</span>
+<span class="s2">"Remote Control Agent cannot load idis_ipx.dll."</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">see</span> <span class="n">this</span> <span class="n">message</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">ensure</span> <span class="n">that</span> <span class="n">the</span> <span class="n">listed</span> <span class="n">files</span> <span class="n">are</span>
+<span class="n">installed</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">NetWare</span> <span class="n">clients</span> <span class="n">running</span> <span class="n">only</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">do</span>
+<span class="k">not</span> <span class="n">require</span> <span class="n">these</span> <span class="n">three</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="n">Note</span> <span class="n">that</span> <span class="n">NWCALLS</span><span class="p">.</span><span class="n">DLL</span> <span class="k">and</span> <span class="n">NWIPXSPX</span><span class="p">.</span><span class="n">DLL</span> <span class="n">are</span> <span class="n">normally</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">a</span> <span class="n">NetWare</span>
+<span class="n">client</span> <span class="n">running</span> <span class="n">Windows</span> <span class="m">3.</span><span class="n">x</span><span class="p">.</span> <span class="n">Most</span> <span class="n">likely</span><span class="p">,</span> <span class="n">the</span> <span class="n">NWNETAPI</span><span class="p">.</span><span class="n">DLL</span> <span class="n">will</span> <span class="n">be</span> <span class="n">missing</span>
+<span class="k">from</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">easily</span> <span class="n">use</span> <span class="n">SMS</span> <span class="k">to</span> <span class="n">install</span> <span class="n">the</span> <span class="n">NWNETAPI</span><span class="p">.</span><span class="n">DLL</span> <span class="n">file</span> <span class="n">on</span> <span class="n">NetWare</span> <span class="n">clients</span><span class="p">.</span>
+<span class="n">Simply</span> <span class="n">place</span> <span class="n">the</span> <span class="n">the</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">MAINCFG</span><span class="p">.</span><span class="n">BOX</span><span class="p">\</span><span class="n">CLIENT</span><span class="p">.</span><span class="n">SRC</span><span class="p">\</span><span class="n">X86</span><span class="p">.</span><span class="n">BIN</span>
+<span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">.</span> <span class="n">The</span> <span class="n">Maintenance</span> <span class="n">Manager</span> <span class="n">will</span> <span class="n">replicate</span> <span class="n">the</span>
+<span class="n">file</span> <span class="k">to</span> <span class="n">all</span> <span class="n">NetWare</span> <span class="n">logon</span> <span class="n">servers</span><span class="p">.</span> <span class="n">The</span> <span class="n">file</span> <span class="n">will</span> <span class="n">be</span> <span class="n">installed</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">MS</span><span class="p">\</span><span class="n">SMS</span><span class="p">\</span><span class="n">BIN</span> <span class="n">directory</span> <span class="k">of</span> <span class="n">all</span> <span class="n">NetWare</span> <span class="n">clients</span> <span class="n">when</span> <span class="n">users</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">Client</span> <span class="n">Setup</span>
+<span class="n">program</span> <span class="p">(</span><span class="n">either</span> <span class="n">manually</span> <span class="k">or</span> <span class="n">through</span> <span class="n">their</span> <span class="n">login</span> <span class="n">script</span><span class="p">).</span>
+
+<span class="n">When</span> <span class="n">mapping</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">addresses</span> <span class="k">in</span> <span class="n">the</span> <span class="n">LMHOSTS</span> <span class="n">file</span> <span class="n">so</span> <span class="n">that</span> <span class="n">you</span> <span class="n">can</span> <span class="n">use</span>
+<span class="n">remote</span> <span class="n">troubleshooting</span> <span class="n">utilities</span> <span class="n">on</span> <span class="n">clients</span> <span class="n">over</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span> <span class="n">WAN</span> <span class="n">links</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">syntax</span> <span class="n">is</span> <span class="n">correct</span><span class="p">.</span>
+
+<span class="n">On</span> <span class="n">the</span> <span class="n">server</span><span class="p">,</span> <span class="n">each</span> <span class="n">line</span> <span class="n">should</span> <span class="n">start</span> <span class="k">with</span> <span class="n">a</span> <span class="n">client</span><span class="s1">'s IP address, followed
+by a space and a double-quotation mark. Immediately after the quotation
+mark should be the the client'</span><span class="n">s</span> <span class="n">computer</span> <span class="n">name</span><span class="p">.</span> <span class="n">The</span> <span class="m">16</span><span class="n">th</span> <span class="n">character</span> <span class="n">after</span> <span class="n">the</span>
+<span class="n">start</span> <span class="k">of</span> <span class="n">the</span> <span class="n">client</span><span class="s1">'s computer name should be "C" to enable
+remote control, or "E" to enable File Transfer. Follow the C or E with
+another quotation mark. Following is an example to enable remote control of
+a client.
+
+11.103.38.100  "myclient       C"
+
+On the client, each line should start with a server'</span><span class="n">s</span> <span class="n">IP</span> <span class="n">address</span><span class="p">,</span> <span class="n">followed</span>
+<span class="n">by</span> <span class="n">a</span> <span class="n">space</span> <span class="k">and</span> <span class="n">a</span> <span class="n">double</span><span class="p">-</span><span class="n">quotation</span> <span class="n">mark</span><span class="p">.</span> <span class="n">Immediately</span> <span class="n">after</span> <span class="n">the</span> <span class="n">quotation</span>
+<span class="n">mark</span> <span class="n">should</span> <span class="n">be</span> <span class="n">the</span> <span class="n">the</span> <span class="n">server</span><span class="s1">'s computer name. The 16th character after the
+start of the server'</span><span class="n">s</span> <span class="n">computer</span> <span class="n">name</span> <span class="n">should</span> <span class="n">be</span> <span class="s2">"D"</span> <span class="k">to</span> <span class="n">enable</span>
+<span class="n">remote</span> <span class="n">control</span><span class="p">,</span> <span class="k">or</span> <span class="n">an</span> <span class="s2">"F"</span> <span class="k">to</span> <span class="n">enable</span> <span class="n">File</span> <span class="n">Transfer</span><span class="p">.</span> <span class="n">Follow</span> <span class="n">the</span> <span class="n">D</span> <span class="k">or</span> <span class="n">F</span> <span class="k">with</span>
+<span class="n">another</span> <span class="n">quotation</span> <span class="n">mark</span><span class="p">.</span>
+
+<span class="n">These</span> <span class="n">instructions</span> <span class="n">replace</span> <span class="n">the</span> <span class="n">instructions</span> <span class="n">on</span> <span class="n">page</span> <span class="m">393</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Microsoft</span>
+<span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="n">Administrator</span><span class="s1">'s Guide.
+
+For remote troubleshooting of Windows for Workgroups clients using the
+TCP/IP protocol, the client must be running the Microsoft TCP/IP-32 version
+of TCP/IP. Previous versions of TCP/IP shipped with Windows for Workgroups
+are not supported by SMS for remote troubleshooting.
+
+For remote troubleshooting of clients running MS-DOS that use LAN Manager
+version 2.2c client software and the TCP/IP protocol, the client must be
+running the latest version of the TCP/IP protocol, provided with LAN
+Manager version 2.2c. Previous versions of TCP/IP shipped with
+previous versions of LAN Manager are not supported by SMS for remote
+troubleshooting.
+
+If you reconfigure a client, changing the Lana number of the protocol used
+for Remote Control and other remote troubleshooting utilities on the
+client, you must specify the new Lana number the
+next time the client runs WUSER. For example, if the client previously used
+Lana number 2 for Remote Control, and you reconfigure the client so that
+the protocol previously represented by Lana
+number 2 is Lana number 1, you should specify wuser /l1 the next time you
+start WUSER. Otherwise, you will see the error message "Unable to get
+workstation name. Used Lana:2"
+
+When you are using Remote Control on a client, while in the Quick Viewer
+window you may start seeing that the keys you press are preceded with a ^
+on screen. (For example, if you press the "k" key a "^K" appears in the
+Quick Viewer screen.) This also prevents the ENTER key from working in the
+Quick Viewer window. To correct this problem, press the CTRL key once. You
+can prevent this problem from happening by not using CTRL+ESC to use the
+Task List while you have a Quick Viewer window open.
+
+26. Network Monitor
+Network Monitor Hardware Compatibility
+
+The following network cards have been tested and have passed compatibility
+testing with Microsoft Network Monitor.
+
+We have not tested every computer and/or device in all possible
+configurations.
+
+X86     MIPS    Alpha   Network Adapter
+X       X       X       3Com(r) 3C503 EtherLink II(r) (coax and TP)
+X       X       X       3Com 3C503/16 EtherLink(r) 11/16 (coax and TP)
+X       X               3Com 3C507 EtherLink 16 (coax and TP)
+X       X       X       3Com 3C509 EtherLink III Parallel Tasking Adapter -
+                       - ISA (coax, TP and combo)
+X                       3Com 3C523 EtherLink/MC (coax and TP)
+X                       3Com 3C529 EtherLink III Parallel Tasking Adapter -
+                       - MCA (coax and TP)
+X       X       X       3Com 3C579 EtherLink Parallel Tasking Adapter --
+                       EISA (coax and TP)
+X                       3Com 3C770 FDDILink-F for Optical, UTP and STP
+X       X       X       COMPAQ(r) NetFlex-2 ENET -- TR Controller
+X       X       X       COMPAQ NetFlex-2 TR Controller
+X       X       X       COMPAQ NetFlex-2 DualPort ENET Controller
+X       X       X       DEC(TM) DE201 EtherWORKS Turbo/TP
+X                       Madge Smart 16/4 EISA Ringnode
+       X               National Semiconductor DP83932 (SONIC) Motherboard
+                       Ethernet Controller on MIPS(r) ARC/R4000 systems
+X       X       X       Novell/Eagle Technology NE2000
+X       X       X       Novell/Eagle Technology NE3200
+       X               Sonic Ethernet Card
+X                       Thomas-Conrad TC4046 MCA Token Ring Adapter
+X                       Ungermann-Bass(r) NIUps/EOTP
+X                       Xircom Corporate Series CreditCard Ethernet Adapter
+X                       Xircom Pocket Ethernet III Adapter
+
+Technical Notes
+The Windows NT Driver Library is provided on the Windows NT CD-ROM in the
+DRVLIB directory, as well as several locations for electronic transmission.
+
+Please see the section at the end of this document for instructions on
+downloading and accessing Windows NT Driver Library drivers.
+
+Network Monitor can be used on Windows NT Server or Windows NT Workstation
+version 3.1 (Service Pack 2 applied) to trace an established RAS
+conversation. Once the Microsoft Remote Access Service
+(RAS) is loaded on a computer running Windows NT Server version 3.1, typing
+net config rdr from the MS-DOS prompt will show RAS bindings, depending on
+what protocols are loaded.  For example, if NetBEUI is loaded and the RAS
+server is set for Dial in and Out, and there is only one computer
+running Windows NT version 3.1, the RAS binding could look like:
+
+nbf_RasHub04 (524153480001).
+
+Note what this "RasHub" binding is, because it will have to be added
+manually in the Windows NT Registry before you can use Network Monitor to
+capture over a RAS connection.
+
+The following example lists linkages to add for the above RasHub04 example
+to an 3Com Etherlink II network card.
+
+Under:
+HKEY_LOCAL_MACHINE
+
+Key Name:
+SYSTEM\CurrentControlSet\Services\BH\Linkages
+
+Double-click the existing lines, position the cursor after the existing
+path, and press ENTER so that you are positioned on the next line down (do
+not overwrite what is there already).
+
+Bind:
+\Device\ELNK31
+\Device\RasHub04
+
+Export:
+\Device\bh_ELNK31
+\Device\bh_RasHub04
+
+Route:
+"ELNK3" "ELNK31"
+"RasHub"  "RasHub04"
+
+When you restart Network Monitor, and then choose the Networks option from
+the Capture menu, an additional Local Network option appears in the Select
+Capture Network dialog box. The Current Address listing for this option
+matches the number that is displayed when you run the NET CONFIG RDR
+command from the MS-DOS prompt. This is the network to select to trace the
+established RAS connection.
+
+For Windows for Workgroups Clients
+In PROTOCOL.INI under the [NETMON] section, any current entry in the
+Bindings section should be replaced by the ASYMAC driver/label.
+
+For example, for a 3Com Etherlink II, to change the Network Monitor binding
+from Etherlink II to the RAS connection, the Bindings entry in PROTOCOL.INI
+should be modified as follows:
+
+Bindings=MS$ELNKII
+should be changed to:
+Bindings=ASYMAC
+
+The following is the contents of a sample PROTOCOL.INI file on a Windows
+for Workgroups client:
+
+[network.setup]
+version=0x3110
+netcard=ms$elnkii,1,MS$ELNKII,2
+netcard=asymac,1,ASYMAC,2
+transport=ms$netbeui,NETBEUI
+transport=tcpip-32k,MSTCP32
+lana0=ms$elnkii,1,ms$netbeui
+lana1=asymac,1,ms$netbeui
+lana2=ms$elnkii,1,tcpip-32k
+
+[MS$ELNKII]
+INTERRUPT=5
+IOADDRESS=0x300
+TRANSCEIVER=external
+
+[ELNKII]
+Adapters=MS$ELNKII
+
+[NETMON]
+BINDINGS=MS$ELNKII,ASYMAC
+DRIVERNAME=NM$
+FORWARDFRAME=Yes
+BUFFERS=4
+USERNAME="mohak"
+COMPUTERNAME="MOHAKSTA2"
+
+[NETBEUI]
+BINDINGS=MS$ELNKII,ASYMAC
+LANABASE=0
+NETBIOSTIMEOUT=9000
+SESSIONS=10
+NCBS=32
+
+[ASYMAC]
+Ports=1
+MaxFrameSize=1514
+CompressSend=1
+CompressRecv=1
+FramesPerPort=2
+XonXoff=0
+CompressBCast=0
+
+[RASMAC]
+Adapters=ASYMAC
+
+[MSTCP32]
+BINDINGS=MS$ELNKII
+LANABASE=2
+
+[PROTMAN]
+PRIORITY=NETMON,
+
+Running Network Monitor on Token Ring Networks
+When capturing on token ring networks, the network adapter card on the
+computer running Network Monitor may need to have a maximum frame size set
+to the largest possible token ring frame (17K). Otherwise, frames exceeding
+this maximum size will be rejected by the network adapter card because
+the frame will not fit into the card'</span><span class="n">s</span> <span class="n">receive</span> <span class="n">buffers</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">the</span> <span class="n">NetFlexTM</span> <span class="n">network</span> <span class="n">adapter</span> <span class="n">card</span> <span class="n">has</span> <span class="n">a</span> <span class="n">default</span> <span class="n">maximum</span> <span class="n">frame</span>
+<span class="n">size</span> <span class="k">of</span> <span class="m">4500</span> <span class="n">bytes</span> <span class="k">and</span> <span class="n">will</span> <span class="n">drop</span> <span class="n">any</span> <span class="n">frame</span> <span class="n">that</span> <span class="n">exceeds</span> <span class="n">this</span> <span class="n">size</span><span class="p">.</span> <span class="k">To</span> <span class="n">a</span>
+<span class="n">void</span> <span class="n">losing</span> <span class="n">frames</span><span class="p">,</span> <span class="k">if</span> <span class="n">your</span> <span class="n">network</span> <span class="n">supports</span> <span class="n">frames</span> <span class="k">of</span> <span class="n">up</span> <span class="k">to</span> <span class="m">17</span><span class="n">K</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">maximum</span> <span class="n">frame</span> <span class="n">size</span> <span class="k">of</span> <span class="n">your</span> <span class="n">network</span> <span class="n">adapter</span> <span class="n">card</span> <span class="n">should</span> <span class="n">be</span> <span class="n">increased</span> <span class="k">to</span>
+<span class="n">this</span> <span class="n">size</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">install</span> <span class="n">Network</span> <span class="n">Monitor</span> <span class="n">independent</span> <span class="k">of</span> <span class="n">SMS</span> <span class="n">setup</span><span class="p">,</span> <span class="k">and</span> <span class="n">your</span> <span class="n">are</span>
+<span class="n">connected</span> <span class="k">to</span> <span class="n">a</span> <span class="n">token</span> <span class="n">ring</span> <span class="n">network</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">need</span> <span class="k">to</span> <span class="n">copy</span> <span class="n">a</span> <span class="n">new</span> <span class="n">NDIS</span><span class="p">.</span><span class="n">SYS</span>
+<span class="n">file</span><span class="p">.</span> <span class="n">This</span> <span class="n">file</span> <span class="n">can</span> <span class="n">be</span> <span class="n">found</span> <span class="k">in</span> <span class="n">the</span> <span class="n">WFW</span><span class="p">\</span><span class="n">DISK1</span><span class="p">\</span><span class="n">DRVR</span><span class="p">.</span><span class="n">NT</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span> <span class="n">Using</span> <span class="n">a</span> <span class="n">new</span> <span class="k">version</span> <span class="k">of</span> <span class="n">this</span> <span class="n">file</span> <span class="n">enables</span> <span class="n">token</span> <span class="n">ring</span> <span class="n">network</span> <span class="n">adapter</span>
+<span class="n">cards</span> <span class="k">to</span> <span class="nb">reset</span> <span class="n">properly</span> <span class="n">after</span> <span class="n">experiencing</span> <span class="n">a</span> <span class="n">Ring</span> <span class="n">Error</span> <span class="k">while</span> <span class="n">capturing</span><span class="p">.</span>
+<span class="n">Failure</span> <span class="k">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">correct</span> <span class="n">driver</span> <span class="n">can</span> <span class="n">cause</span> <span class="n">the</span> <span class="nf">system</span> <span class="k">to</span> <span class="n">hang</span><span class="p">.</span>
+
+<span class="n">Note</span> <span class="n">that</span> <span class="n">modifying</span> <span class="n">the</span> <span class="n">network</span> <span class="n">adapter</span> <span class="n">card</span><span class="s1">'s maximum frame size setting
+decreases the number of receive buffers available, and on a busy network,
+frames may be dropped due to a lack of receive buffers. If your network
+adapter card supports increasing the number of receive buffers, do this to
+minimize the number of frames that are dropped because of increased buffer
+size.
+
+The File Open and File Save dialog boxes allow you to associate comments
+with a capture file or to display such comments. If a UNC path (for example
+\\MYCOMP\MYFILE) is displayed in these dialog boxes, an installation of
+Network Monitor running on a Windows for Workgroups computer will not
+display comments associated with the displayed filename. If you display the
+drive letter associated with the UNC path, the comments are available. In
+addition, on computers running Windows NT, the comments are displayed.
+
+On some Windows for Workgroups systems, because of memory resources used by
+Network Monitor, you may encounter problems running Network Monitor and
+other Windows applications at the same time. Therefore, you should always
+close all other Windows applications before running Network Monitor on a
+client running Windows for Workgroups.
+
+In addition, after using Network Monitor to capture on a computer running
+Windows for Workgroups, you may be unable to open other Windows
+applications. To remedy this, save the current capture, and then exit
+Network Monitor.
+
+Running Network Monitor on Clients Running Windows for Workgroups The beta
+3 release of Network Monitor used 3-character names to identify TCP flags
+in the Summary pane. In the released product, these 3-character names have
+been replaced by the first character in the flag name. The following table
+shows how the three character names map to the one-character names used in
+the released product:
+
+Flag                    Which was               Is now
+Urgent                  URG                     U
+Acknowledgment  ACK                     A
+Push                    PSH                     P
+Reset                   RES                     R
+Synchronize             SYN                     S
+Final                   FIN                     F
+
+Make sure that all adapter memory is excluded when using EMM386 on a
+Windows for Workgroups system. Failure to exclude this memory or other
+misconfigurations may cause Windows for Workgroups to hang. See the MS-DOS
+documentation on how to configure your EMM386 correctly.
+
+While two network interface cards cannot be used for capturing in a Windows
+for Workgroups system, you can alter which card is used for capturing. To
+change which card will be used for capturing, alter the BINDINGS= line in
+the [NETMON] section of the PROTOCOL.INI file to reflect the card to which
+you want Network Monitor to bind.
+
+README.TXT, a version of Network Monitor Release Notes more current than
+those contained in this Help file can be found in the Windows for
+Workgroups subtree on the SMS CD-ROM.
+
+27. Automatically Configure Workstation Logon Scripts
+In Windows NT and LAN Manager domains, the Automatically Configure
+Workstation Logon Scripts option modifies only the logon scripts for user
+accounts that have no existing logon script or have a logon script with a
+file extension. For example, if a user has a logon script specified as
+USER.BAT, the Site Configuration Manager will modify the script to include
+the SMSLS batch file. If a user has logon script as USER (instead of
+USER.BAT), Site Configuration Manager will not modify the script. If you
+want to set up a user account so that the SMSLS batch file is not added to
+it, you can specify a logon script with no extension for that user.
+
+28. Diskless Clients
+SMS does not support diskless clients nor computers that do not have a C
+drive.
+
+29. Backup and Restoration
+On page 682 of the SMS Administrator'</span><span class="n">s</span> <span class="n">Guide</span><span class="p">,</span> <span class="n">it</span> <span class="n">says</span> <span class="n">that</span> <span class="n">you</span> <span class="n">must</span> <span class="n">back</span> <span class="n">up</span>
+<span class="n">the</span> <span class="n">SMS</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">--</span><span class="n">this</span> <span class="n">should</span> <span class="n">say</span> <span class="n">that</span> <span class="n">you</span> <span class="n">must</span> <span class="n">back</span> <span class="n">up</span>
+<span class="n">the</span> <span class="n">SMS</span> <span class="n">root</span> <span class="n">directory</span> <span class="k">and</span> <span class="n">its</span> <span class="n">entire</span> <span class="n">contents</span> <span class="p">(</span><span class="n">all</span> <span class="n">subdirectories</span> <span class="k">and</span>
+<span class="n">files</span><span class="p">).</span>
+
+<span class="m">30.</span> <span class="n">Miscellaneous</span> <span class="n">Notes</span>
+<span class="n">SMS</span> <span class="n">requires</span> <span class="n">that</span> <span class="n">site</span> <span class="n">servers</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">final</span> <span class="n">release</span> <span class="k">of</span> <span class="k">version</span> <span class="m">3.5</span> <span class="k">of</span>
+<span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span><span class="p">.</span> <span class="n">Also</span><span class="p">,</span> <span class="n">SMS</span> <span class="n">databases</span> <span class="n">must</span> <span class="n">be</span> <span class="n">on</span> <span class="n">servers</span> <span class="n">running</span>
+<span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.5</span> <span class="k">and</span> <span class="n">Microsoft</span> <span class="n">SQL</span> <span class="n">Server</span> <span class="m">4.21</span><span class="n">A</span><span class="p">.</span>
+
+<span class="k">Do</span> <span class="k">not</span> <span class="n">put</span> <span class="n">custom</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">platform</span><span class="p">.</span><span class="n">BIN</span> <span class="n">directory</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span> <span class="n">the</span>
+<span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">X86</span><span class="p">.</span><span class="n">BIN</span> <span class="n">directory</span><span class="p">).</span> <span class="n">This</span> <span class="n">directory</span> <span class="n">is</span> <span class="n">purged</span> <span class="n">every</span> <span class="n">time</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">software</span> <span class="n">is</span> <span class="n">upgraded</span><span class="p">.</span>
+
+<span class="n">Upgrades</span> <span class="k">of</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">software</span> <span class="n">on</span> <span class="n">client</span> <span class="n">computers</span> <span class="n">will</span> <span class="n">fail</span> <span class="k">if</span> <span class="n">any</span> <span class="n">SMS</span>
+<span class="n">software</span> <span class="n">is</span> <span class="n">running</span> <span class="n">at</span> <span class="n">the</span> <span class="n">time</span> <span class="k">of</span> <span class="n">upgrade</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">put</span> <span class="n">any</span> <span class="n">SMS</span> <span class="n">icons</span> <span class="p">(</span><span class="n">such</span>
+<span class="k">as</span> <span class="n">WUSER</span><span class="p">.</span><span class="n">EXE</span><span class="p">)</span> <span class="k">in</span> <span class="n">a</span> <span class="n">client</span><span class="s1">'s Startup group, you must stop these programs
+before upgrading the client.
+
+For clients with dual-boot systems, you must choose one of the operating
+systems on which to run SMS. SMS does not support the installation of SMS
+on both operating systems so that the user can switch back and forth
+repeatedly. This is because SMS must know which operating system is run by
+each client computer, so that the correct jobs can be sent to each client.
+If you have SMS installed on a dual-boot computer and want to change which
+operating system is supported by SMS, run UPGRADE.BAT on the operating
+system you want to switch to.
+
+31. Additional Online Documentation
+You can install an online version of the Microsoft Systems Management
+Server Administrator'</span><span class="n">s</span> <span class="n">Guide</span> <span class="n">using</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Setup</span> <span class="n">program</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">install</span>
+<span class="n">the</span> <span class="n">online</span> <span class="k">version</span> <span class="n">when</span> <span class="n">you</span> <span class="n">first</span> <span class="n">install</span> <span class="n">SMS</span><span class="p">.</span> <span class="k">Or</span> <span class="n">you</span> <span class="n">can</span> <span class="nf">run</span> <span class="n">SMS</span> <span class="n">Setup</span>
+<span class="n">after</span> <span class="n">SMS</span> <span class="n">has</span> <span class="n">been</span> <span class="n">installed</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Add</span> <span class="n">Components</span> <span class="n">option</span><span class="p">.</span>
+
+<span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">Help</span> <span class="p">(</span><span class="n">SMS</span><span class="p">.</span><span class="n">HLP</span><span class="p">)</span> <span class="n">provides</span> <span class="n">documentation</span>
+<span class="n">for</span> <span class="n">additional</span> <span class="n">topics</span> <span class="n">that</span> <span class="n">are</span> <span class="k">not</span> <span class="n">covered</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Systems</span>
+<span class="n">Management</span> <span class="n">Server</span> <span class="n">Administrator</span><span class="s1">'s Guide. SMS Help contains these additional
+topics:
+
+Error Message Help for Program Group Control This topic discusses the error
+messages generated by Program Group Control and possible causes and
+solutions for those errors.
+
+32. SMS Administrator'</span><span class="n">s</span> <span class="n">Guide</span> <span class="n">Errata</span> <span class="n">The</span> <span class="n">Helpdesk</span> <span class="n">user</span> <span class="n">rights</span> <span class="n">template</span>
+<span class="n">listed</span> <span class="k">in</span> <span class="n">Table</span> <span class="m">4.2</span> <span class="n">on</span> <span class="n">page</span> <span class="m">137</span> <span class="n">is</span> <span class="k">not</span> <span class="n">included</span> <span class="k">in</span> <span class="n">this</span> <span class="k">version</span> <span class="k">of</span> <span class="n">SMS</span><span class="p">.</span>
+
+<span class="n">On</span> <span class="n">page</span> <span class="m">188</span><span class="p">,</span> <span class="n">text</span> <span class="n">states</span> <span class="n">that</span> <span class="n">you</span> <span class="n">can</span> <span class="n">move</span> <span class="n">Outboxes</span> <span class="k">to</span> <span class="n">a</span> <span class="n">different</span> <span class="n">drive</span> <span class="k">or</span>
+<span class="n">server</span><span class="p">.</span> <span class="n">You</span> <span class="n">cannot</span> <span class="n">move</span> <span class="n">Outboxes</span> <span class="k">to</span> <span class="n">another</span> <span class="n">drive</span> <span class="k">or</span> <span class="n">server</span> <span class="k">and</span> <span class="n">you</span> <span class="n">cannot</span>
+<span class="n">rename</span> <span class="n">them</span><span class="p">.</span>
+
+<span class="n">Page</span> <span class="m">218</span> <span class="n">incorrectly</span> <span class="n">states</span> <span class="n">the</span> <span class="n">location</span> <span class="k">of</span> <span class="n">the</span> <span class="n">FILETOKN</span><span class="p">.</span><span class="n">EXE</span> <span class="n">utility</span><span class="p">.</span> <span class="n">This</span>
+<span class="n">file</span> <span class="n">is</span> <span class="n">actually</span> <span class="n">located</span> <span class="k">in</span> <span class="n">the</span> <span class="n">platform</span><span class="p">.</span><span class="n">BIN</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="n">Page</span> <span class="m">218</span> <span class="k">of</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">incorrectly</span> <span class="n">states</span> <span class="n">where</span> <span class="n">the</span> <span class="n">RUL2CFG</span><span class="p">.</span><span class="n">BAT</span> <span class="n">file</span>
+<span class="n">puts</span> <span class="n">the</span> <span class="p">.</span><span class="n">CFG</span> <span class="n">files</span> <span class="n">it</span> <span class="n">creates</span><span class="p">.</span> <span class="n">It</span> <span class="n">actually</span> <span class="n">puts</span> <span class="n">these</span> <span class="n">files</span> <span class="n">into</span> <span class="n">the</span> <span class="n">the</span>
+<span class="n">platform</span><span class="p">.</span><span class="n">BIN</span> <span class="n">directories</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span> <span class="n">X86</span><span class="p">.</span><span class="n">BIN</span><span class="p">).</span>
+
+<span class="n">Page</span> <span class="m">219</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Administrator</span><span class="s1">'s Guide states incorrectly which directory
+should be the package source directory for Audit 1.00. This package source
+directory should actually be PRIMSITE.SRV\AUDIT\PACKAGE.
+
+The instructions for modifying the LMHOSTS file (page 393) to enable the
+use of remote troubleshooting utilities on clients over TCP/IP WAN links
+are incorrect. The correct instructions are as follows:
+
+On the server, each line should start with a client'</span><span class="n">s</span> <span class="n">IP</span> <span class="n">address</span><span class="p">,</span> <span class="n">followed</span>
+<span class="n">by</span> <span class="n">the</span> <span class="n">client</span><span class="s1">'s computer name. The 16th character after the start of the
+client'</span><span class="n">s</span> <span class="n">computer</span> <span class="n">name</span> <span class="n">should</span> <span class="n">be</span> <span class="s2">"C"</span> <span class="k">to</span> <span class="n">enable</span> <span class="n">remote</span> <span class="n">control</span><span class="p">,</span> <span class="k">or</span> <span class="n">E</span> <span class="k">to</span>
+<span class="n">enable</span> <span class="n">File</span> <span class="n">Transfer</span><span class="p">.</span>
+
+<span class="n">On</span> <span class="n">the</span> <span class="n">client</span><span class="p">,</span> <span class="n">each</span> <span class="n">line</span> <span class="n">should</span> <span class="n">start</span> <span class="k">with</span> <span class="n">a</span> <span class="n">server</span><span class="s1">'s IP address, followed
+by the server'</span><span class="n">s</span> <span class="n">computer</span> <span class="n">name</span><span class="p">.</span> <span class="n">The</span> <span class="m">16</span><span class="n">th</span> <span class="n">character</span> <span class="n">after</span> <span class="n">the</span> <span class="n">start</span> <span class="k">of</span> <span class="n">the</span>
+<span class="n">server</span><span class="s1">'s computer name should be "D" to enable remote control, or F to
+enable File Transfer.
+
+Pages 415-423 mention a Remote Chat utility. This utility is not included
+in this release of SMS.
+
+On page 557, the text incorrectly states that Client Setup may modify the
+TimeCriticalSection setting in SYSTEM.INI. Actually, Client Setup never
+modifies this value.
+
+On page 580, the text states that "On NetWare servers, the package
+directory is a subdirectory of the LOGON.SRV\PCMPKG.SRC directory under the
+server'</span><span class="n">s</span> <span class="n">SMS_SHR</span> <span class="n">share</span><span class="p">.</span><span class="s2">" The text should say "</span><span class="p">...</span><span class="n">the</span> <span class="n">LOGON</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">PCMPKG</span><span class="p">.</span><span class="n">SRC</span>
+<span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">volume</span> <span class="n">containing</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">logon</span> <span class="n">server</span> <span class="n">components</span><span class="p">.</span><span class="s2">"
+
+On page 605, in Table D.3, the list of command lines to use to upgrade to
+Windows NT Workstation or Windows NT Server is incorrect. The correct list
+is as follows:
+  Automated Upgrade of (x86) NT Client
+  Manual Upgrade of (x86) NT Client
+  Automated Upgrade of (Alpha) NT Client
+  Manual Upgrade of (Alpha) NT Client
+  Automated Upgrade of (MIPS) NT Client
+  Manual Upgrade of (MIPS) NT Client
+  Automated Upgrade of Win16 Client
+  Manual Upgrade of Win16 Client
+  Automated Upgrade of DOS Client
+  Manual Upgrade of DOS Client
+
+On page 606, steps 2c-2e state that they must be performed from a network
+client. Actually, these steps may also be performed from the server
+containing the package source directory itself.
+
+On page 682, the text states that you must back up the SMS directory on the
+site server. More specifically, you must back up the SMS root directory and
+its entire contents (all subdirectories and files).
+
+33. Using SMS with Other Language Versions of Windows NT
+If you have a site that contains a site server or logon servers that use a
+non-English language version of Windows NT Server, you must create the
+following user groups in the domains that contain those servers:
+1) Create an Administrators local group and add all members of the
+Administrators local group for the language for the non-English domain (for
+example, Administratoren for the German version of
+Windows NT Server) to the Administrators local group that you created.
+2) Create a Guests local group and add all members of the Guests local
+group for the language for the non-English domain (for example, Gaste for
+the German version of Windows NT Server) to the Guests local group that you
+created.
+3) Create a Users local group and add all members of the Users local group
+for the language for the non-English domain (for example, Benutzer for the
+German version of Windows NT Server) to the Users local group that you
+created.
+4) Create an Everyone local group, add all members of the Users local group
+for the language for the non-English domain (for example, Benutzer for the
+German version of Windows NT Server) to the Everyone local group that you
+created, and then add the Domain Guests for the language for the
+non-English domain (for example, Domanen Gaste for the German version of
+Windows NT Server).
+
+Note that the Site Configuration Manager uses the Administrators, Guests,
+Users, and Everyone groups to set permissions on the site server and logon
+servers. The Despooler also uses these groups to set permissions on the
+package shares for package distribution servers. Note that if the
+Despooler cannot set permissions for these groups, it will not install the
+files for the package.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

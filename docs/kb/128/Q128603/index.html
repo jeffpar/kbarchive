@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128603: FIX: Visual Workbench Generates Dependencies for ODL Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128603: FIX: Visual Workbench Generates Dependencies for ODL Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128603/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128603/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128603/","publisher":null,"image":null,"headline":"Q128603: FIX: Visual Workbench Generates Dependencies for ODL Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128603-fix-visual-workbench-generates-dependencies-for-odl-files">Q128603: FIX: Visual Workbench Generates Dependencies for ODL Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128603
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbbuglist kbfixlist
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Workbench for Windows, version 1.0, used with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Adding .ODL files to a make file in the Visual Workbench causes the Visual
+Workbench to unnecessarily generate dependencies for the .ODL file.
+
+CAUSE
+=====
+
+An .ODL file included in the project file list typically includes other .ODL
+files. The Visual Workbench dependency scanner adds a type library target for
+each .ODL file to the MTL_TLBS target in the project. NMAKE tries to build a
+type library for every target specified by the MTL_TLBS target.
+
+RESOLUTION
+==========
+
+To prevent the Visual Workbench from adding type library targets for each
+included .ODL file, change the file extensions inside the main .ODL file to
+something other than ODL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+Consider this .ODL file (MYPROJ.ODL):
+
+     // This is the master ODL file, MYPROJ.ODL
+     #include "object1.odl"
+     #include "object2.odl"
+     // End of MYPROJ.ODL
+
+If MYPROJ.ODL is added to a project's file list, the MTL_TLBS target which is
+added to the project looks like this:
+
+     MTL_TLBS: $(OUTDIR)\MYPROJ.TLB .\OBJECT1.TLB .\OBJECT2.TLB
+
+NOTE: OBJECT1.TLB and OBJECT2.TLB must exist in order to reproduce this problem,
+but they do not have to contain .ODL file information for this demonstration.
+
+When the Visual Workbench is used to build the project, only MYPROJ.TLB is built.
+However, if NMAKE is used to build the project, all three type libraries
+specified by MTL_TLBS are built.
+
+Additional query words: 2.00 2.10
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVSsearch kbAudDeveloper
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

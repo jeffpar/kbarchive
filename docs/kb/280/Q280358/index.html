@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q280358: WD97: Change Case Command Does Not Change to Sentence/Title Case | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q280358: WD97: Change Case Command Does Not Change to Sentence/Title Case" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/280/Q280358/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/280/Q280358/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/280/Q280358/","publisher":null,"image":null,"headline":"Q280358: WD97: Change Case Command Does Not Change to Sentence/Title Case","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q280358-wd97-change-case-command-does-not-change-to-sentencetitle-case">Q280358: WD97: Change Case Command Does Not Change to Sentence/Title Case</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q280358
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta word8 word97
+Last Modified: 19-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Change Case command may not change the selection to Sentence case or Title
+Case in the following conditions.
+
+Case 1
+------
+
+The Change Case command (SHIFT+F3) does not change to Title Case when either of
+the following conditions is true:
+
+- The selection includes an end-of-sentence punctuation (such as a period,
+  question mark, or exclamation mark). Word changes from UPPERCASE to lowercase
+  to Sentence case only.
+
+  -or-
+
+- The selection begins with a space. Word changes from UPPERCASE to lowercase
+  to Sentence case only.
+
+Case 2
+------
+
+The Change Case command does not change to Sentence case when either of the
+following conditions is true:
+
+- The selection does not include the end-of-sentence punctuation. Word changes
+  from UPPERCASE to lowercase to Title Case only.
+
+  -or-
+
+- The selection of an incomplete sentence includes the last letter in the
+  paragraph but does not include end-of-sentence punctuation. Word changes from
+  UPPERCASE to lowercase to Title Case only.
+
+CAUSE
+=====
+
+The Change Case command does not change a complete sentence to Title Case.
+Similarly, the Change Case command assumes that a non-sentence selection is
+never formatted for Sentence case. The command determines whether the selection
+is a sentence by checking for end-of-sentence punctuation. This feature is by
+design of the SHIFT+F3 key combination for the Change Case command.
+
+MORE INFORMATION
+================
+
+The Change Case command changes selected characters to all uppercase letters,
+all lowercase letters, or a combination of uppercase and lowercase letters. The
+Change Case command affects character capitalization but not character
+formatting, such as Small Caps or All Caps. For example, if you apply Title case
+to text that already has Small Caps format, the first letter of each word
+becomes an uppercase letter while the rest of the characters retain the Small
+Caps format.
+
+Change Case option     Function
+------------------------------------------------------------------------
+
+Sentence case          Capitalizes the first letter of the first word in
+                         the selected sentence, or the first word after
+                         the end of a sentence.
+
+lowercase              Changes selected text to all lowercase letters.
+
+UPPERCASE              Changes selected text to all uppercase letters.
+
+Title Case             Capitalizes the first letter of each word in the
+                         selection.
+
+tOGGLE cASE            Changes all uppercase letters to lowercase
+                         letters and all lowercase letters to uppercase
+                         letters in the selection.
+
+NOTE: You cannot use SHIFT+F3 to change the case of your selected text to tOGGLE
+cASE. You must click Change Case on the Format menu, click to select tOGGLE
+cASE, and then click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147684: FIX: Sending WM_xSCROLL Message Causes Invalid ASSERT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147684: FIX: Sending WM_xSCROLL Message Causes Invalid ASSERT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147684/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147684/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147684/","publisher":null,"image":null,"headline":"Q147684: FIX: Sending WM_xSCROLL Message Causes Invalid ASSERT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147684-fix-sending-wm_xscroll-message-causes-invalid-assert">Q147684: FIX: Sending WM_xSCROLL Message Causes Invalid ASSERT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147684
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbMFC KbUIDesign kbVC400bug kbVC410fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Forcing a window to scroll to an absolute location by sending it a WM_HSCROLL or
+WM_VSCROLL message with the SB_THUMBPOSITION or SB_THUMBTRACK scrolling codes
+might cause an assertion. The assertion is in Wincore.cpp file on line 1938.
+
+
+CAUSE
+=====
+
+The assertion tries to ensure that for the current message, the nTrackPos member
+of the SCROLLINFO structure retrieved from a call to ::GetScrollInfo is the same
+as the thumb position specified in the message. The value of this variable is
+retrieved by calling ::GetScrollInfo, and it reflects the current scroll thumb
+position only when the user is dragging the thumb. In the case of a
+programmatically sent scroll message with the SB_THUMBPOSITION code, this value
+is not valid. Because this value is indeterminate, it will not likely match the
+thumb position specified in the message, and the assertion will fail.
+
+Also, even if the assertion is ignored, the WM_xSCROLL message handler will be
+called with an invalid scroll position when the WM_xSCROLL message is sent
+programmatically.
+
+RESOLUTION
+==========
+
+If the assertion is ignored, you cannot rely on the position value passed to the
+WM_xSCROLL handler and must make a call to GetCurrentMessage() to get the values
+specified in the message instead. If this is done properly, then the assertion
+can be safely ignored.
+
+
+For more information on this, please refer to the sample code included in this
+article.
+
+If the assertion occurs too often to manually select 'Ignore' in the assertion
+failure message box, you can programmatically turn off assertion failures with
+the following code:
+
+  #ifdef _DEBUG
+      int nPrevMode = _CrtSetReportMode(_CRT_ASSERT,0);
+  #endif
+     // Code that causes the assertion, for example:
+     // SendMessage(WM_VSCROLL,...)
+  #ifdef _DEBUG
+      _CrtSetReportMode(_CRT_ASSERT,nPrevMode);
+  #endif
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++, 32-bit
+Edition, version 4.1.
+
+MORE INFORMATION
+================
+
+This assertion is part of some new code added in MFC 4.0 to accomplish 32 bit
+scrolling and exists in the function CWnd::OnWndMsg.
+
+Sample Code to Reproduce and Resolve the problem
+------------------------------------------------
+
+The following code demonstrates the problem:
+
+  // Assume that nScrollPos is not 0
+
+  WPARAM wParam = MAKELONG ( SB_THUMBPOSITION, nScrollPos);
+  pView-&gt;SendMessage( WM_VSCROLL, wParam );
+
+  // As mentioned above, ignore the assert.
+  // Change the OnVScroll handler to the following :
+  void CMyView::OnVScroll(UINT nSBCode, UINT nPos,
+                          CScrollBar* pScrollBar)
+  {
+      if(nSBCode = SB_THUMBPOSITION )
+      {
+          const MSG* pMsg = GetCurrentMessage();
+          nPos = (short)HIWORD(pMsg-&gt;wParam);
+      }
+  // Do your processing here
+      CEditView::OnVScroll(nSBCode, nPos, pScrollBar);
+  }
+
+NOTE: CMyView is derived from CEditView. However the same technique works for any
+CWnd derived class. Remember, the same problem also occurs for scroll messages
+programmatically sent with the SB_THUMBTRACK code.
+
+Additional query words: 4.00 Windows 95 vcrel 1948 vcfixlist410
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC400bug kbVC410fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

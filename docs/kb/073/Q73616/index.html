@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q73616: Tentime SCSI Host Adapter in UMA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q73616: Tentime SCSI Host Adapter in UMA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/073/Q73616/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/073/Q73616/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/073/Q73616/","publisher":null,"image":null,"headline":"Q73616: Tentime SCSI Host Adapter in UMA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q73616-tentime-scsi-host-adapter-in-uma">Q73616: Tentime SCSI Host Adapter in UMA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q73616
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Tentime SCSI host adapter TNT-4000 series uses a 8K address range in the
+Upper Memory Area (UMA). This adapter can be successfully used with Microsoft
+MS-DOS 5.0 or later. When using EMM386.EXE to load device drivers high, use the
+X= switch to exclude the range used by the SCSI host adapter. It is configurable
+for its interrupt and I/O address range usage and uses a device driver for its
+enhanced features.
+
+MORE INFORMATION
+================
+
+The Tentime SCSI host adapter TNT-4000 series is configurable for several
+ranges, which are as follows:
+
+O=On F=Off
+
+Address       Jumpers
+-------       14   15   16  17  18  19
+C800           O    F    O   O   F   F      Default
+D000           O    O    F   O   F   F
+D800           O    F    F   O   F   F
+E000           O    O    O   F   F   F
+E800           O    F    O   F   F   F
+
+To use EMM386.EXE to load device drivers high, be sure to exclude the range used
+by the SCSI host adapter. For example, if the card is jumpered for the default
+settings, exclude the address range by using the following device line in the
+CONFIG.SYS file.
+
+     DEVICE=C:\DOS\EMM386.EXE NOEMS X=C800-C9FF
+
+Other switches, including RAM, may still be used in conjunction with the X=
+switch.
+
+The Tentime is also configurable for its interrupt and I/O address range usage.
+It can use the following:
+
+    Interrupts
+  3, 4, 5, 7, 10, 11, 12, 14, 15
+
+  I/O address ports
+  300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 3A0, 3B0, 3C0
+
+The Tentime adapter also uses a device driver, SSTBIO.SYS, to take advantage of
+its enhanced features. This device driver is NOT essential to use the adapter.
+SSTBIO.SYS has been successfully loaded high using EMM386.EXE.
+
+Additional query words: 3rdparty 5.00 5.00a 6.00 controller card noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

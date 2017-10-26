@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242319: PRB: A &quot;The Parameter Is Incorrect&quot; Error Message In VB SnapIn | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242319: PRB: A &quot;The Parameter Is Incorrect&quot; Error Message In VB SnapIn" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242319/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242319/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242319/","publisher":null,"image":null,"headline":"Q242319: PRB: A &quot;The Parameter Is Incorrect&quot; Error Message In VB SnapIn","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242319-prb-a-the-parameter-is-incorrect-error-message-in-vb-snapin">Q242319: PRB: A "The Parameter Is Incorrect" Error Message In VB SnapIn</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242319
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:1.1,1.2,6.0
+Operating System(s): 
+Keyword(s): kbMMC kbVBp600 kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Management Console, versions 1.1, 1.2 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Snap-in developed by the Microsoft Management Console (MMC) Snap-in Designer
+For Microsoft Visual Basic might display the following error message:
+
+  Runtime Error -2147024809 (80070057)
+  The Parameter Is Incorrect
+
+CAUSE
+=====
+
+A Toolbar control in the SnapIn project is attempting to use a bitmap from an
+Image List which is not 16x16 pixels in size.
+
+RESOLUTION
+==========
+
+Make sure that all Toolbar controls use bitmaps images that are exactly 16x16
+pixels in size.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual Basic and select a new SnapIn project from the New Project
+  dialog box.
+
+2. Open the SnapIn1 Designer from the Project Explorer window and add a new
+  Toolbar and Image List control. By default these news controls will be named
+  ToolBar1 and ImageList1.
+
+3. View the properties of the Image List control, and insert a new bitmap image
+  that is not 16x16.
+
+4. Give the Key field a value for the new image.
+
+5. View the properties of the Toolbar control, and set the ImageList field to
+  ImageList1.
+
+6. On the Buttons tag, insert a new button on the toolbar.
+
+7. Set the Image field to the Key field of the bitmap image in the image list.
+
+8. Open the Snapin1 Designer's code window and paste in the following code:
+
+  Private Sub Views_SetControlbar(ByVal View As SnapInLib.View, ByVal Controlbar As SnapInLib.MMCControlbar)
+
+      Controlbar.Attach Toolbar1
+      
+  End Sub
+
+9. Compile the SnapIn project and load it into MMC.
+
+10. Select the default static node, SnapIn1. The error mentioned in the
+  "Symptoms" section appears.
+
+11. Change the bitmap image in the Image List control to a 16x16 bitmap.
+
+12. Retest the SnapIn. This time the error does not occur.
+
+Additional query words: snapin designer mmc
+
+======================================================================
+Keywords          : kbMMC kbVBp600 kbGrpDSPlatform kbMMC110 kbDSupport kbMMC120 kbSnapIn 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbMMCSearch kbMMC110 kbMMC120
+Version           : WINDOWS:1.1,1.2,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

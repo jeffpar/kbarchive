@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299513: Passport Login Page Appears in the Wrong Language | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299513: Passport Login Page Appears in the Wrong Language" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299513/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299513/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299513/","publisher":null,"image":null,"headline":"Q299513: Passport Login Page Appears in the Wrong Language","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299513-passport-login-page-appears-in-the-wrong-language">Q299513: Passport Login Page Appears in the Wrong Language</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q299513
+Product(s): Microsoft Developer Network
+Version(s): 1.3,1.4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Passport, versions 1.3, 1.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Passport Login page appears in the wrong language.
+
+CAUSE
+=====
+
+The Passport network server pages are localized to accommodate many different
+languages. The AuthURL2 and LogoTag2 methods of the Passport Manager and
+Passport FastAuth objects accept a LangID parameter, which determines the
+display language of the Passport Login page that the method output URL points
+to. See the "Resolution" section for information on how to determine the cause
+of this problem.
+
+RESOLUTION
+==========
+
+If the Passport Login page appears in the wrong language, verify the following:
+
+- Did you send the correct LangID parameter to the LoginUser, AuthURL2, or
+  LogoTag2 method?
+
+- Is the LangID parameter a valid LCID value as specified in the Passport
+  Software Development Kit (SDK), or in general Microsoft Platform SDK
+  documentation? The Passport Manager Administration utility restricts you to
+  known LCIDs when setting the method defaults, but if you specified LCID
+  directly as a method parameter it is possible to specify an invalid LCID,
+  which does not generate a run-time error in the method. For more information
+  about method defaults, see the "More Information" section.
+
+- Did you provide the value for the LangID parameter in decimal form rather
+  than the Win32 programming hexadecimal form, or as string? LangID is presumed
+  to be in decimal form, although you can specify it in hex form using
+  language-specific hex representations. For example, &amp;H0409 in Microsoft
+  Visual Basic Scripting Edition (VBScript) is equivalent to the decimal value
+  1033.
+
+MORE INFORMATION
+================
+
+Although some parameters of Microsoft Passport methods are listed as optional,
+those methods generate URLs or results that reflect inherent default values when
+they are called. These default parameter values can be used to provide
+consistent site-wide values, such as Language ID. Use the Passport Manager
+Administration utility to set these defaults.
+
+If a certain server on your site is dedicated to a particular language or locale,
+it may be useful to set the Language ID on that server to always be a consistent
+value rather than declaring the locale identifier (LCID) in each method call.
+The Language ID declares the language that Passport service pages (such as
+sign-in and registration) render in when they are obtained with the URL results
+of the LoginUser, AuthURL2, LogoTag2, or GetDomainAttribute methods. Note that
+there may still be reasons to declare LCID by method call or user access if your
+site expects to handle multiple languages and uses either Passport profile
+information or browser sniffing to determine the user's probable language
+choice.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassportSearch
+Version           : :1.3,1.4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

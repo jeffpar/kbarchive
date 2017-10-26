@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q60869: How to Explicitly Reference Command-Line Tail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q60869: How to Explicitly Reference Command-Line Tail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/060/Q60869/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/060/Q60869/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/060/Q60869/","publisher":null,"image":null,"headline":"Q60869: How to Explicitly Reference Command-Line Tail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q60869-how-to-explicitly-reference-command-line-tail">Q60869: How to Explicitly Reference Command-Line Tail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q60869
+Product(s): See article
+Version(s): 5.x 6.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickc s_quickasm | mspl13_c
+Last Modified: 19-APR-1990
+
+The following code allows you to explicitly reference the command-line
+tail. The entire command line with spaces intact is referenced at the
+Disk Transfer Area (DTA) address and printed out as one string.
+
+Sample Code
+-----------
+
+#include &lt;stdio.h&gt;
+#include &lt;dos.h&gt;
+
+main()
+{
+   int tail_length;
+   char cmd_tail(128);
+
+   char far *p;             /* far pointer */
+   int i;
+
+   struct SREGS Seg;
+   union REGS Reg;
+
+   Reg.h.ah = 0x2F;         /* DOS call:  Get DTA Address   */
+   segread(&amp;Seg);
+   intdosx(&amp;Reg, &amp;Reg, &amp;Seg);
+
+   FP_SEG(p) = Seg.es;      /* make p point to the DTA */
+   FP_OFF(p) = Reg.x.bx;
+
+   tail_length = *p;        /* First byte is length of tailstring */
+
+   printf("tail_length = %d\n", tail_length);
+
+   p++;                     /* Move to first byte */
+
+   for(i = 0; i&lt;tail_length; i++)
+      cmd_tail[i] = p[i];
+
+   cmd_tail[tail_length] = '\0';  /* Add NULL to make a string */
+   printf("cmd_tail = &lt;%s&gt;\n", cmd_tail);
+
+   return(0);
+}
+
+Note: The command line is limited to 128 bytes.
+
+   cmdline *.c  abc  def  lab7.pas
+
+Output using the above command line is as follows:
+
+tail_length = 24
+cmd_tail = &lt; *.c  abc  def  lab7.pas&gt;
+
+Note: A more portable way of getting this information is to use the
+argv mechanism built into C. This may be easier because the command
+line would be already partially parsed by the setargv() function.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

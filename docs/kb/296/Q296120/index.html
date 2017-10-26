@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q296120: INF: OLE DB Provider for AS/400 and VSAM Host Requirements | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q296120: INF: OLE DB Provider for AS/400 and VSAM Host Requirements" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/296/Q296120/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/296/Q296120/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/296/Q296120/","publisher":null,"image":null,"headline":"Q296120: INF: OLE DB Provider for AS/400 and VSAM Host Requirements","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q296120-inf-ole-db-provider-for-as400-and-vsam-host-requirements">Q296120: INF: OLE DB Provider for AS/400 and VSAM Host Requirements</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q296120
+Product(s): Microsoft SNA Server
+Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbDSupport sna4
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the steps that must be implemented on the mainframe
+computer in order for Microsoft's OLE DB Provider for the IBM AS/400 and Virtual
+Storage Access Method (VSAM) to access nonrelational files (VSAM files) on the
+mainframe. This article also provides the requirements for the mainframe and the
+AS/400.
+
+MORE INFORMATION
+================
+
+Microsoft's OLE DB Provider for AS/400 and VSAM is implemented using IBM's open
+Distributed Data Management (DDM) architecture. Specifically, the provider is a
+DDM record-level input/output (RLIO) client that communicates with one or more
+IBM-implemented DDM servers. The only mainframe-based DDM server supported by
+the provider is IBM Distributed File Manager (DFM), a component of IBM Data
+Facility Storage Management (DFSMS) Subsystem for Multiple Virtual Storage
+(MVS).
+
+The Microsoft OLE DB Provider for AS/400 and VSAM requires the following on the
+mainframe:
+
+  DFSMS version 1 release 2 or later for MVS/ESA and OS/390
+
+As of DFM version 5 release 1, IBM only supports remote DDM client via Advanced
+Program-to-Program Communications (APPC) over SNA Logical Unit (LU) 6.2.
+Therefore, Microsoft OLE DB Provider for AS/400 and VSAM can only access VSAM
+data sets across an SNA network connection.
+
+TCP/IP is not supported when you are connecting the OLE DB Provider for AS/400
+and VSAM to the mainframe for VSAM access. TCP/IP is supported when you are
+connecting the OLE DB Provider for AS/400 and VSAM to the AS/400 for
+nonrelational data access.
+
+For additional information on Microsoft data providers for use in a TCP/IP-only
+environment, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q248468 Installing Microsoft SNA Server Data Providers for TCP/IP Only
+
+The Microsoft OLE DB Provider for AS/400 and VSAM requires the following on the
+AS/400:
+
+- IBM OS/400 V3R2 or later via APPC
+
+- IBM OS/400 V4R2 or later via APPC or TCP/IP
+
+The following must be configured on the mainframe in order to support Microsoft's
+OLE DB Provider for AS/400 and VSAM for VSAM access.
+
+1. Install the DFSMS subsystem for MVS on the mainframe.
+
+2. In the SYS1.PARMLIB(APPCPMxx), the following are needed:
+
+   - LUADD
+
+   - ACBNAME(DFMAPPC)
+
+   - TPDATA(SYS1.APPCTP)
+
+   - SIDEINFO DATASET(SYS1.APPCSI)
+
+3. In the SYS1.PARMLIB(ASCHPMxx), the following are needed:
+
+   - CLASSADD
+
+   - CLASSNAME(A)
+
+4. In the SYS1.PARMLIB(DFM00), the following are needed:
+
+   - DFM
+
+   - LOCK_WAIT INTV(20)
+
+   - MAX_CONV_LOCK(5)
+
+5. Create a VSAM KSDS named SYS1.APPCTP with the following:
+
+   - TPADD
+
+   - TPSNAME(_X'07F0F0F1') where "_" is a special symbol on the host.
+
+   - ACTIVE(YES)
+
+   - TPSCHED DELIMITER(##)
+
+   - CLASS(A)
+
+6. Create a VSAM KSDS named SYS1.APPCSI.
+
+7. Create a VTAM Application Majnode DFMAPPC in the VTAMLST:
+
+   - ACBNAME?MAPPC
+
+   - MODETAB=
+
+8. In the SYS1.PROCLIB, ensure DFM start proc //DFM EXEC PGM=GDEISBOT is
+  present.
+
+9. Finally, ensure the following Start tasks are started:
+
+   - Start APPC,SUB=MSTR,APPC=xx
+
+   - Start ASCH,SUB=MSTR,ASCH=xx
+
+   - Start DFM,sub=MSTR
+
+REFERENCES
+==========
+
+For more information about SNA and the Distributed Data Manager (DDM), see the
+following manuals:
+
+- IBM DFSMS/MVS Version 1 Release 2 DFM/MVS Guide and Reference (Document
+  Number SC26-4915-00)
+
+- IBM DFSMS/MVS Version 1 Release 3 DFM/MVS Guide and Reference (Document
+  Number SC26-4915-01)
+
+- IBM DFSMS/MVS Version 1 Release 4 DFM/MVS Guide and Reference (Document
+  Number SC26-4915-02)
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ400SP4
+Version           : :4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

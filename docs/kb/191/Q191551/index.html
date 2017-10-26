@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191551: BUG: CtlPlus Sample Fails to Load | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191551: BUG: CtlPlus Sample Fails to Load" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191551/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191551/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191551/","publisher":null,"image":null,"headline":"Q191551: BUG: CtlPlus Sample Fails to Load","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191551-bug-ctlplus-sample-fails-to-load">Q191551: BUG: CtlPlus Sample Fails to Load</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191551
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbVBp kbVBp600bug kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to load the Visual Basic CtlPlus sample that ships with Visual Basic
+6.0 you receive the following error:
+
+  &lt;Path to CtlPlus.vbg&gt;\CtlPlus.ocx could not be loaded- Continue Loading
+  Project?
+
+CAUSE
+=====
+
+The Ctlplus.vbp and the Testctlp.vbp project files reference the built version
+of the Ctlplus.ocx file. However, the sample does not come with a built copy of
+the Ctlplus.ocx file.
+
+RESOLUTION
+==========
+
+Make the following changes to the Ctlplus.vpb and Testctlp.vbp files. Note that
+the Read Only attribute must be cleared on these files first.
+
+1. Open the Ctlplus.vbp file in a text editor like Notepad.
+
+2. Remove the "CompatibleEXE32=CtlPlus.OCX" line from the .vbp file.
+
+3. Save and close the file.
+
+4. Open the Testctlp.vpb file in a text editor like Notepad.
+
+5. Modify the Object reference line to be the following:
+
+        Object=*\ACtlPlus.vbp
+
+  instead of
+
+        Object={782B8EDB-9338-11D1-B06B-00DD01144174}#1.0#0; CtlPlus.ocx
+
+6. Save and close the file. It now opens without giving an error.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+All Visual Basic 6.0 samples are on the Visual Studio Microsoft Developer
+Network CD under the Samples\VB98 directory.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Copy the Ctlplus folder from the Samples\VB98 folder on the Visual Studio 6.0
+  CD to your local drive.
+
+2. Try to open the Ctlplus.vbg file. You receive the preceding error.
+
+After you make the changes discussed in the RESOLUTION section of this article
+you should be able to open and run the sample.
+
+Additional query words: kbVBp kbVBp600bug
+
+======================================================================
+Keywords          : kbVBp kbVBp600bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

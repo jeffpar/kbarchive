@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132705: PRB: Errors When You Edit Bitmaps with More Than 16 or 256 Color | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132705: PRB: Errors When You Edit Bitmaps with More Than 16 or 256 Color" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132705/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132705/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132705/","publisher":null,"image":null,"headline":"Q132705: PRB: Errors When You Edit Bitmaps with More Than 16 or 256 Color","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132705-prb-errors-when-you-edit-bitmaps-with-more-than-16-or-256-color">Q132705: PRB: Errors When You Edit Bitmaps with More Than 16 or 256 Color</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132705
+Product(s): Microsoft C Compiler
+Version(s): 1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg _IK920 kbVC kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kb
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Resource Editor 
+- Microsoft Visual C++, versions 1.5, 1.51, 1.52, 2.0, 2.1, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The 16-bit Resource Editor (AppStudio) generates the following message while
+attempting to edit a bitmap that contains more than 16 colors:
+
+  Cannot open bitmap for editing.
+  Unsupported color resolution.
+
+The 32-bit Resource Editor with Visual C++, version 4.0, (for the 32-bit version
+Resource Editor) generates the following message while attempting to edit a
+bitmap that contains more than 256 colors:
+
+  Only 2-, 16-, and 256-color bitmaps are supported.
+
+The 32-bit Resource Editor with Visual C++, versions 5.0 and 6.0, generates the
+following message while attempting to import or edit a bitmap with more than 256
+colors:
+
+  The bitmap has been imported correctly, however because it contains
+  more than 256 colors it cannot be loaded in the bitmap editor.
+
+CAUSE
+=====
+
+The Resource Editor for the 16-bit versions cannot display or edit bitmaps that
+contain more than 16 colors, and the Resource Editor for the 32-bit versions
+cannot display or edit bitmaps that contain more than 256 colors.
+
+RESOLUTION
+==========
+
+Choose another graphics editor such as Pbrush.exe (Paintbrush) in the
+Accessories group on Windows and Windows NT, or Mspaint.exe (Paint) from the
+Accessories folder on Windows 95 to create or edit the offending bitmaps. Then
+import them into the resource script.
+
+NOTE: Once you import the picture into the resource file, you will not be able to
+edit it or display it. However, you can still use the bitmap resource in your
+application. For example:
+
+  void CMyView::OnDraw(CDC* pDC)
+  {
+  CMyDoc* pDoc = GetDocument();
+  ASSERT_VALID(pDoc);
+  // TODO: add draw code for native data here.
+
+  ASSERT_VALID(pDoc);  
+  CBitmap bitmap; 
+  CDC dcMemory;    
+  bitmap.LoadBitmap(IDB_BITMAP1);  
+  dcMemory.CreateCompatibleDC(pDC); 
+  dcMemory.SelectObject(&amp;bitmap);   
+  pDC-&gt;BitBlt(0, 0, 500,500, &amp;dcMemory, 0, 0, SRCCOPY); 
+  }
+
+If you want to edit the bitmap with the Visual C++ resource editor, you must
+convert it to use 256 colors. With Visual C++ versions 5.0 and 6.0, you can
+convert the bitmap into 256 colors by following these steps:
+
+1. Copy the offending bitmap in another graphics program.
+
+2. In the Resource Editor, insert a new bitmap.
+
+3. On the Edit menu, click Paste.
+
+4. The bitmap appears in more than 256 colors.
+
+5. Close the bitmap.
+
+6. Reopen the bitmap, and it contains only 256 colors.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The 16-bit AppStudio cannot display bitmaps that have more than 16 colors.
+Sometimes, as a result of this, you will notice that when the file is open for
+display, AppStudio might automatically change the colors to their closest
+16-color approximations without warning you. This limitation depends on which
+version of Visual C++ you use. For example, versions 1.5 and above prompt you,
+while version 1.0 provides no warning. If the change takes effect, the bitmap is
+changed to 16 colors; it cannot be changed back to 256 colors.
+
+Visual C++, 32-bit Edition, allows you to edit bitmaps that contain up to 256
+colors. If your video resolution supports more than 256 colors, you will see one
+of these error messages:
+
+  &lt;bitmap file path&gt; Cannot load file. The current display device does
+  not
+  support palettes which are required for editing 256-color bitmaps.
+
+  -or-
+
+  &lt;bitmap file path&gt; Cannot load file. The Video driver does not support
+  enough colors to load this image.
+
+NOTE: To be able to edit out-of-range bitmaps using Visual C++, 32-bit edition,
+make sure that 256 Colors is selected in the Color Palette combo box in the
+Display Applet of Control Panel.
+
+Additional query words: 1.50 2.00 2.10 4.00 3.11 3.1 3.10 App Studio
+
+======================================================================
+Keywords          : kberrmsg _IK920 kbVC kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbprb kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbVC500 kbVC600 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC152 kbResourceEd kbVC500Search
+Version           : :1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

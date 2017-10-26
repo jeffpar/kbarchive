@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200130: XCLN: How to Return X.400 Addresses with Outlook LDAP Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200130: XCLN: How to Return X.400 Addresses with Outlook LDAP Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200130/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200130/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200130/","publisher":null,"image":null,"headline":"Q200130: XCLN: How to Return X.400 Addresses with Outlook LDAP Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200130-xcln-how-to-return-x400-addresses-with-outlook-ldap-service">Q200130: XCLN: How to Return X.400 Addresses with Outlook LDAP Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200130
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:2000,98
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 2000 
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, the LDAP service (Ol98ldap.exe) client returns only SMTP addresses.
+
+The Mapisvc.inf file can be modified on any computer with OL98LDAP.exe installed
+to display the X.400 address instead of the SMTP address of the user.
+
+MORE INFORMATION
+================
+
+To modify the Mapisvc.inf file, do the following:
+
+1. Exit and log off the Outlook 98 or Outlook 2000 client.
+
+2. In Outlook 98, locate the Mapisvc.inf file in the &lt;windir&gt;\System or
+  &lt;windir&gt;\System32 directory.
+
+  In Outlook 2000, the default location for the Mapisvc.inf file is in the
+  Program Files\Common Files\System\Mapi\1033\Nt directory.
+
+3. Locate the EMABLT section in the Mapisvc.inf file.
+
+4. Locate and change the following two entries:
+
+  6605001e=X400
+  6606001e=textEncodedORaddress
+
+5. Start Outlook 98 or Outlook 2000 and add a new LDAP directory service in the
+  Tools/Services/Add/Microsoft LDAP directory.
+
+Note: The new Mapisvc.inf file settings do not take effect until a new LDAP
+service is added to the profile. If an LDAP directory service was added to the
+profile before the change was made in the Mapisvc.inf file, you must remove the
+LDAP service and add it again.
+
+Additional query words: VALUPACK CORPLDAP
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:2000,98
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

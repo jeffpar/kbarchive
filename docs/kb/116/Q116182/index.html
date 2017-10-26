@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q116182: BUG: ClipCursor() Restricts Mouse Movement in Debugger | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q116182: BUG: ClipCursor() Restricts Mouse Movement in Debugger" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/116/Q116182/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/116/Q116182/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/116/Q116182/","publisher":null,"image":null,"headline":"Q116182: BUG: ClipCursor() Restricts Mouse Movement in Debugger","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q116182-bug-clipcursor-restricts-mouse-movement-in-debugger">Q116182: BUG: ClipCursor() Restricts Mouse Movement in Debugger</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q116182
+Product(s): Microsoft Programming Utilities
+Version(s): 4.0,4.01,4.1; WINDOWS:1.0,1.5
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft CodeView for Windows, versions 4.0, 4.01, 4.1 
+- Microsoft Visual C++, versions 1.0, 1.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Calling the ClipCursor() function restricts mouse movement in CodeView for
+Windows, the Visual C++ integrated debugger, and the application being debugged.
+The problem also occurs when you use CodeView for Windows in dual- monitor mode.
+
+RESOLUTION
+==========
+
+To work around the problem, enter commands using the keyboard when mouse
+movement is restricted.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in CodeView for Windows and the Visual
+C++ debugger. We are researching this problem and will post new information in
+the Microsoft Knowledge Base as soon as it becomes available.
+
+MORE INFORMATION
+================
+
+To reproduce this problem, use the following steps:
+
+1. Add the sample code shown below to the MainWndProc() function in the GENERIC
+  sample found in the SAMPLES directory.
+
+2. Build the application in debug mode and set a breakpoint on the ClipCursor
+  function.
+
+3. Press F5 to run "Generic". Size the Generic window to be a fraction of the
+  total screen size.
+
+4. Choose "Help.About Generic".
+
+5. Click the "OK" button in the About dialog box to hit the breakpoint.
+
+6. Continue debugging using F8, F10, or F5.
+
+The mouse is now restricted to the small area of the screen that you resized in
+step 3.
+
+Sample Code
+-----------
+
+  long CALLBACK __export MainWndProc(/* ... */)
+     {
+      RECT rect;                         /* add this line */ 
+
+      switch (message)
+      {
+        case WM_COMMAND:
+          if (wParam == IDM_ABOUT)
+          {
+           DialogBox(/* ... */);
+           GetWindowRect(hWnd, &amp;rect);    /* add this line */ 
+           ClipCursor(&amp;rect);             /* add this line */ 
+           break;
+          }
+
+Additional query words: 4.00 4.01 4.10 1.00 1.50 1.50.01
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbvc150 kbvc100 kbCodeView kbCodeView400 kbCodeView401 kbCodeView410
+Version           : :4.0,4.01,4.1; WINDOWS:1.0,1.5
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

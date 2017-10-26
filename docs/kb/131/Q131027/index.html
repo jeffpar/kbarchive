@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131027: HOWTO: Encapsulate Data in the Form Builder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131027: HOWTO: Encapsulate Data in the Form Builder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131027/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131027/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131027/","publisher":null,"image":null,"headline":"Q131027: HOWTO: Encapsulate Data in the Form Builder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131027-howto-encapsulate-data-in-the-form-builder">Q131027: HOWTO: Encapsulate Data in the Form Builder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131027
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbOOP
+Last Modified: 21-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In a true object-oriented programming paradigm, data used in a form is
+encapsulated from the underlying form. This hides the names of the tables and
+fields from the form. By using this approach, a table or field name could change
+before the form is run, and the form should still function properly. As a
+result, the form does not need to know specific information about the data
+tables. The tables can change independent of any form.
+
+This article describes one way to encapsulate data from the form.
+
+MORE INFORMATION
+================
+
+The sample code in this article includes a custom class definition (clMyData)
+and a subclass (clcustomer) built from this custom class. The program is saved
+in a file named DATAENC.PRG.
+
+To use this approach, add several lines of code to the form's Init procedure. If
+the form is part of a formset, place the code in the Init of the formset
+instead.
+
+     * SET PROCEDURE to file containing class definition
+
+        IF !"DATAENC"$ SET("PROCEDURE")
+        SET PROCEDURE TO dataenc ADDITIVE
+     ENDIF
+
+     * Declare public variables to hold instantiations of custom classes
+     PUBLIC oMyData, oCustomer
+
+     * Instantiate each class
+     oMyData = CREATEOBJECT("clMyData")
+     oCustomer = CREATEOBJECT("clCustomer")
+
+Program Logic
+-------------
+
+The custom class (clMyData) examines the form being loaded. It uses the form's
+control array to itemize all of the controls on the form. If a control is a
+container (for example, a command button group or a page frame), the program
+itemizes all controls within the container as well.
+
+After identifying all controls on the form, the program replaces the original
+rowsource property specified when the form was designed. The replacement value
+for each control is specified in the subclass (clCustomer).
+
+A subclass similar to clCustomer is created for each table used in the form. The
+subclass method DIFFERS creates a two-column array, with one row for each field
+contained in the table. The first column of the array contains the design-time
+rowsource. The second column of the array contains the run-time rowsource,
+usually the field name from a table.
+
+This array is passed to the parent class and used in the GETDIFFERS method to
+dynamically change the rowsource properties of all applicable controls at
+runtime. The form file on disk is never changed.
+
+All method code required to do the conversion is included in the parent class.
+Only one method in the subclass needs to be edited to add an additional table to
+the form.
+
+The class listed in this article is a simple example. It could easily be expanded
+to handle additional functionality, such as building select statements for list
+boxes.
+
+Sample Code
+-----------
+
+     *******  Begin code example
+
+     ************************************************************************
+     * Class Name   : clMyData
+     * Parent Class : Custom
+     * Subclasses   :
+     ************************************************************************
+
+     Define Class clMyData as Custom
+
+     ************************************************************************
+     *   Properties
+     ************************************************************************
+
+        lIsFormSet = .t. &amp;&amp; logical - is this a formset?
+        nNumberofForms=1    &amp;&amp; number of forms
+        flag = .f.
+
+     ************************************************************************
+
+     PROCEDURE OpenTables
+
+        Parameters pDBC, pTable
+        * Called from each subclass to open needed dbcs and dbfs
+        * Set buffering
+        SET MULTILOCKS ON
+
+        * Open tables
+        IF !DBUSED(pDBC)
+           OPEN DATA (pDBC)
+        ENDIF
+        IF !USED(pTable)
+           USE (pTable) IN 0
+        ELSE
+           SELECT (pTable)
+        ENDIF
+        =CURSORSETPROP("Buffering",5,(pTable))
+
+        * Populate first object
+        THIS.GETINFO(pTable, @pArray)
+
+     ************************************************************************
+     * This is called once in each subclass to create a unique array name
+
+     PROCEDURE DIFFERS
+
+        PARAMETERS pTable
+        aDiffers=SYS(2015)
+        PUBLIC &amp;adiffers(1,2)
+        RETURN aDiffers
+
+        * Place control source property for form in first column
+        * Place  fields which make this field in second column
+
+        *********************************************************************
+     * The following procedure is called by the subclass one time for each
+     * field in the data table
+
+     PROCEDURE POPDIFFERS
+     PARAMETERS pArrayName, pControlSource,  pInputExpr
+
+        iCurrentRow = ALEN((pArrayName),1)
+        cArrayName = pArrayName + "(iCurrentRow,"
+        &amp;cArrayName.1) = pControlSource
+        &amp;cArrayName.2) = pInputType
+
+        nNewSize  = iCurrentRow + 1
+        DIMENSION &amp;pArrayName.(nNewsize, 2)
+     ************************************************************************
+
+     PROCEDURE INIT
+
+        * Figure out if part of a formset by trying to generate
+        * an error number 1938 and setting HighestClass appropriately
+
+        temp = thisformset.name
+
+        * Cycle through all of the controls on the current form and find the
+        * current control source where needed.
+        * Then, the init of each subclass will refer to this cursor later on
+        * to update the control source properties
+
+        CREATE CURSOR curMyProps (cName c(75), source c(75))
+        CREATE CURSOR curContainers (cName c(75))
+        IF lIsFormset
+        nNumberofForms = _screen.FORMCOUNT
+           FOR i = 1 to nNumberofForms
+              HighestClass = "_SCREEN.FORMS(" + alltrim(str(i)) +")"
+              this.allforms(highestclass)
+           NEXT i
+        ELSE
+           HIGHESTClass = "THISFORM"
+           THIS.AllForms(HighestClass)
+        ENDIF
+
+     ENDPROC
+
+     ************************************************************************
+     * The following procedure is executed 1 time for each form
+     * by the class init method
+
+     PROCEDURE AllForms
+     PARAMETERS HighestClass
+        iNumControls = &amp;highestclass..controlcount
+        this.enumerate(HighestClass, iNumControls)
+        DO WHILE .T.
+           SELECT * from curContainers into CURSOR TEMP
+           IF _tally = 0
+              EXIT
+           ENDIF
+              SET SAFETY OFF
+              CREATE CURSOR curContainers (cName c(75))
+              SELECT TEMP
+           SCAN
+              HighestClass = alltrim(cName)
+              iNumControls = &amp;HighestClass..ControlCount
+              this.enumerate(HighestClass, iNumControls)
+           ENDSCAN
+        ENDDO
+
+     ENDPROC
+
+     ************************************************************************
+     * The following procedure figures out which controls exist on the
+     * container
+
+     PROCEDURE enumerate
+     Parameters HighestClass, iNumControls
+
+        FOR i = 1 TO iNumControls
+           IF &amp;highestclass..baseclass != "Commandgroup"
+               cCurControlBase = &amp;highestclass..controls(i).baseclass
+               cCurControl = UPPER(highestclass + "." + ;
+                  &amp;highestclass..controls(i).name)
+               cCurControlSource = ;
+                  UPPER(&amp;highestclass..controls(i).controlsource)
+            ELSE
+              cCurControlBase = &amp;highestclass..buttons(i).baseclass
+              cCurControl = UPPER(highestclass + "." + ;
+                  &amp;highestclass..buttons(i).name)
+               cCurControlSource = ;
+                  UPPER(&amp;highestclass..buttons(i).controlsource)
+            ENDIF
+           IF  cCurControlBase = "Textbox" ;
+              OR cCurControlBase = "Check box" ;
+              OR cCurControlBase = "Commandbutton" ;
+              OR cCurControlBase = "Optionbutton" ;
+              OR cCurControlBase = "Spinner" ;
+              OR cCurControlBase = "Column" ;
+              OR cCurControlBase = "EditBox"
+              SELECT CurMyProps
+              APPEND BLANK
+              REPLACE cName WITH cCurControl
+              REPLACE source WITH cCurControlSource
+           ELSE
+              IF cCurControlBase = "Page" ;
+                 OR cCurControlBase = "PageFrame";
+                 OR cCurControlBase = "Form" ;
+                 OR cCurControlBase = "Grid" ;
+                 OR cCurControlBase = "Toolbar"
+
+                 SELECT curContainers
+                 APPEND BLANK
+                 REPLACE cName with cCurControl
+              ENDIF
+           ENDIF
+        NEXT i
+
+     ENDPROC
+
+     ************************************************************************
+     * This procedure changes the rowsource in the cursor
+
+     PROCEDURE UpdateCursor
+     Parameters pArray, cTableName
+
+        SELECT curMyProps
+        =cursorsetprop("Buffering",1,(cTableName))
+        FOR i = 1 TO ALEN((pArray),1)
+           cNewSource = &amp;pArray.(i,2)
+           cOldSource = &amp;pArray.(i,1)
+           REPLACE source WITH cNewSource ;
+             FOR ALLTRIM(source) = UPPER(cOldSource)
+        ENDFOR
+        SCAN
+           cNewName = alltrim(cName)
+           &amp;cNewName..controlsource = alltrim(source)
+        ENDSCAN
+
+     ************************************************************************
+
+     PROCEDURE error
+     Parameters pErrorNum, p3, p4
+        IF pErrorNum = 1938
+           lIsFormSet = .F.
+        ENDIF
+
+     ************************************************************************
+
+     PROCEDURE destroy
+        PARAMETERS pArrayName
+        RELEASE (pArrayName)
+
+     ************************************************************************
+
+     ENDDEFINE &amp;&amp; End Definition of clMyData
+
+    ************************************************************************
+    * END CLASS DEFINITION
+    ************************************************************************
+
+     ************************************************************************
+     * Class Name   : clCUSTOMER
+     * Parent Class : clMyData
+     * Subclasses   :
+     ************************************************************************
+
+     Define Class clCUSTOMER as clMyData
+
+     ************************************************************************
+     *   Properties
+     ************************************************************************
+
+        cTableName = "CUSTOMER"  &amp;&amp;Name of the .dbf file
+        cDBCName   = "POES"      &amp;&amp;Name of the .DBC file
+        cMyArray   = ""
+
+     ************************************************************************
+
+     PROCEDURE INIT
+        clMyData::OpenTables(THIS.cDBCName, THIS.cTableName)
+        cMyArray = clMyData::Differs()
+        clMyData::PopDifferS(cMyArray,"FullName","customer.c_Name")
+        clMyData::PopDifferS(cMyArray,"SSN","customer.c_SSN")
+        clMyData::PopDifferS(cMyArray,"STREET","customer.c_STREET")
+        clMyData::PopDifferS(cMyArray,"CITY","customer.c_CITY")
+        clMyData::PopDifferS(cMyArray,"STATE","customer.C_STATE")
+        clMyData::PopDifferS(cMyArray,"ZIP","customer.c_ZIP")
+        clMyData::PopDifferS(cMyArray,"PHONE","customer.c_PHONE")
+        clMyData::PopDifferS(cMyArray,"CCN","customer.c_CCN")
+        this.parentPopDifferS(cMyArray,"CCEXP","customer.c_CCEXP")
+
+        clMyData::UpdateCursor(cMyArray, this.cTableName)
+        PUBLIC aCustomer(1,2)
+        SELECT c_ssn, c_name FROM CUSTOMER INTO ARRAY aCustomer
+
+     ************************************************************************
+
+     ENDDEFINE &amp;&amp; End Definition of clCustomer
+
+     ************************************************************************
+     * END CLASS DEFINITION
+     ************************************************************************
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbOOP 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

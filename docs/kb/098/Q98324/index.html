@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98324: BUG: Excel GP Faults When Passing Intersection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98324: BUG: Excel GP Faults When Passing Intersection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98324/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98324/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98324/","publisher":null,"image":null,"headline":"Q98324: BUG: Excel GP Faults When Passing Intersection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98324-bug-excel-gp-faults-when-passing-intersection">Q98324: BUG: Excel GP Faults When Passing Intersection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98324
+Product(s): Miscellaneous Software Development Kits
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Excel Software Development Kit 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Excel causes a general protection (GP) fault when attempting to pass
+an intersection to a DLL/XLL function registered as data type "R". For example,
+consider the following dynamic-link library (DLL) function declaration:
+
+     void __export CALLBACK Test (LPXLOPER lpxl)
+
+Excel causes a GP fault if Test is called with an intersection under the
+following circumstances:
+
+- The references joined by the union operator intersect
+
+- The references are passed using defined names
+
+The following call to Test will crash Excel if range1 and range2 intersect:
+
+     =Test(range1 range2)
+
+CAUSE
+=====
+
+This is caused by a problem in Excel.
+
+RESOLUTION
+==========
+
+There are two possible workarounds for this problem:
+
+- If intersections may be passed to a DLL function, avoid the use of data type
+  "R" (XLOPER) if possible. Use data type "P" (OPER) instead and the
+  intersection will be passed as an array.
+
+- Implement a "wrapper" macro function. For information on this method, query
+  on the following words in the Microsoft Knowledge Base:
+
+  prod(xlsdk) and nonadjacent
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Excel version 4.0. We are
+researching this problem and will post new information here as soon as it
+becomes available.
+
+
+Additional query words: 4.00 3.10 gp-fault gpf buglist4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbExcelSearch kbAudDeveloper kbSDKExcelSearch kbSDKSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163509: ACC97: Object Description Property Not Saved in SourceSafe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163509: ACC97: Object Description Property Not Saved in SourceSafe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163509/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163509/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163509/","publisher":null,"image":null,"headline":"Q163509: ACC97: Object Description Property Not Saved in SourceSafe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163509-acc97-object-description-property-not-saved-in-sourcesafe">Q163509: ACC97: Object Description Property Not Saved in SourceSafe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163509
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 15-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+When you create a database from a Microsoft Visual SourceSafe project, the
+Description property of your database objects does not appear. This also happens
+when you perform a source code control action that replaces an object in your
+database, such as when you undo a check out.
+
+This article assumes that you are familiar with using the client-side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or Help topics available
+from the Visual SourceSafe Help menu.
+
+CAUSE
+=====
+
+With the exception of queries, the Description property for database objects is
+not stored in Microsoft Visual SourceSafe. When you create a new database from a
+SourceSafe project, or when you replace an existing database object with one
+from a SourceSafe project, the Description property is not included.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new blank database called ObjDesc.mdb.
+
+2. On the Tools menu, point to SourceSafe, and then click "Add Database to
+  SourceSafe." Follow instructions on your screen to add the new database to
+  source code control.
+
+3. Create a new empty module and save it as ModTestVss. Add the module to
+  SourceSafe control when prompted.
+
+4. Save as ModTestVss and add to SourceSafe Control.
+
+5. Check out ModTestVss.
+
+6. Using the right mouse button (right-click), click ModTestVss in the Database
+  window, and then click Properties on the shortcut menu that appears.
+
+7. Type "This is a VSS test" in the Description box, and then click OK.
+
+8. Check in ModTestVss.
+
+9. Check out ModTestVss.
+
+10. Open ModTestVss in Design view and type the following line in the
+  Declarations section: 'This is a comment
+
+11. Save ModTestVss and close it.
+
+12. Undo the check out. This causes the module to be replaced by a new copy from
+  the SourceSafe project.
+
+13. Right-click ModTestVss in the Database window, and then click Properties on
+  the shortcut menu. Note that the Description property is empty.
+
+Additional query words: ACCSCC SCC VSS source safe
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbAccessSearch kbAccess97 kbAccess97Search
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

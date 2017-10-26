@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99149: Updating LAN Manager Redirector After Upgrading from MS-DOS 3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99149: Updating LAN Manager Redirector After Upgrading from MS-DOS 3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99149/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99149/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99149/","publisher":null,"image":null,"headline":"Q99149: Updating LAN Manager Redirector After Upgrading from MS-DOS 3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99149-updating-lan-manager-redirector-after-upgrading-from-ms-dos-3">Q99149: Updating LAN Manager Redirector After Upgrading from MS-DOS 3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99149
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 2.2c,3.0,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 11-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+- Microsoft Network Client for MS-DOS version 3.0 
+- Microsoft LAN Manager, version 2.2c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you upgrade to MS-DOS 6.0 or later from MS-DOS version 3.x and you are using
+Microsoft LAN Manager version 2.1 or 2.2, you must copy the correct redirector
+to your LAN Manager directory. If you use the incorrect redirector, you receive
+an error message stating that you are using an incorrect version of MS-DOS. To
+correct this error, use the procedure below appropriate to your version of LAN
+Manager.
+
+MORE INFORMATION
+================
+
+LAN Manager 2.1 or 2.2 Enhanced
+-------------------------------
+
+To correct this situation, copy and rename the NETWKSTA.500 redirector. For
+example, if you are using the default LANMAN.DOS directory, type the following
+on one line at the MS-DOS command prompt and then press ENTER:
+
+  copy c:\lanman.dos\netwksta\netwksta.500 c:\lanman.dos\netprog
+  \netwksta.exe
+
+This copies (and renames) the MS-DOS 5 NETWKSTA redirector (which works correctly
+for MS-DOS 6) over the NETWKSTA redirector you are currently using.
+
+You should not need SETVER for the network; if you have NETWKSTA in the SETVER
+table, you may want to remove it.
+
+LAN Manager 2.1 or 2.2 Basic
+----------------------------
+
+The above information is true for LAN Manager 2.1 and 2.2 Basic except that you
+need to copy REDIR.500 instead of NETWKSTA.500. For example, if you are using
+the default LANMAN.DOS directory, type the following at the MS-DOS command
+prompt and then press ENTER:
+
+  copy c:\lanman.dos\redir\redir.500 c:\lanman.dos\basic\redir.exe
+
+LAN Manager Version 2.0
+-----------------------
+
+If you are using LAN Manager version 2.0 and are upgrading from MS-DOS version
+3.x, you need to obtain the MS-DOS Supplemental disks. For more information,
+refer to the coupon in the back of your "User's Guide."
+
+Additional query words: 6.22 6.00 6.20 lanman "Error 2"
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbAudDeveloper kbZNotKeyword kbLanManSearch kbNetworkClientSearch kbLanMan220c kbNetworkClient300DOS kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : :2.2c,3.0,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

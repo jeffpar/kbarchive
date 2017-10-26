@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103583: Screen Fonts Varying in Size When in Different Resolution | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103583: Screen Fonts Varying in Size When in Different Resolution" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103583/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103583/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103583/","publisher":null,"image":null,"headline":"Q103583: Screen Fonts Varying in Size When in Different Resolution","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103583-screen-fonts-varying-in-size-when-in-different-resolution">Q103583: Screen Fonts Varying in Size When in Different Resolution</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103583
+Product(s): Microsoft FoxPro
+Version(s): 2.5x 2.60 2.60a 3.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+You may note that items carefully sized in the Screen Builder for one
+resolution do not exactly match in another resolution. This behavior is the
+result of the Windows font mapper being unable to exactly match the font in
+the new resolution.
+
+The font mapper attempts to match the many characteristics of the named
+font with the fonts available in the new resolution. It matches size,
+style, family, and a number of other characteristics to determine the best
+match. If no exact match is found, the nearest possible match is chosen.
+
+This varying font selection can become a problem when the font that is
+chosen as the screen font for a screen (see the Screen Layout dialog box)
+cannot be matched on the destination resolution. Since the screen font is
+used to size and position all the items on the screen, sizing and
+positioning can vary significantly if the font cannot be exactly matched,
+which results in Windows selecting a "best fit" match.
+
+To mitigate the effects of this problem, do the following:
+
+1. Follow Windows dialog box design practice and design screens with a lot of
+  space around individual items. This type of design allows items to "float"
+  when varying resolutions and screen fonts are used.
+
+2. Design screens with a TrueType screen font. Because the various sizes of each
+  TrueType font are derived programmatically for each resolution and size
+  combination, TrueType fonts are available in virtually any size, which means
+  that the font mapper never has to settle for second best.
+
+3. Make sure that the chosen design font is available on the destination
+  machines--for example, TrueType fonts are not available in Windows 3.0. Also
+  make sure you don't use a font that wasn't shipped with Windows because that
+  font may not be installed on the destination machines.
+
+  If the destination machines are running Windows 3.1, it is best to use the
+  TrueType fonts that are shipped with Windows 3.1 (for example, Arial, Times
+  New Roman, and so on).
+
+  If the destination machines may be running Windows 3.0 instead of 3.1, use the
+  fonts shipped with Windows 3.0 (such as Courier, Helv, or Tms Rmn).
+
+Additional query words: VFoxWin FoxWin 2.50 2.50a
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro260a kbVFP300
+Version           : 2.5x 2.60 2.60a 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

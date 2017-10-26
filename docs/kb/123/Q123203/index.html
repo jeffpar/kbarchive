@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123203: X.121 Specification for X.25 Address Structure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123203: X.121 Specification for X.25 Address Structure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123203/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123203/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123203/","publisher":null,"image":null,"headline":"Q123203: X.121 Specification for X.25 Address Structure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123203-x121-specification-for-x25-address-structure">Q123203: X.121 Specification for X.25 Address Structure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123203
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+3.10 3.50
+
+WINDOWS
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Within the X.25 network protocol specification, the X.121 specification defines
+the format of the X.25 address. The structure of X.25 addresses resembles phone
+numbers.
+
+MORE INFORMATION
+================
+
+The following text explains the structure of the X.25 address.
+
+Data Network Identification Code (DNIC)
+---------------------------------------
+
+The DNIC makes up the first four digits in an X.121 or X.25 address.
+
+Country Code
+------------
+
+The first three digits in the DNIC are the country code. For example, the country
+code for Canada is 302, so every X.25 network address in Canada begins with 302.
+The U.S. has several country codes. U.S. DNICs can start with 310, 311, 312, or
+313.
+
+Network ID
+----------
+
+The fourth digit is the Network ID, identifying which network it is. For example,
+DataPac of Canada has a network ID of 0, so the DNIC for DataPac is 3020.
+Infoswitch of Canada has a network ID of 9, so Infoswitch has a DNIC of 3029. In
+the U.S. MCI has a DNIC of 3106, Sprinet has a DNIC of 3110, and Infonet has a
+DNIC of 3137.
+
+The National Number
+-------------------
+
+The National Number is the 5th through 12th digits of the X.25 address. This
+number is used to identify a unique DCE node (X.25 node) within a network.
+Network vendors lease DCE or X.25 nodes. Each of these nodes must have a unique
+X.121 address. Within a given vendor's X.25 network, the first four digits of
+the DCE addresses will all be the same--they will be the DNIC for the vendor.
+Digits 5 through 12 (the National Number) are assigned by the network vendor to
+create a unique X.25 address for each X.25 node, or Circuit Terminating
+Equipment (DCE).
+
+Subaddress
+----------
+
+Most networks support a two-digit subaddress, which can be added to the end of
+the National Number. The two digits are not used by the network, but are passed
+through for use by the user's Data Terminating Equipment (DTE). The DTE is
+primarily the X.25 card (Eicon or Atlantis) that the X.25 application uses to
+communicate with the network DCE node, where each physical port on an X.25 card
+is connected to a DCE node.
+
+The two subaddress digits are usually used when X.25 applications are located on
+LAN workstations. Eicon and Atlantis cards require a two-digit subaddress when
+they will be managing X.25 sessions (or virtual circuits) for X.25 applications
+(such as an MTA or X.400 Gateway) when the application is running on a LAN
+workstation that does not contain the Eicon or Atlantis card.
+
+Note that the .INI entry "X25SubAddress=" for MTA in PC Mail version 3.2x is
+somewhat misleading because when the .INI also has the entry
+"CommType=X25Eicon", the "X25SubAddress" will always be the X.25 address of the
+network DCE the Eicon port is attached to (usually a 12-digit number composed of
+DNIC and a National Number), with the actual two-digit subaddress appended to
+the end of the long X.25 (X.121) address if it is needed. For MTAs launched with
+the INI entry "CommType=X25Atlan", the .INI entry "X25SubAddress=" is only two
+digits. The difference is due to design differences between the Ecion and
+Atlantis cards.
+
+Inter-Network
+-------------
+
+Sometimes to make a connection between two networks in two different countries,
+an extra digit is added before the DNIC, usually a one. This varies by vendor.
+
+The current maximum length for an X.121 address is 15 digits. The typical address
+length is 12 or 14 digits.
+
+Null-Modem Operation
+--------------------
+
+When two X.25 cards are connected with an X.25 null-modem cable, there is no
+network present and the long X.121 address is not needed. The optional two-digit
+subaddress will be needed if the X.25 cards are also connected to a LAN and will
+be establishing X.25 sessions for PC Mail version 3.2x MTAs, Gateways or MS
+Exchange processes running on LAN PCs, PCs without the X.25 card installed in
+them.
+
+Additional query words: prodnt 3.10
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

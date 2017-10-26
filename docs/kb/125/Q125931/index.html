@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125931: SMS Server Selection Using Appstart | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125931: SMS Server Selection Using Appstart" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125931/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125931/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125931/","publisher":null,"image":null,"headline":"Q125931: SMS Server Selection Using Appstart","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125931-sms-server-selection-using-appstart">Q125931: SMS Server Selection Using Appstart</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125931
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbnetwork kbDatabase smsdatabase
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+You can run shared applications from Systems Management Server version 1.0 by
+using the Appstart program to select an appropriate application server. There
+are three ways Appstart locates a server (in order):
+
+- Existing Share
+
+- Existing Server
+
+- Random
+
+Existing Share
+--------------
+
+If an existing connection to a needed share exists, Appstart piggy-backs or
+reuses the existing share connection. Appstart assumes that a previous attempt
+to connect was made, and, during that attempt, these same rules were followed.
+This is done to maximize load balancing on the initial connection, and minimize
+the total number of distinct connections a client makes.
+
+Existing Server
+---------------
+
+If there is already a session established with the server providing the desired
+share and a connection to the share does not already exist, Appstart connects to
+this server and share. Quite often a local connection will exist to the SMS
+Windows NT logon server (and SMS_SHR) that authenticated the logon. For this
+reason, the majority of Appstart requests will go to a Windows NT (or LAN
+Manager) domain controller local to the client computer.
+
+Random
+------
+
+If no shares or servers are connected that have the desired resources, Appstart
+will randomly pick from the list in the network accounts database (NAD).
+
+Random selection is rarely performed after either the existing share or server
+methods have been used. They are oriented to the local subnet, while the random
+method acts as a safety net. The random selection will most likely be made on
+the local subnet, but it cannot be guaranteed in SMS version 1.0. That is why
+the existing share and server methods are attempted first. To ensure a local
+connection, you can add a NET USE command to a local distribution server in the
+logon script. Then you guarantee a session because Appstart will always check
+for an existing server before choosing randomly.
+
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbnetwork kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

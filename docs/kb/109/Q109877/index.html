@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109877: BUG: Smallest Negative Integers Cause Error on Input | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109877: BUG: Smallest Negative Integers Cause Error on Input" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109877/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109877/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109877/","publisher":null,"image":null,"headline":"Q109877: BUG: Smallest Negative Integers Cause Error on Input","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109877-bug-smallest-negative-integers-cause-error-on-input">Q109877: BUG: Smallest Negative Integers Cause Error on Input</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109877
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to execute a program that reads in the smallest negative integer
+within the range of the variable type may cause the following run-time error to
+be generated:
+
+  run-time error F6100
+  INTEGER overflow on input
+
+RESOLUTION
+==========
+
+Because these smallest integers do not cause a problem when calculated
+internally, this problem can be addressed by changing the input data to the
+smallest allowable value for the integer size, and then subtracting one (1)
+after the value is read in.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft FORTRAN PowerStation
+32 for NT, version 1.0. This is not a problem in Microsoft FORTRAN for MS-DOS,
+version 5.1. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The range of integers that can be read in correctly is:
+
+  -127 to 127 for INTEGER*1
+  -32,767 to 32,767 for INTEGER*2
+  -2,147,483,647 to 2,147,483,647 for INTEGER*4
+
+The problem occurs when trying to read in
+
+  -128 for INTEGER*1
+  -32,768 for INTEGER*2
+  -2,147,483,648 for INTEGER*4
+
+Sample Code
+-----------
+
+C Compile options needed: have no effect
+C The following code demonstrates the problem:
+
+         integer*1 i
+        integer*2 j
+        integer*4 k
+        open(1,file='test.dat')
+        do n=3,5
+          write(1,*) -2**((2**n-1)) !write -128, -32768, -2147483648
+        end do
+
+        rewind(1)
+        read(1,*,iostat=ierr) i
+        if(ierr.eq.6100) then
+          print*, 'error reading integer*1 was: ',ierr
+        end if
+
+        read(1,*,iostat=ierr) j
+        if(ierr.eq.6100) then
+          print*, 'error reading integer*2 was: ',ierr
+        end if
+
+        read(1,*,iostat=ierr) k
+        if(ierr.eq.6100) then
+          print*, 'error reading integer*4 was: ',ierr
+        end if
+        pause
+        end
+
+REFERENCES
+==========
+
+Microsoft FORTRAN PowerStation 32 "Programmer's Guide," page 48, "Integer Data
+Types."
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

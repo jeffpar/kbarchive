@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150643: PRB: Setting Wrong System Date Causes Lost Project History | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150643: PRB: Setting Wrong System Date Causes Lost Project History" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150643/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150643/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150643/","publisher":null,"image":null,"headline":"Q150643: PRB: Setting Wrong System Date Causes Lost Project History","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150643-prb-setting-wrong-system-date-causes-lost-project-history">Q150643: PRB: Setting Wrong System Date Causes Lost Project History</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150643
+Product(s): Microsoft SourceSafe
+Version(s): 4.0,6.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbSSafe400 kbSSafe600
+Last Modified: 19-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 6.0 
+- Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Resetting the system time and date to something earlier than a project's
+creation time and date can cause that project's labeling information to be lost.
+
+CAUSE
+=====
+
+SourceSafe uses the system date and time to determine if a file is within a
+valid range for a label. Manually altering the system clock to facilitate a
+desired date preceding the creation date of the project causes serious damage to
+the labeling structure of the project.
+
+RESOLUTION
+==========
+
+Make sure the system clock is set to the right time before checking in files. If
+you need to alter the computer's system date and time, you must be careful to
+reset to the correct date and time before checking files in to SourceSafe.
+
+On a network server, all workstations should be synchronized to the server's time
+to ensure correct date/time stamping by those workstations using SourceSafe.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The NET TIME command is used to synchronize the time in Windows NT. The syntax
+is as follows:
+
+     NET TIME [\\computername | /DOMAIN:domainname] /SET
+
+where \\computername is the computer to which you want to synchronize your
+computer's clock. If you have a domain controller, use the domain to synchronize
+with the domain controller.
+
+The SYSTIME utility is used to synchronize time using a Novell Netware File
+server. The syntax for this command can be found in Novell's Help system.
+
+STEPS TO REPRODUCE
+------------------
+
+1. Create a new project and add some files.
+
+2. Set the system clock back to an earlier date.
+
+3. Add a Label to the project.
+
+4. Check the files out from the project.
+
+5. Set the system clock back to the current time and date.
+
+6. Check the files in.
+
+7. View the History of the project.
+
+RESULT: The label does not appear in the project's history.
+
+Additional query words: stamp date time
+
+======================================================================
+Keywords          : kb3rdparty kbSSafe400 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe16bitSearch
+Version           : :4.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

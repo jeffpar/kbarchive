@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190068: BUG: Control Interface Wizard May Not Expose BackColor Property | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190068: BUG: Control Interface Wizard May Not Expose BackColor Property" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190068/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190068/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190068/","publisher":null,"image":null,"headline":"Q190068: BUG: Control Interface Wizard May Not Expose BackColor Property","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190068-bug-control-interface-wizard-may-not-expose-backcolor-property">Q190068: BUG: Control Interface Wizard May Not Expose BackColor Property</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190068
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbwizard kbOSWinNT kbVBp600bug kbOSWin kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you have used the ActiveX Control Interface Wizard to expose both the
+Appearance and BackColor properties of a control and you use the control in a
+project, any changes that you make to the BackColor property in the control's
+Properties window do not appear when you run the project.
+
+RESOLUTION
+==========
+
+You can manipulate the desired properties in code, or you can choose not to
+expose the Appearance property.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create a UserControl Using the ActiveX Control Interface Wizard:
+
+1. Start Visual Basic 6.0, and open a new ActiveX Control project. Place a
+  command button on the UserControl.
+
+2. From the Add-Ins menu, select Add-In Manager and double-click "VB 6 ActiveX
+  Ctl Interface Wizard" in the Available Add-Ins column. Click OK to dismiss
+  the dialog.
+
+3. From the Add-Ins menu, select ActiveX Control Interface Wizard.
+
+  NOTE: If the Introduction screen for the ActiveX Control Interface Wizard
+  appears, click Next.
+
+4. In the Select Interface Member screen, choose the Appearance property from
+  the Available Names list on the left, click the "&gt;" button to add it to
+  the Selected Names list on the right. Click Next.
+
+5. When the Create Custom Interface Members screen appears, click Next.
+
+6. In the Set Mapping window, under the Public Name list, select the Appearance
+  and BackColor properties for the UserControl member in the Control and Member
+  lists. Click Next.
+
+7. In the Set Attributes window, click Finish. Click Close to quit the ActiveX
+  Control Interface Wizard Summary dialog box.
+
+8. From the File menu, select Make Project1.ocx to compile the control.
+
+Test the UserControl in Another Project:
+
+1. Create a new Standard EXE project.
+
+2. Select Components from the Project menu. Add the UserControl to the toolbox
+  by selecting it from the list and clicking Apply.
+
+3. Place the UserControl from the toolbox onto Form1 in your Standard EXE
+  project.
+
+4. In the Properties window, change the BackColor Property of the ActiveX
+  Control to Red.
+
+5. Press the F5 key to run the project.
+
+RESULT: The UserControl appears with the design-time BackColor (based on the
+Appearance Property setting) instead of the BackColor (Red) that you chose in
+the Properties Window for that control.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbOSWinNT kbVBp600bug kbOSWin kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

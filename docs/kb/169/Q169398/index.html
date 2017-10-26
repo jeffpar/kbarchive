@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169398: HOWTO: Manipulate File Shares with ADSI (VB Sample) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169398: HOWTO: Manipulate File Shares with ADSI (VB Sample)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169398/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169398/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169398/","publisher":null,"image":null,"headline":"Q169398: HOWTO: Manipulate File Shares with ADSI (VB Sample)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169398-howto-manipulate-file-shares-with-adsi-vb-sample">Q169398: HOWTO: Manipulate File Shares with ADSI (VB Sample)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169398
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,6.0
+Operating System(s): 
+Keyword(s): kbOSWinNT400 kbOSWin2000 kbVBp kbVBp400 kbVBp600 kbOSWin95 kbOSWin98 kbGrpDSVBDB kbDSup
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0, used with:
+   - the operating system: Microsoft Windows 2000 
+   - the operating system: Microsoft Windows NT 4.0 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows 95 
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 6.0, used with:
+   - the operating system: Microsoft Windows 2000 
+   - the operating system: Microsoft Windows NT 4.0 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows 95 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 6.0, used with:
+   - the operating system: Microsoft Windows 2000 
+   - the operating system: Microsoft Windows NT 4.0 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows 95 
+- Microsoft Visual Basic Standard Edition for Windows, version 4.0, used with:
+   - the operating system: Microsoft Windows 2000 
+   - the operating system: Microsoft Windows NT 4.0 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use Active Directory Service Interfaces (ADSI) to manipulate file shares
+as shown in the Visual Basic sample code below.
+
+MORE INFORMATION
+================
+
+You must install the ADSI runtime (ADS.EXE) available from
+www.microsoft.com/ntserver/info/adsi.htm, and then add a reference to Active DS
+Type Library.
+
+Note: Windows 2000 includes the ADSI 2.5 run time. Installation of the above
+runtime is not required.
+
+The following code first gets a fileshare object on a server and reads its path
+property. Then it gets a fileservice object on a server, uses it to enumerate
+the shares on the server, creates a new share \\SERVER\newshare for C:\, and
+deletes the share it just created. You can omit the DOMAIN\ in the code below,
+but you may see some performance degradation caused by additional browsing to
+find the SERVER:
+
+     Sub foo()
+
+     Dim comp As IADsComputer
+     Dim serv As IADsService
+     Dim fserv As IADsContainer
+     Dim share As IADsFileShare
+     Dim shareNew As IADsFileShare
+     Dim v As Variant
+
+     ' Replace DOMAIN, SERVER &amp; SHARE with the appropriate
+     ' domain, server  and share names
+     Set share = GetObject("WinNT://DOMAIN/SERVER/lanmanserver/SHARE")
+     v = share.Path ' Gets directory path on server
+     Set share = nothing
+
+     ' Replace DOMAIN &amp; SERVER with the appropriate domain and server names
+     Set fserv = GetObject("WinNT://DOMAIN/SERVER/lanmanserver")
+
+     ' Enumerate existing shares
+     For Each share In fserv
+       v = share.Class
+       v = share.ADsPath
+       v = share.HostComputer
+       v = share.Path
+     Next share
+
+     ' Create share in fileservice container
+     Set shareNew = fserv.Create("fileshare", "newshare")
+     shareNew.Path = "C:\"
+     shareNew.SetInfo  ' Commit new share
+
+     ' Delete share
+     fserv.Delete "fileshare", "newshare"
+
+     ' Fails since share is gone
+     shareNew.GetInfo
+
+     End Sub
+
+REFERENCES
+==========
+
+For more informatioin about the ADSI specification, see the following Microsoft
+Web site in the Platform Software Development Kit (SDK):
+
+  http://msdn.microsoft.com/library/default.asp?url=/library/en-us/netdir/adsi/directory_services.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWinNT400 kbOSWin2000 kbVBp kbVBp400 kbVBp600 kbOSWin95 kbOSWin98 kbGrpDSVBDB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :4.0,6.0
+Hardware          : ALPHA MIPS x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

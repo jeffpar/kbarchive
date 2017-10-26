@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236048: Account Creation for Secondary Site Requires Network Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236048: Account Creation for Secondary Site Requires Network Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236048/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236048/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236048/","publisher":null,"image":null,"headline":"Q236048: Account Creation for Secondary Site Requires Network Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236048-account-creation-for-secondary-site-requires-network-connection">Q236048: Account Creation for Secondary Site Requires Network Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236048
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kberrmsg kbsms200
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A resource domain server may not be able to communicate via TCP/IP with the
+master domain primary domain controller to update the Security Accounts Manager
+(SAM) with the master domain Systems Management Server (SMS) service accounts
+for the secondary site.
+
+This prevents the SMSServer_&lt;sitecode&gt; account from being created in the
+domain, and prevents communications between the primary SMS site server and the
+secondary site from being established.
+
+The secondary site server must have TCP/IP or IPX communication to the domain
+primary domain controller for a successful site installation.
+
+CAUSE
+=====
+
+During the installation of the SMS 2.0 secondary site the following error
+message may be listed in the SMSsetup.log file:
+
+  06-21-1999 15:45:36 Starting evaluation process.
+  06-21-1999 15:45:36 Enough free disk space.
+  06-21-1999 15:45:51 Cannot find any PDC for domain XXXX, Win32 return = 2453
+  06-21-1999 15:45:51 The domain and PDC checked out OK.
+
+The following message may be listed later in the log:
+
+  06-21-1999 16:11:07 Cannot create server account SMSServer_4XX in domain
+  XXXX.
+
+Because the server that is being used for the secondary site cannot communicate
+with the primary domain controller of the master domain, the
+SMSServer_&lt;sitecode&gt; account cannot be created. This account is used for
+communication between the primary site server and the secondary site.
+
+RESOLUTION
+==========
+
+To resolve this issue, create a routed path for the secondary site server to be
+able to communicate via TCP/IP to the primary site server. Once the secondary
+site server can ping the primary site server by name, a new installation of the
+secondary site is completed, the account is created, and the site becomes
+active.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

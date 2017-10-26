@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140565: PRB: SET INDEX TO Command Causes Error When Run from a Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140565: PRB: SET INDEX TO Command Causes Error When Run from a Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140565/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140565/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140565/","publisher":null,"image":null,"headline":"Q140565: PRB: SET INDEX TO Command Causes Error When Run from a Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140565-prb-set-index-to-command-causes-error-when-run-from-a-form">Q140565: PRB: SET INDEX TO Command Causes Error When Run from a Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140565
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+One of the following errors occurs occur when attempting to run the SET INDEX TO
+command programmatically from a running form:
+
+- File must be opened exclusively.
+
+-or-
+
+- File is in use by another.
+
+CAUSE
+=====
+
+A table opened by the Data Environment of a form is opened shared by default.
+Therefore, when the form is running and you issue an INDEX ON command, an error
+occurs.
+
+RESOLUTION
+==========
+
+Set the Exclusive Property of the cursor to .T. at design time.
+
+NOTE: Attempting to set this property at run-time causes the following error
+message:
+
+  Property setting will not take effect until data environment reloaded
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form.
+
+2. Right-click the form, and then click Data Environment.
+
+3. Right-click the Data Environment window, and then click Add.
+
+4. Locate the Customer table in the Vfp\Samples\Data directory, and then select
+  and add it to the Data Environment of the form.
+
+5. Scroll down in the list box displaying the Customer table and note which
+  indexes which currently exist. This is so that an index that already exists
+  isn't recreated when the INDEX ON command is run in Step 7 later.
+
+6. Add a command button to the form.
+
+7. Add the following code to the Click method of the command button
+
+       SELECT CUSTOMER
+       INDEX ON &lt;field_name&gt; TAG &lt;field_name&gt;
+
+  where field_name is the name of a field in the Customer table that does not
+  already have an index tag, as noted earlier in Step 5.
+
+8. Save and run the form.
+
+9. Click the command button.
+
+Steps to Correct Form Created in Previous Example
+-------------------------------------------------
+
+1. Close, and then edit the form.
+
+2. Right-click the form, and then click Data Environment.
+
+3. Right-click the Customer table list box, and then click Properties.
+
+4. In the Properties window, click the Data tab, and then examine the Exclusive
+  property. Note that the default value is .F.
+
+5. Change the Exclusive value to .T., and then save and rerun the form.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

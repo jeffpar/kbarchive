@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118493: Long Filenames Cause Problems with Earlier Versions of MS-DOS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118493: Long Filenames Cause Problems with Earlier Versions of MS-DOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118493/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118493/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118493/","publisher":null,"image":null,"headline":"Q118493: Long Filenames Cause Problems with Earlier Versions of MS-DOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118493-long-filenames-cause-problems-with-earlier-versions-of-ms-dos">Q118493: Long Filenames Cause Problems with Earlier Versions of MS-DOS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118493
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): diskmem win95 kbDiskMemory
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+One or more of the following symptoms occur while you are running MS-DOS 6.22 or
+earlier:
+
+- In a directory listing, the volume label is reported incorrectly.
+
+- When you try to remove a partition, Fdisk reports the following error:
+
+  Volume label does not match
+
+- The Label command reports the following error when changing the volume
+  label:
+
+  Cannot make directory entry
+
+- Symantec Norton Disk Doctor reports files with names such as AA, AB, and AT
+  are too long or too short. Nothing is corrected when Norton Disk Doctor tries
+  to fix the files.
+
+  NOTE: The SCANDISK command in Windows 95 reports no errors.
+
+CAUSE
+=====
+
+By design, Windows 95 stores long filename information in directory entries
+adjacent to the file being stored. These directory entries have the Read- Only,
+Hidden, System, and Volume Label attributes set. Earlier versions of MS-DOS
+recognize these entries as the volume label. As long as you continue to run
+Windows 95 and use long filenames, the volume label is unchangeable.
+
+RESOLUTION
+==========
+
+If you have removed Windows 95 from your system and want to correct the volume
+label, use one of the following procedures:
+
+Windows 95 Startup Disk Method
+------------------------------
+
+1. Obtain a Windows 95 Startup Disk that contains the LABEL.EXE command line
+  utility for Windows 95.
+
+2. Boot with the Startup Disk and type the following command:
+
+  " label &lt;drive&gt;: " (without the quotation marks)
+
+  where &lt;drive&gt; is the drive with the unusual volume label.
+
+3. When prompted, enter a new volume label.
+
+NOTE: If this procedure does not work, then the MS-DOS 6.x method below must be
+used.
+
+MS-DOS 6.x Method
+-----------------
+
+1. Back up your hard disk.
+
+2. Reformat the disk. For example, type the following at the MS-DOS command
+  prompt and then press ENTER
+
+  " format &lt;drive&gt;: /s /v:&lt;label name&gt; " (without the quotation
+  marks)
+
+  where &lt;drive&gt; is the drive with the unusual volume label and &lt;label
+  name&gt; is the new volume name you want to use.
+
+3. Restore your files.
+
+MORE INFORMATION
+================
+
+Most disk utilities need to be updated to function properly with long
+filenames.
+
+Norton Disk Doctor is manufactured by Symantec, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3rdparty ndd
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168210: HOWTO: Get Return Parameters from a Stored Procedure with DAO | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168210: HOWTO: Get Return Parameters from a Stored Procedure with DAO" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168210/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168210/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168210/","publisher":null,"image":null,"headline":"Q168210: HOWTO: Get Return Parameters from a Stored Procedure with DAO","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168210-howto-get-return-parameters-from-a-stored-procedure-with-dao">Q168210: HOWTO: Get Return Parameters from a Stored Procedure with DAO</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168210
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Although RDO has the capability to execute stored procedures that return
+parameters, DAO does not. It is possible to run these stored procedures with a
+little bit of creative SQL.
+
+NOTE: The SQL code used is SQL Server's Transact SQL. Other servers may require
+slightly different syntax but the concept is the same.
+
+MORE INFORMATION
+================
+
+RDO gives the programmer direct access to input and output parameters through
+the rdoParameters collection of the PreparedStatement object. DAO has no
+equivalent functionality, but SQL does. The following Visual Basic code connects
+to a SQL Server, creates a stored procedure that has a return parameter, one
+input parameter, one input/output parameter and one output parameter, runs the
+stored procedure, and retrieves the output parameter values:
+
+1. Start a new Project. Form1 is created by default.
+
+2. Under the Tools - References menu, select the proper DAO reference.
+
+3. Add a Command Button to the form.
+
+4. In the Command1_Click() event, add the following code:
+
+      Private Sub Command1_Click()
+
+         Dim db As Database
+         Dim rs As Recordset
+         Dim strConnect As String
+         Dim strSQL As String
+         Dim strResult As String
+
+         'Set connect string.
+         strConnect = "ODBC;DSN=DSN_SP_TEST;"
+
+         'Open the database
+         Set db = DBEngine.Workspaces(0).OpenDatabase("", False, False, _
+                                                      strConnect)
+
+         'Check to see if sp exists and delete it if it does.
+         strSQL = "if exists "
+         strSQL = strSQL &amp; "(SELECT * from sysobjects "
+         strSQL = strSQL &amp; "WHERE id = object_id('dbo.sp_ReturnParams') "
+         strSQL = strSQL &amp; "AND sysstat &amp; 0xf = 4) "
+         strSQL = strSQL &amp; "DROP PROCEDURE dbo.sp_ReturnParams"
+         MsgBox strSQL
+         db.Execute strSQL, dbSQLPassThrough
+
+         'Create the stored procedure. It really does not do much.
+         'It simply sets the variables and returns
+         strSQL = "/****** Object:  Stored Procedure dbo.sp_ReturnParams */"
+         strSQL = strSQL &amp; vbCrLf &amp; "CREATE PROCEDURE dbo.sp_ReturnParams"
+         strSQL = strSQL &amp; vbCrLf &amp; "/* Declare Parameters */"
+         strSQL = strSQL &amp; vbCrLf &amp; "  @intInput       int = Null,  "
+         strSQL = strSQL &amp; vbCrLf &amp; "  @strInputOutput varchar(20) = " _
+                                                             &amp; "Null OUTPUT,"
+         strSQL = strSQL &amp; vbCrLf &amp; "  @strOutput      varchar(20) = " _
+                                                             &amp; "Null OUTPUT"
+         strSQL = strSQL &amp; vbCrLf &amp; "AS"
+         strSQL = strSQL &amp; vbCrLf &amp; "BEGIN"
+         strSQL = strSQL &amp; vbCrLf &amp; "  SET NOCOUNT ON /* stops messages */"
+         strSQL = strSQL &amp; vbCrLf &amp; "  DECLARE @intReturn int " _
+                                                     &amp; "/* Declare return */"
+         strSQL = strSQL &amp; vbCrLf &amp; "  SELECT @intReturn = 43 " _
+                                                     &amp; "/* Set the return */"
+         strSQL = strSQL &amp; vbCrLf &amp; "  SELECT @strInputOutput = " _
+                                                     &amp; "'Param InOut Test'"
+         strSQL = strSQL &amp; vbCrLf &amp; "  SELECT @strOutput = 'Param Out Test'"
+         strSQL = strSQL &amp; vbCrLf &amp; "  RETURN @intReturn"
+         strSQL = strSQL &amp; vbCrLf &amp; "END"
+         MsgBox strSQL
+         db.Execute strSQL, dbSQLPassThrough
+
+         'Get ready to call procedure.
+         'Declare the variables in SQL and then set them
+         'in SQL code. Then retrieve the values as a recordset.
+         strSQL = "SET NOCOUNT ON /* stops unwanted messages */"
+         strSQL = strSQL &amp; vbCrLf &amp; "/* Declare the variables */"
+         strSQL = strSQL &amp; vbCrLf &amp; "DECLARE @intIn       int"
+         strSQL = strSQL &amp; vbCrLf &amp; "DECLARE @strInOut     varchar(20)"
+         strSQL = strSQL &amp; vbCrLf &amp; "DECLARE @strOut      varchar(20)"
+         strSQL = strSQL &amp; vbCrLf &amp; "DECLARE @intRet      int"
+         strSQL = strSQL &amp; vbCrLf &amp; "/* Populate In Parameters */"
+         strSQL = strSQL &amp; vbCrLf &amp; "SELECT @intIn = 5"
+         strSQL = strSQL &amp; vbCrLf &amp; "SELECT @strInOut = 'In/Out In'"
+         strSQL = strSQL &amp; vbCrLf &amp; "/* Execute the procedure */"
+         strSQL = strSQL &amp; vbCrLf &amp; "EXECUTE @intRet = sp_ReturnParams "
+         strSQL = strSQL &amp; "@intIn, @strInOut OUTPUT, @strOut OUTPUT"
+         strSQL = strSQL &amp; vbCrLf &amp; "/* Select back the records */"
+         strSQL = strSQL &amp; vbCrLf &amp; "SELECT @intRet AS param1, @intIn "
+         strSQL = strSQL &amp; "AS param2, @strInOut AS param3, @strOut AS _
+                                                          param4"
+         Set rs = db.OpenRecordset(strSQL, dbOpenSnapshot, dbSQLPassThrough)
+
+         'Display the data in the parameters in a messagebox
+         strResult = "intReturn = " &amp; rs.Fields("param1")
+         strResult = strResult &amp; vbCrLf &amp; "intInPut = " &amp; rs.Fields("param2")
+         strResult = strResult &amp; vbCrLf &amp; "strInPutOutput = " &amp; _
+                                                          rs.Fields("param3")
+         strResult = strResult &amp; vbCrLf &amp; "strOutput = " &amp; _
+                                                          rs.Fields("param4")
+         MsgBox strResult
+      End Sub
+
+5. In the ODBC Administrator applet, create a DSN named DSN_SP_TEST that
+  connects to an SQL Server that you have the necessary rights to.
+
+6. Run the project. The code should connect to the server, create a stored
+  procedure named dbo.sp_ReturnParams, execute it passing in some values, and
+  display a message box with the return parameters.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Jon Fowler, Microsoft Corporation.
+
+
+Additional query words: kbVBp500 kbVBp600 kbdse kbDSupport kbVBp kbVBp400 KBdao
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120582: Directory Replicator Service Will Not Start | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120582: Directory Replicator Service Will Not Start" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120582/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120582/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120582/","publisher":null,"image":null,"headline":"Q120582: Directory Replicator Service Will Not Start","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120582-directory-replicator-service-will-not-start">Q120582: Directory Replicator Service Will Not Start</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120582
+Product(s): Microsoft Windows NT
+Version(s): 3.1,3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 20-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server 
+- Microsoft Windows NT Server versions 3.1, 3.5, 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Directory Replicator service fails to start. Event Viewer logs error 1057 or
+1069.
+
+CAUSE
+=====
+
+These errors can result from incorrect configuration of the Directory Replicator
+service, from incorrect configuration information in the Registry, or because
+domain user account information has not been synchronized. The most likely
+reason is that the password is invalid or the account was not granted "Logon as
+a service" privileges. Verify that you have completed the following steps to set
+up the service:
+
+1. Create a domain user, for example "REPLUSER", with a proper password. Make it
+  a member of Domain Users, Backup operators, Replicator groups.
+
+  - Select Password never expires.
+  - Clear User must change password at next logon.
+  - Clear User cannot change password.
+  - Clear Account disabled.
+  - Allow all hours for logon.
+  - Do not define a user profile or login script.
+
+2. From User Manager for Domains, choose User Rights from the Policies menu.
+  Select Show advanced user rights and grant the Replicator group the "Logon as
+  a Service" right.
+
+3. From Server Manager for Domains, select the server and choose Services from
+  the Computer menu. A list of services running on the server appears. Select
+  the Directory Replicator service and choose Startup.
+
+4. Specify startup type to be automatic and mark the default logon as "This
+  account," choosing REPLUSER. Type the correct password for the user in the
+  Password and Confirm password fields.
+
+  NOTE: The only password verification performed at this step is to check that
+  the Password and Confirm Password fields are the same. It is possible to
+  enter an incorrect user password in these fields; however, when the Directory
+  Replicator service attempts to start it will fail.
+
+Attempt to start the Directory Replicator service. If the error still occurs
+after following the previous steps, there may be a problem with the Registry
+information.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+Edit the ObjectName value under the following key in the HKEY_LOCAL_MACHINE
+subtree:
+
+  \System\Current Control Set\Service\Replicator
+
+Make sure the data type of ObjectName is REG_SZ and the value is &lt;domain
+name&gt;\repluser (where &lt;domain name&gt; is the correct domain for the
+Repluser account.)
+
+After editing the Registry, attempt to start the Directory Replicator service
+again. If the error persists, there may be a problem with the User Account or
+the User Account database. Check the System Event Log for errors generated by
+the Netlogon service. Verify that the user account database is successfully
+synchronized on all of the servers in the domain. Proceed with troubleshooting
+domain synchronization problems if these errors are revealed.
+
+Additional query words: prodnt Replication repl
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :3.1,3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

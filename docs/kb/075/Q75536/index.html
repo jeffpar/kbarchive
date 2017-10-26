@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q75536: Idle Interrupt (INT 28h) Under Windows 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q75536: Idle Interrupt (INT 28h) Under Windows 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/075/Q75536/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/075/Q75536/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/075/Q75536/","publisher":null,"image":null,"headline":"Q75536: Idle Interrupt (INT 28h) Under Windows 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q75536-idle-interrupt-int-28h-under-windows-30">Q75536: Idle Interrupt (INT 28h) Under Windows 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q75536
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MS-DOS TSR (terminate-and-stay-resident) programs that rely on the MS-DOS Idle
+interrupt (INT 28h) to receive a "time-slice" under Windows version 3.0 may not
+function consistently.
+
+MORE INFORMATION
+================
+
+The MS-DOS Idle interrupt (INT 28h), also known as the MS-DOS Safe to Use
+interrupt, is commonly used by TSRs to determine when it is safe to do
+background processing. During this interrupt, it is known that it is safe to use
+MS-DOS file operations and other MS-DOS (INT 21h) functions with numbers greater
+than 0Ch.
+
+However, if a TSR relies on INT 28h to give it a time-slice to carry out
+background tasks, then the TSR will not perform consistently because of the way
+that some applications process messages under Windows.
+
+For example, Write (a word processing application provided with Windows) does not
+let the system go idle; it uses a PeekMessage() loop. Because of this, the
+Windows KERNEL module never gets into its idle loop to issue an INT 28h.
+Therefore, when Write is running in Windows, no INT 28h interrupts will be
+issued. Note that Write will idle when a menu is pulled down -- allowing a few
+Idle interrupts to be generated.
+
+Do not rely on INT 28h to perform background processing under Windows; use some
+other mechanism to determine that the processor is idle. The MS-DOS Idle
+interrupt may be removed in a future version of Windows, and therefore should
+not be used if at all possible. The following is from AmitC:
+
+INT 28h is the MS-DOS Idle interrupt. KERNEL tries to simulate this and issues
+INT 28h's when it thinks that the system is idle. WinWord never lets the system
+go idle. It does PeekMessage() calls constantly and KERNEL never gets a chance
+to get into its idle loop to issue an INT 28h.
+
+Write has a similar behavior. However, Write does go idle once you pull down a
+menu.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q270106: PRB: VFP ODBC Driver in COM DLL Under MTS Package May Hang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q270106: PRB: VFP ODBC Driver in COM DLL Under MTS Package May Hang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/270/Q270106/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/270/Q270106/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/270/Q270106/","publisher":null,"image":null,"headline":"Q270106: PRB: VFP ODBC Driver in COM DLL Under MTS Package May Hang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q270106-prb-vfp-odbc-driver-in-com-dll-under-mts-package-may-hang">Q270106: PRB: VFP ODBC Driver in COM DLL Under MTS Package May Hang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q270106
+Product(s): Microsoft FoxPro
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbODBC kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 21-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A client application calls a FoxPro Component Object Model (COM) .dll file in an
+Microsoft Transaction Server (MTS)/COM+ package. Under certain circumstances,
+the client application may hang. This behavior can occur when:
+
+- The COM DLL accesses a FoxPro datasource through ODBC.
+
+- The Fetch Data In Background option is set to YES for the ODBC connection
+  that is used by the .dll server.
+
+RESOLUTION
+==========
+
+To work around this problem, deselect the Fetch Data in Background option on the
+DSN, either visually or through code.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create the COM Server:
+
+1. Copy the TESTDATA database to the computer that is running MTS/COM+.
+
+2. Create a new project in Microsoft Visual FoxPro called "VFP_PROB" (without
+  the quotation marks).
+
+3. Save the following code to a new program and add it to the project. (Remember
+  to change the DATA_PATH constant to a valid path. It needs to point to a
+  local directory on your MTS/COM+ computer.)
+
+  *********** START SERVER CODE **************
+  DEFINE CLASS SERVER AS CUSTOM OLEPUBLIC
+  	PROCEDURE GETDATA(lcSQLCmd, lcFetchOn)
+  		LOCAL lcDSN, lnSQLHand, lnSQLSuccess, lcFDIB, ;
+  			lcRetVal,lnStartTime,lnEndTime,lcQueryDuration
+
+                  *!* Change path appropriately for your computer.
+  		#DEFINE DATA_PATH "C:\DATA\TESTDATA.DBC"
+  		
+  		lcFDIB = IIF(lcFetchOn,"YES","NO")
+
+  		lcDSN = "DRIVER=Microsoft Visual FoxPro Driver;" + ;
+  			"UID=;Deleted=Yes;Null=Yes;Collate=Machine;BackgroundFetch=" + lcFDIB + ";" + ;
+  			"Exclusive=No;SourceType=DBC;SourceDB=" + DATA_PATH + ";"
+
+  		lnSQLHand = SQLSTRINGCONNECT(lcDSN)
+  		IF lnSQLHand &lt; 0
+  			lcRetVal = THIS.RaiseError()
+  			RETURN lcRetVal
+  		ENDIF
+
+  		lnStartTime = DATETIME()
+  		lnSQLSuccess = SQLEXEC(lnSQLHand,lcSQLCmd,"ResultSet")
+  		lnEndTime = DATETIME()
+  		lcQueryDuration = TRANSFORM(ROUND(lnEndTime - lnStartTime,0)) + " seconds"
+  		IF lnSQLSuccess &lt; 0
+  			lcRetVal = THIS.RaiseError()
+  			RETURN lcRetVal
+  		ENDIF
+
+  		lcRetVal = TRANSFORM(RECCOUNT("ResultSet")) + ;
+  			" Records Returned In ~ " + lcQueryDuration + ;
+  			". 'Fetch Data In Background' = " + lcFDIB + "."
+  		USE IN ResultSet
+  		SQLDISCONNECT(0)
+  		CLOSE DATABASES ALL
+  		RETURN lcRetVal
+  	ENDPROC
+
+  	PROCEDURE RaiseError
+  		LOCAL laErrArray[1], lcErrMsg
+  		AERROR(laErrArray)
+  		lcErrMsg = laErrArray(3)
+  		SQLDISCONNECT(0)
+  		RETURN lcErrMsg
+  	ENDPROC
+
+  ENDDEFINE
+  ***************** END SERVER CODE ***********
+
+4. Build the project into a multi-threaded COM server (.dll).
+
+5. With a text editor, open the .vbr file that was generated when you built the
+  .dll file (it is in the same directory as the .dll). Make note of the CLSID
+  because you need it later.
+
+6. Take the .dll and .tlb files to your computer running MTS/COM+. Add them to a
+  package.
+
+For additional information on this process, click the article numbers below to
+view the articles in the Microsoft Knowledge Base:
+
+  Q191623 HOWTO: Distribute VFP COM Components used with MTS
+
+  Q223406 HOWTO: Create an Empty MTS Package to Add Components for ASP
+
+Create the Clients:
+
+1. Copy the following code to a program file in a new instance of Microsoft
+  Visual FoxPro.
+
+2. Change the COM_CLSID and COM_SERVER constants to the CLSID you made note of
+  earlier, and also change the name of your MTS/COM+ computer.
+
+3. Save the program as four different file names (1.prg, 2.prg, 3.prg, 4.prg,
+  for example).
+
+4. Start three more instances of Microsoft Visual FoxPro, and then run the four
+  separate programs, one in each instance.
+
+Eventually, all four instances of FoxPro stop processing queries.
+
+  *********** START CLIENT CODE ***********
+  LOCAL loVFPCOM, lnCaseNum, lcSQLCmd, lcExitKey, lcYear
+
+  #DEFINE FetchData 	.T.
+  #DEFINE lnLower 	1
+  #DEFINE lnUpper 	5
+  #DEFINE COM_CLSID	"{6F5C4280-C6B4-4D84-936D-57E4AFFB843F}"
+  #DEFINE COM_SERVER	"\\MYSERVER"
+
+  loVFPCOM = CREATEOBJECTEX(COM_CLSID,COM_SERVER)
+
+  DO WHILE .T.
+  	lnCaseNum = INT((lnUpper - lnLower + 1) * RAND( ) + lnLower)
+  	DO CASE
+  		CASE lnCaseNum = 1
+  			lcYEAR  = "1992"
+  		CASE lnCaseNum = 2
+  			lcYEAR = "1993"
+  		CASE lnCaseNum = 3
+  			lcYEAR = "1994"
+  		CASE lnCaseNum = 4
+  			lcYEAR = "1995"
+  		CASE lnCaseNum = 5
+  			lcYEAR = "1996"
+  	ENDCASE
+  	lcSQLCmd = "SELECT * " + ;
+  		"FROM  testdata!customer INNER JOIN testdata!orders " + ;
+  		"ON  Customer.cust_id = Orders.cust_id " + ;
+  		"WHERE YEAR( Orders.order_date) = " + lcYEAR 
+
+  	? "Starting query..."
+  	? loVFPCOM.GETDATA(lcSQLCmd,FetchData)
+  	WAIT "Requery in 3 seconds. Press 'q' to exit..." TO lcExitKey TIMEOUT 3
+  	? ""
+  	IF lcExitKey = "q"
+  		EXIT
+  	ENDIF
+  ENDDO
+  RELE ALL
+  *********** END CLIENT CODE ***********
+
+To see this work, edit the four client programs and change the #DEFINE FetchData
+to .F.
+
+REFERENCES
+==========
+
+For additional information about the Fetch Data In Background option on the
+Microsoft Visual FoxPro ODBC driver, click the article numbers below to view the
+articles in the Microsoft Knowledge Base:
+
+  Q236019 PRB: ASP App Using ADO with Visual FoxPro ODBC Driver Stops IIS
+
+  Q175801 PRB: Accessing FoxPro Table in ASP Returns Error 80040e14
+
+  Q269881 PRB: Problems with Visual FoxPro Driver Fetch Data In Background
+  Option
+
+(c) Microsoft Corporation 200, All Rights Reserved. Contributions by Trevor
+Hancock, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbODBC kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

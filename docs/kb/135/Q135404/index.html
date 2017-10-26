@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135404: Multihomed Master Browser May Cause Event ID 8021 and 8032 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135404: Multihomed Master Browser May Cause Event ID 8021 and 8032" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135404/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135404/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135404/","publisher":null,"image":null,"headline":"Q135404: Multihomed Master Browser May Cause Event ID 8021 and 8032","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135404-multihomed-master-browser-may-cause-event-id-8021-and-8032">Q135404: Multihomed Master Browser May Cause Event ID 8021 and 8032</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135404
+Product(s): Microsoft Windows NT
+Version(s): 2000,3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+- Microsoft Windows 2000 Advanced Server 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+--------
+
+Your computer running Microsoft Windows NT or Windows 2000 may occasionally
+log one or more of the following events in the Event Viewer System log:
+
+  Event id: 8021
+  Source: Browser
+  Description: The browser was unable to retrieve a list of servers from the
+  browser master &lt;PDC&gt; on the network \device\&lt;protocol_netcard&gt;.
+  The data is the error code.
+
+  -or-
+
+  Event id: 8032
+  Source: Browser
+  Description: The browser service has failed to retrieve the backup list too
+  many times on transport of &lt;protocol_netcard&gt;. The backup browser is
+  stopping.
+
+This symptom occurs if:
+
+- Your computer is a multihomed computer (that is, it may link simultaneously
+  to two or more subnets using multiple network cards).
+
+- Your computer is a master browser.
+
+- Your computer is running the TCP/IP protocol.
+
+
+CAUSE
+=====
+
+The following situations can cause this symptom:
+
+- Your computer network cards are linked to the same subnet.
+
+- Your computer network cards are not linked directly to the same subnet, but
+  are linked indirectly through other subnets that they are connected to.
+
+- The master browser is using an incorrect subnet mask.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+- Unbind all but one of the TCP/IP subnet transport bindings from the
+  workstation service.
+
+  -or-
+
+- Remove all but one of the network cards or RAS connections.
+
+  -or-
+
+- At the command prompt type the following command:
+
+  "net stop browser" (without the quotation marks)
+
+  NOTE: This option prevents you from receiving computer browse lists from other
+  networks.
+
+After you perform these steps, wait at least 10 minutes to see if the errors
+still occur. If they do, continue troubleshooting by cross- referencing 2 pieces
+of information. First, check the transport that failed in the event log. For
+example, error 8021 displays a message similar to the following:
+
+  The browser was unable to retrieve a list of servers from the browser master
+  \\&lt;server_name&gt; on the network \Device\NetBT_&lt;driver_name&gt;. The
+  data is the error code.
+
+The important data is NetBT_&lt;driver_name&gt;, which indicates the protocol and
+netcard binding, also known as an "endpoint." The potential protocols you may
+see are:
+
+  Nbf_netcard = NetBEUI NetBT_netcard = TCP/IP (or NetBIOS over TCP/IP)
+  NwlnkIpx = IPX/SPX (NwLink) [will not indicate netcard] NwlnkNB = NetBIOS
+  over NwLink [will not indicate netcard]
+
+After you have determined the failed protocol endpoint, check the working status
+of the Browser service on all installed protocols with the Windows NT resource
+kit program Browstat.exe. At a command prompt, type the following command:
+
+  browstat status
+
+This will enumerate the browser status on all endpoints. Look for the message
+Browser is NOT active on domain under each endpoint. Disregard data about
+endpoints that list "NdisWanX" (such as Device\NetBT_NdisWan5); these are RAS
+endpoints and will usually list the error anyway.
+
+You should find a protocol match between these two steps. The next step is to
+record any important information about the protocol from Protocol Setup in the
+Network tool in Control Panel. Then, remove the protocol, restart the computer,
+and see if the error no longer gets logged (remember to wait at least 10
+minutes). Then, try reinstalling the protocol, checking for the error, and
+reapplying the service pack that exists on the current Windows NT installation.
+
+If the error persists after a protocol reinstallation, you may have problems with
+the network adapter card. Check with the vendor to see if there is an updated
+driver, or try another network adapter card.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. We are researching this problem and
+will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+Additional query words: tcpip multi-homed multi homed
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinNTS351search kbWinNTS350search kbWinAdvServSearch
+Version           : :2000,3.5,3.51,4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

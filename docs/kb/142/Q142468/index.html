@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142468: FIX: Adding Subitems To Hidden ListView Causes APP Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142468: FIX: Adding Subitems To Hidden ListView Causes APP Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142468/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142468/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142468/","publisher":null,"image":null,"headline":"Q142468: FIX: Adding Subitems To Hidden ListView Causes APP Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142468-fix-adding-subitems-to-hidden-listview-causes-app-error">Q142468: FIX: Adding Subitems To Hidden ListView Causes APP Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142468
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbCtrl kbVBp kbVBp400bug kbVBp500fix kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A 32-bit Visual Basic application with a ListView control can generate an
+application error or incorrectly display the subitems if the subitems are added
+to a ListView control that is hidden on a form.
+
+RESOLUTION
+==========
+
+To eliminate this behavior, use one of the following methods:
+
+If you want your ListView control in the form to be hidden when the form is
+shown, toggle the Visible property once before adding the subitems to the
+ListView control. To toggle the Visible property, initially set the Visible
+property to True and then reset the Visible property to False.
+
+-or-
+
+At design time, set the ListView control Visible property to True. Then in the
+first line of code in the form's Load procedure, set the ListView control
+Visible property to False.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Issue
+------------------------
+
+1. Start the 32-bit version of Visual Basic 4.0, or if it is already running,
+  click New Project on the File menu.
+
+2. Add the following controls to the Form1 form:
+
+  1. One Check Box
+
+  2. Two Image List Boxes
+
+  3. One ListView Control
+
+3. Set the Caption property of the Check box to "ListView Control Visible."
+
+4. Copy the following code to the Code window of the Form1 form:
+
+        Private Sub Check1_Click()
+
+           ListView1.Visible = Check1.Value = 1
+
+        End Sub
+
+        Private Sub Form_Load()
+
+           'Set the ListView control's Column Headers
+           Dim clmX As ColumnHeader
+           Set clmX = ListView1.ColumnHeaders.Add(, , "Author", _
+                      ListView1.Width / 3)
+           Set clmX = ListView1.ColumnHeaders.Add(, , "Author ID", _
+                      ListView1.Width / 3, lvwColumnCenter)
+           Set clmX = ListView1.ColumnHeaders.Add(, , "Birthdate", _
+                      ListView1.Width / 3)
+
+           'Set the ListView control's view property to show a "Report" view
+           ListView1.View = lvwReport
+
+           'Add ListItems to the ListView control
+           'Use an icon file and a bitmap file that comes with Visual Basic
+            Dim imgX As ListImage
+            Set imgX = ImageList1.ListImages.Add(, , LoadPicture _
+                       ("C:\VB\ICONS\WRITING\NOTE06.ICO"))
+            Set imgX = ImageList2.ListImages.Add(, , LoadPicture _
+                       ("C:\VB\REPORT\PROLOGOB.BMP"))
+            ListView1.Icons = ImageList1
+            ListView1.SmallIcons = ImageList2
+
+            Set itmX = ListView1.ListItems.Add(, , "John Doe")
+            itmX.SubItems(1) = "John Dow Sub item"
+
+        End Sub
+
+5. Press the F5 key to run the application.
+
+6. Click the check box. One of the following behaviors occur:
+
+  While using Microsoft Windows NT version 3.51, the following error is
+  returned:
+
+  An application error has occurred and an application error log is being
+  generated. VB32.exe. Exception: access violation (0xc0000005), Address:
+  0x0523ca55.
+
+  While using Microsoft Windows 95, the following error is returned:
+
+  VB32 caused an invalid page fault in module COMCTL32.OCX at 0137:0523ca55.
+
+  -or-
+
+  The ListView control incorrectly displays the subitems.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCtrl kbVBp kbVBp400bug kbVBp500fix kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

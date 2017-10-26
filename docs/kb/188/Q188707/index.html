@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188707: INFO: Visual C++ and the Year 2000, Years that Cause an Overflow | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188707: INFO: Visual C++ and the Year 2000, Years that Cause an Overflow" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188707/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188707/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188707/","publisher":null,"image":null,"headline":"Q188707: INFO: Visual C++ and the Year 2000, Years that Cause an Overflow","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188707-info-visual-c-and-the-year-2000-years-that-cause-an-overflow">Q188707: INFO: Visual C++ and the Year 2000, Years that Cause an Overflow</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188707
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbYear2000 kbCRT kbDateTime kbMFC kbVC420 kbVC500 kbVC600 kbGrpDSVCCompiler
+Last Modified: 02-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To determine whether applications developed with Visual C++ will encounter
+problems in the year 2000, you must consider the following three items:
+
+1. Display format and user input of dates.
+
+2. Temporary storage in the program. This includes variables and function
+  parameters.
+
+3. Long-term storage such as a database or file.
+
+Visual C++ is a flexible development tool. You can create your own date formats
+for display, input, and storage. This article can only comment on the APIs and
+data types supplied with the various technologies shipping with Visual C++. You
+should analyze your application for potential year 2000 problems in all other
+aspects of your programming.
+
+MORE INFORMATION
+================
+
+Following are the years that will cause an overflow in the date for each given
+technology. For the database APIs, please be aware that database drivers may
+reformat the date types to meet the needs of the target database. You must check
+the format of date types for your target databases.
+
+  YEAR    Technology
+  ----    ----------
+  2038    C Run-time (CRT) time functions and data types
+  2038    MFC CTime
+  9999    MFC COleDateTime
+  9999    ADO, RDO, DAO
+  16383   ODBC
+  2099    Win32 time functions and data types
+  2108    Win32 file time functions and data types
+  9999    OLE data types (such as: VARIANT, DATE)
+
+Additional query words: Y2K DATE struct tm FILETIME SYSTEMTIME SQL_TIMESTAMP_STRUCT SQL_DATE_STRUCT
+
+======================================================================
+Keywords          : kbYear2000 kbCRT kbDateTime kbMFC kbVC420 kbVC500 kbVC600 kbGrpDSVCCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

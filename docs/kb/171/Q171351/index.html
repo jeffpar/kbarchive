@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171351: Loopback Send/Receive Over IPX/SPX May Not Work Under Stress | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171351: Loopback Send/Receive Over IPX/SPX May Not Work Under Stress" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171351/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171351/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171351/","publisher":null,"image":null,"headline":"Q171351: Loopback Send/Receive Over IPX/SPX May Not Work Under Stress","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171351-loopback-sendreceive-over-ipxspx-may-not-work-under-stress">Q171351: Loopback Send/Receive Over IPX/SPX May Not Work Under Stress</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171351
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kbnetwork win95 kbAPI kbSDKPlatform kbWinsock kbGrpDSNet
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Windows 95, the IPX/SPX-compatible protocol (NWLINK) may not successfully
+send and receive data under the following conditions:
+
+- The same computer is both the sender and receiver of the data.
+
+- A large amount of data is being sent in a continuous stream.
+
+- The network adapter (NDIS) driver does not provide loopback functionality.
+
+Symptoms of this problem may include:
+
+- The data transfer never finishes. This is the most common symptom.
+
+
+- The computer may restart. This occurs rarely, and only if a large block of
+  data is being transferred.
+
+
+- The computer may stop responding (hang), requiring a cold boot (power- off or
+  reset). This occurs rarely, and only if a large block of data is being
+  transferred.
+
+
+CAUSE
+=====
+
+Loopback packets (in which the source and destination addresses are the same)
+are not recognized and handled internally by NWLINK. Instead, they are passed to
+the network adapter driver. If the network adapter driver does not recognize and
+handle loopback packets, the packet is sent out on the network wire. Under
+continuous stress of this type, and under certain timing conditions, the
+symptoms listed above may occur.
+
+RESOLUTION
+==========
+
+This condition may occur when you are running a program designed to test data
+throughput over IPX/SPX (including WinSock over IPX/SPX). We recommend that such
+tests be conducted between two separate computers, instead of on one computer in
+loopback mode. This not only avoids the problems mentioned here, but also
+returns more meaningful results.
+
+You can also work around this problem by using a network adapter driver that
+handles loopback packets internally without transmitting them on the network
+medium. For information about whether a particular network adapter driver
+handles loopback packets internally, contact the vendor of your network
+adapter.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+MORE INFORMATION
+================
+
+For additional information about issues related to loopback operations with
+NWLINK, please see the following articles in the Microsoft Knowledge Base:
+
+
+
+  Q127054 Loopback Functionality Does Not Work with Miniport Drivers
+
+  Q124648 DC21040 Causes Windows NT 3.5 to Stop Responding (Hang)
+
+
+======================================================================
+Keywords          : kbnetwork win95 kbAPI kbSDKPlatform kbWinsock kbGrpDSNet 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

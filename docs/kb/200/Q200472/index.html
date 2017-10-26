@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q200472: XFOR: How to Change the Default Header Separator for SNADSCONN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q200472: XFOR: How to Change the Default Header Separator for SNADSCONN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/200/Q200472/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/200/Q200472/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/200/Q200472/","publisher":null,"image":null,"headline":"Q200472: XFOR: How to Change the Default Header Separator for SNADSCONN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q200472-xfor-how-to-change-the-default-header-separator-for-snadsconn">Q200472: XFOR: How to Change the Default Header Separator for SNADSCONN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q200472
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may need to customize the header formation of the outgoing message from
+Exchange Server to the host. By default, a dashed line (-) separator is drawn
+under the Subject portion of the header. You may want to change this and this
+article describes an undocumented feature to remove or change the line
+separator.
+
+MORE INFORMATION
+================
+
+To remove or change the dashed line separator underneath the Subject portion of
+the header, follow these steps:
+
+1. Open up the Exchconn.ini file located under the Exchsrvr\Connect\Exchconn
+  directory. The exact location will be based on where the SNADS connector was
+  installed.
+
+2. Look for the [LME-SNADS-MEXDIA] section, you should find several parameters
+  already defined here:
+
+  [LME-SNADS-MEXDIA]
+
+   title      = Exchange To SNADS Transform
+   executable = lsmexdia.exe
+   params     = &amp;s
+   outputq    = snads.in
+
+3. Add the following line to this section to effectively remove the dashed-line
+  separator:
+
+  [LME-SNADS-MEXDIA]
+
+   title      = Exchange To SNADS Transform
+   executable = lsmexdia.exe
+   params     = &amp;s
+   outputq    = snads.in
+   lastline   =
+
+  Or add a string value to this parameter to set the separator. By default, the
+  SNADS connector will only output up to 78 characters, so if the string value
+  supplied is greater than 78 characters (or what the 'hostnoterightmargin'
+  value is in the [LME-SNADS] section) it will be truncated accordingly. The
+  string value is not repeated, so if you want 78 asterisk (*) characters, you
+  need to set lastline as follows:
+
+  lastline =
+  "******************************************************************************"
+
+4. Stop and restart the SNADS connector. The dashes under the Subject line will
+  now be removed, or changed to the specified value.
+
+
+Additional query words: SNADS connector; header composition, Subject line
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q223439: HOWTO: Using Class Wrappers to Access Windows Common Controls in | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q223439: HOWTO: Using Class Wrappers to Access Windows Common Controls in" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/223/Q223439/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/223/Q223439/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/223/Q223439/","publisher":null,"image":null,"headline":"Q223439: HOWTO: Using Class Wrappers to Access Windows Common Controls in","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q223439-howto-using-class-wrappers-to-access-windows-common-controls-in">Q223439: HOWTO: Using Class Wrappers to Access Windows Common Controls in</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q223439
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbsample kbATLWC kbCtrl kbATL300 kbGrpDSMFCATL
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When accessing Windows Common Controls in an MFC dialog box, you can use the
+thin class wrappers provided by MFC to simplify the task. Unfortunately, ATL
+does not "officially" provide this functionality.
+
+Normally, this would require you to create your own classes or communicate with
+the controls by using messages. Thankfully, there is another option. In the
+ATLCON sample included with Visual C++, you will find ATLControls.h, which has
+created thin wrapper classes for the Windows Standard and Common Controls. These
+wrapper classes can be used to access controls on an ATL dialog box or ATL
+composite control.
+
+Because these classes are not officially in ATL, they are only supported in the
+context of the sample included with this article. Should you need to, it is a
+straight-forward process to change the source code of your project's version of
+ATLControls.h.
+
+MORE INFORMATION
+================
+
+The first step is to copy the ATLControls.h file to your project. This can be
+done as follows:
+
+1. Go to the Online help and search for "ATL Samples Index".
+
+2. Select the ATLCON sample.
+
+3. Click "Click to open or copy the ATLCON project files" link.
+
+4. Copy the ATLControls.h file to your project directory.
+
+5. In the Visual C++ Workspace window, click the FileView tab.
+
+6. Right-click the Header Files directory and select Add Files to Folder from
+  the context menu.
+
+7. Browse to the file directory to which you copied ATLControls.h to select it.
+
+Note that the wrapper classes are part of the ATLControls namespace.
+We are ready to use ATLControls.h within our project:
+
+  //***** Adds untested wrapper classes for Win32 common controls.
+  //***** Used for CTabCtrl. Found in "ATLCON sample (ATL)".
+  #include "AtlControls.h"
+
+  //***** AtlControls.h classes are part of the ATLControls namespace
+  using namespace ATLControls;
+
+  class CForm: ... {
+     CTabCtrl m_TabCtrl; //*****
+
+     LRESULT OnInitDialog(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL&amp; bHandled) {
+        // Give a Tab Control on the dialog with ID: IDC_TabCtrl
+        m_TabCtrl = GetDlgItem(IDC_TabCtrl); //*****
+
+        // We can now use m_TabCtrl to manipulate the Tab Control.
+        ...
+     }
+
+Additional query words: CAnimateCtrl, CButton, CComboBox, CComboBoxEx, CDateTimePickerCtrl, CDragListBox, CEdit, CFlatScrollBar, CHeaderCtrl, CHotKeyCtrl, CImageList, CIPAddressCtrl, CListBox, CListViewCtrl, CMonthCalendarCtrl, CPagerCtrl, CProgressBarCtrl, CReBarCtrl, CRichEditCtrl, CScrollBar, CStatic, CStatusBarCtrl, CTabCtrl, CToolBarCtrl, CToolInfo, CToolTipCtrl, CTrackBarCtrl, CTreeItem, CTreeViewCtrl, CTreeViewCtrlEx, CUpDownCtrl.
+
+======================================================================
+Keywords          : kbsample kbATLWC kbCtrl kbATL300 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbATLsearch kbATL300
+Version           : WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

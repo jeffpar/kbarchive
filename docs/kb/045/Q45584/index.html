@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q45584: Can’t Take Address of Frame Variable in DLL (SS!=DS) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q45584: Can’t Take Address of Frame Variable in DLL (SS!=DS)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/045/Q45584/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/045/Q45584/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/045/Q45584/","publisher":null,"image":null,"headline":"Q45584: Can’t Take Address of Frame Variable in DLL (SS!=DS)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q45584-cant-take-address-of-frame-variable-in-dll-ssds">Q45584: Can’t Take Address of Frame Variable in DLL (SS!=DS)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q45584
+Product(s): See article
+Version(s): 5.10
+Operating System(s): OS/2
+Keyword(s): ENDUSER | SR# G890605-19757 | mspl13_c
+Last Modified: 25-JUL-1989
+
+Question:
+
+In my .DLL, whenever I take the address of an automatic variable, the
+compiler issues the following warning:
+
+   "address of frame variable taken, DS != SS"
+
+Whenever the DLL is called, it causes a GP fault. What is causing this
+problem and how do I correct it?
+
+When I added "NONSHARED" to the DATA directive in the .DEF file, the
+GP trapping stopped. Why did the trapping stop?
+
+Response:
+
+If you're using small or medium memory model, your pointers are
+2-byte pointers, which contain only the offset of the variable into
+the data segment.
+
+In compact, large, and huge models, pointers are 4 bytes, containing
+both a segment and an offset.
+
+When a .DLL is executing, it uses your stack (normally in your
+data segment) and the .DLL's default data segment. Thus, you must
+compile with /Au or /Aw, telling the compiler that it should not
+assume (as it normally does) that DS (the default data segment
+selector) and SS (the current stack segment selector) are the same.
+
+All near (2-byte) pointers are assumed to be relative to current DS.
+When you take the address of a frame (automatic) variable, this
+address is relative to SS. When SS == DS, as is the usual case, this
+is not a problem. However, it does cause problems in .DLLs, where SS
+cannot be equal to DS.
+
+There is no way to take a near address of a stack variable when
+DS!=SS. You do have several alternatives, however:
+
+1. Change to compact, large, or huge model. Since the pointers are far
+   pointers, you'll be able to represent the address properly. In
+   addition, all the run-time library functions accept such far
+   pointers.
+
+2. Use a far pointer to hold the address. You can do this without
+   changing memory models. This method has the advantage that the only
+   pointer accesses that are slowed are the individual far pointers
+   used to access the stack. The disadvantage is that most small and
+   medium model library routines do not support far pointers, so
+   you must either avoid those routines or copy the far data into
+   the default data segment before calling the routine. Please note
+   that this is only necessary with routines that accept pointers;
+   routines that accept variables by value aren't affected because the
+   value of the expression doesn't change when the pointer size does.
+   It is strongly recommended that you use prototypes and new-style
+   declarations for ALL your functions to prevent errors.
+
+3. Rework the code to avoid the need for taking the address of frame
+   variables.
+
+The reason the trapping seems to stop when you changed the .DEF file
+probably has more to do with the sizes of the segments involved -- in
+one case, the address generated was larger than the maximum for that
+segment; in the other, it happened not to be. In each case, the
+address was wrong because the compiler used DS rather than SS.
+Therefore, changing the data directive in the .DEF file covered up but
+did not correct the error.
+
+.DLL's which use the C Runtime Library **ALWAYS** use NONSHARED
+default data and instance initialization.  Instance initialization is
+specified in the LIBRARY statement of the .DEF file.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

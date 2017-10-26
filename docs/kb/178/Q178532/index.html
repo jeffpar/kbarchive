@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178532: XFOR: Configuring Exchange Internet Protocols with Proxy Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178532: XFOR: Configuring Exchange Internet Protocols with Proxy Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178532/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178532/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178532/","publisher":null,"image":null,"headline":"Q178532: XFOR: Configuring Exchange Internet Protocols with Proxy Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178532-xfor-configuring-exchange-internet-protocols-with-proxy-server">Q178532: XFOR: Configuring Exchange Internet Protocols with Proxy Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178532
+Product(s): Microsoft Exchange
+Version(s): winnt:2.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 10-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+- Microsoft Proxy Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Internet protocols can be configured to allow Internet
+clients to connect to the Microsoft Exchange Server information store through
+Microsoft Proxy Server version 2.0. Microsoft Exchange Server requires the
+addition of a configuration file, .ini, and installation of WinSock Proxy Client
+in order to work with Proxy Server 2.0. This is not necessary if Microsoft Proxy
+Server 2.0 is installed on the Microsoft Exchange Server.
+
+MORE INFORMATION
+================
+
+WinSock Proxy Client allows you to bind any Internet protocol to the external
+network interface of Microsoft Proxy Server. After the Internet protocol is
+bound to the external network interface, it is available to clients outside the
+proxy server. The proxy server then monitors for connections on behalf of the
+information store.
+
+When the configuration file is properly added and the appropriate Exchange
+service is restarted, the Exchange Server computer binds to the appropriate port
+on the network interface of the proxy server. This is easily verified by telnet
+to the respective port of the proxy server.
+
+The respective ports are as follows:
+
+  POP3: 110, 995 for Secure POP3 (SSL)
+  IMAP4: 143, 993 for Secure IMAP4 (SSL)
+  LDAP: 389, 636 for Secure LDAP (SSL)
+  NNTP: 119, 563 for Secure NNTP (SSL)
+
+Configuration is as follows:
+
+1. Install and configure Microsoft Proxy Server.
+
+2. Install and test the WinSock Proxy (WSP) client on the Exchange Server
+  computer by running a WinSock client application.
+
+  NOTE: The ping command, ICMP packets, is not passed by the proxy server. Use
+  telnet or ftp.
+
+3. Create a second Wspcfg.ini file for the Exchange store (Store.exe). Add the
+  information below to this Wspcfg.ini file and place the file in the directory
+  where Store.exe is located, typically Exchsrvr\Bin.
+
+         [STORE]
+         ServerBindTcpPorts=(Appropriate port for protocol used, multiple
+                             protocols can be configured)
+         Persistent=1
+         KillOldSession=1
+
+  Sample .ini entry for LDAP appears as follows:
+
+         [DSAMAIN]
+         ServerBindTcpPorts=389 (636 for Secure)
+         Persistent=1
+         KillOldSession=1
+
+4. If dynamic packet filtering is enabled (recommended), the proxy server
+  dynamically opens all necessary ports when they are requested. No special
+  configuration is needed.
+
+5. Stop and restart the Exchange information store (or directory for LDAP).
+
+6. You should now be able to contact the Exchange Server computer by connecting
+  to the proxy server's Internet IP address using an Internet client.
+
+NOTE: In order to bind to Secure Sockets Layer (SSL) ports, you must use the
+ProxyBindIP= statement in addition to the other entries. Without such a
+statement the Exchange Server computer will not bind to the proxy server
+properly, and thus not allow secure passage of messages through the Proxy server
+using SSL.
+
+Additional query words: XIMS XADM XGEN IIS PROXY NNTP IMAP4 POP3 LDAP TCPIP
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbAudDeveloper kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2 kbProxyServSearch kbProxyServ200
+Version           : winnt:2.0,5.0,5.5
+Hardware          : ALPHA x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

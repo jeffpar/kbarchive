@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271695: PRB: Picture in MDI Form Does Not Display | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271695: PRB: Picture in MDI Form Does Not Display" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271695/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271695/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271695/","publisher":null,"image":null,"headline":"Q271695: PRB: Picture in MDI Form Does Not Display","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271695-prb-picture-in-mdi-form-does-not-display">Q271695: PRB: Picture in MDI Form Does Not Display</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271695
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When programmatically setting the picture property of a multiple-document
+interface (MDI) Form, the picture may not be displayed, or may be partially
+rendered when an MDIChild form is dragged inside the MDI Form.
+
+This behavior does not occur in Microsoft Visual Basic 5.0.
+
+RESOLUTION
+==========
+
+Use the RedrawWindow API function to redraw the MDI Form after the picture
+assignment.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Visual Basic 6.0 Standard EXE project. Form1 is created by default.
+
+2. On the Properties window, set following properties for Form1:
+
+  MDIChild = True
+
+3. On the Project menu, click Add MDIForm to add a MDI Form.
+
+4. On the Properties window, set following properties for MDIForm1:
+
+  WindowState = 2 - Maximized
+
+5. on the Project menu, select Properties. On the General tab, select MDIForm1
+  as the Startup Object, and then modify MDIForm1's Load event as follows:
+
+  Private Sub MDIForm_Load()
+      'Show the Child Form
+      Form1.Show 
+  End Sub
+
+6. Add a CommandButton to Form1. Modify the button's click event as follows:
+
+  Private Sub Command1_Click()
+      'Assign picture
+      MDIForm1.Picture = LoadPicture("c:\winnt\winnt.bmp")
+  End Sub
+
+7. Start the application, and then drag Form1 from its default position toward
+  the center of the screen.
+
+8. Click the CommandButton on Form1, and note that no picture appears. The
+  expected behavior is that the picture appears if you drag Form1 to the
+  top-left corner of MDIForm1.
+
+Workaround
+----------
+
+In order to work around this behavior, you can call RedrawWindow after assigning
+a picture to the MDIForm's picture property. This causes the MDIForm to redraw
+and display the picture.
+
+1. On the Project menu, click Add Module to add a new module to the project.
+
+2. Paste the following code into the new module:
+
+  Public Declare Function RedrawWindow Lib "user32" (ByVal hWnd As Long, lprcUpdate As Any, _  
+  ByVal hrgnUpdate As Long, ByVal fuRedraw As Long) As Long
+  Public Const RDW_ALLCHILDREN = &amp;H80
+  Public Const RDW_ERASE = &amp;H4
+  Public Const RDW_INVALIDATE = &amp;H1
+  Public Const RDW_UPDATENOW = &amp;H100
+
+3. Modify the Command_Click Event on Form1 thus:
+
+  Private Sub Command1_Click()
+      'Assign picture
+      MDIForm1.Picture = LoadPicture("c:\winnt\winnt.bmp")
+      'Redraw Window
+      Call RedrawWindow(MDIForm1.hWnd, ByVal 0&amp;, 0&amp;, _ 
+           RDW_ERASE Or RDW_INVALIDATE Or RDW_ALLCHILDREN Or RDW_UPDATENOW)
+  End Sub
+
+4. Start the application, and then drag Form1 toward the center of the screen.
+
+5. Click the Command Button on Form1, and note that the picture is displayed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

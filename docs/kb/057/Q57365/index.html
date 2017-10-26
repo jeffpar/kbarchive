@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57365: &quot;Subprogram Not Defined&quot; GetCopyBox, AttrBox Using GENERAL.BAS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57365: &quot;Subprogram Not Defined&quot; GetCopyBox, AttrBox Using GENERAL.BAS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57365/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57365/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57365/","publisher":null,"image":null,"headline":"Q57365: &quot;Subprogram Not Defined&quot; GetCopyBox, AttrBox Using GENERAL.BAS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57365-subprogram-not-defined-getcopybox-attrbox-using-generalbas">Q57365: "Subprogram Not Defined" GetCopyBox, AttrBox Using GENERAL.BAS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57365
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891219-77 docerr | mspl13_basic
+Last Modified: 1-AUG-1990
+
+GetCopyBox, PutCopyBox, and AttrBox (which are all invoked in
+GENERAL.BAS) are assembly language procedures located in the UIASM.ASM
+assembler source file, in the UIASM.OBJ object file, and in the
+UITBEFR.QLB Quick library. This fact needs to be added on Pages 499,
+585-586, 589, and 591 of the "Microsoft BASIC 7.0: Language Reference"
+manual for Microsoft BASIC Professional Development System (PDS)
+versions 7.00 and 7.10. You will need to know this when using
+GENERAL.BAS from the User Interface (UI) Toolbox as described below.
+
+If you are using GENERAL.BAS in QBX.EXE and get a "Subprogram not
+defined" error on a call to GetCopyBox, PutCopyBox, or AttrBox, then
+you must invoke QBX with a Quick library containing these routines,
+for example:
+
+   QBX /L UITBEFR.QLB.
+
+[Also, if you are using GENERAL.BAS in QBX.EXE and get a "Subprogram
+not defined" error on a call to MouseHide (in the Box subprogram),
+then you must Load (choose Load from the File menu) the MOUSE.BAS
+source file, which contains MouseHide and the other mouse UI Toolbox
+routines.]
+
+This information applies to the UI Toolbox in Microsoft BASIC PDS
+versions 7.00 and 7.10 for MS-DOS.
+
+If you chose to have Quick libraries created when you ran SETUP.EXE
+for BASIC 7.00 or 7.10, you already have the UITBEFR.QLB Quick library
+that contains all the UI Toolbox routines. SETUP.EXE places
+UITBEFR.QLB by default in the directory where you chose to place
+.LIB files.
+
+Pages 534 and 535 "Microsoft BASIC 7.0: Language Reference" for
+versions 7.00 and 7.10 describe how to build UITBEFR.QLB (or subsets)
+yourself. (You can use LINK /Q to build UIASM.OBJ into a Quick library
+and use LIB.EXE to build the parallel .LIB library.)
+
+The three routines in UIASM.OBJ (PutCopyBox, GetCopyBox, and AttrBox)
+must always be present when using the UI Toolbox.
+
+Page 586 correctly describes how to make calls to AttrBox SUB. Since
+the code for AttrBox is not in the GENERAL.BAS source-code file, if
+you want to alter the code for AttrBox, you must edit the UIASM.ASM
+source file and reassemble it with Microsoft Macro Assembler (MASM).
+
+Documentation Correction
+------------------------
+
+Pages 499 and 585-586 of the "Microsoft BASIC 7.0: Language Reference"
+manual incorrectly imply that AttrBox SUB is a procedure found in the
+GENERAL.BAS source-code file for the User Interface (UI) Toolbox.
+
+The AttrBox is actually an assembly language procedure located in the
+UI Toolbox object file, UIASM.OBJ (and in the UIASM.ASM source file).
+The UI Toolbox procedures require that UIASM.OBJ be included either in
+a Quick library when running inside the QBX.EXE editor or in a library
+(.LIB) that is linked to your program when running outside the
+environment (in a compiled executable .EXE form).
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

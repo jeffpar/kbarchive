@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q95655: Errors Connecting to Server During Over-the-Network Setup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q95655: Errors Connecting to Server During Over-the-Network Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/095/Q95655/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/095/Q95655/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/095/Q95655/","publisher":null,"image":null,"headline":"Q95655: Errors Connecting to Server During Over-the-Network Setup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q95655-errors-connecting-to-server-during-over-the-network-setup">Q95655: Errors Connecting to Server During Over-the-Network Setup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q95655
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+You may receiving the following errors when you install or upgrade a Microsoft
+LAN Manager MS-DOS workstation with an over-the-network (OTN) installation
+disk:
+
+Error 1: Access Denied
+----------------------
+
+Cause: The server you are using for the network installation share must have a
+guest account.
+
+Error 2: Bad command or filename
+--------------------------------
+
+Cause: The guest and USER accounts must have read and execute (RX) privileges for
+the C:\LANMAN\NINSTALL directory.
+
+Error 3: Connection refused or syntax error
+-------------------------------------------
+
+Cause: The guest account must not have a password. Any or all of these can be
+caused by an incorrectly configured guest account on the server with the network
+installation share. Ways of correcting this are found in the MORE INFORMATION
+section below.
+
+Because this article deals with several problems arising from one cause, it
+differs in style from the usual PRB article.
+
+MORE INFORMATION
+================
+
+The OTN boot disk uses the LAN Manager basic workstation redirector. The program
+UNIQSTRT (listed in the AUTOEXEC.BAT of the OTN install disk) generates a random
+name so it can start the redirector with "net start workstation unique_name."
+
+A LAN Manager Basic MS-DOS workstation is not actually "logged on" to the domain
+and validated by the NETLOGON service, so no password is required. If you want
+to access a share with a password from an MS-DOS basic workstation, you must
+enter the password when you request access to the share (for example, NET USE
+\\SERVER\SHARE PASSWORD). If you fail to give the correct password for the
+account, you receive the following error:
+
+  connection refused or syntax error
+
+Therefore, if there is a password on the guest account, the OTN installation
+fails when it tries to access the install share on the server.
+
+There are several ways to remove the password on a guest account:
+
+- You can use NET ADMIN (Accounts, Users, Guest Zoom and then put spaces in the
+  password field, then backspace over the entire thing. (It's not elegant, but
+  it works.)
+
+- You can use the NET USER command, as follows:
+
+  net user guest ""
+
+- If you know what the password on your guest account is, you can use the NET
+  PASSWORD command:
+
+  net password oldpassword ""
+
+If there is some reason you want to have a password on your guest account, edit
+the NET USE line in the OTN install disk's AUTOEXEC.BAT as follows:
+
+  net use \\server\ninstall guestpassword
+
+Another problem can occur when you change the default name for the guest account
+using the optional entry "guestacct" in the [server] section of the LANMAN.INI.
+
+When you set up a server in a domain, LAN Manager installs a user account with
+the username guest and no password in the user accounts database. The "password
+required" parameter for the guest account is set to "no" (NET USER GUEST
+/PASSWORDREQ:NO).
+
+When you create any other user account, the default value for the /PASSWORDREQ
+parameter is "yes." If you don't change the password required parameter for your
+new guest account, the rules about password size will apply, and you may not be
+able to remove the password for your guest account. (You can use the Net
+Accounts command to check the minimum password length.)
+
+For example, the command
+
+  net user guest_account_name ""
+
+may return the error message:
+
+  NET2245: The password is shorter than required
+
+To resolve this problem:
+
+- Change the password required flag
+
+  net user visitor /passwordreq:no
+
+-or-
+
+- Change the minimum password length
+
+  net accounts /minpwlen:0
+
+REFERENCES
+==========
+
+Microsoft LAN Manager "Installation and Configuration Guide," Chapter 5:
+Installing and Upgrading MS-DOS Workstations
+
+Microsoft LAN Manager "Administrator's Guide," p. 75 (Guest Account)
+
+Microsoft LAN Manager "Administrator's Reference," pp. 29- 31 (NET ACCOUNTS), pp.
+75-76 (NET PASSWORD), and pp. 135-139 (NET USER)
+
+Additional query words: 2.20 2.2 redir rdr
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

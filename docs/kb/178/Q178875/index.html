@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178875: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178875: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178875/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178875/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178875/","publisher":null,"image":null,"headline":"Q178875: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178875-oralongexe-use-rdo-with-oracle-longlong-raw-datatypes">Q178875: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178875
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.1 SP2,2.5,5.0,6.0
+Operating System(s): 
+Keyword(s): kbfile kbDatabase kbRDO kbVBp500 kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Data Access Components versions 2.1 SP2, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "Working with LONG, LONG RAW and VARCHAR2(2000) Oracle Datatypes" white
+paper is intended to clarify the handling of the Oracle datatypes LONG, LONG RAW
+and VARCHAR2(2000) when they are used with Microsoft Visual Basic and Remote
+Data Objects (RDO). A sample project is attached that illustrates storing and
+retrieving these datatypes. The project uses straight Visual Basic 5.0 RDO code
+to store and retrieve this data as well as using stored procedures.
+
+NOTE: It is not recommended to store BLOB or Long Text data in a table. A more
+efficient way is to store file pointers in the table that will locate the actual
+files. Other Microsoft white papers go into detail on this method.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+  Oralong.exe
+  (http://download.microsoft.com/download/vb50ent/Sample20/1/W9XNT4/EN-US/Oralong.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+OraLong.exe is a self-extracting file that will, after execution, produce a
+Microsoft WORD 7.0 document (Ora_Long.DOC), an HTML document (Ora_Long.HTM) and
+a Microsoft Visual Basic 5.0 project named Oracle_Long.VPB. The document
+thoroughly describes the Visual Basic application included and gives pointers
+about using Oracle LONG, LONG RAW and VARCHAR(2000) datatypes.
+
+Also included in the file list is a .txt file named Ora_Long.OSP that has all the
+Oracle PL/SQL scripts necessary to support the Visual Basic application. Run
+Ora_Long.OSP from Oracle SQL*PLUS to create the table and stored procedures on
+your Oracle server.
+
+After downloading OraLong.exe, place it in a new folder and run the file to
+extract the supporting files for this white paper.
+
+In addition to Visual Basic, you will need to have MDAC installed.
+
+For additional information about acquiring and installing MDAC, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q175018 : HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Ron Nelson, Microsoft Corporation
+
+Additional query words: Oralong oracle long raw
+
+======================================================================
+Keywords          : kbfile kbDatabase kbRDO kbVBp500 kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC210SP2 kbMDAC250 kbMDACNoSweep 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbMDACSearch kbMDAC210SP2 kbMDAC250
+Version           : :2.1 SP2,2.5,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

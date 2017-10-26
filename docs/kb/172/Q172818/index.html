@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172818: WD97: Insert WordArt/AutoShape Opens Blank Picture Object | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172818: WD97: Insert WordArt/AutoShape Opens Blank Picture Object" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172818/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172818/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172818/","publisher":null,"image":null,"headline":"Q172818: WD97: Insert WordArt/AutoShape Opens Blank Picture Object","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172818-wd97-insert-wordartautoshape-opens-blank-picture-object">Q172818: WD97: Insert WordArt/AutoShape Opens Blank Picture Object</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172818
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta word97 kbwdinternet
+Last Modified: 13-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you insert a WordArt or AutoShape object in an HTML document, a blank Word
+picture object is opened.
+
+NOTE: This problem occurs whether you use the Insert menu or the Drawing toolbar
+to insert the WordArt or AutoShape object.
+
+CAUSE
+=====
+
+This problem is a design limitation of the OLE implementation of inserting a
+picture object in an HTML document.
+
+This problem occurs after the Web Page Authoring Tools Update is installed. The
+version of the Web Page Authoring Tools Update is 3.0.4405.0. To check the
+version of the HTML Update in Word, follow these steps:
+
+1. In Word, open an HTML document.
+
+2. On the Help menu, click About Microsoft Word.
+
+3. Click System Info.
+
+4. Click Active Modules.
+
+5. Under Module Name, find HTML and note the version number.
+
+If the version number is 3.0.4405.0, you have the Web Page Authoring Tools Update
+installed.
+
+NOTE: This behavior does not occur in Word 2000.
+
+WORKAROUND
+==========
+
+When you are in the blank picture object, use one of the following methods:
+
+- To insert a WordArt object, click the Insert WordArt button again.
+
+  -or-
+
+- To insert an AutoShape object, click the AutoShape button again, point to the
+  style of AutoShape, and then click the AutoShape you want. Draw the AutoShape
+  in the blank Word Picture object as you want.
+
+NOTE: After inserting the WordArt or AutoShape object in the blank Word Picture
+object, you must click the Reset Picture Boundary button on the Edit Picture
+toolbar before you click Close Picture.
+
+MORE INFORMATION
+================
+
+After you install the Web Page Authoring Tools Update, two new options will be
+installed on the Insert menu when you point to Picture. Both WordArt and
+AutoShape will be available to insert into an HTML document. These objects
+cannot exist in an HTML document without being contained in a picture object.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q163299 WD97: Web Page Authoring Tools AutoUpdate
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbdta word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

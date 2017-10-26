@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156743: INFO: STL Sample for the replace_if Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156743: INFO: STL Sample for the replace_if Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156743/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156743/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156743/","publisher":null,"image":null,"headline":"Q156743: INFO: STL Sample for the replace_if Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156743-info-stl-sample-for-the-replace_if-function">Q156743: INFO: STL Sample for the replace_if Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156743
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 26-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the replace_if STL function in
+Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;algorithm&gt;
+
+     template&lt;class ForwardIterator, class Predicate, class Type&gt; inline
+     void replace_if(ForwardIterator first,
+
+                     ForwardIterator last,
+                     Predicate pred,
+                     const Type&amp; value)
+
+NOTE: The class/parameter names in the prototype do not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The replace_if algorithm replaces all elements from the range [first, last) that
+cause the predicate to return true with value.
+
+Sample Code
+-----------
+
+NOTE: In the first line of the sample code section, /GX is equivalent to /EHsc in
+VC++ .NET and is set by default.
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // replace_if.cpp : Illustrates how to use the replace_if function.
+  // 
+  // Functions:
+  // 
+  //    replace_if - Replace all elements from the sequence that
+  //                 satisfies a predicate with a specified value.
+  // 
+  // Written by Kalindi Sanghrajka
+  // of Microsoft Product Support Services,
+  // Software Core Developer Support.
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  // disable warning C4786: symbol greater than 255 character,
+  // okay to ignore
+
+  #pragma warning(disable: 4786)
+
+  #include &lt;iostream&gt;
+  #include &lt;vector&gt;
+  #include &lt;algorithm&gt;
+  #include &lt;functional&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  void main()
+
+  {
+
+      const int VECTOR_SIZE = 8 ;
+
+      // Define a template class vector of integers
+      typedef vector&lt;int, allocator&lt;int&gt; &gt; IntVector ;
+
+      //Define an iterator for template class vector of integer
+      typedef IntVector::iterator IntVectorIt ;
+
+      IntVector Numbers(VECTOR_SIZE) ;   //vector containing numbers
+
+      IntVectorIt start, end, it ;
+
+      start = Numbers.begin() ;   // location of first
+                                  // element of Numbers
+
+      end = Numbers.end() ;       // one past the location
+                                  // last element of Numbers
+
+      //Initialize vector Numbers
+      Numbers[0] = 10 ;
+      Numbers[1] = 20 ;
+      Numbers[2] = 10 ;
+      Numbers[3] = 15 ;
+      Numbers[4] = 12 ;
+      Numbers[5] = 7 ;
+      Numbers[6] = 9 ;
+      Numbers[7] = 10 ;
+
+      cout &lt;&lt; "Before calling replace_if" &lt;&lt; endl ;
+
+      // print content of Numbers
+      cout &lt;&lt; "Numbers { " ;
+      for(it = start; it != end; it++)
+          cout &lt;&lt; *it &lt;&lt; " " ;
+      cout &lt;&lt; " }\n" &lt;&lt; endl ;
+
+      // replace all elements from Numbers that are &lt;= 10 with 4
+       replace_if(start, end, bind2nd(less_equal&lt;int&gt;(), 10), 4 ) ;
+
+      cout &lt;&lt; "After calling replace_if" &lt;&lt; endl ;
+
+      // print content of Numbers
+      cout &lt;&lt; "Numbers { " ;
+      for(it = start; it != end; it++)
+          cout &lt;&lt; *it &lt;&lt; " " ;
+      cout &lt;&lt; " }\n" &lt;&lt; endl ;
+
+  }
+
+Program Output is:
+
+Before calling replace_if
+Numbers { 10 20 10 15 12 7 9 10  }
+
+After calling replace_if
+Numbers { 4 20 4 15 12 4 4 4  }
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample remove_if
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCNET kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

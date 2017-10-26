@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174530: FIX: TABLEREVERT() with Table Buffering Results in Page Fault | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174530: FIX: TABLEREVERT() with Table Buffering Results in Page Fault" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174530/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174530/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174530/","publisher":null,"image":null,"headline":"Q174530: FIX: TABLEREVERT() with Table Buffering Results in Page Fault","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174530-fix-tablerevert-with-table-buffering-results-in-page-fault">Q174530: FIX: TABLEREVERT() with Table Buffering Results in Page Fault</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174530
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0b
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfp
+Last Modified: 17-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0b 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Closing a form containing a grid with two or more related record sources and
+table buffering enabled results in an Windows Application Error or Macintosh
+error type 11 and termination of Visual FoxPro.
+
+Under some circumstances, closing a form containing a grid with multiple record
+sources and table buffering enabled, results in an application error and
+abnormal termination of Visual FoxPro. This article describes the conditions
+under which an application error may occur and a workaround that resolves the
+problem.
+
+CAUSE
+=====
+
+The occurrence of an application error and abnormal termination of the Visual
+FoxPro session, under these conditions, is dependent on a specific sequence of
+events. This behavior occurs only under the following circumstances:
+
+- A form is created, containing a grid based on two or more related record
+  sources.
+
+- The child table is USEd in the form's DataEnvironment, Load, or Init event
+  before the Parent table is USEd.
+
+- A many-to-one relationship is established between the child table and the
+  parent table.
+
+- The Grid.RecordSourceType Property is set to 1 (ALIAS).
+
+- The Grid.RecordSource Property is the alias of the child table.
+
+- The Grid.ColumnCount is set to a value of at least two.
+
+- The ControlSource Property for at least one column of the Grid is a field in
+  the parent table.
+
+- The ControlSource Property for at least one column of the Grid is a field in
+  the child table.
+
+- Table buffering on the child table is enabled.
+
+- A TABLEREVERT(.t.,'Child Table Name') is issued.
+
+- The open tables are closed either in the DataEnvironment or by issuing a
+  CLOSE TABLES command.
+
+RESOLUTION
+==========
+
+Multiple workarounds are available for this condition:
+
+  Insert ThisForm.Grid.RecordSource="" before releasing the form or issuing a
+  'CLOSE TABLES' command.
+
+  -or-
+
+  Use a view or SQL Cursor as the record source for the grid.
+
+  -or-
+
+  Base Grids with multiple record sources on the parent table.
+
+  -or-
+
+  Instantiate cursors for parent tables prior to instantiating cursors for child
+  tables.
+
+  -or-
+
+  Use row buffering instead of table buffering.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual FoxPro 5.0.
+
+MORE INFORMATION
+================
+
+This behavior is not observed in Visual FoxPro 3.0. It is evident in Visual
+FoxPro 3.0b only when table buffering is enabled.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the following code to create two related tables:
+
+        SET MULTILOCKS ON
+        IF !FILE('test.dbc')
+           CREATE DATABASE test
+           CREATE TABLE test1 (var1 C(10), PRIMARY KEY var1 TAG var1)
+          CREATE TABLE test2 (var1 c(10), ;
+              FOREIGN KEY var1 TAG var1 REFERENCES test1 TAG var1)
+        ENDIF
+
+2. Create a form called test.
+
+3. Select the DataEnvironment and add table test2, then add table test1 OR place
+  the following code in the form's Load event:
+
+        SET MULTILOCKS ON
+        USE test2 IN 0
+        USE test1 IN 0
+        SELECT test1
+        SET ORDER TO TAG var1
+        SELECT test2
+        SET ORDER TO TAG var1
+        SET RELATION TO var1 INTO test1
+
+4. In the INIT event of the form, place the following code:
+
+        =CURSORSETPROP('Buffering',5,'test2')
+
+5. Add a grid to the form with the following properties:
+
+        Form.Grid1.ColumnCount=2
+        Form.Grid1.RecordSourceType=1
+        Form.Grid1.RecordSource='test2'
+
+        Form.Grid1.Column1.ControlSource=test1.var1
+        Form.Grid1.Column2.ControlSource=test2.var1
+
+6. Add a Command button with the following code in the click event:
+
+        =TABLEREVERT(.T.,'test2')
+        CLOSE TABLES ALL
+        Release ThisForm
+
+7. Save and run the form.
+
+Additional query words: Grid Column ControlSource RecordSource Buffering
+
+======================================================================
+Keywords          : kbHWMAC kbvfp 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300b
+Version           : MACINTOSH:3.0b; WINDOWS:3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

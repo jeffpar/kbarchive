@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94259: PC DB: Err Msg: Could Not Find Mail System Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94259: PC DB: Err Msg: Could Not Find Mail System Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94259/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94259/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94259/","publisher":null,"image":null,"headline":"Q94259: PC DB: Err Msg: Could Not Find Mail System Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94259-pc-db-err-msg-could-not-find-mail-system-database">Q94259: PC DB: Err Msg: Could Not Find Mail System Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94259
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:2.1,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Microsoft Mail cannot find the postoffice database that stores the mail
+messages, one of the following error messages may be displayed:
+
+MS-DOS clients (all versions) and Mail Administrator program version 2.1:
+
+  Could not find mail system database.
+
+Mail Administrator program version 3.0:
+
+  Could not find mail system data files on drive 'M:'
+
+Windows client version 3.0:
+
+  Mail could not connect to your Mail server. The Mail server path in your
+  MSMAIL.INI file is missing or invalid.
+
+Windows client version 2.1:
+
+  The mail database cannot be reached. The server that contains the database
+  needs to be running, and you need to either connect to it on drive M: or
+  state its location in the WIN.INI. Please see your network administrator if
+  you need assistance.
+
+CAUSE
+=====
+
+The above error messages indicate that the mail program cannot read the database
+files. Typically, this occurs because of one or more of the following five
+reasons:
+
+1. A previously installed security feature is overriding other, more current
+  settings, or the MAIL.DAT file is not in the WINDOWS\SYSTEM directory.
+
+2. The mail program is looking for the files in the wrong location.
+
+3. The drive where the mail program is looking does not exist because it has not
+  been mapped or mounted.
+
+4. The person trying to access the postoffice database does not have sufficient
+  rights or privileges to the MAILDATA directories.
+
+5. The MASTER.GLB file does not exist, is hidden, or is locked open.
+
+RESOLUTION
+==========
+
+Following are resolutions for each of the five above causes:
+
+1. Check for the existence of a MAIL.DAT file on both the server and the
+  workstation. If you find any occurrences, delete them or rename them to
+  MAILDAT.OLD. If any MAIL.DAT files exist, they can override all other
+  settings pointing to the postoffice database.
+
+  To locate any copies of MAIL.DAT from within Windows, use File Manager and
+  choose Search from the File menu.
+
+  To locate any copies of MAIL.DAT from the MS-DOS prompt, run the following
+  command from the root directory:
+
+  attrib mail.dat /s
+
+  NOTE: For more information on advanced security and the MAIL.DAT file, see the
+  "Microsoft Mail 3.0 Administrator's Guide," pages 14-17, and 51.
+
+  To re-enable Advanced Security, either rerun setup for that workstation and
+  select Advanced Security, or if it had been previously renamed (to disable
+  AS), rename the file to MAIL.DAT in the WINDOWS\SYSTEM directory.
+
+2. 
+  a. Unless told otherwise, the ADMIN.EXE and MAIL.EXE programs for MS-DOS
+     assume that the current directory of drive M is the root of the database
+     (..\MAILDATA). If the database resides on another drive, add the -Dm
+     switch to the command line (where M is the alternative drive letter).
+
+     For example, use the following command if the current directory of drive R
+     is the root of the database:
+
+  admin -dr
+
+     Note: The current directory of the drive letter used must be the root of
+     the database (for example, ..\MAILDATA).
+
+     For example, in the list below, if the directory on the left is the current
+     directory when you run a Mail program, the Mail program will give you the
+     error message shown on the right:
+
+   Current Directory        Error Message
+   -----------------------------------------------------------------
+   M:\APPS\MAIL             Could not find mail system database
+   M:\APPS\MAIL\EXE         Could not find mail system database
+   M:\APPS\MAIL\DATA\LOG    Could not find mail system database
+   M:\APPS\MAIL\DATA        (Correct directory -- no error message)
+
+     You can verify that the root of the postoffice database is in the current
+     directory of the drive by changing to that drive and running the MS-DOS
+     DIR command. If the Mail database is there, you will see directories named
+     ATT, GLB, MBG, and so forth.
+
+     Following are examples of the commands used to map to the root of the
+     postoffice database for Novell and LAN Manager networks:
+
+   Novell
+   ------
+   map m:=&lt;servername&gt;/sys:apps\mail\data
+   map root r:=&lt;Server&gt;/vol1:maildata
+
+   LAN Manager
+   -----------
+   net use m: \\&lt;servername&gt;\maildata
+
+  b. The Windows workstation software also assumes the database is in the
+     current directory of drive M unless told otherwise. It does not require
+     that the directory be the current directory, but it does require that you
+     specify the full path to the postoffice database. In Mail for Windows,
+     version 3.0, this is done in the MSMAIL.INI file. In Mail for Window,
+     version 2.1, the setting is in the WIN.INI file. Usually, you can find
+     MSMAIL.INI and WIN.INI in your WINDOWS directory.
+
+     To specify the path to the postoffice database for Mail for Windows,
+     version 3.0, include a "ServerPath=" line in the [Microsoft Mail] section
+     of MSMAIL.INI. To do the same for Mail for Windows, version 2.1, include a
+     "Path=" line in the [Mail] section of WIN.INI. Following is an example of
+     each type of entry:
+
+   MSMAIL.INI (Mail for Windows, Version 3.0)
+   ------------------------------------------
+      [Microsoft Mail]
+      ServerPath=m:\apps\mail\data
+
+   WIN.INI (Mail for Windows, Version 2.1)
+   ---------------------------------------
+      [Mail]
+      Path=m:\apps\mail\data
+
+     Note: The system administrator can simplify Windows workstation
+     installations by using drive M as everyone's database mapping or by
+     editing the MSMAIL.INI file (Mail 3.0) located in the MAILEXE directory on
+     the server to include a standard "ServerPath=" line. Mail 2.1
+     administrators can create a WINMAIL.INI file containing a "Path=" line
+     (see the "Microsoft Mail 2.1 Administrator's Guide," pages 183-187).
+
+3. The settings in an INI file may appear correct, but the drive may not exist.
+  It may not have been mapped or mounted, or it may have been disconnected.
+  Verify that the drive and path is valid by using the MS-DOS DIR command.
+
+4. Following are examples of the rights needed on different file servers.
+
+  The rights needed for a Novell 3.11 server are as follows:
+
+      Rights       Directory
+      ------------------------------------------------------------------
+
+      [ RWCEM  ]   ..\MAILDATA directory
+      [ RWCEMF ]   ..\MAILDATA\KEY, \MAILDATA\FOLDERS, and
+                     \MAILDATA\CAL directories
+      [ R    F ]   ..\MAILEXE directory
+
+      R Read (Open and read files)
+      W Write (Open and write to the file)
+      C Create (Create a directory)
+      E Erase (Delete a directory or file)
+      M Modify (Change attributes or rename directory or file)
+      F File Scan (See the filename when viewing directory)
+
+  Note: Macintosh and OS/2 clients need File Scan (F) rights to the entire
+  database (..\MAILDATA).
+
+  The rights needed for a Novell 2.15 server are as follows:
+
+      Rights        Directory
+      ------------------------------------------------------------------
+
+      [ RWOCDM  ]   ..\MAILDATA directory
+      [ RW0CDMS ]   ..\MAILDATA\KEY &amp; \MAILDATA\FOLDERS directories
+      [ R O   S ]   ..\MAILEXE directory
+
+      R Read
+      W Write
+      O Open
+      C Create
+      D Delete
+      M Modify
+      S Search
+
+  You can set up a Microsoft LAN Manager server with share level security or
+  user level security with the following permissions:
+
+      Rights        Directory
+      ------------------------------------------------------------------
+
+      RWCDA         ..\MAILDATA directory
+      R             ..\MAILEXE directory
+
+      R Read
+      W Write
+      C Create
+      D Delete
+      A Attribute
+
+5. If the MAILDATA\GLB\MASTER.GLB file does not exist, restore it from the
+  latest backup.
+
+  If it is hidden, make it viewable it by changing to the MAILDATA\GLB directory
+  and typing the following MS-DOS 5.0 command:
+
+  " attrib -h master.glb /s" (without the quotation marks)
+
+  If the file is locked open, close the file using whatever tools are available
+  on your network. The following are Novell and LAN Manager examples:
+
+  Novell
+
+  Console =&gt; Monitor =&gt; File Locking =&gt; Directory =&gt; File LAN
+  Manager
+
+  Net Admin =&gt; Status =&gt; Open Files =&gt; Select File =&gt; Close
+
+Additional query words: 2.10 3.00 permission Mail cannot connect to your server
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300 kbMailPCN210
+Version           : WINDOWS:2.1,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138725: PC WSPlus: Definition of *.POF Files (Access Control List) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138725: PC WSPlus: Definition of *.POF Files (Access Control List)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138725/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138725/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138725/","publisher":null,"image":null,"headline":"Q138725: PC WSPlus: Definition of *.POF Files (Access Control List)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138725-pc-wsplus-definition-of-pof-files-access-control-list">Q138725: PC WSPlus: Definition of *.POF Files (Access Control List)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138725
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0,1.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-SEP-1999
+
+1.00 1.00a
+WINDOWS
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Schedule distribution is an automated process that exchanges free and busy times
+between postoffices. You can send snapshots of a user's appointment books to
+another postoffice. These snapshots are stored in access control lists with an
+extension of POF.
+
+The access control lists (POF files) contain the following information:
+
+- Free/busy times (stored as bits) for each user on the postoffice.
+
+- Flags specifying which accounts on the postoffice are resources.
+
+- A list of the assistants for those users on the postoffice who have
+  assistants.
+
+- Access rights information.
+
+MORE INFORMATION
+================
+
+Access control lists are stored in the \CAL subdirectory on the postoffice. Each
+postoffice participating in Schedule+ distribution has its own POF file that is
+always 00000000.POF. A POF file is created by the Schedule+ distribution program
+(SCHDIST.EXE) for each external postoffices that SCHDIST.EXE is configure to
+cover. The POF files for external postoffices are stored with an 8 digit ID,
+such as 00000001.POF or 00000002.POF.
+
+The Schedule+ distribution program sends updated POF information inside of an
+electronic mail message using the established Schedule+ administrator accounts
+(ADMINSCH) on each postoffice. The information is sent only if a change occurs.
+For example, if there are 150 users on a postoffice but only 10 users have
+modified their schedule since the last schedule distribution message was sent,
+only 10 new sets of free/busy bits are sent in the next schedule distribution
+message.
+
+The schedule distribution information is kept in the CAL directory of the
+receiving postoffice. On every postoffice, there is one postoffice file
+(&lt;hexid&gt;.POF) for each postoffice that sends it schedule distribution
+messages. Schedule distribution is configured through the Schedule+
+administration program. The actual work of distributing schedule information is
+done when the schedule distribution program, SCHEDIST.EXE, is run.
+
+For step by step instructions for setting up Schedule+ distribution, see the
+Schedule+ "Administrator's Guide," or please see the following articles in the
+Microsoft Knowledge Base:
+
+  Q98977 Setting up Dynamic Connections
+
+  Q104249 Setting Up Schedule Distribution
+
+With schedule distribution, you can view free and busy information for users on
+another postoffice without having network access or access privileges to the
+other postoffice. Once you have viewed the free and busy time of users on other
+postoffices, they can send a meeting request, although it is possible to send a
+meeting request without first viewing free and busy times.
+
+Schedule distribution allows Schedule+ to quickly find out if users on other
+postoffices have assistants or are resources. Schedule+ needs to know this
+information to decide where to send meeting requests. Schedule distribution uses
+the Microsoft Mail system to route information across different local area
+networks (LANs).
+
+NOTE: Schedule distribution can cause an increase of consistent network traffic.
+
+This process does not allow users on one postoffice to see anything more than
+free and busy time of users on another postoffices. Schedule distribution alone
+cannot enable a user on one postoffice to view appointment details, modify
+appointment books, or act as an assistant for a user on another postoffice.
+Additionally, schedule distribution alone does not let users on one postoffice
+automatically book resources on another postoffice. The process of schedule
+distribution requires the schedule distribution program, SCHDIST.EXE, to be run,
+either manually or continuously, on a dedicated machine or with other processes
+using the DISPATCH.EXE program. In addition, SCHDIST.EXE can be run as an idle
+process to dispatch and can run on the same machine, at the same time as the
+External Mail program (EXTERNAL.EXE).
+
+For additional information, please see the Microsoft Mail Resource Kit, Chapter 4
+"Configuration Planning," pages 129-138. The Microsoft Mail Resource Kit is part
+number 068-095-475.
+
+Additional query words: 3.50 Mail Resource Kit POF Access Control List
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

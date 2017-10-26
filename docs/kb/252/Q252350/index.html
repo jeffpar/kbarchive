@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q252350: PRB: Err Message: &quot;Runtime Error -2147217885 (80040e23) : A …&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q252350: PRB: Err Message: &quot;Runtime Error -2147217885 (80040e23) : A …&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/252/Q252350/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/252/Q252350/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/252/Q252350/","publisher":null,"image":null,"headline":"Q252350: PRB: Err Message: &quot;Runtime Error -2147217885 (80040e23) : A …&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q252350-prb-err-message-runtime-error--2147217885-80040e23--a-">Q252350: PRB: Err Message: "Runtime Error -2147217885 (80040e23) : A …"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q252350
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Operating System(s): 
+Keyword(s): kbVBp kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDAC250 kbADO250 kbMDAC260 kbADO260
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- ActiveX Data Objects (ADO), versions 2.0, 2.1, 2.1 SP1, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an optimistic batch update operation, if you try to access the Value property
+for a field that is in a record marked for deletion, when you set the
+disconnected recordset's Filter property to adFilterPendingRecords the following
+run-time error message occurs:
+
+  Run-time error '-2147217885(8004e23)' : A given HROW referred to a hard- or
+  soft-deleted row.
+
+CAUSE
+=====
+
+When a record is deleted in a disconnected ADO Recordset by using the rs.Delete
+method, you cannot access the Value property of its constituent fields in code.
+
+RESOLUTION
+==========
+
+To access the values that were stored in the fields of the deleted record, use
+the ADO Field object OriginalValue or UnderlyingValue property.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In an optimistic batch update operation, disconnected recordsets are updated
+locally on the client computer. Then the disconnected recordsets are associated
+with an active connection to post the changes made to the database. The changes
+may include the following:
+
+- The addition of new records.
+- Modification's to the values stored in the fields of existing records.
+- Deletion of records in the disconnected recordset.
+
+It is a good practice to examine the changes made to a disconnected recordset
+locally before you connect and apply the changes to the database. The Filter
+property of the ADO Recordset can be set to the adFilterPendingRecords ADO
+constant value to identify the records in the disconnected recordset that have
+changed, which will be applied to the database on the next call to the
+UpdateBatch method.
+
+Setting the recordset's Filter property to adFilterPendingRecords enforces a
+filter on the recordset object so that the view of its constituent records is
+restricted to the records changed in the disconnected recordset that have not
+been posted to the database. When you set the filter you can loop through the
+records and examine the Status property of each record to determine whether a
+record has been added, changed, or deleted. Deleted records have their status
+property set to adStatusDeleted.
+
+Although it is possible to access the values in the fields of the newly added and
+modified records by using the ADO Field object's Value property, doing the same
+for the deleted records results in the run-time error message shown in the
+"Symptoms" section of this article. The values that were stored in the fields of
+the records marked for deletion can only be accessed through the OriginalValue
+or UnderlyingValue properties of the ADO Field object.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Use the following code example to reproduce this problem. This example uses the
+Microsoft Access Biblio.mdb database that is installed with Visual Basic 6.0.
+
+1. Start a new Standard EXE project in Visual Basic 6.0.
+
+2. Set a project reference to the Microsoft ActiveX Data Objects 2.1 (or later)
+  Library.
+
+3. Place a Command button on Form1.
+
+4. In the General Declarations section of Form1, insert the following code:
+
+    Dim cn as ADODB.Connection
+    Dim rs as ADODB.Recordset
+
+5. Place the following code in the Command button's Click event procedure:
+
+  Private Sub Command1_Click()
+    Set cn = New ADODB.Connection
+    cn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Biblio.mdb"
+    cn.Open
+
+    Set rs = New ADODB.Recordset
+    rs.CursorLocation = adUseClient
+    rs.Open "Select * from [Title Author]", cn, adOpenStatic,   adLockBatchOptimistic
+    'THE RECORDSET IS DISCONNECTED
+    Set rs.ActiveConnection = Nothing
+
+    rs.MoveFirst
+    rs.Delete
+    rs.Filter = adFilterPendingRecords
+    Do While Not rs.EOF
+      If rs.Status = adRecDeleted Then                                                           
+        MsgBox "ISBN : " &amp; rs.Fields("ISBN") &amp; " has been deleted !" 'Error occurs on this line
+      End If
+      rs.MoveNext
+    Loop
+    rs.Filter = adFilterNone
+
+    Set rs.ActiveConnection = cn
+    rs.CancelBatch
+    rs.Close
+  End Sub
+
+Press F5 to run the code. Note that the error message occurs.
+6. In the preceding code segment replace the following line:
+
+      MsgBox "ISBN : " &amp; rs.Fields("ISBN") &amp; " has been deleted !"
+
+with this line:
+
+      MsgBox "ISBN : " &amp; rs.Fields("ISBN").OriginalValue &amp; " has been deleted !"
+
+Note that you can see the value of the "ISBN" field in the record marked for
+deletion.
+7. In the preceding example, the deletion is not posted to the database. The
+  call to rs.CancelBatch ensures that the deletion is not reflected in the
+  database.
+
+Additional query words: error -2147217885 (80040e23)
+
+======================================================================
+Keywords          : kbVBp kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbMDAC250 kbADO250 kbMDAC260 kbADO260 kbATM kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO200 kbADO210sp1 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbADO270
+Version           : WINDOWS:2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

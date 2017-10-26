@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q121271: Bypassing Novell Login Scripts for Troubleshooting Purposes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q121271: Bypassing Novell Login Scripts for Troubleshooting Purposes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/121/Q121271/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/121/Q121271/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/121/Q121271/","publisher":null,"image":null,"headline":"Q121271: Bypassing Novell Login Scripts for Troubleshooting Purposes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q121271-bypassing-novell-login-scripts-for-troubleshooting-purposes">Q121271: Bypassing Novell Login Scripts for Troubleshooting Purposes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q121271
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:3.x,4.x,5.0,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+3.30 4.x 5.00 6.00 | 3.00 3.10 3.11
+MS-DOS             | WINDOWS
+kbnetwork kb3rdparty kbtshoot
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 6.0, 6.2, 6.21, 6.22 
+- Microsoft Windows versions 3.0, 3.1, 3.11 
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are troubleshooting Novell NetWare issues, it is sometimes helpful to
+eliminate the NetWare login script as a source of possible configuration
+problems. This is consistent with the "clean boot" approach of eliminating as
+many unknown factors as possible to isolate the cause of a specific problem.
+
+MORE INFORMATION
+================
+
+Novell NetWare employs a system of login scripts. These scripts are similar to
+batch files and are executed whenever a user logs on to a NetWare file server.
+Listed below are some of the various login scripts.
+
+System Login Script
+-------------------
+
+This script is processed first and applies to all users who log on to the file
+server. It can be edited only by a NetWare Supervisor through the SYSCON
+utility.
+
+User Login Script
+-----------------
+
+This script is unique to each user and is processed after the System Login
+script. It can usually be edited by the user through SYSCON.
+
+Default Login Script
+--------------------
+
+This script is processed after the System Login script if there is no User Login
+script for the user who is currently logging on. The Default Login script is
+hard-coded into LOGIN.EXE and therefore cannot be edited.
+
+There is a parameter on the LOGIN command that allows the user to specify a text
+file to be used as an alternate login script, overriding all the standard login
+scripts listed above. The command
+
+        LOGIN /S C:\LOGIN.TXT
+
+logs the user on to the currently attached file server and processes the file
+C:\LOGIN.TXT as the login script, overriding all the standard NetWare login
+scripts.
+
+For a "clean logon" during troubleshooting, it is suggested that this login
+script contain the following command line:
+
+       MAP INSERT S16:=SYS:PUBLIC
+
+This command assigns the drive letter Z: to the PUBLIC directory on the file
+server (which contains the standard NetWare user utilities) and adds this drive
+to the search path (MS-DOS PATH) so that the standard NetWare commands are
+accessible to the user.
+
+Novell NetWare is manufactured by Novell, Inc., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+REFERENCES
+==========
+
+This information is documented in the "NetWare Help Utility" version 3.11 under
+"Commands and Utilities L - R" (Login) and "Administration, Maintenance,
+Troubleshooting, etc." (Login Script Commands).
+
+Additional query words: tshoot msdos 3.30 4.x 5.0 6.0 6.20 6.21 6.22 3.0 3.1 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin310 kbWin311 kbWFW310 kbWFW311 kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401
+Version           : MS-DOS:3.x,4.x,5.0,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

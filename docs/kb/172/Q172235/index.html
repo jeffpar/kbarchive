@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172235: Extraction Failed-Service Pack Setup Error When Loading SP3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172235: Extraction Failed-Service Pack Setup Error When Loading SP3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172235/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172235/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172235/","publisher":null,"image":null,"headline":"Q172235: Extraction Failed-Service Pack Setup Error When Loading SP3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172235-extraction-failed-service-pack-setup-error-when-loading-sp3">Q172235: Extraction Failed-Service Pack Setup Error When Loading SP3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172235
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you load Service Pack 3 you may receive one of the following two pop- up
+error messages:
+
+  Extraction Error:
+
+  There is not enough space on the disk.
+
+-or-
+
+  Service Pack Setup Error:
+
+  Not enough available hard drive space to run Service Pack Setup. (30 MB
+  required, or 60 MB if also creating an uninstall directory).
+
+Your only option is to click OK. The Service Pack update process will halt.
+
+CAUSE
+=====
+
+The Service Pack executable file (nt4sp3_i.exe) is a self-extracting file that
+extracts itself to the TMP environment variable location. By default, this is
+set to %SystemDrive%\Temp. If the drive containing this path is near capacity,
+you will get the Extraction Error as the file is expanding to the temporary
+directory.
+
+Upon successful extraction, Update.exe is launched and will update the Windows NT
+directory that is determined by the WINDIR environment variable. By default,
+this is set to %SystemRoot%. If the drive containing the %SystemRoot% is low on
+space you will get the Service Pack Setup Error.
+
+RESOLUTION
+==========
+
+Extraction Error
+----------------
+
+Either free up approximately 60 megabytes of disk space (53.8 MB expanded) on the
+system drive or change the environment variable TMP to another drive that has
+enough storage space.
+
+To change the environment variable, perform the following steps:
+
+1. Click the Start button, point to Settings, and click Control Panel.
+
+2. Double-click the System icon, and then click the Environment tab.
+
+3. Select TMP from the User Variables list, and then type
+  &lt;newdriveletter&gt;:\Temp in the Value box.
+
+4. Click OK, restart your computer, and then try to apply the service pack.
+
+Service Pack Setup Error
+------------------------
+
+Free up either 30 or 60 megabytes of disk space depending on whether or you not
+you choose to create an uninstall directory.
+
+Additional query words: update
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

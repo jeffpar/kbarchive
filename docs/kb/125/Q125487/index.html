@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125487: SMS Administrator Unable To Retrieve Machine List | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125487: SMS Administrator Unable To Retrieve Machine List" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125487/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125487/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125487/","publisher":null,"image":null,"headline":"Q125487: SMS Administrator Unable To Retrieve Machine List","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125487-sms-administrator-unable-to-retrieve-machine-list">Q125487: SMS Administrator Unable To Retrieve Machine List</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125487
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1,1.2
+Operating System(s): 
+Keyword(s): kbenv kbDatabase kbInventory kbHMan smsinv smsdatabase smshierman
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After dumping the Systems Management Server database and transaction log to a
+dump device and then restoring it to a different database and log device, either
+on the same SQL Server computer or a different one, the Systems Management
+Server Administrator program cannot retrieve the list of machines in a domain
+and the following errors appear in the Data Loader log file, Datalodr.log:
+
+     CMachine::FindMachine - Searching for matching Identification group info
+
+     CMachine::FindMachine - Query Execution failed
+
+These errors also appear in the Hierarchy Manager log file, Hman.log:
+
+     {818} ERROR SQL: General SQL Server error:
+                      Check messages from the SQL Server.
+
+     {825} INFO SQL:  Can't allocate space for object 'Syslogs' in database
+                      'xxx' because the 'logsegment' segment is full. If you
+                      ran out of space in Syslogs, dump the transaction log.
+                      Otherwise, use ALTER DATABASE or sp_extendsegment to
+                      increase the size of the segment.
+
+(where xxx is the Systems Management Server database name)
+
+CAUSE
+=====
+
+These errors occur because the Transaction Log for the Systems Management Server
+database is full and SQL Server can no longer log transactions to it. When
+Systems Management Server originally created the database it enables the
+Truncate Log On Checkpoint option. When the database is dumped and then restored
+to a new device, that option is not set by default, therefore, the Transaction
+Log is never truncated and eventually fills up.
+
+RESOLUTION
+==========
+
+1. Dump the Transaction log using the No Log option.
+
+2. Set the Truncate Log On Checkpoint option for the Systems Management Server
+  database.
+
+For more information, refer to the "Microsoft SQL Administrator User's Guide" and
+the "Microsoft SQL Server Troubleshooting Guide."
+
+Additional query words: sms prodsms SMS_HIERARCHY_MANAGER SMS_INVENTORY_DATA_LOADER
+
+======================================================================
+Keywords          : kbenv kbDatabase kbInventory kbHMan smsinv smsdatabase smshierman 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

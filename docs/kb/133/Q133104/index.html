@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133104: FORTRAN PowerStation 32 MIXLANG.TXT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133104: FORTRAN PowerStation 32 MIXLANG.TXT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133104/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133104/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133104/","publisher":null,"image":null,"headline":"Q133104: FORTRAN PowerStation 32 MIXLANG.TXT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133104-fortran-powerstation-32-mixlangtxt">Q133104: FORTRAN PowerStation 32 MIXLANG.TXT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133104
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbFortranPS kbLangC kbLangFortran kbVC
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is from the Microsoft FORTRAN PowerStation 32
+MIXLANG.TXT file located in the \FPSNT\README directory.
+
+This file has three parts:
+
+   Part      Contents
+   ----      --------
+     1       Building C projects
+     2       Building FORTRAN projects
+     3       Using DLLs with Mixed Languages
+
+MORE INFORMATION
+================
+
+Part 1: Building C Projects 
+---------------------------
+
+You can build C projects using FORTRAN code in the C++ Visual Workbench. Compile
+your FORTRAN code one of the following ways:
+
+1. Using the FL32 command on the command line.
+
+2. Compiling within FORTRAN Visual Workbench.
+
+3. Using a makefile in C++ Visual Workbench.
+
+Use the FORTRAN compiler option /c to suppress linking.
+
+Include your FORTRAN object (.OBJ) and static library (.LIB) files by listing
+them in the Files in Project box on the Project menu.
+
+Run-time libraries must support the FORTRAN code integrated into the C project.
+You can access the correct versions through the following steps:
+
+1. From the Options menu, choose Directories. In the Library Files Path box,
+  insert as the first item the directory path containing the FORTRAN versions
+  of the C run-time libraries. This assures that the correct versions of
+  libc.lib, libcmt.lib, and msvcrt.lib will be loaded by the linker. The
+  typical item list should begin with c:\fpsnt\lib;... .
+
+2. From the Options menu, choose Project. In the new menu, choose Linker
+  Options. Under Category Setting: Input, in the Object\Library Modules box,
+  type libf.lib and console.lib.
+
+  If you are using the Win32 System Development Kit, make certain that directory
+  MSTOOLS\BIN from the Win32 SDK does not appear before MSVCNT\BIN or FPSNT\BIN
+  in the executables directory path; otherwise LINK32 from SDK will be
+  inappropriately picked up instead of LINK.
+
+Part 2: Building FORTRAN Projects 
+---------------------------------
+
+Passing Strings to C
+--------------------
+
+The following sample code illustrates passing strings from FORTRAN to C and back
+using the C convention and using _stdcall. In the first case, the string is
+terminated in FORTRAN with the C terminator (\n). In the second case, a standard
+FORTRAN string is passed, and the C program must allow for the hidden length
+integer at the end of the string. You can copy this code to the Clipboard and
+paste it into your files.
+
+  CC    FSTR_F.FOR    FORTRAN MAIN PROGRAM
+  CC
+        INTERFACE TO SUBROUTINE Ucase1 [C,ALIAS:'_Ucase1'] (text)
+        CHARACTER*(*) text
+        END
+        INTERFACE TO SUBROUTINE Ucase2 [ALIAS:'_Ucase2@8'] (text)
+        CHARACTER*(*) text
+        END
+
+        CHARACTER*40 string1,string2
+        DATA string1 /'This is a null-terminated string.'C/ 
+        DATA string2 /'This is a standard Fortran string.'/ 
+
+        WRITE (*, *) string1
+        CALL Ucase1 (string1)
+        WRITE (*, *) string1
+
+        WRITE (*, *) string2
+        CALL Ucase2 (string2)
+        WRITE (*, *) string2
+
+        END
+
+  //    FSTR_C.C    C Subprograms       Make strings uppercase
+  // 
+  #include &lt;ctype.h&gt;
+
+  void Ucase1( char *string )
+  {
+      char *ptr;
+
+      for (ptr = string; *ptr; ptr++)
+          *ptr = toupper( *ptr );
+  }
+
+  void __stdcall Ucase2( char *string, int length )
+  {
+      char *ptr;
+
+      for (ptr = string; *ptr; ptr++)
+          *ptr = toupper( *ptr );
+  }
+
+Part 3: Using DLLs with Mixed Languages 
+---------------------------------------
+
+The following programs are examples of mixed C and FORTRAN programs using DLLs
+where the main program is in one language and the DLL is in the other. The
+examples communicate data between the main program and the DLL through a common
+data structure (a FORTRAN common block and a C structure).
+
+Redirecting the output of a mixed-language DLL program can produce unexpected
+results due to the different I/O buffering performed by the C and FORTRAN
+run-time libraries.
+
+These samples can be copied to the Clipboard and pasted into a file to use as
+examples and templates for this type of program.
+
+Case 1. A FORTRAN Main Program calls a C DLL
+--------------------------------------------
+
+  CC    FORTRAN MAIN PROGRAM
+  CC
+        INTERFACE TO SUBROUTINE csub [C,ALIAS:'_csub']()
+        END
+
+        INTEGER i
+        REAL x
+        CHARACTER*4 s
+        COMMON /BRIDGE[dllimport]/ i, x, s
+        i = 1
+        x = 2.5
+        s = 'fail'
+        WRITE(*,'(5X,A)')       'before calling dll '
+        WRITE(*,'(5X,A,I5)')    'i = ', i
+        WRITE(*,'(5X,A,F4.2)')  'x = ', x
+        WRITE(*,'(5X,A,A)')     's = ', s
+        CALL csub()
+        WRITE(*,'(5X,A)')       'after calling dll '
+        WRITE(*,'(5X,A,I5)')    'i = ', i
+        WRITE(*,'(5X,A,F4.2)')  'x = ', x
+        WRITE(*,'(5X,A,A)')     's = ', s
+        END
+
+  //    C DLL Subprogram
+  // 
+  #include &lt;stdio.h&gt;
+  #include &lt;string.h&gt;
+  #define DLLexport _declspec(dllexport)
+
+  DLLexport void csub();
+
+  DLLexport struct {
+     int i;
+     float x;
+     char s[4];
+  } BRIDGE;
+
+  void csub()
+  {
+     BRIDGE.i = BRIDGE.i + 1;
+     BRIDGE.x = BRIDGE.x + 1.5F;
+     strcpy(BRIDGE.s, "pass");
+     printf("\n\n%s\n%s%d\n%s%f\n%s%s\n",
+           "in the dll",
+           "i = ", BRIDGE.i,
+           "x = ", BRIDGE.x,
+           "s = ", BRIDGE.s);
+  }
+
+  Output redirected to a file:
+
+  Before calling dll:
+  i =     1
+  x = 2.50
+  s = fail
+
+  After calling dll:
+  i =     2
+  x = 4.00
+  s = pass
+
+  Output in the dll:
+  i = 2
+  x = 4.000000
+  s = pass
+
+Case 2. A C Main Program calls a FORTRAN DLL
+--------------------------------------------
+
+  //    C Main Program
+  // 
+  #include &lt;stdio.h&gt;
+  #include &lt;string.h&gt;
+  #define DLLimport _declspec(dllimport)
+
+  extern void _stdcall FSUB ();
+
+  extern DLLimport struct {
+     int i;
+     float x;
+     char s[4];
+  } BRIDGE;
+
+  void main(){
+     BRIDGE.i = 1;
+     BRIDGE.x = 2.5F;
+     strcpy(BRIDGE.s, "fail");
+     printf("\n\n%s\n%s%d\n%s%f\n%s%s\n",
+           "before calling dll", "i = ", BRIDGE.i,
+           "x = ", BRIDGE.x,
+           "s = ", BRIDGE.s);
+     FSUB();
+     printf("\n\n%s\n%s%d\n%s%f\n%s%s\n",
+           "before calling dll", "i = ", BRIDGE.i,
+           "x = ", BRIDGE.x,
+           "s = ", BRIDGE.s);
+  }
+
+  CC    FORTRAN DLL SUBROUTINE
+  CC
+        SUBROUTINE FSUB[dllexport]()
+        COMMON /BRIDGE[dllexport]/ i, x, s
+        INTEGER i
+        REAL x
+        CHARACTER*4 s
+        i = i + 1
+        x = x + 1.5
+        s = 'pass'
+        WRITE(*,*)
+        WRITE(*,'(5X,A)')       'in the dll '
+        WRITE(*,'(5X,A,I5)')    'i = ', i
+        WRITE(*,'(5X,A,F4.2)')  'x = ', x
+        WRITE(*,'(5X,A,A)')     's = ', s
+        END
+
+  Output redirected to a file:
+
+  In the dll:
+  i =     2
+  x = 4.00
+  s = pass
+
+  Before calling dll:
+  i = 1
+  x = 2.500000
+  s = fail
+
+  After calling dll:
+  i = 2
+  x = 4.000000
+  s = pass
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangC kbLangFortran kbVC 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

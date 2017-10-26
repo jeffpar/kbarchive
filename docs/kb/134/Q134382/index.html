@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q134382: CONN: DocErr: EXTERNAL.EXE and Manual Dir-Sync | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q134382: CONN: DocErr: EXTERNAL.EXE and Manual Dir-Sync" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/134/Q134382/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/134/Q134382/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/134/Q134382/","publisher":null,"image":null,"headline":"Q134382: CONN: DocErr: EXTERNAL.EXE and Manual Dir-Sync","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q134382-conn-docerr-externalexe-and-manual-dir-sync">Q134382: CONN: DocErr: EXTERNAL.EXE and Manual Dir-Sync</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q134382
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Connection for PC and AppleTalk Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In version 3.2 of the Microsoft Mail Connection Gateway Release Notes, page 18,
+steps 3 and 9 for performing a manual directory synchronization are missing.
+
+MORE INFORMATION
+================
+
+To perform a manual directory synchronization at the directory server
+postoffice:
+
+1. Type the following; then press ENTER:
+
+  " reqmain -t -ddrive " (without the quotation marks)
+
+2. Type the following; then press ENTER:
+
+  " external -0 -ddrive -ms -mr -v -a " (without the quotation marks)
+
+  This transfers the mail into the outbound queue for the Directory
+  Synchronization (Dir-Sync) server. Use the Administrator program on each
+  requestor postoffice to check the queue for the Dir-Sync server postoffice.
+  There should be at least two $SYSTEM messages in the queue. One will be a
+  status report; the other will have a subject line that looks like the
+  following
+
+  $SYSTEM ReqTx R=R# (was r#), S = S#, I = I# ## sent
+
+3. Type the following; then press ENTER:
+
+  " external -0 -ddrive -ms -mr -v -a " (without the quotation marks)
+
+  The External Mail program actually delivers the outgoing Dir-Sync mail. If you
+  are using a gateway as the MTA, type the appropriate gateway command to
+  deliver the message.
+
+4. Type the following; then press ENTER:
+
+  " srvmain -r -ddrive " (without the quotation marks)
+
+5. To confirm that Mail for AppleTalk Networks addresses were received, compare
+  the file size and time stamp of the MSTTRANS.GLB file before and after you
+  run SRVMAIN.
+
+6. Type the following; then press ENTER:
+
+  " srvmain -t -ddrive " (without the quotation marks)
+
+  This puts AppleTalk Mail addresses into a $SYSTEM message file in the P1
+  directory.
+
+7. Check for a file in the P1 directory.
+
+8. Type the following; then press ENTER:
+
+  " External -a -0 -ddrive " (without the quotation marks)
+
+  This command again moves the mail to the outbound queues. The server's queues
+  for the requestor postoffices should show the following $SYSTEM message:
+
+  $SYSTEM SrvTx R=R# S=S# (was s#) I = I# ## sent
+
+9. Type the following; then press ENTER:
+
+  " External -a -0 -ddrive " (without the quotation marks)
+
+  This moves the P1 file into the postoffice incoming message queue. The P1 file
+  should disappear from the P1 directory after you run External.
+
+  This delivers the updates to the requestor postoffices. If a gateway is used
+  as the MTA, type the appropriate command to deliver the messages.
+
+10. Type the following; then press ENTER:
+
+  " reqmain -r -ddrive " (without the quotation marks)
+
+  This moves the addresses from the $SYSTEM message into the SRVTRANS.GLB file.
+
+11. Type the following; then press ENTER:
+
+  " import admin -ppassword -q -y -ddrive " (without the quotation marks)
+
+  This moves addresses from the SRVTRANS.GLB file into a temporary transaction
+  file and into the USR and NME files. After you run Import, the AppleTalk
+  Mail addresses should appear in the Postoffice Address List (POL), but not
+  in the Global Address List (GAL).
+
+12. Type the following; then press ENTER:
+
+  " rebuild -f -ddrive " (without the quotation marks)
+
+  This rebuilds the GAL. After you run Rebuild, the AppleTalk Mail addresses
+  should appear in the GAL.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q96060 WA0725: Directory Synchronization (Dir-Sync)
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailConn320
+Version           : :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

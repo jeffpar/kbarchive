@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135584: Unattended Installation of Windows NT 3.51 Service Pack 1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135584: Unattended Installation of Windows NT 3.51 Service Pack 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135584/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135584/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135584/","publisher":null,"image":null,"headline":"Q135584: Unattended Installation of Windows NT 3.51 Service Pack 1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135584-unattended-installation-of-windows-nt-351-service-pack-1">Q135584: Unattended Installation of Windows NT 3.51 Service Pack 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q135584</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsetup</span> <span class="n">kbsmsUtil</span> <span class="n">smsappscripts</span> <span class="n">smsutil</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">31</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">1.0</span><span class="p">,</span> <span class="m">1.1</span><span class="p">,</span> <span class="m">1.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">The</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.51</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="n">requires</span> <span class="n">manual</span> <span class="n">input</span><span class="p">.</span> <span class="k">To</span>
+<span class="n">perform</span> <span class="n">an</span> <span class="n">unattended</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Service</span> <span class="n">Pack</span><span class="p">,</span> <span class="n">you</span> <span class="n">modify</span> <span class="n">the</span> <span class="n">Service</span>
+<span class="n">Pack</span> <span class="n">information</span> <span class="p">(.</span><span class="n">INF</span><span class="p">)</span> <span class="n">file</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="k">Do</span> <span class="k">not</span> <span class="n">perform</span> <span class="n">the</span> <span class="n">unattended</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="k">from</span> <span class="n">the</span>
+<span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="n">Service</span> <span class="p">(</span><span class="n">PCMSVC32</span><span class="p">)</span> <span class="n">because</span> <span class="n">the</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="n">Setup</span>
+<span class="n">program</span> <span class="n">fails</span> <span class="k">to</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">computer</span><span class="p">.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">desktop</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span>
+<span class="p">(</span><span class="n">PCMWIN32</span><span class="p">)</span> <span class="n">instead</span><span class="p">.</span>
+
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="k">To</span> <span class="n">perform</span> <span class="n">an</span> <span class="n">unattended</span> <span class="n">installation</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.51</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span><span class="p">,</span>
+<span class="n">close</span> <span class="n">all</span> <span class="n">applications</span> <span class="k">and</span> <span class="k">do</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">Specific</span> <span class="n">line</span> <span class="n">changes</span> <span class="k">to</span> <span class="n">the</span> <span class="n">files</span> <span class="n">below</span> <span class="n">are</span> <span class="n">valid</span> <span class="n">only</span> <span class="n">for</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.51</span>
+<span class="n">Service</span> <span class="n">Pack</span> <span class="m">1.</span> <span class="n">The</span> <span class="n">changes</span> <span class="n">described</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">are</span> <span class="n">intended</span> <span class="k">to</span> <span class="n">be</span> <span class="n">used</span> <span class="k">as</span>
+<span class="n">a</span> <span class="n">starting</span> <span class="n">point</span><span class="p">,</span> <span class="k">and</span> <span class="n">deal</span> <span class="n">only</span> <span class="k">with</span> <span class="n">the</span> <span class="n">initial</span> <span class="k">and</span> <span class="n">final</span> <span class="n">dialog</span> <span class="n">messages</span><span class="p">.</span> <span class="k">If</span>
+<span class="n">other</span> <span class="n">errors</span> <span class="n">are</span> <span class="n">encountered</span> <span class="n">during</span> <span class="n">the</span> <span class="n">update</span> <span class="n">process</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">low</span> <span class="n">disk</span> <span class="n">space</span>
+<span class="k">or</span> <span class="n">incorrect</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">version</span><span class="p">,</span> <span class="n">additional</span> <span class="n">dialog</span> <span class="n">messages</span> <span class="n">may</span> <span class="n">appear</span><span class="p">.</span>
+
+<span class="m">1.</span> <span class="n">Copy</span> <span class="n">all</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="n">files</span> <span class="k">to</span> <span class="n">a</span> <span class="n">working</span> <span class="n">directory</span> <span class="n">accessible</span> <span class="n">by</span> <span class="n">the</span> <span class="n">site</span>
+  <span class="n">server</span> <span class="n">that</span> <span class="n">will</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="nf">send</span> <span class="n">the</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">working</span> <span class="n">directory</span><span class="p">,</span> <span class="n">copy</span> <span class="n">UPDATE</span><span class="p">.</span><span class="n">INF</span> <span class="k">to</span> <span class="n">a</span> <span class="n">new</span> <span class="n">file</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">:</span>
+
+  <span class="n">COPY</span> <span class="n">UPDATE</span><span class="p">.</span><span class="n">INF</span> <span class="n">SP1QUIET</span><span class="p">.</span><span class="n">INF</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Using</span> <span class="n">a</span> <span class="n">text</span> <span class="n">editor</span><span class="p">,</span> <span class="n">edit</span> <span class="n">the</span> <span class="n">SP1QUIET</span><span class="p">.</span><span class="n">INF</span> <span class="n">file</span><span class="p">.</span> <span class="n">Comment</span> <span class="n">out</span><span class="p">,</span> <span class="n">by</span> <span class="n">placing</span> <span class="n">a</span>
+  <span class="n">semi</span><span class="p">-</span><span class="n">colon</span> <span class="p">(;)</span> <span class="k">in</span> <span class="n">front</span> <span class="k">of</span><span class="p">,</span> <span class="n">the</span> <span class="n">six</span> <span class="n">lines</span> <span class="n">that</span> <span class="n">start</span> <span class="n">at</span> <span class="n">line</span> <span class="m">305</span> <span class="p">(</span><span class="n">SHELL</span>
+  <span class="n">through</span> <span class="n">ENDIF</span><span class="p">).</span> <span class="n">This</span> <span class="n">suppresses</span> <span class="n">the</span> <span class="n">initial</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">that</span> <span class="n">normally</span> <span class="n">displays</span>
+  <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+  <span class="n">Setup</span> <span class="n">is</span> <span class="n">going</span> <span class="k">to</span> <span class="n">update</span> <span class="n">your</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="nf">system</span> <span class="k">with</span> <span class="n">the</span> <span class="n">English</span> <span class="k">version</span> <span class="k">of</span>
+  <span class="n">the</span> <span class="n">update</span> <span class="n">program</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">wish</span> <span class="k">to</span> <span class="n">cancel</span> <span class="n">the</span> <span class="n">update</span> <span class="n">process</span><span class="p">,</span> <span class="n">please</span> <span class="n">press</span>
+  <span class="n">Cancel</span> <span class="k">or</span> <span class="n">press</span> <span class="n">OK</span> <span class="k">to</span> <span class="n">continue</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Comment</span> <span class="n">out</span><span class="p">,</span> <span class="k">with</span> <span class="n">a</span> <span class="n">semi</span><span class="p">-</span><span class="n">colon</span><span class="p">,</span> <span class="n">three</span> <span class="n">lines</span> <span class="n">starting</span> <span class="n">at</span> <span class="n">line</span> <span class="m">473</span> <span class="p">(</span><span class="n">UI</span> <span class="n">START</span>
+  <span class="n">through</span> <span class="n">UI</span> <span class="n">POP</span><span class="p">).</span> <span class="n">This</span> <span class="n">suppresses</span> <span class="n">the</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">that</span> <span class="n">prompts</span> <span class="n">users</span> <span class="k">to</span> <span class="n">allow</span>
+  <span class="n">the</span> <span class="nf">system</span> <span class="k">to</span> <span class="n">be</span> <span class="n">restarted</span><span class="p">.</span> <span class="n">The</span> <span class="nf">system</span> <span class="n">will</span> <span class="n">reboot</span> <span class="n">automatically</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Create</span> <span class="n">an</span> <span class="n">intermediate</span> <span class="n">script</span> <span class="n">file</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">file</span> <span class="n">called</span> <span class="n">SP1</span><span class="p">.</span><span class="n">BAT</span>
+  <span class="k">with</span> <span class="n">the</span> <span class="n">following</span> <span class="n">contents</span><span class="p">:</span>
+
+        <span class="n">rem</span> <span class="n">Supporting</span> <span class="n">batch</span> <span class="n">file</span> <span class="k">to</span> <span class="n">apply</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.51</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span>
+
+        <span class="n">rem</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">safe</span> <span class="n">place</span> <span class="k">to</span> <span class="n">store</span> <span class="n">a</span> <span class="n">local</span> <span class="n">copy</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Service</span> <span class="n">Pack</span>
+        <span class="n">rem</span> <span class="n">so</span> <span class="n">we</span> <span class="n">can</span> <span class="n">give</span> <span class="n">SETUP</span><span class="p">.</span><span class="n">EXE</span> <span class="n">an</span> <span class="n">absolute</span> <span class="n">path</span> <span class="k">to</span> <span class="n">the</span> <span class="n">source</span>
+        <span class="n">rem</span> <span class="n">directory</span><span class="p">.</span>
+
+        <span class="n">md</span> <span class="n">c</span><span class="p">:\</span><span class="n">nt351sp1</span>
+
+        <span class="n">rem</span> <span class="n">Copy</span> <span class="n">the</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="n">files</span> <span class="k">from</span> <span class="n">the</span> <span class="n">CDM</span> <span class="k">set</span> <span class="n">by</span> <span class="n">PCM</span> <span class="k">to</span> <span class="n">the</span>
+        <span class="n">rem</span> <span class="n">safe</span> <span class="n">directory</span><span class="p">.</span> <span class="n">Administrators</span> <span class="n">should</span> <span class="n">remove</span> <span class="n">this</span> <span class="n">using</span> <span class="n">another</span>
+        <span class="n">rem</span> <span class="p">(</span><span class="n">PCM</span><span class="p">)</span> <span class="n">method</span> <span class="n">later</span><span class="p">.</span>
+
+        <span class="n">copy</span> <span class="p">*.*</span> <span class="n">c</span><span class="p">:\</span><span class="n">nt351sp1</span><span class="p">\*.*</span>
+
+        <span class="n">rem</span> <span class="nf">Run</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Setup</span>
+
+        <span class="n">setup</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">s</span> <span class="n">c</span><span class="p">:\</span><span class="n">nt351sp1</span> <span class="p">/</span><span class="n">i</span> <span class="n">c</span><span class="p">:\</span><span class="n">nt351sp1</span><span class="p">\</span><span class="n">sp1quiet</span><span class="p">.</span><span class="n">inf</span>
+
+<span class="m">6.</span> <span class="n">Create</span> <span class="n">a</span> <span class="p">.</span><span class="n">PDF</span> <span class="n">file</span> <span class="p">(</span><span class="n">for</span> <span class="n">example</span><span class="p">,</span> <span class="n">SP1QUIET</span><span class="p">.</span><span class="n">PDF</span><span class="p">)</span> <span class="n">containing</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">configure</span> <span class="n">additional</span> <span class="n">inventory</span> <span class="n">properties</span><span class="p">,</span> <span class="n">place</span> <span class="n">the</span> <span class="k">in</span>
+  <span class="n">the</span> <span class="n">PDF</span> <span class="k">as</span> <span class="n">well</span><span class="p">.</span> <span class="n">However</span> <span class="n">this</span> <span class="n">single</span> <span class="n">property</span> <span class="n">should</span> <span class="n">be</span> <span class="n">sufficient</span><span class="p">.</span>
+
+        <span class="p">[</span><span class="n">PDF</span><span class="p">]</span>
+        <span class="k">Version</span><span class="p">=</span><span class="m">1.0</span>
+
+        <span class="p">[</span><span class="n">Unattended</span> <span class="n">Setup</span><span class="p">]</span>
+        <span class="n">CommandLine</span><span class="p">=</span><span class="n">sp1</span><span class="p">.</span><span class="n">bat</span>
+        <span class="n">CommandName</span><span class="p">=</span><span class="n">Unattended</span> <span class="n">NT</span> <span class="m">3.51</span> <span class="n">SP1</span> <span class="n">Installation</span>
+        <span class="n">UserInputRequired</span><span class="p">=</span><span class="nb">FALSE</span>
+        <span class="n">SynchronousSystemExitRequired</span><span class="p">=</span><span class="nb">TRUE</span>
+        <span class="n">SupportedPlatforms</span><span class="p">=</span><span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.1</span> <span class="p">(</span><span class="n">x86</span><span class="p">),</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">3.1</span> <span class="p">(</span><span class="n">MIPS</span><span class="p">),</span>
+        <span class="n">Windows</span> <span class="n">NT</span>
+
+        <span class="m">3.1</span> <span class="p">(</span><span class="n">Alpha</span><span class="p">)</span>
+
+        <span class="p">[</span><span class="k">Package</span> <span class="n">Definition</span><span class="p">]</span>
+        <span class="n">Product</span><span class="p">=</span><span class="n">Windows</span> <span class="n">NT</span>
+        <span class="k">Version</span><span class="p">=</span><span class="m">3.51</span>
+        <span class="n">Comment</span><span class="p">=</span><span class="n">NT</span> <span class="m">3.51</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="n">English</span>
+        <span class="n">SetupVariations</span><span class="p">=</span><span class="n">Unattended</span>
+
+        <span class="p">[</span><span class="n">Setup</span> <span class="k">Package</span> <span class="n">for</span> <span class="n">Inventory</span><span class="p">]</span>
+        <span class="n">InventoryThisPackage</span><span class="p">=</span><span class="nb">TRUE</span>
+        <span class="n">Detection</span> <span class="n">Rule</span> <span class="n">Part</span> <span class="m">1</span><span class="p">=</span><span class="n">file</span> <span class="m">1</span>
+
+        <span class="p">[</span><span class="n">file</span> <span class="m">1</span><span class="p">]</span>
+        <span class="n">FILE</span><span class="p">=</span><span class="n">NTOSKRNL</span><span class="p">.</span><span class="n">EXE</span>
+        <span class="n">COLLECT</span><span class="p">=</span><span class="nb">FALSE</span>
+        <span class="n">Checksum</span><span class="p">=</span>
+        <span class="n">CRC</span><span class="p">=</span>
+        <span class="n">DATE</span><span class="p">=</span><span class="m">7</span><span class="p">,</span> <span class="m">27</span><span class="p">,</span> <span class="m">95</span>
+        <span class="n">SIZE</span><span class="p">=</span><span class="m">805264</span>
+        <span class="n">TIME</span><span class="p">=</span>
+        <span class="n">BYTE</span><span class="p">=</span>
+        <span class="n">WORD</span><span class="p">=</span>
+        <span class="n">LONG</span><span class="p">=</span>
+        <span class="n">TOKEN</span> <span class="m">1</span><span class="p">=</span>
+        <span class="n">TOKEN</span> <span class="m">2</span><span class="p">=</span>
+        <span class="n">TOKEN</span> <span class="m">3</span><span class="p">=</span>
+        <span class="n">TOKEN</span> <span class="m">4</span><span class="p">=</span>
+
+<span class="m">7.</span> <span class="n">Import</span> <span class="n">the</span> <span class="p">.</span><span class="n">PDF</span> <span class="n">file</span> <span class="k">and</span> <span class="n">point</span> <span class="n">it</span> <span class="k">to</span> <span class="n">the</span> <span class="n">subdirectory</span> <span class="n">containing</span> <span class="n">all</span> <span class="n">the</span>
+  <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="n">files</span> <span class="p">(</span><span class="n">including</span> <span class="n">the</span> <span class="n">SP1QUIET</span><span class="p">.</span><span class="n">INF</span> <span class="n">file</span><span class="p">).</span> <span class="n">When</span> <span class="n">you</span> <span class="n">install</span> <span class="n">this</span>
+  <span class="k">package</span> <span class="n">on</span> <span class="n">unattended</span> <span class="n">servers</span><span class="p">,</span> <span class="n">remember</span> <span class="k">to</span> <span class="n">make</span> <span class="n">the</span> <span class="k">package</span> <span class="n">mandatory</span> <span class="p">(</span><span class="n">check</span>
+  <span class="n">the</span> <span class="n">mandatory</span> <span class="n">time</span> <span class="n">also</span><span class="p">),</span> <span class="k">and</span> <span class="nf">send</span> <span class="n">it</span> <span class="n">only</span> <span class="k">to</span> <span class="n">systems</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span>
+  <span class="k">version</span> <span class="m">3.51</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">also</span> <span class="n">check</span> <span class="n">the</span> <span class="nf">System</span> <span class="p">(</span><span class="n">Background</span><span class="p">)</span> <span class="n">Task</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span>
+  <span class="n">properties</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span> <span class="n">sms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbsetup</span> <span class="n">kbsmsUtil</span> <span class="n">smsappscripts</span> <span class="n">smsutil</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS100</span> <span class="n">kbSMS110</span> <span class="n">kbSMS120</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.2</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

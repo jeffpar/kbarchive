@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101360: MS-DOS Err Msg: DoubleSpace Has Used All the Memory… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101360: MS-DOS Err Msg: DoubleSpace Has Used All the Memory…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101360/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101360/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101360/","publisher":null,"image":null,"headline":"Q101360: MS-DOS Err Msg: DoubleSpace Has Used All the Memory…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101360-ms-dos-err-msg-doublespace-has-used-all-the-memory">Q101360: MS-DOS Err Msg: DoubleSpace Has Used All the Memory…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101360
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.22
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 23-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+SYMPTOMS
+========
+
+When you try to create or mount a DoubleSpace drive, you may receive the
+following error message:
+
+  DoubleSpace has used all the memory reserved by the settings in the Options
+  dialog box. To enable DoubleSpace to allocate more memory, you should restart
+  your computer now.
+
+  Do you want to restart your computer now?
+
+Under MS-DOS 6.22 you may receive the following error message:
+
+  Not enough MEMORY to allocate more drives for Dblspace or Drvspace need to
+  reboot and quit other applications?
+
+Restarting your computer does not help--you still cannot mount more the drive.
+
+CAUSE
+=====
+
+This error occurs if you try to compress or mount more drives than are specified
+by the Number of Removable-Media Drives setting in the DoubleSpace Options
+dialog box, or if the total number of mounted drives is greater than 15.
+
+The Number of Removable-Media Drives setting specifies how much memory
+DoubleSpace reserves for mounting additional compressed drives after startup. If
+you try to mount or create more compressed drives than DoubleSpace has reserved
+memory for, you receive the above error message.
+
+WORKAROUND
+==========
+
+You can adjust the Number of Removable-Media Drives setting by running
+DoubleSpace, choosing Options from the Tools menu, and changing the setting.
+This modifies the MaxRemovableDrives setting in the DBLSPACE.INI file.
+
+If restarting the computer does not correct this error, you may already have 15
+compressed drives mounted. Restarting does not allow you to mount or create any
+more compressed drives using DoubleSpace until you have fewer than 15 compressed
+drives mounted.
+
+To mount another compressed drive, you must first unmount one or more of the
+currently mounted compressed drives. To unmount a compressed drive, start
+DoubleSpace and select the drive to unmount, then choose Unmount from the Drive
+menu.
+
+NOTE: You can create more than 15 DoubleSpace-compressed drives, but a maximum of
+15 can be mounted at the same time.
+
+
+Additional query words: 6.00 6 6.20 dblspace.exe double space 15th 16th fifteen 15 limit ds errmsg total 16 sixteen
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

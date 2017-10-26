@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189418: INFO: Difference Between INDEXSEEK and KEYMATCH Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189418: INFO: Difference Between INDEXSEEK and KEYMATCH Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189418/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189418/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189418/","publisher":null,"image":null,"headline":"Q189418: INFO: Difference Between INDEXSEEK and KEYMATCH Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189418-info-difference-between-indexseek-and-keymatch-functions">Q189418: INFO: Difference Between INDEXSEEK and KEYMATCH Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189418
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The purpose of the INDEXSEEK and KEYMATCH functions are exactly alike. They both
+search an index key for a specific expression, indicate if there is a matching
+key and remain on the current record. However, the difference between the two
+functions is that the INDEXSEEK function never moves the record pointer while
+KEYMATCH does move the record pointer, causing triggers to fire.
+
+MORE INFORMATION
+================
+
+The INDEXSEEK function searches an index key for a certain expression just like
+the KEYMATCH function, but the INDEXSEEK function does not fire any triggers
+when it searches because INDEXSEEK never leaves the current record. The KEYMATCH
+function leaves the current record and then goes back to it after completing the
+search, thus firing existing triggers. This makes the INDEXSEEK function a
+better function to use with tables that have triggers associated with them.
+Typically, you would use INDEXSEEK to search for an existing key before you have
+committed the record. The following code example demonstrates how the INDEXSEEK
+function works differently from the KEYMATCH function.
+
+Sample Code
+-----------
+
+     * Start code here.
+     PUBLIC oForm
+     DisplayStatus([Creating database...])
+     CLOSE DATA ALL
+     CREATE DATABASE 'SAMPLE1.DBC'
+     DisplayStatus([Creating table TABLE1...])
+     MakeTable_TABLE1()
+     DisplayStatus([Finished.])
+     SET MULTILOCKS ON
+     open data sample1.dbc
+     oForm= CREATEOBJECT('seekmatch')
+     oForm.VISIBLE = .T.
+
+     FUNCTION MakeTable_TABLE1
+     ***** Table setup for TABLE1 *****
+     CREATE TABLE 'TABLE1.DBF' NAME 'TABLE1' (CHAR1 C(10) NOT NULL)
+
+     ***** Create each index for TABLE1 *****
+     SET COLLATE TO 'MACHINE'
+     ALTER TABLE 'TABLE1' ADD PRIMARY KEY CHAR1 TAG CHAR1
+
+     ***** Change properties for TABLE1 *****
+     CREATE TRIGGER ON 'TABLE1' FOR INSERT AS inserted()
+     ENDFUNC
+
+     FUNCTION inserted
+     WAIT WINDOW 'Insert Trigger Fired'
+     RETURN .T.
+     ENDFUNC
+
+     FUNCTION DisplayStatus(lcMessage)
+     WAIT WINDOW NOWAIT lcMessage
+     ENDFUNC
+
+     **************************************************
+     *-- Class:        seekmatch
+     *-- ParentClass:  form
+     *-- BaseClass:    form
+     *
+     DEFINE CLASS seekmatch AS FORM
+
+        TOP = 0
+        LEFT = 0
+        HEIGHT = 181
+        WIDTH = 337
+        DOCREATE = .T.
+        BUFFERMODE = 0
+        CAPTION = "Form1"
+        NAME = "Form1"
+
+     ADD OBJECT command1 AS COMMANDBUTTON WITH ;
+       TOP = 24, ;
+       LEFT = 24, ;
+       HEIGHT = 49, ;
+       WIDTH = 133, ;
+       CAPTION = "Do IndexSeek()", ;
+       NAME = "Command1"
+
+     ADD OBJECT command2 AS COMMANDBUTTON WITH ;
+       TOP = 24, ;
+       LEFT = 168, ;
+       HEIGHT = 49, ;
+       WIDTH = 145, ;
+       CAPTION = "Do KeyMatch()", ;
+       NAME = "Command2"
+
+     ADD OBJECT command3 AS COMMANDBUTTON WITH ;
+       TOP = 96, ;
+       LEFT = 96, ;
+       HEIGHT = 48, ;
+       WIDTH = 145, ;
+       CAPTION = "Close", ;
+       NAME = "Command3"
+
+     PROCEDURE INIT
+       SET SAFETY OFF
+       ZAP
+       SET SAFETY ON
+       SET ORDER TO CHAR1
+
+       FOR i = 1 TO 5
+          APPEND BLANK
+          REPLACE CHAR1 WITH "Test"+ALLTRIM(STR(i))
+       ENDFOR
+       =CURSORSETPROP('buffering',2)
+     ENDPROC
+
+     PROCEDURE command1.CLICK
+        APPEND BLANK
+        x = INDEXSEEK('Test3')
+        IF x
+           WAIT WINDOW "Record found and no trigger fired"
+        ELSE
+           WAIT WINDOW "Record not found"
+        ENDIF
+        =TABLEREVERT(.T.)
+     ENDPROC
+
+     PROCEDURE command2.CLICK
+        APPEND BLANK
+        x = KEYMATCH('Test3')
+        IF x
+          WAIT WINDOW 'Record found and trigger fired'
+        ELSE
+          WAIT WINDOW 'Record not found'
+        ENDIF
+          =TABLEREVERT(.T.)
+     ENDPROC
+
+     PROCEDURE command3.CLICK
+        THISFORM.RELEASE
+     ENDPROC
+
+     ENDDEFINE
+     *
+     *-- EndDefine: seekmatch
+
+Steps to Create Sample
+----------------------
+
+1. Copy the code into a new program and run the program. You will see a WAIT
+  WINDOW displayed five times. Press any key to proceed after each window
+  displays. A form appears.
+
+2. Click the "Do INDEXSEEK" command button. This appends a record and calls the
+  INDEXSEEK function to search for a string in the table. Note that the
+  function finds the record, but the Insert trigger is never fired.
+
+3. Click the "Do KEYMATCH" command button. This appends a record and calls the
+  KEYMATCH function, which searches for a string in the table. Note this time
+  the Insert trigger fires, displaying a WAIT WINDOW message.
+
+There are other differences between these functions, such as, the INDEXSEEK
+
+  function accepts a parameter that takes you to the matching record, which
+
+acts just like a Seek. However, the KEYMATCH function does not have this
+functionality.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by David Botzenhart, Microsoft Corporation
+
+
+Additional query words: kbVFp600 kbXbase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

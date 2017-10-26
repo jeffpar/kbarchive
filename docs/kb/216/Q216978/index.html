@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216978: BUG: &quot;Invalid number&quot; When Inserting Decimals into UNIX Oracle | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216978: BUG: &quot;Invalid number&quot; When Inserting Decimals into UNIX Oracle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216978/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216978/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216978/","publisher":null,"image":null,"headline":"Q216978: BUG: &quot;Invalid number&quot; When Inserting Decimals into UNIX Oracle","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216978-bug-invalid-number-when-inserting-decimals-into-unix-oracle">Q216978: BUG: "Invalid number" When Inserting Decimals into UNIX Oracle</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216978
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 2.0,2.1,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711
+Operating System(s): 
+Keyword(s): kbDatabase kbDriver kbODBC kbOracle kbOSUNIX kbODBC250bug kbODBC351qfe
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.5, versions Build 2.573.2927, Build 2.573.3513, Build 2.573.3711 
+- Microsoft Data Access Components versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using parameter binding in the Microsoft Oracle ODBC driver to insert
+decimal values into an Oracle server installed on UNIX, the following error is
+returned:
+
+  [Microsoft][ODBC driver for Oracle][Oracle]ORA-01722: invalid number
+
+This error does not occur when inserting the same values into an Oracle server
+installed on Windows NT.
+
+CAUSE
+=====
+
+During connection, the Oracle driver determines the character to use as a
+decimal separator by issuing the following statement:
+
+    SELECT 99/100 FROM DUAL
+
+which should return ".99", and the first character is used as the decimal
+separator.
+
+On UNIX platforms, " .9" is returned instead of the expected ".99", which causes
+a decimal such as "123.45" to be passed as "123 45". This generates the "Invalid
+number" error.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+         Date      Time   Version      Size   File name   Platform
+         ---------------------------------------------------------
+MDAC 2.0  02/02/99         02.573.3802  136KB  Msorcl32.dll        
+MDAC 2.1  02/01/99         02.573.3801  139KB  Msorcl32.dll
+
+This hotfix is engineered to work with Microsoft Data Access Components (MDAC)
+builds 2.0 and 2.1. The hotfix contains the MDAC 2.0 MSORACL32.DLL and MDAC 2.1
+MSORACL32.DLL. See installation instructions below.
+
+Installation Instructions
+-------------------------
+
+1. Place the self-extracting zip file (OraUnix.exe) into a temporary directory.
+
+2. Unzip the file with the "-d" option, to preserve directory information. For
+  example: "OraUnix.exe -d". Two subfolders - Mdac20 and Mdac21 - will be
+  created.
+
+3. Locate msorcl32.dll in the system folder.
+
+4. Verify that no applications or services are using the driver.
+
+5. Copy the new driver from the folder it was extracted to (choosing the
+  appropriate version directory) into the system folder.
+
+6. Register the new driver using the following:
+
+  Regsvr32.exe msorcl32.dll
+
+NOTE: Due to file dependencies, the most recent hotfix or feature that contains
+the above files may also contain additional files.
+
+
+
+WORKAROUND
+==========
+
+Do not use parameter binding in your application; instead, just insert the
+values hard-coded into an INSERT statement. Install MDAC 2.1 SP2 or higher as
+the Oracle ODBC driver is updated with the fix in those versions.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: decimal oracle unix invalid number parameter ORA-01722
+
+======================================================================
+Keywords          : kbDatabase kbDriver kbODBC kbOracle kbOSUNIX kbODBC250bug kbODBC351qfe 
+Technology        : kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC200 kbMDAC210 kbODBCOracle25732927 kbODBCOracle25733513 kbODBCOracle25733711 kbODBCOracle250Search
+Version           : :2.0,2.1,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271886: XADM: How to Use Mbconn to Generate Active Directory Accounts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271886: XADM: How to Use Mbconn to Generate Active Directory Accounts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271886/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271886/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271886/","publisher":null,"image":null,"headline":"Q271886: XADM: How to Use Mbconn to Generate Active Directory Accounts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271886-xadm-how-to-use-mbconn--to-generate-active-directory-accounts">Q271886: XADM: How to Use Mbconn  to Generate Active Directory Accounts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271886
+Product(s): Microsoft Exchange
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Mbconn utility (Mbconn.exe) to generate
+Active Directory accounts for mailboxes in the information store.
+
+MORE INFORMATION
+================
+
+Exchange Server 5.5 and earlier versions of Exchange Server are able to create
+user objects in the folder from an information store database by using the DS/IS
+consistency adjuster. In Exchange 2000, Mbconn.exe provides the same
+functionality.
+
+The Mbconn.exe performs two tasks. First, it uses information found in a given
+mailbox store to create an import file (in .ldf format) which can be used to
+create new accounts in Active Directory. Secondly, you can use Mbconn.exe to
+connect mailboxes to Active Directory accounts.
+
+NOTE: Mbconn.exe is located on the Exchange 2000 CD-ROM in the
+\Support\Utils\i386 folder. It is recommended that you read the Mbconn.chm file
+in the same folder. This file contains additional information about the Mailbox
+Reconnect tool.
+
+To create user accounts from information store objects:
+
+1. Mount the store that contains the mailboxes that you want to extract the
+  account information from.
+
+  NOTE: The mailboxes that do not have associated Active Directory user accounts
+  are displayed with a red X when you open Mailboxes under the Database object.
+  If no mailboxes are displayed with a red X, right-click the Mailboxes object,
+  and then click Run Cleanup Agent. When you do so, any mailboxes that do not
+  have an Active Directory account are marked with a red X. If you recently
+  mounted the store, it may take a few minutes before the Cleanup Agent marks
+  the mailboxes as disconnected.
+
+2. Run Mbconn.exe. When you are prompted by the wizard, enter the server and
+  domain controller name, and the database that you want to connect to.
+
+3. On the Actions menu, click Export Users.
+
+4. In the "Export Users to LDF File" dialog box, click the ellipse (...) next to
+  the Container space to browse to a container in Active Directory where you
+  want to create the user account, and then type the path and file name of the
+  import file (for example, &lt;C:\Import&gt;.ldf).
+
+5. Click the Advanced button, and then click to clear the default properties
+  that you do not want set.
+
+6. Click the Generate button to create the import file.
+
+7. At a command prompt, type "ldifde -i -f c:\import.ldf" (without the quotation
+  marks).
+
+For additional information about the LDIFDE tool, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+  Q237677 Using LDIFDE to Import/Export Directory Objects to the Active
+  Directory
+
+After all the accounts have been created in Active Directory, run Mbconn.exe
+again to connect the mailboxes to the new accounts.
+
+To connect mailboxes in the information store to user accounts:
+
+1. Run Mbconn.exe. When you are prompted by the wizard, enter the name of the
+  server and the domain controller, and the database that you want to connect
+  to.
+
+2. On the Actions menu, click Preview All.
+
+3. Click the container in Active Directory where the user accounts were imported
+  to. When the preview is finished, a green check mark is displayed next to
+  each item in the database that it is able to match with an Active Directory
+  account. Verify that the preview information is correct.
+
+4. On the Actions menu, click Apply.
+
+The mailboxes are now connected to the Active Directory accounts.
+
+Additional Information About the .ldf File Import Process
+---------------------------------------------------------
+
+- After a partial import, you have to edit the file and remove all the accounts
+  that were successfully created.
+
+  NOTE: The line number that indicates the failure is the first line of the
+  account that failed, and not necessarily the line that has a problem.
+
+- If there are lines that have a blank value, the import procedure is
+  unsuccessful. To fix this issue, either remove the line that has the blank
+  value, or add text at the end of the line.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange2000Search kbExchange2000Serv
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

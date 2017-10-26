@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240654: HOW TO: Configure the IISADMPWD Pages for Different Ports | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240654: HOW TO: Configure the IISADMPWD Pages for Different Ports" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240654/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240654/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240654/","publisher":null,"image":null,"headline":"Q240654: HOW TO: Configure the IISADMPWD Pages for Different Ports","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240654-how-to-configure-the-iisadmpwd-pages-for-different-ports">Q240654: HOW TO: Configure the IISADMPWD Pages for Different Ports</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240654
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 13-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Introduction
+   - Configure the Pages for Different Ports
+   - Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to change passwords on a Web server that
+is running on a port other than 80.
+
+Introduction
+------------
+
+Internet Information Server (IIS) 4.0 and Internet Information Services (IIS) 5.0
+include Administration Web pages that allow users to change passwords only when
+a Web server is running on the IIS default port of 80. This article describes
+how to modify these pages to work on other ports.
+
+By default, the IIS installation creates a folder in the following location:
+
+  %SYSTEMROOT%\system32\inetsrv\iisadmpwd
+
+The following files are then copied to that folder:
+
+  Achg.htr
+  Aexp.htr
+  Aexp2.htr
+  Aexp2b.htr
+  Aexp3.htr
+  Aexp4.htr
+  Aexp4b.htr
+  Anot.htr
+  Anot3.htr
+
+Configure the Pages for Different Ports
+---------------------------------------
+
+1. Open each of the pages and search the text for the following string:
+
+   &lt;%iis.SERVER_NAME%&gt;
+
+2. For each occurrence of this text, if the URL begins with
+  "http://&lt;%iis.SERVER_NAME%&gt;" change it to read
+  "http://&lt;%iis.SERVER_NAME%&gt;:&lt;PORT1&gt;," where &lt;PORT1&gt; is the
+  port that the Web site is listening on.
+
+3. Likewise, change each URL that begins with
+  "https://&lt;%iis.SERVER_NAME%&gt;" to read
+  "https://&lt;%iis.SERVER_NAME%&gt;:&lt;PORT2&gt;," where &lt;PORT2&gt; is the
+  Secure Sockets Layer (SSL) port that the Web site is listening on.
+
+Troubleshooting
+---------------
+
+You may receive the following error message when you try to modify a password:
+
+  The parameter is incorrect.
+
+For additional information about how to resolve this problem, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q296617 Error When Password Changed After Password Change Utility Installed
+
+REFERENCES
+==========
+
+For additional information about this feature, click the article numbers below
+to view the articles in the Microsoft Knowledge Base:
+
+  Q184058 Unable to Change Password Using the IIS 4.0 Change Password Feature
+
+  Q184619 How to Change Windows NT Account Passwords Using Internet Information
+  Server (IIS) 4.0
+
+  Q269082 IISADMPWD Virtual Directory Is Not Created During Clean Install of
+  IIS 5.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

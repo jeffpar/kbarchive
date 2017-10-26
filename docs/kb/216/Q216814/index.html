@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216814: Err Msg: Printer Setting Could Not Be Saved… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216814: Err Msg: Printer Setting Could Not Be Saved…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216814/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216814/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216814/","publisher":null,"image":null,"headline":"Q216814: Err Msg: Printer Setting Could Not Be Saved…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216814-err-msg-printer-setting-could-not-be-saved">Q216814: Err Msg: Printer Setting Could Not Be Saved…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216814
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 4.0, 4.0 SP3, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you check the properties of a shared printer by using the Printers folder,
+you may get the following error message after you click OK, even without making
+any changes:
+
+  Printer setting could not Be saved. Data area passed to a system call is too
+  small.
+  122L Error_insufficiant_Buffer
+
+You may also find that this shared printer does not appear in the shared
+resources list when you click Shares in the Server tool in Control Panel, or
+when you do a net view command.
+
+Also, Network clients will not be able to see the printer when trying to browse
+and connect to it.
+
+CAUSE
+=====
+
+This error can occur if the specific printer's share on the print server becomes
+corrupted.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform the following steps:
+
+1. Click Start, click Settings, and then click Printers.
+
+2. Right-click the problem printer, and then click Sharing.
+
+3. Write down the share name of the printer.
+
+4. Stop sharing this printer by clicking the Not Shared radio button, and then
+  close the printer folder.
+
+5. Open Control Panel, double-click Services, select the Spooler Service, click
+  Stop, and then click Start.
+
+6. After the Spooler Service restarts, open the printer folder and re-create the
+  printer share using the share name found in step 3. Do this by clicking
+  Start, clicking Settings, and then clicking Printers. Right-click the problem
+  printer, and then click Sharing. Click the Shared radio button, and then
+  share the printer with the same name as before.
+
+MORE INFORMATION
+================
+
+The above steps are a workaround that should eliminate the error message
+received when viewing the printer's properties and also enable the printer to
+again be seen on the network.
+
+This exact cause of the share corruption is not known at this time.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0,4.0 SP3,4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

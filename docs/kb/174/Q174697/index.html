@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174697: XFOR: Correspondence Between Foreign.nsf and Lmd.* | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174697: XFOR: Correspondence Between Foreign.nsf and Lmd.*" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174697/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174697/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174697/","publisher":null,"image":null,"headline":"Q174697: XFOR: Correspondence Between Foreign.nsf and Lmd.*","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174697-xfor-correspondence-between-foreignnsf-and-lmd">Q174697: XFOR: Correspondence Between Foreign.nsf and Lmd.*</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174697
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 14-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you recreate the Foreign.nsf file from scratch, any full loads or updates
+to existing users have no effect from Exchange to Lotus Notes. You may also see
+the following errors for the process DXANOTES in the LinkAge logs:
+
+  1997/09/22 18:29:40- DXANOTES(0165) 2 64083:Transaction: ### - Record
+  has already been added - Treat as an update
+  &gt;&gt; lndxapi(1965)
+  1997/09/22 18:29:44- DXANOTES(0165) 1 41116:Error opening Notes document
+  with id = ####
+  &gt;&gt; lsnabapi(1012)
+  1997/09/22 18:29:44- DXANOTES(0165) 2 41127:Notes Package ID: Notes
+  Storage Facility (NSF). Extended Reason String: Invalid or nonexistent
+  document
+  &gt;&gt; lsnabapi(3118)
+  1997/09/22 18:29:44- DXANOTES(0165) 1 64103:Error {System failure}
+  detected opening Note
+  &gt;&gt; lndxapi(2512)
+  1997/09/22 18:29:44- DXANOTES(0165) 2 64073:Error {System failure}:
+  While processing Transaction ###
+  &gt;&gt; lndxapi(1397)
+
+Applies to the LinkAge Notes Connector with LinkAge Directory Exchange version
+3.2 (components include LinkAge Exchange DXA, LinkAge Notes DXA, and LinkAge
+DXM).
+
+CAUSE
+=====
+
+The LinkAge Directory Exchange Manager (DXM) sends the full load to the Notes
+Directory Exchange Agent (DXA); however, the Notes DXA compares each user being
+added to the LMD table, which has not been reset. Because the entry exists in
+the Local Mapping Directory (LMD), the Notes DXA assumes that the entry should
+be interpreted as an update to an existing user in Foreign.nsf, though the
+Foreign.nsf has been cleared. The Notes DXA then attempts to update the person
+document in Foreign.nsf that no longer exists. The result is that the user is
+not added, and the above error occurs in the LinkAge log files (located in
+Linkage\Logs directory).
+
+WORKAROUND
+==========
+
+This workaround should only be used when Foreign.nsf has been recreated from
+scratch. The following procedure requires a directory pull/push on the Notes
+side, which could take a significant amount of time to transmit and process:
+
+1. Stop the DXANOTES process, or shut down the LinkAge Directory Exchange
+  service.
+
+2. Go to the LINKAGE\DXANOTES directory and delete, rename, or move the
+  following files:
+
+  Dlockfil.dat
+  Lmd.dat
+  Lmd.ix1
+  Lmd.ix2
+
+3. Start the DXANOTES process, or start the LinkAge Directory Exchange service.
+
+4. Request a full load from Notes. This will bring in a full directory from
+  Notes and recreate the LMD tables.
+
+5. Send a full load from DXM to Notes. This will ensure that the LMD also
+  represents what currently exists in Exchange.
+
+Step 5 may produce duplicate entries in the Notes address book if it was not
+empty; that is, if it contains any Exchange users. The LMD tables have a
+correlation between the document ID and the key fields (username, domain) of the
+person document. When this LMD table is removed, the Notes DXA will try to
+insert these names as new documents, not modifications, though the identically
+named user is in the address book. To recover, or prevent this, in the case
+where Exchange names are stored in a separate address book, recreate a blank
+address book for the Exchange names, and redo steps 1-5. In the case where
+Exchange names are stored in the same address book as other Notes names, a
+solution would have to be researched.
+
+
+Additional query words: LDE
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

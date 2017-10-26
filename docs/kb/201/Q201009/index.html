@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201009: Sample: WrapTBar.exe Wraps Toolbar During CFrameWnd Resizing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201009: Sample: WrapTBar.exe Wraps Toolbar During CFrameWnd Resizing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201009/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201009/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201009/","publisher":null,"image":null,"headline":"Q201009: Sample: WrapTBar.exe Wraps Toolbar During CFrameWnd Resizing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201009-sample-wraptbarexe-wraps-toolbar-during-cframewnd-resizing">Q201009: Sample: WrapTBar.exe Wraps Toolbar During CFrameWnd Resizing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201009
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbfile kbsample kbMFC kbToolbar kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WrapTBar.exe is a sample that demonstrates how to implement a toolbar that wraps
+according to the parent frame size. When the parent CFrameWnd is resized, the
+toolbar checks whether the new window width is wide enough to display all the
+buttons on the same row; if not, the toolbar wraps accordingly.
+
+If your application requires that all toolbar buttons be accessible at all times,
+or if it allows the user to customize the toolbar by adding new buttons, you
+might decide to use this enhancement. The drawback of this sample is that it
+requires a fixed-size, nondockable toolbar. If you need to implement this
+behavior for dockable toolbars too, you might need to subclass the docking bar
+window, associated with the CDockBar class, and provide a new handler for
+WM_SIZEPARENT message.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+WrapTBar.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+  File Name                Size
+  ---------------------------------------------------------
+
+  WrapFixedToolBar.h,      Implement the CToolBar-derived class
+  WrapFixedToolBar.cpp     that would provide the desired behavior.
+  WrapToolBar.h            The main header file (CWrapToolBarApp class).
+  WrapToolBar.cpp          The main application source file.
+  WrapToolBar.rc           Listing of all Windows resources used.
+  res\WrapToolBar.ico      Icon file.
+  res\WrapToolBar.rc2      Resources not edited by the IDE.
+  WrapToolBar.clw          Information used by ClassWizard.
+  MainFrm.h,
+  MainFrm.cpp              The frame class CMainFrame.
+  res\Toolbar.bmp          Used to create tiled images for the toolbar.
+  WrapToolBarDoc.h,
+  WrapToolBarDoc.cpp       The document CWrapToolBarDoc.
+  WrapToolBarView.h,
+  WrapToolBarView.cpp      The view of the document.
+  StdAfx.h,
+  StdAfx.cpp               Used to build a precompiled header (PCH) file.
+  Resource.h               Defines new resource IDs.
+
+The core of this solution relies on handling the MFC private WM_SIZEPARENT
+message. This message is sent to all child-windows of CFrameWnd-derived classes
+when the frame window is resized, ensuring the proper negotiation of the client
+space.
+
+By deriving a new class from CToolBar and providing a handler for WM_SIZEPARENT,
+we solve the problem. The handler resembles the following:
+
+  LRESULT CWrapFixedToolBar::OnSizeParent(WPARAM, LPARAM lParam)
+  {
+      AFX_SIZEPARENTPARAMS* lpLayout = (AFX_SIZEPARENTPARAMS*)lParam;
+      DWORD dwStyle = RecalcDelayShow(lpLayout);
+
+      if ((dwStyle &amp; WS_VISIBLE) &amp;&amp; (dwStyle &amp; CBRS_ALIGN_ANY) != 0)
+      {
+          CRect rect;
+          rect.CopyRect(&amp;lpLayout-&gt;rect);
+          // Reposition buttons on toolbar according to available space.
+          SetWidth(rect.Width());
+          // Pass message processing to base class handler.
+          CToolBar::OnSizeParent(0, lParam);
+      }
+      return 0;
+  }
+
+The CWrapFixedToolBar::SetWidth() function should be implemented as:
+
+  void CWrapFixedToolBar::SetWidth(long lWidth)
+  {
+      TBBUTTON* pData;
+      // Read the toolbar buttons.
+      int nCount = GetToolBarCtrl().GetButtonCount();
+      if (nCount != 0)
+      {
+          pData = new TBBUTTON[nCount];
+          for (int i = 0; i &lt; nCount; i++)
+              _GetButton(i, &amp;pData[i]);
+      }
+      else
+          return;
+
+      // Get the toolbar buttons offsets in the toolbar area.
+      CRect rect;
+      rect.SetRectEmpty();
+      CalcInsideRect(rect, TRUE);
+
+      // Wrap buttons according to available space.
+      WrapToolBar(pData, nCount, lWidth - abs(rect.Width()));
+
+      // Save toolbar buttons to underlying toolbar control.
+      if (nCount != 0)
+          for (int i = 0; i &lt; nCount; i++)
+              _SetButton(i, &amp;pData[i]);
+
+      if (pData)
+          delete [] pData;
+  }
+
+Finally, change the toolbar creation code in CMainFrame::OnCreate() to make it
+CBRS_SIZE_FIXED and to disable the docking capabilities.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kbMFC kbToolbar kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

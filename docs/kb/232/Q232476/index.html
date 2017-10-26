@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232476: Terminal Server Connections and Logon Limited by MaxWorkItems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232476: Terminal Server Connections and Logon Limited by MaxWorkItems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232476/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232476/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232476/","publisher":null,"image":null,"headline":"Q232476: Terminal Server Connections and Logon Limited by MaxWorkItems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232476-terminal-server-connections-and-logon-limited-by-maxworkitems">Q232476: Terminal Server Connections and Logon Limited by MaxWorkItems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232476
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0 SP4
+Operating System(s): 
+Keyword(s): kbenv kbnetwork
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 4.0, 4.0 SP4, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+After multiple Terminal Server clients establish a session with a server running
+Microsoft Windows NT Server 4.0, Terminal Server Edition, additional clients are
+unable to connect. When this occurs, in some cases, clients are not able to
+browse certain servers or domain controllers after a specific number of client
+sessions have been established. They may not exhibit the same symptoms as above,
+but this issue may be corrected by the solution below.
+
+This behavior is not affected by either the number of licenses in place or the
+License Logging Service on either the Terminal Server computer or domain
+controller. This problem can occur with either Independent Computing
+Architecture or Remote Desktop Protocol clients, and the clients may receive one
+of the following error messages:
+
+  System could not log you on because domain &lt;&lt;domainname&gt;&gt; is not
+  available
+
+  -or-
+
+  You do not have access to logon to this session
+
+Clients are able to use the NET VIEW, NET USE, or the PING command to contact
+other servers and domain resources without difficulty. In some cases, after 20
+or 30 minutes, additional clients may be able to log on before new connections
+are again refused. Central Processing Unit (CPU) usage is normally very low, and
+this can occur regardless of the CPU speed, number of CPUs, or amount of Random
+Access Memory (RAM) installed on either the Terminal Server computer or domain
+controllers.
+
+If the Terminal Server computer is a member server, no Event Viewer System log
+entries may be evident. On the domain controllers, the Terminal Server
+computer's Event Viewer System log may contain one or both of the following
+entries:
+
+  Error 1727: The remote procedure call failed and did not execute
+
+  -or-
+
+  Event ID: 1311
+  Source: NetLogon
+  Description: There are currently no logon servers available to service the
+  logon request.
+
+Other RPC error messages that may appear are:
+
+  Error 1722: The RPC server is unavailable.
+
+  Error 1723: The RPC server is too busy to complete this operation.
+
+  Error 1721: Not enough resources are available to complete this operation.
+
+  Netlogon Event ID 5719:
+  No Windows NT Domain Controller is available for domain domain_name.
+  The following error occurred:
+  There are currently no logon servers available to service the logon request.
+
+
+RESOLUTION
+==========
+
+To resolve this issue, you need to either edit the existing values or add the
+following registry entries for both MaxWorkItems and MaxMpxCt to the server(s)
+from which the clients are requesting resources. By default, MaxWorkItems and
+MaxMpxCt do not appear under the parameters key although they are in effect.
+
+MaxMpxCt allows a server to provide a "suggested" maximum number of simultaneous
+client requests to itself, and then enforces those limits. Because each "client
+connection" generates multiple instances (Windows shell, Explorer.exe, etc.),
+with multiple clients connecting to the server, they can exceed the default
+MaxMpxCt setting of 50. Once this limit is reached for that server, additional
+requests are refused until it once again drops below the set limit.
+
+NOTE: These values need to be added with such a ratio that the value for
+MaxWorkItems is at least four times as large as that for MaxMpxCt. For example,
+if MaxMpxCt has a value of 1024, then MaxWorkItems needs to have a value of at
+least 4096.
+
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+  HKEY_LOCAL__MACHINE\System\CurrentControlSet\Services\LanmanServer\Parameters
+
+3. Double-click the MaxWorkItems value, type "4096" (without the quotation
+  marks), click Decimal, and then click OK.
+
+  The number value you enter is arbitary, and you could also enter 8192, 16384,
+  or 32768 if desired. However it is recommended to begin at the lower levels
+  and work up as needed, doubling the value each time. The range for this value
+  is 1 through 65535. If this value already exists, but you are experiencing
+  problems similar to those outlined above, then edit this entry and double its
+  current value but please choose a minimum value of 4096; For example, if it
+  shows a value of 2048, then change it to 4096, and so forth. If problems
+  persist, then continue this process until the issue subsides.
+
+  NOTE: This value needs to be at least four times as large as MaxMpxCt.
+
+4. If the MaxWorkItems value does not exist in the Parameters key, on the Edit
+  menu, click Add Value, and then add the following registry value:
+
+  
+
+  Value Name: MaxWorkItems
+  Data Type:  REG_DWORD
+  Value:      4096
+
+5. Double-click the MaxMpxCt value, type "1024" (without the quotation marks),
+  click Decimal, and then click OK.
+
+  The default value for MaxMpxCt is 50, but remember that MaxWorkItems needs to
+  be set at least 4 times as high as the number used for MaxMpxCt.
+
+  NOTE: Windows 95 and Windows 98 clients can interpret this registry entry
+  differently than Windows NT, so apply this value according to which client is
+  being used. For more information about how Windows 95 and Windows 98 does
+  this, please click the article number below to view the article in the
+  Microsoft Knowledge Base:
+
+  Q232890 Win98 Fails to connect to NT4 share -- net client hangs.
+
+6. If the MaxMpxCt value does not exist in the Parameters key, on the Edit menu,
+  click Add Value, and then add the following registry value:
+
+  
+
+  Value Name: MaxMpxCt
+  Data Type:  REG_DWORD
+  Value:      1024 (Decimal)
+
+  IMPORTANT: When you add this value to the registry of a computer running
+  Windows 9x, set this value to 510 Decimal (or 1fe Hex).
+
+NOTE: If Windows 95, Windows 98, and Windows NT clients are present, then the
+value for MaxMpxCt should be set to the default used for Windows95 and Windows
+98, because Windows NT should read the value without problems.
+
+
+
+7. Quit Registry Editor and restart the computer.
+
+MORE INFORMATION
+================
+
+Default MaxWorkItems Value:
+
+This value specifies the maximum number of receive buffers, or work items, that
+the Server service is permitted to allocate at one time. If this limit is
+reached, then the transport must initiate flow control, which can significantly
+impair performance. In some cases, this problem may also manifest itself by not
+allowing new connections to be made to the server.
+
+There is no set default value for this entry, because it is determined by the
+computer's hardware configuration and the Server service, and may need to be
+adjusted. Third-party programs may also require this value to be set at a higher
+number.
+
+Windows NT uses the settings for Server Service Optimization along with the
+hardware configuration to help determine what the default value for MaxWorkItems
+are. The Server Optimization choices are found in the Server properties when you
+click the Services tab in Control Panel Network tool. Windows NT configures the
+value in the following manner:
+
+  (4*(MB*SMBServerPerfSetting)*OSVersion/1)*(#Processors)
+
+where:
+
+  MB = Megabytes RAM on the server
+  SMBServerPerfSetting = .5 if "Minimize Memory Used"
+  SMBServerPerfSetting = 1 if "Balance"
+  SMBServerPerfSetting = 2 if "Maximize Throughput for File Sharing"
+  OSVersion = 2 if running NTServer with &gt; 16MB RAM
+  #Processors = is the number of processors in the system
+
+For example a server with one processor that is configured for Maximum Throughput
+for File Sharing, the calculations for and 24 MB and 56 MB of RAM are
+respectively:
+
+  (4 * ( 24 * 2 ) * 2 / 1) * 1 = 384
+
+  (4 * ( 56 * 2 ) * 2 / 1) * 1 = 896
+
+Default MaxMpxCt values:
+
+This allows a server to provide a suggested maximum number of simultaneous
+outstanding client requests to a particular server. During negotiation of the
+Server Message Block dialect, this value is passed to the client's redirector
+where the limit on outstanding requests is enforced. A higher value can increase
+server performance, but requires higher use of server work items (MaxWorkItems).
+Because each client can consume multiple instances, this can exceed the default
+maximum of 50.
+
+For additional information about MaxMpxCt and slow network performance, please
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q191370 Slow Network Performance with Terminal Server
+
+This article does not apply to Windows 2000. In the following registry key, all
+values greater than 125 are ignored:
+
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\MaxMpxCt
+
+Additional query words: Lock Freeze hang logging
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServSearch
+Version           : :4.0,4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

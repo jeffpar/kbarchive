@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63541: Passing Structures to OS/2 LAN Manager Remote API Calls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63541: Passing Structures to OS/2 LAN Manager Remote API Calls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63541/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63541/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63541/","publisher":null,"image":null,"headline":"Q63541: Passing Structures to OS/2 LAN Manager Remote API Calls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63541-passing-structures-to-os2-lan-manager-remote-api-calls">Q63541: Passing Structures to OS/2 LAN Manager Remote API Calls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q63541
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SYMPTOMS
+========
+
+  A structure passed to NetShareAdd() includes pointers to ASCIIZ strings. To
+  keep all the data in one place, the data for these strings was appended to
+  the end of the structure (that is, the structure and the strings it addresses
+  are kept in one physical buffer).
+
+  Since the buffer includes both the strings and the passed structure, the
+  buffer length supplied must be the length of the structure plus the length of
+  the appended strings. However, when the NetShareAdd() API is called from
+  MS-DOS to add a share on a remote server, it returns an error of
+  ERROR_INVALID_PARAMETER (number 87).
+
+CAUSE
+=====
+
+  This characteristic applies to all the OS/2 LAN Manager Add or SetInfo type
+  API calls; OS/2 LAN Manager uses an optimizing technique to minimize the
+  amount of data actually sent on a remote API call (a call that is performed
+  on another physical machine).
+
+  Any pointers in a passed structure that point to data within the structure
+  itself are set to NULL. Since the code that transfers the API call handles
+  many different APIs, OS/2 LAN Manager determines this by checking whether any
+  pointers point to an area somewhere within where the structure starts and
+  ends, as determined by the passed structure pointer and buffer length field.
+  Since the buffer length includes more than just the structure length, OS/2
+  LAN Manager assumes that the pointers within the structure are pointing into
+  the structure itself, and therefore sets them to NULL. This causes the
+  parameters to become invalid.
+
+RESOLUTION
+==========
+
+  The proper value to supply for the buffer-length argument to Add and SetInfo
+  type OS/2 LAN Manager API calls is as follows
+
+        sizeof(struct xxxxx)
+
+  where "xxxxx" is the name of the structure whose pointer is being passed. You
+  can still place the structure and the data it addresses in the same buffer,
+  just don't let OS/2 LAN Manager be aware of it.
+
+Please note that this information applies to remote API calls only. More
+information on this topic can be found in Chapter 1 of the "Microsoft LAN
+Manager Programmer's Reference for OS/2 LAN Manager and MS-DOS LAN Manager."
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

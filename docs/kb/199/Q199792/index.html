@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199792: DNS Event IDs 2000 Through 9999 for Windows NT 4.0 SP4 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199792: DNS Event IDs 2000 Through 9999 for Windows NT 4.0 SP4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199792/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199792/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199792/","publisher":null,"image":null,"headline":"Q199792: DNS Event IDs 2000 Through 9999 for Windows NT 4.0 SP4","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199792-dns-event-ids-2000-through-9999-for-windows-nt-40-sp4">Q199792: DNS Event IDs 2000 Through 9999 for Windows NT 4.0 SP4</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199792
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes DNS event IDs 2000 through 9999 for Windows NT Server
+version 4.0 with Service Pack 4 installed. In the list below, each event ID
+number is followed by its definition and description.
+
+MORE INFORMATION
+================
+
+Admin / RPC
+-----------
+
+Messages generated as a result of admin activity.
+
+Boot File Backup Message
+------------------------
+
+  2000 (Success) DNS_BOOTFILE_BACKUP_MESSAGE
+  The DNS Server is now booting from the registry. The existing boot file will
+  no longer be read on startup. New zones or changes to zone information must
+  now be made through the DNS manager. The previous boot file has been moved to
+  the %SystemRoot%\system32\dns\backup directory.
+
+  To return to using a boot file, use the registry editor to open
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DNS\Parameters and
+  delete the value EnableRegistryBoot. Then replace your desired boot file in
+  the system32\dns directory. Note, however, that ALL changes to zone
+  information, including new zones, made through the DNS Manager will be
+  wriiten back to the boot file if it maps to a supported boot file directive.
+
+  Q129047 Synchronizing DNS Information in Registry with Boot Files
+
+  2001 (Success) DNS_EVENT_BOOTFILE_REWRITE
+  The DNS Server has written a new version of the boot file. New zones or
+  changes to zone information made through the DNS Manager, require The DNS
+  Server to change the information in the boot file.
+  The previous boot file has been moved to the %SystemRoot%\system32\dns\backup
+  directory file "boot.last".
+
+  2002 (Error) DNS_EVENT_BOOTFILE_WRITE_ERROR
+  The DNS Server encountered an error writing current configuration back to boot
+  file. Verify that current boot file contains all desired information.
+
+  2003 (Success) DNS_EVENT_SWITCH_TO_BOOTFILE
+  The DNS Server has been reconfigured to boot from a boot file. Current server
+  and zone configuration information has been written to the boot file.
+
+  To return to using registry boot use the registry editor to open
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DNS\Parameters and set
+  the value EnableRegistryBoot to 1.
+
+Registry
+--------
+
+For additional information about this and other DNS registry parameters, please
+see the following article(s) in the Microsoft Knowledge Base:
+
+  Q198408 Microsoft DNS Server Registry Parameters, Part 1 of 3
+
+  2200 (Error) DNS_EVENT_REGISTRY_OPEN_FAILED
+  DNS Server could not open registry key.
+
+  2201 (Error) DNS_EVENT_REGISTRY_READ_FAILED
+  DNS Server could not read registry key.
+
+  2202 (Error) DNS_EVENT_REGISTRY_WRITE_FAILED
+  DNS Server could not write registry key.
+
+  2203 (Error) DNS_EVENT_REGISTRY_DELETE_FAILED
+  DNS Server could not delete registry key.
+
+Run Time Events
+---------------
+
+Data file messages
+These messages are used to allow internationalization of messages written to data
+file.
+
+  3001 (Informational) DNSMSG_FILE_HEADER
+  Database file %1s for %2s zone.
+
+  3002 (Informational) DNSMSG_FILE_VERSION
+  Zone version: %1lu
+
+  3003 (Informational) DNSMSG_FILE_DELEGATION
+  Delegated sub-zone:
+
+  3004 (Informational) DNSMSG_FILE_DELEGATION_END
+  End Delegation
+
+  3005 (Informational) DNSMSG_FILE_NAME_SERVERS
+  Zone Name Servers
+
+  3006 (Informational) DNSMSG_FILE_WINS
+  Zone WINS Lookup Record
+
+  3007 (Informational) DNSMSG_FILE_WINSR
+  Zone WINSR (WINS Reverse) Lookup Record
+
+  3008 (Informational) DNSMSG_FILE_ZONE_RECORDS
+  Zone Records
+
+File Writing
+------------
+
+  3150 (Informational) DNS_EVENT_ZONE_WRITE_COMPLETED
+  DNS Server wrote new version of zone %1, to file %2. The data is the new
+  version number.
+
+  3151 (Error) DNS_EVENT_ZONE_WRITE_FAILED
+  DNS Server unable to write database file %1 for zone %2.
+
+  3152 (Error) DNS_EVENT_FILE_NOT_OPENED_FOR_WRITE
+  DNS Server unable to open file %1 for write.
+
+  3153 (Error) DNS_EVENT_WRITE_FILE_FAILURE
+  DNS Server encountered error writing file. The data is the WriteFile() error.
+
+  3160 (Error) DNS_EVENT_UNWRITABLE_RECORD_TYPE
+  DNS Server encountered unwritable or unknown record type writing database to
+  file. The data is the record type.
+
+  3162 (Error) DNS_EVENT_UNKNOWN_PROTOCOL_NUMBER
+  DNS Server encountered unknown protocol writing WKS record to file. The data
+  is the protocol number.
+
+  3163 (Error) DNS_EVENT_UNKNOWN_SERVICE_PORT
+  DNS Server encountered unknown service port writing WKS record to file. The
+  data is the port.
+
+DS Integration
+--------------
+
+  3900 (Error) DNS_EVENT_DS_OPEN_FAILED
+  The DNS Server was unable to open directory. The data is the error status.
+  This DNS Server is configured to use directory service information and can
+  not operate without access to the directory.
+
+  3901 (Error) DNS_EVENT_DS_ZONE_OPEN_FAILED
+  The DNS Server was unable to open zone %1 in directory. The data is the error
+  status. This DNS Server is configured to use directory service information
+  for this zone and is unable to load the zone without it.
+
+  3902 (Error) DNS_EVENT_DS_ZONE_ADD_FAILED
+  The DNS Server was unable to add zone %1 to the directory. This data is the
+  status. Zone will NOT be written to the directory.
+
+  3903 (Error) DNS_EVENT_DS_ZONE_DELETE_FAILED
+  The DNS Server was unable to delete zone %1 in directory. This data is the
+  status.
+
+  3904 (Error) DNS_EVENT_DS_ZONE_ENUM_FAILED
+  The DNS Server was unable to complete directory service enumeration of zone
+  %1. The data is the error status. This DNS Server is configured to use
+  directory service information for this zone and is unable to load the zone
+  without it.
+
+  3905 (Error) DNS_EVENT_DS_ZONE_BAD_VERSION
+  Current version of zone %s is greater than version in directory. Dumping
+  current version and reloading zone from directory.
+
+  3906 (Error) DNS_EVENT_DS_NODE_LOAD_FAILED
+  The DNS Server was unable to create name in database for name %1 in zone %2 in
+  directory. This directory name is ignored. The data is the error status.
+
+  3910 (Error) DNS_EVENT_DS_RECORD_LOAD_FAILED
+  The DNS Server was unable to load record in the directory at %1 in zone %2.
+  The data is the error status.
+
+  3911 (Error) DNS_EVENT_DS_WRITE_FAILED Unable to add or update domain name %1
+  in zone %2 to the directory. The data is the error status.
+
+  3912 (Warning) DNS_EVENT_DS_OPEN_WAIT
+  The DNS Server was unable to open directory. This DNS Server is configured to
+  use directory service information and can not operate without access to the
+  directory.
+  The DNS Server will wait for the directory to start. If the DNS Server is
+  started event has not been logged, then the DNS Server is still waiting for
+  the directory to start.
+
+Suppressible Run-Time Messages
+------------------------------
+
+Events 5050-7504 are suppressible -- If a large number of these events occur, the
+DNS Server will log event ID 5000 to indicate that suppression has begun, and
+will log event ID 9999 to indicate that event suppression has ended.
+
+
+  5000 (Warning) DNS_EVENT_START_LOG_SUPPRESS
+  DNS Server is logging numerous run-time events. This is usually caused by the
+  reception of bad or unexpected packets, or from problems with or excessive
+  replication traffic. See previous event log entries for information about bad
+  packet source. Now suppressing event logging for these events.
+
+Debug Events
+------------
+
+  5050 (Warning) DNS_EVENT_ASSERT
+  DNS Server encountered assertion failure: %1, file %2, line %3.
+
+  5051 (Warning) DNS_EVENT_EXCESSIVE_MEMORY_USE
+  DNS Server is using a large amount of memory. The data is the current memory
+  allocated.
+
+Caching Problems
+----------------
+
+  5105 (Error) DNS_EVENT_ADDING_RR_AT_CNAME
+  DNS Server attempted to cache resource record to a CNAME node. CNAME must be
+  the only record for its domain name.
+
+  5106 (Error) DNS_EVENT_CNAME_NOT_ALONE
+  DNS Server attempted to cache CNAME record for a domain name with existing
+  resourse records. CNAME record is ignored.
+
+  5107 (Error) DNS_EVENT_CNAME_LOOP
+  DNS Server created CNAME loop caching CNAME record. The record is ignored.
+
+  5108 (Error) DNS_EVENT_CNAME_LOOP_LINK
+  DNS Server created CNAME loop loading CNAME at %1. One link in CNAME loop: DNS
+  name %2 is alias for CNAME %3. See adjoining messages for other links in
+  CNAME loop.
+
+Bad Packets From Remote
+-----------------------
+
+  5500 (Warning) DNS_EVENT_BAD_QUERY DNS
+  Server received bad DNS query. Query rejected or ignored.
+
+  5501 (Warning) DNS_EVENT_BAD_PACKET_LENGTH
+  DNS Server encountered bad packet from %1. Packet processing leads beyond
+  packet length.
+
+  5502 (Warning) DNS_EVENT_BAD_TCP_MESSAGE
+  DNS Server received bad TCP DNS message from %1. Packet rejected or ignored.
+
+  5504 (Warning) DNS_EVENT_INVALID_PACKET_DOMAIN_NAME
+  DNS Server encountered invalid domain name in packet from %1. Packet is
+  rejected.
+
+  5505 (Warning) DNS_EVENT_PACKET_NAME_TOO_LONG
+  DNS Server encountered domain name exceeding maximum length in packet.
+
+  5506 (Warning) DNS_EVENT_PACKET_NAME_BAD_OFFSET
+  DNS Server encountered invalid domain name offset in packet. Offset is the
+  error.
+
+  5507 (Warning) DNS_EVENT_PACKET_NAME_OFFSET_TOO_LONG
+  DNS Server encountered name offset exceeding packet length. Offset is the
+  error.
+
+  5508 (Warning) DNS_EVENT_PACKET_NAME_TOO_MANY_LABELS
+  DNS Server encountered packet name exceeding maximum label count.
+
+  5509 (Warning) DNS_EVENT_BAD_UPDATE_PACKET
+  DNS Server encountered invalid UPDATE message from %1. Packet was rejected.
+
+  5510 (Warning) DNS_EVENT_BAD_RESPONSE_PACKET
+  DNS Server encountered invalid response message message from %1. Packet was
+  rejected.
+
+Zone Transfer Master
+--------------------
+
+  6000 (Informational) DNS_EVENT_ZONEXFR_START
+  DNS Server initiating transfer of zone %1 to DNS server at %2.
+
+  6001 (Informational) DNS_EVENT_ZONEXFR_SUCCESSFUL
+  DNS Server transfer of zone %1 to DNS server at %2, successfully completed.
+
+  6002 (Informational) DNS_EVENT_ZONEXFR_ABORTED
+  DNS Server transfer of zone %1, aborted by DNS server at %2.
+
+  6003 (Warning) DNS_EVENT_UDP_ZONE_TRANSFER
+  DNS Server received UDP zone transfer request from %1. Request ignored.
+
+  6004 (Warning) DNS_EVENT_BAD_ZONE_TRANSFER_REQUEST
+  DNS Server received zone transfer request from %1 for non-existent or
+  non-authoritative zone %2.
+
+Zone Transfer Secondary
+-----------------------
+
+  6520 (Informational) DNS_EVENT_ZONE_UPDATE
+  Zone %1 updated to version %2 from DNS server at %2.
+
+  6521 (Informational) DNS_EVENT_ZONE_IN_SYNC
+  Zone %1 in sync with version %2 at DNS server at %3.
+
+  6522 (Informational) DNS_EVENT_ZONE_TRANSFER_IN_PROGRESS
+  New version %1 of zone %2 found at DNS server at %3. Zone transfer is in
+  progress.
+
+  6523 (Warning) DNS_EVENT_XFR_MASTER_UNAVAILABLE
+  Zone %1 failed zone refresh check. Unable to connect to master DNS server at
+  %2 to receive zone transfer.
+
+  6524 (Error) DNS_EVENT_AXFR_BAD_RESPONSE
+  Invalid response from master DNS server at %2 during attempted zone transfer
+  of zone %1. Check DNS Server at %2 and insure it is properly authoritative
+  for this zone.
+
+  6525 (Error) DNS_EVENT_AXFR_REFUSED
+  Zone transfer request for secondary zone %1 refused by master DNS server at
+  %2.
+
+  6526 (Warning) DNS_EVENT_ZONE_NEWER_THAN_SERVER_VERSION
+  Zone %1 version %2 is newer than version %3 on DNS server at %4. The zone is
+  not updated. DNS servers supplying zones for transfer must have most recent
+  version of zone from primary. If zone on remote server %4, is in fact the
+  most recent version of the zone, stop the DNS Server, delete the zone file
+  and restart. The DNS Server will transfer the new version and rewrite its
+  zone file.
+
+  6527 (Error) DNS_EVENT_ZONE_EXPIRATION
+  Zone %1 expired before successful zone transfer from zone master(s). Zone has
+  been shutdown.
+
+  6530 (Error) DNS_EVENT_XFR_ADD_RR_AT_CNAME
+  During transfer of zone %1 from master at %2, the DNS Server received a record
+  for domain node %3 for which a CNAME record was already received. A CNAME
+  must be the only record for its domain name. The new record is ignored.
+
+  6531 (Error) DNS_EVENT_XFR_CNAME_NOT_ALONE
+  During transfer of zone %1 from master at %2, the DNS Server received a CNAME
+  record for domain node %3 for which other were already received. A CNAME must
+  be the only record for its domain name. The CNAME record is ignored.
+
+  6532 (Error) DNS_EVENT_XFR_CNAME_LOOP
+  During transfer of zone %1 from master at %2, the DNS Server received a CNAME
+  record for domain node %3 which forms a CNAME loop. Record is ignored.
+
+  6533 (Error) DNS_EVENT_AXFR_INIT_FAILED
+  DNS Server could not create a zone transfer thread. The data is the error.
+
+  6534 (Error) DNS_EVENT_XFR_ABORTED_BY_MASTER
+  Failed transfer of zone %1 from DNS server at %2. DNS Server at %2 aborted or
+  failed to complete transfer of zone. Check DNS server at %2 and insure it is
+  properly functioning and authoritative for zone %1.
+
+Winsock Run-Time Errors
+-----------------------
+
+  7050 (Error) DNS_EVENT_RECV_CALL_FAILED
+  DNS Server recv() function failed. The data is the error.
+
+  7051 (Error) DNS_EVENT_RECVFROM_CALL_FAILED
+  DNS Server recvfrom() function failed. The data is the error.
+
+  7052 (Error) DNS_EVENT_SEND_CALL_FAILED
+  DNS Server send() function failed. The data is the error.
+
+  7053 (Error) DNS_EVENT_SENDTO_CALL_FAILED
+  DNS Server sendto() function failed. The data is the error.
+
+  7054 (Error) DNS_EVENT_SELECT_CALL_FAILED
+  DNS Server select() function failed. The data is the error.
+
+  7055 (Error) DNS_EVENT_ACCEPT_CALL_FAILED
+  DNS Server accept() function failed. The data is the error.
+
+  7056 (Error) DNS_EVENT_GQCS_CALL_FAILED
+  DNS Server GetQueuedCompletionStatus() function failed. The data is the error.
+
+  7060 (Warning) DNS_EVENT_CANNOT_CONNECT_TO_SERVER
+  DNS Server could not connect to DNS server at %1.
+
+  7061 (Error) DNS_EVENT_CANNOT_SET_WINS_BROADCAST
+  DNS Server could not set broadcast option on WINS socket. The data is the
+  error.
+
+  7062 (Error) DNS_EVENT_SELF_SEND
+  DNS Server encountered a packet addressed to itself -- IP address %1. The DNS
+  Server should never be sending a packet to itself. This situation usually
+  indicates a configuration error. Check the following areas for possible
+  self-send configuration errors:
+
+    1) Forwarders list. (DNS servers should not forward to themselves).
+    2) Master lists of secondary zones.
+    3) Notify lists of primary zones.
+    4) Delegations of subzones. Must not contain NS record for DNS server.
+
+  Example:
+
+  -&gt; This DNS server dns1.mycompany.com is the primary for the zone
+  mycompany.com.
+  -&gt; You have delegated the zone sales.mycompany.com to
+  salesdns.sales.mycompany.com. and are NOT running the sales.mycompany.com
+  zone on this DNS (dns1.mycompany.com).
+  -&gt; sales.mycompany.com MUST NOT have an NS record that points at
+  dns1.mycompany.com.
+
+  Note, you should make this check (with nslookup or DNS manager) both on this
+  DNS server and on the server(s) you delegated the subzone to. It is possible
+  that the delegation was done correctly, but that the primary DNS for the
+  subzone, has any incorrect NS record pointing back at this server. If this
+  incorrect NS record is cached at this server, then the self-send could
+  result. If found, the subzone DNS server admin should remove the offending NS
+  record.
+
+General Run-Time Errors
+-----------------------
+
+  7500 (Error) DNS_EVENT_SERVER_FAILURE_PROCESSING_PACKET
+  DNS Server failure processing packet from %1. Packet is discarded.
+
+  7501 (Error) DNS_EVENT_WAIT_CALL_FAILED
+  DNS Server call to WaitForMultipleObjects() failed. The data is the error.
+
+  7502 (Error) DNS_EVENT_OUT_OF_MEMORY
+  DNS Server was unable to service a client request due a shortage of available
+  memory.
+
+  7503 (Error) DNS_EVENT_CANNOT_ALLOCATE_RECORD
+  DNS Server could not allocate memory for resource record %1.
+
+  7504 (Error) DNS_EVENT_CANNOT_ALLOCATE_NODE
+  DNS Server could not allocate memory for node for domain name %1.
+
+
+End of Run-Time Message Suppression
+-----------------------------------
+
+  9999 (Warning) DNS_EVENT_CONTINUE_LOG_SUPPRESS
+  DNS Server has encounters numerous run-time events. These are usually caused
+  by the reception of bad or unexpected packets, or from problems with or
+  excessive replication traffic. The data is the number of suppressed events
+  encountered in the last 15 minute interval.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

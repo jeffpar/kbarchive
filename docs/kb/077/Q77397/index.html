@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q77397: KEYB.COM, German 83/84 Key Keyboard, and Phoenix BIOS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q77397: KEYB.COM, German 83/84 Key Keyboard, and Phoenix BIOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/077/Q77397/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/077/Q77397/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/077/Q77397/","publisher":null,"image":null,"headline":"Q77397: KEYB.COM, German 83/84 Key Keyboard, and Phoenix BIOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q77397-keybcom-german-8384-key-keyboard-and-phoenix-bios">Q77397: KEYB.COM, German 83/84 Key Keyboard, and Phoenix BIOS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q77397
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Executing the following Debug script will correct problems caused by MS-DOS 5.0
+or later KEYB.COM on a machine with a Phoenix BIOS and German 83/84 key
+keyboard. Symptoms include random machine lock ups or occasional difficulties
+recognizing the keyboard.
+
+MORE INFORMATION
+================
+
+Note: The following Debug script is only valid with the release of KEYB.COM that
+has a file size of 14,986 bytes. If the file has another size, contact your
+computer manufacturer for assistance.
+
+
+Steps to Use Debug
+------------------
+
+1. From the directory containing your MS-DOS files, first make a backup copy of
+  KEYB.COM using the following command:
+
+  " copy keyb.com keyb.bak" (without the quotation marks)
+
+2. Type the following commands listed in the "User Input" column:
+
+Screen               User
+Output               Input                  Comment
+------               -----                  -------
+
+C:&gt;                  Debug keyb.com &lt;ENTER&gt; Starts Debug
+-                    E10B8 &lt;ENTER&gt;          Edits byte 10B8h
+XXXX:10B8 73.        EB &lt;ENTER&gt;             Changes byte 10B8h
+-                    W &lt;ENTER&gt;              Writes change to KEYB.COM
+Writing 03A8A bytes
+-                    Q&lt;ENTER&gt;               Quits Debug
+
+
+
+Additional query words: 5.00 5.00a 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

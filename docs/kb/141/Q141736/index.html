@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141736: How to Create a Clock Class to Show Time in AM/PM Format | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141736: How to Create a Clock Class to Show Time in AM/PM Format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141736/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141736/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141736/","publisher":null,"image":null,"headline":"Q141736: How to Create a Clock Class to Show Time in AM/PM Format","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141736-how-to-create-a-clock-class-to-show-time-in-ampm-format">Q141736: How to Create a Clock Class to Show Time in AM/PM Format</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141736
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The TIME() function in Visual FoxPro returns the time as a character string in
+the format of hh:mm:ss. With this format, 1:35:30 PM displays as 13:35:30 and
+9:45:30 AM displays as 09:45:30. In certain situations, you may prefer the
+standard time display with the AM/PM format. This article shows you how to do
+it.
+
+MORE INFORMATION
+================
+
+The following steps create a Visual FoxPro Class that displays the current time
+in the standard AM/PM format when you place it on a form.
+
+Steps to Create Clock Class
+---------------------------
+
+1. Type the following command in the Command window:
+
+     CREATE CLASS.
+
+2. In the dialog box, enter oClock in the Class Name field, Container in the
+  Based On field, and a name for the .VCX file in the Store in field.
+
+3. Add a Timer control to the container, and give the Timer control the
+  following property values and event codes:
+
+     Name: Clock
+     Interval: 1000
+
+     Timer event method:
+
+        This.Parent.tdisplay.Refresh
+
+4. Add a text box to the container, and give the text box the following property
+  values and event code:
+
+     Name: tdisplay
+     DisabledBackColor: 255,255,255
+     DisabledForeColor: 0,0,0
+     Enabled: .F.
+     FontName: Arial
+     FontSize: 10
+     Height: 24
+     Width: 85
+
+     Init event:
+
+        This.Top=0
+        This.Left=0
+
+     Refresh method:
+
+        This.Value=IIF(BETWEEN(VAL(LEFT(Time(),2)),12,23), ;
+           ALLTRIM(STR(VAL(LEFT(Time(),2))-12))+ SUBSTR(Time(),3,6)+' PM', ;
+           IIF(BETWEEN(VAL(LEFT(Time(),2)),1,11), ;
+           ALLTRIM(STR(VAL(LEFT(Time(),2))))+ SUBSTR(Time(),3,6)+' AM', ;
+           '12'+ SUBSTR(Time(),3,6)+ ' AM'))
+
+5. Add the following code to the Init event of Oclock:
+
+     This.Width=This.tdisplay.Width
+     This.Height=This.tdisplay.Height
+
+6. Save the container class. Then type the following in the Command window:
+
+     CREATE FORM seeclock
+
+7. On the Form Controls toolbar, click the Visual Class tool.
+
+8. On the Visual Class menu, click Add. Locate the .vcx file where you saved the
+  oClock class. Select the oClock object from the Form Controls toolbar and
+  drop it on the form.
+
+9. Save and run the form. The system time will display on the form in the
+  standard AM/PM format.
+
+To add functionality to the clock to allows toggling between both the standard
+AM/PM and military (24 hour) formats, make the following modifications to the
+Class:
+
+Steps to Add Format-Toggling Functionality
+------------------------------------------
+
+1. While the oClock container is open in design mode, click New Property on the
+  Class menu. In the New Property dialog box, enter lttoggle as the Name, and
+  click OK.
+
+2. In the Init event of oClock, add the following line of code:
+
+     This.lttoggle=.t.
+
+3. In the Refresh method of tdisplay, the followings lines of code replace the
+  lines of code for the Refresh method as shown in Step 4 in the previous
+  section:
+
+     IF This.Parent.lttoggle
+        This.Value=IIF(BETWEEN(VAL(LEFT(Time(),2)),12,23), ;
+           ALLTRIM(STR(VAL(LEFT(Time(),2))-12))+ SUBSTR(Time(),3,6)+' PM', ;
+           IIF(BETWEEN(VAL(LEFT(Time(),2)),1,11), ;
+           ALLTRIM(STR(VAL(LEFT(Time(),2))))+ SUBSTR(Time(),3,6)+' AM', ;
+           '12'+ SUBSTR(Time(),3,6)+ ' AM'))
+        This.Width=85
+        This.Parent.Width=85
+     ELSE
+        This.Value = Time()
+        This.Width=60
+        This.Parent.Width=60
+     ENDIF
+
+4. In the oClock DblClick event, enter the following two lines of code:
+
+     This.lttoggle= !This.lttoggle
+     This.tdisplay.Refresh
+
+5. Save the container class.
+
+6. Run the previously saved seeclock form. When the form initially loads, the
+  time is displayed in standard AM/PM format. Double-click the oClock object,
+  and note that the time now toggles to military format. Then double-click the
+  Clock object to toggle the time display between the two formats.
+
+Additional query words: VFoxWin normal switch
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

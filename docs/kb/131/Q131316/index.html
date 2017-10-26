@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131316: ErrMsg:&quot;Cannot Find VBRUN300.DLL&quot; on Installing Moving Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131316: ErrMsg:&quot;Cannot Find VBRUN300.DLL&quot; on Installing Moving Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131316/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131316/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131316/","publisher":null,"image":null,"headline":"Q131316: ErrMsg:&quot;Cannot Find VBRUN300.DLL&quot; on Installing Moving Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131316-errmsgcannot-find-vbrun300dll-on-installing-moving-wizard">Q131316: ErrMsg:"Cannot Find VBRUN300.DLL" on Installing Moving Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131316
+Product(s): Microsoft Product Support Information
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SYMPTOMS
+========
+
+The Microsoft Business Source Program includes distribution of the Moving
+Wizard, a tool that creates a customized moving guide for switching to Microsoft
+products. However, when you install the Moving Wizard you may receive the
+following error message:
+
+  Cannot Find VBRUN300.DLL
+
+CAUSE
+=====
+
+Because VBRUN300.DLL is required for the Moving Wizard Setup program to run
+successfully, this problem will occur if you do not have the file VBRUN300.DLL
+installed in your WINDOWS\SYSTEM directory.
+
+RESOLUTION
+==========
+
+The VBRUN300.DLL file is compressed on the Moving Wizard disk. You can use the
+file EXPAND.EXE, which is installed in the WINDOWS directory, to decompress
+VBRUN300.DLL from the Moving Wizard disk and to place it in the WINDOWS\SYSTEM
+directory.
+
+To do this, use the following steps:
+
+1. Insert the Moving Wizard disk in your floppy disk drive.
+
+2. At the MS-DOS command prompt, switch to your WINDOWS directory and type the
+  following command and press ENTER:
+
+  " expand &lt;drive&gt;:\vbrun300.dl_ c:\windows\system\vbrun300.dll "
+  (without the quotation marks)
+
+  where &lt;drive&gt; is the floppy disk drive containing the Moving Wizard disk
+  and where Windows is installed on your C drive and where the Windows System
+  directory is called WINDOWS\SYSTEM.
+
+This procedure will expand the file and copy it to the WINDOWS\SYSTEM directory.
+You can now install the Moving Wizard.
+
+For more information about how to perform this task in Windows, see your Windows
+printed documentation or online Help.
+
+MORE INFORMATION
+================
+
+To find out more about the Microsoft Business Source Program, call (800)
+607-6872 (or 800-60SOURCE).
+
+Additional query words: error message errmsg
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

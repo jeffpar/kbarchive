@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q270065: XADM: How to Troubleshoot New Mail Notification Issues | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q270065: XADM: How to Troubleshoot New Mail Notification Issues" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/270/Q270065/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/270/Q270065/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/270/Q270065/","publisher":null,"image":null,"headline":"Q270065: XADM: How to Troubleshoot New Mail Notification Issues","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q270065-xadm-how-to-troubleshoot-new-mail-notification-issues">Q270065: XADM: How to Troubleshoot New Mail Notification Issues</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q270065
+Product(s): Microsoft Exchange
+Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 02-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to test for new mail notification service issues.
+Since new mail delivery may be delayed, users may misinterpret delayed delivery
+to be slow delivery. If users report that the new mail notification icon is
+displayed only after they change folders or perform other actions that refresh
+the client computer, you should investigate new mail notification performance
+first.
+
+MORE INFORMATION
+================
+
+Using the following tests, you can verify if there is a new mail notification
+issue. The first test determines whether mail is flowing on the server. The
+second test determines whether new mail notifications are being sent.
+
+Test One
+--------
+
+From a MAPI client installed on the server:
+
+1. Create a new mail message and address it to the mailbox you are working from.
+
+2. Send the message.
+
+3. You should receive a new mail notification without having to refresh the
+  client.
+
+If this test fails, then you are having mail flow issues and you do not need to
+proceed with the second test.
+
+Test Two
+--------
+
+This test requires two workstations signed into two different mailboxes.
+
+1. Instruct User1 to create a new mail message and address it to the mailbox of
+  User2. Request a delivery receipt for this message.
+
+2. Send the message to User2. User1 should refresh the mail client until the
+  delivery receipt is received.
+
+3. User2 should not refresh the client during the previous step. When User1
+  receives the delivery receipt, if User2 has not received new mail
+  notification, then the service is not working.
+
+After you perform these tests, you should be able to verify if the issue is
+caused by a failure to receive new mail notifications. If test one was
+successful, and test two did not work, then you are having new mail notification
+issues.
+
+The issue may be caused by devices or configurations that block or redirect UDP
+ports between the Exchange client and server, such as firewalls, a Proxy Client
+installed on an Exchange Server, or a server configured with multiple default
+gateways.
+
+A new mail notification is a UDP packet that is sent from the server that forces
+the client to refresh its view. If the UDP packet does not reach the client,
+then the only way you can know that new mail has been delivered is if you
+refresh the view. When you change folders, the view is refreshed, and therefore
+it seems that new mail has just been delivered.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q159302 XCLN: Exchange Server Push Notifications Generate ICMP Messages
+
+  Q264035 XADM: No Way to Configure Port for UDP New Mail Notification Packets
+
+NOTE: If the proxy client is installed on the client, you may need to regenerate
+the LAT table and reboot the client machine in order to resolve the issue.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

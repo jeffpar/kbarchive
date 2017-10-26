@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198039: WD97: Understanding the Template Path and Normal.dot | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198039: WD97: Understanding the Template Path and Normal.dot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198039/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198039/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198039/","publisher":null,"image":null,"headline":"Q198039: WD97: Understanding the Template Path and Normal.dot","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198039-wd97-understanding-the-template-path-and-normaldot">Q198039: WD97: Understanding the Template Path and Normal.dot</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198039
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbtemplate word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you click New on the File menu, the templates listed in the Template box
+are the templates found in the directory specified in the File Locations tab for
+User Templates or Workgroup Templates. You can change this location by clicking
+Options on the Tools menu, selecting the File Type, and clicking the Modify
+button.
+
+If you don't have a directory set for your User Templates, but you have a
+Workgroup Templates directory set, Word looks to the Workgroup directory for a
+Normal.dot file. If you have a workstation installation and you set both the
+User Templates and the Workgroup Templates directories, Word first looks in the
+Workgroup Templates directory for Normal.dot. Word searches for Normal.dot in
+the following order:
+
+  User-Dot-Path
+
+  Workgroup-Dot-Path
+
+  Word Program directory
+
+  Current directory
+
+If Word cannot find the Normal template in any of the above locations, it uses
+the preset program default settings.
+
+MORE INFORMATION
+================
+
+This article uses four examples to demonstrate how Word searches for
+Normal.dot.
+
+Situation 1
+-----------
+
+If your dot-path is set to C:\templates and there is no Normal.dot file in
+C:\templates or in the Word for Windows program directory, Word uses the
+dot-path correctly.
+
+Situation 2
+-----------
+
+If your dot-path is set to C:\Templates and there is no Normal.dot file in
+C:\Templates but there is in the Word for Windows program directory, Word for
+Windows uses the Normal.dot file in the Word for Windows program directory.
+
+NOTE: If you are working over a network and the Normal.dot file is in the program
+directory, Normal.dot should be read-only; therefore, you will receive read-only
+errors when you save changes to Normal.dot.
+
+WARNING: If you are working over a network and the Normal.dot file is in the
+program directory but is not marked as read-only, Word uses that copy of
+Normal.dot, which can cause unexpected results for all users running Word from
+the same network location.
+
+Situation 3
+-----------
+
+If your dot-path is set to C:\Templates and there is a Normal.dot file in
+C:\Templates and in the Word for Windows program directory, Word for Windows
+uses the dot-path.
+
+Situation 4
+-----------
+
+If your dot-path is set to C:\Templates and there is a Normal.dot file in
+C:\Templates but not in the Word for Windows program directory, Word for Windows
+uses the dot-path.
+
+Additional query words: READ ONLY
+
+======================================================================
+Keywords          : kbtemplate word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

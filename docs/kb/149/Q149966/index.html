@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149966: BUG: istream::operator&gt;&gt;(long&amp;) Does Not Clear errno | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149966: BUG: istream::operator&gt;&gt;(long&amp;) Does Not Clear errno" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149966/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149966/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149966/","publisher":null,"image":null,"headline":"Q149966: BUG: istream::operator&gt;&gt;(long&amp;) Does Not Clear errno","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149966-bug-istreamoperatorlong-does-not-clear-errno">Q149966: BUG: istream::operator&gt;&gt;(long&amp;) Does Not Clear errno</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149966
+Product(s): Microsoft C Compiler
+Version(s): 1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCRT kbVC kbVC152 kbVC200bug kbVC210bug kbVC220bug kbVC400bug kbVC410bug kbVC420bug kb
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, version 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an error occurs when extracting long values from the stream, the error cannot
+be cleared and other streams also report errors.
+
+CAUSE
+=====
+
+When the istream::operator&gt;&gt;(long&amp; n) encounters an error, it sets
+ios::failbit, but does not clear errno. This causes the stream to continue to
+fail even after ios::clear is called. It also causes other streams to fail.
+
+RESOLUTION
+==========
+
+To work around the bug, set errno to zero in addition to completing normal
+stream error checking.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  /*
+  The following sample code demonstrates only the bug and workaround, not
+  normal error checking.
+
+  Compile options needed: none
+  */ 
+
+  #include    &lt;iostream.h&gt;
+  #include    &lt;strstrea.h&gt;
+  #include    &lt;stdio.h&gt;
+  #include    &lt;stdlib.h&gt;
+  #include    &lt;string.h&gt;
+  #define     MAX_STRING_LEN      100
+  //#define     CLEAR_ERRNO    // uncomment to work around bug
+
+  void main()
+  {
+      char    dc1a, dc1b, dc2a, dc2b;
+      long    input1a=0, input1b=0;
+      long    input2a=0, input2b=0;
+      char    szTest1[MAX_STRING_LEN];
+      char    szTest2[MAX_STRING_LEN];
+
+      strcpy(szTest1,"a2147483648z50"); // 
+      strcpy(szTest2,"a500z50");
+
+      istrstream    StrStream1(szTest1); //String stream 1
+      istrstream    StrStream2(szTest2); //String stream 2
+
+      //    The following command will fail since value input to
+      //    input1a=2147483648 is
+      //    bigger that maximum value long can hold.
+
+      StrStream1 &gt;&gt; dc1a &gt;&gt; input1a &gt;&gt; dc1b &gt;&gt; input1b;
+  #ifdef    CLEAR_ERRNO
+      errno = 0;
+  #endif
+      StrStream2 &gt;&gt; dc2a &gt;&gt; input2a &gt;&gt; dc2b &gt;&gt; input2b;
+
+      cout &lt;&lt; "\n    dc1a: " &lt;&lt; dc1a
+           &lt;&lt; "\n input1a: " &lt;&lt; input1a
+           &lt;&lt; "\n    dc1b: " &lt;&lt; dc1b
+           &lt;&lt; "\n input1b: " &lt;&lt; input1b &lt;&lt; endl;
+
+      cout &lt;&lt; "\n    dc2a: " &lt;&lt; dc2a
+           &lt;&lt; "\n input2a: " &lt;&lt; input2a
+           &lt;&lt; "\n    dc2b: " &lt;&lt; dc2b
+           &lt;&lt; "\n input2b: " &lt;&lt; input2b &lt;&lt; endl;
+
+      cout &lt;&lt; "\n\nPress any key to continue..." &lt;&lt; endl;
+      dc1a = getchar();
+  }
+
+  /*
+  The output is:
+      dc1a: a
+   input1a: 2147483647
+      dc1b:
+   input1b: 0
+
+      dc2a: a
+   input2a: 500
+      dc2b:
+   input2b: 0
+
+  If CLEAR_ERRNO is set, the output is as expected:
+      dc1a: a
+   input1a: 2147483647
+      dc1b:
+   input1b: 0
+
+      dc2a: a
+   input2a: 500
+      dc2b: z
+   input2b: 50
+  */ 
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbCRT kbVC kbVC152 kbVC200bug kbVC210bug kbVC220bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : :1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

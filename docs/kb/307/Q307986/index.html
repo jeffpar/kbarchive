@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q307986: SMS: Can’t Install Virtual and Mouse Remote Control Is Stuck | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q307986: SMS: Can’t Install Virtual and Mouse Remote Control Is Stuck" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/307/Q307986/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/307/Q307986/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/307/Q307986/","publisher":null,"image":null,"headline":"Q307986: SMS: Can’t Install Virtual and Mouse Remote Control Is Stuck","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q307986-sms-cant-install-virtual-and-mouse-remote-control-is-stuck">Q307986: SMS: Can’t Install Virtual and Mouse Remote Control Is Stuck</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q307986
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
+Operating System(s): 
+Keyword(s): kbenv kbtool kbsms200
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2, 2.0 SP3, 2.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to remotely control a Systems Management Server (SMS) client, you
+may be unable to successfully use the mouse in the session, or you may be unable
+to remotely control the computer at all. The client
+%windir%\MS\SMS\Logs\Remctrl.log file may contain the following entry:
+
+  
+
+  ...
+  ********** RCSvcs - Starting Remote Control Services Manager **********  &gt;
+  RCSvcs:  Commanded to Install NT5 Device Drivers. Loaded SetupAPI.DLL and
+  all function pointers to NT 5.0 DDK Setup API.  
+  RCSvcs - Installation of NT 5.0 device drivers starting.  
+  RCSvcs - Could not create new Device Info Structure. Not installing Mouse device driver.  
+  Creating and Starting Win32 Remote Control Agent Service.
+  ...
+
+NOTE: In some cases, the Remote Control component may display an Installed or
+Repair Pending status. The key indicator to determine if you have this problem
+is to review the Remctrl.log file.
+
+CAUSE
+=====
+
+This issue can be caused by either of the following conditions:
+
+- The "Load and Unload Device Drivers" user right has not been granted to the
+  SMSCliToknAcct (for member servers or workstations) or the
+  SMS&amp;_&lt;domain controller name&gt; account on domain controllers.
+
+- Some of the rights and permissions were not migrated to a Microsoft Windows
+  2000 Group Policy during the upgrade process.
+
+WORKAROUND
+==========
+
+To work around this issue, use the appropriate method.
+
+Add User Rights
+---------------
+
+- If the affected client is on a Microsoft Windows NT-based computer, ensure
+  that SMSCliToknAcct has the "Load and Unload Device Drivers" right in User
+  Manager.
+
+- If the affected client is on a Windows 2000-based computer, review Group
+  Policy settings, and ensure that SMSCliToknAcct is defined as a user that has
+  the right to "Load and Unload Device Drivers". Alternatively, you could set
+  the Group Policies back to the default setting of "Not defined" for the "Load
+  and Unload Device Drivers" user right which would also allow SMSCliToknAcct
+  to install the SMS virtual mouse.
+
+NOTE: If you are attempting to install the SMS client on domain controllers,
+substitute SMSCliToknAcct with SMS&amp;_&lt;domain controller name&gt; in the
+previous steps. Also, note that both the SMSCliToknAcct and SMS&amp;_&lt;domain
+controller name&gt; accounts are members of the SMSInternalCliGrp. As such, the
+option of granting rights to the SMSInternalCliGrp instead of individual
+accounts is available.
+
+Permissions Not Migrated
+------------------------
+
+For additional information about how to resolve this issue, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q296812 Error Message Appears When You Try to Add Drivers After Upgrade
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbtool kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2 kbSMS200SP3 kbSMS200SP4
+Version           : :2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

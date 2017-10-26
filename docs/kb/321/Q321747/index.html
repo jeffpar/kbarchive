@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/321/Q321747/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/321/Q321747/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/321/Q321747/","publisher":null,"image":null,"headline":"Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q321747-dungeon-siege-how-to-set-screen-resolution-and-color-depth">Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q321747
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbimu
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Dungeon Siege, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start Dungeon Siege, the screen resolution and color depth are set
+according to the capability of your system. You can change the screen resolution
+and color depth in the Options Menu dialog box, but some resolutions may not be
+available. This article explains how to set the resolution and color depth to
+other settings so that every time that you start Dungeon Siege, the game uses
+those settings.
+
+MORE INFORMATION
+================
+
+You can set the screen resolution and color depth as part of the command line
+property in either the desktop icon or Start menu program item. Those settings
+are
+
+- width=&lt;x&gt;
+
+- height=&lt;y&gt;
+
+- bpp=&lt;z&gt;
+
+where &lt;x&gt; and &lt;y&gt; are screen resolution dimensions, and &lt;z&gt; is
+either 16 for 16-bit color depth or 32 for 32-bit color depth. The standard and
+supported settings for screen resolution are:
+
+- 640 width by 480 height
+
+- 800 width by 600 height
+
+- 1024 width by 768 height
+
+NOTE: Resolutions other then these are not supported by Microsoft.
+
+If you do not specify a setting, Dungeon Siege uses the default setting of the
+highest resolution or color depth that is supported by your computer. For
+example, if 640 x 480 in 16-bit color depth is your computer's highest default
+resolution and color depth, and you specify a width of 800 but do not specify
+other settings, Dungeon Siege starts in 800 x 480 resolution with 16-bit color
+depth.
+
+NOTE: Because there are several versions of Microsoft Windows, the following
+steps may be different on your computer. If they are, see your product
+documentation to complete these steps.
+
+How to Specify Settings for the Desktop Icon
+--------------------------------------------
+
+1. On the desktop, right-click the Dungeon Siege icon, and then click
+  Properties.
+
+2. In the Target box, click to the right of the closing quotation mark, type a
+  space, and then add the settings as explained earlier. For example, the
+  following command line specifies 640 x 480 resolution with 32-bit color:
+
+  "C:\Program Files\Microsoft Games\Dungeon Siege\DungeonSiege.exe" width=640
+  height=480 bpp=32 (with the quotation marks)
+
+3. Click OK.
+
+How to Specify Settings for the Start Menu Program Item
+-------------------------------------------------------
+
+1. Click Start, point to Settings, and then click "Taskbar and Start Menu".
+
+2. Click the Advanced tab, and then click Advanced.
+
+3. In the Start Menu window, locate Start Menu\Programs\Dungeon Siege,
+  right-click Dungeon Siege, and then click Properties.
+
+4. In the Target box, click to the right of the closing quotation mark, type a
+  space, and then add the settings as explained earlier.
+
+  For example, the following settings would specify 800 x 600 resolution with
+  16-bit color:
+
+  "C:\Program Files\Microsoft Games\Dungeon Siege\DungeonSiege.exe" width=800
+  height=600 bpp=16 (with the quotation marks)
+
+5. Click OK, close the Start Menu window, and then click OK.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

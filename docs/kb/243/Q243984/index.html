@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243984: FS: Rudder Pedals Do Not Work Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243984: FS: Rudder Pedals Do Not Work Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243984/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243984/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243984/","publisher":null,"image":null,"headline":"Q243984: FS: Rudder Pedals Do Not Work Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243984-fs-rudder-pedals-do-not-work-correctly">Q243984: FS: Rudder Pedals Do Not Work Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243984
+Product(s): Microsoft Home Games
+Version(s): 
+Operating System(s): 
+Keyword(s): kbtshoot kbui kbimu msgame
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Flight Simulator 2000 
+- Microsoft Flight Simulator 2000 Professional Edition 
+- Microsoft Flight Simulator 2002 
+- Microsoft Flight Simulator 2002 Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use the rudder control for your game controller in Flight
+Simulator 2000 or Flight Simulator 2002, it may not function properly. This
+behavior can occur even if the rudder control functions properly when you
+calibrate and test your game controller in the Game Controllers tool in Control
+Panel.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following troubleshooting methods in the order in
+which they are presented.
+
+Disable Auto-Coordination
+-------------------------
+
+The Auto-Coordination feature disables the rudder controller. If the game does
+not respond when you use the rudder controls for your game controller,
+Auto-Coordination may be enabled. To disable Auto-Coordination:
+
+1. Start a new flight in Flight Simulator.
+
+2. On the Aircraft menu, click Realism Settings.
+
+3. Under "Flight controls," click to clear the Auto-rudder check box.
+
+4. Click the green check mark.
+
+If the issue continues to occur, proceed to the next method.
+
+Reset the Default Game Controller Actions
+-----------------------------------------
+
+To reset the default actions assigned to the game controller:
+
+1. Start a new flight in Flight Simulator.
+
+2. On the Options menu, point to Controls, and then click Assignments.
+
+3. In the "Joystick type" box on the Buttons/Keys tab, click the game controller
+  you want to use, and then click "Reset defaults."
+
+4. Click the "Joystick axes" tab.
+
+5. In the "Joystick type" box, click the game controller you want to use, and
+  then click "Reset defaults."
+
+6. To check if the default events are selected for your 4-axis game controller,
+  verify that the Axis settings for each Event match the settings in the
+  following table:
+
+  
+  +-------------------------------------+
+  | Event                  | Axis       | 
+  +-------------------------------------+
+  | Elevator axis          | Axis 02    | 
+  +-------------------------------------+
+  | Ailerons axis          | Axis 01    | 
+  +-------------------------------------+
+  | Rudder axis (FS2000)   | Axis 04    | 
+  +-------------------------------------+
+  | Rudder axis (FS2002)   | Z-Rotation | 
+  +-------------------------------------+
+  | Throttle axis (FS2000) | Axis 03    | 
+  +-------------------------------------+
+  | Throttle axis (FS2002) | Slider     | 
+  +-------------------------------------+
+
+If the default actions are not selected, assign the default actions manually. To
+do this:
+
+1. To assign events to the buttons on your game controller, click the
+  Buttons/Keys tab.
+
+  To assign events to the axes on your game controller, click the "Joystick
+  axes" tab.
+
+2. In the "Joystick type" box, click the game controller you want to use.
+
+3. In the Event column, click an event you want to assign to a button or an axis
+  on your game controller, and then click "Change assignment."
+
+4. On the game controller, press the button or move the axis you want to use for
+  the selected action.
+
+  If you receive a warning message that a different action is already assigned
+  to the game controller button or axis, click the green check mark to accept
+  the new assignment, or click Clear to assign the event to a different button.
+
+5. When you finish manually assigning events to the buttons and axes on your
+  game controller, click the green check mark, and then click OK.
+
+NOTE: If an event is assigned to an axis on your game controller, but the event
+behaves in reverse (for example, up instead of down, or right instead of left),
+click to select or clear the check box in the Reverse column for that axis.
+
+If the issue continues to occur, proceed to the next method.
+
+Calibrate the Joystick in Flight Simulator
+------------------------------------------
+
+To calibrate your game controller:
+
+1. Start a new flight in Flight Simulator.
+
+2. On the Options menu, point to Controls, and then click Calibrate Joystick.
+
+  NOTE: If Calibrate Joystick is unavailable, click Enable Joystick, and then
+  repeat this step.
+
+3. In the Game Controllers box on the General tab, click the game controller you
+  want to use, and then click Properties.
+
+4. On the Settings tab, move the sliders to the settings you want.
+
+5. Click OK, and then click OK again.
+
+If the issue continues to occur, proceed to the next method.
+
+Disable Sound
+-------------
+
+NOTE: Only for gameport devices.
+
+To determine if there is a problem with the sound card or sound card driver,
+disable the sound in Flight Simulator. To do this, press the Q key.
+
+If the issue is resolved when you disable sound in the game, contact your sound
+card manufacturer for information about how to obtain and install an updated
+driver for your sound card.
+
+For information about how to contact your sound card manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+If the issue continues to occur, proceed to the next method.
+
+Reduce Sound Playback Quality
+-----------------------------
+
+If the issue is resolved when you disable sound in the game, your sound card may
+be unable to properly process game port signals and high quality game sounds at
+the same time. If so, you may be able to work around the issue by reducing the
+sound playback quality in the game. To do this:
+
+NOTE: The following steps will only work in Flight Simulator 2000. They are not
+intended and will not work in Flight Simulator 2002.
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. In the Named box, type "fs2000.cfg" (without the quotation marks).
+
+3. In the "Look in" box, click My Computer, and then click Find Now.
+
+4. In the list of found files, double-click the Fs2000.cfg file.
+
+5. If you are prompted to select the program you want to use to open the file,
+  click Notepad in the "Choose the program you want to use" box, and then click
+  OK.
+
+6. Scroll to the end of the file, press ENTER twice, and then type the following
+  lines, pressing ENTER after you type each line:
+
+  [SOUND]
+  Channels=1
+  SamplesPerSec=11025
+
+7. On the File menu, click Exit. When you are prompted to save the changes,
+  click Yes.
+
+If the issue continues to occur, proceed to the next method.
+
+Configure the Game Controller As a Different Device
+---------------------------------------------------
+
+NOTE: Only for analog devices. Not for USB devices.
+
+Use the Game Controllers tool in Control Panel to configure your game controller
+as a different device.
+
+NOTE: You cannot configure any Microsoft SideWinder game controller except the
+SideWinder Standard or the SideWinder 3D Pro as a different device.
+
+For example, to configure a SideWinder 3D Pro joystick as a 3-axis 4-button
+joystick with Rudder/Pedals:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Game Controllers, and then click Microsoft SideWinder 3D Pro.
+
+3. Click Remove, and then click Yes.
+
+4. Click Add, click 3-Axis, 4-Button Joystick, and then click OK.
+
+5. Click Properties.
+
+6. On the Settings tab, click to select the Rudder/Pedals check box.
+
+7. Click Calibrate, and then follow the instructions on the screen to calibrate
+  the game controller.
+
+  NOTE: Axis 3 is the throttle control, and axis 4 is the rudder control.
+
+8. Click Test to verify that the game controller functions properly.
+
+9. When you finish calibrating and testing the game controller, click OK, and
+  then click OK again.
+
+Additional query words: fs2000 fs2k flightsim fsim fltsim gaming gamepad wheel sw force feedback ff
+
+======================================================================
+Keywords          : kbtshoot kbui kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbFlightSim2002 kbFlightSim2002Pro kbSimSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

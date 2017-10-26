@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236325: How to Obtain and Install Systems Management Server 2.0 SP2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236325: How to Obtain and Install Systems Management Server 2.0 SP2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236325/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236325/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236325/","publisher":null,"image":null,"headline":"Q236325: How to Obtain and Install Systems Management Server 2.0 SP2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236325-how-to-obtain-and-install-systems-management-server-20-sp2">Q236325: How to Obtain and Install Systems Management Server 2.0 SP2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236325
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsetup kbConfig kbServer kbsms200 kbUpgrade
+Last Modified: 12-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+NOTE: The latest service pack for Systems Management Server 2.0 is Service Pack 4 (SP4). For additional information about Service Pack 4, click the article number below 
+to view the article in the Microsoft Knowledge Base:
+
+  Q311457 SMS: How to Obtain and Install Systems Management Server 2.0 Service
+  Pack 4
+
+SUMMARY
+=======
+
+IMPORTANT: This service pack is for use with Systems Management Server (SMS)
+version 2.0 only.
+
+The bugs that are fixed by this update are listed in the Readme file that is
+included with the service pack. This list is also available in the following
+article in the Microsoft Knowledge Base:
+
+  Q258682 SMS: List of Bugs Fixed in Systems Management Server 2.0 Service Pack
+  2
+
+Available Formats for SMS 2.0 Service Pack 2 (SP2)
+--------------------------------------------------
+
+The following files are available for download from the following Microsoft Web
+sites:
+
+NOTE: These downloadable files are Web patches only, and are designed to update
+an SMS 2.0 SP1 source.
+
+IMPORTANT: You must have a SP1-applied source directory before you run these
+executable files.
+
+- Sms20sp2i.exe: Components of SP2 for Intel-based computers
+
+- Sms20sp2a.exe: Components of SP2 for Alpha-based computers
+
+These files are also available on the following Microsoft Web site, and to locate
+them:
+
+1. View the following Microsoft Web site:
+
+  http://www.microsoft.com/smsmgmt/
+
+2. Click Downloads.
+
+3. Within the paragraph description at the top of the Web page, click the
+  Download Service Pack link.
+
+Installing SMS 2.0 SP2
+----------------------
+
+To install SMS 2.0 SP2:
+
+1. Copy the contents of the Systems Management Server 2.0 SP1 CD-ROM to a local
+  folder on the hard disk. For this example, the folder is named SMS20SP2. This
+  folder can be created on a local workstation or on your primary site server.
+  If you create the folder on the site server, the folder must not share the
+  same drive as the SMS site installation. The SMS Setup program does not run
+  from the same drive as the site installation.
+
+2. Share the SMS20SP2 folder.
+
+3. Download one of the files that is listed earlier in this article, and then
+  copy it into the new SMS20SP2 folder.
+
+4. Open the SMS20SP2 folder, and then double-click the file you downloaded. For
+  example, if your computer has an Intel-based processor, you would download
+  the Sms20sp2i.exe file, and then double-click that file to start the SMS 2.0
+  SP2 Service Pack Wizard.
+
+The file is unzipped to the %Temp% folder. By default, this is the c:\temp
+folder. A message stating that the unzip was successful is generated, and the
+Service Pack Setup Wizard then starts.
+
+The Service Pack Wizard prompts you to provide the location of the SMS 2.0 SP1
+image. If you have not already created the SMS 2.0 SP1 image on a network drive,
+the wizard can create one for you. If you have already created the SMS 2.0 SP1
+image, select the second option:
+
+"The SMS 2.0 SP1 CD Image is already on a local or network Drive".
+
+Click Browse, and then point to the location of the folder you created in step
+1.
+
+NOTE: The SMS 2.0 SP2 Setup program cannot be run from the same drive where SMS
+2.0 has been installed. The new SP2 source must be created on a different
+drive.
+
+After the wizard finishes, the new SP2 installation source is created. Open the
+new SP2 source folder, and then double-click the Autorun.exe file to start the
+Setup wizard. Follow the instructions on the screen to upgrade your site to SP2.
+
+Additional query words: prodsms servpack sp1 bug fix Smsdistrib smsfaqtop
+
+======================================================================
+Keywords          : kbsetup kbConfig kbServer kbsms200 kbUpgrade 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

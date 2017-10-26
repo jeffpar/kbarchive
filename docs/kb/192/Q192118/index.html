@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192118: HOWTO: Use HTML Help Text Popup Windows in VBasic Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192118: HOWTO: Use HTML Help Text Popup Windows in VBasic Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192118/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192118/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192118/","publisher":null,"image":null,"headline":"Q192118: HOWTO: Use HTML Help Text Popup Windows in VBasic Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192118-howto-use-html-help-text-popup-windows-in-vbasic-program">Q192118: HOWTO: Use HTML Help Text Popup Windows in VBasic Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192118
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.1,1.3,5.0
+Operating System(s): 
+Keyword(s): kbAPI kbHTMLHelp kbVBp500 kbGrpDSVB kbHTMLHelp110 kbHTMLHelp130
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft HTML Help, versions 1.3, 1.1 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use HTML Help context-sensitive text popup windows
+in a Visual Basic application. If the user places the cursor on a control and
+presses the F1 key, the context-sensitive text appears in a small box.
+
+NOTE: This article assumes that the reader has already prepared an HTML Help
+project file with the HTML Help Workshop and is ready to add context- sensitive
+text popup windows to it.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedures
+-----------------------
+
+1. Using a text editor, such as Word or Notepad, create a text topic file (.txt)
+  that contains the text for the popup windows. Following is an example of how
+  the statements should look in the text file:
+
+     .topic 1
+     This is a text popup window for topic 1.
+
+     .topic 2
+     This is a text popup window for topic 2.
+
+     .topic 3
+     This is a text popup window for topic 3.
+
+  For each topic, the ".topic" is required, followed by a space and a numeric
+  constant or number. The line immediately following must contain the text that
+  you want to appear in the popup window.
+
+  The text file could also appear as follows:
+
+     .topic IDH_MYTOPIC1
+     This is a text popup window for topic 1.
+
+     .topic IDH_MYTOPIC2
+     This is a text popup window for topic 2.
+
+     .topic IDH_MYTOPIC3
+     This is a text popup window for topic 3.
+
+  In this example, you need to define the constants IDH_MYTOPIC1, IDH_MYTOPIC2,
+  IDH_MYTOPIC3 in the [MAP] section of the help project file as follows:
+
+        [MAP]
+
+        #define IDH_MYTOPIC1 1
+        #define IDH_MYTOPIC2 2
+        #define IDH_MYTOPIC3 3
+
+  There is additional information about creating the text topic file in the HTML
+  Help Workshop Help under the topic "To create a context-sensitive help topic
+  file".
+
+2. Include the topic text file in the [FILES] section and in the [TEXT POPUPS]
+  section of the Help Project file. Following is an example where "cpopups.txt"
+  is the name of the topic text file:
+
+        [FILES]
+        topic1.htm
+        topic.htm
+        cpopups.txt
+
+        [TEXT POPUPS]
+
+        #include cpopups.txt
+
+  NOTE: Use a text editor to add the [TEXT POPUPS] and the #include statement.
+
+3. The following example shows the definitions required in your Visual Basic
+  application. You should include these definitions in a module file in your
+  project:
+
+        Public Const HH_TP_HELP_WM_HELP = &amp;H11
+
+        Declare Function HtmlHelpByRefArg Lib "hhctrl.ocx" Alias "HtmlHelpA"
+        (ByVal hwndCaller As Long, ByVal pszFile As String, ByVal uCommand As
+        Long, ByRef dwData As Any) As Long
+
+        Type HH_IDPAIR
+          dwControlId As Long
+          dwTopicId As Long
+        End Type
+
+        'This array should contain the number of controls that have
+        'context-sensitive help, plus one more for a zero-terminating
+        'pair.
+        Public ids(4) As HH_IDPAIR
+
+        Declare Function GetDlgCtrlID Lib "user32" (ByVal hWnd As Long) As
+        Long
+
+        Public Const g_sHTMLHelpFile As String =
+         "myhelpfile.chm::/cpopups.txt"
+
+  NOTE: This example assumes the .chm file is in the same directory as the
+  Visual Basic application because no path is specified.
+
+4. Set the KeyPreview property of the Form to true.
+
+5. For each control that has a text popup window, set the values in the ids
+  array. The first item should be the control id, which you can obtain by using
+  the GetDlgCtrlID routine. The second item should be the topic id that appears
+  in the topic text file. The following is an example of how to fill the array
+  in the Form_Load routine:
+
+        Private Sub Form_Load()
+
+         ids(0).dwControlId = GetDlgCtrlID(Me.MyButton.hWnd)
+         ids(0).dwTopicId = 1
+         ids(1).dwControlId = GetDlgCtrlID(Me.MyText.hWnd)
+         ids(1).dwTopicId = 2
+         ids(2).dwControlId = GetDlgCtrlID(Me.MyList.hWnd)
+         ids(2).dwTopicId = 3
+         ids(3).dwControlId = 0
+         ids(3).dwTopicId = 0
+
+        End Sub
+
+  NOTE: The last pair in the array must contain zeros (0).
+
+6. Intercept the KeyUp method of the Form to capture the F1 key press. For
+  example:
+
+        Private Sub Form_KeyUp(KeyCode As Integer, Shift As Integer)
+
+         If KeyCode = vbKeyF1 Then
+
+              iRetCode = HtmlHelpByRefArg(Me.ActiveControl.hWnd,_
+                    g_sHTMLHelpFile, HH_TP_HELP_WM_HELP, ids(0))
+
+        End If
+        End Sub
+
+7. Run your Visual Basic application. Select a control on the form and press the
+  F1 key.
+
+RESULT: The appropriate text popup window should appear on the screen.
+
+REFERENCES
+==========
+
+"Official Microsoft HTML Help Authoring Kit", Steve Wexler, Microsoft Press,
+1998
+
+The HTML Help Web site:
+
+  http://www.microsoft.com/workshop/author/htmlhelp/default.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbHTMLHelp kbVBp500 kbGrpDSVB kbHTMLHelp110 kbHTMLHelp130 
+Technology        : kbVBSearch kbHTMLHelpSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbHTMLHelp110 kbHTMLHelp130
+Version           : :1.1,1.3,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

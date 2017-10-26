@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119064: HOWTO: Retrieving a List of All ODBC Data Sources | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119064: HOWTO: Retrieving a List of All ODBC Data Sources" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119064/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119064/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119064/","publisher":null,"image":null,"headline":"Q119064: HOWTO: Retrieving a List of All ODBC Data Sources","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119064-howto-retrieving-a-list-of-all-odbc-data-sources">Q119064: HOWTO: Retrieving a List of All ODBC Data Sources</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119064
+Product(s): Microsoft C Compiler
+Version(s): 1.5,1.51,1.52,2.0,2.1,2.2,2.5,2.6,2.7,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbProgramming kbDatabase kbMFC kbODBC kbVC kbVC200 kbVC210 kbVC220 kbVC400 kbVC5
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1, 4.2, 5.0, 6.0 
+- Microsoft Data Access Components versions 1.5, 2.0, 2.1, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Open Database Connectivity (ODBC) API contains a function called
+SQLDataSources() which can be used to retrieve information about data sources
+which are available to an application. Below is a sample function which fills a
+CStringList with the names of all available ODBC data sources.
+
+Sample Code
+-----------
+
+     #include &lt;afxcoll.h&gt;    //Needed for CStringList MFC class.
+     #include "odbcinst.h"
+     #include "sql.h"
+     #include "sqlext.h"
+
+     // NOTE: in 16-bit Visual C++ link with odbcinst.lib
+     //       in 32-bit Visual C++ 2.x link with odbccp32.lib
+     //       in 32-bit Visual C++ 4.x no need to change link options
+
+     #define MAX_DSN_LENGTH 30
+     #define MAX_DSN_DESC_LENGTH 300
+
+     BOOL GetODBCDataSourceNames(CStringList * pList)
+     {
+         HENV hEnv;
+         char szDSN[MAX_DSN_LENGTH];
+         SWORD cbDSN;
+         UCHAR szDescription[MAX_DSN_DESC_LENGTH];
+         SWORD cbDescription;
+         RETCODE retcode;
+
+         ASSERT(pList-&gt;IsEmpty());
+         if (SQLAllocEnv(&amp;hEnv)!=SQL_SUCCESS)
+             return FALSE;
+
+         while (retcode=SQLDataSources(hEnv, SQL_FETCH_NEXT,
+                      (UCHAR FAR *) &amp;szDSN, MAX_DSN_LENGTH, &amp;cbDSN,
+                      (UCHAR FAR *) &amp;szDescription,MAX_DSN_DESC_LENGTH,
+                       &amp;cbDescription) != SQL_NO_DATA_FOUND
+                      &amp;&amp;retcode!=SQL_ERROR)
+
+            {
+                 pList-&gt;AddTail(szDSN);
+            }
+
+         SQLFreeEnv(hEnv);
+         if (retcode==SQL_ERROR)
+           return FALSE;
+
+         return TRUE;
+     }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbProgramming kbDatabase kbMFC kbODBC kbVC kbVC200 kbVC210 kbVC220 kbVC400 kbVC500 kbVC600 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC200 kbMDAC150 kbMDAC210 kbMDAC250 kbMDAC260 kbmdac270 
+Technology        : kbAudDeveloper kbMFC
+Version           : :1.5,1.51,1.52,2.0,2.1,2.2,2.5,2.6,2.7,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

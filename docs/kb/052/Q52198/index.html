@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q52198: Optimization Can Cause Integer Division to Always Return 1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q52198: Optimization Can Cause Integer Division to Always Return 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/052/Q52198/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/052/Q52198/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/052/Q52198/","publisher":null,"image":null,"headline":"Q52198: Optimization Can Cause Integer Division to Always Return 1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q52198-optimization-can-cause-integer-division-to-always-return-1">Q52198: Optimization Can Cause Integer Division to Always Return 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q52198
+Product(s): See article
+Version(s): 2.00 2.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickasm buglist2.00 buglist2.01 | mspl13_c
+Last Modified: 17-JAN-1990
+
+When optimizing code under QuickC (using either the Options menu from
+within the environment, or the -Ot or -Ox switches from the command
+line), integer division can generate incorrect code. This occurs only
+when all of the following conditions are satisfied:
+
+1. The -Ot or -Ox optimization level is chosen.
+
+2. The dividend and the divisor are both variables.
+
+3. The divisor is the product of a multiply (or shift) operation that
+   immediately precedes the division.
+
+To work around this problem, compile modules that meet all the above
+criteria with either -Od or -Ol.
+
+When this problem occurs, the divisor is being divided into itself.
+Therefore, if the returned value for the division is not exclusively
+1, you are not experiencing this problem.
+
+The sample program below demonstrates the problem. Microsoft has
+confirmed this to be a problem in QuickC Versions 2.00 and 2.01. We
+are researching this problem and will post new information here as it
+becomes available.
+
+The following program demonstrates this problem when compiled as
+specified (compile the module with either -Od or -Ol to generate code
+that runs correctly):
+
+/*
+    DIVISION.C
+    Compile: qcl -Ot (or -Ox) division.c
+*/
+
+#include &lt;stdio.h&gt;
+
+void main ( void )
+
+{
+    int a, b, c, d ;
+
+    a = 100 ;
+    b = 5 ;
+    c = b*5 ;
+    d = a/c ;
+
+/*
+    When compiling with -Ot or -Ox, the failed error message will
+    result AND the value of d will be set to one.
+*/
+
+  if (d == 4)
+    printf("Success, d is %d, should be 4!\n", d) ;
+  else
+    printf("Failed, d is %d, should be 4!\n", d) ;
+
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

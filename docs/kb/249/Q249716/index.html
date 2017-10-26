@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249716: HOWTO: Use NetRemoteTOD to Obtain Date/Time Info from a Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249716: HOWTO: Use NetRemoteTOD to Obtain Date/Time Info from a Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249716/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249716/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249716/","publisher":null,"image":null,"headline":"Q249716: HOWTO: Use NetRemoteTOD to Obtain Date/Time Info from a Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249716-howto-use-netremotetod-to-obtain-datetime-info-from-a-server">Q249716: HOWTO: Use NetRemoteTOD to Obtain Date/Time Info from a Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249716
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbAPI kbOSWin2000 kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0, on platform(s):
+   - the operating system: Microsoft Windows NT 4.0 
+   - the operating system: Microsoft Windows 2000 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Windows NT 4.0 or Microsoft Windows 2000, it is possible to obtain
+the date and time from a server by using the NET command line utility with the
+syntax:
+
+  NET TIME \\ServerName
+
+To avoid the expense of shelling to a new process, it is possible to obtain this
+information programmatically using the NetRemoteTOD API function under Windows
+NT.
+
+MORE INFORMATION
+================
+
+NOTE: This code does not work in Visual FoxPro when hosted on Windows 2000
+Terminal Server.
+
+Save and execute the following code, specifying the server name whose time you
+want to query in the line:
+
+  server_name = "yourservername"
+
+  * NetRemoteTOD's first parameter is a pointer to a
+  * Unicode string containing the server name.
+  *
+  * The second parameter is a pointer to a byte array
+  * containing a pointer to a TIME_OF_DAY_INFO structure
+
+  * The '@' preceding the second parameter ('integer @')
+  * dereferences this pointer to the byte array. Later in the
+  * program, the program uses RTLMoveMemory() to
+  * dereference the pointer this byte array contains
+  DECLARE INTEGER NetRemoteTOD IN netapi32 STRING @,  INTEGER @
+
+  * Note that the source address ('inbuffer') is declared as an integer,
+  * to be consistent with the second parameter in NetRemoteTOD above.
+  DECLARE INTEGER RtlMoveMemory IN win32api ;
+     STRING @outbuffer, ;
+     INTEGER inbuffer, ;
+     INTEGER bytes2copy
+
+  * the TIME_OF_DAY_INFO structure
+  * contains 11 DWORDs and 1 long, for
+  * a total of 48 bytes, so tdbuffout is
+  * initialized as:
+  tdbuffout=REPLICATE(CHR(0), 48)
+  tdbuffin = 0
+
+  * the server name must be converted to Unicode
+  * This API function behaves differently depending on
+  * whether the target is an Win2000 machine or not -
+  *
+  * If Win2000, then the servername must be preceded by "\\";
+  * otherwise, it must not.
+
+  server_name = "yourservername"
+  try_server_name = STRCONV(server_name, 5)
+  rc = NetRemoteTOD(@try_server_name, @tdbuffin)
+  IF rc = 0
+     * copy the contents pointed to by the address in tdbuffin to
+     * tdbuffout
+     =RtlMoveMemory(@tdbuffout, tdbuffin, 48)
+  ELSE
+     * call failed, so the target is possibly a Win2000 box;
+     * Retry the function call, prepending "\\" to the server_name
+     try_server_name = STRCONV("\\" + server_name, 5)
+     rc = NetRemoteTOD(@try_server_name, @tdbuffin)
+     IF rc = 0
+        * copy the contents pointed to by the address in tdbuffin to
+        * tdbuffout
+        =RtlMoveMemory(@tdbuffout, tdbuffin, 48)
+     ELSE
+        ? "NetRemoteTOD() call failed. Return code is: ", rc
+        RETURN
+     ENDIF
+  ENDIF
+
+  * Pick out the appropriate parts of the TIME_OF_DAY_INFORMATION
+  * buffer. This buffer will contain the UTC (Universal Coordinated
+  * Time) of the server, and must be adjusted by TOD_TIMEZONE minutes
+  * for the correct local time.
+
+  * str2long() converts the DWORDS and LONGS from their string
+  * representation back to numbers.
+  tod_month = str2long(SUBSTR(tdbuffout, 37, 4))
+  tod_day = str2long(SUBSTR(tdbuffout, 33, 4))
+  tod_year = str2long(SUBSTR(tdbuffout, 41, 4))
+  tod_hours = str2long(SUBSTR(tdbuffout, 9, 4))
+  tod_mins = str2long(SUBSTR(tdbuffout, 13, 4))
+  tod_secs = str2long(SUBSTR(tdbuffout, 17, 4))
+
+  * Subtract this bias (times 60, to obtain seconds)
+  * from the datetime value to obtain the
+  * server's local time
+  *
+  * Alternately, to convert the server's local time to
+  * the workstation's local time, use the Win32 API function
+  * SystemTimeToTzSpecificLocalTime, available under
+  * Windows NT only.
+  tod_timezone = str2long(SUBSTR(tdbuffout, 25, 4)) * 60
+
+  serverdatetime = DATETIME(tod_year, tod_month, tod_day, ;
+     tod_hours, tod_mins, tod_secs)
+
+  ? "UTC time of server is: ", serverdatetime
+  ? "Server's local time is: ", serverdatetime - tod_timezone
+
+  *************************************************************
+  FUNCTION str2long
+  *************************************************************
+  * passed:  4-byte character string (m.longstr) in low-high ASCII format
+  * returns:  long integer value
+  * example:
+  *	m.longstr = "1111"
+  *	m.longval = str2long(m.longstr)
+
+  PARAMETERS m.longstr
+
+  PRIVATE i, m.retval
+
+  m.retval = 0
+  FOR i = 0 TO 24 STEP 8
+     m.retval = m.retval + (ASC(m.longstr) * (2^i))
+     m.longstr = RIGHT(m.longstr, LEN(m.longstr) - 1)
+  NEXT
+  RETURN m.retval
+
+The remote UTC time and local time of the server appear on the Visual FoxPro
+desktop.
+
+REFERENCES
+==========
+
+Microsoft Developer Network (MSDN) topics "NetRemoteTOD" and "RTLMovememory"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbOSWin2000 kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

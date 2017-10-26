@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q65926: How PutCopyBox Determines Window Size in 7.00/7.10 UI ToolBox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q65926: How PutCopyBox Determines Window Size in 7.00/7.10 UI ToolBox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/065/Q65926/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/065/Q65926/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/065/Q65926/","publisher":null,"image":null,"headline":"Q65926: How PutCopyBox Determines Window Size in 7.00/7.10 UI ToolBox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q65926-how-putcopybox-determines-window-size-in-700710-ui-toolbox">Q65926: How PutCopyBox Determines Window Size in 7.00/7.10 UI ToolBox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q65926
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900924-84 | mspl13_basic
+Last Modified: 8-NOV-1990
+
+The User-Interface (UI) ToolBox uses three assembler routines to "Get
+a window from the screen" (GetCopyBox), "Put a window to the screen"
+(PutCopyBox), and "Change the attributes of a window" (AttrBox). The
+source code for these three assembler routines are located in the
+UIASM.ASM file.
+
+GetCopyBox and PutCopyBox are complimentary routines, except for the
+parameters that they use. GetCopyBox needs five parameters; four to
+define the rectangle of the window and one for the string to store the
+information. PutCopyBox uses only three parameters; two for the
+upper-left corner and one for the string where the information will
+come from.
+
+PutCopyBox determines the size of the rectangle by the window width
+and window height stored in the first four bytes of the string.
+GetCopyBox stores this information in the string as the first four
+bytes, then places the contents of the window following the height and
+width of the window.
+
+The window width is the first two bytes and the window height is the
+next two bytes.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS.
+
+The following is an extraction of code from UIASM.ASM used by the UI
+ToolBox routines to preserve and restore a window on the screen.
+
+The sections of code listed below that refer to "si,offset" are moving
+the data from memory to the string. The references to "di,offset" are
+moving the data from the string to memory.
+
+Sample Code
+-----------
+
+get_setstr:
+        mov     al,x1
+        sub     al,x0                   ;find width of box
+        mov     bwidth,al               ;and save
+        add     al,1                    ;add one to width
+        mov     ah,0                    ;to find # words to move
+        mov     movword,ax              ;MovWord = (width+1)
+        mov     al,y1
+        sub     al,y0                   ;find height of box
+        mov     height,al               ;and save
+        mov     es,strdseg
+        mov     di,strdoff              ;string is the destination
+
+        ; Place the Windows Width in the first word of the string
+        ; The first and second bytes of the string
+
+        mov     si,offset bwidth        ;point to width
+        movsb                           ;put width in string
+
+        ; Place the Windows Height in the second word of the string
+        ; The third and fourth bytes of the string
+
+        mov     si,offset height
+        movsb                           ;and the height, too
+
+put_setstr:
+        push    ds
+        pop     es                      ;equate ES to DS
+
+        mov     si,strdoff              ;point DS:SI to string mem
+        push    ds
+        mov     ds,strdseg
+
+        ; Get the Windows Width from the string
+
+        mov     di,offset bwidth
+        movsb                           ;get width
+
+        ; Get the Windows Height from the string
+
+        mov     di,offset height
+        movsb                           ;and height out of string
+
+        pop     ds
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

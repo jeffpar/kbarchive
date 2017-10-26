@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164091: FTP Permissions for File GET and PUT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164091: FTP Permissions for File GET and PUT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164091/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164091/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164091/","publisher":null,"image":null,"headline":"Q164091: FTP Permissions for File GET and PUT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164091-ftp-permissions-for-file-get-and-put">Q164091: FTP Permissions for File GET and PUT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164091
+Product(s): Internet Information Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the permissions to set on directories and files for an
+FTP GET and an FTP PUT commands. The following has been tested on Microsoft
+Windows NT Server version 4.0 and Internet Information Server (IIS) version 2.0
+and works only on NTFS partitions. The following uses the anonymous user with
+the default IUSER_hostname account created by IIS.
+
+MORE INFORMATION
+================
+
+For an anonymous user to GET any files from your FTP server the minimum
+permission required is READ on the directory and all the subdirectories and
+files below the directory. Without this permission the anonymous user will not
+be able to GET a file even if he or she knows the name of the file. The user has
+to be able to browse through the directories to GET the file he or she would
+need.
+
+The following steps lists how to set these permissions:
+
+1. Click the NTFS drive.
+
+2. Select the folder you want to set the permissions on.
+
+3. Right click the folder, and click Properties.
+
+4. Click the Security tab and in the Permissions box, click Permissions.
+
+5. Select Special Directory Access and Special File Access from the drop down
+  box Type of Access, and select the type of access you want to set by
+  selecting Other and checking all options that apply.
+
+6. Select Read as one of your options. This is required.
+
+  For users to PUT files into directories or subdirectories they do not need
+  Read permission on them. In other words they do not have to browse the
+  directory to PUT files into it. The permission they would need is Write and
+  if they know the name of the directory to PUT files into they can do it
+  successfully without the READ permission.
+
+For additional information, please see the following Microsoft Knowledge Base
+articles:
+
+  Q101269 : Access Rights for Anonymous Users of FTP Server
+
+  Q142868 : IIS: Authentication &amp; Security Features
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis200
+Version           : :2.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

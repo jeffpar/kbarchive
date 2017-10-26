@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149184: How to Convert a RGBCOMP() Value into Component Values | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149184: How to Convert a RGBCOMP() Value into Component Values" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149184/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149184/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149184/","publisher":null,"image":null,"headline":"Q149184: How to Convert a RGBCOMP() Value into Component Values","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149184-how-to-convert-a-rgbcomp-value-into-component-values">Q149184: How to Convert a RGBCOMP() Value into Component Values</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149184
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The RGBCOMP() function is new to Foxtools.fll. It accepts an RGB composite value
+as an argument and converts it to the three component values for you. In effect,
+it is the counterpart to FoxPro's RGB() function.
+
+MORE INFORMATION
+================
+
+RGBComp() returns the Red, Green, and Blue components of a composite RGB color
+value. The syntax is:
+
+  RGBComp( nRGBColor, @nRedVal, @nGreenVal, @nBlueVal )
+
+Parameters:
+
+- nRGBColor is a composite RGB color value ranging from 0 to 16777215.
+
+- nRedVal, upon return, is the intensity of the red color component of
+  nRGBColor.
+
+- nGreenVal, upon return, is the intensity of the green color component of
+  nRGBColor.
+
+- nBlueVal, upon return, is the intensity of the blue color component of
+  nRGBColor.
+
+Sample Code
+-----------
+
+The following code gives an example implementation:
+
+  *-- Set up to use FoxTools.FLL
+       CLEAR
+       SET LIBRARY TO SYS(2004) + '\FOXTOOLS'
+
+  *-- Declare some variables to be used in the function calls
+       nRedVal = 0
+       nBlueVal = 0
+       nGreenVal = 0
+
+  *-- Display as we go.
+       ? RGBCOMP(65537, @nRedVal, @nGreenVal, @nBlueVal)
+       ? nRedVal, nGreenVal, nBlueVal
+
+       = RGBCOMP(65537 + 44 + 256 * 4, @nRedVal, @nGreenVal, @nBlueVal)
+       ? nRedVal, nGreenVal, nBlueVal
+
+       = RGBCOMP(65537 + 86 + 256 * 4, @nRedVal, @nGreenVal, @nBlueVal)
+       ? nRedVal, nGreenVal, nBlueVal
+
+  *-- Reset the current active library.
+       SET LIBRARY TO
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

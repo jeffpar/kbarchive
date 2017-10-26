@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q228480: Error 1722 When Starting Cluster Administrator | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q228480: Error 1722 When Starting Cluster Administrator" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/228/Q228480/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/228/Q228480/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/228/Q228480/","publisher":null,"image":null,"headline":"Q228480: Error 1722 When Starting Cluster Administrator","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q228480-error-1722-when-starting-cluster-administrator">Q228480: Error 1722 When Starting Cluster Administrator</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q228480
+Product(s): Microsoft Windows NT
+Version(s): 2000,4.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows 2000 Datacenter Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Cluster Administrator on a computer running Microsoft Cluster
+Server, the following error message may be displayed:
+
+  A connection to the cluster at &lt;clustername&gt; could not be opened. This
+  may be caused by the Cluster Service on node &lt;clustername&gt; not being
+  started. Would you like Cluster Administrator to attempt to start the Cluster
+  Service on node &lt;clustername&gt;?
+
+If you click Yes or No, the following error message is displayed:
+
+  An error occurred trying to open the cluster at &lt;clustername&gt;
+
+  The RPC server is unavailable.
+  Error ID: 1722 (0000006ba)
+
+After this error message is displayed, it is not possible to connect to the
+cluster using &lt;clustername&gt; (where &lt;clustername&gt; is the name of the
+cluster server).
+
+CAUSE
+=====
+
+This behavior can occur for either of the following reasons:
+
+- The Cluster service may not be started.
+
+- The cluster network name resource may be offline.
+  If the parameters of a network adapter on the "Public Network" are changed
+  (for example, when you reinstall a driver, change an IP address, or change a
+  subnet mask), the Cluster service recognizes the network adapter as new. The
+  Cluster service generates a new network for the card and labels it "New
+  Cluster Network." The old Public Network no longer exists, and
+  &lt;clustername&gt; and the cluster IP address that &lt;clustername&gt;
+  depends on do not go online.
+
+NOTE: Public Network is the friendly name associated with the interface that
+network clients use to connect to the cluster. This name may be different in
+actual deployments because it is user-definable during the installation of
+Microsoft Cluster Server.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate method.
+
+From one of the nodes of the cluster:
+
+1. Start Cluster Administrator.
+
+2. When you are prompted to connect to a cluster, type a period (.) in the "Open
+  Connection to Cluster" dialog box, and then click Open. At this point, the
+  cluster group is offline.
+
+3. Click the cluster group, and then click the cluster IP address.
+
+4. On the File menu, click Properties.
+
+5. On the Parameters tab, click New Cluster Network in the "Network to Use" box
+  (the Public Network no longer exists), and then click OK.
+
+6. Click the cluster IP address.
+
+7. On the File menu, click Bring Online.
+
+You can now bring the remaining resources online.
+
+If you cannot gain access to one of the nodes of the cluster:
+
+1. Start Cluster Administrator.
+
+2. When you are prompted to connect to a cluster, type the NetBIOS name of one
+  of the nodes of the cluster in the Open Connection to Cluster dialog box, and
+  then click Open.
+
+3. Click the cluster group, and then click the cluster IP address.
+
+4. On the File menu, click Properties.
+
+5. On the Parameters tab, click New Cluster Network in the "Network to Use" box
+  (the Public Network no longer exists), and then click OK.
+
+6. Click the cluster IP address.
+
+7. On the File menu, click Bring Online.
+
+You can now bring the remaining resources online.
+
+NOTE: If you created other IP address resources on the cluster, you may have to
+reassign a network to the IP addresses to bring them online.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+Version           : :2000,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

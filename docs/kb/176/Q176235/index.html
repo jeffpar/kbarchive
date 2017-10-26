@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176235: XCON: Cyrillic Characters Not Rendered Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176235: XCON: Cyrillic Characters Not Rendered Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176235/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176235/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176235/","publisher":null,"image":null,"headline":"Q176235: XCON: Cyrillic Characters Not Rendered Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176235-xcon-cyrillic-characters-not-rendered-correctly">Q176235: XCON: Cyrillic Characters Not Rendered Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176235
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 18-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When Microsoft Exchange Server receives X.400-messages from another X.400 system
+that uses the ISO 8859-5 (Latin-5) character set for the message bodypart,
+Microsoft Exchange cannot render the Cyrillic characters correctly.
+
+The characters in question are part of ISO 8859-5 (Latin-5) character set.
+Instead, Microsoft Exchange replaces the Cyrillic characters with placeholders.
+The replacement depends on the body-part chosen through the Microsoft Exchange
+Administrator program. Because the ISO 8859-5 (Latin-5) character set is not
+available, the chosen character set is different from the original Latin-5
+character set. Additionally, the lack of ISO 8859-5 (Latin-5) within Microsoft
+Exchange means that it was not possible to send messages with Cyrillic
+characters to foreign X.400 systems that have been set up to use ISO 8859-5
+(Latin-5).
+
+CAUSE
+=====
+
+The use of ISO 8859-5 (Latin-5) as X.400 bodypart for the X.400 message text is
+not implemented in Microsoft Exchange.
+
+WORKAROUND
+==========
+
+Aside of the hotfix described in this article, no workaround is available for
+Cyrillic characters if the communication takes place between Microsoft Exchange
+and foreign X.400 systems. If the communication takes place between different
+Microsoft Exchange Servers, the option Allow MS Exchange Contents can be used to
+prevent the conversion of messages from the internal content (MDBEF) to the
+X.400-format.
+
+STATUS
+======
+
+Microsoft recognizes the increasing need to support the Latin-5 character set
+properly. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Currently, in the Microsoft Exchange Administrator program on the X.400
+Connector's Advanced property page, the drop down list X.400 Bodypart Used for
+Message Text does not expose the added character set. Therefore, the new
+functionality can only be activated using the Raw Properties of the affected
+X.400-connector. To be able to access the Raw properties of an Microsoft
+Exchange object you need to start the Microsoft Exchange Administrator program
+in Raw mode. This is accomplished by typing:
+
+  &lt;drive:&gt;\&lt;path to the admin module&gt;\admin -r
+
+-or-
+
+  &lt;drive:&gt;\&lt;path to the admin module&gt;\admin /r
+
+on the command line.
+
+Once the Microsoft Exchange Administrator program is started in Raw mode, you can
+access the Raw properties of each object by highlighting the object and clicking
+Raw Properties on the File menu. The name of the Raw attribute which needs to be
+changed in this case is Translation-Table-Used and the appropriate value is 8.
+
+Because the fix does not affect Subject-Lines and Display-Names, it is likely
+that in these lines Cyrillic characters will still be displayed as "???".
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

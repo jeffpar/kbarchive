@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80929: Installing IBM Personal Pageprinter 4216-020 with Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80929: Installing IBM Personal Pageprinter 4216-020 with Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80929/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80929/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80929/","publisher":null,"image":null,"headline":"Q80929: Installing IBM Personal Pageprinter 4216-020 with Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80929-installing-ibm-personal-pageprinter-4216-020-with-windows">Q80929: Installing IBM Personal Pageprinter 4216-020 with Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80929
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes the preferred method for installing the IBM Personal
+Pageprinter Model 4216-020 with Microsoft Windows. Using this method
+dramatically reduces the number of unrecoverable application errors (UAEs) and
+general protection (GP) faults associated with the standard installation of the
+adapter software required to run this printer.
+
+IBM manufactures three different models of the IBM Personal Pageprinter: the
+4216-020, 4216-030, and 4216-031. This information applies only to the model
+4216-020 with version 1.3.1 of the Personal Pageprinter adapter software.
+
+MORE INFORMATION
+================
+
+The Pageprinter includes an adapter card installed in the computer and a
+printing engine in the printer; these are connected by a cable. The card in the
+computer provides a port called EPT. You must use this hardware to print with
+the Pageprinter 4216-020.
+
+When you start your computer, a line in the AUTOEXEC.BAT file runs the Personal
+Pageprinter Adapter Program (PPAP). The PPAP loads a PostScript interpreter into
+the computer's adapter card. The most current version of the PPAP is 1.3.1. You
+must use this version. The PPAP will not be revised again. IBM discontinued the
+Pageprinter 4216-020 and no longer supports it.
+
+When IBM discontinued the Pageprinter and stopped revising the PPAP, Windows
+version 3.0 had not been released. Because the PPAP is designed for use with
+Windows 2.x, using it with later versions of Windows can cause problems. The
+steps below detail how to use the Pageprinter correctly with Windows versions
+3.0, 3.0a, 3.1, and 3.11.
+
+With Windows version 2.x, the PPAP software must be installed after Windows is
+installed in order for certain files to be updated correctly. Using the
+instructions below, the installation sequence is no longer as important;
+however, it is recommended that you follow the installation order below. To
+install PPAP correctly with Windows 3.0, 3.0a, 3.1, and 3.11, do the following:
+
+1. Remove old copies of Windows and the PPAP. If the PPAP was installed to use a
+  working directory (for example, C:\PUBLISH), this directory also needs to be
+  removed. Be sure to back up any publications that may be stored in the
+  working directory.
+
+2. Install Windows, then install the Windows PostScript printer driver through
+  the Control Panel. Set up this printer choice as the "IBM Personal
+  Pageprinter" (not "IBM Personal Pageprinter II-30" or "IBM Personal Page
+  Printer II-31"). Configure this printer for the EPT port.
+
+  NOTE: You must disable the Print Manager in Control Panel.
+
+3. Follow the IBM instructions for installing the PPAP from the Pageprinter
+  disks. The IBM installation program offers the following choices:
+
+   - PPAP only
+
+   - PPAP with Microsoft Windows and Windows applications
+
+   - PPAP for Local Area Network print server
+
+   - PPAP for Local Area Network workstation with Microsoft Windows
+
+  Choose to install the PPAP only. Windows 2.x required the second choice;
+  however, this choice corrupts the Windows 3.0, 3.0a, 3.1, or 3.11 WIN.INI
+  file.
+
+  Follow the instructions as you are prompted to enter disks. You should be
+  prompted for only disks that are labeled PPDISKx. With the 3.5-inch disk
+  version of the PPAP, which is the most common format, you are prompted for
+  PPDISK1 through PPDISK6.
+
+  When the PPAP installation is finished, you should be able to reboot your
+  system and print to the Pageprinter on the EPT port from Windows.
+
+This sequence does not install the additional Windows screen fonts that are
+provided with the Pageprinter. You can install these manually through the
+Windows Control Panel. To do this, run Control Panel, choose the Fonts icon,
+then choose the Add button. When prompted for a font filename, insert one of the
+disks labeled "PPWSFXx" in the A drive and type A:\PSFONTS, then choose the OK
+button. A list of fonts should appear. Choose the fonts you want to install. You
+can do this for all the PPWSFx disks to add the screen fonts you need.
+
+
+Additional query words: gpf 3.00 3.0 3.0a 3.00a 4216-020 4216-030 4216-031 3.1 3.10 win30 win31 3.11 Solution Pack Aldus PageMaker KBSetup 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

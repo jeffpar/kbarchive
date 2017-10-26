@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86315: PC Win: Drag/Drop Makes Folder Hierarchy Display Incorrect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86315: PC Win: Drag/Drop Makes Folder Hierarchy Display Incorrect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86315/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86315/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86315/","publisher":null,"image":null,"headline":"Q86315: PC Win: Drag/Drop Makes Folder Hierarchy Display Incorrect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86315-pc-win-dragdrop-makes-folder-hierarchy-display-incorrect">Q86315: PC Win: Drag/Drop Makes Folder Hierarchy Display Incorrect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86315
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 3.0, 3.0b, or 3.2 of Microsoft Mail for Windows, the folder hierarchy
+display can become incorrect after you drag-and-drop folders from the top level
+to a lower level two or more times in succession. Scrolling the list up or down
+corrects the display.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail for Windows
+versions 3.0, 3.0b, and 3.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Here is an example of the problem.
+
+NOTE: MCV stands for the Message Center Viewer window that displays your folders
+and messages.
+
+Beginning Folder Hierarchy
+--------------------------
+
++Current
+Inbox         &lt;-- This is open
++Mine
+-Misc
+
+  Competit
+  Discuss
+  Intl        &lt;-- This is the top folder in view in the MCV
+  Network
+
+ -Software
+
+    Applications
+    Misc
+    PCMail
+    PenWin
+
+  Stuff
+  UI
+
+SentMail
+Wastebasket
++WinBall
+yyPorthole
+yyProject
+yyVisBasic
+yyWinWord     &lt;-- This is the bottom folder in view in the MCV
++zArchive
+
+Grab "yyPorthole" and drag it up to the folder "Software" and drop it. It is
+moved correctly. Next, grab "yyProject" and drag it up to "Software" and drop
+it. The MCV now displays:
+
+Ending Folder Hierarchy
+-----------------------
+
+  Intl
+  Network
+
+ -Software
+
+    Applications
+    Misc
+    PCMail
+    PenWin
+    yyPorthole
+
++Current
+Inbox        &lt;-- This is shown as open
++Mine
+-Misc
+
+  Competit
+  Discuss
+
+yyVisBasic
+yyWinWord
+
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

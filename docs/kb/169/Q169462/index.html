@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169462: XFOR: Configuring POP3 Client for Remote Mail Configuration | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169462: XFOR: Configuring POP3 Client for Remote Mail Configuration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169462/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169462/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169462/","publisher":null,"image":null,"headline":"Q169462: XFOR: Configuring POP3 Client for Remote Mail Configuration","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169462-xfor-configuring-pop3-client-for-remote-mail-configuration">Q169462: XFOR: Configuring POP3 Client for Remote Mail Configuration</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169462
+Product(s): Microsoft Exchange
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Internet Mail Service for Microsoft Exchange Server version 5.0 gives
+administrators the additional flexibility of using POP3 client software to
+connect to the Exchange Server computer. The Internet Mail Service does support
+POP3 as a server; however, there is currently no support for IMAP4 in Exchange
+Server 5.0.
+
+POST OFFICE PROTOCOL, REVISION 3 (POP3)
+
+The POP3 protocol uses the port 25 (SMTP) to send messages and port 110 (POP3) to
+download or retrieve messages from the server. In the default configuration in
+most POP3 clients available, POP3 downloads the messages to be stored locally
+and deletes them from the server. This was originally intended to reduce the
+amount of storage space needed on e-mail servers and to allow a light and fast
+e-mail client for the user.
+
+Although this reduces the amount of storage space necessary on the server, it may
+not be convenient for some users who may use multiple clients to connect to
+servers such as Exchange Server.
+
+For example, UserA uses the Exchange Server client in the office, but at home she
+uses the lighter, faster Internet Mail and News clients.
+
+INTERNET MAIL ACCESS PROTOCOL, REVISION 4 (IMAP4)
+
+Like POP3, the IMAP4 protocol uses port 25 (SMTP) to send messages, but an IMAP4
+server listens on port 143. Unlike POP3, IMAP4 allows the user to store messages
+by default on the server instead of downloading the messages locally.
+
+WORKAROUND
+==========
+
+For users of Exchange Server version 5.0 who want the convenience of IMAP4 with
+the storage located on the server, there is the following workaround.
+
+To allow storage of messages on the Exchange Server, you can configure the POP3
+client for a remote mail configuration. As part of the remote mail
+configuration, you also can configure the client to download copies of the
+message. This configuration allows you to read messages with the many Exchange
+clients and also to delete messages on the server when necessary.
+
+Most POP3 e-mail clients have this configuration option, including Outlook
+Express included with Internet Explorer 4; Internet Mail and News; Windows CE
+Inbox; The Internet Mail Service for Windows Messaging included with Plus! for
+Windows 95, Windows NT Server, and Windows NT Workstation version 4.0; Netscape
+Mail; Eudora Pro; and others.
+
+MORE INFORMATION
+================
+
+Additionally, the Internet Mail Service can be configured as a server for POP3
+clients, but it cannot be a client to POP3 servers. The Internet Mail Service
+uses the SMTP port on port 25 to send and receive Internet mail. Although a POP3
+account can send via SMTP on port 25, a POP3 account retreives mail on the POP3
+port of port 110. The Internet Mail Service does not support this functionality,
+because this violates the original intent of the POP3 protocol.
+
+For more information about configuring POP3 clients for a remote mail
+configuration, refer to the product documentation.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q161116 : POP3 Supported Command Set for Exchange Server 5.0
+
+  Q161118 : Troubleshooting POP3 Connections to Internet Mail Server
+
+Additional query words: pop4 imc XCLN oe ie4 imn
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : 5.00
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

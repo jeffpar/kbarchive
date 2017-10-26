@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80570: Switching from DR-DOS 6.0 to MS-DOS 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80570: Switching from DR-DOS 6.0 to MS-DOS 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80570/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80570/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80570/","publisher":null,"image":null,"headline":"Q80570: Switching from DR-DOS 6.0 to MS-DOS 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80570-switching-from-dr-dos-60-to-ms-dos-50">Q80570: Switching from DR-DOS 6.0 to MS-DOS 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80570
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Switching from DR-DOS 6.0 to MS-DOS 5.0 is accomplished much like you would
+switch from MS-DOS 4.x or 5.0 to another version of DOS. However, when switching
+from DR-DOS 6.0 to MS-DOS, some additional steps may be necessary IF:
+
+- The DR-DOS security system was used to safeguard the entire system.
+
+-or-
+
+- The DELWATCH utility was used.
+
+MORE INFORMATION
+================
+
+System Security
+---------------
+
+When you use the DR-DOS Setup utility to install the DR-DOS security system,
+DR-DOS Setup does the following:
+
+- Adds a driver to the CONFIG.SYS file that asks for your password at bootup.
+  If you do not enter the correct password, the system does not boot.
+
+- Changes the partition type of the DR-DOS partition(s). This is to prevent a
+  user from booting MS-DOS on a floppy disk and accessing the drive.
+
+However, the password can be disabled by editing the CONFIG.SYS file, however,
+the hard drive partition(s) will be inaccessible to MS-DOS unless you have
+removed the security option using DR-DOS Setup. If you have ever used this
+security option, do the following:
+
+- Use the DR-DOS Setup utility to remove the system security.
+
+- If you have disabled the utility by directly modifying the CONFIG.SYS file,
+  use the DR-DOS Setup utility to re-enable and then disable system security.
+
+
+DELWATCH
+--------
+
+The DR-DOS 6.0 DELWATCH utility changes how DR-DOS implements deletions. Under
+MS-DOS (and non-DELWATCH DR-DOS) behavior, a file is deleted by marking the
+first character of a file with the "E5" character, and then marking the area of
+the disk that the file was stored "unused" in the file allocation table (FAT).
+DELWATCH marks the file as "pending delete" by changing the first character of
+the file to the "05" character. These files are not really deleted until the
+utility DELPURGE is used.
+
+"Pending delete" files can cause confusion to MS-DOS and its utilities (such as
+CHKDSK and UNDELETE) as well as third-party disk utility programs. Before using
+MS-DOS, do the following:
+
+- Determine if you have "pending delete" files using the DR-DOS 6.0 CHKDSK
+  utility.
+
+- If you load DELWATCH in the AUTOEXEC.BAT or CONFIG.SYS file, remove the
+  DELWATCH command and reboot to disable DELWATCH.
+
+- Run DELPURGE immediately before booting MS-DOS or installing the MS-DOS 5
+  Upgrade.
+
+The product included here, DR-DOS, is manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.20 3.30 3.30a 4.00 5.00 5.00a 5.0 5.0a 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

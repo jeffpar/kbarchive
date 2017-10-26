@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157767: Vfpodbc5.exe Visual FoxPro ODBC Driver Version 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157767: Vfpodbc5.exe Visual FoxPro ODBC Driver Version 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157767/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157767/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157767/","publisher":null,"image":null,"headline":"Q157767: Vfpodbc5.exe Visual FoxPro ODBC Driver Version 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157767-vfpodbc5exe-visual-foxpro-odbc-driver-version-50">Q157767: Vfpodbc5.exe Visual FoxPro ODBC Driver Version 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157767
+Product(s): Microsoft FoxPro
+Version(s): 5.0,5.0a
+Operating System(s): 
+Keyword(s): kbfile kbinterop kbAutomation kbvfp500
+Last Modified: 10-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Vfpodbc5.exe is a patch that contains the Visual FoxPro ODBC driver version 5.0
+
+The Visual FoxPro ODBC Driver provides extremely fast access to Visual FoxPro
+5.0, Visual FoxPro 3.0, and FoxPro 2.x tables, as well as Visual FoxPro 5.0 and
+3.0 databases. It supports all database rules, triggers, and default values and
+conforms with the ODBC level 1 API.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+  Vfpodbc5.exe
+  (http://download.microsoft.com/download/vfox50/Patch/1/W9X/EN-US/Vfpodbc5.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+To install the Visual FoxPro ODBC driver 5.0, run Vfpodbc5.exe. The following
+information is an excerpt from the Visual FoxPro ODBC Driver 5.0 Update Release
+Notes. The complete Release Notes are installed with the updated driver.
+
+What is New in this release
+---------------------------
+
+- Query performance is 20% faster.
+
+- Vfpodbc.dll is smaller (from 1.20MB to ~835KB).
+
+- The SET commands (see Help file for a list of supported SET commands) are now
+  supported.
+
+- VERSION( ) is supported through stored procedures.
+
+- Local views are read-only.
+
+- If you insert or update a table with a logical field (a column with a SQL_BIT
+  data type), you can now use 1 (true) and 0 (false) to store a value in a
+  field. When comparing values or in an expression, you must use .T. (true) and
+  .F. (false).
+
+- The 16-bit version of Microsoft Query (version 1.0) now works with the Visual
+  FoxPro ODBC Driver.
+
+- SQLGetInfo( ) and SQL_FILE_USAGE now returns SQL_FILE_QUALIFIER for both
+  database and free table data sources.
+
+Known Issues
+------------
+
+- If you insert, delete, or update a Visual FoxPro table via the Visual FoxPro
+  ODBC driver, you might get a "Trigger Failed" message. Check for unsupported
+  commands in the trigger.
+
+- INDEX ON is not supported in this release.
+
+- If a table is opened exclusively and the same table is accessed by another
+  user with SET EXCLUSIVE OFF, then the Visual FoxPro ODBC Driver returns the
+  error "Cannot Open File" instead of "File is in use by another."
+
+- MSQuery returns a "Cannot Access Table" error when creating a table with a
+  field name that starts with a number. For example, the field name "1995
+  Sales" is not allowed. Visual FoxPro does not allow the creation of field
+  names that begin with a number, but MSQuery does.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbinterop kbAutomation kbvfp500 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : :5.0,5.0a
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

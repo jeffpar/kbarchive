@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141677: FIX: Insufficient Memory Errors Using OLE Controls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141677: FIX: Insufficient Memory Errors Using OLE Controls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141677/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141677/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141677/","publisher":null,"image":null,"headline":"Q141677: FIX: Insufficient Memory Errors Using OLE Controls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141677-fix-insufficient-memory-errors-using-ole-controls">Q141677: FIX: Insufficient Memory Errors Using OLE Controls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141677
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under some circumstances, using OLE controls and then repeatedly running the
+form that contains the OLE controls may result in a loss of system resources.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in FoxPro 3.0b for
+Windows.
+
+MORE INFORMATION
+================
+
+The following steps will replicate the resource leak in Windows 3.1 or in
+Windows NT. Before trying this example, you should save any information you have
+open in Visual FoxPro.
+
+Steps to Reproduce Problem
+--------------------------
+
+The following steps require that two conditions be satisfied:
+
+- Microsoft Word 6.0 or later must be installed.
+
+- On the Tools under the Controls option, you have both the Outline and
+  Microsoft Word Document controls installed.
+
+1. Create a new program file that holds the following code:
+
+     FOR i = 1 TO 50000
+       Formstr = "TESTFRM"
+       Loopstr = "#" + STR(i,3) + ":  "
+
+       WAIT loopstr + "Modifying form" WINDOW NOWAIT
+       MODIFY FORM (formstr) NOWAIT
+       WAIT loopstr + "Modifying form" WINDOW TIMEOUT 2
+       RELEASE (formstr)
+       CLEAR WINDOW
+       CLOSE ALL
+       *
+       WAIT loopstr + "Running form" WINDOW NOWAIT
+       DO FORM (formstr)
+       WAIT loopstr + "Running form" WINDOW TIMEOUT 2
+       RELEASE (formstr)
+       CLEAR WINDOW
+       CLOSE ALL
+       *
+       WAIT loopstr + "Delaying 2 seconds..." WINDOW TIMEOUT 2
+       WAIT loopstr + ;
+          "Memory handles in use = " + STR(VAL(SYS(1011)),4) WINDOW
+
+       TIMEOUT 2
+     ENDFOR
+
+2. In the Command window, type:
+
+     CREATE FORM TESTFRM
+
+3. In the Init event of the form, place the following code:
+
+     Public rval
+
+     rval=getobject("","word.basic")
+     Thisform.olecontrol2.doverb(0)
+     rval.insert("Hello")
+     rval.insert("Hello1")
+     rval.insert("Hello2")
+     rval.insert("Hello3")
+     rval.insert("Hello4")
+
+     Thisform.olecontrol1.additem("Line1")
+     Thisform.olecontrol1.additem("Line2")
+     Thisform.olecontrol1.additem("Line3")
+     Thisform.olecontrol1.additem("Line4")
+     Thisform.olecontrol1.additem("Line5")
+
+4. Place an Outline control on the form. Do not change any default settings.
+
+5. Place a Word Document control on the form, and type some text in it.
+
+6. Run the code. On some versions of Win32s (Prior to version 1.25) Visual
+  FoxPro will quit at around 870 iterations; on Windows NT it will quit at
+  around 2,700 iterations.
+
+Additional query words: VFoxWin buglist3.00 fixlist3.00b crash OLE control OLECONTROL
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

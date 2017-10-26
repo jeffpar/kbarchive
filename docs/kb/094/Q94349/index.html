@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q94349: Using FoxPro Text Merge Feature with Multiple Databases | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q94349: Using FoxPro Text Merge Feature with Multiple Databases" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/094/Q94349/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/094/Q94349/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/094/Q94349/","publisher":null,"image":null,"headline":"Q94349: Using FoxPro Text Merge Feature with Multiple Databases","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q94349-using-foxpro-text-merge-feature-with-multiple-databases">Q94349: Using FoxPro Text Merge Feature with Multiple Databases</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q94349
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Documents developed with the Text Merge feature can use fields from two or more
+databases. The example below uses customer names and addresses from the FoxPro
+2.x CUSTOMER.DBF sample database merged with form letters contained in memo
+fields from a second database (INVOICE.DBF).
+
+MORE INFORMATION
+================
+
+NOTE: This example only works using the FoxPro 2.x sample files.
+
+The memo field contains all text to be merged. Page spacing (top, bottom, and
+side margins) is controlled within the memo field. A memo field can appear
+similar to the following example:
+
+  &lt;&lt;DATE()&gt;&gt;
+
+  &lt;&lt;ALLTRIM(PROPER(CONTACT))&gt;&gt;
+  &lt;&lt;ALLTRIM(PROPER(COMPANY))&gt;&gt;
+  &lt;&lt;ALLTRIM(PROPER(ADDRESS))&gt;&gt;
+  &lt;&lt;ALLTRIM(PROPER(CITY))&gt;&gt;, &lt;&lt;ALLTRIM(STATE)&gt;&gt; &lt;&lt;ALLTRIM(ZIP)&gt;&gt;
+
+  Dear &lt;&lt;ALLTRIM(PROPER(CONTACT))&gt;&gt;:
+
+  This area includes the body of a letter to be
+  sent to the contact.
+
+  Sincerely,
+
+  Name
+
+  ENDTEXT
+
+The following program connects the information from the two databases. Work area
+1 includes the database (INVOICE) with memo fields that contain form letters.
+Work area 2 includes a database (CUSTOMER) that contains names and addresses
+that should receive the letter. The program will execute from work area 2.
+
+This example assumes that you have a customer database (CUSTOMER) with account
+status information and a database (INVOICE) with multiple form letters for
+different account statuses.
+
+     SELECT 1
+     USE INVOICE
+     SELECT 2
+     USE CUSTOMER
+     CLEAR                               &amp;&amp; Clear screen.
+     SET TEXTMERGE ON                    &amp;&amp; Enable evaluation of components.
+     SET TALK OFF                        &amp;&amp; Prevent printing of commands.
+     SET TEXTMERGE DELIMITERS TO         &amp;&amp; Set default delimiters.
+     SET MEMOWIDTH TO 80                 &amp;&amp; Set memo width for 80 columns.
+     SCAN                                &amp;&amp; Force top-down processing.
+       FOR J=1 TO MEMLINES(invoice.memo)
+          X="\"+MLINE(invoice.memo,J)  &amp;&amp; Process each line in memo field.
+          &amp;X                        &amp;&amp; Macro substitution.
+       ENDFOR
+     ENDSCAN
+
+For more information about performing text merges, see the following article in
+the Microsoft Knowledge Base:
+
+  Q97163 General Text Merge Functionality
+
+
+Additional query words: VFoxWin FoxDos FoxWin form 2.x mail text merge functionality
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

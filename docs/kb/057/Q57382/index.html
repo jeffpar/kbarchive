@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57382: QBX Make Library Uses OS/2 Mode Last Used by Make EXE File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57382: QBX Make Library Uses OS/2 Mode Last Used by Make EXE File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57382/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57382/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57382/","publisher":null,"image":null,"headline":"Q57382: QBX Make Library Uses OS/2 Mode Last Used by Make EXE File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57382-qbx-make-library-uses-os2-mode-last-used-by-make-exe-file">Q57382: QBX Make Library Uses OS/2 Mode Last Used by Make EXE File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57382
+Product(s): See article
+Version(s): 7.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891211-105 | mspl13_basic
+Last Modified: 8-JAN-1990
+
+The Make Library menu command of the QuickBASIC Extended (QBX.EXE)
+environment that comes with Microsoft BASIC PDS Version 7.00 for
+MS-DOS and MS OS/2 will compile currently loaded source modules for
+whichever OS/2 mode (real or protected) that the last Make EXE File
+menu command compiled for.
+
+(Note that the QBX.EXE environment runs only under OS/2 real mode or
+MS-DOS and does not itself run under OS/2 protected mode, although
+QBX.EXE can make .EXE programs that run under OS/2 protected mode.)
+
+The Make Library command on the Run menu of the QBX.EXE environment
+can be used to make stand-alone libraries for either real or protected
+mode operation. However, there is no option in the Make Library dialog
+box that allows you to choose which mode the modules of the library
+will be compiled for.
+
+The Make Library command will compile the source-code modules for
+whichever mode the last Make EXE File command compiled for. That is,
+if the OS/2 Protected Mode option in the Make EXE File dialog box was
+selected the last time you made an EXE file, then the Make Library
+command will compile the library modules for protected mode. If a real
+mode (using the DOS or OS/2 Real Mode option) EXE file was made last,
+a real mode library will be made the next time Make Library is
+invoked.
+
+Note that selecting a mode (protected or real) in the Make EXE File
+dialog box and then choosing the Cancel button will not cause the Make
+Library command to compile for that mode. BC.EXE must be invoked for
+the change to take effect.
+
+Do the following to demonstrate the problem:
+
+1. Invoke QBX and type the following line:
+
+   PRINT "This will be a protected-mode program"
+
+   Now save the program.
+
+2. Make the program into an executable file using the Make EXE File
+   menu command. For the target environment (operation mode), select
+   the OS/2 Protected Mode option. Choose the Make EXE button to make
+   the executable file.
+
+   The "/Lp" option should be one of the parameters on the BC.EXE
+   command line that is displayed. This switch is used to compile for
+   protected mode.
+
+3. When the executable has been made, the QBX environment should
+   reappear on the screen. Choose the Make Library command and select
+   the Make Library button to make the library.
+
+   The "/Lp" switch should be one of the parameters on the BC.EXE
+   command line that is displayed. This switch is used to compile for
+   protected mode.
+
+4. When the QBX environment comes back on the screen, repeat Steps 2
+   and 3. However, in Step 2, select the DOS Or OS/2 Real Mode option
+   for the target environment. Instead of the "/Lp" switch, the "/Lr"
+   switch should be one of the parameters on the BC.EXE command line
+   generated by the Make EXE File and the Make Library commands.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

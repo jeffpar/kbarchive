@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q77457: Accepting Keyboard Input in Batch Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q77457: Accepting Keyboard Input in Batch Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/077/Q77457/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/077/Q77457/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/077/Q77457/","publisher":null,"image":null,"headline":"Q77457: Accepting Keyboard Input in Batch Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q77457-accepting-keyboard-input-in-batch-files">Q77457: Accepting Keyboard Input in Batch Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q77457
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MS-DOS batch language facility does not provide a means for you to provide
+input to control program flow. All information input from you must be entered
+from the command line.
+
+By using a short program created with the MS-DOS Debug utility, you can provide
+information at the time of batch file execution.
+
+NOTE: Although the Debug program works with MS-DOS 6.0 or 6.2, it is not
+required. If you are using MS-DOS 6.0 or 6.2, type "help choice" (without the
+quotation marks) at the MS-DOS command prompt for more information.
+
+MORE INFORMATION
+================
+
+The Debug program at the end of this article will wait for you to input a
+character from the keyboard and set the value of "errorlevel" equal to the ASCII
+code value of the character entered. For a list of ASCII characters and their
+associated values, see the ANSI.SYS section in your MS-DOS manual.
+
+Most keyboard characters are represented by only one code. However, the functions
+and ALT key combinations send two codes: a zero, followed by another code. The
+REPLY.COM program will set "errorlevel" equal to the second code passed. For
+example, the F8 key sends a zero followed by the value 66. This will be
+interpreted by REPLY.COM as the character "B," which has an ASCII value of 66.
+
+REPLY.COM can be used within batch files to allow user input to control the flow
+of the program. For example, the following AUTOEXEC.BAT file allows you to
+determine whether or not to install a mouse driver during startup:
+
+  @Echo off
+  path=C:\DOS
+  :Ask
+  Echo Install Mouse Driver (y/n)?
+  Reply
+  If errorlevel 121 if not errorlevel 122 goto install
+  If errorlevel 89 if not errorlevel 90 goto install
+  If errorlevel 110 if not errorlevel 111 goto NoMouse
+  If errorlevel 78 if not errorlevel 79 goto NoMouse
+  goto ask
+  :install
+  c:\mouse\mouse
+  :NoMouse
+  cls
+  ver
+
+For more information about using the "errorlevel" environment variable, query on
+the following word in the Microsoft Knowledge Base:
+
+  " errorlevel " (without the quotation marks)
+
+REPLY.COM
+---------
+
+To create REPLY.COM, enter the text listed in the Instruction column. Press ENTER
+after each instruction. Do not enter the text listed in the Comment column; it
+is for your reference.
+
+          Instruction     Comment
+          -----------     -------
+
+           DEBUG       Executes MS-DOS DEBUG utility
+-A 100                  Begin assembling instructions at memory location
+100
+xxxx:0100   MOV AH,08   Get character input without echo
+xxxx:0102   INT 21      Perform MS-DOS service
+xxxx:0104   CMP AL,0    Compare AL with zero
+xxxx:0106   JNZ 010A    If lead zero, get second code of character
+xxxx:0108   INT 21      Perform MS-DOS service
+xxxx:010A   MOV AH,4C   Terminate process with return code
+xxxx:010C   INT 21      Perform MS-DOS service
+xxxx:010E   &lt;ENTER&gt;
+-rcx
+CX 0000
+:e
+-n REPLY.COM
+-w
+Writing 000E bytes
+-q
+
+REFERENCES
+==========
+
+"Supercharging MS-DOS," pages 97-98, by Van Wolverton, Microsoft Press, 1989,
+1991 (Updated for Version 4).
+
+Additional query words: 6.22 3.20 3.30 3.30a 4.00 4.00a 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401 kbMSDOS500a
+Version           : MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

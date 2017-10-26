@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q112257: PC Adm: MOVEUSER: Mail Clients Erratic and Workstations Hang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q112257: PC Adm: MOVEUSER: Mail Clients Erratic and Workstations Hang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/112/Q112257/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/112/Q112257/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/112/Q112257/","publisher":null,"image":null,"headline":"Q112257: PC Adm: MOVEUSER: Mail Clients Erratic and Workstations Hang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q112257-pc-adm-moveuser-mail-clients-erratic-and-workstations-hang">Q112257: PC Adm: MOVEUSER: Mail Clients Erratic and Workstations Hang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q112257
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:2.1,3.0,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 25-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 2.1, 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Mail clients may behave erratically for no apparent reason after you use the
+MOVEUSER utility. The workstation may stop responding (hang).
+
+CAUSE
+=====
+
+When the MOVEUSER utility calculates the total disk space needed to move a user
+or set of users, it fails to detect the logon status of the user or users. Even
+if the user is logged on using Mail at the time, an administrator who has just
+moved the account of that user can delete it and not receive a warning about the
+current logon status.
+
+WORKAROUND
+==========
+
+Before you use the MOVEUSER utility , make sure all users you want to move are
+not logged into Mail or using their postoffice. There are various ways to do
+this, depending on the type of Mail client being used. Under extreme conditions,
+failing to ensure the all users are logged off before you delete mailbox
+accounts can result in the loss of data.
+
+MORE INFORMATION
+================
+
+The MOVEUSER utility is provided with MVUSR.EXE on the Microsoft Download
+Center.
+
+You can find MVUSR.EXE,
+(http://support.microsoft.com/download/support/mslfiles/MVUSR.EXE,) a
+self-extracting file, on the following services:
+
+- Microsoft's World Wide Web Site on the Internet
+
+  On the www.microsoft.com home page, click the Support icon.
+  Click Knowledge Base, and select the product.
+  Enter kbfile MVUSR.EXE, and click GO!
+  Open the article, and click the button to download the file.
+
+- Internet (anonymous FTP)
+
+  ftp ftp.microsoft.com
+  Change to the Softlib/Mslfiles folder.
+  Get MVUSR.EXE
+
+- The Microsoft Network
+
+  On the Edit menu, click Go To, and then click Other Location.
+  Type "mssupport" (without the quotation marks).
+  Double-click the MS Software Library icon.
+  Find the appropriate product area.
+  Locate and Download MVUSR.EXE.
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Additional query words: 2.10 3.00 3.00b 3.20 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b kbMailPCN210
+Version           : WINDOWS:2.1,3.0,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

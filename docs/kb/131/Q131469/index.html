@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131469: Windows NT Err Msg The RPC Server is Unavailable | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131469: Windows NT Err Msg The RPC Server is Unavailable" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131469/","publisher":null,"image":null,"headline":"Q131469: Windows NT Err Msg The RPC Server is Unavailable","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131469-windows-nt-err-msg-the-rpc-server-is-unavailable">Q131469: Windows NT Err Msg The RPC Server is Unavailable</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131469
+Product(s): Microsoft Windows NT
+Version(s): 3.1; winnt:3.5,4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Server versions 3.5, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have insufficient resources on your Windows NT Server system, one or both
+of the following errors may appear on clients computers that are trying to
+connect to the server:
+
+  Error 1723: The RPC server is too busy to complete this operation.
+
+  -or-
+
+  Error 1722: The RPC server is unavailable.
+
+NOTE: These errors may appear in a windowed dialog box, or as a numbered event
+error message in the system log on the client computer. The service or utility
+running on the server at the time of the error determines how the error appears
+on the client.
+
+CAUSE
+=====
+
+If your server has more than 48 megabytes of RAM, the problem may occur because
+PagedPoolSize is set too small. The static value for PagedPoolSize is
+established when you install Windows NT.
+
+RESOLUTION
+==========
+
+This has been corrected in Windows NT 3.51. When you upgrade your computer from
+a previous version, if Windows NT Setup finds the value 0x03000000 (48 MB), it
+is reset to 0, which is the 3.51 default at installation time.
+
+WORKAROUND
+==========
+
+You may be able to work around this problem by increasing the PagedPoolSize
+value in the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+To correct this problem:
+
+1. Shutdown Windows NT.
+
+2. Turn the server off and then turn it back on.
+
+3. Start Windows NT.
+
+4. Run Registry Editor (REGEDT32.EXE).
+
+5. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+  SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
+
+You will find that the value for PagedPoolSize is 0x03000000 (48MB).
+
+6. Set PagedPoolSize to zero.
+
+7. Shutdown and restart Windows NT.
+
+When PagedPoolSize is set to zero, Windows NT automatically calculates a new
+value based on the amount of physical memory installed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Advanced Server
+version 3.1 and Windows NT Server version 3.5. This problem has been resolved in
+Windows NT version 3.51.
+
+MORE INFORMATION
+================
+
+The small PagedPoolSize is only one of several potential triggers, or first
+causes, that affect the operation of SERVICES.EXE. The "RPC server is too
+busy..." and "RPC server unavailable..." messages indicate that SERVICES.EXE or
+one of its threads may have hung. A thread may remain in a blocking state and
+appear to be hung if a resource is not available.
+
+SERVICES.EXE is a process that functions as the service control manager. It also
+runs a variety of Windows NT user mode functions as threads including server,
+browsing, event log, and RPC services. The symptoms are typically returned by
+workstations performing commands (including net view, event log, and other
+related RPC requests). Client RPC requests to the pipe \SRVSVC, result in Server
+Message Block (SMB) errors returned with STATUS_PIPE_NOT_AVAILABLE by the
+server.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q130069 SERVICES.EXE Fails With Access Violation and Returns RPC Busy...
+
+  Q126401 Err Msg: "Not Enough Server Storage is Available to Process..."
+
+Additional query words: 3.10 prodnt cpr sufficient pagedpool page pool size ntfaqmax
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNT310Search
+Version           : :3.1; winnt:3.5,4.0
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

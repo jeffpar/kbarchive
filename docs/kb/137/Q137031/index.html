@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137031: PRB: OLE Servers Don’t Unload When Last Object Set to Nothing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137031: PRB: OLE Servers Don’t Unload When Last Object Set to Nothing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137031/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137031/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137031/","publisher":null,"image":null,"headline":"Q137031: PRB: OLE Servers Don’t Unload When Last Object Set to Nothing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137031-prb-ole-servers-dont-unload-when-last-object-set-to-nothing">Q137031: PRB: OLE Servers Don’t Unload When Last Object Set to Nothing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137031
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An OLE Automation server created with Visual Basic fails to unload from memory
+when the last instance of the object is destroyed.
+
+CAUSE
+=====
+
+A Visual Basic client can destroy the last instance of a Visual Basic OLE server
+it created by:
+
+- Setting it to Nothing (the preferred method).
+
+- Shutting down by unloading the last form (acceptable, but not as good).
+
+- Ending the program by using the End statement (this is not recommended; it
+  can cause problems because the QueryUnload, Unload, and Terminate events
+  don't fire)
+
+If the OLE server has a non-visible form still loaded when the last instance is
+destroyed, the OLE server is not destroyed. This is usually handled in the
+Terminate event of the OLE server.
+
+RESOLUTION
+==========
+
+OLE servers are responsible for cleaning up any objects that they create or
+load. When an OLE server is unloaded, the Terminate event will be fired. This is
+where code should be located to unload any forms that the OLE server has in
+memory.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior in Visual Basic 4.0
+-----------------------------------------------
+
+1. Begin with a minimal OLE server and client application. For information on
+  how to do this, please see the following article in the Microsoft Knowledge
+  Base:
+
+  Q129801 How to Create and Use a Minimal OLE Automation Server
+
+2. Add a form (Form1) to the OLE server.
+
+3. Add a timer control (Timer1) to Form1.
+
+4. Set the following properties:
+
+  Object   Property    Value
+  --------------------------
+  Form1    Visible     False
+  Timer1   Enabled     True
+  Timer1   Internal    2000
+
+5. Add the following code to the Timer1_Timer event procedure:
+
+     Private Sub Timer1_Timer ()
+        Beep
+     End Sub
+
+6. Add the following code to the General Declarations section of Class1:
+
+     Dim frmX As New Form1
+
+7. Add the following line to the existing MyClass_Initialize event procedure:
+
+     Load frmX
+
+8. Start the OLE server program by pressing the F5 key.
+
+9. Minimize Visual Basic.
+
+10. Start a second instance of Visual Basic.
+
+11. Open (or create) the OLE client application described in Phase 2 of the
+  article referenced in step 1.
+
+12. Start the OLE client program running by pressing the F5 key.
+
+13. Click Form1 of the OLE client program. The OLE server is created and begins
+  beeping every two seconds.
+
+14. Close the OLE client application. Notice that the OLE server continues to
+  beep.
+
+Steps to Resolve the Failure to Unload
+--------------------------------------
+
+With the above OLE server add the following code to the MyClass_Terminate event:
+
+     Private Sub MyClass_Terminate ()
+        Unload frmX
+     End Sub
+
+When the OLE server is terminated, the Terminate event fires, and the hidden form
+is unloaded.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

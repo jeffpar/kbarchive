@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q308372: INFO: Logon Failure to Passport Returns &quot;f= &quot; Error on the Quer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q308372: INFO: Logon Failure to Passport Returns &quot;f= &quot; Error on the Quer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/308/Q308372/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/308/Q308372/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/308/Q308372/","publisher":null,"image":null,"headline":"Q308372: INFO: Logon Failure to Passport Returns &quot;f= &quot; Error on the Quer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q308372-info-logon-failure-to-passport-returns-f---error-on-the-quer">Q308372: INFO: Logon Failure to Passport Returns "f= "  Error on the Quer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q308372
+Product(s): Microsoft Developer Network
+Version(s): 1.4,1.99,2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Passport, versions 1.4, 1.99, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "f= " error on the query string indicates that there may be a problem with
+the Passport network encryption operations. See the "More Information" section
+for the description of the error and corrective action to take. If you have
+questions, contact the DotNet Services Developer Support at the following email
+address:
+
+  nfssup@microsoft.com
+
+MORE INFORMATION
+================
+
+The f values that are returned on the query string in the browser Address bar
+typically indicate that there are problems with the Passport network. Possible
+values are listed in the following table which points to some of these
+problems:
+
+---------------------------------------------------------------------------
+Partner Return      Name                 Description of Error
+Error on Query
+String
+---------------------------------------------------------------------------
+f=1                 BAD_REQUEST          Domain database received a partial
+                                        request, Site ID did not match.
+---------------------------------------------------------------------------
+f=2                 OFFLINE              Domain database is offline and 
+                                        cannot service requests.
+---------------------------------------------------------------------------
+f=3                 TIMEOUT              Request to Domain database timed
+                                        out.
+---------------------------------------------------------------------------
+f=4                 LOCKED               User's account is locked, and  
+                                        user is not signed in (or both).
+---------------------------------------------------------------------------
+f=5                 NO_PROFILE           Profile type not available (wallet
+                                        or other extended profile not
+                                        present).
+---------------------------------------------------------------------------
+f=6                 DISASTER             The logon server has determined 
+                                        that some (although not all) of
+                                        of the network servers that are 
+                                        responsible for performing the 
+                                        steps of the authentication
+                                        checks are currently down, and the
+                                        logon server timed out trying to
+                                        reach them. If f=6 occurs, the 
+                                        user will never be authenticated
+                                        and no valid t and p will be on
+                                        the query string. If this error
+                                        is received, consider switching
+                                        your site to stand-alone mode. 
+---------------------------------------------------------------------------
+f=7                INVALID_KEY           Ticket or Profile cookie was
+                                        encrypted using invalid key and
+                                        cannot be decrypted. To resolve
+                                        this, reinstall key correctly.
+---------------------------------------------------------------------------
+f=8                (no internal          Error in parsing or processing the
+                  resource name)        participant's XML site
+                                        configuration data on the network
+                                        side. To resolve this, pass a 
+                                        valid SVC parameter (for example,
+                                        Mail).  
+---------------------------------------------------------------------------
+f=9                (no internal          Uncategorized or unhandled
+                  resource name)        exception. Escalate to Passport
+                                        Ops.
+---------------------------------------------------------------------------
+f=10               (no internal          Site attempted to specify KPP=2,
+                  resource name)        3, or 4 in call to logon server, 
+                                        but was not configured to use Kids
+                                        Passport. To resolve, provision
+                                        your site as a Kids site.
+---------------------------------------------------------------------------
+f=11               USER_CANCELLED        The user clicked cancel on the 
+                                        logon UI. This issue is especially 
+                                        important for Windows XP 
+                                        compatibility. If the error is not
+                                        caught on the participant's RU,
+                                        the user remains in an infinite 
+                                        loop where the logon UI continues 
+                                        to appear and permits the user no 
+                                        way out. Message the user if PP  
+                                        logon is required.
+---------------------------------------------------------------------------
+f=12              (no internal           When using SecLvl 10 or 100, RU
+                 resource name)         must be SSL.
+---------------------------------------------------------------------------
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport199 kbPassport200 kbPassportSearch
+Version           : :1.4,1.99,2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

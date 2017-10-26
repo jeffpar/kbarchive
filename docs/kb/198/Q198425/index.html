@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q198425: PRB: GetLineFromChar Method Does Not Function in VFP 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q198425: PRB: GetLineFromChar Method Does Not Function in VFP 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/198/Q198425/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/198/Q198425/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/198/Q198425/","publisher":null,"image":null,"headline":"Q198425: PRB: GetLineFromChar Method Does Not Function in VFP 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q198425-prb-getlinefromchar-method-does-not-function-in-vfp-50">Q198425: PRB: GetLineFromChar Method Does Not Function in VFP 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q198425
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): kbActiveX kbContainer kbCtrl kbvfp500 kbvfp500a
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The GetLineFromChar method of the Richtx32.ocx control returns erroneous values
+in Visual FoxPro 5.0x. This behavior happens with version 5.01.4316 and version
+6.00.8169 of the Richtx32.ocx.
+
+RESOLUTION
+==========
+
+Turn off the ActiveX control dual interface (VTABLE binding) by adding the
+following line to the Load event of the form:
+
+     =SYS(2333,0)
+
+MORE INFORMATION
+================
+
+The GetLineFromChar method should return the line number containing a specified
+character position. This method returns valid values when running under Visual
+FoxPro 3.0b and 6.0.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and add a rich text control to the form.
+
+2. In the Init method of the form, place the following code:
+
+        Thisform.Olecontrol1.text=REPLICATE("a",200)
+
+3. Add a text box to the form and name it Text1.
+
+4. Add a command button that contains the following code:
+
+        CLEAR
+        foundline=THISFORM.olecontrol1.getlinefromchar(THISFORM.text1.VALUE)
+        ?foundline
+        THISFORM.REFRESH
+
+5. Run the form. In the text box, type the following values, and pressing the
+  command button after each number:
+
+  " 10
+  100
+  150
+  15
+  250" (without the quotation marks)
+
+Instead of returning a valid line number you may see values in scientific
+notation, date time values, the word .NULL., a blank value, or a memory
+protection error may occur. The memory protection errors seem to occur mostly
+under Windows NT, but they can occur under Windows 95 or Windows 98.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q158765 INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbContainer kbCtrl kbvfp500 kbvfp500a 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

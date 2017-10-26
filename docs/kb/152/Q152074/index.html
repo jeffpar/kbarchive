@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152074: PRB: COleMessageFilter Doesn’t Process WM_PAINT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152074: PRB: COleMessageFilter Doesn’t Process WM_PAINT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152074/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152074/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152074/","publisher":null,"image":null,"headline":"Q152074: PRB: COleMessageFilter Doesn’t Process WM_PAINT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152074-prb-colemessagefilter-doesnt-process-wm_paint">Q152074: PRB: COleMessageFilter Doesn’t Process WM_PAINT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152074
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1
+Operating System(s): 
+Keyword(s): kbcode kbole kbMFC kbVC400 kbVC410 kbHWx86 kbGrpDSMFCATL
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an automation client calls a method of an automation server that brings up a
+modal dialog, the client area below the dialog may not re-paint itself if the
+dialog is moved over it.
+
+CAUSE
+=====
+
+The painting problem occurs because the WM_PAINT messages are in the queue, but
+are not dispatched.
+
+RESOLUTION
+==========
+
+One solution is to retrieve and dispatch all WM_PAINT messages when
+IMessageFilter::MessagePending is called. The sample code below demonstrates one
+way for this resolution to be implemented.
+
+MORE INFORMATION
+================
+
+To fix the problem with MFC, create a new class that overrides
+COleMessageFilter::OnMessagePending() as described below. Then revoke the old
+message filter and register this new one.
+
+Sample Code
+-----------
+
+     // 
+     // Definition of new COleMessageFilter-derived class.
+     // 
+     class CMyMessageFilter : public COleMessageFilter
+     {
+     public:
+        virtual BOOL OnMessagePending(const MSG* pMsg);
+     };
+
+     // 
+     // Add a member variable to the CWinApp-derived class.
+     // 
+     public:
+        CMyMessageFilter MMF;
+
+     // 
+     // Add to the CWinApp::InitInstance after calling AfxOleInit.
+     // 
+        COleMessageFilter* OldFilter = AfxOleGetMessageFilter();
+        OldFilter-&gt;Revoke();
+        MMF.Register();
+
+     // 
+     // Definition of OnMessageFilter.
+     // 
+     BOOL CMyMessageFilter::OnMessagePending(const MSG* pMsg)
+
+     {
+        MSG msg;
+
+        while (PeekMessage(&amp;msg, NULL, WM_PAINT, WM_PAINT,
+                           PM_REMOVE | PM_NOYIELD))
+        {
+           DispatchMessage(&amp;msg);
+        }
+
+        if (pMsg-&gt;message == WM_PAINT) return TRUE;
+
+        return FALSE;
+
+     }
+
+     // 
+     // Add to CWinApp::ExitInstance.
+     // 
+        MMF.Revoke();
+        return CWinApp::ExitInstance();
+
+Additional query words: 2.00 2.10 2.20 4.00 4.10
+
+======================================================================
+Keywords          : kbcode kbole kbMFC kbVC400 kbVC410 kbHWx86 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

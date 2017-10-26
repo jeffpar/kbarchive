@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125625: Software Compression Compatibility in Windows NT 3.5 RAS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125625: Software Compression Compatibility in Windows NT 3.5 RAS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125625/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125625/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125625/","publisher":null,"image":null,"headline":"Q125625: Software Compression Compatibility in Windows NT 3.5 RAS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125625-software-compression-compatibility-in-windows-nt-35-ras">Q125625: Software Compression Compatibility in Windows NT 3.5 RAS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125625
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): winnt:3.5
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Several fixes were made to Windows NT Remote Access Service (RAS) that are
+included in the latest U.S. Service Pack for Windows NT version 3.5. This
+article provides background information on client compatibility with RAS.
+
+MORE INFORMATION
+================
+
+NOTE: If you don't already have RAS installed, install it from your original
+Windows NT installation media before applying the Service Pack.
+
+RAS Software Compression Compatibility with Windows for Workgroups 3.11
+
+and Windows NT 3.1
+------------------
+
+In addition to other fixes, the Service Pack installs files that make Windows NT
+3.5 software compression compatible with Windows for Workgroups 3.11 and Windows
+NT 3.1. Throughput should improve significantly unless previously compressed
+files are copied. For best performance, Microsoft suggests you configure the RAS
+client software on Windows for Workgroups 3.11, Windows NT 3.1, and Windows NT
+3.51 (or Windows NT 3.5 with Service Pack 2 installed) as follows:
+
+1. In Remote Access, make sure the Disable Software Compression option in the
+  Options menu is not selected.
+
+2. Choose the Edit button, then choose the Modem button, and select the
+  following:
+
+   - Enable Hardware Flow Control
+
+   - Enable Modem Error Control
+
+  Clear the Enable Modem Compression check box so software compression and modem
+  compression are not used at the same time (as this reduces throughput).
+
+Windows NT Servers and Clients and RAS Software Compression
+-----------------------------------------------------------
+
+If you install the Service Pack on a Windows NT 3.5 RAS server, unmodified
+Windows NT 3.5 RAS clients do not lose software compression compatibility when
+calling the RAS server. Windows for Workgroups 3.11 and Windows NT 3.1 RAS
+clients can use RAS software compression without any need for new files, except
+as noted below.
+
+All copies of Windows NT 3.5 have RAS software compression built-in. Only Windows
+NT 3.5 computers that are acting as RAS servers need the Service Pack for
+compression compatibility with Windows NT 3.1 and Windows for Workgroups 3.11
+RAS clients. However, because of several code improvements, Microsoft recommends
+that you also apply this patch to Windows NT 3.5 RAS clients. The patch is
+required for RAS software compression compatibility when you call a Windows NT
+3.1 or Windows for Workgroups 3.11 RAS server from a Windows NT 3.5 RAS client.
+
+Software Compression in Windows for Workgroups 3.11
+
+and Windows NT 3.1 RAS Clients
+------------------------------
+
+Software compression is available, by default, in the following RAS clients
+unless you select Disable Software Compression from the Options menu, or you
+purchased your copy of Windows for Workgroups 3.11 or Windows NT 3.1 after
+February 1994. You can tell whether or not you have RAS software compression by
+using the following information:
+
+Windows for Workgroups 3.11:
+
+  Filename     Bytes   Compression
+  --------------------------------
+  RASMAC.386   49209   Yes
+  RASMAC.386   27193   No
+
+Windows NT 3.1:
+
+  Filename       Bytes    Compression
+  -----------------------------------
+  ASYNCMAC.SYS   53188    Yes
+  ASYNCMAC.SYS   53716    Yes
+  ASYNCMAC.SYS   33732    No
+
+NOTE: The Windows NT 3.1 and Windows for Workgroups 3.11 RAS compression files
+can be obtained from the SUPPORT\RAS directory on the Windows NT 3.5 U.S.
+Service Pack 2 compact disc.
+
+STATUS
+======
+
+These fixes are included in the latest Windows NT 3.5 U.S. Service Pack. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+  " S E R V P A C K " (without the quotation marks)
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : winnt:3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

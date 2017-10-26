@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185880: BUG: Access Key for Constituent Control is Ignored | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185880: BUG: Access Key for Constituent Control is Ignored" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185880/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185880/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185880/","publisher":null,"image":null,"headline":"Q185880: BUG: Access Key for Constituent Control is Ignored","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185880-bug-access-key-for-constituent-control-is-ignored">Q185880: BUG: Access Key for Constituent Control is Ignored</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185880
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You create an ActiveX control that contains constituent controls, such as labels
+and command buttons, in Visual Basic. You assign these constituent controls
+access keys by including an ampersand (&amp;) character within the Caption
+property. However, when you try to access one of the constituent controls using
+its access key, the control is not activated as expected.
+
+CAUSE
+=====
+
+The first time you access any control on the form by using an access key, any
+constituent controls that are disabled or hidden at that time are excluded from
+what you might call a "usercontrol access key map." When one of these
+constituent controls later becomes enabled or visible by programmatically
+setting its Enabled or Visible properties to True, the "map" does not get
+refreshed. This causes the unexpected behavior of not being able to access the
+control with its access key although the control is now enabled and visible.
+
+RESOLUTION
+==========
+
+Each time you programmatically set a constituent control's Enabled or Visible
+property to True, refresh its Caption property. By refreshing the constituent
+control's Caption property, you cause the access key mapping to include that
+control. See the MORE INFORMATION section for an example.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new ActiveX Control project in Visual Basic 5.0. UserControl1 is
+  created by default.
+
+2. Place two command buttons on UserControl1.
+
+3. Set the Caption properties of the command buttons to Command&amp;1 and
+  Command&amp;2.
+
+4. Paste the following code into the UserControl1 code window:
+
+        Option Explicit
+
+        Private Sub Command1_Click()
+           Command1.Visible = False
+           Command2.Visible = True
+        End Sub
+
+        Private Sub Command2_Click()
+           Command2.Visible = False
+           Command1.Visible = True
+        End Sub
+
+5. Close the UserControl1 code and designer windows so that UserControl1 is
+  available on the Toolbox.
+
+6. Choose Add Project from the File menu to add a Standard EXE project. Form1 is
+  created by default.
+
+7. Using the Toolbox, place UserControl1 on Form1.
+
+8. Run the project. Form1 appears.
+
+9. Click Command1 using the mouse.
+
+10. Press ALT+2, the access key to activate Command2.
+
+11. Press ALT+1, the access key to activate Command1.
+
+  RESULT: Command1 is not activated since Command1 was hidden at the time you
+  first accessed any control with its access key.
+
+Workaround
+----------
+
+Use the following code in place of the code for step 4 above:
+
+     Option Explicit
+
+     Private Sub Command1_Click()
+        Command1.Visible = False
+        Command2.Visible = True
+        RefreshAccessKey Command2
+     End Sub
+
+     Private Sub Command2_Click()
+        Command2.Visible = False
+        Command1.Visible = True
+        RefreshAccessKey Command1
+     End Sub
+
+     Private Sub RefreshAccessKey(ctl As Object)
+     'Assign caption to itself to cause refresh:
+        ctl.Caption = ctl.Caption
+     End Sub
+
+Additional query words: kbDSupport kbDSD kbCtrlCreate custom control ocx accelerator hot
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

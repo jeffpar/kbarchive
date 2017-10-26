@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108364: BUG: Resolutions for DBWIN Utility Continuous Beeping | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108364: BUG: Resolutions for DBWIN Utility Continuous Beeping" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108364/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108364/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108364/","publisher":null,"image":null,"headline":"Q108364: BUG: Resolutions for DBWIN Utility Continuous Beeping","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108364-bug-resolutions-for-dbwin-utility-continuous-beeping">Q108364: BUG: Resolutions for DBWIN Utility Continuous Beeping</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108364
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While running an application that has been compiled under debug mode, with the
+DBWIN application running, the system may beep continuously causing the computer
+to hang. This can happen when running the debug version of an executable file in
+the debugger, or by just executing it.
+
+CAUSE
+=====
+
+DBWIN uses an edit control for its output window. An edit box is limited to
+approximately 32K total data. If this limit is exceeded, the system will beep
+each time a new message is received by DBWIN. Depending on the settings of the
+AFX.INI file, the messages sent can include TRACE messages, main windows
+messages, WM_COMMANDS, and OLE (object linking and embedding) trace messages.
+
+RESOLUTION
+==========
+
+There are several possible solutions:
+
+- Instead of sending the output to the DBWIN window, the output can be directed
+  to a monochrome monitor, which requires a monochrome adapter card and monitor
+  installed on your system, or to a terminal connected to either COM1 or COM2
+  of the system.
+
+-or-
+
+- If the DBWIN application is set to output the DBWIN information to the window
+  and then the DBWIN application is shut down, the debug output is instead sent
+  to the output window of the Visual Workbench, which does not have the 32K
+  limit. -or-
+
+-or-
+
+- The SYSTEM.INI file can be set so that the debug output is directed to a file
+  rather then to the debug window. The entry in the file should be
+
+        [debug]
+        OutPutTo=&lt;filename&gt;
+
+  where filename is the full path of the file to which the debug output will be
+  written. If there is not a debug section in your SYSTEM.INI file then you
+  must add it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Microsoft Windows SDK, version 3.1.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The source code for DBWIN is included as a sample in the Windows Software
+Development Kit (SDK). It can be found under \MSVC\SAMPLES\DBWIN.
+
+Additional query words: 3.10 buglist3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

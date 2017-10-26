@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305188: Integrating Passport Sign In Features for WindowsXP and Passport | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305188: Integrating Passport Sign In Features for WindowsXP and Passport" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305188/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305188/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305188/","publisher":null,"image":null,"headline":"Q305188: Integrating Passport Sign In Features for WindowsXP and Passport","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305188-integrating-passport-sign-in-features-for-windowsxp-and-passport">Q305188: Integrating Passport Sign In Features for WindowsXP and Passport</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305188
+Product(s): Microsoft Developer Network
+Version(s): 1.4,1.99,2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Passport, versions 1.4, 1.99, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To enable the new features for Passport Sign In with the Microsoft Windows XP
+operating system, such as the locally served credentials user interface, you
+must use the new methods for authentication.
+
+MORE INFORMATION
+================
+
+Passport methods that generated URLs for the Login server (such as LogoTag and
+AuthURL) have been superseded by newer APIs: LogoTag2, LoginUser and AuthURL2.
+(The older methods are still accessible but are being deprecated.) For more
+information, see the following Passport Software Development Kit (SDK) Web
+site:
+
+  http://www.passport.com/sdkdocuments/sdk14/
+
+Calls to LogoTag should be made instead to the LogoTag2 method. For more
+information, see the following Passport Software Development Kit (SDK) Web
+site:
+
+  LogoTag2
+  http://www.passport.com/sdkdocuments/sdk14/reference/scriptreference/ifaces/ipassportmanager2/logotag2.htm
+
+The syntax and signature for LogoTag2 are the same as for LogoTag. The only
+change that must be made to existing implementations is to change the method
+name in the call.
+
+Calls to AuthURL should be made instead to the AuthURL2 method. For more
+information, see the following Passport SDK Web site:
+
+  AuthURL2
+  http://www.passport.com/sdkdocuments/sdk14/Reference/scriptreference/ifaces/ipassportmanager2/authurl2.htm
+
+The syntax and signature for AuthURL2 are the same as for AuthURL. The only
+change that must be made to existing implementations is to change the method
+name in the call.
+
+The LoginUser method logs the user on, either by outputting a 302 redirect URL,
+or initiating a Passport-aware client authentication exchange. The LoginUser
+method supports Passport-aware client applications and the credentials manager
+as used in the Windows XP operating system. For more information, see the
+following Passport SDK Web site:
+
+  LoginUser
+  http://www.passport.com/sdkdocuments/sdk14/Reference/scriptreference/ifaces/ipassportmanager2/loginuser.htm
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport199 kbPassport200 kbPassportSearch
+Version           : :1.4,1.99,2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157972: STL Sample for the basic_string::append Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157972: STL Sample for the basic_string::append Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157972/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157972/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157972/","publisher":null,"image":null,"headline":"Q157972: STL Sample for the basic_string::append Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157972-stl-sample-for-the-basic_stringappend-functions">Q157972: STL Sample for the basic_string::append Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157972
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 27-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the basic_string::append STL
+functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+    &lt;xstring&gt;
+
+Prototypes
+----------
+
+     basic_string&amp; append(const basic_string&amp; _X);
+
+     basic_string&amp; append(const basic_string&amp; _X, size_type pos,
+
+                          size_type count);
+
+     basic_string&amp; append(const element_type *_S, size_type count);
+
+     basic_string&amp; append(const element_type *_S);
+
+     basic_string&amp; append(size_type count, element_type _C);
+
+     basic_string&amp; append(Iterator first, Iterator last);
+
+NOTE: The class/parameter names in the prototypes may not match the version in
+the header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The append member functions of the basic_string append elements to the end of the
+string. The different forms of the function provide alternate ways to specify
+the source of the elements that will be appended.
+
+The append functions return a reference to the string to which the elements were
+appended.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // bsappend.cpp : Illustrates how to use the basic_string append member
+  //                function.
+  // 
+  // Functions:
+  // 
+  //    basic_string::append - appends a sequence of elements to the
+  //                           current string.
+  // 
+  // Written by Michael Reeves
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  #include &lt;xstring&gt;
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef basic_string&lt;char, char_traits&lt;char&gt;,
+
+                       allocator&lt;char&gt; &gt; test_string;
+
+  void main()
+
+  {
+
+      test_string str1("012");
+      test_string str2("345");
+
+      cout &lt;&lt; "str1 = " &lt;&lt; str1.c_str() &lt;&lt; endl;
+
+      // append str2 to str1
+      str1.append(str2);
+
+      cout &lt;&lt; "str1 = " &lt;&lt; str1.c_str() &lt;&lt; endl;
+
+      // append the last 2 items in str2 to str1
+      str2 = "567";
+      str1.append(str2, 1, 2);    // begin at pos 1, append 2 elements
+
+      cout &lt;&lt; "str1 = " &lt;&lt; str1.c_str() &lt;&lt; endl;
+
+      // append the first 2 items from an array of the element type
+      char achTest[] = {'8', '9', 'A'};
+      str1.append(achTest, 2);
+
+      cout &lt;&lt; "str1 = " &lt;&lt; str1.c_str() &lt;&lt; endl;
+
+      // append all of a string literal to str1
+      char szTest[] = "ABC";
+      str1.append(szTest);
+
+      cout &lt;&lt; "str1 = " &lt;&lt; str1.c_str() &lt;&lt; endl;
+
+      // append one item of the element type
+      str1.append(1, 'D');
+
+      cout &lt;&lt; "str1 = " &lt;&lt; str1.c_str() &lt;&lt; endl;
+
+      // append str2 to str1 using iterators
+      str2 = "EF";
+      str1.append (str2.begin(), str2.end());
+
+      cout &lt;&lt; "str1 = " &lt;&lt; str1.c_str() &lt;&lt; endl;
+
+  }
+
+Program Output is:
+
+  str1 = 012
+  str1 = 012345
+  str1 = 01234567
+  str1 = 0123456789
+  str1 = 0123456789ABC
+  str1 = 0123456789ABCD
+  str1 = 0123456789ABCDEF
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample basic_string::append
+
+======================================================================
+Keywords          : kbcode kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

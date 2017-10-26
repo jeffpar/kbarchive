@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q312611: MSB Dinosaurs: Err Msg:Setup32 Caused an Error in Msvfw32.dll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q312611: MSB Dinosaurs: Err Msg:Setup32 Caused an Error in Msvfw32.dll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/312/Q312611/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/312/Q312611/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/312/Q312611/","publisher":null,"image":null,"headline":"Q312611: MSB Dinosaurs: Err Msg:Setup32 Caused an Error in Msvfw32.dll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q312611-msb-dinosaurs-err-msgsetup32-caused-an-error-in-msvfw32dll">Q312611: MSB Dinosaurs: Err Msg:Setup32 Caused an Error in Msvfw32.dll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q312611
+Product(s): Microsoft Home Kids Products
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup kbimu
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Scholastic's Magic School Bus series: Explores in the Age of Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Setup, you may receive the following error message:
+
+  MSB Setup32 caused an error in MSVFW32.DLL
+
+CAUSE
+=====
+
+This issue can occur if either of the following files is damaged, missing, or of
+the incorrect version.
+
+  Msvfw32.dll
+  Msvideo.dll
+
+RESOLUTION
+==========
+
+To resolve this behavior, rename the Msvfw32.dll and Msvideo.dll files, and then
+extract new copies of these files from your original Microsoft Windows compact
+disc (CD) (or from the \Windows\Install\Options or \Windows\Install\Cabs folder)
+to the Windows\System folder on your hard disk. To do this, follow these steps.
+
+Rename the Msvfw32.dll and Msvideo.dll Files
+--------------------------------------------
+
+1. Insert your Microsoft Windows 98 or Microsoft Windows Millennium Edition (Me)
+  Startup disk into the floppy disk drive of your computer, and then restart
+  your computer.
+
+  NOTE: If you do not have a Windows 98 or Windows Me Startup disk, click the
+  appropriate link below to view the article in the Microsoft Knowledge Base:
+
+  Q186300 How to Create a Windows 98 Startup Disk from MS-DOS
+
+  Q267287 How to Create a Startup Disk in Windows Me
+
+2. When the Windows 98 or Windows Me Startup menu appears, select "Start
+  computer with CD-ROM Support".
+
+3. Make a note of the drive letter of your CD-ROM drive, for example, E:.
+
+4. At the command prompt, type the following lines and press ENTER after each
+  line:
+
+  C:
+  cd Windows\System
+
+5. Rename the Msvfw32.dll and Msvideo.dll files file by using the .old
+  extension. To do this, type the following lines and press ENTER after each
+  line:
+
+  ren msvfw32.dll msvfw32.old
+  ren msvideo.dll msvideo.old
+
+Extract New Copies of the Msvfw32.dll and Msvideo.dll Files
+-----------------------------------------------------------
+
+1. Insert your Windows 98 or Windows Me compact disc (CD) into the CD-ROM or
+  DVD-ROM drive.
+
+2. At the command prompt, type the following lines and press ENTER after each
+  line:
+
+  A:
+  ext
+
+3. At the "Please enter the path to the Windows CAB files (a:)" prompt, type
+  "&lt;drive&gt;:\win98" (without the quotation marks) (if you are running
+  Windows 98) or type "&lt;drive&gt;:\win9x" (without the quotation marks) (if
+  you are running Windows Me), where &lt;drive&gt; is the drive letter of your
+  CD-ROM drive, and then press ENTER. For example, type:
+
+  E:\win98
+
+  -or-
+
+  E:\win9x
+
+NOTE: If you have an original equipment manufacturer (OEM) installation of
+Windows, the installation files may also be located in one of the following
+folders
+
+  &lt;C&gt;:\Windows\Options\Cabs (for Windows 98)
+  &lt;C&gt;:\Windows\Options\Install (for Windows Me)
+
+where &lt;C&gt; is the drive on which Windows is installed.
+
+If these files are on your computer, you do not need your Windows CD because you
+can extract the files from the appropriate folder on your hard disk. For
+example, for Windows Me, type "C:\Windows\Options\Install" (without the
+quotation marks), and then press ENTER.
+
+4. At the "Please enter the name(s) of the files(s) you want to extract" prompt,
+  type "msvfw32.dll msvideo.dll" (without the quotation marks), and then press
+  ENTER.
+
+5. At the "Please enter the path to extract to ("Enter" for current directory)"
+  prompt, type "C:\Windows\System" (without the quotation marks), and then
+  press ENTER.
+
+6. At the "Is this okay? (y/n)" prompt, type "Y" (without the quotation marks),
+  and then press ENTER.
+
+7. Remove your Windows 98 or Windows Me Startup disk, and then restart your
+  computer.
+
+8. Run Setup for Magic School Bus Explores in the Age of Dinosaurs.
+
+MORE INFORMATION
+================
+
+For additional information about how to extract original Windows files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q129605 How to Extract Original Compressed Windows Files
+
+For additional information about how to use the System Configuration Utility tool
+in Windows Millennium Me to extract a file that is protected by the System File
+Protection feature, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q265371 How to Extract and Replace a Protected File in Windows Me
+
+For additional information about Magic School Bus Explores in the Age of
+Dinosaurs, click the article numbers below to view the articles in the Microsoft
+Knowledge Base:
+
+  Q152408 Overview of Magic School Bus Explores in the Age of Dinosaurs
+
+  Q153434 MSB Dinosaurs: Minimum System Requirements for Windows
+
+Additional query words: kids mskids
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticDinosaurs kbMSBSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

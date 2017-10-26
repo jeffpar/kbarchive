@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247963: HOWTO: Activate the PsPC Keyboard from a VBCE/eVB Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247963: HOWTO: Activate the PsPC Keyboard from a VBCE/eVB Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247963/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247963/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247963/","publisher":null,"image":null,"headline":"Q247963: HOWTO: Activate the PsPC Keyboard from a VBCE/eVB Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247963-howto-activate-the-pspc-keyboard-from-a-vbceevb-application">Q247963: HOWTO: Activate the PsPC Keyboard from a VBCE/eVB Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247963
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0,2.11,3.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp600 kbGrpDSVB kbOSWinCE211 kbDSupport
+Last Modified: 05-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0, on platform(s):
+   - Microsoft Windows CE version 2.11 for the Palm-size PC 
+- Microsoft eMbedded Visual Basic, version 3.0, on platform(s):
+   - Microsoft Windows CE version 2.11 for the Palm-size PC 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how to call the SipShowIM API to activate the virtual
+keyboard on a Palm-size PC device running Windows CE 2.11 using either the
+Microsoft Windows CE Toolkit for Visual Basic 6.0 (VBCE) or eMbedded Visual
+Basic 3.0 (eVB).
+
+MORE INFORMATION
+================
+
+Step by Step Example
+--------------------
+
+1. Create a new Windows CE Palm-size PC project in either Visual Basic or
+  eMbedded Visual Basic. Form1 is created by default.
+
+2. Place two CommandButtons on Form1.
+
+3. Paste the following code into Form1:
+
+  Option Explicit
+  Declare Function SipShowIM Lib "coredll" (ByVal flags As Long) As Long
+
+  Private Sub Form_Load()
+      Command1.Caption = "Show Keyboard"
+      Command2.Caption = "Hide Keyboard"
+      Form1.Caption = "SipShowIM Sample"
+  End Sub
+
+  Private Function Showkeyboard() As Long
+      Showkeyboard = SipShowIM(1)
+  End Function
+
+  Private Function Hidekeyboard() As Long
+      Hidekeyboard = SipShowIM(0)
+  End Function
+
+  Private Sub Command1_Click()
+      Showkeyboard
+  End Sub
+
+  Private Sub Command2_Click()
+      Hidekeyboard
+  End Sub
+
+4. Run the project and click the CommandButtons to show and hide the virtual
+  keyboard.
+
+NOTE: This sample only runs on the device and not in the emulator.
+
+NOTE: On PocketPC and PocketPC2002 devices, the SIP can be displayed using the
+SIPVisible property of the Form object.
+
+REFERENCES
+==========
+
+  Q209014 HOWTO: Call Windows CE APIs from VBCE
+
+Additional query words: vbce vbce6 wce sipinfo SHSipInfo eVB sip
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbGrpDSVB kbOSWinCE211 kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch
+Version           : :1.0,2.11,3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

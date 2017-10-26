@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129395: Troubleshooting FTP Error 425 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129395: Troubleshooting FTP Error 425" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129395/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129395/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129395/","publisher":null,"image":null,"headline":"Q129395: Troubleshooting FTP Error 425","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129395-troubleshooting-ftp-error-425">Q129395: Troubleshooting FTP Error 425</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129395
+Product(s): Microsoft Windows NT
+Version(s): 3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FTP error 425 may be returned to an FTP client if the server is unable to open a
+socket for data transfer. This article explains the error and how to
+troubleshoot it.
+
+MORE INFORMATION
+================
+
+When using FTP to do directory listings, file transfers, etc. from a server, one
+session is maintained as a control connection. A separate connection is
+established from the server back to the client for each transfer of data. This
+is commonly referred to as a "back connection". For example, when an ftp user
+logs onto an ftp server and types DIR, the following sequence of events occurs:
+
+- The FTP client establishes a socket to listen on for the results of the
+  remote DIR command.
+
+- The FTP client sends a PORT command to the server, telling it what IP address
+  and TCP port it is listening on for the "back connection. This command is
+  sent over the control session that was established during the logon process.
+
+- The FTP client sends a LIST command to the server, telling it to list all
+  files in the current directory. Again, this is sent over the original control
+  session.
+
+- The FTP server executes the LIST command, and passes the results back to the
+  client by establishing a new connection to the callback address specified by
+  the previous PORT command.
+
+If an FTP error 425 occurs, this indicates that the server was unable to open the
+connection back to the client. The most likely cause for this is an FTP client
+application that is attempting to re-use a socket that is still in the TCP
+TIME-WAIT state due to an earlier connection that hasn't been timed out yet. Per
+RFC793, Windows NT 3.5 systems leave old connections in the TIME-WAIT state for
+2MSL (240 seconds). During this time they cannot be re-used.
+
+The socket that cannot be used is defined by a "5-tuplet":
+
+- The source IP address (that of the ftp server)
+
+- The source port (the ftp server data port)
+
+- The destination IP address (that of the ftp client)
+
+- The destination port (specified by the client in the PORT command)
+
+- The protocol (TCP/IP)
+
+You should not encounter this problem with the Microsoft FTP client because it
+allows Windows Sockets to select a socket that is not in use. However, some
+third-party FTP-based applications may do their own port management. When this
+is done, care must be taken by the application not to reuse the same socket
+twice within four minutes (2MSL or 240 seconds).
+
+
+To verify whether this is the cause of an FTP error 425, a network tracing tool
+can be used. More useful background information and definition of some of the
+terms used in this article may be found in RFC793.
+
+
+Additional query words: 3.50 prodnt tshoot trouble shoot shooting
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : :3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

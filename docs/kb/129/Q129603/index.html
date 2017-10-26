@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129603: Using Systems Management Server Remote Control over a RAS Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129603: Using Systems Management Server Remote Control over a RAS Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129603/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129603/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129603/","publisher":null,"image":null,"headline":"Q129603: Using Systems Management Server Remote Control over a RAS Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129603-using-systems-management-server-remote-control-over-a-ras-server">Q129603: Using Systems Management Server Remote Control over a RAS Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129603
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0,1.1
+Operating System(s): 
+Keyword(s): kbenv smshowto
+Last Modified: 03-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Systems Management Server to remotely control a client through a
+Windows NT Remote Access Service (RAS) server, this error message appears:
+
+  Unable to locate &lt;computer name&gt;
+
+where &lt;computer name&gt; is the computer name of the remote client.
+
+CAUSE
+=====
+
+Systems Management Server cannot access the remote client because the RAS
+Service is not configured to allow listens to be posted for all NetBIOS names.
+
+By default, the RAS Service will only allow NCB.LISTENs to be posted for Server
+and Messenger service NetBIOS names. These names consist of the 15 character
+NetBIOS computer name with a 16th character that is ASCII 0x00 for Server, or
+0x03 for Messenger. This allows most file and print services to operate and
+reduces the resource requirements for the RAS service.
+
+When the Systems Management Server Remote Control client software is initialized
+during startup, it posts NCB.LISTENs that have the NetBIOS computer name and the
+following values for the 16th character:
+
+  Hex    ASCII   Description
+  ----   -----   --------------------------------------
+  0x43   C       SMS Administrators Remote Control Tool
+  0x44   D       SMS Clients Remote Control
+  0x45   E       SMS Clients Remote Chat
+  0x46   F       SMS Clients Remote Transfer
+
+When the Systems Management Server Administrators Tool attempts to remotely
+control a client, it first broadcasts a NetBIOS Name Query against the client
+with the NetBIOS name formatted as described above.
+
+For the RAS Server to forward the NetBIOS Name Query to the client, it must post
+each of these NetBIOS names. Otherwise, the client cannot respond and the
+Administrators Tool fails to find the client.
+
+RESOLUTION
+==========
+
+The RAS server needs to be configured to allow all NCB.LISTENs to be posted
+before remote control will work properly.
+
+To do this, use the registry editor to modify the RAS NetBIOSGateway Parameter.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+Go to the following key in the HKEY_LOCAL_MACHINE subtree:
+
+  SYSTEM\CurrentControlSet\Services\RemoteAccess\Parameters\NetBIOSGateway
+
+Change the value of RemoteListen from 1 to 2.
+
+This will enable RAS to post NCB.LISTENs for all NetBIOS names. Once this is
+done, stop and restart the RAS Services for the change to take effect.
+
+For more information, see Appendix C of the Windows NT Server "Remote Access
+Service" or Knowledge Base articles Q97599, Q99145, and Q110315.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbenv smshowto 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

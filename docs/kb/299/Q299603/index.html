@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299603: PRB: &quot;Error reading file&quot; Err Msg on Windows 2000 Terminal Svcs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299603: PRB: &quot;Error reading file&quot; Err Msg on Windows 2000 Terminal Svcs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299603/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299603/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299603/","publisher":null,"image":null,"headline":"Q299603: PRB: &quot;Error reading file&quot; Err Msg on Windows 2000 Terminal Svcs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299603-prb-error-reading-file-err-msg-on-windows-2000-terminal-svcs">Q299603: PRB: "Error reading file" Err Msg on Windows 2000 Terminal Svcs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q299603
+Product(s): Microsoft FoxPro
+Version(s): 6.0,7.0
+Operating System(s): 
+Keyword(s): kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbTermServ kbgrpdsvc
+Last Modified: 01-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 6.0, 7.0, used with:
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When one user shuts down a Visual FoxPro application that runs on Windows 2000
+under Terminal Services and uses networked data (either a mapped drive or a UNC
+path), the other users see the following error message:
+
+  Error reading file.
+
+NOTE: This is error 1104.
+
+CAUSE
+=====
+
+This is caused by a problem with the Terminal Services network redirector. For
+performance reasons, the Windows 2000 redirector holds one file handle for each
+table that is open, and shares it between the sessions. When one session logs
+off, that handle is released, causing all other sessions to receive Error 1104
+when they access the file handle.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, try one of the following:
+
+- The most reliable resolution to this problem is to put the data on the local
+  computer. For additional information on how to do this, click the article
+  number below to view the article in the Microsoft Knowledge Base:
+
+  Q294816 Programs Run from Network Share on TS Close or Generate Errors
+
+- There is a fix to the redirector that works in some situations. First, test
+  the data locally. If that works, see the following Knowledge Base article for
+  information on how to obtain the fix:
+
+  Q322019 Data Loss Occurs When You Copy Files Over the Network
+
+- Several registry settings related to caching have been shown to alleviate the
+  problem when set on the Terminal Services computer.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+  1. Start Registry Editor (Regedt32.exe).
+
+  2. Locate the OpLocksDisabled value under the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\System\CCS\Services\Mrxsmb\Parameters
+
+  3. On the Edit menu, click DWORD, type "0x1" (without the quotation marks),
+     and then click OK.
+
+  4. Locate the CachedOpenLimit value under the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\System\CCS\Services\LanmanServer\Parameters
+
+  5. On the Edit menu, click DWORD, type "0x0" (without the quotation marks),
+     and then click OK.
+
+  6. Locate the UtilizeNTCaching value under the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\System\CCS\Services\LanmanWorkstation\Parameters
+
+  7. On the Edit menu, click DWORD, type "0x0" (without the quotation marks),
+     and then click OK.
+
+  8. Quit Registry Editor.
+
+- If the data files reside on an Windows NT 4.0 File Server, move the data to a
+  Windows 2000 File Server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbTermServ kbgrpdsvc 
+Technology        : kbVFPsearch kbAudDeveloper
+Version           : :6.0,7.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

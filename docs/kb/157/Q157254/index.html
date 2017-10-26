@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157254/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157254/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157254/","publisher":null,"image":null,"headline":"Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157254-bug-select-sql-error-when-joining-parent-to-two-child-tables">Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157254
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS: 5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbprogramming kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the SELECT-SQL command with the ON clause, to Join a Parent table to two
+child tables, may cause the following error:
+
+  SQL: Column &lt;column name&gt; is not found
+
+If the error occurs, then a result set is not created by the query.
+
+CAUSE
+=====
+
+The Visual FoxPro query parser looks at the SELECT-SQL queries starting from the
+innermost part of it. In the case of the SELECT..JOIN..ON statement in the MORE
+INFORMATION section of this article the parser looks at the following:
+
+     INNER JOIN test3 ;
+        ON  test1.t1f1 = test3.t3f1 ;
+
+The parser cannot resolve the reference for "test1.t1f1" because it is not in
+scope at this level.
+
+WORKAROUND
+==========
+
+You can use one of the following workarounds to correct this behavior:
+
+1. Run the Query after opening all the tables involved with the query. This way
+  the Visual FoxPro query parser is able to resolve all the references.
+
+2. Modify the Query in the MORE INFORMATION section of this article as follows:
+
+        SELECT *;
+          FROM test1;
+          INNER JOIN test2;
+            ON  test1.t1f1 = test2.t2f1 ;
+          INNER JOIN test3 ;
+            ON  test1.t1f1 = test3.t3f1
+
+With the above query, the parser is able to relate each ON clause to the JOIN
+clause that it belongs to.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create and Populate three tables as following:
+
+        CREATE TABLE test1 (t1f1 c(5), t1f2 c(5))
+        INSERT INTO test1 VALUES("AAAAA", "11111")
+        INSERT INTO test1 VALUES("BBBBB", "22222")
+
+        CREATE TABLE test2 (t2f1 c(5), t2f2 c(5))
+        INSERT INTO test2 VALUES("AAAAA", "A1A1")
+        INSERT INTO test2 VALUES("AAAAA", "A2A2")
+
+        CREATE TABLE test3 (t3f1 c(5), t3f2 c(5))
+        INSERT INTO test3 VALUES("BBBBB", "B1B1")
+        INSERT INTO test3 VALUES("BBBBB", "B2B2")
+
+2. Issue the "CLOSE ALL" command in the Command window to Close all the tables.
+
+3. Issue the following SQL Statement:
+
+        SELECT *;
+          FROM  test1;
+          INNER JOIN test2;
+             INNER JOIN test3 ;
+             ON  test1.t1f1 = test3.t3f1 ;
+          ON test1.t1f1 = test2.t2f1
+
+The above command produces the "SQL: Column 'T1F1' is not found" error, and a
+result set is not created.
+
+When creating a query to Join a Parent table to two child tables using the View
+Designer, the SQL statement that is built is similar to the one in step 3.
+Because of this, the View Designer is not able to process the query correctly.
+
+The above article discusses the correct syntax for a select based on a parent,
+child and grandchild relationship.
+
+REFERENCES
+==========
+
+For more information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q156667 Limitations of View Designer vs. CREATE SQL VIEW Command
+
+Additional query words: kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS: 5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

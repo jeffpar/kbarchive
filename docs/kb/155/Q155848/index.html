@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155848: PRB: ODBC Error When Using CRecordset Without Deriving From It | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155848: PRB: ODBC Error When Using CRecordset Without Deriving From It" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155848/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155848/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155848/","publisher":null,"image":null,"headline":"Q155848: PRB: ODBC Error When Using CRecordset Without Deriving From It","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155848-prb-odbc-error-when-using-crecordset-without-deriving-from-it">Q155848: PRB: ODBC Error When Using CRecordset Without Deriving From It</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155848
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbProgramming kbusage kbdocfix kbDatabase kbMFC kbODBC kbVC kbGrpDSVCDB kbGrpDSMDAC kbD
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With Visual C++ 4.2 and later, you can use the CRecordset class without deriving
+from it, allowing you to open a read-only recordset on any data source. This may
+be helpful if you are using CRecordset::GetFieldValue(), for example. However,
+when calling Open() for the CRecordset object, you may see a message box with
+the following message in it:
+
+  No columns were bound prior to calling SQLExtendedFetch
+
+CAUSE
+=====
+
+The CDatabase object used by the CRecordset object loaded the ODBC cursor
+library. The cursor library requires that there be at least one bound column for
+a recordset. The Visual C++ documentation doesn't make this requirement clear.
+
+RESOLUTION
+==========
+
+Do not load the cursor library by specifying FALSE for the last argument of
+CDatabase::Open(). For example:
+
+      CDatabase db;
+      db.Open("MyDataSource", FALSE, FALSE, "ODBC;", FALSE);
+      CRecordset rs( &amp;db );
+      rs.Open(...);
+      ...
+
+If your driver does not support dynasets, then the cursor library is required and
+you will not be able to use the CRecordset class without deriving from it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the Visual C++ 4.2
+documentation. The Visual C++ 5.0 documentation has been changed to reflect this
+information and states:
+
+  Note if you declare a recordset object without deriving from CRecordset, do
+  not have the ODBC Cursor Library loaded. The cursor library requires that the
+  recordset have at least one bound column; however, when you use CRecordset
+  directly, none of the columns are bound. The member functions
+  CDatabase::OpenEx and CDatabase::Open control whether the cursor library will
+  be loaded."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbusage kbdocfix kbDatabase kbMFC kbODBC kbVC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDACNoSweep 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

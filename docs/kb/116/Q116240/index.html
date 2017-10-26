@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q116240: FIX: Compiler Errors Initializing const Reference to an Array | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q116240: FIX: Compiler Errors Initializing const Reference to an Array" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/116/Q116240/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/116/Q116240/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/116/Q116240/","publisher":null,"image":null,"headline":"Q116240: FIX: Compiler Errors Initializing const Reference to an Array","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q116240-fix-compiler-errors-initializing-const-reference-to-an-array">Q116240: FIX: Compiler Errors Initializing const Reference to an Array</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q116240
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC42
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), used with:
+   - Microsoft C/C++ for MS-DOS 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 4.1, 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Initializing a "const" reference to an array with a "non-const" array causes
+incorrect compiler errors to be generated. Two such errors are C2607 and C2561.
+
+CAUSE
+=====
+
+The C++ compiler does not properly handle initialization of a "const T&amp;",
+where T is an array. For example, you should be able to initialize a variable of
+type "const float (&amp;ref)[3][2]" with a variable of type "float [3][2]", but
+the compiler does not handle this case. Furthermore, interactions between const
+declarations and typedefs of arrays do not work in all circumstances.
+
+RESOLUTION
+==========
+
+To work around the problem, either do not use the const specifier or add
+explicit casts to the appropriate const types.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The sample code below demonstrates the problem. Compiling it yields at least one
+of the following error messages:
+
+  error C2607: 'initializing' : cannot implicitly convert a 'int [3][2]' to a
+  'int __near &amp;[3][2]' that is not const
+
+  error C2561: 'getMtx' : function must return a value
+
+To work around the problem, use each commented line in the program to replace the
+line immediately above it.
+
+Note: Simply removing the const specifier from the getMtx function's return type
+eliminates the problem.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+  typedef int Matrix[3][2];
+
+  class Data
+  {
+      Matrix Mtx;
+      const Matrix&amp; getMtx();
+      // const int (&amp;getMtx() const)[3][2];
+  };
+
+  inline const Matrix&amp; Data::getMtx()
+  // inline const int (&amp;Data::getMtx() const)[3][2]
+  {
+      return Data::Mtx;
+      // return (const int (&amp;)[3][2])Data::Mtx[0][0];
+  }
+
+Additional query words: kbVC400bug 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

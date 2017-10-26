@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129567: WSPlus: Err Msg: Your Login Credentials Do Not Match | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129567: WSPlus: Err Msg: Your Login Credentials Do Not Match" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129567/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129567/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129567/","publisher":null,"image":null,"headline":"Q129567: WSPlus: Err Msg: Your Login Credentials Do Not Match","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129567-wsplus-err-msg-your-login-credentials-do-not-match">Q129567: WSPlus: Err Msg: Your Login Credentials Do Not Match</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129567
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0,1.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you launch version 1.0 or 1.0a of Schedule+ for Windows from the Microsoft
+Office Manager toolbar, you may get the following error message:
+
+  Your login credentials do not match your currently connected session.
+
+CAUSE
+=====
+
+The Microsoft Office Manager (MOM) will allow you to specify additional
+parameters to use when you start an application. If you specify the wrong
+parameters, or place the path to Microsoft Schedule+ in the parameters command
+line, you may receive the above error.
+
+WORKAROUND
+==========
+
+To check to see what parameters you have set in the Microsoft Office Manager
+toolbar for Schedule+, do the following:
+
+1. Click the last button on the right on the Microsoft Office Manager Toolbar.
+  This will drop down a menu.
+
+2. Choose Customize... from the drop down menu.
+
+3. From the Customize window, you should see three tabs across the top: Toolbar,
+  Menu, and View.
+
+4. If either the Toolbar or Menu tabs are selected, you should be able to select
+  from a list of applications. Select Schedule+ from the list. Do not deselect
+  the check box or the button will disappear from the Microsoft Office Manager
+  toolbar. Select Schedule+ by clicking on the word Schedule.
+
+5. After selecting Schedule+, click the Edit... button.
+
+6. You should see the following information: Description: Microsoft Schedule+
+  Registered Location: C:\schdplus\schdplus.exe Parameters: Working Directory:
+
+7. The Parameters: line should NOT contain the path to the executable. Proper
+  parameters might include -d&lt;drive&gt;.
+
+8. Clear any invalid entries from either the Parameters: or Working Directory:
+  line, and click OK.
+
+Additional query words: schedule plus 1.00 1.00a login credentials match
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

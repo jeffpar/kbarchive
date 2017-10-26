@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241591: HOWTO: Change the Cursor in a VBCE/eVB Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241591: HOWTO: Change the Cursor in a VBCE/eVB Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241591/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241591/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241591/","publisher":null,"image":null,"headline":"Q241591: HOWTO: Change the Cursor in a VBCE/eVB Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241591-howto-change-the-cursor-in-a-vbceevb-application">Q241591: HOWTO: Change the Cursor in a VBCE/eVB Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241591
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0,3.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+- Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how to use the SetCursor and LoadCursor API calls to
+change the cursor in a Windows CE Toolkit for Visual Basic(VBCE) application.
+This approach is necessary because the Screen object in VBCE does not have a
+MousePointer property. Please note that this code works only on the Windows CE
+devices with a touch screen and not in the emulation environment.
+
+MORE INFORMATION
+================
+
+Step by Step Example
+
+1. Start a new Windows CE project in Visual Basic.
+
+2. Select default device as the target in the properties dialog.
+
+3. Place two command buttons on Form1.
+
+4. Paste the following code into Form1:
+
+  Const IDC_WAIT = 32514
+
+  Public Declare Function LoadCursor Lib "Coredll" _
+      Alias "LoadCursorW" ( _
+      ByVal hInstance As Long, _
+      ByVal lpCursorName As Long) As Long
+
+  Public Declare Function SetCursor Lib "Coredll" ( _
+      ByVal hCursor As Long) As Long
+
+  Function WaitCursor(bWait As Boolean) As Long
+
+      'Obtain the handle to the cursor
+      If bWait Then
+          'Get handle to the wait cursor
+          hCursor = LoadCursor(0, IDC_WAIT)
+      Else
+          'Restore default cursor
+          hCursor = LoadCursor(0, 0)
+      End If
+      
+      'Set the cursor based on the cursor handle
+      WaitCursor = SetCursor(hCursor)
+
+  End Function
+
+  Private Sub Command1_Click()
+      WaitCursor True
+  End Sub
+
+  Private Sub Command2_Click()
+      WaitCursor False
+  End Sub
+
+  Private Sub Form_Load()
+      Command1.Caption = "Hourglass"
+      Command2.Caption = "Default"
+  End Sub
+
+5. Run the application.
+
+6. Click the command buttons and notice that the cursor changes.
+
+Additional query words: vbce vbce6 wce
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600 kbVBeMb300
+Version           : :1.0,3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

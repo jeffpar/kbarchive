@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175443: FIX: Application Error When Binding Dynamically-Created Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175443: FIX: Application Error When Binding Dynamically-Created Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175443/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175443/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175443/","publisher":null,"image":null,"headline":"Q175443: FIX: Application Error When Binding Dynamically-Created Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175443-fix-application-error-when-binding-dynamically-created-control">Q175443: FIX: Application Error When Binding Dynamically-Created Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175443
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0
+Operating System(s): 
+Keyword(s): kbVBp kbVBp400bug kbVBp500fix kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application error occurs when a Visual Basic program dynamically creates a
+text box bound to a remote data control or a data control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Basic, version
+5.0.
+
+MORE INFORMATION
+================
+
+This section shows you how to reproduce the bug in Visual Basic 4.0 using a data
+control. You can substitute a remote data control for a data control and still
+reproduce the behavior.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start 32-bit Visual Basic 4.0 or, if it is already running, click New Project
+  on the File menu.
+
+2. Add the following controls to Form1 and set the following properties to the
+  appropriate controls:
+
+  Control           Default Name     Property            Setting
+  ---------------------------------------------------------------
+  Command Button    Command1
+
+  Data              Data1            DatabaseName        Biblio.mdb
+                                     RecordSource        Authors
+
+  Text Box          Text1            DataSource          Data1
+                                     Index               0
+
+3. Copy the following code to the Code window of Form1:
+
+        Option Explicit
+
+        Private Sub Form_Load()
+           Command1.Caption = "For Remote Data Control"
+        End Sub
+
+        Private Sub Command1_Click()
+           Dim count As Integer
+           Dim i As Integer
+           Static lastcount As Integer
+
+           Data1.Refresh
+           count = 4
+
+           If lastcount &gt; 0 Then
+              For i = lastcount - 1 To 1 Step -1
+                 Unload text1(i)
+              Next i
+           End If
+
+           If count &gt; 0 Then
+              For i = 1 To count - 1
+                 Load text1(i)
+                 text1(i).Left = text1(0).Left + (i * 1335)
+                 text1(i).Visible = True
+              Next i
+           End If
+           lastcount = count
+        End Sub
+
+4. On the Run menu, click Start or press the F5 key to start the program. Each
+  time you click the command button, three text boxes appear. On the third
+  click, an application error occurs displaying one of the following messages
+  and Visual Basic ends:
+
+
+  Windows NT 3.51:
+
+  An application error has occurred and an application error log is
+  being generated.VB32.exe.
+  Exception: access violation (0xc0000005), Address: 0x00402a38
+
+  Windows 95:
+
+  VB32 caused an invalid page fault in module VB32.EXE at 0137:00402a3a.
+
+  -and-
+
+  VB32 caused an invalid page fault in module KERNEL32.DLL at 0137:bff9a07c.
+
+  Windows 98:
+
+  VB32 caused an invalid page fault in module VB32.EXE at 015f:00402a3a.
+
+  -or-
+
+  VB32 caused an invalid page fault in module KERNEL32.DLL at 015f:bff9d706.
+
+Additional query words: ipf gpf crash kbTextBox
+
+======================================================================
+Keywords          : kbVBp kbVBp400bug kbVBp500fix kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

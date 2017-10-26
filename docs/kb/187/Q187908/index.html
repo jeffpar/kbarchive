@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187908: HOWTO: Use COMRETURNERROR() Function in a OLE Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187908: HOWTO: Use COMRETURNERROR() Function in a OLE Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187908/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187908/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187908/","publisher":null,"image":null,"headline":"Q187908: HOWTO: Use COMRETURNERROR() Function in a OLE Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187908-howto-use-comreturnerror-function-in-a-ole-server">Q187908: HOWTO: Use COMRETURNERROR() Function in a OLE Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187908
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ComReturnError function allows Visual FoxPro 6.0 to make reporting errors
+from the Visual FoxPro OLE Servers easier. This function gives programmers the
+ability to create more meaningful messages to return to the client, instead of
+having the client receive a cryptic message that does not make sense.
+
+MORE INFORMATION
+================
+
+ComReturnError has two parameters, Source and Description. The Source parameter
+is at which place the error occurs in code. You may use the Program function or
+the cMethod parameter in the Error event to populate the Source parameter.
+
+The Description parameter can be anything needed to describe the error. The
+information that you may want to return to the client is the actual error
+message and error number from Visual FoxPro and on which line number that error
+message occurs. The following class is an example of how to use the
+ComReturnError function:
+
+1. Create a program named Test.prg and add the following code:
+
+  
+
+  DEFINE CLASS sampleclass AS CUSTOM OLEPUBLIC
+     NAME = "sampleclass"
+
+     *!* GenError accepts one numeric parameter, which is the error number
+     *!* of the Visual FoxPro (VFP) error to generate.
+     PROCEDURE GenError
+        LPARAMETERS nError
+        
+        *!* This raises the error.
+        ERROR nError
+     ENDPROC
+
+     *!* When the error is generated, it triggers the Error event, which
+     *!* creates a return statement to pass back to the client.
+     PROCEDURE Error
+        LPARAMETERS nError, cMethod, nLine
+        LOCAL lcRetVal
+        
+        lcRetVal = ALLTRIM(STR(nError)) + ": " + MESSAGE() + ;
+           " on Line " + ALLTRIM(STR(nLine)) + ;
+           " in the sample DLL that was created for this article"
+           
+        COMRETURNERROR(cMethod, lcRetVal)
+     ENDPROC
+  ENDDEFINE
+
+2. Create a project and name it MySample. Add the Test.prg file to the project
+  and make sure it is marked as the main file. Save the project and build a COM
+  DLL.
+
+3. Create an object reference to the class, and call the GenError method by
+  issuing the following code in the Command window:
+
+  
+
+        oX = CreateObject('Mysample.sampleclass')
+        oX.generror(1)
+
+An error message dialog box appears with the following message:
+
+  OLE IDispatch error code 120 from generror: 1: File does not exist. On line
+  3..
+
+Once you issue the ComReturnError function, program execution stops there. The
+client is still able to call methods from the object, but any code that occurs
+after the ComReturnError function does not execute.
+
+REFERENCES
+==========
+
+Visual FoxPro 6.0 Help; search on: "ComReturnError"
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by David
+Botzenhart, Microsoft Corporation
+
+
+Additional query words: kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

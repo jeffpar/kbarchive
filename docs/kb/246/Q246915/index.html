@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246915: Using &lt;% %&gt; Instead of &lt;SCRIPT&gt; Tags Affects Processing Order | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246915: Using &lt;% %&gt; Instead of &lt;SCRIPT&gt; Tags Affects Processing Order" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246915/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246915/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246915/","publisher":null,"image":null,"headline":"Q246915: Using &lt;% %&gt; Instead of &lt;SCRIPT&gt; Tags Affects Processing Order","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246915-using---instead-of-script-tags-affects-processing-order">Q246915: Using &lt;% %&gt; Instead of &lt;SCRIPT&gt; Tags Affects Processing Order</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246915
+Product(s): Internet Information Server
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000 kbDSupport kbiis400 kbiis500
+Last Modified: 13-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using <span class="nt">&lt;SCRIPT</span> <span class="na">RUNAT=</span><span class="s">"SERVER"</span><span class="nt">&gt;&lt;/SCRIPT&gt;</span> tags instead of or in
+addition to <span class="nt">&lt;</span><span class="err">%</span> <span class="err">%</span><span class="nt">&gt;</span> tags to denote Active Server Pages (ASP) code in a page,
+the processing of ASP code may appear to be out of order.
+
+CAUSE
+=====
+
+This behavior is by design. ASP code in <span class="nt">&lt;SCRIPT&gt;</span> tags is processed after
+the end of the page's HTML information, whereas ASP code in <span class="nt">&lt;</span><span class="err">%</span> <span class="err">%</span><span class="nt">&gt;</span> tags is
+processed in-line.
+
+MORE INFORMATION
+================
+
+The following examples will illustrate this behavior.
+
+- Save the following script as "Test1.asp" (without the quotation marks) in a
+  folder with at least "script" access defined:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">runat=</span><span class="s">"server"</span> <span class="na">language=</span><span class="s">"vbscript"</span><span class="nt">&gt;</span>
+      <span class="nx">Response</span><span class="p">.</span><span class="nx">Write</span> <span class="s2">"&lt;p&gt;Line 1&lt;/p&gt;"</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Line 2<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  Browsing this page will output the following HTML:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Line 2<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Line 1<span class="nt">&lt;/p&gt;</span>
+
+  The HTML output would seem at first glance to be out of order based on the
+  location of the script inside the page.
+
+- Save this next script as "Test2.asp" (without the quotation marks) in the
+  same folder as for the previous example:
+
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="err">@</span><span class="na">language=</span><span class="s">"vbscript"</span> <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">p</span><span class="nt">&gt;</span>Line 1<span class="nt">&lt;/p&gt;</span>"
+  %&gt;
+  <span class="nt">&lt;p&gt;</span>Line 2<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  Browsing this page will output the following HTML:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Line 1<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Line 2<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  So, if you use <span class="nt">&lt;SCRIPT&gt;</span> tags for ASP, they process after the page has
+  processed, whereas <span class="nt">&lt;</span><span class="err">%</span> <span class="err">%</span><span class="nt">&gt;</span> tags execute in-line. This can lead to
+  confusion, as shown in the following scenario.
+
+- Save this page as "Test3.asp" (without the quotation marks) in the same
+  folder as earlier:
+
+  <span class="nt">&lt;script </span><span class="na">runat=</span><span class="s">"server"</span> <span class="na">language=</span><span class="s">"vbscript"</span><span class="nt">&gt;</span>
+      <span class="nx">strText</span> <span class="o">=</span> <span class="s2">"&lt;p&gt;Line 1&lt;/p&gt;"</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+      <span class="na">Response</span><span class="err">.</span><span class="na">Write</span> <span class="na">strText</span>
+  <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Line 2<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  Browsing this page will output the following HTML:
+
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Line 2<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+
+  The text "Line 1" is not output because the variable "strText" will not be
+  populated until after the Response.Write has already been executed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244019: HOWTO: How to Retrieve Deleted Files in Visual SourceSafe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244019: HOWTO: How to Retrieve Deleted Files in Visual SourceSafe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244019/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244019/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244019/","publisher":null,"image":null,"headline":"Q244019: HOWTO: How to Retrieve Deleted Files in Visual SourceSafe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244019-howto-how-to-retrieve-deleted-files-in-visual-sourcesafe">Q244019: HOWTO: How to Retrieve Deleted Files in Visual SourceSafe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244019
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:4.0,4.0a,5.0,6.0
+Operating System(s): 
+Keyword(s): kbSSafe kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbDSupport kbSsafe600FAQ kbSsafe500FAQkb
+Last Modified: 18-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to retrieve files in Visual SourceSafe that have been
+deleted but not destroyed.
+
+MORE INFORMATION
+================
+
+When you delete a file from a project in Visual SourceSafe, a dialog box appears
+that gives you the option of either deleting the file or destroying it
+permanently.
+
+If you choose to merely delete the file, the file will be removed from the view
+in the SourceSafe explorer, but the file and all of its history will still exist
+in the SourceSafe database. This gives you the option of recovering the file at
+a later time.
+
+If you elect to destroy a file, the file will not only be removed from the
+SourceSafe explorer view, but it will be gone from the SourceSafe database as
+well. A file that has been destroyed cannot be recovered.
+
+Steps to Retrieve Deleted (Not Destroyed) Files in the Visual SourceSafe Explorer
+---------------------------------------------------------------------------------
+
+1. In the Visual SourceSafe Explorer, select the project folder that contained
+  the deleted file.
+
+2. Click Show Properties, and then select the Deleted Items tab.
+
+3. Select the deleted files and click Recover.
+
+To Retrieve Deleted (Not Destroyed) Files from the Command Line
+---------------------------------------------------------------
+
+- Use the SS RECOVER command on the parent project of the deleted file.
+
+  For example, this command will recover files that were deleted from the
+  $/MyProj project:
+
+  "SS RECOVER $/MyProj/*.*" (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe kbSSafe400 kbSSafe500 kbSSafe600 kbFAQ kbDSupport kbSsafe600FAQ kbSsafe500FAQ kbfaq
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

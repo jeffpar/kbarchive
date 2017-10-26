@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q237186: LU6.2 BIND Rejected When Connecting through 3174 NN | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q237186: LU6.2 BIND Rejected When Connecting through 3174 NN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/237/Q237186/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/237/Q237186/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/237/Q237186/","publisher":null,"image":null,"headline":"Q237186: LU6.2 BIND Rejected When Connecting through 3174 NN","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q237186-lu62-bind-rejected-when-connecting-through-3174-nn">Q237186: LU6.2 BIND Rejected When Connecting through 3174 NN</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q237186
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 2.11 SP1, 2.11 SP2, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Microsoft SNA Server operator attempts to verify LU 6.2 session
+availability for a given APPC triplet (for example local LU, remote LU, and mode
+name) using the APPC Session Viewer utility, the test completes successfully,
+returning the negotiated session limits and the number of sessions that are
+currently in use. However, when a Transaction Program (TP) subsequently attempts
+to allocate a conversation using the same APPC triplet, the host may reject the
+SNA Server BIND request with an 08210002 (Invalid Session Parameters) sense
+code. The following error message occurs in the Windows NT Application Event
+log:
+
+  
+
+  Event ID: 18
+  Source  : SNA Server
+
+  APPC session activation failure: BIND negative response or UNBIND request received
+
+  Sense data   = 08210002   
+  Connection   = &lt;connection name&gt;
+  LU alias     = &lt;lu name&gt;
+  PLU alias    = &lt;plu alias&gt;
+  Mode name    = &lt;mode name&gt;
+
+
+This particular problem has been observed in LU 6.2 environments, where SNA
+Server has been configured to work with 3174 Networking Nodes and the upper
+layer APPC/CPIC application *requires* contention winner sessions.
+
+CAUSE
+=====
+
+Even though a successful CNOS negotiation has occurred between the partner LUs,
+the IBM 3174 controller is unable to honor contention winner session requests
+initiated by downstream PU 2.1 devices, because the APPC mode name specified in
+the BIND request is not defined in the IBM 3174 configuration.
+
+RESOLUTION
+==========
+
+Configure the IBM 3174 controller so that it recognizes the application mode
+name specified in the BIND request.
+
+MORE INFORMATION
+================
+
+If the 3174 controller is configured as an APPN Networking Node, the 3174 is
+responsible for LU session class of service (COS) routing. The application mode
+name defined in SNA Server must also be defined in the 3174 so that proper
+session routing takes place when the BIND image is received by the 3174. Well
+known modes, such as #BATCH, #BATCHSC, #INTER or #INTERSC are predefined on the
+3174, and therefore, do not need to be configured.
+
+The steps outlined in the following Microsoft Knowledge Base article may not be
+sufficient when the remote end (SNA Server) is issuing the LU6.2 BIND request
+over an application mode that is not recognized by the 3174:
+
+  Q107569 Configuring for LU 6.2 Through a 3174 APPN Network Node
+
+To properly configure the 3174, please follow the steps outlined in the 3174
+Establishment Controller Planning Guide (P/N GA27-3918-02) or contact IBM for
+detailed assistance.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ211SP1 kbSNAServ211SP2 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

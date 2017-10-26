@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/197/Q197965/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/197/Q197965/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/197/Q197965/","publisher":null,"image":null,"headline":"Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q197965-xgen-faqs-on-high-and-low-encryption-in-exchange-server">Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q197965</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Exchange</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">8.0</span><span class="p">,</span><span class="m">8.01</span><span class="p">,</span><span class="m">8.02</span><span class="p">,</span><span class="m">8.03</span><span class="p">,</span><span class="m">8.5</span><span class="p">;</span> <span class="n">winnt</span><span class="p">:</span><span class="m">4.0</span><span class="p">,</span><span class="m">5.0</span><span class="p">,</span><span class="m">5.5</span><span class="p">,</span><span class="m">5.5</span> <span class="n">SP1</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">exc4</span> <span class="n">exc5</span> <span class="n">exc55</span> <span class="n">exc55sp1</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">JAN</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span><span class="p">,</span> <span class="n">versions</span> <span class="m">4.0</span><span class="p">,</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">5.5</span><span class="p">,</span> <span class="m">5.5</span> <span class="n">SP1</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">97</span><span class="p">,</span> <span class="n">versions</span> <span class="m">8.0</span><span class="p">,</span> <span class="m">8.01</span><span class="p">,</span> <span class="m">8.02</span><span class="p">,</span> <span class="m">8.03</span><span class="p">,</span> <span class="n">used</span> <span class="k">with</span><span class="p">:</span>
+   <span class="p">-</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">98</span><span class="p">,</span> <span class="k">version</span> <span class="m">8.5</span><span class="p">,</span> <span class="n">used</span> <span class="k">with</span><span class="p">:</span>
+   <span class="p">-</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">97</span><span class="p">,</span> <span class="n">versions</span> <span class="m">8.0</span><span class="p">,</span> <span class="m">8.01</span><span class="p">,</span> <span class="m">8.02</span><span class="p">,</span> <span class="m">8.03</span><span class="p">,</span> <span class="n">used</span> <span class="k">with</span><span class="p">:</span>
+   <span class="p">-</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">98</span> 
+   <span class="p">-</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">95</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">98</span><span class="p">,</span> <span class="k">version</span> <span class="m">8.5</span><span class="p">,</span> <span class="n">used</span> <span class="k">with</span><span class="p">:</span>
+   <span class="p">-</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">98</span> 
+   <span class="p">-</span> <span class="n">the</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">:</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="m">95</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">FAQ</span> <span class="n">addresses</span> <span class="n">the</span> <span class="n">differences</span> <span class="n">between</span> <span class="n">high</span> <span class="k">and</span> <span class="n">low</span> <span class="n">encryption</span><span class="p">,</span> <span class="n">the</span> <span class="n">types</span> <span class="k">of</span>
+<span class="n">encryption</span> <span class="n">available</span> <span class="k">in</span> <span class="n">the</span> <span class="n">various</span> <span class="n">Microsoft</span> <span class="n">messaging</span> <span class="n">products</span><span class="p">,</span> <span class="k">and</span> <span class="n">other</span>
+<span class="n">issues</span> <span class="n">that</span> <span class="n">are</span> <span class="n">often</span> <span class="n">asked</span> <span class="n">regarding</span> <span class="n">encryption</span> <span class="k">in</span> <span class="n">Microsoft</span> <span class="n">messaging</span>
+<span class="n">technologies</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">after</span> <span class="n">reading</span> <span class="n">this</span> <span class="n">FAQ</span><span class="p">,</span> <span class="n">you</span> <span class="n">still</span> <span class="n">have</span> <span class="n">questions</span> <span class="n">about</span> <span class="n">encryption</span> <span class="k">in</span> <span class="n">Microsoft</span>
+<span class="n">Messaging</span> <span class="n">products</span><span class="p">,</span> <span class="n">please</span> <span class="n">visit</span> <span class="n">our</span> <span class="n">Web</span> <span class="n">site</span> <span class="n">at</span> <span class="n">the</span> <span class="n">following</span> <span class="n">URL</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">security</span><span class="p">/</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Notes</span> <span class="n">on</span> <span class="n">Terminology</span>
+<span class="p">--------------------</span>
+
+<span class="k">In</span> <span class="n">this</span> <span class="n">document</span><span class="p">,</span> <span class="n">the</span> <span class="n">term</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span> <span class="n">refers</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">software</span> <span class="n">that</span> <span class="n">provides</span> <span class="n">the</span> <span class="n">messaging</span> <span class="n">services</span> <span class="n">on</span> <span class="n">a</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span>
+<span class="n">computer</span><span class="p">.</span> <span class="n">It</span> <span class="n">does</span> <span class="k">not</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">client</span> <span class="n">programs</span> <span class="n">that</span> <span class="n">allow</span> <span class="n">users</span> <span class="k">to</span> <span class="n">access</span> <span class="n">the</span>
+<span class="n">messaging</span> <span class="n">services</span> <span class="n">running</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">computer</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">term</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="k">package</span> <span class="n">refers</span> <span class="k">to</span> <span class="n">a</span> <span class="n">collection</span> <span class="k">of</span> <span class="n">CDs</span> <span class="n">that</span> <span class="n">can</span>
+<span class="n">be</span> <span class="n">ordered</span> <span class="n">by</span> <span class="n">customers</span><span class="p">.</span> <span class="n">Such</span> <span class="n">a</span> <span class="k">package</span> <span class="n">might</span> <span class="k">include</span> <span class="n">a</span> <span class="n">newly</span> <span class="n">released</span> <span class="k">version</span>
+<span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span> <span class="k">version</span> <span class="m">5.5</span><span class="p">),</span> <span class="k">or</span> <span class="n">a</span> <span class="n">service</span> <span class="n">pack</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span>
+<span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span><span class="p">).</span> <span class="n">The</span> <span class="k">package</span> <span class="n">may</span> <span class="k">include</span> <span class="n">other</span> <span class="n">programs</span> <span class="k">in</span> <span class="n">addition</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Outlook98</span> <span class="n">messaging</span> <span class="k">and</span>
+<span class="n">collaboration</span> <span class="n">client</span><span class="p">,</span> <span class="n">which</span> <span class="n">themselves</span> <span class="n">may</span> <span class="n">be</span> <span class="n">new</span> <span class="k">or</span> <span class="n">updated</span><span class="p">.</span>
+
+<span class="n">Questions</span> <span class="k">and</span> <span class="n">Answers</span>
+<span class="p">---------------------</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Is</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span> <span class="n">available</span> <span class="k">in</span> <span class="n">high</span> <span class="k">and</span> <span class="n">low</span>
+  <span class="n">encryption</span> <span class="n">versions</span><span class="p">?</span>
+
+<span class="p">-</span> <span class="n">A</span><span class="p">.</span> <span class="n">No</span><span class="p">.</span> <span class="n">There</span> <span class="n">is</span> <span class="n">no</span> <span class="n">separate</span> <span class="n">high</span> <span class="k">and</span> <span class="n">low</span> <span class="n">encryption</span> <span class="n">code</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Microsoft</span>
+  <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span><span class="p">.</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">code</span> <span class="n">is</span> <span class="n">the</span> <span class="n">same</span>
+  <span class="n">worldwide</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Is</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">program</span> <span class="n">available</span> <span class="k">in</span> <span class="n">high</span> <span class="k">and</span> <span class="n">low</span> <span class="n">encryption</span>
+  <span class="n">versions</span><span class="p">?</span>
+
+<span class="p">-</span> <span class="n">A</span><span class="p">.</span> <span class="n">Yes</span><span class="p">.</span> <span class="n">The</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">messaging</span> <span class="n">client</span> <span class="n">does</span> <span class="n">come</span> <span class="k">in</span> <span class="n">High</span> <span class="k">and</span> <span class="n">Low</span> <span class="n">encryption</span>
+  <span class="n">versions</span><span class="p">.</span>
+
+  <span class="k">With</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="m">4.0</span><span class="p">,</span> <span class="m">5.0</span><span class="p">,</span> <span class="k">or</span> <span class="m">5.5</span><span class="p">,</span> <span class="n">the</span> <span class="n">high</span> <span class="n">encryption</span> <span class="k">version</span>
+  <span class="k">of</span> <span class="n">the</span> <span class="n">client</span> <span class="n">software</span> <span class="n">can</span> <span class="n">encrypt</span> <span class="n">mail</span> <span class="n">using</span> <span class="n">a</span> <span class="m">64</span><span class="p">-</span><span class="n">bit</span> <span class="n">key</span><span class="p">.</span> <span class="n">The</span> <span class="n">low</span>
+  <span class="n">encryption</span> <span class="k">version</span> <span class="n">is</span> <span class="n">restricted</span> <span class="k">to</span> <span class="n">a</span> <span class="m">40</span><span class="p">-</span><span class="n">bit</span> <span class="n">key</span> <span class="n">because</span> <span class="k">of</span> <span class="n">US</span> <span class="n">export</span>
+  <span class="n">regulations</span><span class="p">.</span> <span class="p">(</span><span class="n">The</span> <span class="n">terms</span> <span class="m">40</span><span class="p">-</span><span class="n">bit</span> <span class="k">and</span> <span class="m">64</span><span class="p">-</span><span class="n">bit</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">strength</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">encryption</span> <span class="n">algorithms</span> <span class="n">used</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Outlook</span> <span class="n">client</span><span class="p">.)</span>
+
+  <span class="n">Starting</span> <span class="k">with</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="m">5.5</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span><span class="p">,</span> <span class="n">Microsoft</span> <span class="n">now</span>
+  <span class="n">includes</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">for</span> <span class="n">Win32</span><span class="p">,</span> <span class="n">where</span> <span class="n">the</span> <span class="n">high</span><span class="p">-</span><span class="n">encryption</span> <span class="k">version</span> <span class="n">is</span> <span class="n">available</span>
+  <span class="k">with</span> <span class="n">a</span> <span class="m">128</span><span class="p">-</span><span class="n">bit</span> <span class="n">key</span> <span class="n">for</span> <span class="n">S</span><span class="p">/</span><span class="n">MIME</span><span class="p">.</span> <span class="n">The</span> <span class="n">low</span> <span class="n">encryption</span> <span class="k">version</span> <span class="n">is</span> <span class="n">still</span> <span class="n">restricted</span>
+  <span class="k">to</span> <span class="n">a</span> <span class="m">40</span><span class="p">-</span><span class="n">bit</span> <span class="n">key</span><span class="p">.</span>
+
+  <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Books</span> <span class="n">Online</span> <span class="n">provides</span> <span class="n">information</span> <span class="k">to</span> <span class="n">help</span> <span class="n">administrators</span>
+  <span class="n">select</span> <span class="n">the</span> <span class="n">most</span> <span class="n">suitable</span> <span class="n">encryption</span> <span class="n">algorithms</span> <span class="n">for</span> <span class="n">their</span> <span class="n">clients</span> <span class="n">running</span>
+  <span class="n">Outlook</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Can</span> <span class="n">customers</span> <span class="n">order</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span> <span class="k">with</span> <span class="m">128</span><span class="p">-</span><span class="n">bit</span>
+  <span class="n">encryption</span><span class="p">?</span>
+
+<span class="p">-</span> <span class="n">A</span><span class="p">.</span> <span class="n">No</span><span class="p">.</span> <span class="n">The</span> <span class="n">term</span> <span class="m">128</span><span class="p">-</span><span class="n">bit</span> <span class="n">refers</span> <span class="k">to</span> <span class="n">the</span> <span class="n">level</span> <span class="k">of</span> <span class="n">encryption</span> <span class="n">provided</span> <span class="n">by</span> <span class="n">the</span>
+  <span class="n">underlying</span> <span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">operating</span> <span class="nf">system</span><span class="p">.</span> <span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span>
+  <span class="m">128</span><span class="p">-</span><span class="n">bit</span> <span class="n">encryption</span><span class="p">,</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span> <span class="n">article</span><span class="p">:</span>
+
+  <span class="n">Q176820</span> <span class="n">Differences</span> <span class="n">Between</span> <span class="m">128</span><span class="p">-</span><span class="n">bit</span> <span class="k">and</span> <span class="m">40</span><span class="p">-</span><span class="n">bit</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">SP3</span> <span class="k">and</span> <span class="n">SP4</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Why</span> <span class="n">does</span> <span class="n">it</span> <span class="n">seem</span> <span class="n">that</span> <span class="n">customers</span> <span class="n">can</span> <span class="n">order</span> <span class="n">a</span> <span class="n">high</span> <span class="n">encryption</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span><span class="p">,</span> <span class="k">or</span> <span class="n">service</span> <span class="n">pack</span><span class="p">,</span> <span class="k">from</span> <span class="n">Microsoft</span><span class="p">?</span>
+
+<span class="p">-</span> <span class="n">A</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">misconception</span><span class="p">.</span> <span class="n">All</span> <span class="n">SKUs</span> <span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="k">include</span> <span class="n">a</span>
+  <span class="n">client</span> <span class="p">(</span><span class="n">Outlook</span><span class="p">)</span> <span class="n">CD</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span><span class="p">.</span> <span class="n">Because</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Outlook</span> <span class="m">98</span> <span class="n">client</span>
+  <span class="n">is</span> <span class="n">available</span> <span class="k">in</span> <span class="n">high</span> <span class="k">and</span> <span class="n">low</span> <span class="n">encryption</span> <span class="n">versions</span><span class="p">,</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span>
+  <span class="n">Server</span> <span class="k">package</span> <span class="p">(</span><span class="n">orderable</span> <span class="n">SKU</span><span class="p">)</span> <span class="n">is</span> <span class="n">available</span> <span class="k">in</span> <span class="n">high</span> <span class="k">and</span> <span class="n">low</span> <span class="n">encryption</span>
+  <span class="n">versions</span> <span class="n">too</span><span class="p">.</span> <span class="n">There</span> <span class="n">are</span> <span class="n">separate</span> <span class="n">part</span> <span class="n">numbers</span> <span class="n">for</span> <span class="n">high</span><span class="p">-</span> <span class="n">encryption</span> <span class="k">and</span>
+  <span class="n">low</span><span class="p">-</span><span class="n">encryption</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">packages</span><span class="p">.</span> <span class="n">Customers</span> <span class="n">who</span> <span class="n">order</span> <span class="n">a</span>
+  <span class="k">package</span> <span class="n">will</span> <span class="n">need</span> <span class="k">to</span> <span class="n">specify</span> <span class="k">if</span> <span class="n">they</span> <span class="n">want</span> <span class="n">a</span> <span class="n">high</span> <span class="k">or</span> <span class="n">low</span> <span class="n">encryption</span> <span class="k">version</span><span class="p">.</span>
+
+  <span class="n">Remember</span><span class="p">,</span> <span class="n">the</span> <span class="n">designation</span> <span class="n">high</span> <span class="k">or</span> <span class="n">low</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span>
+  <span class="k">package</span> <span class="n">refers</span> <span class="k">to</span> <span class="n">the</span> <span class="n">encryption</span> <span class="n">level</span> <span class="k">of</span> <span class="n">the</span> <span class="n">client</span> <span class="n">bundled</span> <span class="k">in</span> <span class="n">the</span> <span class="k">package</span><span class="p">,</span>
+  <span class="k">and</span> <span class="k">not</span> <span class="k">to</span> <span class="n">any</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span> <span class="n">code</span> <span class="k">or</span> <span class="n">files</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">I</span> <span class="n">am</span> <span class="n">about</span> <span class="k">to</span> <span class="n">download</span> <span class="n">an</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">service</span> <span class="n">pack</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Web</span><span class="p">,</span>
+  <span class="n">rather</span> <span class="n">than</span> <span class="n">ordering</span> <span class="n">it</span><span class="p">.</span> <span class="n">Is</span> <span class="n">there</span> <span class="n">anything</span> <span class="n">I</span> <span class="n">need</span> <span class="k">to</span> <span class="n">know</span> <span class="n">about</span> <span class="n">encryption</span> <span class="k">in</span>
+  <span class="n">products</span> <span class="n">downloaded</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Internet</span><span class="p">?</span>
+
+<span class="p">-</span> <span class="n">A</span><span class="p">.</span> <span class="n">Starting</span> <span class="k">with</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="m">5.5</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="p">(</span><span class="n">downloadable</span> <span class="k">from</span>
+  <span class="n">ftp</span><span class="p">://</span><span class="n">ftp</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">bussys</span><span class="p">/</span><span class="n">exchange</span><span class="p">/</span>
+  <span class="n">exchange</span><span class="p">-</span><span class="k">public</span><span class="p">/</span><span class="n">fixes</span><span class="p">/</span><span class="n">Eng</span><span class="p">/</span><span class="n">Exchg5</span><span class="m">.5</span><span class="p">/</span><span class="n">SP1</span><span class="p">),</span> <span class="n">the</span> <span class="n">client</span> <span class="k">and</span> <span class="n">server</span> <span class="n">portions</span> <span class="k">of</span>
+  <span class="n">the</span> <span class="n">service</span> <span class="n">pack</span> <span class="n">are</span> <span class="n">packaged</span> <span class="n">into</span> <span class="n">separate</span> <span class="n">download</span> <span class="n">files</span><span class="p">.</span>
+
+  <span class="n">For</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="m">5.5</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span><span class="p">,</span> <span class="n">customers</span> <span class="n">can</span> <span class="n">individually</span> <span class="n">download</span>
+  <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+   <span class="p">-</span> <span class="n">The</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span> <span class="n">update</span>
+
+   <span class="p">-</span> <span class="n">The</span> <span class="n">Windows</span> <span class="m">16</span><span class="p">-</span><span class="n">bit</span> <span class="n">client</span> <span class="n">update</span>
+
+   <span class="p">-</span> <span class="n">The</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">client</span> <span class="n">support</span> <span class="n">files</span>
+
+   <span class="p">-</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Macintosh</span> <span class="n">client</span>
+
+  <span class="n">The</span> <span class="n">client</span> <span class="n">download</span> <span class="n">available</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Web</span> <span class="n">is</span> <span class="n">the</span> <span class="n">exportable</span><span class="p">,</span> <span class="n">low</span> <span class="n">encryption</span>
+  <span class="p">(</span><span class="m">40</span><span class="p">-</span><span class="n">bit</span><span class="p">)</span> <span class="k">version</span><span class="p">.</span> <span class="k">If</span> <span class="n">customers</span> <span class="n">want</span> <span class="n">the</span> <span class="n">high</span> <span class="n">encryption</span> <span class="k">version</span><span class="p">,</span> <span class="n">they</span> <span class="n">must</span>
+  <span class="n">order</span> <span class="n">the</span> <span class="n">high</span> <span class="n">encryption</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="k">package</span> <span class="p">(</span><span class="n">SKU</span> <span class="p">#</span><span class="m">312</span><span class="p">-</span><span class="m">00943</span>
+  <span class="n">CRYPTO</span><span class="p">),</span> <span class="n">which</span> <span class="n">includes</span> <span class="n">the</span> <span class="n">high</span> <span class="n">encryption</span> <span class="k">version</span> <span class="k">of</span> <span class="n">Outlook</span> <span class="m">98.</span>
+  <span class="n">Information</span> <span class="n">on</span> <span class="n">how</span> <span class="k">to</span> <span class="n">order</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="m">5.5</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="n">is</span>
+  <span class="n">available</span> <span class="k">from</span> <span class="n">the</span> <span class="n">following</span> <span class="n">URL</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">downloads</span><span class="p">/</span><span class="n">search</span><span class="p">.</span><span class="n">asp</span>
+
+  <span class="n">Because</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span> <span class="n">contains</span> <span class="n">no</span> <span class="n">restricted</span>
+  <span class="n">encryption</span> <span class="n">software</span><span class="p">,</span> <span class="n">the</span> <span class="k">version</span> <span class="n">available</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">FTP</span> <span class="n">site</span> <span class="n">can</span> <span class="n">be</span>
+  <span class="n">downloaded</span> <span class="p">&amp;</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">any</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="k">version</span> <span class="m">5.5</span> <span class="n">Server</span>
+  <span class="n">worldwide</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">What</span> <span class="n">happens</span> <span class="k">if</span> <span class="n">I</span> <span class="n">update</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">program</span> <span class="n">that</span> <span class="n">was</span>
+  <span class="n">installed</span> <span class="k">from</span> <span class="n">a</span> <span class="n">high</span> <span class="n">encryption</span> <span class="k">package</span> <span class="n">using</span> <span class="n">a</span> <span class="n">CD</span> <span class="n">included</span> <span class="k">in</span> <span class="n">a</span> <span class="n">low</span>
+  <span class="n">encryption</span> <span class="k">package</span><span class="p">,</span> <span class="k">or</span> <span class="n">using</span> <span class="n">program</span> <span class="n">files</span> <span class="n">downloaded</span> <span class="k">from</span> <span class="n">Microsoft</span><span class="s1">'s FTP
+  site?
+
+- A. Nothing. Encryption settings will remain the same, since there are no
+  encryption-specific files in the Microsoft Exchange Server program.
+
+  However, if you update a copy of Microsoft Outlook 98 that was installed from
+  a high encryption package using a CD included in a low-encryption package, or
+  using program files downloaded from Microsoft'</span><span class="n">s</span> <span class="n">FTP</span> <span class="n">site</span><span class="p">,</span> <span class="n">the</span> <span class="n">encryption</span>
+  <span class="n">level</span> <span class="n">will</span> <span class="n">be</span> <span class="n">downgraded</span> <span class="k">to</span> <span class="n">the</span> <span class="n">lower</span> <span class="n">encryption</span> <span class="n">level</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Where</span> <span class="n">is</span> <span class="n">the</span> <span class="n">encryption</span> <span class="n">actually</span> <span class="n">performed</span><span class="p">?</span>
+
+<span class="p">-</span> <span class="n">A</span><span class="p">.</span> <span class="n">An</span> <span class="k">in</span><span class="p">-</span><span class="n">depth</span> <span class="n">discussion</span> <span class="k">of</span> <span class="n">encryption</span> <span class="n">is</span> <span class="n">outside</span> <span class="n">the</span> <span class="n">scope</span> <span class="k">of</span> <span class="n">this</span>
+  <span class="n">document</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="k">in</span> <span class="n">brief</span><span class="p">,</span> <span class="n">encryption</span> <span class="n">can</span> <span class="n">be</span> <span class="n">classified</span> <span class="n">into</span> <span class="n">two</span> <span class="n">main</span>
+  <span class="n">areas</span><span class="p">:</span> <span class="n">e</span><span class="p">-</span><span class="n">mail</span> <span class="n">content</span> <span class="n">encryption</span> <span class="k">and</span> <span class="n">network</span> <span class="n">session</span> <span class="n">packet</span> <span class="n">encryption</span><span class="p">.</span>
+
+  <span class="n">E</span><span class="p">-</span><span class="n">mail</span> <span class="n">content</span> <span class="n">encryption</span> <span class="n">is</span> <span class="n">handled</span> <span class="n">entirely</span> <span class="n">by</span> <span class="n">the</span> <span class="n">e</span><span class="p">-</span><span class="n">mail</span> <span class="n">client</span><span class="p">.</span> <span class="n">Message</span>
+  <span class="n">text</span> <span class="k">and</span> <span class="n">attachments</span> <span class="n">are</span> <span class="n">encrypted</span> <span class="n">by</span> <span class="n">the</span> <span class="n">sending</span> <span class="n">client</span> <span class="n">before</span> <span class="n">the</span> <span class="n">message</span>
+  <span class="n">is</span> <span class="n">sent</span> <span class="k">to</span> <span class="n">the</span> <span class="n">server</span><span class="p">.</span> <span class="n">The</span> <span class="n">message</span> <span class="n">is</span> <span class="n">decrypted</span> <span class="n">locally</span> <span class="n">by</span> <span class="n">the</span> <span class="n">receiving</span>
+  <span class="n">client</span> <span class="n">after</span> <span class="n">downloading</span> <span class="n">it</span> <span class="k">from</span> <span class="n">the</span> <span class="n">server</span><span class="p">.</span> <span class="n">The</span> <span class="n">strength</span> <span class="k">of</span> <span class="n">encryption</span> <span class="n">used</span>
+  <span class="n">is</span> <span class="n">dependent</span> <span class="n">on</span> <span class="n">the</span> <span class="k">version</span> <span class="k">of</span> <span class="n">Outlook</span> <span class="n">client</span> <span class="n">software</span> <span class="p">(</span><span class="n">low</span> <span class="k">or</span> <span class="n">high</span>
+  <span class="n">encryption</span><span class="p">).</span> <span class="k">In</span> <span class="n">order</span> <span class="k">to</span> <span class="n">encrypt</span> <span class="n">mail</span> <span class="n">using</span> <span class="n">this</span> <span class="n">method</span><span class="p">,</span> <span class="n">the</span> <span class="n">users</span> <span class="n">must</span> <span class="n">have</span>
+  <span class="k">public</span><span class="p">-</span><span class="n">private</span> <span class="n">key</span> <span class="n">pairs</span><span class="p">.</span>
+
+  <span class="k">In</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="m">5.5</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span><span class="p">,</span> <span class="n">the</span> <span class="n">Key</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">service</span>
+  <span class="n">provides</span> <span class="n">the</span> <span class="n">following</span> <span class="n">services</span><span class="p">:</span>
+
+   <span class="p">-</span> <span class="n">Creates</span> <span class="n">the</span> <span class="k">public</span> <span class="k">and</span> <span class="n">private</span> <span class="n">encryption</span> <span class="n">keys</span> <span class="p">(</span><span class="n">which</span> <span class="n">use</span> <span class="n">either</span> <span class="n">the</span>
+     <span class="n">CAST</span><span class="p">-</span><span class="m">40</span><span class="p">,</span> <span class="n">CAST</span><span class="p">-</span><span class="m">64</span><span class="p">,</span> <span class="k">or</span> <span class="n">DES</span> <span class="n">encryption</span> <span class="n">algorithms</span><span class="p">).</span>
+
+   <span class="p">-</span> <span class="n">Maintains</span> <span class="n">backups</span> <span class="k">of</span> <span class="n">the</span> <span class="n">private</span> <span class="n">encryption</span> <span class="n">keys</span> <span class="k">and</span> <span class="k">public</span> <span class="n">signing</span> <span class="n">keys</span><span class="p">.</span>
+
+   <span class="p">-</span> <span class="n">Generates</span> <span class="n">temporary</span> <span class="n">keys</span><span class="p">.</span>
+
+   <span class="p">-</span> <span class="n">Maintains</span> <span class="n">the</span> <span class="n">original</span> <span class="n">copy</span> <span class="k">of</span> <span class="n">the</span> <span class="n">certificate</span> <span class="n">revocation</span> <span class="k">list</span>
+
+   <span class="p">-</span> <span class="n">Issues</span> <span class="n">certificates</span> <span class="n">for</span> <span class="n">certification</span> <span class="n">authorities</span> <span class="p">(</span><span class="n">CAs</span><span class="p">)</span> <span class="k">in</span> <span class="n">other</span>
+     <span class="n">organizations</span><span class="p">.</span>
+
+  <span class="n">The</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Key</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">service</span> <span class="k">uses</span> <span class="n">Microsoft</span>
+  <span class="n">Certificate</span> <span class="n">Server</span> <span class="k">to</span> <span class="n">generate</span> <span class="n">user</span> <span class="n">certificates</span><span class="p">.</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span> <span class="n">is</span> <span class="n">the</span> <span class="n">first</span>
+  <span class="n">release</span> <span class="k">in</span> <span class="n">which</span> <span class="n">Certificate</span> <span class="n">Server</span> <span class="n">can</span> <span class="n">act</span> <span class="k">as</span> <span class="n">the</span> <span class="n">certification</span> <span class="n">authority</span>
+  <span class="n">for</span> <span class="n">the</span> <span class="n">organization</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">use</span> <span class="n">only</span> <span class="k">version</span> <span class="m">3</span> <span class="p">(</span><span class="n">V3</span><span class="p">)</span> <span class="n">certificates</span> <span class="k">in</span> <span class="n">your</span>
+  <span class="n">organization</span><span class="p">,</span> <span class="n">Key</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">no</span> <span class="n">longer</span> <span class="n">acts</span> <span class="k">as</span> <span class="n">the</span> <span class="n">certification</span>
+  <span class="n">authority</span><span class="p">.</span> <span class="p">(</span><span class="n">For</span> <span class="n">information</span> <span class="n">about</span> <span class="n">Microsoft</span> <span class="n">Certificate</span> <span class="n">Server</span><span class="p">,</span> <span class="n">please</span> <span class="n">see</span>
+  <span class="n">the</span> <span class="n">documentation</span> <span class="n">for</span> <span class="n">Microsoft</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">4.0</span><span class="p">.)</span>
+
+  <span class="k">In</span> <span class="n">addition</span> <span class="k">to</span> <span class="n">the</span> <span class="n">CAST</span> <span class="k">and</span> <span class="n">DES</span> <span class="n">encryption</span> <span class="n">algorithms</span><span class="p">,</span> <span class="n">administrators</span> <span class="n">also</span>
+  <span class="n">have</span> <span class="n">the</span> <span class="n">option</span> <span class="k">of</span> <span class="n">allowing</span> <span class="n">users</span> <span class="k">to</span> <span class="n">sign</span> <span class="k">and</span> <span class="n">encrypt</span> <span class="n">their</span> <span class="n">e</span><span class="p">-</span><span class="n">mail</span> <span class="n">using</span>
+  <span class="n">S</span><span class="p">/</span><span class="n">MIME</span><span class="p">.</span> <span class="k">In</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="m">5.5</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">1</span><span class="p">,</span> <span class="n">the</span> <span class="n">algorithms</span> <span class="n">available</span>
+  <span class="k">with</span> <span class="n">S</span><span class="p">/</span><span class="n">MIME</span> <span class="n">are</span> <span class="n">RC2</span><span class="p">-</span><span class="m">40</span><span class="p">,</span> <span class="n">RC2</span><span class="p">-</span><span class="m">64</span><span class="p">,</span> <span class="k">or</span> <span class="n">RC2</span><span class="p">-</span><span class="m">128.</span> <span class="n">Administrators</span> <span class="n">can</span> <span class="n">view</span> <span class="n">these</span>
+  <span class="k">options</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Algorithm</span> <span class="n">tab</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Site</span> <span class="n">Encryption</span> <span class="n">Configuration</span>
+  <span class="n">properties</span> <span class="n">page</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Configuration</span> <span class="n">container</span> <span class="n">for</span> <span class="n">a</span> <span class="n">site</span><span class="p">.</span>
+
+  <span class="n">Network</span> <span class="n">session</span> <span class="n">packet</span> <span class="n">encryption</span> <span class="n">is</span> <span class="n">provided</span> <span class="n">by</span> <span class="n">the</span> <span class="n">underlying</span> <span class="n">Windows</span> <span class="n">NT</span>
+  <span class="n">operating</span> <span class="nf">system</span><span class="p">.</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">makes</span> <span class="n">use</span> <span class="k">of</span> <span class="n">this</span> <span class="n">for</span> <span class="n">RPC</span> <span class="k">or</span> <span class="n">SSL</span>
+  <span class="n">encryption</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">when</span> <span class="n">enabled</span><span class="p">,</span> <span class="n">RPC</span> <span class="k">and</span> <span class="n">SSL</span> <span class="n">encryption</span> <span class="n">will</span> <span class="n">encrypt</span> <span class="n">any</span>
+  <span class="n">information</span> <span class="n">within</span> <span class="n">an</span> <span class="n">RPC</span> <span class="k">or</span> <span class="n">SSL</span> <span class="n">session</span><span class="p">;</span> <span class="n">this</span> <span class="n">type</span> <span class="k">of</span> <span class="n">encryption</span> <span class="n">is</span> <span class="k">not</span>
+  <span class="n">limited</span> <span class="k">to</span> <span class="n">Microsoft</span> <span class="n">Exchange</span> <span class="n">Server</span> <span class="n">traffic</span><span class="p">.</span> <span class="n">The</span> <span class="n">strength</span> <span class="k">of</span> <span class="n">encryption</span>
+  <span class="n">available</span> <span class="n">is</span> <span class="n">dependent</span> <span class="n">on</span> <span class="n">the</span> <span class="k">version</span> <span class="k">of</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">on</span> <span class="n">your</span> <span class="n">server</span> <span class="p">(</span><span class="n">low</span> <span class="k">or</span>
+  <span class="n">high</span> <span class="n">encryption</span><span class="p">).</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">Where</span> <span class="n">can</span> <span class="n">I</span> <span class="n">find</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">security</span> <span class="k">and</span> <span class="n">Microsoft</span> <span class="n">products</span><span class="p">?</span>
+
+<span class="p">-</span> <span class="n">A</span><span class="p">.</span> <span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">security</span> <span class="k">and</span> <span class="n">Microsoft</span> <span class="n">products</span><span class="p">,</span> <span class="n">please</span> <span class="n">go</span> <span class="k">to</span>
+  <span class="n">the</span> <span class="n">following</span> <span class="n">URL</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">security</span><span class="p">/.</span>
+
+  <span class="n">The</span> <span class="n">site</span> <span class="n">provides</span> <span class="n">white</span> <span class="n">papers</span><span class="p">,</span> <span class="n">links</span> <span class="k">to</span> <span class="n">key</span> <span class="n">resources</span><span class="p">,</span> <span class="n">information</span> <span class="n">on</span>
+  <span class="n">specific</span> <span class="n">security</span> <span class="n">concerns</span><span class="p">,</span> <span class="k">and</span> <span class="n">more</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Q</span><span class="p">.</span> <span class="n">What</span> <span class="n">is</span> <span class="n">the</span> <span class="n">Security</span> <span class="n">Notification</span> <span class="n">Service</span><span class="p">?</span>
+
+<span class="p">-</span> <span class="n">A</span><span class="p">.</span> <span class="n">The</span> <span class="n">Microsoft</span> <span class="n">Security</span> <span class="n">Notification</span> <span class="n">Service</span> <span class="n">is</span> <span class="n">a</span> <span class="n">free</span> <span class="n">e</span><span class="p">-</span><span class="n">mail</span><span class="p">-</span><span class="n">based</span> <span class="s2">"push"</span>
+  <span class="n">notification</span> <span class="n">service</span> <span class="n">that</span> <span class="n">sends</span> <span class="n">information</span> <span class="k">and</span> <span class="n">advisories</span> <span class="n">about</span> <span class="n">security</span> <span class="k">in</span>
+  <span class="n">Microsoft</span> <span class="n">products</span> <span class="k">to</span> <span class="n">our</span> <span class="n">customers</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">kms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">exc4</span> <span class="n">exc5</span> <span class="n">exc55</span> <span class="n">exc55sp1</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbOutlookSearch</span> <span class="n">kbExchangeSearch</span> <span class="n">kbZNotKeyword2</span> <span class="n">kbOutlook97Search</span> <span class="n">kbZNotKeyword3</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">8.0</span><span class="p">,</span><span class="m">8.01</span><span class="p">,</span><span class="m">8.02</span><span class="p">,</span><span class="m">8.03</span><span class="p">,</span><span class="m">8.5</span><span class="p">;</span> <span class="n">winnt</span><span class="p">:</span><span class="m">4.0</span><span class="p">,</span><span class="m">5.0</span><span class="p">,</span><span class="m">5.5</span><span class="p">,</span><span class="m">5.5</span> <span class="n">SP1</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

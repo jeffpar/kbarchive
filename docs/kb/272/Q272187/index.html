@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q272187: XADM: Error Message When Viewing the Organization Forms Library | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q272187: XADM: Error Message When Viewing the Organization Forms Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/272/Q272187/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/272/Q272187/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/272/Q272187/","publisher":null,"image":null,"headline":"Q272187: XADM: Error Message When Viewing the Organization Forms Library","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q272187-xadm-error-message-when-viewing-the-organization-forms-library">Q272187: XADM: Error Message When Viewing the Organization Forms Library</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q272187
+Product(s): Microsoft Exchange
+Version(s): 5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Forms Administrator on the Tools menu in the Microsoft Exchange
+Server Administrator program to view the Organization Forms Library, you may
+receive the following error message:
+
+  One or more forms in the form library could not be loaded. The contents of
+  this public folder are currently unavailable. Either the Microsoft Exchange
+  Server computer servicing this public folder is down or the public folder has
+  not been replicated to this site. See your administrator.
+
+When you click OK, the Forms Administrator tool is displayed.
+
+In addition, when you try to view the properties of an Organization Forms Library
+in EFORMS REGISTRY in the Public Folder hierarchy, you may receive the following
+error message:
+
+  The contents of this public folder are currently unavailable. Either the MS
+  Exchange computer servicing this public folder is down or the public folder
+  has not been replicated to this site. See your administrator.
+  Microsoft Exchange Server Information Store
+  ID no: 80004005-0507-00000000
+
+CAUSE
+=====
+
+This issue can occur in the following scenario:
+
+- The organization is using decentralized administration between sites
+  (different administrators with no trusts).
+
+- There are multiple Organization Forms Libraries of either the same language
+  or multiple languages throughout the organization.
+
+- Local replica is not available in the site.
+
+- Public Folder affinity is not being used.
+
+A list of Organization Forms Libraries may be displayed in the Public Folder
+hierarchy in System Folders/EFORMS REGISTRY, but you cannot view the
+Organization Forms libraries in Forms Administrator.
+
+WORKAROUND
+==========
+
+To resolve this issue, use a centralized site to manage an Organization Forms
+Library for each language that is used (one library for each language in the
+organization). Also, use either of the following methods in the organization:
+
+- Replicate each Organization Forms Library (one library for each language for
+  each organization) in EFORMS REGISTRY to at least one Public Folder server in
+  each site in the organization.
+
+  -or-
+
+- Configure Public Folder affinity to each site in the organization, and ensure
+  that at least a one-way trust is configured.
+
+For additional information about Public Folder affinity and multiple domains,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q229565 XADM: Public Folder Affinity and Multiple Domains
+
+When you complete either of these methods, multiple copies of the Organization
+Forms Library of the same language are not created in the organization.
+
+NOTE: It is recommended that you carefully plan how you want to replicate the
+Organization Forms Library to each site. You must consider how the client
+computer uses the Organization Forms Library.
+
+MORE INFORMATION
+================
+
+For additional information about how to use the Organization Forms Library,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q253526 XADM: Organizational Forms Library and Different Languages
+
+Additional query words: organizational replication OST Synchronization Org Locale Locales Synch 80004005-507-0-522 8004010F-501-0-521
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

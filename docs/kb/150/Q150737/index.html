@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150737: Setting Primary and Secondary WINS Server Options | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150737: Setting Primary and Secondary WINS Server Options" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150737/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150737/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150737/","publisher":null,"image":null,"headline":"Q150737: Setting Primary and Secondary WINS Server Options","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150737-setting-primary-and-secondary-wins-server-options">Q150737: Setting Primary and Secondary WINS Server Options</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150737
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If a Windows NT server is running the Windows Internet Naming Service (WINS) and
+is participating in WINS database replication on the network, special
+consideration must be taken configuring where the WINS server points to for it's
+own name resolution (this parameter is set in the Network section of Control
+Panel, in the Configuration section of TCPIP Protocol).
+
+It is highly recommended that a WINS server point to itself as Primary and
+Secondary WINS in the TCP/IP configuration. If another configuration is used,
+you may experience random instability in making certain network connections.
+
+WORKAROUND
+==========
+
+It is recommended that a WINS server point to itself as Primary WINS and as
+Secondary WINS. This will avoid split registrations and other problems.
+
+For additional information on some of these other problems, please see the
+following articles in the Microsoft Knowledge Base:
+
+Q135405 Repairing a Corrupted WINS Database w/ Starting Version Count
+
+Q168712 How to Manually Recreate a WINS Database
+
+Q150520 Server Sporadically Loses Name Resolution
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+When any WINS enabled computer is booted it must register a variety of services
+with WINS. Commonly a computer has a Primary and Secondary WINS address
+configured in the TCP/IP setup. If the Primary WINS does not respond to the
+registrations, the computer tries the Secondary WINS.
+
+For additional information on the services that can be registered, please see the
+following article(s) in the Microsoft Knowledge Base:
+
+Q119495List of Names Registered with WINS Service
+
+Generally, most clients and servers should be configured with a Primary and
+Secondary WINS address, however caution must be taken with how a WINS server is
+itself configured. A WINS server eventually registers its services in its own
+local WINS database, regardless of whether it points to itself or not (either
+Primary, Secondary, or none). Registering with itself and another WINS server
+can cause problems when it comes to replication and renewal of these entries.
+
+For example, if you have a WINS server ("Srv1") that points to itself as Primary
+and points to another WINS as Secondary ("Wins2"). When Srv1 is booted, it
+usually tries to register its services before its own WINS Service is started.
+Since those registrations fail, it tries to register them at Wins2. If Wins2 is
+available, it accepts the registration requests. However, not all the services
+are registered at Wins2, because as these registration requests are made, Srv1
+continues to check its local WINS service. Once the service is running, it
+switches back to it and continues registering locally.
+
+After replication has occurred between Srv1 and Wins2, both databases show this
+ownership:
+
+  Srv1: Owns his Srv1&lt;20&gt;, and Domain&lt;1c&gt; (if it is a domain
+  controller)
+  Wins2: Owns all other Srv1 registrations, and also owns Domain&lt;1c&gt; from
+  Srv1
+
+This potentially problematic condition is referred to as "split registration."
+
+At this point, Srv1 has reverted to re-registering locally, however it takes a
+while before you can see it. Meanwhile, Srv1 and Wins2 are replicating the split
+registration mappings to other WINS servers. Eventually these replicas should be
+reconciled at the remote WINS (that is, the Wins2 replicas are replaced by the
+newer Srv1 replicas). However, before reconciliation is finished, client
+connection problems may have occurred, including the inability to connect to a
+WINS server that split its registration (in this example, Srv1), or the
+inability to resolve the domain&lt;1c&gt; name that Srv1 registered.
+
+The exact conditions that lead to failure are varied. If your WINS servers are
+running Windows NT version 3.51 with Service Pack 4 (or greater), these
+conditions should only be temporary. However, the problem may be more severe
+depending on your replication scheme or if you are running pre- Service Pack 4
+WINS servers.
+
+
+Another faulty configuration is setting a remote IP address (in this example,
+Wins2) as Primary while setting the local WINS (Srv1) as Secondary. In this
+case, Srv1 will eventually stop refreshing its NetBIOS lease at Wins2, and will
+begin registering locally. Depending on your WINS replication scheme, this may
+cause connection problems.
+
+Additional query words: System error 53 occurred network path not found log logon ntfaqipr
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101665: Adding Banyan VINES to Windows for Workgroups | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101665: Adding Banyan VINES to Windows for Workgroups" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101665/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101665/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101665/","publisher":null,"image":null,"headline":"Q101665: Adding Banyan VINES to Windows for Workgroups","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101665-adding-banyan-vines-to-windows-for-workgroups">Q101665: Adding Banyan VINES to Windows for Workgroups</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101665
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Windows for Workgroups (WFWG) provides the functionality to work with Banyan
+VINES network versions 4.11(5), 5.00(5), and 5.50(1) or later. This allows a
+Banyan VINES client workstation to become a Windows for Workgroups workstation,
+thereby providing access to Banyan VINES servers and/or Windows for Workgroups
+servers.
+
+This article contains the following sections:
+
+- How to Obtain the Banyan VINES NDIS Drivers
+
+- How to Install the Banyan VINES Drivers
+
+- Changes Made By the Banyan VINES Drivers
+
+- Banyan VINES Support for Token Ring with Windows for Workgroups
+
+HOW TO OBTAIN THE BANYAN VINES NDIS DRIVERS
+-------------------------------------------
+
+To install VINES support for Windows for Workgroups, first make sure you have the
+correct version of Banyan VINES drivers available either in a directory on your
+hard disk or on a floppy disk.
+
+These drivers can be obtained by ordering the appropriate Application Note from
+Microsoft Product Support Services or by obtaining the drivers from Banyan
+VINES.
+
+Banyan VINES drivers for Microsoft Windows for Workgroups version 3.1 can be
+downloaded from the Banyan On-line Access service (BOA) at (508) 836-1834.
+
+The files needed to be downloaded from BOA are:
+
+  VINES version 4.11(5)      V4115WFW.ZIP
+  VINES version 5.0(5)       V5005WFW.ZIP
+  VINES version 5.5(1)       V5051WFW.ZIP
+
+HOW TO INSTALL THE BANYAN VINES DRIVERS
+---------------------------------------
+
+To support Windows for Workgroups, your VINES network must be running version
+4.11(5), 5.00(5), or 5.50(1) of the network software. If your network is running
+an earlier version, such as 4.10, you must first upgrade to a more recent
+version. If your network is running 5.00(6), you must first either reinstall
+version 5.00(5) or upgrade to 5.50(1).
+
+The Banyan directory or the floppy disk contains the ADDNETS.EXE file, which you
+need to run before you install VINES support for Windows for Workgroups. The
+ADDNETS.EXE file modifies the NETWORK.INF file and installs other network
+software.
+
+Before you install VINES network support, you need to install Windows for
+Workgroups. Once you've installed Windows for Workgroups, use the following
+steps to install VINES support:
+
+1. If you are running Windows for Workgroups, quit and return to the MS-DOS
+  command prompt.
+
+2. Use a text editor to open your AUTOEXEC.BAT file and remove any
+  VINES-specific commands (such as BAN, Z:LOGIN, and so forth).
+
+3. Save your modified AUTOEXEC.BAT file.
+
+4. Insert the disk in your floppy disk drive that contains the Banyan drivers,
+  or change to the directory where they are located.
+
+5. At the MS-DOS command prompt, type the following and press ENTER
+
+  &lt;drive:&gt;addnets &lt;destination&gt;
+
+  where &lt;drive&gt; is your floppy disk drive and &lt;destination&gt; is the
+  path for your Windows for Workgroups directory.
+
+  NOTE: If Windows for Workgroups is in your PATH environment variable, you
+  don't need to specify the destination. Also, if you are a network
+  administrator and have installed Windows for Workgroups to a server by using
+  Setup with the /A option, you can type the path to the shared server
+  directory in place of the destination parameter to update that installation.
+
+  The Addnets installation program modifies the NETWORK.INF file with
+  VINES-specific information and installs some updated driver files (WFWNET.DRV
+  and WFWSETUP.CPL).
+
+This completes the steps that must be performed at the MS-DOS command prompt. To
+add the VINES network to your list of compatible Windows for Workgroups
+networks, continue with the following steps:
+
+1. Start Windows for Workgroups.
+
+2. In the Main group, choose the Control Panel icon.
+
+3. In the Control Panel window, choose the Network icon.
+
+  The Network Settings dialog box appears.
+
+4. Under Options, choose the Networks button.
+
+  The Compatible Networks dialog box appears.
+
+5. Under Available Network Types, select either Banyan VINES 4.11(5), Banyan
+  VINES 5.00(5), or Banyan VINES 5.50(1) (depending on your network version),
+  and then choose the Add button.
+
+  If the VINES files are on a disk, the VINES network software files are copied
+  to your local hard disk drive from the disk. If the disk is not in your
+  floppy disk drive, the system first prompts you to insert it. If the files
+  are on your hard disk drive, you must direct it to the appropriate directory.
+
+6. Choose the OK button to close the Compatible Networks dialog box.
+
+  Control Panel displays a message indicating that the AUTOEXEC.BAT,
+  PROTOCOL.INI, and SYSTEM.INI files have been modified. VINES- specific
+  information has been added to these files. If you want to view them, use a
+  text editor.
+
+7. Choose the OK button again.
+
+8. Remove the disk from your floppy disk drive (if any), and then restart your
+  workstation.
+
+  You must restart your workstation to make the changes take effect.
+
+CHANGES MADE BY THE BANYAN VINES DRIVERS
+----------------------------------------
+
+The following additions are made when Banyan VINES connectivity is enabled in
+Windows for Workgroups:
+
+AUTOEXEC.BAT
+------------
+
+CD &lt;WFWG directory&gt;:
+
+The above entry may include a drive letter before the directory name, which would
+cause the line to implement incorrectly. You may have to manually change the
+entry from
+
+     CD &lt;DRIVE LETTER&gt;:&lt;WFWG DIRECTORY&gt;
+
+  -to the following:
+
+        &lt;drive letter&gt;:
+        CD \&lt;WFWG DIRECTORY&gt;
+
+BAN /NC:
+
+The above entry loads the VINES software into the computer's memory and connects
+the computer to a VINES network. The NC switch examines communications hardware
+in the computer without initializing it.
+
+NDISBAN:
+
+This loads the NDIS-specific portion of the VINES software.
+
+REDIRALL:
+
+This loads support for all versions of MS-DOS.
+
+ARSWAIT (Address Resolution Server Wait):
+
+This entry waits until your computer has been assigned a network address by a
+server. After it sees that your network has received a network address from the
+network, it exits and allows your computer to continue.
+
+NOTE: Normally this function is built into the VINES native drivers, but NDIS
+requires this functionality to be added after the NDIS driver is loaded.
+
+&lt;Z&gt;:LOGIN:
+
+This entry logs on to the network from the server (Z by default).
+
+CONFIG.SYS
+----------
+
+LASTDRIVE=Y
+
+PROTOCOL.INI
+------------
+
+  [network.setup]
+     transport=ban$vines,BAN$VINES
+     lana0=ms$ee16,1,ban$vines      &lt;- ms$ee16 is used for the INTEL
+                                    &lt;- EtherExpress 16 network card
+  [Ban$Vines]
+     drivername=NDISBAN$
+     bindings=ms$ee16
+
+SYSTEM.INI
+----------
+
+  [boot]
+     secondnet.drv=vines.drv
+
+  [386Enh]
+     secondnet=vvinesd.386
+
+  [network]
+     multinet=vines500              &lt;- vines411 or vines550 for
+                                    &lt;- different VINES versions
+
+If Microsoft LAN Manager connectivity is installed in addition to Banyan VINES,
+then the following line is changed in the SYSTEM.INI file:
+
+  [network]
+     multinet=lanman,vines500
+
+BANYAN VINES SUPPORT FOR TOKEN RING WITH WINDOWS FOR WORKGROUPS
+---------------------------------------------------------------
+
+Token-Ring support for Banyan VINES drivers in Windows for Workgroups is
+available directly in version 5.50(1). For support of version 4.11(5) or version
+5.00(5) on a token-ring local area network (LAN) with Windows for Workgroups,
+you must install a site-specific patch for token-ring support. Patches for these
+versions to support token- ring LANs are available from Banyan VINES.
+
+To change the LAN driver in VINES version 5.50(1), do the following:
+
+1. From the Windows directory, type "pcconfig" (without the quotation marks) and
+  press ENTER. This brings up a Banyan VINES menu.
+
+2. Select NETWORK CARD SETTINGS from the menu and then press ENTER. This brings
+  up a list of network cards.
+
+3. From the network card list, select NDIS TOKEN-RING, and then press the F10
+  key twice to save your changes and exit the Banyan setup program.
+
+4. Reboot your computer to make the changes take effect.
+
+For more information, call Banyan Systems at (508) 898-1000.
+
+The products included here are manufactured by Banyan Systems, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or liability.
+
+Additional query words: appnote 3.10 Banyan Vines WFW addnets
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : :3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

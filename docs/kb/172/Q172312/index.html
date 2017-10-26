@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172312: PRB: WithEvents Does Not Work with Remote Automation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172312: PRB: WithEvents Does Not Work with Remote Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172312/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172312/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172312/","publisher":null,"image":null,"headline":"Q172312: PRB: WithEvents Does Not Work with Remote Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172312-prb-withevents-does-not-work-with-remote-automation">Q172312: PRB: WithEvents Does Not Work with Remote Automation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172312
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to raise a remote event across Remote Automation, the following
+run-time error appears:
+
+  -2147467259(80004005) , Automation error
+
+CAUSE
+=====
+
+Remote Automation does not currently support the use of WithEvents.
+
+RESOLUTION
+==========
+
+To support remote events with Visual Basic 5.0, use DCOM instead of Remote
+Automation. You can also use callbacks to simulate raising events remotely.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Use the following steps on the server machine:
+
+1. Start Visual Basic 5.0 and create a new ActiveX EXE project.
+
+2. From the Project menu, selectProject properties and change the Project name
+  to "Projtest."
+
+3. Add a Class Module and change its name to "Testclass."
+
+4. In Testclass' Code window, input following code:
+
+        Public Event propchange(newv As String)
+        Private propt As String
+
+        Public Sub showfrm()
+              MsgBox "asdfl"
+
+        End Sub
+
+        Public Property Get testp() As String
+              testp = propt
+        End Property
+
+        Public Property Let testp(ByVal vNewValue As String)
+              propt = vNewValue
+              RaiseEvent propchange(propt)
+        End Property
+
+5. On the File menu, click "Make ProjTest.exe."
+
+6. Copy the corresponding .exe, .tlb, and .vbr files to the client machine.
+
+7. Start the Automation Manager and the RemAuto Connection Manager to set
+  necessary server-side configuration for using Projtest.testclass for Remote
+  Automation.
+
+Use the following steps on the client machine:
+
+1. Run Projtest.exe, which was copied from the Server side in the above steps.
+
+2. Start the RemAuto Connection Manager to set necessary Client-side
+  configuration for using Projtest.testclass.
+
+3. Launch Visual Basic 5.0 and create a new Standard EXE project with a standard
+  form.
+
+4. From the Project menu, click References and select the "Projtest" box.
+
+5. In Form1's Code window, input following code:
+
+        Public WithEvents eventp As testclass
+
+        Private Sub eventp_propchange(newv As String)
+             MsgBox newv
+        End Sub
+
+        Private Sub Form_Load()
+             Dim a As New testclass
+             a.showfrm
+             Set eventp = a
+             a.testp = "test string"
+         End Sub
+
+6. Run the project and check if the Remote Automation connection is correct, the
+  message box should pop up on the server-side machine.
+
+7. Click OK to close the message box on the server-side machine.
+
+Result
+------
+
+When the line "Set eventp = a" executes, you will get the following run- time
+error:
+
+  -2147467259(80004005) , Automation error
+
+Expected behavior
+-----------------
+
+A message box should appear on the client-side machine because the server raised
+the Propchange event.
+
+NOTE: If both the client and the server are running on the same machine (with
+local automation), you will see the expected behavior.
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbZNotKeyword3
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

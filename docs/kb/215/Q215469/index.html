@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q215469: SMS: Support Options for Crystal Info (Reports) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q215469: SMS: Support Options for Crystal Info (Reports)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/215/Q215469/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/215/Q215469/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/215/Q215469/","publisher":null,"image":null,"headline":"Q215469: SMS: Support Options for Crystal Info (Reports)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q215469-sms-support-options-for-crystal-info-reports">Q215469: SMS: Support Options for Crystal Info (Reports)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q215469
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbReportkbfaq
+Last Modified: 22-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information contained in this article is from the Systems Management Server
+2.0 Release Notes. You can find the Release Notes on the Systems Management
+Server 2.0 CD through the Taskpad or by opening Readme.htm in your browser.
+
+MORE INFORMATION
+================
+
+Crystal Info Version 6 (Reports)
+--------------------------------
+
+Do Not Install Crystal Info Version 6 on the Primary Site Server for Sites with
+500 or More Clients Crystal Info version 6 (also called Crystal Reports) is a
+sample SMS 2.0 snap-in provided by Crystal Decisions. This sample reporting tool
+is fully integrated with SMS and allows you to run reports against data stored
+in the SMS site database. Microsoft provides this tool as an example of the type
+of SMS snap-ins you can create by using the SMS 2.0 Toolkit, which is included
+in the Microsoft BackOffice 4.5 Resource Kit.
+
+If you use the Express Setup option to install SMS, Crystal Info version 6 is
+installed automatically on your site server. If your SMS site hierarchy will
+have more than 500 SMS clients, however, you should not install SMS by using
+Express Setup.
+
+WORKAROUND: To use Crystal Info version 6 at a site with more than 500 clients,
+configure your site hierarchy so that your central site has SMS with only
+Crystal Info installed. That is, the only component you select in the Setup
+Installation Options screen is Crystal Reports; all other check boxes are
+cleared.)
+
+This reporting site will be your central site, but no administrative actions will
+be performed from this computer. Instead, install an SMS site immediately
+beneath the central reporting site. You will administer your site from this site
+and from remote SMS Administrator consoles on various computers on your network.
+The procedure for this workaround is as follows:
+
+Install SMS using the Custom Setup option on a stand-alone server that is not a
+domain controller. This site will be the central site, and it will be used only
+for reporting; it is referred to in the remainder of this procedure as the
+reporting site. When installing the reporting site, select Crystal Info as the
+only optional SMS component (note that Crystal Info is listed as Crystal Reports
+in the user interface). Do not install any other optional SMS components on this
+server.
+
+On a computer other than the site server, install the SMS Administrator console.
+At the Information screen, specify the reporting site, and at the SMS
+Administrator Console Installation Options screen select only Crystal Reports
+Console. Restrict access to the Crystal Reports feature to remote administrators
+who are domain users or domain administrators only in the reporting domain,
+without granting such users any SMS security permissions in the target site.
+Users with such limited rights can view, but cannot access or manipulate, other
+SMS component settings at the target site (for example, they can see, but not
+access the contents of, Queries).
+
+Configure this reporting site as the central site in your SMS hierarchy. Install
+remote SMS Administrator consoles on other computers that are running Windows NT
+4.0 or later in your site, and use them to connect to the site to run reports.
+
+Install a first-tier child site that you can use to perform all administrative
+tasks for your site hierarchy. This site will serve as your functional central
+site. When you install additional child sites, have them report to the central
+reporting site through this site.
+
+For information about installing remote SMS Administrator consoles, see the
+BackOffice Resource Kit version 4.5, and Chapter 6, "Installing SMS 2.0 Sites"
+in the SMS 2.0 Administrator's Guide. Administrators who need to administer site
+configuration, software distribution, and so on, should set up remote SMS
+Administrator consoles that connect to the first-tier child site (the site
+directly below the reporting site).
+
+Technical Support for Crystal Info Version 6 and Crystal Reports. For technical
+information about using Crystal Info version 6, visit the Microsoft Knowledge
+Base at http://www.microsoft.com/support/ and the Crystal Decisions Support Web
+site at http://community.crystaldecisions.net/homepage/.
+
+Before contacting Crystal Decisions Technical Support, make sure that you have
+registered your copy of Crystal Info and you have the following information
+available:
+
+- The version of Crystal Info you are using. Version 6 is supplied with SMS
+  2.0.
+
+- The type of data you are using.
+
+- The number of versions of the Crpe32.dll file on the computer, and their
+  locations, file sizes, and dates.
+
+- A list of files in the following directories: CRW, %windir%\System32, Report,
+  and Database.
+
+  TIP: You can create a file that lists all files sorted by extension by typing
+  "dir /oe &gt; filename.dir" (without the quotation marks) from each of these
+  directories.
+
+Crystal Services provides online (modem), fax, CompuServe, and telephone support.
+These support options are described in more detail as follows:
+
+- Online dial (604)662-8298: If you have a modem, online support is the most
+  convenient and effective way to solve your problems. To use it, on the Help
+  menu, click Technical Support. Provide the appropriate information about your
+  problem and attach any relevant files. To transmit your data, click Connect.
+  Your request is electronically sent to the Crystal Reports Technical Support
+  server and is immediately given an identification number. Telephone charges
+  are minimal because the connection time to the server is brief.
+
+  After your information is received, a technical support representative will
+  review your request and send a response. To check for a response, on the Help
+  menu, click Technical Support, and then click Connect. Updated information
+  about all outstanding requests is immediately transmitted back to you. If
+  your problem is still being reviewed by technical support, a reply such as
+  "requires liaison with the Crystal Research and Development team in progress"
+  will be sent.
+
+  NOTE: You do not require any communications software to use online support.
+  Because the software is built into the product, all you need is a modem.
+
+- Fax dial (604) 681-7163: To prepare your fax request, on the Help menu, click
+  Technical Support, and provide the appropriate information about your
+  problem. After you provide the necessary information, print the completed
+  form and fax it to Crystal Services.
+
+- CompuServe (CompuServe address 72223,2632): Please leave the word "CRYSTAL"
+  in the title of CompuServe messages on the MSBASIC forum in the Third Party
+  area, to make it easy for other users to benefit from the discussion.
+
+- Telephone dial (604) 669-8379: When you are on the phone with a technical
+  support representative, make sure that Crystal Reports and the problem report
+  are both open.
+
+Reports Provided with SMS: Documentation Update
+-----------------------------------------------
+
+The reports provided with SMS might differ from the reports listed in Chapter 19,
+"Creating Administrative Reports" in the SMS 2.0 Administrator's Guide.
+
+WORKAROUND: None.
+
+Additional query words: prodsms relnotes
+
+======================================================================
+Keywords          : kbsms200 kbReport kbfaq
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

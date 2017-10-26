@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136624: Windows 95 Hangs When Starting on Canon Innova 10c Notebook | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136624: Windows 95 Hangs When Starting on Canon Innova 10c Notebook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136624/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136624/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136624/","publisher":null,"image":null,"headline":"Q136624: Windows 95 Hangs When Starting on Canon Innova 10c Notebook","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136624-windows-95-hangs-when-starting-on-canon-innova-10c-notebook">Q136624: Windows 95 Hangs When Starting on Canon Innova 10c Notebook</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136624
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows 95 on a Canon Innova 10c notebook computer, your
+computer may stop responding (hang) when Windows 95 tries to restart the
+computer the first time.
+
+If you can complete the Setup process, and you choose to enable Advanced Power
+Management (APM) support, your computer may hang when you start Windows 95, or
+when you click the Suspend command on the Start menu.
+
+CAUSE
+=====
+
+The BIOS in your computer is not completely compatible with Windows 95.
+
+
+RESOLUTION
+==========
+
+If you are attempting to install Windows 95 and your computer has stopped
+responding when attempting to restart for the first time, follow these steps to
+work around the problem:
+
+1. Start Windows 95 in Safe mode. To do so, restart your computer, press the F8
+  key when you see the "Starting Windows 95" message, and then choose Safe Mode
+  from the Startup menu.
+
+2. Use the right mouse button to click My Computer, and then click Properties on
+  the menu that appears.
+
+3. Click the Device Manager tab.
+
+4. Double-click the Hard Disk Controllers branch to expand it, and then
+  double-click the hard disk controller installed in your computer.
+
+5. Click the Original Configuration (Current) check box to clear it, and then
+  click OK.
+
+If you have enabled APM support and your computer hangs when Windows 95 attempts
+to start, or when you click Suspend on the Start menu, follow these steps to
+work around the problem:
+
+1. If you cannot start Windows 95 normally, start it in Safe mode. To do so,
+  follow the instructions in step 1 above.
+
+2. Use the right mouse button to click My Computer, and then click Properties on
+  the menu that appears.
+
+3. Click the Device Manager tab.
+
+4. Double-click the System Devices branch to expand it, and then double- click
+  Advanced Power Management Support.
+
+5. On the Settings tab, click the Enable Power Management Support check box to
+  clear it.
+
+6. Click OK.
+
+7. Use any text editor (such as Notepad) to open the System.ini file in the
+  Windows folder. Disable the following line in the [386Enh] section of the
+  file by placing a semicolon (;) at the beginning of the line:
+
+  device=*vpowerd
+
+8. Save and then close the System.ini file, and then restart your computer.
+
+You may want to contact your computer manufacturer to inquire about a possible
+BIOS upgrade that resolves these problems.
+
+MORE INFORMATION
+================
+
+This behavior may also occur on a Mitsubishi ApricotNote NS M3472 computer with
+an ACER BIOS and Advanced Power Management version 1.0. The resolution in this
+article also applies to this computer.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

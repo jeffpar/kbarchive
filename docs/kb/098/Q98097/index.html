@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98097: Mac Bkup: Retrospect Remote May Corrupt Server Data File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98097: Mac Bkup: Retrospect Remote May Corrupt Server Data File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98097/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98097/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98097/","publisher":null,"image":null,"headline":"Q98097: Mac Bkup: Retrospect Remote May Corrupt Server Data File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98097-mac-bkup-retrospect-remote-may-corrupt-server-data-file">Q98097: Mac Bkup: Retrospect Remote May Corrupt Server Data File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98097
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for AppleTalk Networks, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Retrospect Remote is processing a remote backup of a Macintosh running
+version 3.1 of Microsoft Mail for AppleTalk server, the backup may cause Mail to
+shut down the server. To prevent this problem, the administrator can do one of
+the following:
+
+- Configure Retrospect to not backup the server's System Folder or Extensions
+  Folder.
+
+-or-
+
+- Configure Retrospect specifically to not backup Microsoft Mail Data.
+
+-or-
+
+- Ensure the Mail Server is not running at the time of the backup.
+
+For more details on configuring Retrospect Remote, call Dantz Development at
+(510) 849-0293.
+
+MORE INFORMATION
+================
+
+Microsoft Mail Data is kept open to read from and write to while Mail is
+running. The Mail Server software needs to access the datafile when information
+is read, written, and deleted.
+
+If another process attempts to access this file while it is open, Mail will
+usually respond by shutting down the server to prevent corruption. However, the
+server may stop responding or hang. Because Retrospect Remote will attempt to
+archive the datafile unless the administrator excludes it from the backup, the
+archive process will create this situation.
+
+Administrators who want to have Retrospect back up the server datafile should
+utilitze the MS Mail Backup control panel device to provide an initial copy of
+the data file which Retrospect can archive later.
+
+For example, MS Mail Backup can be configured to copy the server datafile to an
+external hard drive or AppleShare volume at midnight. Retrospect can then run
+and archive the external volume at 1:00 AM. The file that is archived will be
+named Mail Data Backup #x (where x is the number of the backup. If the
+administrator is keeping multiple backups, the lowest number is the most
+recent). Retrospect will be backing up a server datafile that was current as of
+midnight.
+
+To correctly configure MS Mail Backup to copy the datafile to a different volume,
+refer to the "Network Manager's Guide" for Microsoft Mail for AppleTalk
+Networks.
+
+
+Additional query words: 3.10 crash
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

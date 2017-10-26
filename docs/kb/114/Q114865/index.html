@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114865: BUG: HEADING Clause on the REPORT FORM Does Not Align Properly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114865: BUG: HEADING Clause on the REPORT FORM Does Not Align Properly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114865/","publisher":null,"image":null,"headline":"Q114865: BUG: HEADING Clause on the REPORT FORM Does Not Align Properly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114865-bug-heading-clause-on-the-report-form-does-not-align-properly">Q114865: BUG: HEADING Clause on the REPORT FORM Does Not Align Properly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114865
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5x,2.6x,3.0,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp500aBUG kbvfp250bug kbvfp250aBUGkbbuglist
+Last Modified: 29-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The text specified with the HEADING &lt;expC&gt; clause on the REPORT FORM
+command does not align properly with the Page Header or Title band of a quick
+report. The HEADING text is printed or displayed in page preview, but it will be
+printed over the column headings.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+WORKAROUND
+==========
+
+The misalignment occurs only when a quick report is printed with the HEADING
+clause.
+
+
+FoxPro 2.x
+----------
+
+Use the following workaround if you are seeing this behavior while using the RQBE
+tool:
+
+1. Using the MODIFY command, open the report created by the query.
+
+2. From the Report menu, choose Data Grouping.
+
+3. Choose Add, and then type _PAGENO in the Group box. Choose OK twice.
+
+4. Move all the fields and text from the Page Header band to the Group Header
+  band.
+
+5. Save the report.
+
+6. Using the MODIFY command, open the query.
+
+7. Choose Options, select Report, clear the Overwrite File checkbox, and choose
+  OK.
+
+8. Using the DO command, execute the query.
+
+Steps to Reproduce Problem
+--------------------------
+
+To reproduce this problem, issue the following code in the Command window:
+
+      CREATE REPORT test.frx FROM C:\FoxProW\Tutorial\Salesman ;
+         WIDTH 637 COLUMN
+      USE C:\FoxProW\Tutorial\Salesman
+      REPORT FORM test.frx HEADING "This is a test" PREVIEW
+
+NOTE: This example assumes that the SALESMAN database resides in the
+FOXPROW\TUTORIAL subdirectory on drive C. If this subdirectory does not exists
+on your C drive, change the pathname and use any database in your FoxPro
+directory.
+
+Additional query words: RQBE crosstab kbFP250 kbFP260 kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbvfp500aBUG kbvfp250bug kbvfp250aBUG kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:2.5x,2.6x,3.0,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

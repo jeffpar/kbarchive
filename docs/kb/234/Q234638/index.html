@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234638: XADM: Server Location and Public Folder Access | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234638: XADM: Server Location and Public Folder Access" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234638/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234638/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234638/","publisher":null,"image":null,"headline":"Q234638: XADM: Server Location and Public Folder Access","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234638-xadm-server-location-and-public-folder-access">Q234638: XADM: Server Location and Public Folder Access</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234638
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the concept of server location in Exchange Server and
+explains how to use server location to better control public folder access.
+
+MORE INFORMATION
+================
+
+When you design a large Exchange Server organization, you generally want to
+create and maintain fewer, larger sites. If you keep the number of sites to a
+minimum, it is easier to administer the Exchange Server organization. However,
+public folder access can become an issue in a large Exchange Server
+organization.
+
+You can logically group servers in a site into smaller groups by creating server
+locations. Specifically, server locations allow more control over public folder
+access in a large Exchange Server organization. You can also use server
+locations to limit the users who can gain access to the services of a
+connector.
+
+A typical way to implement server locations in an Exchange Server site is to
+place Exchange Server computers on the same subnet in the same server location.
+
+NOTE: Server locations only apply within a site, not between sites.
+
+To create a server location for an Exchange Server computer:
+
+1. In the Microsoft Exchange Server Administrator program, click the server
+  name.
+
+2. On the File menu, click Properties, and then click the General tab.
+
+3. In the Server Location box, type a new location name to replace the default
+  none.
+
+4. Click Apply. When the following question is displayed
+
+  Are you sure you want to create the new location '&lt;name_of_new_entry&gt;'?
+
+  click Yes.
+
+Further Considerations on Public Folder Access
+----------------------------------------------
+
+The order in which users in a single site gain access to public folders is not
+totally random. Users are assigned to a default public folder server. When a
+user needs access to the contents of a public folder, the default server is
+checked first. If the default server does not respond to the request, the
+modulus server, which is a randomly assigned public folder server, is the next
+priority. The remaining servers that are available to the user are those servers
+that have currently established remote procedure call (RPC) connections,
+followed by all of the remaining public folder servers in the site.
+
+If the site is large and contains network connections that have bandwidth issues,
+the public folder connection process that is outlined above may be inefficient.
+In this case, you can use server locations to direct connection requests and use
+the best possible network route.
+
+Additional References on Server Location
+----------------------------------------
+
+For additional information about the algorithm that is used to determine public
+folder access referrals, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q154941 XADM: How to Determine Which Public Folder Replica is Used
+
+For additional information about the concept of server location in Exchange
+Server and how you can use server location to limit the users in a site who can
+gain access to the services of a connector, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q234639 XFOR: Server Location and the Internet Mail Service and Other
+  Exchange Server Connectors
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

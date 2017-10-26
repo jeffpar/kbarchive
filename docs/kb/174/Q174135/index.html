@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174135: PRB: Setup Cannot Continue…System Files Are Out of Date | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174135: PRB: Setup Cannot Continue…System Files Are Out of Date" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174135/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174135/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174135/","publisher":null,"image":null,"headline":"Q174135: PRB: Setup Cannot Continue…System Files Are Out of Date","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174135-prb-setup-cannot-continuesystem-files-are-out-of-date">Q174135: PRB: Setup Cannot Continue…System Files Are Out of Date</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174135
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbAppSetup kbVBp kbVBp500 kbGrpDSVB kbFAQ kbDSupport kbVBp600FAQ
+Last Modified: 18-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Executing a Setup.exe program created by the Visual Basic 5.0 Application Setup
+Wizard or the Visual Basic 6.0 Package and Deployment Wizard (PDW) on a client
+machine may cause the following message:
+
+  Setup cannot continue because some system files are out of date on your
+  system. Click OK if you would like setup to update these files now. You will
+  need to restart Windows before you can run setup again. Click Cancel to exit
+  setup without updating system files.
+
+If you click OK, the application installs the correct file. If you select Cancel,
+the operation stops. The setup process will not complete successfully until the
+correct file has been installed on the system.
+
+CAUSE
+=====
+
+The above message occurs when the version of Oleaut32.dll on the client machine
+is older than version 2.20.0000. Certain files critical to the installation
+process of Visual Basic applications require Oleaut32.dll version 2.20.0000 or
+later.
+
+MORE INFORMATION
+================
+
+By selecting OK to the above message, Setup.exe will install a newer version of
+Oleaut32.dll that is compatible with the installation program. In order for this
+file to be updated to the correct version, the operating system must be
+restarted. Therefore, after the correct file is installed, the user will be
+prompted to restart the computer. The application setup process cannot continue
+until the machine is restarted. After the machine is rebooted, re-run the
+application Setup.exe program.
+
+If you choose Cancel, the Setup.exe program will terminate. The application setup
+will not complete until version 2.20.0000 or later of Oleaut32.dll is installed
+on the system.
+
+NOTE: This process also resolves the issue documented in the following Microsoft
+Knowledge Base article:
+
+Q162518 PRB: "Unexpected error; quitting" Installing VB4 Application
+
+REFERENCES
+==========
+
+If you continue to receive the above error after multiple attempts, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q191096 PRB: Multiple 'System Files Are Out of Date' Errors
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbVBp kbVBp500 kbGrpDSVB kbFAQ kbDSupport kbVBp600FAQ 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

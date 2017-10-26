@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141417: FIX: Problem Occurs During File Open on Win32s | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141417: FIX: Problem Occurs During File Open on Win32s" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141417/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141417/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141417/","publisher":null,"image":null,"headline":"Q141417: FIX: Problem Occurs During File Open on Win32s","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141417-fix-problem-occurs-during-file-open-on-win32s">Q141417: FIX: Problem Occurs During File Open on Win32s</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141417
+Product(s): Microsoft C Compiler
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbcode kbDocView kbMFC kbVC400bug kbVC410fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A problem occurs on Win32s when the user tries to open a file using the standard
+MFC file opening procedures. This only occurs with an MFC application running
+under Win32s version 1.3 that uses MFC in a shared DLL (Mfc40.dll for Win32s)
+and the C runtime libraries in a DLL (Msvcrt40.dll for Win32s). Note that this
+is the default configuration for a default AppWizard generated application.
+
+Two known symptoms are access violation and EMM386 error #06 (Invalid opcode).
+Symptoms will vary depending on the condition of the call stack.
+
+CAUSE
+=====
+
+AfxResolveShortcut (an internal MFC function) calls SHGetFileInfo, which is not
+correctly implemented on Win32s. This happens as a result of the ID_FILE_OPEN
+command. AfxResolveShortcut is called from CDocManager::OpenDocumentFile, which
+is in turn called from CWinApp::OpenDocumentFile.
+
+RESOLUTION
+==========
+
+Derive a class from CDocManager and override the OpenDocumentFile function by
+copying the existing code and make some small changes. Because this fix is
+dependent on the internal MFC implementation, make sure you include the #if
+_MFC_VER == 0x400 statements.
+
+Copy the following code into your application's .cpp file above the
+implementation of InitInstance. If you're looking at a paper copy of this
+article, note that you can find most of the code for OpenDocumentFile in
+Mfc\Src\Docmgr.cpp; rather than retyping the entire text, you could copy most of
+the code and make the change noted below:
+
+  #if _MFC_VER == 0x400
+
+  static inline BOOL IsDirSep(TCHAR ch)
+  {
+      return (ch == _T('\\') || ch == _T('/'));
+  }
+
+  #ifndef _MAC
+  BOOL AFXAPI AfxResolveShortcut(CWnd* pWnd, LPCTSTR pszShortcutFile,
+                                         LPTSTR pszPath, int cchPath);
+  #endif
+
+  #define _countof(array) (sizeof(array)/sizeof(array[0]))
+
+  BOOL AFXAPI AfxFullPath(LPTSTR lpszPathOut, LPCTSTR lpszFileIn);
+  void AFXAPI AfxGetRoot(LPCTSTR lpszPath, CString&amp; strRoot);
+
+  class CMyDocManager : public CDocManager
+  {
+  public:
+      CMyDocManager() {};
+      virtual ~CMyDocManager() {};
+      virtual CDocument* OpenDocumentFile(LPCTSTR lpszFileName);
+  };
+
+  CDocument* CMyDocManager::OpenDocumentFile(LPCTSTR lpszFileName)
+  {
+      // find the highest confidence
+      POSITION pos = m_templateList.GetHeadPosition();
+      CDocTemplate::Confidence bestMatch = CDocTemplate::noAttempt;
+      CDocTemplate* pBestTemplate = NULL;
+      CDocument* pOpenDocument = NULL;
+
+      TCHAR szPath[_MAX_PATH];
+      ASSERT(lstrlen(lpszFileName) &lt; _countof(szPath));
+  #ifndef _MAC
+      TCHAR szTemp[_MAX_PATH];
+      if (lpszFileName[0] == '\"')
+          ++lpszFileName;
+      lstrcpyn(szTemp, lpszFileName, _MAX_PATH);
+      LPTSTR lpszLast = _tcsrchr(szTemp, '\"');
+      if (lpszLast != NULL)
+          *lpszLast = 0;
+      AfxFullPath(szPath, szTemp);
+      TCHAR szLinkName[_MAX_PATH];
+
+      // CHANGE: check the windows version before calling AfxResolveShortcut
+      if((BYTE)GetVersion() &gt;=4 &amp;&amp; AfxResolveShortcut(AfxGetMainWnd(),
+                                   szPath, szLinkName,_MAX_PATH))
+          lstrcpy(szPath, szLinkName);
+  #else
+      lstrcpyn(szPath, lpszFileName, _MAX_PATH);
+      WIN32_FIND_DATA fileData;
+      HANDLE hFind = FindFirstFile(lpszFileName, &amp;fileData);
+      if (hFind != INVALID_HANDLE_VALUE)
+          VERIFY(FindClose(hFind));
+      else
+          fileData.dwFileType = 0;    // won't match any type
+  #endif
+      while (pos != NULL)
+      {
+          CDocTemplate* pTemplate =
+                    (CDocTemplate*)m_templateList.GetNext(pos);
+          ASSERT_KINDOF(CDocTemplate, pTemplate);
+
+          CDocTemplate::Confidence match;
+          ASSERT(pOpenDocument == NULL);
+  #ifndef _MAC
+          match = pTemplate-&gt;MatchDocType(szPath, pOpenDocument);
+  #else
+          match = pTemplate-&gt;MatchDocType(szPath,
+                           fileData.dwFileType, pOpenDocument);
+  #endif
+          if (match &gt; bestMatch)
+          {
+              bestMatch = match;
+              pBestTemplate = pTemplate;
+          }
+          if (match == CDocTemplate::yesAlreadyOpen)
+              break;      // stop here
+      }
+
+      if (pOpenDocument != NULL)
+      {
+          POSITION pos = pOpenDocument-&gt;GetFirstViewPosition();
+          if (pos != NULL)
+          {
+              CView* pView = pOpenDocument-&gt;GetNextView(pos);
+              // get first one
+              ASSERT_VALID(pView);
+              CFrameWnd* pFrame = pView-&gt;GetParentFrame();
+              if (pFrame != NULL)
+                  pFrame-&gt;ActivateFrame();
+              else
+                  TRACE0(
+                  "Error: Cannot find frame for document to activate.\n");
+              CFrameWnd* pAppFrame;
+              if (pFrame !=
+                      (pAppFrame = (CFrameWnd*)AfxGetApp()-&gt;m_pMainWnd))
+              {
+                  ASSERT_KINDOF(CFrameWnd, pAppFrame);
+                  pAppFrame-&gt;ActivateFrame();
+              }
+          }
+          else
+          {
+              TRACE0(
+                "Error: Can not find view for document to activate.\n");
+          }
+          return pOpenDocument;
+      }
+
+      if (pBestTemplate == NULL)
+      {
+          AfxMessageBox(AFX_IDP_FAILED_TO_OPEN_DOC);
+          return NULL;
+      }
+
+      return pBestTemplate-&gt;OpenDocumentFile(szPath);
+  }
+
+  #endif //mfc version 4.0 workaround
+
+Now, include the following three lines to the first part of your
+MyApp::InitInstance function:
+
+  #if _MFC_VER == 0x400
+      m_pDocManager = new CMyDocManager;
+  #endif
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open the scribble tutorial sample from:
+
+  \Msdev\Samples\Mfc\Tutorial\Scribble\Step6\Scribble.mdb
+
+2. Open the Project Settings dialog box. In Settings For, select Win32 Release.
+
+3. From the Project Settings dialog box, click the general tab. From the
+  Microsoft Foundation Classes list box, select Use MFC in a shared DLL
+  (MFC40(d).DLL). Click OK to dismiss the project settings dialog box.
+
+4. Open the default configuration dialog box, and select the Release build.
+
+5. Rebuild the program.
+
+6. Run the program under Win32s.
+
+7. Create, save, and close a scribble document.
+
+8. Try to open the document you just closed. An access violation occurs.
+
+Additional query words: kbVC400bug 4.00 4.10 1.30
+
+======================================================================
+Keywords          : kbcode kbDocView kbMFC kbVC400bug kbVC410fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

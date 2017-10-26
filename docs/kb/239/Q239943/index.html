@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239943: FIX: UserControls with Menus Cause Resource Leak | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239943: FIX: UserControls with Menus Cause Resource Leak" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239943/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239943/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239943/","publisher":null,"image":null,"headline":"Q239943: FIX: UserControls with Menus Cause Resource Leak","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239943-fix-usercontrols-with-menus-cause-resource-leak">Q239943: FIX: UserControls with Menus Cause Resource Leak</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239943
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbAPI kbCtrl kbMenu kbSDKWin32 kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSup
+Last Modified: 26-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a usercontrol has any top level menus where the NegotiateMenus property is
+non-zero, resources drain slowly when the focus is set to and from the
+usercontrol. The problem occurs in both the Visual Basic Design Environment
+(IDE) and as an EXE.
+
+CAUSE
+=====
+
+Visual Basic destroys the UserControl's main menu, but does not destroy all of
+the submenus under the main menu when the UserControl loses input focus.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in the latest service pack for
+Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+  Visual Studio Product Updates
+  (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+MORE INFORMATION
+================
+
+Steps to Reproduce and Work Around the Problem:
+
+1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+  The NegotiateMenus property of Form1 is set to True by default.
+
+2. On the Project menu, click Add User Control to add UserControl1 to the
+  project.
+
+3. Add a CommandButton and a CheckBox control to UserControl1.
+
+4. Create a menu with several items and sub items on UserControl1. Set the
+  NegotiatePosition property of each top level menu item to 1-Left.
+
+5. Add the following code to the General Declarations section of UserControl1:
+
+  Option Explicit
+  '
+  '
+  ' Demonstrates how to free menu resources orphaned by a UserControl.
+
+  ' Zero-based array and one-based counter
+  ' of cached UserControl submenus
+
+  Private m_ahMenus() As Long
+  Private m_nMenus As Integer
+
+  Private Declare Function GetMenu Lib "user32" (ByVal hwnd As Long) As Long
+  Private Declare Function GetSubMenu Lib "user32" (ByVal hMenu As Long, _
+     ByVal nPos As Long) As Long
+  Private Declare Function GetMenuItemCount Lib "user32" _
+     (ByVal hMenu As Long) As Long
+  Private Declare Function IsMenu Lib "user32" (ByVal hMenu As Long) As Long
+  Private Declare Function DestroyMenu Lib "user32" (ByVal hMenu As Long) _
+     As Long
+
+  Private Declare Function GetParent Lib "user32" (ByVal hwnd As Long) As Long
+
+  Private Sub UserControl_EnterFocus()
+     ' the UserControl's main menu has been created and has
+     ' replaced the form's main menu before any control on the
+     ' UserControl gains input focus.
+
+     If Check1.Value And (m_nMenus = 0) Then
+        Call LoadMenus(GetMenu(GetParent(UserControl.hwnd))) ' Form1.hwnd))
+        Debug.Print "UserControl submenus loaded: " &amp; m_nMenus
+     End If
+  End Sub
+
+  Private Sub UserControl_ExitFocus()
+     ' the UserControl's main menu has been destroyed, and has
+     ' replaced been by the form's main menu. *But* all submenus
+     ' under UserControl's main menu have not been destroyed.
+
+     If m_nMenus Then
+        Debug.Print "UserControl submenus destroyed: " &amp; DestroyMenus
+     End If
+  End Sub
+
+  Private Sub UserControl_Initialize()
+     Check1.Caption = "Workaround"
+     BorderStyle = 1
+  End Sub
+
+  Private Sub Check1_Click()
+     If (Check1.Value = vbChecked) And (m_nMenus = 0) Then
+        Call LoadMenus(GetMenu(GetParent(UserControl.hwnd)))
+        Debug.Print "UserControl submenus loaded: " &amp; m_nMenus
+     ElseIf (Check1.Value = vbUnchecked) And m_nMenus Then
+        Erase m_ahMenus ' Clear the module level variables
+        m_nMenus = 0
+        Debug.Print "No UserControl submenus will be destroyed"
+     End If
+  End Sub
+
+  ' Pass the UserControl's top level menu on first call
+
+  Private Sub LoadMenus(hMenu As Long)
+     Dim nItems As Integer
+     Dim i As Integer
+     Dim hSubmenu As Long
+     
+     nItems = GetMenuItemCount(hMenu)
+
+     For i = 0 To nItems - 1
+        hSubmenu = GetSubMenu(hMenu, i)
+
+        If IsMenu(hSubmenu) Then
+           ReDim Preserve m_ahMenus(m_nMenus)
+           m_ahMenus(m_nMenus) = hSubmenu
+           m_nMenus = m_nMenus + 1
+        End If
+
+        Call LoadMenus(hSubmenu) ' recurse through sub menu
+     Next
+  End Sub
+
+  Private Function DestroyMenus() As Integer
+     Dim i As Integer
+     Dim n As Integer
+
+     For i = m_nMenus - 1 To 0 Step -1
+        If IsMenu(m_ahMenus(i)) Then
+           ' Will destroy all submenus under the current submenu, toggle the
+           ' For expression comments above to destroy individual submenus.
+           Call DestroyMenu(m_ahMenus(i))
+           n = n + 1
+        End If
+     Next
+
+    ' Clear the mod level variables
+     Erase m_ahMenus
+     m_nMenus = 0
+
+     DestroyMenus = n
+
+  End Function
+
+6. Close all of UserControl1's open windows.
+
+7. Add a CommandButton and a UserControl1 to Form1. UserControl11 is created by
+  default.
+
+8. Add the following code to the General Declarations section of Form1:
+
+  Private Sub Form_Click()
+     Dim i As Integer
+     For i = 1 To 2000
+        UserControl11.SetFocus
+        DoEvents ' IMPORTANT:  Allows SetFocus to complete before proceeding
+        Command1.SetFocus
+        DoEvents
+        Me.Caption = i
+     Next i
+  End Sub
+
+9. Save your project.
+
+10. On Windows 95, Windows 98, or Windows Me, start the Resource Meter. The
+  Windows NT or Windows 2000 Task Manager does not provide the same level of
+  functionality.
+
+11. Run the project, and click on the form. Under Win9x, the Resource Meter
+  shows a steady decline in User and System resources.
+
+12. Click the form again. On most systems, you observe problems with
+  menu-related functionality such as Copy, Paste, and the Start menu. You may
+  also see changes to fonts and icons used by the system.
+
+13. Click the Stop button. You may receive an Out of Memory dialog, which you
+  can dismiss. Terminate the Visual Basic IDE and observe that the resources
+  are released.
+
+14. Restart the Visual Basic IDE. Reload and run your project.
+
+15. Select the checkbox labeled Workaround and click the form. The Resource
+  Meter shows no decline in resources.
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbActiveX kbAPI kbCtrl kbMenu kbSDKWin32 kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix kbbuglist
+Component         : Component
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149746: BUG: Access Violation Calling Exported Subroutine in DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149746: BUG: Access Violation Calling Exported Subroutine in DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149746/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149746/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149746/","publisher":null,"image":null,"headline":"Q149746: BUG: Access Violation Calling Exported Subroutine in DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149746-bug-access-violation-calling-exported-subroutine-in-dll">Q149746: BUG: Access Violation Calling Exported Subroutine in DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149746
+Product(s): Microsoft Fortran Compiler
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbFortranPS kbLangFortrankbbuglist
+Last Modified: 02-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the !MS$ATTRIBUTES DLLEXPORT attribute to export a DLL's
+subroutine, and call that subroutine from another subroutine within the same DLL
+it causes the following Access Violation:
+
+  The instruction at "0x00000000" referenced memory at "0x00000000".
+  The memory could not be "written"
+
+RESOLUTION
+==========
+
+If you need to call an exported subroutine in a DLL, you should put this code
+into a non-exported helper subroutine and have the exported subroutine call the
+non-exported helper subroutine.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Build the DLL using the sub.for file listed below. At the MS-DOS command-line
+  prompt, type:
+
+  " fl32 /LD sub.for" (without the quotation marks)
+
+2. Build the MAIN program using the main.for file listed below, and link it to
+  the DLL static library file created in Step 1. At the same MS-DOS
+  command-line prompt, type:
+
+  " fl32 main.for sub.lib" (without the quotation marks)
+
+Sample Code to Illustrate Problem
+---------------------------------
+
+MAIN
+----
+
+  ! filename: main.for
+  ! Compile options needed: none
+        program fortapp
+          interface
+            subroutine thesub()
+              !ms$attributes dllimport, stdcall :: thesub
+            end subroutine
+          end interface
+     call thesub()
+        end program fortapp
+
+DLL
+---
+
+  ! filename: sub.for
+  ! Compile options needed: /LD
+        subroutine thesub()
+          !ms$attributes dllexport, stdcall :: thesub
+            interface
+              subroutine othersub()
+                !ms$attributes dllexport, stdcall :: othersub
+              end subroutine othersub
+       end interface
+          call othersub()
+        end subroutine
+        subroutine othersub()
+          !ms$attributes dllexport, stdcall :: othersub
+        end subroutine
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

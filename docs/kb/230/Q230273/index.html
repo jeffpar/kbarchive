@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q230273: XWEB: OWA Creates English Special Folders During Logon | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q230273: XWEB: OWA Creates English Special Folders During Logon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/230/Q230273/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/230/Q230273/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/230/Q230273/","publisher":null,"image":null,"headline":"Q230273: XWEB: OWA Creates English Special Folders During Logon","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q230273-xweb-owa-creates-english-special-folders-during-logon">Q230273: XWEB: OWA Creates English Special Folders During Logon</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q230273
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): exc55 EXC55SP3Fix kbExchange550preSP4fix kbExchange550sp4Fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use Microsoft Outlook Web Access to log on to a mailbox for the very
+first time, the following folders are always created in English:
+
+  Calendar, Journal, Tasks, Notes, Contacts
+
+Only the standard Messaging Application Programming Interface (MAPI) folders are
+localized, which are:
+
+  Inbox, Outbox, Sent Items, Deleted Items
+
+CAUSE
+=====
+
+Collaboration Data Objects (CDO) is not able to handle different languages. It
+always uses English as default.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, click the following article number to
+view the article in the Microsoft Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+For additional information on how to download the update for this problem, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q289606 XGEN: Exchange Server 5.5 Post-Service Pack 4 Collaboration Data
+  Objects Fixes Available
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Exchange Server version 5.5
+SP2. This problem was first corrected in Exchange Server 5.5 Service Pack 4.
+
+
+MORE INFORMATION
+================
+
+There is a new registry setting that can be set to select one of the following
+languages:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSExchangeWeb\Parameters
+
+The new value is called: DefaultLCIDForCDO1, type: REG_DWORD
+
+The value for this is the Local ID (LCID) that the Outlook Web Access clients use
+and want their Outlook folder names in. For example, for Japanese Outlook Web
+Access clients, this value should be set to 0x0411. The legal values for this
+are listed below:
+
+  0x0409: //English (US)
+  0x0809: //English (Britain)
+  0x1009: //English (Canada)
+  0x1409: //English (New Zealand)
+  0x0C09: //English (Australia)
+  0x1809: //English (Ireland)
+  0x1C09: //English (South Africa)
+  0x2009: //English (Jamaica)
+  0x2409: //English (Caribbean)
+
+  0x040C: //French (Standard)
+  0x080C: //French (Belgium)
+  0x100C: //French (Switzerland)
+  0x0C0C: //French (Canada)
+  0x140C: //French (Luxembourg)
+
+  0x0407: //German (Standard)
+  0x0807: //German (Switzerland)
+  0x0C07: //German (Austria)
+  0x1007: //German (Luxembourg)
+  0x1407: //German (Liechtenstein)
+
+  0x0411: //Japanese
+
+  0x080A: //Spanish (Mexico)
+  0x040A: //Spanish (Traditional)
+  0x0C0A: //Spanish (Modern)
+
+
+To install the fix, perform the following steps on the computer where Outlook Web
+Access is installed:
+
+1. Stop the Microsoft Internet Information Server (IIS).
+
+2. Replace Cdo.dll under &lt;Winroot&gt;\System32.
+
+3. Add the above registry key and value.
+
+4. Restart IIS.
+
+After that, every client logging on for the first time gets the folder names in
+the language chosen by the registry key.
+
+Additional query words: cdo dll
+
+======================================================================
+Keywords          : exc55 EXC55SP3Fix kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

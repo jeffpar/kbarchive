@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157671: INFO: STL Sample for the advance() Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157671: INFO: STL Sample for the advance() Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157671/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157671/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157671/","publisher":null,"image":null,"headline":"Q157671: INFO: STL Sample for the advance() Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157671-info-stl-sample-for-the-advance-function">Q157671: INFO: STL Sample for the advance() Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157671
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 02-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the advance() STL function in
+Visual C++.
+
+MORE INFORMATION
+================
+
+Because only random access iterators provide + and - operators, the library
+provides two template functions, advance() and distance().
+
+Required Header
+---------------
+
+     &lt;iterator&gt;
+
+Prototype
+---------
+
+     template&lt;class InIt, class Dist&gt;
+
+         void advance(InIt&amp; it, Dist n);
+
+Description
+-----------
+
+The advance function accepts two parameters:
+
+- InIt: The iterator to advance.
+
+- Dist: The number of elements to increment the iterator by.
+
+The advance function advances the iterator n times. If the iterator is a
+random-access iterator type, the function evaluates the expression as
+
+  iterator += n.
+
+Otherwise, it performs each increment by evaluating:
+
+  ++iterator.
+
+If the iterator is an input or forward iterator type, n must not be negative.
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: /GX
+  // 
+  // &lt;filename&gt; :  Advance.cpp
+  // 
+  // Functions:
+  // 
+  //    advance()
+  // 
+  // Written by Linda Koontz
+  // of Microsoft Product Support Services,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  /* Compile options needed: /GX
+  */ 
+  #include &lt;iostream&gt;
+  #include &lt;string&gt;
+  #include &lt;list&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  #pragma warning (disable:4786)
+
+  typedef list&lt;string, allocator&lt;string&gt; &gt; STRLIST;
+
+  void main() {
+      STRLIST List;
+      STRLIST::iterator iList;
+      STRLIST::difference_type dTheDiff;
+
+      List.push_back("A1");
+      List.push_back("B2");
+      List.push_back("C3");
+      List.push_back("D4");
+      List.push_back("E5");
+      List.push_back("F6");
+      List.push_back("G7");
+
+      // Print out the list
+      iList=List.begin();
+      cout &lt;&lt; "The list is: ";
+      for (int i = 0; i &lt; 7 ; i++, iList++)
+          cout &lt;&lt; *iList  &lt;&lt; "  ";
+
+      // Initialize to the first element"
+      iList=List.begin();
+      cout &lt;&lt; "\n\nAdvance to the 3rd element." &lt;&lt; endl;
+      advance(iList,2);
+      cout &lt;&lt; "The element is " &lt;&lt; *iList &lt;&lt; endl;
+      dTheDiff = distance( List.begin(), iList);
+
+  }
+
+Program Output is:
+
+The list is: A1  B2  C3  D4  E5  F6  G7
+
+Advance to the 3rd element.
+
+The element is C3
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample
+
+======================================================================
+Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCNET kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

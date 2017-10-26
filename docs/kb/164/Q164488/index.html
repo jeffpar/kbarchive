@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164488: HOWTO: Registry Settings for the Microsoft DNS Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164488: HOWTO: Registry Settings for the Microsoft DNS Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164488/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164488/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164488/","publisher":null,"image":null,"headline":"Q164488: HOWTO: Registry Settings for the Microsoft DNS Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164488-howto-registry-settings-for-the-microsoft-dns-server">Q164488: HOWTO: Registry Settings for the Microsoft DNS Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164488
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbenv kbnetwork kbSample kbsetup kbASP kbSQLServ kbATM
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+This article describes settings for the Microsoft Domain Name Service (DNS)
+Server. You can modify most settings using the DNSADMIN tool, although some
+settings can only be altered using Registry Editor.
+
+MORE INFORMATION
+================
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+To change these parameters, use the following procedure:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+  \SYSTEM\CurrentControlSet\Services
+
+3. From the Edit menu, click Add Value and add a value to the key described in
+  the appropriate entry below. Type in the value, and using the Data Type
+  checkbox to set the value type.
+
+4. Click OK.
+
+5. Quit Registry Editor.
+
+6. Restart the DNS Server for the above changes to take affect.
+
+All of the DNS parameters are registry values located under subkeys of:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\ 
+Services\DNS\Parameters
+
+NOTE: The previous registry key is one path; it has been wrapped for
+readability.
+
+------------------------------------------------------------------
+
+EnableRegistryBoot
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Boolean&lt;BR/&gt;
+     Default: 0 (False)&lt;BR/&gt;
+     Valid Range: 0,1 (False, True)&lt;BR/&gt;
+     Description: Configure the DNS Server to read information about
+     Zones either from a Bind style boot file or from the Registry.
+&lt;BR/&gt;&lt;BR/&gt;
+     &lt;B&gt;NOTE&lt;/B&gt;: If you return to using a boot file, ALL changes to zone
+     information, including new zones, made through the DNS Manager
+     will be lost.&lt;BR/&gt;
+
+Forwarders
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_BINARY - Binary list of ip addresses.&lt;BR/&gt;
+     Default: none&lt;BR/&gt;
+     Description: IP address(es) of Forwarder(s).&lt;BR/&gt;
+
+ForwardingTimeout
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Time in seconds&lt;BR/&gt;
+     Default: 5&lt;BR/&gt;
+     Description: Timeout in seconds until a forwarded query is
+     regarded as unsuccessful.&lt;BR/&gt;
+
+IsSlave
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Boolean&lt;BR/&gt;
+     Default: 0 (False)&lt;BR/&gt;
+     Valid Range: 0,1 (False, True)&lt;BR/&gt;
+     Description: Configures the DNS Server to be a Slave server.
+     Can only be used when the DNS Server is configured to use
+     Forwarder(s).&lt;BR/&gt;
+
+ListenAddresses
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_BINARY - Binary list of ip addresses.&lt;BR/&gt;
+     Default: none&lt;BR/&gt;
+     Description: The ListenAddresses key is a list of IP
+     addresses for the DNS server to listen on. The list is not
+     dotted IP strings, but a counted array of raw addresses in
+     net byte order. It should be configured through the
+     ServerProperties\Interfaces dialog box in the admin tool.
+     Editing the rekey is discouraged. If the ListenAddresses key
+     does not exist, the DNS server attempts to bind to every IP
+     address on the computer. This is in general desirable
+     behavior.&lt;BR/&gt;
+
+BindSecondaries
+
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Boolean&lt;BR/&gt;
+     Default: 1 Bind compatibility Enabled.&lt;BR/&gt;
+     Valid Range: 0,1 (False, True)&lt;BR/&gt;
+     Description: Disables (old) Bind compatible Zone Transfer.
+     Prior to BIND version 4.9.4, implementations of DNS would send
+     one resource record per message to secondary servers. For this
+     reason, Windows NT defaults to this standard when sending
+     messages to a non-Microsoft secondary DNS Server.
+&lt;BR/&gt;&lt;BR/&gt;
+     If the DNS secondary servers are running BIND version 4.9.4 or
+     later, it will be able to send multiple resource records at a time.&lt;BR/&gt;
+
+CleanupInterval
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Time in seconds&lt;BR/&gt;
+     Default: 900 (15 minutes)&lt;BR/&gt;
+     Valid Range: 600 - 86400 (ten minutes - one day)&lt;BR/&gt;
+     Description: Specifies how often the DNS Server will clean up
+     the database from expired entries. The DNS Server will also verify
+     that it can find root servers at this interval. If no root servers
+     can be found using cached information, the DNS Server will reload
+     the cache file.
+&lt;BR/&gt;&lt;BR/&gt;
+    &lt;B&gt; NOTE&lt;/B&gt;: The DNS Server will normally only update any cached NS and
+     corresponding A entries if current time-to-live (TTL) is less than
+     CleanupInterval. (that is, if the entry risks to be removed from the
+     cache before next CleanupInterval)&lt;BR/&gt;
+
+DisableAutoReverseZones
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Boolean&lt;BR/&gt;
+     Default: 0 (Create AutoreverseZones Enabled.)&lt;BR/&gt;
+     Valid Range: 0,1 (False, True)&lt;BR/&gt;
+     Description: By default, when the DNS Server is started, three zones       are always created (In Memory only). These zones are used for       localhost lookups and they should always exist on the DNS Server.
+&lt;BR/&gt;&lt;BR/&gt;
+        0.in-addr.arpa&lt;BR/&gt;
+        127.in-addr.arpa&lt;BR/&gt;
+        255.in-addr.arpa
+&lt;BR/&gt;&lt;BR/&gt;
+     You should normally never disable this because, if they do not exist,
+     lookup to any of these zones will be sent to a root server.
+&lt;BR/&gt;&lt;BR/&gt;
+     As these zones are only created in memory and not stored in any zone
+     files, if you need to modify the localhost reverse lookup zone, then
+     you need to manually create it. The correct name for that zone is:
+     0.0.127.in-addr.arpa&lt;BR/&gt;
+
+NoRecursion
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Boolean&lt;BR/&gt;
+     Default: 0 (Recursion Enabled.)&lt;BR/&gt;
+     Valid Range: 0,1 (False, True)&lt;BR/&gt;
+     Description: Enables/disables if the DNS Server should do
+     recursive lookups to other DNS Servers.&lt;BR/&gt;
+
+RecursionRetry
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Time in seconds&lt;BR/&gt;
+     Default: 2&lt;BR/&gt;
+     Description: Specifies number of seconds that the DNS Server
+     waits for a recursive query to another DNS Server to return.&lt;BR/&gt;
+
+RecursionTimeout
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Time in seconds&lt;BR/&gt;
+     Default: 15&lt;BR/&gt;
+     Description: Specifies maximum number of seconds that the DNS Server
+     waits before returning an unsuccessful answer to the client.
+&lt;BR/&gt;&lt;BR/&gt;
+     If RecursionTimeout is set to 15 and RecursionRetry is set to 2,
+     then if every query is unsuccessful, the DNS Server will make up
+     to eight queries to other DNS servers before returning an             unsuccessful response to the resolver (client).
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DNS\Zones
+--------------------------------------------------------------
+
+Holds information of every configured zone.
+
+Every zone has a registry key under the Zones key.
+
+There will always be a key with the name ".". This key will either refer to the
+cache file, or if the server is a root server, the zone file for the root
+domain.
+
+The DNS Server loads the cache from this file when started. The DNS Server will
+never respond to a query from the cache file. It is used internally in the DNS
+Server to find root name servers.
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DNS\Zones\(ZoneName)\
+--------------------------------------------------------------------------
+
+DatabaseFile
+
+     Key: DNS\Zones\(ZoneName)\ &lt;BR/&gt;
+     Value Type: REG_SZ - String that holds File name.&lt;BR/&gt;
+     Default: (zone.dns  i.e. microsoft.com -&gt; microsoft.com.dns)&lt;BR/&gt;
+     Description: Name of the database file.
+     The file is stored in Winnt\System32\DNS&lt;BR/&gt;
+
+Type
+
+     Key: DNS\Zones\(ZoneName)\ &lt;BR/&gt;
+     Value Type: REG_DWORD - Number 0-2&lt;BR/&gt;
+     Default:&lt;BR/&gt;
+     Valid Range: 0,1,2&lt;BR/&gt;
+     Description: Type of Zone/Database.&lt;BR/&gt;
+     0=Cache file, 1=Primary Zone, 2=Secondary Zone.
+&lt;BR/&gt;&lt;BR/&gt;
+     &lt;B&gt;NOTE&lt;/B&gt;: If the server is configured as a root server, then the       Type of the Zone file of the "." domain will be set to 1. And the      format of the file has to be the same as any other zone file.
+&lt;BR/&gt;&lt;BR/&gt;
+     &lt;B&gt;NOTE&lt;/B&gt;: A root server does not cache resolved queries. It will      always respond from the zone file.&lt;BR/&gt;
+
+MasterServers
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_BINARY - Binary list of ip addresses.&lt;BR/&gt;
+     Default: none&lt;BR/&gt;
+     Description: IP addresses of Master servers. This entry is only
+     available for secondary zones. The DNS Server will contact
+     servers listed here to request a zone transfer.&lt;BR/&gt;
+
+SecondaryServers
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_BINARY - Binary list of IP addresses.&lt;BR/&gt;
+     Default: none&lt;BR/&gt;
+     Description: IP addresses of secondary servers to be notified
+     about changes to the zone. This list is also used if you
+     configure the DNS Server to only allow specific servers to
+     request a zone transfer (SecureSecondaries).&lt;BR/&gt;
+
+SecureSecondaries
+
+     Key: DNS\Parameters&lt;BR/&gt;
+     Value Type: REG_DWORD - Boolean&lt;BR/&gt;
+     Default: 0&lt;BR/&gt;
+     Valid Range: 0,1 (False, True)&lt;BR/&gt;
+     Description: Allow ONLY in SecondaryServers listed servers
+     to function as secondary servers.(Request ZoneTransfer.)
+
+
+Additional query words: dns
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbnetwork kbSample kbsetup kbASP kbSQLServ kbATM 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

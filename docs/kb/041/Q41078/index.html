@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q41078: Failure to Set Video to Text Mode When Swapping to Environment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q41078: Failure to Set Video to Text Mode When Swapping to Environment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/041/Q41078/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/041/Q41078/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/041/Q41078/","publisher":null,"image":null,"headline":"Q41078: Failure to Set Video to Text Mode When Swapping to Environment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q41078-failure-to-set-video-to-text-mode-when-swapping-to-environment">Q41078: Failure to Set Video to Text Mode When Swapping to Environment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q41078
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist2.00 apnote buglist2.01 s_quickasm | mspl13_c
+Last Modified: 11-OCT-1989
+
+QuickC Version 2.00 and QuickAssembler 2.01 do not run properly
+on some computers equipped with CGA and Olivetti graphics adapters.
+When the display is in a graphics mode when QuickC swaps in the
+integrated environment screen, the video is not set to color text
+mode as it should be. The result is an unreadable graphics screen.
+The QuickC environment is still operable, but movement through
+the menus must be done by memory.
+
+Microsoft has confirmed this to be a problem in Versions 2.00 and
+2.01. There is a patch available that corrects the QC.EXE file in both
+QuickC 2.00 and QuickAssembler so that they properly switch video
+modes when swapping the QuickC screen and the program's output screen.
+
+Please contact Microsoft Product Support Services at (800) 454 2030 to
+obtain this patch.
+
+This problem can be observed in the following three ways:
+
+1. If the display is in a graphics mode when QuickC is invoked, QuickC
+   remains in graphics mode. To work around this problem, use the DOS
+   command MODE CO80 to set your display to text mode prior to invoking
+   QuickC.
+
+2. Use the following program:
+
+      #include &lt;graph.h&gt;
+      void main (void)
+      { _setvideomode (_MRES4COLOR);
+      }
+
+   When the above program is executed within the QuickC environment
+   (with F5) and a key is pressed to return back to QuickC, QuickC
+   remains in graphics mode. The workaround is to add the following
+   line:
+
+      _setvideomode (_DEFAULTMODE);
+
+3. Given the above program, press F8 twice to single step past the
+   _setvideomode function. The video will remain in graphics mode
+   when swapping back to the environment.
+
+   This scenario is the most severe. This prohibits one from debugging
+   a program that uses any graphics mode within the QuickC environment.
+
+This problem has been observed on the following equipment:
+
+   AT&amp;T 6300 (8086, ROM-BIOS Version 1.43, MS-DOS Version 3.30)
+   Compaq Portable (8088, MS-DOS Version 3.30)
+   IBM PS/2 Model 80 (8514 Monitor, MS-DOS 3.30)
+
+The following are videomodes with which this has been observed:
+
+   _MRES4COLOR
+   _HRESBW
+   _ORESCOLOR
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

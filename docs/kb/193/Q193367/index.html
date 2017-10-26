@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193367: FIX: Access Violation in MSVBVM50 When Passing a Variant Array | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193367: FIX: Access Violation in MSVBVM50 When Passing a Variant Array" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193367/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193367/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193367/","publisher":null,"image":null,"headline":"Q193367: FIX: Access Violation in MSVBVM50 When Passing a Variant Array","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193367-fix-access-violation-in-msvbvm50-when-passing-a-variant-array">Q193367: FIX: Access Violation in MSVBVM50 When Passing a Variant Array</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193367
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 01-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When calling a function of an object in an out-of-process server and passing a
+Variant array by reference, you get an access violation as below:
+
+  The instruction at '0x0f0fdbda' referenced memory at '0x0000b1a4'. The
+  memory could not be 'read'.
+
+NOTE: The actual memory address may vary. This error occurs after you apply the
+Service Pack 3 for Visual Basic 5.0
+
+RESOLUTION
+==========
+
+Refer to "Ways to Resolve the Problem" in the MORE INFORMATION section below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Microsoft Visual
+Basic, version 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following steps require MDAC 2.0 to be installed on the machine:
+
+- Download and install MDAC 2.0 from:
+
+  http://www.microsoft.com/data/mdac2.htm
+
+  You only need the minimum setup files.
+
+- Alternatively, you can replace the existing oleaut32.dll with the version
+  shipped with MDAC 2.0 or Visual Basic 6.0 (2.30.4261).
+
+Create the Server
+-----------------
+
+1. Create an ActiveX exe project and rename it ArraySvr.
+
+2. Add the following code to the default class module (Class1):
+
+        Public Function UseArray(ByRef vArray As Variant) As Boolean
+           UseArray = True
+        End Function
+
+        Public Function GetArray() As Variant
+           Dim vReturn As Variant
+           Dim vBstr As Variant
+           ReDim vReturn(1, 0) As Variant
+           vBstr = "Zero,Zero"
+           vReturn(0, 0) = vBstr
+           vBstr = "One,Zero"
+           vReturn(1, 0) = vBstr
+           GetArray = vReturn
+        End Function
+
+3. Compile the server.
+
+Create and Test Client
+----------------------
+
+1. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+
+2. Add two CommandButtons and one Label to Form1.
+
+3. Select References from the Project menu and add a reference to ArraySvr.
+
+4. Add the following code to Form1:
+
+        Private vModule As Variant
+
+        Private Sub Command1_Click()
+           Dim o As ArraySvr.Class1
+           Set o = CreateObject("arraysvr.class1")
+           vModule = o.GetArray
+           Set o = Nothing
+           Command2.Enabled = True
+        End Sub
+
+        Private Sub Command2_Click()
+           Dim o As ArraySvr.Class1
+           Dim vLocal(1, 0) As Variant
+           Dim i As Long
+           Dim bRet As Boolean
+           For i = LBound(vModule, 1) To UBound(vModule, 1)
+              vLocal(i, 0) = vModule(i, 0)
+              Label1.Caption = vLocal(i, 0)
+              Set o = CreateObject("arraysvr.class1")
+              bRet = o.UseArray(vLocal)
+           Next i
+           Set o = Nothing
+        End Sub
+
+        Private Sub Form_Load()
+           Command2.Enabled = False
+        End Sub
+
+5. Press the F5 key to run the client.
+
+6. When you press Command1 and then Command2, you should see Label1 display
+  "One,Zero."
+
+7. Compile the project into Native code.
+
+8. Run the compiled exe. When you press Command1 and then Command2, you get a
+  message as shown below:
+
+  The instruction at '0x0f0fdbda' referenced memory at '0x0000b1a4'.
+  The memory could not be 'read'.
+
+Ways to Solve Problem
+---------------------
+
+There are two ways to resolve this problem. You can either compile in P- code or
+use a temporary Variant variable for the argument as shown in the modified code
+below:
+
+     Private Sub Command2_Click()
+        Dim o As ArraySvr.Class1
+        Dim vLocal(1, 0) As Variant
+        Dim i As Long
+        Dim bRet As Boolean
+        Dim vTmp as Variant    'temporary variable for passing argument
+
+        For i = LBound(vModule, 1) To UBound(vModule, 1)
+           vLocal(i, 0) = vModule(i, 0)
+           Label1.Caption = vLocal(i, 0)
+           vTmp = vLocal
+           Set o = CreateObject("arraysvr.class1")
+           'instead of passing vLocal directly, we pass vTmp
+           bRet = o.UseArray(vTmp)
+        Next i
+        Set o = Nothing
+     End Sub
+
+Additional query words: kbdss kbDSupport kbVBp Access Violation MDAC 2.0 kbMDAC200 kbCompiler kbVBp500bug kbVBp600fix
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

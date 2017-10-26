@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140296: How to Use a KeyPress Event in Lieu of ON KEY LABEL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140296: How to Use a KeyPress Event in Lieu of ON KEY LABEL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140296/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140296/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140296/","publisher":null,"image":null,"headline":"Q140296: How to Use a KeyPress Event in Lieu of ON KEY LABEL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140296-how-to-use-a-keypress-event-in-lieu-of-on-key-label">Q140296: How to Use a KeyPress Event in Lieu of ON KEY LABEL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140296
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 17-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many developers use ON KEY LABEL to assign programs or procedures within
+programs that are to be executed upon pressing a specific key (usually a
+function key). However, if the ON KEY LABEL assignment is to be specific to a
+control within a form, a better alternative would be to use the KeyPress event
+of that control.
+
+MORE INFORMATION
+================
+
+The KeyPress event is available for the following form controls:
+
+  CheckBox, ComboBox, CommandButton, EditBox, Form, ListBox, OptionButton,
+  Spinner, TextBox
+
+It is possible to use this event to check for the press of a specific key. When
+using the KeyPress event to perform an action based on a function key, the
+function key's value should be used as shown in this table:
+
+  Key     Alone   Shift    Ctrl    Alt
+  ------------------------------------
+  F1        28      84      94     104
+  F2        -1      85      95     105
+  F3        -2      86      96     106
+  F4        -3      87      97     107
+  F5        -4      88      98     108
+  F6        -5      89      99     109
+  F7        -6      90     100     110
+  F8        -7      91     101     111
+  F9        -8      92     102     112
+  F10       -9      93     103     113
+  F11      133     135     137     139
+  F12      134     136     138     140
+
+
+
+For more information on key values, refer to the INKEY() function in Visual
+FoxPro Help file.
+
+Step-by-Step Example
+--------------------
+
+The following steps show how to use the KeyPress event.
+
+1. Create a form, and place a text box on it.
+
+2. In the ControlSource property of the text box, type mykey (or any other
+  variable that you might prefer).
+
+3. Place the following code in the KeyPress event of the text box:
+
+     LPARAMETERS nKeyCode, nShiftAltCtrl
+     *: The previous line of code is already contained in the KeyPress event
+     *: by default.
+     DO CASE
+
+        CASE nKeyCode = 28
+           WAIT WINDOW "The F1 Key has been pressed" NOWAIT
+           mykey = "F1 Key"
+           ThisForm.Refresh
+
+        CASE nKeyCode = -4
+           WAIT WINDOW "The F5 Key has been pressed" NOWAIT
+           mykey = "F5 Key"
+           ThisForm.Refresh
+
+     ENDCASE
+
+4. Place the following code in the Load event of the form:
+
+     CLEAR MACROS
+     SET HELP OFF
+     *: This will disable FoxPro's default function key assignments.
+
+5. Place the following code in the Destroy event of the form:
+
+     RESTORE MACROS
+     SET HELP ON
+     *: This will restore FoxPro's default function key assignments.
+
+6. Place a command button on the form, and place the following code in its click
+  event:
+
+     ThisForm.Release
+
+7. Save and run the form. If either the F1 or F5 key is pressed, the appropriate
+  WAIT WINDOW messages should appear, and the text box should be updated.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

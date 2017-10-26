@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141840: Ml3xec16.exe Causes GP Fault in Microsoft Exchange | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141840: Ml3xec16.exe Causes GP Fault in Microsoft Exchange" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141840/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141840/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141840/","publisher":null,"image":null,"headline":"Q141840: Ml3xec16.exe Causes GP Fault in Microsoft Exchange","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141840-ml3xec16exe-causes-gp-fault-in-microsoft-exchange">Q141840: Ml3xec16.exe Causes GP Fault in Microsoft Exchange</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141840
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 01-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Microsoft Exchange, you may receive the following error
+message
+
+  Ml3xec16.exe caused a General Protection Fault in &lt;file name&gt;
+
+where &lt;file name&gt; may be User.exe, Kernel32.dll, or a .dll file.
+
+CAUSE
+=====
+
+This error can occur if a 16-bit .dll file that is being called from one of the
+following files is damaged or is using an old, undocumented, extended MAPI call
+that is not supported:
+
+- Msmail.ini
+
+- Msmail32.ini
+
+- Shared.ini
+
+- Shared32.ini
+
+- Exchng32.ini
+
+RESOLUTION
+==========
+
+Rename the Msmail.ini, Msmail32.ini, Shared.ini, Shared32.ini, and Exchng32.ini
+files to prevent the error from occurring. Then, rename the files one at a time
+to their original names to determine which file is calling the .dll file. You
+can determine which .dll file is causing the error by not loading any of the
+.dll files and then adding them one by one until the error occurs.
+
+MORE INFORMATION
+================
+
+The Shared.ini and Shared32.ini files are located on network shares and are
+pointed to in the Msmail.ini and Msmail32.ini files. For example:
+
+  sharedextensionsdir=\\uncname
+
+If the Shared32.ini file exists in the same directory as the Shared.ini file,
+only the Shared32.ini file is used.
+
+The following .dll files are known to cause problems and are not loaded by
+Microsoft Exchange:
+
+  Attmail.dll
+  Bcc.dll
+  Confcore.dll
+  Confplus.dll
+  Cssmdel.dll
+  Emptyw32.dll
+  Emptywb.dll
+  Faxopt.dll
+  Impexp.dll
+  Impexp32.dll
+  Msrmt.dll
+  Msrmtui.dll
+  Pabchk.dll
+  Pablist.dll
+  Pabsync.dll
+  Rename.dll
+  Schedmsg.dll
+  Schmsg32.dll
+  Wgpomg32.dll
+  Wgpomgr.dll
+  Wrdriver.dll
+
+Additional query words: mi3xec16 m13xec16 gpf
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

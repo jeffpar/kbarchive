@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q294774: ISAPI Extension In-Process w/ Application Marked High Isolation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q294774: ISAPI Extension In-Process w/ Application Marked High Isolation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/294/Q294774/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/294/Q294774/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/294/Q294774/","publisher":null,"image":null,"headline":"Q294774: ISAPI Extension In-Process w/ Application Marked High Isolation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q294774-isapi-extension-in-process-w-application-marked-high-isolation">Q294774: ISAPI Extension In-Process w/ Application Marked High Isolation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q294774
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbSecurity kbCOMIS kbWin2000PreSP3Fix KbSECVulnerability KbSECHack kbWin2000sp3fix
+Last Modified: 15-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an ISAPI DLL has the same name as a DLL that is listed in the
+InProcessIsapiApps metabase entry, Internet Information Services (IIS) loads the
+ISAPI extension in-process even when the Application is marked for High
+Isolation.
+
+CAUSE
+=====
+
+When IIS reads the list of InProcessIsapiApps from the metabase, it makes two
+copies of each entry: one copy of the entire path and one copy of only the DLL.
+This allows for relative path matching.
+
+RESOLUTION
+==========
+
+To resolve this problem, either obtain the hotfix referenced in this section or
+Windows 2000 Security Rollup Package 1 (SRP1). For additional information about
+SRP1, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q311401 Windows 2000 Security Rollup Package 1 (SRP1), January 2002
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The following file is available for download from the Microsoft Download Center:
+
+  DownloadDownload Q301625_W2K_SP3_x86_en.exe now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=32011)
+
+NOTE: This patch can be installed on systems running Windows 2000 Service Pack 1
+or Windows 2000 Service Pack 2. You must reapply the security rollup patch after
+you install a Windows 2000 Service Pack.
+
+Release Date: August 15, 2001
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date        Time   Version        Size     File name
+  ----------------------------------------------------
+  31-May-2001 15:32  5.0.2195.3649  353,040  W3svc.dll
+
+
+STATUS
+======
+
+Microsoft has confirmed that this problem may cause a degree of security
+vulnerability in Internet Information Services 5.0. This problem was first
+corrected in Windows 2000 Service Pack 3.
+
+MORE INFORMATION
+================
+
+This patch also contains fixes for the problems described in the following
+Microsoft Knowledge Base article:
+
+  Q297860 IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 Patch Rollup
+
+For more information on this vulnerability, see the following Microsoft Web
+site:
+
+  http://www.microsoft.com/technet/security/bulletin/ms01-044.asp
+
+For additional information about how to obtain a hotfix for Windows 2000
+Datacenter Server, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q265173 The Datacenter Program and Windows 2000 Datacenter Server Product
+
+For additional information about how to install multiple hotfixes with only one
+reboot, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+
+Additional query words: kbIISCom security_patch kbWin2000srp1
+
+======================================================================
+Keywords          : kbSecurity kbCOMIS kbWin2000PreSP3Fix KbSECVulnerability KbSECHack kbWin2000sp3fix 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

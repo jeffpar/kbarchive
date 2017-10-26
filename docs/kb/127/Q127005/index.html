@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127005: PRB: UP/DOWN Arrow Keys Call Click Event in Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127005: PRB: UP/DOWN Arrow Keys Call Click Event in Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127005/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127005/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127005/","publisher":null,"image":null,"headline":"Q127005: PRB: UP/DOWN Arrow Keys Call Click Event in Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127005-prb-updown-arrow-keys-call-click-event-in-form">Q127005: PRB: UP/DOWN Arrow Keys Call Click Event in Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127005
+Product(s): Microsoft FoxPro
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Pressing the UP or DOWN arrow in a list box triggers the Click event.
+
+CAUSE
+=====
+
+This behavior is by design. When the arrow keys are pressed to navigate through
+a list, the value associated with the list is modified. This triggers the Click
+event.
+
+RESOLUTION
+==========
+
+If you do not want to execute the code in the Click event handler, you can
+verify the value of the last keypress when the Click event is triggered. If the
+LASTKEY() function returns the value of the UP or DOWN arrow keys, issue a
+RETURN in your routine.
+
+MORE INFORMATION
+================
+
+The Click event handler routine is also executed in the following scenarios:
+
+- When the Spacebar is pressed on a command button, check box, or option
+  button.
+
+- When the Enter key is pressed on a command button, check box, text box, or
+  option button.
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following code will demonstrate that the Click event is triggered when the UP
+or DOWN arrows are pressed in a list box. It also illustrates the alternative of
+verifying the value of the last key pressed.
+
+     ofrm1 = CREATEOBJECT('frm1')
+     ofrm1.show
+     READ EVENTS
+
+     ***********************
+     ** Class definitions **
+     ***********************
+
+     DEFINE CLASS frm1 AS form
+        ScaleMode=3
+        ADD OBJECT lsttest AS lstclick
+        ADD OBJECT cmdtest AS cmdquit
+        Caption = "Press the Up and Down Arrow keys"
+     ENDDEFINE
+
+     DEFINE CLASS lstclick AS listbox
+     * Defines a list with hard coded values
+
+        RowSourceType = 1    &amp;&amp; Value
+        RowSource = "1,2,3"  &amp;&amp; List of numbers to be displayed
+        Height = 85
+        Left = 84
+        Top = 60
+
+        PROCEDURE Click
+        IF LASTKEY()= 5  OR LASTKEY()=24 &amp;&amp;Traps for the Up or Down arrow
+          RETURN .T.
+        ELSE
+          WAIT WINDOW "Click has been pressed in the list box"
+        ENDIF
+        ENDPROC
+     ENDDEFINE
+
+     * Define a Quit command button that releases the form
+     DEFINE CLASS cmdquit AS Commandbutton
+        Top=150
+        Left=84
+        Caption= "Quit"
+
+        PROCEDURE click
+        RELEASE Thisform
+        CLEAR EVENTS
+        ENDPROC
+     ENDDEFINE
+
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

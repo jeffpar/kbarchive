@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q51865: /Zp4 Does Not Work with Standard Stream Handles | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q51865: /Zp4 Does Not Work with Standard Stream Handles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/051/Q51865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/051/Q51865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/051/Q51865/","publisher":null,"image":null,"headline":"Q51865: /Zp4 Does Not Work with Standard Stream Handles","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q51865-zp4-does-not-work-with-standard-stream-handles">Q51865: /Zp4 Does Not Work with Standard Stream Handles</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q51865
+Product(s): See article
+Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | S_QUICKC buglist5.10 buglist6.00 buglist6.00a | mspl13_c
+Last Modified: 15-JAN-1991
+
+The Microsoft C compiler option /Zp4 (pack structures to four bytes)
+does not work correctly with the standard stream handles (stdin,
+stdout, stdaux, stderr, stdprn) when compiled under the large model.
+This happens with all optimizing compiler versions up to and including
+C 6.00a and QuickC compiler versions 2.00, 2.01, 2.50, and 2.51.
+
+To work around this problem, compile the STDIO.H header file with
+packing set to 1 or 2 bytes. This can be done with the #pragma pack(2)
+just before the #include &lt;stdio.h&gt;. After the include file is
+compiled, packing can be set back to 4 bytes with #pragma pack(4).
+Using this method allows for normal use of the standard devices.
+
+The following program will compile with /Zp4 /AL and run successfully:
+
+#pragma pack(2)
+#include &lt;stdio.h&gt;
+#pragma pack(4)
+
+#include &lt;conio.h&gt;
+
+void main(void)
+{
+  fprintf(stderr,"U1001: Syntax Error\n");
+  getch();
+}
+
+The reason STDIO.H must be compiled with packing set to 1 or 2 bytes
+is quite simple. The structure FILE is declared inside STDIO.H, but
+storage for the streams is not allocated. The stdin...stderr streams
+are assigned to an external array of stream file handles that were
+previously compiled inside the combined library with /Zp2 (the
+default). It becomes a simple case of linking two objects with
+different packing options.
+
+Microsoft has confirmed this to be a problem with C versions 5.10,
+6.00, and 6.00a; and QuickC versions 2.00, 2.01, 2.50, and 2.51
+(buglist2.00, buglist2.01, buglist2.50, and buglist2.51). We are
+researching this problem and will post new information here as it
+becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

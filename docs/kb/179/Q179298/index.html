@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179298: PRB: Null RuleExpression, RuleText, and Default View Properties | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179298: PRB: Null RuleExpression, RuleText, and Default View Properties" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179298/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179298/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179298/","publisher":null,"image":null,"headline":"Q179298: PRB: Null RuleExpression, RuleText, and Default View Properties","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179298-prb-null-ruleexpression-ruletext-and-default-view-properties">Q179298: PRB: Null RuleExpression, RuleText, and Default View Properties</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179298
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfp
+Last Modified: 11-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message is returned when you attempt to use a view:
+
+  Error reading a property from the database. The property is ignored.
+
+CAUSE
+=====
+
+Setting the RuleExpression, RuleText, and/or the Default property of a view
+field to an illegal value causes this behavior. Examples of illegal values
+include the null string ("") or setting a RuleExpression property to a text
+string, such as "This field cannot be empty."
+
+RESOLUTION
+==========
+
+In order to prevent the error message from appearing it is necessary to re-
+create the view with valid field properties.
+
+The following code re-creates a view from the view definition stored in the
+database container:
+
+     PARAMETER viewname
+     thisversion=VERSION()
+     IF LEFT(ALLTRIM(thisversion),6)="Visual"
+        thisversion=VAL(SUBSTR(thisversion,15,2))
+     ELSE
+        thisversion=0
+     ENDIF
+     SET EXCLUSIVE ON
+     SET MULTILOCKS ON
+     DECLARE viewprops[1,5]
+     OPEN DATABASE home()+"\SAMPLES\DATA\TESTDATA" EXCL
+     sql_statement=DBGETPROP(viewname,"VIEW","SQL")
+     llsendupdates=DBGETPROP(viewname,'View','SendUpdates')
+     lnupdatetype=DBGETPROP(viewname,'View','UpdateType')
+     lnwheretype=DBGETPROP(viewname,'View','WhereType')
+     lnbatchupdatecount=DBGETPROP(viewname,'View','BatchUpdateCount')
+     lnusememosize=DBGETPROP(viewname,'View','UseMemoSize')
+     lnfetchsize=DBGETPROP(viewname,'View','FetchSize')
+     llfetchmemo=DBGETPROP(viewname,'View','FetchMemo')
+     lnmaxrecords=DBGETPROP(viewname,'View','MaxRecords')
+     lctables=DBGETPROP(viewname,'View','Tables')
+     lccomment=DBGETPROP(viewname,'View','Comment')
+     IF thisversion&gt;=5
+        llprepared=DBGETPROP(viewname,'View','Prepared')
+        llcomparememo=DBGETPROP(viewname,'View','CompareMemo')
+        llfetchasneeded=DBGETPROP(viewname,'View','FetchAsNeeded')
+     ENDIF
+     USE &amp;viewname
+     =AFIELDS(viewflds,viewname)
+     USE
+     FOR i=1 TO ALEN(viewflds,1)
+        DIMENSION viewprops[i,5]
+        fld_name=viewflds[i,1]
+        viewfield=ALLTRIM(viewname)+"."+ALLTRIM(fld_name)
+        viewprops[i,1]=DBGETPROP(viewfield,'Field','KeyField')
+        viewprops[i,2]=DBGETPROP(viewfield,'Field','Updatable')
+        viewprops[i,3]=DBGETPROP(viewfield,'Field','UpdateName')
+        viewprops[i,4]=DBGETPROP(viewfield,'Field','DataType')
+        viewprops[i,5]=DBGETPROP(viewfield,'Field','Caption')
+     NEXT
+     DELETE VIEW &amp;viewname
+     CREATE SQL VIEW &amp;viewname AS &amp;sql_statement
+     =DBSETPROP(viewname,'View','SendUpdates',llsendupdates)
+     =DBSETPROP(viewname,'View','UpdateType',lnupdatetype)
+     =DBSETPROP(viewname,'View','WhereType',lnwheretype)
+     =DBSETPROP(viewname,'View','BatchUpdateCount',lnbatchupdatecount)
+     =DBSETPROP(viewname,'View','UseMemoSize',lnusememosize)
+     =DBSETPROP(viewname,'View','FetchSize',lnfetchsize)
+     =DBSETPROP(viewname,'View','FetchMemo',llfetchmemo)
+     =DBSETPROP(viewname,'View','MaxRecords',lnmaxrecords)
+     =DBSETPROP(viewname,'View','Tables',lctables)
+     =DBSETPROP(viewname,'View','Comment',lccomment)
+     IF thisversion&gt;=5
+        =DBSETPROP(viewname,'View','Prepared',llprepared)
+        =DBSETPROP(viewname,'View','CompareMemo',llcomparememo)
+        =DBSETPROP(viewname,'View','FetchAsNeeded',llfetchasneeded)
+     ENDIF
+     FOR i=1 TO ALEN(viewflds,1)
+        fld_name=viewflds[i,1]
+        viewfield=ALLTRIM(viewname)+"."+ALLTRIM(fld_name)
+        =DBSETPROP(viewfield,'Field','KeyField',viewprops[i,1])
+        =DBSETPROP(viewfield,'Field','Updatable',viewprops[i,2])
+        =DBSETPROP(viewfield,'Field','UpdateName',viewprops[i,3])
+        =DBSETPROP(viewfield,'Field','DataType',viewprops[i,4])
+        =DBSETPROP(viewfield,'Field','Caption',viewprops[i,5])
+     NEXT
+     RETURN
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+When a view is created, the default value for the RuleExpression, RuleText, and
+Default field properties is a null string.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program called Bogus.prg with the following code:
+
+        OPEN DATABASE home()+"\SAMPLES\DATA\TESTDATA"
+        CREATE SQL VIEW customerview ;
+           AS SELECT DISTINCT cust_id, company, contact ;
+           FROM testdata!customer ;
+           ORDER BY customer.cust_id
+        =DBSETPROP('CUSTOMERVIEW.Cust_id','Field','RuleExpression', ;
+           'len(alltrim(cust_id))&gt;0') &amp;&amp; Fails with null.
+        =DBSETPROP('CUSTOMERVIEW.Cust_id','Field','RuleText', ;
+           "this field cannot be empty") &amp;&amp; Fails either way.
+        =DBSETPROP('CUSTOMERVIEW.Cust_id','Field','Default', ;
+           "alltrim(str(reccount()+1))") &amp;&amp; Fails with null.
+        =DBSETPROP('customerview.Company','Field','RuleExpression', ;
+           'company&lt;&gt;0') &amp;&amp; Fails with null.
+        =DBSETPROP('customerview.Company','Field','RuleText', ;
+           "it cannot be empty")
+        =DBSETPROP('customerview.Company','Field','Default', ;
+           'reccount()+1') &amp;&amp; Fails with null.
+        USE CUSTOMERVIEW
+        BROWSE
+
+2. In the FoxPro Command window type "DO Bogus".
+
+  When the program runs and the view is used, the following error message is
+  displayed twice:
+
+  Error reading a property from the database. The property is ignored.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194573: BUG: Grid Shows Only Two Added Records When Buffering/Order Set | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194573: BUG: Grid Shows Only Two Added Records When Buffering/Order Set" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194573/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194573/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194573/","publisher":null,"image":null,"headline":"Q194573: BUG: Grid Shows Only Two Added Records When Buffering/Order Set","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194573-bug-grid-shows-only-two-added-records-when-bufferingorder-set">Q194573: BUG: Grid Shows Only Two Added Records When Buffering/Order Set</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194573
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp600bug
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have a grid with its RecordSource property set to a table with buffering
+enabled and an order set. If you add more than two records to the table, the
+records do not display in the grid until the grid gets focus.
+
+RESOLUTION
+==========
+
+Issue one of the following commands after adding the record:
+
+     GO BOTTOM
+
+-or-
+
+     THISFORM.grid1.SCROLLBARS = THISFORM.grid1.SCROLLBARS
+
+Note that the second command requires modification depending on the exact
+location of the grid in the object hierarchy.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.PRG) file:
+
+        CREATE TABLE junk (f1 c(8))
+        INDEX ON f1 TAG f1
+        SET MULTILOCKS ON
+        =CURSORSETPROP('buff', 5)   &amp;&amp; anything &gt; 1
+
+        PUBLIC oform
+        oform = CREATEOBJECT('form1')
+        oform.SHOW()
+
+        DEFINE CLASS form1 AS FORM
+           AUTOCENTER = .T.
+           HEIGHT = 315
+           WIDTH = 415
+           CAPTION = "Form1"
+
+           ADD OBJECT grid1 AS GRID WITH ;
+              LEFT = 26, ;
+              RECORDSOURCE = "junk", ;
+              RECORDSOURCETYPE = 1, ;
+              TOP = 19
+
+           ADD OBJECT command1 AS COMMANDBUTTON WITH ;
+              TOP = 252, ;
+              LEFT = 156, ;
+              HEIGHT = 27, ;
+              WIDTH = 84, ;
+              CAPTION = "Add Record"
+
+           PROCEDURE UNLOAD
+              =TABLEREVERT(.T.)
+              USE IN junk
+           ENDPROC
+
+           PROCEDURE command1.CLICK
+              INSERT INTO junk VALUES (SYS(3))
+
+              * The following GO BOTTOM command will cause the records
+              *    to appear
+              * GO BOTTOM
+
+              * Setting the value of the  grid ScrollBars property to itself
+              *    will also cause the records to appear
+              * THISFORM.grid1.SCROLLBARS = THISFORM.grid1.SCROLLBARS
+              THISFORM.REFRESH()
+           ENDPROC
+
+        ENDDEFINE
+
+2. Click the Add Record button several times.
+
+  The first two added records show, the third and subsequent records do not.
+  Clicking in the grid to place the focus in the grid will allow all the
+  records to be displayed.
+
+  To demonstrate the workaround, you may uncomment either the GO BOTTOM command
+  or the ThisForm.Grid1.scrollbars = ThisForm.Grid1.scrollbars command. This
+  will cause all the records to be displayed.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation
+
+
+Additional query words: kbDSupport KBDSE kbVFP600bug kbVFp300bbug kbVFp500abug kbVFp600bug kbNoKeyWord
+
+======================================================================
+Keywords          : kbvfp600bug 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

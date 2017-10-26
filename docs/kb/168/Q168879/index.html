@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168879: INF: Driver Manager Trace Facility Logs User Names and Password | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168879: INF: Driver Manager Trace Facility Logs User Names and Password" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168879/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168879/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168879/","publisher":null,"image":null,"headline":"Q168879: INF: Driver Manager Trace Facility Logs User Names and Password","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168879-inf-driver-manager-trace-facility-logs-user-names-and--password">Q168879: INF: Driver Manager Trace Facility Logs User Names and  Password</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168879
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbinterop kbusage
+Last Modified: 27-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If you use the ODBC 3.0 Driver Manager trace facility with the Odbctrac.dll file
+that comes with ODBC 3.0, user names and passwords used for connections may be
+logged without encryption in the trace log.
+
+WORKAROUND
+==========
+
+You can prevent an ODBC 3.0 Driver Manager trace on computers either by removing
+the Odbctrac.dll file or by replacing it with a zero-length file of the same
+name. If tracing is attempted afterwards, the following message may appear:
+
+  General Error: either odbctrac.dll is not an ODBC tracing dll or it is
+  obsolete.
+
+With ODBC version 3.0 Service Pack 1, the user names and passwords are displayed
+as "******" in the trace log. Also, the trace DLL must be in the System
+directory on computers running Windows 95 or the System32 directory on computers
+running Windows NT. If the trace DLL is located elsewhere, tracing will not
+occur, and the message described above may appear.
+
+MORE INFORMATION
+================
+
+The ODBC 3.0 Driver Manager trace facility is provided as a debugging tool for
+diagnosing a wide range of ODBC issues, including database connectivity. In many
+debugging instances, it is necessary to determine what user name and password
+were used to establish the connection to the database. The ODBC 3.0 Driver
+Manager trace logs the user name and password to allow for comprehensive
+debugging of ODBC issues, and is the ODBC 3.0 replacement for the Driver Manager
+trace facility and ODBC SPY trace program for ODBC 2.x. The ODBC SPY trace
+program also logs the user name and password used in a connection.
+
+The proper use of the ODBC 3.0 tracing facility is documented in the ODBC 3.0
+Programmer's Reference Guide in Chapter 17, "Programming Considerations," under
+the section for Tracing.
+
+You can find additional information on ODBC security at:
+
+  http://www.microsoft.com/odbc/
+
+
+Additional query words: utility
+
+======================================================================
+Keywords          : kbinterop kbusage 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

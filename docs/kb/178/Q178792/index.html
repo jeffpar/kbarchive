@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178792: Tutor: Error Message: Unable to Initialize Direct Draw | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178792: Tutor: Error Message: Unable to Initialize Direct Draw" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178792/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178792/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178792/","publisher":null,"image":null,"headline":"Q178792: Tutor: Error Message: Unable to Initialize Direct Draw","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178792-tutor-error-message-unable-to-initialize-direct-draw">Q178792: Tutor: Error Message: Unable to Initialize Direct Draw</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178792
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbdisplay kbenv kberrmsgkbfaq
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft My Personal Tutor: Preschool Workshop, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start My Personal Tutor: Preschool Workshop, you may receive
+the following error message:
+
+  Unable to initialize Direct Draw. Try running setup again. If the problem
+  persists, you may need to contact your display card manufacturer for new
+  display drivers. Workshop will now exit.
+
+
+CAUSE
+=====
+
+You can receive this error message for one or more of the following reasons:
+
+- Incorrect or mismatched versions of the DirectDraw .dll files are installed.
+
+- Your video driver is incompatible with your video adapter.
+
+- The display settings in Microsoft Windows 95 are incorrect.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the troubleshooting sections below. After you
+complete the steps in each section, test My Personal Tutor: Preschool Workshop
+to determine if the issue is resolved.
+
+NOTE: Incorrect or mismatched versions of the DirectDraw .dll files is the most
+common cause of this error message. Try the "Remove and Then Reinstall the
+DirectDraw .dll Files" troubleshooting section first; if it does not resolve the
+issue, proceed to the troubleshooting sections later in this article.
+
+Remove and Then Reinstall the DirectDraw .dll Files
+---------------------------------------------------
+
+To remove and reinstall the DirectDraw .dll files, follow these steps:
+
+1. Click Start, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "ddraw.dll, ddraw16.dll, ddhelp.exe" (without the
+  quotation marks), and then press ENTER.
+
+3. On the Edit menu, click Select All.
+
+4. Press the DELETE key. If you are prompted to confirm the file deletion, click
+  Yes.
+
+5. Restart your computer, and then reinstall My Personal Tutor: Preschool
+  Workshop.
+
+Check Your Windows 95 Display Settings
+--------------------------------------
+
+Change your display resolution to 640 x 480 and your color display setting to 256
+colors. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. In the Color Palette box, click 256 Color.
+
+5. Move the Desktop Area slider all the way to the left. ("640 x 480 pixels" is
+  displayed under the slider.)
+
+6. Click OK.
+
+7. Click Yes if you are prompted to restart your computer. If your settings did
+  not change, you do not need to restart your computer.
+
+Reduce the Graphics Hardware Acceleration
+-----------------------------------------
+
+To reduce the graphics hardware acceleration, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Performance tab, and then click Graphics.
+
+4. Move the Hardware Acceleration slider until it is one notch to the right of
+  None (the Basic acceleration setting).
+
+5. Click OK, and then click OK.
+
+6. Click Yes to restart the computer.
+
+Install the VGA Video Driver and Then Install Your Original Video Driver
+------------------------------------------------------------------------
+
+To install the standard VGA video driver, and then install your original video
+driver, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab, and then click Change Display Type.
+
+  NOTE: If you are using Microsoft Windows 95 OEM Service Release 2 (OSR2),
+  click Advanced Properties.
+
+4. Click Change next to the Adapter Type box.
+
+  NOTE: If you are using OSR2, click Change on the Adapter tab.
+
+5. Click Show All Devices.
+
+6. In the Manufacturers box, click Standard Display Types.
+
+7. In the Models box, click Standard Display Adapter (VGA), and then click OK.
+
+8. Click Close, and then click Close.
+
+9. Click Yes to restart the computer.
+
+10. When Windows 95 starts, reinstall your original video driver from the CD-ROM
+  or floppy disk provided by your computer manufacturer, or contact your video
+  adapter manufacturer to obtain the latest video driver available for your
+  video adapter.
+
+  For additional information about how to install a video driver in Windows 95,
+  please see the following article in the Microsoft Knowledge Base:
+
+  Q131806 Windows 95/98: How to Install or Change a Display Driver
+
+Additional query words: 1.00 MPT kids mskids
+
+======================================================================
+Keywords          : kbdisplay kbenv kberrmsg kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbMPTPreschool
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

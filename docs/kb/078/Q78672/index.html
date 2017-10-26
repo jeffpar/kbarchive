@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q78672: Computers That Do Not Maintain Date/Time with MS-DOS 5 or 6 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q78672: Computers That Do Not Maintain Date/Time with MS-DOS 5 or 6" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/078/Q78672/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/078/Q78672/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/078/Q78672/","publisher":null,"image":null,"headline":"Q78672: Computers That Do Not Maintain Date/Time with MS-DOS 5 or 6","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q78672-computers-that-do-not-maintain-datetime-with-ms-dos-5-or-6">Q78672: Computers That Do Not Maintain Date/Time with MS-DOS 5 or 6</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q78672
+Product(s): Microsoft Disk Operating System
+Version(s): 5.0,5.0a,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When upgrading some MS-DOS versions (primarily original equipment manufacturer
+[OEM] versions) to MS-DOS 5.0, 6.0, or 6.2 the time and date are no longer
+maintained when the computer is rebooted.
+
+CAUSE
+=====
+
+The CMOS (complementary metal oxide semiconductor) chip was introduced as a
+standard for storing hardware information (including time and date) with
+AT-class machines. When XT machines were introduced, there was no standard for
+saving/accessing the date and time information. Computer manufacturers (OEMs)
+often added hardware to store and maintain the date and time settings. To then
+access this hardware, those OEMs had to modify MS-DOS. Thus, when the upgrade to
+MS-DOS 5.0, 6.0, or 6.2 is made, the modifications are overwritten and the time
+and date are no longer accessible.
+
+WORKAROUND
+==========
+
+Some OEMs have developed device drivers and hardware for their machines that
+allow the time and date to function properly, but others do not support time and
+date in MS-DOS 5.0, 6.0 and 6.2.
+
+The following is a list of computers that have been found to lose the date and/or
+time when booting with MS-DOS 5.0, 6.0, and 6.2. The Workaround column lists
+device drivers/cards that may be used to work around this limitation.
+
+Computer,
+Manufacturer's Phone       Workaround
+--------------------       ----------
+
+8088 Sperry Model 20       Not supported with MS-DOS 5.0, 6.0, or 6.2
+(800) 448-1424
+
+AT&amp;T 6300                  ATTCLOCK.SYS
+(908) 769-6397
+
+AT&amp;T 6300 WGS              ATTCLOCK.SYS
+(908) 769-6397
+
+Canon A200 (8088)          Not supported with MS-DOS 5.0, 6.0, or 6.2
+(800) 423-2366
+
+Hyundai XT                 RTCCLK.SYS
+Model 16T,16E,16X
+Contact dealer
+
+Leading Edge Model D       CLKDVR.SYS
+(900) 370-4800
+
+PC Limited XT        SETCLOCK.SYS
+(512) 338-4400
+BBS: (512) 338-8528
+
+Vendex Headstart XT        8 bit clock card
+(900) 454-5554
+
+Tandy 1400 LT,FD, HD       Not supported with MS-DOS 5.0, 6.0, or 6.2
+(817) 878-6875
+
+Zenith 183 or 184 laptop   Not supported with MS-DOS 5.0, 6.0, or 6.2
+(800) 842-9000
+
+
+For more information on workaround device drivers, query on the computer name,
+model, and driver names in the Microsoft Knowledge Base.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 6.22 5.00 5.00a 6.00 5 6 stamp 6.2
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : :5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

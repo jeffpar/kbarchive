@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104034: DBLSPACE ERR Msg: Invalid DBLSPACE.INI Setting: SWITCHES=/N | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104034: DBLSPACE ERR Msg: Invalid DBLSPACE.INI Setting: SWITCHES=/N" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104034/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104034/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104034/","publisher":null,"image":null,"headline":"Q104034: DBLSPACE ERR Msg: Invalid DBLSPACE.INI Setting: SWITCHES=/N","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104034-dblspace-err-msg-invalid-dblspaceini-setting-switchesn">Q104034: DBLSPACE ERR Msg: Invalid DBLSPACE.INI Setting: SWITCHES=/N</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104034
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you modify the DBLSPACE.INI file with the DBLSPACE /SWITCHES command in
+MS-DOS 6.2 and then uninstall 6.2 and use MS-DOS 6.0, you receive one of the
+following error messages when you boot your computer:
+
+  Invalid DBLSPACE.INI setting: SWITCHES=/N
+  Invalid DBLSPACE.INI setting: SWITCHES=/F
+  Invalid DBLSPACE.INI setting: SWITCHES=/FN
+
+CAUSE
+=====
+
+These switches are not valid for the MS-DOS 6.0 DBLSPACE.INI file.
+
+RESOLUTION
+==========
+
+To work around this problem, edit the DBLSPACE.INI file and then add the
+switches to the CONFIG.SYS file. For example:
+
+1. Use the ATTRIB program to clear the DBLSPACE.INI file attributes. For
+  example:
+
+     attrib -r -h -s h:\dblspace.ini
+
+  To determine which drive is your host drive, type "dblspace /list" (without
+  the quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+2. Using MS-DOS Editor, edit the DBLSPACE.INI file and remove the SWITCHES
+  entries.
+
+3. Save the DBLSPACE.INI file.
+
+4. Edit the CONFIG.SYS file on drive C and add the SWITCHES entries.
+
+5. Save the CONFIG.SYS file and exit MS-DOS Editor.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

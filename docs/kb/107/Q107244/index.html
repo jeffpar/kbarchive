@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q107244: Microsoft Systems Management Server README.TXT (Part 1 of 2) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q107244: Microsoft Systems Management Server README.TXT (Part 1 of 2)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/107/Q107244/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/107/Q107244/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/107/Q107244/","publisher":null,"image":null,"headline":"Q107244: Microsoft Systems Management Server README.TXT (Part 1 of 2)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q107244-microsoft-systems-management-server-readmetxt-part-1-of-2">Q107244: Microsoft Systems Management Server README.TXT (Part 1 of 2)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q107244</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">smsgeneral</span> <span class="n">kbArtTypeINF</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">27</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">text</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">version</span> <span class="m">1.0</span> <span class="n">README</span><span class="p">.</span><span class="n">TXT</span> <span class="n">file</span> <span class="p">(</span><span class="n">part</span> <span class="m">1</span> <span class="k">of</span> <span class="m">2</span><span class="p">).</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+     <span class="n">README</span><span class="p">.</span><span class="n">TXT</span>
+     <span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="p">(</span><span class="n">SMS</span><span class="p">)</span>
+
+<span class="n">Release</span> <span class="n">Notes</span> <span class="n">Contents</span>
+<span class="m">1.</span> <span class="n">Patching</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">(</span><span class="n">TM</span><span class="p">)</span> <span class="n">Server</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Site</span> <span class="n">Server</span>
+<span class="m">2.</span> <span class="n">Site</span> <span class="n">Upgrade</span>
+<span class="m">3.</span> <span class="n">SMS</span> <span class="n">Service</span> <span class="n">Account</span>
+<span class="m">4.</span> <span class="n">SMS</span> <span class="n">Administrator</span>
+<span class="m">5.</span> <span class="n">SMS</span> <span class="n">Database</span> <span class="n">Manager</span>
+<span class="m">6.</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span>
+<span class="m">7.</span> <span class="n">IBM</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">LAN</span> <span class="n">Server</span>
+<span class="m">8.</span> <span class="n">Novell</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">NetWare</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="m">9.</span> <span class="n">Clients</span> <span class="n">Running</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="m">10.</span> <span class="n">Clients</span> <span class="n">Running</span> <span class="n">Windows</span> <span class="n">for</span> <span class="n">Workgroups</span>
+<span class="m">11.</span> <span class="n">Macintosh</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="m">12.</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="m">13.</span> <span class="n">Troubleshooting</span> <span class="n">Client</span> <span class="n">Operations</span>
+<span class="m">14.</span> <span class="n">Services</span>
+<span class="m">15.</span> <span class="n">Inventory</span>
+<span class="m">16.</span> <span class="n">Audited</span> <span class="n">Software</span>
+<span class="m">17.</span> <span class="n">Outboxes</span>
+<span class="m">18.</span> <span class="n">Creating</span> <span class="k">and</span> <span class="n">Distributing</span> <span class="n">Packages</span>
+<span class="m">19.</span> <span class="n">Program</span> <span class="n">Group</span> <span class="n">Control</span>
+<span class="m">20.</span> <span class="n">Using</span> <span class="n">Network</span> <span class="n">Applications</span>
+<span class="m">21.</span> <span class="n">Troubleshooting</span> <span class="n">Network</span> <span class="n">Applications</span>
+<span class="m">22.</span> <span class="n">Installing</span> <span class="n">Applications</span> <span class="n">on</span> <span class="n">Clients</span>
+<span class="m">23.</span> <span class="n">Notes</span> <span class="n">on</span> <span class="n">Installing</span> <span class="n">Specific</span> <span class="n">Applications</span>
+<span class="m">24.</span> <span class="n">Using</span> <span class="n">SMS</span> <span class="k">to</span> <span class="n">Install</span> <span class="n">Operating</span> <span class="n">Systems</span> <span class="n">on</span> <span class="n">Clients</span>
+<span class="m">25.</span> <span class="n">Remote</span> <span class="n">Troubleshooting</span> <span class="n">Utilities</span>
+<span class="m">26.</span> <span class="n">Network</span> <span class="n">Monitor</span>
+<span class="m">27.</span> <span class="n">Automatically</span> <span class="n">Configure</span> <span class="n">Workstation</span> <span class="n">Logon</span> <span class="n">Scripts</span>
+<span class="m">28.</span> <span class="n">Diskless</span> <span class="n">Clients</span>
+<span class="m">29.</span> <span class="n">Backup</span> <span class="k">and</span> <span class="n">Restoration</span>
+<span class="m">30.</span> <span class="n">Miscellaneous</span> <span class="n">Notes</span>
+<span class="m">31.</span> <span class="n">Additional</span> <span class="n">Online</span> <span class="n">Documentation</span>
+<span class="m">32.</span> <span class="n">SMS</span> <span class="n">Administrator</span><span class="s1">'s Guide Errata
+33. Using SMS with Other Language Versions of Windows NT
+
+Microsoft(r) Systems Management Server (SMS)
+Release Notes
+
+1. Patching Windows NT(TM) Server on the Site Server Before running SMS,
+you should update Windows NT Server on your site servers with some new
+versions of Windows NT files supplied on the SMS CD-ROM. This is especially
+important for SMS site servers that run Network Monitor or that use Gateway
+Services for NetWare to communicate with NetWare computers.
+
+The files that are updated are NDIS.SYS, NWAPI32.DLL, and NWRDR.SYS. The
+update to NDIS.SYS fixes a problem with Network Monitor on ring networks.
+The other two files fix problems with enumerating NetWare user groups and
+getting the correct version number of NetWare servers.
+
+Although these updates are essential only for primary or secondary site
+servers that either run Network Monitor or that use Gateway Services for
+NetWare to communicate with NetWare computers, Microsoft recommends that
+you apply the update to all computers running Windows NT including
+clients.
+
+SMS provides two utility programs (for Windows NT and for Windows for
+Workgroups) and a PDF so that you can update Windows NT easily. The PDF is
+PATCHRDR.PDF. This PDF contains package commands for both Windows NT
+(Windows NT Patch of Redirector) and Windows for Workgroups (WFW Patch of
+Redirector).
+
+For the Windows NT update, the files and the utility program PATCH.EXE are
+located in the PATCHES\NT subdirectory of the SMS CD-ROM. For the Windows
+for Workgroups update, the files and the utility program PATCH.EXE are
+located inthe PATCHES\WFW subdirectory of the SMS CD-ROM.
+
+To use the PDF, perform the following steps:
+
+1) Set up the package source directory:
+  a. Create a package source directory.
+  b. Create an NT subdirectory and a WFW subdirectory beneath the package
+     source directory.
+  c. Copy all the files from the PATCHES\NT directory on the SMS CD-ROM to
+     the NT subdirectory of the package source directory.
+  d. Copy all the files from the PATCHES\WFW directory on the SMS CD-ROM
+     to the WFW subdirectory of the package source directory.
+
+2) Create a package. When you do so, import the PDF by choosing the Import
+  button in Package Properties, then choosing PATCHRDR.PDF from the list.
+
+3) Choose the Workstations button.
+
+4) In the source directory box, type the path to the package source
+  directory you created in step 1.
+
+5) Select Windows NT Patch of Redirector and choose the Properties button.
+
+6) In the Command Line Properties dialog box, select both the Automated
+  Command Line and System (Background) Task options.
+
+7) Choose OK to close all the open dialog boxes.
+
+8) Create Run Command On Workstation jobs to run the appropriate package
+  command on the appropriate computers.
+
+To run the patch program manually on a computer, change directories to the
+PATCHES\NT subdirectory of the SMS CD-ROM, and type patch. Then reboot the
+computer for the changes to take effect.
+
+This causes the appropriate files (listed in the PATCHLST.000 file) to be
+updated. The files are updated only if the versions of these files on the
+SMS CD-ROM are newer than the versions already on the computer. Note that
+the old versions of these files are retained, but their file extensions
+are changed to an unused 3 digit number.
+
+If you have a Windows NT version 3.5 system and OpenGL is not installed,
+the patch utility may not run because it believes that you are trying to
+patch a Windows NT 3.1 version system. If you know for certain that you are
+running version 3.5 of Windows NT Server or Windows NT Workstation on
+your computer, you may safely override this check by using the -f option
+(patch -f).
+
+2. Site Upgrade
+When you upgrade a site, the SMS Setup program does not install the SMS
+Setup program. You can manually copy the SMS Setup program (SETUP.EXE) from
+the SMSSETUP\platform.BIN of the SMS CD-ROM (where platform is the
+processor type of the site server) to the SITE.SRV\platform.BIN directory
+on the site server.
+
+When you upgrade a site, make sure that you close all SMS administration
+utilities on the site server (such as the SMS Administrator, SMS Security
+Manager, and so on) before you begin the upgrade. These utilities may lock
+SMS system files so that they cannot be replaced by Setup.
+
+Before you can upgrade a secondary site, all secondary sites must be
+active. Therefore, you must resolve any problems with secondary sites, or
+allow components to finish being added to a secondary site, before you can
+upgrade a secondary site. You can check on a site'</span><span class="n">s</span> <span class="n">status</span> <span class="n">by</span> <span class="n">looking</span> <span class="n">at</span>
+<span class="n">the</span> <span class="n">icon</span> <span class="n">representing</span> <span class="n">the</span> <span class="n">site</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Sites</span> <span class="n">window</span> <span class="k">of</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">Administrator</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">SMS</span> <span class="n">Service</span> <span class="n">Account</span>
+<span class="n">Within</span> <span class="n">a</span> <span class="n">site</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">any</span> <span class="n">trust</span> <span class="n">relationships</span> <span class="n">between</span> <span class="n">domains</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">should</span> <span class="n">have</span> <span class="n">just</span> <span class="n">one</span> <span class="n">SMS</span> <span class="n">Service</span> <span class="n">Account</span> <span class="k">in</span> <span class="n">one</span> <span class="n">master</span> <span class="n">domain</span> <span class="n">at</span> <span class="n">the</span> <span class="n">site</span><span class="p">.</span>
+
+<span class="n">Within</span> <span class="n">a</span> <span class="n">site</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">your</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">(</span><span class="n">TM</span><span class="p">)</span> <span class="n">domains</span> <span class="n">using</span> <span class="n">a</span> <span class="n">trust</span>
+<span class="k">model</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span> <span class="n">the</span> <span class="n">single</span> <span class="n">master</span> <span class="n">domain</span> <span class="k">model</span><span class="p">),</span> <span class="n">you</span> <span class="n">should</span> <span class="k">set</span> <span class="n">up</span> <span class="n">a</span> <span class="n">single</span>
+<span class="n">SMS</span> <span class="n">Service</span> <span class="n">Account</span> <span class="k">in</span> <span class="n">the</span> <span class="n">master</span> <span class="n">domain</span><span class="p">,</span> <span class="k">and</span> <span class="n">have</span> <span class="n">other</span> <span class="n">domains</span> <span class="n">use</span> <span class="n">this</span>
+<span class="n">trusted</span> <span class="n">account</span><span class="p">.</span> <span class="k">Do</span> <span class="k">not</span> <span class="k">set</span> <span class="n">up</span> <span class="n">other</span> <span class="n">SMS</span> <span class="n">Service</span> <span class="n">Accounts</span> <span class="k">in</span> <span class="n">the</span> <span class="n">other</span>
+<span class="n">domains</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">all</span> <span class="n">domains</span> <span class="k">in</span> <span class="n">the</span> <span class="n">site</span> <span class="n">must</span> <span class="n">trust</span> <span class="n">the</span> <span class="n">master</span> <span class="n">domain</span>
+<span class="p">(</span><span class="n">which</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Service</span> <span class="n">Account</span><span class="p">).</span> <span class="k">In</span> <span class="n">addition</span><span class="p">,</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Service</span>
+<span class="n">Account</span> <span class="k">in</span> <span class="n">the</span> <span class="n">master</span> <span class="n">domain</span> <span class="n">should</span> <span class="n">be</span> <span class="n">a</span> <span class="n">member</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Administrators</span> <span class="n">local</span>
+<span class="n">group</span> <span class="k">in</span> <span class="n">all</span> <span class="n">domains</span> <span class="n">at</span> <span class="n">the</span> <span class="n">site</span><span class="p">,</span> <span class="k">and</span> <span class="n">have</span> <span class="n">Log</span> <span class="n">On</span> <span class="k">As</span> <span class="n">A</span> <span class="n">Service</span> <span class="n">rights</span> <span class="k">in</span>
+<span class="n">all</span> <span class="n">domains</span> <span class="n">at</span> <span class="n">the</span> <span class="n">site</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">your</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">domains</span> <span class="n">without</span> <span class="n">setting</span> <span class="n">up</span> <span class="n">a</span> <span class="n">trust</span> <span class="k">model</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">should</span> <span class="n">avoid</span> <span class="n">setting</span> <span class="n">up</span> <span class="n">any</span> <span class="n">trust</span> <span class="n">relationships</span> <span class="k">and</span> <span class="n">you</span> <span class="n">should</span> <span class="n">use</span> <span class="n">a</span> <span class="n">local</span>
+<span class="n">domain</span> <span class="n">account</span> <span class="n">for</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Service</span> <span class="n">Account</span><span class="p">.</span> <span class="k">In</span> <span class="n">addition</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="nb">create</span> <span class="n">an</span>
+<span class="n">SMS</span> <span class="n">Service</span> <span class="n">Account</span> <span class="k">in</span> <span class="n">each</span> <span class="n">domain</span> <span class="n">at</span> <span class="n">the</span> <span class="n">site</span><span class="p">.</span> <span class="k">In</span> <span class="n">each</span> <span class="n">domain</span><span class="p">,</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">Service</span> <span class="n">Account</span> <span class="n">must</span> <span class="n">be</span> <span class="n">a</span> <span class="n">member</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Administrators</span> <span class="n">local</span> <span class="n">group</span> <span class="k">and</span> <span class="n">have</span>
+<span class="n">Log</span> <span class="n">On</span> <span class="k">As</span> <span class="n">A</span> <span class="n">Service</span> <span class="n">rights</span> <span class="k">in</span> <span class="n">all</span> <span class="n">domains</span> <span class="n">at</span> <span class="n">the</span> <span class="n">site</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">SMS</span> <span class="n">Administrator</span>
+<span class="n">On</span> <span class="n">site</span> <span class="n">servers</span><span class="p">,</span> <span class="n">a</span> <span class="n">user</span> <span class="n">must</span> <span class="nb">log</span> <span class="n">on</span> <span class="k">to</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span> <span class="n">computer</span> <span class="k">with</span> <span class="n">a</span> <span class="n">user</span>
+<span class="n">account</span> <span class="n">that</span> <span class="n">is</span> <span class="n">a</span> <span class="n">member</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Administrators</span> <span class="n">local</span> <span class="n">group</span> <span class="k">in</span> <span class="n">the</span> <span class="n">site</span>
+<span class="n">server</span> <span class="n">domain</span><span class="p">.</span> <span class="n">On</span> <span class="n">site</span> <span class="n">servers</span><span class="p">,</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span> <span class="p">(</span><span class="k">and</span> <span class="n">other</span> <span class="n">utilities</span>
+<span class="n">such</span> <span class="k">as</span> <span class="n">SMS</span> <span class="n">Service</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">SMS</span> <span class="n">Security</span> <span class="n">Manager</span><span class="p">,</span> <span class="k">and</span> <span class="n">so</span> <span class="n">on</span><span class="p">)</span> <span class="n">can</span> <span class="n">only</span> <span class="n">be</span>
+<span class="n">installed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span> <span class="n">directory</span><span class="p">.</span> <span class="n">For</span> <span class="n">security</span> <span class="n">purposes</span><span class="p">,</span> <span class="n">the</span> <span class="n">Site</span>
+<span class="n">Configuration</span> <span class="n">Manager</span> <span class="n">assigns</span> <span class="n">permissions</span> <span class="n">for</span> <span class="n">the</span> <span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span> <span class="n">directory</span> <span class="k">to</span>
+<span class="n">only</span> <span class="n">the</span> <span class="n">Administrators</span> <span class="n">local</span> <span class="n">group</span><span class="p">.</span> <span class="n">No</span> <span class="n">other</span> <span class="n">group</span> <span class="k">or</span> <span class="n">user</span> <span class="n">can</span> <span class="nf">run</span> <span class="n">a</span>
+<span class="n">program</span> <span class="k">from</span> <span class="n">the</span> <span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span> <span class="n">directory</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">give</span> <span class="n">other</span> <span class="n">users</span> <span class="n">the</span>
+<span class="n">ability</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">install</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">Administrator</span> <span class="n">on</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">that</span> <span class="n">is</span> <span class="k">not</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Limit</span> <span class="k">To</span> <span class="n">Sites</span> <span class="n">control</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Execute</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Job</span> <span class="n">Details</span><span class="p">,</span>
+<span class="k">and</span> <span class="n">other</span> <span class="n">dialog</span> <span class="n">boxes</span><span class="p">,</span> <span class="n">the</span> <span class="k">list</span> <span class="n">displays</span> <span class="n">only</span> <span class="n">the</span> <span class="n">yellow</span> <span class="n">primary</span> <span class="n">site</span>
+<span class="n">icon</span><span class="p">.</span> <span class="n">This</span> <span class="n">icon</span> <span class="n">is</span> <span class="n">used</span> <span class="k">to</span> <span class="n">denote</span> <span class="n">a</span> <span class="n">site</span> <span class="k">in</span> <span class="n">general</span><span class="p">.</span> <span class="n">It</span> <span class="n">is</span> <span class="k">not</span> <span class="n">used</span> <span class="k">to</span>
+<span class="n">differentiate</span> <span class="n">between</span> <span class="n">a</span> <span class="n">primary</span> <span class="n">site</span> <span class="k">and</span> <span class="n">a</span> <span class="n">secondary</span> <span class="n">site</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">SMS</span> <span class="n">Database</span> <span class="n">Manager</span>
+<span class="n">The</span> <span class="n">SMS</span> <span class="n">Database</span> <span class="n">Manager</span> <span class="n">is</span> <span class="n">provided</span> <span class="n">so</span> <span class="n">that</span> <span class="n">you</span> <span class="n">remove</span> <span class="n">the</span> <span class="n">Audited</span>
+<span class="n">Software</span> <span class="n">group</span> <span class="n">when</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">perform</span> <span class="n">a</span> <span class="n">software</span> <span class="n">audit</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">only</span>
+<span class="n">the</span> <span class="n">latest</span> <span class="n">audited</span> <span class="n">software</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">use</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Database</span> <span class="n">Manager</span> <span class="k">to</span>
+<span class="n">remove</span> <span class="n">the</span> <span class="n">Audited</span> <span class="n">Software</span> <span class="n">group</span><span class="p">,</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">site</span> <span class="n">database</span> <span class="n">will</span> <span class="n">store</span> <span class="n">the</span>
+<span class="n">cumulative</span> <span class="n">inventory</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Audited</span> <span class="n">Software</span> <span class="n">group</span> <span class="p">(</span><span class="n">that</span> <span class="n">is</span><span class="p">,</span> <span class="n">any</span> <span class="n">updates</span>
+<span class="n">will</span> <span class="n">simply</span> <span class="n">be</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span> <span class="n">current</span> <span class="k">record</span> <span class="n">for</span> <span class="n">the</span> <span class="n">group</span><span class="p">).</span> <span class="n">The</span> <span class="n">SMS</span> <span class="n">Database</span>
+<span class="n">Manager</span> <span class="p">(</span><span class="n">DBCLEAN</span><span class="p">.</span><span class="n">EXE</span><span class="p">)</span> <span class="n">is</span> <span class="n">installed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">platform</span><span class="p">.</span><span class="n">BIN</span> <span class="n">directory</span>
+<span class="p">(</span><span class="n">where</span> <span class="n">platform</span> <span class="n">is</span> <span class="n">the</span> <span class="n">processor</span> <span class="n">type</span> <span class="k">of</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">where</span> <span class="n">it</span> <span class="n">is</span>
+<span class="n">installed</span><span class="p">)</span> <span class="n">on</span> <span class="n">any</span> <span class="n">computer</span> <span class="n">where</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span> <span class="n">is</span> <span class="n">installed</span><span class="p">.</span>
+
+<span class="n">Before</span> <span class="n">you</span> <span class="n">use</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Database</span> <span class="n">Manager</span> <span class="k">to</span> <span class="n">change</span> <span class="k">or</span> <span class="n">remove</span> <span class="n">items</span> <span class="k">in</span> <span class="n">a</span>
+<span class="n">database</span><span class="p">,</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">there</span> <span class="n">are</span> <span class="n">no</span> <span class="n">administrators</span> <span class="n">using</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">Administrator</span> <span class="k">to</span> <span class="n">access</span> <span class="n">that</span> <span class="n">database</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span>
+<span class="n">The</span> <span class="n">default</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="n">is</span> <span class="n">placed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">MAINCFG</span><span class="p">.</span><span class="n">BOX</span> <span class="n">directory</span>
+<span class="n">on</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">use</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span> <span class="k">to</span> <span class="n">map</span> <span class="n">clients</span> <span class="k">to</span> <span class="n">domains</span><span class="p">,</span>
+<span class="n">modify</span> <span class="n">the</span> <span class="k">version</span> <span class="k">in</span> <span class="n">this</span> <span class="n">location</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">have</span> <span class="n">enabled</span> <span class="n">the</span> <span class="n">Automatically</span>
+<span class="n">Configure</span> <span class="n">Workstation</span> <span class="n">Logon</span> <span class="n">Scripts</span> <span class="n">option</span><span class="p">,</span> <span class="n">the</span> <span class="n">Site</span> <span class="n">Configuration</span> <span class="n">Manager</span>
+<span class="n">copies</span> <span class="n">the</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="k">from</span> <span class="n">this</span> <span class="n">location</span> <span class="k">to</span> <span class="n">the</span> <span class="n">REPL</span><span class="p">$</span> <span class="n">share</span> <span class="k">of</span> <span class="n">SMS</span>
+<span class="n">logon</span> <span class="n">servers</span> <span class="n">running</span> <span class="n">LAN</span> <span class="n">Manager</span> <span class="k">and</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">have</span> <span class="k">not</span>
+<span class="n">enabled</span> <span class="n">the</span> <span class="n">Automatically</span> <span class="n">Configure</span> <span class="n">Workstation</span> <span class="n">Logon</span> <span class="n">Scripts</span> <span class="n">option</span><span class="p">,</span> <span class="n">you</span>
+<span class="n">must</span> <span class="n">manually</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="k">to</span> <span class="n">the</span> <span class="n">NETLOGON</span> <span class="n">shares</span> <span class="k">of</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">logon</span> <span class="n">servers</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">computers</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">that</span> <span class="n">are</span> <span class="n">part</span> <span class="k">of</span> <span class="n">a</span> <span class="n">domain</span><span class="p">,</span> <span class="n">SETLS</span> <span class="k">uses</span> <span class="n">the</span>
+<span class="n">domain</span> <span class="k">as</span> <span class="n">the</span> <span class="n">workgroup</span> <span class="k">if</span> <span class="n">a</span> <span class="n">WORKGROUP</span><span class="p">=</span><span class="n">DOMAIN</span> <span class="n">mapping</span> <span class="n">is</span> <span class="n">specified</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">if</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">is</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SMSDOM</span> <span class="n">domain</span> <span class="k">and</span>
+<span class="n">the</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="n">has</span> <span class="n">SMSDOM</span> <span class="p">=</span> <span class="n">CENTRAL</span> <span class="n">mapping</span> <span class="n">for</span> <span class="n">WORKGROUP</span><span class="p">,</span> <span class="n">the</span> <span class="n">computer</span>
+<span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">is</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span> <span class="n">site</span> <span class="k">in</span> <span class="n">the</span> <span class="n">CENTRAL</span> <span class="n">domain</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">also</span>
+<span class="n">use</span> <span class="n">the</span> <span class="p">[</span><span class="n">WIN</span><span class="p">.</span><span class="n">INI</span><span class="p">]</span> <span class="n">section</span> <span class="k">to</span> <span class="n">map</span> <span class="n">computers</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">to</span> <span class="n">domains</span><span class="p">.</span>
+
+<span class="n">Also</span><span class="p">,</span> <span class="n">for</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="n">clients</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">need</span> <span class="k">to</span> <span class="n">use</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span> <span class="k">to</span> <span class="n">successfully</span>
+<span class="n">report</span> <span class="n">inventory</span> <span class="k">to</span> <span class="n">a</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="n">domain</span><span class="p">.</span> <span class="k">If</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">CMD</span> <span class="k">and</span> <span class="n">SETLSOS2</span> <span class="n">are</span>
+<span class="n">unable</span> <span class="k">to</span> <span class="n">find</span> <span class="n">the</span> <span class="n">current</span> <span class="n">logon</span> <span class="n">server</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">define</span> <span class="n">the</span> <span class="n">LAN</span> <span class="n">Server</span>
+<span class="n">domain</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">in</span> <span class="n">both</span> <span class="n">the</span> <span class="p">[</span><span class="n">Domain</span><span class="p">]</span> <span class="k">and</span> <span class="p">[</span><span class="n">Workgroup</span><span class="p">]</span> <span class="n">sections</span> <span class="k">of</span> <span class="n">the</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span>
+<span class="n">file</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">if</span> <span class="n">the</span> <span class="n">user</span> <span class="n">is</span> <span class="n">logged</span> <span class="n">on</span> <span class="k">to</span> <span class="n">the</span> <span class="n">IBMLSDOM</span> <span class="n">domain</span> <span class="n">the</span>
+<span class="n">SMSLS</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="n">should</span> <span class="n">have</span> <span class="n">IBMLSDOM</span> <span class="p">=</span> <span class="n">IBMLSDOM</span> <span class="n">mapping</span> <span class="k">in</span> <span class="n">both</span> <span class="n">the</span> <span class="p">[</span><span class="n">Domain</span><span class="p">]</span>
+<span class="k">and</span> <span class="p">[</span><span class="n">Workgroup</span><span class="p">]</span> <span class="n">sections</span><span class="p">.</span>
+
+<span class="m">7.</span> <span class="n">IBM</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">LAN</span> <span class="n">Server</span>
+<span class="n">You</span> <span class="n">must</span> <span class="n">restore</span> <span class="k">package</span> <span class="n">shares</span> <span class="n">on</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="k">package</span> <span class="n">servers</span> <span class="n">after</span> <span class="n">those</span>
+<span class="n">servers</span> <span class="n">have</span> <span class="n">been</span> <span class="n">restarted</span><span class="p">.</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="n">does</span> <span class="k">not</span> <span class="n">directly</span> <span class="n">support</span>
+<span class="n">persistent</span> <span class="n">shares</span><span class="p">.</span> <span class="n">When</span> <span class="n">you</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="k">package</span> <span class="n">server</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">shares</span> <span class="n">on</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">are</span> <span class="k">not</span> <span class="n">restored</span><span class="p">,</span> <span class="k">and</span> <span class="n">you</span> <span class="n">must</span> <span class="n">restore</span> <span class="n">them</span>
+<span class="n">yourself</span><span class="p">.</span> <span class="n">The</span> <span class="n">shares</span> <span class="k">to</span> <span class="n">restore</span> <span class="n">are</span> <span class="n">SMS_PKGx</span> <span class="k">and</span> <span class="n">all</span> <span class="n">the</span> <span class="n">shares</span> <span class="n">for</span> <span class="n">shared</span>
+<span class="n">packages</span> <span class="k">and</span> <span class="n">workstation</span> <span class="n">packages</span><span class="p">.</span> <span class="n">It</span> <span class="n">is</span> <span class="n">a</span> <span class="n">good</span> <span class="n">idea</span> <span class="k">to</span> <span class="n">note</span> <span class="n">the</span> <span class="n">names</span> <span class="k">and</span>
+<span class="n">paths</span> <span class="k">of</span> <span class="n">these</span> <span class="n">shares</span> <span class="k">while</span> <span class="n">the</span> <span class="n">server</span> <span class="n">is</span> <span class="n">running</span><span class="p">,</span> <span class="n">so</span> <span class="n">you</span> <span class="n">can</span> <span class="n">restore</span> <span class="n">them</span>
+<span class="n">after</span> <span class="n">the</span> <span class="n">server</span> <span class="n">is</span> <span class="n">restarted</span><span class="p">.</span>
+
+<span class="n">Site</span> <span class="n">Configuration</span> <span class="n">Manager</span> <span class="n">restores</span> <span class="n">shares</span> <span class="n">after</span> <span class="n">a</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="n">logon</span> <span class="n">server</span>
+<span class="n">has</span> <span class="n">been</span> <span class="n">restarted</span><span class="p">.</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="n">does</span> <span class="k">not</span> <span class="n">directly</span> <span class="n">support</span> <span class="n">persistent</span> <span class="n">shares</span><span class="p">.</span>
+<span class="n">When</span> <span class="n">you</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="n">computer</span><span class="p">,</span> <span class="n">the</span> <span class="n">shares</span> <span class="n">on</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">server</span>
+<span class="n">are</span> <span class="k">not</span> <span class="n">restored</span><span class="p">.</span> <span class="n">The</span> <span class="n">Site</span> <span class="n">Configuration</span> <span class="n">Manager</span> <span class="n">will</span> <span class="n">restore</span> <span class="n">these</span> <span class="n">shares</span>
+<span class="p">(</span><span class="n">SMS_SHR</span> <span class="k">and</span> <span class="n">SMS_SHRx</span><span class="p">)</span> <span class="n">on</span> <span class="n">the</span> <span class="n">LAN</span> <span class="n">Server</span> <span class="n">computer</span> <span class="n">during</span> <span class="n">its</span> <span class="n">watchdog</span>
+<span class="n">cycle</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">don</span><span class="s1">'t want to wait for the watchdog cycle, you can restore
+these shares yourself at startup.
+
+SMSOS2AG.EXE (called the SMS_NET_MAPPER service in Beta versions of SMS) is
+run as an executable file instead of running as a service. On OS/2 2.1x
+clients, Client Setup configures SMSOS2AG.EXE to run as an executable
+program from STARTUP.CMD. Be sure that SMSOS2AG.EXE appears in STARTUP.CMD
+after the commands to start the network. SMSOS2AG.EXE provides network
+support for Package Command Manager in the Windows(TM) subsystem of OS/2.
+Note that SMSOS2AG.EXE does not have an 8 character limit for the package
+server or logon server for LAN Manager.
+
+If you have an IBM LAN Server domain in an SMS site, and you want to use
+the SMS ability to automatically configure logon scripts, you must do the
+following:
+
+a) Be sure you have selected the Use All Detected Servers option in the
+Domain Properties dialog box for the domain. To access this dialog box,
+select the site in the Sites window and choose Properties from the File
+menu. Then choose the Domains button, then choose the Properties button in
+the Domains dialog box.
+
+b) On the domain'</span><span class="n">s</span> <span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="nb">create</span> <span class="n">the</span> <span class="n">REPL</span><span class="p">$</span>
+<span class="n">share</span> <span class="n">by</span> <span class="n">typing</span> <span class="n">net</span> <span class="n">share</span> <span class="n">repl</span><span class="p">$=</span><span class="n">c</span><span class="p">:\</span><span class="n">ibmlan</span><span class="p">\</span><span class="n">repl</span><span class="p">\</span><span class="n">export</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">the</span>
+<span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span> <span class="n">must</span> <span class="n">be</span> <span class="n">the</span> <span class="n">export</span> <span class="n">server</span> <span class="n">for</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">scripts</span><span class="p">.</span>
+
+<span class="n">c</span><span class="p">)</span> <span class="n">On</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span><span class="p">,</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">SCRIPTS</span> <span class="n">subdirectory</span> <span class="n">under</span>
+<span class="n">the</span> <span class="n">IBMLAN</span><span class="p">\</span><span class="n">REPL</span><span class="p">\</span><span class="n">EXPORT</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="n">d</span><span class="p">)</span> <span class="k">If</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span> <span class="n">does</span> <span class="k">not</span> <span class="n">already</span> <span class="n">have</span> <span class="n">a</span> <span class="n">REPL</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span>
+<span class="k">in</span> <span class="n">the</span> <span class="n">EXPORT</span> <span class="n">directory</span><span class="p">,</span> <span class="nb">create</span> <span class="n">one</span> <span class="k">with</span> <span class="n">the</span> <span class="n">following</span> <span class="n">entries</span>
+<span class="n">EXTENT</span> <span class="p">=</span> <span class="n">TREE</span>
+<span class="n">INTEGRITY</span> <span class="p">=</span> <span class="n">FILE</span>
+<span class="k">If</span> <span class="n">a</span> <span class="n">REPL</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="n">already</span> <span class="nb">exists</span><span class="p">,</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">have</span> <span class="k">to</span> <span class="n">change</span> <span class="n">its</span> <span class="n">settings</span><span class="p">.</span>
+
+<span class="n">e</span><span class="p">)</span> <span class="k">In</span> <span class="n">the</span> <span class="p">[</span><span class="n">Replicator</span><span class="p">]</span> <span class="n">section</span> <span class="k">of</span> <span class="n">the</span> <span class="n">IBMLAN</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">domain</span>
+<span class="n">controller</span><span class="p">,</span> <span class="n">add</span> <span class="n">these</span> <span class="n">two</span> <span class="n">lines</span> <span class="p">(</span><span class="k">if</span> <span class="n">they</span> <span class="k">do</span> <span class="k">not</span> <span class="n">already</span> <span class="n">appear</span><span class="p">):</span>
+<span class="n">REPLICATE</span> <span class="p">=</span> <span class="n">BOTH</span>
+<span class="n">EXPORTPATH</span> <span class="p">=</span> <span class="n">C</span><span class="p">:\</span><span class="n">IBMLAN</span><span class="p">\</span><span class="n">REPL</span><span class="p">\</span><span class="n">EXPORT</span>
+
+<span class="n">f</span><span class="p">)</span> <span class="k">In</span> <span class="n">the</span> <span class="p">[</span><span class="n">Replicator</span><span class="p">]</span> <span class="n">section</span> <span class="k">of</span> <span class="n">the</span> <span class="n">IBMLAN</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span> <span class="n">backup</span> <span class="n">domain</span>
+<span class="n">controllers</span><span class="p">,</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">the</span> <span class="n">settings</span> <span class="n">configure</span> <span class="n">the</span> <span class="n">backup</span> <span class="n">domain</span> <span class="n">controllers</span>
+<span class="k">to</span> <span class="n">import</span> <span class="n">replicated</span> <span class="n">files</span> <span class="k">from</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span> <span class="p">(</span><span class="n">the</span> <span class="n">default</span>
+<span class="n">IBMLAN</span><span class="p">.</span><span class="n">INI</span> <span class="n">settings</span> <span class="n">allow</span> <span class="n">this</span><span class="p">).</span>
+
+<span class="n">g</span><span class="p">)</span> <span class="n">Also</span> <span class="k">in</span> <span class="n">the</span> <span class="n">IBMLAN</span><span class="p">.</span><span class="n">INI</span> <span class="k">of</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span> <span class="k">and</span> <span class="n">backup</span>
+<span class="n">domain</span> <span class="n">controllers</span> <span class="k">in</span> <span class="n">the</span> <span class="n">domain</span><span class="p">,</span> <span class="n">add</span> <span class="n">replicator</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Srvservices</span> <span class="n">line</span> <span class="k">in</span>
+<span class="n">the</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="n">section</span><span class="p">,</span> <span class="n">so</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Replicator</span> <span class="n">service</span> <span class="n">starts</span> <span class="n">automatically</span>
+<span class="n">when</span> <span class="n">the</span> <span class="n">server</span> <span class="n">starts</span><span class="p">.</span>
+
+<span class="n">h</span><span class="p">)</span> <span class="n">Restart</span> <span class="n">the</span> <span class="n">Replicator</span> <span class="n">service</span> <span class="n">on</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">domain</span> <span class="n">controller</span> <span class="k">and</span> <span class="n">all</span>
+<span class="n">backup</span> <span class="n">domain</span> <span class="n">controllers</span> <span class="k">in</span> <span class="n">the</span> <span class="n">domain</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">are</span> <span class="n">now</span> <span class="n">ready</span> <span class="k">to</span> <span class="n">automatically</span> <span class="n">configure</span> <span class="n">logon</span> <span class="n">scripts</span> <span class="n">within</span> <span class="n">SMS</span><span class="p">.</span> <span class="n">SMS</span>
+<span class="n">will</span> <span class="k">set</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">CMD</span> <span class="k">as</span> <span class="n">the</span> <span class="n">script</span> <span class="n">for</span> <span class="n">users</span> <span class="n">who</span> <span class="n">don</span><span class="s1">'t currently have
+scripts, and append SMSLS to the scripts of those users who do already have
+logon scripts.
+
+8. Novell(r) NetWare(r)
+For NetWare 4.x logon servers, you must make additional changes to the
+system login script when you use the Automatically Configure Workstation
+Logon Scripts option.
+
+NetWare 4.x login scripts require an explicit mapping when accessing a
+volume on the NetWare server. This means that you need to add some lines to
+the SMS commands that were added to the system login script by the Site
+Configuration Manager.
+
+After the Site Configuration Manager has configured the system login script
+on NetWare 4.x logon servers, you must add lines to the SMS commands to map
+a drive to the volume containing the SMS logon server (LOGON.SRV) directory
+on the logon server.
+
+On NetWare servers, the Site Configuration Manager adds the following lines
+to the system login script (these lines work correctly on NetWare 3.x
+servers):
+
+REM Microsoft Systems Management Server (start)
+
+REM SMS 1.0
+set SMS_LOGON="SMSVOL:smsroot\logon.srv"
+INCLUDE %&lt;SMS_LOGON&gt;\SMSLS.SCR
+set SMS_LOGON=
+
+REM Microsoft Systems Management Server (end)
+
+Where SMSVOL:smsroot is the volume and directory name for where SMS is
+installed on the logon server. For NetWare 4.x, the SMS lines in the login
+script must have the following form:
+
+REM Microsoft Systems Management Server (start)
+
+REM SMS 1.0
+map root X:= SMSVOL:smsroot\logon.srv
+set SMS_LOGON="X:"
+INCLUDE %&lt;SMS_LOGON&gt;\SMSLS.SCR
+map rem X:
+set SMS_LOGON=
+
+REM Microsoft Systems Management Server (end)
+
+Where SMSVOL:smsroot is the volume and directory name for where SMS is
+installed on the logon server.
+
+9. Clients Running MS-DOS
+SMS supports MS-DOS version 5.0 and later. On pages xxx-xxxi of the SMS
+Administrator'</span><span class="n">s</span> <span class="n">Guide</span><span class="p">,</span> <span class="n">the</span> <span class="n">text</span> <span class="n">states</span> <span class="n">that</span> <span class="n">SMS</span> <span class="n">provides</span> <span class="n">support</span> <span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span>
+<span class="k">version</span> <span class="m">3.3</span> <span class="k">or</span> <span class="n">later</span><span class="p">.</span> <span class="n">The</span> <span class="n">text</span> <span class="n">should</span> <span class="n">state</span> <span class="n">the</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">version</span> <span class="m">5.0</span> <span class="k">or</span> <span class="n">later</span>
+<span class="n">is</span> <span class="n">supported</span><span class="p">.</span>
+
+<span class="n">SMS</span> <span class="n">provides</span> <span class="n">only</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="n">support</span> <span class="n">for</span> <span class="n">clients</span> <span class="n">running</span> <span class="n">Microsoft</span> <span class="n">Network</span>
+<span class="n">Client</span> <span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">version</span> <span class="m">3.0</span><span class="p">.</span> <span class="p">(</span><span class="n">Microsoft</span> <span class="n">Network</span> <span class="n">Client</span> <span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">version</span>
+<span class="m">3.0</span> <span class="n">is</span> <span class="n">provided</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.)</span> <span class="n">SMS</span> <span class="n">does</span> <span class="k">not</span> <span class="n">support</span> <span class="n">SMS</span>
+<span class="n">components</span> <span class="n">within</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">3.1</span> <span class="n">environment</span> <span class="n">on</span> <span class="n">clients</span> <span class="n">that</span> <span class="nf">run</span> <span class="n">Microsoft</span>
+<span class="n">Network</span> <span class="n">Client</span> <span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">version</span> <span class="m">3.0</span><span class="p">.</span> <span class="n">For</span> <span class="n">full</span> <span class="n">SMS</span> <span class="n">support</span> <span class="n">on</span> <span class="n">clients</span>
+<span class="n">running</span> <span class="n">Windows</span> <span class="m">3.1</span><span class="p">,</span> <span class="n">the</span> <span class="n">client</span> <span class="n">should</span> <span class="n">use</span> <span class="n">LAN</span> <span class="n">Manager</span> <span class="k">version</span> <span class="m">2.1</span> <span class="k">or</span> <span class="n">later</span>
+<span class="n">Enhanced</span> <span class="n">Workstation</span> <span class="k">or</span> <span class="n">Windows</span> <span class="n">for</span> <span class="n">Workgroups</span><span class="p">.</span>
+
+<span class="k">In</span> <span class="n">addition</span><span class="p">,</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Network</span> <span class="n">Client</span> <span class="n">for</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span> <span class="k">version</span> <span class="m">3.0</span> <span class="n">has</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">limitations</span><span class="p">:</span>
+
+<span class="n">a</span><span class="p">.</span> <span class="n">You</span> <span class="n">cannot</span> <span class="n">use</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">troubleshooting</span> <span class="n">utilities</span> <span class="n">on</span> <span class="n">these</span> <span class="n">clients</span>
+<span class="n">using</span> <span class="n">NWLINK</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">use</span>
+<span class="n">remote</span> <span class="n">troubleshooting</span> <span class="n">utilities</span> <span class="n">on</span> <span class="n">these</span> <span class="n">clients</span> <span class="n">over</span> <span class="n">NetBEUI</span> <span class="k">or</span> <span class="n">TCP</span><span class="p">/</span><span class="n">IP</span><span class="p">.</span>
+
+<span class="n">b</span><span class="p">.</span> <span class="n">SMS</span> <span class="n">will</span> <span class="k">not</span> <span class="n">be</span> <span class="n">able</span> <span class="k">to</span> <span class="nb">read</span> <span class="n">the</span> <span class="n">network</span> <span class="n">card</span> <span class="n">ID</span> <span class="k">of</span> <span class="n">these</span> <span class="n">computers</span><span class="p">,</span> <span class="n">so</span>
+<span class="n">this</span> <span class="n">information</span> <span class="n">will</span>
+<span class="k">not</span> <span class="n">be</span> <span class="n">shown</span> <span class="k">in</span> <span class="n">the</span> <span class="n">inventory</span> <span class="n">for</span> <span class="n">these</span> <span class="n">computers</span><span class="p">.</span>
+
+<span class="m">10.</span> <span class="n">Clients</span> <span class="n">Running</span> <span class="n">Windows</span> <span class="n">for</span> <span class="n">Workgroups</span>
+<span class="n">SMS</span> <span class="n">clients</span> <span class="n">that</span> <span class="nf">run</span> <span class="n">Windows</span> <span class="n">for</span> <span class="n">Workgroups</span> <span class="n">must</span> <span class="n">have</span> <span class="n">the</span> <span class="n">latest</span> <span class="k">version</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">VREDIR</span><span class="m">.386</span> <span class="n">file</span><span class="p">.</span> <span class="n">This</span> <span class="n">file</span> <span class="n">is</span> <span class="n">dated</span> <span class="m">9</span><span class="p">-</span><span class="m">04</span><span class="p">-</span><span class="m">94</span> <span class="n">at</span> <span class="m">8</span><span class="p">:</span><span class="m">07</span> <span class="n">A</span><span class="p">.</span><span class="n">M</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">get</span>
+<span class="n">this</span> <span class="n">file</span> <span class="k">from</span> <span class="n">the</span> <span class="n">PATCHES</span><span class="p">\</span><span class="n">WFW</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span> <span class="n">This</span> <span class="k">version</span> <span class="k">of</span>
+<span class="n">this</span> <span class="n">file</span> <span class="n">is</span> <span class="n">also</span> <span class="n">shipped</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">already</span>
+<span class="n">updated</span> <span class="n">this</span> <span class="n">file</span> <span class="k">from</span> <span class="n">that</span> <span class="n">CD</span><span class="p">,</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">need</span> <span class="k">to</span> <span class="n">update</span> <span class="n">it</span> <span class="n">again</span> <span class="k">from</span> <span class="n">the</span>
+<span class="n">SMS</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">SMS</span><span class="p">,</span> <span class="n">the</span> <span class="n">latest</span> <span class="k">version</span> <span class="k">of</span> <span class="n">this</span> <span class="n">file</span> <span class="n">is</span> <span class="n">required</span> <span class="k">to</span> <span class="n">correct</span> <span class="n">a</span> <span class="n">problem</span>
+<span class="n">where</span> <span class="n">Windows</span> <span class="n">for</span> <span class="n">Workgroups</span> <span class="n">clients</span> <span class="n">lose</span> <span class="n">connections</span> <span class="n">when</span> <span class="n">running</span> <span class="n">the</span>
+<span class="n">SMSLS</span> <span class="n">script</span> <span class="n">at</span> <span class="n">logon</span> <span class="n">time</span><span class="p">.</span> <span class="n">A</span> <span class="n">PDF</span> <span class="k">to</span> <span class="n">automatically</span> <span class="n">update</span> <span class="n">Windows</span> <span class="n">for</span>
+<span class="n">Workgroups</span> <span class="n">computers</span> <span class="n">is</span> <span class="n">also</span> <span class="n">provided</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">use</span> <span class="n">the</span> <span class="n">PDF</span><span class="p">,</span> <span class="n">perform</span> <span class="n">the</span> <span class="n">following</span> <span class="n">steps</span><span class="p">:</span>
+<span class="m">1</span><span class="p">)</span> <span class="k">Set</span> <span class="n">up</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span><span class="p">:</span>
+
+<span class="n">a</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="n">b</span><span class="p">.</span> <span class="n">Create</span> <span class="n">an</span> <span class="n">NT</span> <span class="n">subdirectory</span> <span class="k">and</span> <span class="n">a</span> <span class="n">WFW</span> <span class="n">subdirectory</span> <span class="n">beneath</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">source</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="n">c</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">also</span> <span class="n">using</span> <span class="n">the</span> <span class="n">PDF</span> <span class="n">for</span> <span class="n">updating</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">,</span> <span class="n">copy</span> <span class="n">all</span> <span class="n">the</span>
+<span class="n">files</span> <span class="k">from</span> <span class="n">the</span> <span class="n">PATCHES</span><span class="p">\</span><span class="n">NT</span>
+<span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span> <span class="k">to</span> <span class="n">the</span> <span class="n">NT</span> <span class="n">subdirectory</span> <span class="k">of</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span>
+<span class="n">directory</span><span class="p">.</span>
+
+<span class="n">d</span><span class="p">.</span> <span class="n">Copy</span> <span class="n">all</span> <span class="n">the</span> <span class="n">files</span> <span class="k">from</span> <span class="n">the</span> <span class="n">PATCHES</span><span class="p">\</span><span class="n">WFW</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span> <span class="k">to</span>
+<span class="n">the</span> <span class="n">WFW</span> <span class="n">subdirectory</span> <span class="k">of</span>
+<span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="m">2</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="k">package</span><span class="p">.</span> <span class="n">When</span> <span class="n">you</span> <span class="k">do</span> <span class="n">so</span><span class="p">,</span> <span class="n">import</span> <span class="n">the</span> <span class="n">PDF</span> <span class="n">by</span> <span class="n">choosing</span> <span class="n">the</span> <span class="n">Import</span>
+<span class="n">button</span> <span class="k">in</span> <span class="k">Package</span> <span class="n">Properties</span><span class="p">,</span> <span class="k">then</span> <span class="n">choosing</span> <span class="n">PATCHRDR</span><span class="p">.</span><span class="n">PDF</span> <span class="k">from</span> <span class="n">the</span> <span class="k">list</span><span class="p">.</span>
+
+<span class="m">3</span><span class="p">)</span> <span class="n">Choose</span> <span class="n">the</span> <span class="n">Workstations</span> <span class="n">button</span><span class="p">.</span>
+
+<span class="m">4</span><span class="p">)</span> <span class="k">In</span> <span class="n">the</span> <span class="n">source</span> <span class="n">directory</span> <span class="n">box</span><span class="p">,</span> <span class="n">type</span> <span class="n">the</span> <span class="n">path</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span>
+<span class="n">directory</span> <span class="n">you</span> <span class="n">created</span> <span class="k">in</span> <span class="n">step</span> <span class="m">1.</span>
+
+<span class="m">5</span><span class="p">)</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span> <span class="n">the</span> <span class="k">package</span> <span class="n">for</span> <span class="n">updating</span> <span class="n">Windows</span> <span class="n">NT</span><span class="p">,</span> <span class="n">select</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="n">Patch</span> <span class="k">of</span> <span class="n">Redirector</span> <span class="k">and</span> <span class="n">choose</span> <span class="n">the</span> <span class="n">Properties</span> <span class="n">button</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Command</span> <span class="n">Line</span>
+<span class="n">Properties</span> <span class="n">dialog</span> <span class="n">box</span><span class="p">,</span> <span class="n">select</span> <span class="n">both</span> <span class="n">the</span> <span class="n">Automated</span> <span class="n">Command</span> <span class="n">Line</span> <span class="k">and</span> <span class="nf">System</span>
+<span class="p">(</span><span class="n">Background</span><span class="p">)</span> <span class="n">Task</span> <span class="k">options</span><span class="p">.</span>
+
+<span class="m">6</span><span class="p">)</span> <span class="n">Choose</span> <span class="n">OK</span> <span class="k">until</span> <span class="n">you</span> <span class="n">have</span> <span class="n">exited</span> <span class="n">all</span> <span class="n">dialog</span> <span class="n">boxes</span><span class="p">.</span>
+
+<span class="m">7</span><span class="p">)</span> <span class="n">Create</span> <span class="nf">Run</span> <span class="n">Command</span> <span class="n">On</span> <span class="n">Workstation</span> <span class="n">jobs</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="k">package</span>
+<span class="nf">command</span> <span class="n">on</span> <span class="n">the</span>
+<span class="n">appropriate</span> <span class="n">computers</span><span class="p">.</span>
+
+<span class="m">11.</span> <span class="n">Macintosh</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="n">The</span> <span class="n">Apple</span> <span class="n">Installer</span> <span class="n">is</span> <span class="n">required</span> <span class="k">to</span> <span class="n">install</span> <span class="n">the</span> <span class="n">appropriate</span> <span class="n">SMS</span> <span class="n">files</span> <span class="k">to</span> <span class="n">a</span>
+<span class="n">Macintosh</span> <span class="n">client</span><span class="p">.</span> <span class="n">The</span> <span class="n">Apple</span> <span class="n">Installer</span> <span class="n">is</span> <span class="k">not</span> <span class="n">supplied</span> <span class="k">with</span> <span class="n">this</span> <span class="n">copy</span> <span class="k">of</span>
+<span class="n">SMS</span><span class="p">.</span> <span class="n">After</span> <span class="n">SMS</span> <span class="n">Setup</span> <span class="n">has</span> <span class="n">completed</span> <span class="n">on</span> <span class="n">a</span> <span class="n">primary</span> <span class="n">site</span> <span class="n">server</span><span class="p">,</span> <span class="n">follow</span> <span class="n">the</span>
+<span class="n">directions</span> <span class="n">below</span> <span class="k">to</span> <span class="n">add</span> <span class="n">this</span> <span class="n">file</span> <span class="k">to</span> <span class="n">the</span> <span class="n">server</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">complete</span> <span class="n">the</span>
+<span class="n">steps</span> <span class="n">below</span> <span class="n">before</span> <span class="n">adding</span> <span class="n">any</span> <span class="n">Macintosh</span> <span class="n">clients</span> <span class="k">to</span> <span class="n">SMS</span><span class="p">,</span> <span class="k">and</span> <span class="n">before</span> <span class="n">adding</span>
+<span class="n">any</span> <span class="n">secondary</span> <span class="n">sites</span> <span class="n">that</span> <span class="n">have</span> <span class="n">Macintosh</span> <span class="n">clients</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">must</span> <span class="n">use</span> <span class="k">version</span> <span class="m">3.4</span> <span class="k">or</span> <span class="n">later</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Apple</span> <span class="n">Installer</span><span class="p">.</span> <span class="n">A</span> <span class="n">valid</span> <span class="k">version</span>
+<span class="k">of</span> <span class="n">the</span> <span class="n">Apple</span> <span class="n">Installer</span> <span class="n">can</span> <span class="n">be</span> <span class="n">found</span> <span class="n">on</span> <span class="n">any</span> <span class="k">set</span> <span class="k">of</span> <span class="nf">System</span> <span class="m">7.1</span> <span class="k">or</span> <span class="nf">System</span> <span class="m">7.5</span>
+<span class="n">Macintosh</span> <span class="n">operating</span> <span class="nf">system</span> <span class="n">disks</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">file</span> <span class="k">to</span> <span class="n">your</span> <span class="n">site</span> <span class="n">server</span><span class="p">,</span> <span class="k">from</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span>
+<span class="n">Server</span> <span class="n">Services</span> <span class="n">for</span> <span class="n">Macintosh</span> <span class="p">(</span><span class="n">SFM</span><span class="p">),</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">Macintosh</span> <span class="n">share</span> <span class="n">using</span> <span class="n">MacFile</span>
+<span class="k">in</span> <span class="n">the</span> <span class="n">File</span> <span class="n">Manager</span> <span class="n">on</span> <span class="n">an</span> <span class="n">NTFS</span> <span class="n">partition</span><span class="p">.</span> <span class="p">(</span><span class="n">Warning</span><span class="p">:</span> <span class="n">a</span> <span class="n">FAT</span> <span class="n">partition</span> <span class="n">does</span>
+<span class="k">not</span> <span class="n">store</span> <span class="n">Macintosh</span> <span class="n">files</span> <span class="n">correctly</span> <span class="k">and</span> <span class="n">will</span> <span class="n">fail</span><span class="p">.)</span> <span class="k">From</span> <span class="n">a</span> <span class="n">Macintosh</span>
+<span class="n">computer</span><span class="p">,</span> <span class="n">insert</span> <span class="n">the</span> <span class="n">install</span> <span class="n">disk</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">Apple</span> <span class="n">Installer</span><span class="p">.</span> <span class="n">Mount</span>
+<span class="n">the</span> <span class="n">Macintosh</span> <span class="n">share</span> <span class="n">volume</span> <span class="k">from</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span><span class="p">.</span>
+<span class="n">Copy</span> <span class="n">the</span> <span class="n">Apple</span> <span class="n">Installer</span> <span class="n">file</span> <span class="k">from</span> <span class="n">the</span> <span class="n">disk</span> <span class="k">to</span> <span class="n">the</span> <span class="n">share</span> <span class="n">volume</span><span class="p">.</span> <span class="k">Then</span> <span class="n">use</span>
+<span class="n">the</span> <span class="n">File</span> <span class="n">Manager</span> <span class="k">to</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">file</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">SITE</span><span class="p">.</span><span class="n">SRV</span><span class="p">\</span><span class="n">MAINCFG</span><span class="p">.</span><span class="n">BOX</span><span class="p">\</span><span class="n">CLIENT</span><span class="p">.</span><span class="n">SRC</span><span class="p">\</span><span class="n">MAC</span><span class="p">.</span><span class="n">BIN</span> <span class="n">directory</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">this</span> <span class="n">is</span> <span class="n">a</span> <span class="n">primary</span> <span class="n">site</span> <span class="k">with</span> <span class="n">no</span> <span class="n">secondary</span> <span class="n">sites</span><span class="p">,</span> <span class="n">the</span> <span class="n">Installer</span> <span class="n">file</span> <span class="n">will</span>
+<span class="n">automatically</span> <span class="n">be</span> <span class="n">copied</span> <span class="k">to</span> <span class="n">the</span> <span class="n">MAC</span><span class="p">.</span><span class="n">BIN</span> <span class="n">directory</span> <span class="k">in</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">share</span><span class="p">.</span> <span class="k">If</span>
+<span class="n">there</span> <span class="n">are</span> <span class="n">secondary</span> <span class="n">sites</span> <span class="n">connected</span><span class="p">,</span> <span class="k">then</span> <span class="n">the</span> <span class="n">Installer</span> <span class="n">may</span> <span class="k">not</span> <span class="n">be</span>
+<span class="n">automatically</span> <span class="n">copied</span> <span class="k">to</span> <span class="n">all</span> <span class="n">sites</span><span class="p">.</span> <span class="k">If</span> <span class="n">this</span> <span class="n">is</span> <span class="n">the</span> <span class="k">case</span><span class="p">,</span> <span class="n">a</span> <span class="n">change</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">date</span> <span class="k">of</span> <span class="n">the</span> <span class="nf">SYSTEM</span><span class="p">.</span><span class="n">MAP</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">directory</span> <span class="n">will</span> <span class="n">cause</span> <span class="n">all</span> <span class="n">files</span> <span class="k">to</span> <span class="n">be</span>
+<span class="n">updated</span><span class="p">,</span> <span class="n">including</span> <span class="n">secondary</span> <span class="n">sites</span><span class="p">.</span> <span class="n">After</span> <span class="n">copying</span> <span class="n">the</span> <span class="n">Installer</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">correct</span> <span class="n">path</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">modify</span> <span class="n">the</span> <span class="nf">SYSTEM</span><span class="p">.</span><span class="n">MAP</span> <span class="n">file</span> <span class="n">date</span> <span class="n">by</span> <span class="n">using</span> <span class="n">a</span> <span class="n">text</span>
+<span class="n">editor</span> <span class="k">to</span> <span class="n">open</span> <span class="n">the</span> <span class="nf">SYSTEM</span><span class="p">.</span><span class="n">MAP</span> <span class="n">file</span> <span class="k">and</span> <span class="n">save</span> <span class="n">the</span> <span class="n">file</span> <span class="k">with</span> <span class="n">no</span> <span class="n">changes</span> <span class="n">made</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="nf">Run</span> <span class="n">Command</span> <span class="n">On</span> <span class="n">Workstation</span> <span class="n">jobs</span> <span class="n">targeted</span> <span class="n">for</span> <span class="n">Macintosh</span> <span class="n">clients</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">Despooler</span> <span class="n">gives</span> <span class="n">the</span> <span class="k">package</span> <span class="n">volume</span> <span class="p">(</span><span class="n">SMS_PKGx</span> <span class="n">where</span> <span class="n">x</span> <span class="n">is</span> <span class="n">the</span> <span class="n">drive</span> <span class="n">where</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">is</span> <span class="n">installed</span><span class="p">)</span> <span class="n">all</span> <span class="n">permissions</span> <span class="p">(</span><span class="n">See</span> <span class="n">Files</span><span class="p">,</span> <span class="n">See</span> <span class="n">Folders</span><span class="p">,</span> <span class="k">and</span> <span class="n">Make</span>
+<span class="n">Changes</span><span class="p">)</span> <span class="k">to</span> <span class="n">Everyone</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">change</span> <span class="n">permissions</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">manually</span>
+<span class="k">set</span> <span class="n">the</span> <span class="n">permissions</span> <span class="n">on</span> <span class="n">the</span> <span class="k">package</span> <span class="n">volume</span> <span class="k">and</span> <span class="n">its</span> <span class="n">subfolders</span><span class="p">.</span> <span class="n">When</span> <span class="n">a</span>
+<span class="k">package</span> <span class="n">directory</span> <span class="n">is</span> <span class="n">shared</span> <span class="k">as</span> <span class="n">a</span> <span class="n">Macintosh</span> <span class="n">volume</span><span class="p">,</span> <span class="n">the</span> <span class="n">permissions</span> <span class="k">set</span> <span class="k">in</span>
+<span class="n">the</span> <span class="n">Access</span> <span class="n">dialog</span> <span class="n">box</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Setup</span> <span class="k">Package</span> <span class="n">For</span> <span class="n">Workstations</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">for</span>
+<span class="n">a</span> <span class="k">package</span> <span class="n">are</span> <span class="n">ignored</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Macintosh</span> <span class="n">volume</span><span class="p">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">the</span> <span class="n">Despooler</span>
+<span class="n">always</span> <span class="n">sets</span> <span class="n">the</span> <span class="n">permissions</span> <span class="n">for</span> <span class="n">the</span> <span class="k">package</span><span class="s1">'s Windows NT share to the
+permissions specified in the Access dialog box.
+
+For Macintosh clients, the Client Software settings in the Clients dialog
+box are ignored. When the SMS client software is installed on a Macintosh
+client, the Installer always installs the Inventory Agent, Package Command
+Manager, and MIF Entry program (MIFMAC) on the computer'</span><span class="n">s</span> <span class="n">hard</span> <span class="n">disk</span><span class="p">.</span> <span class="n">The</span>
+<span class="n">Installer</span> <span class="n">also</span> <span class="n">configures</span> <span class="n">the</span> <span class="n">computer</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">INVMAC</span> <span class="n">program</span>
+<span class="n">automatically</span> <span class="n">during</span> <span class="nf">system</span> <span class="n">startup</span><span class="p">.</span> <span class="n">The</span> <span class="n">INVMAC</span> <span class="n">program</span> <span class="n">automatically</span>
+<span class="n">starts</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span><span class="p">.</span> <span class="n">The</span> <span class="n">MIF</span> <span class="n">Entry</span> <span class="n">program</span> <span class="n">must</span> <span class="n">be</span> <span class="n">started</span>
+<span class="n">manually</span> <span class="n">by</span> <span class="n">the</span> <span class="n">user</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">have</span> <span class="n">two</span> <span class="n">Macintosh</span> <span class="n">computers</span> <span class="k">with</span> <span class="n">identical</span> <span class="n">computer</span> <span class="n">names</span> <span class="k">in</span> <span class="n">two</span>
+<span class="n">different</span> <span class="n">zones</span><span class="p">,</span> <span class="k">and</span> <span class="n">both</span> <span class="k">of</span> <span class="n">these</span> <span class="n">computers</span> <span class="n">have</span> <span class="n">been</span> <span class="n">added</span> <span class="k">to</span> <span class="n">the</span> <span class="n">same</span>
+<span class="n">SMS</span> <span class="n">domain</span><span class="p">,</span> <span class="k">then</span> <span class="n">you</span> <span class="n">should</span> <span class="k">not</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Machine</span> <span class="n">Path</span> <span class="k">to</span> <span class="n">specify</span> <span class="n">a</span> <span class="nf">Run</span>
+<span class="n">Command</span> <span class="n">On</span> <span class="n">Workstation</span> <span class="n">job</span> <span class="k">to</span> <span class="n">go</span> <span class="k">to</span> <span class="n">just</span> <span class="n">one</span> <span class="k">of</span> <span class="n">these</span> <span class="n">computers</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="k">do</span>
+<span class="n">use</span> <span class="n">a</span> <span class="n">Machine</span> <span class="n">Path</span> <span class="k">to</span> <span class="n">specify</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">name</span> <span class="n">for</span> <span class="n">the</span> <span class="n">job</span><span class="p">,</span> <span class="n">the</span> <span class="n">job</span> <span class="n">will</span>
+<span class="n">go</span> <span class="k">to</span> <span class="n">both</span> <span class="k">of</span> <span class="n">these</span> <span class="n">computers</span><span class="p">,</span> <span class="k">and</span> <span class="n">you</span> <span class="n">cannot</span> <span class="n">control</span> <span class="n">which</span> <span class="n">one</span> <span class="n">it</span> <span class="n">will</span> <span class="n">go</span>
+<span class="k">to</span><span class="p">.</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">PDFs</span> <span class="n">supplied</span> <span class="k">with</span> <span class="n">SMS</span> <span class="k">to</span> <span class="n">distribute</span> <span class="n">packages</span> <span class="k">to</span> <span class="n">Macintosh</span>
+<span class="n">clients</span><span class="p">.</span> <span class="n">The</span> <span class="n">applications</span> <span class="n">for</span> <span class="n">which</span> <span class="n">PDFs</span> <span class="n">are</span> <span class="n">supplied</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">names</span> <span class="k">of</span>
+<span class="n">each</span> <span class="n">file</span><span class="p">,</span> <span class="n">are</span> <span class="n">listed</span> <span class="n">at</span> <span class="n">the</span> <span class="k">end</span> <span class="k">of</span> <span class="n">this</span> <span class="n">section</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="k">set</span> <span class="n">up</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">one</span> <span class="k">of</span> <span class="n">these</span> <span class="n">applications</span><span class="p">,</span>
+<span class="n">press</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">key</span> <span class="k">while</span> <span class="n">double</span><span class="p">-</span><span class="n">clicking</span> <span class="n">the</span> <span class="n">Setup</span> <span class="n">icon</span><span class="p">.</span> <span class="n">Continue</span>
+<span class="n">pressing</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">key</span> <span class="k">until</span> <span class="n">the</span> <span class="n">first</span> <span class="n">dialog</span> <span class="n">box</span> <span class="n">appears</span><span class="p">.</span> <span class="n">For</span> <span class="n">more</span>
+<span class="n">information</span> <span class="n">on</span> <span class="n">setting</span> <span class="n">up</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span> <span class="n">for</span> <span class="n">these</span>
+<span class="n">applications</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">README</span> <span class="n">file</span> <span class="n">for</span> <span class="n">each</span> <span class="n">application</span> <span class="n">for</span> <span class="n">information</span> <span class="n">on</span>
+<span class="n">setting</span> <span class="n">up</span> <span class="n">the</span> <span class="n">application</span> <span class="n">on</span> <span class="n">the</span> <span class="n">network</span><span class="p">.</span>
+
+<span class="n">Two</span> <span class="k">options</span> <span class="n">for</span> <span class="n">installation</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span> <span class="n">are</span> <span class="n">offered</span><span class="p">.</span> <span class="n">One</span> <span class="n">option</span> <span class="n">allows</span>
+<span class="n">the</span> <span class="n">user</span> <span class="k">to</span> <span class="n">install</span> <span class="n">a</span> <span class="n">complete</span> <span class="k">version</span> <span class="n">on</span> <span class="n">their</span> <span class="n">Macintosh</span><span class="p">.</span> <span class="n">The</span> <span class="n">other</span> <span class="n">option</span>
+<span class="n">allows</span> <span class="n">the</span> <span class="n">user</span> <span class="k">to</span> <span class="n">install</span> <span class="n">a</span> <span class="k">version</span> <span class="n">that</span> <span class="n">runs</span> <span class="k">from</span> <span class="n">a</span> <span class="n">network</span> <span class="n">share</span> <span class="n">volume</span><span class="p">.</span>
+<span class="n">For</span> <span class="n">Macintosh</span> <span class="n">applications</span> <span class="n">shared</span> <span class="n">this</span> <span class="n">way</span><span class="p">,</span> <span class="n">all</span> <span class="n">users</span> <span class="n">will</span> <span class="nf">run</span> <span class="n">the</span>
+<span class="n">application</span> <span class="n">directly</span> <span class="k">from</span> <span class="n">the</span> <span class="n">server</span> <span class="k">with</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span>
+<span class="p">(</span><span class="n">unlike</span> <span class="n">PC</span> <span class="n">applications</span><span class="p">,</span> <span class="n">which</span> <span class="n">can</span> <span class="n">be</span> <span class="n">distributed</span> <span class="k">to</span> <span class="n">several</span> <span class="n">servers</span> <span class="n">for</span>
+<span class="nf">load</span> <span class="n">balancing</span><span class="p">).</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">table</span> <span class="n">lists</span> <span class="n">each</span> <span class="n">application</span> <span class="n">for</span> <span class="n">which</span> <span class="n">PDFs</span> <span class="n">are</span> <span class="n">supplied</span><span class="p">,</span> <span class="k">and</span>
+<span class="n">the</span> <span class="n">PDF</span> <span class="k">to</span> <span class="n">use</span> <span class="n">when</span> <span class="n">installing</span> <span class="n">the</span> <span class="n">application</span><span class="p">.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">same</span> <span class="n">PDF</span> <span class="n">for</span> <span class="n">both</span>
+<span class="n">installing</span> <span class="n">the</span> <span class="n">application</span> <span class="n">on</span> <span class="n">Macintosh</span> <span class="n">clients</span><span class="p">,</span> <span class="k">and</span> <span class="n">for</span> <span class="n">installing</span> <span class="n">the</span>
+<span class="n">application</span> <span class="n">for</span> <span class="n">shared</span> <span class="n">use</span> <span class="n">on</span> <span class="n">a</span> <span class="n">server</span><span class="p">.</span>
+
+<span class="n">Application</span>                             <span class="n">PDF</span> <span class="n">File</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Office</span> <span class="k">version</span> <span class="m">4.2</span>           <span class="n">M_OFF42</span><span class="p">.</span><span class="n">PDF</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Word</span> <span class="k">version</span> <span class="m">6.0</span>             <span class="n">M_WRD60</span><span class="p">.</span><span class="n">PDF</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Word</span> <span class="k">version</span> <span class="m">5.1</span><span class="n">a</span>            <span class="n">M_WRD51a</span><span class="p">.</span><span class="n">PDF</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Excel</span> <span class="k">version</span> <span class="m">5.0</span>            <span class="n">M_EXC50</span><span class="p">.</span><span class="n">PDF</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Excel</span> <span class="k">version</span> <span class="m">4.0</span>            <span class="n">M_EXC40</span><span class="p">.</span><span class="n">PDF</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">PowerPoint</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="k">version</span> <span class="m">4.0</span>      <span class="n">M_PPT40</span><span class="p">.</span><span class="n">PDF</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">PowerPoint</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="k">version</span> <span class="m">3.0</span>      <span class="n">M_PPT30</span><span class="p">.</span><span class="n">PDF</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Project</span> <span class="k">version</span> <span class="m">3.0</span>          <span class="n">M_PRJ30</span><span class="p">.</span><span class="n">PDF</span>
+<span class="n">Microsoft</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="n">Works</span> <span class="k">version</span> <span class="m">4.0</span><span class="n">a</span>           <span class="n">M_WRK40a</span><span class="p">.</span><span class="n">PDF</span>
+
+<span class="m">12.</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="n">SMSOS2AG</span><span class="p">.</span><span class="n">EXE</span> <span class="p">(</span><span class="n">called</span> <span class="n">the</span> <span class="n">SMS_NET_MAPPER</span> <span class="n">service</span> <span class="k">in</span> <span class="n">Beta</span> <span class="n">versions</span> <span class="k">of</span> <span class="n">SMS</span><span class="p">)</span> <span class="n">is</span>
+<span class="nf">run</span> <span class="k">as</span> <span class="n">an</span> <span class="n">executable</span> <span class="n">file</span> <span class="n">instead</span> <span class="k">of</span> <span class="n">running</span> <span class="k">as</span> <span class="n">a</span> <span class="n">service</span><span class="p">.</span> <span class="n">On</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span> <span class="m">2.1</span><span class="n">x</span>
+<span class="n">clients</span><span class="p">,</span> <span class="n">Client</span> <span class="n">Setup</span> <span class="n">configures</span> <span class="n">SMSOS2AG</span><span class="p">.</span><span class="n">EXE</span> <span class="k">to</span> <span class="nf">run</span> <span class="k">as</span> <span class="n">an</span> <span class="n">executable</span>
+<span class="n">program</span> <span class="k">from</span> <span class="n">STARTUP</span><span class="p">.</span><span class="n">CMD</span><span class="p">.</span> <span class="n">Be</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">SMSOS2AG</span><span class="p">.</span><span class="n">EXE</span> <span class="n">appears</span> <span class="k">in</span> <span class="n">STARTUP</span><span class="p">.</span><span class="n">CMD</span>
+<span class="n">after</span> <span class="n">the</span> <span class="n">commands</span> <span class="k">to</span> <span class="n">start</span> <span class="n">the</span> <span class="n">network</span><span class="p">.</span> <span class="n">SMSOS2AG</span><span class="p">.</span><span class="n">EXE</span> <span class="n">provides</span> <span class="n">network</span>
+<span class="n">support</span> <span class="n">for</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="k">in</span> <span class="n">the</span> <span class="n">WindowsTM</span> <span class="n">subsystem</span> <span class="k">of</span> <span class="n">OS</span><span class="p">/</span><span class="m">2.</span>
+<span class="n">Note</span> <span class="n">that</span> <span class="n">SMSOS2AG</span><span class="p">.</span><span class="n">EXE</span> <span class="n">does</span> <span class="k">not</span> <span class="n">have</span> <span class="n">an</span> <span class="m">8</span> <span class="n">character</span> <span class="n">limit</span> <span class="n">for</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">server</span> <span class="k">or</span> <span class="n">logon</span> <span class="n">server</span> <span class="n">for</span> <span class="n">LAN</span> <span class="n">Manager</span><span class="p">.</span>
+
+<span class="n">SMSOS2AG</span><span class="p">.</span><span class="n">EXE</span> <span class="n">provides</span> <span class="n">network</span> <span class="n">support</span> <span class="n">for</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">WindowsTM</span> <span class="n">subsystem</span> <span class="k">of</span> <span class="n">OS</span><span class="p">/</span><span class="m">2.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">SMSOS2AG</span><span class="p">.</span><span class="n">EXE</span> <span class="n">does</span> <span class="k">not</span> <span class="n">have</span> <span class="n">an</span> <span class="m">8</span>
+<span class="n">character</span> <span class="n">limit</span> <span class="n">for</span> <span class="n">the</span> <span class="k">package</span> <span class="n">server</span> <span class="k">or</span> <span class="n">logon</span> <span class="n">server</span> <span class="n">for</span> <span class="n">LAN</span> <span class="n">Manager</span><span class="p">.</span>
+
+<span class="n">On</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span> <span class="n">computers</span><span class="p">,</span> <span class="n">the</span> <span class="n">Client</span> <span class="n">Setup</span> <span class="n">program</span> <span class="n">requires</span> <span class="n">that</span> <span class="n">OS</span><span class="p">/</span><span class="m">2</span> <span class="n">be</span> <span class="n">installed</span>
+<span class="n">on</span> <span class="n">drive</span> <span class="n">C</span><span class="p">.</span>
+
+<span class="m">13.</span> <span class="n">Troubleshooting</span> <span class="n">Client</span> <span class="n">Operations</span>
+<span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">having</span> <span class="n">trouble</span> <span class="n">installing</span> <span class="k">or</span> <span class="n">running</span> <span class="n">SMS</span> <span class="n">client</span> <span class="n">software</span><span class="p">,</span> <span class="n">check</span>
+<span class="n">for</span> <span class="n">the</span> <span class="n">following</span> <span class="p">(</span><span class="n">also</span><span class="p">,</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">Appendix</span> <span class="n">A</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Systems</span>
+<span class="n">Management</span> <span class="n">Server</span> <span class="n">Administrator</span><span class="s1">'s Guide):
+
+The appropriate Windows network drivers are installed. Examine the network
+= entry in the Windows SYSTEM.INI file. One of the following entries should
+be present: lanman21.drv, wfwnet.drv, msnet.drv, or netware.drv. If the
+appropriate driver is not loaded, Package Command Manager and Program Group
+Control will not start. Make sure that the login account on the client has
+read access to the SMS logon server'</span><span class="n">s</span> <span class="n">SMS_SHR</span><span class="p">.</span> <span class="n">For</span> <span class="n">problems</span> <span class="k">with</span> <span class="nf">Run</span>
+<span class="n">Command</span> <span class="n">On</span> <span class="n">Workstation</span> <span class="n">packages</span><span class="p">:</span> <span class="n">Make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">packages</span> <span class="n">are</span> <span class="n">designated</span> <span class="n">for</span>
+<span class="n">the</span> <span class="n">appropriate</span> <span class="n">operating</span> <span class="n">systems</span><span class="p">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">if</span> <span class="n">a</span> <span class="k">package</span> <span class="n">is</span> <span class="n">targeted</span>
+<span class="n">for</span> <span class="n">clients</span> <span class="n">running</span> <span class="n">MS</span><span class="p">-</span><span class="n">DOS</span><span class="p">,</span> <span class="n">it</span> <span class="n">will</span> <span class="k">not</span> <span class="n">appear</span> <span class="n">on</span> <span class="n">clients</span> <span class="n">running</span> <span class="n">Windows</span>
+<span class="k">version</span> <span class="m">3.1</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">date</span> <span class="k">and</span> <span class="n">time</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span> <span class="n">must</span> <span class="n">be</span> <span class="n">consistent</span> <span class="k">with</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">server</span><span class="s1">'s
+date and time. If these values are not the same, a situation can occur
+where the package expiration time has already passed by the time the
+package arrives.
+
+Check the event log for failure explanations. Likely problems include
+insufficient disk space on a client or a network connection failure. In the
+latter case, try to make the network connection with the net use command.
+
+For shared packages (network applications), see "Troubleshooting Network
+Application" later in this document.
+
+14. Services
+Only use the Very Fast mode for the Response setting in the Services dialog
+box for test purposes or for very small sites. The Very Fast mode places a
+heavy load on the site server--especially if the site is large.
+
+15. Inventory
+On clients running MS-DOS, Windows version 3.1, and Windows for Workgroups,
+the Inventory Agent always reports the protocol that it used to connect to
+the SMS logon server where it is running from. If information about other
+protocols is available to the Inventory Agent, it will also report these
+protocols.
+
+On clients running Windows for Workgroups or LAN Manager, you must run the
+SMSLS batch file or Inventory Agent using the Full (or Enhanced)
+Redirector. If you use the Basic Redirector, the Inventory Agent will not
+be able to report inventory and will prompt you for an SMSID (press the
+Enter key) or terminate with an error that says your drive may be full. To
+solve this problem, start the network software using the Full or Enhanced
+Redirector.
+
+If you have clients that have both NetWare and LAN Manager networking
+capabilities, you should set up SMS to use only one of those network
+operating systems on those clients. Note that SMS supports only one network
+operating system at a time on a client.
+
+To deliberately have users not run logon scripts (especially with dual LAN
+Manager and NetWare stacks):
+
+Both: Create a user group and add the users who you don'</span><span class="n">t</span> <span class="n">want</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span>
+<span class="n">script</span><span class="p">.</span>
+
+<span class="n">NetWare</span><span class="p">:</span> <span class="n">Modify</span> <span class="n">the</span> <span class="nf">system</span> <span class="n">logon</span> <span class="n">script</span> <span class="n">for</span> <span class="n">each</span> <span class="n">server</span> <span class="n">so</span> <span class="n">that</span> <span class="n">members</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">group</span> <span class="n">skip</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">script</span> <span class="n">commands</span><span class="p">.</span> <span class="k">Or</span> <span class="n">you</span> <span class="n">can</span> <span class="n">modify</span> <span class="n">SCRIPT</span><span class="p">.</span><span class="n">SCR</span> <span class="n">so</span>
+<span class="n">that</span> <span class="n">members</span> <span class="k">of</span> <span class="n">the</span> <span class="n">group</span> <span class="n">skip</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">script</span> <span class="n">commands</span><span class="p">.</span>
+
+<span class="n">LAN</span> <span class="n">Manager</span><span class="p">:</span> <span class="n">Through</span> <span class="n">User</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">modify</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">scripts</span> <span class="n">for</span> <span class="n">the</span> <span class="n">entire</span>
+<span class="n">group</span> <span class="k">to</span> <span class="n">point</span> <span class="k">to</span> <span class="n">a</span> <span class="n">different</span> <span class="n">logon</span> <span class="n">script</span> <span class="n">name</span> <span class="n">that</span> <span class="n">has</span> <span class="n">no</span> <span class="n">file</span> <span class="n">extension</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">handle</span> <span class="n">computers</span> <span class="k">with</span> <span class="n">duplicate</span> <span class="n">SMSIDs</span><span class="p">,</span> <span class="n">remove</span> <span class="k">and</span> <span class="n">reinstall</span> <span class="n">SMS</span> <span class="n">on</span> <span class="n">the</span>
+<span class="n">computers</span> <span class="n">where</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">SMSID</span><span class="p">.</span> <span class="k">If</span> <span class="n">two</span> <span class="k">or</span> <span class="n">more</span> <span class="n">clients</span> <span class="n">have</span>
+<span class="n">the</span> <span class="n">same</span> <span class="n">SMSID</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">new</span> <span class="n">SMSID</span> <span class="n">for</span> <span class="n">those</span> <span class="n">computers</span> <span class="n">by</span> <span class="m">1</span><span class="p">)</span>
+<span class="n">removing</span> <span class="n">SMS</span> <span class="k">from</span> <span class="n">the</span> <span class="n">computers</span> <span class="n">where</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">SMSID</span> <span class="k">and</span> <span class="m">2</span><span class="p">)</span>
+<span class="n">readding</span> <span class="n">the</span> <span class="n">computer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">site</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">remove</span> <span class="n">SMS</span> <span class="k">from</span> <span class="n">a</span> <span class="n">client</span> <span class="n">by</span>
+<span class="n">using</span> <span class="n">the</span> <span class="n">Client</span> <span class="n">Setup</span> <span class="n">program</span> <span class="k">with</span> <span class="n">the</span> <span class="p">/</span><span class="n">R</span> <span class="n">switch</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">manually</span> <span class="n">add</span> <span class="n">a</span>
+<span class="n">computer</span> <span class="n">by</span> <span class="n">running</span> <span class="n">the</span> <span class="n">SMSLS</span> <span class="n">batch</span> <span class="n">file</span> <span class="k">from</span> <span class="n">the</span> <span class="n">SMS_SHR</span> <span class="k">of</span> <span class="n">an</span> <span class="n">SMS</span> <span class="n">logon</span>
+<span class="n">server</span><span class="p">.</span> <span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">removing</span> <span class="n">SMS</span> <span class="k">from</span> <span class="n">a</span> <span class="n">client</span><span class="p">,</span> <span class="n">see</span>
+<span class="s2">"Removing SMS Components from Clients"</span> <span class="k">in</span> <span class="n">Chapter</span> <span class="m">3</span> <span class="k">of</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">Administrator</span><span class="s1">'s Guide. For more information about manually adding clients
+to a site, see "Manually Adding Clients to a Site" in Chapter 3 of the SMS
+Administrator'</span><span class="n">s</span> <span class="n">Guide</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">Inventory</span> <span class="n">Strategy</span> <span class="n">When</span> <span class="n">Network</span> <span class="n">Is</span> <span class="n">Slow</span> <span class="n">setting</span> <span class="n">takes</span> <span class="n">effect</span> <span class="n">when</span> <span class="n">the</span>
+<span class="k">next</span> <span class="n">Logon</span> <span class="n">Script</span> <span class="n">Configuration</span> <span class="n">Interval</span> <span class="n">elapses</span><span class="p">.</span> <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">this</span> <span class="n">interval</span>
+<span class="n">is</span> <span class="m">24</span> <span class="n">hours</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">confirm</span> <span class="n">that</span> <span class="n">the</span> <span class="n">Site</span> <span class="n">Configuration</span> <span class="n">Manager</span> <span class="n">has</span>
+<span class="n">updated</span> <span class="n">this</span> <span class="n">setting</span> <span class="n">at</span> <span class="n">the</span> <span class="n">site</span> <span class="n">by</span> <span class="n">looking</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Site</span> <span class="n">Configuration</span>
+<span class="n">Manager</span><span class="s1">'s trace log (look for NETSPEED.COM and NETSPEED.DAT).
+
+If a computer running MS-DOS or Windows has an inventory report that has no
+changes from the previous inventory, the Inventory Processor does not
+create a Delta-MIF to report the time of the inventory scan. Instead, the
+Inventory Processor waits for the inventory heartbeat period to elapse
+(compares the last inventory report with the time of the current inventory
+report) before it sends a Delta-MIF reporting no change and the scan time.
+By default, the heartbeat period is 4 days. This means that the Last
+Hardware Scan and Last Software Scan dates displayed in the Workstation
+Status section of the Personal Computer Properties window could be
+different from the date of the actual most recent scan by as much as the
+heartbeat period. Note if a change occurs in a computer'</span><span class="n">s</span> <span class="n">inventory</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">Inventory</span> <span class="n">Processor</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">Delta</span><span class="p">-</span><span class="n">MIF</span> <span class="n">reporting</span> <span class="n">the</span> <span class="n">change</span> <span class="k">and</span> <span class="n">the</span> <span class="n">scan</span>
+<span class="n">time</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">the</span> <span class="n">Inventory</span> <span class="n">Data</span> <span class="n">Loader</span> <span class="n">sends</span> <span class="n">a</span> <span class="n">resync</span> <span class="nf">command</span> <span class="k">to</span> <span class="n">a</span> <span class="n">client</span> <span class="k">and</span> <span class="n">there</span>
+<span class="n">has</span> <span class="n">been</span> <span class="n">no</span> <span class="n">change</span> <span class="k">to</span> <span class="n">the</span> <span class="n">inventory</span><span class="p">,</span> <span class="n">the</span> <span class="n">client</span> <span class="n">will</span> <span class="k">not</span> <span class="n">report</span> <span class="n">a</span> <span class="n">resync</span>
+<span class="n">inventory</span> <span class="k">until</span> <span class="n">the</span> <span class="n">inventory</span> <span class="n">heartbeat</span> <span class="n">period</span> <span class="n">has</span> <span class="n">elapsed</span> <span class="p">(</span><span class="m">4</span> <span class="n">days</span><span class="p">,</span> <span class="n">by</span>
+<span class="n">default</span><span class="p">).</span>
+
+<span class="m">16.</span> <span class="n">Audited</span> <span class="n">Software</span>
+<span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">customize</span> <span class="n">the</span> <span class="n">AUDIT</span><span class="p">.</span><span class="n">RUL</span> <span class="n">file</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">rename</span> <span class="n">the</span> <span class="n">rule</span>
+<span class="n">file</span> <span class="k">to</span> <span class="n">a</span> <span class="n">different</span> <span class="n">filename</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">upgrade</span> <span class="n">the</span> <span class="n">site</span><span class="p">,</span> <span class="n">SMS</span> <span class="n">Setup</span> <span class="n">will</span>
+<span class="n">overwrite</span> <span class="n">the</span> <span class="n">AUDIT</span><span class="p">.</span><span class="n">RUL</span> <span class="n">file</span> <span class="k">with</span> <span class="n">the</span> <span class="k">version</span> <span class="n">on</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span>
+
+<span class="n">RUL2CFG</span><span class="p">.</span><span class="n">BAT</span> <span class="n">requires</span> <span class="n">only</span> <span class="n">one</span> <span class="n">parameter</span><span class="p">.</span> <span class="n">On</span> <span class="n">page</span> <span class="m">219</span> <span class="k">of</span> <span class="n">the</span> <span class="n">SMS</span>
+<span class="n">Administrator</span><span class="s1">'s Guide, the text states that RUL2CFG.BAT requires 2
+parameters. RUL2CFG.BAT requires only the package rule filename. The CFG
+file is not requires because the AUDIT programs must always have a CFG file
+named AUDIT.CFG.
+
+If you do not use the SMS Database Manager to remove the Audited Software
+group, the SMS site database will store the cumulative inventory for the
+Audited Software group (that is, any updates will simply be added to the
+current record for the group). The SMS Database Manager (DBCLEAN.EXE)
+is provided so that you remove the Audited Software group when you want to
+perform a software audit that contains only the latest audited software.
+
+Before you create a job using the Audit 1.00 package, you must run
+RUL2CFG.EXE to create the AUDIT.CFG file used for the software auditing
+package. You must do this the first time you create a job with the package.
+If you make changes to the package rule file, you should also run
+RUL2CFG.EXE again to update the AUDIT.CFG file.
+
+The RUL2CFG.BAT file puts the AUDIT.CFG files it creates into the
+PRIMSITE.SRV\AUDIT\PACKAGE\ platform.BIN directories (where platform is the
+processor type). The AUDIT.CFG file is not placed in the
+PRIMSITE.SRV\AUDIT\PACKAGE directory as stated in the documentation. Also,
+package auditing using the RUL2CFG.BAT file in the default location
+(PRIMSITE.SRV\AUDIT) works only if the source directory for the package
+auditing is the PRIMSITE.SRV\AUDIT\PACKAGE directory.
+
+For package inventory rules or the package rule file, do not enclose a
+clause containing OR operators with parentheses. Parentheses (grouping)
+around clauses containing an OR operator in inventory rules or the package
+rule file cannot be compiled by RUL2CFG.EXE nor Maintenance Manager.
+
+The package rule file does not support an implicit AND clause before a set
+of OR clauses. The RUL2CFG.EXE compiler will not compile a package rule
+file containing an AND clause before a set of OR clauses. If you place the
+AND clause after the OR clauses, the RUL2CFG.EXE compiler will successfully
+compile the CFG file.
+
+The following rule will fail to compile:
+file "file1"
+(
+    file "file2"
+    or
+    file "file3"
+    or
+    file "file4"
+)
+
+However, the following rule will compile:
+(
+    file "file2"
+    or
+    file "file3"
+    or
+    file "file4"
+)
+file "file1"
+
+Package rule file (AUDIT.RUL) does not support an explicit AND operator.
+The RUL2CFG.EXE compiler will not compile a package rule file containing an
+explicit AND operator. If you use no operator between two files, this is
+treated as an implicit AND operator. To combine file rules with AND
+operators, simply list them one after the other without an operator.
+
+The following rule will fail to compile:
+file "file1"
+AND
+file "file2"
+
+However, the following rule will compile:
+file "file1"
+file "file2"
+
+17. Outboxes
+You cannot move Outboxes to another drive or server. Additionally, you
+cannot rename Outboxes.
+
+18. Creating and Distributing Packages
+When you create a package, in the Workstation Command Line box you can type
+a path relative to the package source directory. For example, if the
+package source directory is C:\APP, and the command line you want to run is
+C:\APP\SETUP\SETUP.EXE, you can type setup\setup.exe in the Workstation
+Command Line box.
+
+When you use either a Run Command On Workstation job or a Share Package On
+Server job for a package created using a PDF, clients that run the job may
+be rebooted when the job runs. Usually, a client reboots only the first
+time it receives a package created with a PDF. On some clients running
+Windows NT Workstation version 3.1, the reboot may damage data in files
+held open by other applications running at the same time. This happens only
+on clients running Windows NT Workstation version 3.1. When you create a
+job to install a Microsoft application that has a PDF, you must copy the
+application'</span><span class="n">s</span> <span class="n">SMSPROXY</span> <span class="n">directory</span> <span class="k">to</span> <span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span><span class="p">.</span> <span class="n">Copy</span> <span class="n">the</span>
+<span class="n">PRIMSITE</span><span class="p">.</span><span class="n">SRC</span><span class="p">\</span><span class="n">IMPORT</span><span class="p">.</span><span class="n">SRC</span><span class="p">\</span><span class="n">appname</span><span class="p">\</span><span class="n">SMSPROXY</span> <span class="n">directory</span> <span class="p">(</span><span class="k">and</span> <span class="n">its</span> <span class="n">contents</span><span class="p">)</span> <span class="k">to</span>
+<span class="n">the</span> <span class="k">package</span> <span class="n">source</span> <span class="n">directory</span> <span class="n">you</span> <span class="nb">create</span> <span class="n">for</span> <span class="n">the</span> <span class="n">application</span><span class="p">.</span> <span class="n">You</span> <span class="n">must</span>
+<span class="n">perform</span> <span class="n">this</span> <span class="n">step</span> <span class="n">when</span> <span class="n">creating</span> <span class="n">a</span> <span class="k">package</span> <span class="k">to</span> <span class="n">either</span> <span class="n">install</span> <span class="n">the</span> <span class="n">application</span>
+<span class="n">on</span> <span class="n">clients</span> <span class="k">or</span> <span class="k">to</span> <span class="k">set</span> <span class="n">the</span> <span class="n">application</span> <span class="n">up</span> <span class="n">on</span> <span class="n">a</span> <span class="n">server</span> <span class="k">as</span> <span class="n">a</span> <span class="n">shared</span>
+<span class="n">application</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="nf">send</span> <span class="n">a</span> <span class="n">Share</span> <span class="k">Package</span> <span class="n">On</span> <span class="n">Server</span> <span class="n">job</span> <span class="k">to</span> <span class="n">install</span> <span class="n">a</span> <span class="n">shared</span> <span class="n">application</span>
+<span class="n">for</span> <span class="n">which</span> <span class="n">SMS</span> <span class="n">supplies</span> <span class="n">a</span> <span class="n">PDF</span> <span class="k">and</span> <span class="n">the</span> <span class="n">target</span> <span class="n">computers</span> <span class="k">include</span> <span class="n">at</span> <span class="n">least</span> <span class="n">one</span>
+<span class="n">client</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">version</span> <span class="m">3.1</span><span class="p">,</span> <span class="n">the</span> <span class="n">job</span> <span class="n">status</span> <span class="n">will</span> <span class="n">appear</span> <span class="k">as</span>
+<span class="s2">"Retry,"</span> <span class="n">even</span> <span class="k">if</span> <span class="n">all</span> <span class="n">the</span> <span class="n">target</span> <span class="n">computers</span> <span class="n">have</span> <span class="nf">run</span> <span class="n">the</span> <span class="nf">command</span>
+<span class="n">successfully</span><span class="p">.</span> <span class="n">When</span> <span class="n">you</span> <span class="n">see</span> <span class="n">a</span> <span class="n">Share</span> <span class="k">Package</span> <span class="n">On</span> <span class="n">Server</span> <span class="n">job</span> <span class="k">with</span> <span class="s2">"Retry"</span>
+<span class="n">status</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">Job</span> <span class="n">Status</span> <span class="n">Details</span> <span class="n">dialog</span> <span class="n">box</span> <span class="k">to</span> <span class="n">get</span> <span class="n">more</span> <span class="n">accurate</span>
+<span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">overall</span> <span class="n">job</span> <span class="n">status</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">also</span> <span class="n">contact</span> <span class="n">the</span> <span class="n">users</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">clients</span> <span class="n">running</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="k">version</span> <span class="m">3.1</span> <span class="k">to</span> <span class="n">determine</span> <span class="k">if</span> <span class="n">the</span> <span class="n">software</span> <span class="n">was</span>
+<span class="n">installed</span> <span class="n">correctly</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">used</span> <span class="n">a</span> <span class="n">Beta</span> <span class="k">version</span> <span class="k">of</span> <span class="n">SMS</span> <span class="k">to</span> <span class="nb">create</span> <span class="k">and</span> <span class="n">distribute</span> <span class="n">a</span> <span class="k">package</span> <span class="n">for</span> <span class="n">an</span>
+<span class="n">ACME</span> <span class="n">application</span> <span class="p">(</span><span class="n">an</span> <span class="n">application</span> <span class="n">for</span> <span class="n">which</span> <span class="n">a</span> <span class="n">PDF</span> <span class="n">is</span> <span class="n">supplied</span><span class="p">),</span> <span class="n">you</span> <span class="n">should</span>
+<span class="n">delete</span> <span class="n">these</span> <span class="n">packages</span> <span class="n">before</span> <span class="n">you</span> <span class="n">use</span> <span class="n">this</span> <span class="k">version</span> <span class="k">of</span> <span class="n">SMS</span><span class="p">.</span> <span class="n">You</span> <span class="n">should</span> <span class="nb">create</span>
+<span class="n">a</span> <span class="n">remove</span> <span class="k">package</span> <span class="n">job</span> <span class="n">for</span> <span class="n">each</span> <span class="k">of</span> <span class="n">the</span> <span class="n">old</span> <span class="n">packages</span><span class="p">,</span> <span class="nf">wait</span> <span class="k">until</span> <span class="n">those</span> <span class="n">jobs</span>
+<span class="n">finish</span><span class="p">,</span> <span class="k">then</span> <span class="n">delete</span> <span class="n">the</span> <span class="n">packages</span> <span class="k">in</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span><span class="p">.</span> <span class="k">Then</span> <span class="n">you</span> <span class="n">can</span>
+<span class="n">reimport</span> <span class="n">the</span> <span class="n">new</span> <span class="n">PDFs</span><span class="p">,</span> <span class="n">rebuild</span> <span class="n">the</span> <span class="n">packages</span> <span class="k">and</span> <span class="n">program</span> <span class="n">groups</span><span class="p">,</span> <span class="k">and</span> <span class="n">resend</span>
+<span class="n">the</span> <span class="n">packages</span><span class="p">.</span>
+
+<span class="m">19.</span> <span class="n">Program</span> <span class="n">Group</span> <span class="n">Control</span>
+<span class="n">After</span> <span class="n">you</span> <span class="n">initially</span> <span class="n">install</span> <span class="n">SMS</span> <span class="n">on</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span> <span class="n">domain</span> <span class="k">and</span> <span class="n">add</span> <span class="n">a</span> <span class="n">client</span>
+<span class="k">to</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span> <span class="n">domain</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">see</span> <span class="n">the</span> <span class="n">following</span> <span class="n">message</span> <span class="n">when</span> <span class="n">running</span>
+<span class="n">Program</span> <span class="n">Group</span> <span class="n">Control</span><span class="p">:</span>
+
+<span class="n">Program</span> <span class="n">Group</span> <span class="n">Control</span><span class="p">:</span> <span class="n">Could</span> <span class="k">not</span> <span class="n">open</span> <span class="n">the</span> <span class="n">application</span> <span class="n">database</span> <span class="n">due</span> <span class="k">to</span> <span class="n">a</span> <span class="n">SMS</span>
+<span class="n">profile</span> <span class="n">error</span><span class="p">.</span>
+
+<span class="k">If</span> <span class="n">you</span> <span class="n">add</span> <span class="n">a</span> <span class="n">client</span> <span class="k">to</span> <span class="n">the</span> <span class="n">site</span> <span class="n">by</span> <span class="n">running</span> <span class="n">the</span> <span class="n">SMSLS</span> <span class="n">batch</span> <span class="n">file</span> <span class="p">(</span><span class="k">or</span> <span class="n">Client</span>
+<span class="n">Setup</span><span class="p">)</span> <span class="k">from</span> <span class="n">a</span> <span class="n">logon</span> <span class="n">server</span> <span class="k">with</span> <span class="n">no</span> <span class="n">servers</span> <span class="k">in</span> <span class="n">the</span> <span class="p">[</span><span class="n">Servers</span><span class="p">]</span> <span class="n">section</span><span class="p">,</span>
+<span class="n">Program</span> <span class="n">Group</span> <span class="n">Control</span> <span class="n">will</span> <span class="n">display</span> <span class="n">this</span> <span class="n">message</span><span class="p">.</span>
+
+<span class="n">After</span> <span class="n">you</span> <span class="n">initially</span> <span class="n">install</span> <span class="n">SMS</span> <span class="n">on</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span> <span class="n">domain</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span>
+<span class="n">ensure</span> <span class="n">that</span> <span class="n">all</span> <span class="n">the</span> <span class="n">logon</span> <span class="n">servers</span> <span class="n">are</span> <span class="n">listed</span> <span class="k">in</span> <span class="n">the</span> <span class="p">[</span><span class="n">Servers</span><span class="p">]</span> <span class="n">section</span> <span class="k">of</span>
+<span class="n">the</span> <span class="n">DOMAIN</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span> <span class="n">SMS_SHR</span> <span class="n">share</span> <span class="k">of</span> <span class="n">each</span> <span class="n">logon</span> <span class="n">server</span> <span class="k">in</span> <span class="n">the</span> <span class="n">site</span>
+<span class="n">server</span> <span class="n">domain</span><span class="p">.</span> <span class="n">Normally</span><span class="p">,</span> <span class="n">this</span> <span class="n">can</span> <span class="n">take</span> <span class="n">up</span> <span class="k">to</span> <span class="m">30</span> <span class="n">minutes</span> <span class="p">(</span><span class="n">longer</span> <span class="k">if</span> <span class="n">there</span>
+<span class="n">are</span> <span class="n">a</span> <span class="n">large</span> <span class="n">number</span> <span class="k">of</span> <span class="n">servers</span> <span class="k">in</span> <span class="n">the</span> <span class="n">site</span> <span class="n">server</span> <span class="n">domain</span><span class="p">).</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">correct</span> <span class="n">this</span> <span class="n">error</span> <span class="n">by</span> <span class="n">running</span> <span class="n">the</span> <span class="n">SMSLS</span> <span class="n">batch</span> <span class="n">file</span> <span class="k">or</span> <span class="n">Client</span> <span class="n">Setup</span>
+<span class="n">again</span> <span class="n">when</span> <span class="n">there</span> <span class="n">are</span> <span class="n">one</span> <span class="k">or</span> <span class="n">more</span> <span class="n">servers</span> <span class="n">listed</span> <span class="k">in</span> <span class="n">the</span> <span class="p">[</span><span class="n">Servers</span><span class="p">]</span> <span class="n">section</span> <span class="k">of</span>
+<span class="n">DOMAIN</span><span class="p">.</span><span class="n">INI</span><span class="p">.</span>
+
+<span class="n">When</span> <span class="n">a</span> <span class="n">user</span> <span class="n">who</span> <span class="k">uses</span> <span class="n">network</span> <span class="n">applications</span> <span class="n">logs</span> <span class="n">on</span><span class="p">,</span> <span class="n">the</span> <span class="n">user</span> <span class="n">may</span> <span class="n">see</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">message</span><span class="p">:</span>
+
+<span class="n">Failed</span> <span class="k">to</span> <span class="nf">connect</span> <span class="k">to</span> <span class="n">SMS</span> <span class="n">network</span> <span class="n">server</span><span class="p">.</span> <span class="n">Cannot</span> <span class="n">determine</span> <span class="n">which</span> <span class="n">groups</span> <span class="n">the</span>
+<span class="n">users</span> <span class="n">belong</span> <span class="k">to</span><span class="p">.</span> <span class="n">Please</span> <span class="n">contact</span> <span class="n">your</span> <span class="n">administrator</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">means</span> <span class="n">the</span> <span class="n">client</span> <span class="n">cannot</span> <span class="n">see</span> <span class="n">any</span> <span class="k">of</span> <span class="n">the</span> <span class="k">package</span> <span class="n">servers</span> <span class="n">that</span> <span class="n">it</span> <span class="n">is</span>
+<span class="n">supposed</span> <span class="k">to</span> <span class="n">see</span><span class="p">.</span> <span class="k">To</span> <span class="n">correct</span> <span class="n">this</span> <span class="n">problem</span><span class="p">:</span>
+  <span class="n">a</span><span class="p">)</span> <span class="n">Examine</span> <span class="n">the</span> <span class="n">SMSERROR</span><span class="p">.</span><span class="n">TXT</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">directory</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span>
+<span class="n">This</span> <span class="n">file</span> <span class="n">may</span> <span class="n">contain</span> <span class="n">more</span> <span class="n">specific</span> <span class="n">information</span> <span class="n">regarding</span> <span class="n">the</span> <span class="n">failure</span><span class="p">.</span>
+<span class="n">There</span> <span class="n">may</span> <span class="n">be</span> <span class="n">sufficient</span> <span class="n">information</span> <span class="n">here</span> <span class="n">for</span> <span class="n">you</span> <span class="k">to</span> <span class="n">correct</span> <span class="n">the</span> <span class="n">problem</span><span class="p">.</span>
+  <span class="n">b</span><span class="p">)</span> <span class="n">Examine</span> <span class="n">the</span> <span class="p">[</span><span class="n">servers</span><span class="p">]</span> <span class="n">section</span> <span class="k">of</span> <span class="n">the</span> <span class="n">SMS</span><span class="p">.</span><span class="n">INI</span> <span class="n">file</span> <span class="n">on</span> <span class="n">the</span> <span class="n">client</span><span class="p">.</span> <span class="k">Set</span>
+<span class="n">up</span> <span class="n">a</span> <span class="n">network</span> <span class="n">connection</span> <span class="k">to</span> <span class="n">the</span> <span class="n">SMS_SHR</span> <span class="n">share</span> <span class="k">of</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">servers</span> <span class="n">listed</span>
+<span class="k">in</span> <span class="n">this</span> <span class="n">section</span><span class="p">.</span> <span class="n">Within</span> <span class="n">the</span> <span class="n">SMS_SHR</span> <span class="n">share</span><span class="p">,</span> <span class="n">change</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">APPCTL</span><span class="p">.</span><span class="n">BOX</span><span class="p">\</span><span class="n">DATABASE</span> <span class="n">directory</span> <span class="k">and</span> <span class="n">look</span> <span class="n">for</span> <span class="n">files</span> <span class="k">with</span> <span class="n">the</span> <span class="p">.</span><span class="n">HAF</span> <span class="k">and</span> <span class="p">.</span><span class="n">HGF</span>
+<span class="n">extensions</span><span class="p">.</span> <span class="k">If</span> <span class="n">there</span> <span class="n">are</span> <span class="n">no</span> <span class="n">files</span> <span class="k">with</span> <span class="n">these</span> <span class="n">extensions</span><span class="p">,</span> <span class="n">the</span> <span class="n">site</span>
+<span class="n">administrator</span> <span class="n">may</span> <span class="k">not</span> <span class="n">have</span> <span class="n">distributed</span> <span class="n">a</span> <span class="n">program</span> <span class="n">group</span> <span class="n">for</span> <span class="n">the</span> <span class="n">network</span>
+<span class="n">applications</span> <span class="k">to</span> <span class="n">this</span> <span class="n">site</span><span class="p">,</span> <span class="k">or</span> <span class="n">the</span> <span class="n">client</span> <span class="n">may</span> <span class="k">not</span> <span class="n">have</span> <span class="n">the</span> <span class="n">appropriate</span>
+<span class="n">security</span> <span class="n">credentials</span> <span class="k">to</span> <span class="n">see</span> <span class="n">files</span> <span class="k">in</span> <span class="n">the</span> <span class="n">share</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">shared</span> <span class="n">network</span> <span class="n">applications</span><span class="p">,</span> <span class="n">SMS</span> <span class="n">does</span> <span class="k">not</span> <span class="n">install</span> <span class="n">program</span> <span class="n">items</span> <span class="k">in</span>
+<span class="n">program</span> <span class="n">groups</span> <span class="n">other</span> <span class="n">than</span> <span class="n">the</span> <span class="n">program</span> <span class="n">groups</span> <span class="n">SMS</span> <span class="n">creates</span><span class="p">.</span> <span class="k">If</span> <span class="n">an</span> <span class="n">application</span>
+<span class="n">normally</span> <span class="n">installs</span> <span class="n">an</span> <span class="n">icon</span> <span class="k">in</span> <span class="n">another</span> <span class="n">program</span> <span class="n">group</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span> <span class="n">Startup</span><span class="p">),</span> <span class="n">you</span>
+<span class="n">can</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">necessary</span> <span class="n">program</span> <span class="n">item</span> <span class="k">from</span> <span class="n">an</span> <span class="n">SMS</span> <span class="n">program</span> <span class="n">group</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">other</span> <span class="n">program</span> <span class="n">group</span><span class="p">.</span> <span class="n">For</span> <span class="n">applications</span> <span class="k">with</span> <span class="n">program</span> <span class="n">items</span> <span class="k">in</span> <span class="n">non</span><span class="p">-</span><span class="n">SMS</span> <span class="n">program</span>
+<span class="n">groups</span><span class="p">,</span> <span class="n">you</span> <span class="n">should</span> <span class="n">also</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">the</span> <span class="n">Drive</span> <span class="n">Mode</span> <span class="n">setting</span> <span class="n">for</span> <span class="n">the</span> <span class="k">package</span>
+<span class="n">properties</span> <span class="n">is</span> <span class="n">either</span> <span class="n">Runs</span> <span class="k">With</span> <span class="n">UNC</span> <span class="n">Name</span> <span class="k">or</span> <span class="n">Requires</span> <span class="n">Specific</span> <span class="n">Drive</span> <span class="n">Letter</span><span class="p">.</span>
+
+<span class="n">After</span> <span class="n">you</span> <span class="n">upgrade</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">software</span> <span class="n">on</span> <span class="n">an</span> <span class="n">SMS</span> <span class="n">logon</span> <span class="n">server</span><span class="p">,</span> <span class="n">all</span> <span class="n">clients</span> <span class="n">must</span>
+<span class="nf">run</span> <span class="n">SMSLS</span><span class="p">.</span><span class="n">BAT</span> <span class="p">(</span><span class="k">or</span> <span class="n">the</span> <span class="n">user</span> <span class="n">must</span> <span class="nf">run</span> <span class="n">their</span> <span class="n">logon</span> <span class="n">script</span><span class="p">,</span> <span class="k">if</span> <span class="n">that</span> <span class="n">script</span> <span class="n">runs</span>
+<span class="n">SMSLS</span><span class="p">.</span><span class="n">BAT</span><span class="p">)</span> <span class="n">before</span> <span class="n">trying</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">any</span> <span class="n">shared</span> <span class="n">applications</span> <span class="n">made</span> <span class="n">available</span> <span class="n">by</span>
+<span class="n">SMS</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span> <span class="n">sms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">smsgeneral</span> <span class="n">kbArtTypeINF</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS100</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

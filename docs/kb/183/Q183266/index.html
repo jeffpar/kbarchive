@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183266: XADM: HowTo Restore Offline Backup of Dir Svc and Info Store | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183266: XADM: HowTo Restore Offline Backup of Dir Svc and Info Store" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183266/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183266/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183266/","publisher":null,"image":null,"headline":"Q183266: XADM: HowTo Restore Offline Backup of Dir Svc and Info Store","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183266-xadm-howto-restore-offline-backup-of-dir-svc-and-info-store">Q183266: XADM: HowTo Restore Offline Backup of Dir Svc and Info Store</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183266
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 22-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the steps to be followed when restoring an offline backup
+of the directory service and the information store.
+
+MORE INFORMATION
+================
+
+An Offline backup of the directory service and information store is made by
+stopping the Exchange Services and copying the contents of the Exchsrvr\Dsadata
+and Exchsrvr\Mdbdata directories respectively, from each drive on the computer
+running Microsoft Exchange Server.
+
+If you have an offline backup of the Microsoft Exchange directory service and
+information store, follow the steps below to restore this backup:
+
+1. Stop all the Microsoft Exchange services.
+
+2. Determine the location of the database and logs for the directory service and
+  information store service, from the following registry locations:
+
+  Directory Service log path
+  --------------------------
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeDS
+     \Parameters\Database log files path
+   
+
+  Directory Service database path
+  -------------------------------
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeDS
+     \Parameters\DSA Database file
+   
+
+  Information Store Service log path
+  ----------------------------------
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS
+     \ParametersSystem\DB Log Path
+   
+
+  Private Information Store database path
+  ---------------------------------------
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS
+     \ParametersPrivate\DB Path
+   
+
+  Public Information Store database path
+  --------------------------------------
+
+     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS
+     \ParametersPublic\DB Path
+   
+
+3. Copy the Dir.edb file (in the Dsadata directory) to the directory service
+  database path.
+
+4. Copy any directory service log files to the directory service log path.
+
+5. Copy the Priv.edb file to the private information store database path.
+
+6. Copy the Pub.edb file to the public information store database path.
+
+7. Copy any information store log files to the information store service log
+  path.
+
+8. Start the Microsoft Exchange directory service.
+
+9. From the command prompt, change to the Exchsrvr\Bin directory and execute the
+  following command:
+
+  isinteg -patch
+
+10. Start the information store service.
+
+11. Start the other Exchange Server services.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

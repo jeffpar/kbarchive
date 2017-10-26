@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104279: PC DB: Creating or Resetting a .KEY and .MBG Pair | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104279: PC DB: Creating or Resetting a .KEY and .MBG Pair" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104279/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104279/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104279/","publisher":null,"image":null,"headline":"Q104279: PC DB: Creating or Resetting a .KEY and .MBG Pair","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104279-pc-db-creating-or-resetting-a-key-and-mbg-pair">Q104279: PC DB: Creating or Resetting a .KEY and .MBG Pair</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104279
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0a,3.0b,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.0a, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In versions 3.0x and 3.2 of Microsoft Mail for PC Networks, it is sometimes
+necessary to re-create or reset the .KEY and .MBG files. This article describes
+the process.
+
+NOTE: Before you make any modifications to the files, make copies of them
+(*.OLD). Use the .OLD files to restore if something goes wrong and to track down
+possibly orphaned .MAI files, if needed.
+
+MORE INFORMATION
+================
+
+NOTE: An easier way to reset the .KEY and .MBG files can be done with
+MAILQ16.EXE. For more information on how to run MAILQ16.EXE, refer to the
+following article in the Knowledge Base:
+
+  Q130285 Resetting or Rebuilding Mailbags with MAILQ16.EXE
+
+In the following examples, substitute the filenames of the appropriate .KEY and
+.MBG files for the INQUEUE.KEY and INQUEUE.MBG that were used as examples.
+
+To create a new .KEY file
+-------------------------
+
+  debug INQUEUE.KEY
+  -rcx
+  CX 0000
+  :230
+  -f100,32f,0
+  -w
+  -q
+
+To reset a .KEY file
+--------------------
+
+  debug INQUEUE.KEY
+  -f100,32f,0
+  -w
+  -q
+
+To create/reset an .MBG file
+----------------------------
+
+  M:\MBG&gt; type nul &gt; INQUEUE.MBG
+
+NOTE: You can verify that the file was created by using the MS-DOS DIR command to
+check for the existence of a zero-byte INQUEUE.MBG file.
+
+Additional query words: 3.00 3.00a 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300a kbMailPCN300b
+Version           : WINDOWS:3.0,3.0a,3.0b,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

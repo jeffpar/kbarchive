@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106030: How to Print Multiple Copies of the Same Label | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106030: How to Print Multiple Copies of the Same Label" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106030/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106030/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106030/","publisher":null,"image":null,"headline":"Q106030: How to Print Multiple Copies of the Same Label","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106030-how-to-print-multiple-copies-of-the-same-label">Q106030: How to Print Multiple Copies of the Same Label</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106030
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can print multiple copies of the same label programmatically, as explained
+below.
+
+MORE INFORMATION
+================
+
+There are two methods you can use to print multiple copies of the same label.
+The choice of which method to use depends on how the labels should be ordered.
+
+Method 1: Issuing the LABEL FORM Command Multiple Times
+-------------------------------------------------------
+
+The simplest way to print multiple copies of a label is to issue the LABEL FORM
+command multiple times in sequence. The disadvantage of this method is that the
+copies of each label can be scattered over many pages in the printed labels.
+
+Method 2: Creating a Temporary Cursor to Contain the Label Information
+----------------------------------------------------------------------
+
+The second method requires building a temporary database, or an SQL cursor, that
+contains multiple copies of the label information. The program below
+demonstrates one method of building the temporary database. A Cartesian join is
+used to create the output cursor.
+
+When two databases are used in an SQL SELECT command, and one database contains
+blank key fields, each blank record is joined with every record in the other
+database. This process is referred to as a Cartesian join. If database 1
+contains 5 blank records, and database 2 contains 10 valid records, the
+resulting output cursor would contain 50 records--each of the 10 valid records
+joined with each of the 5 blank records. Normally, this would be undesirable
+behavior and blank key fields would be eliminated prior to the join, but this
+feature can be used to handle the multiple label problem easily.
+
+The disadvantage of this method is that the cursor can be quite large, leading to
+memory and disk space problems.
+
+     CLEAR
+     * Create a memory variable to hold the desired number of copies
+     * and prompt for input.
+
+     numcopies=1
+     @ 2,10 SAY "How many copies?  " ;
+        GET numcopies
+     READ
+
+     * Create a cursor with one field that will remain blank.
+     CREATE CURSOR mycopies ;
+        (cno C(5))
+
+     * Create one record in the cursor for each label copy desired.
+     FOR i = 1 TO numcopies
+        INSERT INTO mycopies (cno) VALUES (" ")
+     ENDFOR
+
+     * Perform an SQL join on the cursor and the live database.
+     * A WHERE clause can be used to limit the records selected.
+     SELECT customer.company, ;
+        customer.address, customer.city, ;
+        customer.state, customer.zip, mycopies.cno ;
+        FROM customer, mycopies ;
+        INTO cursor lablinfo
+
+     * Print the existing label form.
+     SELECT lablinfo
+     LABEL FORM mylabel TO PRINT
+
+     * Clean up afterwards.
+     SELECT lablinfo
+     USE
+     SELECT mycopies
+     USE
+
+Additional query words: VFoxWin FoxDos FoxWin FoxMac 2.50 2.50a 2.50b 2.50c 2.60 set sequential order adjacent
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbVFP300
+Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

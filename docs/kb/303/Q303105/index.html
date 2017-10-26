@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q303105: PRB: Cursor Moves to First Column If You Use Keyboard to Scroll | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q303105: PRB: Cursor Moves to First Column If You Use Keyboard to Scroll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/303/Q303105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/303/Q303105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/303/Q303105/","publisher":null,"image":null,"headline":"Q303105: PRB: Cursor Moves to First Column If You Use Keyboard to Scroll","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q303105-prb-cursor-moves-to-first-column-if-you-use-keyboard-to-scroll">Q303105: PRB: Cursor Moves to First Column If You Use Keyboard to Scroll</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q303105
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0 SP5
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB kbDSupport kbVS600sp5
+Last Modified: 23-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 SP5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a DataGrid control is bound to a multiple-column recordset, when you position
+the cursor in any column after the second column and scroll down past the
+visible area, the cursor shifts from the nth column, at which it was positioned,
+into the first column.
+
+If the cursor appears in a column that does not allow the first column to be
+seen, the cursor apparently dissapears because the cursor changes into the first
+column, which is not visible. If you scroll left to the first column, the cursor
+becomes visible.
+
+This problem only occurs with the Visual Basic 6.0 Service Pack 5 DataGrid
+control.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Data Project in Visual Basic. frmDataEnv is created by default.
+
+2. Add an ADO Data Control and a DataGrid control to frmDataEnv.
+
+3. Set the ConnectionString property of the ADO Data Control to point to a valid
+  Northwind database.
+
+4. Set the ADODC1 RecordSource property to point to the Orders table.
+
+5. Leave all the defaults in the DataGrid. Point its Datasource property to
+  ADODC1.
+
+6. Run the project.
+
+7. Click on the OrderDate column of the first row in the DataGrid. You can also
+  click on any other column except the first column to reproduce the behavior.
+
+8. Use the arrow keys to scroll down. Notice that when you pass the last visible
+  row, the cursor shifts from the OrderDate (or the current column) to the
+  first column.
+
+Additional query words: datagrid field move cursor cell
+
+======================================================================
+Keywords          : kbGrpDSVBDB kbDSupport kbVS600sp5 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600SP5
+Version           : :6.0 SP5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

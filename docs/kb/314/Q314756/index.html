@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q314756: Microsoft Visual C++ .NET Step by Step Comments and Corrections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q314756: Microsoft Visual C++ .NET Step by Step Comments and Corrections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/314/Q314756/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/314/Q314756/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/314/Q314756/","publisher":null,"image":null,"headline":"Q314756: Microsoft Visual C++ .NET Step by Step Comments and Corrections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q314756-microsoft-visual-c-net-step-by-step-comments-and-corrections">Q314756: Microsoft Visual C++ .NET Step by Step Comments and Corrections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q314756
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 15-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Visual C++.NET Step By Step ISBN 0-7356-1567-5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Visual C++ .NET Step by Step,
+ISBN 0-7356-1567-5.
+
+The following topics are covered:
+
+- CD-ROM: Files Missing For Chapter 18 Lessons
+
+- Page 24: Error In Code Sample
+
+- Page 28: Incorrect Output In Screenshot
+
+- Page 35: Y Should Be Lowercase
+
+- Page 326: Error In Step 4
+
+- Page 327: Floppy.Bmp Missing From CD-ROM
+
+MORE INFORMATION
+================
+
+CD-ROM: Files Missing For Chapter 18 Lessons
+--------------------------------------------
+
+The code samples for Chapter 18 are missing from the companion CD-ROM.
+
+The following file is available for download from the Microsoft Download Center:
+
+  Picture of Download IconDownload Chap18.exe now
+  (http://download.microsoft.com/download/MSPressPub/Refresh/1.0/NT5XP/EN-US/Chap18.exe)
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+
+Page 24: Error In Code Sample
+-----------------------------
+
+There is an error in the code sample on page 24, step 12. Change:
+
+  void SetName(String *Name)
+    { strName-&gt;Copy(Name);};
+  String* GetName() { return strName; };
+
+To:
+
+  void SetName(String *Name)
+    { strName = strName-&gt;Copy(Name);};
+  String* GetName() { return strName; };
+
+
+Page 28: Incorrect Output In Screenshot
+---------------------------------------
+
+The screenshot on page 28 is missing information. If the build is successful, the
+results will not be what is shown:
+
+  Animal 1
+  Name:
+  Legs: 4
+
+  Animal 2
+  Name:
+  Legs: 4
+
+But rather:
+
+  Animal 1
+  Name: Cat
+  Legs: 4
+
+  Animal 2
+  Name: Dog
+  Legs: 4
+
+
+Page 35: Y Should Be Lowercase
+------------------------------
+
+On page 35, in the section titled References, the letter Y in the third line of
+code should be lower case.
+
+Change:
+
+  Y = 4;		//  Changes the value of x to 4.
+
+To:
+
+  y = 4;		//  Changes the value of x to 4.
+
+
+Page 326: Error In Step 4
+-------------------------
+
+There is an error in the second paragraph of text in step 4.
+
+Change:
+"the point size (25 points),"
+
+To:
+"the point size (16 points),"
+
+
+Page 327: Floppy.Bmp Missing From CD-ROM
+----------------------------------------
+
+The file file "Floppy.bmp" used in the code sample on page 327 is not included on
+the CD-ROM. For the purposes of this exercise, you may use the Save.bmp file
+found on the CD-ROM.
+
+Note that the project will not match the screenshots in the book.
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1567-5 Templeman Olsen EUBOOK EUSBS VSTUDIO VC
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

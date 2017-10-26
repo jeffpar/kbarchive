@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188404: HOWTO: Use API Calls to Detect Other Running Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188404: HOWTO: Use API Calls to Detect Other Running Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188404/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188404/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188404/","publisher":null,"image":null,"headline":"Q188404: HOWTO: Use API Calls to Detect Other Running Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188404-howto-use-api-calls-to-detect-other-running-applications">Q188404: HOWTO: Use API Calls to Detect Other Running Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188404
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbDSupport
+Last Modified: 07-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+At times it is desirable to determine what other applications or background
+processes are executing. This article describes how to use Windows API calls to
+determine what applications are running concurrently with a Visual FoxPro
+session or application.
+
+MORE INFORMATION
+================
+
+Under certain circumstances, it is desirable to determine whether other
+applications, or multiple instances of a application are executing. You can use
+Windows API calls to determine what applications are executing at any given
+time. The code snippet, listed below, illustrates use of Windows API functions
+to determine what applications are currently executing.
+
+Create a program called Enumwins.prg and type in the following code:
+
+Sample Code
+-----------
+
+     LOCAL awin_apps, vfp_handle, ln_current_window,ln_window_count
+     * Dimension array awin_apps to store running apps
+     DIMENSION awin_apps[1]
+     * Initialize variable to store handle for current application
+     vfp_handle=0
+     * Declare API Functions
+     DECLARE INTEGER FindWindow ;
+        IN win32api ;
+        INTEGER nullpointer, ;
+        STRING cwindow_name
+     DECLARE INTEGER GetWindow ;
+        IN win32api ;
+        INTEGER ncurr_window_handle, ;
+        INTEGER ndirection
+     DECLARE INTEGER GetWindowText ;
+        IN win32api ;
+        INTEGER n_win_handle, ;
+        STRING @ cwindow_title, ;
+        INTEGER ntitle_length
+     * End of API function declarations
+     * Get handle for current application
+     vfp_handle=findwindow(0,_SCREEN.CAPTION)
+     * Store handle of current app to a variable
+     ln_current_window=vfp_handle
+     * Initialize a count variable used to dimension array of running apps
+     ln_window_count=0
+     DO WHILE ln_current_window&gt;0
+        *  Initialize variable to store application title
+        lc_window_title=SPACE(255)
+        * Call to GetWindowText to fetch window caption
+        ln_length=getwindowtext(ln_current_window, ;
+           @lc_window_title,LEN(lc_window_title))
+        * Note that the lc_window_title variable is used as a buffer to
+        * receive text from the call to GetWindowText
+        IF ln_length&gt;0
+           lc_window_title=STRTRAN(TRIM(lc_window_title),CHR(0),"")
+        ELSE
+           lc_window_title=""
+        ENDIF
+        IF ln_current_window&gt;0 .AND. !EMPTY(lc_window_title)
+           * Increment the window count and re-dimension the array of running
+           * applications
+           ln_window_count=ln_window_count+1
+           DIMENSION awin_apps(ln_window_count)
+           awin_apps[ln_Window_Count]=lc_window_title
+        ENDIF
+        * Call to GetWindow to fetch handle of running applications.
+        ln_current_window=getwindow(ln_current_window,2)
+     ENDDO
+     CREATE TABLE runapps (appname m)
+     IF ALEN(awin_apps,1)&gt;0
+        SELECT runapps
+        APPEND BLANK
+        FOR i=1 TO ALEN(awin_apps,1)
+           REPLACE appname WITH awin_apps[i]+CHR(13) ADDITIVE
+        NEXT
+     ENDIF
+     MODIFY MEMO appname NOEDIT
+
+The application stores the names of all executing applications in the memo field
+of the table Runapps.dbf.
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by John Desch, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

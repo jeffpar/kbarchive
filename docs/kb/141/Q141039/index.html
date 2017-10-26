@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141039: HOWTO: How to Hide the Apply Button in CPropertySheet | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141039: HOWTO: How to Hide the Apply Button in CPropertySheet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141039/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141039/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141039/","publisher":null,"image":null,"headline":"Q141039: HOWTO: How to Hide the Apply Button in CPropertySheet","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141039-howto-how-to-hide-the-apply-button-in-cpropertysheet">Q141039: HOWTO: How to Hide the Apply Button in CPropertySheet</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141039
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0
+Operating System(s): 
+Keyword(s): kbcode kbMFC kbPropSheet KbUIDesign kbVC152 kbVC200 kbVC210 kbVC220 kbVC400 kbGrpDSMFCA
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, version 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A modal CPropertySheet will automatically create an Apply button. To hide this
+button, you need to use different methods for different versions of MFC.
+
+In Visual C++ 2.2 and earlier (MFC 3.2 and earlier), you can derive a class from
+CPropertySheet, override OnCreate(), call GetDlgItem(ID_APPLY_NOW), and finally
+call ShowWindow(SW_HIDE) to hide the Apply button.
+
+In Visual C++ 4.0 (MFC 4.0), CPropertySheet has a public member called m_psh.
+m_psh is a PROPSHEETHEADER structure with a dwFlags member. One of the possible
+values of m_psh.dwFlags is PSH_NOAPPLYNOW. Setting this value before the call to
+DoModal() hides the Apply button. Another option in Visual C++ 4.0 is to call
+GetDlgItem()/ShowWindow(), but you should do it in OnInitDialog() instead of
+OnCreate().
+
+MORE INFORMATION
+================
+
+In Visual C++ 2.2 and earlier, CPropertySheet was implemented internally by MFC.
+Starting with Visual C++ 4.0, the CPropertySheet uses the Windows 95
+PropertySheet control, so the method for hiding the Apply button changed.
+
+You can hide any of the default buttons in a modal property sheet by using the
+methods in this article. The IDs for each button are IDOK (OK button), IDCANCEL
+(Cancel button), ID_APPLY_NOW (Apply button), and IDHELP (Help button). Note
+that the Apply button is disabled by default until you call SetModified(). In
+addition, in Visual C++ 4.0, the Help button is not shown by default. To show
+it, you can set m_psh.dwFlags |= PSH_HASHELP.
+
+Sample Code
+-----------
+
+  /***** this code applies to Visual C++ 4.0 and later *****/ 
+  void CMyView::OnDisplayModalSheet()
+  {
+     CMySheet sheet ("Set Properties");
+     // this hides the Apply button
+     sheet.m_psh.dwFlags |= PSH_NOAPPLYNOW;
+     sheet.DoModal ();
+  }
+
+  /* You can also do the following to hide the Apply button */ 
+
+  BOOL CMySheet::OnInitDialog()
+  {
+     CPropertySheet::OnInitDialog();
+
+     // this hides the Apply button
+     CWnd* pApplyButton = GetDlgItem (ID_APPLY_NOW);
+     ASSERT (pApplyButton);
+     pApplyButton-&gt;ShowWindow (SW_HIDE);
+
+     return TRUE;
+  }
+  /*********************************************************/ 
+
+  /***** this code applies to Visual C++ 2.2 and earlier *****/ 
+  int CMySheet::OnCreate(LPCREATESTRUCT lpCreateStruct)
+  {
+     if (CPropertySheet::OnCreate(lpCreateStruct) == -1)
+        return -1;
+
+     // this hides the Apply button
+     CWnd* pApplyButton = GetDlgItem (ID_APPLY_NOW);
+     ASSERT (pApplyButton);
+     pApplyButton-&gt;ShowWindow (SW_HIDE);
+
+     return 0;
+  }
+  /*********************************************************/ 
+
+Additional query words: kbinf 1.52 2.00 2.10 2.20 4.00
+
+======================================================================
+Keywords          : kbcode kbMFC kbPropSheet KbUIDesign kbVC152 kbVC200 kbVC210 kbVC220 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

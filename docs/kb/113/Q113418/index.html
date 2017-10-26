@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113418: HOW TO: Determine Whether a Drive Is a RAM Drive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113418: HOW TO: Determine Whether a Drive Is a RAM Drive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113418/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113418/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113418/","publisher":null,"image":null,"headline":"Q113418: HOW TO: Determine Whether a Drive Is a RAM Drive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113418-how-to-determine-whether-a-drive-is-a-ram-drive">Q113418: HOW TO: Determine Whether a Drive Is a RAM Drive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113418
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbLangC kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbHOWTOmaster
+Last Modified: 11-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft C for MS-DOS 
+- Microsoft C/C++ for MS-DOS 
+- Microsoft Visual C++, versions 1.0, 1.5, 2.0, 2.1, 4.0 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are no C language functions or C run-time functions to determine whether
+or not a drive is a RAM drive. The GetFileType() API may be called by Win32
+applications to obtain the type of a particular drive from the operating system.
+More information may be found about GetFileType() in the Win32 SDK Reference of
+the Visual C++ 32-bit Edition Books Online.
+
+For MS-DOS and Win16 applications, although there are no definitive methods
+available, several possible ways exist to determine that a given drive is
+"probably" a RAM drive. The remainder of this article will briefly discuss each
+of four methods to check for a RAM drive. Note that for all methods each drive
+of the host system must be checked.
+
+MORE INFORMATION
+----------------
+
+Method 1:
+
+Check the drive's volume label. This method is probably the most common. The
+Microsoft RAMDRIVE.SYS uses a volume label of "MS-RAMDRIVE". However, this is
+not guaranteed to be the volume label and will probably not be the volume label
+on RAM drives from other companies. A user may also change this by using the
+label command.
+
+Method 2:
+
+Call Interrupt 21h Function 44h subfunction 0Dh, which is a generic I/O control
+function for block devices. Most devices support this function. However,
+RAMDRIVE.SYS currently does not support it. This lack of support can be used to
+identify a RAM drive. Load the CX register with 0860h to get disk drive device
+parameters; if the function fails, leaving the carry flag set, the drive is
+probably a RAM drive.
+
+Method 3:
+
+Check how many FAT tables the drive has; if it has only 1, it is probably a RAM
+drive. Because RAMDRIVE.SYS does not support the IOCTL functions, the only way
+to determine the number of FAT tables is to use INT 25, Absolute Disk Read. Make
+note of the warnings that this function has been superseded and is not supported
+under Windows. For more information and a sample showing how to use INT 25,
+please see the following articles in the Microsoft Knowledge Base:
+
+  Q102870 SAMPLE: Reading the Boot Sector of a Drive
+
+Method 4:
+
+Finally, call Interrupt 21h Function 44h subfunction 09h to check whether the
+drive is remote. If the value returned in DX is 0x0800, having only bit 11 set,
+the drive is probably a RAM drive. This is known to be a RAM drive by deduction.
+Because bits 6 and 7 are clear, it is known that this device does not accept
+IOCTL functions, like most devices. Because bit 12 is clear, this is not a
+network drive, and so on.
+
+Because none of the above methods is guaranteed, it is best to use a combination
+of these methods. First eliminate the obvious, such as network drives, local
+hard drives, CD-ROM drives, and so forth. Then try to determine whether or not
+the given drive is a RAM drive.
+
+Additional query words: detect find
+
+======================================================================
+Keywords          : kbLangC kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 kbHOWTOmaster 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :1.0,1.5,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

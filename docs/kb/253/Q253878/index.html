@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253878: WD97: Labels Print Higher After First Page | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253878: WD97: Labels Print Higher After First Page" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253878/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253878/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253878/","publisher":null,"image":null,"headline":"Q253878: WD97: Labels Print Higher After First Page","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253878-wd97-labels-print-higher-after-first-page">Q253878: WD97: Labels Print Higher After First Page</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253878
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word8 word97 kbtable
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print your label document, your labels may not print correctly on your
+label sheet after the first page of labels.
+
+For example, the labels after the first page may print higher on each label page.
+
+CAUSE
+=====
+
+This problem occurs because with some label formats, Word uses a blank table row
+as a separator between one row of labels and the next row. As a result, when you
+press the TAB key to create the next row of labels, Word only creates a new row
+exactly the same as the row in which you are pressing the TAB key. Word does not
+add the separator row between label rows.
+
+This problem is known to occur with the following labels:
+
+- Avery 5366 File Folder
+- Avery 8366 File Folder
+
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods:
+
+Method 1: Copy and Paste First Page Labels to Other Pages
+---------------------------------------------------------
+
+Use this method if you need more than one page of labels and before you begin
+typing text into your labels.
+
+NOTE: These steps use the Avery 5366 File Folder label as an example.
+
+1. On the Tools menu, click Envelopes and Labels.
+
+2. On the Labels tab, click Options.
+
+3. In the Labels Options dialog box, click the type of label you want to use,
+  and then click OK.
+
+  For example, click the Avery 5366 File Folder label.
+
+4. In the Envelopes and Labels dialog box, click New Document. Word creates a
+  new, one-page label document.
+
+5. To create the additional pages of labels you need, follow these steps:
+
+  a. On the Table menu, click Select Table.
+
+  b. On the Edit menu, click Copy.
+
+  c. Move the insertion point to the last label in your label document, and
+     then press the TAB key until a new label row appears on the next page.
+
+  d. On the new label page, select the new label row. To do this, click Select
+     Row on the Table menu.
+
+  e. On the Edit menu, click Paste Rows.
+
+  f. Repeat steps c through e for each new label page you want.
+
+Method 2: Adjust the Label Settings for the Second and Remaining Pages
+----------------------------------------------------------------------
+
+Use this method if you already created pages of labels and are experiencing the
+problem as described in the "Symptoms" section of this article:
+
+NOTE: These steps use the Avery 5366 File Folder label as an example.
+
+1. On the first page of labels, click inside the first label.
+
+2. On the Tools menu, click Envelopes and Labels.
+
+3. On the Labels tab, click Options.
+
+4. In the Label Options dialog box, make sure the correct label is selected in
+  the Product number list, and then click Details.
+
+5. Record the value listed in the Vertical pitch box. Then click Cancel.
+
+  For example, in the details of the Avery 5366 File Folder label, the Vertical
+  pitch is listed as 0.67".
+
+  IMPORTANT: Write this value down, because you will use this value in step 10.
+
+6. Click Cancel to close the Label Options dialog box.
+
+7. Click Cancel to close the Envelopes and Labels dialog box.
+
+8. On page 2 of your label document, select the first row of labels. Then extend
+  the selection to include the remaining rows of labels on page 2 and the
+  remaining pages of your label document.
+
+  NOTE: Be sure not to select the labels on page 1 of your label document.
+
+9. On the Table menu, click Cell Height and Width.
+
+10. On the Row tab, change the Height of rows box to Exactly, and type the value
+  of the Vertical pitch from step 5 in the At box.
+
+  For example, type "0.67"" (without the quotation marks) and then click OK.
+
+11. On page 2 of your label document, click into the first label of the first
+  row of labels. Do not click into a label that is contained on the first page
+  of your label document.
+
+12. Right-click the label.
+
+13. On the shortcut menu that appears, point to Alignment and click Align Top.
+
+14. Repeat steps 12 through 13 for each of the remaining labels in your label
+  document. Do not perform steps 12 through 13 on any label that is contained
+  on the first page of your label document.
+
+  NOTE: This step causes your label text for page 2 and the remaining label
+  pages of your label document to shift to the top of the label. You may need
+  to adjust the text downward a little by adding a blank line (or adding
+  spacing) above the text on each label.
+
+15. On the File menu, click Save to save the changes you made to your label
+  document.
+
+Additional query words: creep move upwards adjust track position misalign
+
+======================================================================
+Keywords          : kbdta word8 word97 kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224999: How to Use the Cluster TMP file to Replace a Damaged Clusdb File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224999: How to Use the Cluster TMP file to Replace a Damaged Clusdb File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224999/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224999/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224999/","publisher":null,"image":null,"headline":"Q224999: How to Use the Cluster TMP file to Replace a Damaged Clusdb File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224999-how-to-use-the-cluster-tmp-file-to-replace-a-damaged-clusdb-file">Q224999: How to Use the Cluster TMP file to Replace a Damaged Clusdb File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224999
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbnetwork kbtool w2000mscs kbClustering
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to restore the Clusdb file using a .tmp file.
+
+MORE INFORMATION
+================
+
+If the Clusdb file is damaged you may be able to restore this file using a .tmp
+file in the cluster hive.
+
+
+The Clusdb file is the registry used for Microsoft Cluster Server and is
+reproduced on both nodes when you are using cluster server. Cluster Server
+creates a copy of the Clusdb file named Chk&lt;xxx&gt;.tmp located in the Mscs
+folder on the shared disk where the quorum information is.
+
+How to Restore the Clusdb File From the Chk&lt;xxx&gt;.tmp File on Both Nodes
+---------------------------------------------------------------------
+
+To restore the Clusdb file from the Chk&lt;xxx&gt;.tmp file on both nodes in the
+cluster, use the following steps:
+
+1. On both nodes, change the Startup value to Manual for the following items:
+
+  Clusdisk (in the Devices tool in Control Panel)
+  Cluster Service (in the Services tool in Control Panel)
+
+2. Shut down node 2.
+
+3. Restart node 1.
+
+4. Copy the Chk&lt;xxx&gt;.tmp file with the most recent time and date stamp
+  from the \Mscs folder on the shared quorum drive to a disk and to the local
+  %SystemRoot%\Cluster folder.
+
+5. Rename the Clusdb file in the %SystemRoot%\Cluster folder to Clusdb.old.
+
+6. Rename the Chk&lt;xxx&gt;.tmp file in the %SystemRoot%\Cluster folder to
+  Clusdb.
+
+7. Change the Startup value back to the following settings:
+
+  System for Clusdisk (in the Devices tool in Control Panel)
+  Automatic for the Cluster service (in the Services tool in Control Panel)
+
+8. Restart node 1.
+
+9. Verify that the Cluster service starts correctly after you restart the node.
+
+10. Start node 2.
+
+11. On node 2, copy the Chk&lt;xxx&gt;.tmp file from the disk to the
+  %SystemRoot%\Cluster folder.
+
+12. Rename the Clusdb file in the %SystemRoot%\Cluster folder to Clusdb.old.
+
+13. Rename the Chk&lt;xxx&gt;.tmp file in the %SystemRoot%\Cluster folder to
+  Clusdb.
+
+14. Change the Startup value back to the following settings:
+
+  System for Clusdisk (in the Devices tool in Control Panel)
+  Automatic for the Cluster service (in the Services tool in Control Panel)
+
+15. Restart node 2.
+
+16. Verify that the Cluster service starts correctly after you restart the node
+  and that you can failover resources.
+
+How to Restore the Clusdb File From the Chk&lt;xxx&gt;.tmp File on Only One Node
+------------------------------------------------------------------------
+
+To restore the Clusdb file from the Chk&lt;xxx&gt;.tmp file on only one node, use
+the following steps:
+
+1. Using the Services tool in Control Panel, set the Cluster service to Manual
+  on the node where the service does not start.
+
+2. Restart the node.
+
+3. From the correctly functioning node, copy the Chk&lt;xxx&gt;.tmp file with
+  the most recent time and date stamp from the Mscs folder on the shared quorum
+  drive to a disk.
+
+4. On the non-functioning node, rename the Clusdb file in the
+  %SystemRoot%\Cluster folder.
+
+5. Copy the Chk&lt;xxx&gt;.tmp file from the disk to the %SystemRoot%\Cluster
+  folder.
+
+6. Rename the Chk&lt;xxx&gt;.tmp file in the %SystemRoot%\Cluster folder to
+  Clusdb.
+
+7. Using the Services tool in Control Panel, start the Cluster service.
+
+8. Verify that the service starts correctly and that you can failover resources.
+
+9. Set the Cluster service back to Automatic using the Services tool in Control
+  Panel.
+
+Additional query words: mscs
+
+======================================================================
+Keywords          : kbenv kbnetwork kbtool w2000mscs kbClustering 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93633: HOWTO: How to Create or Modify a Database in an Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93633: HOWTO: How to Create or Modify a Database in an Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93633/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93633/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93633/","publisher":null,"image":null,"headline":"Q93633: HOWTO: How to Create or Modify a Database in an Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93633-howto-how-to-create-or-modify-a-database-in-an-application">Q93633: HOWTO: How to Create or Modify a Database in an Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93633
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:; WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 31-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows 
+- Microsoft FoxPro for MS-DOS 
+- Microsoft FoxBASE+ for MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In FoxPro 2.x, to create or modify a database under program control, you can use
+the COPY TO &lt;name&gt; STRUCTURE EXTENDED, the CREATE &lt;name1&gt; FROM
+&lt;name2&gt; command.
+
+In Visual FoxPro, you can use the ALTER TABLE command.
+
+Also, you can use the CREATE TABLE command in any version of FoxPro.
+
+MORE INFORMATION
+================
+
+The following code examples create a new database named TEMP that contains one
+field. The field is named LASTNAME and is 30 characters long.
+
+FoxPro 2.x
+----------
+
+     USE anyfile
+     COPY TO temp STRUCTURE EXTENDED
+     USE temp
+
+     APPEND BLANK
+     REPLACE field_name WITH 'lastname'
+     REPLACE field_len WITH 30
+     REPLACE field_type WITH 'C'
+     REPLACE field_dec WITH 0
+     CREATE newfile FROM temp
+
+NOTE: To add more than one field to the table, perform another APPEND BLANK and
+then the REPLACE sequence again.
+
+The COPY STRUCTURE EXTENDED command creates a new database file that describes
+the structure of the original database. Each record of the new database
+describes a field of the original database.
+
+NOTE: The COPY STRUCTURE EXTENDED and CREATE FROM commands also work in
+stand-alone applications created with the FoxPro Distribution Kit.
+
+Visual FoxPro
+-------------
+
+     USE anyfile
+     ALTER TABLE Temp  ADD COLUMN  "Lastname" C(10)
+
+CREATE TABLE Command
+--------------------
+
+You can also use the CREATE TABLE command to modify or create a database. Its
+syntax is as follows:
+
+     CREATE table &lt;dbf_name&gt;(&lt;fname1&gt; &lt;type&gt; [(&lt;precision&gt;[,
+  &lt;scale&gt;])[,
+        &lt;fname2&gt; ...]])
+
+The following example creates a table with the NAME, ADDR, CITY, ZIP, and SALARY
+fields, plus a memo field called COMMENTS:
+
+     CREATE Table employee ;
+        (name C(20), addr C(30), city C(30), zip C(5), salary N(8,2), ;
+           comments M)
+
+Additional query words: VFoxWin 3.00 FoxDos FoxWin 1.00 1.x 2.00 2.10 2.50 2.50a 2.50b 2.60 2.60a dbf
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxBASESearch kbVFP300
+Version           : MS-DOS:; WINDOWS:3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

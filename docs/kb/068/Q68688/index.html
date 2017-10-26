@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68688: Specifying Anchor Blocks in Help Files in RTF | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68688: Specifying Anchor Blocks in Help Files in RTF" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68688/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68688/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68688/","publisher":null,"image":null,"headline":"Q68688: Specifying Anchor Blocks in Help Files in RTF","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68688-specifying-anchor-blocks-in-help-files-in-rtf">Q68688: Specifying Anchor Blocks in Help Files in RTF</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68688
+Product(s): See article
+Version(s): 1.05   | 1.05
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | docerr | mspl13_basic
+Last Modified: 31-JAN-1991
+
+Rich Text Format (RTF) is a text format supported by Microsoft Word
+and other word processors. HELPMAKE.EXE can use an RTF file (and the
+RTF symbols) to create help databases for the Microsoft Advisor.
+However, because \a (Anchor text for cross-reference) is not an RTF
+symbol, there is no documented method for creating hyperlinks that
+have more than one word.
+
+When Helpmake encodes RTF, any text between an RTF code and hidden
+text on a single line becomes a hyperlink. For example, the following
+
+   {\bHyperlink here}{\vhyperlink.dat}
+
+will cause "Hyperlink here" to be displayed in bold type, and be a
+hyperlink to the topic "hyperlink.dat". To create an anchor block of
+unformatted text, use the \plain code. For example, the following
+
+   {\plainplain hyperlink}{\vhyperlink.dat}
+
+will cause "plain hyperlink" to be displayed in normal text, and be a
+hyperlink to "hyperlink.dat". If you want to create a hyperlink that
+has only one word, anchor blocks are not needed. Finally, a link must
+fit entirely on one line. You cannot continue invisible or anchored
+text over a line break.
+
+Sample Code
+-----------
+
+   {\rtf0
+   &gt;&gt; open \par
+   {\b Include:}   &lt;fcntl.h&gt;, &lt;io.h&gt;, &lt;sys\\types.h&gt;, &lt;sys\\stat.h&gt;
+
+   {\b Prototype:}  int open(char *path, int flag[, int mode]);\par
+       flag: O_APPEND  O_BINARY   O_CREAT  O_EXCL  O_RDONLY\par
+        O_RDWR    O_TEXT   O_TRUNC  O_WRONLY\par
+        (can be joined by |)\par
+       mode: S_IWRITE  S_IREAD   S_IREAD | S_IWRITE\par
+   \par
+   {\b Returns:}    a handle if successful, or -1 if not.\par
+     errno:  EACCES, EEXIST, EMFILE, ENOENT\par
+   \par
+   {\b See also:}   {\plain Example Program}{\v open.ex},\par
+   {\ul Template}{\v open.tp}, access, chmod, close,\par
+   creat, dup, dup2, fopen, sopen, umask\par
+   }
+
+For more information, see the online help and Chapter 7 in the
+"Microsoft C Advanced Programming Techniques" manual.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

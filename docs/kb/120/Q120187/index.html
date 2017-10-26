@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120187: PRB: Query to a Report Causes an Inaccurate Sum or Count | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120187: PRB: Query to a Report Causes an Inaccurate Sum or Count" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120187/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120187/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120187/","publisher":null,"image":null,"headline":"Q120187: PRB: Query to a Report Causes an Inaccurate Sum or Count","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120187-prb-query-to-a-report-causes-an-inaccurate-sum-or-count">Q120187: PRB: Query to a Report Causes an Inaccurate Sum or Count</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120187
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5x,2.6; MS-DOS:2.0,2.5x,2.6,2.6a; UNIX:2.6; WINDOWS:2.5x,2.6,2.6a,3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6 
+- Microsoft FoxPro for UNIX, version 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running a query to a report using two or more databases with a
+one-to-many relationship and the report is counting or performing other math
+functions on fields from the parent database, the count or value from the math
+functions is inaccurate.
+
+RESOLUTION
+==========
+
+To get an accurate count, you need to create a user-defined function (UDF). For
+an example of a UDF that produces the correct count, see "Workaround" in the
+"More Information" section below.
+
+MORE INFORMATION
+================
+
+When the report performs a count or any math function, it looks to the source
+database for its information. If the data comes from a query, the source is a
+temporary table called QUERY. If the query had two or more tables in it with a
+one-to-many relationship, there will be a matching parent field for each child
+field.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Use the CUSTOMER.DBF and INVOICES.DBF tables that are found in the
+  &lt;FoxPro_directory&gt;\TUTORIAL subdirectory.
+
+2. Create a report that contains the CUSTOMER.CNO, CUSTOMER.STATE, INVOICES.INO,
+  and INVOICES.ITOTAL fields. Just put the field names in the report and mark
+  the fields coming from CUSTOMER so they don't print repeated values.
+
+3. Group the report by state.
+
+4. In the group footer band, place the CNO field and select Calculate and then
+  Count.
+
+5. Save the report.
+
+6. Open a query and add the CUSTOMER and INVOICES tables.
+
+7. Add the fields listed above to the fields list in the query.
+
+8. Order the query by state.
+
+9. Output the query to the report saved in step 5 above.
+
+If you look at the group from the state of "GA", you will see that the count is 7
+but that there are only four different companies.
+
+WORKAROUND
+==========
+
+To obtain the correct count, you can use the following UDF.
+
+
+     FUNCTION mycount
+     PARAMETERS x
+     recnum = RECNO()
+     mygroup = state
+     SELECT DISTINCT customer.cno, customer.state;
+       FROM customer, invoices;
+       WHERE invoices.cno = customer.cno;
+       AND customer.state = mygroup;
+       INTO CURSOR counter
+     COUNT TO x
+     SELECT QUERY
+     GO recnum
+     RETURN x
+
+
+REFERENCES
+==========
+
+FoxPro for Windows "Getting Started," Chapter 9
+FoxPro for Windows and MS-DOS "Language Reference," page L3-1114
+
+Additional query words: VFoxWin FoxUnix FoxMac FoxDos FoxWin 2.50 2.50a 2.50b 2.50c
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260UNIX kbFoxPro260 kbFoxPro260a kbVFP300
+Version           : MACINTOSH:2.5x,2.6; MS-DOS:2.0,2.5x,2.6,2.6a; UNIX:2.6; WINDOWS:2.5x,2.6,2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

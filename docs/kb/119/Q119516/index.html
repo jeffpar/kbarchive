@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119516: Find Source: Please Enter the Path for MFC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119516: Find Source: Please Enter the Path for MFC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119516/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119516/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119516/","publisher":null,"image":null,"headline":"Q119516: Find Source: Please Enter the Path for MFC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119516-find-source-please-enter-the-path-for-mfc">Q119516: Find Source: Please Enter the Path for MFC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119516
+Product(s): Microsoft C Compiler
+Version(s): 
+Operating System(s): 
+Keyword(s): kbide kbVC
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Workbench for Windows 
+- Microsoft Visual C++, versions 1.0, 1.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When debugging an application written using the Microsoft Foundation Class (MFC)
+Libraries, the Visual Workbench's integrated debugger is often used to trace
+into class library source code. If the debugger can not find the source files
+for the MFC Libraries, it displays a "Find Source" dialog box requesting the
+path for the MFC source file. After entering the path for the MFC source file,
+the debugger works fine.
+
+MORE INFORMATION
+================
+
+When Visual C++ is installed, the Setup program determines the correct directory
+paths for several file types and updates the "Options|Directories..." dialog box
+with these paths in the Visual Workbench. One of the file types is for the
+Microsoft Foundation Class Library source files. Its path is set to C:\MSVC\MFC
+by the Setup program if the user selects the "Typical Installation" without
+changing the default directory. The path could be changed through the
+"Directories" dialog box in the Visual Workbench under the "Options" menu item.
+Typically this needs to be done if a user copies the MFC source code to a
+different directory other than the default directory.
+
+To change the path for the MFC source code in the "Directories" dialog box,
+follow the steps below:
+
+1. Open the Visual Workbench.
+
+2. Select "Options" on the menu bar.
+
+3. Select "Directories...".
+
+4. In the "MFC Files Path:" edit box, specify the base directory where the
+  Microsoft Foundation Class Library source code is located. For example, if
+  the MFC library source code is located in directory
+
+                 C:\VC150\mfc\src
+
+  then specify the following in the "MFC Files Path:" edit box:
+
+                 C:\VC150\mfc
+
+  The relative path \src is embeded in the MFC libraries and will be appended to
+  the end of the path speicifed in the "MFC Files Path:" edit box when the MFC
+  source code is needed for debugging.
+
+5. Click OK button to save the changes.
+
+Incorrectly specifying the path for the MFC source code could trigger the "Find
+Source" dialog box to be displayed each time the debugger could not find the
+source code for the MFC libraries.
+
+NOTE: For Visual C++ 2.x you cannot change the "MFC Files Path" as described in
+this article. When debugging you will be presented with a dialog box requesting
+the location of the MFC files. This information is stored in the .VCP file for
+the project. It will not be requested again until you open a new project that
+does not have this information stored.
+
+
+Additional query words: kbinf 1.00 1.10 1.50
+
+======================================================================
+Keywords          : kbide kbVC 
+Technology        : kbVCsearch kbVSsearch kbAudDeveloper kbvc150 kbvc100
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

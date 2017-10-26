@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q39812: Replacing Real Mode Family API Functions in Bound Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q39812: Replacing Real Mode Family API Functions in Bound Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/039/Q39812/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/039/Q39812/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/039/Q39812/","publisher":null,"image":null,"headline":"Q39812: Replacing Real Mode Family API Functions in Bound Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q39812-replacing-real-mode-family-api-functions-in-bound-applications">Q39812: Replacing Real Mode Family API Functions in Bound Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q39812
+Product(s): See article
+Version(s): 1.00 1.10 1.30 | 1.00 1.10 1.30
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | s_bind | mspl13_basic
+Last Modified: 15-JAN-1991
+
+Question:
+
+How do I create a bound application that uses the system calls in
+protected mode and uses my calls in real mode? The real mode call must
+access global data in my program.
+
+I would like to bind a program so that it will use the system
+VioGetConfig() function in protected mode, but will use my rewritten
+VioGetConfig() function when run in real mode. Everything compiles and
+links correctly, using either my function or the system function.
+However, my VioGetConfig accesses an initialized global int that is
+declared above the main(), which still compiles and links error free.
+But when I link the main with the system VioGetConfig, then bind the
+.EXE giving it the user's version of VioGetConfig, I get an unresolved
+external on the external global variable from the assembly routine.
+
+Response:
+
+The original strategy is probably the best method and should work
+correctly in the general case, that is, in the BIND step, specify the
+user version of VioGetConfig(). The problem is the global int
+variable. BIND does a link of the following:
+
+   API stub loader
+   API library modules
+   protected-mode image with no symbols
+
+The key point is that BIND has no access to the internal name space of
+the program. Thus any API routine, including one rewritten by the
+user, cannot see any of the program's data. You should rewrite your
+VioGetConfig() so it does not use the global variable, if possible.
+Otherwise you will have to use one of the methods discussed below.
+
+Rather than using BIND, do it yourself. In the main program, use code
+such as the following:
+
+    /* Under what operating system we are running ? */
+
+    if (_osmode == DOS_MODE)
+    {
+        /* We are running under DOS - real mode */
+
+        VioGetConfigUser(); /* User version */
+    }
+    else
+    {
+        /* We are running under OS/2 - protected mode */
+
+        VioGetConfig();     /* System version */
+    }
+
+Another way to do this is to build a dual-mode .EXE, as follows:
+
+1. Build your real-mode program using user VioGetConfig.
+
+2. Write protected-mode main program using OS/2 VioGetConfig.
+
+3. In the .DEF file for the protected-mode program, add the following
+   statement:
+
+      STUB '&lt;name-of-your-real-mode-app&gt;'
+
+4. Link your protected-mode application. You will get two programs in one
+   .EXE file. In protected mode, the system will load only the
+   protected-mode version. In real-mode, the system will load only
+   real-mode applications.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

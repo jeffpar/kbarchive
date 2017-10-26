@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q77702: INFO: Processing WM_PALETTECHANGED and WM_QUERYNEWPALETTE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q77702: INFO: Processing WM_PALETTECHANGED and WM_QUERYNEWPALETTE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/077/Q77702/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/077/Q77702/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/077/Q77702/","publisher":null,"image":null,"headline":"Q77702: INFO: Processing WM_PALETTECHANGED and WM_QUERYNEWPALETTE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q77702-info-processing-wm_palettechanged-and-wm_querynewpalette">Q77702: INFO: Processing WM_PALETTECHANGED and WM_QUERYNEWPALETTE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q77702
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16
+Last Modified: 11-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+- Microsoft Win32 Application Programming Interface (API), used with:
+   - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+   - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An application that manipulates the system palette should process the
+WM_PALETTECHANGED and WM_QUERYNEWPALETTE messages to maintain its appearance
+during system palette and input focus changes.
+
+MORE INFORMATION
+================
+
+The WM_PALETTECHANGED message informs all windows that the window with input
+focus has realized its logical palette, thereby changing the system palette.
+This message allows a window without input focus that uses a color palette to
+realize its logical palettes and update its client area.
+
+This message is sent to all windows, including the one that changed the system
+palette and caused this message to be sent. The wParam of this message contains
+the handle of the window that caused the system palette to change. To avoid an
+infinite loop, care must be taken to check that the wParam of this message does
+not match the window's handle. The following sample code demonstrates how to
+process WM_PALETTECHANGED:
+
+     case WM_PALETTECHANGED:
+         {
+         HDC hDC;           // Handle to device context
+         HPALETTE hOldPal;  // Handle to previous logical palette
+
+         // If this application did not change the palette, select
+         // and realize this application's palette
+         if (wParam != hWnd)
+            {
+            // Need the window's DC for SelectPalette/RealizePalette
+            hDC = GetDC(hWnd);
+
+            // Select and realize hPalette
+            hOldPal = SelectPalette(hDC, hPalette, FALSE);
+            RealizePalette(hDC);
+
+            // When updating the colors for an inactive window,
+            // UpdateColors can be called because it is faster than
+            // redrawing the client area (even though the results are
+            // not as good)
+            UpdateColors(hDC);
+
+            // Clean up
+            if (hOldPal)
+               SelectPalette(hDC, hOldPal, FALSE);
+            ReleaseDC(hWnd, hDC);
+            }
+         }
+         break;
+
+NOTE: The WM_PALETTECHANGED message is sent to all top-level and overlapped
+windows; therefore, if any child window uses a color palette, this message must
+be passed on to it.
+
+The WM_QUERYNEWPALETTE message informs a window that it is about to receive input
+focus. In response, the window receiving focus should realize its palette as a
+foreground palette and update its client area. If the window realizes its
+palette, it should return TRUE; otherwise, it should return FALSE. The following
+sample code demonstrates processing WM_QUERYNEWPALETTE:
+
+     case WM_QUERYNEWPALETTE:
+         {
+         HDC hDC;           // Handle to device context
+         HPALETTE hOldPal;  // Handle to previous logical palette
+
+         // Need the window's DC for SelectPalette/RealizePalette
+         hDC = GetDC(hWnd);
+
+         // Select and realize hPalette
+         hOldPal = SelectPalette(hDC, hPalette, FALSE);
+         RealizePalette(hDC);
+
+         // Redraw the entire client area
+         InvalidateRect(hWnd, NULL, TRUE);
+         UpdateWindow(hWnd);
+
+         // Clean up
+         if (hOldPal)
+            SelectPalette(hDC, hOldPal, FALSE);
+         ReleaseDC(hWnd, hDC);
+
+         // Message processed, return TRUE
+         return TRUE;
+         }
+
+NOTE: The WM_QUERYNEWPALETTE message is sent to all top-level and overlapped
+windows; therefore, if any child window uses a color palette, this message must
+be passed on to it.
+
+Additional query words: handtag
+
+======================================================================
+Keywords          : kbOSWinNT350 kbOSWinNT351 kbOSWinNT400 kbOSWin95 kbSDKWin16 
+Technology        : kbAudDeveloper kbSDKSearch kbWin32sSearch kbWin32API kbWinSDKSearch
+Version           : WINDOWS:3.1,95; winnt:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

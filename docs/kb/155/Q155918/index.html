@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155918: HOWTO: How To Scroll a CFormView to See the Controls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155918: HOWTO: How To Scroll a CFormView to See the Controls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155918/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155918/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155918/","publisher":null,"image":null,"headline":"Q155918: HOWTO: How To Scroll a CFormView to See the Controls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155918-howto-how-to-scroll-a-cformview-to-see-the-controls">Q155918: HOWTO: How To Scroll a CFormView to See the Controls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155918
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbcode kbDocView kbMFC kbScrollBar KbUIDesign kbVC400 kbVC420 kbGrpDSMFCATL
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a CFormView is resized to something smaller than the size of the dialog box
+template that it contains and users need to manipulate a control that is not in
+the visible view area, they must use the scroll bars to get the control into the
+visible area. This sample code demonstrates how to scroll the CFormView
+automatically if users tab to a control that is not in view.
+
+MORE INFORMATION
+================
+
+The code sample below works with a CFormView-derived class that contains a
+dialog box template with more than one control in it (typically an edit
+control). To see its effect, you must resize the view so that at least one of
+the controls is not in the current visible client area, then press the TAB key
+to change focus to that control.
+
+This code works by handling WM_CTLCOLOR messages, checking to see if the control
+being draw has focus, and scrolling the CFormView to make sure it is visible.
+WM_CTLCOLOR messages are sent by most controls to their parent before they
+redraw themselves. The WM_CTLCOLOR message is used instead of the obvious
+choice, WM_SETFOCUS, because it is sent to the CFormView, not to the actual
+control. Using WM_SETFOCUS requires subclassing each control.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+     The class 'CScrollFormView' is derived from CFormView
+  */ 
+
+  HBRUSH CScrollFormView::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+  {
+     HBRUSH hbr = CFormView::OnCtlColor(pDC, pWnd, nCtlColor);
+
+     if (GetFocus()-&gt;m_hWnd == pWnd-&gt;m_hWnd)
+     {
+        CRect rcChild, rcParent, rcTemp;
+
+        pWnd-&gt;GetWindowRect(&amp;rcChild);
+        GetWindowRect(&amp;rcParent);
+
+       //Get document size. Assume mapping mode is MM_TEXT and ViewPort
+       //and Window origins have not been set so we can also assume LP==DP.
+        CSize size = GetTotalSize();
+
+        // Determine if scroll bars are visible
+        // and subtract their size from the view.
+        if (size.cx &gt; rcParent.right - rcParent.left)
+           rcParent.bottom -= GetSystemMetrics(SM_CYHSCROLL);
+        if (size.cy &gt; rcParent.bottom - rcParent.top)
+           rcParent.right -= GetSystemMetrics(SM_CXVSCROLL);
+
+        // Succeed only if no part of the child appears in the parent.
+        rcTemp.IntersectRect(rcChild, rcParent);
+
+        if (rcTemp != rcChild)
+        {
+           POINT pt;
+
+           pt.x = GetDeviceScrollPosition().x;
+           pt.y = GetDeviceScrollPosition().y;
+
+           if (rcChild.top &lt; rcParent.top)
+           {
+              TRACE("control is above the client area\n");
+              pt.y -= rcParent.top - rcChild.top +
+                 GetSystemMetrics(SM_CXEDGE);
+           }
+           else if (rcChild.bottom &gt; rcParent.bottom)
+           {
+              TRACE("control is below the client area\n");
+              // If the control is taller than the current view
+              // scroll up, sacrificing the bottom of the control.
+              pt.y += min(rcChild.top - rcParent.top,
+                 rcChild.bottom - rcParent.bottom +
+                 GetSystemMetrics(SM_CYHSCROLL) +
+                 GetSystemMetrics(SM_CXEDGE));
+           }
+
+           if (rcChild.left &lt; rcParent.left)
+           {
+              TRACE("control is left of the client area\n");
+              pt.x -= rcParent.left - rcChild.left +
+                 GetSystemMetrics(SM_CYEDGE);
+           }
+           else if (rcChild.right &gt; rcParent.right)
+           {
+              TRACE("control is right of the client area\n");
+              // If the control is wider than the current view
+              // scroll right, sacrificing the right edge of the control.
+              pt.x += min(rcChild.left - rcParent.left,
+                 rcChild.right - rcParent.right +
+                 GetSystemMetrics(SM_CXVSCROLL) +
+                 GetSystemMetrics(SM_CYEDGE));
+           }
+
+           ScrollToPosition(pt);  //Assume mapping mode is MM_TEXT.
+        }
+     }
+
+     // TODO: Return a different brush if the default is not desired.
+     return hbr;
+  }
+
+Additional query words: 4.00 4.10 4.20 kbdsi
+
+======================================================================
+Keywords          : kbcode kbDocView kbMFC kbScrollBar KbUIDesign kbVC400 kbVC420 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

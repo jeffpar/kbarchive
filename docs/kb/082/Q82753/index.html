@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q82753: Printers with Limited TrueType Font Support | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q82753: Printers with Limited TrueType Font Support" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/082/Q82753/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/082/Q82753/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/082/Q82753/","publisher":null,"image":null,"headline":"Q82753: Printers with Limited TrueType Font Support","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q82753-printers-with-limited-truetype-font-support">Q82753: Printers with Limited TrueType Font Support</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q82753
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Windows 3.1 PRINTERS.WRI online document incorrectly states that the
+following printer drivers have limited support for TrueType (TT) fonts:
+
+- Canon LBP II
+
+- Canon LBP III
+
+- IBM LaserPrinter 4019
+
+- Olivetti PG306
+
+For example, PRINTERS.WRI states the following:
+
+  5.9 Printing TrueType Fonts on Canon Series II and III Laser
+      Printers
+
+      The Canon series II and III laser printers do not support
+      incremental downloading of TrueType fonts. To print TrueType
+      fonts by using one of these printers, you must select the
+      Enable TrueType Fonts check box in the printer setup dialog box
+      for the printer.
+
+In fact, these printers do support TrueType fonts. The only limitation is that TT
+fonts cannot be downloaded as soft fonts. Instead, TT fonts must be printed as
+graphics.
+
+MORE INFORMATION
+================
+
+TrueType is normally printed as a block of graphics. When TrueType fonts can be
+downloaded as soft fonts to the printer, printing is generally faster. The
+Windows printer driver can simply send a select font command followed by the
+ASCII characters to print. When Print TrueType As Graphics is selected, the
+Windows print driver must send a select graphics mode command followed by a
+large amount of binary data for the graphics band. The end result of both
+methods produces identical output; the only difference is in speed.
+
+PostScript printers and laser printers that use the Hewlett-Packard (HP) LaserJet
+Series II (and all later HP LaserJets) soft font download commands can download
+TrueType fonts to the printer as soft fonts. LaserJets earlier than the Series
+either lack soft font downloading ability (classic HP LaserJet) or use an
+incompatible soft font header (HP LaserJet Plus, 500). HP LaserJet compatible
+printers that emulate the HP LaserJet Plus share this problem. Use the Download
+TrueType As Graphics option for these printers.
+
+To select Print TrueType As Graphics
+------------------------------------
+
+1. Open Control Panel and choose the Printers icon.
+
+2. Select the printer from the list box and choose the Setup button.
+
+3. The Canon LBP II and LBP III, IBM LaserPrinter 4019, and Olivetti PG306 all
+  have a check box in the lower-left corner (the message reads Print TrueType
+  As Graphics or Enable TrueType Fonts).
+
+4. Select the check box, then close the Printer Setup dialog box.
+
+These printers will now print TrueType fonts.
+
+The only printers in the Windows 3.1 package that do not support TrueType fonts
+are TTY printers (which have no graphic support) and plotters (which have vector
+graphics, but neither bitmap graphics nor TrueType font support).
+
+
+Additional query words: 3.10 documentation error 3.11 win31
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

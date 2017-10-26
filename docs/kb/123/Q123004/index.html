@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q123004: Remotely Administering SNA Server Tracing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q123004: Remotely Administering SNA Server Tracing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/123/Q123004/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/123/Q123004/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/123/Q123004/","publisher":null,"image":null,"headline":"Q123004: Remotely Administering SNA Server Tracing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q123004-remotely-administering-sna-server-tracing">Q123004: Remotely Administering SNA Server Tracing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q123004
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+Operating System(s): 
+Keyword(s): sna4
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SNA Server includes an SNATRACE tool (Win32 utility), installed into
+the Microsoft SNA Server (Common) program group, to allow an administrator to
+dynamically turn off/on all types of server-side (and Win32 SNA
+application-side) SNA Server tracing.
+
+This article describes how to remotely control SNA Server tracing using the
+SNATRACE program. When administering tracing for SNA Server 2.x, the SNATRACE
+program from 2.11 must be used. When administering tracing for SNA Server 3.0,
+the SNATRACE program from 3.0 must be used.
+
+The trace state is dynamically controlled by registry parameters on the SNA
+Server client or server computer. The SNATRACE program sets these registry
+parameters, though REGEDT32 could be used by knowledgeable SNA Server support
+personnel to remotely control SNA Server tracing.
+
+MORE INFORMATION
+================
+
+The SNA Server SNATRACE program accepts a \\servername command line parameter to
+remotely control tracing. For example:
+
+  SNATRACE \\servername
+
+allows an authorized administrator to remotely control SNA Server tracing on
+\\servername. The administrator must be able to update the registry of the
+remote computer in order to control tracing.
+
+SNA Server trace files are generated on the remote server machine and can be
+found in the &lt;snaroot&gt;\TRACES directory. SNA Server 2.x stores traces as
+*.TRC, which can be viewed using any text editor. SNA Server 3.0 stores traces
+as *.ATF, which can be viewed by the TRACEVWR.EXE tool installed with SNA Server
+3.0 and 4.0.
+
+Additional query words: prodsna 2.00 2.10 2.11 3.00
+
+======================================================================
+Keywords          : sna4 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

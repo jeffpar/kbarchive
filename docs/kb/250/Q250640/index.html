@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250640: PRB: GetChunk Ignores Offset if Memo Field Included in GROUP BY | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250640: PRB: GetChunk Ignores Offset if Memo Field Included in GROUP BY" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250640/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250640/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250640/","publisher":null,"image":null,"headline":"Q250640: PRB: GetChunk Ignores Offset if Memo Field Included in GROUP BY","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250640-prb-getchunk-ignores-offset-if-memo-field-included-in-group-by">Q250640: PRB: GetChunk Ignores Offset if Memo Field Included in GROUP BY</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250640
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbJET kbVBp600 kbGrpDSVBDB kbDSupport kbDAO360bug
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Offset argument of the GetChunk method is used to set the number of bytes to
+skip before copying begins within a Memo or Long Binary Field.
+
+However, when the Memo field is included in the GROUP BY clause of the
+recordset's SELECT statement, the Offset argument is being ignored. This causes
+the characters from the beginning of the field to be retrieved instead of the
+characters beginning at the Offset position. For example, if the Memo field
+contains 500 characters and the Offset and Numbytes arguments are set to 250,
+GetChunk returns the first 250 characters instead of the last 250 characters as
+would be expected.
+
+RESOLUTION
+==========
+
+Rewrite the query to eliminate all Memo fields from the GROUP BY clause. This
+can be done by using an aggregate function on the Memo fields, such as the FIRST
+function. This allows the Memo fields to be removed from the GROUP BY clause.
+This workaround is illustrated in the example code below.
+
+MORE INFORMATION
+================
+
+Microsoft Jet 4.0 has new functionality that allows you to use MEMO fields (Long
+Varchar) in the GROUP BY clause of a SQL statement. This is not available in
+earlier versions of the Jet database engine.
+
+NOTE: The workaround SQL statement works with older versions of Jet.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, select References, and add a reference to the Microsoft
+  DAO 3.6 object library.
+
+3. Add the following code to the Form_Load() Event:
+
+  Dim dbsNorthwind As Database
+  Dim rstEmployees As Recordset
+  Dim sQry As String
+  Const conChunkSize = 60
+  Dim lngOffset As Long
+  Dim lngTotalSize As Long
+  Dim strChunk As String
+      
+    Set dbsNorthwind = OpenDatabase("nwind.mdb")
+
+    'Comment this line out to see the correct behavior.
+    sQry = "SELECT FirstName, LastName, Notes FROM Employees " &amp; _
+           "GROUP BY FirstName, LastName, Notes"
+
+    'Uncomment this line to see the correct behavior
+    'sQry = "SELECT Employees.LastName, Employees.FirstName, First(Employees.Notes) " &amp; _
+            "AS Notes From Employees GROUP BY Employees.LastName, Employees.FirstName"
+
+    Set rstEmployees = dbsNorthwind.OpenRecordset(sQry, dbOpenDynaset)
+    Do While Not rstEmployees.EOF
+      lngTotalSize = rstEmployees("Notes").FieldSize
+      Do While lngOffset &lt; lngTotalSize
+        strChunk = rstEmployees("Notes").GetChunk(lngOffset, conChunkSize)
+        Debug.Print strChunk
+        lngOffset = lngOffset + conChunkSize
+      Loop
+    lngOffset = 0
+    lngTotalSize = 0
+    rstEmployees.MoveNext
+    Loop
+
+NOTE: You might have to adjust the path to NWIND.MDB.
+
+4. The output from GetChunk is written to the Immediate Window, so make sure it
+  is visible. If it is not, choose Immediate Window from the View menu.
+
+5. Run the project, and note that the first 255 characters are repeated for all
+  Memo fields that contain more than 255 characters.
+
+6. Comment the first SQL statement and uncomment the second SQL statement.
+
+7. Run the project, and note that you see the complete text of all Memo fields.
+
+REFERENCES
+==========
+
+For additional information on how to use GetChunk, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q210486 ACC2000: Reading, Storing, and Writing Binary Large Objects
+
+Additional query words:
+
+======================================================================
+Keywords          : kbJET kbVBp600 kbGrpDSVBDB kbDSupport kbDAO360bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

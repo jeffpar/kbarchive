@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185904: SMS: New Smstrace Allows Searching and Highlighting of Strings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185904: SMS: New Smstrace Allows Searching and Highlighting of Strings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185904/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185904/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185904/","publisher":null,"image":null,"headline":"Q185904: SMS: New Smstrace Allows Searching and Highlighting of Strings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185904-sms-new-smstrace-allows-searching-and-highlighting-of-strings">Q185904: SMS: New Smstrace Allows Searching and Highlighting of Strings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185904
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Systems Management Server allows you to trace the actions
+performed by the Systems Management Server services. When tracing is enabled,
+each service creates log entries for actions that it performs or errors that it
+receives in a log file.
+
+The Systems Management Server 1.2 CD and the Systems Management Server Resource
+Kit include a Tracer (Smstrace.exe) utility that parses these log files and
+presents them in a clearer, more user-friendly manner than plain text viewing.
+
+Tracer also allows interactive viewing of the Systems Management Server log files
+while the services are writing to them.
+
+Unfortunately, searching for keywords or strings is not possible.
+
+MORE INFORMATION
+================
+
+The Tracer utility has been updated with some news features. This file will be
+available starting with the June 1998 edition of the Microsoft TechNet CD.
+
+New Features
+------------
+
+Search for String (Entry Text Column)
+-------------------------------------
+
+Available on the Search menu.
+
+- Find string
+
+- Find Next string (F3)
+
+- Find Previous string (F4)
+
+Highlight and Action
+--------------------
+
+Available on the HighLight menu.
+
+HighLight:
+
+  Draws a black outline around a row containing the defined string. The last
+  outlined row is the current (selected) row.
+
+  This feature is useful to facilitate the reading of the Systems Management
+  Server Logs when looking for occurrences of a specific string. It's also
+  useful for real-time monitoring.
+
+- Only new, loaded lines are processed.
+- You can not remove the outline from outlined rows.
+- To stop the outline process, set the string to an unexpected value.
+
+Action:
+
+  This feature works with HighLight string.
+
+  Allows Smstrace to execute a command when the "HighLight" string is found.
+
+  The action can be Enabled or Disabled.
+
+IMPORTANT: Microsoft recommends that you use great caution when you define the
+string that triggers the enabled action, so that you can prevent large numbers
+of processes from starting up accidentally.
+
+Additional query words: prodsms smstrace
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

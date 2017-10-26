@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168053: HOWTO: Use VFP Automation Servers with Active Server Pages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168053: HOWTO: Use VFP Automation Servers with Active Server Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168053/","publisher":null,"image":null,"headline":"Q168053: HOWTO: Use VFP Automation Servers with Active Server Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168053-howto-use-vfp-automation-servers-with-active-server-pages">Q168053: HOWTO: Use VFP Automation Servers with Active Server Pages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168053
+Product(s): Microsoft FoxPro
+Version(s): 5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbAutomation kbvfp500 kbvfp600
+Last Modified: 21-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Internet Information Server (IIS) 3.0 supports Active Server Pages
+(ASP). ASPs allow you to perform server-side processing and scripting through
+the use of automation servers, including automation servers that were created in
+Visual FoxPro 5.0 or 6.0. This article demonstrates how to use a Visual FoxPro
+automation server with Active Server Pages.
+
+MORE INFORMATION
+================
+
+There are primarily two components:
+
+- Visual FoxPro Automation Server.
+
+- Active Server Page that instantiates the server.
+
+The Visual FoxPro Automation Server
+-----------------------------------
+
+For this example, you can create a simple automation server in Visual FoxPro.
+This automation server has two methods: one called GetTime(), which will return
+the current time and one called GetDate(), which will return the current date.
+
+Creating the automation server:
+
+1. Create a new project named ASPSrv in Visual FoxPro.
+
+2. Add a new program to the project with the following code:
+
+          DEFINE CLASS WristWatch AS Custom OLEPUBLIC
+
+        PROCEDURE GetTime()
+           RETURN Time()
+        ENDPROC
+
+        PROCEDURE GetDate()
+           RETURN Date()
+        ENDPROC
+
+          ENDDEFINE
+
+3. Build the project into an OLE DLL automation server.
+
+4. Install the automation server onto your IIS 3.0 server.
+
+  NOTE: It is recommended that you use the Setup Wizard in Visual FoxPro as a
+  distribution method. Files that will be included for distribution are the
+  Visual FoxPro runtime, the OLE server .DLL, .TLB, and .VBR files.
+
+The Active Server Page
+----------------------
+
+The ASP file is the component that instantiates the automation server and calls
+the methods of the automation server.
+
+1. Create the following file in a text editor, such as Notepad:
+
+       &lt;%@ LANGUAGE="VBSCRIPT" %&gt;
+       &lt;!-- Ensure that there is a space before LANGUAGE and
+            after "VBSCRIPT" --&gt;
+       &lt;HTML&gt;
+       &lt;HEAD&gt;
+       &lt;TITLE&gt; VFP and ASP &lt;/TITLE&gt;
+       &lt;/HEAD&gt;
+
+       &lt;BODY&gt;
+       &lt;H2&gt;Active Server Pages and Visual FoxPro Automation Servers&lt;/H2&gt;
+
+       &lt;%Set VFPSrv = Server.CreateObject("ASPSrv.WristWatch")%&gt;
+
+       Today's Date is &lt;%=VFPSrv.GetDate()%&gt;
+       &lt;P&gt;
+       The Current Time is &lt;%=VFPSrv.GetTime()%&gt;
+
+       &lt;/BODY&gt;
+       &lt;/HTML&gt;
+
+2. Save this file to your IIS WWWROOT directory as VFPSrv.ASP, and make certain
+  that this directory has Execute privileges.
+
+3. You should now be able to access this Active Server Page from your Web
+  browser. The page should show the current date and time from the server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

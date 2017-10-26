@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167158: HOWTO: Package MFC Controls for Use Over the Internet | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167158: HOWTO: Package MFC Controls for Use Over the Internet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167158/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167158/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167158/","publisher":null,"image":null,"headline":"Q167158: HOWTO: Package MFC Controls for Use Over the Internet","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167158-howto-package-mfc-controls-for-use-over-the-internet">Q167158: HOWTO: Package MFC Controls for Use Over the Internet</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167158
+Product(s): Microsoft C Compiler
+Version(s): 3.0,4.0,4.1,4.2,5,5.0,5.5,6,6.0
+Operating System(s): 
+Keyword(s): kbole kbActiveX kbCAB kbCOMt kbCtrl kbInprocSvr kbInternet kbMFC kbSDKInet kbVC410 kbVC
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, versions 4.1, 4.2, 5.0, 6.0 
+- Microsoft Internet Explorer (Programming) versions 3.0, 4.0, 5, 5.5, 6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you embed ActiveX Controls in a Web page using the OBJECT tag, the CODEBASE
+attribute used to specify the download location can point to a .cab file. This
+is the recommended way to package MFC ActiveX Controls. Packaging an MFC ActiveX
+Control in a cabinet file allows an .inf file to be included to control
+installation of the ActiveX Control, allows for dependent DLLs to be named and a
+location for them provided, allows for code signing, and automatically
+compresses the code for quicker download.
+
+MORE INFORMATION
+================
+
+ActiveX controls are embedded in Web pages using the OBJECT tag. The CODEBASE
+attribute of the OBJECT tag specifies the location from which to download the
+control. CODEBASE can point to a number of different file types successfully.
+
+For instance, CODEBASE can point directly to an .ocx file as follows:
+
+  CODEBASE="http://example.microsoft.com/somecontrol.ocx#version=4,70,0,1086"
+
+Because this downloads and installs only the .ocx file, this solution relies on
+any necessary supporting DLLs already existing on the client machine. In most
+cases, it should not be assumed that these DLLs will exist on the client and be
+the correct version.
+
+Another alternative is for CODEBASE to point to an .inf file, for example:
+
+  CODEBASE="http://example.microsoft.com/doyoutrustme.inf"
+
+An .inf file controls the installation of an .ocx file and its supporting files.
+This method is NOT recommended because it is not possible to sign an .inf file
+(see the REFERENCES section for references on code signing).
+
+The best solution is for CODEBASE to point to a cabinet file. With this method,
+supporting DLLs can be referenced and the cabinet file signed.
+
+NOTE: If the directions below for referencing the MFC DLLs are followed, the MFC
+DLLs will not be downloaded if they already exist on the client. The CODEBASE
+line will resemble the following:
+
+  CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,2,0,0"
+
+Note here that the #Version information applies to the version of the control
+specified by the CLASSID parameter of the OBJECT tag.
+
+Cab Packaging Overview
+----------------------
+
+In the Cabinet Software Development Kit (also called Cabinet SDK, or CAB
+Development Kit) you will find the necessary tools to construct cabinet (.cab)
+files. See the following Microsoft Web site:
+
+  Microsoft Cabinet SDK
+  http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dncabsdk/html/cabdl.asp
+
+The cabinet file that CODEBASE points to should contain the .ocx file and an .inf
+file that will control the installation of the ActiveX Control. Dependent DLLs
+that may already exist on the system, such as the MFC DLLs, should not be
+included in this cabinet file. Instead, the MFC DLLs, and other dependent DLLs,
+should be packaged in separate cabinet files and referenced by the control's
+.inf file. The following example illustrates how to package the MFC Spindial
+sample control.
+
+The OBJECT tag to include the Spindial control in a Web page resembles the
+following:
+
+     &lt;OBJECT ID="Spindial1" WIDTH=200 HEIGHT=200
+     CLASSID="CLSID:06889605-B8D0-101A-91F1-00608CEAD5B3"
+     CODEBASE="http://example.microsoft.com/spindial.cab#Version=1,0,0,001"&gt;
+
+           &lt;PARAM NAME="_Version" VALUE="65536"&gt;
+           &lt;PARAM NAME="_ExtentX" VALUE="2646"&gt;
+           &lt;PARAM NAME="_ExtentY" VALUE="1323"&gt;
+           &lt;PARAM NAME="_StockProps" VALUE="0"&gt;
+           &lt;PARAM NAME="NeedlePosition" VALUE="2"&gt;
+     &lt;/OBJECT&gt;
+
+In this case, Spindial.cab must contain two files, Spindial.ocx and Spindial.inf.
+The command to build this cabinet file is similar to the following depending on
+the path to your installation of the Cabinet Development Kit:
+
+  C:\CabDevKit\cabarc.exe N spindial.cab spindial.ocx spindial.inf
+
+The following is an example .inf for the MFC Spindial control. This .inf file can
+be modified to download any MFC ActiveX Control by changing Spindial's
+information to the desired MFC ActiveX Control's information. See comments
+below.
+
+     ; ========================= spindial.inf ========================
+
+     ; This .inf file will control the installation of the MFC Spindial
+     ; control. This control has been compiled with Visual C++ version 4.2.
+     ; The FileVersion tags in the dependent DLLs section on this file
+     ; reflect this requirement.
+
+     [version]
+     ; version signature (same for both NT and Win95) do not remove
+     signature="$CHICAGO$"
+     AdvancedINF=2.0
+
+     [Add.Code]
+     spindial.ocx=spindial.ocx
+     ; These are the necessary supporting DLLs for MFC 4.2 ActiveX Controls
+     mfc42.dll=mfc42.dll
+     msvcrt.dll=msvcrt.dll
+     olepro32.dll=olepro32.dll
+     ; thiscab is a keyword which, in this case, means that Spindial.ocx
+     ; can be found in the same .cab file as this .inf file
+     ; file-win32-x86 is an x86 platform specific identifier
+     ; See the ActiveX SDK - ActiveX Controls - Internet Component Download -
+     ; Packaging component code for automatic download
+
+     [spindial.ocx]
+     file-win32-x86=thiscab
+     ; *** add your controls CLSID here ***
+     clsid={06889605-B8D0-101A-91F1-00608CEAD5B3}
+     ; Add your ocx's file version here.
+     FileVersion=1,0,0,001
+     RegisterServer=yes
+
+     ; dependent DLLs
+     [msvcrt.dll]
+     ; This is an example of conditional hook. The hook only gets processed
+     ; if msvcrt.dll of the specified version is absent on client machine.
+     FileVersion=4,20,0,6164
+     hook=mfc42installer
+
+     [mfc42.dll]
+     FileVersion=4,2,0,6256
+     hook=mfc42installer
+
+     [olepro32.dll]
+     FileVersion=4,2,0,6068
+     hook=mfc42installer
+
+     [mfc42installer]
+     file-win32-x86=VALUE=http://activex.microsoft.com/controls/vc/mfc42.cab
+     ; If dependent DLLs are packaged directly into the above cabinet file
+     ; along with an .inf file, specify that .inf file to run as follows:
+     ;InfFile=mfc42.inf
+     ; The mfc42.cab file actually contains a self extracting executable.
+     ; In this case we specify a run= command.
+     run=%EXTRACT_DIR%\mfc42.exe
+
+     ; ====================== end of spindial.inf =====================
+
+The following sections of this .inf file will need to be modified depending on
+your control and the version of MFC that you are using to build your control:
+
+- Any reference to spindial should be changed to the name of your control. This
+  includes comments and the following:
+
+     spindial.ocx=spindial.ocx
+     [spindial.ocx]
+
+- The following should be changed to the correct CLSID and FileVersion for your
+  control:
+
+     clsid={06889605-B8D0-101A-91F1-00608CEAD5B3}
+     FileVersion=1,0,0,001
+
+  The CLSID above can be obtained for your control from the control's ODL file.
+  The CLSID is associated with the coclass for the control. For instance, the
+  above CLSID was obtained from the following section of Spindial.odl:
+
+     [ uuid(06889605-B8D0-101A-91F1-00608CEAD5B3),
+
+       helpstring("Spindial Control"), control ]
+       coclass Spindial
+
+  The FileVersion for the control can be obtained from the version resource for
+  the control. As is true of any file with a version resource, this can be
+  obtained by opening the file (Spindial.ocx in this case ) version resource
+  with Visual Studio. From the File menu, select Open, and click Open as:
+  Resources. Open the Version resource; the FileVersion that you are interested
+  in is listed after FILEVERSION.
+
+- The last change that you need to make is to enter the correct FileVersion for
+  each of the MFC DLLs, [mfc42.dll], [olepro32.dll], and [mscvrt.dll]. Note
+  that if you are using Visual C++ 4.1 or earlier, you need to change any
+  reference to Mfc42.dll to Mfc40.dll and any reference to Msvcrt.dll to
+  Msvcrt40.dll.
+
+The following FileVersions should be used:
+
+VC 4.1 and earlier, use::
+
+  http://activex.microsoft.com/controls/vc/mfc40.cab
+
+  Olepro32.dll   4,1,0,6038
+  Mfc40.dll      4,1,0,6139
+  Msvcrt40.dll  4,10,0,6038
+
+VC 4.2b and earlier, use::
+
+  http://activex.microsoft.com/controls/vc/mfc42.cab
+
+  Olepro32.dll   4,2,0,6068
+  Mfc42.dll      4,2,0,6256
+  Msvcrt.dll    4,20,0,6164
+
+VC 5.0, use::
+
+  http://activex.microsoft.com/controls/vc/mfc42.cab
+
+  Olepro32.dll   5,0,4055,1
+  Mfc42.dll     4,21,0,7022
+  Msvcrt.dll     5,0,0,7022
+
+VC 5.0sp1, use::
+
+  http://activex.microsoft.com/controls/vc/mfc42.cab
+
+  Olepro32.dll   5,0,4055,1
+  Mfc42.dll     4,21,0,7160
+  Msvcrt.dll     5,0,0,7128
+
+VC 5.0sp2, use::
+
+  http://activex.microsoft.com/controls/vc/mfc42.cab
+
+  Olepro32.dll   5,0,4055,1
+  Mfc42.dll     4,21,0,7160
+  Msvcrt.dll     5,0,0,7128
+
+VC 5.0sp3, use::
+
+  http://activex.microsoft.com/controls/vc/mfc42.cab
+
+  Olepro32.dll   5,0,4230,1
+  Mfc42.dll     4,21,0,7303
+  Msvcrt.dll     5,0,0,7303
+
+VC 6.0, use::
+
+  http://activex.microsoft.com/comtrols/vc/mfc42.cab
+
+  Olepro32.dll   5,0,4261,0
+  Mfc42.dll      6,0,8168,0
+  Msvcrt.dll     6,0,8168,0
+
+Notice that all versions of MFC between 4.2 and 6.0 use Mfc42.cab. This .cab file
+always contains the latest version of the DLLs because they are
+backward-compatible. If you are not compiling with a later build of MFC, you may
+not want to specify the latest FileVersion. Doing so may trigger an unnecessary
+download of the MFC DLLs.
+
+REFERENCES
+==========
+
+For more information, visit the following Microsoft Developer Network (MSDN) Web
+sites:
+
+  Packaging ActiveX Controls
+  http://msdn.microsoft.com/library/default.asp?url=/workshop/components/activex/packaging.asp?frame=true
+
+  Safe Initialization and Scripting for ActiveX Controls
+  http://msdn.microsoft.com/library/default.asp?url=/workshop/components/activex/safety.asp?frame=true#iobjsafe
+
+  Signing Code with Microsoft Authenticode Technology
+  http://msdn.microsoft.com/library/default.asp?url=/workshop/security/authcode/authenticode.asp
+
+  Using ActiveX Controls to Automate Your Web Pages
+  http://msdn.microsoft.com/library/default.asp?url=/workshop/components/activex/tutorial.asp?frame=true
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q264570 INFO: WebCast: How Does Internet Component Download Work?
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbole kbActiveX kbCAB kbCOMt kbCtrl kbInprocSvr kbInternet kbMFC kbSDKInet kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbIEsearch kbAudDeveloper kbSDKIESearch kbZNotKeyword kbVC410 kbSDKIE300 kbSDKIE400 kbSDKIE500 kbSDKIE550 kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search kbSDKIE600
+Version           : :3.0,4.0,4.1,4.2,5,5.0,5.5,6,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

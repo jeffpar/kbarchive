@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40184: NMAKE Builds Only the First Target in Makefile | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40184: NMAKE Builds Only the First Target in Makefile" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40184/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40184/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40184/","publisher":null,"image":null,"headline":"Q40184: NMAKE Builds Only the First Target in Makefile","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40184-nmake-builds-only-the-first-target-in-makefile">Q40184: NMAKE Builds Only the First Target in Makefile</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40184
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft NMAKE Utility for MS-DOS 
+- Microsoft NMAKE Utility for OS/2 
+- Microsoft NMAKE Utility for Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, the NMAKE file maintenance utility builds only the first target in a
+makefile, if the command line does not explicitly list a target to build. The
+MAKE file maintenance utility defaults to building each target listed in the
+makefile.
+
+MORE INFORMATION
+================
+
+The following code example demonstrates this behavior. The MAKE utility compiles
+PROG1.C and links PROG1.OBJ while the NMAKE utility only compiles PROG1.C. This
+is an important consideration when you port a makefile from MAKE to NMAKE.
+
+Sample Code
+-----------
+
+       # Build options required: None
+
+     PROG1.OBJ : PROG1.C
+         cl /Zi /c PROG1.C
+
+     PROG1.EXE : PROG1.OBJ
+         link /CO PROG1.OBJ
+
+If all files are out-of-date with respect to PROG1.C and the NMAKE command line
+is as follows
+
+  NMAKE /f makefile
+
+the NMAKE utility executes only the following command:
+
+  cl /Zi /c prog1.c
+
+NMAKE defaults to building only the first target in the makefile. To achieve the
+desired results, specify the desired target, PROG1.EXE, on the NMAKE
+command-line or modify the makefile to add the following line to the beginning
+of the file:
+
+  ALL : PROG1.EXE
+
+NMAKE builds the pseudotarget "ALL" because it is the first target in the
+makefile. Using a pseudotarget causes NMAKE to build all the dependencies
+because the pseudotarget is always out-of-date.
+
+REFERENCES
+==========
+
+For more information, see the NMAKE documentation provided with your compiler or
+assembler.
+
+Additional query words: kbinf 1.20 1.30 1.40 1.50
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

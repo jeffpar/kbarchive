@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119067: Booting MS-DOS with QEMM DOSDATA.SYS Starts Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119067: Booting MS-DOS with QEMM DOSDATA.SYS Starts Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119067/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119067/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119067/","publisher":null,"image":null,"headline":"Q119067: Booting MS-DOS with QEMM DOSDATA.SYS Starts Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119067-booting-ms-dos-with-qemm-dosdatasys-starts-windows-95">Q119067: Booting MS-DOS with QEMM DOSDATA.SYS Starts Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119067
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kb3rdparty kbsetup kbtool diskmem win95 appscomp kbAppCompatibility kbDiskMemory
+Last Modified: 28-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you press the F4 key when the "Starting Windows 95" message appears, your
+computer may not start with your previous version of MS-DOS. You may see the
+"Starting MS-DOS" message, but shortly after this message appears, your computer
+restarts and the "Starting Windows 95" message is displayed again.
+
+CAUSE
+=====
+
+QEMM versions 7.03 and later install a utility called DOSDATA.SYS in the
+CONFIG.SYS file. When this file is read, it forces the computer to reboot so
+that it can optimize memory allocations made from the first boot cycle. Windows
+95 does not support the DOSDATA.SYS utility included with QEMM versions 7.03 and
+later.
+
+RESOLUTION
+==========
+
+To boot MS-DOS, follow these steps:
+
+1. Press F4 when you see the "Starting Windows 95" message.
+
+2. The computer reboots after DOSDATA.SYS is read and displays "Starting Windows
+  95" again.
+
+3. Press F4 when you see "Starting Windows 95" the second time. This allows the
+  computer to continue booting MS-DOS.
+
+-or-
+
+1. Remark out any statements for QEMM in the CONFIG.SYS file by placing a
+  semicolon before those statements and then reboot your computer.
+
+  NOTE: If you are running Windows 95 (not your previous version of MS-DOS),
+  modify the CONFIG.DOS file, not the CONFIG.SYS file. If you booted MS-DOS,
+  modify the CONFIG.SYS file.
+
+2. Press F4 when you see the "Starting Windows 95" message.
+
+NOTE: You may have to edit your MSDOS.SYS file to boot your previous version of
+MS-DOS. For additional information, please see the following articles in the
+Microsoft Knowledge Base:
+
+  Q118579 Contents of the Windows Msdos.sys File
+
+  Q121963 Requirements to Boot Previous Operating System
+
+MORE INFORMATION
+================
+
+QEMM is manufactured by Quarterdeck Office Systems, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional querey words: 95 qemm386 3rdparty
+
+======================================================================
+Keywords          : kb3rdparty kbsetup kbtool diskmem win95 appscomp kbAppCompatibility kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

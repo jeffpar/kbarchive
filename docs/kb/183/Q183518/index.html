@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183518: PRB: Cannot Set TabStops in ListBox Using SendMessage API | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183518: PRB: Cannot Set TabStops in ListBox Using SendMessage API" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183518/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183518/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183518/","publisher":null,"image":null,"headline":"Q183518: PRB: Cannot Set TabStops in ListBox Using SendMessage API","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183518-prb-cannot-set-tabstops-in-listbox-using-sendmessage-api">Q183518: PRB: Cannot Set TabStops in ListBox Using SendMessage API</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183518
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the SendMessage API and the LB_SETTABSTOPS message to define custom
+TabStops within a ListBox control to give the appearance of multiple columns,
+there is no effect on a ListBox control whose Style property is set to "1 -
+Checkbox."
+
+CAUSE
+=====
+
+To set the columns in the ListBox, send the ListBox control a LB_SETTABSTOPS
+message along with information to define the TabStops. A list box must be
+created with the LBS_USETABSTOPS style to respond to this message. The Visual
+Basic ListBox with a style set to "1 - Checkbox" is not created with the
+LBS_USETABSTOPS style. Therefore, the LB_SETTABSTOPS message has no effect on
+the ListBox control.
+
+RESOLUTION
+==========
+
+To set custom TabStops within the standard Visual Basic ListBox control, you
+must set the style setting to "0 [ASCII 150] Standard." Alternatives include
+using controls provided by third-party vendors, or using the Microsoft Grid or
+ListView controls to obtain the look and functionality you desire.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project.
+
+2. Add a command button to Form1.
+
+3. Add a ListBox control to Form1.
+
+4. Paste the following code into Form1's code window:
+
+        Option Explicit
+
+        Private Declare Function SendMessage Lib "User32" _
+                                 Alias "SendMessageA" _
+                                 (ByVal hWnd As Long, _
+                                 ByVal wMsg As Long, _
+                                 ByVal wParam As Long, _
+                                 lParam As Any) As Long
+        Private Const LB_SETTABSTOPS = &amp;H192
+
+        Private Sub Command1_Click()
+            Dim ListBoxTabs(2) As Long
+            Dim result As Long
+
+            'Set the tab stop points.
+            ListBoxTabs(1) = 75
+            ListBoxTabs(2) = 200
+
+            'Send LB_SETTABSTOPS message to ListBox.
+            result = SendMessage(List1.hWnd, LB_SETTABSTOPS, _
+                                 UBound(ListBoxTabs) + 1, _
+                                 ListBoxTabs(1))
+
+            'Refresh the ListBox control.
+            List1.Refresh
+        End Sub
+
+        Private Sub Form_Load()
+            'Add a few items to the ListBox.
+            List1.AddItem "January Sales" &amp; vbTab &amp; _
+                          "February Sales" &amp; vbTab &amp; _
+                          "March Sales"
+            List1.AddItem "50" &amp; vbTab &amp; _
+                          "500" &amp; vbTab &amp; _
+                          "5000"
+        End Sub
+
+5. Save and run the project.
+
+6. Click Command1.
+
+  RESULT: Two TabStops are set in the ListBox control. The first is 75 twips and
+  the second is 200 twips.
+
+7. Stop the application.
+
+8. Set the Style property of the ListBox control to "1 [ASCII 150] Checkbox."
+
+9. Repeat steps 5 and 6.
+
+  RESULT: The TabStops do not affect the ListBox control.
+
+Additional query words: list box check box kbVBp500 kbVBp600 kbControl kbWin32SDK kbAPI 
+kbVBp kbdsd kbDSupport
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

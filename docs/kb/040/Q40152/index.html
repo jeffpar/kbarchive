@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q40152: How to Incorporate Paintbrush (PCX) EGA File into QB SCREEN 9 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q40152: How to Incorporate Paintbrush (PCX) EGA File into QB SCREEN 9" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/040/Q40152/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/040/Q40152/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/040/Q40152/","publisher":null,"image":null,"headline":"Q40152: How to Incorporate Paintbrush (PCX) EGA File into QB SCREEN 9","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q40152-how-to-incorporate-paintbrush-pcx-ega-file-into-qb-screen-9">Q40152: How to Incorporate Paintbrush (PCX) EGA File into QB SCREEN 9</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q40152
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom SR# S881229-80 | mspl13_basic
+Last Modified: 12-DEC-1989
+
+Microsoft QuickBASIC can incorporate PCX files created with the
+Microsoft Mouse Paintbrush package through the use of the FRIEZE
+terminate-and-stay-resident (TSR) program. The FRIEZE TSR is included
+in the Microsoft Mouse Paintbrush package and can be loaded up into
+memory by running the PAINT.BAT file located on the Microsoft Mouse
+Utilities distribution disk. The steps you should first take are as
+follows:
+
+1. Load the FRIEZE TSR into memory from within a batch file.
+
+2. Load your QuickBASIC program, which will issue an interrupt 5. This
+   makes the TSR active, allowing you to load a PCX file from disk
+   into the video-card memory.
+
+Your QuickBASIC program then can BSAVE the four EGA planes--red,
+green, blue, and intensity--out to disk. This makes it possible to
+include high quality, color pictures in QuickBASIC programs.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 for MS-DOS and Microsoft BASIC Compiler Versions 6.00 and
+6.00b and Microsoft BASIC PDS 7.00 for MS-DOS and MS OS/2.
+
+The following is a code example:
+
++++++++++++++++++++++++++++++++++++
+EGAPBSAV.BAS
++++++++++++++++++++++++++++++++++++
+
+REM If you are using BASIC PDS 7.00, change the include file
+REM below to 'QBX.BI'.
+
+REM $INCLUDE: 'QB.BI'
+DIM REGS AS RegType
+DIM SHARED TOTALVIDEOMEM AS INTEGER
+DIM SHARED FILNAME$
+
+TOTALVIDEOMEM=28000
+SCREEN 9
+COLOR 5,0
+CLS
+PRINT "MAKE SURE THAT YOU HAVE LOADED THE FRIEZE TSR INTO MEMORY BEFORE"
+PRINT "RUNNING THIS PROGRAM."
+PRINT
+CALL SAVEPCXFILE
+END
+
+SUB SAVEPCXFILE STATIC
+  DIM REGS AS REGTYPE
+  PRINT : PRINT
+  PRINT "WHAT BASE NAME WOULD YOU LIKE TO GIVE THE BINARY IMAGE FILE?"
+  PRINT "PLEASE DO NOT PROVIDE AN EXTENSION (e.g. .BAS OR .BIN)"
+  PRINT
+  INPUT "FILENAME: ",FILENAME$
+  PRINT "PRESS ANY KEY TO BRING UP THE FRIEZE TSR...."
+  SLEEP
+  CALL INTERRUPT(&amp;H5,REGS,REGS)
+  DEF SEG=&amp;HA000
+  FOR I=0 TO 3
+        'SET EGA REGISTER FOR A READ FROM EACH PLANE
+        OUT &amp;H3CE,4
+        OUT &amp;H3CF,I
+        TEMP$=RTRIM$(FILENAME$)+LTRIM$(STR$(I))+".EGA"
+        BSAVE TEMP$,0,TOTALVIDEOMEM
+  NEXT I
+  DEF SEG
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

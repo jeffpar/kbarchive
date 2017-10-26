@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150506: Files and Data Sources Installed by Visual FoxPro ODBC Driver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150506: Files and Data Sources Installed by Visual FoxPro ODBC Driver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150506/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150506/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150506/","publisher":null,"image":null,"headline":"Q150506: Files and Data Sources Installed by Visual FoxPro ODBC Driver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150506-files-and-data-sources-installed-by-visual-foxpro-odbc-driver">Q150506: Files and Data Sources Installed by Visual FoxPro ODBC Driver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150506
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for Visual FoxPro, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the files installed by the Visual FoxPro ODBC driver version
+1.0.
+
+MORE INFORMATION
+================
+
+In addition to the Vfpodbc.dll file, which is the ODBC driver, the setup program
+installs the 32-bit ODBC Administrator and its supporting files. All of the
+files are installed in the System directory on the Windows 95 platform and in
+the System32 directory on the Windows NT platform.
+
+File            Version       Description
+--------------------------------------------------------------------
+
+Visual FoxPro ODBC Driver
+-------------------------
+
+Drvvfp.hlp      1.00          Visual FoxPro ODBC Driver Help file
+Drvvfp.cnt
+FoxPro.int                    Collation sequence file
+Vfpodbc.dll     1.0.0.83      Visual FoxPro ODBC driver
+Vfpodbc.txt                   Additional information not included in
+                             the Help file.
+Vfpodbc.stf
+
+ODBC and System Files
+---------------------
+
+Odbc32.dll      2.50.3006     Microsoft ODBC Driver Manager
+Odbcad32.exe    2.50.3006     32 Bit ODBC Administrator
+Odbc32gt.dll    2.50.3006     Microsoft ODBC Driver Generic Thunk
+Odbccp32.cpl    2.50.3006     Microsoft ODBC CPL Thunk
+Odbccr32.dll    2.50.3006     Microsoft ODBC Cursor Library
+Odbcinst.cnt
+Odbcinst.hlp
+Odbcint.dll     2.50.3006     Microsoft ODBC Resource DLL
+Odbckey.inf
+Odbcstf.dll     03.40.22.04   ODBC custom action setup DLL
+Odbc16gt.dll    2.50.3006     Microsoft ODBC Driver Generic Thunk
+Ctl3d32.dll     2.31.000      Dialog DLL
+Ctl3ds.dll      2.30.000      Ctl3D 3D Windows Controls
+Ds16gt.dll      2.10.2323     Microsoft ODBC Driver Setup Generic
+                             Thunk
+Ds32gt.dll      2.50.3006     Microsoft ODBC Driver Setup Generic
+                             Thunk
+ReadMe25.txt                  ReadMe file for the ODBC 2.5 Component
+                             changes
+Msvcrt20.dll  2.10.000        Microsoft C Runtime Library
+
+Setup Program Files
+-------------------
+
+Setup.exe       1.2           MS-Setup Setup Exe
+Setup.ini
+Setup.lst
+Setup.tdf
+Mssetup.dll     1.2           Setup DLL
+Extract.exe
+Qfeupd.exe      4.0.954       Windows 95 QFE Installer
+
+
+The Visual FoxPro ODBC driver also installs two default data source names (DSN).
+They are the "Visual FoxPro tables" and "Visual FoxPro databases."
+
+The "Visual FoxPro tables" data source is the default DSN for free tables and the
+"Visual FoxPro Databases" is the default DSN for databases. However, these DSNs
+do not point to any data. You need to configure them in the ODBC Administrator
+to give the data source a database or directory specification.
+
+Additional query words: 1.00 VFoxWin
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbODBCSearch kbODBCVFP100
+Version           : WINDOWS:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

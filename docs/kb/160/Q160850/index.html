@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160850: XADM: DS_E_BUSY After Directory Service Restore | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160850: XADM: DS_E_BUSY After Directory Service Restore" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160850/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160850/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160850/","publisher":null,"image":null,"headline":"Q160850: XADM: DS_E_BUSY After Directory Service Restore","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160850-xadm-ds_e_busy-after-directory-service-restore">Q160850: XADM: DS_E_BUSY After Directory Service Restore</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160850
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a directory is restored from backup it attempts to get back copies of all
+the objects that it last modified or added and that it replicated out to other
+computers since it was backed up; this is called backsync. During backsync, you
+can get into a situation where it is not possible to make directory changes for
+up to 16 hours. When you attempt to modify the directory while it is in this
+state, the Microsoft Exchange Server Administrator program will display the
+following message:
+
+  The directory is busy. Wait a few minutes and try again.
+
+  Microsoft Exchange Directory
+  ID no: DS_E_BUSY
+
+The following event ID will also be logged:
+
+  Event ID: 1173. A privileged operation (rights required = 0x4) on object
+  failed because a non-security related error occurred.
+
+CAUSE
+=====
+
+This will most often occur after the restoration of a directory on a server that
+has the schedule on its connectors set to Never. The directory service agent
+(DSA) is hardcoded to try to backsync for up to 16 hours even if it is unable to
+do so.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+- Make sure that the schedule on the connector of the remote Directory
+  Replication Bridgehead is not set to Never. If it is, either set it to Always
+  to allow for the proper delivery of directory replication messages, or wait
+  for 16 or 4 hours respectively for this to time out.
+
+  -OR-
+
+- In Microsoft Exchange Server 5.0 SP1, it is possible to add a value to the
+  registry that will control this timeout:
+
+  Under the HKEY_LOCAL_MACHINE subtree, add the value in minutes to the
+  following subkey:
+
+     Key: System\CurrentControlSet\Services\MSExchangeDS\Parameters\ 
+     Value: Replicator inter site backsync timeout
+     Data Type: REG_DWORD
+     Value data: &lt;number-of-minutes-in-hex&gt;
+
+  The hex value of "f" equals 15 minutes in the line above.
+
+  This value is case-sensitive and must be entered as shown above.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 4.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+When a directory is restored from backup it attempts to get back -- backsync --
+copies of all the objects which it last modifed or added which it replicated out
+to other computers since it was backed up. These computers can be in the same
+site or another site. Backsync is necessary becuase normally changes made at a
+DSA do not replicate back to that DSA, and also the Update Sequence Number (USN)
+for a restored computer will be lower than the USN it had before being restored.
+This means that if any changes are made at the restored computer before it has
+backsync'ed, they will not replicate out until the USN climbs to the value it
+was before the server was restored.
+
+If the backsync is overridden by reducing the timeout, there is a risk of this
+replication loss. Therefore the backsync timeout should only be reduced or
+eliminated when you are sure that no changes were made at the restored computer
+since the computer was backed up."
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

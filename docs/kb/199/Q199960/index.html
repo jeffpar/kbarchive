@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199960: XADM: XFOR: T-shooting Notes/SNADS/PROFS/GW Connectors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199960: XADM: XFOR: T-shooting Notes/SNADS/PROFS/GW Connectors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199960/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199960/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199960/","publisher":null,"image":null,"headline":"Q199960: XADM: XFOR: T-shooting Notes/SNADS/PROFS/GW Connectors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199960-xadm-xfor-t-shooting-notessnadsprofsgw-connectors">Q199960: XADM: XFOR: T-shooting Notes/SNADS/PROFS/GW Connectors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199960
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Exchange Server and Windows NT Server have a number of administrative
+tools that may be used for administration and troubleshooting in combination
+with the Microsoft Exchange Connectivity Administrator. These tools include:
+
+- Exchange Queue Viewer
+- Exchange Message Tracking
+- Windows NT Event Log
+
+Exchange Queue Viewer
+---------------------
+
+The Queue Viewer is a tool available in the Microsoft Exchange Administrator
+program. It may be used to monitor the main mail queues implemented by each
+connector and to verify that mail is moving through the system.
+
+These Exchange MAPI queues should be checked whenever a message delivery problem
+occurs. A long queue usually indicates a stuck message, but may also imply a
+physical connection problem, or incorrect configuration. The Queue Viewer may be
+used to delete, NDR (return to sender), or export stuck messages that are
+impeding the flow of other messages through the system.
+
+To access the Queue Viewer, follow these steps:
+
+1. From the Microsoft Exchange Administrator program, expand the tree view under
+  the Organization container.
+
+2. Expand the Configuration view under the Site icon.
+
+3. Double-click Connections.
+
+4. Double-click the connector you want in the Connections list, which appears on
+  the right side of the window. The connector property page will appear.
+
+5. Click the Queue Viewer tab, and the Queue Viewer property page appears. Use
+  the online Help for a complete description of this property page.
+
+Using Exchange Message Tracking
+-------------------------------
+
+Message Tracking is a tool available in the Exchange Administrator program. All
+of these connectors write information to the tracking log for all messages
+routed in or out of the connector.
+
+To use the Exchange Administrator program to view these messages, on the Tools
+menu, select Track Message, and type the server name in the Server Browse
+window.
+
+Several ways of finding the log messages are available. Please refer to the
+Microsoft Exchange Server Administrator's Guide for further details.
+
+Using Windows NT Event Notification
+-----------------------------------
+
+All connectors will write messages about their operation to the Windows NT
+application event log. Connector-related messages are distinguished from those
+generated by other applications by the source labels MSExchangeCoCo,
+MSExchangeNotes, MSExchangeSNADS, and so on.
+
+These events may be viewed using the Windows NT Event Viewer, a feature of the
+Administrative Tools.
+
+The Event field displays the event's severity level. This level is configurable
+from the Exchconn.ini file, in the [LSDEVNT] section, level = &lt;integer&gt;.
+Options range from 0 (no messages) to 5 (debug messages).
+
+Sample section of Exchconn.ini file:
+
+; Standard ENS NT Event Log logging device
+       ;[LSDEVNT]
+        level=1
+
+Use the default (level 1) for normal operations, and change it only if asked to
+do so by Microsoft Products Support Services. This may be done for
+troubleshooting purposes.
+
+Level 1 messages map to Windows NT Event Viewer's error messages, and are easily
+identified by a red icon at the far left. All other connector severity levels
+map to Windows NT information messages, and are identified by a blue icon at the
+far left.
+
+Please refer to the Microsoft Exchange Server Administrator's Guide if you need
+more information about viewing the Windows NT event log.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

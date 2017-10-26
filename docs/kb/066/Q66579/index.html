@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66579: Purpose of the M-bit and FRAME DATUM Fields | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66579: Purpose of the M-bit and FRAME DATUM Fields" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66579/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66579/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66579/","publisher":null,"image":null,"headline":"Q66579: Purpose of the M-bit and FRAME DATUM Fields","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66579-purpose-of-the-m-bit-and-frame-datum-fields">Q66579: Purpose of the M-bit and FRAME DATUM Fields</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66579
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:3.x,4.x,5.x; OS/2:1.x
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 31-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft LINK for MS-DOS, versions 3.x, 4.x, 5.x 
+- Microsoft LINK for OS/2, version 1.x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+One of the jobs of the linker is to resolve (fix up) addresses which the
+compiler or assembler could not resolve. This article clarifies a couple of
+points discussed in "Article 19: Object Modules" in the "MS-DOS Encyclopedia".
+
+MORE INFORMATION
+================
+
+The M-bit field in the fixup field of the FIXUPP record is described in the
+"MS-DOS Encyclopedia." Its value determines if the linker should calculate the
+address from the start of the segment in question (segment-relative), or from
+the current location in the code/data (self-relative). The following is an
+example:
+
+MYSEG Segment
+
+      --&gt;      +-----------------+     &lt;-- Start of segment
+     |         |                 |
+     |         |                 |
+     |         |                 |
+     |         |                 |
+     |    --&gt;  +-----------------+     &lt;-- Reference to symbol
+     |   |     |                 |
+         |     |                 |
+    (A)  |     |                 |
+               /                 \ 
+     |  (B)    \                 / 
+     |         /                 \ 
+     |   |     \                 / 
+     |   |     |                 |
+     |   |     |                 |
+      --&gt; --&gt;  +-----------------+     &lt;-- Symbol
+               /                 \ 
+               \                 / 
+               /                 \ 
+               \                 / 
+               +-----------------+     &lt;-- End of segment
+
+In this example, (A) is the segment-relative address and (B) is the self-
+relative address. The self-relative calculation is used when you want to jump
+forward a certain number of bytes in the code (for example, a short jump). The
+calculation is fairly straightforward. Calculate the segment- relative address
+for the symbol. Subtract the segment-relative address of the reference, and you
+have the self-relative address for the symbol from the reference.
+
+The FRAME DATUM field is used in almost exactly the same manner. It might seem
+that the fields TARGET DATUM and TARGET DISPLACEMENT are sufficient to fix up
+references in an LEDATA or LIDATA record. To understand why it is required, see
+the following example:
+
+Microsoft C/C++ compilers (16-bit) generate a group called DGROUP that holds data
+segments _NULL, _DATA, _CONST, and so forth. The fixups that it generates are
+similar to the following:
+
+  frame DGROUP target _CONST
+  frame DGROUP target _DATA
+  ...
+
+For the average MS-DOS program, this is fine. We could, eliminate the FRAME DATUM
+field and change target to DGROUP, right? Wrong. Examine ROMable code; they use
+the same OBJ. In that case, the linker must know if a reference to _CONST is a
+far reference (based on DGROUP) or a near reference (based on CONST). If we only
+told it to use DGROUP, it would have no idea how to resolve the references to
+_CONST after it moved _CONST to another segment (for example, ROM based). If we
+left in the target _CONST and removed the frame DGROUP, we would have the wrong
+address for MS-DOS, right? Hence, FRAME DATUM *is* important.
+
+The way the FRAME DATUM field affects the fixup makes sense, given the example
+above for the M-bit. Just calculate the offset based on the TARGET segment and
+add in the offset from the FRAME.
+
+Additional query words: kbinf
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK3xDOSSearch kbLINK4xDOSSearch kbLINK5xDOSSearch
+Version           : MS-DOS:3.x,4.x,5.x; OS/2:1.x
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

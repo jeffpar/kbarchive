@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174664: Microsoft Exchange Does Not Start | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174664: Microsoft Exchange Does Not Start" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174664/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174664/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174664/","publisher":null,"image":null,"headline":"Q174664: Microsoft Exchange Does Not Start","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174664-microsoft-exchange-does-not-start">Q174664: Microsoft Exchange Does Not Start</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174664
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95; winnt:4.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg win95
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Exchange, the mouse pointer may change to
+the Working In Background or Busy pointer and then back to the normal pointer,
+but Microsoft Exchange may not start and no error message may be displayed.
+
+In Windows NT, you may receive the following error message:
+
+  Windows Messaging: exchng32.exe - Ordinal Not Found
+
+  The ordinal 30 could not be located in the dynamic link library MAPI32.dll
+
+When this behavior occurs, Microsoft Fax functionality is also disabled.
+
+CAUSE
+=====
+
+This behavior can occur if Outlook Express is installed on your computer and the
+"Make Outlook Express my default Simple MAPI client" check box is selected.
+
+RESOLUTION
+==========
+
+To resolve this issue, clear the "Make Outlook Express my default Simple MAPI
+client" check box. To do so, follow these steps:
+
+1. In Outlook Express, click Options on the Tools menu.
+
+2. On the General tab, click the "Make Outlook Express my default Simple MAPI
+  client" check box to clear it.
+
+3. Click OK, and then click OK.
+
+MORE INFORMATION
+================
+
+The following message is displayed when you click the "Make Outlook Express my
+default Simple MAPI client" check box to select it:
+
+  Enabling Outlook Express as your Simple MAPI provider will allow you
+  to send documents from other programs using the Send command on the
+  File menu. You should do this if Outlook Express is the only mail
+  program you use.
+
+  Other MAPI-enabled applications such as Microsoft Exchange, Microsoft
+  Outlook and Windows Messaging will be disabled if you make Outlook
+  Express your Simple MAPI client, but they will work again when you
+  deselect this option.
+
+  Are you sure you want to set Outlook Express as your Simple MAPI
+  client?
+
+If you click Yes, you cannot start Microsoft Exchange.
+
+
+Additional query words: cannot unable open
+
+======================================================================
+Keywords          : kbenv kberrmsg win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95; winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

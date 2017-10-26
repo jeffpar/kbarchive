@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163798: BUG: Spell Checking on Memo Field Causes Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163798: BUG: Spell Checking on Memo Field Causes Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163798/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163798/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163798/","publisher":null,"image":null,"headline":"Q163798: BUG: Spell Checking on Memo Field Causes Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163798-bug-spell-checking-on-memo-field-causes-error">Q163798: BUG: Spell Checking on Memo Field Causes Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163798
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 22-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Invoking the Spell Checker on a Memo field in a multi-user situation will cause
+the following warning:
+
+  "Memo field could not be locked for Spell Checker"
+
+This warning occurs if the record is currently locked by another user.
+
+CAUSE
+=====
+
+The Spell Checker is ignoring the Optimistic Record Locking scheme of the Form.
+
+RESOLUTION
+==========
+
+Place the following code in the DoubleClick Method of Edit Region:
+
+        &amp;&amp; Copy current record to a separate file to avoid locking problem
+        COPY NEXT 1 TO spellchk.dbf
+        USE spellchk IN 0
+        SELECT spellchk
+
+        &amp;&amp; The following line may be added if the user wants changes
+        &amp;&amp; made to the buffered data appearing in Spell Checker. The reason
+        &amp;&amp; for this is the COPY TO command is reading directly from dbf file
+        &amp;&amp; on disk rather than the buffered data appearing in Edit region.
+
+        REPLACE spellchk.notes WITH THIS.VALUE
+
+        &amp;&amp; Run SpellChecker on the temporary table
+        MODIFY MEMO notes NOWAIT
+
+        DO (_SPELLCHK)
+        CLOSE MEMO notes
+
+        &amp;&amp; Update Edit Region and original table with any changes made
+        &amp;&amp; by user/SpellChecker
+        THIS.VALUE=spellchk.NOTES
+        USE  &amp;&amp; Close the temporary table
+        SELECT employee
+
+        THIS.REFRESH() &amp;&amp; Update the Edit Region
+
+        &amp;&amp; Erase the temporary files created
+        ERASE spellchk.dbf
+        ERASE spellchk.fpt
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Issue the following commands in the command window:
+
+        OPEN DATABASE HOME()+"SAMPLES\DATA\TestData.DBC" SHARED
+        USE employee SHARED
+
+2. Create a new form.
+
+3. Right-click the form and select "Data Environment" from the shortcut menu.
+
+4. Add the TESTDATA!Employee table to the Data Environment (DE) of the form.
+
+5. Right-click the Employee table and select Properties from the shortcut menu.
+
+6. Set the Exclusive property of the Cursor to False (should be Default).
+
+7. Drag the Notes Field from the Cursor in the DE onto the Form to create an
+  edit region for the field.
+
+8. Go to the Properties window.
+
+9. Set the BufferMode property of the form to 2-Optimistic.
+
+10. Set the DataSession property of the form to 2-Private DataSession.
+
+11. Add the following code to the DoubleClick Method of the Edit Region:
+
+        MODIFY MEMO notes NOWAIT
+        * Opens a text editing window that displays the memo field
+        * assuming the memo field is called "notes".
+        * The "nowait" clause allows execution to continue
+        DO (_SPELLCHK)
+        * The _spellchk system variable references the spell checker that
+        * will be executed by FoxPro.
+        CLOSE MEMO NOTES
+        * This closes the text editing window after the user exits the
+        * spell checker
+
+12. In the Command Window issue the following:
+
+        SELECT employee
+        ? RLOCK() &amp;&amp;Locks the Record
+
+13. Save and run the Form.
+
+14. Double-click the Edit Region to invoke the Spell Checker.
+
+REFERENCES
+==========
+
+For more information about spell checking in FoxPro, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q117212 How to Use the FoxPro Spelling Checker (SPELLCHK.APP)
+
+  Q136641 PRB: Spell Checking Edit Box Contents Does Not Work
+
+
+Additional query words: kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

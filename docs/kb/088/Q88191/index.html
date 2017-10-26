@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q88191: Using the Microsoft Windows Help Compiler | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q88191: Using the Microsoft Windows Help Compiler" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/088/Q88191/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/088/Q88191/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/088/Q88191/","publisher":null,"image":null,"headline":"Q88191: Using the Microsoft Windows Help Compiler","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q88191-using-the-microsoft-windows-help-compiler">Q88191: Using the Microsoft Windows Help Compiler</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q88191
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 04-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Although Section 2.1.11 of the Microsoft Windows Software Development Kit (SDK)
+"Getting Started" manual for version 3.1 briefly mentions the Microsoft Windows
+Help Compiler, it gives no information about how to use it.
+
+The Windows SDK "Programming Tools" manual for version 3.1 documents how to
+create a Windows Help file in Chapter 3. However, it does not detail how to
+invoke the Help Compiler. The text below explains how to use the Help Compiler
+and some of the differences between the two versions of the Help Compiler
+provided with version 3.1 of the Windows SDK.
+
+MORE INFORMATION
+================
+
+The Windows SDK documentation details how to create the source files required to
+build a Windows Help file. The Help Compiler creates an .HLP file from the
+source files. Version 3.1 of the Windows SDK includes two versions of the Help
+Compiler: one (HC30.EXE) builds .HLP files compatible with the version 3.0 of
+the Windows Help application, and the other (HC31.EXE) builds files compatible
+only with Windows Help version 3.1. A batch file (HC.BAT) provides compatibility
+with the HC.EXE program in version 3.0 of the Windows SDK. The batch file can
+invoke either version of the Help Compiler.
+
+The source files used to create a Windows Help file include the Help project
+(.HPJ) file, rich text (.RTF) files, bitmap (.BMP) files, and segmented-graphic
+bitmap (.SHG) files. One of the parameters of the Help Compiler command line is
+the name of the .HPJ file; the .HPJ file lists the other source files.
+
+Both compilers are MS-DOS-based (non-Windows) programs run from an MS-DOS prompt
+or in an MS-DOS window under Windows. The Help Compiler file (and its associated
+.ERR file) must be in a directory listed in the MS-DOS PATH environment variable
+(in the AUTOEXEC.BAT file) or in the current directory. The Windows SDK
+installation program places both compilers and the batch file in the Windows SDK
+BIN directory (by default, either C:\WINDEV\BIN or C:\C700\BIN).
+
+The HC.BAT batch file invokes the Help Compiler application. By default, HC.BAT
+invokes HC30.EXE to build a Help file compatible with version 3.0 of the Windows
+Help application. HC30 does not support some features of Windows Help version
+3.1 (such as segmented-graphic bitmaps). To create a Help file for Windows Help
+version 3.1, either invoke HC.BAT with the -n option switch (for example, hc -n
+myhelp.hpj) or invoke HC31.EXE directly (for example, hc31 myhelp.hpj).
+
+Section 2.1.11 of the "Getting Started" manual (page 10) lists some of the new
+features provided by Windows Help version 3.1.
+
+NOTE: You can still use this help compiler with Windows NT 3.51 and Windows 95,
+but there is a new help compiler 4.0 (HCW.EXE) which should be used for these
+platforms instead of the old help compiler.
+
+Additional query words: 3.00 3.10 HC HC.BAT HC30 HC31 hypergraphic
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

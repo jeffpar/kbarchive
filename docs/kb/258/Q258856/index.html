@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258856: Index Server Does Not Display PPT Title Information | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258856: Index Server Does Not Display PPT Title Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258856/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258856/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258856/","publisher":null,"image":null,"headline":"Q258856: Index Server Does Not Display PPT Title Information","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258856-index-server-does-not-display-ppt-title-information">Q258856: Index Server Does Not Display PPT Title Information</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258856
+Product(s): Internet Information Server
+Version(s): WINDOWS:2000; winnt:2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server version 2.0 
+- Microsoft Excel 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft Excel 2000, Index Server no longer displays the
+title information for PPT files.
+
+CAUSE
+=====
+
+Excel 2000 installs new versions of some Index Server DLL files.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain Microsoft Office 2000 Service Release 1/1a
+(SR-1/SR-1a).
+
+To obtain SR-1/SR-1a, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q245025 OFF2000: How to Obtain and Install Microsoft Office 2000 Service
+  Release 1/1a (SR-1/SR-1a)
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+- Reinstall Index Server.
+
+-or-
+
+- Copy the files from Index Server 2.0. To do this, perform the following
+  steps:
+
+  1. Type the following command at the command prompt:
+
+  net stop "content index"
+
+  2. If Windows NT 4.0 Service Pack 6 is installed, then type the following
+  command at the command prompt:
+
+  net stop "protected storage" /y
+
+  3. Copy the following Index Server 2.0 files to the &lt;Winnt&gt;\System32
+  folder:
+
+  
+
+10/22/1997  06:05 97.10.21.0    210,944  Offfilt.dll     x86 
+10/10/1997  13:22 6.0.579.0      72,416  Nlhtml.dll      x86 
+10/30/1997  06:08 5.0.1696.1    141,584  Msidxs.dll      x86 
+10/30/1997  06:08 5.0.1696.1     17,168  Qperf.dll       x86 
+10/30/1997  06:08 5.0.1696.1    906,512  Query.dll       x86 
+
+  4. Delete the files in the Catalog folder.
+
+  5. Restart the computer.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.This problem was corrected in
+Microsoft Office 2000 SR-1/SR-1a.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbExcelSearch kbAudDeveloper kbExcel2000 kbExcel2000Search kbIdxServ200 kbExcelWinSearch
+Version           : WINDOWS:2000; winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

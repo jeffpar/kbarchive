@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125016: Why SMS Creates Macintosh Volumes for Shared Applications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125016: Why SMS Creates Macintosh Volumes for Shared Applications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125016/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125016/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125016/","publisher":null,"image":null,"headline":"Q125016: Why SMS Creates Macintosh Volumes for Shared Applications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125016-why-sms-creates-macintosh-volumes-for-shared-applications">Q125016: Why SMS Creates Macintosh Volumes for Shared Applications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q125016</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbnetwork</span> <span class="n">smsgeneral</span> <span class="n">kbArtTypeINF</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">27</span><span class="p">-</span><span class="n">JUL</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">1.0</span><span class="p">,</span> <span class="m">1.1</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">When</span> <span class="n">distributing</span> <span class="n">a</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">shared</span> <span class="n">application</span> <span class="k">package</span> <span class="k">to</span> <span class="n">an</span>
+<span class="n">SMS</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">distribution</span> <span class="n">server</span> <span class="n">that</span> <span class="n">is</span> <span class="n">also</span> <span class="n">running</span> <span class="n">Services</span> <span class="n">for</span> <span class="n">Macintosh</span><span class="p">,</span>
+<span class="n">a</span> <span class="n">Macintosh</span> <span class="n">volume</span> <span class="n">is</span> <span class="n">created</span> <span class="n">for</span> <span class="n">the</span> <span class="n">new</span> <span class="n">share</span> <span class="k">with</span> <span class="n">the</span> <span class="n">same</span> <span class="n">name</span> <span class="k">as</span> <span class="n">the</span>
+<span class="n">Windows</span> <span class="n">NT</span> <span class="n">share</span><span class="p">.</span> <span class="n">This</span> <span class="n">occurs</span> <span class="n">even</span> <span class="n">though</span> <span class="n">SMS</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attributes</span> <span class="n">for</span> <span class="n">the</span> <span class="n">shared</span>
+<span class="k">package</span> <span class="n">designating</span> <span class="n">that</span> <span class="n">the</span> <span class="k">package</span> <span class="n">supports</span> <span class="n">Macintoshes</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">SMS</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">distribute</span> <span class="n">anything</span> <span class="k">to</span> <span class="n">a</span> <span class="n">shared</span> <span class="n">network</span> <span class="n">directory</span><span class="p">,</span> <span class="k">not</span> <span class="n">just</span>
+<span class="n">shared</span> <span class="n">applications</span> <span class="n">for</span> <span class="n">PC</span> <span class="n">platforms</span><span class="p">.</span> <span class="n">Because</span> <span class="n">Macintoshes</span> <span class="n">are</span> <span class="n">a</span> <span class="n">supported</span>
+<span class="n">platform</span><span class="p">,</span> <span class="n">SMS</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">Macintosh</span> <span class="n">Volume</span> <span class="n">on</span> <span class="n">any</span> <span class="n">SMS</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">distribution</span>
+<span class="n">server</span> <span class="n">that</span> <span class="n">is</span> <span class="n">also</span> <span class="n">running</span> <span class="n">Services</span> <span class="n">for</span> <span class="n">Macintosh</span><span class="p">.</span>
+
+<span class="n">This</span> <span class="n">was</span> <span class="n">designed</span> <span class="n">so</span> <span class="n">SMS</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="k">to</span> <span class="n">distribute</span> <span class="n">applications</span> <span class="k">and</span> <span class="n">data</span> <span class="n">files</span>
+<span class="n">for</span> <span class="n">Macintoshes</span> <span class="n">even</span> <span class="n">though</span> <span class="n">SMS</span> <span class="n">itself</span> <span class="n">has</span> <span class="n">no</span> <span class="n">Program</span> <span class="n">Group</span> <span class="n">Control</span> <span class="n">application</span>
+<span class="n">for</span> <span class="n">the</span> <span class="n">Macintosh</span> <span class="n">platform</span><span class="p">.</span> <span class="n">This</span> <span class="n">allows</span> <span class="n">SMS</span> <span class="n">administrators</span> <span class="k">to</span> <span class="n">support</span> <span class="n">multiple</span>
+<span class="n">platforms</span> <span class="k">with</span> <span class="n">one</span> <span class="n">distribution</span> <span class="n">point</span> <span class="n">without</span> <span class="n">creating</span> <span class="n">multiple</span> <span class="n">packages</span> <span class="k">and</span>
+<span class="n">jobs</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">sms</span> <span class="n">prodsms</span> <span class="n">SFM</span> <span class="n">Mac</span> <span class="n">Apple</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbnetwork</span> <span class="n">smsgeneral</span> <span class="n">kbArtTypeINF</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS100</span> <span class="n">kbSMS110</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="n">winnt</span><span class="p">:</span><span class="m">1.0</span><span class="p">,</span><span class="m">1.1</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

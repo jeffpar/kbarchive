@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168722: GSNW May Create an Unnecessary DependOnService to LanManSer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168722: GSNW May Create an Unnecessary DependOnService to LanManSer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168722/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168722/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168722/","publisher":null,"image":null,"headline":"Q168722: GSNW May Create an Unnecessary DependOnService to LanManSer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168722-gsnw-may-create-an-unnecessary-dependonservice-to-lanmanser">Q168722: GSNW May Create an Unnecessary DependOnService to LanManSer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168722
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbnetwork kbui
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have installed Gateway Services for NetWare (GSNW) on a computer running
+Windows NT Server 3.51 Service Pack 5 and Microsoft Exchange Server 4.0. NWLink
+is not an installed network protocol and there are no NetWare servers installed
+on the LAN.
+
+If GSNW is installed on the server under these conditions, you may notice that
+incoming mail may stop being delivered and the Windows NT server may begins to
+experience repeated, but dramatic slowdowns in performance.
+
+CAUSE
+=====
+
+GSNW sets up dependency with the Server Service (LanManServer). This dependency
+is documented in the following Microsoft Knowledge Base article:
+
+  Q123763 Share Names Displayed as DELETED in GSNW
+
+Any attempt to remove GSNW while the dependency exists will result in a warning
+message indicating that some services will no longer be available after removal.
+The services indicated are as follows:
+
+  Computer Browser
+  Directory Replicator
+  Net Logon
+  Server
+  Microsoft Exchange Directory
+  Microsoft Exchange Information Store
+  Microsoft Exchange Internet Mail Connector
+  Microsoft Exchange Message Transfer Agent
+  Microsoft Exchange System Attendant
+
+A search of the registry indicates that each of the Microsoft Exchange services
+depend on the System Agent, that in turn depends on the Server service. The
+other services noted in the warning message (that is, Computer Browser,
+Directory Replicator, and Net Logon) all depend upon the Server Service.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+Perform the following steps to remove GSNW:
+
+1. Start Registry Editor (Regedt32.exe) and go to the following registry key:
+
+     H_KEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer
+
+2. Remove the NWCworkstation entry from DependOnService.
+
+3. Shutdown and restart your computer.
+
+4. Click the Start button, point to Settings, click Control Panel, and then
+  double-click Network.
+
+5. Click the Services tab, click Gateway Services for NetWare, click Remove, and
+  then click OK.
+======================================================================
+Keywords          : kbenv kberrmsg kbnetwork kbui 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51
+Issue type        : kbprb kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

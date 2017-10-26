@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q32473: /C No Effect on Communications Receive Buffer in CHAINed Prog | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q32473: /C No Effect on Communications Receive Buffer in CHAINed Prog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/032/Q32473/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/032/Q32473/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/032/Q32473/","publisher":null,"image":null,"headline":"Q32473: /C No Effect on Communications Receive Buffer in CHAINed Prog","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q32473-c-no-effect-on-communications-receive-buffer-in-chained-prog">Q32473: /C No Effect on Communications Receive Buffer in CHAINed Prog</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q32473
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 13-MAR-1990
+
+Programs can be given a new communications device receive buffer size
+using the /C:size option at compile time. This option sets up a new
+receive buffer size as specified, except for the program PROG2.EXE,
+when all of the following conditions are true:
+
+1. PROG2.EXE was compiled with the /C:size option.
+
+2. PROG1.EXE CHAINs to PROG2.EXE with the CHAIN statement.
+
+3. The CHAINing program (PROG1.EXE) was NOT compiled with the /C
+   option.
+
+4. The programs (PROG1.EXE and PROG2.EXE) were both compiled with the
+   "BRUN" run-time module (NOT compiled with /O).
+
+Thus, if you plan to change the default communications receive buffer
+size with the /C option in a CHAINed program (such as PROG2.EXE), you
+must compile the CHAINing program (PROG1.EXE) with the same /C option.
+
+The communications buffer is set when PROG1.EXE (the CHAINing program)
+and the BRUN library are loaded into memory at run time. During a
+CHAIN, the BRUN run-time module is not reloaded, so the buffer is not
+reset to the /C size that you specified for the CHAINed program
+(PROG2.EXE).
+
+This information applies to Microsoft QuickBASIC Versions 2.00, 2.01,
+3.00, 4.00, 4.00b and 4.50, and to Microsoft BASIC Compiler Versions
+6.00 and 6.00b for MS-DOS and OS/2.
+
+An alternative, independent of the /C compile-time option, is to use
+the RB option to set the receive buffer size at run time in the OPEN
+COM statement in PROG2.EXE. The RB option to set the receive buffer
+size in the OPEN COM statement is introduced in QuickBASIC 4.00 and
+later versions, and is not available in QuickBASIC 2.00, 2.01, and
+3.00. Using the RB option lets a CHAINed program (PROG2.EXE) set the
+receive buffer size independent of the settings in the CHAINing
+program (PROG1.EXE).
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

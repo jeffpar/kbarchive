@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199176: XFOR: GroupWise/Lotus Notes DXA Slow to Respond to Full Reload | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199176: XFOR: GroupWise/Lotus Notes DXA Slow to Respond to Full Reload" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199176/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199176/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199176/","publisher":null,"image":null,"headline":"Q199176: XFOR: GroupWise/Lotus Notes DXA Slow to Respond to Full Reload","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199176-xfor-groupwiselotus-notes-dxa-slow-to-respond-to-full-reload">Q199176: XFOR: GroupWise/Lotus Notes DXA Slow to Respond to Full Reload</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199176
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:3.2; winnt:5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- LinkAge Message Exchange, version 3.2 
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Immediately after starting the Lotus Notes/GroupWise connector, administrators
+may find that performing a Full Reload on the connector will result in a delayed
+response of up to two minutes. It will appear as if the Directory Exchange Agent
+(DXA) had not yet received the directory synchronization (dirsync) request.
+
+CAUSE
+=====
+
+The directory synchronization notification design of the DXA is based on polling
+changes to the Pcta.tbl file. When the DXA is starting up, it may miss the
+polling interval to check for changes to the Pcta.tbl file. When this happens,
+it has to wait until the next scheduled polling interval (approximately a
+minute) before attempting to check for new dirsync requests.
+
+RESOLUTION
+==========
+
+Wait a minute or two before attempting to manually schedule a full dirsync
+request on the connector. If a full dirsync is attempted immediately after the
+connector starts up, simply wait for the response from the connector. Do not
+attempt to issue any more requests to the DXA.
+
+STATUS
+======
+
+Microsoft acknowledges this to be a problem.
+
+MORE INFORMATION
+================
+
+The design of the directory synchronization component in the GroupWise connector
+is based on former connectors, such as the Lotus Notes connector. This problem
+will also affect the older LinkAge 3.2 connectors.
+
+Additional query words: slow response; full reload
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2 kbLinkAgeSearch kbLinkAge320
+Version           : WINDOWS:3.2; winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

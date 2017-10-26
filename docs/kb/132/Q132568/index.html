@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132568: PRB: Creating Instance of OLE Control Causes Exception Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132568: PRB: Creating Instance of OLE Control Causes Exception Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132568/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132568/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132568/","publisher":null,"image":null,"headline":"Q132568: PRB: Creating Instance of OLE Control Causes Exception Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132568-prb-creating-instance-of-ole-control-causes-exception-error">Q132568: PRB: Creating Instance of OLE Control Causes Exception Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132568
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When creating simultaneous instances of OLE automation objects, Visual FoxPro
+displays this error:
+
+  OLE error Code
+
+Under some circumstances, an exception error is generated in one of the server
+applications. This behavior occurs when one of the OLE objects is an OLE control
+(OCX).
+
+CAUSE
+=====
+
+This error results from creating an instance of an OLE control with the
+following syntax:
+
+  Oobject1=CREATEOBJECT(&lt;olecustomcontrol&gt;)
+
+OLE Automation objects (OCX) are not designed to be standalone automation
+servers.
+
+
+WORKAROUND
+==========
+
+Place the OLE control in an OLE container instead of creating an instance of the
+OLE control. The following example illustrates this method. It uses the outline
+control that ships with Visual FoxPro.
+
+Example code
+------------
+
+  oMyform=CREATEOBJECT('new_form')
+  oMyform.SHOW
+
+  * The following lines add three items to the outline control.
+
+  oMyform.myoutline.ADDITEM('VFP',0)
+  oMyform.myoutline.indent(0)=1
+  oMyform.myoutline.ADDITEM('Samples',1)
+  oMyform.myoutline.indent(1)=2
+  oMyform.myoutline.ADDITEM('Controls',2)
+  oMyform.myoutline.indent(2)=3
+  READ EVENTS
+
+  * Form class definition. The form contains a command button and an
+  * olecontrol
+
+  DEFINE CLASS new_form AS FORM
+     AUTOCENTER=.T.
+     BACKCOLOR=RGB(192,192,192)
+     WIDTH= 220
+     HEIGHT= 200
+     CAPTION= "Using the outline control"
+     ADD OBJECT myoutline AS outlinecontrol
+     ADD OBJECT mycmd AS cmdquit WITH TOP=120, LEFT=80
+  ENDDEFINE
+
+  * Defines the Ole container control. The OLE class is MSOutl. Outline.
+  * The Outline control is used.
+  DEFINE CLASS outlinecontrol AS OLECONTROL
+     OLECLASS = "MSOutl.Outline"
+     LEFT=12
+     Top=12
+     Width=170
+     Height=80
+     FontSize=10
+     FontName="Arial"
+     FontBold=.F.
+     FontItalic=.T.
+  ENDDEFINE
+
+Class Definition for Command Button
+-----------------------------------
+
+  * Class definition for the command button. When users click the command
+  * button, the form is released.
+
+  DEFINE CLASS cmdquit AS COMMANDBUTTON
+     Width=40
+     Height=25
+     Caption = "Quit"
+
+     PROCEDURE CLICK
+        RELEASE ThisForm
+        CLEAR EVENTS
+     ENDPROC
+  ENDDEFINE
+
+MORE INFORMATION
+================
+
+Code to Reproduce Behavior
+--------------------------
+
+  ON ERROR ? "-------------------------&gt; "+message()
+  oObj1=CREATEOBJECT("Word.Basic")
+  oObj2= CREATEOBJECT("Excel.Sheet")
+  oObj5= CREATEOBJECT('msoutl.outline')
+  ON ERROR
+
+Additional query words: VFoxWin crash
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

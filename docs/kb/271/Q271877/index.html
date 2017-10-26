@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q271877: BUG: ToolTips Do Not Follow Controls on Scrollable Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q271877: BUG: ToolTips Do Not Follow Controls on Scrollable Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/271/Q271877/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/271/Q271877/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/271/Q271877/","publisher":null,"image":null,"headline":"Q271877: BUG: ToolTips Do Not Follow Controls on Scrollable Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q271877-bug-tooltips-do-not-follow-controls-on-scrollable-form">Q271877: BUG: ToolTips Do Not Follow Controls on Scrollable Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q271877
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbCtrl kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use ToolTips with a scrollable form under Visual FoxPro 6.0, the
+ToolTip positions are based upon their location at form instantiation rather
+than the currently visible window.
+
+RESOLUTION
+==========
+
+You can use the control's StatusBarText property to display ToolTip text in the
+status bar at the bottom of the Visual FoxPro window (assuming you have not
+turned off the screen).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Paste the following code into a program file:
+
+  PUBLIC loForm
+
+  loForm = NEWOBJECT("frmToolScroll")
+  loForm.Show()
+
+  RETURN
+
+  **************************************************
+  *-- Form:         form1
+  *-- ParentClass:  form
+  *-- BaseClass:    form
+  *-- Time Stamp:   08/04/00 09:45:06 AM
+  *
+  DEFINE CLASS frmToolScroll AS form
+
+     Top = 0
+     Left = 0
+     Height = 259
+     Width = 273
+     ScrollBars = 3
+     ShowTips = .F.
+     Caption = "Scrolling Form"
+     Name = "frmToolScroll"
+
+     ADD OBJECT cmdAddControls AS commandbutton WITH ;
+        Top = 10, ;
+        Left = 10, ;
+        Height = 31, ;
+        Width = 130, ;
+        Caption = "Click to add controls", ;
+        Name = "cmdAddControls"
+
+     PROCEDURE Load
+        *!* some initialization
+        WITH ThisForm
+           .AutoCenter = .T.
+           .ShowTips = .T.
+           .Width = 300
+           .Height = 300
+        ENDwith
+     ENDproc
+
+     PROCEDURE cmdAddControls.Click
+        *!* lcAddControl can also be replaced with 'commandbutton'
+        lcAddControl = 'label'
+        lnStartX = 150
+        lnStartY = 150
+        
+        *!* add five controls
+        FOR i = 1 TO 5
+           *!* calculate new control's name
+           lcAddControlName = lcAddControl + LTRIM(STR(i))
+           
+           *!* add it
+           ThisForm.AddObject(lcAddControlName, lcAddControl)
+           lcAddControlName = 'ThisForm.' + lcAddControlName
+           WITH &amp;lcAddControlName
+              .BorderStyle = 1
+              .Caption = lcAddControl + LTRIM(STR(i))
+              .ToolTipText = .Caption
+              
+              *!* some added controls will not be visible initially, if
+              *!* starting from less than form's width &amp; height
+              .Left = lnStartX + i * 50
+              .Top = lnStartY + i * 50
+              
+              *!* show it
+              .Visible = .T.
+           ENDwith
+        ENDfor
+        
+        ThisForm.Refresh()
+
+        *!* do it only once, or else 'controls already exists' error
+        THIS.Enabled = .F.
+     ENDproc
+  ENDdefine
+
+2. Run the program, and click the Add Controls button.
+
+3. Hover the mouse over the visible labels, and note that the ToolTips appear.
+
+4. Scroll the form, hover the mouse over the controls that are now visible, and
+  note that you do not see the ToolTips appear.
+
+5. Hover the mouse over the location where the visible labels were before you
+  scrolled them, and note that the ToolTips appear.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCtrl kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

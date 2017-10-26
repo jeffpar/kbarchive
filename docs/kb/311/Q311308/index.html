@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q311308: PRB: All Users Do Not Have Access to Installed Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q311308: PRB: All Users Do Not Have Access to Installed Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/311/Q311308/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/311/Q311308/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/311/Q311308/","publisher":null,"image":null,"headline":"Q311308: PRB: All Users Do Not Have Access to Installed Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q311308-prb-all-users-do-not-have-access-to-installed-application">Q311308: PRB: All Users Do Not Have Access to Installed Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q311308
+Product(s): Microsoft FoxPro
+Version(s): 7.0
+Operating System(s): 
+Keyword(s): kbAppSetup kbvfp kbGrpDSFox kbDSupport kbvfp700
+Last Modified: 30-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use InstallShield Express - Visual FoxPro Limited Edition to create setup
+disks, the application is only available to the user who runs the set up and
+installs the application. The application is not available to everyone who is
+logged on to the computer.
+
+CAUSE
+=====
+
+By design, unless the set up includes the Customer Information dialog box, the
+user who installs the application cannot select the "Anyone who uses this
+computer (all users)" check box. If this check box is not selected, the
+application is only available to the user who installs the application.
+
+RESOLUTION
+==========
+
+To resolve this problem, include the Customer Information dialog box in the
+Dialogs section of step 4, "Customize the Setup Appearance."
+
+In addition, the user who installs the application must select the "Anyone who
+uses this computer (all users)" check box. This check box appears in the
+Customer Information dialog box under "Install this application for".
+
+If you have a third-party application, and it is not practical to obtain a new
+set up from the vendor, you can run the set up from the Microsoft Windows
+command prompt and append "/V"ALLUSERS=1"" (without the quotation marks) to the
+end of the command. For example:
+
+  
+
+  C:\DISK ONE\SETUP.EXE" /V"ALLUSERS=1
+
+REFERENCES
+==========
+
+For more information, refer to the "Per-User vs. Per-Machine Installations"
+topic in the InstallShield Express - Visual FoxPro Limited Edition Help Library.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAppSetup kbvfp kbGrpDSFox kbDSupport kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

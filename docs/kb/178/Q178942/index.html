@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178942: HOWTO: Performance Tuning the Jet Engine Per Instance in MFC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178942: HOWTO: Performance Tuning the Jet Engine Per Instance in MFC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178942/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178942/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178942/","publisher":null,"image":null,"headline":"Q178942: HOWTO: Performance Tuning the Jet Engine Per Instance in MFC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178942-howto-performance-tuning-the-jet-engine-per-instance-in-mfc">Q178942: HOWTO: Performance Tuning the Jet Engine Per Instance in MFC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178942
+Product(s): Microsoft C Compiler
+Version(s): WINNT:5.0,6.0
+Operating System(s): 
+Keyword(s): kbDAOsearch kbJET kbMFC kbVC500 kbVC600
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC) 
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MFC does not document or directly expose any methods to manipulate the
+performance parameters of the Jet Database (DB) engine. However, if you are
+using DAO 3.5, you can gain access to the DB engine from within an MFC
+application and alter the performance characteristics just for the instance of
+the Jet engine your application is using. This method allows the user to
+programatically set performance characteristics, which will apply only to the
+specific application. For example, the MaxBufferSize could be set during program
+startup.
+
+MORE INFORMATION
+================
+
+To gain access to the functions that allow manipulation of Jet, you must first
+get access to the DB engine. The undocumented function AfxDaoGetEngine() returns
+a pointer to the current instance of the DB engine. The function is found in
+Daocore.cpp:
+
+     DAODBEngine* AFXAPI AfxDaoGetEngine()
+     {
+       // Return DAODBEngine object for direct access
+       return AfxGetDaoState()-&gt;m_pDAODBEngine;
+     }
+
+The following line of code returns a pointer to the DB engine. No special header
+files are required:
+
+     DAODBEngine* m_pDAODBEngine = AfxDaoGetEngine();
+
+Once you have a pointer to the DB engine, the DAO SDK function SetOption() can be
+used to set performance parameters. These parameters only affect the specific
+instance of the engine for your application. They do not affect the default Jet
+performance parameters stored in the registry. The following code examples show
+how to change some of the specific parameters:
+
+     // Change the MaxBufferSize to 128. When doing thousands of
+     // inserts, this will restrict memory growth.
+     COleVariant  vBufferSize((long)128, VT_I4);
+     m_pDAODBEngine-&gt;SetOption( dbMaxBufferSize, vBufferSize );
+
+     // Reduce the time to defer asynchronous flushes on a
+     // database opened for exclusive use.
+     COleVariant  vExclusiveAsyncDelay((long)10, VT_I4);
+     m_pDAODBEngine-&gt;SetOption(dbExclusiveAsyncDelay,vExclusiveAsyncDelay);
+
+     // Reduce the time to defer asynchronous flushes on a
+     // database opened for shared use.
+     COleVariant vSharedAsyncDelay((long)15, VT_I4);
+     m_pDAODBEngine-&gt;SetOption(dbSharedAsyncDelay, vSharedAsyncDelay);
+
+NOTE: It is necessary to cast the first parameter in the constructor for the
+COleVariant in order to avoid the "ambiguous call to overloaded function" error
+at compile time.
+
+The following values and their defaults can be changed:
+
+  
+  +--------------------------------+
+  | PageTimeout             | 5000 | 
+  +--------------------------------+
+  | SharedAsyncDelay        | 100  | 
+  +--------------------------------+
+  | ExclusiveAsyncDelay     | 2000 | 
+  +--------------------------------+
+  | LockRetry               | 20   | 
+  +--------------------------------+
+  | UserCommitSync          | Yes  | 
+  +--------------------------------+
+  | ImplicitCommitSync      | NO   | 
+  +--------------------------------+
+  | MaxBufferSize           | 0    | 
+  +--------------------------------+
+  | MaxLocksPerFile         | 9500 | 
+  +--------------------------------+
+  | LockDelay               | 100  | 
+  +--------------------------------+
+  | RecycleLVs              | 0    | 
+  +--------------------------------+
+  | FlushTransactionTimeout | 500  | 
+  +--------------------------------+
+
+References
+----------
+
+Note: The best source for additional information on these settings is the Access
+97 Help Files. Search for the topic:
+
+  Initializing the Microsoft Jet 3.5 Database Engine Driver
+
+Additional query words: defaults settings registry
+
+======================================================================
+Keywords          : kbDAOsearch kbJET kbMFC kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbMFC kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : WINNT:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

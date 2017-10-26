@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148689: How to Parse Config.fpw Programmatically | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148689: How to Parse Config.fpw Programmatically" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148689/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148689/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148689/","publisher":null,"image":null,"headline":"Q148689: How to Parse Config.fpw Programmatically","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148689-how-to-parse-configfpw-programmatically">Q148689: How to Parse Config.fpw Programmatically</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148689
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to parse through a text file programmatically.
+This example uses Config.fpw. The code searches for a specific entry, and then
+it modifies the entry if it is found or adds it if not found.
+
+You might want to use this technique in distributed applications, for example, to
+control the operating environment.
+
+MORE INFORMATION
+================
+
+This code example checks to determine if the Visual FoxPro system variable
+MVCOUNT is less than 2000. If follows this process:
+
+1. Open or Create the Config.fpw file as applicable,
+
+2. Search through the Config.fpw file for the MVCOUNT= entry.
+
+  a. If it finds an entry, it modifies it to read MVCOUNT=2000.
+
+  b. If it doesn't find an entry, it creates one.
+
+3. Write the modified file contents back to disk, and close the file.
+
+Code Sample
+-----------
+
+  * Parsefpw.prg
+  * ------------
+  * To make this backward compatible to FoxPro 2.x, replace the MESSAGEBOX()
+  * functions with WAIT WINDOWs
+  *
+  cNewLine   = "MVCOUNT=2000"+CHR(13)      &amp;&amp; This is the line to change/add
+  nUpdateStat = 0                          &amp;&amp; Use to determine which message
+  cVFPConfigLoc = SYS(2019)
+  nFileHand   = FOPEN(cVFPConfigLoc, 2)    &amp;&amp; open with read/write privileges
+  IF nFileHand == -1                       &amp;&amp; Can't find Config.fpw
+    nFileHand = FCREATE(cVFPConfigLoc, 0)  &amp;&amp; Create an Config.fpw
+    IF nFileHand == -1                     &amp;&amp; Can't create Config.fpw
+      = FCLOSE(nFileHand)
+      nUpdateStat = 1                      &amp;&amp; Not existing, Cannot Create
+    ELSE
+      = FWRITE(nFileHand, cNewLine)
+      = FCLOSE(nFileHand)
+      nUpdateStat = 2                      &amp;&amp; Not existing, Did Create
+    ENDIF
+  ELSE
+    filesize = FSEEK(nFileHand, 0, 2)
+    = FSEEK(nFileHand, 0, 0)               &amp;&amp; position file pointer to BOF
+    contents = FREAD(nFileHand, filesize)
+    spos = RAT("MVCOUNT", UPPER(contents)) &amp;&amp; from right to find last
+  MVCOUNT
+
+    IF spos &lt;&gt; 0                           &amp;&amp; Contains "MVCOUNT" entry
+      * len = length (for example, len=20+1=21 for "MVCOUNT = 30 ")
+      * len = AT(CHR(13)+CHR(10), SUBSTR(contents, spos)) - 1 &amp;&amp; w/o CR &amp; LF
+      len = AT(CHR(13)+CHR(10), SUBSTR(contents, spos)) + 1 &amp;&amp; with CR &amp; LF
+      IF LEN = 0
+        LEN = LEN(SUBSTR(contents, spos))
+      ENDIF
+    ELSE                                   &amp;&amp; "MVCOUNT" Not there, append it
+      LEN = AT(CHR(26), contents)          &amp;&amp; CHR(26) = Escape = EOF marker
+      IF LEN &lt;&gt; 0
+        contents = LEFT(contents, LEN - 1)
+        LEN = 0
+      ENDIF
+      spos = RAT(CHR(13)+CHR(10), contents, ;
+      IIF(RIGHT(contents, 2) &lt;&gt; CHR(13)+CHR(10), 1, 2))
+      spos = spos + IIF(spos = 0, 1, 2)
+    ENDIF
+    contents = STUFF(contents, spos, LEN, cNewLine)
+    = FSEEK(nFileHand, 0, 0)
+    = FWRITE(nFileHand, contents)
+    = FCHSIZE(nFileHand, LEN(contents))
+    = FCLOSE(nFileHand)
+    nUpdateStat = 3                           &amp;&amp; Did exist, Modified
+  ENDIF
+  ?? CHR(7)
+  cMsg1 = "A file named Config.fpw must exist in &lt;YourApp&gt;"+CHR(13);
+         +"startup directory. This file must contain an
+  MVCOUNT=2000"+CHR(13);
+         +"statement in order for the &lt;YourApp&gt; application to
+  operate"+CHR(13);
+         +"correctly."+CHR(13)+CHR(13)
+  DO CASE
+  CASE nUpdateStat = 1 &amp;&amp; Not existing, Cannot Create
+    =MESSAGEBOX(cMsg1+;
+      +"The computer system could not find this file nor could it"+CHR(13);
+      +"create one. Until one exists, &lt;YourApp&gt; cannot be used.",0)
+  CASE nUpdateStat = 2 &amp;&amp; Not existing, Did Create
+    =MESSAGEBOX(cMsg1+;
+      +"The &lt;YourApp&gt; startup directory did not include this"+CHR(13);
+      +"file so one was created for you. The new Config.fpw file"+CHR(13);
+      +"contains all the required settings for the &lt;YourApp&gt;"+CHR(13);
+      +"application to run."+CHR(13)+CHR(13);
+      +"In order to activate this statement you need to RESTART the"+CHR(13);
+      +"&lt;YourApp&gt; application.",0)
+  CASE nUpdateStat = 3 &amp;&amp; Did exist, Modified
+    =MESSAGEBOX(cMsg1+;
+      +"Your existing Config.fpw file has now been modified to
+  contain"+CHR(13);
+      +"an MVCOUNT=2000 statement. To activate this statement you
+  need"+CHR(13);
+      +"to RESTART the &lt;YourApp&gt; application.",0)
+  ENDCASE
+
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : 3.00 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

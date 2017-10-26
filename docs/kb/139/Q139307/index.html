@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139307: PRB: Wizard-Generated Picture Buttons Need Bitmap in .Exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139307: PRB: Wizard-Generated Picture Buttons Need Bitmap in .Exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139307/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139307/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139307/","publisher":null,"image":null,"headline":"Q139307: PRB: Wizard-Generated Picture Buttons Need Bitmap in .Exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139307-prb-wizard-generated-picture-buttons-need-bitmap-in-exe">Q139307: PRB: Wizard-Generated Picture Buttons Need Bitmap in .Exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139307
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the PICBTNS command buttons from \Vfp\Wizards\Wizstyle.vcx in a
+wizard-generated form or custom form, the form will run with the command buttons
+showing their perspective bitmap pictures on each button. If the form is added
+to a project and an .exe file is produced, the command buttons will be blank
+when the .exe file is run outside of Visual FoxPro.
+
+CAUSE
+=====
+
+The command buttons do not show their pictures because the bitmap related to
+each button cannot be found. No error will result, therefore the command buttons
+will appear blank. The bitmaps have to be placed into the project and marked
+included. If they are excluded, or simply copied to the same directory as the
+.exe file, the command buttons will still appear blank.
+
+RESOLUTION
+==========
+
+Add the bitmaps to the project manually in the Other Tab under Other Files to
+allow the pictures to be shown on the buttons.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new project and click the Documents tab. Click the Forms option and
+  click the New button to make a new form using the Form Wizard.
+
+2. Select Picture buttons in "Step 2 - Style," and then finish the form. Run the
+  form by clicking the Run button in the project, and note that the pictures
+  appear on each button.
+
+3. Build an .exe file, and exit from Visual FoxPro. Run the .exe file, and note
+  that the command buttons appear blank. However, when the mouse pointer is
+  placed on a command button, the ToolTipText box will still show its message.
+
+4. Exit the .exe file, and open the project in Visual FoxPro. Click the Other
+  tab, and add the following bitmap files to the Other Files category. These
+  files are located in the \Vfp\Wizards\Wizbmps\ directory.
+
+  Wzback.bmp
+  Wzclose.bmp
+  Wzdelete.bmp
+  Wzedit.bmp
+  Wzend.bmp
+  Wzlocate.bmp
+  Wznew.bmp
+  Wznext.bmp
+  Wzprint.bmp
+  Wzsave.bmp
+  Wztop.bmp
+  Wzundo.bmp
+
+5. Build an .exe file, and run it outside of Visual FoxPro. Note that each
+  command button now has a picture associated with it.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

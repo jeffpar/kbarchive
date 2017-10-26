@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q224105: XCLN: LDAP Query Returns Error Message: This Name Could Not… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q224105: XCLN: LDAP Query Returns Error Message: This Name Could Not…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/224/Q224105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/224/Q224105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/224/Q224105/","publisher":null,"image":null,"headline":"Q224105: XCLN: LDAP Query Returns Error Message: This Name Could Not…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q224105-xcln-ldap-query-returns-error-message-this-name-could-not">Q224105: XCLN: LDAP Query Returns Error Message: This Name Could Not…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q224105
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:98
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Outlook, Outlook Express, or Pocket Outlook Address Book
+(Lightweight Directory Access Protocol [LDAP]) in Exchange Server, you may
+receive the following error messages:
+
+  There are no entries in the Directory Service that match your search
+  criteria.
+
+-or-
+
+  This name could not be matched.
+
+CAUSE
+=====
+
+The Search tab on the LDAP protocol object in the Microsoft Exchange Server
+Administrator program may be set to something other than "Treat "any" substring
+searches as "initial" substring searches".
+
+You can find the Search tab by navigating to the following objects in the
+Exchange Server Administrator program:
+
+  Organization\Site\Protocols Container\LDAP(Directory)
+
+-or-
+
+  Organization\Site\Servers Container\Protocols\LDAP(Directory) Settings -
+  Server
+
+RESOLUTION
+==========
+
+To resolve this problem, change the Search tab on the LDAP protocol object in
+the Administrator program to "Treat "any" substring searches as "initial"
+substring searches".
+
+WORKAROUND
+==========
+
+Search Options Include:
+
+- "Treat "any" substring searches as "initial" substring searches (fast)"
+  Specifies that only initial substring searches will be performed. Final
+  substring searches will not be performed, and any substring searches are
+  converted to initial substring searches (which will return partial but
+  sometimes incomplete results).
+
+- "Allow only "initial" substring searches (fast)" Specifies that only initial
+  substring searches will be performed. Final substring searches and any
+  substring searches will not be performed.
+
+- "Allow all substring searches (slow)"
+  Specifies that all substring searches will be performed, including initial,
+  any, or final.
+
+LDAP allows LDAP clients to perform searches when they are connected to a
+directory. For example, if you search the directory for a particular user, LDAP
+returns the entry for that user. LDAP matches the requested information with an
+entry in the directory by performing substring searches. There are three types
+of substring searches that LDAP can perform:
+
+- Initial substring search
+  The directory matches the substring that the user specifies against the
+  beginning of an attribute in the directory. For example, an initial substring
+  search for "ne" in a display name would return Suzan Fine. Initial substring
+  searches are typically faster than the other types of substring searches.
+
+- Final substring search
+  The directory matches the substring that the user specifies against the end of
+  an attribute in the directory. For example, a final substring search for "St"
+  in a display name would return Stacey and Steve, but not Sean or Shannon.
+  Final substring searches are typically slower than initial substring
+  searches.
+
+- Any substring search
+  The directory matches the substring that the user specifies against any
+  portion of an attribute in the directory. For example, a substring search for
+  "r" in a display name would return Maria and Raymond. Any substring searches
+  are the slowest substring searches.
+
+MORE INFORMATION
+================
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q177724 XADM: Cannot Find Exchange Server Recipients Using LDAP Queries
+
+  Q198562 XCLN: Cannot Find Users on Referral Server Using Outlook Express
+
+  Q195792 OL2000: (CW) How to Install and Use the LDAP Service
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:98
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

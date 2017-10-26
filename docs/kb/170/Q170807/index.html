@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170807: XCLN: Cannot Paste into Global Distribution List | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170807: XCLN: Cannot Paste into Global Distribution List" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170807/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170807/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170807/","publisher":null,"image":null,"headline":"Q170807: XCLN: Cannot Paste into Global Distribution List","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170807-xcln-cannot-paste-into-global-distribution-list">Q170807: XCLN: Cannot Paste into Global Distribution List</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170807
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Add Members dialog box for Global Distribution Lists does not allow pasting
+of user names to create a distribution list. The Add Members dialog box for
+Personal Distribution Lists does allow this.
+
+MORE INFORMATION
+================
+
+This is by product design.
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+For a Personal Distribution List:
+
+1. Create three mailboxes in Exchange Administrator (user1,user2, user3).
+
+2. Create a distribution list called All in Exchange Administrator.
+
+3. From a client computer (the operating system doesn't matter), set up a
+  profile for user1 and log on to the mailbox.
+
+4. Open Notepad and type "user1, user2, user3" (one entry on each line).
+
+5. Select all three users in Notepad and copy the text to the Clipboard by
+  pressing CTRL+C.
+
+6. Create a distribution list by using these steps.
+
+  a. Open Address Book.
+
+  b. On the File menu, click New Entry, or click the New Entry button.
+
+  c. Select personal Distribution List.
+
+  d. Click Add/Remove Members.
+
+  e. In the Members list, press CTRL+V to paste the user names.
+
+7. Click OK.
+
+8. In the Show Names From The list box, select the Personal Distribution List.
+
+Notice the Personal Distribution List has been created with all three members.
+
+Try these same steps for a Global Distribution List:
+
+1. Open the Address Book from the client.
+
+2. In the Show Names From The list box, select Global Address List. Double-click
+  the All Distribution List.
+
+3. In the Members box, choose Modify.
+
+4. Click Add.
+
+5. Try to paste the same three users into the Add Users text box (to the right
+  of the Add button) as was done with the Personal Distribution List. Note that
+  nothing is pasted.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

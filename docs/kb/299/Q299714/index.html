@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q299714: HOW TO: Call a COM Object from Active Server Pages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q299714: HOW TO: Call a COM Object from Active Server Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/299/Q299714/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/299/Q299714/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/299/Q299714/","publisher":null,"image":null,"headline":"Q299714: HOW TO: Call a COM Object from Active Server Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q299714-how-to-call-a-com-object-from-active-server-pages">Q299714: HOW TO: Call a COM Object from Active Server Pages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q299714
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbCodeSnippet kbHOWTOmaster
+Last Modified: 15-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Active Server Pages 
+-------------------------------------------------------------------------------
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Requirements
+- Calling a COM Object from an ASP Page
+
+   - Create a Component in Visual Basic
+- Create an Instance of a Component
+- Understanding Component Interfaces
+
+- Pitfalls
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article demonstrates how to call a Component Object Model
+(COM) object from within an Active Server Pages (ASP) page.
+
+Requirements
+------------
+
+The following list outlines the recommended hardware, software, network
+infrastructure and service packs that you need:
+
+- Microsoft Internet Information Server (IIS) or Personal Web Server (PWS)
+- Microsoft Visual Basic
+
+Calling a COM Object from an ASP Page
+-------------------------------------
+
+This sample illustrates the common scenario in which you develop a COM component,
+create the object from an ASP page, and then call the object's methods.
+
+Create a Component in Visual Basic:
+
+To build a COM component with Visual Basic, follow these steps:
+
+1. Start Visual Basic.
+
+2. Create a new ActiveX DLL project named CustomerLib.
+
+3. Rename the class "clsCustomer" (without the quotation marks).
+
+4. Paste the following code in class module:
+
+  	Function GetCustomerName() As String
+  		GetCustomerName = "David Johnson"
+  	End Function
+
+5. On the File menu, click Make CustomerLib.dll to compile the project.
+
+Create an Instance of a Component:
+
+Use the following code to instantiate the COM component from ASP:
+
+  &lt;%@ Language=VBScript %&gt;
+  &lt;%
+  	dim objCustomer
+  	dim strCustomerName
+
+  	' Create the component.	
+  	set objCustomer=server.createobject("CustomerLib.clsCustomer")
+
+  	' Call the method.
+  	strCustomerName = objCustomer.GetCustomerName
+
+  	' Display the return value.
+  	Response.Write strCustomerName
+  %&gt;
+
+Understanding Component Interfaces:
+
+An interface is simply a list of related methods, properties, and events. The
+interface does not determine what happens within the methods. Instead, the
+interface determines what methods are available, as well as the structure or
+"signature" of each method (the method name, argument list, and return type).
+The component that implements the particular interface must determine how those
+methods are executed. Each COM component implements one or more of these custom
+interfaces, as well as one or more standard COM interface for COM plumbing.
+
+In the preceding sample, Visual Basic creates the interface named _clsCustomer,
+which contains one method (GetCustomerName). The clsCustomer class then
+implements this interface as its default interface and defines how the method
+will be executed (by returning "David Johnson").
+
+Another class can implement this interface differently and return any other
+string according to any logic that the class chooses. Although you can use the
+Implements keyword to implement more than one interface in Visual Basic,
+scripting clients (such as ASP) can only use the default interface. This is
+important to remember when you design components that you want to use from ASP.
+
+Pitfalls
+--------
+
+You must register COM objects on your server. If the vendor's installation
+program does not register COM objects for you, you can use Regsvr32.exe to
+register the component on the computer.
+
+REFERENCES
+==========
+
+For more information, refer to the following Microsoft Web sites:
+
+  Microsoft COM Home Page
+  http://www.microsoft.com/com/
+
+  COM Objects in ASP
+  http://msdn.microsoft.com/library/default.asp?URL=/library/en-us/dnasp/html/comtutorial.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCOMt kbCodeSnippet kbHOWTOmaster 
+Technology        : kbVBSearch kbAudDeveloper kbASPsearch kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246054: INFO: DCOMCNFG, APPID\.exe Mapping and Implications | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246054: INFO: DCOMCNFG, APPID\.exe Mapping and Implications" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246054/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246054/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246054/","publisher":null,"image":null,"headline":"Q246054: INFO: DCOMCNFG, APPID\\.exe Mapping and Implications","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246054-info-dcomcnfg-appidexe-mapping-and-implications">Q246054: INFO: DCOMCNFG, APPID\.exe Mapping and Implications</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246054
+Product(s): Microsoft Programming Utilities
+Version(s): 1.0,4.0
+Operating System(s): 
+Keyword(s): kbDCOM kbOSWinNT400 kbOSWin2000 kbOSWin95 kbOSWin98 kbGrpDSCom kbDSupport
+Last Modified: 12-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft COM, version 1.0, used with:
+   - the operating system: Microsoft Windows 2000 
+   - the operating system: Microsoft Windows NT 4.0 
+   - the operating system: Microsoft Windows 98 
+   - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains entries that are made for AppID\.exe mapping under the
+HKEY_CLASSES_ROOT key in the registry by using the DCOMCNFG utility, and the
+implications of it.
+
+MORE INFORMATION
+================
+
+Component Object Model (COM) applications are identified by a Globally Unique
+Identifier (GUID) that is called AppID and represent a server process for one or
+more classes. The remote activation, security, and other application-specific
+settings are stored in the local registry under the following key:
+
+  HKEY_CLASSES_ROOT\AppID
+
+All AppID settings can be manipulated by using the DCOMCNFG utility
+(Dcomcnfg.exe). The DCOMCNFG utility provides users with an easy-to-use
+interface for controlling these application-specific settings.
+
+However, a few issues must be noted when you use DCOMCNFG to make entries under
+the AppID key in the registry:
+
+- AppID\.exe Mapping:
+
+   - DCOMCNFG adds AppID\.exe mapping under HKEY_CLASSES_ROOT in the registry
+     only if none of the following keys is present:
+
+      - HKCR\CLSID\&lt;Guid&gt; (AppID key, named value)
+      - HKCR\APPID\&lt;Guid&gt;
+      - HKCR\APPID\Exename.exe
+
+     In this case, DCOMCNFG automatically synthesizes an AppID by using the
+     first CLSID it encounters in that server (as done for legacy servers that
+     were implemented before Windows NT 4.0), and adds it in the registry.
+
+   - If any of these AppID keys is present, DCOMCNFG does not add the
+     HKCR\APPID\Exename.exe key and or its value if it is not already present.
+
+     This AppID-to-.exe mapping is used by COM to get some of the
+     application-specific settings. If this mapping missing, such settings as
+     Custom Access Permission, static endpoint, Authentication level, and so on
+     are not used by COM, because COM has no way to map the .exe file name to
+     the AppID.
+
+- Setting Custom Access Permission:
+
+  When you set Custom Access permission by using DCOMCNFG, DCOMCNFG does not
+  make the entry under AppID\{GUID} in the registry unless you click Edit, and
+  then click OK. To do this:
+
+  a. Start DCOMCNFG, and then select your application properties.
+
+  b. Click the Security tab.
+
+  c. Click Custom Access permissions, click Edit, and then click OK. The Custom
+     access permissions are registered.
+
+- Long File Names for Applications:
+
+  DCOM uses the GetModuleFileName function to map the .exe file name to AppID
+  for access permissions.
+
+  GetModuleFileName returns long or short file names, based on what was passed
+  to the CreateProcess function. Therefore, if your localServer32 value (under
+  HKEY_CLASSES_ROOT\CLSID\{guid}\LocalServer32) has a long file name, this
+  AppID\.exe mapping needs to be a long file name, or vice versa, for a short
+  file name.
+
+REFERENCES
+==========
+
+For additional information about a DCOMCNFG bug in Windows NT 4.0 Service Pack 4
+(SP4), click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q216051 DCOMCNFG Windows NT 4.0 SP4 Does Not Write .exe Name under HKCR\APPID
+
+Additional query words: dcom appid exemapping appid/exe
+
+======================================================================
+Keywords          : kbDCOM kbOSWinNT400 kbOSWin2000 kbOSWin95 kbOSWin98 kbGrpDSCom kbDSupport 
+Technology        : kbAudDeveloper kbCOM kbCOMPlusSearch
+Version           : :1.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

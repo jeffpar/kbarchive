@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108314: Using More Than Four Communications Ports in Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108314: Using More Than Four Communications Ports in Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108314/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108314/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108314/","publisher":null,"image":null,"headline":"Q108314: Using More Than Four Communications Ports in Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108314-using-more-than-four-communications-ports-in-windows">Q108314: Using More Than Four Communications Ports in Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108314
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In theory, it is possible to use more than four communications (COM) ports in a
+Windows-based application. In practice, however, due to the limitation imposed
+by the Windows 3.1 communications (comm) driver, only a maximum of four
+communications ports can be used.
+
+MORE INFORMATION
+================
+
+The virtual communications device (VCD) under Windows can support up to nine
+communications ports. And, the Windows communications functions also support the
+use of nine communications ports in a Windows-based application. All this
+information might indicate that a maximum of nine COM ports can be used in a
+Windows-based application.
+
+But the communications driver (COMM.DRV) that is shipped with Windows version 3.1
+supports a maximum of only four communications ports. For example, you can use
+the following code in a Windows-based application:
+
+     // Get the number of COM ports.
+     nPorts = EscapeCommFunction(0,GETMAXCOM)+1;
+
+Note, nPorts is not an indication of the number of communications ports that the
+computer has; it indicates the maximum number of communications ports the
+communications driver supports. For the Windows version 3.1 standard
+communications driver, nPorts is always four.
+
+This situation might change in the future. For example, the communications driver
+that ships with Windows for Workgroups version 3.11 does support more than four
+communications ports. Also, some of the third-party communications drivers, such
+as TurboCom by Pacific CommWare, do support up to nine communications ports. For
+more information, contact:
+
+  Pacific CommWare
+  180 Beacon Hill Lane
+  Ashland, OR 97520
+  Voice: (503) 482-2744
+  Fax: (503) 482-2627
+  BBS: (503) 482-2633
+
+Note that Microsoft does not recommend any third-party applications for a given
+purpose. TurboCom is an example only.
+
+Also, because the Windows Device Driver Kit (DDK) version 3.1 provides the source
+code to all the drivers including the Windows standard communications driver,
+one could modify the source code to provide support for more than four
+communications ports under Windows. However, note that modifying the
+communications driver source code is not a trivial operation. For more
+information on how to modify the Windows communications driver source code to
+provide support for nine communications ports, query the Knowledge Base on the
+words:
+
+  modifying comm nine
+
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

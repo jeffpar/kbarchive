@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q234769: BUG: Unregistering CE ATL Servers Don’t Remove Registry Entries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q234769: BUG: Unregistering CE ATL Servers Don’t Remove Registry Entries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/234/Q234769/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/234/Q234769/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/234/Q234769/","publisher":null,"image":null,"headline":"Q234769: BUG: Unregistering CE ATL Servers Don’t Remove Registry Entries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q234769-bug-unregistering-ce-atl-servers-dont-remove-registry-entries">Q234769: BUG: Unregistering CE ATL Servers Don’t Remove Registry Entries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q234769
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:3.0,6.0
+Operating System(s): 
+Keyword(s): kbRegistry kbOSWinCEsearch kbATL300bug kbDSupport kbGrpDSMFCATL
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual C++ 6.0 
+- The Microsoft Active Template Library (ATL) 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run "REGSVRCE.exe /U" on an ATL DLL to unregister components or controls
+will not clean up the registry. The ProgID and entries under the CLSID will not
+be removed.
+
+CAUSE
+=====
+
+During unregistration, ATL checks to see if a key has subkeys or values before
+deleting it. ATL checks for values by calling CRegParser::HasValues(). Inside
+this function, RegEnumValue() is called. Under Win32, RegEnumValue() returns
+NULL if the key only has a default value. Under CE, it returns the string
+"Default". This causes CRegParser::HasValues() to return TRUE and prevents ATL
+from deleting the key.
+
+RESOLUTION
+==========
+
+In the function CRegParser::HasValues() in STATREG.h, the following line needs
+to be changed from:
+
+  if (ERROR_SUCCESS == lResult &amp;&amp; (szValueName[0] != NULL))
+
+to:
+
+  if (ERROR_SUCCESS == lResult &amp;&amp; (szValueName[0] != NULL) &amp;&amp; lstrcmpi(szValueName, _T("Default")))
+
+You will need to statically link with the registration code by building for
+ReleaseMinDependency. To build a debug version, you'll need to add
+_ATL_STATIC_REGISTRY to the preprocessor symbols (under Project menu select
+Settings in the C++ tab). Make sure to select Rebuild All.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Make sure you're modifying the right version of STATREG.h. It should be the one
+in the "Windows CE Tools" directory (for example, "\Windows CE Tools\WCE200\MS
+HPC\atl\include").
+
+Additional query words: regsvrce unregister
+
+======================================================================
+Keywords          : kbRegistry kbOSWinCEsearch kbATL300bug kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbATL300 kbWinCETKVCSearch kbWinCESearch kbWinCETK600VC
+Version           : WINDOWS:3.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

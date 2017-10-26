@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147322: Cinemania/ Music Central ErrMsg: Unknown Error When Starting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147322: Cinemania/ Music Central ErrMsg: Unknown Error When Starting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147322/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147322/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147322/","publisher":null,"image":null,"headline":"Q147322: Cinemania/ Music Central ErrMsg: Unknown Error When Starting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147322-cinemania-music-central-errmsg-unknown-error-when-starting">Q147322: Cinemania/ Music Central ErrMsg: Unknown Error When Starting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147322
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbhw kbmm kbprb kbHardwarekbfaq
+Last Modified: 02-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Cinemania 
+- Microsoft Music Central for Windows, 1996, 1997 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the programs listed at the top of this article, you may
+receive an error message similar to the following:
+
+  Cinemania 96
+  Cinemania is unable to proceed due to an unknown error.
+  To correct the problem, try restarting Cinemania.
+
+This can occur after the Home logo appears. Additionally, the program does not
+start and reinstalling the program does not correct the problem.
+
+CAUSE
+=====
+
+This problem can occur for any of the following reasons:
+
+- The Windows MCI Motion Video device is disabled or not installed.
+
+- The Windows Audio codecs are not installed.
+
+- The SoundBlaster 16 HDMA setting is incorrect.
+
+- The system clock is set to the wrong date.
+
+RESOLUTION
+==========
+
+To resolve this problem, enable or add the Motion Video device driver or add the
+Audio codecs.
+
+For information about how to change your SoundBlaster 16 HDMA settings, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q136675 Changing SoundBlaster 16 HDMA Settings in Windows 95
+
+To Enable the Motion Video Device Driver
+----------------------------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia.
+
+3. Click the Advanced or Devices tab.
+
+4. Double-click Media Control Devices, and then double-click Motion Video Device
+  (Media Control).
+
+  If this device is not listed, see the "To Add the Missing Motion Video Device
+  Driver" section later in this article.
+
+5. Click Use This Media Control Device.
+
+6. Click OK, and then click OK.
+
+To Add the Missing Motion Video Device Driver
+---------------------------------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add New Hardware, and then click Next.
+
+  NOTE: If you are using Windows 98, double-click Add New Hardware, click Next,
+  and then click Next.
+
+3. When you are asked if you want Windows to detect your hardware, Click No, and
+  then click Next.
+
+4. In the list of Hardware types, click Sound, Video And Game Controllers, and
+  then click Next.
+
+5. In the Manufacturers box, click Microsoft MCI.
+
+6. In the Models box, click Motion Video Device (Media Control).
+
+7. Click Next, and then click Finish. Follow the instructions on the screen.
+
+8. Restart Windows.
+
+Installing/Reinstalling Windows Audio Compression
+-------------------------------------------------
+
+If the Audio Compression option is not installed properly, you receive error
+messages when compressed sound (.wav) files are played. Uncompressed sound files
+(such as Ding.wav or Chimes.wav) are unaffected by missing Audio Compression
+(MSACM codecs).
+
+You need to remove, then reinstall, the Windows Audio Compression, using the
+following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click the Windows Setup tab.
+
+4. In the Components box, click Multimedia.
+
+5. Click Details.
+
+6. If the Audio Compression option is checked, it may not be installed properly,
+  and needs to be removed. To remove Audio Compression, follow these steps:
+
+  a. Click the Audio Compression check box to clear it, and then click OK.
+
+  b. Click OK again to complete the removal.
+
+  c. Repeat steps 2-5 to return to the Audio Compression option in Add/Remove
+     Programs.
+
+7. Click the Audio Compression check box to select it.
+
+8. Click OK, and then click OK again. Follow the instructions on the screen.
+
+Additional query words: 1996 96 multi media multimedia multi- mmtitles kbmm
+
+======================================================================
+Keywords          : kberrmsg kbhw kbmm kbprb kbHardware kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbMusicCentral kbMusicCentral1996 kbMusicCentral1997
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q239436: PRB: LNK2001 on Template Member Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q239436: PRB: LNK2001 on Template Member Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/239/Q239436/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/239/Q239436/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/239/Q239436/","publisher":null,"image":null,"headline":"Q239436: PRB: LNK2001 on Template Member Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q239436-prb-lnk2001-on-template-member-functions">Q239436: PRB: LNK2001 on Template Member Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q239436
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbLangCPP kbLinker kbVC kbVC500 kbVC600 kbDSupport
+Last Modified: 02-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive a LNK2001 error message on template member functions unless the
+member functions are also defined in the same translation unit.
+
+CAUSE
+=====
+
+The compiler does not support the use of the "export" keyword as specified in
+the C++ standard below:
+
+  
+
+  Section 14:
+
+  Para# 7: Declaring a class template exported is equivalent to declaring all of
+  its non-inline function members, static data members, member classes, member
+  class templates and non-inline function member templates which are defined in
+  that translation unit exported.
+
+  Para# 8: Templates defined in an unnamed namespace shall not be exported. A
+  template shall be exported only once in a program. An implementation is not
+  required to diagnose a violation of this rule. A non-exported template that
+  is neither explicitly specialized nor explicitly instantiated must be defined
+  in every translation unit in which it is implicitly instantiated (temp.inst)
+  or explicitly instantiated (temp.explicit); no diagnostic is required. An
+  exported template need only be declared (and not necessarily defined) in a
+  translation unit in which it is instantiated. A template function declared
+  both exported and inline is just inline and not exported.
+
+RESOLUTION
+==========
+
+You have the following two options:
+
+- Keep the template declaration and definition together in one translation
+  unit.
+
+- If you know in advance how your template class will be used in your
+  application, you can perform explicit instantiation for the template class.
+
+  For example, for class MyStack declared in Myprog.h
+
+  template &lt;class T&gt; MyStack;
+
+  and implemented in Myprog.cpp, the following explicitly instantiates MyStack
+  for int variables:
+
+  template class MyStack&lt;int&gt;;
+
+MORE INFORMATION
+================
+
+Explicit instantiation allows you to create an instantiation of a template class
+or function without actually using it in your code. The idea is to explicitly
+instantiate all possible types for the template class in the implementation
+file. Thus, when the .cpp file is compiled, the code is generated for these
+instantiations, alleviating the LNK2001 error.
+
+Please refer to the Visual C++ Help for more information regarding explicit
+instantiation.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q128789 BUG: LNK2001 on Member Function When Use Nested Class Template
+
+Additional query words:
+
+======================================================================
+Keywords          : kbLangCPP kbLinker kbVC kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

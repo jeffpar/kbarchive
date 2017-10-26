@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129903: PRB: Setting Form to Nothing Does Not Unload Form | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129903: PRB: Setting Form to Nothing Does Not Unload Form" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129903/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129903/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129903/","publisher":null,"image":null,"headline":"Q129903: PRB: Setting Form to Nothing Does Not Unload Form","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129903-prb-setting-form-to-nothing-does-not-unload-form">Q129903: PRB: Setting Form to Nothing Does Not Unload Form</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129903
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the following code to set a Form variable to nothing, the form does
+not unload:
+
+     Set Form1 = Nothing
+
+CAUSE
+=====
+
+Setting a form to nothing releases the handle or reference that Visual Basic has
+to the form, but it does not cause the underlying form to be unloaded. In fact,
+if you set a form to nothing, this invalidates the form variable as a reference
+to the form so that later calls such as this fail:
+
+     Unload Form1
+
+Then you have to reference the form via the Forms collection.
+
+RESOLUTION
+==========
+
+Use the Unload statement to explicitly unload your forms.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The following syntax is perfectly valid for OLE Automation servers and objects
+that are created in Visual Basic:
+
+     Dim Obj As Object
+     Set Obj = Nothing
+
+OLE Automation servers automatically clean up and unload when their last instance
+is set to Nothing. This is not true for forms.
+
+Rules for Instantiating, Loading, Unloading, and Uninstantiating Forms
+----------------------------------------------------------------------
+
+The rules for instantiating, loading, unloading, and uninstantiating are as
+follows:
+
+A form is instantiated when one of the following occurs:
+
+- It is used in a Set New statement such as Set x = New Form1. However, note
+  that Dim As New does not cause instantiation.
+
+- Any member of the form is referenced.
+
+- It is passed as an argument.
+
+A form is loaded when one of the following occurs:
+
+- The Load statement is used on it.
+
+- One of the built-in (not user-defined) properties or methods is referenced.
+
+- A property or method of a control or a control array on the form is
+  referenced.
+
+- A control that is a member of a control array is referenced.
+
+- It is the MDI form, and a child form is loaded (this causes a show of the MDI
+  form too).
+
+A form is unloaded when:
+
+- The Unload statement is used on it.
+
+A form is uninstantiated when:
+
+- All references to it or any controls or control arrays on it are released,
+  AND it is unloaded.
+
+The Forms collection contains all loaded forms, but not forms that are
+instantiated yet unloaded.
+
+The Initialize event occurs when a form is instantiated. The Load event occurs
+when it is loaded. The Unload event occurs when it is unloaded, and the
+Terminate event occurs when it is uninstantiated.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add a Module (Module1.BAS) to your Project.
+
+3. Add the following code to the General Declarations section of Module1.Bas:
+
+     Global FormVar As Form
+
+     Sub Main()
+        Set FormVar = New Form1
+        Form1.Show
+        Load FormVar
+     End Sub
+
+4. Choose Options from the Tools menu. Choose the Project tab on the dialog and
+  change the Startup Form to Sub Main.
+
+5. Add three Command buttons (Command1, Command2, and Command3) to Form1.
+
+6. Add the following code to the appropriate procedures:
+
+     Private Sub Command1_Click()
+        Set Form1 = Nothing
+        Set FormVar = Nothing
+        Unload Form1
+        ' Unload FormVar
+        ' The above line generates an Error if executed.
+           ' Error 91 is now:
+           ' "Object variable or With block variable not set."
+        Msgbox Forms.Count &amp; " forms are still loaded!"
+     End Sub
+
+     Sub Command2_Click ()
+        For I = Forms.Count-1 to 0 Step -1
+           Unload Forms(I)
+        Next
+     End Sub
+
+     Sub Command3_Click ()
+        Unload Form1
+        Set Form1 = Nothing
+        Unload FormVar
+        Set FormVar = Nothing
+        Msgbox Forms.Count &amp; " forms are still loaded!"
+     End Sub
+
+7. Start the program by choosing Start from the Run menu or by pressing the F5
+  key.
+
+8. Click the Command1 button. Note that although Form1 has been set to Nothing
+  and explicitly unloaded on the next line, the form does not unload.
+
+9. Click the Command2 button to unload Form1 via the Forms collection.
+
+The Command3_Click procedure shows the correct sequence to use to avoid this
+problem. Stop the program and re-run it. Then click only the Command3 button.
+Both forms unload properly.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

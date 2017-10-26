@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q249599: Virtual Directory Mapped to UNC Returns Server-Side Script Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q249599: Virtual Directory Mapped to UNC Returns Server-Side Script Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/249/Q249599/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/249/Q249599/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/249/Q249599/","publisher":null,"image":null,"headline":"Q249599: Virtual Directory Mapped to UNC Returns Server-Side Script Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q249599-virtual-directory-mapped-to-unc-returns-server-side-script-code">Q249599: Virtual Directory Mapped to UNC Returns Server-Side Script Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q249599
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbSecurity kbWin2000PreSP1Fix kbWinNT400PreSP7Fix kbgraphxlinkcritical
+Last Modified: 30-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a virtual directory on an Internet Information Server (IIS) computer is
+mapped to a Universal Naming Convention (UNC) share, and a request for a file in
+the directory contains one of several particular characters at the end of the
+request, the expected Internet Server Application Programming Interface (ISAPI)
+extension processing may not occur. This can result in the source code of the
+file being sent to the browser.
+
+CAUSE
+=====
+
+This problem can be caused by the use of a varying combination of special
+characters at the end of the clients request.
+
+RESOLUTION
+==========
+
+Windows 2000
+------------
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+This fix is also available individually. The following files are available for
+download from the Microsoft Download Center:
+
+  US English
+  DownloadDownload Q249599_W2K_SP1_X86_EN.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19982)
+
+  Arabic
+  DownloadDownload Q249599_W2K_SP1_X86_AR.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19983)
+
+  Chinese (Simplified)
+  DownloadDownload Q249599_W2K_SP1_X86_CN.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19985)
+
+  Chinese (Traditional)
+  DownloadDownload Q249599_W2K_SP1_X86_TW.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19995)
+
+  Dutch
+  DownloadDownload Q249599_W2K_SP1_X86_NL.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19993)
+
+  French
+  DownloadDownload Q249599_W2K_SP1_X86_FR.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19989)
+
+  German
+  DownloadDownload Q249599_W2K_SP1_X86_DE.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19986)
+
+  Hebrew
+  DownloadDownload Q249599_W2K_SP1_X86_HE.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19996)
+
+  Italian
+  DownloadDownload Q249599_W2K_SP1_X86_IT.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19990)
+
+  Japanese
+  DownloadDownload Q249599_W2K_SP1_X86_JA.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19991)
+
+  Korean
+  DownloadDownload Q249599_W2K_SP1_X86_KO.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19992)
+
+  Portuguese (Brazil)
+  DownloadDownload Q249599_W2K_SP1_X86_BR.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19984)
+
+  Spanish
+  DownloadDownload Q249599_W2K_SP1_X86_ES.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19988)
+
+  Swedish
+  DownloadDownload Q249599_W2K_SP1_X86_SV.EXE now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=19994)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+
+
+Windows NT 4.0
+--------------
+
+The following files are available for download from the Microsoft Download
+Center:
+
+  US English
+  x86: DownloadDownload Uncsec4i.exe now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=18900)
+  Alpha: DownloadDownload Uncsec4a.exe now
+  (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=18901)
+
+  Dutch
+  x86: Download Uncsec4i.exe now
+  (http://download.microsoft.com/download/iis40/Patch/4.2.736.1/NT4/NL/Uncsec4i.exe)
+  Alpha: Download Uncsec4a.exe now
+  (http://download.microsoft.com/download/iis40/patch/4.2.736.1/alpha/nl/Uncsec4a.exe)
+
+  French
+  x86: Download Uncsec4i.exe now
+  (http://download.microsoft.com/download/iis40/patch/4.2.736.1/nt4/fr/Uncsec4i.exe)
+  Alpha: Download Uncsec4a.exe now
+  (http://download.microsoft.com/download/iis40/patch/4.2.736.1/alpha/fr/Uncsec4a.exe)
+
+  German
+  x86: Download Uncsec4i.exe now
+  (http://download.microsoft.com/download/iis40/Patch/4.2.736.1/NT4ALPHA/DE/Uncsec4i.exe)
+  Alpha: Download Uncsec4a.exe now
+  (http://download.microsoft.com/download/iis40/Patch/4.2.736.1/NT4ALPHA/DE/Uncsec4a.exe)
+
+  NOTE: Debug symbol files are required by an administrator to do both kernel
+  and user mode debugging, providing a method to resolve global variables and
+  function names in the loaded executable file. Click the file names below to
+  download the symbol files:
+
+  German x86 Symbols: Download Uncsec4is.exe now
+  (http://download.microsoft.com/download/iis40/Patch/4.2.736.1/NT4ALPHA/DE/Uncsec4is.exe)
+  German Alpha Symbols: Download Uncsec4as.exe now
+  (http://download.microsoft.com/download/iis40/Patch/4.2.736.1/NT4ALPHA/DE/Uncsec4as.exe)
+
+  Portuguese (Brazilian)
+  x86: DownloadDownload Uncsec4i.exe now (
+  http://download.microsoft.com/download/iis40/patch/4.2.736.1/nt4/pt-br/Uncsec4i.exe)
+  Alpha: Download Uncsec4a.exe now
+  (http://download.microsoft.com/download/iis40/patch/4.2.736.1/alpha/pt-br/Uncsec4a.exe)
+
+  Spanish
+  x86: Download Uncsec4i.exe now
+  (http://download.microsoft.com/download/iis40/patch/4.2.736.1/nt4/es/Uncsec4i.exe)
+  Alpha: DownloadDownload Uncsec4a.exe now (
+  http://download.microsoft.com/download/iis40/patch/4.2.736.1/alpha/es/Uncsec4a.exe)
+
+  Swedish
+  x86: Download Uncsec4i.exe now
+  (http://download.microsoft.com/download/iis40/patch/4.2.736.1/nt4/sv/Uncsec4i.exe)
+  Alpha: Download Uncsec4a.exe now
+  (http://download.microsoft.com/download/iis40/patch/4.2.736.1/alpha/sv/Uncsec4a.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date      Time    Version      Size    File name     Platform
+  -------------------------------------------------------------
+  12/28/99  06:02p  4.2.736.1  185,248   Infocomm.dll  x86
+  12/28/99  06:03p  4.2.736.1   38,256   Ssinc.dll     x86
+  12/28/99  06:03p  4.2.736.1   25,360   Sspifilt.dll  x86
+  12/28/99  06:03p  4.2.736.1  228,464   W3svc.dll     x86
+
+
+
+Microsoft Windows NT Server version 4.0, Terminal Server Edition
+----------------------------------------------------------------
+
+To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP). For additional information about the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+  Package
+
+STATUS
+======
+
+Windows 2000
+------------
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+5.0. This problem was first corrected in Windows 2000 Service Pack 1.
+
+Windows NT 4.0
+--------------
+
+Microsoft has confirmed this to be a problem in Internet Information Server 4.0.
+
+MORE INFORMATION
+================
+
+There are significant restrictions that increase the difficulty of exploiting
+this vulnerability:
+
+- By design, virtual directories hide the actual location of files. Under most
+  circumstances, there is no way for an attacker to determine which files on a
+  server actually reside on a UNC share.
+
+- Many browsers "correct" requests that contain the trailing characters at
+  issue here by either removing the characters or changing them.
+
+- If recommended security practices are followed, ASP and other files that
+  require server-side processing will not contain any sensitive information to
+  compromise.
+
+This fix eliminates the vulnerability by removing the trailing special characters
+if they are included in the request. This causes the appropriate scripting
+engine to process the file when the request is returned to the browser. If the
+request is improperly formatted, the request is denied, and then returned to the
+client as an invalid request.
+
+For related information about this problem, please visit the following Microsoft
+Web site:
+
+  http://www.microsoft.com/technet/security/bulletin/ms00-019.asp
+
+For additional security-related information about Microsoft products, please
+visit the following Microsoft Web site:
+
+  http://www.microsoft.com/security/
+
+For additional information about how to install Windows 2000 and Windows 2000
+hotfixes at the same time, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q249149 Installing Microsoft Windows 2000 and Windows 2000 Hotfixes
+
+
+Additional query words: tsesrp
+
+======================================================================
+Keywords          : kbSecurity kbWin2000PreSP1Fix kbWinNT400PreSP7Fix kbgraphxlinkcritical 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

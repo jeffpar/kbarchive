@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68655: Windows 3.0 Enhanced Mode Requires WINA20.386 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68655: Windows 3.0 Enhanced Mode Requires WINA20.386" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68655/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68655/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68655/","publisher":null,"image":null,"headline":"Q68655: Windows 3.0 Enhanced Mode Requires WINA20.386","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68655-windows-30-enhanced-mode-requires-wina20386">Q68655: Windows 3.0 Enhanced Mode Requires WINA20.386</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68655
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+- Microsoft Windows 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the Setup program to install Microsoft MS-DOS 5.0 or later, the
+read-only file WINA20.386 is copied to the root directory of the boot drive
+(C:\).
+
+WINA20.386 is used by Microsoft Windows version 3.0 in enhanced mode to allow
+MS-DOS control of the A20 line. Enhanced mode Windows 3.0 cannot run in MS-DOS
+5.0 or later without it, and the following error message is displayed if the
+file is not present:
+
+  You must have the file WINA20.386 in the root of your boot drive to run
+  Windows in Enhanced Mode.
+
+The file must be decompressed using Setup or the Expand utility. For information
+on using Expand, see your MS-DOS User's Guide and Reference.
+
+NOTE: This information applies to Microsoft Windows version 3.0; it does not
+apply to later versions of Windows.
+
+MORE INFORMATION
+================
+
+Windows 3.0 enhanced mode uses a modular architecture based on what are called
+virtual device drivers, or VxDs. VxDs allow pieces of Windows to be replaced to
+add additional functionality. WINA20.386 is such a VxD. (VxDs could be called
+"structured" patches for Windows.)
+
+Windows 3.0 enhanced mode considers the state of the A20 line to be the same in
+all MS-DOS virtual machines (VMs). When MS-DOS is loaded in the high memory area
+(HMA), this can cause the machine to stop responding (hang) because of MS-DOS
+controlling the A20 line. If one VM is running inside the MS-DOS kernel (in the
+HMA) and Windows task switches to another VM in which MS-DOS turns off A20, the
+machine hangs when switching back to the VM that is currently attempting to
+execute code in the HMA.
+
+WINA20.386 changes the way Windows 3.0 enhanced mode handles the A20 line so that
+Windows treats the A20 status as local to each VM, instead of global to all VMs.
+This corrects the problem.
+
+For more information, query on the following words:
+
+  "Windows" (without the quotation marks) and "WINA20.386" (without the
+  quotation marks)
+
+
+Additional query words: 6.22 3.00 3.00a 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

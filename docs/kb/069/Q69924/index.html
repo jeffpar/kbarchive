@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69924: MS-DOS 3.3x Extended Partitions Keep Windows from Formatting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69924: MS-DOS 3.3x Extended Partitions Keep Windows from Formatting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69924/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69924/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69924/","publisher":null,"image":null,"headline":"Q69924: MS-DOS 3.3x Extended Partitions Keep Windows from Formatting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69924-ms-dos-33x-extended-partitions-keep-windows-from-formatting">Q69924: MS-DOS 3.3x Extended Partitions Keep Windows from Formatting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69924
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a,3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to format or copy a floppy disk from Microsoft Windows File Manager,
+you receive one of the following error messages:
+
+  Unable to Format
+
+  -or-
+
+  Unable to Copy
+
+  -or-
+
+  MS-DOS startup disk has an invalid sector size.
+
+CAUSE
+=====
+
+Your hard drive may have been formatted with a nonstandard sector size.
+
+This often occurs when a hard drive partitioned larger than 32 MB exists under
+MS-DOS 3.3x. This can also happen when a third-party disk partitioning program
+is used.
+
+The standard size for a hard drive sector under MS-DOS is 512K. If the sector
+size is larger (for example, 1024K), then Windows cannot format a floppy disk
+from File Manager. This may also affect copying because the destination disk
+must be formatted.
+
+Under MS-DOS 3.3x, disk partitioning programs like Disk Manager and Speedstor may
+use larger sectors to allow for larger partitions. This is also prevalent in
+some original equipment manufacturer (OEM) versions of DOS. OEMs known to have
+done this are NEC, Zenith, and Wyse. These versions of DOS have an altered FDISK
+that allows this feature. If there is a partition over 32 MB on an MS-DOS 3.3x
+system, this is the likely cause of not being able to format or copy disks from
+File Manager.
+
+NOTE: COMPAQ DOS 3.31 does not have this problem. COMPAQ DOS 3.31 allows larger
+partitions by allowing for more sectors instead of making larger sectors. This
+is the same method used in MS-DOS 4.x and later.
+
+WORKAROUND
+==========
+
+To work around the problem, try one of the following:
+
+- Repartition the drive using FDISK and keeping the partitions to a size less
+  than 33MB.
+
+- Format and copy disks from the MS-DOS command prompt.
+
+- Upgrade from your OEM's version of MS-DOS to 4.01 or later.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3.10 win30 win31
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

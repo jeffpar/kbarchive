@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q110582: SNA Server Service Stays Inactive When Started | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q110582: SNA Server Service Stays Inactive When Started" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/110/Q110582/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/110/Q110582/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/110/Q110582/","publisher":null,"image":null,"headline":"Q110582: SNA Server Service Stays Inactive When Started","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q110582-sna-server-service-stays-inactive-when-started">Q110582: SNA Server Service Stays Inactive When Started</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q110582
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2
+Operating System(s): 
+Keyword(s): kbnetwork kbsna211sp1 kbsna211sp2
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 2.11 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an SNA Server link service fails to start for any reason, the SNA Server
+service will not start. Using SNA Server Admin, the server switches from Pending
+to Inactive when it is started.
+
+WORKAROUND
+==========
+
+To work around this problem, remove any SNA Server link services that depend on
+adapters that are not present, or determine why the SNA link service failed to
+start. Possible causes for link service initialization failures include, but are
+not limited to, the following:
+
+- Adapter not present in the machine.
+
+- Interrupt conflict with another device in the machine.
+
+- DLC driver not installed or bound to the network adapter.
+
+MORE INFORMATION
+================
+
+When SNA Server is installed, the SNA Server service is configured to depend on
+all underlying link services to start. However, if an underlying link service
+fails to start for any reason, SNA Server fails to start and the following error
+will be logged in the Windows NT system log:
+
+  Event ID: 7001
+  Source: Service Control Manager
+  Type: Error
+  Description: The SnaServer service depends upon the &lt;snalink&gt; service
+  which failed to start because of the following error:
+  The dependency service or group failed to start.
+
+Note that &lt;snalink&gt; is the name of the SNA Server link service specified
+during SNA Server setup (default names are SnaSdlc1, SnaDlc1, SnaDft1, SnaX251).
+This error occurs because the &lt;snalink&gt; service did not start. The reason
+for the failure should be present in a preceding error in the system event log,
+reported as Event ID #7000.
+
+This no longer occurs with SNA Server versions 3.0 and later.
+
+Additional query words: prodsna SNA service 7000 7001
+
+======================================================================
+Keywords          : kbnetwork kbsna211sp1 kbsna211sp2 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1 kbSNAServ211SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

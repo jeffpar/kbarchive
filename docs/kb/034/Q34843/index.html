@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q34843: INFO: The Four Classes of Device Banding | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q34843: INFO: The Four Classes of Device Banding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/034/Q34843/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/034/Q34843/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/034/Q34843/","publisher":null,"image":null,"headline":"Q34843: INFO: The Four Classes of Device Banding","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q34843-info-the-four-classes-of-device-banding">Q34843: INFO: The Four Classes of Device Banding</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q34843
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbOSWin310 _IK kbOSWin300 kbSDKWin16
+Last Modified: 02-JUL-1999
+
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Microsoft Windows environment, banding is a common technique to divide a
+page into a number of sections, called bands. When an application uses banding,
+it requires less memory to produce a page of printed output at the potential
+expense of some additional time. This article discusses the four types of
+banding devices that can be used in the Windows environment: nonbanding devices,
+simple banding devices, "Full Page Banding for Text" devices, and BANDINFO
+devices.
+
+MORE INFORMATION
+================
+
+Nonbanding Devices
+------------------
+
+These devices do not perform any banding. PostScript printers and plotters are
+the most common nonbanding devices. These nonraster devices accept primitive
+output directly from Windows without any need for intermediate rasterization. An
+application can identify a nonbanding device by performing the following three
+steps:
+
+1. Create a Device Context (DC) for the output device and obtain a handle to the
+  device context (hDC).
+
+2. Call the GetDeviceCaps function, specifying the hDC and RASTERCAPS for the
+  iCapability parameter.
+
+3. Check the RC_BANDING bit of the GetDeviceCaps function. If the RC_BANDING bit
+  of the GetDeviceCaps return value is clear, the device does not perform
+  banding.
+
+Simple Banding Devices
+----------------------
+
+These devices divide both text and graphics into a series of bands starting at
+the top of each page and running to the bottom. Under versions of Windows
+earlier than 3.1, these devices may provide a full-page band when available
+memory permits, but they usually do not. Under Windows 3.1, these devices
+generally provide a full-page band when memory permits. Dot-matrix printers are
+the most common simple banding devices. An application can identify a simple
+banding device by performing previous 1 and 2 steps. The RC_BANDING bit is set
+for simple banding devices.
+
+"Full Page Banding for Text" Devices
+------------------------------------
+
+The driver for a page printer (commonly referred to as a laser printer) typically
+uses one band covering the full page for text followed by additional smaller
+bands for graphics. This technique is an optimization for a printer that allows
+text to be placed at any position on the page but does not have the graphics
+capabilities of a PostScript printer. Typically, a driver does not provide any
+graphics bands unless it detects a graphics command in its text band. While this
+technique allows the driver to optimize printing of pages containing only text,
+an application that prints graphics must call a graphics primitive in the text
+band to work correctly with this driver type. Most new page-printer drivers are
+developed for the fourth driver category, discussed in the following.
+
+BANDINFO Devices
+----------------
+
+With a BANDINFO device driver, an application can optimize its printing and
+eliminate calling graphics primitives in a text band by requesting graphics
+bands only when required and identifying which band is the text band. This
+BANDINFO escape provides this capability. An application issues the BANDINFO
+escape to inform the driver that the application will print graphics and to
+determine which bands contain text and which bands contain graphics.
+
+An application can use the QUERYESCSUPPORT escape to identify a device that
+supports the BANDINFO escape. If the driver supports BANDINFO, the application
+can determine when to print text or graphics as appropriate. If the driver does
+not support the BANDINFO escape, the application should print text and graphics
+in each band.
+
+The Hewlett-Packard LaserJet driver is an example of a printer driver that
+implements the BANDINFO escape.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbOSWin310 _IK kbOSWin300 kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

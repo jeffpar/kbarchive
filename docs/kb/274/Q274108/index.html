@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274108: SMS: How to Troubleshoot NDS Logon Point Creation Failures | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274108: SMS: How to Troubleshoot NDS Logon Point Creation Failures" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274108/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274108/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274108/","publisher":null,"image":null,"headline":"Q274108: SMS: How to Troubleshoot NDS Logon Point Creation Failures","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274108-sms-how-to-troubleshoot-nds-logon-point-creation-failures">Q274108: SMS: How to Troubleshoot NDS Logon Point Creation Failures</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274108
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1,2.0 SP2
+Operating System(s): 
+Keyword(s): kbsms200
+Last Modified: 05-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server (SMS) 2.0 has the ability to establish Novell NDS
+volume objects as logon points to an SMS site. It may occasionally be necessary
+to troubleshoot failures in the creation process of that logon point.
+
+You can enable logging for the SMS_NDS_LOGON_SERVER_MANAGER, which will produce
+an nd_logon.log file in the sms\logs directory on your site server. Review of
+this log will provide you with valuable information concerning the cause of any
+failures.
+
+MORE INFORMATION
+================
+
+There are two pieces of information that SMS requires to successfully connect to
+the Novell resource:
+
+- The security, as established in the Admin console, of a SITE SYSTEM
+  connection account.
+
+- The proper path to the volume object where the SMSLOGON folder will be
+  created.
+
+Troubleshooting Security
+------------------------
+
+1. Log on to the Site server as the account that was set as the Site System
+  connection account for NDS.
+
+  This will tell you whether the account can successfully authenticate to the
+  NDS tree.
+
+2. Then try to connect to the volume where the SMSLOGON folder will be created.
+  Manually create a directory and then delete it.
+
+  This process will tell you whether the connection account has the correct
+  credentials to create the logon point.
+
+Troubleshooting the Path
+------------------------
+
+By referencing the nd_logon.log, verify that the path selected was typed
+correctly. The correct path should be as follows:
+
+  \\NDS_TREE_Name\.volume_object.OU.O
+
+NOTE:
+
+- Depending on the Novell tree hierarchy, there may be more OUs (containers) in
+  the path. The spelling of the tree name and all the objects in that path is
+  of great importance.
+
+- The volume object needs to be the object as it appears in NWADMIN (Novell's
+  administrative utility), not just the name of the volume, such as "Apps" or
+  "Vol1." The volume object consists of the file server upon which the volume
+  is installed. For example, if a file server is called "FS1" and the volume is
+  "Vol1," the volume object would be "FS1_vol1." This object should be found in
+  the container in which the file server resides.
+
+REFERENCES
+==========
+
+For more information on integrating and installing Novell resources in SMS 2.0,
+see the "Integrating Systems Management Server 2.0 with Novell NetWare" white
+paper at the following Microsoft Web site:
+
+  http://www.microsoft.com/smsmgmt/deployment/smswithnovell.asp
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

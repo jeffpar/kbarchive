@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126985: INFO: Unattended Setup Switch Fails to Run | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126985: INFO: Unattended Setup Switch Fails to Run" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126985/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126985/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126985/","publisher":null,"image":null,"headline":"Q126985: INFO: Unattended Setup Switch Fails to Run","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126985-info-unattended-setup-switch-fails-to-run">Q126985: INFO: Unattended Setup Switch Fails to Run</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126985
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5
+Operating System(s): 
+Keyword(s): kbOPK kbSBK
+Last Modified: 02-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The command for unattended setup, WINNT /U, does not run as stated on page 99 of
+the "Microsoft Windows NT Resource Kit Volume 1: Windows NT Resource Guide." It
+states that syntax for the command is:
+
+     winnt /u[:answer_file]
+
+-or-
+
+     winnt32 /u[:answer_file]
+
+The WINNT /U switch does not work without the /S:&lt;SOURCE PATH&gt; switch, as
+specified in the SETUPMGR.TXT file provided with the Microsoft Windows NT
+Resource Kit software.
+
+NOTE: WINNT32 /U works as documented in the "Microsoft Windows NT Resource Kit
+Volume 1: Windows NT Resource Guide."
+
+MORE INFORMATION
+================
+
+The following information, taken from the SETUPMGR.TXT file, correctly documents
+the use of the unattended setup command:
+
+     The saved answer files can be executed at the command line
+     in conjunction with the winnt or winnt32 commands. The syntax
+     for the commands is shown below.
+
+     winnt /u:&lt;answer file&gt; /s:&lt;source path&gt;
+
+If you use the WINNT /U command without adding the /S&lt;SOURCE PATH&gt; switch,
+Windows NT command help is displayed, just as it is when you run WINNT with the
+/? switch; it lists all of the documented switches for the WINNT command, but
+does not start Windows NT Setup.
+
+USE OF THE / B SWITCH
+---------------------
+
+The SETUPMGR.TXT file also states, in the following text, that the use of the /B
+switch is optional when you run WINNT; it is not.
+
+     Other winnt and winnt32 switches that make unattended
+     installations go easier are:
+
+        /B    to eliminate the need for the
+              multiple setup floppy disks.
+
+Contrary to this statement, just specifying the /U switch will include the floppy
+diskless setup feature. The functionality of the /B switch is included in the /U
+switch, and therefore does not need to be specified at the command line. The /B
+switch is correctly documented on page 99 of the Microsoft Windows NT Resource
+Kit Volume 1: Windows NT Resource Guide.
+
+Additional query words: prodnt options configuration install disk less OPK Unattended Setup
+
+======================================================================
+Keywords          : kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : winnt:3.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q27489: &quot;Out of String Space,&quot; Dynamic Array of Fixed-Length Strings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q27489: &quot;Out of String Space,&quot; Dynamic Array of Fixed-Length Strings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/027/Q27489/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/027/Q27489/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/027/Q27489/","publisher":null,"image":null,"headline":"Q27489: &quot;Out of String Space,&quot; Dynamic Array of Fixed-Length Strings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q27489-out-of-string-space-dynamic-array-of-fixed-length-strings">Q27489: "Out of String Space," Dynamic Array of Fixed-Length Strings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q27489
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 7-FEB-1989
+
+When running the program below inside the QuickBASIC Version 4.00,
+4.00b, or 4.50 environment, an "Out of String Space" error is
+generated after fewer than 70 iterations of concatenating a variable
+length string onto a fixed-length string array element. However, the
+FRE("") and FRE(-1) functions both return the same value all the way
+through the loop. Note that the fixed-length string array element is
+part of a dynamic array, which puts it in the far heap; therefore, it
+normally does not use up any of the normal string space in the default
+data segment.
+
+The program below demonstrates an internal limitation of the QB.EXE
+interpreter that is rarely encountered. Microsoft currently does not
+plan to change this limitation.
+
+Note that fixed-length strings are not supported by QuickBASIC
+versions earlier than Version 4.00.
+
+As a workaround, please note that the problem only occurs inside the
+QuickBASIC Version 4.00 editor. When compiled to an .EXE file, the
+sample program works properly.
+
+The problem is that QuickBASIC assumes that a far fixed-length string
+will always stay far. The BASIC run-time routines must have the string
+in DGROUP to manipulate it with string functions like LTRIM$ and
+RTRIM$.
+
+LTRIM$ and RTRIM$ require two copies of the string at one point, and
+the program eventually runs out of string space in the default data
+segment, DGROUP. This behavior also occurs in a version of the
+program compiled with BC /O if the strings are made longer. This
+limitation of BASIC is inherent in its construction, and Microsoft
+currently has no plans to change this construction.
+
+The following is a code example:
+
+ REM $DYNAMIC
+ DIM srv(0) AS STRING * 28000
+ abc$ = STRING$(330,"0")
+ srv(0) = abc$
+ FOR t = 1 TO 79
+   srv(0) = RTRIM$(srv(0)) + abc$
+   PRINT t, LEN(RTRIM$(srv(0))), FRE(""), FRE(-1)
+ NEXT T
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

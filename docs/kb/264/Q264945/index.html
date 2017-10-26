@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q264945: SMS: Explanation of Error 38a in the Despooler Log File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q264945: SMS: Explanation of Error 38a in the Despooler Log File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/264/Q264945/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/264/Q264945/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/264/Q264945/","publisher":null,"image":null,"headline":"Q264945: SMS: Explanation of Error 38a in the Despooler Log File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q264945-sms-explanation-of-error-38a-in-the-despooler-log-file">Q264945: SMS: Explanation of Error 38a in the Despooler Log File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q264945
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kberrmsg kbtool kbsms200
+Last Modified: 25-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you try to troubleshoot slowdowns with the Despooler service in Systems
+Management Server (SMS) version 1.2, an error message that is usually present is
+Error 38a. This article explains the error message.
+
+MORE INFORMATION
+================
+
+The Error 38a error message does not represent a problem condition, it is
+actually an informational message to inform the administrator that a Request ID
+was not found in an instruction.
+
+This error message typically occurs when you cancel, delete, or expire a job. The
+error message means that you have reached the end of the file without finding a
+particular Request ID.
+
+For example, you have 9,000 clients in a single domain, 300 of which were sent a
+Microsoft Office package.
+
+When you cancel the Office job, a single cancel instruction is created for the
+domain. Despooler then builds a list of .ins files from the PCMDOM.BOX\Domain
+sub-folder. It then reads each .ins file, and determines if the Request ID you
+are canceling exists in the INS. If it does, it is removed. If not, an error
+message with a 906 (hexadecimal 38a) is generated, potentially causing an 8700
+error message. However, because Despooler was tasked by the single cancel
+instruction, only the first 38a error message is logged.
+
+The process must read through each instruction to determine if you can perform a
+cancel, expire or delete request; this means that the process can be very slow
+for large domains. The only time a perceived problem is apparent, is if a
+Request ID in an instruction is not found. At that point (starting when the
+error condition is written to the log), this process can take a long time to
+complete.
+
+If no error condition exists, the slowdown would still be a factor, but would not
+be apparent, as there wouldn't be an error message in the log.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbtool kbsms200 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

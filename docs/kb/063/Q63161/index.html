@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63161: Overlaid Modules Loaded into EM Only When 1st Overlay Called | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63161: Overlaid Modules Loaded into EM Only When 1st Overlay Called" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63161/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63161/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63161/","publisher":null,"image":null,"headline":"Q63161: Overlaid Modules Loaded into EM Only When 1st Overlay Called","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63161-overlaid-modules-loaded-into-em-only-when-1st-overlay-called">Q63161: Overlaid Modules Loaded into EM Only When 1st Overlay Called</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q63161
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900608-158 | mspl13_basic
+Last Modified: 5-SEP-1990
+
+When using expanded memory with an overlaid program, the overlaid
+modules are not loaded when the EXE file is invoked. They remain on
+disk until the first overlay is called. When this occurs, all the
+overlaid modules are loaded from disk into expanded memory. From then
+on, the overlays are swapped to and from expanded memory and the disk
+is no longer needed for that purpose.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10.
+
+For more information about using linker overlays in BASIC PDS 7.00 and
+7.10, search for a separate article in this Knowledge Base with the
+following words:
+
+   LINK and overlays and expanded and memory and BASIC
+
+To demonstrate this characteristic of BASIC overlays, boot up with an
+Lotus/Intel/Microsoft (LIM) version 4.0 Expanded Memory Specification
+(EMS) device driver and compile and link the three modules below as
+follows:
+
+   bc main;
+   bc overlay1;
+   bc overlay2;
+
+   link main+(overlay1)+(overlay2);
+
+MAIN.BAS
+--------
+
+   '* Note: The disk activity will be most obvious if this test
+   '        is run on a floppy drive.
+   PRINT "MAIN"
+   PRINT "HIT ANY KEY TO LOAD OVERLAYS INTO EMS"
+   SLEEP
+   CALL ovl1
+   PRINT "OVERLAYS LOADED"
+   PRINT "HIT ANY KEY TO CALL SECOND OVERLAY"
+   PRINT "THERE SHOULD BE NO DISK ACTIVITY IF YOU HAVE EMS"
+   SLEEP
+   CALL ovl2
+   PRINT "HIT ANY KEY TO END THE PROGRAM"
+   SLEEP
+   END
+
+OVERLAY1.BAS
+------------
+
+   SUB ovl1
+      PRINT "OVERLAY1"
+   END SUB
+
+OVERLAY2.BAS
+------------
+
+   SUB ovl2
+      PRINT "OVERLAY2"
+   END SUB
+
+When run, the resulting EXE file (MAIN.EXE) produces the following
+output:
+
+   MAIN
+   OVERLAY1
+   OVERLAY2
+
+However, before "OVERLAY1" is displayed, there will be disk activity
+while the code for overlay1 is loaded into the overlay area of
+conventional memory (for execution) and overlay2 is loaded into
+expanded memory. To see this clearly, run MAIN.EXE from a floppy
+drive. When overlay2 is called, there will be no disk activity because
+it will be swapped in from expanded memory.
+
+Note that this is not a problem with BASIC PDS 7.00 or 7.10, but a
+feature of the overlay manager. However, it can present a speed
+problem for applications that rely on the quickness of swapping from
+expanded memory for the first-called overlay. To work around this,
+make the first executable statement in your program a CALL to an
+additional overlay with no code in it. When it is called, all the
+other overlays will be loaded into expanded memory. The functionality
+and speed of the application will remain intact while the difference
+in EXE size and load time will be minimal.
+
+For example, the module MAIN.BAS above would be modified as follows:
+
+   CALL loadovls
+   PRINT "MAIN"
+   CALL ovl1
+   CALL ovl2
+   END
+
+The subprogram "loadovls" (meaning "load overlays") would be coded as
+the following:
+
+   SUB loadovls
+   END SUB
+
+When loadovls is called, the code for overlay1 and overlay2 will be
+loaded into expanded memory. This eliminates the disk activity between
+the display of "MAIN" and "OVERLAY1".
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

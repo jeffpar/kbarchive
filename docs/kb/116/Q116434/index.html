@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q116434: PC Ext: EXTERNAL.INI Equivalents to -Qx Command-Line Options | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q116434: PC Ext: EXTERNAL.INI Equivalents to -Qx Command-Line Options" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/116/Q116434/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/116/Q116434/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/116/Q116434/","publisher":null,"image":null,"headline":"Q116434: PC Ext: EXTERNAL.INI Equivalents to -Qx Command-Line Options","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q116434-pc-ext-externalini-equivalents-to--qx-command-line-options">Q116434: PC Ext: EXTERNAL.INI Equivalents to -Qx Command-Line Options</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q116434
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.2a,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The External Mail program contains undocumented EXTERNAL.INI file entries
+equivalent to the -Qx command-line options.
+
+The following EXTERNAL.INI file entries are meant for advanced developers and
+product support personnel to help them debug programs and troubleshoot problems.
+Because of the technical and cryptic nature of the reports, they can be
+misleading to less technical users. These entries are designed to be used in
+conjunction with the documented LogVerbose and LogSession entries.
+
+The four EXTERNAL.INI file entries are as follows:
+
+DebugMessages
+-------------
+
+This entry is equivalent to the -Q1 command-line option. It reports detailed I/O
+activity when EXTERNAL.EXE is scanning and delivering mail.
+
+DebugXCSI
+---------
+
+This entry is equivalent to the -Q2 command-line option. It reports additional
+information that is useful for troubleshooting modem problems. For more detailed
+information, see Knowledge Base article Q80272.
+
+
+DebugP1
+-------
+
+This entry is equivalent to the -Q3 command-line option. It reports the state of
+the P1 files.
+
+NOTE: The -Q3 option was not available prior to Mail 3.0.
+
+DebugMemoryUsage
+----------------
+
+This entry is equivalent to the -Q4 command-line option. It does not log any
+information into the SESSION.LOG file, but displays memory usage on the
+EXTERNAL.EXE screen. The critical information is the value of the field
+beginning with "F" in the upper-left corner of the screen.
+
+Additional query words: 3.20 3.20a 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350
+Version           : WINDOWS:3.2,3.2a,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

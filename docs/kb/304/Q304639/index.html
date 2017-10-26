@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q304639: HOWTO: Find PaperSize for Custom Print Sizes Under Windows NT/2K | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q304639: HOWTO: Find PaperSize for Custom Print Sizes Under Windows NT/2K" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/304/Q304639/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/304/Q304639/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/304/Q304639/","publisher":null,"image":null,"headline":"Q304639: HOWTO: Find PaperSize for Custom Print Sizes Under Windows NT/2K","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q304639-howto-find-papersize-for-custom-print-sizes-under-windows-nt2k">Q304639: HOWTO: Find PaperSize for Custom Print Sizes Under Windows NT/2K</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q304639
+Product(s): Microsoft FoxPro
+Version(s): 6.0,7.0
+Operating System(s): 
+Keyword(s): kbprint kbAPI kbPrinting kbvfp kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 6.0, 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT 4.0 and Windows 2000 do not respect custom paper sizes as Windows 95
+and later do. The custom paper size is stored in the report header, under
+PaperSize in the EXPR field. Under Windows 95 and later, the PaperSize for
+custom is 256, with PaperLength and PaperWidth controlling the actual size.
+Under Windows NT 4.0 and later, the custom size must correspond to a predefined
+form.
+
+To determine the correct PaperSize to use for a Windows NT 4.0 or Windows 2000
+report, you must use Windows API calls. This article includes code that
+demonstrates how to determine the name and size of the forms that are installed
+on your system.
+
+MORE INFORMATION
+================
+
+In Windows 95, you can select the paper size Custom, and then select the page
+height and width. Under NT-based systems, to print to a custom size, you must
+select a printer form, which specifies the paper size. To view the different
+forms that are available on your system, open the Printers window, and click
+Server Properties on the File menu. You may not be able to directly select all
+of these from Visual FoxPro.
+
+The number of the form is stored in the report header, under PaperSize in the
+EXPR field. To view this, USE the report as a table (USE myReport.frx), BROWSE
+it, and double-click the Memo in the first line of the EXPR field. The default
+PaperSize can also be displayed with the PRTINFO(2) function.
+
+This code requires Christof Lange's STRUCT.VCX class, which can be downloaded at
+various sites on the Internet, including the following:
+
+  Universal Thread
+  http://www.universalthread.com (http://www.universalthread.com/)
+
+  SET PATH TO c:\STRUCT  &amp;&amp; Change this to be wherever you unzipped the class.
+  SET CLASSLIB TO STRUCT.vcx
+
+  CLEAR ALL
+  CLEAR
+
+  *!* Windows API call to list printer forms.
+  DECLARE LONG EnumFormsA IN winspool.drv AS EnumForms ;
+     LONG hPrinter, LONG Level, LONG pForm, ;
+     LONG cbBuf, LONG @pcbNeeded, ;
+     LONG @ pcReturned
+     
+  *!* Windows API call to get a printer handle.
+  DECLARE LONG OpenPrinterA IN winspool.drv AS OpenPrinter ;
+     STRING pPrinterName, LONG @ phPrinter, LONG pDefault
+
+  phPrinter = 0   &amp;&amp; Define printer handle for pass-by-reference
+  *!* You do not pass a specific printer here, because the custom form
+  *!* is defined on the local computer.
+  lnRetVal = OpenPrinter(0, @phPrinter, 0)
+  IF lnRetVal = 0
+     MESSAGEBOX("OpenPrinter failed!")
+     RETURN
+  ENDIF
+
+  *!* Create structure to hold returned printer forms.
+  loForms = CREATEOBJECT("clsPrinterForms")
+
+  *!* Define variables for pass-by-reference.
+  lnFormsPtr = loForms.GetPointer(255)
+  lnBytesNeeded = 0
+  lnFormCount = 0
+
+  *!* lnRetVal will indicate that this next call failed. This is because
+  *!* it was told to return 0-length information.
+  *!* The second call should work properly.
+  lnRetVal = EnumForms(phPrinter, 1, lnFormsPtr, 0, @lnBytesNeeded, ;
+     @lnFormCount)
+  loForms.FreePointer(lnFormsPtr) &amp;&amp; clean up memory
+
+  *!* Get the proper memory size reserved, and call EnumForms.
+  lnFormsPtr = loForms.GetPointer(lnBytesNeeded)
+  lnRetVal = EnumForms(phPrinter, 1, lnFormsPtr, lnBytesNeeded, ;
+     @lnBytesNeeded, @lnFormCount)
+  IF lnRetVal = 0
+     MESSAGEBOX("EnumForms call failed")
+     loForms.FreePointer(lnFormsPtr) &amp;&amp; clean up memory
+     RETURN
+  ENDIF
+
+  *!* When you defined the PrinterForms class, you didn't know how many forms
+  *!* were being returned. Now that you do, you need to redimension the array
+  *!* property to hold the proper number of forms, and get them ready to hold 
+  *!* the form information.
+  DIMENSION loForms.aForms[lnFormCount]
+  FOR i = 1 TO lnFormCount
+     loForms.aForms[i] = CREATEOBJECT("clsFormInfo")
+  ENDFOR
+
+  *!* Take the memory pointer you received, and break it up into the objects you 
+  *!* defined below.
+  loForms.SetPointer(lnFormsPtr)
+
+  loForms.FreePointer(lnFormsPtr) &amp;&amp; clean up memory
+
+  FOR i = 1 TO lnFormCount
+     loForm = loForms.aForms[i]
+     
+     *!* i is what you would see in PaperSize in the Expr field, or in 
+     *!* the PRTINFO() function. The Size.cx and cy values are in 1000ths
+     *!* of a millimeter: there are 25.4 millimeters to an inch.
+     ? i, PADR(loForm.pName, 30), loForm.Size.cx / 25400, loForm.Size.cy / 25400
+  ENDFOR
+
+  RETURN
+
+  *!* The class properties correspond to the members of the structures,
+  *!* and cMembers indicates what type of variables are in the return
+  *!* from the API call. "l:" indicates a long, "o:" indicates 
+  *!* a structure, and "pz:" indicates a pointer to a null-terminated 
+  *!* string.
+  *!* See Struct.vcx documentation for more information about the STRUCT 
+  *!* class and its settings.
+  DEFINE CLASS clsPrinterForms AS STRUCT
+     DIMENSION aForms[1]
+     cMembers = "o:aForms"
+
+     nMemorySize = 100000  &amp;&amp; Reserve memory for pointers
+
+     PROCEDURE INIT
+        This.aForms[1] = CREATEOBJECT("clsFormInfo")
+        DODEFAULT()
+     ENDPROC
+  ENDDEFINE
+
+  DEFINE CLASS clsFormInfo AS STRUCT
+     flags = 0
+     pName = ""      &amp;&amp; form name
+     Size = .NULL.   &amp;&amp; paper size
+     ImageableArea = .NULL.
+
+     cMembers = "l:flags, pz:pName, o:size, o:imageableArea"
+
+     PROCEDURE INIT
+        This.Size  = CREATEOBJECT("clsSizeL")
+        This.ImageableArea = CREATEOBJECT("clsRectL")
+        DODEFAULT()
+     ENDPROC
+  ENDDEFINE
+
+  DEFINE CLASS clsSizeL AS STRUCT
+     cx = 0   &amp;&amp; paper width
+     cy = 0   &amp;&amp; paper height
+
+     cMembers = "l:cx, l:cy"
+  ENDDEFINE
+
+  DEFINE CLASS clsRectL AS STRUCT
+     nLeft = 0
+     nTop = 0
+     nRight = 0
+     nBottom = 0
+
+     cMembers = "l:nLeft, l:nTop, l:nRight, l:nBottom"
+  ENDDEFINE
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+REFERENCES
+==========
+
+For additional information about OpenPrinter and EnumForms, see the Platform
+Software Development Kit (SDK) documentation in the Microsoft Developer Network
+(MSDN) library.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbAPI kbPrinting kbvfp kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600 kbVFP700
+Version           : :6.0,7.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

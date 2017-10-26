@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114452: Terminal Err Msg: Cannot Create Specified File. Make Sure… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114452: Terminal Err Msg: Cannot Create Specified File. Make Sure…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114452/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114452/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114452/","publisher":null,"image":null,"headline":"Q114452: Terminal Err Msg: Cannot Create Specified File. Make Sure…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114452-terminal-err-msg-cannot-create-specified-file-make-sure">Q114452: Terminal Err Msg: Cannot Create Specified File. Make Sure…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114452
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): win31
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+- Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following error when receiving a file using Windows Terminal:
+
+  Cannot create specified file. Make sure that:
+
+  You have enough disk space.
+  The file is not read-only.
+  The filename is valid.
+
+You may receive this error when you are using either the Receive Text File or
+Receive Binary File command on the Transfers menu in Terminal.
+
+CAUSE
+=====
+
+Any of the following conditions can cause this error message:
+
+- There is not enough free disk space for the downloaded file.
+
+- The file to be downloaded is read only.
+
+- The filename is invalid. The filename is not valid if an extension for the
+  filename was not supplied. Any three-character extension is accepted. In
+  versions of Windows earlier than 3.1, an extension was not required.
+
+- The FileAssist feature of Norton Desktop for Windows 3.0 is being used.
+
+RESOLUTION
+==========
+
+Make sure sufficient disk space exists on the destination drive for the file to
+be downloaded. Also, make sure that a valid filename (including an extension) is
+being used for the file to be downloaded and that the file is not marked read
+only.
+
+If you are using Norton Desktop for Windows, disable the FileAssist feature for
+Terminal with the following steps:
+
+1. From the File menu, choose Save As.
+
+2. In the FileAssist File Save As dialog box, choose Config.
+
+3. Clear the "FileAssist Enabled for Terminal" check box.
+
+4. Choose OK. (FileAssist warns you that it will be disabled for Terminal.)
+
+5. Choose Yes to continue.
+
+6. Choose Cancel to close the File Save As dialog box.
+
+FileAssist is disabled for Terminal only after you have closed the dialog box.
+
+NOTE: FileAssist can be re-enabled from Norton Desktop's Control Center
+application. If you need assistance in disabling FileAssist for Terminal or any
+other application, contact Symantec Technical Support.
+
+STATUS
+======
+
+Symantec has confirmed this to be a problem in FileAssist for Norton Desktop for
+Windows. For more information, contact Symantec Technical Support at (541)
+465-8600 or through its CompuServe support forum (type "go symantec" (without
+the quotation marks) at the $ prompt).
+
+MORE INFORMATION
+================
+
+FileAssist is a Common Dialog replacement that adds "on-the-fly" features to the
+Open, Save, and Save As dialog boxes. FileAssist features include View File,
+File Search, Create Directory, Rename File, and Delete File. FileAssist replaces
+the standard common dialog boxes for most Windows 3.1- based applications.
+
+Norton Desktop for Windows (NDW.EXE) must be installed and active as the shell
+for FileAssist to operate. FileAssist contains the following files:
+
+  NDW.EXE
+  FASSIST1.DLL
+  FASSIST.EXE
+
+These files typically reside in the NDW subdirectory on a standard Norton Desktop
+for Windows installation.
+
+The Norton Desktop for Windows products included here are manufactured by
+Symantec Corporation, a vendor independent of Microsoft; we make no warranty,
+implied or otherwise, regarding this products' performance or reliability.
+
+REFERENCES
+==========
+
+Symantec's "The Norton Desktop User's Guide," pages 2-11 through 2-13 and 7-10.
+
+Additional query words: 3.1 3.11 3.10
+
+======================================================================
+Keywords          : win31 
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

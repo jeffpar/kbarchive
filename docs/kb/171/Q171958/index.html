@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171958: ODE97: Tips for Creating and Compiling Your Windows Help File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171958: ODE97: Tips for Creating and Compiling Your Windows Help File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171958/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171958/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171958/","publisher":null,"image":null,"headline":"Q171958: ODE97: Tips for Creating and Compiling Your Windows Help File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171958-ode97-tips-for-creating-and-compiling-your-windows-help-file">Q171958: ODE97: Tips for Creating and Compiling Your Windows Help File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171958
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 01-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SUMMARY
+=======
+
+This article contains helpful hints on how to create and compile your Windows
+Help files using the Windows 4.0 Help Compiler that is included in the Windows
+Help Workshop. It explains the necessary steps, the tools that you will need,
+and some of the problems you may encounter.
+
+MORE INFORMATION
+================
+
+Windows Help files consist of topic files and project files. You can create your
+topic files using a word processor, such as Microsoft Word. You can create your
+project files using Microsoft Help Workshop. The following steps are involved in
+creating your Windows Help file:
+
+1. Creating Your Topic file in a Word processor.
+
+2. Creating Your Project file.
+
+3. Compiling and Viewing Your Windows Help file.
+
+4. Troubleshooting Problems You Encounter Creating Your Windows Help File.
+
+Creating Your Topic file in a Word Processor
+--------------------------------------------
+
+A topic file contains the words and pictures that make up your Help file. It is
+usually divided into logical sections, or topics, that users can search through
+by clicking hot spots, using keyword searches, or browsing through the topics.
+
+NOTE: Microsoft Word 97 produces a Rich Text file that is incompatible with
+Microsoft Help Compiler 4.0. For more information about this problem, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q164012 WD97: Error "The RTF file .\&lt;name&gt; Is Corrupted At Offset..."
+
+The following file takes care of this problem. The following file is available
+for download from the Microsoft Download Center:
+
+  Hcwsetup.exe
+  (http://download.microsoft.com/download/office97dev/helpws97/4.03/WIN98/EN-US/Hcwsetup.exe)
+
+The self-extracting archive file, Hcwsetup.exe, contains the Microsoft Help
+Workshop version 4.03 and instructions for installing this program.
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+When you create your Windows Help file, remember the following helpful hints:
+
+- Before you start, take time to plan what you want to accomplish with your
+  Windows Help file. Determine the topics you want to include and the best
+  place to include them in your application.
+
+- For the sake of simplicity, keep all of the component files for your Windows
+  Help file in the same folder on your hard disk. This will help eliminate
+  problems you may encounter referencing the files when you try to compile or
+  open your Windows Help file.
+
+- Remember to save your topic file in the .rtf format.
+
+- If you are adding pop-up text or jump text in your topic file that will be
+  followed by punctuation, be sure to format the punctuation in the same way
+  that you format the pop-up or jump.
+
+- If you need to save space, add graphics to a topic file by including a bitmap
+  statement.
+
+For more information about creating topic files, please see the topic "Creating
+Topic Files," in the Help Workshop Help Index.
+
+For information about creating context-sensitive help for your application,
+please see the following articles in the Microsoft Knowledge Base:
+
+  Q141621 ACC: How to Create Pop-up Context Sensitive Help (95/97)
+
+  Q90808 HelpContextID Property Accepts Valid Negative Values
+
+For information about errors you may receive invoking a custom help file, please
+see the following article in the Microsoft Knowledge Base:
+
+  Q103179 ADT/ODE: Help Topic Does Not Exist Err Invoking Custom Help File
+
+Creating Your Project File
+--------------------------
+
+After you have successfully created your topic file, you will need to create a
+project file. Project files contain information about the location of your topic
+and graphic files. They also contain settings that customize the way your Help
+file looks and functions. You can use the Help Workshop to compile your project
+file.
+
+For information about using the Help Workshop for compiling your project file,
+please see the topic "Creating a Project File" in the Help Workshop Help Index.
+
+NOTE: If you use the Training cards on the Help Menu for assistance in creating a
+project in the Help Workshop, when you get to the last card, the Close button
+will not dismiss the Final Training card. You must manually close the card by
+click the Close button in the upper-right corner of the window or by pressing
+ALT+F4 on the keyboard.
+
+Compiling and Viewing Your Windows Help File
+--------------------------------------------
+
+Once you have created your project file, you can compile and view your Help file
+in Help Workshop. To compile your Help file, follow these steps:
+
+1. On the File menu, click Compile.
+
+2. In the "Compile a Help File" dialog box, select your project file in the
+  Project File list box. If your project file does not appear in this list box,
+  click the Browse button to search for it.
+
+3. When your project file is displayed in the Project File list box, click
+  Compile.
+
+4. If Help Workshop reports any errors while compiling the topic file, you will
+  need to check your topic file and project file for errors. Help Workshop
+  stores error messages in the MyHelp.err file. When your Windows Help file
+  compiles without errors, it is ready to be distributed with your application.
+
+Troubleshooting Problems You Encounter Creating Your Windows Help File
+----------------------------------------------------------------------
+
+The following section describes problems you may encounter while creating and
+compiling your Windows Help file and offers suggestions on how to solve them.
+
+- Your Help file does not reflect the change you made in a topic file.
+
+  You did not save your topic file before compiling. Save your topic file and
+  compile again.
+
+- There are other Help files on your computer with the same name.
+
+  Check for duplicate versions of your Help file in different folders or
+  directories on your computer. Delete or rename all duplicates.
+
+- Bulleted and numbered lists do not look right on screen.
+
+  If you are using Microsoft Word to create your topic file, use the Bullets or
+  Numbering buttons on the Formatting toolbar. If you are using another word
+  processing program, you should check that application's documentation for
+  instructions about creating bulleted or numbered lists.
+
+  If you want to create lists with hanging indents, but do not want to use your
+  word processing program's commands for automatically creating them, you must
+  set a tab stop on the first line, even with the hanging indent. Otherwise the
+  first line will not tab correctly between the bullet or number and the text.
+
+- Characters in Help appear different than in your topic file.
+
+  You may be using a font in your topic file that is not available on the
+  computer you are using to view the Windows Help file. WinhHelp will
+  substitute the font with a Windows 95 font if your font is not on the
+  computer. To ensure that the characters match on screen and in the topic
+  file, follow these steps:
+
+  a. Use only fonts supplied with Windows 95.
+
+     Windows 95 automatically installs the following TrueType fonts:
+
+      - Arial
+      - Times New Roman
+      - Courier
+      - Symbol
+      - Wingdings
+
+     Windows 95 automatically installs the following Raster fonts:
+
+      - MS Serif
+      - System
+      - MS Sans Serif
+      - Terminal
+      - Courier
+
+  b. Create a bitmap representation of characters that are not supported by the
+     Windows 95 font character sets, and insert the bitmap(s) in your topic.
+
+  c. Install the necessary fonts with your Windows Help file.
+
+     WARNING: Fonts are legally protected by trademarks, patents, and
+     copyrights. You must obtain the necessary legal rights from the font
+     developer before distributing fonts.
+
+- The punctuation mark immediately follows a hot spot.
+
+  Make the punctuation part of the hot spot. Place the punctuation mark after
+  the hot-spot text and before the instructions.
+
+- The punctuation mark is in a line of text.
+
+  Rewrite the line to lengthen or shorten the sentence or phrase when this
+  occurs. If this occurs frequently in your Windows Help file, you should
+  increase the width of the window in Help Workshop. However, be aware that
+  this might not eliminate all of the breaks, and in some cases, it might
+  introduce new ones at different places in the Windows Help file.
+
+- A paragraph in your Help file will not wrap.
+
+  This will happen if you have text in a table in your topic file. Text in a
+  table is designed not to wrap when the window is narrower than the width of
+  the table. If you want to leave the text in a table, try one of the following
+  methods:
+
+   - Adjust the window size in the project file by using Help Workshop.
+
+   - Adjust the width of the table in the topic file, so that it fits within
+     the window.
+
+  This behavior will also occur if you have the Keep Lines Together feature set
+  in Microsoft Word.
+
+  If you are using this feature in Microsoft Word you should turn it off by
+  doing as follows:
+
+  1. Place the insertion point in the paragraph.
+
+  2. On the Format menu, click Paragraph.
+
+  3. On the Lines and Page Breaks tab, clear the Keep Lines Together check box.
+
+- Text appears over the graphic instead of below or beside it.
+
+  The text and graphics are in a line of text. If your graphic is taller than
+  the line spacing for the line of text it is in, then the text might wrap
+  around to the next line over the graphic. To work around this behavior, in
+  your topic file, increase the line spacing for the paragraph containing the
+  graphic until the entire graphic is showing, or decrease the height of the
+  graphic.
+
+- Both text and graphics are in the same table.
+
+  This can be caused by having a background bitmap in your topic file.
+  Background bitmaps are graphics you place in a topic file to appear behind
+  the text. If the graphics take up more space than they should they will spill
+  over into the space reserved for the text. To fix this problem you can
+  increase the width of the table column that contains the graphic.
+
+- Graphics in the text interfere with line spacing.
+
+  This can be caused by graphics that are much taller than the line spacing of
+  the text they are in. To ensure that your graphics do not interfere with line
+  spacing, do one of the following:
+
+   - Use a graphics program to decrease the height of the graphic to the same
+     height as the line spacing.
+
+   - Place the graphic on the first line of text in a paragraph if there is
+     more space between the paragraphs than between the sentences.
+
+   - Remove the graphic from the line of text and place it in its own
+     paragraph.
+
+- The top of the graphic is cut off.
+
+  This can be caused by your graphic being taller than your line spacing and the
+  height of the line spacing being locked by your topic file. This can be
+  corrected in your word processor by increasing the line spacing for the
+  paragraph containing the graphic until the entire graphic is showing.
+
+- Colors in a graphic do not look like the original.
+
+  This can be caused by the screen resolution on the computer you are installing
+  your Help file on not matching the screen resolution of the computer on which
+  the Help file was created. To accommodate different color depths on different
+  computers, create a separate version of each bitmap for each color depth, and
+  then specify each version in a bitmap statement. For more information about
+  doing this, see Microsoft Windows 95 Help Authoring Kit, Chapter 6, "Working
+  with Text, Graphics, and Video."
+
+- A bitmap statement appears in your Windows Help file instead of a graphic.
+
+  This will happen in any of the following situations:
+
+   - The bitmap does not exist.
+
+   - The bitmap is not in the folder specified by the project file.
+
+   - The bitmap name is misspelled.
+
+  To correct this problem, do the following:
+
+  1. Open the project file, and then click Bitmaps.
+
+  2. Make sure the correct folders for the bitmap locations are specified in
+     the project file.
+
+  3. Check the bitmap locations in Windows Explorer or My Computer.
+
+  4. Check the spelling for the bitmap file name.
+
+  5. Check the syntax for the bitmap statement. One or both of the braces ({})
+     might be missing, or parentheses (()) or square brackets ([]) were used
+     instead of curly braces.
+
+For more information about troubleshooting tips, see "Microsoft Windows 95 Help
+Authoring Kit", Chapter 14, "Troubleshooting," pages 241-269.
+
+For more information about error messages that you receive in Help Workshop,
+search the Help Index for "error numbers, Winhelp."
+
+For more information about using the Windows Help compiler, please see the
+following articles in the Microsoft Knowledge Base:
+
+  Q74937 Authoring Windows Help Files for Performance
+
+  Q77841 PRB: Vertical Scroll Bars Missing from Windows Help
+
+  Q83020 Semicolons Cannot Separate Macros in .HPJ File
+
+  Q85490 PRB: Number Causes Help Compiler Invalid Context ID Error
+
+  Q110540 PRB: Quotation Marks Missing from Compiled Help File
+
+  Q93395 Using the FORCEFONT .HPJ Option
+
+  Q90291 Using Graphics Within a Help File
+
+
+For additional information about creating Windows Help files, please see the
+Microsoft Press book, "Microsoft Access 97 Developer's Handbook," Appendix B,
+"Creating Windows Help Files," pages 563-569.
+
+Additional query words: 4 0
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Version           : WINDOWS:97
+Hardware          : x86
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

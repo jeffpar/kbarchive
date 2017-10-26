@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66738: PRB: Unpredictable Results When &gt;1 va_arg() in Parameter List | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66738: PRB: Unpredictable Results When &gt;1 va_arg() in Parameter List" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66738/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66738/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66738/","publisher":null,"image":null,"headline":"Q66738: PRB: Unpredictable Results When &gt;1 va_arg() in Parameter List","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66738-prb-unpredictable-results-when-1-va_arg-in-parameter-list">Q66738: PRB: Unpredictable Results When &gt;1 va_arg() in Parameter List</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66738
+Product(s): Microsoft C Compiler
+Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCRT kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbDSuppor
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), used with:
+   - Microsoft C for MS-DOS 
+   - Microsoft C/C++ for MS-DOS 
+   - Microsoft C for OS/2 
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the va_arg() macro is used more than once in a function parameter list, an
+application produces different results depending on the version of the C
+compiler used to build the application.
+
+CAUSE
+=====
+
+The C standard does not precisely define expression evaluation order. In many
+cases, the compiler implementation determines the order in which an application
+evaluates expressions.
+
+RESOLUTION
+==========
+
+To preserve the original order of the arguments, use the va_arg() macro only
+once in a given expression. One method is to evaluate the expression in a loop
+that processes each variable argument and stops when the last parameter is
+reached.
+
+MORE INFORMATION
+================
+
+The va_arg() macro provides a method to access the arguments of a function when
+the function can accept a variable number of arguments. The macro returns a
+variable parameter by incrementing the value of the arg_ptr that points to the
+list of arguments. The values returned depend on the order in which the
+application evaluates the va_arg() macros.
+
+However, because the C language does not guarantee the order in which most
+expressions are evaluated, application code should not depend on a particular
+evaluation order. The sample code below demonstrates this behavior and the
+unwanted side effects that can occur when code that depends on evaluation order
+is compiled with different versions of the same compiler.
+
+Sample Code #1
+--------------
+
+  #include &lt;stdio.h&gt;
+  #include &lt;stdarg.h&gt;
+
+  void myfunc(int, ...);
+
+  void main(void)
+  {
+     myfunc(1, 2, 3, 4);
+  }
+
+  void myfunc(int first, ...)
+  {
+     va_list arg_ptr;
+     va_start(arg_ptr, first);
+
+     printf("%d %d %d %d\n", first, va_arg(arg_ptr, int),
+                                    va_arg(arg_ptr, int),
+                                    va_arg(arg_ptr, int));
+  }
+
+When this sample is compiled with C version 5.1 or C/C++ version 8.0 for MS- DOS,
+the sample produces the following output:
+
+  1 4 3 2
+
+However, when this sample is compiled with Microsoft C versions 6.0, 6.0a, 6.0ax,
+Microsoft C/C++ version 7.0, or Microsoft Visual C++ 32-bit Edition, versions
+1.0 through 4.2, the sample produces the following output:
+
+  1 4 4 4
+
+In Microsoft Visual C++ versions 5.0 and 6.0, the output is the same as C 5.1 and
+C/C++ 8.0.
+
+In the following sample code, the expressions are evaluated correctly without
+regard to the expression evaluation order.
+
+Sample Code #2
+--------------
+
+  #include &lt;stdio.h&gt;
+  #include &lt;stdarg.h&gt;
+
+  void myfunc(int, ...);
+
+  void main(void)
+  {
+     myfunc(1, 2, 3, 4, -1);     /* -1 is a flag */ 
+  }
+
+  void myfunc(int first, ...)
+  {
+     int temp;
+     va_list arg_ptr;
+     va_start(arg_ptr, first);
+
+     temp = first;
+     while(temp != -1)        /* test for flag (-1) */ 
+     {
+        printf("%d ", temp);
+        temp = va_arg(arg_ptr, int);
+     }
+  }
+
+The output is as follows:
+
+   1 2 3 4
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbVC100 kbVC150 kbVC200 kbVC210 kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : :1.0,1.5,2.0,2.1,4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

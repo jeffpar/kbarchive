@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q126301: FIX: CMDIFrameWnd Caption Not Updated When Child Closed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q126301: FIX: CMDIFrameWnd Caption Not Updated When Child Closed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/126/Q126301/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/126/Q126301/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/126/Q126301/","publisher":null,"image":null,"headline":"Q126301: FIX: CMDIFrameWnd Caption Not Updated When Child Closed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q126301-fix-cmdiframewnd-caption-not-updated-when-child-closed">Q126301: FIX: CMDIFrameWnd Caption Not Updated When Child Closed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q126301
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbprogramming kbDocView kbMDI KbUIDesign kbVC100bug kbVC150bug kbVC200bug kbVC210fix kb
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, versions 1.5, 1.51 
+   - Microsoft Visual C++ 32-bit Edition, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Closing a maximized MDI child window will not update the main frame window
+caption if the frame window is narrower than the menu bar (menu has wrapped to
+the second line). This causes the main frame window to show a document name even
+if no documents are open.
+
+CAUSE
+=====
+
+If the main frame window is narrower than the menu, CMDIChildWnd::OnSize() is
+called twice, which calls GetMDIFrame()-&gt;OnUpdateFrameTitle(TRUE) to update
+the frame window caption. The last time OnUpdateFrameTitle(TRUE) is called, it
+updates the frame window caption with the previous document name, even though
+the document is closed.
+
+RESOLUTION
+==========
+
+Override CMDIChildWnd::DestroyWindow() to turn off FWS_ADDTOTITLE for the main
+frame window during the destroy window call for maximized child windows. Follow
+these steps:
+
+1. Derive a new MDI child window class from CMDIChildWnd, perhaps by using Class
+  Wizard.
+
+2. For the new class, override the DestroyWindow() function by using the
+  following source code:
+
+    BOOL CMyMDIChildWnd::DestroyWindow()
+      {
+      // Turn off the FWS_ADDTOTITLE style for the main frame window
+      // if it is a maximized main frame window.
+      BOOL bMaximized = (GetStyle() &amp; WS_MAXIMIZE);
+      CMDIFrameWnd* pFrameWnd = GetMDIFrame();
+      DWORD dwStyle;
+      if (bMaximized)
+          {
+          dwStyle = ::SetWindowLong(pFrameWnd-&gt;m_hWnd, GWL_STYLE,
+              pFrameWnd-&gt;GetStyle() &amp; ~FWS_ADDTOTITLE);
+          }
+
+      // Go ahead and destroy and MDI child window.
+      BOOL bResult = CMDIChildWnd::DestroyWindow();
+
+      // Restore the default window style for the main frame window.
+      if (bMaximized)
+          {
+          ::SetWindowLong(pFrameWnd-&gt;m_hWnd, GWL_STYLE, dwStyle);
+          }
+
+      return bResult;
+     }
+
+3. In the project .CPP file, be sure to use the newly derived MDI child window
+  class to replace CMDIChildWnd in the CMultiDocTemplate() statement, as in
+  this example:
+
+      #include "mdichild.h"          // header file for CMyMDIChildWnd
+
+     BOOL CMyWinApp::InitInstance()
+      {
+      ...
+      CMultiDocTemplate* pDocTemplate;
+      pDocTemplate = new CMultiDocTemplate(
+          IDR_PROJECTTYPE,
+          RUNTIME_CLASS(CMyDocument),
+          RUNTIME_CLASS(CMyMDIChildWnd),     // use it here!!!
+          RUNTIME_CLASS(CMyView));
+
+      AddDocTemplate(pDocTemplate);
+      ...
+     }
+
+Here PROJECT is the project name, CMyDocument is the CDocument class,
+CMyMDIChildWnd is the CMDIChildWnd class, and CMyView is the CView class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 2.10
+for Windows NT.
+
+MORE INFORMATION
+================
+
+When the child window is maximized and the main frame window is wider than the
+menu, the CMDIChildWnd::OnSize() function does not get called when the child
+window is closed. However, when the frame window is narrower than the menu,
+CMDIChildWnd::OnSize() gets called twice when the child window is closed, first
+with SIZE_MAXIMIZED and then with SIZE_RESTORED.
+
+CMDIChildWnd::OnSize() calls GetMDIFrame()-&gt;OnUpdateFrameTitle(TRUE). The
+first time CMDIChildWnd::OnSize() is called (with SIZE_MAXIMIZED),
+OnUpdateFrameTitle() updates the frame window's caption correctly, but
+redundantly. The second time MDIChildWnd::OnSize() is called (with
+SIZE_RESTORED), OnUpdateFrameTitle() decides there is a current document because
+its call to GetActiveDocument() returned a valid pointer and it updates the
+frame window's caption with the document name.
+
+This bug can be seen in the MFC sample "MULTIPAD" included with Visual C++.
+
+Additional query words: 1.50 1.51 1.00 2.00 2.50 2.51 2.10 3.00
+
+======================================================================
+Keywords          : kbprogramming kbDocView kbMDI KbUIDesign kbVC100bug kbVC150bug kbVC200bug kbVC210fix kbGrpDSMFCATL kbNoUpdate kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

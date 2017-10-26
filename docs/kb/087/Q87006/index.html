@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87006: BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87006: BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87006/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87006/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87006/","publisher":null,"image":null,"headline":"Q87006: BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87006-bug-dictionary-receives-no-dirq_symbolgraph-message">Q87006: BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87006
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 18-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an application developed for Microsoft Windows for Pen Computing, the
+dictionary function does not receive a DIRQ_SYMBOLGRAPH message for a given
+recognition session.
+
+CAUSE
+=====
+
+Windows for Pen Computing detected an unrecognized symbol in the symbol graph.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows for Pen Computing version
+1.0. We are researching this problem and will post new information here as it
+becomes available.
+
+MORE INFORMATION
+================
+
+In the Windows for Pen Computing environment, a dictionary can be designed to
+process the DIRQ_SYMBOLGRAPH message. If an application specifies the
+RCO_SUGGEST flag in the lRcOption member of the recognition context (RC) data
+structure, Windows for Pen Computing sends this message to a dictionary before
+any other message. If an application also specifies the RCO_NOSPACEBREAK flag,
+the system sends the complete symbol graph to the dictionary. Unfortunately,
+Windows for Pen Computing scans the symbol graph for any SYV_UNKNOWN symbols
+before the system sends the DIRQ_SYMBOLGRAPH message to the dictionary. If the
+symbol graph contains a SYV_UNKNOWN symbol, no DIRQ_SYMBOLGRAPH message is sent.
+
+Additional query words: buglist1.00 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

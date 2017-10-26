@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156031: PRB: Ordinal Not Found When Starting VFP or Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156031: PRB: Ordinal Not Found When Starting VFP or Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156031/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156031/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156031/","publisher":null,"image":null,"headline":"Q156031: PRB: Ordinal Not Found When Starting VFP or Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156031-prb-ordinal-not-found-when-starting-vfp-or-application">Q156031: PRB: Ordinal Not Found When Starting VFP or Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156031
+Product(s): Microsoft FoxPro
+Version(s): 5.00
+Operating System(s): 
+Keyword(s): kbenv
+Last Modified: 09-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using Visual FoxPro 5.0 or Visual FoxPro 5.0 applications on Windows
+NT version 3.51, you might see the following message:
+
+  VFP.EXE - Ordinal Not Found The ordinal 419 could not be located in the
+  dynamic-link library file, Oleaut32.dll.
+
+
+This message can occur if you are doing one of the following:
+
+- Attempting to run Visual FoxPro before restarting the computer as directed
+  after installing the full version of Visual FoxPro.
+
+- Attempting to run a Visual FoxPro application created with the Setup Wizard
+  before restarting the computer as directed after installing the application.
+
+- Attempting to run Visual FoxPro or a Visual FoxPro application after
+  installing a Windows NT 3.51 Service Pack.
+
+CAUSE
+=====
+
+The message appears if you are using an outdated version of the Oleaut32.dll
+file.
+
+WORKAROUND
+==========
+
+In the situations described by the first two items above, restarting the
+computer corrects the problem. The proper version of the Oleaut32.dll file is
+present, but is not loaded until NT 3.51 has been restarted.
+
+In the situation described in the third item above, the NT 3.51 Service Pack
+installation program has overwritten the Oleaut32.dll file with an earlier
+version. To remedy this problem, you must uninstall and then reinstall Visual
+FoxPro or the Visual FoxPro application in order to restore the proper version
+of the Oleaut32.dll file.
+
+Alternately, you can update the version of the Oleaut32.dll file in the Service
+Pack to the version included with Visual FoxPro and then reinstall the Service
+Pack, as described below.
+
+Updating the Service Pack Version of the Oleaut32.dll File
+----------------------------------------------------------
+
+The following procedure was tested with Windows NT 3.51 and Service Pack 4, and
+it allows Visual FoxPro to start without error. This information is supplied as
+a possible alternative to reinstallation of Visual FoxPro or the distributed
+application.
+
+CAUTION: This procedure is not supported. Use it at your own risk and only after
+backing up all relevant files.
+
+1. In the Windows NT Service Pack directory (the directory that contains the
+  Update.exe file), rename the Oleaut32.dll file to Oleaut32.old.
+
+2. From the Os\system folder on the Visual FoxPro CD, copy the Oleaut32.dll file
+  to the Service Pack folder.
+
+3. Reinstall the Service Pack by running the Update.exe file.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install Visual FoxPro or a Visual FoxPro application on a computer running
+  Windows NT 3.51.
+
+2. Attempt to start Visual FoxPro or the application. The message described in
+  the SYMPTOMS section above occurs.
+
+-or-
+
+1. Install a Windows NT 3.51 Service Pack on a computer with Visual FoxPro or a
+  Visual FoxPro application installed.
+
+2. Attempt to start Visual FoxPro or the application. The message described in
+  the SYMPTOMS section occurs.
+
+REFERENCES
+==========
+
+Readme.hlp, Visual FoxPro for Windows, version 5
+
+Additional query words: kbdse VFoxWin
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : 5.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

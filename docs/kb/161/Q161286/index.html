@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161286: HOWTO: Use a Common Dialog File Open Dialog with Win32 API | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161286: HOWTO: Use a Common Dialog File Open Dialog with Win32 API" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161286/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161286/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161286/","publisher":null,"image":null,"headline":"Q161286: HOWTO: Use a Common Dialog File Open Dialog with Win32 API","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161286-howto-use-a-common-dialog-file-open-dialog-with-win32-api">Q161286: HOWTO: Use a Common Dialog File Open Dialog with Win32 API</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161286
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 21-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a code sample and demonstrates how to use the File Open
+dialog box in the Comdlg32.dll. Making use of Comdlg32.OCX is a good reuse of
+resources under Windows, because Windows always has its dependent file,
+Comdlg32.dll, loaded. It provides an easy-to-use interface, but can be a
+performance hit. If you use the OCX control, you have to load the module into
+memory and also distribute a 90K OCX control to users of your software. To
+improve performance, you should minimize the use of controls in your
+applications. Instead, you can use the Win32 API calls directly.
+
+If you use the API calls, you may lose some of the functionality that
+Comdlg32.OCX offers, such as the Help button. If you require the Help button,
+you will need to use the Comdlg32.OCX control.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Start Visual Basic 5.0 and select Standard EXE. If Visual Basic 5.0 is
+  already running, click New Project on the File menu and select Standard EXE.
+  Form1 is created by default.
+
+2. Place a CommandButton on Form1.
+
+3. Add the following code to the Form1 code window:
+
+        Option Explicit
+
+         Private Declare Function GetOpenFileName Lib "comdlg32.dll" Alias _
+           "GetOpenFileNameA" (pOpenfilename As OPENFILENAME) As Long
+
+         Private Type OPENFILENAME
+           lStructSize As Long
+           hwndOwner As Long
+           hInstance As Long
+           lpstrFilter As String
+           lpstrCustomFilter As String
+           nMaxCustFilter As Long
+           nFilterIndex As Long
+           lpstrFile As String
+           nMaxFile As Long
+           lpstrFileTitle As String
+           nMaxFileTitle As Long
+           lpstrInitialDir As String
+           lpstrTitle As String
+           flags As Long
+           nFileOffset As Integer
+           nFileExtension As Integer
+           lpstrDefExt As String
+           lCustData As Long
+           lpfnHook As Long
+           lpTemplateName As String
+         End Type
+
+         Private Sub Command1_Click()
+           Dim OpenFile As OPENFILENAME
+           Dim lReturn As Long
+           Dim sFilter As String
+           OpenFile.lStructSize = Len(OpenFile)
+           OpenFile.hwndOwner = Form1.hWnd
+           OpenFile.hInstance = App.hInstance
+           sFilter = "Batch Files (*.bat)" &amp; Chr(0) &amp; "*.BAT" &amp; Chr(0)
+           OpenFile.lpstrFilter = sFilter
+           OpenFile.nFilterIndex = 1
+           OpenFile.lpstrFile = String(257, 0)
+           OpenFile.nMaxFile = Len(OpenFile.lpstrFile) - 1
+           OpenFile.lpstrFileTitle = OpenFile.lpstrFile
+           OpenFile.nMaxFileTitle = OpenFile.nMaxFile
+           OpenFile.lpstrInitialDir = "C:\"
+           OpenFile.lpstrTitle = "Use the Comdlg API not the OCX"
+           OpenFile.flags = 0
+           lReturn = GetOpenFileName(OpenFile)
+           If lReturn = 0 Then
+              MsgBox "The User pressed the Cancel Button"
+           Else
+              MsgBox "The user Chose " &amp; Trim(OpenFile.lpstrFile)
+           End If
+         End Sub
+
+4. Press the F5 key to run the project, and click the CommandButton. You should
+  see the File Open dialog box appear with the options set.
+
+REFERENCES
+==========
+
+The Win32 SDK documents other calls to the Comdlg32.dll such as ChooseColor,
+ChooseFont, and GetSaveFileName.
+
+For more information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q106682 : Default Extension Ignores File Type in VB Common Dialog
+
+  Q137194 : GetOpenFileName nMaxFile Interpreted Incorrectly
+
+Additional query words: kbVBp400 kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbintluk KBCONTROL KBWIN32SDK KBAPI
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

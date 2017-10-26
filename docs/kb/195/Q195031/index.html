@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195031: HOWTO: Adding Splitter Bars Support to Active Document Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195031: HOWTO: Adding Splitter Bars Support to Active Document Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195031/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195031/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195031/","publisher":null,"image":null,"headline":"Q195031: HOWTO: Adding Splitter Bars Support to Active Document Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195031-howto-adding-splitter-bars-support-to-active-document-server">Q195031: HOWTO: Adding Splitter Bars Support to Active Document Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195031
+Product(s): Microsoft C Compiler
+Version(s): winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbole kbActiveDocs kbActiveX kbCOMt kbLocalSvr kbMFC kbVC500 kbVC600 kbDSupport kbGrpDS
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+An Active Document Server (or DocObject Server) that has a splitter window
+(CSplitterWnd class) as its view will have splitter bars show up fine when it is
+running as a stand alone application. However, the splitter bars won't show up
+when it is embedded in an Active Document Container such as Internet Explorer or
+Microsoft Binder. This article presents a way to show the splitter bars in those
+containers.
+
+MORE INFORMATION
+================
+
+The BINDSCRB sample illustrates an example of building an Active Document
+Server. The code below is added to BINDSCRB for the splitter bars support.
+
+Steps to be taken:
+------------------
+
+1. Copy BINSCRB sample from Visual C++ CD-ROM.
+
+2. Override CreateInPlaceFrame() in CScribDoc class (a COleServerDoc- derived
+  class). This function is called to create a frame window for in- place
+  editing. The function is modified so it uses a splitter window (CSplitterWnd
+  class) as the view of the in-place frame window (a COleDocIPFrameWnd-derived
+  class).
+
+        COleIPFrameWnd* CScribDoc::CreateInPlaceFrame(CWnd* pParentWnd)
+        {
+           ASSERT_VALID(this);
+           ASSERT_VALID(pParentWnd);
+     
+           // Get run-time class from the doc template.
+           CDocTemplate* pTemplate = GetDocTemplate();
+           ASSERT_VALID(pTemplate);
+     
+           // Use existing view if possible.
+           CView* pView = NULL;
+           CFrameWnd* pFrame = GetFirstFrame();
+           if (pFrame != NULL)
+           {
+              pView =
+                 (CView*)pFrame-&gt;GetDescendantWindow(AFX_IDW_PANE_FIRST,
+     TRUE);
+              if (pView != NULL)
+              {
+                 ASSERT_KINDOF(CView, pView);
+                 m_dwOrigStyle = pView-&gt;GetStyle();
+                 m_dwOrigStyleEx = pView-&gt;GetExStyle();
+              }
+           }
+     
+           // Create the frame from the template, ALWAYS use the CView of the
+           // CSplitterWnd.
+           COleIPFrameWnd* pFrameWnd = (COleIPFrameWnd*)
+              pTemplate-&gt;CreateOleFrame(pParentWnd, this, FALSE);
+           if (pFrameWnd == NULL)
+              return NULL;
+     
+           // Connect the splitter window (CSplitterWnd class) to the
+           // COleDocIPFrameWnd.
+           CWnd* split = pFrame-&gt;GetWindow(GW_CHILD);
+           VERIFY(pFrame == split-&gt;SetParent(pFrameWnd));
+     
+           // Remember the original parent window for deactivate--uses the
+           // CFrameWnd-derived class (that is, CMDIChildWnd for MDI).
+           m_pOrigParent = pFrame;
+     
+           // Set the active view of COleDocIPFrameWnd.
+           pFrameWnd-&gt;SetActiveView(pView, FALSE);
+           pFrameWnd-&gt;RecalcLayout();
+           pView-&gt;ModifyStyleEx(WS_EX_CLIENTEDGE, 0, SWP_DRAWFRAME);
+     
+           // Verify the type.
+           ASSERT_VALID(pFrameWnd);
+           ASSERT_KINDOF(COleIPFrameWnd, pFrameWnd);
+           return pFrameWnd;
+        }
+
+3. Override DestroyInPlaceFrame() in CScribDoc class (a COleServerDoc- derived
+  class) to destroy the in-place frame window and return the server
+  application's document window to its state before in-place activation.
+
+        void CScribDoc::DestroyInPlaceFrame(COleIPFrameWnd* pFrameWnd)
+        {
+           ASSERT_VALID(this);
+           ASSERT_VALID(pFrameWnd);
+     
+           // connect view to original, if existing view was used
+           if (m_pOrigParent != NULL)
+           {
+              CView* pView = (CView*)pFrameWnd-&gt;GetDescendantWindow(
+     AFX_IDW_PANE_FIRST, TRUE);
+              ASSERT_VALID(pView);
+     
+              // Leaving the focus on an MDI child or one of its child
+              // windows causes Windows to get confused when the child window
+              // is destroyed, not to mention the fact that the focus will be
+              // out of sync with activation.
+              if (::GetFocus() == pView-&gt;m_hWnd)
+              {
+                 // Move focus to somewhere safe.
+                 HWND hWnd = ::GetParent(pFrameWnd-&gt;m_hWnd);
+                 if (hWnd != NULL)
+                    ::SetFocus(hWnd);
+     
+                 // Check again.
+                 if (::GetFocus() == pView-&gt;m_hWnd)
+                    SetFocus(NULL); // last ditch effort
+              }
+     
+              // Set parent of the splitter window (CSplitterWnd class) to be
+              // the CFrameWnd-derived class (that is, CMDIChildWnd for MDI
+              // application).
+              ASSERT_KINDOF(CFrameWnd, m_pOrigParent);
+              CFrameWnd* frame = (CFrameWnd*) m_pOrigParent;
+              CWnd* split = pFrameWnd-&gt;GetWindow(GW_CHILD);
+              VERIFY(pFrameWnd == split-&gt;SetParent(frame));
+     
+              // Set the active view of CFrameWnd-derived class (that is,
+              // CMDIChildWnd for MDI application).
+              frame-&gt;SetActiveView(pView, FALSE);
+              frame-&gt;RecalcLayout();
+     
+              m_pOrigParent = NULL;
+     
+              // Remove any scrollbars added because of in-place activation.
+              if ((m_dwOrigStyle &amp; (WS_HSCROLL|WS_VSCROLL)) == 0 &amp;&amp;
+                 (pView-&gt;GetStyle() &amp; (WS_HSCROLL|WS_VSCROLL)) != 0)
+              {
+                 ::SetScrollRange(pView-&gt;m_hWnd, SB_HORZ, 0, 0, TRUE);
+                 ::SetScrollRange(pView-&gt;m_hWnd, SB_VERT, 0, 0, TRUE);
+              }
+     
+              // Restore old 3D style.
+              pView-&gt;ModifyStyleEx(0, m_dwOrigStyleEx &amp; WS_EX_CLIENTEDGE,
+                 SWP_DRAWFRAME);
+     
+              // Force recalc layout on splitter window.
+              CSplitterWnd* pSplitter = CView::GetParentSplitter(pView,
+                 TRUE);
+              if (pSplitter != NULL)
+                 pSplitter-&gt;RecalcLayout();
+           }
+     
+           // No active view or document during destroy.
+           pFrameWnd-&gt;SetActiveView(NULL);
+     
+           // Destroy in-place frame window.
+           pFrameWnd-&gt;DestroyWindow();
+        }
+
+REFERENCES
+==========
+
+References from Visual C++ online documentation:
+
+  TN029: Splitter Windows
+  BINDSCRB: Illustrates an MFC Binder-Compatible Server
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Yeong- Kah
+Tam, Microsoft Corporation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbActiveDocs kbActiveX kbCOMt kbLocalSvr kbMFC kbVC500 kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

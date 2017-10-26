@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274480: XADM: Duplicate Object Created When Replicating Objects from Exc | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274480: XADM: Duplicate Object Created When Replicating Objects from Exc" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274480/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274480/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274480/","publisher":null,"image":null,"headline":"Q274480: XADM: Duplicate Object Created When Replicating Objects from Exc","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274480-xadm-duplicate-object-created-when-replicating-objects-from-exc">Q274480: XADM: Duplicate Object Created When Replicating Objects from Exc</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274480
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5, used with:
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When changes are replicated from Exchange Server 5.5 directory objects to
+Windows 2000 Active Directory across the Active Directory Connector (ADC), the
+replication may create new objects instead of modifying the existing Active
+Directory account that is associated with the mailbox.
+
+You may find the following information in the Ex55-2failed.ldf file:
+
+  ADC could not replicate the msExchMasterAccountSid to CN=Winks\,
+  Hank,CN=Users,DC=ACP-INC,DC=LOCAL because this sid is already on the object
+  CN=Hank Winks,OU=ACP,DC=ACP-INC,DC=LOCAL. (Connection Agreement
+  'Exchange/Windows CA MLC 9-11-00' #2200) For more information, click
+  http://www.microsoft.com/contentredirect.asp.
+
+CAUSE
+=====
+
+This issue can occur if the msExchADCGlobalNames value of the existing Active
+Directory object is either missing or corrupted.
+
+RESOLUTION
+==========
+
+WARNING: If you use the ADSI Edit snap-in, the LDP utility, or any other LDAP
+version 3 client and incorrectly modify the attributes of Active Directory
+objects, you can cause serious problems that may require you to reinstall
+Microsoft Windows 2000 Server and/or Microsoft Exchange 2000 Server. Microsoft
+cannot guarantee that problems resulting from the incorrect modification of
+Active Directory object attributes can be solved. Modify these attributes at
+your own risk.
+
+To resolve this issue:
+
+1. Use the Active Directory Administration tool or the Active Directory Service
+  Interface (ADSI) Edit snap-in to copy the msExchADCGlobalNames value from the
+  newly created object to the msExchADCGlobalNames value of the existing
+  object.
+
+2. Verify that the values are identical.
+
+3. Delete the new object.
+
+MORE INFORMATION
+================
+
+For additional information about how to use the Active Directory Administration
+tool or the ADSI Edit snap-in to to copy the msExchADCGlobalNames value from the
+newly created object to the msExchADCGlobalNames value of the existing object,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q274229 XADM: How to Copy Exchange Attributes from One Active Directory
+  Object to Another
+
+
+Additional query words: AD
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

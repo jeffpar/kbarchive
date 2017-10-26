@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q280447: BUG: Text from a Rich Edit Control Is Truncated During DDX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q280447: BUG: Text from a Rich Edit Control Is Truncated During DDX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/280/Q280447/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/280/Q280447/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/280/Q280447/","publisher":null,"image":null,"headline":"Q280447: BUG: Text from a Rich Edit Control Is Truncated During DDX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q280447-bug-text-from-a-rich-edit-control-is-truncated-during-ddx">Q280447: BUG: Text from a Rich Edit Control Is Truncated During DDX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q280447
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbCmnCtrls kbMFC kbRichEdit kbClassWizard
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Editions, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The text in a rich edit control may be truncated under the following
+circumstances:
+
+- You associate a CString variable with the rich edit control on a dialog box
+  template.
+
+- The rich edit control exceeds 64 kilobytes (KB).
+
+CAUSE
+=====
+
+This problem occurs because the WM_GETTEXT message is not programmed to work
+with rich edit controls that are larger than 64 KB. The Class Wizard generates
+code that uses the DDX_Text function to exchange data between the rich edit
+control and the CString variable. The DDX_Text function uses the GetWindowText
+function, which sends the WM_GETTEXT message to the control to retrieve the text
+in the control. The WM_GETTEXT message does not accept text that is larger than
+64 KB.
+
+RESOLUTION
+==========
+
+To work around this problem, use the DDX_RichText function as demonstrated in
+the "More Information" section of this article.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+To work around this problem, add the following two functions to your project:
+
+      DWORD CALLBACK ES2MemCallBack(DWORD_PTR dwCookie,
+                                    LPBYTE pbBuff, LONG cb, LONG *pcb)
+      {
+          LPTSTR&amp; lpszStrFill = *(LPTSTR*)dwCookie;
+          memcpy(lpszStrFill, pbBuff, *pcb = cb);
+          lpszStrFill += cb;
+          *lpszStrFill = TCHAR('\0');
+
+          return 0;
+      }
+
+      void AFXAPI DDX_RichText(CDataExchange* pDX, int nIDC, CString&amp; value)
+      {
+          extern void AFXAPI AfxSetWindowText(HWND hWndCtrl, LPCTSTR lpszNew);
+          HWND hWndCtrl = pDX-&gt;PrepareEditCtrl(nIDC);
+          if (pDX-&gt;m_bSaveAndValidate)
+          {
+              int nLen = ::GetWindowTextLength(hWndCtrl);
+
+              LPTSTR lpszStrFill = value.GetBufferSetLength(nLen);
+              EDITSTREAM es = { (DWORD_PTR) &amp;lpszStrFill, 0, ES2MemCallBack };
+              ::SendMessage(hWndCtrl, EM_STREAMOUT, SF_TEXT, (LPARAM) &amp;es);
+              value.ReleaseBuffer();
+          }
+          else
+          {
+              AfxSetWindowText(hWndCtrl, value);
+          }
+      }
+
+To add Class Wizard support for the new data exchange function, add the following
+lines to the .clw file or to the Ddx.clw file of your project:
+
+See the "References" section of this article for more information about DDX and
+DDV Routines.
+
+      ExtraDDXCount=1
+      ExtraDDX1=7;;TextOver64KB;CString;;RichText;Retrieves text in excess of 64KB from RichEdit controls
+
+Alternatively, if the ExtraDDXCount line already exists, you can increment the
+value of ExtraDDXCount by one.
+
+NOTE: Seven is the numeric constant that indicates a rich edit control.
+
+If you do not use the preceding step, you must manually replace all calls to
+DDX_Text with DDX_RichText. Then, you must move these calls outside the
+wizard-controlled code. Wizard-controlled code is the code that is bracketed by
+//{{AFX_DATA_INIT(...) and //}}AFX_DATA_INIT, and //{{AFX_DATA_MAP(...)
+//}}AFX_DATA_MAP.
+
+For more information about DDX and dialog data validation (DDV) routines, see the
+"References" section.
+
+REFERENCES
+==========
+
+For more information, see the following MSDN Web sites:
+
+TN026: DDX and DDV Routines:
+http://msdn.microsoft.com/library/devprods/vs6/visualc/vcmfc/_mfcnotes_tn026.htm
+
+Windows User Interface WM_GETTEXT:
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/windows_34ok.asp
+
+Additional query words: CRichEdit truncate
+
+======================================================================
+Keywords          : kbCmnCtrls kbMFC kbRichEdit kbClassWizard 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

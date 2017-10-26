@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q253884: BUG: Printing to a Non-Default Printer May Cause an Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q253884: BUG: Printing to a Non-Default Printer May Cause an Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/253/Q253884/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/253/Q253884/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/253/Q253884/","publisher":null,"image":null,"headline":"Q253884: BUG: Printing to a Non-Default Printer May Cause an Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q253884-bug-printing-to-a-non-default-printer-may-cause-an-error">Q253884: BUG: Printing to a Non-Default Printer May Cause an Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q253884
+Product(s): Microsoft FoxPro
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbprint kbPrinting kbReportWriter kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a print request is sent to a non-default printer with the Microsoft Visual
+FoxPro REPORT FORM ... PROMPT command, Visual FoxPro may cause an error,
+generate a GPF, quit or print to the wrong printer. The text of the error
+message is:
+
+  Error loading printer driver
+
+RESOLUTION
+==========
+
+To resolve this problem you must programmatically change the FoxPro printer.
+
+You can use code to get the name of the printer before you print, set the printer
+to that name and then issue the REPORT FORM command.
+
+The following Microsoft Knowledge Base article explains how you can specify that
+a Visual FoxPro report be sent to a particular printer:
+
+  Q162798 HOWTO: Use SET PRINTER TO NAME to Specify Report Destination
+
+In most instances, this method is acceptable. However, there may be some
+instances that require more control over the report options, such as number of
+copies, paper source, paper size, and page ranges.
+
+If you require more control over the print report options, you may want to use
+the ReportFormPrompt.exe sample.
+
+For additional information on how to download the ReportFormPrompt.exe sample,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q263287 SAMPLE: ReportForm.exe Sets Print Options without REPORT FORM ...
+  PROMPT Command
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+This problem may be reproducible with several different types of printers that
+are installed on a computer.
+
+1. Install the following printers to the computer:
+
+   HP4000 PCL
+   Kyocera FS-3500
+   Generic Text (Set this printer as default)
+
+NOTE: The actual printer does not have to exist. You can use the Printers control
+panel applet to pause printing to these printers in order to suppress "printer
+not ready" error messages. The following combination produces the most
+consistent results of failure.
+
+2. Create a report named MyReport.
+
+3. Enter the following code into the Visual FoxPro Command window, and then
+  press ENTER:
+
+  REPORT FORM MyReport TO PRINTER PROMPT
+
+4. Print to the printers in the following order:
+
+	HP4000 PCL		OK
+	Kyocera FS-3500		Error loading PD
+	*Generic Text		OK
+	HP4000 PCL		Error loading PD
+	Kyocera FS-3500		Error loading PD
+
+NOTE: * Denotes the default printer
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q162798 HOWTO: Use SET PRINTER TO NAME to Specify Report Destination
+
+  Q131201 Print Setup Options Saved with the Report
+
+  Q251236 HOWTO: Programmatically Set the Number of Copies for a Report
+
+Additional query words: REPORT FORM LABEL PROMPT ERROR GPF
+
+======================================================================
+Keywords          : kbprint kbPrinting kbReportWriter kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

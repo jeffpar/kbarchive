@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217217: XFOR: How to Control Routing of Subdomains in IMS Routing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217217: XFOR: How to Control Routing of Subdomains in IMS Routing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217217/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217217/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217217/","publisher":null,"image":null,"headline":"Q217217: XFOR: How to Control Routing of Subdomains in IMS Routing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217217-xfor-how-to-control-routing-of-subdomains-in-ims-routing">Q217217: XFOR: How to Control Routing of Subdomains in IMS Routing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217217
+Product(s): Microsoft Exchange
+Version(s): 5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 21-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the properties for the Internet Mail Service, there is an option to enable
+routing. For the Internet Mail Service to still properly receive mail for the
+local domain, that domain must be entered and marked as &lt;inbound&gt;. The
+result is that all subdomains of the higher-level domain are also accepted as
+inbound. Although you can specify that some subdomains be handled differently,
+this approach can become problematic in the case of a large number of
+subdomains.
+
+MORE INFORMATION
+================
+
+Assume a domain of sample.microsoft.com with subdomains of
+dallas.sample.microsoft.com, seattle.sample.microsoft.com, and
+chicago.sample.microsoft.com. In this organization, mail for
+chicago.sample.microsoft.com is handled by a separate host. In the Internet Mail
+Service, the following entries are present:
+
+  sample.microsoft.com &lt;inbound&gt;
+  chicago.sample.microsoft.com &lt;route to other host for this subdomain&gt;
+
+This Internet Mail Service server accepts sample.microsoft.com and all its
+subdomains as inbound, redirecting mail for chicago.sample.microsoft.com to the
+other host. This scheme works well if there are few subdomains to be rerouted in
+this manner, but becomes unwieldy if there are many subdomains to be rerouted.
+In this instance, prepending "#" creates an explicit route that ignores
+subdomains. For sample.microsoft.com, the table looks like:
+
+  #sample.microsoft.com &lt;inbound&gt;
+  dallas.sample.microsoft.com &lt;inbound&gt;
+  chicago.sample.microsoft.com &lt;route to other host for this subdomain&gt;
+
+For this example, only two subdomains are accepted as inbound on this server:
+sample.microsoft.com and dallas.sample.microsoft.com. The
+chicago.sample.microsoft.com is rerouted to the other host, and
+seattle.sample.microsoft.com (and any other unlisted domain) is rerouted by
+whatever method is specified on the Connections tab for the Internet Mail
+Service.
+
+NOTE: Subdomains of dallas.sample.microsoft.com (such as
+plano.dallas.sample.microsoft.com) are also accepted inbound implicitly;
+prepending with the "#" sign also forces this entry to be explicit if you want.
+
+The example companies, organizations, products, people and events depicted herein
+are fictitious. No association with any real company, organization, product,
+person or event is intended or should be inferred.
+
+Additional query words: IMS
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

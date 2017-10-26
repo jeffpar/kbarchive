@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199538: BUG: Scroll Bars May Be Re-Enabled or Crash App When Clicked | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199538: BUG: Scroll Bars May Be Re-Enabled or Crash App When Clicked" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199538/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199538/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199538/","publisher":null,"image":null,"headline":"Q199538: BUG: Scroll Bars May Be Re-Enabled or Crash App When Clicked","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199538-bug-scroll-bars-may-be-re-enabled-or-crash-app-when-clicked">Q199538: BUG: Scroll Bars May Be Re-Enabled or Crash App When Clicked</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199538
+Product(s): Microsoft C Compiler
+Version(s): MACINTOSH:4.0,4.0b
+Operating System(s): 
+Keyword(s): kbDocView kbHWMAC kbMFC KbUIDesign kbVC400bug kbDSupport kbGrpDSMFCATLkbbuglist
+Last Modified: 11-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, Macintosh Cross-Development Addon, versions 4.0, 4.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When clicking a disabled scroll bar of a window, the scroll bar becomes enabled.
+If the mouse click occurs where the scroll thumb would be, the application
+crashes.
+
+CAUSE
+=====
+
+There is a bug in the Windows Portability Layer.
+
+RESOLUTION
+==========
+
+Set the scroll range to 0, 0 (zero, zero) using SetScrollSizes() or
+SetScrollInfo().
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+When a window has its scroll bar enabled, and is disabled using the following
+code
+
+     // hWnd is a handle to window
+     EnableScrollBar(hWnd, SB_BOTH, ESB_DISABLE_BOTH);
+
+then the scroll bars are enabled if the user generates a mousedown in the
+disabled scroll bar. If the mousedown occurs where the scroll thumb would be,
+the application crashes with the following error message:
+
+  Sorry, a system error occurred.
+  "myapplication"
+  Bus error
+
+This problem appears for the scroll bar of a combo box but does not appear for
+the scroll-bar control. This fails with both PowerPC and 68KB platforms.
+
+The workaround is to set the scroll range to 0, 0, as demonstrated below:
+
+     SCROLLINFO si;
+     si.cbSize = sizeof(SCROLLINFO);
+     si.fMask = SIF_RANGE;
+     si.nMin = si.nMax = 0;
+     SetScrollInfo(hWnd, SB_HORZ, &amp;si, TRUE);
+     SetScrollInfo(hWnd, SB_VERT, &amp;si, TRUE);
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Adam Kim,
+Microsoft Corporation.
+
+
+Additional query words: CScrollView CComboBox CScrollBar bus error scrollbar
+
+======================================================================
+Keywords          : kbDocView kbHWMAC kbMFC KbUIDesign kbVC400bug kbDSupport kbGrpDSMFCATL kbbuglist
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev400Mac kbVCXDev400bMac
+Version           : MACINTOSH:4.0,4.0b
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

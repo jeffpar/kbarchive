@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80745: Saving GW-Basic/BASICA ASCII File to Use with QBasic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80745: Saving GW-Basic/BASICA ASCII File to Use with QBasic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80745/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80745/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80745/","publisher":null,"image":null,"headline":"Q80745: Saving GW-Basic/BASICA ASCII File to Use with QBasic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80745-saving-gw-basicbasica-ascii-file-to-use-with-qbasic">Q80745: Saving GW-Basic/BASICA ASCII File to Use with QBasic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80745
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to run a program created with GW-Basic or BASICA in MS-DOS QBasic,
+the following error message may be displayed:
+
+  SYNTAX ERROR
+
+CAUSE
+=====
+
+This message means that either a syntax modification may be needed to meet
+QBasic language rules, or the file format is not ASCII. All QBasic programs must
+be in ASCII format.
+
+By default, GW-Basic and BASICA save programs in binary format that QBasic cannot
+read. A program written in GW-Basic or BASICA must be saved in ASCII format
+before it can be loaded into QBasic.
+
+WORKAROUND
+==========
+
+To eliminate the error, do the following:
+
+1. Make a backup copy of the original program written in GW-Basic or BASICA.
+
+2. Locate GWBASIC.EXE or BASICA.EXE and execute the program.
+
+3. Use the LOAD (F3) command to load the program to be used in QBasic. For
+  example, type the following:
+
+  " load "progname.bas" " (without the quotation marks)
+
+4. Use the LIST (F1) command to verify the program's contents.
+
+5. Use the SAVE (F4) command with the A option to save the program in ASCII
+  format. For example, type the following:
+
+  " save "progname.bas",a " (without the quotation marks)
+
+6. Exit GW-Basic or BASICA with the SYSTEM command.
+
+The program is now in ASCII format and can be used in QBasic.
+
+To execute the program in QBasic, do the following:
+
+1. Run QBASIC.EXE.
+
+2. From the File menu, choose Open, and enter the program file that was saved in
+  ASCII format.
+
+3. From the Run menu, choose Start.
+
+If the text is garbled with control characters and character set characters, the
+program is probably not in ASCII format. Exit QBasic and save the file in ASCII
+as explained above.
+
+For more information about BASICA and GW-Basic conversion, query on the following
+words in the Microsoft Knowledge Base:
+
+  " basica and qbasic " (without the quotation marks)
+
+Additional query words: 6.22 basic convert gwbasic.exe qbasic.exe basica.exe gw-basic 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

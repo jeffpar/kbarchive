@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68225: StringAssign of Zero-Length (Null) String Fails; BASIC 7.10 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68225: StringAssign of Zero-Length (Null) String Fails; BASIC 7.10" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68225/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68225/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68225/","publisher":null,"image":null,"headline":"Q68225: StringAssign of Zero-Length (Null) String Fails; BASIC 7.10","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68225-stringassign-of-zero-length-null-string-fails-basic-710">Q68225: StringAssign of Zero-Length (Null) String Fails; BASIC 7.10</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68225
+Product(s): See article
+Version(s): 7.00 7.10 | 7.00 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S901016-16 S_C S_QuickC | mspl13_basic
+Last Modified: 15-JAN-1991
+
+There is no way to use the StringAssign routine to create a
+zero-length string. For example, the following gives unpredictable
+(bad) results, and should not be done:
+
+   StringAssign(NULL,0,basicstring,0)
+   // (The NULL pointer is defined in STDIO.H in Microsoft C.)
+
+This statement is NOT the same as the BASIC statement A$ = "". This
+article explains this limitation of the StringAssign routine, and
+gives the correct method to create a null BASIC string by using
+StringRelease.
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+The StringAssign routine lets you transfer far or near string data
+from one language's memory space to another, using the following C
+syntax:
+
+   StringAssign(sourceaddress&amp;,sourcelength%,destaddress&amp;,destlength%)
+
+StringAssign expects to receive a far pointer (sourceaddress&amp;) either
+to a valid BASIC string descriptor or to the beginning of some string
+text. If the length of the source string (sourcelength%) is 0 (zero),
+StringAssign assumes that sourceaddress&amp; is a pointer to a valid BASIC
+string descriptor. StringAssign then dereferences the descriptor and
+assigns the value to the destaddress&amp; supplied.
+
+Each programmer is responsible for making sure that the pointer passed
+to StringAssign is valid. StringAssign doesn't validate the pointers.
+Thus, to pass the NULL pointer is an error. If the address passed does
+not point to a string descriptor, then the results will be
+unpredictable.
+
+Note: Someone might want to do this to set a BASIC variable-length
+string to the empty or null string from some other language. The
+intention is to simulate the following line of BASIC code:
+
+    A$ = ""
+
+To assign a null string, you can use the StringRelease routine.
+StringRelease isn't exactly the same as A$="", but it does result in a
+string descriptor that will be treated as a null string. It deletes
+the string data associated with the string descriptor and zeros the
+string descriptor. A string descriptor that contains 0 (zero) as the
+length and 0 (zero) as the offset is the same as an uninitialized
+string, which is treated as null. This method should work around the
+limitation of StringAssign described above.
+
+Code Example
+------------
+
+The following is an example of this workaround in Microsoft C and
+BASIC. To compile and link the program, you can use the following
+compile and link lines:
+
+   bc test1.bas /Fs /o /Zi ;
+   cl /c /AL /Zi test2.c ;
+   link /NOE /NOD /CO test1 test2,,,bcl71efr.LIB llibcer.lib;
+
+Note that the following program prompts you for input. If you input a
+string, then the C function will StringAssign the string. However, if
+you literally type "null" (with no quotation marks), then the function
+will use StringRelease to null the string.
+
+Test1.BAS -- BASIC Routine
+--------------------------
+
+DECLARE SUB cfunc CDECL (a$)
+CLS
+locate 10, 1
+print "Before call to cfunc"
+a$ = "This is a test"
+print "A$ = ", a$
+PRINT "Len A$: "; LEN(a$)
+print
+CALL cfunc(a$)    ' CALL the C function
+print "After call to cfunc"
+print "A$ = ", a$
+PRINT "Len A$: "; LEN(a$)
+print
+
+Test2.C -- C Routine
+--------------------
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+extern void far pascal StringAssign(char far *,int,char far *, int);
+extern void far pascal StringRelease(char far *);
+void cfunc(BasicString)
+     char far * BasicString;
+{
+    char name[80] ;
+    char NullStr[] = "";
+    printf("Input name[]: ");
+    scanf("%s",name);
+    if(stricmp(name,"null") == 0) {
+      name[0] = '\x00'; // Set it to null
+    }
+    if ((name == NULL) | (name[0] == '\x00')) {
+       StringRelease(BasicString);
+    } else {
+        StringAssign(name, strlen(name), BasicString,0);
+    }
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170129: PRB: Update Conflict When Updating Oracle Varchar Data Types | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170129: PRB: Update Conflict When Updating Oracle Varchar Data Types" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170129/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170129/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170129/","publisher":null,"image":null,"headline":"Q170129: PRB: Update Conflict When Updating Oracle Varchar Data Types","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170129-prb-update-conflict-when-updating-oracle-varchar-data-types">Q170129: PRB: Update Conflict When Updating Oracle Varchar Data Types</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170129
+Product(s): Microsoft FoxPro
+Version(s): 5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbvfp kbvfp500 kbvfp500a kbvfp600
+Last Modified: 07-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When updating a remote view based on an Oracle table that contains fields of
+type "varchar," you may receive an Update Conflict error.
+
+CAUSE
+=====
+
+When a remote view retrieves data from the Oracle backend, all varchar fields
+are converted to character fields. Visual FoxPro pads the character fields with
+spaces to accommodate the overall length of the varchar field.
+
+The Update Conflict occurs as a result of a mismatch in the SQL WHERE clause
+criteria due to the padded spaces. For example: if an Oracle table has a
+varchar(5) field with a value of "aaa". the actual value that the remote view
+uses in the SQL WHERE clause is "aaa ". The Update Conflict occurs because
+"aaa"&lt;&gt;"aaa ".
+
+NOTE: This occurs when the varchar field size is less than the default set in the
+'Use Memo Fields for Fields &lt;=:' setting in Tools/Options/Remote Data. Any
+Oracle varchar field with a size greater than this setting will be viewed as a
+memo field.
+
+RESOLUTION
+==========
+
+Here are two possible methods you can use to avoid the Update Conflict:
+
+- Set the SQL WHERE clause option in the Update Criteria such that no varchar
+  fields are included in the SQL WHERE clause. In other words, select the
+  option button choice, "Key fields only".
+
+  NOTE: The following documentation is in the Visual FoxPro Help topic, "Update
+  Criteria Tab, View Designer" as follows:
+
+  SQL WHERE Clause Includes
+
+  Controls which fields are added to the WHERE clause to detect update conflicts
+  on the server when the changes to the view are sent to the original tables.
+
+  A conflict is based on a comparison between the old values in the view,
+  OLDVAL( ), and the current values in the original table, CURVAL( ). If the
+  values are equal, the original table is considered unchanged and no conflict
+  exists. If they are not equal, a conflict exists and the data source returns
+  an error.
+
+  The error returned for a conflict between the old value and the current value
+  is Error 1585 "Record has been modified by another" or Error 1494 "Update
+  conflict. Use TABLEUPDATE() to force the update or TABLEREVERT() to
+  rollback".
+
+  Key Fields Only: Sets the WHERE clause to detect a conflict if a key field has
+  been changed in the original table. Changes made by another user to any other
+  field in the original record of the table are not compared.
+
+  Key and Updatable Fields: Sets the WHERE clause to detect a conflict if
+  another user changed any of the fields that were updatable.
+
+  Key and Modified Fields: Sets the WHERE clause to detect a conflict if the key
+  field or one of the modified fields in the record in the original table has
+  changed since the view was first retrieved (default).
+
+  Key and Timestamp: Sets the WHERE clause to detect a conflict if the timestamp
+  of the record on the original table has changed since it was first retrieved.
+  This option is only available if the remote table has a timestamp column.
+
+  -or-
+
+- Change the data type of all the varchar fields to Memo. You can do this by
+  clicking the Properties button on the Fields tab of the Remote View Designer.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an Oracle table that contains at least one varchar field.
+
+2. Create a remote view based on the Oracle table created in step 1.
+
+3. Make the varchar field updateable and set the SQL WHERE clause option to "Key
+  and modified."
+
+4. Browse the view, and make a change to the varchar field.
+
+5. Close the view.
+
+NOTE: The Update Conflict error occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbvfp kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

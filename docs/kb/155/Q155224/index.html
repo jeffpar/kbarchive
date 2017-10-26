@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155224: PRB: Using CEdit SetModify/GetModify Returns Invalid Values | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155224: PRB: Using CEdit SetModify/GetModify Returns Invalid Values" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155224/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155224/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155224/","publisher":null,"image":null,"headline":"Q155224: PRB: Using CEdit SetModify/GetModify Returns Invalid Values","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155224-prb-using-cedit-setmodifygetmodify-returns-invalid-values">Q155224: PRB: Using CEdit SetModify/GetModify Returns Invalid Values</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155224
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbEditCtrl kbMFC KbUIDesign kbVC400 kbVC420 kbGrpDSMFCATL
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The CEdit::GetModify() and CEdit::SetModify() methods may be unreliable when the
+CEdit object is part of CEditView. Further, using these methods on a CEdit
+object that is part of a CEditView object may cause CEditView::LockBuffer(),
+CEditView::GetBufferLength(), and other CEditView methods to return invalid
+values.
+
+CAUSE
+=====
+
+Under Windows 95 and Win32s, CEditView uses CEdit::GetModify() and
+CEdit::SetModify() to indicate when an internal buffer--which mirrors the
+contents of the edit control--is current. As a result, you can experience
+unpredictable behavior if the class you derive from CEditView also uses this
+flag, for example:
+
+RESOLUTION
+==========
+
+The easiest workaround is to ignore the edit control's internal modified flag
+and define your own in the class you derived from CEditView:
+
+     class CMyEditView : public CEditView
+     {
+     public:
+        BOOL GetModify() { return m_bModified; }
+        void SetModify(BOOL bModified) { m_bModified = bModified; }
+        // Additional public members...
+     protected:
+        BOOL m_bModified;
+        // Additional protected members...
+     };
+
+Keep this flag current by overriding OnChange() in the class you derived from
+CEditView. OnChange() is called any time the contents of the underlying edit
+control changes:
+
+     void CMyEditView::OnChange()
+     {
+        m_bModified = TRUE;
+
+           //Call base class's EN_CHANGE handler
+           CEditView::OnEditChange();
+     }
+
+MORE INFORMATION
+================
+
+CEdit::GetModify() and CEdit::SetModify() access an internal "dirty" flag that
+is maintained by the standard Windows edit control. These methods are useful in
+determining if the contents of an edit control have been modified since this
+flag was cleared.
+
+Due to limitations under Win32s and Windows 95, the MFC classes set an internal
+flag, afxData.bWin32s, to TRUE during initialization under either of these
+systems. When this flag is TRUE, CEditView uses a modified method to obtain the
+contents of the underlying edit control. Instead of reading data from the edit
+control each time you need it, CEditView maintains an internal buffer that
+mirrors the contents of the edit control. To ensure this buffer is updated when
+the contents of the edit control change, CEditView uses CEdit::GetModify() and
+CEdit::SetModify(). This can cause serious conflicts if your application also
+uses these methods.
+
+The problem is clearly demonstrated in the source code for
+CEditView::LockBuffer(). Instead of accessing the control directly each time,
+CEditView::LockBuffer() copies the edit control's contents to a local buffer.
+Then CEditView::LockBuffer() calls CEdit::SetModify() with an argument of FALSE
+to clear the dirty flag. If your program calls CEditView::LockBuffer() or one of
+the many CEditView members that call it, the buffer is updated only if
+CEdit::GetModify() returns TRUE (which indicates the edit control's contents
+have changed and the local buffer is no longer current).
+
+Because CEditView::LockBuffer() clears the edit control's modified flag, your
+program no longer relies on this flag. Please note, if your program clears this
+flag, CEditView::LockBuffer() returns the contents of the local buffer even if
+the contents of the edit control has changed. CEditView::LockBuffer() is also
+called by other CEditView members, such as GetBufferLength() and FindText().
+
+Additional query words: 4.00 4.10 4.20 kbdsd W32s Win95
+
+======================================================================
+Keywords          : kbEditCtrl kbMFC KbUIDesign kbVC400 kbVC420 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

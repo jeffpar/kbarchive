@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164330: WinNT Err: DHCP Specified Range Overlaps Or Already Exists | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164330: WinNT Err: DHCP Specified Range Overlaps Or Already Exists" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164330/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164330/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164330/","publisher":null,"image":null,"headline":"Q164330: WinNT Err: DHCP Specified Range Overlaps Or Already Exists","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164330-winnt-err-dhcp-specified-range-overlaps-or-already-exists">Q164330: WinNT Err: DHCP Specified Range Overlaps Or Already Exists</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164330
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbnetwork kbhowto
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new DHCP scope, one of the following error messages may be
+displayed:
+
+  The specified range either overlaps with an already existing range or is
+  invalid.
+
+  The specified subnet already exists.
+
+CAUSE
+=====
+
+One possible cause is documented in the Microsoft Knowledge Base article:
+
+  ARTICLE-ID: Q129122
+  TITLE : DHCP: Excluding an Address Before Lease Expires Gives Error
+
+However, if this is a brand new scope, it is more likely that the scope is
+subnetted, and the Start Address and End Address overlap two or more subnets.
+
+For example, an Internet Service Provider (ISP) provides a scope of addresses for
+a customer, from 205.241.139.160 to 205.241.139.223 and a subnet mask of
+255.255.255.160. Trying to create a single scope with this starting/ending
+range, and using the supplied subnet mask prompts the user with the error
+message shown above.
+
+DHCP Manager performs a calculation on the information the user supplies and
+detects that the ranges of addresses do not all exist within the same subnet.
+The user can verify this themselves by performing an AND-ing operation against
+the Start Address and the Subnet Mask and also against the End Address and the
+Subnet Mask. Then, the user can compare the two resulting values, if they do not
+match, then the starting and ending addresses are not part of the same subnet.
+
+  NOTE: AND-ing is the process of comparing 2 bits (in this case, each bit of
+  the IP address and subnet mask). If both bits are 1, then the result becomes
+  1. If either bit of the IP address OR subnet mask are 0, then the result is
+  0. In the result below, where there are 1 values, you can see that the IP
+  address and subnet mask both have 1 for that particular bit. Otherwise, the
+  result for that bit is 0.
+
+To verify that this is the problem, the user can perform the AND-ing operation
+using the following steps:
+
+  NOTE: Windows NT Calculator, in scientific mode, can be used to convert
+  decimal values to binary equivalent. Each binary octet should consist of
+  eight (8) characters, if the calculator returns a value with only seven (7)
+  or fewer characters, then append the appropriate number of zeroes (0) to the
+  beginning of each octet so that all octets consist of eight (8) characters.
+
+1. Convert each octet of the Start Address to binary (in our case, it is only
+  the last octet that is different, so we only need to convert the last octet,
+  but for the purposes of this article, all four octets are converted).
+
+  This example:  205.241.139.160 = 11001101.11110001.10001011.10100000
+
+2. Convert each octet of the End Address to binary.
+
+  This example:  205.241.139.223 = 11001101.11110001.10001011.11011111
+
+3. Convert each octet of the Subnet Mask to binary.
+
+  This example:  255.255.255.160 = 11111111.11111111.11111111.10100000
+
+4. Perform an AND against the Start Address and the Subnet Mask.
+
+  Start Address:  11001101.11110001.10001011.10100000
+  Subnet Mask:    11111111.11111111.11111111.10100000
+  --------------  -----------------------------------
+  Result #1:      11001101.11110001.10001011.10100000
+
+5. Perform an AND against the End Address and the Subnet Mask.
+
+  Start Address:  11001101.11110001.10001011.10100000
+  Subnet Mask:    11111111.11111111.11111111.11011111
+  --------------  -----------------------------------
+  Result #2:      11001101.11110001.10001011.10000000
+
+6. Compare Result #1 and Result #2 - if they do not match, the scope overlaps a
+  sub network.
+
+  Result #1:      11001101.11110001.10001011.10100000
+  Result #2:      11001101.11110001.10001011.10000000
+  --------------  -----------------------------------
+                  same    .same    .same    .different --&gt; different
+                                                            subnets
+
+This error message will also be displayed if you attempt to create a scope that
+has a beginning address that is the same as your network ID (scope ID).
+
+RESOLUTION
+==========
+
+In the above example, the ISP provided a range of 64 addresses without
+indicating that it was a range of addresses for two (2) sub-networks, consisting
+of 32 addresses for each subnet. All you did then, was to divide the range in
+two, resulting in the following two scopes:
+
+  This example: Scope #1:
+                Start Address - 205.241.139.160
+                End Address   - 205.241.139.191
+                Subnet Mask   - 255.255.255.160
+
+                Scope #2:
+                Start Address - 205.241.139.192
+                End Address   - 205.241.139.223
+                Subnet Mask   - 255.255.255.160
+
+If you calculated the subnets for the DHCP scope, type in a scope (Starting and
+Ending Addresses) for each subnet you calculated, individually. If the subnets
+were provided by a third party (such as an ISP), ask them to provide a list of
+how the subnets are divided, including the ranges of host IDs within each
+subnet. Use this list to create your DHCP scopes.
+
+  NOTE: Versions of Windows NT DHCP server prior to Windows NT 4.0 Service Pack
+  2 (SP2) are not capable of assigning addresses from more than one scope to a
+  given physical subnet. One workaround for this situation is to add additional
+  network interface cards (NICs) to the server, and to address each of the NICs
+  to a given logical IP subnet. This involves additional and otherwise
+  unnecessary hardware, so a new solution was developed and implemented in
+  Windows NT 4.0 SP2. The enhanced DHCP server allows the administrator to
+  create different scopes (ranges of IP addresses), and then to group those
+  scopes together into a superscope. The procedure to create superscopes is
+  described in the following Microsoft Knowledge Base article:
+
+  ARTICLE-ID: Q161571
+  TITLE : Using DHCP "Superscopes" to Serve Multiple Logical Subnets
+======================================================================
+Keywords          : kbenv kberrmsg kbnetwork kbhowto 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

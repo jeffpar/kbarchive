@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q267548: Cluster IP Resource Fails After Network Change | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q267548: Cluster IP Resource Fails After Network Change" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/267/Q267548/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/267/Q267548/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/267/Q267548/","publisher":null,"image":null,"headline":"Q267548: Cluster IP Resource Fails After Network Change","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q267548-cluster-ip-resource-fails-after-network-change">Q267548: Cluster IP Resource Fails After Network Change</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q267548
+Product(s): Microsoft Windows NT
+Version(s): 2000,4.0
+Operating System(s): 
+Keyword(s): kberrmsg kbtool
+Last Modified: 25-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to start Cluster Administrator, you may receive the following
+error message:
+
+  An error occurred trying to open the cluster at &lt;Clustername&gt;.
+
+  The RPC Server is unavailable
+
+  Error ID: 1722 (000006ba)
+
+Also, the following errors may appear in the cluster node System Event Log:
+
+  Event ID: 1069
+  Source: ClusSvc
+  Description: Cluster resource 'Cluster IP Address' failed.
+
+  Event ID: 1048
+  Source: ClusSvc
+  Description: Cluster IP Address resource &lt;resource name&gt; cannot be
+  brought online because the adapter name parameter is invalid. Please check
+  your network configuration.
+
+CAUSE
+=====
+
+This issue can occur if you have replaced your network adapter, or have changed
+the IP address of your public network adapter.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+NOTE: The following steps must be performed from one of the cluster nodes. These
+steps will not work from a computer that is not a member of the cluster.
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "cluadmin /noreconnect" (without the quotation marks),
+  and then press ENTER.
+
+3. When you receive the prompt for the cluster name, enter a period "." (without
+  the quotes), and then click Open.
+
+4. Under the Groups item, click Cluster Group.
+
+5. In the right-side pane, double-click Cluster IP Address.
+
+6. Click the Parameters tab.
+
+7. In the Network box, choose the name of your Public network adapter, for
+  example, "Public(1)", and then click OK.
+
+8. Repeat steps 5-7 for any other virtual IP Address resources that are not
+  working in all of the groups on your cluster.
+
+9. Right-click the Cluster Group, and then click Bring Online. Repeat this step
+  for all groups.
+
+Another solution to this issue is:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "cluadmin" (without the quotation marks), and then
+  press ENTER.
+
+3. When you are prompted to start the Cluster Service, click No.
+
+4. Click File|Open.
+
+5. Enter a period "." (without the quotation marks) in the Network textbox.
+
+6. Under the Groups item, click Cluster Group.
+
+7. In the right-side pane, double-click Cluster IP Address.
+
+8. Click the Parameters tab.
+
+9. In the Network box, choose the name of your Public network adapter, for
+  example, "Public(1)", and then click OK.
+
+10. Repeat steps 7-9 for any other virtual IP Address resources that are not
+  working, and then continue to the next step.
+
+11. Right-click the Cluster Group, and then click Bring Online. Repeat this step
+  for all groups.
+
+MORE INFORMATION
+================
+
+When the IP address for the public network adapter is changed, or the network
+card is replaced, the network adapter is detected as a new network. When this
+change occurs, IP Address resources in Cluster Administrator are not
+automatically associated with the new network adapter.
+
+REFERENCES
+==========
+
+For additional information about how to change the IP address of network
+adapters in Cluster Server, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q230356 Changing the IP Address of Network Adapters in Cluster Server
+
+Additional query words: MSCS W2000MSCS NIC
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch
+Version           : :2000,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

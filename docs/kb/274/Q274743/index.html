@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274743: SMS: SQL Error 3023 in Collection Evaluator Log | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274743: SMS: SQL Error 3023 in Collection Evaluator Log" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274743/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274743/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274743/","publisher":null,"image":null,"headline":"Q274743: SMS: SQL Error 3023 in Collection Evaluator Log","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274743-sms-sql-error-3023-in-collection-evaluator-log">Q274743: SMS: SQL Error 3023 in Collection Evaluator Log</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274743
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbDatabase kbServer kbsms200 kbCollections kbsmsUtil
+Last Modified: 02-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Collection Evaluator component, along with various other Systems Management
+Server (SMS) components, may generate an SQL error 3023 if it runs during the
+backup of the SMS database.
+
+The following error messages is generated in the Colleval.log file on the site
+server:
+
+  ********~Evaluating SMS00007
+  Next due date for collection SMS00007 is 09/26/00 11:00:00
+  Preparing to refresh collection SMS00007
+  SQL Err #10007&gt; General SQL Server error: Check messages from the SQL
+  Server.
+  SQL Msg #3023&gt; Backup, CHECKALLOC, bulk copy, SELECT INTO, and file
+  manipulation (such as CREATE FILE) operations on a database must be
+  serialized. Reissue the statement after the current backup, CHECKALLOC, or
+  file manipulation operation is completed.
+  CCollectionSource_SQL::RefreshResults - could not create index
+  Could not refresh collection SMS00007. Will retry later.
+
+CAUSE
+=====
+
+These messages can appear if the SMS services are allowed to run while the
+backup operation is in progress, and a component attempts a database operation.
+
+Some SQL operations are serial in nature, meaning that only one operation can be
+performed at a time while this operation is in a running state. The backup
+operation is one such operation. Any operations specified in the error message
+in the "Symptoms" section may fail, and generate a 3023 error message while the
+backup operation is running. This creates the need to shut down all SMS services
+before starting an SMS database backup.
+
+The Backup SMS Site Server database maintenance task that is included with SMS
+2.0 stops the necessary SMS services during execution. Using other methods to
+perform the same task may result in this error message if the SMS services are
+not shut down prior to performing the backup.
+
+WORKAROUND
+==========
+
+It is highly recommended that the SMS database maintenance task be used to shut
+down the SMS services, and also to back up the SMS database, files, and
+registry.
+
+For additional information on how to perform a backup of the SMS database refer
+to Chapter 18, "Maintaining SMS Systems" in the Microsoft Systems Management
+Server 2.0 Administrator's Guide.
+
+Additional query words: prodsms backup collection evaluator evaluation
+
+======================================================================
+Keywords          : kbDatabase kbServer kbsms200 kbCollections kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

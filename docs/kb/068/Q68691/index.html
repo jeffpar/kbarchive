@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68691: Online Help Example of Rich Text Format (RTF) Is Incorrect | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68691: Online Help Example of Rich Text Format (RTF) Is Incorrect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68691/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68691/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68691/","publisher":null,"image":null,"headline":"Q68691: Online Help Example of Rich Text Format (RTF) Is Incorrect","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68691-online-help-example-of-rich-text-format-rtf-is-incorrect">Q68691: Online Help Example of Rich Text Format (RTF) Is Incorrect</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68691
+Product(s): See article
+Version(s): 6.00 6.00a | 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | docerr | mspl13_c
+Last Modified: 31-JAN-1991
+
+The online help example for making help databases with Rich Text
+Format (RTF) files has several errors. Because of these errors, the
+Helpmake utility cannot encode the example.
+
+Example in Online Help
+----------------------
+
+ 1. {rtf0
+ 2. &gt;&gt; open \par
+ 3. {\b Include:} &lt;fcntl.h&gt;, &lt;io.h&gt;, &lt;sys\\types.h&gt;, &lt;sys\\stat.h&gt;
+ 4.
+ 5. {\b Prototype:}   int open(char *path, int flag[, int mode]);\par
+ 6.     flag: O_APPEND O_BINARY O_CREAT O_EXCL O_RDONLY\par
+ 7.           O_RDWR   O_TEXT   O_TRUNC O_WRONLY\par
+ 8.           (can be joined by |)\par
+ 9.     mode: S_IWRITE  S_IREAD   S_IREAD | S_IWRITE\par
+10. \par
+11. {\b Returns:}   a handle if successful, or -1 if not.\par
+12.     errno:  EACCES, EEXIST, EMFILE, ENOENT\par
+13. \par
+14. {\b See also:}  {\u Example}{\v open.ex},\par
+15. {\u Template}{\v open.tp}, access, chmod, close,
+16. creat, dup, dup2, fopen, sopen, umask\par
+17. }
+
+1. Line 1 needs a backslash before "rtf". It should read:
+
+      {\rtf0
+
+2. "\u" in line 14 and 15 is not RTF formatting code. "\ul" is the
+   correct code. Line 14 should read:
+
+      {\b See also:}  {\ul Example}{\v open.ex},\par
+
+3. "\par" is needed on the end of line 15 for the formatting to be
+   consistent. Line 15 should read:
+
+      {\ul Template}{\v open.tp}, access, chmod, close,\par
+
+Microsoft has confirmed this to be a problem in Microsoft C versions
+6.00 and 6.00a. We are researching this problem and will post new
+information here as it becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

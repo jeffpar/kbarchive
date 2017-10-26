@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q263520: HOWTO: Programmatically Create a Distribution List Using ADSI | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q263520: HOWTO: Programmatically Create a Distribution List Using ADSI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/263/Q263520/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/263/Q263520/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/263/Q263520/","publisher":null,"image":null,"headline":"Q263520: HOWTO: Programmatically Create a Distribution List Using ADSI","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q263520-howto-programmatically-create-a-distribution-list-using-adsi">Q263520: HOWTO: Programmatically Create a Distribution List Using ADSI</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q263520
+Product(s): Microsoft Exchange
+Version(s): 2.5,5.5
+Operating System(s): 
+Keyword(s): kbADSI kbMsg kbVBp kbGrpDSMsg kbDSupport
+Last Modified: 19-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Active Directory Service Interfaces, version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ADSI can be used to create or modify Distribution Lists on Microsoft Exchange
+Servers. This article provides sample code to create a Distribution List with
+multiple members.
+
+NOTE: In this article, the processes of creating a Distribution List and then
+adding members are separated so that they can be used individually for
+Distribution List management.
+
+MORE INFORMATION
+================
+
+1. Create a new Microsoft Visual Basic standard EXE project.
+
+2. In the Project References dialog box, check the references for the following:
+
+   - Active DS Type Library
+   - ADsSecurity 2.5 Type Library
+
+3. On the default Form1, add three CommandButtons: CommandButton1,
+  CommandButton2, and CommandButton3.
+
+4. Add the following code to the form's code module:
+
+  Option Explicit
+
+  Const RIGHT_DS_MODIFY_USER_ATT = &amp;H2
+  Const RIGHT_MAIL_SEND_AS = &amp;H8
+  Const RIGHT_MAIL_RECEIVE_AS = &amp;H10
+
+  ' Custom type for Distribution List properties.
+  Private Type DLTemplate
+      Domain as String        ' Network domain name.
+      Server As String        ' Microsoft Exchange server name.
+      Org As String           ' Microsoft Exchange Organization name.
+      Site As String          ' Microsoft Exchange Site name,
+      Container As String     ' such as Recipients.
+      Name As String
+      DisplayName As String   ' DL's Display name.
+      Alias As String         ' DL's Alias name.
+      DirectoryName As String ' DL's Directory name.
+      UserName As String      ' User's logon name and domain.
+      Password As String      ' User's domain password.
+      SMTPAddr As String
+      X400Addr As String
+      Owner As String
+      Hide As Boolean         ' Hide DL from address book.
+      OtherAddresses(10) As String
+      Members(10) As String   ' Increase array elements for more members.
+  End Type
+
+  Dim NewDL As DLTemplate     ' Public to all procedures in module.
+
+  Private Sub CommandButton1_Click()
+  ' Fill Distribution List "template".
+
+  ' Set vars to get container.
+  '*** change Domain, Server, Org and Site information as appropriate.
+  NewDL.Domain = "myDomain.com"
+  NewDL.Server = "myServer"      
+  NewDL.Org = "Orgname"     ' Microsoft Exchange Organization
+  NewDL.Site = "sitename"   ' Microsoft Exchange Site
+
+  ' Place new DL in Recipients container.
+  NewDL.Container = "Recipients"
+
+  '*** set DL named properties as appropriate.
+  NewDL.Alias = "DL47"
+  NewDL.DisplayName = "Distribution List 47"
+  NewDL.SMTPAddr = NewDL.Alias &amp; "@" &amp; NewDL.Domain 
+  NewDL.Hide = False  'default is False
+  ' Use distinguished name of owner.
+  NewDL.Owner = "cn=user1,cn=Recipients,ou=NORTHAMERICA,o=DS Messaging"
+
+  'Set required X400 address
+  'Create a DL manually and use properties as a guide
+  '   Country (c) is required
+  '   ADMD (a) is required, the default is a zero-length string ""
+  '   PRMD (p) is not required, but if included the default is a zero-length string
+  '   Surname (s) is required
+  '   the trailing semi-colon is required
+  NewDL.X400Addr = "c=US;a= ;p=" &amp; CStr(NewDL.Org) &amp; ";o=" &amp; Str(NewDL.Site)&amp;
+   ";s=" &amp; CStr(NewDL.Alias) &amp; ";"
+
+  NewDL.OtherAddresses(0) = CStr("MS$" + NewDL.Org + "/" + NewDL.Site + "/" + NewDL.Alias)
+  NewDL.OtherAddresses(1) = CStr("CCMAIL$" + NewDL.Alias + " at " + NewDL.Site)
+
+  ' Fill array of addresses (i.e. MSMail, CCMail).
+  Dim OtherAddresses(1)
+  OtherAddresses(0) = CStr("MS$" + NewDL.Org + "/" + NewDL.Site + "/" + NewDL.Alias)
+  OtherAddresses(1) = CStr("CCMAIL$" + NewDL.Alias + " at " + NewDL.Site)
+
+  ' Set Members using their Distinguished Names.
+  NewDL.Members(0) = "LDAP://myServer/o=myOrg/ou=mySite/cn=Recipients/cn=confrm11"
+  NewDL.Members(1) = "LDAP://myServer/o=myOrg/ou=mySite/cn=Recipients/cn=confrm12"
+  NewDL.Members(1) = "LDAP://myServer/o=myOrg/ou=mySite/cn=Recipients/cn=confrm13"
+
+  End Sub
+
+  Private Sub CommandButton2_Click()
+  ' This routine creates a distribution list, but it does not add members.
+
+  ' Call function to create DL.
+  ' Uses global DLTemplate previously filled.
+
+  Dim lResult As Long
+  lResult = CreateDL(NewDL, True)
+  Select Case lResult
+      Case -1: ' Succeeded.
+          MsgBox "DL created"
+      Case 0: ' Failed, unknown error.
+          MsgBox "Unknown error creating DL"
+      
+      Case Else: ' Get error number from return value.
+          
+          Select Case Hex(lResult)
+              Dim strText As String, strTitle As String
+              Case 80071392: 'already exists
+                  strText = " - Item Alredy Exists"
+              Case Else: 'unknown error
+                  strText = "- Unknown"
+          End Select
+          strTitle = "Error creating DL"
+          strText = "Error: " &amp; lResult &amp; " (" &amp; Hex(lResult) &amp; ")" &amp; strText
+          MsgBox strText, vbExclamation, strTitle
+  End Select
+
+  End Sub
+
+  Private Sub CommandButton3_Click()
+
+  ' Call function to add DL members.
+  ' Uses DLTemplate previously filled.
+
+  Dim lResult As Long
+  lResult = AddDLMembers(NewDL, True)
+  Select Case lResult
+      Case -1: ' Succeeded.
+          MsgBox "Members added"
+      Case 0: ' Failed, unknown error.
+          MsgBox "Unknown error adding members"
+      Case Else: ' Get error number from return value.
+          MsgBox "Error adding members: " &amp; lResult
+  End Select
+
+  End Sub
+
+  Private Function AddDLMembers(DL As DLTemplate, DebugMode As Boolean) As Long
+
+  AddDLMembers = 1  'default value
+
+  Dim strADsPath As String
+  Dim DistList As Object
+
+  On Error GoTo Error_AddMembers
+
+  '-- Build adspath to container, usually Recipient container:
+  '   LDAP://myserver/O=Org/OU=Site/CN=Recipients
+  strADsPath = "LDAP://" + DL.Server
+  strADsPath = strADsPath + "/O=" &amp; DL.Org
+  strADsPath = strADsPath + "/OU=" &amp; DL.Site
+  strADsPath = strADsPath + "/CN=" &amp; DL.Container
+  strADsPath = strADsPath + "/CN=" &amp; DL.Alias
+
+  If DebugMode Then Debug.Print "ADsPath: " &amp; strADsPath
+
+  ' Get reference to Distribution List.
+  Set DistList = GetObject(strADsPath)
+  Debug.Print DistList.Name
+
+  ' Loop through Members array until null found.
+  Dim i As Integer
+  Do Until DL.Members(i) = ""
+      ' Add user to Distribution List.
+      DistList.Add DL.Members(i)
+      ' If the entry is already a member of the DL,
+      ' error 8007200d occurs.
+      If DebugMode Then
+          Debug.Print "Adding Member: " &amp; i
+          Debug.Print "Member: " &amp; DL.Members(i)
+          If Err.Number = 0 Then
+              Debug.Print "Member added"
+          Else: ' Error.
+              Debug.Print "Error occurred: " &amp; Err.Number
+              Debug.Print "Reason: " &amp; Err.Description
+          End If
+      End If
+      i = i + 1
+  Loop
+
+  Exit_AddDLMembers:
+  ' Explicitly release objects.
+  Set DistList = Nothing
+  Exit Function
+
+  Error_AddMembers:
+      ' Set return value for known error.
+      If Err.Number = &amp;H8007200D Then
+          MsgBox "Already a member: " &amp; DL.Members(i)
+      End If
+      AddDLMembers = Err.Number
+      If DebugMode Then
+          Debug.Print "Error in AddDLMembers(): " &amp; Err.Number
+          Debug.Print "Error Description: " &amp; Err.Description
+      End If
+      Resume Exit_AddDLMembers
+
+  End Function
+
+  Private Function CreateDL(DL As DLTemplate, DebugMode As Boolean) As Long
+
+  ' Vars used to get container.
+  Dim strADsPath As String
+  Dim objContainer As Object
+  Dim objNewDL As Object
+
+  ' Set default value for failed, unknown error.
+  CreateDL = 0
+
+  On Error GoTo Err_CreateDL
+
+  '-- Build adspath to container, usually Recipient container:
+  '   LDAP://myserver/O=Org/OU=Site/CN=Recipients
+  strADsPath = "LDAP://" + DL.Server
+  strADsPath = strADsPath + "/O=" &amp; DL.Org
+  strADsPath = strADsPath + "/OU=" &amp; DL.Site
+  strADsPath = strADsPath + "/CN=" &amp; DL.Container
+
+  If DebugMode Then Debug.Print "ADsPath: " &amp; strADsPath
+
+  ' Get container.
+  Set objContainer = GetObject(strADsPath)
+  If DebugMode Then Debug.Print "Got container: " &amp; objContainer.Name
+
+  ' Create a new DL in the container.
+  ' A Distribution List is known as a "groupOfNames".
+  Set objNewDL = objContainer.Create("groupOfNames", "cn=" &amp; DL.Alias)
+  If DebugMode Then Debug.Print "objNewDL created for: " &amp; DL.Alias
+
+  ' Set the DL props from the custom type structure.
+  objNewDL.Put "cn", CStr(DL.DisplayName)   ' cStr() may be required to make Unicode values.
+  If DebugMode Then Debug.Print "set DisplayName property: " &amp; DL.DisplayName
+
+  objNewDL.Put "uid", CStr(DL.Alias)
+  If DebugMode Then Debug.Print "set Alias property: " &amp; DL.Alias
+  objNewDL.Put "Owner", CStr(DL.Owner)
+  If DebugMode Then Debug.Print "set Owner property: " &amp; DL.Owner
+
+  ' Alternate way to set property using simplest assignment technique.
+  objNewDL.mail = DL.SMTPAddr
+  If DebugMode Then Debug.Print "set SMTP Address property: " &amp; DL.SMTPAddr
+
+  'set required X400 address
+  objNewDL.Put "textencodedORaddress", CStr(DL.X400Addr)
+  If DEBUGMODE Then Debug.Print "set X400 Address property: " &amp; DL.X400Addr
+
+  ' Set optional properties only if not default values.
+  If DL.Hide Then objNewDL.Put "Hide-DL-Membership", DL.Hide
+  If DebugMode Then Debug.Print "set Hide from GAL property: " &amp; DL.Hide
+
+  ' Use array to hold multi-value property values.
+  ' Use Put to set the multi-values (overwrite whatever was there).
+  ' Use PutEx to append additional values, etc.
+
+  ' Create other addresses (ie. MSMail, CCMail).
+
+  'objNewDL.PutEx ADS_PROPERTY_APPEND, "otherMailbox", aOtherMailbox
+  'objNewDL.Put "OtherMailbox", DL.OtherAddresses
+
+  Dim aOtherMailbox(1)
+  aOtherMailbox(0) = CStr(DL.OtherAddresses(0))
+  aOtherMailbox(1) = CStr(DL.OtherAddresses(1))
+  'objNewDL.PutEx ADS_PROPERTY_APPEND, "otherMailbox", aOtherMailbox
+  objNewDL.Put "OtherMailbox", aOtherMailbox
+  If DebugMode Then Debug.Print "set other addresses property"
+
+  ' NOTE: members are not added as the DL is created.
+  ' Members are added separately.
+
+  objNewDL.SetInfo  ' Save changes.
+  If DebugMode Then Debug.Print "New DL saved"
+     
+  '------------------------------------------------------------------------
+  '-- SET PERMISSION ON THE OWNER TO MODIFY AND SEND AS/RECEIVE
+  '-- REQUIRES THE ADSI RESOURCE TOOL KIT INSTALL (IADsSecurity)
+  '-------------------------------------------------------------------------
+  strADsPath = strADsPath + "/cn=" &amp; DL.Alias
+  If DebugMode Then Debug.Print "Add owner: " &amp; DL.Owner
+
+  Dim sec As New ADsSecurity
+  ' You can also use -- Set sec = CreateObject("ADsSecurity") for late binding.
+  Dim sd As IADsSecurityDescriptor
+  Dim dacl As IADsAccessControlList
+  Dim ace As New AccessControlEntry
+
+  Set sd = sec.GetSecurityDescriptor(strADsPath)
+  ' An error in the ADsPath may cause a fatal error in Set dacl line!
+  If DebugMode Then Debug.Print "SD.Owner: " &amp; sd.Owner
+  Set dacl = sd.DiscretionaryAcl
+
+  ace.AccessMask = RIGHT_DS_MODIFY_USER_ATT Or RIGHT_MAIL_SEND_AS Or RIGHT_MAIL_RECEIVE_AS
+  ace.Trustee = "mydomain\user2"
+  dacl.AddAce ace
+  sd.DiscretionaryAcl = dacl
+  sec.SetSecurityDescriptor sd
+
+  ' Set return value for success.
+  CreateDL = -1
+
+  Exit_CreateDL:
+  ' Explicitly release objects.
+  Set sd = Nothing
+  Set dacl = Nothing
+  Set objNewDL = Nothing
+  Set objContainer = Nothing
+  Exit Function
+
+  Err_CreateDL:
+      ' Set return value for known error.
+      CreateDL = Err.Number
+      If DebugMode Then
+          Debug.Print "Error in CreateDL(): " &amp; Err.Number &amp; " (" &amp; Hex(Err.Number) &amp; ")"
+          Debug.Print "Error Description: " &amp; Err.Description
+      End If
+      Resume Exit_CreateDL
+
+  End Function
+
+5. In the CommandButton1_Click procedure, change the values for server,
+  organization, site, and so on, to match your environment and the properties
+  of the Distribution List to be created.
+
+6. Save and then run the project. Use the first button to fill the Distribution
+  List template. Use the second button to create the Distribution List, without
+  members. Use the third button to add members.
+
+Additional query words: xmrp
+
+======================================================================
+Keywords          : kbADSI kbMsg kbVBp kbGrpDSMsg kbDSupport 
+Technology        : kbAudDeveloper kbExchangeSearch kbADSISearch kbExchange550 kbZNotKeyword2 kbADSI250
+Version           : :2.5,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

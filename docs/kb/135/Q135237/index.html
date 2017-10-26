@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135237: Windows 95 Hangs at Hourglass Starting SNA Server Win 3.x App | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135237: Windows 95 Hangs at Hourglass Starting SNA Server Win 3.x App" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135237/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135237/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135237/","publisher":null,"image":null,"headline":"Q135237: Windows 95 Hangs at Hourglass Starting SNA Server Win 3.x App","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135237-windows-95-hangs-at-hourglass-starting-sna-server-win-3x-app">Q135237: Windows 95 Hangs at Hourglass Starting SNA Server Win 3.x App</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135237
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork sna4
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SNA Server Windows 3.x client software is supported on Windows 95. However,
+if the SNA Server client software is configured to use the "Microsoft Networking
+(named pipes)" interface and Windows 95 is configured with Microsoft
+IPX/SPX-compatible protocol (the default), starting an SNA Server Windows 3.x
+client application will cause Windows 95 to hang with an hourglass.
+
+At that point, you must enter CTRL+ALT+DEL to bring up the Windows 95 Close
+Program dialog, highlight the task named "SNA Server (Not responding)", choose
+"End Task", and confirm the selection by choosing "End Task" again.
+
+This causes the Windows 95 hourglass to disappear and the SNA Server Windows 3.x
+client process, WNAP.EXE, is stopped After that, the SNA Server Windows 3.x
+application can be stopped using the "End Task" option.
+
+
+CAUSE
+=====
+
+When the SNA Server Windows 3.x client software is configured to use the named
+pipes interface, the SNA Server client software always posts a
+DosReadAsyncNmPipe API call on the named pipe. This causes a Read request to
+always be posted to the server. While the Read request is outstanding, the SNA
+client software also may write data down the named pipe as well, so the SNA
+client makes use of the full-duplex nature of the named pipe API, supported over
+any LAN protocol provided by Windows 95 (that is, NetBEUI, IPX/SPX, TCP/IP, RAS,
+etc).
+
+However, if the Microsoft IPX/SPX-compatible transport is installed and the
+"direct-host" feature is enabled on Windows 95, this network interface only
+allows a single command to be outstanding on the client-server LAN session (that
+is, this only provides a half-duplex communication channel to the server). So,
+the SNA Server client named pipe interface does not work properly.
+
+To contrast, Windows 95 file and print redirection and SQL Server named pipe
+clients do work over "direct-host" IPX/SPX connections because only a single
+command is outstanding at a time (that is, the DosReadAsyncNmPipe call is not
+used).
+
+WORKAROUND
+==========
+
+Any of the following three workarounds can be used to resolve this problem:
+
+- If you wish to keep the Microsoft IPX/SPX Compatible protocol installed, the
+  IPX/SPX NetBIOS interface must be enabled and the directhost feature must be
+  disabled (see below for instructions),
+
+  To enable the NWLINK NetBIOS interface:
+  1. Click the Start button, point to Settings, and click Control Panel. The
+     Control Panel folder opens.
+
+  2. Double-click Network. The Network dialog box appears.
+
+  3. Select IPX/SPX-Compatible Protocol Properties, then choose the Properties
+     button. The IPX/SPX-Compatible Protocol Properties dialog box appears.
+
+  4. Choose (check) the I Want To Enable NetBIOS Over IPX/SPX check box. and
+     choose OK.
+
+  This change will take effect when you next start Windows 95.
+
+  To disable the IPX/SPX DirectHost feature:
+  1. Click the Start button, then click on Run. The Run dialog box appears.
+
+  2. Type "regedit" and choose OK. Registry Editor starts.
+
+  3. Open (click on the + next to) HKEY_LOCAL_MACHINE, then open System,
+     CurrentControlSet, Services, and then finally open VxD.
+
+  4. Select VNETSUP.
+
+  5. From the Edit menu, select New, then choose String Value. A new value
+     appears in the right pane.
+
+  6. If necessary, right click on the new item and choose Rename from the
+     context menu. Type DirectHost and press ENTER.
+
+  7. Right click on DirectHost and choose Modify. The Edit String dialog
+     appears.
+
+  8. Type 0 (zero) and choose OK.
+
+  9. Click on Registry then Exit to end the Registry Editor.
+
+  This change will take effect when you next start Windows 95
+
+  -or-
+
+- Keep the SNA Server named pipes interface enabled, remove the Microsoft
+  IPX/SPX-compatible transport and install a different Microsoft transport
+  (such as NetBEUI or TCP/IP) using the Windows 95 network control panel.
+
+  -or-
+
+- Configure the SNA Server Windows 3.x client software to use an interface
+  other than named pipes, by running the SNA Server client setup program
+  installed in the SNA Server client program group.
+
+Additional query words: prodsna Win95 directhost hang
+
+======================================================================
+Keywords          : kbinterop kbnetwork sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

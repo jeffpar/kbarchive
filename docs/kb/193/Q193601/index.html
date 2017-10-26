@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193601: Registry Parameters for Windows NT Load Balancing Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193601: Registry Parameters for Windows NT Load Balancing Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193601/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193601/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193601/","publisher":null,"image":null,"headline":"Q193601: Registry Parameters for Windows NT Load Balancing Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193601-registry-parameters-for-windows-nt-load-balancing-service">Q193601: Registry Parameters for Windows NT Load Balancing Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193601
+Product(s): Microsoft Windows NT
+Version(s): winnt:1.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Load Balancing Service 1.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The following registry parameters can be modified to change the behavior of
+Windows NT Load Balancing Service (WLBS).
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+The registry parameters for WLBS are specified under the following key:
+
+  
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WLBS\Parameters
+
+  AliveMsgPeriod
+  Data type = REG_DWORD
+  Range = 100 - 10000
+  Default = 1000
+  Specifies the period in milliseconds between "I am alive" status messages
+  broadcast by each host.
+
+  AliveMsgTolerance
+  Data type = REG_DWORD
+  Range = 5 - 100
+  Default = 5
+  Specifies the number of periods to wait after the last message from a host
+  before it is declared dead.
+
+  ClusterIPAddress
+  Data type = REG_SZ
+  Specifies the IP address of the WLBS cluster (also configurable through the
+  GUI).
+
+  ClusterName
+  Data type = REG_SZ
+  Specifies the name used of the WLBS cluster (also configurable through the
+  GUI).
+
+  ClusterNetworkAddress
+  Data type = REG_SZ
+  Specifies the media access control address used by the WLBS cluster (also
+  configurable through the GUI).
+
+  ClusterNetworkMask
+  Data type = REG_SZ
+  Specifies the network mask used by the WLBS cluster (also configurable through
+  the GUI).
+
+  ClusterModeOnStart
+  Data type = REG_DWORD
+  Range = 0 or 1
+  Default = 0
+  Specifies whether WLBS should start on boot up (also configurable through the
+  GUI).
+
+  ConnectionCleanupDelay
+  Data type = REG_DWORD
+  Range = 0 - 3600000
+  Default = 300000
+  Specifies TCP connection cleanup delay between cluster mode restarts in
+  milliseconds.
+
+  DedicatedIPAddress
+  Data type = REG_SZ
+  Specifies the dedicated IP address of the WLBS host's NIC (also configurable
+  through the GUI).
+
+  DedicatedNetworkMask
+  Data type = REG_SZ
+  Specifies the dedicated network mask of the WLBS host's NIC (also configurable
+  through the GUI).
+
+  DescriptorsPerAlloc
+  Data type = REG_DWORD
+  Range = 16 - 1024
+  Default = 512 Specifies the number of connection descriptors allocated at a
+  time.
+
+  HostPriority
+  Data type = REG_DWORD
+  Range = 1 - 32
+  Default = 1
+  Specifies the value for the Host Priority (also configurable through the GUI).
+
+  IPToMACEnable
+  Data type = REG_DWORD
+  Range = 0 or 1
+  Default = 0
+  Enables automatic network address derivation from primary cluster IP address.
+
+  LicenseKey
+  Data type = REG_SZ
+  Specifies the license key used by the WLBS cluster (also configurable through
+  the GUI).
+
+  MaxDescriptorsAlloc
+  Data type = REG_DWORD
+  Range = 1 - 512
+  Default = 512
+  Specifies the maximum number of times connection descriptors can be allocated.
+
+  MaskSourceMAC
+  Data type = REG_DWORD
+  Range = 0 or 1
+  Default = 1
+  Set to 1 masks source media access control address in outbound packets,
+  preventing switches from learning and forcing them to broadcast packets for
+  unknown addresses to all ports. Set to 0 disables masking of the media access
+  control address.
+
+  MulticastSupportEnable
+  Data type = REG_DWORD
+  Range = 0 or 1
+  Default = 0
+  Enables multicast mode.
+
+  MulticastARPEnable
+  Data type = REG_DWORD
+  Range = 0 or 1
+  Default = 0
+  Enables ARPing from cluster IP to multicast media access control in multicast
+  mode.
+
+  NBTSupportEnable
+  Data type = REG_DWORD
+  Range = 0 or 1
+  Default = 1
+  Enables NBT cluster computer name support.
+
+  RemoteControlEnabled
+  Data type = REG_DWORD
+  Range = 0 or 1
+  Default = 1
+  Enables remote control.
+
+  RemoteControlUDPPort
+  Data type = REG_DWORD
+  Range = 1 - 65535
+  Default = 2504
+  Specifies remote control UDP port for WLBS to use.
+
+Additional query words: Convoy WLBS
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTLBS100 kbWinNTLBSSearch
+Version           : winnt:1.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

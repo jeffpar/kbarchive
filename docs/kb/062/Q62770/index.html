@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q62770: Must Load PROISAM or PROISAMD to Use ISAM Utilities | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q62770: Must Load PROISAM or PROISAMD to Use ISAM Utilities" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/062/Q62770/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/062/Q62770/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/062/Q62770/","publisher":null,"image":null,"headline":"Q62770: Must Load PROISAM or PROISAMD to Use ISAM Utilities","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q62770-must-load-proisam-or-proisamd-to-use-isam-utilities">Q62770: Must Load PROISAM or PROISAMD to Use ISAM Utilities</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q62770
+Product(s): See article
+Version(s): 7.00 7.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S900509-65 | mspl13_basic
+Last Modified: 8-AUG-1990
+
+As stated on Page 389 of the "Microsoft BASIC 7.0: Programmer's Guide"
+for versions 7.00 and 7.10, when using the ISAM utilities ISAMIO,
+ISAMCVT, or ISAMPACK, you must have the ISAM support installed.
+
+Depending on how you ran SETUP.EXE, the ISAM utilities ISAMIO.EXE,
+ISAMCVT.EXE, and ISAMPACK.EXE are built either to run as stand-alone
+programs or to require the terminate-and-stay-resident (TSR) form of
+ISAM (PROISAMD.EXE). SETUP always installs the ISAMREPR.EXE (ISAM
+repair) utility to run as a stand-alone program. For more information
+about how SETUP installs the ISAM utilities, search for a separate
+article in this Knowledge Base with the following words:
+
+   how and SETUP and builds and ISAMIO
+
+This information applies to Microsoft BASIC Professional Development
+System (PDS) versions 7.00 and 7.10 for MS-DOS.
+
+The following table describes what each of the ISAM utilities does:
+
+   Utility Name        Use
+   ------------        ---
+
+   ISAMREPR            Repairs or rebuilds database
+
+   ISAMCVT             Converts other ISAM file types to the ISAM
+                       format used by BASIC PDS 7.00
+
+   ISAMPACK            Rotates all deleted records to the end of the
+                       ISAM file, and if a 32K section is marked for
+                       deletion, it decreases the size of the data
+                       file by 32K
+
+   ISAMIO              Converts to or from simple ASCII text files and
+                       ISAM files
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

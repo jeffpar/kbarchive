@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80491: MS-DOS Upgrade Detects Current MS-DOS in Root Directory | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80491: MS-DOS Upgrade Detects Current MS-DOS in Root Directory" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80491/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80491/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80491/","publisher":null,"image":null,"headline":"Q80491: MS-DOS Upgrade Detects Current MS-DOS in Root Directory","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80491-ms-dos-upgrade-detects-current-ms-dos-in-root-directory">Q80491: MS-DOS Upgrade Detects Current MS-DOS in Root Directory</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80491
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+During the MS-DOS Upgrade installation, the following message may be displayed:
+
+  Setup detected some of your original DOS files in the root directory of your
+  hard disk. To avoid a version conflict, you should exit Setup and then copy
+  your original DOS files to a subdirectory. Then delete these files from the
+  root directory of your hard disk and restart Setup.
+
+This message indicates that you must remove any MS-DOS files from the root
+directory and place them in a separate subdirectory before the Setup program can
+continue.
+
+MORE INFORMATION
+================
+
+The above error message occurs because MS-DOS 5.0 tries to store the old MS-DOS
+files in an OLD_DOS.X subdirectory (where "X" represents the particular
+installation of MS-DOS 5.0). If the Setup program identifies certain files in
+the root directory, it assumes that MS-DOS was installed in the root.
+
+If Setup determines MS-DOS files are in the root directory, you must create
+another subdirectory (for example, C:\MSDOS) and copy the MS-DOS files from the
+root into this directory. Next, delete the MS-DOS files from the root. Note: The
+following MS-DOS system files should remain in the root:
+
+  PC-DOS          MS-DOS
+  ------          ------
+
+  IBMBIO.COM      IO.SYS
+  IBMDOS.COM      MSDOS.SYS
+  COMMAND.COM     COMMAND.COM
+  *.INI           *.INI
+                  DBLSPACE.BIN        ; MS-DOS 6.0 and 6.2
+
+The following is a possible workaround to the above error message:
+
+1. Have a system/boot disk available.
+
+2. Create a new subdirectory on the hard drive. For example, type the following
+  at a command prompt (from the root C:\&gt; directory):
+
+  "md olddos" (without the quotation marks)
+
+3. Copy all files from the root directory into the new subdirectory. For
+  example, type:
+
+  "copy c:\*.* c:\olddos" (without the quotation marks)
+
+4. Use the ATTRIB command to make COMMAND.COM, CONFIG.SYS, and AUTOEXEC.BAT
+  read-only by typing the following at the command prompt:
+
+  " attrib +r command.com
+  attrib +r config.sys
+  attrib +r autoexec.bat" (without the quotation marks)
+
+5. Check the CONFIG.SYS and AUTOEXEC.BAT files to ensure there are no device
+  drivers or programs being loaded from the root directory that are required to
+  boot the machine (for example, Disk Manager [DMDRVR.BIN] or Speed Store
+  [SSTOR.SYS, HARDDRV.SYS]). If a required device driver or program is
+  identified, use step 3 to make the files read-only.
+
+6. Delete all files from the root directory with the following command:
+
+  " del c:\*.*" (without the quotation marks)
+
+7. Use the ATTRIB command to change the files in the root directory back to
+  normal to allow the MS-DOS 5.0 Setup program to access them. Use the
+  following syntax:
+
+  attrib -r config.sys
+  attrib -r autoexec.bat
+  attrib -r command.com
+
+  Note: Be sure to follow the above syntax to restore any device drivers or
+  programs to normal status.
+
+8. Run the MS-DOS 5 Upgrade Setup program.
+
+Additional query words: 5.00 5.00a 6.00 6.20 6.21 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q273668: Event 1339 Messages Are Logged When You Use Host Security | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q273668: Event 1339 Messages Are Logged When You Use Host Security" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/273/Q273668/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/273/Q273668/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/273/Q273668/","publisher":null,"image":null,"headline":"Q273668: Event 1339 Messages Are Logged When You Use Host Security","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q273668-event-1339-messages-are-logged-when-you-use-host-security">Q273668: Event 1339 Messages Are Logged When You Use Host Security</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q273668
+Product(s): Microsoft SNA Server
+Version(s): 
+Operating System(s): 
+Keyword(s): kbDSupport kbhis2000
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A system that is running the SNA Host Account Cache (User Credential Database)
+service that is included with Host Integration Server (HIS) 2000 may log the
+following event in the Application Event Log:
+
+  Event ID: 1339
+  Source: SNA Host Security
+  Description: The request database access is denied for the client account:
+  NTAUTHORITY\\SYSTEM
+
+NOTE: The event description may only contain two backslashes (\\) for the client
+account.
+
+In this case, the Event 1339 is benign and does not cause any problems with host
+security functionality.
+
+CAUSE
+=====
+
+The Windows Management Instrumentation (WinMgmt.exe) service causes the SNA
+Manage Agent (MngAgent.exe) service to send a UDI_GET_VALID_DOMS_NT request to
+the SNA Host Account Cache database under some circumstances.
+
+WinMgmt.exe runs under the local system account and this account cannot be
+authenticated by the Host Account Cache database. The failure to authenticate
+this account results in the Event 1339 being logged in the Application Event
+Log.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+
+MORE INFORMATION
+================
+
+If HIS 2000 and the HIS 2000 clients are configured to use Active Directory, HIS
+2000 clients will use WMI calls to retrieve specific configuration information
+from HIS 2000 servers. For example, a client that is running a 3270 emulator
+will make a WMI call to determine what 3270 LUs are assigned to the user who is
+making the request.
+
+If host security is being used, these WMI calls may result in a
+UDI_GET_VALID_DOMS_NT call being sent to the Host Account Cache database by
+MngAgent.exe on the behalf of WinMgmt.exe.
+
+The following are two scenarios that appear to generate the Event 1339 messages:
+
+- Running the 3270 client.
+
+- Running the 5250 client and then on the Session menu, clicking Session
+  Configuration to select a remote APPC LU alias.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbhis2000 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

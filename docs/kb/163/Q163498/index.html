@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163498: XCLN: Resource Kit Utility: How to Install and use Autofill.exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163498: XCLN: Resource Kit Utility: How to Install and use Autofill.exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163498/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163498/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163498/","publisher":null,"image":null,"headline":"Q163498: XCLN: Resource Kit Utility: How to Install and use Autofill.exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163498-xcln-resource-kit-utility-how-to-install-and-use-autofillexe">Q163498: XCLN: Resource Kit Utility: How to Install and use Autofill.exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163498
+Product(s): Microsoft Exchange
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 08-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, version 4.0 
+- Microsoft Exchange Windows NT client, version 4.0 
+- Microsoft Exchange Windows 95/98 client, version 4.0 
+-------------------------------------------------------------------------------
+
+Autofill.exe is a Resource Kit utility and is provided as is (ETS does not
+provide support for this utility).
+
+SUMMARY
+=======
+
+Autofill.exe, a Microsoft Exchange Resource Kit utility, can assist in resolving
+display names as you enter them in the Microsoft Exchange Client.
+
+Similar to the nickname functionality of the Microsoft Outlook Client, with this
+utility the Microsoft Exchange Client attempts to resolve names as they are
+typed in the client.
+
+MORE INFORMATION
+================
+
+Currently, this utility is available on Microsoft's Web site at the following
+location:
+
+  http://www.microsoft.com/msdownload/borkclient/07000.htm
+
+The download is a self-extracting zip (autofill.exe) that extracts the following
+2 files:
+
+  autofill.dll   55KB   8/13/96
+  setup.exe      27KB   8/13/96
+
+After unzipping the files into a test directory, go to a command prompt and from
+the directory where you downloaded the utility, type:
+
+  setup
+
+and press the Enter key. The following should be displayed:
+
+  Creating the file: C:\autofill\names.dat
+  Setting Reg for autofill to : 4.0;c:\autofill\autofill.dll;1
+
+Note: Do not manually create an Autofill directory or the setup program will
+fail. Also running setup from within windows (doubleclicking setup.exe) will
+prevent you from viewing the status (i.e. errors) of the setup.
+
+The setup process does the following:
+
+- Creates an Autofill directory.
+
+- Creates a Names.dat file in the autofill folder.
+
+- Copies Autofill.dll to the Autofill directory.
+
+- Updates the Windows 95 registry to load this dll.
+
+Note: In the BackOffice Resource Kit 2.0 setup, there is an option to install
+Client components locally. If the Local option is selected, the various client
+extensions for autofill are added and autofill is enabled.
+
+To demonstrate the autofill feature:
+
+1. Start the Microsoft Exchange Client.
+
+2. Compose a new message and type a username on the To: line and perform a check
+  names (the name should underline). For example, type:
+
+  John Doe
+
+3. Exit out of the newly composed message.
+
+4. Compose another new message and begin typing the same username as in step 1.
+
+As soon as you begin typing the username (in this case, the J) the username
+should expand to the full username John Doe.
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : 4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

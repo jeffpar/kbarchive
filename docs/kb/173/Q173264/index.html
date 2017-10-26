@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173264: HOWTO: Internet Transfer Control Using Username and Password | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173264: HOWTO: Internet Transfer Control Using Username and Password" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173264/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173264/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173264/","publisher":null,"image":null,"headline":"Q173264: HOWTO: Internet Transfer Control Using Username and Password","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173264-howto-internet-transfer-control-using-username-and-password">Q173264: HOWTO: Internet Transfer Control Using Username and Password</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173264
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbInternet kbVBp kbVBp500 kbVBp600 kbVS97sp1 kbInetDev kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When setting the Internet Transfer Control URL, Username, and Password
+properties programmatically, the order in which you do it is very important. If
+you don't set the URL property before the Username and Password properties, you
+will get the following error:
+
+  Run-time error '35754'
+  Unable to connect to remote host
+
+IMPORTANT: In the control shipped with Visual Basic 5.0 (not the Service Packs),
+the Username is sent as Anonymous if the URL property is not set first
+(regardless of the UserName and Password properties). So when connecting to an
+FTP server, you would be accessing the URL with the Anonymous credentials, not
+with the credentials you intended (according Username and Password Inet
+properties).
+
+NOTE: The Internet Transfer Control included with Visual Studio 97 Service Pack 2
+is unable to make an authenticated connection using the Username and Password
+properties. For more information, see the following article in the Microsoft
+Knowledge Base:
+
+  Q173265 : BUG: Internet Transfer Control (SP2) Username and Password
+
+Workaround
+----------
+
+This is sample code for setting the URL property before the Username and Password
+properties so you won't get the error described above: Inet1.URL =
+"ftp://YourFTPServer" Inet1.UserName = "Username" Inet1.Password = "Password"
+Notice the URL property is set before the Username and Password properties. Do
+not specify the URL again in the execute method.
+
+This information is also documented in the Visual Basic 5.0 Readme file.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Standard EXE project. Form1 is added by default.
+
+2. From the Project menu, click Components and select the Internet Transfer
+  Control 5.0 into the project if it is not already loaded.
+
+3. Place an Internet Transfer Control 5.0 (Inet1) on Form1 and add the following
+  code:
+
+        Private Sub Inet1_StateChanged(ByVal State As Integer)
+         Dim vtData As Variant ' Data variable.
+
+         Select Case State
+         ' ... Other cases not shown.
+         Case icError ' 11
+             ' In case of error, return ResponseCode and
+
+        ' ResponseInfo.
+             vtData = Inet1.ResponseCode &amp; ":" &amp; _
+             Inet1.ResponseInfo
+
+         Case icResponseCompleted  ' 12
+             Dim strData As String: strData = ""
+             Dim bDone As Boolean: bDone = False
+
+             ' Get first chunk.
+             vtData = Inet1.GetChunk(1024, icString)
+             DoEvents
+
+             Do While Not bDone
+
+                 strData = strData &amp; vtData
+                 ' Get next chunk.
+                 vtData = Inet1.GetChunk(1024, icString)
+                 DoEvents
+
+                 If Len(vtData) = 0 Then
+                     bDone = True
+                 End If
+             Loop
+
+            MsgBox strData
+         End Select
+        End Sub
+
+4. Place a CommandButton (Command1) on Form1 and add the following code:
+
+        Private Sub Command1_Click()
+            Inet1.UserName = "Username"
+            Inet1.Password = "Password"
+            Inet1.URL = "ftp://YourFTPServer"
+            Inet1.Execute , "DIR"
+       End Sub
+
+5. From the Run menu, click Start (ALT, R, S) or press the F5 key to run the
+  program. Click the Command1 button, and you will see error described above.
+
+REFERENCES
+==========
+
+Visual Basic 5.0 Readme.hlp file; search on topic: "Internet Transfer Control:
+Set URL Before Password and UserName"
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbVBp kbVBp500 kbVBp600 kbVS97sp1 kbInetDev kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

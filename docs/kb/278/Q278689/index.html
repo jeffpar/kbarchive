@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q278689: XADM: How to Manually Create a User.dmp File with Dr.Watson | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q278689: XADM: How to Manually Create a User.dmp File with Dr.Watson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/278/Q278689/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/278/Q278689/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/278/Q278689/","publisher":null,"image":null,"headline":"Q278689: XADM: How to Manually Create a User.dmp File with Dr.Watson","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q278689-xadm--how-to-manually-create-a-userdmp-file-with-drwatson">Q278689: XADM:  How to Manually Create a User.dmp File with Dr.Watson</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q278689
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+- Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Microsoft Windows default troubleshooting
+feature, Dr. Watson, to create a User.dmp file.
+
+MORE INFORMATION
+================
+
+Dr.Watson is the Microsoft Windows NT and Windows 2000 just-in-time default
+troubleshooting feature. If you configure Dr.Watson as the default
+troubleshooting feature, the feature is activated when a program such as the
+Microsoft Exchange information store experiences an unhandled exception. This
+behavior results in an access violation, and the program quits. Additionally,
+you can manually activate Dr. Watson to quit a program and create a User.dmp
+file and a Drwtsn32.log file. You can also use this feature to determine whether
+Dr.Watson can successfully create a User.dmp file on the local computer.
+
+The default configuration for Dr.Watson can vary and it depends on the Windows
+platform. To view the default configuration, click Start, click Run, and then
+type "drwtsn32" (without the quotation marks). The following information reports
+the differences between Windows NT and Windows 2000.
+
+NOTE: Options that are not mentioned are the same for both platforms.
+
+For Windows NT 4.0:
+
+- The log file (Drwtsn32.log) path is &lt;Windir&gt; (Winnt).
+
+- The crash dump (User.dmp) path is &lt;Windir&gt;\user.dmp.
+
+- The Visual Notification option is enabled.
+
+For Windows 2000:
+
+- The log file (Drwtsn32.log) path is C:\Documents and Settings\All
+  Users\Documents\DrWatson.
+
+- The crash dump (User.dmp) path is C:\Documents and Settings\All
+  Users\Documents\DrWatson\User.dmp.
+
+- The Visual Notification option is not enabled.
+
+To manually activate Dr.Watson on either platform, follow these steps:
+
+1. Determine the Process Identification Number for the program that you want to
+  quit. To do this, start Task Manager, and then click the Processes tab. In
+  the Image Name column, locate the program, and then note the Process
+  Identification Number.
+
+2. Quit Task Manager.
+
+3. Click Start, click Run, and then type "drwtsn32 -p &lt;PID Number&gt;"
+  (without the quotation marks).
+
+  where &lt;PID Number&gt; is the Process Identification Number determined in
+  step one.
+
+4. For Windows NT 4.0:
+
+  In the Dr.Watson dialog box that is displayed, click OK. The Drwtsn32.log and
+  User.dmp file can be found in the location that is noted at the beginning of
+  this section.
+
+  For Windows 2000:
+
+  You do not receive notification because the Visual Notification option is not
+  enabled by default. The Drwtsn32.log and User.dmp file can be found in the
+  location that is noted at the beginning of this section.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

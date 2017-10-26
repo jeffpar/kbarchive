@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137295: How to Convert Memo Fields into Embedded Word Documents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137295: How to Convert Memo Fields into Embedded Word Documents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137295/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137295/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137295/","publisher":null,"image":null,"headline":"Q137295: How to Convert Memo Fields into Embedded Word Documents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137295-how-to-convert-memo-fields-into-embedded-word-documents">Q137295: How to Convert Memo Fields into Embedded Word Documents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137295
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.6a,3.0b; WINDOWS:3.0,6.0
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp600
+Last Modified: 06-JUL-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for Macintosh, version 2.6a 
+- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to take the text from a memo field and create
+a Microsoft Word document that can be embedded in a general field to allow easy
+use of the data within Word. The sample code in this article does it by by
+scanning through the table and replacing the general field for the record with a
+word document containing the memo text for each record that contains data in the
+memo field.
+
+MORE INFORMATION
+================
+
+For the code samples in thie article to work, you must have Microsoft Word
+version 6.0 installed and properly registered for OLE support. For the Macintosh
+code sample to work, you must run Microsoft Word 6.0 to set the file Creator and
+Type, and you must specify the class for the document in the APPEND GENERAL
+command.
+
+Macintosh Code Sample
+---------------------
+
+  * This code creates a .dbf file that holds a memo and a
+  * general field and creates an embedded Microsoft Word 6.0 document
+  * in the corresponding general field (mygen) for any record where
+  * the memo field (mymemo) contains text. It also reports the number
+  * of converted memo values in the statusbar as it goes.
+  * In the fname="MacHD:TEMPSTUF.TXT" line, replace MacHD with the
+  * actual name of your Mac hard disk drive volume.
+
+  CREATE TABLE test ;
+       (mymemo M, mygen G)
+  INSERT INTO test (mymemo ) ;
+       VALUES ('Hello, this is a test')
+  INSERT INTO test (mymemo) ;
+       VALUES ('Test record number 2')
+  COUNT=0
+  SET LIBRARY TO foxtools
+  * Use the following line in Visual FoxPro for Macintosh
+  * SET LIBRARY TO foxtools.slm
+
+  SET SAFETY OFF
+  fname="MacHD:TEMPSTUF.TXT"                &amp;&amp; temporary file
+   name
+  GO TOP
+  SCAN
+       IF MEMLINES(mymemo )&gt;0               &amp;&amp; text in the memo?
+            COPY MEMO mymemo TO (fname)     &amp;&amp; macro sub the filename
+
+            B=fxsettype(fname,"W6BN","MSWD")
+            * W6BN,MSWD is the Type and Creator for a Word 6 document
+            IF B!=0
+                 WAIT WINDOW "problem with FxSetType()"
+            ENDIF
+       * Replaces the general field (mygen) with an embedded Word Doc
+            APPEND GENERAL mygen FROM (fname) CLASS word.document.6
+
+            COUNT=COUNT+1          &amp;&amp; increment number created
+            SET MESSAGE TO STR(COUNT)     &amp;&amp; display count on statusbar
+       ENDIF
+  ENDSCAN
+  DELETE FILE (fname)                         &amp;&amp; remove temp file
+
+Windows Visual Foxpro Code Sample
+---------------------------------
+
+
+  *  This code creates a .dbf file that has a memo and a
+  *  general field. It creates an embedded Microsoft Word document
+  *  in the corresponding general field (mygen) for any record where
+  *  the memo field (mymemo) contains text. It also shows the number
+  *  of converted memo values in the statusbar as it goes. A temporary
+  *  file is created and then deleted from the FoxPro startup directory.
+
+  CREATE TABLE test ;
+       (mymemo M, mygen G)
+  INSERT INTO test (mymemo) ;
+       VALUES ('Hello, this is a test')
+  INSERT INTO test (mymemo) ;
+       VALUES ('Test record number 2')
+
+  COUNT=0
+  maindir=sys(2004)
+  OLD=SET('SAFETY')
+  SET SAFETY OFF
+  FNAME=maindir+"tempdoc.doc"               &amp;&amp; Tempfile
+  GO TOP
+  SCAN
+       IF !EMPTY(mymemo)                    &amp;&amp; Anything in the Memo?
+            DELETE FILE maindir+"tempdoc.doc"
+            COPY MEMO mymemo TO &amp;fname
+            APPEND GENERAL mygen FROM &amp;fname
+            COUNT=COUNT+1
+            SET MESSAGE TO STR(COUNT)
+       ENDIF
+  ENDSCAN
+  DELETE FILE maindir+"tempdoc.doc"          &amp;&amp; remove temp file
+  SET SAFETY &amp;old
+  SET MESSAGE TO
+
+Additional query words: vFoxMac VFoxWin FoxMac
+
+======================================================================
+Keywords          : kbvfp300 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac kbVFP300 kbVFP600
+Version           : MACINTOSH:2.6a,3.0b; WINDOWS:3.0,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

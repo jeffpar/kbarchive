@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152937: XADM: Multipart MIME Message with TNEF Causes Store Failure | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152937: XADM: Multipart MIME Message with TNEF Causes Store Failure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152937/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152937/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152937/","publisher":null,"image":null,"headline":"Q152937: XADM: Multipart MIME Message with TNEF Causes Store Failure","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152937-xadm-multipart-mime-message-with-tnef-causes-store-failure">Q152937: XADM: Multipart MIME Message with TNEF Causes Store Failure</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152937
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 28-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Receiving a multipart MIME message from a foreign SMTP system can cause the
+Microsoft Exchange Server information store to fail with an access violation.
+The Windows NT Event Viewer Application log may show the following information:
+
+  Event ID: 4097
+  Source: DrWatson
+  Description:
+  The application, store.dbg, generated an application error The error occurred
+  on 8/27/1997 @ 13:42:45.955 The exception generated was c0000005 at address
+  004727e0 (CmnBptMessage::cleanTNEF)
+
+Specific information about the failure is contained in the "More Information"
+section of this article.
+
+CAUSE
+=====
+
+A MIME Content-Type: application/ms-tnef bodypart was returned from a foreign
+SMTP mail system in a manner that caused the information store to fail during
+inbound processing.
+
+
+WORKAROUND
+==========
+
+One way to work around this issue is to prevent the sending of the MIME
+Content-Type application/ms-tnef bodyparts (Rich-Text Information) to Internet
+e-mail domains that do not have systems that handle it. This would prevent the
+foreign system from returning ms-tnef bodyparts to a Microsoft Exchange
+environment on forwarded mail.
+
+This can be accomplished by using Microsoft Exchange Administrator program and
+configuring the Microsoft Exchange Server Internet Mail Service by performing
+the following steps:
+
+1. Open the Internet Mail property page.
+
+2. Under Specify Message Content by E-Mail Domain:, click the E-Mail Domain
+  button.
+
+3. Click Add and the Add E-Mail Domain dialog box appears.
+
+4. In the E-Mail Domain edit window, add the Internet E-Mail Domain you do not
+  want send Rich-Text Format to. For example, foreign.system.com.
+
+5. In the Send Attachments Using pane, click Interoperability.
+
+6. In the Send Microsoft Exchange Rich Text Formatting list, select Never.
+
+7. Click OK until all the open dialog boxes are closed. This accepts your
+  changes.
+
+For additional information about the purpose of the Content-Type:
+application/ms-tnef message body, please refer to the following article in the
+Microsoft Knowledge Base:
+
+  Q136204 XCLN: Sending Messages In Rich-Text Format
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Looking in the Drwtsn32.log file may reveal failure information as follows:
+
+Application exception occurred:
+App: store.dbg (pid=370)
+When: 8/27/1997 @ 13:42:45.955
+Exception number: c0000005 (access violation)
+
+State Dump for Thread Id 0x1b6
+
+eax=000000b0 ebx=036b500c ecx=036be934 edx=ffffffff esi=036be934
+edi=011ff9cc
+eip=004727e0 esp=06edb73c ebp=011ffafc iopl=0 nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000     efl=00000206
+
+function: CmnBptMessage::cleanTNEF
+004727d0 56               push    esi
+004727d1 8b81c4000000     mov     eax,[ecx+0xc4]
+ds:036be9f8=011e0000
+004727d7 8bf1             mov     esi,ecx
+004727d9 85c0             test    eax,eax
+004727db 7410             jz      CmnBptMessage::cleanTNEF+0x1d
+(004727ed)
+004727dd 50               push    eax
+004727de 8b00             mov     eax,[eax]
+ds:000000b0=????????
+FAULT -&gt;004727e0 ff5008           call    dword ptr [eax+0x8]
+ds:00f2eab6=????????
+004727e3 c786c400000000000000
+ds:036be9f8=011e0000
+mov     dword ptr [esi+0xc4],0x0
+004727ed 8b86c8000000     mov     eax,[esi+0xc8]
+ds:036be9fc=00405298
+004727f3 85c0             test    eax,eax
+004727f5 7410             jz      CmnBptMessage::cleanTNEF+0x37
+(00472807)
+004727f7 50               push    eax
+004727f8 8b00             mov     eax,[eax]
+ds:000000b0=????????
+004727fa ff5008           call    dword ptr [eax+0x8]
+ds:00f2eab6=????????
+004727fd c786c800000000000000
+ds:036be9fc=00405298
+mov     dword ptr [esi+0xc8],0x0
+00472807 8b86cc000000     mov     eax,[esi+0xcc]
+ds:036bea00=011ace8c
+0047280d 85c0             test    eax,eax
+0047280f 7410             jz      CmnBptMessage::cleanTNEF+0x51
+(00472821)
+
+*----&gt; Stack Back Trace &lt;----*
+
+FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+06edb740 004e66c6 00000000 00405e08 036b500c 00001feb
+store!CmnBptMessage::cleanTNEF
+06edb75c 004d6d27 036b500c 011ff9cc 036bbd7e 0000028e
+store!CmcvtrBptEnd::hrExtract
+06edb78c 004e4be1 06edb828 00001feb 06edb7ac 00000000
+store!CINETextr::hrExtract
+06edb7cc 004e4a1c 036b1c6c 06edb828 00001feb 06edb824
+store!CConvertStream::Write
+06edb7f4 005679c1 06edb828 00001feb 06edb824 00000001
+store!CSTREAM::HrWrite
+06edf824 004e4a92 00005feb 00000000 011ee4bc 00000000
+store!CSTREAM::EcRewriteAfterRewindError
+06edf83c 00471604 03705844 00005feb 06edf89c 00000000
+store!CSTREAM::HrWrite
+06edf874 00471515 00005feb 03705844 06edf89c 00000000
+store!EcWriteStreamOp
+06edf89c 0040f3eb 00000000 00000031 00000000 06edf948
+store!EcWriteStream
+06edf90c 0040ec1e 06edf928 00006400 06edf92c 06edfb38 store!EcRpc
+06edf928 77e11841 0016a708 037056e4 001802d0 00006400 store!EcDoRpc
+06edf948 77e52265 0040ebe0 06edfb3c 00000004 06edfb50
+rpcrt4!I_RpcFreeBuffer
+06edf964 77e52236 0040ebe0 06edfb3c 00000004 ffffffff rpcrt4!NdrStubCall
+06edfc28 77e51f9e 00000000 00000000 06edfe08 06edfc40 rpcrt4!NdrStubCall
+06edfc7c 77e11122 00410230 06edfe08 06edfdc4 00000000
+rpcrt4!NdrServerCall
+06edfcd0 77e112fb 06edfe08 00000000 06edfdc4 00153418 rpcrt4!&lt;nosymbols&gt;
+06edfcf0 77e119cf 06edfe08 00000000 06edfdc4 06edfe68
+rpcrt4!I_RpcGetBuffer
+06edfdc8 77e12b98 00143a08 06edfe68 06edfe08 06edfe3c
+rpcrt4!I_RpcFreeBuffer
+06edfe40 77e15fff 00143a08 06edfe68 00000000 001693e8
+rpcrt4!NdrPointerFree
+06edff90 77e162f0 77e163e5 00152268 06edffec 00000000
+rpcrt4!NdrOleAllocate
+00003a98 00000000 00000000 00000000 00000000 00000000
+rpcrt4!NdrOleAllocate
+
+Additional query words: crash access violation failure store msexchangeis
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

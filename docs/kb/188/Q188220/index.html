@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188220: NTOP May Cause Win95 Clients To Fail When Using CMAK | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188220: NTOP May Cause Win95 Clients To Fail When Using CMAK" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188220/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188220/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188220/","publisher":null,"image":null,"headline":"Q188220: NTOP May Cause Win95 Clients To Fail When Using CMAK","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188220-ntop-may-cause-win95-clients-to-fail-when-using-cmak">Q188220: NTOP May Cause Win95 Clients To Fail When Using CMAK</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188220
+Product(s): Internet Information Server
+Version(s): WINDOWS:95; winnt:1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT version 4.0 Option Pack 
+- Microsoft Internet Authentication Services for Remote Access Service version 1.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use a localized version of the Microsoft Windows NT Option Pack NTOP,
+you may cause Windows 95 computers to get load errors when trying to run
+Explorer if a CMAK profile has been downloaded to the client machines and
+installed.
+
+CAUSE
+=====
+
+The Windows NT Option Pack comes with Internet Connection services for RAS. This
+allows administrators to create customized connection scripts for their clients.
+This is done through a self-extracting installer that installs the profile
+manager and dependent files. One of these dependent files is Comctl32.dll. The
+profile, when downloaded and installed to the client, overwrites a Windows 95
+compliant version of Comctl32.dll with a Windows NT specific version. This
+causes load errors when you try to run Windows 95 Explorer and other
+Comctl32.dll dependent applications.
+
+RESOLUTION
+==========
+
+This issue will be resolved in the next update to the Windows NT Option Pack.
+You can also update the Windows NT Server that has the Windows NT Option Pack
+installed with the latest version of Comctl32.dll located at:
+
+  http://www.microsoft.com/msdn/downloads/files/40Comupd.htm
+
+The default directory to make the file update is:
+
+  \Program Files\CMAK\cm32\jpn\ (comctl32.dll is located in this directory)
+
+There is also a hotfix available. The file size and date is below:
+
+  03/30/97  03:00p               379,152 Comctl32.dll   (i386)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Windows NT Option
+Pack version 1.0 (localized versions only, U.S versions are not effected).
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWin95search kbZNotKeyword6 kbZNotKeyword3 kbWinNT400OptionPack kbIASRAS kbIASSearch
+Version           : WINDOWS:95; winnt:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q175503: HOWTO: Write a Dialog-based ActiveX Control Using ATL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q175503: HOWTO: Write a Dialog-based ActiveX Control Using ATL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/175/Q175503/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/175/Q175503/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/175/Q175503/","publisher":null,"image":null,"headline":"Q175503: HOWTO: Write a Dialog-based ActiveX Control Using ATL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q175503-howto-write-a-dialog-based-activex-control-using-atl">Q175503: HOWTO: Write a Dialog-based ActiveX Control Using ATL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q175503
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:2.0,2.1,3.0
+Operating System(s): 
+Keyword(s): kbActiveX kbATL200 kbATL210 kbCOMt kbCtrlCreate kbDlg kbATL300 kbGrpDSMFCATL
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL), versions 2.0, 2.1, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When writing ActiveX controls with the Active Template Library (ATL), it may be
+useful to create your control based on a dialog box template. This allows you to
+take advantage of the Visual C++ resource editor to lay out contained controls
+or to reuse existing MFC dialog box templates and Visual Basic forms.
+
+You add an ActiveX control to your ATL project by clicking New ATL Object on the
+Insert menu, and then clicking either Full Control or Internet Explorer Control.
+On completion, the ATL Object Wizard generates code that includes a class
+derived from CComControl, which further derives from CWindowImpl.
+
+This article demonstrates how to derive your control class from CDialogImpl and
+associate a dialog box template with this class. This article also demonstrates
+providing support for UI activation and navigation keys.
+
+MORE INFORMATION
+================
+
+1. Declare your own class, based on CComControl, which is derived from
+  CDialogImpl instead of CWindowImpl. The original definition of CComControl
+  can be found in ATLCTL.H. For example:
+
+        template &lt;class T&gt;
+        class ATL_NO_VTABLE CComDlgCtrl : public CComControlBase,
+           public CDialogImpl&lt;T&gt;
+        {
+        public:
+           CComDlgCtrl() : CComControlBase(m_hWnd) {}
+           HRESULT FireOnRequestEdit(DISPID dispID)
+           {
+              T* pT = static_cast&lt;T*&gt;(this);
+              return T::__ATL_PROP_NOTIFY_EVENT_CLASS::FireOnRequestEdit
+                 (pT-&gt;GetUnknown(), dispID);
+           }
+           HRESULT FireOnChanged(DISPID dispID)
+           {
+              T* pT = static_cast&lt;T*&gt;(this);
+              return T::__ATL_PROP_NOTIFY_EVENT_CLASS::FireOnChanged
+                 (pT-&gt;GetUnknown(), dispID);
+           }
+           virtual HRESULT ControlQueryInterface(const IID&amp; iid, void** ppv)
+           {
+              T* pT = static_cast&lt;T*&gt;(this);
+              return pT-&gt;_InternalQueryInterface(iid, ppv);
+           }
+           virtual HWND CreateControlWindow(HWND hWndParent, RECT&amp; rcPos)
+           {
+              T* pT = static_cast&lt;T*&gt;(this);
+              return pT-&gt;Create(hWndParent);
+              // CDialogImpl::Create differs from CWindowImpl
+           }
+        };
+
+2. Derive your control from this new class, instead of CComControl. For
+  example:
+
+        class ATL_NO_VTABLE CMyDlgCtrl :
+        ...
+           public CComDlgCtrl&lt;CMyDlgCtrl&gt;, // Replaced CComControl
+        ...
+
+3. Create your dialog template and make sure it is marked as a "Child" template.
+  This will set up correctly if you use the IDD_FORMVIEW dialog subtype when
+  creating the dialog box by clicking Resource on the Insert menu.
+
+  Update class definition to identify this resource. For example:
+
+        class ATL_NO_VTABLE CMyDlgCtrl :
+        ...
+        {
+        public:
+           enum { IDD = IDD_MYDIALOG };
+        ...
+
+4. Declare and implement a message handler for WM_INITDIALOG and any required
+  message, command, and notify handlers. For example:
+
+        BEGIN_MSG_MAP(CMyDlgCtrl)
+           MESSAGE_HANDLER(WM_INITDIALOG, OnInitDialog)
+           COMMAND_ID_HANDLER(IDC_SOMECOMMAND, OnSomeCommand)
+
+         // The next 3 lines are only for Visual C++ 6.0, and should
+         // replace the CHAIN_MSG_MAP() entry.
+           MESSAGE_HANDLER(WM_SETFOCUS, CComControlBase::OnSetFocus)
+           MESSAGE_HANDLER(WM_KILLFOCUS, CComControlBase::OnKillFocus)
+           MESSAGE_HANDLER(WM_MOUSEACTIVATE,
+              CComControlBase::OnMouseActivate)
+        END_MSG_MAP()
+
+        ...
+        LRESULT OnInitDialog(UINT uMsg,WPARAM wParam,LPARAM lParam,
+           BOOL&amp;bHandled)
+        {
+           InPlaceActivate( OLEIVERB_UIACTIVATE );
+           // Perform any dialog initialization
+           return FALSE;
+        }
+        LRESULT OnSomeCommand(WORD wNotifyCode,WORD wID,HWND hWndCtl,
+           BOOL&amp;bHandled)
+        {
+           // Perform operation for this command.
+           return 0;
+        }
+
+5. Remove the OnDraw declaration and implementation.
+
+6. If you want to handle UI activation of your control correctly, add a
+  WM_MOUSEACTIVATE message handler to call CComControl::InPlaceActivate. For
+  example:
+
+        BEGIN_MSG_MAP(CMyDlgCtrl)
+           ...
+           MESSAGE_HANDLER(WM_MOUSEACTIVATE, OnMouseActivate)
+        END_MSG_MAP()
+        ...
+        LRESULT OnMouseActivate(UINT uMsg,WPARAM wParam,LPARAM lParam,
+           BOOL&amp;bHandled)
+        {
+           // UI-Activate control
+           InPlaceActivate( OLEIVERB_UIACTIVATE );
+           return FALSE;
+        }
+
+  This step is required only for Visual C++ 5.0 and earlier. The MESSAGE_HANDLER
+  entry in step 4 above for WM_MOUSEACTIVATE calls
+  CComControlBase::OnMouseActivate(), which UI activates your control.
+
+7. If you want to handle tabbing and other navigation keys correctly, override
+  IOleInPlaceActiveObjectImpl::TranslateAccelerator. For example:
+
+        STDMETHOD(TranslateAccelerator)(MSG *pMsg)
+        {
+           if ( ( pMsg-&gt;message &lt; WM_KEYFIRST
+               || pMsg-&gt;message &gt; WM_KEYLAST )
+             &amp;&amp; ( pMsg-&gt;message &lt; WM_MOUSEFIRST
+               || pMsg-&gt;message &gt; WM_MOUSELAST ) )
+              return S_FALSE;
+           return ( IsDialogMessage( m_hWnd, pMsg ) ) ? S_OK : S_FALSE;
+        }
+
+8. Depending on how you created the control, you need to set the m_bWindowOnly
+  variable to 1 in your control's constructor to force the control to be
+  non-Windowless. For example:
+
+        CMyDlgCtrl()
+        {
+           m_bWindowOnly = 1;
+        }
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Mark Davis,
+Microsoft Corporation.
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Mark Davis, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbATL200 kbATL210 kbCOMt kbCtrlCreate kbDlg kbATL300 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbATLsearch kbATL200 kbATL300 kbATL210
+Version           : WINDOWS:2.0,2.1,3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

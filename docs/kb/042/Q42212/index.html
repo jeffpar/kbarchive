@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42212: /CO before /DO Causes Problems in LINK | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42212: /CO before /DO Causes Problems in LINK" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42212/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42212/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42212/","publisher":null,"image":null,"headline":"Q42212: /CO before /DO Causes Problems in LINK","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42212-co-before-do-causes-problems-in-link">Q42212: /CO before /DO Causes Problems in LINK</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42212
+Product(s): See article
+Version(s): 3.65 4.06 5.01
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | h_masm s_pascal h_fortran buglist3.65 buglist5.01 | mspl13_basic
+Last Modified: 28-MAR-1989
+
+When compiling or assembling with the /Zi switch to include CodeView
+symbolic information and linking with /CO to preserve it, the
+placement of the /DO switch is crucial. If the /CO switch is specified
+before /DO, the following behavior may occur when running CodeView:
+
+   Message                                Behavior
+
+   Enter directory for  (cr for none)?    When CodeView is executed,
+                                          no source code will appear.
+
+   Unable to open file
+
+   Internal debugger error: 13            When attempting to change
+                                          from assembly view to source
+                                          CodeView. Hanging of the
+                                          machine when executing
+                                          CodeView.
+
+If switching the order of the /CO and the /DO switches does not
+take care of the problem then you have to put the .DOSSEG into
+your MASM routines and not use the /DO switch.
+
+Microsoft has confirmed this to be a problem in Versions 3.65 and
+5.01. We are researching this problem and will post new information as
+it becomes available.
+
+While LINK Version 5.01 may be used in OS/2, the /DO switch has no
+meaning. Using it, however, causes the linker to GP fault if /CO
+precedes /DO.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

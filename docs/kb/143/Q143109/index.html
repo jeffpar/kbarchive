@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143109: BUG: Debugger Shows Incorrect &quot;this&quot; Pointer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143109: BUG: Debugger Shows Incorrect &quot;this&quot; Pointer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143109/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143109/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143109/","publisher":null,"image":null,"headline":"Q143109: BUG: Debugger Shows Incorrect &quot;this&quot; Pointer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143109-bug-debugger-shows-incorrect-this-pointer">Q143109: BUG: Debugger Shows Incorrect "this" Pointer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143109
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbDebug kbide kbVC500bug kbVC600bug
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual C++ 4.0, when you debug a class that uses multiple inheritance, the
+"this" pointer for any of the base classes that reside at an offset in the class
+are displayed incorrectly. Data for derived classes is not displayed correctly
+either because the debugger attempts to reference the data by using the invalid
+"this" pointer.
+
+In Visual C++ 4.1 or 4.2, only the value of "this" pointer is not shown
+correctly. All the members are displayed correctly.
+
+CAUSE
+=====
+
+The compiler produces incorrect debugging information causing a display error in
+the debugger only. The vtable entries themselves are correct, and programmatic
+access to the data produces the proper values.
+
+RESOLUTION
+==========
+
+The only way to work around this problem is to output the addresses to an output
+device. You may use a TRACE statement or cout() as shown in the sample code
+below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Sample Code to Demonstrate Problem
+----------------------------------
+
+  /* This code demonstrates the problem.
+     Compile options needed: none
+  */ 
+
+  #include &lt;iostream.h&gt;
+
+  // Class definitions
+  class A
+  {
+  protected:
+     int aint;
+  public:
+      virtual void fA(void) = 0;
+  };
+
+  class B
+  {
+  protected:
+     int bint;
+  public:
+      virtual void fB(void) = 0;
+  };
+
+  class AB : public A, public B
+  {
+  protected:
+     int abint;
+  public:
+      virtual void fAB(void);
+  };
+
+  class DAB : public AB
+  {
+  protected:
+     int dabint;
+  public:
+     DAB() {aint = 1; bint = 2; abint = 3; dabint = 4;}
+      void fA(void)
+      {
+          cout &lt;&lt; "DAB::fA - this=" &lt;&lt; this &lt;&lt; endl;
+      }
+      void fB(void)
+      {
+     // The "this" pointer will be displayed incorrectly in the
+     // locals window during the execution of this function. The
+     // address displayed in the output window will still be correct.
+
+          cout &lt;&lt; "DAB::fB - this=" &lt;&lt; this &lt;&lt; endl;
+
+     // The base class member variables "aint" and "bint" will be
+     // displayed incorrectly in the locals window, but the derived
+     // class member variables "abint" and "dabint" will be
+     // incorrect.  All will show correct values in the final output.
+
+        cout &lt;&lt; "aint: " &lt;&lt; aint &lt;&lt; " bint: " &lt;&lt; bint
+           &lt;&lt; " abint: " &lt;&lt; abint &lt;&lt; " dabint: " &lt;&lt; dabint &lt;&lt;
+   endl;
+      }
+  };
+
+  void AB::fAB(void)
+  {
+      cout &lt;&lt; "AB::fAB - this=" &lt;&lt; hex &lt;&lt; this &lt;&lt; endl;
+      fA();
+      fB();
+  }
+
+  void main()
+  {
+      DAB dab;
+      dab.fAB();
+  }
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbCompiler kbDebug kbide kbVC500bug kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

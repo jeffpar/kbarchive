@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236935: PRB: C1001 Internal Compiler Error After Installing VC++ SP3 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236935: PRB: C1001 Internal Compiler Error After Installing VC++ SP3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236935/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236935/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236935/","publisher":null,"image":null,"headline":"Q236935: PRB: C1001 Internal Compiler Error After Installing VC++ SP3","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236935-prb-c1001-internal-compiler-error-after-installing-vc-sp3">Q236935: PRB: C1001 Internal Compiler Error After Installing VC++ SP3</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236935
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing a Visual Studio 6.0 Service Pack, existing projects may give
+the following error message when they are built:
+
+&lt;..path\filename&gt;(line #) : fatal error C1001: INTERNAL COMPILER ERROR
+ (compiler file 'msc1.cpp', line 1794) 
+ Please choose the Technical Support command on the Visual C++ 
+ Help menu, or open the Technical Support help file for more information.
+
+CAUSE
+=====
+
+The compiler has problems parsing a precompiled header file created before the
+installation of the Visual Studio 6.0 Service Pack. The compiler was updated by
+the Service Pack and the new version does not correctly handle the PCH files
+created by the original compiler.
+
+RESOLUTION
+==========
+
+Delete all of the temporary files created by the previous compiler version.
+
+To clean out a project's temporary files using the Visual C++ IDE, open the
+project and select Clean from the Build menu.
+
+MORE INFORMATION
+================
+
+In addition to the C1001 error, there might be other symptoms. The symptoms you
+will see depend on factors that have not yet been identified. The following are
+some of the symptoms that have been seen:
+
+- You may get a message such as the following:
+
+  This program has committed an Illegal Operation.
+
+  Which may be followed by something similar to:
+
+  CL caused an invalid page fault in module &lt;unknown&gt; at 0000:000000BF
+
+- You may get a Windows 95 blue screen. This would likely be a recoverable blue
+  screen rather than one that forces a system restart.
+
+- You may also see Error executing Cl.exe in combination with the other errors.
+
+In all cases, the solution is to not compile or build an application after
+installing Visual Studio 6.0 Service Packs without first cleaning out all
+temporary files.
+
+A Rebuild All is safe since it cleans out the temporary files before doing a
+build.
+
+REFERENCES
+==========
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

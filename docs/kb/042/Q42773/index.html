@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42773: Opening a C File When Disk Is Write Protected | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42773: Opening a C File When Disk Is Write Protected" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42773/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42773/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42773/","publisher":null,"image":null,"headline":"Q42773: Opening a C File When Disk Is Write Protected","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42773-opening-a-c-file-when-disk-is-write-protected">Q42773: Opening a C File When Disk Is Write Protected</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42773
+Product(s): See article
+Version(s): 5.00 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | s_quickc | mspl13_c
+Last Modified: 17-MAY-1989
+
+With the run-time library in the Microsoft C Optimizing Compiler, a
+program can open an existing file for both read and write when the
+floppy disk is write protected. The following statement may be used to
+open the file:
+
+   handle = open ("a:test.dat", O_RDWR | O_TRUNC) ;
+
+No error condition is returned and no hard error occurs. However,
+later, when the program tries to write to the file handle or even to
+close the file without writing, a hard error will occur with the
+following message:
+
+   Writing protect error writing drive A:
+   Abort, Retry, Fail?
+
+This is not a problem with the open() function in the Microsoft C
+run-time library. The low-level DOS function call that is used to
+implement open() does not check for a write-protect error. When the
+file is to be closed by close(), the internal buffer has to be flushed
+to the disk. No low-level DOS function can close a file without
+flushing its associated buffer.
+
+Workaround
+
+There is no direct way to detect the write-protect condition. An
+indirect workaround is to open a file with the mode to be O_CREAT, as
+follows:
+
+    open ( "a:chk00000.xxx", O_CREAT, S_IWRITE | S_IREAD) ;
+
+A hard error will occur, which can be captured by a user-implemented
+and installed hard-error handler. This handler will override the
+printing of the hard-error message on the user screen. The open()
+function does return -1 when it regains the control from the
+hard-error handle. If the file was opened successfully, it may be
+removed at the end of the program.
+
+The following sample program demonstrates checking of a
+write-protected disk:
+
+/* sample program */
+#include &lt;fcntl.h&gt;
+#include &lt;sys\types.h&gt;
+#include &lt;sys\stat.h&gt;
+#include &lt;io.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;dos.h&gt;
+void far handler ( unsigned, unsigned, unsigned far * ) ;
+
+#define PROTECTED 1
+#define OTHER     2
+
+int Flag = 0 ;
+
+char * ChkName = "a:qwlbqwsi.ufp" ;     /* dummy file name */
+
+/* Note:
+** If the file happens to exist, the hard error will not occur.
+** The program will output "Disk is not write-protected."
+*/
+
+void main(void)
+{
+int FileHandle;
+
+_harderr ( handler ) ;              /* set up hard error handler */
+
+FileHandle = open ( ChkName, O_CREAT, S_IWRITE | S_IREAD ) ;
+
+if ( FileHandle == -1 )             /* check write-protect */
+     {
+     switch ( Flag ) {              /* may be set by the handler */
+        case PROTECTED :
+            puts ( "Disk in drive A: is write-protected." ) ;
+            break ;
+        case OTHER :
+            puts ( "A another hard error has occurred." ) ;
+            break ;
+        default :
+            puts ( "Error opening file (non hard error.)" ) ;
+        }
+     }
+else {
+     puts ( "Disk is not write-protected." ) ;
+     close ( FileHandle ) ;
+     remove ( ChkName ) ;           /* delete the file */
+     }
+}
+
+/*
+        Hard error routine should be as short as possible
+*/
+void far handler ( unsigned deverror, unsigned errcode,
+                   unsigned far *devhdr )
+{
+if ( errcode == 0 )
+    Flag = PROTECTED ;
+else
+    Flag = OTHER ;              /* like drive door is open */
+
+_hardretn ( 0 ) ;
+}
+/* end of sample */
+
+Note: The argument 0 to _hardretn() is not significant in this
+program. Please refer to Page 351 of the "Microsoft C for the MS-DOS
+Operating System: Run-Time Library Reference" for Version 5.10 for
+more specific information regarding the _hardretn() function.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

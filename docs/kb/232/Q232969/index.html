@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232969: INFO: Error Listing for Microsoft Index Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232969: INFO: Error Listing for Microsoft Index Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232969/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232969/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232969/","publisher":null,"image":null,"headline":"Q232969: INFO: Error Listing for Microsoft Index Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232969-info-error-listing-for-microsoft-index-server">Q232969: INFO: Error Listing for Microsoft Index Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232969
+Product(s): Internet Information Server
+Version(s): winnt:1.0,1.1,2.0
+Operating System(s): 
+Keyword(s): kbIdxServ200
+Last Modified: 19-JUN-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Index Server versions 1.0, 1.1, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Below are the error codes and numbers that are related to the Microsoft Index
+Server. This list is currently unavailable in the documentation, but you can
+find it in the Cierror.h file from the Visual Studio 6.0 Enterprise edition CD.
+
+MORE INFORMATION
+================
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| #define                                | HRESULT     | MessageText                                                                                      | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_FAILED                         | 0x80041600L | Call failed for unknown reason                                                                   | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_INVALIDQUERY                   | 0x80041601L | Invalid parameter                                                                                | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_INVALIDRESTRICTION             | 0x80041602L | The query restriction could not be parsed                                                        | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_INVALIDSORT                    | 0x80041603L | An invalid sort order was requested                                                              | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_INVALIDCATEGORIZE              | 0x80041604L | An invalid categorization order was requested                                                    | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_ALLNOISE                       | 0x80041605L | The query contained only ignored words                                                           | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_TOOCOMPLEX                     | 0x80041606L | The query was too complex to be executed                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_TIMEDOUT                       | 0x80041607L | The query exceeded its execution time limit                                                      | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_DUPLICATE_OUTPUT_COLUMN        | 0x80041608L | One or more columns in the output column list is a duplicate                                     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QUERY_E_INVALID_OUTPUT_COLUMN          | 0x80041609L | One or more columns in the output column list is not valid                                       | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_W_WORDLISTFULL                 | 0x00041680L | Wordlist has reached maximum size; additional documents should not be filtered                   | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_E_LOWRESOURCE                  | 0x80041681L | The system is running out of resources needed for filtering, usually memory                      | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_E_FATALERROR                   | 0x80041682L | A critical error occurred during document filtering; consult system administrator                | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_E_PARTITIONDELETED             | 0x80041683L | Documents not stored in content index because partition has been deleted                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_E_CHANGEUPDATEFAILED           | 0x80041684L | Documents not stored in content index because update of changelist failed                        | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_W_EMPTYWORDLIST                | 0x00041685L | Final wordlist was empty                                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_E_WORDLISTCOMMITFAILED         | 0x80041686L | Commit of wordlist failed; data not available for query                                          | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_E_NOWORDLIST                   | 0x80041687L | No wordlist is being constructed; may happen after fatal filter error                            | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FDAEMON_E_TOOMANYFILTEREDBLOCKS        | 0x80041688L | During document filtering the limit on buffers has been exceeded                                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| SEARCH_S_NOMOREHITS                    | 0x000416A0L | End of hits has been reached                                                                     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| SEARCH_E_NOMONIKER                     | 0x800416A1L | Retrival of hits as monikers is not supported (by filter passed into Init)                       | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| SEARCH_E_NOREGION                      | 0x800416A2L | Retrival of hits as filter regions is not supported (by filter passed into Init)                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_E_TOO_BIG                       | 0x80041730L | File is too large to filter                                                                      | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_S_PARTIAL_CONTENTSCAN_IMMEDIATE | 0x00041731L | A partial content scan of the disk needs to be scheduled for immediate execution                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_S_FULL_CONTENTSCAN_IMMEDIATE    | 0x00041732L | A full content scan of the disk needs to be scheduled for immediate execution                    | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_S_CONTENTSCAN_DELAYED           | 0x00041733L | A content scan of the disk needs to be scheduled for execution later                             | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_E_CONTENTINDEXCORRUPT           | 0xC0041734L | The content index is corrupt; a content scan will to be scheduled after chkdsk or autochk is run | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_S_DISK_FULL                     | 0x00041735L | The disk is getting full                                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_E_ALREADY_OPEN                  | 0x80041736L | A file is already open; cannot open another one while a file is open                             | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_E_UNREACHABLE                   | 0x80041737L | The file is not reachable                                                                        | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_E_IN_USE                        | 0x80041738L | The document is in use by another process                                                        | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_E_NOT_OPEN                      | 0x80041739L | The document is not opened                                                                       | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_S_NO_PROPSETS                   | 0x0004173AL | The document has no property sets                                                                | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_E_NO_SUCH_PROPERTY              | 0x8004173BL | There is no property with the given GUID                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FILTER_S_NO_SECURITY_DESCRIPTOR        | 0x0004173CL | The document has no security descriptor                                                          | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| WBREAK_E_END_OF_TEXT                   | 0x80041780L | End of text reached in text source                                                               | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| LANGUAGE_S_LARGE_WORD                  | 0x00041781L | Word larger than maximum length; may be truncated by word sink                                   | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| WBREAK_E_QUERY_ONLY                    | 0x80041782L | Feature only available in query mode                                                             | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| WBREAK_E_BUFFER_TOO_SMALL              | 0x80041783L | Buffer too small to hold composed phrase                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| LANGUAGE_E_DATABASE_NOT_FOUND          | 0x80041784L | Langauge database/cache file could not be found                                                  | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| WBREAK_E_INIT_FAILED                   | 0x80041785L | Initialization of word breaker failed                                                            | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| PSINK_E_QUERY_ONLY                     | 0x80041790L | Feature only available in query mode                                                             | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| PSINK_E_INDEX_ONLY                     | 0x80041791L | Feature only available in index mode                                                             | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| PSINK_E_LARGE_ATTACHMENT               | 0x80041792L | Attachment type beyond valid range                                                               | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| PSINK_S_LARGE_WORD                     | 0x00041793L | Word larger than maximum length; may be truncated by phrase sink                                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_CORRUPT_DATABASE                    | 0xC0041800L | The content index is corrupt                                                                     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_CORRUPT_CATALOG                     | 0xC0041801L | The content index meta data is corrupt                                                           | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_INVALID_PARTITION                   | 0xC0041802L | The content index partition is invalid                                                           | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_INVALID_PRIORITY                    | 0xC0041803L | The priority is invalid                                                                          | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_NO_STARTING_KEY                     | 0xC0041804L | There is no starting key                                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_OUT_OF_INDEX_IDS                    | 0xC0041806L | There is no catalog                                                                              | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_CORRUPT_FILTER_BUFFER               | 0xC0041808L | The index is invalid                                                                             | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_PROPSTORE_INCONSISTENCY             | 0xC0041809L | Inconsistency in property store detected                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_ALREADY_INITIALIZED               | 0x8004180AL | The object is already initialzed                                                                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_NOT_INITIALIZED                   | 0x8004180BL | The object is not initialzed                                                                     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_BUFFERTOOSMALL                    | 0x8004180CL | The buffer is too small                                                                          | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_PROPERTY_NOT_CACHED               | 0x8004180DL | The given property is not cached                                                                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_S_WORKID_DELETED                    | 0x0004180EL | The workid is deleted                                                                            | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_INVALID_STATE                     | 0x8004180FL | The object is not in a valid state                                                               | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_FILTERING_DISABLED                | 0x80041810L | Filtering is disabled in this content index                                                      | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_DISK_FULL                         | 0x80041811L | The disk is full and the specified operation cannot be done                                      | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_SHUTDOWN                          | 0x80041812L | Content Index has been shutdown                                                                  | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_WORKID_NOTVALID                   | 0x80041813L | The workid is not valid                                                                          | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_S_END_OF_ENUMERATION                | 0x00041814L | There are no more documents to enumerate                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_NOT_FOUND                         | 0x80041815L | The object was not found                                                                         | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_USE_DEFAULT_PID                   | 0x80041816L | The passed-in property ID is not supported                                                       | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_DUPLICATE_NOTIFICATION            | 0x80041817L | There were two notifications for the same workid                                                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_UPDATES_DISABLED                  | 0x80041818L | A document update was rejected because updates were disabled                                     | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_INVALID_FLAGS_COMBINATION         | 0x80041819L | The combination of flags specified is invalid                                                    | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_OUTOFSEQ_INCREMENT_DATA           | 0x8004181AL | The incremental data given to Load is not valid. It may be out of sequence                       | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_SHARING_VIOLATION                 | 0x8004181BL | A sharing or locking violation caused a failure                                                  | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_LOGON_FAILURE                     | 0x8004181CL | A logon permission violation caused a failure                                                    | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_NO_CATALOG                        | 0x8004181DL | There is no catalog                                                                              | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_STRANGE_PAGEORSECTOR_SIZE         | 0x8004181EL | Page size is not an integral multiple of the sector size of the volume where index is located    | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_TIMEOUT                           | 0x8004181FL | Service is too busy                                                                              | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_E_NOT_RUNNING                       | 0x80041820L | Service is not running                                                                           | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI_INCORRECT_VERSION                   | 0xC0041821L | The content index data on disk is for the wrong version                                          | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbIdxServ200 
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ110 kbIdxServ200
+Version           : winnt:1.0,1.1,2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

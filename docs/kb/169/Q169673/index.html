@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169673: XADM: Remote Procedure Call Fails When Generating Offline AB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169673: XADM: Remote Procedure Call Fails When Generating Offline AB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169673/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169673/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169673/","publisher":null,"image":null,"headline":"Q169673: XADM: Remote Procedure Call Fails When Generating Offline AB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169673-xadm-remote-procedure-call-fails-when-generating-offline-ab">Q169673: XADM: Remote Procedure Call Fails When Generating Offline AB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169673
+Product(s): Microsoft Exchange
+Version(s): WinNT:4.00
+Operating System(s): 
+Keyword(s): kbnetwork kbusage
+Last Modified: 22-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When the Administrator program is generating the Offline Address Book (OAB), the
+Administrator program displays the following message:
+
+  The Remote Procedure call failed.
+
+In addition, MAD stops running on the server on which the Administrator program
+is running when generating the OAB. As a result, you are not able to generate an
+OAB on the global address list (GAL) or specific containers.
+
+CAUSE
+=====
+
+The directory of the computer running Microsoft Exchange Server version 5.0 or
+earlier has exceeded the limit of different Distinguished Names (DNs) in one
+container that can be added to an Offline Address Book (OAB).
+
+An array holding parent DNs and used within the OAB generation process, was
+limited to a fixed size (1,000 entries). If the container from which the OAB was
+being generated held more than 1,000 unique parent DNs, the OAB generation
+process would assert, causing the above symptoms and OAB generation failure.
+
+WORKAROUND
+==========
+
+The Offline Address Book can be generated on a container that contains a smaller
+number of unique DNs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0.
+This problem has been corrected in the latest U.S. Service pack for Microsoft
+Exchange Server version 4.0. For information on obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+Microsoft Exchange Server version 4.0 will generate an event ID 5004 containing
+the following text:
+
+  Generation of the Offline Address Book is complete. Results: The MAPI
+  call failed.
+  80004005.
+
+Microsoft Exchange Server version 5.0 will generate an event ID 5012 containing
+the following text:
+
+  Failed to generate offline address book for container: /. Results: An
+  unexpected, unknown error occurred. 8004010b.
+
+After the initial failure in version 5.0, you will receive a message box with the
+message:
+
+  There are no more endpoints available from the endpoint mapper.
+
+This occurs when the Administrator program attempts to contact the System
+Attendant and it is no longer available.
+======================================================================
+Keywords          : kbnetwork kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : WinNT:4.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

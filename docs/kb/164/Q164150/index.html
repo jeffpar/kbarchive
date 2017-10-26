@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164150: DOC: C4237 Online Help Contains Wrong Information on &quot;bool&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164150: DOC: C4237 Online Help Contains Wrong Information on &quot;bool&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164150/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164150/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164150/","publisher":null,"image":null,"headline":"Q164150: DOC: C4237 Online Help Contains Wrong Information on &quot;bool&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164150-doc-c4237-online-help-contains-wrong-information-on-bool">Q164150: DOC: C4237 Online Help Contains Wrong Information on "bool"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164150
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.2
+Operating System(s): 
+Keyword(s): kbcode kbdocfix kbdocerr
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The online help on C4237 in Visual C++ 4.2 states that the keywords bool, true,
+false, mutable, explicit, and typename are for future use. The last paragraph
+states the following:
+
+  If you include the header OAIDL.H, note that this header defines both bool
+  and boolval. To avoid this warning and prevent possible compatibility
+  problems with future versions of Visual C++, your code should use the boolval
+  definition instead of the bool definition.
+
+This information is incorrect. If you use OAIDL.H for bool keyword, the following
+error message appears:
+
+  error C2065: 'bool' : undeclared identifier
+
+MORE INFORMATION
+================
+
+In Visual C++ 4.2, the keywords bool, true, and false are declared in the header
+file yvals.h. By including this file in your program, you can use the keywords
+bool, true, and false. Since the standard C++ header files (that is, iostream,
+ostream, etc.) automatically include yvals.h, if you use any of these header
+files you can use bool, true, and false. If you are also including windows.h,
+then make sure that windows.h is included above yvals.h or the standard C++
+header files, otherwise the C4237 warning appears. This happens because yvals.h
+disables the C4237 warning with a #pragma statement.
+
+The following programs compile without errors in Visual C++ 4.2.
+
+Sample Code
+-----------
+
+     /* Compile options needed:none
+     */ 
+
+     #include &lt;windows.h&gt;
+     #include &lt;iostream&gt;
+
+     void main(void){
+     bool x;
+     BOOL Y;
+
+     x=true;
+     Y=FALSE;
+
+     }
+
+     Or,
+
+     #include &lt;windows.h&gt;
+     #include &lt;yvals.h&gt;
+
+     void main(void){
+     bool x;
+     BOOL Y;
+
+     x=true;
+     Y=FALSE;
+
+     }
+
+
+Additional query words: bool kbOLDocs kbCompiler kbVC420 kbVC500fix kbDSupport kbdss
+
+======================================================================
+Keywords          : kbcode kbdocfix kbdocerr 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : winnt:4.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

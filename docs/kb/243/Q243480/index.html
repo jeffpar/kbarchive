@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243480: HOWTO: Changing Background Color of a Dialog Box Using ATL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243480: HOWTO: Changing Background Color of a Dialog Box Using ATL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243480/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243480/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243480/","publisher":null,"image":null,"headline":"Q243480: HOWTO: Changing Background Color of a Dialog Box Using ATL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243480-howto-changing-background-color-of-a-dialog-box-using-atl">Q243480: HOWTO: Changing Background Color of a Dialog Box Using ATL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243480
+Product(s): Microsoft C Compiler
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbATLWC kbDlg KbUIDesign kbVC600 kbATL300 kbDSupport kbGrpDSMFCATL
+Last Modified: 12-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+When creating dialog boxes in ATL 3.0, you can change the background color that
+is used without much effort. This article shows you how to change the background
+color for dialog boxes in ATL 3.0.
+
+Basically, you need to handle the WM_CTLCOLORDLG message for the dialog box. You
+can do this by adding an entry for this message in the message map and returning
+the handle to new brush with desired color from this handler.
+
+MORE INFORMATION
+================
+
+Here are the steps for changing the color of a dialog box in ATL.
+
+1. Add a member variable m_hDialogBrush of type HBRUSH to your dialog box class.
+
+      HBRUSH m_hDialogBrush;
+
+2. Create brush with the desired color in dialog boxes constructor, and destroy
+  it in the destructor.
+
+      CColorDlg()
+      {
+        //this will create a blue brush 
+        //could use GetSysColorBrush() instead if want to use a system brush
+        m_hDialogBrush = CreateSolidBrush(RGB(0, 0, 255));
+      }
+
+      ~CColorDlg()
+      {
+          DeleteObject(m_hDialogBrush);
+      }
+
+3. Add a message map entry for WM_CTLCOLORDLG as shown in the following.
+
+  BEGIN_MSG_MAP(CColorDlg)
+      MESSAGE_HANDLER(WM_INITDIALOG, OnInitDialog)
+      MESSAGE_HANDLER(WM_CTLCOLORDLG, OnCtlColorDlg) //Add this macro.
+      COMMAND_ID_HANDLER(IDOK, OnOK)
+      COMMAND_ID_HANDLER(IDCANCEL, OnCancel)
+  END_MSG_MAP()
+
+4. Add a OnCtlDialog member function to your dialog class like the code below.
+  OnCtlDialog is handler for the WM_CTLCOLORDLG message.
+
+      LRESULT OnCtlColorDlg(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL&amp; bHandled)
+      {
+          return (long) m_hDialogBrush;
+      }
+
+When the dialog box appears, it will have a blue background.
+
+REFERENCES
+==========
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q74043 HOWTO: Change the Color of an Edit Control
+
+  Q98201 HOWTO: Change Dialog Box Background Color in MFC 2.0 or Later
+
+  Q103786 HOWTO: Change Window Background Color with Foundation Classes
+
+  Q117778 HOWTO: Change the Background Color of an MFC Edit Control
+
+  Q132080 HOWTO: Change the Color of an MFC Child Control Class
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Sreedhar Pelluru, Microsoft Corporation
+
+
+Additional query words: ATL color dialog howto
+
+======================================================================
+Keywords          : kbATLWC kbDlg KbUIDesign kbVC600 kbATL300 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbATL300 kbVCNET
+Version           : :3.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q76553: FIX: Can’t Have Menu with No Caption Bar/Buttons/Control Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q76553: FIX: Can’t Have Menu with No Caption Bar/Buttons/Control Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/076/Q76553/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/076/Q76553/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/076/Q76553/","publisher":null,"image":null,"headline":"Q76553: FIX: Can’t Have Menu with No Caption Bar/Buttons/Control Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q76553-fix-cant-have-menu-with-no-caption-barbuttonscontrol-box">Q76553: FIX: Can’t Have Menu with No Caption Bar/Buttons/Control Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q76553
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0,2.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition for Windows, versions 2.0, 4.0 
+- Microsoft Visual Basic Standard Edition for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can't add a menu that has no caption, no maximize/minimize buttons, and no
+control-menu box to a form.
+
+CAUSE
+=====
+
+This feature is not supported in Visual Basic in Windows version 3.0 or 3.1
+because of a bug in the Microsoft Windows menu driver that prevents Windows from
+painting menus correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Microsoft Windows versions 3.0 and
+3.1. This problem does not occur in Visual Basic version 3.0 in Microsoft
+Windows version 3.1.
+
+MORE INFORMATION
+================
+
+If you place a menu on a form with no caption bar or associated buttons, the
+result is a menu bar that does not refresh correctly.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Visual Basic or from the File menu, choose New Project (ALT, F, N) if
+  Visual Basic is already running. Form1 is created by default.
+
+2. Delete the contents of the Caption property.
+
+3. Set the ControlBox, MaxButton, and MinButton properties to False.
+
+4. Using the Menu Design window, create a single menu item. Set the Caption
+  property to Test and the control name property to Test.
+
+5. Press the F5 key to run the application.
+
+NOTE: The menu bar does not repaint correctly. This causes the image immediately
+behind the form to be visible through the menu bar.
+
+If you place any other form over the menu bar and then remove it, the portion
+that was covering the menu bar area remains.
+
+This problem occurs because the Microsoft Windows menu driver does not paint the
+menus correctly.
+
+For this reason, this particular form configuration is not supported by Visual
+Basic at this time even though you are able to create the configuration in the
+editing environment.
+
+For more information about a related problem with the menu bar and the Fixed
+Double border style, query on the following words in the Microsoft Knowledge
+Base:
+
+  Visual and Basic and menu and fixed and double and border
+
+Additional query words: buglist2.00 fixlist3.00 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : :1.0,2.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192304: HOWTO: Check for a Writeable Drive Under Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192304: HOWTO: Check for a Writeable Drive Under Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192304/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192304/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192304/","publisher":null,"image":null,"headline":"Q192304: HOWTO: Check for a Writeable Drive Under Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192304-howto-check-for-a-writeable-drive-under-windows-nt">Q192304: HOWTO: Check for a Writeable Drive Under Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192304
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 14-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+One way to check if a program is able to write to a drive is to attempt to
+create a temporary file on the drive. However, under Windows NT, this opens a
+system error dialog box if the drive is write-protected or otherwise not
+available to be written. This article demonstrates how to create and use the
+CheckMediaWrite() function to check if the drive is available for writing.
+
+MORE INFORMATION
+================
+
+Using the SetErrorMode Win32 API function, a program can attempt to create a
+temporary file on a drive without raising an error on Windows NT if the drive is
+not available for writing.
+
+Save the following code to a program file, place a write-protected disk in the
+floppy drive, and run the program.
+
+Sample Code
+-----------
+
+     *-- Code begins here.
+     CLEAR
+
+     *-- Check if floppy drive a: is available for writing
+     *-- and print the results.  Try this twice, once with
+     *-- a write-protected floppy and again with a floppy
+     *-- that is not write-protected.
+     ? CheckMediaWrite("a:")
+
+     *-----------------------------------------------------------------
+     *- Function:    CheckMediaWrite
+     *- Summary:     Checks if the passed drive is available for writing.
+     *- Parameters:  lsDrive - The drive to check.
+     *- Returns:     -1 If drive cannot be written to.
+     *- Example:     liReturn = CheckWrite("a:")
+     *-----------------------------------------------------------------
+     FUNCTION CheckMediaWrite()
+     PARAMETERS lsDrive
+
+     *-- Defines from Winbase.h
+     #DEFINE SEM_FAILCRITICALERRORS      0x0001
+     #DEFINE SEM_NOGPFAULTERRORBOX       0x0002
+     #DEFINE SEM_NOALIGNMENTFAULTEXCEPT  0x0004
+     #DEFINE SEM_NOOPENFILEERRORBOX      0x8000
+
+     *-- Check that the parameter is in the correct format.
+     IF SUBSTR(lsDrive, 2, 1) &lt;&gt; ":" OR ;
+       (ASC(UPPER(SUBSTR(lsDrive, 1, 1))) &lt; 65 OR ;
+       ASC(UPPER(SUBSTR(lsDrive, 1, 1))) &gt; 90)
+         =MESSAGEBOX("Drive must be in the format &lt;drive letter&gt;:", ;
+           0, "Error")
+         RETURN -1
+     ENDIF
+
+     *-- SetErrorMode determines whether the system handles
+     *-- serious errors or whether the program handles them.
+     DECLARE INTEGER SetErrorMode IN win32api INTEGER
+
+     *-- SetErrorMode returns to what the flags were last set.
+     *-- You need to store this in lnResult so that you can set them
+     *-- back the way they were before calling SetErrorMode.
+     *-- Failure to do so can produce unpredictable results
+     *-- when encountering future errors.  SetErrorMode only
+     *-- applies to the current process and therefore only affects
+     *-- the FoxPro program that called SetErrorMode.
+     lnResult = SetErrorMode(SEM_FAILCRITICALERRORS)
+
+     hFile = FCREATE(lsDrive + "\tmp.txt")
+     IF hFile &lt;&gt; -1
+         FCLOSE(hFile)
+         ERASE(lsDrive + "\tmp.txt")
+     ENDIF
+
+     *-- Put things back the way you found them.
+     lnResult = SetErrorMode(lnResult)
+
+     RETURN hFile
+     *-- Code ends here.
+
+A -1 appears on the desktop.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Mike A.
+Stewart, Microsoft Corporation.
+
+
+Additional query words: kbVFp600 kbVFp500a kbVFp500 kbAPI
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

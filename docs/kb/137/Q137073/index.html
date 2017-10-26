@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137073: PC WSPlus: Corrupt Schedule File May Prevent Access | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137073: PC WSPlus: Corrupt Schedule File May Prevent Access" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137073/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137073/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137073/","publisher":null,"image":null,"headline":"Q137073: PC WSPlus: Corrupt Schedule File May Prevent Access","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137073-pc-wsplus-corrupt-schedule-file-may-prevent-access">Q137073: PC WSPlus: Corrupt Schedule File May Prevent Access</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137073
+Product(s): Microsoft Schedule+ for Windows
+Version(s): WINDOWS:1.0,7.0,95
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-SEP-1999
+
+1.00 7.00
+WINDOWS
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Schedule+ for Windows, versions 1.0, 95, 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use version 1.0 or 7.0 of Schedule+ for Windows, and you try to Open
+Other's Appointment Book..., the following error may appear:
+
+For version 1.0:
+
+  The schedule file could not be opened. You may not have the necessary access
+  privileges or the file may be unavailable.
+
+For version 7.0:
+
+  The schedule cannot be opened. Access is denied.
+
+CAUSE
+=====
+
+Either the access privileges have not been granted, or the schedule file may be
+corrupt.
+
+RESOLUTION
+==========
+
+Setting Access Privileges.
+--------------------------
+
+If the access privileges have not set, they can be set by doing the following:
+
+For version 1.0:
+
+1. From the Options menu, select Set Access Privileges.
+
+2. From the Set Access Privileges dialog box, click the Add button.
+
+3. From the Add Users dialog box, select the users to grant access privileges
+  to. Click the Add button. Repeat as often as necessary. Click OK when you are
+  finished. This will bring you back to the Set Access Privileges dialog box.
+
+4. The default access privileges will be assigned to the users. To modify the
+  user's access privileges, highlight the user in the Users field, then select
+  the appropriate level of access from the Privileges field for the user.
+
+5. Click OK. Exit and Sign Out of Schedule+ to save the changes.
+
+For version 7.0:
+
+1. From the Options menu, select Set Access Permissions.
+
+2. From the Set Access Permissions dialog box, select the Users tab, then click
+  the Add button.
+
+3. From the Add Users dialog box, select the users to grant access privileges
+  to. Click the Users button. Repeat as often as necessary. Click OK when you
+  are finished. This will bring you back to the Set Access Privileges dialog
+  box.
+
+4. The default access privileges will be assigned to the users. To modify the
+  user's access privileges, highlight the user in the Users field, then select
+  the appropriate level of access from the Permission Details for &lt;User
+  Name&gt; field for the user from the User Role drop down menu. Click OK to
+  save the changes to the schedule file.
+
+Resetting Access Privileges/Permissions in the Schedule File.
+-------------------------------------------------------------
+
+For version 1.0:
+
+1. From the Options menu, select Set Access Privileges.
+
+2. From the Set Access Privileges dialog box, remove all access privileges for
+  users by first highlighting the user in the Users filed, then by clicking the
+  Remove button.
+
+3. Again from the Users field in the Set Access Privileges dialog box, select
+  the Default, and reset that to none in the Privileges field.
+
+4. Click OK. Exit and Sign Out of Schedule+ to save the changes to the schedule
+  file.
+
+5. Follow the steps for Procedure A to set the appropriate access privileges for
+  any users, paying special attention to reset the Default privileges as well.
+
+For version 7.0:
+
+1. From the Options menu, select Set Access Permissions.
+
+2. From the Set Access Permissions dialog box, remove all access permissions for
+  users by first highlighting the user in the Users filed, then by clicking the
+  Remove button. Once done, click OK to save the changes to the schedule file.
+
+3. Follow the steps for Procedure A to set the appropriate access permissions
+  for any users.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 1.0 of Microsoft
+Schedule+ for Windows and version 7.0 of Microsoft Schedule+ for Windows 95. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If the access privileges/permissions have been set, but the user cannot access
+the schedule file, there may be corruption in the schedule file. Following the
+appropriate procedure above may resolve this. If the procedure above does not
+resolve the issue, then the corruption in the schedule file is too severe, and
+it may be necessary to restore the file from backup.
+
+Additional query words: schedule plus 1.00 7.00 .cal .sch .scd
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700 kbSchedule100
+Version           : WINDOWS:1.0,7.0,95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

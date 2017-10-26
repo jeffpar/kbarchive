@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104042: PRB: Unable to Write to the Windows NT Registry | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104042: PRB: Unable to Write to the Windows NT Registry" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104042/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104042/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104042/","publisher":null,"image":null,"headline":"Q104042: PRB: Unable to Write to the Windows NT Registry","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104042-prb-unable-to-write-to-the-windows-nt-registry">Q104042: PRB: Unable to Write to the Windows NT Registry</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104042
+Product(s): Microsoft C Compiler
+Version(s): 1.0 2.0 2.1 4.0 4.1
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 22-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 1.0, 2.0, 2.1, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT sets up each Windows NT user with a different environment. When you
+install Visual C++ 32-bit Edition, Visual C++ installs for that particular user.
+If the user changes his or her group membership (privileges), then the Registry
+Key will not work accordingly with Visual C++. The following two messages may
+appear if this happens when starting Visual Workbench:
+
+- Message 1:
+
+  
+
+  The options Registry Key 'Visual C++' is missing. A new Registry
+  Key will be created using the default settings."
+
+  Press OK to continue.
+
+- Message 2:
+
+  
+
+  Unable to write to the NT Registry. Option settings will not be
+  saved.
+
+  Press OK to continue.
+
+After these messages, Visual C++ starts running. However, when you exit you
+receive the second message again.
+
+CAUSE
+=====
+
+Each Windows NT user has a different user profile and privilege level. Each user
+may not have access to the same Registry Key information as the person who
+installed Visual C++. Changing the privilege level of the person who installed
+Visual C++ causes this problem.
+
+RESOLUTION
+==========
+
+Check with the Windows NT administrator for the machine to correctly perform the
+following steps to rebuild the Registry Key for that particular Visual C++
+user.
+
+1. Log in as Administrator and give the user of Visual C++ administrative
+  privileges to delete the Visual C++ entry, with the Registry Editor
+  (REGEDT32.EXE) located in the \WINNT\SYSTEM32 directory. The Visual C++ entry
+  is under the HKEY_CURRENT_USER, Software, Microsoft, Visual C++. Be sure not
+  to delete any entries other than Visual C++.
+
+2. Remove the administrative privileges for the Visual C++ user.
+
+3. Log in as the user and start Visual C++ again; this time you will only
+  receive the first message above and a new Registry entry will be created.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC410 kbVC200 kbVC210
+Version           : 1.0 2.0 2.1 4.0 4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

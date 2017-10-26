@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182913: SNA Server is Working Although SNA Manager Shows &quot;Offline&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182913: SNA Server is Working Although SNA Manager Shows &quot;Offline&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182913/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182913/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182913/","publisher":null,"image":null,"headline":"Q182913: SNA Server is Working Although SNA Manager Shows &quot;Offline&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182913-sna-server-is-working-although-sna-manager-shows-offline">Q182913: SNA Server is Working Although SNA Manager Shows "Offline"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182913
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server Manager opens a LAN connection to the ?Manage Agent? (MngAgent)
+service that is running on each active SNA Server in the SNA subdomain to
+retrieve and display status information for the server. However, if SNA Server
+Manager loses its LAN connection to the server and is unable to reconnect to it,
+Manager will display the SNA Server status as ?Offline,? even when the SNA
+Server service is actually running.
+
+If SNA Server Manager loses its LAN session to an SNA Server, Manager attempts to
+reopen the connection for another three to four minutes. After that time passes,
+Manager attempts to reconnect to the SNA Server only if its local ?service
+table? (maintained by the SnaBase service) indicates that the MngAgent service
+is active on that server. When running on an SNA Server Windows NT client, the
+SnaBase service receives this status information from its ?sponsor? SNA Server.
+When running on an SNA Server, the SnaBase periodically receives status updates
+from other servers in the subdomain.
+
+MORE INFORMATION
+================
+
+To diagnose the cause of the offline status:
+
+1. Verify the communication between Manager and the SNA Server
+
+  If TCP/IP is being used to connect to the SNA Server, try issuing a "ping"
+  command to determine if the remote SNA Server is reachable. If SNA Server is
+  not reachable, there is a problem in the LAN connection, between the Manager
+  computer and the SNA Server. If some other transport is being used, try to
+  connect to a network resource on the server. If the connection attempt fails,
+  this could be because of a LAN connection problem, or the user may not be
+  authorized to connect to the server.
+
+2. Determine whether the SNA Manage Agent service (MngAgent) is running on the
+  SNA Server that appears as Offline. If this service is stopped, restart it
+  and check for the presence of an &lt;ntroot&gt;\drwtsn32.log file, which may
+  indicate that SNA Manage Agent failed abnormally. If the service is running,
+  try stopping the service and restarting it.
+
+  NOTE: See the following articles in the Microsoft Knowledge Base that describe
+  known problems that can cause a Manage Agent failure with SNA Server 3.0. If
+  you run SNA Server 3.0, try upgrading to the latest SNA Server 3.0 Service
+  Pack.
+
+  Q178493 SNA Server Status Shows "Off Line" Even Though It's Active
+
+
+  Q169490 SNA Server Appears to Be Offline After MNGAGENT AV
+
+
+  Q173173 SNA Manage Agent Traps After Saving Configuration Change
+
+
+3. Capture the following additional diagnostic information if the problem is not
+  related to the status of the Manage Agent service:
+
+   - Capture a Microsoft Network Monitor (or Network General Sniffer(TM)) LAN
+     trace of all traffic to and from the computer where SNA Manager is
+     running.
+
+   - Capture the following SNA traces from the computer running Manager:
+
+      - SnaBase full internal trace
+
+      - Manage Client full internal trace
+
+  The above traces should capture the time period when the server status changes
+  to the Offline status.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

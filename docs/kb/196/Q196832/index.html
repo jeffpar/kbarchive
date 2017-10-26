@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q196832: HOWTO: Provide an Alternative View to Data Using Splitter Window | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q196832: HOWTO: Provide an Alternative View to Data Using Splitter Window" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/196/Q196832/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/196/Q196832/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/196/Q196832/","publisher":null,"image":null,"headline":"Q196832: HOWTO: Provide an Alternative View to Data Using Splitter Window","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q196832-howto-provide-an-alternative-view-to-data-using-splitter-window">Q196832: HOWTO: Provide an Alternative View to Data Using Splitter Window</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q196832
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbDocView kbMFC KbUIDesign kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to use a static splitter window in a traditional
+SDI document-view architecture. The article shows how to design an application
+that can switch between a single view and a splitter window that can embed as
+many panes as necessary.
+
+MORE INFORMATION
+================
+
+The solution consists of embedding a pointer to a CSplitterWnd in CMainFrame, as
+opposed to the recommended way of embedding the CSplitterWnd object. Later, when
+the application needs to switch from the regular view to the splitter window,
+this splitter window is created on the heap and initialized by using
+CreateStatic(), while the regular view is destroyed.
+
+NOTE: To avoid destruction of the CDocument-derived object when the view is
+destroyed, you need to set its m_bAutoDelete data member to FALSE.
+
+You can easily expand the code to support static splitter windows with different
+numbers of panes, depending on some run-time conditions.
+
+Steps to Create Sample
+----------------------
+
+1. Create a new SDI project.
+
+2. Add a SplitterWnd (ID_VIEW_SPLITTERWND) menu item to a View menu. This item
+  turns the splitter window on and off.
+
+3. To preserve the document when there is no view associated with it, add add
+  the following code in the CDocument-derived class constructor:
+
+        CMyDoc::CMyDoc()
+        {
+           m_bAutoDelete = FALSE;
+        }
+
+4. To avoid resource leaks, you also need to set the flag back to true before
+  the destruction of the last view associated with the document (for example,
+  in the CMainFrame handler of WM_CLOSE:
+
+CMainFrame::OnClose()):
+
+        CMainFrame::OnClose()
+        {
+           GetActiveDocument()-&gt;m_bAutoDelete = TRUE;
+           CFrameWnd::OnClose();
+        }
+
+5. Add a pointer to a CSplitterWnd in the CMainFrame definition:
+
+        class CMainFrame : public CFrameWnd
+        {
+        ...
+          protected:
+           CSplitterWnd *m_pSplitter;
+        ...
+        };
+
+6. Initialize this object in the CMainFrame constructor, and delete it in the
+  destructor:
+
+        CMainFrame::CMainFrame()
+        {
+           // TODO: add member initialization code here.
+           m_pSplitter = NULL;
+        }
+
+        CMainFrame::~CMainFrame()
+        {
+           if (m_pSplitter)
+              delete m_pSplitter;
+        }
+
+7. Add two new CView-derived classes to your project, representing views that
+  are the panes in your CSplitterWnd.
+
+8. Add the following #include statements in your MainFrm.cpp file:
+
+        #include "MyDoc.h"
+        #include "MyView.h"
+        #include "Pane1View.h"
+        #include "Pane2View.h"
+
+9. Use Class Wizard to create a command and an UpdateUI handler in CMainFrame
+  for the menu item you added:
+
+        void CMainFrame::OnUpdateViewSplitterWnd(CCmdUI* pCmdUI)
+        {
+           // TODO: Add your command update UI handler code here.
+           pCmdUI-&gt;SetCheck(m_pSplitter!=NULL);
+        }
+
+        void CMainFrame::OnViewSplitterWnd()
+        {
+           // TODO: Add your command handler code here.
+           CCreateContext ctx;
+           ctx.m_pNewViewClass = RUNTIME_CLASS(CMyView);
+           // GetActiveDocument() call before you destroy m_splitter.
+           ctx.m_pCurrentDoc = GetActiveDocument();
+           ASSERT(ctx.m_pCurrentDoc!=NULL);
+
+           // m_pSplitter !=NULL when there is a visible splitter.
+           if (m_pSplitter)
+           {
+              // Destroy splitter window.
+              delete m_pSplitter;
+              m_pSplitter = NULL;
+
+              // Create and initialize CMyView.
+              SetActiveView((CView*)CreateView(&amp;ctx));
+              GetActiveView()-&gt;OnInitialUpdate();
+           }
+           else
+           {
+              // Destroy CMyView.
+              GetActiveView()-&gt;DestroyWindow();
+
+              // Create new splitter window.
+              m_pSplitter = new CSplitterWnd;
+              if (!m_pSplitter-&gt;CreateStatic(this, 1, 2))
+              {
+                 TRACE0("Can't create splitter window.\n");
+                 return;
+              }
+              else
+              {
+                 if ((!m_pSplitter-&gt;CreateView(0, 0,
+                                               RUNTIME_CLASS(CPane1View),
+                                               CSize(200, 0), &amp;ctx))
+                   ||(!m_pSplitter-&gt;CreateView(0, 1,
+                                               RUNTIME_CLASS(CPane2View),
+                                               CSize(500, 0), &amp;ctx)))
+                 {
+                    TRACE0("Can't create one of the splitter panes.\n");
+                    return;
+                 }
+
+                 // Initialize the two panes (each containing a view
+                 // associated with the current document).
+                 ((CView*)m_pSplitter-&gt;GetPane(0, 0))-&gt;OnInitialUpdate();
+                 ((CView*)m_pSplitter-&gt;GetPane(0, 1))-&gt;OnInitialUpdate();
+                 SetActiveView((CView*)m_pSplitter-&gt;GetPane(0, 0));
+              }
+           }
+
+           // Redisplay frame.
+           RecalcLayout();
+        }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDocView kbMFC KbUIDesign kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

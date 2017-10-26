@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125213: PRB: Spawn with _P_WAIT Returns Immediately on Win32s | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125213: PRB: Spawn with _P_WAIT Returns Immediately on Win32s" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125213/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125213/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125213/","publisher":null,"image":null,"headline":"Q125213: PRB: Spawn with _P_WAIT Returns Immediately on Win32s","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125213-prb-spawn-with-_p_wait-returns-immediately-on-win32s">Q125213: PRB: Spawn with _P_WAIT Returns Immediately on Win32s</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125213
+Product(s): Microsoft C Compiler
+Version(s): 1.0 1.3 1.3a 1.3c 2.0 2.1 2.2 4.
+Operating System(s): 
+Keyword(s): kbCRT kbVC kbOSWin32s
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 2.2, 4.0, 4.1 
+   - Microsoft Win32s versions 1.30, 1.30a, 1.30c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you call _spawnl() with _P_WAIT from a Win32-based application, then under
+Windows NT, the call returns after the spawned application has been terminated.
+But under Win32s, the call returns immediately, even though the spawned
+application is still running.
+
+The return value from _spawnl() with _P_WAIT is zero if the spawned application
+is a 16-bit Windows-based application or 0x103 if the application is a
+Win32-based application.
+
+CAUSE
+=====
+
+This is due to the design of the C Run-time and a limitation of Win32s. When the
+CRT does a _P_WAIT spawn, it calls CreateProcess() and checks for failure. Next,
+the CRT calls WaitForSingleObject() on the process handle. Under Windows NT,
+WaitForSingleObject() pauses the application until the new process terminates,
+and then returns TRUE. But under Win32s, WaitForSingleObject() returns TRUE
+immediately. Next, the CRT calls GetExitCodeProcess() to find the exit status.
+It is a limitation that GetExitCodeProcess() returns zero for 16-bit
+Windows-based application on both Windows NT and Win32s. The return value of
+0x103 for Win32-based applications is incorrect because the application has not
+yet terminated.
+
+RESOLUTION
+==========
+
+There is no way to perform the synchronous spawn with the spawn family of
+functions on Win32s. You can only perform an asynchronous spawn.
+
+For an example of a synchronous spawn under Win32s using the Win32 API and the
+Universal Thunk, please see the following article in the Microsoft Knowledge
+Base:
+
+  Q125212 Performing a Synchronous Spawn Under Win32s
+
+MORE INFORMATION
+================
+
+The following sample code can be used to demonstrate this behavior. The code
+spawns NOTEPAD.EXE.
+
+NOTE: The path is hard-coded, so you may have to change it if your NOTEPAD is
+installed in a different directory. Under Windows NT, the message box is
+displayed after NOTEPAD is closed, whereas under Win32s, the message box is
+displayed before NOTEPAD is closed.
+
+NOTEPAD is a 16-bit application under Win32s on Windows. To demonstrate the
+return value of 0x103 with a Win32-based application, substitute the path to
+FREECELL.EXE for the C:\\WINNT35\\SYSTEM32\\NOTEPAD.EXE in the _spawnl() call in
+the code below.
+
+Sample Code
+-----------
+
+     /* Compile options needed: /MD /DWIN32 &lt;filename&gt;.c /link user32.lib
+     */ 
+
+     #include &lt;windows.h&gt;
+     #include &lt;process.h&gt;
+
+     void main( )
+     {
+        DWORD dwVersion;
+        int status;
+        char buf[80];
+
+        dwVersion = GetVersion();
+
+        if( !(dwVersion &amp; 0x80000000) )
+        {
+           // Windows NT: NOTEPAD must be closed before this call completes.
+
+           status = _spawnl( _P_WAIT, "c:\\winnt35\\system32\\notepad.exe",
+              "notepad.exe", "dummy", NULL );
+        }
+        else if( LOBYTE(LOWORD(dwVersion)) &lt; 4 )
+        {
+           // Win32s: This call completes before NOTEPAD is closed.
+
+           status = _spawnl( _P_WAIT, "c:\\windows\\notepad.exe",
+              "notepad.exe", "dummy", NULL );
+        }
+        else
+        {
+           // Windows 95: for future reference.
+        }
+
+        wsprintf( buf, "Return Value = 0x%x\n", status );
+        MessageBox( NULL, buf, "Test", MB_OK );
+     }
+
+Additional query words: _spawnle _spawnlp _spawnlpe _spawnv _spawnve _spawnvp _spawnvpe win32sdk win32s
+
+======================================================================
+Keywords          : kbCRT kbVC kbOSWin32s 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : 1.0 1.3 1.3a 1.3c 2.0 2.1 2.2 4.
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

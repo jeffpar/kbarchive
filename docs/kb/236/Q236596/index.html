@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236596: SMS: Client Components Fail to Install with SMS 2.0 SP1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236596: SMS: Client Components Fail to Install with SMS 2.0 SP1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236596/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236596/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236596/","publisher":null,"image":null,"headline":"Q236596: SMS: Client Components Fail to Install with SMS 2.0 SP1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236596-sms-client-components-fail-to-install-with-sms-20-sp1">Q236596: SMS: Client Components Fail to Install with SMS 2.0 SP1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236596
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug kbsms200sp2fix
+Last Modified: 25-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Systems Management Server 2.0 client component installation may fail after
+applying Systems Management Server 2.0 Service Pack 1 if all of the following
+conditions are true:
+
+- Multiple Systems Management Server 2.0 sites share the same Windows NT
+  domain.
+
+- At least one of the sites in this hierarchy has been upgraded.
+
+- The client being installed belongs to a site that has not been upgraded yet.
+
+Looking at the %Windir%\Ms\Sms\Logs\Ccim32.log file on the client, you may see
+entries similar to the following:
+
+  Component "Available Programs Manager Win32" install/verify/upgrade last done
+  at 01:25:22 June 22, 1999 $$&lt;CCIM32&lt;Tue Jun 22 01:26:12.050
+  1999&gt;&lt;thread=4294798339 (0xFFFD6C03)&gt;
+  Component "Available Programs Manager Win32" needs to be verified
+  $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.050 1999&gt;&lt;thread=4294798339
+  (0xFFFD6C03)&gt;
+  Warning: \\SERVER1\CAP_MS1\clicomp.box\smsapm32.CFG version () out of sync
+  with offer file version (2.00.1239.0000); skipping operations
+  $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.270 1999&gt;&lt;thread=4294798339
+  (0xFFFD6C03)&gt;
+  Checking if component "Software Distribution" needs to be installed, upgraded
+  or verified (offer index [5]) $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.270
+  1999&gt;&lt;thread=4294798339 (0xFFFD6C03)&gt;
+  Component "Software Distribution" needs to be installed
+  $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.270 1999&gt;&lt;thread=4294798339
+  (0xFFFD6C03)&gt;
+  Warning: \\SERVER1\CAP_MS1\clicomp.box\SWDist.CFG version () out of sync with
+  offer file version (2.00.1239.0000); skipping operations
+  $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.440 1999&gt;&lt;thread=4294798339
+  (0xFFFD6C03)&gt;
+  Checking if component "Software Inventory Agent" needs to be installed,
+  upgraded or verified (offer index [4]) $$&lt;CCIM32&gt;&lt;Tue Jun 22
+  01:26:12.440 1999&gt;&lt;thread=4294798339 (0xFFFD6C03)&gt;
+  Component "Software Inventory Agent" needs to be installed
+  $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.490 1999&gt;&lt;thread=4294798339
+  (0xFFFD6C03)&gt;
+  Warning: \\SERVER1\CAP_MS1\clicomp.box\sinv.CFG version () out of sync with
+  offer file version (2.00.1239.0000); skipping operations
+  $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.660 1999&gt;&lt;thread=4294798339
+  (0xFFFD6C03)&gt;
+  Checking if component "Hardware Inventory Agent" needs to be installed,
+  upgraded or verified (offer index [3]) $$&lt;CCIM32&gt;&lt;Tue Jun 22
+  01:26:12.660 1999&gt;&lt;thread=4294798339 (0xFFFD6C03)&gt;
+  Component "Hardware Inventory Agent" needs to be installed
+  $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.660 1999&gt;&lt;thread=4294798339
+  (0xFFFD6C03)&gt;
+  Warning: \\SERVER1\CAP_MS1\clicomp.box\hinv.CFG version () out of sync with
+  offer file version (2.00.1239.0000); skipping operations
+  $$&lt;CCIM32&gt;&lt;Tue Jun 22 01:26:12.820 1999&gt;&lt;thread=4294798339
+  (0xFFFD6C03)&gt;
+  Done processing active client components $$&lt;CCIM32&gt;&lt;Tue Jun 22
+  01:26:12.880 1999&gt;&lt;thread=4294798339 (0xFFFD6C03)&gt;
+
+CAUSE
+=====
+
+The issue can occur when the service pack has not been applied to all the sites
+that share a given set of logon points (that is, all domain controllers within a
+Windows NT domain). Installation of the service pack updates the files for the
+base components on all logon points for the site. This means that clients that
+get the base components from the logon point will be running the Service Pack 1
+version of the base components. When the client then attaches to the client
+access point (CAP) server to install the optional components, there is a version
+mismatch and the optional components are not installed.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+WORKAROUND
+==========
+
+To avoid this problem, try either of the following:
+
+- Ensure that all sites sharing the logon points are upgraded simultaneously.
+
+  -or-
+
+- Disable logon discovery and installation for affected sites.
+
+In a situation where one of the sites has already been updated but the others
+have not, another option is to upgrade the remaining sites to Systems Management
+Server 2.0 Service Pack 1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+This issue only affects clients for sites that have not been upgraded, because
+the base components that the clients get from the logon point are not
+synchronized with the CAP(s) for the site.
+
+Although this issue does not cause an error condition on clients, it does prevent
+the client from having full functionality. Microsoft recommends that you upgrade
+all sites that share logon points as closely together as possible, to avoid
+experiencing this issue.
+
+The upgrade process is:
+
+1. If the Client Configuration Installation Manager (CCIM) wakes up before the
+  client logs on again, the upgrade will occur solely from the CAP. Thus,
+  clients who belong to a site that has been upgraded and therefore are meant
+  to receive the upgrade will run Clicore from their upgraded CAP. Clients that
+  belong to a site that has not yet been upgraded (and therefore are not meant
+  to be upgraded) will not in this instance.
+
+2. If the client logs on before the next CCIM wakeup cycle and Windows NT Client
+  Logon Discovery/Installation is enabled, the Clicore on the logon point will
+  run, updating part of the base components (that is, the parts needed by Logon
+  Discovery and Installation). CCIM will finish the base installation at its
+  next wakeup cycle.
+
+Additional query words: prodsms SP SP1 smsfaqtop
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

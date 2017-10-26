@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q317052: HOW TO: Undo Changes Made by the IIS Lockdown Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q317052: HOW TO: Undo Changes Made by the IIS Lockdown Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/317/Q317052/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/317/Q317052/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/317/Q317052/","publisher":null,"image":null,"headline":"Q317052: HOW TO: Undo Changes Made by the IIS Lockdown Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q317052-how-to-undo-changes-made-by-the-iis-lockdown-wizard">Q317052: HOW TO: Undo Changes Made by the IIS Lockdown Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q317052
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 18-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server version 4.0 
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Introduction
+- Undo Changes Made by the IISLockdown Wizard
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to remove the IISLockdown Wizard from a
+Web server and restore the configuration and settings that were changed when the
+IISLockdown Wizard was run.
+
+Introduction
+------------
+
+If you run the IISLockdown Wizard (Iislockd.exe) from the Microsoft Security
+Toolkit and immediately notice problems with Internet Information Services
+(IIS), you may run the wizard again to undo the changes that the IISLockdown
+Wizard has made to the computer.
+
+Note that the undo operation may not be successful if you have made changes to
+the system between the time when the IISLockdown Wizard was originally run and
+when the undo task is run. Also, note that the Wizard can undo only the changes
+that the Wizard has made. The Wizard cannot undo manual changes that you have
+made to the server configuration.
+
+The undo feature uses the log file, Oblt-log.log, that is created at the time
+Iislockd.exe is originally run. Oblt-log.log is based on the changes that are
+recorded in the log, but it does not record any unused services that you have
+uninstalled. As a result, the undo feature does not restore any previously
+uninstalled services.
+
+Undo Changes Made by the IISLockdown Wizard
+-------------------------------------------
+
+1. Double-click the Iislockd.exe file.
+
+2. On the This Server Was Already Configured page, read the explanatory text,
+  and then click Next.
+
+3. The IIS Lockdown Wizard appears and informs you that the process will undo
+  the changes that were made when you last ran the Wizard. Click Yes to
+  continue.
+
+4. On the Restoring Security Settings page, you can see the previous settings
+  that are restored. When the process is complete, you see "Finished" in the
+  Status area. Note that this can take a significant amount of time based on
+  the complexity of the IIS configuration. Click Next.
+
+NOTE: This process does not restore any services that were removed if you
+selected Remove unselected services when you originally ran the IISLockdown
+Wizard.
+
+5. On the Restoration Complete page, click Finish.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q311113 The IIS Lockdown Wizard Undo Feature Does Not Restore Uninstalled
+  Services
+
+Additional query words: iislockd
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis510
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

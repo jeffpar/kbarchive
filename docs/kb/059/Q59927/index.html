@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q59927: Mac Hyp: Accessing Resources or Data in Nonstandard Fields | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q59927: Mac Hyp: Accessing Resources or Data in Nonstandard Fields" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/059/Q59927/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/059/Q59927/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/059/Q59927/","publisher":null,"image":null,"headline":"Q59927: Mac Hyp: Accessing Resources or Data in Nonstandard Fields","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q59927-mac-hyp-accessing-resources-or-data-in-nonstandard-fields">Q59927: Mac Hyp: Accessing Resources or Data in Nonstandard Fields</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q59927
+Product(s): Microsoft Mail For Appletalk Networks
+Version(s): 2.0,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To access information stored in nonstandard message types in Microsoft Mail
+version 2.0, use the following syntax:
+
+     msmail(GetField, messageRef, ident [, index]) =&gt; data
+
+For normal message types, the simpler commands, such as getSubject and getBody,
+can be used instead.
+
+getField returns the contents of the nth occurrence of the field, as specified by
+"index," with the given ident. For fields that are only allowed to occur once in
+a given message, no index needs to be passed. The first field in a message has
+index 0 (zero) in Mail 2.0 and index 1 in Mail 3.0 (see "Note" below for
+details). This allows for multiple resources of the same type ("ident") to be
+sent with one message. For more information, see the documentation on addField.
+
+"ident" is a 4-character type identification for that handle, such as "ICON",
+"CODE", and "snd ", or a 4-character field name identification for the field,
+such as "PHON" (the phone number on the phone form) or "T001" on a custom form.
+
+"index" is a number that directs the command to access a particular occurrence of
+the specified field or resource.
+
+To find out which idents are assigned to nonstandard objects on custom forms, use
+the following syntax:
+
+  show background field idmap
+
+Type this in the message box on the Send screen or Read screen of the form's
+stack. A field will display the mapping between HyperCard field names and Mail
+idents. There is also a list of the standard idents.
+
+Note: getField is not completely compatible between versions; the "index" default
+for the first field in Mail 2.0 is 0 (zero), while the default for the first
+field in Mail 3.0 is 1 (one). For additional arguments, see getField in the
+documentation for Mail 3.0.
+
+This information is taken from the "Microsoft Mail HyperCard Interface
+Documentation."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200 kbSDKMailHypercard300
+Version           : :2.0,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

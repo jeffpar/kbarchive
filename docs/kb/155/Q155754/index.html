@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155754: PRB: File Could Not Be Mapped to the SourceSafe Project | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155754: PRB: File Could Not Be Mapped to the SourceSafe Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155754/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155754/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155754/","publisher":null,"image":null,"headline":"Q155754: PRB: File Could Not Be Mapped to the SourceSafe Project","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155754-prb-file-could-not-be-mapped-to-the-sourcesafe-project">Q155754: PRB: File Could Not Be Mapped to the SourceSafe Project</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155754
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbSSafe400 kbSSafe500 kbSSafe600 kbVC400 kbVC410 kbVC420
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0, 6.0 
+- Microsoft Visual C++, versions 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Visual C++, when attempting to add a file that does not reside in the
+directory tree rooted at the directory containing the Visual C++ makefile to
+source code control, you may receive the following error:
+
+  File &lt;filename&gt; could not be mapped to the SourceSafe project
+  &lt;SourceSafe project name&gt;
+
+While this article refers to Visual C++, the same error occurs in the same
+circumstances in other integrated applications such as Visual Basic, FoxPro and
+Access.
+
+CAUSE
+=====
+
+SourceSafe could not find a corresponding file on your SourceSafe server. Often,
+SourceSafe uses the directory structure on your local hard drive to provide
+clues as to which SourceSafe project the file resides in. In this case, the
+mapping between your directory structure on your local hard drive and the
+project structure on your SourceSafe server could not be made.
+
+RESOLUTION
+==========
+
+If you have not done so, you will need to add the file (that you are attempting
+to add to source-code control in Visual C++) to a different SourceSafe project
+from the SourceSafe project containing the Visual C++ makefile. Depending on how
+you set up the SourceSafe project, you may or may not be able to use the Visual
+C++ integrated source-code control.
+
+For best results, mirror your local directory structure on your SourceSafe
+server. For example, if your file is in C:\common\resources, then add the file
+to a SourceSafe project $/common/resources. All of this must be done using
+either the SourceSafe Explorer or SS.EXE from the Command prompt.
+
+For information on sharing files between projects, please see article ID Q155678
+- How to Share Files Under Source-Code Control in Visual C++.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbSSafe400 kbSSafe500 kbSSafe600 kbVC400 kbVC410 kbVC420 
+Technology        : kbVCsearch kbVC400 kbSSafeSearch kbAudDeveloper kbVC410 kbVC420 kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103179: ADT/ODE: Help Topic Does Not Exist Err Invoking Custom Help File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103179: ADT/ODE: Help Topic Does Not Exist Err Invoking Custom Help File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103179/","publisher":null,"image":null,"headline":"Q103179: ADT/ODE: Help Topic Does Not Exist Err Invoking Custom Help File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103179-adtode-help-topic-does-not-exist-err-invoking-custom-help-file">Q103179: ADT/ODE: Help Topic Does Not Exist Err Invoking Custom Help File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103179
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:1.1,2.0,7.0,97
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 08-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Distribution Kit, version 1.1 
+- Microsoft Access Developer's Toolkit, versions 2.0, 7.0 
+- Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+If you press the F1 key to invoke a custom Help file topic for a form control,
+you receive the following error message.
+
+In Microsoft Access 97:
+
+  The Topic does not exist. Contact your application vendor for an updated Help
+  file (129)
+
+In Microsoft Access versions 1.1, 2.0, and 7.0:
+
+  Help topic does not exist
+
+twice.
+
+CAUSE
+=====
+
+The number entered in the HelpContextID property could not be mapped to a Help
+file context string in the custom Help file.
+
+RESOLUTION
+==========
+
+Make sure a [MAP] section exists in the Help project file that correctly maps
+the HelpContextID context number to the context string in the custom Help file.
+
+MORE INFORMATION
+================
+
+The number entered in the HelpContextID property for a Microsoft Access form
+control can be mistaken for the context string used to identify a topic in the
+Help system. The HelpContextID is actually known as a context number. A context
+number is an optional number that you can associate with context strings by
+using the [MAP] section in the Help project file. A context number can be
+assigned to each object in an application to enable context sensitivity.
+
+A typical [MAP] section in the Help project file will look as follows:
+
+  [MAP]
+  TitlePageContextString   3
+  Topic1ContextString      1
+  Topic2ContextString      2
+
+The context string appears first, followed by the HelpContextID context number.
+The context string and context number are separated by white space, using either
+space characters or tabs.
+
+In the example above, the # footnote for the first topic would be set to the
+string TitlePageContextString. Within Microsoft Access, you would set
+HelpContextID to the number 3.
+
+REFERENCES
+==========
+
+For more information on creating your own help topics, search the Help Index for
+"help, creating custom," or ask the Microsoft Access 97 Office Assistant.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbAccessDevTK200 kbOffice97 kbZNotKeyword3 kbAccessDevTK700 kbAccessDistKit110 kbOffice97DevSearch
+Version           : WINDOWS:1.1,2.0,7.0,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69112: How to Estimate Size of BASIC PDS ISAM Database Components | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69112: How to Estimate Size of BASIC PDS ISAM Database Components" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69112/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69112/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69112/","publisher":null,"image":null,"headline":"Q69112: How to Estimate Size of BASIC PDS ISAM Database Components","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69112-how-to-estimate-size-of-basic-pds-isam-database-components">Q69112: How to Estimate Size of BASIC PDS ISAM Database Components</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69112
+Product(s): See article
+Version(s): 7.00 7.10 | 7.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S910114-194 | mspl13_basic
+Last Modified: 14-FEB-1991
+
+Using the output of ISAMPACK.EXE can give you a rough estimate of the
+size of an ISAM database.
+
+This information applies to Microsoft BASIC Professional System (PDS)
+versions 7.00 and 7.10 for MS-DOS and 7.10 for OS/2.
+
+Because an ISAM file contains descriptive information, it has some
+size overhead. This overhead is required for the speed and efficiency
+that ISAM files possess compared to random access files. With this
+overhead, data manipulation, such as searches, seeks, and sorts,
+becomes extremely easy. The ISAM engine is responsible for all this
+data manipulation, which allows you to spend your time developing the
+code, and frees you from worrying about the fine details of the
+database management.
+
+You can use the output of the ISAMPACK.EXE utility to roughly guess
+the size of the components of an ISAM database.
+
+The ISAM database is divided into several components, which have the
+following size requirements:
+
+1. A database requires a header of 3K for its own use.
+2. The system data dictionary requires 39K.
+3. Each table requires 4K of overhead beyond the data space.
+4. Each index is allocated in 2K chunks.
+5. Actual data is allocated in 2K increments.
+
+Additionally, to optimize speed and flexibility, the file will grow in
+large increments of 32K, rather than in record-size increments as
+single records are added. For this same reason, the indexes and data
+are allocated in 2K chunks. Although the files are quite large
+compared to random access files, the ISAM file has room for growth and
+can be extremely fast. This can be a hurdle for some programmers, and
+is an important consideration when designing a program. Please read
+"ISAM Components/When to Use ISAM" on page 329 of the "Microsoft BASIC
+7.0: Programmer's Guide" (for 7.00 and 7.10) to determine which is
+more appropriate for your needs, ISAM files or random access files.
+
+The following tables were constructed using the sample database
+AMAZRAYS.MDB and the output from ISAMPACK.EXE.
+
+To run ISAMPACK.EXE, first invoke the PROISAMD.EXE TSR (terminate and
+stay resident) program, then use the following arguments for
+ISAMPACK.EXE:
+
+   ISAMPACK AMAZRAYS.MDB AMAZRAYS.RPT
+
+More information on ISAMPACK.EXE can be found on page 394 of the
+"Microsoft BASIC 7.0: Programmer's Guide."
+
+Header
+------
+
+ * Each database requires a 3K header.                           3K
+
+Data Dictionary
+---------------
+
+ * Five system tables and eight system indexes.                  39K
+
+Tables Overhead
+---------------
+
+ * Each table has 4K of overhead beyond its actual data records.
+
+      CustTable
+      InventTable
+      InvoiceTable
+      TransTable          4 * 4K =                               16K
+
+Indexes
+-------
+
+ * Each index is allocated in 2K chunks:
+
+   IndexName      Columns        Size   NumRecords  Size   Actual
+   ---------      -------        ----   ----------  ----   ------
+
+   AcctIndex      AcctNo(5)        5      7           35    2K
+
+   CompanyIndex   Company(70)
+                  AcctNo(5)       75      7          525    2K
+
+   ItemIndex      ItemNo(5)        5      8           40    2K
+
+   InvoiceIndex   InvoiceNo(6)     6     24          144    2K
+
+   DateIndex      Date(6)
+                  InvoiceNo(6)    12     24          288    2K
+
+   InvAcctIndex   AcctNo(6)
+                  Date(6)
+                  InvoiceNo(6)    36     24          864    2K
+
+   TransInvIndex  InvoiceNo(6)
+                  TransNo(2)      12     46          552    2K
+
+                                       Total Index Space...    14K
+
+Database
+--------
+
+ * Each database is allocated in 2K chunks.
+
+   Table        b/rec    #rec     Calc(K)  Act(K)
+   -----        -----    ----     -------  ------
+
+   CustTable     326        7     2.282       4
+   InventTable   163        8     1.304       2
+   InvoiceTable   33       24     0.792       2
+   TransTable     23       46     1.058       2
+                                                   Total...    10K
+
+Database Size
+=============
+
+ * Growth is in 32K chunks.
+
+                                  Grand total(82K)....   83,968 bytes
+   Adjusted for 32K chunk (3 * 32K * 1024 bytes/K)....   98,304 bytes
+           Actual file reported after packing file....   98,304 bytes
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

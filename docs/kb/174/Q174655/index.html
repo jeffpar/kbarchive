@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174655: PRB: File DSN and DSN-Less Connections May Fail w/Localized ODBC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174655: PRB: File DSN and DSN-Less Connections May Fail w/Localized ODBC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174655/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174655/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174655/","publisher":null,"image":null,"headline":"Q174655: PRB: File DSN and DSN-Less Connections May Fail w/Localized ODBC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174655-prb-file-dsn-and-dsn-less-connections-may-fail-wlocalized-odbc">Q174655: PRB: File DSN and DSN-Less Connections May Fail w/Localized ODBC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174655
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 25-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When shareable file Data Source Name (DSN) or DSN-less connections are used on
+computers with localized Open Database Connectivity (ODBC) driver descriptions,
+the connection may fail with the following message:
+
+  IM002: [Microsoft][ODBC Driver Manager] Data source name not found and no
+  default driver specified
+
+CAUSE
+=====
+
+Shareable file DSN and DSN-less connections use the DRIVER keyword to indicate
+which ODBC driver to use. The DRIVER keyword is set to a driver description that
+must match the description of an installed driver on the client computer. On
+computers with localized ODBC driver descriptions, the description used in the
+file DSN or DSN-less connection may not match that of the installed driver,
+thereby causing the error message described above.
+
+For example, if the German version of Microsoft Office 97 installed the ODBC
+Access 97 driver with a description of "Microsoft Access-Treiber (*.mdb)," a
+file DSN or a DSN-less connection containing "DRIVER={Microsoft Access Driver
+(*.mdb)}" will fail, even though the Access driver has been installed properly.
+
+WORKAROUND
+==========
+
+To work around this problem, do either of the following:
+
+- Change the driver description used in the file DSN or DSN-less connection so
+  that it matches the one on the client computer.
+
+  -or-
+
+- Install the driver again on the client computer with the description used in
+  the connect string. Note that using this option will result in more than one
+  description for the same driver, which will allow any program using any one
+  of the localized descriptions to connect through the driver on the client.
+
+The following ODBC 3.0 sample code illustrates a minimal installation of the ODBC
+SQL Server driver with an English driver description. You can alter the code to
+install any ODBC driver with any driver description. For more information
+concerning the files and function calls used in the code, see the ODBC 3.0 SDK.
+
+     #include &lt;windows.h&gt;
+     #include &lt;stdio.h&gt;
+     #include &lt;odbcinst.h&gt;
+
+     void ShowErrors ()
+     {
+        WORD     iError = 1;
+        DWORD pfErrorCode;
+        char     lpszErrorMsg[301];
+        WORD     cbErrorMsgMax = 300;
+        RETCODE  rc;
+
+        while (SQL_NO_DATA != (rc = SQLInstallerError(
+                 iError ++,
+                 &amp; pfErrorCode,
+                 lpszErrorMsg,
+                 cbErrorMsgMax,
+                 NULL )))
+           if (rc == SQL_SUCCESS || rc == SQL_SUCCESS_WITH_INFO)
+              printf( "%s\n", lpszErrorMsg);
+
+        printf ("\n");
+     }
+
+     void main ()
+     {
+        char *    szDriver = "SQL
+     Server\0Driver=sqlsrv32.dll\0Setup=sqlsrv32.dll\0\0";
+        char *    szPathIn = "c:\\winnt\\system32";
+        char   szPathOut[301];
+        WORD   cbPathOutMax = 300;
+        WORD   cbPathOut;
+        DWORD dwUsageCount;
+
+        printf ("Calling SQLInstallDriverEx ...\n");
+        if (!SQLInstallDriverEx(
+              szDriver,
+              szPathIn,
+              szPathOut,
+              cbPathOutMax,
+              &amp; cbPathOut,
+              ODBC_INSTALL_COMPLETE,
+              &amp; dwUsageCount))
+           ShowErrors ();
+
+        printf ("Calling SQLConfigDriver ...\n");
+        if (!SQLConfigDriver(
+              NULL,
+              ODBC_INSTALL_DRIVER,
+              "Microsoft Access - test 4",
+              "",
+              szPathOut,
+              cbPathOutMax,
+              &amp; cbPathOut))
+           ShowErrors ();
+     }
+
+Additional query words: jet desktop database
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

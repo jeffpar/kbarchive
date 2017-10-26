@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114269: PRB: &quot;Overwrite Invalid FoxUser File…&quot; Each Time Fox Starts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114269: PRB: &quot;Overwrite Invalid FoxUser File…&quot; Each Time Fox Starts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114269/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114269/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114269/","publisher":null,"image":null,"headline":"Q114269: PRB: &quot;Overwrite Invalid FoxUser File…&quot; Each Time Fox Starts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114269-prb-overwrite-invalid-foxuser-file-each-time-fox-starts">Q114269: PRB: "Overwrite Invalid FoxUser File…" Each Time Fox Starts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114269
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 03-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+- Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a 
+- Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Every time FoxPro starts, it displays the following error message:
+
+  Overwrite invalid FoxUser file with a new empty one? Yes/No
+
+CAUSE
+=====
+
+- The configuration file contains a RESOURCE = line with a path that points to
+  a nonexistent directory or folder.
+
+-or-
+
+- The resource files are corrupt.
+
+RESOLUTION
+==========
+
+- Change the path in the RESOURCE = line so that it points to a valid directory
+  or folder.
+
+-or-
+
+- Rename the resource files (FOXUSER.DBF and FOXUSER.FPT). FoxPro will build
+  new resource files the next time it starts.
+
+MORE INFORMATION
+================
+
+The configuration file is usually CONFIG.FPW in FoxPro for Windows, CONFIG.FP in
+FoxPro for MS-DOS, and CONFIG.FPM in FoxPro for Macintosh.
+
+Sample Situation That May Cause This Error When Upgrading FoxPro
+----------------------------------------------------------------
+
+This situation may occur when you are using the configuration file from a
+previous installation of FoxPro with a new FoxPro installation. For example,
+FoxPro version 2.5 for Windows installs to a directory named FOXPROW by default.
+FoxPro version 2.6 for Windows installs to a directory named FPW26 by default.
+
+If the following situation occurs, the RESOURCE = line will point to an invalid
+directory:
+
+1. FoxPro version 2.5 for Windows exists in a directory named FOXPROW. The
+  CONFIG.FPW file in FOXPROW contains a "RESOURCE=C:\FOXPROW\FOXUSER.DBF" line.
+
+2. FoxPro version 2.6 for Windows is installed in a directory named FPW26.
+
+3. The CONFIG.FPW file in FOXPROW is copied to FPW26.
+
+4. The FOXPROW directory is deleted.
+
+At this point, the CONFIG.FPW file in FOXPROW contains a RESOURCE = line pointing
+to C:\FOXPROW, which doesn't exist.
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin 2.50 2.50a 2.50b 2.50c config.fp(w) errmsg err msg akz
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro260a kbVFP300
+Version           : MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

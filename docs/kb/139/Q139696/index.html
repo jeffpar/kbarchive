@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139696: BUG: WinHelp Called Twice | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139696: BUG: WinHelp Called Twice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139696/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139696/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139696/","publisher":null,"image":null,"headline":"Q139696: BUG: WinHelp Called Twice","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139696-bug-winhelp-called-twice">Q139696: BUG: WinHelp Called Twice</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139696
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,4.21,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbCSHelp kbMFC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbVC421bug
+Last Modified: 13-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1, 4.21 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an AppWizard-generated MFC application with context-sensitive help support,
+pressing F1 causes WinHelp to be called twice. In most cases, the application
+displays the correct help topic. In some cases, however, the application
+displays the wrong help topic. This can happen when the user clicks a toolbar
+button and presses F1 before releasing the mouse button.
+
+This occurs only under the operating systems that support the WM_HELP message,
+such as Windows 95 or Windows NT 4.0.
+
+CAUSE
+=====
+
+CWnd in MFC 4.0 has a handler for WM_HELP that sends a WM_COMMAND with an id of
+ID_HELP. The AppWizard-generated application also has an accelerator for the F1
+key. Both result in WinHelp being called.
+
+RESOLUTION
+==========
+
+There are two possible resolutions:
+
+- Remove the accelerator table entry for F1. The problem with this is that F1
+  help will no longer work in Windows NT 3.5 or Win32s because these operating
+  systems do not support the WM_HELP message.
+
+-or-
+
+- Override CWinApp::PreTranslateMessage and cancel routing of the F1 key down
+  message as follows:
+
+        static BOOL AFXAPI IsHelpKey(LPMSG lpMsg)
+             // Return TRUE only for non-repeat F1 keydowns.
+        {
+              return lpMsg-&gt;message == WM_KEYDOWN &amp;&amp;
+        #ifndef _MAC
+              lpMsg-&gt;wParam == VK_F1 &amp;&amp;
+        #else
+              lpMsg-&gt;wParam == VK_HELP &amp;&amp;
+        #endif
+              !(HIWORD(lpMsg-&gt;lParam) &amp; KF_REPEAT) &amp;&amp;
+              GetKeyState(VK_SHIFT) &gt;= 0 &amp;&amp;
+              GetKeyState(VK_CONTROL) &gt;= 0 &amp;&amp;
+              GetKeyState(VK_MENU) &gt;= 0;
+        }
+
+        BOOL CHelpStuffApp::PreTranslateMessage(MSG* pMsg)
+        {
+           // If on a system that supports WM_HELP, cancel
+           // routing of F1 key.
+           DWORD dwVersion = ::GetVersion();
+           UINT nWinVer = (LOBYTE(dwVersion) &lt;&lt; 8) + HIBYTE(dwVersion);
+           if (nWinVer &gt;= 0x333 &amp;&amp; IsHelpKey(pMsg))
+               return TRUE;
+
+           return CWinApp::PreTranslateMessage(pMsg);
+        }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbCSHelp kbMFC kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbVC421bug kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,4.1,4.2,4.21,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

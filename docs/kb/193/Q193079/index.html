@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193079: FIX: &quot;Syntax Error&quot; with EVAL of ALL or LTRIM in SELECT-SQL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193079: FIX: &quot;Syntax Error&quot; with EVAL of ALL or LTRIM in SELECT-SQL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193079/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193079/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193079/","publisher":null,"image":null,"headline":"Q193079: FIX: &quot;Syntax Error&quot; with EVAL of ALL or LTRIM in SELECT-SQL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193079-fix-syntax-error-with-eval-of-all-or-ltrim-in-select-sql">Q193079: FIX: "Syntax Error" with EVAL of ALL or LTRIM in SELECT-SQL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193079
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you issue a SELECT SQL statement that contains a WHERE clause comparing a
+field value to an expression, which involves an ALLTRIM() or LTRIM() function
+that is passed to the EVALUATE() function, if the trim function trims a leading
+space or spaces the following error occurs when the SELECT statement is
+processed:
+
+  Syntax error.
+
+RESOLUTION
+==========
+
+As a workaround, trim the leading space or spaces by using STRTRAN() rather than
+ALLTRIM() or LTRIM().
+
+The following example demonstrates the workaround:
+
+     SELECT *, .t. FROM temp_table ;
+        WHERE temp_table.cUsageTL = EVALUATE(STRTRAN("lcService" ;
+        + (" 91")," ","")) ;
+        INTO CURSOR Temp4
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.PRG) file:
+
+        CLOSE DATABASES ALL
+        SET SAFETY OFF
+
+        * Create table and index.
+        CREATE table temp_table (cBTN c(2), cUsageTl c(10))
+        INDEX on cUsageTl tag cUsageTl
+
+        SET SAFETY ON
+
+        * Insert some records.
+        FOR lnj = 1 to 10
+           INSERT into temp_table (cBTN, cUsageTl) values ("91", "Sp800/W")
+           INSERT into temp_table (cBTN, cUsageTl) values ("91", "Sp800/X")
+           INSERT into temp_table (cBTN, cUsageTl) values ("91", "Sp800/Y")
+        ENDFOR
+
+        * Initialize variables to Evaluate.
+        lcService91="Sp800/W"
+        lcService92="Sp800/X"
+        lcService93="Sp800/Y"
+
+        * Issue SELECT with trailing, no and leading space.
+        SELECT *, .t. FROM temp_table WHERE temp_table.cUsageTl = ;
+           EVALUATE("lcService"+ALLTRIM("91 ")) ;
+           INTO CURSOR Temp2
+
+        SELECT *, .t. FROM temp_table WHERE temp_table.cUsageTl = ;
+           EVALUATE("lcService"+ALLTRIM("92")) ;
+           INTO CURSOR Temp3
+
+        * It fails with the leading space.
+        SELECT *, .t. FROM temp_table WHERE temp_table.cUsageTl = ;
+           EVALUATE("lcService"+ALLTRIM(" 93")) ;
+           INTO CURSOR Temp4
+
+In Visual FoxPro 5.0, the third select fails with a "Syntax error". This works
+without error in Visual FoxPro 6.0.
+
+Demonstration of Workaround
+---------------------------
+
+Replace the third select statement in the preceding program example with the
+following code:
+
+     SELECT *, .t. FROM temp_table ;
+        WHERE temp_table.cUsageTL = EVALUATE(STRTRAN("lcService" ;
+        + (" 91")," ","")) ;
+        INTO CURSOR Temp4
+
+RESULTS: After running the program, no error occurs, and the STRTRAN() function
+trims the leading space.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation
+
+
+Additional query words: kbVFp500abug kbVFp600fix kbSQL
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

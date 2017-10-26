@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81321: Maintaining PWB Display While Running a Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81321: Maintaining PWB Display While Running a Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81321/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81321/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81321/","publisher":null,"image":null,"headline":"Q81321: Maintaining PWB Display While Running a Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81321-maintaining-pwb-display-while-running-a-program">Q81321: Maintaining PWB Display While Running a Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81321
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1, 2.0 
+- Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to run a program in the background with the
+Programmer's WorkBench (PWB) versions 1.0 and 1.1, much like NMAKE and other
+utilities do. Although this method also works for version 2.0 of PWB, we
+recommend that you use the newer callback, DoSpawn(), instead.
+
+MORE INFORMATION
+================
+
+The best way to do this is to use PWB's compile command. First build a string of
+the form:
+
+  "arg arg \"progname.exe arguments for exe \" compile"
+
+Then pass the string to fExecute(). To demonstrate this, without having to write
+an extension, do the following in PWB:
+
+1. Press ALT+A ALT+A.
+
+2. Type in the name of the program or command you want to execute. For the
+  purposes of this article, type in "set" (without the quotation marks).
+
+3. Press CTRL+F3. This is the compile command.
+
+4. PWB will appear to be doing a build of your program. The box that comes up
+  will show the command that you passed to it, in this case, set.
+
+5. A dialog box will give you the options to View Results or Cancel. Choose View
+  Results.
+
+6. In the Compile Results window, you will see the environment variables that
+  you have set.
+
+Note that the PROGNAME.EXE can also be an MS-DOS or OS/2 command. The following
+sample code shows how to incorporate this into a simple program. Note that the
+results, if any, of your program will appear in the compile results window. Add
+the following lines to the TOOLS.INI file to make the function, funcname,
+accessible in PWB by using the ALT+Z keystroke:
+
+load:[extension].mxt funcname:alt+z
+
+If you are working under OS/2 rather than MS-DOS, you should use .PXT instead of
+.MXT as the file extension. It is important to note that you must force PWB to
+load your extension before you assign a keystroke to your function. PWB will
+recognize your function only after the extension is loaded, and since extensions
+are loaded after the TOOLS.INI, you cannot rely on PWB's automatic loading of
+extensions. MORE information about PWB extensions can be found in Chapter 8 of
+the "Microsoft C Advanced Programming Techniques" manual, the online help, and
+in Chapter 9 of the C versions 6.x "Developers Toolkit Reference."
+
+Sample Code
+-----------
+
+  /* Compile and link options needed:
+     cl /c /ACw /Gs [extension].c
+        To link for MS-DOS:
+     link /NOI exthdr.obj [extension].obj, [extension].mxt;
+        To link for OS/2:
+     link /NOI exthdrp.obj [extension].obj, [extension].pxt,,, ext.def;
+  */ 
+
+  #include "ext.h"
+
+  /* function prototype */ 
+  PWBFUNC funcname (
+      unsigned argData,
+      ARG _far *pArg,
+      flagType fMeta);
+
+  /* Switch description table (required for an extension) */ 
+  struct swiDesc swiTable[] = { { NULL,NULL,0}};
+
+  /* Command description table ( required for a PWB extension) */ 
+  struct cmdDesc cmdTable[] ={
+      { "funcname", funcname, 0 , NOARG},
+      { NULL, NULL, 0, 0}};
+
+  /* Function that PWB calls when loading the extension */ 
+  void EXTERNAL WhenLoaded(void)
+  {
+      DoMessage("Loading funcname extension");
+  }
+
+  PWBFUNC funcname (
+      unsigned argData,
+      ARG _far *pArg,
+      flagType fMeta)
+  {
+      char c[] = "arg arg \"set\" compile";
+      fExecute(c);
+  }
+
+Additional query words: kbinf extension 1.00 1.10 2.00 PWBIss
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB200DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

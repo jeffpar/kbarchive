@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q222163: XCLN: DR: &quot;Your message was deleted without being read&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q222163: XCLN: DR: &quot;Your message was deleted without being read&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/222/Q222163/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/222/Q222163/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/222/Q222163/","publisher":null,"image":null,"headline":"Q222163: XCLN: DR: &quot;Your message was deleted without being read&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q222163-xcln-dr-your-message-was-deleted-without-being-read">Q222163: XCLN: DR: "Your message was deleted without being read"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q222163
+Product(s): Microsoft Exchange
+Version(s): ; WINDOWS:95,98
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 97, on platform(s):
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+- Microsoft Outlook 98, on platform(s):
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+- Microsoft Outlook 2000, on platform(s):
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the following conditions exist, you may receive a message stating that your
+message was deleted without being read.
+
+Conditions
+----------
+
+- User A has a delegate, User D.
+
+- User A has set up the delegate to receive meeting requests and User A does
+  not receive the requests.
+
+- User B sends a meeting request to User A and later receives a Delivery
+  Receipt stating "Your message was deleted without being read."
+
+Scenario
+--------
+
+1. User B enables the "Tell me when all messages have been read" tracking option
+  in Outlook. This option notifies the message sender that the message has been
+  opened by the recipient, including date and time.
+
+  (To do this, on the Tools menu, click Options, click E-Mail Options, click
+  Tracking Options, and click to select the "Tell me when all messages have
+  been read" check box.)
+
+2. User B sends a message to User A.
+
+3. User A doesn't read the message (the delegate, User D, does), hence the
+  following message tracking notification to User B:
+
+-----Original Message-----
+From:	User A 
+Sent:	Friday, March 12, 1999 12:18 PM
+To:	User B
+Subject:	Meeting
+
+Your message
+     To:	User A
+     Subject:	Meeting
+     Sent:	3/12/99 12:18 PM
+
+was deleted without being read on 3/12/99 12:18 PM.
+
+4. The delegate, User D, selects the option to delete meeting requests after
+  they've been accepted, or simply deletes the request after it is processed.
+
+  (To do this, on the Tools menu, click Options, click E-Mail Options, click
+  Advanced E-Mail Options, and click to select the Delete meeting request from
+  inbox when responding check box.)
+
+  Enabling this setting removes a meeting request from the Inbox when User D
+  responds. If User D accepts the meeting request, the meeting is entered in
+  the Calendar.
+
+MORE INFORMATION
+================
+
+There is no way to prevent this behavior unless you clear the "Tell me when
+messages have been read" check box, which is not selected by default.
+
+Additional query words: 8.0 8.01 8.02 8.03 8.04 8.5 9.0
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97Search kbZNotKeyword3
+Version           : :; WINDOWS:95,98
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

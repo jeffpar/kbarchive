@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167874: WD97: Page Borders May Be Displayed or Printed Incorrectly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167874: WD97: Page Borders May Be Displayed or Printed Incorrectly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167874/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167874/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167874/","publisher":null,"image":null,"headline":"Q167874: WD97: Page Borders May Be Displayed or Printed Incorrectly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167874-wd97-page-borders-may-be-displayed-or-printed-incorrectly">Q167874: WD97: Page Borders May Be Displayed or Printed Incorrectly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167874
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbprint kbusage winword word97
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+For a Microsoft Word 2002 version of this article, see Q291335.
+
+SYMPTOMS
+========
+
+When you print or view a document in print preview, page borders in your
+document may not print, may not be shown or you may receive the following error
+message:
+
+  One or more margins are set outside the printable area of the page. Choose
+  the Fix button to increase the appropriate margins.
+
+CAUSE
+=====
+
+The default page border is only 24 points (about 5/16 inch) from the edge of the
+page, regardless of the actual unprintable region for your printer. Even though
+your document margins may fit in the printable region of the page, the page
+border may still be in the unprintable region defined by your printer driver.
+
+This problem affects HP DeskJet printers most frequently. The bottom unprintable
+region of the HP DeskJet printers is 0.67 inch or larger. The specific setting
+depends on the DeskJet series printer driver.
+
+
+WORKAROUND
+==========
+
+To work around this problem, use any of the following methods to change the page
+border margins.
+
+Method 1: Change the Default "Measure From Edge of Paper" Setting
+-----------------------------------------------------------------
+
+Change the default 24-point page border from the edge of the page margin to a
+different value. This may allow the page border to move into the printable
+region of your page.
+
+NOTE: The page border margins are adjustable between 0 and 31 points only. This
+is a distance of about 0.5-inch.
+
+Method 2: Change the Measure from Option to Text
+------------------------------------------------
+
+To move the bottom border farther up on the page, follow these steps:
+
+1. On the File menu, click Page Setup.
+
+2. Click the Margins tab.
+
+3. Increase the bottom margin to at least 0.67-inch and click OK.
+
+  NOTE: Changing the margin settings may affect the formatting of the document.
+
+4. On the Format menu, click Borders and Shading.
+
+5. Click the Page Border tab, and then click Options.
+
+6. In the Measure From list, click Text, and then click OK twice.
+
+Method 3: Change the Paper Size
+-------------------------------
+
+To change the paper size from letter to a custom size, follow these steps:
+
+1. On the File menu, click Page Setup.
+
+2. Click the Paper Size tab.
+
+3. In the Height box, change the setting to 10 inches. This will also change the
+  Paper Size setting to Custom Size.
+
+NOTE: Changing the paper size settings may affect the formatting of the
+document.
+
+Method 4: Change "Measure From" to Text
+---------------------------------------
+
+To change the "Measure From" setting, do the following:
+
+1. Click Borders and Shading on the Format menu.
+
+2. Select the Page Borders tab and then click Options.
+
+3. Under "Measure From", click Text.
+
+4. If necessary, change the margins to at least 10 pts.
+
+5. Click OK twice.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Most printers cannot print all the way to the edge of the paper due to physical
+limitations in the way the printer handles paper.
+
+If you set your document margins closer to the edge of the paper than your
+printer is capable of printing, Microsoft Word and Microsoft Word Viewer return
+a warning message for each copy you send to the printer.
+
+Most laser printers, such as the Hewlett-Packard (HP) LaserJet, cannot print
+closer than 0.25 inch to any edge of the paper. Some laser printers, such as the
+HP LaserJet Series II, require 0.5 inch margins. DeskJet printers generally
+cannot print closer to the bottom edge than 0.67 inch. Most PostScript and
+dot-matrix printers have their own internal printer driver setting for margins.
+
+For more information about unprintable regions, please see the following articles
+in the Microsoft Knowledge Base:
+
+  Q84647 "Margins Set Outside Printable Area of Page" in Word
+
+  Q166055 WD97: Margins Outside Printable Error in Word Viewer
+
+  Q114429 Page Number and Footer Don't Print on HP DeskJet Printer
+
+To Change or Add a Page Border
+------------------------------
+
+1. On the Format menu, click Borders and Shading.
+
+2. Click the Page Border tab, and then select the options desired for your page
+  border.
+
+3. To change the margins of the page border, click Options.
+
+  The Options button is located in the lower-right corner of the Borders And
+  Shading dialog box (above the Cancel button). Change the Margin, Measure
+  From, and Options as desired.
+
+4. Click OK twice to return to your document.
+
+For additional information about page borders, please see the following articles
+in the Microsoft Knowledge Base:
+
+  Q157098 WD97: General Information About Page Borders in Word 97
+
+  Q157134 WD97: 3-D Page Border is not Applied
+
+NOTE: The third-party products discussed here are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: word97 8.0 canon epson deskjet hp hpdj bjc inkjet cutoff chopped cropped gone wrong incomplete
+
+======================================================================
+Keywords          : kbprint kbusage winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

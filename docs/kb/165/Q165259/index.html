@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165259: INFO: Active Template Library (ATL) 2.0 Readme File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165259: INFO: Active Template Library (ATL) 2.0 Readme File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165259/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165259/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165259/","publisher":null,"image":null,"headline":"Q165259: INFO: Active Template Library (ATL) 2.0 Readme File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165259-info-active-template-library-atl-20-readme-file">Q165259: INFO: Active Template Library (ATL) 2.0 Readme File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165259
+Product(s): Microsoft C Compiler
+Version(s): 2.0,3.0
+Operating System(s): 
+Keyword(s): kbprogramming kbnokeyword kbATL200 kbGrpDSMFCATL
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL), versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is taken from the February 14, 1997 Readme file of the
+Active Template Library (ATL) version 2.0.
+
+MORE INFORMATION
+================
+
+Active Template Library 2.0 Readme
+----------------------------------
+
+ATL 2.0 requires Oleaut32.dll version 2.20.4049, or later, which is
+shipped with Windows NT 4.0 and Internet Explorer 3.0. ATL 2.0 also
+requires the Visual C++ 4.2b patch.
+
+Building ATL Projects from the Command Line Can Generate NMAKE Error
+--------------------------------------------------------------------
+
+Building an ATL project from the command line can generate NMAKE error
+U1073. (This problem does not occur when building ATL samples from within
+the integrated development environment.)
+
+For example, the following command line:
+
+  nmake /f beeper.mak CFG="beeper - Win32 Release"
+
+generates this error:
+
+  NMAKE : fatal error U1073: don't know how to make '".\beeper.h"'
+
+From the command line, ATL projects require two passes to build. The first
+pass directs MIDL to create a header file that is required for the second
+pass.
+
+To work around this problem, use the following commands:
+
+  nmake /f beeper.mak CFG="beeper - Win32 Release" beeper.h
+  nmake /f beeper.mak CFG="beeper - Win32 Release"
+
+_ATL_MIN_CRT and Link Error "unresolved external symbol _main"
+--------------------------------------------------------------
+
+When you build a Release version of an ATL project, you can get the
+following link error:
+
+  LIBCMT.LIB(crt0.obj) : error LNK2001: unresolved external symbol _main
+
+This error occurs if you are using CRT functions that require CRT startup
+code. The Release configurations define _ATL_MIN_CRT, which excludes CRT
+startup code from your EXE or DLL. To avoid this error, do one of the
+following:
+
+- Remove _ATL_MIN_CRT from the list of preprocessor defines to allow CRT
+  startup code to be included. On the Build menu, click Settings. Hold
+  the ctrl key while selecting all Release configurations. On the C/C++
+  tab, choose the General category, then remove _ATL_MIN_CRT from the
+  preprocessor definitions edit box.
+
+- If possible, remove calls to CRT functions that require CRT startup
+  code. Instead, use their Win32 equivalents. For example, use lstrcmp()
+  instead of strcmp(). Known functions that require CRT startup code are
+  some of the string and floating point functions.
+
+Service EXE Created with ATL COM AppWizard Doesn't Build in Release Mode
+------------------------------------------------------------------------
+
+In the ATL COM AppWizard, if you choose Service (EXE) as the server type,
+your project will not build in release mode. Builds in release mode
+automatically include the preprocessor directive _ATL_MIN_CRT, while the
+default ATL service code requires the CRT library. To avoid this error, do
+one of the following:
+
+- Remove _ATL_MIN_CRT from the list of preprocessor defines to allow CRT
+  startup code to be included. On the Build menu, click Settings. Hold
+  the ctrl key while selecting all Release configurations. On the C/C++
+  tab, choose the General category, then remove _ATL_MIN_CRT from the
+  Preprocessor definitions edit box.
+
+- Remove calls to CRT functions within the generated
+  ServiceModule::LogEvent function.
+
+ATL Controls in Visual Basic 5.0 Containers
+-------------------------------------------
+
+If you are using the IQuickActivate interface in Visual Basic 5.0, you
+must also support the connection point IPropertyNotifySink. To use a
+control generated by the ATL Object Wizard in a Visual Basic 5.0
+container, you must either add support for IPropertyNotifySink or remove
+the dependence on the IQuickActivate interface. To remove IQuickActivate
+support, comment out the lines containing IQuickActivateImpl in the
+control's class inheritance list and in the COM interface map. For
+example, if you generate a full control called MyCtl with the ATL Object
+Wizard, then go to MyCtl.h and comment out the line containing
+IQuickActivateImpl in the CMyCtl class inheritance list:
+
+  class ATL_NO_VTABLE CMyCtl :
+  ...
+
+  // public IQuickActivateImpl&lt;CMyCtl&gt;
+
+Also, comment out the line containing IQuickActivateImpl in the COM
+interface map in MyCtl.h:
+
+  BEGIN_COM_MAP(CMyCtl)
+  ...
+
+  // COM_INTERFACE_ENTRY_IMPL(IQuickActivate)
+
+Some ATL Object Stock Properties Must Be Initialized
+----------------------------------------------------
+
+Before Use in Visual Basic 5.0 Containers, Visual Basic 5.0 expects all
+stock properties that are IUnknown-based (such as MousePointer, Picture,
+and Font) to contain a valid IUnknown pointer. Otherwise, Visual Basic
+never allows the user to change the property. For example, if you have a
+stock Font property that you never fill in with a valid Font, Visual Basic
+will display the Font as being NULL, and will never allow the user to
+select a new Font through the Visual Basic property window.
+
+To avoid this problem, make sure your IUnknown-based stock properties have
+a valid value other than NULL before inserting your object into a Visual
+Basic container. There are many ways to do this, for example, get the
+ambient Font off the container and use that as your stock Font property.
+
+ATL Registrar Fails to Insert Keys Starting with Curly Brace
+------------------------------------------------------------
+
+The ATL registrar does not correctly interpret two consecutive key names
+that both start with a curly brace '{'. For example, the second
+"Implemented Categories" key name fails in the following registry script
+(rgs):
+
+  HKCR
+
+  {
+     NoRemove CLSID
+     {
+       ForceRemove {333C7BC4-460F-11D0-BC04-0080C7055A83} = s 'Tabular
+       Data Control'
+       {
+          'Implemented Categories'
+          {
+            '{7DD95801-9882-11CF-9FA9-00AA006C42C4}'
+            '{7DD95802-9882-11CF-9FA9-00AA006C42C4}'
+          }
+       }
+     }
+  }
+
+To correct the problem, break out each key name as shown in this example:
+
+  HKCR
+  {
+     NoRemove CLSID
+     {
+       ForceRemove {333C7BC4-460F-11D0-BC04-0080C7055A83} = s 'Tabular
+       Data Control'
+
+     {
+       'Implemented Categories'
+       {
+         '{7DD95801-9882-11CF-9FA9-00AA006C42C4}'
+       }
+       'Implemented Categories'
+       {
+         '{7DD95802-9882-11CF-9FA9-00AA006C42C4}'
+       }
+     }
+    }
+  }
+
+IPropertyPageImpl::Help is Implemented Incorrectly
+--------------------------------------------------
+
+In most cases, if you are using property pages, you should override
+IPropertyPage::Help and return E_NOTIMPL. This will cause the container to
+use information returned from GetPageInfo. You can also provide your own
+alternative implementation of this function if necessary.
+
+ATL Font and Picture Properties May Require Changes to the IDL File
+-------------------------------------------------------------------
+
+To make a Font or Picture property work in some containers, the interface
+definition must be declared within the library section of the .idl file.
+You must cut the interface declarations from the .idl file and paste them
+into the library section of the same file. In addition, the import line
+for ocidl.idl needs to be commented out. For example, the ATL Object
+Wizard generates the following .idl file for MyCtl with a Font property:
+
+  import "oaidl.idl";
+  import "ocidl.idl";
+
+  [
+     object,
+     uuid(8697BC4C-7A38-11D0-9A38-00A0C90DC94B),
+     dual,
+     helpstring("IMyCtl Interface"),
+     pointer_default(unique)
+  ]
+
+  interface IMyCtl : IDispatch
+  {
+     [propputref, id(DISPID_FONT)]
+     HRESULT Font([in]IFontDisp* pFont);
+     [propput, id(DISPID_FONT)]
+     HRESULT Font([in]IFontDisp* pFont);
+     [propget, id(DISPID_FONT)]
+     HRESULT Font([out, retval]IFontDisp** ppFont);
+  };
+
+  [
+     uuid(8697BC3F-7A38-11D0-9A38-00A0C90DC94B),
+     version(1.0),
+     helpstring("MyControl 1.0 Type Library")
+  ]
+
+  library MYCONTROLLib
+  {
+     importlib("stdole32.tlb");
+     importlib("stdole2.tlb");
+     [
+     uuid(8697BC4D-7A38-11D0-9A38-00A0C90DC94B),
+     helpstring("MyCtl Class")
+     ]
+
+     coclass MyCtl
+     {
+        [default] interface IMyCtl;
+     };
+  };
+
+The corrected version of this .idl file is shown below:
+
+  import "oaidl.idl";
+  // import "ocidl.idl";
+  [
+     uuid(8697BC3F-7A38-11D0-9A38-00A0C90DC94B),
+     version(1.0),
+     helpstring("MyControl 1.0 Type Library")
+  ]
+
+  library MYCONTROLLib
+  {
+     importlib("stdole32.tlb");
+     importlib("stdole2.tlb");
+     [
+        object,
+        uuid(8697BC4C-7A38-11D0-9A38-00A0C90DC94B),
+        dual,
+        helpstring("IMyCtl Interface"),
+        pointer_default(unique)
+     ]
+
+     interface IMyCtl : IDispatch
+     {
+        [propputref, id(DISPID_FONT)]
+        HRESULT Font([in]IFontDisp* pFont);
+        [propput, id(DISPID_FONT)]
+        HRESULT Font([in]IFontDisp* pFont);
+        [propget, id(DISPID_FONT)]
+        HRESULT Font([out, retval]IFontDisp** ppFont);
+     };
+     [
+        uuid(8697BC4D-7A38-11D0-9A38-00A0C90DC94B),
+        helpstring("MyCtl Class")
+     ]
+
+     coclass MyCtl
+     {
+        [default] interface IMyCtl;
+     };
+  };
+
+Changes to Stock Property Macros
+--------------------------------
+
+The documentation incorrectly references the macro
+IMPLEMENT_SMARTPTR_STOCKPROP. This macro is now obsolete. The macro
+IMPLEMENT_BOOL_STOCKPROP has been added and should be used for all stock
+properties that are Boolean values, such as the standard BORDERVISIBLE,
+ENABLED, TABSTOP, and VALID stock properties.
+
+Problems with ATL Samples
+-------------------------
+
+The samples ATLCON and ATLBUTTON have the following problems:
+
+- To successfully run ATLCON under a MinCRT configuration, you must
+  remove the WinMain entry point as follows:
+
+  1. Click Settings on the Build menu.
+  2. Under Settings For, choose one of the MinCRT configurations.
+  3. On the Link tab, choose the Output category.
+  4. Remove the text in the Entry-point symbol editbox.
+
+- ATLButton returns incorrect values for the properties ImageHover and
+  ImagePush. To correct the sample, change the file AtlButton.h so that
+  the function get_ImageHover uses m_bstrFileName[1].Copy() and change
+  get_ImagePush so that it uses m_bstrFileName[2].Copy().
+
+ATL Classes in ClassView
+------------------------
+
+To prevent the ATL classes from displaying in ClassView, modify (or
+create) the msvcincl.dat file, as follows:
+
+1. Using a text editor, open or create msvcincl.dat. This file must be
+  located in your Windows directory. Add a list of the ATL file names to
+  msvcincl.dat. For example:
+
+  atlbase.h
+  atlcom.h
+  atlctl.h
+  atlwin.h
+  ...
+
+  (For each name you add to msvcincl.dat, ClassView will exclude the
+  classes contained in that file.)
+
+2. Save msvcincl.dat in your Windows directory.
+
+3. Delete your project's .ncb file and restart Developer Studio.
+
+Organization of Documentation
+-----------------------------
+
+The documentation for ATL 2.0 consists of both .htm and .doc files. To
+navigate through the documentation in an online format, use the .htm files
+with your Web browser. The file start.htm provides a starting point.
+
+If you want to print the documentation, use the .doc files. The following
+table shows each ATL topic and its corresponding .doc file:
+
+  ATL Articles                           .doc File
+  ------------                           ---------
+
+  What's New in ATL 2.0                  d_new.doc
+  ATL Article Overview                   d_aover.doc
+  ATL Class Overview                     d_cover.doc
+  Introduction to COM and ATL            d_com.doc
+  ATL Tutorial                           d_tutor.doc
+  Creating an ATL Project                d_create.doc
+  Fundamentals of ATL COM Objects        d_fund.doc
+  ATL Window Classes                     d_win.doc
+  Connection Points                      d_connec.doc
+  Enumerators                            d_enums.doc
+  The Proxy Generator                    d_proxyg.doc
+  Debugging Tips for ATL Objects         d_debug.doc
+  ATL Services                           d_serv.doc
+  The ATL Registry Component             d_rgstry.doc
+
+  ATL Class Reference                    .doc File
+  -------------------                    ---------
+
+  CBindStatusCallback                    cbindsta.doc
+  CComAggObject                          ccagob.doc
+  CComApartment                          ccapart.doc
+  CComAutoCriticalSection                ccautocs.doc
+  CComAutoThreadModule                   ccautotm.doc
+  CComBSTR                               ccbstr.doc
+  CComCachedTearOffObject                cccachet.doc
+  CComClassFactory                       ccclfc.doc
+  CComClassFactory2                      ccclfc2.doc
+  CComClassFactoryAutoThread             ccclfca.doc
+  CComClassFactorySingleton              ccclfcs.doc
+  CComCoClass                            cccocls.doc
+  CComContainedObject                    cccontob.doc
+  CComControl                            cccontrl.doc
+  CComCriticalSection                    cccritsc.doc
+  CComDispatchDriver                     ccdispd.doc
+  CComDynamicUnkArray                    ccdynunk.doc
+  CComFakeCriticalSection                ccfakecs.doc
+  CComGlobalsThreadModel                 ccglbtm.doc
+  CComModule                             ccmod.doc
+  CComMultiThreadModel                   ccmtm.doc
+  CComMultiThreadModelNoCS               ccmtmncs.doc
+  CComObject                             ccob.doc
+  CComObjectGlobal                       ccobglb.doc
+  CComObjectNoLock                       ccobnlck.doc
+  CComObjectRoot                         ccobroot.doc
+  CComObjectRootEx                       ccobrtex.doc
+  CComObjectStack                        ccobstk.doc
+  CComObjectThreadModel                  ccobtm.doc
+  CComPolyObject                         ccpoly.doc
+  CComPtr                                ccptr.doc
+  CComQIPtr                              ccqiptr.doc
+  CComSimpleThreadAllocator              ccsmpthr.doc
+  CComSingleThreadModel                  ccsngtm.doc
+  CComTearOffObject                      cctob.doc
+  CComUnkArray                           ccunkar.doc
+  CComVariant                            ccvar.doc
+  CContainedWindow                       ccwind.doc
+  CDialogImpl                            cdialogi.doc
+  CDynamicChain                          cdynchn.doc
+  CFirePropNotifyEvent                   cfirepro.doc
+  CMessageMap                            cmessmap.doc
+  CRegKey                                cregky.doc
+  CStockPropImpl                         cstockpr.doc
+  CWindow                                cwind.doc
+  CWindowImpl                            cwindi.doc
+  CWndClassInfo                          cwndcls.doc
+  IConnectionPointContainerImpl          iconptc.doc
+  IConnectionPointImpl                   iconpti.doc
+  IDataObjectImpl                        idataob.doc
+  IDispatchImpl                          idisp.doc
+  IObjectSafetyImpl                      iobsafe.doc
+  IObjectWithSiteImpl                    iobwsite.doc
+  IOleControlImpl                        iolecont.doc
+  IOleInPlaceActiveObjectImpl            ioleipac.doc
+  IOleInPlaceObjectWindowlessImpl        ioleipow.doc
+  IOleObjectImpl                         ioleobj.doc
+  IPerPropertyBrowsingImpl               iperprbr.doc
+  IPersistPropertyBagImpl                iperspb.doc
+  IPersistStorageImpl                    iperstg.doc
+  IPersistStreamInitImpl                 iperstr.doc
+  IPointerInactiveImpl                   ipntinac.doc
+  IPropertyNotifySinkCP                  iprntfys.doc
+  IPropertyPageImpl                      iprpg.doc
+  IPropertyPage2Impl                     iprpg2.doc
+  IProvideClassInfo2Impl                 iprvci2.doc
+  IQuickActivateImpl                     iqkact.doc
+  IRunnableObjectImpl                    irunobj.doc
+  ISpecifyPropertyPagesImpl              ispecpp.doc
+  ISupportErrorInfoImpl                  isuperi.doc
+  IViewObjectExImpl                      iviewobj.doc
+
+  ATL Macros and Global Functions        macros.doc
+  -------------------------------        ----------
+
+  Obsolete ATL Topics                    obsolete.doc
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprogramming kbnokeyword kbATL200 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbATLsearch kbATL200 kbATL300
+Version           : :2.0,3.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140479: Updated Sage.dll File Corrects Floating-Point Math Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140479: Updated Sage.dll File Corrects Floating-Point Math Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140479/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140479/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140479/","publisher":null,"image":null,"headline":"Q140479: Updated Sage.dll File Corrects Floating-Point Math Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140479-updated-sagedll-file-corrects-floating-point-math-errors">Q140479: Updated Sage.dll File Corrects Floating-Point Math Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140479
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): kbfile kbtool win95 kbgraphxlinkcritical
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a program performs a floating-point calculation, the result may be
+incorrect.
+
+CAUSE
+=====
+
+This problem can occur if System Agent (Sage.exe) is running.
+
+
+This problem is known to affect the following programs:
+
+- Borland Paradox for Windows versions 5.0 and 5.0a
+
+  When you use the Paradox ObjectPAL Number() function to convert a string to a
+  floating-point number, the value returned to the function is slightly
+  different than the string value. For example, if you pass the string "6.136"
+  to the function, the value 6.136000000000000011 is returned. Note that this
+  problem does not occur if System Agent is not running.
+
+
+RESOLUTION
+==========
+
+Microsoft has released a new version of the Sage.dll file that corrects this
+problem. The new Sage.dll file is version 4.40.311 and is dated 10/24/95 with a
+size of 69,120 bytes.
+
+To install the new Sage.dll file, follow these steps:
+
+1. Download the Plusupd1.exe file from the Microsoft Download Center to an empty
+  folder.
+
+2. In Windows Explorer or My Computer, double-click the Plusupd1.exe file you
+  downloaded in step 1.
+
+3. Follow the instructions on the screen.
+
+The following file is available for download from the Microsoft Download Center:
+
+  Download Plusupd1.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Note that Microsoft has also released this update as part of Microsoft Windows 95
+Service Pack 1. For information about Microsoft Windows 95 Service Pack 1,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q142794 Availability of Microsoft Windows 95 Service Pack 1
+
+Additional query words: precision decimal fpu servicepack1
+
+======================================================================
+Keywords          : kbfile kbtool win95 kbgraphxlinkcritical 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : :95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

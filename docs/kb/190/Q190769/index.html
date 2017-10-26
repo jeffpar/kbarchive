@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190769: HOWTO: Use STRTOFILE() to Send Output to a Printer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190769: HOWTO: Use STRTOFILE() to Send Output to a Printer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190769/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190769/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190769/","publisher":null,"image":null,"headline":"Q190769: HOWTO: Use STRTOFILE() to Send Output to a Printer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190769-howto-use-strtofile-to-send-output-to-a-printer">Q190769: HOWTO: Use STRTOFILE() to Send Output to a Printer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190769
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is a new function in Visual FoxPro 6.0, STRTOFILE(), which outputs the
+contents of a string to a file. Since it allows additive output, you can also
+direct this output to a printer. This article provides an example of using
+STRTOFILE() to send a file or the contents of string or array to the printer you
+choose.
+
+MORE INFORMATION
+================
+
+Visual FoxPro 6.0 has two new string/file functions. These are the STRTOFILE()
+function, which outputs a string to a file, and the FILETOSTR() function, which
+inputs a file to a string. The following sample uses each to output text to a
+file.
+
+1. Run the following code from a program (.prg) file:
+
+        LOCAL lcString_to_Output, laOutput[1]
+        lcOutPut = ""
+
+        * Get the version information for VFP6.exe, returned to an array.
+        =AGETFILEVERSION(laOutput, HOME()+'vfp6.exe')
+
+        * Convert the contents of that array to a string with the function
+        * Array_to_String. Note that there must be a carriage return and line
+        * feed after each line.
+        lcString_to_Output = Array_to_String(@laOutput)
+
+        * Print the string
+        =Print_a_String(lcString_to_Output)
+
+        * Make sure this .prg file is not open.
+        CLOSE ALL
+
+        * Print this PRG file after converting it to a string with
+        * FILETOSTR().
+        =Print_a_String(FILETOSTR(SUBSTR(SYS(16),1, LEN(SYS(16))-3) + 'prg'))
+
+        RETURN
+
+        PROC Print_a_String
+           LPARAMETER tcStringToPrint
+           LOCAL laPrinters[1,1], lnArrayRow, lcPrinter
+           * Prompt the Select the printer.
+           lcPrinter = GETPRINTER()
+           * You could also use SET('printer', 2) to return Windows default
+           * printer, or SET('printer', 3) to return the VFP default printer.
+           IF LEN(lcPrinter) = 0
+              RETURN .F.
+           ENDIF
+           =APRINTERS(laPrinters)
+          lnArrayRow = ASUBSCRIPT(laPrinters, ASCAN(laPrinters, lcPrinter),1)
+
+          * IIF uses second column of laPrinters array in Windows 95, and
+          * the first in Windows NT.
+          * Last argument of .T. passed to STRTOFILE() means ADDITIVE output.
+           IF STRTOFILE(tcStringToPrint, ;
+                 laPrinters[lnArrayRow,IIF('NT'$OS(), 1, 2)], ;
+                 .T.) &gt; 0
+           * Succeeded, since bytes were written.
+              RETURN .T.
+           ELSE
+              * Failed, since no bytes were written.
+              RETURN .F.
+           ENDIF
+        ENDPROC
+
+        PROC Array_to_String
+           LPARAMETERS tcarray
+           * Note: This would require modification for use with multicolumn
+           * arrays
+           LOCAL lni, lcOutPut
+           lcOutPut = ""
+
+           #DEFINE       CR_LF       CHR(13)+CHR(10)
+
+           * Iterate through array and append a carriage return/line feed
+           * to each line.
+           FOR lni = 1 TO ALEN(tcarray)
+              lcOutPut = lcOutPut + tcarray[lni] + CR_LF
+           ENDFOR
+           RETURN lcOutPut
+        ENDFOR
+
+2. Select a destination for printing each time you are prompted.
+
+This code prints the Visual FoxPro 6.0 version information and the contents of
+the program.
+
+Anything you print in this manner must have each line terminated with carriage
+return and line feeds characters to ensure proper formatting. Window NT uses the
+printer name that is in the first column of the array created by APRINTERS().
+Windows 95 uses the port that is in the second column of the array created by
+APRINTERS(). Code for this behavior accordingly. The third argument in the
+STRTOFILE() function, lAdditive, must be .T. for sending output to a printer.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words: kbXBase kbVFp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

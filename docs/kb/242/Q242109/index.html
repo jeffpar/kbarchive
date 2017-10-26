@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242109: Slow Logging On and Browsing the Network Using IPX/SPX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242109: Slow Logging On and Browsing the Network Using IPX/SPX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242109/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242109/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242109/","publisher":null,"image":null,"headline":"Q242109: Slow Logging On and Browsing the Network Using IPX/SPX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242109-slow-logging-on-and-browsing-the-network-using-ipxspx">Q242109: Slow Logging On and Browsing the Network Using IPX/SPX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242109
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to log on to or browse the network from a Microsoft Windows
+95-based or Microsoft Windows NT 4.0-based computer that uses only the IPX/SPX
+protocol, you may experience delays. Also, programs that run on the
+IPX/SPX-based network may time out.
+
+CAUSE
+=====
+
+This behavior can occur if an internal network number is set on a server running
+Windows NT, but there is no NetWare server on the network.
+
+RESOLUTION
+==========
+
+To resolve this issue, manually configure the frame type and external network
+number on both the server and client computers:
+
+NOTE: A Windows NT Server 4.0-based server typically does not require an internal
+network number when there is no NetWare server on the network.
+
+1. In Control Panel, double-click Network, and then click the Protocols tab.
+
+2. Click NWLink IPX/SPX-Compatible Transport, and then click Properties.
+
+3. On the General tab, click the network adapter in the Adapter box.
+
+4. Click Manual Frame Type Detection, and then click Add.
+
+5. Click the frame type in the list, and then type the network number in the
+  Network Number box.
+
+6. Click Add, and then click OK.
+
+7. Restart the computer.
+
+MORE INFORMATION
+================
+
+The IPX network number, sometimes referred to as the 'external network number',
+is used to define the segments on your network. An IPX network number must be
+configured for each frame type on each network adapter installed in your Windows
+NT 4.0-based computer. The network number must be unique for each network
+segment. All computers on the same network segment using the same frame type
+must use the same network number to communicate.
+
+An internal network number identifies a virtual network segment on your network.
+Novell NetWare servers typically use internal network numbers to create a
+logical network to help identify the server in a multiple IPX/SPX-based network
+environment. By default, the internal network number is set to 0 on a Windows NT
+Server 4.0-based server and is not used in IPX routing. To use an internal
+network number on a Windows NT Server 4.0-based server, you must manually set
+the internal network number to a non-zero value (the internal network number is
+not automatically detected).
+
+A Windows NT Server 4.0-based computer requires an internal network number only
+when the following conditions apply:
+
+- Your computer is running File and Print Service for NetWare (FPNW)
+
+- Multiple frame types are in use on a single network adapter
+
+- NWLink is bound to multiple network adapters on your Windows NT Server
+  4.0-based computer
+
+- Your server is running programs that use the IPX/SPX Service Advertising
+  Protocol (SAP), such as Microsoft SQL Server or Microsoft System Network
+  Architecture (SNA) Server.
+
+For more information about the NWLink protocol and network numbers, refer to the
+following articles in the Microsoft Knowledge Base:
+
+  Q150546 NWLink IPX/SPX: Network Number vs. Internal Network Number
+
+  Q203051 Description of Microsoft NWLink IPX/SPX-Compatible Transport
+
+Additional query words: nt 4.0 slow log in netware
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

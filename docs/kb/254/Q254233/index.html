@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254233: WD97: Part 2: How to Troubleshoot Printing Problems from Word | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254233: WD97: Part 2: How to Troubleshoot Printing Problems from Word" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254233/","publisher":null,"image":null,"headline":"Q254233: WD97: Part 2: How to Troubleshoot Printing Problems from Word","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254233-wd97-part-2-how-to-troubleshoot-printing-problems-from-word">Q254233: WD97: Part 2: How to Troubleshoot Printing Problems from Word</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254233
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta word8 word97
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article is part 2 of a series of two Microsoft Knowledge Base articles that
+present a systematic approach to eliminating printing problems in Microsoft Word
+97 for Windows.
+
+The following topics are covered in this part of this article:
+
+  
+  How to Eliminate Document-Specific Printing Problems
+
+  What Are Some Other Things I Can Try?
+
+  Additional Troubleshooting Resources
+
+  Microsoft Support Options
+
+The following topic is covered in part 1 of this article:
+
+- What Are Some Specific Error Messages I May Get?
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q254232 WD97: Part 1: How to Troubleshoot Printing Problems from Word
+
+MORE INFORMATION
+================
+
+How to Eliminate Document-Specific Printing Problems
+----------------------------------------------------
+
+Printing problems in Microsoft Word can be specific to particular documents and
+templates. You may have one or more documents that may not be printed or that
+give you some sort of error message. To resolve problems similar to this, try
+the following:
+
+Step 1: Can You Print Other Word Documents?:
+
+If you are having problems printing a particular document, close the problem
+document and try to print a different document.
+
+If you cannot print other documents, create a new document and try to print it by
+using the following steps:
+
+a. Close all open Word documents.
+
+b. On the File menu, click New.
+
+c. On the General tab, click Blank Document, and then click OK.
+
+d. In your new blank Word document, type some text.
+
+e. On the Print menu, click Print.
+
+f. In the Print dialog box, click OK.
+
+If you can print this new document, you have identified that the problem is
+specific to particular Word documents. Proceed to Step 3 to resolve the problem
+with these documents.
+
+If you cannot print this new document, proceed to step 2.
+
+Step 2: Rename Normal.dot:
+
+If you cannot print the new Word document that you created in step 1, rename the
+Word global template (Normal.dot). To do this, follow these steps:
+
+a. Quit Microsoft Word.
+
+b. On the Windows Start menu, point to Find, and then click Files or Folders.
+
+c. In the Named box of the Name &amp; Location tab, type "Normal.dot" (without
+  the quotation marks). Change the Look in box to your C: drive or Local hard
+  drives (C:,D:) if you have multiple hard disks. Make sure the Include
+  subfolders check box is selected, and then click Find Now.
+
+d. For each occurrence of the Normal.dot file that is found, rename it to
+  Normal.old. To do this, follow these steps:
+
+  1. Click Normal.
+
+  2. On the File menu, click Rename.
+
+  3. Type "Normal.old" (without the quotation marks) and press ENTER.
+
+If Find Now finds other Normal.dot files, rename each one to Normal.old.
+
+e. Restart Microsoft Word. Word automatically creates a new Normal.dot file.
+
+f. In the new blank Word document, type some text.
+
+g. On the File menu, click Print.
+
+h. In the Print dialog box, click OK.
+
+If you can print the new Word document, you have determined that the problem is a
+corrupted Normal.dot file. You can now print new documents that are created from
+the new global (Blank Document) template (Normal.dot).
+
+If you cannot print this new document, there may be a problem that prevents
+Microsoft Word from printing. If this is the case, proceed to the "What Are Some
+Other Things I Can Try?" section of this article for additional steps to help
+resolve this problem.
+
+However, you may still be unable to print existing documents that were created by
+using your old corrupted Normal.dot file. If this is the case, proceed to step 4
+to resolve problems with these documents.
+
+
+Step 3: Create a New Custom Template:
+
+You may still not be able to print particular Word documents. Examine the problem
+documents to determine whether they were created from the same custom template.
+
+To determine which template the problem document was created from, follow these
+steps:
+
+a. Open a document that you cannot print.
+
+b. On the Tools menu, click Templates and Add-ins.
+
+c. The template that the document was created from should be listed in the
+  Document template box.
+
+If the template listed is Normal.dot, proceed to step 4 to resolve the problem
+with this document.
+
+If the template listed is a different template, create a new custom template. To
+do this, follow these steps:
+
+1. On the File menu, click New.
+
+2. On the General tab, click Blank Document, and then click OK.
+
+3. In the blank new Word document, type and create your template as you want it
+  to appear.
+
+4. On the File menu, click Save As.
+
+5. In the Save As dialog box, type a new file name for your new custom template,
+  change the Save as type box to Document Template, and then click Save.
+
+6. On the File menu, click Close to close your new custom template.
+
+7. On the File menu, click New.
+
+8. Click the new template that you created, and then click OK.
+
+9. Type any additional text that you want, and then click Print on the File
+  menu.
+
+10. In the Print dialog box, click OK.
+
+If the document that was created from your new custom template is printed
+correctly, you have determined that the major problem is with a corrupted custom
+template, and you need to create a new custom template for new documents.
+
+However, you still may not be able to print the documents that were created from
+your corrupted custom template. If this is the case, proceed to step 4 to
+resolve problems with these documents.
+
+Step 4: The Problem Document:
+
+You have reached this step because you have determined that you cannot print the
+document because it is damaged in some way.
+
+To print your document, try one or more of the following:
+
+- Try printing a range of pages. To do this, follow these steps:
+
+  a. On the File menu, click Print.
+
+  b. In the Print dialog box, click Pages, and then type a range of pages that
+     you want to print. For example, type "1-1" (without the quotation marks).
+     This prints the first page of your document.
+
+  c. If this page is printed correctly, repeat the process, and specify the
+     next range of pages as needed to print your entire document.
+
+  -or-
+
+- Save your problem document as Rich Text Format. To do this, follow these
+  steps:
+
+  a. On the File menu, click Save As.
+
+  b. In the Save As dialog box, type a new file name for your document in the
+     File name box.
+
+  c. Change the Save as type box to Rich Text Format.
+
+  d. Click Save. Your new document is saved with the RTF extension.
+
+  e. On the File menu, click Close to close the new RTF document.
+
+  f. On the File menu, click Open, and then open the new RTF document that you
+     just saved.
+
+  g. On the File menu, click Save As.
+
+  h. In the Save As dialog box, change the Save as type box to Word Document,
+     and then click Save.
+
+     NOTE: You do not need to type a new file name in the File name box, because
+     you renamed your new document in step b.
+
+  i. On the File menu, click Close to close your new Word document.
+
+  j. On the File menu, click Open, and then open the new Word document that you
+     just saved.
+
+  k. On the File menu, click Print.
+
+  l. In the Print dialog box, click OK.
+
+  If you can print your new document, you have resolved the problem with your
+  damaged document. Delete the old Word document that was causing your printing
+  problems, and work with your new Word document.
+
+  -or-
+
+- Copy and paste your entire Word document into a new Word file. To do this,
+  follow these steps:
+
+  a. Press CTRL+END to go to the end of your Word document.
+
+  b. Press CTRL+SHIFT+HOME to select the entire document and go to the top of
+     your Word document.
+
+  c. On the Edit menu, click Copy.
+
+  d. On the File menu, click New.
+
+  e. On the General tab, click Blank Document, and then click OK.
+
+  f. In the new blank Word document, click Paste on the Edit menu.
+
+  g. On the File menu, click Print.
+
+  h. In the Print dialog box, click OK.
+
+  If you can print your new Word document, you have resolved the problem. Your
+  old Word document is damaged. Save your new Word document and work with it.
+  Then you can delete the damaged document.
+
+  -or-
+
+- Copy and paste sections of your Word document to a new file. To do this,
+  follow these steps:
+
+  a. Select a portion of your Word document. If your document contains
+     sections, do not select a section break.
+
+  b. On the Edit menu, click Copy.
+
+  c. On the File menu, click New.
+
+  d. On the General tab, click Blank Document, and then click OK.
+
+  e. In the new blank Word document, click Paste.
+
+  f. On the File menu, click Print.
+
+  g. In the Print dialog box, click OK.
+
+  If you can print your new Word document, you have determined that your
+  existing Word document is damaged. Repeat these steps with the next portions
+  of your damaged document, and copy them into your new Word document. You may
+  want to copy a portion at a time and print your new Word document after you
+  paste each portion. This ensures that you are not copying a damaged portion
+  to your new Word file.
+
+  IMPORTANT: Do not copy and paste any section breaks into your new Word
+  document, because this may copy the problem into your new Word document.
+
+  After you copy all the portions of the damaged document to your new Word
+  document, save it as a Word document with a new file name. After you print
+  your new Word document, you may want to delete the damaged Word document.
+
+If these steps still have not allowed you to print your Word documents, proceed
+to the "What Are Some Other Things I Can Try?" section of this article.
+
+What Are Some Other Things I Can Try?
+-------------------------------------
+
+You have reached this section because you cannot print any document from
+Microsoft Word. Try the following items to correct this problem.
+
+Damaged Printer Driver:
+
+Printing problems in Microsoft Word can be caused by a damaged printer driver. If
+this is the case, delete and reinstall your printer driver. To do this, follow
+these steps:
+
+1. Quit all Windows applications.
+
+2. On the Windows Start menu, point to Settings, and then click Printers.
+
+3. Right-click your installed default printer, and click Delete from the
+  shortcut menu that appears.
+
+4. Click Yes to the following message
+
+  Are you sure you want to delete the printer 'printername'?
+
+  where 'printername' is the name of your installed default printer.
+
+5. You may receive an additional message when you delete your printer driver.
+  Click Yes to the following message:
+
+  Some files were used only for this printer and are no longer needed. Would
+  you like to delete these files now?
+
+6. After Windows removes your installed default printer and its associated
+  files, re-install the printer. To do this, do one of the following:
+
+   - In the Printers dialog box (on the Windows Start menu, point to Settings,
+     and then click Printers), double-click Add Printer, and then follow the
+     Add Printer Wizard to reinstall your Windows printer driver.
+
+     -or-
+
+   - Use the disk that was provided by your printer manufacturer, and install
+     it according to the installation instructions. For more information about
+     how to install the printer driver that was provided with your printer,
+     please contact your printer manufacturer.
+
+For information about how to contact your printer manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+  Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+  Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+  Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+After you reinstall your printer driver, restart Windows. Start Microsoft Word,
+and try to print your Word document. If you can print your Word document, you
+have resolved the problem. If you continue to have problems when you try to
+print from Microsoft Word, try other suggestions listed in this article.
+
+Damaged Word Data Key:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Printing problems in Microsoft Word can be caused by a damaged Word Data key in
+the Windows registry. If this is the case, you need to delete the Data key. When
+you restart Microsoft Word, Word recreates the Word Data key automatically.
+
+IMPORTANT: After you delete the Word Data key, some settings in Microsoft Word
+are reset to their default settings.
+
+To delete the Word Data key in the Windows registry, follow these steps:
+
+1. Quit all Windows applications.
+
+2. On the Windows Start menu, click Run.
+
+3. In the Open box, type "Regedit" (without the quotation marks) and click OK.
+
+4. Open the following registry key:
+
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word
+
+5. Under the Word key, click the Data subkey.
+
+6. On the Edit menu, click Delete.
+
+7. Click Yes to the following message:
+
+  Are you sure you want to delete this key?
+
+8. On the Registry menu, click Exit.
+
+After you delete the Word Data key, restart Microsoft Word and try to print your
+Word document. If you can print your Word document, you have resolved the
+problem.
+
+
+Additional Troubleshooting Resources
+------------------------------------
+
+For additional information about troubleshooting steps that may help you solve
+printing problems, click the article numbers below to view the articles in the
+Microsoft Knowledge Base:
+
+  Q128345 Troubleshooting Printing Problems in Windows 95/98
+
+
+  Q163551 Troubleshooting Printing Problems in Windows NT 4.0
+
+
+  Q87856 WD97: Troubleshooting Damaged Documents in Word for Windows
+
+  Q168198 WD97: Troubleshooting Invalid Page Faults in Word 97
+
+Microsoft Support Options
+-------------------------
+
+If you cannot resolve this issue, several support options are available to assist
+you.
+
+Quickly Find Answers Yourself Online:
+
+Use Microsoft Online Support to search the Microsoft Knowledge Base and other
+technical resources for fast, accurate answers. You can also customize the site
+to control your search.
+
+To begin your search, browse to the following Web site:
+
+  http://www.microsoft.com/support/
+
+Microsoft Product Support:
+
+Contact a Microsoft Product Support professional to assist you with
+troubleshooting problems.
+
+For more information about obtaining help with troubleshooting Microsoft Windows,
+click Help Topics on the Help menu in Windows Explorer. On the Contents tab,
+double-click to open the Troubleshooting book. Then double-click to open the
+Contact Microsoft Technical Support book to view your support options.
+
+For more information about obtaining help with troubleshooting Microsoft Word,
+click About Microsoft Word on the Help menu, and then click Tech Support.
+
+For additional information about Microsoft support services, please click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q102344 Microsoft Product Support Options Q&amp;A
+
+Microsoft Solution Providers:
+
+Microsoft Solution Providers are independent organizations that have teamed with
+Microsoft to use technology to solve business problems for companies of all
+sizes and industries.
+
+To locate a Microsoft Solution Provider in your area in the U.S. and Canada, call
+the Microsoft Sales Information Center at (800) 426-9400. If you are outside the
+United States, contact your local subsidiary. To locate your subsidiary, see the
+Microsoft World Wide Offices Web site at:
+
+  http://www.microsoft.com/worldwide/default.htm
+
+Additional query words: tshoot t-shoot troubleshooter trouble-shooter troubleshooting trouble shoot
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

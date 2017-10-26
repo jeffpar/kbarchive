@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117681: Profiling Windows NT Services | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117681: Profiling Windows NT Services" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117681/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117681/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117681/","publisher":null,"image":null,"headline":"Q117681: Profiling Windows NT Services","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117681-profiling-windows-nt-services">Q117681: Profiling Windows NT Services</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117681
+Product(s): Microsoft Programming Utilities
+Version(s): 1.0,1.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 05-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Source Profiler, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+The information in this article is included in the documentation starting
+with Visual C++ 5.0. Look there for future revisions.
+
+SUMMARY
+=======
+
+This article provides information about profiling Windows NT service processes.
+This information is not available in Microsoft Source Profiler documentation.
+
+MORE INFORMATION
+================
+
+Use the service sample from the directory MSVCNT\SAMPLES\SERVICE, and follow
+these steps to get timing information for its service functions:
+
+1. Set necessary environment variables using the System control panel applet.
+  You will find system environment variables like ComSpec, windir, and Path.
+
+2. Add two new environment variables:
+
+  __ProfilePBI=&lt;full path of your PBI file&gt;
+  __ProfilePBO=&lt;full path of your PBO file&gt;
+
+  Note the exact spelling and two leading underscores. If these are not
+  correctly set, you will get messages from PROFILE.DLL warning you that these
+  settings cannot be found.
+
+  In this example, if your compiler is on your D drive, these variables would
+  be:
+
+  d:\msvcnt\samples\service\simple.pbi d:\msvcnt\samples\service\simple.pbi
+
+3. Copy the profiler, DLL PROFILE.DLL, from the MSVCNT\BIN subdirectory to
+  either the directory where the service .EXE resides or to one of the
+  directories listed in the PATH environment variable.
+
+4. Build the sample, SIMPLE.EXE. Instruct the linker to create a .MAP file.
+
+5. Run PREP to create SIMPLE._XE, which has been modified for profiling:
+
+  prep /om /ft /sf _worker_thread simple.exe
+
+  This command also sets up the code to follow the call stack from the
+  worker_thread() routine. By default, the profiler profiles calls from the
+  main thread, so servicing requests from a secondary thread without specifying
+  the /sf option will produce incomplete results. In the sample, this second
+  thread is created by calling CreateThread() to service the requests. If the
+  main thread was servicing the requests, then you wouldn't need to use the /sf
+  option.
+
+6. Copy SIMPLE._XE to SIMPLE.EXE. This overwrites the original executable file
+  with the modified version that has the profile hooks added to the code.
+
+7. Start the service by using the Control Panel Services applet and run the
+  client application. Stop the service using the Control Panel. You can get the
+  timing information by executing:
+
+  prep /m simple
+  plist simple
+
+Additional query words: 1.00 1.10
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbSProfilerSearch kbSProfiler100
+Version           : :1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q294278: Security Settings in the Source Code in SDK Need Adjustment | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q294278: Security Settings in the Source Code in SDK Need Adjustment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/294/Q294278/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/294/Q294278/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/294/Q294278/","publisher":null,"image":null,"headline":"Q294278: Security Settings in the Source Code in SDK Need Adjustment","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q294278-security-settings-in-the-source-code-in-sdk-need-adjustment">Q294278: Security Settings in the Source Code in SDK Need Adjustment</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q294278
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbinterop kbConfig kbSecurity kbWBEM kbsms200 kbsmsUtil
+Last Modified: 02-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the adjustment of some of the security settings in the
+source code that is provided for the sample programs in the Microsoft Platform
+Software Development Kit (SDK).
+
+MORE INFORMATION
+================
+
+When you use the sample programs in the Systems Management Server (SMS) portion
+of the Microsoft Platform SDK, you may have to adjust some of the security
+settings that are implemented in the source code that is provided for the sample
+programs.
+
+The source code is provided for each sample to demonstrate basic functionality
+and to provide an example of how a particular task can be accomplished by means
+of a program.
+
+NOTE: Microsoft provides script, macro, and other code examples for illustration
+only, without warranty either expressed or implied, including but not limited to
+the implied warranties of merchantability and/or fitness for a particular
+purpose. This script is provided "as is" and Microsoft does not guarantee that
+the script, macro, or code can be used in all situations.
+
+If the Microsoft Visual C++, Microsoft Visual Basic, and Microsoft Visual Basic
+Scripting Edition samples are used directly from previous versions, and they are
+run from a Windows NT 4.0-based computer, your computer may experience
+unpredictable behavior. For this reason, Microsoft recommends that you enable
+the distributed version of Component Object Model (DCOM) impersonation level of
+"Impersonate". For more details, refer to the following Microsoft Developer
+Network Web site:
+
+  http://msdn.microsoft.com
+
+SMS, and the SMS Windows Management Instrumentation SMS Providers enforce a
+strong security model. Because of this requirement, the SMS Provider uses the
+Impersonation method.
+
+For example, when you compile the Visual C++ sample source code, you must ensure
+that you specify "Impersonation" in your "CoInitializeSecurity" call:
+
+  return CoInitializeSecurity (NULL, -1, NULL, NULL, 
+          bAuthenticate ? RPC_C_AUTHN_LEVEL_PKT : RPC_C_AUTHN_LEVEL_NONE, 
+          RPC_C_IMP_LEVEL_IMPERSONATE, NULL, EOAC_NONE, 0);
+
+Then, you must recompile the program to update the executable files.
+
+In your Visual Basic code, you must specify "Impersonation" as demonstrated in
+the following example:
+
+  WbemServices.Security_.ImpersonationLevel = wbemImpersonationLevelImpersonate
+
+Then, you must recompile the program to update the executable files.
+
+In Visual Basic Scripting Edition, you must specify "Impersonation" as
+demonstrated in the following example:
+
+  winmgmts:{impersonationLevel=impersonate}
+
+Because VBScripts are not compiled, any changes are effective the next time that
+the script is run.
+
+NOTE: The preceding changes have been incorporated into the current release of
+the Microsoft Platform SDK, which is available at the following Microsoft File
+Transfer Protocol (FTP) site:
+
+  ftp://ftp.microsoft.com/
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbConfig kbSecurity kbWBEM kbsms200 kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

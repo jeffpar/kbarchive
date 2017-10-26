@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148284: XCON: When and How to Use the Mtacheck Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148284: XCON: When and How to Use the Mtacheck Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148284/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148284/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148284/","publisher":null,"image":null,"headline":"Q148284: XCON: When and How to Use the Mtacheck Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148284-xcon-when-and-how-to-use-the-mtacheck-utility">Q148284: XCON: When and How to Use the Mtacheck Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148284
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5 exc55
+Last Modified: 27-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Message Transfer Agent check utility (Mtacheck) is designed to provide a
+soft recovery of a corrupted MTA database. It is automatically installed when
+Microsoft Exchange Server is installed and can be found in the
+%Exchange_Root%\Bin directory. This utility should be used when the MTA service
+will not start due to corruption or suspected corruption in the MTA database.
+
+MORE INFORMATION
+================
+
+Mtacheck must be run from a DOS VDM on the Microsoft Exchange Server. It is very
+simple to use and only has 2 parameter, /v and /f. The parameters and the
+results of their use are as follows:
+
+Mtacheck.                  minimum logging.
+Mtacheck /v                verbose logging.
+Mtacheck /f &lt;filename&gt;     minimum logging that is saved to a text file.
+Mtacheck /v /f &lt;filename&gt;  verbose logging that is saved to a text file.
+
+For more information about the Mtacheck utility, please see pages 614-617 of the
+Microsoft Exchange Administrator's Guide and the following article in the
+Microsoft Knowledge Base:
+
+  Q149017 XCON: MTACheck Event IDs and Command Line Syntax
+
+In Microsoft Exchange version 4.0 Service Pack 4 and Microsoft Exchange version
+5.0, two switches were added to Mtacheck.
+
+Mtacheck /rd            removes directory replication messages.
+Mtacheck /rp            removes public folder replication messages.
+
+
+In Microsoft Exchange version 5.0, another switch was added:
+
+Mtacheck /RL            removes unwanted Link Monitor messages
+
+Additional query words: 4.00 corrupt mtadata db dat
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

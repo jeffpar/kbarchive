@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167631: SMS: Windows 95 Service Pack 1 Contains Incorrect PDF Format | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167631: SMS: Windows 95 Service Pack 1 Contains Incorrect PDF Format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167631/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167631/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167631/","publisher":null,"image":null,"headline":"Q167631: SMS: Windows 95 Service Pack 1 Contains Incorrect PDF Format","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167631-sms-windows-95-service-pack-1-contains-incorrect-pdf-format">Q167631: SMS: Windows 95 Service Pack 1 Contains Incorrect PDF Format</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q167631</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">1.2</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbenv</span> <span class="n">kbinterop</span> <span class="n">kbnetwork</span> <span class="n">kbInventory</span> <span class="n">smsinv</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">20</span><span class="p">-</span><span class="n">FEB</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="k">version</span> <span class="m">1.2</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">The</span> <span class="n">cyclic</span> <span class="n">redundancy</span> <span class="n">check</span> <span class="p">(</span><span class="n">CRC</span><span class="p">)</span> <span class="n">numbers</span> <span class="n">listed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">Service</span> <span class="n">Pack</span>
+<span class="m">1</span> <span class="k">package</span> <span class="n">definition</span> <span class="n">file</span> <span class="p">(</span><span class="n">PDF</span><span class="p">)</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Ole32</span><span class="p">.</span><span class="n">dll</span> <span class="k">and</span> <span class="n">Shell32</span><span class="p">.</span><span class="n">dll</span> <span class="n">files</span> <span class="n">are</span><span class="p">:</span>
+
+  <span class="n">Ole32</span><span class="p">.</span><span class="n">dll</span>      <span class="p">=</span>  <span class="m">512</span> <span class="m">2048</span> <span class="m">23537</span>
+  <span class="n">Shell32</span><span class="p">.</span><span class="n">dll</span>    <span class="p">=</span>  <span class="m">256</span> <span class="m">1024</span> <span class="m">53870</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="n">import</span> <span class="n">the</span> <span class="n">PDF</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="k">package</span><span class="p">,</span> <span class="n">the</span> <span class="n">CRC</span> <span class="n">numbers</span> <span class="n">listed</span> <span class="k">in</span> <span class="n">the</span>
+<span class="k">package</span> <span class="n">are</span> <span class="n">different</span><span class="p">:</span>
+
+  <span class="n">Ole32</span><span class="p">.</span><span class="n">dll</span>      <span class="p">=</span>  <span class="m">512</span> <span class="m">527152781</span> <span class="m">257776</span>
+  <span class="n">Shell32</span><span class="p">.</span><span class="n">dll</span>    <span class="p">=</span>  <span class="m">256</span> <span class="m">527152781</span> <span class="m">257776</span>
+
+<span class="n">They</span> <span class="n">are</span> <span class="n">different</span> <span class="n">because</span> <span class="n">the</span> <span class="n">PDF</span> <span class="n">format</span> <span class="n">is</span> <span class="n">wrong</span><span class="p">.</span> <span class="n">It</span> <span class="n">needs</span> <span class="n">commas</span><span class="p">,</span> <span class="k">as</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">following</span> <span class="n">example</span><span class="p">:</span>
+
+  <span class="n">Ole32</span><span class="p">.</span><span class="n">dll</span>      <span class="p">=</span>  <span class="m">512</span><span class="p">,</span><span class="m">2048</span><span class="p">,</span><span class="m">23537</span>
+  <span class="n">Shell32</span><span class="p">.</span><span class="n">dll</span>    <span class="p">=</span>  <span class="m">256</span><span class="p">,</span><span class="m">1024</span><span class="p">,</span><span class="m">53870</span>
+
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">----------------</span>
+
+<span class="n">Because</span> <span class="k">of</span> <span class="n">this</span> <span class="n">problem</span> <span class="k">with</span> <span class="n">the</span> <span class="n">PDF</span><span class="p">,</span> <span class="n">software</span> <span class="n">inventory</span> <span class="n">will</span> <span class="n">be</span> <span class="n">unable</span> <span class="k">to</span>
+<span class="n">determine</span> <span class="n">whether</span> <span class="n">Windows</span> <span class="m">95</span> <span class="n">is</span> <span class="n">installed</span> <span class="n">on</span> <span class="n">your</span> <span class="n">clients</span> <span class="k">until</span> <span class="n">you</span> <span class="n">make</span> <span class="n">the</span>
+<span class="n">necessary</span> <span class="n">changes</span> <span class="k">to</span> <span class="n">the</span> <span class="n">CRC</span> <span class="n">data</span> <span class="k">in</span> <span class="n">the</span> <span class="n">PDF</span> <span class="n">file</span> <span class="n">itself</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">sms</span> <span class="n">prodsms</span> <span class="n">pdf</span> <span class="n">win95</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbenv</span> <span class="n">kbinterop</span> <span class="n">kbnetwork</span> <span class="n">kbInventory</span> <span class="n">smsinv</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS120</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">1.2</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbinfo</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

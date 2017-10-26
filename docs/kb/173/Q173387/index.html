@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173387: PRB: Restoring an Archive of an Entire Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173387: PRB: Restoring an Archive of an Entire Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173387/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173387/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173387/","publisher":null,"image":null,"headline":"Q173387: PRB: Restoring an Archive of an Entire Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173387-prb-restoring-an-archive-of-an-entire-database">Q173387: PRB: Restoring an Archive of an Entire Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173387
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): _IK kbSSafe
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you have archived an entire database with the SSARC utility and you try to
+restore it with SSRESTOR, you receive the following error:
+
+  The path $/ is already in use. Cannot restore path from archive file.
+
+CAUSE
+=====
+
+The syntax you used was:
+
+  SSRESTOR [-s path to srcsafe.ini] &lt;archive file&gt; $/ 
+
+SSRESTOR attempts to create a new project in the target database, with the name
+of the project given in the SSRESTOR command. Because the root project ($/) will
+always exist in the target database, the restored root project cannot be
+created.
+
+RESOLUTION
+==========
+
+To resolve this error, either:
+
+1. Repeat the SSRESTOR command multiple times, once for each top-level project.
+
+-or-
+
+2. In the original project, share the entire project tree to a new project, and
+  then archive and restore this project.
+
+STATUS
+======
+
+This behavior is by design. According to the User's Guide (Appendix B page 219
+for Visual SourceSafe 5.0), "if restoring attempts to create a duplicate file or
+project name, the restore fails."
+
+MORE INFORMATION
+================
+
+If, for example you have three top-level projects:
+
+  $/first
+  $/second
+  $/third
+
+Resolution 1:
+
+Run SSRESTOR three times, each time specifying the name of one of the projects as
+the last argument (for example, SSRESTOR archive.ssa $/first). There are two
+disadvantages to this method.
+
+If there is a large number of top-level projects, this process will be tedious,
+and there is no easy way to automate it. Any links (shared or branched files)
+between top-level projects and will be lost. For example, if:
+
+  $/first/sub_one/myfile.txt
+
+is shared to:
+
+  $/third/sub_one/myfile.txt
+
+then the files will not be shared in the restored projects.
+
+Links that are within the same project tree are maintained, such as:
+
+  $/first/sub_one/myfile.txt
+  $/first/sub_five/myfile.txt
+
+Resolution 2:
+
+There are three steps in this resolution:
+
+1. In the original database, create a new top-level project, (for example,
+  $/root), then recursively share all top-level projects into $/root.
+
+2. Archive $/root.
+
+3. Restore $/root into the target database.
+
+In this case all links at all levels are restored, the disadvantages of this
+method are:
+
+- With a large number of top-level projects, sharing them into $/root may be
+  time consuming.
+
+- After restoring, you may want to move all the top-level projects back to
+  being subprojects of $/, rather than subprojects of $/root. Again, this may
+  be time consuming with a large number of projects.
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kbSSafe 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q180928: 5250 Applet Fails to Connect, Displaying Error [0003][00000005] | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q180928: 5250 Applet Fails to Connect, Displaying Error [0003][00000005]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/180/Q180928/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/180/Q180928/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/180/Q180928/","publisher":null,"image":null,"headline":"Q180928: 5250 Applet Fails to Connect, Displaying Error [0003][00000005]","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q180928-5250-applet-fails-to-connect-displaying-error-000300000005">Q180928: 5250 Applet Fails to Connect, Displaying Error [0003][00000005]</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q180928
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 14-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following problem may occur when you use the 5250 applet, which is provided
+with SNA Server. Other third-party 5250 emulators, APPC programs, or CPIC
+programs may report a different error message.
+
+After you start a 5250 session and enter an AS/400 Userid and Password in the
+AS/400 logon dialog box, the 5250 session shows a blank screen displaying the
+following message in the lower left corner of the applet:
+
+  Opening Connection to &lt;AS/400_Name&gt;
+
+After a while the following error message appears:
+
+  Could not connect to remote host
+
+  [0003] [00000005]
+
+An APPC program will receive the following error message:
+
+  primary_rc - 0x0003 (AP_ALLOCATION_ERROR) secondary_rc = 0x00000005
+  (AP_ALLOCATION_FAILURE_RETRY)
+
+And a CPIC program will receive the following error message:
+
+  rc = 2 (CM_ALLOCATE_FAILURE_RETRY)
+
+When you connect to an AS/400, this may also coincide with Event 23 with a
+Qualifier = 00AE in the Windows NT application log of the event viewer.
+
+CAUSE
+=====
+
+This error can occur when you configure the Implicit Incoming Remote LU
+(pointing to the Remote LU Alias) from the Local APPC LU folder, and if an APPC
+mode is selected in the Implicit Incoming Mode from the Remote LU folder.
+
+WORKAROUND
+==========
+
+To work around this problem, change both the Implicit Incoming Remote LU and the
+Implicit Incoming Mode to none. Resave the configuration file, and restart the
+affected SNA Server service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0, 3.0 SP1,
+and 4.0. This problem was corrected in the latest Microsoft SNA Server 4.0 U.S.
+Service Pack 1. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+For additional information, please see Knowledge Base article Q166529, "APPC
+Applications Fail to Connect to SNA Server 3.0."
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

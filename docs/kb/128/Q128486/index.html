@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128486: BUG: Btrieve: Drop Table Does Not Remove Entry in SQLTables | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128486: BUG: Btrieve: Drop Table Does Not Remove Entry in SQLTables" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128486/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128486/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128486/","publisher":null,"image":null,"headline":"Q128486: BUG: Btrieve: Drop Table Does Not Remove Entry in SQLTables","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128486-bug-btrieve-drop-table-does-not-remove-entry-in-sqltables">Q128486: BUG: Btrieve: Drop Table Does Not Remove Entry in SQLTables</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128486
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.0
+Operating System(s): 
+Keyword(s): kbBug kbISS
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# QJET: 1267 (2.00.2114)
+
+SYMPTOMS
+========
+
+Use of the SQL syntax Drop Table with the ODBC Btrieve Driver from the ODBC
+Desktop Database Drivers version 2.0 will correctly delete the table from the
+.DDF file; however, the reference to this table will still be contained when
+SQLTables is called on this Btrieve database. Thus, a new table of the same name
+cannot be created even though the table is no longer physically present in the
+database.
+
+For example, use ODBC Test to try to create a Btrieve table, then drop it, and
+try to recreate it again. This should work.
+
+  create table test1  (col1 string(30))
+Returns: SQL_SUCCESS=0
+
+  drop table test1
+Returns: SQL_SUCCESS=0
+
+  create table test1  (col1 string(30))
+Return:   SQL_ERROR=-1
+stmt:szSqlState = "S0001", *pfNativeError = -1303, *pcbErrorMsg = 62
+szErrorMsg="[Microsoft][ODBC Btrieve Driver] Table 'test1' already
+exists."
+
+WORKAROUND
+==========
+
+The ODBC Btrieve driver version 2.00.2317 will resolve this problem. It must be
+used in conjunction with WBTRCALL.DLL that is dated 3/31/92 and is 51,392 bytes
+in size. This file must be obtained from Btrieve Technologies or Novell. Please
+contact these vendors for more information on this file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft ODBC Btrieve
+version 2.00.2114. This problem has been fixed in the Microsoft ODBC Btrieve
+version 2.00.2317. For more information, please contact your primary support
+provider.
+
+Additional query words: 2.00.2317 ODBC Btrieve Desktop Database Drivers 2.0 MFC Word Query Excel Visual C++
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

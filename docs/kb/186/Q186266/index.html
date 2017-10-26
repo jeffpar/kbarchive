@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186266: INFO: What Is Handled Differently in Windows CE, VBCE, and eVB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186266: INFO: What Is Handled Differently in Windows CE, VBCE, and eVB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186266/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186266/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186266/","publisher":null,"image":null,"headline":"Q186266: INFO: What Is Handled Differently in Windows CE, VBCE, and eVB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186266-info-what-is-handled-differently-in-windows-ce-vbce-and-evb">Q186266: INFO: What Is Handled Differently in Windows CE, VBCE, and eVB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186266
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbGrpDSVB
+Last Modified: 16-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft eMbedded Visual Basic, version 3.0 
+- Microsoft Windows CE Toolkit for Visual Basic 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows CE Toolkit for Visual Basic (VBCE) and eMbedded Visual Basic are
+similar to Visual Basic in both functionality and design. However, several
+Visual Basic features have not been implemented because of limitations in the
+Windows CE operating system and other factors. This article addresses the
+restrictions imposed by these limitations.
+
+MORE INFORMATION
+================
+
+IDE AND PROJECT STRUCTURE
+-------------------------
+
+- Visual Basic class files are not supported.
+
+- Designers and insertable objects, such as Excel, are not supported.
+
+- The Auto Increment checkbox on the Make tab is not supported.
+
+- The Standard, Edit, and Menu Bar toolbars can be customized, but the changes
+  are not persisted. This means that the next time you launch the design
+  environment, it will launch with its default settings.
+
+- The Debug toolbar is not available (VBCE6 only).
+
+- Some properties and methods are provided by the IDE but are not supported.
+
+- Icons cannot be specified in the Project Properties dialog.
+
+- The menu editor is not available (eVB only). Use either the CommandBar or
+  MenuBar (PocketPC platforms) for this functionality.
+
+OBJECTS AND CONTROLS
+--------------------
+
+- ActiveX components cannot be created.
+
+- ActiveX controls written for Visual Basic 5.0 or 6.0 cannot be used.
+
+- The Printer object is not supported.
+
+LANGUAGE FEATURES
+-----------------
+
+- Help files are not supported.
+
+- The only variable type is Variant. Although variables can be declared as a
+  specific type, this is only for Intellisense help.
+
+- Duplicate sub or functions, such as a sub-sub, function-function, or
+  sub-function combination, are not supported.
+
+- Conditional compilation is not supported.
+
+- Command line arguments are not supported.
+
+- The Next statement does not take an argument (VBCE6 only).
+
+- Only lete binding is supported.
+
+RUNNING AND DEBUGGING CODE
+--------------------------
+
+- Programs are compiled before they are run.
+
+- Most language errors are displayed only at run-time.
+
+- Arrays may not get initialized when there is little free memory.
+
+- The Debug object is not supported.
+
+- An external debugger is provided.
+
+NOTE: Adding an existing Visual Basic code module or existing Visual Basic forms,
+including those listed in the Add Form dialog, to a Windows CE Toolkit for
+Visual Basic or eMbedded Visual Basic project is generally not supported because
+the code module or form may use controls and/or language syntax not supported by
+Windows CE Toolkit for Visual Basic.
+
+REFERENCES
+==========
+
+eMbedded Visual Basic Online Help
+
+The Windows CE Toolkit for Visual Basic 6.0 Books Online
+
+For more information regarding Windows CE, please visit the following Microsoft
+web address:
+
+  http://www.microsoft.com/windowsce/
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q184650 INFO: What Does Visual Basic Have That VBCE Doesn't Have?
+
+Additional query words: wce wince vbce evb vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp500 kbVBp600 kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

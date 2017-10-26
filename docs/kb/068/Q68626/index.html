@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q68626: /Gm Option Can Be Emulated with a Preprocessor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q68626: /Gm Option Can Be Emulated with a Preprocessor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/068/Q68626/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/068/Q68626/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/068/Q68626/","publisher":null,"image":null,"headline":"Q68626: /Gm Option Can Be Emulated with a Preprocessor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q68626-gm-option-can-be-emulated-with-a-preprocessor">Q68626: /Gm Option Can Be Emulated with a Preprocessor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q68626
+Product(s): See article
+Version(s): 6.00 6.00a | 6.00 6.00a
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 6-FEB-1991
+
+The /Gm switch from Microsoft C version 5.10 is not fully implemented
+in versions 6.00 and later. This switch is designed to take all string
+literals and move them into the _CONST segment, instead of keeping
+them in the _DATA segment. However, there is a way to emulate the /Gm
+switch, which involves the use of a preprocessor for pass 2 of the
+compiler.
+
+There is a text file on CompuServe (in the MSLANG forum, library 3)
+called C2PP.C. This is public domain source code for a preprocessor
+that alters the output file from pass 1 of the compiler. Instructions
+for use are included in the source code. The program reads the input
+file, alters it, and then calls pass 2 of the compiler.
+
+To use the program, add the following options to the beginning of
+your compile line:
+
+   /B2 c2pp /Gm
+
+Even though the /Gm switch is not fully implemented in version 6.00,
+it does alter the pass 1 output file, and the preprocessor requires
+it.
+
+This program cannot be used with the /qc (Quick Compile) option.
+
+Warning: The format for the output file from pass 1 is not documented,
+and is subject to change at any time. This program has been tested
+with versions 6.00 and 6.00a. It is not guaranteed to work with any
+other versions. It is also not supported or maintained by Microsoft,
+only by the author, as listed below and in the comments in the source
+code.
+
+Many thanks to Paul van Keep (CIS ID:75170,1045) for the code that
+does the preprocessing.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

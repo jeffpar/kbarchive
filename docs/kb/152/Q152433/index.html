@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152433: XADM: How to Remove Orphaned Public Folders | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152433: XADM: How to Remove Orphaned Public Folders" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152433/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152433/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152433/","publisher":null,"image":null,"headline":"Q152433: XADM: How to Remove Orphaned Public Folders","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152433-xadm-how-to-remove-orphaned-public-folders">Q152433: XADM: How to Remove Orphaned Public Folders</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152433
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5 exc55
+Last Modified: 14-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you stop replication between two or more sites, folders are still shown in
+the Public Folder Hierarchy but they are not accessible from Microsoft Exchange
+clients or the Microsoft Exchange Administrator program.
+
+For Exchange Server 4.0, from the Microsoft Exchange Administrator program, the
+following message will be encountered:
+
+  The object cannot be found in the directory. This may be because replication
+  has not completed.
+  Microsoft Exchange Directory. c1010aae."
+
+From a Microsoft Exchange client, the error message will be:
+
+  The folder could not be opened. The contents of this public folder are
+  currently unavailable. Either the MS Exchange server computer servicing this
+  public folder is down or the public folder has not been replicated to this
+  site.
+
+In Exchange Server 5.5, you receive the following error message:
+
+  The object in the information store could not be found.
+
+  Microsoft Exchange Information Store
+  ID no: c1040af2
+
+RESOLUTION
+==========
+
+To remove these orphaned folders, follow these steps:
+
+Warning: The orphaned folders should not be deleted if site replication is ever
+going to be re-established. This is because once a folder is removed from a
+site, and replications is re-established, the remove action will be backfiled to
+the server were the folder belonged to originally. This means that if a folder
+that used to belong to site A is removed while on site B, and sites A and B are
+rejoined through replication, the folder will eventually be also deleted on site
+A.
+
+1. Start the Microsoft Exchange Administrator program and go to the Server
+  container.
+
+2. Double-click on the Public Information Store.
+
+3. Look for the Public Folders on the left hand side of the Instances Property
+  page and add them to Folders on This Information Store on the right hand side
+  of the Instances Property page. This has to be done for every orphaned
+  folder.
+
+  NOTE: If the folders do not appear on the right hand side, you must follow
+  these steps:
+
+  WARNING: If you ever plan to re-join the sites, do NOT go through this
+  procedure.
+
+  a. Go back to the server object and display the properties.
+
+  b. From the Advanced tab, go to the DS/IS consistency adjustment.
+
+  c. Choose to adjust all inconsistencies and click on Adjust.
+
+4. Go to the Organization's Public Folder tree on left hand side of the window.
+
+5. Double-click on the folder in question.
+
+6. Click the Client Permissions button on the General tab and give Owner rights
+  to an administrator account.
+
+7. Start a Microsoft Exchange client, log on as the administrator above, and
+  remove the orphaned folders.
+
+The Offline Address Book and Schedule+ Free Busy folders from other replicated
+sites cannot be removed from the hierarchy using this procedure. These folders
+should disappear from the System Folder hierarchy a week after replication has
+been broken. The Information Store will mark the folders for deletion the first
+time it is restarted after replication has been broken between the sites. The
+next time that the Information Store is restarted, after the 7 day waiting
+period, the orphan folders will be removed from the hierarchy. This is done to
+avoid recreating the system folder hierarchy if the sites are re-connected
+within a week. These folders are completely harmless because they are not
+visible from the clients and have no effect on any other store task.
+
+MORE INFORMATION
+================
+
+If you plan on setting replication back up again, DO NOT take ownership of the
+public folders and delete them in the manner described in this article, as this
+will cause the public folders in the original site to be deleted once the
+replication connector is re-established.
+
+Only take ownership of these orphaned public folders if you NEVER want to setup
+replication again with the site that actually contains the public folders.
+
+Additional query words: 80004005-0507-00000469
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247255: XADM: Information Store Silently Drops Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247255: XADM: Information Store Silently Drops Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247255/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247255/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247255/","publisher":null,"image":null,"headline":"Q247255: XADM: Information Store Silently Drops Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247255-xadm-information-store-silently-drops-messages">Q247255: XADM: Information Store Silently Drops Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247255
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP3
+Operating System(s): 
+Keyword(s): exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix kbgraphxlinkcritical
+Last Modified: 01-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Messages appear to be properly delivered, but are silently deleted by the
+information store when the message transfer agent (MTA) is not started or the
+information store loses session to the MTA. In the client, the message appears
+to be properly delivered because the message leaves the Outbox and becomes
+visible in the Sent Items folder.
+
+CAUSE
+=====
+
+This issue was introduced when fixing the issue outlined in the following
+Microsoft Knowledge Base article:
+
+  Q235455 XCON: Modification in X.400 Blind Copy Implementation
+
+If an MTA session is not available because of insufficient resources in the MTA
+or because the MTA service is currently stopped, the number of MTA recipients is
+incorrectly set to zero. This causes the message to be deleted from the queue in
+the information store.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+
+The following files are available for download from the Microsoft Download
+Center:
+
+  x86: DownloadDownload Q248838engi.exe now
+  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25443)
+  Alpha: DownloadDownload Q248838enga.exe now
+  (http://www.microsoft.com/downloads/release.asp?ReleaseID=25444)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+NOTE: When you start this version of the information store, the information store
+databases are automatically upgraded to a new format. After the databases have
+been upgraded, you can restore an earlier version of the Store.exe file on the
+server, but only if it is version 5.5.2651.32 or later. If you restore a
+Store.exe file earlier than version 5.5.2651.32 after the database has been
+upgraded, you are no longer able to start the information store. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q244976 XADM: Event ID 1197 and 1005 When Starting the Information Store
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5 SP3. This problem was first corrected in Exchange Server 5.5 Service
+Pack 4.
+
+MORE INFORMATION
+================
+
+This issue occurs under the following conditions:
+
+- If a message is handed off from the information store to the MTA (information
+  store-side fix).
+
+- If the MTA is running as well.
+
+- If the system is under stress.
+
+This issue is not in any way related to blind carbon copy (Bcc) messages,
+although the issue was introduced while modifying Bcc message behavior.
+
+NOTE: This issue does not occur on dedicated message switches (if a message never
+reaches the information store). Outbound Internet mail is not affected (it never
+reaches the MTA) but inbound Internet mail is (because it runs through the
+information store for content conversion).
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix kbgraphxlinkcritical 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

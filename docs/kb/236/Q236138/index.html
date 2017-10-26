@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q236138: BUG: Error Deleting VB ActiveX Control From Test Container | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q236138: BUG: Error Deleting VB ActiveX Control From Test Container" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/236/Q236138/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/236/Q236138/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/236/Q236138/","publisher":null,"image":null,"headline":"Q236138: BUG: Error Deleting VB ActiveX Control From Test Container","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q236138-bug-error-deleting-vb-activex-control-from-test-container">Q236138: BUG: Error Deleting VB ActiveX Control From Test Container</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q236138
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbContainer kbGrpDSVB _IK
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under Windows NT, when deleting a Visual Basic 5.0 or Visual Basic 6.0
+UserControl sited in the ActiveX Control Test Container, the following
+Application Error might occur:
+
+  The instruction at "0x0041842c" referenced memory at "0x00000000". The memory
+  could not be "read"
+
+CAUSE
+=====
+
+This is caused by an errant WM_SETCURSOR message, which is sent after the DELETE
+key has been pressed to remove the control from the container. The code for the
+ActiveX Control Test Container (TSTCON32.EXE) does not check for a valid object
+before attempting to obtain a specific interface.
+
+RESOLUTION
+==========
+
+The source code for the ActiveX Control Test Container is located on the Visual
+Studio 6.0 MSDN CD in the "Samples\VC98\mfc\ole\tstcon" directory. The bug can
+be corrected by modifying the tcitem.cpp. Replace the HitTest method with the
+code below and recompile the tstcon project:
+
+  DWORD CTestContainer98Item::HitTest( CPoint point )
+  {
+     HRESULT hResult;
+     IViewObjectExPtr pViewObjectEx;
+     DWORD dwHitResult;
+
+     if( !m_rect.PtInRect( point ) )
+     {
+  	  // Trivially reject the point.
+  	  return( HITRESULT_OUTSIDE );
+     }
+
+     if (!m_lpObject)  return( HITRESULT_OUTSIDE );  
+
+     hResult = m_lpObject-&gt;QueryInterface( IID_IViewObjectEx,    
+  	     (void**)&amp;pViewObjectEx );
+
+     if( SUCCEEDED( hResult ) )
+     {
+  	  hResult = pViewObjectEx-&gt;QueryHitPoint( DVASPECT_CONTENT,
+                      &amp;m_rect, point, 0, &amp;dwHitResult );
+  	  if( SUCCEEDED( hResult ) )
+  	  {
+  		 return( dwHitResult );
+  	  }
+     }
+
+     return( HITRESULT_HIT );
+  }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The problem is caused by the following code segment, which is called after the
+object has been deleted and m_lpObject has been set to NULL:
+
+  hResult = m_lpObject-&gt;QueryInterface( IID_IViewObjectEx,          
+  	  (void**)&amp;pViewObjectEx );
+
+Place the following code segment just prior to this QueryInterface method call to
+check whether m_lpObject is NULL, avoiding the problem:
+
+  if (!m_lpObject)  return( HITRESULT_OUTSIDE );  
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Visual Basic ActiveX Control Project. Usercontrol1 is created by
+  default.
+
+2. Compile this ActiveX control as Project1.OCX.
+
+3. Start Microsoft Visual C++.
+
+4. On the Tools menu, select ActiveX Control Test Container.
+
+5. On the Edit menu of the ActiveX Control Test Container, select the Insert New
+  Control option. Select Project1.UserControl1 from the list box and click OK.
+
+6. Select the Project1.OCX control sited in the container and press the DELETE
+  key.
+
+The error message described in the symptoms section above should appear.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbContainer kbGrpDSVB _IK 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

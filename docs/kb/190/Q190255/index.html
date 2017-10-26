@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190255: BUG: DHTML Page Designer Does Not Insert the &lt;HTML&gt; Tag | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190255: BUG: DHTML Page Designer Does Not Insert the &lt;HTML&gt; Tag" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190255/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190255/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190255/","publisher":null,"image":null,"headline":"Q190255: BUG: DHTML Page Designer Does Not Insert the &lt;HTML&gt; Tag","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190255-bug-dhtml-page-designer-does-not-insert-the-html-tag">Q190255: BUG: DHTML Page Designer Does Not Insert the &lt;HTML&gt; Tag</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190255
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbInternet kbPageDesigner kbVBp kbVBp600bug
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+1. The browser incorrectly displays your HTML page.
+
+2. Unexpected behavior occurs when you work on your page in the designer window
+  of your DHTML application.
+
+CAUSE
+=====
+
+DHTML Page Designer is not inserting an &lt;HTML&gt; tag at the beginning of the
+HTML file it creates.
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following three options:
+
+Option 1
+--------
+
+Store your DHTML Page Designer page as an external HTML file. Edit the HTML file
+manually using an external editor and insert the &lt;HTML&gt; tag.
+
+Option 2
+--------
+
+Import an existing HTML file when creating a new DHTML Page Designer page.
+
+Option 3
+--------
+
+Change the default DHTML Page Designer template so all HTML files have the
+&lt;HTML&gt; tag. The template project is "DHTML application.vbp". This project
+is stored under the Visual Studio folder in the VB98\Template\Projects
+subfolder.
+
+NOTE: Save copies of all the files for the "DHTML application.vbp" (this is the
+default DHTML Page Designer template) in a backup location in case something
+goes wrong. Follow these steps:
+
+1. Open the "DHTML application.vbp" project in Visual Basic.
+
+2. Open the DHTMLPage1 Properties dialog box.
+
+3. Select "Save the HTML as an External file".
+
+4. Select "Create new HTML file".
+
+5. Launch the external editor to edit this HTML page.
+
+6. Delete the two lines with &lt;HTML&gt; and &lt;HEAD&gt; tags (there seems to
+  be a corrupted character on one of them).
+
+7. Retype the &lt;HTML&gt; and &lt;HEAD&gt; tags.
+
+8. Open the DHTMLPage1 Properties dialog box.
+
+9. Select "Save HTML as part of the VB project".
+
+10. Select the File menu item and save both the DHTMLPage1.dsr file and
+  DHTMLPage1.vbp file
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+To take advantage of more editing features, you may want to use an external
+editor. To use an external editor on your page, you must store it as an external
+HTML file. Or, use the Launch Editor icon in the DHTML Page Designer toolbox, as
+described in the following article in the Microsoft Knowledge Base:
+
+  Q190252 HOWTO: Change the External HTML Editor
+
+REFERENCES
+==========
+
+Please see the following Microsoft Knowledge Base article for more information
+on the DHTML Page Designer:
+
+  Q190249 INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbPageDesigner kbVBp kbVBp600bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

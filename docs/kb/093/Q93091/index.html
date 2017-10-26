@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93091: Setup: Changes Made to the Initialization (*.INI) Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93091: Setup: Changes Made to the Initialization (*.INI) Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93091/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93091/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93091/","publisher":null,"image":null,"headline":"Q93091: Setup: Changes Made to the Initialization (*.INI) Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93091-setup-changes-made-to-the-initialization-ini-files">Q93091: Setup: Changes Made to the Initialization (*.INI) Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93091
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Installing version 1.0 of Microsoft Video for Windows makes additions and
+modifications to the Windows and the Windows System directories as well as the
+WIN.INI, SYSTEM.INI, CONTROL.INI, PROGMAN.INI, REG.DAT, and ACCESSO0.GRP files.
+The following is a listing of the specific additions made to the .INI files
+during the installation of Microsoft Video for Windows 1.0.
+
+MORE INFORMATION
+================
+
+WIN.INI changes:
+
+NOTE: The following entry is an addition to the mci extensions section:
+
+  [mci extensions]
+  avi=AVIVideo
+
+NOTE: The following entry is an addition to the embedding section:
+
+  [embedding]
+  MPlayer=Media Clip,Media Clip,mplayer.exe,picture
+
+NOTE: The following entries are added as a new section to the WIN.INI. The actual
+values associated with each entry vary with the video driver being used and the
+settings selected when installing the driver:
+
+  [drawdib]
+  display.drv=v7vga.drv 640x480x8
+  Result8=15
+  Result16=0
+  Result24=1
+
+SYSTEM.INI changes:
+
+The changes made to the SYSTEM.INI file vary with the choice of drivers installed
+with Microsoft Video for Windows 1.0. These changes are described below, each
+entry preceded by the driver name associated with the change.
+
+NOTE: The actual values associated with these entries will vary from system to
+system. If a user is unsure of the values that apply to his or her system they
+should be directed to their hardware manufacturer.
+
+NOTE: The following entry will appear regardless of which driver is installed:
+
+  [mci]
+  AVIVideo=mciavi.drv
+
+NOTE: The following entry appears only if the Pioneer 4200 driver has been
+installed:
+
+  Videodisc=mcipionr.drv com1
+
+NOTE: The following listing describes the possible entries found in the [drivers]
+section of the SYSTEM.INI. This section never includes more than one of the
+msvideo= entries:
+
+  [drivers]
+  VIDC.MSVC=msvidc.drv
+  VIDC.RT21=indeo.drv
+  msvideo=vblaster.drv
+  msvideo=bravado.drv
+  msvideo=targa16.drv
+  msvideo=svw_VCAP.drv
+  msvideo=indeo.drv
+
+NOTE: The following listing describes the possible entries that are added with
+the installation of the Intel Indeo (ActionMedia):
+
+  [386Enh]
+  device=VswitchD.386
+
+  [ActionMedia]
+  Playback option=803
+
+NOTE: The following listing describes the possible entries that are added with
+the installation of the Truevision Bravado driver:
+
+  [Bravado.drv]
+  Interrupt=9
+  MemoryBase=E
+  PortBae=224
+
+NOTE: The following listing describes the possible entries that are added with
+the installation of the Video Blaster.
+
+  Video Blaster
+  [VBlaster.drv]
+  Interrupt=10
+  MemoryBase=E
+  PortBase=2AD6
+
+NOTE: The following listing describes the possible entries that are added with
+the installation of the Truevision Targa 16+ driver:
+
+  [Targa16.drv]
+  Portbase=220
+  Interrupt=10
+  MemoryBase=E000
+  WaitStates=1
+
+NOTE: The following listing describes the possible entries that are added with
+the installation of the New Media SVW driver:
+
+  [SVW_VCap.drv]
+  Portbase=AD6
+  MemoryBase=E
+
+NOTE: The following listing describes the possible entries that are added with
+the installation of the Pioneer 4200 driver:
+
+  [mci]
+  Videodisc=mcipionr.drv com1
+
+NOTE: Only certain combinations of the above drivers may be installed at one
+time. For example, only one capture driver may be installed at one time, but
+multiple compression drivers are allowed.
+
+CONTROL.INI Changes:
+
+NOTE: The following listing describes the possible entries found in the
+[drivers.desc] section of the CONTROL.INI. The actual entries will include only
+one of the MSVIDEO capture drivers:
+
+  [drivers.desc]
+  mciavi.drv=[MCI] Microsoft MCI AVI Driver
+  msvidc.drv=Microsoft Video Compressor
+  indeo.drv=Intel Indeo(TM) Video Driver
+  vblaster.drv=Creative Labs VideoBlaster Video Capture
+  bravado.drv=Truevision Targa16 Plus Video Capture
+  SVW_VCAP.drv=New Media Graphics SVW Video Capture
+  mcipionr.drv=[MCI] Pioneer 4200 Videodisc
+  soft486.drv=486 1.0 Software Driver
+
+NOTE: The following listing describes the possible entries found in the
+[Userinstallable.drivers] section of the CONTROL.INI. The actual entry includes
+only one of the MSVIDEO capture drivers:
+
+  [Userinstallable.drivers]
+  VIDC.RT21=indeo.drv
+  VIDC.MSVC=msvidc.drv
+  msvideo=vblaster.drv
+  msvideo=bravado.drv
+  msvideo=targa16.drv
+  msvideo=svw_VCAP.drv
+  msvideo=indeo.drv
+  Videodisc=mcipionr.drv
+
+NOTE: The following listing describes the possible entries found in the
+[related.desc] section of the CONTROL.INI. The actual entries vary with drivers
+installed:
+
+  [related.desc]
+  msvideo=
+  Videodisc=
+  VIDC.RT21=
+  VIDC.MSVC=
+  AVIVideo=msvidc.drv
+
+PROGMAN.INI Changes:
+
+NOTE: The following listing describes the entries found in the [Groups] section
+of the PROGMAN.INI. The # indicates an integer value assigned by Windows,
+&lt;Drive&gt; indicates the logical drive containing the Windows directory and
+&lt;Path&gt; indicates the fully qualified path to the Windows directory.
+
+  [Groups]
+  Group#=&lt;Drive&gt;:\&lt;Path&gt;\VIDEOFOR.GRP
+  Group#=&lt;Drive&gt;:\&lt;Path&gt;\MULTIMED.GRP
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

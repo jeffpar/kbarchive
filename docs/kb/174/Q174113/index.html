@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q174113: Cannot Hear Music on the MSN Onstage Web Page | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q174113: Cannot Hear Music on the MSN Onstage Web Page" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/174/Q174113/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/174/Q174113/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/174/Q174113/","publisher":null,"image":null,"headline":"Q174113: Cannot Hear Music on the MSN Onstage Web Page","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q174113-cannot-hear-music-on-the-msn-onstage-web-page">Q174113: Cannot Hear Music on the MSN Onstage Web Page</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q174113
+Product(s): The Microsoft Network
+Version(s): WINDOWS:2.0,2.5
+Operating System(s): 
+Keyword(s): kbenv kbsound kbmsn
+Last Modified: 12-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to the MSN, The Microsoft Network, Onstage Web page, you may be
+unable to hear music, and a musical note symbol may not appear in the
+lower-right corner of the Web page.
+
+CAUSE
+=====
+
+This behavior can occur if one or more of the following conditions exist:
+
+- Your computer does not contain an Intel Pentium processor.
+
+- The Msn.ini file is damaged or missing.
+
+- You are using an outdated version of the MSN Music and Animation components
+  (MSN 2.5 only).
+
+RESOLUTION
+==========
+
+Your computer must contain an Intel Pentium processor for you to be able to hear
+music on the Onstage Web page. To determine the type of processor in your
+computer, right-click the My Computer icon on the desktop, and then click
+Properties. If "Pentium(r)" is not listed under Computer, consult the
+documentation included with your computer to determine the type of processor
+your computer contains.
+
+If your computer does contain an Intel Pentium processor and you still cannot
+hear music on the Onstage Web page, the Msn.ini file may be damaged or missing.
+To resolve this issue, copy a new Msn.ini file to your computer. To do so, use
+the following steps:
+
+1. Empty the Temporary Internet Files folder. To do so, follow these steps in
+  Microsoft Internet Explorer:
+  a. Right-click the The Internet icon on the desktop, and then click
+     Properties.
+
+  b. On the Advanced tab, click Settings under Temporary Internet Files.
+
+  c. Click Empty Folder, and then click Yes when you are prompted to delete the
+     files.
+
+  d. Click OK, and then click OK again.
+
+2. Click Start, point to Find, and then click Files Or Folders.
+
+3. In the Named box, type "msn.ini" (without quotation marks), and then click
+  Find Now.
+
+4. In the list of found files, right-click the Msn.ini file, and then click
+  Delete.
+
+5. Connect to the Internet as you normally would, and then access the following
+  Web page:
+
+  http://fdl.msn.com/public/msndata/msn.ini
+
+6. When you are prompted, click Save It To Disk, and then save the Msn.ini file
+  in the Program Files\OnMSN folder. If you are prompted to overwrite an
+  existing file, click Yes.
+
+7. Double-click the MSN icon on the desktop to start Program Viewer.
+
+If you are using MSN 2.5, and you are still unable to hear music on the Onstage
+Web page, you may be using an outdated version of the MSN Music and Animation
+components. To resolve this issue, remove and reinstall the MSN Music and
+Animation components. To do so, use the following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click MSN Music &amp; Animation Components, and
+  then click Add/Remove.
+
+4. Follow the instructions on the screen. If you are prompted to delete the
+  component's files, click Yes.
+
+5. Click OK until you return to Control Panel.
+
+6. Close Control Panel.
+
+7. Insert the MSN 2.5 CD-ROM into the CD-ROM drive. If the Welcome To MSN screen
+  appears, click Browse The CD, and then proceed to step 10. If the Welcome To
+  MSN screen does not appear, continue to the next step.
+
+8. Double-click My Computer.
+
+9. Double-click the MSN (CD-ROM drive) icon. When the Welcome To MSN screen
+  appears, click Browse The CD.
+
+10. Double-click the MSNSetup folder.
+
+11. Double-click the Compnts folder.
+
+12. Double-click the Imtmmctl.exe file.
+
+13. Close the Compnts window, and then restart the computer.
+
+14. Double-click the MSN icon on the desktop to start Program Viewer.
+
+STATUS
+======
+
+This behavior is by design and is meant to reserve resources on computers that
+contain non-Intel Pentium processors.
+
+MORE INFORMATION
+================
+
+For additional information about this problem, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q175577 The On Stage Web Page in MSN Does Not Play Music
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbenv kbsound kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

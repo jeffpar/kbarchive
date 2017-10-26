@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154867: DBWEB: How to Create a Custom Update DBX | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154867: DBWEB: How to Create a Custom Update DBX" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154867/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154867/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154867/","publisher":null,"image":null,"headline":"Q154867: DBWEB: How to Create a Custom Update DBX","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154867-dbweb-how-to-create-a-custom-update-dbx">Q154867: DBWEB: How to Create a Custom Update DBX</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154867
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:1.0,1.1
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 29-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft dbWeb, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft dbWeb provides a default form that you can use as your Update form.
+However, with a text editor you can create a custom HTML document to use as your
+Update form. You can design the look of the form so that it resembles other HTML
+documents on your web site.
+
+MORE INFORMATION
+================
+
+The following example uses the Employees table in the sample database Nwind.mdb
+and the dbnwind data source. Before you begin the example, make sure you can
+query the Employees sample schema in the dbnwind data source of the dbWeb
+administrator.
+
+CAUTION: Following the steps in this example will modify the sample database
+Nwind.mdb and the Employees sample schema. You may want to back up the Nwind.mdb
+and Dbweb.mdb files, or use a copy of them for this example.
+
+Creating a Custom Update Form
+-----------------------------
+
+NOTE: The HTML example below uses /scripts as the cgi files folder. That is the
+default folder for Internet Information Server (IIS). If you use a different web
+server, the folder may be different. Change the path as appropriate for your web
+server. Also, if you are using dbWeb 1.0, replace dbwebc.dll with $dbwebc.exe in
+the following example.
+
+1. Using Notepad or your favorite HTML editor, type the following text into a
+  new file:
+
+        &lt;HTML&gt;
+        &lt;HEAD&gt;&lt;TITLE&gt;Update Employee Information&lt;/TITLE&gt;&lt;/HEAD&gt;
+        &lt;BR&gt;
+
+        &lt;BODY&gt;
+        &lt;H2 ALIGN=CENTER&gt;Update Employee Information&lt;/H2&gt;
+        &lt;BR&gt;
+
+        &lt;FORM ACTION="/scripts/dbweb/dbwebc.dll/Employees?update"
+        METHOD="POST"&gt;
+        &lt;INPUT TYPE="hidden" NAME="11,Employees,Employee ID"
+        VALUE="\tobj\tEmployees\tcol\tEmployee ID\t"&gt;
+
+        &lt;TABLE&gt;
+        &lt;TR&gt;&lt;TH&gt;Last Name:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,Last Name" VALUE="\tobj\tEmployees\tcol\tLast
+        Name\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;First Name:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,First Name" VALUE="\tobj\tEmployees\tcol\tFirst
+        Name\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;Title:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,Title"
+        VALUE="\tobj\tEmployees\tcol\tTitle\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;Address:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,Address"
+        VALUE="\tobj\tEmployees\tcol\tAddress\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;City:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,City"
+        VALUE="\tobj\tEmployees\tcol\tCity\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;Region:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,Region"
+        VALUE="\tobj\tEmployees\tcol\tRegion\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;Postal Code:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,Postal Code" VALUE="\tobj\tEmployees\tcol\tPostal
+        Code\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;Country:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,Country"
+        VALUE="\tobj\tEmployees\tcol\tCountry\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;Home Phone:&lt;/TH&gt;&lt;TD&gt;&lt;INPUT TYPE="text" SIZE=20 MAXLENGTH=256
+        NAME="1,Employees,Home Phone" VALUE="\tobj\tEmployees\tcol\tHome
+        Phone\t"&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TH&gt;&lt;INPUT TYPE=submit VALUE="Submit Update"&gt;&lt;/TR&gt;&lt;/TH&gt;
+        &lt;/TABLE&gt;
+
+        &lt;/FORM&gt;
+        &lt;/BODY&gt;
+        &lt;/HTML&gt;
+
+2. Save the file as Upempinf.htm in the dbweb subfolder of the HTML document
+  root folder (\inetsrv\wwwroot\dbweb, if IIS is your web server).
+
+Modifying the Schema
+--------------------
+
+1. Start the dbWeb Administrator.
+
+2. Double-click the dbnwind data source.
+
+3. Double-click the Employees schema.
+
+4. Click the Schema tab, and then click to select the Update check box.
+
+5. Click the QBE tab.
+
+6. In the "Data columns in selected tables" box, select Employee ID, and then
+  click Add.
+
+7. Click the Ins/Upd/Del tab.
+
+8. In the "Data columns in selected tables" box, select each of the following
+  fields, and then click Add:
+
+      Employee ID
+      Last Name
+      First Name
+      Title
+      Address
+      City
+      Region
+      Postal Code
+      Country
+      Home Phone
+
+9. In the "Update data columns" box, select Employee ID, and then click
+  Properties.
+
+10. Under Column Properties, set the Key property to Key(non updateable).
+
+11. Click the DBX tab.
+
+12. In the "Single record result output custom format file" box, click Browse to
+  find the Upempinf.htm file (in the \inetsrv\wwwroot\dbweb folder, if IIS is
+  your server).
+
+13. Click Apply.
+
+View the custom update form:
+----------------------------
+
+1. Open your favorite browser, and type the URL path to the Employees schema
+  using the getxqbe method. For dbWeb 1.1, the default path is
+  /scripts/dbweb/dbwebc.dll/Employees?getxqbe. For dbWeb version 1.0, the
+  default path is /scripts/dbweb/$dbwebc.exe/Employees?getxqbe.
+
+2. On the Employees QBE page, type 1 in the Employee ID field.
+
+3. Click the Submit Query button to run the query and invoke your custom Update
+  form.
+
+4. Change some information on the form, and then click Submit Update. You will
+  receive a success or failure message.
+
+NOTE: If Submit Query returns more than one record, you will not see the custom
+Update form you created. In this example, you must limit the query results to
+one record. However, it is possible to use this form for multiple record
+queries. Just set Upempinf.htm as the "Multi record result output custom format"
+file on the DBX tab of the Employees schema.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbAudDeveloper kbdbWebSearch kbdbWeb100 kbdbWeb110
+Version           : WINDOWS:1.0,1.1
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

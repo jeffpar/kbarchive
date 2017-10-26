@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183478: HOWTO: Call EnumServicesStatus API From Visual Basic | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183478: HOWTO: Call EnumServicesStatus API From Visual Basic" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183478/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183478/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183478/","publisher":null,"image":null,"headline":"Q183478: HOWTO: Call EnumServicesStatus API From Visual Basic","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183478-howto-call-enumservicesstatus-api-from-visual-basic">Q183478: HOWTO: Call EnumServicesStatus API From Visual Basic</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183478
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbOSWinNT400 kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to call the EnumServicesStatus API on Windows NT
+4.0 (SP3) or Windows 2000 from Visual Basic. The EnumServicesStatus function
+enumerates services in the specified service control manager database. The name
+and status of each service is retrieved.
+
+MORE INFORMATION
+================
+
+Step-by-Step Instructions
+-------------------------
+
+1. Create a new Standard EXE project in Visual Basic, Project1. Form1 is created
+  by default.
+
+2. Place two command buttons and two list boxes on Form1 and place the following
+  code in Form1's code window:
+
+        Private Sub Command1_Click()
+           'Getting only the active services
+              GetServiceInfo SERVICE_ACTIVE
+        End Sub
+
+        Private Sub Command2_Click()
+           'Getting all services registered
+              GetServiceInfo SERVICE_ACTIVE Or SERVICE_INACTIVE
+        End Sub
+
+        Private Sub Form_Load()
+           Command1.Caption = "Active Services"
+           Command2.Caption = "All Registered Services"
+        End Sub
+
+3. Add a standard module (Module1) to Project1 and place the following code in
+  Module1.
+
+        '****************** MODULE1 CODE **********************
+
+        'UDTs
+        '*******************************************************
+        Type SERVICE_STATUS
+           dwServiceType As Long
+           dwCurrentState As Long
+           dwControlsAccepted As Long
+           dwWin32ExitCode As Long
+           dwServiceSpecificExitCode As Long
+           dwCheckPoint As Long
+           dwWaitHint As Long
+        End Type
+
+        Type ENUM_SERVICE_STATUS
+           lpServiceName As Long
+           lpDisplayName As Long
+           ServiceStatus As SERVICE_STATUS
+        End Type
+        '*******************************************************
+
+        'Constants
+        '*******************************************************
+        Public Const ERROR_MORE_DATA = 234
+        Public Const SERVICE_ACTIVE = &amp;H1
+        Public Const SERVICE_INACTIVE = &amp;H2
+        Public Const SC_MANAGER_ENUMERATE_SERVICE = &amp;H4
+        Public Const SERVICE_WIN32_OWN_PROCESS As Long = &amp;H10
+        Public Const SERVICE_WIN32_SHARE_PROCESS As Long = &amp;H20
+        Public Const SERVICE_WIN32 As Long = SERVICE_WIN32_OWN_PROCESS _
+                    + SERVICE_WIN32_SHARE_PROCESS
+        '*******************************************************
+
+        'API declarations
+        '*******************************************************
+        Public Declare Function OpenSCManager Lib "advapi32.dll" _
+              Alias "OpenSCManagerA" _
+           (ByVal lpMachineName As String, ByVal lpDatabaseName As String, _
+                 ByVal dwDesiredAccess As Long) As Long
+
+        Public Declare Function EnumServicesStatus Lib "advapi32.dll" _
+              Alias "EnumServicesStatusA" (ByVal hSCManager As Long, _
+              ByVal dwServiceType As Long, ByVal dwServiceState As Long, _
+              lpServices As Any, ByVal cbBufSize As Long, _
+              pcbBytesNeeded As Long, lpServicesReturned As Long, _
+              lpResumeHandle As Long) As Long
+
+        Public Declare Function CloseServiceHandle Lib "advapi32.dll" _
+              (ByVal hSCObject As Long) As Long
+
+        Public Declare Function lstrcpy Lib "kernel32.dll" Alias "lstrcpyA" _
+              (szDest As String, szcSource As Long) As Long
+        '*******************************************************
+
+        'Where the real work is done.
+        '*******************************************************
+        Public Sub GetServiceInfo(lngServiceType As Long)
+           Dim hSCM As Long
+           Dim lpEnumServiceStatus() As ENUM_SERVICE_STATUS
+           Dim lngServiceStatusInfoBuffer As Long
+           Dim strServiceName As String * 250
+           Dim lngBytesNeeded As Long
+           Dim lngServicesReturned As Long
+           Dim hNextUnreadEntry As Long
+           Dim lngStructsNeeded As Long
+           Dim lngResult As Long
+           Dim i As Long
+
+           'Open connection to Service Control Manager.
+           hSCM = OpenSCManager(vbNullString, vbNullString, _
+                                SC_MANAGER_ENUMERATE_SERVICE)
+
+           If hSCM = 0 Then
+              MsgBox "OpenSCManager failed. LastDllError = " _
+              &amp; CStr(Err.LastDllError)
+              Exit Sub
+           End If
+
+           'Get buffer size (bytes) without passing a buffer
+           'and make sure starts at 0th entry.
+           hNextUnreadEntry = 0
+           lngResult = EnumServicesStatus(hSCM, _
+                                          SERVICE_WIN32, _
+                                          lngServiceType, _
+                                          ByVal &amp;H0, _
+                                          &amp;H0, _
+                                          lngBytesNeeded, _
+                                          lngServicesReturned, _
+                                          hNextUnreadEntry)
+
+           'We should receive MORE_DATA error.
+           If Not Err.LastDllError = ERROR_MORE_DATA Then
+              MsgBox "LastDLLError = " &amp; CStr(Err.LastDllError)
+              Exit Sub
+           End If
+
+           'Calculate the number of structures needed.
+           lngStructsNeeded = _
+           lngBytesNeeded / Len(lpEnumServiceStatus(0)) + 1
+
+           'Redimension the array according to our calculation.
+           ReDim lpEnumServiceStatus(lngStructsNeeded - 1)
+
+           'Get buffer size in bytes.
+           lngServiceStatusInfoBuffer = _
+              lngStructsNeeded * Len(lpEnumServiceStatus(0))
+
+           'Get services information starting entry 0.
+           hNextUnreadEntry = 0
+           lngResult = EnumServicesStatus(hSCM, _
+                                         SERVICE_WIN32, _
+                                         lngServiceType, _
+                                         lpEnumServiceStatus(0), _
+                                         lngServiceStatusInfoBuffer, _
+                                         lngBytesNeeded, _
+                                         lngServicesReturned, _
+                                         hNextUnreadEntry)
+
+           If lngResult = 0 Then
+              MsgBox "EnumServicesStatus failed. LastDllError = " _
+                 &amp; CStr(Err.LastDllError)
+              Exit Sub
+           End If
+
+           'Get the strings and display them.
+           With Form1
+              .List1.Clear
+              .List1.AddItem "Display Names"
+              .List2.Clear
+              .List2.AddItem "Service Names"
+              For i = 0 To lngServicesReturned - 1
+                 lngResult = lstrcpy(ByVal strServiceName, _
+                    ByVal lpEnumServiceStatus(i).lpDisplayName)
+                 .List1.AddItem strServiceName
+                 lngResult = lstrcpy(ByVal strServiceName, _
+                    ByVal lpEnumServiceStatus(i).lpServiceName)
+                 .List2.AddItem strServiceName
+              Next
+           End With
+
+           'Clean up.
+           CloseServiceHandle (hSCM)
+
+        End Sub
+        '******************* END OF MODULE1 **************************
+
+4. Run the project.
+
+REFERENCES
+==========
+
+Win32 System Services by Marshall Brain
+
+Additional query words: NT Service EnumServicesStatus kbdss
+
+======================================================================
+Keywords          : kbOSWinNT400 kbVBp kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

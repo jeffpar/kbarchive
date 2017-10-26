@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147471: PC Ext: Remote Client Sets Hop Count to Ten | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147471: PC Ext: Remote Client Sets Hop Count to Ten" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147471/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147471/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147471/","publisher":null,"image":null,"headline":"Q147471: PC Ext: Remote Client Sets Hop Count to Ten","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147471-pc-ext-remote-client-sets-hop-count-to-ten">Q147471: PC Ext: Remote Client Sets Hop Count to Ten</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147471
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A mail message sent from the Version 3.2 of Microsoft Mail Remote for Windows
+version 3.2 or 3.5 client, may result in a non-delivery message similar to the
+following:
+
+  From: POSTMASTER
+  To: &lt; sender of message &gt;
+  Subject: Mail failure
+  Date: Thursday, May 23, 1996 3:22PM
+
+  FROM: &lt; sender of message &gt;
+  TO: &lt; recipient of message &gt;
+  DATE: 23-05-96
+  TIME: 15:22
+
+  SUBJECT: &lt; subject of message &gt;
+
+  ----------------------------------------------------------------
+
+  [003] Message hop count exceeded. Message followed the following route:
+  NETCAD/HBPO01
+  NETCAD/BUPO01
+  NETGRI1/RH02
+  NETGRI1/IH01
+  NETSIS/WO01
+  NETSIS/EUO01
+  NETSIS/HUB02
+  NETUFE/HUB01
+  NETUFE/HUB03
+  NETUDI/UDIPO1
+
+  while attempting to send to the following addresses:
+  &lt;net&gt;/&lt;po&gt;/&lt;mailbox&gt;
+
+CAUSE
+=====
+
+The non-delivery report is generated when the number of hops reaches ten,
+regardless of the hop count setting as configured in the Admin program. The
+Remote Windows client does not pick up the administrator set hop count from the
+postoffice. The client inserts a hop count of ten in all messages.
+
+RESOLUTION
+==========
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression tested and should be applied only to systems
+experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  File Name      Version
+  ----------------------
+  External.exe   3.5.30
+
+This hotfix has been posted to the following Internet location as Remcy2k.exe:
+
+  ftp://ftp.microsoft.com/bussys/mail/pcmail-public/All-Y2K/
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail Remote for
+Windows version 3.2.
+
+
+MORE INFORMATION
+================
+
+The Windows Remote Client has no access to the hop count as set by the
+administrator on the home postoffice. The 3.05.0030 version of external
+implements code to insert the postoffice value of hop count into remote client
+messages. Prior versions of external did not change the value of hop count when
+handling remote client messages.
+
+In the Microsoft Mail for PC Networks Administrators Guide, Chapter 7, is a
+section describing the purpose of hop count and the procedure to set it. This
+setting is designed to affect all client mail for users having a mailbox on the
+postoffice.
+
+See Article Q147368 for more information about a similar hop count problem for
+messages generated by the Microsoft Mail for Windows client.
+
+Additional query words: MailPCWRmt hopcount MailPCWin MailPCMMTA
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

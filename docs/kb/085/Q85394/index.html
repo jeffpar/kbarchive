@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85394: APPNOTES.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85394: APPNOTES.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85394/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85394/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85394/","publisher":null,"image":null,"headline":"Q85394: APPNOTES.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85394-appnotestxt-microsoft-windows--ms-dos-5-for-ibm-ps2">Q85394: APPNOTES.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85394
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 3.1 
+- Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the Windows &amp; MS-DOS 5 for IBM PS/2
+APPNOTES.TXT file.
+
+MORE INFORMATION
+================
+
+APPNOTES.TXT
+
+NOTES ON USING APPLICATIONS WITH MS-DOS VERSION 5.0
+===================================================
+
+This document provides important information not included in
+the Microsoft MS-DOS User's Guide and Reference or in online
+Help.
+
+Look through the following table of contents to determine
+whether your application is included.
+
+ATTENTION CODEVIEW AND INTEL ABOVEBOARD USERS
++++++++++++++++++++++++++++++++++++++++++++++
+Sections 1 and 4 contain critical information
+about using Intel Above Board and CodeView with
+MS-DOS 5.0.
++++++++++++++++++++++++++++++++++++++++++++++
+
+For information about installing MS-DOS 5.0 and using
+hardware and networks with MS-DOS 5.0, see the README.TXT
+file.
+
+The following topics are discussed in this file:
+
+1. Above Board 286 and Above Board Plus Installation
+  Programs
+2. AutoCAD release 10
+3. AUTORUN.EXE
+4. CodeView
+5. Easel 6.0
+6. Fastback
+7. GeoWorks
+8. Lotus 1-2-3 version 3.0
+9. Manifest
+10. Paintbrush 2.0
+11. Paradox 3.5
+12. PC-Kwik Disk Accelerator
+13. PeachTree Complete III
+14. Pklite
+15. ProKey Plus
+16. Sidekick 2.0
+17. Soft-ICE
+18. Software Carousel
+19. Task Swapper and Asynchronous I/O
+20. Ventura Publisher
+21. WordPerfect WPINFO.EXE 5.1
+22. WordPerfect Office 3.0
+23. XTreeNet
+
+1. Above Board 286 and Above Board Plus Installation
+   Programs
+----------------------------------------------------
+
+CAUTION: The Intel Above Board installation program that
+        shipped before May 1989 tests extended memory in a
+        way that can corrupt extended memory.
+
+Before using an Above Board installation program prior to
+May 1989, make sure you haven't loaded software such as
+SMARTDrive or RAMDrive that uses extended memory.  After the
+Above Board has been installed, other software using
+extended memory is unaffected.
+
+2. AutoCAD
+---------------------
+To run AutoCAD release 10 and 11 (AutoCad 386) with MS-DOS,
+contact Autodesk.
+
+When running AutoCad 386 under Windows 3.1, note the following:
+
+* AutoCad 386 runs in standard mode only if no LIMulator is
+  installed. To run in 386 enhanced mode, you must upgrade to
+  AutoCad for Windows.
+
+*  The PIF setting for AutoCad 386 are set for a minimum
+  configuration. Using these setting results in poor performance.
+  To improve performance, you can modify the PIF settings, as
+  described below.
+
+PIF Settings
+------------
+
+To improve the performance of AutoCad 386, make the following changes
+to the standard mode PIF:
+
+   XMS MEMORY REQUIRED should be set to 1. This forces XMS memory to
+be
+   provided to an application. Unless a required amount is listed, no
+   XMS memory is provided.
+
+   XMS MEMORY DESIRED should be set from 1024 to 4096. 1024
+significantly
+   improves performance. The manufacturer recommends 4096 for best
+   performance.
+
+   OTHER REQUIREMENTS: For these settings to work, you must have
+   adequate XMS memory available. If there is not enough, no adverse
+   effects are apparent, but performance is only improved by the real
+   amount of XMS provided. You must also have an equivalent amount of
+   disk space free for a swap file.
+
+3. AUTORUN.EXE
+--------------
+If you can't use Mountain Network Solutions AUTORUN.EXE, a
+tape-drive backup program, contact your vendor for an
+upgrade.
+
+4. CodeView
+-----------
+CAUTION: Using versions 3.0 to 3.13 of the CodeView CV.EXE
+file may cause data loss if your system has a 80386 memory
+manager (such as EMM386.EXE) and device drivers or programs
+that use extended memory. To determine which version you
+have, type CV.EXE at the command prompt.
+
+To start CodeView versions 3.0 to 3.13 safely, use the
+CV.COM file included with MS-DOS 5.0, and HIMEM.SYS version
+2.77 or later.
+
+To use the CV.COM file included with MS-DOS 5.0, copy it
+from the Setup disks to the directory that contains your
+CV.EXE file.
+
+This problem has been fixed in CodeView version 3.14. Call
+Microsoft C Support to get this version.
+
+5. Easel 6.0
+------------
+Interactive Images Easel 6.0 is incompatible with the
+DOS=HIGH and EMM386 commands. Contact your vendor for an
+update.
+
+6. Fastback
+-----------
+If you have a version of Fifth Generation Systems Fastback
+earlier than 3.0, you must use the LOADFIX command before
+running Fastback or the Fastback installation program. Type
+the following:
+
+LOADFIX FB.EXE
+
+or
+
+LOADFIX FBINSTAL.EXE
+
+For information about the LOADFIX command, see the section
+"You receive the 'Packed file corrupt' message" in Chapter 4
+of Microsoft Windows and MS-DOS Getting Started.
+
+7. GeoWorks
+-----------
+If you have a version of GeoWorks (PC/GEOS) earlier than
+1.2, use the SETVER command to report version number 4.01 to
+the GEOS.EXE file. Type the following:
+
+SETVER GEOS.EXE 4.01
+
+Do not run the installation program for GeoWorks Ensemble
+when MS-DOS Shell Task Swapper is active.
+
+Use the Exclusive Tasking option when running GeoWorks
+Ensemble with Windows.
+
+8. Lotus 1-2-3 version 3.0
+--------------------------
+For information about Lotus 1-2-3 version 3.0, see the
+section "Lotus 1-2-3 version 3.1 won't start" in Chapter 4
+of Microsoft Windows and MS-DOS Getting Started. This information also
+applies to Lotus 1-2-3 version 3.0.
+
+9. Manifest
+-----------
+Versions 1.01 and later of Quarterdeck Manifest are
+compatible with MS-DOS 5.0. If you have a version earlier
+than 1.01, contact your vendor for an upgrade.
+
+10. Paintbrush 2.0
+------------------
+If you have an EGA monitor and want to run Microsoft or
+ZSoft Paintbrush 2.0, you must remove the DEVICE=EGA.SYS
+command from your CONFIG.SYS file. After removing the
+command, you may have difficulty with screen swapping when
+using Task Swapper in MS-DOS Shell.
+
+11. Paradox 3.5
+---------------
+For information about Paradox version 3.5, see the section
+"Lotus 1-2-3 version 3.1 won't start" in Chapter 4 of
+Microsoft Windows and MS-DOS Getting Started. This information also
+applies to Paradox 3.5.
+
+12. PC-Kwik Disk Accelerator
+----------------------------
+Do not load versions of Multisoft PC-Kwik Disk Accelerator
+earlier than 2.0 into the upper memory area.
+
+13. PeachTree Complete III Single-User Version
+----------------------------------------------
+If you are using the single-user version of PeachTree
+Complete III (batch 01 through batch 13), contact PeachTree
+for an update.
+
+There is no compatibility problem with the network version.
+
+14. Pklite
+----------
+Do not use Pklite to pack device drivers.
+
+If you have a PC-Kwik cache on your system, and you can't
+run a packed program, do one of the following:
+  * Use the LOADFIX command to start the program.
+  * Run MS-DOS 5.0 in conventional memory.
+  * Run a version of the program that was not packed with
+    Pklite.
+  * Disable asynchronous reads on the PC-Kwik cache.
+
+For information about the LOADFIX command, see the section
+"You receive the 'Packed file corrupt' message" in Chapter 4
+of Microsoft Windows and MS-DOS Getting Started.
+
+15. ProKey Plus
+---------------
+If you have problems using a version of RoseSoft ProKey Plus
+earlier than 5.0, contact your vendor for an upgrade.
+
+ProKey Plus is incompatible with MS-DOS Editor and QBasic.
+
+16. Sidekick 2.0
+----------------
+If you are running MS-DOS 5.0 in the high memory area, use
+the following LOADFIX command to start Borland Sidekick 2.0:
+
+   LOADFIX sk2.exe
+
+For information about the LOADFIX command, see the section
+"You receive the 'Packed file corrupt' message" in Chapter 4
+of Microsoft Windows and MS-DOS Getting Started.
+
+17. Soft-ICE
+------------
+When using Nu-Mega Soft-ICE, load it before loading other
+drivers. Otherwise, you may lose data stored in extended
+memory by drivers such as SMARTDrive.
+
+18. Software Carousel
+---------------------
+Software Carousel 5.01 is compatible with MS-DOS 5.0.
+If you have an earlier version, contact SoftLogic Solutions
+for an update.
+
+If you installed HIMEMSLS.SYS, remove the
+DEVICE=HIMEMSLS.SYS command from your CONFIG.SYS after
+installing MS DOS 5 on your system.
+
+To use DOSKEY, load it after you load Software Carousel into
+memory.
+
+19. Task Swapper and Asynchronous I/O
+-------------------------------------
+Some programs that perform asynchronous communications are
+incompatible with MS-DOS Shell Task Swapper. Terminal-
+emulation software (such as SmartCom and Procomm Plus) and
+server/client software (such as Laplink and Blast) are
+asynchronous communications programs. If you can't use an
+asynchronous program with Task Swapper, contact your vendor
+for more information, or disable Task Swapper.
+
+20. Ventura Publisher
+---------------------
+If you can't start Ventura Publisher, make sure your Ventura
+Publisher directory is within the first 70 characters of the
+PATH command in your AUTOEXEC.BAT file.
+
+21. WordPerfect WPINFO.EXE 5.1
+------------------------------
+Some versions of the WPINFO.EXE file included with
+WordPerfect 5.1 are incompatible with MS-DOS 5.0. Contact
+your vendor for more information.
+
+22. WordPerfect Office 3.0
+--------------------------
+Some versions of WordPerfect Office 3.0 are incompatible
+with MS-DOS 5.0. Contact your vendor for more information.
+
+23. XTreeNet
+------------
+To use XTreeNet with MS-DOS Shell Task Swapper, select the
+Prevent Program Switch option in the MS-DOS Shell Advanced
+dialog box. For more information about specifying advanced
+properties, see Chapter 8 of the Microsoft MS-DOS User's
+Guide and Reference.
+
+Additional query words: 3.10 3.1 5.00a 5.0a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbMSDOSSearch kbMSDOS500
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

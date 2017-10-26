@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242053: Event ID 4319: Duplicate names on the network. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242053: Event ID 4319: Duplicate names on the network." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242053/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242053/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242053/","publisher":null,"image":null,"headline":"Q242053: Event ID 4319: Duplicate names on the network.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242053-event-id-4319-duplicate-names-on-the-network">Q242053: Event ID 4319: Duplicate names on the network.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242053
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the computer, the NetBIOS name resolution over your Transmission
+Control Protocol/Internet Protocol (TCP/IP)-based network may not succeed, and
+Event Viewer may report Event ID 4319 with the following error message:
+
+  A duplicate name has been detected on the TCP network.
+  The IP address of the machine that sent the message is in the data.
+  Use nbtstat -n in a command window to check which name is in the conflict
+  state.
+
+CAUSE
+=====
+
+This behavior can occur if there are incorrect static mappings in the Windows
+Internet Name Service (WINS) database, or if a multihomed WINS server has the
+WINS Client (TCP/IP) bound to both network adapters.
+
+RESOLUTION
+==========
+
+To resolve this issue, delete the static WINS mappings and clean (scavenge) the
+WINS database. If the server is a multihomed WINS server, disable the WINS
+client on one of the network adapters.
+
+To do this, follow these steps:
+
+1. Delete the static mappings:
+
+  a. Start WINS Manager.
+
+  b. On the Mappings menu, click Static Mappings.
+
+  c. In the Static Mappings dialog box, click WINS Static Mapping, and then
+     click Delete Mapping.
+
+  d. Click Close.
+
+2. Clean the WINS database:
+
+  a. In the WINS Manager window, click Mappings, and then click Initiate
+     Scavenging.
+
+  b. To confirm the queuing of the scavenging command, click OK.
+
+3. Disable the WINS client:
+
+  a. In Control Panel, double-click Network.
+
+  b. Click the Bindings tab.
+
+  c. In the Show Bindings For list, click All Adapters.
+
+  d. Click the plus character (+) next to the appropriate adapter name.
+
+  e. Right-click WINS Client (TCP/IP), and then click Disable.
+
+  f. In the Network dialog box, click OK.
+
+  g. Click Yes to restart the computer.
+
+Additional query words: multihomed static
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

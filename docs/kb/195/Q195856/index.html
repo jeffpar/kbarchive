@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195856: XADM: How to Detect and Remove Long Values in Exchange Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195856: XADM: How to Detect and Remove Long Values in Exchange Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195856/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195856/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195856/","publisher":null,"image":null,"headline":"Q195856: XADM: How to Detect and Remove Long Values in Exchange Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195856-xadm-how-to-detect-and-remove-long-values-in-exchange-database">Q195856: XADM: How to Detect and Remove Long Values in Exchange Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195856
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article is intended as a brief "How To" to help you investigate and correct
+orphaned or corrupted long values in Exchange Server 5.5 databases. Before you
+proceed, it is important to define what a long value is and describe how
+orphaned or corrupted long values occur.
+
+The steps outlined in this document are to be used in conjunction with
+Microsoft's Knowledge Base articles Q181824 regarding corrupted long values and
+Q185271 regarding orphaned long values. These articles can be found on the
+Microsoft TechNet CD or on the Internet. They discuss the orphaned and corrupted
+long value conditions in further detail.
+
+For more information, please see the following Microsoft Knowledge Base
+articles:
+
+  Q181824 XADM: Exchange Database Engine Doesn't Detect Removed Page in B-tree
+  Split Operation
+
+  Q185271 XADM: Orphaned LV Errors When Running ESEUTIL Consistency Checker
+
+Long-Values (LVs)
+-----------------
+
+Long-values (LVs) are created when a column is too large to store with the rest
+of the record. Internally, the Exchange Server database engine breaks large
+columns into separate parts; these are the long-values. Long-values are stored
+in a separate binary tree (B-Tree) and each LV is given a table- wide unique
+identifier (the long-value ID [LID]).
+
+Orphaned Long-Values
+--------------------
+
+To save space, the Exchange Server database engine provides the ability for
+multiple records to share the same LV (similar to, but not exactly related to
+the information store concept of single-instance storage for messages). To do
+this, a reference count is attached to each LV. When the reference count reaches
+zero, the LV is deleted. If the Exchange Server database engine is shut down (by
+a crash, power cut, or blue screen error messages) after dereferencing an LV,
+but before expunging it from the database, the LV will be "orphaned," that is,
+its reference count is set to zero, but it is never removed. Orphaned LVs are
+invisible to anyone using the database because they are logically deleted, but
+still take up space because they have not been physically removed.
+
+Corrupted Long-Values
+---------------------
+
+As mentioned above, LVs are stored as chunks of data in the long- value tree of a
+table. Each LV is prefixed by a header ("LVROOT") that contains the length and
+reference count of the LV. In rare cases (such as the B-Tree split problem
+documented in article Q181824), the LVROOT of an LV can be overwritten. This
+corrupts the LV, but doesn't actually lose any data. An Exchange Server
+information store (Store.exe) may stop responding or error out trying to access
+this LV.
+
+NOTE: Starting with Exchange Server Service Pack 1, Eseutil /p is able to examine
+the database to determine the correct length and refcount of the LV and
+re-create its LVROOT.
+
+Detecting Long-Values
+---------------------
+
+Exchange Server 5.5 Service Pack 1 contains updated code that prevents and
+repairs Exchange Server 5.5 LV database anomalies. However, if your Exchange
+Server 5.5 database already contains orphaned or corrupted LVs, applying
+Exchange Server Service Pack 1 alone will not fix them.
+
+To remove orphaned (product of Store.exe crashes) or corrupted (the product of a
+defective B-Tree split) LVs in Exchange Server 5.5 databases, you must detect
+specific LV anomalies by running the Exchange Server integrity checker utility,
+eseutil /g (with the /v and /x parameters for detailed output). This is
+considered the most reliable way to verify whether or not the Exchange Server
+databases contain specific anomalies.
+
+Using this utility is a safe approach to testing database integrity because the
+Eseutil /g utility operates in a read-only mode. It is very important to detect
+the specific type of long value anomalies present in the Exchange Server
+databases in order to ensure the proper steps are taken to fix the databases.
+
+To check Exchange Server 5.5 for LV anomalies documented in the Microsoft
+Knowledge Base articles above:
+
+1. Make and verify a full online backup of your Exchange Server databases.
+
+2. Stop all the Microsoft Exchange Server services gracefully using the Control
+  Panel Services tool.
+
+3. Use the Eseutil /mh utility, used to dump the Exchange Server database header
+  information, to verify the consistency of your databases by running the
+  following from an MS-DOS command prompt:
+
+  eseutil /mh {path to EDB}\{db}.edb &gt;dbdmp.txt
+
+  For example: eseutil /mh e:\exchsrvr\mdbdata\priv.edb &gt;privdmp.txt
+
+  NOTE: Eseutil /mh is a read-only utility and should not cause any damage to
+  the database against which it is run.
+
+4. Review the corresponding text file, confirm the state is equal to consistent.
+  This means the Exchange Server database has committed all transaction log
+  files and the data contained within the database is consistent.
+
+  NOTE: If your database is inconsistent, follow the proper disaster recovery
+  steps as outlined in the Exchange Server 5.5 Disaster Recovery white paper
+  located on the Internet at the following URL:
+
+  http://www.microsoft.com/exchange/techinfo/administration/55/BackupRestore.asp
+
+5. After your databases have been verified as consistent, with the Exchange
+  Server services stopped, run the eseutil /g integrity checker against the
+  databases.
+
+  eseutil /g /{db} /V /X &gt;dbchk.txt
+
+  Examples:
+
+  g:\&gt;eseutil /g /ispriv /v /x &gt;e:\privchk.txt
+  g:\&gt;eseutil /g /ispub /v /x &gt;e:\pubchk.txt
+  g:\&gt;eseutil /g /ds /v /x &gt;e:\dirchk.txt
+
+  Past experience has seen Eseutil /g performance in the range of running for
+  one and a half hours on a 30-GB private information store database. This was
+  on a Compaq 7000 quad processor with 512 MB of RAM.
+
+  NOTE: Eseutil /g is a read-only Exchange Server utility and should not cause
+  any damage to the database against which it is run
+
+6. After Eseutil /g has finished, search the output in the corresponding text
+  files for the following words. It is helpful to use the search or find
+  feature included in most text editors.
+
+   - Error
+
+   - Orphaned
+
+   - Corrupted
+
+  If you find an error in the text file, determine if this is an orphaned LV or
+  a corrupted LV; please contact Microsoft Product Support Services if you need
+  help. Make sure to search for both orphaned and corrupted LVs.
+
+It is possible to have both LV anomalies inside an Exchange Server database.
+After you have determined if your databases have any LV anomalies and the
+specific type of the anomaly (orphaned or corrupted), follow the corresponding
+Knowledge Base articles listed at the beginning of this article. This includes
+applying Exchange Server 5.5 Service Pack 1 and running the proper Eseutil
+utility to correct any anomalies.
+
+NOTE: If both types of LVs (orphaned and corrupted) are detected, repair the
+corrupted LVs first. After the repair of the corrupted long values has been
+completed successfully, perform an offline defragmentation on the databases that
+contain the orphaned LVs.
+
+Make a full online Exchange Server backup of the directory and information store
+databases after you have removed all LVs from your Exchange Server databases.
+
+MORE INFORMATION
+================
+
+Below are instructions on how to remove orphaned or corrupted LVs from Exchange
+Server 5.5 databases
+
+Orphaned Long Values
+--------------------
+
+To remove orphaned LVs in Exchange Server 5.5 databases:
+
+NOTE: To verify your Exchange Server databases exhibit the orphaned LVs, please
+see the following Microsoft Knowledge Base article:
+
+  Q185271 XADM: Orphaned LV Errors Running ESEUTIL Consistency Checker
+
+IMPORTANT NOTE: Verify there is adequate disk space available for the Eseutil
+temporary database, Tempdfg.edb. You can use the /T: parameter of Eseutil to
+redirect its location.
+
+1. Stop the Microsoft Exchange System Attendant Service to shut down Exchange
+  Server Services. You can do this from the Control Panel Services tool or by
+  typing the following command from an MS-DOS Command Prompt:
+
+  net stop msexchangesa
+
+2. Stop any Windows NT services related to Exchange Server or monitors running
+  against the Exchange Server computer. This includes Exchange Server and link
+  monitors, SNMP agents, or related services.
+
+3. From an MS-DOS command prompt, change to the drive letter that contains
+  enough available disk space to perform an offline defragmentation. This drive
+  should contain enough free disk space for the size of the database being
+  defragmented (roughly 110 percent of the size of the .edb file).
+
+4. To remove the orphaned LVs from the Exchange Server databases, type the
+  following commands at an MS-DOS command prompt.
+
+  NOTE: Allow each command to finish successfully before proceeding to the next
+  one. You can verify this by looking at the corresponding text file, confirm
+  "Operation complete successfully."
+
+  g:\&gt;eseutil /d /ispub &gt;e:\pub-defrag.txt
+  g:\&gt;eseutil /d /ispriv &gt;e:\priv-defrag.txt
+  g:\&gt;eseutil /d /ds &gt;e:\dir-defrag.txt
+
+  If you encounter JET error -1526 reporting corrupted LVs running eseutil /d on
+  an Exchange Server database, check the corresponding Eseutil /g /v /x text
+  file for possible corrupted long values. This - 1526 JET error can be seen
+  while attempting to run an offline defragmentation, Eseutil /d. If this
+  happens, it means your database may contain corrupted LVs. Please refer to
+  the section regarding removing corrupted LVs from Exchange Server databases.
+  After you complete the repair of corrupted LVs, you should be able to perform
+  an offline defragmentation of your Exchange Server databases.
+
+5. After the defragmentation commands finish, verify there are no LV errors by
+  running the following commands on the appropriate databases:
+
+  g:\&gt;eseutil /g /ispub /v /x &gt;e:\pubchk.txt
+  g:\&gt;eseutil /g /ispriv /v /x &gt;e:\privchk.txt
+  g:\&gt;eseutil /g /ds /v /x &gt;e:\dirchk.txt
+
+6. After the Exchange Server utilities finish successfully, and you've verified
+  no further LV errors exist in the Exchange Server databases, restart the
+  Exchange Server services and other Windows NT services that were stopped.
+
+7. Perform a full online backup immediately after performing the above steps.
+
+Corrupted Long Values
+---------------------
+
+To remove corrupted LVs from Exchange Server 5.5 databases:
+
+NOTE: To verify that your Exchange Server databases exhibit the corrupted LVs,
+refer to the following Microsoft Knowledge Base article:
+
+  Q181824 XADM: Jet Doesn't Detect Removed Page in B-tree Split Operation
+
+IMPORTANT NOTE: Eseutil /p should ONLY be run if corrupted LVs have been
+detected.
+
+NOTE: Make a backup of the database prior to running eseutil with the /p switch
+because the use of this switch can cause data loss.
+
+1. Stop the Microsoft Exchange System Attendant Service to shut down Exchange
+  Server services. You can do this from the Control Panel Services tool or by
+  typing the following command from an MS-DOS command prompt:
+
+  net stop msexchangesa
+
+2. Stop any Windows NT services related to Exchange Server or monitors running
+  against the Exchange Server computer. This includes Exchange Server and link
+  monitors, SNMP agents and/or related services.
+
+3. From the MS-DOS command prompt, type the following command to remove
+  corrupted LVs from Exchange Server databases:
+
+  g:\&gt;eseutil /p /{db switch} /v /x &gt;e:\{dbname}repair.txt
+  g:\&gt;eseutil /p /ispriv /x /v &gt;e:\PRI-repair.txt
+  g:\&gt;eseutil /p /ispub /x /v &gt;e:\PUB-repair.txt
+  g:\&gt;eseutil /p /ds /x /v &gt;e:\DS-repair.txt
+
+4. After the repair command completes, verify there are no long values errors by
+  running the following commands on the appropriate databases:
+
+  g:\&gt;eseutil /g /ispub /v /x &gt;e:\pubchk.txt
+  g:\&gt;eseutil /g /ispriv /v /x &gt;e:\privchk.txt
+  g:\&gt;eseutil /g /ds /v /x &gt;e:\dirchk.txt
+
+5. After the Exchange Server repair utility (eseutil /p) completes successfully,
+  and you have verified no that there are no further long value errors in the
+  Exchange Server databases, restart the Exchange Server services and other
+  Windows NT services that were stopped. There is no need to run isinteg -fix
+  after eseutil /p, (as indicated in the Microsoft Knowledge Base article
+  Q181824 listed at the beginning of this article).
+
+  NOTE: If there are any other errors reported in the Eseutil /g output (that
+  is, errors other than corrupted or orphaned long values) then it may be
+  necessary to run isinteg to repair information store pointers. This is only
+  necessary in the event eseutil /p made repairs other than removing corrupted
+  LVs. Please contact Microsoft Product Support Services for more information
+  regarding the running of isinteg or eseutil to repair Exchange Server
+  databases.
+
+6. Perform a full online backup immediately after performing the above steps.
+
+Additional query words: btree split 1601 1603 1206 1069 JET_errVersionStoreOutOfMemory 100%
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

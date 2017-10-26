@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305181: Unable to Complete MSN Broadband DSL Setup–Err Msg: &quot;Our serve | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305181: Unable to Complete MSN Broadband DSL Setup–Err Msg: &quot;Our serve" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305181/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305181/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305181/","publisher":null,"image":null,"headline":"Q305181: Unable to Complete MSN Broadband DSL Setup–Err Msg: &quot;Our serve","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305181-unable-to-complete-msn-broadband-dsl-setuperr-msg--our-serve">Q305181: Unable to Complete MSN Broadband DSL Setup–Err Msg:  "Our serve</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305181
+Product(s): The Microsoft Network
+Version(s): 6.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Network version 6.1 
+- MSN DSL, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You completed the Customer Premises Equipment (CPE) or Digital Subscriber Line
+(DSL) modem Setup for MSN Broadband DSL installation. User received the
+following error:
+
+"Our servers are very busy right now and having trouble processing your account.
+Would you like to try again?"
+
+No further options are available and you cannot proceed.
+
+CAUSE
+=====
+
+The CPE has not yet been assigned an external Internet Protocol (IP) address on
+the Asynchronous Transfer Mode (ATM) network. Because you do not have an IP
+address, you cannot connect to the MSN Setup Servers which are located behind
+the ATM Network. If two minutes has passed, MSN Explorer will not be able to
+detect the IP, even if the IP has been assigned. This can also be cause by
+issues with the server.
+
+RESOLUTION
+==========
+
+The MSN Broadband DSL setup application has been modified to allow up to 2
+minutes for the CPE to acquire an external IP address. However, this time
+allotment may not be sufficient for the CPE to acquire an IP lease.
+
+To resolve this issue
+
+1. Quit the MSN Explorer Setup Wizard, restart your CPE and PC, and then
+  double-click on the MSN Explorer icon on your desktop.
+  Note: Allow up to 2 minutes for CPE to acquire an IP lease. Watch for LNK LED
+  to turn amber in color. This indicates a complete connection with the DSLAM.
+  After double-clicking the MSN Explorer icon, your will receive this message:
+  "Currently, there are no users specified. Click Add a New User."
+
+2. Click Add a New User, and then entering your member ID and password.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN DSL
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSNDSL200
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

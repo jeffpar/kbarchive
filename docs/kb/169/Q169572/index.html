@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169572: No Speech in Talk It! With Sound Blaster 32 or AWE 64 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169572: No Speech in Talk It! With Sound Blaster 32 or AWE 64" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169572/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169572/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169572/","publisher":null,"image":null,"headline":"Q169572: No Speech in Talk It! With Sound Blaster 32 or AWE 64","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169572-no-speech-in-talk-it-with-sound-blaster-32-or-awe-64">Q169572: No Speech in Talk It! With Sound Blaster 32 or AWE 64</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169572
+Product(s): Microsoft Home Kids Products
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbinterop kbsound
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use Talk It! to produce speech using a Creative Labs sound
+card, no sound is heard.
+
+CAUSE
+=====
+
+This problem occurs if you are using a Creative Labs Sound Blaster 32 or Sound
+Blaster AWE 64 sound card and you have fully installed the Sound Blaster support
+software. In some cases, the Sound Blaster software replaces the Microsoft ADPCM
+CODEC with the Creative ADPCM CODEC.
+
+The Microsoft ADPCM CODEC is required for playing back speech in Talk It! The
+Creative ADPCM CODEC does not allow speech playback in Talk It!
+
+
+RESOLUTION
+==========
+
+Use the following steps to disable the Creative ADPCM CODEC and then verify that
+the Microsoft ADPCM CODEC is enabled:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Multimedia.
+
+3. On the Advanced tab, click the plus sign (+) to the left of Audio Compression
+  Codecs to expand the branch.
+
+4. Locate the Creative ADPCM CODEC.
+
+  Note: If this codec is present, please continue to Step 5. If this codec is
+  not present; this article does not apply to your problem. For more
+  information about possible solutions to this problem, please refer to the
+  following article in the Microsoft Knowledge Base.
+
+  Q133365 Windows 95: Troubleshooting Problems with Compressed Audio
+
+5. Select the Creative ADPCM CODEC and the click the Properties button.
+
+6. Select Do Not Use This Audio Codec and then click OK.
+
+7. Select the Microsoft ADPCM CODEC and then click the Properties button.
+
+8. Verify that Use This Audio Codec is selected (if not, select it) and then
+  click OK.
+
+9. Click OK to exit Multimedia Properties.
+
+10. Click the Start button, click Shut Down, select Restart The Computer, and
+  then click the Yes button to reboot your computer. When the reboot is
+  complete, try Talk It! You should now hear speech.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbsound 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

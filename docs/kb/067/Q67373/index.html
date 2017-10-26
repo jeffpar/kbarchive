@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67373: CLEAR Can Cause &quot;Subscript out of Range&quot; with $DYNAMIC Array | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67373: CLEAR Can Cause &quot;Subscript out of Range&quot; with $DYNAMIC Array" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67373/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67373/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67373/","publisher":null,"image":null,"headline":"Q67373: CLEAR Can Cause &quot;Subscript out of Range&quot; with $DYNAMIC Array","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67373-clear-can-cause-subscript-out-of-range-with-dynamic-array">Q67373: CLEAR Can Cause "Subscript out of Range" with $DYNAMIC Array</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67373
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 5-DEC-1990
+
+Increasing the stack space with the CLEAR statement also reinitializes
+all variables. This includes erasing the memory for any $DYNAMIC
+arrays and initializing the elements of a $STATIC array to zero or
+null strings. For this reason, CLEAR should normally be used only as
+the very first executable statement in a program. Using it anywhere
+else can cause problems. For example, once you have used CLEAR, if you
+attempt to access an element of a $DYNAMIC array, the error "Subscript
+out of range" will be generated. This is expected behavior because the
+CLEAR statement deallocates all memory for the dynamic array. After a
+CLEAR, all $DYNAMIC arrays must be re-created with the REDIM
+statement.
+
+This information applies to Microsoft QuickBASIC versions 2.00, 2.01,
+3.00, 4.00, 4.00b, and 4.50 for MS-DOS; to Microsoft BASIC Compiler
+versions 6.00 and 6.00b for MS-DOS and MS OS/2; to Microsoft BASIC
+Professional Development System (PDS) versions 7.00 and 7.10 for
+MS-DOS and MS OS/2; and to all versions of GW-BASIC (such as 3.20,
+3.22, 3.23) for MS-DOS.
+
+The following code block produces the error "Subscript out of range"
+on the "x(11) = 34" assign statement:
+
+COMMON x()
+DIM x(30)
+CLEAR , , 4000
+x(11) = 34
+
+Suggested Solution #1
+---------------------
+
+Create a dynamic variable and redimension the variable.
+
+' $DYNAMIC
+COMMON x()
+DIM x(30)
+CLEAR , , 4000
+REDIM x(30)
+x(11) = 34
+
+Suggested Solution #2
+---------------------
+
+In QuickBASIC version 4.00 or later, or BASIC compiler version 6.00 or
+later, use the LINK /ST[ACK]:n option, where n is the amount of bytes
+to allocate to the stack space out of DGROUP (maximum allowable stack
+is somewhere less than 64K).
+
+Reference
+---------
+
+For related articles, query on the following words:
+
+   LINK and STACK and default and size and 3.00 and 4.00 and QuickBASIC
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

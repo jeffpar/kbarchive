@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191927: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Report | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191927: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Report" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191927/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191927/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191927/","publisher":null,"image":null,"headline":"Q191927: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Report","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191927-howto-use-genhtml-to-create-html-from-a-visual-foxpro-report">Q191927: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Report</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191927
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Genhtml.prg is a Hypertext Markup Language (HTML) generation program that ships
+with Visual FoxPro 6.0. When executed, the Genhtml.prg creates a text file that
+contains a hypertext markup language version of a form, menu, report, or table.
+The Genhtml.prg is executed when the "Save as HTML" option is selected from the
+File menu.
+
+This article demonstrates how to use the Genhtml.prg file to create a tabbed HTML
+file from a Visual FoxPro report.
+
+MORE INFORMATION
+================
+
+1. Create a program file named Htmlrepo.prg containing the following code:
+
+        USE HOME(2)+"DATA\CUSTOMER"
+        CREATE REPO EXAMPLE FROM CUSTOMER
+        CLOSE ALL
+        DO (_GENHTML) WITH "EXAMPLE","EXAMPLE.FRX"
+        CLOSE ALL
+
+        * Set the class library to the _hyperlink class
+        SET CLASSLIB TO home()+"ffc\_hyperlink.vcx"
+        public ohyperlinkobject
+        * Create a form with a hyperlink
+        ohyperlinkobject=CREATEOBJECT('hyperform')
+        ohyperlinkobject.SHOW
+
+        DEFINE CLASS hyperform AS FORM
+           TOP           = 0
+           LEFT          = 0
+           HEIGHT        = 75
+           WIDTH         = 250
+           DOCREATE      = .T.
+           CAPTION       = "Display Example Report"
+           NAME          = "Form1"
+           SHOWTIPS      = .T.
+
+           ADD OBJECT _hyperlinklabel1 AS _hyperlinklabel WITH ;
+              LEFT       = 25, ;
+              TOP        = 10, ;
+              HEIGHT     = 25, ;
+              VISIBLE    = .T., ;
+              FONTNAME   = "Times New Roman", ;
+              FONTSIZE   = 14, ;
+              FONTITALIC = .T., ;
+              AUTOSIZE   = .T., ;
+              ctarget    = sys(5)+sys(2003)+"\EXAMPLE.HTM", ;
+              CAPTION    = "Example Report", ;
+              lnewwindow = .T., ;
+              NAME       = "_HYPERLINKLABEL1"
+
+        ENDDEFINE
+        * End Code
+
+2. When the Form captioned "Display Example Table" displays, click the hyperlink
+  label to display the HTML generated by the GENHTML program.
+
+REFERENCES
+==========
+
+Visual FoxPro 6.0 Books Online: Programmer's Guide; Chapter 13 Compiling an
+Application.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q185657 HOWTO: Utilize the Hyperlink Foundation Class
+
+(c) Microsoft Corporation 1998. All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+Additional query words: kbhtml kbVFp600 kbInternet kbReportWriter kbXBase kbMiscTools
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

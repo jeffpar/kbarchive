@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238633: SMS: Unable to Create Collection Based on Direct Rule Membership | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238633: SMS: Unable to Create Collection Based on Direct Rule Membership" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238633/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238633/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238633/","publisher":null,"image":null,"headline":"Q238633: SMS: Unable to Create Collection Based on Direct Rule Membership","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238633-sms-unable-to-create-collection-based-on-direct-rule-membership">Q238633: SMS: Unable to Create Collection Based on Direct Rule Membership</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238633
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbMMC kbSecurity kbsms200 kbsms200bug kbCollections kbsms200sp2fix
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you leave the "Search in this collection" box in the Create Direct Membership
+Wizard blank while you are creating a collection based on a direct membership
+rule, you may receive the following error message:
+
+  You do not have Class Read Resource security rights, therefore you must
+  specify a collection.
+
+If you select a specific collection to be limited to in the Collection Limiting
+dialog box, you may receive the following error message:
+
+  You do not have Read Resource security rights to the collection specified.
+  You must specify a different collection."
+
+When this problem occurs, you cannot finish the Create Direct Membership Rule
+Wizard. However, you can successfully create a collection based on a query.
+
+CAUSE
+=====
+
+This problem may occur if you are logged on as a user who belongs to a global
+group that has been granted the appropriate rights to the Collections class to
+create new collections. However, the Direct Membership Rule Wizard does not
+correctly determine the global group membership of the current user.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, assign Read and Read Resource collection class
+rights in addition to the Create right to individual users who need to create
+collections based on direct membership rules.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+To install the hotfix, use the appropriate method.
+
+Method 1: Using the Hotfix Installer
+------------------------------------
+
+NOTE: This method is only for I386-based computers.
+
+1. Copy the hotfix folder structure to a share on your network. Q238633.exe is a
+  Microsoft Windows Installer file that updates specific files on your site
+  server.
+
+2. Log on to your site server using an account with administrative privileges.
+
+3. On the site server, close the Systems Management Server Administrator
+  console.
+
+4. Run Q238633.exe and follow the directions in the wizard. You can run the file
+  in Quiet mode using the /s switch.
+
+5. Shut down and restart the SMS site server.
+
+Method 2: Manual Installation
+-----------------------------
+
+1. Close the Systems Management Server Administrator console.
+
+2. Run RegSvr32.exe to unregister the files that you are about to update. To do
+  so, type the following at a command prompt:
+
+  " regsvr32 /u mmcbasui.dll
+  regsvr32 /u mmcbsuir.dll
+
+  " (without the quotation marks)
+
+
+3. Replace the Mmcbasui.dll file in the
+  &lt;Sms_root_directory&gt;\Bin\&lt;Platform&gt; folder with the version
+  obtained from the hotfix. Run RegSvr32.exe to register the updated file. To
+  do so, type the following at a command prompt:
+
+  " regsvr32 mmcbasui.dll " (without the quotation marks)
+
+4. Replace the Mmcbsuir.dll file in the
+  &lt;Sms_root_directory&gt;\Bin\&lt;Platform&gt; folder with the version
+  obtained from the hotfix.
+  Run RegSvr32.exe to register the updated file. To do so, type the following at
+  a command prompt:
+
+  " regsvr32 mmcbsuir.dll " (without the quotation marks)
+
+Additional query words: prodsms groups mmc admin
+
+======================================================================
+Keywords          : kbMMC kbSecurity kbsms200 kbsms200bug kbCollections kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

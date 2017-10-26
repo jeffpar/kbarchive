@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q86748: Windows: Virtual Printer Memory Defined | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q86748: Windows: Virtual Printer Memory Defined" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/086/Q86748/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/086/Q86748/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/086/Q86748/","publisher":null,"image":null,"headline":"Q86748: Windows: Virtual Printer Memory Defined","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q86748-windows-virtual-printer-memory-defined">Q86748: Windows: Virtual Printer Memory Defined</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q86748
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.1,3.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The term "virtual memory" when used in connection with PostScript printers
+actually refers to a portion of the physical RAM installed in the printer. This
+type of printer memory is separate and distinct from the RAM memory on the
+computer or the free disk space on the computer's hard disk that Windows 386
+enhanced mode uses as its own type of virtual memory.
+
+The following sections discuss the definition and description of printer virtual
+memory, virtual memory settings in the Printers section of the Control Panel,
+and sources of information about printer virtual memory.
+
+MORE INFORMATION
+================
+
+Description of Printer Virtual Memory
+-------------------------------------
+
+The phrase "virtual memory" used in the context of PostScript printing describes
+the way that the PostScript language uses certain segments of the printer's RAM
+memory.
+
+The PostScript usage of memory can be divided into two basic areas. The first
+area is the area that is reserved for PostScript operations. This area includes
+the PostScript interpreter and three of its stacks: the operand stack, the
+dictionary stack, and the execution stack. The second area of memory, the
+virtual memory, or VM, area, is the area in which the values for PostScript
+composite objects are stored. PostScript objects are simply data, such as
+numbers, booleans, strings, and arrays. A composite object may be an array,
+dictionary, or string.
+
+The interpreter and its stacks manipulate objects and composite objects during
+the PostScript printing process. Therefore, the first area of memory may be
+thought of as corrected overhead for operations. The second area of memory is
+storage area for data that is dynamically adjustable through the Advanced
+Options dialog box for PostScript printers (see below).
+
+Virtual Memory Settings in Control Panel
+----------------------------------------
+
+After you install a PostScript printer driver in Windows 3.1, the Advanced button
+will be available in the Options dialog box. (To access the Options dialog box,
+run Control Panel, choose the Printers icon, choose the Setup button, and choose
+the Options button.) If you choose the Advanced button, you will enter the
+Advanced Options dialog box, which has a Memory group box in which you can set
+the amount of PostScript printer virtual memory. The desired amount is entered
+in the Virtual Memory (KB) box.
+
+The default setting that appears in the Virtual Memory box is the one recommended
+by the printer manufacturer. The default value is adequate in most cases.
+However, when a document uses a large number of TrueType or soft fonts, it may
+be useful to reduce the virtual memory setting so that the printer's memory is
+cleared more often. This helps to prevent the printer's memory from being
+overloaded with unused font information.
+
+The Clear Memory Per Page option performs a similar function. With this option,
+the printer's memory is cleared after each page is printed, and the fonts are
+downloaded to the printer again. However, these settings have only limited
+effectiveness in dealing with PostScript printing problems.
+
+You can determine the actual amount of RAM memory (that is, "virtual memory") on
+a PostScript printer by printing the TESTPS.TXT file in the WINDOWS directory.
+Adding more physical RAM to the printer will allow you to increase the maximum
+effective value in the Virtual Memory box.
+
+Sources of Documentation
+------------------------
+
+Although page 334 of the "Microsoft Windows Resource Kit" guide for operating
+system version 3.1 implies that more details exist concerning virtual printer
+memory in chapter 4 ("Troubleshooting") of the "Getting Started with Microsoft
+Windows" guide, no additional information specific to printer virtual memory
+exists there. Nonetheless, the "To change a PostScript printer's options"
+section on page 84 of the "Getting Started with Microsoft Windows" guide does
+provide information about the Clear Memory Per Page check box. Other information
+about virtual memory is found by choosing the Help button or by pressing F1
+while the insertion point is in the Virtual Memory settings box.
+
+REFERENCES
+==========
+
+"PostScript Language Reference Manual," Adobe Systems Inc., pages 18-19, 45-46,
+Addison-Wesley, 1990
+
+"Microsoft Windows Resource Kit" for Windows version 3.1, page 334
+
+"Getting Started with Microsoft Windows," version 3.1, page 84
+
+HELP.TXT, Windows version 3.1
+
+
+Additional query words: vertial vertual random access memory printing fonts post-script post script
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

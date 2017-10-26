@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42326: Wrong Example in QB Advisor for CALL INTERRUPT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42326: Wrong Example in QB Advisor for CALL INTERRUPT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42326/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42326/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42326/","publisher":null,"image":null,"headline":"Q42326: Wrong Example in QB Advisor for CALL INTERRUPT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42326-wrong-example-in-qb-advisor-for-call-interrupt">Q42326: Wrong Example in QB Advisor for CALL INTERRUPT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42326
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890220-8 docerr | mspl13_basic
+Last Modified: 12-NOV-1990
+
+The code example for CALL INTERRUPT in the QuickBASIC version 4.50 QB
+Advisor hypertext online Help system is the wrong example because it
+is actually a code example for CALL INT86OLD, and the CALL INTERRUPT
+example is missing. In addition, two errors need correcting in this
+CALL INT86OLD example. Working examples of CALL INT86OLD (corrected)
+and CALL INTERRUPT are shown below.
+
+The following two errors need to be corrected in the CALL INT86OLD
+example that comes up on the QuickBASIC 4.50 QB Advisor "Help: Call
+Interrupt Statement Programming Example":
+
+1. The following incorrect line
+
+      $INCLUDE: 'QB.BI'    [Gives "Expected: Statement" error in QB.EXE.]
+
+   should be corrected to read as follows:
+
+      REM $INCLUDE: 'QB.BI'
+
+2. The following incorrect line
+
+      INARY%(DX) = SADD("FOO.TXT" + CHR$(0))  ["Expected: Variable" error.]
+
+   should be changed into the following two lines:
+
+      a$ = "FOO.TXT" + CHR$(0)
+      INARY%(DX) = SADD(a$)
+
+The corrected CALL INT86OLD example is shown in Example 1 below.
+
+The CALL INTERRUPT statement is shown in Example 2 below. A code
+example for CALL INTERRUPT can also be found on Pages 74-76 of
+"Microsoft QuickBASIC 4.5: BASIC Language Reference," which is sold
+separately (see the order card in the 4.50 package).
+
+In the QBX.EXE Microsoft Advisor online Help system (for Microsoft
+BASIC PDS versions 7.00 and 7.10 for MS-DOS and MS OS/2), the CALL
+INTERRUPT code example correctly displays on the "Help: Interrupt,
+Interruptx Routines Programming Example" screen (and the example works
+correctly).
+
+Note that the INT86OLD and INT86XOLD routines are not documented in
+any printed or online documentation in BASIC PDS 7.00 and 7.10, as
+explained in a separate article found by querying with the following
+words:
+
+   INT86OLD and help and docerr
+
+Example 1: CALL INT86OLD Example (Corrected)
+--------------------------------------------
+
+' Note:  To use CALL INTERRUPT, you must load the Quick library QB.LIB
+'        with QuickBASIC. The program also uses the QB.BI header file.
+
+' Include header file for INT86OLD, etc.
+REM $INCLUDE: 'QB.BI'  ' Added REM to correct "Expected: Statement" error
+
+DIM INARY%(7), OUTARY%(7)         'Define input and output
+                  'arrays for INT86.
+'
+' Define register-array indices to
+' make program easier to understand.
+CONST AX = 0, BX = 1, CX = 2, DX = 3, bp = 4, si = 5, di = 6, FL = 7
+'
+INARY%(AX) = &amp;H3C00               'DOS function to create a file.
+INARY%(CX) = 0                    'DOS attribute for created file.
+a$ = "FOO.TXT" + CHR$(0)   ' Added this line and modified next line to
+INARY%(DX) = SADD(a$)      ' correct "Expected: Variable" error.
+                  'Pointer to file-name string
+                  'with zero byte termination.
+
+CALL INT86OLD(&amp;H21, INARY%(), OUTARY%())
+                  'Perform the creation.
+'
+INARY%(BX) = OUTARY%(AX)          'Move created file handle for write.
+INARY%(AX) = &amp;H4000               'DOS function to write to file.
+TEXT$ = "hello, world" + CHR$(13) + CHR$(10)
+                  'Define text to write to file.
+INARY%(CX) = LEN(TEXT$)           'Get length of text string.
+INARY%(DX) = SADD(TEXT$)          'Get address of text string.
+CALL INT86OLD(&amp;H21, INARY%(), OUTARY%())
+                  'Perform the write.
+'
+INARY%(AX) = &amp;H3E00               'DOS function to close a file.
+CALL INT86OLD(&amp;H21, INARY%(), OUTARY%())
+                  'Perform the close.
+
+Example 2: CALL INTERRUPT Example (not found in QB Advisor 4.50 Help)
+---------------------------------------------------------------------
+
+'This example uses the Interrupt routine to determine the current
+'drive and the amount of free space remaining on the drive.
+
+'Note: To use the Interrupt routine, you must load the Quick library
+'QB.QLB using the /L switch when you begin QB. The following include
+'file must also be present.
+
+'$INCLUDE: 'QB.BI'
+
+'Define registers.
+DIM regs AS RegType
+
+'Get current drive info; set up input and do system call.
+regs.ax = &amp;H1900
+CALL INTERRUPT(&amp;H21, regs, regs)
+
+'Convert drive info to readable form.
+Drive$ = CHR$((regs.ax AND &amp;HFF) + 65) + ":"
+
+'Get disk free space; set up input values and do system call.
+regs.ax = &amp;H3600
+regs.dx = ASC(UCASE$(Drive$)) - 64
+CALL INTERRUPT(&amp;H21, regs, regs)
+
+'Decipher the results.
+SectorsInCluster = regs.ax
+BytesInSector = regs.cx
+IF regs.dx &gt;= 0 THEN
+    ClustersInDrive = regs.dx
+ELSE
+    ClustersInDrive = regs.dx + 65536
+END IF
+IF regs.bx &gt;= 0 THEN
+    ClustersAvailable = regs.bx
+ELSE
+    ClustersAvailable = regx.bx + 65536
+END IF
+Freespace = ClustersAvailable * SectorsInCluster * BytesInSector
+
+'Report results.
+CLS
+PRINT "Drive "; Drive$; " has a total of";
+PRINT USING "###,###,###"; Freespace;
+PRINT " bytes remaining free."
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

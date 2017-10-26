@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138600: Cannot Print Complex Graphical Images on HP LaserJet Printer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138600: Cannot Print Complex Graphical Images on HP LaserJet Printer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138600/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138600/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138600/","publisher":null,"image":null,"headline":"Q138600: Cannot Print Complex Graphical Images on HP LaserJet Printer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138600-cannot-print-complex-graphical-images-on-hp-laserjet-printer">Q138600: Cannot Print Complex Graphical Images on HP LaserJet Printer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138600
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): Win2000:95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a document that contains complex graphical images to a
+non-PostScript Hewlett-Packard (HP) LaserJet 4- or 5-series printer, the error
+light on the printer may blink and the document may not be printed or the output
+may be incomplete or incorrect. The same document may have been printed
+correctly in an earlier version of Windows. Documents that contain only text or
+simple graphical images are printed correctly.
+
+This problem is known to occur with the following HP LaserJet 4- and 5-series
+printers:
+
+- 4
+
+- 4M
+
+- 4 Plus
+
+- 4M Plus
+
+- 4L
+
+- 4ML
+
+- 4P
+
+- 4MP
+
+- 4Si
+
+- 4Si MX
+
+- 4V
+
+- 4MV
+
+- 5
+
+- 5P
+
+- 5MP
+
+CAUSE
+=====
+
+The amount of information being sent to the printer by the Windows 95 printer
+driver exceeds the amount of installed printer memory. In general, you should be
+able to print any document that you could print in Windows 3.1. However, you may
+have to make changes to some printer settings as outlined in this article.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. In Control Panel, double-click the Printers icon.
+
+2. Use the right mouse button to click the printer you are using, and then click
+  Properties on the menu that appears.
+
+3. On the Details tab, click Spool settings, and then click RAW in the Spool
+  Data Format box.
+
+4. On the Graphics tab, click the Use Raster Graphics option.
+
+5. On the Fonts tab, click the Print TrueType As Graphics option.
+
+6. On the Device Options tab, move the Printer Memory Tracking slider all the
+  way to the right (to the Aggressive setting).
+
+7. Verify that the Printer Memory setting matches the amount of memory installed
+  in the printer.
+
+8. If the Page Protection check box is not unavailable, click the check box to
+  clear it if it is selected, or click the check box to select it if it is
+  cleared. The check box may be unavailable, depending on the printer model you
+  are using and the amount of memory installed in the printer.
+
+9. Click OK.
+
+NOTE: This workaround may cause some documents to be printed more slowly. This
+decrease in performance does not occur with all documents or on all computers,
+and is typically not noticeable.
+
+Additional query words: vector incomplete graphics w95print
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

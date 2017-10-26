@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166943: Golf: Unable to Select COM Port in Multiplayer Game | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166943: Golf: Unable to Select COM Port in Multiplayer Game" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166943/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166943/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166943/","publisher":null,"image":null,"headline":"Q166943: Golf: Unable to Select COM Port in Multiplayer Game","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166943-golf-unable-to-select-com-port-in-multiplayer-game">Q166943: Golf: Unable to Select COM Port in Multiplayer Game</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166943
+Product(s): Microsoft Home Games
+Version(s): WINDOWS:1.0,2.0,3.0
+Operating System(s): 
+Keyword(s): kbenv kbhw kbui kbusage kbimu kbHardware
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Golf for Windows, versions 1.0, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to play a multiplayer game in Microsoft Golf, you may not be
+able to select the COM port for your modem.
+
+CAUSE
+=====
+
+This behavior can occur your modem uses a virtual COM port.
+
+Microsoft Windows 95/98 does not automatically recognize the virtual COM ports
+used by some Plug-and-Play modems.
+
+RESOLUTION
+==========
+
+To resolve this issue, manually add a COM port that matches the resource
+settings for your modem. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Device Manager tab, double-click the Modem branch to expand it.
+
+4. Under the Modem branch, double-click your modem.
+
+5. On the Modem tab, note the COM port selected in the Port box. If there is no
+  Modem tab, then on the Resources tab, note the Interrupt Request and the
+  Input/Output Range settings. If there is no Resources tab, see the
+  documentation for your modem for information about how to view the modem's
+  port settings.
+
+6. Click OK until you return to Control Panel.
+
+7. In Control Panel, double-click Add New Hardware.
+
+8. Click Next. If you are using Windows 98, click Next again.
+
+9. When you are prompted to let Windows to search for your new hardware, click
+  No, and then click Next.
+
+10. In the Hardware Types box, click Ports (COM &amp; LPT), and then click Next.
+
+11. In the Manufacturers box, click (Standard Port Types).
+
+12. In the Models box, click Communications Port, and then click Next.
+
+13. Click Next, and then click Finish.
+
+14. When you are prompted to restart the computer, click Yes.
+
+15. After the computer restarts, repeat Steps 1 - 5.
+
+16. Verify that the Interrup Request and Input/Output range settings match the
+  settings you noted in step 5, and then click OK. If the settings do not
+  match, follow these steps to change them back to their original values, and
+  then click OK:
+
+  NOTE: Ignore any messages you see in the Conflicting Device List box.
+
+  a. Click to clear the Use Automatic Settings check box.
+
+  b. Under Resource Type, double-click Interrupt Request.
+
+  c. In the Value box, type the value for the Interrupt Request setting you
+     noted in step 5, and then click OK.
+
+  d. Under Resource Type, double-click Input/Output Range.
+
+  e. In the Value box, type the value for the Input/Output Range setting you
+     noted in step 5, and then click OK.
+
+17. Double-click the Ports (COM &amp; LPT) branch to expand it.
+
+18. Double-click the COM port you added in steps 7 - 14.
+
+19. On the Resources tab, verify that the Interrup Request and Input/Output
+  range settings match the settings you noted in step 5, and then click OK.
+
+20. Click OK, and then restart the computer.
+
+When you start a multiplayer game in Golf, select the new COM port.
+
+Additional query words: 1.00 2.00 3.00 golf comm missing listed unavailable
+
+======================================================================
+Keywords          : kbenv kbhw kbui kbusage kbimu kbHardware 
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf300 kbGolf100 kbGolf200
+Version           : WINDOWS:1.0,2.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

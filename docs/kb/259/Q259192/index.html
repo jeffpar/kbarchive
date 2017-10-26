@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259192: PRB: Updating a Table with DTOC() in an Index Using ODBC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259192: PRB: Updating a Table with DTOC() in an Index Using ODBC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259192/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259192/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259192/","publisher":null,"image":null,"headline":"Q259192: PRB: Updating a Table with DTOC() in an Index Using ODBC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259192-prb-updating-a-table-with-dtoc-in-an-index-using-odbc">Q259192: PRB: Updating a Table with DTOC() in an Index Using ODBC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259192
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbODBC kbvfp600 kbvfp600bug KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for Visual FoxPro (Build 6.00.8281.00), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a Visual FoxPro table containing an index with the DTOC() function
+in the index key expression and the index was built with CENTURY turned OFF
+and/or the DATE format was not AMERICAN, adding records or updating the table
+with the Visual FoxPro ODBC drivers may cause problems. If the index key
+expression is built using the DTOC() function and the ",1" parameter, your
+indexes work as expected.
+
+CAUSE
+=====
+
+The DTOC() function returns a character string corresponding to a Date or
+DateTime expression. The date format of this character string is determined by
+the SET CENTURY and SET DATE commands. The values placed into the index may vary
+depending on these environment settings at the time a record is added or
+updated. The default settings for the Visual FoxPro ODBC driver are DATE is
+AMERICAN and CENTURY is ON. If your application uses a different date format, it
+is not able to find those records using the index built with the DTOC()
+function.
+
+RESOLUTION
+==========
+
+Try one of the following to resolve this issue:
+
+- Build your indexes with the DTOS() or DTOC(,1) functions.
+
+- Make sure DATE is AMERICAN and CENTURY is ON when building and updating the
+  index in Visual FoxPro.
+
+- Re-index the table after updating through ODBC.
+
+- Replace the DTOC() function call with the following expression (format may be
+  changed to fit your needs: if your DATE is USA, use "-" instead of "/"):
+
+  For a 2 digit year:
+  PADL(MONTH(&lt;date field&gt;),2,"0") + "/" + PADL(DAY(&lt;date field&gt;),2,"0") + "/" + RIGHT(STR(YEAR(&lt;date field&gt;),4,0),2)
+
+  For a 4 digit year:
+  PADL(MONTH(&lt;date field&gt;),2,"0") + "/" + PADL(DAY(&lt;date field&gt;),2,"0") + "/" + STR(YEAR(&lt;date field&gt;),4,0)
+
+- Change the DATE and CENTURY settings for the Visual FoxPro ODBC driver using
+  SQL Passthrough commands (this code should be executed AFTER you open the
+  remote view):
+
+  * to do this in Visual FoxPro
+  * get connection handle to table
+  lnHandle=CursorGetProp("ConnectHandle")
+  * if the DATE format was set to USA when the index was built
+  =SQLExec(lnHandle,"SET DATE USA")
+  * if CENTURY was OFF when the index was built
+  =SQLExec(lnHandle,"SET CENTURY OFF")
+  * perform table updates, index values will be created properly
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program and paste the following code into it:
+
+  *Start of Code
+  Clear
+  Set Century Off
+  ? "Creating table"
+  Create Table ODBCDTOC (Name C(20), Date D)
+  ? "Creating index Name"
+  Index On Name Tag Name
+  ? "Creating index NameDate"
+  Index On Name+DtoC(Date) Tag NameDate
+  ? "Adding record 1"
+  Insert Into ODBCDTOC (Name,Date) Values ("Apple",{^1962-07-14})
+  ? "Adding record 2"
+  Insert Into ODBCDTOC (Name,Date) Values ("Banana",{^1960-04-01})
+  Set Order To Tag NameDate
+  ? "Seeking record 1: "
+  ?? Seek(PadR("Apple" ,20)+DtoC({^1962-07-14})), "this should be .T. - as expected"
+  ? "Seeking record 2: "
+  ?? Seek(PadR("Banana",20)+DtoC({^1960-04-01})), "this should be .T. - as expected"
+  Close All
+  ? "Creating DBC"
+  Create Database ODBCDTOC
+  ? "Creating Connection"
+  Create Connection Connect1 ConnString "DSN=Visual FoxPro Tables;UID=;PWD=;SourceDB=" + SYS(5) + SYS(2003)
+  DBSetProp('CONNECT1', 'Connection', 'Asynchronous', .F.)
+  DBSetProp('CONNECT1', 'Connection', 'BatchMode', .T.)
+  DBSetProp('CONNECT1', 'Connection', 'Comment', '')
+  DBSetProp('CONNECT1', 'Connection', 'DispLogin', 1)
+  DBSetProp('CONNECT1', 'Connection', 'ConnectTimeOut', 15)
+  DBSetProp('CONNECT1', 'Connection', 'DispWarnings', .F.)
+  DBSetProp('CONNECT1', 'Connection', 'IdleTimeOut', 0)
+  DBSetProp('CONNECT1', 'Connection', 'QueryTimeOut', 0)
+  DBSetProp('CONNECT1', 'Connection', 'Transactions', 1)
+  DBSetProp('CONNECT1', 'Connection', 'Database', '')
+  ? "Creating Remote View"
+  Create SQL View "View1" Remote Connect "Connect1" As Select * From ODBCDTOC 
+  DBSetProp('VIEW1', 'View', 'UpdateType', 1)
+  DBSetProp('VIEW1', 'View', 'WhereType', 3)
+  DBSetProp('VIEW1', 'View', 'FetchMemo', .T.)
+  DBSetProp('VIEW1', 'View', 'SendUpdates', .T.)
+  DBSetProp('VIEW1', 'View', 'UseMemoSize', 255)
+  DBSetProp('VIEW1', 'View', 'FetchSize', 100)
+  DBSetProp('VIEW1', 'View', 'MaxRecords', -1)
+  DBSetProp('VIEW1', 'View', 'Tables', 'ODBCDTOC')
+  DBSetProp('VIEW1', 'View', 'Prepared', .F.)
+  DBSetProp('VIEW1', 'View', 'CompareMemo', .T.)
+  DBSetProp('VIEW1', 'View', 'FetchAsNeeded', .F.)
+  DBSetProp('VIEW1', 'View', 'FetchSize', 100)
+  DBSetProp('VIEW1', 'View', 'Comment', "")
+  DBSetProp('VIEW1', 'View', 'BatchUpdateCount', 1)
+  DBSetProp('VIEW1', 'View', 'ShareConnection', .F.)
+  *!* Field Level Properties for VIEW1
+  * Props for the VIEW1.customer field.
+  DBSetProp('VIEW1.name', 'Field', 'KeyField', .T.)
+  DBSetProp('VIEW1.name', 'Field', 'Updatable', .T.)
+  DBSetProp('VIEW1.name', 'Field', 'UpdateName', 'ODBCDTOC.name')
+  DBSetProp('VIEW1.name', 'Field', 'DataType', "C(20)")
+  * Props for the VIEW1.order field.
+  DBSetProp('VIEW1.date', 'Field', 'KeyField', .T.)
+  DBSetProp('VIEW1.date', 'Field', 'Updatable', .T.)
+  DBSetProp('VIEW1.date', 'Field', 'UpdateName', 'ODBCDTOC.date')
+  DBSetProp('VIEW1.date', 'Field', 'DataType', "D")
+  Close All
+  ? "Opening Remote View"
+  Use ODBCDTOC!View1
+  ? "Inserting record 3 into Remote View"
+  Insert Into View1 (Name, Date) Values ("Pear",{^2000-04-01})
+  ? "Locating record 2: "
+  Locate For Name = "Banana"
+  ?? Found(), "this should be .T. - as expected"
+  ? "Replacing date field with new value"
+  Replace Date With Date()
+  =TableUpdate(.t.)
+  Close All
+  ? "Opening table"
+  Use ODBCDTOC Order Tag NameDate
+  ? "Seeking record 3: "
+  ?? Seek(PadR("Pear",20)+DtoC({^2000-04-01})), "this should be .T."
+  ? "Seeking record 2: "
+  ?? Seek(PadR("Banana",20)+DtoC(Date())), "this should be .T."
+  Close Data All
+  *End of Code 
+
+2. Run the program and the results will be displayed.
+
+REFERENCES
+==========
+
+For additional information on the Visual FoxPro ODBC drivers and Dates, click
+the article numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q229854 PRB: ODBC Query Fails with Non-American Date Format
+
+  Q176572 FIX: ODBC Date Filter Greater Than 12/31/1999 Return No Records
+
+  Q191926 FIX: VFP ODBC Driver Problem w/ {d 'yyyymmdd'} and Year &gt; 1999
+
+For additional information on indexing with Date/DateTime fields, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q97066 HOWTO: Index a Combined Date and Character Field
+
+  Q253595 HOWTO: Build Indexes with DateTime Fields and Other Data Types
+
+Additional query words: Passthru Passthrough
+
+======================================================================
+Keywords          : kbODBC kbvfp600 kbvfp600bug KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbODBCSearch kbODBCVFP600828100
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

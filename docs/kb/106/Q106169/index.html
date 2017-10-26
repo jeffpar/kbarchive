@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106169: Windows NT and HP LAN Manager/X Version 1.4 Interoperability | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106169: Windows NT and HP LAN Manager/X Version 1.4 Interoperability" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106169/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106169/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106169/","publisher":null,"image":null,"headline":"Q106169: Windows NT and HP LAN Manager/X Version 1.4 Interoperability","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106169-windows-nt-and-hp-lan-managerx-version-14-interoperability">Q106169: Windows NT and HP LAN Manager/X Version 1.4 Interoperability</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106169
+Product(s): Microsoft Windows NT
+Version(s): 
+Operating System(s): 
+Keyword(s): kbinterop
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may experience difficulty connecting to computers with HP LAN Manager/X
+version 1.4. Several different issues have been identified and are detailed with
+workarounds below.
+
+NOTE: The #NOFNR flag does not apply to Windows NT version 3.5 systems, which do
+not use directed name queries.
+
+MORE INFORMATION
+================
+
+Idle NetBIOS Sessions Become Unusable After Five Minutes
+--------------------------------------------------------
+
+SYMPTOMS
+========
+
+Idle NetBIOS sessions between Windows NT clients and HP LAN Manager/X servers
+become unusable after about five minutes.
+
+You cannot connect from a Windows NT computer to an HP LAN Manager/x computer by
+adding entries to the LMHOSTS file.
+
+You cannot view files on an HP LAN Manager/X server located in a directory that
+has a name with more than three characters following the period. If you try to
+run the DIR command a "file not found" message appears.
+
+You may be prompted for a password when you connect from a Windows NT computer to
+a LAN Manager or HP LAN Manager/X version 1.x server.
+
+CAUSE
+=====
+
+HP LAN Manager/X does not recognize NetBIOS "keep alive" messages.
+
+HP LAN Manager/X computers do not respond to directed name queries.
+
+HP LAN Manager/X version 1.4 negotiates by the SMB Specification Ext 2.0 (or LAN
+Manager 1.x). This specification does not support long file names.
+
+
+For security reasons Windows NT does not send an un-encrypted password over the
+network unless you type it in. Since HP LAN Manager/X machines do not support
+encrypted passwords, Windows NT asks for a password with the following prompt:
+
+  The password is invalid for \\servername\sharename.
+  Type the password for \\servername\sharename:
+
+Solution:
+
+Typing the correct password will allow you to log in.
+
+WORKAROUND
+==========
+
+Disable NetBIOS "keep alive" messages in Windows NT by using the following
+procedure:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor.
+
+2. Go to the following key:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services \Nbt\Parameters
+
+3. Choose Add Value from the Edit menu.
+
+4. Add a value using the following information:
+
+     Value Name: NbtKeepAlive
+     Data Type:  REG_DWORD
+     Data:       0
+
+5. Exit Registry Editor.
+
+Cannot Connect Using LMHOSTS File
+---------------------------------
+
+Add the "#NOFNR" flag to the LMHOSTS entries for these computers. For more
+information see article Q103765 in the Microsoft Knowledge Base.
+
+Cannot See Files Under Some Directory Names
+-------------------------------------------
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1. There is a fix for this problem that has not been
+regression-tested. Contact Microsoft Product Support Services for more
+information.
+
+
+Prompted for Password on Connection
+-----------------------------------
+
+Additional query words: prodnt HP LM/X 1.4
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

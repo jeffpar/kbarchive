@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140106: PC MAPI: Sample VB Code to Read a Microsoft Mail Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140106: PC MAPI: Sample VB Code to Read a Microsoft Mail Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140106/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140106/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140106/","publisher":null,"image":null,"headline":"Q140106: PC MAPI: Sample VB Code to Read a Microsoft Mail Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140106-pc-mapi-sample-vb-code-to-read-a-microsoft-mail-message">Q140106: PC MAPI: Sample VB Code to Read a Microsoft Mail Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140106
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The simple Messaging Application Programming Interface (MAPI) includes functions
+that allow developers to access mail programmatically. The following Visual
+Basic code illustrates successful calls to these functions.
+
+MORE INFORMATION
+================
+
+The sample code below uses MAPILogon to log in the Mail system, MAPIFindNext to
+find the first message ID, loops MAPIReadmail and MAPIFindNext to access all
+messages, and uses MAPILogOff to log out.
+
+  ' **************************************************
+  '        Simple MAPI Declarations
+  ' **************************************************
+  Dim M As MAPIMessage
+  Dim Mo As MapiRecip
+  ReDim Mr(0 To 0) As mapirecip
+  ReDim mf(0 To 0) As mapifile
+  MsgType$ = ""      ' NULL default to IPM.Microsoft Mail.Note
+  m.MessageType = MsgType$   ' message type you want to download
+  NL = Chr(10)         ' a new line constant variable
+  ' **********************************************************
+  ' Login and start the MAPI Session, using the dialog box and
+  ' download new mail if any exists
+  ' **********************************************************
+  rc&amp; = MAPILogon(main_form.hWnd, "", "", MAPI_LOGON_UI +
+  MAPI_FORCE_DOWNLOAD,
+
+   0&amp;, lhsession)
+  If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+    MsgBox "Error logging in with error=" + Str(rc&amp;)
+
+  Else
+
+    MsgBox "Success logging in"
+  End If
+  rc&amp; = MAPIFindNext(lhsession&amp;, 0&amp;, MsgType$, "", 0&amp;, 0&amp;, msgid$)
+    If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+      MsgBox "Error during message find or no messages in Inbox."
+      rc&amp; = MAPILogoff(lhsession&amp;, 0&amp;, 0&amp;, 0&amp;)
+      End
+    End If
+    i = 0
+    Do While (rc&amp; = SUCCESS_SUCCESS)
+          rc&amp; = MAPIReadMail(lhsession&amp;, 0&amp;, msgid$, 0&amp;, 0&amp;, m, mo, Mr(),
+  mf())
+          If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+              MsgBox "Error during MAPIReadMail"
+              Exit Do
+          Else
+              i = i + 1
+     ' ************** accessing various fields of the message ************
+              msg$ = "Message# " &amp; Str(i)
+              msg$ = msg$ &amp; NL &amp; "Subject: " &amp; m.subject
+              msg$ = msg$ &amp; NL &amp; "Sent by: " &amp; mo.name
+              msg$ = msg$ &amp; NL &amp; "Message type: " &amp; m.MessageType
+              If m.filecount &lt;&gt; 0 Then
+                  msg$ = msg$ &amp; NL &amp; "Message includes attachment"
+              Else
+                  msg$ = msg$ &amp; NL &amp; "Message includes no attachment"
+              End If
+          End If
+          MsgBox msg$
+          rc&amp; = MAPIFindNext(lhsession&amp;, 0&amp;, MsgType$, msgid$, 0&amp;, 0&amp;,
+  msgid$)
+
+     Loop
+
+  rc&amp; = MAPILogoff(lhsession, 0&amp;, 0&amp;, 0&amp;)
+  If rc&amp; &lt;&gt; SUCCESS_SUCCESS Then
+  MsgBox "Error logging off with error=" + Str(rc&amp;)
+  Else
+  MsgBox "Success logging off"
+  End If
+
+IMPORTANT NOTE: Make sure a MAPI declaration module, such as MAPILIB.BAS, is
+included in the project.
+
+Additional query words: 3.00 3.20 1.00 visual basic code
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

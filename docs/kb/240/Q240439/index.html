@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240439: XFOR: Host Messages Backed Up on OV/VM Connector | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240439: XFOR: Host Messages Backed Up on OV/VM Connector" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240439/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240439/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240439/","publisher":null,"image":null,"headline":"Q240439: XFOR: Host Messages Backed Up on OV/VM Connector","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240439-xfor-host-messages-backed-up-on-ovvm-connector">Q240439: XFOR: Host Messages Backed Up on OV/VM Connector</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240439
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55
+Last Modified: 23-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Messages on the host may be stuck in the Remote Spooling Communications
+Subsystem (RSCS) queue even though the Microsoft Exchange OfficeVision/VM
+(OV/VM) Connector is working properly. Stopping and then restarting the Exchange
+OV/VM Connector clears the backlog.
+
+CAUSE
+=====
+
+The RSCS link definition for the Microsoft Exchange Server VM Node may be
+incorrectly configured for multiple threads. The Exchange OV/VM Connector
+supports only one thread.
+
+RESOLUTION
+==========
+
+Contact your local VM administrator, who has access to the host mainframe.
+
+1. Open the RSCS configuration file.
+
+2. Ensure that the STREAMS or ST parameter is set to 1. For example:
+
+  PARM RSCSLINK BUFF=3072 ST=1 TA=0
+
+  The default for RSCS communications between OV/VM systems is for multiple
+  threads.
+
+3. You must restart the RSCS system for any changes to take effect.
+
+MORE INFORMATION
+================
+
+The following information is documented in Microsoft Exchange Connector for IBM
+OfficeVision/VM Installation and Configuration in Chapter 2:
+
+  
+
+  RSCS PARM Statement:
+
+  The following table describes the PARM statement you need for the link.
+
+  NOTE: Do not set the RLPASS, RNPASS, TLPASS, and TNPASS parameters in this
+  statement. If you do, the connector cannot sign on to the host. You can allow
+  other parameters to default.
+
+  RSCS PARM Statement Definition:
+
+  +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | Parameter | Value | Description                                                                                                                                                                                                                                                             | 
+  +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | BUFF      | 1024  | The maximum size RU (Request/Response Unit) this link can accept from VTAM. This value must fall within the range of 300 to 32765. The default is 1024. Increasing the buffer size results in more efficient data transmission because of reduced protocol handshaking. | 
+  +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | STREAMS   | 1     | The maximum number of files that RSCS can transmit simultaneously. The current version of the connector supports one simultaneous stream of data in each direction.                                                                                                     | 
+  +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  | TA        | 0     | The number of the transmission algorithm RSCS uses to determine how to select files for transmission. You must set this value to 0 to use IBM-supplied algorithms.                                                                                                      | 
+  +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Additional query words: rscs.config
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

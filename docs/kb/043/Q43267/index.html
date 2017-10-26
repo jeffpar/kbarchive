@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43267: How to Flush File Buffers from within a BASIC Program | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43267: How to Flush File Buffers from within a BASIC Program" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43267/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43267/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43267/","publisher":null,"image":null,"headline":"Q43267: How to Flush File Buffers from within a BASIC Program","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43267-how-to-flush-file-buffers-from-within-a-basic-program">Q43267: How to Flush File Buffers from within a BASIC Program</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43267
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S890403-182 B_BasicCom | mspl13_basic
+Last Modified: 14-DEC-1989
+
+The following information applies to QuickBASIC Versions 4.00, 4.00b,
+and 4.50, to Microsoft BASIC Compiler Versions 6.00 and 6.00b, and to
+Microsoft BASIC PDS Version 7.00.
+
+Flushing a file buffer to disk from within a BASIC program can be done
+with one of the following two methods using MS-DOS Interrupt CALLs:
+
+1. Using MS-DOS Version 3.30 or later, the MS-DOS Interrupt 21 Hex
+   with Function 68 Hex commits the file buffer to disk.
+
+2. Using MS-DOS earlier than Version 3.30, the MS-DOS Interrupt 21 Hex
+   with Function 45 Hex creates a duplicate file handle, followed by a
+   Interrupt 21 Hex with Function 3E Hex to close the duplicate file
+   handle, which commits the file buffer to disk.
+
+Using Interrupt 21 Hex with Function 68 Hex has the advantage of not
+failing due to an insufficient number of file handles, or not risking
+losing control of the file in network environments. Its disadvantage
+is its limitation to MS-DOS 3.30 or later.
+
+Code Example
+------------
+
+DECLARE SUB commit (filenum%)     'for use with DOS 2.10 &amp; up
+DECLARE SUB commit330 (filenum%)  'for use with DOS 3.30 &amp; up
+
+'The INCLUDE file name below would be 'QBX.BI' in the BASIC PDS 7.00
+'$INCLUDE: 'QB.BI'                'include file with regtype structure
+
+CLS
+DIM SHARED inregs AS RegType      'define inregs of regtype
+DIM SHARED outregs  AS RegType    'define outregs of regtype
+
+'-----------------------------------------------------------
+PRINT "press any key to open file"
+SLEEP                             'wait for keyboard input
+OPEN "b:stuff2" FOR RANDOM AS #1 LEN = 80
+PRINT "press a key to write to buffer"
+SLEEP
+a$ = "this and that"
+PUT #1, 1, a$                     'Write buffer
+
+'-----------------------------------------------------------
+PRINT "press any key to commit the buffer to disk"
+SLEEP                             'wait for keyboard input
+CALL commit330(1)                 'commit buffer for file 1
+
+'-----------------------------------------------------------
+PRINT "press any key to close file"
+SLEEP
+CLOSE 1
+END
+
+SUB commit (filenum%)
+inregs.ax = &amp;H4500                'set funct 45H duplicate handle
+inregs.bx = FILEATTR(filenum%, 2) 'set file handle to duplicate
+CALL interrupt(&amp;H21, inregs, outregs)  'call int 21H function 45H
+inregs.ax = &amp;H3E00                'set function 3EH close file
+inregs.bx = outregs.ax            'set duplicated handle to close
+CALL interrupt(&amp;H21, inregs, outregs) 'call int 21H function 3EH
+END SUB
+
+SUB commit330 (filenum%)
+inregs.ax = &amp;H6800                'function 68h
+inregs.bx = FILEATTR(filenum%, 2) 'place file handle in register BX
+inregs.flags = &amp;H0                'initialize flag values
+CALL interrupt(&amp;H21, inregs, outregs)  'call interrupt 21 to
+'                                       commit buffer
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

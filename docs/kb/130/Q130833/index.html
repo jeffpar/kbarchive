@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130833: How to Find If Two Object Variables Refer to One Instance | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130833: How to Find If Two Object Variables Refer to One Instance" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130833/","publisher":null,"image":null,"headline":"Q130833: How to Find If Two Object Variables Refer to One Instance","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130833-how-to-find-if-two-object-variables-refer-to-one-instance">Q130833: How to Find If Two Object Variables Refer to One Instance</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130833
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a way to compare two object variables and verify whether
+they are two different instances of a class or a pointer to the same object.
+
+MORE INFORMATION
+================
+
+Although the equal sign operator (=) is usually used to compare data, it is the
+assignment operator for object type variables. Using the equal sign creates a
+reference to an object. For example:
+
+     oObj1=CREATEOBJECT('Custom') &amp;&amp; Creates an instance of the Custom class
+     oObj2=oObj1                  &amp;&amp; Creates a reference to oObj1
+
+The same object can be modified through the oObj1 or the oObj2 references.
+
+There is no Visual FoxPro function you can use to see if two variables are
+pointing to the same object or if they are two different instances. However, you
+can build a user-defined function to do it.
+
+The following example code provides a user-defined function that compares two
+variables. The function returns false (.F.) if the two variables do not point to
+the same object, and it returns true (.T.) if one variable is a reference to the
+other variable. The two variables point to the same object if modifying a
+property of one object reference affects the other object variable. If the value
+is not affected, then the two object variables represent two different
+instances.
+
+Sample code
+-----------
+
+  oObj1=CREATEOBJECT('Custom')
+  oObj2=CREATEOBJECT('Custom')
+  oObj3=oObj1
+  ? SameObj(oObj1,oObj2)
+  ? SameObj(oObj1,oObj3)
+  RETURN
+
+  FUNCTION SameObj(oObject1,oObject2)
+  LOCAL lcObjName1,lcTempObjName,llMatch
+
+  IF NOT COMPOBJ(oObject1,oObject2)
+       RETURN .F.
+  ENDIF
+  lcObjName1=oObject1.Name
+  oObject1.Name='_'+lcObjName1
+  llMatch=(oObject1.Name==oObject2.Name)
+  oObject1.Name=lcObjName1
+  RETURN llMatch
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

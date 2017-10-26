@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157013: XCON: MTA Terminates Unexpectedly with Event 3080 and 9405 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157013: XCON: MTA Terminates Unexpectedly with Event 3080 and 9405" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157013/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157013/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157013/","publisher":null,"image":null,"headline":"Q157013: XCON: MTA Terminates Unexpectedly with Event 3080 and 9405","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157013-xcon-mta-terminates-unexpectedly-with-event-3080-and-9405">Q157013: XCON: MTA Terminates Unexpectedly with Event 3080 and 9405</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157013
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbusage exc4
+Last Modified: 22-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Message Transfer Agent (MTA) might terminate unexpectedly
+with the following sequence of events:
+
+  EventID:9405
+  Source:MSExchangeMTA
+  Description:
+  An unexpected error has occurred which may cause the MTA to terminate. Error:
+  Exception e0050c08 occurred at Address 77f3cbcd. [BASE OPERATOR 35] (16)
+
+  EventID:3080
+  Source:MSExchangeMTA
+  Description:
+  A fatal MTA database server error was encountered. [XAPI OPERATOR 35 245] (16)
+
+  EventID:2190
+  Source:MSExchangeMTA
+  Description:
+  An MTA database server error was encountered while creating a queue. Called
+  from XAPI. Procedure 245. Database error code: ODXAATRW - I/O Error on AAT
+  file (read/write). Queue name:
+  /O=MICROSOFT/OU=NA/CN=CONFIGURATION/CN=CONNECTIONS/CN=INTERNET MAIL CONNECTOR
+  (MARS-IMC). [DB Server OPERATOR 35 61] (14)
+
+  EventID:2127
+  Source:MSExchangeMTA
+  Description:
+  An MTA database server error was encountered. Error accessing object
+  attribute(AAT) on a Read/Write operation. Filename:
+  D:\EXCHSRVR\mtadata\.\DB000030.DAT. File operation: 0. Operating system
+  error: 4096. Referenced object: OPEN (00000000 =&gt; N/A). Referenced object
+  error 00000000. [0 DB Server OPERATOR 35] (14)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in the latest Microsoft Exchange Service
+Pack. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+You will need to restart the MTA and it should continue to process mail without
+further incident.
+
+The call stack when viewed through a debugger might be similar to the following:
+
+FramePtr  RetAddr   Param1   Param2   Param3   Function Name
+0698fd50  020b7ad1  e0050c08 00000000 00000000 KERNEL32!RaiseException+0x6a
+0698fdf4  02006647  00000010 00000029 00000c08 EMSMTA!sgplinfo+0xb301f
+0698fec8  020a99d1  00000029 00000c08 00000000 EMSMTA!sgpminfo+0x97e
+0698fef0  0211d03e  00000023 026a62c8 026a62ac EMSMTA!oxpginfo+0x47
+0698ff18  02126bbf  00000023 026ab844 00ad5bc6 EMSMTA!oxpuqdel+0x39c
+0698ff4c  020aacf8  00000023 0698ff8c 020a9d67 EMSMTA!oxpgrcvr+0x7c0e6
+0698ff58  020a9d67  00000023 00000578 00000023 EMSMTA!oxpgstrt+0x16
+0698ff68  0208fb3e  00ad5bc6 00000578 00000023 EMSMTA!oxpginit+0x70(...)
+0698ff8c  02016755  00ad5bc6 01000198 00000023 EMSMTA!oxpcmain+0xe(...)
+0698ffb8  77f26c2a  00000023 00ad5bc6 01000198 EMSMTA!sbpiwbep+0x5c
+0698ffec  00000000  020166f9 00000023 00000000
+KERNEL32!BaseThreadStart+0x61
+
+The final critical error occurred in oxpginfo(). This passed the error code (C08
+hex = 3080 decimal) up the call stack where the exception was raised. The
+unexpected termination of the MTA might have been caused by an XAPI entity
+deletion being performed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

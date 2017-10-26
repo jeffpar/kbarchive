@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q21831: Compatibility of Compiled BASIC with Microsoft Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q21831: Compatibility of Compiled BASIC with Microsoft Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/021/Q21831/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/021/Q21831/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/021/Q21831/","publisher":null,"image":null,"headline":"Q21831: Compatibility of Compiled BASIC with Microsoft Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q21831-compatibility-of-compiled-basic-with-microsoft-windows">Q21831: Compatibility of Compiled BASIC with Microsoft Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q21831
+Product(s): See article
+Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 21-SEP-1990
+
+This article discusses compatibility between Microsoft Windows and the
+following BASIC products and their compiled programs: QuickBASIC for
+the IBM PC, Microsoft BASIC Compiler versions 6.00 and 6.00b for
+MS-DOS, and Microsoft BASIC Professional Development System (PDS)
+versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+Windows 3.00 Compatibility
+--------------------------
+
+If you use Microsoft Windows version 3.00 with the special 386
+enhanced mode, you can run a BASIC program in a text window, which you
+could not do in earlier versions of Windows. In 386 enhanced mode,
+BASIC programs can run as background processes in the text window. In
+earlier Windows releases, you could only run BASIC programs as
+full-screen processes. However, in both Windows 3.00 and in earlier
+versions, you cannot run the QB.EXE or QBX.EXE editor in a window; you
+must instead run QB.EXE or QBX.EXE as a full-screen process.
+
+In Windows 3.00 standard mode (WIN /r) and real mode (WIN /s), you can
+run a compiled program, QB.EXE, or QBX.EXE only as full-screen
+processes, which means that they won't run in the background. You
+cannot press the Windows key combinations CTRL+ESC or ALT+ESC to get
+out of the full-screen BASIC program. Furthermore, other Windows
+processes will be stopped while you run the full-screen process. You
+must terminate the BASIC program to return to Windows.
+
+Windows 1.x, 2.x Compatibility
+------------------------------
+
+Compiled BASIC programs, QB.EXE, and QBX.EXE run only as "bad
+applications" in Microsoft Windows versions 1.x and 2.x. "Bad
+applications" require you to create a PIF (Program Information File)
+using the Windows PIFEDIT.EXE program. When you make a PIF for QB.EXE,
+QBX.EXE, or BASIC compiled programs, you need to specify that the
+program directly modifies the screen, the keyboard, COM1, COM2, and
+memory. QuickBASIC version 4.00, 4.00b, and 4.50 programs have been
+successfully tested under Microsoft Windows 1.x and 2.x.
+
+The QB.PIF or QBX.PIF file provided on the QuickBASIC 4.00, 4.00b, and
+4.50, BASIC compiler 6.00 and 6.00b, or BASIC PDS 7.00 and 7.10
+release disks can be studied in PIFEDIT.EXE as a guideline for making
+your own PIF files for your compiled .EXE programs.
+
+Neither QuickBASIC version 3.00 and its earlier versions nor Microsoft
+BASIC Compiler 5.36 or earlier versions have been tested under
+Microsoft Windows. Therefore, they may or may not run successfully as
+bad applications.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

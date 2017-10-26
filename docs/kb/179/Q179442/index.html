@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q179442: How to Configure a Firewall for Domains and Trusts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q179442: How to Configure a Firewall for Domains and Trusts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/179/Q179442/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/179/Q179442/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/179/Q179442/","publisher":null,"image":null,"headline":"Q179442: How to Configure a Firewall for Domains and Trusts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q179442-how-to-configure-a-firewall-for-domains-and-trusts">Q179442: How to Configure a Firewall for Domains and Trusts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q179442
+Product(s): Microsoft Windows NT
+Version(s): 2000,4.0
+Operating System(s): 
+Keyword(s): kbenv kbnetwork kbtool
+Last Modified: 23-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure a firewall for domains and trusts.
+
+MORE INFORMATION
+================
+
+To establish a domain trust or secure channel across a firewall, the following
+ports must be opened. Note that there may be hosts functioning with both client
+and server roles on both sides of the firewall. Because of this, ports rules may
+need to be mirrored.
+
+Windows NT
+----------
+
++--------------------------------------------------------------+
+| Client Port(s) | Server Port | Service                       | 
++--------------------------------------------------------------+
+| 1024-65535/TCP | 135/TCP     | RPC *                         | 
++--------------------------------------------------------------+
+| 137/UDP        | 137/UDP     | NetBIOS Name                  | 
++--------------------------------------------------------------+
+| 138/UDP        | 138/UDP     | NetBIOS Netlogon and Browsing | 
++--------------------------------------------------------------+
+| 1024-65535/TCP | 139/TCP     | NetBIOS Session               | 
++--------------------------------------------------------------+
+| 1024-65535/TCP | 42/TCP      | WINS Replication              | 
++--------------------------------------------------------------+
+
+Windows 2000
+------------
+
+For a mixed-mode domain with either Windows NT domain controllers or legacy
+clients or trust relationship between two windows 2000 domain controllers which
+are not in the same forest, all of the preceding ports for Windows NT may need
+to be opened in addition to the following ports:
+
++---------------------------------------------------+
+| Client Port(s)        | Server Port | Service     | 
++---------------------------------------------------+
+| 1024-65535/TCP        | 135/TCP     | RPC *       | 
++---------------------------------------------------+
+| 1024-65535/TCP/UDP    | 389/TCP/UDP | LDAP        | 
++---------------------------------------------------+
+| 1024-65535/TCP        | 636/TCP     | LDAP SSL    | 
++---------------------------------------------------+
+| 1024-65535/TCP        | 3268/TCP    | LDAP GC     | 
++---------------------------------------------------+
+| 1024-65535/TCP        | 3269/TCP    | LDAP GC SSL | 
++---------------------------------------------------+
+| 53,1024-65535/TCP/UDP | 53/TCP/UDP  | DNS         | 
++---------------------------------------------------+
+| 1024-65535/TCP/UDP    | 88/TCP/UDP  | Kerberos    | 
++---------------------------------------------------+
+| 1024-65535/TCP        | 445/TCP     | SMB         | 
++---------------------------------------------------+
+
+NOTE: There are specific requirements for RPC communication beyond what is listed
+in this table. For additional information about how to configure RPC
+communications for a firewall, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q154596 Configuring RPC Dynamic Port Allocation to Work With Firewall
+
+By default, Windows 2000 DNS servers use ephemeral client-side ports when they
+query other DNS servers. However, this behavior may be modified with a specific
+registry setting that is described in the following article in the Microsoft
+Knowledge Base:
+
+  Q260186 SendPort DNS Registry Key Does Not Work as Expected
+
+
+Alternatively, you can establish a trust through the Point-to-Point Tunneling
+Protocol (PPTP) compulsory tunnel, and this will limit the number of ports that
+the firewall will need to open. For PPTP, the following ports must be enabled:
+
++-----------------------------------------+
+| Client Ports   | Server Port | Protocol | 
++-----------------------------------------+
+| 1024-65535/TCP | 1723/TCP    | PPTP     | 
++-----------------------------------------+
+
+In addition, you would need to enable IP PROTOCOL 47 (GRE).
+
+Additional query words: tcpip
+
+======================================================================
+Keywords          : kbenv kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : :2000,4.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

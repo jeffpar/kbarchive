@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80124: Retrieving the Names of Simultaneous Tasks Under Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80124: Retrieving the Names of Simultaneous Tasks Under Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80124/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80124/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80124/","publisher":null,"image":null,"headline":"Q80124: Retrieving the Names of Simultaneous Tasks Under Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80124-retrieving-the-names-of-simultaneous-tasks-under-windows">Q80124: Retrieving the Names of Simultaneous Tasks Under Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80124
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are situations when it is necessary for an application to obtain a list of
+all applications that are running in the Windows environment at a particular
+time.
+
+In Windows 3.0, instead of using the EnumWindows() function and an
+application-supplied callback function to enumerate all parent windows, the
+application can retrieve a handle to the first window in the task list and walk
+through the list to obtain the names of all windows in the task list.
+
+In Windows 3.1, however, an application should instead use the ToolHelp Library
+functions. More specifically, use TaskFirst(), TaskNext(), ModuleFirst(), and
+ModuleNext().
+
+NOTE: Since the ToolHelp functions work in Windows 3.0 and since ToolHelp is
+itself a redistributable library, these functions can be safely used in Windows
+3.0 also.
+
+MORE INFORMATION
+================
+
+The most efficient way to retrieve the name of each task running under Windows
+3.0 is to use the GetWindow() function. GetWindow (hwnd, GW_HWNDFIRST) provides
+the handle to the first window in the task list. The application can walk
+through the task list by calling GetWindow (hwndCurrent, GW_HWNDNEXT). The
+following example demonstrates how to obtain a handle to each top-level window.
+The GetWindowText() function provides the name of each window from its handle.
+
+      hwndNext = GetWindow(hWnd, GW_HWNDFIRST);
+      /* Where: hWnd is the original/current window. GW_HWNDFIRST will
+         return the first sibling window for a child window, otherwise
+         it returns the first top-level window in the system's list of
+         top-level windows */ 
+      while (hwndNext)
+      {
+         if ((hwndNext != hWnd) &amp;&amp;  // Do not get this application's
+                                    // name.
+             (IsWindowVisible(hwndNext)) &amp;&amp;
+             (!GetWindow(hwndNext, GW_OWNER)))
+         {
+            if (GetWindowText(hwndNext, (LPSTR)szTemp, sizeof(szTemp)))
+            {
+              // This is a valid top-level window handle.
+              // Its name is in szTemp...
+            }
+         }
+         hwndNext = GetWindow(hwndNext, GW_HWNDNEXT);
+      }
+
+The code above will retrieve the name of each visible window. To also retrieve
+the names of invisible windows, remove the call to IsWindowVisible().
+
+Additional query words: no32bit 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

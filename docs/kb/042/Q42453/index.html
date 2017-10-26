@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q42453: Clarification of fcvt() Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q42453: Clarification of fcvt() Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/042/Q42453/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/042/Q42453/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/042/Q42453/","publisher":null,"image":null,"headline":"Q42453: Clarification of fcvt() Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q42453-clarification-of-fcvt-function">Q42453: Clarification of fcvt() Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q42453
+Product(s): See article
+Version(s): 5.00 5.10 | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | s_quickc | mspl13_c
+Last Modified: 17-MAY-1989
+
+This article is meant to clarify the description of the fcvt()
+function in the "Microsoft C for the MS-DOS Operating System: Run-Time
+Library Reference," Pages 251-252.
+
+The fcvt() function converts a floating-point number to a
+null-terminated character string. The number of digits converted
+depends on the second parameter passed. This second parameter is
+called "count" for the remainder of this article.
+
+The function is designed to return all the digits to the left of the
+decimal point, and then count digits to the right. Once the string is
+converted, all leading zeros are removed unless the number passed was
+zero (see Example 4 below). The string will be terminated with the
+"/0" character. The decimal point is not included in the string, and
+its position can be obtained from the third parameter (see the
+documentation).
+
+Based on this description, the following examples apply. In all cases,
+count = 8. The examples are as follows:
+
+1. Number passed: 3.667      String returned: "366700000\0"
+
+   Nine digits are returned: one for the number to the left of the
+   decimal point, eight more because of the count parameter.
+
+2. Number passed: 3.67E-08   String returned: "3\0"
+
+   In this case, only "3" is returned because after the number is
+   converted, all the leading zeros are removed.
+
+3. Number passed: 1.023E-12  String returned: "\0"
+
+   In this case, a NULL string is returned because only zeros are left
+   after the conversion, and these are all removed from the resulting
+   string. If error checking were being performed, this would indicate
+   a conversion underflow.
+
+4. Number passed: 0          String returned: "00000000\0"
+
+   This is the only "special" case. Eight zeros are returned so that
+   error checking can be performed easily.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199656: XIMS: How to Stop Spam Mail Messages from Using IMS Relay Agent | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199656: XIMS: How to Stop Spam Mail Messages from Using IMS Relay Agent" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199656/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199656/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199656/","publisher":null,"image":null,"headline":"Q199656: XIMS: How to Stop Spam Mail Messages from Using IMS Relay Agent","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199656-xims-how-to-stop-spam-mail-messages-from-using-ims-relay-agent">Q199656: XIMS: How to Stop Spam Mail Messages from Using IMS Relay Agent</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199656
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 16-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Server Internet Mail Service may be configured as a
+publicly accessible relay mail. In this configuration, the outside users can use
+the relay Internet Mail Service as an agent for unsolicited commercial e-mail
+(UCE or spam), flooding others with many copies of the same message. Spam is an
+attempt to force messages on people who would not otherwise choose to receive
+them. This article illustrates two possible workarounds for this problem.
+
+MORE INFORMATION
+================
+
+Scenario 1
+----------
+
+This workaround requires another Internet Mail Service to be installed and
+dedicated for outbound mail. Essentially, it queues all non-internal mail to a
+dead IP address, which, hopefully, would allow the administrators to track where
+these Internet messages are coming from.
+
+1. Open the properties for the Internet Mail Service on the server accepting
+  inbound mail.
+
+2. On the Connections tab for the server, select the option to forward all
+  messages to the host, and enter the IP address of a valid computer on the
+  network that will not accept an SMTP connection (for example, 2.2.2.2, if
+  that computer is a non-SMTP host).
+
+3. Click the "Specify by email domains" button.
+
+4. Add a domain of "sample.microsoft.com," and forward to the IP address of
+  another Exchange Server configured for outbound SMTP message delivery.
+
+5. Repeat steps 2 through 4 for all other inbound domains.
+
+6. Stop and restart the Internet Mail Service.
+
+Scenario 2
+----------
+
+This workaround restricts the Internet Mail Service from routing mail to your
+hosts' IP address. This applies only if you have Exchange 5.5. For additional
+information, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q196626 Restricting Routing in the Internet Mail Service
+
+1. Install Service Pack 1 or later for Exchange Server 5.5.
+
+2. Select the Connections applet from the Exchange Server Administrator program,
+  and go to the Routing property page of the Internet Mail Service.
+
+3. Select "Reroute incoming SMTP mail" (required for POP3/IMAP4 support), and
+  then select Routing Restrictions.
+
+4. In "Specify the hosts and clients that can route mail when the following
+  conditions are met" dialog box, choose your hosting option, and then click
+  Add to specify restricted IP addresses.
+
+Additional query words: Spam UCE IMS relay restrictions restrict
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

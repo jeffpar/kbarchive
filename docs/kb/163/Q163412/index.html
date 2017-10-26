@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163412: FIX: Web Browser Position is Wrong on Pageframe Page | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163412: FIX: Web Browser Position is Wrong on Pageframe Page" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163412/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163412/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163412/","publisher":null,"image":null,"headline":"Q163412: FIX: Web Browser Position is Wrong on Pageframe Page","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163412-fix-web-browser-position-is-wrong-on-pageframe-page">Q163412: FIX: Web Browser Position is Wrong on Pageframe Page</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163412
+Product(s): Microsoft FoxPro
+Version(s): 5.0a 5.0
+Operating System(s): 
+Keyword(s): kbinterop kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+Last Modified: 23-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Visual FoxPro for Windows version 5.0 form contains a pageframe, and one
+of the pages (other than page 1) of the pageframe has an OLE container control
+that houses the Microsoft Web Browser control, that container control will
+appear on the page in the wrong location at runtime.
+
+It will be positioned to the upper left of where it was positioned at design
+time. Because it is still located on the pageframe, its dimensions will be
+shrunken so that it fits on the page.
+
+If the Web Browser is located on the first page of the pageframe, its loading
+will throw the error:
+
+  "OLE error code 0x80004005. Unspecified error."
+
+There is no known workaround for this error. The control will be drawn on page 1
+but will be larger than intended, obscuring the tabs for the remaining pages in
+the pageframe.
+
+RESOLUTION
+==========
+
+The following workaround applies only to placement of the Web Browser of pages
+other than page 1 of the pageframe control.
+
+The location of the OLEContainer control can be reset in the Activate event
+method of the page of the pageframe containing the control. An example of the
+code to do this follows:
+
+        This.Olecontrol1.Left = 0
+
+This workaround will fail if the active page from which you move contains any of
+the OCX (ActiveX) controls that install with Visual FoxPro. If you switch from a
+page with an ActiveX control to the page with the Web Browser, the error will
+cause the Web Browser to locate at the upper left of where it should be.
+
+To position the Web Browser correctly, you must first switch from a page with an
+ActiveX control to a page without one, and then to the page with the Web Browser
+control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft product listed at the
+beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Add a pageframe to the form.
+
+3. Add a web browser (Microsoft Web Browser) control to page 2 of the pageframe.
+  Size it so it takes up most of the page.
+
+  The steps to add this are as follows:
+
+  a. Right-click on the pageframe, and select "Edit" on the context menu.
+
+  b. Click the tab for page 2.
+
+  c. Click the OLEContainer control tool on the toolbar.
+
+  d. Position the mouse at the upper left of page 2.
+
+  e. Drag the mouse to the lower-right corner of page 2.
+
+  f. From the Insert Object dialog box, click the "Insert Control" option
+     button, and then select "Microsoft Web Browser Control" from the list. If
+     you do not see that option, install Microsoft Internet Explorer 3.01 by
+     downloading it from the Internet. It will install the Web Browser in your
+     Windows\System (on Windows 95) or Windows\System32 (for Windows NT)
+     directory. The file name of the control is shdocvw.dll.
+
+4. Add the following code to the init event method of the OLEContainer control
+  (OLEContainer1):
+
+        This.navigate("http://www.microsoft.com")
+
+5. Run the form and click the tab for page 2.
+
+Additional query words: kbvfp600fix
+
+======================================================================
+Keywords          : kbinterop kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : 5.0a 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

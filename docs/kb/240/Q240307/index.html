@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q240307: BUG: Unable to Change Preferred Help Collection on Windows 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q240307: BUG: Unable to Change Preferred Help Collection on Windows 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/240/Q240307/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/240/Q240307/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/240/Q240307/","publisher":null,"image":null,"headline":"Q240307: BUG: Unable to Change Preferred Help Collection on Windows 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q240307-bug-unable-to-change-preferred-help-collection-on-windows-2000">Q240307: BUG: Unable to Change Preferred Help Collection on Windows 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q240307
+Product(s): Microsoft Developer Network
+Version(s): WINDOWS:6.0; winnt:
+Operating System(s): 
+Keyword(s): kbHTMLHelp kbMSDN kbOSWin2000bug kbVS600bug _IK kbGrpDSTools
+Last Modified: 18-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Developer Network (MSDN) 
+- the operating system: Microsoft Windows 2000 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to change the preferred Help collection for Visual Studio may fail on
+Windows 2000. When you start the MSDN Library Collection Settings tool
+introduced by MSDN July 1999, the following error appears:
+
+  MSDN Library Collection Settings: There are no MSDN collections installed on
+  this computer.
+
+When you try to change the collection through the Visual C++ integrated
+development environment, no error message will appear but the setting does not
+change.
+
+CAUSE
+=====
+
+This problem occurs when the user attempting to change the collection settings
+is a member of the Users group on the computer running Windows 2000. Users don't
+have the permissions necessary to change the registry setting that determines
+the preferred collection.
+
+RESOLUTION
+==========
+
+An Administrator or power user needs to log on and change the collection
+settings.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+When more than one version of the MSDN Library is installed on a computer, you
+can change the preferred collection used by Visual Studio. This determines which
+Library is displayed when you access Help from Visual Studio applications.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Log on to a Windows 2000 computer as an administrator.
+
+
+2. Install Visual Studio 6.0. Select Visual C++ as one of the products to
+  install.
+
+3. Install two versions of the MSDN Library. For example, install April 1999 and
+  July 1999.
+
+4. Log off of the computer, and then log on as a user who is a member of the
+  Users group.
+
+5. Start Visual C++.
+
+6. From the Tools menu, click Options.
+
+7. On the Help System tab, change the Preferred Collection. Click OK.
+
+8. Return to the Options dialog box and note that the Help System tab does not
+  reflect the change made in the previous step.
+
+9. Quit Visual C++.
+
+10. On the Start menu, point to Programs, and then point to Microsoft Developer
+  Network.
+
+11. Click MSDN Library - Collection Settings. The error message described above
+  appears.
+
+REFERENCES
+==========
+
+For additional information about problems that members of the Users group may
+have with MSDN, please click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q240307 BUG: MSDN Library Setup Error in the Registration Database
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHTMLHelp kbMSDN kbOSWin2000bug kbVS600bug _IK kbGrpDSTools 
+Technology        : kbVCsearch kbOSWin2000 kbVBSearch kbAudDeveloper kbOSWinSearch kbZNotKeyword6 kbMSDNSearch kbZNotKeyword2 kbVB600Search kbVB600 kbVC600 kbVC32bitSearch
+Version           : WINDOWS:6.0; winnt:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137154: FIX: ClassWizard Generates Bad Code for Tree View Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137154: FIX: ClassWizard Generates Bad Code for Tree View Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137154/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137154/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137154/","publisher":null,"image":null,"headline":"Q137154: FIX: ClassWizard Generates Bad Code for Tree View Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137154-fix-classwizard-generates-bad-code-for-tree-view-messages">Q137154: FIX: ClassWizard Generates Bad Code for Tree View Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137154
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.1
+Operating System(s): 
+Keyword(s): kbwizard kbMFC kbTreeView kbVC200bug kbVC210bug kbVC220bug kbVC400fix kbGrpDSMFCATL kbN
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The ClassWizard, used with:
+   - Microsoft Visual C++, 32-bit Editions, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Class Wizard generates the following incorrect code for the
+TVN_BEGINLABELEDIT, TVN_ENDLABELEDIT, TVN_GETDISPINFO, TVN_SETDISPINFO, and
+TVN_KEYDOWN Tree View Control notification messages.
+
+  void CMyDialog::OnXXXXtreeview1(NMHDR* pNMHDR, LRESULT* pResult)
+  {
+     NM_TREEVIEW* pNMTreeView = (NM_TREEVIEW*)pNMHDR;
+     // TODO: Add your control notification hander code here
+     *pResult = 0;
+  }
+
+RESOLUTION
+==========
+
+For TVN_BEGINLABELEDIT, TVN_ENDLABELEDIT, TVN_GETDISPINFO, and TVN_SETDISPINFO,
+the pNMHDR parameter should be cast to a TV_DISPINFO*. For example:
+
+  void CMyDialog::OnXXXXtreeview1(NMHDR* pNMHDR, LRESULT* pResult)
+  {
+     TV_DISPINFO* pTVDispInfo = (TV_DISPINFO*)pNMHDR;
+     // TODO: Add your control notification hander code here
+     *pResult = 0;
+  }
+
+For TVN_KEYDOWN, the pNMHDR parameter should be cast to a TV_KEYDOWN*. For
+example:
+
+  void CMyDialog::OnXXXXtreeview1(NMHDR* pNMHDR, LRESULT* pResult)
+  {
+     TV_KEYDOWN* pTVKeyDown = (TV_KEYDOWN*)pNMHDR;
+     // TODO: Add your control notification hander code here
+     *pResult = 0;
+  }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 4.0.
+
+Additional query words: 2.10
+
+======================================================================
+Keywords          : kbwizard kbMFC kbTreeView kbVC200bug kbVC210bug kbVC220bug kbVC400fix kbGrpDSMFCATL kbNoUpdate kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : winnt:2.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

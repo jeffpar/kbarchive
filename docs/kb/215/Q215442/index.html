@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q215442: PRB: InteractiveChange Event of List Box Does Not Execute After | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q215442: PRB: InteractiveChange Event of List Box Does Not Execute After" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/215/Q215442/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/215/Q215442/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/215/Q215442/","publisher":null,"image":null,"headline":"Q215442: PRB: InteractiveChange Event of List Box Does Not Execute After","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q215442-prb-interactivechange-event-of-list-box-does-not-execute-after">Q215442: PRB: InteractiveChange Event of List Box Does Not Execute After</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q215442
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbContainer kbCtrl kbvfp600
+Last Modified: 06-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The InteractiveChange event of a list box does not execute when the mouse button
+is clicked on a list box item, held while the mouse pointer is dragged to
+another item in the list box, and then released.
+
+MORE INFORMATION
+================
+
+Using Visual FoxPro 3.0 or Visual FoxPro 5.0, depressing the left-mouse button
+with the mouse pointer on a list box item, dragging the mouse pointer to another
+item in the list box and then releasing the mouse button causes the
+ListBox.InteractiveChange event to execute. However, the InteractiveChange event
+does not fire in Visual FoxPro 6.0.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file called "List.prg" using the following code:
+
+  PUBLIC ox
+  ox=CREATEOBJECT('listtest')
+  ox.SHOW
+  DEFINE CLASS listtest AS FORM
+     HEIGHT = 168
+     WIDTH = 169
+     DOCREATE = .T.
+     AUTOCENTER = .T.
+     CAPTION = "Form1"
+     NAME = "Form1"
+
+     ADD OBJECT list1 AS LISTBOX WITH ;
+        HEIGHT = 120, ;
+        LEFT = 24, ;
+        TOP = 24, ;
+        WIDTH = 120, ;
+        NAME = "List1"
+
+     PROCEDURE INIT
+        FOR i=1 TO 7
+           THISFORM.list1.ADDITEM(REPLICATE('0', ;
+              4-LEN(ALLTRIM(STR(i))))+ALLTRIM(STR(i)))
+        NEXT
+     ENDPROC
+
+     PROCEDURE list1.INTERACTIVECHANGE
+        =MESSAGEBOX(this.value,64,'InteractiveChange')
+     ENDPROC
+  ENDDEFINE
+
+2. Click the left-mouse button on list box item "0001."
+
+3. While holding the left-mouse button down, move the mouse pointer to list box
+  item "0005."
+
+4. Release the left-mouse button.
+
+5. Note that the code associated with the list1.INTERACTIVECHANGE event is not
+  executed.
+
+  Using Visual FoxPro 3.x and Visual FoxPro 5.x, the list1.INTERACTIVECHANGE
+  event code is executed.
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbContainer kbCtrl kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

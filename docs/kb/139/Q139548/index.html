@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139548: How to Use the GetDiskFreeSpace API Call | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139548: How to Use the GetDiskFreeSpace API Call" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139548/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139548/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139548/","publisher":null,"image":null,"headline":"Q139548: How to Use the GetDiskFreeSpace API Call","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139548-how-to-use-the-getdiskfreespace-api-call">Q139548: How to Use the GetDiskFreeSpace API Call</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139548
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 30-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By using the GetDiskFreeSpace API call, you can determine how much disk space a
+drive has, how much is used, and how much is free. This article explains how to
+use and call the Win32 GetDiskFreeSpace API.
+
+MORE INFORMATION
+================
+
+In many cases, such as backing up or restoring user data, you need to know
+various characteristics about the media with which you are working (such as
+whether or not it is fixed or removable) and about the amount of available space
+on that media.
+
+By using the GetDiskFreeSpace API call, you can derive the low-level information
+about the disk (such as bytes per sector and sectors per cluster), and then use
+that information for your calculations.
+
+The following code demonstrates the syntax and use of this API call and gives
+some of the more common calculations you may need to perform.
+
+Code Sample
+-----------
+
+  **---------------------------------------------------------------**
+  ** Program: Getspace.prg                                         **
+  ** Purpose: Demonstrates how to declare and call the Win32       **
+  **          GetDiskFreeSpace API.                               **
+  **---------------------------------------------------------------**
+  PUBLIC  lpRootPathName, ;
+          lpSectsPerCluster, ;
+          lpBytesPerSector, ;
+          lpNumberOfFreeClusters, ;
+          lpTotalNumberOfClusters
+
+  lpRootPathName       = "A:\"
+  lpSectsPerCluster    = 0
+  lpBytesPerSect       = 0
+  lpNumOfFreeClusters  = 0
+  lpTotNumOfClusters   = 0
+
+  DECLARE INTEGER GetDiskFreeSpace IN Win32API AS GetDiskSpace ;
+          STRING  @lpRootPathName, ;
+          INTEGER @lpSectsPerCluster, ;
+          INTEGER @lpBytesPerSect, ;
+          INTEGER @lpNumOfFreeClusters, ;
+          INTEGER @lpTotNumOfClusters
+
+  RetVal=GetDiskSpace(@lpRootPathName, @lpSectsPerCluster, @lpBytesPerSect, ;
+          @lpNumOfFreeClusters, @lpTotNumOfClusters)
+
+  DEFINE WINDOW ShowInfo FROM 0,0 TO 12,70 ;
+          FLOAT CLOSE ;
+          TITLES "Drive Information for " + ;
+          ALLTRIM(lpRootPathName) ;
+          FONT "Courier",10
+
+  ACTIVATE WINDOW ShowInfo
+  MOVE WINDOW ShowInfo CENTER
+
+  @ 0,1 SAY "Drive &amp; path name            : " + ;
+     ALLTRIM(lpRootPathName)
+  @ 1,1 SAY "Sectors per cluster          : " + ;
+     ALLTRIM(STR(lpSectsPerCluster))
+  @ 2,1 SAY "Bytes per Sector             : " + ;
+     ALLTRIM(STR(lpBytesPerSect))
+  @ 3,1 SAY "Number of free clusters      : " + ;
+     ALLTRIM(STR(lpNumOfFreeClusters))
+  @ 4,1 SAY "Total number of clusters     : " + ;
+     ALLTRIM(STR(lpTotNumOfClusters))
+  @ 5,1 SAY "==================================================="
+  @ 6,1 SAY "Total disk space             : " + ;
+     ALLTRIM(STR(lpSectsPerCluster * lpBytesPerSect * lpTotNumOfClusters))
+  @ 7,1 SAY "Free disk space              : " + ;
+     ALLTRIM(STR(lpSectsPerCluster * lpBytesPerSect * lpNumOfFreeClusters))
+  @ 8,1 SAY "Used disk space              : " + ;
+     ALLTRIM(STR(lpSectsPerCluster * lpBytesPerSect * ;
+     (lpTotNumOfClusters - lpNumOfFreeClusters)))
+
+  **--------------------------&lt;End Code&gt;---------------------------**
+
+When this code is run on a 1.44-megabyte floppy disk, the following output is
+what you would get if the floppy disk is a new, formatted floppy disk that
+contains no data:
+
+Drive &amp; path name        : A:\ 
+Sectors per cluster      : 1
+Bytes per sector         : 512
+Number of free clusters  : 2847
+Total number of clusters : 2847
+===================================
+Total disk space         : 1457664
+Free disk space          : 1457664
+Used disk space          : 0
+
+Using this API call, you can quickly and easily determine how much disk space you
+have available for your program. A related disk API (GetVolumeInformation)
+provides information about the disk physical characteristics such as the file
+system and file compression.
+
+For additional information on this API function, please see the
+"GetDiskFreeSpace" topic in the Win32API help file. Note that this help file is
+available only on the compact disc version of Visual FoxPro; it is not shipped
+with the disk version. For more information, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q139172 PRB: Visual FoxPro CD-ROM Compact Disc Includes Extra Files
+
+For information about the DECLARE - DLL command, please search the Visual FoxPro
+Help file.
+
+Additional query words: VFoxWin drive volume space free attributes
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

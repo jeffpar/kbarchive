@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172359: PPT7: Error Editing Graph in PowerPoint 95 &amp; 97 Dual Format File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172359: PPT7: Error Editing Graph in PowerPoint 95 &amp; 97 Dual Format File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172359/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172359/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172359/","publisher":null,"image":null,"headline":"Q172359: PPT7: Error Editing Graph in PowerPoint 95 &amp; 97 Dual Format File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172359-ppt7-error-editing-graph-in-powerpoint-95--97-dual-format-file">Q172359: PPT7: Error Editing Graph in PowerPoint 95 &amp; 97 Dual Format File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172359
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:7.0
+Operating System(s): 
+Keyword(s): kbgraph
+Last Modified: 17-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft PowerPoint 97 for Windows Service Release 1 (SR-1) 
+- Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you save a PowerPoint 97 SR-1 presentation with an embedded graph in the
+PowerPoint 95 &amp; 97 dual file format, open the presentation in Microsoft
+PowerPoint, version 7.0, and then double-click the graph object, you may receive
+the following error message:
+
+  The server application, source file, or item cannot be found. Make sure the
+  application is properly installed, and that it has not been deleted, moved,
+  or renamed.
+
+CAUSE
+=====
+
+This error occurs when you save a presentation in the PowerPoint 95 &amp; 97
+dual format. PowerPoint 97 SR-1 contains a new feature that converts Graph 97
+objects to the Graph 5.0 format. However, you cannot use this feature with the
+PowerPoint 95 &amp; 97 dual format. Because you cannot use Graph 5.0 to edit
+Graph 97 objects, you receive this error message. (Graph 5.0 is included with
+PowerPoint versions 4.0 and 7.0.)
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. In PowerPoint 97 SR-1, click Save As on the File menu.
+
+2. In the Save As Type list, select one of the following file formats:
+
+  PowerPoint 4.0 with Graph 5.0 (*.ppt)
+  PowerPoint 95 with Graph 5.0 (*.ppt)
+
+3. Type a new file name.
+
+4. Click Save.
+
+NOTE: If you edit any of the graphs using Graph 5.0, and then reopen the
+presentation in PowerPoint 97 SR-1, PowerPoint automatically converts the
+objects to Graph 97 format. Repeat steps 1 through 4 when you save the
+presentation again.
+
+STATUS
+======
+
+This feature is under review and will be considered for inclusion in a future
+release.
+
+Additional query words: graph97 graph8 crossprod 8.00 msgraph downrev drs previous version chart cannot open fails error
+
+======================================================================
+Keywords          : kbgraph 
+Technology        : kbPowerPtSearch kbPowerPt95 kbPowerPt97 kbZNotKeyword2 kbPowerPt97Search kbPowerPt95Search kbPowerPt97SR1
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbinfo
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

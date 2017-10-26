@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q30517: OFFSET Operator Is Segment Relative | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q30517: OFFSET Operator Is Segment Relative" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/030/Q30517/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/030/Q30517/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/030/Q30517/","publisher":null,"image":null,"headline":"Q30517: OFFSET Operator Is Segment Relative","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q30517-offset-operator-is-segment-relative">Q30517: OFFSET Operator Is Segment Relative</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q30517
+Product(s): Microsoft Macro Assembler
+Version(s): 5.1,6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), versions 5.1, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Macro Assembler version 5.10 The OFFSET operator is segment
+relative. The GROUP operator must be used to make the OFFSET operator group
+relative. In Microsoft Macro Assembler version 6.00 The OFFSET operator is group
+relative by default. This default can be over ridden with the M510 and OFFSET:
+options.
+
+MORE INFORMATION
+================
+
+The following is an example of using the OFFSET operator:
+
+  group_1 GROUP seg_1,seg_2,seg_3
+
+  seg_1 SEGMENT word public 'data'
+  assume ds:group_1
+          dw  0
+  item1   dw  20 dup(0)
+
+  seg_1 ends
+
+  seg_2 SEGMENT word public 'code'
+  assume cs:group_1
+
+  func1   PROC    NEAR
+          mov ax, offset item1
+          lea ax, item1
+          mov ax, offset group_1:item1
+          mov ax, offset item2
+          lea ax, item2
+          mov ax, offset group_1:item2
+
+  func1   ENDP
+
+  seg_2  ENDS
+
+  seg_3  SEGMENT  word  public  'data2'
+  assume ds:group_1
+  item2   dw  0
+  seg_3  ENDS
+
+In MASM 5.1 the following will occur: In the first move instruction, item1 will
+have the offset of 0002 relative to the start of seg_1 segment. The next move
+instruction is using the group name to force the evaluation of item1 relative to
+the start of the group. The offset for item1 will be 0002 because seg_1 is the
+first segment in the group.
+
+The third move instruction containing item2 will have an offset 0002 relative to
+the start of the seg_3 segment. Due to the alignment of the seg_3 segment, which
+is word aligned, the offset for item2 is not 0000. The fourth move instruction
+forces the item2 offset to be calculated from the beginning of the group. The
+seg_3 segment is not the first segment in the group but the third segment. The
+offset for item2 will be 0042.
+
+In MASM 6.0, the first two OFFSET calculations will the same (group relative) and
+the second two OFFSET calulations will be tha same (OFFSET item2 == OFFSET
+group_1:item2). If OPTION M510 is used, the code will behave as specified for
+MASM 5.10.
+
+Additional query words: kbinf 5.10 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600
+Version           : :5.1,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

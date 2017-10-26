@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201126: SMS: Troubleshooting Connectivity to the SMS Site Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201126: SMS: Troubleshooting Connectivity to the SMS Site Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201126/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201126/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201126/","publisher":null,"image":null,"headline":"Q201126: SMS: Troubleshooting Connectivity to the SMS Site Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201126-sms-troubleshooting-connectivity-to-the-sms-site-database">Q201126: SMS: Troubleshooting Connectivity to the SMS Site Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201126
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200kbfaq
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides information on troubleshooting connectivity to a Microsoft
+Systems Management Server 2.0 site database using the Systems Management Server
+Administrator console.
+
+Systems Management Server 2.0 uses a combination of the following security
+mechanisms to enforce security for a Systems Management Server site database:
+
+- File System
+
+- Windows Management Instrumentation (WMI), Microsoft's implementation of
+  Web-Based Enterprise Management (WBEM)
+
+- Systems Management Server Provider
+
+All security options must be properly configured to enable access to the Systems
+Management Server site database.
+
+MORE INFORMATION
+================
+
+The Systems Management Server Administrator console is hosted by the Microsoft
+Management Console snap-in, a framework for hosting management tools. A console
+file (that has an extension of .msc) is used to define the contents of the
+Microsoft Management Console snap-in, and can be customized for particular
+tasks.
+
+To verify access to the Systems Management Server site database using the Systems
+Management Server Administrator Console, check the following:
+
+- If a Windows NT computer in a remote domain tries to connect to a Microsoft
+  Systems Management Server 2.0 site in a different untrusted Windows NT domain
+  with the Systems Management Server Administrator console, the connection
+  attempt may be unsuccessful and the following error message may be displayed
+  in the Systems Management Server Administrator console: "Failed to connect."
+
+  To have the ability to administer an Systems Management Server site in a
+  remote domain one of the following conditions must be true:
+
+  1. A trust between the domains must be established (the remote domain must
+     trust the domain in which the workstation resides).
+
+  - or -
+
+  2. A user account with the same name and password must be created in the site
+     server domain.
+
+- The user attempting to start the Systems Management Server Administrator
+  console must have Read access permissions to the default Sms.msc and
+  Explore.msc files provided in the following directory on the Systems
+  Management Server 2.0 site server or the local workstation on which the
+  Systems Management Server Administrator console or the Microsoft Management
+  Console is installed:
+
+  &lt;Drive&gt;\Sms\Bin\&lt;Platform&gt;
+
+  where &lt;Drive&gt; is the drive letter to which Systems Management Server is
+  installed and &lt;Platform&gt; is the platform on which you are attempting to
+  start the Systems Management Server Administrator console.
+
+  If the user receives the following message when starting the Systems
+  Management Server Administrator Console:
+
+  The selected file is not a Microsoft Management Console document.
+
+  Use File Manager or Windows Explorer to verify file permissions for these
+  files.
+
+- The user attempting to connect to a Systems Management Server 2.0 site
+  database must also have appropriate WBEM rights to the server where the
+  Systems Management Server Provider is located.
+
+  A symptom of not having the required WBEM rights includes receiving the
+  message "Connection Failed" in the Systems Management Server Administrator
+  console when attempting to connect to the site database.
+
+  By default, Systems Management Server Setup creates a Windows NT local group
+  named Systems Management Server Admins and adds it with the appropriate
+  attributes to WBEM User Manager. Initially, the only user that belongs to
+  this group is the user who installed the Systems Management Server 2.0 site
+  server.
+
+  If this group is intact, use Windows NT User Manager to add the desired
+  Windows NT user(s) or global group(s) to this Systems Management Server
+  Admins local group.
+
+  If the user has been added to the Systems Management Server Admins group and
+  still receives the error "Connection Failed" in the Systems Management Server
+  Administrator console, verify that the Systems Management Server Admins group
+  has been granted the appropriate WBEM rights on the Systems Management Server
+  Site and Systems Management Server Provider servers.
+
+  Perform the steps below on the server where the Systems Management Server
+  Provider is located.
+
+  NOTE: If you are unsure of the location of the Systems Management Server
+  Provider for your site, check the Smssetup.log file on your site server and
+  search for "Provider Location".
+
+  1. On the Start menu, click Run, type "wbemperm" (without the quotation
+     marks), and then press ENTER to start WBEM Permission Editor.
+
+  2. In WBEM Permission Editor, in the User Groups window pane, check for the
+     Systems Management Server Admins group. Verify that the Group Name is
+     spelled correctly.
+
+  3. On the User menu, click Edit Group Properties, and then select the entry.
+     Verify that the following options are selected under the Attributes
+     section:
+
+      - Enabled (checked)
+
+      - Execute Methods (checked)
+
+      - Schema Access Level: Write Instance
+
+  4. If the Systems Management Server Provider is on a separate server from the
+     Systems Management Server site server (such as the SQL Server), you must
+     also verify that the Systems Management Server Admins group has at
+     appropriate WBEM permissions to the local site server. This is because
+     Systems Management Server first must connect to the site server to
+     determine the location of the Systems Management Server Provider. Verify
+     this by performing the steps above on the Systems Management Server site
+     server, but ensuring in the Attributes section of the user group
+     properties that the following options are selected:
+
+      - Enabled (checked)
+
+      - Schema Access Level: Read Only.
+
+  If the user or group entries are incorrect or misspelled, they cannot be
+  modified. You must create a new user or group by selecting Add New User or
+  Add New Group from the User menu in WBEM User Manager. After you have added
+  the correct user or group entry, you can delete the incorrect entry by
+  selecting it and clicking Delete on the User menu.
+
+  After verifying file permissions and WBEM security attributes, the user should
+  be able to connect to the Systems Management Server site database.
+
+- The user connecting to the site database must have appropriate access to
+  class and instance level objects in the Systems Management Server
+  Administrator console. Symptoms of insufficient rights include the inability
+  to see any objects in the console window.
+
+  The following Systems Management Server object types can have security access
+  granted or denied:
+
+   - Collections
+
+   - Packages
+
+   - Advertisements
+
+   - Status Messages
+
+   - Sites
+
+   - Queries
+
+  The steps below walk through granting Class (All Instances) Security Rights
+  for a user or group to the Site object:
+
+  1. Log on as the user who initially installed the Systems Management Server
+     site and connect to the site database. This user by default has full
+     rights to all Systems Management Server objects.
+
+  2. Under the Site Database, navigate to and select the Security Rights node.
+
+  3. Right-click Security Rights, point to New, and then click Class Security
+     Right.
+
+  4. In the Security Right Properties dialog box, specify the following:
+
+      - User name: User or group name, using DOMAIN\USER or DOMAIN\GROUP name
+        syntax.
+
+        NOTE: A method of simplifying administration would be to specify a
+        global user group here, then populate that group with users you want to
+        have this specific set of rights.
+
+      - Object Type: Site
+
+      - Permissions: Administer, Create, Delete, Modify, Read. (These are all
+        available rights for this object type.)
+
+  5. Click OK, and then close the Systems Management Server Administrator
+     console.
+
+  6. Log off and log back on as the user you just added the Security Right for.
+
+  7. Open the Systems Management Server Administrator console. You should be
+     able to view and modify all objects under the Site Hierarchy node.
+
+For additional information, click the article numberabout assigning Systems
+Management Server Security rights below to view the articleabout assigning
+Systems Management Server Security rights in the Microsoft Knowledge Base:
+
+  Q199869 SMS: Assigning Class and Instance Security Rights with the SMS User
+  Wizard
+
+Also, refer to the Systems Management Server 2.0 Administrators Guide or the
+Systems Management Server Administrator Help, available through the Systems
+Management Server Administrator console by clicking Help on the Action menu.
+
+WMI 1.5-Enabled Computers
+-------------------------
+
+Computers that have been upgraded to Windows Management Instrumentation (WMI) 1.5
+or Microsoft Windows 2000-based computers do not have the WMI 1.1 tool
+(Wbemperm.exe).
+
+NOTE: Windows NT 4.0 users which have WMI 1.5 installed, also need to install the
+Microsoft Security Configuration Editor (SCE), included on the Windows NT 4.0
+Service Pack 4 (SP4) (and later) CD-ROM. On Windows NT-based computers, the tool
+is Wbemcntl.exe. The Microsoft SCE is required to edit the Access Control Lists
+(ACLs) on the Windows Installer (WI) namespaces.
+
+
+Additional query words: prodsms smssql wbem
+
+======================================================================
+Keywords          : kbsms200 kbfaq
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

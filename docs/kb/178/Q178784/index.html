@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178784: HOWTO: Use Automation to Open and Print a Word Document | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178784: HOWTO: Use Automation to Open and Print a Word Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178784/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178784/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178784/","publisher":null,"image":null,"headline":"Q178784: HOWTO: Use Automation to Open and Print a Word Document","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178784-howto-use-automation-to-open-and-print-a-word-document">Q178784: HOWTO: Use Automation to Open and Print a Word Document</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178784
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbole kbMFC KbVBA kbVC500 kbVC600 kbWord kbOffice2000
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 5.0, 6.0 
+- Microsoft Office XP Developer 
+- Microsoft Office 2000 Developer 
+- Microsoft Word 2002 
+- Microsoft Word 2000 
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to use version 4.2 of the Microsoft Foundation Class
+(MFC) library installed with Microsoft Visual C++ versions 5.0 and 6.0 to
+automate opening and printing a Microsoft Word Document.
+
+MORE INFORMATION
+================
+
+You can copy the code in this article to the message handler function of an
+event defined in an MFC .cpp file. However, the purpose of the code is to
+illustrate the process of using the IDispatch interfaces and member functions
+defined in the Msword8 type library. The primary benefit comes from reading and
+understanding the code so that you can modify the example, or write code from
+scratch to automate opening and printing a Microsoft Word 97 document.
+
+Notes for Automating Microsoft Word 2000 and later:
+
+Some methods and properties have changed for Microsoft Word 2000 and later. For
+additional information about using the sample code described in this article
+with the Microsoft Word 2000 and later type library, please see the following
+article in the Microsoft Knowledge Base:
+
+  
+
+  Q224925 INFO: Type Libraries for Office May Change with New Release
+
+Steps to Create the Project
+---------------------------
+
+1. In Microsoft Word, create a new document, add some text to the document, and
+  save it as Test.doc. Close the document and exit Word.
+
+2. Follow steps 1 through 12 in the following Microsoft Knowledge Base article
+  to create a sample project that uses the IDispatch interfaces and member
+  functions defined in the MSWord8.olb type library:
+
+  Q178749 HOWTO: Create an Automation Project Using MFC and a Type Library
+
+3. At the top of the AutoProjectDlg.cpp, add the following line:
+
+        #include "msword8.h" // msword9.h for Word 2000, msword.h for Word 2002
+
+4. Add the following code to CAutoProjectDlg::OnRun() in the AutoProjectDLG.cpp
+  file.
+
+Sample Code
+-----------
+
+         _Application objWord;
+
+        // Convenient values declared as ColeVariants.
+        COleVariant covTrue((short)TRUE),
+                    covFalse((short)FALSE),
+                    covOptional((long)DISP_E_PARAMNOTFOUND, VT_ERROR);
+
+        // Get the IDispatch pointer and attach it to the objWord object.
+        if (!objWord.CreateDispatch("Word.Application"))
+        {
+           AfxMessageBox("Couldn't get Word object.");
+           return;
+        }
+
+        objWord.SetVisible(TRUE);  //This shows the application.
+
+        Documents docs(objWord.GetDocuments());
+        _Document testDoc;
+
+        testDoc.AttachDispatch(docs.Open(
+                               COleVariant("C:\\Test.doc",VT_BSTR),
+                               covFalse,    // Confirm Conversion.
+                               covFalse,    // ReadOnly.
+                               covFalse,    // AddToRecentFiles.
+                               covOptional, // PasswordDocument.
+                               covOptional, // PasswordTemplate.
+                               covFalse,    // Revert.
+                               covOptional, // WritePasswordDocument.
+                               covOptional, // WritePasswordTemplate.
+                               covOptional) // Format. // Last argument for Word 97
+                                  covOptional, // Encoding // New for Word 2000/2002
+                                  covTrue,     // Visible
+                                  covOptional, // OpenConflictDocument
+                                  covOptional, // OpenAndRepair
+                                  (long)0,     // DocumentDirection wdDocumentDirection LeftToRight
+                                  covOptional  // NoEncodingDialog
+                                  )  // Close Open parameters
+                                  ); // Close AttachDispatch(?)
+
+         AfxMessageBox("Now printing 2 copies on the active printer");
+
+         testDoc.PrintOut(covFalse,              // Background.
+                          covOptional,           // Append.
+                          covOptional,           // Range.
+                          covOptional,           // OutputFileName.
+                          covOptional,           // From.
+                          covOptional,           // To.
+                          covOptional,           // Item.
+                          COleVariant((long)2),  // Copies.
+                          covOptional,           // Pages.
+                          covOptional,           // PageType.
+                          covOptional,           // PrintToFile.
+                          covOptional,           // Collate.
+                          covOptional,           // ActivePrinterMacGX.
+                          covOptional            // ManualDuplexPrint.
+                          covOptional,           // PrintZoomColumn  New with Word 2002
+                          covOptional,           // PrintZoomRow          ditto
+                          covOptional,           // PrintZoomPaperWidth   ditto
+                          covOptional);          // PrintZoomPaperHeight  ditto
+
+         // If you wish to Print Preview the document rather than print it,
+         // you can use the PrintPreview member function instead of the
+         // PrintOut member function:
+         //    testDoc[i].PrintPreview.
+
+        objWord.Quit(covFalse,  // SaveChanges.
+                     covTrue,   // OriginalFormat.
+                     covFalse   // RouteDocument.
+                     );
+
+5. You may need to modify the code in CAutoProjectDlg::OnRun() to indicate the
+  correct path for your document Test.doc. The document is referenced in the
+  following line:
+
+        testDoc.AttachDispatch(docs.Open(
+                              COleVariant("C:\\My Docs\\Test.doc",VT_BSTR)...
+
+REFERENCES
+==========
+
+For additional information about the Automation of Office applications, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q222101 HOWTO: Find and Use Office Object Model Documentation
+
+Or visit the following Microsoft Web site:
+
+  http://support.microsoft.com/support/officedev/automation.asp
+
+Additional query words: IDispatch Word 8.0 Word8 Word97 x
+
+======================================================================
+Keywords          : kbinterop kbole kbMFC KbVBA kbVC500 kbVC600 kbWord kbOffice2000 
+Technology        : kbAudDeveloper kbMFC
+Version           : :5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

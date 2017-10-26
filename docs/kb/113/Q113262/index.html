@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q113262: Plotting TrueType Characters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q113262: Plotting TrueType Characters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/113/Q113262/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/113/Q113262/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/113/Q113262/","publisher":null,"image":null,"headline":"Q113262: Plotting TrueType Characters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q113262-plotting-truetype-characters">Q113262: Plotting TrueType Characters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q113262
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kb16bitonly kbOSWin310
+Last Modified: 04-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The HPPLOT plotter driver does not support the plotting of TrueType fonts. This
+driver only plots fonts that are native to the plotter or are Windows vector
+fonts. It is sometimes desirable to be able to plot a larger range of fonts.
+Incorporating the use of TrueType fonts on a plotter greatly increases the range
+of fonts a plotter can draw.
+
+The TTPLOT sample demonstrates a method of displaying TrueType fonts on a
+plotter. This method involves selecting a TrueType font into a screen display
+context and calling the GetGlyphOutline() function to retrieve the curve data
+points of a TrueType character in the TrueType font rasterizer's native format.
+Then, with the data it retrieved, it performs a series of MoveTo() and LineTo()
+calls to draw the TrueType character.
+
+This sample can be used with any printer, and it also demonstrates the new
+Windows 3.1 printing functions, SetAbortProc(), StartDoc(), EndDoc(),
+StartPage(), and EndPage(). This sample application will not run on a version of
+Windows earlier than Windows 3.1.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  Ttplot.exe
+  (http://download.microsoft.com/download/platformsdk/sample78/3.1/W31/EN-US/TTPLOT.EXE)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+This sample demonstrates how to draw TrueType characters on a plotter with the
+MoveTo() and LineTo() functions. First, it retrieves a glyph's curve data points
+in the rasterizer's native format by calling GetGlyphOutline() with GGO_NATIVE
+specified in the third parameter. It must call this function twice. The first
+time the function is called, NULL is placed in the lpBuffer parameter so the
+required buffer size to hold the data is returned. The second time
+GetGlyphOutline() is called, the native data is placed in the buffer specified
+by the lpBuffer parameter.
+
+A glyph outline is returned as a series of contours, each of which can be a
+straight line or a quadratic curve. The TTPLOT sample interprets the data
+returned from GetGlyphOutline() and then draws the lines specified by calling
+the MoveTo() and LineTo() functions on the plotter device context. The quadratic
+curves, as well as the lines, are both drawn as normal straight lines. A
+description of this native curve data can be found on pages 382-383 of the
+Windows SDK "Programmer's reference, Volume 2: Functions" manual or by searching
+for the GetGlyphOutline() function in the "Win31 Help" Windows help file. This
+sample also lets you choose a desired TrueType font by bringing up the
+ChooseFont() common dialog box. Before drawing the font, the plotter DC is
+placed in the MM_ISOTROPIC mode so the fonts will be the same size on the screen
+as they are on the plotter.
+
+Additional query words: PLOT HPPLOT TRUETYPE softlib TTPLOT.EXE
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbOSWin310 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

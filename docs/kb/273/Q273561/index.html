@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q273561: XCLN: How To Use IMAP4 to Migrate E-Mail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q273561: XCLN: How To Use IMAP4 to Migrate E-Mail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/273/Q273561/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/273/Q273561/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/273/Q273561/","publisher":null,"image":null,"headline":"Q273561: XCLN: How To Use IMAP4 to Migrate E-Mail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q273561-xcln-how-to-use-imap4-to-migrate-e-mail">Q273561: XCLN: How To Use IMAP4 to Migrate E-Mail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q273561
+Product(s): Microsoft Exchange
+Version(s): 5.0,5.5
+Operating System(s): 
+Keyword(s): exc5 exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure Internet Message Access Protocol 4
+(IMAP4) to migrate mail items from Outlook Express to Exchange Server 5.5.
+
+MORE INFORMATION
+================
+
+You cannot initiate direct migration from Outlook Express to an Exchange Server
+mailbox. However, it is possible to migrate existing mail items from Outlook
+Express to an Exchange Server mailbox using IMAP4 protocol.
+
+NOTE: For this configuration to be successful, the computer that is running
+Exchange Server must have IMAP4 enabled, and it must have access to an SMTP
+server (the server does not need to be running Exchange Server).
+
+1. In Outlook Express, create a new mail account for the Exchange Server-based
+  computer.
+
+2. Configure this account as an IMAP4 mail account. Use the Exchange Server
+  mailbox SMTP address for your e-mail address.
+
+3. Enter the Windows NT domain name and the Windows NT account alias separated
+  by a back slash. For example, &lt;domainname&gt;/&lt;username&gt;.
+
+4. Enter your Windows NT account password as the password.
+
+  NOTE: Both the IMAP and SMTP server names are the same name as the Exchange
+  Server-based computer. (Technically, an SMTP server is not required for this
+  operation, but Outlook Express requires this field to create an account.)
+
+5. Connect Outlook Express to the newly created IMAP4 account and create a new
+  folder or use the Inbox folder.
+
+6. Click the mail items from the Outlook Express account(s) that you want to
+  move and drag them to the folder in the Exchange Server mailbox. Messages are
+  then copied to the Exchange Server mailbox.
+
+You should be able to log on using an Exchange Server client and view the mail
+items that you migrated from Outlook Express. The original recipient addresses
+and the date and time information are preserved.
+
+This procedure can be applied to any third-party mail client computers that can
+use IMAP4.
+
+Additional query words: Outlook Express, Migrate, Mac, OE
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : :5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

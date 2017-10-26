@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221666: FIX: SQL Upsizing Wizard Save Generated SQL Bloats Script.fpt | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221666: FIX: SQL Upsizing Wizard Save Generated SQL Bloats Script.fpt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221666/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221666/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221666/","publisher":null,"image":null,"headline":"Q221666: FIX: SQL Upsizing Wizard Save Generated SQL Bloats Script.fpt","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221666-fix-sql-upsizing-wizard-save-generated-sql-bloats-scriptfpt">Q221666: FIX: SQL Upsizing Wizard Save Generated SQL Bloats Script.fpt</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221666
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbDatabase kbvfp500aBUG kbvfp600 kbvfp600bug KbDBFDBC kbVS600sp3fix kbGrpDSFox
+Last Modified: 22-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You use the Visual FoxPro SQL Server Upsizing Wizard to upsize a database to SQL
+Server. You select the Save Generated SQL option in step 7 of the wizard. When
+the generated SQL code is saved to the Script.dbf file, the memo file Script.fpt
+will grow to a very large size. This may be on the order of hundreds of
+megabytes. Issuing a PACK MEMO on Script.dbf will cause the size of the memo
+file to be reduced by a factor of about 1000.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Make a new directory and set it as the default directory within Visual
+  FoxPro. You will need 200+ MB free on this drive.
+
+2. Run the following code from a program (.PRG) file. It creates a DBC with 200
+  10-field tables, with relations between each table and the next and indexes
+  on all the fields:
+
+  SET SAFETY OFF
+  SET TALK OFF
+  CLEAR
+  CLOSE DATA ALL
+  CREATE DATABASE testdb
+  FOR lni = 1 TO 200
+     CREATE TABLE ('thisisthetabname'+ALLTR(STR(lni))) ;
+        (('FieldName1') C(10) NOT NULL PRIMARY KEY, ;
+        ('FieldName2') C(10) NOT NULL, ;
+        ('FieldName3') C(10) NOT NULL, ;
+        ('FieldName4') C(10) NOT NULL, ;
+        ('FieldName5') C(10) NOT NULL, ;
+        ('FieldName6') C(10) NOT NULL, ;
+        ('FieldName7') C(10) NOT NULL, ;
+        ('FieldName8') C(10) NOT NULL, ;
+        ('FieldName9') C(10) NOT NULL, ;
+        ('FieldName10') C(10) NOT NULL)
+     IF lni &gt; 1
+        ALTER TABLE ('thisisthetabname'+ALLTR(STR(lni-1))) ;
+           ADD FOREIGN KEY TAG ('FieldName1') REFERENCES ;
+           ('thisisthetabname'+ALLTR(STR(lni))) TAG ('FieldName1')
+     ENDIF
+     FOR lnj = 2 TO 10
+        lcExpr = 'FieldName'+ALLTR(STR(lnj))
+        INDEX ON &amp;lcExpr TAG ('fldname'+ALLTR(STR(lnj)))
+     ENDFOR
+  ENDFOR
+
+3. Run the SQL Server Upsizing Wizard.
+
+4. Select the DBC you created above in Upsizing Wizard step 1, and then click
+  Next.
+
+5. In step 2, select an ODBC datasource to a SQL Server you can upsize to. Log
+  on and then click Next.
+
+6. In step 3, select all of the tables, and then click Finish.
+
+7. In step 9, click the Save Generated SQL option, then click Finish again.
+
+8. After Upsizing Wizard has completed, execute the following commands from the
+  Command window:
+
+  DIR upsize\script.fpt
+  USE upsize\script EXCLUSIVE
+  PACK MEMO
+  DIR upsize\script.fpt
+
+RESULTS: Before the PACK MEMO command, the DIR command will return 206,797,184
+bytes as the size of the Script.fpt file.
+
+After the PACK MEMO command, the DIR command will return 201,472 bytes as the
+size of the Script.fpt file.
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbDatabase kbvfp500aBUG kbvfp600 kbvfp600bug KbDBFDBC kbVS600sp3fix kbGrpDSFox kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:2.5,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

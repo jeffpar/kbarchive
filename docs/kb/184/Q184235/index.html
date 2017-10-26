@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q184235: PRB: LNK2005 Errors on New and Delete When Defining _ATL_MIN_CRT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q184235: PRB: LNK2005 Errors on New and Delete When Defining _ATL_MIN_CRT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/184/Q184235/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/184/Q184235/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/184/Q184235/","publisher":null,"image":null,"headline":"Q184235: PRB: LNK2005 Errors on New and Delete When Defining _ATL_MIN_CRT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q184235-prb-lnk2005-errors-on-new-and-delete-when-defining-_atl_min_crt">Q184235: PRB: LNK2005 Errors on New and Delete When Defining _ATL_MIN_CRT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q184235
+Product(s): Microsoft C Compiler
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbActiveX kbLinker kbVC500 kbVC600
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compile an Active Template Library (ATL) executable (.exe) project in
+Developer Studio, the _ATL_MIN_CRT preprocessor symbol allows you to use some
+standard C library functions without having to link in the C run-time library
+(CRT) startup code. If _ATL_MIN_CRT is defined when you build an ATL executable
+with Microsoft Foundation Classes (MFC) support, the linker returns the
+following linker errors:
+
+  nafxcw.lib(afxmem.obj) : error LNK2005: "void * _cdecl operator new(unsigned
+  int)" (??2@YAPAXI@Z) already defined in Stdafx.obj
+
+  nafxcw.lib(afxmem.obj) : error LNK2005: "void __cdecl operator delete(void
+  *)" (??3@YAXPAX@Z) already defined in StdAfx.obj
+
+CAUSE
+=====
+
+Some C run-time library functions require that you provide the CRT startup code.
+Because both the C run-time and MFC libraries contain definitions for the new
+and delete operators, there is a conflict for the linker.
+
+RESOLUTION
+==========
+
+Remove the _ATL_MIN_CRT preprocessor definition and rebuild the project. To do
+this, click Settings on the Project menu. On the C/C++ tab, select the
+Preprocessor category, and remove the _ATL_MIN_CRT definition.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ATL COM AppWizard application. On the File menu, click New, and
+  select ATL COM AppWizard as the project type.
+
+2. Use the information in the following Microsoft Knowledge Base article to add
+  MFC support to your ATL project:
+
+  Q173974 HOWTO: Add MFC Support to an ATL Project
+
+3. Add _ATL_MIN_CRT to your preprocessor definitions using the preprocessor
+  settings described in the RESOLUTION section of this article.
+
+4. On the Build menu, click Set Active Configuration, and choose the Win32
+  Release MinSize configuration.
+
+5. Build the project. You should see both LNK2005 errors in the build output
+  window.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q173974 HOWTO: Add MFC Support to an ATL Project
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Mark Hagen,
+Microsoft Corporation.
+
+
+Additional query words: ActiveX Foundation Classes C++ CPP CXX
+
+======================================================================
+Keywords          : kberrmsg kbActiveX kbLinker kbVC500 kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

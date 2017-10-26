@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242588: BUG: VTS_UI1 and VTS_PUI1 are Defined Incorrectly in AfxDisp.h | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242588: BUG: VTS_UI1 and VTS_PUI1 are Defined Incorrectly in AfxDisp.h" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242588/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242588/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242588/","publisher":null,"image":null,"headline":"Q242588: BUG: VTS_UI1 and VTS_PUI1 are Defined Incorrectly in AfxDisp.h","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242588-bug-vts_ui1-and-vts_pui1-are-defined-incorrectly-in-afxdisph">Q242588: BUG: VTS_UI1 and VTS_PUI1 are Defined Incorrectly in AfxDisp.h</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242588
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbAutomation kbCOMt kbMFC kbVC400bug kbVC410 kbVC420 kbVC500bug kbVC600bug kbDSupport k
+Last Modified: 02-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the string literals defined for VTS_UI1 or VTS_PUI1 in calling
+COleDispatchDriver::InvokeHelper() or CWnd::InvokeHelper(), you might get
+strange results. You might notice any of the following symptoms when using the
+values defined in AfxDisp.h:
+
+- An ASSERT on line 321 in file Oledisp2.cpp in the
+  COleDispatchDriver::InvokeHelperV function.
+
+- A message box stating "Bad variable type."
+
+- An uncaught exception in WindowProc.
+
+- A first chance exception in Kernel32.dll.
+
+CAUSE
+=====
+
+This is because VTS_UI1 and VTS_PUI1 are defined incorrectly in the Afxdisp.h
+header file.
+
+RESOLUTION
+==========
+
+Do not use VTS_UI1 or VTS_PUI1 in any of your code. Instead, define the correct
+values for each of these using a name you assign. Code like the following can be
+used:
+
+  //Do NOT use VTS_UI1. It has a value of "0x0F" which is incorrect.
+  //The correct value for VTS_UI1 is 17 or 0x11
+  #define MY_VTS_UI1 "\x11"
+
+  //Do NOT use VTS_PUI1. It has a value of "0x4F" which is incorrect.
+  //The correct value for VTS_PUI1 is 81 or 0x51
+  #define MY_VTS_PUI1 "\x51"
+
+  void SomeFunction(BYTE byteVal)
+  {
+   static BYTE parms[] = MY_VTS_UI1; // please note that this is not VTS_UI1
+   DISPID dispid = 0x60030000;       // notice that this is different!
+
+   COleDispatchDriver d;
+   if (d.CreateDispatch("SomeComObject.SomeComObject.1))
+      d.InvokeHelper(dispid, DISPATCH_METHOD, VT_EMPTY, NULL, parms, byteVal);
+  }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+  Q241862 BUG: ClassWizard Omits Methods that Take BYTE or BYTE* as Parameters
+
+Additional query words: 0x80020008 COleException InvokeHelper Invoke IDispatch OLE Automation
+
+======================================================================
+Keywords          : kbAutomation kbCOMt kbMFC kbVC400bug kbVC410 kbVC420 kbVC500bug kbVC600bug kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

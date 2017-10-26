@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148724: How to Fill Second List with Values from Multiselect List Box | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148724: How to Fill Second List with Values from Multiselect List Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148724/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148724/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148724/","publisher":null,"image":null,"headline":"Q148724: How to Fill Second List with Values from Multiselect List Box","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148724-how-to-fill-second-list-with-values-from-multiselect-list-box">Q148724: How to Fill Second List with Values from Multiselect List Box</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148724
+Product(s): Microsoft FoxPro
+Version(s): 3.00 3.00b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 12-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using multiple page pageframes, you may find it useful to populate a list
+box on a following page with the values selected from a multiple- select list
+box on a previous page.
+
+This article demonstrates how to fill the first multiple-select list box from an
+array created by an SQL SELECT statement and then take the user's selections
+from this list box to fill the second list box on another page of the
+pageframe.
+
+The form has a command button that resets the multiple-select list so that the
+user can start making selections on a clean unselected list. Initially, this
+button is disabled; it becomes enabled when at least one selection is made in
+the multiple-select list box. When the user clicks the button to reset the list,
+the command button again becomes disabled.
+
+The form also checks whether a selection was made on the first list. If no items
+are chosen in the first list, the display value of the second list shows "No
+Selection Made" in the list. This feature is optional.
+
+MORE INFORMATION
+================
+
+NOTE: To select multiple items from a multiple-select list, hold down the CTRL
+key while clicking with the mouse. To select a contiguous range of items, click
+first item in the range, and then hold down the SHIFT key as you click the last
+item.
+
+Step-by-Step Example
+--------------------
+
+1. Create a new form.
+
+2. In the form designer, choose New Property from the Form menu. Enter the
+  following array in the name box. Then click OK:
+
+     aSelected(1)
+
+  Again choose New Property from the Form menu. Enter the variable that will be
+  used to count the selected items in the name box. Then click OK:
+
+     nCount
+
+3. Right-click the form, and select Data Environment. Then right-click the Data
+  Environment window, and click Add. Click the Other button, and add the
+  Employee table from the \VFP\Samples\Data directory.
+
+4. Add a page frame to the form by selecting the PageFrame control from the Form
+  Controls toolbar and clicking the form. Resize the page frame if needed.
+
+5. Right-click the page frame, and select Edit. A hatched border is drawn around
+  the page frame.
+
+6. Right-click Page1 and select Properties. Select the All tab from the
+  Properties sheet, and add the following code to the listed events for Page1
+  of the page frame:
+
+     Activate event:
+
+     Thisform.nCount=0                 &amp;&amp; Reset nCount when page is selected
+     Thisform.aSelected=" "            &amp;&amp; Reinitialize array to empty string
+     DIMENSION Thisform.aSelected(1)   &amp;&amp; Redimension array to one element
+
+     FOR i=1 TO This.List1.ListCount   &amp;&amp; Loop through number items in List
+        IF This.List1.Selected=.T.     &amp;&amp; If an item is selected in List,
+           This.List1.Selected=.F.     &amp;&amp; the Selected property is .T.
+        ENDIF
+     ENDFOR
+
+     This.List1.ListIndex=0            &amp;&amp; Reset the index number of List box
+     This.List1.RowSource=This.List1.RowSource
+     This.Refresh                      &amp;&amp; Force List and Form to refresh
+
+     Deactivate event:
+
+     This.Command1.Enabled=.F.
+     LOCAL narraycnt
+     narraycnt=1
+
+     FOR i=1 TO This.List1.ListCount    &amp;&amp; Loop through Selected array, if
+        IF This.List1.Selected(i)=.T.   &amp;&amp; true, increment nCount variable.
+           Thisform.nCount=Thisform.nCount+1
+        ENDIF
+     ENDFOR
+
+     IF Thisform.nCount=0               &amp;&amp; No selection made, set nCount=1
+        Thisform.nCount=1
+        Thisform.aSelected(Thisform.nCount)="No Selection Made!"
+     ENDIF
+
+     DIMENSION Thisform.aSelected(Thisform.nCount)  &amp;&amp; Dimension array
+
+     FOR i=1 TO This.List1.Listcount     &amp;&amp; Loop through items in List,
+        IF This.List1.Selected(i)=.T.    &amp;&amp; if Selected-look at List property
+           Thisform.aSelected(narraycnt)=This.List1.List(i)
+           narraycnt=narraycnt+1
+        ENDIF
+     ENDFOR
+
+7. With the pageframe still in edit mode, add a list box to Page1 of the page
+  frame by selecting the ListBox control from the Form Controls toolbar and
+  clicking Page1.
+
+8. Right-click the list box and select Properties, or click the Properties
+  window if it is already available. Select the All tab from the Properties
+  sheet, and modify the following properties and events:
+
+     RowSource - Enter the following on one, single line:
+
+     SELECT DISTINCT Employee.Title from Testdata!Employee ORDER BY
+        Employee.Title INTO CURSOR mlist WHERE NOT EMPTY(Employee.Title)
+
+     RowSourceType: 3 - SQL Statement
+
+     MultiSelect: .T.
+
+     Click Event:
+
+     This.Parent.Command1.Enabled=.T.           &amp;&amp;  Enable 'RESET' button
+
+9. Add a command button to page 1 while the page frame is in edit mode.
+  Configure the command button with the following properties and events:
+
+     Caption: Reset List
+
+     Click Event:
+
+     This.Parent.List1.ListIndex=0            &amp;&amp;  Reset ListIndex property
+     This.Parent.List1.RowSource=This.Parent.List1.RowSource
+     This.Parent.Refresh                      &amp;&amp;  Refresh List and Page
+     This.Enabled=.F.                         &amp;&amp;  Disable 'RESET' button
+     This.Parent.List1.Setfocus               &amp;&amp; Put focus on list
+
+10. With the page frame in edit mode, click the Page2 tab on the page frame. Add
+  the following events to Page2 of the pageframe:
+
+      Activate event:
+
+      This.List1.Requery             &amp;&amp; Issue Requery to display/refresh
+
+11. Add a list box to Page2 with the following properties:
+
+      RowSource: Thisform.aSelected
+
+      RowSourceType: 5 - Array
+
+Additional query words: VFoxWin listbox multiselect listcount selected list
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : 3.00 3.00b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

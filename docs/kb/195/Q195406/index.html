@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195406: BUG: Using Class With Reserved Custom Property Name Gives Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195406: BUG: Using Class With Reserved Custom Property Name Gives Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195406/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195406/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195406/","publisher":null,"image":null,"headline":"Q195406: BUG: Using Class With Reserved Custom Property Name Gives Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195406-bug-using-class-with-reserved-custom-property-name-gives-error">Q195406: BUG: Using Class With Reserved Custom Property Name Gives Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195406
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbDesigner kbOOP kbvfp600
+Last Modified: 10-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a class in Visual FoxPro 3.0 or 5.0 with a custom property and you
+add an intrinsic property in Visual FoxPro 6.0, when you modify the class or a
+form which contains an instance of the class in Visual FoxPro 6.0, you receive
+the following error(s) when the form or class is not opened in the Designer:
+
+  Syntax error.
+
+  -or-
+
+  Unknown error code -5.
+
+You may also see the following error when the form or class is open in the
+Designer:
+
+  Data type is invalid for this property.
+
+CAUSE
+=====
+
+Visual FoxPro 6.0 adds several new properties to the Visual FoxPro base classes.
+The visual class you are attempting to use has a custom property with the same
+name as one of these new base class properties and the data type for this
+property is incorrect or cannot be determined.
+
+Intrinsic property names are reserved words. Avoid using reserved words for
+property names, especially if the reserved word is already used as a property
+name for some other base classes because the results may be unpredictable.
+
+RESOLUTION
+==========
+
+- Modify the class in the previous version of Visual FoxPro, and remove the
+  custom property from the class or set it to a value other than (None), some
+  text, .F./.T., or a numeric value.
+
+-or-
+
+- Edit the .vcx file directly and change the property value there.
+
+Please refer to the MORE INFORMATION section of this document for details.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+In Visual FoxPro 5.0 and earlier, several base class objects such as pageframe,
+container, and custom did not have some properties such as Tag or Comment. These
+properties were added in Visual FoxPro 6.0.
+
+NOTE: Please see the Visual FoxPro 6.0 Help topic, "New and Enhanced Language
+Elements" and scroll down to the "Enhanced language elements" section for
+details on which objects have had properties added.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file in Visual FoxPro 3.0 or
+  Visual FoxPro 5.0. This creates the class automatically. However, the results
+  are the same if you create the class manually through the Class Designer.
+
+        CLOSE ALL
+        CLEAR ALL
+        DELETE FILE testlib.vc?
+
+        * Allows us to be sure the Class Designer window is active.
+        ON KEY LABEL ctrl+f8 ACTI WINDOW 'class designer'
+
+        * Our property will be Tag.
+        lcPropName = 'tag'
+
+        * Put property name in clipboard.
+        _CLIPTEXT = lcPropName
+
+        * Open Add Property dialog box and past in clipboard contents,
+        * then activate Class Designer window, and close and save it.
+        KEYBOARD '{alt+c}{p}{ctrl+v}{alt+a}{alt+c}{ctrl+f8}{ctrl+w}'
+
+        * Make the class.
+        CREATE CLASS cntclass AS CONTAINER OF testlib
+
+        * Clear ON KEY LABEL.
+        ON KEY LABEL ctrl+f8
+
+        * Modify the class and get object reference.
+        MODIFY CLASS cntclass OF testlib NOWAIT
+        = ASELOBJ(la_object,1)
+        lo_object = la_object[1]
+
+        * Set value of Tag property.
+        lo_object.TAG = ""
+
+        * Close the Class Designer.
+        KEYBOARD "{Y}"
+        RELEASE WINDOW 'class designer'
+
+2. Try to modify the Testlib class within Visual FoxPro 6.0. Issue the following
+  command in the Command window after switching to the directory where the
+  Testlib class library created in step 1 is located:
+
+        MODIFY CLASS cntclass OF testlib
+
+  You will receive a "Syntax error" error dialog box and the Class Designer does
+  not open. The same behavior occurs if you attempt to open a form in the Form
+  Designer if the form contains an instance of the class created in the
+  preceding step 1.
+
+If you change the lo_object.TAG = "" line in the preceding program to read
+lo_object.TAG = "Test prop" and repeat the steps, you get this error:
+
+  Unknown error code -5.
+
+If you change the lo_object.TAG = "" line in the preceding program to read
+lo_object.TAG = .F. or lo_object.TAG = 5 and repeat the steps, you will get this
+error:
+
+  Data type is invalid for this property.
+
+Demonstration of Workarounds
+----------------------------
+
+If you still have the earlier version of Visual FoxPro:
+
+1. Modify the cntclass class under Visual FoxPro 5.0 or earlier.
+
+2. Change the value of the Tag property from its previous value of (None), a
+  character value, or a logical value to something else, like ="". This allows
+  the class to be modified in Visual FoxPro 6, and the class can still be used
+  in Visual FoxPro 5.
+
+  -or-
+
+  Remove the Tag property. This allows the class to be modified in Visual FoxPro
+  6.0, but the Tag property would not be available in the class under Visual
+  FoxPro 5.0.
+
+If you do not have the earlier version of Visual FoxPro:
+
+1. Make a copy of your the class library files (.VCX AND .VCT FILES) that
+  contain the class exhibiting the behavior. In our example, these are
+  Testlib.vcx and Testlib.vct.
+
+2. Type the following in the Command window. You would have to substitute your
+  .vcx name and property name for those in this example:
+
+        USE testlib.vcx
+        BROWSE FOR "tag = " $ properties
+        MODIFY MEMO properties
+
+3. You will see a line that has the following:
+
+        tag =
+
+  If you want the property to be visible in versions of Visual FoxPro prior to
+  6.0, change it to read as follows:
+
+        tag = ("")
+
+Otherwise, remove the entire "tag = " line.
+
+The objects that will most likely be affected are container, control, custom,
+formset, image, label, pageframe, separator, and toolbar.
+
+The properties most likely to cause the problems are Tag, Comment, and
+ToolTipText.
+
+If you have a form that causes the error but contains many objects, or objects
+from many classes, issue the following SELECT statement after inserting your
+form file name after the FROM:
+
+        SELECT DISTINCT PADR(classloc+' '+class,40) ;
+           FROM &lt;formname.scx&gt; ;
+           WHERE !EMPTY(classloc) and INLIST(baseclass,'container', ;
+           'control', 'custom', 'formset', 'image', 'label', ;
+           'pageframe', 'separator', 'toolbar')
+
+This gives you a list of the classes that could be the ones causing the problem.
+You could then open each class in the Class Designer until you find the
+offending class. Once you find the class, look for a property named after one of
+the properties in the preceding list.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDesigner kbOOP kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

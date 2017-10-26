@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101177: Running PC-NFS 5.0 with Windows for Workgroups | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101177: Running PC-NFS 5.0 with Windows for Workgroups" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101177/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101177/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101177/","publisher":null,"image":null,"headline":"Q101177: Running PC-NFS 5.0 with Windows for Workgroups","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101177-running-pc-nfs-50-with-windows-for-workgroups">Q101177: Running PC-NFS 5.0 with Windows for Workgroups</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101177
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sun Microsystems has announced that version 5.0 of its PC-NFS network operating
+system software supports connectivity with Microsoft Windows for Workgroups
+(WFWG) version 3.1. This article describes how to set up PC-NFS with Windows for
+Workgroups. This procedure is designed for use with PC-NFS version 5.0 only;
+previous versions of PC-NFS are not compatible with Windows for Workgroups.
+
+
+Microsoft will assist in the installation of PC-NFS with Windows for Workgroups.
+Sun Microsystems is responsible for supporting the installation, configuration,
+and use of PC-NFS. Customers who have issues that cannot be resolved with
+standard network troubleshooting should contact Sun Microsystems for assistance.
+
+MORE INFORMATION
+================
+
+Installing WFWG and PC-NFS Version 5.0
+--------------------------------------
+
+To use PC-NFS version 5.0 with Windows for Workgroups version 3.1, you must use
+the updated WFWNET.DRV driver included with PC-NFS. To update the driver, simply
+delete the current version located in your WINDOWS\SYSTEM subdirectory, and
+replace it with the current version.
+
+To install and provide connectivity to PC-NFS and Windows for Workgroups, do the
+following:
+
+1. Install Windows for Workgroups version 3.1.
+
+2. Run the PC-NFS Install program, and select NDIS as the network adapter.
+
+3. Run the QuickNDIS utility, and configure it for Windows for Workgroups.
+
+4. Run the Winstall program.
+
+NOTE: For further information about installing and configuring PC-NFS, refer to
+your PC-NFS documentation.
+
+The installation program for Sun PC-NFS makes changes to the AUTOEXEC.BAT,
+CONFIG.SYS, PROTOCOL.INI, and SYSTEM.INI files. These changes are documented in
+your PC-NFS installation guide.
+
+AUTOEXEC.BAT
+
+The following lines are added to the AUTOEXEC.BAT file, but the SET statements
+vary with each installation:
+
+     Set TZ=EST5EDT
+     Set NFSDRIVE=C
+     Set NFSPATH=C:\NFS
+     Set TN_DIR=C:\NFS\TELNET
+     C:\NFS\PRT *
+     C:\NFS\NET INIT
+     C:\NFS\RTM
+
+CONFIG.SYS The following lines are added to the CONFIG.SYS file after the device
+drivers installed by Windows for Workgroups. The lines should appear in this
+order:
+
+     Device=C:\NFS-NDIS.SYS
+     Device=C:\NFS\PCNFS.SYS
+     Device=C:\NFS\SOCKDRV.SYS
+
+PROTOCOL.INI
+
+The following section is added to the PROTOCOL.INI file:
+
+     [NFS-NDIS]
+     DriverName=NFSLINK$
+     Bindings=MS$ELNKII
+
+SYSTEM.INI
+
+The following lines are added to the identified sections of the SYSTEM.INI file:
+
+     [Boot]
+     secondnet.drv=pcnfs.drv
+
+     [386Enh]
+     secondnet=pcnfs.386
+
+WFWG and Previous Versions of PC-NFS
+------------------------------------
+
+If you install Windows for Workgroups version 3.1 on a network running a version
+of PC-NFS earlier than version 5.0, Windows for Workgroups does not display a
+warning that this version of PC-NFS is not supported. (Normally, Windows for
+Workgroups issues a warning during setup if the currently installed networking
+software is not compatible with Windows for Workgroups.)
+
+Windows for Workgroups version 3.1 Setup does not have the ability to detect the
+presence of a PC-NFS network.
+
+
+To run Windows for Workgroups properly on a Sun PC-NFS workstation, you must
+either update your PC-NFS software to version 5.0 or remove all references to
+PC-NFS connectivity from the CONFIG.SYS and AUTOEXEC.BAT files. If you don't
+remove the references to the Sun client software before rebooting, the system
+may stop responding (hang) as the conflicting network device drivers attempt to
+load.
+
+The products included here are manufactured by Sun Microsystems, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+KBCategory: kbnetwork kbdisplay kb3rdparty kbsetup
+KBSubcategory: wfw wfwg
+
+Additional query words: 3.10 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

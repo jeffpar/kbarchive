@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47002: How to Change the Size of a Presentation Graphics Chart | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47002: How to Change the Size of a Presentation Graphics Chart" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47002/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47002/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47002/","publisher":null,"image":null,"headline":"Q47002: How to Change the Size of a Presentation Graphics Chart","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47002-how-to-change-the-size-of-a-presentation-graphics-chart">Q47002: How to Change the Size of a Presentation Graphics Chart</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47002
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_QuickAsm | mspl13_c
+Last Modified: 18-AUG-1989
+
+Question:
+
+How can the size of a chart be changed so that you can use part of the
+screen to output explanatory text?
+
+Response:
+
+This capability is built into the charting environment. The chartenv
+structure is defined as follows:
+
+           typedef struct {
+             short          charttype;
+                                /* _PG_BAR, _PG_COLUMN, _PG_LINE, etc.*/
+             short          chartstyle;
+                                /* style for selected chart type      */
+             windowtype     chartwindow;
+                                /* SIZE OF WINDOW FOR CHART!!!!!      */
+             windowtype     datawindow;
+                                /* size of window for chart data      */
+             titletype      maintitle; /* main chart title            */
+             titletype      subtitle;  /* chart sub-title             */
+             axistype       xaxis;
+                                /* structure for customizing x-axis   */
+             axistype       yaxis;
+                                /* structure for customizing y-axis   */
+             } chartenv;
+
+The size can be changed by modifying the elements of the "chartwindow"
+element of the "chartenv" structure. The "chartwindow" element is of
+"windowtype", which is defined as follows:
+
+            typedef struct {
+               short  x1;        /* left edge of window in pixels     */
+               short  y1;        /* top edge of window in pixels      */
+               short  x2;        /* right edge of window in pixels    */
+               short  y2;        /* bottom edge of window in pixels   */
+               short  border;    /* TRUE=border, FALSE=no border      */
+               short  background;/* palette color for window bkground */
+               short  borderstyle; /* style bytes for window border   */
+               short  bordercolor; /* palette color for window border */
+               } windowtype;
+
+Therefore, if the program has defined a variable "env" of "chartenv"
+type, the chart can be sized by changing env.chartwindow.x1,
+env.chartwindow.y1, env.chartwindow.x2, and env.chartwindow.y2. The
+following program demonstrates making these changes to a simple bar
+chart:
+
+/*-------------------------------------------------------------------*/
+/* MINIBAR.C: This program demonstrates sizing the entire chart so   */
+/* that it will fit in the upper-left quarter of the screen, leaving */
+/* the remainder of the screen available for other uses. The chart   */
+/* is a simple default bar chart, but the principle is the same,     */
+/* regardless of chart type.                                         */
+
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;graph.h&gt;                 /* required include files */
+#include &lt;pgchart.h&gt;
+
+#define MONTHS 12
+
+typedef enum {FALSE, TRUE} boolean;
+
+float far value [MONTHS] =          /*value (series) data array */
+{
+ (float)1.00, (float)2.00, (float)3.00, (float)4.00,
+ (float)5.00, (float)6.00,(float)7.00, (float)8.00,
+ (float)9.00, (float)10.00, (float)11.00, (float)12.00
+  };
+
+char far *category[MONTHS] =         /* category data array */
+  {
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jly", "Aug", "Sep", "Oct","Nov", "Dec"
+  };
+
+main()
+
+{
+chartenv env;                     /* define chart environment variable */
+
+_setvideomode(_ERESCOLOR);        /* set to graphics mode */
+
+/* initialize chart library and a default bar chart */
+_pg_initchart();
+
+_pg_defaultchart(&amp;env, _PG_BARCHART, _PG_PLAINBARS);
+
+/* set the chart size to the upper left quarter of the screen   */
+
+env.chartwindow.x1 = 0;
+env.chartwindow.y1 = 0;
+env.chartwindow.x2 = 320;
+env.chartwindow.y2 = 175;
+
+if(_pg_chart (&amp;env,category,value, MONTHS)) /* call to charting routine*/
+        {_setvideomode(_DEFAULTMODE);       /* error trap...*/
+         _outtext("error, can't draw chart");
+         }
+     else
+        {
+         getch();                          /* wait for a keystroke */
+         }
+        _setvideomode(_DEFAULTMODE);      /* reset the video mode  */
+
+         return(0);
+         }
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

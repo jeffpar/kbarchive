@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q38960: QuickBASIC 4.50 Editor Aborts Exit if Key Pressed During Save | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q38960: QuickBASIC 4.50 Editor Aborts Exit if Key Pressed During Save" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/038/Q38960/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/038/Q38960/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/038/Q38960/","publisher":null,"image":null,"headline":"Q38960: QuickBASIC 4.50 Editor Aborts Exit if Key Pressed During Save","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q38960-quickbasic-450-editor-aborts-exit-if-key-pressed-during-save">Q38960: QuickBASIC 4.50 Editor Aborts Exit if Key Pressed During Save</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q38960
+Product(s): See article
+Version(s): 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | buglist4.50 SR# S881121-15 | mspl13_basic
+Last Modified: 26-FEB-1990
+
+If a key is pressed while the QuickBASIC Version 4.50 editor is saving
+before an Exit, when the file is completely saved, QuickBASIC will run
+the program rather than exit to DOS.
+
+This information applies to Microsoft QuickBASIC Version 4.50 for
+MS-DOS. This problem does not occur in QuickBASIC Extended (QBX)
+shipped with Microsoft BASIC Profession Development System (PDS)
+Version 7.00 (fixlist7.00).
+
+If any file is in memory and has not been saved since last edit, and
+you select "Exit" from the File menu, QuickBASIC will ask if you
+wish to save the file before exiting. If you choose Yes, the file
+will be saved before QuickBASIC returns to DOS. However, if you
+choose to save the file, and then press any key before the save is
+finished, QuickBASIC will finish saving the file, but rather than
+exit to DOS, it will alter the program according to the key pressed,
+and attempt to RUN the program. If the key pressed makes a change
+to the source such that the program will not compile, an appropriate
+error message displays.
+
+You can work around this problem by allowing QuickBASIC to complete
+the process of saving the file before pressing a key.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

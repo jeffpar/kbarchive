@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156570: XFOR: How to Prevent MSMail from Delivering to SMTP Addresses | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156570: XFOR: How to Prevent MSMail from Delivering to SMTP Addresses" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156570/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156570/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156570/","publisher":null,"image":null,"headline":"Q156570: XFOR: How to Prevent MSMail from Delivering to SMTP Addresses","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156570-xfor-how-to-prevent-msmail-from-delivering-to-smtp-addresses">Q156570: XFOR: How to Prevent MSMail from Delivering to SMTP Addresses</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156570
+Product(s): Microsoft Exchange
+Version(s): winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 18-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- the operating system: Microsoft Windows NT, versions 3.5, 3.51 
+- Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to send Internet (SMTP) mail using the Internet Mail service in
+a Microsoft Exchange client and you have Microsoft Mail with a LAN connection
+configured at the same time, your message will not stay at the Outbox until you
+force delivery via the Internet Mail service. Instead, you might receive a
+Non-Delivery Notification (NDN) from your Microsoft Mail Postoffice or the
+message will be delivered by Microsoft Mail via the configured gateway.
+
+CAUSE
+=====
+
+The problem occurs when the Microsoft Mail transport has been enabled to deliver
+to SMTP addresses through the mail gateway on the Microsoft Mail Server side.
+
+WORKAROUND
+==========
+
+To keep the Microsoft Mail transport from delivering the SMTP message and let
+the Internet Mail service deliver it via the Internet Service Provider, follow
+these steps:
+
+1. Double-click the Inbox icon on the desktop to start the Microsoft Exchange
+  client.
+
+2. From the Tools menu, click Services.
+
+3. Select Microsoft Mail from Services and click Properties.
+
+4. Select the Delivery tab and click Address Type.
+
+5. Clear SMTP checkbox under Only Send Mail to These Address Types.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTSsearch kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

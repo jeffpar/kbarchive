@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q122552: SNA Server Client Error 629 or 546 when Using Named Pipes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q122552: SNA Server Client Error 629 or 546 when Using Named Pipes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/122/Q122552/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/122/Q122552/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/122/Q122552/","publisher":null,"image":null,"headline":"Q122552: SNA Server Client Error 629 or 546 when Using Named Pipes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q122552-sna-server-client-error-629-or-546-when-using-named-pipes">Q122552: SNA Server Client Error 629 or 546 when Using Named Pipes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q122552
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the SNA Server Windows 3.x client software configured to use the
+SNA Server Microsoft Networking (Named Pipes) Interface, the SNA client
+component (WNAP.EXE) may fail to start and the following error messages may
+appear (using both the 5250 emulator and 3270 emulator):
+
+Using 5250 Emulator
+-------------------
+
+  SNA Server Error: 629 No SNA Server configuration broadcast received
+
+  -or-
+
+  SNA Server Error: 546 Cannot establish connection with SNA Server
+  &lt;servername&gt;.
+
+Using 3270 Emulator
+-------------------
+
+  SNA Server Error: 629 No SNA Server configuration broadcast received
+
+  -or-
+
+  SNA Server Error: 546 Cannot establish connection with SNA Server
+  &lt;servername&gt;.
+
+  Error: The NAP is not started.
+
+NOTE: When these error messages appear, the SNA Server client icon (WNAP.EXE) is
+gray when it loads at the bottom of the screen, and it disappears when the error
+messages appear.
+
+CAUSE
+=====
+
+Error 629 occurs when the client cannot find an SNA Server in the local domain.
+Apart from networking problems, this error may occur if the Local Domain option
+is selected, and the Workgroup field of the Control Panel Network applet
+displays a value other than the intended Domain name.
+
+Each of the following can cause error 546:
+
+- You are using Windows for Workgroups 3.11 and the computer is configured to
+  use Microsoft IPX/SPX compatible transport (the default).
+
+- The client cannot open a session to the server.
+
+- You do not have access rights on the Windows NT server.
+
+- You are running SNA Server 2.11 and you have only one seat configured in the
+  License Server.
+
+Using Windows for Workgroups 3.11 and Microsoft IPX/SPX Compatible
+
+Transport to Access a Windows NT Server
+---------------------------------------
+
+For complete details about the problem using Windows for Workgroups 3.11 and
+IPX/SPX compatible transport to access a Windows NT 3.5 server, query on the
+following words in the Microsoft Knowledge Base:
+
+  SNA and 546 and NWLINK
+
+Client Cannot Open a Session to the Server
+------------------------------------------
+
+If you select the Remote Domain option while installing the SNA Server client,
+you are prompted to enter the primary or backup SNA Server name. If the client
+cannot open a session to one of these SNA Servers (for example, if the server
+name was not entered correctly, or if an underlying network connection problem
+exists), the SNA client displays error 546.
+
+The Client Does Not Find an SNA Server in the Domain
+----------------------------------------------------
+
+When the SNA Server client software is configured to use the Local Domain option,
+the client software sends a NetBIOS broadcast message to the domain and listens
+for a broadcast response from any server in the domain. If the client's
+workgroup name and/or domain name is different than the domain name of the SNA
+Server, the server will not see this message. On a Windows for Workgroups
+client, ensure that the Enterprise Network option to Log on to Windows NT or LAN
+Manager Domain is selected in the Networks option in Control Panel, and that the
+Domain name is correct. In addition, if the client and server are separated by a
+router, and this router does not pass NetBIOS broadcasts (such as with an IP
+router), this will also fail.
+
+The User Does Not Have Access Rights on the Windows NT Server
+-------------------------------------------------------------
+
+Once the client computer locates the server, the SNA Server client software
+attempts to open a named pipe session with the server. If the user does not have
+rights to open a session to the server, the open request fails.
+
+NOTE: The cause of the error messages above is different when the system runs on
+NetWare IPX/SPX, Banyan IP, or TCP/IP. Refer to the appropriate documentation
+describing possible causes of this error when you are using these other SNA
+Server client connection options.
+
+RESOLUTION
+==========
+
+To correct this problem, do the following:
+
+- Make sure that the Workgroup entry in the Control Panel Network applet dialog
+  box contains the local domain name if the Local Domain option is selected.
+
+- If the client does not find an SNA Server in the local domain, run the SNA
+  Server client setup program and configure the client for the Remote Domain
+  option, and provide the name of an SNA Server in the domain you want to
+  connect to.
+
+  NOTE: When connecting over TCP/IP and there is a router separating the SNA
+  Server and the client, the Windows for Workgroups computer requires a method
+  of resolving NetBIOS names to an IP address. If you are using the real mode
+  TCP/IP stack, an LMHOSTS file or a Windows Internet Name Service (WINS)
+  server may be used. (To use the WINS server with the real mode stack, you
+  must be using the real mode TCP/IP stack shipped with Windows NT version
+  3.5.)
+
+- If the user does not have access rights on the Windows NT server, grant the
+  user access to the Windows NT computer where SNA Server is running. You can
+  do this either through a specific user account or by enabling the Guest
+  account.
+
+- If Windows for Workgroups 3.11 is being used and the Microsoft IPX/SPX
+  compatible transport is installed, add "Directhost=no" (without the quotation
+  marks) to the [network] section of SYSTEM.INI file on the Windows for
+  Workgroups 3.11 client computer, and then reboot the computer.
+
+- If you are running SNA Server 2.11 and you have only one seat configured in
+  the License Server, increase the number of seats to the number of clients you
+  will have plus one seat.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: wfw wfwg prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

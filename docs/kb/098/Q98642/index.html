@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98642: Multimedia Err Msg: The Specified Device Is Not Open … | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98642: Multimedia Err Msg: The Specified Device Is Not Open …" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98642/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98642/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98642/","publisher":null,"image":null,"headline":"Q98642: Multimedia Err Msg: The Specified Device Is Not Open …","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98642-multimedia-err-msg-the-specified-device-is-not-open-">Q98642: Multimedia Err Msg: The Specified Device Is Not Open …</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98642
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SoundBits 
+- Microsoft Bookshelf for Windows, 1991, 1992, 1993, 1994, 1995 editions 
+- Microsoft Bookshelf 1996-97 for Windows 
+- Microsoft Cinemania for Windows, 1992, 1993, 1994, 1995, 1996, 1997 editions 
+- Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+- Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia 
+- Microsoft Multimedia Stravinsky for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the programs listed at the top of the article, you may
+receive the message:
+
+  The specified device is not open or is not recognized by MCI.
+
+If you choose Yes, SoundBits will continue to play sounds when you select .WAV
+files. These error messages will occur when you choose the SoundBits Browser
+icon or when you choose the Play Sound button in the Media Browser screen.
+
+When you try to play a sound in Encarta, Bookshelf, or Stravinsky, or play an
+animation that uses an .AVI file, you may receive one of the following
+messages:
+
+  Multimedia Viewer MCI
+  The specified device is not open or is not recognized by MCI.
+  device: WaveAudio
+
+-or-
+
+  File Name extension of the specified multimedia file is not associated with
+  any installed MCI device.
+
+If you choose Yes, the program will continue without sound capabilities.
+
+CAUSE
+=====
+
+These messages occur when the Windows [MCI] Sound driver is not installed or the
+WIN.INI [MCI Extensions] section is incorrect.
+
+RESOLUTION
+==========
+
+Verify that the Drivers option in Control Panel lists the [MCI] Sound driver. If
+the [MCI] Sound driver is listed, refer to the instructions, "To Verify the
+WIN.INI [MCI Extensions] Section." Otherwise, use the steps listed below, "To
+Install the MCI Sound Driver."
+
+How to Install the MCI Sound Driver
+-----------------------------------
+
+1. Choose the Drivers icon in Windows Control Panel.
+
+2. Choose the Add button.
+
+3. From the list of drivers that is displayed, select [MCI] Sound.
+
+4. Choose the OK button.
+
+[MCI] Sound should now be installed and listed in the Installed Drivers box.
+
+How to Verify the WIN.INI [MCI Extensions] Section
+--------------------------------------------------
+
+1. From the File menu in Program Manager, choose Run.
+
+2. Type WIN.INI.
+
+3. Choose the OK button.
+
+4. Select the Search menu.
+
+5. Choose Find.
+
+6. Type [mci extensions] and select Find Next.
+
+7. Choose Cancel on the Find dialog.
+
+8. Scroll down to view the [MCI Extensions] section and verify that the
+  following lines exist:
+
+     wav=Waveaudio
+     mid=Sequencer
+     avi=AVIVideo
+
+
+Additional query words: 1.00 multimedia multi media multi-media .wav wav wave start run open kbmm dev/drv sound wfw 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbZNotKeyword kbBookshelfSearch kbSoundBitsSearch kbEncartaEncycSearch kbCineManiaSearch kbMMStravinsky kbBookShelf1996 kbBookShelf1997 kbSoundBits kbEncarta1995 kbEncartaEnCyc1994
+Version           : :1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

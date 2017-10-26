@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254355: Access to Internet Services Manager Limited to Localhost | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254355: Access to Internet Services Manager Limited to Localhost" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254355/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254355/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254355/","publisher":null,"image":null,"headline":"Q254355: Access to Internet Services Manager Limited to Localhost","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254355-access-to-internet-services-manager-limited-to-localhost">Q254355: Access to Internet Services Manager Limited to Localhost</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254355
+Product(s): Internet Information Server
+Version(s): winnt:4.0,5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000 kbIIS kbiis400 kbiis500
+Last Modified: 24-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user attempts to remotely connect to the IISADMIN virtual directory (or
+possibly some other administrative share) of either the default Web site or the
+Administrative Web site on an Internet Information Services Server 4.0 or
+Internet Information Services 5.0 server, the connection fails, and the
+following error message appears in the browser:
+
+  Access to Internet Services Manager (HTML) is restricted to Localhost
+
+CAUSE
+=====
+
+The reason for this error is that permissions for that virtual directory, by
+default, restrict access to only those persons actually logged on to the local
+computer, not people connecting across the network.
+
+RESOLUTION
+==========
+
+Permissions to this folder (or any administrative virtual directory) should not
+be adjusted without great care because they can allow a high degree of control
+over the Web Server.
+
+NOTE: You are strongly discouraged from changing these attributes because of the
+security implications.
+
+You can use this procedure too allow or change access to the IISADMIN directory:
+
+1. Right-click the folder and select Properties.
+
+2. On the Directory Security tab, click the Edit button for IP Address and
+  Domain Name Restrictions.
+
+3. Adjust the settings to match your security needs.
+
+MORE INFORMATION
+================
+
+Another way that you can delegate permissions is to make a copy of the IISADMIN
+Web site and place it into the directory structure of the Web sites that are
+being hosted on this server. This allows the administrator to delegate control
+to some other person. Again, the Directory Security must be amended to open up
+access beyond the local computer.
+
+Additional query words: IIS 5, permissions, iisadmin
+
+======================================================================
+Keywords          : kbOSWin2000 kbIIS kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

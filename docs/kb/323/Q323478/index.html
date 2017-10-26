@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q323478: PRB: You Cannot Debug Through a Terminal Server Session | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q323478: PRB: You Cannot Debug Through a Terminal Server Session" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/323/Q323478/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/323/Q323478/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/323/Q323478/","publisher":null,"image":null,"headline":"Q323478: PRB: You Cannot Debug Through a Terminal Server Session","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q323478-prb-you-cannot-debug-through-a-terminal-server-session">Q323478: PRB: You Cannot Debug Through a Terminal Server Session</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q323478
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+- Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to attach a native debugger over Terminal Services to a process
+that runs in another WinStation (including system processes), you receive the
+following error message:
+
+  Win32 error 5
+  "Access is denied."
+
+Also, if you run AutoDump+ (which scripts the cdb.exe debugger) in -crash mode,
+you receive an error message similar to the following:
+
+  Autodump+ has detected that you are attempting to run in "Crash" mode, but
+  this account is currently logged into terminal server session ID:RDP-TCP#8.
+  "Crash" mode (invoked via the -crash switch) does not work inside a terminal
+  server session. To run Autodump+ in "Crash" mode, please log in locally at
+  the console.
+
+CAUSE
+=====
+
+The debugger cannot attach to a process that runs in another WinStation.
+
+RESOLUTION
+==========
+
+To work around this problem, you can attach noninvasively by using the -pv
+switch. Alternatively, you can schedule a task remotely by using the Task
+Manager or the AT.exe utility. You can either schedule the debugger to run, or
+you can schedule a remoted Cmd window.
+
+To Use the Task Manager:
+------------------------
+
+1. Start Windows Explorer, and then locate \\remotemachinename.
+
+2. Double-click the Scheduled Tasks icon.
+
+3. On the File menu, click New, and then click Scheduled Task.
+
+4. Give the new task a name, and then double-click the task to set the
+  properties.
+
+5. In the Run box, type one of the taskcommands described below.
+
+6. On the Schedule tab, set the time for the task to start.
+
+  NOTE: Make sure you give a username and a password when you are prompted.
+
+To Use the AT.exe Utility:
+--------------------------
+
+1. From the command prompt, type:
+
+  "at.exe \\remotemachinename 12:00 taskcommand" (without the quotation marks)
+
+2. Replace 12:00 with the time to start the task.
+
+3. Replace taskcommand with one of the taskcommands below:
+
+- To start your debugger directly (for example, adplus in -crash mode):
+
+c:\winnt\system32\cscript.exe "c:\program files\debugging tools for
+windows\adplus.vbs" -crash -iis -quiet
+
+NOTE: When you start adplus.vbs remotely, remember to use the -quiet switch and
+to check the .log file for status.
+
+- To start a remoted Cmd window:
+
+   - "c:\program files\debugging tools for windows\remote.exe" /s cmd
+     myremotedcmd
+   - To connect from the client, you can run remote /c remotemachinename
+     "myremotedcmd".
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: kbWinNT
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch kbOSWin2000 kbOSWinSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

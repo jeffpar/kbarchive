@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149669: BUG: &quot;Required File Missing: MSJINT32.DL_&quot; Setup Wizard Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149669: BUG: &quot;Required File Missing: MSJINT32.DL_&quot; Setup Wizard Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149669/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149669/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149669/","publisher":null,"image":null,"headline":"Q149669: BUG: &quot;Required File Missing: MSJINT32.DL_&quot; Setup Wizard Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149669-bug-required-file-missing-msjint32dl_-setup-wizard-error">Q149669: BUG: "Required File Missing: MSJINT32.DL_" Setup Wizard Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149669
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,3.0b
+Operating System(s): 
+Keyword(s): kbMDAC250kbbuglist
+Last Modified: 22-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0b 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Setup Wizard in Microsoft Visual FoxPro 3.0b, if you select the
+Btrieve Driver alone in the ODBC Drivers dialog box, the error "Required File
+Missing: MSJINT32.DL_" will occur. The error message appears after the Finish
+button is clicked when the Setup Wizard attempts to create the Setup Information
+File.
+
+RESOLUTION
+==========
+
+Select another driver, such as the Text or FoxPro driver in addition to the
+Btrieve driver.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a project containing a simple program that contains a single command:
+
+     WAIT WINDOW "This is a test"
+
+2. Build the project into an .exe and place the .exe into a directory by itself.
+
+3. Start the Setup Wizard. In Step 1, select the directory containing the .exe
+  as the Distribution Tree Directory.
+
+4. In Step 2, select ODBC Drivers from "Application requires the following." In
+  the ODBC Drivers dialog box, clear all drivers except Btrieve Driver (Win32S
+  only), and click OK. Click the Next button.
+
+5. In Step 3. specify a destination directory for the disk images or netsetup,
+  and select either of the disk sizes or the netsetup from this dialog box.
+
+6. In Step 4, Fill in a Caption and Copyright.
+
+7. Skip Steps 5 and 6 by clicking the Next button twice. Then click Finish. The
+  Progress dialog box appears, and a check appears next to the first three
+  items in the list. A thermometer bar appears with the caption "Creating setup
+  information file." An error dialog box appears with the with the caption
+  "Microsoft Visual FoxPro Wizards" and the message "! Required file missing:
+  MSJINT32.DL_."
+
+Notes
+-----
+
+If an additional driver is selected in the ODBC Drivers dialog box, such as Text
+Driver, Microsoft Excel Driver, or FoxPro 2.x Driver, the error does not occur.
+
+Additional query words: VFoxWin buglist3.00b kbvfp300b
+
+======================================================================
+Keywords          : kbMDAC250 kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300b
+Version           : WINDOWS:2.5,3.0b
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

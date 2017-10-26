@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163326: XCON: How and Why to Run Mtacheck | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163326: XCON: How and Why to Run Mtacheck" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163326/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163326/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163326/","publisher":null,"image":null,"headline":"Q163326: XCON: How and Why to Run Mtacheck","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163326-xcon-how-and-why-to-run-mtacheck">Q163326: XCON: How and Why to Run Mtacheck</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163326
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Mtacheck Logs are text files that show the results of running the Mtacheck.exe
+utility. The Mtacheck utility scans the internal database of the Microsoft
+Exchange Message Transfer Agent (MTA) looking for objects that are damaged and
+may be interfering with the queue processing. It places defective objects from
+the queues in files for you to examine later. In addition, Mtacheck rebuilds the
+queues so the MTA can be restarted and return to processing.
+
+MORE INFORMATION
+================
+
+Mtacheck can be run manually, but is also run automatically when the MTA service
+determines that the MTA was not shut down gracefully. If an automatic Mtacheck
+is run, events will be logged to the Windows NT Application Event Log and an
+Mtacheck.log file will be generated in the Mtacheck.out sub-directory of the
+exchsrvr\MTADATA directory containing the DB*.DAT files used by the MTA. If the
+Microsoft Exchange Performance Optimizer has been used to move Mtadata files,
+there may be more than one Mtadata directory).
+
+If Mtacheck is run manually, no logging is performed unless specified on the
+command line. In addition, logs can be created in any location and with any
+name. In terms of logging, the automatic Mtacheck is the equivalent of running
+the following at the command line (except an automatic run also logs events to
+the event logs):
+
+  MTACHECK /V /F \exchsrvr\mtadata\Mtacheck.out\Mtacheck.log
+
+INTERPRETING MTACHECK OUTPUT
+----------------------------
+
+Mtacheck examines each queue in the database. If it finds an error, it reports
+the name of the queue, the type of error, and the number of messages returned to
+the rebuilt queue.
+
+For example:
+
+  Queue 'xxxxxxx' required reconstruction
+   - corrupted queue file
+  23 messages recovered to the queue
+
+It then examines objects in the queues. If an object is in error, it removes it
+from the queue and places it in Exchsrvr\mtadata\mtacheck.out. It reports the
+object ID, error type, queue name, and the MTS-ID of the corrupted message, if
+known.
+
+An MTS-ID is assigned to each message by its transport service and remains with
+the message to its destination, although gateways may assign additional
+identifiers. It consists of the originating server, the date and time the
+message was sent, and a unique hexadecimal identifier for the message.
+
+A sample Mtacheck log can include:
+
+   Object 300596 invalid
+   - missing object file
+  Object removed from queue 'xxxxxxx'
+  MTS-ID: c=US;a= ;p=Owen;l=Washington0196012020010800000CDE
+
+When the MTA finishes processing, it displays one of following messages to
+describe the results:
+
+- Database clean, no errors detected
+
+- Database repaired, some data may have been lost
+
+- &lt;number&gt; queue(s) required repair out of &lt;percent&gt; detected
+
+- &lt;number&gt; object(s) damaged out of &lt;percent&gt; detected
+
+- Database has serious errors and cannot be reconstructed.
+
+- Some objects missing from the Boot Environment. Please reload the files from
+  the BOOTENV directory on the install CD.
+
+The boot environment message indicates that the report templates and other
+objects the MTA needs are missing and the MTA cannot generate them. These
+objects are included in the files in the \BOOTENV directory. Once you have
+installed them, rerun Mtacheck. When the process is complete, restart the MTA.
+
+Warning: Copy only objects that are missing. If you replace existing objects, all
+messages in MTA queues will be deleted.
+
+SEARCHING MESSAGE LOGS BY MESSAGE ID
+------------------------------------
+
+Mtacheck also reports the message ID of removed objects in its log if they can be
+determined. If message tracking is enabled, you can search the tracking log for
+the object by its message ID. Determining the path of the bad message can lead
+you to the cause of the problem. You may need to search the logs of more than
+one site to find the complete path of the message.
+
+Additional query words: whitepaper logging section
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

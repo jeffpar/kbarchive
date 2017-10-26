@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165385: Single Signon for APPC Applications Using Privileged Proxy | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165385: Single Signon for APPC Applications Using Privileged Proxy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165385/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165385/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165385/","publisher":null,"image":null,"headline":"Q165385: Single Signon for APPC Applications Using Privileged Proxy","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165385-single-signon-for-appc-applications-using-privileged-proxy">Q165385: Single Signon for APPC Applications Using Privileged Proxy</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165385
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbnetwork kbProgramming
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An Advanced Program-to-Program Communications (APPC) application is not allowed
+to open an LU6.2 conversation using the Microsoft SNA Server 3.0 Host Security
+single signon feature and impersonate the security context of another Microsoft
+Windows NT user account.
+
+An APPC application that is defined on a computer running Windows NT can only
+open a conversation using single signon on behalf of the Windows NT account that
+the application is defined to use.
+
+CAUSE
+=====
+
+SNA Server 3.0 was not originally designed to support this functionality.
+
+
+RESOLUTION
+==========
+
+Several updates have been made to SNA Server 3.0 to allow a privileged APPC
+application to open an APPC conversation using the single signon feature on
+behalf of any defined Windows NT user. This is the privileged proxy feature. In
+addition, an extension has been added to the APPC API to invoke the feature.
+These extensions are documented in the descriptions of [MC_]ALLOCATE APPC
+verbs.
+
+An APPC application becomes privileged when the application is started in a
+Windows NT user account that is a member of a special Windows NT group.
+
+When a Host Security Domain is configured, SNA Server Manager defines a second
+Windows NT group for use with the host security features of SNA Server. If the
+user account under which the actual client is running is a member of this second
+Windows NT group, the client is privileged to initiate an APPC conversation on
+behalf of any user account defined in the Host Account Cache.
+
+The following illustrates how the privileged proxy feature works:
+
+The SNA Server administrator creates a Host Security Domain called APP. SNA
+Server Manager now creates two Windows NT groups. The first group is called APP
+and the second is called APP_PROXY for this example. Users that are assigned to
+the APP group are enabled for single signon. Users assigned to the APP_PROXY
+group are privileged proxies. The administrator adds the Windows NT user
+AppcUser to the APP_PROXY group using the Users button on the Host Security
+Domain Property dialog box in SNA Server Manager.
+
+The administrator then sets up an APPC application on the SNA Server to run as a
+Windows NT service called APPCAPP and that service is set up to operate under
+the AppcUser user account. When APPCAPP runs, it opens an APPC session via an
+MC_ALLOCATE verb using the extended VCB format and specifies the Windows NT
+username of the desired user, UserA (for example). The SNA Server service sees
+the session request coming from a connection that is a member of the Host
+Security Domain APP. The Client/Server interface tells the SNA Server service
+that the actual client is AppcUser. The SNA Server service checks to see if
+AppcUser is a member of the APP_PROXY group. Because AppcUser is a member of
+APP_PROXY, the SNA Server service inserts the Username/Password for UserA in the
+APPC Attach (FMH-5) command and sends it off to the partner TP.
+
+APPC Application Requirements to Implement Privileged Proxy Support
+-------------------------------------------------------------------
+
+In order to support the priviledged proxy feature, the APPC application must
+implement the following program logic:
+
+1. First, the updated Winappc.h and Wappc32.lib files must be used from the SNA
+  Server 3.0 Service Pack 1 software development kit (SDK). The updated
+  Winappc.h includes new prototypes to support the privileged proxy feature.
+
+2. The APPC application must determine the Windows NT user ID and domain name
+  that it wishes to impersonate.
+
+3. The APPC application must set the following parameters before calling the
+  [MC_]ALLOCATE verb:
+
+   - Set security = AP_PROXY_SAME, AP_PROXY_PGM or AP_PROXY_STRONG.
+
+   - Enable the use of the extended ALLOCATE verb control block (VCB) structure
+     by setting the AP_EXTD_VCB flag in the opext field.
+
+   - Set up the pointers for proxy_user and proxy_domain to point to UNICODE
+     strings containing the user name and domain name of the user to be
+     impersonated.
+
+NOTE: The application does not need to set up user_id and pwd fields in the
+Allocate VCB.
+
+When the APPC application performs the above steps and calls [MC_]ALLOCATE, the
+SNA Server performs a lookup in the host security domain for the specified
+Windows NT user, and sets the user ID and password fields in the FMH-5 Attach
+message sent to the remote system.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbProgramming 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

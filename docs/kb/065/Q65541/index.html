@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q65541: How to Interpret 12-Bit FATs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q65541: How to Interpret 12-Bit FATs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/065/Q65541/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/065/Q65541/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/065/Q65541/","publisher":null,"image":null,"headline":"Q65541: How to Interpret 12-Bit FATs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q65541-how-to-interpret-12-bit-fats">Q65541: How to Interpret 12-Bit FATs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q65541
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:3.x,4.x,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 3.1, 3.2, 3.21, 3.3, 3.3a, 4.0, 4.01, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a description of 12-bit FAT field entries, followed by an
+explanation of how to locate and interpret them.
+
+MORE INFORMATION
+================
+
+=======================================================================
+
+              DESCRIPTION OF 12-BIT FAT FIELD ENTRIES
+
+=======================================================================
+
+The following are some definitions and explanations of FAT field entries:
+
+1. Twelve-bit FAT entries were used exclusively in DOS versions 1.x and 2.x.
+  They are also used in versions 3.00 and later if the medium contains less
+  than 4087 clusters. Media containing 4087 or more clusters use 16-bit FAT
+  fields in DOS versions 3.00 and later. Each field corresponds directly to an
+  assignable cluster on the disk.
+
+2. Several FAT field entries have fixed meanings. They are defined as follows:
+
+     12-Bit Entry     Meaning
+     ------------     -------
+
+       000h           Free cluster
+       001h           Unused code
+     FF0-FF6h         Reserved values
+       FF7h           Bad cluster
+     FF8-FFFh         Last cluster of file
+
+  (Any FAT field entry not found in the table above should be considered the
+  next FAT field number in the chain of the file to be examined.)
+
+3. Also, the first two fields or first three bytes (FAT field numbers 0 and 1)
+  in the FAT are always reserved. The first byte contains a copy of the media
+  descriptor byte and the two remaining bytes contain 0FFh.
+
+4. A broad view of a 12-bit FAT is as follows: if the FAT were divided into
+  groups of three bytes each, each group would contain two FAT field entries.
+
+5. Finally, a FAT field number (n) refers to the nth field in the FAT, not the
+  nth byte in the FAT. A FAT entry is the value stored in the field being
+  examined.
+
+=======================================================================
+
+          HOW TO LOCATE AND INTERPRET A FAT FIELD ENTRY
+
+=======================================================================
+
+Twelve-bit FATs are set up so that if the FAT field number is even, it must be
+interpreted differently than if it is an odd field number.
+
+HOW TO INTERPRET AN EVEN FAT FIELD NUMBER
+-----------------------------------------
+
+Formula
+-------
+
+Multiply the FAT field number by 1.5. Read the next two bytes at the resulting
+offset in the FAT. Strip off the last four bits from the second byte and shift
+the result left 8 bits. OR the resulting value with the first byte. This will
+give you the entry stored in the FAT field. This entry could be a link or a last
+cluster marker depending on the value.
+
+Example
+-------
+
+You are given the FAT field number 306 (132h).
+
+First, perform the following calculations:
+
+  (FAT field number) * 1.5 = FAT byte offset (N)
+
+  132h * 1.5 = 1CBh or 459
+
+Read the 459th (N) and 460th (N + 1) bytes in the FAT table. Suppose they contain
+the values 33h and 41h, respectively. The next field in the chain would be as
+follows:
+
+  (byte N) OR ((strip last 4 bits of byte N + 1) shift left 8 bits) =
+                                                Next FAT field number
+
+  33h | ((41h &amp; 0Fh) &lt;&lt; 8) = 133h or the 307th field in the FAT
+
+HOW TO INTERPRET AN ODD FAT ENTRY NUMBER
+----------------------------------------
+
+Formula
+-------
+
+Once again, multiply the FAT field number by 1.5 and floor it down to the next
+integer less than the result. Read two bytes at the resulting offset. Take the
+second byte and shift it left four bits. Then, shift the first byte right four
+bits and AND the two together. The result is the entry for this FAT field.
+
+Example
+-------
+
+You are given the FAT field number 307 (133h).
+
+Multiply and floor it:
+
+  floor ((FAT field number) * 1.5) = FAT byte offset (N)
+
+  floor (307 * 1.5) = 1CCh or 460
+
+Read bytes 460 (N) and 461(N + 1) from the FAT. In this example, they contain the
+values 41h and 14h, respectively. To interpret the entry perform the following:
+
+  (byte N &gt;&gt; 4) OR (byte N + 1 &lt;&lt; 4) = FAT Entry
+
+  (41h &gt;&gt; 4) | (14h &lt;&lt; 4) = 144h or the 324th field in the FAT
+
+
+Additional query words: 3.20 3.21 3.30 3.30a 4.00 4.01 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS321 kbMSDOS400 kbMSDOS320 kbMSDOS330a kbMSDOS310 kbMSDOS500 kbMSDOS330 kbMSDOS401
+Version           : MS-DOS:3.x,4.x,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

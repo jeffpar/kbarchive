@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170998: Cannot Log in to Windows NT Domain Over Internet Connection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170998: Cannot Log in to Windows NT Domain Over Internet Connection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170998/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170998/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170998/","publisher":null,"image":null,"headline":"Q170998: Cannot Log in to Windows NT Domain Over Internet Connection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170998-cannot-log-in-to-windows-nt-domain-over-internet-connection">Q170998: Cannot Log in to Windows NT Domain Over Internet Connection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170998
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbnetwork win95 win98
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are connected to the Internet through an Internet service provider (ISP),
+you may not be able to log in to a Windows NT Domain, or use Microsoft
+Networking functionality to connect to another Windows NT-based or Windows
+95/98-based computer on the Internet. This may occur even though you may have
+been able to in the past.
+
+MORE INFORMATION
+================
+
+A number of ISPs have disabled User Datagram Protocol (UDP) ports 137 and 138
+and Transmission Control Protocol (TCP) port 139 on their routers to reduce
+network traffic and provide protection against out-of-band (OOB) data attacks on
+servers. Microsoft Networking components rely on these ports (especially TCP
+port 139) for NetBIOS communication.
+
+If you could previously use Microsoft Networking components over the Internet but
+no longer can, contact your ISP to determine if UDP ports 137 or 138 or TCP port
+139 has been disabled on the ISP's routers.
+
+NOTE: This method of connecting to a Windows NT domain over the Internet is not a
+secure configuration and is not recommended by Microsoft. However, you can use
+the Point-to-Point Tunneling Protocol (PPTP) as an alternative method for
+communicating with your network over the Internet. PPTP is a networking
+technology that supports multiprotocol virtual private networks (VPNs), enabling
+remote users to access corporate networks securely across the Internet. Using
+PPTP, remote users can use Windows NT Workstation, Windows 95/98, and other
+point-to-point protocol (PPP)-enabled computers to dial into a local Internet
+service provider to connect securely to their corporate networks using the
+Internet.
+
+REFERENCES
+==========
+
+For more information about TCP ports, see the following RFC:
+
+  RFC-1700: Internet Assigned Numbers
+
+For additional information about PPTP, see the following articles in the
+Microsoft Knowledge Base:
+
+  Q161410 How to Set Up a Private Network Over the Internet Using PPTP
+
+  Q154062 How to Set Up a Windows NT PPTP Client
+
+For additional information about problems connecting to computers running
+Microsoft Networking components over the Internet, see the following article in
+the Microsoft Knowledge Base:
+
+  Q142027 Troubleshooting NET USE Failure (When PING NetBIOS Name Works)
+
+For additional information about out-of-band data, see the following articles in
+the Microsoft Knowledge Base:
+
+  Q143478 Stop 0A in TCPIP.SYS When Receiving Out Of Band (OOB) Data
+
+  Q168747 Update to Windows 95 TCP/IP to Address Out-of-Band Issue
+
+For information about the types of network traffic created when you are using
+Microsoft Networking components (without PPTP), see the following article in the
+Microsoft Knowledge Base:
+
+  Q139608 SMB Traffic During Windows NT Domain Logon
+
+Additional query words: winnt
+
+======================================================================
+Keywords          : kbnetwork win95 win98 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95; winnt:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

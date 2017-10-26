@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q161190: TN3270 Error 520 When the Host Unbinds and Binds a Session | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q161190: TN3270 Error 520 When the Host Unbinds and Binds a Session" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/161/Q161190/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/161/Q161190/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/161/Q161190/","publisher":null,"image":null,"headline":"Q161190: TN3270 Error 520 When the Host Unbinds and Binds a Session","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q161190-tn3270-error-520-when-the-host-unbinds-and-binds-a-session">Q161190: TN3270 Error 520 When the Host Unbinds and Binds a Session</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q161190
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The TN3270 client loses its session, receiving an error 520. The Application
+Event Logs on the computer running SNA Server show an event 603 with the
+following description:
+
+  TN3270E Service Error 520
+
+  Internal LU session state error in FirstInboundByteProcess.
+  State error id - 2 (expected CONT,SND,RCV).
+  Current state - LU-LU, SNDNXMT
+
+The TN3270 Server traces show the following:
+
+  &gt;09/24 10:33:35.850 (+ smidgen )  Event=TEV_DataFromSNA
+   Thread = 0x0000010B  Session = 0x00180478  Socket = 0x00000238
+   VCB address=0x00180684
+   verb_length=0x0044  verb=0x0052 (RUI)  opcode=0x8004 (WRITE)
+   sid=0x000000A8  correlator=0x00180478  post_handle=0x00000150
+   prim_rc=LUA_OK  sec_rc=LUA_SEC_RC_OK
+   lu_norm    lua_data_length=0x00000000
+   TH Only    efi=0  oadi=0  daf=00  oaf=00  snf=0002
+   RH +RSP FMD fi=0   sdi=0  bci=1  eci=1  (Only)
+   83 80 00    dr1=1  dr2=0  ri=0   qri=0  pi=0
+               bbi=0  ebi=0  cdi=0  csi=0  edi=0  pdi=0
+
+  &gt;09/24 10:33:35.850 (+ smidgen )  Event=TEV_CRTOutboundWriteComplete
+   Thread = 0x0000010B  Session = 0x00180478  Socket = 0x00000238
+   State = OPER        InputState = IGNORE      OutputState = SNAREAD
+   Toggle = LU-LU       LU State = SND         CanQueue = DATAPEND
+   Bracket = INB         DTActive
+
+  &gt;09/24 10:33:35.860 (+ 10 msecs)  Event=TEV_LogicError
+   FirstInboundByteProcess
+   LUSessionStateConfused
+
+CAUSE
+=====
+
+A session status flag in the TN3270 Server is not being reset when the host
+unbinds and rebinds a session.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the hotfix mentioned below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.0, 2.1,
+2.11, and 2.11 Service Pack 1. This problem was corrected in the latest
+Microsoft SNA Server 2.11 U.S. Service Pack. For information on obtaining the
+service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words: sp1 prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

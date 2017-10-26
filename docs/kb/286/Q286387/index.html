@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q286387: SMS: Software Inventory Doesn’t Update SMS Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q286387: SMS: Software Inventory Doesn’t Update SMS Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/286/Q286387/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/286/Q286387/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/286/Q286387/","publisher":null,"image":null,"headline":"Q286387: SMS: Software Inventory Doesn’t Update SMS Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q286387-sms-software-inventory-doesnt-update-sms-database">Q286387: SMS: Software Inventory Doesn’t Update SMS Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q286387
+Product(s): Microsoft Systems Management Server
+Version(s): 1.2 SP4
+Operating System(s): 
+Keyword(s): kberrmsg kbtool kbConfig kbMMC kbsms120 kbInventory kbMaintMan kbPackage kbsmsAdmin kbS
+Last Modified: 26-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Although a package is delivered to client computers and inventory collection is
+enabled, Software Inventory information is not updated on the SMS database. In
+the Maintman.log file on the site server, which is located in \SMS\logs\ folder,
+may have the following error message logged:
+
+  ERROR in Package rule file: syntax error Line: 1~~
+
+CAUSE
+=====
+
+This behavior occurs because when an SMS 1.2 client logs on to the domain, it
+checks the Pkg_16.cfg file in the \SMS\Logon.srv file. If Pkg_16.cfg is a zero
+byte file, the client does not have the necessary information regarding what to
+collect for the software inventory. This behavior can occur when the Package.rul
+file, that is located in \SMS\Site.srv\Maincfg.box\Pkgrule folder contains a
+negative CHECKSUM value.
+
+For example,
+
+  PACKAGE 58 "Captura Submitter 4.09" FILE "submit4.EXE" DATE 12/28/00 BYTE 0
+  77 CHECKSUM 0 0 -1830212815
+  PACKAGE 59 "Captura v4.09M (Build 827) Full" FILE "captura4.EXE" DATE 01/04/01
+  BYTE 0 77 CHECKSUM 0 0 -1742860494
+
+WORKAROUND
+==========
+
+To work around this behavior, you have to eliminate the negative CHECKSUM value.
+To do so, use either of the following methods:
+
+Method 1
+--------
+
+1. Open Package.rul in \SMS\Site.srv\Maincfg.box\Pkgrule\ by using Notepad.exe.
+
+2. Delete the lines that have a negative CHECKSUM value.
+
+3. Stop, and then restart SMS_Maintenance_Manager. To do this, go in the SMS
+  Administrator Program, and then on the Tool menu, click SMS Service Manager.
+
+4. Verify that the Pkg_16.cfg file is not a zero byte file.
+
+Method 2
+--------
+
+To delete the package that is causing the zero byte Pkg_16.cfg file:
+
+1. In the SMS Administrator console, click the Package icon, and then locate the
+  package.
+
+2. Create a Remove Package from Server job.
+
+3. After the job deletes packages from distribution servers, delete the package.
+
+4. Stop and then restart SMS_Maintenance_Manager.
+
+5. Verify that the Pkg_16.cfg file is not a zero byte file.
+
+MORE INFORMATION
+================
+
+Application Manager monitors the SMS database for new or changed inventory
+packages and creates a file that is called an inventory rule file (Package.rul).
+This file contains all of the defined inventory packages.
+
+Maintenance Manager copies a binary version of the inventory rule file
+(Package.rul) to all logon servers at the site.
+
+When you create a package, the file name, byte size, and CHECKSUM size can be
+added or retrieved. In some circumstances, a negative CHECKSUM value has been
+added even if the CHECKSUM field does not allow a negative value entry. If this
+is the case, the contents of Package.rul are created with a negative CHECKSUM
+value.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kberrmsg kbtool kbConfig kbMMC kbsms120 kbInventory kbMaintMan kbPackage kbsmsAdmin kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS120SP4
+Version           : :1.2 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

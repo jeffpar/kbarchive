@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q145865: FIX: Cannot Receive WM_HELP for a Subclassed Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q145865: FIX: Cannot Receive WM_HELP for a Subclassed Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/145/Q145865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/145/Q145865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/145/Q145865/","publisher":null,"image":null,"headline":"Q145865: FIX: Cannot Receive WM_HELP for a Subclassed Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q145865-fix-cannot-receive-wm_help-for-a-subclassed-control">Q145865: FIX: Cannot Receive WM_HELP for a Subclassed Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q145865
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbMFC KbUIDesign kbVC400 kbVC410fix kbDSupport kbGrpDSMFCATL kbArchitecture kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+WM_HELP is not received by the parent window of a control that has been
+subclassed by MFC.
+
+CAUSE
+=====
+
+CWnd, the base class of all MFC windows, has a handler for WM_HELP. This handler
+intercepts the WM_HELP message in the control itself and thus the message will
+not be sent to the parent window as expected.
+
+RESOLUTION
+==========
+
+Subclass all the controls in the CDialog, CFormView, CPropertyPage, or other
+CWnd derived class that contains the controls which have been subclassed by MFC.
+The "Sample Code" below iterates through the child windows of a given parent
+window and checks their WindowProc. If their WindowProc is AfxWndProc (MFC's
+WindowProc), it subclasses the controls again so that another window procedure
+is called first. In this WindowProc, we check for WM_HELP and call DefWindowProc
+instead of passing the message to MFC's AfxWndProc.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+MORE INFORMATION
+================
+
+CWnd::OnHelpInfo (handler for WM_HELP) sends a WM_COMMAND with ID_HELP to the
+application's main frame window. This message can be intercepted in the main
+frame, but at this point, the HELPINFO structure has been lost. The main frame
+will not have any way of determining which help context should be used.
+
+REFERENCES
+==========
+
+- Win32 SDK documentation for WM_HELP
+
+- MFC source code for CWnd::OnHelpInfo().
+
+The following code demonstrates how to work around this problem. In your class'
+OnInitDialog() or OnInitialUpdate(), call the FixHelp() function with the this
+pointer:
+
+      FixHelp(this);
+
+Sample Code
+-----------
+
+  /* Compile options needed:  Default
+  */ 
+
+  //////////////////////////////////////////////////////////////////////// 
+  // FixHelp.h - Include this file in your dialog's or form view's .CPP
+
+  void FixHelp(CWnd* pWnd); // Call this from your OnInitDialog() for a
+                            // dialog or OnInitialUpdate() for a CFormView
+
+  //////////////////////////////////////////////////////////////////////// 
+  // FixHelp.cpp - Insert this file into your project
+
+  #include "stdafx.h"
+
+  LRESULT CALLBACK ControlFixProc( HWND  hwnd, UINT  uMsg, WPARAM wParam,
+                                                          LPARAM  lParam);
+
+  void FixHelp(CWnd* pWnd)
+  {
+      // search all child windows.  If their window proc
+      // is AfxWndProc, then subclass with our window proc
+      CWnd* pWndChild = pWnd-&gt;GetWindow(GW_CHILD);
+      while(pWndChild != NULL)
+      {
+          if (GetWindowLong(pWndChild-&gt;GetSafeHwnd(),
+                                      GWL_WNDPROC) == (LONG)AfxWndProc)
+          {
+              SetWindowLong(pWndChild-&gt;GetSafeHwnd(), GWL_WNDPROC,
+                                                  (LONG)ControlFixProc);
+          }
+          pWndChild = pWndChild-&gt;GetWindow(GW_HWNDNEXT);
+      }
+  }
+
+  LRESULT CALLBACK ControlFixProc(HWND  hwnd, UINT  uMsg, WPARAM wParam,
+                                                          LPARAM  lParam)
+  {
+      if (uMsg == WM_HELP)
+      {
+          // bypass MFC's handler, message will be sent to parent
+          return DefWindowProc(hwnd, uMsg, wParam, lParam);
+      }
+      return AfxWndProc(hwnd,uMsg,wParam,lParam);
+  }
+
+  //////////////////////////////////////////////////////////////////////// 
+
+Additional query words: kbVC400bug 4.00 4.10 SubclassWindow SubclassDlgItem kbSweptVC600
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC400 kbVC410fix kbDSupport kbGrpDSMFCATL kbArchitecture kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

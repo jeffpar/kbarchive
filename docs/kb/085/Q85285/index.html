@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q85285: PRB: Petzold’s COLORS1 Sample Application Consumes Resources | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q85285: PRB: Petzold’s COLORS1 Sample Application Consumes Resources" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/085/Q85285/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/085/Q85285/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/085/Q85285/","publisher":null,"image":null,"headline":"Q85285: PRB: Petzold’s COLORS1 Sample Application Consumes Resources","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q85285-prb-petzolds-colors1-sample-application-consumes-resources">Q85285: PRB: Petzold’s COLORS1 Sample Application Consumes Resources</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q85285
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the COLORS1 sample application on pages 227-232 of the book "Programming
+Windows 3" by Charles Petzold (Microsoft Press) is run under Windows 3.1, the
+amount of free system resources available after the program is complete is less
+than the amount available before running the program.
+
+CAUSE
+=====
+
+The program allocates system resources and does not free them.
+
+RESOLUTION
+==========
+
+Make the following modifications to the WndProc function in the COLORS1 sample:
+
+1. In the code that processes the WM_VSCROLL message, find the following:
+
+        DeleteObject (GetClassWord (hwnd, GCW_HBRBACKGROUND));
+        SetClassWord (hwnd, GCW_HBRBACKGROUND,
+             CreateSolidBrush (RGB (color[0], color[1], color[2])));
+
+  Insert the following code in its place:
+
+        DeleteObject (SetClassWord (hwnd, GCW_HBRBACKGROUND,
+             CreateSolidBrush (RGB (color[0], color[1], color[2]))));
+
+2. In the code that processes the WM_DESTROY message, find the following:
+
+        DeleteObject (GetClassWord (hwnd, GCW_HBRBACKGROUND));
+
+  Insert the following code in its place:
+
+        DeleteObject (SetClassWord (hwnd, GCW_HBRBACKGROUND,
+             GetStockObject (WHITE_BRUSH)));
+
+MORE INFORMATION
+================
+
+In both cases above, the call to DeleteObject fails because the brush is
+selected into a device context (DC). Each time the user moves one of the scroll
+bars, the program creates a new brush from the GDI module's heap space. Once the
+GDI heap reaches its limit of 64 kilobytes, none of the applications running in
+the system can create GDI objects.
+
+Under the debugging version of Windows 3.1, the following error message is
+displayed on the debugging terminal each time the erroneous code is executed:
+
+  err COLORS1 GDI: GDI:Attempt to delete object owned by system
+
+The resolution to this situation is to select a different brush into the DC, and
+then to delete the old brush. Because the SetClassWord function returns the
+previous value for the specified class word, it is very straightforward to pass
+the return value from SetClassWord to DeleteObject.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

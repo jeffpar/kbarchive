@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124205: FIX: Browse Does Not Repaint Correctly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124205: FIX: Browse Does Not Repaint Correctly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124205/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124205/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124205/","publisher":null,"image":null,"headline":"Q124205: FIX: Browse Does Not Repaint Correctly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124205-fix-browse-does-not-repaint-correctly">Q124205: FIX: Browse Does Not Repaint Correctly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124205
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.6a,3.0
+Operating System(s): 
+Keyword(s): kbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, version 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a browse is in effect and the table order is changed, the current record
+may appear to change.
+
+WORKAROUND
+==========
+
+To work around the problem, use the following code:
+
+     CLOSE ALL
+     USE clients
+     SET ORDER TO Client_id
+     ON KEY LABEL F4 DO f4_key
+     ON KEY LABEL F5 DO f5_key
+     BROWSE NOEDIT
+     ON KEY
+     CLOSE ALL
+
+     PROCEDURE f4_key
+     SET ORDER TO 0
+     SHOW WINDOW clients REFRESH
+     GO RECNO()
+
+     PROCEDURE f5_key
+     SET ORDER TO 0
+     SHOW WINDOW clients REFRESH
+     GO RECNO()
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Visual FoxPro 3.0b
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use the following code to generate the BROWSE:
+
+     close all
+     use clients
+     set order to Client_id
+     on key label f4 do f4_key
+     on key label f5 do f5_key
+     browse noedit
+     on key
+     close all
+
+     procedure f4_key
+     set order to 0
+     show window clients refresh
+     *go recno()
+
+     procedure f5_key
+     set order to 0
+     show window clients refresh
+     *go recno()
+
+2. Use the arrow keys to move to the 'Advantage Computer School' record.
+
+3. Press the F4 key to see the current record change to the 'Big Masters'
+  record.
+
+NOTE: The Clients table is not included with Visual FoxPro 3.0 but the behavior
+can be reproduced and corrected using the same techniques as described above, on
+the Customer table with an index on the cust_id or customer_id field.
+
+Additional query words: VFoxWin FoxWin buglist2.60a fixlist3.00b buglist3.00
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300
+Version           : WINDOWS:2.6a,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

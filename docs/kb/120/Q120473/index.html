@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120473: Setup Hangs with Buslogic BT-946C on Powerstation/Powerserver | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120473: Setup Hangs with Buslogic BT-946C on Powerstation/Powerserver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120473/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120473/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120473/","publisher":null,"image":null,"headline":"Q120473: Setup Hangs with Buslogic BT-946C on Powerstation/Powerserver","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120473-setup-hangs-with-buslogic-bt-946c-on-powerstationpowerserver">Q120473: Setup Hangs with Buslogic BT-946C on Powerstation/Powerserver</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120473
+Product(s): Microsoft Windows NT
+Version(s): 3.10 3.50 3.51 4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+3.10 3.50 3.51 4.0
+
+WINDOWS
+
+kbsetup kbhw kb3rdparty
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.1, 3.5, 3.51, 4.0 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have Micron Powerstation or Powerserver with Buslogic's BT-946C SCSI
+controller, Windows NT setup may hang without an error message while attempting
+to load Windows NT to complete the graphic portion of Setup.
+
+
+MORE INFORMATION
+================
+
+According to Micron and Buslogic these steps usually solve the problem:
+
+1. Press CTRL-B to go to Buslogic Auto Configuration.
+
+2. Select Configure Device Menu.
+
+3. Select Disconnection Option.
+
+4. Set "Disconnection on all ID's except 0 and 1" to YES.
+
+5. If these were already set this way you may need to toggle them, because some
+  hard drives do not support disconnection.
+
+Buslogic Product Support does not recommend permanently changing the controller
+configuration as indicated above unless there is only one SCSI device attached
+to the controller. The procedure may disable the functionality of SCSI devices
+on the SCSI chain during certain I/O actions carried out by the OS.
+
+If there are no scanning devices on this chain it is possible to Disable the SCAN
+MODE option, since this can cause problems with the installation of NT,
+according to Buslogic.
+
+If this does not solve the problem, go to the Buslogic Auto Configuration and
+verify that the IRQ pin is set to pin A (the default) on the Powerstations and
+Powerservers. On P90 models this should be set to pin C (the default); the
+adapter is installed next to the power supply. Then verify that the IRQ being
+used is set to 15 and that in the "Advanced Options" the BIOS is set to use
+4D8.
+
+Additionally Buslogic BIOS should be flashed to the most recent version (1.40E as
+of 9/4/96) since this solves most setup or operational problems related to NT
+3.51 and NT 4.0.
+
+These steps solve most of the setup hang problems with Windows NT. You can get
+more assistance by contacting the vendors listed below:
+
+- Buslogic technical support: (408) 970-1414
+
+- Buslogic BBS: (408)492-1984
+
+- Micron Technologies technical support: (208)465-3434
+
+The products discussed here are manufactured by Micron and Buslogic, vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+the products' performance or reliability.
+
+Additional query words: prodnt hung stop vendor
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNT310Search kbWinNTW310Search
+Version           : 3.10 3.50 3.51 4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

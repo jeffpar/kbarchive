@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q87191: PROFS: Maximum Allowable Size of Mail Sent Through Gateway | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q87191: PROFS: Maximum Allowable Size of Mail Sent Through Gateway" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/087/Q87191/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/087/Q87191/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/087/Q87191/","publisher":null,"image":null,"headline":"Q87191: PROFS: Maximum Allowable Size of Mail Sent Through Gateway","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q87191-profs-maximum-allowable-size-of-mail-sent-through-gateway">Q87191: PROFS: Maximum Allowable Size of Mail Sent Through Gateway</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q87191
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The maximum size of mail items that can be handled by the Microsoft Mail Gateway
+to IBM PROFS and OfficeVision is dependent only on the storage available on the
+receiving system.
+
+For host-to-LAN mail, any size of message or file can by accepted by the gateway
+program on the LAN (HostDisp or VMGATE), provided that there is sufficient disk
+space on the mail system server to write the associated files. Some network
+operating systems (such as Novell NetWare) allow LAN administrators to limit the
+server disk space for specific clients. This should not be done to the gateway
+PC's network ID.
+
+For LAN-to-Host mail, the maximum message or file size is calculated by the Host
+Access software. This number is posted on the host session screen, and is
+viewable when you log on to the gateway VM ID. The LAN gateway program (HostDisp
+or VMGATE) checks this value before queuing up any mail to send to the host. If
+the space on the gateway VM ID is not sufficient to handle the mail, it is
+copied to the VMGATE\ERR directory and the administrator is notified.
+
+NOTE: The PROFS/OV Gtw version 3.4 and 3.4a add the feature to limit the message
+size that VMGATE.EXE sends from the LAN to VM. Use the command line switch
+-onnnnnnn. The message size is specified in kilobytes. If a message exceeds this
+size, the message without the attachments is returned to the sender. You can
+specify a number from 1 to 2,097,151. For example: to indicate that only
+messages smaller than 500K can be ent to VM, specify - o500
+
+For additional information, please see page 35 of the PROFS Gtw LAN
+"Administrators Guide."
+
+
+Additional query words: 3.00 pcmail profslan maximum mail size
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

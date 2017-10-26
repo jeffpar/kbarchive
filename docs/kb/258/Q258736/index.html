@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258736: FIX: Multi-Threaded DLL Is Slow to Release Connection Under MTS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258736: FIX: Multi-Threaded DLL Is Slow to Release Connection Under MTS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258736/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258736/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258736/","publisher":null,"image":null,"headline":"Q258736: FIX: Multi-Threaded DLL Is Slow to Release Connection Under MTS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258736-fix-multi-threaded-dll-is-slow-to-release-connection-under-mts">Q258736: FIX: Multi-Threaded DLL Is Slow to Release Connection Under MTS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258736
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbCOMt kbMTS kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbVS600sp4fix kbVS600sp4 kbVS60
+Last Modified: 20-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A dynamic-link library (DLL) created with Visual FoxPro and running under
+Microsoft Transaction Server is slow to release connections. This behavior
+occurs when a DLL is running under Microsoft Transaction Server (MTS) or COM+
+with Transaction Support marked as either "Required" or "Requires New."
+
+CAUSE
+=====
+
+Releasing a COM server launched from a DLL under MTS or COM+ with Transaction
+Support marked as either "Required" or "Requires New," initiates a call to
+CoFreeUnusedLibraries. When CoFreeUnusedLibraries is called, COM+ calls the
+DllCanUnloadNow function in every COM DLL in the process. If that call returns
+TRUE, then COM unloads the DLL.
+
+RESOLUTION
+==========
+
+Using Visual FoxPro 6.0 with Microsoft Visual Studio 6.0 Service Pack 4 or
+later, add the following line of code to the Init method of the code used to
+create the multi-threaded DLL:
+
+  =SYS(2339,0)
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in the latest
+service pack for Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the following
+article numbers to view the articles in the Microsoft Knowledge Base:
+
+  Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+  Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+To download the latest Visual Studio service pack, visit the following Microsoft
+Web site:
+
+  http://msdn.microsoft.com/vstudio/downloads/updates.asp
+
+MORE INFORMATION
+================
+
+Visual Studio 6.0 Service Pack 4 and later for Visual FoxPro 6.0 include the
+SYS(2339) function call. This function call may be used in single-threaded or
+multi-threaded DLLs to toggle when COM servers are released. The syntax for
+using SYS(2339) is:
+
+  SYS(2339,1) &amp;&amp; Default setting CoFreeUnusedLibraries called after a COM server is released.
+  SYS(2339,0) &amp;&amp; CoFreeUnusedLibraries is not called after a COM server is 
+  released.
+
+Setting SYS(2339,0) can improve scalability.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create project named "SLOWDLL" (without the quotation marks).
+
+2. Create a program file named SLOWDLL.PRG using the following code:
+
+  DEFINE CLASS MTDLLDemo AS SESSION OLEPUBLIC
+
+     PROCEDURE foot
+
+        oMTX = CREATEOBJ('MTXAS.APPSERVER.1')
+        oContext = oMTX.GetObjectContext()
+
+        loCommand = CREATEOBJ('ADODB.Command')
+        loRecordSet = CREATEOBJ('ADODB.RecordSet')
+        loConnection = CREATEOBJ('ADODB.Connection')
+        loConnection.CursorLocation = 3
+
+        *!* Note Adjust the name of the server used in the next line
+        lcConnectionStr = "Driver=SQL SERVER;SERVER=MY_SERVER;DATABASE=PUBS;UID=SA;PWD="
+        lcCommandStr = [SELECT Authors.au_id, Authors.au_lname, Authors.au_fname ] + ;
+           [FROM dbo.authors Authors]
+
+        loConnection.OPEN(lcConnectionStr)
+        loCommand.ActiveConnection = loConnection
+        loCommand.CommandText = lcCommandStr
+
+        IF loRecordSet.State = 1
+           loRecordSet.CLOSE()
+        ENDIF
+        loRecordSet.OPEN(loCommand)
+
+        loRecordSet.ActiveConnection = NULL
+        loCommand.ActiveConnection = NULL
+        loCommand = NULL
+        loConnection.CLOSE
+
+        lnStart = SECONDS()
+        loConnection = NULL  &amp;&amp;problem here
+        lnStop = SECONDS()
+
+        oContext.SetComplete
+
+        RETURN STR((lnStop-lnStart),6,2)+" seconds to disconnect"
+
+     ENDPROC
+
+  ENDDEFINE
+
+3. Build either a single-threaded or multi-threaded DLL.
+
+4. Open the Microsoft Transaction Server/COM+ Management Console and create a
+  new COM+ package named SLOWDLL.
+
+5. Open the Components folder of the SLOWDLL package.
+
+6. Right-click on the Components folder, select New from the pop-up menu, and
+  then select Component.
+
+7. In the COM Component Install Wizard, select Import component(s) that are
+  already registered and add the SLOWDLL.MTDLLDemo component.
+
+8. After adding the component, right-click on the component and select the
+  Properties option from the pop-up menu.
+
+9. Select the Transactions tab and then select either the "Required" or
+  "Requires New" button.
+
+10. From the Visual FoxPro Command window, run the following code:
+
+  OX=NEWOBJECT('SLOWDLL.MTDLLDemo')
+  ? OX.FOOT
+  RELEASE OX
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbCOMt kbMTS kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbVS600sp4fix kbVS600sp4 kbVS600sp5fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

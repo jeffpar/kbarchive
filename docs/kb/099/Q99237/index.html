@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99237: QuicKeys Intercepts Keystrokes Before Applications with Focus | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99237: QuicKeys Intercepts Keystrokes Before Applications with Focus" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99237/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99237/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99237/","publisher":null,"image":null,"headline":"Q99237: QuicKeys Intercepts Keystrokes Before Applications with Focus","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99237-quickeys-intercepts-keystrokes-before-applications-with-focus">Q99237: QuicKeys Intercepts Keystrokes Before Applications with Focus</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99237
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1993 edition,2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Bookshelf for Windows 1993 edition 
+- Microsoft Multimedia Viewer, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+QuicKeys is an application-independent search tool that allows you to select
+text or phrases within an application and search Bookshelf with defined
+keystrokes. As an installable driver, QuicKeys is continually monitoring the
+keyboard for a potential accelerator key combination. QuicKeys has no way of
+determining if the accelerator is for Bookshelf or the application.
+
+If a QuicKey combination matches an accelerator defined in another application,
+QuicKeys will intercept the keystrokes before the application. As a result,
+Bookshelf will load with Index or Find set to the defined book.
+
+RESOLUTION
+==========
+
+To avoid accelerator conflicts, define QuicKeys with two or more of the
+following accelerator keys: CTRL, SHIFT, and ALT.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Microsoft Bookshelf 1993.
+
+2. From the Options menu, select QuicKeys.
+
+3. Define All Books with the key combination CTRL+Z.
+
+4. Exit Bookshelf 1993.
+
+5. Start Microsoft Excel.
+
+6. Press CTRL+Z (The Excel accelerator for Undo).
+
+Result: Bookshelf is loaded with the Index set to All Books.
+
+Additional query words: KBPRIORITY1 1993 Intercepts Bookshelf 93 '93 multimedia multi media multi-media books start run usage quickie quickkey quick key keys
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbBookshelfSearch kbBookShelf1993 kbMMViewer200
+Version           : :1993 edition,2.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

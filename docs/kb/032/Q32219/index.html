@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q32219: DosGetPid and DosGetInfoSeg Get Process Identification (PID) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q32219: DosGetPid and DosGetInfoSeg Get Process Identification (PID)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/032/Q32219/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/032/Q32219/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/032/Q32219/","publisher":null,"image":null,"headline":"Q32219: DosGetPid and DosGetInfoSeg Get Process Identification (PID)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q32219-dosgetpid-and-dosgetinfoseg-get-process-identification-pid">Q32219: DosGetPid and DosGetInfoSeg Get Process Identification (PID)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q32219
+Product(s): See article
+Version(s): 6.00 6.00b 7.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 1-FEB-1990
+
+Two MS OS/2 API calls return the process identification (PID) of the
+current process. The two calls are DosGetPid and DosGetInfoSeg, which
+are illustrated in a code example below.
+
+This information applies to Microsoft BASIC Compiler Versions 6.00 and
+6.00b for MS OS/2, and to Microsoft BASIC Professional Development
+System (PDS) Version 7.00 for MS OS/2.
+
+DosGetPid is the simplest and most direct way of retrieving the
+current PID. This function is passed the address of a structure
+containing three integers or words. The function declarations are as
+follows:
+
+      TYPE PidInfo
+           Pid as integer        'Process Pid
+           Tid as integer        'Thread Pid
+           pidParent as integer 'Parent Pid
+      END TYPE
+
+      DECLARE FUNCTION DosGetPid%(_
+                   SEG P1 AS PidInfo)
+
+The PID information is returned in the structure.
+
+The information returned by DosGetInfoSeg also helps find the PID, but
+the procedure is more difficult. This function returns the address of
+both the GDT and LDT. The LDT contains the process information. To
+locate the PID, you must set the segment to the LDT (DEF SEG=address
+of LDT), then look at the bytes that contain the desired information.
+The program below demonstrates this method. (This program also
+contains an example of DosGetPid.)
+
+       'Declarations used below can be found in BSDOSPC.BI
+       TYPE PidInfo
+            Pid as integer
+            Tid as integer
+            pidParent as integer
+       END TYPE
+       DECLARE FUNCTION DosGetInfoSeg%(_
+                    SEG P1 AS INTEGER,_
+                    SEG P2 AS INTEGER)
+       DECLARE FUNCTION DosGetPid%(_
+                    SEG P1 AS PidInfo)
+
+       DEFINT A-Z
+       CLS
+       DIM info AS PidInfo
+
+       x=DosGetInfoSeg%(global,localo)
+
+       IF (x) THEN
+         Print "Error, the number is : ";x
+       ELSE
+         Print "The Global Segment : ";Global
+         Print "The Local Segment : ";localo
+         def seg=localo            'Change Segment
+         pid1=peek(0)+(256*(peek(1))) 'First Word in segment
+         pid2=peek(2)+(256*(peek(3))) 'Second Word
+         pid3=peek(6)+(256*(peek(7))) 'Fourth Word
+         def seg
+         print "         Current Process ID : ";pid1
+         print "       Process ID of Parent : ";pid2
+         print "Thread ID of Current Thread : ";pid3
+       END IF
+
+       x=DosGetPid%(info)
+
+       IF (x) THEN
+         Print "Error, the number is : ";x
+       ELSE
+         print "         Current Process ID : ";info.pid
+         print "       Process ID of Parent : ";info.pidParent
+         print "Thread ID of Current Thread : ";info.tid
+       END IF
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

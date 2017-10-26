@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q80902: Windows 3.1 Application Compatibility (part 7 of 7) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q80902: Windows 3.1 Application Compatibility (part 7 of 7)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/080/Q80902/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/080/Q80902/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/080/Q80902/","publisher":null,"image":null,"headline":"Q80902: Windows 3.1 Application Compatibility (part 7 of 7)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q80902-windows-31-application-compatibility-part-7-of-7">Q80902: Windows 3.1 Application Compatibility (part 7 of 7)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q80902
+Product(s): Microsoft Windows Software Development Kit
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Application Compatibility Document for Windows 3.1:
+
+Due to the amount of information in this document, it has been broken into seven
+pieces. To find all seven pieces of this document and the Windows 3.1
+Compatibility Test checklist, query this knowledge base on the words:
+
+  prod(winsdk) and 31compattest
+
+ Printing
+--------
+
+Most of the printing changes can be tested by printing documents from your
+application with Windows versions 3.0a and 3.1 and comparing the output. Try to
+print documents that represent the types of images your application is capable
+of printing. You must test with the printers listed below; you should try
+others.
+
+- Postscript
+
+- LaserJet II
+
+- LaserJet III
+
+- Dot matrix
+
+RENAMED PRINTERS:
+
+The printer names have been renamed, and your application could have problems
+with an upgrade if your application or documents refer to a specific printer.
+For example, if your application explicitly looks for the printer name "PCL/HP
+LaserJet," it will no longer find this name. Note that renaming the printer does
+not affect soft fonts.
+
+Test:
+
+Bring a document created with your Windows version 3.0a application to Windows
+versions 3.1 and print it. Be sure there are no error messages and that it
+prints correctly.
+
+POSTSCRIPT DRIVER:
+
+The GETEXTENTABLE escape has been removed.
+
+Test:
+
+Check your application code for this escape.
+
+UNIVERSAL PRINTER DRIVER:
+
+In Windows version 3.1, with the exception of PostScript and a few other printer
+drivers, most printer drivers are based on Universal Printer Driver technology.
+This technology provides uniform support and behavior for drivers in areas such
+as font mapping, color mapping, escapes, and ExtDeviceMode and
+DeviceCapabilities functions. It also makes DIB support available for dot matrix
+printers.
+
+Applications can now rely on the values that the DeviceCapabilities function
+returns to design their print dialog.
+
+PCL 4 DRIVER:
+
+The PCL Driver changed in the following ways:
+
+- Default resolution is 300 DPI for Windows version 3.1. In Windows version
+  3.0, it was 75 DPI.
+
+- The driver no longer requires a separate text band when printing at 300 DPI
+  if there is enough free memory for a full-page band.
+
+- The driver clips text vertically using the following formula:
+
+  if (y + lpFont-&gt;dfInternalLeading &lt; rcClip.top
+         || y &gt;= rcClip.bottom)
+     return 0;
+
+- The driver automatically tracks memory. If you encounter an out-of- memory
+  error, be sure you set memory configuration correctly. If the memory
+  configuration is correct but the document still generates out-of-memory
+  errors (even though it prints under Windows version 3.0), please send an
+  electronic copy of the document when you return the checklist.
+
+- The following escapes are removed:
+
+    EXT_DEVICE_CAPS
+    EXTTEXTOUT
+    FLUSHOUTPUT
+    GETEXTENTABLE
+    GETFACENAME
+    GETSETPAPERORIENT (New ResetDC function provides
+                       the same functionality)
+    GETTECHNOLOGY
+    SETALLJUSTVALUES
+
+- The following escapes still exist for compatibility, but we recommend that
+  you get the same information by using the DeviceCapabilities function:
+
+  Escape                     Replacement
+  ------                     -----------
+
+  ENUMPAPERBINS              Use DeviceCapabilities DC_BINNAMES.
+  ENUMPAPERMETRICS           Use DeviceCapabilities DC_PAPERS,
+                             DC_PAPERSIZE, DC_PAPERNAMES.
+
+- Printer settings are now saved in the WIN.INI file under the [device,port]
+  section instead of under the [driver,port] section. For example, the WIN.INI
+  file may now contain a [HP LaserJet IIP,LPT1] setting instead of
+  [HPPCL,LPT1]. This implies that more than one printer within a driver can be
+  connected to the same port at the same time while each retains its own
+  settings.
+
+- A new [PrinterAliases] section in WIN.INI supports custom printer names.
+
+- The installation of HP/PCL soft fonts and external cartridges doesn't change
+  -- the information is still saved under the [driver,port] section. Thus, if
+  you install a soft font on LPT1, all HP laser printers connected to LPT1: see
+  this soft font.
+
+- In Windows version 3.0, the HPPCL.DRV has GDI simulate a bold typeface for a
+  device font if a bold version is not available; the Windows version 3.1
+  driver does not.
+
+Applications that rely on the Windows version 3.0 driver always to enumerate the
+first full-page text band and subsequent graphics bands should remove this
+dependency. The Windows version 3.1 driver can put text into graphics bands and
+can put graphics into the first band.
+
+OTHER DOT-MATRIX PRINTER DRIVERS:
+
+Dot-matrix drivers changed as follows:
+
+- Printable regions increased on many dot-matrix drivers.
+
+- Color support added for Fujitsu and NEC drivers
+
+- Some resolutions changed on some drivers. Removed "odd" aspect ratios and put
+  in closer to one aspect ratios. For example, NEC24.DRV changed 60 x 180 to
+  120 x 180.
+
+- Because of black-and-white printer driver dependency on the screen, some
+  changes may be the result of screen driver changes.
+
+Applications should test for color DIB printing using a color driver.
+
+                      Other Core Enhancements
+-----------------------
+
+Most core enhancements affect applications only if they make assumptions about
+internal structures or internal operations. Most of the testing for this section
+involves looking at the changes and reviewing the code for your application.
+Below is a list of the things you need to look for.
+
+- An application making assumptions about internal data structures.
+
+- An application building its own selectors.
+
+- Press CTRL+ALT+DEL while your application is running. Be sure windows
+  continues to function after your application terminates.
+
+There are the following changes:
+
+- Structure of kernel internal memory objects has changed. Applications that
+  made assumptions regarding these internal structures will most likely be
+  broken. TOOLHELP.DLL has been added to Windows version 3.1, which provides a
+  documented interface for accessing internal data.
+
+- Kernel now runs at ring 3 (instead of ring 1 as in Windows version 3.0) to
+  prevent ill-behaved applications from relying on the relationship between
+  handles and selectors. This does not affect the IOPL (input/output privilege
+  level) of applications and drivers.
+
+- GP-fault cleanup. If one application GP faults, Windows cleans up its
+  internal state and allows the system to continue running after terminating
+  that application.
+
+- Local CTRL+ALT+DEL. Users can kill a single Windows-based application or a
+  single VM by pressing CTRL+ALT+DEL. The rest of the system should continue
+  running.
+
+- Dr. Watson and continue button. Dr. Watson is included but not installed by
+  default. If the user installs Dr. Watson, this application reports and logs
+  data on application error. For some GP faults, Dr. Watson gives the user the
+  option to continue running the application, resetting the IP to the
+  instruction following the GP fault. Pressing the continue button bypasses GP
+  faults until the next task switch.
+
+- Real mode is removed.
+
+- We correctly reflect floating-point exceptions to virtual mode, allowing
+  applications that use their own floating-point packages to work correctly.
+  Kernel correctly saves and restores the state of floating-point interrupt
+  functions, allowing WIN87EM.DLL to coexist with other floating-point
+  emulators.
+
+- UMB mechanisms defined for XMS are supported, allowing software such as
+  EMM386, 386MAX, and QEMM to load networks and other devices in HIMEM. Windows
+  is fully backward compatible with versions 5.x and 6.x of QEMM and 386MAX.
+
+  SMARTDrive 4
+------------
+
+Windows version 3.1 includes a new high performance disk cache. Applications
+should test with this disk cache enabled (Setup enables this by default) to
+ensure that no side effects occur.
+
+Tests:
+
+1. Read files from disk.
+
+2. Write files to disk.
+
+3. If your application uses the floppy drive or can read and write files to the
+  floppy drive, try those operations with caching enabled on the floppy.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : :3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

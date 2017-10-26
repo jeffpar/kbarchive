@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142217: Encarta World Atlas 1996: Setup Fails with NexGen CPU | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142217: Encarta World Atlas 1996: Setup Fails with NexGen CPU" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142217/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142217/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142217/","publisher":null,"image":null,"headline":"Q142217: Encarta World Atlas 1996: Setup Fails with NexGen CPU","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142217-encarta-world-atlas-1996-setup-fails-with-nexgen-cpu">Q142217: Encarta World Atlas 1996: Setup Fails with NexGen CPU</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142217
+Product(s): Microsoft Home Multimedia Titles
+Version(s): 1996
+Operating System(s): 
+Keyword(s): 
+Last Modified: 12-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Encarta 96 World Atlas for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt Encarta World Atlas Setup on a computer using a NexGen Central
+Processing Unit (CPU), the installation fails and you receive the error
+message:
+
+  Encarta 96 World Atlas requires a 486 DX/25 or faster processor.
+
+After you click OK, the following message appears:
+
+  Encarta 96 World Atlas Setup was not completed successfully.
+
+Click OK and the installation quits.
+
+You can complete a manual installation process. However, when you create and then
+click the World Atlas icon, the following error message appears:
+
+  Encarta 96 World Atlas requires a 486 DX/33 or faster processor.
+
+When you click OK the process aborts.
+
+CAUSE
+=====
+
+Before starting the installation process, Encarta 96 World Atlas checks for the
+processor type. If the CPU type is determined to be a NexGen, the installation
+process fails.
+
+
+RESOLUTION
+==========
+
+
+NexGen has created the Windows CPU Identifer utility to properly identify the
+Nx586 processor. Running this utility prior to starting an application allows
+the application to obtain the correct processor type. This utility is included
+in the NexGen Tool Kits and Update Kits. Tool Kits are provided with every
+motherboard and processor. Update Kits can be downloaded from the NexGen online
+service. There are two versions of the kits: PCI and VL. The first letter
+identifies the bus type: P=PCI, V=VL.
+
+  Update Kit File Names
+     PCI Update Kit:  updtpixx.exe
+      VL Update Kit:  updtvlxx.exe
+
+  (where xx is the latest version number)
+
+MORE INFORMATION
+================
+
+If you have a BIOS version number lower than the following BIOS version
+numbers:
+
+  PCI Board:  p06w034n
+   VL Board:  v06d033w
+
+you need to obtain a flash bios upgrade from NexGen. Flash BIOS updates are
+included in the NexGen Update Kits.
+
+To obtain the Update Kits and for more information on the NexGen CPU, contact
+NexGen at the following locations:
+
+- NexGen Microsystems Inc Technical support (USA): (800) 863-9436
+
+- NexGen Microsystems Inc BBS: (408) 955-1839
+
+- World Wide Web address: http://www.nexgen.com
+
+- FTP address: ftp.nexgen.com
+
+
+The following products have been known to identify the Nx586 processor as an
+80386:
+
+- Encarta 96 World Atlas
+
+- Hover
+
+NOTE: Any program that requires a 486 or greater and checks the chip for
+confirmation also share this problem.
+
+If My Computer properties is checked, Windows 95 reports it is running on a 80386
+processor.
+
+The third-party product discussed here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm hung locked hangs stops responding hanged crashed crash crashes freeze frozen locked locked-up lock bombed bomb down nextgen next gen genration gens netgen next-gen
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas1996
+Version           : 1996
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

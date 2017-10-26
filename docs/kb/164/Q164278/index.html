@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164278: FP: Error Installing FP Server Extensions if Directory Mapped | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164278: FP: Error Installing FP Server Extensions if Directory Mapped" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164278/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164278/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164278/","publisher":null,"image":null,"headline":"Q164278: FP: Error Installing FP Server Extensions if Directory Mapped","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164278-fp-error-installing-fp-server-extensions-if-directory-mapped">Q164278: FP: Error Installing FP Server Extensions if Directory Mapped</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164278
+Product(s): Word Front Page
+Version(s): windows:1.0,1.1,97
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup kbdta
+Last Modified: 04-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194254.
+
+SUMMARY
+=======
+
+
+
+SYMPTOMS
+========
+
+When you install FrontPage Server Extensions to a Web server or publish a Web to
+another server you receive the following error message:
+
+  '&lt;directory name&gt;' does not refer to a page in this Web.
+
+CAUSE
+=====
+
+You may receive this error message because FrontPage cannot manage content that
+is not stored within the Web content directory on the server. If you install the
+FrontPage Server Extensions to a Web server that is mapped to a directory that
+has the same name as the directory you defined for the FrontPage Web, the server
+redirects the FrontPage Web directory to a location outside of the FrontPage
+Web. For example, when you install Microsoft Personal Web Server, it creates a
+directory mapping for a folder called "Docs." If you attempt to create a
+FrontPage Web named Docs on the Microsoft Personal Web Server, you will receive
+the error message described in the "Symptoms" section.
+
+This problem occurs on any server configured to map a string to a directory. For
+example, some servers redirect the /Cgi-bin folder to an area outside of the Web
+by default. If you publish a FrontPage Web that contains a /Cgi-bin folder to
+one of these servers, you will receive the error message described in the
+"Symptoms" section.
+
+FrontPage attempts to create a /Cgi-bin folder on any root Web. The /Cgi-bin
+folder contains the Htimage.exe and Imagemap.exe programs used for image map
+creation in NCSA, Apache, Netscape, or CERN image map formats.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Modify the Configuration Files
+----------------------------------------
+
+Modify the configuration files or use the configuration utility for the Web
+server to remove the server-wide mapping for the directory, and then allow the
+FrontPage Server Extensions to create the mappings on a per-Web basis.
+
+Method 2: Rename the Cgi-bin folder before Publishing the Web
+-------------------------------------------------------------
+
+Rename the /Cgi-bin (or other) folder on the source server before you publish
+your Web. Contact your server administrator to enable the folder for executable
+programs.
+
+
+Additional query words: 1.00a 97
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : windows:1.0,1.1,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

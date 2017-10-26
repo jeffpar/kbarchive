@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155000: Error Message: Sage Cannot Be Removed | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155000: Error Message: Sage Cannot Be Removed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155000/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155000/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155000/","publisher":null,"image":null,"headline":"Q155000: Error Message: Sage Cannot Be Removed","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155000-error-message-sage-cannot-be-removed">Q155000: Error Message: Sage Cannot Be Removed</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155000
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:95
+Operating System(s): 
+Keyword(s): kberrmsg kbtool win95
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Plus! for Windows 95 
+- Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+When you attempt to remove Microsoft Plus! for Windows 95, you may receive the
+following error message:
+
+  Sage cannot be removed because backups are missing or the wrong version.
+
+This error message may be followed by:
+
+  Microsoft Plus! for Windows 95 Setup was not completed successfully.
+
+CAUSE
+=====
+
+You are attempting to uninstall System Agent from a Windows 95 OEM Service
+Release 2 (OSR2) Installation.
+
+Microsoft Plus! Setup does not remove System Agent from Windows 95 OSR2
+installations.
+
+RESOLUTION
+==========
+
+Microsoft Plus! Setup uninstalls System Agent if the backup files are copied
+from a retail Windows 95 installation. If you have access to a retail Windows 95
+system, use the following steps to remove System Agent.
+
+NOTE: The following files are required. If Microsoft Plus! is installed on the
+retail Windows 95 system, the following files' extension will be .w95. File
+sizes are listed in bytes.
+
+  Windows\Scandskw.exe           4,608
+  Windows\System\Dskmaint.dll  189,456
+  Windows\Command\Scandisk.exe 134,738
+
+If you need to extract these files from the retail Windows 95 disks, they are
+located as follows:
+
+  File name      DMF disks      Non-DMF disks   CD-ROM
+  ----------------------------------------------------------
+  Scandskw.exe   Win95_09.cab   Win95_14.cab    Win95_09.cab
+  Dskmaint.dll   Precopy2.cab   Precopy2.cab    Precopy2.cab
+  Scandisk.exe   Disk 1         Disk 1          Win95 folder
+
+1. Rename the corresponding files in the Windows 95 OSR2 installation to a
+  different file extension (such as .old).
+
+2. Copy the retail Windows 95 files to the Windows 95 OSR2 installation with the
+  extension .w95.
+
+3. Run Microsoft Plus! Setup and remove System Agent.
+
+4. Rename the original Windows 95 OSR2 system files to their original file
+  extensions.
+
+NOTE: Failure to restore the original files may render ScanDisk unusable. For
+more information, please see the following Microsoft Knowledge Base article:
+
+  Q154998 Error Message: ScanDisk Cannot Check Drive
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+If a retail Windows 95 system is unavailable, you can prevent System Agent from
+loading by removing the SystemAgent string from the following registry key
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+and the Plus! key from the following registry key:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ 
+  Uninstall\Plus!
+
+To reclaim disk space, delete the following System Agent files:
+
+  Windows\System folder: Sage.exe, Sage.vxd, Sage.dll.
+  Program Files\Plus! folder: Sagelog.txt, Sysagent.exe
+  Program Files\Plus!\System folder: Sage.dat, Sage.def
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! for Windows 95
+version 1.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Microsoft Plus! Setup updates several system files, as well as ScanDisk, for
+DriveSpace 3. Setup does not overwrite these files but rather renames them with
+.w95 extensions so they can be restored.
+
+When you install Microsoft Plus! in Windows 95 OSR2, Setup does not replace
+Windows 95 OSR2 system files because they are more recent. Consequently, backups
+that would be generated for the files are not created.
+
+The uninstall process for System Agent includes restoring the original ScanDisk
+files, but the uninstall process does not work with OSR2 because the backup
+files were not created.
+
+======================================================================
+Keywords          : kberrmsg kbtool win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbOPKSearch kbWin95 kbPlus95
+Version           : WINDOWS:95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

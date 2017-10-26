@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q64789: _outtext Can Produce Protection Violation Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q64789: _outtext Can Produce Protection Violation Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/064/Q64789/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/064/Q64789/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/064/Q64789/","publisher":null,"image":null,"headline":"Q64789: _outtext Can Produce Protection Violation Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q64789-_outtext-can-produce-protection-violation-error">Q64789: _outtext Can Produce Protection Violation Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q64789
+Product(s): See article
+Version(s): 6.00
+Operating System(s): OS/2
+Keyword(s): ENDUSER | buglist6.00 | mspl13_c
+Last Modified: 15-AUG-1990
+
+Under certain conditions, the C 6.00 version of _outtext can produce a
+protection violation. The error occurs when executing protected-mode
+programs compiled under the large and compact memory models. The
+following sample code illustrates the problem:
+
+Sample Code:
+
+/* Compile with any optimizations in large or compact model... */
+
+#include &lt;stdio.h&gt;
+#include &lt;graph.h&gt;
+#include &lt;conio.h&gt;
+
+char a1[10] = "boogie";
+char a2[10];
+
+void main(void)
+{
+   _outtext(a1);        // This _outtext works correctly
+   a2[0] = 'a';
+   a2[1] = 'b';         // Construct a null-terminated string
+   a2[2] = '\0';
+   _outtext(a2);        // Segmentation Violation occurs here
+}
+
+Three methods of working around this problem are listed below:
+
+1. Initialize the string (that is, char a2[10] = "\0";).
+
+2. Declare the string variable as a local variable rather than as a
+   global variable.
+
+3. Increase the number of elements in the character array. In the
+   large memory model, arrays in the range of 649 to 5,000 bytes in
+   size will work without problems. Arrays containing 643 to 5,000
+   bytes will work when compiling under the compact memory model.
+   (Arrays larger than 5,000 bytes may work also; however, this has
+   not been tested.)
+
+Microsoft has confirmed this to be a problem with C version 6.00. We
+are researching this problem and will post new information here as it
+becomes available.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

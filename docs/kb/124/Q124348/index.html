@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124348: FIX: Exiting ON SHUTDOWN Window Disables GET Objects | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124348: FIX: Exiting ON SHUTDOWN Window Disables GET Objects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124348/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124348/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124348/","publisher":null,"image":null,"headline":"Q124348: FIX: Exiting ON SHUTDOWN Window Disables GET Objects","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124348-fix-exiting-on-shutdown-window-disables-get-objects">Q124348: FIX: Exiting ON SHUTDOWN Window Disables GET Objects</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124348
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5a,2.5b,2.6,2.6a,3.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp500fix KBQ kbvfp260aBUGkbbuglist kbfixlist
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, versions 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an ON SHUTDOWN procedure calls a window that is then exited, the mouse can
+only access the current GET object in the READ that was active when the ON
+SHUTDOWN procedure was called.
+
+CAUSE
+=====
+
+Control is not passed from the ON SHUTDOWN procedure back to the previous READ
+level if the RELEASE WINDOW command is used.
+
+WORKAROUND
+==========
+
+Replace the "RELEASE WINDOW window1" command with the "DEACTIVATE WINDOW
+window1" command to send control back to the previous screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a program containing the following commands, and run it:
+
+     ON SHUTDOWN DO shutdialog
+
+     mbutton = 1
+     @ 10, 10 GET mbutton ;
+        PICTURE "@*HN Button1; Button2" ;
+        SIZE 2, 12, 2
+     READ CYCLE
+     ON SHUTDOWN         &amp;&amp; To clear the setting
+
+     PROCEDURE shutdialog
+     DEFINE WINDOW window1 FROM 0,0 TO 4,45
+     ACTIVATE WINDOW window1
+     @ 1,2 SAY 'Type "q" To Quit Or Any Key To Continue:'
+     mwindow1=INKEY(0,"H")
+
+     IF mwindow1=113 or mwindow1=81     &amp;&amp; INKEY() values for "q" and "Q"
+        QUIT
+     ELSE
+        RELEASE WINDOW window1   &amp;&amp; Becomes DEACTIVATE WINDOW window1
+     ENDIF
+
+2. Press ALT+F4 to invoke ON SHUTDOWN.
+
+3. Press a key other than q to exit the ON SHUTDOWN window. The mouse will only
+  access the GET object which was active when ON SHUTDOWN was called. Moving
+  between GET objects with the cursor keys will allow the object that has the
+  focus to be accessed with the mouse.
+
+The RELEASE WINDOW &lt;windowname&gt; command does not release the window. This
+can be verified by going into the Window menu and seeing Window1 even after the
+RELEASE WINDOW command has been executed. However, the RELEASE WINDOW command
+releases the window correctly if executed outside the ON SHUTDOWN procedure.
+
+Using DEACTIVATE WINDOW &lt;windowname&gt; in place of RELEASE WINDOW allows the
+GETS to work as expected.
+
+Additional query words: 3.00 2.50a 2.50b 2.60 2.60a
+
+======================================================================
+Keywords          : kbvfp kbvfp500fix KBQ kbvfp260aBUG kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250a kbFoxPro250b kbFoxPro260a kbVFP300
+Version           : WINDOWS:2.5a,2.5b,2.6,2.6a,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

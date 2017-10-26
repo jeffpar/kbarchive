@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q274523: BUG: Print to File Fails to Request Output File Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q274523: BUG: Print to File Fails to Request Output File Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/274/Q274523/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/274/Q274523/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/274/Q274523/","publisher":null,"image":null,"headline":"Q274523: BUG: Print to File Fails to Request Output File Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q274523-bug-print-to-file-fails-to-request-output-file-name">Q274523: BUG: Print to File Fails to Request Output File Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q274523
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCmnDlgPrint kbCtrl kbFileIO kbVBp400bug kbVBp500bug kbVBp600bug kbOSWin95 kbOSWin98 k
+Last Modified: 14-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0, on platform(s):
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - Microsoft Windows Millennium Edition 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0, on platform(s):
+   - the operating system: Microsoft Windows 95 
+   - the operating system: Microsoft Windows 98 
+   - Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Print to File checkbox is selected in the Print dialog box, the dialog
+box that allows an Output File Name to be specified is not displayed.
+
+RESOLUTION
+==========
+
+There are three possible workarounds for this behavior:
+
+- Check the Flags property of the CommonDialog control to see if the Print to
+  File checkbox is marked. If the checkbox is marked, you can create a text
+  file (without printer codes) with the Visual Basic Open, Write, and Close
+  commands.
+
+- Configure a local printer to print to the FILE: port. This local printer can
+  be used when a Print to File operation is required.
+
+- Open the Printer Common Dialog with WIN32 API functions, such as PrintDlg or
+  PageSetupDlg, instead of with the comdlg32.ocx file. You can then print with
+  API calls instead of the Printer object. See the "References" section of this
+  article for more information.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, select Components. In the Components dialog box, check
+  the Microsoft Common Dialog Control component, and then click OK.
+
+3. Add a CommonDialog control to Form1.
+
+4. Add the following code to the General Declarations section of Form1:
+
+  Private Sub Form_Click()
+      Dim blnUseWorkaround As Boolean
+
+      ' Uncomment the following line to examine a workaround
+      'blnUseWorkaround = True
+
+      CommonDialog1.ShowPrinter
+      
+      If blnUseWorkaround Then
+          ' Test to see if the Print to File box is checked
+          If (CommonDialog1.Flags And cdlPDPrintToFile) = cdlPDPrintToFile Then
+              MsgBox "Create the Output file using the Open, Write, and Close commands"
+          Else
+              PrintText
+          End If
+      Else
+          PrintText
+      End If
+  End Sub
+
+  Sub PrintText()
+      Printer.Print "Test Text"
+      Printer.EndDoc
+  End Sub
+
+5. Press the F5 key to run the program.
+
+6. Click on Form1, and note that the Print dialog box appears.
+
+7. Check the Print to File checkbox.
+
+8. Click OK on the Print dialog box, and note that the dialog box that requests
+  an Output File Name is not displayed.
+
+REFERENCES
+==========
+
+For additional information about using the WIN32 API functions for common dialog
+boxes and printing, click the article numbers below to view the articles in the
+Microsoft Knowledge Base:
+
+  Q175535 PRB: Printing Rotated Text with Visual Basic
+
+  Q180645 FIX: Cannot Change Page Settings During Print Job
+
+  Q173981 PRB: Behavior Differences of Print Dialog Box on Different Platforms
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCmnDlgPrint kbCtrl kbFileIO kbVBp400bug kbVBp500bug kbVBp600bug kbOSWin95 kbOSWin98 kbGrpDSVB kbDSupport kbOSWinME 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : :4.0,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

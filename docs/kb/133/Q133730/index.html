@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133730: Network User Profiles Not Supported on Real-Mode Networks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133730: Network User Profiles Not Supported on Real-Mode Networks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133730/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133730/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133730/","publisher":null,"image":null,"headline":"Q133730: Network User Profiles Not Supported on Real-Mode Networks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133730-network-user-profiles-not-supported-on-real-mode-networks">Q133730: Network User Profiles Not Supported on Real-Mode Networks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133730
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Server-based user profiles do not work on a computer running only a real- mode
+network client.
+
+CAUSE
+=====
+
+You must use a 32-bit network client and a network operating system that
+supports the creation of home directories to use server-based user profiles.
+
+RESOLUTION
+==========
+
+Install a 32-bit protected-mode network client.
+
+MORE INFORMATION
+================
+
+You can store user profiles (user-specific information) on a local computer or a
+network server. Using user profiles allows multiple users to use a single
+computer and retain their individual settings, or to log on to the network from
+any computer and use the same desktop settings.
+
+Storing user profiles on a network server requires:
+
+- 32-bit protected-mode client services that support automatic download and
+  update of user profiles.
+
+- A network operating system that supports the creation of home directories.
+  The protected-mode client network services included with Windows 95 download
+  and update user profiles from the following directories:
+
+   - Microsoft Client for Microsoft Networks:
+
+  \\primary domain controller\user's home directory
+
+   - Microsoft Client for NetWare Networks:
+
+  \\preferred server\sys\mail\user_id
+
+The following conditions are supported when you are using user profiles on a
+network:
+
+- Profiles stored on a Windows NT 3.x server on workstations running the
+  Microsoft Client for Microsoft Networks.
+
+- Profiles stored on a Novell NetWare server, with Windows 95-based
+  workstations running the Microsoft Client for NetWare Networks.
+
+- Profiles stored on other network operating systems that support the creation
+  of home directories and supply their own 32-bit client services.
+
+REFERENCES
+==========
+
+Microsoft Windows 95 "Resource Kit," pages 477-489
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

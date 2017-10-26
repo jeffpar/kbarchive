@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154172: How To Pass Binary Data Between an ActiveX Control and VB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154172: How To Pass Binary Data Between an ActiveX Control and VB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154172/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154172/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154172/","publisher":null,"image":null,"headline":"Q154172: How To Pass Binary Data Between an ActiveX Control and VB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154172-how-to-pass-binary-data-between-an-activex-control-and-vb">Q154172: How To Pass Binary Data Between an ActiveX Control and VB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154172
+Product(s): Microsoft C Compiler
+Version(s): 2.00 2.10 2.20 4.00 4.10 4.20
+Operating System(s): 
+Keyword(s): kbole kbCtrl
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article will demonstrate how to pass an array of bytes between Visual Basic
+and an ActiveX (OLE) Control. This is accomplished by creating a method that
+takes a VARIANT parameter that will contain a SafeArray of bytes.
+
+MORE INFORMATION
+================
+
+Exchanging data in this manner is useful for both raw data and as a technique
+for passing data structures.
+
+WARNING: Passing data structures in this manner can pose problems if it contains
+pointers.
+
+Sample Code
+-----------
+
+     /* Compile options needed : None
+     */ 
+
+     // Automation method in the control BinData.
+     void CBinDataCtrl::VBtoVCtoVB(const VARIANT FAR&amp; Buffer)
+     {
+        // Verify the Variant contains SafeArray of Bytes
+        if (Buffer.vt == (VT_ARRAY | VT_UI1)) {
+           long Dims = SafeArrayGetDim(Buffer.parray);
+           long UpperBounds;
+           long LowerBounds;
+
+           if (Dims == 1) {
+              SafeArrayGetLBound(Buffer.parray, 1, &amp;LowerBounds);
+              SafeArrayGetUBound(Buffer.parray, 1, &amp;UpperBounds);
+
+              // Use LowerBounds and UpperBounds to force a specific
+              // Array size as shown here or they can be used to
+              // dynamically create the buffer.
+              if ((LowerBounds == 0) &amp;&amp; (UpperBounds == 512)) {
+                 // Reference pointer for accessing the SafeArray
+                 unsigned char* buff;
+                 // Variable to store the data from the SafeArray
+                 // could be a global variable or member of CBinDataCtrl
+                 // Shown as a local variable for demonstration purpose only
+                 unsigned char m_abBinaryData[512];
+                 SafeArrayAccessData (Buffer.parray, (void**)&amp;buff);
+                 for (int i = 0; i &lt; 512; i++) {
+                    // Handle the binary data in the buffers
+                    // Copying the data passed from VB to VC.
+                    m_abBinaryData[i] = buff[i];
+
+                    // Modifying the data to be passed back to VB
+                    buff[i] = 0;
+                 }
+                 SafeArrayUnaccessData (Buffer.parray);
+                 return;
+              }
+           }
+        }
+        AfxMessageBox ("Invalid parameter passed in VBtoVC method.\n"  +
+                       "The array may only have a single dimension.\n" +
+                       "The array must contain 512 bytes.");
+     }
+
+NOTE: Code for Visual Basic 4.0 where BinData is the name of the control:
+
+        Private Sub Form_Load()
+            Dim buf(512) As Byte
+
+            For i = 0 To 511
+                buf(i) = 50
+            Next i
+
+            BinData1.VBtoVCtoVB buf
+        End Sub
+
+REFERENCES
+==========
+
+For more information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q122287 Limits of VB 3.0 &amp; Disptest as Automation Controllers
+
+  Q131046 SAMPLE: BINARY: Transfer Binary Data Using OLE Automation
+
+  Q131086 SAMPLE: SAFEARAY: Use of Safe Arrays in Automation
+
+  Q140202 SAMPLE: MFCARRAY: Using Safe Arrays in MFC Automation
+
+  Q122289 Passing Structures in OLE Automation
+
+Microsoft Systems Journal, June 1996, "Q&amp;A OLE" by Don Box.
+
+Additional query words: 2.00 2.10 2.20 4.00 4.10 4.20 kbinf array Visual Basic 4.00 binary data byte
+
+======================================================================
+Keywords          : kbole kbCtrl 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC200 kbVC210 kbVC32bitSearch
+Version           : 2.00 2.10 2.20 4.00 4.10 4.20
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

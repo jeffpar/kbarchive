@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167853: PRB: LNK1104 Cannot Find mfc42pd.lib | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167853: PRB: LNK1104 Cannot Find mfc42pd.lib" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167853/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167853/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167853/","publisher":null,"image":null,"headline":"Q167853: PRB: LNK1104 Cannot Find mfc42pd.lib","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167853-prb-lnk1104-cannot-find-mfc42pdlib">Q167853: PRB: LNK1104 Cannot Find mfc42pd.lib</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167853
+Product(s): Microsoft C Compiler
+Version(s): 4.0 4.0b
+Operating System(s): 
+Keyword(s): kberrmsg kbtshoot
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, Macintosh Cross-Development Addon, versions 4.0, 4.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build a MFC application for the Power Macintosh, the following error
+message appears:
+
+  LNK1104 Cannot Find mfc42pd.lib (debug)
+
+-or-
+
+  LNK1104 Cannot Find mfc42p.lib (release)
+
+CAUSE
+=====
+
+This error occurs when you are compiling a Visual C++ Mac MFC application. The
+headers from MFC 4.2 are being pulled in instead of the headers from MFC 4.0.
+
+RESOLUTION
+==========
+
+Run the "Visual C++ Cross Development Setup" application found in the "Microsoft
+Visual C++ 4.0" program group. If the application does not exist in the program
+group, launch the executable Setupmfc.exe. Setupmfc.exe can be found in the
+\msdev\bin directory.
+
+MORE INFORMATION
+================
+
+Visual C++ Mac is not a subscription-based product. Visual C++ (x86) is
+subscription based though. The last release of Visual C++ Mac was Visual C++ Mac
+4.0, which worked with Visual C++ 4.0 and MFC 4.0. There was an update for
+Visual C++ Mac (4.0b) that included new libraries and code fragments for Windows
+Portability Library. It did not contain any new MFC features.
+
+Therefore, Visual C++ Mac 4.0 and 4.0b are supposed to work with MFC 4.0. When a
+newer version of Visual C++ is installed (4.1 or 4.2), and Visual C++ Mac is
+installed, the settings for MSDEV have to be changed using Setupmfc.exe.
+
+Setupmfc.exe changes the settings for MSDEV and also some registry settings. It
+creates the directory \msdev\Mfc40 with 'include' and 'src' directories that
+contain the include and src files from the Visual C++ 4.0 MFC directory. Then,
+it modifies the registry so that the header and source file settings for the
+Power Mac and 68k Mac targets (found on the Directories tab under Options on the
+Tools menu) point to those new directories.
+
+It is a common mistake to insert the VC Mac 4.0 CD or VC++ 4.2 (x86) when running
+Setupmfc.exe. Please remember to insert the original VC 4.0 (x86) CD.
+
+In some rare cases, it may be necessary to use the windows headers from Visual
+C++ 4.0 as well. This has to be done manually by copying the \msdev\include
+directory from Visual C++ 4.0 to your \msdev and renaming it (for example,
+include40). Then make the appropriate changes on the Directories tab under
+Options on the Tools menu as well for the PowerMac or 68k Mac targets.
+
+The reference to mfc42pd.lib and mfc42p.lib is found in \msdev\mfc\include\afx.h.
+These two files do not exist.
+
+REFERENCES
+==========
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q139603 PRB: C2061 Errors When Compiling for Macintosh Target
+
+Additional query words: mfc sources linker
+
+======================================================================
+Keywords          : kberrmsg kbtshoot 
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev400Mac kbVCXDev400bMac
+Version           : 4.0 4.0b
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

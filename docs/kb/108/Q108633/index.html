@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q108633: BUG: &quot;Invalid File Descriptor&quot; When Saving Read-Only Query | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q108633: BUG: &quot;Invalid File Descriptor&quot; When Saving Read-Only Query" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/108/Q108633/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/108/Q108633/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/108/Q108633/","publisher":null,"image":null,"headline":"Q108633: BUG: &quot;Invalid File Descriptor&quot; When Saving Read-Only Query","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q108633-bug-invalid-file-descriptor-when-saving-read-only-query">Q108633: BUG: "Invalid File Descriptor" When Saving Read-Only Query</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q108633
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,5.0a
+Operating System(s): 
+Keyword(s): kbvfp kbvfp500aBUG kbvfp250bug kbvfp250aBUG
+Last Modified: 18-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Saving a query that was given the Read-Only attribute with the MS-DOS ATTRIB
+command causes the errors "File Access Denied" and "Invalid File Descriptor." In
+versions before 5.0a, the machine is then in an unrecoverable loop.
+
+RESOLUTION
+==========
+
+Save the modified query to something other than the original name, or to another
+read-only .QPR file on the hard disk. You will then have two copies of the
+query, but will not receive the above errors.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+WARNING: Close all running applications and save your data before following this
+procedure. To close all open applications, press the CTRL+ESC keys to open the
+Windows Task List, and then close all the other applications you have running.
+Note that following the steps below may produce lost allocation units, lost
+clusters, or cross-linked files.
+
+1. Create a new query.
+
+2. Save the query and close it.
+
+3. At the MS-DOS prompt, type the following to make the query read-only: attrib
+  query.qpr +r
+
+4. Reopen the query and modify it.
+
+5. Try to save the query.
+
+Unless you are working in Visual FoxPro 5.0a for Windows, the machine will hang
+in an endless loop. To break the loop, press CTRL+ALT+DEL twice or turn your
+machine off and on.
+
+Additional query words: lock up hang halt kbvfp300 kbvfp500 kbvfp500a kbvfp250 kbvfp250a kbvfp250b kbvfp260
+
+======================================================================
+Keywords          : kbvfp kbvfp500aBUG kbvfp250bug kbvfp250aBUG 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300 kbVFP500 kbVFP500a
+Version           : WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,5.0a
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

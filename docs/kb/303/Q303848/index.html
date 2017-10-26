@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q303848: SMS: Data Access/Share Name Box Is Limited to 64 Characters | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q303848: SMS: Data Access/Share Name Box Is Limited to 64 Characters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/303/Q303848/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/303/Q303848/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/303/Q303848/","publisher":null,"image":null,"headline":"Q303848: SMS: Data Access/Share Name Box Is Limited to 64 Characters","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q303848-sms-data-accessshare-name-box-is-limited-to-64-characters">Q303848: SMS: Data Access/Share Name Box Is Limited to 64 Characters</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q303848</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">2.0</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP1</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP2</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP3</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP4</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsms200</span> <span class="n">kbsms200bug</span> <span class="n">kbsms120</span> <span class="n">kbsms120bug</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">06</span><span class="p">-</span><span class="n">AUG</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">2.0</span><span class="p">,</span> <span class="m">2.0</span> <span class="n">SP1</span><span class="p">,</span> <span class="m">2.0</span> <span class="n">SP2</span><span class="p">,</span> <span class="m">2.0</span> <span class="n">SP3</span><span class="p">,</span> <span class="m">2.0</span> <span class="n">SP4</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="n">When</span> <span class="n">you</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">new</span> <span class="k">package</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="p">(</span><span class="n">SMS</span><span class="p">)</span>
+<span class="n">Administrator</span> <span class="n">console</span><span class="p">,</span> <span class="n">you</span> <span class="n">cannot</span> <span class="n">type</span> <span class="n">more</span> <span class="n">than</span> <span class="m">64</span> <span class="n">characters</span> <span class="k">in</span> <span class="n">the</span> <span class="s2">"Share
+name"</span> <span class="n">box</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">tab</span><span class="p">.</span>
+
+<span class="n">Note</span> <span class="n">that</span> <span class="n">you</span> <span class="n">type</span> <span class="n">a</span> <span class="n">share</span> <span class="n">name</span> <span class="k">in</span> <span class="n">the</span> <span class="s2">"Share name"</span> <span class="n">box</span> <span class="n">when</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span>
+<span class="k">package</span> <span class="n">share</span> <span class="n">on</span> <span class="n">distribution</span> <span class="n">points</span> <span class="n">rather</span> <span class="n">than</span> <span class="n">using</span> <span class="n">the</span> <span class="n">default</span> <span class="n">SMSPKGx</span><span class="p">$</span>
+<span class="n">share</span><span class="p">.</span>
+
+<span class="n">RESOLUTION</span>
+<span class="p">==========</span>
+
+<span class="n">A</span> <span class="n">supported</span> <span class="n">fix</span> <span class="n">is</span> <span class="n">now</span> <span class="n">available</span> <span class="k">from</span> <span class="n">Microsoft</span><span class="p">,</span> <span class="n">but</span> <span class="n">it</span> <span class="n">is</span> <span class="n">only</span> <span class="n">intended</span> <span class="k">to</span>
+<span class="n">correct</span> <span class="n">the</span> <span class="n">problem</span> <span class="n">that</span> <span class="n">is</span> <span class="n">described</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span><span class="p">.</span> <span class="n">Only</span> <span class="n">apply</span> <span class="n">it</span> <span class="k">to</span> <span class="n">systems</span>
+<span class="n">that</span> <span class="n">are</span> <span class="n">experiencing</span> <span class="n">this</span> <span class="n">specific</span> <span class="n">problem</span><span class="p">.</span> <span class="n">This</span> <span class="n">fix</span> <span class="n">may</span> <span class="n">receive</span> <span class="n">additional</span>
+<span class="n">testing</span><span class="p">.</span> <span class="n">Therefore</span><span class="p">,</span> <span class="k">if</span> <span class="n">you</span> <span class="n">are</span> <span class="k">not</span> <span class="n">severely</span> <span class="n">affected</span> <span class="n">by</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">Microsoft</span>
+<span class="n">recommends</span> <span class="n">that</span> <span class="n">you</span> <span class="nf">wait</span> <span class="n">for</span> <span class="n">the</span> <span class="k">next</span> <span class="n">SMS</span> <span class="n">service</span> <span class="n">pack</span> <span class="n">that</span> <span class="n">contains</span> <span class="n">this</span> <span class="n">fix</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">resolve</span> <span class="n">this</span> <span class="n">problem</span> <span class="n">immediately</span><span class="p">,</span> <span class="n">contact</span> <span class="n">Microsoft</span> <span class="n">Product</span> <span class="n">Support</span> <span class="n">Services</span>
+<span class="k">to</span> <span class="n">obtain</span> <span class="n">the</span> <span class="n">fix</span><span class="p">.</span> <span class="n">For</span> <span class="n">a</span> <span class="n">complete</span> <span class="k">list</span> <span class="k">of</span> <span class="n">Microsoft</span> <span class="n">Product</span> <span class="n">Support</span> <span class="n">Services</span>
+<span class="n">phone</span> <span class="n">numbers</span> <span class="k">and</span> <span class="n">information</span> <span class="n">about</span> <span class="n">support</span> <span class="n">costs</span><span class="p">,</span> <span class="n">visit</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span>
+<span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">support</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">default</span><span class="p">.</span><span class="n">aspx</span><span class="p">?</span><span class="n">scid</span><span class="p">=</span><span class="n">fh</span><span class="p">;</span><span class="n">EN</span><span class="p">-</span><span class="n">US</span><span class="p">;</span><span class="n">CNTACTMS</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="k">In</span> <span class="n">special</span> <span class="n">cases</span><span class="p">,</span> <span class="n">charges</span> <span class="n">that</span> <span class="n">are</span> <span class="n">ordinarily</span> <span class="n">incurred</span> <span class="n">for</span> <span class="n">support</span> <span class="n">calls</span>
+<span class="n">may</span> <span class="n">be</span> <span class="n">canceled</span> <span class="k">if</span> <span class="n">a</span> <span class="n">Microsoft</span> <span class="n">Support</span> <span class="n">Professional</span> <span class="n">determines</span> <span class="n">that</span> <span class="n">a</span> <span class="n">specific</span>
+<span class="n">update</span> <span class="n">will</span> <span class="n">resolve</span> <span class="n">your</span> <span class="n">problem</span><span class="p">.</span> <span class="n">The</span> <span class="n">usual</span> <span class="n">support</span> <span class="n">costs</span> <span class="n">will</span> <span class="n">apply</span> <span class="k">to</span>
+<span class="n">additional</span> <span class="n">support</span> <span class="n">questions</span> <span class="k">and</span> <span class="n">issues</span> <span class="n">that</span> <span class="k">do</span> <span class="k">not</span> <span class="n">qualify</span> <span class="n">for</span> <span class="n">the</span> <span class="n">specific</span>
+<span class="n">update</span> <span class="k">in</span> <span class="n">question</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">English</span><span class="p">-</span><span class="n">language</span> <span class="k">version</span> <span class="k">of</span> <span class="n">this</span> <span class="n">fix</span> <span class="n">for</span> <span class="n">SMS</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">3</span> <span class="p">(</span><span class="n">SP3</span><span class="p">)</span> <span class="n">sites</span>
+<span class="n">should</span> <span class="n">have</span> <span class="n">the</span> <span class="n">following</span> <span class="n">file</span> <span class="n">attributes</span> <span class="k">or</span> <span class="n">later</span><span class="p">:</span>
+
+  <span class="n">Date</span>         <span class="n">Time</span>   <span class="k">Version</span>         <span class="n">Size</span>     <span class="n">File</span> <span class="n">name</span>     <span class="n">Platform</span>
+  <span class="p">-------------------------------------------------------------------</span>
+  <span class="m">01</span><span class="p">-</span><span class="n">Mar</span><span class="p">-</span><span class="m">2001</span>  <span class="m">11</span><span class="p">:</span><span class="m">25</span>  <span class="m">2.00.1493.3181</span>  <span class="m">127</span><span class="p">,</span><span class="m">168</span>  <span class="n">Sms_ppkg</span><span class="p">.</span><span class="n">dll</span>  <span class="n">Intel</span>
+  <span class="m">05</span><span class="p">-</span><span class="n">Sep</span><span class="p">-</span><span class="m">2001</span>   <span class="m">9</span><span class="p">:</span><span class="m">37</span>                    <span class="m">3</span><span class="p">,</span><span class="m">395</span>  <span class="n">Update</span><span class="p">.</span><span class="n">sql</span>    <span class="n">Intel</span>
+  <span class="m">01</span><span class="p">-</span><span class="n">Mar</span><span class="p">-</span><span class="m">2001</span>  <span class="m">11</span><span class="p">:</span><span class="m">25</span>  <span class="m">2.00.1493.3181</span>  <span class="m">264</span><span class="p">,</span><span class="m">464</span>  <span class="n">Sms_ppkg</span><span class="p">.</span><span class="n">dll</span>  <span class="n">Alpha</span>
+  <span class="m">05</span><span class="p">-</span><span class="n">Sep</span><span class="p">-</span><span class="m">2001</span>   <span class="m">9</span><span class="p">:</span><span class="m">37</span>                    <span class="m">3</span><span class="p">,</span><span class="m">395</span>  <span class="n">Update</span><span class="p">.</span><span class="n">sql</span>    <span class="n">Alpha</span>
+
+<span class="n">Post</span><span class="p">-</span><span class="n">SP4</span> <span class="n">hotfix</span> <span class="n">information</span><span class="p">:</span>
+
+ 
+  <span class="n">Date</span>         <span class="n">Time</span>   <span class="n">Size</span>     <span class="n">File</span> <span class="n">name</span>     <span class="n">Platform</span>  <span class="k">Version</span>
+  <span class="p">------------------------------------------------------------------</span>
+  <span class="m">01</span><span class="p">-</span><span class="n">Mar</span><span class="p">-</span><span class="m">2002</span>  <span class="m">08</span><span class="p">:</span><span class="m">00</span>  <span class="m">127</span><span class="p">,</span><span class="m">168</span>  <span class="n">Sms_ppkg</span><span class="p">.</span><span class="n">dll</span>  <span class="n">Intel</span>     <span class="m">2.0.1493.4101</span>
+  <span class="m">26</span><span class="p">-</span><span class="n">Nov</span><span class="p">-</span><span class="m">2001</span>  <span class="m">15</span><span class="p">:</span><span class="m">50</span>    <span class="m">3</span><span class="p">,</span><span class="m">395</span>  <span class="n">Update</span><span class="p">.</span><span class="n">sql</span>    <span class="n">Intel</span>
+  <span class="m">01</span><span class="p">-</span><span class="n">Mar</span><span class="p">-</span><span class="m">2002</span>  <span class="m">08</span><span class="p">:</span><span class="m">00</span>  <span class="m">264</span><span class="p">,</span><span class="m">464</span>  <span class="n">Sms_ppkg</span><span class="p">.</span><span class="n">dll</span>  <span class="n">Alpha</span>     <span class="m">2.0.1493.4101</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">Due</span> <span class="k">to</span> <span class="n">file</span> <span class="n">dependencies</span><span class="p">,</span> <span class="n">the</span> <span class="n">most</span> <span class="n">recent</span> <span class="n">hotfix</span> <span class="k">or</span> <span class="n">feature</span> <span class="n">that</span> <span class="n">contains</span>
+<span class="n">the</span> <span class="n">above</span> <span class="n">files</span> <span class="n">may</span> <span class="n">also</span> <span class="n">contain</span> <span class="n">additional</span> <span class="n">files</span><span class="p">.</span>
+
+
+
+<span class="n">After</span> <span class="n">you</span> <span class="n">install</span> <span class="n">this</span> <span class="n">hotfix</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">type</span> <span class="n">up</span> <span class="k">to</span> <span class="m">127</span> <span class="n">characters</span> <span class="k">in</span> <span class="n">the</span> <span class="s2">"Share
+name"</span> <span class="n">box</span><span class="p">.</span>
+
+
+<span class="n">How</span> <span class="k">to</span> <span class="n">Install</span> <span class="n">the</span> <span class="n">Hotfix</span>
+<span class="p">-------------------------</span>
+
+<span class="k">To</span> <span class="n">install</span> <span class="n">the</span> <span class="n">hotfix</span><span class="p">,</span> <span class="n">use</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">methods</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">you</span> <span class="n">should</span>
+<span class="n">install</span> <span class="n">the</span> <span class="n">hotfix</span> <span class="n">on</span> <span class="n">primary</span> <span class="n">site</span> <span class="n">servers</span> <span class="k">and</span> <span class="n">computers</span> <span class="n">that</span> <span class="n">are</span> <span class="n">running</span> <span class="n">the</span>
+<span class="n">SMS</span> <span class="n">Administrator</span> <span class="n">console</span><span class="p">.</span> <span class="n">You</span> <span class="k">do</span> <span class="k">not</span> <span class="n">need</span> <span class="k">to</span> <span class="n">install</span> <span class="n">the</span> <span class="n">fix</span> <span class="n">on</span> <span class="n">secondary</span> <span class="n">site</span>
+<span class="n">servers</span><span class="p">.</span>
+
+<span class="n">How</span> <span class="k">to</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">Hotfix</span> <span class="n">Installer</span> <span class="n">on</span> <span class="n">Site</span> <span class="n">Servers</span> <span class="k">and</span> <span class="n">Computers</span> <span class="n">That</span> <span class="n">Are</span> <span class="n">Running</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span> <span class="n">Console</span><span class="p">:</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">this</span> <span class="n">method</span> <span class="n">only</span> <span class="n">on</span> <span class="n">Intel</span><span class="p">-</span><span class="n">based</span> <span class="n">computers</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">use</span> <span class="n">the</span> <span class="n">hotfix</span> <span class="n">installer</span> <span class="n">on</span> <span class="n">site</span> <span class="n">servers</span> <span class="k">and</span> <span class="n">computers</span> <span class="n">that</span> <span class="n">are</span> <span class="n">running</span> <span class="n">the</span>
+<span class="n">SMS</span> <span class="n">Administrator</span> <span class="n">console</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">folder</span> <span class="k">in</span> <span class="n">a</span> <span class="n">location</span> <span class="n">that</span> <span class="n">is</span> <span class="n">accessible</span> <span class="k">to</span> <span class="n">your</span> <span class="n">SMS</span> <span class="n">site</span> <span class="n">server</span> <span class="k">or</span>
+  <span class="n">site</span> <span class="n">servers</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Log</span> <span class="n">on</span> <span class="k">to</span> <span class="n">your</span> <span class="n">site</span> <span class="n">server</span> <span class="n">by</span> <span class="n">using</span> <span class="n">an</span> <span class="n">account</span> <span class="k">with</span> <span class="n">administrative</span>
+  <span class="n">privileges</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Copy</span> <span class="n">the</span> <span class="n">Q303848</span><span class="p">.</span><span class="n">exe</span> <span class="n">update</span> <span class="n">file</span> <span class="k">and</span> <span class="n">platform</span> <span class="n">folders</span> <span class="k">to</span> <span class="n">the</span> <span class="n">new</span> <span class="n">folder</span><span class="p">.</span> <span class="n">The</span>
+  <span class="n">Q303848</span><span class="p">.</span><span class="n">exe</span> <span class="n">file</span> <span class="n">must</span> <span class="n">be</span> <span class="n">one</span> <span class="n">folder</span> <span class="n">higher</span> <span class="n">than</span> <span class="n">the</span> <span class="n">platform</span> <span class="n">folders</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="k">From</span> <span class="n">each</span> <span class="k">of</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">SMS</span> <span class="n">site</span> <span class="n">servers</span> <span class="k">and</span> <span class="k">from</span> <span class="n">the</span> <span class="n">computers</span> <span class="k">with</span> <span class="n">the</span> <span class="n">SMS</span>
+  <span class="n">Administrator</span> <span class="n">console</span> <span class="n">installed</span><span class="p">,</span> <span class="nf">run</span> <span class="n">Q303848</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span> <span class="n">Follow</span> <span class="n">the</span> <span class="n">prompts</span> <span class="k">to</span>
+  <span class="n">install</span> <span class="n">the</span> <span class="n">hotfix</span><span class="p">.</span>
+
+<span class="n">How</span> <span class="k">to</span> <span class="n">Manually</span> <span class="n">Install</span> <span class="n">the</span> <span class="n">Hotfix</span> <span class="n">on</span> <span class="n">Site</span> <span class="n">Servers</span><span class="p">:</span>
+
+<span class="k">To</span> <span class="n">manually</span> <span class="n">install</span> <span class="n">the</span> <span class="n">hotfix</span> <span class="n">on</span> <span class="n">site</span> <span class="n">servers</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Copy</span> <span class="n">the</span> <span class="n">hotfix</span> <span class="n">folder</span> <span class="n">structure</span> <span class="k">to</span> <span class="n">a</span> <span class="n">local</span> <span class="n">subfolder</span> <span class="n">on</span> <span class="n">your</span> <span class="n">site</span> <span class="n">server</span> <span class="k">or</span>
+  <span class="k">to</span> <span class="n">a</span> <span class="n">share</span> <span class="n">on</span> <span class="n">your</span> <span class="n">network</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Close</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span> <span class="n">console</span> <span class="k">and</span> <span class="nf">stop</span> <span class="n">all</span> <span class="n">SMS</span> <span class="n">services</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Replace</span> <span class="n">the</span> <span class="n">Sms_ppkg</span><span class="p">.</span><span class="n">dll</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span>
+  <span class="p">&lt;</span><span class="n">Sms_root_folder</span><span class="p">&gt;\</span><span class="n">Bin</span><span class="p">\&lt;</span><span class="n">Platform</span><span class="p">&gt;</span> <span class="n">folder</span> <span class="k">with</span> <span class="n">the</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span>
+  <span class="n">file</span> <span class="n">that</span> <span class="n">you</span> <span class="n">obtained</span> <span class="k">from</span> <span class="n">the</span> <span class="n">hotfix</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="nf">Run</span> <span class="n">the</span> <span class="n">SQL</span> <span class="n">Query</span> <span class="n">Analyzer</span> <span class="n">tool</span> <span class="p">(</span><span class="n">Isqlw</span><span class="p">.</span><span class="n">exe</span><span class="p">).</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">you</span> <span class="n">must</span><span class="p">:</span>
+
+  <span class="n">a</span><span class="p">.</span> <span class="n">Click</span> <span class="n">Change</span> <span class="n">Database</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Query</span> <span class="n">menu</span><span class="p">.</span>
+
+  <span class="n">b</span><span class="p">.</span> <span class="n">Click</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">database</span><span class="p">.</span>
+
+  <span class="n">c</span><span class="p">.</span> <span class="n">Click</span> <span class="n">Open</span> <span class="n">on</span> <span class="n">the</span> <span class="n">File</span> <span class="n">menu</span><span class="p">.</span>
+
+  <span class="n">d</span><span class="p">.</span> <span class="n">Locate</span> <span class="k">and</span> <span class="n">click</span> <span class="n">the</span> <span class="n">Update</span><span class="p">.</span><span class="n">sql</span> <span class="n">script</span> <span class="n">that</span> <span class="n">is</span> <span class="n">included</span> <span class="k">with</span> <span class="n">this</span> <span class="n">hotfix</span><span class="p">,</span>
+     <span class="k">and</span> <span class="k">then</span> <span class="n">press</span> <span class="n">ENTER</span><span class="p">.</span>
+
+  <span class="n">e</span><span class="p">.</span> <span class="n">Click</span> <span class="n">Execute</span> <span class="n">on</span> <span class="n">the</span> <span class="n">Query</span> <span class="n">menu</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">script</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Restart</span> <span class="n">all</span> <span class="n">SMS</span> <span class="n">services</span><span class="p">.</span>
+
+<span class="n">How</span> <span class="k">to</span> <span class="n">Manually</span> <span class="n">Install</span> <span class="n">the</span> <span class="n">Hotfix</span> <span class="n">on</span> <span class="n">Computers</span> <span class="n">That</span> <span class="n">Have</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span> <span class="n">Console</span> <span class="n">Installed</span><span class="p">:</span>
+
+<span class="k">To</span> <span class="n">manually</span> <span class="n">install</span> <span class="n">the</span> <span class="n">hotfix</span> <span class="n">on</span> <span class="n">computers</span> <span class="n">that</span> <span class="n">have</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span>
+<span class="n">console</span> <span class="n">installed</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">Copy</span> <span class="n">the</span> <span class="n">hotfix</span> <span class="n">folder</span> <span class="n">structure</span> <span class="k">to</span> <span class="n">a</span> <span class="n">local</span> <span class="n">subfolder</span> <span class="n">on</span> <span class="n">your</span> <span class="n">computer</span> <span class="k">or</span> <span class="k">to</span>
+  <span class="n">a</span> <span class="n">share</span> <span class="n">on</span> <span class="n">your</span> <span class="n">network</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Close</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span> <span class="n">console</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Replace</span> <span class="n">the</span> <span class="n">Sms_ppkg</span><span class="p">.</span><span class="n">dll</span> <span class="n">file</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Smsadmin</span><span class="p">\</span><span class="n">Bin</span><span class="p">\&lt;</span><span class="n">Platform</span><span class="p">&gt;</span> <span class="n">folder</span>
+  <span class="k">with</span> <span class="n">the</span> <span class="k">version</span> <span class="k">of</span> <span class="n">the</span> <span class="n">file</span> <span class="n">that</span> <span class="n">you</span> <span class="n">obtained</span> <span class="k">from</span> <span class="n">the</span> <span class="n">hotfix</span><span class="p">.</span>
+
+
+<span class="n">WORKAROUND</span>
+<span class="p">==========</span>
+
+<span class="k">To</span> <span class="n">work</span> <span class="n">around</span> <span class="n">this</span> <span class="n">problem</span><span class="p">,</span> <span class="n">organize</span> <span class="n">distribution</span> <span class="n">points</span> <span class="n">so</span> <span class="n">that</span> <span class="n">paths</span> <span class="k">to</span>
+<span class="k">package</span> <span class="n">shares</span> <span class="n">are</span> <span class="n">less</span> <span class="n">than</span> <span class="m">64</span> <span class="n">characters</span> <span class="k">in</span> <span class="n">length</span><span class="p">.</span> <span class="n">Note</span> <span class="n">that</span> <span class="n">the</span> <span class="n">server</span> <span class="n">name</span>
+<span class="n">is</span> <span class="k">not</span> <span class="n">part</span> <span class="k">of</span> <span class="n">the</span> <span class="n">path</span> <span class="n">that</span> <span class="n">you</span> <span class="n">type</span> <span class="k">in</span> <span class="n">the</span> <span class="s2">"Share name"</span> <span class="n">box</span><span class="p">.</span>
+
+<span class="n">STATUS</span>
+<span class="p">======</span>
+
+<span class="n">Microsoft</span> <span class="n">has</span> <span class="n">confirmed</span> <span class="n">that</span> <span class="n">this</span> <span class="n">is</span> <span class="n">a</span> <span class="n">problem</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">products</span> <span class="n">that</span>
+<span class="n">are</span> <span class="n">listed</span> <span class="n">at</span> <span class="n">the</span> <span class="n">beginning</span> <span class="k">of</span> <span class="n">this</span> <span class="n">article</span><span class="p">.</span> <span class="n">This</span> <span class="n">problem</span> <span class="n">was</span> <span class="n">first</span> <span class="n">corrected</span> <span class="k">in</span>
+<span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">2.0</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">4</span> <span class="n">Hotfix</span> <span class="n">Rollup</span> <span class="k">Package</span> <span class="p">(</span><span class="n">HRP</span><span class="p">).</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">SMS</span> <span class="m">2.0</span> <span class="n">SP4</span> <span class="n">HRP</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span>
+<span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q323206</span> <span class="n">SMS</span><span class="p">:</span> <span class="k">List</span> <span class="k">of</span> <span class="n">Bugs</span> <span class="n">Fixed</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">2.0</span> <span class="n">SP4</span> <span class="n">HRP</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbsms200</span> <span class="n">kbsms200bug</span> <span class="n">kbsms120</span> <span class="n">kbsms120bug</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS200</span> <span class="n">kbSMS200SP1</span> <span class="n">kbSMS200SP2</span> <span class="n">kbSMS200SP3</span> <span class="n">kbSMS200SP4</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">2.0</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP1</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP2</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP3</span><span class="p">,</span><span class="m">2.0</span> <span class="n">SP4</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbbug</span>
+<span class="n">Solution</span> <span class="n">Type</span>     <span class="p">:</span> <span class="n">kbfix</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

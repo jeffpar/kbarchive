@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147034: XCLN: First Line of Inbox Message Body May Be Missing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147034: XCLN: First Line of Inbox Message Body May Be Missing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147034/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147034/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147034/","publisher":null,"image":null,"headline":"Q147034: XCLN: First Line of Inbox Message Body May Be Missing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147034-xcln-first-line-of-inbox-message-body-may-be-missing">Q147034: XCLN: First Line of Inbox Message Body May Be Missing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147034
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kb3rdparty
+Last Modified: 21-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you display a message in the Microsoft Exchange Windows 95 client Inbox
+ReadNote form, the first line of message body may be missing. This can occur on
+messages received through Innosoft's PMDF SMTP Gateway version 5.04. This same
+message will be displayed if read with version 3.x of Microsoft Mail for PC
+Networks MS-DOS or version 3.x of Microsoft Mail for Windows.
+
+CAUSE
+=====
+
+The specified number of lines in the message header is incorrect. This results
+in the first line of the message body being put into the header and thus it is
+not displayed in the message body.
+
+MORE INFORMATION
+================
+
+When an SMTP message arrives in the gateway, it is converted from SMTP
+formatting conventions into Extended Microsoft Mail File Format (Extended MMFF).
+One of the optional extended fields in this format defines the number of lines
+that are in the header. This field is calculated incorrectly.
+
+Below is a partial example of extended MMFF formatting:
+
+Header field&lt;         EXT:I:3:HEADLEN
+Header line count&lt;    9
+                     TEXT:340
+HeaderLine#1&lt;         FROM:    SMTP:WAMOZART@tinpanalley.com
+          2&lt;
+          3&lt;         TO:      CSI:MUSIC/BLUEGRASS/JDOUGLAS
+          4&lt;
+          5&lt;         SUBJECT: This is the Subject Line
+          6&lt;
+          7&lt;         ----------------------------------------------------
+          8&lt;
+          9&lt;&lt;&lt;       This is the first line of the Body of Text.
+          10         This is the second line of the Body of Text.
+          11         This is the third and last line of the Body of Text.
+
+As indicated in the above example, the HEADLEN (header length) field specifies
+that the header is 9 lines. The ninth line is the first line of the body of the
+message, therefore, it does not display in the body of the message. The correct
+line count for the header should be 8 (or even 7).
+
+The MSMail DOS and MSMail Windows 3.x clients ignore this field if it exists. The
+Microsoft Exchange Windows 95 Inbox, when configured using the Microsoft Mail
+provider, keys on this field's value to determine the end of the
+header\beginning of the message body.
+
+For more information about FFAPI and MMFF formats, review Q87223, Q118785 and the
+File Format API for Gateways and Applications guide from the Microsoft Mail
+Software Development Kit.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

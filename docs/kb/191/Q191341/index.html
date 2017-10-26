@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191341: How to Run a Program By Using UNC with Package Command Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191341: How to Run a Program By Using UNC with Package Command Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191341/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191341/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191341/","publisher":null,"image":null,"headline":"Q191341: How to Run a Program By Using UNC with Package Command Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191341-how-to-run-a-program-by-using-unc-with-package-command-manager">Q191341: How to Run a Program By Using UNC with Package Command Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191341
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbtool kbsms120 kbPCM kbSoftwareDist smspcm
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Systems Management Server 1.2 Service Pack 3 introduced the ability for the SMS
+Package Command Manager tool and the SMS_PACKAGE_COMMAND_MANAGER_NT service on
+Microsoft Windows NT-based clients to run programs without requiring a mapped
+drive letter.
+
+MORE INFORMATION
+================
+
+The Package Command Manager (program or service) constructs the environment
+variable %PCMUNC% that points to the package folder on the distribution point
+with its UNC equivalent (\\SERVER\SMSPKGx\&lt;PackageID&gt;\). You can use the
+%PCMUNC% variable at a command prompt on the workstation or in a batch file or
+script that can read the environment table while the script is running.
+
+To use %PCMUNC% at a command prompt on the workstation, it must be preceded by
+Ntencap.exe. For example:
+
+  ProgramLine = Ntencap.exe /NTu %PCMUNC%MyApp.exe
+
+NOTE: Even though the program is executed by using UNC, Ntencap.exe is run by
+using a mapped drive letter to the package folder on the distribution server.
+To use %PCMUNC% in a batch file that is run from a command prompt on the
+workstation, use the variable as you would any other environment variable:
+
+  Rem Sample batch file
+  copy %PCMUNC%TestFile.txt C:\MyApp
+
+When you use the Package Command Manager service for software distribution, a
+drive-mapping conflict could occur if a package is running when you log on, and
+the user logon script or profile attempts to remap the drive letter that the
+Package Command Manager is using. This drive letter is unavailable until the
+Package Command Manager releases the drive letter after the package is
+completed.
+
+
+Additional query words: PCMSVC32 prodsms
+
+======================================================================
+Keywords          : kbtool kbsms120 kbPCM kbSoftwareDist smspcm 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

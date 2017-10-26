@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153077: LAN Manager and WinNT Servers Running Remoteboot Cannot Coexist | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153077: LAN Manager and WinNT Servers Running Remoteboot Cannot Coexist" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153077/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153077/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153077/","publisher":null,"image":null,"headline":"Q153077: LAN Manager and WinNT Servers Running Remoteboot Cannot Coexist","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153077-lan-manager-and-winnt-servers-running-remoteboot-cannot-coexist">Q153077: LAN Manager and WinNT Servers Running Remoteboot Cannot Coexist</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153077
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): winnt:3.5,3.51; :2.2b,2.2c
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 09-AUG-2001
+
+TITLE: Both LAN Manager and NT domain running Remoteboot cannot coexist
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft LAN Manager, versions 2.2b, 2.2c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a computer running LAN Manager Server and Remoteboot is migrated to a
+Windows NT domain with a Windows NT domain controller running Remoteboot (and
+the LAN Manager is left on the Windows NT domain), the following symptoms and
+subsequent error messages occur:
+
+- The LAN Manager RPL client will fail to boot Error: "NON SYSTEM DISK or DISK
+  ERROR"
+
+- The Remoteboot Service on the LAN Manager will fail to start
+
+  Error: "NET 3056 - A system error has occurred."
+
+  Error: "NET 2586 - This server is not configured to support the Remoteboot
+  service."
+
+- When you run RPLINST on the LAN Manager it will fail
+
+  Error: "The remoteboot service requires user-level security. Accounts will
+  not be updated at this time."
+
+CAUSE
+=====
+
+The cause of the problem is that during the migration of the computer running
+LAN Manager, the Upgrade for LAN Manager tools creates an RPLUSER global group.
+The Upgrade for LAN Manager tools either renames the LAN Manager RPLUSER group
+to RPLUSER_OLD or it will allow you to rename the group to a different name
+because a Windows NT RPLUSER local group already exists. The new global group is
+not functional, causing the LAN Manager RPL clients to fail. When you restart
+the LAN Manager Server, the Remoteboot Service will fail to start. If you run
+RPLINST against the LAN Manager, it will fail to complete.
+
+RESOLUTION
+==========
+
+In the Windows NT 'Installation Guide' it explicitly states "On the Windows NT
+Server computer, delete the RPLUSER global group (it is created by the Upgrade
+for LAN Manager tools)". Before you delete the RPLUSER global group, you will
+have to manually add the users from the RPLUSER global group to the RPLUSER
+local group and have the computer running Windows NT Server remoteboot the LAN
+Manager RPL clients.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.5 and
+3.51. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbLanManSearch kbLanMan220b kbLanMan220c
+Version           : winnt:3.5,3.51; :2.2b,2.2c
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

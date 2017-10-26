@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183669: XADM: Troubleshooting Intersite Directory Replication | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183669: XADM: Troubleshooting Intersite Directory Replication" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183669/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183669/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183669/","publisher":null,"image":null,"headline":"Q183669: XADM: Troubleshooting Intersite Directory Replication","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183669-xadm-troubleshooting-intersite-directory-replication">Q183669: XADM: Troubleshooting Intersite Directory Replication</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183669
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 08-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes steps for troubleshooting intersite (servers in different
+sites) directory replication for Exchange Server.
+
+MORE INFORMATION
+================
+
+Directory replication can take several hours to finish. Even if you have run
+Knowledge Consistency Checks, Update Nows, or Request Nows, replication can
+still take several hours to fully complete.
+
+If replication is not occurring and enough time has passed that replication
+should have occurred, use the following questions to help you determine where
+the problem is:
+
+1. What kind of connector (or connectors) is involved?
+
+  Find out what kind of connector is being used between the sites that are
+  replicating.
+
+2. Do messages flow across the connector?
+
+  Messages must travel back and forth between the sites in order for replication
+  to occur. Try to send a message from the other server, using the X.400
+  one-off address of a recipient. If the message does not make it across the
+  connection, check the configuration of the connector being used on BOTH
+  SIDES. Make sure the connector is set up properly and that messages are
+  flowing before you try to get replication working.
+
+3. Are the two sites in the same domain or different domains?
+
+  If the two sites are in the same domain, there should be no problems with
+  security; however, please see the next question.
+
+  If the sites are in different domains, there must be a two-way trust between
+  the domains. If there is no trust, identical accounts and passwords must be
+  used for the Exchange service account. Or, the Override tab must be used if
+  the particular connector has an Override tab. Currently, only the RAS
+  Connector and the Site Connector have an Override tab.
+
+4. Are the two sites using the same service account?
+
+  In the case of the Site Connector, if the two sites are using different
+  service accounts, you must add the service account for each site as a Service
+  Account Administrator to each of the respective sites, or you must use the
+  Override tab on the Site Connector.
+
+5. What kind of connection exists between the sites?
+
+  Replication can fail if there is not enough bandwidth for the connector being
+  used. Be sure to check this whether the sites are connected using Site
+  Connectors. Microsoft recommends at the very least a 64-KB link if a Site
+  Connector is used with replication.
+
+6. Is there anything in the event log, or are there any other error messages?
+
+  Check the event viewer for any warnings or stop messages pertaining to
+  replication. These may help to narrow down the source of the problem. Also
+  check the event ID against the Microsoft Knowledge Base. Information found in
+  the Knowledge Base may help in resolving the issue.
+
+7. If you have gone through the above steps and everything appears to be set up
+  correctly and nothing seems to be a problem, you should turn up Diagnostics
+  Logging on the directory and on the MTA of the servers with the problem, in
+  the following categories:
+
+     MSExchangeDS        MSExchangeMTA
+
+     Replication         X.400 Service
+     ExDS Interface      Interface
+     Directory Access    Configuration
+                         Directory Access
+                         Internal Processing
+
+
+Change the logging level to Maximum on the above categories on all affected
+servers, and then perform a Request Now from the Sites tab of the Replication
+Connectors on all affected servers. Information gained from the event logs on
+the servers may prove useful in determining the cause of the problem.
+
+
+Additional query words: tshoot
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

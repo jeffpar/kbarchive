@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247529: HOWTO: Associate a Custom Icon with a File Extension | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247529: HOWTO: Associate a Custom Icon with a File Extension" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247529/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247529/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247529/","publisher":null,"image":null,"headline":"Q247529: HOWTO: Associate a Custom Icon with a File Extension","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247529-howto-associate-a-custom-icon-with-a-file-extension">Q247529: HOWTO: Associate a Custom Icon with a File Extension</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247529
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbIcon kbRegistry kbSDKWin32 kbShellGrp kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupp
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Generally, a file type associated with an executable is given the icon of the
+executable. For example, a Microsoft Excel file displays the Microsoft Excel
+icon, and a Microsoft Word file displays the Microsoft Word icon. However, if
+you associate a file extension with an .exe file, it uses the default Windows
+icon. This article explains how to associate an icon with a file extension.
+
+When the custom icon is associated with a particular file type in the registry,
+the new default icon may not be recognized by Windows until the computer is
+restarted. This can be prevented by making an API call to notify Windows that
+the icon has changed.
+
+MORE INFORMATION
+================
+
+This article uses the techniques described in Microsoft Knowledge Base article
+Q185453 to associate a file extension with a Microsoft Visual Basic .exe file.
+You can also associate icons by including another key in the registry for the
+default icon. The user must have permission to write to the registry.
+
+Step-by-Step Example:
+
+1. Copy an icon into the application directory and name it myIcon.ico.
+
+2. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+3. On the Project menu, select Project1 properties. Set the Project Name field
+  to MyApp.
+
+4. On the Project menu, choose Components. In the Components dialog box, select
+  "Microsoft RichTextBox Control" and click OK.
+
+5. Cite an instance of the RichTextBox control on Form1.
+
+6. Add the following code to the General Declarations section of Form1:
+
+  Option Explicit
+
+  Private Declare Function RegCreateKey Lib "advapi32.dll" _
+   Alias "RegCreateKeyA" (ByVal hKey As Long, _
+                          ByVal lpSubKey As String, _
+                          phkResult As Long) As Long
+                   
+  Private Declare Function RegSetValue Lib "advapi32.dll" _
+   Alias "RegSetValueA" (ByVal hKey As Long, _
+                         ByVal lpSubKey As String, _
+                         ByVal dwType As Long, _
+                         ByVal lpData As String, _
+                         ByVal cbData As Long) As Long
+
+  ' Return codes from Registration functions.
+  Const ERROR_SUCCESS = 0&amp;
+  Const ERROR_BADDB = 1&amp;
+  Const ERROR_BADKEY = 2&amp;
+  Const ERROR_CANTOPEN = 3&amp;
+  Const ERROR_CANTREAD = 4&amp;
+  Const ERROR_CANTWRITE = 5&amp;
+  Const ERROR_OUTOFMEMORY = 6&amp;
+  Const ERROR_INVALID_PARAMETER = 7&amp;
+  Const ERROR_ACCESS_DENIED = 8&amp;
+
+  Private Const HKEY_CLASSES_ROOT = &amp;H80000000
+  Private Const MAX_PATH = 260&amp;
+  Private Const REG_SZ = 1
+
+  Private Declare Sub SHChangeNotify Lib "shell32.dll" _
+             (ByVal wEventId As Long, _
+              ByVal uFlags As Long, _
+              dwItem1 As Any, _
+              dwItem2 As Any)
+
+  Const SHCNE_ASSOCCHANGED = &amp;H8000000
+  Const SHCNF_IDLIST = &amp;H0&amp;
+
+  Private Sub Form_Click()
+     Dim sKeyName As String   ' Holds Key Name in registry.
+     Dim sKeyValue As String  ' Holds Key Value in registry.
+     Dim ret&amp;           ' Holds error status if any from API calls.
+     Dim lphKey&amp;        ' Holds  key handle from RegCreateKey.
+     Dim path As String
+
+     path = App.path
+     If Right(path, 1) &lt;&gt; "\" Then
+        path = path &amp; "\"
+     End If
+
+  ' This creates a Root entry called "MyApp".
+     sKeyName = "MyApp"
+     sKeyValue = "My Application"
+     ret&amp; = RegCreateKey&amp;(HKEY_CLASSES_ROOT, sKeyName, lphKey&amp;)
+     ret&amp; = RegSetValue&amp;(lphKey&amp;, "", REG_SZ, sKeyValue, 0&amp;)
+
+  ' This creates a Root entry called .BAR associated with "MyApp".
+     sKeyName = ".BAR"
+     sKeyValue = "MyApp"
+     ret&amp; = RegCreateKey&amp;(HKEY_CLASSES_ROOT, sKeyName, lphKey&amp;)
+     ret&amp; = RegSetValue&amp;(lphKey&amp;, "", REG_SZ, sKeyValue, 0&amp;)
+
+  ' This sets the command line for "MyApp".
+     sKeyName = "MyApp"
+     sKeyValue = path &amp; "MyApp.exe %1"
+     ret&amp; = RegCreateKey&amp;(HKEY_CLASSES_ROOT, sKeyName, lphKey&amp;)
+     ret&amp; = RegSetValue&amp;(lphKey&amp;, "shell\open\command", REG_SZ, _
+                         sKeyValue, MAX_PATH)
+
+  ' This sets the icon for the file extension
+     sKeyName = "MyApp"
+     sKeyValue = path &amp; "myIcon.ico"
+     ret&amp; = RegCreateKey&amp;(HKEY_CLASSES_ROOT, sKeyName, lphKey&amp;)
+     ret&amp; = RegSetValue&amp;(lphKey&amp;, "DefaultIcon", REG_SZ, _
+                         sKeyValue, MAX_PATH)
+   
+  ' This notifies the shell that the icon has changed
+     SHChangeNotify SHCNE_ASSOCCHANGED, SHCNF_IDLIST, 0, 0
+
+  End Sub
+
+  Private Sub Form_Load()
+   ' When the file is double clicked the name is stored in Command()
+
+     RichTextBox1.LoadFile Command()
+  End Sub
+
+7. From the File menu, choose Make Project1.exe and compile the project as
+  MyApp.exe.
+
+8. In the application directory, create a text file named myFile.bar and enter
+  some text into it. The file displays the default Windows icon.
+
+9. Now run MyApp.exe and click on the form. This creates the following structure
+  in the Registry:
+
+.bar = MyApp
+     MyApp = My Application
+       | 
+        -- DefaultIcon= myIcon.ico
+       |
+        -- Shell
+             |
+              ----open
+                   |
+                    ------command = MyApp.exe %1
+
+10. The icon of myFile.bar is changed to myIcon.ico.
+
+11. Double-clicking myFile.bar starts MyApp.exe and the text is seen in the
+  RichTextBox control.
+
+REFERENCES
+==========
+
+  Q185453 HOWTO: Associate a File Extension with Your Application
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbIcon kbRegistry kbSDKWin32 kbShellGrp kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183857: WD97: Save As HTML Command Missing from File Menu | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183857: WD97: Save As HTML Command Missing from File Menu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183857/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183857/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183857/","publisher":null,"image":null,"headline":"Q183857: WD97: Save As HTML Command Missing from File Menu","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183857-wd97-save-as-html-command-missing-from-file-menu">Q183857: WD97: Save As HTML Command Missing from File Menu</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183857
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): word97 kbwdinternet
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+The "Save As HTML" command is missing from the File menu. Additionally, "HTML
+document (*.htm,*.html,*.htx)" is not an available option when you try to save
+your Web page.
+
+NOTE: This problem may occur even when the HTML converter is already installed
+and the Html32.cnv file is present in the TextConv folder.
+
+CAUSE
+=====
+
+The HTML converter may not be installed or may not be correctly registered.
+
+RESOLUTION
+==========
+
+Use one or more of the following methods appropriate for your situation.
+
+Method 1: Install the Web Page Authoring Component
+--------------------------------------------------
+
+To resolve this issue, install the Web Page Authoring component in Microsoft
+Office 97. To do this, follow these steps:
+
+1. Quit all Office programs.
+
+2. Click the Start button, point to Settings, and then click Control Panel.
+
+3. In Control Panel, double-click the Add/Remove Programs icon.
+
+4. On the Install/Uninstall tab, click to select Microsoft Office 97. (If you
+  are using a stand-alone version of one of the Office programs, click to
+  select the appropriate product in the list.) Then, click Add/Remove.
+
+5. Follow the directions provided in the Setup dialog boxes.
+
+For more information about starting Microsoft Office Setup, click the Office
+Assistant, type "Installing Microsoft Office" (without quotation marks), click
+Search, and then click to select the "Install or remove individual components"
+topic.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Method 2: Re-register Word or Office Setup with the /y Switch
+-------------------------------------------------------------
+
+To resolve this issue, try running Setup /y for Word or Office to repair registry
+corruption.
+
+To run Setup with the /y switch, follow these steps:
+
+1. Insert the Word or Office CD into the CD drive. If you installed Word or
+  Office from floppy disks, insert the Setup Disk 1 in your computer's floppy
+  disk drive.
+
+2. Click the Start button and then click Run.
+
+3. In the Open box, type the following
+
+  &lt;drive&gt;:\setup /Y
+
+  where &lt;drive&gt; is the letter of the drive that contains the CD or Setup
+  Disk 1.
+
+4. Click OK.
+
+5. Click Reinstall.
+
+  This will re-register Word (and all Office programs, if you run Office Setup).
+
+If these steps don't correct the problem, you may need to remove Word, run
+OffClean found on the Microsoft Office CD within the ValuPack folder and then
+reinstall Word.
+
+For additional information about OffClean, please see the following article in
+the Microsoft Knowledge Base:
+
+  Q158098 OFF97: Setup May Remove Older Components
+
+
+Method 3: Modify the Windows Registry
+-------------------------------------
+
+This problem can be resolved by manually editing the Windows Registry to add the
+correct entries to the Export and Import keys.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+1. Quit all Windows programs.
+
+2. On the Start menu, click Run.
+
+3. Type "Regedit" (without the quotation marks) in the Open box, and then click
+  OK.
+
+4. Modify the Export key using the following steps:
+
+  a. Open the registry to the following key:
+
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Text
+        Converters\Export
+
+  b. With the Export key selected, point to New on the Edit menu and then click
+     Key.
+
+  c. Type "HTML" (without the quotation marks) as the new key name and then
+     press ENTER.
+
+  d. With the HTML key selected, point to New on the Edit menu and then click
+     String Value.
+
+  e. Type "Extensions" (without the quotation marks) as the new string name and
+     then press ENTER.
+
+  f. With the Extensions string selected, click Modify on the Edit menu.
+
+  g. Type "html htm htx" (without the quotation marks) into the Value data box
+     and then click OK.
+
+  h. With the HTML key selected, point to New on the Edit menu and then click
+     String Value.
+
+  i. Type "Name" as the new string name and then press ENTER.
+
+  j. With the Name string selected, click Modify on the Edit menu.
+
+  k. Type "HTML Document" (without the quotation marks) and then click OK.
+
+  l. With the HTML key selected, point to New on the Edit menu and then click
+     String Value.
+
+  m. Type "Path" (without the quotation marks) and then press ENTER.
+
+  n. With the Path string selected, click Modify on the Edit menu.
+
+  o. Type the full path to the Html32.cnv converter into the Value Data box and
+     then click OK.
+
+     NOTE: The default path to the Html32.cnv converter file is the following:
+
+  C:\Program Files\Common Files\Microsoft Shared\TextConv\Html32.cnv
+
+5. Modify the Import key using the following steps:
+
+  a. Open the registry to the following key:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Text Converters\Import
+
+  b. With the Import key selected, point to New on the Edit menu and then click
+     Key.
+
+  c. Type "HTML" (without the quotation marks) as the new key name and then
+     press ENTER.
+
+  d. With the HTML key selected, point to New on the Edit menu and then click
+     String Value.
+
+  e. Type "Extensions" (without the quotation marks) as the new string name and
+     then press ENTER.
+
+  f. With the Extensions string selected, click Modify on the Edit menu.
+
+  g. Type "html htm htx otm asp" (without the quotation marks) into the Value
+     data box and then click OK.
+
+  h. With the HTML key selected, point to New on the Edit menu and then click
+     String Value.
+
+  i. Type "Name" as the new string name and then press ENTER.
+
+  j. With the Name string selected, click Modify on the Edit menu.
+
+  k. Type "HTML Document" (without the quotation marks) and then click OK.
+
+  l. With the HTML key selected, point to New on the Edit menu and then click
+     String Value.
+
+  m. Type "Path" (without the quotation marks) and then press ENTER.
+
+  n. With the Path string selected, click Modify on the Edit menu.
+
+  o. Type the full path to the Html32.cnv converter into the Value Data box and
+     then click OK.
+
+     NOTE: The default path to the Html32.cnv converter file is the following:
+
+  C:\Program Files\Common Files\Microsoft Shared\TextConv\Html32.cnv
+
+After you restart Word, Save as HTML should now show on the File menu and the
+HTML converter should be available when you click Save (Save As) on the File
+menu.
+
+Method 4: Remove All, Run Eraser and then Reinstall
+---------------------------------------------------
+
+To resolve this issue, do the following steps:
+
+1. Run Setup for Word or Office and Remove All.
+
+2. Run the Eraser 97 utility to remove all remaining Office/Word files and to
+  delete corresponding registry entries.
+
+  For more information about the Eraser utility, please see the following
+  article in the Microsoft Knowledge Base:
+
+  Q176823 OFF97: Utility to Completely Remove Remaining Office 97 File
+
+3. Re-install either Word 97 or Office 97 for Windows.
+
+Additional query words: 8.0 authoring conversion convert hypertext
+
+======================================================================
+Keywords          : word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

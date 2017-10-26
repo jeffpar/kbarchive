@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69292: PRB: Video Driver GP-Faults When Handling Large Bitmaps | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69292: PRB: Video Driver GP-Faults When Handling Large Bitmaps" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69292/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69292/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69292/","publisher":null,"image":null,"headline":"Q69292: PRB: Video Driver GP-Faults When Handling Large Bitmaps","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69292-prb-video-driver-gp-faults-when-handling-large-bitmaps">Q69292: PRB: Video Driver GP-Faults When Handling Large Bitmaps</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69292
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Some display drivers experience a GP-fault or unrecoverable application error
+(UAE) when a large bitmap is loaded onto the desktop as "wallpaper." This fault
+occurs when the bitmap is aligned on a page boundary and the driver attempts to
+read the next page. In standard mode, the next page is often valid and the bug
+escapes detection. In enhanced mode, the next page is frequently invalid and the
+GP-fault occurs.
+
+CAUSE
+=====
+
+This GP-fault can be attributed to the way the main loop is constructed in the
+video driver DIB-handling routines. The main loop is written so that a byte is
+fetched from the DIB and the data pointer is advanced immediately, before
+processing the byte. This is fine until the very last byte in the DIB is
+processed.
+
+MORE INFORMATION
+================
+
+This problem has manifested itself in a few different ways. For example, in one
+instance, the driver code fetched the final DIB byte (which was at an offset of
+FFFFh in a given segment). The driver incremented the offset, determined that it
+wrapped to zero, and incremented the value in the DIB segment register. Because
+this was the final byte of the DIB, the new value in the DIB segment register
+was an invalid selector. Using an invalid selector causes a GP-fault.
+
+In a second example, the driver code loaded each DIB byte at the bottom of the
+main loop (loop termination logic is at the top of the loop). This caused a
+final, invalid byte to be loaded at the bottom of the loop (before the loop
+termination test). This worked for many bitmaps because there are often a few
+extra bytes of space after the final DIB byte. One bitmap, however, fit exactly
+within the segment limit. When the program tried to fetch one extra byte in this
+case, a GP-fault occurred because the fetch violated the segment limit defined
+in the local descriptor table.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

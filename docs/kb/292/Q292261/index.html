@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q292261: Advertised Programs Do Not Generate Status .mif Files | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q292261: Advertised Programs Do Not Generate Status .mif Files" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/292/Q292261/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/292/Q292261/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/292/Q292261/","publisher":null,"image":null,"headline":"Q292261: Advertised Programs Do Not Generate Status .mif Files","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q292261-advertised-programs-do-not-generate-status-mif-files">Q292261: Advertised Programs Do Not Generate Status .mif Files</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q292261
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbClient kbConfig kbMMC kbsms200 kbsms200bug kbAdvertisement kbAppMan kbCollections kbP
+Last Modified: 01-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you advertise programs to Microsoft Windows 95-based or Microsoft Windows
+98-based client computers that must be restarted, you may receive a "no success"
+or a "failure status" message in the Status Message Viewer. When you examine the
+Smsapm32.log file on the client, you may observe that the following log is
+displayed after the client has been restarted:
+
+  SCHED DATA : A program status .mif has not been found.
+  SCHED DATA : Changing job status to success but not reporting any program
+  status.
+  SCHED DATA : There will be no further program status .mif checking for this
+  job upon restart.
+
+CAUSE
+=====
+
+This problem can occur on Windows 95-based and Windows 98-based clients when the
+After Running option is set to Program restarts Computer in the Properties
+section of the advertised program, and if the program requests that the client
+must be restarted. This problem only occurs when the program does not report a
+status .mif file.
+
+WORKAROUND
+==========
+
+To work around this problem, rewrite or modify, if possible, the advertised
+program to report a status .mif file after the program has completed its tasks.
+If the custom-made program cannot be modified to accomplish this task, you can
+use the repackaging feature of the Microsoft Systems Management Server (SMS)
+Installer tool to repackage your custom-made program where support for .mif
+status reports can be added.
+
+For additional information about the repackaging process and status .mif
+reporting in the SMS Installer tool, refer to the SMS Installer Help file. If
+you choose to follow this workaround, you should be aware of the following
+problem documented in the related knowledgebase article:
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q292030 SMS: The Install Status May Be Missing for Advertised Programs That
+  Generate Status .mif Files
+
+Another workaround method is to rewrite or to modify the advertised program to
+suppress the restart process in the program's install process, and then to
+change the After Running option to SMS Restarts Computer in the Properties
+section of the advertised program .
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Microsoft is researching this problem and will post more information here in the
+Microsoft Knowledge Base when it becomes available.
+
+Additional query words: prodsms no 10008 only 10005 Windows 95 98
+
+======================================================================
+Keywords          : kbClient kbConfig kbMMC kbsms200 kbsms200bug kbAdvertisement kbAppMan kbCollections kbPackage kbsmsAdmin kbStatSum kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93647: Creating a Custom Voice Pilot Vocabulary | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93647: Creating a Custom Voice Pilot Vocabulary" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93647/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93647/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93647/","publisher":null,"image":null,"headline":"Q93647: Creating a Custom Voice Pilot Vocabulary","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93647-creating-a-custom-voice-pilot-vocabulary">Q93647: Creating a Custom Voice Pilot Vocabulary</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93647
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows Sound System Voice Pilot version 1.0 includes 16 default
+vocabularies for several of the most popular Windows-based applications. (For a
+complete listing refer to page 153 of the "Microsoft Windows Sound System User's
+Guide.")
+
+In addition, it is possible to create a custom vocabulary for any Windows-based
+application by performing the following steps:
+
+1. Run Voice Pilot.
+
+2. Run the Windows-based application for which you would like to create a
+  vocabulary file.
+
+3. From Voice Pilot, choose the Menu button from the tool bar and select
+  Vocabulary.
+
+4. Make sure the Windows-based application executed in step 2 is listed in the
+  Vocabulary For box.
+
+5. In the Vocabulary Item box, type the name of the command you want to add.
+
+6. In the Use Keyboard To Enter Definition Here box, type the keystrokes you
+  want the voice command to carry out.
+
+7. If you are defining a lower-level command, select the This Definition Valid
+  After check box, and choose the higher-level command to follow from the list
+  at the right.
+
+8. From the After Recognizing Item GoTo list, select the next command level to
+  which you want Voice Pilot to go.
+
+9. Choose the OK button.
+
+10. If the item has not been trained, the Train dialog box appears. Follow the
+  procedure in "Training Voice Command Items" in Chapter 8, "Controlling Your
+  Computer with Voice Pilot," in the "Microsoft Windows Sound System User's
+  Guide."
+
+11. Choose the OK button.
+
+12. Choose the Close button.
+
+A new vocabulary file has now been created for the application specified in the
+Vocabulary For box.
+
+MORE INFORMATION
+================
+
+Voice Pilot uses the default vocabulary (DEFAULT.VCB) for Windows-based
+applications without a vocabulary. When a change is made to the DEFAULT.VCB file
+by adding a vocabulary item (step 5 above), the vocabulary file is saved with
+the name of the application currently listed in the Vocabulary For box. Voice
+Pilot also updates the VOICEPIL.INI file to reflect the new vocabulary file.
+
+Once this is done, then you can modify the new vocabulary for your application by
+simply loading it and making the changes within Voice Pilot.
+
+If you're a developer and want to include you own custom Voice Pilot vocabulary
+for your application; you just follow the steps above to create and customize
+the vocabulary, and then include a routine in your Setup program to modify
+VOICEPIL.INI.
+
+For more information about the Windows Sound System, query on the following words
+in the Microsoft Knowledge Base:
+
+  sound and system and windows
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

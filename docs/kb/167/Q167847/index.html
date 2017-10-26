@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167847: ACC97: IPF Executing VSS Add and Create Commands at Same Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167847: ACC97: IPF Executing VSS Add and Create Commands at Same Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167847/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167847/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167847/","publisher":null,"image":null,"headline":"Q167847: ACC97: IPF Executing VSS Add and Create Commands at Same Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167847-acc97-ipf-executing-vss-add-and-create-commands-at-same-time">Q167847: ACC97: IPF Executing VSS Add and Create Commands at Same Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167847
+Product(s): Microsoft SourceSafe
+Version(s): 97
+Operating System(s): 
+Keyword(s): kbAccess kbSSafe
+Last Modified: 01-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Office 97 Developer Edition 
+- Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+
+SYMPTOMS
+========
+
+When you execute a Visual SourceSafe command, you can call other commands from
+any enabled button on a floating toolbar, even if a SourceSafe dialog box is
+visible on your screen.
+
+If you execute the "Add Database to SourceSafe" and "Create Database from
+SourceSafe Project" commands at the same time, you receive one or more of the
+following error messages, and then Microsoft Access quits:
+
+  MSACCESS caused an invalid page fault in module MSO97.DLL
+
+  MSACCESS caused an invalid page fault in module SSSCC.DLL
+
+  MSACCESS caused an invalid page fault in module DAO350.DLL
+
+  MSACCESS caused an invalid page fault in module ACCSCC.DLL
+
+  MSACCESS caused an invalid page fault in module MSACCESS.EXE
+
+
+NOTE: If you click buttons on other floating toolbars while you are executing a
+Visual SourceSafe command, you may experience different error messages or
+different results.
+
+This article assumes that you are familiar with using the client side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or the Help topics
+available from the Visual SourceSafe Help menu.
+
+RESOLUTION
+==========
+
+You can minimize your chances of encountering this error when you work with
+Visual SourceSafe if you dock all your toolbars. Once a toolbar is docked, you
+may want to modify its properties to prevent it from being detached:
+
+1. On the View menu, point to Toolbars, and then click Customize.
+
+2. In the Customize dialog box, click the Toolbars tab, and then select the
+  toolbar you want to prevent from floating.
+
+3. Click the Properties button.
+
+4. In the Toolbar Properties dialog box, click to clear the Allow Moving check
+  box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Access 97. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+WARNING: Following these steps will cause a page fault on your computer. Make
+sure you save and close any open work on your computer before following these
+steps.
+
+The following example assumes that you have the Microsoft Access Source Code
+Control component of Microsoft Office 97 Developer Edition Tools installed, and
+that you are using Microsoft Visual SourceSafe as your source code control
+program.
+
+1. Start Microsoft Access and create a new, blank database called Vss.mdb.
+
+2. On the View menu, point to Toolbars, and then click Customize.
+
+3. In the Customize dialog box, click the New button.
+
+4. In the New Toolbar dialog box, type MyToolbar in the Toolbar name box, and
+  then click OK. A new, empty toolbar appears. Position the new toolbar and the
+  Customize dialog box so you can see them both on your screen at the same
+  time.
+
+5. Click the Commands tab in the Customize dialog box.
+
+6. Select Source Code Control in the Categories box, and then drag "Create
+  Database from SourceSafe Project" from the Commands box to the new toolbar.
+  Then drag "Add Database to SourceSafe" from the Commands box to the new
+  toolbar.
+
+7. Click Close in the Customize dialog box.
+
+8. Click "Create Database from SourceSafe Project" on the new toolbar. The
+  Visual SourceSafe Login dialog box appears.
+
+9. Click "Add Database to SourceSafe" on the new toolbar.
+
+10. Respond to prompts and dialog boxes from both commands in turn as they
+  appear, and note that the page fault error(s) occurs.
+
+Additional query words: ipf gpf page fault watson vss scc accscc
+
+======================================================================
+Keywords          : kbAccess kbSSafe 
+Technology        : kbSSafeSearch kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbSSafe400 kbSSafe400a kbSSafe500 kbOffice97DevSearch
+Version           : 97
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

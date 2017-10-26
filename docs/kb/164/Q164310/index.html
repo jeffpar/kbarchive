@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164310: XCLN: Exchange Server Available Application Program Interfaces | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164310: XCLN: Exchange Server Available Application Program Interfaces" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164310/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164310/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164310/","publisher":null,"image":null,"headline":"Q164310: XCLN: Exchange Server Available Application Program Interfaces","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164310-xcln-exchange-server-available-application-program-interfaces">Q164310: XCLN: Exchange Server Available Application Program Interfaces</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164310
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a brief summary of the available Microsoft Exchange Server
+application program interfaces (API's) and what they are generally used for.
+
+MORE INFORMATION
+================
+
+Messaging Application Programming (MAPI) SDK.
+This is the messaging client and transport side API for Microsoft Exchange
+Server. The MAPI SDK includes Simple MAPI, CMC (Common Mail Calls) and Extended
+MAPI for C\C++ languages, as well as OLE Messaging 1.0 and Active Messaging 1.1
+for the Microsoft Visual Basic language. Both 16 and 32 bit platforms are
+supported.
+
+Availability:
+Available with the Microsoft Win32 SDK.
+
+More information on the MAPI SDK can be found at:
+
+  http://msdn.microsoft.com/library/default.asp?URL=/library/psdk/mapi/intro_69k7.htm
+
+Microsoft Exchange Installable Indexed Sequential Access Method (ISAM) driver:
+This is an ISAM driver for use with Microsoft Access 97. This driver works on top
+of MAPI using Data Access Objects (DAO) code and, is therefore, a messaging
+client\transport side driver (not a direct "hook" into the Microsoft Exchange
+database). However, it does offer the developer an alternative to writing
+messaging applications in C\C++ or Microsoft Visual Basic.
+
+Availability:
+Available as the Data Access Pak with the ValuPak for the Microsoft Office '97
+Professional Edition.
+
+Microsoft Exchange Development Kit (EDK):
+This is the server side API to Microsoft Exchange Server. The EDK is typically
+used to develop messaging gateways to Microsoft Exchange Server, mailbox agents
+(custom rule processing), and add-in applications (applications that do not use
+a mailbox for communication to the Microsoft Exchange Server).
+
+Availability:
+Available with the Microsoft BackOffice SDK or MSDN Platform SDK.
+
+More information on the Microsoft Exchange SDK can be found on:
+
+  http://www.microsoft.com/msdn/sdk/
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

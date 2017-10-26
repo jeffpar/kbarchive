@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141440: PRB: Paste Link Fails in Microsoft Excel | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141440: PRB: Paste Link Fails in Microsoft Excel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141440/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141440/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141440/","publisher":null,"image":null,"headline":"Q141440: PRB: Paste Link Fails in Microsoft Excel","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141440-prb-paste-link-fails-in-microsoft-excel">Q141440: PRB: Paste Link Fails in Microsoft Excel</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141440
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbole kbActiveX kbClipboard kbCOMt kbExcel kbMFC kbVC150 kbVC200 kbVC400 kbVC500 kbGrpD
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++ 32-bit Edition, versions 2.0, 2.1, 2.2, 4.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you attempt to use Paste Link to paste the clipboard contents into
+Microsoft Excel, Microsoft Excel fails and displays a warning:
+
+  Unable to paste link.
+
+CAUSE
+=====
+
+When Microsoft Excel attempts to paste link an object, it looks for a full
+moniker for the object (OLEWHICHMK_OBJFULL). The full moniker consists of the
+moniker of the object's container (OLEWHICHMK_CONTAINER) and the moniker of the
+object relative to its container (OLEWHICHMK_OBJREL). In MFC, if SetItemName()
+is not used to provide a name for the COleServerItem, the OLEWHICHMK_OBJREL
+portion of the moniker cannot be provided. This causes Paste Link to fail in
+Microsoft Excel.
+
+RESOLUTION
+==========
+
+Set the name of the item to be paste linked by using the SetItemName() function.
+The sample code in this article illustrates one way you might do this.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+This behavior seems to be unique to Microsoft Excel but may exist in other
+applications as well.
+
+Run the scribble application (step 7) and save a document. In scribble, on the
+Edit menu, click Copy to copy the document object and metafile representation to
+the clipboard. Run Microsoft Excel, choose Paste Special, and select the Paste
+Link option. Attempt to use Paste Link to paste the Scrib Document Object or the
+"Picture." Microsoft Excel will not succeed and will display a warning:
+
+  Unable to paste link.
+
+Sample Code
+-----------
+
+In the case of scribble, the following code will fix the problem
+
+  CScribItem::CScribItem(CScribDoc* pContainerDoc)
+     : COleServerItem(pContainerDoc, TRUE)
+  {
+      SetItemName("Scribble Item");
+  }
+
+REFERENCES
+==========
+
+For more information, see COleServerItem::XOleObject::GetMoniker() in
+Olesvr2.cpp and IOleObject::GetMoniker() in the OLE 2 Programmer's Reference.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbole kbActiveX kbClipboard kbCOMt kbExcel kbMFC kbVC150 kbVC200 kbVC400 kbVC500 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Hardware          : ALPHA MIPS x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

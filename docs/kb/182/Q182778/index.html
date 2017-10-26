@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q182778: TN3270 Service Logs Event 702 Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q182778: TN3270 Service Logs Event 702 Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/182/Q182778/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/182/Q182778/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/182/Q182778/","publisher":null,"image":null,"headline":"Q182778: TN3270 Service Logs Event 702 Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q182778-tn3270-service-logs-event-702-messages">Q182778: TN3270 Service Logs Event 702 Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q182778
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The TN3270 service may frequently log the following message in the Windows NT
+application event log:
+
+  Event ID: 702
+  Source: TN3270 Server
+  Description: Windows API RegQueryValueEx(First Counter) failed with
+  error code 2L (The system cannot find the file specified.) in function
+  PRDGetIndexValues.
+
+NOTE: These messages may be logged anytime the TN3270 service has been installed,
+even if it is not being used. The TN3270 service is installed by default with
+SNA Server version 3.0 and later.
+
+CAUSE
+=====
+
+Some of the registry entries related to the TN3270 Performance Monitor counters
+are not present or are incorrect.
+
+WORKAROUND
+==========
+
+If the TN3270 service is not being used, you may remove it by running the SNA
+Server Setup program and selecting Add/Remove to remove the TN3270 component.
+
+RESOLUTION
+==========
+
+Use the following procedure to unload and reload the Performance Monitor
+Counters for SNA Server and the TN3270 service:
+
+1. Open a Command Prompt on the computer running Windows NT Server where SNA
+  Server is installed.
+
+2. Change to the &lt;snaroot&gt;\system directory (C:\SNA\SYSTEM, by default).
+
+3. Type the following at the command prompt and press ENTER to remove the SNA
+  Server counters:
+
+  unlodctr snaservr
+
+4. Type the following at the command prompt and press ENTER to remove the TN3270
+  counters:
+
+  unlodctr tn3270
+
+  NOTE: If the counters were correctly installed, these commands return text
+  similar to the following:
+
+  Removing counter names and explain text for &lt;service name&gt;
+  Updating text for language 009
+
+  If the counters were not correctly installed, these commands return text
+  similar to the following:
+
+  Counters for &lt;service name&gt; have not been installed yet
+
+5. Type the following at the command prompt and press ENTER to install the SNA
+  Server counters:
+
+  lodctr snaperf.ini
+
+6. Type the following at the command prompt and press ENTER to install the
+  TN3270 counters:
+
+  lodctr tn3perf.ini
+
+NOTE: The INI file contains counters for several languages that may not be
+installed on the system. This will result in a large number of error messages
+scrolling across the Command Prompt window for each of the languages not
+installed. This does not have any adverse effect on the successful installation
+of the counters.
+
+MORE INFORMATION
+================
+
+The TN3270 Performance Monitor counters are contained in the Windows NT registry
+at the following location:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TN3270\Performance
+
+If the Performance Monitor counters are installed correctly, entries similar to
+the following will be listed when the Performance Key is highlighted:
+
+  Close: REG_EXPAND_SZ: ClosePerformanceData
+  Collect: REG_EXPAND_SZ: ReturnPerformanceData
+  First Counter: REG_DWORD: &lt;counter number&gt;
+  First Help: REG_DWORD: &lt;counter number&gt;
+  Last Counter: REG_DWORD: &lt;counter number&gt;
+  Last Help: REG_DWORD: &lt;counter number&gt;
+  Library: REG_EXPAND_SZ: &lt;drive:&gt;\&lt;snaroot&gt;\system\tn3prf.dll
+  Open: REG_EXPAND_SZ: OpenPerformanceData
+
+where: &lt;counter number&gt; is the Hex value that indicates the counter number
+for the particular counter listed.
+
+In one reported case, the TN3270\Performance registry entries did not include the
+following entries: First Counter, First Help, Last Counter, Last Help. After
+using the process outlined in the Resolution section, all of these entries were
+added and the Event 702 messages were no longer logged.
+
+If the registry entries for the Performance Monitor counters are not correct, the
+TN3270 may log the Event 702 every time the Windows NT Performance Monitor calls
+the OpenPerformanceData function in the TN3270 Performance Monitor DLL
+(tn3prf.dll). These errors may be logged if third- party applications other than
+Performance Monitor are also calling into the Performance Monitor DLLs to gather
+performance-related data.
+
+Please refer to the following Knowledge Base articles for other issues related to
+SNA Server and Performance Monitor:
+
+  Q170840 Installing TN3270 breaks Performance Counters on Windows NT 4.0
+
+  Q169488 Errors When Performance Monitoring SNA Server
+
+  Q180054 Perfmon Trap or Winlogon STOP C000021A When Running Perfmon
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

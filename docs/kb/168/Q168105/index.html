@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q168105: WinNT Fails to Create a Memory.dmp On Any Other LUN Than 0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q168105: WinNT Fails to Create a Memory.dmp On Any Other LUN Than 0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/168/Q168105/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/168/Q168105/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/168/Q168105/","publisher":null,"image":null,"headline":"Q168105: WinNT Fails to Create a Memory.dmp On Any Other LUN Than 0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q168105-winnt-fails-to-create-a-memorydmp-on-any-other-lun-than-0">Q168105: WinNT Fails to Create a Memory.dmp On Any Other LUN Than 0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q168105
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows NT from a different SCSI logical unit number (LUN) other
+than LUN 0, a memory dump file (memory.dmp) file will not be created.
+
+CAUSE
+=====
+
+The Diskdump.sys file in Windows NT does not check for any other LUN besides LUN
+0. If the Windows NT computer is started from any other LUN than 0, this driver
+will not load, disabling the ability to write a dump file if the computer traps
+(displays a blue screen error message).
+
+MORE INFORMATION
+================
+
+Small Computer System Interface (SCSI) SCSI is a hardware interface that allows
+for the connection of up to 15 peripheral devices to a single expansion board
+that plugs into the computer called a SCSI host adapter or SCSI controller.
+
+SCSI devices are daisy chained together. Each device has two ports, one for the
+incoming cable and another for the outgoing cable to the next device. Each
+device must be set to a unique ID number (SCSI ID), which is normally done by
+manually flipping a rotary switch on the device itself. The highest number has
+the highest priority. Thus, the host adapter usually defaults to ID 7 in the
+case of an 8-device SCSI system.
+
+Each SCSI device can be further broken up into eight logical units, identified by
+logical unit numbers (LUNs) 0 to 7. Although most SCSI disks contain only one
+disk inside and are addressed as LUN 0, CD-ROM and optical disk jukeboxes
+contain multiple units. Each disk in these devices can be addressed
+independently via LUN numbers; for example, a four-disk jukebox could be
+assigned LUN 0 to 3. RAID systems are beginning to use multiple LUN addressing
+in their fault tolerant disk systems as well.
+
+On most computers you will not need to worry about LUN addressing since, by
+default, most SCSI controllers and devices are set to LUN 0. However, many of
+the newer SCSI controllers have the ability to start from LUNs other than zero
+(adaptec 2940 allows starting from LUN 0 or 1). You should be able to detect LUN
+addressing through the SCSI boot process or by entering the BIOS of SCSI
+controller installed on the system.
+
+Obtaining SCSI Standards reference manuals:
+
+American National Standard (ANSI) for Small Computer System Interface (SCSI),
+X3.131-1986. This approved standard is available from:
+
+  American National Standards Institute
+  11 West 42nd Street 13th Floor
+  New York, NY 10036
+  Sales Department: (212) 642-4900
+
+The Small Computer System Interface - 2 (SCSI-2) was approved by ANSI on August
+31, 1990. Since then, the X3T9.2 committee has asked ANSI to return SCSI-2 for
+further editing. Revision 10d is in the works, but it is not finished yet.
+Revision 10c can be purchased from:
+
+  Global Engineering Documents
+  2805 McGaw
+  Irvine, CA 92714
+  (800) 854-7179
+  Outside USA and Canada: (714) 261-1455
+
+Global has identified this document as X3.131-199x. (The latest revision is Rev
+10c with a date of 3/9/90.)
+
+If you are looking for an introduction to SCSI, try:
+
+  SCSI: Understanding the Small Computer System Interface
+  Written by NCR Corporation
+  Available from: Prentice Hall, Englewood Cliffs, NJ, 07632
+  Phone: (201) 767-5937
+  ISBN 0-13-796855-8
+
+If you want an easy-to-read reference book on SCSI-2 that includes timing
+diagrams (but omits all command sets other than for disks, tapes, and processor
+devices), try:
+
+  The SCSI Bench Reference
+  ENDL Publications
+  14426 Black Walnut Court
+  Saratoga CA, 95070
+  (408) 867-6642
+
+Additional query words: ntblue
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Hardware          : ALPHA PPC x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

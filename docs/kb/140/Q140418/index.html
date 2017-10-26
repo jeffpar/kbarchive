@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140418: Detailed Explanation of FAT Boot Sector | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140418: Detailed Explanation of FAT Boot Sector" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140418/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140418/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140418/","publisher":null,"image":null,"headline":"Q140418: Detailed Explanation of FAT Boot Sector","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140418-detailed-explanation-of-fat-boot-sector">Q140418: Detailed Explanation of FAT Boot Sector</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140418
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.10 3.50 3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Understanding the content and function of a file system "boot sector" can be
+helpful when troubleshooting boot failures or disk corruption.
+
+From time to time, usually due to hardware failure or virus infection, a boot
+sector may become corrupted. If the partition is the active primary partition,
+or a partition containing operating system files, this can prevent the system
+from starting. Otherwise, it may simply prevent access to data on the drive.
+
+Usually, if you suspect disk corruption, it is best to use commercial anti- virus
+or disk recovery software. In some cases, however, detailed knowledge of the
+boot sector can come in handy.
+
+This article explains the various fields of a FAT boot sector. Using the
+following information, it may be possible to manually repair a damaged FAT boot
+sector. In order to attempt such a repair, disk editing tools capable of editing
+raw disk sectors are required. This article does not discuss specific tools
+which can be used to perform such a repair operations.
+
+While every effort has been made to ensure the accuracy of the following
+information, different operating systems, including future versions of Microsoft
+operating systems, may use different data structures. Therefore you should make
+use of the following information at your own risk.
+
+MORE INFORMATION
+================
+
+Background and Terminology
+--------------------------
+
+In this document, a "file system boot sector" is the first physical sector on a
+logical volume. A logical volume might be a primary partition, a logical drive
+in an extended partition, or a composite of two or more partitions, as is the
+case with mirrors, stripe sets, and volume sets.
+
+On floppy disks, the boot sector is the first sector on the disk. In the case of
+hard drives, the first sector is referred to as the "Master Boot Record" or
+"MBR." This MBR is different from a file system boot sector and contains a
+partition table, which describes the layout of logical partitions on that hard
+drive. The file system boot sector would be the first sector in one of those
+partitions.
+
+The Boot Process
+----------------
+
+The boot process of 80x86-based personal computers (as opposed to RISC- based
+systems) makes direct use of a file system boot sector for executing
+instructions. The initial boot process can be summarized as follows:
+
+1. Power On Self Test (or POST) initiated by system BIOS and CPU.
+
+2. BIOS determines which device to use as the "boot device."
+
+3. BIOS loads the first physical sector from the boot device into memory and
+  transfers CPU execution to the start of that memory address.
+
+If the boot device is a hard drive, the sector loaded in step 3 is the MBR, and
+the boot process proceeds as follows:
+
+4. MBR code loads the boot sector referenced by the partition table for the
+  "active primary partition" into memory and transfers CPU execution to the
+  start of that memory address.
+
+Up to this point, the boot process is entirely independent of how the disk is
+formatted and what operating system is being loaded. From this point on, both
+the operating and file systems in use play a part.
+
+In the case of FAT volumes which have Windows NT installed, the FAT boot sector
+is responsible for identifying the location of the file "NTLDR" on the volume,
+loading it into memory, and transferring control to it.
+
+Inside the FAT Boot Sector
+--------------------------
+
+Because the MBR transfers CPU execution to the boot sector, the first few bytes
+of the FAT boot sector must be valid executable instructions for an 80x86 CPU.
+In practice these first instructions constitute a "jump" instruction and occupy
+the first 3 bytes of the boot sector. This jump serves to skip over the next
+several bytes which are not "executable."
+
+Following the jump instruction is an 8 byte "OEM ID". This is typically a string
+of characters that identifies the operating system that formatted the volume.
+
+Following the OEM ID is a structure known as the BIOS Parameter Block, or "BPB."
+Taken as a whole, the BPB provides enough information for the executable portion
+of the boot sector to be able to locate the NTLDR file. Because the BPB always
+starts at the same offset, standard parameters are always in a known location.
+Because the first instruction in the boot sector is a jump, the BPB can be
+extended in the future, provided new information is appended to the end. In such
+a case, the jump instruction would only need a minor adjustment. Also, the
+actual executable code can be fairly generic. All the variability associated
+with running on disks of different sizes and geometries is encapsulated in the
+BPB.
+
+The BPB is stored in a packed (that is, unaligned) format. The following table
+lists the byte offset of each field in the BPB. A description of each field
+follows the table.
+
+Field               Offset     Length
+-----               ------     ------
+Bytes Per Sector      11         2
+Sectors Per Cluster   13         1
+Reserved Sectors      14         2
+FATs                  16         1
+Root Entries          17         2
+Small Sectors         19         2
+Media Descriptor      21         1
+Sectors Per FAT       22         2
+Sectors Per Track     24         2
+Heads                 26         2
+Hidden Sectors        28         4
+Large Sectors         32         4
+
+Bytes Per Sector: This is the size of a hardware sector and for most disks in use
+in the United States, the value of this field will be 512.
+
+Sectors Per Cluster: Because FAT is limited in the number of clusters (or
+"allocation units") that it can track, large volumes are supported by increasing
+the number of sectors per cluster. The cluster factor for a FAT volume is
+entirely dependent on the size of the volume. Valid values for this field are 1,
+2, 4, 8, 16, 32, 64, and 128. Query in the Microsoft Knowledge Base for the term
+"Default Cluster Size" for more information on this subject.
+
+Reserved Sectors: This represents the number of sectors preceding the start of
+the first FAT, including the boot sector itself. It should always have a value
+of at least 1.
+
+FATs: This is the number of copies of the FAT table stored on the disk.
+Typically, the value of this field is 2.
+
+Root Entries: This is the total number of file name entries that can be stored in
+the root directory of the volume. On a typical hard drive, the value of this
+field is 512. Note, however, that one entry is always used as a Volume Label,
+and that files with long file names will use up multiple entries per file. This
+means the largest number of files in the root directory is typically 511, but
+that you will run out of entries before that if long file names are used.
+
+Small Sectors: This field is used to store the number of sectors on the disk if
+the size of the volume is small enough. For larger volumes, this field has a
+value of 0, and we refer instead to the "Large Sectors" value which comes
+later.
+
+Media Descriptor: This byte provides information about the media being used. The
+following table lists some of the recognized media descriptor values and their
+associated media. Note that the media descriptor byte may be associated with
+more than one disk capacity.
+
+Byte   Capacity   Media Size and Type
+F0     2.88 MB    3.5-inch, 2-sided, 36-sector
+F0     1.44 MB    3.5-inch, 2-sided, 18-sector
+F9     720 KB     3.5-inch, 2-sided, 9-sector
+F9     1.2 MB     5.25-inch, 2-sided, 15-sector
+FD     360 KB     5.25-inch, 2-sided, 9-sector
+FF     320 KB     5.25-inch, 2-sided, 8-sector
+FC     180 KB     5.25-inch, 1-sided, 9-sector
+FE     160 KB     5.25-inch, 1-sided, 8-sector
+F8     -----      Fixed disk
+
+Sectors Per FAT: This is the number of sectors occupied by each of the FATs on
+the volume. Given this information, together with the number of FATs and
+reserved sectors listed above, we can compute where the root directory begins.
+Given the number of entries in the root directory, we can also compute where the
+user data area of the disk begins.
+
+Sectors Per Track and Heads: These values are a part of the apparent disk
+geometry in use when the disk was formatted.
+
+Hidden Sectors: This is the number of sectors on the physical disk preceding the
+start of the volume. (that is, before the boot sector itself) It is used during
+the boot sequence in order to calculate the absolute offset to the root
+directory and data areas.
+
+Large Sectors: If the Small Sectors field is zero, this field contains the total
+number of sectors used by the FAT volume.
+
+Some additional fields follow the standard BIOS Parameter Block and constitute an
+"extended BIOS Parameter Block." The next fields are:
+
+Field                  Offset   Length
+-----                  ------   ------
+Physical Drive Number    36        1
+Current Head             37        1
+Signature                38        1
+ID                       39        4
+Volume Label             43       11
+System ID                54        8
+
+Physical Drive Number: This is related to the BIOS physical drive number. Floppy
+drives are numbered starting with 0x00 for the A: drive, while physical hard
+disks are numbered starting with 0x80. Typically, you would set this value prior
+to issuing an INT 13 BIOS call in order to specify the device to access. The
+on-disk value stored in this field is typically 0x00 for floppies and 0x80 for
+hard disks, regardless of how many physical disk drives exist, because the value
+is only relevant if the device is a boot device.
+
+Current Head: This is another field typically used when doing INT13 BIOS calls.
+The value would originally have been used to store the track on which the boot
+record was located, but the value stored on disk is not currently used as such.
+Therefore, Windows NT uses this field to store two flags:
+
+- The low order bit is a "dirty" flag, used to indicate that autochk should run
+  chkdsk against the volume at boot time.
+
+- The second lowest bit is a flag indicating that a surface scan should also be
+  run.
+
+Signature: The extended boot record signature must be either 0x28 or 0x29 in
+order to be recognized by Windows NT.
+
+ID: The ID is a random serial number assigned at format time in order to aid in
+distinguishing one disk from another.
+
+Volume Label: This field was used to store the volume label, but the volume label
+is now stored as a special file in the root directory.
+
+System ID: This field is either "FAT12" or "FAT16," depending on the format of
+the disk.
+
+On a bootable volume, the area following the Extended BIOS Parameter Block is
+typically executable boot code. This code is responsible for performing whatever
+actions are necessary to continue the boot-strap process. On Windows NT systems,
+this boot code will identify the location of the NTLDR file, load it into
+memory, and transfer execution to that file. Even on a non-bootable floppy disk,
+there is executable code in this area. The code necessary to print the familiar
+message, "Non-system disk or disk error" is found on most standard, MS-DOS
+formatted floppy disks that were not formatted with the "system" option.
+
+Finally, the last two bytes in any boot sector always have the hexidecimal
+values: 0x55 0xAA.
+
+Troubleshooting
+---------------
+
+If you suspect that a FAT boot sector is corrupt, you can check several of the
+fields listed above to see whether the values listed there make sense. For
+example, BytesPerSector will be 512 in the vast majority of cases. You would
+also expect to see text strings in the executable code section of the boot
+sector that are appropriate for the operating system that formatted the disk.
+
+Typical text strings on FAT volumes formatted by MS-DOS include: "Invalid system
+disk."; "Disk I/O error."; "Replace the disk, and then press any key";
+"Non-System disk or disk error"; "Replace and press any key when ready."; and
+"Disk Boot failure." Text strings on FAT volumes formatted by Windows NT
+include: "BOOT: Couldn't find NTLDR."; "I/O error reading disk."; and "Please
+insert another disk." You should not regard this list as being all-inclusive. If
+you find other messages in the boot sector, this does not necessarily indicate
+that there is a problem with the boot sector. Different versions of MS-DOS and
+Windows NT will sometimes have slightly different message strings in their boot
+sectors. On the other hand, if you find no text whatsoever, or if the text is
+clearly not related to MS-DOS or Windows NT, you should consider the possibility
+that your boot sector may have been infected by a virus or that some other form
+of data corruption may have taken place.
+
+To recover from a boot sector that has been infected by a virus, it is usually
+best to use a commercial anti-virus program. Many viruses will do much more than
+just write data to the boot sector, so manual repair of the boot sector is not
+recommended, as it may not completely eliminate the virus and in some cases, may
+do more harm than good.
+
+If you suspect that the boot sector was damaged for some other reason, it is
+usually best to use commercial disk recovery tools. While it may be possible to
+recover from boot sector damage without resorting to reformatting the drive by
+manually modifying the fields described above, manual editing of boot sectors
+should only be attempted as a last resort and cannot be guaranteed to work in
+situations where other disk structures may also have been damaged.
+
+Additional query words: 3.10 prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.10 3.50 3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

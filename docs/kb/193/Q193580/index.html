@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193580: PRB: Checking Out Structure.cnf in VSS Causes FrontPage Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193580: PRB: Checking Out Structure.cnf in VSS Causes FrontPage Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193580/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193580/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193580/","publisher":null,"image":null,"headline":"Q193580: PRB: Checking Out Structure.cnf in VSS Causes FrontPage Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193580-prb-checking-out-structurecnf-in-vss-causes-frontpage-error">Q193580: PRB: Checking Out Structure.cnf in VSS Causes FrontPage Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193580
+Product(s): Microsoft SourceSafe
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbinterop kbFrontPage kbSSafe500 kbSSafe600 kbSSExplorer
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+- Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error occurs in FrontPage Explorer after you change the
+navigational structure of a source controlled Web:
+
+  Server error: "Visual Source Safe failure. Verify that you have write
+  access to the Visual Source Safe repository. A "You currently have file
+  $/&lt;projectname&gt;/_vti_pvt/structure.cnf checked out" error occurred    while operating on file $/&lt;projectname&gt;/_vti_pvt/structure.cnf."
+
+After clicking OK, you get the following message:
+
+  FrontPage cannot save the changes you made in the Navigation view. Do you
+  want to get the latest Navigation structure from the server?
+
+NOTE: Click Yes to answer the previous question. This ensures that changes made
+to the navigational structure are saved despite the error messages that appear
+in FrontPage.
+
+CAUSE
+=====
+
+When the navigational structure is modified, FrontPage does a silent checkout,
+update, and check in of Structure.cnf. If Structure.cnf is already checked out
+using the Visual SourceSafe Explorer, FrontPage cannot check out the file and
+the error messages appear.
+
+RESOLUTION
+==========
+
+Check out all FrontPage files using the FrontPage Explorer.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+When you are working solely through the FrontPage Explorer, you do not see files
+contained in the _vti_pvt directory. The only way to check out those files is
+through the Visual SourceSafe Explorer. It is strongly recommended that all
+FrontPage files are checked in and out using the Visual SourceSafe integration
+in the FrontPage Explorer.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the FrontPage Explorer and create a new one page Web called testweb.
+
+2. Add testweb to source control by going to Tools menu, clicking Web Settings,
+  click the Configuration tab, and typing the following in the Source Control
+  Project edit box: " $/testweb " (without the quotation marks)
+
+3. Click OK. Click Yes to update the project.
+
+4. Open the Visual SourceSafe Explorer and find testweb, which is a subproject
+  of the root project ($/).
+
+5. Set a working folder for testweb. Check out Structure.cnf, which is located
+  in the _vti_pvt subproject. In this example, Structure.cnf should be located
+  in $/testweb/_vti_pvt.
+
+6. Switch back to FrontPage Explorer. Go to the View menu, and click Navigation.
+  Rename the Home Page navigation bar to My Home Page by right-clicking on the
+  navigation bar and clicking Rename.
+
+7. Close the FrontPage Web.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q183735 PRB: Saving a File in FrontPage Does a Silent CheckIn
+
+  Q191289 HOWTO: Enable Event Error Logging for FrontPage 98 &amp; SourceSafe
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbFrontPage kbSSafe500 kbSSafe600 kbSSExplorer 
+Technology        : kbSSafeSearch kbFrontPageSearch kbAudDeveloper kbZNotKeyword4 kbFrontPage98Search kbZNotKeyword3 kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

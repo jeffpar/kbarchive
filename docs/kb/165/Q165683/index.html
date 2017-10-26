@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165683: INFO: Visual C++ 5.0 Readme, ActiveX Control Issues | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165683: INFO: Visual C++ 5.0 Readme, ActiveX Control Issues" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165683/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165683/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165683/","publisher":null,"image":null,"headline":"Q165683: INFO: Visual C++ 5.0 Readme, ActiveX Control Issues","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165683-info-visual-c-50-readme-activex-control-issues">Q165683: INFO: Visual C++ 5.0 Readme, ActiveX Control Issues</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165683
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ActiveX Control Issues
+----------------------
+
+Visual C++ Support for Authenticode Some ActiveX Controls Created with Visual
+Basic Generate Error in ActiveX Test Container on Resize Oracle Joins and
+MSRDC20.OCX (Remote Data Control V2) Current, Localized ActiveX Redistributable
+Components
+
+MORE INFORMATION
+================
+
+Visual C++ Support for Authenticode
+-----------------------------------
+
+To find the tools necessary for packaging your ATL and MFC controls into cabinet
+(.cab) files and signing the resulting .cab files, look in the CAB&amp;Sign
+directory. This directory is on the disc that includes "Microsoft Visual C++" on
+the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual
+Studio.)
+
+Some ActiveX Controls Created with Visual Basic Generate Error in ActiveX
+
+Test Container on Resize
+------------------------
+
+Microsoft Visual Basic 5.0 supports the creation of ActiveX Controls (OCX's).
+Some controls that are created with Visual Basic set the OLEMISC_NOUIACTIVATE
+bit. If the control is inserted into the ActiveX Test Container and then is
+resized, the ActiveX Test Container attempts a DoVerb (OLEIVERB_UIACTIVATE) call
+that results in the following error:
+
+  Failed to connect. Link may be broken.
+
+This problem is being investigated. This does not impede hosting the control in
+Visual C++.
+
+Oracle Joins and MSRDC20.OCX (Remote Data Control V2)
+-----------------------------------------------------
+
+If you use the Microsoft ODBC Driver for Oracle with the Microsoft Remote Data
+Control (MRDC20.OCX) and your SQL statement contains a join (or includes a
+reference to a view that contains a join), you may encounter the following
+driver error: "SC100: [Microsoft][ODBC Driver for Oracle]Driver not capable"
+
+Workaround
+
+Change the CursorDriver, LockType, and ResultsetType properties. The following
+settings will work:
+
+     CursorDriver = 'ODBC Cursor'
+
+     LockType = ' Optimistic Concurrency'
+
+     ResultsetType = 'Create a Static Cursor'
+
+Current, Localized ActiveX Redistributable Components
+-----------------------------------------------------
+
+The ActiveX redistributable components that ship with Visual C++ 5.0 were current
+when the product was released to manufacturing. You can always check the
+following Web site for the most current components:
+
+  http://www.microsoft.com/workshop/default.asp
+
+NOTE: If your Internet application will be used in an Internet Explorer localized
+environment, your application should use the localized ActiveX components that
+are available from this site, otherwise the components contained on this CD may
+overwrite Internet
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

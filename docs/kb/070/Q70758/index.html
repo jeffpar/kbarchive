@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q70758: Floating-Point Calculations in Windows Using WIN87EM.DLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q70758: Floating-Point Calculations in Windows Using WIN87EM.DLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/070/Q70758/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/070/Q70758/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/070/Q70758/","publisher":null,"image":null,"headline":"Q70758: Floating-Point Calculations in Windows Using WIN87EM.DLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q70758-floating-point-calculations-in-windows-using-win87emdll">Q70758: Floating-Point Calculations in Windows Using WIN87EM.DLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q70758
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 01-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+WIN87EM.DLL is a dynamic link library (DLL) that supplies floating-point
+calculation routines for Windows applications that support math coprocessors.
+Windows by itself does not use WIN87EM.DLL, but some Windows applications that
+carry out floating-point calculations require WIN87EM.DLL to be present in the
+Windows\SYSTEM subdirectory.
+
+For example, Microsoft Excel version 3.0 requires WIN87EM.DLL to be present
+whether or not your computer has a math coprocessor chip. If WIN87EM.DLL is not
+present, Excel generates the error message:
+
+  Cannot find Win87em.dll" and will not load
+
+If WIN87EM.DLL is damaged, Excel 3.0 attempts to run a second instance of
+Windows, leaving you in real mode with the error message:
+
+  Cannot run this application in real mode
+
+Other Windows applications may require WIN87EM.DLL and may display similar
+behavior.
+
+MORE INFORMATION
+================
+
+Microsoft Windows installs WIN87EM.DLL in the Windows\SYSTEM subdirectory.
+Windows itself does not generate an error upon loading if it is missing. The
+error does not occur until an application is loaded and requests the dynamic
+link library (DLL). If the file is missing or damaged, just expand it from your
+Windows disks into your Windows\SYSTEM subdirectory.
+
+WIN87EM.DLL is on the following Windows 3.0 disks:
+
+  5.25-inch  1.2 MB   Disk 2
+  5.25-inch  360K     Disk 5
+  3.5-inch   720K     Disk 3
+
+WIN87EM.DLL is on the following Windows 3.1 disks:
+
+  5.25-inch  1.2 MB   Disk 4
+  3.5-inch   1.44 MB  Disk 4
+
+For information on expanding files, please refer to the README.TXT file in the
+WINDOWS directory.
+
+REFERENCES
+==========
+
+"Microsoft Windows Guide to Programming," Microsoft Press, section 14.5.7.
+
+Additional query words: 3.00 win30 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

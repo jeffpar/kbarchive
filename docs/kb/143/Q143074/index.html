@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143074: How to Highlight a Menu Option or Menu Item Programmatically | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143074: How to Highlight a Menu Option or Menu Item Programmatically" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143074/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143074/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143074/","publisher":null,"image":null,"headline":"Q143074: How to Highlight a Menu Option or Menu Item Programmatically","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143074-how-to-highlight-a-menu-option-or-menu-item-programmatically">Q143074: How to Highlight a Menu Option or Menu Item Programmatically</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143074
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Upon startup of an application, you may want to have a specific menu or menu
+option highlighted by default so that the user need only press the ENTER key to
+carry out the associated command. This article presents a simple way to do it.
+
+MORE INFORMATION
+================
+
+This method, which depends on the KEYBOARD command, can be used with either
+FoxPro for Windows or Visual FoxPro.
+
+1. Create a program, name it MAINMENU, and put the following code in it:
+
+     SET SYSMENU OFF
+     DO testmenu.mpr
+     READ EVENTS
+     SET SYSMENU TO DEFAULT
+
+2. Create another program, name it CALLMENU, and put the following code in it:
+
+     Keyboard "{F10}"
+     Keyboard "{Rightarrow}"
+     Keyboard "{Enter}"
+     Keyboard "{dnarrow}"
+     Keyboard "{dnarrow}"
+     Keyboard "{dnarrow}"
+
+3. Create a new menu named testmenu, and give it the following structure and
+  prompts:
+
+  Prompt         Command
+  -----------------------------------
+  QUIT           CLEAR EVENTS
+  FORMS          Submenu
+    |
+    +---Form 1   Wait Window "Form 1"
+    +---Form 2   DO FORM FORM2
+
+4. In Visual FoxPro, on the View menu, choose General Options, and select
+  Cleanup. In FoxPro for Windows, on the Menu menu, choose General options, and
+  select Cleanup.
+
+5. In the Cleanup code, type:
+
+  " DO CALLMENU " (without the quotation marks)
+
+6. Save and generate the menu.
+
+7. Create a new form, name it FORM2, and place a command button on it. Put the
+  following code in the command button's Click event:
+
+     THISFORM.RELEASE
+     DO CALLMENU
+
+8. Run the MAINMENU program.
+
+This should cause the menu prompt 'Form 2' to be highlighted. Pressing the ENTER
+runs the form, and clicking the command button closes the form and cycles the
+menu back to the 'Form 2' prompt.
+
+This method can be called an unlimited number of times without running into the
+'Do nesting too deep' error message you may encounter if you use the ACTIVATE
+MENU command. The other significant advantage is that the use of the KEYBOARD
+command allows you to drill down to a specific menu option (in this case, Form
+2). The disadvantage to this method is that there is a flicker as the keyboard
+commands are executed.
+
+For information about how to do this with FoxPro 2.x, please see the following
+article in the Microsoft Knowledge Base:
+
+  Q110909 How to Highlight a Menu Bar and Popup Programmatically
+
+Additional query words: VFoxWin bar
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

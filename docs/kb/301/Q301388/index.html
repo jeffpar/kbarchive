@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301388/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301388/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301388/","publisher":null,"image":null,"headline":"Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301388-how-to-upgrade-from-iis-40-to-iis-50">Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301388
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 10-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- Summary
+
+   - Requirements
+- Back Up the Metabase
+- Upgrade the Operating System to Windows 2000 Server
+- Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This article describes how to upgrade from Microsoft Windows NT Server Internet
+Information Server (IIS) 4.0 to Microsoft Windows 2000 Internet Information
+Services (IIS) 5.0.
+
+
+Requirements
+------------
+
+The minimum requirements for IIS 5.0 closely match the requirements for Microsoft
+Windows 2000 Professional, Microsoft Windows 2000 Server, and Microsoft Windows
+2000 Advanced Server. Although the hardware requirements for IIS 5.0 depend
+heavily on the amount of traffic that the server will experience, the following
+system hardware should meet the needs of most environments:
+
+- Processor: 400 MHz Pentium II (or faster)
+
+- RAM: 128 MB (or more)
+- Connection: 100MB/Sec. Network Card
+- Drive: SCSI Single Drive or SCSI Array
+
+Important: Microsoft highly recommends that you replicate the server's Web site
+content and configuration settings to another server before you upgrade your Web
+server.
+
+Back up the IIS Metabase
+------------------------
+
+Before you upgrade the Web server with Windows 2000 Server, back up the IIS
+metabase file. To back up the IIS metabase:
+
+1. In the IIS management console, right-click the server name (for example, in
+  the Internet Information Server folder: *mywebserver), and then click
+  Backup/Restore Configuration.
+
+2. Click Create Backup.
+
+3. In the Configuration Backup Name text box, type a name for the backup, and
+  then click OK.
+
+For information on how to create a backup of the metabase for IIS 4.0, see the
+"References" section of this article, which contains a URL link to detailed
+instructions.
+
+NOTE: When you backup the metabase, a file is created with the name
+&lt;backup_name&gt;.md0 (the last character in the extension is a zero; not the
+letter O). The file is stored in the %SystemRoot%\System32\Inetsrv\Iis.msc
+folder.
+
+Data Recovery Recommendations:
+
+Best practice dictates that you ensure that all critical data is backed up to
+either a remote share or tape prior to the upgrade. This should include the
+metabase backup file that you just created and stored in the
+%SystemRoot%\System32\Inetsrv\Iis.msc folder, as well as all Web content.
+
+Upgrade the Operating System to Windows 2000 Server
+---------------------------------------------------
+
+1. Insert the Windows 2000 compact disc into the CD-ROM drive. If AutoPlay is
+  enabled, the Windows 2000 Setup Wizard should start. If not, run Setup.exe
+  from the CD-ROM drive.
+
+2. Click Upgrade to Windows 2000, click Next, and then follow the instructions
+  provided by the Windows 2000 Setup Wizard.
+
+By default, IIS 5.0 installs during the installation of Windows 2000 Server and
+Windows 2000 Advanced Server. When you upgrade from Windows NT Server 4.0 to
+Windows 2000, IIS 4.0 is automatically upgraded to 5.0.
+
+NOTES:
+
+- IIS 5.0 files are copied into the INETSRV folder. Existing IIS 4.0 files are
+  overwritten.
+
+- IIS 5.0 uses the existing IIS 4.0 metabase file. All configuration options
+  from IIS 4.0 are left in place. IIS 5.0 sets default values in the metabase
+  for new features that are included in IIS 5.0, such as World Wide Web
+  Distributed Authoring and Versioning (WebDAV) and HTTP Compression.
+
+- IIS 5.0 uses the existing IIS 4.0 IUSR_&lt;computername&gt; and
+  IWAM_&lt;computername&gt; accounts.
+
+Troubleshooting
+---------------
+
+Unlike IIS 4.0, which allows you to specify the location of the Web and FTP root
+folders, Windows 2000 automatically places everything in the Inetpub folder on
+the system drive. The only way to install IIS 5.0 on a different drive is to
+perform an unattended installation. For information about unattended
+installations, see the Microsoft Knowledge Base article, Q259671 "How to Change
+the Default Installation Paths for FTP and the Web" (listed in the "References"
+section of this article), the Deployment Planning Guide in the Windows 2000
+Resource Kit, and the "Microsoft Windows 2000 Guide to Unattended Setup"
+(Unattend.doc), which is located in the Support\Tools\Deploy.cab folder on the
+Windows 2000 CD-ROM.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q300675 HOW TO: Create a Metabase Backup by Using Internet Information Server
+  4.0
+
+  Q259671 How to Change the Default Installation Paths for FTP and the Web
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

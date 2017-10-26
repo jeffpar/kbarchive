@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47369: scanf Unable to Match Extended Characters in Format String | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47369: scanf Unable to Match Extended Characters in Format String" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47369/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47369/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47369/","publisher":null,"image":null,"headline":"Q47369: scanf Unable to Match Extended Characters in Format String","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47369-scanf-unable-to-match-extended-characters-in-format-string">Q47369: scanf Unable to Match Extended Characters in Format String</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47369
+Product(s): See article
+Version(s): 5.10   | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | S_QuickC | mspl13_c
+Last Modified: 9-AUG-1989
+
+Note: In this article, the "??" symbol is used to represent an
+extended ASCII character. Because extended ASCII characters appear
+differently on many systems, it is unreliable to use a real character.
+Therefore, whenever you see the "??" symbol, it is meant to represent
+a character with an ASCII code of 128 to 255.
+
+When using the scanf functions (scanf, cscanf, fscanf, sscanf), you
+may place literal characters in the format string and scanf will read
+an input string as long as the input string matches these characters
+in position and value. Once the input string conflicts with the
+format, scanf terminates. The allowable characters are the standard
+ASCII values only and attempts to use extended ASCII characters in the
+format result in failure. The scanf function terminates as soon as it
+reads an extended character, even if it is the same as the expected
+character in the format. For example, if the format string contains
+"??%d", and "??45" is input, scanf quits reading at "??" even though
+it matches, since it does not recognize the extended ASCII value.
+
+This problem does not occur in QuickC Versions 2.00 and 2.01.
+
+The following program demonstrates this situation. In the first case,
+scanf expects "sqrt" to be typed in followed by a number. If this is
+done correctly, then scanf reads the number and the square root is
+displayed. In the second case, scanf should be expecting the "??"
+symbol followed by a number, but if this is typed in, scanf still
+fails to read the number since it was unable to correctly match the
+"??" to the format string.
+
+/* Before running this program, replace all occurrences of "??" with
+   extended ASCII character 251. (Hold down the ALT key and type 251
+   on the numeric keypad, then release the ALT key.)              */
+
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+void main(void)
+{
+    int    values_read;
+    double num;
+
+    /* THIS PART WORKS - scanf recognizes "sqrt" in format string */
+
+    printf( "Enter sqrtNUMBER by typing \"sqrt\" followed by any "
+            "NUMBER &gt;= 0\n(e.g sqrt87.6) : ");
+    values_read = scanf( "sqrt%lf", &amp;num);
+    printf( "values_read = %d\n", values_read);
+    printf( "sqrt%lf = %lf\n\n", num, sqrt(num));
+    fflush(stdin);
+
+    /* THIS PART DOES NOT WORK - scanf fails to recognize "??" in
+       the format string */
+
+    printf( "Enter ??NUMBER by holding down the &lt;ALT&gt; key while "
+            "typing\n\"251\" on the numeric keypad followed by "
+            "any NUMBER &gt;= 0\n(e.g. ??87.6) : ");
+    values_read = scanf( "??%lf", &amp;num);            /* returns 0 */
+    printf( "values_read = %d\n", values_read);
+    printf( "??%lf = %lf\n\n", num, sqrt(num));
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148618: No Load Balancing When You Invoke Many APPC Conversations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148618: No Load Balancing When You Invoke Many APPC Conversations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148618/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148618/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148618/","publisher":null,"image":null,"headline":"Q148618: No Load Balancing When You Invoke Many APPC Conversations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148618-no-load-balancing-when-you-invoke-many-appc-conversations">Q148618: No Load Balancing When You Invoke Many APPC Conversations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148618
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 12-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+LU6.2 load balancing problems have been observed under two conditions:
+
+1. When a single program allocates multiple conversations:
+
+  If an APPC or CPIC program allocates multiple conversations at the same time
+  on an SNA Server client or server and SNA Server is configured to support
+  LU6.2 load balancing, the conversations may not load evenly across more than
+  one SNA Server.
+
+  For example, if a program tries to allocate 16 concurrent conversations across
+  two SNA Servers, which are configured to support 10 sessions each, the
+  program may allocate 10 conversations through the first server and two
+  conversations through the second server. The remaining four conversations are
+  queued against the first server.
+
+2. When multiple APPC or CPIC programs allocate conversations at once:
+
+  For example, if multiple programs are started and each tries to allocate one
+  conversation, where two SNA Servers are available, sessions tend to be
+  allocated from only one SNA Server.
+
+
+CAUSE
+=====
+
+This problem occurs when the LU6.2 sessions are not activated before the
+application attempts to allocate the conversations.
+
+When an APPC or CPIC application allocates a conversation, the SNA Server APPC
+interface attempts to locate an appropriate, available LU6.2 session on any SNA
+Server running in the domain or subdomain. It selects a server that has an
+active LU6.2 session before it tries to select a server that has an inactive
+LU6.2 session.
+
+If multiple conversations are allocated at the same time by a program, the APPC
+interface does not randomly select between servers if they all start LU6.2
+sessions. This can cause multiple conversation startup requests to be queued
+against a single SNA Server rather than load balancing across multiple SNA
+Servers.
+
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Configure the SNA Server and the APPC or CPIC program to support LU6.2 load
+  balancing. Ensure that the configuration is correct. For additional
+  information, please see the following article in the Microsoft Knowledge
+  Base:
+
+  Q128244 SNA Server Load Balancing and Hot Backup
+
+2. Start the LU6.2 session before the application starts. LU6.2 sessions can
+  start automatically by setting the "autoactivation limit" in the SNA Server
+  APPC Mode entry (on SNA Server Admin) to the number of sessions.
+
+  If automatic LU6.2 session startup is not acceptable, an update to the SNA
+  Server APPC interface is available to improve load balancing (WAPPC32.DLL for
+  Windows NT and Windows 95 clients, and WINAPPC.DLL for Windows 3.x clients).
+
+3. Configure extra LU6.2 sessions on each SNA Server so that the SNA Server APPC
+  random server selection locates a server with an available LU6.2 session.
+
+  For example, if an application allocates 16 concurrent conversations against
+  two SNA Servers, each SNA Server should support at least 10 sessions each. If
+  you configure each server to support only eight sessions, some conversations
+  may still be queued against a server that has all LU6.2 sessions in use.
+
+To correct this problem, apply the fix mentioned below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 2.11 and SNA Server
+2.11 Service Pack 1. This problem was corrected in the latest Microsoft SNA
+Server 2.11 U.S. Service Pack. For information on obtaining the service pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200 kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q117865: DOCERR: Control and Status Word Missing Abbreviation Info | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q117865: DOCERR: Control and Status Word Missing Abbreviation Info" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/117/Q117865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/117/Q117865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/117/Q117865/","publisher":null,"image":null,"headline":"Q117865: DOCERR: Control and Status Word Missing Abbreviation Info","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q117865-docerr-control-and-status-word-missing-abbreviation-info">Q117865: DOCERR: Control and Status Word Missing Abbreviation Info</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q117865
+Product(s): Microsoft Macro Assembler
+Version(s): 6.11
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Macro Assembler (MASM), version 6.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Page 148 of the "MASM 6.11 Reference Manual" has an alphabetical listing of math
+coprocessor instructions. Page 150 contains Figure 5.2, a diagram of the Control
+Word and Status Word. The manual is missing the descriptions of the different
+fields, which were included with the "MASM 6.0 Reference Manual."
+
+The format of the Control-Word and Status-Word registers are as follows:
+
+Control Word
+------------
+
+Bit                                          Bit
+15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0
+X  X  X IC RC RC RC PC PC IE    PM UM ZM DM IM
+
+Status Word
+-----------
+
+Bit                                          Bit
+15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0
+B C3 ST ST ST C2 C1 C0 ES SF PE UE OE ZE DE IE
+
+The abbreviations for the fields in the Control Word and Status Word are:
+
+  IC - Infinity Control
+  0 = Projective (default on 8087 and 80287)
+  1 = Affine
+  Note: Used for 8087 and 80287 only, 80387 uses affine regardless
+        of setting
+
+  RC - Rounding Control
+  00 = Round to nearest or even (default)
+  01 = Round down toward -infinity
+  10 = Round up toward +infinity
+  11 = Chop by truncating toward 0
+
+  PC - Precision Control
+  00 = 24-bit mantissa
+  10 = 53-bit mantissa
+  11 = 64-bit mantissa
+
+  IE - Interrupt Enable Mask
+  Used for 8087 only; undefined on 80287 and 80387
+
+  SF - Stack Flag
+  Used for 80387 only; undefined on 80287 and 8087
+
+Exception Masks and Flags
+-------------------------
+
+  PM/PE - Precision
+  UM/UE - Underflow
+  OM/OE - Overflow
+  ZM/ZE - Zero Divide
+  DM/DE - Denormalized Operand
+  IM/IE - Invalid Operation
+  For masks:
+     1 = masked; 0 = unmasked
+
+  For exceptions:
+     1 = exceptions; 0 = no exception
+  B - Busy
+  1 = exception control unit active
+
+  C3 C2 C1 C0 - Condition Codes
+
+  ST - Stack Top Pointer
+  Points to current top of stack
+
+  ES - Error Summary (80287/387)
+  On a 8087, the value is IR - Interrupt Request
+
+Additional query words: 6.11
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM611
+Version           : :6.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

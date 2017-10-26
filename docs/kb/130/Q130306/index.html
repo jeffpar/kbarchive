@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130306: Save/SET/Restore of SET Environment Settings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130306: Save/SET/Restore of SET Environment Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130306/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130306/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130306/","publisher":null,"image":null,"headline":"Q130306: Save/SET/Restore of SET Environment Settings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130306-savesetrestore-of-set-environment-settings">Q130306: Save/SET/Restore of SET Environment Settings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130306
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In version 2.x, environment settings such as "DELETED" were often stored into
+memory variables at the beginning of a section of code. At the end, the settings
+were manually reassigned to the original value. This article demonstrates an
+object-oriented approach to saving and restoring environment settings.
+
+MORE INFORMATION
+================
+
+The class "cSET" demonstrates this technique. In this class, a number of the
+current SET environment settings for DELETED, ALTERNATE, and DECIMALS are stored
+in objects. One object is created for each environment setting that should be
+stored. This class could easily be expanded to include additional environment
+settings.
+
+When the class, cSET, is instantiated in your form or other application
+component, an object is created for each desired environment setting. The
+CONSTRUCTOR method is invoked whenever you want to change an environment
+setting. It creates a command string that sets the desired temporary environment
+setting. When the instantiated class object is released, the DESTRUCTOR method
+is called. This method restores each environment setting to its state at the
+time cSET was instantiated.
+
+1. To use this approach in an application, begin by creating a program that
+  contains the class definition.
+
+     * Begin code example
+     * Save This as CSET.PRG
+     * This class provides SET environment save/SET/restore capabilities
+     * When the class is instantiated, the current SET environment is
+     * saved &amp; SET to the desired value. When the instantiated object goes
+     * out of scope, the environment is restored.
+
+     * Usage:
+     *  CreateObject( "CSET", &lt;cExpr1&gt;, &lt;cExpr2&gt; | &lt;nExpr2&gt; [, &lt;cExpr3&gt;] )
+     *
+     *   cExpr1 = One of the SET commands
+     *   cExpr2 = Appropriate character value for the SET command
+     *   nExpr2 = Appropriate numeric value for the SET command
+     *   cExpr3 = Optional character value for SET commands that are both
+     *            ON | OFF
+     *            and have another value (like ALTERNATE, FIELDS, etc.)
+     *
+     * Examples:
+     *   loDeletedSave   = createobject( "CSET", "deleted", "on" )
+     *   loDecimalsSave  = createobject( "CSET", "decimals", 5 )
+     *   loAlternateSave = createobject( "CSET", "alternate", "on", ;
+     *                     "alter.txt")
+
+     DEFINE CLASS CSET AS CUSTOM
+
+     * PROTECTED Data Members
+     * =====================================================
+     PROTECTED mcSET               &amp;&amp; SET command
+     PROTECTED muOrgValue          &amp;&amp; Original value of the SET
+     PROTECTED muOrgValue1         &amp;&amp; Original secondary value of the SET
+
+     * Public Data Members
+     * ========================================================
+     * NONE
+
+     * PROTECTED Function Members
+     * =================================================
+
+     * Constructor Method
+     * ----------------------------------------------------------
+
+     PROTECTED FUNCTION Init
+     PARAMETER pcSET, puNewValue, pcNewValue1
+
+     LOCAL lnParmCount          &amp;&amp; number of PARAMETERs sent to init
+     LOCAL lcSETCommand            &amp;&amp; constructed SET command
+
+     lnParmCount = PARAMETERS()
+
+     * Default the data members
+     This.mcSET = ""
+     This.muOrgValue = ""
+     This.muOrgValue1 = ""
+
+     IF ( lnParmCount &lt; 2 )
+     *   This.error( "some error" )
+        RETURN
+     ENDIF
+
+     * Save current environment
+
+     This.mcSET       = pcSET
+     This.muOrgValue  = SET( pcSET )
+     This.muOrgValue1 = SET( pcSET, 1 )
+     IF ( This.muOrgValue == This.muOrgValue1 )
+        * throw This away because we don't need it
+        This.muOrgValue1 = ""
+     ENDIF
+
+     IF ( lnParmCount = 3 )
+        * optional argument handling
+        lcSETCommand = pcSET + " to " + pcNewValue1
+        SET &amp;lcSETCommand
+     ENDIF
+
+     IF ( TYPE( "This.muOrgValue" ) == 'C' )
+        * character type of SET
+        lcSETCommand = puNewValue
+        IF ( ! INLIST( This.muOrgValue, "ON", "OFF" ) )
+           * not a simple ON|OFF so add a TO keyword
+           lcSETCommand = "TO " + puNewValue
+        ENDIF
+     ELSE
+        * numeric type of SET
+        lcSETCommand = "TO " + STR( puNewValue )
+     ENDIF
+
+     lcSETCommand = pcSET + " " + lcSETCommand
+     SET &amp;lcSETCommand                          &amp;&amp; change the SET
+
+     * Destructor Method
+     * ---------------------------------------------------- ------
+     PROTECTED function Destroy
+
+     *LOCAL lcSETCommand            &amp;&amp; constructed SET command
+
+     IF ( EMPTY( This.mcSET ) )
+        RETURN
+     ENDIF
+
+     IF ( TYPE( "This.muOrgValue" ) == 'C' )
+        * character type of SET
+        lcSETCommand = This.muOrgValue
+        IF ( ! INLIST( This.muOrgValue, "ON", "OFF" ) )
+           * not a simple ON|OFF so add a TO keyword
+           lcSETCommand = "TO " + This.muOrgValue
+        ENDIF
+     ELSE
+        * numeric type of SET
+        lcSETCommand = "TO " + STR( This.muOrgValue )
+     ENDIF
+
+     lcSETCommand = This.mcSET + " " + lcSETCommand
+     SET &amp;lcSETCommand                              &amp;&amp; restore the SET
+
+     IF ( ! EMPTY( This.muOrgValue1 ) )
+        * restore secondary SET information
+        lcSETCommand = This.mcSET + " TO " + This.muOrgValue1
+        SET &amp;lcSETCommand
+     ENDIF
+
+     * Public Function Members
+     * ====================================================
+
+     * Value Method
+     * ---------------------------------------------------------------
+
+     * RETURN the current values of the PROTECTED data members in a comma
+     * delimited string.
+
+     FUNCTION Value
+     LOCAL lcRETURNValue
+
+     IF ( TYPE( "This.muOrgValue" ) == 'C' )
+        lcRETURNValue = This.mcSET + "," + This.muOrgValue
+     ELSE
+        lcRETURNValue = This.mcSET + "," + ;
+           ALLTRIM( STR( This.muOrgValue ) )
+     ENDIF
+
+     IF ( ! EMPTY( This.muOrgValue1 ) )
+        lcRETURNValue = lcRETURNValue + "," + This.muOrgValue1
+     ENDIF
+
+     RETURN lcRETURNValue
+
+     ENDDEFINE
+
+     *** END CODE EXAMPLE FOR cSET.PRG
+
+2. Create a program with the following code. This code would normally be placed
+  in the load event of a form, or at the top of a .PRG file. For the purposes
+  of demonstration, it is being placed in a separate program file:
+
+     ******************************************************************
+     *Begin code example
+     ******************************************************************
+
+     * Driver program to test CSET class
+
+     SET PROCEDURE TO cset ADDITIVE
+
+     CLEAR
+     SET DELETED ON       &amp;&amp; start it out on for testing
+
+     _Screen.Show
+     ? "Deleted:", SET("deleted")
+     loDeletedSave = CreateObject( "CSET", "deleted", "off" )
+     ? "Value:", loDeletedSave.Value()
+     ? "Deleted:", SET("deleted")
+
+3. Run the program created in step 2. The following values should be displayed
+  on the screen:
+
+  Deleted: ON
+  Value: deleted, ON
+  Deleted: OFF
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

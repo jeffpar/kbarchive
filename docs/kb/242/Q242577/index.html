@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242577: PRB: Update Command UI Handlers Do Not Work Properly on Dialogs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242577: PRB: Update Command UI Handlers Do Not Work Properly on Dialogs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242577/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242577/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242577/","publisher":null,"image":null,"headline":"Q242577: PRB: Update Command UI Handlers Do Not Work Properly on Dialogs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242577-prb-update-command-ui-handlers-do-not-work-properly-on-dialogs">Q242577: PRB: Update Command UI Handlers Do Not Work Properly on Dialogs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242577
+Product(s): Microsoft C Compiler
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbDlg kbMenu kbMFC KbUIDesign kbVC600 kbDSupport kbGrpDSMFCATL
+Last Modified: 26-JUL-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- The Microsoft Foundation Classes (MFC) 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changing the state (enable/disable, check/uncheck, change text) of a menu item
+from its command user-interface (UI) handler does not work correctly if the menu
+is attached to a dialog box:
+
+  void CTestDlg::OnUpdateFileExit(CCmdUI* pCmdUI) 
+  {
+      pCmdUI-&gt;Enable(FALSE); //Not calling the command handler, but does not show as disabled.
+      pCmdUI-&gt;SetCheck(TRUE); // Does not show check mark before the text.
+      pCmdUI-&gt;SetRadio(TRUE); // Does not show dot before the text.
+      pCmdUI-&gt;SetText("Close"); //Does not change the text.
+  }
+
+CAUSE
+=====
+
+When a drop-down menu is displayed, the WM_INITMENUPOPUP message is sent prior
+to displaying the menu items. The MFC CFrameWnd::OnInitMenuPopup function
+iterates through the menu items and calls the update command UI handler for the
+item, if there is one. The appearance of each menu item is updated to reflect
+its state (enabled/disabled, checked/unchecked).
+
+The update UI mechanism doesn't work for a dialog box-based application because
+CDialog has no OnInitMenuPopup handler and it uses CWnd's default handler, which
+does not call update command UI handlers for menu items.
+
+RESOLUTION
+==========
+
+Use the following steps to resolve this problem:
+
+1. Add an ON_WM_INITMENUPOPUP entry to the message map:
+
+  BEGIN_MESSAGE_MAP(CTestDlg, CDialog)
+  	//}}AFX_MSG_MAP
+
+  	ON_WM_INITMENUPOPUP()
+  END_MESSAGE_MAP()
+
+2. Add a OnInitMenuPopup member function to your dialog box class and copy the
+  following code (note that this code is taken largely from
+  CFrameWnd::OnInitMenuPopup in WinFrm.cpp):
+
+  void CTestDlg::OnInitMenuPopup(CMenu *pPopupMenu, UINT nIndex,BOOL bSysMenu)
+  {
+      ASSERT(pPopupMenu != NULL);
+      // Check the enabled state of various menu items.
+
+      CCmdUI state;
+      state.m_pMenu = pPopupMenu;
+      ASSERT(state.m_pOther == NULL);
+      ASSERT(state.m_pParentMenu == NULL);
+
+      // Determine if menu is popup in top-level menu and set m_pOther to
+      // it if so (m_pParentMenu == NULL indicates that it is secondary popup).
+      HMENU hParentMenu;
+      if (AfxGetThreadState()-&gt;m_hTrackingMenu == pPopupMenu-&gt;m_hMenu)
+          state.m_pParentMenu = pPopupMenu;    // Parent == child for tracking popup.
+      else if ((hParentMenu = ::GetMenu(m_hWnd)) != NULL)
+      {
+          CWnd* pParent = this;
+             // Child windows don't have menus--need to go to the top!
+          if (pParent != NULL &amp;&amp;
+             (hParentMenu = ::GetMenu(pParent-&gt;m_hWnd)) != NULL)
+          {
+             int nIndexMax = ::GetMenuItemCount(hParentMenu);
+             for (int nIndex = 0; nIndex &lt; nIndexMax; nIndex++)
+             {
+              if (::GetSubMenu(hParentMenu, nIndex) == pPopupMenu-&gt;m_hMenu)
+              {
+                  // When popup is found, m_pParentMenu is containing menu.
+                  state.m_pParentMenu = CMenu::FromHandle(hParentMenu);
+                  break;
+              }
+             }
+          }
+      }
+
+      state.m_nIndexMax = pPopupMenu-&gt;GetMenuItemCount();
+      for (state.m_nIndex = 0; state.m_nIndex &lt; state.m_nIndexMax;
+        state.m_nIndex++)
+      {
+          state.m_nID = pPopupMenu-&gt;GetMenuItemID(state.m_nIndex);
+          if (state.m_nID == 0)
+             continue; // Menu separator or invalid cmd - ignore it.
+
+          ASSERT(state.m_pOther == NULL);
+          ASSERT(state.m_pMenu != NULL);
+          if (state.m_nID == (UINT)-1)
+          {
+             // Possibly a popup menu, route to first item of that popup.
+             state.m_pSubMenu = pPopupMenu-&gt;GetSubMenu(state.m_nIndex);
+             if (state.m_pSubMenu == NULL ||
+              (state.m_nID = state.m_pSubMenu-&gt;GetMenuItemID(0)) == 0 ||
+              state.m_nID == (UINT)-1)
+             {
+              continue;       // First item of popup can't be routed to.
+             }
+             state.DoUpdate(this, TRUE);   // Popups are never auto disabled.
+          }
+          else
+          {
+             // Normal menu item.
+             // Auto enable/disable if frame window has m_bAutoMenuEnable
+             // set and command is _not_ a system command.
+             state.m_pSubMenu = NULL;
+             state.DoUpdate(this, FALSE);
+          }
+
+          // Adjust for menu deletions and additions.
+          UINT nCount = pPopupMenu-&gt;GetMenuItemCount();
+          if (nCount &lt; state.m_nIndexMax)
+          {
+             state.m_nIndex -= (state.m_nIndexMax - nCount);
+             while (state.m_nIndex &lt; nCount &amp;&amp;
+              pPopupMenu-&gt;GetMenuItemID(state.m_nIndex) == state.m_nID)
+             {
+              state.m_nIndex++;
+             }
+          }
+          state.m_nIndexMax = nCount;
+      }
+  }
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The update command UI handler is also called from CWnd::OnCommand to make sure
+that command has not become disabled before routing. This is why the command
+handler is not called for a disabled menu item even though it is not grayed
+(unavailable). Menu items are not drawn to reflect their status in this case.
+This is the related code from the Wincore.cpp file:
+
+     // Make sure command has not become disabled before routing.	
+     CTestCmdUI state;
+     state.m_nID = nID;
+     OnCmdMsg(nID, CN_UPDATE_COMMAND_UI, &amp;state, NULL);
+     if (!state.m_bEnabled)
+     {
+        TRACE1("Warning: not executing disabled command %d\n", nID);
+        return TRUE;
+     }
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+Follow these steps to reproduce this behavior in Visual C++ .NET:
+
+1. Create an MFC dialog-based application by using AppWizard.
+
+2. Create a new menu resource and add the File and File/Exit menu items to it.
+
+3. Set this menu as the menu for the dialog box in the dialog box Properties
+  window. To do this, open the dialog resource in the dialog editor. In the
+  Properties window, click select Menu. The ID of the new menu resource is
+  displayed in the Menu property editor drop-down list.
+
+4. Add an UPDATE_COMMAND_UI handler for File/Exit menu item. To do this,
+  right-clicking File/Exit in the menu editor, and then click Add Event
+  Handler. In the Event Handler wizard, add the UPDATE_COMMAND_UI handler to
+  the project CDialog derived class. Click Add and Edit to create the handler,
+  and then add one of these statements to the generated handler method:
+
+  	pCmdUI-&gt;Enable(FALSE); //Not calling the handler, but does not show as disabled
+  	pCmdUI-&gt;SetCheck(TRUE); // Does not show check mark before the text.
+  	pCmdUI-&gt;SetRadio(TRUE); // Does not show dot before the text.
+  	pCmdUI-&gt;SetText("Close"); //Does not change the text.
+
+5. Build and run the application.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q141751 SAMPLE: Adding Control Bars to Dialog Boxes in MFC
+
+(c) Microsoft Corporation 9/29/1999, All Rights Reserved.
+Contributions by Sreedhar Pelluru, Microsoft Corporation
+
+
+Additional query words: WM_INITMENUPOPUP ON_UPDATE_COMMAND_UI
+
+======================================================================
+Keywords          : kbDlg kbMenu kbMFC KbUIDesign kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbMFC kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

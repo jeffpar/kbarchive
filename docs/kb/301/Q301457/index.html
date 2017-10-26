@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301457: HOW TO: View or Change Authentication Methods in IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301457: HOW TO: View or Change Authentication Methods in IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301457/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301457/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301457/","publisher":null,"image":null,"headline":"Q301457: HOW TO: View or Change Authentication Methods in IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301457-how-to-view-or-change-authentication-methods-in-iis">Q301457: HOW TO: View or Change Authentication Methods in IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301457
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbHOWTOmaster
+Last Modified: 10-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0, used with:
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Requirements
+- View Or Change IIS Authenication Methods
+- Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to view or change IIS Authentication
+methods.
+
+Requirements
+------------
+
+The following describes the necessary stuff that you will need:
+
+- Windows 2000 Professional, Windows 2000 Server, and Windows 2000 Advanced
+  Server
+- Internet Information Server 5.0
+
+View or Change Authentication Methods
+-------------------------------------
+
+1. Click Start, point to Programs, point to Administrative Tools, and click
+  Internet Services Manager.
+
+2. In the console tree (left pane) of Internet Information Services, browse to
+  the Web site that you want to work with.
+
+3. Right-click this Web site and click Properties.
+
+4. Click the Directory Security tab.
+
+5. Under Anonymous Access and Authentication Control, click Edit.
+
+6. In the Authentication Methods dialog box, select one or more appropriate
+  methods.
+
+7. Click OK twice to exit the Web site Properties page and return to the
+  Internet Information Services console.
+
+Troubleshooting
+---------------
+
+- Enabling Basic authentication does not automatically configure your Web
+  server to authenticate users. Windows user accounts must be created and the
+  Windows NT file system (NTFS) permissions must be properly set. The
+  disadvantage is that Web browsers that use Basic authentication transmit
+  passwords in an unencrypted form. By monitoring communications on your
+  network, someone can easily intercept and decipher these passwords by using
+  publicly available tools. Therefore, Basic authentication is not recommended
+  unless you are confident that the connection between the user and your Web
+  server is a secure connection, such as a direct cable connection or a
+  dedicated line.
+
+- Integrated Windows authentication does not work across CERN compliant proxy
+  servers (such as MS Proxy 2.0). It does work with some firewall applications
+  (such as ISA).
+
+- Digest authentication is supported only for domains with a Windows 2000
+  domain controller. Digest authentication completes only if the domain server
+  for which a request is made has a plain-text copy of the requesting user's
+  password. Because the domain controller has plain-text copies of passwords,
+  it must be secured from both physical and network attacks. For more
+  information about securing a domain controller, click the link to the
+  Microsoft Windows 2000 Server Resource Kits in the "References" section.
+  Microsoft Internet Explorer version 5.0 is the only browser that currently
+  supports Digest authentication.
+
+REFERENCES
+==========
+
+For more information, see the following Web sites:
+
+  Internet Information Services 5.0 Authentication Methods
+  http://www.win2000mag.com/Articles/Index.cfm?ArticleID=8443
+
+  IIS 101: The Basics of IIS Authentication
+  http://www.iisadministrator.com/Articles/Index.cfm?ArticleID=15843
+
+  Setting Up Digest Authentication for Use with Internet Information Services
+  5.0
+  http://support.microsoft.com/directory/article.asp?ID=KB;EN-US;q222028
+
+  Microsoft Windows 2000 Server Resource Kits
+  http://www.microsoft.com/windows2000/techinfo/reskit/en/default.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

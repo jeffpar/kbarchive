@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q98178: DoubleSpace Setup Hangs During First Reboot | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q98178: DoubleSpace Setup Hangs During First Reboot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/098/Q98178/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/098/Q98178/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/098/Q98178/","publisher":null,"image":null,"headline":"Q98178: DoubleSpace Setup Hangs During First Reboot","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q98178-doublespace-setup-hangs-during-first-reboot">Q98178: DoubleSpace Setup Hangs During First Reboot</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q98178
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+SYMPTOMS
+========
+
+You run DoubleSpace Setup and your computer stops responding (hangs) during the
+first reboot or your computer hangs when you boot from a floppy disk that
+contains the DBLSPACE.BIN file (such as the Uninstall disk or the MS-DOS 6
+Upgrade Disk 1).
+
+When this problem occurs, your system hangs before the DoubleSpace compression
+process begins. Because no data is ever moved to a DoubleSpace compressed volume
+file (CVF), no data is lost.
+
+CAUSE
+=====
+
+This situation may occur because the ROM BIOS on your computer failed when
+DBLSPACE.BIN called interrupt 1AH.
+
+This problem occurs on the following computers:
+
+- Canon models C-200 M-50 and C-200 M-55
+
+- CompuAdd 386
+
+- Computers using a Microsolutions Compaticard
+
+- Positive computers
+
+- Sharp models 6700, 6781, 6785, 6800, and 6881
+
+- Some AEG Olympia 386SX Laptops
+
+- Some older ACER machines
+
+- Snap-on Intel 386 and Intel Above Board 2.0
+
+- Texas Instruments (TI) TravelMate 2000
+
+- Zeos 80386 with an AMI BIOS dated 09/15/89
+
+
+NOTE: The above list may not be complete.
+
+
+WORKAROUND
+==========
+
+To work around this problem, do the following:
+
+1. Restart your computer from an MS-DOS system disk that does not contain the
+  DBLSPACE.BIN file.
+
+2. Change to the root directory of your hard disk, then delete the DBLSPACE.*
+  files from the root directory of your hard disk. For example, type the
+  following at the MS-DOS command prompt and press ENTER:
+
+  " deltree /y c:\dblspace.* " (without the quotation marks)
+
+3. Edit your AUTOEXEC.BAT file and remove any DoubleSpace commands.
+
+4. Edit your CONFIG.SYS file and remove the following line:
+
+     devicehigh=c:\dos\dblspace.sys /move
+
+5. Remove any floppy disks from your disk drives and restart your computer.
+
+6. Either use the following procedure to modify the MS-DOS 6 Upgrade
+  DBLSPACE.BIN file so that it does not make the INT 1A ROM BIOS call, or
+  upgrade to MS-DOS 6.2.
+
+  If you are going to modify DBLSPACE.BIN, use Debug to load the DBLSPACE.BIN
+  file into memory by typing the following at the MS-DOS command prompt, and
+  then press ENTER:
+
+  " debug c:\dos\dblspace.bin " (without the quotation marks)
+
+  Press ENTER after typing each of the following commands:
+
+  Debug               Commands
+  Prompts             to Enter    Comments
+  -------------------------------------------------------------
+
+  -                    e c7ea      Edit C7EA
+  nnnn:C7EA CD.        90          Replace INT opcode with NOP
+  -                    e c7eb      Edit C7EB
+  nnnn:C7EB 1A.        90          Replace 1A INT number w/ NOP
+  -                    w           Write the file back to disk
+  Writing 0C80E bytes
+  -                    q           Quit Debug
+
+  If you have an international version of MS-DOS 6.0 DoubleSpace, the commands
+  noted above do not work. To modify any version of the DBLSPACE.BIN file, use
+  Debug to load DBLSPACE.BIN into memory and press ENTER after typing each of
+  the commands listed below:
+
+  Debug Prompts           Commands to Enter
+  -------------------------------------------------------
+
+  -                       r cx
+  CX aaaa
+  :                       &lt;Press the ENTER key&gt;
+  -                       s cs:100 L &lt;aaaa value shown above&gt; CD 1A
+  bbbb:cccc
+  dddd:eeee
+  -                       e (eeee value shown above)
+  ffff:gggg nn.           90 &lt;press SPACEBAR&gt; 90
+  -                       w
+  Writing nnnnn bytes
+  -                       q
+
+  For example, if you use this script on the DBLSPACE.BIN file provided with
+  MS-DOS 6 Upgrade, you would see the following:
+
+     H:\&gt;debug dblspace.bin
+     -r cx
+     CX C80E
+     :
+     -s cs:100 L c80e cd 1a      18FD:0544
+     18FD:C7EA
+     -e c7ea
+     18FD:C7EA CD.90   1A.90
+     -w
+     Writing 0C80E bytes
+     -q
+     H:\&gt;
+
+7. Run DoubleSpace Setup again.
+
+MORE INFORMATION
+================
+
+When DBLSPACE.BIN loads, it makes a call to Interrupt 1AH (Function B0H,
+Subfunction 01H) to check for the presence of a ROM-based MRCI provider. On
+systems that do not have a ROM-based MRCI provider, the ROM BIOS must process
+the INT 1AH call and indicate that the function was not successful. Microsoft
+has found that with some ROM BIOS chip sets, the stack becomes corrupted when
+this function call is processed.
+
+The Debug procedure removes the INT 1AH call from DBLSPACE.BIN. On systems with
+no ROM-based MRCI provider, this does not alter the performance of DoubleSpace.
+The Debug procedure should not be performed on systems that have a ROM-based
+MRCI provider.
+
+NOTE: At this time, no ROM-based MRCI providers are available on the market.
+
+The following computers do NOT experience the problem noted above under MS-DOS
+6.2:
+
+- ACER
+
+- Canon
+
+- CompuAdd
+
+- Microsolutions Compaticard
+
+- Olympia Laptops
+
+- Positive
+
+- Sharp
+
+- Snap-on Intel 386 and Intel Above Board 2.0
+
+- TI TravelMate
+
+- Zeos
+
+With MS-DOS 6.2, the check for a ROM-based MRCI server is disabled by default. If
+your computer has a ROM-based MRCI server, you can enable this check by typing
+the following at an MS-DOS command prompt:
+
+  " dblspace /romserver=1 " (without the quotation marks)
+
+For more information on this command, type "help dblspace /romserver" (without
+the quotation marks) at an MS-DOS 6.2 command prompt.
+
+CAUTION: Do not enable the MRCI check with MS-DOS 6.2 unless you are certain that
+you have hardware that uses MRCI.
+
+
+Additional query words: 6.00 double space lap top stop hung hang freeze frozen locks Acer 6700 series tshoot Cannon M50 N50 stingray 6801 C200 Sharpe 286 386sx 386 80286 80386 80386sx 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

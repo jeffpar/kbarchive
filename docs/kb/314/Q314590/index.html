@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q314590: Automap: Err Msg: Registry Information Was Not Copied… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q314590: Automap: Err Msg: Registry Information Was Not Copied…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/314/Q314590/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/314/Q314590/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/314/Q314590/","publisher":null,"image":null,"headline":"Q314590: Automap: Err Msg: Registry Information Was Not Copied…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q314590-automap-err-msg-registry-information-was-not-copied">Q314590: Automap: Err Msg: Registry Information Was Not Copied…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q314590
+Product(s): Microsoft Automap
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbimu
+Last Modified: 30-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Streets and Trips 2001 
+- Microsoft MapPoint 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use Microsoft Streets &amp; Trips or Microsoft MapPoint, you
+may receive an error message similar to the following:
+
+  Your registry settings for this application were not copied correctly. To
+  correct these settings, run setup again for this application from the
+  location where you originally installed it.
+
+CAUSE
+=====
+
+This behavior can occur when the installation is not completed successfully.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps in the order in which they are
+presented.
+
+Uninstall the Program
+---------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click the program, and then click Add/Remove.
+
+4. Follow the prompts to uninstall the program.
+
+Start Your Computer with a Clean-Boot Procedure
+-----------------------------------------------
+
+Use the appropriate method for your version of Microsoft Windows.
+
+Microsoft Windows XP:
+
+For additional information about how to clean boot in Windows XP, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q310353 How to Perform a Clean Boot in Windows XP
+
+Microsoft Windows Millennium Edition (Me):
+
+1. Click Start, click Run, type "msconfig" (without the quotation marks) in the
+  Open box, and then click OK.
+
+2. On the General tab, click "Selective startup".
+
+3. Click to clear all of the check boxes under "Selective startup".
+
+4. On the "Startup" tab, click to select the *StateMgr check box.
+
+
+5. Click OK. When you are prompted to restart your computer, click Yes. After
+  the computer restarts, Click Start, click Run, type "msconfig" (without the
+  quotation marks) in the Open box, and then click OK.
+
+  IMPORTANT: Examine the General tab to make sure that the check boxes that you
+  cleared are still cleared. If none of the check boxes are selected, proceed
+  to the next method. If you see a selected, unavailable check box (it appears
+  dimmed and has a check mark in it), your computer is not truly clean-booted
+  and you may require assistance from the manufacturer of the program that is
+  listed next to the selected, unavailable check box.
+
+Microsoft Windows 98:
+
+1. Click Start, click Run, type "msconfig.exe" (without the quotation marks) in
+  the Open box, and then click OK.
+
+2. On the General tab, click Selective Startup, and then click to clear the
+  following check boxes:
+
+   - Process Config.sys File
+
+   - Process Autoexec.bat File
+
+   - Process Winstart.bat File (if available)
+
+   - Process System.ini File
+
+   - Process Win.ini File
+
+   - Load Startup Group Items
+
+3. Click OK, and then restart your computer when you are prompted to do so.
+
+Microsoft Windows 95:
+
+1. Restart your computer. When the Starting Windows 95 dialog box is displayed,
+  press F8, and then choose Step-By-Step Confirmation from the Startup menu.
+
+2. When you are prompted, load the following items (if you are prompted to load
+  any other items, press N):
+
+   - Dblspace driver.
+
+   - Himem.sys.
+
+   - Ifshlp.sys.
+
+   - Dblbuff.sys.
+
+   - Windows 95 graphical user interface (GUI); choose to load all Windows
+     drivers.
+
+NOTE: Windows 95 does not require the Config.sys and Autoexec.bat files, but some
+tools installed on the computer may require them. You should never rename the
+Config.sys and Autoexec.bat files until you perform a successful interactive
+boot to verify that they are not needed.
+
+Reinstall in New Folder
+-----------------------
+
+Follow these steps:
+
+1. Insert the disc in the CD-ROM drive.
+
+2. Click Next twice.
+
+3. In the "Install to" box, change the default path by changing the folder name,
+  and then click Next.
+
+4. Choose your installation type, click Next, and then click Install.
+
+Restart Computer Normally
+-------------------------
+
+Use the appropriate method for your version of Windows.
+
+Windows 95:
+
+Restart the computer.
+
+Windows 98:
+
+1. Click Start, click Run, type "msconfig" (without the quotation marks) in the
+  Open box, and then click OK.
+
+2. On the General tab, click Normal Startup, and then click OK.
+
+3. When you are prompted to restart your computer, click Yes.
+
+Windows Me:
+
+1. Click Start, click Run, type "msconfig" (without the quotation marks) in the
+  Open box, and then click OK.
+
+2. On the General tab, click "Normal startup".
+
+3. Click OK. Click Yes when you are prompted to restart your computer.
+
+Windows XP:
+
+1. Click Start, click Run, type "msconfig" (without the quotation marks) in the
+  Open box, and then click OK.
+
+2. On the General tab, click "Normal Startup - load all device drivers and
+  services".
+
+3. Click OK. Click Restart when you are prompted to restart your computer.
+
+Create a New User Account and Install the Program in the New Account
+--------------------------------------------------------------------
+
+1. Click Start, and then click Control Panel.
+
+2. Click User Accounts.
+
+3. Click "Create a New Account".
+
+4. When you receive the prompt, type the name for the new user, and then click
+  Next.
+
+5. On the "Pick an Account Type" page, click Computer Administrator, and then
+  click Create Account.
+
+6. Log off Windows.
+
+7. Log on as the new user whom you created in steps 1 through 5.
+
+8. Insert the Microsoft Streets and Trips Setup CD-ROM or the MapPoint Setup
+  CD-ROM into the CD-ROM or DVD-ROM drive, and then follow the instructions on
+  the screen to install the program.
+
+MORE INFORMATION
+================
+
+For additional information about clean-boot procedures, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q243039 How to Perform a Clean Boot in Windows 95
+
+  Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+  Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+
+  Q310353 How to Perform a Clean Boot in Windows XP
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbMapptSearch kbMapPoint2001 kbExpediaStreets2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q254189: Description of the Management Agent Working Folders | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q254189: Description of the Management Agent Working Folders" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/254/Q254189/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/254/Q254189/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/254/Q254189/","publisher":null,"image":null,"headline":"Q254189: Description of the Management Agent Working Folders","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q254189-description-of-the-management-agent-working-folders">Q254189: Description of the Management Agent Working Folders</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q254189
+Product(s): Microsoft Windows NT
+Version(s): 2.1
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Management Agent (MA) working folders are created when the Management Agent is
+created in Microsoft Metadirectory Services (MMS). When you create an MA, you
+choose a descriptive name and the MA type from the predefined MAs included with
+MMS. A working folder with an 8-digit name is then created in the
+Zoomserver\Data\DS folder (for example Zoomserv\Data\DS\00000001). When you run
+the MA for the first time, the working folder is populated with intermediate and
+log files. The MA is initialized by using the contents of the
+Zoomserv\Data\Dsgate\&lt;X&gt; folder (where &lt;X&gt; is the MA type). Each MA
+creates a working folder. The files specified on the Working Folder tab may be
+unique based on the MA.
+
+To locate the working folder and MA-specific files:
+
+1. Click the MA.
+
+2. On the Action menu, click Properties.
+
+3. Click the "Intermediate Files and Logs Files" tab.
+
+4. Click the Working Folder tab. This tab lists the working folder and the files
+  associated with the MA.
+
+NOTE: The working folder is empty before you run the MA. Depending on the
+operational setting that you choose, the task to run depends on which files are
+written to the working folder when you run the MA.
+
+MORE INFORMATION
+================
+
+Because every MA is customized slightly for its corresponding connected folder,
+this example is based on the Microsoft Windows NT MA. This example demonstrates
+how to associate the working folder files with the operational setting for the
+MA.
+
+Microsoft Windows NT Management Agent Example
+---------------------------------------------
+
+The following MA processes are associated with the MA-specific files located in
+the working folder.
+
+  Groups Discovered: Import.ou
+  User Discovered: Import
+  Lists Discovered: Import.lst
+  CD Group Updates: Create
+  CD User Updates: Create.ou
+  CD List Updates: Create.lst
+  Foreign User Updates: Export
+
+Operational Settings for Microsoft Management Agents:
+
+The objects to process operational settings determine which files are created in
+the working folder.
+
+Types of Objects to Process:
+
+Process Windows NT Domains
+Process Windows NT Accounts
+Process Windows NT Groups
+
+MA Working Folders Considerations
+---------------------------------
+
+When you are making changes to the MA templates, it is important to understand
+the effects of making changes to the MA that is stored in the DSgate folder
+instead of the DS folder. The DSgate folder stores the initial copy that is used
+when the predefined MA is used to create an MA. Changing the MA in the Dsgate
+folder affects every MA created from that predefined MA. To change only one
+specific MA, change the MA that is stored in the DS folder.
+
+For additional information about predefined templates, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q250312 Management Agents Included with Microsoft Metadirectory Services
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

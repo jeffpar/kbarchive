@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q291086: XADM: How to Change Default SMTP Address for Domain | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q291086: XADM: How to Change Default SMTP Address for Domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/291/Q291086/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/291/Q291086/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/291/Q291086/","publisher":null,"image":null,"headline":"Q291086: XADM: How to Change Default SMTP Address for Domain","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q291086-xadm-how-to-change-default-smtp-address-for-domain">Q291086: XADM: How to Change Default SMTP Address for Domain</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q291086
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article outlines the steps to change the default SMTP address space so that
+Microsoft Exchange Server mailboxes receive mail addressed to the new SMTP
+address but also receive mail addressed to their old domains as a secondary SMTP
+address.
+
+For example, the same Exchange Server mailbox can receive mail addressed as
+username@newcompany.com as well as reply to old messages for
+username@oldcompany.com.
+
+MORE INFORMATION
+================
+
+Before you proceed with the Exchange Server configuration, add a new MX record
+to reflect the new domain name. This new MX record should be added in the Domain
+Name Service (DNS) provider, which might be part of the Internet Service
+Provider (ISP).
+
+For additional information and the syntax of the MX record, please see the
+following article in the Microsoft Knowledge Base:
+
+  Q153001 XFOR: DNS MX Records and CNAMEs
+
+The correct addition of this MX record can be verified by performing a Name
+Service Lookup, using the new domain name.
+
+You may also want to familiarize yourself with performing directory exports. For
+additional information about performing directory exports, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q155414 XADM: Bulk Import/Export FAQ
+
+To configure the Exchange Server computer, follow these steps:
+
+1. Create a CSV header file (User.csv) with the following fields:
+
+   - Obj-Class
+
+   - Directory Name
+
+   - E-mail Addresses
+
+   - Secondary-Proxy-Addresses
+
+  To create the CSV header file, use Header.exe, which is located on the
+  Exchange Server CD in the \SERVER\SUPPORT\AUTORUN\RESKIT\HEADER folder.
+
+2. Use the file you made in step 1, User.csv, to export all mailboxes.
+
+3. Use Microsoft Excel to verify that all mailboxes are present in the CSV file.
+
+4. To change the default SMTP address for all users, follow these steps:
+
+  a. Start the Microsoft Exchange Administrator program.
+
+  b. Click Configuration, click Site Addressing, and then click the Site
+     Addressing tab.
+
+  c. Select the SMTP proxy, and then click Edit.
+
+  d. Change this address to @NewCompany.Com.
+
+  e. Click OK twice. The following message appears:
+
+  The Site Addresses of type(s) [SMTP] have been modified.
+  Do you want to update all Recipient E-mail addresses to match the new site
+  address(es).
+
+  f. Select Yes.
+
+     Another message is displayed, stating that the process has started. If you
+     look in the application log you should see the following events:
+
+  Event ID: 2043
+  Source: MSExchangeSA
+  Type: Informational
+  Category: General
+  Description: Starting the Bulk e-mail address process
+
+  Event ID: 2044
+  Source: MSExchangeSA
+  Type: Informational
+  Category: General
+  Description: Completed the Bulk e-mail address process. 10 recipients scanned,
+  10 successfully updated, 0 unsuccessfully updated.
+
+5. Before you manipulate the User.csv file, make a copy. Open the User.csv file
+  in Excel and in the "E-mail addresses" field locate "SMTP:
+  userA@domain1.com". Move this portion of the "E-mail addresses" field to the
+  Secondary-Proxy-Addresses field. Repeat these steps for all mailboxes.
+
+6. Remove the "E-mail Addresses" column, so that there are only Obj-Class,
+  Directory Name, and Secondary-Proxy-Addresses columns.
+
+7. Save the CSV file. You are prompted to either keep the format or change the
+  format. If you want to keep the format, click Yes.
+
+8. Import the User.csv file into your Exchange Server Directory.
+
+  This should add the secondary-proxy-address to all your users, which was your
+  oldcompany.com address so that old mail will not cause a Non-delivery Report.
+  The primary SMTP was changed in step 4, so the "reply-to" address from now on
+  will be for the newcompany.com.
+
+9. Open the properties for the Internet Mail Service from the Exchange Server
+  Administrator program. On the Routing tab, if the Internet Mail Service is
+  configured to reroute SMTP, verify that newdomain.com and olddomain.com are
+  listed. If they missing, click Add, and specify incoming for the missing
+  domain.
+
+Additional query words: exch2kp2w
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172601: Known Issues and Alternatives to Mailsrv Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172601: Known Issues and Alternatives to Mailsrv Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172601/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172601/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172601/","publisher":null,"image":null,"headline":"Q172601: Known Issues and Alternatives to Mailsrv Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172601-known-issues-and-alternatives-to-mailsrv-utility">Q172601: Known Issues and Alternatives to Mailsrv Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172601
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 21-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows NT Server 4.0 Resource Kit ISBN 1-57231-344-7 
+- MSPRESS Microsoft Windows NT Workstation 4.0 Resource Kit ISBN 1-57231-343-9 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Mail Server 1.1 utility (MailSrv) provided with the Microsoft Windows NT
+Server Resource Kit, Version 4.0 was designed as a basic SMTP and POP3 mail
+server. It was never designed or intended to be a mission-critical, secure, or
+enterprise-scale solution.
+
+Microsoft has developed two full-featured mail servers to provide superior
+functionality and reliability. Microsoft recommends implementing a more secure
+and reliable mail service than can be managed by the MailSrv utility. Therefore,
+MailSrv has been discontinued.
+
+MORE INFORMATION
+================
+
+The following problems have been reported with the MailSrv utility on the
+Microsoft Windows NT Server 4.0 Resource Kit CD-ROM.
+
+- Mail sent to the MailSrv server is held in the spool directory and is not
+  distributed to the appropriate user.
+
+- Over a period of time, MailSrv might slowly take up to 100 percent of the
+  available CPU cycles. Stopping or restarting local mail delivery service,
+  POP3 service, and SMTP service, will release the CPU cycles.
+
+The Resource Kit development team is aware of these problems and will post
+further information as it becomes available. However, the MailSrv utility is no
+longer included with the Microsoft Windows NT Resource Kit. MailSrv.Exe was not
+included on the Microsoft Windows NT Server Resource Kit, Version 4.0,
+Supplement One CD-ROM, and MailSrv will not be included with future supplements
+or releases.
+
+Alternatives
+------------
+
+Microsoft produces two robust, secure, and full-featured mail service solutions
+for an enterprise system: Microsoft Exchange Server and Microsoft Commercial
+Internet System.
+
+More information about Microsoft Exchange Server can be found on the following
+Web site:
+
+  http://www.microsoft.com/exchange/
+
+More information about Microsoft Commercial Internet System and other Microsoft
+enterprise solutions can be found at:
+
+  http://backoffice.microsoft.com/
+
+If you are looking for a small-scale Windows NT mail server solution, you might
+find that a suitable freeware or shareware mail server is available. You can
+find a list of third party mail server vendors by going to the following Web
+site and searching for the Mail Server product category:
+
+  http://msdnisv.microsoft.com/communication/
+
+This site is subject to regular change, and most of the freeware and shareware
+hyperlinks are frequently updated and replaced with newer links.
+
+NOTE: Because the Microsoft Web site is constantly updated, these site addresses
+may change without notice. If this occurs, link to the Microsoft home page at
+the following address:
+
+  http://www.microsoft.com/
+
+Additional query words: mspress ms_press press ntreskit ntrk
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword3
+Version           : :
+Issue type        : kbbug kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

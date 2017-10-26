@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216055: HOWTO: Pass an Array by Reference to LCK and Return Changes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216055: HOWTO: Pass an Array by Reference to LCK and Return Changes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216055/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216055/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216055/","publisher":null,"image":null,"headline":"Q216055: HOWTO: Pass an Array by Reference to LCK and Return Changes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216055-howto-pass-an-array-by-reference-to-lck-and-return-changes">Q216055: HOWTO: Pass an Array by Reference to LCK and Return Changes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216055
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0b,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbVC kbvfp300b kbvfp500a kbvfp600 kbXBase
+Last Modified: 17-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0b, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates how to pass an array of real numbers to a FoxPro
+Library Construction Kit (LCK) routine in Visual C, manipulate the array in the
+LCK routine, and return the changed array to Visual FoxPro.
+
+MORE INFORMATION
+================
+
+Create a Visual FoxPro FLL in Visual C++ using the following C code:
+
+  #include &lt;windows.h&gt;
+  #include &lt;pro_ext.h&gt;
+
+  void FAR ByRef_array(ParamBlk FAR *parm)
+  {
+     int     start;         /* Starting value of Loop. */ 
+     Value   val;           /* Create Value structure. */ 
+     Locator loc;           /* Create Locator structure. */ 
+
+     start=0;
+     loc = parm-&gt;p[0].loc;  /* Store the contents of the FoxPro array
+                                    in the Locator structure. */ 
+
+     /* Get the number of elements from the FoxPro array. */ 
+
+     loc.l_subs = (int)_ALen(parm-&gt;p[0].loc.l_NTI, AL_ELEMENTS);
+
+     /* FOR loop to get the array elements. */ 
+
+     for(start=0;start != loc.l_subs ; start ++){
+        loc.l_sub1=(start+1);
+
+        /* Store the contents of the FoxPro array in a Value Structure.*/ 
+        _Load(&amp;loc,&amp;val);
+
+        /* Copy the contents of the FoxPro array to the function array.*/ 
+  		
+        /* Test array contents and manipulate accordingly */ 
+        if (val.ev_type == 'N') 
+           {
+           if (val.ev_real &lt; 10) 
+              val.ev_real = val.ev_real * 1;
+           else 
+              if (val.ev_real &lt; 20) 
+                 val.ev_real = val.ev_real * 2;
+              else 
+                 if (val.ev_real &lt; 30)
+                    val.ev_real = val.ev_real * 3;
+                 else val.ev_real = val.ev_real * 4;	
+        }
+        else
+           MessageBox(NULL,"Wrong Data type","Should be a number.",MB_OK);
+  		
+        /* Copy the contents of Locator Structure into Value Structure.*/ 
+        _Store(&amp;loc, &amp;val); 	 
+  		   
+     }		
+  }
+
+     FoxInfo myFoxInfo[]={
+        {"ByRef_ARRAY",(FPFI)ByRef_array,1,"R"},
+     };
+
+     FoxTable _FoxTable={
+        (FoxTable FAR*)0, sizeof(myFoxInfo) / sizeof(FoxInfo), myFoxInfo
+     };
+
+To test that the array has changed, create a program and enter the following
+FoxPro code:
+
+  CLEAR
+  cfixed=SET('FIXED')
+  SET FIXED ON
+
+  cdecimal=SET('DECIMALS')
+  SET DECIMAL TO 4
+
+  * Point to the DLL built in Visual C 
+  SET LIBRARY TO "D:\visual c 6\MyProjects\by_ref\Debug\by_ref.dll"
+
+  * Populate array with random values then print to see original values
+  PUBLIC by_reftest(10)
+
+  ?"Array before LCK routine..."
+  FOR i = 1 TO ALEN(by_reftest)
+  	by_reftest(i)= 60 * RAND()
+  	?by_reftest(i)
+  ENDFOR
+
+  * Call the LCK function and pass the array by reference
+  =ByRef_array(@by_reftest)
+
+  ?"Array after LCK routine..."
+  FOR i = 1 TO ALEN(by_reftest)
+     ?by_reftest(i)
+  ENDFOR
+
+  SET FIXED &amp;cfixed
+  SET DECIMALS TO &amp;cdecimals
+  SET LIBRARY TO
+
+REFERENCES
+==========
+
+For additional information about the FoxPro Library Construction Kit (LCK),
+please see the following articles in the Microsoft Knowledge Base:
+
+Q122591 PRB: How to Change Variable Value Passed by Reference in LCK
+
+Q119636 How to Pass an Array to a Routine in an LCK Library
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Dean
+Christopher, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC kbvfp300b kbvfp500a kbvfp600 kbXBase 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0b,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

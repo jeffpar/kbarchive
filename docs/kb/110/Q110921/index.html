@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q110921: How to Debug .PLB and .FLL Source Code | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q110921: How to Debug .PLB and .FLL Source Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/110/Q110921/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/110/Q110921/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/110/Q110921/","publisher":null,"image":null,"headline":"Q110921: How to Debug .PLB and .FLL Source Code","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q110921-how-to-debug-plb-and-fll-source-code">Q110921: How to Debug .PLB and .FLL Source Code</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q110921
+Product(s): Microsoft FoxPro
+Version(s): 2.5x,2.6x,3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, Professional Edition, version 3.0 
+- Microsoft FoxPro Library Construction Kit for MS-DOS, versions 2.5x, 2.6x 
+- Microsoft FoxPro Library Construction Kit for Windows, versions 2.5x, 2.6x 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In order to step through the source code of a .PLB or .FLL file, you must
+compile the source code with the _BreakPoint() function. This macro generates
+the debugger breakpoint instruction Interrupt 3h. (NOTE: All interrupts are
+given in hexadecimal.)
+
+Once this is done, you must start the debugger and execute FoxPro from within the
+debugger. After FoxPro has been started, it can be used normally, which means
+you must load the library and then call the functions from within the library
+that have the _BreakPoint() function. The library will execute normally until
+the _BreakPoint() function is reached. When this statement is reached, control
+will be transferred to the debugger. At this point, you will be able to step
+through the .C source code. When the code terminates, control will then be
+transferred back to FoxPro.
+
+MORE INFORMATION
+================
+
+The following are step-by-step instructions for stepping through the source code
+of a .PLB or .FLL file. Depending on your version of FoxPro, use one of the
+following instructions:
+
+FoxPro 2.x
+----------
+
+1. Include the _BreakPoint() function in the .C source code.
+
+2. Start the debugger.
+
+3. Start FoxPro from within the debugger.
+
+4. Load the library and call the functions.
+
+5. Step through the C source code and then return to FoxPro.
+
+6. Quit FoxPro.
+
+7. Quit the debugger.
+
+Visual FoxPro and Microsoft Visual C++ 2.0
+------------------------------------------
+
+1. Add the _BreakPoint() in the source code
+
+2. Compile and build a debug version of the .DLL
+
+3. Start Visual FoxPro and issue the 'SET LIBRARY TO &lt;DLL file&gt;'
+
+4. Call the function in the library (for example ?HELLO() )
+
+When the code hits the _BreakPoint() instruction you will get an "Application
+Error" with options for 'OK' to terminate and 'Cancel' to debug. Picking the
+'Cancel' option will allow you to start VC++ with the debugger active and to
+step through the sourcecode.
+
+REFERENCES
+==========
+
+Library Construction Kit "Developer's Guide," Chapter 8
+
+Additional query words: VFoxWin 3.00 FoxWin FoxDos 2.50 2.50a 2.50b 2.60 2.60a debug fll plb lck
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxProLibCK250xDOS kbFoxProLibCK260xDOS kbVFP300
+Version           : :2.5x,2.6x,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

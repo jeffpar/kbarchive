@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216585: WINS 1C Records are Tombstoned and Are Scavenged out of Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216585: WINS 1C Records are Tombstoned and Are Scavenged out of Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216585/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216585/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216585/","publisher":null,"image":null,"headline":"Q216585: WINS 1C Records are Tombstoned and Are Scavenged out of Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216585-wins-1c-records-are-tombstoned-and-are-scavenged-out-of-database">Q216585: WINS 1C Records are Tombstoned and Are Scavenged out of Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216585
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbWinNT400sp5fix
+Last Modified: 16-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an environment that relies on Windows Internet Name Service (WINS) to resolve
+NetBIOS names, Windows clients can experience logon problems and the following
+error message will appear:
+
+  There are no logon servers available to service the logon request
+
+The WINS [1C] domain records may be missing from some WINS server databases.
+
+CAUSE
+=====
+
+Through replication and convergence, the [1C] record ownership will change from
+WINS server to WINS server. Eventually, you may many end up with a scenario
+where a WINS server that owns a [1C] record and its direct replication partner
+has a replica of the [1C] record but does not own the record. The problem occurs
+when no domain controllers refresh the [1C] record on the remote WINS server,
+the records will expire, become tombstoned, and be scavenged out of the
+database. The following is an example of what could happen:
+
+1. The version ID for the tombstoned [1C] record will be increased and will be
+  flagged for replication during the next replication cycle.
+
+2. WINS cannot increment the version ID of a replica record (record owned by
+  another WINS server); only the owner of a record is allowed to increment the
+  version ID of the record. When replication occurs the tombstoned [1C] record
+  will not be replicated to its replication partner if the partner does not own
+  the [1C] record.
+
+3. The tombstoned [1C] Record will then be scavenged out of the database.
+
+In the case of pull-only replication, the servers that are only pulling records
+should not have ownership of any of the [1C] records as no servers should be
+refreshing or registering with the servers.
+
+RESOLUTION
+==========
+
+A change has been made to WINS so that, if a [1C] record should become
+tombstoned on a WINS server, ownership will change to that of the tombstoning
+WINS server. The tombstoned [1C] record will continue to replicate to all
+replication partners as tombstoned with the ownership being set to that of the
+tombstoning server. When an active [1C] record is encountered, the ownership of
+the [1C] record will be changed to that of the WINS server that owns the active
+[1C] record and will then be replicated as active to all replication partners.
+
+There was also an additional change made to Wins.exe where a WINS server will
+send a "Push with Propagation" trigger when the tombstoned [1C] record is
+encountered. The "Push with Propagation" trigger will propagate the trigger to
+all replication partners after it has pulled in the latest information from the
+source WINS server. This will ensure that the tombstoned [1C] record is replaced
+with and active [1C] record expediently if there is truly and active owner of
+the [1C] record in the replication network. To resolve this problem, obtain the
+latest service pack for Windows NT 4.0. For additional information, please see
+the following article in the Microsoft Knowledge Base:
+
+  Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+This hotfix supercedes all hotfixes referenced in the following Microsoft
+Knowledge Base article:
+
+  Q190506 WINS Replication Problem Events 4262, 4261, and 1c Replication
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400sp5fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

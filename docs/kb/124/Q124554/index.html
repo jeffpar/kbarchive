@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124554: DriveSpace: DRVSPACX.VXD Is Removed, DRVSPACE.SYS /Move Is Not | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124554: DriveSpace: DRVSPACX.VXD Is Removed, DRVSPACE.SYS /Move Is Not" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124554/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124554/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124554/","publisher":null,"image":null,"headline":"Q124554: DriveSpace: DRVSPACX.VXD Is Removed, DRVSPACE.SYS /Move Is Not","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124554-drivespace-drvspacxvxd-is-removed-drvspacesys-move-is-not">Q124554: DriveSpace: DRVSPACX.VXD Is Removed, DRVSPACE.SYS /Move Is Not</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124554
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 17-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you remove your last compressed drive, DriveSpace does one of the
+following:
+
+- Asks whether you want to remove the compression driver from memory.
+
+  -or-
+
+- Fails to remove a device statement in your CONFIG.SYS file.
+
+MORE INFORMATION
+================
+
+At the end of an operation that removes your last compressed drive (either
+Uncompress or Delete), DriveSpace asks if the compression driver (DRVSPACX.VXD)
+should be removed from memory:
+
+  Remove Compression?
+  Your computer no longer contains any compressed drives.
+  Do you want to remove the compression driver from memory?
+
+The question implies that the driver will be removed immediately from memory;
+however, it is not actually removed until you restart the computer.
+
+After you restart the computer, DRVSPACX.VXD is successfully removed from memory;
+however, the following line may remain in your CONFIG.SYS file
+
+  Device=&lt;path&gt;\DRVSPACE.SYS /Move
+
+where &lt;path&gt; is the Windows 95 COMMAND subdirectory (for example,
+C:\Windows\Command)
+
+DRVSPACE.SYS /Move no longer serves a purpose because the DriveSpace driver is
+not loading. It is safe to remove this line from your CONFIG.SYS file.
+
+Steps to Remove DRVSPACE.SYS /Move
+----------------------------------
+
+1. Open the CONFIG.SYS file in a text editor (such as Microsoft WordPad).
+
+2. Remove the following line:
+
+  DEVICE=&lt;path&gt;\DRVSPACE.SYS /Move
+
+3. Save the file, shut down and then restart Windows 95.
+
+
+Additional query words: dxxspace
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

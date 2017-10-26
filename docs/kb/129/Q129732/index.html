@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129732: INFO: Data Access Objects Have Properties Based on Database Type | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129732: INFO: Data Access Objects Have Properties Based on Database Type" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129732/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129732/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129732/","publisher":null,"image":null,"headline":"Q129732: INFO: Data Access Objects Have Properties Based on Database Type","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129732-info-data-access-objects-have-properties-based-on-database-type">Q129732: INFO: Data Access Objects Have Properties Based on Database Type</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129732
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Certain Visual Basic Data Access Objects (DAO), such as the Field, Recordset,
+and TableDef objects, each have a Properties collection that uniquely
+characterizes an instance of the object. You can use the default (built-in)
+properties in the collection or you can create user-defined properties by using
+the CreateProperty method.
+
+The default properties available in the collection vary depending on the database
+type. A set of extended properties, referred to as application- defined
+properties, are available with Microsoft Access databases.
+
+MORE INFORMATION
+================
+
+The built-in properties are available in the Properties collection for all
+databases including Microsoft Access, Btrieve, dBASE, Microsoft FoxPro, Paradox,
+and ODBC client-server databases such as SQL Server. For example, the following
+built-in properties are available in the Properties collection of the TableDef
+object (using DAO version 3.0):
+
+   Name            SourceTableName
+   Updatable       RecordCount
+   DateCreated     ValidationRule
+   LastUpdated     ValidationText
+   Connect         ConflictTable
+   Attributes
+
+Additional application-defined properties are available for Microsoft Access
+databases. For a complete list of built-in and application-defined properties,
+please see the following topics in the Microsoft Access Help menu:
+
+  Field Object, Fields Collection - Summary
+  RecordSet Object, Recordsets Collection - Summary
+  TableDef Object, TableDefs Collection - Summary
+
+The application-defined properties will not be a part of the DAO's Properties
+collection until the values are changed from their default values. You can
+change an application-defined property default value by using Visual Basic code
+or by using the Microsoft Access design environment. In Visual Basic code, use
+the CreateProperty method just as you would to create user-defined properties.
+
+Steps to Display the Properties Collection
+------------------------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. If using Visual Basic 5.0, establish a reference to DAO 3.5 by clicking
+  References from the Project menu.
+
+3. Add the following code to the Form1_Click procedure:
+
+        Dim MyDB As Database
+        Dim MySet As Recordset
+        Dim MyProperty As Property
+        Dim MyTableDef as TableDef
+
+        ' Access database
+        Set MyDB = DBEngine.Workspaces(0).OpenDatabase("biblio.mdb")
+        Set MySet = MyDB.OpenRecordset("Authors", dbOpenTable)
+        Set MyTableDef = MyDB("Authors")
+
+        'display properties collection for Field
+        For Each MyProperty In MySet(0).Properties
+           List1.AddItem MyProperty.Name
+        Next
+
+        'display properties collection for Recordset
+        For Each MyProperty In Myset.Properties
+           List2.AddItem MyProperty.Name
+        Next
+
+        'display properties collection for Tabledef
+        For Each MyProperty In MyTableDef.Properties
+           List3.AddItem MyProperty.Name
+        Next
+
+        'Append an application-defined TableDef property by
+        'changing its default value so it appears in the list
+        On Error GoTo myerr:     'if RowHeight property exists trap error
+        Set MyProperty = MyTableDef.CreateProperty("RowHeight")
+        MyProperty.Type = dbinteger
+        MyProperty.Value = 9
+        MyTableDef.Properties.Append MyProperty
+
+        myerr:
+        MsgBox("RowHeight Property already exists, Please create another")
+
+        'Print list again to see that RowHeight is displayed
+        For Each MyProperty In MyTableDef.Properties
+           List4.AddItem MyProperty.Name
+        Next
+        MySet.Close
+        MyDb.Close
+        On Error GoTo 0
+
+4. Add four list boxes (List1, List2, List3, and List4) to Form1.
+
+5. Run the program.
+
+Additional query words: kbVBp400 kbVBp500 kbVBp600 kbdse kbDSupport kbVBp
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

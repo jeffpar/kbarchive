@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158572: STL Sample set::(lower_, upper_)bound, equal_range Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158572: STL Sample set::(lower_, upper_)bound, equal_range Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158572/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158572/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158572/","publisher":null,"image":null,"headline":"Q158572: STL Sample set::(lower_, upper_)bound, equal_range Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158572-stl-sample-setlower_-upper_bound-equal_range-functions">Q158572: STL Sample set::(lower_, upper_)bound, equal_range Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158572
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): _IK kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 05-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following sample code illustrates how to use the set::lower_bound,
+set::upper_bound, and set::equal_range STL functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;set&gt;
+
+Prototype
+---------
+
+     template&lt;class _K, class _Pr, class _A&gt;
+     class set {
+     public:
+     // Function 1:
+
+        const_iterator lower_bound(const _K&amp; _Kv) const;
+
+     // Function 2:
+        const_iterator upper_bound(const _K&amp; _Kv) const;
+     // Function 3:
+        _Paircc equal_range(const _K&amp; _Kv) const;
+     }
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The lower_bound function returns an iterator to the earliest element in the
+controlled sequence that has a key that does not match the value passed to the
+lower_bound function. The upper_bound function returns an iterator to the
+earliest element in the controlled sequence that has a key that matches the
+value passed to the upper_bound function. If no such element exists, the
+function returns end(). In both cases, the function set::key_comp()(key, x) is
+used to determine if the keys match. The equal_range function returns a pair
+value, where .first is the result of the lower_bound function, and .second is
+the result of the upper_bound function.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: -GX
+  // 
+  // SetBoundRange.cpp:
+  //      Illustrates how to use the lower_bound function to get an
+  //      iterator to the earliest element in the controlled sequence
+  //      that has a key that does not match the value passed to the
+  //      function. It also illustrates how to use the upper_bound
+  //      function to get an iterator to the earliest element in the
+  //      controlled sequence that has a key that matches the value
+  //      passed to the function. The last thing it illustrates is
+  //      how to use the equal_range function to get a pair value that
+  //      contains the lower_bound and upper_bound results of the key.
+  // 
+  // Functions:
+  // 
+  //    lower_bound  Returns an iterator whose value does not match the
+  //                 key passed to the function, or end() if no such
+  //                 element exists.
+  //    upper_bound  Returns an iterator whose value matches the key
+  //                 passed to the function, or end() if no such element
+  //                 exists.
+  //    equal_range  Returns a pair of (lower_bound,upper_bound).
+  // 
+  // Written by Derek Jamison
+  // of Microsoft Technical Support,
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  #pragma warning(disable:4786)
+
+  #include &lt;set&gt;
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef set&lt;int,less&lt;int&gt;,allocator&lt;int&gt; &gt; SET_INT;
+
+  void main() {
+
+    SET_INT s1;
+    SET_INT::iterator i;
+    cout &lt;&lt; "s1.insert(5)" &lt;&lt; endl;
+    s1.insert(5);
+    cout &lt;&lt; "s1.insert(10)" &lt;&lt; endl;
+    s1.insert(10);
+    cout &lt;&lt; "s1.insert(15)" &lt;&lt; endl;
+    s1.insert(15);
+    cout &lt;&lt; "s1.insert(20)" &lt;&lt; endl;
+    s1.insert(20);
+    cout &lt;&lt; "s1.insert(25)" &lt;&lt; endl;
+    s1.insert(25);
+
+    cout &lt;&lt; "s1 -- starting at s1.lower_bound(12)" &lt;&lt; endl;
+
+  // prints: 15,20,25
+
+    for (i=s1.lower_bound(12);i!=s1.end();i++)
+
+       cout &lt;&lt; "s1 has " &lt;&lt; *i &lt;&lt; " in its set." &lt;&lt; endl;
+
+    cout &lt;&lt; "s1 -- starting at s1.lower_bound(15)" &lt;&lt; endl;
+
+  // prints: 15,20,25
+
+    for (i=s1.lower_bound(15);i!=s1.end();i++)
+
+       cout &lt;&lt; "s1 has " &lt;&lt; *i &lt;&lt; " in its set." &lt;&lt; endl;
+
+    cout &lt;&lt; "s1 -- starting at s1.upper_bound(12)" &lt;&lt; endl;
+
+  // prints: 15,20,25
+
+    for (i=s1.upper_bound(12);i!=s1.end();i++)
+
+       cout &lt;&lt; "s1 has " &lt;&lt; *i &lt;&lt; " in its set." &lt;&lt; endl;
+
+    cout &lt;&lt; "s1 -- starting at s1.upper_bound(15)" &lt;&lt; endl;
+
+  // prints: 20,25
+
+    for (i=s1.upper_bound(15);i!=s1.end();i++)
+
+       cout &lt;&lt; "s1 has " &lt;&lt; *i &lt;&lt; " in its set." &lt;&lt; endl;
+
+    cout &lt;&lt; "s1 -- s1.equal_range(12)" &lt;&lt; endl;
+
+  // does not print anything
+
+    for (i=s1.equal_range(12).first;i!=s1.equal_range(12).second;i++)
+
+       cout &lt;&lt; "s1 has " &lt;&lt; *i &lt;&lt; " in its set." &lt;&lt; endl;
+
+    cout &lt;&lt; "s1 -- s1.equal_range(15)" &lt;&lt; endl;
+
+  // prints: 15
+
+    for (i=s1.equal_range(15).first;i!=s1.equal_range(15).second;i++)
+
+       cout &lt;&lt; "s1 has " &lt;&lt; *i &lt;&lt; " in its set." &lt;&lt; endl;
+
+  }
+
+Program Output
+--------------
+
+  s1.insert(5)
+  s1.insert(10)
+  s1.insert(15)
+  s1.insert(20)
+  s1.insert(25)
+  s1 -- starting at s1.low
+  s1 has 15 in its set.
+  s1 has 20 in its set.
+  s1 has 25 in its set.
+  s1 -- starting at s1.low
+  s1 has 15 in its set.
+  s1 has 20 in its set.
+  s1 has 25 in its set.
+  s1 -- starting at s1.upp
+  s1 has 15 in its set.
+  s1 has 20 in its set.
+  s1 has 25 in its set.
+  s1 -- starting at s1.upp
+  s1 has 20 in its set.
+  s1 has 25 in its set.
+  s1 -- s1.equal_range(12)
+  s1 -- s1.equal_range(15)
+  s1 has 15 in its set.
+
+REFERENCES
+==========
+
+Visual C++ Books Online: Visual C++ Books; C/C++; Standard C++ Library Reference
+
+Additional query words: STL STLSample equal_range lower_bound upper_bound string
+
+======================================================================
+Keywords          : _IK kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195025: BUG: VFP: &quot;SCC API error &quot;Reload File&quot; occurred on file&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195025: BUG: VFP: &quot;SCC API error &quot;Reload File&quot; occurred on file&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195025/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195025/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195025/","publisher":null,"image":null,"headline":"Q195025: BUG: VFP: &quot;SCC API error &quot;Reload File&quot; occurred on file&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195025-bug-vfp-scc-api-error-reload-file-occurred-on-file">Q195025: BUG: VFP: "SCC API error "Reload File" occurred on file"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195025
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kberrmsg kbinterop kbSSafe600bug kbvfp500
+Last Modified: 01-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe for Windows, version 6.0 
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to check in a .prg file into Visual SourceSafe that contains Visual
+SourceSafe keywords, you might get the following error:
+
+  SCC API error "Reload File" occurred on file &lt;Path to the working
+  folder\*****.prg&gt;
+
+CAUSE
+=====
+
+This bug has only been seen when using Visual FoxPro 5.0 with Visual SourceSafe
+6.0.
+
+RESOLUTION
+==========
+
+Make sure that you have compatible versions of Visual SourceSafe and Visual
+FoxPro. This problem can't be duplicated in Visual FoxPro 5.0 and Visual
+SourceSafe 5.0 or Visual FoxPro 6.0 and Visual SourceSafe 6.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+If Keyword Expansion is enabled and the .prg file contains a keyword, Visual
+FoxPro generates the error while doing a check in.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open Visual SourceSafe 6.0 Administrator.
+
+2. Under the Tools menu, click Options, and then click the General tab in the
+  Options dialog box.
+
+3. Add *.prg in the list of "Expand keywords in files of type:" text box if it
+  is not there.
+
+4. Close Visual SourceSafe Administrator.
+
+5. Open Visual FoxPro 5.0. and create a new blank project, Proj1, and save it
+  under C:\proj1.
+
+6. Save the .prg file as Program1.prg under C:\Proj1.
+
+7. Add the project to Visual SourceSafe under $/proj1 and update the project
+  list.
+
+  NOTE: The padlock glyph will indicate that the .prg file is added to Visual
+  SourceSafe.
+
+8. Check out Program1.prg.
+
+9. Modify Program1.prg and add the following lines:
+
+        * $History:   $
+
+10. Save and check in Program1.prg.
+
+RESULT: The following error message appears:
+
+  SCC API error "Reload File" occurred on file C:\Proj1\Program1.prg
+
+REFERENCES
+==========
+
+  Q141504 HOWTO: Make SourceSafe Keyword Expansion Work in Text Docs
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbSSafe600bug kbvfp500 
+Technology        : kbVFPsearch kbSSafeSearch kbAudDeveloper kbVFP500 kbSSafe600
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154776: XCON: MTA Crashes in Otpmmain Due to Null Pointer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154776: XCON: MTA Crashes in Otpmmain Due to Null Pointer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154776/","publisher":null,"image":null,"headline":"Q154776: XCON: MTA Crashes in Otpmmain Due to Null Pointer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154776-xcon-mta-crashes-in-otpmmain-due-to-null-pointer">Q154776: XCON: MTA Crashes in Otpmmain Due to Null Pointer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154776
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- the operating system: Microsoft Windows NT 4.0 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The message transfer agent (MTA) may have an access violation when a null
+pointer is passed to otpmmain. If the Microsoft Windows NT and Microsoft
+Exchange symbols are properly installed on the system, a stack trace similar to
+the following will be generated in the Dr. Watson log:
+
+State Dump for Thread Id 0x161
+
+eax=01000005 ebx=026911fc ecx=00000000 edx=00e9a090 esi=01000000
+edi=021ab4bc
+eip=02054b0f esp=04fbff60 ebp=04fbff8c iopl=0         nv up ei pl zr na po
+nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000
+efl=00000246
+
+function: otpmmain
+       02054af3 663de803         cmp     ax,0x3e8
+       02054af7 7f0a             jg      otpmmain+0x213 (02054b03)
+       02054af9 50               push    eax
+       02054afa 8b45ff           mov     eax,[ebp-0x1]
+ss:05dce992=????????
+       02054afd 50               push    eax
+       02054afe e88b450100       call    otpueadd (0206908e)
+       02054b03 6633f6           xor     si,si
+       02054b06 8b45e4           mov     eax,[ebp-0x1c]
+ss:05dce992=????????
+       02054b09 8b4804           mov     ecx,[eax+0x4]
+ds:01e0ea0b=00000000
+       02054b0c 8d4605           lea     eax,[esi+0x5]
+ds:01e0ea06=00000000
+FAULT -&gt;02054b0f 668b7904         mov     di,[ecx+0x4]
+ds:00e0ea07=????
+       02054b13 668b5106         mov     dx,[ecx+0x6]
+ds:00e0ea07=????
+       02054b17 662bd7           sub     dx,di
+       02054b1a 6642             inc     dx
+       02054b1c 663bd0           cmp     dx,ax
+       02054b1f 7d12             jge     otpmmain+0x243 (02054b33)
+       02054b21 50               push    eax
+       02054b22 51               push    ecx
+       02054b23 e8c59afbff       call    _snpugetc (0200e5ed)
+       02054b28 8b4df4           mov     ecx,[ebp-0xc]
+ss:05dce992=????????
+       02054b2b 0fbffe           movsx   edi,si
+       02054b2e 88040f           mov     [edi+ecx],al
+ds:00000000=??
+
+*----&gt; Stack Back Trace &lt;----*
+
+FramePtr ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+04fbff8c 020163ad 00000000 00000000 00000015 04fbff94 emsmta!otpmmain
+[omap]
+04fbffb8 77f04f4a 00000015 00000000 00000000 00000015 emsmta!sbpiwbep
+[omap]
+04fbffec 00000000 00000000 00000000 00000000 00000000
+kernel32!BaseThreadStart (FPO: Non-FPO [2,8,3])
+00000000 00000000 00000000 00000000 00000000 00000000 emsmta!t_readln
+
+CAUSE
+=====
+
+This error occurs because a null pointer was passed to otpmmain.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0.
+This problem was corrected in the latest Microsoft Exchange 4.0 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOSWinSearch kbOSWinNT400 kbOSWinNTSearch
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

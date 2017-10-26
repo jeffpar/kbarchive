@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178489: PRB: Error 53 &quot;File Not Found&quot; When Calling a DLL Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178489: PRB: Error 53 &quot;File Not Found&quot; When Calling a DLL Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178489/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178489/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178489/","publisher":null,"image":null,"headline":"Q178489: PRB: Error 53 &quot;File Not Found&quot; When Calling a DLL Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178489-prb-error-53-file-not-found-when-calling-a-dll-function">Q178489: PRB: Error 53 "File Not Found" When Calling a DLL Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178489
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 5.0,6.0
+Operating System(s): 
+Keyword(s): kbnokeyword kbAPI kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 10-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message displays when you attempt to call a function in a
+dynamic-link library (DLL) file from Visual Basic:
+
+  Error 53 "File Not Found"
+
+The error message occurs at the function call statement.
+
+CAUSE
+=====
+
+This message occurs when Windows is unable to load the specified DLL,
+particularly if the DLL has not been saved at the specified location. It will
+also occur if the dependency files required by the DLL file are not installed in
+the computer.
+
+RESOLUTION
+==========
+
+Install the dependency files required by the DLL file.
+
+MORE INFORMATION
+================
+
+There are a several available tools that will help you determine the dependency
+files for a DLL file:
+
+1. The Dependency Walker on the Platform Software Development Kit (SDK) will
+  display dependencies in a graphical form. In fact, if you use Depends on a
+  machine where this problem occurs, the missing DLL is displayed with a red
+  circle, making it easy to determine what the trouble lies.
+
+  You can obtain the Dependency Walker (Depends.exe) from the Platform SDK
+  CD-ROM that comes with the MSDN. It can also be downloaded from the following
+  Microsoft Web site:
+
+  http://www.microsoft.com/msdownload/platformsdk/setuplauncher.asp
+
+2. The QuickView utility that ships with Windows NT 4.0 shows the dependency
+  files required by a selected DLL file. The QuickView utility can be installed
+  from the Windows NT Setup tab of the Add/Remove Programs Properties dialog
+  box in the Control Panel.
+
+  NOTE: The Windows 95 version of QuickView does not provide this functionality.
+
+3. DUMPBIN.EXE is a utility that ships with Microsoft Visual C++ that can also
+  tell what are the required dependency files required by a DLL file. Use this
+  command line utility with the /import parameter to determine the dependency
+  files.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbAPI kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q139075: BUG: MF4024/MF1005 Generated for Serial Communication Settings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q139075: BUG: MF4024/MF1005 Generated for Serial Communication Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/139/Q139075/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/139/Q139075/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/139/Q139075/","publisher":null,"image":null,"headline":"Q139075: BUG: MF4024/MF1005 Generated for Serial Communication Settings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q139075-bug-mf4024mf1005-generated-for-serial-communication-settings">Q139075: BUG: MF4024/MF1005 Generated for Serial Communication Settings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q139075
+Product(s): Microsoft C Compiler
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, Macintosh Cross-Development Addon, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using serial communications to transfer or debug code between a PC and a
+Macintosh, you may see this error:
+
+  warning MF4024: communications settings incomplete fatal error MF1005: comm
+  initialization failed
+
+CAUSE
+=====
+
+MFILE expects both the Macintosh zone and Macintosh name parameter defined even
+when using the serial line to communicate.
+
+RESOLUTION
+==========
+
+Enter the Macintosh AppleTalk zone and the Macintosh name under the Macintosh
+Network (AppleTalk) Settings dialog box. To find it, on the Tools menu, click
+Options, and then click the Debug tab. Click Connection, and then click Settings
+under the Macintosh Platform/Network. Then click (AppleTalk) Connection.
+
+If you do not have an AppleTalk zone or a Macintosh name, enter an imaginary
+name. Be sure to select the Serial Connection before closing the Connection
+dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+MFILE is a Windows NT utility shipped with the Macintosh edition of Visual C++
+2.0. It is used to communicate between a Macintosh and a Windows NT system for
+basic file transfer and control operations. It is invoked by the IDE (Integrated
+Development Environment) when the executable for a Macintosh target is built for
+transferring the executable to the Macintosh. It can be invoked manually through
+the MS-DOS prompt as well. The communication settings are obtained from the
+Registry, which is set through the IDE Connection Dialog box (see the
+"Resolution" section of this article).
+
+If the Macintosh zone and name are not specified through the IDE Connection
+dialog box, you can specify them using the /Z and /N parameters, as in this
+example:
+
+  mfile copy /z MyZone /n MacName ":MyHD:MyFolder:MyMacFile" MyPCFile
+
+REFERENCES
+==========
+
+Appendix E: MFILE Technical Reference of the 68K Programmer's Guide.
+
+Additional query words: mac
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev200Mac
+Version           : 2.0
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

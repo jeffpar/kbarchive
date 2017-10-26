@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81207: WD97: Printing a Range of Pages in a Multiple-Section Document | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81207: WD97: Printing a Range of Pages in a Multiple-Section Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81207/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81207/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81207/","publisher":null,"image":null,"headline":"Q81207: WD97: Printing a Range of Pages in a Multiple-Section Document","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81207-wd97-printing-a-range-of-pages-in-a-multiple-section-document">Q81207: WD97: Printing a Range of Pages in a Multiple-Section Document</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81207
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbualink97 winword word97 kblayout
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In Word, you can create a multiple-section document with different page
+numbering in each section. To specify a page or a range of pages to print, you
+must supply both the page and section number of the range you want to print. In
+a multiple-section document that contains more than a single page 1, Word cannot
+determine which "page 1" to print unless you also supply a section number.
+
+To print a range of pages within a nonadjacent section or across sections, use
+the following syntax in the Pages box:
+
+  p&lt;page number&gt;s&lt;section number&gt;-p&lt;page number&gt;s&lt;section
+  number&gt;
+
+For example, to print page 5 of section 3 through page 2 of section 4, type
+"p5s3-p2s4" (without the quotation marks).
+
+To print nonadjacent pages or nonadjacent sections, type the page and section
+numbers, separated by commas (,). For example, to print sections 3 and 5 (not
+section 4), type "s3,s5" (without the quotation marks). To print pages 2 through
+5 of section 3 and pages 1 through 4 of section 5, type "p2s3-p5s3,p1s5-p4s5"
+(without the quotation marks).
+
+For more information, choose the Help button in the Print dialog box and then
+select the "Setting Printing Options" topic.
+
+MORE INFORMATION
+================
+
+The steps to print a page or range of pages in Word are detailed below.
+
+1. Scroll to the page where you want to start printing, and click anywhere
+  within the margins.
+
+2. Note the page and section number as shown on the status bar as in the
+  following example:
+
+  Page 2 Sec 4
+
+3. Scroll to the last page you want to include in the print selection, and click
+  anywhere within the margins.
+
+4. Note the page and section number displaying on the status bar as in the
+  following example:
+
+  Page 1 Sec 5
+
+5. On the File menu, click Print.
+
+6. Under Page Range, select the Pages Option and then type the following in the
+  box:
+
+  2S4-1S5
+
+7. Click OK.
+
+Additional query words: wrong skipped skips left out incorrect contiguous discontiguous non-contiguous
+
+======================================================================
+Keywords          : kbualink97 winword word97 kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

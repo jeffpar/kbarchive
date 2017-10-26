@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128233: Comparison of Windows NT Network Protocols | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128233: Comparison of Windows NT Network Protocols" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128233/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128233/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128233/","publisher":null,"image":null,"headline":"Q128233: Comparison of Windows NT Network Protocols","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128233-comparison-of-windows-nt-network-protocols">Q128233: Comparison of Windows NT Network Protocols</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128233
+Product(s): Microsoft Windows NT
+Version(s): 3.1 3.5
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation version 3.5 
+- Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article on Windows NT protocols is a copy of an article published
+in Microsoft's "Premier Showing" newsletter.
+
+MORE INFORMATION
+================
+
+Comparison of Windows NT Network Protocols
+
+Overview
+--------
+
+Microsoft provides three transport drivers (i.e., protocols) with Windows NT 3.5:
+TCP/IP, NWLink, and NBF. Windows NT 3.5 also ships with the DLC protocol, which
+does not provide transport layer services. In this article the terms TCP/IP,
+NWLink and NBF refer to the Windows NT transport drivers that implement the
+Internet TCP/IP, Novell SPX/IPX and IBM NetBEUI network protocol suites,
+respectively. This article compares these protocols as implemented in the
+Windows NT 3.5 transport drivers, to assist users in selecting the appropriate
+protocol(s) for their network.
+
+Since each customer will be concerned with a different set of protocol
+characteristics, this article does not recommend which protocol customers should
+use. Instead, it discusses the merits of each, thereby enabling customers to
+make the best choice for their environment. Microsoft will continue to support
+these three protocols, today and in the long term.
+
+Windows NT installs NWLink by default, primarily because IPX is the most common
+protocol in PC networks and it has relatively simple configuration requirements.
+However, administrators can modify setup.inf files to install other protocols by
+default. This default setting does not imply preference of NWLink over TCP/IP or
+NBF.
+
+NOTE: In the Windows NT 3.51 release, TCP/IP is now installed by default.
+
+Customers should generally use the minimum protocols necessary, because multiple
+protocols usually result in the following:
+
+- Higher memory requirement for clients.
+
+- More complex client configuration and network administration.
+
+- Higher support and software license costs.
+
+Windows NT Transport Driver Architecture
+----------------------------------------
+
+The Network Basic Input/Output System (NetBIOS) standard, which was originally
+developed for IBM by Sytek in 1983 defines two entities:
+
+- A Session Layer interface that is a standard API for user applications to
+  submit network I/O and control directives to underlying network protocol
+  software. NetBIOS commands are submitted via Network Control Blocks (NCBs).
+
+- A session management/data transport protocol called NetBIOS Frames Protocol
+  (NBFP). NBFP functions at the Session and Transport Layers to perform the
+  network I/O to accommodate the NetBIOS interface command set.
+
+An application program that uses the NetBIOS interface API for network
+communication can operate on any transport driver that exposes the NetBIOS
+interface. Transport drivers that do not implement NBFP (e.g., TCP/IP and IPX)
+must expose the NetBIOS interface and have a means of mapping each NetBIOS
+interface command to some sequence of their own native network frames and
+protocols.
+
+Unlike the 16 bit Windows, MS DOS and OS/2 versions of Microsoft Network
+software, Windows NT transport drivers do not expose the NetBIOS interface;
+instead, they expose the more flexible Transport Driver Interface (TDI). Windows
+NT includes a NetBIOS Emulator to map NetBIOS commands to TDI commands and
+events. Internal Windows NT network components use TDI commands and events,
+rather than NetBIOS commands, to communicate with underlying transport drivers.
+
+The TDI clients require support for NetBIOS address format and message mode data
+transfer. NBF supports this natively through NBFP. Transports that do not
+include NBFP implement a NetBIOS compatibility layer to resolve NetBIOS format
+addresses to the transport's native address format, and to implement message
+mode data transfer over the transport's native data transfer protocol.
+
+Windows NT transport drivers provide the services defined in several layers of
+the OSI Reference Model: Some Session Layer services; all Transport and Network
+Layer services; and the services of the LLC sub layer of the Data Link Layer.
+This constitutes all services between the TDI and the Network Driver Interface
+Specification 3.0 (NDIS) interface. All Windows NT transport drivers except DLC
+export the TDI interface at their upper edge for communication with TDI client
+applications, such as the Windows NT redirector and server. They export the NDIS
+interface at the lower edge for communication with the underlying network
+interface card (NIC) driver.
+
+Background on Windows NT Transport Drivers
+------------------------------------------
+
+NBF (NetBEUI)
+
+IBM first introduced the NetBIOS Extended User Interface (NetBEUI) protocol
+specification in 1985. It is optimized for departmental LANs or LAN segments.
+The Windows NT NetBEUI Frame (NBF) transport driver implements the IBM NetBEUI
+3.0 specification, and is completely compatible with the NetBEUI shipped with
+past Microsoft networking products. NBF implements NBFP, and therefore requires
+no NetBIOS compatibility layer.
+
+TCP/IP
+
+Windows NT includes an implementation of the Transmission Control
+Protocol/Internet Protocol (TCP/IP). In general usage, the term TCP/IP refers to
+a suite of protocols that includes TCP, UDP, IP, ICMP, and ARP. Since TCP/IP is
+available for many diverse operating systems such as UNIX, MVS, VM, VMS, NetWare
+and OS/2, Windows NT can use TCP/IP to communicate with these different
+operating systems. TCP/IP also provides compatibility with the global Internet.
+TCP/IP is Microsoft's strategic protocol for scaleable Windows-based networking.
+The Windows NT TCP/IP transport driver includes TCP, UDP, IP, ICMP, ARP and NBT.
+Microsoft completely redesigned the TCP/IP transport driver in Windows NT 3.5,
+providing many enhancements over the Streams based TCP/IP transport driver in
+Windows NT 3.1. The NetBIOS compatibility layer for TCP/IP is NetBIOS over
+TCP/IP (NetBT in Windows NT 3.5; NBT in Windows NT 3.1).
+
+NWLink (IPX)
+
+Novell NetWare currently has the largest market share among PC based network
+operating systems. NetWare's native Network Layer protocol is IPX, a Novell
+proprietary descendant of the Xerox XNS protocol. Microsoft implements the lower
+level NetWare protocols in the NWLink transport driver, which includes IPX, SPX,
+RIPX and NBIPX. The NetBIOS compatibility layer for NWLink is NetBIOS over IPX,
+also known as NBIPX (NwLnkNb in Windows NT 3.5; NWNBLink in Windows NT 3.1).
+
+Comparing Transport Driver Characteristics
+------------------------------------------
+
+This section compares the Windows NT transport drivers in each of the following
+areas:
+
+- Industry acceptance and experience
+
+- Open or proprietary specifications
+
+- Interoperability
+
+- Simplicity of configuration and administration
+
+- Network segmentation
+
+- Routing capabilities
+
+- Name registration and resolution requirements
+
+- Network traffic
+
+- Network status reporting
+
+- Memory requirements
+
+- Performance
+
+- Application programming support
+
+As mentioned previously, the customer's computing environment will determine
+which protocol characteristics are desired, and which are most important. The
+applicability and importance of the foregoing characteristics will be dependent
+upon factors such as the following:
+
+- Size of the network
+
+- Single or multiple locations
+
+- Homogeneous or heterogeneous nodes
+
+- Internet connectivity requirements
+
+- Application programming requirements
+
+- Size and expertise of support staff
+
+Industry Acceptance and Experience
+
+The more popular protocols have a larger based of experienced support and design
+engineers. In late 1994 Sage Research, Inc. performed a study of router based
+LAN backbones with at least 250 nodes in Fortune 500 companies. Their study
+concluded that TCP/IP is used on 95% of all such networks, while SPX/IPX is used
+on 87%.
+
+- NetBEUI usage is limited primarily to Microsoft and IBM PC network
+  environments.
+
+- TCP/IP is widely accepted, established and understood, especially in UNIX and
+  non PC networks. It is the protocol of the global Internet.
+
+- SPX/IPX is the most popular protocol in PC network environments.
+
+Open or Proprietary Specifications
+
+Open protocol specifications enable programmers to obtain all the information
+necessary to develop their own protocol drivers without paying license fees.
+
+- NetBEUI is a proprietary specification owned by IBM. However, IBM makes this
+  specification available to developers.
+
+- TCP/IP is an open specification. Anyone can easily obtain RFCs for
+  implementing the TCP/IP protocols. Anyone can also submit RFCs to the
+  Internet Engineering Task Force (IETF) for consideration.
+
+- SPX/IPX is a proprietary specification owned by Novell, which can make it
+  difficult to obtain specifications for the upper layers like NCP. However,
+  Novell has made the new SPX II specification available.
+
+Interoperability
+
+The availability of a protocol on a variety of operating systems and hardware
+platforms provides the advantage of interoperability. Windows NT provides native
+support for NetBEUI, TCP/IP and SPX/IPX through the NBF, TCP/IP and NWLink
+transport drivers.
+
+- NetBEUI is limited almost exclusively to Microsoft and IBM PC networks:
+  Microsoft LAN Manager, Windows NT, Windows for Workgroups; LAN Manager for
+  UNIX; and IBM PCLAN and LAN Server environments.
+
+- TCP/IP is available on a wide variety of operating systems such as Windows
+  NT, UNIX, NetWare, VMS, VM, MVS, MS DOS, Macintosh, and OS/2. It is the
+  protocol of the global Internet. NetWare/IP will enable NetWare customers to
+  run TCP/IP-only networks, accessing NetWare services without requiring
+  SPX/IPX. However, NetWare/IP is not native IP for NetWare; it emulates the
+  IPX stack to NCP, which still requires an underlying IPX (or emulated IPX)
+  layer. In comparison, Windows NT provides true protocol independent
+  networking, running SMBs over its transport drivers without emulation
+  requirements.
+
+- IPX is the native protocol of Novell NetWare. However, SPX/IPX is also
+  available on other operating systems: Microsoft provides NWLink for Windows
+  NT; TGV provides IPX for DEC VMS; Novell offers IPX on UnixWare.
+
+Simplicity of Configuration and Administration
+
+Administrators of any size network desire simplicity of client configuration and
+network administration. Large sites have many clients to configure, while small
+sites may not have sufficient support personnel. All three protocols are self
+tuning in their Windows NT 3.5 implementation. However, Microsoft exposes
+certain tuning parameters for manual configuration in special situations.
+
+- NBF requires little or no initial configuration or network administration.
+
+- TCP/IP is potentially difficult to configure due to the relative complexity
+  of its multi part naming scheme, and the fact that a default gateway (router)
+  must be identified for each station. To reduce the client configuration
+  burden, Windows NT 3.5 supports the Dynamic Host Configuration Protocol
+  (DHCP), an open standard that transparently provides dynamic negotiation of
+  client configuration. DHCP clients require no manual IP configuration, and
+  administrators do not have to manually assign IP addresses. However, DHCP
+  does require proper planning and administration of DHCP servers.
+
+- NWLink requires little or no initial client configuration on small non routed
+  networks. The node ID component of the IPX address is simply the six byte MAC
+  address of the NIC. This simple node ID eliminates the need for manual client
+  configuration. Configuring a server's external and internal networks is more
+  complex, however.
+
+Network Segmentation
+
+Administrators of large networks desire the ability to differentiate between
+multiple interconnected networks. Hierarchical network addresses provide the
+ability to manage a hierarchy of subnetworks within networks, allowing smarter
+forwarding and security. Creating smaller segments with fewer stations produces
+more manageable networks with reduced traffic levels. This ability may not be
+critical for small networks.
+
+- NetBEUI uses a single part naming scheme, and therefore has no facility for
+  differentiating between multiple interconnected networks.
+
+- TCP/IP uses a multi part naming scheme that allows very large multi location
+  networks to be logically segmented into multiple levels of subnets. Network
+  administrators can use the network ID component of the IP address in
+  conjunction with a subnet mask to configure and manage subnetworks within
+  subnetworks. IP uses subnetworks to logically segment large networks into
+  separate, smaller interconnected subnetworks.
+
+- IPX uses a simple two part naming scheme that allows large multi location
+  networks to be logically segmented into multiple subnets. However, the IPX
+  network ID is not hierarchical; it does not divide into subcomponents.
+
+Routing Capabilities
+
+Multi location networks require routing capabilities, while single location
+networks have little use for such capabilities. Routable protocols do not
+generally allow broadcast packets to traverse routers, thereby reducing network
+congestion. Both IP and IPX are natively routable; they do not require
+encapsulation for routing. Both employ interior gateway protocols (IGPs) to
+exchange routing information among routers within an autonomous network (i.e., a
+group of nodes controlled by a single administrative authority). One of the most
+common IGPs is the Routing Information Protocol (RIP), which uses a vector
+distance algorithm to determine optimum routes. The RIP implementations used in
+IP and IPX are based upon the XNS RIP developed by Xerox Corporation's Palo Alto
+Research Center (PARC).
+
+- NetBEUI is not routable. NBF does support a simple form of routing known as
+  Token ring Source Routing, offered only on Token Ring networks. However,
+  source routing is not actually implemented at the OSI Network Layer.
+
+- TCP/IP packets are routeable by third-party routers that use RIP, IGPs such
+  as Cisco Systems' Interior Gateway Routing Protocol (IGRP), or IETF's Open
+  Shortest Path First (OSPF) protocol, even though Windows NT itself does not
+  understand these protocols. However, if MPR is installed, Windows NT uses
+  RIP. You may configure Windows NT as a static TCP/IP router by checking the
+  Enable IP Routing check box in Control Panel. Dynamic routing must be
+  implemented with third party routers.
+
+- Windows NT cannot act as an IPX router, but IPX provides full inter network
+  routing support. NWLink uses Routing Information Protocol over IPX (RIPX) to
+  implement route and router discovery services used by SPX and NBIPX. When
+  NWLink loads, it sends out a RIPX request for a network number to be used for
+  addressing at the IPX level. NetWare servers respond with a RIP packet
+  containing the network number of the local network. If there is no RIPX
+  response, NWLink uses 0 for the network number and indicates that the IPX
+  packet is for the local subnet.
+
+Name Registration and Resolution Requirements
+
+Name resolution requirements impact the simplicity of client configuration and
+network administration. The methods of name registration and resolution impact
+the amount of broadcast or multicast activity present on the network, discussed
+later in the section on network traffic.
+
+NetBIOS Name Registration
+
+All transport drivers must register NetBIOS names to ensure that each name is
+unique.
+
+NetBIOS Name Resolution
+
+Application Layer names (NetBIOS and Sockets host names) must ultimately resolve
+to Data Link Layer (MAC) addresses. Transport drivers that do not process
+NetBIOS names natively have an intermediate name resolution step at the Network
+Layer, where the NetBIOS names resolve to the transport's native address
+format.
+
+- NBF uses NetBIOS names natively, then resolves them to MAC addresses.
+
+- In TCP/IP, NetBT resolves NetBIOS names to IP addresses, which then resolve
+  to MAC addresses via ARP cache or broadcast.
+
+- In NWLink, NBIPX resolves NetBIOS names to IPX addresses. IPX addresses
+  contain the MAC address as the host ID, so IPX requires no further
+  resolution.
+
+Sockets Host Name Resolution
+
+For Windows Sockets applications, TCP/IP resolves host names to IP addresses,
+which then resolve to MAC addresses.
+
+Network Traffic
+
+The method of name registration and resolution often impacts the amount of
+broadcast or multicast (limited broadcast) activity present on the network.
+Broadcast and multicast activity uses network bandwidth on the local segment and
+on all bridged segments, and consumes processing cycles on every network station
+the same protocol. Protocols with a high level of broadcast or multicast
+activity are not generally well suited for large networks.
+
+Name Registration Broadcasts
+
+NetBIOS names must be registered to ensure that each name is unique. All
+transport drivers use broadcast, with one exception. In TCP/IP, WINS clients
+send directed name registration request to the WINS server. Non WINS clients may
+use WINS proxy agent for name resolution, but rely on broadcast for name
+registration. The MS DOS WINS clients send directed name resolution requests to
+the WINS server, but rely on broadcast for name registration.
+
+Name Resolution Broadcasts
+
+Name resolution may be accomplished by broadcast, cached mappings, lookup in a
+local mapping file or query a name service.
+
+- NBF does not cache NetBIOS names that have already been resolved to MAC
+  addresses. NBF also does not use a mapping file or name service. Therefore,
+  NBF will generate multicast activity each time a link to another station is
+  re established.
+
+- TCP/IP in Windows NT 3.5 provides many options for name resolution, resulting
+  in few broadcasts if configured properly. For NetBIOS name resolution, TCP/IP
+  can use cache, LMHOSTS lookup, WINS query, broadcast, DNS query and HOSTS
+  lookup. For host name resolution, TCP/IP can use all of these methods except
+  cache. Regardless of the method used for resolving NetBIOS and host names, IP
+  must resolve IP addresses to MAC addresses. This final resolution stage is
+  accomplished by ARP cache or ARP broadcast.
+
+- NWLink uses broadcast to resolve names to addresses. However, NWLink reduces
+  name resolution broadcast activity by caching NetBIOS name to IPX address
+  mappings. NWLink does not use an address mapping file or name service. A
+  future version may implement a name service similar to WINS or DNS.
+
+Router Broadcasts
+
+NetBEUI is not routable, and therefore has no impact on router broadcasts.
+Dynamic IP and IPX routers maintain routing tables by issuing a RIP broadcast on
+every port at regular intervals. IP broadcasts every 30 seconds; IPX, every 60
+seconds. All NetWare file servers are inherently routers, and therefore issue
+RIP broadcasts. IP RIP allows for active or passive participants. Active
+participants issue RIP broadcasts; passive or silent participants only listen.
+IP routers are active whereas IP hosts are typically passive. Unfortunately, IP
+RIP does not communicate with IPX RIP, resulting in redundant RIP broadcasts on
+networks running both IP and IPX.
+
+SAP Broadcasts
+
+IPX servers use the Service Advertising Protocol (SAP) to automatically notify
+other IPX nodes of their presence and the services they provide. IPX servers,
+but not routers, issue SAP broadcasts every 60 seconds. Clients use SAP to
+determine what network resources are available. These SAP broadcasts may cause
+congestion on networks with numerous services, especially over WAN links. NWLink
+does not issue SAP broadcasts.
+
+To address this problem on NetWare, Novell implemented SAP filters and the
+NetWare Link Service Protocol (NLSP) in its Multiprotocol Router (MPR) with
+NetWare 4.x. NLSP couples OSPF-based route information with Novell's SAP
+functions, substantially reducing the overhead traffic commonly generated by RIP
+and SAP.
+
+DHCP Broadcasts
+
+DHCP will greatly simply IP client configuration. However, DHCP will slightly
+increase network traffic. DHCP accomplishes client configuration negotiation
+through broadcast. Once the client accepts the IP address offered by the DHCP
+server, all activity is by directed packets. Since DHCP servers act
+autonomously, there is no replication traffic between DHCP servers.
+
+WINS Replication
+
+WINS can significantly reduce name query broadcasts. However, WINS will introduce
+network traffic for replication among multiple WINS servers. If configured
+properly, this replication traffic will be minimal and the net effect will be
+reduced network traffic.
+
+Network Status Reporting
+
+- NBF does not provide any information about the state of the network.
+
+- TCP/IP routers use ICMP to notify the source that errors have been
+  encountered, such as Destination Unreachable, Source Quench, etc.
+
+- IPX does not provide any information about the state of the network. IPX has
+  no internet control management protocol, such as TCP/IP's ICMP. An IPX router
+  has no way to indicate to a sending station that a destination is
+  unreachable, that it should decrease its transmission rate, etc.
+
+Memory Requirements
+
+Network administrators generally desire a small memory footprint, especially on
+clients. Protocol memory requirements are typically a characteristic of the
+transport driver implementation rather than the protocol itself.
+
+- NBF has relatively small memory usage.
+
+- TCP/IP and IPX have similar memory usage requirements, but require more than
+  NBF.
+
+Performance
+
+Protocol performance is typically dependent upon the efficiency and tuning of the
+transport driver implementation rather than the protocol itself.
+
+- NBF is tuned for small LAN communication, and therefore is very fast. Its
+  performance across WANs is poor.
+
+- TCP/IP is not as fast as NBF on small LANs. The TCP/IP driver in Windows NT
+  3.1 was significantly slower than NBF on a local area network. However, the
+  re designed TCP/IP in Windows NT 3.5 is only slightly slower than NBF.
+
+- NWLink is not as fast as NBF on small LANs. The NWLink driver in Windows NT
+  3.1 was significantly slower than NBF on a local area network. However, the
+  re designed NWLink in Windows NT 3.5 is only slightly slower than NBF.
+
+- IPX/SPX protocols have some significant performance limitations in a routed
+  (wide-area) network, which is why Novell has been modifying them with "packet
+  burst" and "SPX II" changes.
+
+- IPX is only slightly faster than TCP/IP for file and print operations, and
+  only slightly slower than TCP/IP for application services.
+
+Application Programming Support
+
+- NBF enables NetBIOS, Named Pipes, Mailslot, NetDDE, RPC over NetBIOS, and RPC
+  over Named Pipes programming using NBFP. NBF does not support Sockets or RPC
+  over Sockets programming.
+
+- TCP/IP enables Sockets and RPC over Sockets application programming over TCP
+  and UDP. TCP/IP also enables NetBIOS, Named Pipes, Mailslot, NetDDE, RPC over
+  NetBIOS and RPC over Named Pipes programming over NBT.
+
+- IPX enables Sockets and RPC over Sockets application programming over SPX and
+  IPX. IPX also enables NetBIOS, Named Pipes, Mailslot, NetDDE, RPC over
+  NetBIOS and RPC over Named Pipes programming over NBIPX. IPX supports Socket
+  IDs for use by Sockets applications and other applications that use IPX
+  directly. This direct hosting capability allows IPX to realize performance
+  advantages for small I/O by bypassing NBIPX and calling IPX directly.
+
+  API                    TCP/IP          NWLink          NBF
+  --------------------   -------------   -------------   ---
+  NetBIOS                Yes (NBT)       Yes (NBIPX)     Yes
+  Named Pipes            Yes (NBT)       Yes (NBIPX)     Yes
+  Mailslot               Yes (NBT)       Yes (NBIPX)     Yes
+  NetDDE                 Yes (NBT)       Yes (NBIPX)     Yes
+  Sockets                Yes (TCP/UDP)   Yes (SPX/IPX)   No
+  RPC over NetBIOS       Yes (NBT)       Yes (NBIPX)     Yes
+  RPC over Named Pipes   Yes (NBT)       Yes (NBIPX)     Yes
+  RPC over Sockets       Yes (TCP/UDP)   Yes (SPX/IPX)   No
+
+Other Considerations
+
+Users who wish to connect to the global Internet must obtain a network ID from
+InterNIC. The supply of unallocated IP addresses on the global Internet is
+rapidly declining. In an effort to address this problem the Internet Engineering
+Task Force (IETF) has formed IP Version 4 Address Lifetime Estimation (IPv4 ALE)
+working group to determine how much longer IPv4 can last. The IETF is also
+developing IP Version 6 (IPv6), also known as IP Next Generation (IPng), to
+replace the current IPv4. IPng increases the IPv4 addresses from four bytes (32
+bits) to sixteen bytes (128 bits). However, there is much controversy over
+IPng.
+
+Summary
+-------
+
+Characteristic             TCP/IP           NWLink           NBF
+
+----------------------------------------------------------------
+
+Industry Acceptance        Most popular,    Primary protocol Limited to IBM
+and Experience             especially in    in PC networks   &amp; Microsoft PC
+                          non PC networks                   networks
+---------------------------------------------------------------------------
+Open vs. Proprietary       Open             Proprietary      Proprietary,
+Specification                                                but published&lt;/H3&gt;
+Interoperability           Available on     Available on     Limited to IBM
+                          nearly every     many platforms   &amp; Microsoft PC
+                          platform                          networks
+---------------------------------------------------------------------------
+Simplicity of Client       Can be           Simple           Simple
+Configuration              difficult
+Simplicity of              Can be           Simple           Simple
+Administration             difficult
+Network Segmentation:
+
+  ------------------------------------------------------------------------
+  Differentiates          Yes              No               No
+  Between Networks
+  ------------------------------------------------------------------------
+  Hierarchy of Subnets    Yes              Yes              No
+  within Networks
+
+---------------------------------------------------------------------------
+Routing Capabilities       Native           Native           No
+Name Resolution Requirements:
+
+  ------------------------------------------------------------------------
+  Application Layer to    Resolves host    Resolves         Uses NetBIOS
+  Network Layer           or NetBIOS name  NetBIOS name     names natively
+                          to  IP address   to IPX address
+
+  ------------------------------------------------------------------------
+  Network Layer to        Resolves IP      IPX address      Resolves
+  Data Link Layer         address to MAC   contains MAC     NetBIOS name
+                          address          address          to MAC address
+---------------------------------------------------------------------------
+Network Traffic:
+  ------------------------------------------------------------------------
+  NetBIOS Name            WINS, Broadcast  Broadcast        Broadcast
+  Registration
+  ------------------------------------------------------------------------
+  NetBIOS Name            Cache, WINS,     Cache,           Multicast
+  Resolution              WINS Proxy,      Broadcast
+                          LMHOSTS,
+                          Broadcast,
+                          HOSTS, DNS
+  ------------------------------------------------------------------------
+  Router Broadcasts       Dynamic routers  Dynamic routers  N/A
+                          issue RIP        &amp; NetWare file
+                          broadcasts       servers issue
+                          every 30         RIP broadcasts
+                          seconds          every 60 seconds
+  ------------------------------------------------------------------------
+  SAP Broadcasts          N/A              IPX servers      N/A
+                                           issue SAP
+                                           broadcasts every
+                                           60 seconds.
+  ------------------------------------------------------------------------
+  DHCP Broadcasts         Client IP        N/A              N/A
+                          configuration
+                          negotiated via
+                          broadcast.
+  ------------------------------------------------------------------------
+  WINS Replication        Replication      N/A              N/A
+                          traffic when
+                          using multiple
+                          WINS servers
+---------------------------------------------------------------------------
+Network Status Reporting   Yes              No               No
+Performance:
+  ------------------------------------------------------------------------
+  Small LANs              Fast             Fast             Fastest
+  ------------------------------------------------------------------------
+  File and Print          Fast             Fastest          Fast
+  Operations
+  ------------------------------------------------------------------------
+  Application Services    Fastest          Fast             Fast
+---------------------------------------------------------------------------
+
+References
+----------
+
+- Windows NT 3.5 Concepts and Planning Guide, Chapter 2
+
+- Windows NT Server TCP/IP
+
+- Windows NT Server Solutions for NetWare Networks
+
+- Novell IPX Router Specification, Novell part number 107-000029-001
+
+- IBM LAN Technical Reference, IBM Publications, 39F9353, SC30-3383-03
+
+- Internetworking with TCP/IP, Volumes I and II, by Douglas E. Comer
+
+Additional query words: directhosting prodnt
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

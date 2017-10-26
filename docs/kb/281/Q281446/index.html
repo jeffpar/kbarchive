@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q281446: FIX: Access Violation with std::map::erase or std::set::erase | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q281446: FIX: Access Violation with std::map::erase or std::set::erase" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/281/Q281446/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/281/Q281446/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/281/Q281446/","publisher":null,"image":null,"headline":"Q281446: FIX: Access Violation with std::map::erase or std::set::erase","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q281446-fix-access-violation-with-stdmaperase-or-stdseterase">Q281446: FIX: Access Violation with std::map::erase or std::set::erase</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q281446
+Product(s): Microsoft C Compiler
+Version(s): 6.0 SP4
+Operating System(s): 
+Keyword(s): kbCPPonly kbSTL kbVC600 kbVC600fix kbDSupport kbVS600sp5fix
+Last Modified: 03-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft Visual C++, 32-bit Editions, version 6.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call the std::map::erase and std::set::erase member functions at the
+same time from multiple threads, an access violation may be generated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug has been fixed in Microsoft Visual Studio 6.0 Service Pack 5 (SP5).
+
+To download service pack 5, see the Visual Studio Product Updates page on the
+following Microsoft Web site at:
+
+  http://support.microsoft.com/support/servicepacks/VS/6.0/default.asp?sd=msdn
+
+MORE INFORMATION
+================
+
+The bug was introduced in Visual Studio 6.0 Service Pack 4 (SP4) when the bug
+that is documented in Q248477 was corrected:
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q248477 FIX: Deadlock Using STL Map or Set in Multithreaded Application
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code demonstrates the bug:
+
+  // Test.cpp
+  // Compiler option needed: /MT or /MD
+  #include &lt;windows.h&gt;
+  #include &lt;set&gt;
+
+  typedef std::set&lt;int&gt; TestSet;
+
+  DWORD WINAPI Worker( LPVOID )
+  {
+  TestSet set;
+  int g_cIters =4;
+
+      for( int i=0; i &lt; g_cIters; i++ )
+      {
+          int r = rand();
+          int j;
+
+          for( j=0; j &lt; r; j++ )
+          {
+          set.insert( j );
+          }
+
+          for( j=0; j &lt; r; j++ )
+          {
+              TestSet::iterator it = set.find( j );
+              set.erase( it );
+          }
+      } 
+
+      return 0;
+  }     
+        
+  void main()
+  {
+     
+      int cThreads = 10;
+
+      HANDLE  aThreads[10];
+
+      for( int i=0; i &lt; cThreads; i++ )
+      {
+          aThreads[i] = CreateThread( NULL, 0, Worker, NULL, 0, NULL );
+      }
+
+      WaitForMultipleObjects( cThreads, aThreads, TRUE, INFINITE );
+  } 
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCPPonly kbSTL kbVC600 kbVC600fix kbDSupport kbVS600sp5fix 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : :6.0 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

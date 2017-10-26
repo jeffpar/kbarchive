@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q160028: XADM: Adding Code Pages to Windows NT Server 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q160028: XADM: Adding Code Pages to Windows NT Server 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/160/Q160028/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/160/Q160028/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/160/Q160028/","publisher":null,"image":null,"headline":"Q160028: XADM: Adding Code Pages to Windows NT Server 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q160028-xadm-adding-code-pages-to-windows-nt-server-40">Q160028: XADM: Adding Code Pages to Windows NT Server 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q160028
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbsetup kbusage exc4 exc5 exc55
+Last Modified: 17-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT Server 4.0 does not install all the code pages that may be required
+by Microsoft Exchange Server in order to support message traffic and client
+connectivity.
+
+MORE INFORMATION
+================
+
+To add the code page(s):
+
+1. Use Windows Explorer to browse the Windows NT Server 4.0 compact disc.
+
+2. View the Langpack subdirectory.
+
+3. Select and right-click any of the available .inf files.
+
+4. Click Install.
+
+5. To verify that the code page has been successfully installed, in Control
+  Panel Keyboard, click Input Locales, or click the Locales tab on the Exchange
+  Server properties page.
+
+The following Readme.txt is included in the Langpack subdirectory.
+
+This directory contains files to add additional language support for Internet
+Explorer version 3.0 and Exchange Server version 4.0. To install these files,
+log on to an account with Administrator privilege, start the Windows NT Explorer
+and right-click on the .inf file named appropriately for the language or group
+of languages that you want to add support for. Then select the "Install" option
+from the menu. You will be prompted for your Windows NT CD. Some of the
+necessary files are in this directory (Langpack) and the remaining files are in
+the normal Windows NT distribution directories, I386.
+
+The following is a list of the .inf files and a brief explanation of the language
+support that they include.
+
+  Arabic.inf - Arabic code page conversion and NLS API support (No IE3 viewer
+  support)
+  Cyrillic.inf - Cyrillic based language support
+  European.inf - Latin based European language support
+  ExchSrvr.inf - All code page conversion tables for Exchange Server
+  Greek.inf - Greek language support
+  Hebrew.inf - Hebrew code page conversion and NLS API support (No IE3 viewer
+  support)
+  Japanese.inf - Japanese code page conversion, NLS API support and font
+  Korean.inf - Korean code page conversion, NLS API support and font
+  TChinese.inf - Traditional Chinese code page conversion, NLS API support and
+  font
+  Thai.inf - Thai code page conversions and NLS API support (No IE3 viewer
+  support)
+  Turkish.inf - Turkish language support
+  US_Eng.inf - US English language support
+  Vietnam.inf - Vietnamese code page conversions and NLS API support (No IE3
+  viewer support)
+
+You need to restart following installation of Japanese, Korean, and Traditional
+Chinese.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

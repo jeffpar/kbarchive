@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q218173: COMTI [MC_]ALLOCATE Hangs After Host Rejects SNA Server BIND Req | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q218173: COMTI [MC_]ALLOCATE Hangs After Host Rejects SNA Server BIND Req" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/218/Q218173/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/218/Q218173/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/218/Q218173/","publisher":null,"image":null,"headline":"Q218173: COMTI [MC_]ALLOCATE Hangs After Host Rejects SNA Server BIND Req","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q218173-comti-mc_allocate-hangs-after-host-rejects-sna-server-bind-req">Q218173: COMTI [MC_]ALLOCATE Hangs After Host Rejects SNA Server BIND Req</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q218173
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
+Operating System(s): 
+Keyword(s): kbsna300sp4fix kbsna400sp3fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A COM Transaction Integrator (COMTI) request may stop responding (hang) and fail
+to complete if the host rejects SNA Server's BIND request. Although this problem
+has been observed when using COMTI, this problem can occur with any APPC or CPIC
+application that attempts to allocate a conversation by setting rtn_ctl =
+AP_WHEN_CONWINNER_ALLOCATED (to request an LU6.2 conversation over a contention
+winner session).
+
+NOTE: The COMTI feature included in SNA Server 4.0, 4.0 SP1, and 4.0 SP2 only
+requests contention winner sessions.
+
+CAUSE
+=====
+
+The SNA Server was failing to de-queue a client allocation request for a
+contention winner session when the remote system rejects the request. This
+occurs only when the host has also initiated LU6.2 sessions to SNA Server where
+SNA Server is the contention loser.
+
+RESOLUTION
+==========
+
+SNA Server 4.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+WORKAROUND
+==========
+
+The problem can be avoided by correcting the host system configuration to
+prevent the SNA Server BIND request from being rejected. When this problem
+occurs, the host successfully establishes LU6.2 sessions where SNA Server is the
+contention loser, but rejects SNA Server requests to establish an LU6.2
+contention winner session.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 4.0.
+This problem was first corrected in SNA Server version 3.0 Service Pack 4 and
+SNA Server version 4.0 Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna300sp4fix kbsna400sp3fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400
+Version           : WINDOWS:4.0,4.0SP1,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

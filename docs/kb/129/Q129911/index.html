@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129911: Querying Macintosh Clients in Systems Management Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129911: Querying Macintosh Clients in Systems Management Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129911/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129911/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129911/","publisher":null,"image":null,"headline":"Q129911: Querying Macintosh Clients in Systems Management Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129911-querying-macintosh-clients-in-systems-management-server">Q129911: Querying Macintosh Clients in Systems Management Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129911
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.0
+Operating System(s): 
+Keyword(s): kbnetwork kbInventory kbsmsAdmin smsadmin smsinv
+Last Modified: 25-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a Macintosh client computer is not registered in the Macintosh Sharing Setup
+application, the Macintosh computer's name is not displayed in the Systems
+Management Server Administrator utility. This article describes a method of
+querying for all client computers detected by the Systems Management Server.
+
+MORE INFORMATION
+================
+
+In order to query all client computers without computer names in Systems
+Management Server:
+
+1. From the Systems Management Server Administrator Utility File menu, choose
+  Query.
+
+2. Select the &lt;Ad Hoc Query&gt; option from the Query field, then choose OK.
+
+3. Select Add OR.
+
+4. Select the SMSLocation attribute from the Identification group.
+
+5. Change the Operator to "is".
+
+6. Enter the following information in the Value field for a Systems Management
+  Server domain in which you want to query:
+
+  " &lt;Sitecode&gt;|&lt;Domain&gt;| " (without the quotation marks)
+
+7. Choose OK.
+
+8. Repeat steps 3 to 7 for each Systems Management Server domain to be queried.
+
+9. Choose OK.
+
+The query method above displays all Macintosh clients within the specified
+Systems Management Server domains that have blank name attributes. In Systems
+Management Server, the inventory agents for all clients (except Macintosh
+clients) require that all clients have an entry for their name attributes.
+
+The SMSLocation is defined as a concatenation of the client's site code, domain,
+and name delimited by the pipe (|) symbol. Therefore, only Macintosh clients
+will be returned using the above query.
+
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork kbInventory kbsmsAdmin smsadmin smsinv 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

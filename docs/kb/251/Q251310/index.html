@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q251310: HOWTO: Exit Windows from Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q251310: HOWTO: Exit Windows from Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/251/Q251310/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/251/Q251310/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/251/Q251310/","publisher":null,"image":null,"headline":"Q251310: HOWTO: Exit Windows from Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q251310-howto-exit-windows-from-visual-foxpro">Q251310: HOWTO: Exit Windows from Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q251310
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 03-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Knowledge Base articles Q110254 and Q109607 describe how to reboot or
+exit Microsoft Windows from within Microsoft FoxPro. These articles reference
+the use of Foxtools.Fll. The use of Foxtools.Fll is no longer needed in the
+Visual FoxPro product in order to call Win32 API functions. In addition, Windows
+NT and Windows 2000 cannot be shutdown, rebooted, or powered off without setting
+process token security to SE_SHUTDOWN_NAME and calling ExitWindowsEx().
+
+This article demonstrates how to directly call the Win32 ExitWindowsEx() API
+function to log off of, power off, reboot, or shut down the Windows operating
+system, as well as how to set the necessary process token security.
+
+MORE INFORMATION
+================
+
+The following code will shutdown any Windows machine. Note that if the platform
+I. D. returned from GetVersionEx() identifies the operating system as Windows NT
+or Windows 2000, the custom SetProcPrivilege() function is called to set the
+process token security before shutting down.
+
+Change the parameter passed in the first line of executable code to the
+appropriate #define value to logoff, shutdown, reboot, or power off.
+
+  *-- Define from Winnt.h
+  #DEFINE TOKEN_ADJUST_PRIVILEGES 0x0020
+  #DEFINE TOKEN_QUERY             0x0008
+  #DEFINE SE_PRIVILEGE_ENABLED    2
+
+  *-- Defines from Winbase.h
+  #DEFINE VER_PLATFORM_WIN32s             0
+  #DEFINE VER_PLATFORM_WIN32_WINDOWS      1
+  #DEFINE VER_PLATFORM_WIN32_NT           2
+
+  *-- Defines from WinUser.h
+  #DEFINE EWX_LOGOFF           0  &amp;&amp; Shuts down all processes running
+                                  &amp;&amp; in the security
+                                  &amp;&amp; context of the process that
+                                  &amp;&amp; called the ExitWindowsEx function.
+                                  &amp;&amp; Then it logs the user off.
+
+  #DEFINE EWX_SHUTDOWN         1  &amp;&amp; Shuts down the system to a point
+                                  &amp;&amp; at which it is safe to turn off the
+                                  &amp;&amp; power. All file buffers have been
+                                  &amp;&amp; flushed to disk, and all
+                                  &amp;&amp; running processes have stopped.
+
+                                  &amp;&amp; Windows NT/2000: The calling process
+                                  &amp;&amp; must have the SE_SHUTDOWN_NAME
+                                  &amp;&amp; privilege.
+
+  #DEFINE EWX_REBOOT           2  &amp;&amp; Shuts down the system and then
+                                  &amp;&amp; restarts the system.
+
+                                  &amp;&amp; Windows NT/2000: The calling process
+                                  &amp;&amp; must have the SE_SHUTDOWN_NAME
+                                  &amp;&amp; privilege.
+
+  #DEFINE EWX_POWEROFF         8  &amp;&amp; Shuts down the system and turns
+                                  &amp;&amp; off the power. The system must support
+                                  &amp;&amp; the power-off feature.
+
+                                  &amp;&amp; Windows NT/2000: The calling process
+                                  &amp;&amp; must have the SE_SHUTDOWN_NAME
+                                  &amp;&amp; privilege.
+
+  *-- Change EWX_SHUTDOWN to any of the above #define values to
+  *-- either logoff, shutdown, reboot, or power off.
+  DO ExitWindowsFox WITH EWX_SHUTDOWN
+
+  *----------------------------------
+  PROCEDURE ExitWindowsFox
+  *----------------------------------
+  	PARAMETERS ExitMode
+  	LOCAL iRc
+  	iRc = 0
+  	DECLARE ExitWindowsEx IN Win32Api INTEGER, INTEGER
+
+  	*-- Check the OS version, and call the SetPrivilege function if NT/Win2K
+  	liPlatform = GetPlatform()
+  	IF liPlatform != VER_PLATFORM_WIN32_NT  &amp;&amp; We can do whatever we wish
+  &amp;&amp; without worrying about security
+  		iRc = ExitWindowsEx(ExitMode, 0)
+  		IF ExitMode = EWX_LOGOFF OR ExitMode = EWX_POWEROFF
+
+  			*-- Necessary because VFP will not exit using
+  			*-- either of these parameters under Win9x.
+  			QUIT
+  		ENDIF
+  	ELSE  &amp;&amp; We have to set the process security
+  		iRc = SetProcPrivilege()
+  		IF iRc &lt;&gt; 0
+  			iRc = ExitWindowsEx(ExitMode, 0)
+  		ENDIF
+  	ENDIF &amp;&amp; liPlatform != VER_PLATFORM_WIN32_NT
+
+  *----------------------------------
+  PROCEDURE SetProcPrivilege
+  	*-- Sets the appropriate process privilege to allow shutdown on NT/Win2K
+  	*----------------------------------
+  	*-- Declare function to obtain current Process ID, needed to open the process
+  	*-- get the process token.
+  	LOCAL iRc
+  	iRc = 0
+  	DECLARE INTEGER GetCurrentProcessId IN kernel32.DLL
+  	DECLARE INTEGER OpenProcess IN Kernel32.DLL INTEGER, ;
+  		INTEGER, ;
+  		INTEGER
+  	DECLARE INTEGER OpenProcessToken IN AdvApi32.DLL INTEGER, ;
+  		INTEGER, ;
+  		INTEGER@
+
+  	*-- Declare function to retrieve a LUID for the necessary security
+  	*-- privilege.
+  	DECLARE INTEGER LookupPrivilegeValue IN AdvApi32.DLL STRING, ;
+  		STRING, ;
+  		INTEGER@ lsLuid
+
+  	*-- Declare function to adjust the process token privileges so that
+  	*-- we can shut down NT/Windows 2000
+  	DECLARE INTEGER AdjustTokenPrivileges IN AdvApi32.DLL INTEGER, ;
+  		INTEGER, ;
+  		STRING@ lsNewState, ;
+  		INTEGER, ;
+  		INTEGER, ;
+  		INTEGER
+
+  	liAccessToken = 0        &amp;&amp; Placeholder for the access token whose privileges we'll change
+  	lsLuidBuffer = SPACE(8)  &amp;&amp; Placeholder for LUID used to change access privileges
+  	lsName = SPACE(15)       &amp;&amp; Placeholder for computer name
+  	liBufferLen = 15         &amp;&amp; Placeholder for the computer name buffer length
+  	liLuid = 0
+  	liProc = 0
+  	liProc = GetCurrentProcessId()
+  	hProc = OpenProcess(2035711, 0, liProc)
+  	iRc = OpenProcessToken(hProc, BITOR(TOKEN_ADJUST_PRIVILEGES, TOKEN_QUERY), @liAccessToken)
+  	IF iRc &lt;&gt; 0
+  		IF iRc &lt;&gt; 0
+
+  			*-- "SeShutdownPrivilege" is the string value for the SE_SHUTDOWN_NAME value.
+  			LookupPrivilegeValue("", "SeShutdownPrivilege", @liLuid)
+  			lsLuidBuffer = LongToStr(liLuid) + CHR(0) + CHR(0) + CHR(0) + CHR(0)
+
+  			*-- Declare a string to hold the TOKEN_PRIVILEGES structure
+  			lsNewState = SPACE(16)
+
+  			*-- Fill in the structure
+  			lsNewState = LongToStr(1) + lsLuidBuffer + LongToStr(SE_PRIVILEGE_ENABLED)
+  			iRc = AdjustTokenPrivileges(liAccessToken, 0, @lsNewState, LEN(lsNewState), 0, 0)
+  			RETURN iRc
+  		ELSE
+  			RETURN iRc
+  		ENDIF
+  	ELSE
+  		RETURN iRc
+  	ENDIF
+  ENDPROC
+
+  *----------------------------------
+  PROCEDURE GetPlatform
+  	*----------------------------------
+  	LOCAL liPlatform, iRc
+  	liPlatform = 0
+  	iRc = 0
+
+  	DECLARE INTEGER GetVersionEx IN Win32Api STRING@
+
+  	*-- Declare a string to hold the OSVERSIONINFO structure
+  	lsOSVersionInfo = LongToStr(148) + SPACE(144)
+  	iRc = GetVersionEx(@lsOSVersionInfo)
+  	liPlatform = StrToLong(SUBSTR(lsOSVersionInfo, 17, 4))
+  	RETURN liPlatform
+  ENDPROC
+
+  *-- The following function converts a long integer to an ASCII
+  *-- character representation of the passed value in low-high format.
+  *----------------------------------
+  FUNCTION LongToStr
+  	*----------------------------------
+  	* Passed : 32-bit non-negative numeric value (lnLongval)
+  	* Returns : ascii character representation of passed value in low-high
+  	* format (lcRetstr)
+  	* Example :
+  	*   m.long = "999999"
+  	*   m.longstr = long2str(m.long)
+
+  	PARAMETERS lnLongval
+
+  	PRIVATE i, lcRetstr
+
+  	lcRetstr = ""
+  	FOR i = 24 TO 0 STEP -8
+  		lcRetstr = CHR(INT(lnLongval/(2^i))) + lcRetstr
+  		lnLongval = MOD(lnLongval, (2^i))
+  	NEXT
+  	RETURN lcRetstr
+
+  	*-- The following function converts a string in low-high format to a
+  	*-- long integer.
+  	*----------------------------------
+  FUNCTION StrToLong
+  	*----------------------------------
+  	* Passed:  4-byte character string (lcLongstr) in low-high ASCII format
+  	* Returns:  long integer value
+  	* Example:
+  	* m.longstr = "1111"
+  	* m.longval = str2long(m.longstr)
+
+  	PARAMETERS lcLongstr
+
+  	PRIVATE i, lnRetval
+
+  	lnRetval = 0
+  	FOR i = 0 TO 24 STEP 8
+  		lnRetval = lnRetval + (ASC(lcLongstr) * (2^i))
+  		lcLongstr = RIGHT(lcLongstr, LEN(lcLongstr) - 1)
+  	NEXT
+
+  	RETURN lnRetval
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Mike A.
+Stewart, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

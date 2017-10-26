@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q191039: HOWTO: Build an Internet Information Server Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q191039: HOWTO: Build an Internet Information Server Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/191/Q191039/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/191/Q191039/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/191/Q191039/","publisher":null,"image":null,"headline":"Q191039: HOWTO: Build an Internet Information Server Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q191039-howto-build-an-internet-information-server-application">Q191039: HOWTO: Build an Internet Information Server Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q191039
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbInternet kbVBp kbVBp600 kbWebClasses kbGrpDSASP kbDSupport kbCodeSnippet
+Last Modified: 25-APR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to build a Microsoft Internet Information Server
+(IIS) application in Visual Basic.
+
+MORE INFORMATION
+================
+
+Steps to Build a Simple IIS Application
+---------------------------------------
+
+1. Start Visual Basic. In the New Project dialog box, select IIS Application,
+  and then click Open.
+
+2. In the Project Explorer, select Project1 (Project1). In the Properties
+  window, modify the Name property to give your project a name. On the File
+  menu, click Save Project.
+
+  NOTE: You cannot continue to the next steps to import an HTML file until you
+  save the project.
+
+3. In the Project Explorer, click to expand the Designers folder. Right-click
+  WebClass1 (WebClass1.Dsr), and click View Object on the shortcut menu. The
+  WebClass designer window appears.
+
+4. Right-click the HTML Template WebItems folder, and click Add HTML Template to
+  add an HTML file to your project. By default, this HTML Template WebItem is
+  called Template1 in the WebClass designer window.
+
+  NOTE: If the xxx.htm file that you select is in your project's working
+  directory, the WebClass designer makes a copy of the xxx.htm file (named
+  xxx1.htm) and places it in the working directory of your project. xxx1.htm is
+  the HTML file that the WebClass designer makes changes to. If the xxx.htm
+  file that you select is not in the working directory of your project, the
+  WebClass designer places a copy of the file (with the same name) in the
+  working directory of your project.
+
+5. In the Project Explorer, right-click WebClass1 (WebClass1.Dsr), and click
+  View Code on the shortcut menu. Replace the WebClass Start event code with
+  the following code:
+
+        Private Sub WebClass_Start()
+           Set NextItem = Template1
+        end Sub
+
+  You use the NextItem property to shift processing from one WebItem to another
+  during a single request. This causes the Template1_Respond event to fire.
+
+6. Paste the following code in the Template1_Respond event:
+
+        Private Sub Template1_Respond()
+            Template1.WriteTemplate
+        End Sub
+
+  The WriteTemplate method sends the contents of Template1 to a client browser
+  window. (Template1 is the HTML file that you imported into the IIS
+  application.) If you do not put anything in this event, and you run the
+  project, the browser displays a blank page.
+
+7. Press the F5 key to run the project. The Project Properties dialog box
+  appears in Visual Basic. On the Debugging tab, make sure that Start component
+  is set to WebClass1, and then click OK. The WebClass designer prompts you to
+  create a Virtual Root, which is required in order to run the WebClass. After
+  you enter a name for the Virtual Root, click OK.
+
+8. The page that you created now appears in the browser. After you browse the
+  project, click End on the Run menu in Visual Basic. In the Project Explorer,
+  right-click WebClass1 (WebClass1.Dsr), and then click View Code on the
+  shortcut menu. Replace the Template1_Respond event code with the following
+  code to create a second example:
+
+     Private Sub Template1_Respond()
+     'Write a reply to the user.
+       With Response
+          .Write "<span class="nt">&lt;html&gt;</span>"
+          .Write "<span class="nt">&lt;body&gt;</span>"
+          .Write "<span class="nt">&lt;h1&gt;</span>WebClass1's Starting Page<span class="nt">&lt;/h1&gt;</span>"
+          .Write "<span class="nt">&lt;p&gt;</span>Response was created in the Template1_Respond event<span class="nt">&lt;/p&gt;</span>"
+          .Write "<span class="nt">&lt;/body&gt;</span>"
+          .Write "<span class="nt">&lt;/html&gt;</span>"
+      End With
+     End Sub
+
+9. Press the F5 key to run the project. After you browse the project, click End
+  on the Run menu in Visual Basic.
+
+10. On the Project menu in Visual Basic, click <span class="nt">&lt;Project</span> <span class="na">Name</span><span class="nt">&gt;</span> Properties.
+  On the General tab, select the following project properties check boxes for
+  optimal performance:
+
+   - Retain In Memory
+   - Unattended Execution
+   - Apartment Threaded for the Threading Model
+
+For additional information on these settings and other possible issues, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q186273 BUG: AV Running VB-Built Component in Multi-Threaded Environment
+
+REFERENCES
+==========
+
+For additional information on IIS Applications, see the following Microsoft
+Developer Network (MSDN) Web site:
+
+  http://msdn.microsoft.com/library/default.asp?URL=/library/devprods/vs6/vbasic/vbcon98/vbcondevelopingiisapplications.htm
+
+For additional information on WebClasses, click the article numbers below to view
+the articles in the Microsoft Knowledge Base:
+
+  Q189538 BUG: Need to Remove the "Me" References from WcDemo Sample
+
+  Q189539 INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
+
+  Q189540 PRB: Access Denied Error on WebClass Files
+
+  Q190252 HOWTO: Change the External HTML Editor
+
+  Q190253 INFO: VB6 Designers Do Not Work in VB5
+
+  Q191035 BUG: Changes to WebClass Templates Not Always Detected
+
+  Q191038 INFO: WebClass Initialize, BeginRequest, Terminate Events
+
+  Q191119 FIX: VB Classes Can Cause IIS to Have Access Violations
+
+  Q191125 BUG: Error Logging Could Have Problems in WebClass Designers
+
+  Q191187 PRB: Do Not Modify ASP File That Is Created by the WebClass Designer
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbVBp kbVBp600 kbWebClasses kbGrpDSASP kbDSupport kbCodeSnippet 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

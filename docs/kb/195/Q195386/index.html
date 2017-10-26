@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195386: PRB: C4786 After Porting from Version 5.0 to Version 6.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195386: PRB: C4786 After Porting from Version 5.0 to Version 6.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195386/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195386/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195386/","publisher":null,"image":null,"headline":"Q195386: PRB: C4786 After Porting from Version 5.0 to Version 6.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195386-prb-c4786-after-porting-from-version-50-to-version-60">Q195386: PRB: C4786 After Porting from Version 5.0 to Version 6.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195386
+Product(s): Microsoft C Compiler
+Version(s): WINNT:6.0
+Operating System(s): 
+Keyword(s): kbCompiler kbSTL kbVC600
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a project with Visual C++ 6.0 that compiles without a C4786
+warning in Visual C++ 5.0, you may receive C4786 warnings, sometimes followed
+by:
+
+  Fatal Error C1033: cannot open program database 'vc60.pdb'.
+
+RESOLUTION
+==========
+
+In Visual C++ 5.0, using the following
+
+     #pragma warning (disable : 4786)
+
+after including STL headers, disables the warning:
+
+  C4786:'identifier' : identifier was truncated to 'number' characters in the
+  debug information.
+
+However, this method does not disable all such warnings in Visual C++ version
+6.0. The occurrence of many C4786 warnings may result in the following:
+
+  C1033 error: cannot open program database 'vc60.pdb'.
+
+Use the pragma directive before you include any STL headers to disable the
+warnings.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+     // compile options required: /Zi /GX
+     #include &lt;iostream&gt;
+     #include &lt;string&gt;
+     #include &lt;map&gt;
+
+     // move this pragma before the includes above to disable the
+     //C4786 warnings
+     #pragma warning (disable : 4786)
+
+     int main () {
+        using namespace std;
+        map&lt;int,string&gt; m;
+        m[0] = "hello world";
+        cout &lt;&lt; m[0] &lt;&lt; endl;
+
+        return 0;
+     }
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+  Q122539 BUG: C4786 or C1067 Caused by Long Identifier and /Zi
+
+  Q167355 BUG: C4786 Warning Is Not Disabled with #pragma Warning
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbCompiler kbSTL kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch kbVCPE600 kbVCEE600 kbVCLE600
+Version           : WINNT:6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

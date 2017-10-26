@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89494: VHotKeyd.exe VxD Hot Keys in Windows 386 Enhanced Mode | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89494: VHotKeyd.exe VxD Hot Keys in Windows 386 Enhanced Mode" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89494/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89494/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89494/","publisher":null,"image":null,"headline":"Q89494: VHotKeyd.exe VxD Hot Keys in Windows 386 Enhanced Mode","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89494-vhotkeydexe-vxd-hot-keys-in-windows-386-enhanced-mode">Q89494: VHotKeyd.exe VxD Hot Keys in Windows 386 Enhanced Mode</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89494
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): kbfile kbsample kb16bitonly kbDDK
+Last Modified: 17-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+VHotKeyd.exe is a sample VxD that demonstrates the steps necessary to reflect a
+hot key into the system virtual machine. Some Windows-based applications
+implement shortcut ("hot") keys by establishing a Windows hook that scans the
+stream of keystrokes typed and responds to the hot key. While this technique
+works correctly within the Windows system virtual machine in 386 enhanced mode,
+the hot key will not be recognized while an MS-DOS virtual machine (VM) has the
+focus because the keystroke will not be visible to the Windows system virtual
+machine. In order to define a "global" hot key that is active even while an
+MS-DOS- based application is running, a virtual device (VxD) must be written to
+perform this task. This article describes the steps for writing such a VxD.
+
+MORE INFORMATION
+================
+
+VHotKeyd.exe sets up a global hot key through the VKD_Define_Hot_Key service.
+The hot key handler schedules a system-VM- specific event that will force the
+focus to the system VM through the System_Control service and force the
+keystroke into the system VM through the VKD_Reflect_Hot_Key service. Instead of
+the VKD_Reflect_Hot_Key service, you can use the VKD_Force_Keys service.
+However, in that case the hot key handler must explicitly call
+VKD_Cancel_Hot_Key_state. Furthermore, the hot key must be defined with the
+Local_key option and must be locally disabled for the system VM. The advantage
+of using VKD_Force_Keys is that the hot key is inserted into the VM's virtual
+keyboard buffer so that keystrokes submitted before the hot key will still be
+processed in the VM's context.
+
+In any case, a switch to the system virtual machine will not take place if one of
+the following is true:
+
+- The virtual machine being switched away from is in a critical section
+
+- The virtual machine runs exclusively.
+
+In these cases, VHotKeyd.exe uses the VKD_Force_Keys technique.
+
+
+The following files are available for download from the Microsoft Download
+Center:
+
+  Vhotkeyd.exe
+  (http://download.microsoft.com/download/winddk/samp58/1/W31/EN-US/Vhotkeyd.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbDDK 
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

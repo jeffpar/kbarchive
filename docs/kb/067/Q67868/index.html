@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q67868: SVAR: Program that Creates System Variables from Network Info | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q67868: SVAR: Program that Creates System Variables from Network Info" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/067/Q67868/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/067/Q67868/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/067/Q67868/","publisher":null,"image":null,"headline":"Q67868: SVAR: Program that Creates System Variables from Network Info","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q67868-svar-program-that-creates-system-variables-from-network-info">Q67868: SVAR: Program that Creates System Variables from Network Info</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q67868
+Product(s): Microsoft LAN Manager
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-JUL-2001
+
+SUMMARY
+=======
+
+The NETLOGON.CMD sample logon script for OS/2 LAN Manager version 1.01 contains
+system variables %1 - %4. Useful in the creation of global logon scripts, the
+variables return these values when included in a script:
+
+  Value      Description
+  -----      -----------
+
+  %1         the username of the user logging on
+  %2         the computer name of the Netlogon server validating
+             logons
+  %3         the sharename of the server directory that contains the
+             home directories
+  %4         the path of the user's home directory relative to %3
+
+These system variables are no longer supplied or supported in logon scripts in
+OS/2 LAN Manager version 2.00. This article explains other methods for getting
+the functionality they provided.
+
+MORE INFORMATION
+================
+
+You can obtain all of the %1 through %4 system variable information elements
+that were in OS/2 LAN Manager version 1.01 plus many additional information
+elements, in OS/2 LAN Manager version 2.00 by means of several API calls,
+including NetWkstaGetInfo() and NetUserGetInfo().The APIs are used in a sample
+program, SVAR.C.
+
+A Microsoft Software/Data Library article contains these files:
+
+ Filename       Description
+  --------       -----------
+
+  SVAR.C         SVAR source code
+  SVAROS2.CMD    OS/2 command file used to build SVAR-OS2.EXE
+  SVARDOS.BAT    MS-DOS batch file used to build SVAR-DOS.EXE
+  SVAR-OS2.EXE   OS/2 version of SVAR (~10K)
+  SVAR-DOS.EXE   MS-DOS version of SVAR (~29K)
+  SAMPLE.CMD     sample command logon script file that demonstrates
+                 how SVAR might be used in an OS/2 LAN Manager logon
+                 script
+
+To find SVAR in the Software/Data Library, search on the keyword SVAR, the Q
+number of this article, or S12868. SVAR was archived using the PKware
+file-compression utility.
+
+SVAR.C uses OS/2 LAN Manager APIs to obtain network information elements:
+
+- workstation's computer name (obtained from local LANMAN.INI file)
+
+- user's logon name (as specified at logon time)
+
+- workstation's default domain (obtained from local LANMAN.INI file)
+
+- user's preferred logon server (from user's account -- if specified)
+
+- user's home directory (from user's account -- if specified)
+
+It creates a temporary .BAT (MS-DOS) or .CMD (OS/2) file in the local
+environment's %TEMP% directory, appends each information element to a "SET
+&lt;varname&gt; =" string and writes them to a temporary file that can be run
+whenever the elements are needed as local system variables. For example, the
+temporary batch file can be called from your logon script to set the requested
+system variables for use further down in the logon script (see SAMPLE.CMD).
+
+Usage
+-----
+
+   {os2}
+
+svar-dos [-c [Computer varname]] [-u [User varname]]
+           [-d [Default domain varname]] [-s [Preferred server varname]]
+           [-h [Home directory varname]] [-f Temporary file name]
+
+You can provide any combination of the -c, -u, -d, -s, and -h flags (at least one
+is required), or you can follow any of the indicated flags with a local system
+variable name that you want used in the "set &lt;varname&gt; =" string instead
+of these standard information element names:
+
+  -c  COMPUTER
+  -u  USER
+  -d  DOMAIN
+  -s  SERVER
+  -h  HOME
+
+By default, the filename for the temporary file is "$x$x$x$x". You can designate
+a different filename by using the -f parameter (see the usage listed above).
+
+Example
+-------
+
+  svar-dos -c -u USERNAME -d -h HOMEDIR -f tmpfile
+
+If the local workstation's computer name is TW301, the domain is SALES, the
+user's logon name is JOE, and JOE's home directory is \\SERVER1\HOME1, this
+command creates the following TMPFILE.BAT file in the %TEMP% directory:
+
+  SET COMPUTER=TW301
+  SET USERNAME=JOE
+  SET DOMAIN=SALES
+  SET HOMEDIR=\\SERVER1\HOME1
+
+You can modify SVAR easily to provide additional system variables that may be
+needed within the logon script.
+
+For example, if you are configured in a large network installation you may want
+to be automatically connected to a departmental (or divisional) word processing
+data directory, either at system boot or when you run a word processing
+application. One way to do this is to make the department code (and division
+code, if needed) available through system variables.
+
+There are a few fields in the user account record, such as "comment" or "parms,"
+that can contain additional information elements--such as department and
+division code--obtained by parsing the appropriate field (comment, parameters,
+etc.) returned by NetUserGetInfo(), and adding them in "set &lt;varname&gt; ="
+strings in the temporary .BAT or .CMD file.
+
+You can add a network command such as the following to the logon script (or word
+processing application execution batch file) to attach your drive W to the
+appropriate departmental word processing share and set the default directory to
+the appropriate divisional subdirectory:
+
+  NET USE W: \\WORDPROC1\%department%
+  CD W:\%division%
+
+Or, if the servers are departmentalized:
+
+  NET USE W: \\%department%\WORDPROC
+  CD W:\%division%
+
+Note: the system variables established by CALLing the temporary .BAT or .CMD file
+remain in effect only for the duration of the logon script, so you may want to
+keep the file in the %temp% directory for later use by another process (such as
+the above mentioned word processing application execution batch file).
+
+Additional query words: 2.00 2.0 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

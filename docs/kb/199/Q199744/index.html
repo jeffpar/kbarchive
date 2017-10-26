@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199744: XFOR: Meeting Request Behavior on Delegation between Systems | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199744: XFOR: Meeting Request Behavior on Delegation between Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199744/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199744/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199744/","publisher":null,"image":null,"headline":"Q199744: XFOR: Meeting Request Behavior on Delegation between Systems","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199744-xfor-meeting-request-behavior-on-delegation-between-systems">Q199744: XFOR: Meeting Request Behavior on Delegation between Systems</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199744
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 27-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an Exchange Server user delegates a meeting to a Lotus Notes user, Exchange
+Server does not inform the Notes meeting chairperson of this delegation. The
+delegated Notes user receives the original invitation. If the delegated Notes
+user accepts the invitation and the Notes meeting chairperson later sends a
+confirmation message for the invitation, the delegate receives the confirmation
+message as well as a new invitation.
+
+CAUSE
+=====
+
+Notes does not apprise the Notes meeting chairperson of this delegation. Thus,
+it does not send a decline message to the chairperson or inform him or her that
+the delegation has taken place.
+
+Consequently, the Notes meeting chairperson thinks the Exchange Server user is
+still part of the invitee list and leaves the user in the "No Response" field
+instead of moving the user to the "Delegate" field.
+
+In this situation, the delegated Notes user receives the original invitation by
+virtue of the delegation. He or she also receives a new invitation, if he or she
+accepts the invitation and the Notes meeting chairperson later sends a
+confirmation message for the invitation.
+
+The correct behavior is for the delegate to receive only the confirmation
+message.
+
+WORKAROUND
+==========
+
+There are two workarounds to this problem.
+
+- Do not delegate between users on different systems (such as Lotus Notes and
+  Exchange Server).
+
+  -or-
+
+- If the Exchange Server user sends the decline message in the initial stage of
+  the meeting request informing the Notes chairperson of the delegation, the
+  Notes chairperson can move the Exchange Server user to the Delegate field,
+  and a confirmation message would not be sent. The delegated Notes user then
+  receives only a single confirmation message.
+
+MORE INFORMATION
+================
+
+This problem is the side-effect of the behavior mismatch between the Notes and
+Exchange Server delegation strategies. In Notes, "delegate" really means
+"forward the meeting;" in Exchange Server, "delegate" means "allowing access to
+someone else to accept or decline."
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

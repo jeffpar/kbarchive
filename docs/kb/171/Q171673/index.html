@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q171673: FP: How to Use Microsoft Forms 2.0 ActiveX Controls | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q171673: FP: How to Use Microsoft Forms 2.0 ActiveX Controls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/171/Q171673/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/171/Q171673/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/171/Q171673/","publisher":null,"image":null,"headline":"Q171673: FP: How to Use Microsoft Forms 2.0 ActiveX Controls","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q171673-fp-how-to-use-microsoft-forms-20-activex-controls">Q171673: FP: How to Use Microsoft Forms 2.0 ActiveX Controls</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q171673
+Product(s): Word Front Page
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbdta
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q180822.
+
+WARNING:
+--------
+
+The Microsoft Forms 2.0 package was not designed to work outside of the Visual Basic for Applications environment. While individual developers might be successful in deploying it to containers such as Microsoft Internet Explorer, using Forms in this manner is neither recommended nor supported. 
+
+For additional information, click the article number below 
+to view the article in the Microsoft Knowledge Base:
+
+  Q236458 Using Microsoft Forms 2.0 in Internet Explorer
+
+SUMMARY
+=======
+
+This article describes how to insert Microsoft Forms 2.0 ActiveX Controls in
+Microsoft FrontPage Editor. The following examples use Microsoft Visual Basic
+Scripting Edition (VBScript) code to set properties and respond to control
+events.
+
+MORE INFORMATION
+================
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The Microsoft Forms 2.0 ActiveX Controls described in this article are included
+with FrontPage.
+
+Message Box Example
+-------------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 CommandButton."
+
+  b. In the Name box, type "CommandButton1" (without the quotation marks).
+
+  c. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click Script.
+
+4. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            Sub CommandButton1_Click()
+              ' The Following line displays a Message Box with the date
+              ' when the command button is clicked.
+              msgbox "Today's date is " &amp;DATE,64,"My MsgBox"
+            End sub
+
+  c. Click OK.
+
+Label Example
+-------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 CommandButton."
+
+  b. In the Name box, type "CommandButton2" (without the quotation marks).
+
+  c. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+4. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 Label."
+
+  b. In the Name box, type "Label1" (without the quotation marks).
+
+  c. In the Width box, enter 200.
+
+  d. Click OK.
+
+5. On the Insert menu, point to Advanced, and then click Script.
+
+6. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            Sub CommandButton2_Click()
+              ' The following example fills a Label control with text
+              ' when the command button is clicked.
+              Label1.Caption="Today's date is " &amp; DATE
+            End sub
+
+  c. Click OK.
+
+Text Box Example
+----------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 TextBox."
+
+  b. In the Name box, type "TextBox1" (without the quotation marks).
+
+  c. In the Width box, enter 140.
+
+  d. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+4. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 CommandButton."
+
+  b. In the Name box, type "CommandButton3" (without the quotation marks).
+
+  c. Click OK.
+
+5. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+6. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 TextBox."
+
+  b. In the Name box, type "TextBox2" (without the quotation marks).
+
+  c. In the Width box, enter 300.
+
+  d. Click OK.
+
+7. On the Insert menu, point to Advanced, and then click Script.
+
+8. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            Sub CommandButton3_Click()
+              ' The following example fills in a text box
+              ' when the command button is clicked
+              TextBox2.Text="You have entered: "&amp; UCASE(TextBox1.Text)
+            End sub
+
+  c. Click OK.
+
+Check Box Example
+-----------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 CheckBox."
+
+  b. In the Name box, type "CheckBox1" (without the quotation marks).
+
+  c. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+4. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 CommandButton."
+
+  b. In the Name box, type "CommandButton4" (without the quotation marks).
+
+  c. In the Width box, enter 140.
+
+  d. Click OK.
+
+5. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+6. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 Label."
+
+  b. In the Name box, type "Label2" (without the quotation marks).
+
+  c. In the Width box, enter 300.
+
+  d. Click OK.
+
+7. On the Insert menu, point to Advanced, and then click Script.
+
+8. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            sub CommandButton4_Click()
+              ' This example evaluates the value of the checkbox and fills
+              ' in text in the label when the command button is clicked
+              if CheckBox1.Value=TRUE then Label2.Caption="The checkbox _
+                is checked"
+              if CheckBox1.Value=FALSE then Label2.Caption="The checkbox _
+                is not checked"
+            end sub
+
+  c. Click OK.
+
+Option Button Example
+---------------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 OptionButton."
+
+  b. In the Name box, type "OptionButton1" (without the quotation marks).
+
+  c. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+4. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 CommandButton."
+
+  b. In the Name box, type "CommandButton5" (without the quotation marks).
+
+  c. Click OK.
+
+5. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+6. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 Label."
+
+  b. In the Name box, type "Label3" (without the quotation marks).
+
+  c. In the Width box, enter 300.
+
+  d. Click OK.
+
+7. Press ENTER.
+
+8. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+9. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 OptionButton."
+
+  b. In the Name box, type "OptionButton2" (without the quotation marks). Click
+     OK.
+
+10. On the Insert menu, point to Advanced, and then click Script.
+
+11. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            Sub CommandButton5_Click()
+              ' This example evaluates the value of the option button and
+                fills
+
+              ' in text in the label when the command button is clicked
+              If OptionButton1.Value=True Then
+              Label3.Caption = "This option is selected"
+              Else
+              Label3.Caption = "The other option is selected"
+              End If
+            End sub
+
+  c. Click OK.
+
+Toggle Button Example
+---------------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 ToggleButton."
+
+  b. In the Name box, type "ToggleButton1" (without the quotation marks).
+
+  c. In the Width box, enter 100. In the Height box, enter 30.
+
+  d. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click Script.
+
+4. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            sub ToggleButton1_Click()
+              ' This example evaluates the value of the toggle button and
+              ' fills in text in the label when the command button is
+                clicked.
+
+              If ToggleButton1.Value = True Then
+              ToggleButton1.Caption = "DEPRESSED"
+              Else
+              ToggleButton1.Caption = ""
+              End If
+            End Sub
+
+  c. Click OK.
+
+Spin Button Example
+-------------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 SpinButton."
+
+  b. In the Name box, type "SpinButton1" (without the quotation marks).
+
+  c. Click Properties. In the Properties window, do the following:
+     1. In the Properties list, click Min. In the Value box, type "-100"
+        (without the quotation marks). Click Apply.
+
+     2. Click the Close button in the top right corner of the Properties
+        window.
+
+     3. In the Edit ActiveX Control dialog box, click OK.
+
+  d. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+4. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 Label."
+
+  b. In the Name box, type "Label4" (without the quotation marks).
+
+  c. Click OK.
+
+5. On the Insert menu, point to Advanced, and then click Script.
+
+6. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            sub SpinButton1_SpinDown()
+              ' This example evaluates if the spin button has been depressed
+                and
+
+              ' fills in text in the label when the command button is clicked
+              Label4.Caption = SpinButton1.Value
+              end sub
+
+            sub SpinButton1_SpinUp()
+              ' This example evaluates if the spin button has not been
+                depressed
+              ' and fills in text in the label when the command button is
+                clicked
+              Label4.Caption = SpinButton1.Value
+            end sub
+
+  c. Click OK.
+
+Scroll Bar Example
+------------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 ScrollBar."
+
+  b. In the Name box, type "ScrollBar1" (without the quotation marks).
+
+  c. Click Properties. In the Properties window, do the following:
+     1. In the Properties list, click Min.
+
+     2. In the Value box, type "-32766" (without the quotation marks). Click
+        Apply.
+
+     3. Click the Close button in the top right corner of the Properties
+        window.
+
+     4. In the Edit ActiveX Control dialog box, click OK.
+
+  d. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+4. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 Label."
+
+  b. In the Name box, type "Label5" (without the quotation marks).
+
+  c. Click OK.
+
+5. On the Insert menu, point to Advanced, and then click Script.
+
+6. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            Sub ScrollBar_Change()
+              ' This example evaluates the position of the marker on the
+                scroll
+              ' bar fills in text in the label when the command button is
+                clicked
+              Label5.Caption = -(ScrollBar1.Value)
+            End sub
+
+  c. Click OK.
+
+List Box Example
+----------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 ListBox."
+
+  b. In the Name box, type "ListBox1" (without the quotation marks).
+
+  c. Click Properties. In the Properties window, do the following:
+     1. In the Properties list, click BorderStyle.
+
+     2. In the Value list, select 1-Single.
+
+     3. Click Apply.
+
+     4. Click the Close button in the top right corner of the Properties
+        window.
+
+     5. In the Edit ActiveX Control dialog box, click OK.
+
+  d. Click OK.
+
+3. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+4. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 Label."
+
+  b. In the Name box, type "Label6" (without the quotation marks).
+
+  c. In the Width box, enter 400.
+
+  d. Click OK.
+
+5. On the Insert menu, point to Advanced, and then click Script.
+
+6. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            Sub ListBox1_Click()
+              ' This example evaluates which option in a list box has been
+              ' selected and fills in the resulting text in the label when
+              ' the command button is clicked
+              Label6.Caption= "You have selected " &amp; _
+              Listbox1.List(ListBox1.ListIndex)
+            End sub
+
+     NOTE: A ListBox requires you to write script that populates the list with
+     values in an array. The script should be inserted at the top of the page
+     so that it executes when your page is loaded into a Web browser.
+
+  c. Click OK.
+
+7. Press CTRL+HOME. Press ENTER. Press the UP ARROW key.
+
+  The insertion point should be positioned at the beginning of a blank line at
+  the top of the page.
+
+8. On the Insert menu, point to Advanced, and then click Script.
+
+9. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            Sub window_onLoad()
+              ' This example creates and populates the array used in the
+              ' proceeding list box example
+              ' dim array to populate ListBox
+              Dim ListBoxArray(2)
+              ListBoxArray(0)="RED"
+              ListBoxArray(1)="WHITE"
+              ListBoxArray(2)="BLUE"
+              ListBox1.List=ListBoxArray
+            End sub
+
+  c. Click OK.
+
+Combo Box Example
+-----------------
+
+1. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+2. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, select "Microsoft Forms 2.0 ComboBox."
+
+  b. In the Name box, type "ComboBox1" (without the quotation marks). Click OK.
+
+3. On the Insert menu, point to Advanced, and then click ActiveX Control.
+
+4. In the ActiveX Control Properties dialog box, do the following:
+  a. In the Pick A Control list, "select Microsoft Forms 2.0 Label."
+
+  b. In the Name box, type "Label7" (without the quotation marks).
+
+  c. In the Width box, enter 400. Click OK.
+
+5. On the Insert menu, point to Advanced, and then click Script.
+
+6. In the Script dialog box, do the following:
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server" check box.
+
+  b. In the Script box, enter the following code:
+
+            sub ComboBox1_Click()
+              ' This example evaluates which option in a combo box has been
+              ' selected and fills in the resulting text in the label when
+              ' the command button is clicked.
+              Label7.Caption= "You have selected " &amp; _
+              ComboBox1.List(ComboBox1.ListIndex)
+            end sub
+
+     NOTE: A ListBox requires you to write script that populates the list with
+     values in an array. The script should be inserted at the top of the page
+     so that it executes when your page is loaded into a Web browser.
+
+7. Double-click the Script icon at the top of the page.
+
+  NOTE: This icon was created in step 6 of the List Box example.
+  a. Under Language, click VBScript and click to clear the "Run Script on
+     Server check box."
+
+  b. In the Script box, enter the following code.
+
+     NOTE: Place this code at the bottom of the Script box, after the existing
+     script, but before the last line which reads "end sub."
+
+            ' This example creates and populates the array used in the
+            ' combo box example.
+            '
+            ' dimension array to populate ComboBox
+            Dim ListBoxArray(2)
+            ListBoxArray(0)="RED"
+            ListBoxArray(1)="WHITE"
+            ListBoxArray(2)="BLUE"
+            ListBox1.List=ListBoxArray
+
+  c. Click OK.
+
+REFERENCES
+==========
+
+For additional information about Microsoft Visual Basic Scripting Edition,
+please see the following Microsoft World Wide Web site:
+
+  http://www.microsoft.com/scripting/vbcript
+
+Additional query words: 97 98 fpscript
+
+======================================================================
+Keywords          : kbcode kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

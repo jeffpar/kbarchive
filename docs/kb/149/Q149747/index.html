@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149747: PRB: Debugger Cannot Evaluate Out of Scope Named Constants | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149747: PRB: Debugger Cannot Evaluate Out of Scope Named Constants" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149747/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149747/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149747/","publisher":null,"image":null,"headline":"Q149747: PRB: Debugger Cannot Evaluate Out of Scope Named Constants","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149747-prb-debugger-cannot-evaluate-out-of-scope-named-constants">Q149747: PRB: Debugger Cannot Evaluate Out of Scope Named Constants</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149747
+Product(s): Microsoft Fortran Compiler
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbFortranPS kbLangFortran
+Last Modified: 03-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The debugger's watch window cannot evaluate expressions that contain named
+constants that have gone out of scope. Attempting to use a variable evaluation
+expression containing a locally undefined named constant in one of the watch
+windows causes the message "EE2347: Undefined variable" to be returned in the
+corresponding value field.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The scope context operator allows you to view information about module variables
+that have gone out of scope. However, using the scope context operator in this
+manner does not apply to named constants. You cannot use the scope context
+operator to evaluate named constants.
+
+Steps to Illustrate Behavior
+----------------------------
+
+1. Build the sample code provided in Developer Studio.
+
+2. After successfully building the sample code, start a debugging session by
+  selecting Debug from the Build menu and then choosing Step Into.
+
+3. Step into the module subroutine MODULE_PROC. In a watch window, type:
+
+  " MY_MODULE::MODULE_PROC::Y" (without the quotation marks)
+
+  The number 9.00000 is correctly displayed for the named constant Y.
+
+4. Step into the internal module subroutine INTERNAL_PROC to the assignment
+  statement of variable N. Note that the watch expression created in Step 3 is
+  no longer valid because it references the named constant Y which is out of
+  scope.
+
+5. In the subroutine INTERNAL_PROC, evaluate the variables H and N and the named
+  constant Y. In a watch window, do the following:
+
+  To evaluate H using the scope context operator, type:
+
+  " {MY_MODULE::MODULE_PROC::INTERNAL_PROC}H" (without the quotation marks)
+
+  To evaluate N using the scope context operator, type:
+
+  " {MY_MODULE::MODULE_PROC::INTERNAL_PROC}N" (without the quotation marks)
+
+  Evaluation of Y will fail when out of scope or when using the scope context
+  operator.
+
+  Using the scope context operator, type:
+
+  " {MY_MODULE::MODULE_PROC::INTERNAL_PROC}Y" (without the quotation marks)
+
+  -or-
+
+  Without the scope context operator, type:
+
+  " MY_MODULE::MODULE_PROC::INTERNAL_PROC::Y" (without the quotation marks)
+
+NOTE: "EE2347: Undefined variable" is generated for the named constant Y. The
+value of the named constant Y can only be viewed while control is in the
+MODULE_PROC subroutine.
+
+Sample Code
+-----------
+
+  ! Compile options needed: /Zi
+        MODULE MY_MODULE
+          INTEGER H
+        CONTAINS
+          SUBROUTINE MODULE_PROC
+            PARAMETER(Y=9.0)
+            CALL INTERNAL_PROC
+          CONTAINS
+              SUBROUTINE INTERNAL_PROC
+                INTEGER N
+                N = Y + H
+              END SUBROUTINE INTERNAL_PROC
+          END SUBROUTINE MODULE_PROC
+        END MODULE MY_MODULE
+
+        PROGRAM TEST
+          USE MY_MODULE
+          CALL MODULE_PROC
+        END PROGRAM TEST
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q102624: Setup Does Not Support Installing Multiple Mouse Drivers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q102624: Setup Does Not Support Installing Multiple Mouse Drivers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/102/Q102624/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/102/Q102624/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/102/Q102624/","publisher":null,"image":null,"headline":"Q102624: Setup Does Not Support Installing Multiple Mouse Drivers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q102624-setup-does-not-support-installing-multiple-mouse-drivers">Q102624: Setup Does Not Support Installing Multiple Mouse Drivers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q102624
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.1,3.5,3.51; :
+Operating System(s): 
+Keyword(s): kbprint kbPrinting
+Last Modified: 07-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1,3.5,3.51 
+- Microsoft Windows NT Workstation version 3.1,3.5,3.51 
+- Microsoft Windows NT Advanced Server 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Windows NT Setup allows you to install a single pointing device. If you later
+use Setup to change to another pointing device, the first pointing device is
+disabled.
+
+This can present a problem, especially for users with portable machines that use
+one mouse type when the machine is in a docking station and a different mouse
+type when not in the docking station.
+
+CAUSE
+=====
+
+This is by design.
+
+RESOLUTION
+==========
+
+If you have mouse support in only one of your machine's configurations, do the
+following:
+
+1. Make sure both drivers are present on the machine. Setup never deletes driver
+  files. Once you run Setup and select Mouse Port Mouse to install drivers,
+  they remain on the machine until you explicitly delete them from the DRIVERS
+  directory.
+
+2. In Control Panel, choose the Devices icon, and make sure all relevant mouse
+  drivers are marked with the System startup type (use the Startup button if
+  necessary). The following table lists the mouse types and corresponding
+  drivers for those drivers Microsoft supplies:
+
+     Mouse Type                                        Driver
+     ----------------------------------------------------------
+
+     Microsoft Mouse Port Mouse (includes BallPoint)   i8042prt
+     Logitech Mouse Port Mouse                         i8042prt
+     Microsoft InPort Bus Mouse                        inport
+     Microsoft Serial Mouse                            sermouse
+     Microsoft BallPoint Serial Mouse                  sermouse
+     Logitech Serial Mouse                             sermouse
+     Microsoft (green buttons) or Logitech Bus Mouse   busmouse
+
+For the Compaq LTE and other machines in which one configuration involves a
+Microsoft Mouse Port Mouse (also known as a PS/2-compatible mouse), the solution
+is even simpler. The keyboard and PS/2-compatible mouse share a driver;
+therefore, the Mouse Port Mouse support is available without additional charge
+if you install the other mouse type (usually serial) during Setup, everything
+will work from then on with no further intervention.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTSsearch kbWinNTAdvSerSearch
+Version           : winnt:3.1,3.5,3.51; :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

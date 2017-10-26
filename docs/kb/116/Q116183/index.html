@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q116183: BUG: Step-After-Return in CodeView &quot;Hangs&quot; in a Large Function | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q116183: BUG: Step-After-Return in CodeView &quot;Hangs&quot; in a Large Function" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/116/Q116183/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/116/Q116183/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/116/Q116183/","publisher":null,"image":null,"headline":"Q116183: BUG: Step-After-Return in CodeView &quot;Hangs&quot; in a Large Function","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q116183-bug-step-after-return-in-codeview-hangs-in-a-large-function">Q116183: BUG: Step-After-Return in CodeView "Hangs" in a Large Function</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q116183
+Product(s): Microsoft Programming Utilities
+Version(s): 4.0,4.01,4.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft CodeView for MS-DOS, versions 4.0, 4.01, 4.1 
+- Microsoft CodeView for Windows, versions 4.0, 4.01, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the PR command (Stop After Return) on a large function, or on a function
+with long iterative loop, causes CodeView to appear to hang.
+
+CAUSE
+=====
+
+The PR command is inefficient when used on large functions because it is too
+slow. In the case of the example below, there is no activity. Locals and watch
+expressions do not get updated, and IP tracking is inactive. Furthermore,
+CTRL+BREAK, CTRL+C, AND CTRL+ALT+SYSREQ do not terminate the PR command because
+CodeView is receiving single step notifications fast enough that the system is
+likely not getting a chance to process them.
+
+RESOLUTION
+==========
+
+To work around this problem, refrain from using the PR command on large
+functions, or those with long iterative loops. Instead, set a breakpoint at the
+location you wish CodeView to stop, or move the cursor to that location and
+press F7 to Run-To-Cursor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be problem with CodeView for MS-DOS, versions
+4.0, 4.01, and 4.1, and CodeView for Windows, versions 4.0, 4.01, and 4.1. We
+are researching this problem and will post more information in the Microsoft
+Knowledge Base as soon as it becomes available.
+
+MORE INFORMATION
+================
+
+The sample code below may be used to reproduce the problem. After starting
+CodeView, enter these commands in the command window:
+
+  g f
+  p
+  pr
+
+At this point any attempts to break into CodeView are ignored.
+
+Sample Code
+-----------
+
+  /* Compile options needed:  /Zi
+  */ 
+     #ifdef _WINDOWS
+     #include &lt;windows.h&gt;
+     #endif
+
+     void f(void);
+
+     void main(void)
+     {
+      f();
+     }
+
+     void f(void)
+     {
+      int t;
+      int x;
+
+      for (t=32767; t&gt;0; --t)
+      {
+       x = t;
+      }
+     }
+
+     #ifdef _WINDOWS
+     int WINAPI WinMain (HANDLE hInstance, HANDLE hPrevInstance,
+                         LPSTR lpszCmdParam, int nCmdShow)
+     {
+      main();
+      return( TRUE );
+     }
+     #endif
+
+Additional query words: 4.00 4.01 4.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView400DOS kbCodeView401DOS kbCodeView410DOS kbCodeView400 kbCodeView401 kbCodeView410
+Version           : :4.0,4.01,4.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q276494: Using Python Scripts with IIS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q276494: Using Python Scripts with IIS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/276/Q276494/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/276/Q276494/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/276/Q276494/","publisher":null,"image":null,"headline":"Q276494: Using Python Scripts with IIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q276494-using-python-scripts-with-iis">Q276494: Using Python Scripts with IIS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q276494
+Product(s): Internet Information Server
+Version(s): 4.0,5.0
+Operating System(s): 
+Keyword(s): kbDSupport
+Last Modified: 20-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 4.0 
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Python is an interpreted scripting language similar in concept to Microsoft
+Visual Basic Script (VBScript), Microsoft JScript, Perl, or other scripting
+languages. While Internet Information Server (IIS) uses the Windows Scripting
+Host for its VBScript and JScript needs, IIS can use other script interpreters
+for Active Server Pages (ASP) as well as simple Common Gateway Interface (CGI)
+scripts. This article describes how to use Python as your scripting language of
+choice for both CGI and ASP.
+
+MORE INFORMATION
+================
+
+You can choose any Python interpreter as the script engine for processing Python
+scripts. The example in this article uses ActiveState's ActivePython 2.0.
+
+The following steps show how to set up the installed Python interpreter as a
+script engine for use with IIS and ASP.
+
+1. Make sure that the Web site containing the Python scripts has an application
+  set up. To do this, perform the following steps:
+
+  a. In the Internet Service Manager (ISM), right-click the directory that is
+     the application starting point, and then click Properties.
+
+  b. Click the Home Directory, Virtual Directory, or Directory tab.
+
+  c. Under Application Settings, verify that the Name text box is active, and
+     that it contains a name.
+
+  d. If the dialog box is inactive, click Create to create an application, and
+     then give the application a name (the default name is "Default
+     Application").
+
+  e. Under Permissions, verify that Execute (including script) is selected.
+
+  For more information about setting up applications, see "Configuring
+  Applications" in IIS Help.
+
+2. Verify that application mapping for .py files is set up. To do this, perform
+  the following steps:
+
+  a. In the ISM, under Internet Information Server, right-click the computer
+     name, and then click Properties.
+
+  b. From the Master Properties drop-down list, click WWW Service and then
+     click Edit.
+
+  c. Click the Home Directory tab, and then click Configuration.
+
+  d. To add the application mapping, click Add, and then create a new mapping
+     by using the following information (substituting the correct path on your
+     computer):
+
+      - Executable: "C:\Python20\python.exe %s %s" (The two "%s" after the
+        executable are required for console-based script interpreters but would
+        not be required for an Internet Server API [ISAPI]-based script
+        interpreter).
+
+      - Extension: .py
+
+      - Script engine: selected.
+
+      - Check that File Exists: selected (for security)
+
+Click OK.
+
+3. Verify that the file and directory permissions are set correctly in the
+  computer's access control list (ACL). For anonymous access, the
+  IUSR_[computername] and IWAM_[computername] user accounts must have at least
+  "read" permission (RX). When using other types of password authentication,
+  the permissions required may vary.
+
+The following Python script can be used to test for the proper installation and
+execution of Python-based CGI scripts with IIS.
+
+Create a file in a text editor such as Microsoft Notepad, and include the
+following lines of code. Save the file in the scripts folder as "Test.py"
+(without the quotation marks).
+
+  print
+  print 'Status: 200 OK'
+  print 'Content-type: text/html'
+  print
+
+  print '&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Python Sample CGI&lt;/TITLE&gt;&lt;/HEAD&gt;'
+  print '&lt;BODY&gt;'
+  print '&lt;H1&gt;This is a header&lt;/H1&gt;'
+
+  print '&lt;p&gt;' #this is a comment
+  print 'See this is just like most other HTML'
+  print '&lt;br&gt;'
+  print '&lt;/BODY&gt;'
+
+Browse "Test.py" on the Web site:
+
+  http://&lt;computer_name&gt;/scripts/test.py
+
+Alternatively, you can use the Python interpreter as your script interpreter in
+your ASP pages. After you have the Python scripting engine registered, create a
+file by using Notepad and include the following lines of code. Save the file in
+the scripts folder as "Python.asp" (without the quotation marks).
+
+  &lt;%@LANGUAGE=Python%&gt;
+  &lt;HTML&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt;Python Test&lt;/h1&gt;
+
+  &lt;%
+  #do some python stuff here
+
+  Response.Write('Python Test&lt;br&gt;')
+  Response.write('&lt;h3&gt;Smaller heading&lt;/hr&gt;')
+  %&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+
+Browse "Python.asp" on the Web site:
+
+  http://&lt;computer_name&gt;/scripts/python.asp
+
+REFERENCES
+==========
+
+For more information on Python see:
+
+  http://www.python.org/
+
+For the ActiveState Python Interpreter see:
+
+  http://www.activestate.com/Products/ActivePython/
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

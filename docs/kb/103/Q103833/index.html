@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q103833: Using Alternate Character Sets Provided by Code Pages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q103833: Using Alternate Character Sets Provided by Code Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/103/Q103833/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/103/Q103833/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/103/Q103833/","publisher":null,"image":null,"headline":"Q103833: Using Alternate Character Sets Provided by Code Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q103833-using-alternate-character-sets-provided-by-code-pages">Q103833: Using Alternate Character Sets Provided by Code Pages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q103833
+Product(s): Microsoft FoxPro
+Version(s): 2.50 2.50a 2.50b | 2.50 2.50a 2
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for MS-DOS, versions 2.5, 2.5a, 2.5b 
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use different character sets in FoxPro and other programs by changing
+the code page, as described below. The default code page for U.S. English is
+437.
+
+MORE INFORMATION
+================
+
+Pressing the ALT key in conjunction with the numbers on the numeric keypad will
+create extended, or special, characters. Extended characters are those
+characters above ASCII 127. Different code pages support different extended
+characters. For example, when you are using code page 437, pressing ALT+157
+produces a Y with two short horizontal lines through it. With code page 850,
+these keys produce a zero with a line through it.
+
+To use different code pages, add the following commands to the CONFIG.SYS and
+AUTOEXEC.BAT files:
+
+- In the CONFIG.SYS file, add:
+
+        country=001,,c:\dos\country.sys
+        device=c:\dos\display.sys con=(ega,437,2)
+
+- In the AUTOEXEC.BAT file, add:
+
+        chcp 850
+        REM change to the 859 character set
+        keyb us,,c:\dos\keyboard.sys
+        REM need only for keyboard change
+
+Please note that the "EGA" in the above commands is used for both EGA and VGA
+monitors.
+
+You can also change the code page at the MS-DOS prompt by issuing the following
+command:
+
+     chcp 437
+
+The code page change issued after a RUN command does not affect the current
+session of FoxPro because the RUN command starts another MS-DOS session.
+
+In Windows, the default code page is 1252; you can change it to 850 or some other
+code page by quitting Windows and running the Windows Setup program.
+
+REFERENCES
+==========
+
+Microsoft MS-DOS "User's Guide," version 6.0, pages 238-242, 271-276
+Microsoft MS-DOS "User's Guide," version 5.0, pages 352-353, 632-637
+
+Additional query words: VFoxWin FoxDos FoxWin foreign ascii codepage
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250bDOS kbFoxPro250 kbFoxPro250a kbFoxPro250b kbVFP300
+Version           : 2.50 2.50a 2.50b | 2.50 2.50a 2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

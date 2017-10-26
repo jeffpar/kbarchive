@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247145: XADM: ID No. c1040af3 or c1040af5 When Rehoming a Public Folder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247145: XADM: ID No. c1040af3 or c1040af5 When Rehoming a Public Folder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247145/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247145/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247145/","publisher":null,"image":null,"headline":"Q247145: XADM: ID No. c1040af3 or c1040af5 When Rehoming a Public Folder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247145-xadm-id-no-c1040af3-or-c1040af5-when-rehoming-a-public-folder">Q247145: XADM: ID No. c1040af3 or c1040af5 When Rehoming a Public Folder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247145
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5
+Operating System(s): 
+Keyword(s): exc55kbfaq
+Last Modified: 03-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to rehome a public folder to a server in another site, you may
+receive the following error message:
+
+  Microsoft Exchange Server is unable to rehome the selected public folder.
+  Ensure that the Limit administrative access to home site option
+  is not set for this public folder, and that the server you are currently
+  connected to supports RPC network connections to the new home
+  server.
+
+This error message contains one of the following ID numbers:
+
+  ID no: c1040af3
+
+  - or -
+
+  ID no: c1040af5
+
+CAUSE
+=====
+
+If you receive an error message that contains ID number c1040af3, you do not
+have Service Account Administrator permissions for the remote Exchange Server
+site to which you are rehoming the public folder.
+
+If you receive an error message that contains ID number c1040af5, one of the
+following conditions exists:
+
+- The Exchange Server computer in the destination site is located in a domain
+  that does not trust the domain that you are logged on to when you attempt to
+  change the Home Server attribute of the public folder.
+
+- In User Manager on the remote computer, the user right to "Access this
+  Computer from the Network" has been taken away from the Everyone group, and
+  neither your account nor a global group that your account belongs to has been
+  granted the user right to "Access this Computer from the Network."
+
+- There is no remote procedure call (RPC) connectivity between the current home
+  server and the intended home server.
+
+RESOLUTION
+==========
+
+If Exchange Server rights, Windows NT user rights, or network connectivity
+prevent you from rehoming the public folder from the home site, have a Service
+Account Administrator in the destination site where the replica exists rehome
+the folder. This resolves the problem if the folder does not have the "Limit
+Administrative Access to Home Site" option enabled. You do not need Exchange
+Server rights or Windows NT rights to the computer where the public folder is
+currently homed to pull the Home Server attribute from the server and site where
+a replica exists.
+
+For example, if an organization contains the following sites, servers, and public
+folders:
+
+  Site_A
+  Server_A
+  Folder_A
+
+  Site_B
+  Server_B
+  replica of Folder_A
+
+From Server_B, you can rehome the replica of Folder_A to Server_B without any
+connectivity or rights to Server_A if the Limit Administrative Access to Home
+Site option is not set on the folder.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 kbfaq
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Hardware          : ALPHA MIPS PPC x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

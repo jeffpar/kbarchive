@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q218814: DNS Server Logs Event 7062: &quot;DNS Server Encountered a Packet…&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q218814: DNS Server Logs Event 7062: &quot;DNS Server Encountered a Packet…&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/218/Q218814/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/218/Q218814/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/218/Q218814/","publisher":null,"image":null,"headline":"Q218814: DNS Server Logs Event 7062: &quot;DNS Server Encountered a Packet…&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q218814-dns-server-logs-event-7062-dns-server-encountered-a-packet">Q218814: DNS Server Logs Event 7062: "DNS Server Encountered a Packet…"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q218814
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0 SP4
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply Service Pack 4, the DNS server begins logging Event 7062:
+
+  DNS Server encountered a packet addresses to itself -- IP address w.x.y.z.
+  The DNS server should never be sending a packet to itself. This situation
+  usually indicates a configuration error.
+
+  Check the following areas for possible self-send configuration errors:
+
+  1) Forwarders list (DNS server should not forward to themselves).
+  2) Master lists of secondary zones.
+  3) Notify lists of primary zones.
+  4) Delegations of subzones.
+
+  Must not contain NS record for DNS server
+
+  Example: -&gt; This DNS server dns1.microsoft.com is the primary for the zone
+  microsoft.com. -&gt; You have delegated the zone bar.microsoft.com to
+  bardns.bar.microsoft.com and are NOT running the bar.microsoft.com zone on
+  this DNS (dns1.microsoft.com). Note, you should make this check (with
+  nslookup of DNS manager) both on this DNS server and on the server(s) you
+  delegated the subzone to. It is possible that the delegation was done
+  correctly, but that the primary DNS for the subzone, has any incorrect NS
+  record pointing back at this server. If this incorrect NS record is cached at
+  this server, then the self-send could result. If found, the subzone DNS
+  server admin should remove the offending NS record.
+
+CAUSE
+=====
+
+This error is caused by a configuration error or is the result of a delegation
+of a domain (or subdomain) to a server for which there is no zone file (lame
+delegation).
+
+RESOLUTION
+==========
+
+To resolve this issue, check for the following conditions:
+
+Forwarders:
+
+DNS can be configured to forward off-site queries to designated servers. Be sure
+that the DNS server is not configured to forward these off-site queries to
+itself:
+
+1. Select the server, click DNS, and then click Properties from the menu.
+
+2. Click the Forwarders tab.
+
+3. If the server's own IP address is listed, select it and click Remove.
+
+4. After you make this change, make sure to stop and restart the DNS service.
+
+Master List of Secondary Zones:
+
+A secondary zone is configured with a list of the master or primary server(s). Be
+sure that the server's own IP address is not listed as one of the IP master(s):
+
+1. Select the secondary zone, click DNS, and then click Properties from the
+  menu.
+
+2. Click the General tab.
+
+3. If the server's own IP address is listed in the IP Master(s) section, select
+  it and click Remove.
+
+Notify Lists:
+
+Microsoft Windows NT DNS Server allows the Administrator to specify (on the
+primary DNS server) any secondary DNS servers that should be notified
+immediately of changes to the Zone file. Be sure that the DNS server is not
+configured to notify itself:
+
+1. Select the primary zone, click DNS, and then click Properties from the menu.
+
+2. Click the Notify tab.
+
+3. If the server's own IP address is listed, select it and click Remove.
+
+Lame Delegation:
+
+Lame delegation is defined as having a domain or subdomain delegated to a server
+that is not authoritative for the domain (in other words, a zone file does not
+exist for the domain on the server). There are two possible scenarios that can
+cause lame delegation:
+
+- Delegating a Child Domain to Itself
+
+  If a child domain is created on a server and an NS record is added to that
+  domain that resolves to its own IP address, an Event 7062 is generated. The
+  following is an example:
+
+   - DNS server ns1.domain.com is the primary DNS server for the domain.com
+     zone. A child domain is created named child.domain.com and an NS record is
+     added to child.domain.com for ns1.domain.com. This results in a child
+     domain being delegated to itself. To resolve this issue, remove the NS
+     record from child.domain.com. Only add NS records to child domains if you
+     wish to delegate it to another server (that is, to delegate it to
+     ns2.domain.com).
+
+- Domain Delegated to Server with No Zone File
+
+  If another DNS server has delegated a domain (either a forward lookup or
+  reverse lookup domain) to a server and there is no zone file on the server
+  for that domain, an Event 7062 is generated. The following are examples:
+
+   - Your Internet Service Provider (ISP) has assigned you the Class C network
+     of 192.168.1.0 and has delegated the 1.168.192.in-addr.arpa domain for
+     reverse lookups to your DNS server. If there is no zone configured on your
+     DNS server for that domain, event 7062 will be generated every time a
+     query is made for that domain from the server. The DNS server will step
+     through the DNS hierarchy starting at the root servers and eventually
+     receive a response from the ISP's DNS server indicating that the server
+     itself is authoritative for the domain and attempt to query itself. To
+     resolve this issue, either create a primary or secondary zone for that
+     domain, or have the ISP change the delegation.
+
+   - Your ISP has delegated a domain to your caching-only DNS server. Because
+     there are no zone files on a caching-only server, any queries that it
+     makes for hosts that reside in domains for which it has been delegated
+     authority will result in an event 7062 error. To resolve this issue,
+     either create a primary or secondary zone file for that domain, or have
+     the ISP change the delegation.
+
+MORE INFORMATION
+================
+
+Due to the informational nature of this warning, the severity type has been
+reduced from a "Stop" (red) event to a "Warning" (yellow) event in Windows NT
+4.0 Service Pack 5.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search
+Version           : winnt:4.0 SP4
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

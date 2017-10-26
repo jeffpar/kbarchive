@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q310339: PRB: Netlogon Logs Event ID 5719 on a Domain Controller | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q310339: PRB: Netlogon Logs Event ID 5719 on a Domain Controller" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/310/Q310339/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/310/Q310339/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/310/Q310339/","publisher":null,"image":null,"headline":"Q310339: PRB: Netlogon Logs Event ID 5719 on a Domain Controller","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q310339-prb-netlogon-logs-event-id-5719-on-a-domain-controller">Q310339: PRB: Netlogon Logs Event ID 5719 on a Domain Controller</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q310339
+Product(s): Microsoft Windows NT
+Version(s): 2000
+Operating System(s): 
+Keyword(s): kbDSupport
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When the Netlogon service starts or the service is under load, the following
+event may be logged to the Event Log:
+
+  
+
+  Event Type:	Error
+  Event Source:	NETLOGON
+  Event Category:	None
+  Event ID:	5719
+  Date:		9/28/2001
+  Time:		4:12:55 PM
+  User:		N/A
+  Computer:	Server
+  Description:
+  No Windows NT or Windows 2000 Domain Controller is available for domain &lt;domain name&gt;. The following error occurred:
+  There are currently no logon servers available to service the logon request.  
+  Data:
+  0000: c000005e 
+
+CAUSE
+=====
+
+One possible cause of this error is that you have run out of buffer space in the
+NetBT datagram buffer.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this problem, increase the MaxDgramBuffering value from 128 KB to 256
+KB:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Locate the following key in the registry:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBT\Parameters
+
+3. On the Edit menu, click Add Value, and then add the following information:
+
+  Value Name: MaxDgramBuffering
+  Data Type: REG_DWORD
+  Value: 0x40000
+
+4. Quit Registry Editor.
+
+5. Restart the Netlogon service (you may have to restart the computer).
+
+NOTE: If you are using Regedit instead of Regedt32 to modify the registry,
+either
+
+- right-click Parameters, click New, and then click "REG_DWORD"
+
+-or-
+
+- click "New" on the Edit menu, and then click "REG_DWORD"
+
+and then add the new registry key information.
+
+MORE INFORMATION
+================
+
+MaxDgramBuffering Details
+-------------------------
+
+Key: NetBT\Parameters
+Value Type: REG_DWORD - Count of bytes
+Valid Range: 0 - 0xFFFFFFFF
+Default: 0x20000 (128 KB)
+Description: This parameter specifies the maximum amount of memory that NetBT
+will dynamically allocate for all outstanding datagram send commands. After this
+limit is reached, further send commands will fail due to insufficient
+resources.
+
+For additional information on other possible causes of this error, click the
+article numbers below to view the articles in the Microsoft Knowledge Base:
+
+  Q259883 Upgrading Windows NT 4.0 Domain Controller with FAT File System Does
+  Not Install Active Directory
+
+  Q269119 Logging on to a Domain Does Not Work from a Windows 2000-Based RAS
+  Client
+
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q217023 Event ID 5701 Starting Netlogon on Domain Controller
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbWinAdvServSearch
+Version           : :2000
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

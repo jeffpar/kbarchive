@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q252715: Error 14064 Attempting to Change an Attribute Value Type | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q252715: Error 14064 Attempting to Change an Attribute Value Type" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/252/Q252715/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/252/Q252715/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/252/Q252715/","publisher":null,"image":null,"headline":"Q252715: Error 14064 Attempting to Change an Attribute Value Type","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q252715-error-14064-attempting-to-change-an-attribute-value-type">Q252715: Error 14064 Attempting to Change an Attribute Value Type</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q252715
+Product(s): Microsoft Windows NT
+Version(s): 2.1
+Operating System(s): 
+Keyword(s): kbenv kberrmsg
+Last Modified: 05-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to change an attribute value type (for example, Single, Multi,
+or Collective), you may receive the following error message:
+
+  An error occurred processing your request
+  The server reported [Server error value [14064]]
+
+The error code translates to:
+
+  (DB5_RC_INVALID_ATTRIBUTE_PROCESSING)
+
+CAUSE
+=====
+
+Some attributes are treated as a "special cases" within the database. If you
+attempt to change a special-case attribute, the error message is generated.
+
+The list of current special-case attributes includes:
+
+  aliasedObjectName
+  description
+  DSEType
+  lastVerifiedTime
+  structuralObjectClass
+  telephoneNumber
+
+RESOLUTION
+==========
+
+Do not attempt to change the attribute type for these special-case attributes.
+Choose a different attribute to populate as multi-valued or collective.
+
+MORE INFORMATION
+================
+
+To view or change an attribute's value type:
+
+1. Search the directory for the attribute you want to change. In Compass, click
+  Search, and then type the name of the attribute you want to change. For
+  example, try searching for GivenName.
+
+2. When the attribute is found, double-click it to display its properties.
+
+3. On the Definition tab, click one of the three attribute value types: Single,
+  Multi, or Collective. This value specifies whether an attribute is
+  single-valued, multi-valued, or collective. Collective attributes cannot be
+  multi-valued.
+
+Additional query words: MMS Zoomit VIA
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138205: HOWTO: Use OLE Automation with Microsoft Word | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138205: HOWTO: Use OLE Automation with Microsoft Word" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138205/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138205/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138205/","publisher":null,"image":null,"headline":"Q138205: HOWTO: Use OLE Automation with Microsoft Word","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138205-howto-use-ole-automation-with-microsoft-word">Q138205: HOWTO: Use OLE Automation with Microsoft Word</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138205
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbinterop kbAutomation kbvfp300 kbvfp500 kbvfp600 kbWord
+Last Modified: 30-JUL-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article demonstrates using OLE Automation in Visual FoxPro to send data
+from a table to a Microsoft Word document. The example requires that Microsoft
+Word 6.0 or later be installed on the same computer as Visual FoxPro. This
+example consists of two basic steps: creating the mail merge document in
+Microsoft Word and writing the program to perform the OLE automation in Visual
+FoxPro.
+
+MORE INFORMATION
+================
+
+1. Create the mail merge document in Microsoft Word. Start with a new document
+  in Microsoft Word. Format the Document as follows:
+
+     Contact
+     Company
+     Phone
+
+     Dear greeting,
+
+     &lt;This is the body of the form letter.&gt;
+
+     Sincerely,
+
+     &lt;Your Company Name&gt;
+
+  Create bookmarks for Contact, Company, Phone, and greeting. To do this, select
+  the item in the document (for example, Contact), choose the Edit menu pad
+  (it[ASCII 146]s the Insert menu pad in Word 97), and click the Bookmark menu
+  item. Enter the bookmark name (for example, contact), and click Add. The
+  bookmark name should be the same as the item selected. Repeat this for all
+  four items. Save the Microsoft Word Document as Wordole.doc in the
+  Vfp\Samples\Data directory.
+
+2. Create the OLE Automation program in Visual FoxPro. Create a new program in
+  Visual FoxPro with the following code:
+
+  If you are using Word 6.0 or Word 95, use the following code:
+
+  
+
+       PUBLIC oWordObj, ver_info
+
+        ver_info=IIF("06."$VERSION(),6,5)
+        IF ver_info=6
+           OPEN DATA home(2)+"data\TestData.dbc"
+        else
+           OPEN DATA SYS(2004)+"\samples\data\TestData.dbc"
+        endif
+        USE Customer
+
+        oWordObj=CREATEOBJECT("Word.Basic")
+
+        IF ver_info=6
+           oWordObj.FileOpen (home(2)+"data\wordole.doc")
+        ELSE
+           oWordObj.FileOpen (SYS(2004)+"samples\data\wordole.doc")
+        ENDIF
+
+        oWordObj.EditGoto ("contact")
+        oWordObj.Insert (Customer.Contact)
+        oWordObj.EditGoTo ("company")
+        oWordObj.Insert (Customer.Company)
+        oWordObj.EditGoTo ("phone")
+        oWordObj.Insert (Customer.Phone)
+        oWordObj.EditGoTo ("greeting")
+        oWordObj.Insert (Customer.Contact)
+
+        oWordObj.FilePrint
+
+  If you are Word 97, use the following code:
+
+  
+
+        PUBLIC oWordObj, ver_info
+
+        ver_info=IIF("06."$VERSION(),6,5)
+        IF ver_info=6
+           OPEN DATA home(2)+"data\TestData.dbc"
+        else
+           OPEN DATA SYS(2004)+"\samples\data\TestData.dbc"
+        endif
+        USE Customer
+
+        oWordObj=CREATEOBJECT("Word.Basic")
+
+        IF ver_info=6
+           oWordObj.FileOpen (home(2)+"data\wordole.doc")
+        ELSE
+           oWordObj.FileOpen (SYS(2004)+"samples\data\wordole.doc")
+        ENDIF
+
+        oWordObj.ww7_EditGoto ("contact")
+        oWordObj.Insert (Customer.Contact)
+        oWordObj. ww7_EditGoTo ("company")
+        oWordObj.Insert (Customer.Company)
+        oWordObj. ww7_EditGoTo ("phone")
+        oWordObj.Insert (Customer.Phone)
+        oWordObj. ww7_EditGoTo ("greeting")
+        oWordObj.Insert (Customer.Contact)
+
+        oWordObj.FilePrint
+
+3. Save and run the program.
+
+RESULT: When you run the program, the form letter should print using data from
+record one in the Customer table.
+
+By removing the Open Data and Use Customer commands, you could call this program
+from a form that was based on the customer table. If the program is called from
+the click event of a command button, the form letter would be printed using data
+from the current record in the customer table.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbinterop kbAutomation kbvfp300 kbvfp500 kbvfp600 kbWord 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

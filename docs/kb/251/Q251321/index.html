@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q251321: BUG: ScrollBar Controls Exhibit Paint Problems In Change Event | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q251321: BUG: ScrollBar Controls Exhibit Paint Problems In Change Event" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/251/Q251321/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/251/Q251321/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/251/Q251321/","publisher":null,"image":null,"headline":"Q251321: BUG: ScrollBar Controls Exhibit Paint Problems In Change Event","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q251321-bug-scrollbar-controls-exhibit-paint-problems-in-change-event">Q251321: BUG: ScrollBar Controls Exhibit Paint Problems In Change Event</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q251321
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbCtrl kbScrollBar kbVBp kbVBp400bug kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Visual Basic, the intrinsic HScrollBar and VScrollBar controls
+experience painting problems if the mouse is moved off the control prior to the
+completion of code execution in the Change event.
+
+RESOLUTION
+==========
+
+To work around this behavior, the scrollbar control can be disabled at the start
+of the Change event. Once the code execution is complete, the control can then
+be enabled again.
+
+  Private Sub HScroll1_Change()
+     HScroll1.Enabled = False
+
+     ' place your code here 
+
+     HScroll1.Enabled = True
+  End Sub
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. Add an HScrollBar control to Form1.
+
+3. Add the following code to the General Declarations section of Form1:
+
+  Private Sub HScroll1_Change()
+      t = Timer
+      While Timer &lt; (t + 2)  ' to give you time to move the mouse
+          DoEvents
+      Wend
+  End Sub
+
+4. Press the F5 key to run the program.
+
+5. Click on the RIGHT ARROW of the HScrollBar control. Note that the RIGHT ARROW
+  appears in a depressed state.
+
+6. Before the RIGHT ARROW of the HScrollBar returns to the raised state, move
+  the mouse off the HScrollBar control and position the mouse over any portion
+  of the client area of Form1.
+
+7. When the RIGHT ARROW of the HScrollBar returns to the raised state, click
+  once on the HScrollBar thumb. Note that the thumb receives focus and begins
+  flashing.
+
+8. Drag the HScrollBar thumb to the the right side of the control. Note that
+  both the RIGHT and LEFT ARROWs of the HScrollBar control are now selected and
+  in a depressed state.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCtrl kbScrollBar kbVBp kbVBp400bug kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217751: HOWTO: Get Current User Locale ID in VB EXE Without Restarting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217751: HOWTO: Get Current User Locale ID in VB EXE Without Restarting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217751/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217751/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217751/","publisher":null,"image":null,"headline":"Q217751: HOWTO: Get Current User Locale ID in VB EXE Without Restarting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217751-howto-get-current-user-locale-id-in-vb-exe-without-restarting">Q217751: HOWTO: Get Current User Locale ID in VB EXE Without Restarting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217751
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbActiveX kbAPI kbLocalSvr kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Locale ID (LCID) is a 32-bit value that consists of a language ID plus a
+sort ID and other reserved bits. A language ID is a 16-bit value consisting of a
+primary language ID and a secondary language ID. After changes have been made to
+the Language setting in the Regional Settings applet, it is sometimes necessary
+to get the current user LCID value either in the IDE or within an application
+without closing down the application. This can be done by calling
+GetThreadLocale from within an ActiveX EXE server. The server creates its own
+thread and, by calling GetThreadLocale, the current value can be obtained.
+
+Without using an out-of-process server, the value obtained by calling
+GetThreadLocale from within a standard EXE application might not be current. You
+might also see that the value does not get updated in the IDE.
+
+Some of the API calls that use the LCID as a parameter are GetLocaleInfo,
+GetTimeFormat, and GetDateFormat.
+
+MORE INFORMATION
+================
+
+To create server and client programs to illustrate this technique, do the
+following:
+
+Create the ActiveX server to get the current value of the LCID.:
+
+1. Create a new ActiveX EXE project in Visual Basic. Class1 is created by
+  default.
+
+2. In the Class Module, Class1, place the following code:
+
+  Private Declare Function GetThreadLocale Lib "kernel32" () As Long
+  Public Function GetLCID() As Long
+      GetLCID = GetThreadLocale()
+  End Function
+
+3. Click on the Properties menu and select Project1.Properties.
+
+4. On the General tab, set the Project Name and the description to lcidsrvr.
+
+5. Also on the General tab, set the Threading model to Thread Per Object.
+
+6. Click OK.
+
+7. From the File menu, click on the Make Project1.exe item and enter "LCIDsrv"
+  (without the quotation marks) as the name of the EXE.
+
+8. Click OK.
+
+Create the client application and run the example.:
+
+1. Bring up another instance of Visual Basic and create a Standard EXE project.
+  Form1 is created by default.
+
+2. Place a TextBox (Text1) and a CommandButton (Command1) on Form1.
+
+3. Place the following code in the General Declarations section of Form1:
+
+  Private Declare Function GetThreadLocale Lib "kernel32" () As Long
+  Private Sub Command1_Click()
+      Dim LCID As Long
+      Dim oLCID As Object
+      ' Use out of proc server to get LCID in separate thread
+      Set oLCID = CreateObject("lcidsrvr.class1")
+      LCID = oLCID.GetLCID
+      Text1.Text = LCID &amp; " (" &amp; Hex$(LCID) &amp; ")"
+  End Sub
+
+4. Bring up the Regional Settings applet by clicking on the Start button and
+  selecting Settings. Click on Control Panel, and then click on Regional
+  Settings.
+
+5. Set the Language on the Regional Settings tab to English (United States) and
+  click the Apply button. (If the Language is already set to English (United
+  States), leave as is.)
+
+6. Run the application and click Command1. You should see the current value of
+  the LCID appear in the TextBox. For US English, this value is 1033 or 409
+  hex.
+
+7. Change the Language in Regional Settings to English (United Kingdom) and
+  click the Apply button.
+
+8. Click Command1 and the LCID value displayed in the TextBox is 2057 or 809
+  hex.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbAPI kbLocalSvr kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

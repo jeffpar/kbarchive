@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q242478: PRB: DAO Recordset RecordCount Incorrect When Based on Text File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q242478: PRB: DAO Recordset RecordCount Incorrect When Based on Text File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/242/Q242478/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/242/Q242478/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/242/Q242478/","publisher":null,"image":null,"headline":"Q242478: PRB: DAO Recordset RecordCount Incorrect When Based on Text File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q242478-prb-dao-recordset-recordcount-incorrect-when-based-on-text-file">Q242478: PRB: DAO Recordset RecordCount Incorrect When Based on Text File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q242478
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:5.0,6.0
+Operating System(s): 
+Keyword(s): kbDAOsearch kbDAO350 kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbDAO360
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Jet Text ISAM Driver to open a Recordset based on a delimited or
+fixed width text file, the count returned from the RecordCount property is
+incorrect.
+
+DAO 3.51 and DAO 3.6 may yield different results, however both are incorrect.
+
+Testing text files with a varying number of rows and types of delimiters yielded
+the following results:
+
++---------------------------------------------------------+
+| Type of File          | Actual Rows | 3.51 RecordCount* | 
++---------------------------------------------------------+
+| Tab-delimited         | 17          | 22                | 
++---------------------------------------------------------+
+| CSV                   | 20          | 27                | 
++---------------------------------------------------------+
+| Semicolon delimited   | 29          | 42                | 
++---------------------------------------------------------+
+| Fixed Width           | 30          | 32                | 
++---------------------------------------------------------+
+| Fixed Width           | 60          | 65                | 
++---------------------------------------------------------+
+| Semicolon delimited** | 3           | 3                 | 
++---------------------------------------------------------+
+
+*The RecordCount returned when using DAO 3.6 are different from the values
+earlier.
+**A file with a very small number of rows may return the correct record count.
+
+RESOLUTION
+==========
+
+If you require an accurate record count of the Recordset, add a user defined
+counter within a loop, incrementing it by one as you loop through the entire
+Recordset.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. Create a standard exe project in Visual Basic.
+
+2. Choose References from the Project menu and select the Microsoft DAO Library.
+
+3. Paste the following code into the form code window in the form load event.
+
+  Dim dbstext As DAO.Database
+  Dim rst1 As DAO.Recordset
+  Dim lngRecCount As Long
+
+  'C:\MyDir\TextFileDir is a directory where a tab delimited file named Orders.txt resides.
+  'Orders.txt is a comma delimited file created from exporting the Orders table from Northwind.mdb.
+  Set dbstext = OpenDatabase("C:\MyDir\TextRecCount", False, True, "Text;")
+
+  Set rst1 = dbstext.OpenRecordset("Orders")
+
+  rst1.MoveLast
+  MsgBox rst1.RecordCount
+
+  rst1.MoveFirst
+
+  lngRecCount = 0
+
+  rst1.MoveFirst
+
+  Do Until rst1.EOF
+     lngRecCount = lngRecCount + 1
+     rst1.MoveNext
+  Loop
+  MsgBox lngRecCount
+
+4. Run the code and note the different count in the two message boxes.
+
+If you are currently relying on the value of the RecordCount property to control
+the number of times a loop executes, use the Recordset's BOF and EOF Properties
+to determine when the Recordset has reached the first or last record. See the
+loop in the earlier example.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDAOsearch kbDAO350 kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbDAO360 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

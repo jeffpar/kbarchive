@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q96826: Delete Sentry Automatically Purges Files When Necessary | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q96826: Delete Sentry Automatically Purges Files When Necessary" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/096/Q96826/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/096/Q96826/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/096/Q96826/","publisher":null,"image":null,"headline":"Q96826: Delete Sentry Automatically Purges Files When Necessary","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q96826-delete-sentry-automatically-purges-files-when-necessary">Q96826: Delete Sentry Automatically Purges Files When Necessary</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q96826
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Microsoft Undelete is using the Delete Sentry level of protection, files
+that are deleted are stored in a hidden SENTRY directory in the root of the
+drive. These files are automatically purged from the drive under the following
+conditions:
+
+- MS-DOS requires the disk space. For example, if the drive is full and you are
+  saving updates to a data file, enough files are removed from the hidden
+  SENTRY directory so that you can save your data.
+
+- Files in the hidden SENTRY directory are taking up too much space on the
+  drive. By default, Delete Sentry allows files to take a maximum of 20% of
+  total the drive space.
+
+- Files in the hidden SENTRY directory are too old. By default, files are saved
+  for seven days. Purging of old files occurs when Microsoft Undelete is loaded
+  (typically from the AUTOEXEC.BAT file).
+
+In each case, files are purged in chronological order (oldest first).
+
+MORE INFORMATION
+================
+
+You can adjust the maximum amount of disk space allowed for deleted files or the
+number of days to save deleted files.
+
+To change options using Microsoft Undelete for Windows:
+
+1. From the Options menu, choose Configure Delete Protection.
+
+2. Select Delete Sentry and choose the OK button.
+
+3. In the Configure Delete Sentry dialog box, set the Maximum Number Of Days To
+  Save Deleted Files and Maximum % Of Disk Space For Deleted Files.
+
+4. Choose the OK button.
+
+  -or-
+
+  Use a text editor to change the [Configuration] section of the UNDELETE.INI
+  file:
+
+  1. Set percentage= to the maximum percentage of disk space for deleted files.
+
+  2. Set days= to the maximum number of days to save deleted files. For
+     example:
+
+  [configuration]
+  days=5
+  percentage=50
+
+The next time you load Undelete, the new settings are active.
+
+For more information, see "Purging Files Protected by Delete Sentry" in the
+"Managing Your System" chapter of the "Microsoft MS-DOS 6 User's Guide," the
+"Configuring Delete Sentry" topic in Undelete for Windows Help, or type "help
+undelete" (without the quotation marks) and refer to the Notes section.
+
+Additional query words: 6.22 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

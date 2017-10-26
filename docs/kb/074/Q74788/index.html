@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q74788: Using Near and Far Pointers with C Run-Time Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q74788: Using Near and Far Pointers with C Run-Time Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/074/Q74788/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/074/Q74788/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/074/Q74788/","publisher":null,"image":null,"headline":"Q74788: Using Near and Far Pointers with C Run-Time Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q74788-using-near-and-far-pointers-with-c-run-time-functions">Q74788: Using Near and Far Pointers with C Run-Time Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q74788
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In an application designed for the Microsoft Windows graphical environment, many
+C run-time functions do not work with memory allocated by the GlobalAlloc()
+function when the application is developed in the small or medium memory model.
+
+MS-DOS (non-Windows) applications written in the small or medium memory model
+assume the presence of only one data segment (DS). Therefore, the C Run-time
+functions assume that DS will not change.
+
+However, an application can store data in a block of memory allocated with the
+GlobalAlloc() function and locked with the GlobalLock() function. The segment
+returned from GlobalLock() will be different from the application's data
+segment. Specifying the alternate data segment in a C run-time function that
+assumes a near pointer results in the following C compiler warning:
+
+  WARNING: Segment Lost in Conversion
+
+For example, the following code passes far pointers to a Run-time function
+incorrectly:
+
+     hMem = GlobalAlloc (...);
+     lpMem = GlobalLock (hMem);
+
+     strcpy (szBuffer, lpMem);
+
+     GlobalUnlock (hMem);
+
+This section of incorrect code produces one of two results.
+
+1. If the offset of lpMem extends past the end of application's data segment
+  (DS), the application experiences an unrecoverable application error (UAE).
+
+2. The function copies information from some random portion of the application's
+  DS into the buffer.
+
+If the following line of code is used, the function overwrites data in the
+application's data segment, which causes the application to crash or run
+incorrectly:
+
+     strcpy (lpMem, szBuffer);
+
+Four ways to work around this situation are:
+
+1. For the most common C run-time functions, Windows provides equivalent
+  functions that use far pointers. These functions include:
+
+     lstrcat()
+     lstrcmp()
+     lstrcmpi()
+     lstrcpy()
+     lstrlen()
+
+2. Use the far pointer versions of these functions (_fstrcat(), _fstrcmp(), and
+  so on) provided by the Microsoft C Optimizing Compiler versions 6.0 and
+  later.
+
+3. For the less common C Run-time functions, write a far-pointer version as part
+  of the application code. Most of the Microsoft C Run-time library source code
+  is available from Microsoft.
+
+4. Use the large memory model.
+
+  NOTE: Using the large memory model in Windows 3.0 had many disadvantages and
+  doing so was not encouraged. These problems were corrected in Windows 3.1 and
+  Microsoft C/C++ compiler. Hence, using the large memory model is not a
+  problem.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

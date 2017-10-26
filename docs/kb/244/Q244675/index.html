@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244675: HOWTO:Use Windows Scripting Host to Read, Write, Delete Registry | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244675: HOWTO:Use Windows Scripting Host to Read, Write, Delete Registry" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244675/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244675/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244675/","publisher":null,"image":null,"headline":"Q244675: HOWTO:Use Windows Scripting Host to Read, Write, Delete Registry","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244675-howtouse-windows-scripting-host-to-read-write-delete-registry">Q244675: HOWTO:Use Windows Scripting Host to Read, Write, Delete Registry</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244675
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbWSH kbGrpDSFox kbDSupport kbCodeSnippe
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IMPORTANT: This article contains information about modifying the registry.
+Before you modify the registry, make sure to back it up and make sure that you
+understand how to restore the registry if a problem occurs. For information
+about how to back up, restore, and edit the registry, click the following
+article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+The Microsoft Windows Script Host (WSH) is a tool that allows you to run
+Microsoft Visual Basic Scripting Edition and Microsoft JScript natively within
+the base operating system, either on Microsoft Windows 95 or Microsoft Windows
+NT 4.0. It also includes several COM automation methods that allow you to do
+several handy tasks easily through the Windows Script Host Object Model.
+
+The Microsoft Windows Script Host is integrated in Windows 98. It is available
+for Windows NT 4.0 from within the Windows NT 4.0 Option Pack. It is also
+available for download from the following site:
+
+  Http://www.msdn.microsoft.com/scripting/
+
+The Windows Script Host provides several useful methods to read, write, and
+delete registry keys easily. The RegWrite function's third parameter allows the
+programmer to specify the type of data added to the registry. RegWrite supports
+strType as REG_SZ, REG_EXPAND_SZ, REG_DWORD and REG_BINARY. If another data type
+is passed as strType, RegWrite returns E_INVALIDARG.
+
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+The Microsoft Visual FoxPro code below demonstrates several examples of reading,
+writing, and deleting registry keys and values.
+
+  WSHShell = CreateObject("WScript.Shell")
+   
+  *!* Create Registry Keys
+  WSHShell.Popup( "Create key HKCU\MyRegKey with value 'Top level key'")
+  WSHShell.RegWrite( "HKCU\MyRegKey\", "Top level key")
+   
+  WSHShell.Popup( "Create key HKCU\MyRegKey\Entry with value 'Second level key'")
+  WSHShell.RegWrite( "HKCU\MyRegKey\Entry\", "Second level key")
+   
+  WSHShell.Popup( "Set value HKCU\MyRegKey\Value to REG_SZ 1")
+  WSHShell.RegWrite ("HKCU\MyRegKey\Value", 1)
+   
+  WSHShell.Popup( "Set value HKCU\MyRegKey\Entry to REG_DWORD 2")
+  WSHShell.RegWrite( "HKCU\MyRegKey\Entry", 2, "REG_DWORD")
+   
+  WSHShell.Popup( "Set value HKCU\MyRegKey\Entry\Value1 to REG_BINARY 3")
+  WSHShell.RegWrite( "HKCU\MyRegKey\Entry\Value1", 3, "REG_BINARY")
+   
+   
+  *!* Read Registry Keys
+  lcValue1 = WSHShell.RegRead("HKCU\MyRegKey\")
+  WSHShell.Popup("Value of HKCU\MyRegKey: " + lcValue1)
+   
+  lcValue2 = WSHShell.RegRead("HKCU\MyRegKey\Entry\")
+  WSHShell.Popup("Value of HKCU\MyRegKey\Entry\: " + lcValue2)
+   
+  lcValue3 = WSHShell.RegRead("HKCU\MyRegKey\Value")
+  WSHShell.Popup("Value of HKCU\MyRegKey\Value: " + lcValue3)
+   
+  lnValue1 = WSHShell.RegRead("HKCU\MyRegKey\Entry")
+  WSHShell.Popup("Value of HKCU\MyRegKey\Entry: " + ALLTRIM(STR(lnValue1)))
+   
+  lnValue3 = WSHShell.RegRead("HKCU\MyRegKey\Entry\Value1")
+  WSHShell.Popup("Value of HKCU\MyRegKey\Entry\Value1: " + ALLTRIM(STR(lnValue3(1))))
+   
+   
+  *!* Delete Registry Keys
+  WSHShell.Popup( "Delete value HKCU\MyRegKey\Entry\Value1")
+  WSHShell.RegDelete( "HKCU\MyRegKey\Entry\Value1")
+   
+  WSHShell.Popup ("Delete key HKCU\MyRegKey\Entry")
+  WSHShell.RegDelete( "HKCU\MyRegKey\Entry\") 
+   
+  WSHShell.Popup ("Delete key HKCU\MyRegKey")
+  WSHShell.RegDelete( "HKCU\MyRegKey\")
+
+REFERENCES
+==========
+
+You can find the papers below on the following Web site:
+
+  Http://www.msdn.microsoft.com/scripting/
+
+White paper: Windows Script Host: A Universal Scripting Host for Scripting
+Languages
+
+Technical Paper: Windows Script Host Programmer's Reference
+
+For additional information about using Visual FoxPro and the Windows Script Host,
+please click the article numbers below to view the article in the Microsoft
+Knowledge Base:
+
+  Q244677 HOWTO: Create a Desktop Shortcut Using the Windows Script Host
+
+  Q244676 HOWTO: Map, Delete and Enumerate Network Drives Using the Windows
+  Script Host
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbWSH kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

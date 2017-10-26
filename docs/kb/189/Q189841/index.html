@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189841: XCLN: Corrupt Calendar Causes &quot;Unable to Open This Item&quot; Message | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189841: XCLN: Corrupt Calendar Causes &quot;Unable to Open This Item&quot; Message" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189841/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189841/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189841/","publisher":null,"image":null,"headline":"Q189841: XCLN: Corrupt Calendar Causes &quot;Unable to Open This Item&quot; Message","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189841-xcln-corrupt-calendar-causes-unable-to-open-this-item-message">Q189841: XCLN: Corrupt Calendar Causes "Unable to Open This Item" Message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189841
+Product(s): Microsoft Exchange
+Version(s): 5.5,8.0,8.01,8.02,8.03
+Operating System(s): 
+Keyword(s): 
+Last Modified: 06-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+- Microsoft Outlook 2002 
+- Microsoft Outlook 2000 
+- Microsoft Outlook 98 
+- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open an appointment or meeting request in your Outlook
+Calendar, the following error may occur:
+
+  Unable to open this item.
+
+Closing and reopening the Outlook client and/or recreating the meeting request
+has no effect on this error message.
+
+CAUSE
+=====
+
+This error can occur if any of the following become corrupt:
+
+- The Calendar information in your Outlook client
+
+- Items in the Calendar
+
+- The Calendar folder
+
+WORKAROUND
+==========
+
+If deleting and recreating the items that cannot be opened does not correct the
+problem, perform the following steps:
+
+1. Back up all mailbox information by downloading messages to a PST. Personal
+  Folders can be added to your profile by selecting Services from the Tools
+  menu and choosing Add.
+
+2. In the Outlook client, select Import and Export from the File menu.
+
+3. Follow the Import and Export Wizard and select Export to a File.
+
+4. Select a file name and select Calendar as the file to Export from.
+
+5. Delete the Calendar folder; to do this, start an Exchange Client from the
+  command line by typing "exchng32" (without the quotation marks). The calendar
+  folder can be deleted from the Exchange Client because it is viewed as a
+  standard folder and not a required Calendar folder.
+
+6. Recreate the Calendar folder by starting Outlook from the command line using
+  "Outlook /resetfolders" (without the quotation marks).
+
+7. Move all messages back from the PST to the mailbox. From the File menu,
+  choose Import and Export and follow the Import and Export Wizard to import
+  the Calendar data from the file created in steps 3 and 4 above.
+
+Additional query words: 8.5
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbOutlook97 kbZNotKeyword2 kbOutlook2000Search kbOutlook2002Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbOutlook803
+Version           : :5.5,8.0,8.01,8.02,8.03
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

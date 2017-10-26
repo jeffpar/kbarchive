@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165445: XCON: How to Configure TP4 Protocol over Routers | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165445: XCON: How to Configure TP4 Protocol over Routers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165445/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165445/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165445/","publisher":null,"image":null,"headline":"Q165445: XCON: How to Configure TP4 Protocol over Routers","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165445-xcon-how-to-configure-tp4-protocol-over-routers">Q165445: XCON: How to Configure TP4 Protocol over Routers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165445
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When configuring the TP4 protocol over routers, if the router is capable of
+understanding the ES-IS protocol there is no need to specify static routes or
+default gateways. If the router doesn't understand the ES-IS protocol, you might
+need to add Static Routes to the OSIRTE file.
+
+This file is located in your %windir%\system32\drivers\etc directory. The file
+includes comments on how to add routing table entries.
+
+
+The following is a sample OSIRTE file.
+
+  ;
+  ;       Static Routing table entries use the format as follows:
+  ;
+  ;       NSAP:MAC/X.121 address:Priority:CardChoice
+  ;
+  ;       Where;
+  ;       NSAP = The remote ES's NSAP you want to communicate with
+  ;
+  ;       MAC = The ethernet address and is always an Hex format
+  ;
+  ;       X.121 address must be encoded in hex as 703701020304..and so on
+  ;
+  ;       Priority =  0 or 1.
+  ;
+  ;       CardChoice = ndis device name. I know it is cumbersome
+  ;       Use the System-CurrentControl-services-Isotp-Linkage-&gt;bind of RegDB
+  ;       Key values as shown. (NOTE: Streams is omitted from ndis_dev name)
+  ;
+  ;       NO BLANK SPACES ALLOWED IN THESE ENTRIES
+  ;       RemoteNSAP can be ASCII. A $ implies HEX encoding for 1st &amp; 2nd
+  ;       field.
+  ;
+  ;       Lets take an example. If you want to route a destination whose
+  ;       NSAP is FIRSTPLACE on Etherlink 3 card to an IS system whose
+  ;       MAC address is 010203040506 the entry would loook like
+  ;
+  ;       FIRSTPLACE:$010203040506:1:\Device\Elnk31
+  ;
+  ; The static routes are as defined below
+  ;
+  ; The 1st line is priority 0 route for NSAP 474747(hex)
+  ; The 2nd line is alternate route for NSAP GEE ( hex:474747)
+  ; Where as 2rd line is highest priority for NSAP GGG but on FDDI card.
+  ; Now the card with subnet id = 0 will be the 1st one used.
+  ;
+  ;$474747:$112233445566:0:\Device\Elnk31
+  ;GGG:$010203040506:1:\Device\Elnk31
+  ;GGG:$010203040506:0:\Device\SkFddiFe2
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

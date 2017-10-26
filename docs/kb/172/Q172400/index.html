@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172400: PRB: Class Wizard Overridables Are Not Added to Converted Proj | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172400: PRB: Class Wizard Overridables Are Not Added to Converted Proj" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172400/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172400/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172400/","publisher":null,"image":null,"headline":"Q172400: PRB: Class Wizard Overridables Are Not Added to Converted Proj","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172400-prb-class-wizard-overridables-are-not-added-to-converted-proj">Q172400: PRB: Class Wizard Overridables Are Not Added to Converted Proj</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172400
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:1.52; winnt:5.0,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbMFC kbVC kbVC400bug kbVC500fix kbVC600 kbClassWizard kbDSupport kbGrpDSMFCAT
+Last Modified: 17-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+- Microsoft Visual C++, version 1.52 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ClassWizard generated applications created in Visual C++ versions 2.0 and later
+give the user the ability to override some MFC virtual functions through the
+ClassWizard interface. However, ClassWizard projects converted to Visual C++
+32-bit edition from Visual C++ 16-bit edition do not have this ability.
+
+MORE INFORMATION
+================
+
+To reproduce this problem:
+
+1. Start Visual C++, 16-bit edition, and create an AppWizard-generated
+  application.
+
+2. Close Visual C++, 16-bit edition.
+
+3. Start Visual C++, 32-bit edition.
+
+4. From the File menu, open the 16-bit project's make file by selecting Open in
+  Visual C++ 2.x, or Open Workspace in Visual C++ 4.0 and later. Visual C++
+  will ask if you want to convert the make file. Click yes.
+
+5. Start ClassWizard. From the dialog box, choose the CWinApp-derived class name
+  from the Class Name list box, then choose the CWinApp-derived class name from
+  the Object IDs list box. Notice that no messages are listed in the Messages
+  list box.
+
+6. Close this project and create a new AppWizard-generated application in Visual
+  C++ versions 2.0 and later. Repeat step 5. Notice the overridable functions
+  available to the CWinApp-derived class in ClassWizard.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbMFC kbVC kbVC400bug kbVC500fix kbVC600 kbClassWizard kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC152 kbVC500Search
+Version           : WINDOWS:1.52; winnt:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

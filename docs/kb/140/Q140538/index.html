@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140538: HOWTO: How to Do Away with the Print Dialog Box in MFC Printing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140538: HOWTO: How to Do Away with the Print Dialog Box in MFC Printing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140538/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140538/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140538/","publisher":null,"image":null,"headline":"Q140538: HOWTO: How to Do Away with the Print Dialog Box in MFC Printing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140538-howto-how-to-do-away-with-the-print-dialog-box-in-mfc-printing">Q140538: HOWTO: How to Do Away with the Print Dialog Box in MFC Printing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140538
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbcode kbprint kbCmnDlgPrint kbMFC kbPrinting kbVC150 kbVC200 kbVC400 kbVC420
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By design, a Print dialog box is displayed in MFC printing. This dialog box
+allows the user to change the printer settings before a printer device context
+(DC) is created. However, there are cases when the print dialog box is not a
+good idea. This article provides a way to bypass the Print dialog box for a
+print job.
+
+MORE INFORMATION
+================
+
+CView::OnPreparePrinting is the first virtual function called during the print
+process. It is also called during print preview. AppWizard provides an
+implementation of OnPreparePrinting that calls CView::DoPreparePrinting.
+DoPreparePrinting displays the print dialog box for actual printing but not for
+print preview.
+
+Therefore, in OnPreparePrinting, if CPrintInfo::m_bPreview is FALSE (an actual
+print job), set it to TRUE before calling DoPreparePrinting(). This makes
+DoPreparePrinting believe that the current context is that of print preview so
+the print dialog box isn't shown. After DoPreparePrinting returns, reset the
+variable to FALSE to let the print job go on uninterrupted.
+
+The following sample code prevents the Print dialog box from appearing without
+affecting the print process.
+
+Sample Code
+-----------
+
+  BOOL CMyView::OnPreparePrinting(CPrintInfo* pInfo)
+  {
+        if ( pInfo-&gt;m_bPreview )        // normal print preview
+              return DoPreparePrinting(pInfo);
+
+  // actual printing
+        pInfo-&gt;m_bPreview = TRUE;
+        BOOL bRetval = DoPreparePrinting( pInfo );
+        pInfo-&gt;m_bPreview = FALSE;
+        return bRetval;
+  }
+
+REFERENCES
+==========
+
+For more information about the MFC printing, please refer to the Programming
+with the Microsoft Foundation Class Library in Books Online.
+
+Additional query words: kbinf 1.50 1.51 1.52 1.00 2.00 2.10 2.20 2.50 2.51 2.52 3.00 3.10 3.20
+
+======================================================================
+Keywords          : kbcode kbprint kbCmnDlgPrint kbMFC kbPrinting kbVC150 kbVC200 kbVC400 kbVC420 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0,4.1,4.2
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186378: FIX: Keywords in WHERE Clause Cause Oracle ODBC Driver Errors | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186378: FIX: Keywords in WHERE Clause Cause Oracle ODBC Driver Errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186378/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186378/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186378/","publisher":null,"image":null,"headline":"Q186378: FIX: Keywords in WHERE Clause Cause Oracle ODBC Driver Errors","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186378-fix-keywords-in-where-clause-cause-oracle-odbc-driver-errors">Q186378: FIX: Keywords in WHERE Clause Cause Oracle ODBC Driver Errors</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186378
+Product(s): Open Database Connectivity (ODBC)
+Version(s): Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
+Operating System(s): 
+Keyword(s): kbDatabase kbDriver kbODBC kbOracle kbVBp600fix kbODBC200bug kbODBC250 kbGrpDSVCDB kbGr
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.0, versions Build 2.73.7269, Build 2.73.7283.01, Build 2.73.7283.03 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Oracle Driver parses the string contents of the WHERE clause for
+SQL keywords. For example:
+
+  SELECT * FROM PRBSPACE WHERE C1 = 'For Your Eyes Only'
+
+Some SQL keywords generate different errors. The SQL keywords must be followed by
+a space to cause the problem. The sample provided later shows the problem with
+the FOR and SELECT keywords. The problem is case insensitive and the ORDER and
+GROUP keywords also cause the same problem.
+
+STATUS
+======
+
+This has been fixed in the 2.573.2927 version or later of the Microsoft Oracle
+ODBC driver. The 2.573.2927 driver is available in Visual Studio 6.0 and
+Microsoft Data Access Components version 2.0.
+
+This also has been fixed in 2.573.4403.00 version of the Microsoft Oracle ODBC
+driver and is available in Microsoft Data Access Component (MDAC) version 2.5.
+
+The current MDAC components can be downloaded at from the following Web address:
+
+  http://www.microsoft.com/data/
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior in ODBCTest
+---------------------------------------
+
+First, create the table:
+
+  CREATE TABLE PRBSPACE (C1 VARCHAR(20))
+
+  INSERT INTO PRBSPACE VALUES ('For Your Eyes Only')
+  INSERT INTO PRBSPACE VALUES ('Select a Word')
+  INSERT INTO PRBSPACE VALUES ('This is a test')
+
+1. FULL CONNECT(Use Driver).
+
+2. SET CURSOR ATTRIBUTES
+
+  SQL_CURSOR_KEYSET_DRIVEN=1
+  SQL_CONCUR_VALUES=4
+
+  Click OK.
+
+3. Type the following SQL in the Execute window:
+
+  "SELECT * FROM PRBSPACE WHERE C1 = 'For Your Eyes Only'" (without the
+  quotation marks)
+
+4. SQLPrepare.
+
+5. SQLExecute.
+
+6. SQLBindCol.
+
+7. SQLExtendedFetch.
+
+RESULTS:
+
+Return: SQL_NO_DATA_FOUND=100
+
+To show that the steps above work, use the following SQL Statement:
+
+  SQLCancel
+
+Change the WHERE clause string to (this works):
+
+  SELECT * FROM PRBSPACE WHERE C1 = 'This is a test'
+
+Follow steps 4 through 7. No Error, and data is returned.
+
+To show that different KEYWORDS are effecting the query try the following:
+
+  SQLCancel
+
+Change the WHERE clause to:
+
+  SELECT * FROM PRBSPACE WHERE C1 = 'Select a Word'
+
+Follow steps 4 through 7. Now the error occurs on the SQLPrepare:
+
+  [Microsoft][ODBC driver for Oracle]Cannot use Keyset-driven cursor on join,
+  with distinct clause, union, intersect or minus or on read only result set.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbDriver kbODBC kbOracle kbVBp600fix kbODBC200bug kbODBC250 kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDACNoSweep 
+Technology        : kbAudDeveloper kbODBCSearch kbODBCOracle2737269 kbODBCOracle273728303 kbODBCOracle273728301 kbODBCOracle200Search
+Version           : :Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

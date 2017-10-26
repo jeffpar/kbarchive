@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129977: Recommended Naming Conventions for Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129977: Recommended Naming Conventions for Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129977/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129977/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129977/","publisher":null,"image":null,"headline":"Q129977: Recommended Naming Conventions for Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129977-recommended-naming-conventions-for-visual-foxpro">Q129977: Recommended Naming Conventions for Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129977
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbvfp300 kbvfp600
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For consistency, readability, and making troubleshooting a little easier,
+standard naming conventions should be used in programming. Some naming
+conventions are required for sample code. This article gives the recommended
+standard naming conventions for constants, variables, objects, tables, and
+windows in Visual FoxPro. This information is available in Help by typing the
+following in the Command Window:
+
+     HELP naming conventions
+
+MORE INFORMATION
+================
+
+Constant Naming Conventions
+---------------------------
+
+Syntax: NAME
+Example: #DEFINE MAX_VALUE 10
+
+Render constants in all uppercase letters.
+
+Variable Naming Conventions
+---------------------------
+
+Syntax: [Scope]TypeName
+
+The Scope prefix is recommended but not required. In some cases, explicit scoping
+does not apply. For example, in the main program of a stand-alone application,
+there is no difference in visibility for variables scoped as PUBLIC or PRIVATE.
+Scope specifies the range of reference for the variable. For example, local
+variables can be referenced only within the procedure that defines them. Public
+variables are accessible from anywhere in the application. The choices for Scope
+are:
+
+  Scope  Description          Example
+  ---------------------------------------
+  l      Local                lnCounter
+  p      Private (default)    pnStatus
+  g      Public (global)      gnOldRecno
+  t      Parameter            tnRecNo
+
+The Type prefix is always relevant and is required in sample programs. Type
+specifies the data type for the variable. The choices for Type are:
+
+  Type   Description    Example
+  -----------------------------------
+  a      Array          aMonths
+  c      Character      cLastName
+  y      Currency       yCurrentValue
+  d      Date           dBirthDay
+  t      Datetime       tLastModified
+  b      Double         bValue
+  f      Float          fInterest
+  l      Logical        lFlag
+  n      Numeric        nCounter
+  o      Object         oEmployee
+  u      Unknown        uReturnValue
+
+Object Naming Conventions
+-------------------------
+
+Syntax: PrefixName
+
+Follow this suggested format for naming objects. The choices for Prefix are:
+
+  Prefix           Object           Example
+  ---------------------------------------------------
+  chk              check box        chkReadOnly
+  cbo              ComboBox         cboEnglish
+  cmd              CommandButton    cmdCancel
+  cmg              CommandGroup     cmgChoices
+  cnt              Container        cntMoverList
+  ctl              Control          ctlFileList
+  &lt;user-defined&gt;   Custom           user-defined
+  edt              EditBox          edtTextArea
+  frm              Form             frmFileOpen
+  frs              FormSet          frsDataEntry
+  grd              Grid             grdPrices
+  grc              Column           grcCurrentPrice
+  grh              Header           grhTotalInventory
+  img              Image            imgIcon
+  lbl              Label            lblHelpMessage
+  lin              Line             linVertical
+  lst              list box          lstPolicyCodes
+  olb              OLEBoundControl  olbObject1
+  ole              OLE              oleObject1
+  opt              OptionButton     optFrench
+  opg              OptionGroup      opgType
+  pag              Page             pagDataUpdate
+  pgf              PageFrame        pgfLeft
+  sep              Separator        sepToolSection1
+  shp              Shape            shpCircle
+  spn              Spinner          spnValues
+  txt              text box          txtGetText
+  tmr              Timer            tmrAlarm
+  tbr              ToolBar          tbrEditReport
+
+Table Field Naming Conventions
+------------------------------
+
+Syntax: Alias.TypeName
+Arguments: Type
+
+Follow this suggested format for naming fields in tables. These conventions are
+recommended, not required. Type specifies the data type for a field in a table.
+The choices for Type are:
+
+  Type  Description    Example
+  -------------------------------------
+  c     Character    Customer.cLastName
+  d     Date         Customer.dBirthDay
+  t     Datetime     Customer.tLastMod
+  b     Double       Customer.bRate
+  f     Float        Customer.fValue
+  g     General      Customer.gPicture
+  l     Logical      Customer.lSellMail
+  m     Memo         Customer.mComments
+  y     Currency     Customer.yYearTDate
+  n     Numeric      Customer.nItems
+  i     Integer      Customer.iCustID
+
+Window Naming Conventions
+-------------------------
+
+Syntax: wName
+Example:
+
+  DEFINE WINDOW wCustomerInvoices ;
+                FROM nFirstRow, nFirstColumn TO nLastRow, nLastColumn
+
+Follow this suggested format for naming windows. Do not use a prefix on class
+definitions. Use prefixes only when the object is instantiated.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP600
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

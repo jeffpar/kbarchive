@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124823: ADK/ADT: How to Create Pop-up, Context-Sensitive Help | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124823: ADK/ADT: How to Create Pop-up, Context-Sensitive Help" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124823/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124823/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124823/","publisher":null,"image":null,"headline":"Q124823: ADK/ADT: How to Create Pop-up, Context-Sensitive Help","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124823-adkadt-how-to-create-pop-up-context-sensitive-help">Q124823: ADK/ADT: How to Create Pop-up, Context-Sensitive Help</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124823
+Product(s): Microsoft Access Distribution Kit
+Version(s): WINDOWS:1.1,2.0
+Operating System(s): 
+Keyword(s): kbprogramming
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Access Distribution Kit, version 1.1 
+- Microsoft Access Developer's Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+One alternative to displaying your application's online Help system in a separate
+window is to display it in a small, shaded pop-up window within your
+application. To do so, you can use the Windows API WinHelp() function with its
+HELP_CONTEXTPOPUP argument. This article describes how to implement such a Help
+system.
+
+This article assumes that you are familiar with Access Basic and with creating
+Microsoft Access applications using the programming tools provided with
+Microsoft Access. For more information about Access Basic, please refer to the
+"Introduction to Programming" manual in Microsoft Access version 1.x, or the
+"Building Applications" manual in version 2.0.
+
+This article also assumes that you are familiar with creating Windows Help files.
+For more information about creating Help files, refer to the "Help Compiler
+Guide" included with the Microsoft Access Distribution Kit version 1.1 and the
+Microsoft Access Developer's Toolkit version 2.0.
+
+MORE INFORMATION
+================
+
+The Windows API WinHelp() function supports a large number of options. The
+HELP_CONTEXTPOPUP option opens a shaded pop-up window for you to display Help
+in. This window is similar to the window that opens when you click a glossary
+entry (green underlined text) in the Microsoft Access Help system.
+
+To implement this feature you need to:
+
+- Create a working Help system by setting the HelpContextID and HelpFile
+  properties for your forms to a valid Windows Help file.
+
+- Redirect the F1 key to call a user-defined function that opens the Help file
+  using the HELP_CONTEXTPOPUP option.
+
+Note that jumping or branching to other Help topics from the pop-up Help window
+is not supported using the methods discussed in this article.
+
+The following steps describe how to create the user-defined function to open the
+pop-up Help window and how to redirect the F1 key.
+
+NOTE: In the following sample code, an underscore (_) at the end of a line is
+used as a line-continuation character. Remove the underscore from the end of the
+line when re-creating this code in Access Basic.
+
+1. Open a new module and declare the Windows API WinHelp() and FindWindow()
+  functions by entering the following lines in the module's Declarations
+  section:
+
+  Declare Function WinHelp% Lib "User" (ByVal hwnd%, ByVal _
+     szHelpFile$, ByVal uCmd%, ByVal dwData&amp;)
+  Declare Function FindWindow% Lib "User" (ByVal szClass$, ByVal _
+     szTitle As Any)
+
+  NOTE: You may have some Microsoft Windows API functions defined in an existing
+  Microsoft Access library; therefore, your declarations may be duplicates. If
+  you receive a duplicate procedure name error message, remove or comment out
+  the declarations statement in your code.
+
+2. Enter the following line to add the constant for HELP_CONTEXTPOPUP:
+
+  Const HELP_CONTEXTPOPUP = 8
+
+3. Enter the following code in the module:
+
+  Function Help ()
+     Dim Cid As Integer, Dummy As Integer
+     On Error Resume Next
+     ' Get the HelpContextID of the active control.
+     Cid = Screen.ActiveControl.HelpContextID
+     ' The error is 2474 if no control is active.
+     If Cid = 0 Then
+        ' There is no control context ID, so check the form and get
+        ' the HelpContextID of the active form.
+        Cid = Screen.ActiveForm.HelpContextID
+        ' The error is 2475 if no form is active.
+     End If
+     ' If there is a context ID, open the Help file with context.
+     ' FindWindow() returns the handle of the Microsoft Access window.
+     ' Specify your custom Help file for the second argument.
+     If Cid &gt; 0 And Cid &lt; 32767 Then
+        Dummy = WinHelp(FindWindow("OMain", 0&amp;), "C:\Myhelp.Hlp", _
+        HELP_CONTEXTPOPUP, Cid)
+     End If
+  End Function
+
+4. Create the following new macro called AutoKeys to redirect the F1 key:
+
+     Macro Name   Condition   Action
+     --------------------------------
+     {F1}                     RunCode
+
+     AutoKeys Action
+     ------------------------
+     RunCode
+        Function Name: Help()
+
+REFERENCES
+==========
+
+Microsoft Windows version 3.0 Software Development Kit "Reference Volume 1"
+
+
+Additional query words: pop up popup
+
+======================================================================
+Keywords          : kbprogramming 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3 kbAccessDistKit110
+Version           : WINDOWS:1.1,2.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

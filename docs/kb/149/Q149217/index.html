@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149217: XCLN: Microsoft Exchange Message Size Limitations | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149217: XCLN: Microsoft Exchange Message Size Limitations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149217/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149217/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149217/","publisher":null,"image":null,"headline":"Q149217: XCLN: Microsoft Exchange Message Size Limitations","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149217-xcln-microsoft-exchange-message-size-limitations">Q149217: XCLN: Microsoft Exchange Message Size Limitations</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149217
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0; winnt:4.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 24-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 4.0 
+- Microsoft Exchange MS-DOS client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of 14 questions and answers dealing with Microsoft
+Exchange message and attachment size limitations and the number of messages and
+attachments that can be stored.
+
+MORE INFORMATION
+================
+
+Q. What is the limit to the number of addresses in the header fields?
+
+A. That depends on the client platform. The Win16 limit is smaller than the Win32
+limit, but we have tested with 1500+ on Win16 and 2000+ on Win32. These are
+total recipients because we count To:, Cc:, and Bcc: objects, although
+Distribution Lists count as 1. There is no hard limit, it is based on the amount
+of memory available on the client computer.
+
+Q. What is the limit to the number of distribution lists that can be included in
+the To:, Cc:, and Bcc: fields?
+
+A. It's the same as the limit on the number of addresses.
+
+Q. What is the limit to the number of attachments that can be sent with a single
+message?
+
+A. None, it's based on available disk space. There is a 16GB limit on the
+Microsoft Exchange Server store.
+
+Q. What is the limit to the total size of a message?
+
+A. The total size of the message, including attachments, is only limited by the
+16GB Microsoft Exchange Server store limit. However, the text of the message is
+limited to 1,048,756 characters.
+
+Q. What is the limit to the number of Distribution List nesting levels for
+hierarchical Distribution Lists?
+
+A. None.
+
+Q. What is the limit to the number of folder nesting levels?
+
+A. None.
+
+Q. What is the limit to the number of names that can be contained in a
+Distribution List?
+
+A. 5,000
+
+Q. What is the limit to the number of items that can be contained in a single
+folder?
+
+A. In the personal folders store (PST), it's 16,000. In the Microsoft Exchange
+Server store, there is no limit. Again, it's based on the 16GB storage limit.
+
+Q. What is the limit to the number of messages that can held in the Inbox?
+
+A. In the PST, the basic limitation is that 16,000 messages can be stored in a
+single folder. In the Microsoft Exchange Server, there is no limit. The
+administrator may set a user quota. If the quota is exceeded, the user will not
+be allowed to create or send new messages but they will still receive messages.
+The quota is based on size, not number of messages. In all of this, the only
+real limit is that the Microsoft Exchange Server store cannot be larger than
+16GB. The number of messages that will fit into the 16GB is the real limit and
+with single instance storage the actual limit is much higher.
+
+Q. What is the limit to the number of messages that can be held in the Outbox?
+
+A. All folders are the same, so it's 16,000 for a PST and no limit for the
+Microsoft Exchange Server store.
+
+Q. Is there a limit to the number of times a message can be forwarded?
+
+A. No, however, Microsoft Exchange does perform loop detection for forward rules
+and that limit is 240.
+
+Q. What is the limit to the size of messages that can be sent via gateways or the
+MTA?
+
+A. None, however the Administrator can set limits at each link point (MTA to MTA
+or out gateways). If a message exceeds that limit, the user will receive an
+Non-Delivery Report stating that they have exceeded the size limit.
+
+Q. What is the limit to the number of attachments that can be sent via gateways
+or the MTA?
+
+A. None. The administrative limits can be applied here also, so limits can be set
+for controlling the throughput of a link.
+
+Q. What is size limit for an individual's message store?
+
+A. None. The administrator can set quotas on the Microsoft Exchange Server store,
+but that is an administrative control issue.
+
+Additional query words: faq 1MB megabyte body
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400DOS kbExchange500DOS kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0; winnt:4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

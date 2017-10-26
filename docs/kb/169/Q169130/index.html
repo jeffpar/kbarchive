@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169130: XFOR: MS Mail Migration Fails When User List File Is Specified | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169130: XFOR: MS Mail Migration Fails When User List File Is Specified" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169130/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169130/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169130/","publisher":null,"image":null,"headline":"Q169130: XFOR: MS Mail Migration Fails When User List File Is Specified","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169130-xfor-ms-mail-migration-fails-when-user-list-file-is-specified">Q169130: XFOR: MS Mail Migration Fails When User List File Is Specified</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169130
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 29-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to migrate users and messages from a Microsoft Mail for PC
+Networks postoffice by running the Migration Wizard (Mailmig.exe) from a command
+prompt, the migration may fail. This problem occurs when you use control files
+to specify a user list file. In addition, the following event may appear in the
+event log for each user you attempt to migrate:
+
+  Source: MSExchangeMig
+  Event: 7034
+  Type: Error
+  Category: None
+  Description: User &lt;mailbox&gt; not found in the postoffice &lt;postoffice&gt;.
+
+where &lt;mailbox&gt; is the user's mailbox and &lt;postoffice&gt; is the MS Mail
+(PC) postoffice you are attempting to migrate from. After the migration is
+finished, no users or messages are migrated.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The following event appears in the event log after the migration finishes:
+
+  Source: MSExchangeMig
+  Event: 10068
+  Type: Information
+  Category: None
+  Description: The 'Migration ' of mail from 'Microsoft Mail - &lt;path&gt;'
+  completed with the following results:
+
+  Extraction
+  Start Time:       12:26:15
+  Elapsed Time:     00:00:03
+
+  Accounts:           0
+  Shared folders:     0
+  E-Mail Messages:    0
+  PABs:               0
+  Warnings:           0
+  Errors:            13
+
+  Import
+  Accounts:           0
+  Public folders:     0
+  E-Mail Messages:    0
+  PABs:               0
+  Warnings:           0
+  Errors:             0
+
+where &lt;path&gt; is the full path to the MS Mail (PC) postoffice. This event
+appears in the event log whether or not the migration is successful. Note that
+the number of errors listed on the Errors line in the "Extraction" section
+should be the same as the number of users listed in the user list file.
+
+Additional query words: msmail
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152259: HOWTO: Sync the StatusBar Text with the ToolTip Text | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152259: HOWTO: Sync the StatusBar Text with the ToolTip Text" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152259/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152259/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152259/","publisher":null,"image":null,"headline":"Q152259: HOWTO: Sync the StatusBar Text with the ToolTip Text","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152259-howto-sync-the-statusbar-text-with-the-tooltip-text">Q152259: HOWTO: Sync the StatusBar Text with the ToolTip Text</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152259
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows Common Controls OCX (COMCTL32.OCX) provides a ToolBar
+control and a StatusBar control that you can easily implement in your Visual
+Basic application. There is no built-in method to synchronize these two controls
+such that the StatusBar displays descriptive text for a ToolBar button when the
+mouse is currently located over it. This article illustrates how you can
+implement this behavior within your Visual Basic application.
+
+MORE INFORMATION
+================
+
+Some applications, such as Microsoft PowerPoint, Word, and Excel, will not only
+display a helpful tip when the mouse hovers over a ToolBar button, but will also
+display more descriptive text in the StatusBar to give the user a definition of
+the button's function. Although this feature is not built into the Toolbar and
+StatusBar controls in COMCTL32.OCX, there are ways to mimic its effect in a
+Visual Basic application as described in the following sample.
+
+Steps to Create Sample
+----------------------
+
+1. Create a new Visual Basic project. Form1 is created by default.
+
+2. Select Components from the Projects menu, check "Microsoft Windows Common
+  Controls" and Click OK.
+
+3. Add a ToolBar control to Form1.
+
+4. Add a StatusBar control to Form1.
+
+5. Insert two buttons on the ToolBar by right-clicking the ToolBar control,
+  selecting "Properties," and then the selecting the Buttons Tab.
+
+6. For the first button, Click "Insert Button" and set these properties:
+
+  Property         Value
+  --------         -----
+  Tag              Opens a File
+  ToolTipText      Open
+
+7. For the second button, Click "Insert Button" and set these properties:
+
+  Property         Value
+  --------         -----
+  Tag              Closes a File
+  ToolTipText      Close
+
+8. Right-click the StatusBar control and click Properties. Click the Panels tab
+  and set the AutoSize property of the first panel to "1-sbrSpring."
+
+9. Paste the following code into Form1's code window:
+
+        Private Sub Form_MouseMove(Button As Integer, _
+           Shift As Integer, X As Single, Y As Single)
+           StatusBar1.Panels(1).Text = ""  ' Clear when not over ToolBar
+        End Sub
+
+        Private Sub Toolbar1_MouseMove(Button As Integer, _
+           Shift As Integer, x As Single, y As Single)
+
+           Dim Found As Boolean
+           Dim ToolBarButton As Variant
+           Dim Index As Long
+
+           'Loop through all buttons on the toolbar
+           For Index = 1 To Toolbar1.Buttons.Count
+              'Set reference to button
+              Set ToolBarButton = Toolbar1.Buttons(Index)
+
+              'Check if mouse is positioned over button
+              If (x &gt; ToolBarButton.Left) And _
+                 (x &lt; (ToolBarButton.Left + ToolBarButton.Width)) And _
+                 (y &gt; ToolBarButton.Top) And _
+                 (y &lt; (ToolBarButton.Top + ToolBarButton.Height)) Then
+
+                 'Mouse is over button. Now to avoid screen flickering,
+                 'check if StatusBar needs updating
+                 If StatusBar1.Panels(1).Text &lt;&gt; ToolBarButton.Tag Then
+                    StatusBar1.Panels(1).Text = ToolBarButton.Tag
+                 End If
+
+                 'Set flag indicating a button was found
+                 Found = True
+
+                 'Button has been found, discontinue loop
+                 Exit For
+              End If
+           Next
+
+           If Not Found Then
+              StatusBar1.Panels(1).Text = ""
+           End If
+        End Sub
+
+10. Save and run the sample project. Move the mouse over the two buttons on the
+  ToolBar, and note that the appropriate text will be displayed in the
+  StatusBar's panel depending on which button, if any, the mouse is positioned
+  over.
+
+Additional query words: kbDSupport kbDSD kbCtrl kbVBp500 kbVBp400 kbVBp600 kbVBp
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

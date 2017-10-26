@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100363: HOWTO: How to Use Network DDE | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100363: HOWTO: How to Use Network DDE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100363/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100363/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100363/","publisher":null,"image":null,"headline":"Q100363: HOWTO: How to Use Network DDE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100363-howto-how-to-use-network-dde">Q100363: HOWTO: How to Use Network DDE</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100363
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): kbnetwork kbDDE
+Last Modified: 09-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With Windows for Workgroups, an application can use Dynamic Data Exchange (DDE)
+over a network (NetDDE).
+
+When using normal DDE or DDEML in an application, the various fields were set up
+as follows (using Excel as an example):
+
+ APPLICATION       TOPIC     ITEM
+ Excel             System     Topics
+
+However, to start a DDE conversation over the network, a client application must
+establish the DDE conversation with another machine by specifying the following
+strings for the application name and topic
+
+  application:   \\machine-name\NDDE$
+  topic:           share-name
+
+where the share name is defined in the [DDEShare] section of SYSTEM.INI. The
+default installation of Windows for Workgroups contains the following
+DDEShares:
+
+  [DDEShares]
+  HEARTS$=mshearts,hearts,,15,,0,,0,0,0
+  CLPBK$=clipsrv,system,,31,,0,,0,0,0
+  CHAT$=winchat,chat,,31,,0,,0,0,0
+
+MORE INFORMATION
+================
+
+To illustrate how to use NetDDE, ClipBook will serve as a server example.
+
+The following are specifics about ClipBook:
+
+  Title Bar Caption    = ClipBook Viewer,
+  Executable File Name = Clipbrd.exe,
+  DDE Application Name = clipsrv,
+  DDE Share Name       = CLPBK$
+
+To start a conversation with ClipBook from your application, use the following
+strings:
+
+  APPLICATION             TOPIC        ITEM
+  \\machine-name\NDDE$    CLPBK$     Topics
+
+Under normal DDE, this would be viewed as:
+
+  SERVER NAME       APPLICATION       TOPIC     ITEM
+  \\machine-name    Clipsrv           System     Topics
+
+This will return a list of SHARED "objects" in the ClipBook. Now that you have a
+list of objects, the next step is to query the types of formats available. For
+example, assume that "$Test" was returned as an object. To find a list of
+formats, start a new conversation with ClipBook with the following parameters:
+
+  APPLICATION             TOPIC           ITEM
+  \\machine-name\NDDE$    $Test           FormatList
+
+This will return a list of the formats, each starting with the "&amp;" symbol
+(for example, CF_TEXT will return "&amp;Text").
+
+Using the object name and format type, it is possible to make a connection to the
+server and return the contents of the topic. The last set of parameters is:
+
+  APPLICATION             TOPIC           ITEM
+  \\machine-name\NDDE$    $Test           &amp;Text
+
+If your application wants to share information via NetDDE, use the ClipBook
+program or call one of the NetDDE application programming interfaces (APIs),
+which will create an entry in the [DDEShares] section of SYSTEM.INI. This
+procedure allows other users to access your information.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kbnetwork kbDDE 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

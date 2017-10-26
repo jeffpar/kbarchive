@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157464: WD97: Where Settings Are Stored in the Registry | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157464: WD97: Where Settings Are Stored in the Registry" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157464/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157464/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157464/","publisher":null,"image":null,"headline":"Q157464: WD97: Where Settings Are Stored in the Registry","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157464-wd97-where-settings-are-stored-in-the-registry">Q157464: WD97: Where Settings Are Stored in the Registry</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157464
+Product(s): Word 97 for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdta kbconversion word97kbfaq
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+Word 97 stores all of its settings in the Windows registry; Word 97 no longer
+stores information in an .ini file or in the Winword.opt file the way earlier
+versions of Word did.
+
+This article lists which settings in the Windows Registry pertain to Word 97 for
+Windows. This article is divided into the following sections:
+
+- Main locations of Word settings
+
+- Settings in HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word
+
+- Settings in HKEY\CURRENT_USER\Software\Microsoft\Office\8.0\Common
+
+- Settings in HKEY\CURRENT_USER\Software\Microsoft\MS Setup (ACME)
+
+- Settings in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools
+
+- Miscellaneous settings
+
+- Using the RegOptions macro
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+MAIN LOCATIONS OF WORD SETTINGS
+-------------------------------
+
+Most settings in Word are stored here:
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word
+
+Changes made to the HKEY_CURRENT_USER key are also mirrored in the following
+registry key:
+
+  
+  HKEY_USERS\Default\Software\Microsoft\Office\8.0\Word
+
+The difference between the two locations is that the first one applies only to
+the current user of the system, and the other is the default for all users.
+However, Word entries are the same for both, so any change made to one is
+automatically updated in the other.
+
+For the remainder of this article, all references to the HKEY_CURRENT_USER
+subtree apply also to the HKEY_USERS subtree, except where noted.
+
+Settings in the WORD key
+------------------------
+
+The settings that you may need to examine during troubleshooting are located in
+the following key:
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word
+
+NOTE: The Data subkey and the Options subkey are the most frequently changed
+areas.
+
+Data Subkey:
+
+The Word 97 for Windows equivalent to the Word 6.x Winword.opt file is the Data
+subkey and is located as follows:
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Data
+
+This subkey contains binary information for MRU lists, including the MRU file
+list and the MRU address book list. It also contains the same information as was
+stored in the Winword.opt file in Word for Windows 6.x, such as Track Changes
+settings (Revision settings in Word 6.x) and Edit settings.
+
+Default Save Subkey:
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Default Save
+
+This subkey sets the default format for saving documents. You can change the
+default format Word 97 uses by changing the Save Word Files As setting in Word.
+To locate this option in Word, click Options on the Tools menu, and then click
+the Save tab.
+
+Help Subkey:
+
+This subkey contains the paths for Word's Help files. Word Help, WordPerfect
+Help, and Visual Basic Help paths are found here.
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Help\Files
+
+HTML Subkey:
+
+This subkey contains the default settings for the Web Authoring feature.
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\HTML
+
+The default settings are:
+
+  AutoUpDate             Sets the date to check the Web for updates.
+
+  AutoUpdateAddress      Sets the web address to check for Web updates.
+
+  Bullet Path            Sets the path for web graphical bullets.
+
+  Clipart URL            Sets the web address for new web clipart.
+
+  Dlg Bullet Path        Sets the path for basic web bullets.
+
+  Dlg HorizontalLine     Sets the path for basic web lines.
+
+  HorizontalLine Path    Sets the path for web graphical lines.
+
+  LocalContent           Sets the location for documents containing
+                         default content used by the web page wizard.
+
+  LocalPageStyles        Sets the location for gifs, backgrounds, and
+                         templates used by the web page wizard.
+
+  WebArt Path            Sets the path for local clipart.
+
+Options Subkey:
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Options
+
+This subkey stores those options that you can set from Word, either by changing
+menu options or by running the RegOptions macro. These are the editable
+options.
+
+The settings here fall into two groups: default settings and optional settings.
+Default settings are established during Setup and you can change them by
+modifying options in Word. Optional settings are not created during Setup; to
+add them you must run the RegOptions macro.
+
+The following default settings located here are:
+
+  AutoSpell              Turns Automatic spell checking on or off.
+
+  AutoGrammar            Turns Automatic grammar checking on or off.
+
+  Autosave-Path          Sets default folder for autosave documents.
+
+  BackgroundPrint        Turns background printing on or off.
+
+  BackgroundSave         Turns background saving on or off.
+
+  EnableMacroVirus       Turns macro warning on or off.
+
+  NoEditTime             Turns on and off recording of edit time in
+                         statistics.
+
+  Picture-Path           Sets the path for clip art.
+
+  PlainTextAutoFormat    Sets Autoformat for Wordmail documents.
+
+  ProgramDir             Sets the Word program folder.
+
+  Startup-Path           Sets the path for the startup folder.
+
+  StartWhatIsNew         Turns What is New screen on and off at startup.
+
+  Tools-Path             Sets alternative locations for proofing tools.
+
+  Wordmail-Path          Sets WordMail directory path.
+
+  WPHelp                 Turns WordPerfect Help on or off.
+
+Also, the following optional settings located here are:
+
+  Bak-Extension          Sets default extension for backup files.
+
+  BitMapMemory           Sets memory for internal graphics cache.
+
+  CacheSize              Sets internal document text cache for Word.
+
+  DateFormat             Sets the default date format for Word.
+
+  Doc-Extension          Sets the default extension for Word documents.
+
+  Doc-Path               Sets the default path for documents saved in
+                         Word.
+
+  Dot Extension          Sets the default extension for templates in Word.
+
+  OleDot                 Sets the default template used to create document                           objects in Word or other OLE applications.
+
+  SlowShading            For printers with special drawing function,
+                         allows shading of graphics.
+
+  TimeFormat             Sets the default time format for Word.
+
+  UpdateDictionaryNumber Sets the default order for custom dictionaries.
+
+Stationery Subkey:
+
+This subkey contains the default location for the template for WordMail and the
+links to find the template.
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Stationery
+
+The settings here are:
+
+  Default Template       Sets the path to the template (by default,&lt;BR/&gt;
+                         Email.dot).
+
+  DlgDefTpl              Shows a link to the default template.
+
+  Option                 Shows a link to the default template.
+
+Text Converters Key:
+
+This key contains registration information for Word's text converters. It
+includes the keys for import and export converters. Each converter registers its
+extension, name, and path here.
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Text Converters
+
+NOTE: Three uncommon converters registered here are the Schedule Plus converter,
+the MSPAB converter and the Outlook converter. These converters allow you to use
+contact lists through the Microsoft Word mail merge feature. If these keys are
+removed, Outlook will no longer appear as an available data source for a mail
+merge. The paths are:
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Text Converters\Import\Splus
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Text Converters\Import\MSPAB
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Text Converters\Import\OUTLOOK
+
+Wizards Key:
+
+This key replaces the Wordwiz.ini file from previous versions of Word. All wizard
+defaults are stored here. These setting are created the first time you run a
+wizard.
+
+  
+  Path: HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Wizards
+
+WordMail Key:
+
+This key contains the window position information for WordMail.
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\WordMail
+
+Table of Authorities Key:
+
+This key stores the Category list that appears in the Table of Authorities list
+when you press ALT+SHIFT+I or choose Mark Citation in the Table of Authorities
+dialog box.
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Table of Authorities Categories
+
+The Table of Authorities dialog box can be accessed by choosing Index and Tables
+on the Insert menu.
+
+For example:
+
+  Category 1     "Cases"
+  Category 2     "Statutes"
+  Category 10   "10"
+
+Settings in the COMMON key
+--------------------------
+
+  
+  HKEY_CURRENT_USER\SOFTWARE\MICROSOFT\OFFICE\8.0\COMMON
+
+This key is also used by other Microsoft programs, such as the Office programs.
+Likewise, these settings are shared between programs. Changes made in one
+program's settings also appear in the other programs.
+
+  Assistant      Sets information about the chosen Office Assistant.
+
+  AutoCorrect    Sets the path to the .ACL file (which contains the
+                 AutoCorrect list) and lists the current settings for
+                 AutoCorrect.
+
+  FileNew        This subkey sets the path for LocalTemplates (User
+                 templates) and SharedTemplates (Workgroup templates).
+                 This setting can be changed in Word when you click
+                 Options on the Tools menu and then click the File
+                 Locations tab.
+
+  Internet       Stores settings for FTP sites and icons.
+
+  Open Find      Stores default setting for open and save dialogs in
+                 Microsoft Word, including current view and Filename and
+                 MRU lists.
+
+  Toolbars       Sets Tooltips on or off and sets button sizes for
+                 toolbars.
+
+  Userinfo       Stores user information, including name and initials.
+
+Settings in the MS Setup (ACME) key
+-----------------------------------
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\MS Setup (ACME)
+
+This setting refers to the user's name, which you are prompted to fill in during
+Setup.
+
+  User Info      Sets the user name and company name for Setup usage
+
+Settings in the SHARED TOOLS key
+--------------------------------
+
+This key contains paths for all Windows applets such as Equation, WordArt, and
+MsGraph.
+
+  
+  HKEY_LOCAL_MACHINE\Software\Microsoft\Shared Tools
+
+Paths for the shared graphics filters and text converters are also registered in
+this location. There are two keys here that pertain especially to Word.
+
+This subkey registers Import and Export text converters.
+
+HKEY_Local_Machine\Software\Microsoft\Shared Tools\Text Converters
+
+This subkey registers the Import and Export graphic filters.
+
+HKEY_Local_Machine\Software\Microsoft\Shared Tools\Graphics Filters
+
+In addition, each filter and converter is registered individually. A list of
+clients using a filter, converter, or applet is listed under each tool.
+
+MISCELLANEOUS SETTINGS
+----------------------
+
+The .doc file name extension is registered in HKEY_CLASSES_ROOT in several ways.
+
+Class IDs are in the following locations:
+
+  
+  HKEY_CLASSES_ROOT
+
+  and in
+
+  HKEY_LOCAL_MACHINE
+
+Equation Editor options outlined in the RegOptions Macro are registered in the
+following registry location:
+
+  
+  HKEY_CURRENT_USER\Software\Microsoft\Equation Editor\3.0\Options\General
+
+NOTE: The \Options\General folder does not show up unless options are set.
+
+USING THE REGOPTIONS MACRO
+--------------------------
+
+The RegOptions macro can be used to examine the Windows registry or to make
+changes to Word settings stored there. To run the macro, follow these steps:
+
+1. On the File menu, click Templates and Add-ins.
+
+2. Click Add.
+
+3. Select the \Program Files\Microsoft Office\Office\Macros folder.
+
+4. Select the Support8.Dot file and click OK. This adds the Support8 template to
+  the "Global Templates and Add-ins" box. Click OK.
+
+5. On the Tools menu, point to Macro and then click Macros.
+
+6. In the Macros In drop-down list, select Support8.dot (Template).
+
+7. In the Macros list box, select RegOptions and click Run.
+
+
+Additional query words: regedit reg
+
+======================================================================
+Keywords          : kbdta kbconversion word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

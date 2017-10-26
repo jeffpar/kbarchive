@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248399: MS00-007: Shared Workstation Setup May Permit Access to Recycle | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248399: MS00-007: Shared Workstation Setup May Permit Access to Recycle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248399/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248399/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248399/","publisher":null,"image":null,"headline":"Q248399: MS00-007: Shared Workstation Setup May Permit Access to Recycle","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248399-ms00-007-shared-workstation-setup-may-permit-access-to-recycle">Q248399: MS00-007: Shared Workstation Setup May Permit Access to Recycle</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248399
+Product(s): Microsoft Windows NT
+Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
+Operating System(s): 
+Keyword(s): kbenv kbSecurity kbWinNT400PreSP7Fix kbgraphxlinkcritical KbSECBulletin
+Last Modified: 09-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a shared computer, it may be possible for a user to create a folder in the
+%SystemRoot\Recycler folder that is then assigned to another user based on the
+Security Identifier (SID) number. If you do this, a malicious user may assign
+themselves extended rights to the newly created Recycle Bin folder before it is
+assigned to another user.
+
+This allows someone the ability to insert files into a user's Recycle Bin or
+permanently delete a user's files located in that specific Recycle Bin.
+
+This vulnerability does not allow the malicious user to read the files in the
+Recycle Bin folder.
+
+NOTE: This patch does not apply to computer's that use FAT partitions because
+disk security features cannot be enabled on these computers.
+
+RESOLUTION
+==========
+
+Windows NT 4.0
+--------------
+
+To resolve this problem, obtain the individual package referenced below or obtain
+the Windows NT 4.0 Security Rollup Package. For additional information on the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q299444 Post-Windows NT 4.0 Service Pack 6a Security Rollup Package (SRP)
+
+The following files are available for download from the Microsoft Download
+Center:
+
+NOTE: This patch only applies to Internet Explorer 4.0 without Active Desktop
+enabled. If you apply this patch to a computer running IE 4.0 with Active
+Desktop enabled, it will appear that the patch installed correctly; however,
+Shell32.dll is not replaced.
+
+  x86: DownloadDownload Q248399i.exe now
+  (http://www.microsoft.com/downloads/release.asp?ReleaseID=22155)
+
+  Alpha: DownloadDownload Q248399a.exe now
+  (http://www.microsoft.com/downloads/release.asp?ReleaseID=22155)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. After it is posted, the file is housed on
+secure servers that prevent any unauthorized changes to the file.
+
+The English-language version of this fix should have the following file
+attributes or later:
+
+  Date       Time     Size        File name     Platform
+  -------------------------------------------------------------
+  01/18/00   02:47p   1,280,784   Shell32.dll   x86
+  01/18/00   02:47p   1,857,808   Shell32.dll   Alpha
+
+
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+To resolve this problem, obtain the Windows NT Server 4.0, Terminal Server
+Edition, Security Rollup Package (SRP). For additional information about the
+SRP, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q317636 Windows NT Server 4.0, Terminal Server Edition, Security Rollup
+  Package
+
+STATUS
+======
+
+Microsoft has confirmed that this problem could result in some degree of
+security vulnerability in Windows NT 4.0 and Windows NT Server 4.0, Terminal
+Server Edition.
+
+MORE INFORMATION
+================
+
+The Windows NT Recycle Bin for a user maps to a folder in %SystemRoot%\Recycler.
+The name of the folder is based on the owner's SID. The folder is created the
+first time the user deletes a file, and the owner is given the only permissions
+to it. However, if a malicious user can create the folder before the real one is
+created, that user could assign permissions that give them the ability to delete
+files from it or add files to it.
+
+There are several significant limitations that make it extremely difficult to
+exploit this vulnerability. The malicious user would need to share a machine
+with the other user, and would need to create the bogus Recycle Bin before the
+user's bona fide folder were created. This vulnerability only enables the
+malicious user to take action against the Recycle Bin on the particular machine
+that is attacked. The vulnerability does not allow the malicious user to read
+any files in the other user's Recycle Bin, nor would it give him or her a means
+of inducing the other user to retrieve a bogus file from it.
+
+For related information on this problem, please visit the following Microsoft Web
+site:
+
+  http://www.microsoft.com/technet/security/bulletin/ms00-007.asp
+
+For additional security-related information about Microsoft products, please
+visit the following Microsoft Web site:
+
+  http://www.microsoft.com/technet/security/
+
+Additional query words: security_patch kbtsesrp
+
+======================================================================
+Keywords          : kbenv kbSecurity kbWinNT400PreSP7Fix kbgraphxlinkcritical KbSECBulletin 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServ400sp5 kbNTTermServ400sp6 kbNTTermServSearch
+Version           : :4.0,4.0 SP4,4.0 SP5,4.0 SP6
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

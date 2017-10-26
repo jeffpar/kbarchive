@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154760: How to Use the DSMN Utility to Verify Synchronized Passwords | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154760: How to Use the DSMN Utility to Verify Synchronized Passwords" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154760/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154760/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154760/","publisher":null,"image":null,"headline":"Q154760: How to Use the DSMN Utility to Verify Synchronized Passwords","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154760-how-to-use-the-dsmn-utility-to-verify-synchronized-passwords">Q154760: How to Use the DSMN Utility to Verify Synchronized Passwords</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154760
+Product(s): Microsoft Windows NT
+Version(s): 3.51 4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbnetwork kbtool kbusage
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Directory Service Manager for NetWare (DSMN) compact disc includes
+Dsmchk.exe, a new utility for testing password synchronization. Dsmchk.exe
+checks one or more NetWare servers in the domain and compares the user's
+password on each NetWare server to the user's password on the primary domain
+controller. To automate the testing of each user's password, you can call
+Dsmchk.exe from the user's logon script. This article explains how to use
+Dsmchk.exe.
+
+NOTE: To use Dsmchk.exe, the primary domain controller must be running Windows NT
+Server 4.0.
+
+MORE INFORMATION
+================
+
+Syntax for Dsmchk.exe
+---------------------
+
+The syntax for Dsmchk.exe is:
+
+  dsmchk -d &lt;domain&gt; -u &lt;username&gt; [-n &lt;Nwserver&gt;]
+     [-r &lt;retries&gt;:&lt;interval&gt;]
+
+where
+
+  -d &lt;domain&gt;              Specifies the domain in which to verify
+                           password synchronization.
+
+  -u &lt;username&gt;            Specifies the user account.
+
+  -n &lt;Nwserver&gt;            Specifies the name of a NetWare server with
+                           which to verify password synchronization. If
+                           you don't specify a server, the default is all
+                           NetWare servers in the domain.
+
+  -r &lt;retries&gt;:&lt;interval&gt;  Specifies a number of retries and the interval,
+                           in seconds, between retries.
+
+Error Levels of Dsmchk.exe
+--------------------------
+
+Dsmchk.exe reports the user's password situation with the following error
+levels:
+
+  0 The password is synchronized across the specified NetWare server(s)
+    and the primary domain controller.
+
+  1 The password is not synchronized.
+
+  2 The NetWare server is unknown or not administered by DSMN.
+
+  3 The domain name is unknown.
+
+  4 The user account name is unknown or not administered by DSMN.
+
+  5 The user account name is not administered between the primary domain
+    controller and the NetWare server.
+
+Using Dsmchk.exe
+----------------
+
+You can run Dsmchk.exe with the Dsmchk files (Swclnt.dll and Msvcrt.dll;
+Msvcrt.dll is only needed by Windows NT 3.51 clients), based on either the
+server or the client computers.
+
+To run Dsmchk.exe using files on the server:
+
+1. Create directories for each processor type (I386, Alpha, MIPS, and/or PPC) in
+  the %Systemroot%\System32\Repl\Import\Scripts directory.
+
+  For example, if the %Systemroot% is C:\Winnt and you have clients with x86 and
+  Alpha processors, create the following directories:
+
+
+        c:\Winnt\System32\Repl\Import\Scripts\I386
+        c:\Winnt\System32\Repl\Import\Scripts\Alpha
+      
+
+2. Expand and copy the appropriate Dsmchk.exe and Swclnt.dll files from the
+  FPNW/DSMN compact disc to each directory. Continuing the example from step 1,
+  and assuming that the CD-ROM drive is drive D, type the following from a
+  command prompt:
+
+
+        expand d:\Dsmn\Nt40\I386\Dsmchk.ex_
+           c:\Winnt\System32\Repl\Import\Scripts\I386\Dsmchk.exe
+
+        expand d:\Dsmn\Nt40\I386\Swclnt.dl_
+           c:\Winnt\System32\Repl\Import\Scripts\I386\Swclnt.dll
+
+        expand d:\Dsmn\Nt40\Alpha\Dsmchk.ex_
+           c:\Winnt\System32\Repl\Import\Scripts\Alpha\Dsmchk.exe
+
+        expand d:\Dsmn\Nt40\Alpha\Swclnt.dl_
+           c:\Winnt\System32\Repl\Import\Scripts\Alpha\Swclnt.dll
+      
+
+  NOTE: Each of the indented lines in the example is a continuation of the line
+  above; you should type the entire command on one line.
+
+3. If any of the clients run Windows NT Workstation 3.51, copy Msvcrt.dll from
+  the Windows NT Server 4.0 %Systemroot%\System32 directory to each Dsmchk
+  directory. Continuing the example from the previous steps, type:
+
+
+        copy c:\Winnt\System32\Msvcrt.dll
+           c:\Winnt\System32\Repl\Import\Scripts\I386
+
+        copy c:\Winnt\System32\Msvcrt.dll
+           c:\Winnt\System32\Repl\Import\Scripts\Alpha
+      
+
+  NOTE: Each of the indented lines in the example is a continuation of the line
+  above; you should type the entire command on one line.
+
+After you have copied these files, a Windows NT 4.0 client can run Dsmchk.exe
+simply by using the path of the Dsmchk.exe file on the server.
+
+To run Dsmchk.exe using files on the client:
+
+  - Copy the Dsmchk.exe and Swclnt.dll files (and Msvcrt.dll if you are using a
+  Windows NT 3.51 client) for the client's processor type to the client's
+  %Systemroot%\System32 directory.
+
+  For example, from the client's command prompt, type:
+
+  "copy \\server\netlogon\i386\*.* c:\winnt\system32" (without the quotation
+  marks)
+
+When you copy the files to the client, the client can use Dsmchk.exe without
+referencing a path on a server.
+
+Using Dsmchk.exe in a Logon Script
+----------------------------------
+
+You can use Dsmchk.exe in a logon script whether the files are installed on a
+server or on the client. For example, you can insert the following commands in a
+logon script to test the user's password synchronization:
+
+  :TEST_USER
+  \\DSMNsrvr\netlogon\i386\dsmchk -d domain2 -u myname -n NWserver -r 4:30
+  @ECHO OFF
+
+  IF ERRORLEVEL 5  GOTO   USER_NOT_PROPED
+  IF ERRORLEVEL 4  GOTO   USER_NOT_DSMN
+  IF ERRORLEVEL 3  GOTO   DOMAIN_NOT_DSMN
+  IF ERRORLEVEL 2  GOTO   SVR_NOT_IN_DSMN
+  IF ERRORLEVEL 1  GOTO   SVR_NOT_IN_SYNC
+  IF ERRORLEVEL 0  GOTO   ALL_IN_SYNC
+
+  :ALL_IN_SYNC
+  ECHO  The servers are synchronized.
+  GOTO  DONE
+
+  :SVR_NOT_IN_SYNC
+  ECHO  The servers are not synchronized. Rechecking . . .
+
+  sleep 30
+  \\DSMNsrvr\netlogon\i386\dsmchk -d domain2 -u myname -n NWserver -r 1:30
+  IF ERRORLEVEL 1 GOTO TEST_USER
+  GOTO DONE
+
+  :SVR_NOT_IN_DSMN
+  ECHO The NetWare server is unknown or not administered by DSMN.
+  GOTO DONE
+
+  :DOMAIN_NOT_DSMN
+  ECHO The domain name is unknown.
+  GOTO DONE
+
+  :USER_NOT_DSMN
+  ECHO The user account name is unknown or not administered by DSMN.
+  GOTO DONE
+
+  :USER_NOT_PROPED
+  ECHO The user account name is not administered between the primary
+  ECHO Domain controller and the NetWare server.
+  GOTO DONE
+
+  :DONE PAUSE
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbtool kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : 3.51 4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

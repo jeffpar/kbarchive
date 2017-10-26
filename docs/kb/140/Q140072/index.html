@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140072: PC WRmt: Recovering Client Functionality After Install Win95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140072: PC WRmt: Recovering Client Functionality After Install Win95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140072/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140072/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140072/","publisher":null,"image":null,"headline":"Q140072: PC WRmt: Recovering Client Functionality After Install Win95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140072-pc-wrmt-recovering-client-functionality-after-install-win95">Q140072: PC WRmt: Recovering Client Functionality After Install Win95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140072
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.0,3.0b,3.2,3.2a,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Remote for Windows, version 3.2 
+- Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade from Microsoft Windows version 3.x to Microsoft Windows 95,
+the previously installed version 3.x of Mail for Windows or Mail Remote for
+Windows may not perform properly.
+
+CAUSE
+=====
+
+During the Windows 95 upgrade, if Exchange Inbox components are selected for
+installation, MAPI.DLL is overwritten with a new MAPI.DLL for the Microsoft
+Windows 95 Exchange client, and MAILSPL.EXE is renamed to MAILSPL.BAK.
+
+NOTE: The MAPI.DLL and MAILSPL.EXE files reside in the \WINDOWS\SYSTEM directory.
+
+RESOLUTION
+==========
+
+You can recover using one of the two methods below:
+
+Method 1
+--------
+
+1. Remove the Exchange Inbox components by opening the Control Panel and
+  selecting Add/Remove Programs then the Windows Setup tab. Clear the Exchange
+  Inbox check box. Click the OK button.
+
+2. Restore version 3.x of Mail for Windows or Mail Remote for Windows MAPI.DLL
+  file, and rename the MAILSPL.BAK file to MAILSPL.EXE.
+
+  The MAPI.DLL file can be copied from another non-Windows 95 machine's
+  \WINDOWS\SYSTEM subdirectory, or the MAPI.DLL file can be expanded off of
+  version 3.x of Mail for Windows or Mail Remote for Windows installation
+  disks.
+
+Method 2
+--------
+
+1. Remove the Exchange Inbox components by opening the Control Panel and
+  selecting Add/Remove Programs then the Windows Setup tab. Clear the Exchange
+  Inbox check box. Click the OK button.
+
+2. Reinstall version 3.x of Mail for Windows or Mail Remote for Windows into
+  Windows 95 from the original installation disks.
+
+  NOTE: For reinstalling Mail Remote, you will need a data disk and the three
+  Microsoft Mail Remote for Windows Setup disks.
+
+3. Delete the \WINDOWS\MSMAIL\MSRMT subdirectory.
+
+  IMPORTANT: If the mail message file (MMF) has been moved to the
+  \WINDOWS\MSMAIL\MSRMT subdirectory, make sure it is copied to another
+  directory before you delete the subdirectory.
+
+4. Reinstall Mail Remote for Windows.
+
+5. Set the Port, Script, and other options as necessary.
+
+Additional query words: 3.00 start initialize setup win95x win95
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail350 kbMail320 kbMail300b kbMail320a kbMailRemote320
+Version           : WINDOWS:3.0,3.0b,3.2,3.2a,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

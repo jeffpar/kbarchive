@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q76564: Receiving a Physical COM Port from the Windows VCD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q76564: Receiving a Physical COM Port from the Windows VCD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/076/Q76564/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/076/Q76564/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/076/Q76564/","publisher":null,"image":null,"headline":"Q76564: Receiving a Physical COM Port from the Windows VCD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q76564-receiving-a-physical-com-port-from-the-windows-vcd">Q76564: Receiving a Physical COM Port from the Windows VCD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q76564
+Product(s): Microsoft Windows Device Driver Kit
+Version(s): 3.0,3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the enhanced mode of the Microsoft Windows graphical environment, the virtual
+communications device (VCD) assigns a physical communications (COM) port to a
+virtual machine (VM) only when certain events occur. The text below lists these
+events.
+
+MORE INFORMATION
+================
+
+In Windows enhanced mode, the VCD virtualizes and serializes the ownership of
+physical COM ports. When a program running in a VM directly accesses one of the
+I/O ports of a COM port (for example, COM1 corresponds to I/O ports 0x3F8
+through 0x3FE), that VM may not necessarily own the physical port. The VM
+communicates with a virtual COM port until the VCD assigns a physical port.
+
+Seven conditions that cause the VCD to assign a physical COM port to a particular
+VM are:
+
+1. When an application reads or writes the Receive/Transmit buffer with the
+  Divisor Latch Access Bit (80h) of the Line Control Register off.
+
+2. When an application reads the Line Status Register more than once.
+
+3. When an application reads the Modem Status Register more than once.
+
+4. When an application writes to the Modem Control Register with the Loopback
+  (10h) or Interrupt Enable (08h) bits on (simply changing the DTR or RTS line
+  states does not cause VCD to assign a physical COM port).
+
+5. When an application unmasks a COM port interrupt.
+
+6. When a COM port interrupt occurs for an unowned COM port.
+
+7. When the communications driver (COMM.DRV) instructs the VCD to assign a port
+  to the Windows (system) VM because an application called the OpenComm
+  function.
+
+Implementation details on COM port assignment can be found by examining the
+source code to VCD, which is available in the DDK. Some of the relevant
+procedures are:
+
+======================================================================
+VCD_Attach called by:   VCD_Set_Owner
+
+VCD_Detach called by:
+  VCD_Set_Owner
+
+VCD_Set_Owner called by:
+  VCD_Assign
+  VCD_Set_Port_Global
+  VCD_PM_Acquire_Port
+  VCD_PM_Free_Port
+  VCD_Set_Focus
+  VCD_Set_Owner_Event
+  VCD_Detach_If_Owner
+
+VCD_Assign called by:
+  VCD_PM_Steal_Port
+  VCD_Cant_Virtualize
+  VCD_Mask
+
+VCD_PM_Steal_Port called by:
+  Comm Driver KickTx/StealPort
+
+VCD_Cant_Virtualize called by:
+  VCD_Virt_In_Out_RxTxB   (Condition 1)
+  VCD_Virt_In_LSR      (Condition 2)
+  VCD_Virt_In_MSR      (Condition 3)
+  VCD_Virt_Out_MCR  (Condition 4)
+
+VCD_Mask called by:
+  VCD_handler (VPICD Mask_Change_Proc)   (Condition 5)
+
+VCD_PM_Acquire_Port called by:
+  Comm Driver GetCOMport386     (Condition 7)
+
+VCD_PM_Free_Port called by:
+  Comm Driver ReleaseCOMport386
+
+VCD_Set_Owner_Event called by:
+  VCD_Int        (Condition 6)
+
+VCD_Detach_If_Owner called by:
+  VCD_Destroy_VM
+
+Additional query words: 3.00 3.10 DDKCOMM
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK300 kbWinDDK310
+Version           : :3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

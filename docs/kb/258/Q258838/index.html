@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q258838: Dial-Up Networking Automatic Redial May Stop After 15 Attempts | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q258838: Dial-Up Networking Automatic Redial May Stop After 15 Attempts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/258/Q258838/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/258/Q258838/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/258/Q258838/","publisher":null,"image":null,"headline":"Q258838: Dial-Up Networking Automatic Redial May Stop After 15 Attempts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q258838-dial-up-networking-automatic-redial-may-stop-after-15-attempts">Q258838: Dial-Up Networking Automatic Redial May Stop After 15 Attempts</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q258838
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): WINDOWS:95; winnt:4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbhw dun kbHardware kbDialUp
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 98 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a dial-up connection configured to automatically redial your
+Internet service provider (ISP), you may receive the following error message
+after the fifteenth automatic redial attempt:
+
+  Could not detect modem. It may be in use, turned off, or not installed
+  properly
+
+CAUSE
+=====
+
+Newer modems that are based on the Rockwell chip set, and U.S. Robotics/3Com
+modems may have "blacklisting" enabled (this may be country-specific, depending
+on the manufacturer of the modem). After 15 attempts the modem, in accordance
+with ITU standards, "blacklists" the phone number. When this occurs, you cannot
+redial the number until an internal modem time-out has expired or you reboot the
+computer.
+
+RESOLUTION
+==========
+
+Modify the modem initialization string to include one of the following commands.
+Please refer to the documentation for your modem for details.
+
++------------------------------+
+| Command | Modem type         | 
++------------------------------+
+| %TCB    | Rockwell based     | 
++------------------------------+
+| S40=2   | U.S. Robotics/3Com | 
++------------------------------+
+| S40=7   | U.S. Robotics/3Com | 
++------------------------------+
+
+This command prevents the modem from "blacklisting" a number and allow repeated
+redials up to 99 times.
+
+STATUS
+======
+
+This behavior is a limitation of the modem configuration files supplied with
+your modem. Contact your modem manufacturer for updated files. To support
+delayed and "blacklisted" responses, the modem's unique ID .inf file should
+contain the necessary registry keys.
+
+MORE INFORMATION
+================
+
+Most modern modems keep a table of the most recently dialed numbers in memory
+with a count against each number dialed. Commonly, after a number has been
+dialed 15 times, the modem refuses to dial the number again until a certain time
+period has elapsed, thus "blacklisting" or delaying the number.
+
+
+Additional query words: delayed
+
+======================================================================
+Keywords          : kb3rdparty kbhw dun kbHardware kbDialUp 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

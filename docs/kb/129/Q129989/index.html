@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129989: MS WIN NT RESOURCE GUIDE 2ED V1 Corrections and Comments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129989: MS WIN NT RESOURCE GUIDE 2ED V1 Corrections and Comments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129989/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129989/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129989/","publisher":null,"image":null,"headline":"Q129989: MS WIN NT RESOURCE GUIDE 2ED V1 Corrections and Comments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129989-ms-win-nt-resource-guide-2ed--v1-corrections-and-comments">Q129989: MS WIN NT RESOURCE GUIDE 2ED  V1 Corrections and Comments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129989
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Windows NT Resource Guide, (Windows NT 3.5 Resource Kit volume 1) ISBN 1-55615-653-7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on known errors, corrections, and comments
+relating to the Microsoft Press book "Windows NT Resource Guide," Windows NT 3.5
+Resource Kit volume 1.
+
+The following topics are covered:
+
+- Installation: Remote Command Server Not Installed Properly
+
+- Page 521: Unclear Reference to "NT Remote Access Service Administrator's
+  Guide"
+
+MORE INFORMATION
+================
+
+In addition to a description of the book's problems, this document might also
+include sections labeled "Correction" and "Comments." Please note that the
+"Correction" section is worded for correcting the book and does not necessarily
+address the problem introduced by the book error. The "Comments" section
+contains specific information for working around problems.
+
+Installation: Remote Command Server Not Installed Properly
+----------------------------------------------------------
+
+The "Tools for Windows NT" help file for the "Remote Command Installation"
+incorrectly states the following:
+
+  After the installation of the resource kit, the necessary files should be
+  copied to the system directory.
+
+  In Program Manager, Control Panel, Network, Add Software, select "Remote
+  Command Server."
+
+However, there is no "Remote Command Server" option present.
+
+Comments:
+
+This is a mistake in the documentation. To install the Remote Command Server, you
+must first copy the following files from your RESKIT directory to your SYSTEM32
+directory:
+
+  RCMD.EXE
+  RCMDSVC.EXE
+  OEMNSVRC.INF
+
+After you copy these files to your SYSTEM32 directory, the Remote Command Server
+will work properly.
+
+From this point, you can follow the installation instructions as written.
+
+Page 521: Unclear Reference to "NT Remote Access Service Administrator's Guide"
+-------------------------------------------------------------------------------
+
+The reference to the "Windows NT Remote Access Service Administrator's Guide" on
+page 521 in paragraph 3 is unclear as to where the cited documentation can be
+found.
+
+The appendix title in the same paragraph is also incorrect.
+
+Correction:
+
+Change
+
+  "Windows NT Remote Access Service Administrator's Guide"
+
+to
+
+  "Windows NT Remote Access Service" book, which comes as part of the Windows
+  NT Server product documentation. This book is also included in the "Books
+  Online" part of Windows NT Server.
+
+The appendix title in the same paragraph should be:
+
+  Appendix B, "Migrating from Earlier Versions of the Remote Access Service"
+
+Comments:
+
+The "Windows NT Remote Access Service" book comes with Windows NT Server as part
+of the documentation. This book is also included in the "Books Online" part of
+Windows NT Server.
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: mspress ms_press press bookbug
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q157898: INFO: Setup Wizard Allows Commas in Filenames in Setup.lst | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q157898: INFO: Setup Wizard Allows Commas in Filenames in Setup.lst" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/157/Q157898/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/157/Q157898/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/157/Q157898/","publisher":null,"image":null,"headline":"Q157898: INFO: Setup Wizard Allows Commas in Filenames in Setup.lst","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q157898-info-setup-wizard-allows-commas-in-filenames-in-setuplst">Q157898: INFO: Setup Wizard Allows Commas in Filenames in Setup.lst</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q157898
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbsetup kbDSSTools kbVBp400 kbVBp500 kbGrpDSVB kbDSupport
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Setup Wizard for Visual Basic 4.0 allows commas within filenames that are
+distributed with Visual Basic program files.
+
+MORE INFORMATION
+================
+
+With the release of Windows NT 3.1, special characters in filenames, as well as
+long filenames, were allowed. This broke the restrictive 8.3 character file name
+rule that limited MS-DOS filenames, and allowed for more descriptive and useful
+filenames. In particular, the comma could now be used in a filename such as an
+alphanumeric character.
+
+Realizing this, the Setup Wizard for Microsoft Visual Basic 4.0 now allows the
+use of commas within filenames. If you add a file manually whose filename
+contains a comma to the list of targeted distribution files, the Setup Wizard
+will put quotes around the added file in order to signify that a comma was used
+within the filename. You should be aware of this if you intend to edit the
+SETUP.LST file manually after the Setup Wizard initially generates it.
+
+Example
+-------
+
+In the following sample Files section of SETUP.LST, File1 is an example of a
+normal filename, while File2 is an example of a filename with a comma used. Note
+that the comma is used as the delimiter for each entry. To solve this potential
+conflict, the Setup Wizard placed double-quotes (" ") around the filenames in
+question:
+
+     &gt;&gt; [Files]
+     &gt;&gt;
+
+     File1=1,,Calc.EX_,Calc.EXE,$(AppPath),$(EXESelfRegister),,6/5/1995,14336
+     ,1.0.0.0
+
+     &gt;&gt; File2=1,,"my,test.tx_","my,test.txt",$(AppPath),,,6/5/1995,20
+
+NOTE: This functionality is only available with the [Files] Section of SETUP.LST.
+Files that make use of commas in their filenames cannot be placed within the
+[BootStrap] Section of SETUP.LST. The [BootStrap] Section should only contain
+Visual Basic 4.0 runtime-required files and none of these files have commas in
+their filenames. The only way this situation can occur is if SETUP.LST is edited
+manually after its initial creation. This should be a rare occurrence and it is
+not suggested.
+
+Additional query words: comma setup.lst setup wizard
+
+======================================================================
+Keywords          : kbsetup kbDSSTools kbVBp400 kbVBp500 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

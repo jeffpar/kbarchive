@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q170128: HOWTO: Programmatically Create Large Tables for Testing Purposes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q170128: HOWTO: Programmatically Create Large Tables for Testing Purposes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/170/Q170128/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/170/Q170128/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/170/Q170128/","publisher":null,"image":null,"headline":"Q170128: HOWTO: Programmatically Create Large Tables for Testing Purposes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q170128-howto-programmatically-create-large-tables-for-testing-purposes">Q170128: HOWTO: Programmatically Create Large Tables for Testing Purposes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q170128
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbHWMAC kbvfp300 kbvfp500 kbvfp600
+Last Modified: 26-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft FoxPro for Windows, version 2.6a 
+- Microsoft FoxPro for MS-DOS, version 2.6a 
+- Microsoft FoxPro for Macintosh, version 2.6a 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft FoxPro for UNIX, version 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This code can be used as an example of how to create a large sample table to
+test your programs. It is very basic and must be modified to meet your specific
+design needs.
+
+MORE INFORMATION
+================
+
+Create a program Lartable.prg and add the following sample code to create a
+table containing any number of records. For this example, the program creates a
+table containing 120 records. Remember not to allow the program to overwrite any
+tables that have valid data.
+
+     *Environment area.
+     CLEAR
+     CLOSE ALL
+
+     * Create a table by substituting your table, field names, and data
+     * types.
+
+     CREATE TABLE LarTable (CharVal C(20), NumVal N(9.2), DateVal D)
+     USE LarTable.DBF
+
+     * m.NumRecord = the number of record you want to create in your table.
+     * NOTE: The time that it takes to create a table will depend upon
+     *       the size of the table and the availability of system
+     *       resources.
+
+     ******************
+     m.NumRecord = 120
+     ******************
+
+     m.NumWide = LEN(ALLTRIM(STR(m.NumRecord)))
+     * Variable seed for DateVal date field.
+
+     m.dateval = DATE()
+
+     * For loop to fill the table with a Character, Number, and Date
+     * fields substitute your field names.
+
+     FOR m.CurRecord  = 1 TO m.NumRecord
+        INSERT INTO lartable (NumVal, CharVal, DateVal) ;
+        VALUES ( RECCOUNT()+1, ;
+        "Record " + PADL(ALLTRIM(STR(RECCouNt()+1, m.NumWide, 0)), ;
+         m.NumWide, "0"), m.DateVal + m.CurRecord)
+        ? RECNO()
+     NEXT
+     BROWSE
+
+(c) Microsoft Corporation 1997, All Rights Reserved.
+Contributions by Mike Fernald, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro260aDOS kbFoxPro260UNIX kbFoxPro260a kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

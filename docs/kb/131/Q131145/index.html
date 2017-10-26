@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131145: How to Add Properties/Methods to a Button in Button Group | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131145: How to Add Properties/Methods to a Button in Button Group" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131145/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131145/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131145/","publisher":null,"image":null,"headline":"Q131145: How to Add Properties/Methods to a Button in Button Group","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131145-how-to-add-propertiesmethods-to-a-button-in-button-group">Q131145: How to Add Properties/Methods to a Button in Button Group</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131145
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to add properties or methods to buttons in a
+command-button group
+
+MORE INFORMATION
+================
+
+Neither properties nor methods can be added directly to buttons in a
+command-button group. This is by design. Properties or methods added to a button
+in a command-button group appear as part of the command-button group object, not
+part of the button itself.
+
+To add properties or methods to a button in a command-button group, you must:
+
+1. Subclass the command button in the Class Designer.
+
+2. Add the property or method there.
+
+3. Create a container class.
+
+4. Add the new button class to the new container.
+
+Steps to Add a Property or Method to a Command Button
+-----------------------------------------------------
+
+1. From the file menu, choose New. Select Class as the file type, and click New
+  File.
+
+2. Type in a class name for this new class, select CommandButton from the Based
+  on menu, and enter a .VCX file name to store the class in. You can use one
+  that already exists or enter a new .VCX file name for Visual FoxPro to
+  create.
+
+3. When the Visual Class Designer window appears, choose New Property from the
+  Class menu. Enter a name for this new property in the name text box of the
+  New Property dialog box. Click the OK button, and scroll through the property
+  sheet for this class. Notice that your new property appears at the bottom of
+  the list. This property defaults to value of false (.F.).
+
+4. Close and save the changes to this new class.
+
+5. Create another new class (see step 1) based on a container.
+
+6. Click the View Classes button of the Form Controls toolbar. Select Add, and
+  choose the .VCX file you just created. From this file, select the class you
+  created if prompted.
+
+7. Click the commandbutton button on this new toolbar. Then click the container
+  window in the Visual Class Designer. This adds a command button to the
+  container that has the property you added by subclassing the commandbutton
+  class in step 2 above.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199971: XCON: Troubleshooting Dynamic RAS Connector (TCP/IP) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199971: XCON: Troubleshooting Dynamic RAS Connector (TCP/IP)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199971/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199971/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199971/","publisher":null,"image":null,"headline":"Q199971: XCON: Troubleshooting Dynamic RAS Connector (TCP/IP)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199971-xcon-troubleshooting-dynamic-ras-connector-tcpip">Q199971: XCON: Troubleshooting Dynamic RAS Connector (TCP/IP)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199971
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This document provides troubleshooting suggestions for the Exchange Server
+Dynamic RAS Connector that is configured to use TCP/IP. It can help you isolate
+any misconfiguration issues or breakdowns in the functionality of the underlying
+components needed by the connector.
+
+MORE INFORMATION
+================
+
+Most reported problems with the Dynamic RAS Connector end up being either a
+basic configuration issue, a failure in RAS connectivity, or an underlying
+problem with network functionality over RAS (especially name resolution or
+remote procedure call [RPC] problems).
+
+Troubleshooting steps are presented below in four phases from the most basic to
+the more complex.
+
+Most reported failed connections fall into the following type of symptoms. The
+local modem dials and connects to the remote modem. Some data is exchanged but
+then the modem hangs up. This pattern is repeated over and over. No e-mail is
+sent. Troubleshooting these types of issues is covered in Phases 2 and 3.
+
+Preliminary Notes
+-----------------
+
+- Exchange Server computers connecting through the Dynamic RAS Connector should
+  not have LAN connectivity to each other, as this confuses name resolution. If
+  a prior LAN connection was established, the servers need to be rebooted to
+  flush any cached connectivity information.
+
+- Windows NT and Exchange Server should also be at the latest service pack
+  levels.
+
+- To successfully connect two Exchange Server computers together dynamically
+  through RAS, both servers must have the TCP/IP protocol installed and must be
+  properly configured.
+
+Phase 1 - Initial Troubleshooting
+---------------------------------
+
+1. Walk through the step by step "Dynamic RAS Connector" white paper found at
+  the following location, and double-check everything in the order it is
+  listed. Look for missed steps, typographical errors, and so on.
+
+  http://support.microsoft.com/support/exchange/content/whitepapers/whitepapers.asp
+
+2. Remotely access the other server directly using either the Dial-up Networking
+  or RAS clients. In other words, if Exchange Server is not even in the
+  picture, is there basic RAS functionality?
+
+  If not, you need to review your RAS and Windows NT configuration. If the modem
+  is dialing but having trouble connecting to the other modem, you may want to
+  turn up Point-to-Point Protocol (PPP) logging. You can enable the Ppp.log
+  file by setting the following registry entry to a value of 1:
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan \PPP\Logging
+
+3. Check the RemoteListen parameter setting under
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess\Parameters\NetbiosGateway.
+
+  It should be set to 2. A value of 0 or 1 indicates that something unusual such
+  as removing and reinstalling the RAS server has taken place after the
+  Exchange Server RAS Message Transport Agent (MTA) Transport stack was added.
+  You can try just resetting the value to 2, but given the unknowns in this
+  situation, you may need to remove and reinstall the Exchange Server RAS
+  Connector and the RAS MTA Transport stack as well.
+
+4. If you attempt to send a message but quickly get a non-delivery report (NDR)
+  without the server even attempting to dial, you likely have an addressing
+  problem on the local server. Double-check the exact spelling of all fields in
+  your custom recipient and on the connector's Connected Sites tab (also verify
+  any addresses on the Address Space tab if they exist).
+
+5. If your server does connect to the other server but you get an NDR, you need
+  to carefully read the NDR to determine if it originated from your server or
+  the other server.
+
+  If it came from the other server, the specific recipient you are sending to
+  may not exist on the other server or there may be a spelling or typographical
+  error on your custom recipient entry.
+
+  If it came from your own server, it may be a result of too many failed
+  connection attempts or deleting the message from the queue through the
+  Exchange Server Administrator program. If so, just queue up a new test
+  message.
+
+Phase 2 - Troubleshooting Network Functionality over RAS
+--------------------------------------------------------
+
+1. Connect from Server1 to Server2 using the same phone book entry the RAS
+  Connector uses.
+
+  Be sure to use the same account and password used on the RAS Override page to
+  connect.
+
+  NOTE: If you first log on to both servers as the RASCON account, you do not
+  have to specify the security context in step 4. You can also use the Run with
+  Security option while testing RPC in step 8.
+
+  To log on as RASCON, you may first have to give the account permissions to log
+  on locally in User Manager for Domains. To do so, on the Policies menu, click
+  User Rights, and make the appropriate changes.
+
+2. Note the IP addresses Server2 supplied to Server1 for use during the
+  connection.
+
+  If Server2 (the one receiving the call and assigning the IP addresses from its
+  static pool), only has one modem and has only two addresses in its pool, the
+  IP address assigned to Server1 for this connection is the second address in
+  Server2's pool. If Server2 has more than one modem or more than two addresses
+  in its pool, you need to verify the address assigned.
+
+  Windows NT 4.0
+  From Server1 (the server which dialed the phone), double-click the Dial-Up
+  Network Monitor icon on the right side (or bottom) of the taskbar. After the
+  Dial-Up Networking Monitor is displayed, click the Details button from either
+  the Status or Summary tabs. The IP address displayed is the one Server2 (the
+  dialed server) assigned to Server1 (the dialing server) from its static IP
+  address pool for this connection.
+
+  Windows NT 3.51
+  From Server1 (the server which dialed the phone), bring up the Remote Access
+  client and click the Status button on the top right. The IP address displayed
+  near the bottom of the Port Status window is the one Server2 (the dialed
+  server) assigned to Server1 (the dialing server) from its static IP address
+  pool for this connection.
+
+3. Ping IP addresses in both directions over the RAS connection.
+
+  a. From Server1 (the server which dialed the phone), ping the first IP
+     address in Server2's Pool.
+
+  b. From Server1, ping Server2's Network Card IP address.
+
+  c. From Server1, ping Server2 by its server name.
+
+  d. From Server2, ping the IP address assigned to Server1 for this connection
+     (from Server2's pool).
+
+Pinging Server1's Network Card IP or host name does not work from the RAS server
+to client.
+
+From our three-server example (see the step-by-step Dynamic RAS Connector
+checklist), if Seattle called Portland, you would perform the following pings:
+
+  From Seattle
+
+   - ping 172.16.0.0
+   - ping 192.168.0.0
+   - ping PORTLAND
+
+  From Portland
+
+   - ping 172.16.0.2
+
+4. Perform a net use command from Server1 to connect to IPC on Server2. This
+  establishes the proper security context to the other server's domain:
+
+  net use \\server2\ipc$ /user:domain2\rascon password
+
+  In our three-server example, if Seattle (Server1) is connecting to Portland
+  (Server2), the command issued on the Seattle server is as follows:
+
+  net use \\portland\ipc$ /user:oregon\rascon ras
+
+  Be sure to allow the command to finish successfully or to give a specific
+  error message.
+
+  If there is any failure at this point, carefully check your command-line
+  syntax, server name, domain name, RAS connector account name, and password
+  (including case). Then check the security information for the RAS connector
+  account on the other domain.
+
+5. Perform a net use command in the other direction (from Server2 to Server1)
+  using the IP address that was assigned from the Server2's pool (see step 2
+  for details).
+
+  NOTE: This only works if Server2 is using Windows NT 4.0. The Windows NT 3.51
+  object manager doesn't support device lookup by IP address. If Server2 is
+  using Windows NT 3.51, skip this step.
+
+  In our three-server example, if Seattle (Server1) is connecting to Portland
+  (Server2), the command issued on the Portland server is as follows:
+
+  net use \\172.16.0.2\ipc$ /user:washington\rascon ras
+
+  Be sure to allow the command to compete successfully or to give a specific
+  error message.
+
+  If there is any failure at this point, carefully check your command-line
+  syntax, IP address, domain name, RAS connector account name, and password
+  (including case). Then check the security information for the RAS connector
+  account on the other domain.
+
+6. Perform a net view command from Server1 to view the shares on Server2:
+
+  net view server2
+
+  When Server1 initiates the RAS call, the IP addresses are supplied by Server2.
+  Server1 should have an entry in its LMHOSTS file that allows it to resolve
+  Server2's name to an IP address so the standard net view servername command
+  works.
+
+  In our three-server example, if Seattle (Server1) is connecting to Portland
+  (Server2), the command issued on the Seattle server is as follows:
+
+  net view portland
+
+  If name resolution is working, you should see a list of the shares on the
+  other server.
+
+7. Perform a net view command in the other direction (from Server2 to Server1)
+  using the IP address that was assigned from the Server2's pool (see step 2
+  for details).
+
+  NOTE: This only works if Server2 is using Windows NT 4.0. The Windows NT 3.51
+  object manager doesn't support device lookup by IP address. If Server2 is
+  using Windows NT 3.51, skip this step.
+
+  Server1 is acting in the role of a RAS client and not a RAS server in this
+  case so the LMHOSTS entry Server2 has for Server1 will not work in this
+  situation. That entry is based on an IP address from the RAS pool on Server1,
+  which is not used when Server1 is in the role of a client. As a result, a net
+  view servername command will not work. However, in Windows NT 4.0, you can
+  still test functionality by net viewing the IP address directly.
+
+  In our three-server example, if Seattle (Server1) is connecting to Portland
+  (Server2), the command issued on the Portland server is as follows:
+
+  net view 172.16.0.2
+
+  If name resolution is working, you should see a list of the shares on the
+  other server.
+
+  NOTE: The second net view and net use above more closely mimic what happens
+  when the MTA over RAS attempts a Bindback (the most common potential problem
+  area).
+
+8. Perform RPCPing tests in both directions over the established connection. Be
+  sure to configure the client half to use the TCP/IP Protocol Sequence. If you
+  have logged on to both servers as the RASCON account (as suggested in step
+  1), you should also click to select the Run with Security check box. If your
+  test fails with Security checked, then try again without it.
+
+  a. Run Rpingc32.exe on Server1 and Rpings.exe on Server2, and ping Server2 by
+     name.
+
+  b. Run Rpings.exe on Server1 and Rpingc32.exe on Server2, and ping Server1 by
+     IP.
+
+  The RPC Ping client should report successful pings, or there may be a problem
+  with RPC.
+
+  In our example with Seattle connecting to Portland:
+
+   - Seattle RPC pings Exchange Server: PORTLAND
+
+   - Portland RPC pings Exchange Server: 172.16.0.2
+
+  NOTE: RPC pinging by IP is only supported on Windows NT 4.0.
+
+  RPC Ping utility documentation can be found with the utility on the Exchange
+  Server CD.
+
+9. Hang up the connection and then have Server2 connect to Server1 using the
+  same phone book entry the RAS Connector is set to use.
+
+10. Repeat steps 2 through 8 over the new connection.
+
+  Problems with this phase over connections in either direction indicate
+  underlying Windows NT problems that need to be corrected before you continue
+  with the Exchange Server Dynamic RAS Connector configuration.
+
+Phase 3 - Intermediate Troubleshooting
+--------------------------------------
+
+1. If no problems were uncovered in Phase 2, increase the logging on the
+  Exchange Server MTAs on both servers for the X.400 Services and Field
+  Engineering categories to Maximum. Then log another failed connection.
+
+2. Check the system logs on both servers for any reported RAS errors and the
+  application logs on both servers for any Exchange Server errors. Be sure to
+  check the details of any Exchange Server errors for embedded Windows NT or
+  RAS errors. The MSExchangeMTA 9311 Field Engineering event in particular
+  often contains useful embedded RAS errors.
+
+  For example, here is a 9311 from the application log:
+
+  MSExchangeMTA Field Engineering Warning 9311
+
+  A RAS communications error has occurred for gateway
+  /o=MS/ou=PSS/cn=Configuration/cn=Connections/cn=DR. RAS error
+  code returned: 718, RAS Table index: 0. The MTA will attempt to
+  recover the RAS connection. [BASE IL PIPE RAS 35 230] (12)
+
+  Notice the RAS error code embedded above. It is documented in the Rasphone.hlp
+  Help file. To find the RAS error messages open the file, and on the Find tab,
+  search for "Error Messages."
+
+  In this case, the Help file points out that the RAS 718 error is a PPP
+  Time-out. It further describes a 718 error as follows:
+
+  A PPP conversation was started, but was terminated because the remote
+  computer did not respond within an appropriate time. This can be caused by
+  poor line quality or by a problem at the server.
+
+  Embedded RAS codes along with the error messages in the RAS Help can be one of
+  the more useful tools in identifying initial problems.
+
+  If an Event ID 9316 is encountered, double-check the Remote Server Name field
+  on the RAS Connector's General page (including case), and re-verify the
+  information on the RAS Override page.
+
+  MSExchangeMTA Interface Warning 9316
+
+  An RPC communications error occurred. No data was sent over the
+  RPC connection. Locality table (LTAB) index: &lt;x&gt;. Windows NT
+  error: 9301.The MTA will attempt to recover the RPC connection.
+  [BASE IL PIPE RAS xxxxx] (12)
+
+3. Check to see that both modems are on the Hardware Compatibility List and have
+  modem scripts that are included with Windows NT or are the most recent
+  scripts from the modem manufacturer.
+
+4. If the modem is a higher speed modem, try using the generic Hayes compatible
+  9600 script instead.
+
+Phase 4 - Preparing to Escalate to Microsoft Product Support Services (PSS)
+---------------------------------------------------------------------------
+
+1. Clear the application and system logs.
+
+2. Start a Network Monitor trace. (Note 1)
+
+3. Send a test message (while X.400 Service and Field Engineering are still
+  logging at Maximum).
+
+4. Collect the following seven files (preferably zipped into one file), and
+  contact PSS:
+
+   - Server 1 application log
+
+   - Server 1 system log
+
+   - Server 2 application log
+
+   - Server 2 system log
+
+   - Network Monitor *.cap Trace of the RAS attempt (Note 1)
+
+   - Admindmp.txt file for the RAS Connector object on Server 1 (Note 2)
+
+   - Admindmp.txt file for the RAS Connector object on Server 2 (Note 2)
+
+Note 1: If you have not used Network Monitor to capture a trace over RAS before:
+
+1. Locate Network Monitor (this can be from Systems Management Server CDs or a
+  dated copy direct from PSS).
+
+2. Run the Setup program to install Network Monitor on one of the Exchange
+  Server computers.
+
+3. Start Network Monitor, and on the Capture menu, click Networks.
+
+4. Select the network with the Current Address beginning with 5241 or 000000,
+  and click OK.
+
+5. On the Capture menu, click Start.
+
+6. Perform a RAS connector test (you should see activity in Network Monitor at
+  this point).
+
+7. On the Capture menu, click Stop.
+
+8. Save a *.cap file by clicking Save As on the File menu.
+
+Note 2: If you have not performed an Administrator Dump on an object before:
+WARNING: Using the raw mode of the Exchange Server Administrator program (admin
+/r) incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server and/or Microsoft Exchange Server. Microsoft cannot
+guarantee that problems resulting from the incorrect use of raw mode can be
+solved. Use raw mode at your own risk.
+
+1. Start the Microsoft Exchange Server Administrator program in raw mode by
+  typing the following at a command prompt:
+
+  "c:\exchsrvr\bin\admin /r" (without the quotation marks)
+
+2. If an Admindmp.txt file already exists in the C:\Exchsrvr\Bin\ folder, delete
+  or rename it.
+
+3. Select the object you want to dump the raw properties from (in this case the
+  RAS Connector object).
+
+4. Press and hold down the CTRL key.
+
+5. On the File menu, click Raw Properties.
+
+6. Release the CTRL key after the raw properties are displayed.
+
+7. Cancel out of the raw properties.
+
+8. Rename the newly created Admindmp.txt file to match the object it was dumped
+  from (each new dump recreates or appends to any existing Admindmp.txt file).
+
+9. Quit raw mode.
+
+Additional query words: DRAS
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

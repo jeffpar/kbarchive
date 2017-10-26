@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q251165: XCLN: Adding Contacts to Secondary Contacts Folder in Outlook | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q251165: XCLN: Adding Contacts to Secondary Contacts Folder in Outlook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/251/Q251165/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/251/Q251165/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/251/Q251165/","publisher":null,"image":null,"headline":"Q251165: XCLN: Adding Contacts to Secondary Contacts Folder in Outlook","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q251165-xcln-adding-contacts-to-secondary-contacts-folder-in-outlook">Q251165: XCLN: Adding Contacts to Secondary Contacts Folder in Outlook</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q251165
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:2000
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Outlook 2000 
+- Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Outlook 2000 allows you to create a secondary contacts folder in a mailbox. You
+can configure this contacts folder to be used as an e-mail Address Book, and
+then configure Outlook to add new contacts to this secondary contacts folder by
+default.
+
+MORE INFORMATION
+================
+
+Outlook creates a default Contacts folder during installation. For the purposes
+of this article, call this folder the primary Contacts folder. You can create
+additional contacts folders. You can use these additional contacts folders (for
+the purposes of this article, call these folders secondary contacts folders) to
+store specific contact information.
+
+Creating a New Contact
+----------------------
+
+The following are three methods you can use to add a new contact:
+
+- In the Inbox, open a received e-mail message, and in either the From, To, or
+  Cc box, right-click one of the addresses, and then click "Add to Contacts".
+
+- Create a contact by clicking New Contact on the File menu (or pressing
+  CTRL+SHIFT+C).
+
+- On the Tools menu, click Address Book (or press CTRL+SHIFT+B). On the File
+  menu, click New Entry, click New Contact, and then click OK.
+
+Changing the Default Personal Address Location
+----------------------------------------------
+
+You can configure Outlook so that when you create a new contact, that contact is
+added to a contacts folder that you specify, which can be the primary Contacts
+folder or one of the secondary contacts folders.
+
+To specify a default contacts folder for new contacts, on the Tools menu, click
+Services, click Addressing, and then in the "Keep Personal Addresses in" list,
+click the contacts folder that you want to be the default location for new
+contacts.
+
+NOTE: There may be several secondary contacts folders, but they are only visible
+in the "Keep Personal Addresses in" list if they are configured to be displayed
+as an e-mail Address Book. To configure a secondary contact folder to be
+displayed as an e-mail Address Book, right-click the secondary contacts folder,
+click Properties, click the Outlook Address Book tab, click to select the "Show
+this folder as an e-mail Address Book" check box, and then click OK.
+
+How New Contact Creation Method Affects the Folder to Which a New Contact is Added
+----------------------------------------------------------------------------------
+
+When a new contact item is added by right-clicking one of the addresses in either
+the From, To, or Cc box of a received message, that contact is always added to
+the primary Contacts folder, irrespective of the default personal address
+location setting.
+
+When a new contact is added by clicking New Contact on the File menu (or pressing
+CTRL+SHIFT+C), the new contact location varies depending on which of the
+following conditions existed during the creation of the contact:
+
+- If any folder other than the secondary contacts folder that is the default
+  personal address location is selected when the new contact is created, then
+  the new contact is created in the primary Contacts folder.
+
+- If the secondary contacts folder that is the default personal address
+  location is selected when the new contact is created, then the new contact is
+  created in that secondary contacts folder.
+
+If a new contact is added by clicking Address Book on the Tools menu (or pressing
+CTRL+SHIFT+B), clicking New Entry on the File menu, and then clicking New
+Contact, the new contact is added to the contacts folder that you designated as
+the default personal address location.
+
+Additional query words: OL2000
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook2000Search kbZNotKeyword3
+Version           : WINDOWS:2000
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

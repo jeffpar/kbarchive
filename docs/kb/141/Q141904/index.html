@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141904: HOWTO: Use SQL Aggregate Functions with the MFC DAO Classes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141904: HOWTO: Use SQL Aggregate Functions with the MFC DAO Classes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141904/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141904/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141904/","publisher":null,"image":null,"headline":"Q141904: HOWTO: Use SQL Aggregate Functions with the MFC DAO Classes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141904-howto-use-sql-aggregate-functions-with-the-mfc-dao-classes">Q141904: HOWTO: Use SQL Aggregate Functions with the MFC DAO Classes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141904
+Product(s): Microsoft C Compiler
+Version(s): 4.0 4.1 4.1b 4.2 4.2b 5.0 6.0
+Operating System(s): 
+Keyword(s): kbcode kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1, 4.1b 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2b 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2b 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two ways to use SQL aggregate functions to retrieve information with
+the MFC DAO classes. One method uses the GetFieldValue() member function of the
+CDaoRecordset class to retrieve the values. The other involves modifying a
+CDaoRecordset-derived class by changing the SQL statement used to open the
+recordset and placing column alias names in the DFX calls of the recordset's
+DoFieldExchange() member function.
+
+NOTE: You can't use the technique described in the MFC Encylopedia article
+"Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)" to work with SQL
+aggregate functions under DAO. That article pertains to the MFC ODBC classes
+only.
+
+MORE INFORMATION
+================
+
+SQL Aggregate Functions Using CDaoRecordset::GetFieldValue()
+------------------------------------------------------------
+
+The Visual C++ documentation discusses how to use the
+CDaoRecordset::GetFieldValue() member function. This function allows you to use
+a CDaoRecordset object without deriving from it. One technique for retrieving
+records returned from a SQL statement that contains an aggregate function is to
+use this GetFieldValue() member function to retrieve the values.
+
+For example, assume that you have a student database that contains the name of
+the student and scores from tests they have taken. If you want the average score
+for each of the students, you could use this code:
+
+     CDaoDatabase db;
+     db.Open(_T("d:\\scores.mdb"));
+
+     CDaoRecordset rs(&amp;db);
+     rs.Open(dbOpenDynaset,
+        _T("SELECT [Student Name], AVG([Test Score]) AS AvgScore "
+           "FROM Scores GROUP BY [Student Name]"));
+
+     while (!rs.IsEOF())
+     {
+        COleVariant varName;
+        COleVariant varAvg;
+        varName = rs.GetFieldValue(_T("student name"));
+        varAvg = rs.GetFieldValue(_T("AvgScore"));
+
+        // You know that the return values are BSTR and VT_R8 types.
+        // if you didn't know, you would have to do some checking
+        // here. Look at the vt member of the COleVariant to see what
+        // type the data is.
+
+        // Do something with the data. This sample prints the
+        // information to the output window of the debugger.
+        TRACE(_T("%s\n%f\n"), V_BSTRT(&amp;varName), V_R8(&amp;varAvg));
+        rs.MoveNext();
+     }
+     rs.Close();
+     db.Close();
+
+NOTE: The alias name "AvgScore" is used for the column that will contain the
+average score for each student.
+
+SQL Aggregate Functions Using a CDaoRecordset-Derived Class
+-----------------------------------------------------------
+
+To create a CDaoRecordset-derived class that retrieves the results of a SQL
+statement with an SQL aggregate function, you need to:
+
+- Explicitly specify the full SQL statement as the second argument of the
+  Open() call or return the full SQL statement from the GetDefaultSQL() member
+  function. In the SQL statement, specify a column alias for the functions that
+  will contain the results of SQL aggregate functions such as AVG() or SUM().
+  For example:
+
+     rs.Open(dbOpenDynaset,
+         _T("SELECT [Student Name], AVG([Test Score]) AS AvgScore "
+            "FROM Scores GROUP BY [Student Name]"));
+
+- Modify the DFX functions in the DoFieldExchange() member function of the
+  CDaoRecordset-derived class so that it uses the alias names. For example:
+
+     void CMyRecordset::DoFieldExchange(CDaoFieldExchange* pFX)
+     {
+        ...
+        DFX_Text(pFX, _T("[student name]"), m_student_name);
+        DFX_Double(pFX, _T("[AvgScore]"), m_avg_score);
+        ...
+     }
+
+Using this second technique makes the code a little cleaner. For example, after
+the CDaoRecordset-derived class has been modified as described above, here is
+what the code might look like:
+
+     CAvgSet rs;
+     rs.Open(dbOpenDynaset,
+        _T("SELECT [Student Name], AVG([Test Score]) AS AvgScore "
+           "FROM Scores GROUP BY [Sudent Name]"));
+     while (!rs.IsEOF())
+     {
+        TRACE(_T("%s\n%f\n"), (LPCTSTR)rs.m_student_name, rs.m_test_score);
+        rs.MoveNext();
+     }
+     rs.Close();
+
+NOTE: There isn't a need to work with COleVariants unlike the GetFieldValue()
+technique described previously.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbAudDeveloper kbMFC
+Version           : 4.0 4.1 4.1b 4.2 4.2b 5.0 6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

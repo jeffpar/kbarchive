@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130500: How to Change the Default Font of the Class Browser | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130500: How to Change the Default Font of the Class Browser" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130500/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130500/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130500/","publisher":null,"image":null,"headline":"Q130500: How to Change the Default Font of the Class Browser","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130500-how-to-change-the-default-font-of-the-class-browser">Q130500: How to Change the Default Font of the Class Browser</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130500
+Product(s): Microsoft FoxPro
+Version(s): 3.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, Professional Edition, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Class Browser is a tool included with the Professional Edition of Visual
+FoxPro. It is a Visual FoxPro application (.APP file) that allows developers to
+browse visual class libraries. Because of the many options it provides, it is a
+helpful debugging tool.
+
+You can customize the Class Browser by modifying the properties and methods it
+exposes. This article explains how to change the default font of the Class
+Browser by using the SetFont() and Addin() methods.
+
+
+MORE INFORMATION
+================
+
+You can call the Class Browser interactively by choosing Class Browser from the
+Tools menu, or you can call it in a program by using this syntax:
+
+     DO BROWSER [WITH &lt;class Library (VCX)|&lt;object reference&gt; [,&lt;classname&gt;]]
+
+-or-
+
+     DO (_BROWSER)[WITH &lt;class library (VCX)|&lt;object ref.&gt; [,&lt;classname&gt;}
+
+The Class Browser uses the MS Sans Serif font by default. You can, however,
+modify this font by using the SetFont() method of the Class Browser.
+
+Method One: Control the Font Interactively
+------------------------------------------
+
+Use the SetFont() method to modify the default font. Load the Class Browser and
+type the following from the Command window:
+
+     _oBrowser.SetFont('Arial',8)
+     _oBrowser.SetFont(,10)
+     _oBrowser.SetFont('Courier New')
+     _oBrowser.SetFont('MS Sans Serif',8)
+
+Method Two: Modify the Default Font in an Add-in Program
+--------------------------------------------------------
+
+To have the Class Browser use another default font, use the Addin method, which
+calls an add-in when a specific event occurs. This example hooks the BRWFONT.PRG
+to the Init event:
+
+     * Brwfont.prg
+     LPARAMETERS oSource
+
+     oSource.SetFont('Arial',8)
+     RETURN
+
+To install this add-in, execute the following code after the Class Browser is
+loaded:
+
+     _oBrowser.AddIn('My Font','brwfont','Init')
+
+The arguments used in this example specify the following:
+
+- 'MyFont' is the name of the add-in.
+
+- 'brwfont' is the program to execute. When this parameter is empty, the Add-in
+  is uninstalled.
+
+- 'Init' is the method name that is used as an event hook for the add-in.
+  Whenever the Class Browser Init() event is triggered, BRWFONT.PRG will be
+  called.
+
+- The parameter oSource used in BRWFONT.PRG is a reference to the Class
+  Browser. All Class Browser add-in programs receive one parameter, which
+  references the Class Browser form object.
+
+Once the add-in is created, it is stored in the BROWSER.DBF registration table.
+It will be called each time an instance of the Class Browser is created.
+
+REFERENCES
+==========
+
+For more information about customizing the Class Browser, search for "Class
+Browser" or "Browsing Classes" and then "Customizing the Class Browser" in the
+Visual FoxPro Help menu.
+
+Additional query words: 3.00 VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

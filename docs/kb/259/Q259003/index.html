@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q259003: How and Why to Perform a Parallel Installation of Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q259003: How and Why to Perform a Parallel Installation of Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/259/Q259003/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/259/Q259003/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/259/Q259003/","publisher":null,"image":null,"headline":"Q259003: How and Why to Perform a Parallel Installation of Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q259003-how-and-why-to-perform-a-parallel-installation-of-windows-nt-40">Q259003: How and Why to Perform a Parallel Installation of Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q259003
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbsetup
+Last Modified: 29-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes steps and recommendations for performing a parallel
+installation of Windows NT 4.0. A parallel installation of the operating system
+is an installation to the same drive and volume as an existing installation of
+Windows NT, with the difference being the name of the operating system folder.
+
+You can perform a parallel installation when you are using an installation of
+Windows NT 4.0 for testing or debugging, or when the operating system cannot be
+started. In the case of troubleshooting an installation that cannot be started,
+if the file system is FAT, it is possible to boot from an MS-DOS boot disk and
+gain access to the files. However, if the file system is NTFS, you cannot gain
+access to the file system using a boot disk.
+
+You should perform the procedure listed in this article as a last resort. You
+should examine and address any problems you encounter during this process.
+Changes made to the file system during a parallel installation of Windows NT 4.0
+could result in permanent loss of data.
+
+NOTE: Parallel installation should be installed on another partition (or volume)
+if it is possible. This is very important as Microsoft does not support multiple
+operating systems on the same partition. Two Windows NT operating systems cannot
+be maintained on the same partition because the operating systems then share the
+same Program Files directory, which causes conflicts using Internet Explorer,
+Outlook Express and other programs.
+
+MORE INFORMATION
+================
+
+The procedure described in this article applies equally to Windows NT
+Workstation and Windows NT Server, except where noted.
+
+NOTE: During the installation process, if at any time a message is displayed
+stating that files being copied are older than what is on the system, choose the
+option to not overwrite the files.
+
+The minimum disk requirement for installing Windows NT Server is 125 MB. If the
+system is very low on disk space (for example, less than 100 MB), the
+installation is unsuccessful. However, you can proceed with Setup and it
+calculates how much disk space is needed for the installation, based on your
+selections. If there is not enough space for a parallel installation, you can
+add another drive to the computer temporarily, and then perform the parallel
+installation on the temporary drive.
+
+Performing a Parallel Installation
+----------------------------------
+
+To perform a parallel installation of Windows NT, use the following steps:
+
+1. Start the computer either from the Windows NT 4.0 disks or the Windows NT 4.0
+  CD-ROM.
+
+  NOTE: If you need to install an additional SCSI driver, refer to the following
+  Microsoft Knowledge Base article for the steps on installing an additional
+  driver during Setup:
+
+  Q158568 Installing Retired or Third-Party SCSI Drivers During Setup
+
+  Otherwise, Windows NT Setup loads drivers and continues until the following
+  message is displayed:
+
+  Welcome to Setup.
+
+  The Setup program for the Microsoft(R) Windows NT(TM) operating system version
+  4.0 prepares Windows NT to run on your computer.
+
+   - To learn more about Windows NT Setup before continuing, press F1.
+
+   - To set up Windows NT now, press ENTER.
+
+   - To repair a damaged Windows NT version 4.0 installation, press R.
+
+   - To quit Setup without installing Windows NT, press F3.
+
+2. Press ENTER to start the parallel installation process. The next dialog box
+  lists the detected mass storage devices. If the list is correct, press ENTER
+  to continue.
+
+3. After the End User License Agreement dialog box is displayed, the hardware
+  that is detected is displayed. If the list is correct, press ENTER to
+  continue.
+
+  NOTE: In most cases, you do not need to specify additional drives for pointing
+  devices or other input devices for this process. Only minimal device support
+  is needed for a parallel installation of Windows NT 4.0.
+
+4. If the operating system you are installing is less than or equal to the
+  operating system that is currently installed, an upgrade dialog box is
+  displayed. For example, if Windows NT Server is installed and this parallel
+  installation is Windows NT Workstation, an upgrade dialog box is not
+  displayed and Setup continues to the hardware configuration dialog box. The
+  upgrade dialog box looks like the following example:
+
+  Setup has found Windows NT on your hard disk in the directory shown below.
+
+  C:\WINNT "Windows NT Server Version 4.00"
+
+  Setup recommends upgrading this Windows NT installation to Microsoft Windows
+  NT version 4.0. Upgrading will preserve user account and security
+  information, user preferences, and other configuration information.
+
+   - To upgrade Windows NT in the directory shown above, press ENTER.
+
+   - To cancel upgrade and install a fresh copy of Windows NT, press N.
+
+5. At this point, press N for a new installation of Windows NT, which is the
+  parallel installation (note that the installation and drive letter may be
+  different than what is shown in the previous example).
+
+6. The next dialog box lists the hardware that is detected. If the list is
+  correct, press ENTER to continue. In most situations, you do not need to
+  specify additional drives for pointing devices or other input devices for
+  this process. You only need minimal device support for a parallel
+  installation of Windows NT 4.0.
+
+7. After the hardware configuration dialog box is displayed, the partition and
+  drive dialog box is displayed. Select a drive or partition that has at least
+  100 MB free, and is either the FAT16 or NTFS file system.
+
+  NOTE: If the partitions shown here are listed as "damaged or unformatted" and
+  the drive is an IDE drive that is larger than 7.8 GB, stop the installation
+  and refer to the following Microsoft Knowledge Base article:
+
+  Q197667 Installing Windows NT on a Large IDE Hard Disk
+
+8. When you perform a parallel installation of Windows NT, you do not need to
+  make any changes to the file system. You should not delete or reformat a
+  partition at this point. If the disks and partitions are still listed as
+  unknown or if there are any other error messages, stop the installation and
+  troubleshoot the problem. Any changes made at this point in the Windows NT
+  installation could lead to a loss of data.
+
+9. If there are drives listed that are FAT or NTFS, select one of the drives
+  that has at least 100 MB of free disk space, and then press ENTER.
+
+10. The next dialog box displays the partition you selected and gives you
+  several choices on how to proceed with the installation:
+
+  Select the type of file system you want on this partition from the list
+  below. Use the UP and DOWN ARROW keys to move the highlight to the selection
+  you want. Then press ENTER.
+
+  If you want to select a different partition for Windows NT, press ESC.
+
+  Format the partition using the FAT file system
+  Format the partition using the NTFS file system
+  Convert the partition to NTFS
+  Leave the current file system intact (no changes)
+
+11. For a parallel installation, choose the "Leave the current file system
+  intact (no changes)" option, and then press ENTER.
+
+12. The next dialog box is where the installation location is specified. Change
+  the default folder (Winnt) to a new name (for example, Winnt40) to ensure
+  that this is a unique installation. To make the change, simply type the
+  additional characters at the end of the Winnt, and then press ENTER.
+
+13. Setup then checks the disk for damage. If there is no disk damage, press
+  ENTER. If there is disk damage, you should not perform a parallel
+  installation.
+
+14. After the disk check is performed, Setup starts copying files. At the end of
+  the file copying process, Setup indicates that this portion of Setup is
+  successfully completed. Remove any CDs and disks from the computer, and then
+  press ENTER to restart the computer.
+
+15. After the computer restarts, Setup starts and the Welcome dialog box is
+  displayed (this dialog box lists the remaining three phases of Setup, which
+  are Gathering Information, Networking, and Finishing Setup). If you are
+  installing Windows NT Workstation, the Setup Options dialog box is also
+  displayed. This dialog box lists the following four installation options:
+
+   - Typical
+
+   - Portable
+
+   - Compact
+
+   - Custom
+
+16. The "Name and Organization" dialog box is displayed next. This information
+  does not have to exactly match the original installation; the information
+  you type here is for your reference only.
+
+17. The Registration dialog box is displayed next. After you type your CD Key,
+  click Next to continue.
+
+18. This step is for Windows NT Server only: The Licensing Modes dialog box is
+  displayed, which allows you to choose the number of licenses and the mode of
+  licensing. Type the appropriate information, and then click Next to
+  continue.
+
+19. The Computer Name dialog box is then displayed. Typically, the parallel
+  installation of Windows NT should not be the same name as the original
+  installation of Windows NT. Because this installation of Windows NT is
+  independent of the original installation, choose a name that is not in use
+  on the network, and then click Next to continue.
+
+20. This step is for Windows NT Server only: If you are installing Windows NT
+  Server, the next dialog box allows you to pick a server type. The best
+  choice for a temporary, parallel installation is a the Stand-Alone Server
+  option. If you choose the Primary Domain Controller option, a new domain is
+  created. If you choose the Backup Domain Controller option, a primary domain
+  controller (PDC) must be contacted to verify security and join this computer
+  to the domain.
+
+21. The next dialog box prompts you to assign a password to the Administrator
+  account of the parallel installation. Microsoft recommends that you assign a
+  complex password.
+
+22. The next dialog box lets you create an Emergency Repair Disk (ERD). In most
+  cases, there is no need for an ERD during a parallel installation. Choose
+  the Emergency Repair Disk option, and then click Next to continue.
+
+23. This step is for Windows NT Workstation only: If you are installing Windows
+  NT Workstation, the next dialog box gives you the following options:
+
+   - Install the most common components (recommended)
+
+   - Show me the list of components so I can choose
+
+24. The next dialog box allows you to select optional components that you want
+  installed on the parallel installation. None of the optional components is
+  necessary and can be deselected. One thing to note is that if you add an
+  item to the operating system from the original Windows NT media after
+  applying a service pack, the service pack that was previously applied should
+  be reapplied. This rule should be applied even if you are installing printer
+  drivers or accessories from Control Panel (click Add/Remove Components, and
+  then click Windows NT Setup). After the components are configured, click
+  Next to continue.
+
+25. The Windows NT Networking dialog box is then displayed. After you click
+  Next, Setup initializes networking and prompts you to choose whether or not
+  you want this computer to participate on a network. If there are network
+  resources that may be required after the parallel installation (for example,
+  a service pack), choose the "This computer will participate on a network"
+  option. Otherwise, choose the "Do not connect this computer to a network at
+  this time" option, and then click Next to continue.
+
+26. This step is for Windows NT Server only: The next dialog box gives you the
+  option to install Microsoft Internet Information Server. In most cases, this
+  component is not needed during a parallel installation and can be
+  deselected.
+
+27. If the computer is configured to participate on the network, the next dialog
+  box is for configuring network adapters. If Setup recognizes the network
+  adapter, you can click Start Search to add the adapter to the list of
+  installed adapters. Otherwise, you can select or specify an adapter by
+  clicking Select from list. After the network adapters are installed, click
+  Next to continue.
+
+28. The next dialog box is for the configuration of networking protocols. Select
+  the protocols in use on your network and then click Next to continue. The
+  Network Services dialog box is displayed next, and the services that are
+  listed and selected by default are typically sufficient for a parallel
+  installation.
+
+29. Clicking Next twice starts the networking. You are prompted for additional
+  information if needed, and to list the binding orders of the networking
+  components. In addition, you can choose the grouping configuration (either
+  Workgroup or Domain). A parallel installation does not need to participate
+  in a domain. After you choose the grouping information, click Next to
+  continue, and then click Finish.
+
+30. The next dialog box lets you select a time zone. Select the appropriate time
+  zone, and then click Next to continue.
+
+31. The next dialog box allows you to configure the display. For a parallel
+  installation, the default or detected adapter and resolution should be
+  sufficient. If necessary, test the resolution, and then click OK.
+
+32. At this point, some additional files are copied and the configuration is
+  saved. Remove the CD-ROM. You can now restart the computer and boot into the
+  parallel installation.
+
+Additional query words: new folder clean install
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q159456: Using IOMEGA Zip IDE Insider under Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q159456: Using IOMEGA Zip IDE Insider under Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/159/Q159456/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/159/Q159456/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/159/Q159456/","publisher":null,"image":null,"headline":"Q159456: Using IOMEGA Zip IDE Insider under Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q159456-using-iomega-zip-ide-insider-under-windows-nt">Q159456: Using IOMEGA Zip IDE Insider under Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q159456
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbhw kbsetup kbHardware
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Zip IDE Insider drive is a IDE-based removable media drive. This article
+will discuss information about settings and troubleshooting of this device.
+
+Currently, the Zip IDE Insider will only work on Windows NT 4.0. Windows NT 3.51
+has no removable IDE capability in its Atapi.sys driver because no removable IDE
+media products were available during its product cycle.
+
+The Windows NT 4.0 ATAPI driver is designed to recognize the new capabilities of
+removable IDE products such as the IOMEGA Zip IDE Insider or the SyQuest
+DataFlyer 230 IDE, and so forth.
+
+MORE INFORMATION
+================
+
+Currently, there are no plans to add removable media IDE capability to the
+Windows NT 3.51 Atapi.sys driver.
+
+Zip Jumper Information
+----------------------
+
+The Zip IDE Insider has a row of jumpers on the back of the unit that are
+jumpered 1-3 and 5-6 from the factory.
+
+                     1     3   5
+|----------------------------------------|-------------|--------------|
+|                                        | O----O    O |
+|
+|             (IDE Connector)            |           | |  (Power Connector)
+|
+|                                        | O    O    O |
+|
+|----------------------------------------|-------------|--------------|
+                     2    4    6
+
+If you are having problems getting Windows NT 4.0 to use this device you may need
+to jumper pins 3 and 4 together. This enables media status notification, which
+is vital to its operation in Windows NT. Otherwise, the unit will effectively
+emulate a hard disk drive and can even be detected by IDE hard disk drive
+detection programs typical in the BIOS of a modern computer.
+
+1-3 Jumper is unknown at this time but appears to have no effect. 5-6 reflect
+Master/Slave. No jumper on 5-6 equals Slave, Jumpered equals Master.
+
+It is not recommended that you allow your computer's BIOS to detect and set
+Cylinder/Head/Sectors settings for the Zip Insider as it will negate its
+removable media properties and you will be unable to remount another Zip disk if
+you eject the Zip disk while the Zip Insider is configured as a hard drive in
+BIOS regardless of the operating system.
+
+Note: The following information applies only to Windows NT 3.51. This issue was
+resolved in Windows NT 4.0 Service Pack 2.
+
+In addition, you should not format these disks with NTFS if you desire to use
+several disks while in a single session of Microsoft Windows NT. This is because
+NTFS is not a remountable file system and will disable software and hardware
+ejections of the Zip drive while you are running Windows NT. After you have
+shutdown, you can change Zip disks freely. If your Zip disks are left formatted
+as FAT you change Zip disks freely.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: IDE Insider removable Zip ntmp smp
+======================================================================
+Keywords          : kb3rdparty kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

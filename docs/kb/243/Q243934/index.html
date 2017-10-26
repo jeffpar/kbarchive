@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q243934: SNA Print Server May Take 100 Percent of CPU Processing Time | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q243934: SNA Print Server May Take 100 Percent of CPU Processing Time" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/243/Q243934/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/243/Q243934/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/243/Q243934/","publisher":null,"image":null,"headline":"Q243934: SNA Print Server May Take 100 Percent of CPU Processing Time","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q243934-sna-print-server-may-take-100-percent-of-cpu-processing-time">Q243934: SNA Print Server May Take 100 Percent of CPU Processing Time</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q243934
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
+Operating System(s): 
+Keyword(s): kbDSupport
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under certain circumstances, the SNA Print Service's buffer can overrun. This
+causes a spike in the CPU's processor time.
+
+CAUSE
+=====
+
+The mainframe may continue to send data to the SNA Print Server after receiving
+sense data from the SNA Server. This may cause the SnaPrint buffer to overflow.
+
+RESOLUTION
+==========
+
+The SNA Print Server has been modified so that if a message arrives that will
+not fit into the print buffer and the session is closed, the message is ignored.
+Previously, the SNA Print Server continually attempted to put the message into
+the print buffer, and this caused the CPU spike. When the session is closed
+properly with an End Bracket (EB) or UNBIND, this problem does not occur.
+
+To resolve this problem, obtain the latest service pack for Microsoft SNA Server
+version 4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+  Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+WORKAROUND
+==========
+
+The best solution is to correct the datastream from the mainframe. If this is
+not possible, restarting the SNA Print Server will temporarily resolve the
+problem.
+
+STATUS
+======
+
+This problem was first corrected in Microsoft SNA Server 4.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+This is the scenario in which this problem was reported:
+
+The SNA print session was configured to use a short job timeout value because the
+mainframe was not issuing an UNBIND or EB at the end of the print jobs. When a
+job timed out, the print session was successfully closed, but the mainframe
+continued to send data for the next job. Because the print session was closed,
+the SNA Print Service rejected the message with a NACK-1, sense data 0802 -
+Intervention required. The mainframe continued to send data messages,
+overrunning the SNA print buffer. The CPU spiked at 100%.
+
+The mainframe should not have sent data after receiving the sense data from the
+SNA Server. The proper behavior is to either re-BIND the session or send an end
+bracket followed by a begin bracket.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2
+Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

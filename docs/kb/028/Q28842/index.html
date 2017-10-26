@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q28842: EXE Size Using BCOM4x.LIB (Stand Alone) Versus BRUN4x.LIB | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q28842: EXE Size Using BCOM4x.LIB (Stand Alone) Versus BRUN4x.LIB" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/028/Q28842/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/028/Q28842/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/028/Q28842/","publisher":null,"image":null,"headline":"Q28842: EXE Size Using BCOM4x.LIB (Stand Alone) Versus BRUN4x.LIB","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q28842-exe-size-using-bcom4xlib-stand-alone-versus-brun4xlib">Q28842: EXE Size Using BCOM4x.LIB (Stand Alone) Versus BRUN4x.LIB</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q28842
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 30-JUN-1989
+
+A compiled BASIC executable (.EXE) file compiled with the BRUN (i.e.,
+BRUN4x.EXE) option is much smaller on disk than an .EXE compiled with
+the BCOM option (i.e., compiled BC /O, or with the Stand-Alone option
+when using the Make EXE File... option from the QB.EXE editor's Run
+menu). This information applies to Microsoft QuickBASIC Versions 4.00,
+4.00b, and 4.50 and to Microsoft BASIC Compiler Versions 6.00 and
+6.00b.
+
+This occurs because a stand-alone .EXE file contains all the
+QuickBASIC language run-time support routines required by that
+program, whereas a non-stand-alone .EXE calls the run-time support
+from BRUN4x.EXE, a large separate file loaded into memory at run time.
+
+The decision to compile with BRUN or BCOM (stand-alone) involves the
+following trade-offs between disk space and speed:
+
+1. If you keep more than two or three compiled .EXE programs on a
+   disk, you can save disk space by compiling with the BRUN option.
+   (Please see the one-line example below.)
+
+2. If you want your program to run as quickly as possible, you should
+   compile with the stand-alone (BCOM) option, which uses BCOM4x.LIB
+   at compile time.
+
+If you must pass variables in COMMON between CHAINed programs, then
+you always must compile with the BRUN4x.EXE option.
+
+Note that this article only discusses the impact upon disk space
+usage, and not the impact on run-time memory usage. The .EXE load size
+in memory is usually larger than the .EXE file size on disk. The best
+way to determine run-time memory usage is by invoking the FRE(-1) and
+FRE("") functions at run time.
+
+In QuickBASIC you may create executable files with either the BRUN
+option or the BCOM option. Page 152 of the "Microsoft QuickBASIC 4.0:
+Learning and Using" manual gives a good comparison of run-time module
+programs (those compiled with BRUN) versus stand-alone programs (those
+compiled with BCOM).
+
+BRUN Option
+-----------
+
+The BRUN4x.EXE module, also loosely referred to as the "BRUN" module,
+has the following actual names, depending upon the version number:
+
+   BRUN40.EXE for QuickBASIC Version 4.00
+   BRUN41.EXE for QuickBASIC Version 4.00b
+   BRUN45.EXE for QuickBASIC Version 4.50
+
+(The names are different for Microsoft BASIC Compiler 6.00 and 6.00b.)
+
+Programs compiled with the BRUN option need to load and access the
+run-time module BRUN4x.EXE at run time. BRUN4x.EXE contains code
+needed to implement the BASIC language.
+
+There are two methods to compile with the BRUN option: with the "EXE
+Requiring BRUN4x.EXE" option from QB.EXE's Make EXE File... item in
+the Run menu, or with BC.EXE with no /O switch.
+
+When compiled with BRUN, the EXE file size is smaller than when it is
+compiled with the BCOM option. To run that program, you must have the
+file BRUN4x.EXE present. Therefore, when a developer distributes his
+or her programs, both the .EXE application and BRUN4x.EXE must be
+placed on the distribution disk. In the case of the BCOM (stand-alone)
+version, only the application program's EXE file need be distributed.
+
+BCOM Option
+-----------
+
+There are two methods to compile with the "BCOM" option: with the
+"Stand-Alone EXE File" option from the QB.EXE's Make EXE File...
+item in the Run menu, or with BC.EXE with the /O switch.
+
+Modules compiled with the BCOM option do not require access to the
+run-time module BRUN4x.EXE because the support routines (contained in
+BCOM4x.LIB) are included at LINK time in the program's executable
+(.EXE) file.
+
+Any individual program compiled with the stand-alone (BCOM) option
+will have a larger EXE file size than when compiled with BRUN. All the
+run-time support needed by that program actually is a part of the
+executable file; it truly is a stand-alone program.
+
+One-Line Example of BCOM versus BRUN Disk Usage
+-----------------------------------------------
+
+In the specific case of a one-line program containing PRINT "Hello",
+the EXE size is 23,121 bytes when compiled with the BCOM (BC /O)
+option in QuickBASIC Version 4.00. (Other versions may differ.)
+
+When compiled with BRUN, the EXE size is 2979 bytes, but you must also
+consider the size of BRUN40.EXE (76,816 bytes). The combined size of
+the two files for the BRUN version is 79,795 bytes, which is
+considerably larger than that of the BCOM version. Three of these
+one-line programs compiled with BCOM would take less space on disk
+than the same program compiled with BRUN plus the BRUN40.EXE module.
+The relative file sizes will differ for larger programs.
+
+Disk Space Usage When CHAINing
+------------------------------
+
+Developing a system of about three or four or more .EXE programs that
+CHAIN to each other can consume more disk space compiled with BCOM
+than compiled with BRUN. This is because each program compiled with
+BCOM has a copy of the run-time module attached, and the duplicate
+information uses up disk space.
+
+In contrast, all programs compiled with BRUN share only one copy of
+the run-time module (in BRUN4x.EXE). Therefore, the combined size on
+disk for four or more EXE files together usually is smaller when
+compiled with BRUN. Note that for one, two, or three small programs,
+the system may be smaller on disk when compiled with BCOM. All you
+need to do is compile with BCOM and BRUN and compare sizes.
+
+The only time you must compile with BRUN rather than BCOM is in the
+case of preserving COMMON variables across a CHAIN. CHAINed programs
+can share COMMON variables only if the two programs are compiled with
+BRUN. The COMMON portion of the run-time module remains resident in
+memory across the CHAIN.
+
+The BCOM run-time module is replaced in memory when CHAINing between
+BCOM programs, and no COMMON can be passed. The CHAIN and RUN
+statements behave identically in programs compiled with BCOM.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

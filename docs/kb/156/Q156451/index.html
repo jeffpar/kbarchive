@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q156451: FIX: DDCONV Causes GP Fault During Database Conversion | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q156451: FIX: DDCONV Causes GP Fault During Database Conversion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/156/Q156451/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/156/Q156451/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/156/Q156451/","publisher":null,"image":null,"headline":"Q156451: FIX: DDCONV Causes GP Fault During Database Conversion","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q156451-fix-ddconv-causes-gp-fault-during-database-conversion">Q156451: FIX: DDCONV Causes GP Fault During Database Conversion</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q156451
+Product(s): Microsoft SourceSafe
+Version(s): 
+Operating System(s): 
+Keyword(s): kbSSafe400bug kbSSafe500fix kbSSafe310bug kbSSafe304bug
+Last Modified: 04-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+- Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0a 
+- Microsoft Visual SourceSafe, 32-bit, for Windows 4.0a 
+- Microsoft SourceSafe for Windows, versions 3.04, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use DDCONV.EXE in an attempt to convert your SourceSafe 3.x database to
+the Visual SourceSafe 4.0 format, a General Protection Fault may occur.
+
+When DDCONV.EXE is run against the database, it generates a file called
+DDCERR.LOG. This file contains an informational list of the actions performed by
+DDCONV.EXE and includes references to any problems encountered during the
+upgrade.
+
+This article contains information on the following problem:
+
+- You are receiving a General Protection Fault when running DDCONV.EXE.
+
+- The last entry in the DDCERR.LOG file reads:
+
+  File &lt;filename&gt;.&lt;a or b&gt; not found
+
+where &lt;filename&gt; is any 8-character filename with an extension of .a or .b.
+
+CAUSE
+=====
+
+Each file or project in a SourceSafe database is represented as a "file pair"
+within the database itself. For example, information on the root project ($/) of
+a SourceSafe database is stored in the file AAAAAAAA, called the log file, and
+AAAAAAAA.A (or .B), called the data file. If you were to add a new file to an
+empty SourceSafe database, it would be stored internally as BAAAAAAA and
+BAAAAAAA.A (or .B).
+
+NOTE: The file extension will alternate between .A and .B each time the file is
+modified or labeled.
+
+If the data file for a Project is moved or deleted and you attempt to run
+DDCONV.EXE against the database, a General Protection Fault will occur.
+
+WORKAROUND
+==========
+
+You may use the DDCERR.LOG file to identify the physical file name that is
+generating the error. From this point, any of three approaches may be used to
+fix the problem:
+
+1. Delete the offending log file for which no data file exists. This may cause
+  data loss, but, if the data file is missing, it is already inaccessible from
+  SourceSafe.
+
+2. Recover the file pair (both the data and the log file) from a backup copy of
+  the database.
+
+3. Microsoft has provided a new version of DDCONV.EXE that prevents the General
+  Protection Fault from occurring. To download this version, please see the
+  following article in the Microsoft Knowledge Base:
+
+  Q150647 Updated Visual SourceSafe 4.0 DDCONV.EXE
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual SourceSafe
+5.0.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+The following procedure describes how to upgrade your SourceSafe database when
+using this new version of DDCONV:
+
+1. Copy your SourceSafe 3.1 database, including the Data directory and all of
+  its subdirectories, to a new directory. Or, you can make a backup copy to a
+  tape drive.
+
+2. Make a backup copy of the \USERS directory, the SS\SRCSAFE.INI file, and the
+  SS\USERS.TXT file.
+
+3. Run DDCONV.EXE against the database using the following syntax:
+
+  DDCONV &lt;path to database&gt;
+
+4. Install the server version of Visual SourceSafe 4.0a to a new, empty
+  directory. Do not point to your SourceSafe 3.x location.
+
+5. After the Visual SourceSafe installation is complete, verify that it is
+  version 4.0a by choosing About from the Help menu. Version 4.0a is required
+  for this procedure.
+
+6. Copy the VSS\DATA\VERSION.DAT file from the Visual SourceSafe 4.0a
+  installation to a temporary location outside of the SourceSafe directory
+  structure.
+
+7. Delete the VSS\DATA directory and all of its subdirectories from the Visual
+  SourceSafe installation.
+
+8. Copy the converted SourceSafe Data directory, from step 3 above, to the
+  Visual SourceSafe installation.
+
+9. Copy the backed-up VERSION.DAT file, from step 4 above, to the new VSS\DATA
+  directory, overwriting the existing file.
+
+10. Delete the VSS\USERS directory, the VSS\USERS.TXT file, and the
+  VSS\SRCSAFE.INI file from the new Visual SourceSafe installation.
+
+11. Copy the SS\USERS directory, the SS\USERS.TXT file, and the SS\SRCSAFE.INI
+  file, from step 2 above, to the new Visual SourceSafe directory.
+
+12. Run ANALYZE.EXE against the database to correct any remaining problems in
+  the database files using the following syntax:
+
+  ANALYZE &lt;path to data directory&gt; -f
+
+NOTE: It may be necessary to run ANALYZE against the database more than once.
+Each time ANALYZE is run, it will create an output file called ANALYZE.LOG that
+contains a description of the errors it encountered. ANALYZE should be run until
+two successive LOG files are identical. For additional information on ANALYZE,
+please see the following article in the Microsoft Knowledge Base:
+
+  Q190881 SAMPLE: Analyze6.exe Utility for Visual SourceSafe
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new, empty SourceSafe 3.x database.
+
+2. Switch to or start SourceSafe 3.x Explorer, and add a new project.
+
+3. Close SourceSafe.
+
+4. Switch to File Manager or the Windows Explorer and delete the following
+  file:
+
+  &lt;path to SourceSafe Database&gt;\SS\DATA\BAAAAAAA.A
+
+5. Run DDCONV.EXE against the database. Note that a General Protection Fault
+  occurs and that the last entry in DDCERR.LOG is:
+
+  File BAAAAAAA.A not found
+
+6. Delete the file BAAAAAAA and rerun DDCONV.EXE. Note that the process
+  completes successfully.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500fix kbSSafe310bug kbSSafe304bug 
+Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword3 kbSSafe304 kbSSafe310 kbSSafe400 kbSSafe400a kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

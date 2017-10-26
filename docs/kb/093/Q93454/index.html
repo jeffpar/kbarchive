@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q93454: SETUP.TXT from Windows for Workgroups Version 3.1 (Part A) | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q93454: SETUP.TXT from Windows for Workgroups Version 3.1 (Part A)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/093/Q93454/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/093/Q93454/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/093/Q93454/","publisher":null,"image":null,"headline":"Q93454: SETUP.TXT from Windows for Workgroups Version 3.1 (Part A)","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q93454-setuptxt-from-windows-for-workgroups-version-31-part-a">Q93454: SETUP.TXT from Windows for Workgroups Version 3.1 (Part A)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q93454
+Product(s): Microsoft Windows 3.x Retail Product
+Version(s): WINDOWS:3.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 23-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the Microsoft Windows for Workgroups
+version 3.1 SETUP.TXT file. This article contains the first half of the file.
+
+MORE INFORMATION
+================
+
+This file contains information about problems that may occur while
+running Windows for Workgroups Setup and describes problems that can
+occur when using terminate-and-stay-resident (TSR) programs or drivers
+with Windows for Workgroups or Setup. If you are using a TSR or if you
+encounter problems setting up Windows for Workgroups, read this
+document BEFORE running Setup again.
+
+General Setup Notes
+====================
+
+This section includes notes on specific system configurations that may
+prevent Setup from installing Windows for Workgroups successfully. A
+solution to each problem is provided.
+
+If you are using a hardware or software product listed here, follow
+the proposed recommendations before running Setup.
+
+Network Cards
+-------------
+
+If you are using one of the following network cards, you must run
+Setup with the /i option:
+
+  Novell/Anthem NE1500
+  Novell/Anthem NE2100
+  Advanced Micro Devices (AMD) AM2100
+  Microdyne EXOS 105
+
+At the command prompt, type the following:
+
+  setup /i
+
+MS-DOS Screen Savers
+--------------------
+
+If you are using an MS-DOS screen saver, you should turn it off before
+running Setup. These screen savers can cause problems when running
+Setup.
+
+COMPAQ Computer with MS-DOS Version 5.0 and EGA or VGA
+------------------------------------------------------
+
+If you are using the upgrade version of Microsoft MS-DOS 5.0, check
+your CONFIG.SYS file to make sure the following drivers (if present)
+appear in this order:
+
+  HIMEM.SYS
+  EMM386.EXE
+  ANSI.SYS
+
+Note: If you are using the COMPAQ version of MS-DOS 5.0, HIMEM.EXE is
+used in place of HIMEM.SYS and CEMM.EXE is used in place of
+EMM386.EXE.
+
+If ANSI.SYS is loaded before HIMEM.SYS or EMM386.EXE (or if you are
+using COMPAQ MS-DOS 5.0 before HIMEM.EXE or CEMM.EXE), Setup may
+restart your system before Windows for Workgroups is installed. Also,
+if you are using the DOS=HIGH,UMB command line to load MS-DOS into
+upper memory, loading EMM386.EXE (or CEMM.EXE) before loading ANSI.SYS
+will create the maximum amount of upper memory space on a COMPAQ
+computer.
+
+AT&amp;T Safari Computer
+--------------------
+
+If you have an AT&amp;T Safari computer, you cannot maintain two versions
+of Windows (version 3.0 and version 3.1) on your system. You must
+upgrade over version 3.0. If you set up Windows for Workgroups version
+3.1 in its own directory, it will not use the special drivers required
+to run on the Safari computer.
+
+Displays That May Require Driver Updates with Windows for Workgroups
+--------------------------------------------------------------------
+
+Certain third-party display drivers designed for Windows version 3.0
+can cause problems with Windows for Workgroups version 3.1. The most
+serious problem is a system failure while running Windows for
+Workgroups Setup. If you encounter this problem, run Custom Setup, and
+then select one of the standard display types, such as VGA, that is
+provided with Windows for Workgroups.
+
+With other Windows version 3.0 display drivers, Windows for Workgroups
+may be set up successfully but TrueType fonts may not appear correctly
+on your screen.
+
+An updated driver may be available from your display vendor or 
+manufacturer. 
+
+Windows version 3.0 drivers for the following display adapters may
+cause problems:
+
+- ATI Graphics Ultra and Vantage
+
+  Note: These adapters are 8514/a-compatible and run well with the
+  8514/a driver provided with Windows for Workgroups.
+
+- DGIS display adapters (Direct Graphics Interface Standard)
+  from Graphic Software Systems, including the following:
+
+     NEC MultiSynch Graphics Engine (MGE)
+     Zenith Z-649
+     HP IGC-10, IGC-20
+     GSS 1000 Series
+
+  Note: Some DGIS-based adapters are TIGA-compatible and run well when
+  used with the appropriate TIGACD.EXE MS-DOS driver and with the TIGA
+  driver provided with Windows for Workgroups.
+
+- HP Ultra VGA (versions earlier than 1.4 only)
+
+- IBM Image Adapter/A
+
+- Matrox MG Series/M-WIN Series
+
+- Palettized VGA 640x480, 16-color (provided with Windows Multimedia
+  Extensions version 1.0)
+
+- Radius SVGA MultiView
+
+- RGDI (Renaissance Graphics Device Interface) display adapters from
+  Appian, Inc., including the following:
+
+     Appian Rendition II, IIe, II/XE, and III
+     Appian GV1024
+     Decpc 433
+
+- S3 adapters, including the following:
+
+     Orchid Fahrenheit 1280
+     STB WIND/X
+     Diamond Stealth VRAM
+
+Using Stacker
+-------------
+
+If you are using Stacker to compress your hard disk, there are certain
+steps you need to take before setting up Windows for Workgroups.
+
+- If you want to use a swap file with Windows for Workgroups, you
+  must set up the swap file on the uncompressed drive. When setting
+  up Stacker, you can leave at least 1 megabyte (MB) of disk space
+  uncompressed for storing system files. To leave enough space for
+  the swap file, it is recommended that the amount of uncompressed
+  disk space equal at least twice the amount of system memory. For
+  example, if your system has 4 MB of memory, you should leave at
+  least 8 MB of disk space uncompressed.
+
+  If Stacker is already set up on your system and there is not enough
+  uncompressed disk space for a swap file, you can run the STAC
+  utility provided with Stacker to increase the amount of
+  uncompressed disk space. For more information, see your Stacker
+  documentation.
+
+- If you are using Stacker version 2.0 or later, Windows for
+  Workgroups Setup modifies your CONFIG.SYS and AUTOEXEC.BAT files.
+  When Setup finishes making the modifications, it displays a message
+  at the end of the Windows portion of Setup, notifying you of the
+  modifications. If you have used Stacker to swap your startup drive,
+  when you restart your system, Stacker will ask whether you want to
+  update to the new version of the CONFIG.SYS or AUTOEXEC.BAT file.
+  It is recommended that you update.
+
+  If you are using a version of Stacker earlier than 2.0, you may
+  need to modify your CONFIG.SYS and AUTOEXEC.BAT files yourself. For
+  more information, see the following topic, "Modifying Your
+  CONFIG.SYS and AUTOEXEC.BAT Files Yourself."
+
+- For best performance, do not use SMARTDrive to cache the compressed
+  drive. You only need to cache the uncompressed drive. You can
+  include options on the SMARTDRV.EXE line of the CONFIG.SYS file to
+  specify which drives to cache.
+
+  For example, if the Stacker swap utility swaps drives C and D so
+  that C is compressed and D is uncompressed, you would include the
+  following line in your AUTOEXEC.BAT file:
+
+     c:\windows\smartdrv.exe c- d+
+
+For more information about swap files and using SMARTDrive, see
+Chapter 11, "Managing Memory and Performance," in the "Microsoft
+Windows for Workgroups User's Guide."
+
+Modifying Your CONFIG.SYS and AUTOEXEC.BAT Files Yourself
+---------------------------------------------------------
+
+When you set up Windows for Workgroups, Setup usually places the
+HIMEM.SYS, SMARTDRV.EXE, and EMM386.EXE files in the Windows
+directory. If the Windows directory is on a disk that is not available
+when you start your computer, such as a removable or nonlocal disk, or
+if Setup detects one of the following conditions, Setup does not
+modify the CONFIG.SYS or AUTOEXEC.BAT file:
+
+- Your boot drive has been modified by a disk-compression
+  utility.
+
+- Your CONFIG.SYS file contains references to block device
+  drivers.
+
+- There is not enough available space on your hard disk to
+  copy the files.
+
+- The files are already installed on your system and Setup
+  cannot overwrite them (they are read-only).
+
+Instead, Setup writes proposed changes to the CONFIG.WIN and
+AUTOEXEC.WIN or the CONFIG.00x and AUTOEXEC.00x files. In this case,
+you must either move the HIMEM.SYS, SMARTDRV.EXE, and EMM386.EXE files
+to a drive that is available when you start your computer, or use a
+text editor to modify your CONFIG.SYS or AUTOEXEC.BAT file so that any
+references to HIMEM.SYS, SMARTDRV.EXE, and EMM386.EXE appear after the
+device= command line used to load the drivers for your disk drives.
+Refer to the CONFIG.WIN and AUTOEXEC.WIN or the CONFIG.00x and
+AUTOEXEC.00x files for the proposed changes.
+
+Setting Up XGA on a PS/2 Model 75 or 90
+---------------------------------------
+
+If you have a PS/2 model 75 or 90 with an XGA, Windows for Workgroups
+Setup will configure the display adapter for 16-color, 640x480
+resolution. Do not change this configuration during Setup. Specifying
+a different XGA configuration while setting up Windows for may cause
+Setup to fail.
+
+After you have successfully installed Windows, you can configure your
+XGA to use a different resolution or 256 colors, if your monitor
+supports it. For more information on how to do this, see the topic
+"IBM XGA: Configuring Color and Resolution" in the README.WRI online
+document.
+
+If you are using the plasma screen on the PS/2 model 75, use ONLY the
+640x480, 16-color configuration. If you change this configuration, you
+return to the MS-DOS prompt when you try to start Windows.
+
+Correcting the "Out of Environment Space" Error Message
+-------------------------------------------------------
+
+If you receive an "out of environment space" message when starting
+Windows, you can either:
+
+- Increase the size of your environment by adding the SHELL= command
+  line to your CONFIG.SYS file. See your MS-DOS documentation for
+  more information about the SHELL command and about modifying your
+  CONFIG.SYS file.
+
+- Move the SET commands in your AUTOEXEC.BAT file to the beginning of
+  the file so that they run before the commands that load
+  terminate-and-stay-resident (TSR) programs or drivers, such as
+  SMARTDrive.
+
+Using Terminate-and-Stay-Resident (TSR) Programs and Drivers
+with Windows for Workgroups
+=============================================================
+
+The "Program Listing" section of this document lists several
+terminate-and-stay-resident (TSR) programs and drivers that are known
+to cause problems when running with Windows for Workgroups. Some of
+the problems you may encounter include system failures or an incorrect
+display of information on your screen. In some cases, special steps
+are provided to solve the problems.
+
+While setting up Windows for Workgroups, Setup searches the
+AUTOEXEC.BAT and CONFIG.SYS files for references to TSR programs and
+drivers, in addition to scanning memory for TSRs that are currently
+running. If Setup detects a TSR that is known to cause problems when
+running with Windows for Workgroups, a message appears, asking whether
+you want to continue or quit Setup.
+
+If you receive such a message, do the following:
+
+1. Locate your TSR in the "Program Listing" section of this document
+  and use the information to determine if the situation encountered
+  prevents Setup from successfully installing Windows for Workgroups.
+
+2. If the situation does not affect Setup, you can continue setting up
+  Windows for Workgroups by following the instructions on your
+  screen.
+
+  If the situation does affect Setup and prevents it from installing
+  Windows for Workgroups on your computer, follow the instructions on
+  the screen to quit Setup, and then complete the following steps.
+
+3. Quit the TSR and remove all references to it from your
+  AUTOEXEC.BAT and CONFIG.SYS files. For more information,
+  see the documentation for your TSR.
+
+4. Restart your computer.
+
+5. Run Windows for Workgroups Setup again.
+
+After Windows for Workgroups is successfully set up, you may want to
+restore your TSRs.
+
+Not all TSRs or drivers included in the "Program Listing" section are
+detected by Setup. The TSRs and drivers that Setup detects are in the
+SETUP.INF file, listed under the names "incomptsr1" and "incomptsr2".
+
+Program Listing
+===============
+
+This section describes some problems, discovered during testing, that
+you might encounter while using a TSR with Windows for Workgroups. It
+does not include all possible problems that can occur.
+
+386MAX
+------
+
+The documentation for 386MAX recommends against setting the EXT
+parameter below 64. If you set this parameter to 0, Setup and Windows
+for Workgroups running in standard mode will fail.
+
+See the README.WRI online document for more information about running
+386MAX with Windows for Workgroups.
+
+386MAX Disk-Cache Utility (QCACHE.EXE)
+--------------------------------------
+
+Do not use this disk-cache utility simultaneously with SMARTDrive.
+There is no reason to use two disk-cache utilities with Windows for
+Workgroups. It is recommended that you use SMARTDrive, provided with
+Windows for Workgroups, instead.
+
+All Charge 386 Version 3.1
+--------------------------
+
+ALLEMM4.SYS is a memory manager that causes problems with Setup and
+Windows for Workgroups. If you encounter problems running this program
+with Windows for Workgroups, it is recommended that you use EMM386.EXE
+and HIMEM.SYS, provided with Windows for Workgroups, to manage memory
+instead.
+
+Anarkey Version 4.00
+--------------------
+
+With some memory configurations, Anarkey version 4.00 running with
+Windows for Workgroups in 386 enhanced mode may cause unpredictable
+system failures. In rare cases, this program can also corrupt hard-
+disk data. In addition, Windows for Workgroups might not start when
+this program is running.
+
+Do not run Windows for Workgroups in 386 enhanced mode when Anarkey
+version 4.00 is running. Version 4.01 may correct these problems.
+Contact Moderne Software for a free upgrade to Anarkey 4.01.
+
+Anarkey Version 4.01
+--------------------
+
+If Anarkey version 4.01 is loaded before starting Windows for
+Workgroups in standard mode, it is not available in any instance of
+MS-DOS Prompt that you start within Windows for Workgroups. In this
+case, it is recommended that you load Anarkey from each instance of
+MS-DOS Prompt, as needed.
+
+Do not load Anarkey HIGH before starting Windows for Workgroups in 386
+enhanced mode. If you load Anarkey HIGH, your system may fail when you
+try to start an application.
+
+APPEND (MS-DOS)
+---------------
+
+Do not use the APPEND utility with Windows for Workgroups. It prevents
+Windows and Windows-based applications from creating valid Well-
+Formed-Path (WFP) names for the files they are using. (A WFP is the
+complete name of a file, including the drive letter and full path
+specification, starting from the root directory.)
+
+ASP Integrity Toolkit Version 3.7
+---------------------------------
+
+This product is a virus-protection program that can cause problems
+when running Setup, including system failure, automatic restarting of
+the system, and the inability to use the keyboard. You should turn off
+protection in the toolkit before setting up Windows for Workgroups.
+For information about how to do this, see your ASP Integrity
+documentation.
+
+Note: Setting up Windows for Workgroups is considered a system-
+administration task. The ASP Integrity Toolkit documentation instructs
+you to turn off protection when performing these types of tasks.
+
+Autocon Version 2.0e
+--------------------
+
+Autocon enables you to select up to fifty different configurations
+when starting your system. To do this, it modifies the CONFIG.SYS and
+AUTOEXEC.BAT files, based on information in its database AUTOCON.DAT),
+when you restart your system from within AUTOCON.
+
+Windows for Workgroups Setup modifies only the first section in the
+CONFIG.SYS and AUTOEXEC.BAT files. If you want to use specific
+configurations with Windows, you must run Autocon and then manually
+edit the configurations in the database that you want to use. You must
+do this after setting up Windows for Workgroups. For your changes to
+take effect, you must restart your system from within Autocon. For
+more information, see your Autocon documentation.
+
+Bootcon Version 1.60
+--------------------
+
+Using Bootcon, you can maintain different system-configuration
+information in your CONFIG.SYS and AUTOEXEC.BAT files. You can then
+select the configuration you want to use from a menu when starting
+your system.
+
+Setup modifies the first section in the CONFIG.SYS and AUTOEXEC.BAT
+files, and may modify certain other sections that contain network
+drivers (for example, LAN Manager drivers and NetWare drivers may be
+deleted). After you set up Windows for Workgroups, you must edit the
+sections of those files that contain other configurations you want to
+use. For more information, see your Bootcon documentation.
+
+BOOT.SYS
+--------
+
+Using BOOT.SYS, you can maintain different system-configuration
+information in your CONFIG.SYS and AUTOEXEC.BAT files. You can then
+select the configuration you want to use from a menu when starting
+your system.
+
+Setup modifies the first section in the CONFIG.SYS and AUTOEXEC.BAT
+files, and may modify certain other sections that contain network
+drivers (for example, LAN Manager drivers and NetWare drivers may be
+deleted). After you set up Windows for Workgroups, you must edit the
+sections of those files that contain other configurations you want to
+use. For more information, see your BOOT.SYS documentation.
+
+CACHE.EXE Disk-Cache Utility
+----------------------------
+
+Do not use two disk-cache utilities with Windows for Workgroups. It is
+recommended that you use SMARTDrive, provided with Windows for
+Workgroups, and remove all references to other disk-cache utilities
+from your CONFIG.SYS and AUTOEXEC.BAT files. (If CACHE.EXE is
+detected, Setup removes it from the CONFIG.SYS file for you.)
+
+CACHE.SYS Disk-Cache Utility
+----------------------------
+
+This disk-cache utility will not work properly with SMARTDrive. It is
+recommended that you use SMARTDrive, provided with Windows for
+Workgroups, and remove all references to other disk-cache utilities
+from your CONFIG.SYS and AUTOEXEC.BAT files. (If CACHE.SYS is
+detected, Setup removes it from the CONFIG.SYS file for you.)
+
+CED Version 1.0e
+----------------
+
+Using CED with Windows for Workgroups may cause problems, including
+system failure. It is recommended that you do not use CED with Windows
+for Workgroups.
+
+Central Point Anti-Virus Version 1.1 (VSAFE.COM/VSAFE.SYS)
+----------------------------------------------------------
+
+VSAFE.COM/VSAFE.SYS should not be loaded when you set up Windows for
+Workgroups. Otherwise, Setup may not run properly. After you set up
+Windows for Workgroups, you can load VSAFE.
+
+Because Windows uses the disk for memory swapping, you should turn off
+the VSAFE write-protection option when running Windows for Workgroups.
+
+For more information, see the Central Point Anti-Virus documentation.
+
+CMDEDIT.COM Version 2.0 (Date 12-6-91)
+--------------------------------------
+
+If this command-line editor is loaded before starting Windows for
+Workgroups, it may cause a General Protection Fault when you run
+multiple MS-DOS Prompts in 386 enhanced mode. Also, it cannot be
+loaded from an MS-DOS Prompt within Windows when Windows is running in
+standard mode.
+
+Cubit Version 3.01
+------------------
+
+When using Cubit with Windows for Workgroups, do not compress the
+Windows SYSTEM directory or any file that is loaded from the
+CONFIG.SYS file. Compressing these files could cause problems.
+
+Before upgrading to Windows for Workgroups, make sure that the earlier
+version of Windows is uncompressed on your hard disk. You may
+recompress the files after you have successfully set up Windows for
+Workgroups.
+
+Data Physician Plus Version 2.0 (VirALERT)
+------------------------------------------
+
+It is recommended that you do not set up Windows for Workgroups while
+VirALERT is running. If you do, VirALERT will display a warning
+message every few seconds while Setup is running.
+
+After you have set up Windows for Workgroups, you can run VirALERT.
+Press ALT+V to display the VirALERT menu. You can use the commands on
+this menu to disable and enable VirALERT.
+
+DOSCUE.COM Command-Line Editor
+------------------------------
+
+The DOSCUE command-line editor produces unexpected results when used
+with Windows for Workgroups. It is recommended that you do not use
+this editor with Windows for Workgroups.
+
+Doubledisk Version 2.5
+----------------------
+
+Windows for Workgroups may try to access "phantom" disk drives if you
+use it with Doubledisk. Phantom drives occur when you use Doubledisk
+to create a compressed drive. For example, if you have drives A, B,
+and C on your computer and you use Doubledisk to create drive F,
+Windows for Workgroups and MS-DOS recognize drives D and E as valid
+drives, even though they do not actually exist. You can use the DRVOFF
+utility to prevent Windows from recognizing phantom drives. Contact
+Vertisoft to order a copy of the DRVOFF utility.
+
+FASTOPEN (MS-DOS)
+-----------------
+
+FASTOPEN is a RAM-resident utility. Problems involving the file
+allocation table (FAT) may occur if FASTOPEN is used together with
+disk-defragmenting utilities. In low-memory situations, you may need
+to remove FASTOPEN for Windows for Workgroups to run properly.
+
+Flash Disk-Cache Utility (FLASH.EXE)
+-------------------------------------
+
+Do not use this disk-cache utility simultaneously with SMARTDrive.
+There is no reason to use two disk-cache utilities with Windows for
+Workgroups. It is recommended that you use SMARTDrive, provided with
+Windows for Workgroups, instead.
+
+Graphics (MS-DOS)
+-----------------
+
+Loading Graphics from MS-DOS Prompt within Windows can cause
+unexpected results when printing. The active MS-DOS Prompt will send
+its output to the printer. Switching between multiple MS-DOS Prompts
+may result in mixed printing jobs.
+
+KBCategory: kbnetwork kbdisplay kb3rdparty kbref
+KBSubcategory: mmwin win30
+
+Additional query words: gpf 3.10 wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

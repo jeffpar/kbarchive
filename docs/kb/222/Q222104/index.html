@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q222104: PRB: &quot;Optional feature not implemented&quot; or &quot;#name&quot; in SQL Srv 7 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q222104: PRB: &quot;Optional feature not implemented&quot; or &quot;#name&quot; in SQL Srv 7" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/222/Q222104/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/222/Q222104/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/222/Q222104/","publisher":null,"image":null,"headline":"Q222104: PRB: &quot;Optional feature not implemented&quot; or &quot;#name&quot; in SQL Srv 7","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q222104-prb-optional-feature-not-implemented-or-name-in-sql-srv-7">Q222104: PRB: "Optional feature not implemented" or "#name" in SQL Srv 7</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q222104
+Product(s): Open Database Connectivity (ODBC)
+Version(s): WINDOWS:2.5,3.0,3.5,3.6; winnt:7.0
+Operating System(s): 
+Keyword(s): kbAccess95 kbAccess97 kbDatabase kbODBC300 kbODBC350 kbODBC360 kbSQLServ700 kbGrpDSVCDB
+Last Modified: 28-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC Driver for SQL Server, versions 3.0, 3.5, 3.6 
+- Microsoft SQL Server version 7.0 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to update SQL Server 7.0 tables that contain Unicode datatypes from
+Access 97 or Access 95 using the 3.60.0319 (or earlier) version of the ODBC
+SQLServer driver, the following error message appears:
+
+  [Microsoft][ODBC SQLServer Driver]"Optional feature not implemented"
+
+CAUSE
+=====
+
+Access tries to bind the parameter for the Unicode column, asking the driver to
+convert from SQL_CHAR/SQL_VARCHAR to SQL_WCHAR/SQL_WVARCHAR. This functionality
+is not available in the 3.60.xxxx or the previous versions of the SQL Server
+ODBC Driver.
+
+RESOLUTION
+==========
+
+Use SQL Server ODBC Driver version 3.70.0623 or later when you use Access 97 or
+Access 95 to connect to SQL Server 7.0.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Access 97 and Access 95 make calls to the catalog API in ODBC, such as
+SQLTables, SQLColumns, and so forth. These APIs return the datatypes as
+SQL_WVARCHAR/SQL_WCHAR, and so forth, depending on the actual Unicode datatype
+in the SQLServer datatypes. Then Access calls SQLBindParameter, requesting
+conversion to Unicode data in the driver. This feature is not implemented in the
+3.60.xxxx version of the SQL Server ODBC Driver.
+
+Avoid using the ntext datatype, even when using the 3.70.xxxx version of the
+driver, because Access does not recognize this datatype and can cause the #name
+or #error error.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a table in SQL Server 7.0 using Unicode datatypes. For example:
+
+  create table unicode_test(
+  col1 int PRIMARY KEY,
+  col2 nvarchar(10),
+  col3 nchar(10))
+
+  insert into unicode_test values (1,N'test',N'test')
+  insert into unicode_test values (2,N'test',N'test')
+
+2. Open Access 97 or Access 95. Create a link to the table that you created in
+  the step 1.
+
+3. Open the linked table. Modify any of the columns and try to save the record.
+
+Additional query words: #name, #error, Unicode
+
+======================================================================
+Keywords          : kbAccess95 kbAccess97 kbDatabase kbODBC300 kbODBC350 kbODBC360 kbSQLServ700 kbGrpDSVCDB kbDSupport kbMDAC250 kbfaq
+Component         : JET
+Technology        : kbSQLServSearch kbAudDeveloper kbSQLServ700 kbODBCSearch kbMDACSearch kbMDAC250 kbODBCSQLServ300 kbODBCSQLServ350 kbODBCSQLServ360
+Version           : WINDOWS:2.5,3.0,3.5,3.6; winnt:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q63347: PRB: Clicking Noises While Playing Sounds on SoundBlaster Card | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q63347: PRB: Clicking Noises While Playing Sounds on SoundBlaster Card" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/063/Q63347/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/063/Q63347/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/063/Q63347/","publisher":null,"image":null,"headline":"Q63347: PRB: Clicking Noises While Playing Sounds on SoundBlaster Card","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q63347-prb-clicking-noises-while-playing-sounds-on-soundblaster-card">Q63347: PRB: Clicking Noises While Playing Sounds on SoundBlaster Card</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q63347
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 06-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While playing some sounds on earlier models of the SoundBlaster card, some
+periodic popping or clicking sounds may occur. These cards are generally
+referred to as the 1.0 DSP (digital sound processing) design. Cards using the
+version 2.0 DSP design can use version 1.5 of the SoundBlaster Multimedia Device
+Driver (SNDBLST2.DRV), which eliminates this situation.
+
+CAUSE
+=====
+
+This problem generally occurs only when running under enhanced mode Windows. It
+is a result of the current design of the SoundBlaster hardware, in conjunction
+with the interrupt latency inherent in enhanced mode Windows.
+
+The SoundBlaster uses DMA (direct memory access) to transfer small pieces of the
+sound data from main memory to the card, and generates a hardware interrupt only
+when its buffer becomes empty. Upon receipt of this interrupt, the SoundBlaster
+driver prepares the next piece of sound data and initiates another DMA transfer.
+This process continues until the sound has been completely played out.
+
+When running in Windows enhanced mode, the interrupt latency is often more than a
+few sample periods, which results in the noises discussed earlier.
+
+RESOLUTION
+==========
+
+Creative Labs has corrected the problem with version 2.0 DSP along with version
+1.5 of the Sound Blaster Multimedia Device Driver. In addition, the new card
+from Creative Labs, the Sound Blaster Pro, does not exhibit the clicking
+problem. Contact Creative Labs to update earlier Sound Blaster cards to version
+2.0 DSP.
+
+For testing purposes, this problem can be resolved by running in Windows standard
+mode, where interrupt latencies are lower.
+
+Additional query words: 3.00 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q227025: SMS: Windows 2000 Client Is Not Installed with Encrypted Folder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q227025: SMS: Windows 2000 Client Is Not Installed with Encrypted Folder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/227/Q227025/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/227/Q227025/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/227/Q227025/","publisher":null,"image":null,"headline":"Q227025: SMS: Windows 2000 Client Is Not Installed with Encrypted Folder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q227025-sms-windows-2000-client-is-not-installed-with-encrypted-folder">Q227025: SMS: Windows 2000 Client Is Not Installed with Encrypted Folder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q227025
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbClient kbsms200 kbsms200bug
+Last Modified: 07-APR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Microsoft Window 2000-based client may not be installed. The Wn_remote.log
+file may be encrypted. When you gain access to the Wn_remote.log file, the first
+run shows that client assignment did not succeed because of an incorrect IP
+address:
+
+ASSIGNMENT ***************************************  $$&lt;CliEx32.dll&gt;
+Before adding new sites, there are 1 site keys and 0 sites in the site list  $$&lt;CliEx32.dll&gt;
+  Site Key #0: "MEX"  $$&lt;CliEx32.dll&gt;
+Some sites in the registry are not assigned  $$&lt;CliEx32.dll&gt;
+Assessing assignment state from "MSWNET:\\SERVER1\SMSLOGON\SITES\S01"   $$&lt;CliEx32.dll&gt;
+Calling GetAccessiblePath with MSWNET:\\SERVER1\SMSLOGON\SITES\S01\  $$&lt;CliEx32.dll&gt;
+CHK ASSMT : To become assigned, the potential client must match the follwing 'IP Subnets' data. Using DLL 'SMSDISCV.DLL', Entry Point 'GetSMSAssignmentStatus' to fetch this data.  $$&lt;CliEx32.dll&gt;
+131.24.25.0  $$&lt;CliEx32.dll&gt;
+131.24.20.0  $$&lt;CliEx32.dll&gt;
+CardIndex 0, MACAddress 00:10:5A:19:AB:E1, IPAddress 10.0.0.1, IPSubnet 169.254.0.0, IPXAddress 00000001:00105A19ABE1, IPXSubnet 00000001  $$&lt;CliEx32.dll&gt;
+CardIndex 1, MACAddress 2A:C2:20:52:AB:53, IPAddress 0.0.0.0, IPSubnet 0.0.0.0, IPXAddress 00000000:2AC22052AB53, IPXSubnet 00000000  $$&lt;CliEx32.dll&gt;
+Invalid IPX Address: 00000000:2AC22052AB53. IPX Network Number is ZERO.  $$&lt;CliEx32.dll&gt;
+Card at index 1 is not valid for assignment~  $$&lt;CliEx32.dll&gt;
+Function return - Client not assigned  $$&lt;CliEx32.dll&gt;
+After adding any new sites, there are 1 site keys and 0 sites in the site list  $$&lt;CliEx32.dll&gt;
+  Site Key #0: "S01"  $$&lt;CliEx32.dll&gt;
+Not writing Site List data back to the registry (no new sites)  $$&lt;CliEx32.dll&gt;
+Function return - Client not assigned  $$&lt;CliEx32.dll&gt;
+After adding any new sites, there are 1 site keys and 0 sites in the site list  $$&lt;CliEx32.dll&gt;
+  Site Key #0: "S01"  $$&lt;CliEx32.dll&gt;
+Not writing Site List data back to the registry (no new sites)  $$&lt;CliEx32.dll&gt;
+Client is not assigned to any sites - finished.  $$&lt;CliEx32.dll&gt;
+STATUS CALLBACK -  -  $$&lt;C:\SMSDIR\MS\SMS\CORE\BIN\Boot32wn.exe&gt;
+ReWriteSitesRegistry returning 28931  $$&lt;CliEx32.dll&gt;
+Finished CliEx processing.  $$&lt;C:\SMSDIR\MS\SMS\CORE\BIN\Boot32wn.exe&gt;
+
+After a reboot, you see that CliEx32 did not initialize:
+
+Begin CliEx processing.  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\Boot32wn.exe&gt;
+ERROR: Load of DLL CliEx32.dll failed (C:\SMSDIR\MS\SMS\CORE\BIN\cliex32.dll) The specified module could not be found.~~  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\Boot32wn.exe&gt;
+ERROR: Initializing CliEx failed error code 126  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\Boot32wn.exe&gt;
+Unable to continue; exiting  $$&lt;C:\WINNT\MS\SMS\CORE\BIN\Boot32wn.exe&gt;
+
+The next two reboots will show Client Configuration Manager (CCM) attempting to
+install the client but not succeeding.
+
+CAUSE
+=====
+
+This behavior can occur if the Windows 2000-based client's SMS_LOCAL_DIR folder
+is encrypted. This does not allow the service to access the necessary files.
+
+Most of the core client files are copied to the client, but are not entered in
+the registry as being installed, so optional components are not installed.
+
+WORKAROUND
+==========
+
+Remove the encryption from the SMS_LOCAL_DIR folder.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

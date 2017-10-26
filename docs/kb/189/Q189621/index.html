@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q189621: Print Server Overrides Paper Source Parameters When Using HPT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q189621: Print Server Overrides Paper Source Parameters When Using HPT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/189/Q189621/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/189/Q189621/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/189/Q189621/","publisher":null,"image":null,"headline":"Q189621: Print Server Overrides Paper Source Parameters When Using HPT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q189621-print-server-overrides-paper-source-parameters-when-using-hpt">Q189621: Print Server Overrides Paper Source Parameters When Using HPT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q189621
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 22-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Host Print Transform (HPT) configuration in SNA Server 4.0 and 4.0 SP1 no
+longer includes the options to specify the Paper Source to be used by the AS/400
+print session. Even though the Paper Source parameters can be configured
+manually on the AS/400 for the AS/400 Print Device(s) being used, these
+parameters are overridden by SNA Server's Print Server each time the print
+session is restarted. If the AS/400 Print Device is configured to use a Paper
+Source of *CONT132, it is changed to *LETTER when the AS/400 print session on
+SNA Server is restarted.
+
+CAUSE
+=====
+
+When a print session is configured to use HPT, the Print Device on the AS/400 is
+updated each time the print session is started on the SNA Server computer. The
+print server passes various parameters to the AS/400 in the PIP (Program
+Initialization Parameters) data of the FMH-5 Attach message when it initializes
+a print session. The Paper Source parameters are included in this PIP data,
+which causes the manually configured Paper Source parameter to be reset on the
+AS/400 print device.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version 4.0
+and 4.0 SP1. This problem was corrected in the latest SNA Server version 4.0
+U.S. Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces): S E R V P A
+C K
+
+
+MORE INFORMATION
+================
+
+An updated Snacfg.exe file is now available that allows the Paper Source
+parameters to be configured for the AS/400 print sessions on SNA Server. The
+following is an example of the format of the command used to set these
+parameters:
+
+  snacfg printsessionappc &lt;print session name&gt; /server:&lt;server
+  name&gt; /as400devicename:&lt;AS/400 Print Device&gt; /locallualias:&lt;Local
+  APPC LU Alias&gt; /remotelualias:&lt;Remote APPC LU Alias&gt;
+  /papersrc1:CONT132
+
+SNA Server version 4.0 and 4.0 SP1 do not include all of the Host Print Transform
+(HPT) options that SNA Server versions 3.0 SP2 and 3.0 SP3 included. Only the
+following HPT options are available with SNA Server versions 4.0 and 4.0 SP1:
+
+- Message Queue Name
+
+- Message Lib Name
+
+- Printer Type
+
+The following options are available when HPT is configured on SNA Server versions
+3.0 SP2 and 3.0 SP3:
+
+- Font ID
+
+- Message Queue Name
+
+- Message Lib Name
+
+- Form Feed
+
+- Printer Type and Model
+
+- Paper Source 1
+
+- Paper Source 2
+
+- Envelope Source
+
+- ASCII Code Page 899 Support
+
+- Customizing Library Name
+
+- Customizing Object Name
+
+For more information on these features, please refer to the following Knowledge
+Base article:
+
+  Q169892 Host Print Transform Can Now Be Configured by SNA Server
+
+For more information on a similar issue in SNA Server 4.0 and 4.0 SP1 regarding
+the Font ID parameter, please refer to the following Knowledge Base article:
+
+  Q194598 Print Server Overrides Font ID Parameter When Using HPT
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+Version           : WINDOWS:4.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

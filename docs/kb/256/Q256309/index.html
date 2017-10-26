@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q256309: Site Reset May Lock Out SMSSERVER_&lt;xxx&gt; Account | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q256309: Site Reset May Lock Out SMSSERVER_&lt;xxx&gt; Account" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/256/Q256309/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/256/Q256309/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/256/Q256309/","publisher":null,"image":null,"headline":"Q256309: Site Reset May Lock Out SMSSERVER_&lt;xxx&gt; Account","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q256309-site-reset-may-lock-out-smsserver_xxx-account">Q256309: Site Reset May Lock Out SMSSERVER_&lt;xxx&gt; Account</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q256309
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0,2.0 SP1
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200preSP3 kbsms200sp2fixkbfaq kbfixlist
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a Systems Management Server (SMS) 2.0 Service Pack 1 (SP1) site, the Site
+System Connection account (SMSServer_&lt;xxx&gt;, where &lt;xxx&gt; is the site
+code) password is reset when you run a site reset.
+
+If the hotfix described in the following Microsoft Knowledge Base article is
+applied to the site, the site reset does not automatically cause Microsoft
+Windows NT Logon Server Manager to perform a logon point update:
+
+  Q253151 SMS: Systems Management Server 2.0 Dependency Package Contents
+
+The Logon Discovery agent that is running on logon points attempts to copy
+Discovery Data Records (DDR) to the site server by using the
+SMSServer_&lt;xxx&gt; account. If the logon points are not updated after the
+site reset, the old password is used and the SMSServer_&lt;xxx&gt; account is
+locked out.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, click the following article
+number to view the article in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+This issue has been addressed in SMS 2.0 Service Pack 2 (SP2). After you apply
+SP2, you are prompted to confirm whether or not the SMSServer_&lt;xxx&gt;
+account password should be reset during a site reset. You receive the following
+warning:
+
+  If you have account lockout policy enabled, you may not want to reset the
+  server connection account at this time. For more information, please refer to
+  the release notes.
+
+If you do want to reset the SMSServer_&lt;xxx&gt; account password during a site
+reset, you can force a Windows NT Logon Server Manager polling cycle that
+updates all logon points with the new password. A polling cycle begins if any of
+the following conditions exist:
+
+- A polling cycle is actually due.
+
+- A polling cycle was due to take place during the period Windows NT Logon
+  Server Manager was stopped.
+
+- A site control file property changed for Windows NT Logon Server Manager
+  since it was stopped.
+
+For additional information, see the SMS 2.0 SP2 Release Notes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+Additional query words: prodsms LSM
+
+======================================================================
+Keywords          : kbsms200 kbsms200preSP3 kbsms200sp2fix kbfaq kbfixlist
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : :2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

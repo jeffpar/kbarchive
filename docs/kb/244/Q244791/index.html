@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q244791: BUG: MSDN Library Subset Problem on Windows 2000 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q244791: BUG: MSDN Library Subset Problem on Windows 2000" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/244/Q244791/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/244/Q244791/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/244/Q244791/","publisher":null,"image":null,"headline":"Q244791: BUG: MSDN Library Subset Problem on Windows 2000","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q244791-bug-msdn-library-subset-problem-on-windows-2000">Q244791: BUG: MSDN Library Subset Problem on Windows 2000</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q244791
+Product(s): Microsoft Developer Network
+Version(s): WINDOWS:
+Operating System(s): 
+Keyword(s): kbHTMLHelp kbMSDN kbOSWin2000 kbDSupport kbGrpDSTools
+Last Modified: 25-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Developer Network (MSDN) 
+- the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Subsets appear incorrectly in the Microsoft Developer's Network (MSDN) Library.
+Some of the subset names appear with garbage characters.
+
+CAUSE
+=====
+
+This problem will occur is you have more than one language version of the same
+MSDN Library is installed on the Windows 2000 computer. For example, this
+problem could happen on a Japanese system with both the Japanese and English
+versions of the October 1999 MSDN Library installed.
+
+Windows 2000 copies the subset file (.chs) from the MSDN installation directory
+(.\Program Files\Microsoft Visual Studio\MSDN\[month]\[langID]\[collection].CHS)
+to the User Profile directory for the current user. By default the subset file
+is placed in the following location:
+
+.\Documents and Settings\[username]\Application Data\Microsoft\HTML Help
+
+The problem occurs because the subset file name is the same for all language
+versions of the same MSDN Library. When the second language version of the same
+MSDN Library is installed, the original .chs file in the User Profile directory
+gets overwritten with a new .chs file. Viewing subset information that was
+intended for a different language MSDN Library can result in garbage characters
+appearing in the subset list.
+
+RESOLUTION
+==========
+
+When two language versions of the same MSDN Libraries are installed, you must
+choose one of the language versions to correctly display subset information. It
+is currently impossible to have subset information appear correctly for both
+language versions of the MSDN Library.
+
+The original subset file is still located in the MSDN installation directory. For
+example, the English October 1999 MSDN Library subset file is located in the
+following default directory:
+
+.\Program Files\Microsoft Visual Studio\MSDN\99OCT\1033\MSDN930.CHS
+
+One of the language-specific .chs files can be copied into the User Profile
+directory as described in the "Cause" section. That same language version of the
+MSDN Library will now display subset information correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Note that when working with international versions of the MSDN Library, only
+7-bit ASCII can be used for custom subset names. Other code pages do not work
+correctly and are unsupported.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHTMLHelp kbMSDN kbOSWin2000 kbDSupport kbGrpDSTools 
+Technology        : kbOSWin2000 kbOSWinSearch kbMSDNSearch kbZNotKeyword2
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

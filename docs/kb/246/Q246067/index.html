@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246067: Sorting a Scripting Dictionary Populated with String Data | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246067: Sorting a Scripting Dictionary Populated with String Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246067/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246067/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246067/","publisher":null,"image":null,"headline":"Q246067: Sorting a Scripting Dictionary Populated with String Data","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246067-sorting-a-scripting-dictionary-populated-with-string-data">Q246067: Sorting a Scripting Dictionary Populated with String Data</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q246067
+Product(s): Internet Information Server
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000
+Last Modified: 13-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A Scripting Dictionary object is the equivalent of a PERL associative array,
+where information is stored in an array consisting of unique keys and item data.
+Because this information is stored unsorted, enumerating through the array
+returns information in the order it was stored. The purpose of this article is
+to define the SortDictionary() function that sorts the contents of a dictionary
+object populated with string data by key or item.
+
+MORE INFORMATION
+================
+
+The following code example defines two constants, dictKey and dictItem, which
+are used by the SortDictionary() function. The SortDictionary() function takes
+two parameters, an object previously created as a scripting dictionary and one
+of the constants to determine whether to sort by the dictionary's keys or
+items.
+
+  Const dictKey  = 1
+  Const dictItem = 2
+
+  Function SortDictionary(objDict,intSort)
+    ' declare our variables
+    Dim strDict()
+    Dim objKey
+    Dim strKey,strItem
+    Dim X,Y,Z
+
+    ' get the dictionary count
+    Z = objDict.Count
+
+    ' we need more than one item to warrant sorting
+    If Z &gt; 1 Then
+      ' create an array to store dictionary information
+      ReDim strDict(Z,2)
+      X = 0
+      ' populate the string array
+      For Each objKey In objDict
+          strDict(X,dictKey)  = CStr(objKey)
+          strDict(X,dictItem) = CStr(objDict(objKey))
+          X = X + 1
+      Next
+
+      ' perform a a shell sort of the string array
+      For X = 0 to (Z - 2)
+        For Y = X to (Z - 1)
+          If StrComp(strDict(X,intSort),strDict(Y,intSort),vbTextCompare) &gt; 0 Then
+              strKey  = strDict(X,dictKey)
+              strItem = strDict(X,dictItem)
+              strDict(X,dictKey)  = strDict(Y,dictKey)
+              strDict(X,dictItem) = strDict(Y,dictItem)
+              strDict(Y,dictKey)  = strKey
+              strDict(Y,dictItem) = strItem
+          End If
+        Next
+      Next
+
+      ' erase the contents of the dictionary object
+      objDict.RemoveAll
+
+      ' repopulate the dictionary with the sorted information
+      For X = 0 to (Z - 1)
+        objDict.Add strDict(X,dictKey), strDict(X,dictItem)
+      Next
+
+    End If
+
+  End Function
+
+A Working Example:
+
+The following example makes use of the above function.
+
+Note: All comments have been removed from the actual sorting function in this
+example.
+
+Copy the following ASP code and save it to a folder as Sortdemo.asp with at least
+Scripts access:
+
+  <span class="nt">&lt;</span><span class="err">%@</span><span class="na">LANGUAGE=</span><span class="s">"VBSCRIPT"</span><span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span> <span class="na">Option</span> <span class="na">Explicit</span> <span class="err">%</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;&lt;title&gt;</span>Dictionary Sorting<span class="nt">&lt;/title&gt;&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+
+    <span class="na">Dim</span> <span class="na">d</span><span class="err">,</span> <span class="na">i</span>
+
+    <span class="na">Const</span> <span class="na">dictKey  =</span><span class="err"> </span><span class="s">1</span>
+    <span class="na">Const</span> <span class="na">dictItem =</span><span class="err"> </span><span class="s">2</span>
+
+    <span class="na">Set</span> <span class="na">d =</span><span class="err"> </span><span class="s">Server.CreateObject("Scripting.Dictionary")</span>
+
+    <span class="na">d</span><span class="err">.</span><span class="na">Add</span> <span class="err">"</span><span class="na">3</span><span class="err">",</span> <span class="err">"</span><span class="na">Delta</span><span class="err">"</span>
+    <span class="na">d</span><span class="err">.</span><span class="na">Add</span> <span class="err">"</span><span class="na">1</span><span class="err">",</span> <span class="err">"</span><span class="na">Foxtrot</span><span class="err">"</span>
+    <span class="na">d</span><span class="err">.</span><span class="na">Add</span> <span class="err">"</span><span class="na">4</span><span class="err">",</span> <span class="err">"</span><span class="na">Bravo</span><span class="err">"</span>
+    <span class="na">d</span><span class="err">.</span><span class="na">Add</span> <span class="err">"</span><span class="na">2</span><span class="err">",</span> <span class="err">"</span><span class="na">Echo</span><span class="err">"</span>
+    <span class="na">d</span><span class="err">.</span><span class="na">Add</span> <span class="err">"</span><span class="na">6</span><span class="err">",</span> <span class="err">"</span><span class="na">Alpha</span><span class="err">"</span>
+    <span class="na">d</span><span class="err">.</span><span class="na">Add</span> <span class="err">"</span><span class="na">5</span><span class="err">",</span> <span class="err">"</span><span class="na">Charlie</span><span class="err">"</span>
+
+    <span class="na">Response</span><span class="err">.</span><span class="na">Write</span> <span class="err">"&lt;</span><span class="na">p</span><span class="nt">&gt;</span>Before Sorting:<span class="nt">&lt;br&gt;</span>"
+    For Each i In d
+      Response.Write i <span class="err">&amp;</span> "=" <span class="err">&amp;</span> d(i) <span class="err">&amp;</span> "<span class="nt">&lt;br&gt;</span>"
+    Next
+
+    Response.Write "<span class="nt">&lt;p&gt;</span>By Key:<span class="nt">&lt;br&gt;</span>"
+    SortDictionary d,dictKey
+    For Each i In d
+      Response.Write i <span class="err">&amp;</span> "=" <span class="err">&amp;</span> d(i) <span class="err">&amp;</span> "<span class="nt">&lt;br&gt;</span>"
+    Next
+
+    Response.Write "<span class="nt">&lt;p&gt;</span>By Item:<span class="nt">&lt;br&gt;</span>"
+    SortDictionary d,dictItem
+    For Each i In d
+      Response.Write d(i) <span class="err">&amp;</span> "=" <span class="err">&amp;</span> i <span class="err">&amp;</span> "<span class="nt">&lt;br&gt;</span>"
+    Next
+  %&gt;
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;</span><span class="err">%</span>
+    <span class="na">Function</span> <span class="na">SortDictionary</span><span class="err">(</span><span class="na">objDict</span><span class="err">,</span><span class="na">intSort</span><span class="err">)</span>
+      <span class="na">Dim</span> <span class="na">strDict</span><span class="err">()</span>
+      <span class="na">Dim</span> <span class="na">objKey</span>
+      <span class="na">Dim</span> <span class="na">strKey</span><span class="err">,</span><span class="na">strItem</span>
+      <span class="na">Dim</span> <span class="na">X</span><span class="err">,</span><span class="na">Y</span><span class="err">,</span><span class="na">Z</span>
+      <span class="na">Z =</span><span class="err"> </span><span class="s">objDict.Count</span>
+      <span class="na">If</span> <span class="na">Z</span> <span class="nt">&gt;</span> 1 Then
+        ReDim strDict(Z,2)
+        X = 0
+        For Each objKey In objDict
+            strDict(X,dictKey)  = CStr(objKey)
+            strDict(X,dictItem) = CStr(objDict(objKey))
+            X = X + 1
+        Next
+        For X = 0 to (Z - 2)
+          For Y = X to (Z - 1)
+            If StrComp(strDict(X,intSort),strDict(Y,intSort),vbTextCompare) &gt; 0 Then
+                strKey  = strDict(X,dictKey)
+                strItem = strDict(X,dictItem)
+                strDict(X,dictKey)  = strDict(Y,dictKey)
+                strDict(X,dictItem) = strDict(Y,dictItem)
+                strDict(Y,dictKey)  = strKey
+                strDict(Y,dictItem) = strItem
+            End If
+          Next
+        Next
+        objDict.RemoveAll
+        For X = 0 to (Z - 1)
+          objDict.Add strDict(X,dictKey), strDict(X,dictItem)
+        Next
+      End If
+    End Function
+  %&gt;
+
+When browsed, the following output should be displayed:
+
+  Before Sorting:
+  3=Delta
+  1=Foxtrot
+  4=Bravo
+  2=Echo
+  6=Alpha
+  5=Charlie
+
+  By Key:
+  1=Foxtrot
+  2=Echo
+  3=Delta
+  4=Bravo
+  5=Charlie
+  6=Alpha
+
+  By Item:
+  Alpha=6
+  Bravo=4
+  Charlie=5
+  Delta=3
+  Echo=2
+  Foxtrot=1
+
+Microsoft provides programming examples for illustration only, without warranty
+either expressed or implied, including, but not limited to, the implied
+warranties of merchantability and/or fitness for a particular purpose. This
+article assumes that you are familiar with the programming language being
+demonstrated and the tools used to create and debug procedures. Microsoft
+support professionals can help explain the functionality of a particular
+procedure, but they will not modify these examples to provide added
+functionality or construct procedures to meet your specific needs. If you have
+limited programming experience, you may want to contact a Microsoft Certified
+Partner or the Microsoft fee-based consulting line at (800) 936-5200. For more
+information about Microsoft Certified Partners, please visit the following
+Microsoft Web site:
+
+  http://www.microsoft.com/partner/referral/
+
+For more information about the support options that are available and about how
+to contact Microsoft, visit the following Microsoft Web site:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+REFERENCES
+==========
+
+For more information on Microsoft's scripting technologies, see the Microsoft
+Developer Network Web site at the following URL:
+
+  http://msdn.microsoft.com/scripting/
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

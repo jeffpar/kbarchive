@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50461: COLOR Statement in SCREEN 11 Gives &quot;Illegal Function Call&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50461: COLOR Statement in SCREEN 11 Gives &quot;Illegal Function Call&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50461/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50461/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50461/","publisher":null,"image":null,"headline":"Q50461: COLOR Statement in SCREEN 11 Gives &quot;Illegal Function Call&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50461-color-statement-in-screen-11-gives-illegal-function-call">Q50461: COLOR Statement in SCREEN 11 Gives "Illegal Function Call"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50461
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891027-16 B_BasicCom docerr | mspl13_basic
+Last Modified: 15-JAN-1990
+
+The COLOR statement correctly returns an "Illegal Function Call" if
+used in SCREEN 11. The only way to change the color in SCREEN 11 is to
+use the PALETTE statement. However, note that the PALETTE statement
+may not work with a video card that is not 100-percent compatible with
+the IBM standard VGA or MCGA. (SCREEN 11 requires VGA or MCGA.)
+
+The following resources incorrectly state that the COLOR statement is
+valid in SCREEN modes 11-13; they should instead say SCREEN modes
+12-13:
+
+1. Two occurrences, on Page 109 of the "Microsoft QuickBASIC 4.0: BASIC
+   Language Reference" manual for QuickBASIC Versions 4.00 and 4.00b
+
+2. Two occurrences, on Page 109 of the "Microsoft BASIC Compiler 6.0:
+   BASIC Language Reference" manual for Versions 6.00 and 6.00b
+
+3. One occurrence, under the COLOR statement in the QB Advisor online
+   Help system for QuickBASIC Version 4.50
+
+This documentation error was corrected in the "Microsoft QuickBASIC
+4.5: BASIC Language Reference" manual for QuickBASIC Version 4.50, in
+the Microsoft BASIC Professional Development System (PDS) 7.00 "BASIC
+Language Reference," and in the Microsoft Advisor online Help system
+in the QuickBASIC Extended editor (QBX.EXE) shipped with BASIC PDS
+Version 7.00.
+
+The PALETTE statement can be used instead of the COLOR statement in
+SCREEN 11 to set the foreground and background colors. Note that the
+foreground color can only be set for graphics statements; text will
+always be blue.
+
+To change the foreground color in SCREEN 11, the following PALETTE
+statement must be used:
+
+   PALETTE 1, color
+
+To change the background color in SCREEN 11, the following PALETTE
+statement must be used:
+
+   PALETTE 0, color
+
+Below is another code example demonstrating how to set the foreground
+and background colors in SCREEN 11 using the PALETTE statement:
+
+' VGA color equation: COLOR number = 65536 * blue + 256 * green + red
+'   where red, blue, and green are numbers between 0 and 63
+CLS
+SCREEN 11
+background&amp; = 256 * 63   'bright green
+foreground&amp; = 63         'bright red
+PALETTE 0, background&amp;
+PALETTE 1, foreground&amp;
+LINE (10, 240)-(630, 240)
+WHILE INKEY$ = "": WEND
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

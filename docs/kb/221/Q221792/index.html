@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221792: PRB: &quot;Library Not Registered&quot; Error Calling Method in ATL Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221792: PRB: &quot;Library Not Registered&quot; Error Calling Method in ATL Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221792/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221792/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221792/","publisher":null,"image":null,"headline":"Q221792: PRB: &quot;Library Not Registered&quot; Error Calling Method in ATL Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221792-prb-library-not-registered-error-calling-method-in-atl-server">Q221792: PRB: "Library Not Registered" Error Calling Method in ATL Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221792
+Product(s): Microsoft C Compiler
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): kbActiveX kbAutomation kbCOMt kbCtrlCreate kbRegistry kbVC600 kbATL300 kbFAQ kbGrpDSMFC
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL) 3.0, included with:
+   - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After changing the type library version in the .idl file, any method you call in
+an ATL COM object returns an error of 0x8002801D (TYPE_E_LIBNOTREGISTERED or
+"Library not registered").
+
+CAUSE
+=====
+
+For dual interfaces, the ATL Object Wizard generates code that derives your COM
+class from IDispatchImpl. IDispatchImpl's fourth and fifth arguments are default
+arguments that map to the major and minor versions of the type library. These
+default to version 1.0. ATL uses this version to call LoadRegTypeLib(), which
+fails with TYPE_E_LIBNOTREGISTERED if the version in the type library doesn't
+match.
+
+RESOLUTION
+==========
+
+Add the appropriate version number to the template arguments for IDispatchImpl
+and IProvideClassInfo2Impl, if you are deriving from this class. For example, to
+set the type library version number to 2.5, your class declaration might
+resemble the following:
+
+  class ATL_NO_VTABLE CMyControl : 
+  	public IDispatchImpl&lt;IMyControl, &amp;IID_IMyControl, &amp;LIBID_MyControlLib, 2, 5&gt;,
+  	public IProvideClassInfo2Impl&lt;&amp;CLSID_MyControl, NULL, &amp;LIBID_MyControlLib, 2, 5&gt;...
+
+If your class derives from CStockPropImpl instead of IDispatchImpl, you need to
+set the type library version number via member variables, because CStockPropImpl
+derives from IDispatchImpl but it doesn't provide any template arguments for
+setting the version number. The major and minor version numbers are actually
+stored in CComTypeInfoHolder::m_wMajor and CComTypeInfoHolder::m_wMinor.
+IDispatchImpl contains a CComTypeInfoHolder member called _tih. You can set the
+version number in your class constructor:
+
+  	CMyControl()
+  	{
+  		_tih.m_wMajor = 2;
+  		_tih.m_wMinor = 5;
+  	}
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The same problem may exhibit different symptoms in different containers
+depending on what you are doing:
+
+- Attempting to insert an ATL control from the "Components and Controls
+  Gallery" causes the following error:
+
+  Unable to open this ActiveX Control. Make sure the control contains a valid
+  type library.
+
+- Attempting to call a method from Internet Explorer causes the error:
+
+  Error: Object doesn't support this property or method.
+
+- Attempting to insert an ATL control into Test Container causes the following
+  error:
+
+  Failed to create control. Unspecified error.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Samson
+Tanrena, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbAutomation kbCOMt kbCtrlCreate kbRegistry kbVC600 kbATL300 kbFAQ kbGrpDSMFCATL kbIDL 
+Technology        : kbAudDeveloper kbATLsearch
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

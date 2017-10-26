@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q193815: Improved APPC/CPIC Performance on SNA Client Computer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q193815: Improved APPC/CPIC Performance on SNA Client Computer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/193/Q193815/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/193/Q193815/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/193/Q193815/","publisher":null,"image":null,"headline":"Q193815: Improved APPC/CPIC Performance on SNA Client Computer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q193815-improved-appccpic-performance-on-sna-client-computer">Q193815: Improved APPC/CPIC Performance on SNA Client Computer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q193815
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:4.0,4.0 SP1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+When an APPC application calls TP_ENDED (to end the last conversation) from an
+SNA Server Windows NT or Windows 95 or Windows 98 client computer, the
+underlying LAN session to the SNA Server is dropped. If the application
+immediately calls TP_STARTED and [MC_]ALLOCATE to invoke a new conversation, a
+new LAN session is established to the SNA Server, and the user is authenticated
+again by the server. This can significantly reduce APPC application performance
+if the program continuously starts, ends, and restarts new conversation
+requests.
+
+MORE INFORMATION
+================
+
+An update to Snadmod.dll for SNA Server 4.0 is available which improves
+performance. Instead of closing a client-server connection immediately after the
+last conversation ends, Snadmod.dll now waits a short period before it closes
+the LAN connection. The idea is that if the application starts a new
+conversation within this period, the snadmod.dll can avoid expensive logon
+validations and resource allocations by reusing the existing connection. The
+delay is configurable through the following registry parameter.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+SNA Server Windows NT Client
+----------------------------
+
+1. Apply the hotfix.
+
+2. Start the Windows NT Registry Editor (Regedt32.exe) and find the following
+  key:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SnaBase
+      \Parameters\ 
+
+3. Add the following entry to this key:
+
+      Value Name: CloseTimeout
+      Data Type: REG_DWORD
+      Data (Decimal): &lt;value&gt;
+
+  Where value is the number of seconds. If this entry is not specified, the
+  CloseTimeout value internally defaults to 10 seconds.
+
+SNA Server Windows 95 or Windows 98 Client
+------------------------------------------
+
+1. Apply the hotfix.
+
+2. Start the Windows 95/98 Registry Editor (Regedit.exe) and find the following
+  key:
+
+  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SnaBase
+      \Parameters\ 
+
+3. Add the following new DWORD value:
+
+      CloseTimeout
+      Value Data (Decimal): &lt;value&gt;
+
+  Where value is the number of seconds. If this entry is not specified, the
+  CloseTimeout value internally defaults to 10 seconds.
+
+This update applies to any SNA Server Windows NT, Windows 95, or Windows 98
+client which runs an APPC or CPIC application to connect through an SNA Server
+running on a separate computer. The SNA Server does not need to be updated, and
+can remain at SNA Server 4.0 or a prior release. If the application is running
+on the server itself, it may still establish a LAN session to use resources
+provided by another SNA Server in the subdomain. In this case, this update
+should be applied to the server (that is, the computer where the application is
+running).
+
+
+RESOLUTION
+==========
+
+Microsoft has produced an update to SNA Server 4.0 which improves performance,
+as described in this article. This update is in included in the latest SNA
+Server version 4.0 U.S. Service Pack. For information on obtaining this Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1
+Version           : WINDOWS:4.0,4.0 SP1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

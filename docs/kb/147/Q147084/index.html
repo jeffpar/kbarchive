@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q147084: XFOR: Message Received from Unknown Dirsync Requestor | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q147084: XFOR: Message Received from Unknown Dirsync Requestor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/147/Q147084/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/147/Q147084/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/147/Q147084/","publisher":null,"image":null,"headline":"Q147084: XFOR: Message Received from Unknown Dirsync Requestor","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q147084-xfor-message-received-from-unknown-dirsync-requestor">Q147084: XFOR: Message Received from Unknown Dirsync Requestor</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q147084
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5 exc55
+Last Modified: 19-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following error message can be generated if the Microsoft Exchange Directory
+Synchronization service (DXA) receives a directory synchronization (dirsync)
+message from an unknown requestor.
+
+  Source: MSExchangeDX
+  Category: Event Handler
+  Event ID: 136
+  "Message received from unknown DirSync requestor -
+  X400:/ddat=ms /ddav="NEWTORK/POSTOFFICE/$SYSTEM".
+
+MORE INFORMATION
+================
+
+When a directory synchronization (dirsync) requestor or remote requestor is
+created, a custom recipient (CR) for the $SYSTEM of the MSMail postoffice (PO)
+is automatically generated. The MSExchangeDX component uses this to address
+dirsync messages. This CR is also used to identify valid remote dirsync
+requestors and DirSync servers.
+
+The MSExchangeDX component only deals with Distinguished Names (DN). When a
+message comes in, it is compared to the list of the DNs that the MSExchangeDX
+component knows about. If the DN doesn't match, it gets discarded.
+
+In this case, the MS Mail Connector is transporting the message, and as part of
+the hand-off, it tries to convert the MS proxy address of the sender into a
+known DN. When it fails, the MSExchangeDX component generates the above error
+message.
+
+Possible reasons for the DN lookup failing include multiple occurrences of an
+address. In other words, it can fail if the CR was created for the $SYSTEM
+account in two separate sites before those sites replicated. To correct the
+problem, you must look for both hidden and regular recipients to see if the CR
+for the particular PO already exists. If it does, the duplicate entry from the
+server or site that is not running the DirSync process must be deleted and the
+change must be replicated.
+
+Additional query words: dirsynch dir-sync
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

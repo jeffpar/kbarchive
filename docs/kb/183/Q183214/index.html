@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q183214: PRB: E_INVALIDARG Error from CoCreateInstance() | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q183214: PRB: E_INVALIDARG Error from CoCreateInstance()" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/183/Q183214/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/183/Q183214/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/183/Q183214/","publisher":null,"image":null,"headline":"Q183214: PRB: E_INVALIDARG Error from CoCreateInstance()","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q183214-prb-e_invalidarg-error-from-cocreateinstance">Q183214: PRB: E_INVALIDARG Error from CoCreateInstance()</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q183214
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,3.0,4.2b,5.0,6.0
+Operating System(s): 
+Keyword(s): kberrmsg kbATL200 kbATL210 kbCOMt kbCtrl kbDebug kbVC420 kbVC500 kbVC600 kbOSWin95 kbAT
+Last Modified: 13-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL), versions 2.0, 2.1, 3.0, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2b, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2b, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under Windows 95, you might get the following error returned from the
+CoCreateInstance() function:
+
+  E_INVALIDARG (0x80070057 or "The parameter is incorrect")
+
+CAUSE
+=====
+
+Your project might have the following macro:
+
+     #define _WIN32_WINNT 0x0400
+
+By default, ATL projects contain this macro in StdAfx.h. In ObjBase.h, the
+CLSCTX_ALL and CLSCTX_SERVER flags are defined to include the
+CLSCTX_REMOTE_SERVER flag if the preprocessor symbol, _WIN32_WINNT, is defined
+to be greater than or equal to 0x0400 (_WIN32_WINNT &gt;= 0x400).
+
+CLSCTX_REMOTE_SERVER is only valid on Windows NT 4.0 or later, Windows 95 with
+DCOM for Windows 95 installed, Windows 98, and Windows Millennium Edition (Me).
+If you call CoCreateInstance() on Windows 95 (without DCOM for Windows 95) with
+a flag that includes CLSCTX_REMOTE_SERVER, it returns an E_INVALIDARG error.
+
+RESOLUTION
+==========
+
+Remove the following from StdAfx.h:
+
+     #define _WIN32_WINNT 0x0400
+
+Or, you can install DCOM for Windows 95, which comes with an updated Ole32.dll.
+This version recognizes the CLSCTX_REMOTE_SERVER flag. You can download DCOM for
+Windows 95 from the following Web location:
+
+  http://www.microsoft.com/com/dcom/dcom1_2/dcom1_2.asp
+
+STATUS
+======
+
+This behavior is by design.
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Samson
+Tanrena, Microsoft Corporation.
+
+
+Additional query words: CreateInstance [ASCII 150]2147942487
+
+======================================================================
+Keywords          : kberrmsg kbATL200 kbATL210 kbCOMt kbCtrl kbDebug kbVC420 kbVC500 kbVC600 kbOSWin95 kbATL300 kbGrpDSMFCATL kbArchitecture 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbVCNET
+Version           : :2.0,2.1,3.0,4.2b,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37304: LIB Errors During SETUP.EXE If Directory Has &quot;-&quot; in Its Name | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37304: LIB Errors During SETUP.EXE If Directory Has &quot;-&quot; in Its Name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37304/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37304/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37304/","publisher":null,"image":null,"headline":"Q37304: LIB Errors During SETUP.EXE If Directory Has &quot;-&quot; in Its Name","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37304-lib-errors-during-setupexe-if-directory-has---in-its-name">Q37304: LIB Errors During SETUP.EXE If Directory Has "-" in Its Name</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37304
+Product(s): See article
+Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 7-FEB-1990
+
+If you specify a library directory name that contains a minus sign
+(such as LIB-BAS) during the SETUP.EXE program for Microsoft BASIC
+Compiler Version 6.00 or 6.00b, or Microsoft BASIC Professional
+Development System (PDS) Version 7.00, the LIB.EXE manager may have
+problems creating the BASIC stand-alone and run-time libraries.
+
+This problem occurs because when the Library Manager (LIB) is run from
+the SETUP program, it uses the pathname to your library directory in
+its "Operations:+" step and is confused by an operator (such as "-")
+in the directory name.
+
+For example, if you specified the directory name C:\LIB-BAS for your
+BASIC libraries, a library build would look like the following:
+
+   Microsoft (R) Library Manager  Version 3.11
+   Copyright (C) Microsoft Corp 1983-1988.  All rights reserved.
+
+   Library name:BRUN60ER.LIB
+   Library does not exist.  Create? (y/n) Y
+   Operations:+ C:\LIB-BAS\BRUN60R.LIB
+   LIB : error V2155: BAS\BRUN60ER.LIB : module not in library; ignored
+   &amp;
+   Operations:+ .\B4 ;
+   LIB : error V2157: C:\LIB.obj : cannot access file
+
+The LIB thinks the "-" character in the LIB-BAS directory is an extra
+operation trying to subtract BAS\BRUN60ER.LIB. It then tries to add a
+file called C:\LIB.obj, which does not exist.
+
+Then, when trying to compile a BASIC program and link it with the
+BRUN60ER.LIB library, the compile will seem to work correctly, but the
+link can return errors, such as the following:
+
+   LINK : warning L4021: no stack segment
+   LINK : error L2029: Unresolved externals:
+     &lt; here would be a list of the unresolved library references &gt;
+
+If you avoid the following operators in the directory name for BASIC
+libraries, the LIB shouldn't have any problems initially creating the
+libraries:
+
+   +  -  -+  *  -*
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

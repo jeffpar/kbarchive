@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181694: XCLN: How to Upgrade Shared Workstation Installations of Exchang | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181694: XCLN: How to Upgrade Shared Workstation Installations of Exchang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181694/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181694/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181694/","publisher":null,"image":null,"headline":"Q181694: XCLN: How to Upgrade Shared Workstation Installations of Exchang","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181694-xcln-how-to-upgrade-shared-workstation-installations-of-exchang">Q181694: XCLN: How to Upgrade Shared Workstation Installations of Exchang</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q181694
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0 MS-DOS:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange MS-DOS client, version 4.0 
+- Microsoft Exchange Windows 3.x client, version 4.0 
+- Microsoft Exchange Windows 95/98 client, version 4.0 
+- Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to update shared-workstation installations of the
+Microsoft Exchange Client. These procedures apply to both local and shared
+versions of Microsoft Windows.
+
+MORE INFORMATION
+================
+
+To upgrade the Microsoft Exchange Client to Service Pack 2 (SP2), you can either
+keep the current installation share point or create a new one. In either case,
+you should perform the following steps:
+
+1. From the SP2 directory, run the Setup program for the appropriate platform
+  (Win95, WinNT, Win16, DOS) with the following command line:
+
+  SETUP /a
+
+  NOTE: If you plan to keep the same installation share point, delete all files
+  from that share point directory before running Setup.
+
+2. During the setup process, specify the location of the installation share
+  point. This is the location from which your users will install the Microsoft
+  Exchange Client.
+
+3. From each user's workstation, connect to the shared network location created
+  in Step 2 and run Setup.exe.
+
+To upgrade the Microsoft Exchange SP2 client to Service Pack 3 (SP3), just run
+the Update.exe program for the appropriate platform for each client. You can
+either create a shared network location from which to run the SP3 update, or you
+can run the update from the SP3 compact disc.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400DOS kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0 MS-DOS:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

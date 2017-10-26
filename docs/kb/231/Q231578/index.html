@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231578: FIX: Hosting a WebBrowser Control in an MFC Container ASSERTs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231578: FIX: Hosting a WebBrowser Control in an MFC Container ASSERTs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231578/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231578/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231578/","publisher":null,"image":null,"headline":"Q231578: FIX: Hosting a WebBrowser Control in an MFC Container ASSERTs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231578-fix-hosting-a-webbrowser-control-in-an-mfc-container-asserts">Q231578: FIX: Hosting a WebBrowser Control in an MFC Container ASSERTs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q231578
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbActiveX kbCOMt kbContainer kbCtrl kbMFC kbVC500 kbVC500bug kbVC600bug kbWebBrowser kb
+Last Modified: 13-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Take a CHtmlView based application or have a dialog hosting a web browser
+control. Go to a local folder. Right-click and select either New Folder or one
+of the file types listed there. It will ASSERT in WinOcc.cpp, Line 331. This
+does not have any impact on the release build.
+
+CAUSE
+=====
+
+This is due to a bug in MFC for UI activation of an ActiveX control.
+
+RESOLUTION
+==========
+
+Override the PreTranslateMessage function in the dialog class or the one derived
+from CHtmlView. If the message is WM_RBUTTONDOWN, return 0. The code should look
+like this:
+
+  BOOL CMyDialog::PreTranslateMessage(MSG* pMsg) 
+  {
+  	if (pMsg-&gt;message == WM_RBUTTONDOWN)
+  		return 0;
+
+  	return CDialog::PreTranslateMessage(pMsg);
+  }
+
+This eliminates the possibility of having a context menu for the container.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Visual C++ 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Generate an AppWizard application and select CHtmlView class as the base
+  class of your view class in Step 6 of the AppWizard.
+
+2. Provide a valid path to one of the local folders. Modify the OnInitialUpdate
+  of the view class as shown below:
+
+  void CMyHTMLView::OnInitialUpdate()
+  {
+  	CHtmlView::OnInitialUpdate();
+
+  	Navigate2(_T("C:\\Temp"),NULL,NULL);
+  }
+
+3. Build the EXE and run it.
+
+4. Right-click inside the view and select New Folder.
+
+Additional query words: CHtmlView
+
+======================================================================
+Keywords          : kbActiveX kbCOMt kbContainer kbCtrl kbMFC kbVC500 kbVC500bug kbVC600bug kbWebBrowser kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

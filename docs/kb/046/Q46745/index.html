@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q46745: What the /HIGH and /DS Linker Options Do | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q46745: What the /HIGH and /DS Linker Options Do" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/046/Q46745/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/046/Q46745/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/046/Q46745/","publisher":null,"image":null,"headline":"Q46745: What the /HIGH and /DS Linker Options Do","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q46745-what-the-high-and-ds-linker-options-do">Q46745: What the /HIGH and /DS Linker Options Do</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q46745
+Product(s): See article
+Version(s): 3.65
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# G890607-19979 | mspl13_basic
+Last Modified: 13-JUL-1989
+
+Question:
+
+I would like information on the /HIGH and /DS options of the linker.
+Specifically, what changes are needed in the .EXE file to tell the
+loader to put it high?
+
+Response:
+
+Basically, these are hold-over features from DOS Version 1.00 and from
+the original Microsoft/IBM Pascal and FORTRAN Compilers -- they're of
+little or no use under DOS 2.00 and later. Specifically, programs
+linked with the /HIGH switch are allocated all of the memory in the
+machine and cannot release unneeded memory back to DOS; therefore, no
+other program can be loaded into memory.
+
+The /HIGH switch sets both the minalloc and maxalloc fields in the .EXE
+header to zero. This combination of values causes the loader to load
+the program in high memory.
+
+/DSALLOCATE (or /DS) causes DGROUP to be "shifted" upwards so that the
+high address in the group is always FFFFh. Offsets into DGROUP are
+adjusted appropriately.
+
+These switches are strictly incompatible with our current high-level
+languages -- the only possible use for them is in a MASM program.
+Microsoft doesn't recommend using them at all unless you know
+precisely what you're doing.
+
+There is good documentation on what the /HIGH and /DSALLOCATE switches
+do, as well as how the loader works, in the "MS-DOS Encyclopedia,"
+starting on Page 719. (This excellent reference manual is now less
+expensive and available in paperback).
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

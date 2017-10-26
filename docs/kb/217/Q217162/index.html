@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217162: SMS: SMS 2.0 Incorrectly References &quot;Windows NT 4.0 SP4a&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217162: SMS: SMS 2.0 Incorrectly References &quot;Windows NT 4.0 SP4a&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217162/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217162/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217162/","publisher":null,"image":null,"headline":"Q217162: SMS: SMS 2.0 Incorrectly References &quot;Windows NT 4.0 SP4a&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217162-sms-sms-20-incorrectly-references-windows-nt-40-sp4a">Q217162: SMS: SMS 2.0 Incorrectly References "Windows NT 4.0 SP4a"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217162
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0,4.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bugkbfaq
+Last Modified: 18-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Systems Management Server 2.0 requires Windows NT Server 4.0 Service Pack 4 or
+later to be installed on the computer. As a convenience, the Windows NT Server
+4.0 Service Pack 4 files are included on the Systems Management Server 2.0
+distribution media. However, the directory containing these service pack files
+is incorrectly named "Nt4sp4a", which implies that it is a newer, updated
+version of the Windows NT 4.0 Service Pack 4 files.
+
+Additionally, the initial Systems Management Server 2.0 Setup screen incorrectly
+has an option to "Install NT 4.0 SP4a", and the Systems Management Server 2.0
+Release Notes incorrectly refers to "Service Pack 4a for Windows NT Server 4.0".
+
+CAUSE
+=====
+
+These are all typographical errors in the Systems Management Server 2.0 media.
+
+Windows NT 4.0 Service Pack 4 included with Systems Management Server 2.0 comes
+with Microsoft Internet Explorer 4.01 Service Pack 1a; this is the probable
+source of the confusion.
+
+WORKAROUND
+==========
+
+References to "Windows NT Server 4.0 Service Pack 4a" should be ignored and
+considered to be "Windows NT Server 4.0 Service Pack 4" instead.
+
+MORE INFORMATION
+================
+
+Because Systems Management Server 2.0 is distributed internationally, the
+Windows NT 4.0 Service Pack 4 files included on the Systems Management Server
+2.0 distribution media are the 40-bit encrypted versions. Using these files is
+not required to use Systems Management Server 2.0; that is, you can use the
+128-bit encrypted Windows NT Server 4.0 Service Pack 4 files if you obtain them
+from another source (for example, a Web download, an internal share point, and
+so on).
+
+This error will be corrected in a future release of Systems Management Server
+2.0.
+
+
+Additional query words: prodsms sp sp4 sp4a CD ROM CD-ROM typo typos
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbfaq
+Technology        : kbWinNTsearch kbWinNTSsearch kbSMSSearch kbExchange400 kbFunImagination200
+Version           : winnt:2.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q143093: FP: Basic FrontPage Troubleshooting Utilities | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q143093: FP: Basic FrontPage Troubleshooting Utilities" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/143/Q143093/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/143/Q143093/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/143/Q143093/","publisher":null,"image":null,"headline":"Q143093: FP: Basic FrontPage Troubleshooting Utilities","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q143093-fp-basic-frontpage-troubleshooting-utilities">Q143093: FP: Basic FrontPage Troubleshooting Utilities</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q143093
+Product(s): Word Front Page
+Version(s): windows:1.0,1.1,97
+Operating System(s): 
+Keyword(s): kbtshoot kbusage kbdta
+Last Modified: 01-OCT-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+- Microsoft FrontPage for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2002 version of this article, see Q292623.
+
+For a Microsoft FrontPage 98 version of this article, see Q198154.
+
+For a Microsoft FrontPage 97 and earlier version of this article, see Q194331.
+
+SUMMARY
+=======
+
+This article describes the basic troubleshooting tools that are shipped with
+FrontPage.
+
+MORE INFORMATION
+================
+
+FrontPage TCP/IP Test
+---------------------
+
+The TCP/IP Test utility tests for a properly installed version of Windows
+sockets, the IP address, and the host name (if any) of your computer. The
+FrontPage TCP/IP test also verifies the local loopback address (127.0.0.1) and
+localhost, the standard loopback host name.
+
+FrontPage 97:
+
+To run the TCP/IP test utility, follow these steps:
+
+1. Start FrontPage Explorer.
+
+2. On the Help menu, click About Microsoft FrontPage Explorer.
+
+3. In the About FrontPage Explorer dialog box, click Network Test.
+
+4. In the TCP/IP Test dialog box, click Start Test.
+
+FrontPage 1.1:
+
+To run the TCP/IP test utility, follow these steps:
+
+1. On the Windows Start menu, point to Programs, point to Microsoft FrontPage,
+  and then click TCP/IP Test.
+
+2. In the TCP/IP Test dialog box, click Start Test.
+
+Server Administrator
+--------------------
+
+Use the Server Administrator to check for properly installed server extensions,
+the server type, the server port, the server content area, and the server
+configuration file if the server has one. It is recommended that you uninstall
+and then reinstall the extensions if the content area or configuration file has
+changed.
+
+The Server Administrator also allows you to enable or disable authoring on a
+selected port. The Server Administrator also allows you to add user names and
+passwords to a list of administrators on all servers except Microsoft Internet
+Information Server.
+
+The icon you use to start the FrontPage Server Administrator is in different
+locations depending on the version of FrontPage and the version of Windows you
+are running.
+
+All versions of FrontPage Running on Windows NT 3.51:
+
+The icon is located in the program group for Microsoft FrontPage. This is also
+true for FrontPage 1.0 on Windows 3.x.
+
+FrontPage 97 Running on Windows 95 or Windows NT 4.0:
+
+The icon is located in the directory where you installed FrontPage. By default,
+this location is C:\Program Files\Microsoft FrontPage.
+
+FrontPage 1.1 Running on Windows 95 or Windows NT 4.0:
+
+On the Windows Start menu, point to Programs, point to Microsoft FrontPage, and
+then click FrontPage Server Administrator.
+
+Check Installation Utility (FrontPage 1.0 Only)
+-----------------------------------------------
+
+The Check Installation utility is a component of FrontPage 1.0 only. It is not
+available for later versions of FrontPage. The Check Installation utility
+examines your system to ensure that the system dynamic-link libraries (DLLs)
+necessary to run FrontPage are installed correctly. The results are displayed in
+a window and are written to the Chkver.log file in the Bin folder within the
+FrontPage Root. The default FrontPage Root for version 1.0 is c:\Vermeer.
+
+Additional query words: fp97 front page vermeer tshoot troubleshoot tcpip administrator verify troubleshooting error log logged files configuration port extensions content loopback address host name sockets winsock localhost utilities utility test testing tests.
+
+======================================================================
+Keywords          : kbtshoot kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : windows:1.0,1.1,97
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

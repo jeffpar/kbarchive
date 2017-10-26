@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151178: User Restrictions Under File Manager and Print Manager | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151178: User Restrictions Under File Manager and Print Manager" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151178/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151178/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151178/","publisher":null,"image":null,"headline":"Q151178: User Restrictions Under File Manager and Print Manager","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151178-user-restrictions-under-file-manager-and-print-manager">Q151178: User Restrictions Under File Manager and Print Manager</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151178
+Product(s): Microsoft Windows NT
+Version(s): winnt:3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to restrict users from creating or deleting resource
+shares under Windows NT and describes the procedures that can be applied to
+Windows for Workgroups 3.1x systems.
+
+MORE INFORMATION
+================
+
+Under Windows for Workgroups 3.1x, an administrator could set up a user's File
+Manager or Print Manager to restrict that user from creating file or print
+shares. The administrator did this by adding an entry to one of the .ini files
+of Windows for Workgroups 3.1x. This method is not possible under Windows NT,
+but there are other ways to prevent a user from creating file and print shares.
+
+File and Print Sharing Restrictions Under Windows 3.1x:
+-------------------------------------------------------
+
+Under Windows for Workgroups 3.1x, an administrator could restrict both File
+Manager and Print Manager sharing for the users of a specific workstation. The
+administrator did this by adding entries, respectively, to the Winfile.ini or
+Win.ini files. This procedure is described in the following Microsoft Knowledge
+Base article:
+
+Q95470Disabling Peer-To-Peer Network Functionality with WFWG
+
+File and Print Sharing Restrictions Under Windows NT:
+-----------------------------------------------------
+
+The two values described for disabling file or print sharing in Windows for
+Workgroups 3.1x do not have counterpart entries in the Windows NT Registry. This
+does not mean that ordinary users can create file or print shares under Windows
+NT; they cannot. Windows NT is controlled via user accounts, only those accounts
+that are part of the Administrators, Server Operators or Print Operators groups
+by default are allowed to create or delete shares.
+
+The sharing options for a basic user account will be disabled. The Share As
+option will be available but when a user tries to select it, an "Access Denied"
+message will be returned. In Print Manager, the user will not be able to create
+a printer or share one, although the user will be able to connect to a shared
+network printer.
+
+Completely Disabling File and Print Sharing Under Windows NT:
+-------------------------------------------------------------
+
+To completely disallow any sharing of system File and Print resources, it is
+possible to disable the Server service in Control Panel&gt;Services. To do this,
+go into Control Panel&gt;Services, select the Server service, click the Startup
+button, click Disabled and click OK. Then, with the Server service still
+selected, click on the Stop button. This will stop the Server service
+immediately, otherwise, on the next reboot of NT the Server service will not
+start by default.
+
+For additional information on how an administrator can protect data via Windows
+NT's NTFS file system permissions and the use of attributes, please see the
+following articles in the Microsoft Knowledge Base:
+
+
+Q103106Difference Between No Access and Access Not Specified
+
+Q100108Overview of FAT, HPFS, and NTFS File Systems
+
+Q96621NTFS Files Maintain FAT Attributes
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

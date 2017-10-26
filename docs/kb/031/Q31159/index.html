@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q31159: &quot;Out of Data Space | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q31159: &quot;Out of Data Space" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/031/Q31159/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/031/Q31159/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/031/Q31159/","publisher":null,"image":null,"headline":"Q31159: &quot;Out of Data Space","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q31159-out-of-data-space">Q31159: "Out of Data Space</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q31159
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 21-DEC-1989
+
+When a program is running, each file OPENed with the OPEN statement
+takes up memory for the file buffer in DGROUP. If you specify a large
+record length (with the LEN= clause), a corresponding large space will
+be taken up in DGROUP.
+   When OPENed file buffers consume all of DGROUP memory at run time,
+one of the following error messages will display:
+
+Version   In QB.EXE Environment     From .EXE Compiled Program
+
+3.00      "Out of memory"             "Out of memory in module"
+4.00      "Out of data space"         "Out of memory in module"
+4.00b     "Out of data space"         "Out of memory in module"
+4.50      "Out of data space"         "Out of memory in module"
+
+   The Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS and
+OS/2 will behave like QuickBASIC Version 4.00b.
+   To work around this problem, do the following:
+
+   1. CLOSE each file before OPENing the next. Closing the file will
+free up the DGROUP memory that it used.
+   2. Use the CLEAR command to CLOSE all files and erase all
+variables.
+   3. Reduce the record length size (LEN=reclen) in the OPEN
+statement.
+   4. Make numeric arrays $DYNAMIC instead of $STATIC. This will leave
+more space in DGROUP.
+
+   The following code demonstrates the problem:
+
+CLS : CLOSE
+PRINT "Amount of available string space";FRE("")
+OPEN "z1" FOR RANDOM AS 1
+OPEN "z2" FOR RANDOM AS 2 LEN = 5000;
+OPEN "z3" FOR OUTPUT AS 3
+OPEN "z4" FOR OUTPUT AS 4 LEN = 5000
+OPEN "z6" FOR BINARY AS 6
+PRINT "Amount of available string space";FRE("")
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

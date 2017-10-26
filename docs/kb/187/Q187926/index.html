@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q187926: Use of the SAP Agent Service on a Windows NT Server | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q187926: Use of the SAP Agent Service on a Windows NT Server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/187/Q187926/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/187/Q187926/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/187/Q187926/","publisher":null,"image":null,"headline":"Q187926: Use of the SAP Agent Service on a Windows NT Server","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q187926-use-of-the-sap-agent-service-on-a-windows-nt-server">Q187926: Use of the SAP Agent Service on a Windows NT Server</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q187926
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.51,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 09-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft File and Print Services for NetWare version 3.51 
+- Microsoft Services for NetWare version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the use of the SAP Agent service in Windows NT Server.
+
+MORE INFORMATION
+================
+
+The SAP Agent service will listen for network clients' SAP requests for IPX
+based services that are installed and running on the server.
+
+Software that is designed to be advertised as a service over the network by means
+of a SAP broadcast will issue the SAP announcements every 60 seconds, without
+having the SAP Agent installed. However, in order for network clients to quickly
+locate an IPX network service, a server that maintains a service database must
+be available on the network, to respond to the service location request.
+
+This service database is usually maintained by a Novell NetWare or by a NetWare
+compatible server. Microsoft File and Print Services for NetWare will also
+maintain an IPX network service database.
+
+If there are no servers capable of maintaining an IPX network service database
+installed on the network, clients will have to wait for the periodic
+announcements issued by the service, to be able to locate the service on the
+network. When you install the SAP Agent, the Windows NT Server will be able to
+respond to queries for the service that is being advertised, decreasing the
+amount of time necessary for network clients to locate the service.
+
+The SAP Agent will only maintain a database of IPX based services that the
+Windows NT Server advertises. Windows NT will not respond to SAP requests for
+other services unless File and Print Services for NetWare is installed.
+Additionally, since SAP broadcasts are not forwarded by IPX routers to other IPX
+subnets, the SAP Agent will not respond to service queries by network clients
+located on remote IPX subnets.
+
+To install the SAP Agent, follow these steps:
+
+1. Click Start, point to Setting, click Control Panel, and double-click Network.
+
+2. Select the Services tab.
+
+3. Click Add and select SAP agent from the list.
+
+4. Verify path information to the Windows NT installation files (Windows NT
+  CD-ROM, hard drive, or network drive).
+
+5. Click Continue.
+
+6. After binding, click Close.
+
+7. When prompted to restart the computer, click No.
+
+8. Re-apply the latest service pack currently installed.
+
+9. Restart the server for the change to take effect.
+
+Additional query words: gsnw fpnw sfn
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbServicesNetware400 kbServicesNetwareSearch kbFPNW351
+Version           : WinNT:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

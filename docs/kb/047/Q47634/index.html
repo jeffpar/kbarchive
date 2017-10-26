@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47634: How to Reboot Your Machine within a Pure C Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47634: How to Reboot Your Machine within a Pure C Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47634/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47634/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47634/","publisher":null,"image":null,"headline":"Q47634: How to Reboot Your Machine within a Pure C Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47634-how-to-reboot-your-machine-within-a-pure-c-application">Q47634: How to Reboot Your Machine within a Pure C Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47634
+Product(s): See article
+Version(s): 5.00 5.10
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | S_QuickC S_QuickASM | mspl13_c
+Last Modified: 16-AUG-1989
+
+Question:
+
+How can I cause my machine to reboot itself from within my pure C
+program? Interrupt 19H does not accomplish this task.
+
+Response:
+
+You can do a complete reboot on an 8086-based machine by jumping to
+the address F000:FFF0. This action also reboots many 80286 and 80386
+machines. The address contains a jump instruction that leads to the
+machine's initialization code. For this method to succeed, your
+machine must be in real-mode operation.
+
+To prevent a memory check (on IBM and many compatibles), you should
+store the value 0x1234 in the memory location at 0040:0072.
+
+The following functions reboot your system without a memory check. If
+you wish to allow the memory check to occur, you must remove the
+single line comment delimiters, "//", from the lines involving
+"memchk".
+
+//int far *memchk ;
+
+void (far *reboot)( void ) = (void far *)0xf000fff0 ;
+
+void main ( void )
+{
+  // memchk = (int far *)0x00400072 ; /* address of mem. check control */
+  // *memchk = 0x1234 ;               /* disable memory check          */
+
+  (*reboot)() ;                       /* reboot your machine           */
+}
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

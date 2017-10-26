@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164512: Windows 95 Briefcase: No Drag-and-Drop on WinNT Compressed Dir | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164512: Windows 95 Briefcase: No Drag-and-Drop on WinNT Compressed Dir" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164512/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164512/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164512/","publisher":null,"image":null,"headline":"Q164512: Windows 95 Briefcase: No Drag-and-Drop on WinNT Compressed Dir","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164512-windows-95-briefcase-no-drag-and-drop-on-winnt-compressed-dir">Q164512: Windows 95 Briefcase: No Drag-and-Drop on WinNT Compressed Dir</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164512
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): 3.51,4.0
+Operating System(s): 
+Keyword(s): kbinterop kbnetwork
+Last Modified: 14-MAR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.51, 4.0 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+This issue applies to a Windows 95 user connecting to a Windows NT sharepoint
+containing compressed directories and files. The problem is observed from the
+Windows 95 client when using a drag-and-drop operation to move a compressed
+Windows NT directory into Windows 95 Briefcase. The resulting problem is that
+the directory is copied but files under the directory are not copied.
+
+CAUSE
+=====
+
+This problem occurs because Windows NT sends to Windows 95 a file attribute of
+0x820 in reply to a findfirst request. Windows 95 was not handling the 8xx
+portion of this reply and was failing to copy files containing the attribute.
+All Windows NT compressed files contain the 8xx attribute designation.
+
+RESOLUTION
+==========
+
+This issue is resolved by the following updated file for Windows 95, and later
+versions of this file:
+
+SYNCENG.DLL  version 4.00.951  dated 7/16/96  55,296 bytes
+
+
+
+To work around this problem, do not store user profiles in compressed folders on
+Windows NT-based computers. If necessary, uncompress the folder used to store
+user profiles and re-create the user profiles.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. An update
+to address this problem is now available, but is not fully regression tested and
+should be applied only to computers experiencing this specific problem. Unless
+you are severely impacted by this specific problem, Microsoft does not recommend
+implementing this update at this time. Contact Microsoft Technical Support for
+additional information about the availability of this update.
+
+This issue is resolved in Microsoft Windows 98.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbWin95search kbZNotKeyword3
+Version           : :3.51,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

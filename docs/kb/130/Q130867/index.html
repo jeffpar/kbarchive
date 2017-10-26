@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130867: FIX: Link Paste Update Causes ASSERT in AFXWIN1.INL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130867: FIX: Link Paste Update Causes ASSERT in AFXWIN1.INL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130867/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130867/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130867/","publisher":null,"image":null,"headline":"Q130867: FIX: Link Paste Update Causes ASSERT in AFXWIN1.INL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130867-fix-link-paste-update-causes-assert-in-afxwin1inl">Q130867: FIX: Link Paste Update Causes ASSERT in AFXWIN1.INL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130867
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbole kbMFC kbVC kbVC200 kbGrpDSMFCATLkbbuglist kbfixlist
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some containers respond to change notifications in Paste Link objects by calling
+GetData() on the linked object with a pointer to a valid DVTARGETDEVICE. This is
+usually a printer device or something other than the display context, which can
+be created by the server. In the case where the container is a 16-bit
+Windows-based application, this may cause an assertion in AFXWIN1.INL line 457.
+
+CAUSE
+=====
+
+In the case of a 16-bit Windows-based container application, MFCANS32.DLL
+attempts to translate the fields of the 16-bit DVTARGETDEVICE structure to
+32-bit equivalents and pass the new structure on to the 32-bit MFC-based server
+application. In doing this, it uses a copy of the DVTARGETDEVICE structure
+containing mis-ordered fields. Specifically, the tdDeviceNameOffset and the
+tdDriverNameOffset fields are reversed in order. This causes any server that
+attempts to use the DVTARGETDEVICE to create a valid device context to fail when
+it uses these fields to call ::CreateDC().
+
+In the MSVC20\MFC\SRC\OLEMISC.CPP module, the utility function _AfxOleCreateDC()
+does not check the return code from ::CreateDC() and returns an invalid HDC as a
+result. Later, that handle is attached to a CDC object. When AFXWIN1.INL's
+CDC::GetDeviceCaps() function is called, it validates the HDC member that was
+attached, and that is where the assertion occurs. Depending on the circumstances
+and container application being used, the symptom may be different.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Microsoft Visual C++,
+32-bit Edition, version 2.1 for x86 platforms.
+
+Additional query words: 2.00 createdc dvtargetdevice mfcans32
+
+======================================================================
+Keywords          : kbole kbMFC kbVC kbVC200 kbGrpDSMFCATL kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

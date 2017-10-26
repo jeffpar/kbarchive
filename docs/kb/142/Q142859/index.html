@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142859: Configuring Internet Server Gopher Searches | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142859: Configuring Internet Server Gopher Searches" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142859/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142859/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142859/","publisher":null,"image":null,"headline":"Q142859: Configuring Internet Server Gopher Searches","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142859-configuring-internet-server-gopher-searches">Q142859: Configuring Internet Server Gopher Searches</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142859
+Product(s): Internet Information Server
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 08-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The search function to search for files on a Gopher server is not included with
+Microsoft Internet Server. However, Microsoft Internet Server does support
+searching through the European Microsoft Windows NT Academic Centre (EMWAC) Wide
+Area Information Server (WAIS) Toolkit, which is included in the Windows NT
+Resource Kit. You can use these tools to prepare and search full-text databases
+for computers running Microsoft Windows NT.
+
+NOTE: If you install the WAIS Toolkit, make sure to do it after you install the
+Microsoft Internet Information Server software.
+
+MORE INFORMATION
+================
+
+The following procedure shows how the server conducts searches for information:
+
+1. The process passes the information typed in at the client as search strings.
+
+2. The server does the search.
+
+3. The filenames containing the strings are retrieved.
+
+4. The server converts the filenames to a Gopher Menu.
+
+5. The server sends the Gopher Menu to the client.
+
+To configure the server for searches, you need to do the following:
+
+- Configure an index of keywords to speed up the search.
+
+- Set up search tools, either by selecting them from other sources, or by
+  writing your own.
+
+- Create tag information for all searches supported by a particular server.
+
+Creating an Index File
+----------------------
+
+First, install the EMWAC WAIS software. Then you can create an index file by
+using the WAIS Toolkit.
+
+1. Prepare a directory to work in, for example:
+
+  C:\Search
+
+2. Create a subdirectory to hold the files you are going to index, for example:
+
+  C:\Search\Here
+
+3. Put some text files into the C:\Search\Here directory. These files must be
+  ASCII text files.
+
+To Create an Index
+------------------
+
+1. Make C:\Search your current directory.
+
+2. Execute the following command with these parameters:
+
+  waisindex -d myindex here\*
+
+3. Check the messages from Waisindex to make sure that there are no errors.
+
+4. In the C:\Search directory, type DIR to make sure that Waisindex has created
+  the seven index files named Myindex.*.
+
+5. Search your files. For the example, search for a word that you know is in the
+  files.
+
+Searching the Index
+-------------------
+
+The Waislook command in the EMWAC WAIS Toolkit allows you to search files through
+the index file you created with Waisindex. Make sure C:\Search is the current
+directory and execute the following command with these parameters:
+
+  waisindex -d myindex word
+
+where word is any word that you know appears in one of the files.
+
+Check the output of Waislook, which will show you the names of the files that
+contain the word you typed.
+
+Configuring Log Records
+-----------------------
+
+When you set up a Gopher server, you can see who has been using it and how many
+times your online information was accessed. Through Gopher you can log incoming
+connections to the server.
+
+To record logs properly:
+
+1. Determine in which directory the logs will be stored.
+
+2. Specify the frequency with which logs are collected (every day, every week,
+  every month, etc.).
+
+3. Select the log tools you want to analyze the logs your server collects.
+
+Additional query words: prodiis1 gopher wais emwac
+======================================================================
+Keywords          : kbusage 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

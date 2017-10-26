@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q301690: XIMS: Corrupted Message Header Causes Access Violation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q301690: XIMS: Corrupted Message Header Causes Access Violation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/301/Q301690/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/301/Q301690/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/301/Q301690/","publisher":null,"image":null,"headline":"Q301690: XIMS: Corrupted Message Header Causes Access Violation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q301690-xims-corrupted-message-header-causes-access-violation">Q301690: XIMS: Corrupted Message Header Causes Access Violation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q301690
+Product(s): Microsoft Exchange
+Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
+Operating System(s): 
+Keyword(s): kbExchange550preSP5fix
+Last Modified: 08-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3, 5.5 SP4 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you receive a Simple Mail Transfer Protocol (SMTP) message with a corrupted
+header, an access violation may occur in Msexcimc.exe. If you have the correct
+symbols or if you view a debugger, you see the following stack:
+
+  
+
+  0374f3b4  6fff13c4  00f00588 00f10b40 6facfaab EXCHMEM!MpHeapFree+0x88
+  0374f3c0  6facfaab  00f10b40 6facfb55 00f00588 EXCHMEM!ExchMHeapFree+0x14
+  0374f3c8  6facfb55  00f00588 00000000 00f10b40 MAPI32!LH_IntHeapFree+0xb
+  0374f3d8  6fa95067  00f00588 00000000 00f10b40 MAPI32!LH_ExtHeapFree+0x15
+  0374f3fc  6faa0ebe  00f00588 0374f660 00000000 MAPI32!MAPIFreeBuffer+0x77
+  0374f410  0040b1fe  00f362b8 00000000 0374f478 MAPI32!FreePadrlist+0x1e
+  0374f434  0040b0ab  0374f660 00000000 00000000 MSEXCIMC!CAdrIn::hrCreateSrcAdrLists+0xf7
+  0374f448  0040a5d1  0374f660 00d91018 0374f538 MSEXCIMC!CAdrIn::hrPrepareLists+0xf
+  0374f4c8  0040b7a7  00d93de0 00d93e20 00d91168 MSEXCIMC!hrResolveAddresses+0xd5
+  0374f500  0040ddbd  00474454 0047b040 00d93de0 MSEXCIMC!hrResolveAdrs+0x53(...)
+  0374fe0c  0040c990  00d93d40 00d93358 00d93330 MSEXCIMC!HrSendMessageIn+0x1065
+  0374ff70  004312d8  00d93d40 00d93358 00d93d40 MSEXCIMC!ProcessInboundItem+0xfc
+  0374ff84  0044892d  00d93d40 00000000 00430a42 MSEXCIMC!ProcessInbound+0x4a
+  77f1d363  408b0000  74ffc324 74ff0824 15ff0824 MSEXCIMC!InboundWorkerThread+0x59
+
+CAUSE
+=====
+
+This problem can occur if an error condition causes the Msexcimc.exe code to try
+to free the same memory twice.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Exchange Server 5.5 service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Internet Mail Service
+
++----------------------------+
+| File name    | Version     | 
++----------------------------+
+| Msexcimc.exe | 5.5.2655.15 | 
++----------------------------+
+| Imcmsg.dll   | 5.5.2655.15 | 
++----------------------------+
+
+NOTE: Because of file dependencies, this fix requires Microsoft Exchange Server
+version 5.5 Service Pack 4.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbExchange550preSP5fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3 kbExchange550SP4
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

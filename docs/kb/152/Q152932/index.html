@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152932: XCON: X.400 Connector Uses Session Selector on X.400 Connections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152932: XCON: X.400 Connector Uses Session Selector on X.400 Connections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152932/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152932/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152932/","publisher":null,"image":null,"headline":"Q152932: XCON: X.400 Connector Uses Session Selector on X.400 Connections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152932-xcon-x400-connector-uses-session-selector-on-x400-connections">Q152932: XCON: X.400 Connector Uses Session Selector on X.400 Connections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152932
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 20-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Session Selector (S Sel) is defined for an X.400 connection defined with
+X.410 conformance, communication to foreign X.400 systems may not work
+properly.
+
+The Windows NT application event log may contain the following entry:
+
+  Event ID: 51
+  Source: MSExchangeMTA
+
+  Description:
+  An unknown MTA has attempted to bind. The MTA name in bind is &lt;REMOTE MTA
+  NAME&gt;. The MTA presentation address is
+  /t:0x44454D4F/n:0x444545392D5443504950, Association index: 2018. [MTA XFER-IN
+  35 42] (14)
+
+CAUSE
+=====
+
+Exchange Server incorrectly allows a configuration that sends and expects to
+receive a Session Selector (S Sel) on an X.410 conformant connection if defined
+to do so in the X.400 Connector Stack property pages.
+
+The following is taken from the Red Book, X.410, Page 110, Note 2:
+
+  Message handling will not use Session Layer addressing, that is, a session
+  address will not be passed in the Connect SPDU of the Session Layer.
+
+An X.410 conformant connection is configured by choosing 1984 or 1988 X.410 mode
+in the message transfer agent (MTA) conformance pane of the Advanced property
+page for the X.400 Connector.
+
+Exchange should ignore the S Selector value for X.410 conformant connections.
+
+
+RESOLUTION
+==========
+
+Exchange Server 5.0
+-------------------
+
+A supported fix that corrects this problem is now available from Microsoft, but
+has not been fully regression-tested and should be applied only to systems
+experiencing this specific problem. If you are not severely affected by this
+specific problem, Microsoft recommends that you wait for the next Microsoft
+Exchange Server version 5.0 service pack that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information on support costs, please go to the following
+address on the World Wide Web:
+
+  http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Component: Message Transfer Agent (MTA)
+
+  File Name     Version
+  -------------------------
+  Emsmta.exe    5.0.1461.37
+  Ems_rid.dll   5.0.1461.37
+
+
+Exchange Server 5.5
+-------------------
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server version
+5.5. This problem has been corrected in the latest U.S. service pack for
+Microsoft Exchange Server version 5.5. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+  S E R V P A C K
+
+WORKAROUND
+==========
+
+To work around this problem, do not define X.400 systems with S Selector values
+if X.410 conformant connections will be used. By manipulating the OSI Protocol
+Information in the Stack Property Page of the X.400 Connector, you may be able
+to configure the X.400 Connector to send an S Selector (if necessary), but not
+to expect one in return.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+versions 4.0, 5.0, and 5.5.
+
+Additional query words: kbbug4.00 kbbug5.00 XFOR kbbug5.50 kbfix5.50.sp1 kbfix5.0.sp3
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

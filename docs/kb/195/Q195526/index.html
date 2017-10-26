@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195526: HOWTO: Retrieve Primary Keys for SQL Server Tables | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195526: HOWTO: Retrieve Primary Keys for SQL Server Tables" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195526/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195526/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195526/","publisher":null,"image":null,"headline":"Q195526: HOWTO: Retrieve Primary Keys for SQL Server Tables","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195526-howto-retrieve-primary-keys-for-sql-server-tables">Q195526: HOWTO: Retrieve Primary Keys for SQL Server Tables</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195526
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): KbClientServer kbDatabase kbHWMAC kbSQL kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbMDAC250
+Last Modified: 27-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create remote views using SQL Server tables as the data source, Visual
+FoxPro automatically sets the KeyField property to .T. for columns that are
+included in a primary index key. In some instances, you might want to retrieve
+the primary key information through code so you can get more detailed
+information about the key's structure. This article demonstrates how to use the
+stored procedure sp_pkeys to return primary key information from SQL Server.
+
+MORE INFORMATION
+================
+
+The SQL Server stored procedure sp_pkeys returns information about columns
+explicitly defined with a PRIMARY KEY constraint. The sp_pkeys stored procedure
+is equivalent to SQLPrimaryKeys in ODBC. The results are ordered by
+TABLE_QUALIFIER, TABLE_OWNER, TABLE_NAME, and KEY_SEQ.
+
+  Column Name     Data Type    Description
+  ------------------------------------------------------------------------
+
+  TABLE_QUALIFIER varchar(32)  The name of the table qualifier. This
+                               column represents the database name, and it
+                               might be NULL.
+  TABLE_OWNER     varchar(32)  The name of the table owner. This column
+                               represents the name of the database user
+                               who created the table and it always returns
+                               a value.
+  TABLE_NAME      varchar(32)  The name of the table. This column
+                               represents the table name as listed in the
+                               sysobjects table, and it always returns a
+                               value.
+  COLUMN_NAME     varchar(32)  The name of the column, for each column
+                               of the TABLE_NAME returned. This column
+                               represents the column name as listed in the
+                               syscolumns table, and it always returns a
+                               value.
+                               When a primary key involves multiple
+                               columns, sp_pkeys returns one row for each
+                               column used in the primary key expression.
+  KEY_SEQ           smallint   The sequence number of the column in a
+                               multi-column primary key, and it always
+                               returns a value.
+  PK_NAME         varchar(32)  A primary key identifier, and it is NULL if
+                               it is not applicable to the data source.
+
+Sample Code
+-----------
+
+Create a program named GETKeys.prg using the following code:
+
+     * Substitute the server name .
+     #DEFINE Connect_String 'DRIVER={SQL Server};SERVER=MY_SERVER;' + ;
+        'DATABASE=PUBS;UID=sa;PWD='
+     * Create a cursor to store information.
+     CREATE CURSOR SQLKeys (Table_Name C(128), Column_Name C(128), ;
+        Key_Seq I, PK_Name C(128))
+     * Connect to SQL Server.
+     gnConnHandle=SQLSTRINGCONN(Connect_String)
+     IF gnConnHandle&gt;0
+        * Get the tables available on SQL Server.
+        SQLConnTables=SQLTABLES(gnConnHandle)
+        IF SQLConnTables&gt;0
+           SELECT SQLResult
+           INCnt=0
+           DO WHILE !EOF()
+              * Create a command to execute the stored procedure.
+              SQLCommand="sp_pkeys " + ALLTRIM(Table_Name)
+              * Execute the stored procedure and return data to a cursor.
+              =SQLEXEC(gnConnHandle,SQLCommand,'syskeys')
+              * Select the cursor.
+              SELECT SYSKeys
+              IF RECCOUNT()&gt;0
+                 SCAN
+
+                    IF RECNO()=1
+                       * Insert a new record into the SQLKeys cursor.
+                       INSERT INTO SQLKeys ;
+                          VALUES ;
+                          (SYSKeys.Table_Name, SYSKeys.Column_Name, ;
+                          SYSKeys.Key_Seq,SYSKeys.PK_Name)
+                    ELSE
+                       * Multicolumn key.
+                       * Concatenate to get the expression.
+                       REPLACE SQLKeys.Column_Name WITH ;
+                          ALLTRIM(SQLKeys.Column_Name) + ;
+                          "+"  + ALLTRIM(SYSKeys.Column_Name)
+                    ENDIF
+                 ENDSCAN
+              ENDIF
+              SELECT SQLResult
+              SKIP
+           ENDDO
+           =SQLDISCONN(gnConnHandle)
+        ENDIF
+     ENDIF
+     SELECT SQLKeys
+     BROW LAST
+     CLOSE ALL
+     RETURN
+
+Note that the Sales row column_name value is "stor_id+ord_num+title_id" and the
+TitleAuthor row column_name value is au_id+title_id.
+
+REFERENCES
+==========
+
+Transact - SQL Reference Help: sp_pkeys
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : KbClientServer kbDatabase kbHWMAC kbSQL kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbMDAC250 kbSQLProg 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

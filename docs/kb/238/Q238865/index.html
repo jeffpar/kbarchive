@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238865: SMS: SMSMon32 Process Hangs on Client After Applying SMS 2.0 SP1 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238865: SMS: SMSMon32 Process Hangs on Client After Applying SMS 2.0 SP1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238865/","publisher":null,"image":null,"headline":"Q238865: SMS: SMSMon32 Process Hangs on Client After Applying SMS 2.0 SP1","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238865-sms-smsmon32-process-hangs-on-client-after-applying-sms-20-sp1">Q238865: SMS: SMSMon32 Process Hangs on Client After Applying SMS 2.0 SP1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q238865
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsetup kbsms200 smssetup
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+After you upgrade a Systems Management Server (SMS) 2.0 site to Service Pack 1
+(SP1), client computers connected to the site may respond slowly or even appear
+to stop responding (hang). On these computers, the Smsmon32.exe process may be
+taking up most of the CPU processing time and not yielding to other processes.
+
+CAUSE
+=====
+
+The Smsmon32.exe process may hang during client upgrades to SP1 for any of the
+following reasons:
+
+- One or more sites were upgraded in a single domain, multiple-site model. For
+  additional information, see the following article in the Microsoft Knowledge
+  Base:
+
+  Q236596 SMS: Client Components Fail to Install with SMS 2.0 SP1
+
+- When clients from a site that has not been upgraded log on and run the SMS
+  logon script, they receive the updated base components from the SMS logon
+  point. However, when the client connects to the Client Access Point (CAP), a
+  version mismatch (because the CAP is not upgraded) could cause Smsmon32.exe
+  to hang on the client computers.
+
+WORKAROUND
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+When a client receives the version mismatch, a complete removal and
+reinstallation of the SMS client is necessary to correct the problem.
+
+If there are active outstanding advertisements available for the clients when
+they upgrade from SMS 2.0 to SP1, Smsmon32.exe may appear to hang and the client
+computer may need to be restarted.
+
+When the client computers reach this point, a complete removal and reinstallation
+of the SMS client is necessary. After the reinstallation is finished, the client
+has the updated components from the CAP server and functions properly.
+
+If the client computers belong to more than one site, and if one of the sites no
+longer exists, Smsmon32.exe may hang when trying to contact the nonexistent site
+during the upgrade from SMS 2.0 to SP1. To work around this issue:
+
+1. Stop all SMS services on a Windows NT client computer.
+
+2. Edit the registry. Delete the site code of the nonexistent site from the
+  following registry key:
+
+  HKEY_LOCAL_MACHINE\Microsoft\SMS\Client\InstalledSites
+
+3. Start the client services.
+
+MORE INFORMATION
+================
+
+To avoid some of these issues, see the following article in the Microsoft
+Knowledge Base before you upgrade SMS 2.0 to SP1:
+
+  Q238780 Best Practices for Applying SMS 2.0 SP1
+
+For additional information, please click the article numbers below to view the
+articles in the Microsoft Knowledge Base:
+
+  Q236325 How to Obtain the Latest Systems Management Server Service Pack
+
+  Q237543 SMS: Service Pack Upgrade Considerations for Clients
+
+  Q236596 SMS: Client Components Fail to Install with SMS 2.0 SP1
+
+  Q238864 SMS: Windows 95/98 Clients Stop Responding or Become Unstable After
+  SP1 Upgrade
+
+
+Additional query words: multisite smsfaqtop
+
+======================================================================
+Keywords          : kbsetup kbsms200 smssetup 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

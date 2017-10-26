@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154709: BUG: Setup Wizard Grid Hangs VFP When KEYCOMP Not Macintosh | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154709: BUG: Setup Wizard Grid Hangs VFP When KEYCOMP Not Macintosh" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154709/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154709/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154709/","publisher":null,"image":null,"headline":"Q154709: BUG: Setup Wizard Grid Hangs VFP When KEYCOMP Not Macintosh","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154709-bug-setup-wizard-grid-hangs-vfp-when-keycomp-not-macintosh">Q154709: BUG: Setup Wizard Grid Hangs VFP When KEYCOMP Not Macintosh</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154709
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:3.0b
+Operating System(s): 
+Keyword(s): kbbuglist
+Last Modified: 10-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Step 6, the Setup Wizard in Visual FoxPro for Macintosh can hang under the
+following circumstances:
+
+- KEYCOMP is either Windows or DOS.
+
+- The drop-down list in the Target Dir column of the grid in Step 6 is clicked
+  with the mouse, causing it to stay dropped-down.
+
+- With the list in the dropped-down position, an arrow key on the keyboard is
+  pressed in an attempt to select one of the items in the list.
+
+WORKAROUND
+==========
+
+Make sure that KEYCOMP is set to Macintosh before running the Setup Wizard. The
+following command typed in the Command window can be used to determine what
+KEYCOMP is currently set to:
+
+     ? SET("keycomp")
+
+This should return "MAC."
+
+When KEYCOMP is MAC, the Visual FoxPro menus will not have any letters
+underlined. When KEYCOMP is DOS or Windows, various letters in the FoxPro menus
+will be underlined.
+
+To set KEYCOMP to Windows, type the following command in the Visual FoxPro
+Command window and press the RETURN key:
+
+     SET KEYCOMP TO Windows
+
+KEYCOMP can also be set or checked in the Options dialog that is accessed from
+the Tools menu. In the General tab, there is a section for Data Entry. Set the
+Navigation Keys drop-down to Macintosh Compatible to set KEYCOMP to Macintosh
+through this dialog.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The scenario where this problem will likely be encountered is caused by the
+behavior of the drop-down list in the grid in Step 6 - File Summary of the Setup
+Wizard. When KEYCOMP is Windows or DOS, clicking the drop-down will cause it to
+drop down and stay down. Then, if the mouse button is released and another
+location in the list is clicked, the list goes back up but the item clicked
+isn't selected. At this point, it may be tempting to use the arrow keys because
+the mouse does not appear to work. To change the location in the drop-down list
+with the mouse, click the drop-down list and, holding down the mouse button,
+drag down the list to the item desired. Then release the mouse button.
+
+Steps To Reproduce The Problem
+------------------------------
+
+1. SET KEYCOMP to Windows using one of the methods described in the Workaround
+  section of this article.
+
+2. Create two folders on the Macintosh: one to contain the program to be
+  distributed(source folder) and another for the disk images. The desktop is a
+  good location for these folders. Place at least one file in the source
+  folder. Any .prg file is fine.
+
+3. Start the Setup Wizard from the Tools, Wizards menu.
+
+4. Fill in the appropriate options in Steps 1 through 5.
+
+5. In Step 6 - File Summary, click on the Target Dir drop-down list in the grid.
+  It should drop down. Release the mouse button and the list should stay down.
+  Then, use the down arrow key to scroll down the list. The Mac should hang at
+  this point.
+
+Additional query words: kbdsd VFoxMac
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

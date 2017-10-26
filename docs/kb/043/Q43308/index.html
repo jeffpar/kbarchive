@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q43308: Differences among QuickBASIC Versions 2.00, 3.00, 4.00, 4.50 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q43308: Differences among QuickBASIC Versions 2.00, 3.00, 4.00, 4.50" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/043/Q43308/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/043/Q43308/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/043/Q43308/","publisher":null,"image":null,"headline":"Q43308: Differences among QuickBASIC Versions 2.00, 3.00, 4.00, 4.50","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q43308-differences-among-quickbasic-versions-200-300-400-450">Q43308: Differences among QuickBASIC Versions 2.00, 3.00, 4.00, 4.50</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q43308
+Product(s): See article
+Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_basic
+Last Modified: 18-OCT-1989
+
+This article describes differences among Microsoft QuickBASIC Versions
+2.00, 3.00, 4.00, and 4.50. (2.01 can be grouped with 2.00, and 4.00b
+can be grouped with 4.00 in the comparisons below.)
+
+FEATURE
+-------
+                                         QuickBASIC Version
+Development Environment         2.00       3.00       4.00       4.50
+-----------------------         ----       ----       ----       ----
+
+Assembly-language listings      No         No         Yes        Yes
+during separate compilation
+(compiler /A option)
+
+Error listings during           No         Yes        Yes        Yes
+separate compilation
+
+Microsoft CodeView support      No         No         Yes        Yes
+
+Hercules graphics card support  No         No         Yes        Yes
+
+Immediate mode execution        No         No         Yes        Yes
+
+Insert/overtype modes           No         Yes        Yes        Yes
+
+Instant Watches for variables   No         No         No         Yes
+and expressions
+
+Multiple modules in memory      No         No         Yes        Yes
+
+Multifile/multiwindow editing   No         No         Yes        Yes
+
+On-line QuickBASIC Advisor      No         No         No         Yes
+
+On-line help                    No         No         Yes        Yes
+
+ProKey, SideKick, and           No         Yes        Yes        Yes
+SuperKey compatibility
+
+Selectable right mouse button   No         No         No         Yes
+function
+
+Set default search paths        No         No         No         Yes
+
+Syntax checking on entry        No         No         Yes        Yes
+
+WordStar-style keyboard         No         No         Yes        Yes
+interface
+
+                                         QuickBASIC Version
+                                2.00       3.00       4.00       4.50
+Language Features               ----       ----       ----       ----
+-----------------
+
+BINARY file Input/Output        No         No         Yes        Yes
+
+Block IF/THEN/ELSE              Yes        Yes        Yes        Yes
+
+DEF FN                          Yes        Yes        Yes        Yes
+
+Definable lower array-bounds    No         No         Yes        Yes
+
+Fixed-length strings            No         No         Yes        Yes
+
+FUNCTION procedures             No         No         Yes        Yes
+
+Long (32-bit) integers          No         No         Yes        Yes
+
+Recursive procedures            No         No         Yes        Yes
+
+User-defined variable types     No         No         Yes        Yes
+
+                                         QuickBASIC Versions
+                                2.00       3.00       4.00       4.50
+Math Support                    ----       ----       ----       ----
+------------
+
+IEEE format, math coprocessor   No         Yes        Yes        Yes
+support
+
+8087/80287 support              No         Yes        Yes        Yes
+
+8087/80287 emulation            No         Yes        Yes        Yes
+
+                                         QuickBASIC Versions
+                                2.00       3.00       4.00       4.50
+Memory Model and Linking        ----       ----       ----       ----
+------------------------
+
+Build quick libraries from      No         No         Yes        Yes
+environment
+
+Compatibility with other        MASM only  MASM only  Yes        Yes
+languages
+
+Huge arrays                     No         No         Yes        Yes
+
+Quick library support or        User       User       Quick      Quick
+user library support            Library    Library    Library    Library
+
+FEATURES NEW TO QuickBASIC 4.50
+-------------------------------
+
+In QuickBASIC 4.50, you can access on-line help for QuickBASIC's
+keywords, commands, and menus, and on-line help for general topics and
+your own variables. Examples shown on the help screens can be copied
+and pasted directly into your own program, reducing development time.
+
+In the 4.50 editor, you can set the function of the right mouse button
+with the Right Mouse command from the Options menu. Use the function
+that best suits your needs.
+
+For faster debugging, QuickBASIC 4.50 offers an Instant Watch command
+for immediately identifying the value of a variable or the condition
+(true or false) of an expression.
+
+Version 4.50 also lets you set default search paths to specific types
+of files. This lets you organize your files by type and keep them in
+separate directories. QuickBASIC searches the correct directory after
+you set the new default search path. You can set default paths for
+executable, include, library, and help files.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

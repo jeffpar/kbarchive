@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176468: INFO: Behavior of Forms in an ActiveX Document | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176468: INFO: Behavior of Forms in an ActiveX Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176468/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176468/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176468/","publisher":null,"image":null,"headline":"Q176468: INFO: Behavior of Forms in an ActiveX Document","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176468-info-behavior-of-forms-in-an-activex-document">Q176468: INFO: Behavior of Forms in an ActiveX Document</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176468
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbVBp500 kbVBp600 kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+As a developer, you need to consider several aspects of form behavior when
+developing an ActiveX document application that uses forms. Because the ActiveX
+document application will always be run within a container application, forms
+may behave differently than when within a standard Visual Basic project. This
+article will describe the key considerations that must be taken when developing
+forms for an ActiveX application.
+
+MORE INFORMATION
+================
+
+Although an ActiveX document can be displayed in varying containers, this
+article will focus on using Internet Explorer as the container.
+
+Client Navigation
+-----------------
+
+Users of Internet Explorer have the freedom of navigating to different pages when
+they visit your ActiveX document. They can navigate forward, backward, or to a
+specific URL address. If a Visual Basic form is open when a user navigates to a
+new page, the form will remain open, visible on the Windows desktop behind
+Internet Explorer. The form will remain open until the user or the application
+closes it, even after the ActiveX document has been terminated.
+
+You cannot prevent a user from navigating. However, you can program your
+application to detect when navigation occurs. The UserDocument Hide event will
+fire when a user navigates to a new page from your ActiveX document application.
+This event may then be used to handle your forms behavior when a user navigates
+off your page.
+
+For example, you could create a Public boolean variable named flagIsFormOpen to
+keep track of when the form was open. This variable would need to be declared in
+the General Declarations section of a standard code module native to your
+ActiveX document project:
+
+     Public flagFormIsOpen As Boolean
+
+The forms Load and Unload events could then be used to set the value of
+flagIsFormOpen to True or False:
+
+     Private Sub Form_Load()
+        flagFormIsOpen = True
+     End Sub
+
+     Private Sub Form_Unload(Cancel As Integer)
+        flagFormIsOpen = False
+     End Sub
+
+Next, check for the value of the variable in the Hide event of the UserDocument,
+and handle the forms behavior appropriately:
+
+     Private Sub UserDocument_Hide()
+         If flagFormIsOpen Then
+            frmDetails.Visible = False
+         End If
+     End Sub
+
+In the example above, the name of the form is "frmDetails." When a user navigates
+away from the UserDocument, the Hide event checks for the value of the
+flagFormIsOpen variable. If the Form is open, hide the form.
+
+Next, determine if a user returns to the page before the ActiveX document
+application is terminated and display the form to the user. If a user navigates
+back to the ActiveX document before it is terminated, the UserDocument's Show
+event fires:
+
+     Private Sub UserDocument_Show()
+        If flagFormIsOpen then
+           frmDetails.Visible = True
+        End if
+     End Sub
+
+Finally, as a general rule, forms should be unloaded when the object that created
+them terminates. Therefore, the ActiveX document should unload any open forms it
+created when the ActiveX document terminates. The ActiveX document may terminate
+in various scenarios. The Terminate event of the UserDocument can be used to
+unload the form if it is still open:
+
+     Private Sub UserDocument_Terminate()
+        If flagFormIsOpen Then
+           Unload frmDetails
+        End If
+     End Sub
+
+NOTE: If the visible property a form is set to False, the Form will be Unloaded
+automatically when the Terminate event fires. When this occurs, however, the
+QueryUnload event of the form does not fire and the Cancel argument of the
+Unload event is ignored.
+
+Modal Forms
+-----------
+
+The behavior of modal forms in ActiveX Documents is inconsistent between
+different versions of Internet Explorer, on different operating systems, and
+between in-process (DLL) and out-of-process (EXE) servers. When a modal form is
+opened within an ActiveX document, the desired behavior would be to have the
+form modal to the UserDocument and the container application. However, this is
+not always the case. The chart below shows the varying behavior of modal forms:
+
+               IE3/95    IE3/NT   IE4/95   IE4/NT
+               ------------------------------------
+ActiveX EXE     Partial   Partial  Partial  Partial
+ActiveX DLL     Modal     Modal    Modal    Modeless
+
+In the chart above, "modal" means the modal form behaved as a true modal form.
+
+"Modeless" means the modal form behaved just like a modeless form.
+
+"Partial" means the modal form behaved in some ways like a modal form. In certain
+partial cases, modal forms were modal to the UserDocument and only objects
+created by the UserDocument. The modal form was not modal to the container or
+any other frames displayed by Internet Explorer. In other cases, the form
+appeared to work as a modal form but the Refresh button on the IE toolbar was
+still accessible.
+
+The behavior of modal forms is the responsibility of the container. Therefore,
+the chart above is subject to change with future releases of Internet Explorer.
+
+Note that regardless of the value of the ShowInTaskBar property, modal forms will
+not appear in the Windows Task Bar.
+
+Modeless Forms
+--------------
+
+You cannot use modeless forms in some containers, including Internet Explorer,
+when the server is in-process. If you attempt to use a non-modal form, you might
+receive the following error message:
+
+  Run-time error '406': Non-modal forms cannot be displayed in
+  this host application from an ActiveX DLL, ActiveX Control or
+  Property Page.
+
+To avoid this problem, you can code all of your forms to open as modal (being
+aware of the issues stated above) or you can test for the behavior of the
+container, using the App object, before opening the form:
+
+     If App.NonModalAllowed Then
+        frmModeless.Show vbModeless
+     Else
+        frmModeless.Show vbModal
+     End If
+
+If you do use modeless forms, users will be able navigate away from your ActiveX
+document and the form will drop to the background if navigation takes place.
+
+Unlike modal forms, modeless forms will appear in the Windows TaskBar if the
+ShowInTaskBar property is set to true.
+
+Avoiding Forms
+--------------
+
+In ActiveX Document applications, it is recommended that forms be avoided.
+Instead, use other UserDocuments to achieve the same tasks. As described above,
+the behavior of forms may make your application difficult to use or confusing
+for clients. UserDocuments can achieve most of the same tasks as forms and can
+be manipulated much more easily than forms in an ActiveX document application.
+
+If you have some existing forms that you would like to convert to UserDocuments,
+Visual Basic ships with the "VB ActiveX Document Migration Wizard" that allows
+you to convert Visual Basic forms to UserDocuments easily. To access the "VB
+ActiveX Migration Wizard," choose Add-In Manager from the Add-Ins menu in Visual
+Basic. From within the Add- In Manager, select the "VB ActiveX Migration Wizard"
+and click OK. Now choose the Wizard from the Add-Ins menu. (If the "VB ActiveX
+Migration Wizard" was not an available selection in the Add-In Manager, you may
+need to add it by running the Visual Basic installation program).
+
+In an ActiveX document application you can add additional UserDocuments to your
+project. These will become individual .VBD files when the application is
+compiled. You can then navigate to the .VBD files using the NavigateTo method of
+the Hyperlink object, as in the following example:
+
+     Private Sub_Command1_Click()
+        HyperLink.NavigateTo "UserDocument2.Vbd"
+     End Sub
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

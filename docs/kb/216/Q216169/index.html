@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216169: How to Change the Default Event Viewer Log File Location | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216169: How to Change the Default Event Viewer Log File Location" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216169/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216169/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216169/","publisher":null,"image":null,"headline":"Q216169: How to Change the Default Event Viewer Log File Location","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216169-how-to-change-the-default-event-viewer-log-file-location">Q216169: How to Change the Default Event Viewer Log File Location</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216169
+Product(s): Microsoft Windows NT
+Version(s): 2000,4.0,4.0a,4.5
+Operating System(s): 
+Keyword(s): kbenv kbtool
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation version 4.0 
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+- Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+- Microsoft BackOffice Server versions 4.0, 4.5 
+- Microsoft BackOffice Small Business Server versions 4.0, 4.0a, 4.5 
+- Microsoft Windows 2000 Professional 
+- Microsoft Windows 2000 Server 
+- Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+The Event Viewer tool maintains three log files containing the System,
+Application, and Security event messages. However, the Event Viewer tool may not
+be able to write event messages to one of these log files if there is no disk
+space available. To increase the disk space that can be used for these log
+files, you can modify their default location.
+
+MORE INFORMATION
+================
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To modify the location of the Event Viewer log files:
+
+1. Click Start, click Run, type "regedt32" (without the quotation marks), and
+  then click OK.
+
+2. On the Windows menu, click "HKEY_LOCAL_ MACHINE on Local Machine".
+
+   - For the System log:
+
+     a. Click the System\CurrentControlSet\Services\EventLog\System folder, and
+        then double-click the FILE value.
+
+     b. Type the new drive and path in the String box, include the file name
+        \SysEvent.Evt, and then click OK. The default path is
+        %SystemRoot%\System32\Config\SysEvent.Evt
+
+   - For the Application log:
+
+     a. Click the System\CurrentControlSet\Services\EventLog\Application
+        folder, and then double-click the FILE value.
+
+     b. Type the new drive and path in the String box, include the file name
+        \AppEvent.Evt, and then click OK. The default path is
+        %SystemRoot%\System32\Config\AppEvent.Evt
+
+   - For the Security log:
+
+     a. Click the System\CurrentControlSet\Services\EventLog\Security folder,
+        and then double-click the FILE value.
+
+     b. Type the new drive and path in the String box, include the file name
+        \SecEvent.Evt, and then click OK. The default path is
+        %SystemRoot%\System32\Config\SecEvent.Evt
+
+3. Quit Registry Editor, and then restart the computer.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbNTTermServ400 kbNTTermServSearch kbAudDeveloper kbBackOfficeSearch kbSBServSearch kbWinAdvServSearch kbBackOfficeServ400 kbBackOfficeServ450 kbSBServ400 kbSBServ400a kbSBServ450
+Version           : :2000,4.0,4.0a,4.5
+Hardware          : ALPHA x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

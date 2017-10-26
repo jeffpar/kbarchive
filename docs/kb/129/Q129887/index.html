@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q129887: Introducing the Powerful New Picture Object in VB 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q129887: Introducing the Powerful New Picture Object in VB 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/129/Q129887/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/129/Q129887/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/129/Q129887/","publisher":null,"image":null,"headline":"Q129887: Introducing the Powerful New Picture Object in VB 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q129887-introducing-the-powerful-new-picture-object-in-vb-40">Q129887: Introducing the Powerful New Picture Object in VB 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q129887
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual Basic version 3.0, you had only the Picture property of the PictureBox
+control. Now, in Visual Basic version 4.0, you have a new Picture object that
+adds many capabilities. This article details some of these new capabilities.
+
+MORE INFORMATION
+================
+
+Array of Picture Objects
+------------------------
+
+You can use an array of Picture objects to keep a series of graphics in memory
+without using a form that contains multiple PictureBox or Image controls. For
+example, the following code loads a Picture object with a bitmap and uses that
+bitmap to set the Picture property of a PictureBox control:
+
+     Private Sub Command1_Click()
+        Dim x As Picture
+        Set x = LoadPicture("cars")
+        Set Picture1.Picture = x
+     End Sub
+
+Handle Property of Picture Object Differs from hDC Property of PictureBox
+-------------------------------------------------------------------------
+
+There is no direct relationship between a Picture.Handle and a PictureBox.hDC.
+The hDC property of the PictureBox is the handle provided by the operating
+system to the device context of the PictureBox control. The Handle property of
+the Picture object is actually the handle of the GDI object that is contained in
+the Picture object. If the Picture property contains a bitmap, its an HBITMAP.
+If it contains an icon, then its an HICON, or if it contains a metafile, then
+its an HMETAFILE.
+
+Use the Picture Object Instead of the Windows API
+-------------------------------------------------
+
+There are lots of things you can do with an HBITMAP, an HICON, or an HMETAFILE in
+the Windows API, but the Picture object already does most of them for you. This
+means that you are better off using the Picture object instead of the Windows
+API whenever possible.
+
+There are now two completely different ways to paint graphics on a window (or
+blit). You can use BitBlt or StretchBlt on the hDC of an object, or you can use
+the PaintPicture method on the Picture Object or Property. If you have an Image
+control, you can only use PaintPicture because Image controls do not have an
+hDC. For example:
+
+     Private Sub Command1_Click()
+        Dim x as Picture
+        Set x = LoadPicture("cars.bmp")
+        PaintPicture x, 0, 0
+        PaintPicture Picture1.Picture, 0, 200
+        PaintPicture Image1.Picture, 0, 500
+     End Sub
+
+The link between the Picture object and the PictureBox control is the Image
+property. You can draw something into the hDC of the PictureBox (with BitBlt,
+Polygon, LineTo, or other API functions), and then assign its Image property to
+the Picture property. This gives the PictureBox a bitmap with the same content
+as the hDC. This is useful for operations such as converting an icon or a
+metafile into a bitmap. However, you can only use raster operation (ROP) codes
+with PaintPicture on bitmaps, so this conversion is necessary for many blitting
+operations.
+
+NOTE: For a list of Raster Operation (ROP) codes for use with PaintPicture, see
+WIN32API.TXT in your VB\WINAPI directory.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

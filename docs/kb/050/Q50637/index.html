@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q50637: PRINT # to &quot;CONS:&quot; and PRINT Can Use &gt; for DOS Redirection | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q50637: PRINT # to &quot;CONS:&quot; and PRINT Can Use &gt; for DOS Redirection" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/050/Q50637/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/050/Q50637/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/050/Q50637/","publisher":null,"image":null,"headline":"Q50637: PRINT # to &quot;CONS:&quot; and PRINT Can Use &gt; for DOS Redirection","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q50637-print--to-cons-and-print-can-use--for-dos-redirection">Q50637: PRINT # to "CONS:" and PRINT Can Use &gt; for DOS Redirection</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q50637
+Product(s): See article
+Version(s): 4.50 4.00 4.00b
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891103-4 B_BasicCom | mspl13_basic
+Last Modified: 13-DEC-1989
+
+In a Microsoft QuickBASIC program, the output from either a compiled
+or interpreted program can be redirected from the SCREEN to a file by
+using the redirection "&gt;" operator in MS-DOS. This will also redirect
+stream devices, such as the LPT1 printer, to MS-DOS.
+
+This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
+and 4.50 for MS-DOS, to Microsoft QuickBASIC Interpreter (Academic
+Edition) Version 1.00, and to Microsoft BASIC Compiler Versions 6.00,
+and 6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS Version
+7.00 for MS-DOS and MS OS/2.
+
+----------------
+
+The following are the only two forms of output from BASIC that can be
+redirected to a file:
+
+1. Output from the standard PRINT statement
+
+2. Output from the PRINT #Num, statement, where #Num is the "CONS:"
+   device OPENed for output (OPEN "CONS:" FOR OUTPUT AS #Num)
+
+Also, if you are testing a program inside the editor environment in
+QB.EXE from QuickBASIC Version 4.00, 4.00b, or 4.50, QBX.EXE from
+BASIC PDS 7.00, or in QBI.EXE from QuickBASIC Interpreter (Academic Edition)
+Version 1.00, you can redirect the output of all programs run in the
+environment, as follows:
+
+   QB  &gt; LPT1
+   QBX &gt; LPT1
+or
+   QBI &gt; LPT1
+
+The QB, QBX, or QBI editor environment will behave normally, but
+output from the BASIC program running in the environment will be
+redirected to the printer. You can also redirect to a file on disk
+as follows:
+
+   QB  &gt; myfile.dat
+   QBX &gt; myfile.dat
+or
+   QBI &gt; myfile.dat
+
+The screen output obtained by opening the "SCRN:" FOR OUTPUT AS #Num2,
+and executing the statement PRINT #Num2 can't be redirected to a file.
+
+The following is an example of redirecting the output of a QuickBASIC
+program to a file:
+
+Code Example
+------------
+
+OPEN "CONS:" FOR OUTPUT AS #1
+OPEN "SCRN:" FOR OUTPUT AS #2
+
+PRINT "This is a regular print"
+PRINT #2, "This is a print to scrn:"
+PRINT "This is a regular print"
+PRINT #1, "This is a print to cons:"
+
+CLOSE #1
+CLOSE #2
+END
+
+Once the program is compiled, you can redirect the output to a file by
+executing the following line at the DOS prompt:
+
+   EXEName &gt; OutputFileName
+
+When this is executed, the OutputFileName will contain the following:
+
+   This is a regular print
+   This is a regular print
+   This is a print to cons:
+
+And the screen will contain the following:
+
+   This is a print to scrn:
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

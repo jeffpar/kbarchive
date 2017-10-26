@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133428: PC DirSync: Information on the REQTRANS.GLB Transaction File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133428: PC DirSync: Information on the REQTRANS.GLB Transaction File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133428/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133428/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133428/","publisher":null,"image":null,"headline":"Q133428: PC DirSync: Information on the REQTRANS.GLB Transaction File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133428-pc-dirsync-information-on-the-reqtransglb-transaction-file">Q133428: PC DirSync: Information on the REQTRANS.GLB Transaction File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133428
+Product(s): Microsoft Mail For PC Networks
+Version(s): WINDOWS:3.2,3.2a,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 07-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail for PC Networks, versions 3.2, 3.2a, 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+REQTRANS.GLB is the directory synchronization (Dir-Sync) transaction file that
+contains the transactions from that postoffice. Each transaction has a
+transaction number or sync number associated with it.
+
+MORE INFORMATION
+================
+
+When you run REQMAIN -t, a requestor sends out the following:
+
+- A status message with an attachment. The header on the status line reads
+
+  Status report from NET/PO
+
+  The attachment that goes with this message is the DSSERVER.LOG from the
+  requestor postoffice. The information from this log is used to update the
+  CENTRAL.LOG on the Dir-Sync server (this is why the information in the
+  CENTRAL.LOG is always a day behind).
+
+- If there are updates, another message is sent out with an attachment. The
+  attachment contains actual transactions. The header from the message reads
+
+  REQTX R=x(was y)....z sent
+
+  The x is the sync number of the last transaction being sent (picked up from
+  REQTRANS.GLB). The y is the last acknowledged number picked up from
+  REQCONF.GLB. The z is the number of actual transactions being sent this
+  cycle, thus, x=y+z.
+
+Having transactions in the REQTRANS.GLB alone does not mean that there are
+updates to be sent.
+
+If there are transactions in the REQTRANS.GLB with transaction numbers higher
+than the last confirmed REQSYNC number (recorded in REQCONF.GLB), it means that
+there are updates to be sent.
+
+If there are transactions in the REQTRANS.GLB with transaction numbers lower than
+the last confirmed REQSYNC number (recorded in REQCONF.GLB), they are not deemed
+to be new updates because, according to the REQCONF.GLB, these transactions were
+sent and even acknowledged by the Dir- Sync server. Typically, this is when you
+would get a "No Updates to Send" message even when there are updates.
+
+Initially, there is a zero byte REQTRANS.GLB. As users are added to Dir- Sync,
+the transactions are added to REQTRANS.GLB starting with transaction numbers 1,
+2 and so on. If the updates are sent to the server and acknowledged by the
+server, the requestor processes the acknowledgment during T3, when REQMAIN -r is
+run. The REQCONF.GLB is updated, and all transactions in the REQTRANS.GLB with
+sequence numbers below the number in the acknowledgment are discarded. A 49 byte
+REQTRANS.GLB file is left, and all it contains is the last confirmed REQSYNC
+number.
+
+Additional query words: 3.20 3.20a 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a kbMailPCN350
+Version           : WINDOWS:3.2,3.2a,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

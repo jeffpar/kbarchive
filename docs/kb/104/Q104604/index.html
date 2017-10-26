@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104604: SST WD7000 FAAST SCSI Cards and Windows NT | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104604: SST WD7000 FAAST SCSI Cards and Windows NT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104604/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104604/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104604/","publisher":null,"image":null,"headline":"Q104604: SST WD7000 FAAST SCSI Cards and Windows NT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104604-sst-wd7000-faast-scsi-cards-and-windows-nt">Q104604: SST WD7000 FAAST SCSI Cards and Windows NT</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104604
+Product(s): Microsoft Windows NT
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kbhw kbHardware
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+Windows NT does not provide drivers for the Columbia Data Products SST
+WD7000-FAAST and WD7000-FAAST2 ultra high-speed SCSI controller cards.
+However, Columbia Data has made available an upgraded BIOS called SST
+IV version 1.0 which has support for Windows NT and OS/2 2.x. This is
+an $85.00 upgrade and is only available through Columbia Data
+Products.
+
+If the BIOS on the card is 3.36 or greater, another alternative is to
+use the beta driver available for these cards found on Columbia Data's
+technical support BBS.
+
+The Columbia Data Products products included here are manufactured by
+a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding these products' performance or reliability, nor
+does Microsoft support any of these drivers or cards at this time.
+
+Columbia Data Products can be reached at the following:
+
+  Columbia Data Products, Inc.
+  1070B Ranier Dr.
+  Altamonte Springs, FL 32714-2584
+
+  Technical Support      (407)869-6700  10:00 A.M. - 6:00 P.M. EST, M-F
+  Technical Support BBS  (407)862-4724
+  Fax                    (407)862-4725
+
+Features of the 7000FAST2 Card
+------------------------------
+
+- Supports up to seven devices on a single controller card--up to fourteen on
+  two controllers
+
+- Intelligent Z-80 CPU channel control
+
+- Built-in floppy controller
+
+- WD33C93A SBIC for SCSI interface
+
+- First-party high-speed bus-mastering DMA data transfers
+
+- Up to 16-megabyte (MB) block-size transfers
+
+- 16-byte FIFO on AT bus for sustained data rate performance
+
+- Up to 4.0 MB per second SCSI synchronous data transfer rate
+
+- Up to 2.0 MB per second SCSI asynchronous data transfer rate
+
+- Up to 5.3 MB per second host transfer rate
+
+- Bus arbitration including disconnect and reconnect
+
+- Standard and extended SCSI commands
+
+- Supports full SCSI command set (SCSI I &amp; II)
+
+- Single +5V power supply
+
+- On-board controller diagnostics
+
+- AT card form factor
+
+- Supports up to 64 logical devices
+
+- Linked SCSI commands
+
+Host Interface
+--------------
+
+- 16 bit, bidirectional AT bus
+
+- 62-pin card edge connector
+
+- 38-pin card edge connector
+
+SCSI Interface
+--------------
+
+- 9-bit, bidirectional SCSI bus
+
+- 50-pin SCSI controller
+
+- Internal -50 pin header
+
+- External -50 pin D style
+
+- 20 foot maximum (6 meters) drive cable
+
+Default Addressing
+------------------
+
+DRQ Address      -   6
+DACK Address     -   6
+IRQ Address      -  15
+I/O Port Address - 350h
+IOS ROM Address - Variable (C800h - DC00h)
+
+Additional query words: prodnt FAST
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

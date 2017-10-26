@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q118675: PC Ext: Large Mail Message Fails with Windows NT and MMTA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q118675: PC Ext: Large Mail Message Fails with Windows NT and MMTA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/118/Q118675/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/118/Q118675/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/118/Q118675/","publisher":null,"image":null,"headline":"Q118675: PC Ext: Large Mail Message Fails with Windows NT and MMTA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q118675-pc-ext-large-mail-message-fails-with-windows-nt-and-mmta">Q118675: PC Ext: Large Mail Message Fails with Windows NT and MMTA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q118675
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 29-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Multitasking MTA, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the version 3.2 Microsoft Mail Multitasking Message Transfer Agent
+(MMTA) with Windows NT and Microsoft's NetWare Client Services, mail sometimes
+may not transfer on some large messages. The SYSTEM.LOG file will contain an
+entry similar to the following:
+
+  System log entry on: 04-21-94 17:15
+  External program has detected a mail problem.
+  Failure queuing diagnostic data back to sender due to:
+
+  External program has detected a mail problem.
+
+Message data:
+
+    From: NETWORK/POSTOFFICE/*SPECIAL
+    Date: 04-21-94
+    Time: 17:09
+    Subject: Downloaded Profs Names file for POSTOFFICE
+
+  [005] Mail retry count exceeded sending to:
+
+  NETWORK /USERNAME
+
+  [018] Message was not sent due to missing attachment.
+
+  The Windows NT event log will display the following message:
+
+  The description for Event ID ( 8007 ) in Source ( NwRdr ) could not be found.
+  It contains the following insertion string(s): \Device\NwRdr, POSTOFFICE."
+
+CAUSE
+=====
+
+The Event ID (8007) is a time-out error. The MaxBurstSize registry entry for the
+NetWare client services must be set to zero (0) to eliminate this problem.
+
+RESOLUTION
+==========
+
+You can set the MaxBurstSize entry in the Windows NT registry by running
+REGEDT32.EXE and creating or editing the MaxBurstSize entry in the following
+location:
+
+  HKEY_LOCAL_MACHINE
+       SYSTEM
+            CurrentControlSet
+                  Service
+                      NwcWorkstation
+                           Parameters
+
+From this location, do the following if the MaxBurstSize does not already exist:
+
+1. From the Edit menu, choose Add Value.
+
+2. In the Value Name field, type "MaxBurstSize" (without the quotation marks).
+
+3. The default data type is REG_SZ. Change it to "REG_DWORD" (without the
+  quotation marks).
+
+4. Change the value of the key to "0" (without the quotation marks).
+
+If MaxBurstSize does already exist, ensure the REG_DWORD value is set to "0"
+(without the quotation marks).
+
+MORE INFORMATION
+================
+
+The full text of the Event Id 8007 error is the following:
+
+  Event Id 8007: The Microsoft client service for Netware redirector has timed
+  out a request to &lt;NetWare_server_name&gt;.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailMMTA320
+Version           : :3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

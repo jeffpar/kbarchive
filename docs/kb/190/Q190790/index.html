@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190790: BUG: Circular Dependency Error After Breaking Compatibility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190790: BUG: Circular Dependency Error After Breaking Compatibility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190790/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190790/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190790/","publisher":null,"image":null,"headline":"Q190790: BUG: Circular Dependency Error After Breaking Compatibility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190790-bug-circular-dependency-error-after-breaking-compatibility">Q190790: BUG: Circular Dependency Error After Breaking Compatibility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190790
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After breaking and restoring binary compatibility of an ActiveX control that is
+hosted by another ActiveX control in the same Visual Basic project, the
+following error occurs:
+
+  Circular dependencies between modules
+
+This error occurs whenever you open the hosting control. In addition, the hosted
+control is replaced by a picture box. Any attempt to add the hosted control back
+to the hosting control generates the above error again.
+
+RESOLUTION
+==========
+
+Take the following steps to resolve this issue:
+
+1. Remove the hosted control (.ctl) from the project.
+
+2. Save and close the project.
+
+3. Reopen the project and add the hosted control (.ctl) back to the project by
+  selecting Add Control from the Project menu.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX Control project in Visual Basic. UserControl1 is created
+  by default.
+
+2. From the Project menu, click Add User Control.
+
+3. In the Add User Control dialog box, double-click User Control. This will
+  create UserControl2.
+
+4. In the Project Explorer window, right-click on UserControl2 and click View
+  Code.
+
+5. Enter the following code in UserControl2:
+
+        Event Test()
+
+6. Close both the designer and code windows for UserControl2.
+
+7. From the Toolbox window, place Usercontrol2 on UserControl1.
+
+8. On the File menu, click Make Project1.ocx to compile the project.
+
+9. On the Project menu, click Project1 Properties, and then click the Components
+  tab.
+
+10. Under Version Compatibility, select Binary Compatibility and click OK.
+
+11. Close both UserControl designer windows, if open.
+
+12. In the Project Explorer, right-click on UserControl2 and click View Code.
+
+13. Comment out the following line of code, entered in step 5:
+
+        Event Test()
+
+14. Open UserControl1's designer. The following incompatibility error occurs:
+
+  The "Test" event exists in the version-compatible component, but not in the
+  current project.
+
+  Click Cancel to continue past this error.
+
+15. A second error will occur:
+
+  Error loading "c:\windows\temp\vbc2e4.tmp", a control could not be loaded due
+  to load error. Continue?
+
+  Click No to continue past this error.
+
+  NOTE: The path shown in the above error may vary due to varying temporary
+  file names.
+
+16. Remove the comment on the Event Test line in UserControl2; this should
+  restore compatibility.
+
+17. Open UserControl1's designer.
+
+RESULT: The error "Circular dependencies between modules" is received followed by
+the same message in step 15. If you select Yes to continue loading, then
+Usercontrol1 opens with a picture box instead of Usercontrol2. If you delete the
+Picture Box and attempt to add back UserControl2 to UserControl1, the above
+error will be shown again.
+
+Additional query words: kbDSupport kbDSS kbCtrl kbVBp600bug kbCtrlCreate kbVBp
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

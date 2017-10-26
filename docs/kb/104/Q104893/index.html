@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q104893: FIX: Using /4Yb and /Ox Together Is Not Recommended | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q104893: FIX: Using /4Yb and /Ox Together Is Not Recommended" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/104/Q104893/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/104/Q104893/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/104/Q104893/","publisher":null,"image":null,"headline":"Q104893: FIX: Using /4Yb and /Ox Together Is Not Recommended","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q104893-fix-using-4yb-and-ox-together-is-not-recommended">Q104893: FIX: Using /4Yb and /Ox Together Is Not Recommended</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q104893
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-MAR-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running a program compiled with both full optimization (/Ox) and extended error
+handling ($DEBUG or /4Yb) may cause several problems including: incorrect
+results, incorrect range errors, or hanging.
+
+RESOLUTION
+==========
+
+To avoid these problems, remove either the full optimization compiler switch
+(/Ox) or the extended run-time debugging option (/4Yb or $DEBUG).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation for MS-DOS,
+version 1.0. This problem has been resolved with FORTRAN Powerstation
+maintenance release version 1.0a for MS-DOS.
+
+FORTRAN PowerStation version 1.0 can be differentiated from the maintenance
+release version 1.0a by invoking the linker. Typing "link32 | more" (without the
+quotation marks) from \f32\BIN directory will show version 2.8 for FORTRAN
+PowerStation version 1.0, and it will show 1.0f for the maintenance release
+version 1.0a.
+
+MORE INFORMATION
+================
+
+The following code generates an incorrect range error if compiled with both /Ox
+and /4Yb, but runs correctly if either /Ox or /4Yb is not used:
+
+  1
+  test.for(6) : run-time error F6096: $DEBUG
+  - array subscript expression out of range
+  Execution traceback:
+  from main program in test.for(6)
+
+This is not a problem in Microsoft FORTRAN 5.1 or earlier.
+
+Sample Code
+-----------
+
+  C Compiler options required: /Ox and /4Yb
+          INTEGER IA(4)
+          data IA / 1, 2, 3, 4 / 
+          DO 20 I=1,2
+            write(*,*) i
+            WRITE(*,*) (IA(J),J=(I-1)*2+1,4)
+  20      CONTINUE
+          end
+
+Additional query words: 1.00 buglist1.00 fixlist1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

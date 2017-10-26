@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q165685: INFO: Visual C++ 5.0 Readme, MFC and Other Libraries | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q165685: INFO: Visual C++ 5.0 Readme, MFC and Other Libraries" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/165/Q165685/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/165/Q165685/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/165/Q165685/","publisher":null,"image":null,"headline":"Q165685: INFO: Visual C++ 5.0 Readme, MFC and Other Libraries","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q165685-info-visual-c-50-readme-mfc-and-other-libraries">Q165685: INFO: Visual C++ 5.0 Readme, MFC and Other Libraries</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q165685
+Product(s): Microsoft C Compiler
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbGenInfo kbVC kbArtTypeINF
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MFC and Other Libraries
+-----------------------
+
+  Coexistence of Visual C++ 4.2 and 5.0
+
+  Visual Basic 5.0 Controls in Visual C++ 5.0
+
+  Incomplete Documentation for CWnd::RepositionBars
+
+  I/O Streams Now Exist in the "std" Namespace
+
+  Example Code in the CArchive::MapObject Member Function is Incorrect
+
+  ATL Registrar Fails to Insert Keys Starting with Curly Brace
+
+  Some ATL Object Stock Properties Must Be Initialized Before Use in Visual
+  Basic 5.0 Containers
+
+  ATL.DLL Replaces REGISTER.DLL
+
+  ATL Font and Picture Properties May Require Changes to the IDL File
+
+  ON_WM_SETTINGCHANGE
+
+  TN024 Doesn't Identify all Custom MFC Resource Types
+
+  MFC DAO Classes will Work with Either DAO 3.0 or DAO 3.5
+
+  Using DAO with a Secure Database
+
+  The Hewlett Packard Standard Template Library
+
+  Incorrect Information in the "_spawn, _wspawn Functions" Topic
+
+  MFC Loads Wrong Resource in Extension .dll
+
+  Call _findclose After Using _findfirst or _findnext
+
+  _wgetcwd and _getcwd
+
+  _wtmpnam
+
+  Incorrect Use of TZ Environment Variable
+
+  Using the _popen Function with a Windows Program
+
+  C Runtime _expand Function Returns NULL Upon Failure
+
+  Format Specification Not Supported in COleDateTime and COleDateTimeSpan
+
+  Classes
+
+  IsBadHugeReadPtr, IsBadHugeWritePtr, IsBadStringPtr, IsBadWritePtr, and Access
+  Violations
+
+  ATL IPropertyPageImpl::Help is implemented incorrectly.
+
+MORE INFORMATION
+================
+
+Coexistence of Visual C++ 4.2 and 5.0
+-------------------------------------
+
+The Visual C++ 4.2 and 5.0 library DLLs have the same names. Setup for Visual C++
+5.0 will overwrite your 4.2 system files. Debug information has changed in
+Visual C++ 5.0 and is not compatible with the Visual C++ 4.2 debugger. Because
+of this, the Visual C++ 4.2 debugger will not be able to step into the source
+code of the Microsoft Visual C++ 5.0 MFC or CRT debug libraries. This issue will
+not affect Visual C++ 4.0 or 4.1 users and does not affect your ability to debug
+your own source code.
+
+Affected files:
+
+  Standard C Run-Time
+
+  MSVCRTd.DLL
+  MSVCRTd.PDB
+  MSVCIRTd.DLL
+  MSVCIRTd.PDB
+
+  MFC
+
+  MFC42d.DLL
+  MFC42d.PDB
+  MFC42u.pdb
+  MFC42ud.dll
+  MFC42ud.pdb
+  MFCd42d.dll
+  MFCd42d.pdb
+  MFCd42ud.dll
+  MFCd42ud.pdb
+  MFCn42d.dll
+  MFCn42d.pdb
+  MFCn42ud.dll
+  MFCn42ud.pdb
+  MFCo42d.dll
+  MFCo42d.pdb
+  MFCo42ud.dll
+  MFCo42ud.pdb
+
+Workarounds
+
+- The best solution is to run Visual C++ 4.2 and 5.0 on separate machines, or
+  operating system installations on the same machine.
+
+- You can use the Visual C++ 5.0 debugger to debug into the MFC or CRT DLLs.
+  *You can copy the relevant files, listed above, into your Visual C++ 4.2
+  project's Debug directory.
+
+These files are on your Visual C++ 4.2 compact disc in the \MSDEV\DEBUG
+directory.
+
+None of these workarounds allows debugging of Release Builds with 4.2 debugger.
+
+NOTE: to MFC42b (patch) customers. If you need to recreate the patched MFC DLLs,
+we have provided the MFC4.2B patch (MFC42B.EXE ) in the \DevStudio\Vc\Debug
+directory. This directory is on the disc that includes "Microsoft Visual C++" on
+the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual
+Studio.) You can patch the MFC files by copying them into a temporary directory
+and running the patch on them. You can ignore the errors about missing files.
+
+The Visual C++ 5.0 files will not otherwise affect the operation of Visual C++
+4.2. Under no circumstances do we recommend replacing the new versions of
+mfc42.dll, mfc42u.dll, and msvcrt.dll with the versions from 4.2 as you may
+break other applications dependent on the new versions of these DLL's. The
+Visual C++ 5.0 Developer Studio will not run with the Visual C++ 4.2 version of
+mfc42.dll.
+
+Visual Basic 5.0 Controls in Visual C++ 5.0
+-------------------------------------------
+
+Below is a list of Visual Basic 5.0 controls provided for your use. Please be
+aware that many of these controls contain interfaces and behavior that are
+supported only in Visual Basic 5.0 container applications and are not supported
+by MFC container applications.
+
+If you have any problems with these controls, please report them at the Web site
+http://www.microsoft.com/VisualCSupport/report/.
+
+Please note that the controls that shipped with Visual C++ 4.0 and have
+replacements in Visual C++ 5.0 will no longer be supported by Microsoft's
+technical support.
+
+The Visual C++ Component Gallery displays all the controls registered on your
+system. Many of your controls may not have been tested with Visual C++. If you
+encounter problems with a non-Microsoft control, we encourage you to check with
+the control vendor for more information.
+
+Filename       Description
+------------------------------------------------------------------------
+
+COMCT232.OCX   UpDown and Animation controls, version 5.0
+COMCTL32.OCX   Common Controls (treeview, imageview, etc.), version 5.0
+COMDLG32.OCX   Common Dialogs control (File.Open, Choose.Color, etc.),
+              version 5.0
+DBGRID32.OCX   DataBound Grid control
+DBLIST32.OCX   DataBound Combo and List controls, version 5.0
+MCI32.OCX      Multimedia control, version 5.0
+MSCOMM32.OCX   Communications control, version 5.0
+MSMASK32.OCX   Masked edit control, version 5.0
+MSFLXGRD.OCX   Read-only DataBound Grid control, version 5.0
+MSINET.OCX     FTP and HTTP controls, version 5.0
+MSMAPI32.OCX   MAPI Message and Session controls, version 5.0
+MSRDC20.OCX    RemoteData controlMSWINSCK.OCXWinSock control (FTP and HTTP
+              protocols only), version 5.0
+PICCLP32.OCX   PictureClip control, version 5.0
+RICHTX32.OCX   Rich Edit control, version 5.0
+SYSINFO.OCX    System Information control, version 5.0
+TABCTL32.OCX   Tabbed Dialog control, version 5.0
+
+Incomplete Documentation for CWnd::RepositionBars
+-------------------------------------------------
+
+The documentation for CWnd::RepositionBars is missing the parameter bStretch. The
+prototype should read:
+
+     void RepositionBars( UINT nIDFirst, UINT nIDLast, UINT nIDLeftOver, UINT
+     nFlag = reposDefault, LPRECT lpRectParam = NULL, LPCRECT lpRectClient =
+     NULL, BOOL bStretch = TRUE );
+
+bStretch indicates whether the bar should be stretched to the size of the frame.
+
+I/O Streams Now Exist in the "std" Namespace
+--------------------------------------------
+
+Per Section 27 of the new ANSI draft, streams are now defined within the std
+namespace. This means that any program that uses I/O streams must reference the
+streams within the scope of std.
+
+For example, the following sample will fail to compile, because cout is defined
+in the std namespace, unless the third line is uncommented:
+
+     // file Test.cpp
+
+     #include &lt;iostream&gt;
+
+     // using namespace std;
+
+     void main()
+
+     {
+         cout &lt;&lt; "Hello ANSI Committee" &lt;&lt; endl;
+     }
+
+     // end file Test.cpp
+
+Example Code in the CArchive::MapObject Member Function is Incorrect
+--------------------------------------------------------------------
+
+In the section SubItem.cpp of the code, nonexistent overloaded CDocument
+operators (&lt;&lt; and &gt;&gt;) are used in two places. This code section
+should be replaced with the following code:
+
+     //SubItem.cpp
+
+     void CSubItem::Serialize(CArchive&amp; ar)
+
+     {
+     if (ar.IsStoring( ) )
+     {
+
+     // will serialize a reference
+     // to the "mapped" document pointer
+
+     ar &lt;&lt; (CObject *)m_pDoc;
+     ar &lt;&lt; m_l;
+     }
+
+     else
+
+     {
+
+     // Will load a reference to
+     // the "mapped" document pointer
+
+     ar &gt;&gt; (CObject *&amp;) m_pDoc;
+     ar &gt;&gt; m_l;
+     }
+     }
+
+ATL Registrar Fails to Insert Keys Starting with Curly Brace
+------------------------------------------------------------
+
+The ATL registrar does not correctly interpret two consecutive key names that
+both start with a curly brace ({). For example, the second "Implemented
+Categories" key name fails in the following registry script (rgs):
+
+     HKCR
+     {
+        NoRemove CLSID
+        {
+           ForceRemove {333C7BC4-460F-11D0-BC04-0080C7055A83} = s 'Tabular
+              Data Control'
+           {
+              'Implemented Categories'
+              {
+                 '{7DD95801-9882-11CF-9FA9-00AA006C42C4}'
+                 '{7DD95802-9882-11CF-9FA9-00AA006C42C4}'
+              }
+           }
+        }
+     }
+
+Workaround
+
+Break out each key name as shown in this example:
+
+     HKCR
+     {
+        NoRemove CLSID
+        {
+           ForceRemove {333C7BC4-460F-11D0-BC04-0080C7055A83} = s 'Tabular
+              Data Control'
+           {
+              'Implemented Categories'
+              {
+                 '{7DD95801-9882-11CF-9FA9-00AA006C42C4}'
+              }
+              'Implemented Categories'
+              {
+                 '{7DD95802-9882-11CF-9FA9-00AA006C42C4}'
+              }
+           }
+        }
+     }
+
+Some ATL Object Stock Properties Must Be Initialized Before Use in Visual
+Basic 5.0 Containers
+----------------------------------------------------------------------------------------------
+
+Visual Basic 5.0 expects all stock properties that are IUnknown-based (such as
+MousePointer, Picture, and Font) to contain a valid IUnknown pointer. Otherwise,
+Visual Basic will never allow the user to change the property. For example, if
+you have a stock Font property that you never fill in with a valid Font, Visual
+Basic will display the Font as being NULL, and will never allow the user to
+select a new Font through the Visual Basic property window.
+
+To avoid this problem, make sure your IUnknown-based stock properties have a
+valid value other than NULL before inserting your object into a Visual Basic
+container. There are many ways to do this, for example, get the ambient Font off
+the container and use that as your stock Font property.
+
+ATL.DLL Replaces REGISTER.DLL
+-----------------------------
+
+Register.dll, which shipped with Visual C++ Beta 1, has been replaced with
+Atl.dll. To use the new DLL with your existing ATL projects you will simply need
+to rebuild them.
+
+ATL Font and Picture Properties May Require Changes to the IDL File
+
+To make a Font or Picture property work in some containers, the interface
+definition must be declared within the library section of the .idl file. You
+must cut the interface declarations from the .idl file and paste them into the
+library section of the same file. In addition, the import line for ocidl.idl
+needs to be commented out.
+
+For example, the ATL Object Wizard generates the following .idl file for MyCtl
+with a Font property:
+
+     import "oaidl.idl";
+     import "ocidl.idl";
+
+        [
+           object,
+           uuid(8697BC4C-7A38-11D0-9A38-00A0C90DC94B),
+           dual,
+           helpstring("IMyCtl Interface"),
+           pointer_default(unique)
+        ]
+        interface IMyCtl : IDispatch
+        {
+           [propputref, id(DISPID_FONT)]
+           HRESULT Font([in]IFontDisp* pFont);
+           [propput, id(DISPID_FONT)]
+           HRESULT Font([in]IFontDisp* pFont);
+           [propget, id(DISPID_FONT)]
+           HRESULT Font([out, retval]IFontDisp** ppFont);
+        };
+     [
+        uuid(8697BC3F-7A38-11D0-9A38-00A0C90DC94B),
+        version(1.0),
+        helpstring("MyControl 1.0 Type Library")
+     ]
+     library MYCONTROLLib
+     {
+        importlib("stdole32.tlb");
+        importlib("stdole2.tlb");
+
+        [
+           uuid(8697BC4D-7A38-11D0-9A38-00A0C90DC94B),
+           helpstring("MyCtl Class")
+        ]
+        coclass MyCtl
+        {
+           [default] interface IMyCtl;
+        };
+     };
+
+The corrected version of this .idl file is shown below:
+
+     import "oaidl.idl";
+     // import "ocidl.idl";
+
+     [
+        uuid(8697BC3F-7A38-11D0-9A38-00A0C90DC94B),
+        version(1.0),
+        helpstring("MyControl 1.0 Type Library")
+     ]
+     library MYCONTROLLib
+     {
+        importlib("stdole32.tlb");
+        importlib("stdole2.tlb");
+
+        [
+           object,
+           uuid(8697BC4C-7A38-11D0-9A38-00A0C90DC94B),
+           dual,
+           helpstring("IMyCtl Interface"),
+           pointer_default(unique)
+        ]
+        interface IMyCtl : IDispatch
+        {
+           [propputref, id(DISPID_FONT)]
+           HRESULT Font([in]IFontDisp* pFont);
+           [propput, id(DISPID_FONT)]
+           HRESULT Font([in]IFontDisp* pFont);
+           [propget, id(DISPID_FONT)]
+           HRESULT Font([out, retval]IFontDisp** ppFont);
+        };
+
+        [
+           uuid(8697BC4D-7A38-11D0-9A38-00A0C90DC94B),
+           helpstring("MyCtl Class")
+        ]
+        coclass MyCtl
+        {
+           [default] interface IMyCtl;
+        };
+     };
+
+ON_WM_SETTINGCHANGE
+-------------------
+
+The windows message map entry ON_WM_SETTINGCHANGE corresponds to the MFC member
+function with this prototype:
+
+     afx_msg void OnSettingChange( UINT uFlags, LPCTSTR lpszSection );
+
+Parameters
+
+uFlags
+
+When the system sends the message as a result of a SystemParametersInfo call,
+this parameter is a flag that indicates the system parameter that was changed.
+For a list of values, see the SystemParametersInfo function in the Win32
+Programmers Reference. When an application sends the message, this parameter
+must be 0.
+
+lpszSection
+
+Points to a string that specifies the name of the section that has changed. (The
+string does not include the square brackets that enclose the section name.)
+
+Remarks
+
+The framework calls OnSettingChange for all top-level windows when the Win32
+SystemParametersInfo function changes a system-wide setting. An application
+should send the message to all top-level windows when it makes changes to system
+parameters, and Windows will send the message if the user changes settings via
+the Control Panel.
+
+The ON_WM_SETTINGCHANGE message is similar to the ON_WM_WININICHANGE message,
+with the following difference:
+
+- Use ON_WM_SETTINGCHANGE when running Windows NT 4.0 or newer, or under
+  Windows 95.
+
+- Use ON_WININICHANGE when running Windows NT 3.51 or older. This message is
+  now obsolete.
+
+You should have only one of these macros in your message map. To write a program
+that works for both Windows 95 and Windows NT 4.0, write a handler for
+ON_WM_SETTINGCHANGE. Under Windows NT 3.51, your handler will be called by
+uFlags will always be zero.
+
+See Also SystemParametersInfo and WM_SETTINGCHANGE in the Win32 Programmers
+Reference, and ON_WININICHANGE and CWnd::OnWinIniChange in the MFC Reference.
+
+TN024 Doesn't Identify all Custom MFC Resource Types
+----------------------------------------------------
+
+MFC Technote TN024, titled "MFC-Defined Messages and Resources", states that:
+
+  There is currently only one MFC private resource format defined, RT_DLGINIT.
+
+This statement should read:
+
+  Currently, MFC defines two private resource formats: RT_DLGINIT and
+  RT_TOOLBAR.
+
+The Default Toolbar Supplied by Appwizard is Based on an rt_toolbar Custom
+Resource that was Introduced in MFC 4.0.
+-------------------------------------------------------------------------------------------------------------------
+
+You can edit this resource with the toolbar editor.
+
+MFC DAO Classes will Work with Either DAO 3.0 or DAO 3.5
+--------------------------------------------------------
+
+However the MFC DAO classes have not been designed to take advantage of any new
+DAO 3.5 features, including ODBCDirect.
+
+Using DAO with a Secure Database
+--------------------------------
+
+If you are writing a program that uses Data Access Objects (DAO) to access a
+secure database, you will receive an error if you use CDaoRecordset because MFC
+does not prompt the user for a user name and password. To find out how to call
+DAO directly to implement DAO security features, such as changing user
+passwords, see Technical Note 054 in the Microsoft Foundation Class Reference.
+The title is "TN054: Calling DAO Directly While Using MFC DAO Classes."
+
+The Hewlett Packard Standard Template Library
+---------------------------------------------
+
+Visual C++ 5.0 ships a complete, fully supported C++ Standard Run-time Library,
+that includes the Microsoft implementation of the Standard Template Library.
+
+Setup Installs the New C++ Standard Run-time Library with the Other
+Run-time Libraries
+--------------------------------------------------------------------------------------
+
+Note The Hewlett Packard Standard Template Library that shipped with Visual C++
+4.0 does not ship with Visual C++ 5.0. Microsoft does not provide technical
+support for the Hewlett Packard version of the Standard Template Library.
+
+Incorrect Information in the " _spawn, _wspawn Functions" Topic
+---------------------------------------------------------------
+
+In the topic titled "_spawn, _wspawn Functions", a table in the Remarks section
+has wrong information. The table is labeled "Generic-Text Routine Mappings." The
+far right column of the table, which has the heading "_UNICODE Defined," should
+list all the _wspawn functions instead of the spawn functions. When the _UNICODE
+flag is defined, the wide-character (_w) versions of the functions are used.
+
+MFC Loads Wrong Resource in Extension .dll
+------------------------------------------
+
+The wrong resource is loaded when CBitmap::LoadBitmap, CMenu::LoadMenu,
+CString::LoadString or any other MFC resource-loading function is called in an
+MFC extension .dll (AFXDLL). In some cases, a resource in the application is
+loaded instead of the appropriate resource in the extension .dll.
+
+When a resource in the application or another extension .dll gets loaded instead
+of a resource in the current extension .dll, the cause is usually improper
+resource management. An MFC application and all of its extension DLLs are one
+global chain of resources. If there are multiple resources with the same ID
+value in any of the modules in the chain, MFC uses the first resource it finds
+with the desired ID value. The first resource is often found in the application,
+which is searched before any of the extension DLLs.
+
+Change the ID values of any conflicting resources so they are unique in both the
+application and any extension .dll that the application uses. These values are
+stored in the Resource.h file for each project and can be modified in the
+Resource Editor or in Developer Studio with the Resource Symbols command.
+
+To ensure that modules do not use conflicting symbol values, reserve different
+ranges of ID values for each module in the 1 through 0x6FFFF range. Set the
+_APS_NEXT_RESOURCE_VALUE definition in the Resource.h file for each module to
+the low end of that module's range before creating any resources. The Resource
+Editor uses this symbol to determine the ID value of the next resource created.
+
+This technique is documented in MFC Technical Note 35 and in the DLLHUSK sample
+included with Visual C++.
+
+In .exe or .dll files that link to MFC dynamically, MFC resource-loading
+functions call AfxFindResourceHandle to obtain the handle of the module where a
+resource is located. AfxFindResourceHandle searches for resources by type and
+symbol value in:
+
+- The module returned by AfxGetResourceHandle. This is usually the application.
+
+- The extension DLLs through the chain of CdynLinkLibrary objects.
+
+- Any language-specific resource DLLs.
+
+- Any attached MFC system DLLs (for example, MFCxx.dll).
+
+NOTE: Some 16-bit MFC resource loading functions do not call
+AfxFindResourceHandle, but instead use the value returned from
+AfxCurrentResourceHandle.
+
+Each extension .dll creates, initializes, and then passes a CDynLinkLibrary
+object to AfxInitExtensionModule that places the .dll in the resource chain.
+AfxTermExtensionModule removes the .dll from the chain when the .dll is detached
+from the application.
+
+A benefit of this design is that MFC automatically locates a resource for an
+application or extension .dll, even if that resource is located in a distant
+extension .dll or the application itself. All resources in the process are
+chained, so ID values are passed between DLLs and the application and the proper
+resources are loaded. A disadvantage is that there are no duplicate ID values
+between any of the extension DLLs or the application that uses them.
+
+To set the default location where AfxFindResourceHandle first checks for a
+resource, use AfxSetResourceHandle. Because AfxFindResourceHandle first checks
+the handle set by AfxSetResourceHandle, it can be used to circumvent the chain
+and load a resource from one particular .dll or application. The resource handle
+is restored to its original value immediately after loading the resources. The
+current default resource handle is found with AfxGetResourceHandle.
+
+The DLLHUSK sample included with Visual C++ also illustrates this technique. In
+Testdll2.cpp, CListOutputFrame::Create sets the resource handle to the module
+handle stored in the AFX_EXTENSION_MODULE structure extension .dll. This
+structure is initialized with the module handle when it is passed to the
+CDynLinkLibrary constructor in InitTestDLL2.
+
+For information on:
+
+- Extension DLLs, see the MFC Technical Note 33 and the DLLHUSK sample.
+
+- Resource management in projects, see Technical Note 35.
+
+Call _findclose After Using _findfirst or _findnext
+---------------------------------------------------
+
+You must call _findclose after you are finished using either the _findfirst or
+_findnext function. This will free up resources used by these functions in your
+application.
+
+_wgetcwd and _getcwd
+--------------------
+
+The documentation for _getcwd and _wgetcwd should describe the second parameter
+(maxlen) as follows:
+
+  maxlen Maximum length of path in characters- char for _getcwd and wchar_t
+  for _wgetcwd
+
+_wtmpnam
+
+The documentation for _wtmpnam should include the following:
+
+  If string is not NULL, it is assumed to point to an array of at least
+  L_tmpnam characters--or 2*L_tmpnam bytes. The value of L_tmpnam is defined
+  in STDIO.H.
+
+Incorrect Use of TZ Environment Variable
+----------------------------------------
+
+The online documentation for the _tzset function incorrectly defines the time
+bias for the TZ environment variable parameter (tzn) as being the "offset from
+UTC." It should define it as being the "offset from local time to UTC." The
+example for German time zone should be:
+
+     set TZ=GST-1GDT
+
+Using the _popen Function with a Windows Program
+------------------------------------------------
+
+The _popen function, from the C Runtime Library, returns an invalid file handle
+if used in a Windows program which causes the program to hang indefinitely. It
+works properly in a Console application.
+
+To create a Windows application that redirects input and output, read the section
+"Creating a Child Process that Redirects Input and Output" in the Win32 SDK.
+
+C Runtime _expand Function Returns NULL Upon Failure
+----------------------------------------------------
+
+The _expand function returns NULL when an error is detected during operation.
+This may happen when there is sufficient memory. The current documentation
+implies that failures occur only when there is insufficient memory to expand the
+memory block. This is incorrect. For example, when _expand is used to shrink a
+memory block, it might detect a corruption in the small block heap or an invalid
+block pointer, and returns NULL.
+
+Format Specification Not Supported in COleDateTime and COleDateTimeSpan
+
+Classes
+-------
+
+The description of the member function Format in both the COleDateTime and the
+COleDateTimeSpan erroneously states that you can use the %D format specification
+to display the number of days. Neither COleDateTime::Format nor
+COleDateTimeSpan::Format support that format specification.
+
+IsBadHugeReadPtr, IsBadHugeWritePtr, IsBadStringPtr, IsBadWritePtr, and
+Access Violations
+-----------------------------------------------------------------------------------------
+
+A handled exception will occur inside of these functions if the specified memory
+region is not accessible to the process when these functions attempt to access
+it. If the code is being executed under a debugger, and the debugger is
+configured to get first chance at handling exceptions, the debugger will trap
+the access violation and stop program execution. At this point you can simply
+continue execution in the debugger and these functions will return the
+appropriate value. This behavior can help you find potential access violations
+in your code.
+
+ATL IPropertyPageImpl::Help is implemented incorrectly.
+-------------------------------------------------------
+
+In most cases, if you are using property pages, you should override
+IPropertyPage::Help and return E_NOTIMPL. This will cause the container to use
+information returned from GetPageInfo. You can also provide your own alternative
+implementation of this function if necessary.
+
+======================================================================
+Keywords          : kbGenInfo kbVC kbArtTypeINF 
+Technology        : kbAudDeveloper kbMFC
+Version           : 5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

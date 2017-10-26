@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158085: STL Sample for the list::assign Functions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158085: STL Sample for the list::assign Functions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158085/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158085/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158085/","publisher":null,"image":null,"headline":"Q158085: STL Sample for the list::assign Functions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158085-stl-sample-for-the-listassign-functions">Q158085: STL Sample for the list::assign Functions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158085
+Product(s): Microsoft C Compiler
+Version(s): 4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+Last Modified: 04-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Standard C++ Library, used with:
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the list::assign, list::empty, and
+list::erase STL functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+     &lt;list&gt;
+
+Prototype
+---------
+
+     void assign(const_iterator first, const_iterator last);
+     void assign(size_type n, const T&amp; x = T());
+     iterator erase(iterator it);
+     iterator erase(iterator first, iterator last);
+     bool empty() const;
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The first member function replaces the sequence controlled by *this with the
+sequence [first, last). The second member function replaces the sequence
+controlled by *this with a repetition of n elements of value x.
+
+The third member function removes the element of the controlled sequence pointed
+to by it. The fourth member function removes the elements of the controlled
+sequence in the range [first, last). Both return an iterator that designates the
+first element remaining beyond any elements removed, or end() if no such element
+exists.
+
+The last member function returns true for an empty controlled sequence.
+
+Sample Code
+-----------
+
+  ////////////////////////////////////////////////////////////////////// 
+  // 
+  // Compile options needed: -GX
+  // 
+  // assign.cpp :  Shows the various ways to assign and erase elements
+  //               from a list&lt;T&gt;.
+  // 
+  // Functions:
+  // 
+  //    list::assign
+  //    list::empty
+  //    list::erase
+  // 
+  // Written by Andrew Bradnan
+  // Copyright (c) 1996 Microsoft Corporation. All rights reserved.
+  ////////////////////////////////////////////////////////////////////// 
+
+  #include &lt;list&gt;
+  #include &lt;iostream&gt;
+
+  #if _MSC_VER &gt; 1020   // if VC++ version is &gt; 4.2
+     using namespace std;  // std c++ libs implemented in std
+     #endif
+
+  typedef list&lt;int, allocator&lt;int&gt; &gt; LISTINT;
+
+  void main()
+
+  {
+
+      LISTINT listOne;
+      LISTINT listAnother;
+      LISTINT::iterator i;
+
+      // Add some data
+      listOne.push_front (2);
+      listOne.push_front (1);
+      listOne.push_back (3);
+
+      listAnother.push_front(4);
+
+      listAnother.assign(listOne.begin(), listOne.end());
+
+      // 1 2 3
+      for (i = listAnother.begin(); i != listAnother.end(); ++i)
+          cout &lt;&lt; *i &lt;&lt; " ";
+      cout &lt;&lt; endl;
+
+      listAnother.assign(4, 1);
+
+      // 1 1 1 1
+      for (i = listAnother.begin(); i != listAnother.end(); ++i)
+          cout &lt;&lt; *i &lt;&lt; " ";
+      cout &lt;&lt; endl;
+
+      listAnother.erase(listAnother.begin());
+
+      // 1 1 1
+      for (i = listAnother.begin(); i != listAnother.end(); ++i)
+          cout &lt;&lt; *i &lt;&lt; " ";
+      cout &lt;&lt; endl;
+
+      listAnother.erase(listAnother.begin(), listAnother.end());
+      if (listAnother.empty())
+          cout &lt;&lt; "All gone\n";
+
+  }
+
+Program Output is:
+
+1 2 3
+1 1 1 1
+1 1 1
+All gone
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample list::assign list::empty list::erase
+
+======================================================================
+Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

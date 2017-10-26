@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q194517: HOWTO: Use Creatable ADO Recordsets in Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q194517: HOWTO: Use Creatable ADO Recordsets in Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/194/Q194517/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/194/Q194517/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/194/Q194517/","publisher":null,"image":null,"headline":"Q194517: HOWTO: Use Creatable ADO Recordsets in Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q194517-howto-use-creatable-ado-recordsets-in-visual-foxpro">Q194517: HOWTO: Use Creatable ADO Recordsets in Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q194517
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:2.1 SP2,2.6,6.0
+Operating System(s): 
+Keyword(s): kbDatabase kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC210SP2 kbMDAC26
+Last Modified: 21-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+- Microsoft Data Access Components versions 2.1 SP2, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Often, you find a need for temporary storage for data. ADO 2.x enables you to
+create recordsets on the fly for this purpose.
+
+MORE INFORMATION
+================
+
+The following example creates an ADO recordset with an integer, varchar and date
+field, adds two records to it, and displays the contents of all fields in the
+recordset on the desktop:
+
+     * Demonstrates creating a temporary recordset in ADO
+     * Program creates a recordset, adds an integer, varchar
+     * and date field, adds two records, and displays the
+     * contents of all fields on the desktop
+
+     #DEFINE ADUSECLIENT 3
+     #DEFINE ADLOCKBATCHOPTIMISTIC 4
+     #DEFINE ADINTEGER 3
+     #DEFINE ADVARCHAR 200
+     #DEFINE ADDATE 7
+     #DEFINE ADFLDISNULLABLE 0x00000020
+     #DEFINE ADOPENSTATIC   3
+
+     oRecordSet = CREATEOBJECT("ADODB.Recordset")
+
+     WITH oRecordSet
+        * specify client-side cursors
+        .CURSORLOCATION = ADUSECLIENT
+
+        * add 3 fields
+        .FIELDS.APPEND ("Key", ADINTEGER)
+        .FIELDS.APPEND ("Data1", ADVARCHAR, 40, ADFLDISNULLABLE)
+        .FIELDS.APPEND ("Data2", ADDATE)
+
+        * open the recordset
+        .OPEN(,,ADOPENSTATIC, ADLOCKBATCHOPTIMISTIC)
+
+        * add a couple of records
+        .ADDNEW
+        .FIELDS("Key").VALUE = 1
+        .FIELDS("Data1").VALUE = "String1"
+        .FIELDS("Data2").VALUE = DATE()
+
+        .ADDNEW
+        .FIELDS("Key").VALUE = 2
+        .FIELDS("Data1").VALUE = "Another string"
+        .FIELDS("Data2").VALUE = {^1992/01/06}
+     ENDWITH
+
+     * read the records back
+     oRecordSet.Movefirst
+     DO WHILE ! oRecordSet.EOF
+        ? oRecordSet.FIELDS("Key").VALUE, ;
+           oRecordSet.FIELDS("Data1").VALUE, ;
+           oRecordSet.FIELDS("Data2").VALUE
+        oRecordSet.MoveNext
+     ENDDO
+
+Additional query words: kbVFP600 kbDatabase kbActiveX
+
+======================================================================
+Keywords          : kbDatabase kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC210SP2 kbMDAC260 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC210SP2 kbMDAC260 kbVFP600
+Version           : WINDOWS:2.1 SP2,2.6,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

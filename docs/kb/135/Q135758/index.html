@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135758: PRB: Long Field Names Interfere with the Append Command | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135758: PRB: Long Field Names Interfere with the Append Command" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135758/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135758/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135758/","publisher":null,"image":null,"headline":"Q135758: PRB: Long Field Names Interfere with the Append Command","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135758-prb-long-field-names-interfere-with-the-append-command">Q135758: PRB: Long Field Names Interfere with the Append Command</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135758
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you append records from a version 2.x table onto the end of a version 3.0
+table and the version 3.0 table has long field names and is part of a database,
+Visual FoxPro says the records were added, but they weren't.
+
+CAUSE
+=====
+
+The version 3.0 table has long field names. These interfere with the Append
+operation.
+
+WORKAROUND
+==========
+
+The easiest workaround is to rename the long fields to match the field names
+contained in the version 2.x table; then redo the APPEND FROM operation. When it
+finishes, rename the fields in the version 3.0 table back to their original
+names. If you have indexes on your version 3.0 table, Visual FoxPro will object
+to the name change, so you must also temporarily modify your indexes so that the
+field names in the indexes match the field names in the table, or delete the
+indexes.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Code to Demonstrate Behavior
+----------------------------
+
+The following code demonstrates this behavior. To resolve this and allow the
+APPEND FROM command to work, the fields in the Testtab table should be shortened
+to match the field names in the Testtab2 free table.
+
+  *--------------------------------------------------------------------*
+  * Program: APNDTEST.PRG                                              *
+  * Purpose: Demonstrates what happens when adding data from a free    *
+  *          table to a table that has long field names and that is    *
+  *          part of a database.                                       *
+  *--------------------------------------------------------------------*
+  CLEAR
+  CLOSE ALL
+  CLEAR ALL
+  CREATE DATABASE testdbc
+  CREATE TABLE testtab (Cust_First_Name C(15), Cust_Last_Name C(25))
+  CLOSE DATABASE
+  CREATE TABLE testtab2 (Cust_First C(15), Cust_Last C(25))
+  INSERT INTO testtab2 VALUES ("John", "Henry")
+  INSERT INTO testtab2 VALUES ("Ralph", "Willingham")
+  INSERT INTO testtab2 VALUES ("George", "Weatherford")
+  OPEN DATABASE testdbc
+  USE testtab in 0
+  APPEND FROM testtab2
+  BROWSE TITLE "Looking at table TESTTAB - Press ESC to continue!"
+  WAIT WINDOW "Cleaning up test files."
+  CLOSE ALL
+  ERASE testdbc.dbc
+  ERASE testdbc.dbt
+  ERASE testtab.dbf
+  ERASE testtab2.dbf
+
+Additional query words: 3.00 VFoxWin fail
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

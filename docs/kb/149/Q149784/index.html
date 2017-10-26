@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q149784: FIX: LNK2001 Incorrectly Generated for Static Data Member | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q149784: FIX: LNK2001 Incorrectly Generated for Static Data Member" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/149/Q149784/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/149/Q149784/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/149/Q149784/","publisher":null,"image":null,"headline":"Q149784: FIX: LNK2001 Incorrectly Generated for Static Data Member","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q149784-fix-lnk2001-incorrectly-generated-for-static-data-member">Q149784: FIX: LNK2001 Incorrectly Generated for Static Data Member</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q149784
+Product(s): Microsoft C Compiler
+Version(s): 4.00
+Operating System(s): 
+Keyword(s): kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+Last Modified: 30-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When declaring static members of C++ classes, you must initialize the static
+data member. Otherwise the linker generates an unresolved external error
+message. Visual C++ 4.0 incorrectly generates such an unresolved external error
+message if a storage-class specifier (such as __declspec(X)) is used on the
+initialization line of a static data member.
+
+CAUSE
+=====
+
+Storage-class specifiers, such as __declspec(), are only necessary for
+declarations. They are not needed (but are not wrong) otherwise.
+
+RESOLUTION
+==========
+
+Remove the storage-class specifier.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been corrected in Microsoft Visual
+C++ version 4.1.
+
+MORE INFORMATION
+================
+
+Earlier versions of Visual C++ generated the following error when a storage-
+class specifier is used on the initialization line:
+
+  
+
+  C:test.cpp('line') : error C2720: 'idata' : '' storage-class specifier
+                illegal on members
+
+where 'line' is the line of code where the initialization takes place, and
+'idata' is the name of the static data member. Visual C++ no longer generates
+the C2720 error (correctly so). The following sample code demonstrates the
+problem.
+
+Sample Code
+-----------
+
+  /* Compile options needed: none
+  */ 
+
+  #include &lt;iostream.h&gt;
+  #include &lt;stdio.h&gt;
+
+  class A
+  {
+    public:
+      static __declspec(thread) int idata;
+      void test(void);
+  };
+  __declspec(thread) int  A::idata = 2;  // remove this __declspec(thread) to
+                                         // eliminate unresolved external
+  error
+
+  void A::test(void)
+  {
+    cout&lt;&lt;idata;
+  }
+  void main(void)
+  {
+    A theA;
+    theA.test();
+  }
+
+Additional query words: 4.00 lnk2001 lnk1120 L2029 unresolved external LINK
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 4.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

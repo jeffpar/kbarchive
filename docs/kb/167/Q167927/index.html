@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167927: PRB: Building ATL Service Project Does Not Register the Service | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167927: PRB: Building ATL Service Project Does Not Register the Service" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167927/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167927/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167927/","publisher":null,"image":null,"headline":"Q167927: PRB: Building ATL Service Project Does Not Register the Service","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167927-prb-building-atl-service-project-does-not-register-the-service">Q167927: PRB: Building ATL Service Project Does Not Register the Service</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167927
+Product(s): Microsoft C Compiler
+Version(s): 2.0,2.1,3.0
+Operating System(s): 
+Keyword(s): kbATL200 kbATL210 kbLocalSvr kbRegistry kbServer kbService kbVC600 kbGrpDSMFCATL
+Last Modified: 13-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Active Template Library (ATL), versions 2.0, 2.1, 3.0 
+- Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build an ATL service, using the AppWizard, the COM objects are
+registered, but the service does not appear in the Control Panel's list of
+services.
+
+CAUSE
+=====
+
+The Wizard creates a custom build rule for self-registration. The rule uses the
+/RegServer switch instead of the /Service switch.
+
+RESOLUTION
+==========
+
+The Wizard adds the following custom build command:
+
+     "$(TargetPath)" /RegServer
+
+Change the build command to:
+
+     "$(TargetPath)" /Service
+
+To change the command, bring up the Project Settings dialog box, click the Custom
+Build tab, and edit the command in "Build command(s):". NOTE: If using Visual
+Studio.NET, the Wizard adds the following "Post-Build Events" command line under
+the "Buils Events" property page:
+
+  "$(TargetPath)" /RegServer
+
+Change the build command to:
+
+  "$(TargetPath)" /Service
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Because debugging local servers is easier than debugging services, most people
+prefer the default to be /RegServer. Once you have completed testing the EXE as
+a local server, you can either change the custom build step or run the EXE with
+/Service.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Chuck Bell,
+Microsoft Corporation.
+
+Additional query words: kbatl200 kbatl210 kbatl300 kbvc500 kbvc600
+
+======================================================================
+Keywords          : kbATL200 kbATL210 kbLocalSvr kbRegistry kbServer kbService kbVC600 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch kbATL200 kbATL300 kbATL210 kbVCNET
+Version           : :2.0,2.1,3.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

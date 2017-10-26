@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142836: HOWTO: RDO Prepared Statements/Search Crit. to Fill Listbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142836: HOWTO: RDO Prepared Statements/Search Crit. to Fill Listbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142836/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142836/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142836/","publisher":null,"image":null,"headline":"Q142836: HOWTO: RDO Prepared Statements/Search Crit. to Fill Listbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142836-howto-rdo-prepared-statementssearch-crit-to-fill-listbox">Q142836: HOWTO: RDO Prepared Statements/Search Crit. to Fill Listbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142836
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVBDB
+Last Modified: 13-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+RDO does not have a FindFirst or a Seek method. This sample uses an RDO prepared
+statement to provide this kind of functionality. The code included below allows
+the user to type in search criteria in a text box, click a command button and
+the list box will be filled with any records that satisfy the search criteria.
+You may also want to use a stored procedure once you know that your query is
+working the way that you want it to. Keep in mind that RDO is available in
+Visual Basic 4.0 32-bit and Visual Basic 5.0 Enterprise editions only.
+
+MORE INFORMATION
+================
+
+Step-By-Step Example
+--------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default. Add a
+  CommandButton, a text box and a list control. Accept the default names for
+  all.
+
+2. Make sure a reference to the Microsoft Remote Data Object library has been
+  established. In Visual Basic 4.0, you can establish the reference by clicking
+  References from the Tools menu. In Visual Basic 5.0, click References from
+  the Project menu.
+
+3. Add the following code to the General Declarations section of Form1:
+
+      Option Explicit
+      Dim ps As rdoPreparedStatement
+      Dim conn As rdoConnection
+      Dim rs As rdoResultset
+
+      Private Sub Form_Load()
+          With rdoEnvironments(0)
+            .CursorDriver = rdUseOdbc
+      Set conn = .OpenConnection("", rdDriverNoPrompt, False, _
+      "driver={SQL Server};server=Myserv;uid=MyUID;pwd=Mypwd;database=pubs")
+       End With
+          Set ps = conn.CreatePreparedStatement("", " select au_lname " &amp; _
+            "from authors where au_lname like ?")
+      End Sub
+
+      Private Sub Command1_Click()
+        list1.Clear
+        ps.rdoParameters(0) = Text1.Text
+        If rs Is Nothing Then
+            Set rs = ps.OpenResultset(rdOpenKeyset)
+        Else
+            rs.Requery
+        End If
+        While Not rs.EOF
+            list1.AddItem rs!au_lname
+            rs.MoveNext
+        Wend
+        End Sub
+
+      Private Sub Form_Unload(Cancel As Integer)
+        rs.Close
+        conn.Close
+      End Sub
+
+4. Make sure you have an appropriate ODBC data source, user ID, and password,
+  then press the F5 key to run the program. Type your search criteria in Text1
+  and click the CommandButton.
+
+Additional query words: kbVBp400 kbVBp500 vkbVBp600 kbdse kbDSupport kbVBp kbRDO
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVB500 kbVB600 kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

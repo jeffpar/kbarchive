@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q131265: Use Exclamation Mark (!) Notation for Precise Referencing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q131265: Use Exclamation Mark (!) Notation for Precise Referencing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/131/Q131265/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/131/Q131265/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/131/Q131265/","publisher":null,"image":null,"headline":"Q131265: Use Exclamation Mark (!) Notation for Precise Referencing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q131265-use-exclamation-mark--notation-for-precise-referencing">Q131265: Use Exclamation Mark (!) Notation for Precise Referencing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q131265
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Use the exclamation mark (!) notation to reference tables in databases (.DBC
+files). Use it to reference tables that have the same names but that exist in
+different databases, and use it to make code more readable. Its main purpose is
+to guarantee the opening of a specific table.
+
+MORE INFORMATION
+================
+
+Here is the syntax:
+
+     USE &lt;cDatabase_name&gt;!&lt;cTable_name&gt;
+
+NOTE: Do not put spaces on either side of the exclamation mark.
+
+Step-by-Step Example
+--------------------
+
+1. Create the following directory structure:
+
+  C:\MAIN
+  C:\MAIN\ONE
+  C:\MAIN\TWO
+
+  This can be done Visual FoxPro by issuing these commands:
+
+  CD C:\ 
+  MD MAIN
+  CD C:\MAIN
+  MD ONE
+  MD TWO
+
+2. Issue the following commands in the Command Window:
+
+     CD C:\MAIN\ONE
+     CREATE TABLE tb_mytbl (fld1 c(10))
+     CD C:\MAIN\TWO
+     CREATE TABLE tb_mytbl (fld1 c(10))
+     USE
+     CD C:\MAIN
+     CREATE DATABASE db_one
+     ADD TABLE C:\MAIN\ONE\tb_mytbl
+     CREATE DATABASE db_two
+     ADD TABLE C:\MAIN\ONE\tb_mytbl
+     SET DATABASE TO db_one
+
+  These commands set up a scenario where a database named db_one contains a
+  table named tb_mytbl, which is located in the C:\MAIN\ONE directory. Another
+  database named db_two contains a different table named tb_mytbl, which is
+  located in the C:\MAIN\TWO directory.
+
+  The issue is to open the tb_mytbl table in the db_two database. The current
+  database is db_one, so you can't use this command:
+
+        USE tb_mytbl
+
+  It would open the table in db_one located in C:\MAIN\ONE.
+
+3. Open the tb_mytbl table in the db_two database by using this command:
+
+     USE db_two!tb_mytbl
+
+The exclamation mark (!) notation works in the same manner for long table names,
+and it makes code more readable. The notation makes it clear exactly which
+database holds the table of interest. It is especially useful in SQL-SELECT
+statements.
+
+Additional query words: VFoxWin !-symbol bang symbol
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127941: How to Create and Manipulate Multiple-Column List Boxes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127941: How to Create and Manipulate Multiple-Column List Boxes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127941/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127941/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127941/","publisher":null,"image":null,"headline":"Q127941: How to Create and Manipulate Multiple-Column List Boxes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127941-how-to-create-and-manipulate-multiple-column-list-boxes">Q127941: How to Create and Manipulate Multiple-Column List Boxes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127941
+Product(s): Microsoft FoxPro
+Version(s): 3.00
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses properties of multiple-column list or combo boxes, and
+describes how to create and manipulate them. All the tasks described require
+modifying the value of a property.
+
+MORE INFORMATION
+================
+
+To build a multiple-column list or combo box, modify the ColumnCount property of
+the object to the number of columns that will be on the list.
+
+Aligning Columns
+----------------
+
+Columns are aligned in a list box if one of the following conditions is met:
+
+- The width of each column is explicitly written in the ColumnWidth property.
+
+  -or-
+
+- The font of the list is a monospaced font such as Courier New or Terminal. To
+  change the font of the list, modify the FontName property.
+
+Retrieving the Value of a List Item
+-----------------------------------
+
+Use the LIST property. When used in conjunction with the LISTITEMID, the LIST
+property can specify the value of a selected item in a row of columns. For
+example:
+
+     List(Combo1.ListitemId,2)
+
+Hiding a Column
+---------------
+
+To hide a column in a list, set the width of this column to 0 in the COLUMNWIDTH
+property. The COLUMNWIDTH property accepts a comma-delimited list of items, as
+in this example:
+
+     CboCombo1.columnwidth="10,0,12"
+
+Linking the Value of the Combo Box to Column N Only
+---------------------------------------------------
+
+Use the BOUNDCOLUMN property to link the value of a combo box to a column. The
+BOUNDCOLUMN property determines which column is bound to the value of a list box
+or combo box.
+
+Linking the Selection to a Value that Is Not Displayed
+------------------------------------------------------
+
+To link the selection to a value not displayed, combine the previous two methods.
+The following steps illustrate this method using the Form Designer:
+
+1. Create a form.
+
+2. Right-click, and open the Data Environment. Add the CUSTOMER table from the
+  SAMPLES\DATA directory.
+
+3. Select the combo box control from the Form Controls toolbar, and drag it to
+  the form. A combo box is created.
+
+4. In the Property Sheet, select the Combo1 object from the Object drop-down,
+  and modify the following properties:
+
+     BoundColumn = 2
+     ColumnCount = 3
+     Columnwidth = 50,0,30  &amp;&amp;Under program control, Columnwidth= "50,0,30"
+     RowSourceType= 6- Fields
+     RowSource =  Customer.contact,cust_id,company
+
+5. Save the form as TEST, and run it. Only two columns are visible when the
+  combo box is opened.
+
+6. To verify that the value of the combo box is bound to the second column, type
+  the following in the Debug window:
+
+     TEST.Combo1.Value
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : 3.00
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

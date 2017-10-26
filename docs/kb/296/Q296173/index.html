@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q296173: HOWTO: Use ADOX to Create OLE Object Field in an Access Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q296173: HOWTO: Use ADOX to Create OLE Object Field in an Access Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/296/Q296173/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/296/Q296173/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/296/Q296173/","publisher":null,"image":null,"headline":"Q296173: HOWTO: Use ADOX to Create OLE Object Field in an Access Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q296173-howto-use-adox-to-create-ole-object-field-in-an-access-database">Q296173: HOWTO: Use ADOX to Create OLE Object Field in an Access Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q296173
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Operating System(s): 
+Keyword(s): kbAccess kbDatabase kbMDAC kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbATM kbmdac270
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- ActiveX Data Objects (ADO), versions 2.1, 2.1 SP1, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use ActiveX Data Objects Extensibility (ADOX) to
+create an OLE Object field in a Microsoft Access Database (.mdb file). You must
+use the adLongVarBinary constant to create the field. You do not have to specify
+a field size in the field definition.
+
+MORE INFORMATION
+================
+
+Step-by-Step Example
+--------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. From the Project menu, click References. From the list of available
+  components, click "Microsoft ADO Ext. 2.1 for DDL and Security".
+
+3. Add a CommandButton control to Form1.
+
+4. Paste the following code onto the Declarations section of Form1:
+
+  Private Sub Command2_Click()
+      Set cat = New ADOX.Catalog
+      Set tbl = New ADOX.Table
+     cat.ActiveConnection = _
+        "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=d:\nwind2.mdb;"
+     tbl.Name = "OleObjTable"
+     tbl.Columns.Append "Column1", adInteger
+     tbl.Columns.Append "Column2", adInteger
+     tbl.Columns.Append "Column3", adVarWChar, 50
+     ' Please note adLongVarBinary = 205
+     tbl.Columns.Append "MyOleObject", adLongVarBinary
+     cat.Tables.Append tbl
+  End Sub
+
+5. Modify the cat.ActiveConnection assignment to point to a valid Microsoft
+  Access Database file.
+
+6. Run the project, and click Command1. Notice that a table named OleObjTable is
+  created in the database. When you view the table in Design Mode, the Column3
+  field definition is displayed as OLE Object.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+  Q266302 PRB: ADOX Error -2147217859 "Type Is Invalid" When You Append a Table
+  to a Catalog
+
+For more information, see the "Defining and Retrieving a Database's Schema"
+section in the following MSDN article:
+
+  Migrating from DAO to ADO
+  http://msdn.microsoft.com/library/techart/daotoadoupdate.htm
+
+Additional query words: oleobject blob binary MDB bitmap dbLongBinary
+
+======================================================================
+Keywords          : kbAccess kbDatabase kbMDAC kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbATM kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210 kbADO210sp1 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbADO270
+Version           : :2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

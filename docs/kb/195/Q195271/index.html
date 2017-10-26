@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195271: Dev Int’l Software: Unicode to ANSI Conversion May Fail | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195271: Dev Int’l Software: Unicode to ANSI Conversion May Fail" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195271/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195271/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195271/","publisher":null,"image":null,"headline":"Q195271: Dev Int’l Software: Unicode to ANSI Conversion May Fail","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195271-dev-intl-software-unicode-to-ansi-conversion-may-fail">Q195271: Dev Int’l Software: Unicode to ANSI Conversion May Fail</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195271
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocerr
+Last Modified: 08-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Developing International Software for Windows 95 and Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Page 82 explains simple round-trip mappings between Unicode and various national
+standards. However, round-trip mapping of some characters in Japanese Code Page
+932 and Traditional Chinese Code Page 950 may fail.
+
+CAUSE
+=====
+
+Some characters in these code pages have more than one code point. If ANSI to
+Unicode conversion is performed on these characters, they are converted into the
+same code point in Unicode. When the Unicode to ANSI conversion is performed,
+the Unicode code point is converted to a single ANSI point.
+
+For example, in Japanese code page 932, 0x878a and 0xfa58 represent the same
+character. When these points are converted from ANSI to Unicode, they are
+converted to 0x3231. When 0x3231 is converted back to ANSI, it will be converted
+to either 0x878a or 0xfa58. (Microsoft Windows NT converts 0x331 to 0x878a.)
+Therefore, converting 0xfa58 to Unicode and back to ANSI changes the value to
+0x878a.
+
+STATUS
+======
+
+Microsoft Press has confirmed this to be a problem in "Developing International
+Software for Windows 95 and Windows NT."
+
+MORE INFORMATION
+================
+
+The Affected Mappings
+---------------------
+
+CodePage 932: 398 non-round-trip mappings
+
+0x8790 -&gt; U+2252 -&gt; 0x81e0 Approximately Equal To Or The Image Of
+0x8791 -&gt; U+2261 -&gt; 0x81df Identical To
+0x8792 -&gt; U+222b -&gt; 0x81e7 Integral
+0x8795 -&gt; U+221a -&gt; 0x81e3 Square Root
+0x8796 -&gt; U+22a5 -&gt; 0x81db Up Tack
+0x8797 -&gt; U+2220 -&gt; 0x81da Angle
+0x879a -&gt; U+2235 -&gt; 0x81e6 Because
+0x879b -&gt; U+2229 -&gt; 0x81bf Intersection
+0x879c -&gt; U+222a -&gt; 0x81be Union
+0xed40 -&gt; U+7e8a -&gt; 0xfa5c CJK Unified Ideograph
+0xed41 -&gt; U+891c -&gt; 0xfa5d CJK Unified Ideograph
+0xed42 -&gt; U+9348 -&gt; 0xfa5e CJK Unified Ideograph
+0xed43 -&gt; U+9288 -&gt; 0xfa5f CJK Unified Ideograph
+0xed44 -&gt; U+84dc -&gt; 0xfa60 CJK Unified Ideograph
+0xed45 -&gt; U+4fc9 -&gt; 0xfa61 CJK Unified Ideograph
+0xed46 -&gt; U+70bb -&gt; 0xfa62 CJK Unified Ideograph
+0xed47 -&gt; U+6631 -&gt; 0xfa63 CJK Unified Ideograph
+0xed48 -&gt; U+68c8 -&gt; 0xfa64 CJK Unified Ideograph
+0xed49 -&gt; U+92f9 -&gt; 0xfa65 CJK Unified Ideograph
+0xed4a -&gt; U+66fb -&gt; 0xfa66 CJK Unified Ideograph
+0xed4b -&gt; U+5f45 -&gt; 0xfa67 CJK Unified Ideograph
+0xed4c -&gt; U+4e28 -&gt; 0xfa68 CJK Unified Ideograph
+0xed4d -&gt; U+4ee1 -&gt; 0xfa69 CJK Unified Ideograph
+0xed4e -&gt; U+4efc -&gt; 0xfa6a CJK Unified Ideograph
+0xed4f -&gt; U+4f00 -&gt; 0xfa6b CJK Unified Ideograph
+0xed50 -&gt; U+4f03 -&gt; 0xfa6c CJK Unified Ideograph
+0xed51 -&gt; U+4f39 -&gt; 0xfa6d CJK Unified Ideograph
+0xed52 -&gt; U+4f56 -&gt; 0xfa6e CJK Unified Ideograph
+0xed53 -&gt; U+4f92 -&gt; 0xfa6f CJK Unified Ideograph
+0xed54 -&gt; U+4f8a -&gt; 0xfa70 CJK Unified Ideograph
+0xed55 -&gt; U+4f9a -&gt; 0xfa71 CJK Unified Ideograph
+0xed56 -&gt; U+4f94 -&gt; 0xfa72 CJK Unified Ideograph
+0xed57 -&gt; U+4fcd -&gt; 0xfa73 CJK Unified Ideograph
+0xed58 -&gt; U+5040 -&gt; 0xfa74 CJK Unified Ideograph
+0xed59 -&gt; U+5022 -&gt; 0xfa75 CJK Unified Ideograph
+0xed5a -&gt; U+4fff -&gt; 0xfa76 CJK Unified Ideograph
+0xed5b -&gt; U+501e -&gt; 0xfa77 CJK Unified Ideograph
+0xed5c -&gt; U+5046 -&gt; 0xfa78 CJK Unified Ideograph
+0xed5d -&gt; U+5070 -&gt; 0xfa79 CJK Unified Ideograph
+0xed5e -&gt; U+5042 -&gt; 0xfa7a CJK Unified Ideograph
+0xed5f -&gt; U+5094 -&gt; 0xfa7b CJK Unified Ideograph
+0xed60 -&gt; U+50f4 -&gt; 0xfa7c CJK Unified Ideograph
+0xed61 -&gt; U+50d8 -&gt; 0xfa7d CJK Unified Ideograph
+0xed62 -&gt; U+514a -&gt; 0xfa7e CJK Unified Ideograph
+0xed63 -&gt; U+5164 -&gt; 0xfa80 CJK Unified Ideograph
+0xed64 -&gt; U+519d -&gt; 0xfa81 CJK Unified Ideograph
+0xed65 -&gt; U+51be -&gt; 0xfa82 CJK Unified Ideograph
+0xed66 -&gt; U+51ec -&gt; 0xfa83 CJK Unified Ideograph
+0xed67 -&gt; U+5215 -&gt; 0xfa84 CJK Unified Ideograph
+0xed68 -&gt; U+529c -&gt; 0xfa85 CJK Unified Ideograph
+0xed69 -&gt; U+52a6 -&gt; 0xfa86 CJK Unified Ideograph
+0xed6a -&gt; U+52c0 -&gt; 0xfa87 CJK Unified Ideograph
+0xed6b -&gt; U+52db -&gt; 0xfa88 CJK Unified Ideograph
+0xed6c -&gt; U+5300 -&gt; 0xfa89 CJK Unified Ideograph
+0xed6d -&gt; U+5307 -&gt; 0xfa8a CJK Unified Ideograph
+0xed6e -&gt; U+5324 -&gt; 0xfa8b CJK Unified Ideograph
+0xed6f -&gt; U+5372 -&gt; 0xfa8c CJK Unified Ideograph
+0xed70 -&gt; U+5393 -&gt; 0xfa8d CJK Unified Ideograph
+0xed71 -&gt; U+53b2 -&gt; 0xfa8e CJK Unified Ideograph
+0xed72 -&gt; U+53dd -&gt; 0xfa8f CJK Unified Ideograph
+0xed73 -&gt; U+fa0e -&gt; 0xfa90 CJK compatibility Ideograph
+0xed74 -&gt; U+549c -&gt; 0xfa91 CJK Unified Ideograph
+0xed75 -&gt; U+548a -&gt; 0xfa92 CJK Unified Ideograph
+0xed76 -&gt; U+54a9 -&gt; 0xfa93 CJK Unified Ideograph
+0xed77 -&gt; U+54ff -&gt; 0xfa94 CJK Unified Ideograph
+0xed78 -&gt; U+5586 -&gt; 0xfa95 CJK Unified Ideograph
+0xed79 -&gt; U+5759 -&gt; 0xfa96 CJK Unified Ideograph
+0xed7a -&gt; U+5765 -&gt; 0xfa97 CJK Unified Ideograph
+0xed7b -&gt; U+57ac -&gt; 0xfa98 CJK Unified Ideograph
+0xed7c -&gt; U+57c8 -&gt; 0xfa99 CJK Unified Ideograph
+0xed7d -&gt; U+57c7 -&gt; 0xfa9a CJK Unified Ideograph
+0xed7e -&gt; U+fa0f -&gt; 0xfa9b CJK compatibility Ideograph
+0xed80 -&gt; U+fa10 -&gt; 0xfa9c CJK compatibility Ideograph
+0xed81 -&gt; U+589e -&gt; 0xfa9d CJK Unified Ideograph
+0xed82 -&gt; U+58b2 -&gt; 0xfa9e CJK Unified Ideograph
+0xed83 -&gt; U+590b -&gt; 0xfa9f CJK Unified Ideograph
+0xed84 -&gt; U+5953 -&gt; 0xfaa0 CJK Unified Ideograph
+0xed85 -&gt; U+595b -&gt; 0xfaa1 CJK Unified Ideograph
+0xed86 -&gt; U+595d -&gt; 0xfaa2 CJK Unified Ideograph
+0xed87 -&gt; U+5963 -&gt; 0xfaa3 CJK Unified Ideograph
+0xed88 -&gt; U+59a4 -&gt; 0xfaa4 CJK Unified Ideograph
+0xed89 -&gt; U+59ba -&gt; 0xfaa5 CJK Unified Ideograph
+0xed8a -&gt; U+5b56 -&gt; 0xfaa6 CJK Unified Ideograph
+0xed8b -&gt; U+5bc0 -&gt; 0xfaa7 CJK Unified Ideograph
+0xed8c -&gt; U+752f -&gt; 0xfaa8 CJK Unified Ideograph
+0xed8d -&gt; U+5bd8 -&gt; 0xfaa9 CJK Unified Ideograph
+0xed8e -&gt; U+5bec -&gt; 0xfaaa CJK Unified Ideograph
+0xed8f -&gt; U+5c1e -&gt; 0xfaab CJK Unified Ideograph
+0xed90 -&gt; U+5ca6 -&gt; 0xfaac CJK Unified Ideograph
+0xed91 -&gt; U+5cba -&gt; 0xfaad CJK Unified Ideograph
+0xed92 -&gt; U+5cf5 -&gt; 0xfaae CJK Unified Ideograph
+0xed93 -&gt; U+5d27 -&gt; 0xfaaf CJK Unified Ideograph
+0xed94 -&gt; U+5d53 -&gt; 0xfab0 CJK Unified Ideograph
+0xed95 -&gt; U+fa11 -&gt; 0xfab1 CJK compatibility Ideograph
+0xed96 -&gt; U+5d42 -&gt; 0xfab2 CJK Unified Ideograph
+0xed97 -&gt; U+5d6d -&gt; 0xfab3 CJK Unified Ideograph
+0xed98 -&gt; U+5db8 -&gt; 0xfab4 CJK Unified Ideograph
+0xed99 -&gt; U+5db9 -&gt; 0xfab5 CJK Unified Ideograph
+0xed9a -&gt; U+5dd0 -&gt; 0xfab6 CJK Unified Ideograph
+0xed9b -&gt; U+5f21 -&gt; 0xfab7 CJK Unified Ideograph
+0xed9c -&gt; U+5f34 -&gt; 0xfab8 CJK Unified Ideograph
+0xed9d -&gt; U+5f67 -&gt; 0xfab9 CJK Unified Ideograph
+0xed9e -&gt; U+5fb7 -&gt; 0xfaba CJK Unified Ideograph
+0xed9f -&gt; U+5fde -&gt; 0xfabb CJK Unified Ideograph
+0xeda0 -&gt; U+605d -&gt; 0xfabc CJK Unified Ideograph
+0xeda1 -&gt; U+6085 -&gt; 0xfabd CJK Unified Ideograph
+0xeda2 -&gt; U+608a -&gt; 0xfabe CJK Unified Ideograph
+0xeda3 -&gt; U+60de -&gt; 0xfabf CJK Unified Ideograph
+0xeda4 -&gt; U+60d5 -&gt; 0xfac0 CJK Unified Ideograph
+0xeda5 -&gt; U+6120 -&gt; 0xfac1 CJK Unified Ideograph
+0xeda6 -&gt; U+60f2 -&gt; 0xfac2 CJK Unified Ideograph
+0xeda7 -&gt; U+6111 -&gt; 0xfac3 CJK Unified Ideograph
+0xeda8 -&gt; U+6137 -&gt; 0xfac4 CJK Unified Ideograph
+0xeda9 -&gt; U+6130 -&gt; 0xfac5 CJK Unified Ideograph
+0xedaa -&gt; U+6198 -&gt; 0xfac6 CJK Unified Ideograph
+0xedab -&gt; U+6213 -&gt; 0xfac7 CJK Unified Ideograph
+0xedac -&gt; U+62a6 -&gt; 0xfac8 CJK Unified Ideograph
+0xedad -&gt; U+63f5 -&gt; 0xfac9 CJK Unified Ideograph
+0xedae -&gt; U+6460 -&gt; 0xfaca CJK Unified Ideograph
+0xedaf -&gt; U+649d -&gt; 0xfacb CJK Unified Ideograph
+0xedb0 -&gt; U+64ce -&gt; 0xfacc CJK Unified Ideograph
+0xedb1 -&gt; U+654e -&gt; 0xfacd CJK Unified Ideograph
+0xedb2 -&gt; U+6600 -&gt; 0xface CJK Unified Ideograph
+0xedb3 -&gt; U+6615 -&gt; 0xfacf CJK Unified Ideograph
+0xedb4 -&gt; U+663b -&gt; 0xfad0 CJK Unified Ideograph
+0xedb5 -&gt; U+6609 -&gt; 0xfad1 CJK Unified Ideograph
+0xedb6 -&gt; U+662e -&gt; 0xfad2 CJK Unified Ideograph
+0xedb7 -&gt; U+661e -&gt; 0xfad3 CJK Unified Ideograph
+0xedb8 -&gt; U+6624 -&gt; 0xfad4 CJK Unified Ideograph
+0xedb9 -&gt; U+6665 -&gt; 0xfad5 CJK Unified Ideograph
+0xedba -&gt; U+6657 -&gt; 0xfad6 CJK Unified Ideograph
+0xedbb -&gt; U+6659 -&gt; 0xfad7 CJK Unified Ideograph
+0xedbc -&gt; U+fa12 -&gt; 0xfad8 CJK compatibility Ideograph
+0xedbd -&gt; U+6673 -&gt; 0xfad9 CJK Unified Ideograph
+0xedbe -&gt; U+6699 -&gt; 0xfada CJK Unified Ideograph
+0xedbf -&gt; U+66a0 -&gt; 0xfadb CJK Unified Ideograph
+0xedc0 -&gt; U+66b2 -&gt; 0xfadc CJK Unified Ideograph
+0xedc1 -&gt; U+66bf -&gt; 0xfadd CJK Unified Ideograph
+0xedc2 -&gt; U+66fa -&gt; 0xfade CJK Unified Ideograph
+0xedc3 -&gt; U+670e -&gt; 0xfadf CJK Unified Ideograph
+0xedc4 -&gt; U+f929 -&gt; 0xfae0 CJK compatibility Ideograph
+0xedc5 -&gt; U+6766 -&gt; 0xfae1 CJK Unified Ideograph
+0xedc6 -&gt; U+67bb -&gt; 0xfae2 CJK Unified Ideograph
+0xedc7 -&gt; U+6852 -&gt; 0xfae3 CJK Unified Ideograph
+0xedc8 -&gt; U+67c0 -&gt; 0xfae4 CJK Unified Ideograph
+0xedc9 -&gt; U+6801 -&gt; 0xfae5 CJK Unified Ideograph
+0xedca -&gt; U+6844 -&gt; 0xfae6 CJK Unified Ideograph
+0xedcb -&gt; U+68cf -&gt; 0xfae7 CJK Unified Ideograph
+0xedcc -&gt; U+fa13 -&gt; 0xfae8 CJK compatibility Ideograph
+0xedcd -&gt; U+6968 -&gt; 0xfae9 CJK Unified Ideograph
+0xedce -&gt; U+fa14 -&gt; 0xfaea CJK compatibility Ideograph
+0xedcf -&gt; U+6998 -&gt; 0xfaeb CJK Unified Ideograph
+0xedd0 -&gt; U+69e2 -&gt; 0xfaec CJK Unified Ideograph
+0xedd1 -&gt; U+6a30 -&gt; 0xfaed CJK Unified Ideograph
+0xedd2 -&gt; U+6a6b -&gt; 0xfaee CJK Unified Ideograph
+0xedd3 -&gt; U+6a46 -&gt; 0xfaef CJK Unified Ideograph
+0xedd4 -&gt; U+6a73 -&gt; 0xfaf0 CJK Unified Ideograph
+0xedd5 -&gt; U+6a7e -&gt; 0xfaf1 CJK Unified Ideograph
+0xedd6 -&gt; U+6ae2 -&gt; 0xfaf2 CJK Unified Ideograph
+0xedd7 -&gt; U+6ae4 -&gt; 0xfaf3 CJK Unified Ideograph
+0xedd8 -&gt; U+6bd6 -&gt; 0xfaf4 CJK Unified Ideograph
+0xedd9 -&gt; U+6c3f -&gt; 0xfaf5 CJK Unified Ideograph
+0xedda -&gt; U+6c5c -&gt; 0xfaf6 CJK Unified Ideograph
+0xeddb -&gt; U+6c86 -&gt; 0xfaf7 CJK Unified Ideograph
+0xeddc -&gt; U+6c6f -&gt; 0xfaf8 CJK Unified Ideograph
+0xeddd -&gt; U+6cda -&gt; 0xfaf9 CJK Unified Ideograph
+0xedde -&gt; U+6d04 -&gt; 0xfafa CJK Unified Ideograph
+0xeddf -&gt; U+6d87 -&gt; 0xfafb CJK Unified Ideograph
+0xede0 -&gt; U+6d6f -&gt; 0xfafc CJK Unified Ideograph
+0xede1 -&gt; U+6d96 -&gt; 0xfb40 CJK Unified Ideograph
+0xede2 -&gt; U+6dac -&gt; 0xfb41 CJK Unified Ideograph
+0xede3 -&gt; U+6dcf -&gt; 0xfb42 CJK Unified Ideograph
+0xede4 -&gt; U+6df8 -&gt; 0xfb43 CJK Unified Ideograph
+0xede5 -&gt; U+6df2 -&gt; 0xfb44 CJK Unified Ideograph
+0xede6 -&gt; U+6dfc -&gt; 0xfb45 CJK Unified Ideograph
+0xede7 -&gt; U+6e39 -&gt; 0xfb46 CJK Unified Ideograph
+0xede8 -&gt; U+6e5c -&gt; 0xfb47 CJK Unified Ideograph
+0xede9 -&gt; U+6e27 -&gt; 0xfb48 CJK Unified Ideograph
+0xedea -&gt; U+6e3c -&gt; 0xfb49 CJK Unified Ideograph
+0xedeb -&gt; U+6ebf -&gt; 0xfb4a CJK Unified Ideograph
+0xedec -&gt; U+6f88 -&gt; 0xfb4b CJK Unified Ideograph
+0xeded -&gt; U+6fb5 -&gt; 0xfb4c CJK Unified Ideograph
+0xedee -&gt; U+6ff5 -&gt; 0xfb4d CJK Unified Ideograph
+0xedef -&gt; U+7005 -&gt; 0xfb4e CJK Unified Ideograph
+0xedf0 -&gt; U+7007 -&gt; 0xfb4f CJK Unified Ideograph
+0xedf1 -&gt; U+7028 -&gt; 0xfb50 CJK Unified Ideograph
+0xedf2 -&gt; U+7085 -&gt; 0xfb51 CJK Unified Ideograph
+0xedf3 -&gt; U+70ab -&gt; 0xfb52 CJK Unified Ideograph
+0xedf4 -&gt; U+710f -&gt; 0xfb53 CJK Unified Ideograph
+0xedf5 -&gt; U+7104 -&gt; 0xfb54 CJK Unified Ideograph
+0xedf6 -&gt; U+715c -&gt; 0xfb55 CJK Unified Ideograph
+0xedf7 -&gt; U+7146 -&gt; 0xfb56 CJK Unified Ideograph
+0xedf8 -&gt; U+7147 -&gt; 0xfb57 CJK Unified Ideograph
+0xedf9 -&gt; U+fa15 -&gt; 0xfb58 CJK compatibility Ideograph
+0xedfa -&gt; U+71c1 -&gt; 0xfb59 CJK Unified Ideograph
+0xedfb -&gt; U+71fe -&gt; 0xfb5a CJK Unified Ideograph
+0xedfc -&gt; U+72b1 -&gt; 0xfb5b CJK Unified Ideograph
+0xee40 -&gt; U+72be -&gt; 0xfb5c CJK Unified Ideograph
+0xee41 -&gt; U+7324 -&gt; 0xfb5d CJK Unified Ideograph
+0xee42 -&gt; U+fa16 -&gt; 0xfb5e CJK compatibility Ideograph
+0xee43 -&gt; U+7377 -&gt; 0xfb5f CJK Unified Ideograph
+0xee44 -&gt; U+73bd -&gt; 0xfb60 CJK Unified Ideograph
+0xee45 -&gt; U+73c9 -&gt; 0xfb61 CJK Unified Ideograph
+0xee46 -&gt; U+73d6 -&gt; 0xfb62 CJK Unified Ideograph
+0xee47 -&gt; U+73e3 -&gt; 0xfb63 CJK Unified Ideograph
+0xee48 -&gt; U+73d2 -&gt; 0xfb64 CJK Unified Ideograph
+0xee49 -&gt; U+7407 -&gt; 0xfb65 CJK Unified Ideograph
+0xee4a -&gt; U+73f5 -&gt; 0xfb66 CJK Unified Ideograph
+0xee4b -&gt; U+7426 -&gt; 0xfb67 CJK Unified Ideograph
+0xee4c -&gt; U+742a -&gt; 0xfb68 CJK Unified Ideograph
+0xee4d -&gt; U+7429 -&gt; 0xfb69 CJK Unified Ideograph
+0xee4e -&gt; U+742e -&gt; 0xfb6a CJK Unified Ideograph
+0xee4f -&gt; U+7462 -&gt; 0xfb6b CJK Unified Ideograph
+0xee50 -&gt; U+7489 -&gt; 0xfb6c CJK Unified Ideograph
+0xee51 -&gt; U+749f -&gt; 0xfb6d CJK Unified Ideograph
+0xee52 -&gt; U+7501 -&gt; 0xfb6e CJK Unified Ideograph
+0xee53 -&gt; U+756f -&gt; 0xfb6f CJK Unified Ideograph
+0xee54 -&gt; U+7682 -&gt; 0xfb70 CJK Unified Ideograph
+0xee55 -&gt; U+769c -&gt; 0xfb71 CJK Unified Ideograph
+0xee56 -&gt; U+769e -&gt; 0xfb72 CJK Unified Ideograph
+0xee57 -&gt; U+769b -&gt; 0xfb73 CJK Unified Ideograph
+0xee58 -&gt; U+76a6 -&gt; 0xfb74 CJK Unified Ideograph
+0xee59 -&gt; U+fa17 -&gt; 0xfb75 CJK compatibility Ideograph
+0xee5a -&gt; U+7746 -&gt; 0xfb76 CJK Unified Ideograph
+0xee5b -&gt; U+52af -&gt; 0xfb77 CJK Unified Ideograph
+0xee5c -&gt; U+7821 -&gt; 0xfb78 CJK Unified Ideograph
+0xee5d -&gt; U+784e -&gt; 0xfb79 CJK Unified Ideograph
+0xee5e -&gt; U+7864 -&gt; 0xfb7a CJK Unified Ideograph
+0xee5f -&gt; U+787a -&gt; 0xfb7b CJK Unified Ideograph
+0xee60 -&gt; U+7930 -&gt; 0xfb7c CJK Unified Ideograph
+0xee61 -&gt; U+fa18 -&gt; 0xfb7d CJK compatibility Ideograph
+0xee62 -&gt; U+fa19 -&gt; 0xfb7e CJK compatibility Ideograph
+0xee63 -&gt; U+fa1a -&gt; 0xfb80 CJK compatibility Ideograph
+0xee64 -&gt; U+7994 -&gt; 0xfb81 CJK Unified Ideograph
+0xee65 -&gt; U+fa1b -&gt; 0xfb82 CJK compatibility Ideograph
+0xee66 -&gt; U+799b -&gt; 0xfb83 CJK Unified Ideograph
+0xee67 -&gt; U+7ad1 -&gt; 0xfb84 CJK Unified Ideograph
+0xee68 -&gt; U+7ae7 -&gt; 0xfb85 CJK Unified Ideograph
+0xee69 -&gt; U+fa1c -&gt; 0xfb86 CJK compatibility Ideograph
+0xee6a -&gt; U+7aeb -&gt; 0xfb87 CJK Unified Ideograph
+0xee6b -&gt; U+7b9e -&gt; 0xfb88 CJK Unified Ideograph
+0xee6c -&gt; U+fa1d -&gt; 0xfb89 CJK compatibility Ideograph
+0xee6d -&gt; U+7d48 -&gt; 0xfb8a CJK Unified Ideograph
+0xee6e -&gt; U+7d5c -&gt; 0xfb8b CJK Unified Ideograph
+0xee6f -&gt; U+7db7 -&gt; 0xfb8c CJK Unified Ideograph
+0xee70 -&gt; U+7da0 -&gt; 0xfb8d CJK Unified Ideograph
+0xee71 -&gt; U+7dd6 -&gt; 0xfb8e CJK Unified Ideograph
+0xee72 -&gt; U+7e52 -&gt; 0xfb8f CJK Unified Ideograph
+0xee73 -&gt; U+7f47 -&gt; 0xfb90 CJK Unified Ideograph
+0xee74 -&gt; U+7fa1 -&gt; 0xfb91 CJK Unified Ideograph
+0xee75 -&gt; U+fa1e -&gt; 0xfb92 CJK compatibility Ideograph
+0xee76 -&gt; U+8301 -&gt; 0xfb93 CJK Unified Ideograph
+0xee77 -&gt; U+8362 -&gt; 0xfb94 CJK Unified Ideograph
+0xee78 -&gt; U+837f -&gt; 0xfb95 CJK Unified Ideograph
+0xee79 -&gt; U+83c7 -&gt; 0xfb96 CJK Unified Ideograph
+0xee7a -&gt; U+83f6 -&gt; 0xfb97 CJK Unified Ideograph
+0xee7b -&gt; U+8448 -&gt; 0xfb98 CJK Unified Ideograph
+0xee7c -&gt; U+84b4 -&gt; 0xfb99 CJK Unified Ideograph
+0xee7d -&gt; U+8553 -&gt; 0xfb9a CJK Unified Ideograph
+0xee7e -&gt; U+8559 -&gt; 0xfb9b CJK Unified Ideograph
+0xee80 -&gt; U+856b -&gt; 0xfb9c CJK Unified Ideograph
+0xee81 -&gt; U+fa1f -&gt; 0xfb9d CJK compatibility Ideograph
+0xee82 -&gt; U+85b0 -&gt; 0xfb9e CJK Unified Ideograph
+0xee83 -&gt; U+fa20 -&gt; 0xfb9f CJK compatibility Ideograph
+0xee84 -&gt; U+fa21 -&gt; 0xfba0 CJK compatibility Ideograph
+0xee85 -&gt; U+8807 -&gt; 0xfba1 CJK Unified Ideograph
+0xee86 -&gt; U+88f5 -&gt; 0xfba2 CJK Unified Ideograph
+0xee87 -&gt; U+8a12 -&gt; 0xfba3 CJK Unified Ideograph
+0xee88 -&gt; U+8a37 -&gt; 0xfba4 CJK Unified Ideograph
+0xee89 -&gt; U+8a79 -&gt; 0xfba5 CJK Unified Ideograph
+0xee8a -&gt; U+8aa7 -&gt; 0xfba6 CJK Unified Ideograph
+0xee8b -&gt; U+8abe -&gt; 0xfba7 CJK Unified Ideograph
+0xee8c -&gt; U+8adf -&gt; 0xfba8 CJK Unified Ideograph
+0xee8d -&gt; U+fa22 -&gt; 0xfba9 CJK compatibility Ideograph
+0xee8e -&gt; U+8af6 -&gt; 0xfbaa CJK Unified Ideograph
+0xee8f -&gt; U+8b53 -&gt; 0xfbab CJK Unified Ideograph
+0xee90 -&gt; U+8b7f -&gt; 0xfbac CJK Unified Ideograph
+0xee91 -&gt; U+8cf0 -&gt; 0xfbad CJK Unified Ideograph
+0xee92 -&gt; U+8cf4 -&gt; 0xfbae CJK Unified Ideograph
+0xee93 -&gt; U+8d12 -&gt; 0xfbaf CJK Unified Ideograph
+0xee94 -&gt; U+8d76 -&gt; 0xfbb0 CJK Unified Ideograph
+0xee95 -&gt; U+fa23 -&gt; 0xfbb1 CJK compatibility Ideograph
+0xee96 -&gt; U+8ecf -&gt; 0xfbb2 CJK Unified Ideograph
+0xee97 -&gt; U+fa24 -&gt; 0xfbb3 CJK compatibility Ideograph
+0xee98 -&gt; U+fa25 -&gt; 0xfbb4 CJK compatibility Ideograph
+0xee99 -&gt; U+9067 -&gt; 0xfbb5 CJK Unified Ideograph
+0xee9a -&gt; U+90de -&gt; 0xfbb6 CJK Unified Ideograph
+0xee9b -&gt; U+fa26 -&gt; 0xfbb7 CJK compatibility Ideograph
+0xee9c -&gt; U+9115 -&gt; 0xfbb8 CJK Unified Ideograph
+0xee9d -&gt; U+9127 -&gt; 0xfbb9 CJK Unified Ideograph
+0xee9e -&gt; U+91da -&gt; 0xfbba CJK Unified Ideograph
+0xee9f -&gt; U+91d7 -&gt; 0xfbbb CJK Unified Ideograph
+0xeea0 -&gt; U+91de -&gt; 0xfbbc CJK Unified Ideograph
+0xeea1 -&gt; U+91ed -&gt; 0xfbbd CJK Unified Ideograph
+0xeea2 -&gt; U+91ee -&gt; 0xfbbe CJK Unified Ideograph
+0xeea3 -&gt; U+91e4 -&gt; 0xfbbf CJK Unified Ideograph
+0xeea4 -&gt; U+91e5 -&gt; 0xfbc0 CJK Unified Ideograph
+0xeea5 -&gt; U+9206 -&gt; 0xfbc1 CJK Unified Ideograph
+0xeea6 -&gt; U+9210 -&gt; 0xfbc2 CJK Unified Ideograph
+0xeea7 -&gt; U+920a -&gt; 0xfbc3 CJK Unified Ideograph
+0xeea8 -&gt; U+923a -&gt; 0xfbc4 CJK Unified Ideograph
+0xeea9 -&gt; U+9240 -&gt; 0xfbc5 CJK Unified Ideograph
+0xeeaa -&gt; U+923c -&gt; 0xfbc6 CJK Unified Ideograph
+0xeeab -&gt; U+924e -&gt; 0xfbc7 CJK Unified Ideograph
+0xeeac -&gt; U+9259 -&gt; 0xfbc8 CJK Unified Ideograph
+0xeead -&gt; U+9251 -&gt; 0xfbc9 CJK Unified Ideograph
+0xeeae -&gt; U+9239 -&gt; 0xfbca CJK Unified Ideograph
+0xeeaf -&gt; U+9267 -&gt; 0xfbcb CJK Unified Ideograph
+0xeeb0 -&gt; U+92a7 -&gt; 0xfbcc CJK Unified Ideograph
+0xeeb1 -&gt; U+9277 -&gt; 0xfbcd CJK Unified Ideograph
+0xeeb2 -&gt; U+9278 -&gt; 0xfbce CJK Unified Ideograph
+0xeeb3 -&gt; U+92e7 -&gt; 0xfbcf CJK Unified Ideograph
+0xeeb4 -&gt; U+92d7 -&gt; 0xfbd0 CJK Unified Ideograph
+0xeeb5 -&gt; U+92d9 -&gt; 0xfbd1 CJK Unified Ideograph
+0xeeb6 -&gt; U+92d0 -&gt; 0xfbd2 CJK Unified Ideograph
+0xeeb7 -&gt; U+fa27 -&gt; 0xfbd3 CJK compatibility Ideograph
+0xeeb8 -&gt; U+92d5 -&gt; 0xfbd4 CJK Unified Ideograph
+0xeeb9 -&gt; U+92e0 -&gt; 0xfbd5 CJK Unified Ideograph
+0xeeba -&gt; U+92d3 -&gt; 0xfbd6 CJK Unified Ideograph
+0xeebb -&gt; U+9325 -&gt; 0xfbd7 CJK Unified Ideograph
+0xeebc -&gt; U+9321 -&gt; 0xfbd8 CJK Unified Ideograph
+0xeebd -&gt; U+92fb -&gt; 0xfbd9 CJK Unified Ideograph
+0xeebe -&gt; U+fa28 -&gt; 0xfbda CJK compatibility Ideograph
+0xeebf -&gt; U+931e -&gt; 0xfbdb CJK Unified Ideograph
+0xeec0 -&gt; U+92ff -&gt; 0xfbdc CJK Unified Ideograph
+0xeec1 -&gt; U+931d -&gt; 0xfbdd CJK Unified Ideograph
+0xeec2 -&gt; U+9302 -&gt; 0xfbde CJK Unified Ideograph
+0xeec3 -&gt; U+9370 -&gt; 0xfbdf CJK Unified Ideograph
+0xeec4 -&gt; U+9357 -&gt; 0xfbe0 CJK Unified Ideograph
+0xeec5 -&gt; U+93a4 -&gt; 0xfbe1 CJK Unified Ideograph
+0xeec6 -&gt; U+93c6 -&gt; 0xfbe2 CJK Unified Ideograph
+0xeec7 -&gt; U+93de -&gt; 0xfbe3 CJK Unified Ideograph
+0xeec8 -&gt; U+93f8 -&gt; 0xfbe4 CJK Unified Ideograph
+0xeec9 -&gt; U+9431 -&gt; 0xfbe5 CJK Unified Ideograph
+0xeeca -&gt; U+9445 -&gt; 0xfbe6 CJK Unified Ideograph
+0xeecb -&gt; U+9448 -&gt; 0xfbe7 CJK Unified Ideograph
+0xeecc -&gt; U+9592 -&gt; 0xfbe8 CJK Unified Ideograph
+0xeecd -&gt; U+f9dc -&gt; 0xfbe9 CJK compatibility Ideograph
+0xeece -&gt; U+fa29 -&gt; 0xfbea CJK compatibility Ideograph
+0xeecf -&gt; U+969d -&gt; 0xfbeb CJK Unified Ideograph
+0xeed0 -&gt; U+96af -&gt; 0xfbec CJK Unified Ideograph
+0xeed1 -&gt; U+9733 -&gt; 0xfbed CJK Unified Ideograph
+0xeed2 -&gt; U+973b -&gt; 0xfbee CJK Unified Ideograph
+0xeed3 -&gt; U+9743 -&gt; 0xfbef CJK Unified Ideograph
+0xeed4 -&gt; U+974d -&gt; 0xfbf0 CJK Unified Ideograph
+0xeed5 -&gt; U+974f -&gt; 0xfbf1 CJK Unified Ideograph
+0xeed6 -&gt; U+9751 -&gt; 0xfbf2 CJK Unified Ideograph
+0xeed7 -&gt; U+9755 -&gt; 0xfbf3 CJK Unified Ideograph
+0xeed8 -&gt; U+9857 -&gt; 0xfbf4 CJK Unified Ideograph
+0xeed9 -&gt; U+9865 -&gt; 0xfbf5 CJK Unified Ideograph
+0xeeda -&gt; U+fa2a -&gt; 0xfbf6 CJK compatibility Ideograph
+0xeedb -&gt; U+fa2b -&gt; 0xfbf7 CJK compatibility Ideograph
+0xeedc -&gt; U+9927 -&gt; 0xfbf8 CJK Unified Ideograph
+0xeedd -&gt; U+fa2c -&gt; 0xfbf9 CJK compatibility Ideograph
+0xeede -&gt; U+999e -&gt; 0xfbfa CJK Unified Ideograph
+0xeedf -&gt; U+9a4e -&gt; 0xfbfb CJK Unified Ideograph
+0xeee0 -&gt; U+9ad9 -&gt; 0xfbfc CJK Unified Ideograph
+0xeee1 -&gt; U+9adc -&gt; 0xfc40 CJK Unified Ideograph
+0xeee2 -&gt; U+9b75 -&gt; 0xfc41 CJK Unified Ideograph
+0xeee3 -&gt; U+9b72 -&gt; 0xfc42 CJK Unified Ideograph
+0xeee4 -&gt; U+9b8f -&gt; 0xfc43 CJK Unified Ideograph
+0xeee5 -&gt; U+9bb1 -&gt; 0xfc44 CJK Unified Ideograph
+0xeee6 -&gt; U+9bbb -&gt; 0xfc45 CJK Unified Ideograph
+0xeee7 -&gt; U+9c00 -&gt; 0xfc46 CJK Unified Ideograph
+0xeee8 -&gt; U+9d70 -&gt; 0xfc47 CJK Unified Ideograph
+0xeee9 -&gt; U+9d6b -&gt; 0xfc48 CJK Unified Ideograph
+0xeeea -&gt; U+fa2d -&gt; 0xfc49 CJK compatibility Ideograph
+0xeeeb -&gt; U+9e19 -&gt; 0xfc4a CJK Unified Ideograph
+0xeeec -&gt; U+9ed1 -&gt; 0xfc4b CJK Unified Ideograph
+0xeeef -&gt; U+2170 -&gt; 0xfa40 Small Roman Numeral One
+0xeef0 -&gt; U+2171 -&gt; 0xfa41 Small Roman Numeral Two
+0xeef1 -&gt; U+2172 -&gt; 0xfa42 Small Roman Numeral Three
+0xeef2 -&gt; U+2173 -&gt; 0xfa43 Small Roman Numeral Four
+0xeef3 -&gt; U+2174 -&gt; 0xfa44 Small Roman Numeral Five
+0xeef4 -&gt; U+2175 -&gt; 0xfa45 Small Roman Numeral Six
+0xeef5 -&gt; U+2176 -&gt; 0xfa46 Small Roman Numeral Seven
+0xeef6 -&gt; U+2177 -&gt; 0xfa47 Small Roman Numeral Eight
+0xeef7 -&gt; U+2178 -&gt; 0xfa48 Small Roman Numeral Nine
+0xeef8 -&gt; U+2179 -&gt; 0xfa49 Small Roman Numeral Ten
+0xeef9 -&gt; U+ffe2 -&gt; 0x81ca Fullwidth Not Sign
+0xeefa -&gt; U+ffe4 -&gt; 0xfa55 Fullwidth Broken Bar
+0xeefb -&gt; U+ff07 -&gt; 0xfa56 Fullwidth Apostrophe
+0xeefc -&gt; U+ff02 -&gt; 0xfa57 Fullwidth Quotation Mark
+0xfa4a -&gt; U+2160 -&gt; 0x8754 Roman Numeral One
+0xfa4b -&gt; U+2161 -&gt; 0x8755 Roman Numeral Two
+0xfa4c -&gt; U+2162 -&gt; 0x8756 Roman Numeral Three
+0xfa4d -&gt; U+2163 -&gt; 0x8757 Roman Numeral Four
+0xfa4e -&gt; U+2164 -&gt; 0x8758 Roman Numeral Five
+0xfa4f -&gt; U+2165 -&gt; 0x8759 Roman Numeral Six
+0xfa50 -&gt; U+2166 -&gt; 0x875a Roman Numeral Seven
+0xfa51 -&gt; U+2167 -&gt; 0x875b Roman Numeral Eight
+0xfa52 -&gt; U+2168 -&gt; 0x875c Roman Numeral Nine
+0xfa53 -&gt; U+2169 -&gt; 0x875d Roman Numeral Ten
+0xfa54 -&gt; U+ffe2 -&gt; 0x81ca Fullwidth Not Sign
+0xfa58 -&gt; U+3231 -&gt; 0x878a Parenthesized Ideograph Stock
+0xfa59 -&gt; U+2116 -&gt; 0x8782 Numero Sign
+0xfa5a -&gt; U+2121 -&gt; 0x8784 Telephone Sign
+0xfa5b -&gt; U+2235 -&gt; 0x81e6 Because
+
+CodePage 950: 10 non-round-trip mappings
+
+0xa2a4 -&gt; U+2550 -&gt; 0xf9f9 Box Drawings Double Horizontal
+0xa2a5 -&gt; U+255e -&gt; 0xf9e9 Box Drawings Vertical Single And Right Double
+0xa2a6 -&gt; U+256a -&gt; 0xf9ea Box Drawings Vertical Single And Horizontal
+Double
+0xa2a7 -&gt; U+2561 -&gt; 0xf9eb Box Drawings Vertical Single And Left Double
+0xa2cc -&gt; U+5341 -&gt; 0xa451 CJK Unified Ideograph
+0xa2ce -&gt; U+5345 -&gt; 0xa4ca CJK Unified Ideograph
+0xf9fa -&gt; U+256d -&gt; 0xa27e Box Drawings Light Arc Down And Right
+0xf9fb -&gt; U+256e -&gt; 0xa2a1 Box Drawings Light Arc Down And Left
+0xf9fc -&gt; U+2570 -&gt; 0xa2a2 Box Drawings Light Arc Up And Right
+0xf9fd -&gt; U+256f -&gt; 0xa2a3 Box Drawings Light Arc Up And Left
+
+Additional query words: ms_press 1-55615-840-8
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q163803: BUG: Cannot Set ImageList Property of Treeview Visually | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q163803: BUG: Cannot Set ImageList Property of Treeview Visually" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/163/Q163803/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/163/Q163803/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/163/Q163803/","publisher":null,"image":null,"headline":"Q163803: BUG: Cannot Set ImageList Property of Treeview Visually","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q163803-bug-cannot-set-imagelist-property-of-treeview-visually">Q163803: BUG: Cannot Set ImageList Property of Treeview Visually</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q163803
+Product(s): Microsoft FoxPro
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbvfpkbbuglist
+Last Modified: 04-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A form containing the Treeview control suddenly loses the images shown in the
+Treeview. This happens after any property of the Treeview control was modified
+in the Form Designer.
+
+CAUSE
+=====
+
+Right-clicking on the Treeview control in the Form Designer reveals a context
+menu. The bottom bar of that menu opens the TreeCtrl Properties dialog box. That
+dialog box holds a PageFrame with three pages. Page 1 has the caption "General."
+It holds a stack of nine ComboBox controls, plus other objects. The fifth
+ComboBox from the top is labeled "ImageList" (without the quotes).
+
+Comctl32.ocx contains both the ImageList control and the Treeview control.
+
+With the version of Comctl32.ocx that originally came with Visual FoxPro 5.0 the
+ImageList to be used with the Treeview control could be selected from that
+ComboBox on the General page of the TreeCtrl Properties dialog box. The
+developer could drop the ComboBox down and see all of the ImageList controls on
+the current form. Typically that would be one, but the application design might
+require multiple ImageLists. A Treeview can be associated with any one of those,
+but only one.
+
+Several Microsoft developer products that have been released since the release of
+Visual FoxPro version 5.0 install a revised Comctl32.ocx.
+
+In the Form Designer of Visual FoxPro 5.0, the new version of Treeview no longer
+lists, in the TreeCtrl properties general page, the ImageLists that reside on
+the current form. It shows the expression &lt;none&gt;.
+
+Clicking the "Apply" button at the bottom of the page sets all of the properties
+to the settings shown, so the new ImageList property is "none."
+
+RESOLUTION
+==========
+
+The ImageList must be specified in code. For example, if the form has an
+ImageList in OLE container control "OleControl1," then in the Init event method
+for the OLE container control that holds the Treeview, add a command similar to
+the following:
+
+  
+
+     This.Object.Imagelist = Thisform.Olecontrol1.Object
+
+The above is only a suggestion. The specifics of the application determines where
+to make the modification and the appropriate syntax to use.
+
+NOTE: The symptoms listed in this article also apply to the ListView control. The
+code for a workaround using the ListView control follows:
+
+  
+
+     This.object.icon = thisform.olecontrol1.object
+     This.object.smallicon = thisform.olecontrol2.object
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Use the following steps in Microsoft Visual FoxPro 5.0 for Windows:
+
+1. Modify a form that contains a TreeCtrl control.
+
+2. Modify any property of the Treeview within the TreeCtrl properties dialog box
+
+3. Click Apply, then OK. The value "&lt;none&gt;" is now saved as the ImageList
+  property. Consequently no ImageList is specified for the Treeview
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : 5.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

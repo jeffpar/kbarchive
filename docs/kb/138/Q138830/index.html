@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q138830: FIX: Dismissing Splash Screen from Component Causes Assertion | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q138830: FIX: Dismissing Splash Screen from Component Causes Assertion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/138/Q138830/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/138/Q138830/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/138/Q138830/","publisher":null,"image":null,"headline":"Q138830: FIX: Dismissing Splash Screen from Component Causes Assertion","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q138830-fix-dismissing-splash-screen-from-component-causes-assertion">Q138830: FIX: Dismissing Splash Screen from Component Causes Assertion</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q138830
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbMFC KbUIDesign kbVC400bug kbVC410fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.0 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.0 
+- Microsoft Visual C++, 32-bit Learning Edition, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Dismissing a Splash Screen Component inserted from the Component Gallery results
+in an Assertion failure in Wincore.cpp on line 863. This happens only when you
+try to dismiss the splash screen early by clicking on a mouse button or pressing
+a key on the keyboard.
+
+CAUSE
+=====
+
+Following is part of the code inserted by the component that is relevant to this
+problem:
+
+     CWinApp derived class' PreTranslateMessage:
+
+        BOOL CMyApp::PreTranslateMessage(MSG* pMsg)
+        {
+          CSplashWnd::PreTranslateAppMessage(pMsg);
+
+          return CWinApp::PreTranslateMessage(pMsg);
+        }
+
+The CSplashWnd::PreTranslateAppMessage() looks like this:
+
+     void CSplashWnd::PreTranslateAppMessage()
+     {
+       if (c_pSplashWnd == NULL)
+         return;
+
+      if (pMsg-&gt;message == WM_KEYDOWN ||
+          pMsg-&gt;message == WM_SYSKEYDOWN ||
+          pMsg-&gt;message == WM_LBUTTONDOWN ||
+          pMsg-&gt;message == WM_RBUTTONDOWN ||
+          pMsg-&gt;message == WM_MBUTTONDOWN ||
+          pMsg-&gt;message == WM_NCLBUTTONDOWN ||
+          pMsg-&gt;message == WM_NCRBUTTONDOWN ||
+          pMsg-&gt;message == WM_NCMBUTTONDOWN)
+          {
+            c_pSplashWnd-&gt;HideSplashScreen();
+          }
+      }
+
+      void CSplashWnd::HideSplashScreen()
+      {
+        DestroyWindow();
+        AfxGetMainWnd()-&gt;UpdateWindow();
+      }
+
+If a key is pressed while the splash screen is displayed, HideSplashScreen() is
+called, which destroys the window. When the PreTranslateAppMessage() function
+returns, CWinApp::PreTranslateMessage() is called for the message when its
+window has been destroyed already.
+
+RESOLUTION
+==========
+
+This problem can be avoided by not calling CWinApp::PreTranslateMessage() if the
+splash screen window has alaredy been destroyed. Make the following
+modifications to accomplish this:
+
+1. Change the CWinApp derived class' PreTranslateMessage() from what is show in
+  the "Cause" section of this article to the following:
+
+     BOOL CMyApp::PreTranslateMessage(MSG* pMsg)
+     {
+      if (CSplashWnd::PreTranslateAppMessage(pMsg))
+        return TRUE;
+
+      return CWinApp::PreTranslateMessage(pMsg);
+     }
+
+2. Change the prototype and implementation of the
+  CSplashWnd::PreTranslateAppMessage() function so that it returns a BOOL as
+  follows:
+
+  a. In the .h file, change the prototype so that it returns BOOL:
+
+        BOOL PreTranslateAppMessage(MSG* pMsg);
+
+  b. In the .cpp file, change the implementation of this function from what is
+     shown in the "Cause" section of this article to this:
+
+        BOOL CSplashWnd::PreTranslateAppMessage(MSG* pMsg)
+        {
+          if (c_pSplashWnd == NULL)
+            return FALSE;
+
+          if (pMsg-&gt;message == WM_KEYDOWN ||
+              pMsg-&gt;message == WM_SYSKEYDOWN ||
+              pMsg-&gt;message == WM_LBUTTONDOWN ||
+              pMsg-&gt;message == WM_RBUTTONDOWN ||
+              pMsg-&gt;message == WM_MBUTTONDOWN ||
+              pMsg-&gt;message == WM_NCLBUTTONDOWN ||
+              pMsg-&gt;message == WM_NCRBUTTONDOWN ||
+              pMsg-&gt;message == WM_NCMBUTTONDOWN)
+              {
+                c_pSplashWnd-&gt;HideSplashScreen(); // this destroys the window
+                return TRUE;  // You don't want to call
+                              // CWinApp::PreTranslateMessage
+              }
+          return FALSE;
+        }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+Additional query words: kbVC400bug 4.00 4.10
+
+======================================================================
+Keywords          : kbMFC KbUIDesign kbVC400bug kbVC410fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC32bitSearch
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

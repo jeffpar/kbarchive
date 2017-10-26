@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q114721: PRB: Error Occurs When Starting a Wizard | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q114721: PRB: Error Occurs When Starting a Wizard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/114/Q114721/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/114/Q114721/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/114/Q114721/","publisher":null,"image":null,"headline":"Q114721: PRB: Error Occurs When Starting a Wizard","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q114721-prb-error-occurs-when-starting-a-wizard">Q114721: PRB: Error Occurs When Starting a Wizard</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q114721
+Product(s): Microsoft FoxPro
+Version(s): MS-DOS:2.6; WINDOWS:2.6,3.0
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 03-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+- Microsoft FoxPro for Windows, version 2.6 
+- Microsoft FoxPro for MS-DOS, version 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An error occurs when you try to run a wizard.
+
+NOTE: Some common error messages are listed in the MORE INFORMATION section
+below.
+
+CAUSE
+=====
+
+These errors occur if the wizard table file (WIZARD.DBF) or its associated memo
+file (WIZARD.FPT) is corrupted.
+
+RESOLUTION
+==========
+
+To re-create the default Wizard table files:
+
+1. Delete the WIZARD.DBF and WIZARD.FPT files, which are located in the WIZARDS
+  subdirectory of the main FoxPro directory.
+
+2. Start FoxPro.
+
+3. From the Run menu, choose Wizard, and then choose All.
+
+4. You are then prompted with the following dialog box:
+
+  The wizard registration table cannot be located. Would you like to locate it
+  or create a new registration table with default values?
+
+  Choose Create.
+
+5. When prompted to select a wizard, select the wizard you want to run, or
+  choose Cancel to return to the Command window.
+
+At this point, new default WIZARD.DBF and WIZARD.FPT files have been created.
+
+MORE INFORMATION
+================
+
+Listed below are some common error messages that a corrupted wizard table can
+cause.
+
+FoxPro Errors
+-------------
+
+  Line Number: 789
+  Program: GETWIZ
+  Error: Not a table/DBF.
+  Source: USE ...
+
+  Line Number: 789
+  Program: GETWIZ
+  Error: MEMO file is missing/invalid.
+  Source: USE ...
+
+  Line Number: 835
+  Program: GETWIZ
+  Error: String too long to fit.
+  Source: &lt;??&gt;
+
+Program Error
+-------------
+
+  Invalid function argument value, type, or count.
+
+Microsoft FoxPro Errors
+-----------------------
+
+  Cannot find the registered wizard.
+
+  No wizards are registered with "REPORT" class.
+
+NOTE: The wizard classes are SCREEN, REPORT, LABEL, MAIL, TABLE, and QUERY.
+
+Dialog Box Prompting to Locate the Wizard Application
+-----------------------------------------------------
+
+  Prompted to locate &lt;wizard&gt;.APP.
+
+NOTE: The Wizard applications are WZ_QFORM.APP, WZ_QREPO.APP, WZ_MREPO.APP,
+WZ_MAIL.APP, WZ_GREPO.APP, WZ_MMERG.APP, WZ_TABLE.APP, and WZ_BQUER.APP.
+
+Application Error (FoxPro for Windows Only)
+-------------------------------------------
+
+  FOXPROW caused a General Protection Fault in module FOXPROW.EXE at 0001:0BFA.
+
+Additional query words: VFoxWin FoxDos FoxWin errmsg err msg akz
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260DOS kbFoxPro260 kbVFP300
+Version           : MS-DOS:2.6; WINDOWS:2.6,3.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

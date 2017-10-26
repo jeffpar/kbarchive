@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q178844: XADM: How to Generate Reports on Mailbox Resources | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q178844: XADM: How to Generate Reports on Mailbox Resources" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/178/Q178844/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/178/Q178844/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/178/Q178844/","publisher":null,"image":null,"headline":"Q178844: XADM: How to Generate Reports on Mailbox Resources","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q178844-xadm-how-to-generate-reports-on-mailbox-resources">Q178844: XADM: How to Generate Reports on Mailbox Resources</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q178844
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 18-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Administrator program, version 5.5, can export mailbox or
+public folder resource reports to a .CSV file. The version 5.5 Administrator
+program has this capability even when run against Exchange 4.0 or 5.0 Servers.
+
+Mailbox and public folder resource usage, including total number of messages and
+message size per mailbox or folder, are displayed in the Administrator program
+at:
+
+  Configuration, Servers, &lt;Servername&gt;, Private Information Store,
+  Mailbox Resources
+
+and
+
+  Configuration, Servers, &lt;Servername&gt;, Public Information Store, Public
+  Folder Resources
+
+Prior to version 5.5, Exchange Server relied on Crystal Reports to provide such
+reporting. This article explains both how to use either Crystal Reports or the
+version 5.5 Exchange Administrator program to generate resource reports.
+
+MORE INFORMATION
+================
+
+To generate a report in Exchange Server 5.5 through the Administrator program,
+do the following:
+
+NOTE: If you start Exchange Server in Raw mode, these steps do not work.
+
+1. In the Administrator program, go to Servers, Servername, and open the Mailbox
+  Resources window for the server.
+
+2. Highlight an entry on the right side of the screen.
+
+3. Select "Save Window Contents" from the File menu. After this information is
+  saved to a file, that file can be manipulated with a database or spreadsheet
+  program to generate custom reports.
+
+Crystal Reports must be installed from the Microsoft BackOffice 97 Resource Kit.
+It is located in the Exchange\winnt\I386\Admin\Crystal directory. To install it,
+double-click on the CRWINTEL installation icon.
+
+To generate a report on the mailbox resources in use by a particular server from
+Crystal Reports, do the following:
+
+1. Run CRW32 from the directory where you installed the application.
+
+2. Select File/New/Standard Expert from the menu bar.
+
+3. Click Exchange Data at the Step 1 prompt "Choose data to report on."
+
+4. The Log On Server box will appear. Select Mailbox Admin and click OK.
+
+5. The Logon to Exchange Servers box will appear. Click Select Servers, and
+  select the server to be reported on.
+
+6. Click Select Profiles, and select a profile to be used. This profile must
+  have the permissions to access this information.
+
+7. Click Done.
+
+8. In the Choose SQL Table window, the Mailbox Admin Table should be
+  highlighted. Click Add.
+
+9. Click Done.
+
+10. Click Next.
+
+11. From Property Fields, double-click Mailbox and Total Message Size (Byte).
+
+12. Click Next.
+
+13. In Report Fields:, the Admin Table: Mailbox should be selected. Click Add.
+
+14. Click Next three more times. On the Style tab, enter the Title of the
+  report.
+
+15. Click Preview Report.
+
+16. Select File/Print Preview from the menu. The following message will be
+  displayed:
+
+  This program is a limited version of Crystal Reports. To generate
+  reports on multiple servers, please contact Crystal Reports for the
+  latest "Full" version and instructions on how to generate the
+  reports.
+
+Additional query words: export public folder message size limits
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

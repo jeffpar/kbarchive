@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q135818: How to List Available Drives from Visual FoxPro | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q135818: How to List Available Drives from Visual FoxPro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/135/Q135818/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/135/Q135818/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/135/Q135818/","publisher":null,"image":null,"headline":"Q135818: How to List Available Drives from Visual FoxPro","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q135818-how-to-list-available-drives-from-visual-foxpro">Q135818: How to List Available Drives from Visual FoxPro</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q135818
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 19-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to determine which drive letters and types are
+available on your computer. The sample code in this article can be used to list
+the available drives and their types.
+
+MORE INFORMATION
+================
+
+The sample code in this article uses two API functions; DRIVETYPE() and
+WNetGetConnection():
+
+- DRIVETYPE(): The syntax for DRIVETYPE is:
+
+  x = DRIVETYPE(&lt;expC&gt;)
+
+  Here &lt;expC&gt; is the drive letter for which you want to know the drive
+  type. DRIVETYPE() returns a numeric value representing the drive type of the
+  drive . Possible return values are:
+
+  0 - Drive does not exist
+  1 - Drive has no root directory
+  2 - Floppy Disk
+  3 - Hard Disk
+  4 - Removable or Network drive
+  5 - CD-ROM
+  6 - RAM Disk
+
+  The DRIVETYPE function is included in FOXTOOLS.FLL. For more information on
+  this function, please see FOXTOOLS.HLP in the VFP directory.
+
+- WNetGetConnection(): When passed a valid network drive letter, the
+  WNetGetConnection() function returns the name of the network resource. The
+  syntax for WNetGetConnection() is:
+
+  x = WNetGetConnection(lpszLocalName, lpszRemoteName, lpcchBuffer)
+
+  Here lpszLocalName points to a buffer containing the local drive letter,
+  lpszRemoteName points to a buffer that will receive the network resource name
+  and lpcchBuffer points to a variable that contains the size, in characters,
+  of the buffer pointed to by lpszRemoteName. WNetGetConnection is NOT part of
+  FOXTOOLS.FLL, consequently before using this function you must declare it.
+  For more information on this function see WIN32API.HLP.
+
+Code Sample
+-----------
+
+The following code sample echos to the desktop drive letters A through Z, and
+displays the drive type of each. To run this example, open a new program (.prg)
+file, enter the following code, and run it:
+
+  ** BEGIN CODE SAMPLE
+  SET LIBRARY TO \VFP\FOXTOOLS.FLL &amp; Register the FOXTOOLS Library
+  DECLARE INTEGER WNetGetConnection IN win32api ;
+       STRING lpszLocalName,;
+       STRING lpszRemoteName,;
+       INTEGER @ lpchBuffer &amp;&amp; Declare the external WNetGetConnection ;
+       API function
+  slpRemoteName = SPACE(254) &amp;&amp; Initialize variables
+  slen = LEN(slpRemoteName) &amp;&amp; Initialize variables
+  FOR I = 1 to 26 &amp;&amp; Loop through drive letters A thru Z
+       DRIVE = CHR(I + 64)
+       DTYPE = DRIVETYPE(drive) &amp;&amp; Determine drive type
+       DO CASE
+            CASE DTYPE = 0 &amp;&amp; Non existent drives
+                ? "Drive " + DRIVE + ": does not exist"
+            CASE DTYPE = 1 &amp;&amp; No root directory
+                ? "Drive " + DRIVE + ": has no root directory"
+            CASE DTYPE = 2 &amp;&amp; Floppy drives
+                 ? "Drive " + DRIVE + ": is a floppy drive"
+            CASE DTYPE = 3 &amp;&amp; Hard drives
+                 ? "Drive " + DRIVE + ": is a local hard drive"
+            CASE dtype = 4 &amp;&amp; Removable or network drives
+                 iSuccess = WNetGetConnection(drive + ;
+                 ":",@slpRemoteName,@slen)
+                 IF iSuccess = 0
+                      ? "Drive " + Drive + ": is a network" + ;
+                      " drive connected to " + LEFT(slpRemoteName,;
+                      ATC(chr(0),slpRemoteName) - 1)
+                 ENDIF
+            CASE DTYPE = 5 &amp;&amp; CD-ROM drives
+                 ? "Drive " + DRIVE + ": is a CD ROM drive"
+            CASE DTYPE = 6 &amp;&amp; RAM drives
+                 ? "Drive " + DRIVE + ": is a RAM drive"
+       ENDCASE
+  ENDFOR
+  ** END CODE SAMPLE
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

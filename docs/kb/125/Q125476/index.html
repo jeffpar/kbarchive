@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q125476: PRB: Error &quot;…MSVCRT20.DLL is not compatible with Win32s&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q125476: PRB: Error &quot;…MSVCRT20.DLL is not compatible with Win32s&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/125/Q125476/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/125/Q125476/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/125/Q125476/","publisher":null,"image":null,"headline":"Q125476: PRB: Error &quot;…MSVCRT20.DLL is not compatible with Win32s&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q125476-prb-error-msvcrt20dll-is-not-compatible-with-win32s">Q125476: PRB: Error "…MSVCRT20.DLL is not compatible with Win32s"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q125476
+Product(s): Microsoft C Compiler
+Version(s): 2.0 2.1 2.2 4.0 4.1
+Operating System(s): 
+Keyword(s): kberrmsg kbCRT kbVC kbOSWin32s
+Last Modified: 29-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C Run-Time (CRT), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running a Win32-based application that was linked with MSVCRT.LIB on
+Win32s, a message box titled "MSVCRT??.DLL for Win32" displays the message
+"Error: This version of MSVCRT??.DLL is not compatible with Win32s" where ??
+specifies the runtime version. The application terminates following this
+message.
+
+CAUSE
+=====
+
+There are two versions of each MSVCRT??.DLL -- one for Win32s and one for
+Windows NT/Windows 95. If you use the wrong version on Win32s, the error
+described above occurs.
+
+The following is a list of Visual C++ versions and the runtime DLLs that are
+included with them:
+
+  Visual C++ File                         Size       Date / Time
+  ---------- ---------------              --------   -----------
+    2.0      WIN32S\REDIST\MSVCRT20.DLL   237,568    09-12-94 / 7:00a
+    2.0      MSVC20\REDIST\MSVCRT20.DLL   243,200    09-12-94 / 8:00a
+
+    2.1      WIN32S\REDIST\MSVCRT20.DLL   244,736    01-20-95 / 9:46a
+    2.1      MSVC20\REDIST\MSVCRT20.DLL   250,368    01-20-95 / 9:45a
+
+    2.2      WIN32S\REDIST\MSVCRT20.DLL   244,736    01-20-95 / 1:46a
+    2.2      MSVC20\REDIST\MSVCRT20.DLL   253,952    02-23-95 / 11:32a
+
+    4.0      WIN32S\DEBUG\MSVCR40D.DLL    437,760    09-29-95 / 9:33p
+    4.0      WIN32S\REDIST\MSVCRT40.DLL   320,000    09-29-95 / 9:35p
+    4.0      MSDEV\DEBUG\MSVCR40D.DLL     439,296    09-29-95 / 9:25p
+    4.0      MSDEV\REDIST\MSVCRT40.DLL    312,832    09-29-95 / 10:06p
+
+    4.1      WIN32S\DEBUG\MSVCR40D.DLL    439,296    02-14-96 / 4:43p
+    4.1      WIN32S\REDIST\MSVCRT40.DLL   332,048    02-07-96 / 3:24a
+    4.1      MSDEV\DEBUG\MSVCR40D.DLL     444,928    02-19-96 / 5:05P
+    4.1      MSDEV\REDIST\MSVCRT40.DLL    326,656    02-19-96 / 5:03p
+
+RESOLUTION
+==========
+
+On the Visual C++ product CD, you will find the Windows NT/Windows 95 version of
+the runtime DLL in the MSVC20\REDIST or MSDEV\ directories shown above and the
+Win32s version of the runtime DLL under the WIN32S\ directories shown above. The
+files that end with the letter "D" are the debug versions of the libraries which
+are accompanied by a debug info file that has the same name and a ".PDB" file
+extension.
+
+You should ship both release versions of the runtime DLL with your application if
+it is to be run under Win32s. Your setup program should detect which platform
+you are installing the application under and copy the appropriate DLL. Install
+the Win32s version in the WINDOWS\SYSTEM directory of your Windows or Windows
+for Workgroups machine.
+
+MORE INFORMATION
+================
+
+A similar error occurs if the Win32s version of MSVCRT??.DLL is used on a
+Windows NT machine or a Windows 95 machine. The error's title is "MSVCRT??.DLL
+for Win32s," and the message is:
+
+  Error: This version of MSVCRT??.DLL is only intended for Win32s.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbCRT kbVC kbOSWin32s 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : 2.0 2.1 2.2 4.0 4.1
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q217157: Event ID 1057 or 1000 When the Cluster Service Attempts to Start | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q217157: Event ID 1057 or 1000 When the Cluster Service Attempts to Start" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/217/Q217157/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/217/Q217157/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/217/Q217157/","publisher":null,"image":null,"headline":"Q217157: Event ID 1057 or 1000 When the Cluster Service Attempts to Start","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q217157-event-id-1057-or-1000-when-the-cluster-service-attempts-to-start">Q217157: Event ID 1057 or 1000 When the Cluster Service Attempts to Start</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q217157
+Product(s): Microsoft Windows NT
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Cluster service may not start, with the following error message in
+the event log:
+
+  Event ID 1057
+  Source: ClusSvc
+  Description: The cluster service CLUSDB could not be opened.
+
+  -or-
+
+  Event ID: 1000 Source: ClusSvc Description: Microsoft Cluster Server suffered
+  an unexpected fatal error at line ### of source module &lt;source path&gt;.
+  The error code was ####.
+
+This behavior is the result of a local Cluster database being corrupted,
+inaccessible, or otherwise unusable.
+
+RESOLUTION
+==========
+
+The Cluster database is a hive in the registry located at:
+
+  HKEY_LOCAL_MACHINE\Cluster
+
+The file for the Cluster registry hive is located on disk by default at the
+following location:
+
+  %SystemRoot%\Cluster\Clusdb
+
+Note that because the Cluster key is a separate hive, you cannot use the
+Emergency Repair Disk (ERD) to recover Clusdb.
+
+Try each of the following items to fix the problem:
+
+- Check the file permissions for the Clusdb file. Make sure that the domain
+  account under which the Cluster runs has full access.
+
+- Verify that the Clusdb file is not set to Read-Only.
+
+- Restore the file from a backup. (Note that this file is cluster specific.)
+
+- If one of the nodes is still working, uninstall Microsoft Cluster Server
+  (MSCS) from and reinstall MSCS to the failed node. Choose "Join an existing
+  cluster". This procedure may cause problems with some cluster resources. You
+  may have to re-create the resources or reinstall programs. Contact Microsoft
+  Product Support Services for assistance with reinstalling Microsoft products.
+
+- Try the information in the following Microsoft Knowledge Base article:
+
+  Q224999 How to Use the Cluster TMP file to Replace a Damaged Clusdb File
+
+
+- If none of the items above work, you may have to reinstall MSCS on both
+  nodes, or use a disaster recovery procedure for the Cluster.
+
+
+MORE INFORMATION
+================
+
+You can back up the Clusdb file Ntbackup.exe by using the Backup Local Registry
+option.
+
+
+
+Additional query words: read only readonly
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbAudDeveloper kbClustServSearch
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

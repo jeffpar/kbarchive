@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q265215: DocErr: SMCLIENT.DOC Incorrectly References SpyHydra Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q265215: DocErr: SMCLIENT.DOC Incorrectly References SpyHydra Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/265/Q265215/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/265/Q265215/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/265/Q265215/","publisher":null,"image":null,"headline":"Q265215: DocErr: SMCLIENT.DOC Incorrectly References SpyHydra Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q265215-docerr-smclientdoc-incorrectly-references-spyhydra-application">Q265215: DocErr: SMCLIENT.DOC Incorrectly References SpyHydra Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q265215
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocfix kbdocerr
+Last Modified: 09-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Microsoft Windows 2000 Server Resource Kit ISBN 1-57231-805-8 
+- MSPRESS Microsoft Windows 2000 Professional Resource Kit ISBN 1-57231-808-2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article summarizes errors in SMCLIENT.DOC, which is included with the
+Windows 2000 Resource Kits.
+
+MORE INFORMATION
+================
+
+SMCLIENT.DOC Incorrectly References SpyHydra Application and Documentation
+--------------------------------------------------------------------------
+
+The SMCLIENT.DOC file that is included in the Windows 2000 Resource Kits listed
+above contains several references to the SpyHydra application and documentation.
+All references to SpyHydra should be changed to Spy++.
+
+The Spy++ application and corresponding documentation is not included with the
+Windows 2000 Resource Kits. Spy++ is a utility that is included with Visual C++
+and Visual Studio. The Spy++ tool produces output in hex, which can then be
+converted to signed decimal to be used in the SMClient scripts.
+
+In the Overview section of the SMCLIENT.DOC the second paragraph titled "How it
+works" should be changed to read:
+
+  "Terminal Server Client Simulation" application runs as a stand-alone
+  command-line application. The simulation would create a connection with
+  Terminal Server and issue appropriate commands to load/unload remote
+  sessions, run iostress, ntstress or the "Spy++" application to simulate
+  keyboard/mouse events. (For more information about the "Spy++" application,
+  see the "Spy++" documentation included with Visual C++ or Visual Studio.)
+
+Similarly, Section 2.2: The Scripting Language, outlines identifiers that are
+reserved for use as Client Simulation keywords. The following items that
+reference SpyHydra should be changed to reference the Spy++ application and
+documentation. These items include sections 2.2.4 Start, 2.2.5 Sendoutput, 2.2.6
+Senddata, 2.2.13 Job.
+
+In Section 3: Validation, the paragraph in example 1 should read:
+
+  "This job opens a connection with a Terminal Server, starts the "Spy++"
+  application in Spy mode and after that sends keyboard/mouse events to the
+  Terminal Server. Because "Spy++" is started in Spy mode, it verifies that all
+  inputs are received in the right order and none of these inputs are lost, and
+  also it creates a log file on the Terminal Server. This scenario can be used
+  to verify that the client-server connection works OK. Of course this is true
+  if and only if the Client Simulation will use the same code to connect with a
+  Terminal Server as the real Client."
+
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: 1-57231-808-2 1-57231-805-8 RKBOOK Reskit Resource Kit Win2000 Pro Terminal Server Capacity Planning Tools
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

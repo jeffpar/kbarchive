@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q57705: Mgrep Can Skip Occurrences of Pattern When Using Mgreplist | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q57705: Mgrep Can Skip Occurrences of Pattern When Using Mgreplist" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/057/Q57705/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/057/Q57705/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/057/Q57705/","publisher":null,"image":null,"headline":"Q57705: Mgrep Can Skip Occurrences of Pattern When Using Mgreplist","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q57705-mgrep-can-skip-occurrences-of-pattern-when-using-mgreplist">Q57705: Mgrep Can Skip Occurrences of Pattern When Using Mgreplist</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q57705
+Product(s): See article
+Version(s): 1.02   | 1.02
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | buglist1.02 | mspl13_basic
+Last Modified: 16-JAN-1990
+
+"Mgrep" may find every other occurrence of a search string when used
+to search a list of input files defined my the "mgreplist" macro.
+
+Mgrep searches all files defined by the mgreplist macro, then writes
+the location of a match to the &lt;compile&gt; pseudo file. When using
+either regular expression search patterns or standard search strings,
+mgrep may post every other occurrence of the matched string to the
+&lt;compile&gt; pseudo file. This also causes SHIFT+F3 to display every
+other match in the file being searched.
+
+To see the problem, set the mgreplist:="test.dat" where TEST.DAT
+contains the following:
+
+   #include1
+   #include2
+   #include3
+   #include4
+   #include5
+   #include6
+   #include7
+   #include8
+   #include9
+   #include10
+   #include11
+   #include12
+
+Invoke the mgrep search on the string "include" and then press
+SHIFT+F3 to view the next match. You will see that only every other
+occurrence of "include" is found. Also, if you view the &lt;compile&gt;
+pseudo file it will only contain a list every other occurrence of
+"include".
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

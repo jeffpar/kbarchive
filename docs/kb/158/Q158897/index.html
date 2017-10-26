@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158897: PWS Pages Should Normally Be Stored in the Home Root Folder | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158897: PWS Pages Should Normally Be Stored in the Home Root Folder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158897/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158897/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158897/","publisher":null,"image":null,"headline":"Q158897: PWS Pages Should Normally Be Stored in the Home Root Folder","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158897-pws-pages-should-normally-be-stored-in-the-home-root-folder">Q158897: PWS Pages Should Normally Be Stored in the Home Root Folder</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158897
+Product(s): Internet Information Server
+Version(s): WINDOWS:1.0,1.0a
+Operating System(s): 
+Keyword(s): mspwsw95
+Last Modified: 15-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Personal Web Server versions 1.0, 1.0a for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The default home root folder for the HyperText Transfer Protocol (HTTP) service
+in Microsoft Personal Web Server version 1.0 for Windows 95 is the
+Webshare\Wwwroot folder. Although you can place Web pages that you want people
+to be able to access into other folders, placing Web pages into the home root
+folder makes them easier for people to access.
+
+MORE INFORMATION
+================
+
+Placing Web pages into the home root folder makes them easier for people to
+access because you do not have to specify a folder name when using an Internet
+address to access Web pages in the home root folder. In addition, the home root
+folder is shared by default. If you place Web pages into another folder, you
+need to manually share this folder to allow people to access the Web pages
+inside the folder.
+
+You can find more information about how to share resources in Windows 95 using
+online Help. To do so, use the following steps:
+
+1. Click Start, and then click Help.
+
+2. On the Index tab, in the "Type the first few letters of the word you're
+  looking for" box, type "sharing" (without the quotation marks), and then
+  click Display.
+
+3. In the Topics Found dialog box, click the appropriate topic, and then click
+  Display.
+
+If you want to store the majority of your Web pages in a folder other than the
+Webshare\Wwwroot folder, you may want to make the other folder the home root
+folder for the HTTP service. To do so, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Personal Web Server.
+
+3. Click the Administration tab, click Administration, and then click WWW
+  Administration.
+
+4. Click the Directories tab, and then click Edit on the line for the current
+  home root folder.
+
+5. In the Directory box, type the full path to the folder that you want to make
+  the home root folder, and then click OK. You can also click Browse to locate
+  this folder instead of typing the path to the folder manually.
+
+NOTE: The alias for the home root folder should not be changed. Doing so can
+cause problems that may require you to reinstall Personal Web Server.
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          : mspwsw95 
+Technology        : kbPersWebServSearch kbZNotKeyword3 kbPersWebServ100Win95 kbPersWebServ100aWin95
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

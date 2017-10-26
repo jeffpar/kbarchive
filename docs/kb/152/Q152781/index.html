@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152781: FIX: Incorrect Return Values from COleDateTime Members | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152781: FIX: Incorrect Return Values from COleDateTime Members" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152781/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152781/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152781/","publisher":null,"image":null,"headline":"Q152781: FIX: Incorrect Return Values from COleDateTime Members","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152781-fix-incorrect-return-values-from-coledatetime-members">Q152781: FIX: Incorrect Return Values from COleDateTime Members</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152781
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.0,4.1,4.2
+Operating System(s): 
+Keyword(s): kbole kbCOMt kbMFC kbVC400bug kbVC410bug kbVC420fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+   - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call the COleDateTime members (SetDate, SetTime, and SetDateTime), the
+return value indicates failure even though the call is successful. This may
+cause code that checks the return value to believe incorrectly that the call
+failed.
+
+CAUSE
+=====
+
+This behavior is caused by a problem in the COleDateTime code. COleDateTime
+defines the following enumeration:
+
+      enum DateTimeStatus
+      {
+          valid = 0,
+          invalid = 1,    // Invalid date (out of range, etc.)
+          null = 2,       // Literally has no value
+      };
+
+The problem occurs because SetDate, SetTime, and SetDateTime all return 'valid'
+if successful. However 'valid' is defined to be 0 in the DateTimeStatus
+enumeration, which translates to a Boolean FALSE. The code should check for
+success and return TRUE or FALSE.
+
+RESOLUTION
+==========
+
+Call COleDateTime::GetStatus after each call to SetDate, SetTime, or
+SetDateTime. Then compare the value returned by GetStatus() against 'valid' to
+check for success. The "More Information" section of this article provides an
+example.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in the Visual C++ 4.2b
+technology update.
+
+MORE INFORMATION
+================
+
+Because of the problem outlined previously in this article, code that checks the
+return value from these functions may believe that a failure has occurred when
+in fact the Date/Time was set correctly. For example, the following code will
+ASSERT even though the call was successful:
+
+     COleDateTime myodt;
+     VERIFY(myodt.SetDateTime(96,1,1,10,45,0));
+
+To work around this problem, test the success of the call by calling the
+COleDateTime::GetStatus() member. Compare the value returned by GetStatus()
+against 'valid' to check for success as shown in this example:
+
+      COleDateTime myodt;
+      myodt.SetDateTime(95,6,1,23,45,0);
+      VERIFY(myodt.GetStatus() == COleDateTime.valid);
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbole kbCOMt kbMFC kbVC400bug kbVC410bug kbVC420fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

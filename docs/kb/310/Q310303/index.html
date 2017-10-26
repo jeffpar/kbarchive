@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q310303: PRB: Package and Deployment Wizard Does Not Distribute MDAC 2.6 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q310303: PRB: Package and Deployment Wizard Does Not Distribute MDAC 2.6" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/310/Q310303/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/310/Q310303/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/310/Q310303/","publisher":null,"image":null,"headline":"Q310303: PRB: Package and Deployment Wizard Does Not Distribute MDAC 2.6","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q310303-prb-package-and-deployment-wizard-does-not-distribute-mdac-26">Q310303: PRB: Package and Deployment Wizard Does Not Distribute MDAC 2.6</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q310303
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.1,2.5,2.6,2.7,6.0
+Operating System(s): 
+Keyword(s): kbwizard kbAppSetup kbDeployment
+Last Modified: 31-JAN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Data Access Components versions 2.1, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When your Visual Basic project references the Microsoft ActiveX Data Objects
+library, if you use the Package and Deployment Wizard (PDW) to build the
+installation package, the Package and Deployment Wizard includes the
+Mdac_typ.exe file to install Microsoft Data Access Components (MDAC) on the
+target computer. The Mdac_typ.exe is located in the following folder:
+
+  \Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist
+
+However, every time you update MDAC, you do not guarantee that the Mdac_typ.exe
+file is also updated.
+
+RESOLUTION
+==========
+
+To distribute the correct Mdac_typ.exe file with your application, you must
+replace the version of Mdac_typ.exe in the \Program Files\Microsoft Visual
+Studio\VB98\Wizards\PDWizard\Redist folder with the correct version of that
+file.
+
+MORE INFORMATION
+================
+
+You can use several methods to update MDAC on the development system. For
+example, you can use Visual Basic service packs or Microsoft SQL Server updates
+to update your version of MDAC. You can also download the latest version of the
+MDAC from the Web. However, none of these methods guarantee that the
+Mdac_typ.exe file is also updated.
+
+When you install a Visual Basic service pack, the service pack may or may not
+update MDAC and the Mdac_typ.exe file. The following table outlines the behavior
+of the last three Visual Basic 6.0 service packs:
+
++------------------------------------------------------------------------------------------------------------+
+| Visual Basic 6.0 Service Pack | Includes MDAC Upgrade | Installs MDAC Automatically | Updates Mdac_typ.exe | 
++------------------------------------------------------------------------------------------------------------+
+| Service Pack 3                | Yes (MDAC 2.1)        | Yes                         | Yes (2.1.1.3711.11)  | 
++------------------------------------------------------------------------------------------------------------+
+| Service Pack 4                | Yes (MDAC 2.5)        | No                          | Yes (2.50.4403.12)   | 
++------------------------------------------------------------------------------------------------------------+
+| Service Pack 5                | Yes (MDAC 2.6)        | No                          | No                   | 
++------------------------------------------------------------------------------------------------------------+
+
+If you use any method other than a Visual Basic service pack to update MDAC, the
+Mdac_typ.exe file is not updated automatically. You must manually copy the
+Mdac_typ.exe file in the above-mentioned folder for the version of MDAC that is
+installed.
+
+To determine the version number of a file, follow these steps:
+
+1. Open Microsoft Explorer.
+
+2. Browse to the following folder:
+
+  \Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist
+
+3. Right-click Mdac_typ.exe, and then click Properties.
+
+4. Click the Version tab. The file version appears at the top of this tab.
+
+The following table lists the file versions for the Mdac_typ.exe file and its
+associated MDAC version.
+
+  
+  +------------------------------------------+
+  | MDAC Version | Mdac_typ.exe File Version | 
+  +------------------------------------------+
+  | MDAC 2.0     | 4.71.1015.0               | 
+  +------------------------------------------+
+  | MDAC 2.1     | 21.1.3711.11              | 
+  +------------------------------------------+
+  | MDAC 2.5     | 25.0.4403.121             | 
+  +------------------------------------------+
+  | MDAC 2.6     | 5.0.2920.0                | 
+  +------------------------------------------+
+  | MDAC 2.7     | 27.0.7713.4               | 
+  +------------------------------------------+
+
+REFERENCES
+==========
+
+For additional information about how to distribute and install MDAC with a
+Visual Basic application, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+  Q217754 HOWTO: Control Which MDAC Version the Package and Deployment Wizard
+  (PDW) Distributes
+
+  Q213846 INFO: Deploy Database Applications with the Package and Deployment
+  Wizard (PDW)
+
+  Q231943 INFO: Microsoft Data Access Components (MDAC) Release History
+
+Additional query words: ADO library
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbDeployment 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbMDACSearch kbMDAC210 kbMDAC250 kbMDAC260 kbMDAC270
+Version           : :2.1,2.5,2.6,2.7,6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

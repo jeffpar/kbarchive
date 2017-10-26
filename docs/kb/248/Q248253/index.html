@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248253: XCON: Deferred Delivery Issues in Exchange Server 5.5 SP3 MTA | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248253: XCON: Deferred Delivery Issues in Exchange Server 5.5 SP3 MTA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248253/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248253/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248253/","publisher":null,"image":null,"headline":"Q248253: XCON: Deferred Delivery Issues in Exchange Server 5.5 SP3 MTA","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248253-xcon-deferred-delivery-issues-in-exchange-server-55-sp3-mta">Q248253: XCON: Deferred Delivery Issues in Exchange Server 5.5 SP3 MTA</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248253
+Product(s): Microsoft Exchange
+Version(s): winnt:5.5 SP3
+Operating System(s): 
+Keyword(s): exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix
+Last Modified: 11-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Deferred delivery in Exchange Server 5.5 Service Pack 3 (SP3) may not be working
+correctly. This issue may be exhibited by one of the following behaviors or a
+combination of these behaviors:
+
+- The message transfer agent (MTA) may deliver deferred delivery messages late
+  or not at all. Delivery times may be inconsistent; sometimes deferred
+  delivery mail may be sent a day late or even later.
+
+- If a message is sent with deferred delivery to a distribution list (DL) that
+  contains users from different servers, the message may not be delivered to
+  some users while others receive it. If the message is sent again with
+  deferred delivery to the same DL, some users do not receive the message, but
+  this time they may be different users than in the first attempt.
+
+- If the message is sent with deferred delivery with the sender's name in the
+  To field, From field, BCC field, and CC field all at once, messages may not
+  be delivered on time or may not be delivered to some recipients at all. It
+  may cause the deferred message to get stuck in the MTA.
+
+- When sent with deferred delivery to a DL, messages may be delivered early and
+  ahead of the delivery schedule.
+
+The preceding scenarios can only happen when messages are set for deferred
+delivery by using Microsoft Outlook 97, Microsoft Outlook 98, or the Microsoft
+Exchange Client. These scenarios do not occur for messages set for deferred
+submission. For a more detailed explanation of deferred delivery versus deferred
+submission, please read the "More Information" section later in this article.
+This issue occurs only with Outlook 98 and earlier.
+
+You can verify the presence of deferred delivery messages in the message transfer
+agent (MTA) by:
+
+- Observing the Deferred Delivery Msgs counter in Performance Monitor, under
+  the MSExchangeMTA object.
+
+- Checking the application event log for Event IDs 275 and 273. If diagnostics
+  logging is turned to Maximum on the server's MTA object, X.400 Service
+  category, an Event ID 275 is written to the application log for each deferred
+  delivery message when the MTA is started. Also, when the message timer
+  expires, an Event ID 273 from the MTA service is also written to the
+  application log.
+
+Event ID 275
+
+  A deferred delivery timer started for message id C=US;A=
+  ;P=Microsoft;L=EXCHANGE-991102190304Z-3324, object 991102190400Z. Delivery is
+  scheduled for 991102190400Z. [MTA SUBMIT 15 359] (10)
+
+Event ID 273
+
+  A deferred delivery timer has expired for message C=US;A=
+  ;P=Microsoft;L=EXCHANGE-991102190304Z-3324, object 06000132. [MTA SUBMIT 15
+  205] (12)
+
+CAUSE
+=====
+
+To set deferred delivery on messages, in the client, you click Options from the
+View menu, and then click to select the "Do not deliver before &lt;Date&gt;"
+check box. This defers messages by setting the deferred X.400 bit in the
+message, and they are stored in the MTA until delivery. However, an MTA variable
+that is responsible for setting up deferred delivery timer is not getting
+initialized correctly, which results in the timer queue getting sorted
+incorrectly. Because this variable is not initialized correctly and has
+different values at different times, it results in the different incorrect
+behaviors explained in the "Symptoms" section.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server 5.5.
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+  Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+
+WORKAROUND
+==========
+
+To work around this issue, defer messages from the pre-Outlook 2000 client or
+the Exchange Client by following these steps:
+
+- On the File menu, click Properties, click Send Options, click the MS Exchange
+  Server tab, and then click "Send this item in &lt;variable&gt;" where
+  &lt;variable&gt; can be minutes, hours, days, or weeks.
+
+Stopping and restarting the MTA may also causes deferred messages to be
+delivered.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server 5.5
+SP3. This problem was first corrected in Exchange Server 5.5 Service Pack 4.
+
+MORE INFORMATION
+================
+
+The two methods for deferring messages are deferred delivery and deferred
+submission.
+
+The deferred delivery method is when the deferred delivery bit is set on the
+message and it is placed in the Mtadata folder until the timer expires. You see
+the Event ID 275 indicating that the deferred timer is starting with the MTS-ID
+of the message, and if the X.400 service is set to maximum, an Event ID 272
+immediately follows, which indicates the message submission and displays the
+MTS-ID and the .dat file ID. This is purely MTA-based and it maps to the MTA's
+X.400 P1 field. To set messages for deferred delivery, follow the steps in the
+"Cause" section.
+
+The deferred submission method gives you more control over the message. This
+method puts the message in the Outbox until the timer expires. At this point,
+the information store is responsible for the message, and the user has the
+option of changing the time or deleting the message all together. The scenarios
+described in the "Symptoms" section do not occur for messages that are set for
+deferred submission. To set messages for deferred submission; follow the steps
+in the "Workaround" section.
+
+
+For additional information on deferred delivery and deferred submission, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q188696 XCLN: Deferred Delivery Options for Exchange/Outlook Clients
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 kbExchange550preSP4fix kbExchange550sp4Fix 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q309562: Proxy-to-Proxy Authentication Error after Installing IIS Patch | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q309562: Proxy-to-Proxy Authentication Error after Installing IIS Patch" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/309/Q309562/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/309/Q309562/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/309/Q309562/","publisher":null,"image":null,"headline":"Q309562: Proxy-to-Proxy Authentication Error after Installing IIS Patch","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q309562-proxy-to-proxy-authentication-error-after-installing-iis-patch">Q309562: Proxy-to-Proxy Authentication Error after Installing IIS Patch</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q309562
+Product(s): Internet Information Server
+Version(s): 2.0,5.0
+Operating System(s): 
+Keyword(s): kbCOMIS kbWin2000PreSP3Fix kbWin2000sp3fix
+Last Modified: 15-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+- Microsoft Proxy Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the IIS security patch that is described in Q301625,
+proxy-to-proxy authentication that is based on NTLM may not work, and the
+following error message may be generated from a Microsoft Internet Explorer
+client:
+
+  Error 12201 A chained proxy server or array member requires proxy-to-proxy
+  authentication. Please contact your server administrator.
+
+  Event Log:
+  Event ID 139 Type Error
+  Source: WebproxyServer
+  Proxy Server IP address of upstream proxy requires proxy to proxy
+  authentication. Proxy server PXNT01 is not configured to do so.
+
+This error message may be generated if you have an array (or chain) of proxy
+servers, and the servers are configured to use NTLM authentication.
+
+CAUSE
+=====
+
+This problem is caused by a regression in one of the security hotfixes in IIS.
+
+
+WORKAROUND
+==========
+
+To work around this problem, do not use the NTLM authentication method between
+proxy servers in an array or chain.
+
+RESOLUTION
+==========
+
+IIS Version 5.0 on Microsoft Windows 2000 Server
+------------------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+  Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+  Date           Version              Size     File name
+  ---------------------------------------------------------
+  10-28-2001     5.0.2195.4555 shp    333,072  Asp.dll
+  10-28-2001     5.0.2195.3649 shp    299,792  Fscfg.dll
+  10-28-2001     5.0.2195.4555 shp      8,464  Ftpctrs2.dll
+  10-28-2001     5.0.2195.4555 shp      6,416  Ftpmib.dll
+  10-28-2001     5.0.2195.4555 shp      9,488  Httpmib.dll
+  10-28-2001     5.0.2195.4555 shp     13,584  Infoadmn.dll
+  10-28-2001     5.0.2195.4555 shp    246,032  Infocomm.dll
+  10-28-2001     5.0.2195.4555 shp     62,736  Isatq.dll
+  10-28-2001     5.0.2195.3649 shp      3,584  Spmsg.dll
+  10-28-2001     5.0.2195.4555 shp      7,440  W3ctrs.dll
+  10-28-2001     5.0.2195.4560 shp    348,432  W3svc.dll
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Internet Information
+Services 5.0. This problem was first corrected in Windows 2000 Service Pack 3.
+
+MORE INFORMATION
+================
+
+For additional information about how to obtain a hotfix for Windows 2000
+Datacenter Server, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q265173 Datacenter Program and Windows 2000 Datacenter Server Product
+
+For additional information about how to install Windows 2000 and Windows 2000
+hotfixes at the same time, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q249149 Installing Microsoft Windows 2000 and Windows 2000 Hotfixes
+
+For additional information on how to install multiple hotfixes with only one
+reboot, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+  Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+
+Additional query words: kbIISCom
+
+======================================================================
+Keywords          : kbCOMIS kbWin2000PreSP3Fix kbWin2000sp3fix 
+Technology        : kbiisSearch kbAudDeveloper kbiis500 kbProxyServSearch kbProxyServ200
+Version           : :2.0,5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

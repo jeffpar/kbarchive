@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148242: HOWTO: Handle OCM_CTLCOLORxxx Reflected Messages | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148242: HOWTO: Handle OCM_CTLCOLORxxx Reflected Messages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148242/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148242/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148242/","publisher":null,"image":null,"headline":"Q148242: HOWTO: Handle OCM_CTLCOLORxxx Reflected Messages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148242-howto-handle-ocm_ctlcolorxxx-reflected-messages">Q148242: HOWTO: Handle OCM_CTLCOLORxxx Reflected Messages</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148242
+Product(s): Microsoft C Compiler
+Version(s): 4.0,4.1,4.2,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbole kbActiveX kbCOMt kbCtrl kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGr
+Last Modified: 12-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), included with:
+   - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+   - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+   - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+   - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows you how to change the background color of an OLE control that
+subclasses a Windows Control, with sample code for an Edit control.
+
+This article should apply to Button, Static, ListBox, and ComboBox controls as
+well.
+
+MORE INFORMATION
+================
+
+Please refer to the following article in the Microsoft Knowledge Base:
+
+  Q130952 WM_CTLCOLORxxx Message Changes for Windows 95
+
+for more about the exact WM_CTLCOLORxxx message sent by each control. If a
+control sends the WM_CTLCOLORSTATIC, you have to handle the OCM_CTLCOLORSTATIC
+message in the OCX and so on.
+
+To change the background color of an OLE Control that subclasses an Edit Control,
+you must handle the OCM_CTLCOLOREDIT(32-bit) messages. These messages are
+intercepted by the "reflector window" (created for an OLE control that
+subclasses a Windows control) that reflects them back to the OLE control itself.
+In response to these reflected messages, you must set the background color (and
+optionally the foreground color) and return a handle to a brush initialized with
+the background color.
+
+Step-by-Step Example
+--------------------
+
+1. Generate an MFC ActiveX Control Wizard Application, and select the option
+  that allows you to subclass an Edit control.
+
+2. To handle an OCM_CTLCOLOREDIT reflected window message, declare the following
+  handler function in the .h file of your control's class:
+
+  LRESULT OnOcmCtlColor(WPARAM wParam, LPARAM lParam);
+
+3. In the .cpp file of your control's class, add an ON_MESSAGE entry to the
+  message map:
+
+  ON_MESSAGE(OCM_CTLCOLOREDIT, OnOcmCtlColor)
+
+4. Declare CBrush* m_pBackBrush in your control's .h file.
+
+5. Set m_pBackBrush to NULL in the constructor.
+
+6. Release the GDI object and delete the brush object in the control destructor:
+
+  CEdtclrCtrl::~CEdtclrCtrl()
+      {
+         if(m_pBackBrush!=NULL)
+  	{
+             m_pBackBrush-&gt;DeleteObject();
+             delete m_pBackBrush;
+  	}
+      }
+
+REFERENCES
+==========
+
+Refer to technical article [ASCII 147]TN062: Message Reflection for Windows
+Controls[ASCII 148] and the article [ASCII 147]ActiveX Controls: Sub-classing a
+Windows Control in Visual C++ Programmer's Guide.[ASCII 148]
+
+Additional query words: list box combo
+
+======================================================================
+Keywords          : kbcode kbole kbActiveX kbCOMt kbCtrl kbMFC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,4.1,4.2,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

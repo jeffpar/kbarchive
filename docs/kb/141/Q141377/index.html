@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q141377: Differences Between Regedit.exe and Regedt32.exe | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q141377: Differences Between Regedit.exe and Regedt32.exe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/141/Q141377/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/141/Q141377/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/141/Q141377/","publisher":null,"image":null,"headline":"Q141377: Differences Between Regedit.exe and Regedt32.exe","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q141377-differences-between-regeditexe-and-regedt32exe">Q141377: Differences Between Regedit.exe and Regedt32.exe</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q141377
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): kbtool
+Last Modified: 04-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT provides two utilities that allow you to modify the configuration and
+registration databases. The two utilities are Regedit.exe and Regedt32.exe. This
+article describes the differences between the two utilities.
+
+MORE INFORMATION
+================
+
+Regedit.exe
+-----------
+
+Regedit.exe is the registration editor for 16-bit Windows, which is used to
+modify the Windows registration database. The database is located in the Windows
+directory as REG.DAT. The database contains information about 16- bit
+applications, and is used by File Manager for opening and printing files. It is
+also used by applications that support Object Linking and Embedding (OLE).
+REG.DAT is used and maintained by Windows on Windows (WOW) and 16-bit Windows
+applications. The WOW layer resides on top of the Virtual DOS Machine (VDM).
+
+Regedit.exe is a 16-bit application that is included in Windows NT for
+compatibility with previous 16-bit applications. Regedit provides a method for
+examining REG.DAT under Windows NT. You can migrate the REG.DAT database file to
+the Windows NT registry during the first logon to an initial installation of
+Windows NT.
+
+Regedt32.exe
+------------
+
+Regedt32.exe is the configuration editor for Windows NT, which is used to modify
+the Windows NT configuration database, also known as the Windows NT Registry.
+This editor allows you to view or modify the Windows NT Registry. The editor
+provides views of windows that represent sections of the registry, called hives.
+Each window displays two sections. On the left side, there are folders that
+represent registry keys. On the right side, there are the values associated with
+the selected registry key. Regedt32 is a powerful tool, which you must use with
+extreme caution when changing registry values. Missing or incorrect values in
+the registry can render the Windows NT installation unusable.
+
+For additional information on Regedit and Regedt32, please see the on-line Help
+for these utilities or the Resource Kit Tools Overview Help in the Windows NT
+Resource Kit.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

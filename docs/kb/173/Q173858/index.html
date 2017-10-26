@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173858: To Complete the Install You Need to Re-boot… | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173858: To Complete the Install You Need to Re-boot…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173858/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173858/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173858/","publisher":null,"image":null,"headline":"Q173858: To Complete the Install You Need to Re-boot…","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173858-to-complete-the-install-you-need-to-re-boot">Q173858: To Complete the Install You Need to Re-boot…</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173858
+Product(s): The Microsoft Network
+Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6,95
+Operating System(s): 
+Keyword(s): kbsetup kbmsn
+Last Modified: 16-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- the operating system: Microsoft Windows 95 
+- The Microsoft Network versions 1.3, 2.0, 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start MSN, The Microsoft Network, you may receive the following error
+message:
+
+  To complete the install you need to re-boot your computer.
+
+CAUSE
+=====
+
+This behavior can occur if there is a program running that does not allow the
+MSN installation to finish.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use the following steps:
+
+1. Click Start, click Shut Down, click Restart The Computer, and then click Yes.
+  When you see the "Starting Windows 95" message, press the F8 key, and then
+  choose Command Prompt Only from the Startup menu.
+
+  NOTE: If the Windows 95 graphical user interface (GUI) loads, edit the
+  Autoexec.bat file and remove or disable the "win" line.
+
+  Start Windows 95 with a minimal set of Windows drivers by typing the following
+  line:
+
+  "win /d:m" (without the quotation marks)
+
+  NOTE: If networking components are required to start Windows 95, type the
+  following line instead of the line above:
+
+  "win /d:n" (without the quotation marks)
+
+2. Rename the Mcm.dll and Confapi.dll files. To rename these files, follow these
+  steps:
+  a. Click Start, point to Find, and then click Files Or Folders.
+
+  b. In the Named box, type "mcm.dll" (without the quotation marks), and then
+     click Find Now.
+
+  c. In the list of found files, right-click the Mcm.dll file, and then click
+     Rename.
+
+  d. Type "mcm.old" (without the quotation marks), and then press ENTER.
+
+  e. Repeat steps A-D to rename the Confapi.dll file to Confapi.old.
+
+  f. Close the Find dialog box.
+
+3. Reinstall MSN, and then test to determine if the behavior is resolved. If the
+  behavior is resolved, skip the remaining steps. If the behavior is not
+  resolved, continue to the next step.
+
+4. Copy the correct MSN files to the appropriate folders. To do so, follow these
+  steps:
+  a. Click Start, point to Programs, and then click Windows Explorer.
+
+  b. Click the C:\Program Files\The Microsoft Network\Temp\Mosbin folder, and
+     then click Select All on the Edit menu.
+
+  c. On the Edit menu, click Copy.
+
+  d. Click the C:\Program Files\The Microsoft Network folder, and then click
+     Paste on the Edit menu. If you are prompted to overwrite any existing
+     files, click Yes.
+
+  e. Repeat steps B-D to copy the files in the C:\Program Files\The Microsoft
+     Network\Temp\Winhelp folder to the C:\Windows\Help folder.
+
+  f. Repeat steps B-D to copy the files in the C:\Program Files\The Microsoft
+     Network\Temp\Winsys folder to the C:\Windows\System folder.
+
+  g. Close Windows Explorer.
+
+
+Additional query words: 1.20
+
+======================================================================
+Keywords          : kbsetup kbmsn 
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbMSN200 kbMSN252 kbMSN130 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6,95
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248432: Inventory Based on String Occurrence in File Does Not Find Match | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248432: Inventory Based on String Occurrence in File Does Not Find Match" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248432/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248432/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248432/","publisher":null,"image":null,"headline":"Q248432: Inventory Based on String Occurrence in File Does Not Find Match","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248432-inventory-based-on-string-occurrence-in-file-does-not-find-match">Q248432: Inventory Based on String Occurrence in File Does Not Find Match</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248432
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2 SP4
+Operating System(s): 
+Keyword(s): kbenv kbtool kbsms120bug
+Last Modified: 12-MAY-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the hotfix that is listed in the following Microsoft Knowledge
+Base article, packages that are being inventoried based on a string occurrence
+in a file are no longer visible under PackagesPersonal Computer Properties in
+SMS Administrator:
+
+  Q236913 Couldn't Open ISV MIF (ISV MIF FileName)
+
+CAUSE
+=====
+
+This problem can occur because the updated inventory agent files (Inv32cli.exe
+and Invwin32.exe) from Q236913 causes this part of the inventory process to stop
+functioning.
+
+WORKAROUND
+==========
+
+To work around this problem, use the Systems Management Server (SMS) 1.2 Service
+Pack 4 version (or earlier) of the Inv32cli.exe and Invwin32.exe files. To
+prevent the problem that is documented in Q236913, prevent Inv32cli.exe and
+Invwin32.exe from running at the same time by removing the calls to Invwin32.exe
+in the Smsls.bat and Runsms.bat files.
+
+NOTE: After you edit either the Smsls.bat or Runsms.bat file, the next time a
+service pack upgrade is performed on the site, the changes may be overwritten.
+Because of this, it is a good practice to keep a record of such changes. After
+the service pack upgrade is completed, re-evaluate if the change is necessary,
+and if it is, add them back.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2 Service Pack 4.
+
+Additional query words: prodsms IDMIF inventory ISVMIF
+
+======================================================================
+Keywords          : kbenv kbtool kbsms120bug 
+Technology        : kbSMSSearch kbSMS120SP4
+Version           : winnt:1.2 SP4
+Issue type        : kbbug
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q142660: Upgrade from Uni- to Multiprocessor (Uptomp.exe) and Win32k.sys | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q142660: Upgrade from Uni- to Multiprocessor (Uptomp.exe) and Win32k.sys" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/142/Q142660/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/142/Q142660/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/142/Q142660/","publisher":null,"image":null,"headline":"Q142660: Upgrade from Uni- to Multiprocessor (Uptomp.exe) and Win32k.sys","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q142660-upgrade-from-uni--to-multiprocessor-uptompexe-and-win32ksys">Q142660: Upgrade from Uni- to Multiprocessor (Uptomp.exe) and Win32k.sys</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q142660
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kbhw kbsetup kbHardware
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you upgrade a single processor computer with Windows NT 4.0 installed to a
+multiprocessor system, several files have to be changed.
+
+The affected files are:
+
+  Ntoskrnl.exe (Ntkrnlmp.exe has to be copied and renamed to Ntoskrnl.exe)
+  Hal.dll (System specific Hal*.dll has to copied and renamed to Hal.dll)
+  Kernel32.dll
+  Ntdll.dll
+  Winsrv.dll
+  Win32k.sys (New for Windows NT 4.0)
+
+CAUSE
+=====
+
+Although Uptomp.exe from the Windows NT 4.0 Resource Kit does assist to copy the
+correct files, Win32k.sys is not copied with this utility.
+
+RESOLUTION
+==========
+
+To resolve the problem:
+
+1. Locate the file Win32k.sys on the Windows NT 4.0 compact disc, and copy it to
+  the System32 directory.
+
+  NOTE: The file might be compressed as Win32k.sy_. Use Expand.exe to uncompress
+  the file.
+
+  You must then modify the %systemroot%\repair\setup.log file to modify the CRC
+  value of win32k.sys to equal 13e42a - this value is for the multi-processor
+  version and is used when installing future service packs or repairing the
+  system files.
+
+  NOTE: If the customer already has a Service Pack loaded on the system he
+  should point to the Service pack directory when the utility asks him for a
+  path for the replacement files.
+
+2. Modify the Resource Kit Uptomp.inf file and add the Win32k.sys to the list of
+  files as follows:
+
+  hal.dll = 1, 2, hal.dll
+  ntoskrnl.exe = 0, 2, ntkrnlmp.exe
+  ntdll.dll = 0, 2, ntdll.dll
+  kernel32.dll = 0, 2, kernel32.dll
+  winsrv.dll = 0, 2, winsrv.dll
+  win32k.sys = 0, 2, win32k.sys
+
+
+Additional query words: prodnt uptomp.exe processor multi
+
+======================================================================
+Keywords          : kbenv kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

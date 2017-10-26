@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q66462: C Run-time Functions Can Use Far Pointers in Medium Model | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q66462: C Run-time Functions Can Use Far Pointers in Medium Model" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/066/Q66462/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/066/Q66462/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/066/Q66462/","publisher":null,"image":null,"headline":"Q66462: C Run-time Functions Can Use Far Pointers in Medium Model","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q66462-c-run-time-functions-can-use-far-pointers-in-medium-model">Q66462: C Run-time Functions Can Use Far Pointers in Medium Model</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q66462
+Product(s): Microsoft Windows Software Development Kit
+Version(s): WINDOWS:3.0,3.1
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Far pointers to data can be used in calls to the C Run-time library routines
+written using the medium model. This is often necessary because many
+Windows-based applications are written using the medium model, but must pass far
+data pointers to the medium model C run-time library routines. Unless
+precautions are taken, passing far pointers to medium model C Run-time routines
+will fail.
+
+To use far pointers in calls to medium model C Run-time routines, the
+model-independent version of the C Run-time functions must be explicitly
+specified. A model-independent version of a C Run-time function requires
+specification of the size of the data pointers required (NEAR or FAR) for both
+function parameters and return values.
+
+Not all C Run-time routines have model-independent versions. To determine if a
+routine has a model-independent version, please consult the header file
+associated with the routine or the C Run-time source manual.
+
+MORE INFORMATION
+================
+
+When an application is compiled using the medium memory model, the C compiler
+assumes that the application will have one data segment and multiple code
+segments. Because the application has only one data segment, all pointers to
+data are assumed to be near pointers. Therefore, when the compiler encounters a
+C Run-time function in the source code, it automatically assumes that any
+pointer parameters contain near pointers. The compiler uses the appropriate
+medium model declaration for the run-time functions. This is appropriate for
+NEAR data items, but many Windows API functions require or return FAR pointers,
+such as GlobalLock().
+
+To override the compiler's assumptions specify the model-independent version of
+the desired routine in the application source code. The header file associated
+with the routine or the C Run-time source manual can be used to determine which
+C Run-time routines have model-independent versions. Typically, the
+model-independent versions of C Run-time functions are preceded by an "_n" or an
+"_f". For example, strdup(), a memory model-dependent function, has two
+model-independent derivatives: _nstrdup() for NEAR pointers and _fstrdup() for
+FAR pointers.
+
+When using the model-independent versions of the C Run-time routines, the
+compiler will not assume that the application's data is near. Thus, far pointers
+can be used in medium model applications where near pointers would normally be
+used.
+
+Unfortunately, not all C Run-time routines offer this flexibility. If the routine
+does not have a model-independent version, two options are available:
+
+1. Write a model-independent routine that offers the same functionality as the C
+  Run-time routine.
+
+2. Copy the data into the default data segment so that near pointers, and the
+  standard C Run-time routines, can be used.
+
+One C Run-time routine that demonstrates model independence is strncpy(). If the
+application source code includes a line similar to the following
+
+     Char_ptr = strncpy(String1, Const_String2, Count);
+
+the compiler will use the default declaration for the routine. That declaration
+is found in the header file and resembles the following:
+
+     char *strncpy(char *string1, const char *string2, size_t);
+
+In this situation, the data must be in the default data segment because the
+routine will use the DS register when referencing both strings.
+
+In the same medium model applications, if one or both of the strings are in a
+data segment other than the default data segment, modify the same source line as
+follows:
+
+     Char_ptr = _fstrncpy(String1, Const_String2, Count);
+
+In this case, the compiler will use the following function declaration
+
+     char _far * _far _fstrncpy(char _far *string1,
+                                const char _far*strings,
+                                size_t count);
+
+and the application will then properly access the data in the far segments.
+
+NOTE: When using the same C Run-time routine in a large model application, the
+default function declaration will be the model-independent version. Thus, in the
+example above, the compiler will replace the call to strncpy() with an
+appropriate call to _fstrncpy().
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

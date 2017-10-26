@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q127038: FIX: CString::Format Gives Assertion Failed, Access Violation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q127038: FIX: CString::Format Gives Assertion Failed, Access Violation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/127/Q127038/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/127/Q127038/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/127/Q127038/","publisher":null,"image":null,"headline":"Q127038: FIX: CString::Format Gives Assertion Failed, Access Violation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q127038-fix-cstringformat-gives-assertion-failed-access-violation">Q127038: FIX: CString::Format Gives Assertion Failed, Access Violation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q127038
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1
+Operating System(s): 
+Keyword(s): kbcode kbMFC kbString kbVC200bug kbVC210bug kbVC220fix kbGrpDSMFCATL kbNoUpdate
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using CString::Format causes one of the following:
+
+- Assertion Failed: &lt;application&gt;: File strex.cpp, Line 360
+
+-or-
+
+- Assertion Failed: &lt;application&gt;: File strex.cpp, Line 348
+
+-or-
+
+- An Access Violation with output similar to this:
+
+  Unhandled Exception in &lt;application&gt; (MFC30D.DLL)
+  0xC0000005: Access Violation
+
+CAUSE
+=====
+
+There are three known bugs in the CString::Format() member function in MFC
+version 3.0 that can cause this behavior:
+
+- Bug One: Using a format width specifier that is greater than the length of
+  the data passed to CString::Format().
+
+- Bug Two: Using an asterisk width specifier.
+
+- Bug Three: Using an asterisk precision specifier.
+
+RESOLUTION
+==========
+
+Create an updated function by using the code listed below. To use the code,
+define a new function named Format. The new format function will take a CString
+as the first parameter. Then use the new Format function instead of
+CString::Format.
+
+For example, instead of using this:
+
+     CString str;
+     str.Format(...)
+
+use this:
+
+     CString str;
+     Format(str,...)
+
+Updated CString::Format Code with Necessary Constant Definitions
+----------------------------------------------------------------
+
+  #define FORCE_ANSI      0x10000
+  #define FORCE_UNICODE   0x20000
+
+  // formatting (using wsprintf style formatting)
+  void Format(CString&amp; str, LPCTSTR lpszFormat, ...)
+  {
+       ASSERT(AfxIsValidString(lpszFormat, FALSE));
+
+       va_list argList;
+       va_start(argList, lpszFormat);
+
+       // make a guess at the maximum length of the resulting string
+       int nMaxLen = 0;
+       for (LPCTSTR lpsz = lpszFormat; *lpsz != '\0';
+            lpsz = _tcsinc(lpsz))
+       {
+            // handle '%' character, but watch out for '%%'
+            if (*lpsz != '%' || *(lpsz = _tcsinc(lpsz)) == '%')
+            {
+                 nMaxLen += _tclen(lpsz);
+                 continue;
+            }
+
+            int nItemLen = 0;
+
+            // handle '%' character with format
+            int nWidth = 0;
+            for (; *lpsz != '\0'; lpsz = _tcsinc(lpsz))
+            {
+                 // check for valid flags
+                 if (*lpsz == '#')
+                      nMaxLen += 2;   // for '0x'
+                 else if (*lpsz == '*')
+                      nWidth = va_arg(argList, int);
+                 else if (*lpsz == '-' || *lpsz == '+' || *lpsz == '0'
+                          || *lpsz == ' ')
+                             ;
+                 else // hit non-flag character
+                            break;
+            }
+            // get width and skip it
+            if (nWidth == 0)
+            {
+                 // width indicated by
+                 nWidth = _ttoi(lpsz);
+                 for (; *lpsz != '\0' &amp;&amp; _istdigit(*lpsz);
+                          lpsz = _tcsinc(lpsz))
+                       ;
+            }
+            ASSERT(nWidth &gt;= 0);
+
+            int nPrecision = 0;
+            if (*lpsz == '.')
+            {
+                 // skip past '.' separator (width.precision)
+                 lpsz = _tcsinc(lpsz);
+
+                 // get precision and skip it
+                 if (*lpsz == '*')
+                 {
+                      nPrecision = va_arg(argList, int);
+                      lpsz = _tcsinc(lpsz);
+                 }
+                 else
+                 {
+                      nPrecision = _ttoi(lpsz);
+                      for (; *lpsz != '\0' &amp;&amp; _istdigit(*lpsz);
+                      lpsz = _tcsinc(lpsz))
+                              ;
+                 }
+                 ASSERT(nPrecision &gt;= 0);
+            }
+
+            // should be on type modifier or specifier
+            int nModifier = 0;
+            switch (*lpsz)
+            {
+            // modifiers that affect size
+            case 'h':
+                 nModifier = FORCE_ANSI;
+                 lpsz = _tcsinc(lpsz);
+                 break;
+            case 'l':
+                 nModifier = FORCE_UNICODE;
+                 lpsz = _tcsinc(lpsz);
+                 break;
+
+            // modifiers that do not affect size
+            case 'F':
+            case 'N':
+            case 'L':
+                 lpsz = _tcsinc(lpsz);
+                 break;
+            }
+
+            // now should be on specifier
+            switch (*lpsz | nModifier)
+            {
+            // single characters
+            case 'c':
+            case 'C':
+                 nItemLen = 2;
+                 va_arg(argList, TCHAR);
+                 break;
+            case 'c'|FORCE_ANSI:
+            case 'C'|FORCE_ANSI:
+                 nItemLen = 2;
+                 va_arg(argList, char);
+                 break;
+            case 'c'|FORCE_UNICODE:
+            case 'C'|FORCE_UNICODE:
+                 nItemLen = 2;
+                 va_arg(argList, WCHAR);
+                 break;
+
+            // strings
+            case 's':
+            case 'S':
+                 nItemLen = lstrlen(va_arg(argList, LPCTSTR));
+                 nItemLen = max(1, nItemLen);
+                 break;
+            case 's'|FORCE_ANSI:
+            case 'S'|FORCE_ANSI:
+                 nItemLen = lstrlenA(va_arg(argList, LPCSTR));
+                 nItemLen = max(1, nItemLen);
+                 break;
+  #ifndef _MAC
+            case 's'|FORCE_UNICODE:
+            case 'S'|FORCE_UNICODE:
+                 nItemLen = wcslen(va_arg(argList, LPWSTR));
+                 nItemLen = max(1, nItemLen);
+                 break;
+  #endif
+            }
+
+            // adjust nItemLen for strings
+            if (nItemLen != 0)
+            {
+                 nItemLen = max(nItemLen, nWidth);
+                 if (nPrecision != 0)
+                 nItemLen = min(nItemLen, nPrecision);
+            }
+            else
+            {
+                 switch (*lpsz)
+                 {
+                 // integers
+                 case 'd':
+                 case 'i':
+                 case 'u':
+                 case 'x':
+                 case 'X':
+                 case 'o':
+                      va_arg(argList, int);
+                      nItemLen = 32;
+                      nItemLen = max(nItemLen, nWidth+nPrecision);
+                      break;
+
+                 case 'e':
+                 case 'f':
+                 case 'g':
+                 case 'G':
+                      va_arg(argList, _AFX_DOUBLE);
+                      nItemLen = 32;
+                      nItemLen = max(nItemLen, nWidth+nPrecision);
+                      break;
+
+                 case 'p':
+                      va_arg(argList, void*);
+                      nItemLen = 32;
+                      nItemLen = max(nItemLen, nWidth+nPrecision);
+                      break;
+
+                 // no output
+                 case 'n':
+                      va_arg(argList, int*);
+                      break;
+
+                 default:
+                      ASSERT(FALSE);  // unknown formatting option
+                 }
+            }
+
+            // adjust nMaxLen for output nItemLen
+            nMaxLen += nItemLen;
+       }
+       va_end(argList);
+
+       // finally, set the buffer length and format the string
+       va_start(argList, lpszFormat);  // restart the arg list
+       str.GetBuffer(nMaxLen);
+       VERIFY(_vstprintf(str.GetBuffer(1), lpszFormat, argList) &lt;= nMaxLen);
+       str.ReleaseBuffer();
+       va_end(argList);
+  }
+
+STATUS
+======
+
+Microsoft has confirmed these to be bugs in the Microsoft products listed at the
+beginning of this article. The first two bugs were fixed in MFC version 3.1 that
+shipped with Microsoft Visual C++, 32-bit Edition, version 2.1, and the third
+was fixed in Visual C++, 32-bit Edition, version 2.2.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Problems
+---------------------------------
+
+The following code fragments illustrate the bugs.
+
+Bug One: Using width format specifier greater than data length causes failure:
+
+     char *pstr = "four";
+     CString string;
+
+     string.Format("%4s", pstr);    // Okay
+     string.Format("%10s", pstr);   // Causes failure
+     string.Format("%-10s", pstr);  // Causes failure
+
+Bug Two: Using asterisk width specifier causes failure:
+
+     char *pstr = "data";
+     CString string;
+     string.Format("%*s", 4, pstr);     // Causes error
+
+Bug Three: Using an asterisk precision specifier causes failure:
+
+     CString str;
+     str.Format("%*.*s",5,5,"Hello World"); // Causes assertion
+
+Additional query words: 2.00 3.00 2.10 3.10
+
+======================================================================
+Keywords          : kbcode kbMFC kbString kbVC200bug kbVC210bug kbVC220fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

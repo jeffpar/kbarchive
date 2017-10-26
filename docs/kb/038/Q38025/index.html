@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q38025: Signed char Type Converted to int Type at Function Call | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q38025: Signed char Type Converted to int Type at Function Call" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/038/Q38025/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/038/Q38025/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/038/Q38025/","publisher":null,"image":null,"headline":"Q38025: Signed char Type Converted to int Type at Function Call","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q38025-signed-char-type-converted-to-int-type-at-function-call">Q38025: Signed char Type Converted to int Type at Function Call</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q38025
+Product(s): See article
+Version(s): 4.00 5.00 5.10 | 5.10
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 15-NOV-1988
+
+Question :
+
+Any char value equal to or greater than 0x80 is printed with 0xff
+preceding it when I do the following:
+
+1. Declare an array of char and initialize it with hexadecimals.
+
+2. Later in the program, use printf to display the values of the
+   array element.
+
+3. Use "%2x" as format string. (See sample program below.)
+
+Why does this behavior occur?
+
+Response:
+
+Use "unsigned char" to declare the array "bit", or use the /J compiler
+option to change the char type from its default of signed char to
+unsigned char.
+
+This is not a problem of Microsoft C Compiler. In the sample program
+below, the element of array "bits" has char type, which is a signed
+type in the Microsoft C compiler. In C when a variable is used as an
+actual argument in a function call, usual unary data type conversion is
+automatically performed before the argument is passed to the function.
+
+In particular, signed char type is converted to int type using sign
+extension (see the "Microsoft C Optimizing Compiler Language
+Reference" manual for data conversion rules.) Because signed char type
+can represent values from -128 to 127 (in our compiler -128 is not
+defined), and a negative value is represented in two's complement form,
+any hexadecimal number greater than 0x80, which is a negative value in
+signed char type, will be converted to signed int type in
+corresponding two's complement form.
+
+For example, 0x80 (-128) is converted to 0xff80; 0x81 (-127) is
+converted to 0xff81.
+
+When using "printf" with unsigned hexadecimal integer control
+character "%x", the values are displayed in its unsigned hexadecimal
+format. If "%d" is used, the values are displayed in signed decimal
+format.
+
+The following is a sample program:
+
+#include &lt;stdio.h&gt;
+char bits[8] = {0x80, 0x81, 0x91, 0x00, 0x7f, 0x20, 0x40, 0x08} ;
+main()
+{  int i ;
+   for (i=0; i&lt;8 ; i++)
+      printf("%2x ", bits[i]) ;
+   printf("\n") ;
+   for (i=0; i&lt;8 ; i++)
+      printf("%d ", bits[i]) ;
+}
+
+Output :
+  ff80 ff81 ff91 00 7f 20 08
+  -128 -127 -111 0  127 32 8
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

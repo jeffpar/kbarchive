@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q128468: PROFS: Cannot Receive Attachments Not Sent As Documents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q128468: PROFS: Cannot Receive Attachments Not Sent As Documents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/128/Q128468/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/128/Q128468/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/128/Q128468/","publisher":null,"image":null,"headline":"Q128468: PROFS: Cannot Receive Attachments Not Sent As Documents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q128468-profs-cannot-receive-attachments-not-sent-as-documents">Q128468: PROFS: Cannot Receive Attachments Not Sent As Documents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q128468
+Product(s): Microsoft Mail For PC Networks
+Version(s): 3.4a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 26-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Mail Host Access for IBM PROFS and OfficeVision, version 3.4a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+IBMMAIL and other E-Mail systems connected to MS-MAIL via PROFS gateway cannot
+receive attachments if they are not sent as documents. The attachment is
+rejected due to invalid origin node name and userid. The node name displayed is
+the MS-RSCS node name and the userid is the MS-GATE userid.
+
+CAUSE
+=====
+
+When the attachment from MS-MAIL is not sent to the host as a document, it is
+sent in 'netdata' format. The header of the file contains the origin node name
+taken from the SYSTEM NETID file of MS-GATE, and the origin id of the gateway.
+
+The receiving end on IBMMAIL verifies (as an additional security measure,
+probably) that the origin node name and userid in the NETDATA file correspond to
+the origin node name and userid taken from NJE (Network Job Entry) Header.
+
+The NETDATA header is created by the CMS SENDFILE program which the gateway is
+using to send attachments.
+
+RESOLUTION
+==========
+
+The SENDFILE program is using IDENTIFY MODULE to obtain the origin node name and
+the userid. IDENTIFY MODULE is part of the CMS Nucleus. The SENDFILE program is
+used by the host code in only one place: PWAATTS XEDIT macro.
+
+2 programs were created:
+
+PWAIDENT TEXT - this is object code of PWAIDENT ASSEMBLE program. This program
+reads the first line of the PWAIDENT DATA file and stacks the content in the
+program stack.
+
+PWASENDF EXEC - this exec takes input parameters in the same format as SENDFILE
+EXEC and performs the following functions:
+
+1. It uses global variables, LANNODE and LANID, and the IDENTIFY command to
+  create a one line file PWAIDENT DATA A. The file has the same format as the
+  output from the IDENTIFY command, but the origin node name and userid are
+  taken from the LANNODE and LANID global variables.
+
+2. Generates IDENTIFY MODULE using PWAIDENT TEXT and adds it to Nucleus
+  extension.
+
+3. Calls SENDFILE to send the file. The SENDFILE CMS command is using "our"
+  IDENTIFY command from the nucleus extension.
+
+4. Drops IDENTIFY MODULE from nucleus extension.
+
+To implement the change we should change line 193 in PWAATTS XEDIT to call
+PWASENDF EXEC instead of SENDFILE EXEC.
+
+IMPACT
+------
+
+Two new programs are added to the Profs Host Access program. There is no
+noticeable performance degradation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailGateIBMPROFS340a
+Version           : :3.4a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

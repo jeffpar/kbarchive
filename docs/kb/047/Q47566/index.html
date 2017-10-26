@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q47566: SHARED Dynamic Array Element Passed as Parameter Aliases to 0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q47566: SHARED Dynamic Array Element Passed as Parameter Aliases to 0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/047/Q47566/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/047/Q47566/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/047/Q47566/","publisher":null,"image":null,"headline":"Q47566: SHARED Dynamic Array Element Passed as Parameter Aliases to 0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q47566-shared-dynamic-array-element-passed-as-parameter-aliases-to-0">Q47566: SHARED Dynamic Array Element Passed as Parameter Aliases to 0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q47566
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom | mspl13_basic
+Last Modified: 14-NOV-1990
+
+If you attempt to alter an element of a SHARED or COMMON SHARED
+$DYNAMIC array while inside a SUBprogram and that element has also
+been passed as a parameter to the SUBprogram, the value returned in
+the parameter will be the value assigned to the array element upon
+exit from the SUBprogram, and will replace whatever value may have
+been assigned directly to the array in the SUBprogram.
+
+This behavior occurs in Microsoft QuickBASIC versions 4.00, 4.00b, and
+4.50, Microsoft BASIC Compiler 6.00 and 6.00b for MS-DOS and MS OS/2,
+and Microsoft BASIC PDS 7.00 for MS-DOS and MS OS/2.
+
+This is a form of variable aliasing, which is a programming practice
+not recommended by Microsoft. A variable passed in an argument list to
+a procedure should not also be shared by means of the SHARED statement
+or the SHARED attribute (of the DIM or COMMON statement) in that
+procedure's module.
+
+Similarly, a variable should not be passed twice in the list of
+arguments passed to a procedure, or else variable aliasing problems
+occur. This information can be found under "The Problem of Variable
+Aliasing" section, on Page 64 in the "Microsoft BASIC 7.0:
+Programmer's Guide" for BASIC PDS versions 7.00 and 7.10, on Page 68
+of the "Microsoft QuickBASIC 4.5: Programming in BASIC" manual, and on
+Page 78 of "Microsoft QuickBASIC 4.0: Programming in BASIC: Selected
+Topics" manual for versions 4.00 and 4.00b.
+
+The behavior in the first example above results from the way
+QuickBASIC accesses $DYNAMIC arrays. Since access to these arrays
+requires a far pointer, and all parameters use near pointers, a
+temporary location is set aside for the parameter before and during
+the CALL, and the value in this location is assigned to the actual
+array element following the return from the CALL. Thus, whatever value
+you assign to the array element inside the SUBprogram using the SHARED
+array name will be replaced with the value of the parameter when the
+SUBprogram ends.
+
+Note that when inside the QuickBASIC environment, virtually all arrays
+are treated as $DYNAMIC. It is only at compile time that $STATIC
+arrays are actually made $STATIC by allocation in the data segment.
+Since the QuickBASIC editor treats most arrays as $DYNAMIC, this
+behavior can be observed in the editor even for arrays declared
+$STATIC. Please see Pages 32-33 in the "Microsoft QuickBASIC 4.0:
+BASIC Language Reference" manual for versions 4.00 and 4.00b, and
+Pages 719-721 in the "Microsoft BASIC 7.0: Programmer's Guide" for
+BASIC PDS Version 7.00, for a complete description of where arrays are
+stored.
+
+The following example demonstrates this behavior:
+
+DECLARE SUB test (a!)
+CLS
+' *** The DYNAMIC metacommand is not required to reproduce
+'     this behavior inside the QuickBASIC environment.
+'$DYNAMIC
+DIM SHARED b(20)        'Step 1. b(20) initially is 0.
+CALL test(b(20))
+PRINT b(20)             'Step 3. PRINTs 0 -- global has been
+END                     '        replaced by returned value.
+
+SUB test (a!)
+  b(20) = 10
+  PRINT b(20)           'Step 2. PRINTs 10 -- Global value is
+END SUB                 '        changed. Parameter a! is still 0.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

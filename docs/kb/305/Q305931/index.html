@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q305931: INFO: DELIMITED WITH BLANK Differs in Various FoxPro Versions | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q305931: INFO: DELIMITED WITH BLANK Differs in Various FoxPro Versions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/305/Q305931/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/305/Q305931/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/305/Q305931/","publisher":null,"image":null,"headline":"Q305931: INFO: DELIMITED WITH BLANK Differs in Various FoxPro Versions","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q305931-info-delimited-with-blank-differs-in-various-foxpro-versions">Q305931: INFO: DELIMITED WITH BLANK Differs in Various FoxPro Versions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q305931
+Product(s): Microsoft FoxPro
+Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
+Operating System(s): 
+Keyword(s): kbvfp kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbXBase kbGrpDSFox kbDSupport kbvfp300xSear
+Last Modified: 23-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0, 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The behavior of the COPY TO ... DELIMITED command differs slightly in each
+version of Microsoft FoxPro and Visual FoxPro (VFP). You should be aware of
+these differences when moving code between versions.
+
+MORE INFORMATION
+================
+
+
+The different versions of FoxPro produce slightly different text files using the
+same command. Depending on the version, leading spaces may be truncated or
+quotation marks may be added to character fields.
+
+For example, COPY TO filename DELIMITED WITH BLANK in FoxPro 2.6a produces a text
+file that does not contain quotation marks around the character fields. If a
+character field contains leading spaces, they remain. Visual FoxPro 3.0,
+however, trims these leading spaces. Both these behaviors are contrary to the
+COPY TO documentation, which states in VFP 3.0:
+
+  DELIMITED Creates a delimited file. A delimited file is an ASCII text file in
+  which each record ends with a carriage return and linefeed. The default field
+  separator is a comma. Since character data may include commas, character
+  fields are additionally delimited with double quotation marks.
+
+  DELIMITED WITH BLANK Creates a delimited file with fields separated by spaces
+  instead of commas.
+
+Visual FoxPro 5.0 and later behave correctly, including leading spaces and
+delimiting character fields with quotes. DELIMITED WITH " " removes the quotes,
+but replaces them with extra spaces.
+
+In Visual FoxPro 5.0 and 6.0, attempts to remove the character field delimiter
+altogether fail in different ways. DELIMITED WITH "" and DELIMITED WITH [] give
+the following error:
+
+  Command contains unrecognized phrase/keyword.
+
+DELIMITED WITH '' treats the first quote as a delimiter and ignores the second
+one.
+
+However, Visual Foxpro 7.0 has been enhanced so that DELIMITED WITH "" does not
+give a syntax error. This allows you to create text files that have no quotes
+around any fields, which is desirable in some cases.
+
+To observe these various behaviors, run the following code in FoxPro 2.6 or
+later. Feel free to experiment with the other forms of the command listed
+above.
+
+  CREATE TABLE copyTest (cField1 C(30), cField2 C(10))
+
+  INSERT INTO copyTest VALUES ("This is a test.", "Part 1")
+  INSERT INTO copyTest VALUES ("     This is another test.", "Part 2")
+  INSERT INTO copyTest VALUES ("  This is a third test.", "Part 3")
+
+  COPY TO copyTest.txt DELIMITED WITH BLANK
+
+  MODIFY FILE copyTest.txt
+
+  #IF "7.0"$VERSION()
+     COPY TO copyTest.txt DELIMITED WITH ""
+     MODIFY FILE copyTest.txt
+  #ENDIF
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbXBase kbGrpDSFox kbDSupport kbvfp300xSearch kbvfp500xSearch kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP700 kbVFP500a
+Version           : :3.0,3.0b,5.0,5.0a,6.0,7.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

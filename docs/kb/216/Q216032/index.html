@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q216032: Telnet 3270 Clients Experience Delay During Session Startup | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q216032: Telnet 3270 Clients Experience Delay During Session Startup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/216/Q216032/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/216/Q216032/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/216/Q216032/","publisher":null,"image":null,"headline":"Q216032: Telnet 3270 Clients Experience Delay During Session Startup","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q216032-telnet-3270-clients-experience-delay-during-session-startup">Q216032: Telnet 3270 Clients Experience Delay During Session Startup</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q216032
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Operating System(s): 
+Keyword(s): kbenv kbnetwork
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Telnet 3270 clients may experience a long delay when starting sessions. This
+symptom is observed when a DNS Server is not available.
+
+CAUSE
+=====
+
+In the event a DNS Server is not available and Use Name Resolution is
+configured, a Telnet client will experience a delay of up to 50 seconds during
+session startup. The SNA Server expects a response from the DNS Server. SNA
+Server will delay the session until a timeout is reached.
+
+RESOLUTION
+==========
+
+The TN3270 Server Service contains a configuration option titled "Use Name
+Resolution". Use Name Resolution is found on the General tab of the TN3270
+Properties dialog box. Use Name Resolution is required if access to TN3270
+sessions is restricted through workstation names. It is not required if access
+to TN3270 sessions is restricted through a TCP/IP address or subnet. This option
+should be checked only if a domain name resolver is available on the network.
+
+MORE INFORMATION
+================
+
+A Microsoft Network Monitor trace shows the Telnet client and SNA Server
+performing a three-way TCP handshake to initiate the session within 0.003
+seconds. A delay in excess of 45 seconds occurred before the Telnet session was
+available to the client.
+
+Here is an example of a three-way handshake to initiate a Telnet session.
+
+  Frame 1 TCP ....S., len:    4, seq:   4505720-4505723, ack:         0, win: 8192, src: 1147  dst:   23 (TELNET)  &lt;BR/&gt;
+
+  Frame 2 TCP .A..S., len:    4, seq:   2489546-2489549, ack:   4505721, win:16064, src:   23 (TELNET)  dst: 1147 &lt;BR/&gt;
+
+  Frame 3 TCP .A...., len:    0, seq:   4505721-4505721, ack:   2489547, win:16064, src: 1147  dst:   23 (TELNET)
+
+Here is an example of the first two frames in the Telnet session. These frames
+will be delayed from the first three frames by 45 seconds or more.
+
+  Frame 4 TELNET To Client With Port = 1147 
+
+  Frame 5 TELNET To Server From Port = 1147
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

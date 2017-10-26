@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q106425: DblSpace Msg: Cannot Install and New Drive Has No Free Space | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q106425: DblSpace Msg: Cannot Install and New Drive Has No Free Space" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/106/Q106425/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/106/Q106425/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/106/Q106425/","publisher":null,"image":null,"headline":"Q106425: DblSpace Msg: Cannot Install and New Drive Has No Free Space","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q106425-dblspace-msg-cannot-install-and-new-drive-has-no-free-space">Q106425: DblSpace Msg: Cannot Install and New Drive Has No Free Space</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q106425
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After DoubleSpace compresses a drive on your system, it may report there is a
+disk error on more than one drive, and that there are zero bytes free on the
+newly created drive. For example, after DoubleSpace has finished compressing
+drive C, you may receive the following series of error messages (each is
+displayed after choosing OK):
+
+  Dblspace has finished compressing this drive. However, some files were not
+  compressed, because there was not enough disk space for more information
+  press F1.
+
+  Dblspace cannot examine drive C: There is a disk error on drive C: To fix it
+  type ScanDisk c: at the command prompt.
+
+  Dblspace cannot mount drive H: There is a disk error on drive H: to fix it,
+  type ScanDisk H: at the command prompt.
+
+  Dblspace cannot examine drive H: There is not enough conventional memory to
+  complete this operation for more information on freeing memory, see the
+  MS-DOS 6 User's Guide.
+
+  Dblspace has created a new drive H: that contains 0.0 MB of uncompressed
+  space.
+
+CAUSE
+=====
+
+DoubleSpace checks for the presence of Delete Sentry only when DBLSPACE.BIN is
+loaded in memory. Therefore, Delete Sentry causes the error noted above when you
+compress your first DoubleSpace drive.
+
+This problem occurs because when DoubleSpace checks for free disk space, it does
+not take into account the hidden Delete Sentry directory.
+
+When DoubleSpace reboots your computer, Delete Sentry is not loaded and there is
+insufficient space to compress your drive.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Edit your AUTOEXEC.BAT file and remark out UNDELETE /SENTRY. For example:
+
+     REM UNDELETE /SENTRY
+
+2. Restart your computer.
+
+3. Run DoubleSpace Uncompress. For example, type "dblspace /uncompress c:"
+  (without the quotation marks) at the MS-DOS command prompt and then press
+  ENTER.
+
+4. Recompress drive C. For example, type "dblspace /compress c" (without the
+  quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+5. Edit your AUTOEXEC.BAT file and restore the UNDELETE /SENTRY command.
+
+6. Restart your computer.
+
+Additional query words: 6.20 compressed volume file (CVF) CIP unremark undelete sentry double space
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

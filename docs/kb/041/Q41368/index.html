@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q41368: QuickC 2.00 README.DOC: Using QC 2.00 With C 5.10 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q41368: QuickC 2.00 README.DOC: Using QC 2.00 With C 5.10" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/041/Q41368/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/041/Q41368/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/041/Q41368/","publisher":null,"image":null,"headline":"Q41368: QuickC 2.00 README.DOC: Using QC 2.00 With C 5.10","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q41368-quickc-200-readmedoc-using-qc-200-with-c-510">Q41368: QuickC 2.00 README.DOC: Using QC 2.00 With C 5.10</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q41368
+Product(s): See article
+Version(s): 2.00
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 28-FEB-1989
+
+The following information comes from the QuickC 2.00 README.DOC file,
+Part 1, "Notes on 'Up and Running,'" and refers to Page 12 in the
+file: Third Screen: The Directories (C 5.10 Compatibility).
+
+The following explanation applies only to those who want to use QuickC
+in conjunction with the Microsoft C Optimizing Compiler.
+
+QuickC complements and augments Versions 5.00 and 5.10 of the
+Microsoft C Optimizing Compiler. If you own one of these compilers,
+choose the directories where the Optimizing Compiler stores executable
+files, libraries, and header files: /BIN, /LIB, and /INCLUDE, for
+example, instead of /QC2/BIN, /QC2/LIB, and /QC2/INCLUDE. QuickC's
+programs, libraries, include files, and other files are the latest
+versions available. They are fully compatible with the Optimizing
+Compiler.
+
+To maintain compatibility between the two compilers, both QuickC and
+the Optimizing Compiler use the CL environment variable. If you
+include options that the Microsoft Optimizing Compiler recognizes but
+QuickC does not, QuickC issues an error message. You will have to edit
+the CL environment variable to eliminate this error.
+
+The CodeView debugger cannot handle files that have been incrementally
+compiled or incrementally linked. If you plan to examine QuickC
+programs with CodeView, be sure that these two options (incremental
+compile and incremental link) are turned off. From the command line,
+use QCL without the /Gi or /Li option. From the QuickC environment,
+use the Options menu Make command to turn off incremental compile and
+link and to turn on CodeView Info. This warning applies only to
+CodeView. QuickC's built-in debugger can handle incrementally compiled
+and linked programs.
+
+The -qc option allows you to run the QuickC compiler from the
+Microsoft Optimizing Compiler Version 5.00 or 5.10. If you own C 5.00
+or 5.10, and want to call QuickC Version 2.00, use this command line:
+
+   cl -B1 qccom -qc
+
+In addition, if your hard disk already contains a version of LINK.EXE,
+you are asked if you want to delete the old linker. Answer yes. QuickC
+ships with Version 4.06 of LINK.EXE. It is fully compatible with
+Versions 5.00 and 5.10 of the Microsoft Optimizing Compiler.
+
+If you are writing Windows or OS/2 applications, you should use
+Version 5.02 of the Microsoft Segmented-Executable Linker.
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

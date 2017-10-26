@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q246309: How to Replace a Missing IIS In-Process Application in MTS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q246309: How to Replace a Missing IIS In-Process Application in MTS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/246/Q246309/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/246/Q246309/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/246/Q246309/","publisher":null,"image":null,"headline":"Q246309: How to Replace a Missing IIS In-Process Application in MTS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q246309-how-to-replace-a-missing-iis-in-process-application-in-mts">Q246309: How to Replace a Missing IIS In-Process Application in MTS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q246309</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">4.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">02</span><span class="p">-</span><span class="n">MAY</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Internet</span> <span class="n">Information</span> <span class="n">Server</span> <span class="m">4.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SYMPTOMS</span>
+<span class="p">========</span>
+
+<span class="k">In</span> <span class="n">the</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="n">Packages</span> <span class="n">Installed</span><span class="p">,</span> <span class="n">the</span> <span class="n">IIS</span> <span class="k">in</span><span class="p">-</span><span class="n">process</span> <span class="n">applications</span>
+<span class="k">package</span> <span class="n">is</span> <span class="n">missing</span><span class="p">.</span>
+
+<span class="n">Also</span><span class="p">,</span> <span class="n">when</span> <span class="n">you</span> <span class="n">try</span> <span class="k">to</span> <span class="k">set</span> <span class="n">a</span> <span class="n">site</span> <span class="k">or</span> <span class="n">virtual</span> <span class="n">directory</span> <span class="k">as</span> <span class="n">an</span> <span class="n">application</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span>
+<span class="n">receive</span> <span class="n">the</span> <span class="n">following</span> <span class="n">error</span> <span class="n">message</span><span class="p">:</span>
+
+  <span class="n">An</span> <span class="n">error</span> <span class="n">occurred</span> <span class="n">getting</span> <span class="k">or</span> <span class="n">setting</span> <span class="n">a</span> <span class="n">configuration</span> <span class="n">parameter</span> <span class="m">0x80010401</span>
+
+<span class="n">CAUSE</span>
+<span class="p">=====</span>
+
+<span class="n">There</span> <span class="n">are</span> <span class="n">multiple</span> <span class="n">causes</span> <span class="n">for</span> <span class="n">this</span> <span class="n">error</span><span class="p">,</span> <span class="n">including</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Errors</span> <span class="n">returned</span> <span class="k">from</span> <span class="n">using</span> <span class="n">IISSYNC</span> <span class="k">to</span> <span class="n">replicate</span> <span class="n">a</span> <span class="n">metabase</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">Errors</span> <span class="n">during</span> <span class="n">install</span> <span class="k">in</span> <span class="n">regards</span> <span class="k">to</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="n">setup</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="n">The</span> <span class="k">package</span> <span class="n">may</span> <span class="n">be</span> <span class="n">deleted</span> <span class="k">from</span> <span class="n">the</span> <span class="n">registry</span><span class="p">.</span>
+
+<span class="n">RESOLUTION</span>
+<span class="p">==========</span>
+
+<span class="n">At</span> <span class="n">the</span> <span class="n">REGEDIT4</span> <span class="n">line</span><span class="p">,</span> <span class="n">copy</span> <span class="n">the</span> <span class="n">following</span> <span class="n">into</span> <span class="n">a</span> <span class="p">*.</span><span class="n">reg</span> <span class="n">file</span> <span class="k">and</span> <span class="nf">run</span> <span class="n">it</span> <span class="n">against</span>
+<span class="n">your</span> <span class="n">registry</span><span class="p">:</span>
+
+  
+
+  <span class="n">REGEDIT4</span>
+
+  <span class="p">[</span><span class="n">HKEY_CLASSES_ROOT</span><span class="p">\</span><span class="n">AppID</span><span class="p">\{</span><span class="m">3</span><span class="n">D14228C</span><span class="p">-</span><span class="n">FBE1</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">995</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}]</span>
+  <span class="s2">"RunAs"</span><span class="p">=</span><span class="s2">"Interactive User"</span>
+
+  <span class="p">[</span><span class="n">HKEY_CLASSES_ROOT</span><span class="p">\</span><span class="n">CLSID</span><span class="p">\{</span><span class="m">3</span><span class="n">D14228C</span><span class="p">-</span><span class="n">FBE1</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">995</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}]</span>
+  <span class="s2">"AppID"</span><span class="p">=</span><span class="s2">"{3D14228C-FBE1-11d0-995D-00C04FD919C1}"</span>
+
+  <span class="p">[</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Transaction</span> <span class="n">Server</span><span class="p">\</span><span class="n">Packages</span><span class="p">\{</span><span class="m">3</span><span class="n">D14228C</span><span class="p">-</span><span class="n">FBE1</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">995</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}]</span>
+  <span class="s2">"Activation"</span><span class="p">=</span><span class="s2">"Inproc"</span>
+  <span class="s2">"Changeable"</span><span class="p">=</span><span class="s2">""</span>
+  <span class="s2">"Name"</span><span class="p">=</span><span class="s2">"IIS In-Process Applications"</span>
+  <span class="s2">"Description"</span><span class="p">=</span><span class="s2">" "</span>
+  <span class="s2">"System"</span><span class="p">=</span><span class="s2">"N"</span>
+  <span class="s2">"Latency"</span><span class="p">=</span><span class="n">dword</span><span class="p">:</span><span class="m">000000</span><span class="n">b4</span>
+  <span class="s2">"NeverShutdown"</span><span class="p">=</span><span class="s2">"Y"</span>
+  <span class="s2">"Deleteable"</span><span class="p">=</span><span class="s2">"N"</span>
+  <span class="s2">"CreatedBy"</span><span class="p">=</span><span class="s2">"Microsoft Internet Information Server(tm)"</span>
+  <span class="s2">"SecurityEnabled"</span><span class="p">=</span><span class="s2">"N"</span>
+  <span class="s2">"Authentication"</span><span class="p">=</span><span class="n">dword</span><span class="p">:</span><span class="m">00000004</span>
+  <span class="s2">"Authorization"</span><span class="p">=</span><span class="n">hex</span><span class="p">:</span><span class="m">01</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">04</span><span class="p">,</span><span class="m">80</span><span class="p">,</span><span class="m">34</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">50</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">14</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,\</span> 
+ <span class="m">00</span><span class="p">,</span><span class="m">02</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">20</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">01</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">14</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">01</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">01</span><span class="p">,</span><span class="m">01</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">05</span><span class="p">,\</span> 
+ <span class="m">12</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">01</span><span class="p">,</span><span class="m">05</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">05</span><span class="p">,</span><span class="m">15</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">85</span><span class="p">,</span><span class="m">78</span><span class="p">,</span><span class="m">18</span><span class="p">,</span><span class="m">0</span><span class="n">e</span><span class="p">,</span><span class="n">b8</span><span class="p">,\</span> 
+ <span class="m">1</span><span class="n">a</span><span class="p">,</span><span class="n">c4</span><span class="p">,</span><span class="m">34</span><span class="p">,</span><span class="m">24</span><span class="p">,</span><span class="m">0</span><span class="n">d</span><span class="p">,</span><span class="n">b1</span><span class="p">,</span><span class="m">12</span><span class="p">,</span><span class="n">f4</span><span class="p">,</span><span class="m">01</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">01</span><span class="p">,</span><span class="m">05</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">05</span><span class="p">,</span><span class="m">15</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">85</span><span class="p">,</span><span class="m">78</span><span class="p">,\</span> 
+ <span class="m">18</span><span class="p">,</span><span class="m">0</span><span class="n">e</span><span class="p">,</span><span class="n">b8</span><span class="p">,</span><span class="m">1</span><span class="n">a</span><span class="p">,</span><span class="n">c4</span><span class="p">,</span><span class="m">34</span><span class="p">,</span><span class="m">24</span><span class="p">,</span><span class="m">0</span><span class="n">d</span><span class="p">,</span><span class="n">b1</span><span class="p">,</span><span class="m">12</span><span class="p">,</span><span class="n">f4</span><span class="p">,</span><span class="m">01</span><span class="p">,</span><span class="m">00</span><span class="p">,</span><span class="m">00</span>
+  <span class="s2">"UserId"</span><span class="p">=</span><span class="s2">"Interactive User"</span>
+
+  <span class="p">[</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Transaction</span> <span class="n">Server</span><span class="p">\</span><span class="n">Packages</span><span class="p">\{</span><span class="m">3</span><span class="n">D14228C</span><span class="p">-</span><span class="n">FBE1</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">995</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}\</span><span class="n">Components</span><span class="p">]</span>
+
+  <span class="p">[</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Classes</span><span class="p">\</span><span class="n">AppID</span><span class="p">\{</span><span class="m">3</span><span class="n">D14228C</span><span class="p">-</span><span class="n">FBE1</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">995</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}]</span>
+  <span class="s2">"RunAs"</span><span class="p">=</span><span class="s2">"Interactive User"</span>
+
+  <span class="p">[</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Classes</span><span class="p">\</span><span class="n">CLSID</span><span class="p">\{</span><span class="m">3</span><span class="n">D14228C</span><span class="p">-</span><span class="n">FBE1</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">995</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}]</span>
+  <span class="s2">"AppID"</span><span class="p">=</span><span class="s2">"{3D14228C-FBE1-11d0-995D-00C04FD919C1}"</span>
+
+  <span class="p">*[</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Transaction</span> <span class="n">Server</span><span class="p">\</span><span class="n">Components</span><span class="p">\{</span><span class="m">99169</span><span class="n">CB0</span><span class="p">-</span><span class="n">A707</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">989</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}]</span>
+  <span class="s2">"ProgID"</span><span class="p">=</span><span class="s2">"IISWAM.W3SVC"</span>
+  <span class="s2">"Inproc"</span><span class="p">=</span><span class="s2">"Y"</span>
+  <span class="s2">"Local"</span><span class="p">=</span><span class="s2">"N"</span>
+  <span class="s2">"Remote"</span><span class="p">=</span><span class="s2">"N"</span>
+  <span class="s2">"Enabled"</span><span class="p">=</span><span class="s2">"N"</span>
+  <span class="s2">"ThreadingModel"</span><span class="p">=</span><span class="s2">"Free"</span>
+  <span class="s2">"DllServer"</span><span class="p">=</span><span class="s2">"&lt;I&gt;DriveLetter&lt;/I&gt;:</span><span class="se">\\</span><span class="s2">%Windir%</span><span class="se">\\</span><span class="s2">System32</span><span class="se">\\</span><span class="s2">inetsrv</span><span class="se">\\</span><span class="s2">wam.dll"</span>
+  <span class="s2">"Package"</span><span class="p">=</span><span class="s2">"{3D14228C-FBE1-11d0-995D-00C04FD919C1}"</span>
+  <span class="s2">"SupportsInternet"</span><span class="p">=</span><span class="s2">"N"</span>
+  <span class="s2">"Description"</span><span class="p">=</span><span class="s2">" "</span>
+  <span class="s2">"Transaction"</span><span class="p">=</span><span class="s2">"Not Supported"</span>
+  <span class="s2">"System"</span><span class="p">=</span><span class="s2">"N"</span>
+  <span class="s2">"Wrapped"</span><span class="p">=</span><span class="s2">"N"</span>
+
+  <span class="p">[</span><span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Transaction</span> <span class="n">Server</span><span class="p">\</span><span class="n">Packages</span><span class="p">\{</span><span class="m">3</span><span class="n">D14228C</span><span class="p">-</span><span class="n">FBE1</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">995</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}\</span><span class="n">Components</span><span class="p">\{</span><span class="m">99169</span><span class="n">CB0</span><span class="p">-</span><span class="n">A707</span><span class="p">-</span><span class="m">11</span><span class="n">d0</span><span class="p">-</span><span class="m">989</span><span class="n">D</span><span class="p">-</span><span class="m">00</span><span class="n">C04FD919C1</span><span class="p">}]</span>
+  <span class="s2">"SecurityEnabled"</span><span class="p">=</span><span class="s2">"Y"</span>
+  <span class="s2">"Authentication"</span><span class="p">=</span><span class="n">dword</span><span class="p">:</span><span class="m">00000004</span>
+
+<span class="n">When</span> <span class="n">these</span> <span class="n">registry</span> <span class="n">changes</span> <span class="n">are</span> <span class="n">imported</span> <span class="n">into</span> <span class="n">your</span> <span class="n">registry</span><span class="p">,</span> <span class="n">they</span> <span class="n">replace</span> <span class="n">the</span> <span class="n">IIS</span>
+<span class="k">in</span><span class="p">-</span><span class="n">process</span> <span class="n">application</span> <span class="n">only</span><span class="p">.</span> <span class="n">After</span> <span class="n">you</span> <span class="n">import</span> <span class="n">this</span> <span class="n">registry</span> <span class="n">information</span><span class="p">,</span> <span class="n">the</span>
+<span class="n">only</span> <span class="k">package</span> <span class="n">that</span> <span class="n">will</span> <span class="n">exist</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="n">IIS</span> <span class="k">in</span><span class="p">-</span><span class="n">process</span>
+<span class="n">application</span> <span class="n">is</span> <span class="n">IISWAM</span><span class="p">.</span><span class="n">W3SVC</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">only</span> <span class="n">re</span><span class="p">-</span><span class="nb">create</span> <span class="n">these</span> <span class="n">through</span> <span class="n">the</span> <span class="n">registry</span><span class="p">,</span>
+<span class="k">and</span> <span class="n">generally</span><span class="p">,</span> <span class="n">that</span> <span class="n">is</span> <span class="n">between</span> <span class="n">various</span> <span class="n">installations</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Option</span>
+<span class="n">Pack</span><span class="p">,</span> <span class="n">because</span> <span class="n">it</span> <span class="n">is</span> <span class="n">only</span> <span class="n">these</span> <span class="n">components</span> <span class="n">that</span> <span class="n">have</span> <span class="n">static</span> <span class="n">CLSIDs</span><span class="p">.</span>
+
+<span class="n">After</span> <span class="n">you</span> <span class="n">import</span> <span class="n">this</span> <span class="n">registry</span> <span class="n">information</span><span class="p">,</span> <span class="n">none</span> <span class="k">of</span> <span class="n">your</span> <span class="n">sites</span> <span class="k">and</span> <span class="n">virtual</span>
+<span class="n">directories</span> <span class="n">that</span> <span class="n">are</span> <span class="k">set</span> <span class="k">to</span> <span class="nf">run</span> <span class="k">in</span> <span class="n">process</span> <span class="n">will</span> <span class="n">be</span> <span class="n">registered</span> <span class="n">properly</span> <span class="k">in</span>
+<span class="n">Transaction</span> <span class="n">Server</span><span class="p">.</span> <span class="n">You</span> <span class="n">will</span> <span class="n">need</span> <span class="k">to</span> <span class="n">remove</span> <span class="k">and</span> <span class="n">re</span><span class="p">-</span><span class="nb">create</span> <span class="n">all</span> <span class="k">of</span> <span class="n">your</span> <span class="n">sites</span> <span class="k">and</span>
+<span class="n">virtual</span> <span class="n">directories</span> <span class="n">that</span> <span class="n">are</span> <span class="n">running</span> <span class="k">in</span> <span class="n">process</span> <span class="k">as</span> <span class="n">Applications</span><span class="p">.</span>
+
+<span class="k">To</span> <span class="n">verify</span> <span class="n">that</span> <span class="n">these</span> <span class="n">sites</span> <span class="n">are</span> <span class="n">registered</span> <span class="k">in</span> <span class="n">Transaction</span> <span class="n">Server</span> <span class="k">as</span> <span class="n">applications</span><span class="p">,</span>
+<span class="k">and</span> <span class="n">are</span> <span class="n">running</span> <span class="n">under</span> <span class="n">the</span> <span class="n">context</span> <span class="k">of</span> <span class="n">the</span> <span class="n">IIS</span> <span class="k">in</span><span class="p">-</span><span class="n">process</span> <span class="n">application</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span>
+<span class="n">sites</span> <span class="k">or</span> <span class="n">virtual</span> <span class="n">directory</span> <span class="n">properties</span><span class="p">.</span> <span class="k">If</span> <span class="n">they</span> <span class="n">have</span> <span class="n">a</span> <span class="n">Remove</span> <span class="n">button</span><span class="p">,</span> <span class="n">but</span> <span class="k">do</span> <span class="k">not</span>
+<span class="n">have</span> <span class="n">the</span> <span class="n">Separate</span> <span class="n">Memory</span> <span class="n">Address</span> <span class="n">Space</span> <span class="n">check</span> <span class="n">box</span> <span class="n">selected</span><span class="p">,</span> <span class="k">then</span> <span class="n">they</span> <span class="n">are</span> <span class="n">an</span>
+<span class="n">application</span> <span class="n">that</span> <span class="n">is</span> <span class="n">a</span> <span class="n">component</span> <span class="k">of</span> <span class="n">the</span> <span class="n">IIS</span> <span class="k">in</span><span class="p">-</span><span class="n">process</span> <span class="n">application</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">each</span> <span class="n">site</span> <span class="n">that</span> <span class="n">has</span> <span class="n">a</span> <span class="n">Remove</span> <span class="n">button</span><span class="p">,</span> <span class="n">but</span> <span class="n">is</span> <span class="k">not</span> <span class="n">enabled</span> <span class="k">to</span> <span class="nf">run</span> <span class="k">in</span> <span class="n">a</span> <span class="n">separate</span>
+<span class="n">memory</span> <span class="n">space</span><span class="p">,</span> <span class="n">re</span><span class="p">-</span><span class="nb">create</span> <span class="n">that</span> <span class="n">site</span> <span class="k">as</span> <span class="n">an</span> <span class="n">application</span><span class="p">.</span> <span class="k">To</span> <span class="k">do</span> <span class="n">this</span><span class="p">,</span> <span class="k">do</span> <span class="n">the</span>
+<span class="n">following</span><span class="p">:</span>
+
+<span class="m">1.</span> <span class="n">For</span> <span class="n">each</span> <span class="n">site</span> <span class="k">or</span> <span class="n">virtual</span> <span class="n">directory</span><span class="p">,</span> <span class="n">open</span> <span class="n">the</span> <span class="n">Properties</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">the</span>
+  <span class="n">Home</span> <span class="n">Directory</span> <span class="n">tab</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">Application</span> <span class="n">section</span><span class="p">,</span> <span class="n">click</span> <span class="n">Remove</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">Apply</span> <span class="p">(</span><span class="k">to</span> <span class="n">completely</span>
+  <span class="n">remove</span> <span class="n">it</span><span class="p">)</span>
+
+<span class="m">3.</span> <span class="n">Click</span> <span class="n">Create</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">click</span> <span class="n">OK</span><span class="p">.</span>
+
+<span class="n">Important</span><span class="p">:</span> <span class="n">After</span> <span class="n">you</span> <span class="n">import</span> <span class="n">this</span> <span class="n">information</span> <span class="n">into</span> <span class="n">your</span> <span class="n">registry</span><span class="p">,</span> <span class="k">do</span> <span class="k">not</span> <span class="n">restart</span>
+<span class="k">or</span> <span class="nf">stop</span> <span class="n">the</span> <span class="n">IIS</span> <span class="n">associated</span> <span class="n">services</span> <span class="p">(</span><span class="n">Web</span> <span class="n">Publishing</span><span class="p">,</span> <span class="n">IIS</span> <span class="n">Administrative</span><span class="p">,</span> <span class="k">and</span> <span class="n">so</span>
+<span class="n">on</span><span class="p">).</span> <span class="n">The</span> <span class="n">components</span> <span class="n">are</span> <span class="n">still</span> <span class="n">registered</span> <span class="k">in</span> <span class="n">the</span> <span class="n">metabase</span> <span class="k">until</span> <span class="n">the</span> <span class="n">services</span> <span class="p">(</span><span class="k">or</span>
+<span class="n">the</span> <span class="n">server</span><span class="p">)</span> <span class="n">is</span> <span class="n">restarted</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">restart</span><span class="p">,</span> <span class="n">you</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">risk</span> <span class="k">of</span> <span class="n">removing</span>
+<span class="n">information</span> <span class="n">related</span> <span class="k">to</span> <span class="n">any</span> <span class="n">custom</span> <span class="n">components</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">due</span> <span class="k">to</span> <span class="n">the</span> <span class="n">way</span> <span class="n">that</span>
+<span class="n">information</span> <span class="n">is</span> <span class="n">stored</span> <span class="k">in</span> <span class="n">the</span> <span class="n">metabase</span> <span class="k">and</span> <span class="n">synced</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Metabase</span><span class="p">.</span><span class="n">bin</span> <span class="n">file</span> <span class="n">that</span>
+<span class="n">holds</span> <span class="n">the</span> <span class="n">information</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">on</span> <span class="n">the</span> <span class="n">metabase</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span>
+<span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q240941</span> <span class="n">An</span> <span class="n">Introduction</span> <span class="k">to</span> <span class="n">the</span> <span class="n">IIS</span> <span class="n">Metabase</span>
+
+<span class="n">Additionally</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="n">use</span> <span class="n">Dcomcnfg</span><span class="p">.</span><span class="n">exe</span> <span class="k">to</span> <span class="nb">reset</span> <span class="n">permissions</span> <span class="n">on</span> <span class="n">the</span> <span class="n">default</span>
+<span class="n">packages</span> <span class="k">and</span> <span class="n">the</span> <span class="n">existing</span> <span class="n">packages</span><span class="p">.</span>
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">regarding</span> <span class="n">Dcomcnfg</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span>
+<span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q176799</span> <span class="n">INFO</span><span class="p">:</span> <span class="n">Using</span> <span class="n">DCOM</span> <span class="n">Config</span> <span class="p">(</span><span class="n">DCOMCNFG</span><span class="p">.</span><span class="n">EXE</span><span class="p">)</span> <span class="n">on</span> <span class="n">Windows</span> <span class="n">NT</span>
+
+<span class="n">WORKAROUND</span>
+<span class="p">==========</span>
+
+<span class="k">If</span> <span class="n">this</span> <span class="n">resolution</span> <span class="n">does</span> <span class="k">not</span> <span class="n">work</span> <span class="k">to</span> <span class="n">replace</span> <span class="n">the</span> <span class="n">missing</span> <span class="n">IIS</span> <span class="k">in</span><span class="p">-</span><span class="n">process</span>
+<span class="n">application</span> <span class="k">and</span> <span class="n">repair</span> <span class="n">Transaction</span> <span class="n">Server</span><span class="p">,</span> <span class="k">then</span> <span class="n">you</span> <span class="n">can</span> <span class="n">restore</span> <span class="k">from</span> <span class="n">a</span> <span class="n">known</span>
+<span class="n">backup</span><span class="p">,</span> <span class="k">or</span> <span class="n">remove</span> <span class="k">and</span> <span class="n">reinstall</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Option</span> <span class="n">Pack</span> <span class="k">to</span> <span class="n">rebuild</span> <span class="n">IIS</span><span class="p">,</span>
+<span class="n">Transaction</span> <span class="n">Server</span><span class="p">,</span> <span class="k">and</span> <span class="n">the</span> <span class="n">metabase</span><span class="p">.</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span>  
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbiisSearch</span> <span class="n">kbiis400</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">4.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbprb</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

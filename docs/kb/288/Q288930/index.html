@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288930: PRB: PDW Raises Error &quot;Filename Must Contain Text&quot; | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288930: PRB: PDW Raises Error &quot;Filename Must Contain Text&quot;" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288930/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288930/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288930/","publisher":null,"image":null,"headline":"Q288930: PRB: PDW Raises Error &quot;Filename Must Contain Text&quot;","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288930-prb-pdw-raises-error-filename-must-contain-text">Q288930: PRB: PDW Raises Error "Filename Must Contain Text"</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288930
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 6.0
+Operating System(s): 
+Keyword(s): kbAddin kbwizard kbAppSetup kbDeployment kbVBp kbVBp600 kbIDEProject kbGrpDSVB kbDSuppo
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the Package and Deployment Wizard (PDW) to generate a setup
+package, you may receive the following error message:
+
+  Filename must contain text
+
+CAUSE
+=====
+
+This problem can occur when a semicolon (;) is missing at the end of the Object
+lines in the project (.vbp) file.
+
+RESOLUTION
+==========
+
+To resolve this problem, open the project file in a text editor such as Notepad,
+manually add a semicolon to the end of the Object line, and save the file.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project in Visual Basic. Form1 is created by
+  default.
+
+2. From the Project menu, click Components. On the Insertable Objects tab,
+  select the "Microsoft Clip Gallery" check box, and then click OK.
+
+3. Save the project, and then exit Visual Basic. (Note: You must exit Visual
+  Basic to reproduce the problem.)
+
+4. Open the project again.
+
+5. From the Project menu, click Components. On the Insertable Objects tab,
+  select the "Microsoft Word Document" check box, and then click OK.
+
+6. From the File menu, click Make Project1.exe.
+
+7. From the File menu, save the project, and then close Visual Basic.
+
+8. Open the project again.
+
+9. Click the Add-Ins menu. If the Package and Deployment Wizard is not listed,
+  click Add-In Manager, click "Package and Deployment Wizard", select the
+  "Loaded/Unloaded" check box, and then click OK.
+
+10. From the Add-Ins menu, click "Package and Deployment Wizard", and then click
+  Package. Notice that you receive the above-mentioned error message.
+
+Steps to Resolve Problem
+------------------------
+
+1. In Notepad, open the .vbp file. Locate the following line:
+
+  
+
+  Object=MS_ClipArt_Gallery.5
+
+2. Add a semicolon (;) to the end of the line as follows:
+
+  
+
+  Object=MS_ClipArt_Gallery.5;
+
+3. Save the file.
+
+4. Run the PDW, and click Package. Notice that you no longer receive the error
+  message.
+
+REFERENCES
+==========
+
+For additional information about another cause for this error, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q193174 PRB: Filename Must Contain Text Error Message When Packaging Project
+
+Additional query words: PDW
+
+======================================================================
+Keywords          : kbAddin kbwizard kbAppSetup kbDeployment kbVBp kbVBp600 kbIDEProject kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

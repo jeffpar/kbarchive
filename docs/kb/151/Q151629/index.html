@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q151629: INFO: TN3270 LU Assignment and the Use of Submasks | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q151629: INFO: TN3270 LU Assignment and the Use of Submasks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/151/Q151629/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/151/Q151629/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/151/Q151629/","publisher":null,"image":null,"headline":"Q151629: INFO: TN3270 LU Assignment and the Use of Submasks","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q151629-info-tn3270-lu-assignment-and-the-use-of-submasks">Q151629: INFO: TN3270 LU Assignment and the Use of Submasks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q151629
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:2.11,3.0,4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, versions 2.11, 3.0, 4.0, on platform(s):
+   - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an IP subnet mask is defined in TN3270 Admin for an LU resource, the SNA
+Server 2.11 Service Pack 1 TN3270E Server checks the range of addresses used by
+the subnet mask to determine if a TN3270 user has access to the LU.
+
+For example,
+
+1. Add four LUA LUs to the TN3270E configuration.
+
+2. Use any text editor to modify the Tn3270E configuration file
+  (&lt;tnroot&gt;\Tnsvrcfg.tnc).
+
+3. Define Three of the LUs with a class B ip address of 130.9.x.x and subnet
+  mask of 255.255.0.0.
+
+4. Define one LU with an address of 130.8.8.1 and subnet mask of 255.255.0.0.
+
+LUs added to the config:
+
+  LU3 assigned to 130.9.5.1
+  LU2 assigned to 130.9.5.2
+  LU4 assigned to 130.9.8.1
+  LU5 assigned to 130.8.8.1
+
+Sample TN3270 configuration file:
+
+     [Group 1]
+     Name=LU3
+     Comment=
+     SNAResource1=LU3
+     IPConnection1=130.009.005.001,255.255.000.000,00000,65535
+
+A user with an IP address of 130.9.5.1 will be able to get any LU, except the one
+configured for 130.8.8.1, even though the users IP address is explicitly
+configured for one LU.
+
+MORE INFORMATION
+================
+
+When a client tries to connect to the server, the IP address of the client is
+masked (bitwise AND) by the subnet mask of each resource. The result from this
+mask is compared to the result from masking the subnet mask of the resource by
+the IP address configured for the resource.
+
+The default subnet mask is 255.255.255.255. When this is used as a mask value it
+has no effect; therefore, in this case, when a client connects the IP address of
+the client is compared to the IP address configured for the resource.
+
+In the example, the subnet mask is 255.255.0.0. When this is used as a mask, it
+makes the final two octets in the masked result zero. Therefore, in this case, a
+client that has the address 130.9.5.1 will be able to connect to any resource
+that has the configured IP address of 130.9.xxx.xxx, if that resource's mask is
+255.255.0.0.
+
+Additional query words: 2.11 prodsna snafaqtop
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11,3.0,4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

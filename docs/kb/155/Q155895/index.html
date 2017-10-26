@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q155895: How To Find an Item in a Tree Control Via its Label | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q155895: How To Find an Item in a Tree Control Via its Label" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/155/Q155895/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/155/Q155895/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/155/Q155895/","publisher":null,"image":null,"headline":"Q155895: How To Find an Item in a Tree Control Via its Label","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q155895-how-to-find-an-item-in-a-tree-control-via-its-label">Q155895: How To Find an Item in a Tree Control Via its Label</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q155895
+Product(s): Microsoft C Compiler
+Version(s): 2.20 4.00 4.10 4.20
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 04-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, versions 2.2, 4.0, 4.1 
+- Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+- Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "tree view" common control does not have any built-in method for searching
+the entire tree, or for selecting an item contained within the tree when given a
+specific item label. This article provides code that returns the location of any
+item in a tree when given a specific label to search for.
+
+The GetItemByName() function takes the window handle of the tree control,
+HTREEITEM, which points to the item in the tree to start searching and a string
+for which to search.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  #include &lt;windows.h&gt;
+  #include &lt;commctrl.h&gt;
+
+  // Note: If you have items with more than 50 characters
+  // of text, you'll need to increase this value.
+  #define MAXTEXTLEN 50
+
+  HTREEITEM GetItemByName(HWND hWnd, HTREEITEM hItem,
+                          LPCTSTR szItemName)
+  {
+      // If hItem is NULL, start search from root item.
+      if (hItem == NULL)
+          hItem = (HTREEITEM)SendMessage(hWnd, TVM_GETNEXTITEM,
+                                         TVGN_ROOT, 0);
+      while (hItem != NULL)
+      {
+          char szBuffer[MAXTEXTLEN+1];
+          TV_ITEM item;
+
+          item.hItem = hItem;
+          item.mask = TVIF_TEXT | TVIF_CHILDREN;
+          item.pszText = szBuffer;
+          item.cchTextMax = MAXTEXTLEN;
+          SendMessage(hWnd, TVM_GETITEM, 0, (LPARAM)&amp;item);
+
+          // Did we find it?
+          if (lstrcmp(szBuffer, szItemName) == 0)
+              return hItem;
+
+          // Check whether we have child items.
+          if (item.cChildren)
+          {
+              // Recursively traverse child items.
+              HTREEITEM hItemFound, hItemChild;
+
+              hItemChild = (HTREEITEM)SendMessage(hWnd, TVM_GETNEXTITEM,
+                                                  TVGN_CHILD, (LPARAM)hItem);
+              hItemFound = GetItemByName(hWnd, hItemChild, szItemName);
+
+              // Did we find it?
+              if (hItemFound != NULL)
+                  return hItemFound;
+          }
+
+          // Go to next sibling item.
+          hItem = (HTREEITEM)SendMessage(hWnd, TVM_GETNEXTITEM,
+                                         TVGN_NEXT, (LPARAM)hItem);
+      }
+
+      // Not found.
+      return NULL;
+  }
+
+For example, to search the entire tree for the word "Jeff" and then highlight
+that word, you can use the following code:
+
+Using Windows SDK:
+
+      HTREEITEM hItem;
+      hItem = GetItemByName(hWndTreeCtrl, NULL, "Jeff");
+      if (hItem != NULL)
+          SendMessage(hWndTreeCtrl, TVM_SELECTITEM, TVGN_CARET,
+                      (LPARAM)hItem);
+
+Using MFC:
+
+      HTREEITEM hItem = GetItemByName(m_TreeCtrl.GetSafeHwnd(),
+                                      NULL, "Jeff");
+      if (hItem != NULL)
+          m_TreeCtrl.SelectItem(hItem);
+
+Additional query words: 2.20 4.00 4.10 4.20 kbdsd CTreeCtrl
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC410 kbVC420 kbVC32bitSearch
+Version           : 2.20 4.00 4.10 4.20
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

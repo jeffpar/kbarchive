@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q173186: XCLN: Installing the Server Space Client Extension Tool | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q173186: XCLN: Installing the Server Space Client Extension Tool" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/173/Q173186/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/173/Q173186/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/173/Q173186/","publisher":null,"image":null,"headline":"Q173186: XCLN: Installing the Server Space Client Extension Tool","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q173186-xcln-installing-the-server-space-client-extension-tool">Q173186: XCLN: Installing the Server Space Client Extension Tool</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q173186
+Product(s): Microsoft Exchange
+Version(s): Win95:4.0,5.0; :8.0,8.01,8.02,8.03
+Operating System(s): 
+Keyword(s): kbusage
+Last Modified: 05-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Client for Windows 95, versions 4.0, 5.0 
+- Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03, on platform(s):
+   - Microsoft Windows 95 
+   - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IMPORTANT: This article contains information about editing the registry. Before
+you edit the registry, make sure you understand how to restore it if a problem
+occurs. For information about how to do this, view the "Restoring the Registry"
+Help topic in Regedit.exe or the "Restoring a Registry Key" Help topic in
+Regedt32.exe.
+
+The Microsoft Exchange Resource Kit includes an extension called the Server Space
+Client Extension Tool. The Microsoft Exchange Server Tools Help file contains
+incorrect instructions for installing this extension for a Microsoft Exchange
+client running on the Windows 95 platform. The instructions also imply that a
+16-bit version of the extension is available, which is incorrect. This extension
+is only available for 32-bit clients running on Windows 95 or Windows NT
+platforms.
+
+MORE INFORMATION
+================
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+Use the following steps to correctly install the Server Space Client Extension
+Tool for Windows 95 clients:
+
+Installation for Windows 95 Clients
+-----------------------------------
+
+1. From the Exchange\Win95\Client\Srvspace directory on the Microsoft BackOffice
+  Resource Kit: Part Two CD, copy Spcext32.dll to the Exchange directory on
+  your computer.
+
+2. Start the Registry Editor (Regedit.exe) and select the following registry
+  key:
+
+    HKEY_LOCAL_MACHINE\Software\Microsoft\Exchange\Client\Extensions
+
+3. On the Edit menu, select New, and then select String Value.
+
+4. Enter the following string for the Value name:
+
+  " Server Space " (without the quotation marks)
+
+5. On the Edit menu, select Modify and enter the following string into the Value
+  data field:
+
+  " 4.0;&lt;drive&gt;:\&lt;path&gt;\spcext32.dll;1;01010000000000 " (without
+  the quotation marks)
+
+  ...where &lt;drive&gt; and &lt;path&gt; are the drive letter and directory to
+  which Spcext32.dll was copied. As an example, assume that the file is located
+  in the C:\Exchange directory. This entry would appear as follows:
+
+     4.0;c:\exchange\spcext32.dll;1;01010000000000
+
+6. Close the Registry Editor.
+
+7. Restart the Microsoft Exchange or Microsoft Outlook client.
+
+Using the Server Space Client Extension Tool
+--------------------------------------------
+
+To use the extension, select the Server Space option from the Tools menu. A
+Mailbox Server Space dialog box will be displayed with the following text:
+
+  Mailbox - &lt;user name&gt; 20,540KB
+  Personal Folders N/A
+  Public Folders N/A
+
+The values for Personal Folders and Public Folders will always be displayed as
+N/A because the extension does not calculate totals for these folders.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3
+Version           : Win95:4.0,5.0; :8.0,8.01,8.02,8.03
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

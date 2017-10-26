@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q39179: Using a Debugging Terminal with CodeView | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q39179: Using a Debugging Terminal with CodeView" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/039/Q39179/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/039/Q39179/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/039/Q39179/","publisher":null,"image":null,"headline":"Q39179: Using a Debugging Terminal with CodeView","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q39179-using-a-debugging-terminal-with-codeview">Q39179: Using a Debugging Terminal with CodeView</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q39179
+Product(s): Microsoft Programming Utilities
+Version(s): 2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
+Operating System(s): 
+Keyword(s): kb16bitonly kbCodeView kbDebug kbVC
+Last Modified: 26-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft CodeView for MS-DOS, versions 2.2, 3.0, 3.11, 3.14, 4.0, 4.01, 4.05, 4.1 
+- Microsoft CodeView for Windows, versions 3.0, 3.05, 3.06, 3.07, 4.0, 4.01, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to use either a dumb terminal or another computer (PC or
+Macintosh, running a communications package at 9600 baud) as a debugging
+terminal for CodeView. To take advantage of this option, do the following:
+
+1. Connect the second terminal to the communications port (COM1 or COM2).
+
+2. Initialize the communications package to set up the second computer as a dumb
+  terminal. Set the baud rate at 9600.
+
+3. Start CodeView.
+
+4. From the CodeView command window redirect the output to the second terminal
+  with one of the following dialog commands:
+
+  " &gt; COM1" (without the quotation marks)
+
+  or
+
+  " &gt; COM2" (without the quotation marks)
+
+  This causes CodeView to display the command window output on the second
+  terminal. You can also redirect the input to the CodeView command window to
+  come from the terminal with one of the following commands:
+
+  " &lt; COM1" (without the quotation marks)
+
+  or
+
+  " &lt; COM2" (without the quotation marks)
+
+  This causes CodeView to read the input from the second terminal.
+
+5. Set your options and run the program.
+
+6. To reset the CodeView command window output to the local machine use the
+  following dialog command:
+
+  " &gt; CON" (without the quotation marks)
+
+  To reset the CodeView command window input to the local machine use the
+  following command:
+
+  " &lt; CON" (without the quotation marks)
+
+MORE INFORMATION
+================
+
+Note that this is not the same functionality as remote debugging. Remote
+debugging allows CodeView to run on a machine other than the local machine which
+runs the program being debugged. CodeView versions 4.0 and 4.01 support remote
+debugging. For more information on remote debugging, please refer to the
+documentation CodeView version 4.0.
+
+Additional query words: kbinf 2.20 3.00 3.50 4.00 4.10
+
+======================================================================
+Keywords          : kb16bitonly kbCodeView kbDebug kbVC 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView220DOS kbCodeView300DOS kbCodeView311DOS kbCodeView314DOS kbCodeView400DOS kbCodeView401DOS kbCodeView405DOS kbCodeView410DOS kbCodeView300 kbCodeView305 kbCodeView306 kbCodeView307 kbCodeView400 kbCodeView401 kbCodeView410
+Version           : :2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

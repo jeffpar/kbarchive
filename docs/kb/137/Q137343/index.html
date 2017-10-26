@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q137343: INFO: VB Automation of Visual C++ Server Using OBJ1.OBJ2.prop Sy | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q137343: INFO: VB Automation of Visual C++ Server Using OBJ1.OBJ2.prop Sy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/137/Q137343/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/137/Q137343/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/137/Q137343/","publisher":null,"image":null,"headline":"Q137343: INFO: VB Automation of Visual C++ Server Using OBJ1.OBJ2.prop Sy","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q137343-info-vb-automation-of-visual-c-server-using-obj1obj2prop-sy">Q137343: INFO: VB Automation of Visual C++ Server Using OBJ1.OBJ2.prop Sy</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q137343
+Product(s): Microsoft C Compiler
+Version(s): winnt:2.0,2.1,2.2,4.0,4.1
+Operating System(s): 
+Keyword(s): kbcode kbole kbAutomation kbCOMt kbMFC kbVBp kbVC150 kbVC200 kbVC400 kbVC410 kbGrpDSMFC
+Last Modified: 06-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The Microsoft Foundation Classes (MFC), used with:
+   - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.5, 1.51, 1.52 
+   - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is often necessary to access properties within nested objects exposed by OLE
+Automation. The Visual Basic syntax is:
+
+     OBJ1.OBJ2.Property
+
+This article demonstrates the creation of a simple OLE Automation server with
+Visual C++, accessible from Visual Basic, that exposes such an object.
+
+MORE INFORMATION
+================
+
+The following steps demonstrate how to create a Visual C++ OLE Automation server
+that allows Visual Basic to use the OBJ1.OBJ2.Property syntax.
+
+Steps to Create the Visual C++ OLE Automation Server
+----------------------------------------------------
+
+1. Create an AppWizard-generated project called AutoServ with OLE Automation
+  enabled.
+
+2. Once the project has been generated, start ClassWizard.
+
+3. Click the OLE Automation tab.
+
+4. Click the Add Class button, enter the following values, and then click Create
+  Class:
+
+  Class Name:    nested
+  Class Type:    CCmdTarget
+  Check:         OLE Automation
+
+5. Click the ClassWizard's OLE Automation tab. Set the Class Name to nested,
+  click the Add Property button, enter the following values, and then click
+  OK:
+
+  External Name: Value
+  Type:          long
+
+6. Change the Class Name in ClassWizard to CAutoServDoc. If you are prompted to
+  save changes, click Yes. Then click the Add Method button, enter the
+  following values, and click OK:
+
+  External Name: Nested
+  Return Type:   LPDISPATCH
+
+7. Click OK to accept the additions created by ClassWizard.
+
+8. Open the project's AutoServDoc.h file, and add the following line to the
+  beginning of the file:
+
+     #include "nested.h"
+
+9. To the same file, add a public member variable m_nested of type nested. A
+  pointer mechanism could have been used to maintain the nested class; however,
+  for this example, the chosen method will automatically create and destroy the
+  nested object within the Documents constructor and destructor respectively.
+
+10. Open the project's nested.h file, and modify the class so that the
+  constructor and destructor are public methods.
+
+11. Open the projects AutoServDoc.cpp file, and modify the Nested Method as
+  follows:
+
+      LPDISPATCH CAutoServDoc::Nested()
+      {
+         //TODO: Add your dispatch handler code here
+         return m_nested.GetIDispatch(TRUE);
+      }
+
+12. Build the project, and then run AutoServ.exe to register the server.
+
+Steps to Test the Server in Visual Basic
+----------------------------------------
+
+1. Start a new project in Visual Basic that will be used to test the OLE
+  Automation server.
+
+2. On the View menu, click Code.
+
+3. In the Object combo box, select (general).
+
+4. Enter the following code:
+
+     Dim Server As object
+
+5. Select Form in the Object combo box. Modify the Sub procedure as follows:
+
+     Sub Form_Load ()
+        Set Server = CreateObject("autoserv.document")
+        Server.Nested.Value = 10
+        x = Server.Nested.Value
+     End Sub
+
+6. Add x and Server.Nested.Value to the Visual Basic watch window, so that you
+  can observe the changes while stepping into the Visual Basic program.
+
+Additional query words: 1.50 1.51 1.52 2.00 2.10 2.20 2.50 2.51 2.52 3.00 3.10 3.20 4.00 4.10 vc vb client controller
+
+======================================================================
+Keywords          : kbcode kbole kbAutomation kbCOMt kbMFC kbVBp kbVC150 kbVC200 kbVC400 kbVC410 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0,2.1,2.2,4.0,4.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

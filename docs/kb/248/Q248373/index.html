@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248373: XADM: Primary Windows NT Account Cannot Log On to Mailbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248373: XADM: Primary Windows NT Account Cannot Log On to Mailbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248373/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248373/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248373/","publisher":null,"image":null,"headline":"Q248373: XADM: Primary Windows NT Account Cannot Log On to Mailbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248373-xadm-primary-windows-nt-account-cannot-log-on-to-mailbox">Q248373: XADM: Primary Windows NT Account Cannot Log On to Mailbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248373
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Multiple users cannot log on to their own primary mailbox on the Exchange Server
+computer. When they attempt to open their mailbox, they receive the following
+error message:
+
+  The set of folders could not be opened. You do not have permission to log on.
+
+CAUSE
+=====
+
+The users do not have permission to connect to the Exchange Server computer. By
+default, everyone has the "Access this computer from the network" permission. If
+this setting is removed on any domain controller (DC), it affects all DCs in
+that domain. Therefore, limiting access on a remote DC can inadvertently lock
+out users, if Exchange Server is also on a DC.
+
+The same problem can also occur if this user right is removed on an Exchange
+member server.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+1. Start User Manager for Domains on the Exchange Server computer.
+
+2. Click Policies, and then click User Rights.
+
+3. Under Right, click "Access this computer from the network".
+
+4. Click Add.
+
+5. Click Everyone, click Add, and then click OK.
+
+6. Click OK to apply the changes.
+
+MORE INFORMATION
+================
+
+If the Exchange Server computer is a domain controller, you can also try to
+connect to the Netlogon share from a client to see if the user can connect to
+the server. From a command prompt on the client computer, type the following
+command:
+
+  "net use \\&lt;servername&gt;\netlogon" (without the quotation marks)
+
+The user does not have access to connect to the server if the following error
+message appears:
+
+  System error 1385 has occurred.
+
+  Logon failure: the user has not been granted the requested logon type at this
+  computer.
+
+For additional information about permissions errors accessing Microsoft Exchange
+Server, click the article numbers below to view the articles in the Microsoft
+Knowledge Base:
+
+  Q153093 XCLN: Error Message: The Set of Folders Could Not Be Opened
+
+  Q146188 XCLN: Use Network Security Option Not Working as Expected
+
+  Q170637 XCLN: Error Message: Unable to Open Your Default Mail Folder
+
+  Q185971 XCLN: Error Message: Unable to Display Folder. You Do Not Have
+  Permission to Log On
+
+  Q249892 XCLN: User in Trusted Domain Cannot Use Outlook to Log On to Exchange
+  Server
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

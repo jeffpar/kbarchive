@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q150530: Event ID 529 Unknown User Name Or Bad Password | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q150530: Event ID 529 Unknown User Name Or Bad Password" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/150/Q150530/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/150/Q150530/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/150/Q150530/","publisher":null,"image":null,"headline":"Q150530: Event ID 529 Unknown User Name Or Bad Password","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q150530-event-id-529-unknown-user-name-or-bad-password">Q150530: Event ID 529 Unknown User Name Or Bad Password</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q150530
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 20-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you add newly created user accounts to a domain, you may notice that
+Windows 95 clients cannot log on to the domain with any of the newly created
+accounts. The Windows 95 clients will report the following error:
+
+  User name cannot be found
+
+The same Windows 95 clients can log on to the domain with previously existing
+user accounts. You will also notice that Windows NT workstations can log on to
+the domain with these newly created accounts.
+
+Check the primary domain controllers (PDCs) Event Viewer Security Log for the
+following:
+
+Event ID 529
+Description:
+Logon Failure:
+
+  Reason:     Unknown user name or bad password
+  User Name:  GUEST
+  Domain:     NameOfYourDomain
+  Logon Type: 3
+  Logon Process: NCPSrv
+  Authentication Package:
+  Workstation Name:
+
+NOTE: Your entries may vary, that is, the user name will not always be GUEST.
+
+MORE INFORMATION
+================
+
+The above scenario has been linked to other domain controllers in the domain
+running out of resources. At this point, you will need to check all of the
+servers in the domain that validate user accounts.
+
+Check all the servers in the domain that validate user accounts for:
+
+- servers that are running out of disk space.
+
+- servers that have stopped responding (this may mean actually visiting the
+  server).
+
+- servers that report Event IDs stating they have not been able to synchronize
+  with the PDC. The server will report that insufficient system resources exist
+  to complete the requested service.
+
+After you find the domain controller with insufficient system resources, you may
+either take that server offline, so that it is not involved in the validation
+process, or fix the resource problem and re-synchronize the domain controller
+with its PDC. If the problem persists, you may need to take a trace of the
+Windows 95 computer while it is trying to log on to the domain to help further
+identify problem areas.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbWin95search kbZNotKeyword3
+Version           : :3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

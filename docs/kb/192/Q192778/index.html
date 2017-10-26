@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q192778: BUG: Package Call Fails if Parameters Are Not Present | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q192778: BUG: Package Call Fails if Parameters Are Not Present" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/192/Q192778/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/192/Q192778/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/192/Q192778/","publisher":null,"image":null,"headline":"Q192778: BUG: Package Call Fails if Parameters Are Not Present","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q192778-bug-package-call-fails-if-parameters-are-not-present">Q192778: BUG: Package Call Fails if Parameters Are Not Present</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q192778
+Product(s): Open Database Connectivity (ODBC)
+Version(s): 2.5,Build 2.573.2927
+Operating System(s): 
+Keyword(s): kbMDAC kbODBC kbOracle kbMDAC250
+Last Modified: 11-SEP-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft ODBC for Oracle version 2.5 Build 2.573.2927 
+- Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call an Oracle package.procedure that does not take any parameters the
+Microsoft Oracle ODBC driver returns the following error message:
+
+  SYNTAX ERROR OR ACCESS VIOLATION
+
+
+RESOLUTION
+==========
+
+To workaround this behavior, create a package.procedure that takes a parameter,
+but does nothing with the parameter.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+In SQL*PLUS run the following Oracle PL/SQL code:
+
+
+  create or replace package pack1 is
+  procedure proc1;
+  end pack1;
+  / 
+
+  create or replace package body pack1 is
+  procedure proc1 is
+  begin
+    insert into department values (50,'RESEARCH', 124);
+  end proc1;
+  end pack1;
+  / 
+
+To reproduce the error use the following Visual Basic code in a push button Click
+event. Make sure that the Visual Basic project has the Microsoft ActiveX Data
+Objects Library selected in the REFERENCES
+
+     Private Sub Command2_Click()
+        Dim cmd As ADODB.Command
+        Dim rst As ADODB.Recordset
+        Dim m_session As ADODB.Connection
+        Set m_session = New ADODB.Connection
+        m_session.CursorLocation = adUseClient
+        ' Replace "***" with your own Oracle DSN
+        m_session.Open "DSN=***", "demo", "demo"
+        Set cmd = New ADODB.Command
+        cmd.ActiveConnection = m_session
+        cmd.CommandText = "pack1.proc1"
+        cmd.CommandType = adCmdStoredProc
+        cmd.Execute
+     End Sub
+
+Additional query words: kbDatabase kbDriver kbODBC kbOracle
+
+======================================================================
+Keywords          : kbMDAC kbODBC kbOracle kbMDAC250 
+Technology        : kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC250 kbODBCOracle25732927
+Version           : :2.5,Build 2.573.2927
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

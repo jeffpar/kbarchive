@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q231393: BUG: Using DCOM with an Active Document | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q231393: BUG: Using DCOM with an Active Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/231/Q231393/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/231/Q231393/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/231/Q231393/","publisher":null,"image":null,"headline":"Q231393: BUG: Using DCOM with an Active Document","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q231393-bug-using-dcom-with-an-active-document">Q231393: BUG: Using DCOM with an Active Document</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q231393
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): kbcode kbActiveDocs kbDCOM kbDownload kbVBp600bug kbCodeDownload kbGrpDSInet
+Last Modified: 24-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+- Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Navigating to an Active Document that uses Distributed Component Object Model
+(DCOM) results in the following message:
+
+  Internet Explorer is opening file of unknown type: &lt;Name of
+  Document&gt;.VBD from...
+
+This happens when CliReg32.exe is included in the CAB instead of downloaded from
+the Microsoft Web site, or installed as a separate CAB from the local server.
+
+CAUSE
+=====
+
+When packaging up a DCOM Active Document using the Visual Basic Package and
+Deployment Wizard (PDW), the user gets the option to include CliReg32.exe in the
+current CAB; however, selecting this option does not work properly.
+
+RESOLUTION
+==========
+
+Choose to download CliReg32.exe from the Microsoft Web site, or download
+Msracli.cab from the Microsoft site and refer to in from your local Web server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+If you look in the code download error log file, you should see the following
+error:
+
+  Code Download Error: (hr = 80070057) The parameter is incorrect.
+
+Use the following steps to view this file:
+
+1. From the Internet Explorer 4 View menu, select Internet Options. Or from the
+  Internet Explorer 5 Tools menu, select Internet Options.
+
+2. On the General tab, click Settings.
+
+3. Click the View Files button.
+
+4. Sort the files by clicking on the Name column header.
+
+5. You should see at least one file named something like this:
+
+  ?CodeDownloadErrorLog!name={0000000-0000-0000-0000-000000000000}
+
+  Where the zeroes contain the class ID of your Active Document.
+
+6. Close the dialog boxes that you opened in steps 2 and 3.
+
+7. Drag the error log into Internet Explorer.
+
+NOTE: CliReg32.exe could be packaged in its own CAB, but not in the same one as
+the .vbr or .tlb files. Note that the PDW assumes the .inf file name is
+Msracli.inf when you choose a local CAB. To avoid changing each .inf file
+generated for any DCOM project, name the .inf in your CLIREG CAB Msracli.inf.
+
+REFERENCES
+==========
+
+For additional trouble shooting guidelines for this same error message, see the
+following article in the Microsoft Knowledge Base:
+
+  Q167380 PRB: IE Reports Unknown Type .VBD for ActiveX Document
+
+For further information on using CLIREG32, see the following article in the
+Microsoft Knowledge Base:
+
+  Q194636 HOWTO: Manually Register a VB Remote Component Using CLIREG32
+
+  Q185193 PRB: Clireg32 Fails to Register the Type Library of DCOM Server
+
+  Q221173 PRB: Installing VB6 Doesn't Update Clireg32.exe
+
+For more information, see the following Webcast:
+
+  How Does Internet Component Download Work?
+
+Additional query words: DCOM ActiveX Documnts CLIREG32.EXE VBR
+
+======================================================================
+Keywords          : kbcode kbActiveDocs kbDCOM kbDownload kbVBp600bug kbCodeDownload kbGrpDSInet 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

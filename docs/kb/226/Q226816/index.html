@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q226816: SMS: Installation Issues in Foreign Language Environments | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q226816: SMS: Installation Issues in Foreign Language Environments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/226/Q226816/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/226/Q226816/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/226/Q226816/","publisher":null,"image":null,"headline":"Q226816: SMS: Installation Issues in Foreign Language Environments","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q226816-sms-installation-issues-in-foreign-language-environments">Q226816: SMS: Installation Issues in Foreign Language Environments</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q226816
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0
+Operating System(s): 
+Keyword(s): kbsms200 kbsms200bug
+Last Modified: 22-OCT-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Systems Management Server 2.0 using a site where one
+of the following character sets is used
+
+   - Finnish
+
+- Swedish
+
+- Estonian
+
+- Turkish
+
+- Lithuanian
+
+Systems Management Server behaves abnormally and seems to have difficulty
+uniquely identifying individual client computers.
+
+CAUSE
+=====
+
+This behavior occurs because the Microsoft SQL Server data store for Systems
+Management Server is configured to use a sort order that does not differentiate
+between characters which, in one or more of the languages listed in the
+"Symptoms" section, are considered the same character. The following list
+describes some of these situations:
+
+- The letter "w" is equivalent to "v" in Estonian, Finnish, and Swedish.
+
+- The letter "y" is equivalent to "i" in Lithuanian.
+
+- The lowercase letter "i" is not equivalent to the uppercase "I" in Turkish.
+
+These differences may become an issue when two characters, such as V and W --
+which are different in character weight in English but are equivalent in
+character weight in Swedish and Finnish -- are used to compose Systems
+Management Server *unique* ID fields.
+
+WORKAROUND
+==========
+
+To work around this issue, configure your SQL Server data store for Systems
+Management Server to use a sort order that is "aware" of these
+character-set-specific differences. For example, the sort order "Swedish/Finnish
+(Std) dictionary order, case-ins., uppercase pref" is one such sort order
+available in both SQL Server 6.5 and SQL Server 7.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server 2.0.
+
+MORE INFORMATION
+================
+
+For additional information about sort order issues, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q194146 Nordic SQL Server Sort Orders Cause Inventory Problems
+
+Additional query words: prodsms evironments language
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241391: HOWTO: Use the Win32 API FormatMessage Function with VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241391: HOWTO: Use the Win32 API FormatMessage Function with VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241391/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241391/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241391/","publisher":null,"image":null,"headline":"Q241391: HOWTO: Use the Win32 API FormatMessage Function with VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241391-howto-use-the-win32-api-formatmessage-function-with-vfp">Q241391: HOWTO: Use the Win32 API FormatMessage Function with VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241391
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport
+Last Modified: 30-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro developers often incorporate calls to Win32 API functions in order
+to extend their applications. Sometimes, these calls fail. Using a combination
+of the Win32 API functions GetLastError and FormatMessage, developers can
+display both a numeric and text message detailing why the call failed. This
+article demonstrates how.
+
+MORE INFORMATION
+================
+
+To run this sample, copy the following code into a new Visual FoxPro program,
+save and run it. You can adjust the value of the lnApiToCall variable (top of
+program) to call one of three different Win32 API functions and get different
+errors from FormatMessage:
+
+  *!* The following code makes calls to one of three different Win32 API functions.
+  *!* The calls will fail. The function that is called is determined
+  *!* by the value of "lnAPIToCall". Change the value of "lnAPIToCall"
+  *!* to see different error messages:
+  *!*	lnAPIToCall = 1: GetSysColor is called.
+  *!*	lnAPIToCall = 2: GetUserName is called.
+  *!*	lnAPIToCall = 3: FindWindow is called.
+  LOCAL lnAPIToCall
+  lnAPIToCall = 1
+
+  *!* #DEFINES from HOME()+"FOXPRO.h"
+  #DEFINE MB_ICONINFORMATION      64      &amp;&amp; Information message
+  #DEFINE MB_OK                   0       &amp;&amp; OK button only
+
+  #DEFINE CR						CHR(13) &amp;&amp; Carriage Return
+  #DEFINE ERROR_SUCCESS           0		&amp;&amp; Success error code from WINERROR.H
+  #DEFINE FORMAT_MESSAGE_FROM_SYSTEM     0x00001000 &amp;&amp; Value for use with FormatMessage API. From WINBASE.H
+
+  *!* Declare function to return system error code if an API call fails.
+  DECLARE INTEGER GetLastError IN win32api
+
+  *!* Declare function to return text message from system error code.
+  DECLARE INTEGER FormatMessage IN kernel32.DLL ;
+  	INTEGER dwFlags, ;
+  	STRING @lpSource, ;
+  	INTEGER dwMessageId, ;
+  	INTEGER dwLanguageId, ;
+  	STRING @lpBuffer, ;
+  	INTEGER nSize, ;
+  	INTEGER Arguments
+
+  *!* Now declare three Win32 API functions:
+  *!* GetSysColor, GetUserName and GetWindow.
+  *!* Later, you will make calls to these functions that will fail
+  *!* and use GetLastError and FormatMessage to display why.
+  *!* For more information on the use of these functions in FoxPro,
+  *!* see the References section at the bottom of this article
+
+  *!* The GetSysColor function retrieves the current color
+  *!* of the specified display element. Display elements are
+  *!* the parts of a window and the display that appear
+  *!* on the system display screen.
+  DECLARE INTEGER GetSysColor IN User32.DLL INTEGER
+
+  *!* The GetUserName function retrieves the user
+  *!* name of the current thread. This is the name
+  *!* of the user currently logged onto the system.
+  DECLARE INTEGER GetUserName IN Win32API ;
+  	STRING  @lpBuffer, ;
+  	INTEGER @nSize
+
+  *!* The GetWindow function retrieves a handle to a
+  *!* window that has the specified relationship
+  *!* (Z order or owner) to the specified window.
+  DECLARE INTEGER GetWindow ;
+  	IN win32api ;
+  	INTEGER HWND, ;
+  	INTEGER uCmd
+
+  *!*  ~~~~~~~~~ END OF DECLARES ~~~~~~~~~
+
+  *!* Set up the return value variable for the API calls (lnSuccess)
+  LOCAL lnSuccess
+  lnSuccess = 0
+
+  DO CASE
+  	CASE lnAPIToCall = 1
+  *!*	    This call will fail because 99 is in invalid parameter. For a list of valid
+  *!*	    parameters to use with GetSysColor, see Q139291.
+  		lnSuccess = GetSysColor(99)
+  	CASE lnAPIToCall = 2
+  		LOCAL  lpBuffer,nBufferSize
+  		lpBuffer = SPACE(25) &amp;&amp; Return buffer for user ID string
+  		nSize = 1            &amp;&amp; Size of user ID return buffer
+  *!*	    This call will fail because you misreport the size of the buffer (nSize). Should be 25.
+  		lnSuccess = GetUserName(@lpBuffer,@nSize)
+  	CASE lnAPIToCall = 3
+  *!*	    This call will fail because you pass an invalid window handle (first parameter).
+  		lnSuccess = GetWindow(99,2)
+  	OTHERWISE
+  		=MESSAGEBOX("There is no API call associated with that value",MB_ICONINFORMATION+MB_OK,"ERROR")
+  		RETURN .F.
+  ENDCASE
+
+  *!*	     The API call failed. So, you put up a messagebox saying so
+  *!*	     and display the system error code from WINERROR.H. You extend this
+  *!*	     by using FormatMessage API to display a character error message.
+  *!*
+  *!*      One thing to note here is that the error codes for the three calls
+  *!*      used above are stored in WINERROR.H. As such, that header file name
+  *!*      is hard-coded into the FormatMessage call. This may need to be
+  *!*      adjusted depending on the APIs used.
+  IF !(lnSuccess &gt; ERROR_SUCCESS)
+  	lpBuffer  = SPACE(128)
+  	lnError = GetLastError()
+  	=FormatMessage(FORMAT_MESSAGE_FROM_SYSTEM, ;
+  		'WINERROR.H', lnError, 0, @lpBuffer, 128 , 0)
+
+  	=MESSAGEBOX("System error has occurred." + CR + ;
+  		"System Error code: " + ALLTRIM(STR(lnError)) + CR + ;
+  		"System Error message: "+ALLT(lpBuffer),MB_ICONINFORMATION+MB_OK,"ERROR")
+  ENDIF
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Trevor
+Hancock, Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+For additional information about working with GetSysColor, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q139291 HOWTO: Change the BackColor of a ToolBar When It's Docked
+
+For additional information about working with GetUserName, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q139625 HOWTO: Use and Call the GetUserName API
+
+For additional information about working with GetWindow, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+  Q188404 HOWTO: Use API Calls to Detect Other Running Applications
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAPI kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

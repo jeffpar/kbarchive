@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q99152: PRB: MOVE Application Requires Additional Memory to Load | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q99152: PRB: MOVE Application Requires Additional Memory to Load" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/099/Q99152/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/099/Q99152/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/099/Q99152/","publisher":null,"image":null,"headline":"Q99152: PRB: MOVE Application Requires Additional Memory to Load","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q99152-prb-move-application-requires-additional-memory-to-load">Q99152: PRB: MOVE Application Requires Additional Memory to Load</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q99152
+Product(s): Microsoft Programming Utilities
+Version(s): 
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 08-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft LINK for MS-DOS 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+An application that uses the Microsoft Overlaid Virtual Environment may require
+more memory to run than the same program build with old style (C 6.0) overlays
+or without any overlay manager. While the size of the executable file may not
+change significantly, the EXEHDR utility indicates that more memory is required
+to load the program. (In EXEHDR version 3.0, memory required to load is the last
+line of information displayed for an MS-DOS program.)
+
+Additionally, the program may not recognize that it contains overlays. Each
+segment specified in the SEGMENTS statement in the module definition (.DEF) file
+is empty. In a tracing version of the application, the trace file, MOVE.TRC, is
+also empty.
+
+CAUSE
+=====
+
+This problem may occur when one or more modules of the program is compiled with
+the /Gy (Enable function-level linking) compiler option and these modules are
+listed in the SEGMENTS statement in the .DEF file.
+
+RESOLUTION
+==========
+
+To avoid the problem, do one of the following:
+
+- In the .DEF file, specify overlays in the FUNCTIONS statement instead of in
+  the SEGMENTS statement. LINK places function code into the appropriate
+  comdat_seg&lt;n&gt; segment in the overlay (discussed below). Specify the /Gy
+  compiler option switch only for those modules that require function-level
+  linking.
+
+- Remove the /Gy option switch from the compiler command line.
+
+MORE INFORMATION
+================
+
+The compiler creates a separate segment for each function in modules compiled
+with the /Gy option switch. The compiler names each segment comdat_seg&lt;n&gt;,
+where &lt;n&gt; is assigned successive integer values as segments fill up. In
+addition, the compiler creates an empty segment (0 bytes long) with the name
+&lt;modulename&gt;_TEXT. The error occurs because the SEGMENTS statement in the
+DEF file specifies the empty &lt;modulename&gt;_TEXT segments. LINK creates
+empty overlays and places the functions into the root overlay (overlay 0).
+Because each overlay is empty, the MOVE.TRC file produced by the tracing version
+of the overlaid program is also empty.
+
+While the empty segment that the compiler produces with the /Gy option switch
+prevents erroneous linker messages, it causes the side-effects listed above when
+the segment is placed into an overlay.
+
+The program may require more memory to load because the MOVE overlay manager
+requires about 16K. If the code that is expected to be in an overlay is placed
+into the root overlay, the application requires more memory.
+
+A code sample that demonstrates this problem is fairly easy to create, however,
+it requires too many files and lines of code to include one in this article. To
+demonstrate this problem, find an application that use MOVE overlays and the
+SEGMENTS statement in its .DEF file. Build the application and use EXEHDR to
+determine its load size. Then add the /Gy option switch to the compiler options
+for each module placed into an overlay. Rebuild the application and determine
+its load size.
+
+Additional query words: 5.30 5.31.009 5.50
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch
+Version           : :
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

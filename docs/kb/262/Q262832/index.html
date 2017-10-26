@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262832: Cluster Service Does Not Start with Event ID 7023 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262832: Cluster Service Does Not Start with Event ID 7023" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262832/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262832/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262832/","publisher":null,"image":null,"headline":"Q262832: Cluster Service Does Not Start with Event ID 7023","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262832-cluster-service-does-not-start-with-event-id-7023">Q262832: Cluster Service Does Not Start with Event ID 7023</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262832
+Product(s): Microsoft Windows NT
+Version(s): 4.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg
+Last Modified: 11-JUN-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+  Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you adjust a network setting on a node in an already functioning cluster
+and you restart the node, the Cluster service may not start on that node and the
+following Event ID may be displayed in the system log:
+
+  Event ID: 7023
+  Source: Service Control Manager
+  Description: The Cluster Server service terminated with the following error:
+  The endpoint cannot be created
+
+If you attempt to manually start the Cluster service using the Services tool in
+Control Panel, the following error message may be displayed:
+
+  Could not start the Cluster Server service on &lt;MachineName&gt;
+  Error 1720 The endpoint cannot be created
+
+CAUSE
+=====
+
+The error message occurs when RPC remote procedure call (RPC) is unable to bind
+to the Cluster Datagram Protocol (CDP). This transport is used for the heartbeat
+interface for inter-node communication in the cluster.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this behavior, locate the following registry keys and make the
+appropriate adjustments if the keys are missing, damaged, or have improper
+permissions:
+
+- HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Winsock\Setup
+  Migration\Providers\Clusnet
+
+- HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Winsock\Setup Migration
+
+  Value Name: Provider List
+  Data Type: REG_MULTI_SZ
+  Data: Clusnet (There will be other data values for this key as well)
+
+- HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Winsock\Parameters
+
+  Value Name: Transports
+  Data Type: REG_MULTI_SZ
+  Data: Clusnet (There will be other data values for this key as well)
+
+NOTE: If all of the registry keys are correct, you may need to reinstall the
+Cluster service on the node.
+
+MORE INFORMATION
+================
+
+If Cluster Logging is enabled, the following sequence of events may be logged
+when the Cluster service attempts to start:
+
+  [CS] Initializing RPC server.
+  [INIT] Unable to bind RPC to CDP, status 1720
+  [CS] ClusterInitialize failed 1720
+  [INIT] The cluster service is shutting down.
+  [FM] Shutdown: Failover Manager requested to shutdown groups.
+  [FM] FmpCleanupGroups: Entry
+  [Dm] DmShutdown
+  [DM] DmpShutdownFlusher: Entry
+  [DM] DmpShutdownFlusher: Setting event
+  [DM] DmpRegistryFlusher: got 0
+  [DM] DmpRegistryFlusher: exiting
+  [CPROXY] clussvc terminated, error 1720
+  [CPROXY] Service Stopping...
+  [CPROXY] Cleaning up
+  [CPROXY] Cleanup complete.
+  [CPROXY] Service Stopped.
+
+
+Additional query words: mscs corrupt corrupted
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q188065: BUG: Welcome Screen Continues to Redisplay | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q188065: BUG: Welcome Screen Continues to Redisplay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/188/Q188065/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/188/Q188065/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/188/Q188065/","publisher":null,"image":null,"headline":"Q188065: BUG: Welcome Screen Continues to Redisplay","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q188065-bug-welcome-screen-continues-to-redisplay">Q188065: BUG: Welcome Screen Continues to Redisplay</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q188065
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:6.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 24-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The "Welcome To Visual FoxPro" screen appears on subsequent starts of Visual
+FoxPro even though the "Don't display this Welcome screen again" check box was
+selected in the previous Visual FoxPro session.
+
+CAUSE
+=====
+
+This occurs if you display the Options dialog box from the Tools menu and select
+the "Set as Default" button during the same Visual FoxPro session that you
+select the "Don't display this Welcome screen again" check box.
+
+RESOLUTION
+==========
+
+Here are a few ways to get around this behavior:
+
+- After checking the "Don't display this Welcome screen again" check box, click
+  the "Close this Screen" button, immediately quit Visual FoxPro and then
+  restart Visual FoxPro. Then you can use the "Set as Default" button from the
+  Options dialog box without the Welcome screen appearing again.
+
+- Remember not to select the "Set as Default" button in the Options dialog box
+  in the same session that you select the "Don't display this Welcome screen
+  again" check box. This is almost the same as the first option except this
+  technique presumes that you are working in Visual FoxPro before quitting and
+  restarting the program.
+
+- Before using the "Set as Default" button in the Options dialog box, clear the
+  Startup Program under the File tab. Then if you select "Set as Default", the
+  Startup Program is blank.
+
+- After opening Visual FoxPro and selecting the "Don't display this Welcome
+  screen again" check box, issue the SYS(3056) command and force Visual FoxPro
+  to read the registry settings and update itself with the current registry
+  settings. You can then use the "Set as Default" button in the Options dialog
+  box without the Welcome screen appearing again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The Vfp6strt.app, found in the Visual FoxPro root directory, displays the
+Welcome screen. The system memory variable, _Startup, holds the name and
+location of the Vfp6strt.app. When you install Visual FoxPro or when you select
+the "Set As Default" button to set the default values, the values of the system
+memory variables are stored in the Windows registry. When the "Don't display
+this Welcome screen again" check box is selected, it clears the _Start system
+memory variable and also clears the registry setting. However, it does not clear
+the value of the Startup Program in the Options dialog box. When the "Set as
+Default" button is chosen, it rewrites the name and location of the Vfp6strt.app
+into the _Startup setting in the registry.
+
+The registry settings for the Visual FoxPro options are stored in the following:
+
+  My Computer\HKEY_CURRENT_USER\Software\Microsoft\VisualFoxPro\6.0\Options
+
+WARNING: Changing registry values manually can cause programs or the computer to
+become unstable. Users unfamiliar with the registry should not attempt this.
+
+Steps to Reproduce Behavior
+---------------------------
+
+If Visual FoxPro is being started for the first time:
+
+1. Select the "Don't display this Welcome screen again" check box in the Welcome
+  screen.
+
+2. Click the "Close this screen" button.
+
+3. From the Tools menu, Choose Options.
+
+4. In the Options dialog box, click the "Set as Default" button.
+
+5. Quit Visual FoxPro and then restart Visual FoxPro. The Welcome screen
+  appears.
+
+If you started Visual FoxPro previously and the Welcome screen has not been
+appearing:
+
+1. From the Tools menu, choose Options.
+
+2. In the Options dialog box, click the "File Locations" tab.
+
+3. Modify the Startup Program line to point to the Vfp6strt.app located in the
+  Visual FoxPro home directory. For example:
+
+     File Type         Location
+     --------------------------
+
+     Startup Program   c:\Program Files\Microsoft Visual Studio\vfp98\ 
+                       Vfp6strt.app
+
+4. Click the "Set as Default" button and then click OK.
+
+5. Quit Visual FoxPro and restart the program. The Welcome screen still appears.
+
+6. Select the "Don't display this Welcome screen again" check box and click
+  "Close this screen".
+
+7. Open the Options dialog box, click "Set as Default" and then click OK.
+
+8. Quit Visual FoxPro and then restart the program. The Welcome screen still
+  appears.
+
+Additional query words: kbVFp600bug kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

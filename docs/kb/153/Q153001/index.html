@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q153001: XFOR: DNS MX Records and CNAMEs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q153001: XFOR: DNS MX Records and CNAMEs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/153/Q153001/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/153/Q153001/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/153/Q153001/","publisher":null,"image":null,"headline":"Q153001: XFOR: DNS MX Records and CNAMEs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q153001-xfor-dns-mx-records-and-cnames">Q153001: XFOR: DNS MX Records and CNAMEs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q153001
+Product(s): Microsoft Exchange
+Version(s): 4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): kbusage exc4 exc5 exc55
+Last Modified: 09-MAR-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+- Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Though Domain Name System (DNS) entries for Mail Exchanger (MX) records can be
+pointed to canonicalized (CNAME) host records, doing so is not advised, and is
+not a Microsoft recommended best practice. Increased administrative overhead and
+the possibility of misrouted messages can result.
+
+Microsoft recommends Mail/DNS administrators to always link MX records to fully
+qualified principal names or domain literals.
+
+MORE INFORMATION
+================
+
+DNS is used to identify computers on the Internet. The Internet Mail Connector
+(IMC) uses DNS to resolve Internet Protocol (IP) addresses when sending mail. A
+sending Simple Mail Transfer Protocol (SMTP) server also uses DNS to determine
+which host on the destination network is appropriate to receive mail. To
+determine mail hosts, the sending server checks for an MX record. Next, the
+sending server resolves the MX record to an IP address by checking for an
+address record (A record). If an A record is found, the address is fully
+canonicalized and mail can be delivered.
+
+However, if an alias record (CNAME) is used for the hostname listed in the MX
+record, the sending host might re-write the envelope and redirect the RCPT
+command to the alias hostname and not the original recipient. This might cause
+the destination SMTP host to reject the message.
+
+Example:
+
+company.com.      MX 10       mail.company.com.
+mail.company.com.    IN CNAME    server.company.com.
+
+When you address mail to "admin@company.com" with the above configuration, the
+sending host might detect the fact that the "mail.company.com" is an alias and
+rewrite the RCPT-TO command to "server.company.com". Thus, the mail envelope
+written during SMTP mail transmission might be changed to
+"admin@server.company.com". If the mail system isn't configured to accept mail
+for "server.company.com" the message may be returned as undeliverable. This
+issue can be difficult to detect since the body of the message with the TO: line
+is left unchanged.
+
+Desired Configuration:
+
+company.com.      MX 10       mail.company.com.
+mail.company.com.    IN A     127.127.127.127
+
+In the above example, the MX record resolves directly to an IP address. This
+causes the sending host to realize that the resolved address is canonical and
+the final destination. Alias records (CNAME) aren't needed because the
+connection can be redirected to the desired CNAME's IP address directly instead
+of using an alias record.
+
+RFC 1123 explicitly states that SMTP mail should be addressed to canonical name
+hosts. To be canonical, the DNS entry must be an A record or an MX record. CNAME
+records are not canonical and should not be mixed with MX records.
+
+Note that most SMTP servers do not rewrite the message envelope when resolving
+through aliases. Usually this configuration issue can be detected if there are
+complaints that a user receives the majority of their SMTP mail but mail from a
+particular host is rejected even though the addressing is the same.
+
+Additional query words: smtp
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

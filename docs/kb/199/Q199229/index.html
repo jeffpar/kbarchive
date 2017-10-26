@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199229: SMS: Extending an Existing Architecture Using IDMIFs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199229: SMS: Extending an Existing Architecture Using IDMIFs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199229/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199229/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199229/","publisher":null,"image":null,"headline":"Q199229: SMS: Extending an Existing Architecture Using IDMIFs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199229-sms-extending-an-existing-architecture-using-idmifs">Q199229: SMS: Extending an Existing Architecture Using IDMIFs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199229
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:1.2
+Operating System(s): 
+Keyword(s): kbDatabase kbsms120 kbInventory
+Last Modified: 08-MAY-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can add custom groups to an existing architecture
+within the Systems Management Server database using IDMIFs, as opposed to
+NOIDMIFs.
+
+NOIDMIFs are Management Information Format files (MIFs) that do not contain
+identification or architecture information. These files are placed on the client
+and are appended to the machine inventory when it is reported up through normal
+inventory processing.
+
+IDMIFs, on the other hand, contain identification and architecture information.
+These files are placed directly in the Isvmif.box on a Systems Management Server
+logon server. Therefore, IDMIFs can be generated without ever interacting with
+client machines.
+
+One scenario in which you might choose to use an IDMIF rather than a NOIDMIF to
+extend inventory is when you want to add information from another data source,
+such as a human resources database, to an existing Systems Management Server
+architecture such as the "personal computer" architecture.
+
+MORE INFORMATION
+================
+
+IDMIFs contain identification information and architecture information that
+Systems Management Server uses to determine which architecture and which record
+within that architecture to work with. The sample below uses an IDMIF to add a
+new group to the personal computer architecture. (The personal computer
+architecture is the standard architecture for all client computer inventory in
+Systems Management Server.)
+
+Steps to Create the IDMIF
+-------------------------
+
+1. Query the vIdentification view in the Systems Management Server database to
+  obtain all the identification information to be put into the custom IDMIF. In
+  this scenario, Systems Management Server uses the identification information
+  to determine which computer the new group data will be added to.
+
+2. Place the architecture group in the IDMIF to identify which architecture you
+  are updating, in this case personal computer.
+
+3. Finally, add the desired custom groups and the corresponding attributes for
+  those groups to the file.
+
+4. Now that you have a completed IDMIF, place this MIF in the Isvmif.box on any
+  Systems Management Server logon server to process the information and add it
+  to the Systems Management Server database. Once new groups have been added to
+  the database, restart the SMS Administrator console to view new group classes
+  in the personal computer properties window for the clients that have this
+  group information.
+
+NOTE: In this scenario, one IDMIF is generated for every computer to which you
+want to add a group containing custom information. Once a group has been added
+to the database, any MIFs that attempt to update this group must conform to the
+definition that was used to create the group in the database. To remove the
+group from the database, use the Systems Management Server Database Manager
+utility. (See Help for instructions.)
+
+WARNING: When you delete a group class, all the data associated with that group
+class is also deleted.
+
+For more information on the MIF format used below, see chapter 4 of the Microsoft
+Systems Management Server Resource Guide, which is part of the BackOffice
+Resource Kit.
+
+Sample Code
+-----------
+
+  Start Component
+     Name = "Workstation"
+     Start Group
+        Name = "Identification"
+        ID = 1
+        Class = "MICROSOFT|IDENTIFICATION|1.0"
+        Key = 6,2,1
+        Start Attribute
+           Name = "Name"
+           ID = 1
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(64)
+           Value = "BILLYBOB"
+        End Attribute
+        Start Attribute
+           Name = "SMSID"
+           ID = 2
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(8)
+           Value = "C1200007"
+        End Attribute
+        Start Attribute
+           Name = "SMSLocation"
+           ID = 3
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(64)
+           Value = "C12|NCSMS12DOM|BILLYBOB"
+        End Attribute
+        Start Attribute
+           Name = "Site"
+           ID = 4
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(3)
+           Value = "C12"
+        End Attribute
+        Start Attribute
+           Name = "Domain"
+           ID = 5
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(16)
+           Value = "NCSMS12DOM"
+        End Attribute
+        Start Attribute
+           Name = "NetCardID"
+           ID = 6
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(18)
+           Value = "00:AA:00:60:D8:56"
+        End Attribute
+        Start Attribute
+           Name = "SystemRole"
+           ID = 7
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(12)
+           Value = "Workstation"
+        End Attribute
+        Start Attribute
+           Name = "SystemType"
+           ID = 8
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(32)
+           Value = "X86-based PC"
+        End Attribute
+        Start Attribute
+           Name = "LogOn Name"
+           ID = 9
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(48)
+           Value = "smsadmin"
+        End Attribute
+     End Group
+     Start Group
+        Name = "Architecture"
+        ID = 2
+        Class = "MICROSOFT|ARCHITECTURE|1.0"
+        Start Attribute
+           Name = "ArchitectureName"
+           ID = 1
+           Access = READ-ONLY
+           Storage = SPECIFIC
+           Type = String(18)
+           Value = "Personal Computer"
+        End Attribute
+     End Group
+     Start Group
+        Name = "Test Group"
+        ID = 3
+        Class = "DAVSTEW|TEST_GROUP|1.0"
+        Start Attribute
+           Name = "Stuff from other datasource"
+           ID = 1
+           Access = READ-ONLY
+           Storage = COMMON
+           Type = String(40)
+           Value = "This is the stuff"
+        End Attribute
+        Start Attribute
+           Name = "More Stuff"
+           ID = 2
+           Access = READ-ONLY
+           Storage = COMMON
+           Type = String(40)
+           Value = "This is more stuff"
+        End Attribute
+     End Group
+  End Component
+
+REFERENCES
+==========
+
+Microsoft Systems Management Server Resource Guide
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase kbsms120 kbInventory 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q89878: Windows Sound System: How SoundScapes Works | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q89878: Windows Sound System: How SoundScapes Works" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/089/Q89878/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/089/Q89878/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/089/Q89878/","publisher":null,"image":null,"headline":"Q89878: Windows Sound System: How SoundScapes Works","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q89878-windows-sound-system-how-soundscapes-works">Q89878: Windows Sound System: How SoundScapes Works</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q89878
+Product(s): Miscellaneous Windows Products
+Version(s): 
+Operating System(s): 
+Keyword(s): 
+Last Modified: 11-SEP-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows Sound System, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SoundScapes, a component of the Windows Sound System, works by setting a timer
+to play a sound. Note the following:
+
+- If a sound is playing when the timer event occurs, SoundScapes does not play
+  an additional sound.
+
+- If a sound is not playing, SoundScapes generates a random number from 0 to 99
+  and compares it to the "chance" of a sound being played (chance is an entry
+  in the CONTROL.INI file). If the random value is less than the chance, then
+  SoundScapes randomly selects one of the sounds from the sound list and plays
+  it at a random volume level unless position=0, in which case SoundScapes
+  always plays at the same volume.
+
+MORE INFORMATION
+================
+
+SoundScapes gets its information from the CONTROL.INI file in the Windows
+directory. The important fields are:
+
+  [SoundScapes]
+  current=&lt;soundscape name of current scape&gt;
+  Environment00=&lt;first soundscape&gt;
+  Environment01=&lt;second soundscape&gt;
+  Environment&lt;??&gt;=&lt;last soundscape&gt;
+  Volume=&lt;volume level from 0 to 255, 255 being loudest&gt;
+  PWProtected=&lt;0 if there's no password protection; 1 if there is&gt;
+  Path=&lt;directory for the soundscape sounds&gt;
+
+Each SoundScapes sound has an entry similar to the following:
+
+  [SndScape.&lt;soundscape name&gt;]
+  Numsounds=&lt;number of sounds in the soundscape&gt;
+  Chance=&lt;chance out of 100 of playing a sound every "Time" seconds&gt;
+  Time=&lt;Number of seconds between timer clicks&gt;
+  Position=&lt;1 if a random volume level is chosen; 0 to use maximum
+  volume all the time&gt;
+  sound00=&lt;first wave file&gt;
+  sound01=&lt;second wave file&gt;
+  sound&lt;# sounds - 1&gt;=&lt;last wave file&gt;
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

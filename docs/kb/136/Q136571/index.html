@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q136571: How WINS Resolves Name Conflicts During Replication | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q136571: How WINS Resolves Name Conflicts During Replication" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/136/Q136571/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/136/Q136571/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/136/Q136571/","publisher":null,"image":null,"headline":"Q136571: How WINS Resolves Name Conflicts During Replication","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q136571-how-wins-resolves-name-conflicts-during-replication">Q136571: How WINS Resolves Name Conflicts During Replication</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q136571
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 04-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+How a Windows Internet Name Service (WINS) server entry responds when a conflict
+occurs varies depending on three different instances:
+
+- State of the entries
+
+- Ownership of the entries
+
+- Addresses of the entries
+
+MORE INFORMATION
+================
+
+Conflict Between 2 Replicas
+---------------------------
+
+- If Replica1 and Replica2 are Tombstoned (indicated by a cross in the status
+  field), Replica1 is replaced.
+
+- If Replica1 is Tombstoned and Replica2 is active, Replica1 is replaced.
+
+- If Replica1 is Active and Replica2 is Tombstoned, Replica1 will be kept if:
+
+   - Replica1 and Replica2 come from different WINS servers.
+
+   - If they have the same owner, Replica2 will be kept.
+
+- If Replica1 and Replica2 are active, Replica2 will be kept.
+
+Conflict Between Owned Entry and
+Replica with Same or Different IP Address
+--------------------------------------------------------------------------
+
+- If Address1 is Tombstoned or released and Replica1 is Tombstoned, Address1 is
+  replaced.
+
+- If Address1 is Tombstoned or released and Replica1 is active, Address1 is
+  replaced.
+
+- If Address1 is active and Replica1 is Tombstoned, Address1 is kept.
+
+- If Address1 and Replica1 are active, Replica1 will be kept. Address1 will be
+  told to release the name, and Replica1 will increment its version stamp to
+  cause repropogation.
+
+If a Unique Name Conflicts with a Group Name
+--------------------------------------------
+
+The Group entry is kept.
+
+If There Is a Conflict Between Two Internet Group Names
+-------------------------------------------------------
+
+- If Group1 is Tombstoned or released and Group2 is Tombstoned, Group1 is
+  replaced.
+
+- If Group1 is Tombstoned or released and Group2 is active, Group1 is replaced.
+
+- If Group1 is active and Group2 is Tombstoned, Group1 is kept.
+
+- If Group1 and Group2 are active, A superset of both groups is maintained.
+
+If a Multihomed Record Conflicts
+--------------------------------
+
+- If a multihomed replica clashes with a tombstoned or released database entry,
+  the entry in the database is replaced with the replica.
+
+- If a tombstoned multihomed replica conflicts with an active entry with the
+  same owner, the entry is replaced. However, if the active entry is owned by a
+  different owner, then it is not replaced.
+
+- If an active multihomed entry conflicts with an active unique/multihomed
+  replica in the same database, it is replaced. If the owner is different, it
+  is not replaced.
+
+Additional query words: clash prodnt replica
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

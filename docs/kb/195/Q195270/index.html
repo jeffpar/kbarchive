@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q195270: Hitchhiker’s Guide to VB &amp; SQL Server, 6th Ed. Corrections | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q195270: Hitchhiker’s Guide to VB &amp; SQL Server, 6th Ed. Corrections" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/195/Q195270/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/195/Q195270/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/195/Q195270/","publisher":null,"image":null,"headline":"Q195270: Hitchhiker’s Guide to VB &amp; SQL Server, 6th Ed. Corrections","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q195270-hitchhikers-guide-to-vb--sql-server-6th-ed-corrections">Q195270: Hitchhiker’s Guide to VB &amp; SQL Server, 6th Ed. Corrections</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q195270
+Product(s): Microsoft Press
+Version(s): 
+Operating System(s): 
+Keyword(s): kbdocerr
+Last Modified: 16-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- MSPRESS Hitchhiker's Guide to Visual Basic and SQL Server, 6th Edition ISBN 1-57231-848-1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book "Hitchhiker's Guide to Visual Basic and SQL
+Server, Sixth Edition," ISBN 1-57231-848-1.
+
+The following topics are covered:
+
+- Back Cover: VBSQL as Visual Basic/SQL
+
+- Tip to be Added to Chapter 30
+
+- Page 64: Search Event Procedure Produces Error After First Search
+
+- Page 80: The note on the side of the page is missing text
+
+- Page 631: ADO Find method incorrectly described
+
+- Page 722: Heading On Table Is Incorrect
+
+MORE INFORMATION
+================
+
+Back Cover: VBSQL as Visual Basic/SQL
+-------------------------------------
+
+In the second bulleted list entry on the left and in the third entry under
+"Included on CD-ROM!" what now is spelled out as "Visual Basic/SQL" should be
+"VBSQL."
+
+
+Tip to be Added to Chapter 30
+-----------------------------
+
+The author requested that the following tip be added to Chapter 30.
+
+  Tip: Don't expect ADO or any of the interfaces to return after "n" seconds
+  (based on your connection timeout setting) if the LAN is down. These
+  connection routines assume a working connection. Most of the LAN protocols
+  wait for about 90 seconds before giving up trying to send bits into the
+  ether.
+
+
+Page 64: Search Event Procedure Produces Error After First Search
+-----------------------------------------------------------------
+
+On page 64, under "Coding the SearchButton_Click event procedure", the ADO code
+sample will successfully search the pubs database. However, if you try to
+perform additional searches during the current connection, the following error
+will be displayed when you click the Search button:
+
+  Run-time error '3705'
+  Operation is not allowed when the object is open.
+
+This error occurs because the Open method on the Recordset object is called while
+the Recordset object is currently open. One way to eliminate this error is to
+check the state of the Recordset object before calling the Open method. The
+following code change in the SearchButton_Click() procedure will eliminate the
+problem.
+
+Change:
+
+  Private Sub SearchButton_Click()
+  Cmd(0) = "%" &amp; TitleWanted &amp; "%"
+  Rs.Open Cmd, , adOpenStatic
+  If Rs.EOF = False Then
+      ShowRecord
+  Else&lt;BR/&gt;
+      MsgBox "No records found. Choose another title to search for."
+  End If
+  End Sub
+
+To:
+
+  Private Sub SearchButton_Click()
+  Cmd(0) = "%" &amp; TitleWanted &amp; "%"
+  If Rs.State = adStateOpen Then
+      Rs.Close
+  End If
+  Rs.Open Cmd, , adOpenStatic
+  If Rs.EOF = False Then
+      ShowRecord
+  Else
+      MsgBox "No records found. Choose another title to search for."
+  End If
+  End Sub
+
+
+Page 80: The note on the side of the page is missing text
+---------------------------------------------------------
+
+Page 80: The note on the side of the page is incomplete.
+
+Replacement text will be posted as soon as it is available.
+
+
+Page 631: ADO Find method incorrectly described
+-----------------------------------------------
+
+On page 631, the ADO Find method is incorrectly described as returning a Boolean
+data type. The Find method does not return a value, but actually sets the
+recordset position. As indicated in the ADO documentation, if the find criteria
+is met, the recordset position is set on the found record; otherwise, the
+position is set on the end of the recordset.
+
+On page 631, the Criteria argument does not specify all of the comparison
+operators. The comparison operators should include:
+&gt;, &lt;, =, &gt;=, &lt;=, &lt;&gt;, LIKE
+Steps to correct page 631.
+
+1. The Find syntax after the first paragraph should be changed: Find(Criteria,
+  SkipRecords, SearchDirection, Start)
+
+2. The paragraph after Table 29-34 should be replaced with the following:
+  "When the Find method is executed and the Criteria argument is satisfied, the
+  recordset position is set to the found record. If the Criteria argument is
+  not satified, the recordset position is set to the end of the recordset."
+
+3. The second paragraph after Table 29-34 should be replaced with the
+  following:
+  "The comparison operator in criteria can be &gt; (greater than), &lt; (less
+  than), = (equal), &gt;= (greater than or equal), &lt;= (less than or equal),
+  &lt;&gt; (not equal), or LIKE (pattern matching)."
+
+
+Page 722: Heading On Table Is Incorrect
+---------------------------------------
+
+Page 722, Table 31-4, heading 1:
+Change: "RDO/ADO"
+To: "RDO/DAO"
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ms_press 1-57231-848-1 vb60
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

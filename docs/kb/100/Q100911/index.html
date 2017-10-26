@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q100911: MS-DOS Err Msg with DoubleSpace: Insufficient Disk Space | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q100911: MS-DOS Err Msg with DoubleSpace: Insufficient Disk Space" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/100/Q100911/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/100/Q100911/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/100/Q100911/","publisher":null,"image":null,"headline":"Q100911: MS-DOS Err Msg with DoubleSpace: Insufficient Disk Space","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q100911-ms-dos-err-msg-with-doublespace-insufficient-disk-space">Q100911: MS-DOS Err Msg with DoubleSpace: Insufficient Disk Space</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q100911
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.0,6.2,6.21,6.22
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 02-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+
+
+This information applies to both Microsoft DoubleSpace and Microsoft
+DriveSpace. For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for
+commands and filenames.
+
+SUMMARY
+=======
+
+When you copy or create files on a DoubleSpace-compressed drive, it is possible
+to receive an "Insufficient Disk Space" error message when MS-DOS reports
+sufficient space to perform the operation. This article discusses potential
+causes of this problem and workarounds.
+
+MORE INFORMATION
+================
+
+There are several instances, including those listed below, in which MS-DOS may
+report insufficient disk space when copying files to a compressed drive.
+
+- The estimated compression ratio (ECR) is lower than the actual compression
+  ratio (ACR) for the files to be copied. In this case, MS-DOS underestimates
+  the space available. To correct this problem, set the ECR equal to the ACR
+  for the drive as follows:
+
+  1. Start DoubleSpace by typing "dblspace" (without the quotation marks) at
+     the MS-DOS command prompt.
+
+  2. Select the compressed drive you want to change and then choose the Change
+     Ratio command from the Drive menu.
+
+     The Change Compression Ratio dialog box appears.
+
+  3. The default ratio is the ACR. Choose OK.
+
+     You can also change the ECR from the MS-DOS command prompt. For more
+     information, type "help dblspace /ratio" (without the quotation marks) at
+     the MS-DOS command prompt.
+
+     NOTE: The above procedure causes MS-DOS to estimate free disk space more
+     accurately and may also increase the number of FAT entries available. If
+     the files to be copied are highly compressible, then you may need to make
+     the ECR higher than the current ACR.
+
+- The ECR is higher than the ACR for the files to be copied. In this case,
+  MS-DOS overestimates the space available, and you must either delete files or
+  enlarge the drive to free space. To enlarge the compressed drive, use the
+  following steps:
+
+  1. Start DoubleSpace by typing "dblspace" (without the quotation marks) at
+     the MS-DOS command prompt.
+
+  2. Select the compressed drive you want to enlarge, then choose the Change
+     Size command from the Drive menu.
+
+     The Change Size dialog box appears. The New Free Space line shows how much
+     free space the compressed and uncompressed drives will have if you choose
+     OK.
+
+  3. Specify a smaller number for New Free Space on the uncompressed drive. As
+     you change this number, DoubleSpace adjusts the New Free Space amount for
+     the compressed drive. When the New Free Space amount for both drives is
+     what you want, choose OK.
+
+     DoubleSpace enlarges the compressed drive.
+
+     NOTE: The above procedure decreases the free space on the uncompressed
+     (host) drive.
+
+- The DoubleSpace drive is too fragmented. To correct this problem, use the
+  commands DBLSPACE /DEFRAG /F and DBLSPACE /DEFRAG on the compressed drive as
+  follows:
+
+  NOTE: You may want to perform this procedure overnight. Defragmenting a large
+  or badly fragmented drive can take a long time. (To defragment overnight, put
+  both commands into a batch file.)
+
+  1. Make the compressed drive your current drive.
+
+  2. Type "dblspace /defrag /f" (without the quotation marks) at the MS-DOS
+     command prompt.
+
+     DoubleSpace defragments the drive.
+
+  3. When DoubleSpace finishes, type "dblspace /defrag" (without the quotation
+     marks) at the MS-DOS command prompt.
+
+  DoubleSpace consolidates free space on the drive to leave as much free space
+  as possible.
+
+- No more FAT entries are available. To correct this problem, split the host
+  drive into more compressed drives as follows:
+
+  If the data on a compressed drive is reaching the 512-megabyte limit, reduce
+  the size of the drive and then use the Create New command on the Compress
+  menu to create a new drive from free space on the drive.
+
+
+- Finally, certain programs or files may cause the "Insufficient Disk Space"
+  message or may fail when they are installed on a DoubleSpace- compressed
+  drive because their ACR is close to 1:1. These include the following:
+
+   - Many games by Sierra On-Line (also marketed as Dynamix or Coktel)
+
+   - Microsoft Mail Format (.MMF) files
+
+   - Encrypted data files
+
+   - Precompressed files (such as .ARC, .ZIP, .PCX, and .GIF files)
+
+  Move highly compressible files to the compressed drives and leave files that
+  compress poorly on uncompressed drives.
+
+
+For more information on the ECR, ACR, and the space available on a
+DoubleSpace-compressed drive, see page 125 in the "User's Guide."
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+REFERENCES
+==========
+
+"Microsoft MS-DOS User's Guide" for version 6 and 6.2, pages 125-126
+
+README.TXT, Section 7.3
+
+
+Additional query words: tshoot 6.00 6.20 6.21 6.22 dblspace
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

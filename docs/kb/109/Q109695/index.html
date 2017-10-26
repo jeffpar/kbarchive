@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q109695: Cannot Read Last Image from Photo-CD | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q109695: Cannot Read Last Image from Photo-CD" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/109/Q109695/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/109/Q109695/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/109/Q109695/","publisher":null,"image":null,"headline":"Q109695: Cannot Read Last Image from Photo-CD","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q109695-cannot-read-last-image-from-photo-cd">Q109695: Cannot Read Last Image from Photo-CD</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q109695
+Product(s): Microsoft Disk Operating System
+Version(s): MS-DOS:6.2,6.21,6.22; WINDOWS:3.11
+Operating System(s): 
+Keyword(s): msdos
+Last Modified: 23-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft MS-DOS operating system versions 6.2, 6.21, 6.22 
+- Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may be unable to read the last image from a Photo-CD under MS-DOS version
+6.2 and 6.21 using Kodak Access, Tempra Access, or other third- party Photo-CD
+software.
+
+CAUSE
+=====
+
+This problem occurs when you are using SMARTDrive version 5.0 (included with
+MS-DOS 6.2 and Windows for Workgroups 3.11) to cache the Photo-CD.
+
+WORKAROUND
+==========
+
+To work around this problem, either disable disk caching on the CD-ROM drive, or
+add the "/E:2048" (without the quotation marks) parameter to the SMARTDRV.EXE
+command (typically in the AUTOEXEC.BAT file). For example:
+
+  smartdrv /e:2048
+
+MORE INFORMATION
+================
+
+SMARTDrive attempts to read more data than is initially requested. This is
+called "read ahead" caching. When SMARTDrive reads past the end of a Photo- CD
+it fails to read the last photo. This problem occurs because a Photo-CD does not
+contain data after the last photo, even though the CD disk size indicates
+additional sectors exist.
+
+The /E parameter specifies in bytes the amount of the cache that SMARTDrive moves
+at a time. Reducing the element size to 2048 (from the default of 8192) prevents
+SMARTDrive from attempting to read past the end of the Photo- CD.
+
+For more information on configuring SMARTDrive, type "help smartdrv" (without the
+quotation marks) at the MS-DOS command prompt and then press ENTER.
+
+MS-DOS version 6.22 ships with SMARTDrive version 5.01. SMARTDrive version 5.01
+fixes problems with Kodak Photo-CDs. For more information about SMARTDrive, see
+the following article in the Microsoft Knowledge Base:
+
+  Q127021 SMARTDrive Version History
+
+Additional query words: 3.11 6.20 6.21 picture compact disk photograph hang lock cdrom
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311 kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.21,6.22; WINDOWS:3.11
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

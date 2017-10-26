@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q120397: Use atof or atoi Functions to Convert from Char Strings | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q120397: Use atof or atoi Functions to Convert from Char Strings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/120/Q120397/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/120/Q120397/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/120/Q120397/","publisher":null,"image":null,"headline":"Q120397: Use atof or atoi Functions to Convert from Char Strings","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q120397-use-atof-or-atoi-functions-to-convert-from-char-strings">Q120397: Use atof or atoi Functions to Convert from Char Strings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q120397
+Product(s): Microsoft Fortran Compiler
+Version(s): 1.0,1.0a,4.0
+Operating System(s): 
+Keyword(s): kbcode kbFortranPS kbLangFortran
+Last Modified: 05-NOV-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FORTRAN PowerStation for MS-DOS, version 1.0a 
+- Microsoft Fortran Powerstation 32 for Windows NT, versions 1.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft FORTRAN PowerStation does not permit list-directed I/O for internal
+files. As a result, you may find it difficult to convert character strings to
+numeric values unless you know the exact format of the string. However, the atoi
+and atof functions included in the LIBC.LIB library can accomplish the
+translation.
+
+MORE INFORMATION
+================
+
+To use the atof and atoi functions, you must create interfaces to the functions,
+and declare the types of the functions.
+
+The LIBC.LIB library containing the atof and atoi functions, is linked by default
+when building FORTRAN programs in PowerStation, so no special options are
+required.
+
+The atof function expects the character string to be in the following form:
+
+  [whitespace] [sign] [digits] [.digits] [ {d | D | e | E }[sign]digits]
+
+Use some caution and error checking when employing these functions. If the atof
+or atoi function cannot convert the string format, it returns zero (0.0 or 0) as
+the error condition. You should consult the C run-time library reference for
+complete information on these functions.
+
+FORTRAN does not null terminate strings, so the functions may incorrectly
+translate a string that contains digits up to the end. To be safe, insert a null
+character in the last position of the string. For example, the following command
+null terminates the string "a":
+
+        CHARACTER*10 a
+        a(10:10) = char(0)
+
+Sample Code
+-----------
+
+Compiler options needed: none
+
+  C Interface to the atof function which is in the LIBC library
+
+        INTERFACE to REAL*8 FUNCTION atof[C](a)
+        CHARACTER*(*) a[reference]
+        END
+  C Interface to the atoi function which is in the LIBC library
+
+        INTERFACE to INTEGER FUNCTION atoi[C](a)
+        CHARACTER*(*) a[reference]
+        END
+        REAL*8  x
+        REAL*8  atof !prevents error F2236: ATOF : length redefined
+        INTEGER i
+        INTEGER atoi !prevents error F2201: ATOI : type redefined
+        CHARACTER*30 a
+        PRINT *, "Type a numeric value"
+        READ '(A)', a
+        a(30:30) = char(0)
+        x = atof(a)
+        i = atoi(a)
+        PRINT *, '"',a,'"', x, i
+        END
+
+Additional query words: kbinf 1.00 1.00a 4.00 VAX porting port
+
+======================================================================
+Keywords          : kbcode kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbZNotKeyword3 kbFORTRANPower32100NT kbFORTRANPower32400NT kbFORTRANPower100aDOS
+Version           : :1.0,1.0a,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

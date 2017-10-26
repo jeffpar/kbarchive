@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q248013: Err Msg: HTTP Error 500-12 Application Restarting | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q248013: Err Msg: HTTP Error 500-12 Application Restarting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/248/Q248013/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/248/Q248013/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/248/Q248013/","publisher":null,"image":null,"headline":"Q248013: Err Msg: HTTP Error 500-12 Application Restarting","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q248013-err-msg-http-error-500-12-application-restarting">Q248013: Err Msg: HTTP Error 500-12 Application Restarting</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q248013
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbOSWin2000 kbiis500prod2web kbhttp50012 kbProd2Web
+Last Modified: 31-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a client attempts to connect to a Microsoft Internet Information Services
+(IIS) 5.0 application that is restarting, the browser displays the following
+error message:
+
+  
+
+  The page cannot be displayed
+  ----------------------------
+
+  There is a problem with the page you are trying to reach and it cannot be
+  displayed.
+
+  HTTP Error 500-12 Application Restarting
+  Internet Information Services
+
+WORKAROUND
+==========
+
+This message is harmless and usually disappears after the browser is refreshed.
+There is no good workaround once the message appears from a production
+environment. However, if the message appears for an extended period of time, you
+may want to consider stopping all the Web services and reloading the
+application.
+
+MORE INFORMATION
+================
+
+When certain changes are made to an IIS 5.0 application, those changes are
+committed to the Global.asa file for the application. When you save changes to
+the Global.asa file, the server finishes processing all of the current
+application requests before it recompiles the Global.asa file. During that time,
+the server refuses additional requests and returns an error message stating that
+the request cannot be processed while the Web site is restarting.
+
+After all of the current user requests have been processed, the server deletes
+all active sessions, calling the Session_OnEnd event for each session it
+deletes, closes the application, and then calls the Application_OnEnd event. The
+Global.asa file is then recompiled.
+
+Subsequent user requests will start the application and create new sessions, and
+trigger the Application_OnStart and Session_OnStart events. When you view an ASP
+page while the application is running Application_OnStart, the following error
+message occurs:
+
+  HTTP Error 500-12 Application Restarting
+
+The message is harmless and usually disappears when you refresh the page in your
+browser.
+
+This error message may also be caused by anti-virus software scanning. When
+anti-virus software scans an IIS Web application, IIS may behave as if the
+Global.asa has been modified and thus restart the web application. Turning off
+virus scanning on the global.asa file may help resolve this issue. If a client
+GET request is made during this time, the web server will return a 500-12 error.
+For additional information on the same error message occurring in Site Server
+3.0, Commerce Edition, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q236446 Err Msg: HTTP 1.1 Application Restarting
+
+Additional query words: IIS 5
+
+======================================================================
+Keywords          : kbOSWin2000 kbiis500prod2web kbhttp50012 kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

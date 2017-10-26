@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q132332: How to Back Up the Registry in Microsoft Windows 95 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q132332: How to Back Up the Registry in Microsoft Windows 95" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/132/Q132332/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/132/Q132332/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/132/Q132332/","publisher":null,"image":null,"headline":"Q132332: How to Back Up the Registry in Microsoft Windows 95","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q132332-how-to-back-up-the-registry-in-microsoft-windows-95">Q132332: How to Back Up the Registry in Microsoft Windows 95</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q132332
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 
+Operating System(s): 
+Keyword(s): kbtool win95
+Last Modified: 29-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to back up and restore the Windows 95 registry files.
+
+MORE INFORMATION
+================
+
+To back up and restore the Windows 95 registry files, use one of the following
+methods:
+
+Method 1
+--------
+
+To back up your registry files, follow these steps:
+
+1. Restart your computer. Press the F8 key when you see the "Starting Windows
+  95" message, and then choose Safe Mode Command Prompt Only from the Startup
+  menu.
+
+2. At the command prompt type the following lines, pressing ENTER after each
+  line:
+
+  " cd windows
+  attrib -r -h -s system.dat
+  attrib -r -h -s user.dat
+  copy system.dat *.bu
+  copy user.dat *.bu " (without the quotation marks)
+
+  NOTE: This procedure assumes you do not have any files named System.bu or
+  User.bu. If you do have files by this name, such as a backup of the
+  System.ini file, select a file name extension that is not currently in use.
+
+3. Restart your computer.
+
+To restore your registry files, follow these steps:
+
+1. Restart your computer. Press the F8 key when you see the "Starting Windows
+  95" message, and then choose Safe Mode Command Prompt Only from the Startup
+  menu.
+
+2. Type the following lines at the command prompt, pressing ENTER after each
+  line:
+
+  " cd windows
+  attrib -r -h -s system.dat
+  attrib -r -h -s system.da0
+  attrib -r -h -s user.dat
+  attrib -r -h -s user.da0
+  ren system.dat system.daa
+  ren system.da0 system.da1
+  ren user.dat user.daa
+  ren user.da0 user.da1
+  copy system.bu system.dat
+  copy user.bu user.dat " (without the quotation marks)
+
+  NOTE: This procedure assumes you do not have any files named System.daa,
+  System.da1, User.daa, or User.da1. If you do have files by this name, select
+  a file name extension that is not currently in use.
+
+3. Restart your computer.
+
+Notes:
+
+- You may want to back up more than one version of the registry in case the
+  registry becomes damaged but the damage is not detected until later. If you
+  want to do this, when you are following the steps above, replace the .bu
+  extension with .bu1, .bu2, and so on.
+
+- If you have more than one hard disk or a network drive is available, you may
+  want to copy the backup files to the other drive so the backup files do not
+  reside in the same location as the original registry files.
+
+
+Method 2
+--------
+
+You can use the Windows 95 Emergency Recovery Utility to create a backup of your
+system configuration and registry files and restore these files in case a
+problem should occur.
+
+For information about using the Windows 95 Emergency Recovery Utility, see the
+following article in the Microsoft Knowledge Base:
+
+  Q139437 Windows 95 Emergency Recovery Utility
+
+Additional Information
+----------------------
+
+Windows 95 stores information about the hardware and software in your computer in
+the System.dat and User.dat files. The System.dat and User.dat files should be
+treated as a pair. You should back them up together as a pair and restore them
+together as a pair. These files are hidden, read- only files.
+
+Note that if you are using user profiles, you should also backup the User.dat
+files located in the following folders
+
+  C:\Windows\Profiles\&lt;username&gt;
+
+where &lt;username&gt; is the name of each person that logs on to Windows 95.
+
+If the registry is damaged, various errors may occur, or your computer may not
+start properly. For information about troubleshooting registry problems, see the
+following article in the Microsoft Knowledge Base:
+
+  Q131431 How to Troubleshoot Registry Errors in Windows 95
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

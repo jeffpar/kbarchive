@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152956: XCLN: Details Corrupt When Using Spanish Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152956: XCLN: Details Corrupt When Using Spanish Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152956/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152956/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152956/","publisher":null,"image":null,"headline":"Q152956: XCLN: Details Corrupt When Using Spanish Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152956-xcln-details-corrupt-when-using-spanish-client">Q152956: XCLN: Details Corrupt When Using Spanish Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152956
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 01-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to view address book detail information, secondary property
+pages are not readable. This occurs when viewing the address lists on a
+Microsoft Mail postoffice using the Spanish language Exchange Windows 95 client.
+
+CAUSE
+=====
+
+When a Microsoft Mail postoffice is installed for the Spanish language clients,
+Spanish-specific TPL files are installed in the TPL subdirectory. The
+Spanish-specific TPL files listed below have improper values for the Alias and
+Nombre fields. These TPL files incorrectly specify lengths of 31 when it should
+be a value of 30.
+
+  SPACOU00.TPL     SPAALIAS.TPL     SPACOU02.TPL       SPACOU04.TPL
+
+WORKAROUND
+==========
+
+A self-extracting zip file has been created that includes replacements for the
+affected files. The filename is Tplspan.exe. Expand this file into the TPL
+subdirectory and run the Replace.bat file to rename the original files and
+substitute the corrected files.
+
+The following corrections have been made in the TPL files indicated:
+
+SPACOU00.TPL
+    Alias:~9~31~A~~             changed to        Alias:~9~30~A~~
+    Nombre:~9~31~A~~            changed to        Nombre:~9~30~A~~
+SPACOU02.TPL
+    Nombre:~7~31~A~~            changed to        Nombre:~7~30~A~~
+SPAALIAS.TPL
+    Alias:~9~31~ULNP~~          changed to        Alias:~9~30~ULNP~~
+SPACOU04.TPL
+    Alias:~9~31~ULNP~~          changed to        Alias:~9~30~ULNP~~
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail version 4.0.
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Contact
+Microsoft Product Support Services for more information.
+
+
+
+Additional query words: Spanish TPL
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

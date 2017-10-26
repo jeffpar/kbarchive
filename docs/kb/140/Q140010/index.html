@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q140010: Microsoft Plus! Setup Inadvertently Installs NetWare Client | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q140010: Microsoft Plus! Setup Inadvertently Installs NetWare Client" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/140/Q140010/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/140/Q140010/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/140/Q140010/","publisher":null,"image":null,"headline":"Q140010: Microsoft Plus! Setup Inadvertently Installs NetWare Client","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q140010-microsoft-plus-setup-inadvertently-installs-netware-client">Q140010: Microsoft Plus! Setup Inadvertently Installs NetWare Client</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q140010
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 95
+Operating System(s): 
+Keyword(s): win95
+Last Modified: 18-DEC-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer after installing Microsoft Plus!, you may receive
+various error messages indicating that certain Novell NetWare files cannot be
+loaded. These error messages may include:
+
+- Cannot find a device necessary to run Windows.
+
+- Unable to load the dynamic link library Nwnp32.dll.
+
+- The system cannot find the file specified.
+
+- Some or all of the following feature is not available: NetWare.
+
+Various files that cannot be loaded are listed. This list of files may include
+all or most of the following files:
+
+- Vnetsup.Vxd
+
+- Nwlink.vxd
+
+- Nwredir.vxd
+
+- Nscl.vxd
+
+- Vredir.vxd
+
+- Nwnp32.dll
+
+- Ndis.vxd
+
+- Ndis2sup.vxd
+
+- Vnetbios.vxd
+
+CAUSE
+=====
+
+This problem can occur if you do not have the Windows 95 CD-ROM, or you do not
+enter the correct path to it, when Microsoft Plus! Setup prompts you for it.
+When this occurs, the virtual device drivers (VxDs) may be registered even
+though the files are not copied.
+
+RESOLUTION
+==========
+
+Add and then remove the Microsoft Client for NetWare Networks to resolve this
+problem. To do so, follow these steps:
+
+1. In Control Panel, double-click the Network icon.
+
+2. Click Add, click Client, and then click Add.
+
+3. In the Manufacturers box, click Microsoft. In the Network Clients box, click
+  Client For NetWare Networks, and then click OK.
+
+4. Click OK.
+
+5. Restart your computer.
+
+6. In Control Panel, double-click the Network icon.
+
+7. Click Client For NetWare Networks, and then click Remove.
+
+8. Click OK.
+
+9. Restart your computer.
+
+The above steps should resolve the problem. If the error messages persist, remove
+all the components in Network properties, and then reinstall them. To do so,
+follow these steps:
+
+1. In Control Panel, double-click the Network icon.
+
+2. Note the installed components so you can reinstall them.
+
+3. If necessary, note items such as Dial-Up Networking phone numbers and TCP/IP
+  settings.
+
+4. Remove all the components by clicking each component and clicking Remove.
+
+5. Restart your computer.
+
+6. Reinstall the network components. If you add a network adapter, the NetWare
+  client will be added by default. You can remove the client if there is no
+  NetWare network.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

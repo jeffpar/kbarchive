@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q245040: How to Restrict Workstation Access to Local Administrators Only. | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q245040: How to Restrict Workstation Access to Local Administrators Only." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/245/Q245040/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/245/Q245040/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/245/Q245040/","publisher":null,"image":null,"headline":"Q245040: How to Restrict Workstation Access to Local Administrators Only.","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q245040-how-to-restrict-workstation-access-to-local-administrators-only">Q245040: How to Restrict Workstation Access to Local Administrators Only.</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q245040
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Ntrights.exe utility to restrict access to
+a workstation to only the Local Administrators group. Ntrights.exe, a utility
+program included in the Resource Kit for Microsoft Windows NT 4.0, enables you
+to grant or revoke any Windows NT right to or from a user or group of users.
+
+MORE INFORMATION
+================
+
+NOTE: To be able to set a right for a user or group, you must have Administrator
+privileges.
+
+To restrict access to a workstation to only the Local Administrators group, type
+the following commands at the command prompt, pressing ENTER after each line
+
+    ntrights -r SeInteractiveLogonRight -u ''Backup Operators'' - m workstation_name
+    ntrights -r SeInteractiveLogonRight -u ''Everyone'' - m workstation_name
+    ntrights -r SeInteractiveLogonRight -u ''Guests'' - m workstation_name
+    ntrights -r SeInteractiveLogonRight -u ''Power Users'' - m workstation_name
+    ntrights -r SeInteractiveLogonRight -u ''Users'' - m workstation_name
+
+where workstation_name is the name of the workstation you want to restrict.
+
+These commands remove the right to log on to the workstation locally from every
+group except the Local Administrators group. If you are working from a
+workstation that you want to restrict, you do not have to use the -m parameter,
+because the changes are made to the local workstation by default. However, when
+you want to use these commands on a remote computer, you must use the -m
+parameter, along with the name of the computer. To make all of the changes at
+once, create a batch file with these commands and include the names of all
+required workstations.
+
+To view a list of all the available rights and for additional information about
+how to use the Ntrights.exe utility, either view the documentation that
+accompanies the Windows NT 4.0 Resource Kit, or type the following command at a
+command prompt, and then press ENTER:
+
+  ntrights /?
+
+Additional query words: permissions rights local
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

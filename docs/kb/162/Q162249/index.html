@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q162249: HOWTO: Create a Toolbar Containing a ComboBox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q162249: HOWTO: Create a Toolbar Containing a ComboBox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/162/Q162249/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/162/Q162249/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/162/Q162249/","publisher":null,"image":null,"headline":"Q162249: HOWTO: Create a Toolbar Containing a ComboBox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q162249-howto-create-a-toolbar-containing-a-combobox">Q162249: HOWTO: Create a Toolbar Containing a ComboBox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q162249
+Product(s): Microsoft FoxPro
+Version(s): 
+Operating System(s): 
+Keyword(s): kbcode kbOOP kbvfp500 kbvfp600
+Last Modified: 13-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A ToolBar is a class that is meant to be used with a variety of different forms.
+Because of this, a ToolBar's ComboBox, which shows a list of items relevant to
+the data shown on a particular form, generally will not be populated until the
+ToolBar that contains it is bound to that form.
+
+This article presents approaches to placing a ComboBox in a ToolBar, and several
+different methods of populating a ComboBox.
+
+Two of the ComboBoxes in Example 2 do not work, but they are intentionally
+included to demonstrate that an object that is instantiated before the object
+that contains it cannot be defined as having data from its container as its
+RowSource. A ComboBox in a ToolBar is instantiated before the ToolBar, which is
+instantiated before the formset (which ultimately contains the ToolBar) is
+instantiated. The data shown in the ComboBox must be defined from within the
+methods of the ComboBox, or placed there by events that happen after the
+ComboBox is instantiated.
+
+MORE INFORMATION
+================
+
+Here are two different examples. The first defines the objects visually, and the
+second defines them within a program.
+
+Example 1
+---------
+
+This example shows you how to create a ToolBar with 3 ComboBoxes through the user
+interface by using the class designer and the form designer. Two of the
+ComboBoxes are populated within methods of the containing ToolBar. The third is
+populated from the Init event of the formset that uses the ToolBar.
+
+In Visual FoxPro, create the ToolBar as follows:
+
+1. On the File menu, click New. Select Class, and choose New File.
+
+2. The New Class dialog box appears. Enter the following:
+
+     Class Name:  tbrTest
+     Based On:    Toolbar
+     Store In:    Test.VCX
+
+  Click OK.
+
+3. The Class Designer appears on the Visual FoxPro desktop. Be sure the Forms
+  Control ToolBar is visible. If not, select Forms Control Toolbar from the
+  View menu so that particular option has a checkmark at the left.
+
+  Add a three ComboBox controls to the ToolBar. Leave the default control names
+  so that tbrTest contains controls named Combo1, Combo2, and Combo3.
+
+4. On the Class menu, select New Property. Enter "aArray2(10,1)" (without the
+  quotes) as the Name. Click Add, and then click Close.
+
+5. If the Properties window is not visible, go to the View menu and click
+  Properties.
+
+  Select tbrTest in the Object list at the top. Double-click "Init Event" in the
+  list of properties. The Edit window for the Init Event of tbrTest appears.
+  Enter the following code:
+
+     ** ToolBar tbrTest Init event
+     ** aArray2 is dimensioned as a new property of the
+     ** tbrTest ToolBar class.
+     THIS.aArray2(1) = "Newspapers"
+     THIS.aArray2(2) = "Magazines"
+     THIS.aArray2(3) = "Radio"
+     THIS.aArray2(4) = "Television"
+     THIS.aArray2(5) = "Cable"
+     THIS.aArray2(6) = "Direct Mail"
+     THIS.aArray2(7) = "the Internet"
+     THIS.aArray2(8) = "Billboards"
+     THIS.aArray2(9) = "Telemarketing"
+     THIS.aArray2(10) = "Word-of-mouth"
+
+     ** The next 3 lines populate Combo2 using the AddItem method.
+     i = 0
+     FOR i = 1 to ALEN(THIS.aArray2)
+     THIS.Combo2.AddItem(This.aArray2(i))
+     NEXT
+
+     ** The next 3 lines populate Combo3 using the properties
+     ** of that ComboBox.
+     THIS.Combo3.RowSourcetype = 5    &amp;&amp; Type Array
+     THIS.Combo3.RowSource = "THIS.Parent.aArray2"
+
+     ** The code uses the string at the right in the line above
+     ** in the Requery method of the Combo as the RowSource
+     ** for the Combo.
+     THIS.Combo3.Requery
+     ******** End of tbrTest Init Event ********
+
+6. On the File menu, click Close and then click Yes to save the file.
+
+7. On the File menu, click New. Click Form and select New File.
+
+8. On the Forms Control ToolBar, click View Classes (usually the #2 control on
+  the Forms Control ToolBar). Click Add, and then select the class library you
+  specified in step 2.
+
+9. An abbreviated controls ToolBar appears. The tbrTest ToolBar appears as three
+  tiny command buttons arrayed in a horizontal row. (If there are several
+  similar controls, the tooltip will identify tbrTest.) Select tbrTest and
+  place it by clicking on the form. Click Yes to create a form set object.
+
+10. In the Properties window, select the Formset1 object in the ComboBox at the
+  top.
+
+11. Select New Property from the Form menu. Enter "aArray1(10,1)" (without the
+  quotes) as the name. Click Add, then click Close.
+
+12. In the Properties window for the Formset, set the Name property to "frsTest"
+  (without the quotes).
+
+13. In the Properties window, double-click the Init Event line. When the edit
+  window for frsTest.Init appears, enter the following code:
+
+      *** Init event code for formset frsTest ***
+      IF TYPE("THIS.form1") = "O" &amp;&amp; Ensures the form is instantiated.
+        THIS.tbrTest.left = THIS.form1.left
+        THIS.tbrTest.top = THIS.form1.top - (THIS.tbrTest.height + 25)
+      ENDIF
+      THIS.aArray1(1) = "This is 1"
+      THIS.aArray1(2) = "This is 2"
+      THIS.aArray1(3) = "This is 3"
+      THIS.aArray1(4) = "This is 4"
+      THIS.aArray1(5) = "This is 5"
+      THIS.tbrTest.Combo1.AddItem(THIS.aArray1(5))
+      THIS.tbrTest.Combo1.AddItem(THIS.aArray1(4))
+      THIS.tbrTest.Combo1.AddItem(THIS.aArray1(3))
+      THIS.tbrTest.Combo1.AddItem(THIS.aArray1(2))
+      THIS.tbrTest.Combo1.AddItem(THIS.aArray1(1))
+      *** End if frsTest Init event code ***
+
+14. Press Ctrl+W to save the code in the edit window. On the File menu, click
+  Save As. Specify frsTest as the name of the .scx file.
+
+  Run the form by clicking the red exclamation point tool on the Visual FoxPro
+  main ToolBar. You should see an empty form, with the tbrTest ToolBar
+  immediately above that form. Each Combo should show the list of information
+  the above code provided.
+
+Example 2
+---------
+
+This example shows you how to create a ToolBar programmatically, and then use it
+on a formset that is created programmatically. Enter the following code into a
+new program named tbrTest:
+
+     *************************************************
+     ** tbrTest.prg
+     **   Sample program to populate ComboBoxes in
+     **   a ToolBar.
+     *************************************************
+
+     DIMENSION aFifthArray(10,1)
+     aFifthArray(1) = "Boston"
+     aFifthArray(2) = "Providence"
+     aFifthArray(3) = "New Haven"
+     aFifthArray(4) = "Armonk"
+     aFifthArray(5) = "Grand Central"
+
+     Dimension aSixthArray(10,1)
+     aSixthArray(1) = "James"
+     aSixthArray(2) = "Charles"
+     aSixthArray(3) = "Hudson"
+     aSixthArray(4) = "Rapahoneck"
+     aSixthArray(5) = "Catawba"
+     aSixthArray(6) = "Susquehanna"
+     aSixthArray(7) = "Cooper"
+     aSixthArray(8) = "Pee Dee"
+     aSixthArray(9) = "Neuss"
+     aSixthArray(10) = "Ohio"
+
+     MyFormset = CREATEOBJECT("FormSet")
+     WITH MyFormset
+        .AddObject("tbrTools1", "tbrTest")
+        .AddObject("Myform", "form1")
+        WITH .myform
+           .AddObject("quitter", "cmdClose")
+           WITH .Quitter
+             .top = 150
+             .left = 200
+             .visible = .T.
+           ENDWITH
+           .top = 100
+           .left = 10
+           .visible = .T.
+        ENDWITH
+        WITH .tbrTools1
+           .top = myformset.myform.top - 60
+           .Left = myformset.myform.left
+           .visible = .T.
+           WITH .Combo5
+              .AddItem(aFifthArray(1))
+              .AddItem(aFifthArray(2))
+              .AddItem(aFifthArray(3))
+              .AddItem(aFifthArray(4))
+              .AddItem(aFifthArray(5))
+           ENDWITH
+           WITH .Combo6
+              .RowSourcetype = 5
+              .RowSource = "aSixthArray"
+              .Requery
+           ENDWITH
+        ENDWITH
+     ENDWITH
+
+     READ EVENTS
+
+     DEFINE CLASS form1 AS FORM
+        Height = 100
+        Width = 500
+        Top = 100
+        Left = 10
+        ADD OBJECT cmdQuit as cmdClose
+     ENDDEFINE
+
+     DEFINE CLASS cmdClose AS CommandButton
+        Height = 29
+        Width = 50
+        Caption = "\&lt;Close"
+
+        PROCEDURE Click
+          ThisFormSet.Release
+          CLEAR EVENTS
+       ENDPROC
+     ENDDEFINE
+
+     DEFINE CLASS tbrTest AS TOOLBAR
+        ADD OBJECT Combo1 AS COMBOBOX
+        ADD OBJECT Combo2 AS COMBOBOX
+        ADD OBJECT Combo3 AS COMBOBOX
+        ADD OBJECT Combo4 AS COMBOBOX
+        ADD OBJECT Combo5 AS COMBOBOX
+        ADD OBJECT Combo6 AS COMBOBOX
+
+     * Start of the class defInition: one ToolBar with 6 ComboBoxes.
+
+        Left = 1
+        Top  = 1
+        Width = 575
+        Caption = "Test ToolBar #2"
+        Combo1.Height = 27
+        Combo1.Width = 82
+        Combo2.Height = 27
+        Combo2.Width = 82
+        Combo3.Height = 27
+        Combo3.Width = 82
+        Combo4.Height = 27
+        Combo4.Width = 82
+        Combo5.Height = 27
+        Combo5.Width = 82
+        Combo6.Height = 27
+        Combo6.Width = 82
+
+     PROCEDURE Load
+     * ComboBox2 does not exist at Load time.
+        Dimension gaArray1(10,1)
+        gaArray1(1) = "Arkansas"
+        gaArray1(2) = "Colorado"
+        gaArray1(3) = "Delaware"
+        gaArray1(4) = "Georgia"
+        THIS.Combo2.AddItem(This.gaArray1(1))
+        THIS.Combo2.AddItem(This.gaArray1(2))
+        THIS.Combo2.AddItem(This.gaArray1(3))
+        THIS.Combo2.AddItem(This.gaArray1(4))
+     ENDPROC
+
+     * Sets properties of the controls.
+     * Notice that there are no Top or Left property settings for
+     * controls on a ToolBar. Controls on a ToolBar are automatically
+     * positioned in the order they are added.
+
+     PROCEDURE Activate
+     * ComboBox1 is populated within the activate procedure of the ToolBar.
+        THIS.Combo1.AddItem("This is item 1")
+        THIS.Combo1.AddItem("This is item 2")
+        THIS.Combo1.AddItem("This is item 3")
+        THIS.Combo1.AddItem("There are no more")
+
+     * ComboBox2 is populated from array elements declared
+     * and populated in the Load event of the ToolBar, but this code is
+     * run before the ToolBar is loaded, so it causes the error "Property
+     * 'GARALPHARRAY' is not found."
+     *THIS.Combo2.AddItem(This.gaArray1(1))
+     *THIS.Combo2.AddItem(This.gaArray1(2))
+     *THIS.Combo2.AddItem(This.gaArray1(3))
+     *THIS.Combo2.AddItem(This.gaArray1(4))
+
+     * The following code depends upon the formset having a
+     * gaSomeArray() defined and populated, but it suffers from the same
+     * problem as the code immediately above, and causes the error
+     * "Property 'GASOMEARRAY' is not found."
+     *THIS.Combo3.AddItem(THISFORMSET.gaSomeArray(1))
+     *THIS.Combo3.AddItem(THISFORMSET.gaSomeArray(2))
+     *THIS.Combo3.AddItem(THISFORMSET.gaSomeArray(3))
+     *THIS.Combo3.AddItem(THISFORMSET.gaSomeArray(4))
+
+     DIMENSION gaArray4(10,1)
+     gaArray4(1) = "Seattle"
+     gaArray4(2) = "Portland"
+     gaArray4(3) = "San Francisco"
+     gaArray4(4) = "Los Angeles"
+     gaArray4(5) = "San Diego"
+
+     THIS.Combo4.AddItem(gaArray4(1))
+     THIS.Combo4.AddItem(gaArray4(2))
+     THIS.Combo4.AddItem(gaArray4(3))
+     THIS.Combo4.AddItem(gaArray4(4))
+     THIS.Combo4.AddItem(gaArray4(5))
+
+     * ComboBox5 is populated from program code run after the
+     * formset is loaded, Initialized, and populated, from an
+     * array declared and Initialized before the formset is
+     * created.
+
+     ENDDEFINE    &amp;&amp; End of ToolBar class defInition
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Chris
+Jensen, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbOOP kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115889: CONFIG.FPM Settings for Behavior Similar to Fox/Windows | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115889: CONFIG.FPM Settings for Behavior Similar to Fox/Windows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115889/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115889/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115889/","publisher":null,"image":null,"headline":"Q115889: CONFIG.FPM Settings for Behavior Similar to Fox/Windows","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115889-configfpm-settings-for-behavior-similar-to-foxwindows">Q115889: CONFIG.FPM Settings for Behavior Similar to Fox/Windows</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115889
+Product(s): Microsoft FoxPro
+Version(s): MACINTOSH:2.5b,2.5c,3.0b
+Operating System(s): 
+Keyword(s): 
+Last Modified: 04-AUG-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+- Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To cause FoxPro for Macintosh to behave as similarly as possible to FoxPro for
+Windows, place KEYCOMP, VOLUME, and MACDESKTOP lines in the CONFIG.FPM
+configuration file.
+
+MORE INFORMATION
+================
+
+Create a CONFIG.FPM file containing the following lines:
+
+     VOLUME C: = "&lt;volume_name&gt;"  &amp;&amp; Enables MS-DOS-style paths
+     KEYCOMP = WINDOWS          &amp;&amp; Enables menu shortcut keys
+     MACDESKTOP = OFF           &amp;&amp; FoxPro windows display in main windoww
+
+For information about setting a drive letter to the volume name, please see the
+following article(s) in the Microsoft Knowledge Base:
+
+  Q115482 SET VOLUME Provides Support for MS-DOS-Style Paths
+
+NOTE: You may also want to include a "DEFAULT" line to set the default directory
+to a working directory. If the "DEFAULT" line uses an MS-DOS- style path
+(instead of a Macintosh-style path), be sure to place it below the "VOLUME" line
+in the CONFIG.FPM.
+
+Creating the CONFIG.FPM File
+----------------------------
+
+1. Verify that the default directory (folder) is the main FoxPro directory. Type
+  "?SYS(2004)" (without the quotation marks) to determine the main FoxPro
+  directory, and "?CURDIR()" (without the quotation marks) to determine the
+  current directory. If necessary, use the SET DEFAULT command to change the
+  default directory.
+
+2. Type "MODIFY FILE CONFIG.FPM" (without the quotation marks) to create the
+  configuration file.
+
+3. Type the appropriate VOLUME, KEYCOMP, and MACDESKTOP lines in the CONFIG.FPM
+  window.
+
+4. Close the CONFIG.FPM window, saving the changes.
+
+The next time FoxPro starts, it will use these settings in the CONFIG.FPM.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: VFoxMac FoxMac pathing behaviour behavior compatibility shortcut short cut access hotkey hot disk akz
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

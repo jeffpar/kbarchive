@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/181/Q181926/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/181/Q181926/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/181/Q181926/","publisher":null,"image":null,"headline":"Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q181926-howto-automate-mail-merge-to-word97-sr-1-using-ole-and-odbc">Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q181926</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">FoxPro</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">WINDOWS</span><span class="p">:</span><span class="m">2.5</span><span class="p">,</span><span class="m">2000</span><span class="p">,</span><span class="m">3.0</span><span class="p">,</span><span class="m">3.0</span><span class="n">b</span><span class="p">,</span><span class="m">5.0</span><span class="p">,</span><span class="m">5.0</span><span class="n">a</span><span class="p">,</span><span class="m">6.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbinterop</span> <span class="n">kbAutomation</span> <span class="n">kbODBC</span> <span class="n">kbvfp300</span> <span class="n">kbvfp500</span> <span class="n">kbvfp600</span> <span class="n">kbGrpDSFox</span> <span class="n">kbDSupport</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">12</span><span class="p">-</span><span class="n">MAY</span><span class="p">-</span><span class="m">2001</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">for</span> <span class="n">Windows</span><span class="p">,</span> <span class="n">versions</span> <span class="m">3.0</span><span class="p">,</span> <span class="m">3.0</span><span class="n">b</span><span class="p">,</span> <span class="m">5.0</span><span class="p">,</span> <span class="m">5.0</span><span class="n">a</span><span class="p">,</span> <span class="m">6.0</span> 
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Data</span> <span class="n">Access</span> <span class="n">Components</span> <span class="k">version</span> <span class="m">2.5</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">demonstrates</span> <span class="n">how</span> <span class="k">to</span> <span class="n">use</span> <span class="n">OLE</span> <span class="n">automation</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">mail</span> <span class="n">merge</span> <span class="k">in</span>
+<span class="n">Word</span> <span class="n">for</span> <span class="n">Windows</span> <span class="m">97</span> <span class="n">SR</span><span class="p">-</span><span class="m">1</span> <span class="n">using</span> <span class="n">data</span> <span class="k">from</span> <span class="n">a</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="p">(</span><span class="n">VFP</span><span class="p">)</span> <span class="n">for</span> <span class="n">Windows</span>
+<span class="n">table</span><span class="p">.</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">Below</span> <span class="n">is</span> <span class="n">the</span> <span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">for</span> <span class="n">Windows</span> <span class="n">code</span> <span class="n">using</span> <span class="n">the</span> <span class="n">Word</span><span class="p">.</span><span class="n">Application</span> <span class="n">object</span>
+<span class="k">model</span> <span class="n">that</span> <span class="n">performs</span> <span class="n">the</span> <span class="n">mail</span> <span class="n">merge</span> <span class="n">using</span> <span class="n">an</span> <span class="n">ODBC</span> <span class="n">data</span> <span class="n">source</span> <span class="k">to</span> <span class="n">an</span> <span class="n">existing</span>
+<span class="n">Visual</span> <span class="n">FoxPro</span> <span class="n">table</span><span class="p">.</span> <span class="n">This</span> <span class="n">code</span> <span class="n">can</span> <span class="n">use</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">data</span> <span class="n">source</span> <span class="n">name</span> <span class="p">(</span><span class="n">DSN</span><span class="p">),</span>
+<span class="n">created</span> <span class="k">in</span> <span class="n">the</span> <span class="n">ODBC</span> <span class="n">Driver</span> <span class="n">Manager</span><span class="p">,</span> <span class="k">or</span> <span class="n">it</span> <span class="n">can</span> <span class="nb">create</span> <span class="n">one</span> <span class="n">on</span> <span class="n">the</span> <span class="n">fly</span> <span class="n">utilizing</span> <span class="n">an</span>
+<span class="n">API</span> <span class="n">call</span> <span class="k">to</span> <span class="n">add</span> <span class="k">and</span> <span class="n">use</span> <span class="n">the</span> <span class="n">DSN</span><span class="p">.</span> <span class="k">In</span> <span class="n">the</span> <span class="n">example</span> <span class="n">below</span><span class="p">,</span> <span class="s2">"Visual FoxPro Tables"</span> <span class="n">is</span>
+<span class="n">the</span> <span class="n">DSN</span> <span class="n">created</span> <span class="k">in</span> <span class="n">the</span> <span class="n">ODBC</span> <span class="n">Driver</span> <span class="n">Manager</span> <span class="k">and</span> <span class="n">is</span> <span class="n">pointing</span> <span class="n">the</span>
+<span class="n">VFP5a</span><span class="p">\</span><span class="n">Samples</span><span class="p">\</span><span class="n">Data</span> <span class="n">folder</span><span class="p">.</span> <span class="n">These</span> <span class="n">paths</span> <span class="n">will</span> <span class="n">most</span> <span class="n">likely</span> <span class="n">have</span> <span class="k">to</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span>
+<span class="n">reflect</span> <span class="n">the</span> <span class="n">users</span><span class="s1">' paths.
+
+NOTE: This code only works with the Service release-1 (SR-1) for Word 97. Using
+prior versions of Word 97 causes a Type Mismatch and other OLE errors.
+
+Create a program and enter the following code:
+
+  
+
+     ***/ Begin program code /***
+     * Code to create a new data source to a VFP table.
+     *
+     * Use the Declare DLL function to prototype the
+     * SQLConfigDataSource function.
+     * Using SQLConfigDataSource prevents having to go into
+     * the ODBC Driver Manager and create the DSN.
+     ***
+
+     DECLARE Integer SQLConfigDataSource in odbccp32.dll Integer, ;
+        Integer, String, String
+
+     ***
+     * Create a string containing the settings appropriate to the driver.
+     * The following is an example for the Microsoft VFP ODBC driver
+     * accessing the Customer.dbf file.
+     ***
+
+     *** Change the path below to point to the Customer table ***
+     *** in the \Samples\Data folder.                      ***
+     settings="DSN=visual foxpro tables"+chr(0)+;
+               "Description=VFP ODBC Driver"+chr(0)+;
+               "SourceDB=d:\vfp5a\samples\data"+chr(0)+;
+               "SourceType=DBF"
+     =SQLConfigDataSource(0,1,"Microsoft Visual FoxPro Driver",settings)
+
+     * NOTE: Ensure there are no spaces on either side of the equal sign (=).
+
+     ON ERROR DO errhand WITH ERROR(), MESSAGE(),  MESSAGE(1), PROGRAM( ),
+     LINENO( ) &amp;&amp; Trap OLE &amp; other errors.
+
+     * Initialize variables passed to Word to create form letter.
+     intro1="Congratulations! You are one of our best customers since you
+     purchase $"
+     intro2=" each month from us. "
+     intro3="As a result, your maximum order amount has been increased by
+     $2500.00. If you have any questions, please feel free to contact us."
+
+     oWord = CREATEOBJECT("Word.Application")
+        WITH oWord
+           * Assign values to variables
+           dsname="D:\VFP\SAMPLES\DATA\customer.DBF"
+           wformat=0
+           wconfirmconv=0
+           wreadonly=0
+           wlinktosource=0
+           waddtofilelist=0
+           wpassworddoc=""
+           wpasswordtemp=""
+           wrevert=0
+           wprotectdoc=""
+           wprotecttemp=""
+           wconn="DSN=visual foxpro tables;uid=;pwd=;"+;
+              "sourcedb=d:\vfp\samples\data;sourcetype=dbf"+;
+              "exclusive=no;backgroundfetch=yes;collate=machine;"
+           wsqlstatement="SELECT contact,company,title,address,city,;
+              postalcode,STR(maxordamt,12,2) as maxordamt FROM customer ;
+              WHERE (customer.maxordamt&gt;$100000)"
+
+           .Visible=.T.      &amp;&amp; Make Word visible.
+           .WindowState = 2   &amp;&amp; Minimize Word.
+
+           .Documents.Add      &amp;&amp; Add new document.
+           .Selection.InsertParagraphAfter
+
+           .ActiveDocument.MailMerge.OpenDataSource;
+              (dsname,wformat,wconfirmconv,wreadonly,wlinktosource,;
+               waddtofilelist,wpassworddoc,wpasswordtemp,wrevert,;
+               wprotectdoc,wprotecttemp,wconn,wsqlstatement)
+           .ActiveDocument.MailMerge.EditMainDocument
+           .Selection.InsertDateTime("dddd, MMMM dd, yyyy", 1)
+           .Selection.MoveRight
+           .Selection.InsertParagraphAfter
+           .Selection.MoveDown
+           .ActiveDocument.MailMerge.Fields.Add;
+              (oWord.Selection.Range,"contact")
+           .Selection.InsertParagraphAfter
+           .Selection.MoveDown
+           .ActiveDocument.MailMerge.Fields.Add;
+              (oWord.Selection.Range,"company")
+           .Selection.InsertParagraphAfter
+           .Selection.MoveDown
+           .ActiveDocument.MailMerge.Fields.Add;
+               (oWord.Selection.Range,"title")
+           .Selection.InsertParagraphAfter
+           .Selection.MoveDown
+           .ActiveDocument.MailMerge.Fields.Add;
+              (oWord.Selection.Range,"address")
+           .Selection.InsertAfter(", ")
+           .Selection.MoveRight
+           .ActiveDocument.MailMerge.Fields.Add(oWord.Selection.Range,"city")
+           .Selection.InsertAfter("  ")
+           .Selection.MoveRight
+           .ActiveDocument.MailMerge.Fields.Add;
+              (oWord.Selection.Range,"postalcode")
+           .Selection.MoveRight
+           .Selection.InsertParagraphAfter
+           .Selection.InsertParagraphAfter
+           .Selection.InsertAfter("Dear ")
+           .Selection.MoveRight
+           .ActiveDocument.MailMerge.Fields.Add;
+              (oWord.Selection.Range,"contact")
+           .Selection.MoveRight
+           .Selection.InsertAfter(":")
+           .Selection.MoveRight
+           .Selection.InsertParagraphAfter
+           .Selection.InsertParagraphAfter
+           .Selection.MoveDown
+           .Selection.InsertAfter(intro1)
+           .Selection.MoveRight
+           .ActiveDocument.MailMerge.Fields.Add;
+              (oWord.Selection.Range,"maxordamt")
+           .Selection.MoveRight
+           .Selection.InsertAfter(intro2)
+           .Selection.MoveRight
+           .Selection.InsertAfter(intro3)
+           .Selection.MoveRight
+           .Selection.InsertParagraphAfter
+           .Selection.InsertParagraphAfter
+           .Selection.MoveDown
+           .Selection.InsertAfter("Thank you,")
+           .Selection.MoveRight
+           .Selection.InsertParagraphAfter
+           .Selection.InsertParagraphAfter
+           .Selection.MoveDown
+           .Selection.Fields.Add(oWord.Selection.Range,-1,"author")
+           .ActiveDocument.MailMerge.Destination = 0 &amp;&amp; new document.
+           .ActiveDocument.MailMerge.Execute         &amp;&amp; Run the merge.
+           nanswer = MESSAGEBOX("Would you like to view the finished
+           document?",36,"Switch to Word")
+           DO CASE
+              CASE nanswer = 6
+                 .ActiveWindow.View.Type = 3    &amp;&amp; Page layout view.
+                 .Visible = .T.
+                 .Application.Activate   &amp;&amp; Bring Word forward.
+                 .WindowState = 0         &amp;&amp; Word in normal state.
+                 =INKEY(5)         &amp;&amp; Wait 5 seconds then bring VFP back.
+                 .WindowState = 2    &amp;&amp; Then minimize Word.
+                ENDCASE
+           nanswer = MESSAGEBOX("Print the document?",36,;
+           "Print the merged document.")
+           DO CASE
+              CASE nanswer = 6         &amp;&amp; Yes
+                 .ActiveDocument.PrintOut   &amp;&amp; Print the merged form letter.
+           ENDCASE
+
+           nanswer = MESSAGEBOX("Save the document?",36,;
+           "Enter the name to save the merged document.")
+           DO CASE
+              CASE nanswer = 6         &amp;&amp; Yes
+                 cbaddoc=SPACE(25)
+                 DO WHILE .T.
+                    DEFINE WINDOW getname FROM 1,1 TO 15,60 ;
+                       FONT '</span><span class="n">COURIER</span> <span class="n">NEW</span><span class="s1">',10 FLOAT GROW ZOOM
+                       ACTIVATE WINDOW getname
+                       cdoc=SPACE(25)
+                       mquit = SPACE(1)
+                    IF !EMPTY(cbaddoc)
+                       @2,1 SAY "Existing file name: "+cbaddoc COLOR R+/w
+                    ENDIF
+                    @4,1 SAY "Enter a name for the Word document."
+                    @5,1 GET cdoc color b/w VALID emptyChk(cdoc)
+                    @7,25 GET mquit FUNCTION '</span><span class="p">*</span><span class="n">T</span> <span class="n">Quit</span><span class="s1">' SIZE 2,10
+                    READ CYCLE
+                    CLEAR WINDOW getname
+                    cdoc=ALLTRIM(cdoc)
+                    cpath= .Options.DefaultFilePath(0)   &amp;&amp; Get Word'</span><span class="n">s</span>
+                                                   <span class="p">&amp;&amp;</span> <span class="n">default</span> <span class="n">document</span> <span class="n">path</span><span class="p">.</span>
+                    <span class="k">IF</span> <span class="n">FILE</span><span class="p">(</span><span class="n">cpath</span><span class="p">+</span><span class="s2">"</span><span class="se">\"</span><span class="s2">+cdoc+"</span><span class="p">.</span><span class="n">doc</span><span class="s2">")
+                       WAIT WINDOW "</span><span class="n">Document</span> <span class="n">already</span> <span class="nb">exists</span><span class="c1">! Enter another
+</span>                       <span class="n">file</span> <span class="n">name</span><span class="p">.</span><span class="s2">" TIME 1
+                       cbaddoc=cdoc
+                       LOOP
+                    ELSE
+                       .ActiveDocument.SaveAs(cdoc)
+                    ENDIF
+                    .Documents.Close(0)
+                    .Application.Quit
+                    EXIT
+                 ENDDO
+              CASE nanswer = 7         &amp;&amp; No
+                 .Documents.Close(0)
+                 .Application.Quit
+              ENDCASE
+        ENDWITH
+
+     ON ERROR                             &amp;&amp; Restore system error handler.
+
+     PROCEDURE emptychk
+     PARAMETER pcdoc
+     IF !EMPTY(pcdoc)
+        RETURN .T.
+     ELSE
+        WAIT WINDOW "</span><span class="n">Enter</span> <span class="n">a</span> <span class="n">name</span> <span class="n">for</span> <span class="n">the</span> <span class="n">Word</span> <span class="n">Document</span><span class="s2">"
+        RETURN 0
+     ENDIF
+
+     PROCEDURE errhand
+     PARAMETER merror, mess, mess1, mprog, mlineno
+     CLEAR
+     IF merror=1426
+        mlineno=LTRIM(STR(mlineno))
+        merror=LTRIM(STR(merror))
+        =MESSAGEBOX("</span><span class="n">You</span> <span class="n">have</span> <span class="n">an</span> <span class="n">OLE</span> <span class="n">error</span><span class="p">.</span> <span class="n">Usually</span> <span class="n">this</span> <span class="n">is</span> <span class="n">caused</span> <span class="n">by</span>
+        <span class="n">quitting</span> <span class="n">Word</span> <span class="k">or</span> <span class="n">canceling</span> <span class="n">out</span> <span class="k">of</span> <span class="n">a</span> <span class="n">dialog</span> <span class="n">box</span> <span class="k">in</span> <span class="n">Word</span><span class="p">.</span> <span class="s2">"+CHR(13)+;
+        "</span><span class="n">The</span> <span class="n">error</span> <span class="n">message</span> <span class="n">is</span> <span class="s2">"+mess)
+     ELSE
+        mlineno=LTRIM(STR(mlineno))
+        merror=LTRIM(STR(merror))
+        =MESSAGEBOX("</span><span class="n">An</span> <span class="n">error</span> <span class="n">occured</span> <span class="n">on</span> <span class="n">line</span> <span class="s2">"+mlineno+;
+        "</span><span class="p">.</span> <span class="n">The</span> <span class="n">error</span> <span class="n">message</span> <span class="n">is</span> <span class="s2">"+mess+"</span> <span class="n">The</span> <span class="n">error</span> <span class="n">number</span> <span class="n">is</span> <span class="s2">"+merror)
+     ENDIF
+     ON ERROR
+     RETURN
+     ***/ End program code /***
+
+REFERENCES
+==========
+
+For more information about obtaining Word for Windows 97 Service release 1
+(SR-1), please see the following article in the Microsoft Knowledge Base:
+
+  Q172475 How to Obtain and Install MS Office 97 SR-1
+
+
+Microsoft Visual Basic for Applications Help (Word '97); search on "</span><span class="n">OLE</span><span class="s2">"
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Dean
+Christopher, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbODBC kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:2.5,2000,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</span></code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

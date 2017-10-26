@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247276: XFOR: Error Message: Extension MS Could Not Be Loaded | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247276: XFOR: Error Message: Extension MS Could Not Be Loaded" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247276/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247276/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247276/","publisher":null,"image":null,"headline":"Q247276: XFOR: Error Message: Extension MS Could Not Be Loaded","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247276-xfor-error-message-extension-ms-could-not-be-loaded">Q247276: XFOR: Error Message: Extension MS Could Not Be Loaded</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247276
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 06-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Exchange Server Administrator program to view the
+properties of the Microsoft Mail Connector object in the Connections container,
+the following error message may be displayed:
+
+  Extension 'MS' could not be loaded.
+
+CAUSE
+=====
+
+This issue can occur if any one of the three following conditions exists:
+
+- The Add-Ins folder on the Exchange Server computer is not shared.
+
+- Either the dynamic-link library (DLL) for the extension that is being loaded,
+  Conadmin.dll, is the incorrect version or the Exchange Server directory
+  version of the Conadmin.dll does not match the actual DLL file version.
+
+- When you gain access to shares on a computer that is running Microsoft
+  Windows NT Server from a Windows NT client and the IRPstackSize parameter is
+  set too low on the server, you may receive the following error message:
+
+  Not enough server storage is available to process this command
+
+RESOLUTION
+==========
+
+The Add-Ins Folder on the Exchange Server Computer Is Not Shared
+----------------------------------------------------------------
+
+To resolve this issue if the cause is the first condition in the "Cause" section
+of this article, set the following correct shares and permissions for the
+Add-ins subfolder:
+
+  Share Name: Add-ins
+  Path: \Exchsrvr\Add-ins
+  Permissions:
+&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;Everyone: Read
+&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;Local Administrators Group: Full Control
+&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;&lt;A0&gt;Exchange Service Account: Full Control
+
+If the Add-ins share is not set correctly, you should also check the other
+default shares and permissions. For additional information, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q147376 XADM: Names and Permissions of Exchange Server Shares
+
+Incorrect Version DLL for Conadmin.dll or Mismatch with Exchange Server Directory Version of Conadmin.dll and DLL File Version
+------------------------------------------------------------------------------------------------------------------------------
+
+To resolve this issue if the cause is the second condition in the "Cause" section
+of this article:
+
+1. Verify the build version that you are using. You can do this by checking the
+  properties in the following location:
+
+  Organization\Site\Configuration\Server\&lt;server_name&gt;
+
+2. Check the actual file version of the file on the hard disk drive in the
+  following location:
+
+  Exchsrvr\Connect\Msmcon\Bin\Conadmin.dll
+
+3. If the versions do not match, replace the file manually from the Exchange
+  Server computer or Exchange Server service pack CD-ROM.
+
+4. Verify the file version for the extension DLL. This can be done by checking
+  the properties of:
+
+  Organization\Site\Configuration\Add-Ins\Extension for MS Mail Connector for
+  i386
+
+5. If the file versions do not match, change the version in the directory by
+  using the Exchange Server Administrator program in raw mode.
+
+For additional information about how to change the value by using the
+Administrator program in raw mode, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+  Q196924 XCON: Err Msg: Extension SMTP Could Not Be Loaded
+
+Shares on Computer Running Microsoft Windows NT Server with IRPstackSize Parameter Set Too Low Accessed from a Windows NT Client
+--------------------------------------------------------------------------------------------------------------------------------
+
+To resolve this issue if the cause is the third condition in the "Cause" section
+of this article, either correct the IRPstackSize parameter or apply the fix that
+corrects this problem. For additional information about how to correct the
+IRPstackSize parameter and a fix that corrects this problem, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+  Q198386 Changes in IRP Stack Size in Lanman Server
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

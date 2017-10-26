@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148808: FIX: C2670: Template Function Cannot Convert Parameter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148808: FIX: C2670: Template Function Cannot Convert Parameter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148808/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148808/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148808/","publisher":null,"image":null,"headline":"Q148808: FIX: C2670: Template Function Cannot Convert Parameter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148808-fix-c2670-template-function-cannot-convert-parameter">Q148808: FIX: C2670: Template Function Cannot Convert Parameter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148808
+Product(s): Microsoft C Compiler
+Version(s): winnt:
+Operating System(s): 
+Keyword(s): kbcode kbCompiler kbCPPonly kbVC
+Last Modified: 03-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- The C/C++ Compiler (CL.EXE), included with:
+   - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error is generated:
+
+  error C2670: 'AFunction' : the template function cannot convert parameter 1
+  from type 'class Derived&lt;int&gt; *'
+
+in code containing all of the following:
+
+- A template class 'Derived' from another template class 'Base'.
+
+- 'AFunction' taking a pointer to the 'Base' as a parameter.
+
+- A call to the 'AFunction' passing a pointer to 'Derived' before instantiating
+  any object of that type.
+
+See the sample code in this article for an example.
+
+RESOLUTION
+==========
+
+To work around this problem, either explicitly instantiate 'Derived' or create a
+dummy object of type 'Derived' before calling the 'AFunction'.
+
+See the Sample Code for an example.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+32-bit Edition, version 4.1.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+  /* Compile options needed: None
+  */ 
+
+  template &lt;class T&gt;
+  class Base
+  {
+  public:
+     T data;
+     int i;
+  };
+
+  template &lt;class T&gt;
+  class Derived : public Base&lt;T&gt;
+  {
+  public:
+     int j;
+  };
+
+  template &lt;class T&gt;
+  void AFunction(Base&lt;T&gt;* b)
+  {
+     return;
+  }
+
+  void main()
+  {
+     // Uncomment one of the following two statements to work around the
+     // problem. If the template class definition is in a header file,
+     // you may want to include one of the following two statements at
+     // the end of that file.
+
+     // template Derived&lt;int&gt;;
+     // Derived&lt;int&gt; dummy;
+
+     Derived&lt;int&gt; *j;
+
+     AFunction(j);   // Gives C2670 here
+  }
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbcode kbCompiler kbCPPonly kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

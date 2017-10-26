@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q119764: Capturing a Palette from an Intel Indeo-Compressed .AVI File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q119764: Capturing a Palette from an Intel Indeo-Compressed .AVI File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/119/Q119764/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/119/Q119764/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/119/Q119764/","publisher":null,"image":null,"headline":"Q119764: Capturing a Palette from an Intel Indeo-Compressed .AVI File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q119764-capturing-a-palette-from-an-intel-indeo-compressed-avi-file">Q119764: Capturing a Palette from an Intel Indeo-Compressed .AVI File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q119764
+Product(s): Microsoft PowerPoint for Windows
+Version(s): WINDOWS:1.0,1.1
+Operating System(s): 
+Keyword(s): 
+Last Modified: 22-DEC-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Video for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Video for Windows allows palettes to be stored inside each .AVI file.
+A unique palette is created for individual video files. Microsoft Video for
+Windows applications, such as Vidcap, Videdit, and Paledit, have the ability to
+capture the palette from an .AVI file. The palette can then be edited. .AVI
+files compressed with Intel Indeo compression, however, have a fixed palette
+that is not stored in the .AVI file. To obtain the palette from an .AVI file
+compressed with Indeo, the palette must be extracted from the Indeo AVI driver,
+not the .AVI file.
+
+MORE INFORMATION
+================
+
+Because the palette resides in the Indeo codec, the Indeo driver has to be
+loaded to access the palette. This can be done by opening an Indeo .AVI file
+with Media Player and then executing the Edit menu command Copy Object. The
+current video frame is placed on the Clipboard along with the palette. The
+palette can then be pasted into Paledit or any other Windows- based program
+designed to edit and or modify palettes. The video display graphics card and
+driver must be in 256-color mode in order for this procedure to work correctly.
+
+Indeo is manufactured by Intel, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 1.00 1.10 compressor
+
+======================================================================
+Keywords          :  
+Technology        : kbVideoSearch kbVideo100 kbVideo110
+Version           : WINDOWS:1.0,1.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

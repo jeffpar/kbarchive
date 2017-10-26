@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q288116: FP98: Percent Sign in URL Returns HTTP 404 Error | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q288116: FP98: Percent Sign in URL Returns HTTP 404 Error" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/288/Q288116/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/288/Q288116/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/288/Q288116/","publisher":null,"image":null,"headline":"Q288116: FP98: Percent Sign in URL Returns HTTP 404 Error","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q288116-fp98-percent-sign-in-url-returns-http-404-error">Q288116: FP98: Percent Sign in URL Returns HTTP 404 Error</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q288116
+Product(s): Word Front Page
+Version(s): 5,5.5
+Operating System(s): 
+Keyword(s): kbdta
+Last Modified: 20-JUL-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 98 for Windows 
+- Microsoft Internet Explorer versions 5, 5.5 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2002 version of this article, see Q289624.
+
+SYMPTOMS
+========
+
+When you try to browse a folder whose name contains a percent sign, you may
+receive an error message similar to the following:
+
+  HTTP/1.1 404 Object Not Found
+
+CAUSE
+=====
+
+A percent sign defines an "escape sequence" in a Web address, as described in
+section "2.4. Escape Sequences," in the Request for Comment (RFC) article number
+2396.
+
+MORE INFORMATION
+================
+
+Escape sequences are used in a Uniform Resource Locator (URL) to allow
+characters that may appear in a folder or file name, but are not allowed in a
+URL. The syntax for an escape sequence is defined as a percent sign, followed by
+two hexadecimal digits, (for example, %A1, %2B, and so on).
+
+When you name a folder to have a percent sign, if the characters following the
+percent sign are valid hexadecimal characters, the folder name may not be
+resolved correctly, for example:
+
+- A folder named 100%DAD may not work, because the two characters following the
+  percent sign are valid hexadecimal characters. In this case, the "%DA"
+  sequence may be misinterpreted as character 218, which, depending on the
+  character set that is being used, may be a "Latin Capital U with Acute." This
+  results in a Web request for a folder name that may not physically exist on
+  the server.
+
+- A folder named 100%MOM may work, because the two characters following the
+  percent sign are not valid hexadecimal characters.
+
+Additional References
+---------------------
+
+For more information about this topic, please see the following Web sites:
+
+  RFC 2396 (ftp://nis.nsf.net/internet/documents/rfc/rfc2396.txt)&lt;A0&gt;Uniform
+  Resource Identifiers (URI): Generic Syntax
+
+  RFC 2396 (ftp://nis.nsf.net/internet/documents/rfc/rfc2616.txt)&lt;A0&gt;Hypertext
+  Transfer Protocol - HTTP/1.1
+
+  Q284278 FP2000: Cannot Open a Subweb with an Ampersand Character in the Name
+
+Additional query words: front page
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbIEsearch kbFrontPageSearch kbZNotKeyword4 kbZNotKeyword2 kbFrontPage98Search kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE500WinNT400 kbIE550WinNT400 kbIE550Search
+Version           : :5,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

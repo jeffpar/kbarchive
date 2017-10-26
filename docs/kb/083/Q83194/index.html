@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q83194: Windows 3.1 Setup Information | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q83194: Windows 3.1 Setup Information" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/083/Q83194/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/083/Q83194/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/083/Q83194/","publisher":null,"image":null,"headline":"Q83194: Windows 3.1 Setup Information","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q83194-windows-31-setup-information">Q83194: Windows 3.1 Setup Information</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q83194
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 3.1
+Operating System(s): 
+Keyword(s): kbsetup win31
+Last Modified: 07-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A NEW SETUP PROGRAM:
+
+The Windows 3.1 Setup program has been changed substantially from the Windows 3.0
+Setup program. Setup was changed in order to improve its ease of use and to give
+you more control over the setup process.
+
+When upgrading your machine from Windows 3.0 to Windows 3.1, the setup process
+will maintain your group files, system drivers and settings, desktop settings,
+applications, type managers, and CONFIG.SYS file settings, including the order
+in which your device drivers are loaded. Windows 3.1 Setup will update existing
+Windows device drivers (if 3.1 has updated versions), add any new entries to
+your .INI files, and install TrueType fonts.
+
+The Setup program also has a tutorial that will familiarize you with the
+Microsoft Windows operating system version 3.1 and show you how to use the
+mouse.
+
+When you select the Setup Existing Applications option, Setup will prompt you to
+identify applications with identical filenames. This new feature allows Setup to
+create program information files (PIFs) for MS- DOS applications that use the
+same .EXE filename.
+
+WHAT SETUP DOES
+---------------
+
+When Setup is first invoked, it searches your system for memory- resident
+programs, such as device drivers or terminate-and-stay- resident (TSR) programs,
+which are known to cause problems with Setup or Windows 3.1. If Setup does
+detect a memory-resident program, it will advise you to remove that device
+driver or TSR program from your CONFIG.SYS or AUTOEXEC.BAT file, restart your
+system, and then start Setup again.
+
+Setup will also check the available space on your hard drive. If Setup detects a
+lack of space for a full installation, it will provide an option for a partial
+installation of Windows. If the setup process does not complete for some reason
+(such as a power failure), you can start Setup again, and it will detect that
+the setup process has not been completed. At this point, Setup will offer
+suggestions on how to correct the condition that caused the previous setup to
+fail.
+
+NEW SWITCHES FOR SETUP
+----------------------
+
+The Windows 3.1 Setup program has new command-line switches in addition to those
+of the Windows 3.0 Setup program. The following is a list of the command-line
+switches that can be used with the Windows 3.1 Setup program:
+
+  setup /? -- Displays the Help dialog box and a list of available command-line
+  switches.
+
+  setup /n -- Sets up a shared copy of Windows from a network server.
+
+  setup /i -- Disables the hardware detection that the Setup program normally
+  performs. Using the setup /i option allows you to check the accuracy of the
+  settings on the System Information screen and possibly make corrections.
+
+  setup /o:&lt;filespec&gt; -- Specifies the SETUP.INF file, where
+  &lt;filespec&gt; is the name of the SETUP.INF file that will be used by
+  Setup.
+
+  setup /s:&lt;filepath&gt; -- Specifies a path to the Setup disk, where
+  &lt;filepath&gt; is the full path to the Setup disk.
+
+  setup /b -- Forces Setup to run in monochrome mode.
+
+  setup /t -- Causes Setup to search the drive for software that is incompatible
+  and should not be run at the same time as Setup or Windows 3.1.
+
+  setup /c -- Turns off the search for memory-resident programs.
+
+  setup /a -- Starts an administrative Setup program that places Windows onto a
+  network server. Setup expands and copies all the files on every disk to a
+  given directory and then marks the files read-only.
+
+  setup /h:&lt;filespec&gt; -- Starts Batch Mode Setup, which requires little or
+  no user interaction. &lt;Filespec&gt; is the name of the system settings file
+  that contains your configuration settings. If &lt;filespec&gt; is not in the
+  directory from which Windows is being set up, the path to it must also be
+  included.
+
+MODES OF WINDOWS SETUP
+----------------------
+
+The Windows 3.1 Setup program has new setup modes, Express and Custom modes, as
+well as a new Batch Mode Setup feature that allows for automation of the setup
+procedure.
+
+Express Setup:
+
+The Express Setup mode is new to Windows 3.1 and is the default installation
+mode. It automatically detects the system hardware and applies standard defaults
+to all other installation options. When upgrading from Windows 3.0 using Express
+Setup, the only entry requirement is your name. If using Express Setup for a new
+installation of Windows 3.1, you will be required to enter your name and select
+a printer, printer type, and printer port, if applicable.
+
+Custom Setup:
+
+The Custom Setup mode is very similar to the Windows 3.0 Setup process, with some
+additional features. A custom installation allows you to have full control in
+selecting the Windows directory, system hardware, optional component
+installation, changes to the CONFIG.SYS and AUTOEXEC.BAT files, printer
+installation, and setup of existing applications. If you are upgrading from an
+existing 3.0 installation, some options, such as the Printer Installation dialog
+box, will not be selected by default, in order to preserve the existing
+drivers.
+
+Batch Mode Setup:
+
+The Batch Mode Setup process is designed to simplify and speed up the
+installation of Windows 3.1 onto multiple machines that will be using the same
+or very similar configuration information. Batch Mode Setup uses the
+/h:&lt;filespec&gt; switch, as described above. Setup uses the information
+provided in the specified file to determine the configuration during the setup
+process; minimal user input is required. If hardware or setup options are not
+specified in the file, Batch Mode Setup will use defaults for these options and
+will perform automatic detection of the system's hardware. The file containing
+the configuration information typically has an extension of .SHH. Windows 3.1
+includes a sample file, with explanatory comments, called SETUP.SHH that can be
+modified to meet your needs. For more information about the Batch Mode Setup
+program for Windows 3.1, see the Microsoft Windows Resource Kit. For more
+information, call the Microsoft Sales Information Center (MSIC) at (800)
+426-9400.
+
+Maintaining Windows with Setup:
+
+Once you have successfully installed Windows 3.1, you can use the Windows Setup
+program to update your installation whenever your hardware or software
+configuration changes. To update your Windows 3.1 installation, start Setup
+either from inside Windows or from the WINDOWS directory command prompt.
+
+When you start Setup from the command prompt, you can change the Windows device
+drivers for your system hardware, change code page and language options, and
+install third-party Windows device drivers.
+
+When you start Setup from within Windows, you can change the video, mouse,
+keyboard, and network drivers. You can also have Setup search your hard disk for
+applications and set up icons for any applications it finds. You can also use
+Setup to add or remove, completely or partially, the optional components that
+come with Windows 3.1. The following are the components that can be added or
+removed through Setup:
+
+  README files
+  Windows accessories
+  Games
+  Screen savers
+  Wallpaper and sounds
+
+TROUBLESHOOTING SETUP
+---------------------
+
+The MS-DOS Portion of Setup:
+
+The first part of the Windows 3.1 setup process runs with MS-DOS. If the Setup
+program stops during this part of the installation, it may be due to one of the
+following problems:
+
+1. Inability to correctly detect the system's hardware (which may result in your
+  machine stopping).
+
+  To correct this problem, run Setup again by typing "setup /i" (without the
+  quotation marks). This command causes Setup to bypass its hardware detection
+  and run the Custom Setup process. When the System Information screen comes
+  up, choose the settings that match the hardware on your system.
+
+2. Incompatible hardware or software.
+
+  Run Setup again, and it will display a failure detection message, prompting
+  you to take the necessary steps to continue. Continue the setup process and
+  specify the correct hardware when the System Information screen appears. If
+  the System Information selections appear correct, a memory-resident program
+  may be interfering with the setup process. In such an instance, exit Setup
+  and restart the machine with minimal CONFIG.SYS and AUTOEXEC.BAT files. Using
+  a text editor such as Notepad, comment out any entries in these files that
+  are not absolutely necessary for the operation of the machine. (To comment
+  out an entry, type "rem" (without the quotation marks) at the beginning of
+  the line.)
+
+  NOTE: If you do not know the purpose of a line in your CONFIG.SYS or
+  AUTOEXEC.BAT file, leave that line as is. Also, if the system has RAM or ROM
+  shadowing, this should be disabled, as it can interfere with both Setup and
+  Windows 3.1.
+
+3. Hard disk problems.
+
+  If your hard disk has a number of lost clusters (allocation units), is
+  excessively fragmented, or has a number of bad sectors, Windows Setup may not
+  be able to run. In such a case, the best course of action is to run the
+  MS-DOS command CHKDSK. Note the amount of available disk space and whether
+  CHKDSK reports any lost allocation units. If lost allocation units are
+  reported, you can correct this problem by typing "chkdsk /f" (without the
+  quotation marks).
+
+  CAUTION: If the number of lost allocation units is excessive (anything more
+  than 10-20 lost allocation units), there may be a problem elsewhere in the
+  system. Running CHKDSK /F with an excessive number of lost allocation units
+  may result in data corruption on your hard disk. It is best to speak with
+  your support consultant in such an instance to determine the best course of
+  action. Bad sectors and fragmented disks can be corrected by using
+  third-party utility packages such as Norton Utilities from Symantec, or PC
+  Tools from Central Point.
+
+The Windows Portion of Setup:
+
+Partway through the installation, the setup process will switch from MS-DOS to
+Windows. Windows Setup will inform you that it is trying to start Windows. At
+the point where the Setup program switches from MS- DOS to Windows, the screen
+may go black and the machine may stop. The following are possible causes and
+their resolutions:
+
+1. Conflicts with memory-resident applications (TSR programs and/or device
+  drivers).
+
+  When you started Setup, your system had an program in memory that writes
+  directly to your video screen, rather than going through the BIOS--for
+  example, a TSR network messaging program that notifies you when a print job
+  completes. Other memory-resident programs can also interfere with Windows
+  Setup. Setup will detect and warn you about many incompatible memory-resident
+  programs when it first starts. (The file SETUP.TXT, located on Disk 1,
+  provides additional information about using these programs with Setup or
+  Windows. The information about memory-resident programs is listed
+  alphabetically by program name.) Make sure that any extraneous applications
+  and device drivers have been closed or commented out of your CONFIG.SYS and
+  AUTOEXEC.BAT files before starting Windows 3.1 Setup. To comment out an
+  entry, type "rem" (without the quotation marks) at the beginning of the
+  line.
+
+  NOTE: If you do not know the purpose of a line in your CONFIG.SYS or
+  AUTOEXEC.BAT file, leave that line as is.
+
+2. Inability to correctly detect hardware. Type "setup /i" (without the
+  quotation marks) at the command prompt. When the System Information screen
+  comes up, make sure that the settings displayed match the hardware on the
+  system. If the settings shown do not match, change them to the correct
+  settings.
+
+3. Incompatible hardware or software.
+
+  Run Setup again; Setup will display a message indicating which device is
+  incompatible and prompt you to specify a different device. On the System
+  Information screen, verify that all the settings are correct and modify them
+  if they are not. If you are still unable to proceed through Setup, try
+  installing Windows by typing "setup /i" (without the quotation marks),
+  choosing the lowest resolution supported by your monitor, and selecting the
+  No Mouse Or Other Pointing Device option. If the Setup program proceeds, you
+  can run Setup again after Windows installs to correctly configure Windows for
+  your machine. Install the proper configuration components one at a time. If
+  you encounter problems with one or more of the components, contact the
+  manufacturer of the component in question for more information.
+
+4. Incorrect version of MS-DOS.
+
+  Windows 3.1 requires MS-DOS version 3.1 or later. To determine what version of
+  MS-DOS is present on your system, type "ver" (without the quotation marks) at
+  the MS-DOS command prompt, and you will receive a message indicating your
+  MS-DOS version. If necessary, install a newer version of MS-DOS and then run
+  Setup again. When you attempt to install Windows 3.1 with a version of MS-DOS
+  prior to 3.1, Setup will display an error message and terminate. It is also
+  important that the version of MS-DOS on your machine is designed for that
+  machine.
+
+  CAUTION: Do not run an original equipment manufacturer (OEM) version of MS-DOS
+  on a machine not manufactured by that OEM (for example, COMPAQ MS-DOS on an
+  IBM machine).
+
+If the Setup program does not detect that you have inserted the disk that you
+were prompted for, one of the following conditions may be true:
+
+1. A disk-caching utility may be caching the floppy disk drive.
+
+  To remove the disk cache, use a text editor such as Notepad to open the
+  CONFIG.SYS or the AUTOEXEC.BAT file and comment out the line pertaining to
+  the disk-caching utility. To comment out a line, type "rem" (without the
+  quotation marks) at the beginning of the line. After saving the file and
+  exiting your editor, restart your system and run Setup again.
+
+2. The system may not have received the message that the floppy disk has been
+  changed.
+
+  Under MS-DOS 3.2 and later, you can try to correct this problem by adding
+  either DRIVPARM or DRIVER.SYS to your CONFIG.SYS file and then restarting
+  your computer. For example, if you are setting up Windows 3.1 from drive A,
+  and it is a high-density 5.25-inch drive, you would add ONE of the following
+  lines to your CONFIG.SYS file:
+
+  drivparm=/d:0 /f:1
+
+  -or-
+
+  device=c:\dos\driver.sys /d:0 /f:1
+
+  NOTE: If your MS-DOS files are located in a directory other than C:\DOS, make
+  the appropriate change to the path in the above device= line. For more
+  information on either of these commands, please refer to your MS-DOS user's
+  guide.
+
+NONSTANDARD WINDOWS 3.0 DRIVERS
+-------------------------------
+
+If you are using a nonstandard display driver, such as Super VGA, with Windows
+3.0, you may receive an error message or encounter difficulty while starting
+Windows 3.1. The following are error messages that can be caused by an
+incompatible display driver:
+
+  Error loading VGA.DRV
+
+will appear if the driver cannot be loaded.
+
+NOTE: "VGA.DRV" will change to match the name of the currently installed display
+driver.
+
+  Error loading USER.EXE
+
+or
+
+  Error loading GDI.EXE
+
+can be caused by other nonstandard Windows drivers or components.
+
+If you encounter any of these messages, you may need to exit Setup and run Setup
+within Windows 3.0 to return Windows 3.0 to a standard configuration. Once
+Windows 3.0 is at a standard configuration, run Windows 3.1 Setup. Contact your
+hardware manufacturer to see if there are any special concerns.
+
+If none of the above steps allows Setup to install Windows 3.1 on your system,
+you may need to contact your hardware manufacturer for more information.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          : kbsetup win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : :3.1
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

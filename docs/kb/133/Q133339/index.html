@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q133339: Automating Client Services for NetWare (CSNW) Installation | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q133339: Automating Client Services for NetWare (CSNW) Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/133/Q133339/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/133/Q133339/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/133/Q133339/","publisher":null,"image":null,"headline":"Q133339: Automating Client Services for NetWare (CSNW) Installation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q133339-automating-client-services-for-netware-csnw-installation">Q133339: Automating Client Services for NetWare (CSNW) Installation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q133339
+Product(s): Microsoft Windows NT
+Version(s): 3.5,3.51
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Workstation versions 3.5, 3.51 
+- Microsoft Windows NT Server versions 3.5, 3.51 
+- MSPRESS Microsoft Windows NT Resource Kit, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Unattended or Computer Profile Setup (CPS), by default, Client
+Services for NetWare (CSNW) is not installed. However, you can accomplish
+automated installation of CSNW by modifying setup files.
+
+MORE INFORMATION
+================
+
+To automatically configure CSNW when you use an answer file with Windows NT
+Setup, modify the TXTSETUP.SIF, NTLANMAN.INF, AUTOEXEC.NT, and SYSTEM:
+
+WARNING: Modification of INF files may cause serious, system-wide problems before
+and after Setup and may require you to reinstall Windows NT to correct them.
+Microsoft cannot guarantee that any problems resulting from the modification of
+INF files can be solved. Make INF modifications at your own risk. Corporate
+Network Systems does not support the modification of INF files. For more
+information on INF files, refer to the Programmer's Guide included in the
+Windows NT DDK or contact Microsoft Consulting Services or a Solution Provider.
+
+1. Copy the \I386 directory from the Windows NT compact disc to your hard drive.
+
+2. Expand NTLANMAN.IN_, AUTOEXEC.NT_, and SYSTEM._ using the EXPAND.EXE
+  command.
+
+  The EXPAND.EXE file is located in the %SystemRoot%\SYSTEM32 directory.
+
+3. Make a backup copy of TXTSETUP.SIF and rename NTLANMAN.IN_, AUTOEXEC.NT_, and
+  SYSTEM._.
+
+4. Add the following to the [Files] section of the TXTSETUP.SIF file:
+
+        ;;; Added line below. &lt;your_name&gt;, &lt;today's_date&gt;
+        nwcfg.dll = dx,,,2,0,0
+
+  NOTE: The text ";;; Added line below. &lt;your_name&gt;, &lt;today's_date&gt;"
+  is an optional comment that Microsoft recommends you add for tracking and
+  easier troubleshooting in the future.
+
+5. Add the following to the [ServiceData] section of the NTLANMAN.INF file:
+
+        ;;; Added line below. &lt;your_name&gt;, &lt;today's_date&gt;
+        ServiceData_5      = "OEMNSVNW.INF","NWWKSTA",11,NWWKSTA
+
+  NOTE: The ServiceData_5 line must immediately follow the ServiceData_4 line.
+
+6. Add the following to end of the AUTOEXEC.NT file:
+
+   
+        REM Install netware redirector
+        lh %SystemRoot%\system32\nw16
+        lh %SystemRoot%\system32\vwipxspx
+   
+
+7. Run Registry Editor (REGEDT32.EXE) on another Windows NT system running CSNW.
+
+8. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+     \SYSTEM\CurrentControlSet\Control\Print\Providers
+
+
+9. Choose the Save Key option from the Registry menu to save the Providers Key
+  to a file (for example: A:\PROVIDE.TMP).
+
+10. Choose the OK button.
+
+11. Make sure the HKEY_LOCAL_MACHINE window is highlighted by selecting it.
+
+12. Choose the LOAD HIVE option from the Registry menu.
+
+13. In the Load Hive dialog box, specify SYSTEM file that was expanded in Step 2
+  and choose the OK button:
+
+14. When prompted for Key Name, specify "Template System" (without the quotation
+  marks) and choose the OK button.
+
+15. Go to the key:
+
+  \Template System\CurrentControlSet001\Control\Print\Providers
+
+16. Choose the Restore option from the Registry menu and specify the file saved
+  in Step 9 above (for example: A:\PROVIDE.TMP).
+
+17. Choose the OK button.
+
+18. Select the Template System key.
+
+19. Choose the Unload Hive option from the Registry menu.
+
+20. Run Unattended Setup.
+
+For details on running Unattended Setup refer to the "Unattended Installation"
+section in Chapter 3 or the Windows NT Resource Kit.
+
+To automatically configure CSNW using computer profile setup (CPS):
+
+1. Upload the master system (must have CSNW installed) to the distribution
+  server.
+
+2. Modify the [ServiceData] section of %SYSTEMROOT%\SYSTEM32\DEFAULTS.INF on the
+  distribution server to appear as follows.
+
+  NOTE: DEFAULTS.INF lines in the following example that do not fit on one line
+  in this article but should be on one line in the DEFAULTS.INF file, have
+  several parts to it and are labeled as such to help you identify and modify
+  the correct lines. Be sure to remove the line labels if you copy this example
+  to the DEFAULTS.INF file:
+
+                line 1: [ServiceData]
+        line 2, part 1: !ServiceInfList =
+        line 2, part 2: {"OEMNSVSV.INF","OEMNSVWK.INF","OEMNSVNB.INF",
+        line 2, part 3: "OEMNSVRP.INF", "OEMNSVNW.INF"}
+        line 3, part 1: !ServiceOptionList = {"SRV","WKSTA","NETBIOS",
+        line 3, part 2: "RPCLOCATE","NWWKSTA"}
+                line 4: !ServiceBbList = {"3","2","5","11","11"}
+        line 5, part 1: !ServiceNameList = {"LanmanServer",
+        line 5, part 2: "LanmanWorkstation","NetBIOS","RPCLOCATOR","NWWKSTA"}
+
+3. Run WINNTP.EXE on the target system.
+
+For details on uploading the master system to the distribution server or running
+WINNTP.EXE from the target system read "Preinstalling Windows NT Using CPS" in
+Volume 1 of the Windows NT Resource Kit.
+
+Additional query words: prodnt upgrade
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbMSPressSearch kbWinNTS351search kbWinNTS350search kbZNotKeyword6 kbZNotKeyword2
+Version           : :3.5,3.51
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

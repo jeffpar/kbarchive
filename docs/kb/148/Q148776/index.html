@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148776: How to Use the New API Functions in Visual FoxPro Version 3.0b | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148776: How to Use the New API Functions in Visual FoxPro Version 3.0b" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148776/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148776/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148776/","publisher":null,"image":null,"headline":"Q148776: How to Use the New API Functions in Visual FoxPro Version 3.0b","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148776-how-to-use-the-new-api-functions-in-visual-foxpro-version-30b">Q148776: How to Use the New API Functions in Visual FoxPro Version 3.0b</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148776
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b,6.0
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The update release of Visual FoxPro version 3.0b included a number of new Object
+manipulation API functions:
+
+     _FreeObject()
+     _GetObjectProperty()
+     _SetObjectProperty()
+     _ObjectCmp()
+     _ObjectReference()
+     _ObjectRelease()
+     _WGetObjectClientWindow()
+     _WGetObjectWindow()
+
+This article gives a brief description of each of these functions followed by
+sample code that shows how to call and implement each one.
+
+MORE INFORMATION
+================
+
+Brief Description of Each Function
+----------------------------------
+
+  _FreeObject() - releases an object from the Visual FoxPro API data pool.
+
+  _GetObjectProperty() - returns a property value for an object.
+
+  _ObjectCmp() - compares the properties of two objects and returns 0 if their
+  properties and property values are identical.
+
+  _ObjectReference() - Increments the reference count of an object.
+
+  _ObjectRelease() - Decrements the reference count of an object.
+
+  _SetObjectProperty() - Sets a property for an object.
+
+  _WGetObjectClientWindow() - Returns the handle of the client window in which
+  the specified object is contained.
+
+  _WGetObjectWindow() - Returns the handle of the frame window in which the
+  specified object is contained.
+
+Uses for the Functions
+----------------------
+
+The use of some of these object functions may not be immediately apparent. The
+_FreeObject(), _ObjectReference(), and _ObjectRelease() functions can be thought
+of as similar to the memory locking functions.
+
+To be sure that the object reference is valid between calls, you can call
+ObjectReference(), like _HLock, to tell Visual FoxPro not to alter this object
+in memory. Then when you're finished, you can call ObjectRelease() as you can
+call HUnLock(). To get rid of the object reference entirely, you can call
+FreeObject() in a comparable manner to FreeHand().
+
+The following sample code demonstrates an FLL that uses all of these new
+functions. There is a section of C code listed first that you can use to build
+the FLL. That section is followed by a section of FoxPro code to test the
+functionality of your new FLL.
+
+C Source Code for FLL
+---------------------
+
+Build the following code as you would for any other FLL. If you need help, see
+the Professional Features Guide Chapter 11 and the Microsoft Knowledge Base.
+
+  // Following is the C code to create a single FLL that
+  // showcases how to call each of the new object functions.
+
+  // include the library construction header file
+  #include &lt;pro_ext.h&gt;
+
+  far changeWTitle (ParamBlk FAR *parm)
+  {
+    WHandle wh;
+    if (parm-&gt;p[0].val.ev_type=='O')
+    {
+       wh=_WGetObjectWindow(&amp;parm-&gt;p[0].val);
+     _WSetTitle(wh, "Changed Title");
+    }
+    return(0);
+  }
+
+  far getoTop(ParamBlk FAR *parm)
+  {
+    Value val;
+
+    _MemFill(&amp;val, 0, sizeof(Value));   // Clear out our return value
+    val.ev_length = 0;         // Assume a bad return.
+
+   if (parm-&gt;p[0].val.ev_type == 'O')
+   {
+       _GetObjectProperty(&amp;val, &amp;parm-&gt;p[0].val, "TOP");
+   }
+   _RetVal(&amp;val);
+   return(0);
+  }
+
+  far changeoTop(ParamBlk FAR *parm)
+  {
+    Value val;
+    int   status;
+
+    _MemFill(&amp;val, 0, sizeof(Value));   // Clear out return value
+    val.ev_type = 'L';
+    val.ev_length = 0;         // Assume a bad return
+
+   if (parm-&gt;p[0].val.ev_type == 'O')
+   {
+       if (!(status= _SetObjectProperty(&amp;parm-&gt;p[0].val,
+          "TOP", &amp;parm-&gt;p[1].val, 0)))
+     val.ev_length = 1;      // succeeded
+   }
+   _RetVal(&amp;val);
+   return(0);
+  }
+
+  far compare(ParamBlk FAR *parm)
+  {
+
+   if (parm-&gt;p[0].val.ev_type == 'O' &amp;&amp; parm-&gt;p[1].val.ev_type == 'O')
+   {
+
+       _RetInt((long) _ObjectCmp(&amp;parm-&gt;p[0].val, &amp;parm-&gt;p[1].val),5);
+   }
+   return(0);
+  }
+
+  far changeCWTitle(ParamBlk FAR *parm)
+  {
+     WHandle   wh;
+     if (parm-&gt;p[0].val.ev_type == 'O')      // Check for 'O' as in Oscar
+     {
+        wh =  _WGetObjectClientWindow(&amp;parm-&gt;p[0].val);
+        _WSetTitle(wh,  "Changed Title");
+     }
+   return(0);
+  }
+
+  far ofree(Value *val1)
+  {
+
+   if (val1-&gt;ev_type=='O')
+   {
+       _FreeObject(val1);
+      return(0);
+   }
+
+   return(1);
+  }
+
+  far objref(ParamBlk FAR *parm)
+  {
+  // This function shows how to keep an object reference around.
+  // You would call this with a child object. It gets a ref
+  // to the parent, increment the reference, change the
+  // value of a property, then release the ref and free the object.
+
+     Value setval,getval;
+     char returnstr[80];
+     _MemFill(&amp;setval,0,sizeof(Value));
+     _MemFill(&amp;getval,0,sizeof(Value));
+     setval.ev_type='I';
+     setval.ev_long=70;
+
+   if (parm-&gt;p[0].val.ev_type == 'O')
+   {
+       if (! _GetObjectProperty(&amp;getval, &amp;parm-&gt;p[0].val, "PARENT"))
+      {
+         _ObjectReference(&amp;getval); //increment the Ref Count of the object
+        strcpy(returnstr,"Increment Refcount, ");
+        if (!(_SetObjectProperty(&amp;getval, "TOP", &amp;setval,0)))
+        {
+          strcat(returnstr,"Set the top to 70, ");
+        }
+        _ObjectRelease(&amp;getval);
+        strcat(returnstr,"Release reference, ");
+        if (!ofree(&amp;getval))
+        {
+           strcat(returnstr,"Freed the object\n");
+        }
+     _RetChar(returnstr);
+      }
+  }
+  return(0);
+  }
+
+  // The FoxInfo structure registers the function
+  FoxInfo myFoxInfo[] = {
+     {"CHANGEWTITLE",(FPFI) changeWTitle, 1, "O"},
+     {"OGETTOP", (FPFI) getoTop, 1, "O"},
+     {"OSETTOP", changeoTop, 2, "O?"},
+     {"CHANGECWTITLE", changeCWTitle, 1, "O"},
+     {"OCOMPARE", compare, 2, "OO"},
+     {"OMOVEPARENT",objref,1,"O"},
+  };
+
+  // the FoxTable structure
+  FoxTable _FoxTable = {
+     (FoxTable  *) 0, sizeof(myFoxInfo)/sizeof(FoxInfo), myFoxInfo
+  };
+
+FoxPro Code Component
+---------------------
+
+When you have entered the code and successfully built it into a DLL, you can save
+that file to your Visual FoxPro default directory as Newapi.fll. Then use the
+following FoxPro code to call and test the function.
+
+  SET LIBRARY TO NEWAPI.FLL
+
+  PUBLIC x
+  x=CreateObject('myform')
+  x.Show
+
+  Define Class myform as form
+     add object command1 as commandbutton
+     add object command2 as commandbutton
+     add object command3 as commandbutton
+     add object command4 as commandbutton
+     add object command5 as commandbutton
+     add object spintop as spinner
+     command1.caption="Change FrameWindow Title of _screen"
+     command2.caption="Set .TOP of this button to this value:"
+     command3.caption="Display .TOP value of the form"
+     command4.caption="Move the form and test Obj Ref"
+     command5.caption="Change Window Title of this Form"
+     spintop.value=10
+
+     proc init
+        for i=1 to thisform.controlcount-1
+           with thisform.controls(i)
+              .visible=.t.
+              if pemstatus(thisform.controls(i),'autosize',5)
+                 .autosize=.t.
+                 .autosize=.f.
+                 .width=260
+                 .left=10
+              ENDIF
+              if i&gt;1
+                 .top=thisform.controls(i-1).height*(i-1)+10*(i-1)
+              ENDIF
+           endwith
+        endfor
+        with this
+           .spintop.top=.command2.top
+           .spintop.height=.command2.height
+           .spintop.width=50
+           .spintop.left=.command2.left+.command2.width+10
+           .spintop.value=.command2.top
+     endproc
+
+     proc command1.click
+        =changewtitle(_screen); // change the form title
+     endproc
+     proc command2.click
+        =OSetTop(this,this.parent.spintop.value)
+     endproc
+     proc command3.click
+        val=OGetTop(thisform)
+        =messagebox(str(val))
+     endproc
+     proc command4.click
+        =messagebox(OMOVEPARENT(this))
+
+     endproc
+     proc command5.click
+        =CHANGECWTITLE(thisform)
+     endproc
+
+  enddefine
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : WINDOWS:3.0,3.0b,6.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

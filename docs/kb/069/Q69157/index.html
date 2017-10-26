@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q69157: Bad Values When QLB Function Used as SUB Parameter | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q69157: Bad Values When QLB Function Used as SUB Parameter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/069/Q69157/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/069/Q69157/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/069/Q69157/","publisher":null,"image":null,"headline":"Q69157: Bad Values When QLB Function Used as SUB Parameter","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q69157-bad-values-when-qlb-function-used-as-sub-parameter">Q69157: Bad Values When QLB Function Used as SUB Parameter</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q69157
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S910118-99 | mspl13_basic
+Last Modified: 14-FEB-1991
+
+If a FUNCTION returning a floating-point value is located in a Quick
+library and is directly used as the second, third, or later parameter
+of a SUB or FUNCTION in a program, then incorrect values may be passed
+to the SUB or FUNCTION being called. This problem occurs only in the
+QuickBASIC environment.
+
+Microsoft has confirmed this problem with Microsoft QuickBASIC
+versions 4.00, 4.00b, and 4.50. This problem does not exist with the
+Microsoft BASIC Professional Development System (PDS) versions 7.00
+and 7.10.
+
+When compiled and linked (with the FUNCTION in a .LIB library) into an
+.EXE file, the same program will run correctly.
+
+A simple workaround for this problem is to assign a temporary variable
+to the return value of the Quick library function, then pass that
+temporary variable when you invoke the SUB or FUNCTION.
+
+The results may vary depending upon the number and type of parameters
+passed to the FUNCTION within the Quick library. If the Quick library
+function accepts parameters, bad values may be passed to the calling
+SUB or FUNCTION.  However, if no parameters are accepted by the Quick
+library function, a machine hang may occur when that function is used
+as a parameter to another SUB or FUNCTION.
+
+Using the debug options when creating the Quick library, or using the
+ON ERROR GOTO ... RESUME lines in either the main program or in the
+Quick library, does not eliminate the problem. The code below
+demonstrates the problem.
+
+The following function goes in the Quick library:
+
+DECLARE FUNCTION func1! (x!)
+FUNCTION func1! (x!)
+    func1! = x! * 2
+END FUNCTION
+
+The following program invokes the Quick library's function directly in
+the parameter list of the SUB foo, and demonstrates the problem:
+
+DECLARE FUNCTION func1! (x!)
+DECLARE SUB foo (a!, b!)
+CALL foo (100, func1! (45))
+END
+SUB foo (a!, b!)
+PRINT a!; b!  'This should print 100 90, but incorrectly prints 90 90
+END SUB
+
+A simple modification using a temporary variable (y!) in the calling
+program works around the problem, as shown below:
+
+DECLARE FUNCTION func1! (x!)
+DECLARE SUB foo (a!, b!)
+y! = func1! (45)
+CALL foo (100, y!)
+END
+SUB foo (a!, b!)
+    PRINT a!; b!
+END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q65640: ERROR ERR May Cause &quot;Illegal Function Call&quot; in QBX.EXE 7.00 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q65640: ERROR ERR May Cause &quot;Illegal Function Call&quot; in QBX.EXE 7.00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/065/Q65640/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/065/Q65640/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/065/Q65640/","publisher":null,"image":null,"headline":"Q65640: ERROR ERR May Cause &quot;Illegal Function Call&quot; in QBX.EXE 7.00","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q65640-error-err-may-cause-illegal-function-call-in-qbxexe-700">Q65640: ERROR ERR May Cause "Illegal Function Call" in QBX.EXE 7.00</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q65640
+Product(s): See article
+Version(s): 7.00   | 7.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | SR# S900827-59 buglist7.00 fixlist7.10 | mspl13_basic
+Last Modified: 20-SEP-1990
+
+In a multiple-module program in which each of the modules contains an
+active error handler, executing the statement ERROR ERR within an
+error handler of any support module will normally pass control back to
+the next active error handler in the CALL tree. If an active error
+handler is not found, the program will terminate.
+
+Within the QBX.EXE environment of Microsoft BASIC Professional
+Development System (PDS) version 7.00, using ERROR ERR in a
+module-level error handler will incorrectly generate either "Illegal
+function call" or "Device I/O error". This problem does not occur when
+the same program is compiled using BC.EXE.
+
+Microsoft has confirmed this to be a problem in only the QBX.EXE
+environment of BASIC PDS 7.00 for MS-DOS. This problem was corrected
+in BASIC PDS version 7.10.
+
+When the following program is run in QBX.EXE version 7.00, an "Illegal
+Function Call" or "Device I/O error" results. When the program is
+compiled using BC.EXE, it will compile and run without error.
+
+MOD1.BAS
+--------
+
+   '=================This is Module 1==========================
+   DECLARE SUB mod2sub1 ()        'this sub is in Mod2
+   ON ERROR GOTO MainErr          'Main error Handler
+   CLS
+   CALL mod2sub1                  'Calls the sub in Mod2
+   END
+   MainErr:
+      PRINT "main error "; ERR    'prints the Error number
+      END
+
+MOD2.BAS
+--------
+
+   '===================This is Module 2========================
+   Mod2ErrorHandler:            'This error handler is at the
+      PRINT "Mod2 Error "       'Module level in Mod2.
+      ERROR ERR                 'This causes the error again.
+      RESUME NEXT
+   SUB mod2sub1
+      ON ERROR GOTO Mod2ErrorHandler  'Goto err handler in Mod2
+      ERROR 5                         'Cause an Error 5
+   END SUB
+
+Workaround for MOD2.BAS
+-----------------------
+
+To work around the problem, convert the module-level error handler (in
+the MOD2.BAS support module) into a local error handler, as follows:
+
+   SUB Mod2Sub1
+        ON LOCAL ERROR GOTO Mod2ErrorHandler
+        ERROR 5
+        EXIT SUB
+        Mod2ErrorHandler:
+            PRINT "Mod2 Error "
+            ERROR ERR           'Forces the error again.
+            RESUME NEXT
+   END SUB
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

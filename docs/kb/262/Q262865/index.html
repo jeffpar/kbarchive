@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q262865: XCON: Do Not Replay .dat Files Removed by Mtacheck Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q262865: XCON: Do Not Replay .dat Files Removed by Mtacheck Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/262/Q262865/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/262/Q262865/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/262/Q262865/","publisher":null,"image":null,"headline":"Q262865: XCON: Do Not Replay .dat Files Removed by Mtacheck Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q262865-xcon-do-not-replay-dat-files-removed-by-mtacheck-utility">Q262865: XCON: Do Not Replay .dat Files Removed by Mtacheck Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q262865
+Product(s): Microsoft Exchange
+Version(s): winnt:4.0,5.0,5.5
+Operating System(s): 
+Keyword(s): exc4 exc5 exc55
+Last Modified: 18-JUN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An Mtacheck.out subfolder that contains .dat files may be located in the
+Exchsrvr\Mtadata folder. If you add the .dat files that are located in the
+Mtacheck.out subfolder to the parent Mtadata folder, a variety of error messages
+may be displayed and erratic behavior may occur.
+
+CAUSE
+=====
+
+This issue can occur because the Mtacheck.out subfolder contains message data
+.dat files or corresponding reference .dat files that the message transfer agent
+(MTA) cannot process.
+
+The Mtacheck utility creates the Mtacheck.out subfolder automatically. When you
+run the Mtacheck utility, files are placed in the Mtacheck.out subfolder because
+they cannot be processed by the MTA for various reasons, typically because a
+data .dat file does not have a corresponding reference .dat file, or a reference
+.dat file does not have a corresponding data .dat file.
+
+If you use certain switches to run the Mtacheck utility, some Exchange Server
+system messages may also be removed to the Mtacheck.out subfolder, such as
+directory replication messages, public folder replication messages, or link
+monitor messages. You do not need to replace these files because they will be
+automatically resent.
+
+RESOLUTION
+==========
+
+To resolve this issue, do not re-add the files that are located in the
+Mtacheck.out subfolder to the parent Mtadata folder. If you do, a variety of
+error messages are displayed, and erratic behavior occurs. The .dat files that
+are located in the Mtacheck.out subfolder were removed for a reason, and are
+only retained for reference and for troubleshooting.
+
+NOTE: You can only run the Mtacheck utility if there are no .dat files in the
+Mtacheck.out subfolder. If you want to keep the files that are located there for
+further research or troubleshooting, rename the Mtacheck.out subfolder. When you
+run the Mtacheck utility again, it automatically re-creates the Mtacheck.out
+subfolder.
+
+MORE INFORMATION
+================
+
+For additional information about the Mtacheck utility and the .dat files that
+are located in the Mtacheck.out subfolder, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q163326 XCON: How and Why to Run Mtacheck
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

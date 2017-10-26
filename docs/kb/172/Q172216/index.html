@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q172216: How to Force Routing and Remote Access to Use PAP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q172216: How to Force Routing and Remote Access to Use PAP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/172/Q172216/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/172/Q172216/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/172/Q172216/","publisher":null,"image":null,"headline":"Q172216: How to Force Routing and Remote Access to Use PAP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q172216-how-to-force-routing-and-remote-access-to-use-pap">Q172216: How to Force Routing and Remote Access to Use PAP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q172216
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 4.0 
+- Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the method for forcing a Routing and Remote Access (RRAS)
+server for Windows NT 4.0 to authenticate RAS clients using PAP instead of CHAP,
+SPAP, or MS-CHAP. This may be necessary, depending on your RAS clients or some
+third-party authentication solutions.
+
+MORE INFORMATION
+================
+
+If your RRAS server is configured to "Allow any authentication including clear
+text," a RAS client is able to connect with PAP, SPAP, CHAP, or MS- CHAP
+depending, on what the client supports. Normally, a Microsoft RAS client will
+attempt to connect with CHAP or MS-CHAP, if that is valid for the RAS server to
+which it is connecting.
+
+To force a RAS client to use PAP, you must delete the SPAP and CHAP registry keys
+from your RAS Server using the following steps:
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. Go to the following subkey:
+
+     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\PPP
+
+3. Click SPAP, click Edit, and click Delete.
+
+4. Click Yes to confirm the deletion.
+
+5. Click CHAP, click Edit, and click Delete.
+
+6. Click Yes to confirm the deletion.
+
+7. Close Registry Editor and stop and restart the Routing and Remote Access
+  Service.
+
+
+NOTE: This will not work on normal Windows NT RAS servers, only Windows NT 4.0
+RAS servers that have Routing and Remote Access installed. If you delete these
+registry keys on a normal RAS server, the RAS services will fail to start after
+you restart.
+
+The following two scenarios require the above steps to force RAS clients to use
+PAP authentication:
+
+- You are using a PPP client that can only use PAP, but does not notify the RAS
+  server that it needs to use PAP during the LCP negotiation.
+
+  -or-
+
+- You are using the new Radius client included in the Routing and Remote Access
+  Service Update. Many Radius servers do not accept the attribute 60 CHAP
+  Challenge that the Radius Client sends to the Radius server when
+  authenticating a RAS client using CHAP. This is a valid attribute according
+  to RFC 2058: "Remote Authentication Dial In User Service (RADIUS)"; however,
+  many older Radius servers cannot handle this newer attribute.
+
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+  Q136634 Remote Access Services Authentication Summary
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : WinNT:4.0
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q167595: FP: How to Create a Script for the Marquee Control | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q167595: FP: How to Create a Script for the Marquee Control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/167/Q167595/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/167/Q167595/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/167/Q167595/","publisher":null,"image":null,"headline":"Q167595: FP: How to Create a Script for the Marquee Control","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q167595-fp-how-to-create-a-script-for-the-marquee-control">Q167595: FP: How to Create a Script for the Marquee Control</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q167595
+Product(s): Word Front Page
+Version(s): windows:97
+Operating System(s): 
+Keyword(s): kbcode kbinterop kbdta
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FrontPage 97 for Windows with Bonus Pack 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the Marquee control to add a dynamic look to your Web pages. This
+article describes a method to use a control that scrolls a separate page within
+the current page and creates two buttons that allow you to control the scrolling
+speed of the marquee.
+
+NOTE: You can combine ActiveX controls to add greater functionality to your Web
+pages than would be possible with a single control.
+
+MORE INFORMATION
+================
+
+WARNING: ANY USE OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN RISK.
+Microsoft provides this code "as is" without warranty of any kind, either
+express or implied, including but not limited to the implied warranties of
+merchantability and/or fitness for a particular purpose.
+
+Use the following steps to create a control that scrolls a separate page and uses
+two buttons to control the scrolling speed of the marquee:
+
+
+1. Open a Web page in FrontPage Editor.
+
+2. On the Insert menu, point to Other Components, and then click ActiveX
+  control.
+
+3. In the Pick A Control list box, click MarqueeCtl Object.
+
+4. In the Name box, enter a name for the MarqueeCtl Object. For example, type
+  "Marquee" (without the quotation marks).
+
+5. Click Properties.
+
+6. In the Object Parameters dialog box, click Add.
+
+7. In the Name box, enter "szURL" (without the quotation marks). Under Value, in
+  the Data box, enter the following Uniform Resource Locator (URL):
+
+  "http://www.microsoft.com" (without the quotation marks)
+
+8. Click OK two times.
+
+9. In the ActiveX Control Properties dialog box, click Extended.
+
+10. Click Add.
+
+11. In the Name box, enter "TYPE" (without the quotation marks). In the Value
+  box, enter "application/x-oleobject" (without the quotation marks). Click
+  OK.
+
+12. Click OK two more times.
+
+13. On the Insert menu, point to Form Field, and then click Push Button.
+
+14. Right-click the form field, and then click Form Field Properties.
+
+15. In the Name box, enter "BtnFast" (without the quotation marks). In the
+  Value/Label box, enter "Fast"(without the quotation marks). Click Normal.
+  Click OK.
+
+16. Repeat steps 13 and 14.
+
+17. In the Name box, enter "BtnSlow" (without the quotation marks). In the
+  Value/Label box, enter "Slow" (without the quotation marks). Click Normal.
+  Click OK.
+
+18. Right-click the form area, and click Script Wizard.
+
+19. In the Event pane, double-click BtnSlow, and then click onClick. In the
+  Action pane, double-click Marquee, and then double-click ScrollDelay.
+
+  The following code appears in the Script pane:
+
+         Sub BtnSlow_Onclick
+         Marquee1.ScrollDelay
+
+20. Place the insertion point immediately following the "Marquee1.ScrollDelay"
+  code and type "=200" (without the quotation marks), so that the code looks
+  like this:
+
+         Sub BtnSlow_Onclick
+         Marquee1.ScrollDelay=200
+
+21. In the Event pane, double-click BtnFast, and then click onClick. In the
+  Action pane, double-click Marquee, and then double-click ScrollDelay.
+
+  The following code appears in the Script pane:
+
+         Sub BtnFast_Onclick
+         Marquee1.ScrollDelay
+
+22. Place the insertion point immediately following the "Marquee1.ScrollDelay"
+  code and type "=0" (without the quotation marks), so that the code looks
+  like this:
+
+         Sub BtnSlow_Onclick
+         Marquee1.ScrollDelay=0
+
+23. Click OK.
+
+When you view the page in a Web browser, the Microsoft World Wide Web home page
+will scroll within the current Web page.
+
+Additional query words: fp97, marquee, fpscript
+
+======================================================================
+Keywords          : kbcode kbinterop kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97Search kbZNotKeyword3
+Version           : windows:97
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

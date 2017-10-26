@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q241340: Branch Office Scenario Selects All SNA Subcomponents | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q241340: Branch Office Scenario Selects All SNA Subcomponents" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/241/Q241340/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/241/Q241340/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/241/Q241340/","publisher":null,"image":null,"headline":"Q241340: Branch Office Scenario Selects All SNA Subcomponents","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q241340-branch-office-scenario-selects-all-sna-subcomponents">Q241340: Branch Office Scenario Selects All SNA Subcomponents</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q241340
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.5
+Operating System(s): 
+Keyword(s): kbsetup
+Last Modified: 01-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you perform a Branch Office scenario installation of BackOffice Server 4.5,
+all the Microsoft SNA Server subcomponents are selected. This causes all of the
+SNA Server 4.0 SP2 components to be installed, requiring approximately 130.3
+megabytes (MB) of disk space.
+
+CAUSE
+=====
+
+The Intranet Publishing Server, Intranet Collaboration Server, and Complete
+installation scenarios present the following prompt:
+
+  Does this server access information on an AS/400 or a mainframe computer?
+
+If you click Yes, SNA Server 4.0 SP2 becomes one of the programs that is
+installed. However, for these three scenarios, not all of the SNA Server
+subcomponents are installed. The SNA Server components installed are the same
+for all three scenarios. The components that are not installed include:
+
+- Under SNA Server 4.0 SP2:
+
+   - Online Help (9.2 MB)
+
+- Under "SNA Server Component and Services":
+
+   - Host Account Synchronization Service (0.3 MB)
+   - SNA Remote Access Server (0.4 MB)
+
+- Under "Applications and Development Tools":
+
+   - COM Transaction Integrator (12.7 MB)
+   - OLE DB Provider for AS400 and VSM (4.6 MB)
+
+The Branch Office scenario does not present the prompt because it assumes that
+the answer is "yes," and all of the SNA Server 4.0 SP2 components are selected
+for installation.
+
+RESOLUTION
+==========
+
+Use the following method during a Branch Office scenario installation process if
+you do not want all the selected components to be installed:
+
+1. In the Your BackOffice Branch Office Server Installation dialog box, click
+  Customize My Solution.
+
+2. Go to the SNA Server 4.0 SP2 component.
+
+3. Follow the tree, and click to clear the check boxes for the components you do
+  not want to install.
+
+4. When you are finished with the selection process, click Next.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Component         : Component SRVRSetup
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : winnt:4.5
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

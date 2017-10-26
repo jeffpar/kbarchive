@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q130122: HOWTO: Add SQL SELECT to the Data Environment of a Report | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q130122: HOWTO: Add SQL SELECT to the Data Environment of a Report" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/130/Q130122/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/130/Q130122/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/130/Q130122/","publisher":null,"image":null,"headline":"Q130122: HOWTO: Add SQL SELECT to the Data Environment of a Report","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q130122-howto-add-sql-select-to-the-data-environment-of-a-report">Q130122: HOWTO: Add SQL SELECT to the Data Environment of a Report</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q130122
+Product(s): Microsoft FoxPro
+Version(s): 3.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbcode kbprint kbPrinting kbReportWriter kbvfp300 kbvfp500 kbvfp600
+Last Modified: 01-FEB-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In FoxPro version 2.6x, many developers used the SQL SELECT statement to create
+a cursor before running a report. This can be done automatically in Visual
+FoxPro by adding a SELECT statement to the data environment of the REPORT FORM.
+This article explains how.
+
+MORE INFORMATION
+================
+
+To automatically query a table each time you run a report, you must first create
+a view within a database container (.DBC file). Then add the view to the data
+environment section of the report.
+
+Step-by-Step Procedure
+----------------------
+
+1. If you have an existing .DBC file, use the OPEN DATABASE command to open it.
+  If you do not have an existing .DBC, use the CREATE DATABASE command to
+  create it.
+
+2. You can add a view to the .DBC file interactively by using the view designer,
+  or programatically by using the CREATE SQL VIEW command.
+
+  a. To add a view interactively:
+
+     1. If the database designer is not open on the screen, type MODIFY
+        DATABASE in the Command window, and press ENTER.
+
+     2. Click the right mouse button, and choose New Local view if you want to
+        have your view based on a FoxPro table. Choose New Remote View if you
+        want to have your view based on an ODBC datasource.
+
+     3. Use the View Wizard or the View Designer to select fields and specify
+        selection criteria for your records.
+
+  b. To add a view programatically issue the CREATE SQL command. For example
+     the following command includes all customers who have placed orders:
+
+        CREATE SQL VIEW myview AS SELECT * FROM customer WHERE ;
+           customer.cust_id IN (SELECT orders.cust_id from orders)
+
+     Regardless of which method you use to create the view, you should see the
+     view within the database designer. The view is stored as part of the .DBC
+     file. It is not stored as a separate file on disk.
+
+3. Create a new report. From the View menu, choose Data Environment.
+
+4. Click the Data Environment window to make it active, and click the right
+  mouse button.
+
+5. Choose Add from the menu. On the right side of the Add Table or View dialog,
+  choose Views (instead of tables). Select the desired view from the list of
+  views that appears.
+
+6. Add any needed fields to the report, and run it. The records included in the
+  report will be based on the selection criteria specified in your view.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbprint kbPrinting kbReportWriter kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500 kbVFP600
+Version           : :3.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

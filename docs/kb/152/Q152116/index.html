@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q152116: SAMPLE: DAO_OCX.EXE ActiveX Control Uses DAO to Query Database | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q152116: SAMPLE: DAO_OCX.EXE ActiveX Control Uses DAO to Query Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/152/Q152116/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/152/Q152116/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/152/Q152116/","publisher":null,"image":null,"headline":"Q152116: SAMPLE: DAO_OCX.EXE ActiveX Control Uses DAO to Query Database","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q152116-sample-dao_ocxexe-activex-control-uses-dao-to-query-database">Q152116: SAMPLE: DAO_OCX.EXE ActiveX Control Uses DAO to Query Database</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q152116
+Product(s): Microsoft C Compiler
+Version(s): winnt:4.1
+Operating System(s): 
+Keyword(s): kbfile kbsample
+Last Modified: 07-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual C++, version 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This sample demonstrates querying and displaying the result of the query using
+MFC's CDao classes from an ActiveX control (OLE Control.)
+
+The DaoOcx control utilizes a saved query in the CUSTOMER.MDB database provided
+with the sample. This database consists of phone numbers and their associated
+addresses. Additionally, there may be several people at each address and each
+individual may be associated with a note.
+
+When the FindNumber() method is called from the client, it queries the database
+for the currently-entered phone number using the saved query ByPhone, retrieves
+the data, and then populates the fields with the address. It also populates a
+List Box with the names of the people at that address. Once the user selects one
+of the names, it places the note associated with that individual, if there is
+one, in the note edit control, and then fires an event.
+
+The client application should call the ConnectDataBase method initially and must
+call the CleanUp method prior to shutdown. In the Visual Basic portion of this
+sample, the ConnectDataBase call is made in the Form's Load procedure and the
+CleanUp call is made in the Form's Terminate procedure.
+
+The database name and the name of the saved query are properties of the control
+and can be set. If the property sheet is used to set the properties, then
+validation is done. No validation is performed if the properties are not entered
+using the property sheet provided.
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Dao_ocx.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+MORE INFORMATION
+================
+
+Once you have unzipped the file, you should have the actual database,
+CUSTOMER.MDB, that includes the saved query ByPhone. This database was created
+using Access 2.0 and may also be accessed using Access 95. Also included are the
+files for the control and a Visual Basic 4.0 (32- bit) project and form that
+demonstrates how to use the control. You must build and register the control,
+and then set the location of the CUSTOMER.MDB file in the DaoOcx control on the
+Visual Basic form before running the Visual Basic client.
+
+Once the client is running, enter one of the following phone numbers (555)
+555-5555, (526) 874-4632 or (816) 547-1234. Click the Find button to see some
+sample data. Once the names are visible, select one and see the note associated
+with that individual. You will also see a message box caused by an event fired
+from the control indicating that the data is complete.
+
+The control uses a CDaoRecordSet derived class that is used to query the
+database. This class can be generated by hand, or you can use the AppWizard to
+create it as follows:
+
+1. From the File menu, select New. Select Project Workspace, and then select MFC
+  AppWizard.
+
+2. Select an MDI application and Database support.
+
+3. Press the Data Source button.
+
+4. Select the DAO button.
+
+5. Select the CUSTOMER.MDB file in the project directory as the database.
+
+AppWizard will create a CDaoRecordSet derived class that can be used almost
+directly. The only changes needed to be made to the CDaoRecordSet derived class
+are as follows:
+
+1. Modify the constructor to take a pointer to the control.
+
+2. Modify the GetDefaultDBName() function to call the control and retrieve the
+  database name.
+
+3. Modify the GetDefaultSQL() function to call the control and retrieve the
+  query name.
+
+When Dao is used in a DLL, you must explicitly call AfxDaoTerm() prior to the
+call to ExitInstance() or you will receive an assertion. In the sample, this
+behavior is accomplished by calling the automation method, CleanUp, that closes
+any of the database access items and calls AfxDaoTerm(). MFC will call
+AfxDaoInit() to initialize the Jet Engine, but because you are calling from a
+DLL, the "CleanUp" method must call AfxDaoTerm() directly.
+
+The CDao classes are very similar in usage to the ODBC database classes except
+that the Dao classes only access the Jet Engine, while the ODBC classes use the
+ODBC layer to allow access to a wide range of database types.
+
+The CDao classes are wrappers around the Dao COM interfaces. For example, the
+CDaoQueryDef is a wrapper for the DAOQueryDef interface and the class has a
+member variable, m_pDAOQueryDef, that is a pointer to the interface.
+
+Each object in the hierarchy contains an enumeration interface for listing the
+next lower interface in the hierarchy. For example, m_pDAOQueryDef
+(DAOQueryDef*) can be used to call QueryInterface for the DAOFields interface
+used to enumerate the fields in that query. The DAODatabase interface can be
+used to get the DAOQueryDefs interface used to list the available queries in the
+database.
+
+Calling Open on a variable of type CDaoRecordSet causes the SQL query to be
+generated and the field variables to be filled.
+
+You must call Close on any CDao object (interface) when you are done using it.
+
+Additional query words: 4.10
+
+======================================================================
+Keywords          : kbfile kbsample 
+Technology        : kbVCsearch kbAudDeveloper kbVC410
+Version           : winnt:4.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

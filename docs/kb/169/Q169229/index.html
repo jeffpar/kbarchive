@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q169229: How to Remove and Reinstall DHCP and Keep the DHCP Config | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q169229: How to Remove and Reinstall DHCP and Keep the DHCP Config" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/169/Q169229/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/169/Q169229/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/169/Q169229/","publisher":null,"image":null,"headline":"Q169229: How to Remove and Reinstall DHCP and Keep the DHCP Config","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q169229-how-to-remove-and-reinstall-dhcp-and-keep-the-dhcp-config">Q169229: How to Remove and Reinstall DHCP and Keep the DHCP Config</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q169229
+Product(s): Microsoft Windows NT
+Version(s): WinNT:4.0
+Operating System(s): 
+Keyword(s): kbnetwork
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is sometimes necessary to remove and then reinstall the DHCP Server service.
+This article explains how to perform this procedure and maintain your DHCP
+server settings.
+
+MORE INFORMATION
+================
+
+To ensure that the defined DHCP scope and global properties are not lost, you
+must make a backup copy of the following file before you reinstall DHCP.
+
+  %SystemRoot%\System32\Dhcp\Backup\Dhcpcfg
+
+This file contains a copy of the registry entries for the configuration of the
+DHCP server. The file is automatically updated by the DHCP Manager every time
+the DHCP server is shutdown.
+
+To restore the previous configuration with this file, perform the following
+procedure:
+
+1. Remove and reinstall the Microsoft DHCP Server service.
+
+2. Before restarting, reapply any service packs that are installed.
+
+3. Restart the server to allow the installation to finish.
+
+4. Click the Start button, point to Settings, and then click Control Panel.
+  Double-click the Services icon, and select DHCP server from the Services
+  dialog box. Click Stop, and then click Close.
+
+  WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+  problems that may require you to reinstall Windows NT to correct them.
+  Microsoft cannot guarantee that any problems resulting from the use of
+  Registry Editor can be solved. Use this tool at your own risk.
+
+5. Start Registry Editor (Regedt32.exe) and find the following subkey:
+
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+  \DHCP Server\Configuration
+
+6. Select the Configuration key, then from the Registry menu, click Restore.
+  Type the path to the backup copy of the Dhcpcfg file.
+
+7. Click Yes at the warning message dialog box.
+
+8. Exit Registry Editor.
+
+9. Click the Start button, point to Settings, and then click Control Panel.
+  Double-click the Services icon, and then select DHCP Server in the Services
+  dialog box. Click Start, and then click Close.
+
+The previously defined DHCP properties should now be in place. You may then need
+to reconcile the database information using the steps outlined in the Reconcile
+DHCP Information section in the following article in the Microsoft Knowledge
+base:
+
+  Q173396 How to Restore a Corrupt DHCP Database File
+
+Additional query words: tcp ip tcpip
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

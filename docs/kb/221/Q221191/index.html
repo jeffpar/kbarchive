@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q221191: How to Install/Extract Symbols for Windows NT 4.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q221191: How to Install/Extract Symbols for Windows NT 4.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/221/Q221191/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/221/Q221191/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/221/Q221191/","publisher":null,"image":null,"headline":"Q221191: How to Install/Extract Symbols for Windows NT 4.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q221191-how-to-installextract-symbols-for-windows-nt-40">Q221191: How to Install/Extract Symbols for Windows NT 4.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q221191
+Product(s): Microsoft Windows NT
+Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Operating System(s): 
+Keyword(s): kbfaq
+Last Modified: 10-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3, 4.0 SP4 
+- Microsoft Windows NT Server versions 4.0, 4.0 SP4, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The symbols for Windows NT 4.0 are in a compressed format on the compact disc
+media. The following command and parameters need to be run from the
+Support\Debug folder on the Windows NT Server 4.0 or Windows NT Server 4.0,
+Terminal Server Edition compact disc media:
+
+  expndsym [Windows NT CD (CD-ROM) Drive Letter] [Destination Path]
+
+For example:
+
+  expndsym F: C:\Winnt
+
+MORE INFORMATION
+================
+
+Depending on what service pack is installed on the computer being debugged, the
+service pack symbols needs to be installed/extracted on top of the symbols
+extracted from Windows NT 4.0 base compact disc.
+
+Run SpXsymi.exe or SpXsyma.exe from the Support\Debug folder on the service pack
+compact disc for Intel or Alpha platforms respectively, where X corresponds to
+service pack level; for example, Sp4symi.exe would be SP4 for Intel-based
+computers.
+
+You will be prompted to specify the directory for the extracted files.
+
+You can find the symbols files available for download at the following Web site:
+
+  http://support.microsoft.com/highlights/ntw40.asp
+
+NOTE: The inclusion of the Copydbg.cmd file in Windows NT 4.0 Service Pack 4 is
+intended to pull the new build of some of the debugging modules included in
+Service Pack 3 and copy them and their associated symbols to the destination
+path included in the following command line.
+
+For example, if your CD-ROM is drive E, your debugging tools are in D:\Mytools,
+and your .dbg files are in C:\Winnt\Symbols, type the following line:
+
+  copydbg e: d:\mytools c:\winnt\symbols
+
+Additional query words: symbols debug
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400sp3 kbWinNTS400sp2 kbWinNTS400sp1 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServSearch
+Version           : winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
+Hardware          : ALPHA MIPS x86
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

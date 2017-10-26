@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q101708: Platform Restrictions for MS-DOS-Based Graphics Programs | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q101708: Platform Restrictions for MS-DOS-Based Graphics Programs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/101/Q101708/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/101/Q101708/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/101/Q101708/","publisher":null,"image":null,"headline":"Q101708: Platform Restrictions for MS-DOS-Based Graphics Programs","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q101708-platform-restrictions-for-ms-dos-based-graphics-programs">Q101708: Platform Restrictions for MS-DOS-Based Graphics Programs</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q101708
+Product(s): Microsoft Windows NT
+Version(s): WinNT:3.1,3.5,3.51,4.0
+Operating System(s): 
+Keyword(s): kbhw kbHardware
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.1 
+- Microsoft Windows NT Workstation version 3.1 
+- Microsoft Windows NT Advanced Server, version 3.1 
+- Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+- Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+The text below discusses the hardware platform restrictions Windows NT
+imposes on MS-DOS-based graphics applications.
+
+Intel x86-Based Computers
+-------------------------
+
+An MS-DOS-based graphical application cannot run in a window on a
+computer with an Intel microprocessor. This restriction is caused by
+the overhead involved in trapping register and memory accesses from
+the VGA areas to the VDM (virtual MS-DOS machine) to emulate the
+graphics hardware in software; the graphics performance would be too
+low for the application to be useful. Therefore, when an application
+switches into graphics mode, the VDM switches to full-screen mode.
+
+In full-screen mode, most applications can run with native performance
+directly on the installed video adapter. Windows maps VGA memory to
+the appropriate place in the VDM and maps the relevant registers from
+the application to the video adapter. Note that not all miniports map
+every video card extended register, only enough registers to provide
+VGA compatibility. This behavior may prevent some applications (such
+as IBM PC3270 and Aldus Persuasion Player) from working with all SVGA
+cards. In general, such programs experience the same problems that
+they do running with 16-bit Microsoft Windows version 3.1.
+
+In some cases, an application may work correctly only if you start it
+from a full screen Command Prompt (which you can choose in an
+appropriate program information file [PIF]). This usually occurs
+because the application checks for the installed video card. The check
+fails when the application is in a window because only the standard
+VGA emulation is available to the BIOS; the extensions on the
+installed card are not available.
+
+If you press ALT+ENTER, Windows NT displays a window that contains a
+frozen image of the full-screen window. Windows NT halts the
+application and indicates its halted state by adding "-FROZEN" to the
+window title). If you press ALT+ENTER again, Windows NT resumes the
+program full screen.
+
+
+An application changes to full screen mode only after it has system
+focus. If an application runs in text mode without focus and reaches a
+point where it switches to graphics mode, it does not switch to full
+screen until it receives the focus. Until this occurs, Windows NT adds
+the  "-FROZEN" suffix to the window title.
+
+RISC-Based Computers
+--------------------
+
+A graphical MS-DOS-based application can run in a window on a machine
+with a RISC microprocessor. When the application changes to graphics
+mode, the size of the window changes to maintain the correct aspect
+ratio. The MS-DOS window on a RISC-basic computer emulates a Video
+Seven VGA card. If you see two mouse images while the window is open
+(one the application produces and the Windows NT mouse pointer),
+choose Hide Mouse Pointer from the window system menu and use the
+application mouse pointer. To restore the system pointer image, press
+any system hot key.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : WinNT:3.1,3.5,3.51,4.0
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

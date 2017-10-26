@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q124997: HP PC LAN Adapters Not Listed in Network Client Version 3.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q124997: HP PC LAN Adapters Not Listed in Network Client Version 3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/124/Q124997/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/124/Q124997/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/124/Q124997/","publisher":null,"image":null,"headline":"Q124997: HP PC LAN Adapters Not Listed in Network Client Version 3.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q124997-hp-pc-lan-adapters-not-listed-in-network-client-version-30">Q124997: HP PC LAN Adapters Not Listed in Network Client Version 3.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q124997
+Product(s): Windows for Workgroups and Windows NT Networking Issues
+Version(s): winnt:3.0,3.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 08-AUG-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows NT Server version 3.5 
+- Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the Hewlett-Packard (HP) PC LAN series adapter
+drivers in the Network Client version 3.0 for MS-DOS Setup program, they are not
+available in the list of network adapter drivers. These network adapter drivers
+are shipped with the network operating system and are located in the Windows NT
+Server version 3.5 CD.
+
+CAUSE
+=====
+
+This problem occurs because the HP PC LAN adapter drivers are commented out in
+the NETWORK.INF, SETUP.INF, WCNET.INF and WCSETUP.INF files. WCNET.INF and
+WCSETUP.INF files are pre-Setup files and NETWORK.INF and SETUP.INF are
+post-Setup files.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. If you have not installed Network Client version 3.0 for MS-DOS, modify the
+  WCSETUP.INF file. If you have already installed Network Client, modify the
+  SETUP.INF file. In the [netdrivers] section, remove the semicolon (;) in
+  front of each line and save the file(s):
+
+        ;1=,hplanb.dos,,hplanb.dos,
+        ;1=,hplanp.dos,,hplanp.dos,
+
+2. If you have not installed Network Client version 3.0 for MS-DOS, modify the
+  WCNET.INF file. If you have already installed Network Client, modify the
+  NETWORK.INF file. In the following sections, remove the semicolons (;) in
+  front of each line and save the file:
+
+  [netcard] Section
+  -----------------
+
+        ;ms$hp27250="HP PC LAN Adapter/8 TL (HP27250)", ...
+        ;ms$hp27245="HP PC LAN Adapter/8 TP (HP27245)", ...
+        ;ms$hp27247A="HP PC LAN Adapter/16 TP (HP27247A)", ...
+        ;ms$hp27252="HP PC LAN Adapter/16 TL Plus (HP27252)", ...
+        ;ms$hp27247B="HP PC LAN Adapter/16 TP Plus (HP27247B)", ...
+
+  [ms$HPLANB] Section
+  -------------------
+
+        ;[ms$HPLANB]
+        ;ndis2=1:hplanb.dos
+
+  [ms$hplanb_nif] Section
+  -----------------------
+
+        [ms$hplanb_nif]
+        ;drivername=HPLANB$
+        ;irq=interrupt,,text,"3,4,5,7,9,10,11",3,0x38
+        ;io=ioaddress,,text,"0x200,0x240,0x280,0x2C0,0x300, ...
+        ;param=maxhwtrans,"Maximum Hardware Transmit Packets", ...
+        ;param=maxswtrans,"Maximum Software Transmit Packets", ...
+        ;param=maxmulticast,"Maximum Multicast Addresses", ...
+        ;param=maxicnest,"Max Nesting of Indication Completes", ...
+
+  [ms$HPLANP] Section
+  -------------------
+
+        ;[ms$HPLANP]
+        ;ndis2=1:hplanp.dos
+
+  [ms$hplanp_nif] Section
+  -----------------------
+
+        ;[ms$hplanp_nif]
+        ;drivername=HPLANP$
+        ;irq=interrupt,,text,"3,4,5,7,9,10,11,12,15",3,0x30
+        ;io=ioaddress,,hex,"0x100,0x3A0,0x20",0x300,0x30
+        ;param=MemoryMappedBaseAddress,"Base Memory Address ...
+        ;param=maxhwtrans,"Maximum Hardware Transmit Packets", ...
+        ;param=maxswtrans,"Maximum Software Transmit Packets", ...
+        ;param=maxmulticast,"Maximum Multicast Addresses", ...
+        ;param=maxicnest,"Max Nesting of Indication Completes", ...
+        ;param=aui,"Use AUI Instead of Twisted Pair", text, ...
+
+MORE INFORMATION
+================
+
+HP PC LAN adapters are supported in LAN Manager version 2.x, Workgroup Add- On
+for MS-DOS version 3.11 and Network Client version 3.0 for MS-DOS. The following
+lists supported HP PC LAN adapters:
+
+  HP PC LAN Adapter/8 TL (HP27250)
+  HP PC LAN Adapter/8 TP (HP27245)
+  HP PC LAN Adapter/16 TP (HP27247A)
+  HP PC LAN Adapter/16 TL Plus (HP27252)
+  HP PC LAN Adapter/16 TP Plus (HP27247B)
+
+Additional query words: prodnt 3.00 wgao net
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : winnt:3.0,3.5
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

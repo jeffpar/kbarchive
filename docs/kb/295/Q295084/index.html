@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q295084: SMS: Program Does Not Run if User Is Not Logged On | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q295084: SMS: Program Does Not Run if User Is Not Logged On" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/295/Q295084/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/295/Q295084/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/295/Q295084/","publisher":null,"image":null,"headline":"Q295084: SMS: Program Does Not Run if User Is Not Logged On","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q295084-sms-program-does-not-run-if-user-is-not-logged-on">Q295084: SMS: Program Does Not Run if User Is Not Logged On</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q295084
+Product(s): Microsoft Systems Management Server
+Version(s): 2.0 SP3
+Operating System(s): 
+Keyword(s): kbenv kbtool kbClient kbConfig kbsms200 kbsms200bug kbAdvertisement kbPackage kbSoftwar
+Last Modified: 09-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to send a program that should run whether a user is logged on or
+not and the program properties specify "SMS Restarts computer", the program may
+not run until a user logs on. The following error message may be logged in the
+Smsapm32 log file on the client computer:
+
+  SCHEDULER : Found a job in the scheduled job list with program index 0.
+  SCHEDULER : ODP, dependent program, or program removal data is available for
+  this job.
+  SCHEDULER : The program is available for this job.
+  SCHEDULER : This job needs to be run when a user is logged on.
+  SCHED DATA : This job can execute whether the user is logged on or not.
+  SCHED DATA : Checking if a countdown dialog should be required at this time.
+  SCHEDULER : Checking if a user is actually logged on.
+  SCHEDULER : A user is not logged on to the system.
+  SCHED DATA : This job does not require a countdown dialog.
+  SCHEDULER : The monitor has not yet connected and registered the logged on
+  user.
+  SCHEDULER : This job requires the monitor to present a dialog box.
+  SCHEDULER : Moving this job from the schedule to trigger job list.
+  SCHEDULER : Inserting the job into the Triggered Events list.
+  SCHEDULER : Removing the job from the Scheduled Events list.
+  SCHEDULER : When the user logs on at some time in the future the monitor will
+  be available and this job will be moved back into the schedule job list.
+
+CAUSE
+=====
+
+This problem was introduced in a post Systems Management Server (SMS) version
+2.0 Service Pack 2 (SP2) hotfix. This problem is also noted in Service Pack 3.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+  Q288239 SMS: How to Obtain the Latest Systems Management Server 2.0 Service
+  Pack
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, do not specify "SMS restarts computer" within the
+program properties.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Systems Management Server 2.0 Service Pack 4.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbtool kbClient kbConfig kbsms200 kbsms200bug kbAdvertisement kbPackage kbSoftwareDist kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200SP3
+Version           : :2.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

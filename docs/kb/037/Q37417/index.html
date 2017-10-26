@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q37417: SHELL Statement Loses Current Data in Serial Port Input Buffer | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q37417: SHELL Statement Loses Current Data in Serial Port Input Buffer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/037/Q37417/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/037/Q37417/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/037/Q37417/","publisher":null,"image":null,"headline":"Q37417: SHELL Statement Loses Current Data in Serial Port Input Buffer","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q37417-shell-statement-loses-current-data-in-serial-port-input-buffer">Q37417: SHELL Statement Loses Current Data in Serial Port Input Buffer</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q37417
+Product(s): See article
+Version(s): 4.00 4.00b 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | B_BasicCom buglist4.00 buglist4.00b buglist4.50 | mspl13_basic
+Last Modified: 21-SEP-1990
+
+A SHELL statement will empty the input buffer (thus losing data) of
+the currently opened serial communications port (COM1 or COM2).
+
+Microsoft has confirmed this to be a problem in Microsoft QuickBASIC
+versions 4.00, 4.00b, and 4.50; in Microsoft BASIC Compiler versions
+6.00 and 6.00b (buglist6.00, buglist6.00b); and in Microsoft BASIC
+Professional Development System (PDS) version 7.00 (buglist7.00).
+
+This problem is corrected in Microsoft BASIC PDS 7.10 (fixlist7.10) if
+you compile with BC /O or run in the QBX.EXE environment. However, if
+you compile your program in 7.10 to use the BRT71xxx.EXE run-time
+module (in other words, you don't compile with BC /O), you will still
+lose data in the communications input buffer because the support for
+communications is in the run-time module, and the run-time module is
+released from memory during a SHELL to make more room for other
+programs to load. This is not a problem; it is a design limitation.
+
+To work around the problem, empty the buffer (such as with the INPUT$
+statement) before invoking the SHELL statement to retain information
+that would have been lost.
+
+The following steps reproduce the behavior:
+
+1. Open a serial port (COM1 or COM2).
+
+2. Allow the buffer to be filled.
+
+2. Using the LOC function, print out the number of bytes in the
+   buffer.
+
+3. Execute the SHELL statement with any valid parameter (such as SHELL
+   "DIR").
+
+4. Using the LOC function again, print out the number of bytes in the
+   buffer. This number will be 0 (zero).
+
+The following code will reproduce the above behavior. (Please note
+that the size of the buffer after the SHELL statement will be 0.)
+
+   OPEN "com1:9600" FOR RANDOM AS #1
+   ' This loop will allow data to begin flowing into COM1.
+   ' The loop terminates when an ESC key is pressed.
+   DO UNTIL INKEY$ = CHR$(27)
+   LOOP
+   PRINT "Size of buffer before SHELL statement: ", LOC(1)
+   PRINT
+   PRINT "press any key to shell"
+   WHILE (INKEY$ = ""): WEND
+   SHELL "dir"
+   PRINT "Size of buffer after SHELL statement: ", LOC(1)
+   CLOSE
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

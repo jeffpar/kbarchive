@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q250903: XADM: ‘Fuserext’ Error Appears When You Try to Access Mailbox | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q250903: XADM: ‘Fuserext’ Error Appears When You Try to Access Mailbox" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/250/Q250903/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/250/Q250903/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/250/Q250903/","publisher":null,"image":null,"headline":"Q250903: XADM: ‘Fuserext’ Error Appears When You Try to Access Mailbox","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q250903-xadm-fuserext-error-appears-when-you-try-to-access-mailbox">Q250903: XADM: ‘Fuserext’ Error Appears When You Try to Access Mailbox</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q250903
+Product(s): Microsoft Exchange
+Version(s): winnt:5.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 15-JAN-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you remove the Fenestrae Faxination for Microsoft Exchange program from a
+computer running Microsoft Exchange Server 5.0, you may not be able to gain
+access to recipients' mailboxes. The following error message may appear on your
+screen:
+
+  Extension 'fuserext' could not be loaded.
+  The extension for the Microsoft Exchange Administrator's CPU type has not been
+  installed in the site.
+  ID no:c1031667
+
+CAUSE
+=====
+
+This behavior can occur if the Exchange Administrator program is still calling
+the .dll files for the Faxination connector even though the connector has been
+removed and can no longer be accessed. This is also a result of an incomplete
+removal of the connector.
+
+RESOLUTION
+==========
+
+CAUTION: Using the raw mode of the Exchange Server Administrator program (admin
+/r) incorrectly can cause serious problems that may require you to reinstall
+Microsoft Windows NT Server, Microsoft Exchange Server, or both. Microsoft
+cannot guarantee that problems resulting from the incorrect use of raw mode can
+be solved. Use raw mode at your own risk.
+
+To resolve this behavior, remove the fuserext value from the
+Extension-Name-Inherited attribute in the raw properties of the Recipients
+container of the affected mailbox. Follow these steps:
+
+1. Start the Exchange Administrator program in raw mode:
+
+  a. Start Command Prompt, and use the cd command to change to the Exchsrvr/Bin
+     folder.
+
+  b. Use the admin /r command, and then press ENTER.
+
+2. Click the Recipients container of the affected mailbox, and then click Raw
+  Properties on the File menu.
+
+3. Click Extension-Name-Inherited in the Object Attributes list, delete
+  "fuserext" from the Edit Value box, and then click Set.
+
+  NOTE: If you cannot see Extension-Name-Inherited in the list, select All from
+  the List Attributes Of Type list.
+
+4. Click OK.
+
+5. Before performing any other actions, quit the raw mode of the Exchange
+  Administrator program and restart the Exchange Administrator program in the
+  usual manner.
+
+MORE INFORMATION
+================
+
+If possible, run an Uninstall program for the Faxination connector. If no
+automated uninstall program or method exists for the connector, proceed with the
+following steps:
+
+1. After removing the Faxination connector, verify that all mention of the
+  Faxination software has been removed from the Exchange Server Administrator
+  program:
+
+  a. At the site level, click to expand the Configuration container, and then
+     click to expand the Add-Ins container to confirm that there is no listing
+     of the Faxination software.
+
+  b. At the site level, click to expand the Addressing container, and then
+     click to expand the E-Mail Address Generators container to confirm that
+     there is no listing of the Faxination software.
+
+  c. At the site level, click to expand the Configuration container. Locate the
+     Site Addressing object on the right side, and then open the Site
+     Addressing Properties page. Click the Site Addressing tab and verify that
+     there is no listing of the Faxination proxy. If there is a listing, make
+     sure the Faxination proxy is not selected.
+
+2. Verify that all mention of the Faxination software has been removed from the
+  registry. Check the following registry key for any remaining Faxination
+  subkeys:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+
+Additional query words: fax add-in
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

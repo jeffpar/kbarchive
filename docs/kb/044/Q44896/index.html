@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q44896: Combined Library Much Larger than Components | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q44896: Combined Library Much Larger than Components" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/044/Q44896/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/044/Q44896/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/044/Q44896/","publisher":null,"image":null,"headline":"Q44896: Combined Library Much Larger than Components","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q44896-combined-library-much-larger-than-components">Q44896: Combined Library Much Larger than Components</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q44896
+Product(s): Microsoft Programming Utilities
+Version(s): MS-DOS:3.1,3.11,3.17,3.18,3.2,3.20.010,3.31,3.4; OS/2:3.1,3.11,3.17,3.2
+Operating System(s): 
+Keyword(s): kb16bitonly
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft LIB for MS-DOS, versions 3.1, 3.11, 3.17, 3.18, 3.2, 3.20.010, 3.31, 3.4 
+- Microsoft LIB for OS/2, versions 3.1, 3.11, 3.17, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use LIB.EXE to combine your libraries with a third-party library, the
+resultant library may be much larger than expected. For example:
+
+  LIB1.LIB 5K bytes
+  LIB2.LIB 250K bytes
+
+  LIB1.LIB + LIB2.LIB = 305K bytes
+
+MORE INFORMATION
+================
+
+This size difference may be the result of different page sizes among the
+libraries being combined. The page size of a library affects the alignment of
+modules stored in the library. When libraries with different page sizes are
+combined, the resultant library uses the largest page size from the constituent
+libraries. Thus, the actual increase in file size represents wasted space
+between modules in the library. To reduce the amount of wasted space, you should
+specify a smaller page size for the new library. This may be accomplished by
+using the library manager as follows:
+
+  LIB BIG.LIB /PAGESIZE:16;
+
+This sets the page size for the library BIG.LIB to 16 bytes.
+
+As indicated in the library manager documentation, the page size must be an
+integer power of 2 from 16 to 32,768 bytes.
+
+Additional query words: kbinf 3.20
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbLibSearch kbZNotKeyword3 kbLibMan318DOS kbLibMan310DOS kbLibMan311DOS kbLibMan317DOS kbLibMan320DOS kbLibMan320010DOS kbLibMan331DOS kbLibMan340DOS kbLibMan311OS2 kbLibMan317OS2 kbLibMan320OS2
+Version           : MS-DOS:3.1,3.11,3.17,3.18,3.2,3.20.010,3.31,3.4; OS/2:3.1,3.11,3.17,3.2
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

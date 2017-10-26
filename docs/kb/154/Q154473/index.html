@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q154473: XCLN: Distributing Third-Party OCXs &amp; VBXs with Eform .cfg File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q154473: XCLN: Distributing Third-Party OCXs &amp; VBXs with Eform .cfg File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/154/Q154473/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/154/Q154473/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/154/Q154473/","publisher":null,"image":null,"headline":"Q154473: XCLN: Distributing Third-Party OCXs &amp; VBXs with Eform .cfg File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q154473-xcln-distributing-third-party-ocxs--vbxs-with-eform-cfg-file">Q154473: XCLN: Distributing Third-Party OCXs &amp; VBXs with Eform .cfg File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q154473
+Product(s): Microsoft Exchange
+Version(s): WINDOWS:4.0,5.0
+Operating System(s): 
+Keyword(s): kb3rdparty kbinterop kbusage
+Last Modified: 04-APR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+- Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+- Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you add a custom control to a form that is not included with Visual Basic
+4.0, this file has to be manually copied to the client computer. As stated in
+the "Application Designer's Guide" on page 302, you can distribute third-party
+.ocx and .vbx files by using Microsoft Systems Management Server or other
+network management tools. You can also accomplish this by adding the custom .ocx
+or .vbx file to the .cfg file of the Eform.
+
+MORE INFORMATION
+================
+
+To distribute third-party .ocx and .vbx files, make an entry in the .cfg file as
+follows:
+
+1. Open the EForms's .CFG file in Notepad.
+
+2. If you want this control to be copied for all platforms, add the entry listed
+  below to the [Platform.Platform1] section and use the LinkTo= entry to link
+  all the other platforms to the first platform. Add the following entry to the
+  platform section:
+
+     File#= &lt;CustomControlFileName&gt;.OCX
+
+  The file number is based on how many other File entries are present.
+
+3. Make sure that the .ocx or the .vbx file that is referenced in the File= line
+  is present in the .VB directory of the EForm (Eform.vb). If it is not
+  present, you will receive an error when trying to install the Eform using the
+  .cfg file.
+
+4. Save the EForm's .cfg file.
+
+5. Install the EForm from the client using the EForm's .cfg file.
+
+When the user installs the EForm, the files listed on the File= lines will also
+be copied to the user's machine. These files will be copied to the &lt;Windows
+Directory&gt;\Forms directory, along with the form executable files.
+
+This should be fine for most executable files, but if a custom control needs its
+files in the System subdirectory, they will have to be manually copied to the
+system directory.
+
+This is an example:
+
+[Platforms]
+Platform1=Platform1
+Platform2=Platform2
+Platform3=Platform3
+Platform4=Platform4
+Platform5=Platform5
+Platform6=Platform6
+
+[Platform.Platform1]
+CPU=ix86
+OSVersion=Win3.1
+Registry1=LocalServer=%d\!4!J8N&amp;-.EXE
+File1=!4!J8N&amp;-.EXE
+File2=&lt;CustomControlFileName&gt;.OCX or .VBX  &lt;- This is the Control that is
+to be copied to the &lt;Windows Directory&gt;\Forms directory.
+
+[Platform.Platform2]
+CPU=ix386
+OSVersion=WinNT3.5
+Registry1=LocalServer=%d\!4!J8N&amp;-.EXE
+LinkTo=Platform1  &lt;- With this entry, you do not have the files entries to
+every platform configuration.
+
+NOTE: These FILE= references can also be used for any other file that may need to
+be copied with the EForm executable files. For instance, any .ini files or any
+other supporting files can be added in this manner.
+
+REFERENCES
+==========
+
+For additional Information about the EForm Configuration File, please refer to
+Chapter 9, pages 297-302 and Appendix B, pages 363-371 of the Application
+Designer's Guide.
+
+Additional query words: forms E-form electronic
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

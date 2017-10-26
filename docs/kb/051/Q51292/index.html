@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q51292: PRINT SPC(n) USING on Array Element, Bad Results | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q51292: PRINT SPC(n) USING on Array Element, Bad Results" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/051/Q51292/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/051/Q51292/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/051/Q51292/","publisher":null,"image":null,"headline":"Q51292: PRINT SPC(n) USING on Array Element, Bad Results","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q51292-print-spcn-using-on-array-element-bad-results">Q51292: PRINT SPC(n) USING on Array Element, Bad Results</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q51292
+Product(s): See article
+Version(s): 4.00 4.50
+Operating System(s): MS-DOS
+Keyword(s): ENDUSER | SR# S891110-96 buglist4.00 buglist4.50 fixlist4.00b | mspl13_basic
+Last Modified: 13-DEC-1989
+
+The following code example demonstrates that using the SPC(n) function
+with the PRINT USING statement on an element of an array ($DYNAMIC or
+$STATIC) produces incorrect results with BC.EXE compiler Versions 4.00
+and 4.50. This problem does not occur in BC.EXE provided with
+QuickBASIC 4.00b or with the BASIC compiler 6.00 or 6.00b. This
+problem does not occur in the QB.EXE 4.00, 4.00b, and 4.50 editors.
+This problem does not occur in BC.EXE or QBX.EXE provided with
+Microsoft BASIC PDS Version 7.00 (fixlist7.00).
+
+The code example produces incorrect output when compiled with BC.EXE
+Version 4.50. Compiled with BC.EXE Version 4.00, it produces the error
+"Type mismatch in line 40 of module &lt;filename&gt; at address xxxx:xxxx".
+
+This problem occurs with either dynamic or static arrays. Compiling
+with the /AH switch does NOT correct the problem in either Version
+4.00 or 4.50.
+
+There are several workarounds to this problem. The easiest workaround
+is to use a literal such as " " or to use a function such as
+STRING(n, " "), which produces the same results as using the SPC(n)
+function. For example,
+
+    PRINT ; STRING$(1, " ") ; USING ........
+
+is the equivalent of
+
+    PRINT ; SPC(1) ; USING .......
+
+The above workaround will work in Version 4.00 or 4.50. However, in
+Version 4.50 the problem also does not occur if you compile with
+either the /d or /x options as follows:
+
+1. In the QB.EXE editor, choose to "Produce Debug Code".
+
+2. On the BC.EXE compile line use /D.
+
+The problem also does not occur if you use error trapping. This is
+done by including an ON ERROR GOTO and RESUME in the program. On the
+BC.EXE command line, include the /X compiler option. No combination of
+compiler switches corrects the problem for Version 4.00.
+
+Code Example
+------------
+
+' This code example can be used to reproduce the problem.
+' Do not include error trapping or produce debug code.
+REM $DYNAMIC
+CLS
+DEFINT A-Z
+TYPE Rec1
+       F1 AS STRING * 15
+       F2 AS INTEGER
+       F3 AS INTEGER
+       F4 AS INTEGER
+       F5 AS INTEGER
+       F6 AS INTEGER
+       F7 AS INTEGER
+       F8 AS INTEGER
+END TYPE
+DIM a1(2) AS Rec1
+FOR k = 1 TO 2
+       READ a1(k).F1
+       READ a1(k).F2
+       READ a1(k).F3
+       READ a1(k).F4
+       READ a1(k).F5
+       READ a1(k).F6
+       READ a1(k).F8
+       a1(k).F7 = a1(k).F5 - a1(k).F6
+NEXT k
+Col = 12
+LOCATE , Col
+PRINT "  PGM=M1   A           B   C   D   E    F     G    H    J"
+LOCATE , Col
+PRINT STRING$(60, 196)
+10 FOR k = 1 TO 2
+20     LOCATE , Col
+30     PRINT SPC(1); USING "###"; k;
+40     PRINT ".";
+50     PRINT ; a1(k).F1;
+60     PRINT ; SPC(1); USING "###"; a1(k).F2 + a1(k).F3 + a1(k).F4;
+70     PRINT ; SPC(1); USING "###"; a1(k).F2;
+80
+'********************************************************************
+90      PRINT ; SPC(1); USING "###"; a1(k).F3; ' Error occurs here.
+100     PRINT ; SPC(1); USING "###"; a1(k).F4; ' Error occurs here.
+110
+120
+'********************************************************************
+130     PRINT ; SPC(1); USING "####"; a1(k).F5;
+140     PRINT " :";
+150      PRINT ; SPC(1); USING "###"; a1(k).F6;
+160     PRINT ; SPC(1); USING "####"; a1(k).F7;
+170     PRINT ; SPC(1); USING "####"; a1(k).F8
+180 NEXT k
+190 END
+
+DATA "Club 01   ",  2, 0, 9, 33, 57,  4
+DATA "Club 02   ",  3, 2, 6, 45, 17,  4
+END
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

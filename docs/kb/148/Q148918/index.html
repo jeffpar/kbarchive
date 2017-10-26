@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q148918: How to Capitalize Some Characters in a Text Box Automatically | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q148918: How to Capitalize Some Characters in a Text Box Automatically" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/148/Q148918/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/148/Q148918/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/148/Q148918/","publisher":null,"image":null,"headline":"Q148918: How to Capitalize Some Characters in a Text Box Automatically","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q148918-how-to-capitalize-some-characters-in-a-text-box-automatically">Q148918: How to Capitalize Some Characters in a Text Box Automatically</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q148918
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:3.0,3.0b
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 10-FEB-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When typing names into a text box, you can have the first letter of each word
+automatically capitalized. This can be done in the KeyPress event by checking
+each character that is typed and capitalizing it if it is the first character
+entered or if the character before it is blank. Names such as "Van Camp" would
+have the first letter of each part of the name automatically capitalized.
+However, names like "MacDonald" would still require that you manually capitalize
+the D key.
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedure
+----------------------
+
+The following steps illustrate how to use the KeyPress event to check each
+character and enforce the rule that the first character of each word be
+capitalized.
+
+1. Create a new form, and place a text box on it.
+
+2. Create a new property for the form. On the Form menu, click New Property, and
+  in the Name box, type Lastchar. Click OK, and return to the form.
+
+3. In the When Event of the text box, place the following code:
+
+        THISFORM.lastchar = 32
+
+  This assigns the numeric value of a space (32) to the lastchar variable.
+
+4. In the KeyPress event of the text box, place the following code:
+
+    IF THISFORM.lastchar = 32   &amp;&amp; Checks lastchar to see if it is
+                                 &amp;&amp; equal the numeric value of a space.
+         NODEFAULT               &amp;&amp; Doesn't allow the character to be
+                                 &amp;&amp; entered because it is lowercase.
+         KEYBOARD UPPER(CHR(nKeyCode))  &amp;&amp; Places the character into the
+                                        &amp;&amp; text box in uppercase.
+     ENDIF
+     IF nKeyCode=127 AND LEN(ALLTRIM(this.value))=1  &amp;&amp;  Checks to see if
+                                     &amp;&amp; the user has backspaced over
+                                     &amp;&amp; the first letter in the text box.
+         THISFORM.lastchar=32        &amp;&amp; Assigns numeric value of a space
+                                     &amp;&amp; to lastchar.
+     ELSE
+         THISFORM.lastchar= nKeyCode &amp;&amp; Assigns last keystroke to Lastchar
+     ENDIF
+
+5. Run the form, and type the following into the text box:
+
+  " van camp " (without the quotation marks)
+
+  Note that the V and C are automatically capitalized.
+
+6. Backspace over the whole name, and start typing another name. Note that the
+  first character is automatically capitalized as a new name is typed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190540: FIX: SELECT-SQL with Subselects in WHERE Clause Stops VFP | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190540: FIX: SELECT-SQL with Subselects in WHERE Clause Stops VFP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190540/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190540/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190540/","publisher":null,"image":null,"headline":"Q190540: FIX: SELECT-SQL with Subselects in WHERE Clause Stops VFP","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190540-fix-select-sql-with-subselects-in-where-clause-stops-vfp">Q190540: FIX: SELECT-SQL with Subselects in WHERE Clause Stops VFP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190540
+Product(s): Microsoft FoxPro
+Version(s): WINDOWS:5.0,5.0a
+Operating System(s): 
+Keyword(s): kberrmsg
+Last Modified: 10-FEB-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you execute a SELECT-SQL statement, which uses a subquery, when the SELECT
+executes, Visual FoxPro exits with an Access Violation (under Windows NT) or an
+Invalid Page Fault (Windows 95).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+NOTE: The following causes Visual FoxPro to exit, and you could lose unsaved
+data.
+
+Run the following code from a program (.prg) file:
+
+  CREATE CURSOR cc (KEYF N(1), inr N(3), DATE d)
+  INSERT INTO cc VALUES (1, 234, DATE())
+  INSERT INTO cc VALUES (1, 252, DATE()+1)
+  INSERT INTO cc VALUES (1, 45, DATE()+2)
+  INSERT INTO cc VALUES (1, 40, DATE() - 2)
+  INSERT INTO cc VALUES (1, 50, DATE() - 2)
+  SELECT MAX(inr) AS mx, MIN(inr) AS mn FROM cc INTO CURSOR q1
+  SELECT v1.DATE, v1.inr, ;
+
+  v2.DATE, v2.inr, ;
+  v1.DATE - v2.DATE AS days, ;
+  v1.inr - v2.inr AS net ;
+  FROM cc v1, cc v2 ;
+  WHERE v1.inr = (SELECT mx FROM q1);
+  AND v2.inr = (SELECT mn FROM q1)
+
+Under Windows NT 4.0, Visual FoxPro terminates on the SELECT statement with an
+error like the following:
+
+  vfp.exe
+  Exception: access violation (0xc0000005), Address 0x0044817c
+
+Under Windows 95, Visual FoxPro terminates on the SELECT statement with an error
+like the following:
+
+  VFP caused an invalid page fault in module VFP.EXE at 0137:00440940.
+
+The address (either the 0x0044817c or 0137:00440940 in the preceding example)
+will vary with the specific Visual FoxPro 5.0x build number.
+
+The error does not occur in Visual FoxPro 3.0x and one record is returned.
+
+Workaround
+----------
+
+Adding the IN clause prevents the error from occurring. Here is a possible work
+around for this problem:
+
+  CREATE CURSOR cc (KEYF N(1), inr N(3), DATE d)
+  INSERT INTO cc VALUES (1, 234, DATE())
+  INSERT INTO cc VALUES (1, 252, DATE()+1)
+  INSERT INTO cc VALUES (1, 45, DATE()+2)
+  INSERT INTO cc VALUES (1, 40, DATE() - 2)
+  INSERT INTO cc VALUES (1, 50, DATE() - 2)
+  SELECT MAX(inr) AS mx, MIN(inr) AS mn FROM cc INTO CURSOR q1
+  SELECT v1.DATE, v1.inr, ;
+
+    v2.DATE, v2.inr, ;
+    v1.DATE - v2.DATE AS days, ;
+    v1.inr - v2.inr AS net ;
+    FROM cc v1, cc v2 ;
+    WHERE v1.inr IN (SELECT mx FROM q1);
+    AND v2.inr IN (SELECT mn FROM q1)
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation
+
+
+Additional query words: kbvfp500bug kbVFp500abug kbSQL kbvfp600fix kbdse kbcode
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q185980: WD97: Selected Text Not Visible or Offset in Some Dialog Boxes | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q185980: WD97: Selected Text Not Visible or Offset in Some Dialog Boxes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/185/Q185980/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/185/Q185980/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/185/Q185980/","publisher":null,"image":null,"headline":"Q185980: WD97: Selected Text Not Visible or Offset in Some Dialog Boxes","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q185980-wd97-selected-text-not-visible-or-offset-in-some-dialog-boxes">Q185980: WD97: Selected Text Not Visible or Offset in Some Dialog Boxes</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q185980
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbdta word97
+Last Modified: 14-NOV-2000
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to mark an index or citation entry, or add an AutoCorrect entry,
+you cannot see the insertion point or the text you selected (or you can only see
+a portion of the text) in the Mark Index Entry, Mark Citation, or AutoCorrect
+dialog box.
+
+The following text boxes in these dialog boxes may exhibit this behavior.
+
+Mark Index Entry Dialog Box
+---------------------------
+
+  Main Entry
+  SubEntry
+  Cross Reference
+
+Mark Citation Dialog Box
+------------------------
+
+  Selected Text
+  Long Citation
+
+AutoCorrect
+-----------
+
+  With: (When the Formatted Text option button is selected.)
+
+CAUSE
+=====
+
+This problem may occur when the paragraph formatting of the Normal style (the
+default style in Word) includes settings for one or more of the following
+paragraph attributes:
+
+  Indentation
+  Spacing Before or After
+  Line Spacing
+
+For example, this problem may occur if the paragraph formatting of the Normal
+style has a Spacing Before setting of 6pt (points) or higher.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods:
+
+- Create a custom style, or modify an existing style to duplicate the paragraph
+  formatting attributes of the Normal style, and apply this style to text
+  formatted with the Normal style.
+
+  -or-
+
+- Modify the Normal style to remove the paragraph formatting related to this
+  problem (mentioned in the "Cause" section of this article).
+
+For more information about creating and editing styles, click Contents And Index
+on the Help menu, click the Index tab in Word Help, type the following text
+
+  " styles, creating and editing" (without the quotation marks)
+
+and then double-click the selected text to go to the "Create new styles" or
+"Changing" topic. If you are unable to find the information you need, ask the
+Office Assistant.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in Word 2000.
+
+MORE INFORMATION
+================
+
+To demonstrate this behavior, set an entry using any of the following options:
+
+- Mark an index entry, (on the Insert menu, click Index And Tables, and then
+  click Mark Entry on the Index tab).
+
+  -or-
+
+- Mark a citation entry, (on the Insert menu click Index And Tables, and then
+  click Mark Citation on the Table Of Authorities tab).
+
+  -or-
+
+- Add an AutoCorrect entry, (on the Tools menu, click AutoCorrect).
+
+Additional query words: crooked insertion point missing gone disappear disappeared cut off truncated invisible cannot see
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q315589: Games: Err Msg: Not a Valid Win32 Application | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q315589: Games: Err Msg: Not a Valid Win32 Application" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/315/Q315589/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/315/Q315589/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/315/Q315589/","publisher":null,"image":null,"headline":"Q315589: Games: Err Msg: Not a Valid Win32 Application","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q315589-games-err-msg-not-a-valid-win32-application">Q315589: Games: Err Msg: Not a Valid Win32 Application</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q315589
+Product(s): Microsoft Home Games
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): kberrmsg kbimu
+Last Modified: 29-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Bicycle Board Games Version 1.5 
+- Microsoft Bicycle Card Games Version 1.0 
+- Microsoft Dungeon Siege, version 1.0 
+- Microsoft Flight Simulator 2002 
+- Microsoft Flight Simulator 2002 Professional Edition 
+- Microsoft Train Simulator, version 1.0 
+- Microsoft Zoo Tycoon 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start any of the Microsoft games listed at the beginning of this
+article, you may receive an error message similar to one of the following:
+
+  &lt;game&gt;.exe is Not a Valid Win32 Application.
+
+  -or-
+
+  A black command prompt box flashes on the screen.
+
+  -or-
+
+  When running in a command prompt, the text: Program too big to fit in memory.
+
+CAUSE
+=====
+
+This behavior can occur if your game's installation is damaged (corrupted).
+
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order presented.
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please see your product documentation
+to complete these steps.
+
+Uninstall the Game
+------------------
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. In the list of installed programs, click the game, and then click Add/Remove.
+
+4. When you are prompted to uninstall the program, click Yes.
+
+5. When the uninstall process is complete, click Start, point to Find, and then
+  click Files or Folders.
+
+6. In the Named box, type "DungeonSiege.exe", "fs2002.exe", "train.exe", or
+  "zoo.exe" (including the quotation marks).
+
+  NOTE: The name of the executable you type in will depend on what game you have
+  installed. The executable names match the following games:
+
+  Dungeon Siege = "DungeonSiege.exe"
+  Flight Simulator 2002 = "fs2002.exe"
+  Train Simulator = "train.exe"
+  Zoo Tycoon = "zoo.exe"
+
+7. In the Look In box, click the hard disk on which you installed the game, and
+  then click Find Now.
+
+8. In the list of found files and folders, right-click the game executable file,
+  and then click Delete.
+
+If you are prompted to confirm the deletion, click Yes or Yes to all.
+
+Empty the Temp Folder
+---------------------
+
+To empty the Temp folder and the Temporary Internet Files folder, use the Disk
+Cleanup tool. To do this, follow these steps:
+
+1. Click Start, point to Programs, point to Accessories, point to System Tools,
+  and then click Disk Cleanup.
+
+2. Click C: (or whatever drive on which Windows is installed), and then click
+  OK.
+
+3. Click to select the "Temporary files" check box.
+
+4. Click OK, and then click Yes to confirm the deletion.
+
+Restart Your Computer by Performing a Clean Boot
+------------------------------------------------
+
+To perform a clean boot, follow the steps appropriate to your version of
+Microsoft Windows.
+
+
+Microsoft Windows XP
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+  Q310353 How to Perform a Clean Boot in Windows XP
+
+Microsoft Windows Millennium Edition (Me)
+
+1. Click Start, click Run, type "msconfig" (without the quotation marks) in the
+  Open box, and then click OK.
+
+2. On the General tab, click "Selective startup".
+
+3. Click to clear all of the check boxes under "Selective startup".
+
+4. On the Startup tab, click to select the "*StateMgr" check box.
+
+
+5. Click OK. When you receive the message to restart your computer, click Yes.
+  After the computer restarts, click Start, click Run, type "msconfig" (without
+  the quotation marks) in the Open box, and then click OK.
+
+  IMPORTANT: Look closely at the General tab to ensure that the check boxes that
+  you cleared are still cleared. If none of the check boxes are selected,
+  proceed to the following method. If you see a selected, unavailable check box
+  (it appears dimmed and has a check mark in it), your computer is not truly
+  "clean-booted," and you may need to contact the manufacturer of the program
+  that is listed next to the selected, unavailable check box for assistance.
+
+Microsoft Windows 98
+
+1. Click Start, point to Programs, point to Accessories, point to System Tools,
+  and then click System Information.
+
+2. On the Tools menu, click System Configuration Utility.
+
+3. On the General tab, click Selective Startup, and then click to clear the
+  following check boxes:
+
+   - Process Config.sys file
+   - Process Autoexec.bat file
+   - Process Winstart.bat file (if available)
+   - Process Win.ini file
+   - Load Startup group items
+
+4. Click OK. When you are prompted to restart the computer, do so.
+
+NOTE: To restore your original Startup options, click Normal Startup on the
+General tab in the System Configuration Utility tool.
+
+Reinstall the Game
+------------------
+
+To reinstall the game, follow these steps:
+
+1. Insert the game CD-ROM into your computer's CD-ROM or DVD-ROM drive.
+
+  If the Setup program does not start automatically, follow these steps:
+
+  a. Click Start, and then click Run.
+
+  b. In the Open box, type "&lt;cd-rom&gt;:\setup.exe" (without the quotation
+     marks), where &lt;cd-rom&gt; is the letter of your computer's CD-ROM or
+     DVD-ROM drive.
+
+  c. Click OK.
+
+2. Follow the instructions on the screen to install the game.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbFlightSimSearch _IK kbDungeonSiege kbTrainSim kbBicycleCard100 kbBicycleSearch kbBicycleBoard150 kbFlightSim2002 kbFlightSim2002Pro kbZooTycoon kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

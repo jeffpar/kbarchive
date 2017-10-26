@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q166466: Err Msg: Setup Found a Compressed Volume or a Disk-Cache Utility | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q166466: Err Msg: Setup Found a Compressed Volume or a Disk-Cache Utility" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/166/Q166466/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/166/Q166466/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/166/Q166466/","publisher":null,"image":null,"headline":"Q166466: Err Msg: Setup Found a Compressed Volume or a Disk-Cache Utility","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q166466-err-msg-setup-found-a-compressed-volume-or-a-disk-cache-utility">Q166466: Err Msg: Setup Found a Compressed Volume or a Disk-Cache Utility</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q166466
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): 1,2,2.1
+Operating System(s): 
+Keyword(s): kberrmsg kbsetup osr1 osr2 win95
+Last Modified: 02-FEB-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows 95 
+- Microsoft Windows 95 OEM Service Release, versions 1, 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Setup for the retail (non-OSR2) version of Windows 95 and try to
+install Windows 95 in a folder containing an OEM Service Release version of
+Windows 95, you may receive the following error message:
+
+  Windows Setup
+  Setup found a compressed volume or a disk-cache utility on your computer. Quit
+  setup and check your compressed volume with your disk- compression software
+  or remove the disk-cache utility. Then run Setup again.
+
+This error message can also occur if you start your computer using a Microsoft
+Windows 98 Startup disk, enable CD-ROM support, and then attempt to install
+Windows 95.
+
+If you continue trying to install Windows 95 on a hard disk using the FAT32 file
+system, you may receive error message "SU-0013."
+
+If you are installing Windows 95 on a hard disk using the FAT16 file system,
+Setup continues but experiences numerous file version conflicts that generate
+the following message:
+
+  A file being copied is older than the file currently on your computer.
+  It is recommended that you keep your existing file.
+
+If you click Yes to keep the newer files, Setup finishes, but when you restart
+the computer you may experience any of the following symptoms:
+
+- The computer stops responding (hangs) at the logo screen.
+
+- You receive the error message "Fatal Exception 0D has occurred at
+  0117:00007E1F."
+
+Starting Windows 95 in Safe mode may generate the following error message:
+
+  Fatal Exception 0D has occurred at 0117:00007E1F.
+
+CAUSE
+=====
+
+The version of Windows 95 being installed is not the same version that is
+already installed.
+
+To verify the version you are installing, type "ver" at a command prompt. Version
+4.00.950 (files dated 7-11-95)is retail and OEM (non-OSR2). Version 4.00.1111
+(files dated 8-24-96) indicates Windows 95 OEM Service Release 2 (OSR2).
+
+RESOLUTION
+==========
+
+Do not install the retail or OEM (non-OSR2) version of Windows 95 into an
+existing Windows 95 OSR2 folder. If you are installing to a hard disk using the
+FAT16 file system, install to a different folder. Do not install the retail or
+OEM (non-OSR2) version of Windows 95 on a hard disk using the FAT32 file system.
+
+MORE INFORMATION
+================
+
+When you attempt to install the retail version of Windows 95 from the Windows 95
+CD-ROM on a computer with OSR2 installed with the Auto Insert Notification
+option enabled, the Add/Remove Software option on the Autorun menu is disabled.
+You receive the following warning:
+
+  This CD-ROM is from an older version of Windows than the one you are
+  presently using. Setup functionality from this disk will be disabled.
+
+A warning does not appear if:
+
+- You are installing from a CD-ROM but the Auto Insert Notification option is
+  disabled.
+
+- You browse the Windows 95 CD-ROM and you double-click Setup.exe.
+
+- You run Setup from the Run dialog box.
+
+You should reinstall OSR2 using the OSR2 CD-ROM provided by your OEM. If an OSR2
+CD-ROM was not provided to you by your OEM, the OSR2 files may have been
+provided in a flat folder on your hard disk. To locate this folder, type the
+following command at a command prompt:
+
+  "dir *.cab /s" (without the quotation marks)
+
+To reinstall OSR2, run Setup.exe from the folder containing the OSR2 cabinet
+(.cab) files.
+
+Contact your OEM for assistance if:
+
+- You do not have an OSR2 CD-ROM and you cannot locate a folder with the
+  cabinet files.
+
+- You cannot locate the Setup.exe file in the folder that contains the cabinet
+  files.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup osr1 osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR1 kbWin95OPKOSR210
+Version           : :1,2,2.1
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q199244: HOWTO: Retrieve the Regional Settings Currency Symbol | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q199244: HOWTO: Retrieve the Regional Settings Currency Symbol" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/199/Q199244/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/199/Q199244/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/199/Q199244/","publisher":null,"image":null,"headline":"Q199244: HOWTO: Retrieve the Regional Settings Currency Symbol","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q199244-howto-retrieve-the-regional-settings-currency-symbol">Q199244: HOWTO: Retrieve the Regional Settings Currency Symbol</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q199244
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 4.0,5.0,6.0
+Operating System(s): 
+Keyword(s): kbAPI kbVBp kbGrpDSVBDB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+32-bit Visual Basic applications that are distributed in more than one country
+must rely upon the Regional Settings specifications of the Windows Control Panel
+for retrieving the appropriate currency symbol to display to the user.
+Retrieving the currency symbol involves calling the GetLocaleInfo function from
+the 32-bit Windows API function library.
+
+MORE INFORMATION
+================
+
+The following code can be used to retrieve the currency symbol as specified in
+the Regional Settings of the Windows Control Panel. The GetUserDefaultLCID()
+function retrieves the default locale for the current user and the
+GetLocaleInfo() function retrieves information relating to the specified locale.
+Keep in mind that Visual Basic 6.0 has built in functions to automatically
+format numbers with the currency symbol as specified in the Control Panel's
+Regional Settings. While this code works in Visual Basic 6.0, the primary
+audience for this article are 32-bit Visual Basic 4.0 and Visual Basic 5.0
+developers.
+
+Executing this code stores the user default currency symbol in the Symbol
+string:
+
+     Option Explicit
+     Private Declare Function GetLocaleInfo Lib "kernel32" _
+        Alias "GetLocaleInfoA" (ByVal Locale As Long, _
+        ByVal LCType As Long, ByVal lpLCData As String, _
+        ByVal cchData As Long) As Long
+     Private Declare Function GetUserDefaultLCID% Lib "kernel32" ()
+     Private Const LOCALE_SCURRENCY = &amp;H14
+
+     Dim Symbol As String
+     Dim iRet1 As Long
+     Dim iRet2 As Long
+     Dim lpLCDataVar As String
+     Dim Pos As Integer
+     Dim Locale as Long
+     
+     Locale = GetUserDefaultLCID() 
+     iRet1 = GetLocaleInfo(Locale, LOCALE_SCURRENCY, lpLCDataVar, 0)
+     
+     Symbol = String$(iRet1, 0)
+     iRet2 = GetLocaleInfo(Locale, LOCALE_SCURRENCY, Symbol, iRet1)
+     Pos = InStr(Symbol, Chr$(0))
+     If Pos &gt; 0 Then
+        Symbol = Left$(Symbol, Pos - 1)
+     End If
+
+REFERENCES
+==========
+
+For additional information about how to use API functions from within Visual
+Basic, click the article numbers below to view the articles in the Microsoft
+Knowledge Base:
+
+  Q145679 HOWTO: Use the Registry API to Save and Retrieve Setting
+
+
+For information on how to use the API Viewer add-in that ships with Visual Basic,
+please see "Accessing The Microsoft Windows API" in the Visual Basic Books
+Online.
+For more information about locale identifiers, please see "Visual Basic
+Programmer's Guide to the Win32 API", by Daniel Appleman, PC Magazine Press
+
+Additional query words: currency symbol regional settings locale
+
+======================================================================
+Keywords          : kbAPI kbVBp kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

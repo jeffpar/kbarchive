@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q311948: SNA LU6.2 Resync TP Service Logs Event 131 and Fails to Start | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q311948: SNA LU6.2 Resync TP Service Logs Event 131 and Fails to Start" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/311/Q311948/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/311/Q311948/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/311/Q311948/","publisher":null,"image":null,"headline":"Q311948: SNA LU6.2 Resync TP Service Logs Event 131 and Fails to Start","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q311948-sna-lu62-resync-tp-service-logs-event-131-and-fails-to-start">Q311948: SNA LU6.2 Resync TP Service Logs Event 131 and Fails to Start</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q311948
+Product(s): Microsoft SNA Server
+Version(s): 
+Operating System(s): 
+Keyword(s): kbDSupport kbhis2000
+Last Modified: 09-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SNA LU6.2 Resync TP service (Resyncsvc.exe) fails to start on a Host
+Integration Server (HIS) 2000 server that is operating in client mode when
+configured to connect to an SNA Server 4.0 system. In addition, the following
+event will be logged in the Application Event Log on the HIS 2000 system:
+
+  Event ID: 131
+  Source: SNA LU6.2 Resync TP
+  Description: (131) The Resynchronization Service was unable to initialize
+  interfaces to the WMI Provider.
+
+  EXPLANATION
+  The Resynchronization Service encountered HRESULT 8004100E when trying to
+  obtain SNA configuration information from the Host Integration Server WMI
+  namespace. The service is unable to initialize its environment and prepare
+  for transactions. This may indicate that the primary SNA configuration server
+  or other SNA server service has become inactive or unreachable on the
+  network, or that the Host Integration Server was not installed properly.
+
+The HRESULT listed in the explanation of the Event 131 may vary. The following
+are common HRESULT errors that may be returned:
+
+- 8004100E - WBEM_E_INVALID_NAMESPACE
+
+- 80040154 - REGDB_E_CLASSNOTREG
+
+CAUSE
+=====
+
+The SNA LU6.2 Resync TP in HIS 2000 needs to read the HIS 2000 configuration
+file (COM.cfg) to determine which Advanced Program-to-Program Communications
+(APPC) Logical Units (LUs) are configured for SyncPoint support. The SNA LU6.2
+Resync TP is designed to use Windows Management Instrumentation (WMI) to read
+the HIS 2000 configuration.
+
+SNA Server 4.0 (and earlier) does not support WMI, so the SNA LU6.2 Resync TP is
+unable to read an SNA Server 4.0 configuration to obtain the APPC LU information
+that it requires. This results in the Event 131 and the service's failure to
+start.
+
+This behavior is by design since SNA Server 4.0 and ealier do not support WMI.
+
+STATUS
+======
+
+This behavior is by design because SNA Server 4.0 (and earlier) does not support
+WMI.
+
+MORE INFORMATION
+================
+
+The SNA LU6.2 Resync TP service works with Distributed Transaction Coordinator
+(DTC) to perform automatic recovery to a consistent state in the face of
+failures at any point in a two-phase commit (2PC) transaction.
+
+The SNA LU6.2 Resync TP service is installed by default when an HIS 2000 Server
+is installed. This service is not available when you install either the HIS 2000
+End-User Client or the HIS 2000 Admin Client.
+
+An HIS 2000 Server can be installed in client (or "Nodeless") mode if the SNA
+Service component under "SNA Application Support" is deselected during the
+installation process. The SNA LU6.2 Resync TP service is still installed when
+you are installing HIS 2000 Server in client mode.
+
+When HIS 2000 Server is installed in client mode, the SNA Resource Location
+Wizard will be presented at the end of the installation process to allow the HIS
+2000 Server in client mode to be configured to locate an HIS 2000 or SNA Server
+server. If the HIS 2000 server in client mode is configured to connect to an SNA
+Server 4.0 system, the SNA LU6.2 Resync TP service will fail to start as
+described previously.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbhis2000 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

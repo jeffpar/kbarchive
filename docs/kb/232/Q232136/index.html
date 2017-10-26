@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q232136: How to Back Up a Server Certificate in IIS 5.0 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q232136: How to Back Up a Server Certificate in IIS 5.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/232/Q232136/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/232/Q232136/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/232/Q232136/","publisher":null,"image":null,"headline":"Q232136: How to Back Up a Server Certificate in IIS 5.0","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q232136-how-to-back-up-a-server-certificate-in-iis-50">Q232136: How to Back Up a Server Certificate in IIS 5.0</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q232136
+Product(s): Internet Information Server
+Version(s): 5.0
+Operating System(s): 
+Keyword(s): kbAudITPro kbHOWTOmaster
+Last Modified: 05-APR-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+- SUMMARY
+
+   - Create an MMC Snap-in for Managing Certificates
+- Export a Certificate and Public Key
+- Troubleshooting
+
+- REFERENCES
+
+SUMMARY
+=======
+
+When you use Internet Information Services (IIS) 5.0, you may want to back up
+your server certificate(s). Windows 2000 makes this process easy using the new
+Certificates snap-in.
+
+Create an MMC Snap-in for Managing Certificates
+-----------------------------------------------
+
+In order to perform the backup, you must first create a new MMC and add the
+Certificates snap-in. You can also add the snap-in to another MMC as long as it
+is opened in Author mode.
+
+Use the following steps to create a new MMC and add the Certificates snap-in:
+
+1. Click Start , and then click Run.
+
+2. Type in "MMC.EXE" (without the quotation marks) and click OK.
+
+3. Click Console in the new MMC you created, and then click Add/Remove Snap-in.
+
+4. In the new window that appears, click Add.
+
+5. Highlight Certificates , and then click Add.
+
+6. Choose the Computer account option and click Next.
+
+7. Select Local Computer on the next screen, and then click OK.
+
+8. Click Close , and then click OK.
+
+You have now added the Certificates snap-in, which will allow you to work with
+any certificates in your computer's certificate store. You may want to save this
+MMC for later use.
+
+Export a Certificate and Public Key
+-----------------------------------
+
+Now that you have added the Certificates snap-in, you can export the key pair
+that your Web server is using (the certificate and public key). To do this,
+perform the following steps:
+
+1. Open the Certificates (Local Computer) snap-in you added in the last section,
+  navigate to Personal, and then to Certificates.
+
+2. You will see your Web server certificate denoted by the CN (Common Name)
+  found in the Subject field of the certificate (using Internet Explorer 5.0,
+  you can easily view the certificate to see the Common Name if you are
+  unsure).
+
+3. Right-click on the server certificate, select All Tasks, and then click
+  Export.
+
+4. When the wizard starts, click Next. Choose to export the private key, and
+  then click Next.
+
+NOTE: If you export the certificate for use on an IIS Web server, do not select
+Require Strong Encryption. This option causes a password prompt every time an
+application attempts to access the private key, and causes IIS to fail.
+
+5. The file format you will want to choose is the Personal Information Exchange
+  (though you can select from several options). This will create a PFX file.
+  Notice that you can export any certificates in the certification path by
+  selecting the option on this screen. This is very handy if your certificate
+  was issued by a non-trusted certificate authority (for example, Microsoft
+  Certificate Server). Only choose delete the private key if the export is
+  successful to be sure it is not left on the computer (for example if your
+  migrating from one server to another).
+
+NOTE: If you do not select "Include all certificates in the certificate path if
+possible" and the issuer of the certificate is not trusted by your server, then
+you may notice that when the properties of the certificate are viewed, the "This
+certificate is issued to:" field may display "Windows does not have enough
+information about this certificate". This is by design and can be resolved by
+selecting "Include all certificates in the certificate path" while exporting the
+certificate.
+
+6. Click Next, and then choose a password to protect the PFX file. You will need
+  to enter the same password twice to ensure that the password is typed
+  correctly. When you have completed this step, click Next.
+
+7. Choose the file name you want to save this as. Do not include an extension in
+  your file name; the wizard will automatically add the PFX extension for you.
+
+8. Click Next, and then read the summary. Pay special attention to where the
+  file is being saved to. If you are sure the information is correct, choose
+  Finish.
+
+You now have a PFX file containing you server certificate and its corresponding
+private key. Be sure to protect this file! You may want to move it to a floppy
+disk and store it somewhere safe from outside disturbance. Keep in mind, if you
+run a backup on the server, this file may be saved in that backup if it is still
+on the server.
+
+Troubleshooting
+---------------
+
+For more information on troubleshooting SSL certificates, see the following
+articles:
+
+   - Q186796 - Troubleshooting "Invalid Password" Error Using SSL Certificates
+
+- Q254902 - Invalid SSL Certificates May Be Bypassed in Internet Explorer
+
+- Q296833 - Windows May Not Be Able to Handle SSL Certificates That Contain
+  Odd-Sized Keys
+
+REFERENCES
+==========
+
+For more information on SSL certificates, see the following articles:
+
+   - Q227888 - Importing a Key Backup File to Use in Internet Information Services
+  5.0
+
+For additional information about the import of backed up certificates, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+  Q232137 How to Import a Server Certificate for Use in Internet Information
+  Services 5.0
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

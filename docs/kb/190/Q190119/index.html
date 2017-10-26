@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q190119: Games Error Message: Error: 5 | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q190119: Games Error Message: Error: 5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/190/Q190119/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/190/Q190119/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/190/Q190119/","publisher":null,"image":null,"headline":"Q190119: Games Error Message: Error: 5","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q190119-games-error-message-error-5">Q190119: Games Error Message: Error: 5</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q190119
+Product(s): Microsoft Home Games
+Version(s): 1.0,2.0
+Operating System(s): 
+Keyword(s): kbenv kberrmsg kbimu msgame mtm2
+Last Modified: 07-MAY-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Monster Truck Madness 2, version 2.0 
+- Microsoft Motocross Madness, version 1.0 
+- Microsoft Close Combat: A Bridge Too Far, version 2.0 
+- Microsoft Pinball Arcade, version 1.0 
+- Microsoft CART Precision Racing, version 1.0 
+- Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+- Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+- Microsoft Golf 1999 Edition, version 1.0 
+- Microsoft Revenge of Arcade, version 1.0 
+- Microsoft Urban Assault, version 1.0 
+- Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start one of the games listed at the beginning of this
+article, you may receive the following error message:
+
+  Error: 5
+
+RESOLUTION
+==========
+
+To resolve this issue, delete the temporary files on your computer. To do this:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "temp" (without the quotation marks), and then click
+  OK.
+
+3. On the Edit menu, click Select All.
+
+4. On the File menu, click Delete.
+
+  NOTE: If you receive an "Access Denied" message, quit all unnecessary programs
+  that are running on your computer and then repeat steps 1-4. To do this:
+
+  a. Press CTRL+ALT+DELETE to open the Close Program dialog box.
+
+  b. Quit all programs except Explorer and Systray (which are parts of
+     Windows). To quit a program, click the program, and then click End Task.
+
+  c. Repeat steps a-b until you have quit all unnecessary programs.
+
+
+MORE INFORMATION
+================
+
+If the steps listed in the resolution section of this article do not resolve the
+issue, verify that duplicate CD-ROM drives are not being loaded in Windows. To
+do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. On the Device Manager tab, click View Devices By Type.
+
+4. Double-click the CD-ROM branch to expand it.
+
+5. Record the properties for each device listed in the branch. To do this:
+
+  a. Click a device, and then click Properties.
+
+  b. Click each tab in the device properties dialog box, and then record the
+     device information and settings.
+
+  c. Click OK.
+
+6. Click OK, and then close Control Panel.
+
+7. Restart Windows in Safe mode. To do so, follow the steps in the appropriate
+  section below:
+
+  Windows 95
+  ----------
+
+  Restart the computer. When you see the "Starting Windows 95" message, press
+  the F8 key, and then choose Safe Mode from the Startup menu.
+
+  Windows 98
+  ----------
+
+  Restart the computer, press and hold down the CTRL key after your computer
+  completes the Power On Self Test (POST), and then choose Safe Mode from the
+  Startup menu.
+
+8. When Windows starts in Safe mode, click OK.
+
+9. Click Start, point to Settings, and then click Control Panel.
+
+10. Double-click System.
+
+11. On the Device Manager tab, click View Devices By Type.
+
+12. Double-click the CD-ROM branch to expand it.
+
+13. Verify that there are no changes in the list of devices in the branch. If a
+  new device is listed that did not appear in the list of devices you noted in
+  step 5, click the new device, and then click Remove. Repeat this step for
+  each device in the branch that was not noted in step 5.
+
+  NOTE: If you see new copies of a device that appeared in the list in step 5,
+  check the properties of each copy of the device. If the properties for the
+  device match the properties you recorded, keep the device. If the properties
+  for the device do not match the properties you recorded, remove the device.
+
+14. Click OK.
+
+15. When you are prompted to restart the computer, click OK.
+
+
+Additional query words: 1.00 2.00 msgame mtm2 monstertruck2 monster2 five ipf
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu msgame mtm2 
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbGamesSearch kbArcadeRev kbZNotKeyword kbGolf99 kbGolfSearch kbPinballArc kbArcadeSearch kbMotocrossSearch kbCloseCombatSearch kbCARTRacingSearch kbMonsterTMSearch kbAOESearch kbUrbanAssault kbMonsterTM2 kbAOEExpRome kbCloseCombat2 kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbMotocrossM kbCARTRacing kbSimSearch
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q158009: WD97: Error Message: An Error Occurred While Importing This File | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q158009: WD97: Error Message: An Error Occurred While Importing This File" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/158/Q158009/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/158/Q158009/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/158/Q158009/","publisher":null,"image":null,"headline":"Q158009: WD97: Error Message: An Error Occurred While Importing This File","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q158009-wd97-error-message-an-error-occurred-while-importing-this-file">Q158009: WD97: Error Message: An Error Occurred While Importing This File</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q158009
+Product(s): Word 97 for Windows
+Version(s): WINDOWS:97
+Operating System(s): 
+Keyword(s): kbualink97
+Last Modified: 26-MAY-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to insert a Clip Art file or a graphic file in Word, the file is
+not inserted, and you receive the following error message:
+
+  Microsoft Word: An error occurred while importing this file. &lt;filename&gt;
+
+CAUSE
+=====
+
+When you try to insert a graphic or Clip Art picture into Word 97, a graphic
+filter must be available in order for Word to convert the graphic or Clip Art
+picture. If Word does not recognize the graphic type, Word presents the Convert
+File dialog box.
+
+If the filter for the graphic that you are inserting is not present on this list,
+the filter is not installed. Follow the steps in the "Resolution" section of
+this article to install the graphic filter.
+
+If the graphic filter is listed in the Convert File dialog box, and you select it
+and click OK, and the graphic still is not inserted, the filter or the graphic
+may be damaged.
+
+RESOLUTION
+==========
+
+1. Quit Word and/or Office.
+
+2. On the Start menu, point to Settings, and then click Control Panel.
+
+3. Double-click Add/Remove Programs.
+
+4. Click the Install/Uninstall tab.
+
+5. In the list of installed software, select either Microsoft Word 97 or
+  Microsoft Office 97. Then click Add/Remove. The Setup program starts.
+
+6. On the Setup screen, click Add/Remove.
+
+7. On the Maintenance screen, under Options, select the Converters and Filters
+  check box. (Do not clear the check box if it already is selected.) Then click
+  Change Option.
+
+8. In the Converters and Filters dialog box, select the Graphic Filters check
+  box. (Do not clear the check box if it is selected already.) Then click
+  Change Option.
+
+9. On the Graphic filters screen, select each of the graphic filters that you
+  want to install. Then click OK.
+
+10. Click OK to return to Setup Maintenance. Then click Continue and complete
+  the Setup process.
+
+MORE INFORMATION
+================
+
+Installed during Typical Setup          NOT installed during Typical Setup
+--------------------------------------  ----------------------------------
+Tag Image File Format Import (TIFF)     Truevision Targa Import
+Encapsulated Postscript Import (EPS)    AutoCAD DXF Import
+Windows Bitmap Import (BMP)             Micrografx Designer/Draw Import
+Enhanced Metafile Import (EMS)          CorelDRAW Import
+WordPerfect Graphics (WPG)              Computer Graphics Metafile Import
+Kodak Photo CD                          PC Paintbrush PCX Import
+Macintosh PICT
+Windows Metafile (WMF)
+Graphics Interchange Format (GIF)
+JPEG File Interchange Format (JPG)
+Portable Network Graphics Format (PNG)
+
+There are five graphic filters that are built into Word 97. These filters are
+embedded into the Winword.exe file and are independent of the filters that are
+installed through the Setup program:
+
+- Enhanced Metafile Import (EMS)
+
+- Windows Bitmap Import (BMP)
+
+- Windows Metafile Import (WMF)
+
+- JPEG File Interchange Format Import (JPG)
+
+- Portable Network Graphics (PNG)
+
+These four graphic filters are installable through the Setup program for
+compatibility with the rest of the Microsoft Office Suite. In other Words, these
+filters are installed so that graphics can be imported into the other Office
+programs, such as Excel.
+
+For more information about which components are installed during each type of
+Setup, please refer to Word Help:
+
+1. On the Help menu, click Contents and Index.
+
+2. On the "Help Topics: Microsoft Word" screen, select the Contents tab.
+
+3. Double-click the "Installing and Removing Word" book.
+
+4. Double-click the "Install or remove individual components" topic.
+
+5. In the Help window, under step 5, click the arrow for the line that states:
+  "For the location of components in Setup..."
+
+Additional query words: 8.0 word8 word97 available present missing
+
+======================================================================
+Keywords          : kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

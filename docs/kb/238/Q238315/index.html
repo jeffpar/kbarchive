@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q238315: SMS: How to Use SMS 1.2 and 2.0 to Deploy Windows NT 4.0 SP6a | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q238315: SMS: How to Use SMS 1.2 and 2.0 to Deploy Windows NT 4.0 SP6a" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/238/Q238315/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/238/Q238315/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/238/Q238315/","publisher":null,"image":null,"headline":"Q238315: SMS: How to Use SMS 1.2 and 2.0 to Deploy Windows NT 4.0 SP6a","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q238315-sms-how-to-use-sms-12-and--20-to-deploy-windows-nt-40-sp6a">Q238315: SMS: How to Use SMS 1.2 and  2.0 to Deploy Windows NT 4.0 SP6a</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Article</span><span class="p">:</span> <span class="n">Q238315</span>
+<span class="n">Product</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span>
+<span class="k">Version</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="m">1.2</span><span class="p">,</span><span class="m">2.0</span>
+<span class="n">Operating</span> <span class="nf">System</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> 
+<span class="n">Keyword</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">kbsms200</span>
+<span class="n">Last</span> <span class="n">Modified</span><span class="p">:</span> <span class="m">14</span><span class="p">-</span><span class="n">MAR</span><span class="p">-</span><span class="m">2002</span>
+
+<span class="p">-------------------------------------------------------------------------------</span>
+<span class="n">The</span> <span class="n">information</span> <span class="k">in</span> <span class="n">this</span> <span class="n">article</span> <span class="n">applies</span> <span class="k">to</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="n">Microsoft</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="n">versions</span> <span class="m">1.2</span><span class="p">,</span> <span class="m">2.0</span> 
+<span class="p">-------------------------------------------------------------------------------</span>
+
+<span class="n">SUMMARY</span>
+<span class="p">=======</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="n">describes</span> <span class="n">how</span> <span class="k">to</span> <span class="n">use</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="p">(</span><span class="n">SMS</span><span class="p">)</span> <span class="k">to</span> <span class="n">distribute</span>
+<span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">6</span><span class="n">a</span> <span class="p">(</span><span class="n">SP6a</span><span class="p">).</span>
+
+<span class="n">For</span> <span class="n">additional</span> <span class="n">information</span> <span class="n">about</span> <span class="n">how</span> <span class="k">to</span> <span class="n">obtain</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">SP6a</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span>
+<span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span> <span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q246009</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="m">6</span><span class="n">a</span> <span class="n">Available</span>
+
+<span class="n">MORE</span> <span class="n">INFORMATION</span>
+<span class="p">================</span>
+
+<span class="n">How</span> <span class="k">to</span> <span class="n">Use</span> <span class="n">SMS</span> <span class="m">2.0</span> <span class="k">to</span> <span class="n">Install</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">SP6a</span>
+<span class="p">---------------------------------------------</span>
+
+<span class="n">The</span> <span class="k">procedure</span> <span class="n">that</span> <span class="n">is</span> <span class="n">described</span> <span class="k">in</span> <span class="n">this</span> <span class="n">section</span> <span class="n">assumes</span> <span class="n">that</span> <span class="n">you</span> <span class="n">have</span> <span class="n">already</span>
+<span class="n">downloaded</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">SP6a</span> <span class="n">files</span> <span class="p">(</span><span class="n">Sp6i386</span><span class="p">.</span><span class="n">exe</span><span class="p">)</span> <span class="k">from</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Microsoft</span>
+<span class="n">Web</span> <span class="n">site</span><span class="p">:</span>
+
+  <span class="n">http</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">ntserver</span><span class="p">/</span><span class="n">nts</span><span class="p">/</span><span class="n">downloads</span><span class="p">/</span><span class="n">recommended</span><span class="p">/</span><span class="n">SP6</span><span class="p">/</span><span class="n">allSP6</span><span class="p">.</span><span class="n">asp</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">You</span> <span class="n">can</span> <span class="n">also</span> <span class="n">obtain</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="n">SP6a</span> <span class="k">from</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="n">SP6a</span>
+<span class="n">CD</span><span class="p">-</span><span class="n">ROM</span><span class="p">.</span> <span class="n">The</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="n">SP6a</span> <span class="n">CD</span><span class="p">-</span><span class="n">ROM</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">N4sp6a</span><span class="p">.</span><span class="n">pdf</span> <span class="n">file</span><span class="p">,</span> <span class="n">which</span> <span class="n">you</span>
+<span class="n">can</span> <span class="n">use</span> <span class="k">to</span> <span class="n">automatically</span> <span class="n">populate</span> <span class="n">the</span> <span class="n">SMS</span> <span class="k">package</span> <span class="k">and</span> <span class="n">program</span> <span class="n">properties</span><span class="p">.</span>
+
+<span class="m">1.</span> <span class="n">Extract</span> <span class="n">the</span> <span class="n">Sp6i386</span><span class="p">.</span><span class="n">exe</span> <span class="n">files</span> <span class="k">to</span> <span class="n">a</span> <span class="n">Temporary</span> <span class="n">folder</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">folder</span> <span class="n">named</span> <span class="s2">"NT4sp6a"</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">move</span> <span class="n">the</span> <span class="n">Sp6i386</span><span class="p">.</span><span class="n">exe</span> <span class="n">files</span> <span class="k">to</span>
+  <span class="n">the</span> <span class="n">new</span> <span class="n">folder</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">NT4sp6a</span> <span class="n">folder</span> <span class="n">is</span> <span class="n">the</span> <span class="n">source</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT4</span> <span class="n">SP6a</span> <span class="n">SMS</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="m">3.</span> <span class="n">Start</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">Administrator</span> <span class="n">console</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">new</span> <span class="k">package</span> <span class="k">with</span>
+  <span class="s2">"NT4sp6a"</span> <span class="k">as</span> <span class="n">the</span> <span class="n">source</span> <span class="n">folder</span><span class="p">.</span>
+
+  <span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">SMS</span> <span class="n">software</span> <span class="n">distribution</span> <span class="k">and</span> <span class="k">package</span> <span class="n">creation</span>
+  <span class="k">options</span><span class="p">,</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">SMS</span> <span class="n">Online</span> <span class="n">Help</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">This</span> <span class="n">example</span> <span class="n">describes</span> <span class="n">how</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">the</span> <span class="n">SMS</span> <span class="k">package</span> <span class="k">and</span> <span class="n">the</span> <span class="n">SMS</span> <span class="n">program</span>
+  <span class="k">and</span> <span class="n">advertisement</span> <span class="n">separately</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">also</span> <span class="n">use</span> <span class="n">the</span> <span class="n">Distribute</span> <span class="n">Software</span> <span class="n">Wizard</span>
+  <span class="k">or</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="m">4.0</span> <span class="n">SP6a</span> <span class="k">Package</span> <span class="n">Definition</span> <span class="n">File</span> <span class="p">(</span><span class="n">Nt4sp6</span><span class="p">.</span><span class="n">pdf</span><span class="p">)</span> <span class="k">if</span> <span class="n">these</span>
+  <span class="n">tools</span> <span class="n">are</span> <span class="n">available</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">following</span> <span class="nf">command</span> <span class="n">line</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">program</span> <span class="n">for</span> <span class="n">the</span> <span class="k">package</span> <span class="n">you</span>
+  <span class="n">created</span> <span class="k">in</span> <span class="n">step</span> <span class="m">3</span><span class="p">:</span>
+
+  <span class="n">update</span><span class="p">\</span><span class="n">update</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">q</span>
+
+  <span class="n">You</span> <span class="n">can</span> <span class="n">also</span> <span class="n">manually</span> <span class="n">edit</span> <span class="n">the</span> <span class="nf">command</span> <span class="n">line</span> <span class="k">to</span> <span class="n">use</span> <span class="n">any</span> <span class="k">of</span> <span class="n">the</span> <span class="n">Update</span><span class="p">.</span><span class="n">exe</span>
+  <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="n">switches</span> <span class="n">that</span> <span class="n">are</span> <span class="n">described</span> <span class="k">in</span> <span class="n">the</span> <span class="s2">"Update.exe Command-Line
+  Switches"</span> <span class="n">section</span> <span class="k">of</span> <span class="n">this</span> <span class="n">article</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">It</span> <span class="n">is</span> <span class="n">important</span> <span class="k">to</span> <span class="n">verify</span> <span class="n">that</span> <span class="n">this</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">conforms</span> <span class="k">to</span> <span class="n">the</span>
+  <span class="n">specific</span> <span class="k">package</span> <span class="n">source</span> <span class="n">folder</span> <span class="n">structure</span> <span class="n">you</span> <span class="n">have</span> <span class="n">created</span><span class="p">.</span> <span class="n">SMS</span> <span class="n">is</span> <span class="k">not</span> <span class="n">able</span> <span class="k">to</span>
+  <span class="n">browse</span> <span class="n">the</span> <span class="n">folder</span> <span class="n">structure</span> <span class="k">and</span> <span class="n">the</span> <span class="n">program</span> <span class="n">will</span> <span class="n">fail</span> <span class="k">if</span> <span class="n">it</span> <span class="n">does</span> <span class="k">not</span> <span class="n">have</span> <span class="n">the</span>
+  <span class="n">correct</span> <span class="n">path</span> <span class="k">to</span> <span class="n">Update</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Open</span> <span class="n">the</span> <span class="n">program</span> <span class="n">properties</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">Environment</span> <span class="n">tab</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">ensure</span> <span class="n">that</span>
+  <span class="n">the</span> <span class="n">program</span> <span class="n">is</span> <span class="n">either</span> <span class="k">set</span> <span class="k">to</span> <span class="nf">run</span> <span class="k">with</span> <span class="n">administrative</span> <span class="n">rights</span> <span class="k">or</span> <span class="n">it</span> <span class="n">is</span> <span class="n">using</span> <span class="n">a</span>
+  <span class="n">Windows</span> <span class="n">NT</span> <span class="n">client</span> <span class="n">software</span> <span class="n">installation</span> <span class="n">account</span> <span class="n">that</span> <span class="n">has</span> <span class="n">the</span> <span class="n">proper</span>
+  <span class="n">administrative</span> <span class="n">rights</span> <span class="p">(</span><span class="k">if</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">user</span> <span class="n">does</span> <span class="k">not</span> <span class="n">have</span> <span class="n">local</span>
+  <span class="n">administrative</span> <span class="n">rights</span> <span class="k">or</span> <span class="k">if</span> <span class="n">no</span> <span class="n">user</span> <span class="n">is</span> <span class="n">logged</span> <span class="n">on</span> <span class="n">when</span> <span class="n">you</span> <span class="nb">create</span> <span class="n">the</span>
+  <span class="n">program</span><span class="p">).</span>
+
+  <span class="n">Typically</span><span class="p">,</span> <span class="n">a</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">client</span> <span class="n">software</span> <span class="n">installation</span> <span class="n">account</span> <span class="n">is</span> <span class="n">used</span> <span class="n">only</span> <span class="k">if</span>
+  <span class="n">either</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">source</span> <span class="n">files</span> <span class="n">are</span> <span class="k">not</span> <span class="n">on</span> <span class="n">an</span> <span class="n">SMS</span> <span class="n">distribution</span> <span class="n">point</span> <span class="k">or</span>
+  <span class="k">if</span> <span class="n">the</span> <span class="n">installation</span> <span class="n">process</span> <span class="n">needs</span> <span class="k">to</span> <span class="n">access</span> <span class="n">files</span> <span class="n">that</span> <span class="n">are</span> <span class="k">not</span> <span class="n">on</span> <span class="n">an</span> <span class="n">SMS</span>
+  <span class="n">distribution</span> <span class="n">point</span><span class="p">.</span>
+
+<span class="m">6.</span> <span class="n">Select</span> <span class="n">the</span> <span class="n">distribution</span> <span class="n">points</span> <span class="k">to</span> <span class="n">which</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="nf">send</span> <span class="n">the</span> <span class="n">NT4sp6a</span> <span class="k">package</span><span class="p">.</span>
+
+<span class="m">7.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">advertisement</span> <span class="n">for</span> <span class="n">the</span> <span class="n">NT4sp6a</span> <span class="k">package</span> <span class="k">or</span> <span class="n">program</span> <span class="n">that</span> <span class="n">you</span>
+  <span class="n">created</span> <span class="k">in</span> <span class="n">step</span> <span class="m">4.</span>
+
+  <span class="n">Make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">you</span> <span class="n">select</span> <span class="n">the</span> <span class="n">correct</span> <span class="k">package</span><span class="p">,</span> <span class="n">program</span><span class="p">,</span> <span class="k">and</span> <span class="n">collection</span>
+  <span class="n">settings</span> <span class="n">on</span> <span class="n">the</span> <span class="n">General</span> <span class="n">tab</span> <span class="k">of</span> <span class="n">the</span> <span class="n">advertisement</span><span class="p">.</span>
+
+<span class="m">8.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">the</span> <span class="n">service</span> <span class="n">pack</span> <span class="n">installation</span> <span class="n">automatically</span><span class="p">,</span> <span class="n">open</span> <span class="n">the</span>
+  <span class="n">advertisement</span> <span class="n">properties</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">Schedule</span> <span class="n">tab</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">mandatory</span>
+  <span class="n">assignment</span> <span class="n">for</span> <span class="n">the</span> <span class="n">program</span><span class="p">.</span>
+
+<span class="n">How</span> <span class="k">to</span> <span class="n">Use</span> <span class="n">SMS</span> <span class="m">1.2</span> <span class="k">to</span> <span class="n">Install</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">SP6a</span>
+<span class="p">---------------------------------------------</span>
+
+<span class="m">1.</span> <span class="n">Use</span> <span class="n">the</span> <span class="k">procedure</span> <span class="n">that</span> <span class="n">is</span> <span class="n">described</span> <span class="k">in</span> <span class="n">the</span> <span class="n">preceding</span> <span class="n">section</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">the</span>
+  <span class="k">package</span> <span class="n">source</span><span class="p">.</span>
+
+<span class="m">2.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">following</span> <span class="nf">command</span> <span class="n">line</span> <span class="k">to</span> <span class="nb">create</span> <span class="n">a</span> <span class="n">new</span> <span class="k">package</span> <span class="n">for</span> <span class="n">Windows</span> <span class="n">SP6a</span><span class="p">:</span>
+
+  <span class="n">update</span><span class="p">/</span><span class="n">update</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">q</span>
+
+<span class="m">3.</span> <span class="n">Verify</span> <span class="n">that</span> <span class="n">the</span> <span class="n">workstation</span> <span class="nf">command</span><span class="p">-</span><span class="n">line</span> <span class="k">options</span> <span class="n">are</span> <span class="n">correctly</span> <span class="k">set</span> <span class="n">for</span> <span class="n">the</span>
+  <span class="n">type</span> <span class="k">of</span> <span class="n">installation</span> <span class="n">that</span> <span class="n">you</span> <span class="n">are</span> <span class="n">using</span><span class="p">.</span>
+
+  <span class="n">The</span> <span class="n">type</span> <span class="k">of</span> <span class="n">installation</span> <span class="n">you</span> <span class="n">select</span> <span class="n">depends</span> <span class="n">on</span> <span class="n">the</span> <span class="n">rights</span> <span class="k">of</span> <span class="n">the</span> <span class="n">user</span> <span class="n">that</span> <span class="n">is</span>
+  <span class="n">logged</span> <span class="n">on</span> <span class="k">to</span> <span class="n">the</span> <span class="n">target</span> <span class="n">client</span><span class="p">.</span>
+
+<span class="m">4.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">targeting</span> <span class="n">either</span> <span class="n">a</span> <span class="n">low</span><span class="p">-</span><span class="n">rights</span> <span class="n">user</span> <span class="n">who</span> <span class="n">does</span> <span class="k">not</span> <span class="n">have</span> <span class="n">local</span>
+  <span class="n">administrative</span> <span class="n">rights</span> <span class="k">or</span> <span class="n">a</span> <span class="n">server</span> <span class="k">to</span> <span class="n">which</span> <span class="n">no</span> <span class="n">one</span> <span class="n">logs</span> <span class="n">on</span><span class="p">,</span> <span class="n">click</span> <span class="s2">"System
+  (Background) Task"</span><span class="p">.</span>
+
+  <span class="n">The</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="n">service</span> <span class="n">handles</span> <span class="n">the</span> <span class="n">installation</span><span class="p">.</span>
+
+  <span class="n">NOTE</span><span class="p">:</span> <span class="n">For</span> <span class="n">any</span> <span class="k">package</span> <span class="n">that</span> <span class="n">is</span> <span class="n">using</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="n">service</span> <span class="k">to</span>
+  <span class="n">finish</span> <span class="n">successfully</span><span class="p">:</span>
+
+   <span class="p">-</span> <span class="n">You</span> <span class="n">must</span> <span class="n">configure</span> <span class="n">the</span> <span class="k">package</span> <span class="k">to</span> <span class="nf">run</span> <span class="n">completely</span> <span class="n">silently</span> <span class="k">and</span> <span class="n">require</span> <span class="n">no</span>
+     <span class="n">user</span> <span class="n">interaction</span><span class="p">.</span>
+
+   <span class="p">-</span> <span class="n">You</span> <span class="n">must</span> <span class="k">set</span> <span class="n">the</span> <span class="nf">System</span> <span class="p">(</span><span class="n">Background</span><span class="p">)</span> <span class="n">Task</span> <span class="n">option</span><span class="p">.</span>
+
+   <span class="p">-</span> <span class="n">You</span> <span class="n">must</span> <span class="k">set</span> <span class="n">the</span> <span class="n">job</span> <span class="k">to</span> <span class="nf">run</span> <span class="k">as</span> <span class="n">Mandatory</span><span class="p">.</span>
+
+  <span class="n">You</span> <span class="n">must</span> <span class="n">manually</span> <span class="n">install</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="n">service</span> <span class="n">on</span> <span class="n">SMS</span> <span class="n">clients</span><span class="p">.</span>
+  <span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">how</span> <span class="k">to</span> <span class="n">use</span> <span class="n">Rservice</span><span class="p">.</span><span class="n">exe</span> <span class="k">to</span> <span class="n">manually</span> <span class="n">install</span>
+  <span class="n">Pcmsvc32</span><span class="p">.</span><span class="n">exe</span><span class="p">,</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Install</span><span class="p">.</span><span class="n">doc</span> <span class="n">file</span> <span class="n">that</span> <span class="n">is</span> <span class="n">included</span> <span class="k">in</span> <span class="n">SMS</span> <span class="n">Service</span>
+  <span class="n">Pack</span> <span class="m">4</span> <span class="p">(</span><span class="n">SP4</span><span class="p">).</span> <span class="k">If</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">select</span> <span class="n">the</span> <span class="nf">System</span> <span class="p">(</span><span class="n">Background</span><span class="p">)</span> <span class="n">Task</span> <span class="n">option</span><span class="p">,</span> <span class="n">the</span>
+  <span class="n">installation</span> <span class="n">is</span> <span class="n">handled</span> <span class="n">by</span> <span class="n">the</span> <span class="k">Package</span> <span class="n">Command</span> <span class="n">Manager</span> <span class="n">program</span><span class="p">,</span> <span class="n">it</span> <span class="n">is</span> <span class="nf">run</span> <span class="k">in</span>
+  <span class="n">the</span> <span class="n">foreground</span><span class="p">,</span> <span class="k">and</span> <span class="n">it</span> <span class="n">requires</span> <span class="n">a</span> <span class="n">logged</span><span class="p">-</span><span class="n">on</span> <span class="n">user</span> <span class="k">to</span> <span class="n">have</span> <span class="n">local</span> <span class="n">administrative</span>
+  <span class="n">rights</span> <span class="k">to</span> <span class="n">finish</span> <span class="n">the</span> <span class="n">service</span> <span class="n">pack</span> <span class="n">installation</span><span class="p">.</span>
+
+<span class="m">5.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">job</span> <span class="k">to</span> <span class="n">distribute</span> <span class="n">the</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">SP6a</span> <span class="k">package</span><span class="p">,</span> <span class="k">and</span> <span class="k">then</span> <span class="n">target</span>
+  <span class="n">it</span> <span class="n">at</span> <span class="n">the</span> <span class="n">clients</span> <span class="n">you</span> <span class="n">want</span> <span class="k">to</span> <span class="n">upgrade</span><span class="p">.</span>
+
+  <span class="k">If</span> <span class="n">you</span> <span class="n">select</span> <span class="n">the</span> <span class="nf">System</span> <span class="p">(</span><span class="n">Background</span><span class="p">)</span> <span class="n">Task</span> <span class="n">option</span> <span class="n">for</span> <span class="n">your</span> <span class="k">package</span><span class="p">,</span> <span class="n">make</span> <span class="n">sure</span>
+  <span class="k">to</span> <span class="k">set</span> <span class="n">the</span> <span class="n">job</span> <span class="k">to</span> <span class="nf">run</span> <span class="k">as</span> <span class="n">Mandatory</span><span class="p">.</span> <span class="n">The</span> <span class="n">mandatory</span> <span class="n">date</span> <span class="n">is</span> <span class="k">set</span> <span class="k">to</span> <span class="n">one</span> <span class="n">week</span> <span class="k">in</span>
+  <span class="n">advance</span> <span class="n">by</span> <span class="n">default</span><span class="p">.</span>
+
+<span class="n">Both</span> <span class="n">SMS</span> <span class="m">1.2</span> <span class="k">and</span> <span class="m">2.0</span> <span class="n">SP6a</span> <span class="n">installations</span> <span class="n">require</span> <span class="n">you</span> <span class="k">to</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">client</span> <span class="n">after</span>
+<span class="n">the</span> <span class="n">installation</span> <span class="n">is</span> <span class="n">complete</span><span class="p">.</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">The</span> <span class="n">service</span> <span class="n">pack</span> <span class="n">Setup</span> <span class="n">program</span> <span class="n">requires</span> <span class="n">you</span> <span class="k">to</span> <span class="n">have</span> <span class="n">administrative</span> <span class="n">rights</span>
+<span class="n">after</span> <span class="n">you</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">computer</span><span class="p">.</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">SP6a</span> <span class="n">adds</span> <span class="n">several</span> <span class="n">keys</span> <span class="k">to</span> <span class="n">the</span> <span class="n">RunOnce</span>
+<span class="n">registry</span> <span class="n">key</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">have</span> <span class="n">administrative</span> <span class="n">rights</span><span class="p">,</span> <span class="n">you</span> <span class="n">must</span> <span class="k">to</span> <span class="nb">log</span> <span class="n">on</span> <span class="k">to</span> <span class="n">the</span>
+<span class="n">client</span> <span class="n">for</span> <span class="n">the</span> <span class="n">service</span> <span class="n">pack</span> <span class="n">Setup</span> <span class="n">program</span> <span class="k">to</span> <span class="n">complete</span><span class="p">.</span> <span class="n">For</span> <span class="n">additional</span>
+<span class="n">information</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span> <span class="n">article</span> <span class="n">number</span> <span class="n">below</span> <span class="k">to</span> <span class="n">view</span> <span class="n">the</span> <span class="n">article</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Microsoft</span>
+<span class="n">Knowledge</span> <span class="n">Base</span><span class="p">:</span>
+
+  <span class="n">Q255987</span> <span class="n">Service</span> <span class="n">Pack</span> <span class="n">Requires</span> <span class="n">Logon</span> <span class="k">with</span> <span class="n">Local</span> <span class="n">Administrative</span> <span class="n">Rights</span>
+
+
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">software</span> <span class="n">distribution</span> <span class="n">by</span> <span class="n">using</span> <span class="n">Systems</span> <span class="n">Management</span>
+<span class="n">Server</span> <span class="m">2.0</span><span class="p">,</span> <span class="n">refer</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Systems</span> <span class="n">Management</span> <span class="n">Server</span> <span class="m">2.0</span> <span class="n">Administrator</span><span class="s1">'s Guide,
+Chapter 12, "Distributing Software." For more information about Systems
+Management Server 1.2 software distribution, refer to the Systems Management
+Server 1.2 Administrator'</span><span class="n">s</span> <span class="n">Guide</span><span class="p">,</span> <span class="n">Part</span> <span class="m">2</span><span class="p">,</span> <span class="s2">"Software Management."</span>
+
+<span class="n">Update</span><span class="p">.</span><span class="n">exe</span> <span class="n">Command</span><span class="p">-</span><span class="n">Line</span> <span class="n">Switches</span>
+<span class="p">--------------------------------</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="nf">command</span> <span class="n">line</span> <span class="n">describes</span> <span class="n">the</span> <span class="n">syntax</span> <span class="n">for</span> <span class="n">Update</span><span class="p">.</span><span class="n">exe</span><span class="p">:</span>
+
+  <span class="n">update</span> <span class="p">[-</span><span class="n">u</span><span class="p">]</span> <span class="p">[-</span><span class="n">f</span><span class="p">]</span> <span class="p">[-</span><span class="n">n</span><span class="p">]</span> <span class="p">[-</span><span class="n">o</span><span class="p">]</span> <span class="p">[-</span><span class="n">z</span><span class="p">]</span> <span class="p">[-</span><span class="n">q</span><span class="p">]</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">the</span> <span class="n">following</span> <span class="n">switches</span> <span class="k">with</span> <span class="n">Update</span><span class="p">.</span><span class="n">exe</span><span class="p">:</span>
+
+<span class="p">-</span> <span class="p">-</span><span class="n">u</span><span class="p">:</span> <span class="n">Use</span> <span class="n">this</span> <span class="n">parameter</span> <span class="n">for</span> <span class="n">Unattended</span> <span class="n">mode</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="p">-</span><span class="n">f</span><span class="p">:</span> <span class="n">Use</span> <span class="n">this</span> <span class="n">parameter</span> <span class="k">to</span> <span class="n">force</span> <span class="n">other</span> <span class="n">programs</span> <span class="k">to</span> <span class="n">close</span> <span class="n">when</span> <span class="n">you</span> <span class="n">shut</span> <span class="n">down</span>
+  <span class="n">the</span> <span class="n">computer</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="p">-</span><span class="n">n</span><span class="p">:</span> <span class="n">Use</span> <span class="n">this</span> <span class="n">parameter</span> <span class="k">if</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">want</span> <span class="k">to</span> <span class="n">back</span> <span class="n">up</span> <span class="n">files</span> <span class="n">when</span> <span class="n">you</span> <span class="n">uninstall</span>
+  <span class="n">the</span> <span class="n">program</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="p">-</span><span class="n">o</span><span class="p">:</span> <span class="n">Use</span> <span class="n">this</span> <span class="n">parameter</span> <span class="k">if</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">want</span> <span class="k">to</span> <span class="n">be</span> <span class="n">prompted</span> <span class="n">when</span> <span class="n">the</span> <span class="n">original</span>
+  <span class="n">equipment</span> <span class="n">manufacturer</span> <span class="p">(</span><span class="n">OEM</span><span class="p">)</span> <span class="n">files</span> <span class="n">are</span> <span class="n">overwritten</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="p">-</span><span class="n">z</span><span class="p">:</span> <span class="n">Use</span> <span class="n">this</span> <span class="n">parameter</span> <span class="k">if</span> <span class="n">you</span> <span class="k">do</span> <span class="k">not</span> <span class="n">want</span> <span class="k">to</span> <span class="n">restart</span> <span class="n">the</span> <span class="n">computer</span> <span class="n">when</span> <span class="n">the</span>
+  <span class="n">installation</span> <span class="n">is</span> <span class="n">complete</span><span class="p">.</span>
+
+<span class="p">-</span> <span class="p">-</span><span class="n">q</span><span class="p">:</span> <span class="n">Use</span> <span class="n">this</span> <span class="n">parameter</span> <span class="n">for</span> <span class="n">Quiet</span> <span class="n">mode</span> <span class="p">(</span><span class="n">no</span> <span class="n">user</span> <span class="n">interaction</span><span class="p">).</span>
+
+<span class="k">To</span> <span class="n">view</span> <span class="n">help</span> <span class="n">for</span> <span class="n">this</span> <span class="nf">command</span><span class="p">,</span> <span class="n">type</span> <span class="s2">"update /?"</span> <span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">quotation</span> <span class="n">marks</span><span class="p">).</span>
+
+<span class="n">Additional</span> <span class="n">query</span> <span class="n">words</span><span class="p">:</span> <span class="n">prodsms</span> <span class="n">sp6</span> <span class="n">ntsp6</span> <span class="n">ntsp</span>
+
+<span class="p">======================================================================</span>
+<span class="n">Keywords</span>          <span class="p">:</span> <span class="n">kbsms200</span> 
+<span class="n">Technology</span>        <span class="p">:</span> <span class="n">kbSMSSearch</span> <span class="n">kbSMS120</span> <span class="n">kbSMS200</span>
+<span class="k">Version</span>           <span class="p">:</span> <span class="p">:</span><span class="m">1.2</span><span class="p">,</span><span class="m">2.0</span>
+<span class="n">Issue</span> <span class="n">type</span>        <span class="p">:</span> <span class="n">kbhowto</span>
+
+<span class="p">=============================================================================</span>
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

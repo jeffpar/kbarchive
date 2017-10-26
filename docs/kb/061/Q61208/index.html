@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q61208: C 6.00 README: Loading PWB Quickly | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q61208: C 6.00 README: Loading PWB Quickly" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/061/Q61208/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/061/Q61208/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/061/Q61208/","publisher":null,"image":null,"headline":"Q61208: C 6.00 README: Loading PWB Quickly","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q61208-c-600-readme-loading-pwb-quickly">Q61208: C 6.00 README: Loading PWB Quickly</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q61208
+Product(s): See article
+Version(s): 6.00   | 6.00
+Operating System(s): MS-DOS | OS/2
+Keyword(s): ENDUSER | | mspl13_c
+Last Modified: 15-AUG-1990
+
+The following information is taken from the C Version 6.00 README.DOC
+file.
+
+Loading PWB Quickly
+-------------------
+
+Programmer's WorkBench (PWB) consists of the basic editor and four
+editor extensions that contain the functionality for building,
+linking, online help, and the Source Browser. These editor extensions
+are loaded automatically each time you invoke PWB.
+
+If you want PWB to load more quickly, you can rename some or all of
+the PWB extensions and then load them only when they are needed.
+
+For example, you can change the names of all the extension files from
+*.MXT (DOS) or *.PXT (OS2) to *.EXT. Then include the following section in
+your TOOLS.INI file:
+
+   [pwb-ext]
+   load:$PATH:pwbhelp.ext      ;Online Help
+   load:$PATH:pwbc.ext         ;C compiler
+   load:$PATH:pwbrowse.ext     ;Source Browser
+   load:$PATH:pwbutils.ext     ;LINK, NMAKE, and CodeView
+
+To load all the extensions at once, execute the following in PWB:
+
+   arg "ext" initialize
+
+With the default key assignments, this is
+
+   ALT+A "ext" SHIFT+F8
+
+To load a single extension -- the help extension, for example -- you
+can use the following:
+
+   arg "load:$PATH:pwbhelp.ext" assign
+
+With the default key assignment, this translates to
+
+   ALT+A "load:$PATH:pwbhelp.ext" ALT+=
+
+If you decide to rename the extensions and thus disable the extension
+autoload feature of PWB, you still have the option of starting up PWB
+with all the extensions loaded.
+
+To do this, define a macro in the PWB section of TOOLS.INI and assign
+it to a key of your choice. The following TOOLS.INI entry creates a
+macro called "extload" and assigns it to the F11 key:
+
+   extload:=arg "ext" initialize
+   extload:F11
+
+Then when you start PWB, you can use the /e option to execute
+"extload" on start up:
+
+   PWB /e extload
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

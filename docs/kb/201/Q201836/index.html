@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q201836: SMS: SMSAPM32 Network Speed Detection on SMS2.0 NetWare Clients | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q201836: SMS: SMSAPM32 Network Speed Detection on SMS2.0 NetWare Clients" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/201/Q201836/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/201/Q201836/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/201/Q201836/","publisher":null,"image":null,"headline":"Q201836: SMS: SMSAPM32 Network Speed Detection on SMS2.0 NetWare Clients","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q201836-sms-smsapm32-network-speed-detection-on-sms20-netware-clients">Q201836: SMS: SMSAPM32 Network Speed Detection on SMS2.0 NetWare Clients</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q201836
+Product(s): Microsoft Systems Management Server
+Version(s): winnt:2.0
+Operating System(s): 
+Keyword(s): kbsms200
+Last Modified: 20-MAR-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SMSAPM32 on a NetWare client may determine the network speed to be 0 bps as
+shown in the smsapm32.log on the client.
+
+This behavior is by design.
+
+CAUSE
+=====
+
+If Advertisement assignment properties under the Schedule tab are marked as
+"Assignments are not mandatory over slow links," the slow link detection code
+will run after checking for Microsoft RAS with Microsoft networking.
+
+It will interpret a speed of 0 as a failure to determine speed. Because it failed
+to determine the speed, it will then check to see if there are any RAS
+connections active on this client. If there are RAS connections active, the slow
+link detection code will return that this is a slow link and APM will not run
+the program designated by this advertisement.
+
+On NetWare systems it will find that the speed is 0. Because there are no RAS
+connections active on the client, the slow link detection code will return that
+this is a fast link and APM will run the program.
+
+WORKAROUND
+==========
+
+To stop the slow link detection code from running, open the ADMIN UI, and go
+into the properties of the ADVERTISEMENT. Go to the SCHEDULE tab and deselect
+the box for "Assignments are not mandatory over slow links."
+
+Once you have made this change, the Offer Manager will update files
+(.ins,.lkp,.ofr) on the CAP. The Inbox Manager will then update these files on
+the NetWare CAP.
+
+Once these files have been updated, the client should successfully execute the
+offer(s). Therefore, NetWare clients work exactly as do Windows networking
+clients except that on NetWare, the only test you do to determine whether the
+network is fast or slow is to check whether RAS connections are active.
+
+Additional query words: prodsms slwnt32 swdist32
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

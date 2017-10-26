@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q247701: FILE: Updated Grid Control for H/PC Pro and PsPC Platforms | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q247701: FILE: Updated Grid Control for H/PC Pro and PsPC Platforms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/247/Q247701/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/247/Q247701/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/247/Q247701/","publisher":null,"image":null,"headline":"Q247701: FILE: Updated Grid Control for H/PC Pro and PsPC Platforms","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q247701-file-updated-grid-control-for-hpc-pro-and-pspc-platforms">Q247701: FILE: Updated Grid Control for H/PC Pro and PsPC Platforms</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q247701
+Product(s): Microsoft Visual Basic for Windows
+Version(s): WINDOWS:1.0
+Operating System(s): 
+Keyword(s): kbfile kbpatch kbToolkit kbVBp600 kbGrpDSVB kbOSWinCE211
+Last Modified: 21-DEC-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+CE_Grid.exe is a file that contains the updated MSCEGrid.dll files for the
+Handheld PC Pro and Palm-size PC platforms.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+  CE_Grid.exe
+
+The file expands, by default, to the following directories:
+
++----------------------------------+
+| FileName                 | Size  | 
++----------------------------------+
+| Readme.txt               | 2kb   | 
++----------------------------------+
+| Setup.exe                | 52kb  | 
++----------------------------------+
+| setup.ini                | 1kb   | 
++----------------------------------+
+| \Arm720.b\MSCEGrid.DLL   | 103kb | 
++----------------------------------+
+| \i486.b\MSCEGrid.DLL     | 89kb  | 
++----------------------------------+
+| \mips39xx.b\MSCEGrid.DLL | 161kb | 
++----------------------------------+
+| \mips41xx.b\MSCEGrid.DLL | 121kb | 
++----------------------------------+
+| \mips43xx.b\MSCEGrid.DLL | 160kb | 
++----------------------------------+
+| \Ppc821.b\MSCEGrid.DLL   | 149kb | 
++----------------------------------+
+| \sa1100.b\MSCEGrid.DLL   | 118kb | 
++----------------------------------+
+| \SH3.b\MSCEGrid.DLL      | 117kb | 
++----------------------------------+
+| \SH4.b\MSCEGrid.DLL      | 118kb | 
++----------------------------------+
+
+Release Date: Feb-14-2000
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+  Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional Notes
+----------------
+
+There are a couple of important notes regarding the installation procedures.
+
+After executing the CE_Grid.exe file to extract the files, be sure to run the
+setup.exe file to ensure that the files are copied to the correct locations.
+
+NOTE: This overwrites the original MSCEGrid.dll files installed with VBCE. If you
+want to manually replace the files, copy the MSCEGrid.dll file from the location
+to which it was extracted to the following (default) location:
+
+C:\Program Files\Microsoft Visual Studio\VB98\VBCE\Bin\&lt;cpu&gt;\Controls
+
+When targeting Windows CE devices running MIPS processors, it might be necessary
+to manually copy the updated MSCEGrid.dll files from the 39xx.b directory to the
+41xx.b directory. This becomes apparent if errors occur when registering the
+MSCEGrid.dll on the device.
+
+Please note also that the updated MSCEGrid.dll files are for the remote devices
+only. An emulation version of the file is not available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbpatch kbToolkit kbVBp600 kbGrpDSVB kbOSWinCE211 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

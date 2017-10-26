@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q325325: XADM: Setup Hangs When You Upgrade to Enterprise Edition | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q325325: XADM: Setup Hangs When You Upgrade to Enterprise Edition" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/325/Q325325/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/325/Q325325/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/325/Q325325/","publisher":null,"image":null,"headline":"Q325325: XADM: Setup Hangs When You Upgrade to Enterprise Edition","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q325325-xadm-setup-hangs-when-you-upgrade-to-enterprise-edition">Q325325: XADM: Setup Hangs When You Upgrade to Enterprise Edition</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q325325
+Product(s): Microsoft Exchange
+Version(s): 5.5
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-AUG-2002
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Exchange, version 5.5, used with:
+   - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to upgrade Microsoft Exchange Server 5.5 Standard Edition to
+Microsoft Exchange Server 5.5 Enterprise Edition on a Microsoft Windows
+2000-based computer, Setup may stop responding (hang) after approximately 30
+seconds.
+
+CAUSE
+=====
+
+This behavior may occur if one or more instances of the Xcopy.exe process are
+running.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use Task Manager to end the Xcopy.exe process. To do
+so, follow these steps:
+
+1. Press CTRL+ALT+DELETE, and then click Task Manager.
+
+2. Click the Processes tab.
+
+3. Click Xcopy.exe, and then click End Process.
+
+4. Repeat step 3 to end each instance of Xcopy.exe that is running on the
+  computer.
+
+5. Quit Task Manager.
+
+MORE INFORMATION
+================
+
+For additional information about how to upgrade Exchange Server Standard Edition
+to Enterprise Edition, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+  Q170280 XADM: Upgrading From Exchange Server Standard Edition to the
+  Enterprise Edition
+
+For additional information about Task Manager, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+  Q323527 HOW TO: Use Windows Task Manager in Windows 2000
+
+Additional query words: front page
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword6 kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

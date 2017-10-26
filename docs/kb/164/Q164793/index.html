@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q164793: Processor Reaches 100 Percent CPU Use When Printing | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q164793: Processor Reaches 100 Percent CPU Use When Printing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/164/Q164793/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/164/Q164793/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/164/Q164793/","publisher":null,"image":null,"headline":"Q164793: Processor Reaches 100 Percent CPU Use When Printing","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q164793-processor-reaches-100-percent-cpu-use-when-printing">Q164793: Processor Reaches 100 Percent CPU Use When Printing</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q164793
+Product(s): Microsoft SNA Server
+Version(s): WINDOWS:3.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 13-JUN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When printing using the SNA Server 3.0 Print Service, the processor may reach
+100 percent (or close to 100 percent) CPU use when viewed in Performance
+Monitor. This level of use lasts until you stop the SNA Server 3.0 Print
+Service.
+
+NOTE: It may be normal, under certain circumstances, to see spikes in Performance
+Monitor.
+
+CAUSE
+=====
+
+You will the see the following section of traces repeated infinitely in the
+Print Service internal trace:
+
+00d5:00eb 13:32:48.0472 winvprtp.c(1167)   PCLOS Terminate job D93ECBC on
+printer D93ECA8
+00d5:00eb 13:32:48.0472 winvprtj.c(1747)   ENDJB Enter, idJob=0xD93ECBC
+00d5:00eb 13:32:48.0472 winvprtp.c(187)    VLJOB Enter, id=0xD93ECBC
+00d5:00eb 13:32:48.0472 winvprtp.c(232)    VLJOB Leave, pJob=0D93ECBC
+00d5:00eb 13:32:48.0472 winvprtj.c(1677)   JTERM Enter, pJob = 0xD93ECBC,
+fCancel=0
+00d5:00eb 13:32:48.0472 winvprtj.c(1706)   JTERM ERROR EndDoc, rc=0x6
+00d5:00eb 13:32:48.0472 winvprtj.c(1713)   JTERM Leave, rc=1
+00d5:00eb 13:32:48.0472 winvprtj.c(1809)   ENDJB ERROR Invalid job
+id=0xD93ECBC
+00d5:00eb 13:32:48.0472 winvprtj.c(1842)   ENDJB Leave, rc=2
+00d5:00eb 13:32:48.0472 winvprtp.c(1167)   PCLOS Terminate job D93ECBC on
+printer D93ECA8
+00d5:00eb 13:32:48.0472 winvprtj.c(1747)   ENDJB Enter, idJob=0xD93ECBC
+
+PCLOS is the trace name for the WinVPRTClosePrinter function contained in
+Printsrv\Winvprt\Winvprtp.c. This function first attempts to end all active
+print jobs owned by the print session, and then end the print session itself.
+PCLOS contains the following code:
+
+     /*********************************************************************/ 
+     /* Search for active jobs on this print session                      */ 
+     /*********************************************************************/ 
+     while (pPrt-&gt;pJob)
+     {
+        TRACE4()"Terminate job %X on printer %X",pJob,pPrt));
+        pJob = pPrt-&gt;pJob;
+        WinVPRTEndJob(pJob-&gt;id, TRUE);
+     }
+
+This is the code that is looping because the "Terminate job xx on printer yy" is
+constantly repeated in the trace. Further, the job and printer control blocks
+traced (D93ECBC and D93ECA8) are the same every time.
+
+The only way that this code can loop indefinitely is if pPrt-&gt;pJob is always a
+non-zero value. If you look into the WinVPRTEndJob function, you will see a call
+to another function called JobCleanup. The last thing that this code does is
+remove the terminating job control block (pPrt-&gt;pJob) from the 'linked list'
+of job control blocks owned by the printer control block (pPrt). The result
+should be one less job control block owned by the printer. The code shown above
+should then attempt to end the next job owned by the print session and so on,
+until there are no jobs left (when the last one is removed pPrt-&gt;pJob will go
+to zero).
+
+However, this does not happen and the code loops indefinitely, trying (and
+failing) to end the same job every time.
+
+RESOLUTION
+==========
+
+A fix is available to correct this problem.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+  S E R V P A C K
+
+Additional query words: prodsna sna30
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

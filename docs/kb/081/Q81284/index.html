@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q81284: Windows Does Not Load With Intel 386 SnapIn | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q81284: Windows Does Not Load With Intel 386 SnapIn" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/081/Q81284/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/081/Q81284/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/081/Q81284/","publisher":null,"image":null,"headline":"Q81284: Windows Does Not Load With Intel 386 SnapIn","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q81284-windows-does-not-load-with-intel-386-snapin">Q81284: Windows Does Not Load With Intel 386 SnapIn</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q81284
+Product(s): Microsoft Windows 95.x Retail Product
+Version(s): WINDOWS:3.0,3.0a
+Operating System(s): 
+Keyword(s): 
+Last Modified: 30-OCT-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows may encounter some problems when running on a computer system configured
+with an Intel 386 SnapIn. The following are some of the most common situations:
+
+- Windows returns to the command line after trying to load.
+
+  -or-
+
+- The error message "Cannot file or load specific file" is received.
+
+  -or-
+
+- Windows cannot be run in enhanced mode.
+
+This information applies to Microsoft MS-DOS version 5.0 and Windows versions 3.0
+and 3.0a.
+
+MORE INFORMATION
+================
+
+If Windows is having a problem operating on a system equipped with an Intel
+SnapIn 386, check the following:
+
+1. Make sure Windows has been reinstalled after SnapIn 386 was added to the
+  system. This makes sure the 386 specific files necessary for enhanced mode
+  operation are copied to the hard drive. NOTE: This case alone is the most
+  common cause for the error message "Cannot file or load specific file."
+
+2. Add VirtualHDIRQ=off to the 386ENH section of the SYSTEM.INI file. This will
+  enable certain hard disk controller interrupts to go through the ROM routine
+  that handles those interrupts, instead of being controlled by Windows when
+  running in enhanced mode.
+
+3. If SMARTDRV.SYS is loading, add the parameter /b+ to the end of the
+  SMARTDRV.SYS command line in the CONFIG.SYS file. The /b+ parameter forces
+  the double buffering capability of the SMARTDRV.SYS disk cache to be
+  installed. The line would look similar to the following example:
+
+        DEVICE=[drive:][path]\SMARTDRV.SYS 1024 512 /B+
+
+  Warning: It is also possible to use the /b- parameter, which disables the
+  double buffering capabilities of SMARTDRV.SYS. However, if there is a Bus
+  Master board present in the system and the /b- parameter is used, Data
+  corruption may occur.
+
+4. Check for memory conflicts. If there are expansion boards in the system that
+  occupy memory address space (network boards, emulation boards, and so on),
+  add an EMMEXCLUDE= statement to the 386ENH section of the SYSTEM.INI file.
+  Exclude the range to cover the memory address of the expansion board. The
+  line would look similar to the following example:
+
+        EMMEXCLUDE=A000-EFFF
+
+NOTE: On an Intel SnapIn 386 equipped system running MS-DOS 5.0, SMARTDRV.SYS
+looks at the system ID byte and sees a 286. It then assumes that Windows cannot
+be run in enhanced mode. Because SnapIn 386 allows these systems to run in 386
+enhanced mode, you must make the adjustments above to ensure stable operation.
+
+SnapIn 386 is manufactured by Intel, a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+REFERENCES
+==========
+
+Intel FaxBack Document #2770, #2850
+
+
+For more information, query on the following words:
+
+  INTEL and BOARDS and COMPATIBILITY
+
+Additional query words: MS-DOS 5 5.0 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

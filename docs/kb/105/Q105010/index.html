@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q105010: How To Use the OpenComm() Function with FOXTOOLS.FLL | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q105010: How To Use the OpenComm() Function with FOXTOOLS.FLL" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/105/Q105010/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/105/Q105010/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/105/Q105010/","publisher":null,"image":null,"headline":"Q105010: How To Use the OpenComm() Function with FOXTOOLS.FLL","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q105010-how-to-use-the-opencomm-function-with-foxtoolsfll">Q105010: How To Use the OpenComm() Function with FOXTOOLS.FLL</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q105010
+Product(s): Microsoft FoxPro
+Version(s): 2.50 2.50a 2.50b 2.60 2.60a
+Operating System(s): 
+Keyword(s): kbcode
+Last Modified: 11-AUG-1999
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft FoxPro for Windows, versions 2.5, 2.5a, 2.5b, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+OpenComm() is a function that can be called using FOXTOOLS.FLL to open the COM
+or LPT ports. Below is a complete description of OpenComm().
+
+MORE INFORMATION
+================
+
+Purpose
+-------
+
+The OpenComm() function opens a communications device.
+
+Function Syntax
+---------------
+
+  OpenComm(&lt;port&gt;, &lt;in_q&gt;, &lt;out_q&gt;)
+
+  Argument       Description
+  -----------------------------------------------------------------
+
+  &lt;port&gt;         Points to a null-terminated string that specifies
+                 the device in the form COM&lt;n&gt; or LPT&lt;n&gt;, where &lt;n&gt;
+                 is the device number.
+
+  &lt;in_q&gt;         Specifies the size, in bytes, of the receiving
+                 queue. This parameter is ignored for LPT devices.
+
+  &lt;out_q&gt;        Specifies the size, in bytes, of the transmission
+                 queue. This parameter is ignored for LPT devices.
+
+Returns
+-------
+
+The return value identifies the open device if the function is successful.
+Otherwise, it is less than zero.
+
+Errors
+------
+
+If the function fails, it may return one of the following error values:
+
+  Value     Meaning
+  --------------------------------------------------------------------
+
+  -12       The device's baud rate is unsupported.
+  -11       The specified byte size is invalid.
+  -10       The hardware is not available (is locked by another device).
+   -5       The default parameters are in error.
+   -4       The function cannot allocate the queues.
+   -3       The device is not open.
+   -2       The device is already open.
+   -1       The device identifier is invalid or unsupported.
+
+If this function is called with both queue sizes set to zero, the return value is
+-2 if the device is already open, or -4 if the device is not open.
+
+Comments
+--------
+
+Windows allows COM ports 1 through 9 and LPT ports 1 through 3. If the device
+driver does not support a communications port number, the OpenComm() function
+will fail.
+
+Sample Code
+-----------
+
+The following code example uses the OpenComm() function and FOXTOOLS.FLL to open
+COM1. (This example can be found in FOXPROW\GOODIES\FOXTOOLS\DIALER.PRG.)
+
+     *-------------------- dialer.prg ------------------------
+
+     * Sample program to output to comm port
+     * Uses FoxTools library for generic DLL access
+
+     SET LIBRARY TO SYS(2004)+"foxtools.fll" ADDITIVE
+
+     opencomm = REGFN("OpenComm", "CII", "I")
+     writecomm = REGFN("WriteComm", "ICI", "I")
+     closecomm = REGFN("CloseComm", "I", "I")
+
+     com1 = CALLFN(opencomm, "COM1:", 100, 100)
+     s = "ATDT 5551212" + chr(13)
+     =CALLFN(writecomm, com1, s, len(s))
+
+     WAIT WINDOW "Press any key to hang up"
+     s = "ATH0" + chr(13)
+     =CALLFN(writecomm, com1, s, len(s))
+
+     =CALLFN(closecomm, com1)
+
+     RELEASE LIBRARY SYS(2004)+"foxtools.fll"
+
+NOTE: In reference to the applicability of the OpenComm() function to Visual
+FoxPro for Windows, the 32-bit Foxtools.fll returns a handle to the RegFN() call
+provided that it passes the optional 4th argument, which is "USER.DLL." Here is
+an example:
+
+     hnd = RegFN("OpenComm","CCC","I","User.dll")
+
+REFERENCES
+==========
+
+The above information can also be found in the Microsoft Windows Software
+Development Kit (SDK) "Programmer's Reference Volume 2: Functions" [describes
+OpenComm()] and the "Programmer's Reference Volume 3: Messages, Structures, and
+Macros" (describes the returned values). The online Help file for the
+Professional Version of Visual C++ also contains this information.
+
+Additional query words: FoxWin 2.50
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro250 kbFoxPro250a kbFoxPro250b kbFoxPro260a
+Version           : 2.50 2.50a 2.50b 2.60 2.60a
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q176876: HOWTO: Find VB32.EXE Without Searching the Hard Drive | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q176876: HOWTO: Find VB32.EXE Without Searching the Hard Drive" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/176/Q176876/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/176/Q176876/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/176/Q176876/","publisher":null,"image":null,"headline":"Q176876: HOWTO: Find VB32.EXE Without Searching the Hard Drive","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q176876-howto-find-vb32exe-without-searching-the-hard-drive">Q176876: HOWTO: Find VB32.EXE Without Searching the Hard Drive</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q176876
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 
+Operating System(s): 
+Keyword(s): kbGrpDSVB
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+- Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The sample code below demonstrates how to find the location of VB32.EXE by
+checking the registry rather than searching the entire hard drive.
+
+MORE INFORMATION
+================
+
+Because customers occasionally install Visual Basic with a pathname other than
+the default suggested by SETUP, it may be necessary to search for the directory
+in which VB32.EXE has been installed. While simply searching the local hard
+drive with an equivalent to DIR/S serves in most circumstances, the presence of
+multiple large volumes makes a brute-force search of all the directories on each
+volume impractical.
+
+Because Visual Basic Setup stores the fully-qualified path name to VB32.EXE under
+the key:
+
+"HKEY_LOCAL_MACHINE\Software\Classes\VisualBasic\Shell\Open\command,"
+
+it is a fairly simple task to obtain that pathname with the RegQueryValueEx()
+API.
+
+Step-By-Step Instructions
+-------------------------
+
+1. Open a new project. Form1 is created by default.
+
+2. Add a Code Module and, in the General Declarations section, place the
+  following code:
+
+     Declare Function RegOpenKeyEx Lib "advapi32.dll" Alias "RegOpenKeyExA" _
+     (ByVal hKey As Long,  ByVal lpSubKey As String, ByVal ulOptions As _
+     Long, ByVal samDesired As Long, phkResult As  Long) As Long
+
+     Declare Function RegQueryValueEx Lib "advapi32.dll" Alias _
+     "RegQueryValueExA" (ByVal hKey As Long, ByVal lpValueName As _
+     String, ByVal lpReserved As Long, lpType As Long, lpData As Any, _
+     lpcbData As Long) As Long
+
+     Option Explicit
+
+     Global Const HKEY_LOCAL_MACHINE = &amp;H80000002
+     Global Const KEY_READ = &amp;H20019
+     Global Const ERROR_SUCCESS = 0&amp;
+
+3. Add a CommandButton to the default form.
+
+4. In the Click Event of the CommandButton, place the following code:
+
+     Dim RegKeyHandle As Long
+     Dim RetVal As Long
+     Dim KeyType As Long
+     Dim Data As String * 255
+     Dim DataLen As Long
+
+     RetVal = RegOpenKeyEx(HKEY_LOCAL_MACHINE, _
+     "Software\Classes\VisualBasic\Shell\Open\command", _
+     0, KEY_READ, RegKeyHandle)
+
+     If RetVal &lt;&gt; ERROR_SUCCESS Then
+         MsgBox "Can't Open Key"
+     Else
+         MsgBox "Opened It!" &amp; vbCrLf &amp; "Getting Default Value"
+         DataLen = 512
+         RetVal = RegQueryValueEx(RegKeyHandle _
+                                 , vbNullString _
+                                 , 0 _
+                                 , KEY_READ _
+                                 , ByVal Data _
+                                 , DataLen)
+
+         If RetVal &lt;&gt; ERROR_SUCCESS Then
+             MsgBox "Missed It!"
+         Else
+             MsgBox Left(Data, DataLen)
+         End If
+     End If
+
+5. Run the program. If Visual Basic is installed, the fully-qualified pathname
+  to VB32.EXE appears in the message box.
+
+REFERENCES
+==========
+
+"Visual Basic Programmer's Guide to the Win32 API", Daniel Appleman, PC Magazine
+Press; c1996.
+
+Additional query words: kbVBp400 kbVBp kbdsd kbDSupport
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

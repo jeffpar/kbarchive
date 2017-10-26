@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q115238: HOWTO: Get and Set Diskette Media ID in VB for MS-DOS | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q115238: HOWTO: Get and Set Diskette Media ID in VB for MS-DOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/115/Q115238/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/115/Q115238/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/115/Q115238/","publisher":null,"image":null,"headline":"Q115238: HOWTO: Get and Set Diskette Media ID in VB for MS-DOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q115238-howto-get-and-set-diskette-media-id-in-vb-for-ms-dos">Q115238: HOWTO: Get and Set Diskette Media ID in VB for MS-DOS</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q115238
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 1.0
+Operating System(s): 
+Keyword(s): 
+Last Modified: 02-NOV-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic for MS-DOS 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows by example how to call interrupts to get and set the media ID
+for a diskette. The example also gets and sets the volume serial number and the
+volume label.
+
+WARNING: One or more of the following functions are discussed in this article;
+VarPtr, VarPtrArray, VarPtrStringArray, StrPtr, ObjPtr. These functions are not
+supported by Microsoft Technical Support. They are not documented in the Visual
+Basic documentation and are provided in this Knowledge Base article "as is."
+Microsoft does not guarantee that they will be available in future releases of
+Visual Basic.
+
+MORE INFORMATION
+================
+
+The following example uses MS-DOS interrupt (&amp;h21), functions )&amp;h440D),
+and minor code (&amp;h46) to set the volume label and serial number for the
+specified drive.
+
+This information can be found in any MS-DOS programmer's reference, for versions
+of MS-DOS beyond 5.0.
+
+Code Example
+------------
+
+  ' Note that you will want to load the VBDOS.QLB file when starting
+  ' VBDOS to get this program to run.
+
+  ' $INCLUDE: 'vbdos.bi'
+
+  TYPE midstruc
+
+     midinfolevel AS INTEGER       ' Information level.
+     midserialnum AS LONG          ' Serial number.
+     midvollabel AS STRING * 11    ' ASCII volume label.
+     MidFileSysType AS STRING * 8  ' File system type.
+
+  END TYPE
+
+  DIM regs AS regtypex
+  DIM ms AS midstruc
+
+  ms.midserialnum = &amp;HFFFFFFFF    ' Set the new volume serial number.
+  ms.midvollabel = "SIDEHACKERS"
+
+  regs.ax = &amp;H440D
+  regs.bx = 1                     ' Specifies drive A (2 for B, 3 for C..).
+  regs.cx = &amp;H846
+  ' Remove the apostrophe from the following line to change it from a comment
+  ' to an executed line if you want to retrieve the current values of the
+  ' volume label and the serial number for the specified drive:
+  ' regs.cx = &amp;H866
+  regs.ds = VARSEG(ms)
+  regs.dx = VARPTR(ms)
+
+  CALL INTERRUPTX(&amp;H21, regs, regs)
+
+  CLS
+
+  IF (regs.flags AND 1) THEN       ' Check for error.
+
+     PRINT "problem : "; regs.ax   ' Print error number.
+
+  ELSE
+
+     PRINT HEX$(ms.midSerialNum)   ' Print successful return values.
+     PRINT ms.midVolLabel
+     PRINT ms.midFileSysType
+
+  END IF
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword3 kbVB100DOS
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

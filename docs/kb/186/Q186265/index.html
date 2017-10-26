@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/kbarchive/assets/css/style.css?v=4c5dc89ca309d19d6d9171a268a55a16d7399494">
+    <link rel="stylesheet" type="text/css" href="/kbarchive/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Q186265: HOWTO: Use the SQL Server DATEPART Function to Get Milliseconds | KnowledgeBase Archive</title>
+<meta property="og:title" content="Q186265: HOWTO: Use the SQL Server DATEPART Function to Get Milliseconds" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<meta property="og:description" content="An Archive of Early Microsoft KnowledgeBase Articles" />
+<link rel="canonical" href="http://jeffpar.github.io/kbarchive/kb/186/Q186265/" />
+<meta property="og:url" content="http://jeffpar.github.io/kbarchive/kb/186/Q186265/" />
+<meta property="og:site_name" content="KnowledgeBase Archive" />
+<script type="application/ld+json">
+{"name":null,"description":"An Archive of Early Microsoft KnowledgeBase Articles","author":null,"@type":"WebPage","url":"http://jeffpar.github.io/kbarchive/kb/186/Q186265/","publisher":null,"image":null,"headline":"Q186265: HOWTO: Use the SQL Server DATEPART Function to Get Milliseconds","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+<div id="container">
+    <div class="inner">
+
+        <header>
+            <h1><a href="/kbarchive">KnowledgeBase Archive</a></h1>
+            <h2>An Archive of Early Microsoft KnowledgeBase Articles</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            
+            
+            <a href="http://github.com/jeffpar/kbarchive" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            
+        </section>
+        <hr>
+        <section id="main_content">
+                <div>
+        <h2 id="q186265-howto-use-the-sql-server-datepart-function-to-get-milliseconds">Q186265: HOWTO: Use the SQL Server DATEPART Function to Get Milliseconds</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article: Q186265
+Product(s): Microsoft Visual Basic for Windows
+Version(s): 2.1 SP2,2.5,2.6,5.0,6.0
+Operating System(s): 
+Keyword(s): kbADO200 kbDatabase kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbADO210sp2
+Last Modified: 11-JAN-2001
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+- Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+- Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+- ActiveX Data Objects (ADO), versions 2.1 SP2, 2.5, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the SQL Server DATEPART() function to get the milliseconds of a SQL
+Server datetime field returned to a Visual Basic application.
+
+The advantage of using the SQL Server DATEPART() function is that it is simple to
+use and works with all versions of ADO, DAO, and RDO. The disadvantage of using
+the DATEPART() function is that it is specific to SQL Server. However, other
+servers may have comparable functions.
+
+Do not confuse the SQL Server DATEPART() function with the Visual Basic
+DatePart() function, which is used with the Visual Basic Date datatype.
+
+MORE INFORMATION
+================
+
+The SQL Server DATEPART() function returns a portion of a SQL Server datetime
+field.
+
+The syntax of the SQL Server DATEPART() function is:
+
+     DATEPART(portion, datetime)
+
+where datetime is name of a SQL Server datetime field and portion is one of the
+following:
+
+  Ms    for Milliseconds
+  Yy    for Year
+  Qq    for Quarter of the Year
+  Mm    for Month
+  Dy    for the Day of the Year
+  Dd    for Day of the Month
+  Wk    for Week
+  Dw    for the Day of the Week
+  Hh    for Hour
+  Mi    for Minute
+  Ss    for Second
+
+Use the SQL Server DATEPART() function in a Transact-SQL (T-SQL) SELECT
+statement. An example T-SQL statement using DATEPART() follows:
+
+     SELECT Pubdate, DATEPART(Ms, Pubdate) FROM Titles
+
+This would return Pubdate and the millisecond portion of Pubdate.
+
+Sample Code
+-----------
+
+The following example uses the ActiveX Data Objects (ADO) 1.5 library. The same
+T-SQL statement would work with the DAO and RDO libraries also.
+
+1. Create a System Datasource named Pubs. The Datasource should use the SQL
+  Server driver and the Pubs database that is included with SQL Server.
+
+2. Create a new Visual Basic Standard EXE Project. Form1 is created by default.
+
+3. Add a reference to the Microsoft ActiveX Data Objects library.
+
+4. Place a CommandButton on Form1, and copy the following code into the
+  Command1_Click() event procedure:
+
+        Dim rs As New ADODB.Recordset
+        Dim strSql As String
+        Dim strCnn As String
+
+        strCnn = "DSN=Pubs;UID=;PWD=;DATABASE=Pubs"
+        strSql = "SELECT pubdate, datepart(Ms,pubdate) FROM titles"
+
+        rs.Open strSql, strCnn, adOpenKeyset, adLockOptimistic
+        rs.MoveFirst
+
+        Debug.Print "PubDate", "Milliseconds"
+        Do Until rs.EOF
+            Debug.Print rs(0), rs(1)
+            rs.MoveNext
+        Loop
+        rs.Close
+
+  NOTE: You may need to modify the UID and PWD to represent your SQL Server
+  installation ie UID=sa.
+
+5. Run the project.
+
+6. Click Command1 to execute the above code.
+
+7. Choose View, Immediate Window from the Visual Basic Standard Toolbar to see
+  the program's output.
+
+REFERENCES
+==========
+
+For more information on the SQL Server DATEPART() function, look in the SQL
+Server Books Online. Click Transact-SQL Reference, F, Functions, Date Functions.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbADO200 kbDatabase kbVBp600 kbGrpDSVBDB kbGrpDSMDAC kbADO210sp2 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :2.1 SP2,2.5,2.6,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+</code></pre></div></div>
+
+
+        <p>
+            THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+            ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+            OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+            EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+            ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+            CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+            MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+            POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+            OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+            SO THE FOREGOING LIMITATION MAY NOT APPLY.
+        </p>
+        <p>Copyright Microsoft Corporation 1986-2002.</p>
+    </div>
+
+        </section>
+
+        <footer>
+            
+            KnowledgeBase Archive is maintained by <a href="http://github.com/jeffpar">jeffpar</a><br>
+            
+            This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>
